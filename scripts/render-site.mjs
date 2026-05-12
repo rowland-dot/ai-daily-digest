@@ -576,11 +576,18 @@ const PAGE_CSS = `
     margin: 0;
   }
   .audio-fab audio::-webkit-media-controls-panel { background: var(--surface); }
-  /* Hide volume controls (WebKit/Blink) — they steal scrubber space and
-     are redundant with OS-level volume on every device. */
+  /* Hide WebKit/Blink native controls we don't want: volume slider,
+     mute button, and the kebab/overflow menu (PiP / Download / Loop /
+     Playback rate native sub-menu). The custom speed-btn replaces the
+     last of those. */
   .audio-fab audio::-webkit-media-controls-volume-slider,
   .audio-fab audio::-webkit-media-controls-volume-control-container,
-  .audio-fab audio::-webkit-media-controls-mute-button {
+  .audio-fab audio::-webkit-media-controls-mute-button,
+  .audio-fab audio::-webkit-media-controls-overflow-button,
+  .audio-fab audio::-webkit-media-controls-overflow-menu,
+  .audio-fab audio::-internal-media-controls-overflow-button,
+  .audio-fab audio::-webkit-media-controls-toggle-closed-captions-button,
+  .audio-fab audio::-webkit-media-controls-fullscreen-button {
     display: none !important;
   }
   .speed-btn {
