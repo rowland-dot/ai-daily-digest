@@ -298,8 +298,16 @@ const PAGE_CSS = `
     --radius-lg: 14px;
   }
 
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
+  * { box-sizing: border-box; min-width: 0; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    /* Prevent any descendant overflow from causing horizontal page scroll.
+       Use overflow-x: clip (not hidden) — clip doesn't create a new scroll
+       context, so sticky nav still pins correctly. */
+    overflow-x: clip;
+    max-width: 100vw;
+  }
   body {
     font-family: var(--body-font);
     background: var(--bg);
@@ -307,10 +315,15 @@ const PAGE_CSS = `
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     transition: background-color 0.15s ease, color 0.15s ease;
+    /* Force long unbroken strings (URLs, model IDs like "meta-llama/...")
+       to wrap rather than push the layout wide on mobile. */
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
-  a { color: var(--link); text-decoration: none; }
+  a { color: var(--link); text-decoration: none; overflow-wrap: anywhere; }
   a:hover { color: var(--link-hover); text-decoration: underline; }
-  .container { max-width: 1020px; margin: 0 auto; padding: 24px 20px; }
+  img, svg, video { max-width: 100%; height: auto; }
+  .container { max-width: 1020px; margin: 0 auto; padding: 24px 20px; width: 100%; }
 
   /* Header */
   header.hero {
@@ -346,8 +359,8 @@ const PAGE_CSS = `
   }
   .theme-switch {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 14px;
+    right: 14px;
     display: inline-flex;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -356,6 +369,12 @@ const PAGE_CSS = `
     font-size: 12px;
     font-weight: 500;
     box-shadow: var(--shadow);
+    max-width: calc(100vw - 28px);
+  }
+  @media (max-width: 480px) {
+    header.hero { padding-top: 70px; }
+    .theme-switch { font-size: 11px; }
+    .theme-switch button { padding: 4px 8px; }
   }
   .theme-switch button {
     background: transparent;
