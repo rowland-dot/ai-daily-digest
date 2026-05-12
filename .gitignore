@@ -1,0 +1,7 @@
+# Generated artifacts — built fresh in CI on every workflow run,
+# deployed via Pages artifact. Not tracked in git so local renders
+# don't race with bot pushes (see .github/workflows/fetch-sources.yml).
+data/
+docs/
+node_modules/
+*.log
