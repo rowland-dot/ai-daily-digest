@@ -1,15 +1,16 @@
 {
-  "fetched_at": "2026-05-12T22:15:27.725Z",
+  "fetched_at": "2026-05-12T22:16:26.282Z",
   "items": [
     {
       "by": "tambourine_man",
-      "descendants": 744,
+      "descendants": 748,
       "id": 48111545,
       "kids": [
         48113491,
         48113295,
         48111926,
         48112301,
+        48115320,
         48112060,
         48112040,
         48114995,
@@ -17,41 +18,41 @@
         48115198,
         48112330,
         48115212,
-        48114123,
         48112167,
+        48114123,
         48114416,
         48112592,
         48112017,
         48112245,
         48112671,
-        48115241,
         48113124,
-        48115084,
+        48115241,
         48113887,
+        48115084,
         48112556,
         48112619,
         48113604,
         48115206,
         48112206,
-        48115248,
         48111964,
         48114864,
         48113784,
+        48115248,
         48112910,
         48114282,
         48112861,
         48115072,
         48112270,
-        48114720,
         48111903,
+        48114720,
         48114987,
         48113312,
         48112115,
         48114281,
         48114832,
+        48112282,
         48114989,
         48114506,
-        48112282,
         48112240,
         48114756,
         48112147,
@@ -69,11 +70,11 @@
         48113871,
         48115070,
         48114665,
-        48115238,
         48112737,
-        48114736,
-        48112818,
+        48115238,
         48112216,
+        48112818,
+        48114736,
         48115204,
         48113348,
         48112779,
@@ -100,10 +101,10 @@
         48113257,
         48112714,
         48114367,
-        48115118,
         48112051,
         48112389,
         48113064,
+        48115118,
         48112559,
         48111879,
         48113196,
@@ -115,8 +116,8 @@
         48113724,
         48113244,
         48113824,
-        48115071,
         48114430,
+        48115071,
         48112408,
         48112755,
         48112971,
@@ -151,8 +152,8 @@
         48112404,
         48112168,
         48114022,
-        48114468,
         48112113,
+        48114468,
         48111840,
         48113051,
         48113136,
@@ -177,8 +178,8 @@
         48113804,
         48113409,
         48111989,
-        48113842,
         48112384,
+        48113842,
         48112945,
         48113113,
         48112834,
@@ -246,7 +247,7 @@
     },
     {
       "by": "chizhik-pyzhik",
-      "descendants": 74,
+      "descendants": 75,
       "id": 48112042,
       "kids": [
         48113443,
@@ -298,7 +299,7 @@
         48112181,
         48113596
       ],
-      "score": 183,
+      "score": 184,
       "text": "Hey HN, Henry here from Cactus. We open-sourced Needle, a 26M parameter function-calling (tool use) model. It runs at 6000 tok&#x2F;s prefill and 1200 tok&#x2F;s decode on consumer devices.<p>We were always frustrated by the little effort made towards building agentic models that run on budget phones, so we conducted investigations that led to an observation: agentic experiences are built upon tool calling, and massive models are overkill for it. Tool calling is fundamentally retrieval-and-assembly (match query to tool name, extract argument values, emit JSON), not reasoning. Cross-attention is the right primitive for this, and FFN parameters are wasted at this scale.<p>Simple Attention Networks: the entire model is just attention and gating, no MLPs anywhere. Needle is an experimental run for single-shot function calling for consumer devices (phones, watches, glasses...).<p>Training:\n- Pretrained on 200B tokens across 16 TPU v6e (27 hours)\n- Post-trained on 2B tokens of synthesized function-calling data (45 minutes)\n- Dataset synthesized via Gemini with 15 tool categories (timers, messaging, navigation, smart home, etc.)<p>You can test it right now and finetune on your Mac&#x2F;PC: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;needle\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;needle</a><p>The full writeup on the architecture is here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;needle&#x2F;blob&#x2F;main&#x2F;docs&#x2F;simple_attention_networks.md\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;needle&#x2F;blob&#x2F;main&#x2F;docs&#x2F;simp...</a><p>We found that the &quot;no FFN&quot; finding generalizes beyond function calling to any task where the model has access to external structured knowledge (RAG, tool use, retrieval-augmented generation). The model doesn&#x27;t need to memorize facts in FFN weights if the facts are provided in the input. Experimental results to published.<p>While it beats FunctionGemma-270M, Qwen-0.6B, Granite-350M, LFM2.5-350M on single-shot function calling, those models have more scope&#x2F;capacity and excel in conversational settings. We encourage you to test on your own tools via the playground and finetune accordingly.<p>This is part of our broader work on Cactus (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;cactus\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;cactus</a>), an inference engine built from scratch for mobile, wearables and custom hardware. We wrote about Cactus here previously: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=44524544\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=44524544</a><p>Everything is MIT licensed. Weights: <a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;Cactus-Compute&#x2F;needle\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;Cactus-Compute&#x2F;needle</a>\nGitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;needle\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;cactus-compute&#x2F;needle</a>",
       "time": 1778608991,
       "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
@@ -311,8 +312,8 @@
       "id": 48109460,
       "kids": [
         48113129,
-        48115301,
         48111182,
+        48115301,
         48114931,
         48111307,
         48112672,
@@ -327,12 +328,12 @@
         48114097,
         48112628,
         48111836,
-        48114811,
         48112695,
-        48114812,
+        48114811,
         48113299,
-        48114207,
+        48114812,
         48112749,
+        48114207,
         48111771,
         48113301,
         48112981,
@@ -346,13 +347,13 @@
         48112998,
         48114101,
         48113402,
-        48114399,
         48113651,
+        48114399,
         48113618,
         48112794,
         48112603,
-        48114100,
         48112538,
+        48114100,
         48109730,
         48114763,
         48111428,
@@ -362,7 +363,7 @@
         48112344,
         48111169
       ],
-      "score": 274,
+      "score": 275,
       "time": 1778598520,
       "title": "Why senior developers fail to communicate their expertise",
       "type": "story",
@@ -408,7 +409,7 @@
         48110984,
         48111447
       ],
-      "score": 255,
+      "score": 257,
       "time": 1778600754,
       "title": "The Future of Obsidian Plugins",
       "type": "story",
@@ -500,25 +501,30 @@
         48112791,
         48112967
       ],
-      "score": 89,
+      "score": 90,
       "time": 1778607613,
       "title": "Reimagining the mouse pointer for the AI era",
       "type": "story",
       "url": "https://deepmind.google/blog/ai-pointer/"
     },
     {
-      "by": "44za12",
-      "descendants": 2,
-      "id": 48113518,
+      "by": "Brajeshwar",
+      "descendants": 14,
+      "id": 48111243,
       "kids": [
-        48114896,
-        48115098
+        48114886,
+        48114795,
+        48115268,
+        48115062,
+        48115278,
+        48114941,
+        48114841
       ],
-      "score": 23,
-      "time": 1778615501,
-      "title": "Beyond Semantic Similarity",
+      "score": 15,
+      "time": 1778606219,
+      "title": "Is this why science advances one funeral at a time?",
       "type": "story",
-      "url": "https://arxiv.org/abs/2605.05242"
+      "url": "https://nautil.us/is-this-why-science-advances-one-funeral-at-a-time-1280650"
     },
     {
       "by": "surprisetalk",
@@ -564,23 +570,18 @@
       "url": "https://matklad.github.io/2026/05/12/software-architecture.html"
     },
     {
-      "by": "Brajeshwar",
-      "descendants": 14,
-      "id": 48111243,
+      "by": "44za12",
+      "descendants": 2,
+      "id": 48113518,
       "kids": [
-        48114886,
-        48114795,
-        48115268,
-        48115062,
-        48115278,
-        48114941,
-        48114841
+        48114896,
+        48115098
       ],
-      "score": 14,
-      "time": 1778606219,
-      "title": "Is this why science advances one funeral at a time?",
+      "score": 23,
+      "time": 1778615501,
+      "title": "Beyond Semantic Similarity",
       "type": "story",
-      "url": "https://nautil.us/is-this-why-science-advances-one-funeral-at-a-time-1280650"
+      "url": "https://arxiv.org/abs/2605.05242"
     },
     {
       "by": "rubenbe",
@@ -650,7 +651,7 @@
         48110004,
         48109503
       ],
-      "score": 967,
+      "score": 968,
       "time": 1778597681,
       "title": "Bambu Lab is abusing the open source social contract",
       "type": "story",
@@ -734,7 +735,7 @@
     },
     {
       "by": "luispa",
-      "descendants": 25,
+      "descendants": 26,
       "id": 48069032,
       "kids": [
         48111739,
@@ -798,7 +799,7 @@
         48112149,
         48112665
       ],
-      "score": 190,
+      "score": 191,
       "time": 1778607358,
       "title": "Canada’s Bill C-22 Is a Repackaged Version of Last Year’s Surveillance Nightmare",
       "type": "story",
@@ -854,7 +855,7 @@
     },
     {
       "by": "Cider9986",
-      "descendants": 189,
+      "descendants": 190,
       "id": 48103668,
       "kids": [
         48112271,
@@ -882,7 +883,7 @@
         48112100,
         48111314
       ],
-      "score": 198,
+      "score": 199,
       "text": "<a href=\"https:&#x2F;&#x2F;www.instructure.com&#x2F;incident_update#:~:text=STATUS%20UPDATE%205&#x2F;11&#x2F;26\" rel=\"nofollow\">https:&#x2F;&#x2F;www.instructure.com&#x2F;incident_update#:~:text=STATUS%2...</a><p><a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;05&#x2F;12&#x2F;us&#x2F;canvas-instructure-hackers-deal.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;05&#x2F;12&#x2F;us&#x2F;canvas-instructure-hac...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;HIkdn\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;HIkdn</a>",
       "time": 1778554591,
       "title": "Instructure pays ransom to Canvas hackers",
@@ -903,6 +904,22 @@
       "time": 1778603574,
       "title": "Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder",
       "type": "story"
+    },
+    {
+      "by": "cemsakarya",
+      "descendants": 18,
+      "id": 48079202,
+      "kids": [
+        48113738,
+        48114351,
+        48113268,
+        48110854
+      ],
+      "score": 45,
+      "time": 1778368254,
+      "title": "The Real Story of Troy",
+      "type": "story",
+      "url": "https://storica.club/blog/troy-was-real/"
     },
     {
       "by": "ingve",
@@ -938,22 +955,6 @@
       "url": "https://www.ycombinator.com/companies/text-blaze/jobs/P4CCN62-the-blaze-no-ai-summer-internship"
     },
     {
-      "by": "cemsakarya",
-      "descendants": 18,
-      "id": 48079202,
-      "kids": [
-        48113738,
-        48114351,
-        48113268,
-        48110854
-      ],
-      "score": 45,
-      "time": 1778368254,
-      "title": "The Real Story of Troy",
-      "type": "story",
-      "url": "https://storica.club/blog/troy-was-real/"
-    },
-    {
       "by": "surprisetalk",
       "descendants": 36,
       "id": 48096328,
@@ -972,6 +973,19 @@
       "url": "https://www.construction-physics.com/p/the-surprisingly-long-life-of-the"
     },
     {
+      "by": "jxmorris12",
+      "descendants": 3,
+      "id": 48069562,
+      "kids": [
+        48113483
+      ],
+      "score": 17,
+      "time": 1778279423,
+      "title": "The Moth Story Map",
+      "type": "story",
+      "url": "https://themoth.org/dispatches/story-map"
+    },
+    {
       "by": "samaysharma",
       "descendants": 4,
       "id": 48113425,
@@ -984,19 +998,6 @@
       "title": "Snowflake Postgres, Lakebase, HorizonDB: Picking the Lock-In You Want",
       "type": "story",
       "url": "https://thebuild.com/blog/2026/05/12/snowflake-postgres-lakebase-horizondb-picking-the-lock-in-you-want/"
-    },
-    {
-      "by": "jxmorris12",
-      "descendants": 3,
-      "id": 48069562,
-      "kids": [
-        48113483
-      ],
-      "score": 17,
-      "time": 1778279423,
-      "title": "The Moth Story Map",
-      "type": "story",
-      "url": "https://themoth.org/dispatches/story-map"
     }
   ]
 }

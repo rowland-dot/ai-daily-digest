@@ -1,56 +1,56 @@
 {
-  "fetched_at": "2026-05-12T22:15:24.047Z",
+  "fetched_at": "2026-05-12T22:16:23.210Z",
   "date_utc": "2026-05-12",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 1229
+      "ms": 1494
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 292
+      "ms": 268
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 574
+      "ms": 533
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 292
+      "ms": 269
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 297
+      "ms": 268
     },
     "hn_top": {
       "status": "ok",
       "file": "hn-top.json",
-      "ms": 999
+      "ms": 238
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 270
+      "ms": 98
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 1037
+      "ms": 877
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 1054
+      "ms": 366
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 66
+      "ms": 44
     }
   }
 }
