@@ -566,9 +566,16 @@ const PAGE_CSS = `
   .audio-fab audio {
     height: 36px;
     width: 180px;
-    flex: 0 0 180px;       /* fixed audio track width */
+    flex: 0 0 180px;       /* fixed audio track width on desktop */
   }
   .audio-fab audio::-webkit-media-controls-panel { background: var(--surface); }
+  /* Hide volume controls (WebKit/Blink) — they steal scrubber space and
+     are redundant with OS-level volume on every device. */
+  .audio-fab audio::-webkit-media-controls-volume-slider,
+  .audio-fab audio::-webkit-media-controls-volume-control-container,
+  .audio-fab audio::-webkit-media-controls-mute-button {
+    display: none !important;
+  }
   .speed-btn {
     background: var(--surface-2);
     color: var(--text);
@@ -609,15 +616,32 @@ const PAGE_CSS = `
     flex: 0 0 180px;
     text-align: center;
   }
-  /* Narrow phones (<= 360px): shrink the audio track but keep buttons fixed */
-  @media (max-width: 360px) {
+  /* Mobile (<= 600px): expand the player to fill most of the viewport so
+     the audio scrubber gets meaningful width. Non-audio elements stay
+     fixed; only the audio track takes the remaining space.
+       handle 36 + gap 8 + audio ??? + gap 6 + speed 44 + gap 6 + close 24 + paddings 16
+       ≈ 100vw - 16(margin from edge) - 140 fixed elements = 100vw - 156
+  */
+  @media (max-width: 600px) {
     .audio-fab[data-expanded="true"] {
       width: calc(100vw - 16px);
       right: 8px;
       bottom: 8px;
-      padding-left: 6px;
+      padding-left: 8px;
       padding-right: 6px;
     }
+    .audio-fab audio {
+      width: calc(100vw - 156px);
+      flex: 0 0 calc(100vw - 156px);
+      min-width: 140px;
+    }
+    .audio-fab .no-audio-msg {
+      width: calc(100vw - 116px);
+      flex: 0 0 calc(100vw - 116px);
+    }
+  }
+  /* Tiny phones (<= 360px): shrink handle slightly too */
+  @media (max-width: 360px) {
     .audio-fab[data-expanded="true"] .audio-fab-handle {
       width: 32px; height: 32px;
       flex: 0 0 32px;
@@ -625,13 +649,8 @@ const PAGE_CSS = `
       font-size: 14px;
     }
     .audio-fab audio {
-      width: calc(100vw - 156px);     /* dynamic only at this breakpoint */
-      flex: 0 0 calc(100vw - 156px);
-      min-width: 120px;
-    }
-    .audio-fab .no-audio-msg {
-      width: calc(100vw - 116px);
-      flex: 0 0 calc(100vw - 116px);
+      width: calc(100vw - 148px);
+      flex: 0 0 calc(100vw - 148px);
     }
   }
 
