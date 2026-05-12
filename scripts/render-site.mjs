@@ -620,91 +620,18 @@ const THEME_TOGGLE_SCRIPT = `
   })();
 `;
 
-// Floating mini-player: collapse/expand, prerecorded MP3 playback,
-// and a "Read this page (browser)" button that uses the Web Speech API
-// to read the visible page content aloud. The browser speech is a free
-// fallback when the prerecorded MP3 is missing or you want fresh narration.
+// Floating mini-player: collapse/expand handler for the prerecorded MP3.
 const AUDIO_PLAYER_SCRIPT = `
   (function() {
     var fab = document.getElementById('audio-fab');
     if (!fab) return;
-    var audio = document.getElementById('digest-audio');
-    var speechBtn = document.getElementById('speech-btn');
     var handle = document.getElementById('audio-fab-handle');
     var closeBtn = document.getElementById('audio-fab-close');
-
     function expand(v) { fab.setAttribute('data-expanded', v ? 'true' : 'false'); }
     handle.addEventListener('click', function() {
       if (fab.getAttribute('data-expanded') === 'false') expand(true);
     });
     if (closeBtn) closeBtn.addEventListener('click', function(e) { e.stopPropagation(); expand(false); });
-
-    // ---- Web Speech API "Read this page" ----
-    var speaking = false;
-    function gatherText() {
-      var blocks = document.querySelectorAll('main section.block');
-      var out = [];
-      blocks.forEach(function(sec) {
-        var h2 = sec.querySelector('h2');
-        if (h2) out.push(h2.textContent.replace(/[^\\w\\s,.!?'"()\\u4e00-\\u9fff-]+/g, ' ').trim() + '.');
-        // Per-item text: card titles, summaries, hn titles
-        sec.querySelectorAll('.card-title, .card-summary, .hn-title, .builder-text, .writing-title, .writing-summary').forEach(function(el) {
-          var t = el.textContent.trim();
-          if (t) out.push(t);
-        });
-      });
-      return out.join(' ');
-    }
-
-    function stopSpeech() {
-      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-      speaking = false;
-      if (speechBtn) {
-        speechBtn.textContent = '🎤 Read page';
-        speechBtn.setAttribute('data-active', 'false');
-      }
-    }
-
-    function startSpeech() {
-      if (!('speechSynthesis' in window)) {
-        if (speechBtn) speechBtn.textContent = 'Not supported';
-        return;
-      }
-      // Pause the prerecorded audio if it's playing
-      if (audio && !audio.paused) audio.pause();
-      var text = gatherText();
-      if (!text) return;
-      // Chunk to ~200 chars to dodge mobile-Safari's hard limits.
-      var chunks = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
-      var i = 0;
-      function next() {
-        if (i >= chunks.length || !speaking) { stopSpeech(); return; }
-        var u = new SpeechSynthesisUtterance(chunks[i].trim());
-        // Auto-pick a voice that matches the chunk's primary script
-        var hasZh = /[\\u4e00-\\u9fff]/.test(chunks[i]);
-        u.lang = hasZh ? 'zh-CN' : 'en-US';
-        u.rate = 1.0;
-        u.pitch = 1.0;
-        u.onend = function() { i++; next(); };
-        u.onerror = function() { stopSpeech(); };
-        window.speechSynthesis.speak(u);
-      }
-      speaking = true;
-      if (speechBtn) {
-        speechBtn.textContent = '⏹ Stop';
-        speechBtn.setAttribute('data-active', 'true');
-      }
-      next();
-    }
-
-    if (speechBtn) {
-      speechBtn.addEventListener('click', function() {
-        if (speaking) stopSpeech(); else startSpeech();
-      });
-    }
-    if (audio) {
-      audio.addEventListener('play', function() { if (speaking) stopSpeech(); });
-    }
   })();
 `;
 
@@ -866,7 +793,6 @@ async function renderPage({
           ? `<audio id="digest-audio" controls preload="metadata" src="digest.mp3"></audio>`
           : `<span class="no-audio-msg">Today's narration not yet generated</span>`
       }
-      <button id="speech-btn" class="speech-btn" type="button" data-active="false">🎤 Read page</button>
       <button id="audio-fab-close" class="close-btn" type="button" aria-label="Close">✕</button>
     </div>
   </div>
