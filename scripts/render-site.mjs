@@ -44,6 +44,27 @@ function shortDate(iso) {
   return d.toISOString().slice(0, 10);
 }
 
+// Date-window filter. Returns true if `value` (ISO string or Unix epoch
+// seconds) falls within the last `hours` hours. Items missing a parsable
+// date are kept (defensive — we'd rather over-include than silently drop).
+const LOOKBACK_HOURS = 24;
+function withinWindow(value, hours = LOOKBACK_HOURS) {
+  if (value == null) return true;
+  let ms;
+  if (typeof value === "number") {
+    ms = value > 1e12 ? value : value * 1000;  // accept seconds or ms
+  } else {
+    ms = Date.parse(String(value));
+  }
+  if (Number.isNaN(ms)) return true;
+  return Date.now() - ms <= hours * 3600 * 1000;
+}
+
+function filterRecent(items, dateKey, hours = LOOKBACK_HOURS) {
+  if (!Array.isArray(items)) return [];
+  return items.filter((it) => withinWindow(it?.[dateKey], hours));
+}
+
 function googleTranslateUrl(text) {
   return `https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=${encodeURIComponent(text)}`;
 }
@@ -99,14 +120,14 @@ function ghTrendingSection(gh) {
 }
 
 function hnSection(hn) {
+  // HN item.time is Unix epoch seconds. Filter to last 24h.
   const items = (hn?.items || [])
-    .filter((it) => it && !it.error && it.title)
-    .slice(0, 25);
+    .filter((it) => it && !it.error && it.title && withinWindow(it.time));
   const aiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
   const aiItems = items.filter((it) => aiKeywords.test(it.title));
   const otherItems = items.filter((it) => !aiKeywords.test(it.title));
-  const ordered = [...aiItems, ...otherItems].slice(0, 15);
-  if (!ordered.length) return `<p class="empty">No items.</p>`;
+  const ordered = [...aiItems, ...otherItems];
+  if (!ordered.length) return `<p class="empty">No items in the last 24 hours.</p>`;
   return `<ol class="hn-list">${ordered
     .map(
       (it) => `
@@ -146,8 +167,9 @@ function hfSection(hf) {
 }
 
 function labBlogSection(openai) {
-  const items = (openai?.items || []).slice(0, 10);
-  if (!items.length) return `<p class="empty">No items.</p>`;
+  // OpenAI pubDate is RFC 2822 ("Tue, 12 May 2026 15:00:00 GMT").
+  const items = filterRecent(openai?.items || [], "pubDate");
+  if (!items.length) return `<p class="empty">No lab posts in the last 24 hours.</p>`;
   return `<div class="cards">${items
     .map(
       (it) => `
@@ -165,8 +187,9 @@ function labBlogSection(openai) {
 }
 
 function builderWritingSection(sw) {
-  const entries = (sw?.entries || []).slice(0, 10);
-  if (!entries.length) return `<p class="empty">No items.</p>`;
+  // Simon's atom "updated" is ISO ("2026-05-11T23:58:55+00:00").
+  const entries = filterRecent(sw?.entries || [], "updated");
+  if (!entries.length) return `<p class="empty">No new posts in the last 24 hours.</p>`;
   return `<ul class="writing-list">${entries
     .map(
       (e) => `
@@ -184,14 +207,16 @@ function builderWritingSection(sw) {
 }
 
 function followBuildersSection(xFeed, podFeed, blogFeed) {
+  // Filter tweets to last 24h, sort by likes (popularity). No count cap.
   const allTweets = (xFeed?.x || []).flatMap((author) =>
     (author.tweets || []).map((t) => ({ ...t, author: author.name, handle: author.handle })),
   );
-  allTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
-  const xItems = allTweets.slice(0, 8);
+  const recentTweets = allTweets.filter((t) => withinWindow(t.createdAt));
+  recentTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+  const xItems = recentTweets;
 
-  const podItems = (podFeed?.podcasts || []).slice(0, 6);
-  const blogItems = (blogFeed?.blogs || []).slice(0, 6);
+  const podItems = filterRecent(podFeed?.podcasts || [], "publishedAt");
+  const blogItems = filterRecent(blogFeed?.blogs || [], "publishedAt");
 
   const renderTweet = (t) => {
     const text = (t.text || "").slice(0, 240) + (t.text?.length > 240 ? "…" : "");
@@ -778,10 +803,14 @@ async function renderPage({
   blogFeed,
   audioAvailable,
 }) {
-  const modelItems = (aihotModels?.items || pickAihotSection(aihotDaily, "模型")).slice(0, 12);
-  const productItems = (aihotProducts?.items || pickAihotSection(aihotDaily, "产品")).slice(0, 12);
-  const industryItems = (aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态")).slice(0, 12);
-  const paperItems = (aihotPaper?.items || pickAihotSection(aihotDaily, "论文")).slice(0, 8);
+  // Date-filter AIHOT to the last 24 hours so the page is a true daily
+  // digest, not a 6-day backlog. Items lack a popularity field; recency
+  // is the only available quality signal. No count cap — show everything
+  // from the lookback window.
+  const modelItems = filterRecent(aihotModels?.items || pickAihotSection(aihotDaily, "模型"), "publishedAt");
+  const productItems = filterRecent(aihotProducts?.items || pickAihotSection(aihotDaily, "产品"), "publishedAt");
+  const industryItems = filterRecent(aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态"), "publishedAt");
+  const paperItems = filterRecent(aihotPaper?.items || pickAihotSection(aihotDaily, "论文"), "publishedAt");
 
   return `<!DOCTYPE html>
 <html lang="en">

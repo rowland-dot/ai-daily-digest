@@ -16,6 +16,7 @@ import json
 import re
 import subprocess
 import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 DATA = Path("data")
@@ -27,11 +28,55 @@ SEGS.mkdir(exist_ok=True)
 EN_VOICE = "en-US-AriaNeural"
 ZH_VOICE = "zh-CN-XiaoxiaoNeural"
 
-# No per-section item caps — narrate everything the data source contains.
-# The fetched JSON itself is the natural cap (e.g. AIHOT API is called
-# with limit=20, HN top is fetched as 30 items, HF popular as 20). Per-
-# item summary text is still capped at ~200 chars so individual entries
-# don't become essays.
+# Filter to last 24 hours for true "daily" digest; no per-section count caps.
+LOOKBACK_HOURS = 24
+NOW = datetime.now(timezone.utc)
+CUTOFF = NOW - timedelta(hours=LOOKBACK_HOURS)
+
+
+def _parse_dt(value):
+    """Best-effort parse of ISO / RFC-2822 / unix-epoch into aware UTC datetime."""
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        ts = value if value > 1e12 else value * 1000
+        try:
+            return datetime.fromtimestamp(ts / 1000, tz=timezone.utc)
+        except (OSError, OverflowError, ValueError):
+            return None
+    s = str(value).strip()
+    if not s:
+        return None
+    # Try ISO first (replacing trailing Z)
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        pass
+    # Fall back to RFC 2822 for RSS pubDate
+    try:
+        from email.utils import parsedate_to_datetime
+        d = parsedate_to_datetime(s)
+        if d.tzinfo is None:
+            d = d.replace(tzinfo=timezone.utc)
+        return d
+    except (TypeError, ValueError):
+        return None
+
+
+def within_window(value) -> bool:
+    """True if value is within LOOKBACK_HOURS of now; True if unparseable."""
+    if value is None:
+        return True
+    dt = _parse_dt(value)
+    if dt is None:
+        return True
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt >= CUTOFF
+
+
+def filter_recent(items: list[dict], date_key: str) -> list[dict]:
+    return [it for it in items if within_window((it or {}).get(date_key))]
 
 
 # --- Text cleanup before TTS ---
@@ -264,41 +309,47 @@ def main() -> int:
     for filename, display_label, fallback_hint in aihot_categories:
         cat = load(filename)
         items = (cat.get("items") if cat else None) or daily_section(fallback_hint)
+        items = filter_recent(items, "publishedAt")  # last 24h
         if not items:
             continue
         text = build_aihot_section_text(display_label, items)
         if text:
             sections.append((text, ZH_VOICE))
 
-    # Lab announcements
+    # Lab announcements — filter to last 24h
     oai = load("openai-blog.json")
     if oai and oai.get("items"):
-        text = build_lab_section_text(oai["items"])
-        if text:
-            sections.append((text, EN_VOICE))
+        items = filter_recent(oai["items"], "pubDate")
+        if items:
+            text = build_lab_section_text(items)
+            if text:
+                sections.append((text, EN_VOICE))
 
-    # Simon Willison
+    # Simon Willison — filter to last 24h
     sw = load("simon-willison.json")
     if sw and sw.get("entries"):
-        text = build_simon_section_text(sw["entries"])
-        if text:
-            sections.append((text, EN_VOICE))
+        entries = filter_recent(sw["entries"], "updated")
+        if entries:
+            text = build_simon_section_text(entries)
+            if text:
+                sections.append((text, EN_VOICE))
 
-    # GitHub trending
+    # GitHub trending — no date filter (already "today's trending")
     gh = load("github-trending.json")
     if gh and gh.get("repos"):
         text = build_gh_section_text(gh["repos"])
         if text:
             sections.append((text, EN_VOICE))
 
-    # HN top AI
+    # HN top AI — filter to last 24h (item.time is unix epoch seconds)
     hn = load("hn-top.json")
     if hn and hn.get("items"):
-        text = build_hn_section_text(hn["items"])
+        items = [it for it in hn["items"] if it and within_window(it.get("time"))]
+        text = build_hn_section_text(items)
         if text:
             sections.append((text, EN_VOICE))
 
-    # HF popular
+    # HF popular — no date filter (already "trending overall")
     hf = load("hf-popular.json")
     if hf and hf.get("models"):
         text = build_hf_section_text(hf["models"])
