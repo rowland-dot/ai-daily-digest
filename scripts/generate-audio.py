@@ -308,12 +308,21 @@ def main() -> int:
 
     output = SITE / "digest.mp3"
     try:
+        # Re-encode during concat. Per-segment MP3s from edge-tts have
+        # slightly different encoder parameters, and stream-copy concat
+        # produces a frame-aligned-but-misframed stream that some players
+        # silently seek past (browsers skip the intro and jump to a later
+        # frame boundary). Re-encoding to a single, consistent MP3
+        # eliminates that. ~3-5s slower on the runner; reliable playback.
         subprocess.run(
             [
                 "ffmpeg", "-y", "-loglevel", "error",
                 "-f", "concat", "-safe", "0",
                 "-i", str(concat_list),
-                "-c", "copy",
+                "-c:a", "libmp3lame",
+                "-b:a", "64k",
+                "-ar", "24000",
+                "-ac", "1",
                 str(output),
             ],
             check=True,
