@@ -26,7 +26,17 @@ SEGS.mkdir(exist_ok=True)
 
 EN_VOICE = "en-US-AriaNeural"
 ZH_VOICE = "zh-CN-XiaoxiaoNeural"
-SECTION_LIMIT = 5  # max items per section in the narration
+
+# Per-section item caps. Mirror the render-site.mjs caps so the audio
+# narrates exactly what the page displays (was capped at 5 across the
+# board, which dropped ~half of the visible items).
+AIHOT_CAP = 12          # render-site shows .slice(0, 12) per AIHOT category
+AIHOT_PAPER_CAP = 8     # papers section is shorter on the page
+LAB_CAP = 10            # OpenAI section on the page
+SIMON_CAP = 10          # Simon Willison entries on the page
+GH_CAP = 15             # GitHub trending repos on the page
+HN_CAP = 15             # HN top stories on the page
+HF_CAP = 15             # HuggingFace popular models on the page
 
 
 # --- Text cleanup before TTS ---
@@ -129,13 +139,13 @@ def field(d: dict, *keys: str, limit: int = 0) -> str:
     return ""
 
 
-def build_aihot_section_text(label: str, items: list[dict]) -> str:
+def build_aihot_section_text(label: str, items: list[dict], cap: int = AIHOT_CAP) -> str:
     """Stitch Chinese items into one read-aloud passage."""
     parts: list[str] = []
     lbl = clean_for_tts(label)
     if lbl:
         parts.append(lbl + "。")
-    for item in items[:SECTION_LIMIT]:
+    for item in items[:cap]:
         title = field(item, "title")
         summary = field(item, "summary", limit=200)
         if title:
@@ -147,7 +157,7 @@ def build_aihot_section_text(label: str, items: list[dict]) -> str:
 
 def build_lab_section_text(items: list[dict]) -> str:
     parts = ["Lab announcements from OpenAI."]
-    for it in items[:SECTION_LIMIT]:
+    for it in items[:LAB_CAP]:
         title = field(it, "title")
         desc = field(it, "description", limit=220)
         if title:
@@ -159,7 +169,7 @@ def build_lab_section_text(items: list[dict]) -> str:
 
 def build_simon_section_text(entries: list[dict]) -> str:
     parts = ["Builder writing, from Simon Willison's weblog."]
-    for e in entries[:SECTION_LIMIT]:
+    for e in entries[:SIMON_CAP]:
         title = field(e, "title")
         summary = field(e, "summary", limit=220)
         if title:
@@ -171,7 +181,7 @@ def build_simon_section_text(entries: list[dict]) -> str:
 
 def build_gh_section_text(repos: list[dict]) -> str:
     parts = ["Trending on GitHub today."]
-    for r in repos[:8]:
+    for r in repos[:GH_CAP]:
         owner = clean_for_tts(r.get("owner") or "")
         name = clean_for_tts(r.get("name") or "")
         desc = field(r, "description", limit=180)
@@ -196,7 +206,7 @@ def build_hn_section_text(items: list[dict]) -> str:
         it for it in items
         if it and it.get("title")
         and any(k in it["title"].lower() for k in ai_keywords)
-    ][:8]
+    ][:HN_CAP]
     if not filtered:
         return ""
     parts = ["Top AI stories from Hacker News today."]
@@ -212,7 +222,7 @@ def build_hn_section_text(items: list[dict]) -> str:
 
 def build_hf_section_text(models: list[dict]) -> str:
     parts = ["Most-loved models on HuggingFace."]
-    for m in models[:6]:
+    for m in models[:HF_CAP]:
         mid = clean_for_tts(m.get("id") or "")
         likes = m.get("likes") or 0
         downloads = m.get("downloads") or 0
@@ -251,17 +261,17 @@ def main() -> int:
         return []
 
     aihot_categories = [
-        ("aihot-ai-models.json", "模型发布与更新", "模型"),
-        ("aihot-ai-products.json", "产品与应用", "产品"),
-        ("aihot-industry.json", "行业动态", "行业"),
-        ("aihot-paper.json", "研究亮点", "论文"),
+        ("aihot-ai-models.json", "模型发布与更新", "模型", AIHOT_CAP),
+        ("aihot-ai-products.json", "产品与应用", "产品", AIHOT_CAP),
+        ("aihot-industry.json", "行业动态", "行业", AIHOT_CAP),
+        ("aihot-paper.json", "研究亮点", "论文", AIHOT_PAPER_CAP),
     ]
-    for filename, display_label, fallback_hint in aihot_categories:
+    for filename, display_label, fallback_hint, cap in aihot_categories:
         cat = load(filename)
         items = (cat.get("items") if cat else None) or daily_section(fallback_hint)
         if not items:
             continue
-        text = build_aihot_section_text(display_label, items)
+        text = build_aihot_section_text(display_label, items, cap=cap)
         if text:
             sections.append((text, ZH_VOICE))
 
