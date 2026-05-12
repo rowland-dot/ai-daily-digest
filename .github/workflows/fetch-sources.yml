@@ -25,6 +25,16 @@ jobs:
         with:
           node-version: "20"
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install edge-tts
+        run: pip install --quiet edge-tts
+
+      - name: Verify ffmpeg
+        run: ffmpeg -version | head -1
+
       - name: Fetch upstream sources
         run: node scripts/fetch-sources.mjs
 
@@ -40,6 +50,10 @@ jobs:
               echo "[warn] failed to fetch $url"
             fi
           done
+
+      - name: Generate narration MP3
+        run: python scripts/generate-audio.py
+        continue-on-error: true   # site still deploys if TTS fails
 
       - name: Render static site
         run: node scripts/render-site.mjs
