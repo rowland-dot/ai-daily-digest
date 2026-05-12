@@ -508,24 +508,24 @@ const PAGE_CSS = `
 
   .empty { color: var(--text-muted); font-style: italic; }
 
-  /* Floating mini-player (bottom-right) */
+  /* Floating mini-player (bottom-right).
+     Each element has a fixed pixel width per breakpoint so nothing
+     reflows as the viewport changes or as the user interacts. */
   .audio-fab {
     position: fixed;
-    right: 18px;
-    bottom: 18px;
+    right: 16px;
+    bottom: 16px;
     z-index: 50;
-    display: flex;
-    align-items: center;
     background: var(--surface);
     border: 1px solid var(--border-strong);
     border-radius: 999px;
-    padding: 8px 8px 8px 14px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.10);
     font-family: var(--body-font);
-    transition: width 0.2s ease, padding 0.2s ease;
-    max-width: calc(100vw - 36px);
   }
+  /* Collapsed: just the round handle */
   .audio-fab[data-expanded="false"] {
+    width: 56px;
+    height: 56px;
     padding: 0;
     cursor: pointer;
   }
@@ -538,67 +538,101 @@ const PAGE_CSS = `
     color: #fff;
     font-size: 22px;
   }
+  /* Expanded: fixed-width row, no flex shrinking, no wrapping */
+  .audio-fab[data-expanded="true"] {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px 6px 8px;
+    height: 52px;
+    width: 320px;          /* fixed total width */
+  }
   .audio-fab[data-expanded="true"] .audio-fab-handle {
-    width: 40px; height: 40px;
+    width: 36px; height: 36px;
+    flex: 0 0 36px;
+    margin-right: 8px;
     border-radius: 50%;
-    margin-right: 10px;
     background: var(--accent);
     color: #fff;
     display: flex; align-items: center; justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
+    font-size: 16px;
   }
-  .audio-fab-body { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; }
-  .audio-fab audio { height: 36px; max-width: 260px; }
+  .audio-fab-body {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+  }
+  .audio-fab audio {
+    height: 36px;
+    width: 180px;
+    flex: 0 0 180px;       /* fixed audio track width */
+  }
   .audio-fab audio::-webkit-media-controls-panel { background: var(--surface); }
   .speed-btn {
     background: var(--surface-2);
     color: var(--text);
     border: 1px solid var(--border);
-    padding: 6px 10px;
+    padding: 0;
     border-radius: 999px;
-    font-size: 12.5px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     cursor: pointer;
     font-family: inherit;
     white-space: nowrap;
-    min-width: 44px;
-    transition: all 0.12s ease;
+    height: 32px;
+    width: 44px;
+    flex: 0 0 44px;        /* fixed speed-button width */
+    text-align: center;
+    transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
   }
   .speed-btn:hover { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
   .speed-btn:active { transform: scale(0.96); }
-  .audio-fab .speech-btn {
-    background: var(--accent-soft);
-    color: var(--accent);
-    border: 1px solid transparent;
-    padding: 7px 12px;
-    border-radius: 999px;
-    font-size: 12.5px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: inherit;
-    white-space: nowrap;
-  }
-  .audio-fab .speech-btn:hover { background: var(--accent); color: #fff; }
-  .audio-fab .speech-btn[data-active="true"] {
-    background: var(--accent);
-    color: #fff;
-  }
   .audio-fab .close-btn {
     background: transparent;
     border: 0;
     color: var(--text-muted);
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    padding: 4px 6px;
+    padding: 0;
     line-height: 1;
-    flex-shrink: 0;
+    width: 24px;
+    height: 32px;
+    flex: 0 0 24px;        /* fixed close-button width */
+    text-align: center;
   }
   .audio-fab .close-btn:hover { color: var(--text); }
-  .audio-fab .no-audio-msg { color: var(--text-muted); font-size: 12.5px; padding: 8px 6px; }
-  @media (max-width: 480px) {
-    .audio-fab[data-expanded="true"] { right: 8px; bottom: 8px; flex-wrap: wrap; max-width: calc(100vw - 16px); }
-    .audio-fab audio { max-width: calc(100vw - 140px); }
+  .audio-fab .no-audio-msg {
+    color: var(--text-muted);
+    font-size: 12px;
+    width: 180px;
+    flex: 0 0 180px;
+    text-align: center;
+  }
+  /* Narrow phones (<= 360px): shrink the audio track but keep buttons fixed */
+  @media (max-width: 360px) {
+    .audio-fab[data-expanded="true"] {
+      width: calc(100vw - 16px);
+      right: 8px;
+      bottom: 8px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    .audio-fab[data-expanded="true"] .audio-fab-handle {
+      width: 32px; height: 32px;
+      flex: 0 0 32px;
+      margin-right: 6px;
+      font-size: 14px;
+    }
+    .audio-fab audio {
+      width: calc(100vw - 156px);     /* dynamic only at this breakpoint */
+      flex: 0 0 calc(100vw - 156px);
+      min-width: 120px;
+    }
+    .audio-fab .no-audio-msg {
+      width: calc(100vw - 116px);
+      flex: 0 0 calc(100vw - 116px);
+    }
   }
 
   /* Footer */
