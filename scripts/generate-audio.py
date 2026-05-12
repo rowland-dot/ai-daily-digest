@@ -236,12 +236,34 @@ def main() -> int:
     ))
 
     # AIHOT — Chinese
-    aihot = load("aihot-daily.json")
-    if aihot and aihot.get("sections"):
-        for sec in aihot["sections"][:4]:
-            text = build_aihot_section_text(sec.get("label", ""), sec.get("items", []))
-            if text:
-                sections.append((text, ZH_VOICE))
+    # Use the per-category items endpoints (same source as the rendered
+    # page), falling back to the daily aggregate's sections if a category
+    # file is missing. Order matches the page: models → products →
+    # industry → papers.
+    aihot_daily = load("aihot-daily.json")
+
+    def daily_section(label_hint: str) -> list[dict]:
+        if not aihot_daily or not aihot_daily.get("sections"):
+            return []
+        for sec in aihot_daily["sections"]:
+            if label_hint in (sec.get("label") or ""):
+                return sec.get("items") or []
+        return []
+
+    aihot_categories = [
+        ("aihot-ai-models.json", "模型发布与更新", "模型"),
+        ("aihot-ai-products.json", "产品与应用", "产品"),
+        ("aihot-industry.json", "行业动态", "行业"),
+        ("aihot-paper.json", "研究亮点", "论文"),
+    ]
+    for filename, display_label, fallback_hint in aihot_categories:
+        cat = load(filename)
+        items = (cat.get("items") if cat else None) or daily_section(fallback_hint)
+        if not items:
+            continue
+        text = build_aihot_section_text(display_label, items)
+        if text:
+            sections.append((text, ZH_VOICE))
 
     # Lab announcements
     oai = load("openai-blog.json")
