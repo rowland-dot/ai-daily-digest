@@ -49,6 +49,45 @@ async function fetchJson(url, { headers = {} } = {}) {
   return res.json();
 }
 
+async function fetchText(url, { headers = {} } = {}) {
+  const res = await fetch(url, {
+    headers: { "User-Agent": BROWSER_UA, ...headers },
+  });
+  if (!res.ok) {
+    throw new Error(`HTTP ${res.status} ${res.statusText}`);
+  }
+  return res.text();
+}
+
+// Tiny helpers for extracting from XML/HTML without a parser dep.
+function decodeEntities(s) {
+  return String(s || "")
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(parseInt(n, 10)));
+}
+
+function stripTags(s) {
+  // Decode entities first (so &lt;p&gt; becomes <p>), then strip tags.
+  // Run twice in case there's double-encoded content (RSS-in-HTML-in-XML).
+  let out = decodeEntities(s);
+  out = out.replace(/<[^>]+>/g, " ");
+  out = decodeEntities(out);
+  return out.replace(/\s+/g, " ").trim();
+}
+
+function firstMatch(re, str, group = 1) {
+  const m = re.exec(str);
+  return m ? m[group] : "";
+}
+
 async function runSource(name, filename, fetcher) {
   const started = Date.now();
   try {
@@ -105,6 +144,73 @@ async function hfPopular(limit = 20) {
   return { fetched_at: new Date().toISOString(), models: list };
 }
 
+async function githubTrending() {
+  const html = await fetchText("https://github.com/trending?since=daily");
+  const articles = [...html.matchAll(/<article class="Box-row">([\s\S]*?)<\/article>/g)];
+  const repos = articles.map((m) => {
+    const block = m[1];
+    const href = firstMatch(/<h2[^>]*>[\s\S]*?<a[^>]*href="(\/[^"]+)"/i, block);
+    const slug = href.replace(/^\//, ""); // e.g. "owner/repo"
+    const [owner, name] = slug.split("/");
+    const description = stripTags(firstMatch(/<p class="col-9[^"]*"[^>]*>([\s\S]*?)<\/p>/i, block));
+    const language = stripTags(firstMatch(/<span itemprop="programmingLanguage">([\s\S]*?)<\/span>/i, block));
+    const languageColor = firstMatch(/<span class="repo-language-color"[^>]*style="background-color:\s*([^"]+)"/i, block);
+    const stars = stripTags(firstMatch(/\/stargazers"[\s\S]*?<\/svg>\s*([\d,]+)/i, block)).replace(/,/g, "");
+    const forks = stripTags(firstMatch(/\/forks"[\s\S]*?<\/svg>\s*([\d,]+)/i, block)).replace(/,/g, "");
+    const starsToday = stripTags(firstMatch(/([\d,]+)\s*stars?\s*today/i, block)).replace(/,/g, "");
+    return {
+      owner,
+      name,
+      url: `https://github.com${href}`,
+      description,
+      language,
+      languageColor,
+      stars: stars ? parseInt(stars, 10) : null,
+      forks: forks ? parseInt(forks, 10) : null,
+      starsToday: starsToday ? parseInt(starsToday, 10) : null,
+    };
+  });
+  return { fetched_at: new Date().toISOString(), repos };
+}
+
+function parseRssItems(xml) {
+  // Generic RSS 2.0 <item> extractor.
+  return [...xml.matchAll(/<item[^>]*>([\s\S]*?)<\/item>/g)].map((m) => {
+    const block = m[1];
+    return {
+      title: stripTags(firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, block)),
+      link: stripTags(firstMatch(/<link[^>]*>([\s\S]*?)<\/link>/i, block)),
+      pubDate: stripTags(firstMatch(/<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i, block)),
+      description: stripTags(firstMatch(/<description[^>]*>([\s\S]*?)<\/description>/i, block)).slice(0, 400),
+    };
+  });
+}
+
+function parseAtomEntries(xml) {
+  // Generic Atom <entry> extractor. <link> uses href= attribute.
+  return [...xml.matchAll(/<entry[^>]*>([\s\S]*?)<\/entry>/g)].map((m) => {
+    const block = m[1];
+    return {
+      title: stripTags(firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, block)),
+      link: firstMatch(/<link[^>]*href="([^"]+)"/i, block),
+      updated: stripTags(firstMatch(/<updated[^>]*>([\s\S]*?)<\/updated>/i, block)),
+      summary: stripTags(firstMatch(/<summary[^>]*>([\s\S]*?)<\/summary>/i, block)).slice(0, 400),
+    };
+  });
+}
+
+async function openaiBlog(limit = 15) {
+  const xml = await fetchText("https://openai.com/news/rss.xml");
+  const items = parseRssItems(xml).slice(0, limit);
+  return { fetched_at: new Date().toISOString(), source: "OpenAI", items };
+}
+
+async function simonWillison(limit = 12) {
+  const xml = await fetchText("https://simonwillison.net/atom/everything/");
+  const entries = parseAtomEntries(xml).slice(0, limit);
+  return { fetched_at: new Date().toISOString(), source: "Simon Willison", entries };
+}
+
 // ---- Run all ----
 
 await runSource("aihot_daily", "aihot-daily.json", aihotDaily);
@@ -114,6 +220,9 @@ await runSource("aihot_industry", "aihot-industry.json", () => aihotItems("indus
 await runSource("aihot_paper", "aihot-paper.json", () => aihotItems("paper"));
 await runSource("hn_top", "hn-top.json", hnTopStories);
 await runSource("hf_popular", "hf-popular.json", hfPopular);
+await runSource("github_trending", "github-trending.json", githubTrending);
+await runSource("openai_blog", "openai-blog.json", openaiBlog);
+await runSource("simon_willison", "simon-willison.json", simonWillison);
 
 await writeJson("manifest.json", manifest);
 console.log("manifest:", JSON.stringify(manifest.sources, null, 2));

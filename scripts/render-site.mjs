@@ -1,31 +1,24 @@
-// Renders the bridged JSON snapshots into a static HTML site.
+// Renders bridged JSON snapshots into a static HTML site with two themes:
+//   - linear  (dark, modernist, lavender accent)
+//   - claude  (warm cream, coral accent, serif display)
 //
-// Inputs:  data/*.json (created by fetch-sources.mjs)
-// Outputs: docs/index.html        (latest day, served as site root)
-//          docs/digests/YYYY-MM-DD.html  (archive of each day)
-//          docs/digests/index.html       (archive index, list of all days)
+// Default theme follows the OS dark/light setting; user can override via
+// the header toggle, persisted to localStorage.
 //
-// Deployed via GitHub Pages with /docs as the source.
-//
-// No LLM in the loop. The agent's "reader digest" curation lives in the
-// Claude routine's run log; this page is a structured browse view of the
-// raw bridged data — readable, mobile-friendly, all items linked to source.
+// Inputs:  data/*.json
+// Outputs: docs/index.html, docs/digests/YYYY-MM-DD.html, docs/digests/index.html
 
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { join, dirname } from "node:path";
+import { join } from "node:path";
 
 const DATA_DIR = "data";
 const SITE_DIR = "docs";
 const DIGESTS_DIR = join(SITE_DIR, "digests");
 
-async function readJson(path) {
-  return JSON.parse(await readFile(path, "utf8"));
-}
-
 async function tryReadJson(path) {
   try {
-    return await readJson(path);
+    return JSON.parse(await readFile(path, "utf8"));
   } catch {
     return null;
   }
@@ -42,8 +35,13 @@ function escapeHtml(s) {
 
 function formatDate(iso) {
   if (!iso) return "";
+  return new Date(iso).toUTCString().replace(" GMT", " UTC");
+}
+
+function shortDate(iso) {
+  if (!iso) return "";
   const d = new Date(iso);
-  return d.toUTCString().replace(" GMT", " UTC");
+  return d.toISOString().slice(0, 10);
 }
 
 function googleTranslateUrl(text) {
@@ -52,8 +50,7 @@ function googleTranslateUrl(text) {
 
 // ---- Section builders ----
 
-function aihotItemsCard(items, opts = {}) {
-  const { showTranslate = true } = opts;
+function aihotItemsCard(items) {
   if (!items?.length) return `<p class="empty">No items.</p>`;
   return `<div class="cards">${items
     .map(
@@ -67,7 +64,33 @@ function aihotItemsCard(items, opts = {}) {
       </div>
       <div class="card-actions">
         ${item.url ? `<a class="primary-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Read original ↗</a>` : ""}
-        ${showTranslate && (item.title || item.summary) ? `<a class="secondary-link" href="${googleTranslateUrl(`${item.title}\n\n${item.summary || ""}`)}" target="_blank" rel="noopener">Translate EN ↗</a>` : ""}
+        ${item.title || item.summary ? `<a class="secondary-link" href="${googleTranslateUrl(`${item.title}\n\n${item.summary || ""}`)}" target="_blank" rel="noopener">Translate EN ↗</a>` : ""}
+      </div>
+    </article>
+  `,
+    )
+    .join("")}</div>`;
+}
+
+function ghTrendingSection(gh) {
+  const repos = (gh?.repos || []).slice(0, 15);
+  if (!repos.length) return `<p class="empty">No items.</p>`;
+  return `<div class="cards">${repos
+    .map(
+      (r) => `
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">
+          <span class="gh-owner">${escapeHtml(r.owner || "")}</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">${escapeHtml(r.name || "")}</span>
+        </a>
+      </h3>
+      ${r.description ? `<p class="card-summary">${escapeHtml(r.description)}</p>` : ""}
+      <div class="gh-meta">
+        ${r.language ? `<span class="gh-lang"><span class="gh-dot" style="background:${escapeHtml(r.languageColor || "#888")}"></span>${escapeHtml(r.language)}</span>` : ""}
+        ${r.stars != null ? `<span class="stat">★ ${r.stars.toLocaleString()}</span>` : ""}
+        ${r.starsToday ? `<span class="stat-today">+${r.starsToday.toLocaleString()} today</span>` : ""}
       </div>
     </article>
   `,
@@ -78,14 +101,11 @@ function aihotItemsCard(items, opts = {}) {
 function hnSection(hn) {
   const items = (hn?.items || [])
     .filter((it) => it && !it.error && it.title)
-    .slice(0, 20);
-
-  // Light AI-relevance filter for prominence ordering
+    .slice(0, 25);
   const aiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
   const aiItems = items.filter((it) => aiKeywords.test(it.title));
   const otherItems = items.filter((it) => !aiKeywords.test(it.title));
   const ordered = [...aiItems, ...otherItems].slice(0, 15);
-
   if (!ordered.length) return `<p class="empty">No items.</p>`;
   return `<ol class="hn-list">${ordered
     .map(
@@ -125,12 +145,45 @@ function hfSection(hf) {
     .join("")}</div>`;
 }
 
-function followBuildersSection(xFeed, podFeed, blogFeed) {
-  // x feed shape: { x: [{ name, handle, bio, tweets: [{id, text, createdAt, url, likes, ...}] }] }
-  // podcasts feed shape: { podcasts: [{ name, title, url, publishedAt, transcript }] }  (flat episodes)
-  // blogs feed shape:    { blogs:    [{ name, title, url, publishedAt }] }              (flat posts)
+function labBlogSection(openai) {
+  const items = (openai?.items || []).slice(0, 10);
+  if (!items.length) return `<p class="empty">No items.</p>`;
+  return `<div class="cards">${items
+    .map(
+      (it) => `
+    <article class="card">
+      <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a></h3>
+      ${it.description ? `<p class="card-summary">${escapeHtml(it.description)}</p>` : ""}
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        ${it.pubDate ? `<span class="meta-time">${escapeHtml(it.pubDate.replace(/ \d{2}:\d{2}:\d{2} GMT$/, ""))}</span>` : ""}
+      </div>
+    </article>
+  `,
+    )
+    .join("")}</div>`;
+}
 
-  // Flatten X: take top tweets across all authors, rank by likes.
+function builderWritingSection(sw) {
+  const entries = (sw?.entries || []).slice(0, 10);
+  if (!entries.length) return `<p class="empty">No items.</p>`;
+  return `<ul class="writing-list">${entries
+    .map(
+      (e) => `
+    <li class="writing-item">
+      <a class="writing-title" href="${escapeHtml(e.link)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>
+      ${e.summary ? `<p class="writing-summary">${escapeHtml(e.summary)}</p>` : ""}
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        ${e.updated ? `<span>· ${escapeHtml(shortDate(e.updated))}</span>` : ""}
+      </div>
+    </li>
+  `,
+    )
+    .join("")}</ul>`;
+}
+
+function followBuildersSection(xFeed, podFeed, blogFeed) {
   const allTweets = (xFeed?.x || []).flatMap((author) =>
     (author.tweets || []).map((t) => ({ ...t, author: author.name, handle: author.handle })),
   );
@@ -158,18 +211,16 @@ function followBuildersSection(xFeed, podFeed, blogFeed) {
     `;
   };
 
-  const renderPostOrEpisode = (item, kind) => {
-    return `
-      <li class="builder-item">
-        <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">${escapeHtml(item.title || "(untitled)")}</a>
-        <div class="builder-meta">
-          ${item.name ? `<span>${escapeHtml(item.name)}</span>` : ""}
-          ${item.publishedAt ? `<span> · ${escapeHtml(item.publishedAt.slice(0, 10))}</span>` : ""}
-          ${kind === "podcast" ? `<span class="badge">podcast</span>` : ""}
-        </div>
-      </li>
-    `;
-  };
+  const renderPostOrEpisode = (item, kind) => `
+    <li class="builder-item">
+      <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">${escapeHtml(item.title || "(untitled)")}</a>
+      <div class="builder-meta">
+        ${item.name ? `<span>${escapeHtml(item.name)}</span>` : ""}
+        ${item.publishedAt ? `<span> · ${escapeHtml(item.publishedAt.slice(0, 10))}</span>` : ""}
+        ${kind === "podcast" ? `<span class="badge">podcast</span>` : ""}
+      </div>
+    </li>
+  `;
 
   const part = (label, html) =>
     html
@@ -187,221 +238,331 @@ function followBuildersSection(xFeed, podFeed, blogFeed) {
   return out || `<p class="empty">No items in the lookback window.</p>`;
 }
 
-// ---- Page assembly ----
+// ---- Themes ----
+// One CSS block defines BOTH themes via [data-theme="linear"] and [data-theme="claude"].
+// The <html> element starts with no data-theme; a tiny inline script sets it based on
+// localStorage or prefers-color-scheme before paint, so there's no flash.
 
 const PAGE_CSS = `
-  :root {
-    --bg: #fafaf9;
+  /* Linear (dark, modernist) — applied when data-theme="linear" */
+  [data-theme="linear"] {
+    --bg: #010102;
+    --surface: #0f1011;
+    --surface-2: #141516;
+    --surface-3: #18191a;
+    --text: #f7f8f8;
+    --text-muted: #8a8f98;
+    --text-tertiary: #62666d;
+    --border: #23252a;
+    --border-strong: #34343a;
+    --accent: #5e6ad2;
+    --accent-hover: #828fff;
+    --accent-soft: rgba(94, 106, 210, 0.12);
+    --link: #828fff;
+    --link-hover: #b0b9ff;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 8px rgba(0,0,0,0.25);
+    --display-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+    --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    --tracking-tight: -0.02em;
+    --hero-bg: linear-gradient(180deg, #18191a 0%, #010102 100%);
+    --hero-text: #f7f8f8;
+    --hero-accent: #5e6ad2;
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+
+  /* Claude (warm cream, editorial) — applied when data-theme="claude" */
+  [data-theme="claude"] {
+    --bg: #faf9f5;
     --surface: #ffffff;
-    --text: #1c1917;
-    --muted: #78716c;
-    --border: #e7e5e4;
-    --accent: #ea580c;
-    --accent-soft: #fff7ed;
-    --link: #c2410c;
-    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 8px rgba(0,0,0,0.03);
-    --radius: 12px;
-    --max: 980px;
+    --surface-2: #efe9de;
+    --surface-3: #f5f0e8;
+    --text: #141413;
+    --text-muted: #6c6a64;
+    --text-tertiary: #8e8b82;
+    --border: #e6dfd8;
+    --border-strong: #d4cdc4;
+    --accent: #cc785c;
+    --accent-hover: #a9583e;
+    --accent-soft: rgba(204, 120, 92, 0.10);
+    --link: #a9583e;
+    --link-hover: #8b4530;
+    --shadow: 0 1px 2px rgba(20,20,19,0.04), 0 4px 12px rgba(20,20,19,0.05);
+    --display-font: 'Copernicus', Georgia, 'Tiempos Headline', serif;
+    --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
+    --tracking-tight: -0.01em;
+    --hero-bg: linear-gradient(135deg, #efe9de 0%, #faf9f5 100%);
+    --hero-text: #141413;
+    --hero-accent: #cc785c;
+    --radius: 10px;
+    --radius-lg: 14px;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0c0a09;
-      --surface: #1c1917;
-      --text: #f5f5f4;
-      --muted: #a8a29e;
-      --border: #292524;
-      --accent: #fb923c;
-      --accent-soft: #1f1208;
-      --link: #fdba74;
-      --shadow: 0 1px 2px rgba(0,0,0,0.4);
-    }
-  }
+
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    font-family: var(--body-font);
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
   a { color: var(--link); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .container { max-width: var(--max); margin: 0 auto; padding: 24px 20px; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+  .container { max-width: 1020px; margin: 0 auto; padding: 24px 20px; }
 
+  /* Header */
   header.hero {
-    background: linear-gradient(135deg, var(--accent) 0%, #f59e0b 100%);
-    color: #fff;
-    padding: 48px 20px 40px;
+    background: var(--hero-bg);
+    color: var(--hero-text);
+    padding: 56px 20px 44px;
     text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
   }
   header.hero h1 {
     margin: 0 0 8px;
-    font-size: clamp(28px, 5vw, 42px);
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-family: var(--display-font);
+    font-size: clamp(32px, 5.5vw, 48px);
+    font-weight: 700;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.05;
   }
   header.hero .date {
-    font-size: 18px;
-    opacity: 0.92;
+    font-size: 16px;
+    color: var(--text-muted);
     font-weight: 500;
+    margin-top: 6px;
   }
   header.hero .tagline {
-    margin-top: 12px;
+    margin-top: 16px;
     font-size: 14px;
-    opacity: 0.85;
-    max-width: 560px;
+    color: var(--text-muted);
+    max-width: 580px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.55;
+  }
+  .theme-switch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: var(--shadow);
+  }
+  .theme-switch button {
+    background: transparent;
+    border: 0;
+    color: var(--text-muted);
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: all 0.12s ease;
+  }
+  .theme-switch button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #fff;
   }
 
+  /* TOC */
   nav.toc {
     position: sticky;
     top: 0;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
-    padding: 12px 0;
+    padding: 10px 0;
     z-index: 10;
+    backdrop-filter: saturate(180%) blur(8px);
   }
   nav.toc ul {
     list-style: none; padding: 0; margin: 0;
-    display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+    display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
   }
   nav.toc a {
-    padding: 6px 12px;
+    padding: 5px 11px;
     border-radius: 999px;
     background: var(--surface);
     border: 1px solid var(--border);
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 500;
     color: var(--text);
   }
   nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
 
-  section.block { margin: 40px 0; }
+  /* Sections */
+  section.block { margin: 44px 0; scroll-margin-top: 60px; }
   section.block h2 {
-    font-size: 24px;
+    font-family: var(--display-font);
+    font-size: 26px;
     margin: 0 0 4px;
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: var(--tracking-tight);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
   section.block .section-icon { font-size: 28px; }
   section.block .section-sub {
-    color: var(--muted);
+    color: var(--text-muted);
     font-size: 14px;
-    margin: 0 0 20px;
+    margin: 0 0 22px;
   }
 
+  /* Cards */
   .cards { display: grid; grid-template-columns: 1fr; gap: 14px; }
-  @media (min-width: 700px) {
-    .cards { grid-template-columns: 1fr 1fr; }
-  }
+  @media (min-width: 720px) { .cards { grid-template-columns: 1fr 1fr; } }
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: var(--radius-lg);
     padding: 18px;
     box-shadow: var(--shadow);
     display: flex; flex-direction: column; gap: 10px;
+    transition: border-color 0.12s ease, transform 0.12s ease;
   }
-  .card-title { margin: 0; font-size: 16px; line-height: 1.4; font-weight: 600; }
+  .card:hover { border-color: var(--border-strong); }
+  .card-title { margin: 0; font-size: 16px; line-height: 1.4; font-weight: 600; font-family: var(--display-font); letter-spacing: -0.005em; }
   .card-title a { color: var(--text); }
   .card-title a:hover { color: var(--link); }
-  .card-summary { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .card-summary { margin: 0; color: var(--text-muted); font-size: 14px; line-height: 1.55; }
   .card-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .badge { background: var(--accent-soft); color: var(--accent); padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
-  .meta-time { color: var(--muted); font-size: 12px; }
-  .card-actions { display: flex; gap: 12px; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border); }
+  .meta-time { color: var(--text-tertiary); font-size: 12px; }
+  .card-actions { display: flex; gap: 12px; margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border); }
   .primary-link { font-weight: 600; font-size: 13px; }
-  .secondary-link { font-size: 13px; color: var(--muted); }
+  .secondary-link { font-size: 13px; color: var(--text-muted); }
 
-  .hn-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-  .hn-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    box-shadow: var(--shadow);
-  }
+  /* GH trending */
+  .gh-card .card-title a { display: inline-flex; align-items: baseline; gap: 0; }
+  .gh-owner { color: var(--text-muted); font-weight: 500; }
+  .gh-slash { color: var(--text-tertiary); margin: 0 4px; }
+  .gh-name { color: var(--accent); font-weight: 700; }
+  .gh-meta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--text-muted); margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border); }
+  .gh-lang { display: inline-flex; align-items: center; gap: 6px; }
+  .gh-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .stat { color: var(--text); font-weight: 500; }
+  .stat-today { color: var(--accent); font-weight: 600; }
+
+  /* HN list */
+  .hn-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .hn-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
   .hn-title { font-weight: 600; font-size: 15px; color: var(--text); display: block; margin-bottom: 4px; }
   .hn-title:hover { color: var(--link); }
-  .hn-meta { color: var(--muted); font-size: 12px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .hn-meta { color: var(--text-muted); font-size: 12.5px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
   .hn-comments { margin-left: 4px; font-weight: 500; }
 
-  .hf-card { background: var(--surface); }
-  .hf-stats { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  /* HF */
+  .hf-stats { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-muted); flex-wrap: wrap; }
   .hf-stats .stat { font-weight: 500; color: var(--text); }
   .hf-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
-  .tag { background: var(--border); color: var(--text); padding: 2px 8px; border-radius: 4px; font-size: 11px; opacity: 0.85; }
+  .tag { background: var(--surface-2); color: var(--text); padding: 2px 8px; border-radius: 4px; font-size: 11px; opacity: 0.85; }
 
-  .builder-group { margin-bottom: 22px; }
-  .builder-group-title { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  /* Builder voices */
+  .builder-group { margin-bottom: 24px; }
+  .builder-group-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.10em; color: var(--text-muted); font-weight: 700; margin: 0 0 12px; }
   .builder-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-  .builder-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px 14px;
-  }
+  .builder-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
   .builder-title { font-size: 14px; font-weight: 600; color: var(--text); display: block; }
   .builder-title:hover { color: var(--link); }
-  .builder-meta { color: var(--muted); font-size: 12px; margin-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .builder-meta { color: var(--text-muted); font-size: 12px; margin-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
   .builder-meta-top { font-size: 14px; margin-bottom: 6px; }
-  .builder-meta-top .muted { color: var(--muted); font-weight: 400; margin-left: 4px; }
+  .builder-meta-top .muted { color: var(--text-muted); font-weight: 400; margin-left: 4px; }
   .builder-text { font-size: 14px; line-height: 1.55; color: var(--text); margin: 0; }
 
-  .empty { color: var(--muted); font-style: italic; }
+  /* Builder writing (Simon Willison) */
+  .writing-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .writing-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .writing-title { display: block; font-family: var(--display-font); font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 6px; letter-spacing: -0.005em; }
+  .writing-title:hover { color: var(--link); }
+  .writing-summary { color: var(--text-muted); font-size: 13.5px; line-height: 1.6; margin: 4px 0; }
+  .writing-meta { color: var(--text-tertiary); font-size: 12px; display: flex; gap: 6px; }
 
-  footer.site-footer {
-    margin-top: 48px;
-    padding: 24px 0 40px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 13px;
-    text-align: center;
-  }
-  footer.site-footer code { background: var(--surface); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); font-size: 12px; }
-  footer.site-footer .source-status { margin-top: 8px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .empty { color: var(--text-muted); font-style: italic; }
+
+  /* Footer */
+  footer.site-footer { margin-top: 56px; padding: 28px 20px 48px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px; text-align: center; }
+  footer.site-footer .source-status { margin-top: 10px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
   .status-ok { color: #16a34a; }
   .status-err { color: #dc2626; }
 `;
 
+// Inline script that sets data-theme BEFORE paint to avoid flash.
+const THEME_BOOT_SCRIPT = `
+  (function() {
+    try {
+      var saved = localStorage.getItem('digest-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'linear' : 'claude');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'claude');
+    }
+  })();
+`;
+
+const THEME_TOGGLE_SCRIPT = `
+  (function() {
+    var btns = document.querySelectorAll('.theme-switch button');
+    function setTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('digest-theme', t); } catch (e) {}
+      btns.forEach(function(b) { b.setAttribute('aria-pressed', b.dataset.theme === t ? 'true' : 'false'); });
+    }
+    btns.forEach(function(b) {
+      b.addEventListener('click', function() { setTheme(b.dataset.theme); });
+      b.setAttribute('aria-pressed', b.dataset.theme === document.documentElement.getAttribute('data-theme') ? 'true' : 'false');
+    });
+  })();
+`;
+
 function manifestStatusFooter(manifest) {
   if (!manifest?.sources) return "";
-  const entries = Object.entries(manifest.sources);
-  return `
-    <div class="source-status">
-      ${entries
-        .map(
-          ([name, info]) => `
-        <span title="${escapeHtml(info.error || "")}" class="${info.status === "ok" ? "status-ok" : "status-err"}">
-          ${info.status === "ok" ? "●" : "○"} ${escapeHtml(name)}
-        </span>
-      `,
-        )
-        .join("")}
-    </div>
-  `;
+  return `<div class="source-status">${Object.entries(manifest.sources)
+    .map(
+      ([name, info]) =>
+        `<span title="${escapeHtml(info.error || "")}" class="${info.status === "ok" ? "status-ok" : "status-err"}">${info.status === "ok" ? "●" : "○"} ${escapeHtml(name)}</span>`,
+    )
+    .join("")}</div>`;
 }
 
 function pickAihotSection(aihotDaily, labelHint) {
   if (!aihotDaily?.sections) return [];
-  const sec = aihotDaily.sections.find((s) =>
-    s.label?.includes(labelHint),
-  );
+  const sec = aihotDaily.sections.find((s) => s.label?.includes(labelHint));
   return sec?.items || [];
 }
 
-async function renderPage({ date, manifest, aihotDaily, aihotModels, aihotProducts, aihotIndustry, aihotPaper, hnTop, hfPopular, xFeed, podFeed, blogFeed, archiveLinks = [] }) {
-  // For AIHOT items, prefer the per-category items.json when available
-  // (richer), fall back to the daily aggregate's section.
-  const modelItems = (aihotModels?.items || aihotModels || pickAihotSection(aihotDaily, "模型")).slice(0, 12);
-  const productItems = (aihotProducts?.items || aihotProducts || pickAihotSection(aihotDaily, "产品")).slice(0, 12);
-  const industryItems = (aihotIndustry?.items || aihotIndustry || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态")).slice(0, 12);
-  const paperItems = (aihotPaper?.items || aihotPaper || pickAihotSection(aihotDaily, "论文")).slice(0, 8);
+// ---- Page assembly ----
+
+async function renderPage({
+  date,
+  manifest,
+  aihotDaily,
+  aihotModels,
+  aihotProducts,
+  aihotIndustry,
+  aihotPaper,
+  ghTrending,
+  hnTop,
+  hfPopular,
+  openaiBlog,
+  simonWillison,
+  xFeed,
+  podFeed,
+  blogFeed,
+}) {
+  const modelItems = (aihotModels?.items || pickAihotSection(aihotDaily, "模型")).slice(0, 12);
+  const productItems = (aihotProducts?.items || pickAihotSection(aihotDaily, "产品")).slice(0, 12);
+  const industryItems = (aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态")).slice(0, 12);
+  const paperItems = (aihotPaper?.items || pickAihotSection(aihotDaily, "论文")).slice(0, 8);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -409,15 +570,22 @@ async function renderPage({ date, manifest, aihotDaily, aihotModels, aihotProduc
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Daily Digest — ${escapeHtml(date)}</title>
-  <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals from Hacker News, HuggingFace, and beyond.">
+  <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals.">
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <script>${THEME_BOOT_SCRIPT}</script>
   <style>${PAGE_CSS}</style>
 </head>
 <body>
 
   <header class="hero">
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab">Linear</button>
+      <button data-theme="claude" role="tab">Claude</button>
+    </div>
     <h1>AI Daily Digest</h1>
     <p class="date">${escapeHtml(date)} · UTC</p>
-    <p class="tagline">Model releases · industry moves · what AI builders are saying · trending signals across Hacker News, HuggingFace, GitHub.</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, GitHub, HuggingFace, Hacker News, and Chinese AI media.</p>
   </header>
 
   <nav class="toc">
@@ -426,10 +594,13 @@ async function renderPage({ date, manifest, aihotDaily, aihotModels, aihotProduc
       <li><a href="#products">📦 Products</a></li>
       <li><a href="#industry">📰 Industry</a></li>
       <li><a href="#papers">📄 Research</a></li>
+      <li><a href="#labs">🏢 Lab posts</a></li>
+      <li><a href="#writing">✍ Writing</a></li>
+      <li><a href="#trending">🚀 GitHub</a></li>
       <li><a href="#hn">🔥 Hacker News</a></li>
       <li><a href="#hf">🤗 HuggingFace</a></li>
       <li><a href="#builders">🎙 Builder voices</a></li>
-      ${archiveLinks.length ? `<li><a href="digests/">🗂 Archive</a></li>` : ""}
+      <li><a href="digests/">🗂 Archive</a></li>
     </ul>
   </nav>
 
@@ -437,7 +608,7 @@ async function renderPage({ date, manifest, aihotDaily, aihotModels, aihotProduc
 
     <section id="models" class="block">
       <h2><span class="section-icon">🤖</span> Model releases & updates</h2>
-      <p class="section-sub">Latest AI model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version via Google Translate.</p>
+      <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version.</p>
       ${aihotItemsCard(modelItems)}
     </section>
 
@@ -459,14 +630,32 @@ async function renderPage({ date, manifest, aihotDaily, aihotModels, aihotProduc
       ${aihotItemsCard(paperItems)}
     </section>
 
+    <section id="labs" class="block">
+      <h2><span class="section-icon">🏢</span> Lab announcements</h2>
+      <p class="section-sub">Latest posts from OpenAI's blog. <span class="meta-time">(Anthropic doesn't publish RSS; their announcements surface elsewhere on this page.)</span></p>
+      ${labBlogSection(openaiBlog)}
+    </section>
+
+    <section id="writing" class="block">
+      <h2><span class="section-icon">✍</span> Builder writing — Simon Willison</h2>
+      <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon Willison's weblog.</p>
+      ${builderWritingSection(simonWillison)}
+    </section>
+
+    <section id="trending" class="block">
+      <h2><span class="section-icon">🚀</span> Trending on GitHub today</h2>
+      <p class="section-sub">Top 15 trending repositories across all languages.</p>
+      ${ghTrendingSection(ghTrending)}
+    </section>
+
     <section id="hn" class="block">
       <h2><span class="section-icon">🔥</span> Hacker News — what's hitting</h2>
-      <p class="section-sub">Top AI-relevant front-page stories (AI / LLM / agent items surfaced first).</p>
+      <p class="section-sub">Top AI-relevant front-page stories (AI/LLM/agent items surfaced first).</p>
       ${hnSection(hnTop)}
     </section>
 
     <section id="hf" class="block">
-      <h2><span class="section-icon">🤗</span> HuggingFace — most-loved</h2>
+      <h2><span class="section-icon">🤗</span> HuggingFace — most-loved models</h2>
       <p class="section-sub">Open-weight models ranked by ❤ likes (closest stable proxy for trending).</p>
       ${hfSection(hfPopular)}
     </section>
@@ -484,6 +673,8 @@ async function renderPage({ date, manifest, aihotDaily, aihotModels, aihotProduc
     ${manifestStatusFooter(manifest)}
   </footer>
 
+  <script>${THEME_TOGGLE_SCRIPT}</script>
+
 </body>
 </html>`;
 }
@@ -495,20 +686,26 @@ async function renderArchiveIndex(days) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Daily Digest — Archive</title>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <script>${THEME_BOOT_SCRIPT}</script>
   <style>${PAGE_CSS}</style>
 </head>
 <body>
-  <header class="hero"><h1>Archive</h1><p class="date">All past AI Daily Digests</p></header>
+  <header class="hero">
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab">Linear</button>
+      <button data-theme="claude" role="tab">Claude</button>
+    </div>
+    <h1>Archive</h1>
+    <p class="date">All past AI Daily Digests</p>
+  </header>
   <main class="container">
     <ul class="hn-list">
-      ${days
-        .map(
-          (d) => `<li class="hn-item"><a class="hn-title" href="${escapeHtml(d)}.html">${escapeHtml(d)}</a></li>`,
-        )
-        .join("")}
+      ${days.map((d) => `<li class="hn-item"><a class="hn-title" href="${escapeHtml(d)}.html">${escapeHtml(d)}</a></li>`).join("")}
     </ul>
   </main>
   <footer class="site-footer"><a href="../">← back to latest</a></footer>
+  <script>${THEME_TOGGLE_SCRIPT}</script>
 </body>
 </html>`;
 }
@@ -525,18 +722,15 @@ const aihotModels = await tryReadJson(join(DATA_DIR, "aihot-ai-models.json"));
 const aihotProducts = await tryReadJson(join(DATA_DIR, "aihot-ai-products.json"));
 const aihotIndustry = await tryReadJson(join(DATA_DIR, "aihot-industry.json"));
 const aihotPaper = await tryReadJson(join(DATA_DIR, "aihot-paper.json"));
+const ghTrending = await tryReadJson(join(DATA_DIR, "github-trending.json"));
 const hnTop = await tryReadJson(join(DATA_DIR, "hn-top.json"));
 const hfPopular = await tryReadJson(join(DATA_DIR, "hf-popular.json"));
-
-// Follow Builders feeds aren't fetched into our /data — read them on demand
-// directly from the upstream raw URLs would be a build-time fetch; for now we
-// fetch them in the workflow's render step (see workflow). Here we just attempt
-// to read them from data/ if a prior step cached them.
+const openaiBlogData = await tryReadJson(join(DATA_DIR, "openai-blog.json"));
+const simonWillisonData = await tryReadJson(join(DATA_DIR, "simon-willison.json"));
 const xFeed = await tryReadJson(join(DATA_DIR, "follow-builders-x.json"));
 const podFeed = await tryReadJson(join(DATA_DIR, "follow-builders-podcasts.json"));
 const blogFeed = await tryReadJson(join(DATA_DIR, "follow-builders-blogs.json"));
 
-// Existing archive entries
 let archiveDays = [];
 if (existsSync(DIGESTS_DIR)) {
   const entries = await readdir(DIGESTS_DIR);
@@ -547,7 +741,6 @@ if (existsSync(DIGESTS_DIR)) {
     .reverse();
 }
 
-// Render today's page (and add to archive if new)
 const pageHtml = await renderPage({
   date: today,
   manifest,
@@ -556,18 +749,19 @@ const pageHtml = await renderPage({
   aihotProducts,
   aihotIndustry,
   aihotPaper,
+  ghTrending,
   hnTop,
   hfPopular,
+  openaiBlog: openaiBlogData,
+  simonWillison: simonWillisonData,
   xFeed,
   podFeed,
   blogFeed,
-  archiveLinks: archiveDays,
 });
 
 await writeFile(join(SITE_DIR, "index.html"), pageHtml, "utf8");
 await writeFile(join(DIGESTS_DIR, `${today}.html`), pageHtml, "utf8");
 
-// Refresh archive index
 if (!archiveDays.includes(today)) archiveDays = [today, ...archiveDays];
 await writeFile(join(DIGESTS_DIR, "index.html"), await renderArchiveIndex(archiveDays), "utf8");
 

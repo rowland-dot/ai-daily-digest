@@ -4,183 +4,269 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Daily Digest — 2026-05-12</title>
-  <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals from Hacker News, HuggingFace, and beyond.">
-  <style>
-  :root {
-    --bg: #fafaf9;
-    --surface: #ffffff;
-    --text: #1c1917;
-    --muted: #78716c;
-    --border: #e7e5e4;
-    --accent: #ea580c;
-    --accent-soft: #fff7ed;
-    --link: #c2410c;
-    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 8px rgba(0,0,0,0.03);
-    --radius: 12px;
-    --max: 980px;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0c0a09;
-      --surface: #1c1917;
-      --text: #f5f5f4;
-      --muted: #a8a29e;
-      --border: #292524;
-      --accent: #fb923c;
-      --accent-soft: #1f1208;
-      --link: #fdba74;
-      --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals.">
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('digest-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'linear' : 'claude');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'claude');
     }
+  })();
+</script>
+  <style>
+  /* Linear (dark, modernist) — applied when data-theme="linear" */
+  [data-theme="linear"] {
+    --bg: #010102;
+    --surface: #0f1011;
+    --surface-2: #141516;
+    --surface-3: #18191a;
+    --text: #f7f8f8;
+    --text-muted: #8a8f98;
+    --text-tertiary: #62666d;
+    --border: #23252a;
+    --border-strong: #34343a;
+    --accent: #5e6ad2;
+    --accent-hover: #828fff;
+    --accent-soft: rgba(94, 106, 210, 0.12);
+    --link: #828fff;
+    --link-hover: #b0b9ff;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 8px rgba(0,0,0,0.25);
+    --display-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+    --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    --tracking-tight: -0.02em;
+    --hero-bg: linear-gradient(180deg, #18191a 0%, #010102 100%);
+    --hero-text: #f7f8f8;
+    --hero-accent: #5e6ad2;
+    --radius: 8px;
+    --radius-lg: 12px;
   }
+
+  /* Claude (warm cream, editorial) — applied when data-theme="claude" */
+  [data-theme="claude"] {
+    --bg: #faf9f5;
+    --surface: #ffffff;
+    --surface-2: #efe9de;
+    --surface-3: #f5f0e8;
+    --text: #141413;
+    --text-muted: #6c6a64;
+    --text-tertiary: #8e8b82;
+    --border: #e6dfd8;
+    --border-strong: #d4cdc4;
+    --accent: #cc785c;
+    --accent-hover: #a9583e;
+    --accent-soft: rgba(204, 120, 92, 0.10);
+    --link: #a9583e;
+    --link-hover: #8b4530;
+    --shadow: 0 1px 2px rgba(20,20,19,0.04), 0 4px 12px rgba(20,20,19,0.05);
+    --display-font: 'Copernicus', Georgia, 'Tiempos Headline', serif;
+    --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
+    --tracking-tight: -0.01em;
+    --hero-bg: linear-gradient(135deg, #efe9de 0%, #faf9f5 100%);
+    --hero-text: #141413;
+    --hero-accent: #cc785c;
+    --radius: 10px;
+    --radius-lg: 14px;
+  }
+
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    font-family: var(--body-font);
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
   a { color: var(--link); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .container { max-width: var(--max); margin: 0 auto; padding: 24px 20px; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+  .container { max-width: 1020px; margin: 0 auto; padding: 24px 20px; }
 
+  /* Header */
   header.hero {
-    background: linear-gradient(135deg, var(--accent) 0%, #f59e0b 100%);
-    color: #fff;
-    padding: 48px 20px 40px;
+    background: var(--hero-bg);
+    color: var(--hero-text);
+    padding: 56px 20px 44px;
     text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
   }
   header.hero h1 {
     margin: 0 0 8px;
-    font-size: clamp(28px, 5vw, 42px);
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-family: var(--display-font);
+    font-size: clamp(32px, 5.5vw, 48px);
+    font-weight: 700;
+    letter-spacing: var(--tracking-tight);
+    line-height: 1.05;
   }
   header.hero .date {
-    font-size: 18px;
-    opacity: 0.92;
+    font-size: 16px;
+    color: var(--text-muted);
     font-weight: 500;
+    margin-top: 6px;
   }
   header.hero .tagline {
-    margin-top: 12px;
+    margin-top: 16px;
     font-size: 14px;
-    opacity: 0.85;
-    max-width: 560px;
+    color: var(--text-muted);
+    max-width: 580px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.55;
+  }
+  .theme-switch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: var(--shadow);
+  }
+  .theme-switch button {
+    background: transparent;
+    border: 0;
+    color: var(--text-muted);
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: all 0.12s ease;
+  }
+  .theme-switch button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #fff;
   }
 
+  /* TOC */
   nav.toc {
     position: sticky;
     top: 0;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
-    padding: 12px 0;
+    padding: 10px 0;
     z-index: 10;
+    backdrop-filter: saturate(180%) blur(8px);
   }
   nav.toc ul {
     list-style: none; padding: 0; margin: 0;
-    display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+    display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
   }
   nav.toc a {
-    padding: 6px 12px;
+    padding: 5px 11px;
     border-radius: 999px;
     background: var(--surface);
     border: 1px solid var(--border);
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 500;
     color: var(--text);
   }
   nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
 
-  section.block { margin: 40px 0; }
+  /* Sections */
+  section.block { margin: 44px 0; scroll-margin-top: 60px; }
   section.block h2 {
-    font-size: 24px;
+    font-family: var(--display-font);
+    font-size: 26px;
     margin: 0 0 4px;
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: var(--tracking-tight);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
   section.block .section-icon { font-size: 28px; }
   section.block .section-sub {
-    color: var(--muted);
+    color: var(--text-muted);
     font-size: 14px;
-    margin: 0 0 20px;
+    margin: 0 0 22px;
   }
 
+  /* Cards */
   .cards { display: grid; grid-template-columns: 1fr; gap: 14px; }
-  @media (min-width: 700px) {
-    .cards { grid-template-columns: 1fr 1fr; }
-  }
+  @media (min-width: 720px) { .cards { grid-template-columns: 1fr 1fr; } }
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: var(--radius-lg);
     padding: 18px;
     box-shadow: var(--shadow);
     display: flex; flex-direction: column; gap: 10px;
+    transition: border-color 0.12s ease, transform 0.12s ease;
   }
-  .card-title { margin: 0; font-size: 16px; line-height: 1.4; font-weight: 600; }
+  .card:hover { border-color: var(--border-strong); }
+  .card-title { margin: 0; font-size: 16px; line-height: 1.4; font-weight: 600; font-family: var(--display-font); letter-spacing: -0.005em; }
   .card-title a { color: var(--text); }
   .card-title a:hover { color: var(--link); }
-  .card-summary { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .card-summary { margin: 0; color: var(--text-muted); font-size: 14px; line-height: 1.55; }
   .card-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .badge { background: var(--accent-soft); color: var(--accent); padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
-  .meta-time { color: var(--muted); font-size: 12px; }
-  .card-actions { display: flex; gap: 12px; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border); }
+  .meta-time { color: var(--text-tertiary); font-size: 12px; }
+  .card-actions { display: flex; gap: 12px; margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border); }
   .primary-link { font-weight: 600; font-size: 13px; }
-  .secondary-link { font-size: 13px; color: var(--muted); }
+  .secondary-link { font-size: 13px; color: var(--text-muted); }
 
-  .hn-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-  .hn-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    box-shadow: var(--shadow);
-  }
+  /* GH trending */
+  .gh-card .card-title a { display: inline-flex; align-items: baseline; gap: 0; }
+  .gh-owner { color: var(--text-muted); font-weight: 500; }
+  .gh-slash { color: var(--text-tertiary); margin: 0 4px; }
+  .gh-name { color: var(--accent); font-weight: 700; }
+  .gh-meta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--text-muted); margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border); }
+  .gh-lang { display: inline-flex; align-items: center; gap: 6px; }
+  .gh-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .stat { color: var(--text); font-weight: 500; }
+  .stat-today { color: var(--accent); font-weight: 600; }
+
+  /* HN list */
+  .hn-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .hn-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
   .hn-title { font-weight: 600; font-size: 15px; color: var(--text); display: block; margin-bottom: 4px; }
   .hn-title:hover { color: var(--link); }
-  .hn-meta { color: var(--muted); font-size: 12px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .hn-meta { color: var(--text-muted); font-size: 12.5px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
   .hn-comments { margin-left: 4px; font-weight: 500; }
 
-  .hf-card { background: var(--surface); }
-  .hf-stats { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  /* HF */
+  .hf-stats { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-muted); flex-wrap: wrap; }
   .hf-stats .stat { font-weight: 500; color: var(--text); }
   .hf-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
-  .tag { background: var(--border); color: var(--text); padding: 2px 8px; border-radius: 4px; font-size: 11px; opacity: 0.85; }
+  .tag { background: var(--surface-2); color: var(--text); padding: 2px 8px; border-radius: 4px; font-size: 11px; opacity: 0.85; }
 
-  .builder-group { margin-bottom: 22px; }
-  .builder-group-title { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  /* Builder voices */
+  .builder-group { margin-bottom: 24px; }
+  .builder-group-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.10em; color: var(--text-muted); font-weight: 700; margin: 0 0 12px; }
   .builder-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-  .builder-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px 14px;
-  }
+  .builder-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
   .builder-title { font-size: 14px; font-weight: 600; color: var(--text); display: block; }
   .builder-title:hover { color: var(--link); }
-  .builder-meta { color: var(--muted); font-size: 12px; margin-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .builder-meta { color: var(--text-muted); font-size: 12px; margin-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
   .builder-meta-top { font-size: 14px; margin-bottom: 6px; }
-  .builder-meta-top .muted { color: var(--muted); font-weight: 400; margin-left: 4px; }
+  .builder-meta-top .muted { color: var(--text-muted); font-weight: 400; margin-left: 4px; }
   .builder-text { font-size: 14px; line-height: 1.55; color: var(--text); margin: 0; }
 
-  .empty { color: var(--muted); font-style: italic; }
+  /* Builder writing (Simon Willison) */
+  .writing-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .writing-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+  .writing-title { display: block; font-family: var(--display-font); font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 6px; letter-spacing: -0.005em; }
+  .writing-title:hover { color: var(--link); }
+  .writing-summary { color: var(--text-muted); font-size: 13.5px; line-height: 1.6; margin: 4px 0; }
+  .writing-meta { color: var(--text-tertiary); font-size: 12px; display: flex; gap: 6px; }
 
-  footer.site-footer {
-    margin-top: 48px;
-    padding: 24px 0 40px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 13px;
-    text-align: center;
-  }
-  footer.site-footer code { background: var(--surface); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); font-size: 12px; }
-  footer.site-footer .source-status { margin-top: 8px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .empty { color: var(--text-muted); font-style: italic; }
+
+  /* Footer */
+  footer.site-footer { margin-top: 56px; padding: 28px 20px 48px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px; text-align: center; }
+  footer.site-footer .source-status { margin-top: 10px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
   .status-ok { color: #16a34a; }
   .status-err { color: #dc2626; }
 </style>
@@ -188,9 +274,13 @@
 <body>
 
   <header class="hero">
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab">Linear</button>
+      <button data-theme="claude" role="tab">Claude</button>
+    </div>
     <h1>AI Daily Digest</h1>
     <p class="date">2026-05-12 · UTC</p>
-    <p class="tagline">Model releases · industry moves · what AI builders are saying · trending signals across Hacker News, HuggingFace, GitHub.</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, GitHub, HuggingFace, Hacker News, and Chinese AI media.</p>
   </header>
 
   <nav class="toc">
@@ -199,6 +289,9 @@
       <li><a href="#products">📦 Products</a></li>
       <li><a href="#industry">📰 Industry</a></li>
       <li><a href="#papers">📄 Research</a></li>
+      <li><a href="#labs">🏢 Lab posts</a></li>
+      <li><a href="#writing">✍ Writing</a></li>
+      <li><a href="#trending">🚀 GitHub</a></li>
       <li><a href="#hn">🔥 Hacker News</a></li>
       <li><a href="#hf">🤗 HuggingFace</a></li>
       <li><a href="#builders">🎙 Builder voices</a></li>
@@ -210,7 +303,7 @@
 
     <section id="models" class="block">
       <h2><span class="section-icon">🤖</span> Model releases & updates</h2>
-      <p class="section-sub">Latest AI model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version via Google Translate.</p>
+      <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version.</p>
       <div class="cards">
     <article class="card">
       <h3 class="card-title">Step Image Edit 2图像模型发布，性能领先且高效</h3>
@@ -862,16 +955,390 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
   </div>
     </section>
 
+    <section id="labs" class="block">
+      <h2><span class="section-icon">🏢</span> Lab announcements</h2>
+      <p class="section-sub">Latest posts from OpenAI's blog. <span class="meta-time">(Anthropic doesn't publish RSS; their announcements surface elsewhere on this page.)</span></p>
+      <div class="cards">
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/academy/codex-for-work/how-finance-teams-use-codex" target="_blank" rel="noopener">How finance teams use Codex</a></h3>
+      <p class="card-summary">See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Tue, 12 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/nvidia" target="_blank" rel="noopener">How NVIDIA engineers and researchers build with Codex</a></h3>
+      <p class="card-summary">Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Tue, 12 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/what-parameter-golf-taught-us" target="_blank" rel="noopener">What Parameter Golf taught us about AI-assisted research</a></h3>
+      <p class="card-summary">Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Tue, 12 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/autoscout24" target="_blank" rel="noopener">AutoScout24 scales engineering with AI-powered workflows</a></h3>
+      <p class="card-summary">Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Tue, 12 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/signals/research/2026q1-update" target="_blank" rel="noopener">How ChatGPT adoption broadened in early 2026</a></h3>
+      <p class="card-summary">ChatGPT adoption surged in Q1 2026, with fastest growth among users over 35 and more balanced gender usage, signaling broader mainstream AI adoption.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Mon, 11 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai" target="_blank" rel="noopener">How enterprises are scaling AI</a></h3>
+      <p class="card-summary">How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Mon, 11 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/openai-campus-network-student-club-interest-form" target="_blank" rel="noopener">OpenAI Campus Network: Student club interest form</a></h3>
+      <p class="card-summary">Join the OpenAI Campus Network—connect student clubs worldwide, access AI tools, host events, and build an AI-powered campus community.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Mon, 11 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/openai-launches-the-deployment-company" target="_blank" rel="noopener">OpenAI launches DeployCo to help businesses build around intelligence</a></h3>
+      <p class="card-summary">OpenAI launches DeployCo, a new enterprise deployment company built to help organizations bring frontier AI into production and turn it into measurable business impact.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Mon, 11 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/running-codex-safely" target="_blank" rel="noopener">Running Codex safely at OpenAI</a></h3>
+      <p class="card-summary">How OpenAI runs Codex securely with sandboxing, approvals, network policies, and agent-native telemetry to support safe and compliant coding agent adoption.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Fri, 08 May 2026</span>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title"><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber" target="_blank" rel="noopener">Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber</a></h3>
+      <p class="card-summary">OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure.</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI</span>
+        <span class="meta-time">Thu, 07 May 2026</span>
+      </div>
+    </article>
+  </div>
+    </section>
+
+    <section id="writing" class="block">
+      <h2><span class="section-icon">✍</span> Builder writing — Simon Willison</h2>
+      <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon Willison's weblog.</p>
+      <ul class="writing-list">
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything" target="_blank" rel="noopener">Thoughts on GitLab&#39;s workforce reduction&quot; and &quot;structural and strategic decisions&quot;</a>
+      <p class="writing-summary">GitLab Act 2 There&#39;s a lot going on in this announcement from GitLab about the &quot;workforce reduction&quot; and &quot;structural and strategic decisions&quot; they are making with respect to the agentic era. They&#39;re &quot;planning to reduce the number of countries by up to 30% where we have small teams&quot;. One of the most interesting things about GitLab is that they have employees spread across a large number of countrie</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-11</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/11/james-shore/#atom-everything" target="_blank" rel="noopener">Quoting James Shore</a>
+      <p class="writing-summary">Your AI coding agent, the one you use to write code, needs to reduce your maintenance costs. Not by a little bit, either. You write code twice as quick now? Better hope you’ve halved your maintenance costs. Three times as productive? One third the maintenance costs. Otherwise, you’re screwed. You’re trading a temporary speed boost for permanent indenture. [...] The math only works if the LLM decre</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-11</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything" target="_blank" rel="noopener">Your AI Use Is Breaking My Brain</a>
+      <p class="writing-summary">Your AI Use Is Breaking My Brain Excellent, angry piece by Jason Koebler on how AI writing online is becoming impossible to avoid, filtering it is mentally exhausting and it&#39;s even starting to distort regular human writing styles. I particularly liked his use of the term &quot;Zombie Internet&quot; to define a different, more insidious alternative to the &quot;Dead Internet&quot; (which is just bots talking to each o</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-11</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything" target="_blank" rel="noopener">Using LLM in the shebang line of a script</a>
+      <p class="writing-summary">TIL: Using LLM in the shebang line of a script Kim_Bruning on Hacker News : But seriously, you can put a shebang on an english text file now (if you&#39;re sufficiently brave) [...] This inspired me to look at patterns for doing exactly that with LLM . Here&#39;s the simplest, which takes advantage of LLM fragments : #!/usr/bin/env -S llm -f Generate an SVG of a pelican riding a bicycle But you can also i</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-11</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/#atom-everything" target="_blank" rel="noopener">Learning on the Shop floor</a>
+      <p class="writing-summary">Learning on the Shop floor Tobias Lütke describes Shopify&#39;s internal coding agent tool, River, which operates entirely in public on their Slack: River does not respond to direct messages. She politely declines and suggests to create a public channel for you and her to start working in. I myself work with river in #tobi_river channel and many followed this pattern. Every conversation is therefore s</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-11</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything" target="_blank" rel="noopener">Quoting New York Times Editors’ Note</a>
+      <p class="writing-summary">This article was updated after The Times learned that a remark attributed to Pierre Poilievre, the Conservative leader, was in fact an A.I.-generated summary of his views about Canadian politics that A.I. rendered as a quotation. The reporter should have checked the accuracy of what the A.I. tool returned. The article now accurately quotes from a speech delivered by Mr. Poilievre in April. [...] H</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-10</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything" target="_blank" rel="noopener">Quoting Andrew Quinn</a>
+      <p class="writing-summary">One could say in the first quarter-century of my life, that while I was always fascinated by programming, I could never overcome the guilt of not really knowing whether the tool I am building right now isn’t already superceded by some much better implementation someone else has already written 30 or 40 years ago; I could write a TSV-aware search and replace, or I could find out about awk and solve</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-10</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/9/luke-curley/#atom-everything" target="_blank" rel="noopener">Quoting Luke Curley</a>
+      <p class="writing-summary">WebRTC is designed to degrade and drop my prompt during poor network conditions. wtf my dude WebRTC aggressively drops audio packets to keep latency low. If you’ve ever heard distorted audio on a conference call, that’s WebRTC baybee. The idea is that conference calls depend on rapid back-and-forth, so pausing to wait for audio is unacceptable. …but as a user, I would much rather wait an extra 200</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-09</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything" target="_blank" rel="noopener">Using Claude Code: The Unreasonable Effectiveness of HTML</a>
+      <p class="writing-summary">Using Claude Code: The Unreasonable Effectiveness of HTML Thought-provoking piece by Thariq Shihipar (on the Claude Code team at Anthropic) advocating for HTML over Markdown as an output format to request from Claude. The article is crammed with interesting examples (collected on this site ) and prompt suggestions like this one: Help me review this PR by creating an HTML artifact that describes it</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-08</span>
+      </div>
+    </li>
+  
+    <li class="writing-item">
+      <a class="writing-title" href="https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything" target="_blank" rel="noopener">llm-gemini 0.31</a>
+      <p class="writing-summary">Release: llm-gemini 0.31 gemini-3.1-flash-lite is no longer a preview . Here&#39;s my write-up of the Gemini 3.1 Flash-Lite Preview model back in March. I don&#39;t believe this new non-preview model has changed since then. Tags: llm-release , gemini , llm , google , generative-ai , ai , llms</p>
+      <div class="writing-meta">
+        <span>Simon Willison</span>
+        <span>· 2026-05-07</span>
+      </div>
+    </li>
+  </ul>
+    </section>
+
+    <section id="trending" class="block">
+      <h2><span class="section-icon">🚀</span> Trending on GitHub today</h2>
+      <p class="section-sub">Top 15 trending repositories across all languages.</p>
+      <div class="cards">
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/tinyhumansai/openhuman" target="_blank" rel="noopener">
+          <span class="gh-owner">tinyhumansai</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">openhuman</span>
+        </a>
+      </h3>
+      <p class="card-summary">Your Personal AI super intelligence. Private, Simple and extremely powerful.</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#dea584"></span>Rust</span>
+        <span class="stat">★ 2,573</span>
+        <span class="stat-today">+1,042 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/rohitg00/agentmemory" target="_blank" rel="noopener">
+          <span class="gh-owner">rohitg00</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">agentmemory</span>
+        </a>
+      </h3>
+      <p class="card-summary">#1 Persistent memory for AI coding agents based on real-world benchmarks</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#3178c6"></span>TypeScript</span>
+        <span class="stat">★ 5,740</span>
+        <span class="stat-today">+1,067 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/CloakHQ/CloakBrowser" target="_blank" rel="noopener">
+          <span class="gh-owner">CloakHQ</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">CloakBrowser</span>
+        </a>
+      </h3>
+      <p class="card-summary">Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#3572A5"></span>Python</span>
+        <span class="stat">★ 7,703</span>
+        <span class="stat-today">+1,589 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/apernet/hysteria" target="_blank" rel="noopener">
+          <span class="gh-owner">apernet</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">hysteria</span>
+        </a>
+      </h3>
+      <p class="card-summary">Hysteria is a powerful, lightning fast and censorship resistant proxy.</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#00ADD8"></span>Go</span>
+        <span class="stat">★ 20,183</span>
+        <span class="stat-today">+112 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+          <span class="gh-owner">mattpocock</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">skills</span>
+        </a>
+      </h3>
+      <p class="card-summary">Skills for Real Engineers. Straight from my .claude directory.</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#89e051"></span>Shell</span>
+        <span class="stat">★ 75,800</span>
+        <span class="stat-today">+3,886 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/anonfaded/FadCam" target="_blank" rel="noopener">
+          <span class="gh-owner">anonfaded</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">FadCam</span>
+        </a>
+      </h3>
+      <p class="card-summary">Open-source, ad-free Android multimedia recorder with background video recording, screen recording, live streaming, and remote camera control</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#b07219"></span>Java</span>
+        <span class="stat">★ 2,181</span>
+        <span class="stat-today">+111 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/millionco/react-doctor" target="_blank" rel="noopener">
+          <span class="gh-owner">millionco</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">react-doctor</span>
+        </a>
+      </h3>
+      <p class="card-summary">Your agent writes bad React. This catches it</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#3178c6"></span>TypeScript</span>
+        <span class="stat">★ 8,719</span>
+        <span class="stat-today">+804 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" rel="noopener">
+          <span class="gh-owner">rasbt</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">LLMs-from-scratch</span>
+        </a>
+      </h3>
+      <p class="card-summary">Implement a ChatGPT-like LLM in PyTorch from scratch, step by step</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#DA5B0B"></span>Jupyter Notebook</span>
+        <span class="stat">★ 93,708</span>
+        <span class="stat-today">+776 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/datawhalechina/hello-agents" target="_blank" rel="noopener">
+          <span class="gh-owner">datawhalechina</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">hello-agents</span>
+        </a>
+      </h3>
+      <p class="card-summary">📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#3572A5"></span>Python</span>
+        <span class="stat">★ 48,175</span>
+        <span class="stat-today">+600 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/yikart/AiToEarn" target="_blank" rel="noopener">
+          <span class="gh-owner">yikart</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">AiToEarn</span>
+        </a>
+      </h3>
+      <p class="card-summary">Let&#39;s use AI to Earn!</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#3178c6"></span>TypeScript</span>
+        <span class="stat">★ 11,787</span>
+        <span class="stat-today">+1,264 today</span>
+      </div>
+    </article>
+  
+    <article class="card gh-card">
+      <h3 class="card-title">
+        <a href="https://github.com/HKUDS/AI-Trader" target="_blank" rel="noopener">
+          <span class="gh-owner">HKUDS</span>
+          <span class="gh-slash">/</span>
+          <span class="gh-name">AI-Trader</span>
+        </a>
+      </h3>
+      <p class="card-summary">&quot;AI-Trader: 100% Fully-Automated Agent-Native Trading&quot;</p>
+      <div class="gh-meta">
+        <span class="gh-lang"><span class="gh-dot" style="background:#3572A5"></span>Python</span>
+        <span class="stat">★ 16,543</span>
+        <span class="stat-today">+267 today</span>
+      </div>
+    </article>
+  </div>
+    </section>
+
     <section id="hn" class="block">
       <h2><span class="section-icon">🔥</span> Hacker News — what's hitting</h2>
-      <p class="section-sub">Top AI-relevant front-page stories (AI / LLM / agent items surfaced first).</p>
+      <p class="section-sub">Top AI-relevant front-page stories (AI/LLM/agent items surfaced first).</p>
       <ol class="hn-list">
     <li class="hn-item">
       <a class="hn-title" href="https://github.com/cactus-compute/needle" target="_blank" rel="noopener">Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
       <div class="hn-meta">
-        <span>▲ 165</span>
+        <span>▲ 183</span>
         <span>·</span>
-        <span>50 comments</span>
+        <span>60 comments</span>
         <span>· by HenryNdubuaku</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111896" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -880,9 +1347,9 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://deepmind.google/blog/ai-pointer/" target="_blank" rel="noopener">Reimagining the mouse pointer for the AI era</a>
       <div class="hn-meta">
-        <span>▲ 81</span>
+        <span>▲ 89</span>
         <span>·</span>
-        <span>67 comments</span>
+        <span>76 comments</span>
         <span>· by devhouse</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111581" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -891,9 +1358,9 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://voker.ai" target="_blank" rel="noopener">Launch HN: Voker (YC S24) – Analytics for AI Agents</a>
       <div class="hn-meta">
-        <span>▲ 32</span>
+        <span>▲ 33</span>
         <span>·</span>
-        <span>18 comments</span>
+        <span>19 comments</span>
         <span>· by ttpost</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109962" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -902,20 +1369,31 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://github.com/statewright/statewright" target="_blank" rel="noopener">Show HN: Statewright – Visual state machines that make AI agents reliable</a>
       <div class="hn-meta">
-        <span>▲ 45</span>
+        <span>▲ 47</span>
         <span>·</span>
-        <span>11 comments</span>
+        <span>12 comments</span>
         <span>· by azurewraith</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48108778" target="_blank" rel="noopener">HN ↗</a>
       </div>
     </li>
   
     <li class="hn-item">
+      <a class="hn-title" href="https://news.ycombinator.com/item?id=48110593" target="_blank" rel="noopener">Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder</a>
+      <div class="hn-meta">
+        <span>▲ 30</span>
+        <span>·</span>
+        <span>8 comments</span>
+        <span>· by namanyayg</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48110593" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
       <a class="hn-title" href="https://googlebook.google/" target="_blank" rel="noopener">Googlebook</a>
       <div class="hn-meta">
-        <span>▲ 436</span>
+        <span>▲ 463</span>
         <span>·</span>
-        <span>690 comments</span>
+        <span>744 comments</span>
         <span>· by tambourine_man</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111545" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -924,9 +1402,9 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://typesetinthefuture.com/2016/02/18/futuristic/" target="_blank" rel="noopener">How to make your text look futuristic (2016)</a>
       <div class="hn-meta">
-        <span>▲ 84</span>
+        <span>▲ 106</span>
         <span>·</span>
-        <span>9 comments</span>
+        <span>10 comments</span>
         <span>· by _vaporwave_</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48113895" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -935,9 +1413,9 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html" target="_blank" rel="noopener">CERT is releasing six CVEs for serious security vulnerabilities in dnsmasq</a>
       <div class="hn-meta">
-        <span>▲ 157</span>
+        <span>▲ 169</span>
         <span>·</span>
-        <span>62 comments</span>
+        <span>74 comments</span>
         <span>· by chizhik-pyzhik</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48112042" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -946,20 +1424,31 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise" target="_blank" rel="noopener">Why senior developers fail to communicate their expertise</a>
       <div class="hn-meta">
-        <span>▲ 258</span>
+        <span>▲ 274</span>
         <span>·</span>
-        <span>136 comments</span>
+        <span>141 comments</span>
         <span>· by nilirl</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109460" target="_blank" rel="noopener">HN ↗</a>
       </div>
     </li>
   
     <li class="hn-item">
+      <a class="hn-title" href="https://duckdb.org/2026/05/12/quack-remote-protocol" target="_blank" rel="noopener">Quack: The DuckDB Client-Server Protocol</a>
+      <div class="hn-meta">
+        <span>▲ 120</span>
+        <span>·</span>
+        <span>27 comments</span>
+        <span>· by aduffy</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111765" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
       <a class="hn-title" href="https://obsidian.md/blog/future-of-plugins/" target="_blank" rel="noopener">The Future of Obsidian Plugins</a>
       <div class="hn-meta">
-        <span>▲ 239</span>
+        <span>▲ 255</span>
         <span>·</span>
-        <span>96 comments</span>
+        <span>101 comments</span>
         <span>· by xz18r</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109970" target="_blank" rel="noopener">HN ↗</a>
       </div>
@@ -968,7 +1457,7 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     <li class="hn-item">
       <a class="hn-title" href="https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/" target="_blank" rel="noopener">Rendering the Sky, Sunsets, and Planets</a>
       <div class="hn-meta">
-        <span>▲ 360</span>
+        <span>▲ 368</span>
         <span>·</span>
         <span>34 comments</span>
         <span>· by ibobev</span>
@@ -977,64 +1466,42 @@ Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙�
     </li>
   
     <li class="hn-item">
-      <a class="hn-title" href="https://duckdb.org/2026/05/12/quack-remote-protocol" target="_blank" rel="noopener">Quack: The DuckDB Client-Server Protocol</a>
-      <div class="hn-meta">
-        <span>▲ 99</span>
-        <span>·</span>
-        <span>23 comments</span>
-        <span>· by aduffy</span>
-        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111765" target="_blank" rel="noopener">HN ↗</a>
-      </div>
-    </li>
-  
-    <li class="hn-item">
-      <a class="hn-title" href="https://matklad.github.io/2026/05/12/software-architecture.html" target="_blank" rel="noopener">Learning Software Architecture</a>
-      <div class="hn-meta">
-        <span>▲ 489</span>
-        <span>·</span>
-        <span>97 comments</span>
-        <span>· by surprisetalk</span>
-        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48106024" target="_blank" rel="noopener">HN ↗</a>
-      </div>
-    </li>
-  
-    <li class="hn-item">
       <a class="hn-title" href="https://arxiv.org/abs/2605.05242" target="_blank" rel="noopener">Beyond Semantic Similarity</a>
       <div class="hn-meta">
-        <span>▲ 19</span>
+        <span>▲ 23</span>
         <span>·</span>
-        <span>1 comments</span>
+        <span>2 comments</span>
         <span>· by 44za12</span>
         <a class="hn-comments" href="https://news.ycombinator.com/item?id=48113518" target="_blank" rel="noopener">HN ↗</a>
       </div>
     </li>
   
     <li class="hn-item">
-      <a class="hn-title" href="https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim" target="_blank" rel="noopener">Dead.Letter (CVE-2026-45185) – How XBOW found an unauthenticated RCE on Exim</a>
+      <a class="hn-title" href="https://matklad.github.io/2026/05/12/software-architecture.html" target="_blank" rel="noopener">Learning Software Architecture</a>
       <div class="hn-meta">
-        <span>▲ 47</span>
+        <span>▲ 494</span>
         <span>·</span>
-        <span>20 comments</span>
-        <span>· by fedek_</span>
-        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111748" target="_blank" rel="noopener">HN ↗</a>
+        <span>100 comments</span>
+        <span>· by surprisetalk</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48106024" target="_blank" rel="noopener">HN ↗</a>
       </div>
     </li>
   
     <li class="hn-item">
-      <a class="hn-title" href="https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/" target="_blank" rel="noopener">Bambu Lab is abusing the open source social contract</a>
+      <a class="hn-title" href="https://nautil.us/is-this-why-science-advances-one-funeral-at-a-time-1280650" target="_blank" rel="noopener">Is this why science advances one funeral at a time?</a>
       <div class="hn-meta">
-        <span>▲ 948</span>
+        <span>▲ 14</span>
         <span>·</span>
-        <span>326 comments</span>
-        <span>· by rubenbe</span>
-        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109224" target="_blank" rel="noopener">HN ↗</a>
+        <span>14 comments</span>
+        <span>· by Brajeshwar</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111243" target="_blank" rel="noopener">HN ↗</a>
       </div>
     </li>
   </ol>
     </section>
 
     <section id="hf" class="block">
-      <h2><span class="section-icon">🤗</span> HuggingFace — most-loved</h2>
+      <h2><span class="section-icon">🤗</span> HuggingFace — most-loved models</h2>
       <p class="section-sub">Open-weight models ranked by ❤ likes (closest stable proxy for trending).</p>
       <div class="cards">
     <article class="card hf-card">
@@ -1307,55 +1774,38 @@ Sign up for our office hours below: https://t.co/DhH9rl3nvV</p>
         </div>
       </li>
     </ul></div><div class="builder-group"><h3 class="builder-group-title">Podcasts</h3><ul class="builder-list">
-      <li class="builder-item">
-        <a class="builder-title" href="https://www.youtube.com/watch?v=g5TWnUjbeFM" target="_blank" rel="noopener">Amex Global Business Travel: The World’s First AI Take Private with Long Lake CEO Alexander Taubman</a>
-        <div class="builder-meta">
-          <span>No Priors</span>
-          <span> · 2026-05-11</span>
-          <span class="badge">podcast</span>
-        </div>
-      </li>
-    </ul></div>
+    <li class="builder-item">
+      <a class="builder-title" href="https://www.youtube.com/watch?v=g5TWnUjbeFM" target="_blank" rel="noopener">Amex Global Business Travel: The World’s First AI Take Private with Long Lake CEO Alexander Taubman</a>
+      <div class="builder-meta">
+        <span>No Priors</span>
+        <span> · 2026-05-11</span>
+        <span class="badge">podcast</span>
+      </div>
+    </li>
+  </ul></div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div>Snapshot fetched Tue, 12 May 2026 21:48:00 UTC · <a href="https://github.com/rowland-dot/ai-daily-digest" target="_blank" rel="noopener">source on GitHub</a></div>
-    
-    <div class="source-status">
-      
-        <span title="" class="status-ok">
-          ● aihot_daily
-        </span>
-      
-        <span title="" class="status-ok">
-          ● aihot_ai_models
-        </span>
-      
-        <span title="" class="status-ok">
-          ● aihot_ai_products
-        </span>
-      
-        <span title="" class="status-ok">
-          ● aihot_industry
-        </span>
-      
-        <span title="" class="status-ok">
-          ● aihot_paper
-        </span>
-      
-        <span title="" class="status-ok">
-          ● hn_top
-        </span>
-      
-        <span title="" class="status-ok">
-          ● hf_popular
-        </span>
-      
-    </div>
-  
+    <div>Snapshot fetched Tue, 12 May 2026 22:15:24 UTC · <a href="https://github.com/rowland-dot/ai-daily-digest" target="_blank" rel="noopener">source on GitHub</a></div>
+    <div class="source-status"><span title="" class="status-ok">● aihot_daily</span><span title="" class="status-ok">● aihot_ai_models</span><span title="" class="status-ok">● aihot_ai_products</span><span title="" class="status-ok">● aihot_industry</span><span title="" class="status-ok">● aihot_paper</span><span title="" class="status-ok">● hn_top</span><span title="" class="status-ok">● hf_popular</span><span title="" class="status-ok">● github_trending</span><span title="" class="status-ok">● openai_blog</span><span title="" class="status-ok">● simon_willison</span></div>
   </footer>
+
+  <script>
+  (function() {
+    var btns = document.querySelectorAll('.theme-switch button');
+    function setTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('digest-theme', t); } catch (e) {}
+      btns.forEach(function(b) { b.setAttribute('aria-pressed', b.dataset.theme === t ? 'true' : 'false'); });
+    }
+    btns.forEach(function(b) {
+      b.addEventListener('click', function() { setTheme(b.dataset.theme); });
+      b.setAttribute('aria-pressed', b.dataset.theme === document.documentElement.getAttribute('data-theme') ? 'true' : 'false');
+    });
+  })();
+</script>
 
 </body>
 </html>
