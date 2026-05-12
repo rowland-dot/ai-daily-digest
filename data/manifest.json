@@ -1,0 +1,41 @@
+{
+  "fetched_at": "2026-05-12T21:05:37.538Z",
+  "date_utc": "2026-05-12",
+  "sources": {
+    "aihot_daily": {
+      "status": "ok",
+      "file": "aihot-daily.json",
+      "ms": 1245
+    },
+    "aihot_ai_models": {
+      "status": "ok",
+      "file": "aihot-ai-models.json",
+      "ms": 288
+    },
+    "aihot_ai_products": {
+      "status": "ok",
+      "file": "aihot-ai-products.json",
+      "ms": 569
+    },
+    "aihot_industry": {
+      "status": "ok",
+      "file": "aihot-industry.json",
+      "ms": 290
+    },
+    "aihot_paper": {
+      "status": "ok",
+      "file": "aihot-paper.json",
+      "ms": 293
+    },
+    "hn_top": {
+      "status": "ok",
+      "file": "hn-top.json",
+      "ms": 1232
+    },
+    "hf_popular": {
+      "status": "ok",
+      "file": "hf-popular.json",
+      "ms": 275
+    }
+  }
+}
