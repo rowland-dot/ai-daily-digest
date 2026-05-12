@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Digest — 2026-05-12</title>
+  <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals from Hacker News, HuggingFace, and beyond.">
+  <style>
+  :root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --text: #1c1917;
+    --muted: #78716c;
+    --border: #e7e5e4;
+    --accent: #ea580c;
+    --accent-soft: #fff7ed;
+    --link: #c2410c;
+    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 8px rgba(0,0,0,0.03);
+    --radius: 12px;
+    --max: 980px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0a09;
+      --surface: #1c1917;
+      --text: #f5f5f4;
+      --muted: #a8a29e;
+      --border: #292524;
+      --accent: #fb923c;
+      --accent-soft: #1f1208;
+      --link: #fdba74;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: var(--max); margin: 0 auto; padding: 24px 20px; }
+
+  header.hero {
+    background: linear-gradient(135deg, var(--accent) 0%, #f59e0b 100%);
+    color: #fff;
+    padding: 48px 20px 40px;
+    text-align: center;
+  }
+  header.hero h1 {
+    margin: 0 0 8px;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  header.hero .date {
+    font-size: 18px;
+    opacity: 0.92;
+    font-weight: 500;
+  }
+  header.hero .tagline {
+    margin-top: 12px;
+    font-size: 14px;
+    opacity: 0.85;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav.toc {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+    z-index: 10;
+  }
+  nav.toc ul {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+  }
+  nav.toc a {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+  }
+  nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
+
+  section.block { margin: 40px 0; }
+  section.block h2 {
+    font-size: 24px;
+    margin: 0 0 4px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  section.block .section-icon { font-size: 28px; }
+  section.block .section-sub {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+
+  .cards { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 700px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .card-title { margin: 0; font-size: 16px; line-height: 1.4; font-weight: 600; }
+  .card-title a { color: var(--text); }
+  .card-title a:hover { color: var(--link); }
+  .card-summary { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .card-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .badge { background: var(--accent-soft); color: var(--accent); padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+  .meta-time { color: var(--muted); font-size: 12px; }
+  .card-actions { display: flex; gap: 12px; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border); }
+  .primary-link { font-weight: 600; font-size: 13px; }
+  .secondary-link { font-size: 13px; color: var(--muted); }
+
+  .hn-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .hn-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+  }
+  .hn-title { font-weight: 600; font-size: 15px; color: var(--text); display: block; margin-bottom: 4px; }
+  .hn-title:hover { color: var(--link); }
+  .hn-meta { color: var(--muted); font-size: 12px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .hn-comments { margin-left: 4px; font-weight: 500; }
+
+  .hf-card { background: var(--surface); }
+  .hf-stats { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  .hf-stats .stat { font-weight: 500; color: var(--text); }
+  .hf-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag { background: var(--border); color: var(--text); padding: 2px 8px; border-radius: 4px; font-size: 11px; opacity: 0.85; }
+
+  .builder-group { margin-bottom: 22px; }
+  .builder-group-title { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  .builder-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .builder-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+  }
+  .builder-title { font-size: 14px; font-weight: 600; color: var(--text); display: block; }
+  .builder-title:hover { color: var(--link); }
+  .builder-meta { color: var(--muted); font-size: 12px; margin-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .builder-meta-top { font-size: 14px; margin-bottom: 6px; }
+  .builder-meta-top .muted { color: var(--muted); font-weight: 400; margin-left: 4px; }
+  .builder-text { font-size: 14px; line-height: 1.55; color: var(--text); margin: 0; }
+
+  .empty { color: var(--muted); font-style: italic; }
+
+  footer.site-footer {
+    margin-top: 48px;
+    padding: 24px 0 40px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+  footer.site-footer code { background: var(--surface); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); font-size: 12px; }
+  footer.site-footer .source-status { margin-top: 8px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .status-ok { color: #16a34a; }
+  .status-err { color: #dc2626; }
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-12 · UTC</p>
+    <p class="tagline">Model releases · industry moves · what AI builders are saying · trending signals across Hacker News, HuggingFace, GitHub.</p>
+  </header>
+
+  <nav class="toc">
+    <ul>
+      <li><a href="#models">🤖 Models</a></li>
+      <li><a href="#products">📦 Products</a></li>
+      <li><a href="#industry">📰 Industry</a></li>
+      <li><a href="#papers">📄 Research</a></li>
+      <li><a href="#hn">🔥 Hacker News</a></li>
+      <li><a href="#hf">🤗 HuggingFace</a></li>
+      <li><a href="#builders">🎙 Builder voices</a></li>
+      
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <section id="models" class="block">
+      <h2><span class="section-icon">🤖</span> Model releases & updates</h2>
+      <p class="section-sub">Latest AI model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version via Google Translate.</p>
+      <div class="cards">
+    <article class="card">
+      <h3 class="card-title">Step Image Edit 2图像模型发布，性能领先且高效</h3>
+      <p class="card-summary">Step Image Edit 2模型正式发布。这是一个35亿参数的图像模型，在指令式图像编辑的权威基准KRIS-Bench中，于综合、事实和概念类别均排名第一，性能超越参数量为其5-6倍的模型。其核心能力包括文生图、基于指令的图像编辑、精准的中英双语文字渲染以及保持主体一致性的风格迁移。该模型生成速度快，单次编辑成本低，目前已上线Stepfun开放平台。</p>
+      <div class="card-meta">
+        <span class="badge">X：阶跃星辰 StepFun (@StepFun_ai)</span>
+        <span class="meta-time">2026-05-12T19:30:00.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/StepFun_ai/status/2054282965652471918" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Step%20Image%20Edit%202%E5%9B%BE%E5%83%8F%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83%EF%BC%8C%E6%80%A7%E8%83%BD%E9%A2%86%E5%85%88%E4%B8%94%E9%AB%98%E6%95%88%0A%0AStep%20Image%20Edit%202%E6%A8%A1%E5%9E%8B%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E3%80%82%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA35%E4%BA%BF%E5%8F%82%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%9C%A8%E6%8C%87%E4%BB%A4%E5%BC%8F%E5%9B%BE%E5%83%8F%E7%BC%96%E8%BE%91%E7%9A%84%E6%9D%83%E5%A8%81%E5%9F%BA%E5%87%86KRIS-Bench%E4%B8%AD%EF%BC%8C%E4%BA%8E%E7%BB%BC%E5%90%88%E3%80%81%E4%BA%8B%E5%AE%9E%E5%92%8C%E6%A6%82%E5%BF%B5%E7%B1%BB%E5%88%AB%E5%9D%87%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80%EF%BC%8C%E6%80%A7%E8%83%BD%E8%B6%85%E8%B6%8A%E5%8F%82%E6%95%B0%E9%87%8F%E4%B8%BA%E5%85%B65-6%E5%80%8D%E7%9A%84%E6%A8%A1%E5%9E%8B%E3%80%82%E5%85%B6%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B%E5%8C%85%E6%8B%AC%E6%96%87%E7%94%9F%E5%9B%BE%E3%80%81%E5%9F%BA%E4%BA%8E%E6%8C%87%E4%BB%A4%E7%9A%84%E5%9B%BE%E5%83%8F%E7%BC%96%E8%BE%91%E3%80%81%E7%B2%BE%E5%87%86%E7%9A%84%E4%B8%AD%E8%8B%B1%E5%8F%8C%E8%AF%AD%E6%96%87%E5%AD%97%E6%B8%B2%E6%9F%93%E4%BB%A5%E5%8F%8A%E4%BF%9D%E6%8C%81%E4%B8%BB%E4%BD%93%E4%B8%80%E8%87%B4%E6%80%A7%E7%9A%84%E9%A3%8E%E6%A0%BC%E8%BF%81%E7%A7%BB%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E9%80%9F%E5%BA%A6%E5%BF%AB%EF%BC%8C%E5%8D%95%E6%AC%A1%E7%BC%96%E8%BE%91%E6%88%90%E6%9C%AC%E4%BD%8E%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%B7%B2%E4%B8%8A%E7%BA%BFStepfun%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Claude Opus 4.7快速模式开放研究预览</h3>
+      <p class="card-summary">Claude Opus 4.7的快速模式现已在API和Claude Code中开放研究预览。</p>
+      <div class="card-meta">
+        <span class="badge">X：Claude Devs (@ClaudeDevs)</span>
+        <span class="meta-time">2026-05-12T18:23:53.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/ClaudeDevs/status/2054266327771275435" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Claude%20Opus%204.7%E5%BF%AB%E9%80%9F%E6%A8%A1%E5%BC%8F%E5%BC%80%E6%94%BE%E7%A0%94%E7%A9%B6%E9%A2%84%E8%A7%88%0A%0AClaude%20Opus%204.7%E7%9A%84%E5%BF%AB%E9%80%9F%E6%A8%A1%E5%BC%8F%E7%8E%B0%E5%B7%B2%E5%9C%A8API%E5%92%8CClaude%20Code%E4%B8%AD%E5%BC%80%E6%94%BE%E7%A0%94%E7%A9%B6%E9%A2%84%E8%A7%88%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Perceptron Mk1视觉语言模型上线OpenRouter</h3>
+      <p class="card-summary">Perceptron Mk1已在OpenRouter上线，由@perceptroninc开发。
+
+前沿视频与具身推理的视觉语言模型。以动态帧率（最高2 FPS）分析视频，具备32k多模态上下文，采用混合推理和结构化空间基元（点、框、多边形、片段）作为首要输出。</p>
+      <div class="card-meta">
+        <span class="badge">X：OpenRouter (@OpenRouter)</span>
+        <span class="meta-time">2026-05-12T16:08:51.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/OpenRouter/status/2054232344148787462" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Perceptron%20Mk1%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E4%B8%8A%E7%BA%BFOpenRouter%0A%0APerceptron%20Mk1%E5%B7%B2%E5%9C%A8OpenRouter%E4%B8%8A%E7%BA%BF%EF%BC%8C%E7%94%B1%40perceptroninc%E5%BC%80%E5%8F%91%E3%80%82%0A%0A%E5%89%8D%E6%B2%BF%E8%A7%86%E9%A2%91%E4%B8%8E%E5%85%B7%E8%BA%AB%E6%8E%A8%E7%90%86%E7%9A%84%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E3%80%82%E4%BB%A5%E5%8A%A8%E6%80%81%E5%B8%A7%E7%8E%87%EF%BC%88%E6%9C%80%E9%AB%982%20FPS%EF%BC%89%E5%88%86%E6%9E%90%E8%A7%86%E9%A2%91%EF%BC%8C%E5%85%B7%E5%A4%8732k%E5%A4%9A%E6%A8%A1%E6%80%81%E4%B8%8A%E4%B8%8B%E6%96%87%EF%BC%8C%E9%87%87%E7%94%A8%E6%B7%B7%E5%90%88%E6%8E%A8%E7%90%86%E5%92%8C%E7%BB%93%E6%9E%84%E5%8C%96%E7%A9%BA%E9%97%B4%E5%9F%BA%E5%85%83%EF%BC%88%E7%82%B9%E3%80%81%E6%A1%86%E3%80%81%E5%A4%9A%E8%BE%B9%E5%BD%A2%E3%80%81%E7%89%87%E6%AE%B5%EF%BC%89%E4%BD%9C%E4%B8%BA%E9%A6%96%E8%A6%81%E8%BE%93%E5%87%BA%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">材料科学AI多任务模型突破</h3>
+      <p class="card-summary">MatterSim正在拓展AI在材料科学中的应用边界--从更快速的大规模模拟，到全新多任务模型MatterSim-MT，可模拟超越势能面的多种物性。https：//msft.it/6017vPamT</p>
+      <div class="card-meta">
+        <span class="badge">X：Microsoft Research (@MSFTResearch)</span>
+        <span class="meta-time">2026-05-12T13:24:36.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/MSFTResearch/status/2054191008091418998" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E6%9D%90%E6%96%99%E7%A7%91%E5%AD%A6AI%E5%A4%9A%E4%BB%BB%E5%8A%A1%E6%A8%A1%E5%9E%8B%E7%AA%81%E7%A0%B4%0A%0AMatterSim%E6%AD%A3%E5%9C%A8%E6%8B%93%E5%B1%95AI%E5%9C%A8%E6%9D%90%E6%96%99%E7%A7%91%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E8%BE%B9%E7%95%8C--%E4%BB%8E%E6%9B%B4%E5%BF%AB%E9%80%9F%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%A8%A1%E6%8B%9F%EF%BC%8C%E5%88%B0%E5%85%A8%E6%96%B0%E5%A4%9A%E4%BB%BB%E5%8A%A1%E6%A8%A1%E5%9E%8BMatterSim-MT%EF%BC%8C%E5%8F%AF%E6%A8%A1%E6%8B%9F%E8%B6%85%E8%B6%8A%E5%8A%BF%E8%83%BD%E9%9D%A2%E7%9A%84%E5%A4%9A%E7%A7%8D%E7%89%A9%E6%80%A7%E3%80%82https%EF%BC%9A%2F%2Fmsft.it%2F6017vPamT" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Thinking Machines发布原生多模态&quot;交互模型&quot;，实现实时人机协作</h3>
+      <p class="card-summary">前OpenAI CTO Mira创立的Thinking Machines公司发布了一种创新的&quot;交互模型&quot;。该模型能原生、持续地接收音频、视频和文本等多模态输入，并实时思考与响应，而非通过Agent串联多个独立模型。其架构分为两部分：前台交互模型以200毫秒为节点处理输入并维持用户&quot;在场感&quot;，支持随时打断；后台推理模型则处理长程规划、工具调用等复杂任务。两者协同工作，最终呈现为一个既能实时交互又能处理重度任务的统一界面。</p>
+      <div class="card-meta">
+        <span class="badge">X：歸藏 (@op7418)</span>
+        <span class="meta-time">2026-05-12T02:19:23.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/op7418/status/2054023602874491326" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Thinking%20Machines%E5%8F%91%E5%B8%83%E5%8E%9F%E7%94%9F%E5%A4%9A%E6%A8%A1%E6%80%81%22%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%22%EF%BC%8C%E5%AE%9E%E7%8E%B0%E5%AE%9E%E6%97%B6%E4%BA%BA%E6%9C%BA%E5%8D%8F%E4%BD%9C%0A%0A%E5%89%8DOpenAI%20CTO%20Mira%E5%88%9B%E7%AB%8B%E7%9A%84Thinking%20Machines%E5%85%AC%E5%8F%B8%E5%8F%91%E5%B8%83%E4%BA%86%E4%B8%80%E7%A7%8D%E5%88%9B%E6%96%B0%E7%9A%84%22%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%22%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%8E%9F%E7%94%9F%E3%80%81%E6%8C%81%E7%BB%AD%E5%9C%B0%E6%8E%A5%E6%94%B6%E9%9F%B3%E9%A2%91%E3%80%81%E8%A7%86%E9%A2%91%E5%92%8C%E6%96%87%E6%9C%AC%E7%AD%89%E5%A4%9A%E6%A8%A1%E6%80%81%E8%BE%93%E5%85%A5%EF%BC%8C%E5%B9%B6%E5%AE%9E%E6%97%B6%E6%80%9D%E8%80%83%E4%B8%8E%E5%93%8D%E5%BA%94%EF%BC%8C%E8%80%8C%E9%9D%9E%E9%80%9A%E8%BF%87Agent%E4%B8%B2%E8%81%94%E5%A4%9A%E4%B8%AA%E7%8B%AC%E7%AB%8B%E6%A8%A1%E5%9E%8B%E3%80%82%E5%85%B6%E6%9E%B6%E6%9E%84%E5%88%86%E4%B8%BA%E4%B8%A4%E9%83%A8%E5%88%86%EF%BC%9A%E5%89%8D%E5%8F%B0%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%BB%A5200%E6%AF%AB%E7%A7%92%E4%B8%BA%E8%8A%82%E7%82%B9%E5%A4%84%E7%90%86%E8%BE%93%E5%85%A5%E5%B9%B6%E7%BB%B4%E6%8C%81%E7%94%A8%E6%88%B7%22%E5%9C%A8%E5%9C%BA%E6%84%9F%22%EF%BC%8C%E6%94%AF%E6%8C%81%E9%9A%8F%E6%97%B6%E6%89%93%E6%96%AD%EF%BC%9B%E5%90%8E%E5%8F%B0%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B%E5%88%99%E5%A4%84%E7%90%86%E9%95%BF%E7%A8%8B%E8%A7%84%E5%88%92%E3%80%81%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E7%AD%89%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E3%80%82%E4%B8%A4%E8%80%85%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%9C%80%E7%BB%88%E5%91%88%E7%8E%B0%E4%B8%BA%E4%B8%80%E4%B8%AA%E6%97%A2%E8%83%BD%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E5%8F%88%E8%83%BD%E5%A4%84%E7%90%86%E9%87%8D%E5%BA%A6%E4%BB%BB%E5%8A%A1%E7%9A%84%E7%BB%9F%E4%B8%80%E7%95%8C%E9%9D%A2%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">AntLingAGI发布万亿参数模型Ring-2.6-1T</h3>
+      <p class="card-summary">AntLingAGI发布了其万亿参数旗舰&quot;思考模型&quot;Ring-2.6-1T，该模型在5月15日前可通过OpenRouter免费使用。其核心特性包括可调节的思考强度，能动态平衡认知深度、token成本和执行速度；专为智能体优化，适用于高频工作流，提供快速的多步执行和工具调用；并具备深度思考能力，以应对严密的数学逻辑和科学研究任务。模型旨在满足实际生产环境中复杂任务的需求。</p>
+      <div class="card-meta">
+        <span class="badge">X：OpenRouter (@OpenRouter)</span>
+        <span class="meta-time">2026-05-11T13:46:19.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/OpenRouter/status/2053834087023133025" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=AntLingAGI%E5%8F%91%E5%B8%83%E4%B8%87%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8BRing-2.6-1T%0A%0AAntLingAGI%E5%8F%91%E5%B8%83%E4%BA%86%E5%85%B6%E4%B8%87%E4%BA%BF%E5%8F%82%E6%95%B0%E6%97%97%E8%88%B0%22%E6%80%9D%E8%80%83%E6%A8%A1%E5%9E%8B%22Ring-2.6-1T%EF%BC%8C%E8%AF%A5%E6%A8%A1%E5%9E%8B%E5%9C%A85%E6%9C%8815%E6%97%A5%E5%89%8D%E5%8F%AF%E9%80%9A%E8%BF%87OpenRouter%E5%85%8D%E8%B4%B9%E4%BD%BF%E7%94%A8%E3%80%82%E5%85%B6%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7%E5%8C%85%E6%8B%AC%E5%8F%AF%E8%B0%83%E8%8A%82%E7%9A%84%E6%80%9D%E8%80%83%E5%BC%BA%E5%BA%A6%EF%BC%8C%E8%83%BD%E5%8A%A8%E6%80%81%E5%B9%B3%E8%A1%A1%E8%AE%A4%E7%9F%A5%E6%B7%B1%E5%BA%A6%E3%80%81token%E6%88%90%E6%9C%AC%E5%92%8C%E6%89%A7%E8%A1%8C%E9%80%9F%E5%BA%A6%EF%BC%9B%E4%B8%93%E4%B8%BA%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%8C%96%EF%BC%8C%E9%80%82%E7%94%A8%E4%BA%8E%E9%AB%98%E9%A2%91%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E6%8F%90%E4%BE%9B%E5%BF%AB%E9%80%9F%E7%9A%84%E5%A4%9A%E6%AD%A5%E6%89%A7%E8%A1%8C%E5%92%8C%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%EF%BC%9B%E5%B9%B6%E5%85%B7%E5%A4%87%E6%B7%B1%E5%BA%A6%E6%80%9D%E8%80%83%E8%83%BD%E5%8A%9B%EF%BC%8C%E4%BB%A5%E5%BA%94%E5%AF%B9%E4%B8%A5%E5%AF%86%E7%9A%84%E6%95%B0%E5%AD%A6%E9%80%BB%E8%BE%91%E5%92%8C%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6%E4%BB%BB%E5%8A%A1%E3%80%82%E6%A8%A1%E5%9E%8B%E6%97%A8%E5%9C%A8%E6%BB%A1%E8%B6%B3%E5%AE%9E%E9%99%85%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">SenseNova U1图像生成模型登陆ComfyUI平台</h3>
+      <p class="card-summary">SenseNova U1图像生成模型现已在ComfyUI上可运行，并获得包括REBEL AI在内的评测者高度认可。REBEL AI发布的实践教程展示了该模型的部署工作流，并对其图像生成能力进行了真实场景测试。模型支持8步快速推理，生成速度极快，应用场景涵盖人像、超现实艺术、文字标志和生物设计等。相关资源已在Hugging Face、GitHub和Discord平台开放。</p>
+      <div class="card-meta">
+        <span class="badge">X：商汤 SenseTime (@SenseTime_AI)</span>
+        <span class="meta-time">2026-05-11T10:21:54.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/SenseTime_AI/status/2053782644492525847" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=SenseNova%20U1%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B%E7%99%BB%E9%99%86ComfyUI%E5%B9%B3%E5%8F%B0%0A%0ASenseNova%20U1%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B%E7%8E%B0%E5%B7%B2%E5%9C%A8ComfyUI%E4%B8%8A%E5%8F%AF%E8%BF%90%E8%A1%8C%EF%BC%8C%E5%B9%B6%E8%8E%B7%E5%BE%97%E5%8C%85%E6%8B%ACREBEL%20AI%E5%9C%A8%E5%86%85%E7%9A%84%E8%AF%84%E6%B5%8B%E8%80%85%E9%AB%98%E5%BA%A6%E8%AE%A4%E5%8F%AF%E3%80%82REBEL%20AI%E5%8F%91%E5%B8%83%E7%9A%84%E5%AE%9E%E8%B7%B5%E6%95%99%E7%A8%8B%E5%B1%95%E7%A4%BA%E4%BA%86%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%83%A8%E7%BD%B2%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E5%B9%B6%E5%AF%B9%E5%85%B6%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90%E8%83%BD%E5%8A%9B%E8%BF%9B%E8%A1%8C%E4%BA%86%E7%9C%9F%E5%AE%9E%E5%9C%BA%E6%99%AF%E6%B5%8B%E8%AF%95%E3%80%82%E6%A8%A1%E5%9E%8B%E6%94%AF%E6%8C%818%E6%AD%A5%E5%BF%AB%E9%80%9F%E6%8E%A8%E7%90%86%EF%BC%8C%E7%94%9F%E6%88%90%E9%80%9F%E5%BA%A6%E6%9E%81%E5%BF%AB%EF%BC%8C%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%B6%B5%E7%9B%96%E4%BA%BA%E5%83%8F%E3%80%81%E8%B6%85%E7%8E%B0%E5%AE%9E%E8%89%BA%E6%9C%AF%E3%80%81%E6%96%87%E5%AD%97%E6%A0%87%E5%BF%97%E5%92%8C%E7%94%9F%E7%89%A9%E8%AE%BE%E8%AE%A1%E7%AD%89%E3%80%82%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90%E5%B7%B2%E5%9C%A8Hugging%20Face%E3%80%81GitHub%E5%92%8CDiscord%E5%B9%B3%E5%8F%B0%E5%BC%80%E6%94%BE%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">腾讯混元Hy3预览版发布，专注复杂智能体任务</h3>
+      <p class="card-summary">腾讯混元Hy3预览版已开放早期体验，被描述为该系列最强模型。其核心设计面向现实世界有效性，而非单纯追求基准测试分数。模型具备处理复杂智能体任务的能力，采用256K上下文长度，并融合了快慢思维机制的混合专家架构。该模型基于重建的预训练和强化学习基础设施构建，旨在实现大规模应用下的高成本效益。</p>
+      <div class="card-meta">
+        <span class="badge">X：腾讯混元 (@TencentHunyuan)</span>
+        <span class="meta-time">2026-05-11T09:38:21.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/TencentHunyuan/status/2053771684482851255" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E8%85%BE%E8%AE%AF%E6%B7%B7%E5%85%83Hy3%E9%A2%84%E8%A7%88%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%8C%E4%B8%93%E6%B3%A8%E5%A4%8D%E6%9D%82%E6%99%BA%E8%83%BD%E4%BD%93%E4%BB%BB%E5%8A%A1%0A%0A%E8%85%BE%E8%AE%AF%E6%B7%B7%E5%85%83Hy3%E9%A2%84%E8%A7%88%E7%89%88%E5%B7%B2%E5%BC%80%E6%94%BE%E6%97%A9%E6%9C%9F%E4%BD%93%E9%AA%8C%EF%BC%8C%E8%A2%AB%E6%8F%8F%E8%BF%B0%E4%B8%BA%E8%AF%A5%E7%B3%BB%E5%88%97%E6%9C%80%E5%BC%BA%E6%A8%A1%E5%9E%8B%E3%80%82%E5%85%B6%E6%A0%B8%E5%BF%83%E8%AE%BE%E8%AE%A1%E9%9D%A2%E5%90%91%E7%8E%B0%E5%AE%9E%E4%B8%96%E7%95%8C%E6%9C%89%E6%95%88%E6%80%A7%EF%BC%8C%E8%80%8C%E9%9D%9E%E5%8D%95%E7%BA%AF%E8%BF%BD%E6%B1%82%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E5%88%86%E6%95%B0%E3%80%82%E6%A8%A1%E5%9E%8B%E5%85%B7%E5%A4%87%E5%A4%84%E7%90%86%E5%A4%8D%E6%9D%82%E6%99%BA%E8%83%BD%E4%BD%93%E4%BB%BB%E5%8A%A1%E7%9A%84%E8%83%BD%E5%8A%9B%EF%BC%8C%E9%87%87%E7%94%A8256K%E4%B8%8A%E4%B8%8B%E6%96%87%E9%95%BF%E5%BA%A6%EF%BC%8C%E5%B9%B6%E8%9E%8D%E5%90%88%E4%BA%86%E5%BF%AB%E6%85%A2%E6%80%9D%E7%BB%B4%E6%9C%BA%E5%88%B6%E7%9A%84%E6%B7%B7%E5%90%88%E4%B8%93%E5%AE%B6%E6%9E%B6%E6%9E%84%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E5%9F%BA%E4%BA%8E%E9%87%8D%E5%BB%BA%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83%E5%92%8C%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E6%9E%84%E5%BB%BA%EF%BC%8C%E6%97%A8%E5%9C%A8%E5%AE%9E%E7%8E%B0%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BA%94%E7%94%A8%E4%B8%8B%E7%9A%84%E9%AB%98%E6%88%90%E6%9C%AC%E6%95%88%E7%9B%8A%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Qwen-Image-2.0技术报告</h3>
+      <p class="card-summary">Qwen-Image-2.0是一个统一高保真生成与精确编辑的全能图像生成基础模型。它采用Qwen3-VL作为条件编码器，结合多模态扩散变换器进行联合建模，并通过大规模数据整理与多阶段训练实现强化。该模型支持长达1K令牌的指令输入，能生成幻灯片、海报等富文本内容，显著提升多语言文本渲染与排版质量。在生成方面，它增强了细节、纹理真实感与光照一致性，并更可靠遵循复杂指令。人工评估表明，其在生成和编辑任务上均大幅超越前代模型。</p>
+      <div class="card-meta">
+        <span class="badge">HuggingFace Daily Papers（社区热门论文）</span>
+        <span class="meta-time">2026-05-11T00:00:00.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://arxiv.org/abs/2605.10730" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Qwen-Image-2.0%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%0A%0AQwen-Image-2.0%E6%98%AF%E4%B8%80%E4%B8%AA%E7%BB%9F%E4%B8%80%E9%AB%98%E4%BF%9D%E7%9C%9F%E7%94%9F%E6%88%90%E4%B8%8E%E7%B2%BE%E7%A1%AE%E7%BC%96%E8%BE%91%E7%9A%84%E5%85%A8%E8%83%BD%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E3%80%82%E5%AE%83%E9%87%87%E7%94%A8Qwen3-VL%E4%BD%9C%E4%B8%BA%E6%9D%A1%E4%BB%B6%E7%BC%96%E7%A0%81%E5%99%A8%EF%BC%8C%E7%BB%93%E5%90%88%E5%A4%9A%E6%A8%A1%E6%80%81%E6%89%A9%E6%95%A3%E5%8F%98%E6%8D%A2%E5%99%A8%E8%BF%9B%E8%A1%8C%E8%81%94%E5%90%88%E5%BB%BA%E6%A8%A1%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%95%B0%E6%8D%AE%E6%95%B4%E7%90%86%E4%B8%8E%E5%A4%9A%E9%98%B6%E6%AE%B5%E8%AE%AD%E7%BB%83%E5%AE%9E%E7%8E%B0%E5%BC%BA%E5%8C%96%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E6%94%AF%E6%8C%81%E9%95%BF%E8%BE%BE1K%E4%BB%A4%E7%89%8C%E7%9A%84%E6%8C%87%E4%BB%A4%E8%BE%93%E5%85%A5%EF%BC%8C%E8%83%BD%E7%94%9F%E6%88%90%E5%B9%BB%E7%81%AF%E7%89%87%E3%80%81%E6%B5%B7%E6%8A%A5%E7%AD%89%E5%AF%8C%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%EF%BC%8C%E6%98%BE%E8%91%97%E6%8F%90%E5%8D%87%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%96%87%E6%9C%AC%E6%B8%B2%E6%9F%93%E4%B8%8E%E6%8E%92%E7%89%88%E8%B4%A8%E9%87%8F%E3%80%82%E5%9C%A8%E7%94%9F%E6%88%90%E6%96%B9%E9%9D%A2%EF%BC%8C%E5%AE%83%E5%A2%9E%E5%BC%BA%E4%BA%86%E7%BB%86%E8%8A%82%E3%80%81%E7%BA%B9%E7%90%86%E7%9C%9F%E5%AE%9E%E6%84%9F%E4%B8%8E%E5%85%89%E7%85%A7%E4%B8%80%E8%87%B4%E6%80%A7%EF%BC%8C%E5%B9%B6%E6%9B%B4%E5%8F%AF%E9%9D%A0%E9%81%B5%E5%BE%AA%E5%A4%8D%E6%9D%82%E6%8C%87%E4%BB%A4%E3%80%82%E4%BA%BA%E5%B7%A5%E8%AF%84%E4%BC%B0%E8%A1%A8%E6%98%8E%EF%BC%8C%E5%85%B6%E5%9C%A8%E7%94%9F%E6%88%90%E5%92%8C%E7%BC%96%E8%BE%91%E4%BB%BB%E5%8A%A1%E4%B8%8A%E5%9D%87%E5%A4%A7%E5%B9%85%E8%B6%85%E8%B6%8A%E5%89%8D%E4%BB%A3%E6%A8%A1%E5%9E%8B%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">OpenCode x Ring 2.6 1T限时免费开放</h3>
+      <p class="card-summary">OpenCode x Ring 2.6 1T - 限时免费开放
+
+256K上下文 • 推理能力 • 纯文本模型
+
+感谢 @AntLingAGI 和 @novita_labs 提供模型支持</p>
+      <div class="card-meta">
+        <span class="badge">X：opencode (@opencode)</span>
+        <span class="meta-time">2026-05-10T08:36:30.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/opencode/status/2053393732221739498" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=OpenCode%20x%20Ring%202.6%201T%E9%99%90%E6%97%B6%E5%85%8D%E8%B4%B9%E5%BC%80%E6%94%BE%0A%0AOpenCode%20x%20Ring%202.6%201T%20-%20%E9%99%90%E6%97%B6%E5%85%8D%E8%B4%B9%E5%BC%80%E6%94%BE%0A%0A256K%E4%B8%8A%E4%B8%8B%E6%96%87%20%E2%80%A2%20%E6%8E%A8%E7%90%86%E8%83%BD%E5%8A%9B%20%E2%80%A2%20%E7%BA%AF%E6%96%87%E6%9C%AC%E6%A8%A1%E5%9E%8B%0A%0A%E6%84%9F%E8%B0%A2%20%40AntLingAGI%20%E5%92%8C%20%40novita_labs%20%E6%8F%90%E4%BE%9B%E6%A8%A1%E5%9E%8B%E6%94%AF%E6%8C%81" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">HappyHorse上线阿里云，AI视频无需等待</h3>
+      <p class="card-summary">基准测试排名第一。闪电速度。原生音视频同步。
+
+排队等待AI视频的时代结束了。HappyHorse现已在阿里云Model Studio上线。当别人还在渲染时，你已完成。
+
+立即构建：https：//int.alibabacloud.com/m/1000412167/</p>
+      <div class="card-meta">
+        <span class="badge">X：阿里云 / Alibaba Cloud (@alibaba_cloud)</span>
+        <span class="meta-time">2026-05-09T16:40:43.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/alibaba_cloud/status/2053153199561863454" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=HappyHorse%E4%B8%8A%E7%BA%BF%E9%98%BF%E9%87%8C%E4%BA%91%EF%BC%8CAI%E8%A7%86%E9%A2%91%E6%97%A0%E9%9C%80%E7%AD%89%E5%BE%85%0A%0A%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80%E3%80%82%E9%97%AA%E7%94%B5%E9%80%9F%E5%BA%A6%E3%80%82%E5%8E%9F%E7%94%9F%E9%9F%B3%E8%A7%86%E9%A2%91%E5%90%8C%E6%AD%A5%E3%80%82%0A%0A%E6%8E%92%E9%98%9F%E7%AD%89%E5%BE%85AI%E8%A7%86%E9%A2%91%E7%9A%84%E6%97%B6%E4%BB%A3%E7%BB%93%E6%9D%9F%E4%BA%86%E3%80%82HappyHorse%E7%8E%B0%E5%B7%B2%E5%9C%A8%E9%98%BF%E9%87%8C%E4%BA%91Model%20Studio%E4%B8%8A%E7%BA%BF%E3%80%82%E5%BD%93%E5%88%AB%E4%BA%BA%E8%BF%98%E5%9C%A8%E6%B8%B2%E6%9F%93%E6%97%B6%EF%BC%8C%E4%BD%A0%E5%B7%B2%E5%AE%8C%E6%88%90%E3%80%82%0A%0A%E7%AB%8B%E5%8D%B3%E6%9E%84%E5%BB%BA%EF%BC%9Ahttps%EF%BC%9A%2F%2Fint.alibabacloud.com%2Fm%2F1000412167%2F" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">ERNIE 5.1发布，预训练成本仅需对标模型6%</h3>
+      <p class="card-summary">ERNIE 5.1 刚刚发布。
+
+基于 ERNIE 5.0 的预训练基础，我们最新的基础模型升级了搜索、推理、知识问答、创意写作和智能体能力，而预训练成本仅需对标模型的约 6%。
+
+更多内容详见主题帖 🧵</p>
+      <div class="card-meta">
+        <span class="badge">X：百度 Baidu (@Baidu_Inc)</span>
+        <span class="meta-time">2026-05-09T07:09:51.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/Baidu_Inc/status/2053009538769735774" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=ERNIE%205.1%E5%8F%91%E5%B8%83%EF%BC%8C%E9%A2%84%E8%AE%AD%E7%BB%83%E6%88%90%E6%9C%AC%E4%BB%85%E9%9C%80%E5%AF%B9%E6%A0%87%E6%A8%A1%E5%9E%8B6%25%0A%0AERNIE%205.1%20%E5%88%9A%E5%88%9A%E5%8F%91%E5%B8%83%E3%80%82%0A%0A%E5%9F%BA%E4%BA%8E%20ERNIE%205.0%20%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83%E5%9F%BA%E7%A1%80%EF%BC%8C%E6%88%91%E4%BB%AC%E6%9C%80%E6%96%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E5%8D%87%E7%BA%A7%E4%BA%86%E6%90%9C%E7%B4%A2%E3%80%81%E6%8E%A8%E7%90%86%E3%80%81%E7%9F%A5%E8%AF%86%E9%97%AE%E7%AD%94%E3%80%81%E5%88%9B%E6%84%8F%E5%86%99%E4%BD%9C%E5%92%8C%E6%99%BA%E8%83%BD%E4%BD%93%E8%83%BD%E5%8A%9B%EF%BC%8C%E8%80%8C%E9%A2%84%E8%AE%AD%E7%BB%83%E6%88%90%E6%9C%AC%E4%BB%85%E9%9C%80%E5%AF%B9%E6%A0%87%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BA%A6%206%25%E3%80%82%0A%0A%E6%9B%B4%E5%A4%9A%E5%86%85%E5%AE%B9%E8%AF%A6%E8%A7%81%E4%B8%BB%E9%A2%98%E5%B8%96%20%F0%9F%A7%B5" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  </div>
+    </section>
+
+    <section id="products" class="block">
+      <h2><span class="section-icon">📦</span> Products & applications</h2>
+      <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
+      <div class="cards">
+    <article class="card">
+      <h3 class="card-title">优化广告效果，定义更佳表现</h3>
+      <p class="card-summary">你的广告正在投放。但它有效吗？
+
+定义更好的样子。设定方向。Luma Agents 会构建一个更精准、表现更出色的版本，并提供创意和消息支持。
+
+超越它 → http：//lumalabs.ai/app</p>
+      <div class="card-meta">
+        <span class="badge">X：Luma AI (@LumaLabsAI)</span>
+        <span class="meta-time">2026-05-12T20:38:29.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/LumaLabsAI/status/2054300200517456185" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E4%BC%98%E5%8C%96%E5%B9%BF%E5%91%8A%E6%95%88%E6%9E%9C%EF%BC%8C%E5%AE%9A%E4%B9%89%E6%9B%B4%E4%BD%B3%E8%A1%A8%E7%8E%B0%0A%0A%E4%BD%A0%E7%9A%84%E5%B9%BF%E5%91%8A%E6%AD%A3%E5%9C%A8%E6%8A%95%E6%94%BE%E3%80%82%E4%BD%86%E5%AE%83%E6%9C%89%E6%95%88%E5%90%97%EF%BC%9F%0A%0A%E5%AE%9A%E4%B9%89%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%A0%B7%E5%AD%90%E3%80%82%E8%AE%BE%E5%AE%9A%E6%96%B9%E5%90%91%E3%80%82Luma%20Agents%20%E4%BC%9A%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%9B%B4%E7%B2%BE%E5%87%86%E3%80%81%E8%A1%A8%E7%8E%B0%E6%9B%B4%E5%87%BA%E8%89%B2%E7%9A%84%E7%89%88%E6%9C%AC%EF%BC%8C%E5%B9%B6%E6%8F%90%E4%BE%9B%E5%88%9B%E6%84%8F%E5%92%8C%E6%B6%88%E6%81%AF%E6%94%AF%E6%8C%81%E3%80%82%0A%0A%E8%B6%85%E8%B6%8A%E5%AE%83%20%E2%86%92%20http%EF%BC%9A%2F%2Flumalabs.ai%2Fapp" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Codex实现跨应用无感多任务处理</h3>
+      <p class="card-summary">计算机使用让Codex能在你的应用间工作而不占用你的Mac。
+
+@AriX与@romainhuet探讨当代理程序能点击、输入并在后台持续工作时将带来哪些改变。</p>
+      <div class="card-meta">
+        <span class="badge">X：OpenAI Developers (@OpenAIDevs)</span>
+        <span class="meta-time">2026-05-12T20:31:26.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/OpenAIDevs/status/2054298427245441141" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Codex%E5%AE%9E%E7%8E%B0%E8%B7%A8%E5%BA%94%E7%94%A8%E6%97%A0%E6%84%9F%E5%A4%9A%E4%BB%BB%E5%8A%A1%E5%A4%84%E7%90%86%0A%0A%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AE%A9Codex%E8%83%BD%E5%9C%A8%E4%BD%A0%E7%9A%84%E5%BA%94%E7%94%A8%E9%97%B4%E5%B7%A5%E4%BD%9C%E8%80%8C%E4%B8%8D%E5%8D%A0%E7%94%A8%E4%BD%A0%E7%9A%84Mac%E3%80%82%0A%0A%40AriX%E4%B8%8E%40romainhuet%E6%8E%A2%E8%AE%A8%E5%BD%93%E4%BB%A3%E7%90%86%E7%A8%8B%E5%BA%8F%E8%83%BD%E7%82%B9%E5%87%BB%E3%80%81%E8%BE%93%E5%85%A5%E5%B9%B6%E5%9C%A8%E5%90%8E%E5%8F%B0%E6%8C%81%E7%BB%AD%E5%B7%A5%E4%BD%9C%E6%97%B6%E5%B0%86%E5%B8%A6%E6%9D%A5%E5%93%AA%E4%BA%9B%E6%94%B9%E5%8F%98%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Claude进军法律行业</h3>
+      <p class="card-summary">Anthropic公司为法律行业发布20多个新的MCP连接器及12个专用插件，将Claude深度集成至合同管理、文档处理等法律核心软件栈。Claude现可直接在Microsoft Word、Outlook等办公应用中无缝工作，具备起草、修订、条款比对等可复用技能，并能自动化处理日常法律事务。公司同时宣布与多个司法公益组织合作，以扩大法律服务的可及性。</p>
+      <div class="card-meta">
+        <span class="badge">Claude：Blog（网页）</span>
+        <span class="meta-time">2026-05-12T17:54:45.952Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://claude.com/blog/claude-for-the-legal-industry" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Claude%E8%BF%9B%E5%86%9B%E6%B3%95%E5%BE%8B%E8%A1%8C%E4%B8%9A%0A%0AAnthropic%E5%85%AC%E5%8F%B8%E4%B8%BA%E6%B3%95%E5%BE%8B%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B8%8320%E5%A4%9A%E4%B8%AA%E6%96%B0%E7%9A%84MCP%E8%BF%9E%E6%8E%A5%E5%99%A8%E5%8F%8A12%E4%B8%AA%E4%B8%93%E7%94%A8%E6%8F%92%E4%BB%B6%EF%BC%8C%E5%B0%86Claude%E6%B7%B1%E5%BA%A6%E9%9B%86%E6%88%90%E8%87%B3%E5%90%88%E5%90%8C%E7%AE%A1%E7%90%86%E3%80%81%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86%E7%AD%89%E6%B3%95%E5%BE%8B%E6%A0%B8%E5%BF%83%E8%BD%AF%E4%BB%B6%E6%A0%88%E3%80%82Claude%E7%8E%B0%E5%8F%AF%E7%9B%B4%E6%8E%A5%E5%9C%A8Microsoft%20Word%E3%80%81Outlook%E7%AD%89%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8%E4%B8%AD%E6%97%A0%E7%BC%9D%E5%B7%A5%E4%BD%9C%EF%BC%8C%E5%85%B7%E5%A4%87%E8%B5%B7%E8%8D%89%E3%80%81%E4%BF%AE%E8%AE%A2%E3%80%81%E6%9D%A1%E6%AC%BE%E6%AF%94%E5%AF%B9%E7%AD%89%E5%8F%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E6%97%A5%E5%B8%B8%E6%B3%95%E5%BE%8B%E4%BA%8B%E5%8A%A1%E3%80%82%E5%85%AC%E5%8F%B8%E5%90%8C%E6%97%B6%E5%AE%A3%E5%B8%83%E4%B8%8E%E5%A4%9A%E4%B8%AA%E5%8F%B8%E6%B3%95%E5%85%AC%E7%9B%8A%E7%BB%84%E7%BB%87%E5%90%88%E4%BD%9C%EF%BC%8C%E4%BB%A5%E6%89%A9%E5%A4%A7%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%AF%E5%8F%8A%E6%80%A7%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">GitHub Copilot 个人计划：在 Pro 和 Pro+ 中引入弹性配额，以及新的 Max 计划</h3>
+      <p class="card-summary">GitHub 宣布从6月1日起更新 Copilot 个人计划阵容，基于用户反馈进行调整。主要变化包括在现有 Pro 和 Pro+ 计划中引入弹性配额机制，允许用户更灵活地分配使用量；同时新增 Max 计划，扩展高级选项。此次更新旨在提升计划的可定制性，为开发者提供更个性化的编程辅助服务，优化整体使用体验。</p>
+      <div class="card-meta">
+        <span class="badge">GitHub Blog</span>
+        <span class="meta-time">2026-05-12T17:35:41.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=GitHub%20Copilot%20%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92%EF%BC%9A%E5%9C%A8%20Pro%20%E5%92%8C%20Pro%2B%20%E4%B8%AD%E5%BC%95%E5%85%A5%E5%BC%B9%E6%80%A7%E9%85%8D%E9%A2%9D%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%96%B0%E7%9A%84%20Max%20%E8%AE%A1%E5%88%92%0A%0AGitHub%20%E5%AE%A3%E5%B8%83%E4%BB%8E6%E6%9C%881%E6%97%A5%E8%B5%B7%E6%9B%B4%E6%96%B0%20Copilot%20%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92%E9%98%B5%E5%AE%B9%EF%BC%8C%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E5%8F%8D%E9%A6%88%E8%BF%9B%E8%A1%8C%E8%B0%83%E6%95%B4%E3%80%82%E4%B8%BB%E8%A6%81%E5%8F%98%E5%8C%96%E5%8C%85%E6%8B%AC%E5%9C%A8%E7%8E%B0%E6%9C%89%20Pro%20%E5%92%8C%20Pro%2B%20%E8%AE%A1%E5%88%92%E4%B8%AD%E5%BC%95%E5%85%A5%E5%BC%B9%E6%80%A7%E9%85%8D%E9%A2%9D%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%85%81%E8%AE%B8%E7%94%A8%E6%88%B7%E6%9B%B4%E7%81%B5%E6%B4%BB%E5%9C%B0%E5%88%86%E9%85%8D%E4%BD%BF%E7%94%A8%E9%87%8F%EF%BC%9B%E5%90%8C%E6%97%B6%E6%96%B0%E5%A2%9E%20Max%20%E8%AE%A1%E5%88%92%EF%BC%8C%E6%89%A9%E5%B1%95%E9%AB%98%E7%BA%A7%E9%80%89%E9%A1%B9%E3%80%82%E6%AD%A4%E6%AC%A1%E6%9B%B4%E6%96%B0%E6%97%A8%E5%9C%A8%E6%8F%90%E5%8D%87%E8%AE%A1%E5%88%92%E7%9A%84%E5%8F%AF%E5%AE%9A%E5%88%B6%E6%80%A7%EF%BC%8C%E4%B8%BA%E5%BC%80%E5%8F%91%E8%80%85%E6%8F%90%E4%BE%9B%E6%9B%B4%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E7%BC%96%E7%A8%8B%E8%BE%85%E5%8A%A9%E6%9C%8D%E5%8A%A1%EF%BC%8C%E4%BC%98%E5%8C%96%E6%95%B4%E4%BD%93%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">谷歌发布全新安卓智能助理</h3>
+      <p class="card-summary">GOOGLE 🔥： 在Android Show 2026上推出了全新的Android Intelligence！
+
+- 全新的时尚设计！
+- 跨安卓应用的自动化多步骤任务
+- Chrome中的Gemini获得浏览器使用功能
+- 自动表单填写
+- &quot;Rambler&quot;可将语音笔记转为文本
+- 自定义Gen UI小组件
+
+我现在就需要一台Pixel 👀</p>
+      <div class="card-meta">
+        <span class="badge">X：Testing Catalog (@testingcatalog)</span>
+        <span class="meta-time">2026-05-12T17:34:19.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/testingcatalog/status/2054253853026185609" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E8%B0%B7%E6%AD%8C%E5%8F%91%E5%B8%83%E5%85%A8%E6%96%B0%E5%AE%89%E5%8D%93%E6%99%BA%E8%83%BD%E5%8A%A9%E7%90%86%0A%0AGOOGLE%20%F0%9F%94%A5%EF%BC%9A%20%E5%9C%A8Android%20Show%202026%E4%B8%8A%E6%8E%A8%E5%87%BA%E4%BA%86%E5%85%A8%E6%96%B0%E7%9A%84Android%20Intelligence%EF%BC%81%0A%0A-%20%E5%85%A8%E6%96%B0%E7%9A%84%E6%97%B6%E5%B0%9A%E8%AE%BE%E8%AE%A1%EF%BC%81%0A-%20%E8%B7%A8%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%9A%E6%AD%A5%E9%AA%A4%E4%BB%BB%E5%8A%A1%0A-%20Chrome%E4%B8%AD%E7%9A%84Gemini%E8%8E%B7%E5%BE%97%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%BF%E7%94%A8%E5%8A%9F%E8%83%BD%0A-%20%E8%87%AA%E5%8A%A8%E8%A1%A8%E5%8D%95%E5%A1%AB%E5%86%99%0A-%20%22Rambler%22%E5%8F%AF%E5%B0%86%E8%AF%AD%E9%9F%B3%E7%AC%94%E8%AE%B0%E8%BD%AC%E4%B8%BA%E6%96%87%E6%9C%AC%0A-%20%E8%87%AA%E5%AE%9A%E4%B9%89Gen%20UI%E5%B0%8F%E7%BB%84%E4%BB%B6%0A%0A%E6%88%91%E7%8E%B0%E5%9C%A8%E5%B0%B1%E9%9C%80%E8%A6%81%E4%B8%80%E5%8F%B0Pixel%20%F0%9F%91%80" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Symphony为每个任务启动运行Codex智能体</h3>
+      <p class="card-summary">Symphony：每个开放任务都有一个正在运行的Codex智能体</p>
+      <div class="card-meta">
+        <span class="badge">X：OpenAI Developers (@OpenAIDevs)</span>
+        <span class="meta-time">2026-05-12T17:27:50.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/OpenAIDevs/status/2054252221941121035" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Symphony%E4%B8%BA%E6%AF%8F%E4%B8%AA%E4%BB%BB%E5%8A%A1%E5%90%AF%E5%8A%A8%E8%BF%90%E8%A1%8CCodex%E6%99%BA%E8%83%BD%E4%BD%93%0A%0ASymphony%EF%BC%9A%E6%AF%8F%E4%B8%AA%E5%BC%80%E6%94%BE%E4%BB%BB%E5%8A%A1%E9%83%BD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84Codex%E6%99%BA%E8%83%BD%E4%BD%93" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Code w/ Claude SF 2026开发者大会：基于AI指数级增长的构建</h3>
+      <p class="card-summary">在Code w/ Claude SF 2026开发者大会上，Anthropic宣布提升开发者工具能力。Claude Code的速率限制翻倍，Claude Opus的API限制提高，以支持大规模可靠开发。同时，Claude平台上的托管智能体新增四项功能：&quot;梦想&quot;功能通过回顾会话优化记忆；多智能体编排支持主智能体并行委派子任务；&quot;成果&quot;功能通过定义输出标准提升任务成功率，内部测试显示最难问题成功率最多提升10%；Webhooks提供任务完成通知。大会主题演讲和分组会议录像已上线，并计划在伦敦和东京举办后续活动。</p>
+      <div class="card-meta">
+        <span class="badge">Claude：Blog（网页）</span>
+        <span class="meta-time">2026-05-12T16:24:44.540Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Code%20w%2F%20Claude%20SF%202026%E5%BC%80%E5%8F%91%E8%80%85%E5%A4%A7%E4%BC%9A%EF%BC%9A%E5%9F%BA%E4%BA%8EAI%E6%8C%87%E6%95%B0%E7%BA%A7%E5%A2%9E%E9%95%BF%E7%9A%84%E6%9E%84%E5%BB%BA%0A%0A%E5%9C%A8Code%20w%2F%20Claude%20SF%202026%E5%BC%80%E5%8F%91%E8%80%85%E5%A4%A7%E4%BC%9A%E4%B8%8A%EF%BC%8CAnthropic%E5%AE%A3%E5%B8%83%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E8%83%BD%E5%8A%9B%E3%80%82Claude%20Code%E7%9A%84%E9%80%9F%E7%8E%87%E9%99%90%E5%88%B6%E7%BF%BB%E5%80%8D%EF%BC%8CClaude%20Opus%E7%9A%84API%E9%99%90%E5%88%B6%E6%8F%90%E9%AB%98%EF%BC%8C%E4%BB%A5%E6%94%AF%E6%8C%81%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%AF%E9%9D%A0%E5%BC%80%E5%8F%91%E3%80%82%E5%90%8C%E6%97%B6%EF%BC%8CClaude%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84%E6%89%98%E7%AE%A1%E6%99%BA%E8%83%BD%E4%BD%93%E6%96%B0%E5%A2%9E%E5%9B%9B%E9%A1%B9%E5%8A%9F%E8%83%BD%EF%BC%9A%22%E6%A2%A6%E6%83%B3%22%E5%8A%9F%E8%83%BD%E9%80%9A%E8%BF%87%E5%9B%9E%E9%A1%BE%E4%BC%9A%E8%AF%9D%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BF%86%EF%BC%9B%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%BC%96%E6%8E%92%E6%94%AF%E6%8C%81%E4%B8%BB%E6%99%BA%E8%83%BD%E4%BD%93%E5%B9%B6%E8%A1%8C%E5%A7%94%E6%B4%BE%E5%AD%90%E4%BB%BB%E5%8A%A1%EF%BC%9B%22%E6%88%90%E6%9E%9C%22%E5%8A%9F%E8%83%BD%E9%80%9A%E8%BF%87%E5%AE%9A%E4%B9%89%E8%BE%93%E5%87%BA%E6%A0%87%E5%87%86%E6%8F%90%E5%8D%87%E4%BB%BB%E5%8A%A1%E6%88%90%E5%8A%9F%E7%8E%87%EF%BC%8C%E5%86%85%E9%83%A8%E6%B5%8B%E8%AF%95%E6%98%BE%E7%A4%BA%E6%9C%80%E9%9A%BE%E9%97%AE%E9%A2%98%E6%88%90%E5%8A%9F%E7%8E%87%E6%9C%80%E5%A4%9A%E6%8F%90%E5%8D%8710%25%EF%BC%9BWebhooks%E6%8F%90%E4%BE%9B%E4%BB%BB%E5%8A%A1%E5%AE%8C%E6%88%90%E9%80%9A%E7%9F%A5%E3%80%82%E5%A4%A7%E4%BC%9A%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E5%92%8C%E5%88%86%E7%BB%84%E4%BC%9A%E8%AE%AE%E5%BD%95%E5%83%8F%E5%B7%B2%E4%B8%8A%E7%BA%BF%EF%BC%8C%E5%B9%B6%E8%AE%A1%E5%88%92%E5%9C%A8%E4%BC%A6%E6%95%A6%E5%92%8C%E4%B8%9C%E4%BA%AC%E4%B8%BE%E5%8A%9E%E5%90%8E%E7%BB%AD%E6%B4%BB%E5%8A%A8%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Grok接入Gmail，智能邮件助手革新收件箱管理</h3>
+      <p class="card-summary">Grok现已支持连接Gmail，用户可通过自然语言指令对收件箱进行智能查询与管理。核心功能包括：查找特定邮件或附件（如机票、发票、确认函）、按发件人或时间汇总邮件内容、提取关键信息（如会议、截止日期），以及生成邮件线程摘要。该集成旨在将传统收件箱转化为可智能交互的信息库，提升邮件处理效率与实用性。</p>
+      <div class="card-meta">
+        <span class="badge">X：cb_doge (@cb_doge)</span>
+        <span class="meta-time">2026-05-12T15:43:15.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/cb_doge/status/2054225901232259092" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Grok%E6%8E%A5%E5%85%A5Gmail%EF%BC%8C%E6%99%BA%E8%83%BD%E9%82%AE%E4%BB%B6%E5%8A%A9%E6%89%8B%E9%9D%A9%E6%96%B0%E6%94%B6%E4%BB%B6%E7%AE%B1%E7%AE%A1%E7%90%86%0A%0AGrok%E7%8E%B0%E5%B7%B2%E6%94%AF%E6%8C%81%E8%BF%9E%E6%8E%A5Gmail%EF%BC%8C%E7%94%A8%E6%88%B7%E5%8F%AF%E9%80%9A%E8%BF%87%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E6%8C%87%E4%BB%A4%E5%AF%B9%E6%94%B6%E4%BB%B6%E7%AE%B1%E8%BF%9B%E8%A1%8C%E6%99%BA%E8%83%BD%E6%9F%A5%E8%AF%A2%E4%B8%8E%E7%AE%A1%E7%90%86%E3%80%82%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E5%8C%85%E6%8B%AC%EF%BC%9A%E6%9F%A5%E6%89%BE%E7%89%B9%E5%AE%9A%E9%82%AE%E4%BB%B6%E6%88%96%E9%99%84%E4%BB%B6%EF%BC%88%E5%A6%82%E6%9C%BA%E7%A5%A8%E3%80%81%E5%8F%91%E7%A5%A8%E3%80%81%E7%A1%AE%E8%AE%A4%E5%87%BD%EF%BC%89%E3%80%81%E6%8C%89%E5%8F%91%E4%BB%B6%E4%BA%BA%E6%88%96%E6%97%B6%E9%97%B4%E6%B1%87%E6%80%BB%E9%82%AE%E4%BB%B6%E5%86%85%E5%AE%B9%E3%80%81%E6%8F%90%E5%8F%96%E5%85%B3%E9%94%AE%E4%BF%A1%E6%81%AF%EF%BC%88%E5%A6%82%E4%BC%9A%E8%AE%AE%E3%80%81%E6%88%AA%E6%AD%A2%E6%97%A5%E6%9C%9F%EF%BC%89%EF%BC%8C%E4%BB%A5%E5%8F%8A%E7%94%9F%E6%88%90%E9%82%AE%E4%BB%B6%E7%BA%BF%E7%A8%8B%E6%91%98%E8%A6%81%E3%80%82%E8%AF%A5%E9%9B%86%E6%88%90%E6%97%A8%E5%9C%A8%E5%B0%86%E4%BC%A0%E7%BB%9F%E6%94%B6%E4%BB%B6%E7%AE%B1%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%8F%AF%E6%99%BA%E8%83%BD%E4%BA%A4%E4%BA%92%E7%9A%84%E4%BF%A1%E6%81%AF%E5%BA%93%EF%BC%8C%E6%8F%90%E5%8D%87%E9%82%AE%E4%BB%B6%E5%A4%84%E7%90%86%E6%95%88%E7%8E%87%E4%B8%8E%E5%AE%9E%E7%94%A8%E6%80%A7%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Cursor集成Microsoft Teams提升办公效率</h3>
+      <p class="card-summary">Cursor 在 Microsoft Teams 可用了
+
+最新集成方式有：Slack、Linear 和 Microsoft Teams
+
+如果你们公司在用微软产品体系，Microsoft Teams 还是必选项，这个集成比较实用，在这安装：
+https：//cursor.com/dashboard/integrations#integrations</p>
+      <div class="card-meta">
+        <span class="badge">X：邵猛 (@shao__meng)</span>
+        <span class="meta-time">2026-05-12T00:39:47.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/shao__meng/status/2053998536711405978" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Cursor%E9%9B%86%E6%88%90Microsoft%20Teams%E6%8F%90%E5%8D%87%E5%8A%9E%E5%85%AC%E6%95%88%E7%8E%87%0A%0ACursor%20%E5%9C%A8%20Microsoft%20Teams%20%E5%8F%AF%E7%94%A8%E4%BA%86%0A%0A%E6%9C%80%E6%96%B0%E9%9B%86%E6%88%90%E6%96%B9%E5%BC%8F%E6%9C%89%EF%BC%9ASlack%E3%80%81Linear%20%E5%92%8C%20Microsoft%20Teams%0A%0A%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%BB%AC%E5%85%AC%E5%8F%B8%E5%9C%A8%E7%94%A8%E5%BE%AE%E8%BD%AF%E4%BA%A7%E5%93%81%E4%BD%93%E7%B3%BB%EF%BC%8CMicrosoft%20Teams%20%E8%BF%98%E6%98%AF%E5%BF%85%E9%80%89%E9%A1%B9%EF%BC%8C%E8%BF%99%E4%B8%AA%E9%9B%86%E6%88%90%E6%AF%94%E8%BE%83%E5%AE%9E%E7%94%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E5%AE%89%E8%A3%85%EF%BC%9A%0Ahttps%EF%BC%9A%2F%2Fcursor.com%2Fdashboard%2Fintegrations%23integrations" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Luma Agents：从情绪板到完整广告的自动化创作</h3>
+      <p class="card-summary">情绪板曾是最精彩的部分。如今它只是起点。
+
+上传你的参考素材。设定方向。Luma Agents 会将其从情绪板转化为完整的广告。
+
+生成广告 → http：//lumalabs.ai/app</p>
+      <div class="card-meta">
+        <span class="badge">X：Luma AI (@LumaLabsAI)</span>
+        <span class="meta-time">2026-05-11T20:54:28.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/LumaLabsAI/status/2053941836402901409" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Luma%20Agents%EF%BC%9A%E4%BB%8E%E6%83%85%E7%BB%AA%E6%9D%BF%E5%88%B0%E5%AE%8C%E6%95%B4%E5%B9%BF%E5%91%8A%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%9B%E4%BD%9C%0A%0A%E6%83%85%E7%BB%AA%E6%9D%BF%E6%9B%BE%E6%98%AF%E6%9C%80%E7%B2%BE%E5%BD%A9%E7%9A%84%E9%83%A8%E5%88%86%E3%80%82%E5%A6%82%E4%BB%8A%E5%AE%83%E5%8F%AA%E6%98%AF%E8%B5%B7%E7%82%B9%E3%80%82%0A%0A%E4%B8%8A%E4%BC%A0%E4%BD%A0%E7%9A%84%E5%8F%82%E8%80%83%E7%B4%A0%E6%9D%90%E3%80%82%E8%AE%BE%E5%AE%9A%E6%96%B9%E5%90%91%E3%80%82Luma%20Agents%20%E4%BC%9A%E5%B0%86%E5%85%B6%E4%BB%8E%E6%83%85%E7%BB%AA%E6%9D%BF%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%AE%8C%E6%95%B4%E7%9A%84%E5%B9%BF%E5%91%8A%E3%80%82%0A%0A%E7%94%9F%E6%88%90%E5%B9%BF%E5%91%8A%20%E2%86%92%20http%EF%BC%9A%2F%2Flumalabs.ai%2Fapp" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">推出Daybreak：网络安全前沿AI防御系统</h3>
+      <p class="card-summary">推出Daybreak：面向网络防御者的前沿AI。
+
+Daybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙伴，以加速网络防御并持续保障软件安全。
+
+朝着安全团队能以防御所需速度行动的未来迈进一步。</p>
+      <div class="card-meta">
+        <span class="badge">X：OpenAI (@OpenAI)</span>
+        <span class="meta-time">2026-05-11T20:45:59.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/OpenAI/status/2053939702110269822" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E6%8E%A8%E5%87%BADaybreak%EF%BC%9A%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%89%8D%E6%B2%BFAI%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F%0A%0A%E6%8E%A8%E5%87%BADaybreak%EF%BC%9A%E9%9D%A2%E5%90%91%E7%BD%91%E7%BB%9C%E9%98%B2%E5%BE%A1%E8%80%85%E7%9A%84%E5%89%8D%E6%B2%BFAI%E3%80%82%0A%0ADaybreak%E6%B1%87%E9%9B%86%E4%BA%86%E6%9C%80%E5%BC%BA%E5%A4%A7%E7%9A%84OpenAI%E6%A8%A1%E5%9E%8B%E3%80%81Codex%E4%BB%A5%E5%8F%8A%E6%88%91%E4%BB%AC%E7%9A%84%E5%AE%89%E5%85%A8%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%EF%BC%8C%E4%BB%A5%E5%8A%A0%E9%80%9F%E7%BD%91%E7%BB%9C%E9%98%B2%E5%BE%A1%E5%B9%B6%E6%8C%81%E7%BB%AD%E4%BF%9D%E9%9A%9C%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E3%80%82%0A%0A%E6%9C%9D%E7%9D%80%E5%AE%89%E5%85%A8%E5%9B%A2%E9%98%9F%E8%83%BD%E4%BB%A5%E9%98%B2%E5%BE%A1%E6%89%80%E9%9C%80%E9%80%9F%E5%BA%A6%E8%A1%8C%E5%8A%A8%E7%9A%84%E6%9C%AA%E6%9D%A5%E8%BF%88%E8%BF%9B%E4%B8%80%E6%AD%A5%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Codex插件助力AI应用与智能体开发提速</h3>
+      <p class="card-summary">Codex现可通过OpenAI Developers插件，帮助您利用OpenAI API更快地构建AI应用和智能体。</p>
+      <div class="card-meta">
+        <span class="badge">X：OpenAI Developers (@OpenAIDevs)</span>
+        <span class="meta-time">2026-05-11T19:51:24.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/OpenAIDevs/status/2053925962287583379" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Codex%E6%8F%92%E4%BB%B6%E5%8A%A9%E5%8A%9BAI%E5%BA%94%E7%94%A8%E4%B8%8E%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%80%E5%8F%91%E6%8F%90%E9%80%9F%0A%0ACodex%E7%8E%B0%E5%8F%AF%E9%80%9A%E8%BF%87OpenAI%20Developers%E6%8F%92%E4%BB%B6%EF%BC%8C%E5%B8%AE%E5%8A%A9%E6%82%A8%E5%88%A9%E7%94%A8OpenAI%20API%E6%9B%B4%E5%BF%AB%E5%9C%B0%E6%9E%84%E5%BB%BAAI%E5%BA%94%E7%94%A8%E5%92%8C%E6%99%BA%E8%83%BD%E4%BD%93%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  </div>
+    </section>
+
+    <section id="industry" class="block">
+      <h2><span class="section-icon">📰</span> Industry moves</h2>
+      <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
+      <div class="cards">
+    <article class="card">
+      <h3 class="card-title">山姆·奥特曼因涉嫌利用OpenAI谋私利遭正式调查</h3>
+      <p class="card-summary">美国佛罗里达、蒙大拿等六州司法部长联合致信美国证券交易委员会，要求调查OpenAI CEO山姆·奥特曼涉嫌利用公司谋取个人利益的行为。信中指出奥特曼在OpenAI无直接股权，个人财务利益与公司业绩关联有限，存在严重的自我交易和利益冲突风险。同时，美国众议院监督委员会主席也要求其提交相关投资文件。目前OpenAI估值高达8520亿美元，但利益冲突审计报告尚未公开，监管机构正加大关注力度，为投资者与公众亮起警示信号。</p>
+      <div class="card-meta">
+        <span class="badge">X：cb_doge (@cb_doge)</span>
+        <span class="meta-time">2026-05-12T18:20:14.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/cb_doge/status/2054265408933462034" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E5%B1%B1%E5%A7%86%C2%B7%E5%A5%A5%E7%89%B9%E6%9B%BC%E5%9B%A0%E6%B6%89%E5%AB%8C%E5%88%A9%E7%94%A8OpenAI%E8%B0%8B%E7%A7%81%E5%88%A9%E9%81%AD%E6%AD%A3%E5%BC%8F%E8%B0%83%E6%9F%A5%0A%0A%E7%BE%8E%E5%9B%BD%E4%BD%9B%E7%BD%97%E9%87%8C%E8%BE%BE%E3%80%81%E8%92%99%E5%A4%A7%E6%8B%BF%E7%AD%89%E5%85%AD%E5%B7%9E%E5%8F%B8%E6%B3%95%E9%83%A8%E9%95%BF%E8%81%94%E5%90%88%E8%87%B4%E4%BF%A1%E7%BE%8E%E5%9B%BD%E8%AF%81%E5%88%B8%E4%BA%A4%E6%98%93%E5%A7%94%E5%91%98%E4%BC%9A%EF%BC%8C%E8%A6%81%E6%B1%82%E8%B0%83%E6%9F%A5OpenAI%20CEO%E5%B1%B1%E5%A7%86%C2%B7%E5%A5%A5%E7%89%B9%E6%9B%BC%E6%B6%89%E5%AB%8C%E5%88%A9%E7%94%A8%E5%85%AC%E5%8F%B8%E8%B0%8B%E5%8F%96%E4%B8%AA%E4%BA%BA%E5%88%A9%E7%9B%8A%E7%9A%84%E8%A1%8C%E4%B8%BA%E3%80%82%E4%BF%A1%E4%B8%AD%E6%8C%87%E5%87%BA%E5%A5%A5%E7%89%B9%E6%9B%BC%E5%9C%A8OpenAI%E6%97%A0%E7%9B%B4%E6%8E%A5%E8%82%A1%E6%9D%83%EF%BC%8C%E4%B8%AA%E4%BA%BA%E8%B4%A2%E5%8A%A1%E5%88%A9%E7%9B%8A%E4%B8%8E%E5%85%AC%E5%8F%B8%E4%B8%9A%E7%BB%A9%E5%85%B3%E8%81%94%E6%9C%89%E9%99%90%EF%BC%8C%E5%AD%98%E5%9C%A8%E4%B8%A5%E9%87%8D%E7%9A%84%E8%87%AA%E6%88%91%E4%BA%A4%E6%98%93%E5%92%8C%E5%88%A9%E7%9B%8A%E5%86%B2%E7%AA%81%E9%A3%8E%E9%99%A9%E3%80%82%E5%90%8C%E6%97%B6%EF%BC%8C%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E7%9B%91%E7%9D%A3%E5%A7%94%E5%91%98%E4%BC%9A%E4%B8%BB%E5%B8%AD%E4%B9%9F%E8%A6%81%E6%B1%82%E5%85%B6%E6%8F%90%E4%BA%A4%E7%9B%B8%E5%85%B3%E6%8A%95%E8%B5%84%E6%96%87%E4%BB%B6%E3%80%82%E7%9B%AE%E5%89%8DOpenAI%E4%BC%B0%E5%80%BC%E9%AB%98%E8%BE%BE8520%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%8C%E4%BD%86%E5%88%A9%E7%9B%8A%E5%86%B2%E7%AA%81%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A%E5%B0%9A%E6%9C%AA%E5%85%AC%E5%BC%80%EF%BC%8C%E7%9B%91%E7%AE%A1%E6%9C%BA%E6%9E%84%E6%AD%A3%E5%8A%A0%E5%A4%A7%E5%85%B3%E6%B3%A8%E5%8A%9B%E5%BA%A6%EF%BC%8C%E4%B8%BA%E6%8A%95%E8%B5%84%E8%80%85%E4%B8%8E%E5%85%AC%E4%BC%97%E4%BA%AE%E8%B5%B7%E8%AD%A6%E7%A4%BA%E4%BF%A1%E5%8F%B7%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">青少年按ChatGPT建议混用药物致死，父母起诉OpenAI</h3>
+      <p class="card-summary">一名19岁青少年因过量服用药物死亡，其父母起诉OpenAI，指控ChatGPT的错误建议导致了悲剧。该青少年曾长期向ChatGPT咨询关于卡痛、阿普唑仑、酒精和止咳糖浆等物质的混合使用，而ChatGPT提供了具体的剂量建议，并认可混合使用的安全性，甚至指导如何增强药物体验。在他死亡当天，ChatGPT仍在提供后续用药建议。OpenAI回应称，相关对话发生于已下线的旧版本模型。</p>
+      <div class="card-meta">
+        <span class="badge">X：cb_doge (@cb_doge)</span>
+        <span class="meta-time">2026-05-12T17:44:26.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/cb_doge/status/2054256398834569440" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E9%9D%92%E5%B0%91%E5%B9%B4%E6%8C%89ChatGPT%E5%BB%BA%E8%AE%AE%E6%B7%B7%E7%94%A8%E8%8D%AF%E7%89%A9%E8%87%B4%E6%AD%BB%EF%BC%8C%E7%88%B6%E6%AF%8D%E8%B5%B7%E8%AF%89OpenAI%0A%0A%E4%B8%80%E5%90%8D19%E5%B2%81%E9%9D%92%E5%B0%91%E5%B9%B4%E5%9B%A0%E8%BF%87%E9%87%8F%E6%9C%8D%E7%94%A8%E8%8D%AF%E7%89%A9%E6%AD%BB%E4%BA%A1%EF%BC%8C%E5%85%B6%E7%88%B6%E6%AF%8D%E8%B5%B7%E8%AF%89OpenAI%EF%BC%8C%E6%8C%87%E6%8E%A7ChatGPT%E7%9A%84%E9%94%99%E8%AF%AF%E5%BB%BA%E8%AE%AE%E5%AF%BC%E8%87%B4%E4%BA%86%E6%82%B2%E5%89%A7%E3%80%82%E8%AF%A5%E9%9D%92%E5%B0%91%E5%B9%B4%E6%9B%BE%E9%95%BF%E6%9C%9F%E5%90%91ChatGPT%E5%92%A8%E8%AF%A2%E5%85%B3%E4%BA%8E%E5%8D%A1%E7%97%9B%E3%80%81%E9%98%BF%E6%99%AE%E5%94%91%E4%BB%91%E3%80%81%E9%85%92%E7%B2%BE%E5%92%8C%E6%AD%A2%E5%92%B3%E7%B3%96%E6%B5%86%E7%AD%89%E7%89%A9%E8%B4%A8%E7%9A%84%E6%B7%B7%E5%90%88%E4%BD%BF%E7%94%A8%EF%BC%8C%E8%80%8CChatGPT%E6%8F%90%E4%BE%9B%E4%BA%86%E5%85%B7%E4%BD%93%E7%9A%84%E5%89%82%E9%87%8F%E5%BB%BA%E8%AE%AE%EF%BC%8C%E5%B9%B6%E8%AE%A4%E5%8F%AF%E6%B7%B7%E5%90%88%E4%BD%BF%E7%94%A8%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7%EF%BC%8C%E7%94%9A%E8%87%B3%E6%8C%87%E5%AF%BC%E5%A6%82%E4%BD%95%E5%A2%9E%E5%BC%BA%E8%8D%AF%E7%89%A9%E4%BD%93%E9%AA%8C%E3%80%82%E5%9C%A8%E4%BB%96%E6%AD%BB%E4%BA%A1%E5%BD%93%E5%A4%A9%EF%BC%8CChatGPT%E4%BB%8D%E5%9C%A8%E6%8F%90%E4%BE%9B%E5%90%8E%E7%BB%AD%E7%94%A8%E8%8D%AF%E5%BB%BA%E8%AE%AE%E3%80%82OpenAI%E5%9B%9E%E5%BA%94%E7%A7%B0%EF%BC%8C%E7%9B%B8%E5%85%B3%E5%AF%B9%E8%AF%9D%E5%8F%91%E7%94%9F%E4%BA%8E%E5%B7%B2%E4%B8%8B%E7%BA%BF%E7%9A%84%E6%97%A7%E7%89%88%E6%9C%AC%E6%A8%A1%E5%9E%8B%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">首届虚构节目提案大赛揭晓二十强</h3>
+      <p class="card-summary">祝贺首届&quot;尚未存在的节目&quot;提案大赛的二十位获奖者。
+
+观看下方前五名提案展示。</p>
+      <div class="card-meta">
+        <span class="badge">X：Runway (@runwayml)</span>
+        <span class="meta-time">2026-05-12T14:46:12.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/runwayml/status/2054211544636850235" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E9%A6%96%E5%B1%8A%E8%99%9A%E6%9E%84%E8%8A%82%E7%9B%AE%E6%8F%90%E6%A1%88%E5%A4%A7%E8%B5%9B%E6%8F%AD%E6%99%93%E4%BA%8C%E5%8D%81%E5%BC%BA%0A%0A%E7%A5%9D%E8%B4%BA%E9%A6%96%E5%B1%8A%22%E5%B0%9A%E6%9C%AA%E5%AD%98%E5%9C%A8%E7%9A%84%E8%8A%82%E7%9B%AE%22%E6%8F%90%E6%A1%88%E5%A4%A7%E8%B5%9B%E7%9A%84%E4%BA%8C%E5%8D%81%E4%BD%8D%E8%8E%B7%E5%A5%96%E8%80%85%E3%80%82%0A%0A%E8%A7%82%E7%9C%8B%E4%B8%8B%E6%96%B9%E5%89%8D%E4%BA%94%E5%90%8D%E6%8F%90%E6%A1%88%E5%B1%95%E7%A4%BA%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">人工智能首要应用应是改善人类健康</h3>
+      <p class="card-summary">我一直认为人工智能的首要应用应该是改善人类健康。
+
+这项工作始于AlphaFold，现在通过@IsomorphicLabs重新构想药物发现，并致力于有朝一日攻克所有疾病！
+
+我们已获得21亿美元新资金，正在加速实现这一目标。</p>
+      <div class="card-meta">
+        <span class="badge">X：Demis Hassabis (@demishassabis)</span>
+        <span class="meta-time">2026-05-12T13:50:14.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/demishassabis/status/2054197462101889277" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%A6%96%E8%A6%81%E5%BA%94%E7%94%A8%E5%BA%94%E6%98%AF%E6%94%B9%E5%96%84%E4%BA%BA%E7%B1%BB%E5%81%A5%E5%BA%B7%0A%0A%E6%88%91%E4%B8%80%E7%9B%B4%E8%AE%A4%E4%B8%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E9%A6%96%E8%A6%81%E5%BA%94%E7%94%A8%E5%BA%94%E8%AF%A5%E6%98%AF%E6%94%B9%E5%96%84%E4%BA%BA%E7%B1%BB%E5%81%A5%E5%BA%B7%E3%80%82%0A%0A%E8%BF%99%E9%A1%B9%E5%B7%A5%E4%BD%9C%E5%A7%8B%E4%BA%8EAlphaFold%EF%BC%8C%E7%8E%B0%E5%9C%A8%E9%80%9A%E8%BF%87%40IsomorphicLabs%E9%87%8D%E6%96%B0%E6%9E%84%E6%83%B3%E8%8D%AF%E7%89%A9%E5%8F%91%E7%8E%B0%EF%BC%8C%E5%B9%B6%E8%87%B4%E5%8A%9B%E4%BA%8E%E6%9C%89%E6%9C%9D%E4%B8%80%E6%97%A5%E6%94%BB%E5%85%8B%E6%89%80%E6%9C%89%E7%96%BE%E7%97%85%EF%BC%81%0A%0A%E6%88%91%E4%BB%AC%E5%B7%B2%E8%8E%B7%E5%BE%9721%E4%BA%BF%E7%BE%8E%E5%85%83%E6%96%B0%E8%B5%84%E9%87%91%EF%BC%8C%E6%AD%A3%E5%9C%A8%E5%8A%A0%E9%80%9F%E5%AE%9E%E7%8E%B0%E8%BF%99%E4%B8%80%E7%9B%AE%E6%A0%87%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">全国首例 AI 代写&quot;种草笔记&quot;案宣判，法院判决工具提供者赔偿平台 10 万元</h3>
+      <p class="card-summary">全国首例 AI 代写&quot;种草笔记&quot;不正当竞争案在浙江省杭州市中级人民法院宣判。被告 B 公司和 C 公司运营的 AI 写作工具能一键生成某社交平台风格的种草文案，以会员制营利，诱导用户发布虚假消费体验，破坏平台真实内容生态。法院判决被告赔偿原告经济损失及合理开支共计 10 万元，并创新性使用&quot;四要素判定法&quot;，明确生成式人工智能服务提供者需尽到合理注意义务，为治理 AI 生成虚假信息划定了法律边界。</p>
+      <div class="card-meta">
+        <span class="badge">IT之家（RSS）</span>
+        <span class="meta-time">2026-05-12T03:55:51.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://www.ithome.com/0/949/198.htm" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E5%85%A8%E5%9B%BD%E9%A6%96%E4%BE%8B%20AI%20%E4%BB%A3%E5%86%99%22%E7%A7%8D%E8%8D%89%E7%AC%94%E8%AE%B0%22%E6%A1%88%E5%AE%A3%E5%88%A4%EF%BC%8C%E6%B3%95%E9%99%A2%E5%88%A4%E5%86%B3%E5%B7%A5%E5%85%B7%E6%8F%90%E4%BE%9B%E8%80%85%E8%B5%94%E5%81%BF%E5%B9%B3%E5%8F%B0%2010%20%E4%B8%87%E5%85%83%0A%0A%E5%85%A8%E5%9B%BD%E9%A6%96%E4%BE%8B%20AI%20%E4%BB%A3%E5%86%99%22%E7%A7%8D%E8%8D%89%E7%AC%94%E8%AE%B0%22%E4%B8%8D%E6%AD%A3%E5%BD%93%E7%AB%9E%E4%BA%89%E6%A1%88%E5%9C%A8%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E4%B8%AD%E7%BA%A7%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%AE%A3%E5%88%A4%E3%80%82%E8%A2%AB%E5%91%8A%20B%20%E5%85%AC%E5%8F%B8%E5%92%8C%20C%20%E5%85%AC%E5%8F%B8%E8%BF%90%E8%90%A5%E7%9A%84%20AI%20%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7%E8%83%BD%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E6%9F%90%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E9%A3%8E%E6%A0%BC%E7%9A%84%E7%A7%8D%E8%8D%89%E6%96%87%E6%A1%88%EF%BC%8C%E4%BB%A5%E4%BC%9A%E5%91%98%E5%88%B6%E8%90%A5%E5%88%A9%EF%BC%8C%E8%AF%B1%E5%AF%BC%E7%94%A8%E6%88%B7%E5%8F%91%E5%B8%83%E8%99%9A%E5%81%87%E6%B6%88%E8%B4%B9%E4%BD%93%E9%AA%8C%EF%BC%8C%E7%A0%B4%E5%9D%8F%E5%B9%B3%E5%8F%B0%E7%9C%9F%E5%AE%9E%E5%86%85%E5%AE%B9%E7%94%9F%E6%80%81%E3%80%82%E6%B3%95%E9%99%A2%E5%88%A4%E5%86%B3%E8%A2%AB%E5%91%8A%E8%B5%94%E5%81%BF%E5%8E%9F%E5%91%8A%E7%BB%8F%E6%B5%8E%E6%8D%9F%E5%A4%B1%E5%8F%8A%E5%90%88%E7%90%86%E5%BC%80%E6%94%AF%E5%85%B1%E8%AE%A1%2010%20%E4%B8%87%E5%85%83%EF%BC%8C%E5%B9%B6%E5%88%9B%E6%96%B0%E6%80%A7%E4%BD%BF%E7%94%A8%22%E5%9B%9B%E8%A6%81%E7%B4%A0%E5%88%A4%E5%AE%9A%E6%B3%95%22%EF%BC%8C%E6%98%8E%E7%A1%AE%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%8D%E5%8A%A1%E6%8F%90%E4%BE%9B%E8%80%85%E9%9C%80%E5%B0%BD%E5%88%B0%E5%90%88%E7%90%86%E6%B3%A8%E6%84%8F%E4%B9%89%E5%8A%A1%EF%BC%8C%E4%B8%BA%E6%B2%BB%E7%90%86%20AI%20%E7%94%9F%E6%88%90%E8%99%9A%E5%81%87%E4%BF%A1%E6%81%AF%E5%88%92%E5%AE%9A%E4%BA%86%E6%B3%95%E5%BE%8B%E8%BE%B9%E7%95%8C%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">npm 生态遭大范围投毒：TanStack、Mistral AI、UiPath 等受波及，可窃取云密钥与 GitHub 令牌</h3>
+      <p class="card-summary">网络安全机构Socket发现针对npm生态的大规模供应链攻击&quot;Mini Shai-Hulud&quot;。攻击者组合利用GitHub Actions的三种漏洞，绕过了双重身份验证等保护机制，向TanStack、Mistral AI、UiPath等知名项目的软件包中植入恶意版本。被篡改的包在安装时会自动执行恶意代码，窃取AWS、GCP、Kubernetes、GitHub令牌及SSH私钥等敏感凭证。此次攻击波及超过160个包名、近373个恶意版本，目前所有恶意版本已被清理。</p>
+      <div class="card-meta">
+        <span class="badge">IT之家（RSS）</span>
+        <span class="meta-time">2026-05-12T03:42:03.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://www.ithome.com/0/949/178.htm" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=npm%20%E7%94%9F%E6%80%81%E9%81%AD%E5%A4%A7%E8%8C%83%E5%9B%B4%E6%8A%95%E6%AF%92%EF%BC%9ATanStack%E3%80%81Mistral%20AI%E3%80%81UiPath%20%E7%AD%89%E5%8F%97%E6%B3%A2%E5%8F%8A%EF%BC%8C%E5%8F%AF%E7%AA%83%E5%8F%96%E4%BA%91%E5%AF%86%E9%92%A5%E4%B8%8E%20GitHub%20%E4%BB%A4%E7%89%8C%0A%0A%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%BA%E6%9E%84Socket%E5%8F%91%E7%8E%B0%E9%92%88%E5%AF%B9npm%E7%94%9F%E6%80%81%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1%E4%BE%9B%E5%BA%94%E9%93%BE%E6%94%BB%E5%87%BB%22Mini%20Shai-Hulud%22%E3%80%82%E6%94%BB%E5%87%BB%E8%80%85%E7%BB%84%E5%90%88%E5%88%A9%E7%94%A8GitHub%20Actions%E7%9A%84%E4%B8%89%E7%A7%8D%E6%BC%8F%E6%B4%9E%EF%BC%8C%E7%BB%95%E8%BF%87%E4%BA%86%E5%8F%8C%E9%87%8D%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E7%AD%89%E4%BF%9D%E6%8A%A4%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%90%91TanStack%E3%80%81Mistral%20AI%E3%80%81UiPath%E7%AD%89%E7%9F%A5%E5%90%8D%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E4%B8%AD%E6%A4%8D%E5%85%A5%E6%81%B6%E6%84%8F%E7%89%88%E6%9C%AC%E3%80%82%E8%A2%AB%E7%AF%A1%E6%94%B9%E7%9A%84%E5%8C%85%E5%9C%A8%E5%AE%89%E8%A3%85%E6%97%B6%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%EF%BC%8C%E7%AA%83%E5%8F%96AWS%E3%80%81GCP%E3%80%81Kubernetes%E3%80%81GitHub%E4%BB%A4%E7%89%8C%E5%8F%8ASSH%E7%A7%81%E9%92%A5%E7%AD%89%E6%95%8F%E6%84%9F%E5%87%AD%E8%AF%81%E3%80%82%E6%AD%A4%E6%AC%A1%E6%94%BB%E5%87%BB%E6%B3%A2%E5%8F%8A%E8%B6%85%E8%BF%87160%E4%B8%AA%E5%8C%85%E5%90%8D%E3%80%81%E8%BF%91373%E4%B8%AA%E6%81%B6%E6%84%8F%E7%89%88%E6%9C%AC%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%89%80%E6%9C%89%E6%81%B6%E6%84%8F%E7%89%88%E6%9C%AC%E5%B7%B2%E8%A2%AB%E6%B8%85%E7%90%86%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">谷歌表示，犯罪黑客利用人工智能发现了一个重大的软件漏洞</h3>
+      <p class="card-summary">谷歌披露，犯罪黑客利用人工智能技术发现并利用了一个重大的软件漏洞。该漏洞存在于广泛使用的开源软件中，可能导致大规模数据泄露或系统入侵。谷歌威胁分析小组追踪到此次攻击，并确认黑客借助AI工具显著提升了漏洞挖掘的效率与精准度。目前漏洞细节尚未公开，但相关软件维护方已发布安全更新。这一事件凸显了AI技术被恶意用于网络攻击的现实风险，对全球网络安全防御体系提出了新的挑战。</p>
+      <div class="card-meta">
+        <span class="badge">Hacker News 热门（buzzing.cc 中文翻译）</span>
+        <span class="meta-time">2026-05-12T00:23:17.785Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E8%B0%B7%E6%AD%8C%E8%A1%A8%E7%A4%BA%EF%BC%8C%E7%8A%AF%E7%BD%AA%E9%BB%91%E5%AE%A2%E5%88%A9%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8F%91%E7%8E%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E9%87%8D%E5%A4%A7%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%BC%8F%E6%B4%9E%0A%0A%E8%B0%B7%E6%AD%8C%E6%8A%AB%E9%9C%B2%EF%BC%8C%E7%8A%AF%E7%BD%AA%E9%BB%91%E5%AE%A2%E5%88%A9%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8A%80%E6%9C%AF%E5%8F%91%E7%8E%B0%E5%B9%B6%E5%88%A9%E7%94%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E9%87%8D%E5%A4%A7%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%BC%8F%E6%B4%9E%E3%80%82%E8%AF%A5%E6%BC%8F%E6%B4%9E%E5%AD%98%E5%9C%A8%E4%BA%8E%E5%B9%BF%E6%B3%9B%E4%BD%BF%E7%94%A8%E7%9A%84%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E4%B8%AD%EF%BC%8C%E5%8F%AF%E8%83%BD%E5%AF%BC%E8%87%B4%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2%E6%88%96%E7%B3%BB%E7%BB%9F%E5%85%A5%E4%BE%B5%E3%80%82%E8%B0%B7%E6%AD%8C%E5%A8%81%E8%83%81%E5%88%86%E6%9E%90%E5%B0%8F%E7%BB%84%E8%BF%BD%E8%B8%AA%E5%88%B0%E6%AD%A4%E6%AC%A1%E6%94%BB%E5%87%BB%EF%BC%8C%E5%B9%B6%E7%A1%AE%E8%AE%A4%E9%BB%91%E5%AE%A2%E5%80%9F%E5%8A%A9AI%E5%B7%A5%E5%85%B7%E6%98%BE%E8%91%97%E6%8F%90%E5%8D%87%E4%BA%86%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98%E7%9A%84%E6%95%88%E7%8E%87%E4%B8%8E%E7%B2%BE%E5%87%86%E5%BA%A6%E3%80%82%E7%9B%AE%E5%89%8D%E6%BC%8F%E6%B4%9E%E7%BB%86%E8%8A%82%E5%B0%9A%E6%9C%AA%E5%85%AC%E5%BC%80%EF%BC%8C%E4%BD%86%E7%9B%B8%E5%85%B3%E8%BD%AF%E4%BB%B6%E7%BB%B4%E6%8A%A4%E6%96%B9%E5%B7%B2%E5%8F%91%E5%B8%83%E5%AE%89%E5%85%A8%E6%9B%B4%E6%96%B0%E3%80%82%E8%BF%99%E4%B8%80%E4%BA%8B%E4%BB%B6%E5%87%B8%E6%98%BE%E4%BA%86AI%E6%8A%80%E6%9C%AF%E8%A2%AB%E6%81%B6%E6%84%8F%E7%94%A8%E4%BA%8E%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E7%8E%B0%E5%AE%9E%E9%A3%8E%E9%99%A9%EF%BC%8C%E5%AF%B9%E5%85%A8%E7%90%83%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E9%98%B2%E5%BE%A1%E4%BD%93%E7%B3%BB%E6%8F%90%E5%87%BA%E4%BA%86%E6%96%B0%E7%9A%84%E6%8C%91%E6%88%98%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">纳德拉出庭反击马斯克诉讼案：他明明有我的手机号，但从未抱怨过微软与 OpenAI 的合作</h3>
+      <p class="card-summary">微软CEO纳德拉在马斯克诉OpenAI案中作证，反驳了马斯克关于OpenAI背离非营利初衷的指控。他出示了马斯克2016年的感谢邮件，证明其当时完全支持微软与OpenAI的合作，且微软为此承受了1500万美元亏损。纳德拉强调，双方一直保持沟通，但马斯克在合作深化期间从未提出抱怨，直至2024年才提起诉讼。他还将2023年OpenAI董事会解雇CEO奥尔特曼的事件评价为&quot;业余之举&quot;，并透露自己曾介入帮助奥尔特曼复职。</p>
+      <div class="card-meta">
+        <span class="badge">IT之家（RSS）</span>
+        <span class="meta-time">2026-05-11T23:10:49.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://www.ithome.com/0/949/045.htm" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E7%BA%B3%E5%BE%B7%E6%8B%89%E5%87%BA%E5%BA%AD%E5%8F%8D%E5%87%BB%E9%A9%AC%E6%96%AF%E5%85%8B%E8%AF%89%E8%AE%BC%E6%A1%88%EF%BC%9A%E4%BB%96%E6%98%8E%E6%98%8E%E6%9C%89%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA%E5%8F%B7%EF%BC%8C%E4%BD%86%E4%BB%8E%E6%9C%AA%E6%8A%B1%E6%80%A8%E8%BF%87%E5%BE%AE%E8%BD%AF%E4%B8%8E%20OpenAI%20%E7%9A%84%E5%90%88%E4%BD%9C%0A%0A%E5%BE%AE%E8%BD%AFCEO%E7%BA%B3%E5%BE%B7%E6%8B%89%E5%9C%A8%E9%A9%AC%E6%96%AF%E5%85%8B%E8%AF%89OpenAI%E6%A1%88%E4%B8%AD%E4%BD%9C%E8%AF%81%EF%BC%8C%E5%8F%8D%E9%A9%B3%E4%BA%86%E9%A9%AC%E6%96%AF%E5%85%8B%E5%85%B3%E4%BA%8EOpenAI%E8%83%8C%E7%A6%BB%E9%9D%9E%E8%90%A5%E5%88%A9%E5%88%9D%E8%A1%B7%E7%9A%84%E6%8C%87%E6%8E%A7%E3%80%82%E4%BB%96%E5%87%BA%E7%A4%BA%E4%BA%86%E9%A9%AC%E6%96%AF%E5%85%8B2016%E5%B9%B4%E7%9A%84%E6%84%9F%E8%B0%A2%E9%82%AE%E4%BB%B6%EF%BC%8C%E8%AF%81%E6%98%8E%E5%85%B6%E5%BD%93%E6%97%B6%E5%AE%8C%E5%85%A8%E6%94%AF%E6%8C%81%E5%BE%AE%E8%BD%AF%E4%B8%8EOpenAI%E7%9A%84%E5%90%88%E4%BD%9C%EF%BC%8C%E4%B8%94%E5%BE%AE%E8%BD%AF%E4%B8%BA%E6%AD%A4%E6%89%BF%E5%8F%97%E4%BA%861500%E4%B8%87%E7%BE%8E%E5%85%83%E4%BA%8F%E6%8D%9F%E3%80%82%E7%BA%B3%E5%BE%B7%E6%8B%89%E5%BC%BA%E8%B0%83%EF%BC%8C%E5%8F%8C%E6%96%B9%E4%B8%80%E7%9B%B4%E4%BF%9D%E6%8C%81%E6%B2%9F%E9%80%9A%EF%BC%8C%E4%BD%86%E9%A9%AC%E6%96%AF%E5%85%8B%E5%9C%A8%E5%90%88%E4%BD%9C%E6%B7%B1%E5%8C%96%E6%9C%9F%E9%97%B4%E4%BB%8E%E6%9C%AA%E6%8F%90%E5%87%BA%E6%8A%B1%E6%80%A8%EF%BC%8C%E7%9B%B4%E8%87%B32024%E5%B9%B4%E6%89%8D%E6%8F%90%E8%B5%B7%E8%AF%89%E8%AE%BC%E3%80%82%E4%BB%96%E8%BF%98%E5%B0%862023%E5%B9%B4OpenAI%E8%91%A3%E4%BA%8B%E4%BC%9A%E8%A7%A3%E9%9B%87CEO%E5%A5%A5%E5%B0%94%E7%89%B9%E6%9B%BC%E7%9A%84%E4%BA%8B%E4%BB%B6%E8%AF%84%E4%BB%B7%E4%B8%BA%22%E4%B8%9A%E4%BD%99%E4%B9%8B%E4%B8%BE%22%EF%BC%8C%E5%B9%B6%E9%80%8F%E9%9C%B2%E8%87%AA%E5%B7%B1%E6%9B%BE%E4%BB%8B%E5%85%A5%E5%B8%AE%E5%8A%A9%E5%A5%A5%E5%B0%94%E7%89%B9%E6%9B%BC%E5%A4%8D%E8%81%8C%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">Anthropic估值五日激增2000亿美元，营收呈指数级增长</h3>
+      <p class="card-summary">人工智能公司Anthropic的市场隐含估值在短短五天内从1.2万亿美元飙升至1.4万亿美元，暴增2000亿美元。根据链上Pre-IPO交易数据，其估值自2025年10月以来已上涨1067%，近期24天内又录得40%的涨幅。这一惊人飙升的背景是公司年化收入的爆炸式增长：从2023年的1亿美元跃升至当前的450亿美元，仅过去12个月就增长了1400%。在Jupiter等链上平台交易的、由SPV风险敞口1：1支持的Pre-IPO工具，正实时反映市场对其IPO的估值预期。</p>
+      <div class="card-meta">
+        <span class="badge">X：Kim (@kimmonismus)</span>
+        <span class="meta-time">2026-05-11T18:54:51.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/kimmonismus/status/2053911732028907972" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=Anthropic%E4%BC%B0%E5%80%BC%E4%BA%94%E6%97%A5%E6%BF%80%E5%A2%9E2000%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%8C%E8%90%A5%E6%94%B6%E5%91%88%E6%8C%87%E6%95%B0%E7%BA%A7%E5%A2%9E%E9%95%BF%0A%0A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%85%AC%E5%8F%B8Anthropic%E7%9A%84%E5%B8%82%E5%9C%BA%E9%9A%90%E5%90%AB%E4%BC%B0%E5%80%BC%E5%9C%A8%E7%9F%AD%E7%9F%AD%E4%BA%94%E5%A4%A9%E5%86%85%E4%BB%8E1.2%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%E9%A3%99%E5%8D%87%E8%87%B31.4%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%8C%E6%9A%B4%E5%A2%9E2000%E4%BA%BF%E7%BE%8E%E5%85%83%E3%80%82%E6%A0%B9%E6%8D%AE%E9%93%BE%E4%B8%8APre-IPO%E4%BA%A4%E6%98%93%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%85%B6%E4%BC%B0%E5%80%BC%E8%87%AA2025%E5%B9%B410%E6%9C%88%E4%BB%A5%E6%9D%A5%E5%B7%B2%E4%B8%8A%E6%B6%A81067%25%EF%BC%8C%E8%BF%91%E6%9C%9F24%E5%A4%A9%E5%86%85%E5%8F%88%E5%BD%95%E5%BE%9740%25%E7%9A%84%E6%B6%A8%E5%B9%85%E3%80%82%E8%BF%99%E4%B8%80%E6%83%8A%E4%BA%BA%E9%A3%99%E5%8D%87%E7%9A%84%E8%83%8C%E6%99%AF%E6%98%AF%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%8C%96%E6%94%B6%E5%85%A5%E7%9A%84%E7%88%86%E7%82%B8%E5%BC%8F%E5%A2%9E%E9%95%BF%EF%BC%9A%E4%BB%8E2023%E5%B9%B4%E7%9A%841%E4%BA%BF%E7%BE%8E%E5%85%83%E8%B7%83%E5%8D%87%E8%87%B3%E5%BD%93%E5%89%8D%E7%9A%84450%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%8C%E4%BB%85%E8%BF%87%E5%8E%BB12%E4%B8%AA%E6%9C%88%E5%B0%B1%E5%A2%9E%E9%95%BF%E4%BA%861400%25%E3%80%82%E5%9C%A8Jupiter%E7%AD%89%E9%93%BE%E4%B8%8A%E5%B9%B3%E5%8F%B0%E4%BA%A4%E6%98%93%E7%9A%84%E3%80%81%E7%94%B1SPV%E9%A3%8E%E9%99%A9%E6%95%9E%E5%8F%A31%EF%BC%9A1%E6%94%AF%E6%8C%81%E7%9A%84Pre-IPO%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%AD%A3%E5%AE%9E%E6%97%B6%E5%8F%8D%E6%98%A0%E5%B8%82%E5%9C%BA%E5%AF%B9%E5%85%B6IPO%E7%9A%84%E4%BC%B0%E5%80%BC%E9%A2%84%E6%9C%9F%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">旧金山AI模型开发者盛会周三举行</h3>
+      <p class="card-summary">本周三在旧金山，与@vercel_dev、@AnthropicAI和@Kimi_Moonshot共同参与美国下一代模型盛会。
+
+每位参与者将获得$30 MiniMax API积分 + 大奖池。
+
+📅 5月13日 | 太平洋时间下午5：30 | 旧金山
+
+加入候补名单 → https：//luma.com/ttrgmjaf</p>
+      <div class="card-meta">
+        <span class="badge">X：MiniMax (@MiniMax_AI)</span>
+        <span class="meta-time">2026-05-11T18:06:53.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/MiniMax_AI/status/2053899661334003938" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E6%97%A7%E9%87%91%E5%B1%B1AI%E6%A8%A1%E5%9E%8B%E5%BC%80%E5%8F%91%E8%80%85%E7%9B%9B%E4%BC%9A%E5%91%A8%E4%B8%89%E4%B8%BE%E8%A1%8C%0A%0A%E6%9C%AC%E5%91%A8%E4%B8%89%E5%9C%A8%E6%97%A7%E9%87%91%E5%B1%B1%EF%BC%8C%E4%B8%8E%40vercel_dev%E3%80%81%40AnthropicAI%E5%92%8C%40Kimi_Moonshot%E5%85%B1%E5%90%8C%E5%8F%82%E4%B8%8E%E7%BE%8E%E5%9B%BD%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%A8%A1%E5%9E%8B%E7%9B%9B%E4%BC%9A%E3%80%82%0A%0A%E6%AF%8F%E4%BD%8D%E5%8F%82%E4%B8%8E%E8%80%85%E5%B0%86%E8%8E%B7%E5%BE%97%2430%20MiniMax%20API%E7%A7%AF%E5%88%86%20%2B%20%E5%A4%A7%E5%A5%96%E6%B1%A0%E3%80%82%0A%0A%F0%9F%93%85%205%E6%9C%8813%E6%97%A5%20%7C%20%E5%A4%AA%E5%B9%B3%E6%B4%8B%E6%97%B6%E9%97%B4%E4%B8%8B%E5%8D%885%EF%BC%9A30%20%7C%20%E6%97%A7%E9%87%91%E5%B1%B1%0A%0A%E5%8A%A0%E5%85%A5%E5%80%99%E8%A1%A5%E5%90%8D%E5%8D%95%20%E2%86%92%20https%EF%BC%9A%2F%2Fluma.com%2Fttrgmjaf" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">MiniMax组建&quot;10x团队&quot;，邀请领域专家共推AI跨越式发展</h3>
+      <p class="card-summary">MiniMax宣布成立&quot;10x团队&quot;，旨在邀请各领域深度专家共同推动人工智能实现十倍速进步。公司认为大模型已从演示阶段发展为真实生产力设施，而将顶尖领域人才引入模型研发能显著提升能力并产生实际影响。团队寻求的是坚信AI能加速自身领域发展的专家，他们将直接参与问题定义、评估构建及工作流设计，其成果将融入MiniMax模型并贡献于推动行业发展的开源基准。MiniMax提供全球竞争力的薪酬、股权及上海、北京、香港、旧金山、伦敦等多地办公选择，通过开放合作实现&quot;智能普及&quot;的使命。</p>
+      <div class="card-meta">
+        <span class="badge">X：MiniMax (@MiniMax_AI)</span>
+        <span class="meta-time">2026-05-11T15:30:01.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/MiniMax_AI/status/2053860184532066737" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=MiniMax%E7%BB%84%E5%BB%BA%2210x%E5%9B%A2%E9%98%9F%22%EF%BC%8C%E9%82%80%E8%AF%B7%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%85%B1%E6%8E%A8AI%E8%B7%A8%E8%B6%8A%E5%BC%8F%E5%8F%91%E5%B1%95%0A%0AMiniMax%E5%AE%A3%E5%B8%83%E6%88%90%E7%AB%8B%2210x%E5%9B%A2%E9%98%9F%22%EF%BC%8C%E6%97%A8%E5%9C%A8%E9%82%80%E8%AF%B7%E5%90%84%E9%A2%86%E5%9F%9F%E6%B7%B1%E5%BA%A6%E4%B8%93%E5%AE%B6%E5%85%B1%E5%90%8C%E6%8E%A8%E5%8A%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E7%8E%B0%E5%8D%81%E5%80%8D%E9%80%9F%E8%BF%9B%E6%AD%A5%E3%80%82%E5%85%AC%E5%8F%B8%E8%AE%A4%E4%B8%BA%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%B7%B2%E4%BB%8E%E6%BC%94%E7%A4%BA%E9%98%B6%E6%AE%B5%E5%8F%91%E5%B1%95%E4%B8%BA%E7%9C%9F%E5%AE%9E%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%AE%BE%E6%96%BD%EF%BC%8C%E8%80%8C%E5%B0%86%E9%A1%B6%E5%B0%96%E9%A2%86%E5%9F%9F%E4%BA%BA%E6%89%8D%E5%BC%95%E5%85%A5%E6%A8%A1%E5%9E%8B%E7%A0%94%E5%8F%91%E8%83%BD%E6%98%BE%E8%91%97%E6%8F%90%E5%8D%87%E8%83%BD%E5%8A%9B%E5%B9%B6%E4%BA%A7%E7%94%9F%E5%AE%9E%E9%99%85%E5%BD%B1%E5%93%8D%E3%80%82%E5%9B%A2%E9%98%9F%E5%AF%BB%E6%B1%82%E7%9A%84%E6%98%AF%E5%9D%9A%E4%BF%A1AI%E8%83%BD%E5%8A%A0%E9%80%9F%E8%87%AA%E8%BA%AB%E9%A2%86%E5%9F%9F%E5%8F%91%E5%B1%95%E7%9A%84%E4%B8%93%E5%AE%B6%EF%BC%8C%E4%BB%96%E4%BB%AC%E5%B0%86%E7%9B%B4%E6%8E%A5%E5%8F%82%E4%B8%8E%E9%97%AE%E9%A2%98%E5%AE%9A%E4%B9%89%E3%80%81%E8%AF%84%E4%BC%B0%E6%9E%84%E5%BB%BA%E5%8F%8A%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%AE%BE%E8%AE%A1%EF%BC%8C%E5%85%B6%E6%88%90%E6%9E%9C%E5%B0%86%E8%9E%8D%E5%85%A5MiniMax%E6%A8%A1%E5%9E%8B%E5%B9%B6%E8%B4%A1%E7%8C%AE%E4%BA%8E%E6%8E%A8%E5%8A%A8%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E7%9A%84%E5%BC%80%E6%BA%90%E5%9F%BA%E5%87%86%E3%80%82MiniMax%E6%8F%90%E4%BE%9B%E5%85%A8%E7%90%83%E7%AB%9E%E4%BA%89%E5%8A%9B%E7%9A%84%E8%96%AA%E9%85%AC%E3%80%81%E8%82%A1%E6%9D%83%E5%8F%8A%E4%B8%8A%E6%B5%B7%E3%80%81%E5%8C%97%E4%BA%AC%E3%80%81%E9%A6%99%E6%B8%AF%E3%80%81%E6%97%A7%E9%87%91%E5%B1%B1%E3%80%81%E4%BC%A6%E6%95%A6%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%8A%9E%E5%85%AC%E9%80%89%E6%8B%A9%EF%BC%8C%E9%80%9A%E8%BF%87%E5%BC%80%E6%94%BE%E5%90%88%E4%BD%9C%E5%AE%9E%E7%8E%B0%22%E6%99%BA%E8%83%BD%E6%99%AE%E5%8F%8A%22%E7%9A%84%E4%BD%BF%E5%91%BD%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">OpenAI 推出 DeployCo 以协助企业围绕智能构建业务</h3>
+      <p class="card-summary">OpenAI 正式推出全新企业部署公司 DeployCo，旨在帮助各类组织将前沿人工智能技术投入实际生产，并转化为可衡量的商业影响。该举措标志着 OpenAI 进一步深入企业服务领域，专注于解决 AI 模型从测试到规模化部署的落地挑战，助力企业通过定制化部署方案提升运营效率与业务成果。</p>
+      <div class="card-meta">
+        <span class="badge">OpenAI：官网动态（RSS · 排除企业/客户案例）</span>
+        <span class="meta-time">2026-05-11T06:00:00.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://openai.com/index/openai-launches-the-deployment-company" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=OpenAI%20%E6%8E%A8%E5%87%BA%20DeployCo%20%E4%BB%A5%E5%8D%8F%E5%8A%A9%E4%BC%81%E4%B8%9A%E5%9B%B4%E7%BB%95%E6%99%BA%E8%83%BD%E6%9E%84%E5%BB%BA%E4%B8%9A%E5%8A%A1%0A%0AOpenAI%20%E6%AD%A3%E5%BC%8F%E6%8E%A8%E5%87%BA%E5%85%A8%E6%96%B0%E4%BC%81%E4%B8%9A%E9%83%A8%E7%BD%B2%E5%85%AC%E5%8F%B8%20DeployCo%EF%BC%8C%E6%97%A8%E5%9C%A8%E5%B8%AE%E5%8A%A9%E5%90%84%E7%B1%BB%E7%BB%84%E7%BB%87%E5%B0%86%E5%89%8D%E6%B2%BF%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8A%80%E6%9C%AF%E6%8A%95%E5%85%A5%E5%AE%9E%E9%99%85%E7%94%9F%E4%BA%A7%EF%BC%8C%E5%B9%B6%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%8F%AF%E8%A1%A1%E9%87%8F%E7%9A%84%E5%95%86%E4%B8%9A%E5%BD%B1%E5%93%8D%E3%80%82%E8%AF%A5%E4%B8%BE%E6%8E%AA%E6%A0%87%E5%BF%97%E7%9D%80%20OpenAI%20%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%B7%B1%E5%85%A5%E4%BC%81%E4%B8%9A%E6%9C%8D%E5%8A%A1%E9%A2%86%E5%9F%9F%EF%BC%8C%E4%B8%93%E6%B3%A8%E4%BA%8E%E8%A7%A3%E5%86%B3%20AI%20%E6%A8%A1%E5%9E%8B%E4%BB%8E%E6%B5%8B%E8%AF%95%E5%88%B0%E8%A7%84%E6%A8%A1%E5%8C%96%E9%83%A8%E7%BD%B2%E7%9A%84%E8%90%BD%E5%9C%B0%E6%8C%91%E6%88%98%EF%BC%8C%E5%8A%A9%E5%8A%9B%E4%BC%81%E4%B8%9A%E9%80%9A%E8%BF%87%E5%AE%9A%E5%88%B6%E5%8C%96%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88%E6%8F%90%E5%8D%87%E8%BF%90%E8%90%A5%E6%95%88%E7%8E%87%E4%B8%8E%E4%B8%9A%E5%8A%A1%E6%88%90%E6%9E%9C%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  </div>
+    </section>
+
+    <section id="papers" class="block">
+      <h2><span class="section-icon">📄</span> Research highlights</h2>
+      <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
+      <div class="cards">
+    <article class="card">
+      <h3 class="card-title">FrontierMath评测发现致命错误，将更新修正后分数</h3>
+      <p class="card-summary">我们正在对FrontierMath的Tiers 1-4进行AI辅助审查。
+这已标记出约三分之一题目存在致命错误，
+且我们相信大多数标记是有效的。
+在完成全面人工审核后，
+我们将在修正的数据集上发布更新后的分数。</p>
+      <div class="card-meta">
+        <span class="badge">X：Epoch AI (@EpochAIResearch)</span>
+        <span class="meta-time">2026-05-12T00:27:27.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/EpochAIResearch/status/2053995435870892048" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=FrontierMath%E8%AF%84%E6%B5%8B%E5%8F%91%E7%8E%B0%E8%87%B4%E5%91%BD%E9%94%99%E8%AF%AF%EF%BC%8C%E5%B0%86%E6%9B%B4%E6%96%B0%E4%BF%AE%E6%AD%A3%E5%90%8E%E5%88%86%E6%95%B0%0A%0A%E6%88%91%E4%BB%AC%E6%AD%A3%E5%9C%A8%E5%AF%B9FrontierMath%E7%9A%84Tiers%201-4%E8%BF%9B%E8%A1%8CAI%E8%BE%85%E5%8A%A9%E5%AE%A1%E6%9F%A5%E3%80%82%0A%E8%BF%99%E5%B7%B2%E6%A0%87%E8%AE%B0%E5%87%BA%E7%BA%A6%E4%B8%89%E5%88%86%E4%B9%8B%E4%B8%80%E9%A2%98%E7%9B%AE%E5%AD%98%E5%9C%A8%E8%87%B4%E5%91%BD%E9%94%99%E8%AF%AF%EF%BC%8C%0A%E4%B8%94%E6%88%91%E4%BB%AC%E7%9B%B8%E4%BF%A1%E5%A4%A7%E5%A4%9A%E6%95%B0%E6%A0%87%E8%AE%B0%E6%98%AF%E6%9C%89%E6%95%88%E7%9A%84%E3%80%82%0A%E5%9C%A8%E5%AE%8C%E6%88%90%E5%85%A8%E9%9D%A2%E4%BA%BA%E5%B7%A5%E5%AE%A1%E6%A0%B8%E5%90%8E%EF%BC%8C%0A%E6%88%91%E4%BB%AC%E5%B0%86%E5%9C%A8%E4%BF%AE%E6%AD%A3%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8A%E5%8F%91%E5%B8%83%E6%9B%B4%E6%96%B0%E5%90%8E%E7%9A%84%E5%88%86%E6%95%B0%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">智能体执行能力强但优化用户立场不足</h3>
+      <p class="card-summary">通过SocialReasoning Bench测试发现，各模型呈现稳定模式--智能体能够胜任执行任务，但即便在明确要求优化用户利益的指令下，仍无法持续改善用户处境。https：//msft.it/6011vPOLF</p>
+      <div class="card-meta">
+        <span class="badge">X：Microsoft Research (@MSFTResearch)</span>
+        <span class="meta-time">2026-05-11T17:30:24.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/MSFTResearch/status/2053890478165147693" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E6%99%BA%E8%83%BD%E4%BD%93%E6%89%A7%E8%A1%8C%E8%83%BD%E5%8A%9B%E5%BC%BA%E4%BD%86%E4%BC%98%E5%8C%96%E7%94%A8%E6%88%B7%E7%AB%8B%E5%9C%BA%E4%B8%8D%E8%B6%B3%0A%0A%E9%80%9A%E8%BF%87SocialReasoning%20Bench%E6%B5%8B%E8%AF%95%E5%8F%91%E7%8E%B0%EF%BC%8C%E5%90%84%E6%A8%A1%E5%9E%8B%E5%91%88%E7%8E%B0%E7%A8%B3%E5%AE%9A%E6%A8%A1%E5%BC%8F--%E6%99%BA%E8%83%BD%E4%BD%93%E8%83%BD%E5%A4%9F%E8%83%9C%E4%BB%BB%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E4%BD%86%E5%8D%B3%E4%BE%BF%E5%9C%A8%E6%98%8E%E7%A1%AE%E8%A6%81%E6%B1%82%E4%BC%98%E5%8C%96%E7%94%A8%E6%88%B7%E5%88%A9%E7%9B%8A%E7%9A%84%E6%8C%87%E4%BB%A4%E4%B8%8B%EF%BC%8C%E4%BB%8D%E6%97%A0%E6%B3%95%E6%8C%81%E7%BB%AD%E6%94%B9%E5%96%84%E7%94%A8%E6%88%B7%E5%A4%84%E5%A2%83%E3%80%82https%EF%BC%9A%2F%2Fmsft.it%2F6011vPOLF" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">小块有大智慧？这下真成真了！</h3>
+      <p class="card-summary">一项新研究证明，一个通过强化学习训练的7B语言模型能够有效指挥GPT-5、Claude Sonnet 4和Gemini 2.5 Pro等前沿大模型。该模型通过编写自然语言子任务、分配给不同大模型执行，并精确指定上下文信息，在GPQA Diamond、LiveCodeBench和AIME25等硬核基准测试中，其性能全面超越了单个前沿模型。该系统平均每个问题仅需调用约三次大模型，比手动设计的多代理流程更高效。该工作提供了关键证据，表明目前商业AI产品中依赖人工的提示工程和流程设计，完全可以仅通过奖励信号进行端到端学习。这揭示了AI发展的新方向：智能的差距可能不在于模型规模，而在于协调与指挥的能力。</p>
+      <div class="card-meta">
+        <span class="badge">X：Berry Xia (@berryxia)</span>
+        <span class="meta-time">2026-05-11T11:07:04.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://x.com/berryxia/status/2053794010582683759" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E5%B0%8F%E5%9D%97%E6%9C%89%E5%A4%A7%E6%99%BA%E6%85%A7%EF%BC%9F%E8%BF%99%E4%B8%8B%E7%9C%9F%E6%88%90%E7%9C%9F%E4%BA%86%EF%BC%81%0A%0A%E4%B8%80%E9%A1%B9%E6%96%B0%E7%A0%94%E7%A9%B6%E8%AF%81%E6%98%8E%EF%BC%8C%E4%B8%80%E4%B8%AA%E9%80%9A%E8%BF%87%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E7%9A%847B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%A4%9F%E6%9C%89%E6%95%88%E6%8C%87%E6%8C%A5GPT-5%E3%80%81Claude%20Sonnet%204%E5%92%8CGemini%202.5%20Pro%E7%AD%89%E5%89%8D%E6%B2%BF%E5%A4%A7%E6%A8%A1%E5%9E%8B%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E9%80%9A%E8%BF%87%E7%BC%96%E5%86%99%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%AD%90%E4%BB%BB%E5%8A%A1%E3%80%81%E5%88%86%E9%85%8D%E7%BB%99%E4%B8%8D%E5%90%8C%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%B9%B6%E7%B2%BE%E7%A1%AE%E6%8C%87%E5%AE%9A%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%9C%A8GPQA%20Diamond%E3%80%81LiveCodeBench%E5%92%8CAIME25%E7%AD%89%E7%A1%AC%E6%A0%B8%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E4%B8%AD%EF%BC%8C%E5%85%B6%E6%80%A7%E8%83%BD%E5%85%A8%E9%9D%A2%E8%B6%85%E8%B6%8A%E4%BA%86%E5%8D%95%E4%B8%AA%E5%89%8D%E6%B2%BF%E6%A8%A1%E5%9E%8B%E3%80%82%E8%AF%A5%E7%B3%BB%E7%BB%9F%E5%B9%B3%E5%9D%87%E6%AF%8F%E4%B8%AA%E9%97%AE%E9%A2%98%E4%BB%85%E9%9C%80%E8%B0%83%E7%94%A8%E7%BA%A6%E4%B8%89%E6%AC%A1%E5%A4%A7%E6%A8%A1%E5%9E%8B%EF%BC%8C%E6%AF%94%E6%89%8B%E5%8A%A8%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%A4%9A%E4%BB%A3%E7%90%86%E6%B5%81%E7%A8%8B%E6%9B%B4%E9%AB%98%E6%95%88%E3%80%82%E8%AF%A5%E5%B7%A5%E4%BD%9C%E6%8F%90%E4%BE%9B%E4%BA%86%E5%85%B3%E9%94%AE%E8%AF%81%E6%8D%AE%EF%BC%8C%E8%A1%A8%E6%98%8E%E7%9B%AE%E5%89%8D%E5%95%86%E4%B8%9AAI%E4%BA%A7%E5%93%81%E4%B8%AD%E4%BE%9D%E8%B5%96%E4%BA%BA%E5%B7%A5%E7%9A%84%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%92%8C%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1%EF%BC%8C%E5%AE%8C%E5%85%A8%E5%8F%AF%E4%BB%A5%E4%BB%85%E9%80%9A%E8%BF%87%E5%A5%96%E5%8A%B1%E4%BF%A1%E5%8F%B7%E8%BF%9B%E8%A1%8C%E7%AB%AF%E5%88%B0%E7%AB%AF%E5%AD%A6%E4%B9%A0%E3%80%82%E8%BF%99%E6%8F%AD%E7%A4%BA%E4%BA%86AI%E5%8F%91%E5%B1%95%E7%9A%84%E6%96%B0%E6%96%B9%E5%90%91%EF%BC%9A%E6%99%BA%E8%83%BD%E7%9A%84%E5%B7%AE%E8%B7%9D%E5%8F%AF%E8%83%BD%E4%B8%8D%E5%9C%A8%E4%BA%8E%E6%A8%A1%E5%9E%8B%E8%A7%84%E6%A8%A1%EF%BC%8C%E8%80%8C%E5%9C%A8%E4%BA%8E%E5%8D%8F%E8%B0%83%E4%B8%8E%E6%8C%87%E6%8C%A5%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">SimWorld Studio：基于进化编码智能体的具身智能学习环境自动生成平台</h3>
+      <p class="card-summary">SimWorld Studio是一个基于Unreal Engine 5的开源平台，旨在为具身智能体学习自动生成动态演化的3D交互环境。其核心是工具增强的编码智能体SimCoder，它能根据指令编写引擎代码来构建物理真实的世界，并通过验证反馈自我进化，修正环境并积累可复用技能。生成的环境以标准化接口导出供智能体训练。平台还实现了环境生成与智能体学习的协同进化：根据智能体表现反馈，SimCoder在其能力边界附近生成自适应课程，使环境难度随智能体进步而提升。在具身导航案例中，该方案显著提升了智能体的泛化性能。</p>
+      <div class="card-meta">
+        <span class="badge">HuggingFace Daily Papers（社区热门论文）</span>
+        <span class="meta-time">2026-05-10T00:00:00.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://arxiv.org/abs/2605.09423" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=SimWorld%20Studio%EF%BC%9A%E5%9F%BA%E4%BA%8E%E8%BF%9B%E5%8C%96%E7%BC%96%E7%A0%81%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B9%B3%E5%8F%B0%0A%0ASimWorld%20Studio%E6%98%AF%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8EUnreal%20Engine%205%E7%9A%84%E5%BC%80%E6%BA%90%E5%B9%B3%E5%8F%B0%EF%BC%8C%E6%97%A8%E5%9C%A8%E4%B8%BA%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E4%BD%93%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%8A%A8%E6%80%81%E6%BC%94%E5%8C%96%E7%9A%843D%E4%BA%A4%E4%BA%92%E7%8E%AF%E5%A2%83%E3%80%82%E5%85%B6%E6%A0%B8%E5%BF%83%E6%98%AF%E5%B7%A5%E5%85%B7%E5%A2%9E%E5%BC%BA%E7%9A%84%E7%BC%96%E7%A0%81%E6%99%BA%E8%83%BD%E4%BD%93SimCoder%EF%BC%8C%E5%AE%83%E8%83%BD%E6%A0%B9%E6%8D%AE%E6%8C%87%E4%BB%A4%E7%BC%96%E5%86%99%E5%BC%95%E6%93%8E%E4%BB%A3%E7%A0%81%E6%9D%A5%E6%9E%84%E5%BB%BA%E7%89%A9%E7%90%86%E7%9C%9F%E5%AE%9E%E7%9A%84%E4%B8%96%E7%95%8C%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E9%AA%8C%E8%AF%81%E5%8F%8D%E9%A6%88%E8%87%AA%E6%88%91%E8%BF%9B%E5%8C%96%EF%BC%8C%E4%BF%AE%E6%AD%A3%E7%8E%AF%E5%A2%83%E5%B9%B6%E7%A7%AF%E7%B4%AF%E5%8F%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E8%83%BD%E3%80%82%E7%94%9F%E6%88%90%E7%9A%84%E7%8E%AF%E5%A2%83%E4%BB%A5%E6%A0%87%E5%87%86%E5%8C%96%E6%8E%A5%E5%8F%A3%E5%AF%BC%E5%87%BA%E4%BE%9B%E6%99%BA%E8%83%BD%E4%BD%93%E8%AE%AD%E7%BB%83%E3%80%82%E5%B9%B3%E5%8F%B0%E8%BF%98%E5%AE%9E%E7%8E%B0%E4%BA%86%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90%E4%B8%8E%E6%99%BA%E8%83%BD%E4%BD%93%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%8F%E5%90%8C%E8%BF%9B%E5%8C%96%EF%BC%9A%E6%A0%B9%E6%8D%AE%E6%99%BA%E8%83%BD%E4%BD%93%E8%A1%A8%E7%8E%B0%E5%8F%8D%E9%A6%88%EF%BC%8CSimCoder%E5%9C%A8%E5%85%B6%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C%E9%99%84%E8%BF%91%E7%94%9F%E6%88%90%E8%87%AA%E9%80%82%E5%BA%94%E8%AF%BE%E7%A8%8B%EF%BC%8C%E4%BD%BF%E7%8E%AF%E5%A2%83%E9%9A%BE%E5%BA%A6%E9%9A%8F%E6%99%BA%E8%83%BD%E4%BD%93%E8%BF%9B%E6%AD%A5%E8%80%8C%E6%8F%90%E5%8D%87%E3%80%82%E5%9C%A8%E5%85%B7%E8%BA%AB%E5%AF%BC%E8%88%AA%E6%A1%88%E4%BE%8B%E4%B8%AD%EF%BC%8C%E8%AF%A5%E6%96%B9%E6%A1%88%E6%98%BE%E8%91%97%E6%8F%90%E5%8D%87%E4%BA%86%E6%99%BA%E8%83%BD%E4%BD%93%E7%9A%84%E6%B3%9B%E5%8C%96%E6%80%A7%E8%83%BD%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">OncoAgent：一个用于隐私保护肿瘤临床决策支持的双层多智能体框架</h3>
+      <p class="card-summary">研究团队发布了开源肿瘤临床决策支持系统OncoAgent。该系统采用双层多智能体框架，结合LangGraph拓扑与四阶段Corrective RAG流程，检索超过70份权威临床指南。系统根据查询复杂度，将任务路由至9B参数的速度优化模型或27B参数的深度推理模型，两者均通过QLoRA在AMD MI300X硬件上使用包含26万余病例的数据集进行微调。系统强制执行严格的零受保护健康信息政策，并通过三层反射安全验证器确保安全，支持完全本地部署以保护患者数据主权。</p>
+      <div class="card-meta">
+        <span class="badge">Hugging Face：Blog（RSS）</span>
+        <span class="meta-time">2026-05-09T18:09:28.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=OncoAgent%EF%BC%9A%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4%E8%82%BF%E7%98%A4%E4%B8%B4%E5%BA%8A%E5%86%B3%E7%AD%96%E6%94%AF%E6%8C%81%E7%9A%84%E5%8F%8C%E5%B1%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E6%A1%86%E6%9E%B6%0A%0A%E7%A0%94%E7%A9%B6%E5%9B%A2%E9%98%9F%E5%8F%91%E5%B8%83%E4%BA%86%E5%BC%80%E6%BA%90%E8%82%BF%E7%98%A4%E4%B8%B4%E5%BA%8A%E5%86%B3%E7%AD%96%E6%94%AF%E6%8C%81%E7%B3%BB%E7%BB%9FOncoAgent%E3%80%82%E8%AF%A5%E7%B3%BB%E7%BB%9F%E9%87%87%E7%94%A8%E5%8F%8C%E5%B1%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E6%A1%86%E6%9E%B6%EF%BC%8C%E7%BB%93%E5%90%88LangGraph%E6%8B%93%E6%89%91%E4%B8%8E%E5%9B%9B%E9%98%B6%E6%AE%B5Corrective%20RAG%E6%B5%81%E7%A8%8B%EF%BC%8C%E6%A3%80%E7%B4%A2%E8%B6%85%E8%BF%8770%E4%BB%BD%E6%9D%83%E5%A8%81%E4%B8%B4%E5%BA%8A%E6%8C%87%E5%8D%97%E3%80%82%E7%B3%BB%E7%BB%9F%E6%A0%B9%E6%8D%AE%E6%9F%A5%E8%AF%A2%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%8C%E5%B0%86%E4%BB%BB%E5%8A%A1%E8%B7%AF%E7%94%B1%E8%87%B39B%E5%8F%82%E6%95%B0%E7%9A%84%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96%E6%A8%A1%E5%9E%8B%E6%88%9627B%E5%8F%82%E6%95%B0%E7%9A%84%E6%B7%B1%E5%BA%A6%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B%EF%BC%8C%E4%B8%A4%E8%80%85%E5%9D%87%E9%80%9A%E8%BF%87QLoRA%E5%9C%A8AMD%20MI300X%E7%A1%AC%E4%BB%B6%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%8C%85%E5%90%AB26%E4%B8%87%E4%BD%99%E7%97%85%E4%BE%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BF%9B%E8%A1%8C%E5%BE%AE%E8%B0%83%E3%80%82%E7%B3%BB%E7%BB%9F%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C%E4%B8%A5%E6%A0%BC%E7%9A%84%E9%9B%B6%E5%8F%97%E4%BF%9D%E6%8A%A4%E5%81%A5%E5%BA%B7%E4%BF%A1%E6%81%AF%E6%94%BF%E7%AD%96%EF%BC%8C%E5%B9%B6%E9%80%9A%E8%BF%87%E4%B8%89%E5%B1%82%E5%8F%8D%E5%B0%84%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81%E5%99%A8%E7%A1%AE%E4%BF%9D%E5%AE%89%E5%85%A8%EF%BC%8C%E6%94%AF%E6%8C%81%E5%AE%8C%E5%85%A8%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E4%BB%A5%E4%BF%9D%E6%8A%A4%E6%82%A3%E8%80%85%E6%95%B0%E6%8D%AE%E4%B8%BB%E6%9D%83%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">菲尔兹奖得主称 ChatGPT 5.5 Pro 在无人帮助下两小时内完成&quot;博士级&quot;数学研究</h3>
+      <p class="card-summary">菲尔兹奖得主蒂莫西·高尔斯让 ChatGPT 5.5 Pro 尝试解决数论中的开放性问题。该模型在不到一小时内，将一个问题中的指数界限改进为多项式界限。一位参与的 MIT 研究员认为其核心想法&quot;完全具有原创性&quot;。高尔斯总结指出，未来数学贡献的门槛将变为证明某些是大语言模型无法完成的工作。</p>
+      <div class="card-meta">
+        <span class="badge">The Decoder：AI News（RSS）</span>
+        <span class="meta-time">2026-05-09T14:32:14.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://the-decoder.com/fields-medalist-says-chatgpt-5-5-pro-delivered-phd-level-math-research-in-under-two-hours-with-zero-human-help" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E8%8F%B2%E5%B0%94%E5%85%B9%E5%A5%96%E5%BE%97%E4%B8%BB%E7%A7%B0%20ChatGPT%205.5%20Pro%20%E5%9C%A8%E6%97%A0%E4%BA%BA%E5%B8%AE%E5%8A%A9%E4%B8%8B%E4%B8%A4%E5%B0%8F%E6%97%B6%E5%86%85%E5%AE%8C%E6%88%90%22%E5%8D%9A%E5%A3%AB%E7%BA%A7%22%E6%95%B0%E5%AD%A6%E7%A0%94%E7%A9%B6%0A%0A%E8%8F%B2%E5%B0%94%E5%85%B9%E5%A5%96%E5%BE%97%E4%B8%BB%E8%92%82%E8%8E%AB%E8%A5%BF%C2%B7%E9%AB%98%E5%B0%94%E6%96%AF%E8%AE%A9%20ChatGPT%205.5%20Pro%20%E5%B0%9D%E8%AF%95%E8%A7%A3%E5%86%B3%E6%95%B0%E8%AE%BA%E4%B8%AD%E7%9A%84%E5%BC%80%E6%94%BE%E6%80%A7%E9%97%AE%E9%A2%98%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E5%9C%A8%E4%B8%8D%E5%88%B0%E4%B8%80%E5%B0%8F%E6%97%B6%E5%86%85%EF%BC%8C%E5%B0%86%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E4%B8%AD%E7%9A%84%E6%8C%87%E6%95%B0%E7%95%8C%E9%99%90%E6%94%B9%E8%BF%9B%E4%B8%BA%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%95%8C%E9%99%90%E3%80%82%E4%B8%80%E4%BD%8D%E5%8F%82%E4%B8%8E%E7%9A%84%20MIT%20%E7%A0%94%E7%A9%B6%E5%91%98%E8%AE%A4%E4%B8%BA%E5%85%B6%E6%A0%B8%E5%BF%83%E6%83%B3%E6%B3%95%22%E5%AE%8C%E5%85%A8%E5%85%B7%E6%9C%89%E5%8E%9F%E5%88%9B%E6%80%A7%22%E3%80%82%E9%AB%98%E5%B0%94%E6%96%AF%E6%80%BB%E7%BB%93%E6%8C%87%E5%87%BA%EF%BC%8C%E6%9C%AA%E6%9D%A5%E6%95%B0%E5%AD%A6%E8%B4%A1%E7%8C%AE%E7%9A%84%E9%97%A8%E6%A7%9B%E5%B0%86%E5%8F%98%E4%B8%BA%E8%AF%81%E6%98%8E%E6%9F%90%E4%BA%9B%E6%98%AF%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%97%A0%E6%B3%95%E5%AE%8C%E6%88%90%E7%9A%84%E5%B7%A5%E4%BD%9C%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">教克劳德&quot;为什么&quot;</h3>
+      <p class="card-summary">Anthropic公司发布了Claude模型的新研究&quot;Teaching Claude Why&quot;。该研究通过让模型学习解释自身推理过程中的&quot;为什么&quot;，显著提升了其推理能力和输出结果的准确性。实验表明，经过此项训练后，模型在多项基准测试中的表现得到改善，其推理步骤的透明度和逻辑连贯性增强。这项技术旨在推动AI向更可解释、更可靠的方向发展。</p>
+      <div class="card-meta">
+        <span class="badge">Hacker News 热门（buzzing.cc 中文翻译）</span>
+        <span class="meta-time">2026-05-09T02:57:09.705Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://www.anthropic.com/research/teaching-claude-why" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=%E6%95%99%E5%85%8B%E5%8A%B3%E5%BE%B7%22%E4%B8%BA%E4%BB%80%E4%B9%88%22%0A%0AAnthropic%E5%85%AC%E5%8F%B8%E5%8F%91%E5%B8%83%E4%BA%86Claude%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%96%B0%E7%A0%94%E7%A9%B6%22Teaching%20Claude%20Why%22%E3%80%82%E8%AF%A5%E7%A0%94%E7%A9%B6%E9%80%9A%E8%BF%87%E8%AE%A9%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0%E8%A7%A3%E9%87%8A%E8%87%AA%E8%BA%AB%E6%8E%A8%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%22%E4%B8%BA%E4%BB%80%E4%B9%88%22%EF%BC%8C%E6%98%BE%E8%91%97%E6%8F%90%E5%8D%87%E4%BA%86%E5%85%B6%E6%8E%A8%E7%90%86%E8%83%BD%E5%8A%9B%E5%92%8C%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7%E3%80%82%E5%AE%9E%E9%AA%8C%E8%A1%A8%E6%98%8E%EF%BC%8C%E7%BB%8F%E8%BF%87%E6%AD%A4%E9%A1%B9%E8%AE%AD%E7%BB%83%E5%90%8E%EF%BC%8C%E6%A8%A1%E5%9E%8B%E5%9C%A8%E5%A4%9A%E9%A1%B9%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E8%A1%A8%E7%8E%B0%E5%BE%97%E5%88%B0%E6%94%B9%E5%96%84%EF%BC%8C%E5%85%B6%E6%8E%A8%E7%90%86%E6%AD%A5%E9%AA%A4%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6%E5%92%8C%E9%80%BB%E8%BE%91%E8%BF%9E%E8%B4%AF%E6%80%A7%E5%A2%9E%E5%BC%BA%E3%80%82%E8%BF%99%E9%A1%B9%E6%8A%80%E6%9C%AF%E6%97%A8%E5%9C%A8%E6%8E%A8%E5%8A%A8AI%E5%90%91%E6%9B%B4%E5%8F%AF%E8%A7%A3%E9%87%8A%E3%80%81%E6%9B%B4%E5%8F%AF%E9%9D%A0%E7%9A%84%E6%96%B9%E5%90%91%E5%8F%91%E5%B1%95%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  
+    <article class="card">
+      <h3 class="card-title">AgentForesight：面向多智能体系统早期故障预测的在线审计框架</h3>
+      <p class="card-summary">针对LLM多智能体系统在长程任务中因关键错误扩散导致整体失败的问题，本研究提出在线审计框架AgentForesight。该框架能在任务执行过程中实时观察轨迹前缀，并在最早的关键错误处发出警报。研究构建了AFTraj-2K轨迹语料库，并基于此开发了AgentForesight-7B模型。该模型采用由粗到细的强化学习策略训练，在AFTraj-2K和外部基准测试中，其性能超越GPT-4.1等领先专有模型，实现了高达+19.9%的性能提升，并将步骤定位误差降低3倍，从而将故障处理从事后归因转向部署时干预。</p>
+      <div class="card-meta">
+        <span class="badge">HuggingFace Daily Papers（社区热门论文）</span>
+        <span class="meta-time">2026-05-09T00:00:00.000Z</span>
+      </div>
+      <div class="card-actions">
+        <a class="primary-link" href="https://arxiv.org/abs/2605.08715" target="_blank" rel="noopener">Read original ↗</a>
+        <a class="secondary-link" href="https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=AgentForesight%EF%BC%9A%E9%9D%A2%E5%90%91%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E6%97%A9%E6%9C%9F%E6%95%85%E9%9A%9C%E9%A2%84%E6%B5%8B%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%AE%A1%E8%AE%A1%E6%A1%86%E6%9E%B6%0A%0A%E9%92%88%E5%AF%B9LLM%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E5%9C%A8%E9%95%BF%E7%A8%8B%E4%BB%BB%E5%8A%A1%E4%B8%AD%E5%9B%A0%E5%85%B3%E9%94%AE%E9%94%99%E8%AF%AF%E6%89%A9%E6%95%A3%E5%AF%BC%E8%87%B4%E6%95%B4%E4%BD%93%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%8C%E6%9C%AC%E7%A0%94%E7%A9%B6%E6%8F%90%E5%87%BA%E5%9C%A8%E7%BA%BF%E5%AE%A1%E8%AE%A1%E6%A1%86%E6%9E%B6AgentForesight%E3%80%82%E8%AF%A5%E6%A1%86%E6%9E%B6%E8%83%BD%E5%9C%A8%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%AE%9E%E6%97%B6%E8%A7%82%E5%AF%9F%E8%BD%A8%E8%BF%B9%E5%89%8D%E7%BC%80%EF%BC%8C%E5%B9%B6%E5%9C%A8%E6%9C%80%E6%97%A9%E7%9A%84%E5%85%B3%E9%94%AE%E9%94%99%E8%AF%AF%E5%A4%84%E5%8F%91%E5%87%BA%E8%AD%A6%E6%8A%A5%E3%80%82%E7%A0%94%E7%A9%B6%E6%9E%84%E5%BB%BA%E4%BA%86AFTraj-2K%E8%BD%A8%E8%BF%B9%E8%AF%AD%E6%96%99%E5%BA%93%EF%BC%8C%E5%B9%B6%E5%9F%BA%E4%BA%8E%E6%AD%A4%E5%BC%80%E5%8F%91%E4%BA%86AgentForesight-7B%E6%A8%A1%E5%9E%8B%E3%80%82%E8%AF%A5%E6%A8%A1%E5%9E%8B%E9%87%87%E7%94%A8%E7%94%B1%E7%B2%97%E5%88%B0%E7%BB%86%E7%9A%84%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AD%96%E7%95%A5%E8%AE%AD%E7%BB%83%EF%BC%8C%E5%9C%A8AFTraj-2K%E5%92%8C%E5%A4%96%E9%83%A8%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E4%B8%AD%EF%BC%8C%E5%85%B6%E6%80%A7%E8%83%BD%E8%B6%85%E8%B6%8AGPT-4.1%E7%AD%89%E9%A2%86%E5%85%88%E4%B8%93%E6%9C%89%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BA%86%E9%AB%98%E8%BE%BE%2B19.9%25%E7%9A%84%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%EF%BC%8C%E5%B9%B6%E5%B0%86%E6%AD%A5%E9%AA%A4%E5%AE%9A%E4%BD%8D%E8%AF%AF%E5%B7%AE%E9%99%8D%E4%BD%8E3%E5%80%8D%EF%BC%8C%E4%BB%8E%E8%80%8C%E5%B0%86%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86%E4%BB%8E%E4%BA%8B%E5%90%8E%E5%BD%92%E5%9B%A0%E8%BD%AC%E5%90%91%E9%83%A8%E7%BD%B2%E6%97%B6%E5%B9%B2%E9%A2%84%E3%80%82" target="_blank" rel="noopener">Translate EN ↗</a>
+      </div>
+    </article>
+  </div>
+    </section>
+
+    <section id="hn" class="block">
+      <h2><span class="section-icon">🔥</span> Hacker News — what's hitting</h2>
+      <p class="section-sub">Top AI-relevant front-page stories (AI / LLM / agent items surfaced first).</p>
+      <ol class="hn-list">
+    <li class="hn-item">
+      <a class="hn-title" href="https://github.com/cactus-compute/needle" target="_blank" rel="noopener">Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
+      <div class="hn-meta">
+        <span>▲ 126</span>
+        <span>·</span>
+        <span>39 comments</span>
+        <span>· by HenryNdubuaku</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111896" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://deepmind.google/blog/ai-pointer/" target="_blank" rel="noopener">Reimagining the mouse pointer for the AI era</a>
+      <div class="hn-meta">
+        <span>▲ 66</span>
+        <span>·</span>
+        <span>56 comments</span>
+        <span>· by devhouse</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111581" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://voker.ai" target="_blank" rel="noopener">Launch HN: Voker (YC S24) – Analytics for AI Agents</a>
+      <div class="hn-meta">
+        <span>▲ 30</span>
+        <span>·</span>
+        <span>13 comments</span>
+        <span>· by ttpost</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109962" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://github.com/statewright/statewright" target="_blank" rel="noopener">Show HN: Statewright – Visual state machines that make AI agents reliable</a>
+      <div class="hn-meta">
+        <span>▲ 37</span>
+        <span>·</span>
+        <span>9 comments</span>
+        <span>· by azurewraith</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48108778" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://googlebook.google/" target="_blank" rel="noopener">Googlebook</a>
+      <div class="hn-meta">
+        <span>▲ 382</span>
+        <span>·</span>
+        <span>591 comments</span>
+        <span>· by tambourine_man</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111545" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html" target="_blank" rel="noopener">CERT is releasing six CVEs for serious security vulnerabilities in dnsmasq</a>
+      <div class="hn-meta">
+        <span>▲ 144</span>
+        <span>·</span>
+        <span>44 comments</span>
+        <span>· by chizhik-pyzhik</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48112042" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://typesetinthefuture.com/2016/02/18/futuristic/" target="_blank" rel="noopener">How to make your text look futuristic (2016)</a>
+      <div class="hn-meta">
+        <span>▲ 48</span>
+        <span>·</span>
+        <span>7 comments</span>
+        <span>· by _vaporwave_</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48113895" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise" target="_blank" rel="noopener">Why senior developers fail to communicate their expertise</a>
+      <div class="hn-meta">
+        <span>▲ 227</span>
+        <span>·</span>
+        <span>114 comments</span>
+        <span>· by nilirl</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109460" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://obsidian.md/blog/future-of-plugins/" target="_blank" rel="noopener">The Future of Obsidian Plugins</a>
+      <div class="hn-meta">
+        <span>▲ 220</span>
+        <span>·</span>
+        <span>88 comments</span>
+        <span>· by xz18r</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109970" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/" target="_blank" rel="noopener">Rendering the Sky, Sunsets, and Planets</a>
+      <div class="hn-meta">
+        <span>▲ 349</span>
+        <span>·</span>
+        <span>32 comments</span>
+        <span>· by ibobev</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48107997" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://duckdb.org/2026/05/12/quack-remote-protocol" target="_blank" rel="noopener">Quack: The DuckDB Client-Server Protocol</a>
+      <div class="hn-meta">
+        <span>▲ 78</span>
+        <span>·</span>
+        <span>15 comments</span>
+        <span>· by aduffy</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111765" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim" target="_blank" rel="noopener">Dead.Letter (CVE-2026-45185) – How XBOW found an unauthenticated RCE on Exim</a>
+      <div class="hn-meta">
+        <span>▲ 45</span>
+        <span>·</span>
+        <span>14 comments</span>
+        <span>· by fedek_</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48111748" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://matklad.github.io/2026/05/12/software-architecture.html" target="_blank" rel="noopener">Learning Software Architecture</a>
+      <div class="hn-meta">
+        <span>▲ 479</span>
+        <span>·</span>
+        <span>97 comments</span>
+        <span>· by surprisetalk</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48106024" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/" target="_blank" rel="noopener">Bambu Lab is abusing the open source social contract</a>
+      <div class="hn-meta">
+        <span>▲ 916</span>
+        <span>·</span>
+        <span>319 comments</span>
+        <span>· by rubenbe</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48109224" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  
+    <li class="hn-item">
+      <a class="hn-title" href="https://arxiv.org/abs/2605.05242" target="_blank" rel="noopener">Beyond Semantic Similarity</a>
+      <div class="hn-meta">
+        <span>▲ 8</span>
+        <span>·</span>
+        <span>0 comments</span>
+        <span>· by 44za12</span>
+        <a class="hn-comments" href="https://news.ycombinator.com/item?id=48113518" target="_blank" rel="noopener">HN ↗</a>
+      </div>
+    </li>
+  </ol>
+    </section>
+
+    <section id="hf" class="block">
+      <h2><span class="section-icon">🤗</span> HuggingFace — most-loved</h2>
+      <p class="section-sub">Open-weight models ranked by ❤ likes (closest stable proxy for trending).</p>
+      <div class="cards">
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank" rel="noopener">deepseek-ai/DeepSeek-R1</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 13326</span>
+        <span class="stat">↓ 3,633,664</span>
+        <span class="badge">text-generation</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">safetensors</span><span class="tag">deepseek_v3</span><span class="tag">text-generation</span><span class="tag">conversational</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank" rel="noopener">black-forest-labs/FLUX.1-dev</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 12793</span>
+        <span class="stat">↓ 726,182</span>
+        <span class="badge">text-to-image</span>
+      </div>
+      <div class="hf-tags"><span class="tag">diffusers</span><span class="tag">safetensors</span><span class="tag">text-to-image</span><span class="tag">image-generation</span><span class="tag">flux</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" target="_blank" rel="noopener">stabilityai/stable-diffusion-xl-base-1.0</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 7704</span>
+        <span class="stat">↓ 2,070,829</span>
+        <span class="badge">text-to-image</span>
+      </div>
+      <div class="hf-tags"><span class="tag">diffusers</span><span class="tag">onnx</span><span class="tag">safetensors</span><span class="tag">text-to-image</span><span class="tag">stable-diffusion</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/CompVis/stable-diffusion-v1-4" target="_blank" rel="noopener">CompVis/stable-diffusion-v1-4</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 7008</span>
+        <span class="stat">↓ 633,236</span>
+        <span class="badge">text-to-image</span>
+      </div>
+      <div class="hf-tags"><span class="tag">diffusers</span><span class="tag">safetensors</span><span class="tag">stable-diffusion</span><span class="tag">stable-diffusion-diffusers</span><span class="tag">text-to-image</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/meta-llama/Meta-Llama-3-8B" target="_blank" rel="noopener">meta-llama/Meta-Llama-3-8B</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 6531</span>
+        <span class="stat">↓ 3,176,705</span>
+        <span class="badge">text-generation</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">safetensors</span><span class="tag">llama</span><span class="tag">text-generation</span><span class="tag">facebook</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank" rel="noopener">hexgrad/Kokoro-82M</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 6135</span>
+        <span class="stat">↓ 9,879,951</span>
+        <span class="badge">text-to-speech</span>
+      </div>
+      <div class="hf-tags"><span class="tag">text-to-speech</span><span class="tag">en</span><span class="tag">arxiv:2306.07691</span><span class="tag">arxiv:2203.02395</span><span class="tag">base_model:yl4579/StyleTTS2-LJSpeech</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct" target="_blank" rel="noopener">meta-llama/Llama-3.1-8B-Instruct</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 5815</span>
+        <span class="stat">↓ 9,548,227</span>
+        <span class="badge">text-generation</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">safetensors</span><span class="tag">llama</span><span class="tag">text-generation</span><span class="tag">facebook</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/openai/whisper-large-v3" target="_blank" rel="noopener">openai/whisper-large-v3</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 5673</span>
+        <span class="stat">↓ 4,936,013</span>
+        <span class="badge">automatic-speech-recognition</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">pytorch</span><span class="tag">jax</span><span class="tag">safetensors</span><span class="tag">whisper</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/bigscience/bloom" target="_blank" rel="noopener">bigscience/bloom</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 5001</span>
+        <span class="stat">↓ 6,100</span>
+        <span class="badge">text-generation</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">pytorch</span><span class="tag">tensorboard</span><span class="tag">safetensors</span><span class="tag">bloom</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/stabilityai/stable-diffusion-3-medium" target="_blank" rel="noopener">stabilityai/stable-diffusion-3-medium</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 4954</span>
+        <span class="stat">↓ 5,654</span>
+        <span class="badge">text-to-image</span>
+      </div>
+      <div class="hf-tags"><span class="tag">diffusion-single-file</span><span class="tag">text-to-image</span><span class="tag">stable-diffusion</span><span class="tag">en</span><span class="tag">arxiv:2403.03206</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell" target="_blank" rel="noopener">black-forest-labs/FLUX.1-schnell</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 4867</span>
+        <span class="stat">↓ 688,580</span>
+        <span class="badge">text-to-image</span>
+      </div>
+      <div class="hf-tags"><span class="tag">diffusers</span><span class="tag">safetensors</span><span class="tag">text-to-image</span><span class="tag">image-generation</span><span class="tag">flux</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2" target="_blank" rel="noopener">sentence-transformers/all-MiniLM-L6-v2</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 4781</span>
+        <span class="stat">↓ 255,877,152</span>
+        <span class="badge">sentence-similarity</span>
+      </div>
+      <div class="hf-tags"><span class="tag">sentence-transformers</span><span class="tag">pytorch</span><span class="tag">tf</span><span class="tag">rust</span><span class="tag">onnx</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank" rel="noopener">openai/gpt-oss-120b</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 4768</span>
+        <span class="stat">↓ 4,379,055</span>
+        <span class="badge">text-generation</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">safetensors</span><span class="tag">gpt_oss</span><span class="tag">text-generation</span><span class="tag">vllm</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/meta-llama/Llama-2-7b-chat-hf" target="_blank" rel="noopener">meta-llama/Llama-2-7b-chat-hf</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 4752</span>
+        <span class="stat">↓ 389,839</span>
+        <span class="badge">text-generation</span>
+      </div>
+      <div class="hf-tags"><span class="tag">transformers</span><span class="tag">pytorch</span><span class="tag">safetensors</span><span class="tag">llama</span><span class="tag">text-generation</span></div>
+    </article>
+  
+    <article class="card hf-card">
+      <h3 class="card-title"><a href="https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1" target="_blank" rel="noopener">mistralai/Mixtral-8x7B-Instruct-v0.1</a></h3>
+      <div class="hf-stats">
+        <span class="stat">❤ 4677</span>
+        <span class="stat">↓ 659,124</span>
+        
+      </div>
+      <div class="hf-tags"><span class="tag">vllm</span><span class="tag">safetensors</span><span class="tag">mixtral</span><span class="tag">fr</span><span class="tag">it</span></div>
+    </article>
+  </div>
+    </section>
+
+    <section id="builders" class="block">
+      <h2><span class="section-icon">🎙</span> Builder voices</h2>
+      <p class="section-sub">Recent posts, episodes, and writing from named AI builders <span class="meta-time">(via Follow Builders feeds)</span>.</p>
+      <div class="builder-group"><h3 class="builder-group-title">X / Twitter</h3><ul class="builder-list">
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Andrej Karpathy</strong>
+          <span class="muted">@karpathy</span>
+        </div>
+        <p class="builder-text">This works really well btw, at the end of your query ask your LLM to &quot;structure your response as HTML&quot;, then view the generated file in your browser. I&#39;ve also had some success asking the LLM to present its output as slideshows, etc.
+
+More …</p>
+        <div class="builder-meta">
+          <span>❤ 13038</span>
+          <span>↻ 1338</span>
+          <a href="https://x.com/karpathy/status/2053872850101285137" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Swyx</strong>
+          <span class="muted">@swyx</span>
+        </div>
+        <p class="builder-text">I believe the kids call this &quot;@thinkymachines just brutally framemogged gdm and oai&quot;. 
+
+basically everyone&#39;s definition of &quot;realtime&quot; just got a massive frciking upgrade https://t.co/a5fzSV9Yec https://t.co/29N7XIF6F9</p>
+        <div class="builder-meta">
+          <span>❤ 798</span>
+          <span>↻ 31</span>
+          <a href="https://x.com/swyx/status/2053960011748098462" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Amanda Askell</strong>
+          <span class="muted">@AmandaAskell</span>
+        </div>
+        <p class="builder-text">You can now listen to me and Joe read out Claude&#39;s constitution as an audiobook. Working on adding the option of listening to it on fast mode :) https://t.co/jxIy7Jjnlk</p>
+        <div class="builder-meta">
+          <span>❤ 416</span>
+          <span>↻ 22</span>
+          <a href="https://x.com/AmandaAskell/status/2054010971765805486" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Cat Wu</strong>
+          <span class="muted">@_catwu</span>
+        </div>
+        <p class="builder-text">run `claude agents` for a control plane in your terminal!  
+
+after, hit `&amp;lt;-` from any cli session to register that with the control plane
+
+personally, i like to run `claude agents` from my root code dir to manage all my claude code agent…</p>
+        <div class="builder-meta">
+          <span>❤ 327</span>
+          <span>↻ 25</span>
+          <a href="https://x.com/_catwu/status/2053999857799672111" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Peter Yang</strong>
+          <span class="muted">@petergyang</span>
+        </div>
+        <p class="builder-text">Why does SoCal have so much world class kids stuff (Disney, Legoland, Universal, Zoo, etc) but in the Bay Area we can&#39;t keep our only amusement park alive</p>
+        <div class="builder-meta">
+          <span>❤ 317</span>
+          <span>↻ 3</span>
+          <a href="https://x.com/petergyang/status/2054038194547777993" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Cat Wu</strong>
+          <span class="muted">@_catwu</span>
+        </div>
+        <p class="builder-text">We&#39;d love to hear your feedback for Claude Code in the cloud across Desktop (cloud option), iOS app, and Android app
+
+Sign up for our office hours below: https://t.co/DhH9rl3nvV</p>
+        <div class="builder-meta">
+          <span>❤ 71</span>
+          <span>↻ 2</span>
+          <a href="https://x.com/_catwu/status/2053873949646405879" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Kevin Weil</strong>
+          <span class="muted">@kevinweil</span>
+        </div>
+        <p class="builder-text">This from @tdrobbo is gold. https://t.co/8J44zVQW2X</p>
+        <div class="builder-meta">
+          <span>❤ 12</span>
+          <span>↻ 1</span>
+          <a href="https://x.com/kevinweil/status/2054063509869306204" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    
+      <li class="builder-item">
+        <div class="builder-meta-top">
+          <strong>Swyx</strong>
+          <span class="muted">@swyx</span>
+        </div>
+        <p class="builder-text">https://t.co/vT9CDBhJQE</p>
+        <div class="builder-meta">
+          <span>❤ 7</span>
+          <span>↻ 0</span>
+          <a href="https://x.com/swyx/status/2053989439945498934" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    </ul></div><div class="builder-group"><h3 class="builder-group-title">Podcasts</h3><ul class="builder-list">
+      <li class="builder-item">
+        <a class="builder-title" href="https://www.youtube.com/watch?v=g5TWnUjbeFM" target="_blank" rel="noopener">Amex Global Business Travel: The World’s First AI Take Private with Long Lake CEO Alexander Taubman</a>
+        <div class="builder-meta">
+          <span>No Priors</span>
+          <span> · 2026-05-11</span>
+          <span class="badge">podcast</span>
+        </div>
+      </li>
+    </ul></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched Tue, 12 May 2026 21:05:37 UTC · <a href="https://github.com/rowland-dot/ai-daily-digest" target="_blank" rel="noopener">source on GitHub</a></div>
+    
+    <div class="source-status">
+      
+        <span title="" class="status-ok">
+          ● aihot_daily
+        </span>
+      
+        <span title="" class="status-ok">
+          ● aihot_ai_models
+        </span>
+      
+        <span title="" class="status-ok">
+          ● aihot_ai_products
+        </span>
+      
+        <span title="" class="status-ok">
+          ● aihot_industry
+        </span>
+      
+        <span title="" class="status-ok">
+          ● aihot_paper
+        </span>
+      
+        <span title="" class="status-ok">
+          ● hn_top
+        </span>
+      
+        <span title="" class="status-ok">
+          ● hf_popular
+        </span>
+      
+    </div>
+  
+  </footer>
+
+</body>
+</html>

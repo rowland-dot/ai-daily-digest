@@ -1,4 +1,4 @@
-name: Fetch daily AI sources
+name: Fetch daily AI sources & render site
 
 on:
   schedule:
@@ -8,13 +8,15 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: fetch-sources
   cancel-in-progress: false
 
 jobs:
-  fetch:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,17 +25,49 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Fetch sources
+      - name: Fetch upstream sources
         run: node scripts/fetch-sources.mjs
 
-      - name: Commit and push
+      - name: Fetch Follow Builders feeds
+        run: |
+          mkdir -p data
+          for feed in feed-x feed-podcasts feed-blogs; do
+            url="https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/${feed}.json"
+            outfile="data/follow-builders-${feed#feed-}.json"
+            if curl -fsSL "$url" -o "$outfile"; then
+              echo "[ok] $feed -> $outfile"
+            else
+              echo "[warn] failed to fetch $url"
+            fi
+          done
+
+      - name: Render static site
+        run: node scripts/render-site.mjs
+
+      - name: Commit data & site
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ docs/
           if git diff --cached --quiet; then
-            echo "No data changes — skipping commit."
+            echo "No changes to commit."
             exit 0
           fi
-          git commit -m "data: refresh sources $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "data+site: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
