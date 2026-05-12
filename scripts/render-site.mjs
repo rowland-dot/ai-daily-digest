@@ -548,9 +548,25 @@ const PAGE_CSS = `
     font-size: 18px;
     flex-shrink: 0;
   }
-  .audio-fab-body { display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
-  .audio-fab audio { height: 36px; max-width: 280px; }
+  .audio-fab-body { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; }
+  .audio-fab audio { height: 36px; max-width: 260px; }
   .audio-fab audio::-webkit-media-controls-panel { background: var(--surface); }
+  .speed-btn {
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    min-width: 44px;
+    transition: all 0.12s ease;
+  }
+  .speed-btn:hover { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+  .speed-btn:active { transform: scale(0.96); }
   .audio-fab .speech-btn {
     background: var(--accent-soft);
     color: var(--accent);
@@ -620,18 +636,42 @@ const THEME_TOGGLE_SCRIPT = `
   })();
 `;
 
-// Floating mini-player: collapse/expand handler for the prerecorded MP3.
+// Floating mini-player: collapse/expand + playback-speed cycle button
+// (mobile <audio controls> hides native speed control, so we add our own).
 const AUDIO_PLAYER_SCRIPT = `
   (function() {
     var fab = document.getElementById('audio-fab');
     if (!fab) return;
     var handle = document.getElementById('audio-fab-handle');
     var closeBtn = document.getElementById('audio-fab-close');
+    var audio = document.getElementById('digest-audio');
+    var speedBtn = document.getElementById('speed-btn');
+
     function expand(v) { fab.setAttribute('data-expanded', v ? 'true' : 'false'); }
     handle.addEventListener('click', function() {
       if (fab.getAttribute('data-expanded') === 'false') expand(true);
     });
     if (closeBtn) closeBtn.addEventListener('click', function(e) { e.stopPropagation(); expand(false); });
+
+    if (audio && speedBtn) {
+      var rates = [1, 1.25, 1.5, 1.75, 2];
+      var saved = 1;
+      try { saved = parseFloat(localStorage.getItem('digest-speed')) || 1; } catch (e) {}
+      if (rates.indexOf(saved) === -1) saved = 1;
+      function applyRate(r) {
+        audio.playbackRate = r;
+        speedBtn.textContent = r + '×';
+        try { localStorage.setItem('digest-speed', String(r)); } catch (e) {}
+      }
+      applyRate(saved);
+      audio.addEventListener('loadedmetadata', function() { applyRate(saved); });
+      speedBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var idx = rates.indexOf(saved);
+        saved = rates[(idx + 1) % rates.length];
+        applyRate(saved);
+      });
+    }
   })();
 `;
 
@@ -790,7 +830,8 @@ async function renderPage({
     <div class="audio-fab-body">
       ${
         audioAvailable
-          ? `<audio id="digest-audio" controls preload="metadata" src="digest.mp3"></audio>`
+          ? `<audio id="digest-audio" controls preload="metadata" src="digest.mp3"></audio>
+             <button id="speed-btn" class="speed-btn" type="button" aria-label="Playback speed" title="Tap to cycle speed">1×</button>`
           : `<span class="no-audio-msg">Today's narration not yet generated</span>`
       }
       <button id="audio-fab-close" class="close-btn" type="button" aria-label="Close">✕</button>
