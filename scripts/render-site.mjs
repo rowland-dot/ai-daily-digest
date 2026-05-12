@@ -567,6 +567,13 @@ const PAGE_CSS = `
     height: 36px;
     width: 180px;
     flex: 0 0 180px;       /* fixed audio track width on desktop */
+    /* Native <audio> defaults to display: inline which leaves a baseline
+       gap inside the flex row on iOS Safari; block + vertical-align middle
+       + align-self center forces it onto the row's mid-line. */
+    display: block;
+    vertical-align: middle;
+    align-self: center;
+    margin: 0;
   }
   .audio-fab audio::-webkit-media-controls-panel { background: var(--surface); }
   /* Hide volume controls (WebKit/Blink) — they steal scrubber space and
