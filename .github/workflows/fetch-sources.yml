@@ -18,11 +18,20 @@ permissions:
   pages: write
   id-token: write
 
-# Latest push wins. If a previous build is mid-audio-regen and you push
-# again, the older build is cancelled so the new commit reaches users
-# fast instead of queueing behind a 12-min audio job.
+# Two concurrency lanes so rapid code pushes (which usually only need
+# fast-mode re-render) cannot cancel a manual or scheduled full run
+# that is 8-12 min into regenerating audio.
+#   - `push` lane: code pushes cancel each other (latest wins).
+#   - `manual` lane: workflow_dispatch + scheduled cron run isolated
+#     from push cancellations, so triggering a manual audio regen is
+#     reliable even if you push commits during the run.
 concurrency:
-  group: fetch-sources
+  group: >-
+    fetch-sources-${{
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+      && 'manual'
+      || 'push'
+    }}
   cancel-in-progress: true
 
 jobs:
