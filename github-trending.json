@@ -1,0 +1,214 @@
+{
+  "fetched_at": "2026-05-13T17:05:05.731Z",
+  "repos": [
+    {
+      "owner": "tinyhumansai",
+      "name": "openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 4660,
+      "forks": 391,
+      "starsToday": 1595
+    },
+    {
+      "owner": "rohitg00",
+      "name": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 7169,
+      "forks": 630,
+      "starsToday": 1335
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 189226,
+      "forks": 16833,
+      "starsToday": 1419
+    },
+    {
+      "owner": "yikart",
+      "name": "AiToEarn",
+      "url": "https://github.com/yikart/AiToEarn",
+      "description": "Let's use AI to Earn!",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 12757,
+      "forks": 2198,
+      "starsToday": 987
+    },
+    {
+      "owner": "influxdata",
+      "name": "telegraf",
+      "url": "https://github.com/influxdata/telegraf",
+      "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 16941,
+      "forks": 5776,
+      "starsToday": 6
+    },
+    {
+      "owner": "millionco",
+      "name": "react-doctor",
+      "url": "https://github.com/millionco/react-doctor",
+      "description": "Your agent writes bad React. This catches it",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 9150,
+      "forks": 287,
+      "starsToday": 620
+    },
+    {
+      "owner": "K-Dense-AI",
+      "name": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 20978,
+      "forks": 2317,
+      "starsToday": 83
+    },
+    {
+      "owner": "danielmiessler",
+      "name": "Personal_AI_Infrastructure",
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 13218,
+      "forks": 1853,
+      "starsToday": 439
+    },
+    {
+      "owner": "supertone-inc",
+      "name": "supertonic",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 4062,
+      "forks": 414,
+      "starsToday": 1048
+    },
+    {
+      "owner": "CloakHQ",
+      "name": "CloakBrowser",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 9212,
+      "forks": 684,
+      "starsToday": 1829
+    },
+    {
+      "owner": "Greedeks",
+      "name": "GTweak",
+      "url": "https://github.com/Greedeks/GTweak",
+      "description": "Portable Tool for an Ideal Windows Setup",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 830,
+      "forks": 72,
+      "starsToday": 127
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 78472,
+      "forks": 6766,
+      "starsToday": 3372
+    },
+    {
+      "owner": "ArthurBrussee",
+      "name": "brush",
+      "url": "https://github.com/ArthurBrussee/brush",
+      "description": "3D Reconstruction for all",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 4307,
+      "forks": 231,
+      "starsToday": 78
+    },
+    {
+      "owner": "imthenachoman",
+      "name": "How-To-Secure-A-Linux-Server",
+      "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
+      "description": "An evolving how-to guide for securing a Linux server.",
+      "language": "",
+      "languageColor": "",
+      "stars": 26958,
+      "forks": 1772,
+      "starsToday": 233
+    },
+    {
+      "owner": "apernet",
+      "name": "hysteria",
+      "url": "https://github.com/apernet/hysteria",
+      "description": "Hysteria is a powerful, lightning fast and censorship resistant proxy.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 20550,
+      "forks": 2127,
+      "starsToday": 489
+    },
+    {
+      "owner": "rasbt",
+      "name": "LLMs-from-scratch",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 94317,
+      "forks": 14466,
+      "starsToday": 824
+    },
+    {
+      "owner": "ton-blockchain",
+      "name": "acton",
+      "url": "https://github.com/ton-blockchain/acton",
+      "description": "Toolchain for TON smart contract development and beyond",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 146,
+      "forks": 20,
+      "starsToday": 15
+    },
+    {
+      "owner": "trycua",
+      "name": "cua",
+      "url": "https://github.com/trycua/cua",
+      "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 16452,
+      "forks": 1035,
+      "starsToday": 307
+    },
+    {
+      "owner": "github",
+      "name": "spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 98096,
+      "forks": 8541,
+      "starsToday": 1159
+    }
+  ]
+}

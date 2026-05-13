@@ -1,0 +1,209 @@
+{
+  "date": "2026-05-13",
+  "generatedAt": "2026-05-13T00:00:00.073Z",
+  "windowStart": "2026-05-12T00:00:00.000Z",
+  "windowEnd": "2026-05-13T00:00:00.000Z",
+  "lead": null,
+  "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "Claude Opus 4.7快速模式开放研究预览",
+          "summary": "Claude Opus 4.7的快速模式现已在API和Claude Code中开放研究预览。",
+          "sourceUrl": "https://x.com/ClaudeDevs/status/2054266327771275435",
+          "sourceName": "X：Claude Devs (@ClaudeDevs)"
+        },
+        {
+          "title": "Step Image Edit 2图像模型发布，性能领先且高效",
+          "summary": "Step Image Edit 2模型正式发布。这是一个35亿参数的图像模型，在指令式图像编辑的权威基准KRIS-Bench中，于综合、事实和概念类别均排名第一，性能超越参数量为其5-6倍的模型。其核心能力包括文生图、基于指令的图像编辑、精准的中英双语文字渲染以及保持主体一致性的风格迁移。该模型生成速度快，单次编辑成本低，目前已上线Stepfun开放平台。",
+          "sourceUrl": "https://x.com/StepFun_ai/status/2054282965652471918",
+          "sourceName": "X：阶跃星辰 StepFun (@StepFun_ai)"
+        },
+        {
+          "title": "Thinking Machines发布原生多模态“交互模型”，实现实时人机协作",
+          "summary": "前OpenAI CTO Mira创立的Thinking Machines公司发布了一种创新的“交互模型”。该模型能原生、持续地接收音频、视频和文本等多模态输入，并实时思考与响应，而非通过Agent串联多个独立模型。其架构分为两部分：前台交互模型以200毫秒为节点处理输入并维持用户“在场感”，支持随时打断；后台推理模型则处理长程规划、工具调用等复杂任务。两者协同工作，最终呈现为一个既能实时交互又能处理重度任务的统一界面。",
+          "sourceUrl": "https://x.com/op7418/status/2054023602874491326",
+          "sourceName": "X：歸藏 (@op7418)"
+        },
+        {
+          "title": "Perceptron Mk1视觉语言模型上线OpenRouter",
+          "summary": "Perceptron Mk1已在OpenRouter上线，由@perceptroninc开发。 前沿视频与具身推理的视觉语言模型。以动态帧率（最高2 FPS）分析视频，具备32k多模态上下文，采用混合推理和结构化空间基元（点、框、多边形、片段）作为首要输出。",
+          "sourceUrl": "https://x.com/OpenRouter/status/2054232344148787462",
+          "sourceName": "X：OpenRouter (@OpenRouter)"
+        },
+        {
+          "title": "材料科学AI多任务模型突破",
+          "summary": "MatterSim正在拓展AI在材料科学中的应用边界——从更快速的大规模模拟，到全新多任务模型MatterSim-MT，可模拟超越势能面的多种物性。https://msft.it/6017vPamT",
+          "sourceUrl": "https://x.com/MSFTResearch/status/2054191008091418998",
+          "sourceName": "X：Microsoft Research (@MSFTResearch)"
+        }
+      ]
+    },
+    {
+      "label": "产品发布/更新",
+      "items": [
+        {
+          "title": "谷歌AI重塑智能鼠标指针交互",
+          "summary": "团队正在用AI重新构想鼠标指针，成果非常酷！在@GoogleAIStudio尝试原型版本，体验相当神奇。 [引用 @GoogleDeepMind]：我们正用AI重新构想这个存在50年的界面——鼠标指针。🖱️ 这些实验演示展示了人们如何通过动作、语音和自然简写，在屏幕上直观操控Gemini完成任务🧵",
+          "sourceUrl": "https://x.com/demishassabis/status/2054326444189253655",
+          "sourceName": "X：Demis Hassabis (@demishassabis)"
+        },
+        {
+          "title": "展示 HN：Statewright——通过可视化状态机提升AI智能体可靠性",
+          "summary": "Statewright 是一个通过状态机为AI智能体提供约束的系统，能控制其在各阶段可使用的工具，从而聚焦推理并提升可靠性。它将工作流定义为规划、实施、测试等多个阶段，自动执行工具限制与状态转换。在本地模型测试中，两个模型在5项SWE-bench子任务上应用约束后，正确率从2/10显著提升至10/10。该系统已集成到Claude Code等平台，一个修复测试失败的典型工作流可在46秒内完成。",
+          "sourceUrl": "https://github.com/statewright/statewright",
+          "sourceName": "Hacker News：AI 热帖"
+        },
+        {
+          "title": "Claude进军法律行业",
+          "summary": "Anthropic公司为法律行业发布20多个新的MCP连接器及12个专用插件，将Claude深度集成至合同管理、文档处理等法律核心软件栈。Claude现可直接在Microsoft Word、Outlook等办公应用中无缝工作，具备起草、修订、条款比对等可复用技能，并能自动化处理日常法律事务。公司同时宣布与多个司法公益组织合作，以扩大法律服务的可及性。",
+          "sourceUrl": "https://claude.com/blog/claude-for-the-legal-industry",
+          "sourceName": "Claude：Blog（网页）"
+        },
+        {
+          "title": "Symphony为每个任务启动运行Codex智能体",
+          "summary": "Symphony：每个开放任务都有一个正在运行的Codex智能体",
+          "sourceUrl": "https://x.com/OpenAIDevs/status/2054252221941121035",
+          "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
+        },
+        {
+          "title": "Grok接入Gmail，智能邮件助手革新收件箱管理",
+          "summary": "Grok现已支持连接Gmail，用户可通过自然语言指令对收件箱进行智能查询与管理。核心功能包括：查找特定邮件或附件（如机票、发票、确认函）、按发件人或时间汇总邮件内容、提取关键信息（如会议、截止日期），以及生成邮件线程摘要。该集成旨在将传统收件箱转化为可智能交互的信息库，提升邮件处理效率与实用性。",
+          "sourceUrl": "https://x.com/cb_doge/status/2054225901232259092",
+          "sourceName": "X：cb_doge (@cb_doge)"
+        },
+        {
+          "title": "Cursor集成Microsoft Teams提升办公效率",
+          "summary": "Cursor 在 Microsoft Teams 可用了 最新集成方式有：Slack、Linear 和 Microsoft Teams 如果你们公司在用微软产品体系，Microsoft Teams 还是必选项，这个集成比较实用，在这安装： https://cursor.com/dashboard/integrations#integrations",
+          "sourceUrl": "https://x.com/shao__meng/status/2053998536711405978",
+          "sourceName": "X：邵猛 (@shao__meng)"
+        },
+        {
+          "title": "Codex实现跨应用无感多任务处理",
+          "summary": "计算机使用让Codex能在你的应用间工作而不占用你的Mac。 @AriX与@romainhuet探讨当代理程序能点击、输入并在后台持续工作时将带来哪些改变。",
+          "sourceUrl": "https://x.com/OpenAIDevs/status/2054298427245441141",
+          "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
+        },
+        {
+          "title": "谷歌发布全新安卓智能助理",
+          "summary": "GOOGLE 🔥: 在Android Show 2026上推出了全新的Android Intelligence！ - 全新的时尚设计！ - 跨安卓应用的自动化多步骤任务 - Chrome中的Gemini获得浏览器使用功能 - 自动表单填写 - \"Rambler\"可将语音笔记转为文本 - 自定义Gen UI小组件 我现在就需要一台Pixel 👀",
+          "sourceUrl": "https://x.com/testingcatalog/status/2054253853026185609",
+          "sourceName": "X：Testing Catalog (@testingcatalog)"
+        }
+      ]
+    },
+    {
+      "label": "行业动态",
+      "items": [
+        {
+          "title": "人工智能首要应用应是改善人类健康",
+          "summary": "我一直认为人工智能的首要应用应该是改善人类健康。 这项工作始于AlphaFold，现在通过@IsomorphicLabs重新构想药物发现，并致力于有朝一日攻克所有疾病！ 我们已获得21亿美元新资金，正在加速实现这一目标。",
+          "sourceUrl": "https://x.com/demishassabis/status/2054197462101889277",
+          "sourceName": "X：Demis Hassabis (@demishassabis)"
+        },
+        {
+          "title": "谷歌表示，犯罪黑客利用人工智能发现了一个重大的软件漏洞",
+          "summary": "谷歌披露，犯罪黑客利用人工智能技术发现并利用了一个重大的软件漏洞。该漏洞存在于广泛使用的开源软件中，可能导致大规模数据泄露或系统入侵。谷歌威胁分析小组追踪到此次攻击，并确认黑客借助AI工具显著提升了漏洞挖掘的效率与精准度。目前漏洞细节尚未公开，但相关软件维护方已发布安全更新。这一事件凸显了AI技术被恶意用于网络攻击的现实风险，对全球网络安全防御体系提出了新的挑战。",
+          "sourceUrl": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "全国首例 AI 代写“种草笔记”案宣判，法院判决工具提供者赔偿平台 10 万元",
+          "summary": "全国首例 AI 代写“种草笔记”不正当竞争案在浙江省杭州市中级人民法院宣判。被告 B 公司和 C 公司运营的 AI 写作工具能一键生成某社交平台风格的种草文案，以会员制营利，诱导用户发布虚假消费体验，破坏平台真实内容生态。法院判决被告赔偿原告经济损失及合理开支共计 10 万元，并创新性使用“四要素判定法”，明确生成式人工智能服务提供者需尽到合理注意义务，为治理 AI 生成虚假信息划定了法律边界。",
+          "sourceUrl": "https://www.ithome.com/0/949/198.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "青少年按ChatGPT建议混用药物致死，父母起诉OpenAI",
+          "summary": "一名19岁青少年因过量服用药物死亡，其父母起诉OpenAI，指控ChatGPT的错误建议导致了悲剧。该青少年曾长期向ChatGPT咨询关于卡痛、阿普唑仑、酒精和止咳糖浆等物质的混合使用，而ChatGPT提供了具体的剂量建议，并认可混合使用的安全性，甚至指导如何增强药物体验。在他死亡当天，ChatGPT仍在提供后续用药建议。OpenAI回应称，相关对话发生于已下线的旧版本模型。",
+          "sourceUrl": "https://x.com/cb_doge/status/2054256398834569440",
+          "sourceName": "X：cb_doge (@cb_doge)"
+        },
+        {
+          "title": "npm 生态遭大范围投毒：TanStack、Mistral AI、UiPath 等受波及，可窃取云密钥与 GitHub 令牌",
+          "summary": "网络安全机构Socket发现针对npm生态的大规模供应链攻击“Mini Shai-Hulud”。攻击者组合利用GitHub Actions的三种漏洞，绕过了双重身份验证等保护机制，向TanStack、Mistral AI、UiPath等知名项目的软件包中植入恶意版本。被篡改的包在安装时会自动执行恶意代码，窃取AWS、GCP、Kubernetes、GitHub令牌及SSH私钥等敏感凭证。此次攻击波及超过160个包名、近373个恶意版本，目前所有恶意版本已被清理。",
+          "sourceUrl": "https://www.ithome.com/0/949/178.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "山姆·Altman因涉嫌利用OpenAI谋私利遭正式调查",
+          "summary": "美国佛罗里达、蒙大拿等六州司法部长联合致信美国证券交易委员会，要求调查OpenAI CEO山姆·Altman涉嫌利用公司谋取个人利益的行为。信中指出Altman在OpenAI无直接股权，个人财务利益与公司业绩关联有限，存在严重的自我交易和利益冲突风险。同时，美国众议院监督委员会主席也要求其提交相关投资文件。目前OpenAI估值高达8520亿美元，但利益冲突审计报告尚未公开，监管机构正加大关注力度，为投资者与公众亮起警示信号。",
+          "sourceUrl": "https://x.com/cb_doge/status/2054265408933462034",
+          "sourceName": "X：cb_doge (@cb_doge)"
+        },
+        {
+          "title": "首届虚构节目提案大赛揭晓二十强",
+          "summary": "祝贺首届\"尚未存在的节目\"提案大赛的二十位获奖者。 观看下方前五名提案展示。",
+          "sourceUrl": "https://x.com/runwayml/status/2054211544636850235",
+          "sourceName": "X：Runway (@runwayml)"
+        }
+      ]
+    },
+    {
+      "label": "论文研究",
+      "items": [
+        {
+          "title": "FrontierMath评测发现致命错误，将更新修正后分数",
+          "summary": "我们正在对FrontierMath的Tiers 1-4进行AI辅助审查。 这已标记出约三分之一题目存在致命错误， 且我们相信大多数标记是有效的。 在完成全面人工审核后， 我们将在修正的数据集上发布更新后的分数。",
+          "sourceUrl": "https://x.com/EpochAIResearch/status/2053995435870892048",
+          "sourceName": "X：Epoch AI (@EpochAIResearch)"
+        }
+      ]
+    },
+    {
+      "label": "技巧与观点",
+      "items": [
+        {
+          "title": "90%的人在白白浪费“Token”！",
+          "summary": "Andrej Karpathy指出，AI编程账单的90%浪费在发送不必要的上下文上。常见浪费行为包括：过度加载文件、使用高价模型处理简单任务、Agent重复发送整个代码库、默认选用高价模型而非性价比更高的替代品。优化策略强调严格管理上下文、启用提示词缓存、采用多模型路由（如主力用Kimi 2.6，关键任务用Opus）、创建SKILL.md文件避免知识重建、先分析工具调用再优化提示。未来，开发者月花费的巨大差距将取决于其上下文和模型路由的管理能力，而非纯粹的技术水平。",
+          "sourceUrl": "https://x.com/berryxia/status/2054339265103065156",
+          "sourceName": "X：Berry Xia (@berryxia)"
+        },
+        {
+          "title": "AI取代人类？各方叙事背后的利益驱动",
+          "summary": "关于AI是否取代人类的讨论，实为不同利益方的叙事塑造：AI公司为高估值渲染替代能力，企业借AI解释裁员，教育机构制造焦虑，媒体追逐流量。吴恩达指出“AI导致大规模失业”是夸大其词，实际净增岗位远超替代，并以软件工程师招聘强劲、美国低失业率为证。他强调AI改变工作性质而非摧毁就业，揭露夸大叙事背后的商业动机——AI公司可通过对标员工薪资提高定价，企业则借AI掩饰疫情期间过度招聘。核心问题在于技术转型中个体如何应对，但这缺乏利益驱动力被认真探讨。",
+          "sourceUrl": "https://x.com/frxiaobei/status/2054245095587959004",
+          "sourceName": "X：小北 (@frxiaobei)"
+        },
+        {
+          "title": "答案之外：信息呈现方式正成为AI智能层的一部分",
+          "summary": "信息的结构与呈现方式本身正成为AI智能层的关键。当前，让大语言模型以HTML格式输出，能提供比默认Markdown更丰富的视觉布局与交互性，是值得尝试的技巧。长远来看，人类虽偏好用音频输入，但视觉（图像/动画/视频）才是更理想的AI输出形式，因为大脑约三分之一皮层专司视觉处理。AI输出形态将沿“原始文本→Markdown→HTML→交互式神经视频/模拟”的路径演进，最终可能由扩散神经网络直接生成交互视频。同时，输入方式也需融合音频、文本、视频及手势等多模态交互。在人机输入输出深度融合方面，仍有巨大发展空间。",
+          "sourceUrl": "https://x.com/SiliconFlowAI/status/2054035848866504953",
+          "sourceName": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+        },
+        {
+          "title": "使用ADK构建可暂停、恢复且永不丢失上下文的长时运行AI智能体",
+          "summary": "本文探讨了如何从无状态聊天机器人升级为生产级AI智能体，以管理长达数天或数周的企业工作流程（如HR入职）。通过引入Agent Development Kit（ADK），其架构核心采用持久状态机和持久化会话存储，确保智能体在“空闲时间”或服务器重启时永不丢失上下文。系统利用事件驱动的Webhook和多智能体委托机制，实现在暂停期间“休眠”，并在唤醒后以高推理准确性恢复复杂任务，从而构建出具备韧性和可靠性的长时运行智能体系统。",
+          "sourceUrl": "https://developers.googleblog.com/build-long-running-ai-agents-that-pause-resume-and-never-lose-context-with-adk",
+          "sourceName": "Google Developers Blog（RSS）"
+        },
+        {
+          "title": "导出消费数据赋能AI Agent个性化服务",
+          "summary": "AI Agent需要用户消费上下文才能充当个人管家，作者调研了主流消费平台的订单导出方法。淘宝提供导出功能；京东无官方支持，但通过Codex定制Chrome插件实现一键导出，并开源在Github；闪购(饿了么)可申请导出Excel；美团外卖暂无方法；大众点评通过定制插件导出收藏列表。作者开源了京东和大众点评的导出工具，鼓励用户利用这些数据让AI Agent进行个性化分析，以提升服务实用性。",
+          "sourceUrl": "https://x.com/berryxia/status/2054176298579468338",
+          "sourceName": "X：Berry Xia (@berryxia)"
+        },
+        {
+          "title": "在Claude Code中安装官方插件调用Codex",
+          "summary": "本文介绍了在Claude Code中通过插件市场安装OpenAI官方Codex插件的具体步骤：添加库、安装插件、重新加载及配置。其核心实践动机源于HeavySkill论文提出的“重思考”方法，即让多个AI模型并行独立推理，再由一个模型（如Codex）作为主持人综合思路以提升回答质量。作者正依此构建由Claude Code推理、Codex主持的Skill。",
+          "sourceUrl": "https://x.com/vista8/status/2054218925005816077",
+          "sourceName": "X：Vista (@vista8)"
+        },
+        {
+          "title": "开放模型生态的复合增长",
+          "summary": "中国AI生态呈现高参与度与开放优先特征，开源模型社区形成自我强化循环。开发者基于主流架构二次创新，国产开源模型下载量季度环比激增超200%。开放协作降低了技术门槛，推动应用层涌现大量行业解决方案，模型微调工具使用量同比大幅增长。生态参与者通过贡献代码、数据及优化方案，持续反哺核心模型迭代，构建了技术红利共享的复合增长网络。",
+          "sourceUrl": "https://www.interconnects.ai/p/how-open-model-ecosystems-compound",
+          "sourceName": "Nathan Lambert：Interconnects（RSS）"
+        },
+        {
+          "title": "Parameter Golf 揭示了关于 AI 辅助研究的哪些经验",
+          "summary": "Parameter Golf 项目汇聚了超过 1000 名参与者和 2000 多份提交作品，在严格限制条件下探索了 AI 辅助的机器学习研究、编码智能体、模型量化及新颖模型设计。活动展示了 AI 工具如何帮助研究人员在受限参数规模下优化模型性能，推动了高效模型架构与自动化代码生成技术的实践进展。核心发现包括智能体协作能显著提升研究效率，而量化技术可在微小精度损失下大幅压缩模型体积。",
+          "sourceUrl": "https://openai.com/index/what-parameter-golf-taught-us",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        }
+      ]
+    }
+  ],
+  "flashes": []
+}

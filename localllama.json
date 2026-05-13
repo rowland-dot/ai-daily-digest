@@ -1,0 +1,104 @@
+{
+  "fetched_at": "2026-05-13T17:05:06.878Z",
+  "source": "r/LocalLLaMA",
+  "posts": [
+    {
+      "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
+      "author": "maddiedreese",
+      "updated": "2026-05-12T23:15:42+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
+      "summary": "• The cartridge boots a ROM, and the GBC runs the model itself. • The model is Andrej Karpathy’s TinyStories-260K, converted to INT8 weights with fixed-point math so it can run without floating point."
+    },
+    {
+      "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
+      "author": "Henrie_the_dreamer",
+      "updated": "2026-05-12T17:56:09+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
+      "summary": "We open-sourced Needle, a 26M parameter function-calling (tool use) model. It runs at 6000 tok/s prefill and 1200 tok/s decode on consumer devices."
+    },
+    {
+      "title": "TextGen is now a native desktop app. Open-source alternative to LM Studio (formerly text-generation-webui).",
+      "author": "oobabooga4",
+      "updated": "2026-05-13T13:00:32+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbyyee/textgen_is_now_a_native_desktop_app_opensource/",
+      "summary": "I have been making a lot of updates to my project, and I wanted to share them here. TextGen (previously text-generation-webui, also known as my username oobabooga or ooba) has been in development since December 2022, before LLaMa and llama. cpp existed."
+    },
+    {
+      "title": "My First Official AI Research Paper Accepted on SSRN",
+      "author": "assemsabryy",
+      "updated": "2026-05-12T23:04:46+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/",
+      "summary": "Today, my research paper “Stable Training with Adaptive Momentum (STAM)” was officially accepted on SSRN — marking my first documented and official publication as an AI Researcher."
+    },
+    {
+      "title": "AIDC-AI/Ovis2.6-80B-A3B · Hugging Face",
+      "author": "pmttyji",
+      "updated": "2026-05-13T12:29:41+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tby79g/aidcaiovis2680ba3b_hugging_face/",
+      "summary": "We introduce Ovis2. 6-80B-A3B , the latest advancement in the Ovis series of Multimodal Large Language Models (MLLMs). Building on the strong foundation of Ovis2. 5, Ovis2. 6 upgrades the LLM backbone to a Mixture-of-Experts (MoE) architecture, delivering superior multimodal performance at a fraction of the serving cost."
+    },
+    {
+      "title": "Save and invest your money for future rigs",
+      "author": "segmond",
+      "updated": "2026-05-13T02:23:17+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/",
+      "summary": "I have long had the itch to build out. Plan was for a 1tb genoa this year and what would have been a $6,000 affair is now a $30,000 affair. So I held out for the mac M5 studio ultra and then looks like Apple is gonna get hit with shortages, they have pushed from Q1 to Q2 and now Q3, meanwhile RTX blackwell pro 6000 prices keep rising. What are we to do?"
+    },
+    {
+      "title": "Is using vLLM actually worth it if you aren't serving the model to other people?",
+      "author": "ayylmaonade",
+      "updated": "2026-05-12T21:45:47+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/",
+      "summary": "So, as most of us here are, I'm a llama. cpp loyalist. Easy to understand, great configuration, relatively stable, etc. But I’ve been increasingly tempted by vLLM, especially since AMD just added it as a built-in inference engine to Lemonade, and I happen to have an AMD GPU."
+    },
+    {
+      "title": "I've seen a lot of folks ask \"can local LLMs actually do anything useful?\"",
+      "author": "NoWorking8412",
+      "updated": "2026-05-13T03:10:43+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/",
+      "summary": "And I'm here to share my experience. The answer is resoundingly 'yes'. Let me start with the local model I use every day in my AI harness: embedding models. I'm using an embedding model to give my AI's persistent memory system a semantic search protocol that makes its memory recall feel seamless to the human user."
+    },
+    {
+      "title": "High VRAM local coding model — still Qwen 3.6 27B?",
+      "author": "Generic_Name_Here",
+      "updated": "2026-05-12T22:34:14+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/",
+      "summary": "I’ve been using Qwen 3. 6 27B and it’s amazing. Not exactly your Opus replacement, but great for small tasks and checking work. But if you had 224GB of VRAM, would it still be your choice? Or is there something you consider better in the 100+B range (GPT-OSS, Deepseek, etc) that’s just not talked about as much because fewer people can run it?"
+    },
+    {
+      "title": "Luce DFlash + PFlash on AMD Strix Halo: Qwen3.6-27B at 2.23x decode and 3.05x prefill vs llama.cpp HIP",
+      "author": "sandropuppo",
+      "updated": "2026-05-12T18:09:59+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9pwn/luce_dflash_pflash_on_amd_strix_halo_qwen3627b_at/",
+      "summary": "We just shipped DFlash and PFlash support for the AMD Ryzen AI MAX+ 395 iGPU (gfx1151, Strix Halo, 128 GiB unified memory). Same Luce DFlash stack from the RTX 3090 post a couple weeks back , now running on the consumer AMD APU class."
+    },
+    {
+      "title": "Agentic harness for theoretical physics research",
+      "author": "lewtun",
+      "updated": "2026-05-12T17:23:51+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tb8d57/agentic_harness_for_theoretical_physics_research/",
+      "summary": "Hi everyone, at Hugging Face we've been developing agentic harnesses for various domains and today we're releasing physics-intern to tackle research-level problems in theoretical physics."
+    },
+    {
+      "title": "llama.cpp docker images to run MTP models",
+      "author": "havenoammo",
+      "updated": "2026-05-13T14:20:07+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc132c/llamacpp_docker_images_to_run_mtp_models/",
+      "summary": "There have been many improvements to the MTP pull request and the llama. cpp main branch, such as image support and various bug fixes. I recently made a new build for my local machine, but keeping guides up to date is an issue, so I built Docker images to make running them easier. If you are already using llama."
+    },
+    {
+      "title": "I built Derpy Turtle: The Kokoro Trainer, a GUI for training better Kokoro voices with RVC",
+      "author": "Great-Investigator30",
+      "updated": "2026-05-12T22:24:57+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbgtux/i_built_derpy_turtle_the_kokoro_trainer_a_gui_for/",
+      "summary": "I’ve been working on a tool called Derpy Turtle: The Kokoro Trainer. It started as a random-walk experiment for Kokoro voices, but it has grown into its own thing: a Windows GUI for creating better local voice outputs by combining Kokoro voice search with RVC voice conversion."
+    },
+    {
+      "title": "Attention Drift: What Autoregressive Speculative Decoding Models Learn",
+      "author": "Thrumpwart",
+      "updated": "2026-05-12T19:10:13+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbbh82/attention_drift_what_autoregressive_speculative/",
+      "summary": "Speculative decoding accelerates LLM inference by drafting future tokens with a small model, but drafter models degrade sharply under template perturbation and long-context inputs."
+    }
+  ]
+}

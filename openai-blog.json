@@ -1,0 +1,110 @@
+{
+  "fetched_at": "2026-05-13T17:05:06.280Z",
+  "source": "OpenAI",
+  "items": [
+    {
+      "title": "How finance teams use Codex",
+      "link": "https://openai.com/academy/how-finance-teams-use-codex",
+      "pubDate": "Tue, 12 May 2026 15:00:00 GMT",
+      "description": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.",
+      "summary": "See how finance teams can use Codex to build review-ready assets for monthly business reviews, reporting, variance analysis, and planning. With Codex, finance teams can just build things. Start with the close workbooks, revenue and expense dashboards, forecast updates, prior MBRs, and owner notes you already use."
+    },
+    {
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "link": "https://openai.com/index/nvidia",
+      "pubDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.",
+      "summary": "At NVIDIA, engineers are using Codex as their default tool for complex engineering work, and to run end-to-end machine learning experiments. Codex, built on GPT‑5. 5 and running in production on NVIDIA GB200 and GB300 infrastructure, can handle much longer, more autonomous sessions — going beyond execution to surface issues and ideas that weren't part of the original prompt."
+    },
+    {
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "link": "https://openai.com/index/what-parameter-golf-taught-us",
+      "pubDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "description": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints.",
+      "summary": "Lessons from 1,000+ participants, 2,000+ submissions, and an open machine learning challenge shaped by coding agents. We launched Parameter Golf to engage and support the machine learning research community in exploring a new, tightly constrained machine learning problem."
+    },
+    {
+      "title": "AutoScout24 scales engineering with AI-powered workflows",
+      "link": "https://openai.com/index/autoscout24",
+      "pubDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.",
+      "summary": "Codex and ChatGPT accelerate development cycles, improve code quality, and expand AI adoption across 2,000 employees. AutoScout24 Group⁠(opens in a new window) is the largest pan-European and Canadian online car marketplace, connecting more than 30 million monthly users with over two million vehicle listings."
+    },
+    {
+      "title": "How ChatGPT adoption broadened in early 2026",
+      "link": "https://openai.com/signals/research/2026q1-update",
+      "pubDate": "Mon, 11 May 2026 15:00:00 GMT",
+      "description": "ChatGPT adoption surged in Q1 2026, with fastest growth among users over 35 and more balanced gender usage, signaling broader mainstream AI adoption.",
+      "summary": "Q1 data shows consumer adoption growth across inferred gender, age, and geography. In the first quarter of 2026, consumer ChatGPT growth broadened across age groups, continued to rise among users with typically feminine names, and deepened in more countries."
+    },
+    {
+      "title": "How enterprises are scaling AI",
+      "link": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "pubDate": "Mon, 11 May 2026 10:00:00 GMT",
+      "description": "How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale.",
+      "summary": "Interviews with executives at Philips, BBVA, Mirakl, Scout24, Jetbrains and Scania converged on a shared reality for leaders: scaling AI is less about “rolling out AI” and more about building the conditions where people trust it, adopt it, and improve it over time."
+    },
+    {
+      "title": "OpenAI Campus Network: Student club interest form",
+      "link": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+      "pubDate": "Mon, 11 May 2026 10:00:00 GMT",
+      "description": "Join the OpenAI Campus Network—connect student clubs worldwide, access AI tools, host events, and build an AI-powered campus community.",
+      "summary": "Whether you're running events, building projects, or leading a community — we’d love to work with you. Anything else we should know about your club? (Optional: Include any key achievements, unique focuses, or pressing needs."
+    },
+    {
+      "title": "OpenAI launches DeployCo to help businesses build around intelligence",
+      "link": "https://openai.com/index/openai-launches-the-deployment-company",
+      "pubDate": "Mon, 11 May 2026 06:00:00 GMT",
+      "description": "OpenAI launches DeployCo, a new enterprise deployment company built to help organizations bring frontier AI into production and turn it into measurable business impact.",
+      "summary": "OpenAI has agreed to acquire Tomoro, giving the OpenAI Deployment Company experienced Forward Deployed Engineers from day one. OpenAI is launching the OpenAI Deployment Company, a new company designed to help organizations build and deploy AI systems they can rely on every day across their most important work."
+    },
+    {
+      "title": "Running Codex safely at OpenAI",
+      "link": "https://openai.com/index/running-codex-safely",
+      "pubDate": "Fri, 08 May 2026 12:30:00 GMT",
+      "description": "How OpenAI runs Codex securely with sandboxing, approvals, network policies, and agent-native telemetry to support safe and compliant coding agent adoption.",
+      "summary": "A look at the controls, boundaries, and telemetry OpenAI uses to govern coding agents in real workflows. As AI systems become more capable, they increasingly act on behalf of users. Coding agents can autonomously review repositories, run commands, and interact with development tools. These are tasks that previously required direct human execution."
+    },
+    {
+      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+      "link": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+      "pubDate": "Thu, 07 May 2026 13:00:00 GMT",
+      "description": "OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure.",
+      "summary": "How our latest models help each layer of the defensive ecosystem and accelerate the security flywheel. For years we’ve been chronicling our work to accelerate cybersecurity defenders, as part of our broader work to build the core infrastructure for AI."
+    },
+    {
+      "title": "Parloa builds service agents customers want to talk to",
+      "link": "https://openai.com/index/parloa",
+      "pubDate": "Thu, 07 May 2026 11:00:00 GMT",
+      "description": "Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions.",
+      "summary": "Parloa uses OpenAI models to simulate, evaluate, and run voice-driven customer service systems for the enterprise. In Parloa’s early days, Co-founder Stefan Ostwald spent a day inside an insurance call center, where his team had been building early voice experiences."
+    },
+    {
+      "title": "Advancing voice intelligence with new models in the API",
+      "link": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "pubDate": "Thu, 07 May 2026 10:00:00 GMT",
+      "description": "Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences.",
+      "summary": "We’re introducing three audio models in the API that unlock a new class of voice apps for developers. This demo is time-limited. By using it, you agree to OpenAI's Terms and acknowledge our Privacy Policy."
+    },
+    {
+      "title": "Introducing Trusted Contact in ChatGPT",
+      "link": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
+      "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
+      "description": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected.",
+      "summary": "People use ChatGPT to learn, explore ideas, solve problems, and reflect on personal questions. Sometimes those conversations can involve moments when someone may be struggling or looking for support. Our goal is to design systems that respond thoughtfully to sensitive conversations and encourage people to connect with real-world help when needed."
+    },
+    {
+      "title": "Testing ads in ChatGPT",
+      "link": "https://openai.com/index/testing-ads-in-chatgpt",
+      "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
+      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
+    },
+    {
+      "title": "Simplex rethinks software development with Codex",
+      "link": "https://openai.com/index/simplex",
+      "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
+      "description": "Simplex boosts software development with ChatGPT Enterprise and Codex, reducing design, build, and testing time while scaling AI-driven workflows.",
+      "summary": "Simplex is using ChatGPT Enterprise and Codex to validate AI-driven development and scale more productive workflows. Simplex is a technology partner that works across consulting, systems development, and operations."
+    }
+  ]
+}
