@@ -1,5 +1,5 @@
 {
-  "count": 23,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -221,16 +221,6 @@
       "source": "Apple Machine Learning Research（RSS）",
       "publishedAt": "2026-05-07T00:00:00.000Z",
       "summary": "学习型编解码器相比传统硬编码方法的显著优势在于能直接针对人类视觉系统进行优化，但目前尚未出现兼具感知质量与实用性的图像编解码方案。本研究通过全面分析关键建模选择，旨在填补这一空白，探索在感知质量与运行效率间的联合优化方案，并在消融实验中引入了若干新技术。研究进一步采用性能感知的神经架构优化方法，为构建真正实用化的学习型图像压缩系统提供了系统性的设计指南与实验基准。",
-      "category": "paper"
-    },
-    {
-      "id": "cmovtn0nb006rslcx9tdeqjih",
-      "title": "研究强化学习中意外对思维链（CoT）评分的影响",
-      "title_en": "Investigating the consequences of accidentally grading CoT during RL",
-      "url": "https://alignment.openai.com/accidental-cot-grading",
-      "source": "OpenAI：Alignment 研究博客（RSS）",
-      "publishedAt": "2026-05-06T23:00:00.000Z",
-      "summary": "研究发现，部分已发布的模型存在有限的意外对思维链（CoT）进行评分的情况。团队已修复受影响的奖励通路，并确认没有明确证据表明模型的可监控性因此下降。这表明当前强化学习训练中对CoT的意外评分影响有限，且修复后未对监控能力产生负面影响。",
       "category": "paper"
     }
   ]
