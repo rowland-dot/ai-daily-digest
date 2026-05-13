@@ -241,8 +241,20 @@ jobs:
       # EN+ZH summaries for OpenAI / Simon / r/LocalLLaMA, and commits
       # data/claude-summaries.json back to the repo — which triggers a
       # second fast-path build that re-renders with Claude summaries.
-      - name: Fire summarizer routine (full-mode only)
-        if: steps.mode-final.outputs.value == 'full'
+      #
+      # GATED to schedule + manual triggers only (2026-05-14): code
+      # pushes that touch fetch/audio scripts go full-mode (fresh
+      # data + audio regen) but DO NOT fire the routine — those
+      # iterations would burn the daily routine quota for no real
+      # gain (the next cron run picks up the changes). The routine
+      # fires from:
+      #   - schedule cron (daily 20:30 UTC)
+      #   - workflow_dispatch (manual GHA trigger)
+      #   - the routine UI's "Run now" button (independent of GHA)
+      - name: Fire summarizer routine (cron + manual only)
+        if: >
+          steps.mode-final.outputs.value == 'full' &&
+          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         run: |
           curl -fsS -X POST \
             -H "Authorization: Bearer $TOKEN" \
