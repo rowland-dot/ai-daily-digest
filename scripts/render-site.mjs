@@ -851,13 +851,20 @@ const AUDIO_PLAYER_SCRIPT = `
       try { cuesData = JSON.parse(cuesEl.textContent); } catch (e) {}
     }
     var lastAnchor = null;
-    var userScrollOverride = false;
     var lastUserScrollAt = 0;
-    // Disable auto-scroll for 8s after the user manually scrolls so we
-    // don't fight against them.
-    window.addEventListener('scroll', function() {
-      lastUserScrollAt = Date.now();
-    }, { passive: true });
+    // Detect USER-initiated scroll via input events (wheel, touch,
+    // navigation keys). Programmatic scrollIntoView does NOT fire these,
+    // so we can pause auto-scroll for 8s after real user input without
+    // the auto-scroll triggering its own lockout.
+    function markUser() { lastUserScrollAt = Date.now(); }
+    window.addEventListener('wheel', markUser, { passive: true });
+    window.addEventListener('touchmove', markUser, { passive: true });
+    window.addEventListener('keydown', function(e) {
+      // Page navigation keys
+      if (['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].indexOf(e.key) !== -1) {
+        markUser();
+      }
+    });
 
     function maybeScroll() {
       if (!cuesData || !cuesData.cues) return;

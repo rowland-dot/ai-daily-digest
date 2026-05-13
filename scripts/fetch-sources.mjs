@@ -84,17 +84,45 @@ function stripTags(s) {
 }
 
 function firstParagraph(rawHtmlOrText) {
-  // Extract just the first <p>...</p> from an atom <summary> body.
-  // The summary content is HTML-encoded inside the XML, so we decode
-  // entities first to recover <p>/<a>/<strong>/etc., find the first
-  // paragraph, and strip remaining tags inside it.
+  // Extract the first SUBSTANTIVE paragraph from an atom <summary> body.
+  //
+  // Simon Willison's atom summaries follow a specific pattern:
+  //   - Tool/Release/Quoting posts begin with a "label paragraph":
+  //     <p><strong>Tool:</strong> <a>Link Title</a></p>
+  //     ...then the actual content follows in a separate <p> or <blockquote>.
+  //   - TIL / blog posts start directly with the content paragraph.
+  //   - "Quoting Foo" posts start with a <blockquote>.
+  //
+  // Treating the label paragraph as "first paragraph" was wrong — it's
+  // really a title, not a paragraph. This function skips label-style
+  // lead paragraphs and returns the first real content block.
+
   if (!rawHtmlOrText) return "";
   const decoded = decodeEntities(rawHtmlOrText);
-  const pMatch = /<p[^>]*>([\s\S]*?)<\/p>/i.exec(decoded);
-  // If no <p> tags at all, fall back to the first double-newline chunk
-  // (a plausible paragraph break in plain-text summaries).
-  const chunk = pMatch ? pMatch[1] : decoded.split(/\n\s*\n/)[0];
-  return stripTags(chunk);
+
+  // Match top-level <p>...</p> and <blockquote>...</blockquote> blocks
+  // in source order.
+  const blockRe = /<(p|blockquote)[^>]*>([\s\S]*?)<\/\1>/gi;
+  const blocks = [...decoded.matchAll(blockRe)];
+
+  if (blocks.length === 0) {
+    // No structured blocks — fall back to first double-newline chunk.
+    return stripTags(decoded.split(/\n\s*\n/)[0]);
+  }
+
+  // A "label paragraph" looks like:  <strong>Tool:</strong> <a>...</a>
+  // or sometimes:                    <strong>Quoting:</strong> ...
+  const isLabelPara = (inner) =>
+    /^\s*<strong>\s*[A-Z][a-zA-Z ]+\s*:\s*<\/strong>/i.test(inner);
+
+  for (let i = 0; i < blocks.length; i++) {
+    const inner = blocks[i][2];
+    if (i === 0 && isLabelPara(inner)) continue;
+    return stripTags(inner);
+  }
+
+  // Everything was a label — return the first (it IS the entire post).
+  return stripTags(blocks[0][2]);
 }
 
 function firstMatch(re, str, group = 1) {

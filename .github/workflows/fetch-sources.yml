@@ -58,13 +58,13 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v2: bumped when separator phrases + audio-cues added, so old
-          # cached MP3s without "Next," separators and matching cues file
-          # get regenerated.
+          # v3: bumped when Simon's first-paragraph extraction was fixed
+          # (was reading the "Tool:"/"Release:" label paragraph instead
+          # of the real content). Audio narration changes => regen.
           path: |
             docs/digest.mp3
             docs/audio-cues.json
-          key: digest-mp3-v2-${{ steps.today.outputs.date }}
+          key: digest-mp3-v3-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'
