@@ -34,6 +34,20 @@ jobs:
         with:
           python-version: "3.11"
 
+      # The translation / essence caches grow over time and benefit from
+      # being preserved across runs regardless of which articles surface
+      # today. Restore the most recent one BEFORE fetching so fetch can
+      # reuse already-summarised URLs.
+      - name: Restore helpers cache (translation + essence)
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/translation-cache.json
+            data/article-essence-cache.json
+          key: helpers-${{ github.run_id }}
+          restore-keys: |
+            helpers-
+
       - name: Fetch upstream sources (includes Follow Builders feeds)
         run: node scripts/fetch-sources.mjs
 
@@ -41,14 +55,47 @@ jobs:
         id: today
         run: echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
-      - name: Restore today's audio cache (if any)
+      # Hash data/*.json content (excluding helper caches and volatile
+      # `fetched_at` timestamps) so the audio cache key reflects the
+      # actual article set. When the data hash matches a previous run,
+      # the cached audio is valid for THIS data — page + audio stay in
+      # lockstep. When data changes (e.g. AIHOT publishes a new post
+      # mid-day), the cache misses and audio regenerates against the
+      # fresh data. This fixes the "audio cue points at the wrong card
+      # after a new article appears" misalignment.
+      - name: Hash fetched data (audio cache invalidator)
+        id: data-hash
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+            const crypto = require("crypto");
+            const ignore = new Set(["translation-cache.json", "article-essence-cache.json"]);
+            const files = fs.readdirSync("data").filter(f => f.endsWith(".json") && !ignore.has(f)).sort();
+            const h = crypto.createHash("sha256");
+            for (const f of files) {
+              const raw = fs.readFileSync(path.join("data", f), "utf8");
+              const obj = JSON.parse(raw);
+              // Strip volatile fields that change every run but do not
+              // affect the audio (timestamps, per-source elapsed-ms).
+              if (obj && typeof obj === "object") {
+                delete obj.fetched_at;
+                delete obj.date_utc;
+                if (obj.sources) for (const k of Object.keys(obj.sources)) { delete obj.sources[k].ms; }
+              }
+              h.update(f + ":" + JSON.stringify(obj) + "\n");
+            }
+            process.stdout.write(h.digest("hex").slice(0, 16));
+          ' > .data-hash.tmp
+          DATA_HASH=$(cat .data-hash.tmp)
+          rm -f .data-hash.tmp
+          echo "hash=$DATA_HASH" >> $GITHUB_OUTPUT
+          echo "Data hash: $DATA_HASH"
+
+      - name: Restore audio cache (keyed on data content)
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v12: Article-essence engine — real TLDRs fetched via Jina
-          # Reader for Simon Willison, OpenAI lab posts, and Follow
-          # Builders blogs. Caches per-URL summaries so unchanged
-          # articles are free on subsequent runs.
           path: |
             docs/digest.mp3
             docs/digest-en.mp3
@@ -57,9 +104,7 @@ jobs:
             docs/audio-cues-en.json
             docs/audio-cues-zh.json
             docs/content-translations.json
-            data/translation-cache.json
-            data/article-essence-cache.json
-          key: digest-mp3-v14-${{ steps.today.outputs.date }}
+          key: audio-v15-${{ steps.data-hash.outputs.hash }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'

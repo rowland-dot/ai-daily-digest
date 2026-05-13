@@ -607,9 +607,10 @@ const PAGE_CSS = `
   }
 
   /* Click-to-seek on article cards. JS adds .audio-seekable to any
-     article whose id matches an audio cue, then a click anywhere on the
-     card (except links and buttons) seeks the audio there. */
-  .audio-seekable { cursor: pointer; position: relative; }
+     article whose id matches an audio cue and attaches a "▶ Listen
+     from here" button. Only the button seeks; the rest of the card
+     remains a normal text-selectable area. */
+  .audio-seekable { position: relative; }
   .audio-seekable .seek-hint {
     position: absolute;
     top: 8px; right: 8px;
@@ -617,18 +618,27 @@ const PAGE_CSS = `
     color: #fff;
     font-size: 11px;
     font-weight: 600;
-    padding: 3px 8px;
+    padding: 4px 9px;
     border-radius: 999px;
+    border: none;
+    cursor: pointer;
     opacity: 0;
     transform: translateY(-4px);
-    transition: opacity 0.15s ease, transform 0.15s ease;
-    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, background 0.15s ease;
     z-index: 1;
     white-space: nowrap;
+    font-family: inherit;
   }
-  .audio-seekable:hover .seek-hint {
+  .audio-seekable:hover .seek-hint,
+  .audio-seekable:focus-within .seek-hint,
+  .seek-hint:focus-visible {
     opacity: 1;
     transform: translateY(0);
+  }
+  .seek-hint:hover { background: var(--accent-strong, var(--accent)); filter: brightness(1.08); }
+  /* Keep button visible on touch devices that have no hover state. */
+  @media (hover: none) {
+    .audio-seekable .seek-hint { opacity: 0.92; transform: translateY(0); }
   }
 
   /* Floating mini-player (bottom-right).
@@ -1144,16 +1154,14 @@ const AUDIO_PLAYER_SCRIPT = `
     });
 
     // ---- Click-to-seek on article cards (rebound on language change) ----
+    // The handler binds to the explicit "▶ Listen from here" button only —
+    // earlier versions bound to the whole article, which made stray clicks
+    // (selecting text, clicking the card body) jump audio unexpectedly.
     function refreshSeekBindings() {
-      // Tear down previous bindings: remove .audio-seekable + .seek-hint
       document.querySelectorAll('.audio-seekable').forEach(function(el) {
         el.classList.remove('audio-seekable');
         var hint = el.querySelector('.seek-hint');
         if (hint) hint.remove();
-        if (el._seekHandler) {
-          el.removeEventListener('click', el._seekHandler);
-          el._seekHandler = null;
-        }
       });
       if (!cuesData || !cuesData.cues) return;
       var cueByAnchor = {};
@@ -1162,19 +1170,18 @@ const AUDIO_PLAYER_SCRIPT = `
         var cue = cueByAnchor[el.id];
         if (!cue) return;
         el.classList.add('audio-seekable');
-        var hint = document.createElement('span');
-        hint.className = 'seek-hint';
-        hint.textContent = '▶ Listen from here';
-        el.appendChild(hint);
-        var handler = function(e) {
-          if (e.target.closest('a, button, input, textarea, select')) return;
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'seek-hint';
+        btn.textContent = '▶ Listen from here';
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
           audio.currentTime = cue.start + 0.05;
           fab.setAttribute('data-expanded', 'true');
           lastUserScrollAt = Date.now();
           if (audio.paused) tryPlay();
-        };
-        el._seekHandler = handler;
-        el.addEventListener('click', handler);
+        });
+        el.appendChild(btn);
       });
     }
     refreshSeekBindings();
