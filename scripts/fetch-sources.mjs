@@ -679,7 +679,7 @@ async function openaiBlog(limit = 15) {
   return { fetched_at: new Date().toISOString(), source: "OpenAI", items };
 }
 
-async function simonWillison(limit = 12) {
+async function simonWillison(limit = 12) {   // Phase 1e: cap held at 12; routine acts as AI-relevance gate (Phase 5)
   const xml = await fetchText("https://simonwillison.net/atom/everything/");
   const entries = parseAtomEntries(xml).slice(0, limit);
   // Replace the atom <summary> (often just the title or a brief
@@ -689,71 +689,141 @@ async function simonWillison(limit = 12) {
   return { fetched_at: new Date().toISOString(), source: "Simon Willison", entries };
 }
 
-async function localLlama(limit = 14) {
-  // r/LocalLLaMA top-of-day via Reddit's Atom feed. Reddit's JSON API
-  // returns 403 from GitHub Actions IPs; the RSS path is on a different
-  // route and tolerates datacenter traffic.
+// Refine slug-style auto-titles ("foo/bar · Hugging Face" or
+// "owner/repo") by promoting the first sentence of the summary to
+// title. Slug goes into sourceLabel so the original ref stays visible.
+function _refineSlugTitle(e) {
+  if (!e.summary) return;
+  const t = (e.title || "").trim();
+  const isHfAuto = /·\s*Hugging Face(?:\s+Spaces)?\s*$/i.test(t);
+  const isBareSlug = !/\s/.test(t) && /\//.test(t) && t.length < 80;
+  if (!(isHfAuto || isBareSlug)) return;
+  const firstSentence = e.summary.split(/(?<=[.!?])\s+/)[0] || "";
+  const clean = firstSentence.replace(/\.+$/, "").trim();
+  if (clean.length >= 30 && clean.length <= 200) {
+    e.sourceLabel = t;
+    e.title = clean;
+  }
+}
+
+async function localLlama(limit = 12) {
+  // Phase 1d (2026-05-14):
+  //   - Switch from RSS → JSON. JSON ships score + num_comments which
+  //     RSS doesn't, enabling the heuristic filter below.
+  //   - Heuristic filter: score >= 100 AND (body >= 200 chars OR
+  //     comments >= 30). Drops hardware-anxiety / meme / single-user-
+  //     support posts before the routine even sees them.
+  //   - Cap reduced from 14 → 12 candidates. Routine acts as final
+  //     quality gate (Phase 5).
   //
-  // RSS gives us title, link, author, updated, content — but NOT score,
-  // comments, or flair. Trade-off we accept for the section to actually
-  // populate. The unique UA follows Reddit's API etiquette (platform:
-  // app:version (by /u/x)) which earns a lighter rate-limit budget.
+  // If JSON returns 403 (GHA IP blocks have happened before), fall
+  // back to the RSS path so the section still populates — just
+  // without scores, in which case the filter accepts all bodies.
   const REDDIT_UA = "web:ai-daily-digest:v1.0 (by /u/rowland-dot)";
-  const xml = await fetchText(
-    "https://www.reddit.com/r/LocalLLaMA/top.rss?t=day&limit=30",
-    { headers: { "User-Agent": REDDIT_UA, "Accept": "application/rss+xml,text/xml,*/*" } },
-  );
-  const entries = [...xml.matchAll(/<entry[^>]*>([\s\S]*?)<\/entry>/g)].map((m) => {
-    const block = m[1];
-    const title = decodeEntities(firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, block));
-    const link = firstMatch(/<link[^>]*href="([^"]+)"/i, block);
-    const updated = firstMatch(/<updated[^>]*>([\s\S]*?)<\/updated>/i, block);
-    const author = firstMatch(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>[\s\S]*?<\/author>/i, block);
-    const contentRaw = firstMatch(/<content[^>]*>([\s\S]*?)<\/content>/i, block);
-    // Reddit RSS ships the OP's self-post HTML inline in <content>.
-    // Run it through the SAME one-paragraph essence engine used for
-    // Simon Willison, OpenAI lab posts, and Follow Builders blogs.
-    // Link-posts have no body → essence returns "" → filtered later.
-    const summary = essenceFromHtmlBody(link, contentRaw);
-    const body = fullBodyFromHtmlBody(contentRaw);
-    return {
-      title,
-      author: (author || "").replace(/^\/u\//, ""),
-      updated,
-      permalink: link,
-      summary,
-      body,   // full cleaned plaintext for the routine summarizer
-    };
-  });
-  // Filter: drop posts with no real TLDR (image-only / meme / link-out
-  // with no self-post body). These are noise — title alone rarely
-  // conveys whether the post is worth opening, and image-driven
-  // jokes pollute the section. "If the TLDR engine returns nothing,
-  // eliminate on spot." (user rule, 2026-05-14.)
-  //
-  // Title refinement: when Reddit auto-grabbed a meaningless page
-  // title (HF model card "Foo/Bar · Hugging Face", or a bare repo
-  // slug "owner/repo" with no spaces), promote the summary's first
-  // sentence to title. The slug-style title is moved into a
-  // sourceLabel so the original ref stays visible.
-  for (const e of entries) {
-    if (!e.summary) continue;
-    const t = (e.title || "").trim();
-    const isHfAuto = /·\s*Hugging Face(?:\s+Spaces)?\s*$/i.test(t);
-    const isBareSlug = !/\s/.test(t) && /\//.test(t) && t.length < 80;
-    if (!(isHfAuto || isBareSlug)) continue;
-    const firstSentence = e.summary.split(/(?<=[.!?])\s+/)[0] || "";
-    const clean = firstSentence.replace(/\.+$/, "").trim();
-    if (clean.length >= 30 && clean.length <= 200) {
-      e.sourceLabel = t;
-      e.title = clean;
+  const SCORE_MIN = 100;
+  const BODY_MIN = 200;
+  const COMMENTS_MIN = 30;
+
+  let posts = [];
+  let usedFallback = false;
+
+  // --- Primary: JSON ---
+  try {
+    const json = await fetchJson(
+      "https://www.reddit.com/r/LocalLLaMA/top.json?t=day&limit=40",
+      { headers: { "User-Agent": REDDIT_UA } },
+    );
+    const children = (json && json.data && json.data.children) || [];
+    posts = children
+      .map((c) => c && c.data)
+      .filter((d) => d && !d.stickied && !d.over_18)
+      .map((d) => {
+        const bodyRaw = String(d.selftext || "");
+        const body = bodyRaw
+          .replace(/\b\/?u\/[A-Za-z0-9_\-]+\b/g, "")   // strip Reddit usernames
+          .replace(/\s+/g, " ")
+          .trim();
+        const summary = body
+          ? (body.split(/(?<=[.!?])\s+/).find((s) => s.length >= 40) || body.slice(0, 360))
+          : "";
+        return {
+          title: decodeEntities(d.title || ""),
+          author: d.author || "",
+          updated: d.created_utc ? new Date(d.created_utc * 1000).toISOString() : "",
+          permalink: `https://www.reddit.com${d.permalink || ""}`,
+          score: d.score || 0,
+          comments: d.num_comments || 0,
+          flair: d.link_flair_text || "",
+          summary: summary.slice(0, 600),
+          body,
+        };
+      });
+  } catch (e) {
+    console.warn("[localLlama] JSON path failed, falling back to RSS:", e.message);
+    usedFallback = true;
+  }
+
+  // --- Fallback: RSS (no score/comments → score filter relaxed) ---
+  if (usedFallback || posts.length === 0) {
+    try {
+      const xml = await fetchText(
+        "https://www.reddit.com/r/LocalLLaMA/top.rss?t=day&limit=30",
+        { headers: { "User-Agent": REDDIT_UA, "Accept": "application/rss+xml,text/xml,*/*" } },
+      );
+      posts = [...xml.matchAll(/<entry[^>]*>([\s\S]*?)<\/entry>/g)].map((m) => {
+        const block = m[1];
+        const title = decodeEntities(firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, block));
+        const link = firstMatch(/<link[^>]*href="([^"]+)"/i, block);
+        const updated = firstMatch(/<updated[^>]*>([\s\S]*?)<\/updated>/i, block);
+        const author = firstMatch(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>[\s\S]*?<\/author>/i, block);
+        const contentRaw = firstMatch(/<content[^>]*>([\s\S]*?)<\/content>/i, block);
+        const summary = essenceFromHtmlBody(link, contentRaw);
+        const body = fullBodyFromHtmlBody(contentRaw);
+        return {
+          title,
+          author: (author || "").replace(/^\/u\//, ""),
+          updated,
+          permalink: link,
+          score: null,    // unknown — RSS doesn't ship score
+          comments: null,
+          flair: "",
+          summary,
+          body,
+        };
+      });
+      usedFallback = true;
+    } catch (e) {
+      console.warn("[localLlama] RSS fallback also failed:", e.message);
     }
   }
-  const posts = entries.filter((e) => e.summary && e.summary.length >= 60).slice(0, limit);
+
+  // Refine auto-titles before filtering.
+  for (const p of posts) _refineSlugTitle(p);
+
+  // Heuristic quality filter. When JSON path succeeded we have scores
+  // + comment counts; apply the full rule. When falling back to RSS
+  // we don't have those, so relax to "has a real body".
+  const filtered = posts.filter((p) => {
+    if (!p.summary || p.summary.length < 60) return false;   // no TLDR = noise
+    if (p.score == null) {
+      // RSS fallback path — relax: just need a real body
+      return (p.body || "").length >= BODY_MIN;
+    }
+    const passesScore = p.score >= SCORE_MIN;
+    const passesEngagement =
+      (p.body || "").length >= BODY_MIN || p.comments >= COMMENTS_MIN;
+    return passesScore && passesEngagement;
+  });
+
+  const trimmed = filtered.slice(0, limit);
+  console.log(
+    `[localLlama] ${usedFallback ? "RSS" : "JSON"} path: ${posts.length} candidates → ${filtered.length} after filter → ${trimmed.length} after cap`,
+  );
+
   return {
     fetched_at: new Date().toISOString(),
     source: "r/LocalLLaMA",
-    posts,
+    posts: trimmed,
   };
 }
 
