@@ -502,6 +502,50 @@ async function simonWillison(limit = 12) {
   return { fetched_at: new Date().toISOString(), source: "Simon Willison", entries };
 }
 
+async function localLlama(limit = 14) {
+  // r/LocalLLaMA top-of-day. Reddit's public JSON endpoint, no auth.
+  // Filters stickied posts and NSFW. Keeps self-post body as a blurb;
+  // for link-posts we just keep the title (Jina on random reddit URLs
+  // is noisy — domain-targeted essence is a future iteration).
+  const json = await fetchJson(
+    "https://www.reddit.com/r/LocalLLaMA/top.json?t=day&limit=30",
+  );
+  const children = (json && json.data && json.data.children) || [];
+  const posts = children
+    .map((c) => c && c.data)
+    .filter((d) => d && !d.stickied && !d.over_18)
+    .slice(0, limit)
+    .map((d) => {
+      const body = String(d.selftext || "").trim();
+      // Strip reddit-style heading markers and collapse whitespace.
+      const blurb = body
+        ? body
+            .replace(/\r/g, "")
+            .split(/\n{2,}/)
+            .map((p) => p.replace(/\s+/g, " ").trim())
+            .find((p) => p.length > 40) || body.slice(0, 320)
+        : "";
+      return {
+        title: decodeEntities(d.title || ""),
+        author: d.author || "",
+        flair: d.link_flair_text || "",
+        score: d.score || 0,
+        comments: d.num_comments || 0,
+        created_utc: d.created_utc || 0,
+        permalink: `https://www.reddit.com${d.permalink}`,
+        url: d.url || "",
+        is_self: !!d.is_self,
+        domain: d.domain || "",
+        summary: blurb.slice(0, 360),
+      };
+    });
+  return {
+    fetched_at: new Date().toISOString(),
+    source: "r/LocalLLaMA",
+    posts,
+  };
+}
+
 async function followBuildersFeed(name) {
   // Fetch the upstream Follow Builders feed verbatim. raw.githubusercontent.com
   // serves these JSON files as text/plain, so we fetchText + JSON.parse
@@ -532,6 +576,7 @@ await runSource("simon_willison", "simon-willison.json", simonWillison);
 await runSource("follow_builders_x", "follow-builders-x.json", () => followBuildersFeed("x"));
 await runSource("follow_builders_podcasts", "follow-builders-podcasts.json", () => followBuildersFeed("podcasts"));
 await runSource("follow_builders_blogs", "follow-builders-blogs.json", () => followBuildersFeed("blogs"));
+await runSource("localllama", "localllama.json", localLlama);
 
 await writeJson("manifest.json", manifest);
 console.log("manifest:", JSON.stringify(manifest.sources, null, 2));

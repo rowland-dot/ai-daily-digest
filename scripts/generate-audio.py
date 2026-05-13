@@ -481,6 +481,20 @@ def build_simon_segments(entries: list[dict]) -> list:
     return _en_seg("Builder writing, from Simon Willison's weblog.", rows)
 
 
+def build_llama_segments(posts: list[dict]) -> list:
+    rows = []
+    for idx, p in enumerate(posts[:OTHER_CAP]):
+        title = field(p, "title")
+        summary = field(p, "summary", limit=220)
+        parts = []
+        if title:
+            parts.append(title + ".")
+        if summary:
+            parts.append(summary + ".")
+        rows.append((f"article-llama-{idx}", " ".join(parts)))
+    return _en_seg("Top of the day from r/LocalLLaMA.", rows)
+
+
 def build_gh_segments(repos: list[dict]) -> list:
     rows = []
     for idx, r in enumerate(repos[:OTHER_CAP]):
@@ -653,6 +667,11 @@ def collect_and_translate_ui_strings() -> dict:
     for b in bfeed.get("blogs", []) or []:
         add(b, "title")
 
+    # r/LocalLLaMA
+    llama = load("localllama.json") or {}
+    for p in llama.get("posts", []) or []:
+        add(p, "title", "summary")
+
     print(f"[i18n] Translating {len(strings)} unique UI strings...")
     out: dict[str, dict[str, str]] = {}
     for i, s in enumerate(sorted(strings)):
@@ -751,13 +770,10 @@ def main() -> int:
         if entries:
             segments.extend(build_simon_segments(entries))
 
-    gh = load("github-trending.json")
-    if gh and gh.get("repos"):
-        segments.extend(build_gh_segments(gh["repos"]))
-
-    hf = load("hf-popular.json")
-    if hf and hf.get("models"):
-        segments.extend(build_hf_segments(hf["models"]))
+    # GitHub Trending and HuggingFace are intentionally excluded from
+    # audio narration. They're code identifiers, repo slugs, and model
+    # IDs — they read poorly in voice and don't translate to the EN/ZH
+    # tracks either. Keep them visible on the page only.
 
     # Follow Builders: no date filter — trust upstream curation.
     x_feed = load("follow-builders-x.json")
@@ -769,6 +785,10 @@ def main() -> int:
     blog_feed = load("follow-builders-blogs.json")
     if blog_feed and blog_feed.get("blogs"):
         segments.extend(build_fb_blog_segments(blog_feed))
+
+    llama = load("localllama.json")
+    if llama and llama.get("posts"):
+        segments.extend(build_llama_segments(llama["posts"]))
 
     segments.append((
         None,

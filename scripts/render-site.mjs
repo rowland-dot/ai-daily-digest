@@ -179,6 +179,31 @@ function builderWritingSection(entries) {
     .join("")}</ul>`;
 }
 
+function localLlamaSection(posts) {
+  if (!posts.length) return ``;
+  const fmtDomain = (p) => {
+    if (p.is_self) return "r/LocalLLaMA";
+    if (p.domain) return p.domain.replace(/^www\./, "");
+    return "link";
+  };
+  return `<ul class="writing-list">${posts
+    .map(
+      (p, idx) => `
+    <li class="writing-item" id="article-llama-${idx}">
+      <a class="writing-title" href="${escapeHtml(p.permalink)}" target="_blank" rel="noopener"${txAttrs(p.title)}>${escapeHtml(p.title || "(untitled)")}</a>
+      ${p.summary ? `<p class="writing-summary"${txAttrs(p.summary)}>${escapeHtml(p.summary)}</p>` : ""}
+      <div class="writing-meta">
+        <span>${escapeHtml(fmtDomain(p))}</span>
+        ${p.flair ? `<span class="badge">${escapeHtml(p.flair)}</span>` : ""}
+        ${typeof p.score === "number" ? `<span>· ▲ ${p.score.toLocaleString()}</span>` : ""}
+        ${typeof p.comments === "number" ? `<span>· 💬 ${p.comments.toLocaleString()}</span>` : ""}
+      </div>
+    </li>
+  `,
+    )
+    .join("")}</ul>`;
+}
+
 function followBuildersSection(xItems, podItems, blogItems) {
   const renderTweet = (t, idx) => {
     const fullText = t.text || "";
@@ -423,6 +448,13 @@ const PAGE_CSS = `
     color: var(--text);
   }
   nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
+  nav.toc a.toc-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--surface);
+    box-shadow: 0 1px 6px var(--accent-soft);
+  }
+  nav.toc a.toc-active:hover { background: var(--accent); color: var(--surface); }
 
   /* Sections — scroll-margin-top reserves space for the sticky TOC so
      clicking a TOC link doesn't bury the section's H2 under the nav.
@@ -1008,6 +1040,9 @@ const AUDIO_PLAYER_SCRIPT = `
       document.querySelectorAll('.now-playing').forEach(function(n) {
         n.classList.remove('now-playing');
       });
+      document.querySelectorAll('nav.toc a.toc-active').forEach(function(n) {
+        n.classList.remove('toc-active');
+      });
       // Refresh click-to-seek bindings with new cue set
       refreshSeekBindings();
     });
@@ -1047,6 +1082,15 @@ const AUDIO_PLAYER_SCRIPT = `
             n.classList.remove('now-playing');
           });
           el.classList.add('now-playing');
+          // Highlight the TOC link for whichever section contains this article.
+          var section = el.closest('section.block');
+          if (section && section.id) {
+            document.querySelectorAll('nav.toc a.toc-active').forEach(function(n) {
+              n.classList.remove('toc-active');
+            });
+            var link = document.querySelector('nav.toc a[href="#' + section.id + '"]');
+            if (link) link.classList.add('toc-active');
+          }
         }
         lastAnchor = active;
       }
@@ -1151,6 +1195,7 @@ async function renderPage({
   xFeed,
   podFeed,
   blogFeed,
+  localLlamaData,
   audioAvailable,
   audioCuesAll,
   audioTracks,
@@ -1187,6 +1232,9 @@ async function renderPage({
   const builderPods = (podFeed?.podcasts || []);
   const builderBlogs = (blogFeed?.blogs || []);
 
+  // r/LocalLLaMA: top-of-day, no extra date filter (upstream is daily).
+  const llamaPosts = (localLlamaData?.posts || []).slice(0, OTHER_CAP);
+
   // Has-content flags drive both section visibility and TOC entries.
   const has = {
     models: modelItems.length > 0,
@@ -1198,6 +1246,7 @@ async function renderPage({
     trending: ghRepos.length > 0,
     hf: hfModels.length > 0,
     builders: builderTweets.length > 0 || builderPods.length > 0 || builderBlogs.length > 0,
+    llama: llamaPosts.length > 0,
   };
 
   return `<!DOCTYPE html>
@@ -1238,6 +1287,7 @@ async function renderPage({
       ${has.labs ? `<li><a href="#labs">🏢 Lab posts</a></li>` : ""}
       ${has.writing ? `<li><a href="#writing">✍ Simon Willison</a></li>` : ""}
       ${has.builders ? `<li><a href="#builders">🎙 Builder voices</a></li>` : ""}
+      ${has.llama ? `<li><a href="#llama">🦙 r/LocalLLaMA</a></li>` : ""}
       ${has.trending ? `<li><a href="#trending">🚀 GitHub</a></li>` : ""}
       ${has.hf ? `<li><a href="#hf">🤗 HuggingFace</a></li>` : ""}
       <li><a href="digests/">🗂 Archive</a></li>
@@ -1293,6 +1343,13 @@ async function renderPage({
       <h2><span class="section-icon">🎙</span> Builder voices</h2>
       <p class="section-sub">Recent posts, episodes, and writing from named AI builders <span class="meta-time">(via Follow Builders feeds)</span>.</p>
       ${followBuildersSection(builderTweets, builderPods, builderBlogs)}
+    </section>` : ""}
+
+    ${has.llama ? `
+    <section id="llama" class="block">
+      <h2><span class="section-icon">🦙</span> r/LocalLLaMA</h2>
+      <p class="section-sub">Top of the day from the open-source LLM community — model drops, runtime benchmarks, quantization tricks.</p>
+      ${localLlamaSection(llamaPosts)}
     </section>` : ""}
 
     ${has.trending ? `
@@ -1397,6 +1454,7 @@ const simonWillisonData = await tryReadJson(join(DATA_DIR, "simon-willison.json"
 const xFeed = await tryReadJson(join(DATA_DIR, "follow-builders-x.json"));
 const podFeed = await tryReadJson(join(DATA_DIR, "follow-builders-podcasts.json"));
 const blogFeed = await tryReadJson(join(DATA_DIR, "follow-builders-blogs.json"));
+const localLlamaData = await tryReadJson(join(DATA_DIR, "localllama.json"));
 
 let archiveDays = [];
 if (existsSync(DIGESTS_DIR)) {
@@ -1465,6 +1523,7 @@ const pageHtml = await renderPage({
   xFeed,
   podFeed,
   blogFeed,
+  localLlamaData,
   audioAvailable,
   audioCuesAll,
   audioTracks,
