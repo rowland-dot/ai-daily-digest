@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T20:11:34.166Z",
+  "fetched_at": "2026-05-13T20:34:56.137Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
@@ -66,19 +66,19 @@
       "summary": "There have been many improvements to the MTP pull request and the llama. cpp main branch, such as image support and various bug fixes. I recently made a new build for my local machine, but keeping guides up to date is an issue, so I built Docker images to make running them easier. If you are already using llama."
     },
     {
+      "title": "MI50s Qwen 3.6 27B @52.8 tps TG @1569 tps PP (no MTP, no Quant)",
+      "author": "ai-infos",
+      "updated": "2026-05-13T19:08:24+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc9j6u/mi50s_qwen_36_27b_528_tps_tg_1569_tps_pp_no_mtp/",
+      "summary": "TL;DR Results from the title are for single inference with 2 prompt of 1k and 15k tokens. So no MTP (as it’s slower for big prompt), no DFlash (working too but slower for big prompt), no quant used (full precision wanted) and the results are pretty good for a 2018 card."
+    },
+    {
       "title": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture",
       "author": "pmttyji",
       "updated": "2026-05-13T16:08:45+00:00",
       "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc47q0/sensenovasensenovau1a3bmot_hugging_face/",
       "summary": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification .",
       "sourceLabel": "sensenova/SenseNova-U1-A3B-MoT · Hugging Face"
-    },
-    {
-      "title": "MI50s Qwen 3.6 27B @52.8 tps TG @1569 tps PP (no MTP, no Quant)",
-      "author": "ai-infos",
-      "updated": "2026-05-13T19:08:24+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc9j6u/mi50s_qwen_36_27b_528_tps_tg_1569_tps_pp_no_mtp/",
-      "summary": "TL;DR Results from the title are for single inference with 2 prompt of 1k and 15k tokens. So no MTP (as it’s slower for big prompt), no DFlash (working too but slower for big prompt), no quant used (full precision wanted) and the results are pretty good for a 2018 card."
     },
     {
       "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
@@ -95,11 +95,11 @@
       "summary": "I’ve been working on a tool called Derpy Turtle: The Kokoro Trainer. It started as a random-walk experiment for Kokoro voices, but it has grown into its own thing: a Windows GUI for creating better local voice outputs by combining Kokoro voice search with RVC voice conversion."
     },
     {
-      "title": "qwen3.6 just stops",
-      "author": "robertpro01",
-      "updated": "2026-05-13T13:30:59+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbzr64/qwen36_just_stops/",
-      "summary": "Sometimes qwen 3. 6 just stops at the middle of a task, is there a way to avoid it?"
+      "title": "Web-Search is coming to a screeching performance halt as Google shuts down their free search index, and traffic defenders like Cloudflare challenge AI at every gateway. What are our options?",
+      "author": "NetTechMan",
+      "updated": "2026-05-13T19:35:29+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tcaboi/websearch_is_coming_to_a_screeching_performance/",
+      "summary": "Google is closing its free tier to just 50 domains for site-specific search, and an inheritance date of January 1st, 2027, with no public pricing being listed for advanced searches. Cloudflare's new site-default is to challenge all AI bots attempting to scrape web-information for all their customers, including now with a recent partnership all domains hosted by Go-Daddy."
     }
   ]
 }

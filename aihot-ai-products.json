@@ -1,18 +1,8 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4MjYxOTE0MDAwLCJpIjoiY21veDd0aWthMDBkaXNsZm9udXIxYzdoNiJ9",
+  "nextCursor": "eyJhIjoxNzc4MjYwNzU0MDAwLCJpIjoiY21veDZxdGJsMDBqdHNsNXNrd3Y4dmF6ZiJ9",
   "items": [
-    {
-      "id": "cmp4hqy7305zrsljxt643sdwo",
-      "title": "Anthropic上调Claude Code周限额50%",
-      "title_en": "Anthropic raise weekly limits on Claude Code by 50% until July 13！ Sounds like Colossus 1 came int…",
-      "url": "https://x.com/testingcatalog/status/2054643286560690262",
-      "source": "X：Testing Catalog (@testingcatalog)",
-      "publishedAt": "2026-05-13T19:21:47.000Z",
-      "summary": "Anthropic将Claude Code周限额提高50%至7月13日！\n\n听起来是Colossus 1发挥了作用！",
-      "category": "ai-products"
-    },
     {
       "id": "cmp4gi5gq05nosljx7qdjpipt",
       "title": "Claude代码周限额提升50%",
@@ -501,6 +491,16 @@
       "source": "X：Gemini (@GeminiApp)",
       "publishedAt": "2026-05-08T17:38:34.000Z",
       "summary": "Gemini中的笔记本功能为复杂任务带来条理性。\n\n以研究生院申请流程为例：通过笔记本，您可以将成绩单、文书草稿和录取要求集中在一处，让Gemini帮助追踪截止日期、提供反馈并评估您的进展。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmox6qtbl00jtsl5skwv8vazf",
+      "title": "Codex切换功能正式上线",
+      "title_en": "Just gonna leave this here. https：//chatgpt.com/codex/switch-to-codex/",
+      "url": "https://x.com/OpenAI/status/2052800507727781979",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-05-08T17:19:14.000Z",
+      "summary": "就把这个留在这里。\n\nhttps：//chatgpt.com/codex/switch-to-codex/",
       "category": "ai-products"
     }
   ]

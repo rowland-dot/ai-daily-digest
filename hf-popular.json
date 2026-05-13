@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-05-13T20:11:31.900Z",
+  "fetched_at": "2026-05-13T20:34:53.999Z",
   "models": [
     {
       "_id": "678dc6fff905d106be796d8a",
       "id": "deepseek-ai/DeepSeek-R1",
-      "likes": 13327,
+      "likes": 13328,
       "private": false,
       "downloads": 3825571,
       "tags": [
@@ -30,7 +30,7 @@
     {
       "_id": "66aaa908fc35e079a941470d",
       "id": "black-forest-labs/FLUX.1-dev",
-      "likes": 12798,
+      "likes": 12799,
       "private": false,
       "downloads": 731204,
       "tags": [
@@ -133,7 +133,7 @@
     {
       "_id": "676ca1388118866906abbd7c",
       "id": "hexgrad/Kokoro-82M",
-      "likes": 6138,
+      "likes": 6139,
       "private": false,
       "downloads": 9897695,
       "tags": [
@@ -192,7 +192,7 @@
     {
       "_id": "654a84cadff2f49007ce6c37",
       "id": "openai/whisper-large-v3",
-      "likes": 5679,
+      "likes": 5680,
       "private": false,
       "downloads": 4954023,
       "tags": [
@@ -523,7 +523,7 @@
     {
       "_id": "64b02a230c8415cd4a159fff",
       "id": "meta-llama/Llama-2-7b-chat-hf",
-      "likes": 4752,
+      "likes": 4753,
       "private": false,
       "downloads": 387936,
       "tags": [
