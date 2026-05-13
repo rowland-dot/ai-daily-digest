@@ -487,17 +487,21 @@ def _en_seg(intro: str, items_with_anchors: list[tuple[str, str]]) -> list:
 
 
 def build_lab_segments(items: list[dict]) -> list:
+    # Items are pre-merged in the order the renderer uses (OpenAI →
+    # Anthropic news → Anthropic engineering), so the article-labs-N
+    # indices line up 1:1 with the DOM ids. Prefer .summary (Claude
+    # TLDR or Jina extract) over .description (OpenAI RSS blurb).
     rows = []
-    for idx, it in enumerate(items[:OTHER_CAP]):
+    for idx, it in enumerate(items):
         title = field(it, "title")
-        desc = field(it, "description")
+        blurb = field(it, "summary") or field(it, "description")
         parts = []
         if title:
             parts.append(title + ".")
-        if desc:
-            parts.append(desc + ".")
+        if blurb:
+            parts.append(blurb + ".")
         rows.append((f"article-labs-{idx}", " ".join(parts)))
-    return _en_seg("Lab announcements from OpenAI.", rows)
+    return _en_seg("Lab announcements from OpenAI and Anthropic.", rows)
 
 
 def build_simon_segments(entries: list[dict]) -> list:
@@ -809,12 +813,24 @@ def main() -> int:
                 trans_cache[f"v4::en::{c['zh']}"] = c["en"]
             overlay_count += 1
 
+    # Lab announcements section — merge OpenAI + Anthropic news +
+    # Anthropic engineering in the SAME order the renderer uses, so
+    # the article-labs-N audio cue indices match the DOM ids.
+    lab_items: list[dict] = []
     oai = load("openai-blog.json")
     if oai and oai.get("items"):
         apply_claude(oai["items"], "link", ("summary", "description"))
-        items = filter_recent(oai["items"], "pubDate")
-        if items:
-            segments.extend(build_lab_segments(items))
+        lab_items.extend(filter_recent(oai["items"], "pubDate")[:OTHER_CAP])
+    anews = load("anthropic-news.json")
+    if anews and anews.get("items"):
+        apply_claude(anews["items"], "link")
+        lab_items.extend(filter_recent(anews["items"], "pubDate")[:OTHER_CAP])
+    aeng = load("anthropic-engineering.json")
+    if aeng and aeng.get("items"):
+        apply_claude(aeng["items"], "link")
+        lab_items.extend(filter_recent(aeng["items"], "pubDate")[:OTHER_CAP])
+    if lab_items:
+        segments.extend(build_lab_segments(lab_items))
 
     sw = load("simon-willison.json")
     if sw and sw.get("entries"):
