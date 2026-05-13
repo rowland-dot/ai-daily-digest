@@ -83,6 +83,20 @@ function stripTags(s) {
   return out.replace(/\s+/g, " ").trim();
 }
 
+function firstParagraph(rawHtmlOrText) {
+  // Extract just the first <p>...</p> from an atom <summary> body.
+  // The summary content is HTML-encoded inside the XML, so we decode
+  // entities first to recover <p>/<a>/<strong>/etc., find the first
+  // paragraph, and strip remaining tags inside it.
+  if (!rawHtmlOrText) return "";
+  const decoded = decodeEntities(rawHtmlOrText);
+  const pMatch = /<p[^>]*>([\s\S]*?)<\/p>/i.exec(decoded);
+  // If no <p> tags at all, fall back to the first double-newline chunk
+  // (a plausible paragraph break in plain-text summaries).
+  const chunk = pMatch ? pMatch[1] : decoded.split(/\n\s*\n/)[0];
+  return stripTags(chunk);
+}
+
 function firstMatch(re, str, group = 1) {
   const m = re.exec(str);
   return m ? m[group] : "";
@@ -188,13 +202,16 @@ function parseRssItems(xml) {
 
 function parseAtomEntries(xml) {
   // Generic Atom <entry> extractor. <link> uses href= attribute.
+  // For <summary>, keep only the first paragraph (per design — atom
+  // summaries can contain the entire post body, which makes cards
+  // multi-screen tall).
   return [...xml.matchAll(/<entry[^>]*>([\s\S]*?)<\/entry>/g)].map((m) => {
     const block = m[1];
     return {
       title: stripTags(firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, block)),
       link: firstMatch(/<link[^>]*href="([^"]+)"/i, block),
       updated: stripTags(firstMatch(/<updated[^>]*>([\s\S]*?)<\/updated>/i, block)),
-      summary: stripTags(firstMatch(/<summary[^>]*>([\s\S]*?)<\/summary>/i, block)).slice(0, 400),
+      summary: firstParagraph(firstMatch(/<summary[^>]*>([\s\S]*?)<\/summary>/i, block)),
     };
   });
 }
