@@ -122,12 +122,15 @@ function ghTrendingSection(gh) {
 const OTHER_CAP = 16;
 
 function hnSection(hn) {
-  const items = (hn?.items || []).filter((it) => it && !it.error && it.title);
+  // 24h filter (item.time is unix epoch seconds), then AI-first ordering, cap at OTHER_CAP.
+  const items = (hn?.items || []).filter(
+    (it) => it && !it.error && it.title && withinWindow(it.time),
+  );
   const aiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
   const aiItems = items.filter((it) => aiKeywords.test(it.title));
   const otherItems = items.filter((it) => !aiKeywords.test(it.title));
   const ordered = [...aiItems, ...otherItems].slice(0, OTHER_CAP);
-  if (!ordered.length) return `<p class="empty">No items.</p>`;
+  if (!ordered.length) return `<p class="empty">No items in the last 24 hours.</p>`;
   return `<ol class="hn-list">${ordered
     .map(
       (it) => `
@@ -167,8 +170,9 @@ function hfSection(hf) {
 }
 
 function labBlogSection(openai) {
-  const items = (openai?.items || []).slice(0, OTHER_CAP);
-  if (!items.length) return `<p class="empty">No lab posts.</p>`;
+  // 24h date filter (pubDate is RFC 2822), then cap at OTHER_CAP.
+  const items = filterRecent(openai?.items || [], "pubDate").slice(0, OTHER_CAP);
+  if (!items.length) return `<p class="empty">No lab posts in the last 24 hours.</p>`;
   return `<div class="cards">${items
     .map(
       (it) => `
@@ -186,8 +190,9 @@ function labBlogSection(openai) {
 }
 
 function builderWritingSection(sw) {
-  const entries = (sw?.entries || []).slice(0, OTHER_CAP);
-  if (!entries.length) return `<p class="empty">No new posts.</p>`;
+  // 24h date filter (updated is ISO), then cap at OTHER_CAP.
+  const entries = filterRecent(sw?.entries || [], "updated").slice(0, OTHER_CAP);
+  if (!entries.length) return `<p class="empty">No new posts in the last 24 hours.</p>`;
   return `<ul class="writing-list">${entries
     .map(
       (e) => `
@@ -205,16 +210,16 @@ function builderWritingSection(sw) {
 }
 
 function followBuildersSection(xFeed, podFeed, blogFeed) {
-  // Follow Builders: no cap, no date filter. Show every tweet/episode/post fetched.
-  // Tweets still sorted by likes so the highest-engagement ones surface first.
+  // Follow Builders: 24h date filter, NO count cap. Tweets sorted by likes.
   const allTweets = (xFeed?.x || []).flatMap((author) =>
     (author.tweets || []).map((t) => ({ ...t, author: author.name, handle: author.handle })),
   );
-  allTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
-  const xItems = allTweets;
+  const recentTweets = allTweets.filter((t) => withinWindow(t.createdAt));
+  recentTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+  const xItems = recentTweets;
 
-  const podItems = podFeed?.podcasts || [];
-  const blogItems = blogFeed?.blogs || [];
+  const podItems = filterRecent(podFeed?.podcasts || [], "publishedAt");
+  const blogItems = filterRecent(blogFeed?.blogs || [], "publishedAt");
 
   const renderTweet = (t) => {
     const text = (t.text || "").slice(0, 240) + (t.text?.length > 240 ? "…" : "");
@@ -801,12 +806,12 @@ async function renderPage({
   blogFeed,
   audioAvailable,
 }) {
-  // AIHOT: show ALL fetched items. No date filter, no count cap.
-  // (Per-user direction 2026-05-13: too aggressive a filter dropped good content.)
-  const modelItems = aihotModels?.items || pickAihotSection(aihotDaily, "模型") || [];
-  const productItems = aihotProducts?.items || pickAihotSection(aihotDaily, "产品") || [];
-  const industryItems = aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态") || [];
-  const paperItems = aihotPaper?.items || pickAihotSection(aihotDaily, "论文") || [];
+  // AIHOT: 24h date filter (recency is the only quality signal — items
+  // lack a popularity field), no count cap after the filter.
+  const modelItems = filterRecent(aihotModels?.items || pickAihotSection(aihotDaily, "模型") || [], "publishedAt");
+  const productItems = filterRecent(aihotProducts?.items || pickAihotSection(aihotDaily, "产品") || [], "publishedAt");
+  const industryItems = filterRecent(aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态") || [], "publishedAt");
+  const paperItems = filterRecent(aihotPaper?.items || pickAihotSection(aihotDaily, "论文") || [], "publishedAt");
 
   return `<!DOCTYPE html>
 <html lang="en">
