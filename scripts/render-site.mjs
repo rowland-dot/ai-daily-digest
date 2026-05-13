@@ -589,7 +589,8 @@ const PAGE_CSS = `
   .writing-title { display: block; font-family: var(--display-font); font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 6px; letter-spacing: -0.005em; }
   .writing-title:hover { color: var(--link); }
   .writing-summary { color: var(--text-muted); font-size: 13.5px; line-height: 1.6; margin: 4px 0; }
-  .writing-meta { color: var(--text-tertiary); font-size: 12px; display: flex; gap: 6px; }
+  .writing-meta { color: var(--text-tertiary); font-size: 12px; display: flex; flex-wrap: wrap; gap: 4px 6px; row-gap: 2px; }
+  .writing-meta > span { white-space: nowrap; }
 
   .empty { color: var(--text-muted); font-style: italic; }
 

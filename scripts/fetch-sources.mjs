@@ -130,6 +130,24 @@ function firstMatch(re, str, group = 1) {
   return m ? m[group] : "";
 }
 
+// Soft-trim a paragraph to ~maxLen chars, preferring to end at a real
+// sentence boundary so the trailing text doesn't read as "...lea" /
+// "...abou". Falls back to a hard slice + ellipsis if no sentence
+// boundary is found within the window.
+function trimAtSentence(text, maxLen) {
+  if (!text || text.length <= maxLen) return text || "";
+  const window = text.slice(0, maxLen);
+  // Find the last sentence terminator we can afford. Prefer "."  or
+  // "!" / "?" followed by a space; also accept Chinese "。".
+  const m = window.match(/[\s\S]*[.!?。](?=\s|$)/);
+  if (m && m[0].length >= Math.max(120, Math.floor(maxLen * 0.6))) {
+    return m[0].trim();
+  }
+  // No nice boundary — soft-cut at a space and add an ellipsis.
+  const softCut = window.replace(/\s+\S*$/, "");
+  return (softCut || window).trim() + "…";
+}
+
 async function runSource(name, filename, fetcher) {
   const started = Date.now();
   try {
@@ -545,7 +563,7 @@ async function localLlama(limit = 14) {
       author: (author || "").replace(/^\/u\//, ""),
       updated,
       permalink: link,
-      summary: looksLikeSelfPost ? cleaned.slice(0, 360) : "",
+      summary: looksLikeSelfPost ? trimAtSentence(cleaned, 600) : "",
     };
   });
   // Filter: drop posts with no real TLDR (image-only / meme / link-out
