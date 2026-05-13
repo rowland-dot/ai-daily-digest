@@ -93,9 +93,8 @@ function aihotItemsCard(items) {
     .join("")}</div>`;
 }
 
-function ghTrendingSection(gh) {
-  const repos = (gh?.repos || []).slice(0, OTHER_CAP);
-  if (!repos.length) return `<p class="empty">No items.</p>`;
+function ghTrendingSection(repos) {
+  if (!repos.length) return ``;
   return `<div class="cards">${repos
     .map(
       (r) => `
@@ -121,17 +120,10 @@ function ghTrendingSection(gh) {
 
 const OTHER_CAP = 16;
 
-function hnSection(hn) {
-  // 24h filter (item.time is unix epoch seconds), then AI-first ordering, cap at OTHER_CAP.
-  const items = (hn?.items || []).filter(
-    (it) => it && !it.error && it.title && withinWindow(it.time),
-  );
-  const aiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
-  const aiItems = items.filter((it) => aiKeywords.test(it.title));
-  const otherItems = items.filter((it) => !aiKeywords.test(it.title));
-  const ordered = [...aiItems, ...otherItems].slice(0, OTHER_CAP);
-  if (!ordered.length) return `<p class="empty">No items in the last 24 hours.</p>`;
-  return `<ol class="hn-list">${ordered
+function hnSection(items) {
+  // Items are already filtered + ordered + capped by the caller.
+  if (!items.length) return ``;
+  return `<ol class="hn-list">${items
     .map(
       (it) => `
     <li class="hn-item">
@@ -149,16 +141,15 @@ function hnSection(hn) {
     .join("")}</ol>`;
 }
 
-function hfSection(hf) {
-  const models = (hf?.models || []).slice(0, OTHER_CAP);
-  if (!models.length) return `<p class="empty">No models.</p>`;
+function hfSection(models) {
+  if (!models.length) return ``;
   return `<div class="cards">${models
     .map(
       (m) => `
     <article class="card hf-card">
       <h3 class="card-title"><a href="https://huggingface.co/${escapeHtml(m.id || "")}" target="_blank" rel="noopener">${escapeHtml(m.id || "")}</a></h3>
       <div class="hf-stats">
-        <span class="stat">❤ ${m.likes ?? 0}</span>
+        <span class="stat">♥ ${m.likes ?? 0}</span>
         <span class="stat">↓ ${(m.downloads ?? 0).toLocaleString()}</span>
         ${m.pipeline_tag ? `<span class="badge">${escapeHtml(m.pipeline_tag)}</span>` : ""}
       </div>
@@ -169,10 +160,8 @@ function hfSection(hf) {
     .join("")}</div>`;
 }
 
-function labBlogSection(openai) {
-  // 24h date filter (pubDate is RFC 2822), then cap at OTHER_CAP.
-  const items = filterRecent(openai?.items || [], "pubDate").slice(0, OTHER_CAP);
-  if (!items.length) return `<p class="empty">No lab posts in the last 24 hours.</p>`;
+function labBlogSection(items) {
+  if (!items.length) return ``;
   return `<div class="cards">${items
     .map(
       (it) => `
@@ -189,10 +178,8 @@ function labBlogSection(openai) {
     .join("")}</div>`;
 }
 
-function builderWritingSection(sw) {
-  // 24h date filter (updated is ISO), then cap at OTHER_CAP.
-  const entries = filterRecent(sw?.entries || [], "updated").slice(0, OTHER_CAP);
-  if (!entries.length) return `<p class="empty">No new posts in the last 24 hours.</p>`;
+function builderWritingSection(entries) {
+  if (!entries.length) return ``;
   return `<ul class="writing-list">${entries
     .map(
       (e) => `
@@ -209,17 +196,8 @@ function builderWritingSection(sw) {
     .join("")}</ul>`;
 }
 
-function followBuildersSection(xFeed, podFeed, blogFeed) {
-  // Follow Builders: 24h date filter, NO count cap. Tweets sorted by likes.
-  const allTweets = (xFeed?.x || []).flatMap((author) =>
-    (author.tweets || []).map((t) => ({ ...t, author: author.name, handle: author.handle })),
-  );
-  const recentTweets = allTweets.filter((t) => withinWindow(t.createdAt));
-  recentTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
-  const xItems = recentTweets;
-
-  const podItems = filterRecent(podFeed?.podcasts || [], "publishedAt");
-  const blogItems = filterRecent(blogFeed?.blogs || [], "publishedAt");
+function followBuildersSection(xItems, podItems, blogItems) {
+  // All inputs are already filtered + sorted by the caller.
 
   const renderTweet = (t) => {
     const text = (t.text || "").slice(0, 240) + (t.text?.length > 240 ? "…" : "");
@@ -231,7 +209,7 @@ function followBuildersSection(xFeed, podFeed, blogFeed) {
         </div>
         <p class="builder-text">${escapeHtml(text)}</p>
         <div class="builder-meta">
-          ${typeof t.likes === "number" ? `<span>❤ ${t.likes}</span>` : ""}
+          ${typeof t.likes === "number" ? `<span>♥ ${t.likes}</span>` : ""}
           ${typeof t.retweets === "number" ? `<span>↻ ${t.retweets}</span>` : ""}
           ${t.url ? `<a href="${escapeHtml(t.url)}" target="_blank" rel="noopener">View on X ↗</a>` : ""}
         </div>
@@ -919,12 +897,59 @@ async function renderPage({
   blogFeed,
   audioAvailable,
 }) {
-  // AIHOT: 24h date filter (recency is the only quality signal — items
-  // lack a popularity field), no count cap after the filter.
+  // Pre-filter all sections so we can detect empty ones and skip both
+  // the <section> and its TOC entry.
+
+  // AIHOT: 24h date filter, no count cap.
   const modelItems = filterRecent(aihotModels?.items || pickAihotSection(aihotDaily, "模型") || [], "publishedAt");
   const productItems = filterRecent(aihotProducts?.items || pickAihotSection(aihotDaily, "产品") || [], "publishedAt");
   const industryItems = filterRecent(aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态") || [], "publishedAt");
   const paperItems = filterRecent(aihotPaper?.items || pickAihotSection(aihotDaily, "论文") || [], "publishedAt");
+
+  // OpenAI lab: 24h + 16 cap
+  const labItems = filterRecent(openaiBlog?.items || [], "pubDate").slice(0, OTHER_CAP);
+
+  // Simon Willison: 24h + 16 cap
+  const simonEntries = filterRecent(simonWillison?.entries || [], "updated").slice(0, OTHER_CAP);
+
+  // GitHub Trending: 16 cap, no date filter (URL ?since=daily)
+  const ghRepos = (ghTrending?.repos || []).slice(0, OTHER_CAP);
+
+  // HN: 24h filter + AI-keyword first + 16 cap (computed here so we can
+  // detect empty section)
+  const hnAll = (hnTop?.items || []).filter(
+    (it) => it && !it.error && it.title && withinWindow(it.time),
+  );
+  const hnAiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
+  const hnAi = hnAll.filter((it) => hnAiKeywords.test(it.title));
+  const hnOther = hnAll.filter((it) => !hnAiKeywords.test(it.title));
+  const hnOrdered = [...hnAi, ...hnOther].slice(0, OTHER_CAP);
+
+  // HF: 16 cap, no date filter
+  const hfModels = (hfPopular?.models || []).slice(0, OTHER_CAP);
+
+  // Follow Builders: 24h date filter, no count cap, tweets sorted by likes
+  const allTweets = (xFeed?.x || []).flatMap((author) =>
+    (author.tweets || []).map((t) => ({ ...t, author: author.name, handle: author.handle })),
+  );
+  const builderTweets = allTweets.filter((t) => withinWindow(t.createdAt));
+  builderTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+  const builderPods = filterRecent(podFeed?.podcasts || [], "publishedAt");
+  const builderBlogs = filterRecent(blogFeed?.blogs || [], "publishedAt");
+
+  // Has-content flags drive both section visibility and TOC entries.
+  const has = {
+    models: modelItems.length > 0,
+    products: productItems.length > 0,
+    industry: industryItems.length > 0,
+    papers: paperItems.length > 0,
+    labs: labItems.length > 0,
+    writing: simonEntries.length > 0,
+    trending: ghRepos.length > 0,
+    hn: hnOrdered.length > 0,
+    hf: hfModels.length > 0,
+    builders: builderTweets.length > 0 || builderPods.length > 0 || builderBlogs.length > 0,
+  };
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -952,81 +977,91 @@ async function renderPage({
 
   <nav class="toc">
     <ul>
-      <li><a href="#models">🤖 Models</a></li>
-      <li><a href="#products">📦 Products</a></li>
-      <li><a href="#industry">📰 Industry</a></li>
-      <li><a href="#papers">📄 Research</a></li>
-      <li><a href="#labs">🏢 Lab posts</a></li>
-      <li><a href="#writing">✍ Simon Willison</a></li>
-      <li><a href="#trending">🚀 GitHub</a></li>
-      <li><a href="#hn">🔥 Hacker News</a></li>
-      <li><a href="#hf">🤗 Hugging Face</a></li>
-      <li><a href="#builders">🎙 Builder voices</a></li>
+      ${has.models ? `<li><a href="#models">🤖 Models</a></li>` : ""}
+      ${has.products ? `<li><a href="#products">📦 Products</a></li>` : ""}
+      ${has.industry ? `<li><a href="#industry">📰 Industry</a></li>` : ""}
+      ${has.papers ? `<li><a href="#papers">📄 Research</a></li>` : ""}
+      ${has.labs ? `<li><a href="#labs">🏢 Lab posts</a></li>` : ""}
+      ${has.writing ? `<li><a href="#writing">✍ Simon Willison</a></li>` : ""}
+      ${has.trending ? `<li><a href="#trending">🚀 GitHub</a></li>` : ""}
+      ${has.hn ? `<li><a href="#hn">🔥 Hacker News</a></li>` : ""}
+      ${has.hf ? `<li><a href="#hf">🤗 HuggingFace</a></li>` : ""}
+      ${has.builders ? `<li><a href="#builders">🎙 Builder voices</a></li>` : ""}
       <li><a href="digests/">🗂 Archive</a></li>
     </ul>
   </nav>
 
   <main class="container">
 
+    ${has.models ? `
     <section id="models" class="block">
       <h2><span class="section-icon">🤖</span> Model drops & updates</h2>
       <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version.</p>
       ${aihotItemsCard(modelItems)}
-    </section>
+    </section>` : ""}
 
+    ${has.products ? `
     <section id="products" class="block">
       <h2><span class="section-icon">📦</span> Products & applications</h2>
       <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
       ${aihotItemsCard(productItems)}
-    </section>
+    </section>` : ""}
 
+    ${has.industry ? `
     <section id="industry" class="block">
       <h2><span class="section-icon">📰</span> Industry moves</h2>
       <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
       ${aihotItemsCard(industryItems)}
-    </section>
+    </section>` : ""}
 
+    ${has.papers ? `
     <section id="papers" class="block">
       <h2><span class="section-icon">📄</span> Research highlights</h2>
       <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
       ${aihotItemsCard(paperItems)}
-    </section>
+    </section>` : ""}
 
+    ${has.labs ? `
     <section id="labs" class="block">
       <h2><span class="section-icon">🏢</span> Lab announcements</h2>
       <p class="section-sub">Latest posts from OpenAI's blog. <span class="meta-time">(Anthropic doesn't publish RSS; their announcements surface elsewhere on this page.)</span></p>
-      ${labBlogSection(openaiBlog)}
-    </section>
+      ${labBlogSection(labItems)}
+    </section>` : ""}
 
+    ${has.writing ? `
     <section id="writing" class="block">
       <h2><span class="section-icon">✍</span> Simon Willison</h2>
       <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon's weblog.</p>
-      ${builderWritingSection(simonWillison)}
-    </section>
+      ${builderWritingSection(simonEntries)}
+    </section>` : ""}
 
+    ${has.trending ? `
     <section id="trending" class="block">
       <h2><span class="section-icon">🚀</span> Trending on GitHub</h2>
       <p class="section-sub">Top trending repositories across all languages.</p>
-      ${ghTrendingSection(ghTrending)}
-    </section>
+      ${ghTrendingSection(ghRepos)}
+    </section>` : ""}
 
+    ${has.hn ? `
     <section id="hn" class="block">
       <h2><span class="section-icon">🔥</span> Hacker News</h2>
       <p class="section-sub">Top AI-relevant front-page stories (AI/LLM/agent items surfaced first).</p>
-      ${hnSection(hnTop)}
-    </section>
+      ${hnSection(hnOrdered)}
+    </section>` : ""}
 
+    ${has.hf ? `
     <section id="hf" class="block">
-      <h2><span class="section-icon">🤗</span> Hugging Face</h2>
-      <p class="section-sub">Open-weight models ranked by ❤ likes (closest stable proxy for trending).</p>
-      ${hfSection(hfPopular)}
-    </section>
+      <h2><span class="section-icon">🤗</span> HuggingFace</h2>
+      <p class="section-sub">Open-weight models ranked by ♥ likes (closest stable proxy for trending).</p>
+      ${hfSection(hfModels)}
+    </section>` : ""}
 
+    ${has.builders ? `
     <section id="builders" class="block">
       <h2><span class="section-icon">🎙</span> Builder voices</h2>
       <p class="section-sub">Recent posts, episodes, and writing from named AI builders <span class="meta-time">(via Follow Builders feeds)</span>.</p>
-      ${followBuildersSection(xFeed, podFeed, blogFeed)}
-    </section>
+      ${followBuildersSection(builderTweets, builderPods, builderBlogs)}
+    </section>` : ""}
 
   </main>
 

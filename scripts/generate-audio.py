@@ -268,7 +268,7 @@ def build_hn_section_text(items: list[dict]) -> str:
 
 
 def build_hf_section_text(models: list[dict]) -> str:
-    parts = ["Most-loved models on Hugging Face."]
+    parts = ["Most-loved models on HuggingFace."]
     for m in models[:OTHER_CAP]:
         mid = clean_for_tts(m.get("id") or "")
         likes = m.get("likes") or 0
