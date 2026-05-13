@@ -591,32 +591,66 @@ const PAGE_CSS = `
     flex-wrap: nowrap;
     flex: 0 0 auto;
   }
+  /* Hide the native <audio> element entirely. We use our own play/scrubber
+     UI below so no browser-specific kebab / volume / overflow ever shows. */
   .audio-fab audio {
-    height: 36px;
-    width: 180px;
-    flex: 0 0 180px;       /* fixed audio track width on desktop */
-    /* Native <audio> defaults to display: inline which leaves a baseline
-       gap inside the flex row on iOS Safari; block + vertical-align middle
-       + align-self center forces it onto the row's mid-line. */
-    display: block;
-    vertical-align: middle;
-    align-self: center;
-    margin: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
   }
-  .audio-fab audio::-webkit-media-controls-panel { background: var(--surface); }
-  /* Hide WebKit/Blink native controls we don't want: volume slider,
-     mute button, and the kebab/overflow menu (PiP / Download / Loop /
-     Playback rate native sub-menu). The custom speed-btn replaces the
-     last of those. */
-  .audio-fab audio::-webkit-media-controls-volume-slider,
-  .audio-fab audio::-webkit-media-controls-volume-control-container,
-  .audio-fab audio::-webkit-media-controls-mute-button,
-  .audio-fab audio::-webkit-media-controls-overflow-button,
-  .audio-fab audio::-webkit-media-controls-overflow-menu,
-  .audio-fab audio::-internal-media-controls-overflow-button,
-  .audio-fab audio::-webkit-media-controls-toggle-closed-captions-button,
-  .audio-fab audio::-webkit-media-controls-fullscreen-button {
-    display: none !important;
+  /* Custom audio controls — play/pause + scrubber + time */
+  .audio-track {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 180px;
+    width: 180px;
+    height: 36px;
+  }
+  .play-btn {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-family: inherit;
+  }
+  .play-btn:hover { filter: brightness(1.1); }
+  .play-btn:active { transform: scale(0.95); }
+  .scrubber {
+    flex: 1 1 auto;
+    height: 4px;
+    background: var(--surface-2);
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .scrubber-fill {
+    position: absolute;
+    inset: 0 100% 0 0;          /* width controlled via JS: right = 100% - pct */
+    background: var(--accent);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .time-label {
+    flex: 0 0 auto;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
   .speed-btn {
     background: var(--surface-2);
@@ -658,12 +692,8 @@ const PAGE_CSS = `
     flex: 0 0 180px;
     text-align: center;
   }
-  /* Mobile (<= 600px): expand the player to fill most of the viewport so
-     the audio scrubber gets meaningful width. Non-audio elements stay
-     fixed; only the audio track takes the remaining space.
-       handle 36 + gap 8 + audio ??? + gap 6 + speed 44 + gap 6 + close 24 + paddings 16
-       ≈ 100vw - 16(margin from edge) - 140 fixed elements = 100vw - 156
-  */
+  /* Mobile (<= 600px): expand player to fill most of the viewport,
+     give the scrubber more space. */
   @media (max-width: 600px) {
     .audio-fab[data-expanded="true"] {
       width: calc(100vw - 16px);
@@ -672,27 +702,21 @@ const PAGE_CSS = `
       padding-left: 8px;
       padding-right: 6px;
     }
-    .audio-fab audio {
-      width: calc(100vw - 156px);
-      flex: 0 0 calc(100vw - 156px);
-      min-width: 140px;
+    .audio-track {
+      flex: 1 1 auto;
+      width: auto;
     }
     .audio-fab .no-audio-msg {
       width: calc(100vw - 116px);
       flex: 0 0 calc(100vw - 116px);
     }
   }
-  /* Tiny phones (<= 360px): shrink handle slightly too */
   @media (max-width: 360px) {
     .audio-fab[data-expanded="true"] .audio-fab-handle {
       width: 32px; height: 32px;
       flex: 0 0 32px;
       margin-right: 6px;
       font-size: 14px;
-    }
-    .audio-fab audio {
-      width: calc(100vw - 148px);
-      flex: 0 0 calc(100vw - 148px);
     }
   }
 
@@ -731,8 +755,9 @@ const THEME_TOGGLE_SCRIPT = `
   })();
 `;
 
-// Floating mini-player: collapse/expand + playback-speed cycle button
-// (mobile <audio controls> hides native speed control, so we add our own).
+// Floating mini-player: expand/collapse + fully-custom audio controls
+// (the native <audio> element is hidden so no browser chrome — kebab,
+// volume slider, mute, overflow menu — ever appears).
 const AUDIO_PLAYER_SCRIPT = `
   (function() {
     var fab = document.getElementById('audio-fab');
@@ -740,6 +765,10 @@ const AUDIO_PLAYER_SCRIPT = `
     var handle = document.getElementById('audio-fab-handle');
     var closeBtn = document.getElementById('audio-fab-close');
     var audio = document.getElementById('digest-audio');
+    var playBtn = document.getElementById('play-btn');
+    var scrubber = document.getElementById('scrubber');
+    var fill = document.getElementById('scrubber-fill');
+    var timeLabel = document.getElementById('time-label');
     var speedBtn = document.getElementById('speed-btn');
 
     function expand(v) { fab.setAttribute('data-expanded', v ? 'true' : 'false'); }
@@ -748,7 +777,71 @@ const AUDIO_PLAYER_SCRIPT = `
     });
     if (closeBtn) closeBtn.addEventListener('click', function(e) { e.stopPropagation(); expand(false); });
 
-    if (audio && speedBtn) {
+    if (!audio) return;
+
+    // ---- Play / pause ----
+    function setPlayIcon(playing) {
+      if (playBtn) playBtn.textContent = playing ? '❚❚' : '▶';
+    }
+    if (playBtn) {
+      playBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (audio.paused) audio.play(); else audio.pause();
+      });
+    }
+    audio.addEventListener('play', function() { setPlayIcon(true); });
+    audio.addEventListener('pause', function() { setPlayIcon(false); });
+    audio.addEventListener('ended', function() { setPlayIcon(false); });
+
+    // ---- Time display + scrubber fill ----
+    function fmt(sec) {
+      if (!isFinite(sec) || sec < 0) return '0:00';
+      var m = Math.floor(sec / 60);
+      var s = Math.floor(sec % 60);
+      return m + ':' + (s < 10 ? '0' + s : s);
+    }
+    function refresh() {
+      var d = audio.duration || 0;
+      var c = audio.currentTime || 0;
+      var pct = d > 0 ? (c / d) * 100 : 0;
+      if (fill) fill.style.right = (100 - pct) + '%';
+      if (timeLabel) {
+        if (d > 0) timeLabel.textContent = fmt(c) + ' / ' + fmt(d);
+        else timeLabel.textContent = fmt(c);
+      }
+    }
+    audio.addEventListener('timeupdate', refresh);
+    audio.addEventListener('loadedmetadata', refresh);
+    audio.addEventListener('durationchange', refresh);
+    refresh();
+
+    // ---- Scrubber click + drag to seek ----
+    function seekFromEvent(e) {
+      if (!audio.duration) return;
+      var rect = scrubber.getBoundingClientRect();
+      var clientX = (e.touches && e.touches[0]) ? e.touches[0].clientX : e.clientX;
+      var pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+      audio.currentTime = pct * audio.duration;
+      refresh();
+    }
+    if (scrubber) {
+      var dragging = false;
+      scrubber.addEventListener('mousedown', function(e) { dragging = true; seekFromEvent(e); });
+      scrubber.addEventListener('touchstart', function(e) { dragging = true; seekFromEvent(e); }, { passive: true });
+      window.addEventListener('mousemove', function(e) { if (dragging) seekFromEvent(e); });
+      window.addEventListener('touchmove', function(e) { if (dragging) seekFromEvent(e); }, { passive: true });
+      window.addEventListener('mouseup', function() { dragging = false; });
+      window.addEventListener('touchend', function() { dragging = false; });
+      // Keyboard: left/right arrows seek ±5s
+      scrubber.addEventListener('keydown', function(e) {
+        if (!audio.duration) return;
+        if (e.key === 'ArrowLeft') { audio.currentTime = Math.max(0, audio.currentTime - 5); refresh(); }
+        if (e.key === 'ArrowRight') { audio.currentTime = Math.min(audio.duration, audio.currentTime + 5); refresh(); }
+      });
+    }
+
+    // ---- Playback speed cycle ----
+    if (speedBtn) {
       var rates = [1, 1.25, 1.5, 1.75, 2];
       var saved = 1;
       try { saved = parseFloat(localStorage.getItem('digest-speed')) || 1; } catch (e) {}
@@ -927,7 +1020,14 @@ async function renderPage({
     <div class="audio-fab-body">
       ${
         audioAvailable
-          ? `<audio id="digest-audio" controls preload="metadata" src="digest.mp3"></audio>
+          ? `<audio id="digest-audio" preload="metadata" src="digest.mp3"></audio>
+             <div class="audio-track">
+               <button id="play-btn" class="play-btn" type="button" aria-label="Play/Pause">▶</button>
+               <div id="scrubber" class="scrubber" role="slider" tabindex="0" aria-label="Seek">
+                 <div id="scrubber-fill" class="scrubber-fill"></div>
+               </div>
+               <span id="time-label" class="time-label">0:00</span>
+             </div>
              <button id="speed-btn" class="speed-btn" type="button" aria-label="Playback speed" title="Tap to cycle speed">1×</button>`
           : `<span class="no-audio-msg">Today's narration not yet generated</span>`
       }
