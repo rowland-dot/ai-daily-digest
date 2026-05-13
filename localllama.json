@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T19:51:07.442Z",
+  "fetched_at": "2026-05-13T20:11:34.166Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
@@ -74,6 +74,13 @@
       "sourceLabel": "sensenova/SenseNova-U1-A3B-MoT · Hugging Face"
     },
     {
+      "title": "MI50s Qwen 3.6 27B @52.8 tps TG @1569 tps PP (no MTP, no Quant)",
+      "author": "ai-infos",
+      "updated": "2026-05-13T19:08:24+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc9j6u/mi50s_qwen_36_27b_528_tps_tg_1569_tps_pp_no_mtp/",
+      "summary": "TL;DR Results from the title are for single inference with 2 prompt of 1k and 15k tokens. So no MTP (as it’s slower for big prompt), no DFlash (working too but slower for big prompt), no quant used (full precision wanted) and the results are pretty good for a 2018 card."
+    },
+    {
       "title": "The Trillion-Parameter Dilemma: MiMo-V2.5-Pro went open-source (1.02T params). Is self-hosting worth it when the API costs $70 for 387M tokens?",
       "author": "jochenboele",
       "updated": "2026-05-13T08:31:25+00:00",
@@ -86,13 +93,6 @@
       "updated": "2026-05-12T22:24:57+00:00",
       "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbgtux/i_built_derpy_turtle_the_kokoro_trainer_a_gui_for/",
       "summary": "I’ve been working on a tool called Derpy Turtle: The Kokoro Trainer. It started as a random-walk experiment for Kokoro voices, but it has grown into its own thing: a Windows GUI for creating better local voice outputs by combining Kokoro voice search with RVC voice conversion."
-    },
-    {
-      "title": "MI50s Qwen 3.6 27B @52.8 tps TG @1569 tps PP (no MTP, no Quant)",
-      "author": "ai-infos",
-      "updated": "2026-05-13T19:08:24+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc9j6u/mi50s_qwen_36_27b_528_tps_tg_1569_tps_pp_no_mtp/",
-      "summary": "TL;DR Results from the title are for single inference with 2 prompt of 1k and 15k tokens. So no MTP (as it’s slower for big prompt), no DFlash (working too but slower for big prompt), no quant used (full precision wanted) and the results are pretty good for a 2018 card."
     },
     {
       "title": "qwen3.6 just stops",
