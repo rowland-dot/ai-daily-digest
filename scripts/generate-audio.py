@@ -500,6 +500,35 @@ def _en_seg(intro: str, items_with_anchors: list[tuple[str, str]]) -> list:
     return segs
 
 
+def _narration_text(it: dict, title_key: str = "title", summary_key: str = "summary",
+                    fallback_summary_keys: tuple = ()) -> str:
+    """Build narration text for an article. When the item has a
+    Claude-overlaid summary (set by apply_claude before this is called),
+    narrate ONLY the summary — the original title can be a numeric/
+    acronym soup (e.g. 'MI50s 528 TPS TG 1569 TPS PP no MTP') that
+    edge-tts reads literally and renders unintelligible.
+
+    When there's no Claude summary (routine missed it / still on
+    Jina), fall back to title + summary the old way."""
+    title = field(it, title_key)
+    summary = field(it, summary_key)
+    if not summary and fallback_summary_keys:
+        for k in fallback_summary_keys:
+            summary = field(it, k)
+            if summary:
+                break
+    if it.get("_claude_overlaid") and summary:
+        # Claude summary present — its prose is self-contained; skip the
+        # raw title which may not be audio-friendly.
+        return summary + "."
+    parts = []
+    if title:
+        parts.append(title + ".")
+    if summary:
+        parts.append(summary + ".")
+    return " ".join(parts)
+
+
 def build_lab_segments(items: list[dict]) -> list:
     # Items are pre-merged in the order the renderer uses (OpenAI →
     # Anthropic news → Anthropic engineering), so the article-labs-N
@@ -507,42 +536,22 @@ def build_lab_segments(items: list[dict]) -> list:
     # TLDR or Jina extract) over .description (OpenAI RSS blurb).
     rows = []
     for idx, it in enumerate(items):
-        title = field(it, "title")
-        blurb = field(it, "summary") or field(it, "description")
-        parts = []
-        if title:
-            parts.append(title + ".")
-        if blurb:
-            parts.append(blurb + ".")
-        rows.append((f"article-labs-{idx}", " ".join(parts)))
+        text = _narration_text(it, "title", "summary", fallback_summary_keys=("description",))
+        rows.append((f"article-labs-{idx}", text))
     return _en_seg("Lab announcements from OpenAI and Anthropic.", rows)
 
 
 def build_simon_segments(entries: list[dict]) -> list:
     rows = []
     for idx, e in enumerate(entries[:OTHER_CAP]):
-        title = field(e, "title")
-        summary = field(e, "summary")
-        parts = []
-        if title:
-            parts.append(title + ".")
-        if summary:
-            parts.append(summary + ".")
-        rows.append((f"article-writing-{idx}", " ".join(parts)))
+        rows.append((f"article-writing-{idx}", _narration_text(e)))
     return _en_seg("Builder writing, from Simon Willison's weblog.", rows)
 
 
 def build_llama_segments(posts: list[dict]) -> list:
     rows = []
     for idx, p in enumerate(posts[:OTHER_CAP]):
-        title = field(p, "title")
-        summary = field(p, "summary")
-        parts = []
-        if title:
-            parts.append(title + ".")
-        if summary:
-            parts.append(summary + ".")
-        rows.append((f"article-llama-{idx}", " ".join(parts)))
+        rows.append((f"article-llama-{idx}", _narration_text(p)))
     return _en_seg("Top of the day from r/LocalLLaMA.", rows)
 
 
@@ -822,6 +831,7 @@ def main() -> int:
                 continue
             for k in summary_keys:
                 it[k] = c["en"]
+            it["_claude_overlaid"] = True   # narration helper skips raw title
             if c.get("zh"):
                 trans_cache[f"v4::zh::{c['en']}"] = c["zh"]
                 trans_cache[f"v4::en::{c['zh']}"] = c["en"]

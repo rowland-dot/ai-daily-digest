@@ -184,7 +184,7 @@ jobs:
             docs/audio-cues-en.json
             docs/audio-cues-zh.json
             docs/content-translations.json
-          key: audio-v18-${{ steps.data-hash.outputs.hash }}
+          key: audio-v19-${{ steps.data-hash.outputs.hash }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.mode-final.outputs.value == 'full' && steps.audio-cache.outputs.cache-hit != 'true'
