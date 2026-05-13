@@ -1147,6 +1147,44 @@ const AUDIO_PLAYER_SCRIPT = `
       }
     }
     audio.addEventListener('timeupdate', maybeScroll);
+
+    // ---- Section-driven TOC highlight ----
+    // The TOC follows whichever section dominates the viewport, whether
+    // the user is scrolling manually or the audio scrolled the page. Set
+    // up once at page load; the section IDs don't change on language
+    // switch so no need to rebuild on cue refresh.
+    if ('IntersectionObserver' in window) {
+      var sectionVisibility = new Map();
+      var sectionObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(en) {
+          sectionVisibility.set(en.target.id, en.isIntersecting ? en.intersectionRatio : 0);
+        });
+        // Pick the highest-ratio section currently visible.
+        var bestId = null;
+        var bestRatio = 0;
+        sectionVisibility.forEach(function(ratio, id) {
+          if (ratio > bestRatio) { bestRatio = ratio; bestId = id; }
+        });
+        if (!bestId || bestRatio === 0) return;
+        var current = document.querySelector('nav.toc a.toc-active');
+        var want = document.querySelector('nav.toc a[href="#' + bestId + '"]');
+        if (!want) return;
+        if (current === want) return;
+        if (current) current.classList.remove('toc-active');
+        want.classList.add('toc-active');
+      }, {
+        root: null,
+        // Focus on the middle ~40% of the viewport — the section with
+        // the most content in that band wins. Avoids the TOC flickering
+        // when two sections share the top/bottom edges.
+        rootMargin: '-30% 0px -30% 0px',
+        threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
+      });
+      document.querySelectorAll('section.block[id]').forEach(function(s) {
+        sectionObserver.observe(s);
+      });
+    }
+
     audio.addEventListener('pause', function() {
       document.querySelectorAll('.now-playing').forEach(function(n) {
         n.classList.remove('now-playing');
