@@ -1237,9 +1237,9 @@ async function renderPage({
       ${has.papers ? `<li><a href="#papers">📄 Research</a></li>` : ""}
       ${has.labs ? `<li><a href="#labs">🏢 Lab posts</a></li>` : ""}
       ${has.writing ? `<li><a href="#writing">✍ Simon Willison</a></li>` : ""}
+      ${has.builders ? `<li><a href="#builders">🎙 Builder voices</a></li>` : ""}
       ${has.trending ? `<li><a href="#trending">🚀 GitHub</a></li>` : ""}
       ${has.hf ? `<li><a href="#hf">🤗 HuggingFace</a></li>` : ""}
-      ${has.builders ? `<li><a href="#builders">🎙 Builder voices</a></li>` : ""}
       <li><a href="digests/">🗂 Archive</a></li>
     </ul>
   </nav>
@@ -1288,6 +1288,13 @@ async function renderPage({
       ${builderWritingSection(simonEntries)}
     </section>` : ""}
 
+    ${has.builders ? `
+    <section id="builders" class="block">
+      <h2><span class="section-icon">🎙</span> Builder voices</h2>
+      <p class="section-sub">Recent posts, episodes, and writing from named AI builders <span class="meta-time">(via Follow Builders feeds)</span>.</p>
+      ${followBuildersSection(builderTweets, builderPods, builderBlogs)}
+    </section>` : ""}
+
     ${has.trending ? `
     <section id="trending" class="block">
       <h2><span class="section-icon">🚀</span> Trending on GitHub</h2>
@@ -1300,13 +1307,6 @@ async function renderPage({
       <h2><span class="section-icon">🤗</span> HuggingFace</h2>
       <p class="section-sub">Open-weight models ranked by ♥ likes (closest stable proxy for trending).</p>
       ${hfSection(hfModels)}
-    </section>` : ""}
-
-    ${has.builders ? `
-    <section id="builders" class="block">
-      <h2><span class="section-icon">🎙</span> Builder voices</h2>
-      <p class="section-sub">Recent posts, episodes, and writing from named AI builders <span class="meta-time">(via Follow Builders feeds)</span>.</p>
-      ${followBuildersSection(builderTweets, builderPods, builderBlogs)}
     </section>` : ""}
 
   </main>
