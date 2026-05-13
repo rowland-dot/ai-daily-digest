@@ -358,7 +358,8 @@ const PAGE_CSS = `
        Use overflow-x: clip (not hidden) — clip doesn't create a new scroll
        context, so sticky nav still pins correctly. */
     overflow-x: clip;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
   }
   body {
     font-family: var(--body-font);
@@ -371,7 +372,14 @@ const PAGE_CSS = `
        to wrap rather than push the layout wide on mobile. */
     overflow-wrap: anywhere;
     word-break: break-word;
+    /* Lock touch panning to the vertical axis — kills any horizontal
+       drift while the user is scrolling on mobile, even if some
+       descendant briefly overflows during a layout pass. */
+    touch-action: pan-y;
   }
+  /* Extra defense: stop horizontal overflow inside the main content
+     column. Sticky TOC is outside .container, so this doesn't break it. */
+  main.container { overflow-x: hidden; }
   a { color: var(--link); text-decoration: none; overflow-wrap: anywhere; }
   a:hover { color: var(--link-hover); text-decoration: underline; }
   img, svg, video { max-width: 100%; height: auto; }
