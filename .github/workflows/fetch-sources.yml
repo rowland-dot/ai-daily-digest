@@ -2,8 +2,8 @@ name: Fetch daily AI sources & render site
 
 on:
   schedule:
-    # 20:30 UTC Mon-Fri = 06:30 Sydney AEST (30 min before the Claude routine fires at 07:00)
-    - cron: "30 20 * * 1-5"
+    # 20:30 UTC daily = 06:30 Sydney AEST (30 min before the Claude routine fires at 07:00)
+    - cron: "30 20 * * *"
   push:
     branches: [main]
     paths:

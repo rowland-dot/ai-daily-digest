@@ -636,10 +636,6 @@ const PAGE_CSS = `
     transform: translateY(0);
   }
   .seek-hint:hover { background: var(--accent-strong, var(--accent)); filter: brightness(1.08); }
-  /* Keep button visible on touch devices that have no hover state. */
-  @media (hover: none) {
-    .audio-seekable .seek-hint { opacity: 0.92; transform: translateY(0); }
-  }
 
   /* Floating mini-player (bottom-right).
      Each element has a fixed pixel width per breakpoint so nothing
