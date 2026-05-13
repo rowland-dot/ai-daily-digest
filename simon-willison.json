@@ -1,36 +1,36 @@
 {
-  "fetched_at": "2026-05-13T20:34:55.646Z",
+  "fetched_at": "2026-05-13T21:11:08.967Z",
   "source": "Simon Willison",
   "entries": [
     {
       "title": "Quoting Boris Mann",
       "link": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
       "updated": "2026-05-13T16:15:50+00:00",
-      "summary": "“11 AI agents” is meaningless as a phrase. > If I said “I have 11 spreadsheets” or “I have 11 browser tabs” to do my work, it means about the same thing."
+      "summary": "“11 AI agents” is meaningless as a phrase. If I said “I have 11 spreadsheets” or “I have 11 browser tabs” to do my work, it means about the same thing."
     },
     {
       "title": "CSP Allow-list Experiment",
       "link": "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything",
       "updated": "2026-05-13T04:50:45+00:00",
-      "summary": "An experiment that shows that you can load an app in a CSP-protected sandboxed iframe (see previous note) and have a custom fetch() that intercepts CSP errors and passes them up to the parent window... which can then prompt the user to add that domain to an allow-list and then refresh the page."
+      "summary": "An experiment that shows that you can load an app in a CSP-protected sandboxed iframe (see previous note ) and have a custom fetch() that intercepts CSP errors and passes them up to the parent window... which can then prompt the user to add that domain to an allow-list and then refresh the page."
     },
     {
       "title": "datasette 1.0a29",
       "link": "https://simonwillison.net/2026/May/12/datasette/#atom-everything",
       "updated": "2026-05-12T23:41:06+00:00",
-      "summary": "New TokenRestrictions. abbreviated(datasette)utility method for creating \"r\" dictionaries. #2695 Table headers and column options are now visible even if a table contains zero rows. #2701 Fixed bug with display of column actions dialog on Mobile Safari. #2708 Fixed bug where tests could crash with a segfault due to a race condition between Datasette. close() and Database."
+      "summary": "New TokenRestrictions.abbreviated(datasette) utility method for creating \"_r\" dictionaries. #2695 Table headers and column options are now visible even if a table contains zero rows. #2701 Fixed bug with display of column actions dialog on Mobile Safari. #2708 Fixed bug where tests could crash with a segfault due to a race condition between Datasette.close() and Database.close() . #2709"
     },
     {
       "title": "Quoting Mo Bitar",
       "link": "https://simonwillison.net/2026/May/12/mo-bitar/#atom-everything",
       "updated": "2026-05-12T22:59:58+00:00",
-      "summary": "Now, if your CEO has never heard the phrase Ralph Loop, oh man, you are less than 30 days away from your next promotion. I'm not even exaggerating. Walk into his office, close the door, and say, hey chief, been experimenting with something. It's called Ralph Loops. And I think it could change literally everything. And he's gonna say, what's a Ralph loop?"
+      "summary": "Now, if your CEO has never heard the phrase Ralph Loop, oh man, you are less than 30 days away from your next promotion. I'm not even exaggerating. Walk into his office, close the door, and say, hey chief, been experimenting with something. It's called Ralph Loops. And I think it could change literally everything. And he's gonna say, what's a Ralph loop? And you will say, give me $18,000 worth of API credits and I'll show you. Now you won't actually do anything, because you can't do anything. Because nobody can, because nobody knows what they're doing. But by the time he figures that out, you'll have a new title, and equity bump. [...] Talk about automation constantly. Nothing arouses the slumbering capitalists than the mention of automation. Drop names too, bro. Like talk about specific team members you can automate out of existence. Be like, yo, I automated Gary, bro. Tag Gary in the message. Tag him in Slack in a very public channel. Be like, yo, I just automated @Gary. His function has been Ralph Looped. And tag your CEO in the same message. You think you're getting laid off after that?"
     },
     {
       "title": "Quoting Mitchell Hashimoto",
       "link": "https://simonwillison.net/2026/May/12/mitchell-hashimoto/#atom-everything",
       "updated": "2026-05-12T22:21:51+00:00",
-      "summary": "The thing about 90% of TDMs [Technical Decision Makers] is that they're motivated primarily by NOT GETTING FIRED. These aren't people who browser Lobsters or push to GH on the weekend. These are people that work 9 to 5, get paid, go home, and NEVER THINK ABOUT WORK AGAIN. So to achieve all that, they follow secular trends supported by analysts and broad public sentiment."
+      "summary": "The thing about 90% of TDMs [Technical Decision Makers] is that they're motivated primarily by NOT GETTING FIRED. These aren't people who browser Lobsters or push to GH on the weekend. These are people that work 9 to 5, get paid, go home, and NEVER THINK ABOUT WORK AGAIN. So to achieve all that, they follow secular trends supported by analysts and broad public sentiment. Oh, Gartner said that \"AI strategy\" is most important? McKinsey said \"context\" needs to be managed? Well, \"Context Engine for AI Apps\" is going to be defensible. Buy it."
     },
     {
       "title": "llm 0.32a2",
