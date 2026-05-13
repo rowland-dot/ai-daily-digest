@@ -1,8 +1,18 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4MjQxNjAwMDAwLCJpIjoiY21veGJrbnd0MDBmb3NsbGg0Nmc2Mzc0NCJ9",
+  "nextCursor": "eyJhIjoxNzc4MjYwNzU0MDAwLCJpIjoiY21veDZxdGJsMDBqdHNsNXNrd3Y4dmF6ZiJ9",
   "items": [
+    {
+      "id": "cmp4gi5gq05nosljx7qdjpipt",
+      "title": "Claude代码周限额提升50%",
+      "title_en": "Claude Code weekly limits are increasing 50%， now through July 13. Live now for all Pro， Max， Team，…",
+      "url": "https://x.com/ClaudeDevs/status/2054639777685934564",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "publishedAt": "2026-05-13T19:07:51.000Z",
+      "summary": "Claude代码周限额正在提升50%，即日起持续至7月13日。\n\n现已面向所有Pro、Max、Team及按席位计费的企业用户生效。",
+      "category": "ai-products"
+    },
     {
       "id": "cmp4ec8nl055jsljx2eak9wzb",
       "title": "Krea 2 新增情绪板分享功能",
@@ -81,6 +91,16 @@
       "source": "Cloudflare Blog",
       "publishedAt": "2026-05-13T13:00:00.000Z",
       "summary": "Browser Run 产品已基于 Cloudflare Containers 完成重构，实现了使用限制提升、性能加速、可靠性增强以及交付速度提高。此次重构使产品能够更高效地处理大规模并发任务，显著缩短了任务响应时间，并提升了服务稳定性。团队通过容器化技术优化了资源调度与隔离机制，从而为用户提供更快速、更可扩展的浏览器自动化服务。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp4h22tt05tbsljxfgk8hf17",
+      "title": "为智能体配置开发环境",
+      "title_en": "Development environments for your agents",
+      "url": "https://cursor.com/blog/cloud-agent-development-environments",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-05-13T12:00:00.000Z",
+      "summary": "Cursor发布新工具，用于配置云端智能体开发环境。核心更新包括：支持多仓库环境，使智能体可跨代码库协同工作；提供基于Dockerfile的代码化配置，支持构建密钥并优化缓存，命中缓存后构建速度提升70%；增强由智能体主导的环境设置流程，提供验证与故障回退机制。同时新增环境治理与安全功能，如版本历史、审计日志，以及可在环境级别独立管控的网络出口和密钥权限。这些改进旨在帮助团队在受控环境中更高效地运行能端到端处理任务的并行智能体集群。",
       "category": "ai-products"
     },
     {
@@ -481,26 +501,6 @@
       "source": "X：OpenAI (@OpenAI)",
       "publishedAt": "2026-05-08T17:19:14.000Z",
       "summary": "就把这个留在这里。\n\nhttps：//chatgpt.com/codex/switch-to-codex/",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1f9fw80xoxsllhoycngo1e",
-      "title": "Agent SDK 中的人机协同工具",
-      "title_en": "Human-in-the-Loop Tools for the Agent SDK",
-      "url": "https://openrouter.ai/announcements/human-in-the-loop-tools",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-05-08T12:00:00.000Z",
-      "summary": "OpenRouter Agent SDK 引入了一种新工具类型，使智能体能够自动处理常规决策，并在高风险决策时暂停以请求人工输入。该功能通过两个钩子实现，无需编写任何循环管理代码，从而在自动化流程中灵活嵌入关键的人工判断环节。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmoxbknwt00fosllh46g63744",
-      "title": "Bugbot团队与个人计划更新",
-      "title_en": "Updates to Bugbot for Teams and Individuals",
-      "url": "https://cursor.com/blog/may-2026-bugbot-changes",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-05-08T12:00:00.000Z",
-      "summary": "Bugbot宣布将团队与个人计划从每月每席位40美元的订阅制改为按使用量计费。现有用户的变化将于2026年6月5日后的下一个账单周期开始生效，例如2026年5月购买的年订阅将在2027年5月切换。团队按需消费计费，个人按包含使用量计费，平均每次运行成本约为1.00-1.50美元，具体取决于PR大小和复杂度。同时，用户现在可配置Bugbot审查PR的工作强度：默认强度下80%被识别的问题在合并时得到解决；高强度模式下可多发现35%的问题，解决率仍保持在80%。现有客户可在Cursor面板中提前切换至用量计费。",
       "category": "ai-products"
     }
   ]
