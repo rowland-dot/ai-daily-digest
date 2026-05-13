@@ -1440,7 +1440,7 @@ async function renderPage({
       <button data-theme="claude" role="tab">Claude</button>
     </div>
     <h1>AI Daily Digest</h1>
-    <p class="date">${escapeHtml(sydney.date)} · ${escapeHtml(sydney.time)} · ${escapeHtml(sydney.tz)} (Sydney)</p>
+    <p class="date">${escapeHtml(sydney.date)}</p>
     <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, builder voices, r/LocalLLaMA, GitHub, HuggingFace, and Chinese AI media.</p>
   </header>
 
