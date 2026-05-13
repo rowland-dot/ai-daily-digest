@@ -1255,31 +1255,10 @@ const AUDIO_PLAYER_SCRIPT = `
         el.appendChild(btn);
       });
 
-      // Mobile + keyboard: when the user taps inside a seekable card
-      // (anywhere, but not on a link/button), mark THAT card as the
-      // focused one. Tapping another card moves focus; tapping outside
-      // any card clears it. This makes the seek button visible only
-      // for the card the user is currently engaging with.
-      if (!window._seekableFocusBound) {
-        window._seekableFocusBound = true;
-        document.addEventListener('click', function(e) {
-          // Don't override on hover-capable pointer interactions —
-          // hover already handles desktop perfectly.
-          var card = e.target.closest('.audio-seekable');
-          var clickedInteractive = e.target.closest('a, button, input, textarea, select, .seek-hint');
-          document.querySelectorAll('.audio-seekable.is-focused').forEach(function(el) {
-            if (el !== card) el.classList.remove('is-focused');
-          });
-          if (card && !clickedInteractive) {
-            card.classList.add('is-focused');
-          } else if (!card) {
-            // Tapped outside any seekable card — clear focus
-            document.querySelectorAll('.audio-seekable.is-focused').forEach(function(el) {
-              el.classList.remove('is-focused');
-            });
-          }
-        }, true);
-      }
+      // Button visibility is now driven ONLY by hover (desktop), keyboard
+      // focus, and scroll-into-viewport-center (IntersectionObserver
+      // below). Tapping a card's body no longer toggles the button —
+      // the user explicitly asked for scroll-only on touch.
 
       // Mobile + scrolling: when the user scrolls a card to the
       // viewport center, mark it focused so the seek button surfaces
