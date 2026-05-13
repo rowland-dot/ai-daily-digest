@@ -44,6 +44,50 @@ function shortDate(iso) {
   return d.toISOString().slice(0, 10);
 }
 
+const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// Parse anything we get from feeds into a Date or null:
+//  - ISO 8601 strings (`2026-05-13T06:19:47.000Z`)
+//  - RFC 1123 (`Tue, 13 May 2026 06:19:47 GMT`)
+//  - Unix epoch seconds (Reddit's `created_utc`, number or numeric string)
+function parseAnyDate(v) {
+  if (v == null || v === "") return null;
+  if (typeof v === "number") {
+    const ms = v > 1e12 ? v : v * 1000;
+    const d = new Date(ms);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  const s = String(v).trim();
+  if (/^\d+$/.test(s)) return parseAnyDate(parseInt(s, 10));
+  const d = new Date(s);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+// Human-readable relative time, baked into the HTML at render time.
+// Anchor is the moment we build the page, so static archive pages
+// preserve "2h ago" wording from the day they were generated.
+function relTime(v, now = Date.now()) {
+  const d = parseAnyDate(v);
+  if (!d) return "";
+  const diff = Math.round((now - d.getTime()) / 1000);
+  if (diff < 60) return "just now";
+  if (diff < 3600) {
+    const m = Math.round(diff / 60);
+    return `${m}m ago`;
+  }
+  if (diff < 86400) {
+    const h = Math.round(diff / 3600);
+    return `${h}h ago`;
+  }
+  if (diff < 86400 * 7) {
+    const days = Math.round(diff / 86400);
+    return days === 1 ? "yesterday" : `${days}d ago`;
+  }
+  const sameYear = d.getUTCFullYear() === new Date(now).getUTCFullYear();
+  const m = MONTH_ABBR[d.getUTCMonth()];
+  return sameYear ? `${m} ${d.getUTCDate()}` : `${m} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
+}
+
 // Date-window filter. Returns true if `value` (ISO string or Unix epoch
 // seconds) falls within the last `hours` hours. Items missing a parsable
 // date are kept (defensive — we'd rather over-include than silently drop).
@@ -81,7 +125,7 @@ function aihotItemsCard(items, anchorPrefix) {
       ${item.summary ? `<p class="card-summary"${txAttrs(item.summary)}>${escapeHtml(item.summary)}</p>` : ""}
       <div class="card-meta">
         ${item.source ? `<span class="badge">${escapeHtml(item.source)}</span>` : ""}
-        ${item.publishedAt ? `<span class="meta-time">${escapeHtml(item.publishedAt)}</span>` : ""}
+        ${item.publishedAt ? `<span class="meta-time" title="${escapeHtml(item.publishedAt)}">${escapeHtml(relTime(item.publishedAt))}</span>` : ""}
       </div>
       <div class="card-actions">
         ${item.url ? `<a class="primary-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Read original ↗</a>` : ""}
@@ -153,7 +197,7 @@ function labBlogSection(items) {
       ${it.description ? `<p class="card-summary"${txAttrs(it.description)}>${escapeHtml(it.description)}</p>` : ""}
       <div class="card-meta">
         <span class="badge">OpenAI</span>
-        ${it.pubDate ? `<span class="meta-time">${escapeHtml(it.pubDate.replace(/ \d{2}:\d{2}:\d{2} GMT$/, ""))}</span>` : ""}
+        ${it.pubDate ? `<span class="meta-time" title="${escapeHtml(it.pubDate)}">${escapeHtml(relTime(it.pubDate))}</span>` : ""}
       </div>
     </article>
   `,
@@ -171,7 +215,7 @@ function builderWritingSection(entries) {
       ${e.summary ? `<p class="writing-summary"${txAttrs(e.summary)}>${escapeHtml(e.summary)}</p>` : ""}
       <div class="writing-meta">
         <span>Simon Willison</span>
-        ${e.updated ? `<span>· ${escapeHtml(shortDate(e.updated))}</span>` : ""}
+        ${e.updated ? `<span title="${escapeHtml(e.updated)}">· ${escapeHtml(relTime(e.updated))}</span>` : ""}
       </div>
     </li>
   `,
@@ -197,6 +241,7 @@ function localLlamaSection(posts) {
         ${p.flair ? `<span class="badge">${escapeHtml(p.flair)}</span>` : ""}
         ${typeof p.score === "number" ? `<span>· ▲ ${p.score.toLocaleString()}</span>` : ""}
         ${typeof p.comments === "number" ? `<span>· 💬 ${p.comments.toLocaleString()}</span>` : ""}
+        ${p.created_utc ? `<span title="${escapeHtml(new Date(p.created_utc * 1000).toISOString())}">· ${escapeHtml(relTime(p.created_utc))}</span>` : ""}
       </div>
     </li>
   `,
@@ -229,7 +274,7 @@ function followBuildersSection(xItems, podItems, blogItems) {
       <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener"${txAttrs(item.title || "")}>${escapeHtml(item.title || "(untitled)")}</a>
       <div class="builder-meta">
         ${item.name ? `<span>${escapeHtml(item.name)}</span>` : ""}
-        ${item.publishedAt ? `<span> · ${escapeHtml(item.publishedAt.slice(0, 10))}</span>` : ""}
+        ${item.publishedAt ? `<span title="${escapeHtml(item.publishedAt)}"> · ${escapeHtml(relTime(item.publishedAt))}</span>` : ""}
         ${kind === "podcast" ? `<span class="badge">podcast</span>` : ""}
       </div>
     </li>
