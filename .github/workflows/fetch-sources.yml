@@ -216,6 +216,25 @@ jobs:
           (cd "$WT" && git push origin HEAD:data)
           git worktree remove "$WT" --force
 
+      # Fire the Editor's Cut routine as soon as fresh data is on the
+      # `data` branch. The routine reads from raw.githubusercontent.com,
+      # generates Claude-quality per-article summaries + the editorial
+      # brief, and commits results back to the repo — which triggers a
+      # second fast-path build that re-renders the page with Claude content.
+      - name: Fire Editor's Cut routine (full-mode only)
+        if: steps.mode-final.outputs.value == 'full'
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+            -H "Content-Type: application/json" \
+            "https://api.anthropic.com/v1/claude_code/routines/trig_01RgkpuoDzTduFNrESeoQRrH/fire"
+          echo "[ok] routine fire requested"
+        env:
+          TOKEN: ${{ secrets.CLAUDE_ROUTINE_TOKEN }}
+        continue-on-error: true
+
       - name: Render static site
         run: node scripts/render-site.mjs
 
