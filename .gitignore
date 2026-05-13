@@ -1,7 +1,22 @@
-# Generated artifacts — built fresh in CI on every workflow run,
-# deployed via Pages artifact. Not tracked in git so local renders
-# don't race with bot pushes (see .github/workflows/fetch-sources.yml).
+# Generated build artifacts — Pages output regenerated every workflow
+# run. Not tracked so local renders don't race with bot pushes.
 data/
-docs/
 node_modules/
+audio-segments/
 *.log
+.tmp-*
+
+# Pages output lives under docs/, but documentation folders inside
+# docs/ (specs, plans, designs, etc.) ARE tracked. List the generated
+# build outputs specifically instead of ignoring the whole docs/ tree.
+docs/index.html
+docs/digest.mp3
+docs/digest-en.mp3
+docs/digest-zh.mp3
+docs/audio-cues.json
+docs/audio-cues-en.json
+docs/audio-cues-zh.json
+docs/content-translations.json
+docs/audio-segments/
+docs/data/
+docs/digests/
