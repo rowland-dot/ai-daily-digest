@@ -230,8 +230,10 @@ async function aihotItems(category, limit = 20) {
 async function articleSummary(url) {
   if (!url || !/^https?:\/\//.test(url)) return "";
   const fast = await fetchMetaDescription(url);
-  if (fast) return fast;
-  return await fetchJinaSummary(url);
+  if (fast && !isUselessSummary(fast)) return fast;
+  const jina = await fetchJinaSummary(url);
+  if (jina && !isUselessSummary(jina)) return jina;
+  return "";
 }
 
 async function fetchMetaDescription(url) {
@@ -340,6 +342,31 @@ async function fetchJinaSummary(url) {
   }
 }
 
+// Reject patterns that are technically a meta-description but useless
+// as a TLDR — GitHub repo boilerplate, mailing-list nav, byline-only
+// blurbs, dead "Click here" / cookie text, etc.
+const USELESS_SUMMARY_PATTERNS = [
+  /^Contribute to [\w./-]+ development by creating an account on GitHub\.?$/i,
+  /^GitHub is where people build software\./i,
+  /^Previous message \(by thread\)/i,
+  /^Next message \(by thread\)/i,
+  /^\[Date Prev\]/i,
+  /^Article\/tutorial on https?:\/\//i,
+  /^GitHub is where over /i,
+  /^Sign up for free to/i,
+  /^We use cookies to/i,
+  /^Click to share/i,
+  /^A blog post by /i,
+  /^Browse our /i,
+];
+
+function isUselessSummary(s) {
+  if (!s) return true;
+  const trim = s.trim();
+  if (trim.length < 50) return true;
+  return USELESS_SUMMARY_PATTERNS.some((re) => re.test(trim));
+}
+
 function pickDescription(html) {
   const patterns = [
     /<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i,
@@ -351,7 +378,9 @@ function pickDescription(html) {
     const m = re.exec(html);
     if (m && m[1]) {
       const out = decodeEntities(m[1]).replace(/\s+/g, " ").trim();
-      if (out.length > 30) return out.slice(0, 400);
+      if (out.length > 30 && !isUselessSummary(out)) {
+        return out.slice(0, 400);
+      }
     }
   }
   return "";

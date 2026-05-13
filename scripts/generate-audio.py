@@ -686,17 +686,27 @@ def collect_and_translate_ui_strings() -> dict:
     return out
 
 
+def _tts_outputs_exist() -> bool:
+    return all((SITE / f).exists() for f in ("digest.mp3", "digest-en.mp3", "digest-zh.mp3"))
+
+
 def main() -> int:
     manifest = load("manifest.json") or {}
     date_utc = manifest.get("date_utc") or "today"
 
-    # Pre-translate every UI-visible string so the page can language-swap.
-    # (Audio segments translate as needed during render_track too; this
-    # also primes the shared cache so audio gen is fast.)
+    # Translation ALWAYS runs (fresh HN summaries / new content need
+    # translation entries even when MP3s were cached). It's cheap
+    # relative to TTS — ~30s of API calls.
     try:
         collect_and_translate_ui_strings()
     except Exception as e:
         print(f"[warn] UI translation pass failed: {e}", file=sys.stderr)
+
+    # Skip TTS if MP3s already exist (audio cache hit). Translation
+    # has been refreshed above so the page side is up to date.
+    if _tts_outputs_exist():
+        print("[skip] MP3 tracks exist — skipping TTS regeneration.")
+        return 0
 
     # Each entry: (anchor or None, text, voice). One TTS call per entry.
     segments: list[tuple[str | None, str, str]] = []

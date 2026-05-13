@@ -79,12 +79,10 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           ffmpeg -version | head -1
 
-      - name: Install edge-tts + deep-translator (only if regenerating audio)
-        if: steps.audio-cache.outputs.cache-hit != 'true'
+      - name: Install edge-tts + deep-translator (always — translation needs it)
         run: pip install --quiet edge-tts deep-translator
 
-      - name: Generate narration MP3 (only if cache miss)
-        if: steps.audio-cache.outputs.cache-hit != 'true'
+      - name: Generate narration MP3 + refresh translations
         run: |
           mkdir -p docs
           python scripts/generate-audio.py
