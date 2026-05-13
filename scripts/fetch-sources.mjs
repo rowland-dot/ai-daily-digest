@@ -548,7 +548,12 @@ async function localLlama(limit = 14) {
       summary: looksLikeSelfPost ? cleaned.slice(0, 360) : "",
     };
   });
-  const posts = entries.slice(0, limit);
+  // Filter: drop posts with no real TLDR (image-only / meme / link-out
+  // with no self-post body). These are noise — title alone rarely
+  // conveys whether the post is worth opening, and image-driven
+  // jokes pollute the section. "If the TLDR engine returns nothing,
+  // eliminate on spot." (user rule, 2026-05-14.)
+  const posts = entries.filter((e) => e.summary && e.summary.length >= 60).slice(0, limit);
   return {
     fetched_at: new Date().toISOString(),
     source: "r/LocalLLaMA",
