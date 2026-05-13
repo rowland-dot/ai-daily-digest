@@ -424,8 +424,14 @@ const PAGE_CSS = `
   }
   nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
 
-  /* Sections */
-  section.block { margin: 44px 0; scroll-margin-top: 60px; }
+  /* Sections — scroll-margin-top reserves space for the sticky TOC so
+     clicking a TOC link doesn't bury the section's H2 under the nav. */
+  section.block { margin: 44px 0; scroll-margin-top: 64px; }
+  @media (max-width: 600px) {
+    /* Mobile TOC wraps to 2–3 rows; reserve more space so the section
+       title is visible after a tap. */
+    section.block { scroll-margin-top: 140px; }
+  }
   section.block h2 {
     font-family: var(--display-font);
     font-size: 26px;
@@ -838,6 +844,39 @@ const AUDIO_PLAYER_SCRIPT = `
       });
     }
 
+    // ---- Auto-scroll to active section based on cues ----
+    var cuesEl = document.getElementById('audio-cues');
+    var cuesData = null;
+    if (cuesEl) {
+      try { cuesData = JSON.parse(cuesEl.textContent); } catch (e) {}
+    }
+    var lastAnchor = null;
+    var userScrollOverride = false;
+    var lastUserScrollAt = 0;
+    // Disable auto-scroll for 8s after the user manually scrolls so we
+    // don't fight against them.
+    window.addEventListener('scroll', function() {
+      lastUserScrollAt = Date.now();
+    }, { passive: true });
+
+    function maybeScroll() {
+      if (!cuesData || !cuesData.cues) return;
+      if (audio.paused) return;
+      if (Date.now() - lastUserScrollAt < 8000) return;
+      var t = audio.currentTime;
+      var active = null;
+      for (var i = 0; i < cuesData.cues.length; i++) {
+        var c = cuesData.cues[i];
+        if (t >= c.start && t < c.end) { active = c.anchor; break; }
+      }
+      if (active && active !== lastAnchor) {
+        var el = document.getElementById(active);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        lastAnchor = active;
+      }
+    }
+    audio.addEventListener('timeupdate', maybeScroll);
+
     // ---- Playback speed cycle ----
     if (speedBtn) {
       var rates = [1, 1.25, 1.5, 1.75, 2];
@@ -896,6 +935,7 @@ async function renderPage({
   podFeed,
   blogFeed,
   audioAvailable,
+  audioCues,
 }) {
   // Pre-filter all sections so we can detect empty ones and skip both
   // the <section> and its TOC entry.
@@ -1090,6 +1130,7 @@ async function renderPage({
     </div>
   </div>
 
+  ${audioCues ? `<script id="audio-cues" type="application/json">${JSON.stringify(audioCues)}</script>` : ""}
   <script>${THEME_TOGGLE_SCRIPT}</script>
   <script>${AUDIO_PLAYER_SCRIPT}</script>
 
@@ -1160,6 +1201,14 @@ if (existsSync(DIGESTS_DIR)) {
 }
 
 const audioAvailable = existsSync(join(SITE_DIR, "digest.mp3"));
+let audioCues = null;
+if (existsSync(join(SITE_DIR, "audio-cues.json"))) {
+  try {
+    audioCues = JSON.parse(await readFile(join(SITE_DIR, "audio-cues.json"), "utf8"));
+  } catch {
+    audioCues = null;
+  }
+}
 
 const pageHtml = await renderPage({
   date: today,
@@ -1178,6 +1227,7 @@ const pageHtml = await renderPage({
   podFeed,
   blogFeed,
   audioAvailable,
+  audioCues,
 });
 
 await writeFile(join(SITE_DIR, "index.html"), pageHtml, "utf8");

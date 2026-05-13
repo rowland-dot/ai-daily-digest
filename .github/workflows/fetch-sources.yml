@@ -58,8 +58,13 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          path: docs/digest.mp3
-          key: digest-mp3-${{ steps.today.outputs.date }}
+          # v2: bumped when separator phrases + audio-cues added, so old
+          # cached MP3s without "Next," separators and matching cues file
+          # get regenerated.
+          path: |
+            docs/digest.mp3
+            docs/audio-cues.json
+          key: digest-mp3-v2-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'

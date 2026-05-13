@@ -90,7 +90,15 @@ def filter_recent(items: list[dict], date_key: str) -> list[dict]:
 # URLs, markdown markers, bracketed metadata, dangling timestamps, etc. all
 # read aloud terribly. Strip them aggressively before sending to edge-tts.
 
-URL_RE = re.compile(r"https?://\S+|www\.\S+")
+URL_RE = re.compile(
+    r"(?:https?://|ftp://)\S+"                    # full URLs
+    r"|www\.\S+"                                  # www-prefixed
+    r"|\b(?:[a-z][a-z0-9-]*\.)+"                  # bare domains, e.g. openai.com/blog
+    r"(?:com|net|org|io|co|ai|dev|app|so|me|sh|tv|tech|xyz|news|today|press|"
+    r"cn|jp|uk|au|de|fr|us|info|ly|gg|gov|edu|name|cc|to|fyi|sub)"
+    r"(?:/\S*)?\b",                               # optional path
+    re.IGNORECASE,
+)
 MARKDOWN_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]+\)")            # [text](url) -> text
 MARKDOWN_IMG_RE = re.compile(r"!\[[^\]]*\]\([^)]+\)")              # ![alt](url) -> ""
 BRACKET_META_RE = re.compile(r"\[(?:via|source|update|note|edit)[^\]]*\]", re.IGNORECASE)
@@ -187,12 +195,15 @@ def field(d: dict, *keys: str, limit: int = 0) -> str:
 
 
 def build_aihot_section_text(label: str, items: list[dict]) -> str:
-    """Stitch Chinese items into one read-aloud passage."""
+    """Stitch Chinese items into one read-aloud passage with separator."""
     parts: list[str] = []
     lbl = clean_for_tts(label)
     if lbl:
         parts.append(lbl + "。")
-    for item in items:
+    for idx, item in enumerate(items):
+        if idx > 0:
+            # Inter-article separator (Chinese): natural sentence break + "next"
+            parts.append("。。。 下一篇，")
         title = field(item, "title")
         summary = field(item, "summary", limit=200)
         if title:
@@ -202,9 +213,16 @@ def build_aihot_section_text(label: str, items: list[dict]) -> str:
     return " ".join(parts)
 
 
+def _english_separator() -> str:
+    # Three periods create extra pause in edge-tts; "Next," cues the listener.
+    return "... Next,"
+
+
 def build_lab_section_text(items: list[dict]) -> str:
     parts = ["Lab announcements from OpenAI."]
-    for it in items[:OTHER_CAP]:
+    for idx, it in enumerate(items[:OTHER_CAP]):
+        if idx > 0:
+            parts.append(_english_separator())
         title = field(it, "title")
         desc = field(it, "description", limit=220)
         if title:
@@ -216,7 +234,9 @@ def build_lab_section_text(items: list[dict]) -> str:
 
 def build_simon_section_text(entries: list[dict]) -> str:
     parts = ["Builder writing, from Simon Willison's weblog."]
-    for e in entries[:OTHER_CAP]:
+    for idx, e in enumerate(entries[:OTHER_CAP]):
+        if idx > 0:
+            parts.append(_english_separator())
         title = field(e, "title")
         summary = field(e, "summary", limit=220)
         if title:
@@ -228,13 +248,14 @@ def build_simon_section_text(entries: list[dict]) -> str:
 
 def build_gh_section_text(repos: list[dict]) -> str:
     parts = ["Trending on GitHub today."]
-    for r in repos[:OTHER_CAP]:
+    for idx, r in enumerate(repos[:OTHER_CAP]):
+        if idx > 0:
+            parts.append(_english_separator())
         owner = clean_for_tts(r.get("owner") or "")
         name = clean_for_tts(r.get("name") or "")
         desc = field(r, "description", limit=180)
         stars_today = r.get("starsToday")
         if owner and name:
-            # Speak as "owner slash name" so model IDs don't get munged
             parts.append(f"{owner} slash {name}.")
         if desc:
             parts.append(desc + ".")
@@ -257,7 +278,9 @@ def build_hn_section_text(items: list[dict]) -> str:
     if not filtered:
         return ""
     parts = ["Top AI stories from Hacker News today."]
-    for it in filtered:
+    for idx, it in enumerate(filtered):
+        if idx > 0:
+            parts.append(_english_separator())
         title = field(it, "title")
         score = it.get("score") or 0
         comments = it.get("descendants") or 0
@@ -269,7 +292,9 @@ def build_hn_section_text(items: list[dict]) -> str:
 
 def build_hf_section_text(models: list[dict]) -> str:
     parts = ["Most-loved models on HuggingFace."]
-    for m in models[:OTHER_CAP]:
+    for idx, m in enumerate(models[:OTHER_CAP]):
+        if idx > 0:
+            parts.append(_english_separator())
         mid = clean_for_tts(m.get("id") or "")
         likes = m.get("likes") or 0
         downloads = m.get("downloads") or 0
@@ -289,7 +314,9 @@ def build_follow_builders_x_text(x_feed: dict) -> str:
     if not all_tweets:
         return ""
     parts = ["Builder voices from X."]
-    for t in all_tweets:  # no cap on Follow Builders
+    for idx, t in enumerate(all_tweets):
+        if idx > 0:
+            parts.append(_english_separator())
         author = clean_for_tts(t.get("_author") or "")
         text = field(t, "text", limit=240)
         if author and text:
@@ -302,7 +329,9 @@ def build_follow_builders_podcasts_text(pod_feed: dict) -> str:
     if not episodes:
         return ""
     parts = ["New AI podcast episodes."]
-    for ep in episodes:  # no cap
+    for idx, ep in enumerate(episodes):
+        if idx > 0:
+            parts.append(_english_separator())
         name = clean_for_tts(ep.get("name") or "")
         title = field(ep, "title")
         if name and title:
@@ -317,7 +346,9 @@ def build_follow_builders_blogs_text(blog_feed: dict) -> str:
     if not blogs:
         return ""
     parts = ["Builder blog posts."]
-    for b in blogs:  # no cap
+    for idx, b in enumerate(blogs):
+        if idx > 0:
+            parts.append(_english_separator())
         name = clean_for_tts(b.get("name") or "")
         title = field(b, "title")
         if name and title:
@@ -356,19 +387,20 @@ def chunk_text(text: str, max_chars: int = MAX_TTS_CHARS) -> list[str]:
     return chunks
 
 
-def add_section(sections: list, text: str, voice: str) -> None:
-    """Append (text, voice) pairs to `sections`, chunking long text."""
+def add_section(sections: list, text: str, voice: str, anchor: str | None = None) -> None:
+    """Append (text, voice, anchor) tuples to `sections`, chunking long text.
+    `anchor` is the page-section ID (e.g. 'models') used for scroll cues."""
     for chunk in chunk_text(text):
-        sections.append((chunk, voice))
+        sections.append((chunk, voice, anchor))
 
 
 def main() -> int:
     manifest = load("manifest.json") or {}
     date_utc = manifest.get("date_utc") or "today"
 
-    sections: list[tuple[str, str]] = []  # (text, voice)
+    sections: list[tuple[str, str, str | None]] = []  # (text, voice, anchor)
 
-    # Intro
+    # Intro (no anchor — page top)
     add_section(
         sections,
         (
@@ -376,6 +408,7 @@ def main() -> int:
             f"Here's what shipped, what trended, and what AI builders are saying."
         ),
         EN_VOICE,
+        None,
     )
 
     # AIHOT — Chinese
@@ -394,66 +427,58 @@ def main() -> int:
         return []
 
     aihot_categories = [
-        ("aihot-ai-models.json", "模型发布与更新", "模型"),
-        ("aihot-ai-products.json", "产品与应用", "产品"),
-        ("aihot-industry.json", "行业动态", "行业"),
-        ("aihot-paper.json", "研究亮点", "论文"),
+        ("aihot-ai-models.json", "模型发布与更新", "模型", "models"),
+        ("aihot-ai-products.json", "产品与应用", "产品", "products"),
+        ("aihot-industry.json", "行业动态", "行业", "industry"),
+        ("aihot-paper.json", "研究亮点", "论文", "papers"),
     ]
-    for filename, display_label, fallback_hint in aihot_categories:
+    for filename, display_label, fallback_hint, anchor in aihot_categories:
         cat = load(filename)
         items = (cat.get("items") if cat else None) or daily_section(fallback_hint)
-        # AIHOT: 24h filter, no count cap on top.
         items = filter_recent(items, "publishedAt")
         if not items:
             continue
         text = build_aihot_section_text(display_label, items)
         if text:
-            add_section(sections, text, ZH_VOICE)
+            add_section(sections, text, ZH_VOICE, anchor)
 
-    # OpenAI lab — 24h filter, then OTHER_CAP inside builder
     oai = load("openai-blog.json")
     if oai and oai.get("items"):
         items = filter_recent(oai["items"], "pubDate")
         if items:
             text = build_lab_section_text(items)
             if text:
-                add_section(sections, text, EN_VOICE)
+                add_section(sections, text, EN_VOICE, "labs")
 
-    # Simon Willison — 24h filter, then OTHER_CAP
     sw = load("simon-willison.json")
     if sw and sw.get("entries"):
         entries = filter_recent(sw["entries"], "updated")
         if entries:
             text = build_simon_section_text(entries)
             if text:
-                add_section(sections, text, EN_VOICE)
+                add_section(sections, text, EN_VOICE, "writing")
 
-    # GitHub trending — no date filter (URL already ?since=daily); OTHER_CAP only
     gh = load("github-trending.json")
     if gh and gh.get("repos"):
         text = build_gh_section_text(gh["repos"])
         if text:
-            add_section(sections, text, EN_VOICE)
+            add_section(sections, text, EN_VOICE, "trending")
 
-    # HN top AI — 24h filter (time is unix epoch), then OTHER_CAP
     hn = load("hn-top.json")
     if hn and hn.get("items"):
         items = [it for it in hn["items"] if it and within_window(it.get("time"))]
         text = build_hn_section_text(items)
         if text:
-            add_section(sections, text, EN_VOICE)
+            add_section(sections, text, EN_VOICE, "hn")
 
-    # HF popular — no date filter ("trending overall", not chrono); OTHER_CAP only
     hf = load("hf-popular.json")
     if hf and hf.get("models"):
         text = build_hf_section_text(hf["models"])
         if text:
-            add_section(sections, text, EN_VOICE)
+            add_section(sections, text, EN_VOICE, "hf")
 
-    # Follow Builders — 24h filter, no count cap
     x_feed = load("follow-builders-x.json")
     if x_feed:
-        # Filter tweets per-author before flattening
         filtered_authors = []
         for author in x_feed.get("x", []) or []:
             recent = [t for t in (author.get("tweets") or []) if within_window(t.get("createdAt"))]
@@ -462,43 +487,85 @@ def main() -> int:
         if filtered_authors:
             text = build_follow_builders_x_text({"x": filtered_authors})
             if text:
-                add_section(sections, text, EN_VOICE)
+                add_section(sections, text, EN_VOICE, "builders")
     pod_feed = load("follow-builders-podcasts.json")
     if pod_feed:
         episodes = filter_recent(pod_feed.get("podcasts") or [], "publishedAt")
         if episodes:
             text = build_follow_builders_podcasts_text({"podcasts": episodes})
             if text:
-                add_section(sections, text, EN_VOICE)
+                add_section(sections, text, EN_VOICE, "builders")
     blog_feed = load("follow-builders-blogs.json")
     if blog_feed:
         posts = filter_recent(blog_feed.get("blogs") or [], "publishedAt")
         if posts:
             text = build_follow_builders_blogs_text({"blogs": posts})
             if text:
-                add_section(sections, text, EN_VOICE)
+                add_section(sections, text, EN_VOICE, "builders")
 
-    # Outro
     add_section(
         sections,
         "That's all for today's digest. Full details, links, and the latest trends are on the page.",
         EN_VOICE,
+        None,
     )
 
     print(f"Generating {len(sections)} audio segments...")
     segment_files: list[Path] = []
-    for i, (text, voice) in enumerate(sections):
+    # Track which page-section each rendered file belongs to, so we can
+    # build scroll cues after the durations are known.
+    segment_anchors: list[str | None] = []
+    for i, (text, voice, anchor) in enumerate(sections):
         out = SEGS / f"{i:03d}.mp3"
         ok = tts_segment(text, voice, out)
         if ok:
             segment_files.append(out)
-            print(f"  [{i:03d}] {voice}: {len(text)} chars -> {out.stat().st_size} bytes")
+            segment_anchors.append(anchor)
+            print(f"  [{i:03d}] {voice}: {len(text)} chars -> {out.stat().st_size} bytes (anchor={anchor})")
         else:
             print(f"  [{i:03d}] skipped (empty or failed)")
 
     if not segment_files:
         print("[err] no segments rendered; aborting", file=sys.stderr)
         return 1
+
+    # Probe per-segment duration with ffprobe so we can build cumulative
+    # start times for the auto-scroll cues.
+    def probe_seconds(p: Path) -> float:
+        try:
+            res = subprocess.run(
+                ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                 "-of", "default=noprint_wrappers=1:nokey=1", str(p)],
+                check=True, capture_output=True, text=True,
+            )
+            return float(res.stdout.strip())
+        except Exception as e:
+            print(f"[warn] ffprobe failed on {p.name}: {e}", file=sys.stderr)
+            return 0.0
+
+    cumulative = 0.0
+    cues: list[dict] = []   # [{anchor, start, end}, ...] for distinct anchor runs
+    current_anchor: str | None = "__start__"
+    current_run_start = 0.0
+    for path, anchor in zip(segment_files, segment_anchors):
+        dur = probe_seconds(path)
+        # Open or close a cue run when the anchor changes
+        if anchor != current_anchor:
+            if current_anchor is not None and current_anchor != "__start__":
+                cues.append({"anchor": current_anchor, "start": current_run_start, "end": cumulative})
+            current_anchor = anchor
+            current_run_start = cumulative
+        cumulative += dur
+    # Close the last run
+    if current_anchor is not None and current_anchor != "__start__":
+        cues.append({"anchor": current_anchor, "start": current_run_start, "end": cumulative})
+
+    cues_path = SITE / "audio-cues.json"
+    cues_path.write_text(
+        json.dumps({"total_duration": cumulative, "cues": cues}, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(f"[ok] wrote {cues_path} ({len(cues)} cues, total {cumulative:.1f}s)")
 
     # Concatenate via ffmpeg concat demuxer
     concat_list = Path("audio-concat.txt")
