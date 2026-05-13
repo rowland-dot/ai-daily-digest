@@ -1,81 +1,81 @@
 {
-  "fetched_at": "2026-05-13T22:32:55.330Z",
+  "fetched_at": "2026-05-13T22:51:33.335Z",
   "date_utc": "2026-05-13",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 1493
+      "ms": 1686
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 286
+      "ms": 269
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 287
+      "ms": 531
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 286
+      "ms": 270
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 285
+      "ms": 268
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 62
+      "ms": 83
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 1012
+      "ms": 1053
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 415
+      "ms": 400
     },
     "anthropic_news": {
       "status": "ok",
       "file": "anthropic-news.json",
-      "ms": 390
+      "ms": 1699
     },
     "anthropic_engineering": {
       "status": "ok",
       "file": "anthropic-engineering.json",
-      "ms": 4047
+      "ms": 3147
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 80
+      "ms": 147
     },
     "follow_builders_x": {
       "status": "ok",
       "file": "follow-builders-x.json",
-      "ms": 61
+      "ms": 16
     },
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 9
+      "ms": 6
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 15
+      "ms": 10
     },
     "localllama": {
       "status": "ok",
       "file": "localllama.json",
-      "ms": 443
+      "ms": 507
     },
     "article_bodies": {
       "status": "ok",
