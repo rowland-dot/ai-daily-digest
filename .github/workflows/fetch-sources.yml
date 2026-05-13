@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   # push data/*.json to `data` branch for routine access
   pages: write
   id-token: write
 
@@ -122,22 +122,44 @@ jobs:
           python scripts/generate-audio.py
         continue-on-error: true
 
-      - name: Publish data/ to Pages (for the Claude routine to read)
+      - name: Publish data/ to Pages (for human-readable browser view)
         run: |
           mkdir -p docs/data
           cp -v data/*.json docs/data/ 2>/dev/null || true
           ls -la docs/data/
 
+      # The Claude Code routine sandbox host allowlist blocks
+      # *.github.io but allows raw.githubusercontent.com. So we also
+      # publish today's snapshot to a dedicated `data` branch — the
+      # routine reads from
+      # https://raw.githubusercontent.com/rowland-dot/ai-daily-digest/data/<file>.json
+      # The `data` branch is bot-only; local devs push to `main` and
+      # the two branches never touch, so there's no race.
+      - name: Publish data snapshot to `data` branch (routine reads from raw.githubusercontent.com)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Stage the snapshot into a temp worktree on the `data` branch.
+          WT=$(mktemp -d)
+          # Create the orphan branch on first run; otherwise check it out.
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch origin data:data
+            git worktree add "$WT" data
+          else
+            git worktree add --detach "$WT"
+            (cd "$WT" && git checkout --orphan data && git rm -rf . >/dev/null 2>&1 || true)
+          fi
+          # Replace branch contents with today's data files only.
+          rm -f "$WT"/*.json 2>/dev/null || true
+          cp -v data/*.json "$WT"/
+          (cd "$WT" && git add -A && \
+            git diff --cached --quiet || \
+            git commit -m "data snapshot: $(date -u +%Y-%m-%dT%H:%M:%SZ)")
+          (cd "$WT" && git push origin HEAD:data)
+          git worktree remove "$WT" --force
+
       - name: Render static site
         run: node scripts/render-site.mjs
-
-      # Note: deliberately NOT committing data/ or docs/ back to main.
-      # The workflow builds them fresh from scripts/ + upstream sources every
-      # run and serves them via the Pages artifact below. Keeping them out of
-      # git avoids races with local pushes (every code change used to require
-      # a rebase against the bot's most recent commit). Local devs can run
-      # `node scripts/fetch-sources.mjs && node scripts/render-site.mjs` to
-      # preview, but those generated files are gitignored.
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
