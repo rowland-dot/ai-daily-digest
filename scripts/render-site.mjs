@@ -106,7 +106,7 @@ function ghTrendingSection(repos) {
           <span class="gh-name">${escapeHtml(r.name || "")}</span>
         </a>
       </h3>
-      ${r.description ? `<p class="card-summary"${txAttrs(r.description)}>${escapeHtml(r.description)}</p>` : ""}
+      ${r.description ? `<p class="card-summary">${escapeHtml(r.description)}</p>` : ""}
       <div class="gh-meta">
         ${r.language ? `<span class="gh-lang"><span class="gh-dot" style="background:${escapeHtml(r.languageColor || "#888")}"></span>${escapeHtml(r.language)}</span>` : ""}
         ${r.stars != null ? `<span class="stat">★ ${r.stars.toLocaleString()}</span>` : ""}
@@ -127,6 +127,7 @@ function hnSection(items) {
       (it, idx) => `
     <li class="hn-item" id="article-hn-${idx}">
       <a class="hn-title" href="${escapeHtml(it.url || `https://news.ycombinator.com/item?id=${it.id}`)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a>
+      ${it.summary ? `<p class="hn-summary"${txAttrs(it.summary)}>${escapeHtml(it.summary)}</p>` : ""}
       <div class="hn-meta">
         <span>▲ ${it.score ?? 0}</span>
         <span>·</span>
@@ -506,6 +507,7 @@ const PAGE_CSS = `
   .hn-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
   .hn-title { font-weight: 600; font-size: 15px; color: var(--text); display: block; margin-bottom: 4px; }
   .hn-title:hover { color: var(--link); }
+  .hn-summary { color: var(--text-muted); font-size: 13.5px; line-height: 1.55; margin: 4px 0 8px; }
   .hn-meta { color: var(--text-muted); font-size: 12.5px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
   .hn-comments { margin-left: 4px; font-weight: 500; }
 
@@ -1202,14 +1204,16 @@ async function renderPage({
   // HF: 16 cap, no date filter
   const hfModels = (hfPopular?.models || []).slice(0, OTHER_CAP);
 
-  // Follow Builders: 24h date filter, no count cap, tweets sorted by likes
+  // Follow Builders: NO date filter (upstream is curated daily, so by
+  // the time we fetch, items are typically already 24h old). Trust the
+  // upstream selection; sort tweets by likes.
   const allTweets = (xFeed?.x || []).flatMap((author) =>
     (author.tweets || []).map((t) => ({ ...t, author: author.name, handle: author.handle })),
   );
-  const builderTweets = allTweets.filter((t) => withinWindow(t.createdAt));
+  const builderTweets = allTweets.slice();
   builderTweets.sort((a, b) => (b.likes || 0) - (a.likes || 0));
-  const builderPods = filterRecent(podFeed?.podcasts || [], "publishedAt");
-  const builderBlogs = filterRecent(blogFeed?.blogs || [], "publishedAt");
+  const builderPods = (podFeed?.podcasts || []);
+  const builderBlogs = (blogFeed?.blogs || []);
 
   // Has-content flags drive both section visibility and TOC entries.
   const has = {

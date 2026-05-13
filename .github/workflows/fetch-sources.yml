@@ -58,9 +58,9 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v7: multi-lingual page CONTENT now translated alongside audio.
-          # docs/content-translations.json is the new cached artifact —
-          # it carries the page-text translations used by the renderer.
+          # v8: HN summaries (og:description fetched per article) +
+          # GitHub/HF excluded from translation. Schema change forces
+          # a fresh audio + translation pass.
           path: |
             docs/digest.mp3
             docs/digest-en.mp3
@@ -70,7 +70,7 @@ jobs:
             docs/audio-cues-zh.json
             docs/content-translations.json
             data/translation-cache.json
-          key: digest-mp3-v7-${{ steps.today.outputs.date }}
+          key: digest-mp3-v8-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'

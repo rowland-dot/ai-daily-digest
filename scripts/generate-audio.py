@@ -404,11 +404,14 @@ def build_hn_segments(items: list[dict]) -> list:
     rows = []
     for idx, it in enumerate(filtered):
         title = field(it, "title")
+        summary = field(it, "summary", limit=260)
         score = it.get("score") or 0
         comments = it.get("descendants") or 0
         parts = []
         if title:
             parts.append(title + ".")
+        if summary:
+            parts.append(summary + ".")
         parts.append(f"With {score} points and {comments} comments.")
         rows.append((f"article-hn-{idx}", " ".join(parts)))
     return _en_seg("Top AI stories from Hacker News today.", rows)
@@ -547,15 +550,14 @@ def collect_and_translate_ui_strings() -> dict:
     for e in sw.get("entries", []) or []:
         add(e, "title", "summary")
 
-    # GitHub trending
-    gh = load("github-trending.json") or {}
-    for r in gh.get("repos", []) or []:
-        add(r, "description")
+    # GitHub Trending and HuggingFace are intentionally NOT translated —
+    # they contain mostly code identifiers, repo names, model IDs, and
+    # programming-language tags that read poorly in translation.
 
     # HN top
     hn = load("hn-top.json") or {}
     for it in hn.get("items", []) or []:
-        add(it, "title")
+        add(it, "title", "summary")
 
     # Follow Builders X tweets
     xfeed = load("follow-builders-x.json") or {}
@@ -672,25 +674,16 @@ def main() -> int:
     if hf and hf.get("models"):
         segments.extend(build_hf_segments(hf["models"]))
 
+    # Follow Builders: no date filter — trust upstream curation.
     x_feed = load("follow-builders-x.json")
-    if x_feed:
-        filtered_authors = []
-        for author in x_feed.get("x", []) or []:
-            recent = [t for t in (author.get("tweets") or []) if within_window(t.get("createdAt"))]
-            if recent:
-                filtered_authors.append({**author, "tweets": recent})
-        if filtered_authors:
-            segments.extend(build_fb_x_segments({"x": filtered_authors}))
+    if x_feed and x_feed.get("x"):
+        segments.extend(build_fb_x_segments(x_feed))
     pod_feed = load("follow-builders-podcasts.json")
-    if pod_feed:
-        episodes = filter_recent(pod_feed.get("podcasts") or [], "publishedAt")
-        if episodes:
-            segments.extend(build_fb_pod_segments({"podcasts": episodes}))
+    if pod_feed and pod_feed.get("podcasts"):
+        segments.extend(build_fb_pod_segments(pod_feed))
     blog_feed = load("follow-builders-blogs.json")
-    if blog_feed:
-        posts = filter_recent(blog_feed.get("blogs") or [], "publishedAt")
-        if posts:
-            segments.extend(build_fb_blog_segments({"blogs": posts}))
+    if blog_feed and blog_feed.get("blogs"):
+        segments.extend(build_fb_blog_segments(blog_feed))
 
     segments.append((
         None,

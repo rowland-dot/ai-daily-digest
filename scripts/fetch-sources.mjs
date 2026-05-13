@@ -164,6 +164,56 @@ async function aihotItems(category, limit = 20) {
   );
 }
 
+// Extract a one-paragraph TL;DR for an article URL. Prefers
+// <meta property="og:description"> (Open Graph, almost universal),
+// then <meta name="description">, then <meta name="twitter:description">.
+// Returns "" on failure — caller falls back to title-only rendering.
+async function articleSummary(url) {
+  if (!url || !/^https?:\/\//.test(url)) return "";
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": BROWSER_UA, "Accept": "text/html,*/*" },
+      signal: AbortSignal.timeout(6000),
+    });
+    if (!res.ok) return "";
+    const ct = res.headers.get("content-type") || "";
+    if (!ct.includes("html")) return "";
+    // Cap at 200 KB so we don't pull whole long articles into memory.
+    const reader = res.body?.getReader();
+    if (!reader) return await pickDescription(await res.text());
+    let received = 0;
+    const chunks = [];
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+      received += value.length;
+      if (received > 200 * 1024) break;
+    }
+    const html = new TextDecoder().decode(Buffer.concat(chunks.map((c) => Buffer.from(c))));
+    return pickDescription(html);
+  } catch {
+    return "";
+  }
+}
+
+function pickDescription(html) {
+  const patterns = [
+    /<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i,
+    /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i,
+    /<meta[^>]+name=["']twitter:description["'][^>]+content=["']([^"']+)["']/i,
+    /<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i,
+  ];
+  for (const re of patterns) {
+    const m = re.exec(html);
+    if (m && m[1]) {
+      const out = decodeEntities(m[1]).replace(/\s+/g, " ").trim();
+      if (out.length > 30) return out.slice(0, 400);
+    }
+  }
+  return "";
+}
+
 async function hnTopStories(count = 30) {
   const ids = await fetchJson("https://hacker-news.firebaseio.com/v0/topstories.json");
   const top = ids.slice(0, count);
@@ -174,6 +224,16 @@ async function hnTopStories(count = 30) {
       ),
     ),
   );
+  // Add TL;DR summaries to AI-relevant items (limit to avoid blowing the
+  // build budget; ~16 fetches × ~2s each = ~30s).
+  const aiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
+  const summaryJobs = items
+    .filter((it) => it && it.title && it.url && aiKeywords.test(it.title))
+    .slice(0, 16)
+    .map(async (it) => {
+      it.summary = await articleSummary(it.url);
+    });
+  await Promise.all(summaryJobs);
   return { fetched_at: new Date().toISOString(), items };
 }
 
