@@ -618,9 +618,13 @@ const PAGE_CSS = `
      from here" button. Only the button seeks; the rest of the card
      remains a normal text-selectable area. */
   .audio-seekable { position: relative; }
+  /* Button rides the card's top border at the top-right corner — its
+     vertical center sits exactly on the border, so the border cuts
+     through the button's mid-height. Box-shadow on the button matches
+     the card surface so the border visually "passes under" it. */
   .audio-seekable .seek-hint {
     position: absolute;
-    top: 8px; right: 8px;
+    top: 0; right: 14px;
     background: var(--accent);
     color: #fff;
     font-size: 11px;
@@ -630,9 +634,9 @@ const PAGE_CSS = `
     border: none;
     cursor: pointer;
     opacity: 0;
-    transform: translateY(-4px);
+    transform: translate(0, calc(-50% - 4px));
     transition: opacity 0.15s ease, transform 0.15s ease, background 0.15s ease;
-    z-index: 1;
+    z-index: 2;
     white-space: nowrap;
     font-family: inherit;
   }
@@ -641,7 +645,7 @@ const PAGE_CSS = `
      tapping a card does NOT surface it. Only :hover, full stop. */
   .audio-seekable:hover .seek-hint {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0, -50%);
   }
   .seek-hint:hover { background: var(--accent-strong, var(--accent)); filter: brightness(1.08); }
 
