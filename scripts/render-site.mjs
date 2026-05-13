@@ -947,7 +947,7 @@ async function renderPage({
   <main class="container">
 
     <section id="models" class="block">
-      <h2><span class="section-icon">🤖</span> Model releases & updates</h2>
+      <h2><span class="section-icon">🤖</span> Model drops & updates</h2>
       <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version.</p>
       ${aihotItemsCard(modelItems)}
     </section>
