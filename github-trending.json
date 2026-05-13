@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T17:27:58.818Z",
+  "fetched_at": "2026-05-13T17:54:52.958Z",
   "repos": [
     {
       "owner": "tinyhumansai",
@@ -8,8 +8,8 @@
       "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 4713,
-      "forks": 393,
+      "stars": 4779,
+      "forks": 397,
       "starsToday": 1595
     },
     {
@@ -19,8 +19,8 @@
       "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 7194,
-      "forks": 631,
+      "stars": 7230,
+      "forks": 633,
       "starsToday": 1335
     },
     {
@@ -30,8 +30,8 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 189247,
-      "forks": 16835,
+      "stars": 189277,
+      "forks": 16839,
       "starsToday": 1506
     },
     {
@@ -41,8 +41,8 @@
       "description": "Let's use AI to Earn!",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 12761,
-      "forks": 2198,
+      "stars": 12771,
+      "forks": 2200,
       "starsToday": 987
     },
     {
@@ -52,7 +52,7 @@
       "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 16942,
+      "stars": 16946,
       "forks": 5776,
       "starsToday": 6
     },
@@ -63,7 +63,7 @@
       "description": "Your agent writes bad React. This catches it",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 9157,
+      "stars": 9167,
       "forks": 287,
       "starsToday": 620
     },
@@ -74,8 +74,8 @@
       "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 20985,
-      "forks": 2317,
+      "stars": 20994,
+      "forks": 2318,
       "starsToday": 83
     },
     {
@@ -85,7 +85,7 @@
       "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 13229,
+      "stars": 13236,
       "forks": 1854,
       "starsToday": 439
     },
@@ -96,7 +96,7 @@
       "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 4077,
+      "stars": 4096,
       "forks": 415,
       "starsToday": 1048
     },
@@ -107,8 +107,8 @@
       "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 9226,
-      "forks": 684,
+      "stars": 9250,
+      "forks": 687,
       "starsToday": 1829
     },
     {
@@ -118,7 +118,7 @@
       "description": "Portable Tool for an Ideal Windows Setup",
       "language": "C#",
       "languageColor": "#178600",
-      "stars": 834,
+      "stars": 837,
       "forks": 72,
       "starsToday": 127
     },
@@ -129,8 +129,8 @@
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 78501,
-      "forks": 6769,
+      "stars": 78541,
+      "forks": 6770,
       "starsToday": 3372
     },
     {
@@ -140,7 +140,7 @@
       "description": "3D Reconstruction for all",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 4307,
+      "stars": 4311,
       "forks": 231,
       "starsToday": 78
     },
@@ -151,7 +151,7 @@
       "description": "An evolving how-to guide for securing a Linux server.",
       "language": "",
       "languageColor": "",
-      "stars": 26967,
+      "stars": 26980,
       "forks": 1772,
       "starsToday": 233
     },
@@ -162,7 +162,7 @@
       "description": "Hysteria is a powerful, lightning fast and censorship resistant proxy.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 20552,
+      "stars": 20555,
       "forks": 2127,
       "starsToday": 489
     },
@@ -173,8 +173,8 @@
       "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
       "language": "Jupyter Notebook",
       "languageColor": "#DA5B0B",
-      "stars": 94328,
-      "forks": 14466,
+      "stars": 94335,
+      "forks": 14467,
       "starsToday": 824
     },
     {
@@ -184,7 +184,7 @@
       "description": "Toolchain for TON smart contract development and beyond",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 150,
+      "stars": 152,
       "forks": 21,
       "starsToday": 15
     },
@@ -195,7 +195,7 @@
       "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 16453,
+      "stars": 16457,
       "forks": 1035,
       "starsToday": 307
     },
@@ -206,8 +206,8 @@
       "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 98114,
-      "forks": 8541,
+      "stars": 98132,
+      "forks": 8544,
       "starsToday": 1159
     }
   ]

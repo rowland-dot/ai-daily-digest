@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T17:27:59.316Z",
+  "fetched_at": "2026-05-13T17:54:57.137Z",
   "source": "OpenAI",
   "items": [
     {
@@ -41,8 +41,7 @@
       "title": "How enterprises are scaling AI",
       "link": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
       "pubDate": "Mon, 11 May 2026 10:00:00 GMT",
-      "description": "How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale.",
-      "summary": "Interviews with executives at Philips, BBVA, Mirakl, Scout24, Jetbrains and Scania converged on a shared reality for leaders: scaling AI is less about “rolling out AI” and more about building the conditions where people trust it, adopt it, and improve it over time."
+      "description": "How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale."
     },
     {
       "title": "OpenAI Campus Network: Student club interest form",
@@ -97,7 +96,8 @@
       "title": "Testing ads in ChatGPT",
       "link": "https://openai.com/index/testing-ads-in-chatgpt",
       "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
-      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
+      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
+      "summary": "Update on May 7, 2026 : In the coming weeks, we plan to expand the ads pilot in ChatGPT in the United Kingdom, Mexico, Brazil, Japan, and South Korea. These pilots will help us understand what works well in different regions, so we can continue improving the experience as we expand."
     },
     {
       "title": "Simplex rethinks software development with Codex",

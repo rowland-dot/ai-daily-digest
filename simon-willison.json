@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T17:27:59.406Z",
+  "fetched_at": "2026-05-13T17:54:57.955Z",
   "source": "Simon Willison",
   "entries": [
     {
@@ -18,7 +18,7 @@
       "title": "datasette 1.0a29",
       "link": "https://simonwillison.net/2026/May/12/datasette/#atom-everything",
       "updated": "2026-05-12T23:41:06+00:00",
-      "summary": "New TokenRestrictions. abbreviated(datasette)utility method for creating \"r\" dictionaries. #2695 Table headers and column options are now visible even if a table contains zero rows. #2701 Fixed bug with display of column actions dialog on Mobile Safari. #2708 Fixed bug where tests could crash with a segfault due to a race condition between Datasette. close() and Datasette."
+      "summary": "New TokenRestrictions. abbreviated(datasette)utility method for creating \"r\" dictionaries. #2695 Table headers and column options are now visible even if a table contains zero rows. #2701 Fixed bug with display of column actions dialog on Mobile Safari. #2708 Fixed bug where tests could crash with a segfault due to a race condition between Datasette. close() and Database."
     },
     {
       "title": "Quoting Mo Bitar",
@@ -36,7 +36,7 @@
       "title": "llm 0.32a2",
       "link": "https://simonwillison.net/2026/May/12/llm/#atom-everything",
       "updated": "2026-05-12T17:45:07+00:00",
-      "summary": "Most reasoning-capable OpenAI models now use the /v1/responses endpoint instead of /v1/chat/completions. This enables interleaved reasoning across tool calls for GPT-5 class models. This means you can now see the summarized reasoning tokens when you run prompts against an OpenAI model, displayed in a different color to standard error."
+      "summary": "A bunch of useful stuff in this LLM alpha, but the most important detail is this one:"
     },
     {
       "title": "Thoughts on GitLab's workforce reduction\" and \"structural and strategic decisions\"",

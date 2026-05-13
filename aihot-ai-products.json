@@ -1,8 +1,18 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4MTk3NzQ0MDAwLCJpIjoiY21vdzZpMmFxMDM2anNsY3h4bmV5bTV6bSJ9",
+  "nextCursor": "eyJhIjoxNzc4MjMyMDk1MDAwLCJpIjoiY21vd3E4ZHZvMDE0MHNsa3VyNm9ubDhreCJ9",
   "items": [
+    {
+      "id": "cmp4c7tem04o0sljxh2fqtht1",
+      "title": "Claude付费计划将提供月度编程使用额度",
+      "title_en": "Starting June 15， paid Claude plans can claim a dedicated monthly credit for programmatic usage. Th…",
+      "url": "https://x.com/ClaudeDevs/status/2054610152817619388",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "publishedAt": "2026-05-13T17:10:07.000Z",
+      "summary": "自6月15日起，付费Claude计划可申领专用的月度编程使用额度。\n\n该额度涵盖以下用途：\n- Claude Agent SDK\n- claude -p\n- Claude Code GitHub Actions\n- 基于Agent SDK构建的第三方应用",
+      "category": "ai-products"
+    },
     {
       "id": "cmp4b6fpx04g6sljxh8anw64a",
       "title": "Introducing Runway Agent",
@@ -491,16 +501,6 @@
       "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
       "publishedAt": "2026-05-08T09:21:35.000Z",
       "summary": "阿里云发布Smart Studio平台，旨在整合AI模型测试与服务的全流程，终结用户在不同平台间切换的繁琐。该平台提供即时访问最新SOTA模型（如Qwen3.6-Max、DeepSeek-v4）的能力，支持多模态及图像视频生成模型。其核心功能包括可视化模型实验室，用于并排比较开源与闭源模型的输出效果，并能快速将Hugging Face上的模型转化为实时API，简化部署流程。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmow6i2aq036jslcxxneym5zm",
-      "title": "Claude v2.1.133 版本更新",
-      "title_en": "v2.1.133",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-05-07T23:49:04.000Z",
-      "summary": "Claude 发布 v2.1.133 版本，新增多项配置与优化。主要新增 `worktree.baseRef` 设置以选择工作树分支基础，引入 `sandbox.bwrapPath` 等设置允许指定自定义二进制路径，并添加 `parentSettingsBehavior` 键供管理员控制设置合并策略。功能上，钩子现在可接收活动努力级别信息，Bash 工具命令可读取相应环境变量。此外，改进了焦点模式行为，并在内存压力下优化了后台工作进程的释放。本次更新修复了大量问题，包括并行会话死锁、权限规则误匹配、代理设置不生效、网络驱动器访问被拒、远程控制中断不彻底、努力级别跨会话更改以及子代理技能发现失败等。`claude --help` 现已列出远程控制选项，VSCode 扩展也修复了相关错误。",
       "category": "ai-products"
     }
   ]
