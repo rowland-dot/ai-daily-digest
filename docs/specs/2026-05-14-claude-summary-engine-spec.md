@@ -22,8 +22,12 @@ The reader has to click through to learn what each is about. Meanwhile, the dail
 
 **In scope** — routine generates summaries for:
 - OpenAI blog posts (`data/openai-blog.json`)
+- **Anthropic news** (`data/anthropic-news.json`) — scraped from `anthropic.com/news`, no RSS available
+- **Anthropic engineering** (`data/anthropic-engineering.json`) — scraped from `anthropic.com/engineering`
 - Simon Willison weblog entries (`data/simon-willison.json`)
 - r/LocalLLaMA self-posts (`data/localllama.json`)
+
+Anthropic posts merge into the 🏢 Lab announcements section alongside OpenAI items at render time, so the section finally lives up to its label.
 
 **Out of scope** — these have good upstream summaries or are excluded by user design:
 - AIHOT (Chinese AI media supplies summaries; existing translation handles EN)
@@ -45,12 +49,12 @@ Per article, per routine run:
 
 ## Volume
 
-- ~48 articles in scope per typical day (16 each from OpenAI + Simon + r/LocalLLaMA)
+- ~70 articles in scope per typical day (16 each from OpenAI + Anthropic news + Anthropic engineering + Simon + r/LocalLLaMA, with some sources having fewer)
 - Per article: ~10k chars body + ~70 EN words output + ~140 ZH chars output
 - Total per routine run:
-  - Input: ~120k tokens
-  - Output: ~14k tokens
-  - Well within Opus 4.7 routine session budget
+  - Input: ~175k tokens
+  - Output: ~20k tokens
+  - Comfortably within Opus 4.7 routine session budget
 
 ## Data flow
 
@@ -103,7 +107,7 @@ Per article, per routine run:
 }
 ```
 
-Sources enumerated: `openai-blog`, `simon-willison`, `localllama`.
+Sources enumerated: `openai-blog`, `anthropic-news`, `anthropic-engineering`, `simon-willison`, `localllama`.
 
 ### `data/claude-summaries.json` (routine writes)
 
@@ -123,7 +127,9 @@ Keyed on canonical URL. URLs missing from `summaries` fall back to existing extr
 
 ## Renderer behavior (`scripts/render-site.mjs`)
 
-For each in-scope article in `openaiBlog.items`, `simonWillison.entries`, `localLlamaData.posts`:
+The 🏢 Lab announcements section merges items from `openaiBlog.items`, `anthropicNews.items`, and `anthropicEngineering.items` into a single sorted list (by `pubDate` desc, capped to `OTHER_CAP`). Each card carries a source label so the reader can tell which lab posted.
+
+For each in-scope article (across all five feeds):
 
 1. Look up `claudeSummaries.summaries[item.url]`
 2. If present:
@@ -207,7 +213,9 @@ Before building Phase 1, remove Editor's Cut entirely:
 | Phase | Work | Owner |
 |---|---|---|
 | 0 | Cleanup Editor's Cut | code (me) |
-| 1 | `fetch-sources.mjs` emits `data/article-bodies.json` for in-scope URLs | code (me) |
+| 1a | New scrapers: Anthropic news + engineering page → `data/anthropic-news.json`, `data/anthropic-engineering.json` | code (me) |
+| 1b | Merge Anthropic + OpenAI items into the Lab announcements section render | code (me) |
+| 1c | `fetch-sources.mjs` emits `data/article-bodies.json` for ALL in-scope URLs (5 sources) | code (me) |
 | 2 | Routine prompt rewrite | user (UI paste) |
 | 3 | Renderer + audio integration: read `claude-summaries.json`, prefer Claude text | code (me) |
 | 4 | First end-to-end test fire; verify file lands; eyeball page output | both |
