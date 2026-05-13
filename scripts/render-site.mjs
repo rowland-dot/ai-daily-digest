@@ -225,11 +225,6 @@ function builderWritingSection(entries) {
 
 function localLlamaSection(posts) {
   if (!posts.length) return ``;
-  const fmtDomain = (p) => {
-    if (p.is_self) return "r/LocalLLaMA";
-    if (p.domain) return p.domain.replace(/^www\./, "");
-    return "link";
-  };
   return `<ul class="writing-list">${posts
     .map(
       (p, idx) => `
@@ -237,11 +232,9 @@ function localLlamaSection(posts) {
       <a class="writing-title" href="${escapeHtml(p.permalink)}" target="_blank" rel="noopener"${txAttrs(p.title)}>${escapeHtml(p.title || "(untitled)")}</a>
       ${p.summary ? `<p class="writing-summary"${txAttrs(p.summary)}>${escapeHtml(p.summary)}</p>` : ""}
       <div class="writing-meta">
-        <span>${escapeHtml(fmtDomain(p))}</span>
-        ${p.flair ? `<span class="badge">${escapeHtml(p.flair)}</span>` : ""}
-        ${typeof p.score === "number" ? `<span>· ▲ ${p.score.toLocaleString()}</span>` : ""}
-        ${typeof p.comments === "number" ? `<span>· 💬 ${p.comments.toLocaleString()}</span>` : ""}
-        ${p.created_utc ? `<span title="${escapeHtml(new Date(p.created_utc * 1000).toISOString())}">· ${escapeHtml(relTime(p.created_utc))}</span>` : ""}
+        <span>r/LocalLLaMA</span>
+        ${p.author ? `<span>· ${escapeHtml(p.author)}</span>` : ""}
+        ${p.updated ? `<span title="${escapeHtml(p.updated)}">· ${escapeHtml(relTime(p.updated))}</span>` : ""}
       </div>
     </li>
   `,

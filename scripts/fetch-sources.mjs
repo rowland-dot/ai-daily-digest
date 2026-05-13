@@ -503,42 +503,52 @@ async function simonWillison(limit = 12) {
 }
 
 async function localLlama(limit = 14) {
-  // r/LocalLLaMA top-of-day. Reddit's public JSON endpoint, no auth.
-  // Filters stickied posts and NSFW. Keeps self-post body as a blurb;
-  // for link-posts we just keep the title (Jina on random reddit URLs
-  // is noisy — domain-targeted essence is a future iteration).
-  const json = await fetchJson(
-    "https://www.reddit.com/r/LocalLLaMA/top.json?t=day&limit=30",
+  // r/LocalLLaMA top-of-day via Reddit's Atom feed. Reddit's JSON API
+  // returns 403 from GitHub Actions IPs; the RSS path is on a different
+  // route and tolerates datacenter traffic.
+  //
+  // RSS gives us title, link, author, updated, content — but NOT score,
+  // comments, or flair. Trade-off we accept for the section to actually
+  // populate. The unique UA follows Reddit's API etiquette (platform:
+  // app:version (by /u/x)) which earns a lighter rate-limit budget.
+  const REDDIT_UA = "web:ai-daily-digest:v1.0 (by /u/rowland-dot)";
+  const xml = await fetchText(
+    "https://www.reddit.com/r/LocalLLaMA/top.rss?t=day&limit=30",
+    { headers: { "User-Agent": REDDIT_UA, "Accept": "application/rss+xml,text/xml,*/*" } },
   );
-  const children = (json && json.data && json.data.children) || [];
-  const posts = children
-    .map((c) => c && c.data)
-    .filter((d) => d && !d.stickied && !d.over_18)
-    .slice(0, limit)
-    .map((d) => {
-      const body = String(d.selftext || "").trim();
-      // Strip reddit-style heading markers and collapse whitespace.
-      const blurb = body
-        ? body
-            .replace(/\r/g, "")
-            .split(/\n{2,}/)
-            .map((p) => p.replace(/\s+/g, " ").trim())
-            .find((p) => p.length > 40) || body.slice(0, 320)
-        : "";
-      return {
-        title: decodeEntities(d.title || ""),
-        author: d.author || "",
-        flair: d.link_flair_text || "",
-        score: d.score || 0,
-        comments: d.num_comments || 0,
-        created_utc: d.created_utc || 0,
-        permalink: `https://www.reddit.com${d.permalink}`,
-        url: d.url || "",
-        is_self: !!d.is_self,
-        domain: d.domain || "",
-        summary: blurb.slice(0, 360),
-      };
-    });
+  const entries = [...xml.matchAll(/<entry[^>]*>([\s\S]*?)<\/entry>/g)].map((m) => {
+    const block = m[1];
+    const title = decodeEntities(firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, block));
+    const link = firstMatch(/<link[^>]*href="([^"]+)"/i, block);
+    const updated = firstMatch(/<updated[^>]*>([\s\S]*?)<\/updated>/i, block);
+    const author = firstMatch(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>[\s\S]*?<\/author>/i, block);
+    const contentRaw = firstMatch(/<content[^>]*>([\s\S]*?)<\/content>/i, block);
+    // Content is double-encoded HTML. Decode once, then extract:
+    //  - For SELF posts: useful selftext follows the "[link] [comments]"
+    //    boilerplate table and any [removed] / sticky markers.
+    //  - For LINK posts: content is just the [link]/[comments]/[submitted
+    //    by] boilerplate with no real blurb — leave summary empty.
+    const decoded = decodeEntities(contentRaw);
+    const stripped = decoded.replace(/<[^>]+>/g, " ").replace(/&[a-z]+;/g, " ");
+    // Drop reddit's lead-in boilerplate.
+    const cleaned = stripped
+      .replace(/\[link\]/gi, " ")
+      .replace(/\[comments\]/gi, " ")
+      .replace(/submitted by[\s\S]*?(\.|$)/i, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    const looksLikeSelfPost = cleaned.length > 60 && !/^\s*$/.test(cleaned);
+    // Reddit `link` is the comments URL like
+    // https://www.reddit.com/r/LocalLLaMA/comments/<id>/<slug>/
+    return {
+      title,
+      author: (author || "").replace(/^\/u\//, ""),
+      updated,
+      permalink: link,
+      summary: looksLikeSelfPost ? cleaned.slice(0, 360) : "",
+    };
+  });
+  const posts = entries.slice(0, limit);
   return {
     fetched_at: new Date().toISOString(),
     source: "r/LocalLLaMA",
