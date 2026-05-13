@@ -475,7 +475,12 @@ function _cleanHtmlBodyToText(htmlBody) {
   text = text
     .replace(/\[link\]/gi, " ")
     .replace(/\[comments\]/gi, " ")
-    .replace(/^submitted by[\s\S]*?$/gim, " ");
+    .replace(/^submitted by[\s\S]*?$/gim, " ")
+    // Strip Reddit username references (e.g. "u/maddiedreese" or
+    // "/u/maddiedreese"). These leak into summaries and read poorly
+    // to a general audience. Subreddit references (r/<name>) ARE
+    // kept — they carry useful context (e.g. r/LocalLLaMA).
+    .replace(/\b\/?u\/[A-Za-z0-9_\-]+\b/g, "");
   text = text
     .split(/\n\s*\n+/)
     .map((p) => p.replace(/\s+/g, " ").trim())

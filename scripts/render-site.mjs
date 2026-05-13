@@ -1627,7 +1627,21 @@ const localLlamaData = await tryReadJson(join(DATA_DIR, "localllama.json"));
 // summarizer routine after each full GHA build. Optional — page
 // degrades gracefully to Jina-extracted summaries when this file is
 // missing or stale.
-const claudeSummaries = (await tryReadJson(join(DATA_DIR, "claude-summaries.json")))?.summaries || {};
+function _sanitizeClaudeText(s) {
+  if (!s) return s;
+  // Strip orphan backslash-before-quote (Claude occasionally emits
+  // \" or \“ or \” treating quote chars as needing escape).
+  return s.replace(/\\(["'‘’“”])/g, "$1");
+}
+const _rawClaude = (await tryReadJson(join(DATA_DIR, "claude-summaries.json")))?.summaries || {};
+const claudeSummaries = {};
+for (const [url, val] of Object.entries(_rawClaude)) {
+  if (!val) continue;
+  claudeSummaries[url] = {
+    en: _sanitizeClaudeText(val.en),
+    zh: _sanitizeClaudeText(val.zh),
+  };
+}
 
 let archiveDays = [];
 if (existsSync(DIGESTS_DIR)) {

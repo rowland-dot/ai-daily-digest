@@ -776,7 +776,18 @@ def main() -> int:
     claude_summaries = {}
     if claude_path.exists():
         try:
-            claude_summaries = (json.loads(claude_path.read_text(encoding="utf-8")) or {}).get("summaries") or {}
+            raw_claude = (json.loads(claude_path.read_text(encoding="utf-8")) or {}).get("summaries") or {}
+            # Strip orphan backslashes before any quote (Claude
+            # occasionally emits \" / \“ / \” treating quote chars
+            # as needing escape).
+            _bs_re = re.compile(r'\\(["\'‘’“”])')
+            for url, val in raw_claude.items():
+                if not val:
+                    continue
+                claude_summaries[url] = {
+                    "en": _bs_re.sub(r"\1", val.get("en") or "") if val.get("en") else "",
+                    "zh": _bs_re.sub(r"\1", val.get("zh") or "") if val.get("zh") else "",
+                }
         except Exception as e:
             print(f"[warn] could not read claude-summaries.json: {e}", file=sys.stderr)
     trans_cache = _load_trans_cache()
