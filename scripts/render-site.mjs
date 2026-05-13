@@ -191,16 +191,22 @@ function labBlogSection(items) {
   if (!items.length) return ``;
   return `<div class="cards">${items
     .map(
-      (it, idx) => `
+      (it, idx) => {
+        // Lab cards may carry .description (OpenAI RSS) or .summary
+        // (Anthropic Jina extract). Prefer description, fall back to
+        // summary.
+        const blurb = it.description || it.summary || "";
+        return `
     <article class="card" id="article-labs-${idx}">
       <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a></h3>
-      ${it.description ? `<p class="card-summary"${txAttrs(it.description)}>${escapeHtml(it.description)}</p>` : ""}
+      ${blurb ? `<p class="card-summary"${txAttrs(blurb)}>${escapeHtml(blurb)}</p>` : ""}
       <div class="card-meta">
-        <span class="badge">OpenAI</span>
+        <span class="badge">${escapeHtml(it.source || "OpenAI")}</span>
         ${it.pubDate ? `<span class="meta-time" title="${escapeHtml(it.pubDate)}">${escapeHtml(relTime(it.pubDate))}</span>` : ""}
       </div>
     </article>
-  `,
+  `;
+      },
     )
     .join("")}</div>`;
 }
@@ -1306,6 +1312,8 @@ async function renderPage({
   ghTrending,
   hfPopular,
   openaiBlog,
+  anthropicNews,
+  anthropicEngineering,
   simonWillison,
   xFeed,
   podFeed,
@@ -1324,8 +1332,23 @@ async function renderPage({
   const industryItems = filterRecent(aihotIndustry?.items || pickAihotSection(aihotDaily, "行业") || pickAihotSection(aihotDaily, "动态") || [], "publishedAt");
   const paperItems = filterRecent(aihotPaper?.items || pickAihotSection(aihotDaily, "论文") || [], "publishedAt");
 
-  // OpenAI lab: 24h + 16 cap
-  const labItems = filterRecent(openaiBlog?.items || [], "pubDate").slice(0, OTHER_CAP);
+  // 🏢 Lab announcements — merge of:
+  //   OpenAI RSS (with pubDate, filterable to 24h)
+  //   Anthropic news (scraped, no pubDate — trust index order)
+  //   Anthropic engineering (scraped, no pubDate)
+  // Each item is tagged with a `source` for the card badge.
+  // Concatenation order: OpenAI → Anthropic news → Anthropic engineering.
+  // Each capped at OTHER_CAP independently; total can be up to 3*OTHER_CAP.
+  const labOpenai = filterRecent(openaiBlog?.items || [], "pubDate")
+    .slice(0, OTHER_CAP)
+    .map((it) => ({ ...it, source: "OpenAI" }));
+  const labAnthropicNews = (anthropicNews?.items || [])
+    .slice(0, OTHER_CAP)
+    .map((it) => ({ ...it, source: "Anthropic news" }));
+  const labAnthropicEng = (anthropicEngineering?.items || [])
+    .slice(0, OTHER_CAP)
+    .map((it) => ({ ...it, source: "Anthropic engineering" }));
+  const labItems = [...labOpenai, ...labAnthropicNews, ...labAnthropicEng];
 
   // Simon Willison: 24h + 16 cap
   const simonEntries = filterRecent(simonWillison?.entries || [], "updated").slice(0, OTHER_CAP);
@@ -1565,6 +1588,8 @@ const aihotPaper = await tryReadJson(join(DATA_DIR, "aihot-paper.json"));
 const ghTrending = await tryReadJson(join(DATA_DIR, "github-trending.json"));
 const hfPopular = await tryReadJson(join(DATA_DIR, "hf-popular.json"));
 const openaiBlogData = await tryReadJson(join(DATA_DIR, "openai-blog.json"));
+const anthropicNewsData = await tryReadJson(join(DATA_DIR, "anthropic-news.json"));
+const anthropicEngineeringData = await tryReadJson(join(DATA_DIR, "anthropic-engineering.json"));
 const simonWillisonData = await tryReadJson(join(DATA_DIR, "simon-willison.json"));
 const xFeed = await tryReadJson(join(DATA_DIR, "follow-builders-x.json"));
 const podFeed = await tryReadJson(join(DATA_DIR, "follow-builders-podcasts.json"));
@@ -1634,6 +1659,8 @@ const pageHtml = await renderPage({
   ghTrending,
   hfPopular,
   openaiBlog: openaiBlogData,
+  anthropicNews: anthropicNewsData,
+  anthropicEngineering: anthropicEngineeringData,
   simonWillison: simonWillisonData,
   xFeed,
   podFeed,
