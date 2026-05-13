@@ -371,17 +371,79 @@ function _extractEssence(jinaText) {
   return combined.trim().slice(0, 400);
 }
 
+// Raw-content cache: stores Jina's full plaintext output keyed by URL.
+// Lets us extract BOTH the short essence (one paragraph) AND the full
+// body for the routine summarizer from a single Jina fetch per article.
+const RAW_CACHE_PATH = "data/article-raw-cache.json";
+let _rawCache = null;
+
+function _loadRawCache() {
+  if (_rawCache !== null) return _rawCache;
+  try {
+    _rawCache = existsSync(RAW_CACHE_PATH)
+      ? JSON.parse(readFileSync(RAW_CACHE_PATH, "utf8"))
+      : {};
+  } catch {
+    _rawCache = {};
+  }
+  return _rawCache;
+}
+
+function saveRawCache() {
+  if (_rawCache === null) return;
+  try {
+    writeFileSync(RAW_CACHE_PATH, JSON.stringify(_rawCache, null, 2) + "\n");
+  } catch (e) {
+    console.warn("[raw-cache] save failed:", e.message);
+  }
+}
+
 async function _fetchJinaContent(url) {
+  const cache = _loadRawCache();
+  // Only honor non-empty cache hits — empties may be transient Jina
+  // failures (rate-limit, timeout, slow render), so retry next run.
+  if (typeof cache[url] === "string" && cache[url].length > 0) return cache[url];
+  let raw = "";
   try {
     const res = await fetch("https://r.jina.ai/" + url, {
       headers: { Accept: "text/plain", "User-Agent": BROWSER_UA },
-      signal: AbortSignal.timeout(20000),
+      // Increased timeout — Jina occasionally needs longer for
+      // JS-rendered pages (Anthropic news/engineering).
+      signal: AbortSignal.timeout(45000),
     });
-    if (!res.ok) return "";
-    return await res.text();
+    if (res.ok) raw = await res.text();
   } catch {
-    return "";
+    raw = "";
   }
+  if (raw) cache[url] = raw;   // cache positives only
+  return raw;
+}
+
+// Strip Jina headers + markdown formatting to get plaintext body.
+// Preserves paragraph breaks (\n\n). Strips images, link targets,
+// heading markers, blockquote sigils, emphasis. Used for the routine
+// summarizer's input bodies.
+function _extractFullBody(jinaText) {
+  const split = jinaText.split(/\nMarkdown Content:\n/);
+  let body = (split[1] || jinaText).trim();
+  if (!body) return "";
+  body = body
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")          // images
+    .replace(/\[\]\([^)]*\)/g, "")                 // empty-text links
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")       // [text](url) -> text
+    .replace(/^#{1,6}\s+/gm, "")                   // heading markers
+    .replace(/^>\s+/gm, "")                        // blockquote sigils
+    .replace(/[*_`]/g, "")                         // emphasis/inline-code formatting
+    .replace(/\n{3,}/g, "\n\n")                    // collapse 3+ newlines
+    .trim();
+  return body;
+}
+
+export async function articleBody(url) {
+  if (!url || !/^https?:\/\//.test(url)) return "";
+  const raw = await _fetchJinaContent(url);
+  if (!raw) return "";
+  return _extractFullBody(raw);
 }
 
 export async function articleEssence(url) {
@@ -403,29 +465,31 @@ export async function articleEssence(url) {
 // Reddit RSS ships the OP's self-post body inline, so we don't need a
 // Jina fetch — feed the HTML body through the paragraph-split + prose
 // filter + one-paragraph synthesis the same way.
-function essenceFromHtmlBody(cacheKey, htmlBody) {
-  if (!htmlBody) return "";
-  const cache = _loadEssenceCache();
-  if (cacheKey && typeof cache[cacheKey] === "string") return cache[cacheKey];
-
-  // Convert block-level tags to paragraph breaks before stripping all
-  // remaining tags, so _extractEssence sees real \n\n boundaries.
+function _cleanHtmlBodyToText(htmlBody) {
+  // Shared cleanup: HTML → plaintext with paragraph breaks preserved.
   let text = decodeEntities(htmlBody);
   text = text.replace(/<\s*(p|div|br|li|h[1-6])[^>]*>/gi, "\n\n");
   text = text.replace(/<\s*\/\s*(p|div|li|h[1-6])\s*>/gi, "\n\n");
   text = text.replace(/<[^>]+>/g, " ");
-  text = decodeEntities(text); // double-encoded entities (common in RSS)
-  // Strip reddit's own boilerplate that bleeds into the body.
+  text = decodeEntities(text);
   text = text
     .replace(/\[link\]/gi, " ")
     .replace(/\[comments\]/gi, " ")
     .replace(/^submitted by[\s\S]*?$/gim, " ");
-  // Collapse intra-line whitespace but PRESERVE paragraph breaks.
   text = text
     .split(/\n\s*\n+/)
     .map((p) => p.replace(/\s+/g, " ").trim())
     .filter(Boolean)
     .join("\n\n");
+  return text;
+}
+
+function essenceFromHtmlBody(cacheKey, htmlBody) {
+  if (!htmlBody) return "";
+  const cache = _loadEssenceCache();
+  if (cacheKey && typeof cache[cacheKey] === "string") return cache[cacheKey];
+
+  const text = _cleanHtmlBodyToText(htmlBody);
   if (!text) return "";
 
   const essence = _extractEssence(text);
@@ -433,7 +497,17 @@ function essenceFromHtmlBody(cacheKey, htmlBody) {
   return essence;
 }
 
-// Batch helper — fetches essences for many URLs with bounded concurrency.
+// Sibling helper used by the article-bodies producer for r/LocalLLaMA:
+// returns the FULL cleaned body text (not just the first paragraph).
+function fullBodyFromHtmlBody(htmlBody) {
+  if (!htmlBody) return "";
+  return _cleanHtmlBodyToText(htmlBody);
+}
+
+// Batch helper — fetches essences (short one-paragraph summary) AND full
+// bodies (for the routine summarizer) for many URLs with bounded
+// concurrency. Both come from the same Jina fetch — the raw payload is
+// cached so subsequent runs reuse it without re-hitting Jina.
 async function enrichItemsWithEssence(items, urlKey, concurrency = 4) {
   const work = items.filter((it) => it && it[urlKey] && /^https?:\/\//.test(it[urlKey]));
   let idx = 0;
@@ -441,13 +515,19 @@ async function enrichItemsWithEssence(items, urlKey, concurrency = 4) {
     while (idx < work.length) {
       const it = work[idx++];
       try {
-        const e = await articleEssence(it[urlKey]);
+        const url = it[urlKey];
+        // _fetchJinaContent is now cached — calling articleEssence and
+        // articleBody back-to-back hits the same cached raw payload.
+        const e = await articleEssence(url);
         if (e) it.summary = e;
+        const b = await articleBody(url);
+        if (b) it.body = b;
       } catch {}
     }
   }
   await Promise.all(Array.from({ length: concurrency }, worker));
   saveEssenceCache();
+  saveRawCache();
 }
 
 // Convert a URL slug like "claude-for-small-business" into a Title-Cased
@@ -610,12 +690,14 @@ async function localLlama(limit = 14) {
     // Simon Willison, OpenAI lab posts, and Follow Builders blogs.
     // Link-posts have no body → essence returns "" → filtered later.
     const summary = essenceFromHtmlBody(link, contentRaw);
+    const body = fullBodyFromHtmlBody(contentRaw);
     return {
       title,
       author: (author || "").replace(/^\/u\//, ""),
       updated,
       permalink: link,
       summary,
+      body,   // full cleaned plaintext for the routine summarizer
     };
   });
   // Filter: drop posts with no real TLDR (image-only / meme / link-out
@@ -683,6 +765,48 @@ await runSource("follow_builders_x", "follow-builders-x.json", () => followBuild
 await runSource("follow_builders_podcasts", "follow-builders-podcasts.json", () => followBuildersFeed("podcasts"));
 await runSource("follow_builders_blogs", "follow-builders-blogs.json", () => followBuildersFeed("blogs"));
 await runSource("localllama", "localllama.json", localLlama);
+
+// ---- article-bodies.json ----
+// Aggregated input for the Claude summarizer routine. For each in-scope
+// article (OpenAI, Anthropic news+engineering, Simon Willison,
+// r/LocalLLaMA), emit { url, source, title, body } where body is the
+// full cleaned plaintext. Per spec: routine reads this single file,
+// writes summaries keyed on URL back to data/claude-summaries.json.
+async function buildArticleBodies() {
+  const articles = [];
+
+  const push = (url, source, title, body) => {
+    if (!url || !body) return;
+    if (typeof body !== "string" || body.trim().length < 60) return;
+    articles.push({ url, source, title: title || "", body: body.trim() });
+  };
+
+  const tryRead = (path) => {
+    try { return JSON.parse(readFileSync(path, "utf8")); } catch { return null; }
+  };
+
+  const openai = tryRead("data/openai-blog.json");
+  for (const it of openai?.items || []) push(it.link, "openai-blog", it.title, it.body);
+
+  const anews = tryRead("data/anthropic-news.json");
+  for (const it of anews?.items || []) push(it.link, "anthropic-news", it.title, it.body);
+
+  const aeng = tryRead("data/anthropic-engineering.json");
+  for (const it of aeng?.items || []) push(it.link, "anthropic-engineering", it.title, it.body);
+
+  const simon = tryRead("data/simon-willison.json");
+  for (const e of simon?.entries || []) push(e.link, "simon-willison", e.title, e.body);
+
+  const llama = tryRead("data/localllama.json");
+  for (const p of llama?.posts || []) push(p.permalink, "localllama", p.title, p.body);
+
+  return {
+    fetched_at: new Date().toISOString(),
+    articles,
+  };
+}
+
+await runSource("article_bodies", "article-bodies.json", buildArticleBodies);
 
 await writeJson("manifest.json", manifest);
 console.log("manifest:", JSON.stringify(manifest.sources, null, 2));

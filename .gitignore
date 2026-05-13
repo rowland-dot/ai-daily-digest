@@ -5,6 +5,7 @@ node_modules/
 audio-segments/
 *.log
 .tmp-*
+.data-hash.tmp
 
 # Pages output lives under docs/, but documentation folders inside
 # docs/ (specs, plans, designs, etc.) ARE tracked. List the generated

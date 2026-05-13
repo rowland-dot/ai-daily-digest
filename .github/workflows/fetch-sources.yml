@@ -85,6 +85,8 @@ jobs:
             data/aihot-industry.json
             data/aihot-paper.json
             data/openai-blog.json
+            data/anthropic-news.json
+            data/anthropic-engineering.json
             data/simon-willison.json
             data/github-trending.json
             data/hf-popular.json
@@ -93,8 +95,10 @@ jobs:
             data/follow-builders-blogs.json
             data/localllama.json
             data/manifest.json
+            data/article-bodies.json
             data/translation-cache.json
             data/article-essence-cache.json
+            data/article-raw-cache.json
             docs/digest.mp3
             docs/digest-en.mp3
             docs/digest-zh.mp3
@@ -142,7 +146,12 @@ jobs:
             const fs = require("fs");
             const path = require("path");
             const crypto = require("crypto");
-            const ignore = new Set(["translation-cache.json", "article-essence-cache.json"]);
+            const ignore = new Set([
+              "translation-cache.json",
+              "article-essence-cache.json",
+              "article-raw-cache.json",
+              "article-bodies.json",
+            ]);
             const files = fs.readdirSync("data").filter(f => f.endsWith(".json") && !ignore.has(f)).sort();
             const h = crypto.createHash("sha256");
             for (const f of files) {
