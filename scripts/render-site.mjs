@@ -566,13 +566,13 @@ const PAGE_CSS = `
     color: #fff;
     font-size: 22px;
   }
-  /* Expanded: fixed-width row, no flex shrinking, no wrapping */
+  /* Expanded: fluid row, sizes to its content + available viewport. */
   .audio-fab[data-expanded="true"] {
     display: flex;
     align-items: center;
     padding: 6px 8px 6px 8px;
     height: 52px;
-    width: 320px;          /* fixed total width */
+    max-width: calc(100vw - 16px);
   }
   .audio-fab[data-expanded="true"] .audio-fab-handle {
     width: 36px; height: 36px;
@@ -589,7 +589,8 @@ const PAGE_CSS = `
     align-items: center;
     gap: 6px;
     flex-wrap: nowrap;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
+    min-width: 0;
   }
   /* Hide the native <audio> element entirely. We use our own play/scrubber
      UI below so no browser-specific kebab / volume / overflow ever shows. */
@@ -600,13 +601,13 @@ const PAGE_CSS = `
     opacity: 0;
     pointer-events: none;
   }
-  /* Custom audio controls — play/pause + scrubber + time */
+  /* Custom audio controls — play/pause + scrubber + time (fluid) */
   .audio-track {
     display: flex;
     align-items: center;
     gap: 8px;
-    flex: 0 0 180px;
-    width: 180px;
+    flex: 1 1 auto;
+    min-width: 0;
     height: 36px;
   }
   .play-btn {
@@ -614,19 +615,20 @@ const PAGE_CSS = `
     height: 28px;
     flex: 0 0 28px;
     border-radius: 50%;
-    background: var(--accent);
-    color: #fff;
-    border: 0;
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
     cursor: pointer;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     font-family: inherit;
+    transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
   }
-  .play-btn:hover { filter: brightness(1.1); }
+  .play-btn:hover { background: var(--border-strong); }
   .play-btn:active { transform: scale(0.95); }
   .scrubber {
     flex: 1 1 auto;
@@ -692,23 +694,19 @@ const PAGE_CSS = `
     flex: 0 0 180px;
     text-align: center;
   }
-  /* Mobile (<= 600px): expand player to fill most of the viewport,
-     give the scrubber more space. */
+  /* Mobile (<= 600px): pull the FAB closer to the edges so the fluid
+     layout uses every available pixel. */
   @media (max-width: 600px) {
     .audio-fab[data-expanded="true"] {
-      width: calc(100vw - 16px);
       right: 8px;
       bottom: 8px;
+      width: calc(100vw - 16px);
       padding-left: 8px;
       padding-right: 6px;
     }
-    .audio-track {
+    .audio-fab .no-audio-msg {
       flex: 1 1 auto;
       width: auto;
-    }
-    .audio-fab .no-audio-msg {
-      width: calc(100vw - 116px);
-      flex: 0 0 calc(100vw - 116px);
     }
   }
   @media (max-width: 360px) {
