@@ -389,24 +389,38 @@ def load(name: str) -> dict | None:
         return None
 
 
-async def tts_async(text: str, voice: str, out: Path) -> bool:
-    """Async TTS via edge_tts Python library (parallelisable). Falls back
-    to the CLI on import error."""
+async def tts_async(text: str, voice: str, out: Path, max_attempts: int = 3) -> bool:
+    """Async TTS via edge_tts Python library (parallelisable). Retries
+    transient failures up to max_attempts with exponential backoff —
+    edge-tts occasionally drops single segments (network blip, server
+    flake, mid-stream timeout) that succeed on retry.
+    Falls back to the CLI on import error."""
     text = text.strip()
     if not text:
         return False
     try:
         import edge_tts
     except ImportError:
-        # Fall back to CLI
+        # Fall back to CLI (no retry there yet — single attempt)
         return _tts_subprocess(text, voice, out)
-    try:
-        communicate = edge_tts.Communicate(text, voice)
-        await communicate.save(str(out))
-        return out.exists() and out.stat().st_size > 0
-    except Exception as e:
-        print(f"[err] edge-tts failed for {out.name}: {e}", file=sys.stderr)
-        return False
+
+    last_err = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            communicate = edge_tts.Communicate(text, voice)
+            await communicate.save(str(out))
+            if out.exists() and out.stat().st_size > 0:
+                if attempt > 1:
+                    print(f"[ok] edge-tts retry succeeded for {out.name} on attempt {attempt}")
+                return True
+            last_err = "empty output file"
+        except Exception as e:
+            last_err = str(e)
+        # Backoff before next attempt: 1s, 2s, 4s ...
+        if attempt < max_attempts:
+            await asyncio.sleep(2 ** (attempt - 1))
+    print(f"[err] edge-tts failed for {out.name} after {max_attempts} attempts: {last_err}", file=sys.stderr)
+    return False
 
 
 def _tts_subprocess(text: str, voice: str, out: Path) -> bool:
