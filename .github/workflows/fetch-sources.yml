@@ -10,6 +10,7 @@ on:
       - "scripts/**"
       - ".github/workflows/**"
       - "editorial/**"
+      - "editorial/**"
   workflow_dispatch:
 
 permissions:

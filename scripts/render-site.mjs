@@ -24,6 +24,14 @@ async function tryReadJson(path) {
   }
 }
 
+async function tryReadText(path) {
+  try {
+    return await readFile(path, "utf8");
+  } catch {
+    return null;
+  }
+}
+
 function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -45,6 +53,90 @@ function shortDate(iso) {
 }
 
 const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// Minimal markdown-to-HTML for the Editor's Cut. The routine writes a
+// controlled subset (h1/h2, ordered + unordered lists, paragraphs, bold,
+// inline code), so a full markdown library is overkill.
+function editorialToHtml(md) {
+  if (!md) return "";
+  const lines = md.split(/\r?\n/);
+  const out = [];
+  let inOl = false, inUl = false, paragraph = [];
+
+  const inline = (s) =>
+    escapeHtml(s)
+      .replace(/`([^`]+?)`/g, "<code>$1</code>")
+      .replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*([^*]+?)\*/g, "<em>$1</em>");
+
+  const flushPara = () => {
+    if (paragraph.length) {
+      out.push(`<p>${paragraph.join(" ")}</p>`);
+      paragraph = [];
+    }
+  };
+  const closeLists = () => {
+    if (inOl) { out.push("</ol>"); inOl = false; }
+    if (inUl) { out.push("</ul>"); inUl = false; }
+  };
+
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t) {
+      flushPara();
+      closeLists();
+      continue;
+    }
+    if (t.startsWith("# ")) {
+      flushPara(); closeLists();
+      out.push(`<h2 class="editorial-title">${inline(t.slice(2))}</h2>`);
+      continue;
+    }
+    if (t.startsWith("## ")) {
+      flushPara(); closeLists();
+      out.push(`<h3 class="editorial-heading">${inline(t.slice(3))}</h3>`);
+      continue;
+    }
+    const olMatch = t.match(/^\d+\.\s+(.*)$/);
+    if (olMatch) {
+      flushPara();
+      if (inUl) { out.push("</ul>"); inUl = false; }
+      if (!inOl) { out.push(`<ol class="editorial-ol">`); inOl = true; }
+      out.push(`<li>${inline(olMatch[1])}</li>`);
+      continue;
+    }
+    if (t.startsWith("- ")) {
+      flushPara();
+      if (inOl) { out.push("</ol>"); inOl = false; }
+      if (!inUl) { out.push(`<ul class="editorial-ul">`); inUl = true; }
+      out.push(`<li>${inline(t.slice(2))}</li>`);
+      continue;
+    }
+    paragraph.push(inline(t));
+  }
+  flushPara();
+  closeLists();
+  return out.join("\n");
+}
+
+// Read editorial/today.md, strip YAML frontmatter, return {meta, html}.
+async function readEditorial() {
+  const raw = await tryReadText("editorial/today.md");
+  if (!raw) return null;
+  const fm = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
+  let meta = {};
+  let body = raw;
+  if (fm) {
+    fm[1].split(/\r?\n/).forEach((line) => {
+      const m = line.match(/^(\w+):\s*(.*)$/);
+      if (m) meta[m[1]] = m[2].trim();
+    });
+    body = fm[2];
+  }
+  const html = editorialToHtml(body);
+  if (!html) return null;
+  return { meta, html };
+}
 
 // Parse anything we get from feeds into a Date or null:
 //  - ISO 8601 strings (`2026-05-13T06:19:47.000Z`)
@@ -508,6 +600,69 @@ const PAGE_CSS = `
      bar matches the inter-section gap instead of doubling up. */
   section.block { margin: 44px 0; scroll-margin-top: 64px; }
   section.block:first-of-type { margin-top: 0; }
+
+  /* Editor's Cut — featured at the top of the page, distinct from the
+     auto-aggregated news sections. Written by the Claude routine. */
+  .editorial-block {
+    margin: 0 0 56px;
+    padding: 28px 32px 30px;
+    background: linear-gradient(180deg, var(--accent-soft), transparent 80%);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    scroll-margin-top: 64px;
+    position: relative;
+  }
+  @media (max-width: 600px) {
+    .editorial-block { padding: 22px 18px 24px; scroll-margin-top: 140px; }
+  }
+  .editorial-meta {
+    color: var(--accent);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .editorial-title {
+    font-family: var(--display-font);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 2px 0 16px;
+    letter-spacing: -0.012em;
+    color: var(--text);
+  }
+  @media (max-width: 600px) {
+    .editorial-title { font-size: 23px; }
+  }
+  .editorial-heading {
+    font-family: var(--display-font);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 22px 0 8px;
+    color: var(--text-muted);
+  }
+  .editorial-block p { font-size: 15px; line-height: 1.6; margin: 6px 0 10px; color: var(--text); }
+  .editorial-block ol.editorial-ol {
+    margin: 4px 0 10px;
+    padding-left: 22px;
+    list-style: decimal;
+  }
+  .editorial-block ul.editorial-ul {
+    margin: 4px 0 10px;
+    padding-left: 22px;
+    list-style: disc;
+  }
+  .editorial-block li { margin: 8px 0; font-size: 14.5px; line-height: 1.55; color: var(--text); }
+  .editorial-block li strong { color: var(--text); font-weight: 700; }
+  .editorial-block code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.92em;
+    background: var(--surface);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
   @media (max-width: 600px) {
     section.block { scroll-margin-top: 140px; }
   }
@@ -1311,6 +1466,7 @@ async function renderPage({
   podFeed,
   blogFeed,
   localLlamaData,
+  editorial,
   audioAvailable,
   audioCuesAll,
   audioTracks,
@@ -1362,6 +1518,7 @@ async function renderPage({
     hf: hfModels.length > 0,
     builders: builderTweets.length > 0 || builderPods.length > 0 || builderBlogs.length > 0,
     llama: llamaPosts.length > 0,
+    editorial: !!editorial,
   };
 
   return `<!DOCTYPE html>
@@ -1395,6 +1552,7 @@ async function renderPage({
 
   <nav class="toc">
     <ul>
+      ${has.editorial ? `<li><a href="#editorial">📝 Editor's Cut</a></li>` : ""}
       ${has.models ? `<li><a href="#models">🤖 Models</a></li>` : ""}
       ${has.products ? `<li><a href="#products">📦 Products</a></li>` : ""}
       ${has.industry ? `<li><a href="#industry">📰 Industry</a></li>` : ""}
@@ -1410,6 +1568,12 @@ async function renderPage({
   </nav>
 
   <main class="container">
+
+    ${has.editorial ? `
+    <section id="editorial" class="editorial-block">
+      <div class="editorial-meta">📝 Editor's Cut${editorial.meta?.generated_at ? ` · generated ${escapeHtml(relTime(editorial.meta.generated_at))}` : ""}</div>
+      ${editorial.html}
+    </section>` : ""}
 
     ${has.models ? `
     <section id="models" class="block">
@@ -1570,6 +1734,7 @@ const xFeed = await tryReadJson(join(DATA_DIR, "follow-builders-x.json"));
 const podFeed = await tryReadJson(join(DATA_DIR, "follow-builders-podcasts.json"));
 const blogFeed = await tryReadJson(join(DATA_DIR, "follow-builders-blogs.json"));
 const localLlamaData = await tryReadJson(join(DATA_DIR, "localllama.json"));
+const editorial = await readEditorial();
 
 let archiveDays = [];
 if (existsSync(DIGESTS_DIR)) {
@@ -1639,6 +1804,7 @@ const pageHtml = await renderPage({
   podFeed,
   blogFeed,
   localLlamaData,
+  editorial,
   audioAvailable,
   audioCuesAll,
   audioTracks,
