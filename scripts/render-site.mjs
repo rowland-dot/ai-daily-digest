@@ -530,6 +530,31 @@ const PAGE_CSS = `
     .now-playing { scroll-margin-top: 150px; }
   }
 
+  /* Click-to-seek on article cards. JS adds .audio-seekable to any
+     article whose id matches an audio cue, then a click anywhere on the
+     card (except links and buttons) seeks the audio there. */
+  .audio-seekable { cursor: pointer; position: relative; }
+  .audio-seekable .seek-hint {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    pointer-events: none;
+    z-index: 1;
+    white-space: nowrap;
+  }
+  .audio-seekable:hover .seek-hint {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /* Floating mini-player (bottom-right).
      Each element has a fixed pixel width per breakpoint so nothing
      reflows as the viewport changes or as the user interacts. */
@@ -566,15 +591,17 @@ const PAGE_CSS = `
     font-size: 22px;
   }
   /* Expanded: fluid row, sizes to its content + available viewport.
-     On desktop give the FAB a meaningful min-width so the scrubber
-     has room to be useful (it grows via flex 1 1 auto inside). */
+     min-width is desktop-only (applied via media query below) — on
+     narrow screens it would force the FAB wider than the viewport. */
   .audio-fab[data-expanded="true"] {
     display: flex;
     align-items: center;
     padding: 6px 8px 6px 8px;
     height: 52px;
     max-width: calc(100vw - 16px);
-    min-width: 400px;
+  }
+  @media (min-width: 600px) {
+    .audio-fab[data-expanded="true"] { min-width: 400px; }
   }
   .audio-fab[data-expanded="true"] .audio-fab-handle {
     width: 36px; height: 36px;
@@ -949,6 +976,34 @@ const AUDIO_PLAYER_SCRIPT = `
       });
       lastAnchor = null;
     });
+
+    // ---- Click-to-seek on article cards ----
+    if (cuesData && cuesData.cues) {
+      var cueByAnchor = {};
+      cuesData.cues.forEach(function(c) { cueByAnchor[c.anchor] = c; });
+      document.querySelectorAll('[id^="article-"]').forEach(function(el) {
+        var cue = cueByAnchor[el.id];
+        if (!cue) return;
+        el.classList.add('audio-seekable');
+        var hint = document.createElement('span');
+        hint.className = 'seek-hint';
+        hint.textContent = '▶ Listen from here';
+        el.appendChild(hint);
+        el.addEventListener('click', function(e) {
+          // Don't hijack clicks on links or other buttons inside the card.
+          if (e.target.closest('a, button, input, textarea, select')) return;
+          audio.currentTime = cue.start + 0.05;
+          // Open the FAB so the user can see playback start.
+          fab.setAttribute('data-expanded', 'true');
+          // Suppress auto-scroll bounce for a moment so the user's
+          // tap doesn't immediately scroll back away.
+          lastUserScrollAt = Date.now();
+          if (audio.paused) {
+            tryPlay();
+          }
+        });
+      });
+    }
 
     // ---- Playback speed cycle ----
     if (speedBtn) {
