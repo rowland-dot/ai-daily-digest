@@ -70,6 +70,21 @@ def is_chinese(text: str) -> bool:
 # stay in English regardless of translation target. Sorted longest-first
 # so the regex matches "Hugging Face" before "Hugging".
 PRESERVE_TERMS = sorted([
+    # AI industry people — never translate these to Chinese
+    # transliterations. The auto-detect regex below also catches
+    # arbitrary "First Last" patterns; this list anchors common
+    # references including single-name and three-name variants.
+    "Sam Altman", "Greg Brockman", "Mira Murati", "Ilya Sutskever",
+    "Dario Amodei", "Daniela Amodei", "Jared Kaplan", "Chris Olah",
+    "Tom Brown", "Jack Clark",
+    "Demis Hassabis", "Mustafa Suleyman", "Shane Legg", "David Silver",
+    "Andrej Karpathy", "Yann LeCun", "Geoffrey Hinton", "Yoshua Bengio",
+    "Fei-Fei Li", "Andrew Ng", "Sebastian Thrun",
+    "Jensen Huang", "Mark Zuckerberg", "Satya Nadella", "Sundar Pichai",
+    "Tim Cook", "Elon Musk", "Bill Gates", "Larry Page", "Sergey Brin",
+    "Simon Willison", "Lex Fridman", "Naval Ravikant", "Vitalik Buterin",
+    "Paul Graham", "Sam Bankman-Fried",
+    "Liang Wenfeng",   # DeepSeek founder
     # AI labs / model families
     "OpenAI", "Anthropic", "DeepMind", "Mistral", "Cohere", "Perplexity",
     "Hugging Face", "HuggingFace", "Stability AI", "Together AI", "Groq",
@@ -129,6 +144,16 @@ _PRESERVE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Auto-preserve arbitrary "First Last" (and "First Middle Last")
+# capitalized-word sequences — these are almost always proper nouns
+# (people, organisations, places) that Google would otherwise translate
+# into Chinese transliterations like "山姆奥特曼" for "Sam Altman".
+# Pattern: 2+ capitalized words in a row, each at least 3 chars, joined
+# by single spaces and/or the CJK interpunct "·".
+_NAME_PATTERN_RE = re.compile(
+    r"\b[A-Z][a-zA-Z]{2,}(?:[\s·・]+[A-Z][a-zA-Z'\-]{2,})+\b"
+)
+
 
 # Placeholder format MUST contain no English words — Google Translate
 # happily translates 'KEEP', 'HOLD', 'TAG', etc. inside our previous
@@ -147,15 +172,13 @@ def _preserve_terms(text: str):
         placeholders[ph] = m.group(0)
         return ph
     modified = _PRESERVE_RE.sub(sub, text)
+    # Catch any remaining "First Last" capitalized sequences that
+    # weren't already in PRESERVE_TERMS. Anchors against name
+    # transliteration like "Sam Altman" → "山姆奥特曼".
+    modified = _NAME_PATTERN_RE.sub(sub, modified)
     # Also preserve GitHub-style issue/PR references (#1234) — Google
     # otherwise renders them as "第1234章" ("Chapter 1234").
-    def issue_sub(m):
-        i = counter[0]
-        counter[0] += 1
-        ph = f"xqzj{i:04d}xqzj"
-        placeholders[ph] = m.group(0)
-        return ph
-    modified = re.sub(r"#\d+", issue_sub, modified)
+    modified = re.sub(r"#\d+", sub, modified)
     return modified, placeholders
 
 
@@ -182,7 +205,7 @@ def translate(text: str, target_lang: str) -> str:
     if target_lang == "zh" and text_has_zh:
         return text
     cache = _load_trans_cache()
-    key = f"v3::{target_lang}::{text}"  # v3: opaque placeholder format + #issue preservation
+    key = f"v4::{target_lang}::{text}"  # v4: + name-pattern preservation + curly-quote strip
     if key in cache:
         return cache[key]
     try:
@@ -311,6 +334,16 @@ FULLWIDTH_PUNCT_MAP = str.maketrans({
     "！": "!",   # fullwidth exclamation
     "＠": "@",   # fullwidth at
     "＃": "#",   # fullwidth hash
+    # CJK / smart quotes — edge-tts treats these as markup boundaries
+    # and silently truncates the audio at the opening quote. Strip them.
+    "“": None,   # left double quotation mark "
+    "”": None,   # right double quotation mark "
+    "‘": None,   # left single quotation mark '
+    "’": None,   # right single quotation mark '
+    "「": None,        # CJK corner brackets
+    "」": None,
+    "『": None,
+    "』": None,
 })
 
 

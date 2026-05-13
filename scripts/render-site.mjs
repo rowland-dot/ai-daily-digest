@@ -494,14 +494,13 @@ const PAGE_CSS = `
     font-weight: 500;
     color: var(--text);
   }
-  nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
+  nav.toc a:hover,
   nav.toc a.toc-active {
-    background: var(--accent);
+    background: var(--accent-soft);
     border-color: var(--accent);
-    color: var(--surface);
-    box-shadow: 0 1px 6px var(--accent-soft);
+    color: var(--text);
+    text-decoration: none;
   }
-  nav.toc a.toc-active:hover { background: var(--accent); color: var(--surface); }
 
   /* Sections — scroll-margin-top reserves space for the sticky TOC so
      clicking a TOC link doesn't bury the section's H2 under the nav.
@@ -637,14 +636,10 @@ const PAGE_CSS = `
     white-space: nowrap;
     font-family: inherit;
   }
-  /* Button is visible only when the user is interacting with THIS card:
-     - desktop: pointer hover or keyboard focus
-     - mobile: tapped card or card centered in the viewport
-       (the JS adds .is-focused based on tap + IntersectionObserver). */
-  .audio-seekable:hover .seek-hint,
-  .audio-seekable:focus-within .seek-hint,
-  .audio-seekable.is-focused .seek-hint,
-  .seek-hint:focus-visible {
+  /* Button is visible only when the user hovers the card. Per explicit
+     user request, scroll-into-view does NOT surface the button, and
+     tapping a card does NOT surface it. Only :hover, full stop. */
+  .audio-seekable:hover .seek-hint {
     opacity: 1;
     transform: translateY(0);
   }
@@ -1204,25 +1199,19 @@ const AUDIO_PLAYER_SCRIPT = `
     // The handler binds to the explicit "▶ Listen from here" button only —
     // earlier versions bound to the whole article, which made stray clicks
     // (selecting text, clicking the card body) jump audio unexpectedly.
-    var focusObserver = null;
     function refreshSeekBindings() {
-      // Tear down previous bindings
-      if (focusObserver) { focusObserver.disconnect(); focusObserver = null; }
       document.querySelectorAll('.audio-seekable').forEach(function(el) {
         el.classList.remove('audio-seekable');
-        el.classList.remove('is-focused');
         var hint = el.querySelector('.seek-hint');
         if (hint) hint.remove();
       });
       if (!cuesData || !cuesData.cues) return;
       var cueByAnchor = {};
       cuesData.cues.forEach(function(c) { cueByAnchor[c.anchor] = c; });
-      var seekableEls = [];
       document.querySelectorAll('[id^="article-"]').forEach(function(el) {
         var cue = cueByAnchor[el.id];
         if (!cue) return;
         el.classList.add('audio-seekable');
-        seekableEls.push(el);
         var btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'seek-hint';
@@ -1255,38 +1244,9 @@ const AUDIO_PLAYER_SCRIPT = `
         el.appendChild(btn);
       });
 
-      // Button visibility is now driven ONLY by hover (desktop), keyboard
-      // focus, and scroll-into-viewport-center (IntersectionObserver
-      // below). Tapping a card's body no longer toggles the button —
-      // the user explicitly asked for scroll-only on touch.
-
-      // Mobile + scrolling: when the user scrolls a card to the
-      // viewport center, mark it focused so the seek button surfaces
-      // without requiring a tap first. Touch-only / coarse-pointer
-      // devices benefit; desktop still uses hover.
-      if ('IntersectionObserver' in window) {
-        focusObserver = new IntersectionObserver(function(entries) {
-          // Pick the entry with the largest intersection ratio that's
-          // actually intersecting; clear focus from siblings.
-          var best = null;
-          entries.forEach(function(en) {
-            if (!en.isIntersecting) return;
-            if (!best || en.intersectionRatio > best.intersectionRatio) best = en;
-          });
-          if (best && best.intersectionRatio > 0.55) {
-            seekableEls.forEach(function(el) {
-              if (el !== best.target) el.classList.remove('is-focused');
-            });
-            best.target.classList.add('is-focused');
-          }
-        }, {
-          // Focus the article when ~60% is in the middle viewport band.
-          root: null,
-          rootMargin: '-25% 0px -25% 0px',
-          threshold: [0, 0.25, 0.5, 0.55, 0.75, 1],
-        });
-        seekableEls.forEach(function(el) { focusObserver.observe(el); });
-      }
+      // Visibility is hover-only (set in CSS via :hover). No
+      // IntersectionObserver, no tap-to-focus, no keyboard focus
+      // pseudo-classes — explicit user requirement.
     }
     refreshSeekBindings();
 
