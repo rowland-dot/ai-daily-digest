@@ -916,21 +916,17 @@ const AUDIO_PLAYER_SCRIPT = `
       if (audio.paused) return;
       if (Date.now() - lastUserScrollAt < 8000) return;
       var t = audio.currentTime;
-      // Prefer the article-level cue (kind === "article") over section.
-      var activeArticle = null;
-      var activeSection = null;
+      // Article-only cues now — no section fallback (eliminates the
+      // section-border highlight + the section->first-article double jump).
+      var active = null;
       for (var i = 0; i < cuesData.cues.length; i++) {
         var c = cuesData.cues[i];
-        if (t < c.start || t >= c.end) continue;
-        if (c.kind === 'article' && !activeArticle) activeArticle = c.anchor;
-        else if (c.kind === 'section' && !activeSection) activeSection = c.anchor;
+        if (t >= c.start && t < c.end) { active = c.anchor; break; }
       }
-      var active = activeArticle || activeSection;
       if (active && active !== lastAnchor) {
         var el = document.getElementById(active);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          // Visual now-playing highlight
           document.querySelectorAll('.now-playing').forEach(function(n) {
             n.classList.remove('now-playing');
           });

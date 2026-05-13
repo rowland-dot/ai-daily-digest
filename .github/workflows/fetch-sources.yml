@@ -58,14 +58,14 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v4: bumped when per-article cues + fullwidth-URL stripping
-          # added; the audio-cues.json schema changed (now includes
-          # article-level entries) so the cached MP3 won't match the
-          # new HTML's article IDs unless regenerated.
+          # v5: full architectural change — one TTS call per article via
+          # parallel asyncio + exact ffprobe-measured cues (no more
+          # char-proportion estimation, no more section-level fallback
+          # cues). Section borders / double-jump bug fixed downstream.
           path: |
             docs/digest.mp3
             docs/audio-cues.json
-          key: digest-mp3-v4-${{ steps.today.outputs.date }}
+          key: digest-mp3-v5-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'
