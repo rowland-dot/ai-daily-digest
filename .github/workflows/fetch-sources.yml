@@ -58,14 +58,18 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v5: full architectural change — one TTS call per article via
-          # parallel asyncio + exact ffprobe-measured cues (no more
-          # char-proportion estimation, no more section-level fallback
-          # cues). Section borders / double-jump bug fixed downstream.
+          # v6: multi-lingual audio. Three tracks (mix/en/zh) + three
+          # cues files. Translation pipeline (deep-translator) gates the
+          # en/zh tracks, so a fresh build is needed on schema change.
           path: |
             docs/digest.mp3
+            docs/digest-en.mp3
+            docs/digest-zh.mp3
             docs/audio-cues.json
-          key: digest-mp3-v5-${{ steps.today.outputs.date }}
+            docs/audio-cues-en.json
+            docs/audio-cues-zh.json
+            data/translation-cache.json
+          key: digest-mp3-v6-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'
@@ -74,9 +78,9 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           ffmpeg -version | head -1
 
-      - name: Install edge-tts (only if regenerating audio)
+      - name: Install edge-tts + deep-translator (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'
-        run: pip install --quiet edge-tts
+        run: pip install --quiet edge-tts deep-translator
 
       - name: Generate narration MP3 (only if cache miss)
         if: steps.audio-cache.outputs.cache-hit != 'true'

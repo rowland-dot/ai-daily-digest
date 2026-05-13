@@ -29,6 +29,71 @@ SEGS.mkdir(exist_ok=True)
 EN_VOICE = "en-US-AriaNeural"
 ZH_VOICE = "zh-CN-XiaoxiaoNeural"
 
+# Three tracks, one per language mode. Each entry: (lang_code, voice)
+LANGUAGE_TRACKS = [
+    ("mix", None),   # Mix uses original voice per segment
+    ("en", EN_VOICE),
+    ("zh", ZH_VOICE),
+]
+
+# --- Translation ---
+
+_TRANS_CACHE_FILE = Path("data/translation-cache.json")
+_trans_cache: dict[str, str] = {}
+
+
+def _load_trans_cache() -> dict[str, str]:
+    global _trans_cache
+    if _trans_cache:
+        return _trans_cache
+    if _TRANS_CACHE_FILE.exists():
+        try:
+            _trans_cache = json.loads(_TRANS_CACHE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            _trans_cache = {}
+    return _trans_cache
+
+
+def _save_trans_cache():
+    try:
+        _TRANS_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _TRANS_CACHE_FILE.write_text(json.dumps(_trans_cache, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    except Exception as e:
+        print(f"[warn] could not save translation cache: {e}", file=sys.stderr)
+
+
+def is_chinese(text: str) -> bool:
+    return any("一" <= c <= "鿿" for c in (text or ""))
+
+
+def translate(text: str, target_lang: str) -> str:
+    """Translate text to target_lang ('en' or 'zh').
+    Skips no-op cases (target lang matches source).
+    Caches results across runs via data/translation-cache.json.
+    Falls back to original text on failure."""
+    if not text or not text.strip():
+        return text
+    text_has_zh = is_chinese(text)
+    if target_lang == "en" and not text_has_zh:
+        return text
+    if target_lang == "zh" and text_has_zh:
+        return text
+    cache = _load_trans_cache()
+    key = f"{target_lang}::{text}"
+    if key in cache:
+        return cache[key]
+    try:
+        from deep_translator import GoogleTranslator
+        src = "zh-CN" if text_has_zh else "auto"
+        tgt = "en" if target_lang == "en" else "zh-CN"
+        translated = GoogleTranslator(source=src, target=tgt).translate(text)
+        if translated:
+            cache[key] = translated
+            return translated
+    except Exception as e:
+        print(f"[warn] translate({target_lang}) failed for {text[:60]!r}: {e}", file=sys.stderr)
+    return text
+
 # Date-window: only items from the last LOOKBACK_HOURS are included.
 # Applied to every chronological source (AIHOT, Follow Builders, OpenAI,
 # Simon Willison, HN). NOT applied to GitHub Trending (URL already
@@ -543,29 +608,6 @@ def main() -> int:
         EN_VOICE,
     ))
 
-    print(f"Generating {len(segments)} audio segments (parallel)...")
-    jobs: list[tuple[str, str, Path]] = []
-    for i, (_anchor, text, voice) in enumerate(segments):
-        out = SEGS / f"{i:04d}.mp3"
-        jobs.append((text, voice, out))
-    results = asyncio.run(render_all_segments(jobs, concurrency=5))
-
-    # Filter out failed segments (preserving order); keep matching anchor list.
-    segment_files: list[Path] = []
-    segment_anchors: list[str | None] = []
-    for i, ok in enumerate(results):
-        anchor, text, voice = segments[i]
-        if ok:
-            segment_files.append(jobs[i][2])
-            segment_anchors.append(anchor)
-            print(f"  [{i:04d}] {voice}: {len(text)} chars -> {jobs[i][2].stat().st_size} bytes (anchor={anchor})")
-        else:
-            print(f"  [{i:04d}] FAILED — {voice}: {text[:60]}")
-
-    if not segment_files:
-        print("[err] no segments rendered; aborting", file=sys.stderr)
-        return 1
-
     def probe_seconds(p: Path) -> float:
         try:
             res = subprocess.run(
@@ -578,59 +620,91 @@ def main() -> int:
             print(f"[warn] ffprobe failed on {p.name}: {e}", file=sys.stderr)
             return 0.0
 
-    # Per-article cues: each segment maps to one cue if it has an anchor.
-    # Segments with anchor=None (intros, outro) are time-occupying but
-    # produce no cue, so the page stays put during intros.
-    cumulative = 0.0
-    cues: list[dict] = []
-    for path, anchor in zip(segment_files, segment_anchors):
-        dur = probe_seconds(path)
-        seg_start = cumulative
-        cumulative += dur
-        if anchor:
-            cues.append({"anchor": anchor, "start": seg_start, "end": cumulative})
+    def render_track(track_lang: str, fixed_voice: str | None, out_mp3: Path, cues_out: Path):
+        """Render one full track (mix / en / zh).
+        For 'mix': use each segment's original voice; no translation.
+        For 'en' / 'zh': translate non-target text to target lang;
+        use the fixed voice for ALL segments in the track."""
+        print(f"\n--- Track [{track_lang}] -> {out_mp3.name} ---")
+        # Build per-track jobs
+        seg_dir = SEGS / track_lang
+        seg_dir.mkdir(parents=True, exist_ok=True)
+        jobs: list[tuple[str, str, Path]] = []
+        anchors: list[str | None] = []
+        for i, (anchor, text, orig_voice) in enumerate(segments):
+            if track_lang == "mix":
+                t = text
+                v = orig_voice
+            else:
+                target = "en" if track_lang == "en" else "zh"
+                t = translate(text, target)
+                v = fixed_voice
+            jobs.append((t, v, seg_dir / f"{i:04d}.mp3"))
+            anchors.append(anchor)
 
-    cues_path = SITE / "audio-cues.json"
-    cues_path.write_text(
-        json.dumps({"total_duration": cumulative, "cues": cues}, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    print(f"[ok] wrote {cues_path} ({len(cues)} article cues, total {cumulative:.1f}s)")
+        results = asyncio.run(render_all_segments(jobs, concurrency=5))
+        segment_files: list[Path] = []
+        segment_anchors: list[str | None] = []
+        for i, ok in enumerate(results):
+            if ok:
+                segment_files.append(jobs[i][2])
+                segment_anchors.append(anchors[i])
+            else:
+                print(f"  [{i:04d}] FAILED — {jobs[i][0][:60]}")
 
-    # Concatenate via ffmpeg concat demuxer
-    concat_list = Path("audio-concat.txt")
-    concat_list.write_text(
-        "\n".join(f"file '{f.resolve().as_posix()}'" for f in segment_files),
-        encoding="utf-8",
-    )
+        if not segment_files:
+            print(f"[err] track {track_lang} produced no segments")
+            return False
 
-    output = SITE / "digest.mp3"
-    try:
-        # Re-encode during concat. Per-segment MP3s from edge-tts have
-        # slightly different encoder parameters, and stream-copy concat
-        # produces a frame-aligned-but-misframed stream that some players
-        # silently seek past (browsers skip the intro and jump to a later
-        # frame boundary). Re-encoding to a single, consistent MP3
-        # eliminates that. ~3-5s slower on the runner; reliable playback.
-        subprocess.run(
-            [
-                "ffmpeg", "-y", "-loglevel", "error",
-                "-f", "concat", "-safe", "0",
-                "-i", str(concat_list),
-                "-c:a", "libmp3lame",
-                "-b:a", "64k",
-                "-ar", "24000",
-                "-ac", "1",
-                str(output),
-            ],
-            check=True,
+        # Build cues per track
+        cumulative = 0.0
+        cues: list[dict] = []
+        for path, anchor in zip(segment_files, segment_anchors):
+            dur = probe_seconds(path)
+            seg_start = cumulative
+            cumulative += dur
+            if anchor:
+                cues.append({"anchor": anchor, "start": seg_start, "end": cumulative})
+
+        cues_out.write_text(
+            json.dumps({"total_duration": cumulative, "cues": cues}, indent=2) + "\n",
+            encoding="utf-8",
         )
-    except subprocess.CalledProcessError as e:
-        print(f"[err] ffmpeg concat failed: {e}", file=sys.stderr)
-        return 2
+        print(f"[ok] wrote {cues_out} ({len(cues)} cues, total {cumulative:.1f}s)")
 
-    size_kb = output.stat().st_size / 1024
-    print(f"[ok] wrote {output} ({size_kb:.0f} KB from {len(segment_files)} segments)")
+        concat_list = Path(f"audio-concat-{track_lang}.txt")
+        concat_list.write_text(
+            "\n".join(f"file '{f.resolve().as_posix()}'" for f in segment_files),
+            encoding="utf-8",
+        )
+        try:
+            subprocess.run(
+                [
+                    "ffmpeg", "-y", "-loglevel", "error",
+                    "-f", "concat", "-safe", "0",
+                    "-i", str(concat_list),
+                    "-c:a", "libmp3lame", "-b:a", "64k",
+                    "-ar", "24000", "-ac", "1",
+                    str(out_mp3),
+                ],
+                check=True,
+            )
+        except subprocess.CalledProcessError as e:
+            print(f"[err] ffmpeg concat for {track_lang} failed: {e}", file=sys.stderr)
+            return False
+
+        print(f"[ok] wrote {out_mp3} ({out_mp3.stat().st_size // 1024} KB from {len(segment_files)} segments)")
+        return True
+
+    # Render each track
+    ok_mix = render_track("mix", None, SITE / "digest.mp3", SITE / "audio-cues.json")
+    ok_en = render_track("en", EN_VOICE, SITE / "digest-en.mp3", SITE / "audio-cues-en.json")
+    ok_zh = render_track("zh", ZH_VOICE, SITE / "digest-zh.mp3", SITE / "audio-cues-zh.json")
+
+    _save_trans_cache()
+
+    if not ok_mix:
+        return 1
     return 0
 
 

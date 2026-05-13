@@ -360,10 +360,10 @@ const PAGE_CSS = `
     margin-right: auto;
     line-height: 1.55;
   }
-  .theme-switch {
+  .theme-switch,
+  .lang-switch {
     position: absolute;
     top: 14px;
-    right: 14px;
     display: inline-flex;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -373,6 +373,24 @@ const PAGE_CSS = `
     font-weight: 500;
     box-shadow: var(--shadow);
     max-width: calc(100vw - 28px);
+  }
+  .theme-switch { right: 14px; }
+  .lang-switch  { left: 14px; }
+  .lang-switch button {
+    background: transparent;
+    border: 0;
+    color: var(--text-muted);
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    transition: all 0.12s ease;
+  }
+  .lang-switch button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #fff;
   }
   @media (max-width: 480px) {
     header.hero { padding-top: 70px; }
@@ -814,6 +832,31 @@ const THEME_TOGGLE_SCRIPT = `
   })();
 `;
 
+// Language switch — runs BEFORE the audio player script so the latter
+// reads the freshly-set active language.
+const LANG_SWITCH_SCRIPT = `
+  (function() {
+    var saved = 'mix';
+    try { saved = localStorage.getItem('digest-lang') || 'mix'; } catch(e) {}
+    if (['mix','en','zh'].indexOf(saved) === -1) saved = 'mix';
+    document.documentElement.setAttribute('data-lang', saved);
+    var btns = document.querySelectorAll('.lang-switch button');
+    btns.forEach(function(b) {
+      b.setAttribute('aria-pressed', b.dataset.lang === saved ? 'true' : 'false');
+      b.addEventListener('click', function() {
+        var newLang = b.dataset.lang;
+        try { localStorage.setItem('digest-lang', newLang); } catch(e) {}
+        document.documentElement.setAttribute('data-lang', newLang);
+        btns.forEach(function(other) {
+          other.setAttribute('aria-pressed', other.dataset.lang === newLang ? 'true' : 'false');
+        });
+        // Notify the audio player to swap track + cues
+        document.dispatchEvent(new CustomEvent('digest-lang-change', { detail: { lang: newLang } }));
+      });
+    });
+  })();
+`;
+
 // Floating mini-player: expand/collapse + fully-custom audio controls
 // (the native <audio> element is hidden so no browser chrome — kebab,
 // volume slider, mute, overflow menu — ever appears).
@@ -923,12 +966,45 @@ const AUDIO_PLAYER_SCRIPT = `
       });
     }
 
-    // ---- Auto-scroll to active section based on cues ----
-    var cuesEl = document.getElementById('audio-cues');
-    var cuesData = null;
-    if (cuesEl) {
-      try { cuesData = JSON.parse(cuesEl.textContent); } catch (e) {}
+    // ---- Multi-language audio: cues per language, swap on selection ----
+    var allCuesEl = document.getElementById('audio-cues-all');
+    var tracksEl  = document.getElementById('audio-tracks');
+    var allCues = {};
+    var tracks = {};
+    try { if (allCuesEl) allCues = JSON.parse(allCuesEl.textContent) || {}; } catch (e) {}
+    try { if (tracksEl)  tracks  = JSON.parse(tracksEl.textContent)  || {}; } catch (e) {}
+
+    function currentLang() {
+      return document.documentElement.getAttribute('data-lang') || 'mix';
     }
+    function activeCues() {
+      var lang = currentLang();
+      return allCues[lang] || allCues.mix || null;
+    }
+    var cuesData = activeCues();
+
+    document.addEventListener('digest-lang-change', function(e) {
+      var lang = (e.detail && e.detail.lang) || 'mix';
+      var track = tracks[lang];
+      if (track && track.available && track.src) {
+        var wasPlaying = !audio.paused;
+        var prevTime = audio.currentTime;
+        audio.pause();
+        audio.src = track.src;
+        audio.load();
+        // Start over on language switch (different track, different timing).
+        audio.currentTime = 0;
+      } else {
+        console.warn('[digest] track not available for lang', lang);
+      }
+      cuesData = activeCues();
+      lastAnchor = null;
+      document.querySelectorAll('.now-playing').forEach(function(n) {
+        n.classList.remove('now-playing');
+      });
+      // Refresh click-to-seek bindings with new cue set
+      refreshSeekBindings();
+    });
     var lastAnchor = null;
     var lastUserScrollAt = 0;
     // Detect USER-initiated scroll via input events (wheel, touch,
@@ -977,8 +1053,19 @@ const AUDIO_PLAYER_SCRIPT = `
       lastAnchor = null;
     });
 
-    // ---- Click-to-seek on article cards ----
-    if (cuesData && cuesData.cues) {
+    // ---- Click-to-seek on article cards (rebound on language change) ----
+    function refreshSeekBindings() {
+      // Tear down previous bindings: remove .audio-seekable + .seek-hint
+      document.querySelectorAll('.audio-seekable').forEach(function(el) {
+        el.classList.remove('audio-seekable');
+        var hint = el.querySelector('.seek-hint');
+        if (hint) hint.remove();
+        if (el._seekHandler) {
+          el.removeEventListener('click', el._seekHandler);
+          el._seekHandler = null;
+        }
+      });
+      if (!cuesData || !cuesData.cues) return;
       var cueByAnchor = {};
       cuesData.cues.forEach(function(c) { cueByAnchor[c.anchor] = c; });
       document.querySelectorAll('[id^="article-"]').forEach(function(el) {
@@ -989,21 +1076,18 @@ const AUDIO_PLAYER_SCRIPT = `
         hint.className = 'seek-hint';
         hint.textContent = '▶ Listen from here';
         el.appendChild(hint);
-        el.addEventListener('click', function(e) {
-          // Don't hijack clicks on links or other buttons inside the card.
+        var handler = function(e) {
           if (e.target.closest('a, button, input, textarea, select')) return;
           audio.currentTime = cue.start + 0.05;
-          // Open the FAB so the user can see playback start.
           fab.setAttribute('data-expanded', 'true');
-          // Suppress auto-scroll bounce for a moment so the user's
-          // tap doesn't immediately scroll back away.
           lastUserScrollAt = Date.now();
-          if (audio.paused) {
-            tryPlay();
-          }
-        });
+          if (audio.paused) tryPlay();
+        };
+        el._seekHandler = handler;
+        el.addEventListener('click', handler);
       });
     }
+    refreshSeekBindings();
 
     // ---- Playback speed cycle ----
     if (speedBtn) {
@@ -1063,7 +1147,8 @@ async function renderPage({
   podFeed,
   blogFeed,
   audioAvailable,
-  audioCues,
+  audioCuesAll,
+  audioTracks,
 }) {
   // Pre-filter all sections so we can detect empty ones and skip both
   // the <section> and its TOC entry.
@@ -1134,6 +1219,11 @@ async function renderPage({
 <body>
 
   <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="mix" role="tab">Mix</button>
+      <button data-lang="en" role="tab">EN</button>
+      <button data-lang="zh" role="tab">中文</button>
+    </div>
     <div class="theme-switch" role="tablist" aria-label="Theme">
       <button data-theme="linear" role="tab">Linear</button>
       <button data-theme="claude" role="tab">Claude</button>
@@ -1243,7 +1333,7 @@ async function renderPage({
     <div class="audio-fab-body">
       ${
         audioAvailable
-          ? `<audio id="digest-audio" preload="metadata" src="digest.mp3"></audio>
+          ? `<audio id="digest-audio" preload="metadata" src="${audioTracks.mix.src}"></audio>
              <div class="audio-track">
                <button id="play-btn" class="play-btn" type="button" aria-label="Play/Pause">▶</button>
                <div id="scrubber" class="scrubber" role="slider" tabindex="0" aria-label="Seek">
@@ -1259,8 +1349,10 @@ async function renderPage({
     </div>
   </div>
 
-  ${audioCues ? `<script id="audio-cues" type="application/json">${JSON.stringify(audioCues)}</script>` : ""}
+  <script id="audio-cues-all" type="application/json">${JSON.stringify(audioCuesAll || {})}</script>
+  <script id="audio-tracks" type="application/json">${JSON.stringify(audioTracks || {})}</script>
   <script>${THEME_TOGGLE_SCRIPT}</script>
+  <script>${LANG_SWITCH_SCRIPT}</script>
   <script>${AUDIO_PLAYER_SCRIPT}</script>
 
 </body>
@@ -1330,14 +1422,27 @@ if (existsSync(DIGESTS_DIR)) {
 }
 
 const audioAvailable = existsSync(join(SITE_DIR, "digest.mp3"));
-let audioCues = null;
-if (existsSync(join(SITE_DIR, "audio-cues.json"))) {
-  try {
-    audioCues = JSON.parse(await readFile(join(SITE_DIR, "audio-cues.json"), "utf8"));
-  } catch {
-    audioCues = null;
-  }
+
+async function tryReadCues(name) {
+  const p = join(SITE_DIR, name);
+  if (!existsSync(p)) return null;
+  try { return JSON.parse(await readFile(p, "utf8")); }
+  catch { return null; }
 }
+
+// Three language tracks: Mix (default), English, 中文. Each has its own
+// MP3 + cues. Renderer embeds all three cue sets and the player JS swaps
+// audio src + active cue set on language change.
+const audioCuesAll = {
+  mix: await tryReadCues("audio-cues.json"),
+  en: await tryReadCues("audio-cues-en.json"),
+  zh: await tryReadCues("audio-cues-zh.json"),
+};
+const audioTracks = {
+  mix: { src: "digest.mp3", available: existsSync(join(SITE_DIR, "digest.mp3")) },
+  en: { src: "digest-en.mp3", available: existsSync(join(SITE_DIR, "digest-en.mp3")) },
+  zh: { src: "digest-zh.mp3", available: existsSync(join(SITE_DIR, "digest-zh.mp3")) },
+};
 
 const pageHtml = await renderPage({
   date: today,
@@ -1356,7 +1461,8 @@ const pageHtml = await renderPage({
   podFeed,
   blogFeed,
   audioAvailable,
-  audioCues,
+  audioCuesAll,
+  audioTracks,
 });
 
 await writeFile(join(SITE_DIR, "index.html"), pageHtml, "utf8");
