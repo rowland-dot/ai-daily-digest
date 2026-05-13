@@ -186,13 +186,19 @@ Keep rules for r/LocalLLaMA:
 Drop rules for Simon Willison (omit summary if any apply):
 - Posts not about AI / LLMs / agents / ML tooling (e.g. pure Datasette
   releases, personal life updates, unrelated tech links)
-- Pure quote posts with no substantive commentary
-- Daily link roundups without standout AI items
+- Quote posts where the QUOTED content is not about AI / LLMs / agents
+  (e.g. quoting someone on web framework choices, not on AI).
+- Daily link roundups where none of the linked items are AI-relevant.
 
 Keep rules for Simon Willison:
 - LLM / agent capability commentary
 - AI tool / prompt-engineering posts
-- Quote posts where Simon adds AI-relevant analysis
+- Quote posts where the QUOTE ITSELF is about AI / LLMs / agents — even
+  if Simon adds no commentary, the quote is the substance. ("Quoting
+  Boris Mann on '11 AI agents' is meaningless" is a keep, because the
+  quote is an AI-relevance statement.)
+- Tool / library release notes that ship with AI-relevant features
+  (e.g. `llm` CLI version bumps, Datasette plugins for AI use cases).
 
 ## Routine prompt requirements
 
