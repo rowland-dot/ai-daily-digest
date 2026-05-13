@@ -1,6 +1,9 @@
 # Generated build artifacts — Pages output regenerated every workflow
 # run. Not tracked so local renders don't race with bot pushes.
-data/
+# Carve-out: data/claude-summaries.json IS tracked (routine output,
+# consumed by render-site.mjs + generate-audio.py).
+data/*
+!data/claude-summaries.json
 node_modules/
 audio-segments/
 *.log

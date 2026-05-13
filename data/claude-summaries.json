@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-05-13T21:41:26Z",
+  "summaries": {
+    "https://openai.com/index/building-codex-windows-sandbox": {
+      "en": "OpenAI details how it built a Codex sandbox for Windows after finding AppContainer, Windows Sandbox, and Mandatory Integrity Control unworkable for an open-ended coding agent. The first unelevated prototype used synthetic SIDs and write-restricted tokens but couldn't reliably block network egress. The final elevated design creates dedicated CodexSandboxOffline and CodexSandboxOnline users, splits launch through codex-command-runner.exe to mint restricted tokens, and uses Windows Firewall rules that hold against socket-level escape attempts.",
+      "zh": "OpenAI 详述为 Windows 版 Codex 构建沙箱:AppContainer、Windows Sandbox、MIC 完整性标签均不合适。初版非提权方案用合成 SID 和写入受限令牌,网络拦截偏弱。最终方案创建专用 CodexSandbox 用户,经 codex-command-runner.exe 派发受限令牌,并用 Windows Firewall 封住出站套接字。"
+    },
+    "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything": {
+      "en": "Simon Willison quotes Boris Mann: \\“'11 AI agents' is meaningless as a phrase. If I said 'I have 11 spreadsheets' or 'I have 11 browser tabs' to do my work, it means about the same thing.\\” Willison files it under his ai-agents and agent-definitions tags, continuing his running thread about how vague the term \\“AI agent\\” has become and how vendor counts of agents don't convey actual capability.",
+      "zh": "Simon Willison 引用 Boris Mann 的话:“说'11 个 AI 代理'毫无意义,就像说'我有 11 个电子表格'或'我有 11 个浏览器标签'来形容工作一样。”该引语被收入 Willison 的 ai-agents 与 agent-definitions 标签,延续他一直以来的论点:“AI 代理”一词被滥用,厂商报出的代理数量并不能反映真实能力。"
+    },
+    "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything": {
+      "en": "Simon Willison builds a CSP Allow-list Experiment: an app loaded inside a CSP-protected sandboxed iframe uses a custom fetch() that catches CSP violations and forwards them to the parent window, which then prompts the user to add the offending domain to an allow-list and refreshes the page. Willison built it with GPT-5.5 xhigh running in the Codex desktop app. He tags it iframes, security, content-security-policy.",
+      "zh": "Simon Willison 做了一个 CSP 允许列表实验:在 CSP 保护的沙箱 iframe 中加载应用,用自定义 fetch() 捕获 CSP 违例并转发给父窗口;父窗口提示用户把对应域名加入允许列表并刷新页面。Willison 用 Codex 桌面应用中的 GPT-5.5 xhigh 实现,标签为 iframes、security、content-security-policy。"
+    },
+    "https://simonwillison.net/2026/May/12/datasette/#atom-everything": {
+      "en": "Simon Willison releases Datasette 1.0a29 with a new TokenRestrictions.abbreviated() utility, zero-row tables now showing headers and column options, a Mobile Safari column-actions dialog fix, and a nasty segfault fix in tests caused by a race between Datasette.close() and Database.close(). Willison used Codex CLI with GPT-5.5 xhigh to build a minimal Dockerfile that reliably reproduced the race, which is how the bug was tracked down.",
+      "zh": "Simon Willison 发布 Datasette 1.0a29:新增 TokenRestrictions.abbreviated()、零行表显示表头、修复 Mobile Safari 列操作弹框,并修掉 Datasette.close() 与 Database.close() 竞态的 segfault——他用 Codex CLI 配 GPT-5.5 xhigh 写最小 Dockerfile 复现。"
+    },
+    "https://simonwillison.net/2026/May/12/mo-bitar/#atom-everything": {
+      "en": "Simon Willison quotes Mo Bitar's TikTok satire \\“The Unethical Guide to Surviving AI Layoffs\\”: tell your CEO you've been experimenting with Ralph Loops, ask for $18,000 in API credits, talk constantly about automation, name specific coworkers you can automate out of existence (\\“yo, I automated @Gary, bro\\”) and tag your CEO in the public Slack message. Bitar's point: nobody actually knows what they're doing, so flex automation theater for the promotion.",
+      "zh": "Simon Willison 引用 Mo Bitar 在 TikTok 的反讽视频《在 AI 裁员中生存的“不道德指南”》:走进 CEO 办公室,告诉他你在试 Ralph Loops,要 18,000 美元 API 额度;不停谈自动化,公开点名某同事并 @CEO(“yo, I automated @Gary, bro”)。Bitar 的潜台词是:没人真懂这些,先靠“自动化剧场”拿晋升。"
+    },
+    "https://simonwillison.net/2026/May/12/mitchell-hashimoto/#atom-everything": {
+      "en": "Simon Willison quotes Mitchell Hashimoto on technical decision makers, from a conversation about Redis homepage design: \\“The thing about 90% of TDMs is that they're motivated primarily by NOT GETTING FIRED.\\” These are 9-5 employees who follow Gartner and McKinsey-blessed secular trends. If \\“Context Engine for AI Apps\\” is what analysts endorse, they'll buy it - meaning marketing should target the safe, defensible language that buyers can justify to their bosses.",
+      "zh": "Simon Willison 引用 Mitchell Hashimoto 在 Redis 主页设计讨论中的话:“90% 的技术决策者首要动机是不被裁掉。”他们 9 点上班 5 点下班,只盯 Gartner、麦肯锡背书的大趋势。如果分析师说“AI 应用的上下文引擎”重要,他们就买。企业营销要面向这些买家熟悉、可向上汇报的安全话术。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/": {
+      "en": "u/maddiedreese gets Andrej Karpathy's TinyStories-260K transformer running locally on a stock Game Boy Color (INT8 weights with fixed-point math, no FP, built with GBDK-2020 as an MBC5 ROM). The cartridge ROM holds bank-switched weights, the KV cache lives in cartridge SRAM, prompts are typed via D-pad and on-screen keyboard, and prefill plus autoregressive decoding run on the GBC itself. Output is gibberish from quantization, but the pipeline works. Codex helped with the build.",
+      "zh": "u/maddiedreese 把 Andrej Karpathy 的 TinyStories-260K transformer 跑在原版 Game Boy Color 上:INT8 权重配定点数学(无浮点),用 GBDK-2020 编成 MBC5 ROM。KV 缓存放卡带 SRAM,提示词通过方向键与屏上键盘输入,prefill 与自回归全部在 GBC 上完成。输出因极端量化是乱码,但流程跑通。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbyyee/textgen_is_now_a_native_desktop_app_opensource/": {
+      "en": "u/oobabooga4 rebrands text-generation-webui as TextGen, a portable Electron desktop app for Windows, Linux, and macOS with no install (unzip and double-click). Differentiators vs LM Studio: zero outbound telemetry, ik_llama.cpp builds with IQ4_KS/IQ5_KS quants, ddgs web search, single-file Python tools plus HTTP and stdio MCP servers with approval prompts, accurate PyMuPDF PDF extraction, trafilatura for clean web fetches, and an OpenAI/Anthropic-compatible API that works directly with Claude Code via ANTHROPIC_BASE_URL.",
+      "zh": "u/oobabooga4 把 text-generation-webui 改名 TextGen,变身免安装的 Electron 桌面应用。区别于 LM Studio:零外发遥测、内置 ik_llama.cpp 与 IQ4_KS/IQ5_KS 量化、支持 MCP 服务器,OpenAI/Anthropic 兼容 API 可直接接 Claude Code。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbht4h/my_first_official_ai_research_paper_accepted_on/": {
+      "en": "u/assemsabryy announces that their first AI research paper, \\“Stable Training with Adaptive Momentum (STAM),\\” has been accepted on SSRN. The paper introduces a new deep-learning optimizer that, in selected benchmarks, outperforms several popular optimizers, addresses multiple training stability challenges, and achieves up to 50% reduction in computational training cost in some experiments. The author frames it as a milestone in their journey researching optimization techniques for efficient and stable AI training.",
+      "zh": "u/assemsabryy 宣布其首篇 AI 研究论文《Stable Training with Adaptive Momentum (STAM)》已在 SSRN 接收。论文提出一种新的深度学习优化器,在所选基准上超过若干主流优化器,解决多项训练稳定性挑战,并在部分实验中将训练计算成本最多降低 50%。作者将其视为研究高效与稳定 AI 训练的里程碑。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tby79g/aidcaiovis2680ba3b_hugging_face/": {
+      "en": "AIDC-AI ships Ovis2.6-80B-A3B on Hugging Face, upgrading the LLM backbone to a Mixture-of-Experts architecture: 80B total parameters with only ~3B active at inference. Context extends to 64K tokens, image resolution up to 2880x2880, and a new \\“Think with Image\\” mode lets the model invoke cropping and rotation tools mid-reasoning. Anthropic-style reinforced OCR, document, and chart understanding cap a release that targets information-dense multimodal tasks with low serving cost.",
+      "zh": "AIDC-AI 在 Hugging Face 发布 Ovis2.6-80B-A3B,把 LLM 主干升级为 MoE 架构:总参 80B、推理时仅约 3B 激活。上下文扩展到 64K token,图像分辨率最高 2880×2880,新引入“Think with Image”——推理过程中可主动调用裁剪、旋转等工具反复审视图像区域。OCR、文档与图表理解再次增强。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbmee1/save_and_invest_your_money_for_future_rigs/": {
+      "en": "u/segmond argues local-LLM hobbyists should save and wait: a planned 1TB Genoa rig went from $6,000 to $30,000, Mac Studio M5 Ultra slipped from Q1 to Q3, and Blackwell Pro 6000 prices keep rising. But Chinese DDR5 manufacturers are coming online, Micron is hitting 9200 MT/s on 256GB DDR5 RDIMMs, and a future 12-channel Genoa at 12,000 MT/s with a cheap GPU for prefill could crush a 5090 on token generation. The advice: hold three years.",
+      "zh": "u/segmond 主张本地 LLM 玩家先存钱再装机:1TB Genoa 配置已从 6000 美元涨到 30000,Mac Studio M5 Ultra 从 Q1 推到 Q3,Blackwell Pro 6000 价格也在涨。但中国 DDR5 厂商上线,Micron 推 9200 MT/s 256GB RDIMM。展望 12 通道 Genoa+12000 MT/s 内存,token 生成可碾压 5090。建议等 2-3 年。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbftlt/is_using_vllm_actually_worth_it_if_you_arent/": {
+      "en": "u/ayylmaonade, a self-described llama.cpp loyalist, asks whether vLLM is worth switching to for solo, non-multi-user inference - especially now that AMD bundled vLLM into Lemonade. The thread leans toward yes despite vLLM being engineered for many-request serving. The original poster decides to give it a shot based on community feedback. The exchange reflects ongoing trade-offs in the local-inference stack: ease and stability of llama.cpp versus raw throughput from vLLM.",
+      "zh": "u/ayylmaonade 自称 llama.cpp 忠实用户,询问对仅自用、不对外服务的场景,转用 vLLM 是否值得——尤其是 AMD 已把 vLLM 内置进 Lemonade。讨论区基本倾向“值得”,尽管 vLLM 主要面向多并发服务。原帖作者最终决定试一试。本地推理栈的常见取舍:llama.cpp 易用稳定 vs vLLM 原生吞吐。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbng5x/ive_seen_a_lot_of_folks_ask_can_local_llms/": {
+      "en": "u/NoWorking8412 answers \\“can local LLMs do anything useful?\\” with their Qwen3.6-35B-A3B workflow: weekly automated database evaluation against user criteria, an email to the user with candidates, iteration via Google Doc edits and comments back to Qwen, and finally conversion to a branded PDF template. Their AI harness also uses a local embedding model for semantic memory recall. The verdict: yes, and they're starting simple before scaling to more complex tasks.",
+      "zh": "u/NoWorking8412 用 Qwen3.6-35B-A3B 回答“本地 LLM 到底有没有用”:每周让 Qwen 按设定标准评估数据库,邮件汇报候选项,作者在 Google Doc 上批注让 Qwen 迭代,最终转成 PDF 模板。其 AI harness 还用本地 embedding 做语义记忆。结论:是,正在从简单任务向复杂任务扩展。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tc9j6u/mi50s_qwen_36_27b_528_tps_tg_1569_tps_pp_no_mtp/": {
+      "en": "u/ai-infos benchmarks Qwen3.6-27B on AMD MI50 cards (2018 silicon) without MTP, DFlash, or quantization: 52.8 tokens/sec generation and 1,569 tokens/sec prompt processing at TP8 over 1K and 15K prompts; ~34 tps generation at TP2. They use a vLLM gfx906 fork (v0.20.1rc0.x with ROCm 7.2.1) and flash-attention Triton on AMD. The setup is \\“fully usable with Claude Code, Hermes, or any other agentic harness,\\” with headroom expected from PCIe switches and optimized DFlash/MTP for gfx906.",
+      "zh": "u/ai-infos 在 2018 年的 AMD MI50 上测 Qwen3.6-27B(无 MTP、不量化):1K/15K 提示下 TP8 得 52.8 tps 生成、1569 tps 提示处理;TP2 约 34 tps。栈用 vLLM gfx906 分支与 AMD Triton flash-attention。作者认为配 Claude Code 等代理 harness 完全可用。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbh279/high_vram_local_coding_model_still_qwen_36_27b/": {
+      "en": "u/Generic_Name_Here asks the r/LocalLLaMA community what the best local coding model would be on a hypothetical 224GB VRAM rig - is Qwen 3.6 27B still the right call, or is something in the 100B+ range like GPT-OSS or DeepSeek under-discussed because few can run it? The poster cares more about model intelligence than tokens/sec and notes Qwen 3.6 27B is great for small tasks and checking work but not an Opus replacement.",
+      "zh": "u/Generic_Name_Here 向 r/LocalLLaMA 提问:假如有 224GB 显存,本地编码该选 Qwen 3.6 27B,还是 GPT-OSS、DeepSeek 等 100B+ 级模型因为能跑的人少而被低估?他更在意智能而非 token/s,并表示 Qwen 3.6 27B 适合小任务和复核,但还替代不了 Opus。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tc132c/llamacpp_docker_images_to_run_mtp_models/": {
+      "en": "u/havenoammo publishes havenoammo/llama Docker images (cuda13-server, cuda12-server, vulkan-server, intel-server, rocm-server) for running multi-token-prediction llama.cpp builds until official support lands. They keep MTP layers at Q8_0 (vs Unsloth's UD XL using Q3_K-Q5_K) for higher prediction precision at extra VRAM cost. Reference command sets --spec-type mtp and --spec-draft-n-max 3 - those are the load-bearing flags. Unsloth's official Qwen 3.6 MTP GGUFs are now available, partially superseding havenoammo's grafted versions.",
+      "zh": "u/havenoammo 发布 havenoammo/llama 系列 Docker 镜像(cuda13/cuda12/vulkan/intel/rocm-server),在官方支持到来前就能跑多 token 预测的 llama.cpp。其镜像把 MTP 层保留 Q8_0,以更高显存换更高预测精度。关键参数 --spec-type mtp 与 --spec-draft-n-max 3。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tcaboi/websearch_is_coming_to_a_screeching_performance/": {
+      "en": "u/NetTechMan warns that local-LLM web search is hitting a wall: Google is closing its free site-specific search tier to 50 domains with no public advanced-search pricing yet, retiring January 1, 2027; Cloudflare's new default challenges all AI bots scraping web content, including for GoDaddy-hosted sites. The poster asks the community for open-project alternatives and predicts that whoever solves this becomes a critical dependency for the next generation of agentic harness improvements.",
+      "zh": "u/NetTechMan 警告本地 LLM 网络搜索正撞墙:Google 把免费站点搜索收紧到 50 个域名,2027 年 1 月 1 日继承到位;Cloudflare 默认对所有 AI 爬虫(含 GoDaddy 托管站)发起验证。作者呼吁社区给出开源方案,预言谁能填补缺口,谁就将成为下一代代理 harness 改进的关键依赖。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tc47q0/sensenovasensenovau1a3bmot_hugging_face/": {
+      "en": "u/pmttyji highlights SenseNova-U1, a new native multimodal series from SenseTime that unifies multimodal understanding, reasoning, and generation in a monolithic NEO-unify architecture rather than adapter-bridged. Models on Hugging Face include SenseNova-U1-8B-MoT, U1-8B-MoT-SFT, an 8-step 0.4B LoRA, and U1-A3B-MoT plus its SFT variant. The 8B model dropped two weeks ago; the framing is a shift from modality integration to native unification across language and vision pixels-to-words.",
+      "zh": "u/pmttyji 介绍 SenseTime 新发布的原生多模态系列 SenseNova-U1,在单体 NEO-unify 架构中统一多模态理解、推理与生成,不再靠 adapter 桥接。Hugging Face 上有 8B-MoT、8B-MoT-SFT、8 步 0.4B LoRA、A3B-MoT 及其 SFT 版。8B 模型两周前发布。定位:从模态拼接进化为像素到词的一体化建模。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbtinr/the_trillionparameter_dilemma_mimov25pro_went/": {
+      "en": "u/jochenboele runs Xiaomi's newly open-sourced MiMo-V2.5-Pro (1.02T params, 42B active MoE, 1M context, MIT license) via Claude Code over 125 autonomous sessions and 301 commits, building a full SaaS API cost calculator. Total cost: $70.12 for 387M tokens at a 96.3% cache hit rate ($0.14/M cached input vs $1.50/M for Opus 4.6). Self-hosting needs 4x A100 80GB minimum or ~$6/hr cloud - economics don't pencil out except for 24/7 use, data privacy, or fine-tuning needs.",
+      "zh": "u/jochenboele 通过 Claude Code 调用小米新开源的 MiMo-V2.5-Pro(1.02T 总参、42B 激活、MoE、1M 上下文、MIT 协议)做 125 次自主会话、301 次提交,完成 SaaS API 成本计算器。3.87 亿 token 仅花 $70.12,缓存命中 96.3%。自托管至少 4×A100 80GB,除非全天候、私有数据或微调否则不划算。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tbgtux/i_built_derpy_turtle_the_kokoro_trainer_a_gui_for/": {
+      "en": "u/Great-Investigator30 builds Derpy Turtle: The Kokoro Trainer, a Windows GUI that pairs Kokoro voice search with RVC voice conversion for local voice synthesis. The workflow trains an RVC model from clean target audio, runs Kokoro to generate stable speech, then routes through RVC for final identity. Author's lesson: chasing high Kokoro similarity alone stalled in the low-mid 80% range; use Kokoro for clean speech and RVC for timbre. CUDA on an RTX 3060 cut a run from 26 hours to 4.",
+      "zh": "u/Great-Investigator30 做了 Windows GUI——Derpy Turtle: The Kokoro Trainer,把 Kokoro 语音搜索与 RVC 语音转换串起来用于本地语音合成。流程:先用干净目标音频训练 RVC,Kokoro 生成稳定语音,最后过 RVC 完成音色。RTX 3060 启用 CUDA 把单次训练从 26 小时降到 4 小时。"
+    }
+  }
+}

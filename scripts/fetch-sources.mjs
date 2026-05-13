@@ -793,11 +793,29 @@ await runSource("localllama", "localllama.json", localLlama);
 // full cleaned plaintext. Per spec: routine reads this single file,
 // writes summaries keyed on URL back to data/claude-summaries.json.
 async function buildArticleBodies() {
-  const articles = [];
+  // 24h date window — same as the renderer's filterRecent. Articles
+  // older than this won't render on the page, so summarising them in
+  // the routine wastes token budget.
+  const LOOKBACK_HOURS = 24;
+  const windowMs = LOOKBACK_HOURS * 60 * 60 * 1000;
+  const now = Date.now();
+  const withinWindow = (value) => {
+    if (value == null) return true; // No date → don't filter (localllama, etc.)
+    const ms = typeof value === "number" && value < 1e12 ? value * 1000 : new Date(value).getTime();
+    if (isNaN(ms)) return true;
+    return now - ms <= windowMs;
+  };
 
-  const push = (url, source, title, body) => {
+  const articles = [];
+  let droppedOld = 0;
+
+  const push = (url, source, title, body, pubDate) => {
     if (!url || !body) return;
     if (typeof body !== "string" || body.trim().length < 60) return;
+    if (pubDate !== undefined && !withinWindow(pubDate)) {
+      droppedOld++;
+      return;
+    }
     articles.push({ url, source, title: title || "", body: body.trim() });
   };
 
@@ -806,20 +824,24 @@ async function buildArticleBodies() {
   };
 
   const openai = tryRead("data/openai-blog.json");
-  for (const it of openai?.items || []) push(it.link, "openai-blog", it.title, it.body);
+  for (const it of openai?.items || []) push(it.link, "openai-blog", it.title, it.body, it.pubDate);
 
   const anews = tryRead("data/anthropic-news.json");
-  for (const it of anews?.items || []) push(it.link, "anthropic-news", it.title, it.body);
+  for (const it of anews?.items || []) push(it.link, "anthropic-news", it.title, it.body, it.pubDate);
 
   const aeng = tryRead("data/anthropic-engineering.json");
-  for (const it of aeng?.items || []) push(it.link, "anthropic-engineering", it.title, it.body);
+  for (const it of aeng?.items || []) push(it.link, "anthropic-engineering", it.title, it.body, it.pubDate);
 
   const simon = tryRead("data/simon-willison.json");
-  for (const e of simon?.entries || []) push(e.link, "simon-willison", e.title, e.body);
+  for (const e of simon?.entries || []) push(e.link, "simon-willison", e.title, e.body, e.updated);
 
+  // r/LocalLLaMA: no pubDate filter (Reddit RSS already top-of-day curated upstream)
   const llama = tryRead("data/localllama.json");
   for (const p of llama?.posts || []) push(p.permalink, "localllama", p.title, p.body);
 
+  if (droppedOld > 0) {
+    console.log(`[article-bodies] dropped ${droppedOld} items older than ${LOOKBACK_HOURS}h`);
+  }
   return {
     fetched_at: new Date().toISOString(),
     articles,
