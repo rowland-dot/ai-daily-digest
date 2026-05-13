@@ -478,33 +478,7 @@ def build_gh_segments(repos: list[dict]) -> list:
     return _en_seg("Trending on GitHub today.", rows)
 
 
-def build_hn_segments(items: list[dict]) -> list:
-    ai_keywords = (
-        "ai", "llm", "gpt", "claude", "gemini", "anthropic", "openai",
-        "model", "agent", "prompt", "embedding", "rag", "transformer",
-        "neural", "inference", "fine-tun", "train",
-    )
-    filtered = [
-        it for it in items
-        if it and it.get("title")
-        and any(k in it["title"].lower() for k in ai_keywords)
-    ][:OTHER_CAP]
-    if not filtered:
-        return []
-    rows = []
-    for idx, it in enumerate(filtered):
-        title = field(it, "title")
-        summary = field(it, "summary", limit=260)
-        score = it.get("score") or 0
-        comments = it.get("descendants") or 0
-        parts = []
-        if title:
-            parts.append(title + ".")
-        if summary:
-            parts.append(summary + ".")
-        parts.append(f"With {score} points and {comments} comments.")
-        rows.append((f"article-hn-{idx}", " ".join(parts)))
-    return _en_seg("Top AI stories from Hacker News today.", rows)
+# (HN section removed — see commit log.)
 
 
 def build_hf_segments(models: list[dict]) -> list:
@@ -644,11 +618,6 @@ def collect_and_translate_ui_strings() -> dict:
     # they contain mostly code identifiers, repo names, model IDs, and
     # programming-language tags that read poorly in translation.
 
-    # HN top
-    hn = load("hn-top.json") or {}
-    for it in hn.get("items", []) or []:
-        add(it, "title", "summary")
-
     # Follow Builders X tweets
     xfeed = load("follow-builders-x.json") or {}
     for author in xfeed.get("x", []) or []:
@@ -764,11 +733,6 @@ def main() -> int:
     gh = load("github-trending.json")
     if gh and gh.get("repos"):
         segments.extend(build_gh_segments(gh["repos"]))
-
-    hn = load("hn-top.json")
-    if hn and hn.get("items"):
-        items = [it for it in hn["items"] if it and within_window(it.get("time"))]
-        segments.extend(build_hn_segments(items))
 
     hf = load("hf-popular.json")
     if hf and hf.get("models"):

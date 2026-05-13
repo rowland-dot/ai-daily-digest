@@ -120,26 +120,9 @@ function ghTrendingSection(repos) {
 
 const OTHER_CAP = 16;
 
-function hnSection(items) {
-  if (!items.length) return ``;
-  return `<ol class="hn-list">${items
-    .map(
-      (it, idx) => `
-    <li class="hn-item" id="article-hn-${idx}">
-      <a class="hn-title" href="${escapeHtml(it.url || `https://news.ycombinator.com/item?id=${it.id}`)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a>
-      ${it.summary ? `<p class="hn-summary"${txAttrs(it.summary)}>${escapeHtml(it.summary)}</p>` : ""}
-      <div class="hn-meta">
-        <span>▲ ${it.score ?? 0}</span>
-        <span>·</span>
-        <span>${it.descendants ?? 0} comments</span>
-        ${it.by ? `<span>· by ${escapeHtml(it.by)}</span>` : ""}
-        <a class="hn-comments" href="https://news.ycombinator.com/item?id=${it.id}" target="_blank" rel="noopener">HN ↗</a>
-      </div>
-    </li>
-  `,
-    )
-    .join("")}</ol>`;
-}
+// (Hacker News section removed — see commit log. AIHOT/OpenAI/Simon/
+// GitHub Trending/HuggingFace/Follow Builders cover the same signal
+// with curated content instead of HN's broad front-page firehose.)
 
 function hfSection(models) {
   if (!models.length) return ``;
@@ -1162,7 +1145,6 @@ async function renderPage({
   aihotIndustry,
   aihotPaper,
   ghTrending,
-  hnTop,
   hfPopular,
   openaiBlog,
   simonWillison,
@@ -1191,16 +1173,6 @@ async function renderPage({
   // GitHub Trending: 16 cap, no date filter (URL ?since=daily)
   const ghRepos = (ghTrending?.repos || []).slice(0, OTHER_CAP);
 
-  // HN: 24h filter + AI-keyword first + 16 cap (computed here so we can
-  // detect empty section)
-  const hnAll = (hnTop?.items || []).filter(
-    (it) => it && !it.error && it.title && withinWindow(it.time),
-  );
-  const hnAiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
-  const hnAi = hnAll.filter((it) => hnAiKeywords.test(it.title));
-  const hnOther = hnAll.filter((it) => !hnAiKeywords.test(it.title));
-  const hnOrdered = [...hnAi, ...hnOther].slice(0, OTHER_CAP);
-
   // HF: 16 cap, no date filter
   const hfModels = (hfPopular?.models || []).slice(0, OTHER_CAP);
 
@@ -1224,7 +1196,6 @@ async function renderPage({
     labs: labItems.length > 0,
     writing: simonEntries.length > 0,
     trending: ghRepos.length > 0,
-    hn: hnOrdered.length > 0,
     hf: hfModels.length > 0,
     builders: builderTweets.length > 0 || builderPods.length > 0 || builderBlogs.length > 0,
   };
@@ -1267,7 +1238,6 @@ async function renderPage({
       ${has.labs ? `<li><a href="#labs">🏢 Lab posts</a></li>` : ""}
       ${has.writing ? `<li><a href="#writing">✍ Simon Willison</a></li>` : ""}
       ${has.trending ? `<li><a href="#trending">🚀 GitHub</a></li>` : ""}
-      ${has.hn ? `<li><a href="#hn">🔥 Hacker News</a></li>` : ""}
       ${has.hf ? `<li><a href="#hf">🤗 HuggingFace</a></li>` : ""}
       ${has.builders ? `<li><a href="#builders">🎙 Builder voices</a></li>` : ""}
       <li><a href="digests/">🗂 Archive</a></li>
@@ -1323,13 +1293,6 @@ async function renderPage({
       <h2><span class="section-icon">🚀</span> Trending on GitHub</h2>
       <p class="section-sub">Top trending repositories across all languages.</p>
       ${ghTrendingSection(ghRepos)}
-    </section>` : ""}
-
-    ${has.hn ? `
-    <section id="hn" class="block">
-      <h2><span class="section-icon">🔥</span> Hacker News</h2>
-      <p class="section-sub">Top AI-relevant front-page stories (AI/LLM/agent items surfaced first).</p>
-      ${hnSection(hnOrdered)}
     </section>` : ""}
 
     ${has.hf ? `
@@ -1428,7 +1391,6 @@ const aihotProducts = await tryReadJson(join(DATA_DIR, "aihot-ai-products.json")
 const aihotIndustry = await tryReadJson(join(DATA_DIR, "aihot-industry.json"));
 const aihotPaper = await tryReadJson(join(DATA_DIR, "aihot-paper.json"));
 const ghTrending = await tryReadJson(join(DATA_DIR, "github-trending.json"));
-const hnTop = await tryReadJson(join(DATA_DIR, "hn-top.json"));
 const hfPopular = await tryReadJson(join(DATA_DIR, "hf-popular.json"));
 const openaiBlogData = await tryReadJson(join(DATA_DIR, "openai-blog.json"));
 const simonWillisonData = await tryReadJson(join(DATA_DIR, "simon-willison.json"));
@@ -1497,7 +1459,6 @@ const pageHtml = await renderPage({
   aihotIndustry,
   aihotPaper,
   ghTrending,
-  hnTop,
   hfPopular,
   openaiBlog: openaiBlogData,
   simonWillison: simonWillisonData,
