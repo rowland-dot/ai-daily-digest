@@ -71,12 +71,12 @@ function googleTranslateUrl(text) {
 
 // ---- Section builders ----
 
-function aihotItemsCard(items) {
+function aihotItemsCard(items, anchorPrefix) {
   if (!items?.length) return `<p class="empty">No items.</p>`;
   return `<div class="cards">${items
     .map(
-      (item) => `
-    <article class="card">
+      (item, idx) => `
+    <article class="card" id="article-${anchorPrefix}-${idx}">
       <h3 class="card-title">${escapeHtml(item.title || "")}</h3>
       ${item.summary ? `<p class="card-summary">${escapeHtml(item.summary)}</p>` : ""}
       <div class="card-meta">
@@ -97,8 +97,8 @@ function ghTrendingSection(repos) {
   if (!repos.length) return ``;
   return `<div class="cards">${repos
     .map(
-      (r) => `
-    <article class="card gh-card">
+      (r, idx) => `
+    <article class="card gh-card" id="article-trending-${idx}">
       <h3 class="card-title">
         <a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">
           <span class="gh-owner">${escapeHtml(r.owner || "")}</span>
@@ -121,12 +121,11 @@ function ghTrendingSection(repos) {
 const OTHER_CAP = 16;
 
 function hnSection(items) {
-  // Items are already filtered + ordered + capped by the caller.
   if (!items.length) return ``;
   return `<ol class="hn-list">${items
     .map(
-      (it) => `
-    <li class="hn-item">
+      (it, idx) => `
+    <li class="hn-item" id="article-hn-${idx}">
       <a class="hn-title" href="${escapeHtml(it.url || `https://news.ycombinator.com/item?id=${it.id}`)}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
       <div class="hn-meta">
         <span>▲ ${it.score ?? 0}</span>
@@ -145,8 +144,8 @@ function hfSection(models) {
   if (!models.length) return ``;
   return `<div class="cards">${models
     .map(
-      (m) => `
-    <article class="card hf-card">
+      (m, idx) => `
+    <article class="card hf-card" id="article-hf-${idx}">
       <h3 class="card-title"><a href="https://huggingface.co/${escapeHtml(m.id || "")}" target="_blank" rel="noopener">${escapeHtml(m.id || "")}</a></h3>
       <div class="hf-stats">
         <span class="stat">♥ ${m.likes ?? 0}</span>
@@ -164,8 +163,8 @@ function labBlogSection(items) {
   if (!items.length) return ``;
   return `<div class="cards">${items
     .map(
-      (it) => `
-    <article class="card">
+      (it, idx) => `
+    <article class="card" id="article-labs-${idx}">
       <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a></h3>
       ${it.description ? `<p class="card-summary">${escapeHtml(it.description)}</p>` : ""}
       <div class="card-meta">
@@ -182,8 +181,8 @@ function builderWritingSection(entries) {
   if (!entries.length) return ``;
   return `<ul class="writing-list">${entries
     .map(
-      (e) => `
-    <li class="writing-item">
+      (e, idx) => `
+    <li class="writing-item" id="article-writing-${idx}">
       <a class="writing-title" href="${escapeHtml(e.link)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>
       ${e.summary ? `<p class="writing-summary">${escapeHtml(e.summary)}</p>` : ""}
       <div class="writing-meta">
@@ -197,12 +196,10 @@ function builderWritingSection(entries) {
 }
 
 function followBuildersSection(xItems, podItems, blogItems) {
-  // All inputs are already filtered + sorted by the caller.
-
-  const renderTweet = (t) => {
+  const renderTweet = (t, idx) => {
     const text = (t.text || "").slice(0, 240) + (t.text?.length > 240 ? "…" : "");
     return `
-      <li class="builder-item">
+      <li class="builder-item" id="article-builders-x-${idx}">
         <div class="builder-meta-top">
           <strong>${escapeHtml(t.author || "")}</strong>
           ${t.handle ? `<span class="muted">@${escapeHtml(t.handle)}</span>` : ""}
@@ -217,8 +214,8 @@ function followBuildersSection(xItems, podItems, blogItems) {
     `;
   };
 
-  const renderPostOrEpisode = (item, kind) => `
-    <li class="builder-item">
+  const renderPostOrEpisode = (item, kind, idx) => `
+    <li class="builder-item" id="article-builders-${kind === "podcast" ? "pod" : "blog"}-${idx}">
       <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">${escapeHtml(item.title || "(untitled)")}</a>
       <div class="builder-meta">
         ${item.name ? `<span>${escapeHtml(item.name)}</span>` : ""}
@@ -235,8 +232,8 @@ function followBuildersSection(xItems, podItems, blogItems) {
 
   const out = [
     part("X / Twitter", xItems.map(renderTweet).join("")),
-    part("Podcasts", podItems.map((p) => renderPostOrEpisode(p, "podcast")).join("")),
-    part("Blogs", blogItems.map((b) => renderPostOrEpisode(b, "blog")).join("")),
+    part("Podcasts", podItems.map((p, i) => renderPostOrEpisode(p, "podcast", i)).join("")),
+    part("Blogs", blogItems.map((b, i) => renderPostOrEpisode(b, "blog", i)).join("")),
   ]
     .filter(Boolean)
     .join("");
@@ -520,6 +517,18 @@ const PAGE_CSS = `
 
   .empty { color: var(--text-muted); font-style: italic; }
 
+  /* Audio "now playing" highlight — applied to whichever article element
+     matches the current cue. Subtle accent ring + slight surface bump. */
+  .now-playing {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    transition: outline 0.2s ease;
+    scroll-margin-top: 70px;
+  }
+  @media (max-width: 600px) {
+    .now-playing { scroll-margin-top: 150px; }
+  }
+
   /* Floating mini-player (bottom-right).
      Each element has a fixed pixel width per breakpoint so nothing
      reflows as the viewport changes or as the user interacts. */
@@ -550,13 +559,16 @@ const PAGE_CSS = `
     color: #fff;
     font-size: 22px;
   }
-  /* Expanded: fluid row, sizes to its content + available viewport. */
+  /* Expanded: fluid row, sizes to its content + available viewport.
+     On desktop give the FAB a meaningful min-width so the scrubber
+     has room to be useful (it grows via flex 1 1 auto inside). */
   .audio-fab[data-expanded="true"] {
     display: flex;
     align-items: center;
     padding: 6px 8px 6px 8px;
     height: 52px;
     max-width: calc(100vw - 16px);
+    min-width: 400px;
   }
   .audio-fab[data-expanded="true"] .audio-fab-handle {
     width: 36px; height: 36px;
@@ -616,20 +628,51 @@ const PAGE_CSS = `
   .play-btn:active { transform: scale(0.95); }
   .scrubber {
     flex: 1 1 auto;
-    height: 4px;
-    background: var(--surface-2);
-    border-radius: 2px;
+    height: 18px;                 /* outer hit-area for easy click/drag */
+    background: transparent;
     position: relative;
     cursor: pointer;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+  .scrubber::before {
+    /* The visible track */
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 6px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    pointer-events: none;
   }
   .scrubber-fill {
     position: absolute;
-    inset: 0 100% 0 0;          /* width controlled via JS: right = 100% - pct */
+    left: 0; right: 100%;          /* width set in JS via right = 100% - pct */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 6px;
     background: var(--accent);
-    border-radius: 2px;
+    border-radius: 999px;
     pointer-events: none;
   }
+  .scrubber-thumb {
+    position: absolute;
+    top: 50%;
+    left: 0;                       /* JS sets left = pct */
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+  }
+  .scrubber:hover .scrubber-thumb { transform: translate(-50%, -50%) scale(1.15); }
   .time-label {
     flex: 0 0 auto;
     font-size: 11px;
@@ -750,6 +793,7 @@ const AUDIO_PLAYER_SCRIPT = `
     var playBtn = document.getElementById('play-btn');
     var scrubber = document.getElementById('scrubber');
     var fill = document.getElementById('scrubber-fill');
+    var thumb = document.getElementById('scrubber-thumb');
     var timeLabel = document.getElementById('time-label');
     var speedBtn = document.getElementById('speed-btn');
 
@@ -809,6 +853,7 @@ const AUDIO_PLAYER_SCRIPT = `
       var c = audio.currentTime || 0;
       var pct = d > 0 ? (c / d) * 100 : 0;
       if (fill) fill.style.right = (100 - pct) + '%';
+      if (thumb) thumb.style.left = pct + '%';
       if (timeLabel) {
         if (d > 0) timeLabel.textContent = fmt(c) + ' / ' + fmt(d);
         else timeLabel.textContent = fmt(c);
@@ -871,18 +916,36 @@ const AUDIO_PLAYER_SCRIPT = `
       if (audio.paused) return;
       if (Date.now() - lastUserScrollAt < 8000) return;
       var t = audio.currentTime;
-      var active = null;
+      // Prefer the article-level cue (kind === "article") over section.
+      var activeArticle = null;
+      var activeSection = null;
       for (var i = 0; i < cuesData.cues.length; i++) {
         var c = cuesData.cues[i];
-        if (t >= c.start && t < c.end) { active = c.anchor; break; }
+        if (t < c.start || t >= c.end) continue;
+        if (c.kind === 'article' && !activeArticle) activeArticle = c.anchor;
+        else if (c.kind === 'section' && !activeSection) activeSection = c.anchor;
       }
+      var active = activeArticle || activeSection;
       if (active && active !== lastAnchor) {
         var el = document.getElementById(active);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // Visual now-playing highlight
+          document.querySelectorAll('.now-playing').forEach(function(n) {
+            n.classList.remove('now-playing');
+          });
+          el.classList.add('now-playing');
+        }
         lastAnchor = active;
       }
     }
     audio.addEventListener('timeupdate', maybeScroll);
+    audio.addEventListener('pause', function() {
+      document.querySelectorAll('.now-playing').forEach(function(n) {
+        n.classList.remove('now-playing');
+      });
+      lastAnchor = null;
+    });
 
     // ---- Playback speed cycle ----
     if (speedBtn) {
@@ -1044,28 +1107,28 @@ async function renderPage({
     <section id="models" class="block">
       <h2><span class="section-icon">🤖</span> Model drops & updates</h2>
       <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version.</p>
-      ${aihotItemsCard(modelItems)}
+      ${aihotItemsCard(modelItems, "models")}
     </section>` : ""}
 
     ${has.products ? `
     <section id="products" class="block">
       <h2><span class="section-icon">📦</span> Products & applications</h2>
       <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
-      ${aihotItemsCard(productItems)}
+      ${aihotItemsCard(productItems, "products")}
     </section>` : ""}
 
     ${has.industry ? `
     <section id="industry" class="block">
       <h2><span class="section-icon">📰</span> Industry moves</h2>
       <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
-      ${aihotItemsCard(industryItems)}
+      ${aihotItemsCard(industryItems, "industry")}
     </section>` : ""}
 
     ${has.papers ? `
     <section id="papers" class="block">
       <h2><span class="section-icon">📄</span> Research highlights</h2>
       <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
-      ${aihotItemsCard(paperItems)}
+      ${aihotItemsCard(paperItems, "papers")}
     </section>` : ""}
 
     ${has.labs ? `
@@ -1127,6 +1190,7 @@ async function renderPage({
                <button id="play-btn" class="play-btn" type="button" aria-label="Play/Pause">▶</button>
                <div id="scrubber" class="scrubber" role="slider" tabindex="0" aria-label="Seek">
                  <div id="scrubber-fill" class="scrubber-fill"></div>
+                 <div id="scrubber-thumb" class="scrubber-thumb"></div>
                </div>
                <span id="time-label" class="time-label">0:00</span>
              </div>

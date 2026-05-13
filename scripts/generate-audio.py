@@ -124,12 +124,27 @@ WHITESPACE_RE = re.compile(r"\s+")
 TRAILING_PUNCT_RE = re.compile(r"[\s,;:\-_/|]+$")
 
 
+FULLWIDTH_PUNCT_MAP = str.maketrans({
+    "：": ":",   # fullwidth colon (U+FF1A)
+    "／": "/",   # fullwidth slash (U+FF0F)
+    "．": ".",   # fullwidth period (U+FF0E)
+    "－": "-",   # fullwidth hyphen-minus (U+FF0D)
+    "～": "~",   # fullwidth tilde (U+FF5E)
+    "？": "?",   # fullwidth question
+    "！": "!",   # fullwidth exclamation
+    "＠": "@",   # fullwidth at
+    "＃": "#",   # fullwidth hash
+})
+
+
 def clean_for_tts(text: str) -> str:
     """Strip URLs, markdown, tags, hashtags, timestamps, emoji, code, etc.
     Keep prose suitable for being read aloud."""
     if not text:
         return ""
-    s = text
+    # Normalise fullwidth CJK punctuation -> ASCII so URL/timestamp/etc.
+    # regexes (which use ASCII : / .) can match e.g. "https：//foo" too.
+    s = text.translate(FULLWIDTH_PUNCT_MAP)
     s = CODE_BLOCK_RE.sub(" ", s)
     s = MARKDOWN_IMG_RE.sub(" ", s)
     s = MARKDOWN_LINK_RE.sub(r"\1", s)
@@ -194,77 +209,97 @@ def field(d: dict, *keys: str, limit: int = 0) -> str:
     return ""
 
 
-def build_aihot_section_text(label: str, items: list[dict]) -> str:
-    """Stitch Chinese items into one read-aloud passage with separator."""
-    parts: list[str] = []
-    lbl = clean_for_tts(label)
-    if lbl:
-        parts.append(lbl + "。")
-    for idx, item in enumerate(items):
+def _build_with_offsets(intro: str, items: list[tuple[str, str]], separator: str):
+    """Helper. Takes intro text + a list of (item_id, item_text) tuples and
+    returns (full_text, intro_chars, [(item_id, char_count), ...]) where
+    char_count is the length of that item's contribution to full_text.
+    Char offsets are computed accurately for proportional time mapping."""
+    full = intro
+    intro_chars = len(intro)
+    article_meta: list[tuple[str, int]] = []
+    for idx, (item_id, item_text) in enumerate(items):
+        prefix = ""
         if idx > 0:
-            # Inter-article separator (Chinese): natural sentence break + "next"
-            parts.append("。。。 下一篇，")
+            prefix = " " + separator
+        elif intro:
+            prefix = " "
+        chunk = prefix + item_text
+        full += chunk
+        article_meta.append((item_id, len(chunk)))
+    return full, intro_chars, article_meta
+
+
+def build_aihot_section_text(label: str, items: list[dict], section_anchor: str):
+    """Returns (text, intro_chars, [(anchor, char_count), ...]) for AIHOT."""
+    item_texts: list[tuple[str, str]] = []
+    for idx, item in enumerate(items):
         title = field(item, "title")
         summary = field(item, "summary", limit=200)
+        parts = []
         if title:
             parts.append(title + "。")
         if summary:
             parts.append(summary + "。")
-    return " ".join(parts)
+        if parts:
+            item_texts.append((f"article-{section_anchor}-{idx}", " ".join(parts)))
+    intro = (clean_for_tts(label) + "。") if label else ""
+    # Chinese separator
+    return _build_with_offsets(intro, item_texts, "。。。 下一篇，")
 
 
-def _english_separator() -> str:
-    # Three periods create extra pause in edge-tts; "Next," cues the listener.
-    return "... Next,"
+EN_SEPARATOR = "... Next,"
 
 
-def build_lab_section_text(items: list[dict]) -> str:
-    parts = ["Lab announcements from OpenAI."]
+def build_lab_section_text(items: list[dict], section_anchor: str):
+    item_texts = []
     for idx, it in enumerate(items[:OTHER_CAP]):
-        if idx > 0:
-            parts.append(_english_separator())
         title = field(it, "title")
         desc = field(it, "description", limit=220)
+        parts = []
         if title:
             parts.append(title + ".")
         if desc:
             parts.append(desc + ".")
-    return " ".join(parts)
+        if parts:
+            item_texts.append((f"article-{section_anchor}-{idx}", " ".join(parts)))
+    return _build_with_offsets("Lab announcements from OpenAI.", item_texts, EN_SEPARATOR)
 
 
-def build_simon_section_text(entries: list[dict]) -> str:
-    parts = ["Builder writing, from Simon Willison's weblog."]
+def build_simon_section_text(entries: list[dict], section_anchor: str):
+    item_texts = []
     for idx, e in enumerate(entries[:OTHER_CAP]):
-        if idx > 0:
-            parts.append(_english_separator())
         title = field(e, "title")
         summary = field(e, "summary", limit=220)
+        parts = []
         if title:
             parts.append(title + ".")
         if summary:
             parts.append(summary + ".")
-    return " ".join(parts)
+        if parts:
+            item_texts.append((f"article-{section_anchor}-{idx}", " ".join(parts)))
+    return _build_with_offsets("Builder writing, from Simon Willison's weblog.", item_texts, EN_SEPARATOR)
 
 
-def build_gh_section_text(repos: list[dict]) -> str:
-    parts = ["Trending on GitHub today."]
+def build_gh_section_text(repos: list[dict], section_anchor: str):
+    item_texts = []
     for idx, r in enumerate(repos[:OTHER_CAP]):
-        if idx > 0:
-            parts.append(_english_separator())
         owner = clean_for_tts(r.get("owner") or "")
         name = clean_for_tts(r.get("name") or "")
         desc = field(r, "description", limit=180)
         stars_today = r.get("starsToday")
+        parts = []
         if owner and name:
             parts.append(f"{owner} slash {name}.")
         if desc:
             parts.append(desc + ".")
         if stars_today:
             parts.append(f"{stars_today} stars today.")
-    return " ".join(parts)
+        if parts:
+            item_texts.append((f"article-{section_anchor}-{idx}", " ".join(parts)))
+    return _build_with_offsets("Trending on GitHub today.", item_texts, EN_SEPARATOR)
 
 
-def build_hn_section_text(items: list[dict]) -> str:
+def build_hn_section_text(items: list[dict], section_anchor: str):
     ai_keywords = (
         "ai", "llm", "gpt", "claude", "gemini", "anthropic", "openai",
         "model", "agent", "prompt", "embedding", "rag", "transformer",
@@ -276,86 +311,85 @@ def build_hn_section_text(items: list[dict]) -> str:
         and any(k in it["title"].lower() for k in ai_keywords)
     ][:OTHER_CAP]
     if not filtered:
-        return ""
-    parts = ["Top AI stories from Hacker News today."]
+        return "", 0, []
+    item_texts = []
     for idx, it in enumerate(filtered):
-        if idx > 0:
-            parts.append(_english_separator())
         title = field(it, "title")
         score = it.get("score") or 0
         comments = it.get("descendants") or 0
+        parts = []
         if title:
             parts.append(title + ".")
         parts.append(f"With {score} points and {comments} comments.")
-    return " ".join(parts)
+        item_texts.append((f"article-{section_anchor}-{idx}", " ".join(parts)))
+    return _build_with_offsets("Top AI stories from Hacker News today.", item_texts, EN_SEPARATOR)
 
 
-def build_hf_section_text(models: list[dict]) -> str:
-    parts = ["Most-loved models on HuggingFace."]
+def build_hf_section_text(models: list[dict], section_anchor: str):
+    item_texts = []
     for idx, m in enumerate(models[:OTHER_CAP]):
-        if idx > 0:
-            parts.append(_english_separator())
         mid = clean_for_tts(m.get("id") or "")
         likes = m.get("likes") or 0
         downloads = m.get("downloads") or 0
+        parts = []
         if mid:
             parts.append(f"{mid}.")
         parts.append(f"{likes} likes, {downloads:,} downloads.")
-    return " ".join(parts)
+        item_texts.append((f"article-{section_anchor}-{idx}", " ".join(parts)))
+    return _build_with_offsets("Most-loved models on HuggingFace.", item_texts, EN_SEPARATOR)
 
 
-def build_follow_builders_x_text(x_feed: dict) -> str:
-    """Tweets across all Follow Builders authors, sorted by likes."""
+def build_follow_builders_x_text(x_feed: dict):
     all_tweets = []
     for author in x_feed.get("x", []) or []:
         for t in author.get("tweets", []) or []:
             all_tweets.append({**t, "_author": author.get("name", "")})
     all_tweets.sort(key=lambda t: t.get("likes") or 0, reverse=True)
     if not all_tweets:
-        return ""
-    parts = ["Builder voices from X."]
+        return "", 0, []
+    item_texts = []
     for idx, t in enumerate(all_tweets):
-        if idx > 0:
-            parts.append(_english_separator())
         author = clean_for_tts(t.get("_author") or "")
         text = field(t, "text", limit=240)
         if author and text:
-            parts.append(f"{author} says: {text}.")
-    return " ".join(parts)
+            item_texts.append((f"article-builders-x-{idx}", f"{author} says: {text}."))
+    return _build_with_offsets("Builder voices from X.", item_texts, EN_SEPARATOR)
 
 
-def build_follow_builders_podcasts_text(pod_feed: dict) -> str:
+def build_follow_builders_podcasts_text(pod_feed: dict):
     episodes = pod_feed.get("podcasts", []) or []
     if not episodes:
-        return ""
-    parts = ["New AI podcast episodes."]
+        return "", 0, []
+    item_texts = []
     for idx, ep in enumerate(episodes):
-        if idx > 0:
-            parts.append(_english_separator())
         name = clean_for_tts(ep.get("name") or "")
         title = field(ep, "title")
+        text = ""
         if name and title:
-            parts.append(f"{name}: {title}.")
+            text = f"{name}: {title}."
         elif title:
-            parts.append(title + ".")
-    return " ".join(parts)
+            text = title + "."
+        if text:
+            item_texts.append((f"article-builders-pod-{idx}", text))
+    return _build_with_offsets("New AI podcast episodes.", item_texts, EN_SEPARATOR)
 
 
-def build_follow_builders_blogs_text(blog_feed: dict) -> str:
+def build_follow_builders_blogs_text(blog_feed: dict):
     blogs = blog_feed.get("blogs", []) or []
     if not blogs:
-        return ""
-    parts = ["Builder blog posts."]
+        return "", 0, []
+    item_texts = []
     for idx, b in enumerate(blogs):
-        if idx > 0:
-            parts.append(_english_separator())
         name = clean_for_tts(b.get("name") or "")
         title = field(b, "title")
+        text = ""
         if name and title:
-            parts.append(f"{name}: {title}.")
+            text = f"{name}: {title}."
         elif title:
-            parts.append(title + ".")
-    return " ".join(parts)
+            text = title + "."
+        if text:
+            item_texts.append((f"article-builders-blog-{idx}", text))
+    return _build_with_offsets("Builder blog posts.", item_texts, EN_SEPARATOR)
 
 
 # edge-tts handles a few thousand chars per call reliably; beyond that
@@ -387,20 +421,34 @@ def chunk_text(text: str, max_chars: int = MAX_TTS_CHARS) -> list[str]:
     return chunks
 
 
-def add_section(sections: list, text: str, voice: str, anchor: str | None = None) -> None:
-    """Append (text, voice, anchor) tuples to `sections`, chunking long text.
-    `anchor` is the page-section ID (e.g. 'models') used for scroll cues."""
+def add_section(
+    sections: list,
+    text: str,
+    voice: str,
+    section_anchor: str | None = None,
+    intro_chars: int = 0,
+    article_meta: list | None = None,
+) -> None:
+    """Append (text, voice, section_anchor, intro_chars, article_meta).
+    article_meta is a list of (article_id, char_count) tuples."""
+    # Chunking complicates per-article time mapping. For simplicity, only
+    # chunk if necessary; per-article cues are emitted only for un-chunked
+    # sections.
+    if len(text) <= MAX_TTS_CHARS:
+        sections.append((text, voice, section_anchor, intro_chars, article_meta or []))
+        return
+    # Long text: split into chunks, no per-article cues (section-level only)
     for chunk in chunk_text(text):
-        sections.append((chunk, voice, anchor))
+        sections.append((chunk, voice, section_anchor, 0, []))
 
 
 def main() -> int:
     manifest = load("manifest.json") or {}
     date_utc = manifest.get("date_utc") or "today"
 
-    sections: list[tuple[str, str, str | None]] = []  # (text, voice, anchor)
+    # Each section in the list: (text, voice, anchor, intro_chars, article_meta)
+    sections: list = []
 
-    # Intro (no anchor — page top)
     add_section(
         sections,
         (
@@ -438,44 +486,44 @@ def main() -> int:
         items = filter_recent(items, "publishedAt")
         if not items:
             continue
-        text = build_aihot_section_text(display_label, items)
+        text, intro, meta = build_aihot_section_text(display_label, items, anchor)
         if text:
-            add_section(sections, text, ZH_VOICE, anchor)
+            add_section(sections, text, ZH_VOICE, anchor, intro, meta)
 
     oai = load("openai-blog.json")
     if oai and oai.get("items"):
         items = filter_recent(oai["items"], "pubDate")
         if items:
-            text = build_lab_section_text(items)
+            text, intro, meta = build_lab_section_text(items, "labs")
             if text:
-                add_section(sections, text, EN_VOICE, "labs")
+                add_section(sections, text, EN_VOICE, "labs", intro, meta)
 
     sw = load("simon-willison.json")
     if sw and sw.get("entries"):
         entries = filter_recent(sw["entries"], "updated")
         if entries:
-            text = build_simon_section_text(entries)
+            text, intro, meta = build_simon_section_text(entries, "writing")
             if text:
-                add_section(sections, text, EN_VOICE, "writing")
+                add_section(sections, text, EN_VOICE, "writing", intro, meta)
 
     gh = load("github-trending.json")
     if gh and gh.get("repos"):
-        text = build_gh_section_text(gh["repos"])
+        text, intro, meta = build_gh_section_text(gh["repos"], "trending")
         if text:
-            add_section(sections, text, EN_VOICE, "trending")
+            add_section(sections, text, EN_VOICE, "trending", intro, meta)
 
     hn = load("hn-top.json")
     if hn and hn.get("items"):
         items = [it for it in hn["items"] if it and within_window(it.get("time"))]
-        text = build_hn_section_text(items)
+        text, intro, meta = build_hn_section_text(items, "hn")
         if text:
-            add_section(sections, text, EN_VOICE, "hn")
+            add_section(sections, text, EN_VOICE, "hn", intro, meta)
 
     hf = load("hf-popular.json")
     if hf and hf.get("models"):
-        text = build_hf_section_text(hf["models"])
+        text, intro, meta = build_hf_section_text(hf["models"], "hf")
         if text:
-            add_section(sections, text, EN_VOICE, "hf")
+            add_section(sections, text, EN_VOICE, "hf", intro, meta)
 
     x_feed = load("follow-builders-x.json")
     if x_feed:
@@ -485,23 +533,23 @@ def main() -> int:
             if recent:
                 filtered_authors.append({**author, "tweets": recent})
         if filtered_authors:
-            text = build_follow_builders_x_text({"x": filtered_authors})
+            text, intro, meta = build_follow_builders_x_text({"x": filtered_authors})
             if text:
-                add_section(sections, text, EN_VOICE, "builders")
+                add_section(sections, text, EN_VOICE, "builders", intro, meta)
     pod_feed = load("follow-builders-podcasts.json")
     if pod_feed:
         episodes = filter_recent(pod_feed.get("podcasts") or [], "publishedAt")
         if episodes:
-            text = build_follow_builders_podcasts_text({"podcasts": episodes})
+            text, intro, meta = build_follow_builders_podcasts_text({"podcasts": episodes})
             if text:
-                add_section(sections, text, EN_VOICE, "builders")
+                add_section(sections, text, EN_VOICE, "builders", intro, meta)
     blog_feed = load("follow-builders-blogs.json")
     if blog_feed:
         posts = filter_recent(blog_feed.get("blogs") or [], "publishedAt")
         if posts:
-            text = build_follow_builders_blogs_text({"blogs": posts})
+            text, intro, meta = build_follow_builders_blogs_text({"blogs": posts})
             if text:
-                add_section(sections, text, EN_VOICE, "builders")
+                add_section(sections, text, EN_VOICE, "builders", intro, meta)
 
     add_section(
         sections,
@@ -512,16 +560,15 @@ def main() -> int:
 
     print(f"Generating {len(sections)} audio segments...")
     segment_files: list[Path] = []
-    # Track which page-section each rendered file belongs to, so we can
-    # build scroll cues after the durations are known.
-    segment_anchors: list[str | None] = []
-    for i, (text, voice, anchor) in enumerate(sections):
+    segment_meta: list[tuple[str | None, int, list, str]] = []  # (anchor, intro_chars, article_meta, text)
+    for i, seg in enumerate(sections):
+        text, voice, anchor, intro_chars, article_meta = seg
         out = SEGS / f"{i:03d}.mp3"
         ok = tts_segment(text, voice, out)
         if ok:
             segment_files.append(out)
-            segment_anchors.append(anchor)
-            print(f"  [{i:03d}] {voice}: {len(text)} chars -> {out.stat().st_size} bytes (anchor={anchor})")
+            segment_meta.append((anchor, intro_chars, article_meta, text))
+            print(f"  [{i:03d}] {voice}: {len(text)} chars -> {out.stat().st_size} bytes (anchor={anchor}, articles={len(article_meta)})")
         else:
             print(f"  [{i:03d}] skipped (empty or failed)")
 
@@ -529,8 +576,6 @@ def main() -> int:
         print("[err] no segments rendered; aborting", file=sys.stderr)
         return 1
 
-    # Probe per-segment duration with ffprobe so we can build cumulative
-    # start times for the auto-scroll cues.
     def probe_seconds(p: Path) -> float:
         try:
             res = subprocess.run(
@@ -544,28 +589,45 @@ def main() -> int:
             return 0.0
 
     cumulative = 0.0
-    cues: list[dict] = []   # [{anchor, start, end}, ...] for distinct anchor runs
-    current_anchor: str | None = "__start__"
-    current_run_start = 0.0
-    for path, anchor in zip(segment_files, segment_anchors):
-        dur = probe_seconds(path)
-        # Open or close a cue run when the anchor changes
-        if anchor != current_anchor:
-            if current_anchor is not None and current_anchor != "__start__":
-                cues.append({"anchor": current_anchor, "start": current_run_start, "end": cumulative})
-            current_anchor = anchor
-            current_run_start = cumulative
-        cumulative += dur
-    # Close the last run
-    if current_anchor is not None and current_anchor != "__start__":
-        cues.append({"anchor": current_anchor, "start": current_run_start, "end": cumulative})
+    cues: list[dict] = []
+    # Per-segment processing: emit section-level cue PLUS per-article cues.
+    # Per-article timing is estimated proportionally from character counts —
+    # accurate to ~1-2 seconds, more than good enough for scroll-into-view.
+    for path, (anchor, intro_chars, article_meta, text) in zip(segment_files, segment_meta):
+        seg_dur = probe_seconds(path)
+        seg_start = cumulative
+        seg_end = cumulative + seg_dur
+
+        if anchor:
+            # Section-level cue (fallback when JS can't find article-level)
+            cues.append({"anchor": anchor, "start": seg_start, "end": seg_end, "kind": "section"})
+
+            if article_meta and seg_dur > 0:
+                # Per-article cues: distribute by char-count proportion within
+                # the content portion (after the intro).
+                total_chars = len(text)
+                content_chars = total_chars - intro_chars
+                if content_chars > 0:
+                    intro_dur = seg_dur * (intro_chars / total_chars) if total_chars else 0
+                    content_dur = seg_dur - intro_dur
+                    cumulative_article_chars = 0
+                    article_total_chars = sum(c for _, c in article_meta)
+                    for art_id, art_chars in article_meta:
+                        art_start = seg_start + intro_dur + (cumulative_article_chars / article_total_chars) * content_dur if article_total_chars else seg_start
+                        cumulative_article_chars += art_chars
+                        art_end = seg_start + intro_dur + (cumulative_article_chars / article_total_chars) * content_dur if article_total_chars else seg_end
+                        cues.append({"anchor": art_id, "start": art_start, "end": art_end, "kind": "article"})
+
+        cumulative = seg_end
 
     cues_path = SITE / "audio-cues.json"
     cues_path.write_text(
         json.dumps({"total_duration": cumulative, "cues": cues}, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"[ok] wrote {cues_path} ({len(cues)} cues, total {cumulative:.1f}s)")
+    n_articles = sum(1 for c in cues if c.get("kind") == "article")
+    n_sections = sum(1 for c in cues if c.get("kind") == "section")
+    print(f"[ok] wrote {cues_path} ({n_sections} sections + {n_articles} articles, total {cumulative:.1f}s)")
 
     # Concatenate via ffmpeg concat demuxer
     concat_list = Path("audio-concat.txt")
