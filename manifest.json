@@ -1,31 +1,31 @@
 {
-  "fetched_at": "2026-05-13T17:54:49.695Z",
+  "fetched_at": "2026-05-13T18:40:52.192Z",
   "date_utc": "2026-05-13",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 1138
+      "ms": 1114
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 217
+      "ms": 215
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 219
+      "ms": 421
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 217
+      "ms": 215
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 217
+      "ms": 214
     },
     "hf_popular": {
       "status": "ok",
@@ -35,37 +35,37 @@
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 1156
+      "ms": 124
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 4179
+      "ms": 633
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 818
+      "ms": 44
     },
     "follow_builders_x": {
       "status": "ok",
       "file": "follow-builders-x.json",
-      "ms": 128
+      "ms": 183
     },
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 106
+      "ms": 125
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 108
+      "ms": 112
     },
     "localllama": {
       "status": "ok",
       "file": "localllama.json",
-      "ms": 563
+      "ms": 487
     }
   }
 }

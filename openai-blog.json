@@ -1,20 +1,20 @@
 {
-  "fetched_at": "2026-05-13T17:54:57.137Z",
+  "fetched_at": "2026-05-13T18:40:55.227Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "link": "https://openai.com/index/building-codex-windows-sandbox",
+      "pubDate": "Fri, 15 May 2026 00:00:00 GMT",
+      "description": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions.",
+      "summary": "Codex⁠, our coding agent, runs on developer laptops—whether that's through the CLI, the IDE extension, or the desktop app. It manages a conversation between a human at a keyboard and a model running in the cloud to handle inference."
+    },
     {
       "title": "How finance teams use Codex",
       "link": "https://openai.com/academy/how-finance-teams-use-codex",
       "pubDate": "Tue, 12 May 2026 15:00:00 GMT",
       "description": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.",
       "summary": "See how finance teams can use Codex to build review-ready assets for monthly business reviews, reporting, variance analysis, and planning. With Codex, finance teams can just build things. Start with the close workbooks, revenue and expense dashboards, forecast updates, prior MBRs, and owner notes you already use."
-    },
-    {
-      "title": "How NVIDIA engineers and researchers build with Codex",
-      "link": "https://openai.com/index/nvidia",
-      "pubDate": "Tue, 12 May 2026 00:00:00 GMT",
-      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.",
-      "summary": "At NVIDIA, engineers are using Codex as their default tool for complex engineering work, and to run end-to-end machine learning experiments. Codex, built on GPT‑5. 5 and running in production on NVIDIA GB200 and GB300 infrastructure, can handle much longer, more autonomous sessions — going beyond execution to surface issues and ideas that weren't part of the original prompt."
     },
     {
       "title": "What Parameter Golf taught us about AI-assisted research",
@@ -29,6 +29,13 @@
       "pubDate": "Tue, 12 May 2026 00:00:00 GMT",
       "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.",
       "summary": "Codex and ChatGPT accelerate development cycles, improve code quality, and expand AI adoption across 2,000 employees. AutoScout24 Group⁠(opens in a new window) is the largest pan-European and Canadian online car marketplace, connecting more than 30 million monthly users with over two million vehicle listings."
+    },
+    {
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "link": "https://openai.com/index/nvidia",
+      "pubDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.",
+      "summary": "At NVIDIA, engineers are using Codex as their default tool for complex engineering work, and to run end-to-end machine learning experiments. Codex, built on GPT‑5. 5 and running in production on NVIDIA GB200 and GB300 infrastructure, can handle much longer, more autonomous sessions — going beyond execution to surface issues and ideas that weren't part of the original prompt."
     },
     {
       "title": "How ChatGPT adoption broadened in early 2026",
@@ -86,13 +93,6 @@
       "summary": "We’re introducing three audio models in the API that unlock a new class of voice apps for developers. This demo is time-limited. By using it, you agree to OpenAI's Terms and acknowledge our Privacy Policy."
     },
     {
-      "title": "Introducing Trusted Contact in ChatGPT",
-      "link": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
-      "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
-      "description": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected.",
-      "summary": "People use ChatGPT to learn, explore ideas, solve problems, and reflect on personal questions. Sometimes those conversations can involve moments when someone may be struggling or looking for support. Our goal is to design systems that respond thoughtfully to sensitive conversations and encourage people to connect with real-world help when needed."
-    },
-    {
       "title": "Testing ads in ChatGPT",
       "link": "https://openai.com/index/testing-ads-in-chatgpt",
       "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
@@ -100,11 +100,11 @@
       "summary": "Update on May 7, 2026 : In the coming weeks, we plan to expand the ads pilot in ChatGPT in the United Kingdom, Mexico, Brazil, Japan, and South Korea. These pilots will help us understand what works well in different regions, so we can continue improving the experience as we expand."
     },
     {
-      "title": "Simplex rethinks software development with Codex",
-      "link": "https://openai.com/index/simplex",
+      "title": "Introducing Trusted Contact in ChatGPT",
+      "link": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
       "pubDate": "Thu, 07 May 2026 00:00:00 GMT",
-      "description": "Simplex boosts software development with ChatGPT Enterprise and Codex, reducing design, build, and testing time while scaling AI-driven workflows.",
-      "summary": "Simplex is using ChatGPT Enterprise and Codex to validate AI-driven development and scale more productive workflows. Simplex is a technology partner that works across consulting, systems development, and operations."
+      "description": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected.",
+      "summary": "People use ChatGPT to learn, explore ideas, solve problems, and reflect on personal questions. Sometimes those conversations can involve moments when someone may be struggling or looking for support. Our goal is to design systems that respond thoughtfully to sensitive conversations and encourage people to connect with real-world help when needed."
     }
   ]
 }

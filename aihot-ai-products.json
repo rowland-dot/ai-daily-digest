@@ -1,8 +1,18 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4MjMyMDk1MDAwLCJpIjoiY21vd3E4ZHZvMDE0MHNsa3VyNm9ubDhreCJ9",
+  "nextCursor": "eyJhIjoxNzc4MjQxNjAwMDAwLCJpIjoiY21veGJrbnd0MDBmb3NsbGg0Nmc2Mzc0NCJ9",
   "items": [
+    {
+      "id": "cmp4ec8nl055jsljx2eak9wzb",
+      "title": "Krea 2 新增情绪板分享功能",
+      "title_en": "introducing moodboard sharing. you can now share Krea 2 moodboards with others. a few you can try …",
+      "url": "https://x.com/krea_ai/status/2054630514439696401",
+      "source": "X：Krea AI (@krea_ai)",
+      "publishedAt": "2026-05-13T18:31:02.000Z",
+      "summary": "推出情绪板分享功能。\n\n现在你可以与他人分享 Krea 2 情绪板。\n\n下方有几个可供尝试的示例 👇",
+      "category": "ai-products"
+    },
     {
       "id": "cmp4c7tem04o0sljxh2fqtht1",
       "title": "Claude付费计划将提供月度编程使用额度",
@@ -491,16 +501,6 @@
       "source": "Cursor Blog",
       "publishedAt": "2026-05-08T12:00:00.000Z",
       "summary": "Bugbot宣布将团队与个人计划从每月每席位40美元的订阅制改为按使用量计费。现有用户的变化将于2026年6月5日后的下一个账单周期开始生效，例如2026年5月购买的年订阅将在2027年5月切换。团队按需消费计费，个人按包含使用量计费，平均每次运行成本约为1.00-1.50美元，具体取决于PR大小和复杂度。同时，用户现在可配置Bugbot审查PR的工作强度：默认强度下80%被识别的问题在合并时得到解决；高强度模式下可多发现35%的问题，解决率仍保持在80%。现有客户可在Cursor面板中提前切换至用量计费。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmowq8dvo0140slkur6onl8kx",
-      "title": "阿里云推出Smart Studio，一站式自托管AI模型平台",
-      "title_en": "Smart Studio： Self-host the latest AI 🚀 Stop jumping between platforms. Everything you need to tes…",
-      "url": "https://x.com/alibaba_cloud/status/2052680300803596574",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-08T09:21:35.000Z",
-      "summary": "阿里云发布Smart Studio平台，旨在整合AI模型测试与服务的全流程，终结用户在不同平台间切换的繁琐。该平台提供即时访问最新SOTA模型（如Qwen3.6-Max、DeepSeek-v4）的能力，支持多模态及图像视频生成模型。其核心功能包括可视化模型实验室，用于并排比较开源与闭源模型的输出效果，并能快速将Hugging Face上的模型转化为实时API，简化部署流程。",
       "category": "ai-products"
     }
   ]

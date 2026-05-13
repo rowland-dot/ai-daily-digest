@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T17:54:58.861Z",
+  "fetched_at": "2026-05-13T18:40:56.179Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
@@ -8,13 +8,6 @@
       "updated": "2026-05-12T23:15:42+00:00",
       "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/",
       "summary": "• The cartridge boots a ROM, and the GBC runs the model itself. • The model is Andrej Karpathy’s TinyStories-260K, converted to INT8 weights with fixed-point math so it can run without floating point."
-    },
-    {
-      "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
-      "author": "Henrie_the_dreamer",
-      "updated": "2026-05-12T17:56:09+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/",
-      "summary": "We open-sourced Needle, a 26M parameter function-calling (tool use) model. It runs at 6000 tok/s prefill and 1200 tok/s decode on consumer devices."
     },
     {
       "title": "TextGen is now a native desktop app. Open-source alternative to LM Studio (formerly text-generation-webui).",
@@ -66,13 +59,6 @@
       "summary": "I’ve been using Qwen 3. 6 27B and it’s amazing. Not exactly your Opus replacement, but great for small tasks and checking work. But if you had 224GB of VRAM, would it still be your choice? Or is there something you consider better in the 100+B range (GPT-OSS, Deepseek, etc) that’s just not talked about as much because fewer people can run it?"
     },
     {
-      "title": "Luce DFlash + PFlash on AMD Strix Halo: Qwen3.6-27B at 2.23x decode and 3.05x prefill vs llama.cpp HIP",
-      "author": "sandropuppo",
-      "updated": "2026-05-12T18:09:59+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tb9pwn/luce_dflash_pflash_on_amd_strix_halo_qwen3627b_at/",
-      "summary": "We just shipped DFlash and PFlash support for the AMD Ryzen AI MAX+ 395 iGPU (gfx1151, Strix Halo, 128 GiB unified memory). Same Luce DFlash stack from the RTX 3090 post a couple weeks back , now running on the consumer AMD APU class."
-    },
-    {
       "title": "llama.cpp docker images to run MTP models",
       "author": "havenoammo",
       "updated": "2026-05-13T14:20:07+00:00",
@@ -100,6 +86,20 @@
       "updated": "2026-05-12T19:10:13+00:00",
       "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbbh82/attention_drift_what_autoregressive_speculative/",
       "summary": "Speculative decoding accelerates LLM inference by drafting future tokens with a small model, but drafter models degrade sharply under template perturbation and long-context inputs."
+    },
+    {
+      "title": "qwen3.6 just stops",
+      "author": "robertpro01",
+      "updated": "2026-05-13T13:30:59+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbzr64/qwen36_just_stops/",
+      "summary": "Sometimes qwen 3. 6 just stops at the middle of a task, is there a way to avoid it?"
+    },
+    {
+      "title": "Does THINKING MODE significantly improve translation?",
+      "author": "Sostrene_Blue",
+      "updated": "2026-05-13T08:15:46+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tbt8xl/does_thinking_mode_significantly_improve/",
+      "summary": "Between a solid model from Qwen or Gemma 4, when translating a text, does \"thinking mode\" significantly boost the quality of the translation, or is the difference negligible?"
     }
   ]
 }
