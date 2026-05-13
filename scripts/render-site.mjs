@@ -1374,8 +1374,9 @@ async function renderPage({
     .map((it) => ({ ...it, source: "Anthropic engineering" }));
   const labItems = [...labOpenai, ...labAnthropicNews, ...labAnthropicEng];
 
-  // Simon Willison: 24h + 16 cap
-  const simonEntries = filterRecent(simonWillison?.entries || [], "updated").slice(0, OTHER_CAP);
+  // Simon Willison: 24h + 12 cap (Phase 1e). Routine-gated when Claude
+  // ran today (Phase 5); falls back to all-items when it hasn't.
+  const simonEntries = filterRecent(simonWillison?.entries || [], "updated").slice(0, 12);
 
   // GitHub Trending: 16 cap, no date filter (URL ?since=daily)
   const ghRepos = (ghTrending?.repos || []).slice(0, OTHER_CAP);
@@ -1394,8 +1395,10 @@ async function renderPage({
   const builderPods = (podFeed?.podcasts || []);
   const builderBlogs = (blogFeed?.blogs || []);
 
-  // r/LocalLLaMA: top-of-day, no extra date filter (upstream is daily).
-  const llamaPosts = (localLlamaData?.posts || []).slice(0, OTHER_CAP);
+  // r/LocalLLaMA: 12 cap (Phase 1d, fetcher caps to 12 too). Routine-
+  // gated when Claude ran today (Phase 5); falls back to all-items
+  // otherwise.
+  const llamaPosts = (localLlamaData?.posts || []).slice(0, 12);
 
   // Has-content flags drive both section visibility and TOC entries.
   const has = {
@@ -1708,6 +1711,7 @@ function applyClaudeSummaries(items, urlKey, summaryKey = "summary") {
     const claude = claudeSummaries[url];
     if (!claude || !claude.en) continue;
     it[summaryKey] = claude.en;
+    it._claudeApproved = true;   // Phase 5 quality-gate marker
     // For lab cards which prefer .description, set both so the visible
     // pick is always the Claude EN.
     if (summaryKey === "summary" && it.description != null) it.description = claude.en;
@@ -1722,6 +1726,27 @@ applyClaudeSummaries(anthropicNewsData?.items || [], "link", "summary");
 applyClaudeSummaries(anthropicEngineeringData?.items || [], "link", "summary");
 applyClaudeSummaries(simonWillisonData?.entries || [], "link", "summary");
 applyClaudeSummaries(localLlamaData?.posts || [], "permalink", "summary");
+
+// Phase 5 — Claude-omission as quality gate.
+// For sources that suffer from noise (Simon Willison, r/LocalLLaMA),
+// the routine prompt instructs Claude to OMIT summaries for posts it
+// judges off-topic / hardware-anxiety / meme / etc. The routine's
+// silence becomes the page filter: items without a Claude summary
+// are dropped from those sections.
+//
+// Safety: only gate when the routine has ACTUALLY run today
+// (claudeSummaries non-empty). If the file is missing or stale, the
+// page falls back to showing all items so we never accidentally
+// render an empty Simon / r/LocalLLaMA section.
+const _claudeRanToday = Object.keys(claudeSummaries).length > 0;
+if (_claudeRanToday) {
+  if (simonWillisonData?.entries) {
+    simonWillisonData.entries = simonWillisonData.entries.filter((e) => e._claudeApproved);
+  }
+  if (localLlamaData?.posts) {
+    localLlamaData.posts = localLlamaData.posts.filter((p) => p._claudeApproved);
+  }
+}
 
 const pageHtml = await renderPage({
   date: today,
