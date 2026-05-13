@@ -44,6 +44,28 @@ function shortDate(iso) {
   return d.toISOString().slice(0, 10);
 }
 
+// Render an ISO timestamp as Sydney local time. Intl handles DST so the
+// label flips between AEST (winter, GMT+10) and AEDT (summer, GMT+11)
+// automatically — matches what the user actually sees on their clock.
+function formatSydney(iso) {
+  const d = iso ? new Date(iso) : new Date();
+  if (isNaN(d.getTime())) return { date: "", time: "", tz: "AEST" };
+  // en-AU resolves the short timeZoneName as AEST/AEDT (DST-aware).
+  // en-GB and en-US fall back to "GMT+10" which is less readable.
+  const parts = new Intl.DateTimeFormat("en-AU", {
+    timeZone: "Australia/Sydney",
+    year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hour12: false,
+    timeZoneName: "short",
+  }).formatToParts(d);
+  const get = (t) => parts.find((p) => p.type === t)?.value || "";
+  return {
+    date: `${get("year")}-${get("month")}-${get("day")}`,
+    time: `${get("hour")}:${get("minute")}`,
+    tz: get("timeZoneName") || "AEST",
+  };
+}
+
 const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 // Parse anything we get from feeds into a Date or null:
@@ -1389,12 +1411,16 @@ async function renderPage({
     llama: llamaPosts.length > 0,
   };
 
+  // Sydney-local timestamp for the header. Falls back to render time
+  // if the manifest doesn't include fetched_at.
+  const sydney = formatSydney(manifest?.fetched_at);
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Daily Digest — ${escapeHtml(date)}</title>
+  <title>AI Daily Digest — ${escapeHtml(sydney.date)}</title>
   <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals.">
   <link rel="preconnect" href="https://rsms.me/" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
@@ -1414,8 +1440,8 @@ async function renderPage({
       <button data-theme="claude" role="tab">Claude</button>
     </div>
     <h1>AI Daily Digest</h1>
-    <p class="date">${escapeHtml(date)} · UTC</p>
-    <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, GitHub, HuggingFace, Hacker News, and Chinese AI media.</p>
+    <p class="date">${escapeHtml(sydney.date)} · ${escapeHtml(sydney.time)} · ${escapeHtml(sydney.tz)} (Sydney)</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, builder voices, r/LocalLLaMA, GitHub, HuggingFace, and Chinese AI media.</p>
   </header>
 
   <nav class="toc">
