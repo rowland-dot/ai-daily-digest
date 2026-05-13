@@ -88,6 +88,12 @@ jobs:
           python scripts/generate-audio.py
         continue-on-error: true
 
+      - name: Publish data/ to Pages (for the Claude routine to read)
+        run: |
+          mkdir -p docs/data
+          cp -v data/*.json docs/data/ 2>/dev/null || true
+          ls -la docs/data/
+
       - name: Render static site
         run: node scripts/render-site.mjs
 
