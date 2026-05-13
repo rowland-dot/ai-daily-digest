@@ -553,6 +553,25 @@ async function localLlama(limit = 14) {
   // conveys whether the post is worth opening, and image-driven
   // jokes pollute the section. "If the TLDR engine returns nothing,
   // eliminate on spot." (user rule, 2026-05-14.)
+  //
+  // Title refinement: when Reddit auto-grabbed a meaningless page
+  // title (HF model card "Foo/Bar · Hugging Face", or a bare repo
+  // slug "owner/repo" with no spaces), promote the summary's first
+  // sentence to title. The slug-style title is moved into a
+  // sourceLabel so the original ref stays visible.
+  for (const e of entries) {
+    if (!e.summary) continue;
+    const t = (e.title || "").trim();
+    const isHfAuto = /·\s*Hugging Face(?:\s+Spaces)?\s*$/i.test(t);
+    const isBareSlug = !/\s/.test(t) && /\//.test(t) && t.length < 80;
+    if (!(isHfAuto || isBareSlug)) continue;
+    const firstSentence = e.summary.split(/(?<=[.!?])\s+/)[0] || "";
+    const clean = firstSentence.replace(/\.+$/, "").trim();
+    if (clean.length >= 30 && clean.length <= 200) {
+      e.sourceLabel = t;
+      e.title = clean;
+    }
+  }
   const posts = entries.filter((e) => e.summary && e.summary.length >= 60).slice(0, limit);
   return {
     fetched_at: new Date().toISOString(),

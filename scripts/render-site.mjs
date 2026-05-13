@@ -234,6 +234,7 @@ function localLlamaSection(posts) {
       <div class="writing-meta">
         <span>r/LocalLLaMA</span>
         ${p.author ? `<span>· ${escapeHtml(p.author)}</span>` : ""}
+        ${p.sourceLabel ? `<span>· ${escapeHtml(p.sourceLabel)}</span>` : ""}
         ${p.updated ? `<span title="${escapeHtml(p.updated)}">· ${escapeHtml(relTime(p.updated))}</span>` : ""}
       </div>
     </li>
