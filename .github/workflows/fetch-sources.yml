@@ -58,9 +58,9 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v6: multi-lingual audio. Three tracks (mix/en/zh) + three
-          # cues files. Translation pipeline (deep-translator) gates the
-          # en/zh tracks, so a fresh build is needed on schema change.
+          # v7: multi-lingual page CONTENT now translated alongside audio.
+          # docs/content-translations.json is the new cached artifact —
+          # it carries the page-text translations used by the renderer.
           path: |
             docs/digest.mp3
             docs/digest-en.mp3
@@ -68,8 +68,9 @@ jobs:
             docs/audio-cues.json
             docs/audio-cues-en.json
             docs/audio-cues-zh.json
+            docs/content-translations.json
             data/translation-cache.json
-          key: digest-mp3-v6-${{ steps.today.outputs.date }}
+          key: digest-mp3-v7-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'

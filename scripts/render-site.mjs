@@ -77,8 +77,8 @@ function aihotItemsCard(items, anchorPrefix) {
     .map(
       (item, idx) => `
     <article class="card" id="article-${anchorPrefix}-${idx}">
-      <h3 class="card-title">${escapeHtml(item.title || "")}</h3>
-      ${item.summary ? `<p class="card-summary">${escapeHtml(item.summary)}</p>` : ""}
+      <h3 class="card-title"${txAttrs(item.title || "")}>${escapeHtml(item.title || "")}</h3>
+      ${item.summary ? `<p class="card-summary"${txAttrs(item.summary)}>${escapeHtml(item.summary)}</p>` : ""}
       <div class="card-meta">
         ${item.source ? `<span class="badge">${escapeHtml(item.source)}</span>` : ""}
         ${item.publishedAt ? `<span class="meta-time">${escapeHtml(item.publishedAt)}</span>` : ""}
@@ -106,7 +106,7 @@ function ghTrendingSection(repos) {
           <span class="gh-name">${escapeHtml(r.name || "")}</span>
         </a>
       </h3>
-      ${r.description ? `<p class="card-summary">${escapeHtml(r.description)}</p>` : ""}
+      ${r.description ? `<p class="card-summary"${txAttrs(r.description)}>${escapeHtml(r.description)}</p>` : ""}
       <div class="gh-meta">
         ${r.language ? `<span class="gh-lang"><span class="gh-dot" style="background:${escapeHtml(r.languageColor || "#888")}"></span>${escapeHtml(r.language)}</span>` : ""}
         ${r.stars != null ? `<span class="stat">★ ${r.stars.toLocaleString()}</span>` : ""}
@@ -126,7 +126,7 @@ function hnSection(items) {
     .map(
       (it, idx) => `
     <li class="hn-item" id="article-hn-${idx}">
-      <a class="hn-title" href="${escapeHtml(it.url || `https://news.ycombinator.com/item?id=${it.id}`)}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>
+      <a class="hn-title" href="${escapeHtml(it.url || `https://news.ycombinator.com/item?id=${it.id}`)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a>
       <div class="hn-meta">
         <span>▲ ${it.score ?? 0}</span>
         <span>·</span>
@@ -165,8 +165,8 @@ function labBlogSection(items) {
     .map(
       (it, idx) => `
     <article class="card" id="article-labs-${idx}">
-      <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a></h3>
-      ${it.description ? `<p class="card-summary">${escapeHtml(it.description)}</p>` : ""}
+      <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a></h3>
+      ${it.description ? `<p class="card-summary"${txAttrs(it.description)}>${escapeHtml(it.description)}</p>` : ""}
       <div class="card-meta">
         <span class="badge">OpenAI</span>
         ${it.pubDate ? `<span class="meta-time">${escapeHtml(it.pubDate.replace(/ \d{2}:\d{2}:\d{2} GMT$/, ""))}</span>` : ""}
@@ -183,8 +183,8 @@ function builderWritingSection(entries) {
     .map(
       (e, idx) => `
     <li class="writing-item" id="article-writing-${idx}">
-      <a class="writing-title" href="${escapeHtml(e.link)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>
-      ${e.summary ? `<p class="writing-summary">${escapeHtml(e.summary)}</p>` : ""}
+      <a class="writing-title" href="${escapeHtml(e.link)}" target="_blank" rel="noopener"${txAttrs(e.title)}>${escapeHtml(e.title)}</a>
+      ${e.summary ? `<p class="writing-summary"${txAttrs(e.summary)}>${escapeHtml(e.summary)}</p>` : ""}
       <div class="writing-meta">
         <span>Simon Willison</span>
         ${e.updated ? `<span>· ${escapeHtml(shortDate(e.updated))}</span>` : ""}
@@ -197,14 +197,15 @@ function builderWritingSection(entries) {
 
 function followBuildersSection(xItems, podItems, blogItems) {
   const renderTweet = (t, idx) => {
-    const text = (t.text || "").slice(0, 240) + (t.text?.length > 240 ? "…" : "");
+    const fullText = t.text || "";
+    const text = fullText.slice(0, 240) + (fullText.length > 240 ? "…" : "");
     return `
       <li class="builder-item" id="article-builders-x-${idx}">
         <div class="builder-meta-top">
           <strong>${escapeHtml(t.author || "")}</strong>
           ${t.handle ? `<span class="muted">@${escapeHtml(t.handle)}</span>` : ""}
         </div>
-        <p class="builder-text">${escapeHtml(text)}</p>
+        <p class="builder-text"${txAttrs(fullText)}>${escapeHtml(text)}</p>
         <div class="builder-meta">
           ${typeof t.likes === "number" ? `<span>♥ ${t.likes}</span>` : ""}
           ${typeof t.retweets === "number" ? `<span>↻ ${t.retweets}</span>` : ""}
@@ -216,7 +217,7 @@ function followBuildersSection(xItems, podItems, blogItems) {
 
   const renderPostOrEpisode = (item, kind, idx) => `
     <li class="builder-item" id="article-builders-${kind === "podcast" ? "pod" : "blog"}-${idx}">
-      <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">${escapeHtml(item.title || "(untitled)")}</a>
+      <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener"${txAttrs(item.title || "")}>${escapeHtml(item.title || "(untitled)")}</a>
       <div class="builder-meta">
         ${item.name ? `<span>${escapeHtml(item.name)}</span>` : ""}
         ${item.publishedAt ? `<span> · ${escapeHtml(item.publishedAt.slice(0, 10))}</span>` : ""}
@@ -832,14 +833,34 @@ const THEME_TOGGLE_SCRIPT = `
   })();
 `;
 
-// Language switch — runs BEFORE the audio player script so the latter
-// reads the freshly-set active language.
+// Language switch — also swaps every translatable text node's content
+// via data-tr-en / data-tr-zh / data-orig attributes.
 const LANG_SWITCH_SCRIPT = `
   (function() {
+    function applyTextFor(lang) {
+      var sel = '[data-orig]';
+      document.querySelectorAll(sel).forEach(function(el) {
+        var orig = el.getAttribute('data-orig');
+        var en = el.getAttribute('data-tr-en');
+        var zh = el.getAttribute('data-tr-zh');
+        var newText = orig;
+        if (lang === 'en' && en) newText = en;
+        else if (lang === 'zh' && zh) newText = zh;
+        // Preserve nested elements (e.g. <strong> inside) only when text matches;
+        // if textContent is non-trivial child, we replace it directly.
+        el.textContent = newText;
+      });
+    }
+
     var saved = 'mix';
     try { saved = localStorage.getItem('digest-lang') || 'mix'; } catch(e) {}
     if (['mix','en','zh'].indexOf(saved) === -1) saved = 'mix';
     document.documentElement.setAttribute('data-lang', saved);
+    if (saved !== 'mix') {
+      // Apply on first paint (data-orig already holds original text)
+      window.addEventListener('DOMContentLoaded', function() { applyTextFor(saved); });
+    }
+
     var btns = document.querySelectorAll('.lang-switch button');
     btns.forEach(function(b) {
       b.setAttribute('aria-pressed', b.dataset.lang === saved ? 'true' : 'false');
@@ -850,7 +871,7 @@ const LANG_SWITCH_SCRIPT = `
         btns.forEach(function(other) {
           other.setAttribute('aria-pressed', other.dataset.lang === newLang ? 'true' : 'false');
         });
-        // Notify the audio player to swap track + cues
+        applyTextFor(newLang);
         document.dispatchEvent(new CustomEvent('digest-lang-change', { detail: { lang: newLang } }));
       });
     });
@@ -1443,6 +1464,25 @@ const audioTracks = {
   en: { src: "digest-en.mp3", available: existsSync(join(SITE_DIR, "digest-en.mp3")) },
   zh: { src: "digest-zh.mp3", available: existsSync(join(SITE_DIR, "digest-zh.mp3")) },
 };
+
+// Content translations for the visible page (pre-translated at build
+// time by generate-audio.py). Each key is the original source text;
+// the value is { en?: "...", zh?: "..." } with whichever translations
+// are needed (a Chinese item only has 'en', an English item only 'zh').
+const contentTranslations = await tryReadCues("content-translations.json") || {};
+
+function txAttrs(text) {
+  // Returns HTML attributes embedding translations for the given text.
+  // The visible textContent stays in the original language; JS swaps it
+  // on language change.
+  if (text == null || text === "") return "";
+  const entry = contentTranslations[String(text).trim()];
+  if (!entry) return "";
+  const a = [`data-orig="${escapeHtml(text)}"`];
+  if (entry.en) a.push(`data-tr-en="${escapeHtml(entry.en)}"`);
+  if (entry.zh) a.push(`data-tr-zh="${escapeHtml(entry.zh)}"`);
+  return a.length > 1 ? " " + a.join(" ") : "";
+}
 
 const pageHtml = await renderPage({
   date: today,

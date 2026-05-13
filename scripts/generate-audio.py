@@ -512,9 +512,99 @@ def chunk_text(text: str, max_chars: int = MAX_TTS_CHARS) -> list[str]:
 
 
 
+def collect_and_translate_ui_strings() -> dict:
+    """Pre-translate every UI-visible string so the page can swap content
+    on language change. Writes docs/content-translations.json keyed by
+    the original text; each entry has {en?, zh?} with the language(s)
+    that needed a translation. Self-language entries are omitted.
+    Reuses the on-disk translation cache so unchanged content is free."""
+    strings: set[str] = set()
+
+    def add(item: dict | None, *keys: str):
+        if not item:
+            return
+        for k in keys:
+            v = item.get(k)
+            if isinstance(v, str) and v.strip():
+                strings.add(v.strip())
+
+    # AIHOT categories
+    for fname in (
+        "aihot-ai-models.json", "aihot-ai-products.json",
+        "aihot-industry.json", "aihot-paper.json",
+    ):
+        data = load(fname) or {}
+        for it in data.get("items", []) or []:
+            add(it, "title", "summary")
+
+    # OpenAI lab posts
+    oai = load("openai-blog.json") or {}
+    for it in oai.get("items", []) or []:
+        add(it, "title", "description")
+
+    # Simon Willison
+    sw = load("simon-willison.json") or {}
+    for e in sw.get("entries", []) or []:
+        add(e, "title", "summary")
+
+    # GitHub trending
+    gh = load("github-trending.json") or {}
+    for r in gh.get("repos", []) or []:
+        add(r, "description")
+
+    # HN top
+    hn = load("hn-top.json") or {}
+    for it in hn.get("items", []) or []:
+        add(it, "title")
+
+    # Follow Builders X tweets
+    xfeed = load("follow-builders-x.json") or {}
+    for author in xfeed.get("x", []) or []:
+        for t in author.get("tweets", []) or []:
+            add(t, "text")
+
+    # FB podcasts + blogs
+    pfeed = load("follow-builders-podcasts.json") or {}
+    for ep in pfeed.get("podcasts", []) or []:
+        add(ep, "title")
+    bfeed = load("follow-builders-blogs.json") or {}
+    for b in bfeed.get("blogs", []) or []:
+        add(b, "title")
+
+    print(f"[i18n] Translating {len(strings)} unique UI strings...")
+    out: dict[str, dict[str, str]] = {}
+    for i, s in enumerate(sorted(strings)):
+        entry = {}
+        if is_chinese(s):
+            t = translate(s, "en")
+            if t and t != s:
+                entry["en"] = t
+        else:
+            t = translate(s, "zh")
+            if t and t != s:
+                entry["zh"] = t
+        if entry:
+            out[s] = entry
+        if (i + 1) % 25 == 0:
+            print(f"[i18n] ... {i + 1}/{len(strings)}")
+
+    cpath = SITE / "content-translations.json"
+    cpath.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"[i18n] wrote {cpath} ({len(out)} entries)")
+    return out
+
+
 def main() -> int:
     manifest = load("manifest.json") or {}
     date_utc = manifest.get("date_utc") or "today"
+
+    # Pre-translate every UI-visible string so the page can language-swap.
+    # (Audio segments translate as needed during render_track too; this
+    # also primes the shared cache so audio gen is fast.)
+    try:
+        collect_and_translate_ui_strings()
+    except Exception as e:
+        print(f"[warn] UI translation pass failed: {e}", file=sys.stderr)
 
     # Each entry: (anchor or None, text, voice). One TTS call per entry.
     segments: list[tuple[str | None, str, str]] = []
