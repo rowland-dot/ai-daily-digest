@@ -1186,6 +1186,24 @@ const AUDIO_PLAYER_SCRIPT = `
           audio.currentTime = cue.start + 0.05;
           fab.setAttribute('data-expanded', 'true');
           lastUserScrollAt = Date.now();
+          // Apply the now-playing highlight immediately on click so the
+          // user gets instant feedback. maybeScroll's 8-second
+          // input-lockout would otherwise delay this until the next
+          // automatic refresh. Mirror what maybeScroll() does on a
+          // genuine cue transition.
+          document.querySelectorAll('.now-playing').forEach(function(n) {
+            n.classList.remove('now-playing');
+          });
+          el.classList.add('now-playing');
+          var section = el.closest('section.block');
+          if (section && section.id) {
+            document.querySelectorAll('nav.toc a.toc-active').forEach(function(n) {
+              n.classList.remove('toc-active');
+            });
+            var link = document.querySelector('nav.toc a[href="#' + section.id + '"]');
+            if (link) link.classList.add('toc-active');
+          }
+          lastAnchor = el.id;
           if (audio.paused) tryPlay();
         });
         el.appendChild(btn);
