@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T17:05:06.878Z",
+  "fetched_at": "2026-05-13T17:27:59.951Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
@@ -73,18 +73,19 @@
       "summary": "We just shipped DFlash and PFlash support for the AMD Ryzen AI MAX+ 395 iGPU (gfx1151, Strix Halo, 128 GiB unified memory). Same Luce DFlash stack from the RTX 3090 post a couple weeks back , now running on the consumer AMD APU class."
     },
     {
-      "title": "Agentic harness for theoretical physics research",
-      "author": "lewtun",
-      "updated": "2026-05-12T17:23:51+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tb8d57/agentic_harness_for_theoretical_physics_research/",
-      "summary": "Hi everyone, at Hugging Face we've been developing agentic harnesses for various domains and today we're releasing physics-intern to tackle research-level problems in theoretical physics."
-    },
-    {
       "title": "llama.cpp docker images to run MTP models",
       "author": "havenoammo",
       "updated": "2026-05-13T14:20:07+00:00",
       "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc132c/llamacpp_docker_images_to_run_mtp_models/",
       "summary": "There have been many improvements to the MTP pull request and the llama. cpp main branch, such as image support and various bug fixes. I recently made a new build for my local machine, but keeping guides up to date is an issue, so I built Docker images to make running them easier. If you are already using llama."
+    },
+    {
+      "title": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture",
+      "author": "pmttyji",
+      "updated": "2026-05-13T16:08:45+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tc47q0/sensenovasensenovau1a3bmot_hugging_face/",
+      "summary": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification .",
+      "sourceLabel": "sensenova/SenseNova-U1-A3B-MoT · Hugging Face"
     },
     {
       "title": "I built Derpy Turtle: The Kokoro Trainer, a GUI for training better Kokoro voices with RVC",
