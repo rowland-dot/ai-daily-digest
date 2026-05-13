@@ -49,12 +49,22 @@ Per article, per routine run:
 
 ## Volume
 
-- ~70 articles in scope per typical day (16 each from OpenAI + Anthropic news + Anthropic engineering + Simon + r/LocalLLaMA, with some sources having fewer)
-- Per article: ~10k chars body + ~70 EN words output + ~140 ZH chars output
-- Total per routine run:
-  - Input: ~175k tokens
-  - Output: ~20k tokens
-  - Comfortably within Opus 4.7 routine session budget
+Per-source candidate caps + filters (amended 2026-05-14):
+
+| Source | Cap | Pre-routine filter |
+|---|---|---|
+| OpenAI blog | OTHER_CAP (16) | 24h date window |
+| Anthropic news | OTHER_CAP (16) | 24h date window |
+| Anthropic engineering | OTHER_CAP (16) | 24h date window |
+| Simon Willison | **12** | 24h date window (routine acts as AI-relevance gate; non-AI Simon posts get omitted) |
+| r/LocalLLaMA | **12** | `score≥100 AND (body≥200 chars OR comments≥30)` — JSON-fetched; routine acts as quality gate to drop hardware-anxiety / meme content |
+
+Typical day estimate after filters: ~40 articles in scope. Per article: ~10k chars body + ~70 EN words output + ~140 ZH chars output.
+
+Total per routine run:
+- Input: ~100k tokens
+- Output: ~12k tokens
+- Comfortably within Opus 4.7 routine session budget
 
 ## Data flow
 
@@ -149,6 +159,41 @@ Same lookup. For each article segment:
 
 No change to TTS voices, segment-anchor pattern, or cache-key shape.
 
+## Routine quality gate (Phase 5)
+
+The routine doubles as a relevance/quality gate for the noisy in-scope
+sources. The prompt MUST include drop-rules so the routine OMITS
+summaries for posts it judges low-value. The renderer drops in-scope
+items that have no Claude summary (after Phase 5 lands), so omission
+becomes the page-side filter.
+
+Drop rules for r/LocalLLaMA (omit summary if any apply):
+- Hardware-anxiety / build-cost / GPU-price rant with no technical content
+- Single-user support thread ("X just stops working", "why won't Y load")
+- Meme / joke / image-only post
+- Low-effort self-promotion with no substance
+- Duplicate of an item already covered in the HuggingFace or GitHub
+  Trending sections (model card share where the model is on HF)
+
+Keep rules for r/LocalLLaMA:
+- Open-source model releases / weight drops
+- Quantization / runtime / hardware benchmark writeups
+- Fine-tuning / training techniques
+- Paper analyses with substantive commentary
+- Tool launches (training UIs, runtimes, debugging utilities)
+- Technical deep-dives on local inference
+
+Drop rules for Simon Willison (omit summary if any apply):
+- Posts not about AI / LLMs / agents / ML tooling (e.g. pure Datasette
+  releases, personal life updates, unrelated tech links)
+- Pure quote posts with no substantive commentary
+- Daily link roundups without standout AI items
+
+Keep rules for Simon Willison:
+- LLM / agent capability commentary
+- AI tool / prompt-engineering posts
+- Quote posts where Simon adds AI-relevant analysis
+
 ## Routine prompt requirements
 
 The new prompt replaces the current Editor's Cut prompt entirely.
@@ -212,14 +257,17 @@ Before building Phase 1, remove Editor's Cut entirely:
 
 | Phase | Work | Owner |
 |---|---|---|
-| 0 | Cleanup Editor's Cut | code (me) |
-| 1a | New scrapers: Anthropic news + engineering page → `data/anthropic-news.json`, `data/anthropic-engineering.json` | code (me) |
-| 1b | Merge Anthropic + OpenAI items into the Lab announcements section render | code (me) |
-| 1c | `fetch-sources.mjs` emits `data/article-bodies.json` for ALL in-scope URLs (5 sources) | code (me) |
-| 2 | Routine prompt rewrite | user (UI paste) |
-| 3 | Renderer + audio integration: read `claude-summaries.json`, prefer Claude text | code (me) |
-| 4 | First end-to-end test fire; verify file lands; eyeball page output | both |
-| 5 | Iterate prompt based on real summary quality | both |
+| 0 | Cleanup Editor's Cut | code (me) — ✅ done |
+| 1a | New scrapers: Anthropic news + engineering page | code (me) — ✅ done |
+| 1b | Merge Anthropic + OpenAI items into the Lab announcements section render | code (me) — ✅ done |
+| 1c | `fetch-sources.mjs` emits `data/article-bodies.json` for all in-scope URLs | code (me) — ✅ done |
+| 1d | r/LocalLLaMA: switch to JSON fetcher; cap 12; filter `score≥100 AND (body≥200 OR comments≥30)` | code (me) |
+| 1e | Simon Willison: cap reduced to 12 | code (me) |
+| 2 | Routine prompt rewrite (per-article summarizer + drop-rules for r/LocalLLaMA / Simon) | user (UI paste) |
+| 3 | Renderer + audio integration: read `claude-summaries.json`, prefer Claude text | code (me) — ✅ done |
+| 4 | First end-to-end test fire; verify file lands; eyeball page output | both — ✅ done |
+| 5 | Renderer drops in-scope items without Claude summary (omission = quality gate) | code (me) |
+| 6 | Iterate prompt based on real summary quality | both |
 
 ## Fallback policy
 
