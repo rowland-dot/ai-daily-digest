@@ -269,39 +269,68 @@ async function fetchJinaSummary(url) {
     });
     if (!res.ok) return "";
     const text = await res.text();
-    // Jina Reader prefixes a brief header (Title:, URL Source:, etc.)
-    // then the article body. Skip lines that look like metadata,
-    // headings, or markdown link-only lines; take the first prose
-    // paragraph long enough to be useful.
-    const lines = text.split("\n");
-    let body = [];
-    let inBody = false;
-    for (const ln of lines) {
-      const t = ln.trim();
-      if (!inBody) {
-        // Metadata block ends after the first blank line following "Markdown Content:"
-        if (t === "Markdown Content:" || t.startsWith("===") || t.startsWith("Published Time:")) {
-          inBody = true;
-          continue;
-        }
-        if (t.startsWith("Title:") || t.startsWith("URL Source:") || t.startsWith("Description:")) {
-          continue;
-        }
-      }
-      body.push(ln);
-    }
-    if (body.length === 0) body = lines; // fallback if header detection failed
-    // Find first paragraph with >= 80 chars of prose
-    const paragraphs = body.join("\n").split(/\n\s*\n/);
-    for (const p of paragraphs) {
-      const stripped = p
-        .replace(/^#{1,6}\s+/gm, "")
-        .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .replace(/[*_`]/g, "")
+
+    // Jina Reader output starts with metadata (Title:, URL Source:, etc.)
+    // then "Markdown Content:" then the article body in markdown.
+    const split = text.split(/\nMarkdown Content:\n/);
+    const body = (split[1] || text).trim();
+    if (!body) return "";
+
+    // Split into paragraphs, score each, return the first "substantive
+    // prose" paragraph.
+    const paragraphs = body.split(/\n\s*\n/);
+    const isProse = (line) => {
+      const t = line.trim();
+      if (!t) return false;
+      // Skip headings, list items, images, blockquotes, code blocks,
+      // and lines that are entirely a markdown link.
+      if (/^#{1,6}\s/.test(t)) return false;
+      if (/^[*+-]\s/.test(t)) return false;
+      if (/^>\s/.test(t)) return false;
+      if (/^!\[.*\]\(.*\)$/.test(t)) return false;
+      if (/^```/.test(t)) return false;
+      if (/^\[.*\]\(.*\)\s*$/.test(t)) return false; // bare link
+      return true;
+    };
+
+    const clean = (s) =>
+      s
+        .replace(/!\[[^\]]*\]\([^)]*\)/g, "")           // images
+        .replace(/\[\]\([^)]*\)/g, "")                  // EMPTY-text links (nav/share icons)
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")        // links -> text
+        .replace(/^#{1,6}\s+/gm, "")                    // heading markers
+        .replace(/^>\s+/gm, "")                         // blockquote markers
+        .replace(/[*_`]/g, "")                          // emphasis/code
         .replace(/\s+/g, " ")
         .trim();
-      if (stripped.length >= 80 && stripped.length <= 600) {
+
+    const looksLikeProse = (s) => {
+      // Heuristics — real article prose has multiple words and at least
+      // one sentence-ending punctuation followed by a space. Nav/share
+      // line-ups don't.
+      if (s.split(/\s+/).length < 12) return false;
+      if (!/[.!?。！？]\s/.test(s)) return false;
+      // Reject if dominated by URL fragments (lots of "http", "://", "&")
+      const urlChars = (s.match(/(https?:\/\/|\.com|\.io|\.org|\?|&|=)/g) || []).length;
+      if (urlChars > 3 && urlChars * 5 > s.length) return false;
+      return true;
+    };
+
+    // Pass 1: prose-detected paragraph
+    for (const p of paragraphs) {
+      const lines = p.split("\n").filter(isProse);
+      if (!lines.length) continue;
+      const stripped = clean(lines.join(" "));
+      if (stripped.length >= 80 && stripped.length <= 1200 && looksLikeProse(stripped)) {
+        return stripped.slice(0, 400);
+      }
+    }
+    // Pass 2: relaxed — at least 60 chars, no nav-link spam
+    for (const p of paragraphs) {
+      const lines = p.split("\n").filter(isProse);
+      if (!lines.length) continue;
+      const stripped = clean(lines.join(" "));
+      if (stripped.length >= 60 && stripped.length <= 1200 && !stripped.startsWith("[")) {
         return stripped.slice(0, 400);
       }
     }
