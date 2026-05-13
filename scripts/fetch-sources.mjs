@@ -543,28 +543,48 @@ function _slugToTitle(slug) {
 
 // Generic Anthropic index-page scraper. Anthropic has no RSS feed for
 // news or engineering — both index pages are React-rendered, but the
-// article hrefs ARE present in the initial HTML payload. Pulls /<root>/
-// <slug> URLs, dedupes, then enriches each via the same Jina essence
-// pipeline OpenAI lab posts use.
+// article hrefs AND a sibling <time> element containing a human-formatted
+// publish date ARE present in the initial HTML payload. Pulls
+// /<root>/<slug> URLs + their dates, dedupes, then enriches each via
+// the same Jina essence pipeline OpenAI lab posts use.
 async function anthropicIndex(rootPath, limit, sourceLabel) {
   // rootPath is "news" or "engineering"
   const html = await fetchText(`https://www.anthropic.com/${rootPath}`);
-  const slugRe = new RegExp(`/${rootPath}/[a-z][a-z0-9-]{3,}`, "g");
-  // Dedupe while preserving page order (top of page = newest in practice)
+  // Match each href + the next "Mon DD, YYYY" date text within ~800 chars
+  // after it. News uses <time>...</time>, engineering uses <div
+  // class="...__date">...</div> — matching the date text directly avoids
+  // the wrapping-tag difference.
+  const pairRe = new RegExp(
+    `href="(/${rootPath}/[a-z][a-z0-9-]{3,})"[\\s\\S]{0,800}?` +
+      `((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+\\d{1,2},?\\s+20\\d{2})`,
+    "g",
+  );
+  // Dedupe while preserving page order (top of page = newest in practice).
   const seen = new Set();
-  const slugs = [];
-  for (const m of html.match(slugRe) || []) {
-    if (seen.has(m)) continue;
-    seen.add(m);
-    slugs.push(m);
-    if (slugs.length >= limit) break;
+  const found = [];
+  for (const m of html.matchAll(pairRe)) {
+    const slug = m[1];
+    if (seen.has(slug)) continue;
+    seen.add(slug);
+    found.push({ slug, dateText: (m[2] || "").trim() });
+    if (found.length >= limit) break;
   }
-  const items = slugs.map((slug) => ({
-    title: _slugToTitle(slug),
-    link: `https://www.anthropic.com${slug}`,
-    pubDate: "",   // Anthropic's index doesn't expose pub date in HTML; left empty
-    description: "",
-  }));
+  const items = found.map(({ slug, dateText }) => {
+    // "May 13, 2026" → ISO via Date.parse (timezoneless, treated as local
+    // midnight; close enough for 24h-window filtering at render time).
+    let pubDate = "";
+    if (dateText) {
+      const t = Date.parse(dateText);
+      if (!isNaN(t)) pubDate = new Date(t).toISOString();
+    }
+    return {
+      title: _slugToTitle(slug),
+      link: `https://www.anthropic.com${slug}`,
+      pubDate,
+      pubDateText: dateText,
+      description: "",
+    };
+  });
   // Fill .summary via Jina essence engine (same pipeline as OpenAI blog).
   await enrichItemsWithEssence(items, "link");
   return { fetched_at: new Date().toISOString(), source: sourceLabel, items };

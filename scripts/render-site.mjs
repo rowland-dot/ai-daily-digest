@@ -1342,10 +1342,12 @@ async function renderPage({
   const labOpenai = filterRecent(openaiBlog?.items || [], "pubDate")
     .slice(0, OTHER_CAP)
     .map((it) => ({ ...it, source: "OpenAI" }));
-  const labAnthropicNews = (anthropicNews?.items || [])
+  // Anthropic items DO have pubDate (scraped from the index page's <time>
+  // element). Apply the same 24h recency filter we use for OpenAI/Simon.
+  const labAnthropicNews = filterRecent(anthropicNews?.items || [], "pubDate")
     .slice(0, OTHER_CAP)
     .map((it) => ({ ...it, source: "Anthropic news" }));
-  const labAnthropicEng = (anthropicEngineering?.items || [])
+  const labAnthropicEng = filterRecent(anthropicEngineering?.items || [], "pubDate")
     .slice(0, OTHER_CAP)
     .map((it) => ({ ...it, source: "Anthropic engineering" }));
   const labItems = [...labOpenai, ...labAnthropicNews, ...labAnthropicEng];
