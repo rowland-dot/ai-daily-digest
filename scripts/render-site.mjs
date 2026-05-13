@@ -636,24 +636,6 @@ const PAGE_CSS = `
     transform: translateY(0);
   }
   .seek-hint:hover { background: var(--accent-strong, var(--accent)); filter: brightness(1.08); }
-  .seek-hint-icon { display: inline-block; }
-  .seek-hint-text { margin-left: 4px; }
-
-  /* Mobile / touch: show a compact, low-opacity play-icon-only button
-     so users can still seek without the label dominating every card. */
-  @media (hover: none) and (pointer: coarse) {
-    .audio-seekable .seek-hint {
-      opacity: 0.55;
-      transform: translateY(0);
-      padding: 4px 7px;
-      font-size: 13px;
-    }
-    .audio-seekable .seek-hint:active,
-    .audio-seekable .seek-hint:focus-visible {
-      opacity: 1;
-    }
-    .seek-hint-text { display: none; }
-  }
 
   /* Floating mini-player (bottom-right).
      Each element has a fixed pixel width per breakpoint so nothing
@@ -1187,8 +1169,7 @@ const AUDIO_PLAYER_SCRIPT = `
         var btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'seek-hint';
-        btn.setAttribute('aria-label', 'Listen from here');
-        btn.innerHTML = '<span class="seek-hint-icon" aria-hidden="true">▶</span><span class="seek-hint-text">Listen from here</span>';
+        btn.textContent = '▶ Listen from here';
         btn.addEventListener('click', function(e) {
           e.stopPropagation();
           audio.currentTime = cue.start + 0.05;
