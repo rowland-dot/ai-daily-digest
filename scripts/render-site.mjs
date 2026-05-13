@@ -602,11 +602,11 @@ const PAGE_CSS = `
   .empty { color: var(--text-muted); font-style: italic; }
 
   /* Audio "now playing" highlight — applied to whichever article element
-     matches the current cue. Subtle accent ring + slight surface bump. */
+     matches the current cue. Recolors the card's existing border to the
+     accent colour rather than drawing a separate outline ring. */
   .now-playing {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
-    transition: outline 0.2s ease;
+    border-color: var(--accent) !important;
+    transition: border-color 0.2s ease;
     scroll-margin-top: 70px;
   }
   @media (max-width: 600px) {
