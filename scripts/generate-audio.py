@@ -66,9 +66,91 @@ def is_chinese(text: str) -> bool:
     return any("一" <= c <= "鿿" for c in (text or ""))
 
 
+# Product names, brand names, and well-known tech jargon that should
+# stay in English regardless of translation target. Sorted longest-first
+# so the regex matches "Hugging Face" before "Hugging".
+PRESERVE_TERMS = sorted([
+    # AI labs / model families
+    "OpenAI", "Anthropic", "DeepMind", "Mistral", "Cohere", "Perplexity",
+    "Hugging Face", "HuggingFace", "Stability AI", "Together AI", "Groq",
+    "Runway", "ElevenLabs", "Replicate", "Modal Labs",
+    "DeepSeek", "Qwen", "ChatGLM", "MiniMax", "Kimi", "Moonshot",
+    "01.AI", "Yi", "Baichuan", "InternLM", "Skywork",
+    # Models
+    "ChatGPT", "GPT-5", "GPT-4o", "GPT-4", "GPT-3", "GPT",
+    "Claude Opus", "Claude Sonnet", "Claude Haiku", "Claude",
+    "Sonnet", "Opus", "Haiku",
+    "Gemini Pro", "Gemini", "Llama", "Mixtral",
+    "Whisper", "DALL·E", "DALL-E", "Sora",
+    "FLUX", "Stable Diffusion", "Midjourney", "Veo", "Imagen",
+    "o3", "o1",
+    # Tools / IDEs / platforms
+    "Cursor", "Codex", "Copilot", "GitHub Copilot",
+    "VSCode", "VS Code", "JetBrains", "IntelliJ", "PyCharm", "Xcode",
+    "Bolt", "Lovable", "Replit", "Cline", "Aider", "Continue",
+    "LangChain", "LangGraph", "LlamaIndex", "DSPy", "PydanticAI",
+    "vLLM", "Ollama", "LM Studio",
+    "Obsidian", "Notion", "Roam", "Logseq", "Apple Notes",
+    "Slack", "Discord", "Telegram", "Signal", "WhatsApp", "WeChat", "LINE",
+    # Companies / platforms
+    "GitHub", "GitLab", "Bitbucket", "Vercel", "Netlify", "Cloudflare",
+    "Stripe", "Square", "PayPal", "Shopify",
+    "Apple", "Microsoft", "Google", "Amazon", "Meta", "Tesla",
+    "Nvidia", "NVIDIA", "AMD", "Intel", "Samsung", "Sony",
+    "Tencent", "Alibaba", "Baidu", "ByteDance", "Xiaomi", "Huawei",
+    "TikTok", "Instagram", "Facebook", "LinkedIn", "Twitter", "X",
+    "Reddit", "Hacker News", "Product Hunt", "Mastodon", "Bluesky", "Threads",
+    "Spotify", "YouTube", "Twitch",
+    "AWS", "Azure", "GCP",
+    # Languages / frameworks
+    "Python", "JavaScript", "TypeScript", "Rust", "Go", "Java", "Swift", "Kotlin",
+    "React", "Next.js", "Vue", "Angular", "Svelte", "SolidJS",
+    "Node.js", "Deno", "Bun",
+    "TensorFlow", "PyTorch", "JAX", "Keras", "scikit-learn",
+    "Docker", "Kubernetes",
+    # Concepts / acronyms commonly written in English even in CN text
+    "LLM", "LLMs", "RAG", "MCP", "API", "SDK", "SaaS", "IDE", "CLI",
+    "RLHF", "DPO", "PPO", "LoRA", "QLoRA", "PEFT", "FSDP", "DDP",
+    "FlashAttention", "RoPE", "MoE", "CoT",
+    "ImageNet", "ArXiv", "arXiv", "Papers with Code",
+    "Common Crawl",
+], key=len, reverse=True)
+
+_PRESERVE_RE = re.compile(
+    r'\b(' + '|'.join(re.escape(t) for t in PRESERVE_TERMS) + r')\b',
+    re.IGNORECASE,
+)
+
+
+def _preserve_terms(text: str):
+    """Replace preserve-list terms with placeholders Google won't translate.
+    Returns (modified_text, placeholder_map)."""
+    placeholders: dict[str, str] = {}
+    counter = [0]
+    def sub(m):
+        i = counter[0]
+        counter[0] += 1
+        # Hex-style placeholder that Google Translate leaves alone in our tests.
+        ph = f"X{i:03d}KEEP"
+        placeholders[ph] = m.group(0)
+        return ph
+    modified = _PRESERVE_RE.sub(sub, text)
+    return modified, placeholders
+
+
+def _restore_terms(text: str, placeholders: dict[str, str]) -> str:
+    out = text
+    for ph, original in placeholders.items():
+        out = out.replace(ph, original)
+    return out
+
+
 def translate(text: str, target_lang: str) -> str:
     """Translate text to target_lang ('en' or 'zh').
     Skips no-op cases (target lang matches source).
+    Preserves product names + tech jargon via the PRESERVE_TERMS glossary
+    so e.g. 'Obsidian' stays as 'Obsidian' instead of being rendered as
+    '黑曜石' in the Chinese track.
     Caches results across runs via data/translation-cache.json.
     Falls back to original text on failure."""
     if not text or not text.strip():
@@ -79,14 +161,22 @@ def translate(text: str, target_lang: str) -> str:
     if target_lang == "zh" and text_has_zh:
         return text
     cache = _load_trans_cache()
-    key = f"{target_lang}::{text}"
+    key = f"v2::{target_lang}::{text}"  # v2 prefix invalidates pre-glossary entries
     if key in cache:
         return cache[key]
     try:
         from deep_translator import GoogleTranslator
         src = "zh-CN" if text_has_zh else "auto"
         tgt = "en" if target_lang == "en" else "zh-CN"
-        translated = GoogleTranslator(source=src, target=tgt).translate(text)
+        # Only apply the preserve-glossary when going INTO Chinese — that's
+        # where over-translation of English product names hurts most.
+        if target_lang == "zh":
+            modified, placeholders = _preserve_terms(text)
+            translated = GoogleTranslator(source=src, target=tgt).translate(modified)
+            if translated:
+                translated = _restore_terms(translated, placeholders)
+        else:
+            translated = GoogleTranslator(source=src, target=tgt).translate(text)
         if translated:
             cache[key] = translated
             return translated
