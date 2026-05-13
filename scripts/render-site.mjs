@@ -192,10 +192,10 @@ function labBlogSection(items) {
   return `<div class="cards">${items
     .map(
       (it, idx) => {
-        // Lab cards may carry .description (OpenAI RSS) or .summary
-        // (Anthropic Jina extract). Prefer description, fall back to
-        // summary.
-        const blurb = it.description || it.summary || "";
+        // Prefer .summary (overlaid Claude TLDR if available, else
+        // Jina-extracted essence) over .description (OpenAI RSS blurb,
+        // usually short and less informative).
+        const blurb = it.summary || it.description || "";
         return `
     <article class="card" id="article-labs-${idx}">
       <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a></h3>
@@ -1595,6 +1595,11 @@ const xFeed = await tryReadJson(join(DATA_DIR, "follow-builders-x.json"));
 const podFeed = await tryReadJson(join(DATA_DIR, "follow-builders-podcasts.json"));
 const blogFeed = await tryReadJson(join(DATA_DIR, "follow-builders-blogs.json"));
 const localLlamaData = await tryReadJson(join(DATA_DIR, "localllama.json"));
+// Claude-generated per-article summaries (EN + ZH). Written by the
+// summarizer routine after each full GHA build. Optional — page
+// degrades gracefully to Jina-extracted summaries when this file is
+// missing or stale.
+const claudeSummaries = (await tryReadJson(join(DATA_DIR, "claude-summaries.json")))?.summaries || {};
 
 let archiveDays = [];
 if (existsSync(DIGESTS_DIR)) {
@@ -1647,6 +1652,34 @@ function txAttrs(text) {
   if (entry.zh) a.push(`data-tr-zh="${escapeHtml(entry.zh)}"`);
   return a.length > 1 ? " " + a.join(" ") : "";
 }
+
+// For each in-scope item: if a Claude-generated EN+ZH summary exists,
+// overwrite the visible summary text with Claude's EN, and stamp the
+// translation table so txAttrs(claude.en) returns Claude's ZH directly
+// (skipping deep-translator for this entry). Items without a Claude
+// summary fall through unchanged.
+function applyClaudeSummaries(items, urlKey, summaryKey = "summary") {
+  if (!items || !items.length) return;
+  for (const it of items) {
+    const url = it[urlKey];
+    if (!url) continue;
+    const claude = claudeSummaries[url];
+    if (!claude || !claude.en) continue;
+    it[summaryKey] = claude.en;
+    // For lab cards which prefer .description, set both so the visible
+    // pick is always the Claude EN.
+    if (summaryKey === "summary" && it.description != null) it.description = claude.en;
+    if (claude.zh) {
+      contentTranslations[claude.en.trim()] = { zh: claude.zh };
+    }
+  }
+}
+
+applyClaudeSummaries(openaiBlogData?.items || [], "link", "summary");
+applyClaudeSummaries(anthropicNewsData?.items || [], "link", "summary");
+applyClaudeSummaries(anthropicEngineeringData?.items || [], "link", "summary");
+applyClaudeSummaries(simonWillisonData?.entries || [], "link", "summary");
+applyClaudeSummaries(localLlamaData?.posts || [], "permalink", "summary");
 
 const pageHtml = await renderPage({
   date: today,

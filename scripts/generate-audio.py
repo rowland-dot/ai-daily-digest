@@ -644,7 +644,13 @@ def collect_and_translate_ui_strings() -> dict:
     # OpenAI lab posts
     oai = load("openai-blog.json") or {}
     for it in oai.get("items", []) or []:
-        add(it, "title", "description")
+        add(it, "title", "description", "summary")
+
+    # Anthropic news + engineering (no RSS; scraped by fetch-sources.mjs)
+    for fname in ("anthropic-news.json", "anthropic-engineering.json"):
+        a = load(fname) or {}
+        for it in a.get("items", []) or []:
+            add(it, "title", "summary")
 
     # Simon Willison
     sw = load("simon-willison.json") or {}
@@ -760,14 +766,48 @@ def main() -> int:
         if items:
             segments.extend(build_aihot_segments(display_label, items, anchor))
 
+    # Claude-generated EN+ZH summaries (when present) take precedence
+    # over Jina extracts for the in-scope sources: OpenAI lab, Simon
+    # Willison, r/LocalLLaMA. The Claude text is stamped onto each
+    # item's `summary`/`description` field and the translation cache
+    # is pre-populated with Claude pairs so the ZH track narration
+    # skips deep-translator for these articles.
+    claude_path = DATA / "claude-summaries.json"
+    claude_summaries = {}
+    if claude_path.exists():
+        try:
+            claude_summaries = (json.loads(claude_path.read_text(encoding="utf-8")) or {}).get("summaries") or {}
+        except Exception as e:
+            print(f"[warn] could not read claude-summaries.json: {e}", file=sys.stderr)
+    trans_cache = _load_trans_cache()
+    overlay_count = 0
+
+    def apply_claude(items, url_key, summary_keys=("summary",)):
+        nonlocal overlay_count
+        for it in items or []:
+            url = it.get(url_key)
+            if not url:
+                continue
+            c = claude_summaries.get(url)
+            if not c or not c.get("en"):
+                continue
+            for k in summary_keys:
+                it[k] = c["en"]
+            if c.get("zh"):
+                trans_cache[f"v4::zh::{c['en']}"] = c["zh"]
+                trans_cache[f"v4::en::{c['zh']}"] = c["en"]
+            overlay_count += 1
+
     oai = load("openai-blog.json")
     if oai and oai.get("items"):
+        apply_claude(oai["items"], "link", ("summary", "description"))
         items = filter_recent(oai["items"], "pubDate")
         if items:
             segments.extend(build_lab_segments(items))
 
     sw = load("simon-willison.json")
     if sw and sw.get("entries"):
+        apply_claude(sw["entries"], "link")
         entries = filter_recent(sw["entries"], "updated")
         if entries:
             segments.extend(build_simon_segments(entries))
@@ -790,7 +830,11 @@ def main() -> int:
 
     llama = load("localllama.json")
     if llama and llama.get("posts"):
+        apply_claude(llama["posts"], "permalink")
         segments.extend(build_llama_segments(llama["posts"]))
+
+    if overlay_count:
+        print(f"[claude-overlay] {overlay_count} per-article summaries replaced by Claude EN+ZH")
 
     segments.append((
         None,
