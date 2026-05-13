@@ -16,15 +16,20 @@ permissions:
   pages: write
   id-token: write
 
+# Latest push wins. If a previous build is mid-audio-regen and you push
+# again, the older build is cancelled so the new commit reaches users
+# fast instead of queueing behind a 12-min audio job.
 concurrency:
   group: fetch-sources
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # HEAD~1 needed for diff-based mode detection
 
       - uses: actions/setup-node@v4
         with:
@@ -34,21 +39,82 @@ jobs:
         with:
           python-version: "3.11"
 
-      # The translation / essence caches grow over time and benefit from
-      # being preserved across runs regardless of which articles surface
-      # today. Restore the most recent one BEFORE fetching so fetch can
-      # reuse already-summarised URLs.
-      - name: Restore helpers cache (translation + essence)
+      # ---------- Pipeline mode detection ----------
+      # Decides whether this build needs the slow path (fetch upstream
+      # feeds + regenerate audio) or can use cached state and just
+      # re-render. Code-only pushes get the fast path. Anything that
+      # touches the data fetch / audio script — and the daily cron —
+      # gets the full path.
+      - name: Decide pipeline mode
+        id: mode
+        run: |
+          ev="${{ github.event_name }}"
+          if [ "$ev" = "schedule" ] || [ "$ev" = "workflow_dispatch" ]; then
+            mode=full; reason="event=$ev"
+          elif git diff --name-only HEAD~1 HEAD 2>/dev/null | \
+               grep -qE '^scripts/fetch-sources\.mjs|^scripts/generate-audio\.py|^\.github/workflows/'; then
+            mode=full; reason="touched fetch/audio/workflow file"
+          else
+            mode=fast; reason="code-only push"
+          fi
+          echo "value=$mode" >> $GITHUB_OUTPUT
+          echo "Pipeline mode: $mode ($reason)"
+
+      # ---------- Pipeline state cache (data + audio + cues) ----------
+      # In fast mode this restores the last full run's data/*.json,
+      # MP3s, and cue files so render can run immediately. In full
+      # mode it still restores translation-cache.json etc. for reuse.
+      - name: Restore pipeline state
+        id: state-cache
         uses: actions/cache@v4
         with:
           path: |
+            data/aihot-daily.json
+            data/aihot-ai-models.json
+            data/aihot-ai-products.json
+            data/aihot-industry.json
+            data/aihot-paper.json
+            data/openai-blog.json
+            data/simon-willison.json
+            data/github-trending.json
+            data/hf-popular.json
+            data/follow-builders-x.json
+            data/follow-builders-podcasts.json
+            data/follow-builders-blogs.json
+            data/localllama.json
+            data/manifest.json
             data/translation-cache.json
             data/article-essence-cache.json
-          key: helpers-${{ github.run_id }}
+            docs/digest.mp3
+            docs/digest-en.mp3
+            docs/digest-zh.mp3
+            docs/audio-cues.json
+            docs/audio-cues-en.json
+            docs/audio-cues-zh.json
+            docs/content-translations.json
+          key: pipeline-state-${{ github.run_id }}
           restore-keys: |
-            helpers-
+            pipeline-state-
 
-      - name: Fetch upstream sources (includes Follow Builders feeds)
+      # If we wanted fast mode but cached state is missing (cold cache,
+      # first run after key bump, etc.) force full mode so the build
+      # still produces a valid page.
+      - name: Fallback to full mode if cache empty
+        id: mode-final
+        run: |
+          want="${{ steps.mode.outputs.value }}"
+          if [ "$want" = "fast" ] && [ ! -f data/manifest.json -o ! -f docs/digest.mp3 ]; then
+            echo "Cached state missing — falling back to full mode"
+            echo "value=full" >> $GITHUB_OUTPUT
+          else
+            echo "value=$want" >> $GITHUB_OUTPUT
+          fi
+          echo "Final mode: $(cat $GITHUB_OUTPUT | grep ^value= | tail -1)"
+
+      # ---------- Full-mode steps (fetch + audio) ----------
+
+      - name: Fetch upstream sources
+        if: steps.mode-final.outputs.value == 'full'
         run: node scripts/fetch-sources.mjs
 
       - name: Compute today's UTC date
@@ -57,13 +123,9 @@ jobs:
 
       # Hash data/*.json content (excluding helper caches and volatile
       # `fetched_at` timestamps) so the audio cache key reflects the
-      # actual article set. When the data hash matches a previous run,
-      # the cached audio is valid for THIS data — page + audio stay in
-      # lockstep. When data changes (e.g. AIHOT publishes a new post
-      # mid-day), the cache misses and audio regenerates against the
-      # fresh data. This fixes the "audio cue points at the wrong card
-      # after a new article appears" misalignment.
+      # actual article set. Same data → same hash → audio cache hit.
       - name: Hash fetched data (audio cache invalidator)
+        if: steps.mode-final.outputs.value == 'full'
         id: data-hash
         run: |
           node -e '
@@ -76,8 +138,6 @@ jobs:
             for (const f of files) {
               const raw = fs.readFileSync(path.join("data", f), "utf8");
               const obj = JSON.parse(raw);
-              // Strip volatile fields that change every run but do not
-              // affect the audio (timestamps, per-source elapsed-ms).
               if (obj && typeof obj === "object") {
                 delete obj.fetched_at;
                 delete obj.date_utc;
@@ -93,6 +153,7 @@ jobs:
           echo "Data hash: $DATA_HASH"
 
       - name: Restore audio cache (keyed on data content)
+        if: steps.mode-final.outputs.value == 'full'
         id: audio-cache
         uses: actions/cache@v4
         with:
@@ -107,41 +168,39 @@ jobs:
           key: audio-v15-${{ steps.data-hash.outputs.hash }}
 
       - name: Install ffmpeg (only if regenerating audio)
-        if: steps.audio-cache.outputs.cache-hit != 'true'
+        if: steps.mode-final.outputs.value == 'full' && steps.audio-cache.outputs.cache-hit != 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           ffmpeg -version | head -1
 
-      - name: Install edge-tts + deep-translator (always — translation needs it)
+      - name: Install edge-tts + deep-translator
+        if: steps.mode-final.outputs.value == 'full'
         run: pip install --quiet edge-tts deep-translator
 
       - name: Generate narration MP3 + refresh translations
+        if: steps.mode-final.outputs.value == 'full'
         run: |
           mkdir -p docs
           python scripts/generate-audio.py
         continue-on-error: true
 
-      - name: Publish data/ to Pages (for human-readable browser view)
+      # ---------- Always: publish data + render + deploy ----------
+
+      - name: Publish data/ to Pages (human-readable browser view)
         run: |
           mkdir -p docs/data
           cp -v data/*.json docs/data/ 2>/dev/null || true
           ls -la docs/data/
 
-      # The Claude Code routine sandbox host allowlist blocks
-      # *.github.io but allows raw.githubusercontent.com. So we also
-      # publish today's snapshot to a dedicated `data` branch — the
-      # routine reads from
-      # https://raw.githubusercontent.com/rowland-dot/ai-daily-digest/data/<file>.json
-      # The `data` branch is bot-only; local devs push to `main` and
-      # the two branches never touch, so there's no race.
-      - name: Publish data snapshot to `data` branch (routine reads from raw.githubusercontent.com)
+      # `data` branch publish only runs in full mode — fast-mode data
+      # is unchanged from the prior full run, so no new snapshot needed.
+      - name: Publish data snapshot to `data` branch
+        if: steps.mode-final.outputs.value == 'full'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Stage the snapshot into a temp worktree on the `data` branch.
           WT=$(mktemp -d)
-          # Create the orphan branch on first run; otherwise check it out.
           if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
             git fetch origin data:data
             git worktree add "$WT" data
@@ -149,7 +208,6 @@ jobs:
             git worktree add --detach "$WT"
             (cd "$WT" && git checkout --orphan data && git rm -rf . >/dev/null 2>&1 || true)
           fi
-          # Replace branch contents with today's data files only.
           rm -f "$WT"/*.json 2>/dev/null || true
           cp -v data/*.json "$WT"/
           (cd "$WT" && git add -A && \
