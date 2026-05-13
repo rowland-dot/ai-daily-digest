@@ -154,33 +154,97 @@ async function runSource(name, filename, fetcher) {
 
 // ---- Sources ----
 
+// Common Chinese transliterations of English brand/product names that we
+// want to normalize back to the original English in AIHOT content. Chinese
+// AI media often uses these (e.g. 克劳德 = Claude, 黑曜石 = Obsidian).
+// Avoids "translating" a Chinese transliteration through Google Translate
+// into nonsense when the original English term is what the reader wants.
+const ZH_TO_EN_BRANDS = {
+  "克劳德": "Claude",
+  "黑曜石": "Obsidian",
+  "抱抱脸": "Hugging Face",
+  "杰米尼": "Gemini",
+  "双子座": "Gemini",
+  "图灵": "Turing",
+  "深寻": "DeepSeek",
+  "智谱": "Zhipu",
+  "通义千问": "Qwen",
+  "扎克伯格": "Zuckerberg",
+  "马斯克": "Musk",
+  "奥特曼": "Altman",
+  "皮查伊": "Pichai",
+  "纳德拉": "Nadella",
+};
+
+function normalizeChineseTechTerms(text) {
+  if (!text || typeof text !== "string") return text;
+  let out = text;
+  for (const [zh, en] of Object.entries(ZH_TO_EN_BRANDS)) {
+    if (out.includes(zh)) out = out.split(zh).join(en);
+  }
+  return out;
+}
+
+function normalizeAihotItems(payload) {
+  if (!payload) return payload;
+  // Daily aggregate has sections[].items[]; items endpoints have items[] directly.
+  const visit = (item) => {
+    if (!item || typeof item !== "object") return item;
+    if (typeof item.title === "string") item.title = normalizeChineseTechTerms(item.title);
+    if (typeof item.summary === "string") item.summary = normalizeChineseTechTerms(item.summary);
+    return item;
+  };
+  if (Array.isArray(payload.items)) payload.items = payload.items.map(visit);
+  if (Array.isArray(payload.sections)) {
+    payload.sections = payload.sections.map((sec) => {
+      if (Array.isArray(sec.items)) sec.items = sec.items.map(visit);
+      return sec;
+    });
+  }
+  return payload;
+}
+
 async function aihotDaily() {
-  return fetchJson("https://aihot.virxact.com/api/public/daily");
+  return normalizeAihotItems(await fetchJson("https://aihot.virxact.com/api/public/daily"));
 }
 
 async function aihotItems(category, limit = 20) {
-  return fetchJson(
-    `https://aihot.virxact.com/api/public/items?category=${category}&limit=${limit}`,
+  return normalizeAihotItems(
+    await fetchJson(
+      `https://aihot.virxact.com/api/public/items?category=${category}&limit=${limit}`,
+    ),
   );
 }
 
-// Extract a one-paragraph TL;DR for an article URL. Prefers
-// <meta property="og:description"> (Open Graph, almost universal),
-// then <meta name="description">, then <meta name="twitter:description">.
-// Returns "" on failure — caller falls back to title-only rendering.
+// Extract a one-paragraph TL;DR for an article URL.
+//
+// Strategy:
+//   1. Fast path — fetch the raw HTML and look for <meta og:description>
+//      / <meta description> / <meta twitter:description>. Works on most
+//      server-rendered news / blog / docs sites in ~1s.
+//   2. Slow fallback — call Jina AI Reader (https://r.jina.ai/{url}),
+//      which returns clean markdown of the article even for SPAs.
+//      Take the first substantial paragraph as the TLDR. ~5-15s/call.
+//
+// Returns "" if both paths fail.
 async function articleSummary(url) {
   if (!url || !/^https?:\/\//.test(url)) return "";
+  const fast = await fetchMetaDescription(url);
+  if (fast) return fast;
+  return await fetchJinaSummary(url);
+}
+
+async function fetchMetaDescription(url) {
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": BROWSER_UA, "Accept": "text/html,*/*" },
+      headers: { "User-Agent": BROWSER_UA, Accept: "text/html,*/*" },
       signal: AbortSignal.timeout(6000),
     });
     if (!res.ok) return "";
     const ct = res.headers.get("content-type") || "";
     if (!ct.includes("html")) return "";
-    // Cap at 200 KB so we don't pull whole long articles into memory.
     const reader = res.body?.getReader();
-    if (!reader) return await pickDescription(await res.text());
+    if (!reader) return pickDescription(await res.text());
     let received = 0;
     const chunks = [];
     while (true) {
@@ -192,6 +256,56 @@ async function articleSummary(url) {
     }
     const html = new TextDecoder().decode(Buffer.concat(chunks.map((c) => Buffer.from(c))));
     return pickDescription(html);
+  } catch {
+    return "";
+  }
+}
+
+async function fetchJinaSummary(url) {
+  try {
+    const res = await fetch("https://r.jina.ai/" + url, {
+      headers: { Accept: "text/plain", "X-Return-Format": "text" },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) return "";
+    const text = await res.text();
+    // Jina Reader prefixes a brief header (Title:, URL Source:, etc.)
+    // then the article body. Skip lines that look like metadata,
+    // headings, or markdown link-only lines; take the first prose
+    // paragraph long enough to be useful.
+    const lines = text.split("\n");
+    let body = [];
+    let inBody = false;
+    for (const ln of lines) {
+      const t = ln.trim();
+      if (!inBody) {
+        // Metadata block ends after the first blank line following "Markdown Content:"
+        if (t === "Markdown Content:" || t.startsWith("===") || t.startsWith("Published Time:")) {
+          inBody = true;
+          continue;
+        }
+        if (t.startsWith("Title:") || t.startsWith("URL Source:") || t.startsWith("Description:")) {
+          continue;
+        }
+      }
+      body.push(ln);
+    }
+    if (body.length === 0) body = lines; // fallback if header detection failed
+    // Find first paragraph with >= 80 chars of prose
+    const paragraphs = body.join("\n").split(/\n\s*\n/);
+    for (const p of paragraphs) {
+      const stripped = p
+        .replace(/^#{1,6}\s+/gm, "")
+        .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/[*_`]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+      if (stripped.length >= 80 && stripped.length <= 600) {
+        return stripped.slice(0, 400);
+      }
+    }
+    return "";
   } catch {
     return "";
   }
@@ -224,16 +338,20 @@ async function hnTopStories(count = 30) {
       ),
     ),
   );
-  // Add TL;DR summaries to AI-relevant items (limit to avoid blowing the
-  // build budget; ~16 fetches × ~2s each = ~30s).
-  const aiKeywords = /\b(AI|LLM|GPT|Claude|Gemini|Anthropic|OpenAI|model|agent|prompt|embedding|RAG|inference|fine-?tun|train|neural|transformer)\b/i;
-  const summaryJobs = items
-    .filter((it) => it && it.title && it.url && aiKeywords.test(it.title))
-    .slice(0, 16)
-    .map(async (it) => {
-      it.summary = await articleSummary(it.url);
-    });
-  await Promise.all(summaryJobs);
+  // Add TL;DR summaries. Try ALL top items with a URL (up to 20) so that
+  // the AI-keyword filter at render time picks from a fully-summarised
+  // pool. Limited concurrency to keep the build budget bounded.
+  const candidates = items.filter((it) => it && it.title && it.url).slice(0, 20);
+  const concurrency = 4;
+  let idx = 0;
+  async function worker() {
+    while (idx < candidates.length) {
+      const it = candidates[idx++];
+      try { it.summary = await articleSummary(it.url); }
+      catch { it.summary = ""; }
+    }
+  }
+  await Promise.all(Array.from({ length: concurrency }, worker));
   return { fetched_at: new Date().toISOString(), items };
 }
 

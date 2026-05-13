@@ -58,12 +58,9 @@ jobs:
         id: audio-cache
         uses: actions/cache@v4
         with:
-          # v9: Translation glossary preserves product names + tech
-          # jargon in Chinese output (Obsidian, Claude, ChatGPT, etc.
-          # stay in English instead of getting transliterated).
-          # Translation cache key prefix bumped internally to v2 so old
-          # entries are skipped automatically — this cache key bump
-          # is belt-and-braces.
+          # v10: Reverse glossary (克劳德 -> Claude) on AIHOT content +
+          # expanded HN summary fetch with Jina Reader fallback. New
+          # content shapes invalidate the cache.
           path: |
             docs/digest.mp3
             docs/digest-en.mp3
@@ -73,7 +70,7 @@ jobs:
             docs/audio-cues-zh.json
             docs/content-translations.json
             data/translation-cache.json
-          key: digest-mp3-v9-${{ steps.today.outputs.date }}
+          key: digest-mp3-v10-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'
