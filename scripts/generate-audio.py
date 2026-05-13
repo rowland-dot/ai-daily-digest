@@ -432,15 +432,15 @@ async def render_all_segments(jobs: list[tuple[str, str, Path]], concurrency: in
     return results
 
 
-def field(d: dict, *keys: str, limit: int = 0) -> str:
-    """Get and clean a string field from a dict; optionally cap length."""
+def field(d: dict, *keys: str) -> str:
+    """Get and clean a string field from a dict. The audio narrates the
+    same content the page renders — fetch-sources.mjs already caps article
+    essences at ~400 chars and source APIs cap their own summaries, so no
+    additional audio-side truncation is applied here."""
     for k in keys:
         v = d.get(k)
         if isinstance(v, str) and v.strip():
-            out = clean_for_tts(v)
-            if limit and len(out) > limit:
-                out = out[:limit].rsplit(" ", 1)[0]
-            return out
+            return clean_for_tts(v)
     return ""
 
 
@@ -461,7 +461,7 @@ def build_aihot_segments(label: str, items: list[dict], section_anchor: str) -> 
         if idx > 0:
             parts.append(NEXT_ZH)
         title = field(item, "title")
-        summary = field(item, "summary", limit=200)
+        summary = field(item, "summary")
         if title:
             parts.append(title + "。")
         if summary:
@@ -490,7 +490,7 @@ def build_lab_segments(items: list[dict]) -> list:
     rows = []
     for idx, it in enumerate(items[:OTHER_CAP]):
         title = field(it, "title")
-        desc = field(it, "description", limit=220)
+        desc = field(it, "description")
         parts = []
         if title:
             parts.append(title + ".")
@@ -504,7 +504,7 @@ def build_simon_segments(entries: list[dict]) -> list:
     rows = []
     for idx, e in enumerate(entries[:OTHER_CAP]):
         title = field(e, "title")
-        summary = field(e, "summary", limit=220)
+        summary = field(e, "summary")
         parts = []
         if title:
             parts.append(title + ".")
@@ -518,7 +518,7 @@ def build_llama_segments(posts: list[dict]) -> list:
     rows = []
     for idx, p in enumerate(posts[:OTHER_CAP]):
         title = field(p, "title")
-        summary = field(p, "summary", limit=220)
+        summary = field(p, "summary")
         parts = []
         if title:
             parts.append(title + ".")
@@ -533,7 +533,7 @@ def build_gh_segments(repos: list[dict]) -> list:
     for idx, r in enumerate(repos[:OTHER_CAP]):
         owner = clean_for_tts(r.get("owner") or "")
         name = clean_for_tts(r.get("name") or "")
-        desc = field(r, "description", limit=180)
+        desc = field(r, "description")
         stars_today = r.get("starsToday")
         parts = []
         if owner and name:
@@ -574,7 +574,7 @@ def build_fb_x_segments(x_feed: dict) -> list:
     rows = []
     for idx, t in enumerate(all_tweets):
         author = clean_for_tts(t.get("_author") or "")
-        text = field(t, "text", limit=240)
+        text = field(t, "text")
         if author and text:
             rows.append((f"article-builders-x-{idx}", f"{author} says: {text}."))
     return _en_seg("Builder voices from X.", rows)
@@ -614,37 +614,6 @@ def build_fb_blog_segments(blog_feed: dict) -> list:
         if text:
             rows.append((f"article-builders-blog-{idx}", text))
     return _en_seg("Builder blog posts.", rows)
-
-
-# edge-tts handles a few thousand chars per call reliably; beyond that
-# the service occasionally truncates or rate-limits. Split long section
-# text into ~3500-char chunks at sentence boundaries so every item gets
-# narrated even when a section has 50+ items.
-MAX_TTS_CHARS = 3500
-
-
-def chunk_text(text: str, max_chars: int = MAX_TTS_CHARS) -> list[str]:
-    """Split text at sentence boundaries (。 or .) so chunks stay below max_chars."""
-    text = text.strip()
-    if len(text) <= max_chars:
-        return [text] if text else []
-    chunks: list[str] = []
-    # Split on sentence-ending punctuation, keeping the punctuation attached.
-    parts = re.split(r"(?<=[。.!?！？])\s+", text)
-    current = ""
-    for p in parts:
-        if not p:
-            continue
-        if len(current) + len(p) + 1 > max_chars and current:
-            chunks.append(current.strip())
-            current = p
-        else:
-            current = (current + " " + p) if current else p
-    if current.strip():
-        chunks.append(current.strip())
-    return chunks
-
-
 
 
 def collect_and_translate_ui_strings() -> dict:
