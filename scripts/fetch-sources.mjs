@@ -130,24 +130,6 @@ function firstMatch(re, str, group = 1) {
   return m ? m[group] : "";
 }
 
-// Soft-trim a paragraph to ~maxLen chars, preferring to end at a real
-// sentence boundary so the trailing text doesn't read as "...lea" /
-// "...abou". Falls back to a hard slice + ellipsis if no sentence
-// boundary is found within the window.
-function trimAtSentence(text, maxLen) {
-  if (!text || text.length <= maxLen) return text || "";
-  const window = text.slice(0, maxLen);
-  // Find the last sentence terminator we can afford. Prefer "."  or
-  // "!" / "?" followed by a space; also accept Chinese "。".
-  const m = window.match(/[\s\S]*[.!?。](?=\s|$)/);
-  if (m && m[0].length >= Math.max(120, Math.floor(maxLen * 0.6))) {
-    return m[0].trim();
-  }
-  // No nice boundary — soft-cut at a space and add an ellipsis.
-  const softCut = window.replace(/\s+\S*$/, "");
-  return (softCut || window).trim() + "…";
-}
-
 async function runSource(name, filename, fetcher) {
   const started = Date.now();
   try {
@@ -417,6 +399,40 @@ export async function articleEssence(url) {
   return essence;
 }
 
+// Same engine as articleEssence(), but the body is already in hand (e.g.
+// Reddit RSS ships the OP's self-post body inline, so we don't need a
+// Jina fetch — feed the HTML body through the paragraph-split + prose
+// filter + one-paragraph synthesis the same way.
+function essenceFromHtmlBody(cacheKey, htmlBody) {
+  if (!htmlBody) return "";
+  const cache = _loadEssenceCache();
+  if (cacheKey && typeof cache[cacheKey] === "string") return cache[cacheKey];
+
+  // Convert block-level tags to paragraph breaks before stripping all
+  // remaining tags, so _extractEssence sees real \n\n boundaries.
+  let text = decodeEntities(htmlBody);
+  text = text.replace(/<\s*(p|div|br|li|h[1-6])[^>]*>/gi, "\n\n");
+  text = text.replace(/<\s*\/\s*(p|div|li|h[1-6])\s*>/gi, "\n\n");
+  text = text.replace(/<[^>]+>/g, " ");
+  text = decodeEntities(text); // double-encoded entities (common in RSS)
+  // Strip reddit's own boilerplate that bleeds into the body.
+  text = text
+    .replace(/\[link\]/gi, " ")
+    .replace(/\[comments\]/gi, " ")
+    .replace(/^submitted by[\s\S]*?$/gim, " ");
+  // Collapse intra-line whitespace but PRESERVE paragraph breaks.
+  text = text
+    .split(/\n\s*\n+/)
+    .map((p) => p.replace(/\s+/g, " ").trim())
+    .filter(Boolean)
+    .join("\n\n");
+  if (!text) return "";
+
+  const essence = _extractEssence(text);
+  if (cacheKey) cache[cacheKey] = essence;
+  return essence;
+}
+
 // Batch helper — fetches essences for many URLs with bounded concurrency.
 async function enrichItemsWithEssence(items, urlKey, concurrency = 4) {
   const work = items.filter((it) => it && it[urlKey] && /^https?:\/\//.test(it[urlKey]));
@@ -541,29 +557,17 @@ async function localLlama(limit = 14) {
     const updated = firstMatch(/<updated[^>]*>([\s\S]*?)<\/updated>/i, block);
     const author = firstMatch(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>[\s\S]*?<\/author>/i, block);
     const contentRaw = firstMatch(/<content[^>]*>([\s\S]*?)<\/content>/i, block);
-    // Content is double-encoded HTML. Decode once, then extract:
-    //  - For SELF posts: useful selftext follows the "[link] [comments]"
-    //    boilerplate table and any [removed] / sticky markers.
-    //  - For LINK posts: content is just the [link]/[comments]/[submitted
-    //    by] boilerplate with no real blurb — leave summary empty.
-    const decoded = decodeEntities(contentRaw);
-    const stripped = decoded.replace(/<[^>]+>/g, " ").replace(/&[a-z]+;/g, " ");
-    // Drop reddit's lead-in boilerplate.
-    const cleaned = stripped
-      .replace(/\[link\]/gi, " ")
-      .replace(/\[comments\]/gi, " ")
-      .replace(/submitted by[\s\S]*?(\.|$)/i, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-    const looksLikeSelfPost = cleaned.length > 60 && !/^\s*$/.test(cleaned);
-    // Reddit `link` is the comments URL like
-    // https://www.reddit.com/r/LocalLLaMA/comments/<id>/<slug>/
+    // Reddit RSS ships the OP's self-post HTML inline in <content>.
+    // Run it through the SAME one-paragraph essence engine used for
+    // Simon Willison, OpenAI lab posts, and Follow Builders blogs.
+    // Link-posts have no body → essence returns "" → filtered later.
+    const summary = essenceFromHtmlBody(link, contentRaw);
     return {
       title,
       author: (author || "").replace(/^\/u\//, ""),
       updated,
       permalink: link,
-      summary: looksLikeSelfPost ? trimAtSentence(cleaned, 600) : "",
+      summary,
     };
   });
   // Filter: drop posts with no real TLDR (image-only / meme / link-out
