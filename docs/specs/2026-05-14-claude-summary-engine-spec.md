@@ -127,13 +127,25 @@ Sources enumerated: `openai-blog`, `anthropic-news`, `anthropic-engineering`, `s
   "summaries": {
     "https://openai.com/news/...": {
       "en": "~70 word English summary written by Claude.",
-      "zh": "约140字中文摘要。"
+      "zh": "约140字中文摘要。",
+      "title_en": "Optional clean title in English (when original is noisy)",
+      "title_zh": "可选的清理后中文标题（当原始标题是数字/型号噪声时）"
     }
   }
 }
 ```
 
 Keyed on canonical URL. URLs missing from `summaries` fall back to existing extract.
+
+**`title_en` / `title_zh` (optional, Phase 6):** when the original article title is noisy — numeric specs (`MI50s 528 TPS TG 1569 TPS PP no MTP`), bare slug fragments (`AIDC-AI/Ovis2.6-80B-A3B`), all-caps acronym soup, or just unreadable for general audience — the routine MUST emit a clean rewrite. The renderer overlays this onto the displayed title; the audio script narrates it; the original is preserved as `_origTitle` for audit only.
+
+When the original title is already clean (proper sentence case, has at least 3 normal words, reads naturally aloud), OMIT both fields and the renderer falls through to the original.
+
+Title rewrite rules:
+- 60 EN words / 100 ZH chars MAX (titles must be tight)
+- Plain prose. No quotes, no markdown, no parentheses, no special characters.
+- Render numbers and acronyms in natural language: `1569 tokens per second` not `1569 TPS`; `Mixture of Experts` not `MoE`; `R T X 6000` is wrong — use `RTX 6000`.
+- Match the article's actual subject — never invent.
 
 ## Renderer behavior (`scripts/render-site.mjs`)
 
@@ -272,8 +284,9 @@ Before building Phase 1, remove Editor's Cut entirely:
 | 2 | Routine prompt rewrite (per-article summarizer + drop-rules for r/LocalLLaMA / Simon) | user (UI paste) |
 | 3 | Renderer + audio integration: read `claude-summaries.json`, prefer Claude text | code (me) — ✅ done |
 | 4 | First end-to-end test fire; verify file lands; eyeball page output | both — ✅ done |
-| 5 | Renderer drops in-scope items without Claude summary (omission = quality gate) | code (me) |
-| 6 | Iterate prompt based on real summary quality | both |
+| 5 | Renderer drops in-scope items without Claude summary (omission = quality gate) | code (me) — ✅ done |
+| 6 | Routine rewrites noisy titles (`title_en` / `title_zh` schema fields). Renderer + audio overlay them. | both — ✅ code done; routine prompt update pending |
+| 7 | Iterate prompt based on real summary + title quality | both |
 
 ## Fallback policy
 
