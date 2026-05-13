@@ -803,24 +803,13 @@ async function localLlama(limit = 12) {
   // Heuristic quality filter. When JSON path succeeded we have scores
   // + comment counts; apply the full rule. When falling back to RSS
   // we don't have those, so relax to "has a real body".
-  // A "real word" is alpha-only, ≥4 chars, and contains at least one
-  // lowercase letter (so all-caps acronyms like "TPS" / "MTP" / "MoE"
-  // don't count as readable title content). r/LocalLLaMA spec-dump
-  // titles like "MI50s Qwen 36 27B 528 TPS TG 1569 TPS PP no MTP"
-  // produce ~1 real word and unreadable audio narration.
-  const REAL_WORD_RE = /^[A-Za-z]+$/;
-  const isAudioFriendlyTitle = (title) => {
-    if (!title) return false;
-    const tokens = title.split(/[\s\W_]+/).filter(Boolean);
-    const realWords = tokens.filter(
-      (t) => t.length >= 4 && REAL_WORD_RE.test(t) && /[a-z]/.test(t),
-    );
-    return realWords.length >= 3;
-  };
-
+  // Drop-criteria are score / body / engagement only — NEVER title.
+  // Posts with noisy/numeric titles are kept; the routine rewrites
+  // them into clean titles via the schema's `title_clean` field
+  // (Phase 6, see docs/specs/...). Renderer + audio prefer the
+  // clean title when present.
   const filtered = posts.filter((p) => {
     if (!p.summary || p.summary.length < 60) return false;   // no TLDR = noise
-    if (!isAudioFriendlyTitle(p.title)) return false;        // numeric / acronym soup
     if (p.score == null) {
       // RSS fallback path — relax: just need a real body
       return (p.body || "").length >= BODY_MIN;

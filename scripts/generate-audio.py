@@ -502,14 +502,11 @@ def _en_seg(intro: str, items_with_anchors: list[tuple[str, str]]) -> list:
 
 def _narration_text(it: dict, title_key: str = "title", summary_key: str = "summary",
                     fallback_summary_keys: tuple = ()) -> str:
-    """Build narration text for an article. When the item has a
-    Claude-overlaid summary (set by apply_claude before this is called),
-    narrate ONLY the summary — the original title can be a numeric/
-    acronym soup (e.g. 'MI50s 528 TPS TG 1569 TPS PP no MTP') that
-    edge-tts reads literally and renders unintelligible.
-
-    When there's no Claude summary (routine missed it / still on
-    Jina), fall back to title + summary the old way."""
+    """Build narration text: title + summary. When apply_claude has
+    overlaid a Claude-written clean title onto the item (it[title_key]
+    was replaced and the original stashed in _origTitle), the title
+    field already holds the audio-friendly version. So we always
+    narrate title + summary; the swap happened upstream."""
     title = field(it, title_key)
     summary = field(it, summary_key)
     if not summary and fallback_summary_keys:
@@ -517,10 +514,6 @@ def _narration_text(it: dict, title_key: str = "title", summary_key: str = "summ
             summary = field(it, k)
             if summary:
                 break
-    if it.get("_claude_overlaid") and summary:
-        # Claude summary present — its prose is self-contained; skip the
-        # raw title which may not be audio-friendly.
-        return summary + "."
     parts = []
     if title:
         parts.append(title + ".")
@@ -820,7 +813,7 @@ def main() -> int:
     trans_cache = _load_trans_cache()
     overlay_count = 0
 
-    def apply_claude(items, url_key, summary_keys=("summary",)):
+    def apply_claude(items, url_key, summary_keys=("summary",), title_key="title"):
         nonlocal overlay_count
         for it in items or []:
             url = it.get(url_key)
@@ -831,10 +824,17 @@ def main() -> int:
                 continue
             for k in summary_keys:
                 it[k] = c["en"]
-            it["_claude_overlaid"] = True   # narration helper skips raw title
             if c.get("zh"):
                 trans_cache[f"v4::zh::{c['en']}"] = c["zh"]
                 trans_cache[f"v4::en::{c['zh']}"] = c["en"]
+            # Phase 6: Claude rewrites noisy/numeric titles into clean
+            # audio-friendly ones. When present, overlay the clean
+            # title so narration uses it instead of the raw original.
+            if c.get("title_en") and c["title_en"].strip():
+                it[title_key] = c["title_en"].strip()
+                if c.get("title_zh") and c["title_zh"].strip():
+                    trans_cache[f"v4::zh::{c['title_en']}"] = c["title_zh"]
+                    trans_cache[f"v4::en::{c['title_zh']}"] = c["title_en"]
             overlay_count += 1
 
     # Lab announcements section — merge OpenAI + Anthropic news +

@@ -1703,7 +1703,7 @@ function txAttrs(text) {
 // translation table so txAttrs(claude.en) returns Claude's ZH directly
 // (skipping deep-translator for this entry). Items without a Claude
 // summary fall through unchanged.
-function applyClaudeSummaries(items, urlKey, summaryKey = "summary") {
+function applyClaudeSummaries(items, urlKey, summaryKey = "summary", titleKey = "title") {
   if (!items || !items.length) return;
   for (const it of items) {
     const url = it[urlKey];
@@ -1717,6 +1717,17 @@ function applyClaudeSummaries(items, urlKey, summaryKey = "summary") {
     if (summaryKey === "summary" && it.description != null) it.description = claude.en;
     if (claude.zh) {
       contentTranslations[claude.en.trim()] = { zh: claude.zh };
+    }
+    // Phase 6: routine may also write a clean title for noisy
+    // titles (numeric specs / slug fragments / etc.). When present,
+    // overlay it onto the displayed title and stamp the original
+    // into _origTitle for audit. Fall through if absent.
+    if (claude.title_en && claude.title_en.trim()) {
+      it._origTitle = it[titleKey] || "";
+      it[titleKey] = claude.title_en.trim();
+      if (claude.title_zh && claude.title_zh.trim()) {
+        contentTranslations[claude.title_en.trim()] = { zh: claude.title_zh.trim() };
+      }
     }
   }
 }
