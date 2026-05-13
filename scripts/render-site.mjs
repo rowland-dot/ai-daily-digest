@@ -542,6 +542,11 @@ const PAGE_CSS = `
     border-radius: 999px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.10);
     font-family: var(--body-font);
+    /* Suppress text selection during scrubber drag (otherwise the page
+       selects the time label / buttons text on every mousemove). */
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
   /* Collapsed: just the round handle */
   .audio-fab[data-expanded="false"] {
@@ -635,6 +640,7 @@ const PAGE_CSS = `
     display: flex;
     align-items: center;
     min-width: 0;
+    touch-action: none;           /* prevent native pan during drag */
   }
   .scrubber::before {
     /* The visible track */
