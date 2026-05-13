@@ -450,6 +450,54 @@ async function enrichItemsWithEssence(items, urlKey, concurrency = 4) {
   saveEssenceCache();
 }
 
+// Convert a URL slug like "claude-for-small-business" into a Title-Cased
+// human title. Used as a fallback when Jina doesn't yield a usable
+// document title for an Anthropic news/engineering article.
+function _slugToTitle(slug) {
+  return slug
+    .replace(/^\/?(news|engineering)\//, "")
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .trim();
+}
+
+// Generic Anthropic index-page scraper. Anthropic has no RSS feed for
+// news or engineering — both index pages are React-rendered, but the
+// article hrefs ARE present in the initial HTML payload. Pulls /<root>/
+// <slug> URLs, dedupes, then enriches each via the same Jina essence
+// pipeline OpenAI lab posts use.
+async function anthropicIndex(rootPath, limit, sourceLabel) {
+  // rootPath is "news" or "engineering"
+  const html = await fetchText(`https://www.anthropic.com/${rootPath}`);
+  const slugRe = new RegExp(`/${rootPath}/[a-z][a-z0-9-]{3,}`, "g");
+  // Dedupe while preserving page order (top of page = newest in practice)
+  const seen = new Set();
+  const slugs = [];
+  for (const m of html.match(slugRe) || []) {
+    if (seen.has(m)) continue;
+    seen.add(m);
+    slugs.push(m);
+    if (slugs.length >= limit) break;
+  }
+  const items = slugs.map((slug) => ({
+    title: _slugToTitle(slug),
+    link: `https://www.anthropic.com${slug}`,
+    pubDate: "",   // Anthropic's index doesn't expose pub date in HTML; left empty
+    description: "",
+  }));
+  // Fill .summary via Jina essence engine (same pipeline as OpenAI blog).
+  await enrichItemsWithEssence(items, "link");
+  return { fetched_at: new Date().toISOString(), source: sourceLabel, items };
+}
+
+async function anthropicNews(limit = 16) {
+  return anthropicIndex("news", limit, "Anthropic news");
+}
+
+async function anthropicEngineering(limit = 16) {
+  return anthropicIndex("engineering", limit, "Anthropic engineering");
+}
+
 async function hfPopular(limit = 20) {
   // HF API doesn't expose the website's trending score; sort=likes is the
   // closest stable proxy for "what's hot right now".
@@ -628,6 +676,8 @@ await runSource("aihot_paper", "aihot-paper.json", () => aihotItems("paper"));
 await runSource("hf_popular", "hf-popular.json", hfPopular);
 await runSource("github_trending", "github-trending.json", githubTrending);
 await runSource("openai_blog", "openai-blog.json", openaiBlog);
+await runSource("anthropic_news", "anthropic-news.json", anthropicNews);
+await runSource("anthropic_engineering", "anthropic-engineering.json", anthropicEngineering);
 await runSource("simon_willison", "simon-willison.json", simonWillison);
 await runSource("follow_builders_x", "follow-builders-x.json", () => followBuildersFeed("x"));
 await runSource("follow_builders_podcasts", "follow-builders-podcasts.json", () => followBuildersFeed("podcasts"));
