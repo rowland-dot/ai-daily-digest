@@ -781,15 +781,37 @@ const AUDIO_PLAYER_SCRIPT = `
     function setPlayIcon(playing) {
       if (playBtn) playBtn.textContent = playing ? '❚❚' : '▶';
     }
+    function tryPlay() {
+      // Force a fresh load if metadata never came through.
+      if (audio.readyState === 0 || audio.networkState === 3) audio.load();
+      var p;
+      try { p = audio.play(); } catch (err) {
+        console.error('[digest-audio] play threw:', err);
+        if (timeLabel) timeLabel.textContent = 'play error';
+        return;
+      }
+      if (p && typeof p.then === 'function') {
+        p.catch(function(err) {
+          console.error('[digest-audio] play rejected:', err && err.name, err && err.message);
+          if (timeLabel) timeLabel.textContent = (err && err.name) || 'error';
+        });
+      }
+    }
     if (playBtn) {
       playBtn.addEventListener('click', function(e) {
+        e.preventDefault();
         e.stopPropagation();
-        if (audio.paused) audio.play(); else audio.pause();
+        if (audio.paused || audio.ended) tryPlay(); else audio.pause();
       });
     }
     audio.addEventListener('play', function() { setPlayIcon(true); });
     audio.addEventListener('pause', function() { setPlayIcon(false); });
     audio.addEventListener('ended', function() { setPlayIcon(false); });
+    audio.addEventListener('error', function() {
+      var err = audio.error;
+      console.error('[digest-audio] media error:', err && err.code, err && err.message);
+      if (timeLabel) timeLabel.textContent = 'load error';
+    });
 
     // ---- Time display + scrubber fill ----
     function fmt(sec) {
@@ -938,7 +960,7 @@ async function renderPage({
       <li><a href="#writing">✍ Simon Willison</a></li>
       <li><a href="#trending">🚀 GitHub</a></li>
       <li><a href="#hn">🔥 Hacker News</a></li>
-      <li><a href="#hf">🤗 HuggingFace</a></li>
+      <li><a href="#hf">🤗 Hugging Face</a></li>
       <li><a href="#builders">🎙 Builder voices</a></li>
       <li><a href="digests/">🗂 Archive</a></li>
     </ul>
@@ -977,25 +999,25 @@ async function renderPage({
     </section>
 
     <section id="writing" class="block">
-      <h2><span class="section-icon">✍</span> Builder writing — Simon Willison</h2>
-      <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon Willison's weblog.</p>
+      <h2><span class="section-icon">✍</span> Simon Willison</h2>
+      <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon's weblog.</p>
       ${builderWritingSection(simonWillison)}
     </section>
 
     <section id="trending" class="block">
-      <h2><span class="section-icon">🚀</span> Trending on GitHub today</h2>
-      <p class="section-sub">Top 15 trending repositories across all languages.</p>
+      <h2><span class="section-icon">🚀</span> Trending on GitHub</h2>
+      <p class="section-sub">Top trending repositories across all languages.</p>
       ${ghTrendingSection(ghTrending)}
     </section>
 
     <section id="hn" class="block">
-      <h2><span class="section-icon">🔥</span> Hacker News — what's hitting</h2>
+      <h2><span class="section-icon">🔥</span> Hacker News</h2>
       <p class="section-sub">Top AI-relevant front-page stories (AI/LLM/agent items surfaced first).</p>
       ${hnSection(hnTop)}
     </section>
 
     <section id="hf" class="block">
-      <h2><span class="section-icon">🤗</span> HuggingFace — most-loved models</h2>
+      <h2><span class="section-icon">🤗</span> Hugging Face</h2>
       <p class="section-sub">Open-weight models ranked by ❤ likes (closest stable proxy for trending).</p>
       ${hfSection(hfPopular)}
     </section>
