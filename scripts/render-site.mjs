@@ -422,11 +422,12 @@ const PAGE_CSS = `
   nav.toc a:hover { background: var(--accent-soft); border-color: var(--accent); text-decoration: none; }
 
   /* Sections — scroll-margin-top reserves space for the sticky TOC so
-     clicking a TOC link doesn't bury the section's H2 under the nav. */
+     clicking a TOC link doesn't bury the section's H2 under the nav.
+     :first-of-type drops its own top margin so the gap below the nav
+     bar matches the inter-section gap instead of doubling up. */
   section.block { margin: 44px 0; scroll-margin-top: 64px; }
+  section.block:first-of-type { margin-top: 0; }
   @media (max-width: 600px) {
-    /* Mobile TOC wraps to 2–3 rows; reserve more space so the section
-       title is visible after a tap. */
     section.block { scroll-margin-top: 140px; }
   }
   section.block h2 {
