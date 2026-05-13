@@ -34,15 +34,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install edge-tts
-        run: pip install --quiet edge-tts
-
-      - name: Install ffmpeg
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
-          ffmpeg -version | head -1
-
       - name: Fetch upstream sources
         run: node scripts/fetch-sources.mjs
 
@@ -59,9 +50,34 @@ jobs:
             fi
           done
 
-      - name: Generate narration MP3
-        run: python scripts/generate-audio.py
-        continue-on-error: true   # site still deploys if TTS fails
+      - name: Compute today's UTC date
+        id: today
+        run: echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      - name: Restore today's audio cache (if any)
+        id: audio-cache
+        uses: actions/cache@v4
+        with:
+          path: docs/digest.mp3
+          key: digest-mp3-${{ steps.today.outputs.date }}
+
+      - name: Install ffmpeg (only if regenerating audio)
+        if: steps.audio-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version | head -1
+
+      - name: Install edge-tts (only if regenerating audio)
+        if: steps.audio-cache.outputs.cache-hit != 'true'
+        run: pip install --quiet edge-tts
+
+      - name: Generate narration MP3 (only if cache miss)
+        if: steps.audio-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p docs
+          python scripts/generate-audio.py
+        continue-on-error: true
 
       - name: Render static site
         run: node scripts/render-site.mjs
