@@ -91,6 +91,14 @@ PRESERVE_TERMS = sorted([
     "LangChain", "LangGraph", "LlamaIndex", "DSPy", "PydanticAI",
     "vLLM", "Ollama", "LM Studio",
     "Obsidian", "Notion", "Roam", "Logseq", "Apple Notes",
+    # Tools / projects that are easily mis-translated as common nouns
+    "Datasette", "datasette",
+    "llm",                              # Simon's `llm` CLI tool
+    "scrcpy", "Sora", "Whisper",
+    "Lobsters", "lobste.rs",
+    "EMR", "RCM",                       # healthcare acronyms common in YC posts
+    "BPO",
+    "RAG",
     "Slack", "Discord", "Telegram", "Signal", "WhatsApp", "WeChat", "LINE",
     # Companies / platforms
     "GitHub", "GitLab", "Bitbucket", "Vercel", "Netlify", "Cloudflare",
@@ -122,19 +130,32 @@ _PRESERVE_RE = re.compile(
 )
 
 
+# Placeholder format MUST contain no English words — Google Translate
+# happily translates 'KEEP', 'HOLD', 'TAG', etc. inside our previous
+# 'X000KEEP' style and leaks 'X000保持' into the output. 'xqzj' is a
+# 4-letter nonsense bigram with no Latin-word matches; surrounded by
+# digits it survives Google Translate intact in EN->ZH.
 def _preserve_terms(text: str):
-    """Replace preserve-list terms with placeholders Google won't translate.
-    Returns (modified_text, placeholder_map)."""
+    """Replace preserve-list terms with opaque placeholders Google won't
+    touch. Returns (modified_text, placeholder_map)."""
     placeholders: dict[str, str] = {}
     counter = [0]
     def sub(m):
         i = counter[0]
         counter[0] += 1
-        # Hex-style placeholder that Google Translate leaves alone in our tests.
-        ph = f"X{i:03d}KEEP"
+        ph = f"xqzj{i:04d}xqzj"
         placeholders[ph] = m.group(0)
         return ph
     modified = _PRESERVE_RE.sub(sub, text)
+    # Also preserve GitHub-style issue/PR references (#1234) — Google
+    # otherwise renders them as "第1234章" ("Chapter 1234").
+    def issue_sub(m):
+        i = counter[0]
+        counter[0] += 1
+        ph = f"xqzj{i:04d}xqzj"
+        placeholders[ph] = m.group(0)
+        return ph
+    modified = re.sub(r"#\d+", issue_sub, modified)
     return modified, placeholders
 
 
@@ -161,7 +182,7 @@ def translate(text: str, target_lang: str) -> str:
     if target_lang == "zh" and text_has_zh:
         return text
     cache = _load_trans_cache()
-    key = f"v2::{target_lang}::{text}"  # v2 prefix invalidates pre-glossary entries
+    key = f"v3::{target_lang}::{text}"  # v3: opaque placeholder format + #issue preservation
     if key in cache:
         return cache[key]
     try:

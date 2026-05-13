@@ -59,7 +59,7 @@ jobs:
             docs/content-translations.json
             data/translation-cache.json
             data/article-essence-cache.json
-          key: digest-mp3-v12-${{ steps.today.outputs.date }}
+          key: digest-mp3-v13-${{ steps.today.outputs.date }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.audio-cache.outputs.cache-hit != 'true'
