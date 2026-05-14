@@ -1,8 +1,18 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4MjYwNzU0MDAwLCJpIjoiY21veDZxdGJsMDBqdHNsNXNrd3Y4dmF6ZiJ9",
+  "nextCursor": "eyJhIjoxNzc4MjYxOTE0MDAwLCJpIjoiY21veDd0aWthMDBkaXNsZm9udXIxYzdoNiJ9",
   "items": [
+    {
+      "id": "cmp4pwt5v07rmsljxdrrzt7m2",
+      "title": "Claude 工具 v2.1.141 版本更新",
+      "title_en": "v2.1.141",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-13T23:19:16.000Z",
+      "summary": "Claude 工具发布 v2.1.141 版本，带来多项功能新增与优化。主要更新包括：为钩子输出添加 `terminalSequence` 字段以支持无控制终端的桌面通知；新增 `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` 环境变量，便于通过 HTTPS 克隆插件源码；引入 `ANTHROPIC_WORKSPACE_ID` 变量以在多工作区联盟中限定令牌范围。会话管理方面，`claude agents` 命令新增 `--cwd` 参数用于按目录筛选，并优化后台代理的状态归类。用户体验改进包括：在倒带菜单添加\"总结至此\"选项以压缩早期上下文；长思考超时后旋转指示器变色提供更明确反馈；此外，还修复了 Markdown 表格渲染异常、权限提示逻辑、历史记录管理等超过 30 项问题。",
+      "category": "ai-products"
+    },
     {
       "id": "cmp4gi5gq05nosljx7qdjpipt",
       "title": "Claude代码周限额提升50%",
@@ -491,16 +501,6 @@
       "source": "X：Gemini (@GeminiApp)",
       "publishedAt": "2026-05-08T17:38:34.000Z",
       "summary": "Gemini中的笔记本功能为复杂任务带来条理性。\n\n以研究生院申请流程为例：通过笔记本，您可以将成绩单、文书草稿和录取要求集中在一处，让Gemini帮助追踪截止日期、提供反馈并评估您的进展。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmox6qtbl00jtsl5skwv8vazf",
-      "title": "Codex切换功能正式上线",
-      "title_en": "Just gonna leave this here. https：//chatgpt.com/codex/switch-to-codex/",
-      "url": "https://x.com/OpenAI/status/2052800507727781979",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-05-08T17:19:14.000Z",
-      "summary": "就把这个留在这里。\n\nhttps：//chatgpt.com/codex/switch-to-codex/",
       "category": "ai-products"
     }
   ]
