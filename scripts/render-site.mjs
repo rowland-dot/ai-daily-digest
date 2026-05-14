@@ -1643,6 +1643,8 @@ for (const [url, val] of Object.entries(_rawClaude)) {
   claudeSummaries[url] = {
     en: _sanitizeClaudeText(val.en),
     zh: _sanitizeClaudeText(val.zh),
+    title_en: _sanitizeClaudeText(val.title_en),
+    title_zh: _sanitizeClaudeText(val.title_zh),
   };
 }
 
@@ -1720,15 +1722,52 @@ function isNoisyTitle(title) {
 
 // Pull a clean title-length sentence from the Claude summary as a
 // fallback when the routine didn't supply title_en for a noisy item.
+// Handles both Latin (.!?) and CJK (。！？) sentence delimiters, and
+// falls back to clause delimiters (；,，:：) when first sentence is
+// too long. Never produces a mid-sentence ellipsis — picks the
+// longest natural break that fits under maxLen.
 function deriveTitleFromSummary(summary, maxLen = 90) {
   if (!summary) return "";
   const s = String(summary).trim();
   if (!s) return "";
-  const first = s.split(/(?<=[.!?])\s+/)[0] || s;
-  if (first.length <= maxLen) return first;
-  const cut = first.slice(0, maxLen);
+  // Sentence-end punctuation: Latin .!? requires non-digit follow
+  // (so "Ovis2.6" / "3.5" don't split) AND whitespace/end after.
+  // CJK 。！？ split unconditionally — they don't appear inside numbers.
+  const sentEndRe = /(?:(?<!\d)[.!?](?!\d)(?=\s|$))|[。！？]/g;
+  // Pass 1: first complete sentence (drop trailing punct).
+  const firstHit = sentEndRe.exec(s);
+  if (firstHit) {
+    const sent = s.slice(0, firstHit.index).trim();
+    if (sent && sent.length <= maxLen) return sent;
+  }
+  // Pass 2: longest sentence-end (or ;) that fits under maxLen.
+  sentEndRe.lastIndex = 0;
+  const semiRe = /[;；]/g;
+  let bestEnd = -1, m;
+  while ((m = sentEndRe.exec(s)) !== null) {
+    if (m.index > maxLen) break;
+    bestEnd = m.index;
+  }
+  while ((m = semiRe.exec(s)) !== null) {
+    if (m.index > maxLen) break;
+    if (m.index > bestEnd) bestEnd = m.index;
+  }
+  if (bestEnd > 20) return s.slice(0, bestEnd).trim();
+  // Pass 3: softer clause separators — commas, colons, ideographic dots.
+  // Latin comma needs non-digit on both sides (don't split "1,000").
+  const softRe = /(?:(?<!\d),(?!\d))|[，:：、]/g;
+  bestEnd = -1;
+  while ((m = softRe.exec(s)) !== null) {
+    if (m.index > maxLen) break;
+    bestEnd = m.index;
+  }
+  if (bestEnd > 20) return s.slice(0, bestEnd).trim();
+  // Pass 4: hard truncate at word/character boundary, no ellipsis —
+  // a clean fragment reads better than a dangling thought.
+  if (s.length <= maxLen) return s;
+  const cut = s.slice(0, maxLen);
   const lastSpace = cut.lastIndexOf(" ");
-  return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut) + "…";
+  return (lastSpace > 20 ? cut.slice(0, lastSpace) : cut).trim();
 }
 
 // Defensive: strip any leaked PRESERVE_TERMS placeholder pattern

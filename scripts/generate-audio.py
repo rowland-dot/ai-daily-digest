@@ -821,12 +821,16 @@ def main() -> int:
             # occasionally emits \" / \“ / \” treating quote chars
             # as needing escape).
             _bs_re = re.compile(r'\\(["\'‘’“”])')
+            def _sanitize(s):
+                return _bs_re.sub(r"\1", s) if s else ""
             for url, val in raw_claude.items():
                 if not val:
                     continue
                 claude_summaries[url] = {
-                    "en": _bs_re.sub(r"\1", val.get("en") or "") if val.get("en") else "",
-                    "zh": _bs_re.sub(r"\1", val.get("zh") or "") if val.get("zh") else "",
+                    "en": _sanitize(val.get("en")),
+                    "zh": _sanitize(val.get("zh")),
+                    "title_en": _sanitize(val.get("title_en")),
+                    "title_zh": _sanitize(val.get("title_zh")),
                 }
         except Exception as e:
             print(f"[warn] could not read claude-summaries.json: {e}", file=sys.stderr)
