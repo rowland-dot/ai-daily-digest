@@ -842,6 +842,7 @@ def main() -> int:
             c = claude_summaries.get(url)
             if not c or not c.get("en"):
                 continue
+            it["_claude_approved"] = True   # Phase 5 quality-gate marker
             for k in summary_keys:
                 it[k] = c["en"]
             if c.get("zh"):
@@ -876,10 +877,17 @@ def main() -> int:
     if lab_items:
         segments.extend(build_lab_segments(lab_items))
 
+    # Phase 5 quality-gate: only narrate items the routine approved.
+    # Mirrors render-site.mjs — fall back to "narrate everything" only
+    # when claude_summaries is empty (safety net for cold/missing data).
+    _claude_ran_today = bool(claude_summaries)
+
     sw = load("simon-willison.json")
     if sw and sw.get("entries"):
         apply_claude(sw["entries"], "link")
         entries = filter_recent(sw["entries"], "updated")
+        if _claude_ran_today:
+            entries = [e for e in entries if e.get("_claude_approved")]
         if entries:
             segments.extend(build_simon_segments(entries))
 
@@ -902,7 +910,10 @@ def main() -> int:
     llama = load("localllama.json")
     if llama and llama.get("posts"):
         apply_claude(llama["posts"], "permalink")
-        segments.extend(build_llama_segments(llama["posts"]))
+        posts = llama["posts"]
+        if _claude_ran_today:
+            posts = [p for p in posts if p.get("_claude_approved")]
+        segments.extend(build_llama_segments(posts))
 
     if overlay_count:
         print(f"[claude-overlay] {overlay_count} per-article summaries replaced by Claude EN+ZH")
