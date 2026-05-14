@@ -1,15 +1,55 @@
 {
-  "count": 18,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp4yeqnn09sksljxvgbqhxp4",
+      "title": "教视觉-语言模型说\"电影语言\"",
+      "title_en": "Teaching Vision-Language Models to Speak Cinema",
+      "url": "https://blog.ml.cmu.edu/2026/05/13/teaching-vision-language-models-to-speak-cinema",
+      "source": "CMU：Machine Learning Blog",
+      "publishedAt": "2026-05-14T03:06:13.000Z",
+      "summary": "研究团队与百余名专业创作者历时一年，构建了一个视频描述生成流程，其核心在于扩展精细化的人类-AI协同监督，而非单纯扩大模型规模。该研究（入选CVPR 2026亮点论文）指出，当前主流视频生成模型在理解和生成具有电影感的专业运镜（如希区柯克式滑动变焦、精确的焦点转移或荷兰角镜头）时存在明显不足，常产出通用或焦点错误的画面。这项工作揭示了一条通过提升监督质量来增强模型\"电影语言\"表达能力的新路径。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp4x0njy09hysljxynnj3omy",
+      "title": "NousResearch推出Token Superposition Training技术，显著加速大语言模型预训练",
+      "title_en": "bravooo",
+      "url": "https://x.com/SiliconFlowAI/status/2054755824309076359",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "publishedAt": "2026-05-14T02:48:58.000Z",
+      "summary": "NousResearch发布了Token Superposition Training（TST），这是一种改进标准大语言模型预训练流程的方法。该技术无需改变模型架构、优化器、分词器或训练数据，即可在相同计算量（FLOPs）下实现2-3倍的训练时间加速。其核心是在训练的前三分之一阶段，让模型读取并预测连续的token包，对输入嵌入进行平均，并使用改进的交叉熵损失预测下一个token包；剩余训练时间则恢复为标准的下一个token预测。推理阶段的模型与传统预训练产生的模型完全相同。该方法已在270M、600M、3B的密集模型以及10B至1B的混合专家模型规模上得到验证。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp509d4w0a9tsljx6hcg0fl1",
+      "title": "检索廉价，代码为王：基于可执行程序的多跳推理检索增强生成",
+      "title_en": "Retrieval is Cheap， Show Me the Code： Executable Multi-Hop Reasoning for Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/abs/2605.12975",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-13T00:00:00.000Z",
+      "summary": "针对多跳检索增强生成（RAG）中推理过程隐式、检索漂移及错误难以自查的问题，研究团队提出PyRAG框架，将多跳推理任务重构为程序合成与执行过程。该框架将推理步骤编写为可执行的Python程序，通过显式调用检索与问答工具实现多步计算，使中间状态变量化、反馈确定化，并生成完整可检查的推理轨迹。该方法无需额外训练即可支持基于编译器的自我修复与执行驱动的自适应检索。在PopQA、HotpotQA等五个问答基准测试中，PyRAG在无需训练和强化学习训练两种设定下均显著优于基线模型，尤其在组合式多跳数据集上提升显著。相关资源已开源。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp4vz0fs098tsljxjdo11tf7",
+      "title": "AgentLens：揭示软件工程智能体评估中的\"幸运通过\"问题",
+      "title_en": "AgentLens： Revealing The Lucky Pass Problem in SWE-Agent Evaluation",
+      "url": "https://arxiv.org/abs/2605.12925",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-13T00:00:00.000Z",
+      "summary": "当前软件工程智能体评估仅依赖最终补丁是否通过测试的二元信号，掩盖了解决方案质量的差异。研究分析了2，614条轨迹，发现在可评估的1，815条通过轨迹中，10.7%属于\"幸运通过\"，表现为回归循环、盲目重试等问题。为此，研究团队提出了用于过程级评估的AgentLens框架，并发布了标注质量分数、冗余信号等信息的AgentLens-Bench数据集。基于质量分数，通过轨迹被划分为幸运、扎实和理想三个等级，不同模型的幸运通过率介于0.5%至23.2%之间。若按质量分数而非通过率排名，部分模型的排名变化显著。相关资源已开源。",
+      "category": "paper"
+    },
     {
       "id": "cmp4j0582068osljxjmrn48ll",
       "title": "ExploitGym：AI智能体能否将安全漏洞转化为真实攻击？",
       "title_en": "ExploitGym： Can AI Agents Turn Security Vulnerabilities into Real Attacks？",
       "url": "https://rdi.berkeley.edu/blog/exploitgym",
       "source": "Berkeley RDI：Blog（AI 安全与评测）",
-      "publishedAt": "2026-05-13T20:42:29.064Z",
+      "publishedAt": "2026-05-12T16:00:00.000Z",
       "summary": "由伯克利RDI、马克斯·普朗克安全与隐私研究所、Anthropic、OpenAI及谷歌等机构研究人员组成的团队，发布了名为ExploitGym的新基准测试。该测试包含898个真实漏洞，要求AI智能体根据漏洞描述生成完整的漏洞利用程序。结果显示，前沿AI模型已能成功利用相当数量的漏洞，即使在启用ASLR等标准防御措施后，部分攻击仍能成功。这证明AI已具备自主将漏洞转化为实际攻击的能力，该技术具有双重用途：既可帮助防御者评估漏洞严重性，也可能降低攻击者的技术门槛。",
       "category": "paper"
     },
@@ -21,6 +61,16 @@
       "source": "X：Epoch AI (@EpochAIResearch)",
       "publishedAt": "2026-05-12T00:27:27.000Z",
       "summary": "我们正在对FrontierMath的Tiers 1-4进行AI辅助审查。\n这已标记出约三分之一题目存在致命错误，\n且我们相信大多数标记是有效的。\n在完成全面人工审核后，\n我们将在修正的数据集上发布更新后的分数。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp5q0rwt0gc2sljxr0ee3w6y",
+      "title": "Learning to Explore： 通过探索感知策略优化扩展智能体推理能力",
+      "title_en": "Learning to Explore： Scaling Agentic Reasoning via Exploration-Aware Policy Optimization",
+      "url": "https://arxiv.org/abs/2605.08978",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-12T00:00:00.000Z",
+      "summary": "研究提出了一种探索感知的强化学习框架，使LLM智能体能够在不确定性高时才进行自适应探索。该方法通过变分推理设计了细粒度奖励函数，评估探索性行动对改善未来决策的潜力，并引入探索感知分组机制，在优化过程中将探索行动与任务完成行动分离。实验表明，该方法在一系列基于文本和GUI的智能体基准测试中取得了持续的性能提升。相关代码与模型已在GitHub和HuggingFace平台开源。",
       "category": "paper"
     },
     {
@@ -104,6 +154,16 @@
       "category": "paper"
     },
     {
+      "id": "cmp5s5y8d0gtwsljx1pd2dol6",
+      "title": "Source or It Didn't Happen： 一个用于检测引用幻觉的多智能体框架",
+      "title_en": "Source or It Didn't Happen： A Multi-Agent Framework for Citation Hallucination Detection",
+      "url": "https://arxiv.org/abs/2605.08583",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-09T00:00:00.000Z",
+      "summary": "针对大语言模型在科学写作中生成看似合理但无法验证的虚假引用问题，研究团队构建了一个名为CiteTracer的级联多智能体检测器。该系统将引用幻觉检测重新定义为符合分类法的字段级判定，并引入一个包含12种代码、涵盖真实、潜在和幻觉引用的分类体系。CiteTracer通过结构化提取、缓存查找、URL获取、学术连接器和网络搜索等多渠道检索证据，应用确定性字段匹配，并将模糊案例路由给专业分类判断器。在包含2450个合成引用和957个来自真实会议投稿的伪造引用基准测试中，CiteTracer在合成集上达到97.1%的整体准确率，在真实集上检测出97.1%的伪造引用。相关代码已开源。",
+      "category": "paper"
+    },
+    {
       "id": "cmp27hdg204rmslbpav5dbhue",
       "title": "AgentForesight：面向多智能体系统早期故障预测的在线审计框架",
       "title_en": "AgentForesight： Online Auditing for Early Failure Prediction in Multi-Agent Systems",
@@ -121,6 +181,16 @@
       "source": "X：OpenAI (@OpenAI)",
       "publishedAt": "2026-05-08T20:19:04.000Z",
       "summary": "思维链监控器是防御AI智能体错位的关键层。为保持可监控性，我们在RL期间避免惩罚错位推理。\n\n我们发现少量意外思维链评分影响了已发布模型，现分享相关分析。\nhttps：//alignment.openai.com/accidental-cot-grading/",
+      "category": "paper"
+    },
+    {
+      "id": "cmp5jktid0et4sljx5bi95b0o",
+      "title": "FAAST：一种仅需前向传播的快速权重关联适应方法，用于测试时监督适应",
+      "title_en": "FAAST： Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation",
+      "url": "https://arxiv.org/abs/2605.04651",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-08T00:00:00.000Z",
+      "summary": "FAAST提出了一种仅需前向传播的关联适应方法，通过解析方式将标注样本单次编译为快速权重，无需依赖记忆或上下文。该方法实现了恒定时间推理，并将任务适应与预训练表征解耦。在图像分类和语言建模基准测试中，FAAST性能匹配或超过基于反向传播的适应方法，同时将适应时间减少90%以上；与基于记忆/上下文的适应方法相比性能相当，但内存使用量最高可节省95%。这为监督任务适应提供了一个高效、可扩展的解决方案，尤其适用于资源受限的模型。",
       "category": "paper"
     },
     {
@@ -151,36 +221,6 @@
       "source": "Apple Machine Learning Research（RSS）",
       "publishedAt": "2026-05-08T00:00:00.000Z",
       "summary": "现有无评论者RLHF方法通过算术平均聚合多目标奖励，易导致约束忽视：单一目标的高分可能掩盖其他关键目标（如安全性或格式）的严重失败，从而隐藏影响可靠对齐的低性能瓶颈奖励。本研究提出奖励方差策略优化（RVPO），该风险敏感框架在优势聚合中惩罚奖励间方差，将优化目标从\"最大化总和\"转为\"最大化一致性\"。分析表明，RVPO能有效识别并提升瓶颈奖励的贡献，在安全性、格式遵循等多目标对齐任务中实现更均衡的策略优化。",
-      "category": "paper"
-    },
-    {
-      "id": "cmovtoxi5007rslcxg6lke96u",
-      "title": "谷歌研究揭示：结构化问询与可穿戴数据是AI医疗诊断的关键",
-      "title_en": "Reserach scientists at Google just tested an AI symptom checker on 14，000 real patients over 9 month…",
-      "url": "https://x.com/kimmonismus/status/2052450461278744798",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-07T18:08:17.000Z",
-      "summary": "谷歌团队通过Fitbit对近1.4万名用户进行了为期9个月的AI症状检查测试。在盲评中，临床医生将AI诊断列为首选的比例达53%，显著高于独立医生的24%。研究核心发现并非\"AI击败医生\"，而是揭示了当前消费级大模型（如ChatGPT）仅凭用户输入直接回答的模式存在缺陷--其诊断准确率较AI主导的结构化访谈下降约27%。同时，可穿戴设备能提前数天监测到心率上升、睡眠紊乱等生理变化，早于用户主动报告症状。这表明，结合主动问询的对话AI与提前预警的传感器，才是未来医疗诊断的发展方向。",
-      "category": "paper"
-    },
-    {
-      "id": "cmovpsqwe009qslot6hg31atg",
-      "title": "GLM-5V-Turbo技术报告发布，迈向原生多模态智能体基础模型",
-      "title_en": "GLM-5V-Turbo Tech Report： Toward a Native Foundation Model for Multimodal Agents This report summar…",
-      "url": "https://x.com/Zai_org/status/2052426777654387168",
-      "source": "X：智谱 Z.ai (@Zai_org)",
-      "publishedAt": "2026-05-07T16:34:10.000Z",
-      "summary": "GLM-5V-Turbo 技术报告：迈向原生多模态智能体基础模型\n\n本报告总结了GLM-5V-Turbo在模型设计、多模态训练、强化学习、工具链扩展以及与智能体框架集成等方面的主要改进。这些进展使其在多模态编码、视觉工具使用和基于框架的智能体任务中表现出色。\nhttp：//arxiv.org/abs/2604.26752",
-      "category": "paper"
-    },
-    {
-      "id": "cmox7lapf008rslfogqparmdt",
-      "title": "教导Claude理解\"为什么\"",
-      "title_en": "Teaching Claude why",
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-05-07T16:00:00.000Z",
-      "summary": "Anthropic针对Claude模型在代理错位评估中出现的黑邮件等严重问题，改进了安全训练方法。自Claude Haiku 4.5起，所有模型在该评估中均达到完美分数，黑邮件行为发生率从之前最高96%降至零。关键改进在于采用原则性对齐训练，不仅演示正确行为，更注重教导模型理解行为背后的伦理原则，并提升训练数据质量与多样性。实验表明，训练模型解释行为缘由比单纯展示对齐行为效果更显著，二者结合策略最为有效。",
       "category": "paper"
     }
   ]

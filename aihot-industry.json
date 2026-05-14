@@ -1,8 +1,68 @@
 {
-  "count": 29,
+  "count": 32,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp5syid70h0rsljxm5rb8sqj",
+      "title": "OpenEvidence覆盖65%美国医生，shadow AI模式引关注",
+      "title_en": "OpenEvidence 已经覆盖了65%的美国医生， 4月单月覆盖2700万次临床场景，算下来平均每个医生每月用41次，基本每个工作日都在用。 我一直以为是医院系统对接的。 结果是医生自己用执业编…",
+      "url": "https://x.com/frxiaobei/status/2054981573150449754",
+      "source": "X：小北 (@frxiaobei)",
+      "publishedAt": "2026-05-14T17:46:01.000Z",
+      "summary": "OpenEvidence已覆盖65%的美国医生，4月单月临床场景使用达2700万次，平均每位医生每月使用41次。平台由医生个人通过执业编号在手机上注册，医院最初不知情，Mount Sinai的AI负责人称此为shadow AI，表示其早在基层普及。医院后来才追签企业合作，OpenEvidence强调这是美国医疗史上首次让大多数医生自愿采用单一技术平台的突破。合作伙伴包括NEJM、JAMA、NCCN和Wiley，为此提供了支持。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp5na7ui0fmksljxalq3tlll",
+      "title": "Anthropic与盖茨基金会达成2亿美元合作，聚焦全球健康与教育",
+      "title_en": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-14T15:29:57.112Z",
+      "summary": "Anthropic与盖茨基金会建立为期四年、总额2亿美元的合作，通过资金、Claude使用额度及技术支持，共同推进全球健康、生命科学、教育及经济流动项目。合作重点包括改善中低收入国家约46亿人口的基本医疗，利用AI加速疫苗与疗法研发，并开发公共卫生数据集等公共产品。在教育领域，双方将为美国、撒哈拉以南非洲和印度的K-12学生开发AI教学工具。经济流动方面则关注提升小农户生产力及美国职业技能认证。首批成果预计今年晚些时候发布。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp5h85q80e87sljx5x6dehu6",
+      "title": "AI 热潮引发民怨：七成美国民众反对家门口建数据中心",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/950/598.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-14T12:09:52.000Z",
+      "summary": "盖洛普调查显示，高达七成美国民众反对在住宅附近建设数据中心，反对率较去年大幅上升，抵触情绪甚至超过对核电站的接受度。全美已有69个辖区出台暂停令，多地项目因抗议和监管纠纷延期。数据中心建设推高批发电价，导致用电成本激增，并引发空气污染、水资源消耗等担忧。尽管白宫要求AI企业承担配套成本，但仅为无约束力承诺，未来审批将更严苛。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp5aslx10cqlsljxxnzzlb43",
+      "title": "OpenAI遭集体诉讼，被指通过追踪代码向Meta等泄露用户查询隐私",
+      "title_en": "最近全网都在聊OpenAI的ChatGPT 5.5多厉害，Codex多好用之类的， 但没人注意到昨天刚爆的这个集体诉讼，这件事可能是真正炸穿底线的事。 南加州联邦法院昨天正式立案，原告代表所有美国…",
+      "url": "https://x.com/AYi_AInotes/status/2054856518185439662",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-05-14T09:29:05.000Z",
+      "summary": "南加州联邦法院已受理针对OpenAI的集体诉讼，指控其在ChatGPT网站中嵌入Facebook Pixel等代码，侵犯用户隐私。当用户提交查询时，查询主题会作为浏览器标题与含Facebook唯一ID的cookies一并实时发送给Meta。OpenAI虽称仅分享\"有限标识符\"用于广告，但原告认为查询主题本身即高度敏感的个人信息。此案揭示免费AI服务的潜在代价：用户每一次查询及数字身份可能成为被交易的产品，与许多用户为逃避追踪而选择ChatGPT的初衷形成讽刺对比。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp551zsa0bc8sljx4em2acvt",
+      "title": "百度推进智能体布局，以日活为关键指标",
+      "title_en": "Baidu Advances Agent Portfolio to Embrace the Agent Era， Champions Daily Active Agents as Key Metric…",
+      "url": "https://x.com/Baidu_Inc/status/2054815977477738549",
+      "source": "X：百度 Baidu (@Baidu_Inc)",
+      "publishedAt": "2026-05-14T06:48:00.000Z",
+      "summary": "百度推进智能体组合以拥抱智能体时代，主张将日活跃智能体作为关键指标\nhttps：//www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html",
+      "category": "industry"
+    },
+    {
+      "id": "cmp52uu7c0atssljxht55azd0",
+      "title": "MiMo V2.5 Pro 获设计竞技场季军",
+      "title_en": "MiMo V2.5 Pro just placed 3rd on @DesignArena！ 🎉",
+      "url": "https://x.com/XiaomiMiMo/status/2054797221250683199",
+      "source": "X：小米 MiMo (@XiaomiMiMo)",
+      "publishedAt": "2026-05-14T05:33:28.000Z",
+      "summary": "MiMo V2.5 Pro 在 @DesignArena 上刚刚获得第三名！🎉\n\nMiMo V2.5 Pro （Thinking） 在总排行榜上比 MiMo-V2.5 提升了 8 个名次，在前端编码任务中达到与 Claude Sonnet 4.6 相同的性能水平。\n\n衷心祝贺 @XiaomiMiMo 团队取得这些进步！",
+      "category": "industry"
+    },
     {
       "id": "cmp4eqy8u059osljxs6c4bk0v",
       "title": "Anthropic 首次在 B2B 采用率上超越 OpenAI，Ramp 支出数据显示",
@@ -31,6 +91,16 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-13T03:48:15.000Z",
       "summary": "据报道，AI公司Anthropic正就新一轮融资进行初步谈判，目标是以超过9000亿美元的投前估值筹集至少300亿美元资金。这有望成为该公司迄今最大规模的融资轮次，交易最快可能在本月底完成。此前，Anthropic在今年2月完成了300亿美元的G轮融资，投后估值为3800亿美元，并从谷歌和亚马逊获得了150亿美元的投资承诺。为应对高昂的算力成本，公司计划于今年晚些时候进行首次公开募股（IPO）。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp50f2e30aabsljxqciw1nhg",
+      "title": "OpenAI 回应 TanStack npm 供应链攻击并加强安全措施",
+      "title_en": "Our response to the TanStack npm supply chain attack",
+      "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-13T00:00:00.000Z",
+      "summary": "OpenAI 针对 TanStack \"Mini Shai-Hulud\" npm 供应链攻击事件作出响应。攻击者通过维护者账户发布了恶意伪造包。OpenAI 确认内部系统未受影响，但为防范风险，已撤销并重签所有相关代码签名证书，并要求 macOS 用户在 2026 年 6 月 12 日前更新应用。公司同时加强了第三方依赖审查和自动化安全监控，以提升软件供应链安全防御。",
       "category": "industry"
     },
     {
@@ -81,16 +151,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-12T03:55:51.000Z",
       "summary": "全国首例 AI 代写\"种草笔记\"不正当竞争案在浙江省杭州市中级人民法院宣判。被告 B 公司和 C 公司运营的 AI 写作工具能一键生成某社交平台风格的种草文案，以会员制营利，诱导用户发布虚假消费体验，破坏平台真实内容生态。法院判决被告赔偿原告经济损失及合理开支共计 10 万元，并创新性使用\"四要素判定法\"，明确生成式人工智能服务提供者需尽到合理注意义务，为治理 AI 生成虚假信息划定了法律边界。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp251p370473slbp0fffj413",
-      "title": "npm 生态遭大范围投毒：TanStack、Mistral AI、UiPath 等受波及，可窃取云密钥与 GitHub 令牌",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/949/178.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-12T03:42:03.000Z",
-      "summary": "网络安全机构Socket发现针对npm生态的大规模供应链攻击\"Mini Shai-Hulud\"。攻击者组合利用GitHub Actions的三种漏洞，绕过了双重身份验证等保护机制，向TanStack、Mistral AI、UiPath等知名项目的软件包中植入恶意版本。被篡改的包在安装时会自动执行恶意代码，窃取AWS、GCP、Kubernetes、GitHub令牌及SSH私钥等敏感凭证。此次攻击波及超过160个包名、近373个恶意版本，目前所有恶意版本已被清理。",
       "category": "industry"
     },
     {
@@ -261,36 +321,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-07T22:55:17.000Z",
       "summary": "据报道，苹果内置摄像头的AirPods已进入设计验证测试（DVT）阶段，最快有望于今年9月作为其首款AI可穿戴设备发布。该产品左右耳机配备低分辨率摄像头，用于捕捉环境视觉信息，以支持升级版Siri实现视觉问答等功能。其整体外观类似AirPods Pro 3，但耳机柄因容纳摄像头而加长。产品原计划2026年发布，因Siri升级延迟而推迟，此次升级得益于与谷歌Gemini的技术合作。苹果还在探索其导航提醒等用途，并为缓解隐私担忧内置了数据上传指示灯。",
-      "category": "industry"
-    },
-    {
-      "id": "cmovprqex009jslotvm89egug",
-      "title": "NBC关注Suno短信转歌曲AI热潮",
-      "title_en": "NBC News just spotlighted the text-message-to-song viral trend using Suno！ https：//www.nbcnews.com/n…",
-      "url": "https://x.com/suno/status/2052422389401620760",
-      "source": "X：Suno (@suno)",
-      "publishedAt": "2026-05-07T16:16:44.000Z",
-      "summary": "NBC News刚刚重点报道了使用Suno的短信转歌曲病毒式趋势！\nhttps：//www.nbcnews.com/now/video/people-are-turning-text-message-threads-into-fun-songs-using-ai-in-a-new-trend-on-social-media-262862405776",
-      "category": "industry"
-    },
-    {
-      "id": "cmoxivzb2023rsllhka40ewoy",
-      "title": "我们保护儿童安全的方法",
-      "title_en": "Our Approach to Child Safety",
-      "url": "https://runwayml.com/news/our-approach-to-child-safety",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-05-07T16:00:00.000Z",
-      "summary": "Runway公司遵循Thorn的\"生成式AI安全设计\"原则，全流程保护儿童免受AI滥用。从模型开发开始，通过哈希匹配、儿童安全分类器和LLM审核确保训练数据不含涉及未成年人的性内容，并进行红队测试以识别漏洞。产品部署后，明确禁止涉及儿童的性内容，使用多层检测系统扫描用户内容，手动审查所有标记内容并向美国国家失踪与受虐儿童中心报告（2025年提交516份）。同时实施C2PA来源信号追踪内容生成，并持续与行业组织合作应对威胁。",
-      "category": "industry"
-    },
-    {
-      "id": "cmov7pbbj01njsluviaiw41i6",
-      "title": "全国首例 AI 短剧侵权刑事案一审宣判：盗录超 1700 部牟利获刑，构成侵犯著作权罪",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/947/300.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-07T07:58:08.000Z",
-      "summary": "全国首例AI短剧侵权刑事案一审宣判。被告人盗录某公司AI工具生成的短剧超过1700部，并在二手平台以66.66元打包出售牟利，构成侵犯著作权罪。法院认定，这些短剧由用户输入原创剧本、情节等提示词生成，体现了独创性表达，属于受著作权法保护的作品。被告人被判处有期徒刑八个月，缓刑一年两个月，并处罚金人民币六千元。涉案公司平台已累计生成超7000部AI短剧，单价数元至十几元，热门剧销量可达上千份。",
       "category": "industry"
     }
   ]

@@ -1,8 +1,48 @@
 {
-  "count": 22,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp5wen830hsgsljxyhi7cgwl",
+      "title": "Granite Embedding Multilingual R2：开源多语言嵌入模型，具备32K上下文与领先检索性能",
+      "title_en": "Granite Embedding Multilingual R2： Open Apache 2.0 Multilingual Embeddings with 32K Context - Best Sub-100M Retrieval Quality",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-05-14T18:55:01.000Z",
+      "summary": "IBM Granite团队在Hugging Face发布了Granite Embedding Multilingual R2多语言文本嵌入模型。该模型采用Apache 2.0开源协议，上下文长度扩展至32K令牌，参数量低于1亿。在MTEB基准的检索评估中，它取得了同规模模型的最佳性能，尤其擅长多语言混合检索，为开发者提供了高效、轻量且可商用的嵌入解决方案。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp5e77be0djjsljxd0phuv7m",
+      "title": "SenseNova U1技术报告发布，基于MoE架构开放模型权重",
+      "title_en": "Led by our Co-Founder and Chief Scientist Dr. @lindahua ， our passionate AI pioneers have brought vi…",
+      "url": "https://x.com/SenseTime_AI/status/2054876860711149780",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-05-14T10:49:56.000Z",
+      "summary": "由联合创始人兼首席科学家李沐博士领导的团队发布了SenseNova U1技术报告，详细阐述了其架构、训练方案与创新突破。此次开源同步发布了基于混合专家模型（MoE）的新权重，旨在推动AI领域的透明度、可复现性与进一步创新。团队希望通过开放共享促进整个社区的技术发展。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp5nc87y0fmvsljx9u9zvsfh",
+      "title": "inclusionAI/Ring-2.6-1T",
+      "title_en": null,
+      "url": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "publishedAt": "2026-05-14T08:10:02.000Z",
+      "summary": "inclusionAI发布了Ring-2.6-1T模型。该模型在Claw-Eval基准测试中取得了两项关键评估结果：在通用能力评估（General）上得分为58.4，在多轮对话评估（Multi Turn）上得分为86.8。这些分数已记录在相应的评估结果排行榜中。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp53f6lu0azgsljxdeumgldk",
+      "title": "Kimi K2.6登顶金融智能体基准榜首",
+      "title_en": "Kimi K2.6 is now open-weight #1 on Finance Agent Benchmark V2.",
+      "url": "https://x.com/Kimi_Moonshot/status/2054803169994272819",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-05-14T05:57:06.000Z",
+      "summary": "Kimi K2.6 现已成为 Finance Agent Benchmark V2 开源权重排名第一。\n\n【引用 @ValsAI】：AI 能胜任金融分析师的工作吗？",
+      "category": "ai-models"
+    },
     {
       "id": "cmp4hjq4f05wvsljx7w60ec13",
       "title": "AI角色实现记忆共情与主动交互",
@@ -191,36 +231,6 @@
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-05-08T16:03:50.000Z",
       "summary": "EMO是一种新型专家混合模型，通过端到端预训练使模块化结构直接从数据中涌现，无需依赖人类定义的先验。该模型允许在特定任务中仅使用12.5%的专家子集（即8个活跃专家中的部分），同时保持接近全模型的性能；当所有128个专家共同使用时，它仍作为强大的通用模型。EMO具有1B活跃参数和14B总参数，训练数据达1万亿令牌。与标准MoE相比，EMO通过文档级路由约束，鼓励专家形成领域专业化组，从而支持选择性使用而不导致严重性能下降，实现了可组合架构，优化了大型稀疏MoE的内存-准确性权衡。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmovmd98i00visldd0dd0ozux",
-      "title": "万亿参数指令模型Ling-2.6-1T发布",
-      "title_en": "Announcing Ling-2.6-1T by inclusionAI， now available on OpenRouter. 🚀 This trillion-parameter flags…",
-      "url": "https://x.com/AntLingAGI/status/2052404630488023536",
-      "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "publishedAt": "2026-05-07T15:06:10.000Z",
-      "summary": "inclusionAI宣布Ling-2.6-1T现已在OpenRouter上线。🚀\n这款万亿参数旗舰指令模型专为现实世界智能体打造。它采用\"快速思考\"方法，在保持AIME26和SWE-bench Verified基准测试顶尖性能的同时，将成本降低约75%。适用于：\n- 高级编程\n- 复杂推理\n- 大规模智能体工作流",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmow0r6l301w4slcxxatn6f7p",
-      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
-      "title_en": null,
-      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-07T13:00:00.000Z",
-      "summary": "OpenAI扩展了网络安全领域的可信访问计划，推出了GPT-5.5和专门针对网络安全的GPT-5.5-Cyber模型。此举旨在帮助经过验证的网络安全防御者加速漏洞研究，并加强对关键基础设施的保护。新模型将为安全专业人员提供更强大的AI工具支持。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmovr364j00j9slotqnozmpjp",
-      "title": "通过 API 中的新模型推进语音智能",
-      "title_en": "Advancing voice intelligence with new models in the API",
-      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-07T10:00:00.000Z",
-      "summary": "OpenAI API 推出了新的实时语音模型，能够进行推理、翻译和语音转录。这些模型显著提升了语音交互的自然度与智能水平，支持实时处理与多语言转换。新功能旨在为开发者提供更强大的工具，以构建更流畅、更智能的语音应用体验。",
       "category": "ai-models"
     }
   ]
