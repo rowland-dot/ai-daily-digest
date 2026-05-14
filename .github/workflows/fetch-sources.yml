@@ -184,7 +184,7 @@ jobs:
             docs/audio-cues-en.json
             docs/audio-cues-zh.json
             docs/content-translations.json
-          key: audio-v21-${{ steps.data-hash.outputs.hash }}
+          key: audio-v22-${{ steps.data-hash.outputs.hash }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.mode-final.outputs.value == 'full' && steps.audio-cache.outputs.cache-hit != 'true'
@@ -199,6 +199,11 @@ jobs:
 
       - name: Generate narration MP3 + refresh translations
         if: steps.mode-final.outputs.value == 'full'
+        env:
+          # Script uses this to decide whether to skip TTS regen. Pipeline-state
+          # cache restores stale docs/*.mp3 before this step, so file presence
+          # is not a reliable cache-hit signal — only the audio-cache step is.
+          AUDIO_CACHE_HIT: ${{ steps.audio-cache.outputs.cache-hit }}
         run: |
           mkdir -p docs
           python scripts/generate-audio.py

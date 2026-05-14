@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import re
 import subprocess
 import sys
@@ -743,8 +744,12 @@ def collect_and_translate_ui_strings() -> dict:
     return out
 
 
-def _tts_outputs_exist() -> bool:
-    return all((SITE / f).exists() for f in ("digest.mp3", "digest-en.mp3", "digest-zh.mp3"))
+def _audio_cache_hit() -> bool:
+    """True only when the workflow's audio cache restore actually hit.
+    File presence is NOT a valid signal because the pipeline-state cache
+    restore copies the previous run's docs/digest.mp3 into place BEFORE
+    this script runs, regardless of whether the data hash matches."""
+    return os.environ.get("AUDIO_CACHE_HIT", "").lower() == "true"
 
 
 def main() -> int:
@@ -759,10 +764,13 @@ def main() -> int:
     except Exception as e:
         print(f"[warn] UI translation pass failed: {e}", file=sys.stderr)
 
-    # Skip TTS if MP3s already exist (audio cache hit). Translation
-    # has been refreshed above so the page side is up to date.
-    if _tts_outputs_exist():
-        print("[skip] MP3 tracks exist — skipping TTS regeneration.")
+    # Skip TTS only on a genuine audio-cache hit (signalled by the
+    # workflow via AUDIO_CACHE_HIT=true). Checking file presence is not
+    # reliable here — the pipeline-state restore copies prior-run MP3s
+    # into docs/ before this script runs even when the data hash has
+    # changed, which is exactly the cause of audio/page drift.
+    if _audio_cache_hit():
+        print("[skip] audio-cache hit — skipping TTS regeneration.")
         return 0
 
     # Each entry: (anchor or None, text, voice). One TTS call per entry.
