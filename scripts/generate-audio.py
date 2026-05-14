@@ -182,10 +182,30 @@ def _preserve_terms(text: str):
     return modified, placeholders
 
 
+_MANGLED_PH_RE = re.compile(r"xqzj(\d{1,5})[A-Za-z]{0,6}")
+
+
 def _restore_terms(text: str, placeholders: dict[str, str]) -> str:
     out = text
+    # Pass 1 — exact matches.
     for ph, original in placeholders.items():
         out = out.replace(ph, original)
+    # Pass 2 — fuzzy match for placeholders Google Translate mangled
+    # in transit. Pattern: 'xqzj' + 1-5 digits + 0-6 trailing letters
+    # (which may differ from the original 'xqzj' suffix because Google
+    # randomly substitutes characters in unfamiliar tokens — we've seen
+    # 'xqzj0000xqzj' come back as 'xqzj0000qqzj' or 'xqzj0000xqxj').
+    # Match by digit index alone; restore from placeholders dict.
+    def fuzzy_sub(m):
+        idx = m.group(1)
+        # Try the canonical key for this index.
+        canonical = f"xqzj{int(idx):04d}xqzj"
+        if canonical in placeholders:
+            return placeholders[canonical]
+        # Fall back: strip the broken placeholder entirely so it never
+        # leaks to the user.
+        return ""
+    out = _MANGLED_PH_RE.sub(fuzzy_sub, out)
     return out
 
 
@@ -205,7 +225,7 @@ def translate(text: str, target_lang: str) -> str:
     if target_lang == "zh" and text_has_zh:
         return text
     cache = _load_trans_cache()
-    key = f"v4::{target_lang}::{text}"  # v4: + name-pattern preservation + curly-quote strip
+    key = f"v5::{target_lang}::{text}"  # v5: + fuzzy-restore for mangled placeholders
     if key in cache:
         return cache[key]
     try:
@@ -825,16 +845,16 @@ def main() -> int:
             for k in summary_keys:
                 it[k] = c["en"]
             if c.get("zh"):
-                trans_cache[f"v4::zh::{c['en']}"] = c["zh"]
-                trans_cache[f"v4::en::{c['zh']}"] = c["en"]
+                trans_cache[f"v5::zh::{c['en']}"] = c["zh"]
+                trans_cache[f"v5::en::{c['zh']}"] = c["en"]
             # Phase 6: Claude rewrites noisy/numeric titles into clean
             # audio-friendly ones. When present, overlay the clean
             # title so narration uses it instead of the raw original.
             if c.get("title_en") and c["title_en"].strip():
                 it[title_key] = c["title_en"].strip()
                 if c.get("title_zh") and c["title_zh"].strip():
-                    trans_cache[f"v4::zh::{c['title_en']}"] = c["title_zh"]
-                    trans_cache[f"v4::en::{c['title_zh']}"] = c["title_en"]
+                    trans_cache[f"v5::zh::{c['title_en']}"] = c["title_zh"]
+                    trans_cache[f"v5::en::{c['title_zh']}"] = c["title_en"]
             overlay_count += 1
 
     # Lab announcements section — merge OpenAI + Anthropic news +
