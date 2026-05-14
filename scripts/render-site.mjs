@@ -1698,6 +1698,47 @@ function txAttrs(text) {
   return a.length > 1 ? " " + a.join(" ") : "";
 }
 
+// Detect titles that read as gibberish to a human/audio listener:
+// HF/GH slug suffixes ("AIDC-AI/Ovis2.6-80B-A3B · Hugging Face"),
+// model-spec paths ("org/model-13B-Instruct"), or content that's
+// mostly punctuation+digits+short uppercase tokens with no real words.
+function isNoisyTitle(title) {
+  if (!title) return false;
+  const t = String(title).trim();
+  if (!t) return false;
+  if (/[·|]\s*(Hugging\s*Face|GitHub|HF|GH)\b/i.test(t)) return true;
+  if (/\/[\w.-]*\d+\s*[BMK]\b/i.test(t)) return true;            // org/model-80B
+  if (/^[\w.-]*\/[\w.-]+/i.test(t) && /\d+[BMK]/i.test(t)) return true;
+  // Word-density floor: real words (4+ lowercase letters) should make
+  // up at least 30% of the title. Below that = numeric/spec soup.
+  if (t.length > 25) {
+    const wordy = (t.match(/\b[a-z]{4,}\b/gi) || []).join(" ");
+    if (wordy.length < t.length * 0.3) return true;
+  }
+  return false;
+}
+
+// Pull a clean title-length sentence from the Claude summary as a
+// fallback when the routine didn't supply title_en for a noisy item.
+function deriveTitleFromSummary(summary, maxLen = 90) {
+  if (!summary) return "";
+  const s = String(summary).trim();
+  if (!s) return "";
+  const first = s.split(/(?<=[.!?])\s+/)[0] || s;
+  if (first.length <= maxLen) return first;
+  const cut = first.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut) + "…";
+}
+
+// Defensive: strip any leaked PRESERVE_TERMS placeholder pattern
+// (e.g. "xqzj0000xqzj" or its mangled cousins) before display.
+const _PLACEHOLDER_LEAK_RE = /xqzj\d{1,5}[A-Za-z]{0,6}/g;
+function stripPlaceholderLeak(text) {
+  if (text == null) return text;
+  return String(text).replace(_PLACEHOLDER_LEAK_RE, "").replace(/\s+/g, " ").trim();
+}
+
 // For each in-scope item: if a Claude-generated EN+ZH summary exists,
 // overwrite the visible summary text with Claude's EN, and stamp the
 // translation table so txAttrs(claude.en) returns Claude's ZH directly
@@ -1722,13 +1763,32 @@ function applyClaudeSummaries(items, urlKey, summaryKey = "summary", titleKey = 
     // titles (numeric specs / slug fragments / etc.). When present,
     // overlay it onto the displayed title and stamp the original
     // into _origTitle for audit. Fall through if absent.
+    const origTitle = it[titleKey] || "";
     if (claude.title_en && claude.title_en.trim()) {
-      it._origTitle = it[titleKey] || "";
+      it._origTitle = origTitle;
       it[titleKey] = claude.title_en.trim();
       if (claude.title_zh && claude.title_zh.trim()) {
         contentTranslations[claude.title_en.trim()] = { zh: claude.title_zh.trim() };
       }
+    } else if (isNoisyTitle(origTitle)) {
+      // Routine didn't rewrite this one but the title is gibberish.
+      // Derive a clean title from the Claude summary's first sentence
+      // so we never display a slug like "AIDC-AI/Ovis2.6-80B-A3B · HF".
+      const derivedEn = deriveTitleFromSummary(claude.en);
+      if (derivedEn) {
+        it._origTitle = origTitle;
+        it[titleKey] = derivedEn;
+        if (claude.zh) {
+          const derivedZh = deriveTitleFromSummary(claude.zh, 60);
+          if (derivedZh) contentTranslations[derivedEn] = { zh: derivedZh };
+        }
+      }
     }
+    // Belt-and-braces: defensively strip any leaked PRESERVE_TERMS
+    // placeholder pattern from the visible text, regardless of source.
+    it[titleKey] = stripPlaceholderLeak(it[titleKey]);
+    it[summaryKey] = stripPlaceholderLeak(it[summaryKey]);
+    if (it.description != null) it.description = stripPlaceholderLeak(it.description);
   }
 }
 
