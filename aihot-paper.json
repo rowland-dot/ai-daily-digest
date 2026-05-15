@@ -1,8 +1,18 @@
 {
-  "count": 22,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp67ce3h0kc6sljxivzzmvqx",
+      "title": "AI自主研究实现突破：智能体在nanoGPT优化赛道上超越人类基准",
+      "title_en": "Prime Intellect 最近把 AI 研究自动化推到了一个新阶段。 他们让 Claude Code（Opus 4.7）和 Codex（GPT 5.5）完全自主运行在 nanoGPT spe…",
+      "url": "https://x.com/berryxia/status/2055074608261578949",
+      "source": "X：Berry Xia (@berryxia)",
+      "publishedAt": "2026-05-14T23:55:42.000Z",
+      "summary": "Prime Intellect 近期在AI研究自动化领域取得重要进展。他们让Claude Code与Codex智能体完全自主运行于nanoGPT速度挑战的优化器赛道，利用闲置算力完成了近万次实验，消耗约1.4万H200小时。最终，Claude Code将记录提升至2930步，超越了2990步的人类基准。实验显示，智能体在系统整合社区主流优化方法、进行超参数扫描和策略组合方面效率极高，但在要求真正创新的\"新颖性检查\"环节未能突破基线。该项目将所有实验记录、日志和代码开源，使得AI自主研究从概念转化为可复现的现实。",
+      "category": "paper"
+    },
     {
       "id": "cmp4yeqnn09sksljxvgbqhxp4",
       "title": "教视觉-语言模型说\"电影语言\"",
@@ -21,6 +31,36 @@
       "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
       "publishedAt": "2026-05-14T02:48:58.000Z",
       "summary": "NousResearch发布了Token Superposition Training（TST），这是一种改进标准大语言模型预训练流程的方法。该技术无需改变模型架构、优化器、分词器或训练数据，即可在相同计算量（FLOPs）下实现2-3倍的训练时间加速。其核心是在训练的前三分之一阶段，让模型读取并预测连续的token包，对输入嵌入进行平均，并使用改进的交叉熵损失预测下一个token包；剩余训练时间则恢复为标准的下一个token预测。推理阶段的模型与传统预训练产生的模型完全相同。该方法已在270M、600M、3B的密集模型以及10B至1B的混合专家模型规模上得到验证。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp6dojkq011lslnz6pqfta9e",
+      "title": "MemLens：大型视觉语言模型多模态长时记忆基准测试",
+      "title_en": "MemLens： Benchmarking Multimodal Long-Term Memory in Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2605.14906",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-14T00:00:00.000Z",
+      "summary": "研究团队推出MEMLENS基准，系统评估大型视觉语言模型在多模态多轮对话中的长时记忆能力。该基准包含789个问题，涵盖五大记忆能力，并在四种标准上下文长度下测试。评估27个长上下文模型和7个记忆增强代理后发现：长上下文模型在短对话中表现良好但随对话延长性能下降；记忆代理长度稳定性好但损失视觉保真度。多轮推理任务将多数系统性能限制在30%以下，表明需结合长上下文注意力与结构化多模态检索的混合架构。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp678eb70kb5sljxutt016gd",
+      "title": "迈向自我进化的智能文献检索系统",
+      "title_en": "Towards Self-Evolving Agentic Literature Retrieval",
+      "url": "https://arxiv.org/abs/2605.14306",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-14T00:00:00.000Z",
+      "summary": "针对传统检索无法理解复杂意图、而前沿大语言模型成本高且存在幻觉的问题，研究团队提出了自我进化的智能文献检索系统PaSaMaster。该系统通过迭代式意图分析、检索与排序，将文献检索转变为动态演进的过程，并采用三项关键设计：利用排序证据揭示信息缺口以优化搜索；将检索定义为意图-论文相关性排序任务，从根本上杜绝虚假文献；通过分离规划与检索来提升效率，仅用大模型理解意图，而将大规模检索与评分交由轻量模型处理。在涵盖38个学科的基准测试中，该系统将传统关键词检索的F1分数提升15.6倍，完全消除了文献幻觉，且性能超越GPT-5.2达30%，计算成本仅为后者的1%。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp6bj8c100i9slnz570dpbpu",
+      "title": "通过简单统一的扩展实现奥赛金牌级推理",
+      "title_en": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
+      "url": "https://arxiv.org/abs/2605.13301",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-13T00:00:00.000Z",
+      "summary": "本文提出一种将预训练推理模型转化为严格奥赛求解器的统一方法。该方法首先采用反向困惑度课程进行监督微调，以灌输严谨的证明搜索与自我检查行为；随后通过两阶段强化学习流程扩展这些能力，最终结合测试时扩展提升性能。基于此方案训练的30B参数模型SU-01，在仅使用约34万条短轨迹微调和200步强化学习后，能稳定处理超过10万token的长轨迹难题，并在IMO、USAMO、IPhO等数学与物理奥赛中达到金牌级表现，同时展现出向数学物理之外科学领域的强推理泛化能力。",
       "category": "paper"
     },
     {
@@ -171,56 +211,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-09T00:00:00.000Z",
       "summary": "针对LLM多智能体系统在长程任务中因关键错误扩散导致整体失败的问题，本研究提出在线审计框架AgentForesight。该框架能在任务执行过程中实时观察轨迹前缀，并在最早的关键错误处发出警报。研究构建了AFTraj-2K轨迹语料库，并基于此开发了AgentForesight-7B模型。该模型采用由粗到细的强化学习策略训练，在AFTraj-2K和外部基准测试中，其性能超越GPT-4.1等领先专有模型，实现了高达+19.9%的性能提升，并将步骤定位误差降低3倍，从而将故障处理从事后归因转向部署时干预。",
-      "category": "paper"
-    },
-    {
-      "id": "cmoxd7fk000tdsllhs7ybwwpf",
-      "title": "OpenAI分析意外思维链评分对模型影响",
-      "title_en": "Chain of thought monitors are a key layer of defense against AI agent misalignment. To preserve moni…",
-      "url": "https://x.com/OpenAI/status/2052845764507062349",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-05-08T20:19:04.000Z",
-      "summary": "思维链监控器是防御AI智能体错位的关键层。为保持可监控性，我们在RL期间避免惩罚错位推理。\n\n我们发现少量意外思维链评分影响了已发布模型，现分享相关分析。\nhttps：//alignment.openai.com/accidental-cot-grading/",
-      "category": "paper"
-    },
-    {
-      "id": "cmp5jktid0et4sljx5bi95b0o",
-      "title": "FAAST：一种仅需前向传播的快速权重关联适应方法，用于测试时监督适应",
-      "title_en": "FAAST： Forward-Only Associative Learning via Closed-Form Fast Weights for Test-Time Supervised Adaptation",
-      "url": "https://arxiv.org/abs/2605.04651",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-08T00:00:00.000Z",
-      "summary": "FAAST提出了一种仅需前向传播的关联适应方法，通过解析方式将标注样本单次编译为快速权重，无需依赖记忆或上下文。该方法实现了恒定时间推理，并将任务适应与预训练表征解耦。在图像分类和语言建模基准测试中，FAAST性能匹配或超过基于反向传播的适应方法，同时将适应时间减少90%以上；与基于记忆/上下文的适应方法相比性能相当，但内存使用量最高可节省95%。这为监督任务适应提供了一个高效、可扩展的解决方案，尤其适用于资源受限的模型。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp1fluyp0xs3sllhsmw57qxw",
-      "title": "以轨迹为师：基于能量导航蒸馏的少步离散流匹配",
-      "title_en": "Trajectory as the Teacher： Few-Step Discrete Flow Matching via Energy-Navigated Distillation",
-      "url": "https://arxiv.org/abs/2605.07924",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-08T00:00:00.000Z",
-      "summary": "针对离散流匹配生成文本需数百步迭代的问题，本研究提出轨迹塑形离散流匹配方法。传统蒸馏中，由随机跳跃构建的轨迹质量是性能瓶颈。新方法引入轻量级\"能量罗盘\"，在训练时评估并选择最连贯的候选序列来引导轨迹生成，此过程仅增加训练成本。在1.7亿参数语言建模任务中，经塑形的8步学生模型比1024步教师模型困惑度降低32%、速度提升128倍，且在不同数据与模型规模上表现一致。该方法取得了优于所有对比基线的最佳困惑度，包括使用更多数据或更大模型的方案。",
-      "category": "paper"
-    },
-    {
-      "id": "cmoxbjykj00fhsllh5e7zljfh",
-      "title": "Velox：学习4D几何与外观的表示",
-      "title_en": "Velox： Learning Representations of 4D Geometry and Appearance",
-      "url": "https://machinelearning.apple.com/research/velox",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-05-08T00:00:00.000Z",
-      "summary": "Velox提出一个学习4D对象潜在表示的框架，该表示具备描述性、压缩性与易获取性。它仅需非结构化动态点云作为输入，通过编码器将时空彩色点云压缩为动态形状标记，并利用两个互补解码器进行监督：4D表面解码器建模随时间变化的表面分布以捕捉几何信息，高斯解码器则负责外观重建。该方法在保持高保真度的同时提升了下游任务的效率。",
-      "category": "paper"
-    },
-    {
-      "id": "cmox787mj007fslfoi53rqpks",
-      "title": "RVPO：基于方差正则化的风险敏感对齐",
-      "title_en": "RVPO： Risk-Sensitive Alignment via Variance Regularization",
-      "url": "https://machinelearning.apple.com/research/rvpo-risk-sensitive-alignment",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-05-08T00:00:00.000Z",
-      "summary": "现有无评论者RLHF方法通过算术平均聚合多目标奖励，易导致约束忽视：单一目标的高分可能掩盖其他关键目标（如安全性或格式）的严重失败，从而隐藏影响可靠对齐的低性能瓶颈奖励。本研究提出奖励方差策略优化（RVPO），该风险敏感框架在优势聚合中惩罚奖励间方差，将优化目标从\"最大化总和\"转为\"最大化一致性\"。分析表明，RVPO能有效识别并提升瓶颈奖励的贡献，在安全性、格式遵循等多目标对齐任务中实现更均衡的策略优化。",
       "category": "paper"
     }
   ]

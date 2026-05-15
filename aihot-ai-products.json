@@ -1,8 +1,138 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4NTA5NDcxMDAwLCJpIjoiY21wMWF1M3EyMHdubnNsbGhwMDRwMHJvaCJ9",
+  "nextCursor": "eyJhIjoxNzc4NjAwNTk1MDAwLCJpIjoiY21wMnRsZml4MDBqcHNsMXFkZ2Vwd3p1OSJ9",
   "items": [
+    {
+      "id": "cmp7ck9n009a6slnzs9t4octw",
+      "title": "Krea 2正式上线面向专业用户",
+      "title_en": "starting today Krea 2 goes live for Pro users.",
+      "url": "https://x.com/krea_ai/status/2055371934452642107",
+      "source": "X：Krea AI (@krea_ai)",
+      "publishedAt": "2026-05-15T19:37:10.000Z",
+      "summary": "从今天起，Krea 2 正式为 Pro 用户上线。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp7ajz1p08ucslnzqivkv5dv",
+      "title": "语义代码审查工具clawpatch发布",
+      "title_en": "🩹 clawpatch 0.1.0 is live： Clawpatch maps codebases into semantic feature slices， reviews them for…",
+      "url": "https://x.com/steipete/status/2055364630709448970",
+      "source": "X：Peter Steinberger (@steipete)",
+      "publishedAt": "2026-05-15T19:08:09.000Z",
+      "summary": "🩹 clawpatch 0.1.0 已上线：\n\nClawpatch 将代码库映射成语义功能切片，审查其中的错误和质量问题，并记录经过验证的明确修复尝试。\n\n您会发现它能发现的问题之多令人惊讶。\nnpm install -g clawpatch\nhttps：//clawpatch.ai",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp7b8bdg08y8slnzf39s0jz4",
+      "title": "Runway Agent一键生成完整广告",
+      "title_en": "Runway Agent lets you go from a product shot and an idea to a fully finished ad in a single session….",
+      "url": "https://x.com/runwayml/status/2055364605979869229",
+      "source": "X：Runway (@runwayml)",
+      "publishedAt": "2026-05-15T19:08:03.000Z",
+      "summary": "Runway Agent 让你仅需一次会话，就能从产品照片和想法转变为完全制作完成的广告。\n立即通过下方链接开始体验。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp72z8pw0715slnz6cpkuxls",
+      "title": "OpenRouter BYOK三大升级 支持多密钥轮换",
+      "title_en": "Three big upgrades to BYOK on OpenRouter 🔑 1/ Add multiple keys for the same provider in one works…",
+      "url": "https://x.com/OpenRouter/status/2055305259287801865",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-05-15T15:12:14.000Z",
+      "summary": "OpenRouter BYOK 三项重大升级 🔑\n\n1/ 可在同一工作空间为同一服务商添加多个密钥，并设置调用顺序。\n\n便于在速率限制间轮换、区分开发与生产凭证，或在团队账户间分配使用量！",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp6yru3g061kslnzz7uthrl7",
+      "title": "X平台开源\"For You\"信息流推荐算法",
+      "title_en": "NEWS： X has published the latest recommendation algorithm on GitHub. Grok Summary of the new algor…",
+      "url": "https://x.com/cb_doge/status/2055280665583898691",
+      "source": "X：cb_doge (@cb_doge)",
+      "publishedAt": "2026-05-15T13:34:30.000Z",
+      "summary": "X平台在GitHub开源了其\"For You\"信息流的最新推荐算法。该算法融合来自已关注账号的内容和通过相似性搜索发现的网络外内容，并利用基于Grok架构的Phoenix Transformer模型进行统一评分。模型通过分析用户近期互动，同时预测点赞、回复、转发等多种互动概率，并综合成最终相关性分数。排序过程包括候选内容收集、上下文信息补充、AI模型评分、多样性调整及垃圾信息过滤等步骤。此次开源提供了完整的可运行管道、预训练模型、内容理解服务及内置广告混合模块，核心计算完全由Transformer模型驱动。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp6y3j0c05voslnzmxq8stxq",
+      "title": "OpenClaw新版本速度提升约3.5倍",
+      "title_en": "The latest OpenClaw release is ~3.5x faster 🦞 We run end-to-end RTT tests against every published …",
+      "url": "https://x.com/openclaw/status/2055273947537490422",
+      "source": "X：OpenClaw (@openclaw)",
+      "publishedAt": "2026-05-15T13:07:48.000Z",
+      "summary": "最新版OpenClaw速度提升约3.5倍 🦞\n\n我们每6小时通过真实消息渠道（此处使用Telegram，采用全新的机器人间通信）对所有已发布的npm版本进行端到端RTT测试。不再有静默回归。\n\n所有运行器均在@useblacksmith CI上运行。\n在您察觉之前捕捉减速问题。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp6u4ijo04xmslnze0r0uhb1",
+      "title": "Pixverse模板：让你成为全场焦点",
+      "title_en": "Pixverse makes you the star of the show~ Make it with Concert Spotlight Template on Pixverse web！",
+      "url": "https://x.com/PixVerse_/status/2055245210184200497",
+      "source": "X：PixVerse (@PixVerse_)",
+      "publishedAt": "2026-05-15T11:13:37.000Z",
+      "summary": "Pixverse让你成为焦点~\n用Pixverse网页版的音乐会聚光灯模板制作吧！",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp67ce3h0kc5sljx3k4pqd56",
+      "title": "开源3D生成工具包：单张图片快速构建可交互3D世界",
+      "title_en": ".@neilsonks 刚刚把一个完整的 3D 生成工具包开源了，专门为 Claude Code 设计。 输入一张图片，它就能自动把整个场景拆解成可交互的 3D 世界：环境、网格、物理、灯光、音频…",
+      "url": "https://x.com/berryxia/status/2055086814009180316",
+      "source": "X：Berry Xia (@berryxia)",
+      "publishedAt": "2026-05-15T00:44:12.000Z",
+      "summary": "开发者@neilsonks开源了一套专为Claude Code设计的完整3D生成工具包。该工具能将输入的单张图片自动拆解，生成包含环境、网格、物理、灯光和音频的全套可交互3D场景。其流程首先利用图像与3D生成技术提取物体并生成高质量网格，随后移除物体以得到静态背景，最后为整个场景添加物理模拟、实时灯光和环境音效。配套查看器支持对生成物体的点击编辑与一键导出。此工具将以往需数天的2D转3D工作流程缩短至几分钟，适用于游戏开发、世界构建和产品可视化等项目。项目已在GitHub开源。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp7els0209r2slnzcllv5y8e",
+      "title": "将Grok接入Hermes智能体",
+      "title_en": "Connect Grok to Hermes Agent",
+      "url": "https://x.ai/news/grok-hermes",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "xAI宣布，用户现可将Grok订阅账户接入Nous Research的开源自改进智能体Hermes Agent。该集成对所有订阅层级开放，允许用户在Hermes环境中直接使用Grok 4.3进行文本对话与高级推理、调用其文本转语音功能生成语音回复，并利用Grok Imagine创建图像与视频。Hermes Agent可持久运行于电脑、沙盒或VPS，具备跨会话长期记忆能力，并能连接WhatsApp、Discord等通讯平台。用户通过安装Hermes Agent并选择Grok提供商即可完成配置。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp73t6dx078eslnzi1mmbcym",
+      "title": "ChatGPT 推出全新个人理财体验",
+      "title_en": "A new personal finance experience in ChatGPT",
+      "url": "https://openai.com/index/personal-finance-chatgpt",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "OpenAI 为美国地区的 ChatGPT Pro 用户推出个人理财功能预览版。用户可安全连接个人金融账户，获取基于自身财务状况、目标和优先级生成的 AI 洞察与指导。该体验通过账户关联实现个性化分析，标志着 ChatGPT 正式向个人金融助手领域拓展。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp64mmiu0jnesljx16tn2dqs",
+      "title": "OpenCode与Qwen 3.6 Plus再度免费开放",
+      "title_en": "OpenCode x Qwen 3.6 Plus - free， again Last time y'all treated our capacity like an all-you-can-eat…",
+      "url": "https://x.com/opencode/status/2055068702538612784",
+      "source": "X：opencode (@opencode)",
+      "publishedAt": "2026-05-14T23:32:14.000Z",
+      "summary": "OpenCode x Qwen 3.6 Plus - 再次免费\n\n上次各位把我们的容量当成了自助餐。\n\n我们找到了更多GPU。第二轮。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp637phz0jbmsljxj94mjfjv",
+      "title": "Claude 代理工具 v2.1.142 版本更新",
+      "title_en": "v2.1.142",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-14T22:55:10.000Z",
+      "summary": "Claude 代理工具发布 v2.1.142 版本。本次更新新增了 `--add-dir`、`--settings`、`--model` 等 8 个用于配置后台会话的命令行标志，并将 Fast 模式的默认模型升级为 Opus 4.7。插件功能得到增强，拥有根目录 `SKILL.md` 的插件现可被识别为技能，插件详情面板会显示其提供的 LSP 服务器。此外，版本修复了超过 15 项问题，包括 MCP 工具超时设置失效、后台会话在系统休眠后异常断开、守护进程升级后无法正常退出、Windows 网络驱动器工作目录下死锁等关键错误，并改进了响应式压缩和钩子配置错误提示。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp62hdob0j66sljxs1zvpeyf",
+      "title": "Luma Agents高效生成电商素材全流程",
+      "title_en": "More products. More markets. More formats. No more bottlenecks. Define the brief. Set the aestheti…",
+      "url": "https://x.com/LumaLabsAI/status/2055046873740984429",
+      "source": "X：Luma AI (@LumaLabsAI)",
+      "publishedAt": "2026-05-14T22:05:30.000Z",
+      "summary": "更多产品。更多市场。更多格式。再无瓶颈。\n\n定义需求。设定风格。Luma Agents 从此处理所有电商活动素材。\n\n立即扩展 → http：//lumalabs.ai/app",
+      "category": "ai-products"
+    },
     {
       "id": "cmp5zbhyi0ih6sljxxs9d365u",
       "title": "Codex推出自动化钩子与程序化令牌",
@@ -31,16 +161,6 @@
       "source": "X：cb_doge (@cb_doge)",
       "publishedAt": "2026-05-14T20:10:12.000Z",
       "summary": "SuperGrok Heavy 现提供约67%的半年折扣，即每月仅需99美元（原价300美元）。\n\n强烈建议升级至Heavy版本，并试用Grok Build的测试版。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp5qtyt20gjgsljxg925uv7t",
-      "title": "Genkit 推出中间件系统：增强智能体AI应用的可控性与可靠性",
-      "title_en": "Announcing Genkit Middleware： Intercept， extend， and harden your agentic apps",
-      "url": "https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-14T17:09:17.667Z",
-      "summary": "Google开源框架Genkit近日推出其核心中间件系统，旨在提升智能体AI应用的可靠性与可控性。该系统允许开发者在生成调用、模型及工具层进行拦截，以注入自定义行为，如重试机制、模型回退以及人工介入的工具审批流程。通过创建并堆叠自定义中间件，开发者能够实现对模型输出的确定性控制。所有中间件的执行流程均可通过专用的开发者界面进行实时查看与调试，有效支持使用TypeScript、Go、Dart和Python构建生产就绪的智能体应用。",
       "category": "ai-products"
     },
     {
@@ -171,6 +291,16 @@
       "source": "X：Claude Devs (@ClaudeDevs)",
       "publishedAt": "2026-05-13T17:10:07.000Z",
       "summary": "自6月15日起，付费Claude计划可申领专用的月度编程使用额度。\n\n该额度涵盖以下用途：\n- Claude Agent SDK\n- claude -p\n- Claude Code GitHub Actions\n- 基于Agent SDK构建的第三方应用",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp5qtyt20gjgsljxg925uv7t",
+      "title": "Genkit 推出中间件系统：增强智能体AI应用的可控性与可靠性",
+      "title_en": "Announcing Genkit Middleware： Intercept， extend， and harden your agentic apps",
+      "url": "https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-13T16:00:00.000Z",
+      "summary": "Google开源框架Genkit近日推出其核心中间件系统，旨在提升智能体AI应用的可靠性与可控性。该系统允许开发者在生成调用、模型及工具层进行拦截，以注入自定义行为，如重试机制、模型回退以及人工介入的工具审批流程。通过创建并堆叠自定义中间件，开发者能够实现对模型输出的确定性控制。所有中间件的执行流程均可通过专用的开发者界面进行实时查看与调试，有效支持使用TypeScript、Go、Dart和Python构建生产就绪的智能体应用。",
       "category": "ai-products"
     },
     {
@@ -371,136 +501,6 @@
       "source": "X：cb_doge (@cb_doge)",
       "publishedAt": "2026-05-12T15:43:15.000Z",
       "summary": "Grok现已支持连接Gmail，用户可通过自然语言指令对收件箱进行智能查询与管理。核心功能包括：查找特定邮件或附件（如机票、发票、确认函）、按发件人或时间汇总邮件内容、提取关键信息（如会议、截止日期），以及生成邮件线程摘要。该集成旨在将传统收件箱转化为可智能交互的信息库，提升邮件处理效率与实用性。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp39g0gg044ssl1q20jlqvkk",
-      "title": "展示 HN：Statewright--通过可视化状态机提升AI智能体可靠性",
-      "title_en": "Show HN： Statewright - Visual state machines that make AI agents reliable",
-      "url": "https://github.com/statewright/statewright",
-      "source": "Hacker News：AI 热帖",
-      "publishedAt": "2026-05-12T14:24:55.000Z",
-      "summary": "Statewright 是一个通过状态机为AI智能体提供约束的系统，能控制其在各阶段可使用的工具，从而聚焦推理并提升可靠性。它将工作流定义为规划、实施、测试等多个阶段，自动执行工具限制与状态转换。在本地模型测试中，两个模型在5项SWE-bench子任务上应用约束后，正确率从2/10显著提升至10/10。该系统已集成到Claude Code等平台，一个修复测试失败的典型工作流可在46秒内完成。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1xjf7w02frslbp8y8lz53d",
-      "title": "Cursor集成Microsoft Teams提升办公效率",
-      "title_en": "Cursor 在 Microsoft Teams 可用了 最新集成方式有：Slack、Linear 和 Microsoft Teams 如果你们公司在用微软产品体系，Microsoft Teams…",
-      "url": "https://x.com/shao__meng/status/2053998536711405978",
-      "source": "X：邵猛 (@shao__meng)",
-      "publishedAt": "2026-05-12T00:39:47.000Z",
-      "summary": "Cursor 在 Microsoft Teams 可用了\n\n最新集成方式有：Slack、Linear 和 Microsoft Teams\n\n如果你们公司在用微软产品体系，Microsoft Teams 还是必选项，这个集成比较实用，在这安装：\nhttps：//cursor.com/dashboard/integrations#integrations",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1opwyg00d9slbprz5tljah",
-      "title": "Luma Agents：从情绪板到完整广告的自动化创作",
-      "title_en": "The moodboard was always the best part. Now it's just the beginning. Upload your reference. Set th…",
-      "url": "https://x.com/LumaLabsAI/status/2053941836402901409",
-      "source": "X：Luma AI (@LumaLabsAI)",
-      "publishedAt": "2026-05-11T20:54:28.000Z",
-      "summary": "情绪板曾是最精彩的部分。如今它只是起点。\n\n上传你的参考素材。设定方向。Luma Agents 会将其从情绪板转化为完整的广告。\n\n生成广告 → http：//lumalabs.ai/app",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1p41eu00ghslbpb3s2zd2t",
-      "title": "推出Daybreak：网络安全前沿AI防御系统",
-      "title_en": "Introducing Daybreak： frontier AI for cyber defenders. Daybreak brings together the most capable Op…",
-      "url": "https://x.com/OpenAI/status/2053939702110269822",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-05-11T20:45:59.000Z",
-      "summary": "推出Daybreak：面向网络防御者的前沿AI。\n\nDaybreak汇集了最强大的OpenAI模型、Codex以及我们的安全合作伙伴，以加速网络防御并持续保障软件安全。\n\n朝着安全团队能以防御所需速度行动的未来迈进一步。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1mneb5006vsl6yoejx9zjm",
-      "title": "Codex插件助力AI应用与智能体开发提速",
-      "title_en": "Codex can now help you build AI apps and agents faster with OpenAI APIs using the OpenAI Developers …",
-      "url": "https://x.com/OpenAIDevs/status/2053925962287583379",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-05-11T19:51:24.000Z",
-      "summary": "Codex现可通过OpenAI Developers插件，帮助您利用OpenAI API更快地构建AI应用和智能体。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1k6fzy0097sl8bma8psq7c",
-      "title": "Claude Code v2.1.139 版本更新",
-      "title_en": "v2.1.139",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-05-11T18:43:42.000Z",
-      "summary": "本次更新引入了多项新功能与优化。核心新增包括：集中管理会话的Agent视图（研究预览）、可设置目标并持续工作的`/goal`命令、实时调整滚轮速度的`/scroll-speed`命令，以及查看插件详情的`claude plugin details`命令。交互界面导航与控制能力得到增强。底层优化涵盖MCP服务器可获取`CLAUDE_PROJECT_DIR`环境变量、`/context all`的令牌估算会考虑模型分词器并显示舍入值。此外，修复了超过20项问题，如凭证死锁、内存无限制增长、权限规则、UI显示错误及路径处理等缺陷。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1id2op008uslnbecpvdr84",
-      "title": "Replit推出并行代理 支持10个代理同时运行",
-      "title_en": "Meet Replit Parallel Agents Build faster by running up to 10 agents in parallel Each agent gets it…",
-      "url": "https://x.com/Replit/status/2053891504989753817",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-05-11T17:34:28.000Z",
-      "summary": "认识Replit并行代理\n\n通过并行运行多达10个代理来加速构建\n\n每个代理都拥有您应用的独立副本\n它们在各自的计算机上工作\n然后以代理方式合并工作成果",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1hfky60y79sllhswhg8jju",
-      "title": "个人智能助手定制专属旅行计划",
-      "title_en": "Personal Intelligence can help you build a travel itinerary that's fully custom to you. It saves ti…",
-      "url": "https://x.com/GeminiApp/status/2053889747752190393",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-11T17:27:29.000Z",
-      "summary": "Personal Intelligence 可帮助您打造完全个性化的旅行行程。\n\n它通过关联您 @Gmail、@GooglePhotos、@Google 搜索和 @YouTube 历史记录中的信息点来节省时间。\n\n您可随时选择要连接的应用程序并管理个性化设置 🧵",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp2xktm001gvsl1qjo07wb5a",
-      "title": "Claude进军法律行业",
-      "title_en": "Claude for the legal industry",
-      "url": "https://claude.com/blog/claude-for-the-legal-industry",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-11T16:00:00.000Z",
-      "summary": "Anthropic公司为法律行业发布20多个新的MCP连接器及12个专用插件，将Claude深度集成至合同管理、文档处理等法律核心软件栈。Claude现可直接在Microsoft Word、Outlook等办公应用中无缝工作，具备起草、修订、条款比对等可复用技能，并能自动化处理日常法律事务。公司同时宣布与多个司法公益组织合作，以扩大法律服务的可及性。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp2udars00otsl1qnz7er67x",
-      "title": "Code w/ Claude SF 2026开发者大会：基于AI指数级增长的构建",
-      "title_en": "Code w/ Claude SF 2026： Building on the AI exponential",
-      "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-11T16:00:00.000Z",
-      "summary": "在Code w/ Claude SF 2026开发者大会上，Anthropic宣布提升开发者工具能力。Claude Code的速率限制翻倍，Claude Opus的API限制提高，以支持大规模可靠开发。同时，Claude平台上的托管智能体新增四项功能：\"梦想\"功能通过回顾会话优化记忆；多智能体编排支持主智能体并行委派子任务；\"成果\"功能通过定义输出标准提升任务成功率，内部测试显示最难问题成功率最多提升10%；Webhooks提供任务完成通知。大会主题演讲和分组会议录像已上线，并计划在伦敦和东京举办后续活动。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1e405f0xg6sllhvgli5ewp",
-      "title": "Anthropic开源金融AI全栈模板，定义行业落地新标准",
-      "title_en": "Anthropic：\"我正在金融街\"。 走自己的路，让别人无路可走。",
-      "url": "https://x.com/frxiaobei/status/2053861985008431398",
-      "source": "X：小北 (@frxiaobei)",
-      "publishedAt": "2026-05-11T15:37:10.000Z",
-      "summary": "Anthropic在GitHub开源了金融服务行业AI解决方案完整模板库，包含10个端到端智能体、7个垂直行业插件及11家主流金融数据商的MCP连接器，覆盖投研、投行、风控等核心工作流。该库提供了从个人插件到企业API的部署方式，支持集成至Microsoft 365及私有云。此举为金融AI落地提供了开箱即用的标准作业程序，与OpenAI的消费级路线形成鲜明对比，凸显了其深耕企业场景、通过开源构建行业生态的战略意图。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1bq0am0wvhsllhknqoiyzs",
-      "title": "告别编写YAML：使用confingy配置机器学习系统",
-      "title_en": "Stop Writing YAML： Configuring ML Systems with confingy",
-      "url": "https://runwayml.com/news/stop-writing-yaml-configuring-ml-systems-with-confingy",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-05-11T14:54:52.071Z",
-      "summary": "Runway开源了Python库confingy，旨在解决机器学习系统配置的长期痛点。该库允许开发者用纯Python代码（支持懒加载、类型检查和序列化）替代传统YAML配置文件，从而摆脱YAML作为Turing完备领域特定语言所带来的维护困境。confingy无需重构现有代码，即可满足跟踪构造函数参数、避免实例化昂贵对象（如大语言模型）等核心需求，有效改善了因复杂YAML配置导致的无法跳转定义、类型提示失效和重构困难等开发体验问题。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp1au3q20wnnsllhp04p0roh",
-      "title": "帕累托代码以市场需求重塑模型选择",
-      "title_en": "Pareto Code is a new way of looking at the Pareto frontier using real market demand DeepSeek V4 Pro…",
-      "url": "https://x.com/OpenRouter/status/2053843701261025290",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-11T14:24:31.000Z",
-      "summary": "Pareto Code 是一种利用真实市场需求观察帕累托前沿的新方法\n\nDeepSeek V4 Pro 占据首位，其次是 GPT 5.4 Mini 和 Gemini 3.1 Pro https：//openrouter.ai/openrouter/pareto-code",
       "category": "ai-products"
     }
   ]

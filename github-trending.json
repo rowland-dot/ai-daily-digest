@@ -1,17 +1,6 @@
 {
-  "fetched_at": "2026-05-14T21:45:40.866Z",
+  "fetched_at": "2026-05-15T21:34:59.502Z",
   "repos": [
-    {
-      "owner": "ruvnet",
-      "name": "RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 55785,
-      "forks": 7391,
-      "starsToday": 1757
-    },
     {
       "owner": "tinyhumansai",
       "name": "openhuman",
@@ -19,20 +8,9 @@
       "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 7668,
-      "forks": 615,
-      "starsToday": 3476
-    },
-    {
-      "owner": "rohitg00",
-      "name": "agentmemory",
-      "url": "https://github.com/rohitg00/agentmemory",
-      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 8908,
-      "forks": 736,
-      "starsToday": 1978
+      "stars": 8922,
+      "forks": 748,
+      "starsToday": 1272
     },
     {
       "owner": "obra",
@@ -41,9 +19,9 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 191091,
-      "forks": 16993,
-      "starsToday": 1801
+      "stars": 192717,
+      "forks": 17143,
+      "starsToday": 1646
     },
     {
       "owner": "K-Dense-AI",
@@ -52,42 +30,9 @@
       "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 21737,
-      "forks": 2373,
-      "starsToday": 637
-    },
-    {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 24774,
-      "forks": 4334,
-      "starsToday": 359
-    },
-    {
-      "owner": "roboflow",
-      "name": "supervision",
-      "url": "https://github.com/roboflow/supervision",
-      "description": "We write your reusable computer vision tools. 💜",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 38852,
-      "forks": 3478,
-      "starsToday": 59
-    },
-    {
-      "owner": "influxdata",
-      "name": "telegraf",
-      "url": "https://github.com/influxdata/telegraf",
-      "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 17203,
-      "forks": 5791,
-      "starsToday": 211
+      "stars": 22384,
+      "forks": 2423,
+      "starsToday": 643
     },
     {
       "owner": "supertone-inc",
@@ -96,20 +41,53 @@
       "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 5266,
-      "forks": 510,
-      "starsToday": 1163
+      "stars": 5965,
+      "forks": 587,
+      "starsToday": 712
     },
     {
-      "owner": "Genymobile",
-      "name": "scrcpy",
-      "url": "https://github.com/Genymobile/scrcpy",
-      "description": "Display and control your Android device",
-      "language": "C",
-      "languageColor": "#555555",
-      "stars": 141283,
-      "forks": 13048,
-      "starsToday": 778
+      "owner": "ruvnet",
+      "name": "RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 57388,
+      "forks": 7542,
+      "starsToday": 1865
+    },
+    {
+      "owner": "influxdata",
+      "name": "telegraf",
+      "url": "https://github.com/influxdata/telegraf",
+      "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 17382,
+      "forks": 5802,
+      "starsToday": 213
+    },
+    {
+      "owner": "anthropics",
+      "name": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 135032,
+      "forks": 15923,
+      "starsToday": 625
+    },
+    {
+      "owner": "czlonkowski",
+      "name": "n8n-mcp",
+      "url": "https://github.com/czlonkowski/n8n-mcp",
+      "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 20858,
+      "forks": 3397,
+      "starsToday": 68
     },
     {
       "owner": "NVIDIA-AI-Blueprints",
@@ -118,20 +96,20 @@
       "description": "Suite of reference architectures for building GPU-accelerated vision agents and AI-powered video analytics applications.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 796,
-      "forks": 243,
-      "starsToday": 28
+      "stars": 1113,
+      "forks": 262,
+      "starsToday": 305
     },
     {
-      "owner": "CloakHQ",
-      "name": "CloakBrowser",
-      "url": "https://github.com/CloakHQ/CloakBrowser",
-      "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 10771,
-      "forks": 803,
-      "starsToday": 1369
+      "owner": "oven-sh",
+      "name": "bun",
+      "url": "https://github.com/oven-sh/bun",
+      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 90580,
+      "forks": 4507,
+      "starsToday": 395
     },
     {
       "owner": "mattpocock",
@@ -140,31 +118,20 @@
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 82028,
-      "forks": 7076,
-      "starsToday": 2971
+      "stars": 84787,
+      "forks": 7341,
+      "starsToday": 3155
     },
     {
-      "owner": "github",
-      "name": "spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "owner": "joeseesun",
+      "name": "qiaomu-anything-to-notebooklm",
+      "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+      "description": "Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 99390,
-      "forks": 8654,
-      "starsToday": 1240
-    },
-    {
-      "owner": "garrytan",
-      "name": "gstack",
-      "url": "https://github.com/garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 96657,
-      "forks": 14370,
-      "starsToday": 960
+      "stars": 2637,
+      "forks": 270,
+      "starsToday": 465
     }
   ]
 }

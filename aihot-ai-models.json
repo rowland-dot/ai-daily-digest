@@ -1,8 +1,38 @@
 {
-  "count": 23,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp7670my07u2slnzpgzvw1yy",
+      "title": "MiniMax M2.7模型上线OrcaRouter平台",
+      "title_en": "M2.7 is live on @OrcaRouter - accessible via a single OpenAI-compatible API. Try it today！🐋",
+      "url": "https://x.com/MiniMax_AI/status/2055331545402245246",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "publishedAt": "2026-05-15T16:56:41.000Z",
+      "summary": "M2.7已在@OrcaRouter上线--可通过单一OpenAI兼容API访问。\n\n今天就来试试吧！🐋",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp74kzdx07fhslnzgxi917g9",
+      "title": "SenseNova发布增强版信息图表生成模型SenseNova-U1-8B-MoT-Infographic",
+      "title_en": "📢📢 Introducing an enhanced model for infographic gene�…",
+      "url": "https://x.com/SenseTime_AI/status/2055315819165597702",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-05-15T15:54:11.000Z",
+      "summary": "SenseNova近日推出专为信息图表生成设计的增强模型SenseNova-U1-8B-MoT-Infographic。该模型能够根据指令生成多种视觉格式内容，包括海报、图表、食谱卡、明信片以及学术风格的arXiv页面等。在性能方面，模型在BizGenEval（困难版）和IGenBench（Q-ACC）两项基准测试上表现突出，相比其基础U1模型分别提升了6.8分和18.2分。目前，该模型已在Hugging Face平台开源，并提供了超过100个多样化的生成示例，供开发者和研究者参考与试用。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp6c0i6i00nbslnzm1hefdiu",
+      "title": "inclusionAI/ARGenSeg-8B",
+      "title_en": null,
+      "url": "https://huggingface.co/inclusionAI/ARGenSeg-8B",
+      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
+      "publishedAt": "2026-05-15T02:33:52.000Z",
+      "summary": "包容性AI团队发布ARGenSeg-8B模型，致力于通过开源和开放科学推动人工智能的进步与普及。该举措强调技术民主化，使更广泛的社区能够参与AI研发与应用。开源策略将促进协作创新，加速AI工具在多元场景中的落地，降低技术门槛，推动产业生态的开放发展。",
+      "category": "ai-models"
+    },
     {
       "id": "cmp5wen830hsgsljxyhi7cgwl",
       "title": "Granite Embedding Multilingual R2：开源多语言嵌入模型，具备32K上下文与领先检索性能",
@@ -211,26 +241,6 @@
       "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
       "publishedAt": "2026-05-09T04:05:39.000Z",
       "summary": "StepFun 推出的 StepAudio 2.5 TTS 在 Artificial Analysis 语音竞技场盲测排行榜中位列全球第三，Elo 评分为 1187 分，仅次于 Inworld TTS 1.5 Max 与 Google Gemini 3.1 Flash TTS。该模型语音自然度较前代显著提升，并以 8 分优势超越 Eleven v3。其定价为每百万字符 85 美元，生成速度为每秒 37.6 字符，并提供了全局上下文提示和行内情感标签两种语音控制方式。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmox7snrc00cdslfoxg99o3kc",
-      "title": "Ring-2.6-1T发布：万亿参数思维模型专为复杂任务设计",
-      "title_en": "We are launching Ring-2.6-1T， a trillion-parameter flagship thinking model engineered for real-world…",
-      "url": "https://x.com/AntLingAGI/status/2052808934390661134",
-      "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "publishedAt": "2026-05-08T17:52:43.000Z",
-      "summary": "Ring-2.6-1T是一款万亿参数的旗舰思维模型，专为现实世界复杂任务和生产环境构建。该模型具备可调节思维努力功能，通过动态计算机制灵活平衡认知深度、token成本和执行速度。它针对代理优化，适用于高频工作流，提供快速多步执行和工具编排，并具有SOTA稳定性。深度思维特性解锁了模型的最大能力上限，特别适合严格数学逻辑和科学研究。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmox4xh0p006lslguuhqaou8t",
-      "title": "EMO：为涌现模块化预训练的专家混合模型",
-      "title_en": "EMO： Pretraining mixture of experts for emergent modularity",
-      "url": "https://huggingface.co/blog/allenai/emo",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-08T16:03:50.000Z",
-      "summary": "EMO是一种新型专家混合模型，通过端到端预训练使模块化结构直接从数据中涌现，无需依赖人类定义的先验。该模型允许在特定任务中仅使用12.5%的专家子集（即8个活跃专家中的部分），同时保持接近全模型的性能；当所有128个专家共同使用时，它仍作为强大的通用模型。EMO具有1B活跃参数和14B总参数，训练数据达1万亿令牌。与标准MoE相比，EMO通过文档级路由约束，鼓励专家形成领域专业化组，从而支持选择性使用而不导致严重性能下降，实现了可组合架构，优化了大型稀疏MoE的内存-准确性权衡。",
       "category": "ai-models"
     }
   ]

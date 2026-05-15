@@ -1,8 +1,68 @@
 {
-  "count": 32,
+  "count": 37,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp72xh52070qslnz2cdl9apt",
+      "title": "微软研究院发布AI新工具与模型",
+      "title_en": "New tools， models， repos， and papers out of Microsoft Research are here. Use AI and agents？ It's w…",
+      "url": "https://x.com/MSFTResearch/status/2055303919497089337",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-05-15T15:06:54.000Z",
+      "summary": "微软研究院的新工具、模型、代码库和论文现已发布。\n\n使用AI和智能体？值得关注：\n• MSR AI Frontiers的MagenticLite\n• 智能体化GitHub工作流\n• 验证优先智能体\n• 意义匹配微调\n• AI转型与经济发展",
+      "category": "industry"
+    },
+    {
+      "id": "cmp735uqj072oslnzjq1bedvf",
+      "title": "英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/951/144.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-15T15:06:10.000Z",
+      "summary": "英国财政部、英格兰银行及金融行为监管局联合警告，当前最先进的AI模型已具备远超普通专业人员的网络攻击能力，其攻击速度更快、范围更广、成本更低。若被恶意利用，将严重威胁企业运营安全、客户数据、金融市场稳定性乃至整个金融体系。英格兰银行行长安德鲁·贝利此前已点名Anthropic的Mythos产品，网络安全专家亦警告此类AI可能强化复杂攻击，对银行业及金融技术体系构成新挑战。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp71za2106tqslnzc09muj8y",
+      "title": "戛纳倒计时 | Kling AI大会主讲阵容揭晓！",
+      "title_en": "Cannes Countdown | Featured speakers Lineup Unveiled for Kling AI Conference！ Three world-class fil…",
+      "url": "https://x.com/Kling_ai/status/2055302191129473502",
+      "source": "X：可灵 Kling AI (@Kling_ai)",
+      "publishedAt": "2026-05-15T15:00:02.000Z",
+      "summary": "2026年戛纳电影节Kling AI大会将汇聚三位世界级电影制作人，展示他们运用Kling AI技术创作的标杆作品。中国动画导演魏立将分享AI生成动画《Born of the Tide》；Jon Erwin将解析为Amazon Prime制作的剧集《House of David》；Eekjun Yang则将介绍院线电影《RAPHAEL》的创作过程。三位讲者将深入探讨Kling AI在电影制作中的幕后应用，共同探索AI为影视创作带来的新可能性。活动定于2026年5月18日15：30至17：30，在戛纳影节宫主舞台举行。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp6r0wgm0497slnz10qneu54",
+      "title": "Anthropic估值与营收飙升",
+      "title_en": "Anthropic in a nutshell： Valuation： February 2026： $350B May 2026： $900B Almost 3x in just 3 month…",
+      "url": "https://x.com/kimmonismus/status/2055222524774846576",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-05-15T09:43:28.000Z",
+      "summary": "Anthropic简况：\n\n估值：\n2026年2月：3500亿美元\n2026年5月：9000亿美元\n\n三个月内增长近3倍。\n\n年度经常性收入：\n2025年底：90亿美元\n2026年5月底：450亿美元\n\n五个月内增长近5倍。\n\n天啊。 via FT",
+      "category": "industry"
+    },
+    {
+      "id": "cmp6ba93100fbslnzmec29858",
+      "title": "为 OpenAI 累计投入超 1000 亿美元，Nadella称微软当年投资时\"没人愿意下注\"",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/950/728.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-15T02:27:28.000Z",
+      "summary": "在\"Musk诉奥尔特曼\"庭审中，微软企业发展负责人确认，微软对OpenAI的累计投入已超过1000亿美元，其中包括130亿美元原始投资及大量Azure基础设施成本。此次合作已为微软带来约300亿美元营收。CEONadella表示，微软是在\"没人愿意下注\"时承担了风险。双方已续签非独家协议，微软不再支付收入分成，并将OpenAI的分成上限设为到2030年累计380亿美元，此举较原协议节省约970亿美元。此外，微软正评估收购AI初创公司以补强人才，并调整资源投向自研模型与超级智能领域。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp65r39y0jyysljxds3llxap",
+      "title": "Anthropic的Mythos AI在五天内协助发现并利用两个未知macOS内核漏洞",
+      "title_en": "WSJ： Anthropic's Mythos helped researchers find 2 unknown macOS kernel bugs and turn them into a wor…",
+      "url": "https://x.com/rohanpaul_ai/status/2055071152511594832",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-05-14T23:41:58.000Z",
+      "summary": "据《华尔街日报》报道，Anthropic的Mythos AI工具在短短五天内，成功帮助研究人员发现了两个此前未知的macOS内核漏洞，并将其串联成一个完整的权限提升攻击链。该攻击针对操作系统最底层的核心，通过组合多个漏洞和技术，绕过了苹果的内存完整性保护机制，访问了本应受保护的系统区域。这凸显出现代macOS的防御重点已从单纯防止漏洞发现，转向增加漏洞利用难度。Mythos在此类研究中展现出强大能力，因为它能协助形成假设、分析代码行为、推理底层约束并建议利用路径，从而大幅加速传统上依赖手动、试错的研究过程。",
+      "category": "industry"
+    },
     {
       "id": "cmp5syid70h0rsljxm5rb8sqj",
       "title": "OpenEvidence覆盖65%美国医生，shadow AI模式引关注",
@@ -71,6 +131,26 @@
       "source": "The Decoder：AI News（RSS）",
       "publishedAt": "2026-05-13T18:23:15.000Z",
       "summary": "根据 Ramp AI 指数数据，Anthropic 在美国企业客户中的采用率达到 34.4%，首次超越 OpenAI 的 32.3%。其业务覆盖范围在一年内增长了四倍。但文章指出，三个因素可能使其领先优势迅速减弱。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp68q4280kmwsljx5vvpdg5v",
+      "title": "普华永道全球部署Claude，助力客户构建技术、执行交易并重塑企业职能",
+      "title_en": "PwC is deploying Claude to build technology， execute deals， and reinvent enterprise functions for clients",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-13T16:00:00.000Z",
+      "summary": "普华永道与Anthropic宣布扩大战略联盟，将在全球数十万员工中部署Claude AI工具。双方将联合建立卓越中心，并培训认证3万名专业人员。合作聚焦三大高杠杆领域：智能体技术构建、AI原生交易执行以及企业职能重塑。普华永道已率先成立基于Claude的财务业务组。实际应用显示，Claude在保险承保、网络安全等多个领域能将交付时间缩短最高达70%，例如将保险承保周期从十周压缩至十天。",
+      "category": "industry"
+    },
+    {
+      "id": "cmp65vnvr0jztsljxms0pwdh0",
+      "title": "Runway正式进军日本市场，在东京设立总部并投入4000万美元",
+      "title_en": "Runway is Coming to Japan",
+      "url": "https://runwayml.com/news/runway-is-coming-to-japan",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-05-13T16:00:00.000Z",
+      "summary": "生成式AI公司Runway宣布在日本东京设立总部，正式进军日本市场，并计划投入4000万美元初始资金拓展业务。日本已成为Runway增长最快的市场之一，是其全球企业及自助客户的第三大市场。过去一年，日本企业客户数量增长300%，贡献了Runway亚洲总销售额的三分之一。软银、雅马哈等企业已在营销与创意流程中使用其服务。公司此次扩张旨在贴近日本领先的创意、机器人及制造行业客户，并已开始招募日本市场负责人以组建本地团队。",
       "category": "industry"
     },
     {
@@ -291,36 +371,6 @@
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "publishedAt": "2026-05-09T00:02:03.000Z",
       "summary": "DeepSeek正以500亿美元估值进行高达70亿美元的融资，创下中国AI领域最大单轮融资纪录。创始人梁文锋个人出资30亿美元，占本轮融资的40%，同时仍保留公司90%的所有权。该公司最初诞生于其本人成功的对冲基金内部。本轮融资将主要用于获取大规模计算资源，以加速发布V4.1等新模型，并投资企业级产品，目标是推动公司实现营收转正，其发展路径与OpenAI和Anthropic类似。",
-      "category": "industry"
-    },
-    {
-      "id": "cmowiv8kp0659slcxtj9qyl84",
-      "title": "消息称 Anthropic 拟今夏融资数百亿美元，冲击万亿估值反超 OpenAI",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/947/647.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-08T05:40:09.000Z",
-      "summary": "据《金融时报》报道，人工智能公司Anthropic计划今年夏季进行大规模融资，以扩展计算能力。此轮融资额最高可达500亿美元，融资前估值预计达9000亿美元，完成后公司估值将接近1万亿美元，从而超越竞争对手OpenAI目前约8520亿美元的估值。公司年化收入预计很快将超过450亿美元，较去年底大幅增长。投资者意在为其年底可能的IPO提前建立持仓，但具体条款尚未最终确定。",
-      "category": "industry"
-    },
-    {
-      "id": "cmowcflpg04n8slcxecg6jvdu",
-      "title": "AI 终端智能化分级国标出炉：L1~L4 等级，涉及手机、电脑、眼镜、电视、耳机等",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/947/582.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-08T03:06:06.000Z",
-      "summary": "工信部等部门联合发布《人工智能终端智能化分级》系列国家标准。该标准采用\"2+N\"架构，基础部分明确了AI终端的定义、分级体系与测试方法。智能化水平从低到高分为L1响应级、L2工具级、L3辅助级和L4协同级四个等级，其中L4级标准将在后续修订中完善。首批标准覆盖手机、电脑、电视、眼镜、汽车座舱、音箱、耳机共7个品类，小米、华为、荣耀等为主要起草单位，旨在为各类智能终端的智能化水平提供统一评价依据。",
-      "category": "industry"
-    },
-    {
-      "id": "cmow3ux2u02lnslcxa8wfzlzc",
-      "title": "苹果首款 AI 可穿戴设备：内置摄像头的 AirPods 已进入 DVT 阶段，预计最快 9 月搭载新 Siri 亮相",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/947/455.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-07T22:55:17.000Z",
-      "summary": "据报道，苹果内置摄像头的AirPods已进入设计验证测试（DVT）阶段，最快有望于今年9月作为其首款AI可穿戴设备发布。该产品左右耳机配备低分辨率摄像头，用于捕捉环境视觉信息，以支持升级版Siri实现视觉问答等功能。其整体外观类似AirPods Pro 3，但耳机柄因容纳摄像头而加长。产品原计划2026年发布，因Siri升级延迟而推迟，此次升级得益于与谷歌Gemini的技术合作。苹果还在探索其导航提醒等用途，并为缓解隐私担忧内置了数据上传指示灯。",
       "category": "industry"
     }
   ]

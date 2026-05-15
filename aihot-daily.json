@@ -1,36 +1,36 @@
 {
-  "date": "2026-05-14",
-  "generatedAt": "2026-05-14T00:00:38.741Z",
-  "windowStart": "2026-05-13T00:00:00.000Z",
-  "windowEnd": "2026-05-14T00:00:00.000Z",
+  "date": "2026-05-15",
+  "generatedAt": "2026-05-15T00:00:00.333Z",
+  "windowStart": "2026-05-14T00:00:00.000Z",
+  "windowEnd": "2026-05-15T00:00:00.000Z",
   "lead": null,
   "sections": [
     {
       "label": "模型发布/更新",
       "items": [
         {
-          "title": "Hy3预览版登陆GMI，开源最强模型领跑",
-          "summary": "Hy3 预览版现已登陆 @gmi_cloud。🙌",
-          "sourceUrl": "https://x.com/TencentHunyuan/status/2054403079433572357",
-          "sourceName": "X：腾讯混元 (@TencentHunyuan)"
-        },
-        {
-          "title": "Krea 2发布访问码，限量体验",
-          "summary": "Krea 2 访问码发放！ K2-PRFUF8 / K2-NRWW9E / K2-CAP48S – 每个码可使用50次。 访问链接如下 👇 [引用 @krea_ai]：this is Krea 2. our first foundation model, built completely from scratch for aesthetic diversity and stylistic control. learn more and get early access 👇",
-          "sourceUrl": "https://x.com/krea_ai/status/2054611917365526793",
-          "sourceName": "X：Krea AI (@krea_ai)"
-        },
-        {
-          "title": "SenseNova-U1 技术报告深度发布：前沿原生多模态模型构建全指南",
-          "summary": "SenseNova-U1 技术报告详尽披露了构建前沿原生多模态模型的方法，核心包括原生多模态统一建模、无损视觉接口、联合自回归与像素空间流匹配训练、以及原生混合专家骨干网络。报告提供了六阶段训练方案、强化学习后训练与蒸馏的完整实践指南。其开源版本 SenseNova-U1-A3B-MoT 基于混合专家架构，仅激活30亿参数，实现了高效快速的性能。相关资源已全面开放，涵盖技术报告、模型权重、代码和演示平台。",
-          "sourceUrl": "https://x.com/SenseTime_AI/status/2054446490420924558",
+          "title": "SenseNova U1技术报告发布，基于MoE架构开放模型权重",
+          "summary": "由联合创始人兼首席科学家李沐博士领导的团队发布了SenseNova U1技术报告，详细阐述了其架构、训练方案与创新突破。此次开源同步发布了基于混合专家模型（MoE）的新权重，旨在推动AI领域的透明度、可复现性与进一步创新。团队希望通过开放共享促进整个社区的技术发展。",
+          "sourceUrl": "https://x.com/SenseTime_AI/status/2054876860711149780",
           "sourceName": "X：商汤 SenseTime (@SenseTime_AI)"
         },
         {
-          "title": "AI角色实现记忆共情与主动交互",
-          "summary": "如果AI角色能够记忆、共情并主动交互呢？✨ 交互式AI的未来已来。无论您是为游戏、虚拟AI伴侣还是自适应学习进行开发，Qwen-Character都能打造沉浸式角色扮演体验，推动参与度加深50%以上并提升用户终身价值 👉 观看完整视频了解运作原理：https://int.alibabacloud.com/m/1000412854/ #AlibabaCloud #Qwen #QwenCharacter #ModelStudio #AI",
-          "sourceUrl": "https://x.com/alibaba_cloud/status/2054653031472414864",
-          "sourceName": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)"
+          "title": "Granite Embedding Multilingual R2：开源多语言嵌入模型，具备32K上下文与领先检索性能",
+          "summary": "IBM Granite团队在Hugging Face发布了Granite Embedding Multilingual R2多语言文本嵌入模型。该模型采用Apache 2.0开源协议，上下文长度扩展至32K令牌，参数量低于1亿。在MTEB基准的检索评估中，它取得了同规模模型的最佳性能，尤其擅长多语言混合检索，为开发者提供了高效、轻量且可商用的嵌入解决方案。",
+          "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "sourceName": "Hugging Face：Blog（RSS）"
+        },
+        {
+          "title": "inclusionAI/Ring-2.6-1T",
+          "summary": "inclusionAI发布了Ring-2.6-1T模型。该模型在Claw-Eval基准测试中取得了两项关键评估结果：在通用能力评估（General）上得分为58.4，在多轮对话评估（Multi Turn）上得分为86.8。这些分数已记录在相应的评估结果排行榜中。",
+          "sourceUrl": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+          "sourceName": "蚂蚁 inclusionAI：HuggingFace 新模型"
+        },
+        {
+          "title": "Kimi K2.6登顶金融智能体基准榜首",
+          "summary": "Kimi K2.6 现已成为 Finance Agent Benchmark V2 开源权重排名第一。 [引用 @ValsAI]：AI 能胜任金融分析师的工作吗？",
+          "sourceUrl": "https://x.com/Kimi_Moonshot/status/2054803169994272819",
+          "sourceName": "X：Kimi.ai (@Kimi_Moonshot)"
         }
       ]
     },
@@ -38,52 +38,52 @@
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Anthropic推出面向小型企业的Claude服务包",
-          "summary": "Anthropic推出“Claude for Small Business”服务包，旨在帮助小型企业弥补在AI应用资源上与大型公司的差距。该产品包含一系列连接器和15个开箱即用的自动化工作流，能将Claude深度集成到QuickBooks、PayPal、HubSpot等企业日常工具中。其核心功能是自动化处理财务、运营、销售等领域的重复性任务，如规划薪资、月末结算、追踪发票和分析营销活动等。用户通过Claude Cowork界面操作并手动批准关键步骤，所有任务均由用户发起和控制，Anthropic承诺保障数据安全。",
-          "sourceUrl": "https://www.anthropic.com/news/claude-for-small-business",
-          "sourceName": "Anthropic：Newsroom（网页）"
+          "title": "Kimi推出网页桥接扩展 支持多平台交互",
+          "summary": "认识Kimi网页桥接——Kimi的浏览器扩展。 现在智能体可以像人类一样与网站互动：搜索、滚动、点击、输入并完成任务。 支持Kimi Code CLI、Claude Code、Cursor、Codex、Hermes等平台。 现已在http://kimi.com/features/webbridge和Chrome应用商店上线。",
+          "sourceUrl": "https://x.com/Kimi_Moonshot/status/2054918374837322140",
+          "sourceName": "X：Kimi.ai (@Kimi_Moonshot)"
         },
         {
-          "title": "Introducing Runway Agent",
-          "summary": "Runway正式发布Runway Agent，这是一个能够通过单次对话将创意想法转化为完整、可发布视频的智能创作伙伴。用户只需用自然语言描述需求，Agent便能根据上下文和目标，自主完成概念提案、故事节奏设计、视觉方向规划，并最终生成包含多场景、旁白、对话和音乐的成片。它旨在为品牌团队、营销人员、创意机构和电影制作人快速生产各类视频内容，如品牌宣传、社交媒体素材和短片，将传统需要数天或数周的审核制作周期压缩至几分钟。该产品现已上线，新免费计划用户可获得1500积分用于制作首个视频。",
-          "sourceUrl": "https://runwayml.com/news/introducing-runway-agent",
-          "sourceName": "Runway：News（网页）"
+          "title": "随时随地使用 Codex",
+          "summary": "用户现可通过 ChatGPT 移动应用随时随地使用 Codex。该功能支持跨设备和远程环境实时监控、引导及批准编码任务，实现了对编程工作的无缝移动端管理。",
+          "sourceUrl": "https://openai.com/index/work-with-codex-from-anywhere",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
         },
         {
-          "title": "Codex应用内浏览器升级，提升多视口测试与标注效率",
-          "summary": "Codex应用内浏览器功能迎来多项改进，支持在不同视口尺寸下测试应用，并能控制设备工具栏、在不同断点进行点击验证。长时测试中，Codex会在关键节点截图供用户核查。为加速测试，可隐藏应用内浏览器以禁用动画，使测试速度提升1-2倍。此外，标注功能现在发送更快且消耗更少tokens。",
-          "sourceUrl": "https://x.com/thsottiaux/status/2054398093886673260",
-          "sourceName": "X：Tibo (@thsottiaux)"
+          "title": "OpenCode与Qwen 3.6 Plus再度免费开放",
+          "summary": "OpenCode x Qwen 3.6 Plus - 再次免费 上次各位把我们的容量当成了自助餐。 我们找到了更多GPU。第二轮。",
+          "sourceUrl": "https://x.com/opencode/status/2055068702538612784",
+          "sourceName": "X：opencode (@opencode)"
         },
         {
-          "title": "全球首个全AI运营的在线广播电台上线，24小时不间断播报AI动态",
-          "summary": "全球首个完全由AI运营的在线广播电台在X平台正式开播，专为创业者、开发者和建设者提供全天候AI领域资讯。该电台由五名具备独立编辑判断、记忆和个性的AI主播主持，不仅能实时播报几分钟内的突发新闻，还提供每30分钟一次的新闻综述、初创公司融资追踪、GitHub等平台的工具趋势分析，并整合社区讨论与行业真实观点。AI主播会主动收集信息模式、发现矛盾并形成论点进行实时辩论，而非单纯播报数据。节目辅以非干扰性环境音乐，旨在让听众在背景收听中高效获取深度行业洞察。",
-          "sourceUrl": "https://x.com/kimmonismus/status/2054562237684051974",
-          "sourceName": "X：Kim (@kimmonismus)"
+          "title": "Codex推出自动化钩子与程序化令牌",
+          "summary": "Codex正变得更易于围绕用户代码实现自动化与定制。其核心更新包括“钩子”功能，允许在任务关键节点运行脚本，以进行工作验证、扫描密钥、记录对话或按仓库定制行为。同时，面向商业和企业团队推出“程序化访问令牌”，提供范围化凭证，可从ChatGPT工作区设置创建，用于CI/CD、发布流程和内部自动化，支持设置过期或撤销，并将使用情况关联回工作区。",
+          "sourceUrl": "https://x.com/OpenAIDevs/status/2055032115964870838",
+          "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
         },
         {
-          "title": "无需注册付费，Telegram内一键启动AI智能体",
-          "summary": "牛逼！Browser Use 今天把“AI agent 即用即走”做到了极致。 BuxFather：Telegram 里直接 Spin up agent，无需任何注册付费，24/7 自主运行 + 自改进，还带 stealth browser。 几下点击就有完整电脑 + 浏览器环境。 这波对重度 Telegram 用户来说真的爽了！ https://x.com/browser_use/status/2054330495249564094/video/1",
-          "sourceUrl": "https://x.com/berryxia/status/2054358231791923392",
-          "sourceName": "X：Berry Xia (@berryxia)"
+          "title": "Luma Agents高效生成电商素材全流程",
+          "summary": "更多产品。更多市场。更多格式。再无瓶颈。 定义需求。设定风格。Luma Agents 从此处理所有电商活动素材。 立即扩展 → http://lumalabs.ai/app",
+          "sourceUrl": "https://x.com/LumaLabsAI/status/2055046873740984429",
+          "sourceName": "X：Luma AI (@LumaLabsAI)"
         },
         {
-          "title": "Claude付费计划将提供月度编程使用额度",
-          "summary": "自6月15日起，付费Claude计划可申领专用的月度编程使用额度。 该额度涵盖以下用途： - Claude Agent SDK - claude -p - Claude Code GitHub Actions - 基于Agent SDK构建的第三方应用",
-          "sourceUrl": "https://x.com/ClaudeDevs/status/2054610152817619388",
-          "sourceName": "X：Claude Devs (@ClaudeDevs)"
+          "title": "SuperGrok Heavy限时六折，Grok Build开放测试",
+          "summary": "SuperGrok Heavy 现提供约67%的半年折扣，即每月仅需99美元（原价300美元）。 强烈建议升级至Heavy版本，并试用Grok Build的测试版。",
+          "sourceUrl": "https://x.com/cb_doge/status/2055017857352913319",
+          "sourceName": "X：cb_doge (@cb_doge)"
         },
         {
-          "title": "Miaoda应用与企业版上线，自生成代码占比90%",
-          "summary": "Miaoda应用和Miaoda企业版现已发布，让更多开发者和企业能够使用我们的编程助手！ 最有趣的细节是什么？Miaoda应用90%的代码由Miaoda自身生成。 编程助手正使按需定制软件具备商业可行性。截至目前，Miaoda生成的应用已服务超1000万用户，应用总价值达50亿元人民币。",
-          "sourceUrl": "https://x.com/Baidu_Inc/status/2054511974172557463",
-          "sourceName": "X：百度 Baidu (@Baidu_Inc)"
+          "title": "xAI 推出 Grok Build 早期测试版",
+          "summary": "xAI 面向 SuperGrok Heavy 订阅用户推出 Grok Build 早期测试版。这是一个直接在终端运行的新型编程智能体与命令行工具，专为专业软件工程和复杂任务设计。其核心功能包括：支持“计划模式”，允许用户在代码执行前审阅和修改详细步骤；能无缝集成现有开发工具链；可将大型任务分解，交由并行运行的专用子智能体处理。此外，该工具提供无头模式，便于脚本和自动化流程集成。用户可通过单行命令安装并立即在项目中使用。",
+          "sourceUrl": "https://x.ai/news/grok-build-cli",
+          "sourceName": "xAI：News（网页）"
         },
         {
-          "title": "Runway Agent",
-          "summary": "Runway Agent 是一个集成化创意工具平台，旨在为用户提供实现任何创意所需的全套资源与功能。该平台整合了视频编辑、图像生成、3D建模等多种人工智能驱动工具，允许用户在一个工作流中无缝完成从概念到成品的创作过程。其核心特点是降低了专业内容制作的技术门槛，通过自动化与智能辅助功能，让用户能够更自由地将想法转化为视觉作品。",
-          "sourceUrl": "https://app.runwayml.com/agent",
-          "sourceName": "Runway：Changelog（网页）"
+          "title": "开源工具html-anything助力Agent生成高质量HTML",
+          "summary": "用户分享了对开源项目html-anything的积极体验。该项目旨在让AI Agent能将任何数据转换为具有世界级设计水准的HTML代码。该项目历时三天开发，包含约一万五千行代码，支持75套Skills和9种导出格式，并能兼容包括Claude Code、Codex、OpenClaw、Hermes在内的多种代码生成Agent。",
+          "sourceUrl": "https://x.com/xiaohu/status/2054925632061231431",
+          "sourceName": "X：小互 (@xiaohu)"
         }
       ]
     },
@@ -91,22 +91,46 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "消息称 Anthropic 正就以超 9000 亿美元投前估值筹集至少 300 亿美元谈判",
-          "summary": "据报道，AI公司Anthropic正就新一轮融资进行初步谈判，目标是以超过9000亿美元的投前估值筹集至少300亿美元资金。这有望成为该公司迄今最大规模的融资轮次，交易最快可能在本月底完成。此前，Anthropic在今年2月完成了300亿美元的G轮融资，投后估值为3800亿美元，并从谷歌和亚马逊获得了150亿美元的投资承诺。为应对高昂的算力成本，公司计划于今年晚些时候进行首次公开募股（IPO）。",
-          "sourceUrl": "https://www.ithome.com/0/949/715.htm",
+          "title": "Anthropic与盖茨基金会达成2亿美元合作，聚焦全球健康与教育",
+          "summary": "Anthropic与盖茨基金会建立为期四年、总额2亿美元的合作，通过资金、Claude使用额度及技术支持，共同推进全球健康、生命科学、教育及经济流动项目。合作重点包括改善中低收入国家约46亿人口的基本医疗，利用AI加速疫苗与疗法研发，并开发公共卫生数据集等公共产品。在教育领域，双方将为美国、撒哈拉以南非洲和印度的K-12学生开发AI教学工具。经济流动方面则关注提升小农户生产力及美国职业技能认证。首批成果预计今年晚些时候发布。",
+          "sourceUrl": "https://www.anthropic.com/news/gates-foundation-partnership",
+          "sourceName": "Anthropic：Newsroom（网页）"
+        },
+        {
+          "title": "OpenEvidence覆盖65%美国医生，shadow AI模式引关注",
+          "summary": "OpenEvidence已覆盖65%的美国医生，4月单月临床场景使用达2700万次，平均每位医生每月使用41次。平台由医生个人通过执业编号在手机上注册，医院最初不知情，Mount Sinai的AI负责人称此为shadow AI，表示其早在基层普及。医院后来才追签企业合作，OpenEvidence强调这是美国医疗史上首次让大多数医生自愿采用单一技术平台的突破。合作伙伴包括NEJM、JAMA、NCCN和Wiley，为此提供了支持。",
+          "sourceUrl": "https://x.com/frxiaobei/status/2054981573150449754",
+          "sourceName": "X：小北 (@frxiaobei)"
+        },
+        {
+          "title": "OpenAI遭集体诉讼，被指通过追踪代码向Meta等泄露用户查询隐私",
+          "summary": "南加州联邦法院已受理针对OpenAI的集体诉讼，指控其在ChatGPT网站中嵌入Facebook Pixel等代码，侵犯用户隐私。当用户提交查询时，查询主题会作为浏览器标题与含Facebook唯一ID的cookies一并实时发送给Meta。OpenAI虽称仅分享“有限标识符”用于广告，但原告认为查询主题本身即高度敏感的个人信息。此案揭示免费AI服务的潜在代价：用户每一次查询及数字身份可能成为被交易的产品，与许多用户为逃避追踪而选择ChatGPT的初衷形成讽刺对比。",
+          "sourceUrl": "https://x.com/AYi_AInotes/status/2054856518185439662",
+          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)"
+        },
+        {
+          "title": "百度推进智能体布局，以日活为关键指标",
+          "summary": "百度推进智能体组合以拥抱智能体时代，主张将日活跃智能体作为关键指标 https://www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html",
+          "sourceUrl": "https://x.com/Baidu_Inc/status/2054815977477738549",
+          "sourceName": "X：百度 Baidu (@Baidu_Inc)"
+        },
+        {
+          "title": "AI 热潮引发民怨：七成美国民众反对家门口建数据中心",
+          "summary": "盖洛普调查显示，高达七成美国民众反对在住宅附近建设数据中心，反对率较去年大幅上升，抵触情绪甚至超过对核电站的接受度。全美已有69个辖区出台暂停令，多地项目因抗议和监管纠纷延期。数据中心建设推高批发电价，导致用电成本激增，并引发空气污染、水资源消耗等担忧。尽管白宫要求AI企业承担配套成本，但仅为无约束力承诺，未来审批将更严苛。",
+          "sourceUrl": "https://www.ithome.com/0/950/598.htm",
           "sourceName": "IT之家（RSS）"
         },
         {
-          "title": "Anthropic 首次在 B2B 采用率上超越 OpenAI，Ramp 支出数据显示",
-          "summary": "根据 Ramp AI 指数数据，Anthropic 在美国企业客户中的采用率达到 34.4%，首次超越 OpenAI 的 32.3%。其业务覆盖范围在一年内增长了四倍。但文章指出，三个因素可能使其领先优势迅速减弱。",
-          "sourceUrl": "https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data",
-          "sourceName": "The Decoder：AI News（RSS）"
+          "title": "MiMo V2.5 Pro 获设计竞技场季军",
+          "summary": "MiMo V2.5 Pro 在 @DesignArena 上刚刚获得第三名！🎉 MiMo V2.5 Pro (Thinking) 在总排行榜上比 MiMo-V2.5 提升了 8 个名次，在前端编码任务中达到与 Claude Sonnet 4.6 相同的性能水平。 衷心祝贺 @XiaomiMiMo 团队取得这些进步！",
+          "sourceUrl": "https://x.com/XiaomiMiMo/status/2054797221250683199",
+          "sourceName": "X：小米 MiMo (@XiaomiMiMo)"
         },
         {
-          "title": "Kling AI将亮相2026戛纳探讨AI电影制作",
-          "summary": "Kling AI将于2026年5月18日在戛纳电影节电影市场会议中举办专场活动，主题为“从创意可能到制作现实：Kling AI在电影工作流中的应用”。活动旨在探讨AI辅助电影制作的现状与未来演进。Kling AI通过支持《House of David》、《Born of the Tide》及《RAPHAEL》等项目，展示了AI在好莱坞级制作、全AI生成动画及剧情长片等实际影视生产中的多元化应用。",
-          "sourceUrl": "https://x.com/Kling_ai/status/2054577409064911330",
-          "sourceName": "X：可灵 Kling AI (@Kling_ai)"
+          "title": "Runway进军日本市场，投资4000万美元开设东京办公室",
+          "summary": "Runway宣布扩张至日本，在东京设立办公室并初始投资4000万美元。日本已成为Runway最大且增长最快的市场之一，过去12个月企业客户基础增长三倍，跃升为全球第三大市场。Yamaha、NHN和SoftBank等公司正采用Runway于营销、广告和创意内容领域。此次扩张使Runway更接近日本在游戏、媒体和机器人行业的领先企业，以进一步拓展业务。",
+          "sourceUrl": "https://x.com/runwayml/status/2055065978762051830",
+          "sourceName": "X：Runway (@runwayml)"
         }
       ]
     },
@@ -114,10 +138,16 @@
       "label": "论文研究",
       "items": [
         {
-          "title": "ExploitGym：AI智能体能否将安全漏洞转化为真实攻击？",
-          "summary": "由伯克利RDI、马克斯·普朗克安全与隐私研究所、Anthropic、OpenAI及谷歌等机构研究人员组成的团队，发布了名为ExploitGym的新基准测试。该测试包含898个真实漏洞，要求AI智能体根据漏洞描述生成完整的漏洞利用程序。结果显示，前沿AI模型已能成功利用相当数量的漏洞，即使在启用ASLR等标准防御措施后，部分攻击仍能成功。这证明AI已具备自主将漏洞转化为实际攻击的能力，该技术具有双重用途：既可帮助防御者评估漏洞严重性，也可能降低攻击者的技术门槛。",
-          "sourceUrl": "https://rdi.berkeley.edu/blog/exploitgym",
-          "sourceName": "Berkeley RDI：Blog（AI 安全与评测）"
+          "title": "NousResearch推出Token Superposition Training技术，显著加速大语言模型预训练",
+          "summary": "NousResearch发布了Token Superposition Training（TST），这是一种改进标准大语言模型预训练流程的方法。该技术无需改变模型架构、优化器、分词器或训练数据，即可在相同计算量（FLOPs）下实现2-3倍的训练时间加速。其核心是在训练的前三分之一阶段，让模型读取并预测连续的token包，对输入嵌入进行平均，并使用改进的交叉熵损失预测下一个token包；剩余训练时间则恢复为标准的下一个token预测。推理阶段的模型与传统预训练产生的模型完全相同。该方法已在270M、600M、3B的密集模型以及10B至1B的混合专家模型规模上得到验证。",
+          "sourceUrl": "https://x.com/SiliconFlowAI/status/2054755824309076359",
+          "sourceName": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+        },
+        {
+          "title": "教视觉-语言模型说“电影语言”",
+          "summary": "研究团队与百余名专业创作者历时一年，构建了一个视频描述生成流程，其核心在于扩展精细化的人类-AI协同监督，而非单纯扩大模型规模。该研究（入选CVPR 2026亮点论文）指出，当前主流视频生成模型在理解和生成具有电影感的专业运镜（如希区柯克式滑动变焦、精确的焦点转移或荷兰角镜头）时存在明显不足，常产出通用或焦点错误的画面。这项工作揭示了一条通过提升监督质量来增强模型“电影语言”表达能力的新路径。",
+          "sourceUrl": "https://blog.ml.cmu.edu/2026/05/13/teaching-vision-language-models-to-speak-cinema",
+          "sourceName": "CMU：Machine Learning Blog"
         }
       ]
     },
@@ -125,52 +155,52 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "BestBlogs早报：AI智能体工程化实战与安全架构",
-          "summary": "BestBlogs早报聚焦AI智能体的工程化落地。Anthropic官方指南详解Claude Computer Use最佳实践，包括解决点击偏移的根本原因、推荐分辨率策略及必须采用虚拟机隔离与人工确认门控的安全原则。OpenAI工程师分享了为Codex构建Windows安全沙箱的历程，其最终方案通过专属安全标识符和写受限令牌，实现了操作系统层面的强制文件系统隔离。早报同时指出，基准测试优异的RAG Agent在生产环境中可能出现高达30%的幻觉率。",
-          "sourceUrl": "https://x.com/hongming731/status/2054701978924859865",
-          "sourceName": "X：洪明 (@hongming731)"
+          "title": "微信群聊总结Skill新增，依赖wx-cli配置",
+          "summary": "baoyu-skills 新加了一个 Skill： 微信群聊总结 Skill：https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-wechat-summary 依赖于 wx-cli：https://github.com/jackwener/wx-cli 如何配置使用 wx-cli 请看项目文档，无法提供帮助。另外目前只是借助其读取数据，其他没任何关系。 Claude Code + Claude Opus 4.6 效果最佳",
+          "sourceUrl": "https://x.com/dotey/status/2054768295534846239",
+          "sourceName": "X：宝玉 (@dotey)"
         },
         {
-          "title": "人形机器人已能自主完成8小时轮班",
-          "summary": "“如果AI抢了你的白领工作，那就转行做蓝领吧。” 🤦‍♂️ 与此同时，蓝领工作： [引用 @adcock_brett]：观看一组人形机器人以人类绩效水平完成完整的8小时轮班。这是完全自主运行的Helix-02 https://x.com/i/broadcasts/1dxYljYVREYJX",
-          "sourceUrl": "https://x.com/kimmonismus/status/2054609852094193850",
-          "sourceName": "X：Kim (@kimmonismus)"
-        },
-        {
-          "title": "oMLX更新强化苹果端侧AI，本地能力直逼云端",
-          "summary": "oMLX项目更新至0.3.9.dev2版本，集成了Gemma 4的MTP视觉路径、DFlash引擎和ParoQuant技术，显著提升了图文处理速度。新增一键启动copilot功能，可便捷接入Claude等工具，并通过oQ自动代理解决显存瓶颈。这些改进大幅增强了本地AI在速度、集成与易用性上的表现，正推动AI能力从云端向个人电脑回归。",
-          "sourceUrl": "https://x.com/berryxia/status/2054420138095694324",
+          "title": "UnslothAI发布Qwen3.6 MTP GGUF模型，实现推理速度大幅提升",
+          "summary": "UnslothAI创始人Daniel Han发布了实验性的Qwen3.6 MTP GGUF模型，显著提升了推理速度。其中，27B模型在单GPU上达到每秒140个token，35B-A3B版本更是高达每秒220个token，相比原版GGUF速度提升超过1.4倍且精度无损。关键优化在于将draft tokens设置为2，这是性能与接受率的最佳平衡点。这项MTP投机解码技术极大提升了消费级显卡运行大模型的效率，推动了本地AI的性能边界。",
+          "sourceUrl": "https://x.com/berryxia/status/2054749585520890314",
           "sourceName": "X：Berry Xia (@berryxia)"
         },
         {
-          "title": "Claude 电脑与浏览器使用的最佳实践",
-          "summary": "Claude 最新模型在电脑与浏览器使用能力上显著提升，支持构建复杂智能体系统。本文针对Claude 4.6系列和Opus 4.7提供实践指南，重点优化截图分辨率：Claude 4.6系列API限制最大长边1568像素、总像素115万；Opus 4.7提升至最大长边2576像素、总像素375万。发送前将截图缩放到限制内是提升点击准确性的最有效方法。推荐起始分辨率为1280x720，Opus 4.7用户可优先使用1080p，并避免发送未经缩放的原始截图或过低分辨率图像。",
-          "sourceUrl": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+          "title": "Claude代码与《代码书》技能：有针对性的技能培养",
+          "summary": "开发者发布了一款名为“Claude代码与《代码书》技能”的GitHub工具，旨在通过刻意练习提升编程技能。该工具利用AI模型生成特定主题的代码示例与解释，帮助用户进行针对性学习。项目在Hacker News上获得104点热度，关注度较高。其核心变化在于将传统的广泛学习转化为聚焦、可重复的技能训练模式，通过结构化练习提升学习效率。",
+          "sourceUrl": "https://github.com/DrCatHicks/learning-opportunities",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "创始人手册：构建AI原生初创公司",
+          "summary": "Anthropic公司发布了一份面向AI原生初创企业的实用指南，旨在重塑2026年创业生命周期的构思、最小可行产品、发布和规模化四个核心阶段。该手册为每个阶段提供了具体目标、退出标准、常见失败模式及AI驱动练习，涵盖如何利用Claude进行问题验证与客户发现、避免AI生成代码的技术债务、区分真实产品市场契合度与早期炒作，并引入智能工作流替代创始人手动操作。指南还整合了多家初创企业的实践案例，为从零开始围绕AI构建公司的创始人提供架构、范围与安全方面的最佳实践。",
+          "sourceUrl": "https://claude.com/blog/the-founders-playbook",
           "sourceName": "Claude：Blog（网页）"
         },
         {
-          "title": "BenchLoop：本地大模型一键基准测试与排行榜发布",
-          "summary": "BenchLoop 提供了一套对本地大模型进行基准测试的标准化流程。用户只需拉取模型并运行该工具，即可实时获取模型在质量、速度和可靠性方面的综合评分。平台支持对比不同提示框架（如原生模式与 Hermes 模式）下的性能表现。测试完成后，结果可自动发布至公开排行榜，便于横向比较不同模型的优劣。",
-          "sourceUrl": "https://x.com/berryxia/status/2054390836721553487",
+          "title": "“让 Token 消耗降低 61%”：腾讯开源 Agent Memory",
+          "summary": "腾讯云开源了TencentDB Agent Memory，旨在解决Agent长任务中上下文窗口易满、Token成本高的问题。该方案采用“上下文卸载”与“Mermaid任务画布”两项核心技术，将完整信息卸载至外部存储，同时用结构化任务图保留关键状态与执行路径。实验显示，该方案在多任务连续会话中最高可降低61%的Token消耗，并提升任务成功率。项目已适配OpenClaw等主流框架，支持一键集成与本地SQLite存储。",
+          "sourceUrl": "https://www.ithome.com/0/950/415.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "在大型代码库中高效运用Claude Code：最佳实践与入门指南",
+          "summary": "Claude Code已成功部署于数百万行的单体仓库、遗留系统及分布式架构中。其核心在于围绕模型构建的“工具套件”，而非仅依赖模型本身。该套件包含五个关键扩展点：提供代码库概览的CLAUDE.md文件、实现持续改进的钩子、按需加载专业知识的技能、插件以及MCP服务器。它采用智能体搜索模式，直接在开发者本地实时代码库上操作，无需构建和维护集中式索引，从而避免了传统RAG系统在活跃大型代码库中索引过时的问题。团队对代码库设置的投入程度直接决定了其导航效果。",
+          "sourceUrl": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+          "sourceName": "Claude：Blog（网页）"
+        },
+        {
+          "title": "开源项目OpenSquilla：智能路由与本地检索，大幅降低LLM使用成本",
+          "summary": "开源项目OpenSquilla针对大语言模型应用Token消耗过高的问题，提出了智能模型路由与本地向量检索相结合的解决方案。系统能自动判断任务复杂度，将简单问题路由至廉价模型，复杂任务则分配给更强模型，且路由决策在本地完成，不消耗Token。通过增量发送与缓存命中机制，实际传输Token减少了90%以上。其记忆系统能在上下文将满时自动筛选并压缩关键信息，支持混合检索。项目还具备成本统计、安全沙箱、支持OpenClaw一键迁移及定时任务等功能，显著提升了使用效率与经济性。",
+          "sourceUrl": "https://x.com/vista8/status/2054757474100760626",
+          "sourceName": "X：Vista (@vista8)"
+        },
+        {
+          "title": "Moonshot AI创始人杨植麟最近放出了一个40分钟视频",
+          "summary": "杨植麟在视频中拆解Kimi K2模型的训练，仅花费460万美元便在编程大战中击败GPT-5.5等对手。其通过极致优化、线性注意力等架构创新，抹平资源差距，标志AI竞赛规则改变，小团队以聪明设计颠覆大厂传统玩法。",
+          "sourceUrl": "https://x.com/berryxia/status/2054733412846690443",
           "sourceName": "X：Berry Xia (@berryxia)"
-        },
-        {
-          "title": "Meta首席AI官官宣WhatsApp和Meta AI推出Incognito Chat",
-          "summary": "Meta首席AI官宣布，Incognito Chat功能正式登陆WhatsApp和Meta AI。与ChatGPT等仅不保存历史记录的“临时聊天”不同，该功能的关键创新在于：对话推理完全在用户手机的硬件安全飞地内进行，Meta工程师无法获取明文，且不产生任何服务器日志，会话结束后数据永久消失。此举将WhatsApp成熟的端到端加密标准应用于AI对话，旨在彻底解决用户对隐私的顾虑，从而鼓励用户与AI讨论健康、财务等敏感话题。作者认为，通过建立深度信任来获取用户更真实的prompt，是推动AI从“玩具”转变为生活基础设施的关键，并预测此类隐私保护模式将成为未来AI产品的标准配置。",
-          "sourceUrl": "https://x.com/AYi_AInotes/status/2054616319127904403",
-          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)"
-        },
-        {
-          "title": "开源psql_bm25s，让PostgreSQL多智能体检索提速23倍",
-          "summary": "在构建多智能体生产级系统时，PostgreSQL虽可靠但检索速度不足。团队为此开发并开源了psql_bm25s，这是一个原生PostgreSQL访问方法，实现了精确的BM25检索。其在标准基准测试中比pg_search快约23倍，使得检索不再成为性能瓶颈和成本负担，智能体得以高效查询数据，为大规模自主智能体应用铺平道路。",
-          "sourceUrl": "https://x.com/EMostaque/status/2054587062033043799",
-          "sourceName": "X：Emad Mostaque (@EMostaque)"
-        },
-        {
-          "title": "利用搜索垫图提升AI绘画准确性与质量",
-          "summary": "当使用Codex等AI生成涉及生僻事实的配图时，可先让其搜索相关图片作为参考，再基于此生成新图。该方法能确保图像的真实性，同时生成符合比例要求的高清图片。例如，对于云南甲马符这类GPT可能不了解的主题，通过垫图后AI能准确绘制。",
-          "sourceUrl": "https://x.com/op7418/status/2054491392261632448",
-          "sourceName": "X：歸藏 (@op7418)"
         }
       ]
     }
