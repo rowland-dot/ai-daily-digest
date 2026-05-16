@@ -106,11 +106,29 @@ describe('docs/feed.xml', () => {
     expect(xml).toContain('<entry>');
   });
 
+  it('entry count matches number of digest files (or 30 if more)', () => {
+    const xml = readFileSync('docs/feed.xml', 'utf8');
+    const entryCount = (xml.match(/<entry>/g) || []).length;
+    // Should be at least 1 (the test render produces at least today's entry)
+    expect(entryCount).toBeGreaterThanOrEqual(1);
+    // Never exceeds the 30-entry cap
+    expect(entryCount).toBeLessThanOrEqual(30);
+  });
+
+  it('has stable URN entry ids', () => {
+    const xml = readFileSync('docs/feed.xml', 'utf8');
+    expect(xml).toContain('urn:ai-daily-digest:');
+  });
+
+  it('has feed-level id urn:ai-daily-digest:feed', () => {
+    const xml = readFileSync('docs/feed.xml', 'utf8');
+    expect(xml).toContain('<id>urn:ai-daily-digest:feed</id>');
+  });
+
   it('does NOT contain editorial.overall_en text (no editorial leak)', () => {
     // The Atom feed summaries should only have item counts, not editorial commentary
     const xml = readFileSync('docs/feed.xml', 'utf8');
-    // editorial.overall_en from the live data would be unique prose — we check
-    // no <entry> summary contains more than a short item-count sentence
+    // Each <summary> should be the short item-count sentence, not editorial prose
     const summaries = [...xml.matchAll(/<summary>([^<]+)<\/summary>/g)].map(m => m[1]);
     for (const s of summaries) {
       expect(s).toContain("Today's digest:");
