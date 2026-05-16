@@ -1351,7 +1351,19 @@ async function renderPage({
   audioAvailable,
   audioCuesAll,
   audioTracks,
+  // Relative prefix prepended to same-tree assets (archive nav,
+  // MP3 srcs). "" for docs/index.html, "../" for docs/digests/*.html
+  // so the same HTML body works at both depths.
+  pathPrefix = "",
 }) {
+  // Re-scope audio MP3 paths to the page's depth. The JSON.stringify
+  // below embeds these for the player JS; the inline <audio src> also
+  // reads from this scoped copy.
+  const scopedAudioTracks = audioTracks
+    ? Object.fromEntries(
+        Object.entries(audioTracks).map(([k, v]) => [k, { ...v, src: `${pathPrefix}${v.src}` }]),
+      )
+    : {};
   // Pre-filter all sections so we can detect empty ones and skip both
   // the <section> and its TOC entry.
 
@@ -1465,7 +1477,7 @@ async function renderPage({
       ${has.llama ? `<li><a href="#llama">🦙 r/LocalLLaMA</a></li>` : ""}
       ${has.trending ? `<li><a href="#trending">🚀 GitHub</a></li>` : ""}
       ${has.hf ? `<li><a href="#hf">🤗 HuggingFace</a></li>` : ""}
-      <li><a href="digests/">🗂 Archive</a></li>
+      <li><a href="${pathPrefix}digests/">🗂 Archive</a></li>
     </ul>
   </nav>
 
@@ -1553,7 +1565,7 @@ async function renderPage({
     <div class="audio-fab-body">
       ${
         audioAvailable
-          ? `<audio id="digest-audio" preload="metadata" src="${audioTracks.en.src}"></audio>
+          ? `<audio id="digest-audio" preload="metadata" src="${scopedAudioTracks.en.src}"></audio>
              <div class="audio-track">
                <button id="play-btn" class="play-btn" type="button" aria-label="Play/Pause">▶</button>
                <div id="scrubber" class="scrubber" role="slider" tabindex="0" aria-label="Seek">
@@ -1570,7 +1582,7 @@ async function renderPage({
   </div>
 
   <script id="audio-cues-all" type="application/json">${JSON.stringify(audioCuesAll || {})}</script>
-  <script id="audio-tracks" type="application/json">${JSON.stringify(audioTracks || {})}</script>
+  <script id="audio-tracks" type="application/json">${JSON.stringify(scopedAudioTracks || {})}</script>
   <script>${THEME_TOGGLE_SCRIPT}</script>
   <script>${LANG_SWITCH_SCRIPT}</script>
   <script>${AUDIO_PLAYER_SCRIPT}</script>
@@ -1862,7 +1874,13 @@ if (_claudeRanToday) {
   }
 }
 
-const pageHtml = await renderPage({
+// Render twice — once for the root (docs/index.html) and once for
+// the per-day archive page (docs/digests/<today>.html). The two
+// outputs differ only in their relative-path prefix: same-tree
+// assets (Archive nav link, audio MP3 srcs) need "" from the root
+// and "../" from inside docs/digests/ so they resolve to the same
+// absolute file in both spots.
+const pageArgs = {
   date: today,
   manifest,
   aihotDaily,
@@ -1883,10 +1901,13 @@ const pageHtml = await renderPage({
   audioAvailable,
   audioCuesAll,
   audioTracks,
-});
+};
 
-await writeFile(join(SITE_DIR, "index.html"), pageHtml, "utf8");
-await writeFile(join(DIGESTS_DIR, `${today}.html`), pageHtml, "utf8");
+const rootHtml    = await renderPage({ ...pageArgs, pathPrefix: "" });
+const archiveHtml = await renderPage({ ...pageArgs, pathPrefix: "../" });
+
+await writeFile(join(SITE_DIR, "index.html"), rootHtml, "utf8");
+await writeFile(join(DIGESTS_DIR, `${today}.html`), archiveHtml, "utf8");
 
 if (!archiveDays.includes(today)) archiveDays = [today, ...archiveDays];
 await writeFile(join(DIGESTS_DIR, "index.html"), await renderArchiveIndex(archiveDays), "utf8");
