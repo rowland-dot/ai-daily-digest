@@ -955,21 +955,25 @@ const LANG_SWITCH_SCRIPT = `
       });
     }
 
-    var saved = 'mix';
-    try { saved = localStorage.getItem('digest-lang') || 'mix'; } catch(e) {}
-    if (['mix','en','zh'].indexOf(saved) === -1) saved = 'mix';
-    document.documentElement.setAttribute('data-lang', saved);
-    if (saved !== 'mix') {
-      // Apply on first paint (data-orig already holds original text)
-      window.addEventListener('DOMContentLoaded', function() { applyTextFor(saved); });
-    }
+    // Anonymous visitors always start EN on every page load.
+    // localStorage.digest-lang from a pre-spec visit is deleted
+    // exactly once; no read or write to that key from this point on.
+    try { localStorage.removeItem('digest-lang'); } catch (e) {}
+
+    var current = 'en';
+    document.documentElement.setAttribute('data-lang', current);
+    // Apply EN to every [data-orig] node on first paint. AIHOT items
+    // hold the Chinese source in textContent and the English translation
+    // in data-tr-en; without this call the page would flash Chinese for
+    // a moment before JS swaps it.
+    window.addEventListener('DOMContentLoaded', function() { applyTextFor(current); });
 
     var btns = document.querySelectorAll('.lang-switch button');
     btns.forEach(function(b) {
-      b.setAttribute('aria-pressed', b.dataset.lang === saved ? 'true' : 'false');
+      b.setAttribute('aria-pressed', b.dataset.lang === current ? 'true' : 'false');
       b.addEventListener('click', function() {
         var newLang = b.dataset.lang;
-        try { localStorage.setItem('digest-lang', newLang); } catch(e) {}
+        if (newLang !== 'en' && newLang !== 'zh') return;
         document.documentElement.setAttribute('data-lang', newLang);
         btns.forEach(function(other) {
           other.setAttribute('aria-pressed', other.dataset.lang === newLang ? 'true' : 'false');
@@ -1099,16 +1103,16 @@ const AUDIO_PLAYER_SCRIPT = `
     try { if (tracksEl)  tracks  = JSON.parse(tracksEl.textContent)  || {}; } catch (e) {}
 
     function currentLang() {
-      return document.documentElement.getAttribute('data-lang') || 'mix';
+      return document.documentElement.getAttribute('data-lang') || 'en';
     }
     function activeCues() {
       var lang = currentLang();
-      return allCues[lang] || allCues.mix || null;
+      return allCues[lang] || allCues.en || null;
     }
     var cuesData = activeCues();
 
     document.addEventListener('digest-lang-change', function(e) {
-      var lang = (e.detail && e.detail.lang) || 'mix';
+      var lang = (e.detail && e.detail.lang) || 'en';
       var track = tracks[lang];
       if (track && track.available && track.src) {
         var wasPlaying = !audio.paused;
@@ -1434,7 +1438,6 @@ async function renderPage({
 
   <header class="hero">
     <div class="lang-switch" role="tablist" aria-label="Audio language">
-      <button data-lang="mix" role="tab">Mix</button>
       <button data-lang="en" role="tab">EN</button>
       <button data-lang="zh" role="tab">中文</button>
     </div>
@@ -1468,7 +1471,7 @@ async function renderPage({
     ${has.models ? `
     <section id="models" class="block">
       <h2><span class="section-icon">🤖</span> Model drops & updates</h2>
-      <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT). Click <strong>Translate EN</strong> on any card for an English version.</p>
+      <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT).</p>
       ${aihotItemsCard(modelItems, "models")}
     </section>` : ""}
 
@@ -1547,7 +1550,7 @@ async function renderPage({
     <div class="audio-fab-body">
       ${
         audioAvailable
-          ? `<audio id="digest-audio" preload="metadata" src="${audioTracks.mix.src}"></audio>
+          ? `<audio id="digest-audio" preload="metadata" src="${audioTracks.en.src}"></audio>
              <div class="audio-track">
                <button id="play-btn" class="play-btn" type="button" aria-label="Play/Pause">▶</button>
                <div id="scrubber" class="scrubber" role="slider" tabindex="0" aria-label="Seek">
@@ -1658,7 +1661,7 @@ if (existsSync(DIGESTS_DIR)) {
     .reverse();
 }
 
-const audioAvailable = existsSync(join(SITE_DIR, "digest.mp3"));
+const audioAvailable = existsSync(join(SITE_DIR, "digest-en.mp3"));
 
 async function tryReadCues(name) {
   const p = join(SITE_DIR, name);
@@ -1667,16 +1670,14 @@ async function tryReadCues(name) {
   catch { return null; }
 }
 
-// Three language tracks: Mix (default), English, 中文. Each has its own
-// MP3 + cues. Renderer embeds all three cue sets and the player JS swaps
+// Two language tracks: English (default) + 中文. Each has its own
+// MP3 + cues. Renderer embeds both cue sets and the player JS swaps
 // audio src + active cue set on language change.
 const audioCuesAll = {
-  mix: await tryReadCues("audio-cues.json"),
   en: await tryReadCues("audio-cues-en.json"),
   zh: await tryReadCues("audio-cues-zh.json"),
 };
 const audioTracks = {
-  mix: { src: "digest.mp3", available: existsSync(join(SITE_DIR, "digest.mp3")) },
   en: { src: "digest-en.mp3", available: existsSync(join(SITE_DIR, "digest-en.mp3")) },
   zh: { src: "digest-zh.mp3", available: existsSync(join(SITE_DIR, "digest-zh.mp3")) },
 };
