@@ -14,6 +14,7 @@ import { join } from "node:path";
 import { articleId } from "./lib/article-id.mjs";
 import { renderEditorialCutBox } from "./lib/editorial.mjs";
 import { renderFavouritesPage } from "./lib/favourites-page.mjs";
+import { renderAccountPage } from "./lib/account-page.mjs";
 
 // Feature flag: when false (GH Pages), backend-dependent UI is omitted.
 const BACKEND_LIVE = process.env.BACKEND_LIVE === "true";
@@ -1941,4 +1942,12 @@ await mkdir(FAVOURITES_DIR, { recursive: true });
 const favouritesHtml = renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [] });
 await writeFile(join(FAVOURITES_DIR, "index.html"), favouritesHtml, "utf8");
 
-console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites`);
+// /account page — only written when BACKEND_LIVE=true (feature-flag gated)
+const accountHtml = renderAccountPage({ backendLive: BACKEND_LIVE });
+if (accountHtml) {
+  const ACCOUNT_DIR = join(SITE_DIR, "account");
+  await mkdir(ACCOUNT_DIR, { recursive: true });
+  await writeFile(join(ACCOUNT_DIR, "index.html"), accountHtml, "utf8");
+}
+
+console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites${BACKEND_LIVE ? " + /account" : ""}`);
