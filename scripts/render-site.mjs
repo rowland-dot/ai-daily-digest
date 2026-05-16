@@ -13,6 +13,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { articleId } from "./lib/article-id.mjs";
 import { renderEditorialCutBox } from "./lib/editorial.mjs";
+import { renderFavouritesPage } from "./lib/favourites-page.mjs";
 
 // Feature flag: when false (GH Pages), backend-dependent UI is omitted.
 const BACKEND_LIVE = process.env.BACKEND_LIVE === "true";
@@ -1934,4 +1935,10 @@ await writeFile(join(DIGESTS_DIR, `${today}.html`), archiveHtml, "utf8");
 if (!archiveDays.includes(today)) archiveDays = [today, ...archiveDays];
 await writeFile(join(DIGESTS_DIR, "index.html"), await renderArchiveIndex(archiveDays), "utf8");
 
-console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries)`);
+// /favourites page — always written; sync-prompt visible only when BACKEND_LIVE=true
+const FAVOURITES_DIR = join(SITE_DIR, "favourites");
+await mkdir(FAVOURITES_DIR, { recursive: true });
+const favouritesHtml = renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [] });
+await writeFile(join(FAVOURITES_DIR, "index.html"), favouritesHtml, "utf8");
+
+console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites`);
