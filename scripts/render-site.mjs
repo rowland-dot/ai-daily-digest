@@ -131,31 +131,32 @@ function filterRecent(items, dateKey, hours = LOOKBACK_HOURS) {
   return items.filter((it) => withinWindow(it?.[dateKey], hours));
 }
 
-function googleTranslateUrl(text) {
-  return `https://translate.google.com/?sl=zh-CN&tl=en&op=translate&text=${encodeURIComponent(text)}`;
-}
-
 // ---- Section builders ----
 
 function aihotItemsCard(items, anchorPrefix) {
   if (!items?.length) return `<p class="empty">No items.</p>`;
   return `<div class="cards">${items
-    .map(
-      (item, idx) => `
+    .map((item, idx) => {
+      const titleText = escapeHtml(item.title || "");
+      // The translatable text node lives in an inner <span> so the
+      // outer <a> survives applyTextFor's textContent replacement
+      // on language switch. data-orig / data-tr-* attributes sit on
+      // the span; the <a> is structural and stays put.
+      const titleInner = `<span${txAttrs(item.title || "")}>${titleText}</span>`;
+      const titleHtml = item.url
+        ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${titleInner}</a>`
+        : titleInner;
+      return `
     <article class="card" id="article-${anchorPrefix}-${idx}">
-      <h3 class="card-title"${txAttrs(item.title || "")}>${escapeHtml(item.title || "")}</h3>
+      <h3 class="card-title">${titleHtml}</h3>
       ${item.summary ? `<p class="card-summary"${txAttrs(item.summary)}>${escapeHtml(item.summary)}</p>` : ""}
       <div class="card-meta">
         ${item.source ? `<span class="badge">${escapeHtml(item.source)}</span>` : ""}
         ${item.publishedAt ? `<span class="meta-time" title="${escapeHtml(item.publishedAt)}">${escapeHtml(relTime(item.publishedAt))}</span>` : ""}
       </div>
-      <div class="card-actions">
-        ${item.url ? `<a class="primary-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Read original ↗</a>` : ""}
-        ${item.title || item.summary ? `<a class="secondary-link" href="${googleTranslateUrl(`${item.title}\n\n${item.summary || ""}`)}" target="_blank" rel="noopener">Translate EN ↗</a>` : ""}
-      </div>
     </article>
-  `,
-    )
+  `;
+    })
     .join("")}</div>`;
 }
 
