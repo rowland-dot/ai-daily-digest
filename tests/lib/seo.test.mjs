@@ -7,6 +7,7 @@ import {
   renderNewsArticleJsonLd,
   renderOgMeta,
   renderCanonicalLink,
+  renderAtomFeed,
 } from '../../scripts/lib/seo.mjs';
 
 describe('renderSitemap', () => {
@@ -134,5 +135,55 @@ describe('renderCanonicalLink', () => {
     const tag = renderCanonicalLink('https://example.com/path?q=1&x="y"');
     expect(tag).not.toContain('"y"');
     expect(tag).toContain('&amp;');
+  });
+});
+
+describe('renderAtomFeed', () => {
+  const digests = [
+    { date: '2026-05-17', publishedAt: '2026-05-17T20:30:00Z', itemCount: 14, sourceCount: 8 },
+    { date: '2026-05-16', publishedAt: '2026-05-16T20:30:00Z', itemCount: 87, sourceCount: 10 },
+  ];
+
+  it('produces valid Atom 1.0 XML', () => {
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    expect(xml).toContain('xmlns="http://www.w3.org/2005/Atom"');
+    expect(xml).toContain('<feed ');
+    expect(xml).toContain('<entry>');
+  });
+
+  it('has one entry per digest', () => {
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    expect((xml.match(/<entry>/g) || []).length).toBe(2);
+  });
+
+  it('entry titles are "AI Daily Digest — YYYY-MM-DD"', () => {
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    expect(xml).toContain('<title>AI Daily Digest — 2026-05-17</title>');
+  });
+
+  it('summary does NOT contain editorial content — uses item count format', () => {
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    expect(xml).toContain("Today's digest:");
+  });
+
+  it('caps at 30 entries', () => {
+    const many = Array.from({ length: 35 }, (_, i) => ({
+      date: `2026-05-${String(i + 1).padStart(2, '0')}`,
+      publishedAt: '2026-05-01T00:00:00Z',
+      itemCount: 10,
+      sourceCount: 5,
+    }));
+    const xml = renderAtomFeed(many, 'https://example.com');
+    expect((xml.match(/<entry>/g) || []).length).toBeLessThanOrEqual(30);
+  });
+
+  it('entry ids are stable URNs', () => {
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    expect(xml).toContain('<id>urn:ai-daily-digest:2026-05-17</id>');
+  });
+
+  it('feed id is urn:ai-daily-digest:feed', () => {
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    expect(xml).toContain('<id>urn:ai-daily-digest:feed</id>');
   });
 });
