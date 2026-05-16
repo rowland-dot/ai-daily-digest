@@ -270,6 +270,21 @@ jobs:
 
       - name: Render static site
         run: node scripts/render-site.mjs
+        env:
+          BACKEND_LIVE: "false"
+
+      - name: Render and post daily email to Beehiiv
+        if: >
+          env.BEEHIIV_API_KEY != '' &&
+          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        run: |
+          node scripts/post-to-beehiiv.mjs en
+          node scripts/post-to-beehiiv.mjs zh
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
+          SITE_ORIGIN: ${{ vars.SITE_ORIGIN }}
+        continue-on-error: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
