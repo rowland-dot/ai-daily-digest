@@ -466,6 +466,132 @@ These are not authored as `## State:` headings in this spec because no mockups e
 
 ---
 
+## Mockup states (Pattern 3 declarations)
+
+The 30 mockup files in `docs/designs/backend-and-editorial-layer/` are the visual source-of-truth for this spec. Each block below matches one HTML file; the state slug is the exact value of the file's `data-mockup-state` attribute.
+
+### Mockup: 01-subscribe-form-idle
+#### State: subscribe-form-idle
+Subscribe form at rest — email input empty, Subscribe button enabled, no feedback visible.
+
+### Mockup: 02-subscribe-form-submitting
+#### State: subscribe-form-submitting
+Subscribe form after the user clicks Subscribe — input and button disabled, loading indicator shown.
+
+### Mockup: 03-subscribe-form-link-sent
+#### State: subscribe-form-link-sent
+Subscribe form after a successful submission — confirmation message that the magic-link email has been sent.
+
+### Mockup: 04-subscribe-form-error-invalid-email
+#### State: subscribe-form-error-invalid-email
+Subscribe form showing an inline validation error for an improperly formatted email address.
+
+### Mockup: 05-subscribe-form-error-network
+#### State: subscribe-form-error-network
+Subscribe form showing an error message after a network or server failure during submission.
+
+### Mockup: 06-favourite-star-empty
+#### State: favourite-star-empty
+Favourite star icon in the unsaved (☆) state — article has not been saved by the user.
+
+### Mockup: 07-favourite-star-filled
+#### State: favourite-star-filled
+Favourite star icon in the saved (★) state — article has been saved to localStorage (or server).
+
+### Mockup: 08-favourite-star-syncing
+#### State: favourite-star-syncing
+Favourite star icon while the background POST to `/api/favourites` is in flight — visually distinct from both empty and filled.
+
+### Mockup: 09-favourites-ghpages-empty-no-saves
+#### State: favourites-ghpages-empty-no-saves
+`/favourites` page (GH Pages, `BACKEND_LIVE=false`) when localStorage contains no saved articles.
+
+### Mockup: 10-favourites-ghpages-populated
+#### State: favourites-ghpages-populated
+`/favourites` page (GH Pages, `BACKEND_LIVE=false`) showing one or more saved articles from localStorage.
+
+### Mockup: 11-favourites-cloudflare-anonymous-with-sync-prompt
+#### State: favourites-cloudflare-anonymous-with-sync-prompt
+`/favourites` page (Cloudflare-live, `BACKEND_LIVE=true`) for an anonymous user with at least one save — the "Save these across devices →" email-input prompt is visible in the page header.
+
+### Mockup: 12-favourites-cloudflare-linked-and-populated
+#### State: favourites-cloudflare-linked-and-populated
+`/favourites` page (Cloudflare-live, `BACKEND_LIVE=true`) for a logged-in user — favourites are server-synced, no sync prompt shown.
+
+### Mockup: 13-sync-favourites-prompt-collapsed
+#### State: sync-favourites-prompt-collapsed
+Sync-favourites inline prompt on `/favourites` in its collapsed/teaser state before the user interacts with it.
+
+### Mockup: 14-sync-favourites-prompt-open-email-input
+#### State: sync-favourites-prompt-open-email-input
+Sync-favourites inline prompt expanded to show the email input field, ready for the user to enter their address.
+
+### Mockup: 15-sync-favourites-link-sent-confirmation
+#### State: sync-favourites-link-sent-confirmation
+Sync-favourites flow after a successful submission — confirmation that the magic-link email has been sent.
+
+### Mockup: 16-sync-favourites-error
+#### State: sync-favourites-error
+Sync-favourites flow showing an error state (network failure or server error) after the user submits their email.
+
+### Mockup: 17-account-linked-active
+#### State: account-linked-active
+`/account` page for a logged-in subscriber with an active newsletter subscription.
+
+### Mockup: 18-account-linked-unsubscribed
+#### State: account-linked-unsubscribed
+`/account` page for a logged-in subscriber who has unsubscribed from the newsletter (favourites still intact).
+
+### Mockup: 19-account-language-saving
+#### State: account-language-saving
+`/account` page while a language-preference change is being persisted via `PUT /api/account/language`.
+
+### Mockup: 20-account-language-saved-toast
+#### State: account-language-saved-toast
+`/account` page after a language-preference change succeeds — confirmation toast visible.
+
+### Mockup: 21-account-delete-confirm-modal-open
+#### State: account-delete-confirm-modal-open
+`/account` page with the "Delete my data" confirmation modal open, awaiting the user's final confirmation.
+
+### Mockup: 22-account-delete-confirm-modal-closed
+#### State: account-delete-confirm-modal-closed
+`/account` page with the "Delete my data" confirmation modal dismissed (user cancelled).
+
+### Mockup: 23-editors-cut-cut-with-en-commentary
+#### State: editors-cut-cut-with-en-commentary
+Article card that made the Editor's Cut, showing the 🏅 commentary box with EN commentary text (EN language tab active).
+
+### Mockup: 24-editors-cut-cut-with-zh-commentary
+#### State: editors-cut-cut-with-zh-commentary
+Article card that made the Editor's Cut, showing the 🏅 commentary box with 中文 commentary text (中文 language tab active).
+
+### Mockup: 25-editors-cut-cut-zh-fallback-to-en
+#### State: editors-cut-cut-zh-fallback-to-en
+Article card in the Editor's Cut on a budget-recovery day when only `commentary_en` was produced — 中文 tab shows the EN commentary with a "(English only today)" tag.
+
+### Mockup: 26-editors-cut-not-cut-no-box
+#### State: editors-cut-not-cut-no-box
+Article card that did not make the Editor's Cut — no 🏅 box rendered, card is unchanged from the base card-refinements spec layout.
+
+### Mockup: 27-email-en
+#### State: email-en
+Daily subscriber email HTML body for EN-segment recipients — leads with the EN Editor's Cut overall narrative followed by cut-article teases.
+
+### Mockup: 28-email-zh
+#### State: email-zh
+Daily subscriber email HTML body for 中文-segment recipients — leads with the 中文 Editor's Cut overall narrative followed by cut-article teases.
+
+### Mockup: 29-article-translation-populated
+#### State: article-translation-populated
+`/articles/<slug>/` translation page with a complete EN excerpt (~3 paragraphs), prominent "Read original (中文) →" CTA, and full attribution.
+
+### Mockup: 30-article-translation-pending-placeholder
+#### State: article-translation-pending-placeholder
+`/articles/<slug>/` translation page rendered as a placeholder when the routine ran out of budget for this article — shows "Translation pending — read CN original →" with a link to the source.
+
+---
+
 ## Routine prompt extension
 
 The existing routine prompt (per `2026-05-14-claude-summary-engine-spec.md`) is extended with three new output sections, all produced in one pass:
