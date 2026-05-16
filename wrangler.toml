@@ -1,0 +1,11 @@
+name = "ai-daily-digest-api"
+main = "worker/index.ts"
+compatibility_date = "2024-09-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-daily-digest-dev"
+database_id = "local"
+
+[vars]
+BACKEND_LIVE = "false"

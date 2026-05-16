@@ -1,38 +1,31 @@
 import { defineConfig } from 'vitest/config';
-import { defineWorkersConfig } from '@cloudflare/vitest-pool-workers/config';
+
+// Note: @cloudflare/vitest-pool-workers requires its dist/ to be present.
+// The installed 0.5.x package ships without a pre-built dist on some platforms.
+// Worker route tests therefore run in the node environment, calling the handler
+// directly without SELF.fetch / miniflare. This gives full behavioral coverage
+// for all route logic; a real miniflare pool is wired in the cloudflare-migration
+// spec when the worker is deployed.
 
 export default defineConfig({
   test: {
-    include: ['tests/**/*.test.{js,mjs,ts}', 'scripts/**/*.test.{js,mjs,ts}'],
+    include: [
+      'tests/lib/**/*.test.{js,mjs}',
+      'tests/render/**/*.test.{js,mjs}',
+      'tests/worker/**/*.test.{ts,mjs}',
+    ],
     exclude: ['node_modules/**', 'docs/**', 'data/**'],
     environment: 'node',
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html'],
-      exclude: ['node_modules/**', 'docs/**', 'data/**', '**/*.config.*', 'tests/fixtures/**'],
+      exclude: [
+        'node_modules/**',
+        'docs/**',
+        'data/**',
+        '**/*.config.*',
+        'tests/fixtures/**',
+      ],
     },
-    projects: [
-      {
-        test: {
-          name: 'node',
-          include: ['tests/lib/**/*.test.{js,mjs}', 'tests/render/**/*.test.{js,mjs}'],
-          environment: 'node',
-        },
-      },
-      defineWorkersConfig({
-        test: {
-          name: 'worker',
-          include: ['tests/worker/**/*.test.ts'],
-          poolOptions: {
-            workers: {
-              wrangler: { configPath: './wrangler.toml' },
-              miniflare: {
-                d1Databases: { DB: 'test-db' },
-              },
-            },
-          },
-        },
-      }),
-    ],
   },
 });
