@@ -99,10 +99,8 @@ jobs:
             data/translation-cache.json
             data/article-essence-cache.json
             data/article-raw-cache.json
-            docs/digest.mp3
             docs/digest-en.mp3
             docs/digest-zh.mp3
-            docs/audio-cues.json
             docs/audio-cues-en.json
             docs/audio-cues-zh.json
             docs/content-translations.json
@@ -117,7 +115,7 @@ jobs:
         id: mode-final
         run: |
           want="${{ steps.mode.outputs.value }}"
-          if [ "$want" = "fast" ] && [ ! -f data/manifest.json -o ! -f docs/digest.mp3 ]; then
+          if [ "$want" = "fast" ] && [ ! -f data/manifest.json -o ! -f docs/digest-en.mp3 ]; then
             echo "Cached state missing — falling back to full mode"
             echo "value=full" >> $GITHUB_OUTPUT
           else
@@ -177,14 +175,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            docs/digest.mp3
             docs/digest-en.mp3
             docs/digest-zh.mp3
-            docs/audio-cues.json
             docs/audio-cues-en.json
             docs/audio-cues-zh.json
             docs/content-translations.json
-          key: audio-v22-${{ steps.data-hash.outputs.hash }}
+          key: audio-v23-${{ steps.data-hash.outputs.hash }}
 
       - name: Install ffmpeg (only if regenerating audio)
         if: steps.mode-final.outputs.value == 'full' && steps.audio-cache.outputs.cache-hit != 'true'
