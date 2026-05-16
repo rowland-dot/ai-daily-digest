@@ -16,9 +16,19 @@ import { renderEditorialCutBox } from "./lib/editorial.mjs";
 import { renderFavouritesPage } from "./lib/favourites-page.mjs";
 import { renderAccountPage } from "./lib/account-page.mjs";
 import { renderTranslationPage, translationSlug } from "./lib/translations.mjs";
+import {
+  renderSitemap,
+  renderNewsSitemap,
+  renderRobotsTxt,
+  renderItemListJsonLd,
+  renderOgMeta,
+  renderCanonicalLink,
+  renderAtomFeed,
+} from "./lib/seo.mjs";
 
 // Feature flag: when false (GH Pages), backend-dependent UI is omitted.
 const BACKEND_LIVE = process.env.BACKEND_LIVE === "true";
+const SITE_ORIGIN = process.env.SITE_ORIGIN || "https://rowland-dot.github.io/ai-daily-digest";
 
 const DATA_DIR = "data";
 const SITE_DIR = "docs";
@@ -1463,6 +1473,26 @@ async function renderPage({
   // if the manifest doesn't include fetched_at.
   const sydney = formatSydney(manifest?.fetched_at);
 
+  // SEO — canonical URL for this page
+  const pageCanonicalUrl = pathPrefix === ""
+    ? `${SITE_ORIGIN}/`
+    : `${SITE_ORIGIN}/digests/${date}.html`;
+  const ogMeta = renderOgMeta({
+    title: `AI Daily Digest — ${sydney.date}`,
+    url: pageCanonicalUrl,
+    description: "A daily roundup of AI model releases, industry moves, builder voices, and trending signals.",
+    imageUrl: `${SITE_ORIGIN}/og-image.png`,
+  });
+  // Collect all visible items for ItemList JSON-LD
+  const allVisibleItems = [
+    ...(modelItems || []),
+    ...(productItems || []),
+    ...(industryItems || []),
+    ...(paperItems || []),
+  ].filter(it => it.url).map(it => ({ title: it.title || "", url: it.url }));
+  const itemListLd = renderItemListJsonLd(allVisibleItems, SITE_ORIGIN, date);
+  const canonicalTag = renderCanonicalLink(pageCanonicalUrl);
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1470,6 +1500,10 @@ async function renderPage({
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Daily Digest — ${escapeHtml(sydney.date)}</title>
   <meta name="description" content="A daily roundup of AI model releases, industry moves, builder voices, and trending signals.">
+  ${canonicalTag}
+  <link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="${escapeHtml(pathPrefix)}feed.xml">
+  ${ogMeta}
+  ${itemListLd}
   <link rel="preconnect" href="https://rsms.me/" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   <script>${THEME_BOOT_SCRIPT}</script>
@@ -1947,7 +1981,7 @@ await writeFile(join(DIGESTS_DIR, "index.html"), await renderArchiveIndex(archiv
 // /favourites page — always written; sync-prompt visible only when BACKEND_LIVE=true
 const FAVOURITES_DIR = join(SITE_DIR, "favourites");
 await mkdir(FAVOURITES_DIR, { recursive: true });
-const favouritesHtml = renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [] });
+const favouritesHtml = renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [], siteOrigin: SITE_ORIGIN });
 await writeFile(join(FAVOURITES_DIR, "index.html"), favouritesHtml, "utf8");
 
 // /account page — only written when BACKEND_LIVE=true (feature-flag gated)
@@ -1961,7 +1995,6 @@ if (accountHtml) {
 // /articles/<slug>/ — translation pages for CN-source articles
 const ARTICLES_DIR = join(SITE_DIR, "articles");
 let translationCount = 0;
-const SITE_ORIGIN = process.env.SITE_ORIGIN || "https://rowland-dot.github.io/ai-daily-digest";
 for (const entry of translationArticles) {
   if (!entry.slug) continue;
   const pageHtml = renderTranslationPage(entry, { siteOrigin: SITE_ORIGIN });
@@ -1971,4 +2004,39 @@ for (const entry of translationArticles) {
   translationCount++;
 }
 
-console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites${BACKEND_LIVE ? " + /account" : ""}${translationCount ? ` + ${translationCount} translation pages` : ""}`);
+// ---- SEO output files ----
+
+// Collect all pages for sitemap
+const sitemapPages = [
+  "/",
+  ...archiveDays.map(d => `/digests/${d}.html`),
+  "/digests/",
+  "/favourites",
+  "/feed.xml",
+];
+if (BACKEND_LIVE) sitemapPages.push("/account");
+
+// Translation page slugs for news-sitemap
+const translationSlugsForSeo = translationArticles
+  .filter(a => a.slug)
+  .map(a => ({
+    slug: a.slug,
+    title: a.title ?? "",
+    publishedAt: a.publishedAt ?? today,
+    source: a.source ?? "AIHOT",
+  }));
+
+await writeFile(join(SITE_DIR, "sitemap.xml"), renderSitemap(sitemapPages, SITE_ORIGIN), "utf8");
+await writeFile(join(SITE_DIR, "news-sitemap.xml"), renderNewsSitemap(translationSlugsForSeo, SITE_ORIGIN), "utf8");
+await writeFile(join(SITE_DIR, "robots.txt"), renderRobotsTxt(SITE_ORIGIN), "utf8");
+
+// Atom feed — collect digest dates with metadata
+const digestMeta = archiveDays.map(d => ({
+  date: d,
+  publishedAt: `${d}T20:30:00Z`,
+  itemCount: null,
+  sourceCount: null,
+}));
+await writeFile(join(SITE_DIR, "feed.xml"), renderAtomFeed(digestMeta, SITE_ORIGIN), "utf8");
+
+console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites${BACKEND_LIVE ? " + /account" : ""}${translationCount ? ` + ${translationCount} translation pages` : ""} + sitemap/feed/robots`);

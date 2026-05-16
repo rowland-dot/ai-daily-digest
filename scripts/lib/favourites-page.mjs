@@ -62,7 +62,7 @@ function renderEmptyState() {
 </div>`;
 }
 
-export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', savedArticles = [] } = {}) {
+export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', savedArticles = [], siteOrigin = '' } = {}) {
   const showSyncPrompt = backendLive && auth === 'anonymous';
   const favSource = backendLive ? 'api' : 'localStorage';
   const subtitleCount = savedArticles.length
@@ -79,6 +79,8 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>★ Favourites — AI Daily Digest</title>
+<link rel="canonical" href="${escHtml((siteOrigin || '') + '/favourites')}">
+<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="../feed.xml">
 <link rel="stylesheet" href="../_shared.css">
 </head>
 <body>
