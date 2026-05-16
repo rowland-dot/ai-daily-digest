@@ -948,17 +948,17 @@ def main() -> int:
             print(f"[warn] ffprobe failed on {p.name}: {e}", file=sys.stderr)
             return 0.0
 
-    def render_track(track_lang: str, fixed_voice: str | None, out_mp3: Path, cues_out: Path):
+    def render_track(track_lang: str, fixed_voice: str, out_mp3: Path, cues_out: Path):
         """Render one full track (en or zh) — translate non-target text to the
         target lang and use the fixed voice for ALL segments."""
         print(f"\n--- Track [{track_lang}] -> {out_mp3.name} ---")
         # Build per-track jobs
         seg_dir = SEGS / track_lang
         seg_dir.mkdir(parents=True, exist_ok=True)
+        target = "en" if track_lang == "en" else "zh"
         jobs: list[tuple[str, str, Path]] = []
         anchors: list[str | None] = []
-        for i, (anchor, text, orig_voice) in enumerate(segments):
-            target = "en" if track_lang == "en" else "zh"
+        for i, (anchor, text, _orig_voice) in enumerate(segments):
             t = translate(text, target)
             v = fixed_voice
             jobs.append((t, v, seg_dir / f"{i:04d}.mp3"))
@@ -1018,7 +1018,7 @@ def main() -> int:
         print(f"[ok] wrote {out_mp3} ({out_mp3.stat().st_size // 1024} KB from {len(segment_files)} segments)")
         return True
 
-    # Render each track. Failure of either track returns non-zero so the
+    # Render each track. Failure of any track returns non-zero so the
     # workflow surfaces the error and skips publish.
     all_ok = True
     for lang_code, voice in LANGUAGE_TRACKS:
