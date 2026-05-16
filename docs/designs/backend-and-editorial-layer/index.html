@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockups — Backend, Identity, Editorial Layer, Translations & SEO</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  .mockup-index { max-width: 920px; margin: 0 auto; padding: 32px 20px; }
+  .mockup-group { margin-bottom: 32px; }
+  .mockup-group h2 { font-family: var(--display-font); font-size: 22px; margin: 0 0 12px; }
+  .mockup-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .mockup-list a {
+    display: block; padding: 12px 14px; border: 1px solid var(--border);
+    border-radius: var(--radius); background: var(--surface); color: var(--text);
+    font-size: 14px;
+  }
+  .mockup-list a:hover { border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+  .mockup-list .slug { font-family: var(--display-font); font-weight: 600; }
+  .mockup-list .tier { float: right; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>Backend &amp; Editorial Layer — Mockups</h1>
+    <p class="date">30 states across 9 surfaces · authored 2026-05-17</p>
+    <p class="tagline">Per-state HTML mockups derived from <code>docs/specs/2026-05-17-backend-and-editorial-layer-spec.md</code>. See <a href="00-storyboard.md">00-storyboard.md</a> for the storyboard, provenance, and INVENT flags.</p>
+  </header>
+
+  <main class="mockup-index">
+
+    <div class="mockup-group">
+      <h2>1. Subscribe form (B1)</h2>
+      <ul class="mockup-list">
+        <li><a href="01-subscribe-form-idle.html"><span class="slug">subscribe-form-idle</span><span class="tier">A</span></a></li>
+        <li><a href="02-subscribe-form-submitting.html"><span class="slug">subscribe-form-submitting</span><span class="tier">B</span></a></li>
+        <li><a href="03-subscribe-form-link-sent.html"><span class="slug">subscribe-form-link-sent</span><span class="tier">B</span></a></li>
+        <li><a href="04-subscribe-form-error-invalid-email.html"><span class="slug">subscribe-form-error-invalid-email</span><span class="tier">B</span></a></li>
+        <li><a href="05-subscribe-form-error-network.html"><span class="slug">subscribe-form-error-network</span><span class="tier">B</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>2. Favourite star icon (B2 / B3)</h2>
+      <ul class="mockup-list">
+        <li><a href="06-favourite-star-empty.html"><span class="slug">favourite-star-empty</span><span class="tier">A</span></a></li>
+        <li><a href="07-favourite-star-filled.html"><span class="slug">favourite-star-filled</span><span class="tier">A</span></a></li>
+        <li><a href="08-favourite-star-syncing.html"><span class="slug">favourite-star-syncing</span><span class="tier">B</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>3. /favourites — GH-Pages build (B4, BACKEND_LIVE=false)</h2>
+      <ul class="mockup-list">
+        <li><a href="09-favourites-ghpages-empty-no-saves.html"><span class="slug">favourites-ghpages-empty-no-saves</span><span class="tier">A</span></a></li>
+        <li><a href="10-favourites-ghpages-populated.html"><span class="slug">favourites-ghpages-populated</span><span class="tier">A</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>4. /favourites — Cloudflare build (B4, BACKEND_LIVE=true)</h2>
+      <ul class="mockup-list">
+        <li><a href="11-favourites-cloudflare-anonymous-with-sync-prompt.html"><span class="slug">favourites-cloudflare-anonymous-with-sync-prompt</span><span class="tier">A</span></a></li>
+        <li><a href="12-favourites-cloudflare-linked-and-populated.html"><span class="slug">favourites-cloudflare-linked-and-populated</span><span class="tier">A</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>5. Sync-favourites flow (B5)</h2>
+      <ul class="mockup-list">
+        <li><a href="13-sync-favourites-prompt-collapsed.html"><span class="slug">sync-favourites-prompt-collapsed</span><span class="tier">A</span></a></li>
+        <li><a href="14-sync-favourites-prompt-open-email-input.html"><span class="slug">sync-favourites-prompt-open-email-input</span><span class="tier">A</span></a></li>
+        <li><a href="15-sync-favourites-link-sent-confirmation.html"><span class="slug">sync-favourites-link-sent-confirmation</span><span class="tier">B</span></a></li>
+        <li><a href="16-sync-favourites-error.html"><span class="slug">sync-favourites-error</span><span class="tier">B</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>6. /account page (B1 / B6b / B10 / B11)</h2>
+      <ul class="mockup-list">
+        <li><a href="17-account-linked-active.html"><span class="slug">account-linked-active</span><span class="tier">A</span></a></li>
+        <li><a href="18-account-linked-unsubscribed.html"><span class="slug">account-linked-unsubscribed</span><span class="tier">A</span></a></li>
+        <li><a href="19-account-language-saving.html"><span class="slug">account-language-saving</span><span class="tier">B</span></a></li>
+        <li><a href="20-account-language-saved-toast.html"><span class="slug">account-language-saved-toast</span><span class="tier">B</span></a></li>
+        <li><a href="21-account-delete-confirm-modal-open.html"><span class="slug">account-delete-confirm-modal-open</span><span class="tier">A</span></a></li>
+        <li><a href="22-account-delete-confirm-modal-closed.html"><span class="slug">account-delete-confirm-modal-closed</span><span class="tier">A</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>7. Editor's Cut commentary box (B7 / B7b)</h2>
+      <ul class="mockup-list">
+        <li><a href="23-editors-cut-cut-with-en-commentary.html"><span class="slug">editors-cut-cut-with-en-commentary</span><span class="tier">A</span></a></li>
+        <li><a href="24-editors-cut-cut-with-zh-commentary.html"><span class="slug">editors-cut-cut-with-zh-commentary</span><span class="tier">A</span></a></li>
+        <li><a href="25-editors-cut-cut-zh-fallback-to-en.html"><span class="slug">editors-cut-cut-zh-fallback-to-en</span><span class="tier">B</span></a></li>
+        <li><a href="26-editors-cut-not-cut-no-box.html"><span class="slug">editors-cut-not-cut-no-box</span><span class="tier">A</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>8. Daily email body (B6) — inline styles, email-client safe</h2>
+      <ul class="mockup-list">
+        <li><a href="27-email-en.html"><span class="slug">email-en</span><span class="tier">A</span></a></li>
+        <li><a href="28-email-zh.html"><span class="slug">email-zh</span><span class="tier">A</span></a></li>
+      </ul>
+    </div>
+
+    <div class="mockup-group">
+      <h2>9. /articles/&lt;slug&gt;/ translation page (B8)</h2>
+      <ul class="mockup-list">
+        <li><a href="29-article-translation-populated.html"><span class="slug">article-translation-populated</span><span class="tier">A</span></a></li>
+        <li><a href="30-article-translation-pending-placeholder.html"><span class="slug">article-translation-pending-placeholder</span><span class="tier">A</span></a></li>
+      </ul>
+    </div>
+
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+      <p><strong>Provenance:</strong> All class names and design tokens lifted from <code>scripts/render-site.mjs</code> PAGE_CSS block. New classes (subscribe-form, editors-cut, account-card, modal, toast, sync-prompt, translation-*, fav-star) flagged in <a href="00-storyboard.md">00-storyboard.md</a> § INVENT flags.</p>
+      <p><strong>Theme parity:</strong> All mockups support both <code>data-theme="claude"</code> (warm) and <code>data-theme="linear"</code> (dark) via in-mockup theme toggle — click "Linear" in the hero to swap. No separate <code>-dark.html</code> files because the design system handles dark mode by construction (see 00-storyboard.md § Gate 9).</p>
+    </footer>
+
+  </main>
+</body>
+</html>

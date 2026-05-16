@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — email-en</title>
+<!--
+| State slug | Tier | Entry-point        | What it shows |
+|------------|------|--------------------|---------------|
+| email-en   | A    | server-triggered   | Daily email sent at 07:00 Sydney to EN-segment subscribers. Editor's Cut overall narrative as lead, followed by 6 cut articles with EN teases. Inline styles only (email-client safe). |
+NOTE: Inline styles are intentional — email clients strip <link>
+and don't support CSS custom properties (var). Colours are literal
+hex values mirroring the Claude theme. See 00-storyboard.md for the
+divergence rationale.
+-->
+</head>
+<body style="margin:0; padding:0; background:#efe9de; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; color:#141413; line-height:1.6;">
+<div data-mockup-state="email-en" data-mockup-tier="A" data-mockup-entry-point="server-triggered" data-mockup-capture="[data-testid='email-body']" data-mockup-trigger='[]'>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#efe9de; padding:24px 12px;">
+  <tr><td align="center">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" data-testid="email-body" style="max-width:600px; width:100%; background:#faf9f5; border:1px solid #e6dfd8; border-radius:14px; overflow:hidden; box-shadow:0 4px 12px rgba(20,20,19,0.05);">
+
+      <!-- Hero -->
+      <tr><td style="padding:32px 28px 24px; background:linear-gradient(135deg,#efe9de 0%,#faf9f5 100%); border-bottom:1px solid #e6dfd8;">
+        <h1 style="margin:0 0 6px; font-family:Georgia,'Tiempos Headline',serif; font-size:28px; font-weight:700; color:#141413; letter-spacing:-0.01em;">AI Daily Digest</h1>
+        <p style="margin:0; font-size:14px; color:#6c6a64;">Saturday, 17 May 2026 · Editor's Cut</p>
+      </td></tr>
+
+      <!-- Editor's Cut overall narrative -->
+      <tr><td style="padding:28px 28px 8px;">
+        <p style="margin:0 0 12px; font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#cc785c;">🏅 Today's Editor's Cut</p>
+        <p style="margin:0 0 12px; font-size:16px; line-height:1.7; color:#141413;">
+          The dominant story today isn't a single model — it's that the major labs are converging on the same competitive surface: context length. Anthropic shipped Claude 4.7 at 1M tokens, the Qwen team open-sourced an omnimodal checkpoint, and OpenAI quietly extended Responses-API context to 512K. Everyone is fighting for room to fit your codebase, your conversation history, and a few thousand lines of tool output simultaneously.
+        </p>
+        <p style="margin:0 0 12px; font-size:16px; line-height:1.7; color:#141413;">
+          Meanwhile, the open-source side is still about cost. r/LocalLLaMA spent the day discussing how cheap a 70B model can run on consumer GPUs — and the answer keeps getting cheaper. The two trajectories (frontier labs scaling context, open-source compressing inference) are converging on the same end-user: someone who used to think 32k was generous.
+        </p>
+        <p style="margin:0; font-size:16px; line-height:1.7; color:#141413;">
+          Six picks below. The Anthropic and Qwen launches are the can't-miss ones; everything else is supporting context.
+        </p>
+      </td></tr>
+
+      <!-- Cut articles -->
+      <tr><td style="padding:18px 28px 8px;">
+        <h2 style="margin:24px 0 12px; font-family:Georgia,serif; font-size:18px; font-weight:700; color:#141413;">Today's picks</h2>
+
+        <!-- Cut article 1 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-a3f12b8c" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">Claude 4.7 launches with 1M context window</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.55;">The pricing parity with Opus is the real signal — Anthropic is betting context length is the differentiator this cycle.</p>
+          </td></tr>
+        </table>
+
+        <!-- Cut article 2 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-qwen-omni" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">Qwen3-Omni open-sources at 32B parameters</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.55;">First open-weight omnimodal model that's competitive at frontier sizes. Expect a flood of fine-tunes within the week.</p>
+          </td></tr>
+        </table>
+
+        <!-- Cut article 3 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=simon-prompt-caching" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">Simon Willison on prompt caching strategies</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.55;">A practical guide that's already the reference for new builders trying to keep API bills under control.</p>
+          </td></tr>
+        </table>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=openai-responses-512k" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">OpenAI quietly extends Responses API to 512K context</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.55;">No blog post, no fanfare — just an API doc update. The pattern matches GPT-4 Turbo's 128K rollout.</p>
+          </td></tr>
+        </table>
+
+        <p style="margin:12px 0; font-size:13px; color:#6c6a64; text-align:center;">
+          <a href="https://ai-daily-digest.example/?ref=email-en" style="color:#a9583e; text-decoration:none; font-weight:600;">Read all 14 picks on the site →</a>
+        </p>
+      </td></tr>
+
+      <!-- Footer -->
+      <tr><td style="padding:24px 28px 32px; background:#efe9de; border-top:1px solid #e6dfd8; color:#6c6a64; font-size:12px; text-align:center;">
+        <p style="margin:0 0 8px;">You're getting this because you subscribed to AI Daily Digest in English.</p>
+        <p style="margin:0 0 8px;">
+          <a href="https://ai-daily-digest.example/account" style="color:#a9583e; text-decoration:none;">Manage your account</a>
+          ·
+          <a href="https://ai-daily-digest.example/account?lang=zh" style="color:#a9583e; text-decoration:none;">Switch to 中文</a>
+          ·
+          <!-- Beehiiv-standard one-click unsubscribe link will be auto-appended by Beehiiv on send. -->
+          <a href="{{ beehiiv_unsubscribe_url }}" style="color:#a9583e; text-decoration:none;">Unsubscribe</a>
+        </p>
+        <p style="margin:0;">AI Daily Digest · <a href="https://ai-daily-digest.example/" style="color:#6c6a64; text-decoration:none;">ai-daily-digest.example</a></p>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</div>
+</body>
+</html>

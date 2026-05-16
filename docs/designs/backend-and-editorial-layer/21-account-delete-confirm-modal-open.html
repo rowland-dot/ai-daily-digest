@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — account-delete-confirm-modal-open</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                              | Tier | Entry-point              | What it shows |
+|-----------------------------------------|------|--------------------------|---------------|
+| account-delete-confirm-modal-open       | A    | account-linked-active    | User clicked "Delete my data" — confirm modal is open over the dimmed /account page. Modal explains the consequence; primary action is destructive (red); secondary is Cancel (autofocused). |
+-->
+<section class="screen"
+         data-mockup-state="account-delete-confirm-modal-open"
+         data-mockup-tier="A"
+         data-mockup-entry-point="account-linked-active"
+         data-mockup-capture="[data-testid='delete-confirm-modal']"
+         data-mockup-trigger='[
+           {"action":"click","locator":"[data-testid=\"delete-data-btn\"]"}
+         ]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>Account</h1>
+    <p class="date">Manage your subscription and saved articles</p>
+  </header>
+
+  <main class="container" data-testid="account-page" data-auth="linked" aria-hidden="true">
+    <div class="account-card">
+      <h3>Your subscription</h3>
+      <p class="muted">Signed in as <strong>alex@example.com</strong></p>
+      <div class="account-row">
+        <span class="row-label">Newsletter</span>
+        <span class="row-value">Subscribed · daily email at 07:00 Sydney</span>
+        <button type="button" class="btn-secondary">Unsubscribe</button>
+      </div>
+    </div>
+    <div class="account-card">
+      <h3>Danger zone</h3>
+      <p class="muted">Delete everything we know about you. This can't be undone.</p>
+      <div class="account-row" style="border-top: 0; justify-content: flex-start;">
+        <button type="button" class="btn-danger" data-testid="delete-data-btn">Delete my data</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title" aria-describedby="delete-modal-body" data-testid="delete-confirm-modal">
+    <div class="modal">
+      <h3 id="delete-modal-title">Delete your account?</h3>
+      <p id="delete-modal-body">
+        This will permanently remove <strong>alex@example.com</strong> from our newsletter list, delete all 3 saved articles, and erase any session data on this device. This action can't be undone.
+      </p>
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" data-testid="delete-cancel-btn" autofocus>Cancel</button>
+        <button type="button" class="btn-danger" data-testid="delete-confirm-btn">Yes, delete everything</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" aria-hidden="true">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

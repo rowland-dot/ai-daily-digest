@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — account-language-saving</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                 | Tier | Entry-point             | What it shows |
+|----------------------------|------|-------------------------|---------------|
+| account-language-saving    | B    | account-linked-active   | User clicked 中文 on the language preference toggle. The toggle shows aria-busy while PUT /api/account/language is in flight; ZH is visually selected. Both buttons disabled until the request resolves. |
+-->
+<section class="screen"
+         data-mockup-state="account-language-saving"
+         data-mockup-tier="B"
+         data-mockup-entry-point="account-linked-active"
+         data-mockup-capture="[data-testid='lang-pref']"
+         data-mockup-trigger='[
+           {"action":"click","locator":"[data-testid=\"lang-pref-zh\"]"}
+         ]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>Account</h1>
+    <p class="date">Manage your subscription and saved articles</p>
+  </header>
+
+  <main class="container" data-testid="account-page" data-auth="linked" data-newsletter-state="subscribed">
+    <div class="account-card">
+      <h3>Your subscription</h3>
+      <p class="muted">Signed in as <strong>alex@example.com</strong></p>
+
+      <div class="account-row">
+        <span class="row-label">Newsletter</span>
+        <span class="row-value">Subscribed · daily email at 07:00 Sydney</span>
+        <button type="button" class="btn-secondary">Unsubscribe</button>
+      </div>
+
+      <div class="account-row">
+        <span class="row-label">Language preference</span>
+        <div class="lang-pref" role="tablist" aria-label="Email language" aria-busy="true" data-testid="lang-pref" data-saving="true">
+          <button type="button" role="tab" data-lang="en" aria-pressed="false" disabled data-testid="lang-pref-en">EN</button>
+          <button type="button" role="tab" data-lang="zh" aria-pressed="true" disabled data-testid="lang-pref-zh">中文 <span class="spinner" aria-hidden="true" style="margin-left: 4px;"></span></button>
+        </div>
+      </div>
+
+      <div class="account-row">
+        <span class="row-label">Saved articles</span>
+        <span class="row-value">3 saved · synced across devices</span>
+        <a href="../favourites" class="btn-secondary" style="text-decoration: none;">View favourites</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

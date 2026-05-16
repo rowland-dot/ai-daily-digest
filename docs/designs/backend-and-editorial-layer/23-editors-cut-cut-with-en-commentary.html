@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — editors-cut-cut-with-en-commentary</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                              | Tier | Entry-point | What it shows |
+|-----------------------------------------|------|-------------|---------------|
+| editors-cut-cut-with-en-commentary      | A    | none        | A card that made the cut, with the 🏅 Editor's Cut commentary box rendered in EN under the card body. Language tab is EN. |
+-->
+<section class="screen"
+         data-mockup-state="editors-cut-cut-with-en-commentary"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='editors-cut']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-17</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="#models">🤖 Models</a></li>
+  </ul></nav>
+
+  <main class="container">
+    <section id="models" class="block">
+      <h2><span class="section-icon">🤖</span> Model drops &amp; updates</h2>
+      <p class="section-sub">Latest model launches from the last 24 hours.</p>
+      <div class="cards">
+        <article class="card" id="article-models-0">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">2h ago</span>
+          </div>
+          <aside class="editors-cut" data-testid="editors-cut" data-lang="en" data-commentary-source="commentary_en">
+            <span class="ec-label">🏅 Editor's Cut</span>
+            <p class="ec-body">A 1M context window matters less for "fits a novel" and more for "fits a codebase and still has room for tool output and conversation history." The pricing parity is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.</p>
+          </aside>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

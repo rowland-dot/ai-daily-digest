@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — article-translation-populated</title>
+<link rel="stylesheet" href="_shared.css">
+<!--
+SEO HEAD ELEMENTS (per D7 / B13) — these will exist on the live page;
+shown here so reviewers can verify the head shape.
+<link rel="canonical" href="https://www.aihot.com/articles/claude-4-7-launch">
+<link rel="alternate" hreflang="zh" href="https://www.aihot.com/articles/claude-4-7-launch">
+<link rel="alternate" hreflang="en" href="https://ai-daily-digest.example/articles/aihot-claude-4-7-launch-a3f12b8c/">
+<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">
+-->
+</head>
+<body>
+<!--
+| State slug                          | Tier | Entry-point | What it shows |
+|-------------------------------------|------|-------------|---------------|
+| article-translation-populated       | A    | none        | /articles/<slug>/ page for a CN-source article with 3 paragraphs of EN translation excerpt, prominent "Read original (中文) →" CTA, attribution, publish date. |
+-->
+<section class="screen"
+         data-mockup-state="article-translation-populated"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='translation-article']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1 style="font-size: clamp(22px, 4vw, 32px);">EN Translation — AIHOT Article</h1>
+    <p class="date">A 3-paragraph excerpt of the original Chinese article. Read the full piece in 中文 below.</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="../../">← Today's digest</a></li>
+    <li><a href="../../digests/">🗂 Archive</a></li>
+  </ul></nav>
+
+  <main class="container">
+    <article class="translation-article" data-testid="translation-article">
+      <h1>Claude 4.7 launches with 1M context window</h1>
+      <p class="translation-attribution">
+        <span><strong>Source:</strong> AIHOT</span>
+        <span><strong>Published:</strong> 2026-05-17 (Beijing time)</span>
+        <span><strong>Language:</strong> 中文 (Chinese)</span>
+      </p>
+
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+        Read original (中文) →
+      </a>
+
+      <div class="translation-body">
+        <p>Anthropic today shipped Claude 4.7, the first frontier-tier model with a 1 million-token context window available to all API users from day one. The launch matches the announcement made at Anthropic's developer day last week but arrives two weeks ahead of the projected release date. Pricing remains identical to the previous Opus tier: $15 per million input tokens and $75 per million output tokens, with prompt-caching discounts unchanged.</p>
+
+        <p>The 1M context window puts Claude 4.7 ahead of OpenAI's most generous Responses-API offering (512K, rolled out quietly last week) and well past Gemini Pro 2.5's 2M-token ceiling — though Gemini's window has historically come with sharper degradation past the 200K mark. Anthropic's internal benchmarks show Claude 4.7 maintaining recall accuracy above 95% out to the full 1M tokens; independent third-party verification is not yet available but the AIDanBench team has reportedly begun testing.</p>
+
+        <p>Behind the headline number, the more interesting shift is what Anthropic is asking developers to do with the additional context. The launch blog post emphasises tool-output retention ("keep the last 200 tool calls in context"), multi-document analysis ("entire 50-paper literature review in one prompt"), and long-running agentic workflows. Less discussed publicly: the team has been quietly preparing for Claude to read entire codebases by default, with a separate codebase-indexing API in private beta to a handful of enterprise customers.</p>
+
+        <p style="color: var(--text-muted); font-style: italic; margin-top: 24px;">… continued in the original article →</p>
+      </div>
+
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta-bottom" style="margin-top: 20px;">
+        Read original (中文) →
+      </a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>Translation excerpt published 2026-05-17 · <a href="../../">AI Daily Digest</a> · <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">view original (中文)</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

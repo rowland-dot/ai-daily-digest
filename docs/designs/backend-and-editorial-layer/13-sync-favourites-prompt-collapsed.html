@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — sync-favourites-prompt-collapsed</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                          | Tier | Entry-point | What it shows |
+|-------------------------------------|------|-------------|---------------|
+| sync-favourites-prompt-collapsed    | A    | none        | Sync prompt at rest on /favourites — entry-point state with the "Sync" button visible. Page shows two favourites underneath. |
+-->
+<section class="screen"
+         data-mockup-state="sync-favourites-prompt-collapsed"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='sync-prompt']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>★ Favourites</h1>
+    <p class="date">2 saved · this device only</p>
+  </header>
+
+  <main class="container" data-testid="favourites-page" data-backend-live="true" data-auth="anonymous">
+    <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
+      <div>
+        <p class="sp-title">Save these across devices →</p>
+        <p class="sp-sub">Link them to your email so they follow you to your phone and laptop.</p>
+      </div>
+      <button type="button" class="btn-primary" data-testid="sync-prompt-open-btn">Sync</button>
+    </div>
+
+    <section class="block">
+      <h2><span class="section-icon">★</span> Saved articles</h2>
+      <div class="cards">
+        <article class="card">
+          <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved" data-testid="fav-star">★</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1M context window today.</p>
+          <div class="card-meta"><span class="badge">AIHOT</span><span class="meta-time">saved 2h ago</span></div>
+        </article>
+        <article class="card">
+          <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved" data-testid="fav-star">★</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Qwen3-Omni released as open weights</a></h3>
+          <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model.</p>
+          <div class="card-meta"><span class="badge">AIHOT</span><span class="meta-time">saved yesterday</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

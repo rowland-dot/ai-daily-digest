@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — favourite-star-filled</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug              | Tier | Entry-point          | What it shows |
+|-------------------------|------|----------------------|---------------|
+| favourite-star-filled   | A    | favourite-star-empty | User clicked the star. Icon is ★ (filled, accent colour); aria-pressed=true; tooltip says "Saved — click to unsave". |
+-->
+<section class="screen"
+         data-mockup-state="favourite-star-filled"
+         data-mockup-tier="A"
+         data-mockup-entry-point="favourite-star-empty"
+         data-mockup-capture="[data-testid='fav-star'][aria-pressed='true']"
+         data-mockup-trigger='[
+           {"action":"click","locator":"[data-testid=\"fav-star\"]"}
+         ]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-17</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="#models">🤖 Models</a></li>
+  </ul></nav>
+
+  <main class="container">
+    <section id="models" class="block">
+      <h2><span class="section-icon">🤖</span> Model drops &amp; updates</h2>
+      <p class="section-sub">Latest model launches from the last 24 hours.</p>
+      <div class="cards">
+        <article class="card" id="article-models-0">
+          <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" title="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-a3f12b8c">★</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">2h ago</span>
+          </div>
+        </article>
+        <article class="card" id="article-models-1">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Qwen3-Omni released as open weights</a></h3>
+          <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model, supporting text, vision, and audio in a single 32B-parameter checkpoint.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">5h ago</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

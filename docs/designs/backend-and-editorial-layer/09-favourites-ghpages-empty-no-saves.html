@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — favourites-ghpages-empty-no-saves</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                          | Tier | Entry-point | What it shows |
+|-------------------------------------|------|-------------|---------------|
+| favourites-ghpages-empty-no-saves   | A    | none        | /favourites page on the GH-Pages build (BACKEND_LIVE=false). Anonymous user with no saves yet. Empty-state with prompt to go save articles. No "Save these across devices" banner (feature-flagged off). |
+-->
+<section class="screen"
+         data-mockup-state="favourites-ghpages-empty-no-saves"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='favourites-page']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>★ Favourites</h1>
+    <p class="date">Your saved articles</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="../">← Today's digest</a></li>
+    <li><a href="../digests/">🗂 Archive</a></li>
+  </ul></nav>
+
+  <main class="container" data-testid="favourites-page" data-backend-live="false" data-fav-source="localStorage">
+    <div class="empty-state">
+      <div class="es-icon" aria-hidden="true">☆</div>
+      <h2>No favourites yet</h2>
+      <p>Tap the ☆ on any article to save it here. Your favourites live on this device — no account needed.</p>
+      <p style="margin-top: 18px;"><a href="../" class="btn-secondary" style="text-decoration: none;">← Browse today's digest</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

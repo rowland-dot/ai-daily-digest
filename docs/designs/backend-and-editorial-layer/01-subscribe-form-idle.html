@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — subscribe-form-idle</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                 | Tier | Entry-point | What it shows |
+|----------------------------|------|-------------|---------------|
+| subscribe-form-idle        | A    | none        | Subscribe form in resting state in the footer of the live site. Email field empty, Subscribe button enabled, no message row. |
+-->
+<section class="screen"
+         data-mockup-state="subscribe-form-idle"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='subscribe-form']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-17</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying.</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="#models">🤖 Models</a></li>
+    <li><a href="#products">📦 Products</a></li>
+    <li><a href="#industry">📰 Industry</a></li>
+    <li><a href="#labs">🏢 Lab posts</a></li>
+    <li><a href="#writing">✍ Simon Willison</a></li>
+  </ul></nav>
+
+  <main class="container">
+    <section class="block">
+      <h2><span class="section-icon">📬</span> Subscribe to the daily email</h2>
+      <p class="section-sub">One email per day at 07:00 Sydney. Bilingual support. Unsubscribe any time.</p>
+      <form class="subscribe-form" data-testid="subscribe-form" data-form-state="idle" novalidate>
+        <label for="email-idle">Your email</label>
+        <input id="email-idle" name="email" type="email" placeholder="you@example.com" autocomplete="email" data-testid="subscribe-email-input">
+        <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

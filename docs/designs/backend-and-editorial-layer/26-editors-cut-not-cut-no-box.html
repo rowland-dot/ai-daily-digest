@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — editors-cut-not-cut-no-box</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                       | Tier | Entry-point | What it shows |
+|----------------------------------|------|-------------|---------------|
+| editors-cut-not-cut-no-box       | A    | none        | A card that did NOT make the cut. No 🏅 Editor's Cut box renders — the card is unchanged from today's baseline. Negative-case mockup for parity coverage. |
+-->
+<section class="screen"
+         data-mockup-state="editors-cut-not-cut-no-box"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='card-not-cut']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-17</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="#models">🤖 Models</a></li>
+  </ul></nav>
+
+  <main class="container">
+    <section id="models" class="block">
+      <h2><span class="section-icon">🤖</span> Model drops &amp; updates</h2>
+      <p class="section-sub">Latest model launches from the last 24 hours.</p>
+      <div class="cards">
+        <article class="card" id="article-models-3" data-testid="card-not-cut" data-editorial-cut="false">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Mistral teases minor 7B checkpoint refresh</a></h3>
+          <p class="card-summary">A community-led refinement of Mistral 7B v0.3 with marginal benchmark gains; weights on Hugging Face.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">8h ago</span>
+          </div>
+          <!-- No <aside class="editors-cut"> here — this card did not make the cut. -->
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

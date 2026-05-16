@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — subscribe-form-error-network</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                       | Tier | Entry-point                 | What it shows |
+|----------------------------------|------|-----------------------------|---------------|
+| subscribe-form-error-network     | B    | subscribe-form-submitting   | Submit reached server-side error / network failure. Form remains usable; banner explains; retry button enabled. |
+-->
+<section class="screen"
+         data-mockup-state="subscribe-form-error-network"
+         data-mockup-tier="B"
+         data-mockup-entry-point="subscribe-form-submitting"
+         data-mockup-capture="[data-testid='subscribe-form']"
+         data-mockup-trigger='[
+           {"action":"fill","locator":"[data-testid=\"subscribe-email-input\"]","value":"alex@example.com"},
+           {"action":"click","locator":"[data-testid=\"subscribe-submit-btn\"]"},
+           {"action":"waitFor","locator":"[data-form-state=\"error-network\"]"}
+         ]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-17</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying.</p>
+  </header>
+
+  <main class="container">
+    <section class="block">
+      <h2><span class="section-icon">📬</span> Subscribe to the daily email</h2>
+      <p class="section-sub">One email per day at 07:00 Sydney. Bilingual support. Unsubscribe any time.</p>
+      <form class="subscribe-form" data-testid="subscribe-form" data-form-state="error-network" novalidate>
+        <label for="email-network">Your email</label>
+        <input id="email-network" name="email" type="email" value="alex@example.com" data-testid="subscribe-email-input">
+        <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">Try again</button>
+        <div class="form-msg is-error" role="alert">
+          <strong>Couldn't send the link.</strong> Network error — check your connection and try again. If this keeps happening, email
+          <a href="mailto:hello@ai-daily-digest.example">hello@ai-daily-digest.example</a>.
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

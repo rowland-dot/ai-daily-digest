@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — article-translation-pending-placeholder</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                                  | Tier | Entry-point | What it shows |
+|---------------------------------------------|------|-------------|---------------|
+| article-translation-pending-placeholder     | A    | none        | /articles/<slug>/ page when the routine ran out of token budget and couldn't translate this slug today (per D6 fallback). Stable URL exists; placeholder explains; CTA to read the original. No empty/blank body. |
+-->
+<section class="screen"
+         data-mockup-state="article-translation-pending-placeholder"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="[data-testid='translation-placeholder']"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1 style="font-size: clamp(22px, 4vw, 32px);">Translation pending</h1>
+    <p class="date">We weren't able to translate this article today — read the original below.</p>
+  </header>
+
+  <nav class="toc"><ul>
+    <li><a href="../../">← Today's digest</a></li>
+    <li><a href="../../digests/">🗂 Archive</a></li>
+  </ul></nav>
+
+  <main class="container">
+    <article class="translation-article">
+      <h1>Mistral teases minor 7B checkpoint refresh</h1>
+      <p class="translation-attribution">
+        <span><strong>Source:</strong> AIHOT</span>
+        <span><strong>Published:</strong> 2026-05-17 (Beijing time)</span>
+        <span><strong>Language:</strong> 中文 (Chinese)</span>
+      </p>
+
+      <div class="translation-placeholder" data-testid="translation-placeholder" data-state="pending">
+        <div class="placeholder-icon" aria-hidden="true">📝</div>
+        <h2 style="font-family: var(--display-font); color: var(--text); margin: 0 0 10px; font-size: 22px;">Translation pending</h2>
+        <p style="font-size: 15px; max-width: 460px; margin: 0 auto 18px;">
+          Our daily routine ran out of capacity before it could produce an EN excerpt for this article. We've preserved the URL so the link still works — you can read the original in Chinese instead.
+        </p>
+        <a href="https://www.aihot.com/articles/mistral-7b-v03-refresh" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+          Read original (中文) →
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>Translation pending · <a href="../../">AI Daily Digest</a> · <a href="https://www.aihot.com/articles/mistral-7b-v03-refresh" target="_blank" rel="noopener">view original (中文)</a></div>
+  </footer>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — sync-favourites-link-sent-confirmation</title>
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<!--
+| State slug                                  | Tier | Entry-point                              | What it shows |
+|---------------------------------------------|------|------------------------------------------|---------------|
+| sync-favourites-link-sent-confirmation      | B    | sync-favourites-prompt-open-email-input  | After form submit succeeds: prompt replaced with a success confirmation showing the email + a 30-min expiry note. |
+-->
+<section class="screen"
+         data-mockup-state="sync-favourites-link-sent-confirmation"
+         data-mockup-tier="B"
+         data-mockup-entry-point="sync-favourites-prompt-open-email-input"
+         data-mockup-capture="[data-testid='sync-prompt']"
+         data-mockup-trigger='[
+           {"action":"click","locator":"[data-testid=\"sync-prompt-open-btn\"]"},
+           {"action":"fill","locator":"[data-testid=\"sync-email-input\"]","value":"alex@example.com"},
+           {"action":"click","locator":"[data-testid=\"sync-submit-btn\"]"},
+           {"action":"waitFor","locator":"[data-form-state=\"link-sent\"]"}
+         ]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <h1>★ Favourites</h1>
+    <p class="date">2 saved · this device only</p>
+  </header>
+
+  <main class="container" data-testid="favourites-page" data-backend-live="true" data-auth="anonymous">
+    <div class="sync-prompt" data-state="confirmation" data-testid="sync-prompt" data-form-state="link-sent" role="status" aria-live="polite">
+      <p class="sp-title">✓ Check your inbox</p>
+      <p class="sp-sub">We sent a one-click link to <strong>alex@example.com</strong>. Click it within 30 minutes to sync your favourites.</p>
+    </div>
+
+    <section class="block">
+      <h2><span class="section-icon">★</span> Saved articles</h2>
+      <div class="cards">
+        <article class="card">
+          <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved" data-testid="fav-star">★</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1M context window today.</p>
+          <div class="card-meta"><span class="badge">AIHOT</span><span class="meta-time">saved 2h ago</span></div>
+        </article>
+        <article class="card">
+          <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved" data-testid="fav-star">★</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Qwen3-Omni released as open weights</a></h3>
+          <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model.</p>
+          <div class="card-meta"><span class="badge">AIHOT</span><span class="meta-time">saved yesterday</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 · <a href="#">source on GitHub</a></div>
+  </footer>
+
+</section>
+</body>
+</html>
