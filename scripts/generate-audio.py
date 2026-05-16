@@ -949,10 +949,8 @@ def main() -> int:
             return 0.0
 
     def render_track(track_lang: str, fixed_voice: str | None, out_mp3: Path, cues_out: Path):
-        """Render one full track (mix / en / zh).
-        For 'mix': use each segment's original voice; no translation.
-        For 'en' / 'zh': translate non-target text to target lang;
-        use the fixed voice for ALL segments in the track."""
+        """Render one full track (en or zh) — translate non-target text to the
+        target lang and use the fixed voice for ALL segments."""
         print(f"\n--- Track [{track_lang}] -> {out_mp3.name} ---")
         # Build per-track jobs
         seg_dir = SEGS / track_lang
@@ -960,13 +958,9 @@ def main() -> int:
         jobs: list[tuple[str, str, Path]] = []
         anchors: list[str | None] = []
         for i, (anchor, text, orig_voice) in enumerate(segments):
-            if track_lang == "mix":
-                t = text
-                v = orig_voice
-            else:
-                target = "en" if track_lang == "en" else "zh"
-                t = translate(text, target)
-                v = fixed_voice
+            target = "en" if track_lang == "en" else "zh"
+            t = translate(text, target)
+            v = fixed_voice
             jobs.append((t, v, seg_dir / f"{i:04d}.mp3"))
             anchors.append(anchor)
 
