@@ -950,8 +950,10 @@ const LANG_SWITCH_SCRIPT = `
         var newText = orig;
         if (lang === 'en' && en) newText = en;
         else if (lang === 'zh' && zh) newText = zh;
-        // Preserve nested elements (e.g. <strong> inside) only when text matches;
-        // if textContent is non-trivial child, we replace it directly.
+        // textContent assignment replaces ALL child nodes with a single
+        // text node. Callers must place [data-orig] on a leaf-ish element
+        // (e.g. the inner <span> in AIHOT card titles) so this doesn't
+        // wipe structural children like the wrapping <a href>.
         el.textContent = newText;
       });
     }
