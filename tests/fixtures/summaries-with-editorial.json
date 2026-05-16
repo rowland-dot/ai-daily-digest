@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-17",
+  "editorial": {
+    "overall_en": "Today's digest covers major AI model launches and product updates. Claude 4.7 leads the charge with unprecedented reasoning capabilities.",
+    "overall_zh": "今日精选涵盖了重要的AI模型发布和产品更新。Claude 4.7以前所未有的推理能力领衔。",
+    "cuts": [
+      {
+        "article_id": "aihot-a3f12b8c",
+        "commentary_en": "This Claude 4.7 launch marks a turning point in AI reasoning — the benchmark improvements are genuinely significant.",
+        "commentary_zh": "Claude 4.7的发布标志着AI推理的转折点——基准测试的改进确实意义重大。"
+      },
+      {
+        "article_id": "aihot-b7e29d1f",
+        "commentary_en": "DeepSeek's response to Claude 4.7 shows the competitive dynamics heating up significantly.",
+        "commentary_zh": null
+      }
+    ]
+  },
+  "translations": [
+    {
+      "article_id": "aihot-a3f12b8c",
+      "slug": "aihot-claude-4-7-launches-a3f12b8c",
+      "title": "Claude 4.7 launches",
+      "source": "AIHOT",
+      "originalUrl": "https://www.aihot.com/a/1",
+      "publishedAt": "2026-05-17T10:00:00Z",
+      "excerpt_en": "Anthropic has launched Claude 4.7, its most capable model to date.\n\nThe new model demonstrates significant improvements in reasoning, coding, and multilingual tasks.\n\nBenchmark results show Claude 4.7 outperforming competitors across all major evaluation sets."
+    }
+  ],
+  "sections": {
+    "models": [
+      {
+        "article_id": "aihot-a3f12b8c",
+        "title": "Claude 4.7 launches",
+        "summary": "Anthropic shipped Claude 4.7.",
+        "url": "https://www.aihot.com/a/1",
+        "source": "AIHOT",
+        "publishedAt": "2026-05-17T10:00:00Z",
+        "source_lang": "zh"
+      },
+      {
+        "article_id": "aihot-b7e29d1f",
+        "title": "DeepSeek responds to Claude 4.7",
+        "summary": "DeepSeek announces competitive features.",
+        "url": "https://www.aihot.com/a/2",
+        "source": "AIHOT",
+        "publishedAt": "2026-05-17T11:30:00Z",
+        "source_lang": "zh"
+      }
+    ],
+    "products": [
+      {
+        "article_id": "simon-c4e8a12b",
+        "title": "Prompt caching strategies for production apps",
+        "summary": "Simon Willison shares prompt caching tips.",
+        "url": "https://simonwillison.net/2026/may/prompt-caching",
+        "source": "SIMON",
+        "publishedAt": "2026-05-17T09:00:00Z",
+        "source_lang": "en"
+      }
+    ]
+  }
+}
