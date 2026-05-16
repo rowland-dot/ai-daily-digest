@@ -1,0 +1,650 @@
+{
+  "version": 1,
+  "slug": "2026-05-17-backend-and-editorial-layer",
+  "generated_at": "2026-05-16T23:11:00.130Z",
+  "spec_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\specs\\2026-05-17-backend-and-editorial-layer-spec.md",
+  "checklist_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\specs\\2026-05-17-backend-and-editorial-layer-verification-checklist.md",
+  "mockup_files": [
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\01-subscribe-form-idle.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\02-subscribe-form-submitting.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\03-subscribe-form-link-sent.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\04-subscribe-form-error-invalid-email.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\05-subscribe-form-error-network.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\06-favourite-star-empty.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\07-favourite-star-filled.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\08-favourite-star-syncing.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\09-favourites-ghpages-empty-no-saves.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\10-favourites-ghpages-populated.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\11-favourites-cloudflare-anonymous-with-sync-prompt.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\12-favourites-cloudflare-linked-and-populated.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\13-sync-favourites-prompt-collapsed.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\14-sync-favourites-prompt-open-email-input.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\15-sync-favourites-link-sent-confirmation.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\16-sync-favourites-error.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\17-account-linked-active.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\18-account-linked-unsubscribed.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\19-account-language-saving.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\20-account-language-saved-toast.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\21-account-delete-confirm-modal-open.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\22-account-delete-confirm-modal-closed.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\23-editors-cut-cut-with-en-commentary.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\24-editors-cut-cut-with-zh-commentary.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\25-editors-cut-cut-zh-fallback-to-en.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\26-editors-cut-not-cut-no-box.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\27-email-en.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\28-email-zh.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\29-article-translation-populated.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\30-article-translation-pending-placeholder.html",
+    "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\index.html"
+  ],
+  "behaviors": [],
+  "mockup_states": [
+    {
+      "state": "subscribe-form-idle",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\01-subscribe-form-idle.html",
+      "mockup_basename": "01-subscribe-form-idle.html",
+      "mockup_lines": [
+        15,
+        53
+      ],
+      "expected_capture": "[data-testid='subscribe-form']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "subscribe-form-submitting",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\02-subscribe-form-submitting.html",
+      "mockup_basename": "02-subscribe-form-submitting.html",
+      "mockup_lines": [
+        15,
+        57
+      ],
+      "expected_capture": "[data-testid='subscribe-form']",
+      "triggers": [
+        {
+          "action": "fill",
+          "locator": "[data-testid=\"subscribe-email-input\"]",
+          "value": "alex@example.com"
+        },
+        {
+          "action": "click",
+          "locator": "[data-testid=\"subscribe-submit-btn\"]"
+        }
+      ],
+      "entry_point": "subscribe-form-idle",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "subscribe-form-link-sent",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\03-subscribe-form-link-sent.html",
+      "mockup_basename": "03-subscribe-form-link-sent.html",
+      "mockup_lines": [
+        15,
+        49
+      ],
+      "expected_capture": "[data-testid='subscribe-form']",
+      "triggers": [
+        {
+          "action": "fill",
+          "locator": "[data-testid=\"subscribe-email-input\"]",
+          "value": "alex@example.com"
+        },
+        {
+          "action": "click",
+          "locator": "[data-testid=\"subscribe-submit-btn\"]"
+        },
+        {
+          "action": "waitFor",
+          "locator": "[data-form-state=\"link-sent\"]"
+        }
+      ],
+      "entry_point": "subscribe-form-submitting",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "subscribe-form-error-invalid-email",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\04-subscribe-form-error-invalid-email.html",
+      "mockup_basename": "04-subscribe-form-error-invalid-email.html",
+      "mockup_lines": [
+        15,
+        51
+      ],
+      "expected_capture": "[data-testid='subscribe-form']",
+      "triggers": [
+        {
+          "action": "fill",
+          "locator": "[data-testid=\"subscribe-email-input\"]",
+          "value": "not-an-email"
+        },
+        {
+          "action": "click",
+          "locator": "[data-testid=\"subscribe-submit-btn\"]"
+        }
+      ],
+      "entry_point": "subscribe-form-idle",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "subscribe-form-error-network",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\05-subscribe-form-error-network.html",
+      "mockup_basename": "05-subscribe-form-error-network.html",
+      "mockup_lines": [
+        15,
+        53
+      ],
+      "expected_capture": "[data-testid='subscribe-form']",
+      "triggers": [
+        {
+          "action": "fill",
+          "locator": "[data-testid=\"subscribe-email-input\"]",
+          "value": "alex@example.com"
+        },
+        {
+          "action": "click",
+          "locator": "[data-testid=\"subscribe-submit-btn\"]"
+        },
+        {
+          "action": "waitFor",
+          "locator": "[data-form-state=\"error-network\"]"
+        }
+      ],
+      "entry_point": "subscribe-form-submitting",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourite-star-empty",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\06-favourite-star-empty.html",
+      "mockup_basename": "06-favourite-star-empty.html",
+      "mockup_lines": [
+        15,
+        64
+      ],
+      "expected_capture": "[data-testid='fav-star']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourite-star-filled",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\07-favourite-star-filled.html",
+      "mockup_basename": "07-favourite-star-filled.html",
+      "mockup_lines": [
+        15,
+        65
+      ],
+      "expected_capture": "[data-testid='fav-star'][aria-pressed='true']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"fav-star\"]"
+        }
+      ],
+      "entry_point": "favourite-star-empty",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourite-star-syncing",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\08-favourite-star-syncing.html",
+      "mockup_basename": "08-favourite-star-syncing.html",
+      "mockup_lines": [
+        15,
+        56
+      ],
+      "expected_capture": "[data-testid='fav-star'][data-syncing='true']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"fav-star\"]"
+        }
+      ],
+      "entry_point": "favourite-star-empty",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourites-ghpages-empty-no-saves",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\09-favourites-ghpages-empty-no-saves.html",
+      "mockup_basename": "09-favourites-ghpages-empty-no-saves.html",
+      "mockup_lines": [
+        15,
+        53
+      ],
+      "expected_capture": "[data-testid='favourites-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourites-ghpages-populated",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\10-favourites-ghpages-populated.html",
+      "mockup_basename": "10-favourites-ghpages-populated.html",
+      "mockup_lines": [
+        15,
+        73
+      ],
+      "expected_capture": "[data-testid='favourites-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourites-cloudflare-anonymous-with-sync-prompt",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\11-favourites-cloudflare-anonymous-with-sync-prompt.html",
+      "mockup_basename": "11-favourites-cloudflare-anonymous-with-sync-prompt.html",
+      "mockup_lines": [
+        15,
+        65
+      ],
+      "expected_capture": "[data-testid='favourites-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "favourites-cloudflare-linked-and-populated",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\12-favourites-cloudflare-linked-and-populated.html",
+      "mockup_basename": "12-favourites-cloudflare-linked-and-populated.html",
+      "mockup_lines": [
+        15,
+        64
+      ],
+      "expected_capture": "[data-testid='favourites-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "sync-favourites-prompt-collapsed",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\13-sync-favourites-prompt-collapsed.html",
+      "mockup_basename": "13-sync-favourites-prompt-collapsed.html",
+      "mockup_lines": [
+        15,
+        60
+      ],
+      "expected_capture": "[data-testid='sync-prompt']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "sync-favourites-prompt-open-email-input",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\14-sync-favourites-prompt-open-email-input.html",
+      "mockup_basename": "14-sync-favourites-prompt-open-email-input.html",
+      "mockup_lines": [
+        15,
+        63
+      ],
+      "expected_capture": "[data-testid='sync-prompt']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"sync-prompt-open-btn\"]"
+        }
+      ],
+      "entry_point": "sync-favourites-prompt-collapsed",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "sync-favourites-link-sent-confirmation",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\15-sync-favourites-link-sent-confirmation.html",
+      "mockup_basename": "15-sync-favourites-link-sent-confirmation.html",
+      "mockup_lines": [
+        15,
+        62
+      ],
+      "expected_capture": "[data-testid='sync-prompt']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"sync-prompt-open-btn\"]"
+        },
+        {
+          "action": "fill",
+          "locator": "[data-testid=\"sync-email-input\"]",
+          "value": "alex@example.com"
+        },
+        {
+          "action": "click",
+          "locator": "[data-testid=\"sync-submit-btn\"]"
+        },
+        {
+          "action": "waitFor",
+          "locator": "[data-form-state=\"link-sent\"]"
+        }
+      ],
+      "entry_point": "sync-favourites-prompt-open-email-input",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "sync-favourites-error",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\16-sync-favourites-error.html",
+      "mockup_basename": "16-sync-favourites-error.html",
+      "mockup_lines": [
+        15,
+        63
+      ],
+      "expected_capture": "[data-testid='sync-prompt']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"sync-prompt-open-btn\"]"
+        },
+        {
+          "action": "fill",
+          "locator": "[data-testid=\"sync-email-input\"]",
+          "value": "alex@example.com"
+        },
+        {
+          "action": "click",
+          "locator": "[data-testid=\"sync-submit-btn\"]"
+        },
+        {
+          "action": "waitFor",
+          "locator": "[data-form-state=\"error\"]"
+        }
+      ],
+      "entry_point": "sync-favourites-prompt-open-email-input",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "account-linked-active",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\17-account-linked-active.html",
+      "mockup_basename": "17-account-linked-active.html",
+      "mockup_lines": [
+        15,
+        79
+      ],
+      "expected_capture": "[data-testid='account-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "account-linked-unsubscribed",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\18-account-linked-unsubscribed.html",
+      "mockup_basename": "18-account-linked-unsubscribed.html",
+      "mockup_lines": [
+        15,
+        79
+      ],
+      "expected_capture": "[data-testid='account-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "account-language-saving",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\19-account-language-saving.html",
+      "mockup_basename": "19-account-language-saving.html",
+      "mockup_lines": [
+        15,
+        68
+      ],
+      "expected_capture": "[data-testid='lang-pref']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"lang-pref-zh\"]"
+        }
+      ],
+      "entry_point": "account-linked-active",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "account-language-saved-toast",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\20-account-language-saved-toast.html",
+      "mockup_basename": "20-account-language-saved-toast.html",
+      "mockup_lines": [
+        15,
+        74
+      ],
+      "expected_capture": "[data-testid='toast']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"lang-pref-zh\"]"
+        },
+        {
+          "action": "waitFor",
+          "locator": "[data-testid=\"toast\"]"
+        }
+      ],
+      "entry_point": "account-language-saving",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "account-delete-confirm-modal-open",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\21-account-delete-confirm-modal-open.html",
+      "mockup_basename": "21-account-delete-confirm-modal-open.html",
+      "mockup_lines": [
+        15,
+        73
+      ],
+      "expected_capture": "[data-testid='delete-confirm-modal']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": "[data-testid=\"delete-data-btn\"]"
+        }
+      ],
+      "entry_point": "account-linked-active",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "account-delete-confirm-modal-closed",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\22-account-delete-confirm-modal-closed.html",
+      "mockup_basename": "22-account-delete-confirm-modal-closed.html",
+      "mockup_lines": [
+        15,
+        66
+      ],
+      "expected_capture": "[data-testid='account-page']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "editors-cut-cut-with-en-commentary",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\23-editors-cut-cut-with-en-commentary.html",
+      "mockup_basename": "23-editors-cut-cut-with-en-commentary.html",
+      "mockup_lines": [
+        15,
+        58
+      ],
+      "expected_capture": "[data-testid='editors-cut']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "editors-cut-cut-with-zh-commentary",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\24-editors-cut-cut-with-zh-commentary.html",
+      "mockup_basename": "24-editors-cut-cut-with-zh-commentary.html",
+      "mockup_lines": [
+        15,
+        60
+      ],
+      "expected_capture": "[data-testid='editors-cut']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": ".lang-switch button[data-lang=\"zh\"]"
+        }
+      ],
+      "entry_point": "editors-cut-cut-with-en-commentary",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "editors-cut-cut-zh-fallback-to-en",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\25-editors-cut-cut-zh-fallback-to-en.html",
+      "mockup_basename": "25-editors-cut-cut-zh-fallback-to-en.html",
+      "mockup_lines": [
+        15,
+        56
+      ],
+      "expected_capture": "[data-testid='editors-cut']",
+      "triggers": [
+        {
+          "action": "click",
+          "locator": ".lang-switch button[data-lang=\"zh\"]"
+        }
+      ],
+      "entry_point": "editors-cut-cut-with-en-commentary",
+      "live_url": null,
+      "tier": "B",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "editors-cut-not-cut-no-box",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\26-editors-cut-not-cut-no-box.html",
+      "mockup_basename": "26-editors-cut-not-cut-no-box.html",
+      "mockup_lines": [
+        15,
+        55
+      ],
+      "expected_capture": "[data-testid='card-not-cut']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "article-translation-populated",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\29-article-translation-populated.html",
+      "mockup_basename": "29-article-translation-populated.html",
+      "mockup_lines": [
+        23,
+        81
+      ],
+      "expected_capture": "[data-testid='translation-article']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    },
+    {
+      "state": "article-translation-pending-placeholder",
+      "mockup_file": "C:\\Users\\rowla\\Projects\\ai-daily-digest\\docs\\designs\\backend-and-editorial-layer\\30-article-translation-pending-placeholder.html",
+      "mockup_basename": "30-article-translation-pending-placeholder.html",
+      "mockup_lines": [
+        15,
+        66
+      ],
+      "expected_capture": "[data-testid='translation-placeholder']",
+      "triggers": [],
+      "entry_point": "none",
+      "live_url": null,
+      "tier": "A",
+      "out_of_scope": false,
+      "behavior_id": null,
+      "cited_components": []
+    }
+  ],
+  "handlers": [],
+  "destructive_components": [],
+  "draggable_primitives": []
+}
