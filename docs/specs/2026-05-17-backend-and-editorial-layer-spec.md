@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-17
 **Filename:** `2026-05-17-backend-and-editorial-layer-spec.md`
-**Status:** Draft → user review
+**Status:** Reviewed — pipeline-mode auto-approved 2026-05-17 (Step 1 Phase 1)
 **Depends on:** [`2026-05-16-card-refinements-spec.md`](2026-05-16-card-refinements-spec.md) (the card-refinements spec) — both can ship in parallel but the card-refinements spec merges first.
 **Splits with:** the **cloudflare-migration-and-vendor-onboarding spec** (deferred, to be authored as `YYYY-MM-DD-cloudflare-migration-and-vendor-onboarding-spec.md`). This spec writes and tests all the code; that spec deploys it. See *Implementation phasing* below.
 **Followed by:** the **monetisation spec** (drafted after this ships and we can see traffic).
@@ -443,6 +443,26 @@ Both are testable in this spec — `GH-Pages-live` against the live GH Pages bui
 - **Entry point:** any HTML page on the site (`/`, `/digests/YYYY-MM-DD.html`, `/digests/index.html`, `/articles/<slug>/`, `/favourites`, `/account`).
 - **User action:** view source.
 - **Expected result:** `<head>` contains exactly one `<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">`.
+
+---
+
+## UI surfaces requiring per-state declarations (Phase 2 mockup work)
+
+The behaviours above describe entry + action + expected-result contracts at the **functional** level. The following UI surfaces have multiple discrete visual states that will require `## State: <slug>` declarations (or `## Mockup: <basename>` blocks with nested `### State:` headings) when mockups are authored in Phase 2. They are listed here so `/mockup-parity --write` (Step 4) knows the inventory:
+
+| Surface | Behaviour | States to mockup |
+|---|---|---|
+| Subscribe form | B1 | `idle` / `submitting` / `link-sent` / `error-invalid-email` / `error-network` |
+| Favourite star icon | B2, B3 | `empty` (☆) / `filled` (★) / `syncing` (background POST in flight) |
+| `/favourites` page (anonymous, GH-Pages) | B4 | `empty-no-saves` / `populated` |
+| `/favourites` page (Cloudflare-live) | B4 | `anonymous-with-sync-prompt` / `linked-and-populated` |
+| Sync-favourites flow on `/favourites` | B5 | `prompt-collapsed` / `prompt-open-email-input` / `link-sent-confirmation` / `error` |
+| `/account` page | B1, B6b, B10, B11 | `linked-active` / `linked-unsubscribed` / `language-saving` / `language-saved-toast` / `delete-confirm-modal-open` / `delete-confirm-modal-closed` |
+| Editor's Cut commentary box on cards | B7, B7b | `cut-with-en-commentary` / `cut-with-zh-commentary` / `cut-zh-fallback-to-en` / `not-cut-no-box` |
+| Daily email body | B6 | `email-en` / `email-zh` (each is a single static template — two mockups, not multiple per-state) |
+| `/articles/<slug>/` translation page | B8 | `populated` / `translation-pending-placeholder` (per D6 fallback) |
+
+These are not authored as `## State:` headings in this spec because no mockups exist yet — Phase 2 produces the mockups and `/mockup-parity --write` then derives the state declarations from them per project convention. If Phase 2 is skipped for a given surface, the implementing plan task must author the state declarations inline before implementation begins.
 
 ---
 
