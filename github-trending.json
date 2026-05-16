@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-05-15T21:34:59.502Z",
+  "fetched_at": "2026-05-16T21:25:24.480Z",
   "repos": [
     {
-      "owner": "tinyhumansai",
-      "name": "openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "owner": "oven-sh",
+      "name": "bun",
+      "url": "https://github.com/oven-sh/bun",
+      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 8922,
-      "forks": 748,
-      "starsToday": 1272
-    },
-    {
-      "owner": "obra",
-      "name": "superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 192717,
-      "forks": 17143,
-      "starsToday": 1646
+      "stars": 91131,
+      "forks": 4541,
+      "starsToday": 414
     },
     {
       "owner": "K-Dense-AI",
@@ -30,9 +19,31 @@
       "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 22384,
-      "forks": 2423,
-      "starsToday": 643
+      "stars": 23069,
+      "forks": 2484,
+      "starsToday": 669
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 193900,
+      "forks": 17252,
+      "starsToday": 1281
+    },
+    {
+      "owner": "Anil-matcha",
+      "name": "Open-Generative-AI",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "description": "Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 14359,
+      "forks": 2510,
+      "starsToday": 393
     },
     {
       "owner": "supertone-inc",
@@ -41,9 +52,20 @@
       "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 5965,
-      "forks": 587,
-      "starsToday": 712
+      "stars": 6770,
+      "forks": 695,
+      "starsToday": 745
+    },
+    {
+      "owner": "tinyhumansai",
+      "name": "openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 10587,
+      "forks": 909,
+      "starsToday": 1601
     },
     {
       "owner": "ruvnet",
@@ -52,86 +74,20 @@
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 57388,
-      "forks": 7542,
-      "starsToday": 1865
+      "stars": 58256,
+      "forks": 7613,
+      "starsToday": 990
     },
     {
-      "owner": "influxdata",
-      "name": "telegraf",
-      "url": "https://github.com/influxdata/telegraf",
-      "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 17382,
-      "forks": 5802,
-      "starsToday": 213
-    },
-    {
-      "owner": "anthropics",
-      "name": "skills",
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 135032,
-      "forks": 15923,
-      "starsToday": 625
-    },
-    {
-      "owner": "czlonkowski",
-      "name": "n8n-mcp",
-      "url": "https://github.com/czlonkowski/n8n-mcp",
-      "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you",
+      "owner": "colbymchenry",
+      "name": "codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "description": "Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool calls, 100% local",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 20858,
-      "forks": 3397,
-      "starsToday": 68
-    },
-    {
-      "owner": "NVIDIA-AI-Blueprints",
-      "name": "video-search-and-summarization",
-      "url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization",
-      "description": "Suite of reference architectures for building GPU-accelerated vision agents and AI-powered video analytics applications.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1113,
-      "forks": 262,
-      "starsToday": 305
-    },
-    {
-      "owner": "oven-sh",
-      "name": "bun",
-      "url": "https://github.com/oven-sh/bun",
-      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 90580,
-      "forks": 4507,
-      "starsToday": 395
-    },
-    {
-      "owner": "mattpocock",
-      "name": "skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 84787,
-      "forks": 7341,
-      "starsToday": 3155
-    },
-    {
-      "owner": "joeseesun",
-      "name": "qiaomu-anything-to-notebooklm",
-      "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
-      "description": "Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 2637,
-      "forks": 270,
-      "starsToday": 465
+      "stars": 2430,
+      "forks": 206,
+      "starsToday": 397
     }
   ]
 }

@@ -1,8 +1,28 @@
 {
-  "count": 21,
+  "count": 18,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp8f08bn0i36slnz0m7dgccs",
+      "title": "Δ-Mem：适用于大型语言模型的高效在线内存",
+      "title_en": null,
+      "url": "https://arxiv.org/abs/2605.12357",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-16T13:49:59.872Z",
+      "summary": "研究人员提出了Δ-Mem，一种专为大型语言模型设计的高效在线内存系统。该系统通过仅存储和更新模型激活的增量变化，而非完整的激活状态，显著降低了内存占用。实验表明，Δ-Mem能将内存使用量减少高达70%，同时保持模型输出的质量基本无损。这一方法有助于在资源受限的环境中部署和运行大规模语言模型，提升其在线推理和持续学习场景下的可行性。",
+      "category": "paper"
+    },
+    {
+      "id": "cmp7mvr030bmvslnzaxryw471",
+      "title": "智能体驱动系统Articraft实现3D资产生成自动化，开源万件数据集降低门槛",
+      "title_en": "兄弟们，3D资产生成彻底要起飞了。 Cambridge大学助理教授Elliott Wu（前Stanford、Oxford背景）团队刚放出了Articraft--一个真正的agentic codin…",
+      "url": "https://x.com/berryxia/status/2055444087684407505",
+      "source": "X：Berry Xia (@berryxia)",
+      "publishedAt": "2026-05-16T00:23:53.000Z",
+      "summary": "剑桥大学团队推出Articraft，这是一个由智能体驱动的编码系统，能全自动生成带关节、可运动的交互式3D资产。系统通过AI智能体自主编写代码、执行并接收物理反馈迭代优化，将以往需数日甚至数周的创作过程极大简化。团队同时开源了Articraft-10K数据集，包含超1万个物体，覆盖250个类别，所有资产均仿真就绪。此举显著降低了机器人训练和物理AI领域对高质量3D资产的数据门槛，为解决\"数据饥渴\"问题提供了高效的自动化方案。",
+      "category": "paper"
+    },
     {
       "id": "cmp67ce3h0kc6sljxivzzmvqx",
       "title": "AI自主研究实现突破：智能体在nanoGPT优化赛道上超越人类基准",
@@ -161,56 +181,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-10T00:00:00.000Z",
       "summary": "SimWorld Studio是一个基于Unreal Engine 5的开源平台，旨在为具身智能体学习自动生成动态演化的3D交互环境。其核心是工具增强的编码智能体SimCoder，它能根据指令编写引擎代码来构建物理真实的世界，并通过验证反馈自我进化，修正环境并积累可复用技能。生成的环境以标准化接口导出供智能体训练。平台还实现了环境生成与智能体学习的协同进化：根据智能体表现反馈，SimCoder在其能力边界附近生成自适应课程，使环境难度随智能体进步而提升。在具身导航案例中，该方案显著提升了智能体的泛化性能。",
-      "category": "paper"
-    },
-    {
-      "id": "cmoyoyzpa0bjxsllhin4zx9ys",
-      "title": "OncoAgent：一个用于隐私保护肿瘤临床决策支持的双层多智能体框架",
-      "title_en": "\"OncoAgent： A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support\"",
-      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-09T18:09:28.000Z",
-      "summary": "研究团队发布了开源肿瘤临床决策支持系统OncoAgent。该系统采用双层多智能体框架，结合LangGraph拓扑与四阶段Corrective RAG流程，检索超过70份权威临床指南。系统根据查询复杂度，将任务路由至9B参数的速度优化模型或27B参数的深度推理模型，两者均通过QLoRA在AMD MI300X硬件上使用包含26万余病例的数据集进行微调。系统强制执行严格的零受保护健康信息政策，并通过三层反射安全验证器确保安全，支持完全本地部署以保护患者数据主权。",
-      "category": "paper"
-    },
-    {
-      "id": "cmoyh118d09uqsllhfwv7ggxu",
-      "title": "菲尔兹奖得主称 ChatGPT 5.5 Pro 在无人帮助下两小时内完成\"博士级\"数学研究",
-      "title_en": "Fields Medalist says ChatGPT 5.5 Pro delivered \"PhD-level\" math research in under two hours with zero human help",
-      "url": "https://the-decoder.com/fields-medalist-says-chatgpt-5-5-pro-delivered-phd-level-math-research-in-under-two-hours-with-zero-human-help",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-05-09T14:32:14.000Z",
-      "summary": "菲尔兹奖得主蒂莫西·高尔斯让 ChatGPT 5.5 Pro 尝试解决数论中的开放性问题。该模型在不到一小时内，将一个问题中的指数界限改进为多项式界限。一位参与的 MIT 研究员认为其核心想法\"完全具有原创性\"。高尔斯总结指出，未来数学贡献的门槛将变为证明某些是大语言模型无法完成的工作。",
-      "category": "paper"
-    },
-    {
-      "id": "cmoxrzp6q043ksllhqxxxc9by",
-      "title": "教Claude\"为什么\"",
-      "title_en": null,
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-09T02:57:09.705Z",
-      "summary": "Anthropic公司发布了Claude模型的新研究\"Teaching Claude Why\"。该研究通过让模型学习解释自身推理过程中的\"为什么\"，显著提升了其推理能力和输出结果的准确性。实验表明，经过此项训练后，模型在多项基准测试中的表现得到改善，其推理步骤的透明度和逻辑连贯性增强。这项技术旨在推动AI向更可解释、更可靠的方向发展。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp5s5y8d0gtwsljx1pd2dol6",
-      "title": "Source or It Didn't Happen： 一个用于检测引用幻觉的多智能体框架",
-      "title_en": "Source or It Didn't Happen： A Multi-Agent Framework for Citation Hallucination Detection",
-      "url": "https://arxiv.org/abs/2605.08583",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-09T00:00:00.000Z",
-      "summary": "针对大语言模型在科学写作中生成看似合理但无法验证的虚假引用问题，研究团队构建了一个名为CiteTracer的级联多智能体检测器。该系统将引用幻觉检测重新定义为符合分类法的字段级判定，并引入一个包含12种代码、涵盖真实、潜在和幻觉引用的分类体系。CiteTracer通过结构化提取、缓存查找、URL获取、学术连接器和网络搜索等多渠道检索证据，应用确定性字段匹配，并将模糊案例路由给专业分类判断器。在包含2450个合成引用和957个来自真实会议投稿的伪造引用基准测试中，CiteTracer在合成集上达到97.1%的整体准确率，在真实集上检测出97.1%的伪造引用。相关代码已开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp27hdg204rmslbpav5dbhue",
-      "title": "AgentForesight：面向多智能体系统早期故障预测的在线审计框架",
-      "title_en": "AgentForesight： Online Auditing for Early Failure Prediction in Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2605.08715",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-09T00:00:00.000Z",
-      "summary": "针对LLM多智能体系统在长程任务中因关键错误扩散导致整体失败的问题，本研究提出在线审计框架AgentForesight。该框架能在任务执行过程中实时观察轨迹前缀，并在最早的关键错误处发出警报。研究构建了AFTraj-2K轨迹语料库，并基于此开发了AgentForesight-7B模型。该模型采用由粗到细的强化学习策略训练，在AFTraj-2K和外部基准测试中，其性能超越GPT-4.1等领先专有模型，实现了高达+19.9%的性能提升，并将步骤定位误差降低3倍，从而将故障处理从事后归因转向部署时干预。",
       "category": "paper"
     }
   ]

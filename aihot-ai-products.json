@@ -1,8 +1,48 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4NjAwNTk1MDAwLCJpIjoiY21wMnRsZml4MDBqcHNsMXFkZ2Vwd3p1OSJ9",
+  "nextCursor": "eyJhIjoxNzc4NjA2ODcwMDAwLCJpIjoiY21wMnd0cmdqMDE5enNsMXFtZTVjeGN0ZSJ9",
   "items": [
+    {
+      "id": "cmp8rhkfp0kx0slnz74ky5sya",
+      "title": "Codex新增键盘快捷键自定义功能",
+      "title_en": "I don't know why we ship on Saturdays now， but here are a bunch of nice improvements for Codex. Di…",
+      "url": "https://x.com/thsottiaux/status/2055735802894954612",
+      "source": "X：Tibo (@thsottiaux)",
+      "publishedAt": "2026-05-16T19:43:03.000Z",
+      "summary": "不知为何我们选择周六发布更新，但Codex确实迎来了一系列优化。\n\n这些改进让使用体验愉悦许多，实在不该拖到周二再公布。\n\n键盘快捷键现已支持自定义。\n\n根据实际工作方式配置Codex，通过设置调整快捷键，不必再迁就默认设定。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp8oygzv0kc6slnz56g1hza2",
+      "title": "按需定制快捷键，优化工作流效率",
+      "title_en": "We're having way too much fun working through your feedback. （Please， keep it coming.） Keyboard sh…",
+      "url": "https://x.com/OpenAIDevs/status/2055717793841221796",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-05-16T18:31:30.000Z",
+      "summary": "处理大家的反馈让我们感到太有趣了。\n（请继续反馈。）\n键盘快捷键现已支持自定义。\n围绕你的实际工作方式设置 Codex，然后通过设置调整快捷键，无需再适应我们的默认配置。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp809e8r0epmslnzbbyk7uu5",
+      "title": "Notion推出开发者平台及CLI工具",
+      "title_en": "Notion 终于出了 CLI… 跟上了这个时代",
+      "url": "https://x.com/oran_ge/status/2055539910212460878",
+      "source": "X：Oran Ge (@oran_ge)",
+      "publishedAt": "2026-05-16T06:44:39.000Z",
+      "summary": "Notion正式推出开发者平台，核心组件包括Notion CLI终端工具、Workers计算服务、数据库同步功能以及多种Agent工具与API。平台旨在让开发者更便捷地在Notion基础设施上运行代码、连接外部数据源并构建自动化工作流。未来，即使非开发者也能通过AI Agent在Notion上构建应用。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp7ip3e70anyslnzwh7n9yp0",
+      "title": "Claude Code v2.1.143 版本更新：插件管理与用户体验增强",
+      "title_en": "v2.1.143",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-15T22:28:22.000Z",
+      "summary": "Claude Code 发布 v2.1.143 版本，重点增强了插件管理功能，包括强制执行插件依赖关系，并新增了插件市场的预估上下文成本显示。为方便直接编辑工作副本，增加了 `worktree.bgIsolation： \"none\"` 设置。多项体验得到改进：后台会话唤醒后保留模型与努力级别设置；Windows PowerShell 工具默认绕过执行策略；`claude agents` 命令新增多个参数以配置默认会话。此外，本次更新修复了大量错误，包括修复损坏的 `.credentials.json` 文件导致 CLI 启动卡住、Windows Terminal 中的右键粘贴问题、后台会话错误捕获 IDE 文件引用，以及 macOS 上后台作业读取特定目录文件的权限错误等。",
+      "category": "ai-products"
+    },
     {
       "id": "cmp7ck9n009a6slnzs9t4octw",
       "title": "Krea 2正式上线面向专业用户",
@@ -461,46 +501,6 @@
       "source": "X：OpenAI Developers (@OpenAIDevs)",
       "publishedAt": "2026-05-12T17:27:50.000Z",
       "summary": "Symphony：每个开放任务都有一个正在运行的Codex智能体",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp4b6fpx04g6sljxh8anw64a",
-      "title": "Introducing Runway Agent",
-      "title_en": null,
-      "url": "https://runwayml.com/news/introducing-runway-agent",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-05-12T16:00:00.000Z",
-      "summary": "Runway正式发布Runway Agent，这是一个能够通过单次对话将创意想法转化为完整、可发布视频的智能创作伙伴。用户只需用自然语言描述需求，Agent便能根据上下文和目标，自主完成概念提案、故事节奏设计、视觉方向规划，并最终生成包含多场景、旁白、对话和音乐的成片。它旨在为品牌团队、营销人员、创意机构和电影制作人快速生产各类视频内容，如品牌宣传、社交媒体素材和短片，将传统需要数天或数周的审核制作周期压缩至几分钟。该产品现已上线，新免费计划用户可获得1500积分用于制作首个视频。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp49xujo0453sljxghw34olk",
-      "title": "Anthropic推出面向小型企业的Claude服务包",
-      "title_en": "Introducing Claude for Small Business",
-      "url": "https://www.anthropic.com/news/claude-for-small-business",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-12T16:00:00.000Z",
-      "summary": "Anthropic推出\"Claude for Small Business\"服务包，旨在帮助小型企业弥补在AI应用资源上与大型公司的差距。该产品包含一系列连接器和15个开箱即用的自动化工作流，能将Claude深度集成到QuickBooks、PayPal、HubSpot等企业日常工具中。其核心功能是自动化处理财务、运营、销售等领域的重复性任务，如规划薪资、月末结算、追踪发票和分析营销活动等。用户通过Claude Cowork界面操作并手动批准关键步骤，所有任务均由用户发起和控制，Anthropic承诺保障数据安全。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp49dyng041esljxprl8e1qm",
-      "title": "Runway Agent",
-      "title_en": null,
-      "url": "https://app.runwayml.com/agent",
-      "source": "Runway：Changelog（网页）",
-      "publishedAt": "2026-05-12T16:00:00.000Z",
-      "summary": "Runway Agent 是一个集成化创意工具平台，旨在为用户提供实现任何创意所需的全套资源与功能。该平台整合了视频编辑、图像生成、3D建模等多种人工智能驱动工具，允许用户在一个工作流中无缝完成从概念到成品的创作过程。其核心特点是降低了专业内容制作的技术门槛，通过自动化与智能辅助功能，让用户能够更自由地将想法转化为视觉作品。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp2tlfix00jpsl1qdgepwzu9",
-      "title": "Grok接入Gmail，智能邮件助手革新收件箱管理",
-      "title_en": "You can now connect your Gmail with @Grok Connect Gmail and ask things like： • \"Find my flight tic…",
-      "url": "https://x.com/cb_doge/status/2054225901232259092",
-      "source": "X：cb_doge (@cb_doge)",
-      "publishedAt": "2026-05-12T15:43:15.000Z",
-      "summary": "Grok现已支持连接Gmail，用户可通过自然语言指令对收件箱进行智能查询与管理。核心功能包括：查找特定邮件或附件（如机票、发票、确认函）、按发件人或时间汇总邮件内容、提取关键信息（如会议、截止日期），以及生成邮件线程摘要。该集成旨在将传统收件箱转化为可智能交互的信息库，提升邮件处理效率与实用性。",
       "category": "ai-products"
     }
   ]

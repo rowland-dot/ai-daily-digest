@@ -4,6 +4,36 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmp8l2fu40jh2slnzqm9018vn",
+      "title": "社区协作再创佳绩，vLLM支持万亿级模型",
+      "title_en": "Another day0 collaboration， another community win. Thanks @vllm_project team for the always reliable…",
+      "url": "https://x.com/AntLingAGI/status/2055689329339760829",
+      "source": "X：蚂蚁百灵 (@AntLingAGI)",
+      "publishedAt": "2026-05-16T16:38:23.000Z",
+      "summary": "又一次Day0协作，又一次社区胜利。感谢@vllm_project团队始终可靠的支持~ 🫡🫡",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp8jztto0j8islnzx5999qi3",
+      "title": "Ring-2.6-1T开源并上线OpenRouter，专为智能体工作流设计",
+      "title_en": "Lovely video！ Glad to work with @novita_labs and @OpenRouter to bring another newly build model， Rin…",
+      "url": "https://x.com/AntLingAGI/status/2055681163033997815",
+      "source": "X：蚂蚁百灵 (@AntLingAGI)",
+      "publishedAt": "2026-05-16T16:05:56.000Z",
+      "summary": "Ring-2.6-1T模型现已开源，并上线OpenRouter平台，5月底前享有75%折扣。该模型由AntLingAGI开发，是一个为现实世界智能体构建的万亿级推理模型，其核心设计目标不仅是回答问题，更是执行任务。它专注于规划步骤、使用工具、维持上下文和完成复杂工作流，具备强大的智能体执行能力和高推理模式，并采用了Async RL与IcePop训练方法。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmp8i7zhb0isoslnzyvufvdtc",
+      "title": "SANA-WM：一个用于生成1分钟720p视频的26亿级开源世界模型",
+      "title_en": null,
+      "url": "https://nvlabs.github.io/Sana/WM",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-16T15:25:59.778Z",
+      "summary": "NVIDIA研究团队发布了SANA-WM，这是一个参数规模达26亿的开源世界模型，专门用于生成长达1分钟、分辨率为720p的视频。该模型已在GitHub页面开源，旨在推动高质量长视频生成的研发。其在Hacker News社区获得了107点热度，显示出业界对该技术进展的关注。",
+      "category": "ai-models"
+    },
+    {
       "id": "cmp7670my07u2slnzpgzvw1yy",
       "title": "MiniMax M2.7模型上线OrcaRouter平台",
       "title_en": "M2.7 is live on @OrcaRouter - accessible via a single OpenAI-compatible API. Try it today！🐋",
@@ -211,36 +241,6 @@
       "source": "X：opencode (@opencode)",
       "publishedAt": "2026-05-10T08:36:30.000Z",
       "summary": "OpenCode x Ring 2.6 1T - 限时免费开放\n\n256K上下文 • 推理能力 • 纯文本模型\n\n感谢 @AntLingAGI 和 @novita_labs 提供模型支持",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmoykzyqq0apdsllhtapg8m4v",
-      "title": "HappyHorse上线阿里云，AI视频无需等待",
-      "title_en": "Ranked No. 1 in benchmarks. Lightning speed. Native A/V sync. The era of waiting in line for AI vi…",
-      "url": "https://x.com/alibaba_cloud/status/2053153199561863454",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-09T16:40:43.000Z",
-      "summary": "基准测试排名第一。闪电速度。原生音视频同步。\n\n排队等待AI视频的时代结束了。HappyHorse现已在阿里云Model Studio上线。当别人还在渲染时，你已完成。\n\n立即构建：https：//int.alibabacloud.com/m/1000412167/",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmoy0kgg8061zsllhfvwdppyr",
-      "title": "ERNIE 5.1发布，预训练成本仅需对标模型6%",
-      "title_en": "ERNIE 5.1 just dropped. Built on ERNIE 5.0's pre-training foundation， our latest foundation model u…",
-      "url": "https://x.com/Baidu_Inc/status/2053009538769735774",
-      "source": "X：百度 Baidu (@Baidu_Inc)",
-      "publishedAt": "2026-05-09T07:09:51.000Z",
-      "summary": "ERNIE 5.1 刚刚发布。\n\n基于 ERNIE 5.0 的预训练基础，我们最新的基础模型升级了搜索、推理、知识问答、创意写作和智能体能力，而预训练成本仅需对标模型的约 6%。\n\n更多内容详见主题帖 🧵",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmoxuon5604t6sllhyu6fybba",
-      "title": "StepAudio 2.5 TTS 在语音竞技场盲测中跻身全球前三",
-      "title_en": "Highest-ranked Chinese TTS model on the @ArtificialAnlys Speech Arena. Top 3 globally. Blind test. …",
-      "url": "https://x.com/StepFun_ai/status/2052963182587584878",
-      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
-      "publishedAt": "2026-05-09T04:05:39.000Z",
-      "summary": "StepFun 推出的 StepAudio 2.5 TTS 在 Artificial Analysis 语音竞技场盲测排行榜中位列全球第三，Elo 评分为 1187 分，仅次于 Inworld TTS 1.5 Max 与 Google Gemini 3.1 Flash TTS。该模型语音自然度较前代显著提升，并以 8 分优势超越 Eleven v3。其定价为每百万字符 85 美元，生成速度为每秒 37.6 字符，并提供了全局上下文提示和行内情感标签两种语音控制方式。",
       "category": "ai-models"
     }
   ]
