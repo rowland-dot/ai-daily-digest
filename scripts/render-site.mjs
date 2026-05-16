@@ -15,6 +15,7 @@ import { articleId } from "./lib/article-id.mjs";
 import { renderEditorialCutBox } from "./lib/editorial.mjs";
 import { renderFavouritesPage } from "./lib/favourites-page.mjs";
 import { renderAccountPage } from "./lib/account-page.mjs";
+import { renderTranslationPage, translationSlug } from "./lib/translations.mjs";
 
 // Feature flag: when false (GH Pages), backend-dependent UI is omitted.
 const BACKEND_LIVE = process.env.BACKEND_LIVE === "true";
@@ -150,8 +151,15 @@ function aihotItemsCard(items, anchorPrefix, editorialCuts = []) {
       // on language switch. data-orig / data-tr-* attributes sit on
       // the span; the <a> is structural and stays put.
       const titleInner = `<span${txAttrs(item.title || "")}>${titleText}</span>`;
+      // CN-source articles get dual hrefs: EN → translation page, ZH → original URL.
+      // Front-end JS switches the active href on language toggle.
+      const isCnSource = item.source_lang === "zh" && item.url;
+      const cnSlug = isCnSource ? translationSlug(item.source || "src", item.title || "", item.url) : null;
+      const titleLinkAttrs = isCnSource && cnSlug
+        ? ` href="/articles/${encodeURIComponent(cnSlug)}/" data-en-href="/articles/${encodeURIComponent(cnSlug)}/" data-zh-href="${escapeHtml(item.url)}" target="_blank" rel="noopener"`
+        : ` href="${escapeHtml(item.url)}" target="_blank" rel="noopener"`;
       const titleHtml = item.url
-        ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${titleInner}</a>`
+        ? `<a${titleLinkAttrs}>${titleInner}</a>`
         : titleInner;
       // Stable article ID — use field from data if present, else compute
       const aid = item.article_id || (item.url ? articleId(item.source || "src", item.url) : "");
@@ -1950,4 +1958,17 @@ if (accountHtml) {
   await writeFile(join(ACCOUNT_DIR, "index.html"), accountHtml, "utf8");
 }
 
-console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites${BACKEND_LIVE ? " + /account" : ""}`);
+// /articles/<slug>/ — translation pages for CN-source articles
+const ARTICLES_DIR = join(SITE_DIR, "articles");
+let translationCount = 0;
+const SITE_ORIGIN = process.env.SITE_ORIGIN || "https://rowland-dot.github.io/ai-daily-digest";
+for (const entry of translationArticles) {
+  if (!entry.slug) continue;
+  const pageHtml = renderTranslationPage(entry, { siteOrigin: SITE_ORIGIN });
+  const slugDir = join(ARTICLES_DIR, entry.slug);
+  await mkdir(slugDir, { recursive: true });
+  await writeFile(join(slugDir, "index.html"), pageHtml, "utf8");
+  translationCount++;
+}
+
+console.log(`[ok] rendered ${today}.html (latest) + archive (${archiveDays.length} entries) + /favourites${BACKEND_LIVE ? " + /account" : ""}${translationCount ? ` + ${translationCount} translation pages` : ""}`);
