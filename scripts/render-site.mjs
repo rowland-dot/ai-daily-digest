@@ -11,6 +11,11 @@
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
+import { articleId } from "./lib/article-id.mjs";
+import { renderEditorialCutBox } from "./lib/editorial.mjs";
+
+// Feature flag: when false (GH Pages), backend-dependent UI is omitted.
+const BACKEND_LIVE = process.env.BACKEND_LIVE === "true";
 
 const DATA_DIR = "data";
 const SITE_DIR = "docs";
@@ -133,7 +138,7 @@ function filterRecent(items, dateKey, hours = LOOKBACK_HOURS) {
 
 // ---- Section builders ----
 
-function aihotItemsCard(items, anchorPrefix) {
+function aihotItemsCard(items, anchorPrefix, editorialCuts = []) {
   if (!items?.length) return `<p class="empty">No items.</p>`;
   return `<div class="cards">${items
     .map((item, idx) => {
@@ -146,14 +151,25 @@ function aihotItemsCard(items, anchorPrefix) {
       const titleHtml = item.url
         ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${titleInner}</a>`
         : titleInner;
+      // Stable article ID — use field from data if present, else compute
+      const aid = item.article_id || (item.url ? articleId(item.source || "src", item.url) : "");
+      // Editor's Cut box (empty string when article is not a cut)
+      const cut = editorialCuts.find(c => c.article_id === aid) ?? null;
+      const cutBox = renderEditorialCutBox(cut);
+      // Fav-star button (always rendered; JS wires localStorage / API)
+      const favStar = aid
+        ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+        : "";
       return `
-    <article class="card" id="article-${anchorPrefix}-${idx}">
+    <article class="card" id="article-${anchorPrefix}-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <h3 class="card-title">${titleHtml}</h3>
       ${item.summary ? `<p class="card-summary"${txAttrs(item.summary)}>${escapeHtml(item.summary)}</p>` : ""}
       <div class="card-meta">
         ${item.source ? `<span class="badge">${escapeHtml(item.source)}</span>` : ""}
         ${item.publishedAt ? `<span class="meta-time" title="${escapeHtml(item.publishedAt)}">${escapeHtml(relTime(item.publishedAt))}</span>` : ""}
       </div>
+      ${cutBox}
     </article>
   `;
     })
@@ -1487,28 +1503,28 @@ async function renderPage({
     <section id="models" class="block">
       <h2><span class="section-icon">🤖</span> Model drops & updates</h2>
       <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT).</p>
-      ${aihotItemsCard(modelItems, "models")}
+      ${aihotItemsCard(modelItems, "models", editorialCuts)}
     </section>` : ""}
 
     ${has.products ? `
     <section id="products" class="block">
       <h2><span class="section-icon">📦</span> Products & applications</h2>
       <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
-      ${aihotItemsCard(productItems, "products")}
+      ${aihotItemsCard(productItems, "products", editorialCuts)}
     </section>` : ""}
 
     ${has.industry ? `
     <section id="industry" class="block">
       <h2><span class="section-icon">📰</span> Industry moves</h2>
       <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
-      ${aihotItemsCard(industryItems, "industry")}
+      ${aihotItemsCard(industryItems, "industry", editorialCuts)}
     </section>` : ""}
 
     ${has.papers ? `
     <section id="papers" class="block">
       <h2><span class="section-icon">📄</span> Research highlights</h2>
       <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
-      ${aihotItemsCard(paperItems, "papers")}
+      ${aihotItemsCard(paperItems, "papers", editorialCuts)}
     </section>` : ""}
 
     ${has.labs ? `
@@ -1654,7 +1670,13 @@ function _sanitizeClaudeText(s) {
   // \" or \“ or \” treating quote chars as needing escape).
   return s.replace(/\\(["'‘’“”])/g, "$1");
 }
-const _rawClaude = (await tryReadJson(join(DATA_DIR, "claude-summaries.json")))?.summaries || {};
+const _fullClaude = await tryReadJson(join(DATA_DIR, "claude-summaries.json")) || {};
+const _rawClaude = _fullClaude?.summaries || {};
+// Editorial cuts from extended schema (new routine output)
+const editorialCuts = Array.isArray(_fullClaude?.editorial?.cuts) ? _fullClaude.editorial.cuts : [];
+const editorialOverallEn = _fullClaude?.editorial?.overall_en ?? null;
+const editorialOverallZh = _fullClaude?.editorial?.overall_zh ?? null;
+const translationArticles = Array.isArray(_fullClaude?.translations) ? _fullClaude.translations : [];
 const claudeSummaries = {};
 for (const [url, val] of Object.entries(_rawClaude)) {
   if (!val) continue;
