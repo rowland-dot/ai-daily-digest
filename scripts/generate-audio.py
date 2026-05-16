@@ -3,7 +3,8 @@
 Uses Microsoft Edge TTS (the free `edge-tts` Python lib) to render each
 section with an appropriate voice — Mandarin (zh-CN-XiaoxiaoNeural) for
 AIHOT items, English (en-US-AriaNeural) for everything else — then
-concatenates the per-section MP3s into docs/digest.mp3.
+concatenates the per-section MP3s into docs/digest-en.mp3 and
+docs/digest-zh.mp3 (one MP3 per supported language).
 
 Requires: `pip install edge-tts` + ffmpeg on PATH.
 
@@ -30,9 +31,8 @@ SEGS.mkdir(exist_ok=True)
 EN_VOICE = "en-US-AriaNeural"
 ZH_VOICE = "zh-CN-XiaoxiaoNeural"
 
-# Three tracks, one per language mode. Each entry: (lang_code, voice)
+# Two tracks, one per supported language. Each entry: (lang_code, voice).
 LANGUAGE_TRACKS = [
-    ("mix", None),   # Mix uses original voice per segment
     ("en", EN_VOICE),
     ("zh", ZH_VOICE),
 ]
@@ -747,7 +747,7 @@ def collect_and_translate_ui_strings() -> dict:
 def _audio_cache_hit() -> bool:
     """True only when the workflow's audio cache restore actually hit.
     File presence is NOT a valid signal because the pipeline-state cache
-    restore copies the previous run's docs/digest.mp3 into place BEFORE
+    restore copies the previous run's docs/digest-en.mp3 into place BEFORE
     this script runs, regardless of whether the data hash matches."""
     return os.environ.get("AUDIO_CACHE_HIT", "").lower() == "true"
 
@@ -1024,14 +1024,19 @@ def main() -> int:
         print(f"[ok] wrote {out_mp3} ({out_mp3.stat().st_size // 1024} KB from {len(segment_files)} segments)")
         return True
 
-    # Render each track
-    ok_mix = render_track("mix", None, SITE / "digest.mp3", SITE / "audio-cues.json")
-    ok_en = render_track("en", EN_VOICE, SITE / "digest-en.mp3", SITE / "audio-cues-en.json")
-    ok_zh = render_track("zh", ZH_VOICE, SITE / "digest-zh.mp3", SITE / "audio-cues-zh.json")
+    # Render each track. Failure of either track returns non-zero so the
+    # workflow surfaces the error and skips publish.
+    all_ok = True
+    for lang_code, voice in LANGUAGE_TRACKS:
+        out_mp3 = SITE / f"digest-{lang_code}.mp3"
+        cues_out = SITE / f"audio-cues-{lang_code}.json"
+        ok = render_track(lang_code, voice, out_mp3, cues_out)
+        if not ok:
+            all_ok = False
 
     _save_trans_cache()
 
-    if not ok_mix:
+    if not all_ok:
         return 1
     return 0
 
