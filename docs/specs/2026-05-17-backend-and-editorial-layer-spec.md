@@ -3,7 +3,7 @@
 **Date:** 2026-05-17
 **Filename:** `2026-05-17-backend-and-editorial-layer-spec.md`
 **Status:** Draft → user review
-**Depends on:** [`2026-05-16-card-refinements-and-feed-spec.md`](2026-05-16-card-refinements-and-feed-spec.md) (the card-refinements + feed spec) — both can ship in parallel but the card-refinements spec merges first.
+**Depends on:** [`2026-05-16-card-refinements-spec.md`](2026-05-16-card-refinements-spec.md) (the card-refinements spec) — both can ship in parallel but the card-refinements spec merges first.
 **Splits with:** the **cloudflare-migration-and-vendor-onboarding spec** (deferred, to be authored as `YYYY-MM-DD-cloudflare-migration-and-vendor-onboarding-spec.md`). This spec writes and tests all the code; that spec deploys it. See *Implementation phasing* below.
 **Followed by:** the **monetisation spec** (drafted after this ships and we can see traffic).
 
@@ -101,7 +101,7 @@ The architecture splits along two principles: **GitHub Actions is the build tool
 - **Cloudflare Workers does anything dynamic:** `/api/subscribe`, `/api/favourites`, `/api/auth/verify`, etc. Never invoked from the daily build — only from user requests.
 - **Cloudflare D1 stores per-user state:** subscribers, favourites, magic-link tokens.
 
-The current `github.io` URL is preserved as a 301 redirect to the new domain so existing bookmarks and the Atom feed (from the card-refinements spec) keep working.
+The current `github.io` URL is preserved as a 301 redirect to the new domain so existing bookmarks and the Atom feed (introduced in this spec, D11 below) keep working.
 
 ### D3 — Editor's Cut: one editorial pass, two outputs, different surfaces
 
@@ -201,6 +201,56 @@ The renderer reads an environment variable `BACKEND_LIVE` (or equivalent config 
 The flag is set per-build in the GHA workflow: `BACKEND_LIVE=false` for the current GH Pages deploy step, `BACKEND_LIVE=true` once the cloudflare-migration spec ships and the deploy target moves to Cloudflare Pages.
 
 The flag is **build-time**, not runtime. The shipped HTML never contains a hidden subscribe button waiting to be activated by JS — when the flag is off, the markup simply doesn't include those elements. This eliminates the "half-working button" risk.
+
+### D11 — Single Atom 1.0 syndication feed at `/feed.xml`
+
+The renderer emits one Atom 1.0 feed at `docs/feed.xml`, one entry per daily digest, linking to that day's archive page (`/digests/YYYY-MM-DD.html`). This is the only syndication surface the project ships; it co-locates with the rest of the SEO/discovery bundle (sitemap.xml, JSON-LD, OG/Twitter Cards, canonical URLs) introduced in D7.
+
+**Why not dual Atom + RSS?** Modern readers consume both equally; Google News and Bing News no longer prefer RSS for ingestion (they crawl HTML + sitemap.xml). One feed is enough.
+
+**Why Atom over RSS?** Cleaner spec, better date semantics, proper `<summary>` vs `<content>` distinction, supports multiple authors correctly. RSS 2.0 offers nothing functionally that Atom does not.
+
+**Why daily-digest granularity, not per-article?** This spec introduces `/articles/<slug>/` permalink pages (D6) — those could in principle become individual feed entries. We deliberately keep the feed at daily-digest granularity because it matches the editorial cadence the email pipeline uses (D4) and avoids flooding readers' inboxes with 20–80 entries per day. Subscribers who want per-article granularity can use the daily email, which is the project's intended high-touch surface.
+
+**Editor's Cut content is feed-excluded.** Per D3, the Editor's Cut narrative (`editorial.overall_en` / `editorial.overall_zh`) and per-article commentary (`editorial.cuts[*].commentary_en` / `commentary_zh`) never appear in the Atom feed — the feed entry summary is the same generic count-line ("Today's digest: N items across M sources.") whether or not the routine ran an editorial pass that day. The editorial layer is email-only and on-site only; it does not leak into syndication.
+
+**Feed entry shape:**
+
+- `<title>` — "AI Daily Digest — YYYY-MM-DD"
+- `<id>` — stable URN `urn:ai-daily-digest:YYYY-MM-DD`
+- `<link rel="alternate" type="text/html" href="…/digests/YYYY-MM-DD.html">`
+- `<updated>` — that digest's publish timestamp
+- `<summary>` — short EN one-liner ("Today's digest: N items across M sources.")
+- `<author>` — name "AI Daily Digest", uri = site root
+
+**Cap:** newest 30 daily digests in the feed (~one month of history; older days remain reachable via `/digests/index.html`).
+
+**Autodiscovery:** every HTML page (main, archive index, per-day archive, per-article translation page) gets exactly one `<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">` in `<head>`.
+
+**Atom XML shape (reference):**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AI Daily Digest</title>
+  <id>urn:ai-daily-digest:feed</id>
+  <link rel="self" href="https://<domain>/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://<domain>/"/>
+  <updated>2026-05-16T20:30:00Z</updated>
+  <author><name>AI Daily Digest</name><uri>https://<domain>/</uri></author>
+  <entry>
+    <title>AI Daily Digest — 2026-05-16</title>
+    <id>urn:ai-daily-digest:2026-05-16</id>
+    <link rel="alternate" type="text/html"
+          href="https://<domain>/digests/2026-05-16.html"/>
+    <updated>2026-05-16T20:30:00Z</updated>
+    <summary>Today's digest: 87 items across 10 sources.</summary>
+  </entry>
+  <!-- … up to 30 entries … -->
+</feed>
+```
+
+The feed is unaffected by the `BACKEND_LIVE` flag — it's a static artefact produced by every build, regardless of which deploy target is active.
 
 ---
 
@@ -382,6 +432,18 @@ Both are testable in this spec — `GH-Pages-live` against the live GH Pages bui
   - `<link rel="alternate" hreflang="en" href="<our-URL>">`
   - `<script type="application/ld+json">` block with `NewsArticle` schema + `isBasedOn` pointing to the source
 
+### B14 — Atom feed is reachable and valid [GH-Pages-live]
+
+- **Entry point:** `https://<domain>/feed.xml`.
+- **User action:** opens URL.
+- **Expected result:** valid Atom 1.0 XML (passes `validator.w3.org/feed/`). Contains 1–30 `<entry>` elements, one per daily digest, newest first. Each entry's `<link rel="alternate">` points to the corresponding `/digests/YYYY-MM-DD.html` page. No Editor's Cut content (overall narrative or per-article commentary) appears in the feed.
+
+### B15 — Feed autodiscovery from any HTML page [GH-Pages-live]
+
+- **Entry point:** any HTML page on the site (`/`, `/digests/YYYY-MM-DD.html`, `/digests/index.html`, `/articles/<slug>/`, `/favourites`, `/account`).
+- **User action:** view source.
+- **Expected result:** `<head>` contains exactly one `<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">`.
+
 ---
 
 ## Routine prompt extension
@@ -423,7 +485,7 @@ The two-mode GHA workflow (full + fast) stays. What changes:
    - Embeds JSON-LD (`NewsArticle` on per-article pages, `ItemList` on digest pages)
    - Emits `og:image` placeholder, OpenGraph + Twitter Card meta on every page
    - Emits 🏅 commentary boxes on cut articles, swapping with the language tab
-   - Atom feed already from the card-refinements spec — unchanged here
+   - **Emits the Atom 1.0 syndication feed at `docs/feed.xml`** (see D11) and adds `<link rel="alternate" type="application/atom+xml">` autodiscovery to every HTML page's `<head>`
 4. **New GHA step in the fast-path workflow:** after the renderer runs, render TWO email HTML bodies — `email_en.html` and `email_zh.html` — from the bilingual Editor's Cut + cut article list, and POST each to Beehiiv's Post API as a scheduled post targeting the `lang_en` and `lang_zh` segments respectively. Beehiiv API key lives as a GHA secret.
 5. **No new responsibilities for Cloudflare Workers in this pipeline.** Workers are user-request-driven only — `/api/subscribe`, `/api/favourites`, `/api/auth/verify`, etc. They never participate in the daily build.
 
@@ -538,5 +600,5 @@ Out of scope for this spec by user direction. Recorded as TODO: future support f
 
 ## Cross-spec pointers
 
-- **the card-refinements spec** ships first; this spec assumes the card-refinements spec's renderer changes (no Mix track, title-as-link, single Atom feed) are already live.
+- **the card-refinements spec** ships first; this spec assumes the card-refinements spec's renderer changes (no Mix track, title-as-link) are already live. The Atom syndication feed and its `<link rel="alternate">` autodiscovery moved out of that spec and are introduced here (see D11 and B14/B15).
 - **the monetisation spec** starts brainstorming once this spec's behaviours are in production for ~30 days and we have real subscriber + traffic data.
