@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-16T21:25:24.480Z",
+  "fetched_at": "2026-05-16T22:08:32.390Z",
   "repos": [
     {
       "owner": "oven-sh",
@@ -8,8 +8,8 @@
       "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 91131,
-      "forks": 4541,
+      "stars": 91148,
+      "forks": 4544,
       "starsToday": 414
     },
     {
@@ -19,8 +19,8 @@
       "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 23069,
-      "forks": 2484,
+      "stars": 23088,
+      "forks": 2486,
       "starsToday": 669
     },
     {
@@ -30,8 +30,8 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 193900,
-      "forks": 17252,
+      "stars": 193930,
+      "forks": 17257,
       "starsToday": 1281
     },
     {
@@ -41,7 +41,7 @@
       "description": "Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 14359,
+      "stars": 14379,
       "forks": 2510,
       "starsToday": 393
     },
@@ -52,8 +52,8 @@
       "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 6770,
-      "forks": 695,
+      "stars": 6792,
+      "forks": 697,
       "starsToday": 745
     },
     {
@@ -63,8 +63,8 @@
       "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 10587,
-      "forks": 909,
+      "stars": 10607,
+      "forks": 915,
       "starsToday": 1601
     },
     {
@@ -74,8 +74,8 @@
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 58256,
-      "forks": 7613,
+      "stars": 58269,
+      "forks": 7614,
       "starsToday": 990
     },
     {
@@ -85,7 +85,7 @@
       "description": "Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool calls, 100% local",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 2430,
+      "stars": 2453,
       "forks": 206,
       "starsToday": 397
     }
