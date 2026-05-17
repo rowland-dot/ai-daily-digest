@@ -22,7 +22,11 @@ function d1(db: InstanceType<typeof Database>) {
       return {
         bind(...args: unknown[]) {
           return {
-            run: () => stmt.run(...(args as any[])),
+            run: () => {
+              const info = stmt.run(...(args as any[]));
+              // Wrap in D1-compatible shape: { meta: { changes } }
+              return { meta: { changes: info.changes } };
+            },
             first: () => stmt.get(...(args as any[])),
             all: () => ({ results: stmt.all(...(args as any[])) }),
           };
