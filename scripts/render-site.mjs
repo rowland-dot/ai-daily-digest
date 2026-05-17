@@ -31,7 +31,7 @@ import {
 const BACKEND_LIVE = process.env.BACKEND_LIVE === "true";
 const SITE_ORIGIN = process.env.SITE_ORIGIN || "https://rowland-dot.github.io/ai-daily-digest";
 
-const DATA_DIR = "data";
+const DATA_DIR = process.env.DATA_DIR || "data";
 const SITE_DIR = "docs";
 const DIGESTS_DIR = join(SITE_DIR, "digests");
 
@@ -132,7 +132,7 @@ function relTime(v, now = Date.now()) {
 // Date-window filter. Returns true if `value` (ISO string or Unix epoch
 // seconds) falls within the last `hours` hours. Items missing a parsable
 // date are kept (defensive — we'd rather over-include than silently drop).
-const LOOKBACK_HOURS = 24;
+const LOOKBACK_HOURS = Number(process.env.LOOKBACK_HOURS) || 24;
 function withinWindow(value, hours = LOOKBACK_HOURS) {
   if (value == null) return true;
   let ms;

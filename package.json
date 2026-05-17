@@ -7,7 +7,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "preview": "node scripts/render-site.mjs && serve docs -l 8000"
+    "preview": "node scripts/render-site.mjs && serve docs -l 8000",
+    "preview:demo": "node scripts/preview-demo.mjs"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.41",
