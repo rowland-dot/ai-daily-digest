@@ -82,7 +82,7 @@ export function renderTranslationPage(article, opts = {}) {
   const { siteOrigin = 'https://ai-daily-digest.com' } = opts;
 
   const pageUrl = `${siteOrigin}/articles/${encodeURIComponent(slug)}/`;
-  const hasTranlation = excerpt_en != null && String(excerpt_en).trim().length > 0;
+  const hasTranslation = excerpt_en != null && String(excerpt_en).trim().length > 0;
 
   // NewsArticle JSON-LD
   const jsonLd = JSON.stringify({
@@ -116,32 +116,53 @@ export function renderTranslationPage(article, opts = {}) {
   <li><a href="../../digests/">🗂 Archive</a></li>
 </ul></nav>`;
 
+  // Use h2 for the hero page-title chrome so the article <h1> remains the unique primary heading.
   const header = `<header class="hero">
   <div class="lang-switch" role="tablist" aria-label="Audio language">
     <button data-lang="en" role="tab" aria-selected="true" aria-pressed="true">EN</button>
     <button data-lang="zh" role="tab" aria-selected="false" aria-pressed="false">中文</button>
   </div>
-  <h1 style="font-size:clamp(22px,4vw,32px);">EN Translation — ${escHtml(source)} Article</h1>
+  <h2 style="font-size:clamp(22px,4vw,32px);">EN Translation — ${escHtml(source)} Article</h2>
   <p class="date">A translation excerpt. Read the full piece in 中文 below.</p>
 </header>`;
 
-  if (!hasTranlation) {
+  if (!hasTranslation) {
     // Mockup 30 — placeholder state
+    // Header for pending: title is "Translation pending", subtitle matches mockup 30
+    const pendingHeader = `<header class="hero">
+  <div class="lang-switch" role="tablist" aria-label="Audio language">
+    <button data-lang="en" role="tab" aria-selected="true" aria-pressed="true">EN</button>
+    <button data-lang="zh" role="tab" aria-selected="false" aria-pressed="false">中文</button>
+  </div>
+  <h2 style="font-size:clamp(22px,4vw,32px);">Translation pending</h2>
+  <p class="date">We weren't able to translate this article today — read the original below.</p>
+</header>`;
     return `${head}
 <body>
-${header}
+${pendingHeader}
 ${nav}
 <main class="container">
-  <div class="translation-placeholder" data-testid="translation-placeholder">
-    <p class="muted">Translation pending</p>
-    <p>The English translation excerpt for this article is not yet available.</p>
-    <a href="${escAttr(originalUrl)}" target="_blank" rel="noopener" class="translation-cta">
-      Read original (中文) →
-    </a>
-  </div>
+  <article class="translation-article">
+    <h1>${escHtml(title)}</h1>
+    <p class="translation-attribution">
+      <span><strong>Source:</strong> ${escHtml(source)}</span>
+      <span><strong>Published:</strong> ${escHtml(publishedAt)}</span>
+      <span><strong>Language:</strong> 中文 (Chinese)</span>
+    </p>
+    <div class="translation-placeholder" data-testid="translation-placeholder" data-state="pending">
+      <div class="placeholder-icon" aria-hidden="true">📝</div>
+      <h2 style="font-family: var(--display-font); color: var(--text); margin: 0 0 10px; font-size: 22px;">Translation pending</h2>
+      <p style="font-size: 15px; max-width: 460px; margin: 0 auto 18px;">
+        Our daily routine ran out of capacity before it could produce an EN excerpt for this article. We've preserved the URL so the link still works — you can read the original in Chinese instead.
+      </p>
+      <a href="${escAttr(originalUrl)}" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+        Read original (中文) →
+      </a>
+    </div>
+  </article>
 </main>
 <footer class="site-footer">
-  <div>AI Daily Digest · <a href="../../">Home</a></div>
+  <div>Translation pending · <a href="../../">AI Daily Digest</a> · <a href="${escAttr(originalUrl)}" target="_blank" rel="noopener">view original (中文)</a></div>
 </footer>
 </body>
 </html>`;
