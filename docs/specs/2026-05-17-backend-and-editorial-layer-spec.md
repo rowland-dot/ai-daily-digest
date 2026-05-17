@@ -741,6 +741,9 @@ Out of scope for this spec by user direction. Recorded as TODO: future support f
 | T4 | Beehiiv Max tier upgrade for RSS-to-send | If Post API on Launch tier proves unreliable |
 | T5 | Google News inclusion verification | After 30 days post-launch (Google News approval timeline) |
 | T6 | Per-recipient daily email personalisation (e.g. "your saved articles") | If subscriber engagement metrics warrant it |
+| T7 | **Beehiiv Post API spike on Launch (free) tier** — `POST /v2/publications/.../posts` with a stub payload to confirm scheduled-post creation works on the free tier. Fallback if it doesn't: upgrade to Max (~$96/mo) or render to `data/daily-email.html` + use Beehiiv's RSS-to-send. See § Risks & open questions. | Before the cloudflare-migration spec starts (blocks D4 implementation) |
+| T8 | **Custom domain choice** — pick the domain (e.g. `aidailydigest.com`); register via Cloudflare DNS for one-click setup. Spec currently uses `example.com` as a placeholder in OG/sitemap/canonical URLs. | Before cloudflare-migration spec runs (DNS configuration is its first step) |
+| T9 | **Site logo + brand mark + OG image strategy** — author the logo (T1), then revisit OG image (T2). Until then, OG images use a placeholder asset. | Before public launch; T1 blocks T2 |
 
 ---
 
