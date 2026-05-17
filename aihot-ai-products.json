@@ -1,8 +1,38 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4NjA2ODcwMDAwLCJpIjoiY21wMnd0cmdqMDE5enNsMXFtZTVjeGN0ZSJ9",
+  "nextCursor": "eyJhIjoxNzc4NjE3ODg2MDAwLCJpIjoiY21wMzM5YmZiMDJyM3NsMXFvdGVibmtzMCJ9",
   "items": [
+    {
+      "id": "cmp9h2ow80qscslnz5vjoothc",
+      "title": "Grok Imagine图像生成功能正式发布",
+      "title_en": "Grok Imagine",
+      "url": "https://x.com/elonmusk/status/2055912040481599793",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-05-17T07:23:22.000Z",
+      "summary": "Grok Imagine\n现已正式发布\n所有人都可使用\n\n基于我们最新的文本到图像模型\n能够生成逼真、高质量的图像\n支持多种宽高比\n\n现在可在 X 上使用",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp9cdzr80pp1slnzmqaq8vho",
+      "title": "手机端ChatGPT应用集成Codex构建功能",
+      "title_en": "you can just build things from your phone， with Codex in the ChatGPT app",
+      "url": "https://x.com/gdb/status/2055882172884763012",
+      "source": "X：Greg Brockman (@gdb)",
+      "publishedAt": "2026-05-17T05:24:41.000Z",
+      "summary": "你可以在手机端通过ChatGPT应用中的Codex直接构建项目",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmp92lm860ngjslnztudqvy21",
+      "title": "Zerostack--一款采用纯Rust语言编写、受Unix启发的编程代理",
+      "title_en": null,
+      "url": "https://crates.io/crates/zerostack/1.0.0",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-17T00:46:13.673Z",
+      "summary": "Zerostack是一款采用纯Rust语言编写、受Unix哲学启发的编程代理工具，已正式发布1.0.0版本并在Rust包管理平台crates.io上提供。该发布在技术社区Hacker News上获得115点关注，反映出开发者对其的高度兴趣。Rust语言以内存安全和性能见称，Unix设计强调简洁与模块化，Zerostack结合两者优势，旨在提升编程效率，为代码辅助领域带来新选择。",
+      "category": "ai-products"
+    },
     {
       "id": "cmp8rhkfp0kx0slnz74ky5sya",
       "title": "Codex新增键盘快捷键自定义功能",
@@ -471,36 +501,6 @@
       "source": "X：OpenAI Developers (@OpenAIDevs)",
       "publishedAt": "2026-05-12T20:31:26.000Z",
       "summary": "计算机使用让Codex能在你的应用间工作而不占用你的Mac。\n\n@AriX与@romainhuet探讨当代理程序能点击、输入并在后台持续工作时将带来哪些改变。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp2xiymg01fwsl1qwncq1fep",
-      "title": "GitHub Copilot 个人计划：在 Pro 和 Pro+ 中引入弹性配额，以及新的 Max 计划",
-      "title_en": "GitHub Copilot individual plans： Introducing flex allotments in Pro and Pro+， and a new Max plan",
-      "url": "https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-05-12T17:35:41.000Z",
-      "summary": "GitHub 宣布从6月1日起更新 Copilot 个人计划阵容，基于用户反馈进行调整。主要变化包括在现有 Pro 和 Pro+ 计划中引入弹性配额机制，允许用户更灵活地分配使用量；同时新增 Max 计划，扩展高级选项。此次更新旨在提升计划的可定制性，为开发者提供更个性化的编程辅助服务，优化整体使用体验。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp2ww50501ausl1q1ivuw30j",
-      "title": "谷歌发布全新安卓智能助理",
-      "title_en": "GOOGLE 🔥： A new Android Intelligence has been introduced during Android Show 2026！ - A whole new s…",
-      "url": "https://x.com/testingcatalog/status/2054253853026185609",
-      "source": "X：Testing Catalog (@testingcatalog)",
-      "publishedAt": "2026-05-12T17:34:19.000Z",
-      "summary": "GOOGLE 🔥： 在Android Show 2026上推出了全新的Android Intelligence！\n\n- 全新的时尚设计！\n- 跨安卓应用的自动化多步骤任务\n- Chrome中的Gemini获得浏览器使用功能\n- 自动表单填写\n- \"Rambler\"可将语音笔记转为文本\n- 自定义Gen UI小组件\n\n我现在就需要一台Pixel 👀",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp2wtrgj019zsl1qme5cxcte",
-      "title": "Symphony为每个任务启动运行Codex智能体",
-      "title_en": "Symphony： every open task gets a running Codex agent",
-      "url": "https://x.com/OpenAIDevs/status/2054252221941121035",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-05-12T17:27:50.000Z",
-      "summary": "Symphony：每个开放任务都有一个正在运行的Codex智能体",
       "category": "ai-products"
     }
   ]

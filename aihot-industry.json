@@ -1,8 +1,18 @@
 {
-  "count": 38,
+  "count": 37,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmp906obn0mwislnzmnij5htg",
+      "title": "Figure人形机器人连续自主运行四天，迈向实用化关键一步",
+      "title_en": "哎！这玩意越看让人越有点感慨不已！ 人形机器人的真的逐渐在替代某些岗位啊！ Figure 人形机器人已经进入第4天 nonstop autonomous operations了。 F.03 正在…",
+      "url": "https://x.com/berryxia/status/2055786570570137989",
+      "source": "X：Berry Xia (@berryxia)",
+      "publishedAt": "2026-05-16T23:04:47.000Z",
+      "summary": "Figure公司的F.03人形机器人已进入第四天不间断自主运行测试，在真实仓库环境中24/7连续工作直至出现故障。测试核心在于评估机器人执行抓取、搬运、分拣等任务的长期耐力，并收集故障数据、维护需求及安全恢复机制等信息。这标志着人形机器人从展示单次动作的\"能动\"阶段，进入了考验持续工作能力的\"能干\"实用化关键阶段。",
+      "category": "industry"
+    },
     {
       "id": "cmp8rvo9o0l0lslnz1fqjrx38",
       "title": "美国开始出现人工智能相关岗位的大规模裁员",
@@ -361,26 +371,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-11T01:22:36.000Z",
       "summary": "AI芯片企业Cerebras的IPO获得超过20倍超额认购，有望成为2026年以来全球最大IPO。公司计划将发行股票数量从2800万股增至3000万股，发行价区间从115-125美元上调至150-160美元，以中间价计涨幅达29.17%，最高可筹资48亿美元。Cerebras的\"晶圆级芯片\"因集成大量高带宽SRAM缓存，特别适合AI推理的解码步骤，已获得亚马逊和OpenAI的大额订单。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp050ra30n3lsllh9scrq6zz",
-      "title": "Anthropic无补贴登顶令牌份额榜首",
-      "title_en": "Even without any subsidies， Anthropic has hit #1 in the tokenshare leaderboard",
-      "url": "https://x.com/OpenRouter/status/2053548965220475115",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-10T18:53:21.000Z",
-      "summary": "即使没有任何补贴\nAnthropic 已在令牌份额排行榜上位列第一",
-      "category": "industry"
-    },
-    {
-      "id": "cmoz1vu1i0eexsllhvm3porvn",
-      "title": "SpaceXAI 正式官宣了！",
-      "title_en": "SpaceXAI 正式官宣了！ @xFreeze 贴出 USPTO 商标申请截图，\"SpaceXAI\" 已于 2026 年 5 月 6 日正式提交申请（序列号 99808217），目前处于 LIV…",
-      "url": "https://x.com/berryxia/status/2053260623136604554",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-05-09T23:47:34.000Z",
-      "summary": "商标申请文件显示，\"SpaceXAI\"已于2026年5月6日提交申请，目前状态为待审查。该日期与Elon Musk宣布将xAI并入SpaceX的时间点吻合，标志着xAI的AI能力将与SpaceX的航天业务进行品牌统一，旨在将打造多行星文明与发展超级智能两大目标合并于单一实体之下。",
       "category": "industry"
     }
   ]

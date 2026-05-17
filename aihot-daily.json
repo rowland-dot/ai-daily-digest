@@ -1,30 +1,30 @@
 {
-  "date": "2026-05-16",
-  "generatedAt": "2026-05-16T00:00:00.584Z",
-  "windowStart": "2026-05-15T00:00:00.000Z",
-  "windowEnd": "2026-05-16T00:00:00.000Z",
+  "date": "2026-05-17",
+  "generatedAt": "2026-05-17T00:00:00.333Z",
+  "windowStart": "2026-05-16T00:00:00.000Z",
+  "windowEnd": "2026-05-17T00:00:00.000Z",
   "lead": null,
   "sections": [
     {
       "label": "模型发布/更新",
       "items": [
         {
-          "title": "MiniMax M2.7模型上线OrcaRouter平台",
-          "summary": "M2.7已在@OrcaRouter上线——可通过单一OpenAI兼容API访问。 今天就来试试吧！🐋",
-          "sourceUrl": "https://x.com/MiniMax_AI/status/2055331545402245246",
-          "sourceName": "X：MiniMax (@MiniMax_AI)"
+          "title": "社区协作再创佳绩，vLLM支持万亿级模型",
+          "summary": "又一次Day0协作，又一次社区胜利。感谢@vllm_project团队始终可靠的支持~ 🫡🫡",
+          "sourceUrl": "https://x.com/AntLingAGI/status/2055689329339760829",
+          "sourceName": "X：蚂蚁百灵 (@AntLingAGI)"
         },
         {
-          "title": "SenseNova发布增强版信息图表生成模型SenseNova-U1-8B-MoT-Infographic",
-          "summary": "SenseNova近日推出专为信息图表生成设计的增强模型SenseNova-U1-8B-MoT-Infographic。该模型能够根据指令生成多种视觉格式内容，包括海报、图表、食谱卡、明信片以及学术风格的arXiv页面等。在性能方面，模型在BizGenEval（困难版）和IGenBench（Q-ACC）两项基准测试上表现突出，相比其基础U1模型分别提升了6.8分和18.2分。目前，该模型已在Hugging Face平台开源，并提供了超过100个多样化的生成示例，供开发者和研究者参考与试用。",
-          "sourceUrl": "https://x.com/SenseTime_AI/status/2055315819165597702",
-          "sourceName": "X：商汤 SenseTime (@SenseTime_AI)"
+          "title": "SANA-WM：一个用于生成1分钟720p视频的26亿级开源世界模型",
+          "summary": "NVIDIA研究团队发布了SANA-WM，这是一个参数规模达26亿的开源世界模型，专门用于生成长达1分钟、分辨率为720p的视频。该模型已在GitHub页面开源，旨在推动高质量长视频生成的研发。其在Hacker News社区获得了107点热度，显示出业界对该技术进展的关注。",
+          "sourceUrl": "https://nvlabs.github.io/Sana/WM",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
         },
         {
-          "title": "inclusionAI/ARGenSeg-8B",
-          "summary": "包容性AI团队发布ARGenSeg-8B模型，致力于通过开源和开放科学推动人工智能的进步与普及。该举措强调技术民主化，使更广泛的社区能够参与AI研发与应用。开源策略将促进协作创新，加速AI工具在多元场景中的落地，降低技术门槛，推动产业生态的开放发展。",
-          "sourceUrl": "https://huggingface.co/inclusionAI/ARGenSeg-8B",
-          "sourceName": "蚂蚁 inclusionAI：HuggingFace 新模型"
+          "title": "Ring-2.6-1T开源并上线OpenRouter，专为智能体工作流设计",
+          "summary": "Ring-2.6-1T模型现已开源，并上线OpenRouter平台，5月底前享有75%折扣。该模型由AntLingAGI开发，是一个为现实世界智能体构建的万亿级推理模型，其核心设计目标不仅是回答问题，更是执行任务。它专注于规划步骤、使用工具、维持上下文和完成复杂工作流，具备强大的智能体执行能力和高推理模式，并采用了Async RL与IcePop训练方法。",
+          "sourceUrl": "https://x.com/AntLingAGI/status/2055681163033997815",
+          "sourceName": "X：蚂蚁百灵 (@AntLingAGI)"
         }
       ]
     },
@@ -32,52 +32,22 @@
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Runway Agent一键生成完整广告",
-          "summary": "Runway Agent 让你仅需一次会话，就能从产品照片和想法转变为完全制作完成的广告。 立即通过下方链接开始体验。",
-          "sourceUrl": "https://x.com/runwayml/status/2055364605979869229",
-          "sourceName": "X：Runway (@runwayml)"
+          "title": "Codex新增键盘快捷键自定义功能",
+          "summary": "不知为何我们选择周六发布更新，但Codex确实迎来了一系列优化。 这些改进让使用体验愉悦许多，实在不该拖到周二再公布。 键盘快捷键现已支持自定义。 根据实际工作方式配置Codex，通过设置调整快捷键，不必再迁就默认设定。",
+          "sourceUrl": "https://x.com/thsottiaux/status/2055735802894954612",
+          "sourceName": "X：Tibo (@thsottiaux)"
         },
         {
-          "title": "Krea 2正式上线面向专业用户",
-          "summary": "从今天起，Krea 2 正式为 Pro 用户上线。",
-          "sourceUrl": "https://x.com/krea_ai/status/2055371934452642107",
-          "sourceName": "X：Krea AI (@krea_ai)"
+          "title": "Notion推出开发者平台及CLI工具",
+          "summary": "Notion正式推出开发者平台，核心组件包括Notion CLI终端工具、Workers计算服务、数据库同步功能以及多种Agent工具与API。平台旨在让开发者更便捷地在Notion基础设施上运行代码、连接外部数据源并构建自动化工作流。未来，即使非开发者也能通过AI Agent在Notion上构建应用。",
+          "sourceUrl": "https://x.com/oran_ge/status/2055539910212460878",
+          "sourceName": "X：Oran Ge (@oran_ge)"
         },
         {
-          "title": "X平台开源“For You”信息流推荐算法",
-          "summary": "X平台在GitHub开源了其“For You”信息流的最新推荐算法。该算法融合来自已关注账号的内容和通过相似性搜索发现的网络外内容，并利用基于Grok架构的Phoenix Transformer模型进行统一评分。模型通过分析用户近期互动，同时预测点赞、回复、转发等多种互动概率，并综合成最终相关性分数。排序过程包括候选内容收集、上下文信息补充、AI模型评分、多样性调整及垃圾信息过滤等步骤。此次开源提供了完整的可运行管道、预训练模型、内容理解服务及内置广告混合模块，核心计算完全由Transformer模型驱动。",
-          "sourceUrl": "https://x.com/cb_doge/status/2055280665583898691",
-          "sourceName": "X：cb_doge (@cb_doge)"
-        },
-        {
-          "title": "语义代码审查工具clawpatch发布",
-          "summary": "🩹 clawpatch 0.1.0 已上线： Clawpatch 将代码库映射成语义功能切片，审查其中的错误和质量问题，并记录经过验证的明确修复尝试。 您会发现它能发现的问题之多令人惊讶。 npm install -g clawpatch https://clawpatch.ai",
-          "sourceUrl": "https://x.com/steipete/status/2055364630709448970",
-          "sourceName": "X：Peter Steinberger (@steipete)"
-        },
-        {
-          "title": "OpenRouter BYOK三大升级 支持多密钥轮换",
-          "summary": "OpenRouter BYOK 三项重大升级 🔑 1/ 可在同一工作空间为同一服务商添加多个密钥，并设置调用顺序。 便于在速率限制间轮换、区分开发与生产凭证，或在团队账户间分配使用量！",
-          "sourceUrl": "https://x.com/OpenRouter/status/2055305259287801865",
-          "sourceName": "X：OpenRouter (@OpenRouter)"
-        },
-        {
-          "title": "开源3D生成工具包：单张图片快速构建可交互3D世界",
-          "summary": "开发者@neilsonks开源了一套专为Claude Code设计的完整3D生成工具包。该工具能将输入的单张图片自动拆解，生成包含环境、网格、物理、灯光和音频的全套可交互3D场景。其流程首先利用图像与3D生成技术提取物体并生成高质量网格，随后移除物体以得到静态背景，最后为整个场景添加物理模拟、实时灯光和环境音效。配套查看器支持对生成物体的点击编辑与一键导出。此工具将以往需数天的2D转3D工作流程缩短至几分钟，适用于游戏开发、世界构建和产品可视化等项目。项目已在GitHub开源。",
-          "sourceUrl": "https://x.com/berryxia/status/2055086814009180316",
-          "sourceName": "X：Berry Xia (@berryxia)"
-        },
-        {
-          "title": "将Grok接入Hermes智能体",
-          "summary": "xAI宣布，用户现可将Grok订阅账户接入Nous Research的开源自改进智能体Hermes Agent。该集成对所有订阅层级开放，允许用户在Hermes环境中直接使用Grok 4.3进行文本对话与高级推理、调用其文本转语音功能生成语音回复，并利用Grok Imagine创建图像与视频。Hermes Agent可持久运行于电脑、沙盒或VPS，具备跨会话长期记忆能力，并能连接WhatsApp、Discord等通讯平台。用户通过安装Hermes Agent并选择Grok提供商即可完成配置。",
-          "sourceUrl": "https://x.ai/news/grok-hermes",
-          "sourceName": "xAI：News（网页）"
-        },
-        {
-          "title": "ChatGPT 推出全新个人理财体验",
-          "summary": "OpenAI 为美国地区的 ChatGPT Pro 用户推出个人理财功能预览版。用户可安全连接个人金融账户，获取基于自身财务状况、目标和优先级生成的 AI 洞察与指导。该体验通过账户关联实现个性化分析，标志着 ChatGPT 正式向个人金融助手领域拓展。",
-          "sourceUrl": "https://openai.com/index/personal-finance-chatgpt",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+          "title": "按需定制快捷键，优化工作流效率",
+          "summary": "处理大家的反馈让我们感到太有趣了。 （请继续反馈。） 键盘快捷键现已支持自定义。 围绕你的实际工作方式设置 Codex，然后通过设置调整快捷键，无需再适应我们的默认配置。",
+          "sourceUrl": "https://x.com/OpenAIDevs/status/2055717793841221796",
+          "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
         }
       ]
     },
@@ -85,34 +55,45 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "Anthropic估值与营收飙升",
-          "summary": "Anthropic简况： 估值： 2026年2月：3500亿美元 2026年5月：9000亿美元 三个月内增长近3倍。 年度经常性收入： 2025年底：90亿美元 2026年5月底：450亿美元 五个月内增长近5倍。 天啊。 via FT",
-          "sourceUrl": "https://x.com/kimmonismus/status/2055222524774846576",
+          "title": "美国开始出现人工智能相关岗位的大规模裁员",
+          "summary": "美国人工智能相关岗位正出现大规模裁员。根据彭博社报道，受AI影响的职位开始经历严重的就业岗位流失。这一趋势表明AI技术对劳动力市场的冲击已从理论讨论进入现实阶段，具体裁员数字和涉及的行业领域在进一步显现中。",
+          "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "研究人员利用Anthropic Mythos工具构建macOS内核漏洞，绕过苹果M5芯片内存完整性执行安全系统",
+          "summary": "三名研究人员借助Anthropic的Mythos工具，成功开发出一个可绕过苹果M5芯片内存完整性执行（MIE）安全机制的macOS内核漏洞利用程序。MIE是苹果耗时五年、投入巨资为M5和A19芯片打造的旗舰安全功能，旨在彻底消除内存损坏漏洞。研究团队于4月25日发现漏洞，5月1日即完成开发，并亲自前往苹果园区提交报告。该攻击采用纯数据攻击方式，无需操纵指针，仅通过非特权用户的标准系统调用即可获取根权限。完整技术报告将在苹果发布补丁后公开。",
+          "sourceUrl": "https://x.com/kimmonismus/status/2055571960260645125",
           "sourceName": "X：Kim (@kimmonismus)"
         },
         {
-          "title": "为 OpenAI 累计投入超 1000 亿美元，Nadella称微软当年投资时“没人愿意下注”",
-          "summary": "在“Musk诉奥尔特曼”庭审中，微软企业发展负责人确认，微软对OpenAI的累计投入已超过1000亿美元，其中包括130亿美元原始投资及大量Azure基础设施成本。此次合作已为微软带来约300亿美元营收。CEONadella表示，微软是在“没人愿意下注”时承担了风险。双方已续签非独家协议，微软不再支付收入分成，并将OpenAI的分成上限设为到2030年累计380亿美元，此举较原协议节省约970亿美元。此外，微软正评估收购AI初创公司以补强人才，并调整资源投向自研模型与超级智能领域。",
-          "sourceUrl": "https://www.ithome.com/0/950/728.htm",
+          "title": "突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅",
+          "summary": "OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦“智能体时代”，并秘密开发集成多项功能的“超级应用”桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。",
+          "sourceUrl": "https://www.ithome.com/0/951/258.htm",
           "sourceName": "IT之家（RSS）"
         },
         {
-          "title": "英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施",
-          "summary": "英国财政部、英格兰银行及金融行为监管局联合警告，当前最先进的AI模型已具备远超普通专业人员的网络攻击能力，其攻击速度更快、范围更广、成本更低。若被恶意利用，将严重威胁企业运营安全、客户数据、金融市场稳定性乃至整个金融体系。英格兰银行行长安德鲁·贝利此前已点名Anthropic的Mythos产品，网络安全专家亦警告此类AI可能强化复杂攻击，对银行业及金融技术体系构成新挑战。",
-          "sourceUrl": "https://www.ithome.com/0/951/144.htm",
+          "title": "杭州基地启用，机器人有了国家级职业技能训练场",
+          "summary": "国家人工智能应用中试基地（具身智能）5月16日在浙江杭州挂牌启用，为机器人提供国家级职业技能训练场。该基地是集场景体验、技术展示、研发合作、产业赋能于一体的综合性平台，旨在推动具身智能技术从实验室迈向现实应用。杭州市于5月1日施行首部具身智能机器人地方性法规，支持核心研发、平台建设和场景开放。目前杭州已集聚机器人产业相关企业700余家，2025年具身智能产业集群产值达1068亿元。",
+          "sourceUrl": "https://www.ithome.com/0/951/390.htm",
           "sourceName": "IT之家（RSS）"
         },
         {
-          "title": "微软研究院发布AI新工具与模型",
-          "summary": "微软研究院的新工具、模型、代码库和论文现已发布。 使用AI和智能体？值得关注： • MSR AI Frontiers的MagenticLite • 智能体化GitHub工作流 • 验证优先智能体 • 意义匹配微调 • AI转型与经济发展",
-          "sourceUrl": "https://x.com/MSFTResearch/status/2055303919497089337",
-          "sourceName": "X：Microsoft Research (@MSFTResearch)"
-        },
+          "title": "OpenAI 与马耳他合作，向所有公民提供 ChatGPT Plus",
+          "summary": "OpenAI 与马耳他政府达成合作，将向该国所有公民免费提供 ChatGPT Plus 订阅服务。此次合作旨在扩大人工智能技术的普及范围，并包含面向公民的 AI 技能实践培训，以帮助民众负责任地使用 AI。该计划是国家级大规模推广 ChatGPT Plus 的首例，预计将提升马耳他全民的 AI 素养与应用能力。",
+          "sourceUrl": "https://openai.com/index/malta-chatgpt-plus-partnership",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        }
+      ]
+    },
+    {
+      "label": "论文研究",
+      "items": [
         {
-          "title": "戛纳倒计时 | Kling AI大会主讲阵容揭晓！",
-          "summary": "2026年戛纳电影节Kling AI大会将汇聚三位世界级电影制作人，展示他们运用Kling AI技术创作的标杆作品。中国动画导演魏立将分享AI生成动画《Born of the Tide》；Jon Erwin将解析为Amazon Prime制作的剧集《House of David》；Eekjun Yang则将介绍院线电影《RAPHAEL》的创作过程。三位讲者将深入探讨Kling AI在电影制作中的幕后应用，共同探索AI为影视创作带来的新可能性。活动定于2026年5月18日15:30至17:30，在戛纳影节宫主舞台举行。",
-          "sourceUrl": "https://x.com/Kling_ai/status/2055302191129473502",
-          "sourceName": "X：可灵 Kling AI (@Kling_ai)"
+          "title": "智能体驱动系统Articraft实现3D资产生成自动化，开源万件数据集降低门槛",
+          "summary": "剑桥大学团队推出Articraft，这是一个由智能体驱动的编码系统，能全自动生成带关节、可运动的交互式3D资产。系统通过AI智能体自主编写代码、执行并接收物理反馈迭代优化，将以往需数日甚至数周的创作过程极大简化。团队同时开源了Articraft-10K数据集，包含超1万个物体，覆盖250个类别，所有资产均仿真就绪。此举显著降低了机器人训练和物理AI领域对高质量3D资产的数据门槛，为解决“数据饥渴”问题提供了高效的自动化方案。",
+          "sourceUrl": "https://x.com/berryxia/status/2055444087684407505",
+          "sourceName": "X：Berry Xia (@berryxia)"
         }
       ]
     },
@@ -120,52 +101,52 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "Show HN: 根据基准测试排名，为您的硬件寻找最适合的本地 LLM",
-          "summary": "一个名为“WhichLLM”的开源工具已在GitHub发布，可根据用户硬件配置推荐最适合的本地大语言模型。该工具通过基准测试对各类模型进行排名，帮助用户依据自身设备的性能指标选择最优模型。项目在Hacker News上获得116点热度，显示出社区对本地化AI部署效率工具的积极关注。",
-          "sourceUrl": "https://github.com/Andyyyy64/whichllm",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+          "title": "藏师傅PPT Skills更新，AI自动美化截图",
+          "summary": "藏师傅PPT Skills产品更新，新增截图美化功能。该功能无需消耗GPT-Image 2.0资源，即可根据用户截图的大小、长宽比以及当前PPT的模板类型和颜色主题，自动匹配合适的背景图，实现类似CleanShot X等专业软件的截图美化效果。AI还能处理过长等有问题的图片，例如将其自动裁剪并排成两列展示。",
+          "sourceUrl": "https://x.com/op7418/status/2055477163579891897",
+          "sourceName": "X：歸藏 (@op7418)"
         },
         {
-          "title": "飞书开源CLI工具45天获万星，AI操作可见可控引关注",
-          "summary": "飞书开源命令行工具lark-cli在45天内获得超过1万GitHub star，成为国内首个破万星的办公套件开源项目。该工具允许AI通过命令行直接操作飞书，执行建群、建文档等任务，且每一步操作都可预览、可审查，与云端不可见的MCP模式形成对比。其主干代码已合并10位外部开发者的贡献，而同类产品钉钉和企业微信则为零。这种可见、可控的特性被视为开发者放心将任务交给AI Agent的前提，预示着一句话指令驱动完整项目流程成为可能。",
-          "sourceUrl": "https://x.com/AYi_AInotes/status/2055263164145504501",
-          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)"
-        },
-        {
-          "title": "牛津大学博士后开源视频翻译工具Violin，支持多语言翻译与视频对话",
-          "summary": "牛津大学博士后Kevin Lin开源视频翻译工具Violin，旨在打破高质量视频内容的语言壁垒。该工具将语音识别、大语言模型翻译与语音合成整合为自动化流水线，支持多语言互译与个性化翻译风格调整，例如将学术报告转化为儿童易懂版本。用户还能直接与视频内容进行对话并获取相关答案。Violin提供Web应用、命令行界面和Agent Skill三种使用方式，所有功能基于MIT协议开源，由Together Compute提供技术支持，适用于内容创作、教育及多模态智能体开发等领域。",
-          "sourceUrl": "https://x.com/berryxia/status/2055093068085547507",
+          "title": "MagicPath与Codex深度整合，设计开发流程合二为一",
+          "summary": "MagicPath AI CEO @skirano 演示了其产品与Codex的深度整合。用户现可将MagicPath作为原生画布直接在Codex中运行，通过拖拽设计UI，Codex能实时感知项目并自动生成、编辑代码，实现设计与开发的无缝衔接，无需在Figma和IDE间切换。安装简便，只需在Codex中粘贴一条命令即可完成配置。此举将“设计-开发-迭代”流程整合于单一窗口，显著缩短了从创意到可运行应用的距离。",
+          "sourceUrl": "https://x.com/berryxia/status/2055766210512560416",
           "sourceName": "X：Berry Xia (@berryxia)"
         },
         {
-          "title": "开源项目OpenSquilla：智能路由降低AI成本近十倍，兼容多平台与模型",
-          "summary": "开源项目OpenSquilla通过智能路由架构，在保持与OpenClaw相近性能（0.9251分）的同时，将复杂AI任务处理成本从6美元大幅降至0.68美元。其核心是将简单任务分配给廉价模型，仅复杂任务调用Opus等顶级模型。系统具备四层记忆结构模拟人脑认知，支持按需加载16种工具，并设有三档代码沙箱安全防护。项目提供统一后端，支持网页、命令行及Slack、飞书等平台接入，兼容OpenAI、Claude、Gemini、DeepSeek等20余家主流模型。",
-          "sourceUrl": "https://x.com/xiaohu/status/2055299820215300380",
-          "sourceName": "X：小互 (@xiaohu)"
+          "title": "Codex实现多设备远程控制与上下文共享",
+          "summary": "Codex除了通过ChatGPT连接和远程控制外，还能控制另一台电脑，实现在ChatGPT上直接管理多台设备而无需切换，只需切换项目即可访问不同设备的上下文和文件。引用推文补充，此功能还支持通过远程SSH设置其他VMs等，增强了多设备协作的灵活性和实用性。",
+          "sourceUrl": "https://x.com/op7418/status/2055561525633642762",
+          "sourceName": "X：歸藏 (@op7418)"
         },
         {
-          "title": "无视令牌成本，用百个AI实例自动化驱动开源项目",
-          "summary": "作者在OpenClaw项目中大规模运用AI，探索在“令牌成本无关紧要”的未来如何构建软件。团队持续运行约100个Codex实例，自动化处理多项核心工作：审查代码与安全问题、去重归类议题、自动重现复杂测试环境并录制验证视频、从会议讨论中主动创建任务、过滤垃圾评论以及监控性能回归。通过clawpatch.ai等工具将项目拆分为功能单元进行审查，并整合Vercel DeepSec等进行安全分析。整套自动化体系使得项目能够以极精简的团队高效运作。",
-          "sourceUrl": "https://x.com/steipete/status/2055405041843052792",
-          "sourceName": "X：Peter Steinberger (@steipete)"
+          "title": "Show HN: 烧吧，宝贝，烧吧（那些代币）",
+          "summary": "开发者发布了一个名为“烧吧，宝贝，烧吧”的开源项目，旨在通过销毁代币来应对加密货币领域的通胀问题。该项目提供了一个工具，允许用户主动销毁自己持有的代币，从而减少总供应量。此举可能提升剩余代币的稀缺性与潜在价值。项目已在GitHub上开源，并在Hacker News上获得了100点的社区热度。",
+          "sourceUrl": "https://github.com/dtnewman/burn-baby-burn",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
         },
         {
-          "title": "推理的一阶导数：AI浪潮下的增长逻辑",
-          "summary": "AI推理是当今规模最大、增长最快的技术市场，预计七年内将达到2500亿美元。直接销售或转售推理服务的公司增长迅猛，如Anthropic和谷歌云。在AI时代前的软件公司中，Datadog和Twilio作为“推理的一阶导数”脱颖而出：Datadog的LLM可观测产品数据量近一季增长近两倍，其约20%的AI客户贡献了约80%的年度经常性收入；Twilio则通过AI重构的语音服务吸引客户。当前周期呈现高度集中特点，少数客户能驱动巨大收益。对于非AI原生公司，核心战略在于如何转售推理服务或从其客户的大量采购中获益。",
-          "sourceUrl": "https://www.tomtunguz.com/first-derivative-of-inference",
-          "sourceName": "Tomer Tunguz 博客（VC 分析）"
+          "title": "Anthropic《Founder's Playbook》：AI提高创业失败率的警示",
+          "summary": "Anthropic发布内部手册《Founder's Playbook》，核心观点是AI（如Claude Code）将提高创业失败率，而非降低。手册指出，AI能快速生成原型，易使创始人混淆“能运行”与“有市场需求”，并通过确认偏误和研究引擎强化错误想法。它将创业分为Idea、MVP、Launch、Scale四阶段，剖析AI放大的风险：如原型不等于验证、Agentic技术债、创始人成为决策瓶颈等。最终结论是，AI极大降低执行成本，使得判断力成为最稀缺资源，真正护城河在于将垂直领域知识结构化沉淀为专属Skills。",
+          "sourceUrl": "https://x.com/berryxia/status/2055635826462130227",
+          "sourceName": "X：Berry Xia (@berryxia)"
         },
         {
-          "title": "英伟达CEO称技工前景优于计算机科学毕业生",
-          "summary": "英伟达CEO Jensen Huang在卡内基梅隆大学告诉2026届计算机科学毕业生，电工、水管工等技工比他们更有前景。数据支持这一观点：Randstad分析显示技工需求增长是白领职位的三倍，机器人技术员职位增长107%，而斯坦福研究发现AI相关职位早期就业下降16%。顶级电工年薪超10.6万美元，无需学位负债。科技公司今年投资7000亿美元建设数据中心，全球到2030年预计达7万亿美元，这些基础设施依赖人力完成，但制造业面临劳动力短缺，每100名新工人进入就有102人离开。AI时代最大赢家是能建设数据中心的技工，而非提示工程师。",
-          "sourceUrl": "https://x.com/kimmonismus/status/2055403142913884288",
-          "sourceName": "X：Kim (@kimmonismus)"
+          "title": "工具使用代理认知与行动脱节机制研究",
+          "summary": "该可解释性论文聚焦工具使用代理，通过探测隐藏状态发现模型常能识别应调用工具，但实际调用失败，不匹配率达26%-54%。问题完全集中于认知到行动的过渡阶段，而非认知本身。内部探测方向可解码，但后期层的最后令牌机制使信号旋转，几乎与产生的行动正交。研究旨在预测干预措施效果，指出常见归因如提示或训练不足可能忽略后期层几何结构，这为工具使用提示A/B测试中的性能上限提供了合理解释。",
+          "sourceUrl": "https://x.com/omarsar0/status/2055750162526715926",
+          "sourceName": "X：Elvis Saravia (@omarsar0, DAIR.AI)"
         },
         {
-          "title": "杨立昆访谈：剖析LLM局限，畅谈AI未来与创业新途",
-          "summary": "在Unsupervised Learning播客中，AI先驱杨立昆阐述了其对大型语言模型局限性的反主流观点，并探讨了机器人技术的发展路径。他解释了离开Meta的原因，以及与Geoff Hinton、Yoshua Bengio在Turing奖观点上的重大分歧。访谈还涵盖了他对2027年的预测、新公司AMI对世界模型的押注，并将OpenAI和Anthropic比作Sun Microsystems。此外，他建议博士生停止研究LLM，并分享了对AI安全、突破性研究发生机制以及Meta FAIR得失的尖锐见解。",
-          "sourceUrl": "https://x.com/ylecun/status/2055346714039464373",
-          "sourceName": "X：Yann LeCun (@ylecun)"
+          "title": "Eric Jang分享从零构建AlphaGo的经历与见解",
+          "summary": "Eric Jang在过去几个月从零开始实现AlphaGo，这是2016年激发他进入深度学习的AI突破。他最初理解AlphaGo为“通过自我对弈训练的搜索增强深度神经网络”，但通过亲手构建获得了更深层次的理解。他指出，前沿深度学习研究虽昂贵，但特定能力的实现成本下降迅速；在2026年，训练强大围棋AI仅需几千美元租赁算力，无需DeepMind级别的资源。他荣幸受邀在播客中分享这一过程，并提供了详细教程和代码，同时谦虚自称围棋与AlphaGo学徒，对任何事实错误负责。",
+          "sourceUrl": "https://x.com/pmarca/status/2055723987850690927",
+          "sourceName": "X：Marc Andreessen (@pmarca, a16z)"
+        },
+        {
+          "title": "最新开源成果（#21）：开源模型盛宴！Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5、GLM-5.1 等。基于CAISI的V4评估。",
+          "summary": "本月开源AI模型领域迎来密集发布，包括Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5和GLM-5.1等一系列重要新版本。这些模型均在CAISI的V4评估框架下进行了性能评测。多个团队几乎同期推出旗舰级更新，反映出开源社区当前高速迭代的竞争态势。",
+          "sourceUrl": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
+          "sourceName": "Nathan Lambert：Interconnects（RSS）"
         }
       ]
     }

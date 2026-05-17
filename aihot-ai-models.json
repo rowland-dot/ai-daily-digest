@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -231,16 +231,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-11T00:00:00.000Z",
       "summary": "Qwen-Image-2.0是一个统一高保真生成与精确编辑的全能图像生成基础模型。它采用Qwen3-VL作为条件编码器，结合多模态扩散变换器进行联合建模，并通过大规模数据整理与多阶段训练实现强化。该模型支持长达1K令牌的指令输入，能生成幻灯片、海报等富文本内容，显著提升多语言文本渲染与排版质量。在生成方面，它增强了细节、纹理真实感与光照一致性，并更可靠遵循复杂指令。人工评估表明，其在生成和编辑任务上均大幅超越前代模型。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmozjjaal0icxsllhujdvf1k3",
-      "title": "OpenCode x Ring 2.6 1T限时免费开放",
-      "title_en": "OpenCode x Ring 2.6 1T - free for a limited time 256K context • reasoning • text only Thanks to @A…",
-      "url": "https://x.com/opencode/status/2053393732221739498",
-      "source": "X：opencode (@opencode)",
-      "publishedAt": "2026-05-10T08:36:30.000Z",
-      "summary": "OpenCode x Ring 2.6 1T - 限时免费开放\n\n256K上下文 • 推理能力 • 纯文本模型\n\n感谢 @AntLingAGI 和 @novita_labs 提供模型支持",
       "category": "ai-models"
     }
   ]

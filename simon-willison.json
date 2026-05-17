@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-05-16T22:08:48.078Z",
+  "fetched_at": "2026-05-17T21:29:16.326Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "GDS weighs in on the NHS's decision to retreat from Open Source",
+      "link": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+      "updated": "2026-05-17T15:59:41+00:00",
+      "summary": "GDS weighs in on the NHS's decision to retreat from Open Source"
+    },
     {
       "title": "Warelay -> OpenClaw",
       "link": "https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
       "updated": "2026-05-13T16:15:50+00:00",
       "summary": "“11 AI agents” is meaningless as a phrase. If I said “I have 11 spreadsheets” or “I have 11 browser tabs” to do my work, it means about the same thing."
-    },
-    {
-      "title": "CSP Allow-list Experiment",
-      "link": "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything",
-      "updated": "2026-05-13T04:50:45+00:00",
-      "summary": "An experiment that shows that you can load an app in a CSP-protected sandboxed iframe (see previous note ) and have a custom fetch() that intercepts CSP errors and passes them up to the parent window... which can then prompt the user to add that domain to an allow-list and then refresh the page."
     }
   ]
 }
