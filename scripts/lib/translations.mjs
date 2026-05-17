@@ -108,7 +108,7 @@ export function renderTranslationPage(article, opts = {}) {
 <link rel="alternate" hreflang="en" href="${escAttr(pageUrl)}">
 <link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="${escAttr(siteOrigin)}/feed.xml">
 <script type="application/ld+json">${jsonLd}</script>
-<link rel="stylesheet" href="../../_shared.css">
+<!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->
 </head>`;
 
   const nav = `<nav class="toc"><ul>

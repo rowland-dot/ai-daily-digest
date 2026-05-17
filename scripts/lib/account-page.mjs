@@ -70,7 +70,7 @@ export function renderAccountPage({
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Account — AI Daily Digest</title>
-<link rel="stylesheet" href="../_shared.css">
+<!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->
 </head>
 <body>
 <header class="hero">
