@@ -23,7 +23,7 @@ export default {
       return new Response('Not found', { status: 404 });
     }
 
-    const sendEmail = makeEmailSender(env.RESEND_API_KEY);
+    const sendEmail = makeEmailSender(env.RESEND_API_KEY, env.ENVIRONMENT);
     const siteOrigin = env.SITE_ORIGIN ?? 'https://ai-daily-digest.com';
 
     // Rate-limiter configuration: 5 req / 10 min per IP per rate-limited route.

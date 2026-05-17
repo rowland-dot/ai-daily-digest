@@ -1,14 +1,15 @@
 /**
  * Resend API caller for sending magic-link emails.
- * When RESEND_API_KEY is absent (or equals 'test'), logs to stdout and no-ops.
+ * When RESEND_API_KEY is absent, logs to stdout and no-ops.
+ * Test-mode bypass uses an explicit environment flag, not a magic API key value.
  */
 
 export type EmailSender = (to: string, subject: string, html: string) => Promise<void>;
 
-export function makeEmailSender(apiKey?: string): EmailSender {
+export function makeEmailSender(apiKey?: string, environment?: string): EmailSender {
   return async (to: string, subject: string, html: string): Promise<void> => {
-    if (!apiKey || apiKey === 'test') {
-      console.log(`[email-stub] To: ${to} | Subject: ${subject} | (not sent — no RESEND_API_KEY)`);
+    if (!apiKey || environment === 'test') {
+      console.log(`[email-stub] To: ${to} | Subject: ${subject} | (not sent — no RESEND_API_KEY or test environment)`);
       return;
     }
     const res = await fetch('https://api.resend.com/emails', {
