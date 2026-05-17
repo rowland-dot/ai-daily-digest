@@ -23,11 +23,28 @@ async function verifySignature(payload: string, signature: string, secret: strin
       false,
       ['sign'],
     );
-    const sig = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(payload));
-    const expected = Array.from(new Uint8Array(sig))
-      .map(b => b.toString(16).padStart(2, '0'))
-      .join('');
-    return expected === signature;
+    const sigBytes = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(payload));
+
+    // Decode the caller-supplied hex signature into bytes for constant-time comparison.
+    // hex.length must equal sigBytes.byteLength * 2; reject immediately if not.
+    const expectedBytes = new Uint8Array(sigBytes);
+    if (signature.length !== expectedBytes.length * 2) return false;
+    const actualBytes = Uint8Array.from(
+      (signature.match(/../g) ?? []).map(h => parseInt(h, 16)),
+    );
+    if (actualBytes.length !== expectedBytes.length) return false;
+
+    // Constant-time comparison via SubtleCrypto verify — the platform provides
+    // timing-safe comparison as part of HMAC verify, which avoids early-exit
+    // string comparison that enables timing-oracle attacks.
+    const verifyKey = await crypto.subtle.importKey(
+      'raw',
+      new TextEncoder().encode(secret),
+      { name: 'HMAC', hash: 'SHA-256' },
+      false,
+      ['verify'],
+    );
+    return await crypto.subtle.verify('HMAC', verifyKey, actualBytes, new TextEncoder().encode(payload));
   } catch {
     return false;
   }
