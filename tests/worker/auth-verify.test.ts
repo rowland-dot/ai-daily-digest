@@ -65,8 +65,11 @@ describe('GET /api/auth/verify', () => {
 
     expect(res.status).toBe(302);
     expect(res.headers.get('Location')).toContain('/account');
-    expect(res.headers.get('Set-Cookie')).toContain('session=');
-    expect(res.headers.get('Set-Cookie')).toContain('HttpOnly');
+    const cookie = res.headers.get('Set-Cookie') ?? '';
+    expect(cookie).toContain('session=');
+    expect(cookie).toContain('HttpOnly');
+    expect(cookie).toContain('Secure');
+    expect(cookie).toMatch(/SameSite=Lax/i);
 
     // verified_at should be set
     const row = rawDb.prepare('SELECT verified_at FROM subscribers WHERE email = ?').get('verify@example.com') as any;
