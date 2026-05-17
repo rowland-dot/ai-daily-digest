@@ -1033,7 +1033,7 @@ const PAGE_CSS = `
     content: "";
     position: absolute;
     width: 8px; height: 8px;
-    bottom: -2px; right: -2px;
+    inset: 2px;
     border: 2px solid var(--accent);
     border-top-color: transparent;
     border-radius: 50%;
