@@ -110,7 +110,7 @@ implementing plan task should decide whether to:
 | 03 | `03-subscribe-form-link-sent.html` | `subscribe-form-link-sent` | B | `subscribe-form-submitting` | B1 |
 | 04 | `04-subscribe-form-error-invalid-email.html` | `subscribe-form-error-invalid-email` | B | `subscribe-form-idle` | B1 |
 | 05 | `05-subscribe-form-error-network.html` | `subscribe-form-error-network` | B | `subscribe-form-submitting` | B1 |
-| 06 | `06-favourite-star-empty.html` | `favourite-star-empty` | A | `none` | B2 |
+| 06 | `06-favourite-star-empty.html` | `favourite-star-empty` | A | `none` | B2 — Fav-star button (☆) appears on every article card across all section types: aihot items, gh-trending, hf-popular, labs blog, builder writing, localLlama, followBuilders |
 | 07 | `07-favourite-star-filled.html` | `favourite-star-filled` | A | `favourite-star-empty` | B2 |
 | 08 | `08-favourite-star-syncing.html` | `favourite-star-syncing` | B | `favourite-star-empty` | B3 |
 | 09 | `09-favourites-ghpages-empty-no-saves.html` | `favourites-ghpages-empty-no-saves` | A | `none` | B4 (GH-Pages) |
