@@ -134,4 +134,26 @@ describe('docs/feed.xml', () => {
       expect(s).toContain("Today's digest:");
     }
   });
+
+  it('Atom summary contains "Today\'s digest:" prefix (A-M2 — integration check)', () => {
+    const xml = readFileSync('docs/feed.xml', 'utf8');
+    const summaries = [...xml.matchAll(/<summary>([^<]+)<\/summary>/g)].map(m => m[1]);
+    for (const s of summaries) {
+      expect(s).toContain("Today's digest:");
+    }
+  });
+});
+
+describe('Atom autodiscovery — exactly one link per page (A-L1)', () => {
+  it('docs/index.html has exactly one Atom autodiscovery link', () => {
+    const html = readFileSync('docs/index.html', 'utf8');
+    const matches = html.match(/application\/atom\+xml/g) || [];
+    expect(matches.length).toBe(1);
+  });
+
+  it('docs/favourites/index.html has exactly one Atom autodiscovery link', () => {
+    const html = readFileSync('docs/favourites/index.html', 'utf8');
+    const matches = html.match(/application\/atom\+xml/g) || [];
+    expect(matches.length).toBe(1);
+  });
 });
