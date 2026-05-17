@@ -250,6 +250,7 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
 </head>
 <body>
 <header class="hero">
+  ${backendLive ? '<!-- SITE_NAV_PLACEHOLDER backendLive=true -->' : '<!-- SITE_NAV_PLACEHOLDER backendLive=false -->'}
   <div class="lang-switch" role="tablist" aria-label="Audio language">
     <button data-lang="en" role="tab" aria-selected="true" aria-pressed="true">EN</button>
     <button data-lang="zh" role="tab" aria-selected="false" aria-pressed="false">中文</button>

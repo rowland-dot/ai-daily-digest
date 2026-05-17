@@ -1362,6 +1362,52 @@ const PAGE_CSS = `
   }
   .empty-state p { font-size: 14px; margin: 0; }
 
+  /* Site-nav strip — slim bar above each page header for cross-page navigation */
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px 0;
+    flex-wrap: wrap;
+  }
+  .site-nav-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: color 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+  }
+  .site-nav-link:hover {
+    color: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.3);
+    text-decoration: none;
+  }
+  .site-nav-link[data-current="true"] {
+    color: var(--hero-text);
+    border-color: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.1);
+    cursor: default;
+    pointer-events: none;
+  }
+  [data-theme="claude"] .site-nav-link {
+    color: rgba(20,20,19,0.45);
+    border-color: rgba(20,20,19,0.15);
+  }
+  [data-theme="claude"] .site-nav-link:hover {
+    color: rgba(20,20,19,0.8);
+    background: rgba(20,20,19,0.06);
+    border-color: rgba(20,20,19,0.28);
+  }
+  [data-theme="claude"] .site-nav-link[data-current="true"] {
+    color: var(--hero-text);
+    border-color: rgba(20,20,19,0.35);
+    background: rgba(20,20,19,0.08);
+  }
+
   /* Focus-visible accessibility */
   button:focus-visible,
   a:focus-visible,
@@ -1370,6 +1416,31 @@ const PAGE_CSS = `
     outline-offset: 2px;
   }
 `;
+
+// ---- Site-nav helper ----
+// Renders a thin strip of cross-page navigation links inside <header class="hero">.
+// currentPage: 'home' | 'favourites' | 'account'
+// backendLive: boolean — when false the Account link is omitted
+// pathPrefix:  '' (root) | '../' (sub-pages one level deep)
+function renderSiteNav(currentPage, { backendLive = false, pathPrefix = '' } = {}) {
+  const homeHref  = pathPrefix ? pathPrefix : '/';
+  const favHref   = `${pathPrefix}favourites/`;
+  const accHref   = `${pathPrefix}account/`;
+  const links = [
+    `<a href="${homeHref}" class="site-nav-link" data-current="${currentPage === 'home'}" aria-label="Daily digest home">Daily digest</a>`,
+    `<a href="${favHref}"  class="site-nav-link" data-current="${currentPage === 'favourites'}">★ Saved</a>`,
+    backendLive
+      ? `<a href="${accHref}"  class="site-nav-link" data-current="${currentPage === 'account'}">Account</a>`
+      : '',
+  ].filter(Boolean).join('\n    ');
+  return `<nav class="site-nav" aria-label="Site">\n    ${links}\n  </nav>`;
+}
+
+// Placeholder replaced by injectSiteNav() in helper pages (favourites, account).
+// The placeholder carries the BACKEND_LIVE flag as a data attribute so the
+// injection function can emit the correct set of links without re-reading the env.
+const NAV_PLACEHOLDER_FALSE = '<!-- SITE_NAV_PLACEHOLDER backendLive=false -->';
+const NAV_PLACEHOLDER_TRUE  = '<!-- SITE_NAV_PLACEHOLDER backendLive=true -->';
 
 // Inline script that sets data-theme BEFORE paint to avoid flash.
 const THEME_BOOT_SCRIPT = `
@@ -1938,6 +2009,7 @@ async function renderPage({
 <body>
 
   <header class="hero">
+    ${renderSiteNav('home', { backendLive: BACKEND_LIVE, pathPrefix })}
     <div class="lang-switch" role="tablist" aria-label="Audio language">
       <button data-lang="en" role="tab">EN</button>
       <button data-lang="zh" role="tab">中文</button>
@@ -2124,10 +2196,19 @@ const SYNC_SCRIPT_PLACEHOLDER = '<!-- SYNC_PROMPT_SCRIPT_PLACEHOLDER -->';
 function injectPageCss(html) {
   return html.replace(CSS_PLACEHOLDER, `<style>${PAGE_CSS}</style>`);
 }
+// Replace the site-nav placeholder in a helper page with the real rendered nav.
+// pathPrefix '../' is used for sub-pages (favourites/, account/) so href="/" resolves correctly.
+function injectSiteNav(html, currentPage) {
+  const navHtml = renderSiteNav(currentPage, { backendLive: BACKEND_LIVE, pathPrefix: '../' });
+  return html
+    .replace(NAV_PLACEHOLDER_FALSE, navHtml)
+    .replace(NAV_PLACEHOLDER_TRUE,  navHtml);
+}
 function injectFavouritesScripts(html) {
-  const withCss = injectPageCss(html);
+  const withCss  = injectPageCss(html);
+  const withNav  = injectSiteNav(withCss, 'favourites');
   // Only inject the sync-prompt script when BACKEND_LIVE=true; otherwise remove placeholder
-  return withCss.replace(
+  return withNav.replace(
     SYNC_SCRIPT_PLACEHOLDER,
     BACKEND_LIVE ? `<script>${SYNC_PROMPT_SCRIPT}</script>` : ''
   );
@@ -2441,7 +2522,7 @@ const accountHtml = renderAccountPage({ backendLive: BACKEND_LIVE, siteOrigin: S
 if (accountHtml) {
   const ACCOUNT_DIR = join(SITE_DIR, "account");
   await mkdir(ACCOUNT_DIR, { recursive: true });
-  await writeFile(join(ACCOUNT_DIR, "index.html"), injectPageCss(accountHtml), "utf8");
+  await writeFile(join(ACCOUNT_DIR, "index.html"), injectSiteNav(injectPageCss(accountHtml), 'account'), "utf8");
 }
 
 // /articles/<slug>/ — translation pages for CN-source articles
