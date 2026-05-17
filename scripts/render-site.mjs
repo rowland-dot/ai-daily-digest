@@ -13,7 +13,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { articleId } from "./lib/article-id.mjs";
 import { renderEditorialCutBox } from "./lib/editorial.mjs";
-import { renderFavouritesPage } from "./lib/favourites-page.mjs";
+import { renderFavouritesPage, SYNC_PROMPT_SCRIPT } from "./lib/favourites-page.mjs";
 import { renderAccountPage } from "./lib/account-page.mjs";
 import { renderSubscribeForm, SUBSCRIBE_FORM_SCRIPT } from "./lib/subscribe-form.mjs";
 import { renderTranslationPage, translationSlug } from "./lib/translations.mjs";
@@ -2061,13 +2061,24 @@ async function renderArchiveIndex(days) {
 </html>`;
 }
 
-// ---- Inject PAGE_CSS into helper-rendered pages ----
+// ---- Inject PAGE_CSS (and optional scripts) into helper-rendered pages ----
 // Helper pages (favourites, account, translation) replace the _shared.css
 // comment placeholder with an inline <style> block carrying PAGE_CSS,
 // so all pages share the same single source of CSS truth.
+// A second placeholder (SYNC_PROMPT_SCRIPT_PLACEHOLDER) in the favourites page
+// is replaced with the inline sync-prompt client script when BACKEND_LIVE=true.
 const CSS_PLACEHOLDER = '<!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->';
+const SYNC_SCRIPT_PLACEHOLDER = '<!-- SYNC_PROMPT_SCRIPT_PLACEHOLDER -->';
 function injectPageCss(html) {
   return html.replace(CSS_PLACEHOLDER, `<style>${PAGE_CSS}</style>`);
+}
+function injectFavouritesScripts(html) {
+  const withCss = injectPageCss(html);
+  // Only inject the sync-prompt script when BACKEND_LIVE=true; otherwise remove placeholder
+  return withCss.replace(
+    SYNC_SCRIPT_PLACEHOLDER,
+    BACKEND_LIVE ? `<script>${SYNC_PROMPT_SCRIPT}</script>` : ''
+  );
 }
 
 // ---- Run ----
@@ -2369,7 +2380,7 @@ await writeFile(join(DIGESTS_DIR, "index.html"), await renderArchiveIndex(archiv
 // /favourites page — always written; sync-prompt visible only when BACKEND_LIVE=true
 const FAVOURITES_DIR = join(SITE_DIR, "favourites");
 await mkdir(FAVOURITES_DIR, { recursive: true });
-const favouritesHtml = injectPageCss(renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [], siteOrigin: SITE_ORIGIN }));
+const favouritesHtml = injectFavouritesScripts(renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [], siteOrigin: SITE_ORIGIN }));
 await writeFile(join(FAVOURITES_DIR, "index.html"), favouritesHtml, "utf8");
 
 // /account page — only written when BACKEND_LIVE=true (feature-flag gated)

@@ -136,8 +136,11 @@ describe('injectPageCss — render-site.mjs helper function (C1)', () => {
     expect(renderSiteSrc).toContain('html.replace(CSS_PLACEHOLDER,');
   });
 
-  it('renderFavouritesPage output is wrapped with injectPageCss at write site', () => {
-    expect(renderSiteSrc).toContain('injectPageCss(renderFavouritesPage(');
+  it('renderFavouritesPage output is processed with CSS injection at write site', () => {
+    // H2 added injectFavouritesScripts which wraps injectPageCss — verify either form
+    const hasDirect    = renderSiteSrc.includes('injectPageCss(renderFavouritesPage(');
+    const hasViaHelper = renderSiteSrc.includes('injectFavouritesScripts(renderFavouritesPage(');
+    expect(hasDirect || hasViaHelper).toBe(true);
   });
 
   it('renderAccountPage output is wrapped with injectPageCss at write site', () => {
