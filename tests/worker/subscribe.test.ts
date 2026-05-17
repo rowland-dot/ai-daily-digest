@@ -118,4 +118,23 @@ describe('POST /api/subscribe', () => {
     expect(r1.status).toBe(200);
     expect(r2.status).toBe(200);
   });
+
+  it('does NOT overwrite language for an existing subscriber on re-subscribe', async () => {
+    // Simulate a verified subscriber with language=zh who re-subscribes with language=en.
+    // The subscribe route must NOT mutate the existing verified subscriber's language.
+    const rawDb2 = makeDb();
+    const db2 = d1(rawDb2);
+    rawDb2.prepare("INSERT INTO subscribers (email, language, verified_at) VALUES (?, ?, datetime('now'))")
+      .run('existing@example.com', 'zh');
+
+    const req = new Request('http://localhost/api/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: 'existing@example.com', language: 'en' }),
+    });
+    await handleSubscribe(req, db2 as any, emailStub.send);
+
+    const row = rawDb2.prepare('SELECT language FROM subscribers WHERE email = ?').get('existing@example.com') as any;
+    expect(row?.language).toBe('zh'); // preserved — not overwritten to 'en'
+  });
 });

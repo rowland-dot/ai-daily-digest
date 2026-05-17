@@ -26,7 +26,16 @@ export interface Favourite {
   saved_at: string;
 }
 
-/** Upsert subscriber — preserves existing verified_at on conflict */
+/**
+ * Insert a new pending subscriber (unauthenticated / public routes).
+ *
+ * On conflict: does NOT update language — preserves the existing subscriber's
+ * language preference. This prevents unauthenticated callers (/api/subscribe,
+ * /api/sync-favourites) from mutating a verified subscriber's preferences.
+ *
+ * Use `updateLanguage()` (authenticated route only) to change language for
+ * an existing subscriber.
+ */
 export async function upsertSubscriber(
   db: D1Database,
   email: string,
@@ -36,7 +45,7 @@ export async function upsertSubscriber(
     .prepare(
       `INSERT INTO subscribers (email, language)
        VALUES (?, ?)
-       ON CONFLICT(email) DO UPDATE SET language = excluded.language`,
+       ON CONFLICT(email) DO NOTHING`,
     )
     .bind(email, language)
     .run();
