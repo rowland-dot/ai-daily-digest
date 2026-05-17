@@ -15,6 +15,7 @@ import { articleId } from "./lib/article-id.mjs";
 import { renderEditorialCutBox } from "./lib/editorial.mjs";
 import { renderFavouritesPage } from "./lib/favourites-page.mjs";
 import { renderAccountPage } from "./lib/account-page.mjs";
+import { renderSubscribeForm, SUBSCRIBE_FORM_SCRIPT } from "./lib/subscribe-form.mjs";
 import { renderTranslationPage, translationSlug } from "./lib/translations.mjs";
 import {
   renderSitemap,
@@ -1988,6 +1989,8 @@ async function renderPage({
       ${hfSection(hfModels)}
     </section>` : ""}
 
+    ${BACKEND_LIVE ? renderSubscribeForm() : ""}
+
   </main>
 
   <footer class="site-footer">
@@ -2021,6 +2024,7 @@ async function renderPage({
   <script>${THEME_TOGGLE_SCRIPT}</script>
   <script>${LANG_SWITCH_SCRIPT}</script>
   <script>${AUDIO_PLAYER_SCRIPT}</script>
+  ${BACKEND_LIVE ? `<script>${SUBSCRIBE_FORM_SCRIPT}</script>` : ""}
 
 </body>
 </html>`;
