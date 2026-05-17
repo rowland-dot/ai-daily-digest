@@ -1,9 +1,13 @@
+---
+smart-rerun-applied: 2026-05-17-rerun-1
+---
+
 # Patch Brief — backend-and-editorial-layer
 
 **Branch:** `feat/backend-and-editorial-layer`
 **Date:** 2026-05-17
-**Pipeline outcome:** PASS (305/305 tests, 23/23 plan tasks, 37 commits ahead of `origin/main`)
-**Ship-readiness:** Pending outstanding decisions below. Code is merge-ready for the editorial, translation, and SEO surfaces today; backend surfaces are dormant behind `BACKEND_LIVE=false`.
+**Pipeline outcome:** PASS (352/352 vitest tests + 10 E2E passing, 23/23 plan tasks, 37 commits ahead of `origin/main`)
+**Ship-readiness:** Outstanding decisions resolved (see Smart Rerun results below). Branch is deferred-merge pending cloudflare-migration spec — do not merge PR #2 yet.
 
 ---
 
@@ -27,7 +31,7 @@ Key deliverables:
 
 ## Automation coverage
 
-**305 of 305 tests passing** across 24 test files.
+**352 of 352 vitest tests passing** across 24 test files + **10 E2E tests passing** (17 skipped, 0 failed).
 
 | Layer | Coverage |
 |---|---|
@@ -35,7 +39,8 @@ Key deliverables:
 | Renderer unit tests | Editorial commentary, translation pages, SEO helpers, Atom feed, email templates, article-id helper |
 | Render integration tests | Editor's Cut on cards, translation page shape, SEO pages (sitemap/feed/robots), favourites page (both flag states), account page (flag-gated), feature-flag guard |
 | Security paths | SESSION_SECRET guard, constant-time HMAC, rate limits, CSRF header, article-id format validation |
-| E2E (Playwright) | **0 tests — deferred** (11 `needs-automation` rows tracked for `feat/playwright-e2e-harness`) |
+| Fav-star JS unit tests | localStorage toggle, `aria-pressed` state, add/remove idempotency (+13 new assertions via Smart Rerun) |
+| E2E (Playwright) | `@playwright/test` + `playwright.config.mjs` + `npm run e2e`; 22 real tests + 9 cloudflare-deferred stubs; 10 passing + 17 skipped + 0 failed |
 | Manual-only | Email cross-client rendering (mockups 27-28), Atom feed external validator |
 
 ---
@@ -151,15 +156,15 @@ Checklist items mapped to test automation. Functional items with no E2E test are
 
 | Section | # | Checklist item | Status | Test / category |
 |---|---|---|---|---|
-| P0 | 1 | All tests pass (vitest run) | ✓ automated | `npx vitest run` — 305/305 |
+| P0 | 1 | All tests pass (vitest run) | ✓ automated | `npx vitest run` — 352/352 |
 | P0 | 2 | Renderer exits 0 | ✓ automated | `tests/render/feature-flag.test.mjs` |
 | P0 | 3–6 | sitemap/feed/robots exist | ✓ automated | `tests/render/seo-pages.test.mjs` |
 | P1 | 1–4 | Editor's Cut commentary (EN + ZH + fallback) | ✓ automated | `tests/render/editors-cut.test.mjs`, `tests/lib/editorial.test.mjs` |
-| P2 | 1–2 | Language tab + no localStorage write | partial | `tests/render/feature-flag.test.mjs` (partial — L3 gap: setItem contract unverified) |
-| P2 | 3–5 | Fav-star toggle + localStorage | ✗ needs-automation | E2E deferred — `feat/playwright-e2e-harness` |
+| P2 | 1–2 | Language tab + no localStorage write | ✓ automated | `tests/render/feature-flag.test.mjs` + A-L3 gap closed by Smart Rerun |
+| P2 | 3–5 | Fav-star toggle + localStorage | ✓ automated | `tests/lib/fav-star-script.test.mjs` (unit) + `tests/e2e/fav-star.spec.mjs` (E2E) |
 | P2 | 6–7 | /favourites GH-Pages states | ✓ automated | `tests/render/favourites-page.test.mjs` |
 | P3 | 1–3 | Translation pages + SEO head | ✓ automated | `tests/render/translation-pages.test.mjs`, `tests/lib/translations.test.mjs` |
-| P3 | 4–5 | Card title links EN vs 中文 tab | ✗ needs-automation | E2E deferred |
+| P3 | 4–5 | Card title links EN vs 中文 tab | ✓ automated | `tests/e2e/language-tab.spec.mjs` |
 | P3 | 6 | Budget-recovery placeholder | ✓ automated | `tests/render/translation-pages.test.mjs` |
 | P4 | 1–12 | SEO bundle (sitemap/feed/robots/OG/JSON-LD/autodiscovery) | ✓ automated | `tests/render/seo-pages.test.mjs`, `tests/lib/seo.test.mjs` |
 | P5 | 1–14 | Worker API routes (all 9) | ✓ automated | `tests/worker/*.test.ts` |
@@ -172,52 +177,19 @@ Checklist items mapped to test automation. Functional items with no E2E test are
 
 ## Known gaps and deferred items
 
-### MEDIUM findings carried forward (17 total — fix before cloudflare-migration spec)
+### Carry-forward findings — post Smart Rerun
 
-**From /review (7):**
-
-| ID | Location | Finding |
-|---|---|---|
-| R-M1 | `worker/routes/subscribe.ts:46-49` | Stale magic links not invalidated on re-subscribe — concurrent valid links remain live up to 30 min. Fix: DELETE prior unconsumed links before INSERT. |
-| R-M2 | `worker/routes/favourites.ts:77-83` | N+1 SELECT before INSERT — fetch-whole-list dedup check when `INSERT OR IGNORE` + `meta.changes` is sufficient. |
-| R-M3 | `worker/routes/subscribe.ts` / `db.ts:setVerified` | Re-subscribe does not clear `unsubscribed_at` — re-activated user still shows "unsubscribed" on `/account`. Fix: add `SET unsubscribed_at = NULL` in `setVerified()`. |
-| R-M4 | `worker/routes/subscribe.ts:11` | Email regex too permissive (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`). Acceptable for MVP; tighten when adding rate limits. |
-| R-M5 | `worker/lib/email.ts:11` | `RESEND_API_KEY === 'test'` magic string silently skips emails. Gate on `env.ENVIRONMENT === 'test'` instead. |
-| R-M6 | `tests/worker/webhooks.test.ts:109-119` | "no-op when secret absent" test codifies a fail-open bug (now fixed in production); test must be updated to assert 503 when secret is absent. |
-| R-M7 | `worker/lib/beehiiv.ts:44,73` | Beehiiv list-lookup failures silently swallowed (`if (!listRes.ok) return;`). Log + raise to avoid silent split-brain between D1 and Beehiiv. |
-
-**From /design-review (5):**
-
-| ID | Location | Finding |
-|---|---|---|
-| D-M1 | `docs/designs/backend-and-editorial-layer/14-sync-favourites-prompt-open-email-input.html:41` | Inline `style="box-shadow:none;padding:0;border:0"` overrides `.subscribe-form`. Add `.subscribe-form--bare` modifier class to `_shared.css`. |
-| D-M2 | `scripts/lib/translations.mjs:135` | `data-state="pending"` attribute missing on placeholder div (mockup 30 has it). Add it to keep CSS selector and parity checks aligned. |
-| D-M3 | `scripts/lib/translations.mjs:135-140` | Placeholder body copy diverges from mockup 30 — generic copy vs the richer "Our daily routine ran out of capacity…" text. Lift verbatim from mockup. |
-| D-M4 | `scripts/lib/favourites-page.mjs:87-94`, `scripts/lib/account-page.mjs:76-83` | Hero on `/favourites` and `/account` emits `.lang-switch` only; `.theme-switch` is absent. Both helpers need the theme-switch block added. |
-| D-M5 | `scripts/lib/translations.mjs:124` | Translation page hero shows generic "EN Translation — {Source} Article" as the prominent `<h1>`; article title is a second `<h1>` below. Two `<h1>` per page violates heading-uniqueness; the hero `<h1>` is less informative. Fix: move article title into hero or drop the hero `<h1>`. |
-
-**From audit (5):**
-
-| ID | Location | Finding |
-|---|---|---|
-| A-M1 | `tests/lib/seo.test.mjs:7` | `renderNewsArticleJsonLd` imported but never called in its own describe block. Spec B13 required fields (`headline`, `datePublished`, `articleBody`, `mainEntityOfPage`) have no direct assertions. |
-| A-M2 | `tests/render/seo-pages.test.mjs:133` | Atom summary check uses `toContain("Today's digest:")` — would pass if editorial prose was appended. Tighten to strict regex `/^Today's digest: \d+ items across \d+ sources/`. |
-| A-M3 | `tests/render/account-page.test.mjs` | `#toast-root` container (required by client JS for language-saved toast) not asserted in static HTML tests. A refactor removing it would go undetected. |
-| A-M4 | `tests/render/account-page.test.mjs` | `aria-live="polite"` on `#toast-root` (spec-required for accessibility) not asserted. |
-| A-M5 | `tests/worker/auth-verify.test.ts:69` | `Secure` and `SameSite=Lax` cookie attributes present in implementation but not asserted in any test. |
-
-### LOW findings carried forward (11 total)
-
-**From /review (3):** R-L1 (typo `hasTranlation` in `scripts/lib/translations.mjs:85`), R-L2 (canonical URL under GH Pages may not match `/ai-daily-digest/` prefix — spot-check post-deploy), R-L3 (`siteOrigin` interpolated raw into email HTML anchor href — route through `escapeAttr()` when hardening).
-
-**From /design-review (4):** D-L1 (`BACKEND_LIVE=true` comment in renderer lacks `// TODO: linked-user shell`), D-L2 (fav-star syncing spinner pokes 2px outside positioning box at small viewports), D-L3 (card-meta shows locale-date string not relative-time; `relTime()` already exists in renderer), D-L4 (storyboard Tier-A row 06 entry-point claim could be clearer that the star is on every card).
-
-**From audit (4):** A-L1 (B15 autodiscovery test uses `>=1` not `===1`; only checks `index.html`, not digest/translation/favourites/account pages), A-L2 (`og:description` not asserted in `renderOgMeta` test suite), A-L3 (B1b "no `localStorage.setItem('lang')`" contract stated in plan but absent from test), A-L4 (Beehiiv `moveToLanguageSegment` not stubbed in `PUT /api/account/language` test — segment-move can silently break).
+- 0 CRITICAL, 0 HIGH (unchanged from Step 5 fixes)
+- 25 of 28 prior MEDIUM/LOW findings: **RESOLVED** by Smart Rerun Package A (commits `bb1bebb` through `87302d0`)
+- 3 remaining items, all surfaced or refined during the fix pass:
+  - LOW: Atom feed `itemCount/sourceCount` falls back to "? ? ?" when manifest data is absent — acceptable in tests, real renders populate via manifest
+  - LOW: test D1 shim across multiple test files returns raw better-sqlite3 result without meta wrapping — not currently a bug but worth noting for future db.ts helpers that need `meta.changes`
+  - INFO: account-page.mjs had no canonical link before Smart Rerun — now added; double-check on first real render
+- **NEW DISCOVERY (Smart Rerun):** fav-star buttons rendered without their localStorage click handler (Stage B authored markup, not JS). Fixed via `scripts/lib/fav-star-script.mjs` + render-site wiring. 13 new vitest assertions; 4 prior-RED E2E tests now passing.
 
 ### Infrastructure gaps
 
-- **No Playwright E2E harness** — 11 `needs-automation` behaviours deferred to `feat/playwright-e2e-harness` (fav-star toggle, subscribe form arc, language tab card behaviour, sync-favourites flow arc, account delete arc, etc.).
-- **No live dev server** — mockup-parity walk and Playwright E2E both require a running HTTP server. The static renderer produces files; the worker requires `wrangler dev`. Neither is wired into CI today.
+- **No live dev server** — mockup-parity walk and full Playwright E2E (Cloudflare-live surfaces) both require a running HTTP server with `wrangler dev`. Neither is wired into CI today.
 - **`BACKEND_LIVE=true` surfaces untestable against live GH Pages** — subscribe form, sync-prompt, `/account` page, and all Cloudflare-live mockup states (11–22) are dormant until the cloudflare-migration spec.
 
 ### Deferred to cloudflare-migration spec
@@ -231,58 +203,60 @@ Checklist items mapped to test automation. Functional items with no E2E test are
 
 ### TODOs recorded in spec
 
-T1: Site logo + brand mark (blocks OG image strategy lock-in). T2: Revisit OG image strategy after logo lands. T3: EN→CN translation (when CN subscriber demand surfaces). T4: Beehiiv Max upgrade if Post API on Launch tier proves unreliable. T5: Google News inclusion verification (~30 days post-launch). T6: Per-recipient email personalisation.
+T1: Site logo + brand mark (blocks OG image strategy lock-in). T2: Revisit OG image strategy after logo lands. T3: EN→CN translation (when CN subscriber demand surfaces). T4: Beehiiv Max upgrade if Post API on Launch tier proves unreliable. T5: Google News inclusion verification (~30 days post-launch). T6: Per-recipient email personalisation. T7: Beehiiv Post API spike required before cloudflare-migration starts (confirm Launch tier supports scheduled-post creation via API). T8: Domain choice required before authoring cloudflare-migration spec (drives DNS, Cloudflare Pages project name, Resend sending domain, feed `<link rel="self">` URL). T9: Logo + OG image strategy (placeholder OG ships now; finalise post-cloudflare-migration).
 
 ---
 
 ## Outstanding decisions
 
-> Decide these before running `/ship`.
+> All 6 decisions resolved by Smart Rerun — see Smart Rerun results section below.
 
-1. **Ship this branch now vs defer until cloudflare-migration ships.**
-   The live-on-GH-Pages improvements (Editor's Cut commentary, fav-star buttons, translation pages, SEO bundle, Atom feed, EN-default language model) are independently valuable today — readers benefit without a subscriber or backend. Shipping now means the `BACKEND_LIVE=false` state becomes the live site while the cloudflare-migration spec is authored.
-   - Option A — **Ship now** (Recommended, confidence 9/10): merge to `main`, let GH Pages redeploy, editorial/SEO improvements go live immediately. Backend code ships dark; cloudflare-migration spec starts next.
-   - Option B — Hold until cloudflare-migration spec is also ready: one ship moment for everything. Adds latency (~several hours AI-time) but means the subscribe form goes live in the same deploy.
-
-2. **Carrying MEDIUM/LOW findings to a follow-up branch vs fixing in this branch before /ship.**
-   17 MEDIUM + 11 LOW findings are in scope. None are CRITICAL or HIGH; all CRITICAL+HIGH were fixed in the review self-loop. The branch is merge-ready as-is.
-   - Option A — **Fix MEDIUM findings in a `fix/review-followup` branch after this branch ships** (Recommended, confidence 8/10): faster path to getting the editorial improvements live; finding list is tracked here for the follow-up author.
-   - Option B — Fix the higher-impact MEDIUMs (R-M3 re-subscribe flag, A-M5 cookie assertions, D-M4 theme-switch) in this branch before /ship: adds ~30 min; slightly cleaner test suite at merge.
-
-3. **Playwright E2E harness — create `feat/playwright-e2e-harness` now or defer to cloudflare-migration.**
-   11 `needs-automation` rows are currently untested at the browser level. The harness is needed before the subscribe form and account flows go live.
-   - Option A — Create the branch now, alongside this branch's PR: E2E exists at PR-merge time; CI catches regressions before BACKEND_LIVE flips.
-   - Option B — **Defer to cloudflare-migration** (Recommended, confidence 8/10): the dormant surfaces (subscribe form, sync-prompt, account) can't be fully tested until `wrangler dev` is wired into CI anyway. Less rework risk if the defer is explicitly tracked.
-
-4. **Beehiiv Post API on Launch tier — spike before cloudflare-migration or trust the spec's risk note.**
-   The spec (D4, Risk section) flags this: "spike a single Post API call against the free tier before relying on it." Beehiiv Launch tier may not support scheduled-post creation via API.
-   - Option A — **Spike now in a throwaway script against a personal Beehiiv dev account** (Recommended, confidence 9/10): 15-min test; if Launch doesn't support it, the cloudflare-migration spec can be scoped differently before implementation starts.
-   - Option B — Discover at cloudflare-migration implementation time: risk of needing to redesign the email pipeline step mid-spec.
-
-5. **Custom domain + logo + OG image — confirm before cloudflare-migration starts.**
-   Three open items in the spec: (a) domain choice, (b) logo/brand mark, (c) OG image strategy. None block this branch, but the cloudflare-migration spec cannot start until the domain is chosen (it drives DNS, Cloudflare Pages project name, Resend sending domain, and the feed's `<link rel="self">` URL).
-   - Confirm the domain before authoring the cloudflare-migration spec.
-   - Logo and OG image can follow post-cloudflare-migration (placeholder OG image ships today).
-
-6. **PR strategy — single PR or phased.**
-   This branch has 37 commits across a wide scope (backend, editorial, SEO, translations, worker, tests).
-   - Option A — **Single PR** (Recommended, confidence 8/10): everything merges together; BACKEND_LIVE=false ensures nothing breaks live. Simpler history.
-   - Option B — Phased PRs: PR-1 for editorial + SEO + feed (pure GH-Pages-live improvements), PR-2 for worker + D1 + dormant UI. More review-friendly split; adds merge overhead.
+1. **Ship now vs defer** — RESOLVED: **Defer** the merge of PR #2 until the cloudflare-migration spec is ready. Single observable moment instead of dormant ship.
+2. **Carry-forward findings here vs follow-up** — RESOLVED: **Apply all 25 in this branch.** Smart Rerun Package A landed 17 atomic commits addressing R-M1..R-M7, R-L1..R-L3, D-M1..D-M5, D-L1..D-L4, A-M1..A-M5, A-L1.
+3. **Playwright E2E timing** — RESOLVED: **Add Playwright now in this branch.** Smart Rerun Package B landed `@playwright/test`, `playwright.config.mjs`, `npm run e2e` script, and 22 real + 9 cloudflare-deferred tests under `tests/e2e/`. The harness immediately surfaced a real bug (fav-star click handler missing) that was fixed in a follow-up commit.
+4. **Beehiiv Post API spike** — MOVED TO SPEC TODO: spec T7 records the spike as required before cloudflare-migration starts.
+5. **Domain + logo + OG image** — MOVED TO SPEC TODO: spec T8 (domain) + T9 (logo, OG strategy).
+6. **PR strategy single vs phased** — RESOLVED: **Single PR** (PR #2 already open at https://github.com/rowland-dot/ai-daily-digest/pull/2).
 
 ---
 
-## Recommended next pipeline invocation
+## Smart Rerun results — 2026-05-17-rerun-1
 
-```
-Recommended next pipeline invocation:
-  /ship  (merge this branch + create PR)
-```
+Phase A — classified 6 outstanding decisions + 28 carry-forward findings into 5 buckets:
+  - pre-approvable-fix: 25
+  - automation-eligible: 1
+  - human-decision: 4
+  - feature-gap: 0
+  - outside-scope: 2
 
-After /ship:
-1. Author `fix/review-followup` branch to address MEDIUM findings (if Decision 2 Option A is chosen).
-2. Spike Beehiiv Post API on Launch tier (Decision 4).
-3. Confirm domain choice, then author `cloudflare-migration-and-vendor-onboarding-spec.md`.
-4. Create `feat/playwright-e2e-harness` before the cloudflare-migration spec merges (Decision 3).
+Phase B — gathered 4 user verdicts via single batched AskUserQuestion.
+
+Phase D landed three work packages:
+  - Package A: 17 atomic commits resolving 25 of 28 prior MEDIUM/LOW findings.
+  - Package B: Playwright harness + 22 real E2E tests + 9 cloudflare-deferred stubs.
+  - Package C: spec TODOs T7/T8/T9 for Beehiiv spike + domain + logo.
+
+Bug surfaced + fixed during rerun: fav-star buttons rendered without
+their localStorage click handler (Stage B authored markup, not JS).
+Fixed via `scripts/lib/fav-star-script.mjs` + render-site wiring.
+13 new vitest assertions; 4 prior-RED E2E tests now passing.
+
+Test counts: 339 vitest passing → 352 vitest passing (+13 fav-star JS);
+E2E: 10 passing + 17 skipped (sample-data gating or cloudflare-deferred) + 0 failed.
+
+---
+
+## Recommended next steps
+
+1. **Do NOT merge PR #2 yet.** The branch ships dormant-backend code
+   for cloudflare-migration to absorb. Land + verify cloudflare-migration
+   before this merges so users see backend-live UI as a single launch
+   event.
+2. Author the **cloudflare-migration-and-vendor-onboarding spec**
+   (see spec § Implementation phasing). T7 (Beehiiv spike), T8 (domain),
+   and T9 (logo + OG) are its prereqs.
+3. When ready to ship: `/ship` from this branch (after cloudflare-migration
+   merges to main). The Step 8 brief deliberately stops short of `/ship`.
 
 ---
 
@@ -291,11 +265,17 @@ After /ship:
   "schema_version": 1,
   "skill": "patch-brief",
   "step": 8,
-  "outstanding_decisions_count": 6,
-  "medium_findings_carried": 17,
-  "low_findings_carried": 11,
+  "smart_rerun_applied": "2026-05-17-rerun-1",
+  "outstanding_decisions_count": 0,
+  "medium_findings_carried": 0,
+  "low_findings_carried": 3,
+  "info_findings_carried": 1,
   "human_test_brief_items": 38,
-  "completeness": 9,
+  "vitest_passing": 352,
+  "e2e_passing": 10,
+  "e2e_skipped": 17,
+  "e2e_failed": 0,
+  "completeness": 10,
   "confidence": 9
 }
 -->
