@@ -4,11 +4,21 @@
  * Upserts subscriber (pending), inserts magic_link, sends email via Resend stub.
  */
 import { generateToken } from '../lib/auth';
-import { upsertSubscriber, insertMagicLink } from '../lib/db';
+import { upsertSubscriber, insertMagicLink, invalidatePriorMagicLinks } from '../lib/db';
 import type { EmailSender } from '../lib/email';
 import type { ApiError } from '../types';
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// RFC-subset: local@domain.tld — local ≥1 char, domain ≥1 label, TLD ≥2 chars.
+const EMAIL_RE = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*\.[a-zA-Z]{2,}$/;
+
+function escAttr(str: string): string {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
 
 function jsonErr(status: number, error: string, message: string): Response {
   return new Response(JSON.stringify({ error, message } satisfies ApiError), {
@@ -43,14 +53,17 @@ export async function handleSubscribe(
   // Upsert subscriber (preserve verified_at on re-subscribe)
   await upsertSubscriber(db, email, language);
 
+  // Invalidate any prior unconsumed subscribe links for this email to prevent replay
+  await invalidatePriorMagicLinks(db, email, 'subscribe');
+
   // Generate magic-link token (30-minute expiry)
   const token = generateToken();
   const expiresAt = new Date(Date.now() + 30 * 60 * 1000).toISOString();
   await insertMagicLink(db, token, email, 'subscribe', expiresAt);
 
   // Send email (no-ops if RESEND_API_KEY absent)
-  const verifyUrl = `${siteOrigin}/api/auth/verify?token=${token}`;
-  const html = `<p>Click <a href="${verifyUrl}">here</a> to confirm your subscription to AI Daily Digest.</p>`;
+  const verifyUrl = `${siteOrigin}/api/auth/verify?token=${encodeURIComponent(token)}`;
+  const html = `<p>Click <a href="${escAttr(verifyUrl)}">here</a> to confirm your subscription to AI Daily Digest.</p>`;
   await sendEmail(email, 'Confirm your AI Daily Digest subscription', html);
 
   return new Response(JSON.stringify({ ok: true }), {

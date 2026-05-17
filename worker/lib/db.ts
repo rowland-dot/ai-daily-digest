@@ -92,6 +92,23 @@ export async function deleteAllForEmail(db: D1Database, email: string): Promise<
   await db.prepare('DELETE FROM subscribers WHERE email = ?').bind(email).run();
 }
 
+/**
+ * Consume (invalidate) all prior unconsumed magic links for this email + purpose.
+ * Call before inserting a new link so stale links cannot be replayed on re-subscribe.
+ */
+export async function invalidatePriorMagicLinks(
+  db: D1Database,
+  email: string,
+  purpose: string,
+): Promise<void> {
+  await db
+    .prepare(
+      "UPDATE magic_links SET consumed_at = datetime('now') WHERE email = ? AND purpose = ? AND consumed_at IS NULL",
+    )
+    .bind(email, purpose)
+    .run();
+}
+
 export async function insertMagicLink(
   db: D1Database,
   token: string,
