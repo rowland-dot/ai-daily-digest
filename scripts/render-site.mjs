@@ -16,6 +16,7 @@ import { renderEditorialCutBox } from "./lib/editorial.mjs";
 import { renderFavouritesPage, SYNC_PROMPT_SCRIPT } from "./lib/favourites-page.mjs";
 import { renderAccountPage } from "./lib/account-page.mjs";
 import { renderSubscribeForm, SUBSCRIBE_FORM_SCRIPT } from "./lib/subscribe-form.mjs";
+import { FAV_STAR_SCRIPT } from "./lib/fav-star-script.mjs";
 import { renderTranslationPage, translationSlug } from "./lib/translations.mjs";
 import {
   renderSitemap,
@@ -2073,6 +2074,8 @@ async function renderPage({
   <script>${THEME_TOGGLE_SCRIPT}</script>
   <script>${LANG_SWITCH_SCRIPT}</script>
   <script>${AUDIO_PLAYER_SCRIPT}</script>
+  ${BACKEND_LIVE ? `<script>window.__BACKEND_LIVE__ = true;</script>` : ""}
+  <script>${FAV_STAR_SCRIPT}</script>
   ${BACKEND_LIVE ? `<script>${SUBSCRIBE_FORM_SCRIPT}</script>` : ""}
 
 </body>
