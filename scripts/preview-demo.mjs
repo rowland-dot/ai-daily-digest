@@ -40,6 +40,11 @@ await run("node", ["scripts/render-site.mjs"], {
   // model/product/industry/paper sections (which are where Editor's Cut
   // commentary boxes attach).
   LOOKBACK_HOURS: "720",
+  // Flip the feature flag ON so backend-dependent UI (subscribe form,
+  // /account page, sync-favourites prompt) renders. The backend API
+  // itself isn't running, so buttons that POST to /api/* will 404 —
+  // that's expected. Visual preview only.
+  BACKEND_LIVE: "true",
 });
 
 console.log("[preview:demo] step 3/3 — serve on http://localhost:8000");
