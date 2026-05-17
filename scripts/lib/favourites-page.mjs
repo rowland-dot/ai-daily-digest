@@ -252,6 +252,10 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
     <button data-lang="en" role="tab" aria-selected="true" aria-pressed="true">EN</button>
     <button data-lang="zh" role="tab" aria-selected="false" aria-pressed="false">中文</button>
   </div>
+  <div class="theme-switch" role="tablist" aria-label="Theme">
+    <button data-theme="linear" role="tab">Linear</button>
+    <button data-theme="claude" role="tab">Claude</button>
+  </div>
   <h1>★ Favourites</h1>
   <p class="date">${escHtml(subtitleCount)}</p>
 </header>
