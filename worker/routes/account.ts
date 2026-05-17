@@ -71,7 +71,14 @@ export async function handleAccount(
   }
 
   // POST /api/account/delete — GDPR delete
+  // CSRF protection: SameSite=Lax alone does not prevent top-level form POST
+  // cross-site attacks. A custom header check is the standard pairing.
+  // Callers must include: X-Requested-With: account-delete
   if (method === 'POST' && pathname === '/api/account/delete') {
+    const xRequestedWith = request.headers.get('X-Requested-With') ?? '';
+    if (xRequestedWith !== 'account-delete') {
+      return jsonErr(403, 'csrf_check_failed', 'X-Requested-With: account-delete header is required');
+    }
     await deleteAllForEmail(db, email);
     await unsubscribeFromBeehiiv(email, beehiivApiKey, beehiivPubId);
     // Clear session cookie

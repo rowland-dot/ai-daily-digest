@@ -129,10 +129,31 @@ describe('POST /api/account/delete', () => {
     expect(res.status).toBe(401);
   });
 
-  it('returns 200 and removes all subscriber data', async () => {
+  it('returns 403 when X-Requested-With header is missing (CSRF guard)', async () => {
+    // Authenticated but no CSRF header — simulates cross-site form POST
     const req = new Request('http://localhost/api/account/delete', {
       method: 'POST',
       headers: { Cookie: `session=${cookie}` },
+    });
+    const res = await handleAccount(req, db as any, SECRET, '', '');
+    expect(res.status).toBe(403);
+    const body = await res.json() as any;
+    expect(body.error).toBe('csrf_check_failed');
+  });
+
+  it('returns 403 when X-Requested-With has wrong value', async () => {
+    const req = new Request('http://localhost/api/account/delete', {
+      method: 'POST',
+      headers: { Cookie: `session=${cookie}`, 'X-Requested-With': 'XMLHttpRequest' },
+    });
+    const res = await handleAccount(req, db as any, SECRET, '', '');
+    expect(res.status).toBe(403);
+  });
+
+  it('returns 200 and removes all subscriber data', async () => {
+    const req = new Request('http://localhost/api/account/delete', {
+      method: 'POST',
+      headers: { Cookie: `session=${cookie}`, 'X-Requested-With': 'account-delete' },
     });
     const res = await handleAccount(req, db as any, SECRET, '', '');
     expect(res.status).toBe(200);
@@ -145,7 +166,7 @@ describe('POST /api/account/delete', () => {
   it('clears session cookie on delete', async () => {
     const req = new Request('http://localhost/api/account/delete', {
       method: 'POST',
-      headers: { Cookie: `session=${cookie}` },
+      headers: { Cookie: `session=${cookie}`, 'X-Requested-With': 'account-delete' },
     });
     const res = await handleAccount(req, db as any, SECRET, '', '');
     const setCookie = res.headers.get('Set-Cookie') ?? '';
