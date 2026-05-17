@@ -7,11 +7,14 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
     "preview": "node scripts/render-site.mjs && serve docs -l 8000",
     "preview:demo": "node scripts/preview-demo.mjs"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.41",
+    "@playwright/test": "^1.60.0",
     "@vitest/coverage-v8": "^2.1.0",
     "better-sqlite3": "^12.10.0",
     "serve": "^14.2.6",

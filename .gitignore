@@ -42,3 +42,8 @@ CLAUDE.md
 .claude/
 .gstack/
 .preview-data/
+
+# Playwright E2E artefacts (generated at test-run time)
+test-results/
+playwright-report/
+playwright/.cache/

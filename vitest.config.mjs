@@ -14,7 +14,7 @@ export default defineConfig({
       'tests/render/**/*.test.{js,mjs}',
       'tests/worker/**/*.test.{ts,mjs}',
     ],
-    exclude: ['node_modules/**', 'docs/**', 'data/**'],
+    exclude: ['node_modules/**', 'docs/**', 'data/**', 'tests/e2e/**'],
     environment: 'node',
     coverage: {
       provider: 'v8',
