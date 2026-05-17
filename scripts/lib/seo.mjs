@@ -101,7 +101,7 @@ export function renderItemListJsonLd(items, siteOrigin, date) {
 
 /**
  * renderNewsArticleJsonLd(article, siteOrigin) → <script type="application/ld+json"> tag
- * @param {object} article - { title, url, publishedAt, source, slug }
+ * @param {object} article - { title, url, publishedAt, source, slug, articleBody? }
  */
 export function renderNewsArticleJsonLd(article, siteOrigin) {
   const ld = {
@@ -113,6 +113,7 @@ export function renderNewsArticleJsonLd(article, siteOrigin) {
     publisher: { '@type': 'Organization', name: 'AI Daily Digest' },
     mainEntityOfPage: `${siteOrigin}/articles/${encodeURIComponent(article.slug)}/`,
     isBasedOn: { '@type': 'Article', url: article.url, inLanguage: 'zh' },
+    ...(article.articleBody != null ? { articleBody: article.articleBody } : {}),
   };
   return `<script type="application/ld+json">${JSON.stringify(ld)}</script>`;
 }

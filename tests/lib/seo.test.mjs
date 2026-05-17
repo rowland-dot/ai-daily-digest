@@ -100,6 +100,47 @@ describe('renderItemListJsonLd', () => {
   });
 });
 
+describe('renderNewsArticleJsonLd', () => {
+  const article = {
+    title: 'DeepSeek V4 Released',
+    url: 'https://aihot.com/deepseek-v4',
+    publishedAt: '2026-05-17T10:00:00Z',
+    source: 'AIHOT',
+    slug: 'aihot-deepseek-v4-a1b2c3d4',
+    articleBody: 'DeepSeek released V4 with improved reasoning.',
+  };
+
+  it('includes required B13 JSON-LD fields: headline, datePublished, mainEntityOfPage', () => {
+    const tag = renderNewsArticleJsonLd(article, 'https://example.com');
+    const match = tag.match(/<script[^>]*>([\s\S]*?)<\/script>/);
+    expect(match).not.toBeNull();
+    const obj = JSON.parse(match[1]);
+    expect(obj['@type']).toBe('NewsArticle');
+    expect(obj.headline).toBe('DeepSeek V4 Released');
+    expect(obj.datePublished).toBe('2026-05-17T10:00:00Z');
+    expect(obj.mainEntityOfPage).toContain('aihot-deepseek-v4-a1b2c3d4');
+  });
+
+  it('includes articleBody when provided', () => {
+    const tag = renderNewsArticleJsonLd(article, 'https://example.com');
+    const obj = JSON.parse(tag.match(/<script[^>]*>([\s\S]*?)<\/script>/)[1]);
+    expect(obj.articleBody).toBe('DeepSeek released V4 with improved reasoning.');
+  });
+
+  it('omits articleBody when not provided', () => {
+    const { articleBody: _ab, ...noBody } = article;
+    const tag = renderNewsArticleJsonLd(noBody, 'https://example.com');
+    const obj = JSON.parse(tag.match(/<script[^>]*>([\s\S]*?)<\/script>/)[1]);
+    expect(obj.articleBody).toBeUndefined();
+  });
+
+  it('includes isBasedOn pointing to the CN source URL', () => {
+    const tag = renderNewsArticleJsonLd(article, 'https://example.com');
+    const obj = JSON.parse(tag.match(/<script[^>]*>([\s\S]*?)<\/script>/)[1]);
+    expect(obj.isBasedOn).toMatchObject({ '@type': 'Article', url: 'https://aihot.com/deepseek-v4' });
+  });
+});
+
 describe('renderOgMeta', () => {
   it('includes og:title, og:type, og:image, twitter:card', () => {
     const meta = renderOgMeta({ title: 'Test', url: 'https://x.com/p', description: 'Desc', imageUrl: 'https://x.com/img.png' });
@@ -164,6 +205,15 @@ describe('renderAtomFeed', () => {
   it('summary does NOT contain editorial content — uses item count format', () => {
     const xml = renderAtomFeed(digests, 'https://example.com');
     expect(xml).toContain("Today's digest:");
+  });
+
+  it('Atom summary matches strict item-count format when counts are present (A-M2)', () => {
+    const SUMMARY_RE = /^Today's digest: \d+ articles from \d+ sources\.$/;
+    const xml = renderAtomFeed(digests, 'https://example.com');
+    const summaries = [...xml.matchAll(/<summary>([^<]+)<\/summary>/g)].map(m => m[1]);
+    for (const s of summaries) {
+      expect(s).toMatch(SUMMARY_RE);
+    }
   });
 
   it('caps at 30 entries', () => {
