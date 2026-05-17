@@ -26,6 +26,8 @@
  * The SYNC_PROMPT_SCRIPT export wires the interactive behaviour.
  */
 
+import { relTime } from './util.mjs';
+
 function escHtml(str) {
   return String(str ?? '')
     .replace(/&/g, '&amp;')
@@ -209,7 +211,7 @@ function renderArticleCards(articles) {
       ${a.summary ? `<p class="card-summary">${escHtml(a.summary)}</p>` : ''}
       <div class="card-meta">
         ${a.source ? `<span class="badge">${escHtml(a.source)}</span>` : ''}
-        ${a.savedAt ? `<span class="meta-time">saved ${escHtml(new Date(a.savedAt).toLocaleDateString())}</span>` : ''}
+        ${a.savedAt ? `<span class="meta-time">saved ${escHtml(relTime(a.savedAt))}</span>` : ''}
       </div>
     </article>`).join('\n')}
   </div>
