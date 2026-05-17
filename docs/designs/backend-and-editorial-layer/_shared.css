@@ -215,6 +215,12 @@ footer.site-footer a { color: var(--text-muted); }
   margin: 0 auto;
   text-align: left;
 }
+/* Modifier: bare form without card chrome — used in sync-prompt (mockup 14) */
+.subscribe-form--bare {
+  box-shadow: none;
+  padding: 0;
+  border: 0;
+}
 .subscribe-form label {
   font-size: 12px;
   font-weight: 600;
