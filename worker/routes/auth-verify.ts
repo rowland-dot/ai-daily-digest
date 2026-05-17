@@ -2,6 +2,11 @@
  * GET /api/auth/verify?token=<token>
  * Validates a magic-link token, marks it consumed, sets verified_at on subscriber,
  * issues an HMAC session cookie, and redirects by purpose.
+ *
+ * Security note: all token validation failures return the same opaque error
+ * code (invalid_or_expired / 400) regardless of whether the token was not
+ * found, consumed, or expired. Distinct codes would let an attacker enumerate
+ * token state via the error response.
  */
 import { signSession } from '../lib/auth';
 import { getMagicLink, consumeMagicLink, setVerified } from '../lib/db';
@@ -12,6 +17,11 @@ function jsonErr(status: number, error: string, message: string): Response {
     status,
     headers: { 'Content-Type': 'application/json' },
   });
+}
+
+/** Opaque error for any token validation failure — avoids leaking token state. */
+function tokenInvalid(): Response {
+  return jsonErr(400, 'invalid_or_expired', 'Magic link is invalid or has expired');
 }
 
 export async function handleAuthVerify(
@@ -28,16 +38,21 @@ export async function handleAuthVerify(
   }
 
   const link = await getMagicLink(db, token);
+  // not_found, consumed, and expired all collapse to the same opaque error
+  // to prevent timing-oracle enumeration of token existence / state.
   if (!link) {
-    return jsonErr(404, 'token_not_found', 'Magic link not found or already expired');
+    return tokenInvalid();
   }
 
   if (link.consumed_at) {
-    return jsonErr(400, 'token_consumed', 'This magic link has already been used');
+    // Server-side log retains granularity for debugging; response does not.
+    console.error(`auth-verify: token consumed attempt — email=${link.email}`);
+    return tokenInvalid();
   }
 
   if (new Date(link.expires_at) < new Date()) {
-    return jsonErr(400, 'token_expired', 'This magic link has expired');
+    console.error(`auth-verify: expired token attempt — email=${link.email}`);
+    return tokenInvalid();
   }
 
   // Consume the token and verify the subscriber

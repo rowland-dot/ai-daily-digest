@@ -88,7 +88,7 @@ describe('GET /api/auth/verify', () => {
     expect(res.headers.get('Location')).toContain('/favourites');
   });
 
-  it('returns 400 for expired token', async () => {
+  it('returns 400 with opaque error for expired token', async () => {
     const expiry = new Date(Date.now() - 1000).toISOString(); // already expired
     insertToken({ token: 'expired-token', email: 'verify@example.com', purpose: 'subscribe', expiresAt: expiry });
 
@@ -96,10 +96,11 @@ describe('GET /api/auth/verify', () => {
     const res = await handleAuthVerify(req, db as any, SECRET, 'https://example.com');
     expect(res.status).toBe(400);
     const body = await res.json() as any;
-    expect(body.error).toBe('token_expired');
+    // Must use the opaque code — no distinct 'token_expired' that reveals state
+    expect(body.error).toBe('invalid_or_expired');
   });
 
-  it('returns 400 for already-consumed token', async () => {
+  it('returns 400 with opaque error for already-consumed token', async () => {
     const expiry = new Date(Date.now() + 1800000).toISOString();
     insertToken({ token: 'consumed-token', email: 'verify@example.com', purpose: 'subscribe', expiresAt: expiry, consumedAt: new Date().toISOString() });
 
@@ -107,13 +108,18 @@ describe('GET /api/auth/verify', () => {
     const res = await handleAuthVerify(req, db as any, SECRET, 'https://example.com');
     expect(res.status).toBe(400);
     const body = await res.json() as any;
-    expect(body.error).toBe('token_consumed');
+    // Must use the opaque code — no distinct 'token_consumed' that reveals state
+    expect(body.error).toBe('invalid_or_expired');
   });
 
-  it('returns 404 for unknown token', async () => {
+  it('returns 400 with opaque error for unknown token (not 404)', async () => {
+    // 404 reveals that a token does not exist; attacker could distinguish
+    // not-found from consumed/expired. All three collapse to 400.
     const req = new Request('http://localhost/api/auth/verify?token=does-not-exist');
     const res = await handleAuthVerify(req, db as any, SECRET, 'https://example.com');
-    expect(res.status).toBe(404);
+    expect(res.status).toBe(400);
+    const body = await res.json() as any;
+    expect(body.error).toBe('invalid_or_expired');
   });
 
   it('returns 400 when token query param is missing', async () => {
