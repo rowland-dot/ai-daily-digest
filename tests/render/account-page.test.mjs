@@ -60,6 +60,20 @@ describe('renderAccountPage — BACKEND_LIVE=true, linked-active (mockup 17)', (
   });
 });
 
+describe('renderAccountPage — toast container (mockup 20, A-M3/A-M4)', () => {
+  const opts = { backendLive: true, auth: 'linked', newsletterState: 'subscribed', language: 'en' };
+
+  it('contains #toast-root container element in static HTML (A-M3)', () => {
+    const html = renderAccountPage(opts);
+    expect(html).toContain('id="toast-root"');
+  });
+
+  it('toast container has aria-live="polite" (A-M4)', () => {
+    const html = renderAccountPage(opts);
+    expect(html).toMatch(/id="toast-root"[^>]*aria-live="polite"|aria-live="polite"[^>]*id="toast-root"/);
+  });
+});
+
 describe('renderAccountPage — linked-unsubscribed (mockup 18)', () => {
   it('shows "Unsubscribed" status and resubscribe button', () => {
     const html = renderAccountPage({ backendLive: true, auth: 'linked', newsletterState: 'unsubscribed', language: 'en' });
