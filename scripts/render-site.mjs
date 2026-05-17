@@ -2433,6 +2433,7 @@ const favouritesHtml = injectFavouritesScripts(renderFavouritesPage({ backendLiv
 await writeFile(join(FAVOURITES_DIR, "index.html"), favouritesHtml, "utf8");
 
 // /account page — only written when BACKEND_LIVE=true (feature-flag gated)
+// TODO: linked-user shell — populated once /api/account returns session-cookie state
 const accountHtml = renderAccountPage({ backendLive: BACKEND_LIVE, siteOrigin: SITE_ORIGIN });
 if (accountHtml) {
   const ACCOUNT_DIR = join(SITE_DIR, "account");
