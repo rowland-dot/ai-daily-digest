@@ -243,7 +243,7 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>★ Favourites — AI Daily Digest</title>
 <link rel="canonical" href="${escHtml((siteOrigin || '') + '/favourites')}">
-<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="../feed.xml">
+<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="${escHtml((siteOrigin || '') + '/feed.xml')}">
 <!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->
 </head>
 <body>

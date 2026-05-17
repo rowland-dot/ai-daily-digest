@@ -56,6 +56,7 @@ export function renderAccountPage({
   newsletterState = 'subscribed',
   language = 'en',
   email = null,
+  siteOrigin = '',
 } = {}) {
   // Feature-flag gate — do not render when backend is off
   if (!backendLive) return null;
@@ -70,6 +71,8 @@ export function renderAccountPage({
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Account — AI Daily Digest</title>
+${siteOrigin ? `<link rel="canonical" href="${escHtml(siteOrigin + '/account')}">` : ''}
+<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="${escHtml((siteOrigin || '') + '/feed.xml')}">
 <!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->
 </head>
 <body>
