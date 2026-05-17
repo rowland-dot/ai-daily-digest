@@ -41,7 +41,10 @@ export async function unsubscribeFromBeehiiv(
     `https://api.beehiiv.com/v2/publications/${pubId}/subscriptions?email=${encodeURIComponent(email)}`,
     { headers: { Authorization: `Bearer ${apiKey}` } },
   );
-  if (!listRes.ok) return;
+  if (!listRes.ok) {
+    console.error(`[beehiiv] list lookup failed for ${email}: HTTP ${listRes.status}`);
+    throw new Error(`Beehiiv list lookup failed: ${listRes.status}`);
+  }
   const { data } = (await listRes.json()) as { data: Array<{ id: string }> };
   if (!data?.length) return;
   const subId = data[0].id;
@@ -70,7 +73,10 @@ export async function moveToLanguageSegment(
     `https://api.beehiiv.com/v2/publications/${pubId}/subscriptions?email=${encodeURIComponent(email)}`,
     { headers: { Authorization: `Bearer ${apiKey}` } },
   );
-  if (!listRes.ok) return;
+  if (!listRes.ok) {
+    console.error(`[beehiiv] list lookup failed for ${email}: HTTP ${listRes.status}`);
+    throw new Error(`Beehiiv list lookup failed: ${listRes.status}`);
+  }
   const { data } = (await listRes.json()) as { data: Array<{ id: string }> };
   if (!data?.length) return;
   const subId = data[0].id;
