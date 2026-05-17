@@ -9,6 +9,12 @@ import { makeEmailSender } from './lib/email';
 
 export default {
   async fetch(request: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
+    // Guard: SESSION_SECRET must be set — an empty/absent secret produces
+    // an HMAC key of zero entropy, making all session cookies forgeable.
+    if (!env.SESSION_SECRET) {
+      throw new Error('SESSION_SECRET environment variable is required but not set');
+    }
+
     const url = new URL(request.url);
     const { pathname } = url;
 
@@ -24,16 +30,16 @@ export default {
       return handleSubscribe(request, env.DB, sendEmail, siteOrigin);
     }
     if (pathname === '/api/auth/verify' && request.method === 'GET') {
-      return handleAuthVerify(request, env.DB, env.SESSION_SECRET ?? '', siteOrigin);
+      return handleAuthVerify(request, env.DB, env.SESSION_SECRET, siteOrigin);
     }
     if (pathname === '/api/sync-favourites' && request.method === 'POST') {
       return handleSyncFavourites(request, env.DB, sendEmail, siteOrigin);
     }
     if (pathname.startsWith('/api/favourites')) {
-      return handleFavourites(request, env.DB, env.SESSION_SECRET ?? '', siteOrigin);
+      return handleFavourites(request, env.DB, env.SESSION_SECRET, siteOrigin);
     }
     if (pathname.startsWith('/api/account')) {
-      return handleAccount(request, env.DB, env.SESSION_SECRET ?? '', env.BEEHIIV_API_KEY, env.BEEHIIV_PUB_ID);
+      return handleAccount(request, env.DB, env.SESSION_SECRET, env.BEEHIIV_API_KEY, env.BEEHIIV_PUB_ID);
     }
     if (pathname === '/api/webhooks/beehiiv' && request.method === 'POST') {
       return handleWebhook(request, env.DB, (env as any).BEEHIIV_WEBHOOK_SECRET);
