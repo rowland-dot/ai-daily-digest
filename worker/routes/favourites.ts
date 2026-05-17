@@ -73,14 +73,12 @@ export async function handleFavourites(
       return jsonErr(400, 'invalid_article_id', 'article_id must match pattern <source>-<8-hex-chars>');
     }
 
-    // Check if already exists (idempotent)
-    const existing = await getFavourites(db, email);
-    if (existing.includes(articleId)) {
-      return new Response(JSON.stringify({ ok: true }), { status: 200, headers });
-    }
-
-    await addFavourite(db, email, articleId);
-    return new Response(JSON.stringify({ ok: true }), { status: 201, headers });
+    // INSERT OR IGNORE — returns true if the row was new, false if already existed.
+    const inserted = await addFavourite(db, email, articleId);
+    return new Response(JSON.stringify({ ok: true }), {
+      status: inserted ? 201 : 200,
+      headers,
+    });
   }
 
   // DELETE /api/favourites/:article_id

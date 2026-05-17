@@ -63,7 +63,7 @@ export async function getSubscriber(
 
 export async function setVerified(db: D1Database, email: string): Promise<void> {
   await db
-    .prepare("UPDATE subscribers SET verified_at = datetime('now') WHERE email = ?")
+    .prepare("UPDATE subscribers SET verified_at = datetime('now'), unsubscribed_at = NULL WHERE email = ?")
     .bind(email)
     .run();
 }
@@ -147,13 +147,15 @@ export async function addFavourite(
   db: D1Database,
   email: string,
   articleId: string,
-): Promise<void> {
-  await db
+): Promise<boolean> {
+  const result = await db
     .prepare(
       'INSERT OR IGNORE INTO favourites (email, article_id) VALUES (?, ?)',
     )
     .bind(email, articleId)
     .run();
+  // Returns true if a new row was inserted (changes === 1), false if already existed.
+  return (result.meta?.changes ?? 0) > 0;
 }
 
 export async function removeFavourite(
