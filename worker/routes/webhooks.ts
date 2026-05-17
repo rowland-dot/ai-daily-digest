@@ -2,7 +2,7 @@
  * POST /api/webhooks/beehiiv
  * Verifies Beehiiv HMAC-SHA256 signature (header: X-Beehiiv-Signature).
  * Handles subscriber.unsubscribed event → sets unsubscribed_at in D1.
- * When BEEHIIV_WEBHOOK_SECRET is absent, skips verification (local/test safety).
+ * When BEEHIIV_WEBHOOK_SECRET is absent, returns 503 — never fails open.
  */
 import { setUnsubscribed } from '../lib/db';
 import type { ApiError } from '../types';
@@ -57,16 +57,21 @@ export async function handleWebhook(
 ): Promise<Response> {
   const rawBody = await request.text();
 
-  // Verify HMAC signature when secret is configured
-  if (webhookSecret) {
-    const signature = request.headers.get('X-Beehiiv-Signature') ?? '';
-    if (!signature) {
-      return jsonErr(401, 'missing_signature', 'X-Beehiiv-Signature header required');
-    }
-    const valid = await verifySignature(rawBody, signature, webhookSecret);
-    if (!valid) {
-      return jsonErr(401, 'invalid_signature', 'Signature verification failed');
-    }
+  // Signature verification is mandatory — never skip it.
+  // If the secret is unconfigured, return 503 rather than accepting the webhook.
+  // This ensures a misconfigured deployment fails loudly rather than silently
+  // accepting forged events.
+  if (!webhookSecret) {
+    return jsonErr(503, 'webhook_not_configured', 'BEEHIIV_WEBHOOK_SECRET is not configured');
+  }
+
+  const signature = request.headers.get('X-Beehiiv-Signature') ?? '';
+  if (!signature) {
+    return jsonErr(401, 'missing_signature', 'X-Beehiiv-Signature header required');
+  }
+  const valid = await verifySignature(rawBody, signature, webhookSecret);
+  if (!valid) {
+    return jsonErr(401, 'invalid_signature', 'Signature verification failed');
   }
 
   let event: { type: string; data: Record<string, unknown> };

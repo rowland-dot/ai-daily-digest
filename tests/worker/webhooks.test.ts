@@ -106,15 +106,17 @@ describe('POST /api/webhooks/beehiiv', () => {
     expect(res.status).toBe(200);
   });
 
-  it('no-ops signature check when secret is absent (test environment)', async () => {
+  it('returns 503 when secret is absent (never fails open)', async () => {
     const payload = JSON.stringify({ type: 'subscriber.unsubscribed', data: { email: 'webhook@example.com' } });
     const req = new Request('http://localhost/api/webhooks/beehiiv', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: payload,
     });
-    // Pass undefined secret — should skip signature verification
+    // Absent secret must return 503 — not silently accept the webhook
     const res = await handleWebhook(req, db as any, undefined);
-    expect(res.status).toBe(200);
+    expect(res.status).toBe(503);
+    const body = await res.json() as any;
+    expect(body.error).toBe('webhook_not_configured');
   });
 });
