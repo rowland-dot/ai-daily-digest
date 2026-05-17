@@ -201,8 +201,14 @@ function ghTrendingSection(repos) {
   if (!repos.length) return ``;
   return `<div class="cards">${repos
     .map(
-      (r, idx) => `
-    <article class="card gh-card" id="article-trending-${idx}">
+      (r, idx) => {
+        const aid = r.article_id || (r.url ? articleId("gh", r.url) : "");
+        const favStar = aid
+          ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+          : "";
+        return `
+    <article class="card gh-card" id="article-trending-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <h3 class="card-title">
         <a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">
           <span class="gh-owner">${escapeHtml(r.owner || "")}</span>
@@ -217,7 +223,8 @@ function ghTrendingSection(repos) {
         ${r.starsToday ? `<span class="stat-today">+${r.starsToday.toLocaleString()} today</span>` : ""}
       </div>
     </article>
-  `,
+  `;
+      },
     )
     .join("")}</div>`;
 }
@@ -232,8 +239,15 @@ function hfSection(models) {
   if (!models.length) return ``;
   return `<div class="cards">${models
     .map(
-      (m, idx) => `
-    <article class="card hf-card" id="article-hf-${idx}">
+      (m, idx) => {
+        const hfUrl = m.url || (m.id ? `https://huggingface.co/${m.id}` : "");
+        const aid = m.article_id || (hfUrl ? articleId("hf", hfUrl) : "");
+        const favStar = aid
+          ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+          : "";
+        return `
+    <article class="card hf-card" id="article-hf-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <h3 class="card-title"><a href="https://huggingface.co/${escapeHtml(m.id || "")}" target="_blank" rel="noopener">${escapeHtml(m.id || "")}</a></h3>
       <div class="hf-stats">
         <span class="stat">♥ ${m.likes ?? 0}</span>
@@ -242,7 +256,8 @@ function hfSection(models) {
       </div>
       ${m.tags?.length ? `<div class="hf-tags">${m.tags.slice(0, 5).map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>` : ""}
     </article>
-  `,
+  `;
+      },
     )
     .join("")}</div>`;
 }
@@ -256,8 +271,14 @@ function labBlogSection(items) {
         // Jina-extracted essence) over .description (OpenAI RSS blurb,
         // usually short and less informative).
         const blurb = it.summary || it.description || "";
+        const itemUrl = it.url || it.link || "";
+        const aid = it.article_id || (itemUrl ? articleId("labs", itemUrl) : "");
+        const favStar = aid
+          ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+          : "";
         return `
-    <article class="card" id="article-labs-${idx}">
+    <article class="card" id="article-labs-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <h3 class="card-title"><a href="${escapeHtml(it.link)}" target="_blank" rel="noopener"${txAttrs(it.title)}>${escapeHtml(it.title)}</a></h3>
       ${blurb ? `<p class="card-summary"${txAttrs(blurb)}>${escapeHtml(blurb)}</p>` : ""}
       <div class="card-meta">
@@ -275,8 +296,15 @@ function builderWritingSection(entries) {
   if (!entries.length) return ``;
   return `<ul class="writing-list">${entries
     .map(
-      (e, idx) => `
-    <li class="writing-item" id="article-writing-${idx}">
+      (e, idx) => {
+        const entryUrl = e.url || e.link || "";
+        const aid = e.article_id || (entryUrl ? articleId("builder", entryUrl) : "");
+        const favStar = aid
+          ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+          : "";
+        return `
+    <li class="writing-item" id="article-writing-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <a class="writing-title" href="${escapeHtml(e.link)}" target="_blank" rel="noopener"${txAttrs(e.title)}>${escapeHtml(e.title)}</a>
       ${e.summary ? `<p class="writing-summary"${txAttrs(e.summary)}>${escapeHtml(e.summary)}</p>` : ""}
       <div class="writing-meta">
@@ -284,7 +312,8 @@ function builderWritingSection(entries) {
         ${e.updated ? `<span title="${escapeHtml(e.updated)}">· ${escapeHtml(relTime(e.updated))}</span>` : ""}
       </div>
     </li>
-  `,
+  `;
+      },
     )
     .join("")}</ul>`;
 }
@@ -293,8 +322,15 @@ function localLlamaSection(posts) {
   if (!posts.length) return ``;
   return `<ul class="writing-list">${posts
     .map(
-      (p, idx) => `
-    <li class="writing-item" id="article-llama-${idx}">
+      (p, idx) => {
+        const postUrl = p.url || p.permalink || "";
+        const aid = p.article_id || (postUrl ? articleId("llama", postUrl) : "");
+        const favStar = aid
+          ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+          : "";
+        return `
+    <li class="writing-item" id="article-llama-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <a class="writing-title" href="${escapeHtml(p.permalink)}" target="_blank" rel="noopener"${txAttrs(p.title)}>${escapeHtml(p.title || "(untitled)")}</a>
       ${p.summary ? `<p class="writing-summary"${txAttrs(p.summary)}>${escapeHtml(p.summary)}</p>` : ""}
       <div class="writing-meta">
@@ -304,7 +340,8 @@ function localLlamaSection(posts) {
         ${p.updated ? `<span title="${escapeHtml(p.updated)}">· ${escapeHtml(relTime(p.updated))}</span>` : ""}
       </div>
     </li>
-  `,
+  `;
+      },
     )
     .join("")}</ul>`;
 }
@@ -313,8 +350,13 @@ function followBuildersSection(xItems, podItems, blogItems) {
   const renderTweet = (t, idx) => {
     const fullText = t.text || "";
     const text = fullText.slice(0, 240) + (fullText.length > 240 ? "…" : "");
+    const aid = t.article_id || (t.url ? articleId("follow", t.url) : "");
+    const favStar = aid
+      ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+      : "";
     return `
-      <li class="builder-item" id="article-builders-x-${idx}">
+      <li class="builder-item" id="article-builders-x-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+        ${favStar}
         <div class="builder-meta-top">
           <strong>${escapeHtml(t.author || "")}</strong>
           ${t.handle ? `<span class="muted">@${escapeHtml(t.handle)}</span>` : ""}
@@ -329,8 +371,14 @@ function followBuildersSection(xItems, podItems, blogItems) {
     `;
   };
 
-  const renderPostOrEpisode = (item, kind, idx) => `
-    <li class="builder-item" id="article-builders-${kind === "podcast" ? "pod" : "blog"}-${idx}">
+  const renderPostOrEpisode = (item, kind, idx) => {
+    const aid = item.article_id || (item.url ? articleId("follow", item.url) : "");
+    const favStar = aid
+      ? `<button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="${escapeHtml(aid)}">☆</button>`
+      : "";
+    return `
+    <li class="builder-item" id="article-builders-${kind === "podcast" ? "pod" : "blog"}-${idx}"${aid ? ` data-article-id="${escapeHtml(aid)}"` : ""}>
+      ${favStar}
       <a class="builder-title" href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener"${txAttrs(item.title || "")}>${escapeHtml(item.title || "(untitled)")}</a>
       <div class="builder-meta">
         ${item.name ? `<span>${escapeHtml(item.name)}</span>` : ""}
@@ -339,6 +387,7 @@ function followBuildersSection(xItems, podItems, blogItems) {
       </div>
     </li>
   `;
+  };
 
   const part = (label, html) =>
     html
