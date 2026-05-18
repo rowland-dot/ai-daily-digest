@@ -1,88 +1,30 @@
 {
-  "date": "2026-05-17",
-  "generatedAt": "2026-05-17T00:00:00.333Z",
-  "windowStart": "2026-05-16T00:00:00.000Z",
-  "windowEnd": "2026-05-17T00:00:00.000Z",
+  "date": "2026-05-18",
+  "generatedAt": "2026-05-18T00:00:00.933Z",
+  "windowStart": "2026-05-17T00:00:00.000Z",
+  "windowEnd": "2026-05-18T00:00:00.000Z",
   "lead": null,
   "sections": [
-    {
-      "label": "模型发布/更新",
-      "items": [
-        {
-          "title": "社区协作再创佳绩，vLLM支持万亿级模型",
-          "summary": "又一次Day0协作，又一次社区胜利。感谢@vllm_project团队始终可靠的支持~ 🫡🫡",
-          "sourceUrl": "https://x.com/AntLingAGI/status/2055689329339760829",
-          "sourceName": "X：蚂蚁百灵 (@AntLingAGI)"
-        },
-        {
-          "title": "SANA-WM：一个用于生成1分钟720p视频的26亿级开源世界模型",
-          "summary": "NVIDIA研究团队发布了SANA-WM，这是一个参数规模达26亿的开源世界模型，专门用于生成长达1分钟、分辨率为720p的视频。该模型已在GitHub页面开源，旨在推动高质量长视频生成的研发。其在Hacker News社区获得了107点热度，显示出业界对该技术进展的关注。",
-          "sourceUrl": "https://nvlabs.github.io/Sana/WM",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-        },
-        {
-          "title": "Ring-2.6-1T开源并上线OpenRouter，专为智能体工作流设计",
-          "summary": "Ring-2.6-1T模型现已开源，并上线OpenRouter平台，5月底前享有75%折扣。该模型由AntLingAGI开发，是一个为现实世界智能体构建的万亿级推理模型，其核心设计目标不仅是回答问题，更是执行任务。它专注于规划步骤、使用工具、维持上下文和完成复杂工作流，具备强大的智能体执行能力和高推理模式，并采用了Async RL与IcePop训练方法。",
-          "sourceUrl": "https://x.com/AntLingAGI/status/2055681163033997815",
-          "sourceName": "X：蚂蚁百灵 (@AntLingAGI)"
-        }
-      ]
-    },
     {
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Codex新增键盘快捷键自定义功能",
-          "summary": "不知为何我们选择周六发布更新，但Codex确实迎来了一系列优化。 这些改进让使用体验愉悦许多，实在不该拖到周二再公布。 键盘快捷键现已支持自定义。 根据实际工作方式配置Codex，通过设置调整快捷键，不必再迁就默认设定。",
-          "sourceUrl": "https://x.com/thsottiaux/status/2055735802894954612",
-          "sourceName": "X：Tibo (@thsottiaux)"
+          "title": "Grok Imagine图像生成功能正式发布",
+          "summary": "Grok Imagine 现已正式发布 所有人都可使用 基于我们最新的文本到图像模型 能够生成逼真、高质量的图像 支持多种宽高比 现在可在 X 上使用",
+          "sourceUrl": "https://x.com/elonmusk/status/2055912040481599793",
+          "sourceName": "X：Elon Musk (@elonmusk, xAI)"
         },
         {
-          "title": "Notion推出开发者平台及CLI工具",
-          "summary": "Notion正式推出开发者平台，核心组件包括Notion CLI终端工具、Workers计算服务、数据库同步功能以及多种Agent工具与API。平台旨在让开发者更便捷地在Notion基础设施上运行代码、连接外部数据源并构建自动化工作流。未来，即使非开发者也能通过AI Agent在Notion上构建应用。",
-          "sourceUrl": "https://x.com/oran_ge/status/2055539910212460878",
-          "sourceName": "X：Oran Ge (@oran_ge)"
+          "title": "手机端ChatGPT应用集成Codex构建功能",
+          "summary": "你可以在手机端通过ChatGPT应用中的Codex直接构建项目",
+          "sourceUrl": "https://x.com/gdb/status/2055882172884763012",
+          "sourceName": "X：Greg Brockman (@gdb)"
         },
         {
-          "title": "按需定制快捷键，优化工作流效率",
-          "summary": "处理大家的反馈让我们感到太有趣了。 （请继续反馈。） 键盘快捷键现已支持自定义。 围绕你的实际工作方式设置 Codex，然后通过设置调整快捷键，无需再适应我们的默认配置。",
-          "sourceUrl": "https://x.com/OpenAIDevs/status/2055717793841221796",
-          "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
-        }
-      ]
-    },
-    {
-      "label": "行业动态",
-      "items": [
-        {
-          "title": "美国开始出现人工智能相关岗位的大规模裁员",
-          "summary": "美国人工智能相关岗位正出现大规模裁员。根据彭博社报道，受AI影响的职位开始经历严重的就业岗位流失。这一趋势表明AI技术对劳动力市场的冲击已从理论讨论进入现实阶段，具体裁员数字和涉及的行业领域在进一步显现中。",
-          "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
+          "title": "Zerostack——一款采用纯Rust语言编写、受Unix启发的编程代理",
+          "summary": "Zerostack是一款采用纯Rust语言编写、受Unix哲学启发的编程代理工具，已正式发布1.0.0版本并在Rust包管理平台crates.io上提供。该发布在技术社区Hacker News上获得115点关注，反映出开发者对其的高度兴趣。Rust语言以内存安全和性能见称，Unix设计强调简洁与模块化，Zerostack结合两者优势，旨在提升编程效率，为代码辅助领域带来新选择。",
+          "sourceUrl": "https://crates.io/crates/zerostack/1.0.0",
           "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-        },
-        {
-          "title": "研究人员利用Anthropic Mythos工具构建macOS内核漏洞，绕过苹果M5芯片内存完整性执行安全系统",
-          "summary": "三名研究人员借助Anthropic的Mythos工具，成功开发出一个可绕过苹果M5芯片内存完整性执行（MIE）安全机制的macOS内核漏洞利用程序。MIE是苹果耗时五年、投入巨资为M5和A19芯片打造的旗舰安全功能，旨在彻底消除内存损坏漏洞。研究团队于4月25日发现漏洞，5月1日即完成开发，并亲自前往苹果园区提交报告。该攻击采用纯数据攻击方式，无需操纵指针，仅通过非特权用户的标准系统调用即可获取根权限。完整技术报告将在苹果发布补丁后公开。",
-          "sourceUrl": "https://x.com/kimmonismus/status/2055571960260645125",
-          "sourceName": "X：Kim (@kimmonismus)"
-        },
-        {
-          "title": "突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅",
-          "summary": "OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦“智能体时代”，并秘密开发集成多项功能的“超级应用”桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。",
-          "sourceUrl": "https://www.ithome.com/0/951/258.htm",
-          "sourceName": "IT之家（RSS）"
-        },
-        {
-          "title": "杭州基地启用，机器人有了国家级职业技能训练场",
-          "summary": "国家人工智能应用中试基地（具身智能）5月16日在浙江杭州挂牌启用，为机器人提供国家级职业技能训练场。该基地是集场景体验、技术展示、研发合作、产业赋能于一体的综合性平台，旨在推动具身智能技术从实验室迈向现实应用。杭州市于5月1日施行首部具身智能机器人地方性法规，支持核心研发、平台建设和场景开放。目前杭州已集聚机器人产业相关企业700余家，2025年具身智能产业集群产值达1068亿元。",
-          "sourceUrl": "https://www.ithome.com/0/951/390.htm",
-          "sourceName": "IT之家（RSS）"
-        },
-        {
-          "title": "OpenAI 与马耳他合作，向所有公民提供 ChatGPT Plus",
-          "summary": "OpenAI 与马耳他政府达成合作，将向该国所有公民免费提供 ChatGPT Plus 订阅服务。此次合作旨在扩大人工智能技术的普及范围，并包含面向公民的 AI 技能实践培训，以帮助民众负责任地使用 AI。该计划是国家级大规模推广 ChatGPT Plus 的首例，预计将提升马耳他全民的 AI 素养与应用能力。",
-          "sourceUrl": "https://openai.com/index/malta-chatgpt-plus-partnership",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
         }
       ]
     },
@@ -90,10 +32,16 @@
       "label": "论文研究",
       "items": [
         {
-          "title": "智能体驱动系统Articraft实现3D资产生成自动化，开源万件数据集降低门槛",
-          "summary": "剑桥大学团队推出Articraft，这是一个由智能体驱动的编码系统，能全自动生成带关节、可运动的交互式3D资产。系统通过AI智能体自主编写代码、执行并接收物理反馈迭代优化，将以往需数日甚至数周的创作过程极大简化。团队同时开源了Articraft-10K数据集，包含超1万个物体，覆盖250个类别，所有资产均仿真就绪。此举显著降低了机器人训练和物理AI领域对高质量3D资产的数据门槛，为解决“数据饥渴”问题提供了高效的自动化方案。",
-          "sourceUrl": "https://x.com/berryxia/status/2055444087684407505",
+          "title": "Anthropic Claude 5天攻破Apple M5 macOS内核漏洞：5年数十亿防线，被AI一举击穿",
+          "summary": "Anthropic的Claude Mythos Preview在5天内，协助安全团队Calif成功构建并演示了首个公开的、针对Apple M5芯片macOS内核的内存破坏提权利用链。该攻击绕过了苹果耗时5年、投入数十亿美元打造的MIE硬件级内存完整性防护，从普通用户权限通过纯数据操作即可获得root权限。苹果已在后续更新中修复漏洞并致谢。此事件标志着AI驱动的安全研究能力已能极速突破顶尖硬件防护，显著改变了攻防的速度与平衡。",
+          "sourceUrl": "https://x.com/berryxia/status/2056043674446995887",
           "sourceName": "X：Berry Xia (@berryxia)"
+        },
+        {
+          "title": "研究揭示LLM智能体记忆重写机制损害可靠性",
+          "summary": "伊利诺伊大学与清华大学等机构的研究发现，LLM智能体虽能从经验中学习，但其通过LLM将原始经历压缩成书面教训的记忆重写机制会损害记忆可靠性。在网页购物、模拟世界及ARC风格谜题等任务测试中，反复重写记忆会导致错误分组、规则过度泛化或过拟合，使智能体遗忘细节或混淆任务类型。例如，GPT-4在无记忆时可100%解决小型ARC-AGI问题集，而建立记忆并流式更新后，性能降至约54%。研究主张智能体记忆系统应重视原始经历作为关键证据，而非自动将所有经验重写为摘要，保留原始证据并选择性摘要效果更佳。",
+          "sourceUrl": "https://x.com/rohanpaul_ai/status/2055919204591902771",
+          "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
         }
       ]
     },
@@ -101,52 +49,46 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "藏师傅PPT Skills更新，AI自动美化截图",
-          "summary": "藏师傅PPT Skills产品更新，新增截图美化功能。该功能无需消耗GPT-Image 2.0资源，即可根据用户截图的大小、长宽比以及当前PPT的模板类型和颜色主题，自动匹配合适的背景图，实现类似CleanShot X等专业软件的截图美化效果。AI还能处理过长等有问题的图片，例如将其自动裁剪并排成两列展示。",
-          "sourceUrl": "https://x.com/op7418/status/2055477163579891897",
+          "title": "开源微信读书数据可视化工具yao-weread-skill发布",
+          "summary": "开发者姚老师开源了微信读书Skill——yao-weread-skill。该工具能将用户的微信读书数据生成本地可视化报告，核心功能包括分析近两年的阅读时长与节律、书架书籍构成、阅读分类与作者偏好，并对笔记和想法进行语义分析。报告最终通过词云、热力图、雷达图等26种图表形式呈现，所有代码已在GitHub公开。",
+          "sourceUrl": "https://x.com/vista8/status/2056050473392902430",
+          "sourceName": "X：Vista (@vista8)"
+        },
+        {
+          "title": "Anthropic CEO预言软件免费化与职业结构巨变",
+          "summary": "Anthropic CEO Dario Amodei在《华尔街日报》YouTube频道采访中表示，软件成本将急剧下降，可能基本免费，传统软件需百万用户分摊成本的前提将不再成立。同时，数十年来建立的许多工作和职业可能消失。Amodei认为社会能够应对并适应这种变化，但他警告人们目前完全未意识到即将到来的变革及其巨大规模。",
+          "sourceUrl": "https://x.com/rohanpaul_ai/status/2055841486714147177",
+          "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
+        },
+        {
+          "title": "微软AI CEO预测18个月内AI自动化所有白领工作",
+          "summary": "微软AI CEO Mustafa Suleyman预测，AI将在18个月内实现人类水平的性能，自动化大多数专业任务，包括会计、法律、营销和项目管理。他在Fortune采访中指出，所有涉及“坐在电脑前”的白领工作都将被AI完全取代。Suleyman透露自己的使命是构建“超级智能”，并展望未来创建新AI模型将像制作播客或写博客一样便捷。",
+          "sourceUrl": "https://x.com/kimmonismus/status/2055952702908355012",
+          "sourceName": "X：Kim (@kimmonismus)"
+        },
+        {
+          "title": "让 Codex 自己做了一条视频介绍了一下这个视频生成方案",
+          "summary": "该方案整合了藏师傅的PPT Skill（视觉与动效）、HyperFrames（时间线与渲染）、Listenhub Skill（配音）以及即梦CLI（补充片段）。核心在于，用户可通过Codex直接基于文本提示生成带动效的解释视频，并能在聊天界面内预览，极大提升了制作效率，特别适合产品介绍等视频内容。",
+          "sourceUrl": "https://x.com/op7418/status/2056021133477163298",
           "sourceName": "X：歸藏 (@op7418)"
         },
         {
-          "title": "MagicPath与Codex深度整合，设计开发流程合二为一",
-          "summary": "MagicPath AI CEO @skirano 演示了其产品与Codex的深度整合。用户现可将MagicPath作为原生画布直接在Codex中运行，通过拖拽设计UI，Codex能实时感知项目并自动生成、编辑代码，实现设计与开发的无缝衔接，无需在Figma和IDE间切换。安装简便，只需在Codex中粘贴一条命令即可完成配置。此举将“设计-开发-迭代”流程整合于单一窗口，显著缩短了从创意到可运行应用的距离。",
-          "sourceUrl": "https://x.com/berryxia/status/2055766210512560416",
+          "title": "Garry Tan发布的GBrain直接捅破个人AI天花板",
+          "summary": "Garry Tan开源的GBrain是一个知识系统，而非简单的RAG工具。它通过8层结构解决AI Agent的记忆缺陷：前4层升级基础检索，后4层实现终身记忆和自我进化，使如OpenClaw、Hermes等Agent能持续追踪用户的人际关系、决策轨迹和认知演化。该系统已在生产环境中处理大量数据，用户可通过安装链接或命令行快速集成，并以Markdown为最高优先级数据源，推动个人AI成为可能。",
+          "sourceUrl": "https://x.com/AYi_AInotes/status/2055954675526934642",
+          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)"
+        },
+        {
+          "title": "微信读书Skill安装与使用指南",
+          "summary": "❤️ [引用 @vista8]：微信读书Cli安装和配置教程。 1. 官方指令，复制发给Codex或Claude Code 下载 https://cdn.weread.qq.com/skills/weread-skills.zip 安装 skill 2. 或者用 X 上网友 @eviljer 做的优化版Skill npx skills add jerlinn/jerlin-weread 3. 如果需要API key，访问微信官方这个页面获取 https://weread.qq.com/r/weread-skills 4. 使用案例 直接跟AI说：“调用微信读书skill 查看被讨厌勇气的高亮划线”",
+          "sourceUrl": "https://x.com/berryxia/status/2055865005271314528",
           "sourceName": "X：Berry Xia (@berryxia)"
         },
         {
-          "title": "Codex实现多设备远程控制与上下文共享",
-          "summary": "Codex除了通过ChatGPT连接和远程控制外，还能控制另一台电脑，实现在ChatGPT上直接管理多台设备而无需切换，只需切换项目即可访问不同设备的上下文和文件。引用推文补充，此功能还支持通过远程SSH设置其他VMs等，增强了多设备协作的灵活性和实用性。",
-          "sourceUrl": "https://x.com/op7418/status/2055561525633642762",
-          "sourceName": "X：歸藏 (@op7418)"
-        },
-        {
-          "title": "Show HN: 烧吧，宝贝，烧吧（那些代币）",
-          "summary": "开发者发布了一个名为“烧吧，宝贝，烧吧”的开源项目，旨在通过销毁代币来应对加密货币领域的通胀问题。该项目提供了一个工具，允许用户主动销毁自己持有的代币，从而减少总供应量。此举可能提升剩余代币的稀缺性与潜在价值。项目已在GitHub上开源，并在Hacker News上获得了100点的社区热度。",
-          "sourceUrl": "https://github.com/dtnewman/burn-baby-burn",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-        },
-        {
-          "title": "Anthropic《Founder's Playbook》：AI提高创业失败率的警示",
-          "summary": "Anthropic发布内部手册《Founder's Playbook》，核心观点是AI（如Claude Code）将提高创业失败率，而非降低。手册指出，AI能快速生成原型，易使创始人混淆“能运行”与“有市场需求”，并通过确认偏误和研究引擎强化错误想法。它将创业分为Idea、MVP、Launch、Scale四阶段，剖析AI放大的风险：如原型不等于验证、Agentic技术债、创始人成为决策瓶颈等。最终结论是，AI极大降低执行成本，使得判断力成为最稀缺资源，真正护城河在于将垂直领域知识结构化沉淀为专属Skills。",
-          "sourceUrl": "https://x.com/berryxia/status/2055635826462130227",
-          "sourceName": "X：Berry Xia (@berryxia)"
-        },
-        {
-          "title": "工具使用代理认知与行动脱节机制研究",
-          "summary": "该可解释性论文聚焦工具使用代理，通过探测隐藏状态发现模型常能识别应调用工具，但实际调用失败，不匹配率达26%-54%。问题完全集中于认知到行动的过渡阶段，而非认知本身。内部探测方向可解码，但后期层的最后令牌机制使信号旋转，几乎与产生的行动正交。研究旨在预测干预措施效果，指出常见归因如提示或训练不足可能忽略后期层几何结构，这为工具使用提示A/B测试中的性能上限提供了合理解释。",
-          "sourceUrl": "https://x.com/omarsar0/status/2055750162526715926",
-          "sourceName": "X：Elvis Saravia (@omarsar0, DAIR.AI)"
-        },
-        {
-          "title": "Eric Jang分享从零构建AlphaGo的经历与见解",
-          "summary": "Eric Jang在过去几个月从零开始实现AlphaGo，这是2016年激发他进入深度学习的AI突破。他最初理解AlphaGo为“通过自我对弈训练的搜索增强深度神经网络”，但通过亲手构建获得了更深层次的理解。他指出，前沿深度学习研究虽昂贵，但特定能力的实现成本下降迅速；在2026年，训练强大围棋AI仅需几千美元租赁算力，无需DeepMind级别的资源。他荣幸受邀在播客中分享这一过程，并提供了详细教程和代码，同时谦虚自称围棋与AlphaGo学徒，对任何事实错误负责。",
-          "sourceUrl": "https://x.com/pmarca/status/2055723987850690927",
-          "sourceName": "X：Marc Andreessen (@pmarca, a16z)"
-        },
-        {
-          "title": "最新开源成果（#21）：开源模型盛宴！Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5、GLM-5.1 等。基于CAISI的V4评估。",
-          "summary": "本月开源AI模型领域迎来密集发布，包括Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5和GLM-5.1等一系列重要新版本。这些模型均在CAISI的V4评估框架下进行了性能评测。多个团队几乎同期推出旗舰级更新，反映出开源社区当前高速迭代的竞争态势。",
-          "sourceUrl": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
-          "sourceName": "Nathan Lambert：Interconnects（RSS）"
+          "title": "生成式AI的幻觉、超大规模投入的狂热与世界模型及神经符号AI的路径",
+          "summary": "近期访谈指出，当前大语言模型存在“幻觉”问题，答案常不可靠。业界对“超大规模”的巨额投入可能陷入非理性狂热。作为替代路径，“世界模型”旨在让AI理解物理规律，“神经符号AI”则尝试结合深度学习与符号推理，以提升可靠性、可解释性与逻辑能力，为下一代AI奠定基础。",
+          "sourceUrl": "https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the",
+          "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）"
         }
       ]
     }

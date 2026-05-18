@@ -1,8 +1,18 @@
 {
-  "count": 37,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpai1r620z49slnz1jl04t5y",
+      "title": "人机快递分拣对决直播",
+      "title_en": "Figure 直播机器人 VS 人类 挑战 快递分拣工作 目前人类稍稍领先…😌",
+      "url": "https://x.com/xiaohu/status/2056172740873511139",
+      "source": "X：小互 (@xiaohu)",
+      "publishedAt": "2026-05-18T00:39:17.000Z",
+      "summary": "Figure 直播机器人 VS 人类\n\n挑战\n\n快递分拣任务\n\n目前人类稍稍领先…😌",
+      "category": "industry"
+    },
     {
       "id": "cmp906obn0mwislnzmnij5htg",
       "title": "Figure人形机器人连续自主运行四天，迈向实用化关键一步",
@@ -321,56 +331,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-11T23:10:49.000Z",
       "summary": "微软CEONadella在Musk诉OpenAI案中作证，反驳了Musk关于OpenAI背离非营利初衷的指控。他出示了Musk2016年的感谢邮件，证明其当时完全支持微软与OpenAI的合作，且微软为此承受了1500万美元亏损。Nadella强调，双方一直保持沟通，但Musk在合作深化期间从未提出抱怨，直至2024年才提起诉讼。他还将2023年OpenAI董事会解雇CEO奥尔特曼的事件评价为\"业余之举\"，并透露自己曾介入帮助奥尔特曼复职。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp1lbm4v00irsl8b7g40famc",
-      "title": "Anthropic估值五日激增2000亿美元，营收呈指数级增长",
-      "title_en": "Anthropics pre-valuation was $1.2t just 5 days ago. Now its $1.4t . Its vaulation increased by $200…",
-      "url": "https://x.com/kimmonismus/status/2053911732028907972",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-11T18:54:51.000Z",
-      "summary": "人工智能公司Anthropic的市场隐含估值在短短五天内从1.2万亿美元飙升至1.4万亿美元，暴增2000亿美元。根据链上Pre-IPO交易数据，其估值自2025年10月以来已上涨1067%，近期24天内又录得40%的涨幅。这一惊人飙升的背景是公司年化收入的爆炸式增长：从2023年的1亿美元跃升至当前的450亿美元，仅过去12个月就增长了1400%。在Jupiter等链上平台交易的、由SPV风险敞口1：1支持的Pre-IPO工具，正实时反映市场对其IPO的估值预期。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp1jfovk0088slveaezopj7c",
-      "title": "旧金山AI模型开发者盛会周三举行",
-      "title_en": "Joining @vercel_dev， @AnthropicAI and @Kimi_Moonshot for America's Next Top Model this Wednesday in …",
-      "url": "https://x.com/MiniMax_AI/status/2053899661334003938",
-      "source": "X：MiniMax (@MiniMax_AI)",
-      "publishedAt": "2026-05-11T18:06:53.000Z",
-      "summary": "本周三在旧金山，与@vercel_dev、@AnthropicAI和@Kimi_Moonshot共同参与美国下一代模型盛会。\n\n每位参与者将获得$30 MiniMax API积分 + 大奖池。\n\n📅 5月13日 | 太平洋时间下午5：30 | 旧金山\n\n加入候补名单 → https：//luma.com/ttrgmjaf",
-      "category": "industry"
-    },
-    {
-      "id": "cmp1czbx80x58sllhal8qjb7z",
-      "title": "MiniMax组建\"10x团队\"，邀请领域专家共推AI跨越式发展",
-      "title_en": "http：//x.com/i/article/2053859160664711168",
-      "url": "https://x.com/MiniMax_AI/status/2053860184532066737",
-      "source": "X：MiniMax (@MiniMax_AI)",
-      "publishedAt": "2026-05-11T15:30:01.000Z",
-      "summary": "MiniMax宣布成立\"10x团队\"，旨在邀请各领域深度专家共同推动人工智能实现十倍速进步。公司认为大模型已从演示阶段发展为真实生产力设施，而将顶尖领域人才引入模型研发能显著提升能力并产生实际影响。团队寻求的是坚信AI能加速自身领域发展的专家，他们将直接参与问题定义、评估构建及工作流设计，其成果将融入MiniMax模型并贡献于推动行业发展的开源基准。MiniMax提供全球竞争力的薪酬、股权及上海、北京、香港、旧金山、伦敦等多地办公选择，通过开放合作实现\"智能普及\"的使命。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp1810fy0w14sllhclq644mh",
-      "title": "OpenAI 推出 DeployCo 以协助企业围绕智能构建业务",
-      "title_en": "OpenAI launches DeployCo to help businesses build around intelligence",
-      "url": "https://openai.com/index/openai-launches-the-deployment-company",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-11T06:00:00.000Z",
-      "summary": "OpenAI 正式推出全新企业部署公司 DeployCo，旨在帮助各类组织将前沿人工智能技术投入实际生产，并转化为可衡量的商业影响。该举措标志着 OpenAI 进一步深入企业服务领域，专注于解决 AI 模型从测试到规模化部署的落地挑战，助力企业通过定制化部署方案提升运营效率与业务成果。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp0j4gmi0q8fsllh0h28tu23",
-      "title": "消息称 AI 芯片企业 Cerebras IPO 获 20+ 倍超额认购，拟调升发行价近三成",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/948/591.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-11T01:22:36.000Z",
-      "summary": "AI芯片企业Cerebras的IPO获得超过20倍超额认购，有望成为2026年以来全球最大IPO。公司计划将发行股票数量从2800万股增至3000万股，发行价区间从115-125美元上调至150-160美元，以中间价计涨幅达29.17%，最高可筹资48亿美元。Cerebras的\"晶圆级芯片\"因集成大量高带宽SRAM缓存，特别适合AI推理的解码步骤，已获得亚马逊和OpenAI的大额订单。",
       "category": "industry"
     }
   ]

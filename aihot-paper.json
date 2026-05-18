@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -41,6 +41,16 @@
       "source": "X：Berry Xia (@berryxia)",
       "publishedAt": "2026-05-16T00:23:53.000Z",
       "summary": "剑桥大学团队推出Articraft，这是一个由智能体驱动的编码系统，能全自动生成带关节、可运动的交互式3D资产。系统通过AI智能体自主编写代码、执行并接收物理反馈迭代优化，将以往需数日甚至数周的创作过程极大简化。团队同时开源了Articraft-10K数据集，包含超1万个物体，覆盖250个类别，所有资产均仿真就绪。此举显著降低了机器人训练和物理AI领域对高质量3D资产的数据门槛，为解决\"数据饥渴\"问题提供了高效的自动化方案。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpalx63q1023slnz6x3g8lk7",
+      "title": "突破舒适区：面向RLVR的高效策略引导探索框架NudgeRL",
+      "title_en": "Nudging Beyond the Comfort Zone： Efficient Strategy-Guided Exploration for RLVR",
+      "url": "https://arxiv.org/abs/2605.15726",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-15T00:00:00.000Z",
+      "summary": "强化学习与可验证奖励范式面临探索效率瓶颈。为此，研究团队提出NudgeRL框架，其核心是\"策略助推\"技术，通过为每次策略采样注入轻量级策略级上下文，引导模型产生多样化推理轨迹，无需依赖昂贵的外部监督。该框架进一步提出一个统一目标，将奖励分解为上下文间与上下文内组件，并通过蒸馏目标将有效行为迁移回基础策略。在五个高难度数学基准测试中，NudgeRL的表现优于标准GRPO方法，其效果相当于后者使用高达8倍采样预算的结果，且平均表现超过了依赖特权信息的Oracle引导基线，证明了结构化探索的高效性与可扩展性。",
       "category": "paper"
     },
     {
@@ -161,36 +171,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-12T00:00:00.000Z",
       "summary": "吸引子模型解决了循环Transformer训练不稳定、成本高和深度固定的问题。它通过主干模块生成初始输出嵌入，吸引子模块迭代优化固定点，并利用隐式微分计算梯度，使训练内存与有效深度无关，迭代次数自适应收敛。在语言建模中，相比标准Transformer，困惑度最高降低46.6%，下游任务准确率最高提升19.7%，训练成本更低；一个770M参数的模型性能优于1.3B参数Transformer。在推理任务中，仅2700万参数模型在约1000个示例下，于Sudoku-Extreme和Maze-Hard上准确率分别达91.4%和93.1%，优于Claude、GPT o3等前沿模型。模型还展现出均衡内化现象，训练后初始输出嵌入接近均衡态，推理时可移除求解器而性能几乎无损，实现了迭代优化的可扩展性。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp1iaef10089slnbsbubwpcr",
-      "title": "智能体执行能力强但优化用户立场不足",
-      "title_en": "Using SocialReasoning Bench， we observed a stable pattern across models-agents execute competently， …",
-      "url": "https://x.com/MSFTResearch/status/2053890478165147693",
-      "source": "X：Microsoft Research (@MSFTResearch)",
-      "publishedAt": "2026-05-11T17:30:24.000Z",
-      "summary": "通过SocialReasoning Bench测试发现，各模型呈现稳定模式--智能体能够胜任执行任务，但即便在明确要求优化用户利益的指令下，仍无法持续改善用户处境。https：//msft.it/6011vPOLF",
-      "category": "paper"
-    },
-    {
-      "id": "cmp1529g10vbgsllhevc0s5ek",
-      "title": "小块有大智慧？这下真成真了！",
-      "title_en": "小块有大智慧？这下真成真了！ 7B小模型现在直接当上了GPT-5、Claude Sonnet 4、Gemini 2.5 Pro这些顶级大模型的老板。 一篇最新论文里，一个用强化学习训练的7B模型学…",
-      "url": "https://x.com/berryxia/status/2053794010582683759",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-05-11T11:07:04.000Z",
-      "summary": "一项新研究证明，一个通过强化学习训练的7B语言模型能够有效指挥GPT-5、Claude Sonnet 4和Gemini 2.5 Pro等前沿大模型。该模型通过编写自然语言子任务、分配给不同大模型执行，并精确指定上下文信息，在GPQA Diamond、LiveCodeBench和AIME25等硬核基准测试中，其性能全面超越了单个前沿模型。该系统平均每个问题仅需调用约三次大模型，比手动设计的多代理流程更高效。该工作提供了关键证据，表明目前商业AI产品中依赖人工的提示工程和流程设计，完全可以仅通过奖励信号进行端到端学习。这揭示了AI发展的新方向：智能的差距可能不在于模型规模，而在于协调与指挥的能力。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp3xncxu01djsljx0rw6j90h",
-      "title": "IndustryBench：探究大语言模型的工业知识边界",
-      "title_en": "IndustryBench： Probing the Industrial Knowledge Boundaries of LLMs",
-      "url": "https://arxiv.org/abs/2605.10267",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-11T00:00:00.000Z",
-      "summary": "研究团队发布IndustryBench，这是一个基于中国国家标准（GB/T）和工业产品记录构建的2049项中文工业采购问答基准，并提供了多语言对齐版本。构建中，基于外部搜索的验证环节拒绝了70.3%的大语言模型生成问题，凸显了仅靠模型过滤的不可靠性。对多语言模型的评估发现：最佳系统得分（0-3分制）仅为2.083分，提升空间巨大；\"标准与术语\"是普遍能力短板；扩展推理会因引入无依据的安全关键细节而降低多数模型的安全调整分数；安全违规检查会显著改变模型排名。研究表明，工业领域的大语言模型评估需基于源文本、具备安全意识，而非依赖简单的聚合准确率。",
       "category": "paper"
     }
   ]

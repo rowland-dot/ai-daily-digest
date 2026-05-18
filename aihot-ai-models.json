@@ -1,5 +1,5 @@
 {
-  "count": 23,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -191,46 +191,6 @@
       "source": "X：歸藏 (@op7418)",
       "publishedAt": "2026-05-12T02:19:23.000Z",
       "summary": "前OpenAI CTO Mira创立的Thinking Machines公司发布了一种创新的\"交互模型\"。该模型能原生、持续地接收音频、视频和文本等多模态输入，并实时思考与响应，而非通过Agent串联多个独立模型。其架构分为两部分：前台交互模型以200毫秒为节点处理输入并维持用户\"在场感\"，支持随时打断；后台推理模型则处理长程规划、工具调用等复杂任务。两者协同工作，最终呈现为一个既能实时交互又能处理重度任务的统一界面。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp19rigb0wflsllhe7kfkn8e",
-      "title": "AntLingAGI发布万亿参数模型Ring-2.6-1T",
-      "title_en": "In case you missed it： Ring-2.6-1T from @AntLingAGI is live and free on OpenRouter through May 15th！…",
-      "url": "https://x.com/OpenRouter/status/2053834087023133025",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-11T13:46:19.000Z",
-      "summary": "AntLingAGI发布了其万亿参数旗舰\"思考模型\"Ring-2.6-1T，该模型在5月15日前可通过OpenRouter免费使用。其核心特性包括可调节的思考强度，能动态平衡认知深度、token成本和执行速度；专为智能体优化，适用于高频工作流，提供快速的多步执行和工具调用；并具备深度思考能力，以应对严密的数学逻辑和科学研究任务。模型旨在满足实际生产环境中复杂任务的需求。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp12kiy60ususllh30fsxow3",
-      "title": "SenseNova U1图像生成模型登陆ComfyUI平台",
-      "title_en": "SenseNova U1 is now runnable on ComfyUI. Highly recognised by rev…",
-      "url": "https://x.com/SenseTime_AI/status/2053782644492525847",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-05-11T10:21:54.000Z",
-      "summary": "SenseNova U1图像生成模型现已在ComfyUI上可运行，并获得包括REBEL AI在内的评测者高度认可。REBEL AI发布的实践教程展示了该模型的部署工作流，并对其图像生成能力进行了真实场景测试。模型支持8步快速推理，生成速度极快，应用场景涵盖人像、超现实艺术、文字标志和生物设计等。相关资源已在Hugging Face、GitHub和Discord平台开放。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp10v66r0ud4sllhnchvnjbw",
-      "title": "腾讯混元Hy3预览版发布，专注复杂智能体任务",
-      "title_en": "Hy3 preview handles complex agentic tasks. See for yourself. 👇",
-      "url": "https://x.com/TencentHunyuan/status/2053771684482851255",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-05-11T09:38:21.000Z",
-      "summary": "腾讯混元Hy3预览版已开放早期体验，被描述为该系列最强模型。其核心设计面向现实世界有效性，而非单纯追求基准测试分数。模型具备处理复杂智能体任务的能力，采用256K上下文长度，并融合了快慢思维机制的混合专家架构。该模型基于重建的预训练和强化学习基础设施构建，旨在实现大规模应用下的高成本效益。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp25c774049lslbp3zceqjrz",
-      "title": "Qwen-Image-2.0技术报告",
-      "title_en": "Qwen-Image-2.0 Technical Report",
-      "url": "https://arxiv.org/abs/2605.10730",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-11T00:00:00.000Z",
-      "summary": "Qwen-Image-2.0是一个统一高保真生成与精确编辑的全能图像生成基础模型。它采用Qwen3-VL作为条件编码器，结合多模态扩散变换器进行联合建模，并通过大规模数据整理与多阶段训练实现强化。该模型支持长达1K令牌的指令输入，能生成幻灯片、海报等富文本内容，显著提升多语言文本渲染与排版质量。在生成方面，它增强了细节、纹理真实感与光照一致性，并更可靠遵循复杂指令。人工评估表明，其在生成和编辑任务上均大幅超越前代模型。",
       "category": "ai-models"
     }
   ]
