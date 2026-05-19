@@ -1,47 +1,41 @@
 {
-  "date": "2026-05-18",
-  "generatedAt": "2026-05-18T00:00:00.933Z",
-  "windowStart": "2026-05-17T00:00:00.000Z",
-  "windowEnd": "2026-05-18T00:00:00.000Z",
+  "date": "2026-05-19",
+  "generatedAt": "2026-05-19T00:00:00.705Z",
+  "windowStart": "2026-05-18T00:00:00.000Z",
+  "windowEnd": "2026-05-19T00:00:00.000Z",
   "lead": null,
   "sections": [
     {
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Grok Imagine图像生成功能正式发布",
-          "summary": "Grok Imagine 现已正式发布 所有人都可使用 基于我们最新的文本到图像模型 能够生成逼真、高质量的图像 支持多种宽高比 现在可在 X 上使用",
-          "sourceUrl": "https://x.com/elonmusk/status/2055912040481599793",
-          "sourceName": "X：Elon Musk (@elonmusk, xAI)"
+          "title": "阿里云推出HappyHorse视频生成模型",
+          "summary": "电影级AI现已到来。🐎💨 HappyHorse现已登陆Model Studio。从原始提示词到1080p多镜头现实感画面——在统一工作流中体验视频生成的未来。没有阻碍。只有纯粹性能。 🔥 限时优惠：8折。观看演示并立即开始创作。 立即访问：https://int.alibabacloud.com/m/1000412936/",
+          "sourceUrl": "https://x.com/alibaba_cloud/status/2056182152681644176",
+          "sourceName": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)"
         },
         {
-          "title": "手机端ChatGPT应用集成Codex构建功能",
-          "summary": "你可以在手机端通过ChatGPT应用中的Codex直接构建项目",
-          "sourceUrl": "https://x.com/gdb/status/2055882172884763012",
-          "sourceName": "X：Greg Brockman (@gdb)"
+          "title": "腾讯 AI 设计智能体 Ardot 公测：一句话生成可编辑设计稿，一键转代码",
+          "summary": "腾讯云正式公测自研AI设计智能体平台Ardot。该平台核心功能包括：用户通过一句话指令即可生成App页面、官网、海报等可编辑设计稿；支持调用团队自有组件库生成规范稿，并能直接导入Figma文件保留原有设计。同时，Ardot具备设计稿一键转换为代码的能力，可对接CodeBuddy等开发工具实现代码还原。平台还提供多人在线实时评论、标注反馈和版本对比等协作功能，其微信小程序即将上线。",
+          "sourceUrl": "https://www.ithome.com/0/951/677.htm",
+          "sourceName": "IT之家（RSS）"
         },
         {
-          "title": "Zerostack——一款采用纯Rust语言编写、受Unix启发的编程代理",
-          "summary": "Zerostack是一款采用纯Rust语言编写、受Unix哲学启发的编程代理工具，已正式发布1.0.0版本并在Rust包管理平台crates.io上提供。该发布在技术社区Hacker News上获得115点关注，反映出开发者对其的高度兴趣。Rust语言以内存安全和性能见称，Unix设计强调简洁与模块化，Zerostack结合两者优势，旨在提升编程效率，为代码辅助领域带来新选择。",
-          "sourceUrl": "https://crates.io/crates/zerostack/1.0.0",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+          "title": "一键生成韩国棒球AI视频模板爆火",
+          "summary": "那个热狗需要自己的座位 [引用 @MrDasOnX]：这可能是最简单的病毒式AI编辑。 PixVerse → 上传自拍 → 即时生成韩国棒球镜头视频 无需指令。无需编辑。 只需一键点击。 @PixVerse_ 上的K-Baseball Sprint模板太疯狂了。",
+          "sourceUrl": "https://x.com/PixVerse_/status/2056198882321904098",
+          "sourceName": "X：PixVerse (@PixVerse_)"
         }
       ]
     },
     {
-      "label": "论文研究",
+      "label": "行业动态",
       "items": [
         {
-          "title": "Anthropic Claude 5天攻破Apple M5 macOS内核漏洞：5年数十亿防线，被AI一举击穿",
-          "summary": "Anthropic的Claude Mythos Preview在5天内，协助安全团队Calif成功构建并演示了首个公开的、针对Apple M5芯片macOS内核的内存破坏提权利用链。该攻击绕过了苹果耗时5年、投入数十亿美元打造的MIE硬件级内存完整性防护，从普通用户权限通过纯数据操作即可获得root权限。苹果已在后续更新中修复漏洞并致谢。此事件标志着AI驱动的安全研究能力已能极速突破顶尖硬件防护，显著改变了攻防的速度与平衡。",
-          "sourceUrl": "https://x.com/berryxia/status/2056043674446995887",
-          "sourceName": "X：Berry Xia (@berryxia)"
-        },
-        {
-          "title": "研究揭示LLM智能体记忆重写机制损害可靠性",
-          "summary": "伊利诺伊大学与清华大学等机构的研究发现，LLM智能体虽能从经验中学习，但其通过LLM将原始经历压缩成书面教训的记忆重写机制会损害记忆可靠性。在网页购物、模拟世界及ARC风格谜题等任务测试中，反复重写记忆会导致错误分组、规则过度泛化或过拟合，使智能体遗忘细节或混淆任务类型。例如，GPT-4在无记忆时可100%解决小型ARC-AGI问题集，而建立记忆并流式更新后，性能降至约54%。研究主张智能体记忆系统应重视原始经历作为关键证据，而非自动将所有经验重写为摘要，保留原始证据并选择性摘要效果更佳。",
-          "sourceUrl": "https://x.com/rohanpaul_ai/status/2055919204591902771",
-          "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
+          "title": "人机快递分拣对决直播",
+          "summary": "Figure 直播机器人 VS 人类 挑战 快递分拣任务 目前人类稍稍领先…😌",
+          "sourceUrl": "https://x.com/xiaohu/status/2056172740873511139",
+          "sourceName": "X：小互 (@xiaohu)"
         }
       ]
     },
@@ -49,46 +43,16 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "开源微信读书数据可视化工具yao-weread-skill发布",
-          "summary": "开发者姚老师开源了微信读书Skill——yao-weread-skill。该工具能将用户的微信读书数据生成本地可视化报告，核心功能包括分析近两年的阅读时长与节律、书架书籍构成、阅读分类与作者偏好，并对笔记和想法进行语义分析。报告最终通过词云、热力图、雷达图等26种图表形式呈现，所有代码已在GitHub公开。",
-          "sourceUrl": "https://x.com/vista8/status/2056050473392902430",
-          "sourceName": "X：Vista (@vista8)"
-        },
-        {
-          "title": "Anthropic CEO预言软件免费化与职业结构巨变",
-          "summary": "Anthropic CEO Dario Amodei在《华尔街日报》YouTube频道采访中表示，软件成本将急剧下降，可能基本免费，传统软件需百万用户分摊成本的前提将不再成立。同时，数十年来建立的许多工作和职业可能消失。Amodei认为社会能够应对并适应这种变化，但他警告人们目前完全未意识到即将到来的变革及其巨大规模。",
-          "sourceUrl": "https://x.com/rohanpaul_ai/status/2055841486714147177",
-          "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
-        },
-        {
-          "title": "微软AI CEO预测18个月内AI自动化所有白领工作",
-          "summary": "微软AI CEO Mustafa Suleyman预测，AI将在18个月内实现人类水平的性能，自动化大多数专业任务，包括会计、法律、营销和项目管理。他在Fortune采访中指出，所有涉及“坐在电脑前”的白领工作都将被AI完全取代。Suleyman透露自己的使命是构建“超级智能”，并展望未来创建新AI模型将像制作播客或写博客一样便捷。",
-          "sourceUrl": "https://x.com/kimmonismus/status/2055952702908355012",
-          "sourceName": "X：Kim (@kimmonismus)"
-        },
-        {
-          "title": "让 Codex 自己做了一条视频介绍了一下这个视频生成方案",
-          "summary": "该方案整合了藏师傅的PPT Skill（视觉与动效）、HyperFrames（时间线与渲染）、Listenhub Skill（配音）以及即梦CLI（补充片段）。核心在于，用户可通过Codex直接基于文本提示生成带动效的解释视频，并能在聊天界面内预览，极大提升了制作效率，特别适合产品介绍等视频内容。",
-          "sourceUrl": "https://x.com/op7418/status/2056021133477163298",
-          "sourceName": "X：歸藏 (@op7418)"
-        },
-        {
-          "title": "Garry Tan发布的GBrain直接捅破个人AI天花板",
-          "summary": "Garry Tan开源的GBrain是一个知识系统，而非简单的RAG工具。它通过8层结构解决AI Agent的记忆缺陷：前4层升级基础检索，后4层实现终身记忆和自我进化，使如OpenClaw、Hermes等Agent能持续追踪用户的人际关系、决策轨迹和认知演化。该系统已在生产环境中处理大量数据，用户可通过安装链接或命令行快速集成，并以Markdown为最高优先级数据源，推动个人AI成为可能。",
-          "sourceUrl": "https://x.com/AYi_AInotes/status/2055954675526934642",
-          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)"
-        },
-        {
-          "title": "微信读书Skill安装与使用指南",
-          "summary": "❤️ [引用 @vista8]：微信读书Cli安装和配置教程。 1. 官方指令，复制发给Codex或Claude Code 下载 https://cdn.weread.qq.com/skills/weread-skills.zip 安装 skill 2. 或者用 X 上网友 @eviljer 做的优化版Skill npx skills add jerlinn/jerlin-weread 3. 如果需要API key，访问微信官方这个页面获取 https://weread.qq.com/r/weread-skills 4. 使用案例 直接跟AI说：“调用微信读书skill 查看被讨厌勇气的高亮划线”",
-          "sourceUrl": "https://x.com/berryxia/status/2055865005271314528",
+          "title": "开源工具揭露AI API中转站安全风险与检测差异",
+          "summary": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+          "sourceUrl": "https://x.com/berryxia/status/2056173473588994392",
           "sourceName": "X：Berry Xia (@berryxia)"
         },
         {
-          "title": "生成式AI的幻觉、超大规模投入的狂热与世界模型及神经符号AI的路径",
-          "summary": "近期访谈指出，当前大语言模型存在“幻觉”问题，答案常不可靠。业界对“超大规模”的巨额投入可能陷入非理性狂热。作为替代路径，“世界模型”旨在让AI理解物理规律，“神经符号AI”则尝试结合深度学习与符号推理，以提升可靠性、可解释性与逻辑能力，为下一代AI奠定基础。",
-          "sourceUrl": "https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the",
-          "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+          "title": "Hermes 可配置的国内外 AI 模型及使用方法",
+          "summary": "Hermes 支持配置多种国内外主流 AI 模型，包括 OpenAI GPT-5.5、xAI Grok-4.3、谷歌 Gemini 系列、DeepSeek V4 系列、Zhipu GLM-5 系列、Kimi K2.6 以及小米 Mimo V2.5-pro。用户需通过相应服务的订阅或 API 进行配置，完成后可使用 /model 指令指定模型及提供者来切换对话模型，例如输入“/model gpt-5.5 --provider openai-codex”即可切换至对应模型。该功能方便用户根据需求灵活调用不同模型的优势。",
+          "sourceUrl": "https://x.com/vista8/status/2056170241147977741",
+          "sourceName": "X：Vista (@vista8)"
         }
       ]
     }

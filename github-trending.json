@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-18T21:47:33.198Z",
+  "fetched_at": "2026-05-19T21:55:27.786Z",
   "repos": [
     {
       "owner": "tinyhumansai",
@@ -8,20 +8,9 @@
       "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 16907,
-      "forks": 1464,
-      "starsToday": 3945
-    },
-    {
-      "owner": "Imbad0202",
-      "name": "academic-research-skills",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
-      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 11523,
-      "forks": 1181,
-      "starsToday": 1302
+      "stars": 20952,
+      "forks": 1841,
+      "starsToday": 3991
     },
     {
       "owner": "HKUDS",
@@ -30,53 +19,53 @@
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 36556,
-      "forks": 3545,
-      "starsToday": 1047
+      "stars": 37636,
+      "forks": 3603,
+      "starsToday": 1027
     },
     {
-      "owner": "K-Dense-AI",
-      "name": "scientific-agent-skills",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+      "owner": "Imbad0202",
+      "name": "academic-research-skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 24346,
-      "forks": 2572,
-      "starsToday": 610
+      "stars": 14020,
+      "forks": 1329,
+      "starsToday": 3184
     },
     {
-      "owner": "supertone-inc",
-      "name": "supertonic",
-      "url": "https://github.com/supertone-inc/supertonic",
-      "description": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 8274,
-      "forks": 844,
-      "starsToday": 755
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 198284,
+      "forks": 17690,
+      "starsToday": 1620
     },
     {
-      "owner": "ggml-org",
-      "name": "llama.cpp",
-      "url": "https://github.com/ggml-org/llama.cpp",
-      "description": "LLM inference in C/C++",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 110975,
-      "forks": 18369,
-      "starsToday": 283
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 20114,
+      "forks": 2505,
+      "starsToday": 127
     },
     {
-      "owner": "ruvnet",
-      "name": "RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 59835,
-      "forks": 7806,
-      "starsToday": 704
+      "owner": "rohitg00",
+      "name": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 14061,
+      "forks": 1173,
+      "starsToday": 1626
     },
     {
       "owner": "CloakHQ",
@@ -85,31 +74,53 @@
       "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 15094,
-      "forks": 1177,
-      "starsToday": 1391
+      "stars": 16475,
+      "forks": 1270,
+      "starsToday": 1466
     },
     {
-      "owner": "tech-leads-club",
-      "name": "agent-skills",
-      "url": "https://github.com/tech-leads-club/agent-skills",
-      "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.",
+      "owner": "rtk-ai",
+      "name": "rtk",
+      "url": "https://github.com/rtk-ai/rtk",
+      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 50792,
+      "forks": 3097,
+      "starsToday": 667
+    },
+    {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 101459,
+      "forks": 16777,
+      "starsToday": 983
+    },
+    {
+      "owner": "colbymchenry",
+      "name": "codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 3993,
-      "forks": 346,
-      "starsToday": 1244
+      "stars": 6455,
+      "forks": 430,
+      "starsToday": 1869
     },
     {
-      "owner": "BigBodyCobain",
-      "name": "Shadowbroker",
-      "url": "https://github.com/BigBodyCobain/Shadowbroker",
-      "description": "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. Hook an AI agent up to have it parse through data and find previously unseen correlations. The knowledge is available to all but rarely aggregated in the open, until now.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 7673,
-      "forks": 1183,
-      "starsToday": 768
+      "owner": "multica-ai",
+      "name": "andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "languageColor": "",
+      "stars": 137844,
+      "forks": 14133,
+      "starsToday": 1935
     },
     {
       "owner": "humanlayer",
@@ -118,20 +129,53 @@
       "description": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 20492,
-      "forks": 1549,
-      "starsToday": 359
+      "stars": 21135,
+      "forks": 1594,
+      "starsToday": 733
     },
     {
-      "owner": "NVlabs",
-      "name": "Sana",
-      "url": "https://github.com/NVlabs/Sana",
-      "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
+      "owner": "Diolinux",
+      "name": "PhotoGIMP",
+      "url": "https://github.com/Diolinux/PhotoGIMP",
+      "description": "A Patch for GIMP 3+ for Photoshop Users",
+      "language": "CSS",
+      "languageColor": "#663399",
+      "stars": 10728,
+      "forks": 372,
+      "starsToday": 930
+    },
+    {
+      "owner": "Alishahryar1",
+      "name": "free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 6474,
-      "forks": 459,
-      "starsToday": 376
+      "stars": 26307,
+      "forks": 3921,
+      "starsToday": 543
+    },
+    {
+      "owner": "pascalorg",
+      "name": "editor",
+      "url": "https://github.com/pascalorg/editor",
+      "description": "Create and share 3D architectural projects.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 15841,
+      "forks": 2080,
+      "starsToday": 88
+    },
+    {
+      "owner": "frappe",
+      "name": "erpnext",
+      "url": "https://github.com/frappe/erpnext",
+      "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 34226,
+      "forks": 11311,
+      "starsToday": 65
     },
     {
       "owner": "microsoft",
@@ -140,31 +184,20 @@
       "description": "12 Lessons to Get Started Building AI Agents",
       "language": "Jupyter Notebook",
       "languageColor": "#DA5B0B",
-      "stars": 63382,
-      "forks": 21165,
-      "starsToday": 1013
+      "stars": 64241,
+      "forks": 21280,
+      "starsToday": 820
     },
     {
-      "owner": "ZhuLinsen",
-      "name": "daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "description": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
+      "owner": "HKUDS",
+      "name": "ViMax",
+      "url": "https://github.com/HKUDS/ViMax",
+      "description": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 37024,
-      "forks": 36150,
-      "starsToday": 290
-    },
-    {
-      "owner": "plausible",
-      "name": "analytics",
-      "url": "https://github.com/plausible/analytics",
-      "description": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud.",
-      "language": "Elixir",
-      "languageColor": "#6e4a7e",
-      "stars": 25913,
-      "forks": 1490,
-      "starsToday": 637
+      "stars": 5361,
+      "forks": 918,
+      "starsToday": 504
     }
   ]
 }

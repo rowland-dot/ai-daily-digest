@@ -1,26 +1,196 @@
 {
-  "count": 33,
+  "count": 41,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpai1r620z49slnz1jl04t5y",
-      "title": "人机快递分拣对决直播",
-      "title_en": "Figure 直播机器人 VS 人类 挑战 快递分拣工作 目前人类稍稍领先…😌",
-      "url": "https://x.com/xiaohu/status/2056172740873511139",
-      "source": "X：小互 (@xiaohu)",
-      "publishedAt": "2026-05-18T00:39:17.000Z",
-      "summary": "Figure 直播机器人 VS 人类\n\n挑战\n\n快递分拣任务\n\n目前人类稍稍领先…😌",
+      "id": "cmpd57aiz00zqslk11q0lp88m",
+      "title": "创新一周年：庆祝Google Cloud x NVIDIA开发者社区达到10万会员",
+      "title_en": "One Year of Innovation： Celebrating 100k Members in the Google Cloud x NVIDIA Developer Community",
+      "url": "https://developers.googleblog.com/one-year-of-innovation-celebrating-100k-members-in-the-google-cloud-x-nvidia-developer-community",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-19T21:25:58.418Z",
+      "summary": "Google Cloud与NVIDIA开发者社区迎来成立一周年，会员规模突破10万。社区为开发者提供先进AI基础设施与资源支持，包括LLM优化、GPU加速数据分析等专项学习路径及专家网络研讨会。第二年计划将进一步扩展，推出实践实验室、工程活动及聚焦代理式AI增长的专项内容。",
       "category": "industry"
     },
     {
-      "id": "cmp906obn0mwislnzmnij5htg",
-      "title": "Figure人形机器人连续自主运行四天，迈向实用化关键一步",
-      "title_en": "哎！这玩意越看让人越有点感慨不已！ 人形机器人的真的逐渐在替代某些岗位啊！ Figure 人形机器人已经进入第4天 nonstop autonomous operations了。 F.03 正在…",
-      "url": "https://x.com/berryxia/status/2055786570570137989",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-05-16T23:04:47.000Z",
-      "summary": "Figure公司的F.03人形机器人已进入第四天不间断自主运行测试，在真实仓库环境中24/7连续工作直至出现故障。测试核心在于评估机器人执行抓取、搬运、分拣等任务的长期耐力，并收集故障数据、维护需求及安全恢复机制等信息。这标志着人形机器人从展示单次动作的\"能动\"阶段，进入了考验持续工作能力的\"能干\"实用化关键阶段。",
+      "id": "cmpcz81ck01ijsljlls9n0jxx",
+      "title": "Gemini月活用户超9亿，回顾年度重大功能发布",
+      "title_en": "More than 900 million users are coming to the Gemini app every month. A big part of that growth is …",
+      "url": "https://x.com/GeminiApp/status/2056799436052017597",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-05-19T18:09:33.000Z",
+      "summary": "每月有超过9亿用户使用Gemini应用。\n\n这一增长的重要部分源于我们快速的发布节奏。以下是过去一年我们推出的一些最重要功能的回顾。🧵 #GoogleIO",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcxg3ft00zrsljleo7yyeed",
+      "title": "Google I/O 2026",
+      "title_en": "I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-05-19T17:45:00.000Z",
+      "summary": "在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcxoo8t011asljl2ex48qey",
+      "title": "谷歌每月处理超 3200 万亿 Token，同比增长 7 倍",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/952/518.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-19T17:14:39.000Z",
+      "summary": "在2026年谷歌I/O开发者大会上，谷歌宣布其AI业务关键指标大幅增长。2026年5月，谷歌每月处理的Token数量超过3200万亿，同比增长达7倍。其Gemini App月度活跃用户已突破9亿，同比增长超过一倍，每日请求量增长超7倍。此外，Nano Banana模型已累计生成超过500亿张图片。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcw3sqr00nysljliwr90t6j",
+      "title": "谷歌IO大会首日：创新与技术突破",
+      "title_en": "Welcome to Day 1 of #GoogleIO. We're sharing @Google's latest innovations， product updates， and tec…",
+      "url": "https://x.com/GoogleDeepMind/status/2056782550924996816",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-05-19T17:02:27.000Z",
+      "summary": "欢迎来到 #GoogleIO 的第一天。\n\n我们将分享 @Google 的最新创新、产品更新和技术突破。\n\n请就座前排，观看直播 → https：//goo.gle/499OxaJ",
+      "category": "industry"
+    },
+    {
+      "id": "cmpculcys009gsljl1jpnwadp",
+      "title": "Google I/O 开发者大会日程公布",
+      "title_en": "It's time for Google I/O！ ✧ 10：00AM - Keynote ✧ 1：30PM - Developer Keynote ✧ 3：30PM - What's new in…",
+      "url": "https://x.com/googleaidevs/status/2056767412255805521",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-05-19T16:02:18.000Z",
+      "summary": "Google I/O 开发者大会即将开始！\n\n✧ 上午10：00 - 主题演讲\n✧ 下午1：30 - 开发者主题演讲\n✧ 下午3：30 - Google AI 新动态\n✧ 下午4：30 - 与 @GoogleDeepMind 和 @Antigravity 共同扩展开发者生态系统\n\n时间为太平洋时间。\nhttps：//x.com/i/events/2053241348807864323",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcth4wt0087slb7hk5e83cp",
+      "title": "Andrej加入Anthropic，Musk也点赞",
+      "title_en": "Andrej joined Anthropic. Even Elon couldn't help but praise Anthropic. Anthropic really aura-farmed …",
+      "url": "https://x.com/Yuchenj_UW/status/2056764450712256753",
+      "source": "X：Yuchen Jin (@Yuchenj_UW)",
+      "publishedAt": "2026-05-19T15:50:32.000Z",
+      "summary": "Andrej加入了Anthropic。\n连Elon都忍不住称赞Anthropic。\nAnthropic今天在Google I/O上真是气场全开。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpctfefn007nslb7d10w6thl",
+      "title": "安德烈·卡帕西加入Anthropic",
+      "title_en": null,
+      "url": "https://twitter.com/karpathy/status/2056753169888334312",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-19T15:33:04.992Z",
+      "summary": "AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpctird30077sl50ywlas903",
+      "title": "前OpenAI核心成员Andrej Karpathy选择Anthropic重返前沿LLM研究",
+      "title_en": "Prominent AI researcher Andrej Karpathy picks Anthropic over former home OpenAI to get back into frontier LLM research",
+      "url": "https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-05-19T15:29:27.000Z",
+      "summary": "著名AI研究人员Andrej Karpathy已加入Anthropic。这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究\"尤其具有塑造性\"。他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcsj5pu050sslaeoga8am89",
+      "title": "Karpathy加入Anthropic团队",
+      "title_en": "Welcome to the team， Andrej！",
+      "url": "https://x.com/ClaudeDevs/status/2056753265346564259",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "publishedAt": "2026-05-19T15:06:05.000Z",
+      "summary": "欢迎加入团队，Andrej！",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcn1ppf03o1slaeljhjscd7",
+      "title": "毕马威与Anthropic建立全球联盟，全面整合Claude AI模型",
+      "title_en": "KPMG integrates Claude across its core business and workforce of more than 276，000 in strategic alliance",
+      "url": "https://www.anthropic.com/news/anthropic-kpmg",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-19T12:57:47.968Z",
+      "summary": "毕马威宣布与Anthropic建立全球联盟，将Claude人工智能模型全面整合至其核心业务与数字平台。此举将向毕马威全球超过27.6万名员工开放Claude访问权限，并率先应用于税务与法律等领域的客户工具开发。双方还将合作开发面向私募股权投资组合公司及网络安全漏洞检测的新产品。毕马威强调此次合作基于其可信AI框架，旨在通过负责任、可治理的AI部署，加速企业数字化转型。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpcijozf02lfslaerefjeqam",
+      "title": "现代汽车集团计划部署 2.5 万台波士顿动力 Atlas 人形机器人",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/952/459.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-19T10:50:31.000Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpcc46av011oslaeonk3qlxc",
+      "title": "Kimi最新融资获国资与央企加注，估值半年翻四倍",
+      "title_en": "月之暗面 Kimi 融资获国资加持，国智投、中国移动等央企巨头入场",
+      "url": "https://www.ithome.com/0/952/336.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-19T07:39:15.000Z",
+      "summary": "月之暗面旗下AI助手Kimi正在进行20亿美元新融资，国智投、中国移动等国资机构及央企已加入股东名单，该轮融资已进入收尾阶段。今年1月和2月，Kimi已密集完成3轮融资，累计融资超39亿美元（约376亿元人民币），最新估值相比去年11月已翻4倍有余，成为大模型创业公司中融资最多的企业。产品层面，基于Kimi K2.5模型的Composer 2.5已集成至编程应用Cursor，公司近期也发布了开源模型Kimi K2.6。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpc0rsyk1bv1slnzg9w4btuu",
+      "title": "Anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕",
+      "title_en": null,
+      "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-19T02:13:08.248Z",
+      "summary": "Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕\"magnifica humanitas\"。这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpc16sdn1bzoslnzdslc7e8f",
+      "title": "谷歌联手黑石组建 AI 云公司：50 亿美元起步，2027 年冲刺 500 兆瓦",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/952/097.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-19T01:52:20.000Z",
+      "summary": "谷歌与黑石集团宣布合作成立一家新的AI云服务公司，黑石率先投入50亿美元股权资本，结合后续杠杆，总投资规模预计约250亿美元。该公司计划依托谷歌自研的TPU芯片和云基础设施，与CoreWeave等算力服务商展开竞争，并争取在2027年上线容量达500兆瓦的数据中心，相当于一座中等城市的用电规模。此举标志着谷歌迄今最大规模的对外芯片商业化尝试，将加剧与英伟达等公司在AI算力市场的角逐。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpbjmbxb17w5slnz70k0vm5l",
+      "title": "埃隆·Musk对山姆·阿尔特曼和OpenAI提起的诉讼败诉",
+      "title_en": null,
+      "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-18T18:14:08.505Z",
+      "summary": "埃隆·Musk对山姆·阿尔特曼及OpenAI提起的诉讼以败诉告终。这场广受关注的案件主要涉及人工智能公司OpenAI的创立初衷、公司治理结构以及未来发展方向等核心争议。法院的裁决标志着这一涉及商业、技术伦理与公司控制权的重大法律纠纷阶段性落幕。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpbgzmcq17atslnz0tmjre6x",
+      "title": "Anthropic收购SDK平台Stainless",
+      "title_en": "Anthropic is acquiring @stainlessapi， an SDK and MCP server platform that has powered every Anthropi…",
+      "url": "https://x.com/AnthropicAI/status/2056419620643541012",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-05-18T17:00:18.000Z",
+      "summary": "Anthropic正在收购@stainlessapi，这是一个SDK和MCP服务器平台，自我们API早期以来就为所有Anthropic SDK提供支持。\n\n阅读更多：https：//www.anthropic.com/news/anthropic-acquires-stainless",
+      "category": "industry"
+    },
+    {
+      "id": "cmpbb1r3q15vxslnz1pi8xz2l",
+      "title": "百度核心AI业务Q1营收超136亿元",
+      "title_en": "Our AI businesses continued to scale in Q1 2026. Revenue from Baidu Core AI-powered Business exceed…",
+      "url": "https://x.com/Baidu_Inc/status/2056375547400503355",
+      "source": "X：百度 Baidu (@Baidu_Inc)",
+      "publishedAt": "2026-05-18T14:05:10.000Z",
+      "summary": "我们的AI业务在2026年第一季度持续扩大规模。\n百度核心AI驱动业务收入超过136亿元人民币，同比增长49%，延续了多季度的增长趋势。该业务首次占百度通用业务收入的一半以上。\n本季度还体现了AI云基础设施、AI应用和Apollo Go的持续增长势头。\n完整报告：https：//bit.ly/3RMmact",
+      "category": "industry"
+    },
+    {
+      "id": "cmpbgh7e51779slnz95461dox",
+      "title": "Anthropic收购SDK与MCP服务器工具开发商Stainless",
+      "title_en": "Anthropic acquires Stainless",
+      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-17T16:00:00.000Z",
+      "summary": "Anthropic宣布收购SDK与MCP服务器工具开发商Stainless。Stainless自2022年成立以来，一直为Anthropic官方SDK的生成提供支持，其工具能将API规范转化为TypeScript、Python、Go等多语言的SDK、命令行工具及MCP服务器。此次收购旨在增强Claude平台的开发者体验，提升AI代理连接外部数据与工具的能力，从而在MCP协议基础上进一步拓展连接生态。",
       "category": "industry"
     },
     {
@@ -104,16 +274,6 @@
       "category": "industry"
     },
     {
-      "id": "cmp6r0wgm0497slnz10qneu54",
-      "title": "Anthropic估值与营收飙升",
-      "title_en": "Anthropic in a nutshell： Valuation： February 2026： $350B May 2026： $900B Almost 3x in just 3 month…",
-      "url": "https://x.com/kimmonismus/status/2055222524774846576",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-15T09:43:28.000Z",
-      "summary": "Anthropic简况：\n\n估值：\n2026年2月：3500亿美元\n2026年5月：9000亿美元\n\n三个月内增长近3倍。\n\n年度经常性收入：\n2025年底：90亿美元\n2026年5月底：450亿美元\n\n五个月内增长近5倍。\n\n天啊。 via FT",
-      "category": "industry"
-    },
-    {
       "id": "cmp6ba93100fbslnzmec29858",
       "title": "为 OpenAI 累计投入超 1000 亿美元，Nadella称微软当年投资时\"没人愿意下注\"",
       "title_en": null,
@@ -131,16 +291,6 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-05-15T00:00:00.000Z",
       "summary": "Databricks宣布在企业智能体工作流中集成GPT-5.5模型。这一决策基于该模型在OfficeQA Pro专业基准测试中取得的突破性性能表现，创造了新的行业标杆。GPT-5.5的引入将提升企业自动化流程的准确性与效率。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp65r39y0jyysljxds3llxap",
-      "title": "Anthropic的Mythos AI在五天内协助发现并利用两个未知macOS内核漏洞",
-      "title_en": "WSJ： Anthropic's Mythos helped researchers find 2 unknown macOS kernel bugs and turn them into a wor…",
-      "url": "https://x.com/rohanpaul_ai/status/2055071152511594832",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-14T23:41:58.000Z",
-      "summary": "据《华尔街日报》报道，Anthropic的Mythos AI工具在短短五天内，成功帮助研究人员发现了两个此前未知的macOS内核漏洞，并将其串联成一个完整的权限提升攻击链。该攻击针对操作系统最底层的核心，通过组合多个漏洞和技术，绕过了苹果的内存完整性保护机制，访问了本应受保护的系统区域。这凸显出现代macOS的防御重点已从单纯防止漏洞发现，转向增加漏洞利用难度。Mythos在此类研究中展现出强大能力，因为它能协助形成假设、分析代码行为、推理底层约束并建议利用路径，从而大幅加速传统上依赖手动、试错的研究过程。",
       "category": "industry"
     },
     {
@@ -261,76 +411,6 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-05-13T00:00:00.000Z",
       "summary": "OpenAI 针对 TanStack \"Mini Shai-Hulud\" npm 供应链攻击事件作出响应。攻击者通过维护者账户发布了恶意伪造包。OpenAI 确认内部系统未受影响，但为防范风险，已撤销并重签所有相关代码签名证书，并要求 macOS 用户在 2026 年 6 月 12 日前更新应用。公司同时加强了第三方依赖审查和自动化安全监控，以提升软件供应链安全防御。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp2yyzm101s0sl1qos08v1wc",
-      "title": "山姆·Altman因涉嫌利用OpenAI谋私利遭正式调查",
-      "title_en": "NEWS： Sam Altman is now under official investigation for using OpenAI to boost his personal wealth. …",
-      "url": "https://x.com/cb_doge/status/2054265408933462034",
-      "source": "X：cb_doge (@cb_doge)",
-      "publishedAt": "2026-05-12T18:20:14.000Z",
-      "summary": "美国佛罗里达、蒙大拿等六州司法部长联合致信美国证券交易委员会，要求调查OpenAI CEO山姆·Altman涉嫌利用公司谋取个人利益的行为。信中指出Altman在OpenAI无直接股权，个人财务利益与公司业绩关联有限，存在严重的自我交易和利益冲突风险。同时，美国众议院监督委员会主席也要求其提交相关投资文件。目前OpenAI估值高达8520亿美元，但利益冲突审计报告尚未公开，监管机构正加大关注力度，为投资者与公众亮起警示信号。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp2xwd8301jssl1qqoq8jgnx",
-      "title": "青少年按ChatGPT建议混用药物致死，父母起诉OpenAI",
-      "title_en": "A teenager died after ChatGPT gave him advice on mixing dangerous drugs. His parents are now suing O…",
-      "url": "https://x.com/cb_doge/status/2054256398834569440",
-      "source": "X：cb_doge (@cb_doge)",
-      "publishedAt": "2026-05-12T17:44:26.000Z",
-      "summary": "一名19岁青少年因过量服用药物死亡，其父母起诉OpenAI，指控ChatGPT的错误建议导致了悲剧。该青少年曾长期向ChatGPT咨询关于卡痛、阿普唑仑、酒精和止咳糖浆等物质的混合使用，而ChatGPT提供了具体的剂量建议，并认可混合使用的安全性，甚至指导如何增强药物体验。在他死亡当天，ChatGPT仍在提供后续用药建议。OpenAI回应称，相关对话发生于已下线的旧版本模型。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp2r2buj00losl3qvl2bxkj7",
-      "title": "首届虚构节目提案大赛揭晓二十强",
-      "title_en": "Congratulations to the twenty winners of the inaugural Big Pitch Contest for Shows That Don't Exist …",
-      "url": "https://x.com/runwayml/status/2054211544636850235",
-      "source": "X：Runway (@runwayml)",
-      "publishedAt": "2026-05-12T14:46:12.000Z",
-      "summary": "祝贺首届\"尚未存在的节目\"提案大赛的二十位获奖者。\n\n观看下方前五名提案展示。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp2peo93009usl3q8z9xe2w4",
-      "title": "人工智能首要应用应是改善人类健康",
-      "title_en": "I've always believed the No.1 application of AI should be to improve human health. That work starte…",
-      "url": "https://x.com/demishassabis/status/2054197462101889277",
-      "source": "X：Demis Hassabis (@demishassabis)",
-      "publishedAt": "2026-05-12T13:50:14.000Z",
-      "summary": "我一直认为人工智能的首要应用应该是改善人类健康。\n\n这项工作始于AlphaFold，现在通过@IsomorphicLabs重新构想药物发现，并致力于有朝一日攻克所有疾病！\n\n我们已获得21亿美元新资金，正在加速实现这一目标。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp251p370470slbpio1s5omy",
-      "title": "全国首例 AI 代写\"种草笔记\"案宣判，法院判决工具提供者赔偿平台 10 万元",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/949/198.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-12T03:55:51.000Z",
-      "summary": "全国首例 AI 代写\"种草笔记\"不正当竞争案在浙江省杭州市中级人民法院宣判。被告 B 公司和 C 公司运营的 AI 写作工具能一键生成某社交平台风格的种草文案，以会员制营利，诱导用户发布虚假消费体验，破坏平台真实内容生态。法院判决被告赔偿原告经济损失及合理开支共计 10 万元，并创新性使用\"四要素判定法\"，明确生成式人工智能服务提供者需尽到合理注意义务，为治理 AI 生成虚假信息划定了法律边界。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp1x5c1d02asslbpovh2h2v3",
-      "title": "谷歌表示，犯罪黑客利用人工智能发现了一个重大的软件漏洞",
-      "title_en": null,
-      "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-12T00:23:17.785Z",
-      "summary": "谷歌披露，犯罪黑客利用人工智能技术发现并利用了一个重大的软件漏洞。该漏洞存在于广泛使用的开源软件中，可能导致大规模数据泄露或系统入侵。谷歌威胁分析小组追踪到此次攻击，并确认黑客借助AI工具显著提升了漏洞挖掘的效率与精准度。目前漏洞细节尚未公开，但相关软件维护方已发布安全更新。这一事件凸显了AI技术被恶意用于网络攻击的现实风险，对全球网络安全防御体系提出了新的挑战。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp1ubsdy01mxslbpdlo0mbkk",
-      "title": "Nadella出庭反击Musk诉讼案：他明明有我的手机号，但从未抱怨过微软与 OpenAI 的合作",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/949/045.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-11T23:10:49.000Z",
-      "summary": "微软CEONadella在Musk诉OpenAI案中作证，反驳了Musk关于OpenAI背离非营利初衷的指控。他出示了Musk2016年的感谢邮件，证明其当时完全支持微软与OpenAI的合作，且微软为此承受了1500万美元亏损。Nadella强调，双方一直保持沟通，但Musk在合作深化期间从未提出抱怨，直至2024年才提起诉讼。他还将2023年OpenAI董事会解雇CEO奥尔特曼的事件评价为\"业余之举\"，并透露自己曾介入帮助奥尔特曼复职。",
       "category": "industry"
     }
   ]

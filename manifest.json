@@ -1,86 +1,86 @@
 {
-  "fetched_at": "2026-05-18T21:47:29.392Z",
-  "date_utc": "2026-05-18",
+  "fetched_at": "2026-05-19T21:55:23.154Z",
+  "date_utc": "2026-05-19",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 1478
+      "ms": 1794
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 282
+      "ms": 554
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 557
+      "ms": 556
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 283
+      "ms": 285
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 279
+      "ms": 283
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 104
+      "ms": 103
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 823
+      "ms": 1057
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 872
+      "ms": 667
     },
     "anthropic_news": {
       "status": "ok",
       "file": "anthropic-news.json",
-      "ms": 4527
+      "ms": 549
     },
     "anthropic_engineering": {
       "status": "ok",
       "file": "anthropic-engineering.json",
-      "ms": 18238
+      "ms": 6678
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 4184
+      "ms": 345
     },
     "follow_builders_x": {
       "status": "ok",
       "file": "follow-builders-x.json",
-      "ms": 16
+      "ms": 78
     },
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 9
+      "ms": 8
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 10
+      "ms": 16600
     },
     "localllama": {
       "status": "ok",
       "file": "localllama.json",
-      "ms": 1271
+      "ms": 564
     },
     "article_bodies": {
       "status": "ok",
       "file": "article-bodies.json",
-      "ms": 4
+      "ms": 5
     }
   }
 }

@@ -1,26 +1,86 @@
 {
-  "count": 17,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpa0moej0v8mslnzs3ph0b54",
-      "title": "Anthropic Claude 5天攻破Apple M5 macOS内核漏洞：5年数十亿防线，被AI一举击穿",
-      "title_en": "http：//x.com/i/article/2056041643103715328",
-      "url": "https://x.com/berryxia/status/2056043674446995887",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-05-17T16:06:26.000Z",
-      "summary": "Anthropic的Claude Mythos Preview在5天内，协助安全团队Calif成功构建并演示了首个公开的、针对Apple M5芯片macOS内核的内存破坏提权利用链。该攻击绕过了苹果耗时5年、投入数十亿美元打造的MIE硬件级内存完整性防护，从普通用户权限通过纯数据操作即可获得root权限。苹果已在后续更新中修复漏洞并致谢。此事件标志着AI驱动的安全研究能力已能极速突破顶尖硬件防护，显著改变了攻防的速度与平衡。",
+      "id": "cmpd5fjlb010tslk16bffs0ly",
+      "title": "研究发现人类说服技巧对AI同样有效",
+      "title_en": "🚨Our paper is out in PNAS： we found classic human persuasion techniques worked on AIs in a \"parahum…",
+      "url": "https://x.com/emollick/status/2056843673145401722",
+      "source": "X：Ethan Mollick (@emollick)",
+      "publishedAt": "2026-05-19T21:05:20.000Z",
+      "summary": "🚨我们的论文已在PNAS发表：我们发现经典的人类说服技巧以一种\"类人\"的方式对AI有效，使其同意不当请求（将顺从率从35%提高到51%）\n该技巧对一系列主流大语言模型有效，尽管较新的模型抵抗力更强 https：//www.pnas.org/doi/10.1073/pnas.2535868123",
       "category": "paper"
     },
     {
-      "id": "cmp9hwi0k0r0dslnzgpk9c6x0",
-      "title": "研究揭示LLM智能体记忆重写机制损害可靠性",
-      "title_en": "New Illinois+ Tsinghua University and other labs study finds that LLM agents still have unreliable m…",
-      "url": "https://x.com/rohanpaul_ai/status/2055919204591902771",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-17T07:51:50.000Z",
-      "summary": "伊利诺伊大学与清华大学等机构的研究发现，LLM智能体虽能从经验中学习，但其通过LLM将原始经历压缩成书面教训的记忆重写机制会损害记忆可靠性。在网页购物、模拟世界及ARC风格谜题等任务测试中，反复重写记忆会导致错误分组、规则过度泛化或过拟合，使智能体遗忘细节或混淆任务类型。例如，GPT-4在无记忆时可100%解决小型ARC-AGI问题集，而建立记忆并流式更新后，性能降至约54%。研究主张智能体记忆系统应重视原始经历作为关键证据，而非自动将所有经验重写为摘要，保留原始证据并选择性摘要效果更佳。",
+      "id": "cmpc1uga61c67slnzs7cijp9e",
+      "title": "开源古代汉字视觉感知评估基准Chronicles-OCR",
+      "title_en": "🎉 🎉 🎉 We're open-sourcing Chronicles-OCR， a visual perception benchmark evaluating VLLMs on ancie…",
+      "url": "https://x.com/TencentHunyuan/status/2056567125205270882",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-05-19T02:46:26.000Z",
+      "summary": "开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。相关论文与代码已开源。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpbur9px1afsslnzn91fx045",
+      "title": "小米斩获 CVPR 2026 NTIRE 赛事三项奖项",
+      "title_en": "小米斩获 CVPR 2026 NTIRE 赛事三项奖项，影像算法取得技术突破",
+      "url": "https://www.ithome.com/0/952/050.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-18T23:22:40.000Z",
+      "summary": "近日，小米在 CVPR 2026 NTIRE 图像恢复与增强赛事中获得三项大奖。小米玄戒多媒体算法团队凭借自研SPANV2方法，以综合得分4.43夺得高效超分辨率赛道冠军，实现了画质与速度的均衡提升。小米大模型应用团队通过双阶段级联框架与单步扩散技术，获得人像修复赛道冠军；并在反光消除赛道通过骨干网络升级与知识蒸馏等策略获得亚军，主观评分达4.31分，多项客观指标位列第一。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpcxg3ae00yxsljld1mkz7nk",
+      "title": "加速遗传线索以逆转细胞衰老",
+      "title_en": "Fast-tracking genetic leads to reverse cellular aging",
+      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-05-18T18:21:39.000Z",
+      "summary": "生物学家利用Co-Scientist这一工具，成功发现能够使人类细胞年轻化的新型因子。该研究通过人工智能加速了遗传线索的探索过程，为逆转细胞衰老领域提供了新的关键因素。这一发现标志着利用技术手段干预生物老化进程取得了实质性进展。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpc5tl9900btsl2i4pmrw04x",
+      "title": "StableVLA：无需额外数据的鲁棒视觉-语言-动作模型",
+      "title_en": "StableVLA： Towards Robust Vision-Language-Action Models without Extra Data",
+      "url": "https://arxiv.org/abs/2605.18287",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-18T00:00:00.000Z",
+      "summary": "视觉-语言-动作模型在面对训练数据未涵盖的视觉干扰时性能显著下降。为此，本文提出一种基于信息论的轻量级适配器模块（IB-Adapter），能从视觉输入中选择性过滤噪声，且无需额外数据或增强策略。该适配器以少于1000万的额外参数，平均提升性能30%。实验表明，即使骨干网络参数仅为0.5B（较现有7B模型小14倍），StableVLA在合成与真实视觉损坏场景下的长时程任务中，仍能达到与大模型相当的鲁棒性，并超越OpenPi基线。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpc3irem1ck7slnzc2q3wcws",
+      "title": "训练后 MoE 可通过自蒸馏跳过一半专家",
+      "title_en": "Post-Trained MoE Can Skip Half Experts via Self-Distillation",
+      "url": "https://arxiv.org/abs/2605.18643",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-18T00:00:00.000Z",
+      "summary": "本文提出零专家自蒸馏适应框架，将训练完成的静态混合专家模型转换为高效动态模型。该方法通过在每个混合专家层注入零输出专家，并利用原始模型作为冻结教师进行两阶段自蒸馏适应，以实现稳定的架构转换。在两个大型开源模型及11个基准测试上的实验表明，该方法能消除超过50%的专家计算量，同时仅带来极小的准确率损失，并显著提升端到端推理速度。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpc80hvi00aksl6k8762pzia",
+      "title": "从可运行到可交付：基于多智能体测试驱动的开发范式用于从需求生成全栈Web应用",
+      "title_en": "From Runnable to Shippable： Multi-Agent Test-Driven Development for Generating Full-Stack Web Applications from Requirements",
+      "url": "https://arxiv.org/abs/2605.17242",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-17T00:00:00.000Z",
+      "summary": "针对编码智能体生成的Web应用超70%不满足需求的问题，本文提出TDDev框架。该框架通过三阶段实现自动化闭环：先将需求转化为结构化测试，再通过浏览器模拟交互验证应用，最后将故障转化为修复报告。首次针对Web应用生成的TDD实证研究发现，引入TDD基础设施可提升质量34-48个百分点。关键结论是最佳协议需与模型生成风格匹配，不匹配将完全抵消TDD优势并最多增加25倍Token消耗。用户研究证实，该框架使人工干预降为零，开发转向自主反馈优化。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpc5tl9a00c0sl2i7z45eqdk",
+      "title": "OProver：一个统一的智能体化形式定理证明框架",
+      "title_en": "OProver： A Unified Framework for Agentic Formal Theorem Proving",
+      "url": "https://arxiv.org/abs/2605.17283",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-17T00:00:00.000Z",
+      "summary": "OProver是首个将智能体化证明过程深度整合到定理证明器训练中的统一框架，而非仅在推理时应用。该框架通过持续预训练和迭代式后训练进行优化，每次迭代均执行智能体化证明，并将新验证的证明索引至OProofs数据集和检索记忆中。OProofs数据集规模庞大，包含1.77M个Lean语句和6.86M个经编译器验证的证明。基于此，OProver-32B模型在MiniF2F、ProverBench和PutnamBench三个基准测试上取得了最优的Pass@32成绩，展现了超越此前所有开源全证明证明器的性能。",
       "category": "paper"
     },
     {
@@ -31,6 +91,36 @@
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-05-16T13:49:59.872Z",
       "summary": "研究人员提出了Δ-Mem，一种专为大型语言模型设计的高效在线内存系统。该系统通过仅存储和更新模型激活的增量变化，而非完整的激活状态，显著降低了内存占用。实验表明，Δ-Mem能将内存使用量减少高达70%，同时保持模型输出的质量基本无损。这一方法有助于在资源受限的环境中部署和运行大规模语言模型，提升其在线推理和持续学习场景下的可行性。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpcxg3af00z3sljlgs9cc9wg",
+      "title": "寻找新型传染病背后的分子开关",
+      "title_en": "Finding the molecular switches behind new infectious diseases",
+      "url": "https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-05-16T08:16:06.000Z",
+      "summary": "Clare Bryant教授利用Co-Scientist这一工具，针对新兴传染病背后的基因触发因素进行研究，旨在揭示驱动这些疾病出现的分子开关机制。这项工作有望帮助快速识别潜在的新发传染病威胁，为疾病监测与早期预警提供新的技术路径。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpcxg3af00z5sljlhu0imr84",
+      "title": "加速肝脏疾病机制的发现",
+      "title_en": "Accelerating discovery of liver disease mechanisms",
+      "url": "https://deepmind.google/blog/accelerating-discovery-of-liver-disease-mechanisms",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-05-16T08:00:15.000Z",
+      "summary": "研究者 Filippo Menolascina 使用 AI 工具 Co-Scientist，旨在寻找新的肝脏疾病治疗方法，并解释现有药物为何仅对部分患者有效。该研究聚焦于加速对疾病机制的理解，以推动更精准的治疗方案开发。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpcxg3af00z8sljlawxpayc5",
+      "title": "WeatherNext如何帮助美国国家飓风中心更好预测飓风Melissa在牙买加的历史性登陆",
+      "title_en": "How WeatherNext helped the National Hurricane Center better predict Hurricane Melissa's historic landfall in Jamaica",
+      "url": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-05-16T03:14:17.000Z",
+      "summary": "WeatherNext AI模型协助气象预报员为社区在飓风Melissa登陆前提供了前所未有的准备时间。该模型通过提升预测准确性与提前量，帮助牙买加等地成功应对了这场历史性的飓风事件，显著增强了灾害预警的时效性。",
       "category": "paper"
     },
     {
@@ -51,16 +141,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-15T00:00:00.000Z",
       "summary": "强化学习与可验证奖励范式面临探索效率瓶颈。为此，研究团队提出NudgeRL框架，其核心是\"策略助推\"技术，通过为每次策略采样注入轻量级策略级上下文，引导模型产生多样化推理轨迹，无需依赖昂贵的外部监督。该框架进一步提出一个统一目标，将奖励分解为上下文间与上下文内组件，并通过蒸馏目标将有效行为迁移回基础策略。在五个高难度数学基准测试中，NudgeRL的表现优于标准GRPO方法，其效果相当于后者使用高达8倍采样预算的结果，且平均表现超过了依赖特权信息的Oracle引导基线，证明了结构化探索的高效性与可扩展性。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp67ce3h0kc6sljxivzzmvqx",
-      "title": "AI自主研究实现突破：智能体在nanoGPT优化赛道上超越人类基准",
-      "title_en": "Prime Intellect 最近把 AI 研究自动化推到了一个新阶段。 他们让 Claude Code（Opus 4.7）和 Codex（GPT 5.5）完全自主运行在 nanoGPT spe…",
-      "url": "https://x.com/berryxia/status/2055074608261578949",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-05-14T23:55:42.000Z",
-      "summary": "Prime Intellect 近期在AI研究自动化领域取得重要进展。他们让Claude Code与Codex智能体完全自主运行于nanoGPT速度挑战的优化器赛道，利用闲置算力完成了近万次实验，消耗约1.4万H200小时。最终，Claude Code将记录提升至2930步，超越了2990步的人类基准。实验显示，智能体在系统整合社区主流优化方法、进行超参数扫描和策略组合方面效率极高，但在要求真正创新的\"新颖性检查\"环节未能突破基线。该项目将所有实验记录、日志和代码开源，使得AI自主研究从概念转化为可复现的现实。",
       "category": "paper"
     },
     {
@@ -131,46 +211,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-13T00:00:00.000Z",
       "summary": "当前软件工程智能体评估仅依赖最终补丁是否通过测试的二元信号，掩盖了解决方案质量的差异。研究分析了2，614条轨迹，发现在可评估的1，815条通过轨迹中，10.7%属于\"幸运通过\"，表现为回归循环、盲目重试等问题。为此，研究团队提出了用于过程级评估的AgentLens框架，并发布了标注质量分数、冗余信号等信息的AgentLens-Bench数据集。基于质量分数，通过轨迹被划分为幸运、扎实和理想三个等级，不同模型的幸运通过率介于0.5%至23.2%之间。若按质量分数而非通过率排名，部分模型的排名变化显著。相关资源已开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp4j0582068osljxjmrn48ll",
-      "title": "ExploitGym：AI智能体能否将安全漏洞转化为真实攻击？",
-      "title_en": "ExploitGym： Can AI Agents Turn Security Vulnerabilities into Real Attacks？",
-      "url": "https://rdi.berkeley.edu/blog/exploitgym",
-      "source": "Berkeley RDI：Blog（AI 安全与评测）",
-      "publishedAt": "2026-05-12T16:00:00.000Z",
-      "summary": "由伯克利RDI、马克斯·普朗克安全与隐私研究所、Anthropic、OpenAI及谷歌等机构研究人员组成的团队，发布了名为ExploitGym的新基准测试。该测试包含898个真实漏洞，要求AI智能体根据漏洞描述生成完整的漏洞利用程序。结果显示，前沿AI模型已能成功利用相当数量的漏洞，即使在启用ASLR等标准防御措施后，部分攻击仍能成功。这证明AI已具备自主将漏洞转化为实际攻击的能力，该技术具有双重用途：既可帮助防御者评估漏洞严重性，也可能降低攻击者的技术门槛。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp1wgrdr024sslbpoczb50vy",
-      "title": "FrontierMath评测发现致命错误，将更新修正后分数",
-      "title_en": "We are conducting an AI-assisted review of FrontierMath： Tiers 1-4. This has flagged fatal errors in…",
-      "url": "https://x.com/EpochAIResearch/status/2053995435870892048",
-      "source": "X：Epoch AI (@EpochAIResearch)",
-      "publishedAt": "2026-05-12T00:27:27.000Z",
-      "summary": "我们正在对FrontierMath的Tiers 1-4进行AI辅助审查。\n这已标记出约三分之一题目存在致命错误，\n且我们相信大多数标记是有效的。\n在完成全面人工审核后，\n我们将在修正的数据集上发布更新后的分数。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp5q0rwt0gc2sljxr0ee3w6y",
-      "title": "Learning to Explore： 通过探索感知策略优化扩展智能体推理能力",
-      "title_en": "Learning to Explore： Scaling Agentic Reasoning via Exploration-Aware Policy Optimization",
-      "url": "https://arxiv.org/abs/2605.08978",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-12T00:00:00.000Z",
-      "summary": "研究提出了一种探索感知的强化学习框架，使LLM智能体能够在不确定性高时才进行自适应探索。该方法通过变分推理设计了细粒度奖励函数，评估探索性行动对改善未来决策的潜力，并引入探索感知分组机制，在优化过程中将探索行动与任务完成行动分离。实验表明，该方法在一系列基于文本和GUI的智能体基准测试中取得了持续的性能提升。相关代码与模型已在GitHub和HuggingFace平台开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp4esqzr05b5sljxesozzpy3",
-      "title": "解决循环：语言和推理的吸引子模型",
-      "title_en": "Solve the Loop： Attractor Models for Language and Reasoning",
-      "url": "https://arxiv.org/abs/2605.12466",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-12T00:00:00.000Z",
-      "summary": "吸引子模型解决了循环Transformer训练不稳定、成本高和深度固定的问题。它通过主干模块生成初始输出嵌入，吸引子模块迭代优化固定点，并利用隐式微分计算梯度，使训练内存与有效深度无关，迭代次数自适应收敛。在语言建模中，相比标准Transformer，困惑度最高降低46.6%，下游任务准确率最高提升19.7%，训练成本更低；一个770M参数的模型性能优于1.3B参数Transformer。在推理任务中，仅2700万参数模型在约1000个示例下，于Sudoku-Extreme和Maze-Hard上准确率分别达91.4%和93.1%，优于Claude、GPT o3等前沿模型。模型还展现出均衡内化现象，训练后初始输出嵌入接近均衡态，推理时可移除求解器而性能几乎无损，实现了迭代优化的可扩展性。",
       "category": "paper"
     }
   ]
