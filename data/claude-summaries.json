@@ -1,53 +1,79 @@
 {
-  "generated_at": "2026-05-16T21:31:43Z",
+  "generated_at": "2026-05-20T22:30:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1temio0/qwen3635ba3b_and_9b_are_officially_on_the_public/": {
-      "en": "The little-coder scaffold paired with Qwen3.6-35B-A3B scored 24.6 percent on the public Terminal-Bench 2.0 leaderboard, edging past Gemini 2.5 Pro on Gemini CLI and Qwen3-Coder-480B on Terminus 2. The 9B variant managed 9.2 percent, showing that sub-10-billion-parameter local models now register meaningfully on hard agentic benchmarks. The author thanks the LocalLLaMA community for pushing the work and frames the next goal as climbing further up the leaderboard with open-source entries.",
-      "zh": "little-coder 框架搭配 Qwen3.6-35B-A3B 在公开的 Terminal-Bench 2.0 上拿下 24.6 分，超过 Gemini CLI 上的 Gemini 2.5 Pro 与 Terminus 2 上的 Qwen3-Coder-480B；9B 版本也跑出 9.2 分，证明十亿参数级以下的本地模型已能在硬核 agentic 基准上获得可量化成绩。作者感谢 LocalLLaMA 社区的推动，并表示下一步将冲击榜首。"
+    "https://openai.com/index/model-disproves-discrete-geometry-conjecture": {
+      "en": "An internal OpenAI reasoning model has disproved a longstanding conjecture in discrete geometry first posed by Paul Erdős in 1946. The planar unit distance problem asks how many pairs among n points in the plane can be exactly one unit apart. The proof draws unexpectedly on algebraic number theory, including class field towers and Golod-Shafarevich theory, to beat the classic rescaled square grid construction. Fields medalist Tim Gowers calls it a milestone in AI mathematics.",
+      "zh": "OpenAI 内部通用推理模型自主破解了 Paul Erdős 1946 年提出的平面单位距离问题中长期未决的猜想。证明意外借助代数数论中的类域塔与 Golod-Shafarevich 理论，构造出超越方格阵列的点集，使单位距离对数获得多项式级提升。Fields 奖得主 Tim Gowers 称这是 AI 数学领域的里程碑，论文已由外部数学家验证。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tf3p6c/local_qwen_36_vs_frontier_models_on_a_coding/": {
-      "en": "The author ran an identical prompt — a single-file HTML canvas of a car with parallax scenery — across frontier models on Perplexity and local quants on an 8 gigabyte RX 5700 XT. Kimi k2.6 Thinking produced the cleanest visual, but the local Qwen3.6-27B at Q4 surprisingly outranked some frontier outputs for natural parallax and chassis motion. The fastest local quants were 4B and 9B variants. The author asks whether frontier models should have done better.",
-      "zh": "作者让前沿模型与本地量化版 Qwen 3.6 跑同一题：用纯 HTML 单文件 canvas 画出带视差背景、车轮转动的侧视开车动画。Kimi k2.6 Thinking 整体观感最干净，但本地 RX 5700 XT 上跑的 Qwen3.6-27B Q4 在视差与车身动态上意外超过部分前沿模型；4B 与 9B 量化版本最快。作者反问：前沿模型是不是该表现更好？"
+    "https://openai.com/index/ramp": {
+      "en": "Ramp's AI Developer Experience team describes using Codex with GPT-5.5 to accelerate code review, delivering substantive pull request feedback in minutes instead of hours. Lead Austin Ray says Codex's deep codebase reasoning catches issues that humans and other AI reviewers miss, and engineers now ask for it by name. The team also uses Codex to build an internal On-Call Assistant agent, treating engineers as orchestrators who direct AI rather than write every line themselves.",
+      "zh": "Ramp 的 AI 开发者体验团队介绍如何用搭载 GPT-5.5 的 Codex 加速代码审查，让工程师在几分钟而非数小时内获得有深度的合并请求反馈。负责人 Austin Ray 表示 Codex 能捕捉人类和其他 AI 评审遗漏的问题，已成为强制审查流程的一部分。团队还用 Codex 构建 On-Call Assistant 智能体，让工程师从写代码转向编排 AI。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1teypb8/strix_halo_llamacpp_mtp_benchmarks_27b_gets_much/": {
-      "en": "On an AMD Ryzen AI MAX+ 395 Strix Halo with Radeon 8060S, benchmarking llama.cpp's multi-token prediction draft mode on Qwen3.6 27B and 35B-A3B shows a clear pattern: generation throughput rises across the board while prompt processing slows. The 27B sees up to 26 percent wall-time savings on long five-turn chats, while 35B-A3B ends roughly tied or slightly slower. Workload shape decides the winner — decode-heavy loads favour multi-token prediction, prefill-heavy loads do not.",
-      "zh": "作者在 AMD Ryzen AI MAX+ 395 Strix Halo 与 Radeon 8060S 上对 llama.cpp 的多 token 预测草稿模式做了 Qwen3.6 27B 与 35B-A3B 基准。结论一致：生成吞吐普遍上升、提示处理变慢。27B 在长五轮对话上墙钟时间最多省 26%；35B-A3B 大致打平或略慢。解码主导的工作流受益最大，预填充主导则相反。",
-      "title_en": "Strix Halo llama.cpp multi-token prediction benchmarks: Qwen3.6 27B gets much faster while 35B-A3B is mixed",
-      "title_zh": "Strix Halo 上 llama.cpp 多 token 预测基准：Qwen3.6 27B 大幅提速，35B-A3B 表现参差"
+    "https://openai.com/index/the-next-phase-of-education-for-countries": {
+      "en": "OpenAI shares progress on its Education for Countries program launched at Davos, with first cohort partners including Estonia, Greece, Italy, Slovakia, Trinidad and Tobago, Kazakhstan, the United Arab Emirates, and Jordan. Estonia's deployment now reaches over twenty thousand students and four thousand six hundred teachers, Jordan's Siraj assistant has engaged a million students, and Kazakhstan has trained eighty four thousand educators. Singapore joins as the latest partner, focused on personalized learning and teacher-driven workshops.",
+      "zh": "OpenAI 公布在达沃斯启动的 Education for Countries 项目首批进展，合作国家包括爱沙尼亚、希腊、意大利、斯洛伐克、特立尼达和多巴哥、哈萨克斯坦、阿联酋与约旦。爱沙尼亚部署已覆盖两万学生与四千六百名教师，约旦 Siraj 助手触达百万学生，哈萨克斯坦已培训八万四千名教育者。新加坡作为最新伙伴加入，聚焦个性化学习与以教师为中心的工作坊。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tee5ms/can_a_5090_with_qwen36_achieve_3000_toks_bring/": {
-      "en": "The poster forked the Open-dLLM diffusion-language-model codebase and used a free coding agent to upgrade it for Qwen3.6, mashing in techniques from a recent latent-diffusion language-model paper. Untrained throughput estimates on a single RTX 5090 reach 3238 tokens per second at 10 diffusion steps on Qwen3.6-35B-A3B and roughly 6500 at 4 steps, with the dense 27B much slower. The author stresses these numbers come from random weights and is seeking compute credits to actually train.",
-      "zh": "作者把 Open-dLLM 扩散语言模型代码库 fork 后，用免费编码代理升级以支持 Qwen3.6，并融合了最新潜在扩散语言模型论文的方法。在单卡 RTX 5090 上的未训练吞吐估算：Qwen3.6-35B-A3B 10 步扩散每秒 3238 个 token，4 步约 6500 个 token；27B 稠密版慢得多。这些都是随机权重下的理论数据，作者正征集算力来完成训练。",
-      "title_en": "Could an RTX 5090 push Qwen 3.6 past 3000 tokens per second using Open-dLLM diffusion",
-      "title_zh": "RTX 5090 用 Open-dLLM 扩散方法跑 Qwen 3.6 能否冲破每秒 3000 个 token"
+    "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything": {
+      "en": "Simon Willison highlights a small HTML app by Mike Veerman that simulates large language model token output speeds from five to eight hundred tokens per second. The tool is useful for getting an intuitive feel for what a model advertised as, say, thirty tokens per second actually looks like when streaming text. Source code is published, making it a handy reference when comparing perceived inference speed across local and hosted models.",
+      "zh": "Simon Willison 推荐了 Mike Veerman 制作的小型 HTML 应用，可模拟大语言模型每秒五到八百 token 的输出速度。这个工具方便用户直观感受某个模型号称每秒三十 token 时实际看起来是什么样子。源代码已开源，在比较本地与托管模型推理速度的真实体感时非常有用。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tecfxm/luce_megakernal_why_nobody_is_taking_about_this/": {
-      "en": "The author asks why the Luce team's megakernel release — shipped alongside their better-known DFlash and PFlash work — has gone almost undiscussed. The megakernel reportedly delivers a 1.8x speedup with much better power efficiency on Nvidia GPUs by eliminating the CPU dispatch between layer boundaries, replacing roughly 100 CUDA kernel launches per token that llama.cpp performs today. The poster wonders how this compares to llama.cpp's existing fused-delta kernel and asks the community for context.",
-      "zh": "作者好奇：Luce 团队与 DFlash、PFlash 一同发布的 megakernel 为何几乎无人讨论？据称在 Nvidia GPU 上能带来 1.8 倍提速、能效大幅提升，关键是消除层间的 CPU 调度——llama.cpp 中每个 token 大约要发起 100 次 CUDA kernel 启动。作者也想知道这与 llama.cpp 已有的 fused-delta kernel 相比如何。",
-      "title_en": "Why is no one discussing the Luce megakernel for faster, more power-efficient local inference",
-      "title_zh": "为何无人讨论 Luce 的 megakernel：可让本地推理更快、更节能"
+    "https://simonwillison.net/2026/May/20/google-io/#atom-everything": {
+      "en": "Simon Willison comments on Google I/O 2026, noting most of the headline announcements are not yet generally available. Gemini Spark is Google's new personal agent product running on Gemini 3.5 Flash plus a closed source Antigravity Go binary, with native access to Gmail, Calendar, Drive and other apps. Simon raises prompt injection concerns given the sensitive data involved, and notes the open source Gemini command line tool will be replaced by a closed source Antigravity command line tool on June eighteenth.",
+      "zh": "Simon Willison 点评 Google I/O 2026，指出大部分头部发布仍未正式可用。Gemini Spark 是 Google 新推出的个人智能体，运行于 Gemini 3.5 Flash 与闭源的 Antigravity Go 二进制之上，可原生访问 Gmail、Calendar、Drive 等应用。他对提示注入风险表示担忧，并提到开源 Gemini 命令行工具将于六月十八日被闭源 Antigravity 命令行替代。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1teqjjl/reduce_your_gpu_power_limit/": {
-      "en": "A self-described layman used MSI Afterburner to sweep GPU power limits while running Qwen3.5 9B on a gaming card, measuring token processing and generation. The takeaway: reducing the power limit barely hurts inference performance, and core or memory clock tweaks also have little impact. Bumping memory clock by 700 to 1000 megahertz nets a modest generation speedup. The author admits to being a non-expert and shares the numbers as a casual starting point for others.",
-      "zh": "一位自称外行的作者用 MSI Afterburner 调整游戏显卡的功耗上限，运行 Qwen3.5 9B 测试 token 处理与生成速度。结论是：降低功耗上限对推理性能影响极小，调整核心或显存频率影响也有限；将显存频率上调 700 到 1000 兆赫兹能带来温和的生成提速。作者直言只是业余分享，供大家参考起步。"
+    "https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything": {
+      "en": "Simon Willison releases version 0.32 of his llm-gemini plugin, which lets the llm command line tool access Google's Gemini family of models. The headline change is support for the newly released gemini-3.5-flash model. Simon also links to his accompanying notes on Gemini 3.5 Flash and the obligatory pelican on a bicycle drawing he produced via the updated plugin to give a feel for the new model's coding capabilities.",
+      "zh": "Simon Willison 发布 llm-gemini 0.32 版插件，更新让 llm 命令行工具可以调用 Google 全新发布的 gemini-3.5-flash 模型。除模型支持之外，他还附上对 Gemini 3.5 Flash 的笔记，以及用该插件生成的鹈鹕骑自行车 SVG 测试图，方便读者直观体会新模型的编码能力。",
+      "title_en": "Simon Willison's llm-gemini plugin reaches version zero point three two, adding support for Gemini 3.5 Flash",
+      "title_zh": "Simon Willison 的 llm-gemini 插件发布 0.32 版，加入对 Gemini 3.5 Flash 的支持"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1te9unl/allenai_has_been_iterating_on_their_molmoact2/": {
-      "en": "Allen AI keeps releasing fine-tunes of MolmoAct2, a 5 billion parameter vision-language-action model for robot control. New checkpoints target different datasets: LIBERO for general robotics tasks, DROID for interactive tasks, and BimanualYAM and SO100_101 for absolute joint-pose control. Everything ships fully open — weights, complete training datasets including pretraining, training source code, and technical papers covering theory and evaluations. Anyone working on LLM-driven robotics should give the family a look.",
-      "zh": "Allen AI 持续迭代 MolmoAct2 系列：一款用于机器人控制的 50 亿参数视觉-语言-动作模型。最近放出多款微调：LIBERO 做通用机器人任务、DROID 做交互任务、BimanualYAM 与 SO100_101 用于绝对关节姿态控制。权重、含预训练在内的全套训练数据集、训练源码与技术论文均开源。做 LLM 驱动机器人的人值得关注。"
+    "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything": {
+      "en": "Google released Gemini 3.5 Flash straight to general availability at Google I/O and is rolling it out across the Gemini app, Google Search AI Mode, Antigravity, and Gemini Enterprise. It supports just over one million input tokens but drops computer use. The price has tripled compared to the previous 3 Flash Preview, approaching Gemini 3.1 Pro pricing. Simon notes all three major AI labs are now probing API customer price tolerance with similar increases.",
+      "zh": "Google 在 I/O 大会直接将 Gemini 3.5 Flash 推向正式可用，覆盖 Gemini 应用、Google 搜索 AI 模式、Antigravity 与 Gemini Enterprise，支持约一百万输入 token 但不再具备电脑操作能力。价格相较上一代 3 Flash Preview 翻了三倍，已逼近 Gemini 3.1 Pro。Simon 指出三大 AI 实验室正联手试探 API 用户的价格承受力。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tevjjr/macos_support_in_lemonade_has_graduated_out_of/": {
-      "en": "Lemonade, a local AI runtime in the vein of LM Studio and Ollama, has moved its macOS support out of beta. All major features now run on Mac, including OmniRouter, coding, image generation, speech generation, and transcription. The team highlights its open-source, zero-telemetry stance, a 3 megabyte portable binary that targets Linux, Windows, and macOS from a single codebase, and omni-modal input and output for images and speech. An iPhone companion app is on the way.",
-      "zh": "Lemonade 是一款类似 LM Studio 或 Ollama 的本地 AI 运行时，宣布 macOS 支持正式毕业出 Beta。OmniRouter、编码、图像生成、语音生成与转录等主要功能均已在 Mac 上可用。团队强调开源、零遥测，提供 3 兆字节便携二进制，可在 Linux、Windows 与 macOS 一次编写处处部署，并支持图像与语音多模态输入输出。iPhone 配套应用也即将推出。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tie6gy/qwen37_max_scored_by_artificial_analysis_27b35b/": {
+      "en": "A LocalLLaMA post tracks Qwen 3.7 Max landing fifth on the Artificial Analysis intelligence leaderboard, roughly on par with GPT-5.4 at extra-high effort and a notch above the freshly released Gemini 3.5 Flash. At the lower end the chart shows DeepSeek V4 Flash and Qwen 3.6 at twenty seven billion parameters, which sits about six points behind its Max sibling. Commenters are now waiting for smaller Qwen 3.7 open weight releases to follow.",
+      "zh": "LocalLLaMA 帖子记录 Qwen 3.7 Max 在 Artificial Analysis 智能榜单上排名第五，几乎与极高强度档的 GPT-5.4 持平，略高于刚发布的 Gemini 3.5 Flash。榜单下端可见 DeepSeek V4 Flash 与二百七十亿参数版本的 Qwen 3.6，后者落后其 Max 大哥约六分。社区正等待 Qwen 3.7 系列较小的开放权重版本登场。",
+      "title_en": "Qwen 3.7 Max ranks fifth on the Artificial Analysis leaderboard while users wait for smaller open weight siblings",
+      "title_zh": "Qwen 3.7 Max 在 Artificial Analysis 榜单排名第五，社区等待较小的开放权重版本"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tf2cxh/how_i_started_programming_differently_over_the/": {
-      "en": "A long-time programmer describes how their workflow has shifted: they no longer use in-IDE LLM autocomplete, and the file-context-feeding script they wrote a year ago is also gone. Today they open a coding-agent CLI without launching an IDE, use at-mentions to point at files, and lean on the agent to read logs, write tests, and follow a plan.md broken into small tasks. The IDE survives mostly for Git diff visualisation, step-by-step debugging, and code navigation.",
-      "zh": "一位老程序员分享工作流的变化：他不再用 IDE 里的 LLM 自动补全，连一年前自己写的喂上下文脚本也已弃用。如今直接打开编码代理 CLI，用 @ 指向文件，让代理读日志、写测试，并按 plan.md 中拆好的小任务一条条推进。IDE 主要只剩 Git diff 可视化、单步调试与代码跳转，使用频率只占 5% 到 10%。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ti99an/lm_studio_finally_added_support_for_mtp/": {
+      "en": "LM Studio's 0.4.14 Build 2 beta finally adds support for Multi-Token Prediction speculative decoding, provided the underlying llama.cpp engine is updated to version 2.15.0. The feature is not enabled by default, so users must select the manual model load parameters option and toggle Multi-Token Prediction on before loading a compatible model. This brings the desktop runner into parity with the recent mainline llama.cpp merge.",
+      "zh": "LM Studio 0.4.14 Build 2 测试版终于加入多 Token 预测推测解码支持，前提是底层 llama.cpp 引擎更新到 2.15.0 版。该功能默认关闭，用户需在加载模型前手动选择模型加载参数选项并打开多 Token 预测开关。本次更新让桌面端跟上了 llama.cpp 主线最近的合并。",
+      "title_en": "LM Studio adds support for Multi-Token Prediction speculative decoding in its latest beta build",
+      "title_zh": "LM Studio 最新测试版加入多 Token 预测推测解码支持"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tf15eh/github_richardr1126openreader_an_opensource/": {
-      "en": "OpenReader 3.0 is an open-source Next.js web app for reading and listening to EPUB, PDF, TXT, Markdown, and DOCX files. It supports OpenAI, Replicate, Deepinfra, and self-hosted text-to-speech backends like Kokoro-FastAPI and KittenTTS-FastAPI, stores documents and audio on your own server, and exports m4b or mp3 audiobooks with chapter metadata via ffmpeg. The new release adds multi-page audio preload, persistent server-side caching, an admin panel for multi-provider keys, and runtime feature flags.",
-      "zh": "OpenReader 3.0 是一款开源的 Next.js 跟读应用，可朗读 EPUB、PDF、TXT、Markdown 与 DOCX。支持 OpenAI、Replicate、Deepinfra 以及自托管的 Kokoro-FastAPI、KittenTTS-FastAPI 等语音合成后端，文档与音频均落在自家服务器，可通过 ffmpeg 导出带章节信息的 m4b 或 mp3 有声书。新版本加入多页音频预加载、持久化缓存、多提供商管理后台与运行时特性开关。",
-      "title_en": "OpenReader 3.0 ships open-source read-along document server with high-quality text-to-speech and audiobook export",
-      "title_zh": "OpenReader 3.0 发布：开源跟读文档服务器，含高品质语音合成与有声书导出"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tipihx/qwen_36_35b_gguf_ntp_vs_mtp_quantization_results/": {
+      "en": "The ByteShape team released two families of Qwen 3.6 thirty five billion parameter quantizations, one using standard next token prediction and one using multi-token prediction. Across cards from the RTX 4090 and 5090 down to the 5060 Ti, plus Intel and AMD CPUs and a Raspberry Pi 5, the counterintuitive finding was that picking the largest quantization that fits in memory generally won on both quality and speed. Multi-token prediction gave a twenty to forty percent GPU generation speedup but was not worthwhile on CPUs.",
+      "zh": "ByteShape 团队发布两套 Qwen 3.6 三百五十亿参数量化模型，分别采用标准下一 Token 预测与多 Token 预测。覆盖 RTX 4090、5090、5060 Ti 以及 Intel、AMD 处理器和树莓派 5 的测试显示，对下一 Token 预测来说，能装下显存的最大量化反而在质量与速度上都领先。多 Token 预测在 GPU 上能带来百分之二十到四十的生成提速，但在 CPU 上并不划算。",
+      "title_en": "ByteShape benchmarks Qwen 3.6 at thirty five billion parameters, comparing next token and multi-token prediction quantizations across GPUs and CPUs",
+      "title_zh": "ByteShape 对比 Qwen 3.6 三百五十亿参数模型在多种 GPU 与 CPU 上的下一 Token 预测与多 Token 预测量化效果"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tiixql/rtx_5080_16gb_qwen36_35b_moe_at_128k_context_56/": {
+      "en": "A detailed llama.cpp benchmark on a RTX 5080 with sixteen gigabytes of video memory finds that the Qwen 3.6 thirty five billion parameter Mixture of Experts model runs at fifty six tokens per second generation and roughly fifteen hundred tokens per second prompt processing at the full one hundred twenty eight thousand token context. Surprisingly, Multi-Token Prediction does not help at long context because the key value cache dominates memory either way. The author posts reproducible scripts and raw data.",
+      "zh": "在 RTX 5080 十六 GB 显存上的详细 llama.cpp 基准测试显示，Qwen 3.6 三百五十亿参数混合专家模型在十二万八千上下文下，生成速度每秒五十六 Token，提示处理约每秒一千五百 Token。出人意料的是，长上下文下多 Token 预测并不能提速，因为键值缓存无论如何都会占满显存。作者附上完整可复现脚本与原始数据。",
+      "title_en": "RTX 5080 with sixteen gigabytes of video memory runs Qwen 3.6 Mixture of Experts at one hundred twenty eight thousand token context at fifty six tokens per second",
+      "title_zh": "RTX 5080 十六 GB 显存运行 Qwen 3.6 混合专家模型，十二万八千上下文下达每秒五十六 Token"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tizmar/re_what_ever_happened_to_coheres_commanda_series/": {
+      "en": "Cohere cofounder Nick Frosst announces the launch of Command A+, the company's first Mixture of Experts model, released under Apache 2.0 to keep it practical for smaller teams and individual developers. Frosst says the team prioritized efficiency and aggressive quantization so the model runs well on just one or two GPUs, positioning it among the fastest and most responsive in its class. He invites the open source community to share feedback and projects directly.",
+      "zh": "Cohere 联合创始人 Nick Frosst 宣布发布 Command A+，这是公司首款混合专家模型，依然以 Apache 2.0 许可证开源，方便小团队与开发者使用。Frosst 表示团队重点打磨效率与激进量化，让模型只需一到两块 GPU 即可流畅运行，跻身同类最快、响应最敏捷之列。他邀请开源社区直接反馈使用体验与项目。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ti5sxu/running_deepseekv4_locally_with_4x_legacy_rtx/": {
+      "en": "A budget build of under two thousand five hundred dollars runs DeepSeek V4 Flash, a Mixture of Experts model with two hundred eighty four billion total and thirteen billion active parameters, on four legacy RTX 2080 Ti cards plus a Xeon processor and one terabyte of system memory. The team wrote custom Turing CUDA kernels for eight bit matrix multiplication, designed heterogeneous memory offloading, and overlapped computation with expert routing communication. Prefill speed reaches roughly two hundred fifty five tokens per second, with full code open sourced.",
+      "zh": "一台预算不到两千五百美元的机器，用四张二手 RTX 2080 Ti、Xeon 处理器和一 TB 内存，本地运行了 DeepSeek V4 Flash 这一二千八百四十亿总参数、一百三十亿激活参数的混合专家模型。团队为 Turing 架构编写自定义 CUDA 核函数实现八位矩阵乘法，设计异构显存与内存调度，并将计算与专家路由通信重叠。最终预填充速度约每秒二百五十五 Token，全部代码已开源。",
+      "title_en": "Running DeepSeek V4 locally on four legacy RTX 2080 Ti cards under a twenty five hundred dollar budget, with custom Turing kernels and eight bit quantization reaching about two hundred fifty five prefill tokens per second",
+      "title_zh": "用四张二手 RTX 2080 Ti 在两千五百美元预算内本地跑通 DeepSeek V4，自定义 Turing 核函数与八位量化达到每秒约二百五十五预填充 Token"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tikgej/a_streamlined_hugging_face_model_search_utility/": {
+      "en": "A LocalLLaMA developer shares a single file HTML and JavaScript utility for searching Hugging Face that lets users filter models by date range, parameter count, and quantization type, and organize results by base model author and derivative authors. About ninety percent of the code was vibe coded with Qwen 3.6 at twenty seven billion parameters inside OpenCode, with light manual touch ups for alignment. Results are cached and the tool sips at the Hugging Face API after the first heavy load.",
+      "zh": "一位 LocalLLaMA 开发者分享了一个单文件 HTML 加 JavaScript 的 Hugging Face 模型搜索工具，可按日期范围、参数量与量化类型筛选，并按基础模型作者与衍生作者分层组织结果。约九成代码由二百七十亿参数的 Qwen 3.6 模型在 OpenCode 中协助生成，作者只手动微调对齐。首次搜索后结果会缓存，对 Hugging Face API 调用极为节制。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tivvd4/i_got_qwen3vlembedding2b_working_with_rkllm_on_an/": {
+      "en": "A LocalLLaMA hobbyist reports getting the Qwen 3 vision language embedding model at two billion parameters running on an Orange Pi 5b single board computer through the rkllm runtime. The included demo script compares over one thousand three hundred phrases for similarity against a live webcam image, processing roughly one image every ten seconds. The author had been waiting for someone else to land the port on this Rockchip platform and ended up doing it themselves.",
+      "zh": "一位 LocalLLaMA 爱好者报告称，他通过 rkllm 运行时让二十亿参数的 Qwen 3 视觉语言嵌入模型在 Orange Pi 5b 单板计算机上跑了起来。配套演示脚本可将一千三百多条短语与实时摄像头画面比较相似度，每张图大约十秒处理完。作者本来一直在等别人在这块 Rockchip 平台上完成移植，最终决定亲自上阵。",
+      "title_en": "Qwen 3 vision language embedding model at two billion parameters runs on an Orange Pi 5b single board computer via the rkllm runtime",
+      "title_zh": "二十亿参数的 Qwen 3 视觉语言嵌入模型借助 rkllm 在 Orange Pi 5b 单板计算机上跑通"
     }
   }
 }
