@@ -1,8 +1,28 @@
 {
-  "count": 21,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpeliem90dilslk1r2and0l6",
+      "title": "ZCube网络架构：破解大模型推理网络瓶颈",
+      "title_en": "http：//x.com/i/article/2057206923208884224",
+      "url": "https://x.com/Zai_org/status/2057216685040443743",
+      "source": "X：智谱 Z.ai (@Zai_org)",
+      "publishedAt": "2026-05-20T21:47:33.000Z",
+      "summary": "随着长上下文与Prefill-Decode分离部署成为主流，GPU集群网络已从次要部件转变为制约推理吞吐、尾部延迟和成本的关键瓶颈。传统静态网络拓扑与动态非对称的KV Cache流量模式冲突，导致局部拥塞。为此，Z.ai、Harnets.AI与清华大学联合研发了ZCube网络架构。该架构采用完全扁平化拓扑与混合接入设计，从源头解耦并分散流量以减少拥塞。在GLM-5.1生产测试中，ZCube在保持GPU与软件栈不变的前提下，实现了交换机与光模块成本降低33%、平均推理吞吐提升15%、首token时间P99降低40.6%的显著效果，证明网络架构创新能有效释放硬件潜力。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpefpfrr0c2pslk1vqgx7vfz",
+      "title": "OpenAI模型证伪了离散几何中的一个核心猜想",
+      "title_en": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-20T00:00:00.000Z",
+      "summary": "OpenAI开发的人工智能模型成功解决了数学界悬而未决逾80年的\"单元距离问题\"，并由此推翻了离散几何领域的一个核心猜想。这一突破被视作人工智能驱动数学研究的里程碑事件，标志着AI在基础科学理论探索中取得了实质性进展。该模型通过创新算法处理复杂的几何问题，展示了机器在自动化发现与验证数学猜想方面的巨大潜力。",
+      "category": "paper"
+    },
     {
       "id": "cmpd5fjlb010tslk16bffs0ly",
       "title": "研究发现人类说服技巧对AI同样有效",
@@ -21,6 +41,26 @@
       "source": "X：腾讯混元 (@TencentHunyuan)",
       "publishedAt": "2026-05-19T02:46:26.000Z",
       "summary": "开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。相关论文与代码已开源。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpe2ulhk091fslk1debhyygu",
+      "title": "优化_anything：通用文本参数优化API",
+      "title_en": "optimize_anything： A Universal API for Optimizing any Text Parameter",
+      "url": "https://arxiv.org/abs/2605.19633",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-19T00:00:00.000Z",
+      "summary": "该研究提出了一种基于大语言模型的通用文本优化系统，将优化问题统一表述为通过评分函数改进文本产物。在六项任务中达到最优结果：智能体架构使Gemini Flash在ARC-AGI上的准确率从32.5%提升至89.5%；调度算法降低40%云成本；87%的CUDA内核匹配或超越PyTorch表现；圆包装问题超越AlphaEvolve。实验表明，可操作的附加信息比仅使用分数反馈收敛更快、得分更高；多任务搜索通过跨任务迁移学习，在同等预算下优于独立优化，且任务数量越多收益越大。该工作首次证明基于LLM的文本优化是通用问题解决范式，能统一传统领域特定算法。系统已开源，支持多种后端。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpdjhbyu04gqslk1o0dakqxr",
+      "title": "GoLongRL：面向能力的长期上下文强化学习与多任务对齐",
+      "title_en": "GoLongRL： Capability-Oriented Long Context Reinforcement Learning with Multitask Alignment",
+      "url": "https://arxiv.org/abs/2605.19577",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-19T00:00:00.000Z",
+      "summary": "GoLongRL是一个全开源的长期上下文强化学习方案，聚焦于使用可验证奖励的强化学习。该工作提出了面向能力的数据构建方法，公开发布了包含23K样本的数据集、完整构建管线及训练代码。数据集依据长期上下文能力分类，涵盖9种任务类型，由真实文档生成的问答对构成；实验证明该数据集性能优于闭源的QwenLong-L1.5数据集。训练得到的Qwen3-30B-A3B模型在长期上下文任务上达到了与DeepSeek-R1-0528等先进模型可比的性能。此外，提出了TMN-Reweight多任务优化方法，通过任务级归一化和难度自适应加权，在提升平均性能的同时保持或增强了通用能力。",
       "category": "paper"
     },
     {
@@ -181,36 +221,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-14T00:00:00.000Z",
       "summary": "针对传统检索无法理解复杂意图、而前沿大语言模型成本高且存在幻觉的问题，研究团队提出了自我进化的智能文献检索系统PaSaMaster。该系统通过迭代式意图分析、检索与排序，将文献检索转变为动态演进的过程，并采用三项关键设计：利用排序证据揭示信息缺口以优化搜索；将检索定义为意图-论文相关性排序任务，从根本上杜绝虚假文献；通过分离规划与检索来提升效率，仅用大模型理解意图，而将大规模检索与评分交由轻量模型处理。在涵盖38个学科的基准测试中，该系统将传统关键词检索的F1分数提升15.6倍，完全消除了文献幻觉，且性能超越GPT-5.2达30%，计算成本仅为后者的1%。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp6bj8c100i9slnz570dpbpu",
-      "title": "通过简单统一的扩展实现奥赛金牌级推理",
-      "title_en": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
-      "url": "https://arxiv.org/abs/2605.13301",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-13T00:00:00.000Z",
-      "summary": "本文提出一种将预训练推理模型转化为严格奥赛求解器的统一方法。该方法首先采用反向困惑度课程进行监督微调，以灌输严谨的证明搜索与自我检查行为；随后通过两阶段强化学习流程扩展这些能力，最终结合测试时扩展提升性能。基于此方案训练的30B参数模型SU-01，在仅使用约34万条短轨迹微调和200步强化学习后，能稳定处理超过10万token的长轨迹难题，并在IMO、USAMO、IPhO等数学与物理奥赛中达到金牌级表现，同时展现出向数学物理之外科学领域的强推理泛化能力。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp509d4w0a9tsljx6hcg0fl1",
-      "title": "检索廉价，代码为王：基于可执行程序的多跳推理检索增强生成",
-      "title_en": "Retrieval is Cheap， Show Me the Code： Executable Multi-Hop Reasoning for Retrieval-Augmented Generation",
-      "url": "https://arxiv.org/abs/2605.12975",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-13T00:00:00.000Z",
-      "summary": "针对多跳检索增强生成（RAG）中推理过程隐式、检索漂移及错误难以自查的问题，研究团队提出PyRAG框架，将多跳推理任务重构为程序合成与执行过程。该框架将推理步骤编写为可执行的Python程序，通过显式调用检索与问答工具实现多步计算，使中间状态变量化、反馈确定化，并生成完整可检查的推理轨迹。该方法无需额外训练即可支持基于编译器的自我修复与执行驱动的自适应检索。在PopQA、HotpotQA等五个问答基准测试中，PyRAG在无需训练和强化学习训练两种设定下均显著优于基线模型，尤其在组合式多跳数据集上提升显著。相关资源已开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp4vz0fs098tsljxjdo11tf7",
-      "title": "AgentLens：揭示软件工程智能体评估中的\"幸运通过\"问题",
-      "title_en": "AgentLens： Revealing The Lucky Pass Problem in SWE-Agent Evaluation",
-      "url": "https://arxiv.org/abs/2605.12925",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-13T00:00:00.000Z",
-      "summary": "当前软件工程智能体评估仅依赖最终补丁是否通过测试的二元信号，掩盖了解决方案质量的差异。研究分析了2，614条轨迹，发现在可评估的1，815条通过轨迹中，10.7%属于\"幸运通过\"，表现为回归循环、盲目重试等问题。为此，研究团队提出了用于过程级评估的AgentLens框架，并发布了标注质量分数、冗余信号等信息的AgentLens-Bench数据集。基于质量分数，通过轨迹被划分为幸运、扎实和理想三个等级，不同模型的幸运通过率介于0.5%至23.2%之间。若按质量分数而非通过率排名，部分模型的排名变化显著。相关资源已开源。",
       "category": "paper"
     }
   ]

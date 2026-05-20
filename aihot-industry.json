@@ -1,16 +1,96 @@
 {
-  "count": 41,
+  "count": 45,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpd57aiz00zqslk11q0lp88m",
-      "title": "创新一周年：庆祝Google Cloud x NVIDIA开发者社区达到10万会员",
-      "title_en": "One Year of Innovation： Celebrating 100k Members in the Google Cloud x NVIDIA Developer Community",
-      "url": "https://developers.googleblog.com/one-year-of-innovation-celebrating-100k-members-in-the-google-cloud-x-nvidia-developer-community",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-19T21:25:58.418Z",
-      "summary": "Google Cloud与NVIDIA开发者社区迎来成立一周年，会员规模突破10万。社区为开发者提供先进AI基础设施与资源支持，包括LLM优化、GPU加速数据分析等专项学习路径及专家网络研讨会。第二年计划将进一步扩展，推出实践实验室、工程活动及聚焦代理式AI增长的专项内容。",
+      "id": "cmpejljy20d0uslk16n56adrz",
+      "title": "英伟达 2027 财年第一财季归母净利润 583.21 亿美元，同比增长 211%",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/953/088.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-20T20:25:27.000Z",
+      "summary": "英伟达2027财年第一季度业绩创新高，营业总收入达816.15亿美元，同比增长85%。净利润为583.21亿美元，同比激增211%。数据中心业务是核心增长引擎，营收达752亿美元，同比大增92%。公司毛利率提升至74.9%，并宣布了800亿美元股票回购及提高季度股息。展望第二季度，公司预计营收为910亿美元。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpegqt3n0cbsslk168f7p6g7",
+      "title": "Meta万人重组：裁员与AI转型并举",
+      "title_en": "CNBC： Meta starts major cuts with 8，000 layoffs as AI shakes the tech giant. Along with the layoffs…",
+      "url": "https://x.com/rohanpaul_ai/status/2057177976492720363",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-05-20T19:13:44.000Z",
+      "summary": "Meta启动大规模裁员，计划削减约8000个岗位。与此同时，约7000名员工将被调配至新的AI相关职位。此次调整并非单纯的削减成本，更是公司围绕AI进行内部结构重塑的关键举措，重点将资源集中于AI基础设施、基础模型的构建以及AI技术的商业化，旨在打造从模型训练、产品开发到实现盈利的完整链条。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpeejfgx0bt3slk14fyeulgg",
+      "title": "Gemini与XPRIZE联合举办全球黑客松",
+      "title_en": "Build with Gemini to change the world 🌍 We're launching a global hackathon with @xprize to solve r…",
+      "url": "https://x.com/googleaidevs/status/2057166550243872920",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-05-20T18:28:20.000Z",
+      "summary": "用Gemini构建，改变世界🌍\n\n我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。\n\n点击加入：https：//www.geminixprize.com/",
+      "category": "industry"
+    },
+    {
+      "id": "cmpea57r90arpslk1o2xw1hnw",
+      "title": "谷歌的人工智能正遭到操纵。这家搜索巨头正在悄然反击",
+      "title_en": null,
+      "url": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-20T16:20:07.607Z",
+      "summary": "谷歌的AI系统正面临被操纵的风险。为应对这一挑战，这家科技巨头已悄然启动防御措施，以保护其AI生成内容的结果免受恶意干扰。此举旨在确保搜索和AI服务的可靠性与可信度，反映了当前人工智能安全领域日益增长的对抗性问题。谷歌在未公开宣传的情况下，正在通过技术手段加强对其AI系统的防护。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpdxbe1707r9slk16ubu3l4a",
+      "title": "Qwen 2026大会：AI原生云架构蓝图发布",
+      "title_en": "Qwen Conference 2026： The Keynote Agenda AI-Native Cloud， Agent Native Cloud architectures， the Fut…",
+      "url": "https://x.com/alibaba_cloud/status/2057046828692934749",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-20T10:32:36.000Z",
+      "summary": "Qwen Conference 2026：主题演讲议程\n\nAI原生云、Agent原生云架构、推理的未来，以及多模态视觉技术发布。没有冗余内容，只有面向全球规模的工程蓝图。\n\n注册：https：//click.qwencloud.com/m/20000000190/",
+      "category": "industry"
+    },
+    {
+      "id": "cmpdy5tth07ytslk1ca1x16rs",
+      "title": "投资超 600 亿美元，孙正义豪赌 OpenAI 引发内部质疑\"迷信奥尔特曼如追星\"",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/953/021.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-20T10:15:47.000Z",
+      "summary": "软银对OpenAI的投资承诺已超600亿美元，引发内部对孙正义过度信任其创始人奥尔特曼的担忧。部分高管质疑将巨额资本集中于单一公司存在风险，且软银虽持股超10%却无董事会席位，缺乏决策影响力。同时，Anthropic等竞争对手的崛起加剧了对OpenAI领先地位的挑战。尽管软银表示对OpenAI抱有\"高度信心\"，并已从中获得账面收益，但其股价下跌及信用展望被下调反映出市场对其豪赌的顾虑。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpdrp1y406erslk17f3hcrfi",
+      "title": "欧盟委员会发布《欧盟人工智能法》高风险AI系统分类指导草案并开启公众咨询",
+      "title_en": "EU： Commission publishes draft guidelines on classifying high-risk AI systems under Article 6 of the EU AI Act and opens consultation The European Commission published draft guidelines for classifying high-risk AI systems under the EU AI Act and opened a consultation period for stakeholder input.",
+      "url": "https://www.dataguidance.com/news/eu-commission-publishes-draft-guidelines-classifying",
+      "source": "DataGuidance：Artificial Intelligence（网页）",
+      "publishedAt": "2026-05-20T07:53:27.780Z",
+      "summary": "欧盟委员会于2026年5月19日发布了关于《欧盟人工智能法》第六条项下高风险AI系统分类的指导草案。该草案旨在为AI系统的提供商、部署者及市场监管机构提供明确的分类标准，以确保在欧盟范围内执法的一致性。分类主要依据AI系统的预期用途，例如作为受监管产品的组件或用于特定高风险场景。草案也规定了部分豁免条件，例如仅执行辅助性任务时可能不被视为高风险。公众咨询期至206月23日。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpdjg8r504geslk199lfb9y0",
+      "title": "OpenAI向所有YC创业公司提供200万美元API投资",
+      "title_en": "openai offering to invest $2M in API credits in every @ycombinator startup in the current batch. com…",
+      "url": "https://x.com/gdb/status/2056948285038887255",
+      "source": "X：Greg Brockman (@gdb)",
+      "publishedAt": "2026-05-20T04:01:02.000Z",
+      "summary": "OpenAI宣布向Y Combinator当前批次的每家创业公司提供价值200万美元的API信用额度投资，以换取股权。此举旨在为初创公司提供AI算力资源，支持下一代创新。这让人联想到Sam Altman在YC合伙人时期，Yuri Milner向每家创业公司提供投资的先例。OpenAI希望通过此举释放创业者潜力，推动AI应用创新。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpdgzagl03tyslk1ekr6memz",
+      "title": "消息称微软内部示警：GitHub 面临生存级风险，AI 编程工具削弱托管必要性",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/952/645.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-20T02:39:19.000Z",
+      "summary": "微软内部发出警告，称其代码托管平台GitHub正面临\"生存级风险\"。主要原因是Cursor、Claude Code等AI编程助手兴起，改变了开发者工作流，削弱了持续将代码上传至GitHub的必要性。为统一工具链并控制成本，微软已要求部分团队在2026年6月底前停止试用Claude Code，转而使用自有工具GitHub Copilot CLI。同时，OpenAI曾考虑自建替代平台，也加剧了对GitHub地位的潜在威胁。",
       "category": "industry"
     },
     {
@@ -174,6 +254,16 @@
       "category": "industry"
     },
     {
+      "id": "cmpd57aiz00zqslk11q0lp88m",
+      "title": "创新一周年：庆祝Google Cloud x NVIDIA开发者社区达到10万会员",
+      "title_en": "One Year of Innovation： Celebrating 100k Members in the Google Cloud x NVIDIA Developer Community",
+      "url": "https://developers.googleblog.com/one-year-of-innovation-celebrating-100k-members-in-the-google-cloud-x-nvidia-developer-community",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-18T16:00:00.000Z",
+      "summary": "Google Cloud与NVIDIA开发者社区迎来成立一周年，会员规模突破10万。社区为开发者提供先进AI基础设施与资源支持，包括LLM优化、GPU加速数据分析等专项学习路径及专家网络研讨会。第二年计划将进一步扩展，推出实践实验室、工程活动及聚焦代理式AI增长的专项内容。",
+      "category": "industry"
+    },
+    {
       "id": "cmpbb1r3q15vxslnz1pi8xz2l",
       "title": "百度核心AI业务Q1营收超136亿元",
       "title_en": "Our AI businesses continued to scale in Q1 2026. Revenue from Baidu Core AI-powered Business exceed…",
@@ -211,6 +301,16 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-16T13:46:46.000Z",
       "summary": "国家人工智能应用中试基地（具身智能）5月16日在浙江杭州挂牌启用，为机器人提供国家级职业技能训练场。该基地是集场景体验、技术展示、研发合作、产业赋能于一体的综合性平台，旨在推动具身智能技术从实验室迈向现实应用。杭州市于5月1日施行首部具身智能机器人地方性法规，支持核心研发、平台建设和场景开放。目前杭州已集聚机器人产业相关企业700余家，2025年具身智能产业集群产值达1068亿元。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpdn6e4105d9slk1n601sqb7",
+      "title": "加强新加坡的AI未来：一项新的国家合作",
+      "title_en": "Strengthening Singapore's AI Future： A New National Partnership",
+      "url": "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-05-16T09:13:34.000Z",
+      "summary": "新加坡与Google DeepMind达成战略合作，共同将前沿人工智能技术应用于解决该国在医疗健康、教育创新和可持续发展等领域的复杂挑战。双方旨在通过该国家级伙伴关系，推动AI技术在实际场景中的落地，以应对社会性难题，提升国家科技竞争力。",
       "category": "industry"
     },
     {
@@ -351,66 +451,6 @@
       "source": "X：小米 MiMo (@XiaomiMiMo)",
       "publishedAt": "2026-05-14T05:33:28.000Z",
       "summary": "MiMo V2.5 Pro 在 @DesignArena 上刚刚获得第三名！🎉\n\nMiMo V2.5 Pro （Thinking） 在总排行榜上比 MiMo-V2.5 提升了 8 个名次，在前端编码任务中达到与 Claude Sonnet 4.6 相同的性能水平。\n\n衷心祝贺 @XiaomiMiMo 团队取得这些进步！",
-      "category": "industry"
-    },
-    {
-      "id": "cmp4eqy8u059osljxs6c4bk0v",
-      "title": "Anthropic 首次在 B2B 采用率上超越 OpenAI，Ramp 支出数据显示",
-      "title_en": "Anthropic overtakes OpenAI in B2B adoption for the first time according to Ramp spending data",
-      "url": "https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-05-13T18:23:15.000Z",
-      "summary": "根据 Ramp AI 指数数据，Anthropic 在美国企业客户中的采用率达到 34.4%，首次超越 OpenAI 的 32.3%。其业务覆盖范围在一年内增长了四倍。但文章指出，三个因素可能使其领先优势迅速减弱。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp68q4280kmwsljx5vvpdg5v",
-      "title": "普华永道全球部署Claude，助力客户构建技术、执行交易并重塑企业职能",
-      "title_en": "PwC is deploying Claude to build technology， execute deals， and reinvent enterprise functions for clients",
-      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-13T16:00:00.000Z",
-      "summary": "普华永道与Anthropic宣布扩大战略联盟，将在全球数十万员工中部署Claude AI工具。双方将联合建立卓越中心，并培训认证3万名专业人员。合作聚焦三大高杠杆领域：智能体技术构建、AI原生交易执行以及企业职能重塑。普华永道已率先成立基于Claude的财务业务组。实际应用显示，Claude在保险承保、网络安全等多个领域能将交付时间缩短最高达70%，例如将保险承保周期从十周压缩至十天。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp65vnvr0jztsljxms0pwdh0",
-      "title": "Runway正式进军日本市场，在东京设立总部并投入4000万美元",
-      "title_en": "Runway is Coming to Japan",
-      "url": "https://runwayml.com/news/runway-is-coming-to-japan",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-05-13T16:00:00.000Z",
-      "summary": "生成式AI公司Runway宣布在日本东京设立总部，正式进军日本市场，并计划投入4000万美元初始资金拓展业务。日本已成为Runway增长最快的市场之一，是其全球企业及自助客户的第三大市场。过去一年，日本企业客户数量增长300%，贡献了Runway亚洲总销售额的三分之一。软银、雅马哈等企业已在营销与创意流程中使用其服务。公司此次扩张旨在贴近日本领先的创意、机器人及制造行业客户，并已开始招募日本市场负责人以组建本地团队。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp46yq7n03icsljxf67um76u",
-      "title": "Kling AI将亮相2026戛纳探讨AI电影制作",
-      "title_en": "Kling AI is heading to Cannes 2026！ 🎬 As part of the Cannes Conference at the Marché du Film， Klin…",
-      "url": "https://x.com/Kling_ai/status/2054577409064911330",
-      "source": "X：可灵 Kling AI (@Kling_ai)",
-      "publishedAt": "2026-05-13T15:00:01.000Z",
-      "summary": "Kling AI将于2026年5月18日在戛纳电影节电影市场会议中举办专场活动，主题为\"从创意可能到制作现实：Kling AI在电影工作流中的应用\"。活动旨在探讨AI辅助电影制作的现状与未来演进。Kling AI通过支持《House of David》、《Born of the Tide》及《RAPHAEL》等项目，展示了AI在好莱坞级制作、全AI生成动画及剧情长片等实际影视生产中的多元化应用。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp3kla5p06u9sl1qoxp8zb9o",
-      "title": "消息称 Anthropic 正就以超 9000 亿美元投前估值筹集至少 300 亿美元谈判",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/949/715.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-13T03:48:15.000Z",
-      "summary": "据报道，AI公司Anthropic正就新一轮融资进行初步谈判，目标是以超过9000亿美元的投前估值筹集至少300亿美元资金。这有望成为该公司迄今最大规模的融资轮次，交易最快可能在本月底完成。此前，Anthropic在今年2月完成了300亿美元的G轮融资，投后估值为3800亿美元，并从谷歌和亚马逊获得了150亿美元的投资承诺。为应对高昂的算力成本，公司计划于今年晚些时候进行首次公开募股（IPO）。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp50f2e30aabsljxqciw1nhg",
-      "title": "OpenAI 回应 TanStack npm 供应链攻击并加强安全措施",
-      "title_en": "Our response to the TanStack npm supply chain attack",
-      "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-13T00:00:00.000Z",
-      "summary": "OpenAI 针对 TanStack \"Mini Shai-Hulud\" npm 供应链攻击事件作出响应。攻击者通过维护者账户发布了恶意伪造包。OpenAI 确认内部系统未受影响，但为防范风险，已撤销并重签所有相关代码签名证书，并要求 macOS 用户在 2026 年 6 月 12 日前更新应用。公司同时加强了第三方依赖审查和自动化安全监控，以提升软件供应链安全防御。",
       "category": "industry"
     }
   ]

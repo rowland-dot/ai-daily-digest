@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-05-19T21:55:27.786Z",
+  "fetched_at": "2026-05-20T22:11:51.884Z",
   "repos": [
     {
-      "owner": "tinyhumansai",
-      "name": "openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 20952,
-      "forks": 1841,
-      "starsToday": 3991
-    },
-    {
-      "owner": "HKUDS",
-      "name": "CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 37636,
-      "forks": 3603,
-      "starsToday": 1027
+      "owner": "colbymchenry",
+      "name": "codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 9270,
+      "forks": 574,
+      "starsToday": 1910
     },
     {
       "owner": "Imbad0202",
@@ -30,86 +19,20 @@
       "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 14020,
-      "forks": 1329,
-      "starsToday": 3184
+      "stars": 16025,
+      "forks": 1438,
+      "starsToday": 1639
     },
     {
-      "owner": "obra",
-      "name": "superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 198284,
-      "forks": 17690,
-      "starsToday": 1620
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 20114,
-      "forks": 2505,
-      "starsToday": 127
-    },
-    {
-      "owner": "rohitg00",
-      "name": "agentmemory",
-      "url": "https://github.com/rohitg00/agentmemory",
-      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 14061,
-      "forks": 1173,
-      "starsToday": 1626
-    },
-    {
-      "owner": "CloakHQ",
-      "name": "CloakBrowser",
-      "url": "https://github.com/CloakHQ/CloakBrowser",
-      "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 16475,
-      "forks": 1270,
-      "starsToday": 1466
-    },
-    {
-      "owner": "rtk-ai",
-      "name": "rtk",
-      "url": "https://github.com/rtk-ai/rtk",
-      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "owner": "tinyhumansai",
+      "name": "openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 50792,
-      "forks": 3097,
-      "starsToday": 667
-    },
-    {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 101459,
-      "forks": 16777,
-      "starsToday": 983
-    },
-    {
-      "owner": "colbymchenry",
-      "name": "codegraph",
-      "url": "https://github.com/colbymchenry/codegraph",
-      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 6455,
-      "forks": 430,
-      "starsToday": 1869
+      "stars": 23522,
+      "forks": 2103,
+      "starsToday": 3603
     },
     {
       "owner": "multica-ai",
@@ -118,75 +41,141 @@
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "",
       "languageColor": "",
-      "stars": 137844,
-      "forks": 14133,
-      "starsToday": 1935
+      "stars": 140650,
+      "forks": 14431,
+      "starsToday": 2620
     },
     {
-      "owner": "humanlayer",
-      "name": "12-factor-agents",
-      "url": "https://github.com/humanlayer/12-factor-agents",
-      "description": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 21135,
-      "forks": 1594,
-      "starsToday": 733
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 9457,
+      "forks": 1935,
+      "starsToday": 762
     },
     {
-      "owner": "Diolinux",
-      "name": "PhotoGIMP",
-      "url": "https://github.com/Diolinux/PhotoGIMP",
-      "description": "A Patch for GIMP 3+ for Photoshop Users",
-      "language": "CSS",
-      "languageColor": "#663399",
-      "stars": 10728,
-      "forks": 372,
+      "owner": "HKUDS",
+      "name": "CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 38480,
+      "forks": 3660,
       "starsToday": 930
     },
     {
-      "owner": "Alishahryar1",
-      "name": "free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 26307,
-      "forks": 3921,
-      "starsToday": 543
-    },
-    {
-      "owner": "pascalorg",
-      "name": "editor",
-      "url": "https://github.com/pascalorg/editor",
-      "description": "Create and share 3D architectural projects.",
+      "owner": "can1357",
+      "name": "oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 15841,
-      "forks": 2080,
-      "starsToday": 88
+      "stars": 5365,
+      "forks": 453,
+      "starsToday": 237
     },
     {
-      "owner": "frappe",
-      "name": "erpnext",
-      "url": "https://github.com/frappe/erpnext",
-      "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 199937,
+      "forks": 17831,
+      "starsToday": 1776
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 34226,
-      "forks": 11311,
-      "starsToday": 65
+      "stars": 20727,
+      "forks": 2539,
+      "starsToday": 706
     },
     {
-      "owner": "microsoft",
-      "name": "ai-agents-for-beginners",
-      "url": "https://github.com/microsoft/ai-agents-for-beginners",
-      "description": "12 Lessons to Get Started Building AI Agents",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 64241,
-      "forks": 21280,
-      "starsToday": 820
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 102769,
+      "forks": 16942,
+      "starsToday": 1714
+    },
+    {
+      "owner": "rmyndharis",
+      "name": "OpenWA",
+      "url": "https://github.com/rmyndharis/OpenWA",
+      "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 4788,
+      "forks": 972,
+      "starsToday": 726
+    },
+    {
+      "owner": "truelockmc",
+      "name": "streambert",
+      "url": "https://github.com/truelockmc/streambert",
+      "description": "A cross-platform Electron Desktop App to stream and download any Movie, TV Series or Anime in the World. Zero Ads and Tracking",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 2910,
+      "forks": 243,
+      "starsToday": 652
+    },
+    {
+      "owner": "opentoonz",
+      "name": "opentoonz",
+      "url": "https://github.com/opentoonz/opentoonz",
+      "description": "OpenToonz - An open-source full-featured 2D animation creation software",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 6290,
+      "forks": 728,
+      "starsToday": 206
+    },
+    {
+      "owner": "zakirullin",
+      "name": "files.md",
+      "url": "https://github.com/zakirullin/files.md",
+      "description": "🌱 Private, quiet space for thinking. A simple app for your .md files.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 2179,
+      "forks": 50,
+      "starsToday": 468
+    },
+    {
+      "owner": "rohitg00",
+      "name": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 15055,
+      "forks": 1246,
+      "starsToday": 1121
+    },
+    {
+      "owner": "ggml-org",
+      "name": "llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 111810,
+      "forks": 18501,
+      "starsToday": 343
     },
     {
       "owner": "HKUDS",
@@ -195,9 +184,9 @@
       "description": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 5361,
-      "forks": 918,
-      "starsToday": 504
+      "stars": 6003,
+      "forks": 980,
+      "starsToday": 692
     }
   ]
 }

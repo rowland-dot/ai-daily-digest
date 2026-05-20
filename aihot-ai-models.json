@@ -1,8 +1,48 @@
 {
-  "count": 30,
+  "count": 29,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpe8vto10ah2slk1zwrd61c2",
+      "title": "Stability AI 推出音频模型 Stability Audio 3.0，可生成最长 6 分钟专业级歌曲",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/953/086.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-20T15:42:09.000Z",
+      "summary": "Stability AI 推出 Stability Audio 3.0 音频生成模型家族，包含四款不同规格模型，参数从45900万到27亿。小型模型专注设备端运行，可本地生成两分钟以内的音频；中型和大型模型支持创作超过6分20秒的完整音乐，",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpdxscye07wxslk1wdfmza4f",
+      "title": "SenseNova U1：同时思考文本与图像的AI",
+      "title_en": "Turn your ideas into visuals that spark stories 🧨",
+      "url": "https://x.com/SenseTime_AI/status/2057049434782097851",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-05-20T10:42:58.000Z",
+      "summary": "将你的想法转化为激发故事的视觉画面 🧨\n\n【引用 @Adamaestr0_】：大多数AI工具可以写作或生成图像。\n\n但这个能同时做这两件事。\n\n向你介绍 SenseNova U1。\n一个能同时思考文本和图像的AI。\n\n这改变了一切 🧵",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpdkkt0104q4slk1htr3h1ol",
+      "title": "Kling AI推出全球首个原生4K视频生成模型",
+      "title_en": "http：//x.com/i/article/2055141424790970368",
+      "url": "https://x.com/Kling_ai/status/2056950317712101599",
+      "source": "X：可灵 Kling AI (@Kling_ai)",
+      "publishedAt": "2026-05-20T04:09:06.000Z",
+      "summary": "4月23日，Kling AI正式推出全球首个原生4K视频生成模型，专为专业内容创作设计。该功能支持一键生成真4K画质视频，显著提升画面细节与制作效率。模型已获得好莱坞团队、动画工作室等多方采用。好莱坞制片人指出，这是其工作流中首个使用的原生4K基础模型；Wonder Studios强调，原生4K从底层生成避免了传统放大技术的角色变形问题，保持了画面一致性；动画导演则认为，该模型在保留艺术色调与复杂特效纹理方面优于同类产品。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpdgqw1n03smslk1jf4jiwce",
+      "title": "Qwen3.7：智能体前沿",
+      "title_en": "Qwen3.7： The Agent Frontier",
+      "url": "https://qwen.ai/blog?id=qwen3.7",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-05-20T02:00:00.000Z",
+      "summary": "Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。",
+      "category": "ai-models"
+    },
     {
       "id": "cmpd1208z01yasljldmz8605q",
       "title": "Gemini Omni发布：物理推理与多模态生成新突破",
@@ -111,16 +151,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-19T08:08:57.000Z",
       "summary": "地平线机器人实验室发布了其开源的人形机器人全身控制模型 HoloMotion-1。这是一个拥有 4 亿参数的\"小脑\"大模型，通过 MoE 稀疏激活与 KV-cache 推理机制，在端侧实现了约 300FPS 的实时推理能力。该模型利用互联网视频、光学动捕、VR 遥操作等多种来源的动作数据进行训练，并在真实机器人上成功展示了舞蹈、爬行、健身、搬箱子等复杂动作的零样本迁移能力。相关代码与技术报告已公开。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpc22jka1c7wslnz3dwje1lt",
-      "title": "Qwen3.7预览版登陆竞技场，阿里视觉排名升至第五",
-      "title_en": "🚀🚀Qwen3.7 Preview lands on Arena！ ⚡️⚡️Here come Qwen3.7-Plus-Preview. Alibaba now #5 in Vision.🎨…",
-      "url": "https://x.com/alibaba_cloud/status/2056570869548478592",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-19T03:01:19.000Z",
-      "summary": "🚀🚀Qwen3.7预览版登陆竞技场！\n\n⚡️⚡️Qwen3.7-Plus-Preview来了。阿里巴巴现在在视觉领域排名第五。🎨\n\n迫不及待要发布Qwen3.7系列模型了！敬请期待！@arena",
       "category": "ai-models"
     },
     {
@@ -261,46 +291,6 @@
       "source": "X：Kimi.ai (@Kimi_Moonshot)",
       "publishedAt": "2026-05-14T05:57:06.000Z",
       "summary": "Kimi K2.6 现已成为 Finance Agent Benchmark V2 开源权重排名第一。\n\n【引用 @ValsAI】：AI 能胜任金融分析师的工作吗？",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp4hjq4f05wvsljx7w60ec13",
-      "title": "AI角色实现记忆共情与主动交互",
-      "title_en": "What if AI characters could remember， empathize & proactively engage？ ✨ The future of interactive A…",
-      "url": "https://x.com/alibaba_cloud/status/2054653031472414864",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-13T20:00:30.000Z",
-      "summary": "如果AI角色能够记忆、共情并主动交互呢？✨\n\n交互式AI的未来已来。无论您是为游戏、虚拟AI伴侣还是自适应学习进行开发，Qwen-Character都能打造沉浸式角色扮演体验，推动参与度加深50%以上并提升用户终身价值\n\n👉 观看完整视频了解运作原理：https：//int.alibabacloud.com/m/1000412854/\n\n#AlibabaCloud #Qwen #QwenCharacter #ModelStudio #AI",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp4c6o1704njsljxrh6cg26c",
-      "title": "Krea 2发布访问码，限量体验",
-      "title_en": "Krea 2 access code drop！ K2-PRFUF8 / K2-NRWW9E / K2-CAP48S - each one has 50 uses. access link be…",
-      "url": "https://x.com/krea_ai/status/2054611917365526793",
-      "source": "X：Krea AI (@krea_ai)",
-      "publishedAt": "2026-05-13T17:17:08.000Z",
-      "summary": "Krea 2 访问码发放！\n\nK2-PRFUF8 / K2-NRWW9E / K2-CAP48S - 每个码可使用50次。\n\n访问链接如下 👇\n\n【引用 @krea_ai】：this is Krea 2.\n\nour first foundation model， built completely from scratch for aesthetic diversity and stylistic control.\n\nlearn more and get early access 👇",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp3p0qrr07w6sl1qtbbkx7kr",
-      "title": "SenseNova-U1 技术报告深度发布：前沿原生多模态模型构建全指南",
-      "title_en": "🔥 New week， New SenseNova-U1 Drop - and this one goes Deep！🔥 📄 The full Tec…",
-      "url": "https://x.com/SenseTime_AI/status/2054446490420924558",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-05-13T06:19:47.000Z",
-      "summary": "SenseNova-U1 技术报告详尽披露了构建前沿原生多模态模型的方法，核心包括原生多模态统一建模、无损视觉接口、联合自回归与像素空间流匹配训练、以及原生混合专家骨干网络。报告提供了六阶段训练方案、强化学习后训练与蒸馏的完整实践指南。其开源版本 SenseNova-U1-A3B-MoT 基于混合专家架构，仅激活30亿参数，实现了高效快速的性能。相关资源已全面开放，涵盖技术报告、模型权重、代码和演示平台。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp3j1mlq06gqsl1qq1g2qemv",
-      "title": "Hy3预览版登陆GMI，开源最强模型领跑",
-      "title_en": "Hy3 preview is now on @gmi_cloud. 🙌",
-      "url": "https://x.com/TencentHunyuan/status/2054403079433572357",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-05-13T03:27:17.000Z",
-      "summary": "Hy3 预览版现已登陆 @gmi_cloud。🙌",
       "category": "ai-models"
     }
   ]

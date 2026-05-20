@@ -1,7 +1,7 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4ODcyMDg5MDAwLCJpIjoiY21wN2FqejFwMDh1Y3NsbnpxaXZrdjVkdiJ9",
+  "nextCursor": "eyJhIjoxNzc5MDg4OTMwMDAwLCJpIjoiY21wYXdtYm55MTJqYXNsbnp5Y3dyNXUxdiJ9",
   "items": [
     {
       "id": "cmpd3ms9200o4slk1fra40xlv",
@@ -14,6 +14,126 @@
       "category": "ai-products"
     },
     {
+      "id": "cmpekzpha0dc3slk1bphli6rh",
+      "title": "Google Stitch更新：AI设计助手实现全流程构建",
+      "title_en": "🪡 @stitchbygoogle is your agentic AI design partner. Move from an idea to a live mobile and web ap…",
+      "url": "https://x.com/googleaidevs/status/2057209295763300785",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-05-20T21:18:11.000Z",
+      "summary": "Google推出了其AI设计伙伴Stitch的多项重要更新。新功能支持实时流式构建设计，允许用户在不中断流程的情况下直接进行编辑和互动反馈。Stitch现已能够导入现有代码库或Design.md文件，基于实际生产组件进行设计以保持品牌一致性。同时，工具新增了动态界面生成功能，并可将设计项目直接导出为可分享的线上URL，简化了从原型到生产的部署流程。该工具现已面向全球用户开放。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpekd9070d8islk1h15tb7oi",
+      "title": "OpenClaw 2026.5.19版本发布",
+      "title_en": "OpenClaw 2026.5.19 🦞 📱 Android Talk Mode goes realtime 🍎 Mac Settings feel much cleaner 🔐 xAI l…",
+      "url": "https://x.com/openclaw/status/2057202955581809093",
+      "source": "X：OpenClaw (@openclaw)",
+      "publishedAt": "2026-05-20T20:53:00.000Z",
+      "summary": "OpenClaw 2026.5.19 🦞\n\n📱 Android Talk Mode 实现实时化\n🍎 Mac 设置界面更清爽\n🔐 xAI 登录支持无头模式\n🧵 Telegram 话题功能更稳定\n\n大版本更新，简短公告。\nhttps：//github.com/openclaw/openclaw/releases/tag/v2026.5.19",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpeh7y5x0chnslk1zflfjrix",
+      "title": "V8.1新增反向提示功能",
+      "title_en": "Small update today. Many requested a \"anti-prompting\" feature for V8 models （which existed in previo…",
+      "url": "https://x.com/midjourney/status/2057184157869199429",
+      "source": "X：Midjourney (@midjourney)",
+      "publishedAt": "2026-05-20T19:38:18.000Z",
+      "summary": "今日小幅更新。许多用户要求为V8模型恢复\"反向提示\"功能（旧版本已有），我们称之为--no标志。该功能现已在V8.1中上线！如果您想从图像中排除某些元素（例如人物），可以尝试使用--no people。玩得开心！",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpeh0uf00ceislk1reo8ajbd",
+      "title": "GPT-5即将发布",
+      "title_en": "Gone shipping 🚢",
+      "url": "https://x.com/ChatGPTapp/status/2057178633249394819",
+      "source": "X：ChatGPT (@ChatGPTapp)",
+      "publishedAt": "2026-05-20T19:16:21.000Z",
+      "summary": "GPT-5即将发布 🚢",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpefwk7h0c4bslk1nhzkfwqz",
+      "title": "MiniMax语音模型新增600余种声音",
+      "title_en": "600+ new voices powered by MiniMax Speech 2.8 Turbo are now on Together AI @togethercompute 🎙️✨ Tr…",
+      "url": "https://x.com/MiniMax_AI/status/2057177048356180296",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "publishedAt": "2026-05-20T19:10:03.000Z",
+      "summary": "600多种由MiniMax Speech 2.8 Turbo驱动的新声音现已登陆Together AI @togethercompute 🎙️✨\n\n立即体验：https：//voicefinder.together.ai/minimax--speech-2.8-turbo",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpecsrym0bf5slk1l0wn31kj",
+      "title": "上下文压缩技术提升搜索效率与准确性",
+      "title_en": "We've productionized query-aware compression for faster， cleaner， more-accurate search. Better cont…",
+      "url": "https://x.com/perplexity_ai/status/2057151002105753950",
+      "source": "X：Perplexity (@perplexity_ai)",
+      "publishedAt": "2026-05-20T17:26:33.000Z",
+      "summary": "我们已将查询感知压缩技术投入生产，以实现更快、更清晰、更准确的搜索。\n更好的上下文优于更多的上下文。\n我们的系统可将上下文令牌最多削减70%，同时提升回答质量。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpebdc1s0b28slk1ol5l7sub",
+      "title": "ChatGPT移动端支持Codex，实现跨设备协作",
+      "title_en": "Your laptop can stay home. Work with Codex from the ChatGPT mobile app， answer questions on the go，…",
+      "url": "https://x.com/OpenAIDevs/status/2057142816497906045",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-05-20T16:54:01.000Z",
+      "summary": "你的笔记本电脑可以留在家里。\n通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpe6yylc0a04slk1ip15yb89",
+      "title": "AI视频一致性始于动作之前",
+      "title_en": "AI video consistency starts before motion. For this 15s cooking short， we first generated a clean ch…",
+      "url": "https://x.com/PixVerse_/status/2057114262145818752",
+      "source": "X：PixVerse (@PixVerse_)",
+      "publishedAt": "2026-05-20T15:00:34.000Z",
+      "summary": "AI视频的一致性始于动作之前。\n对于这个15秒的烹饪短片，我们首先在PixVerse中生成了一个清晰的角色分镜。\n然后将其用作视频的参考。\n相同的角色。清晰的故事节点。\n镜头指导。动作细节。\n转发 + 关注 + 回复 = 分镜工作流",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpdxbe1707raslk17npzg9r5",
+      "title": "MSE AI调度器：让Agent自主工作",
+      "title_en": "Transform Agents into autonomous workers！ 🚀 ❌ Open-source pain points： Low availability， high ops c…",
+      "url": "https://x.com/alibaba_cloud/status/2057042351978082719",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-20T10:14:49.000Z",
+      "summary": "将Agent转变为自主工作者！🚀\n❌ 开源痛点：可用性低、运维成本高、可观测性差。\n✅ MSE AI调度器通过以下方式解决：\n• 高可用分布式调度\n• 统一管理与细粒度权限\n• 弹性伸缩以降低成本\n• 全链路可观测性\n支持OpenClaw、Dify等。免费公测现已开放！\n🔗 https：//int.alibabacloud.com/m/1000413115/\n#AI #Agent #MSE",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpdtcko406t1slk1td8z5qvl",
+      "title": "Gemini 3.5 Flash登陆OpenCode平台",
+      "title_en": "Gemini 3.5 Flash now available in OpenCode - very fast - 1M context - priced similarly to GLM， Kimi…",
+      "url": "https://x.com/opencode/status/2057017380941795667",
+      "source": "X：opencode (@opencode)",
+      "publishedAt": "2026-05-20T08:35:35.000Z",
+      "summary": "Gemini 3.5 Flash现已在OpenCode上线\n\n- 速度极快\n- 100万上下文\n- 定价与GLM、Kimi和DeepSeek Pro相近",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpd9r1gv0221slk1frk69vtc",
+      "title": "Ramp利用Gemini API构建高级财务代理",
+      "title_en": "Using the new Managed Agents in the Gemini API， @Ramp built their advanced finance agents without to…",
+      "url": "https://x.com/googleaidevs/status/2056874010265485341",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-05-19T23:05:53.000Z",
+      "summary": "通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。\n\n了解更多 ↓",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpd6rs9u01ejslk1flozev7o",
+      "title": "Claude Code v2.1.145版本更新",
+      "title_en": "v2.1.145",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-19T21:31:07.000Z",
+      "summary": "本次更新为Claude Code工具带来了多项功能增强与问题修复。新功能包括：新增JSON格式的会话列表命令以便脚本化操作，并在OTEL追踪中完善了Agent父子关系。插件浏览界面现可预览详细信息。在稳定性方面，修复了权限提示被绕过的安全问题、MCP参数校验错误、终端窗口调整后的显示冻结，以及非ASCII名称导致的API调用失败等问题。同时改进了Read工具的文件超限处理，并优化了任务列表排序和状态栏信息显示等交互细节，整体提升了工具的易用性与可靠性。",
+      "category": "ai-products"
+    },
+    {
       "id": "cmpd5qa3j014wslk1csm8g3lb",
       "title": "谷歌推出全新AI智能搜索框，支持多模态交互",
       "title_en": "Today， we launched a brand-new intelligent Search box. Here's what that means： An upgrade to the S…",
@@ -21,16 +141,6 @@
       "source": "X：Google AI (@GoogleAI)",
       "publishedAt": "2026-05-19T21:12:37.000Z",
       "summary": "谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd323rj00hhslk1bm0s582h",
-      "title": "更智能的 Google AI Edge Gallery：MCP 集成、通知和会话连续性",
-      "title_en": "A Smarter Google AI Edge Gallery： MCP integration， notifications， and session continuity",
-      "url": "https://developers.googleblog.com/a-smarter-google-ai-edge-gallery-mcp-integration-notifications-and-session-continuity",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-19T20:25:57.486Z",
-      "summary": "Google AI Edge Gallery 应用在安卓平台上扩展了设备端 AI 能力，通过引入对开源模型上下文协议（MCP）的实验性支持，使得 Gemma 4 模型能够协调处理跨 Google Workspace 和 Google Maps 等外部数据源的复杂任务。此次更新添加了\"定时通知\"技能，用于实现日常事务的自动化管理，并新增了持久化聊天记录功能，允许用户近乎即时地恢复长会话上下文。该平台依托开源工具包，积极鼓励社区开发者通过其 GitHub 仓库构建并分享专注实用的工作流、提示配置与工具集成。",
       "category": "ai-products"
     },
     {
@@ -51,16 +161,6 @@
       "source": "X：Google AI for Developers (@googleaidevs)",
       "publishedAt": "2026-05-19T19:35:21.000Z",
       "summary": "全新的 @Antigravity 生态系统是您终极的智能体优先开发平台。\n\n对于任何构建或编排智能体的开发者，以下是 Google I/O 上发布的内容 🚀↓",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd0wx2i01xdsljlb5qn6lbf",
-      "title": "Google Tensor ML SDK 测试版发布",
-      "title_en": "Google Tensor SDK Beta with LiteRT",
-      "url": "https://developers.googleblog.com/google-tensor-sdk-beta-with-litert",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-19T19:25:56.789Z",
-      "summary": "Google Tensor ML SDK 进入测试版，支持开发者直接在 Pixel 10 设备的 TPU 上构建和部署高性能机器学习模型。该 SDK 集成边缘部署框架 LiteRT，提供统一工作流，可高效转换、编译并运行 PyTorch 或 TFLite 模型，并具备稳定回退机制。此外，新推出的模型库包含超过 100 个经典及生成式 AI 模型（如 Gemma 3），支持低延迟、注重隐私的语音识别、计算机视觉与文本生成等功能。",
       "category": "ai-products"
     },
     {
@@ -94,16 +194,6 @@
       "category": "ai-products"
     },
     {
-      "id": "cmpcyrr9h01d6sljl4ivqyml6",
-      "title": "重要更新：Gemini CLI将迁移至Antigravity CLI",
-      "title_en": "An important update： Transitioning Gemini CLI to Antigravity CLI",
-      "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-19T18:25:55.868Z",
-      "summary": "Google正在整合其AI终端工具，将面向社区的Gemini CLI迁移至全新平台Antigravity CLI。这款新工具采用Go语言开发，作为代理优先的平台，支持复杂的多代理工作流，并提供更快的执行速度、异步处理能力以及与Antigravity 2.0桌面应用同步的统一架构。企业客户可维持现有访问权限，但个人及免费用户必须在2026年6月18日Gemini CLI停止服务前，完成向新平台的迁移。",
-      "category": "ai-products"
-    },
-    {
       "id": "cmpcz81ck01ifsljlbi5lavdp",
       "title": "Gemini Spark：全天候个人AI代理",
       "title_en": "Gemini Spark is your 24/7 personal AI agent that helps you navigate your digital life. It transfor…",
@@ -121,16 +211,6 @@
       "source": "X：Gemini (@GeminiApp)",
       "publishedAt": "2026-05-19T18:15:41.000Z",
       "summary": "Daily Brief是一项新的个性化摘要功能，旨在成为您每天早晨的首选信息来源。\n它从您的收件箱、日历和任务中收集信息，进行优先级排序、整理，并在专为快速浏览设计的超简洁晨间摘要中为您建议下一步行动。#GoogleIO",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcy2cbs017hsljly8fua8xn",
-      "title": "经验研究助手（ERA）：从Nature发表到催化计算发现",
-      "title_en": "Empirical Research Assistance （ERA）： From Nature publication to catalyzing Computational Discovery",
-      "url": "https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-05-19T18:06:07.231Z",
-      "summary": "Google Research开发的经验研究助手（ERA）现已在《Nature》期刊发表论文。这是一款基于Gemini的AI工具，旨在协助科学家编写专业级经验科学代码，其核心能力包括搜索文献、生成代码、探索方案并迭代优化，以加速耗时的计算实验过程。该工具已被用于构建\"计算发现\"原型，并已通过Google Labs的\"可信赖测试者计划\"向更广泛的科学家群体开放初步试用。",
       "category": "ai-products"
     },
     {
@@ -324,6 +404,46 @@
       "category": "ai-products"
     },
     {
+      "id": "cmpd323rj00hhslk1bm0s582h",
+      "title": "更智能的 Google AI Edge Gallery：MCP 集成、通知和会话连续性",
+      "title_en": "A Smarter Google AI Edge Gallery： MCP integration， notifications， and session continuity",
+      "url": "https://developers.googleblog.com/a-smarter-google-ai-edge-gallery-mcp-integration-notifications-and-session-continuity",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-18T16:00:00.000Z",
+      "summary": "Google AI Edge Gallery 应用在安卓平台上扩展了设备端 AI 能力，通过引入对开源模型上下文协议（MCP）的实验性支持，使得 Gemma 4 模型能够协调处理跨 Google Workspace 和 Google Maps 等外部数据源的复杂任务。此次更新添加了\"定时通知\"技能，用于实现日常事务的自动化管理，并新增了持久化聊天记录功能，允许用户近乎即时地恢复长会话上下文。该平台依托开源工具包，积极鼓励社区开发者通过其 GitHub 仓库构建并分享专注实用的工作流、提示配置与工具集成。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpd0wx2i01xdsljlb5qn6lbf",
+      "title": "Google Tensor ML SDK 测试版发布",
+      "title_en": "Google Tensor SDK Beta with LiteRT",
+      "url": "https://developers.googleblog.com/google-tensor-sdk-beta-with-litert",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-18T16:00:00.000Z",
+      "summary": "Google Tensor ML SDK 进入测试版，支持开发者直接在 Pixel 10 设备的 TPU 上构建和部署高性能机器学习模型。该 SDK 集成边缘部署框架 LiteRT，提供统一工作流，可高效转换、编译并运行 PyTorch 或 TFLite 模型，并具备稳定回退机制。此外，新推出的模型库包含超过 100 个经典及生成式 AI 模型（如 Gemma 3），支持低延迟、注重隐私的语音识别、计算机视觉与文本生成等功能。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpcyrr9h01d6sljl4ivqyml6",
+      "title": "重要更新：Gemini CLI将迁移至Antigravity CLI",
+      "title_en": "An important update： Transitioning Gemini CLI to Antigravity CLI",
+      "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-18T16:00:00.000Z",
+      "summary": "Google正在整合其AI终端工具，将面向社区的Gemini CLI迁移至全新平台Antigravity CLI。这款新工具采用Go语言开发，作为代理优先的平台，支持复杂的多代理工作流，并提供更快的执行速度、异步处理能力以及与Antigravity 2.0桌面应用同步的统一架构。企业客户可维持现有访问权限，但个人及免费用户必须在2026年6月18日Gemini CLI停止服务前，完成向新平台的迁移。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpcy2cbs017hsljly8fua8xn",
+      "title": "经验研究助手（ERA）：从Nature发表到催化计算发现",
+      "title_en": "Empirical Research Assistance （ERA）： From Nature publication to catalyzing Computational Discovery",
+      "url": "https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-05-18T16:00:00.000Z",
+      "summary": "Google Research开发的经验研究助手（ERA）现已在《Nature》期刊发表论文。这是一款基于Gemini的AI工具，旨在协助科学家编写专业级经验科学代码，其核心能力包括搜索文献、生成代码、探索方案并迭代优化，以加速耗时的计算实验过程。该工具已被用于构建\"计算发现\"原型，并已通过Google Labs的\"可信赖测试者计划\"向更广泛的科学家群体开放初步试用。",
+      "category": "ai-products"
+    },
+    {
       "id": "cmpbdurfq16k7slnzyvoy9g0z",
       "title": "PaddleOCR 3.5：使用Transformers后端运行OCR和文档解析任务",
       "title_en": "PaddleOCR 3.5： Running OCR and Document Parsing Tasks with a Transformers Backend",
@@ -381,126 +501,6 @@
       "source": "X：Elon Musk (@elonmusk, xAI)",
       "publishedAt": "2026-05-18T07:22:10.000Z",
       "summary": "Grok可以处理视频了\n\n【引用 @XFreeze】：你现在可以将整个视频上传给Grok，让它实时为你分析、总结、翻译、解释场景或提取重要上下文。\n\nGrok能够理解完整的视频--而不仅仅是图像和文本。\n\n它具备原生多模态能力和极其强大的视觉理解能力。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpalqqtx0zzgslnzclo2nrdv",
-      "title": "腾讯 AI 设计智能体 Ardot 公测：一句话生成可编辑设计稿，一键转代码",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/951/677.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-18T02:43:58.000Z",
-      "summary": "腾讯云正式公测自研AI设计智能体平台Ardot。该平台核心功能包括：用户通过一句话指令即可生成App页面、官网、海报等可编辑设计稿；支持调用团队自有组件库生成规范稿，并能直接导入Figma文件保留原有设计。同时，Ardot具备设计稿一键转换为代码的能力，可对接CodeBuddy等开发工具实现代码还原。平台还提供多人在线实时评论、标注反馈和版本对比等协作功能，其微信小程序即将上线。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpaldyju0zw4slnzdixa2cjx",
-      "title": "一键生成韩国棒球AI视频模板爆火",
-      "title_en": "that hotdog needs its own seat",
-      "url": "https://x.com/PixVerse_/status/2056198882321904098",
-      "source": "X：PixVerse (@PixVerse_)",
-      "publishedAt": "2026-05-18T02:23:10.000Z",
-      "summary": "那个热狗需要自己的座位\n\n【引用 @MrDasOnX】：这可能是最简单的病毒式AI编辑。\n\nPixVerse → 上传自拍 → 即时生成韩国棒球镜头视频\n\n无需指令。无需编辑。\n只需一键点击。\n\n@PixVerse_ 上的K-Baseball Sprint模板太疯狂了。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpajb29y0ze6slnz4qehfohy",
-      "title": "阿里云推出HappyHorse视频生成模型",
-      "title_en": "Cinematic AI is here. 🐎💨 HappyHorse is now on Model Studio. From raw prompt to 1080p multi-shot r…",
-      "url": "https://x.com/alibaba_cloud/status/2056182152681644176",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-18T01:16:41.000Z",
-      "summary": "电影级AI现已到来。🐎💨\n\nHappyHorse现已登陆Model Studio。从原始提示词到1080p多镜头现实感画面--在统一工作流中体验视频生成的未来。没有阻碍。只有纯粹性能。\n\n🔥 限时优惠：8折。观看演示并立即开始创作。\n\n立即访问：https：//int.alibabacloud.com/m/1000412936/",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbp9cek197fslnzodo6eths",
-      "title": "Grok平台技能功能上线",
-      "title_en": "Skills in web， iOS， and Android",
-      "url": "https://x.ai/news/grok-skills",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-05-18T00:00:00.000Z",
-      "summary": "xAI于2026年5月18日正式推出Grok的\"Skills\"功能，旨在提供持久的专业知识支持。该功能允许用户对Grok进行一次性的偏好、格式规则或工作流程设置，即可在所有对话中持续生效，无需重复说明。Skills功能已在网页、iOS和Android平台全面上线，内置了创建与编辑Word文档、PPT演示文稿、Excel电子表格及处理PDF文件等开箱即用的技能。用户可以覆盖内置技能进行自定义，也能够通过对话快速创建新技能，从而实现工作流自动化与专业文档的便捷生成。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbfyx691727slnzo2o0p263",
-      "title": "Composer 2.5 发布与技术解析",
-      "title_en": "Introducing Composer 2.5",
-      "url": "https://cursor.com/blog/composer-2-5",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-05-18T00:00:00.000Z",
-      "summary": "Cursor 平台发布了智能与行为表现大幅提升的 Composer 2.5。该模型更擅长执行复杂指令和长期任务。其改进基于训练规模的扩大、更复杂的强化学习环境及新的学习方法。关键技术包括：使用文本反馈进行针对性强化学习以纠正具体错误；采用基于真实代码库、规模达前代25倍的合成数据进行训练；并引入分片Muon优化器等新架构。模型基于Moonshot的开源检查点构建。开发团队正合作训练一个计算量十倍的更大模型，并在大规模训练中发现了新型奖励作弊问题。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcxg3ae00z1sljl5gx36swz",
-      "title": "Gemini for Science：面向科学的AI实验与工具，开启发现新时代",
-      "title_en": "Gemini for Science： AI experiments and tools for a new era of discovery",
-      "url": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-05-17T13:50:34.000Z",
-      "summary": "Google 推出 Gemini for Science 项目，发布一系列基于 Gemini 模型的科学工具与实验性应用。该项目旨在扩展科学探索的规模与精度，通过人工智能辅助研究人员处理复杂计算、模拟实验系统并加速数据分析流程。具体工具覆盖材料科学、气候模拟、生物信息学等多个领域，目标是将大规模生成式模型能力整合进科研工作流，推动跨学科研究的突破性进展。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp9h2ow80qscslnz5vjoothc",
-      "title": "Grok Imagine图像生成功能正式发布",
-      "title_en": "Grok Imagine",
-      "url": "https://x.com/elonmusk/status/2055912040481599793",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-05-17T07:23:22.000Z",
-      "summary": "Grok Imagine\n现已正式发布\n所有人都可使用\n\n基于我们最新的文本到图像模型\n能够生成逼真、高质量的图像\n支持多种宽高比\n\n现在可在 X 上使用",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp92lm860ngjslnztudqvy21",
-      "title": "Zerostack--一款采用纯Rust语言编写、受Unix启发的编程代理",
-      "title_en": null,
-      "url": "https://crates.io/crates/zerostack/1.0.0",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-17T00:46:13.673Z",
-      "summary": "Zerostack是一款采用纯Rust语言编写、受Unix哲学启发的编程代理工具，已正式发布1.0.0版本并在Rust包管理平台crates.io上提供。该发布在技术社区Hacker News上获得115点关注，反映出开发者对其的高度兴趣。Rust语言以内存安全和性能见称，Unix设计强调简洁与模块化，Zerostack结合两者优势，旨在提升编程效率，为代码辅助领域带来新选择。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp8oygzv0kc6slnz56g1hza2",
-      "title": "按需定制快捷键，优化工作流效率",
-      "title_en": "We're having way too much fun working through your feedback. （Please， keep it coming.） Keyboard sh…",
-      "url": "https://x.com/OpenAIDevs/status/2055717793841221796",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-05-16T18:31:30.000Z",
-      "summary": "处理大家的反馈让我们感到太有趣了。\n（请继续反馈。）\n键盘快捷键现已支持自定义。\n围绕你的实际工作方式设置 Codex，然后通过设置调整快捷键，无需再适应我们的默认配置。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp7ip3e70anyslnzwh7n9yp0",
-      "title": "Claude Code v2.1.143 版本更新：插件管理与用户体验增强",
-      "title_en": "v2.1.143",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-05-15T22:28:22.000Z",
-      "summary": "Claude Code 发布 v2.1.143 版本，重点增强了插件管理功能，包括强制执行插件依赖关系，并新增了插件市场的预估上下文成本显示。为方便直接编辑工作副本，增加了 `worktree.bgIsolation： \"none\"` 设置。多项体验得到改进：后台会话唤醒后保留模型与努力级别设置；Windows PowerShell 工具默认绕过执行策略；`claude agents` 命令新增多个参数以配置默认会话。此外，本次更新修复了大量错误，包括修复损坏的 `.credentials.json` 文件导致 CLI 启动卡住、Windows Terminal 中的右键粘贴问题、后台会话错误捕获 IDE 文件引用，以及 macOS 上后台作业读取特定目录文件的权限错误等。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp7ck9n009a6slnzs9t4octw",
-      "title": "Krea 2正式上线面向专业用户",
-      "title_en": "starting today Krea 2 goes live for Pro users.",
-      "url": "https://x.com/krea_ai/status/2055371934452642107",
-      "source": "X：Krea AI (@krea_ai)",
-      "publishedAt": "2026-05-15T19:37:10.000Z",
-      "summary": "从今天起，Krea 2 正式为 Pro 用户上线。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmp7ajz1p08ucslnzqivkv5dv",
-      "title": "语义代码审查工具clawpatch发布",
-      "title_en": "🩹 clawpatch 0.1.0 is live： Clawpatch maps codebases into semantic feature slices， reviews them for…",
-      "url": "https://x.com/steipete/status/2055364630709448970",
-      "source": "X：Peter Steinberger (@steipete)",
-      "publishedAt": "2026-05-15T19:08:09.000Z",
-      "summary": "🩹 clawpatch 0.1.0 已上线：\n\nClawpatch 将代码库映射成语义功能切片，审查其中的错误和质量问题，并记录经过验证的明确修复尝试。\n\n您会发现它能发现的问题之多令人惊讶。\nnpm install -g clawpatch\nhttps：//clawpatch.ai",
       "category": "ai-products"
     }
   ]

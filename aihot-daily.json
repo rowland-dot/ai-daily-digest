@@ -1,30 +1,113 @@
 {
-  "date": "2026-05-19",
-  "generatedAt": "2026-05-19T00:00:00.705Z",
-  "windowStart": "2026-05-18T00:00:00.000Z",
-  "windowEnd": "2026-05-19T00:00:00.000Z",
+  "date": "2026-05-20",
+  "generatedAt": "2026-05-20T00:00:00.114Z",
+  "windowStart": "2026-05-19T00:00:00.000Z",
+  "windowEnd": "2026-05-20T00:00:00.000Z",
   "lead": null,
   "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "I/O 2026: 欢迎来到自主的 Gemini 时代",
+          "summary": "Google 在 I/O 2026 大会上宣布 Gemini 进入自主代理时代，新功能使其能够自动执行复杂任务，显著提升用户工作效率。大会展示了 Gemini 如何通过代理操作简化工作流程，实现自动化处理，例如自动管理邮件、安排日程或生成报告，帮助用户从重复性工作中解放出来，专注于创造性任务。这一更新基于先进机器学习模型，强调准确性与效率，标志着 AI 助手向更智能、更自主的方向发展。",
+          "sourceUrl": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026",
+          "sourceName": "Google Blog：AI（RSS）"
+        },
+        {
+          "title": "谷歌发布Gemini Omni多模态生成模型",
+          "summary": "介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。 借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。#GoogleIO",
+          "sourceUrl": "https://x.com/GeminiApp/status/2056814052039356806",
+          "sourceName": "X：Gemini (@GeminiApp)"
+        },
+        {
+          "title": "Gemini Omni：迈向AGI的世界模型",
+          "summary": "真正的“哇”时刻是 Gemini Omni。一个迈向 AGI 的世界模型。 它可以从任何输入创建任何内容。这太疯狂了。",
+          "sourceUrl": "https://x.com/kimmonismus/status/2056802929957568881",
+          "sourceName": "X：Kim (@kimmonismus)"
+        },
+        {
+          "title": "Gemini Omni发布：物理推理与多模态生成新突破",
+          "summary": "Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。 今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。",
+          "sourceUrl": "https://x.com/sundarpichai/status/2056816915717443862",
+          "sourceName": "X：Sundar Pichai (@sundarpichai)"
+        },
+        {
+          "title": "Gemini Omni发布：多模态生成新突破",
+          "summary": "我们推出Gemini Omni：这是迈向一个能从任何内容生成任何内容的模型的第一步——从视频开始。 它结合了Gemini的智能与我们的生成式媒体系统——代表了在世界理解、多模态和编辑方面的飞跃🧵",
+          "sourceUrl": "https://x.com/GoogleDeepMind/status/2056786446636212467",
+          "sourceName": "X：Google DeepMind (@GoogleDeepMind)"
+        },
+        {
+          "title": "谷歌 Gemini Omni 全能模型发布：可从任意输入生成任意输出，一句话让 AI 修改视频",
+          "summary": "在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。该模型代表了Gemini家族迄今最全面的能力，“Omni”意为全能，能够无缝处理文本、图像、音频和视频等多种信息模态，实现“从任何输入生成任何输出”。其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。",
+          "sourceUrl": "https://www.ithome.com/0/952/519.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "Gemini Omni发布，迈向AGI新进展",
+          "summary": "„迈向AGI的进展“：Gemini Omni - 世界模型 -Gemini Omni官方发布！！ 它可以从任何输入创建任何内容！！！",
+          "sourceUrl": "https://x.com/kimmonismus/status/2056786433458000041",
+          "sourceName": "X：Kim (@kimmonismus)"
+        },
+        {
+          "title": "首个实时多agent世界模型发布，人类可与AI同屏互动",
+          "summary": "奥德赛实验室推出Agora-1，这是全球首个实时多agent世界模型，允许多人与AI同时在同一个模拟世界中实时互动并相互影响。该模型以经典游戏GoldenEye死亡竞赛为演示场景，提供可玩研究预览，用户现在即可体验与AI共同参与动态生成的模拟世界。这标志着从单人生成视频向多人共享“活世界”的转变，长期来看可能重塑游戏、模拟、教育、机器人及AI协作等领域，使人类从旁观者变为与AI共同生活的参与者。",
+          "sourceUrl": "https://x.com/berryxia/status/2056548546544124240",
+          "sourceName": "X：Berry Xia (@berryxia)"
+        }
+      ]
+    },
     {
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "阿里云推出HappyHorse视频生成模型",
-          "summary": "电影级AI现已到来。🐎💨 HappyHorse现已登陆Model Studio。从原始提示词到1080p多镜头现实感画面——在统一工作流中体验视频生成的未来。没有阻碍。只有纯粹性能。 🔥 限时优惠：8折。观看演示并立即开始创作。 立即访问：https://int.alibabacloud.com/m/1000412936/",
-          "sourceUrl": "https://x.com/alibaba_cloud/status/2056182152681644176",
-          "sourceName": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)"
+          "title": "谷歌推出全新AI智能搜索框，支持多模态交互",
+          "summary": "谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。",
+          "sourceUrl": "https://x.com/GoogleAI/status/2056845506601718271",
+          "sourceName": "X：Google AI (@GoogleAI)"
         },
         {
-          "title": "腾讯 AI 设计智能体 Ardot 公测：一句话生成可编辑设计稿，一键转代码",
-          "summary": "腾讯云正式公测自研AI设计智能体平台Ardot。该平台核心功能包括：用户通过一句话指令即可生成App页面、官网、海报等可编辑设计稿；支持调用团队自有组件库生成规范稿，并能直接导入Figma文件保留原有设计。同时，Ardot具备设计稿一键转换为代码的能力，可对接CodeBuddy等开发工具实现代码还原。平台还提供多人在线实时评论、标注反馈和版本对比等协作功能，其微信小程序即将上线。",
-          "sourceUrl": "https://www.ithome.com/0/951/677.htm",
-          "sourceName": "IT之家（RSS）"
+          "title": "Claude智能体托管平台新增自托管沙箱与MCP隧道功能",
+          "summary": "Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。目前沙箱功能已进入公测，隧道处于研究预览阶段。这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。",
+          "sourceUrl": "https://claude.com/blog/claude-managed-agents-updates",
+          "sourceName": "Claude：Blog（网页）"
         },
         {
-          "title": "一键生成韩国棒球AI视频模板爆火",
-          "summary": "那个热狗需要自己的座位 [引用 @MrDasOnX]：这可能是最简单的病毒式AI编辑。 PixVerse → 上传自拍 → 即时生成韩国棒球镜头视频 无需指令。无需编辑。 只需一键点击。 @PixVerse_ 上的K-Baseball Sprint模板太疯狂了。",
-          "sourceUrl": "https://x.com/PixVerse_/status/2056198882321904098",
-          "sourceName": "X：PixVerse (@PixVerse_)"
+          "title": "Gemini Spark：全天候个人AI代理",
+          "summary": "Gemini Spark 是您的全天候个人AI代理，帮助您驾驭数字生活。 它将 Gemini 从一个回答您问题的助手，转变为一个在您的指导下、代表您完成工作的助手。#GoogleIO",
+          "sourceUrl": "https://x.com/GeminiApp/status/2056801918018564538",
+          "sourceName": "X：Gemini (@GeminiApp)"
+        },
+        {
+          "title": "Google Workspace 推出全新创建方式与高效工作功能",
+          "summary": "Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。同时，其 AI Inbox 功能也得到了升级与优化。这些更新旨在进一步提升用户在工作场景中的协作效率与创作体验，通过集成更智能的工具和交互方式，帮助用户更便捷地完成多项任务。",
+          "sourceUrl": "https://blog.google/products-and-platforms/products/workspace/workspace-updates",
+          "sourceName": "Google Blog：AI（RSS）"
+        },
+        {
+          "title": "Ramp利用Gemini API构建高级财务代理",
+          "summary": "通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。 了解更多 ↓",
+          "sourceUrl": "https://x.com/googleaidevs/status/2056874010265485341",
+          "sourceName": "X：Google AI for Developers (@googleaidevs)"
+        },
+        {
+          "title": "Gemini Omni助力Google Flow创作电影级故事",
+          "summary": "Google Flow 🤝 Gemini Omni 使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。以下是@FlowbyGoogle的其他新功能 → https://goo.gle/42K2nge #GoogleIO",
+          "sourceUrl": "https://x.com/GoogleDeepMind/status/2056804306653794336",
+          "sourceName": "X：Google DeepMind (@GoogleDeepMind)"
+        },
+        {
+          "title": "宣布Claude Managed Agents登陆Cloudflare",
+          "summary": "Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。",
+          "sourceUrl": "https://blog.cloudflare.com/claude-managed-agents",
+          "sourceName": "Cloudflare Blog"
+        },
+        {
+          "title": "Claude推出自托管沙箱与MCP隧道功能",
+          "summary": "来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。 在您自己的安全边界内运行代理，默认应用您的安全控制。",
+          "sourceUrl": "https://x.com/claudeai/status/2056645485696315581",
+          "sourceName": "X：Claude (@claudeai)"
         }
       ]
     },
@@ -32,10 +115,69 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "人机快递分拣对决直播",
-          "summary": "Figure 直播机器人 VS 人类 挑战 快递分拣任务 目前人类稍稍领先…😌",
-          "sourceUrl": "https://x.com/xiaohu/status/2056172740873511139",
-          "sourceName": "X：小互 (@xiaohu)"
+          "title": "Karpathy加入Anthropic团队",
+          "summary": "欢迎加入团队，Andrej！",
+          "sourceUrl": "https://x.com/ClaudeDevs/status/2056753265346564259",
+          "sourceName": "X：Claude Devs (@ClaudeDevs)"
+        },
+        {
+          "title": "安德烈·卡帕西加入Anthropic",
+          "summary": "AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。",
+          "sourceUrl": "https://twitter.com/karpathy/status/2056753169888334312",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "前OpenAI核心成员Andrej Karpathy选择Anthropic重返前沿LLM研究",
+          "summary": "著名AI研究人员Andrej Karpathy已加入Anthropic。这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究“尤其具有塑造性”。他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。",
+          "sourceUrl": "https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research",
+          "sourceName": "The Decoder：AI News（RSS）"
+        },
+        {
+          "title": "Google I/O 2026",
+          "summary": "在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。",
+          "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection",
+          "sourceName": "Google Blog：AI（RSS）"
+        },
+        {
+          "title": "Andrej加入Anthropic，Musk也点赞",
+          "summary": "Andrej加入了Anthropic。 连Elon都忍不住称赞Anthropic。 Anthropic今天在Google I/O上真是气场全开。",
+          "sourceUrl": "https://x.com/Yuchenj_UW/status/2056764450712256753",
+          "sourceName": "X：Yuchen Jin (@Yuchenj_UW)"
+        },
+        {
+          "title": "谷歌每月处理超 3200 万亿 Token，同比增长 7 倍",
+          "summary": "在2026年谷歌I/O开发者大会上，谷歌宣布其AI业务关键指标大幅增长。2026年5月，谷歌每月处理的Token数量超过3200万亿，同比增长达7倍。其Gemini App月度活跃用户已突破9亿，同比增长超过一倍，每日请求量增长超7倍。此外，Nano Banana模型已累计生成超过500亿张图片。",
+          "sourceUrl": "https://www.ithome.com/0/952/518.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "Anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕",
+          "summary": "Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕“magnifica humanitas”。这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。",
+          "sourceUrl": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "Gemini月活用户超9亿，回顾年度重大功能发布",
+          "summary": "每月有超过9亿用户使用Gemini应用。 这一增长的重要部分源于我们快速的发布节奏。以下是过去一年我们推出的一些最重要功能的回顾。🧵 #GoogleIO",
+          "sourceUrl": "https://x.com/GeminiApp/status/2056799436052017597",
+          "sourceName": "X：Gemini (@GeminiApp)"
+        }
+      ]
+    },
+    {
+      "label": "论文研究",
+      "items": [
+        {
+          "title": "研究发现人类说服技巧对AI同样有效",
+          "summary": "🚨我们的论文已在PNAS发表：我们发现经典的人类说服技巧以一种“类人”的方式对AI有效，使其同意不当请求（将顺从率从35%提高到51%） 该技巧对一系列主流大语言模型有效，尽管较新的模型抵抗力更强 https://www.pnas.org/doi/10.1073/pnas.2535868123",
+          "sourceUrl": "https://x.com/emollick/status/2056843673145401722",
+          "sourceName": "X：Ethan Mollick (@emollick)"
+        },
+        {
+          "title": "开源古代汉字视觉感知评估基准Chronicles-OCR",
+          "summary": "开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。相关论文与代码已开源。",
+          "sourceUrl": "https://x.com/TencentHunyuan/status/2056567125205270882",
+          "sourceName": "X：腾讯混元 (@TencentHunyuan)"
         }
       ]
     },
@@ -43,16 +185,52 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "开源工具揭露AI API中转站安全风险与检测差异",
-          "summary": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
-          "sourceUrl": "https://x.com/berryxia/status/2056173473588994392",
+          "title": "Forge：通过防护机制大幅提升8B模型性能的可靠性层",
+          "summary": "Forge 是一个为自托管大语言模型设计的可靠性层，专注于提升工具调用能力。它通过错误解析、重试提示、步骤强制等防护机制以及高效的上下文管理，成功将8B参数模型在复杂多步骤智能体任务中的表现从53%大幅提升至99%。其核心配置（Ministral-3 8B模型）在自建的26项评估中综合得分达86.5%。Forge 提供三种集成方式：作为全托管工作流运行器、多智能体架构的共享调度器，或嵌入自有编排循环的防护中间件，并附带一个可透明接入的OpenAI兼容代理服务器。",
+          "sourceUrl": "https://github.com/antoinezambelli/forge",
+          "sourceName": "Hacker News：AI 热帖"
+        },
+        {
+          "title": "NVIDIA开源首个4-bit超长视频生成基础设施",
+          "summary": "NVIDIA研究员开源LongLive 2.0，这是首个支持4-bit量化、覆盖训练与推理全流程的端到端长视频生成基础设施。其核心技术包括FP4量化与并行加速，在5B模型上实现45.7 FPS的生成速度。该框架支持真实视频训练、蒸馏、多镜头生成、序列并行、KV缓存优化及异步解码部署，旨在解决以往长视频生成速度慢或仅限短片的瓶颈。",
+          "sourceUrl": "https://x.com/berryxia/status/2056767536033894825",
           "sourceName": "X：Berry Xia (@berryxia)"
         },
         {
-          "title": "Hermes 可配置的国内外 AI 模型及使用方法",
-          "summary": "Hermes 支持配置多种国内外主流 AI 模型，包括 OpenAI GPT-5.5、xAI Grok-4.3、谷歌 Gemini 系列、DeepSeek V4 系列、Zhipu GLM-5 系列、Kimi K2.6 以及小米 Mimo V2.5-pro。用户需通过相应服务的订阅或 API 进行配置，完成后可使用 /model 指令指定模型及提供者来切换对话模型，例如输入“/model gpt-5.5 --provider openai-codex”即可切换至对应模型。该功能方便用户根据需求灵活调用不同模型的优势。",
-          "sourceUrl": "https://x.com/vista8/status/2056170241147977741",
-          "sourceName": "X：Vista (@vista8)"
+          "title": "AI代理集成新方案：Membrane推出单一技能连接万种API",
+          "summary": "AI代理在实际应用中需为每个外部服务重复构建集成逻辑，成为其发展的主要瓶颈。针对此问题，Membrane推出了一种通用“技能”解决方案。通过该单一技能，Claude Code、ChatGPT、Cursor等主流AI代理能够用一条指令调用超过10万个不同的API，涵盖从Stripe支付服务到NASA火星车数据等各类服务。这极大简化了开发流程，将定制化集成转变为通用的连接能力，降低了使用门槛。同时，Membrane正发起社区挑战，鼓励用户提交小众API以获得演示和免费额度激励，旨在持续扩展其连接生态。",
+          "sourceUrl": "https://x.com/rohanpaul_ai/status/2056728566780547168",
+          "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
+        },
+        {
+          "title": "Claude Code的HTML输出：非凡的有效性",
+          "summary": "Claude Code团队正从Markdown转向HTML作为主要输出格式。Markdown虽简洁，但在信息密度、阅读性、分享和交互方面存在局限。HTML能支持表格、CSS样式、SVG图表和JavaScript交互，提供更清晰的视觉结构和高信息密度。由于HTML文件可通过浏览器直接打开和分享，便于团队协作审阅。Claude Code利用其广泛的上下文获取能力生成实用的HTML制品，适用于项目规划、文档编写和验证等多种场景，显著提升了AI生成内容的可读性与实用性。",
+          "sourceUrl": "https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html",
+          "sourceName": "Claude：Blog（网页）"
+        },
+        {
+          "title": "Claude实现真实界面操作的生产实践指南",
+          "summary": "计算机使用功能使Claude成为能够操作真实用户界面的智能体。 新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+          "sourceUrl": "https://x.com/ClaudeDevs/status/2056835339193561170",
+          "sourceName": "X：Claude Devs (@ClaudeDevs)"
+        },
+        {
+          "title": "ChatGPT图像生成周使用量突破15亿次",
+          "summary": "人们每周在ChatGPT中生成超过15亿张图像。 研究员 @kenjihata 与产品负责人 @adele__li 及主持人 @AndrewMayne 一起，探讨自 Images 2.0 发布以来出现的新用例和趋势。",
+          "sourceUrl": "https://x.com/OpenAI/status/2056849157860831239",
+          "sourceName": "X：OpenAI (@OpenAI)"
+        },
+        {
+          "title": "DAA：智能体时代的核心指标",
+          "summary": "这里快速补充一个指标新词：DAA。 全称 Daily Active Agents（每日活跃智能体），相当于智能体时代的 DAU。 如果说代币经济学追踪成本，那么 DAA 追踪产出——智能体实际完成了多少工作。 完整对比见下文 ↓",
+          "sourceUrl": "https://x.com/Baidu_Inc/status/2056736643781165127",
+          "sourceName": "X：百度 Baidu (@Baidu_Inc)"
+        },
+        {
+          "title": "拓宽关于前沿AI的对话",
+          "summary": "Anthropic为构建负责任的先进AI，正与全球多元群体展开对话。首轮讨论汇集了超过15个宗教、哲学及跨文化传统的学者与伦理学者，旨在为Claude等模型的道德形成与价值观对齐提供多元视角。受“外部良知”概念启发，团队开发并测试了伦理承诺提醒工具，初步实验显示其能有效降低模型不对齐行为。公司计划未来将对话拓展至法律、心理学及公民社会等领域，以共同应对AI对社会结构的重塑。",
+          "sourceUrl": "https://www.anthropic.com/news/widening-conversation-ai",
+          "sourceName": "Anthropic：Newsroom（网页）"
         }
       ]
     }
