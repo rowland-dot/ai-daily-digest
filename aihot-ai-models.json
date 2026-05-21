@@ -1,8 +1,38 @@
 {
-  "count": 29,
+  "count": 28,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpfu0rza09nbsljwx1gui6ol",
+      "title": "Aleph 2.0 与 Edit Studio",
+      "title_en": "Aleph 2.0 & Edit Studio",
+      "url": "https://app.runwayml.com/generate?mode=edit",
+      "source": "Runway：Changelog（网页）",
+      "publishedAt": "2026-05-21T18:36:25.024Z",
+      "summary": "正式发布 Aleph 2.0 及配套的 Edit Studio 创作工具。此次更新实现了创作流程的全面整合，将内容生成、编辑与后期制作集中于统一平台。新版本显著优化了多模态内容的处理效率，并提供了从构思到成品的一站式解决方案，旨在为创作者提供更流畅、集成的数字内容制作体验。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpfoox6408bdsljwnbdhvasf",
+      "title": "LongCat-Video-Avatar-1.5：升级版音频驱动数字人视频生成框架",
+      "title_en": "meituan-longcat/LongCat-Video-Avatar-1.5",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
+      "source": "美团 LongCat：HuggingFace 新模型",
+      "publishedAt": "2026-05-21T09:05:55.000Z",
+      "summary": "美团LongCat团队发布了LongCat-Video-Avatar-1.5，一个专注于音频驱动数字人视频生成的开源框架。其核心升级在于采用Whisper-Large音频编码器，显著优化了唇部动态的流畅度与自然度。该版本实现了精准的唇形同步、全身时序稳定性以及长视频中的身份一致性，并能泛化应用于动漫、动物及多人交互等复杂场景。通过基于DMD2的步蒸馏技术，模型仅需8步即可高效推理。团队还构建了一个涵盖多场景、多语言的人工评估基准，通过大规模主观评分与专家分析，验证了其在多项关键维度上的优异性能。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpf9b1ua04fzsljw1eu965w5",
+      "title": "腾讯开源Hy-MT2多语言翻译模型",
+      "title_en": "🚀 Introduce Hy-MT2： New Open-Source Multilingual Translation Model We proudly launch our new Hy-MT…",
+      "url": "https://x.com/TencentHunyuan/status/2057384034544804136",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-05-21T08:52:32.000Z",
+      "summary": "腾讯正式开源Hy-MT2多语言翻译模型，支持33种语言间的无缝互译。其7B与30B-A3B版本在开源模型中达到最先进的翻译性能，超越了许多参数规模大数十倍的模型。更具突破性的是，1.8B轻量级版本性能超越微软等主流商业API，并凭借腾讯AngelSlim 1.25-bit极量化技术，仅需440MB存储空间，即可在主流手机芯片上本地运行，推理速度较前代提升1.5倍，显著降低了高质量AI翻译的部署门槛。",
+      "category": "ai-models"
+    },
     {
       "id": "cmpe8vto10ah2slk1zwrd61c2",
       "title": "Stability AI 推出音频模型 Stability Audio 3.0，可生成最长 6 分钟专业级歌曲",
@@ -251,46 +281,6 @@
       "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
       "publishedAt": "2026-05-15T02:33:52.000Z",
       "summary": "包容性AI团队发布ARGenSeg-8B模型，致力于通过开源和开放科学推动人工智能的进步与普及。该举措强调技术民主化，使更广泛的社区能够参与AI研发与应用。开源策略将促进协作创新，加速AI工具在多元场景中的落地，降低技术门槛，推动产业生态的开放发展。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp5wen830hsgsljxyhi7cgwl",
-      "title": "Granite Embedding Multilingual R2：开源多语言嵌入模型，具备32K上下文与领先检索性能",
-      "title_en": "Granite Embedding Multilingual R2： Open Apache 2.0 Multilingual Embeddings with 32K Context - Best Sub-100M Retrieval Quality",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-14T18:55:01.000Z",
-      "summary": "IBM Granite团队在Hugging Face发布了Granite Embedding Multilingual R2多语言文本嵌入模型。该模型采用Apache 2.0开源协议，上下文长度扩展至32K令牌，参数量低于1亿。在MTEB基准的检索评估中，它取得了同规模模型的最佳性能，尤其擅长多语言混合检索，为开发者提供了高效、轻量且可商用的嵌入解决方案。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp5e77be0djjsljxd0phuv7m",
-      "title": "SenseNova U1技术报告发布，基于MoE架构开放模型权重",
-      "title_en": "Led by our Co-Founder and Chief Scientist Dr. @lindahua ， our passionate AI pioneers have brought vi…",
-      "url": "https://x.com/SenseTime_AI/status/2054876860711149780",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-05-14T10:49:56.000Z",
-      "summary": "由联合创始人兼首席科学家李沐博士领导的团队发布了SenseNova U1技术报告，详细阐述了其架构、训练方案与创新突破。此次开源同步发布了基于混合专家模型（MoE）的新权重，旨在推动AI领域的透明度、可复现性与进一步创新。团队希望通过开放共享促进整个社区的技术发展。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp5nc87y0fmvsljx9u9zvsfh",
-      "title": "inclusionAI/Ring-2.6-1T",
-      "title_en": null,
-      "url": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
-      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
-      "publishedAt": "2026-05-14T08:10:02.000Z",
-      "summary": "inclusionAI发布了Ring-2.6-1T模型。该模型在Claw-Eval基准测试中取得了两项关键评估结果：在通用能力评估（General）上得分为58.4，在多轮对话评估（Multi Turn）上得分为86.8。这些分数已记录在相应的评估结果排行榜中。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp53f6lu0azgsljxdeumgldk",
-      "title": "Kimi K2.6登顶金融智能体基准榜首",
-      "title_en": "Kimi K2.6 is now open-weight #1 on Finance Agent Benchmark V2.",
-      "url": "https://x.com/Kimi_Moonshot/status/2054803169994272819",
-      "source": "X：Kimi.ai (@Kimi_Moonshot)",
-      "publishedAt": "2026-05-14T05:57:06.000Z",
-      "summary": "Kimi K2.6 现已成为 Finance Agent Benchmark V2 开源权重排名第一。\n\n【引用 @ValsAI】：AI 能胜任金融分析师的工作吗？",
       "category": "ai-models"
     }
   ]

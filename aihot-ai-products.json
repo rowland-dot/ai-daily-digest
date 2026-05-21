@@ -1,16 +1,176 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MDg4OTMwMDAwLCJpIjoiY21wYXdtYm55MTJqYXNsbnp5Y3dyNXUxdiJ9",
+  "nextCursor": "eyJhIjoxNzc5MTYyMTgzMDAwLCJpIjoiY21wYzRhb25zMDA2eHNsdmZ1eW4xbDdrZSJ9",
   "items": [
     {
-      "id": "cmpd3ms9200o4slk1fra40xlv",
-      "title": "在OpenClaw中使用Grok",
-      "title_en": "Use Grok in OpenClaw",
-      "url": "https://x.ai/news/grok-openclaw",
+      "id": "cmpg08wzy0b65sljwgzjw8l6d",
+      "title": "v2.1.147版本更新",
+      "title_en": "v2.1.147",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-21T20:39:22.000Z",
+      "summary": "本次更新引入了`Workflow`工具，支持确定性多智能体编排（默认关闭）。将`/simplify`命令重命名为`/code-review`，现可报告代码正确性问题并支持生成GitHub PR内联评论。改进了自动更新器（增加重试与错误报告）、大文件diff渲染性能，并优化了提示历史记录以避免重复条目。修复了多个关键问题，包括企业登录限制未生效、Windows下的PowerShell工具与终端闪烁问题、插件系统及shell快照的bug，并增强了沙箱安全性与终端兼容性。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfyb7qb0apysljwk3k8nlne",
+      "title": "ChatGPT现已支持在PowerPoint中直接创建编辑演示文稿",
+      "title_en": "Have you ever thought to yourself： I really don't want to make this PowerPoint. Good news： ChatGPT …",
+      "url": "https://x.com/ChatGPTapp/status/2057560276384563560",
+      "source": "X：ChatGPT (@ChatGPTapp)",
+      "publishedAt": "2026-05-21T20:32:52.000Z",
+      "summary": "你是否曾这样想过：我真的不想做这个PPT。\n\n好消息：ChatGPT现在可以直接在PowerPoint中创建和编辑演示文稿。\n\n在PowerPoint中直接构建、更新、理解和优化演示文稿，同时保持幻灯片可编辑。\n\n目前处于测试阶段，我们期待您的反馈 👀",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfx8pgl0aftsljw6ddy0mx0",
+      "title": "Gemini扩展应用连接，支持更多服务",
+      "title_en": "Gemini can now connect to even more apps， including @OpenTable， @Canva， and @Instacart. Whether you…",
+      "url": "https://x.com/GeminiApp/status/2057550225863246236",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-05-21T19:52:55.000Z",
+      "summary": "Gemini现在可以连接更多应用，包括@OpenTable、@Canva和@Instacart。\n\n无论您是预订餐厅、制作传单还是订购杂货，Gemini不仅能查找信息，还能通过连接的应用帮助您无缝采取行动。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfy3oks0am6sljw9otht8dv",
+      "title": "Datasette Agent",
+      "title_en": null,
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent",
+      "source": "Simon Willison 博客",
+      "publishedAt": "2026-05-21T19:52:19.000Z",
+      "summary": "Datasette Agent是Datasette推出的首个可扩展AI助手，为用户提供对话式界面以查询数据，并支持通过插件生成图表。该工具基于其LLM Python库构建，是LLM与Datasette整合的重要成果。目前提供图表生成、AI图像创建和沙箱代码执行等官方插件。它既可运行于Gemini 3.1 Flash-Lite等云端模型，也支持通过LM Studio连接本地开源模型，具备可靠的工具调用与查询能力。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfw62gg0a6hsljwnu5etjbw",
+      "title": "Viggle推出3D格斗派对游戏Fight Anyone 3D",
+      "title_en": "Introducing Fight Anyone 3D🥊A 3D party fighter， probably the most satisfying game to play at work. …",
+      "url": "https://x.com/ViggleAI/status/2057541072419520634",
+      "source": "X：Viggle AI (@ViggleAI)",
+      "publishedAt": "2026-05-21T19:16:33.000Z",
+      "summary": "介绍Fight Anyone 3D🥊一款3D派对格斗游戏，可能是上班时玩起来最爽的游戏。\n\n上传任何人的照片 → 一个可玩的3D格斗角色，带有语音、个性+招牌动作，由Viggle自研游戏引擎+模型打造。\n\n公测期间100%免费+赠送20张礼品卡。玩得越多，赢得越多！\n\n和同事对战。和朋友对战。和任何人对战。链接+教程+更多内容见下方推文串 ↓",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfuzwcl09visljwx2mgue3s",
+      "title": "Codex实现全天候跨设备安全操控Mac",
+      "title_en": "Codex anywhere and everywhere， all the time. Now your Mac doesn't have to be unlocked for Codex to …",
+      "url": "https://x.com/OpenAIDevs/status/2057536706778378692",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-05-21T18:59:12.000Z",
+      "summary": "Codex随时随地，无处不在。\n现在您的Mac无需解锁，Codex即可使用您的电脑。\n通过手机，Codex可以安全地使用您Mac上的应用程序，即使屏幕关闭且处于锁定状态。\nhttps：//developers.openai.com/codex/app/computer-use#locked-use",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpftxb5f09mdsljwl7fiarrh",
+      "title": "Codex周四更新：Appshots功能上线",
+      "title_en": "It's Codex Thursday， and yes， we have updates for you. First up： Appshots， a new way to bring the c…",
+      "url": "https://x.com/OpenAIDevs/status/2057530207976989179",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-05-21T18:33:23.000Z",
+      "summary": "又是Codex周四，我们带来了更新。\n首先是Appshots，一种将你工作上下文引入Codex的新方式。\n在Mac上，按Command-Command即可将应用窗口附加到Codex线程。Codex会获取窗口的截图和文本，包括屏幕上不可见的内容。\nAppshots已在Mac各计划中推出，企业版访问权限即将上线。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfs4pdm097psljw3p8uqz54",
+      "title": "合作伙伴如何运用Opus强化网络安全",
+      "title_en": "How our partners are putting Opus to work for cybersecurity",
+      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-05-21T17:43:01.640Z",
+      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfs4pdm097osljw5pa6ryb6",
+      "title": "Claude现已支持更多安全合规工具",
+      "title_en": "Claude now works with more security and compliance tools",
+      "url": "https://claude.com/blog/compliance-api-security-partners",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-05-21T17:43:01.640Z",
+      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfpql9r08kzsljwm397lepk",
+      "title": "Gemini每日简报助你高效规划一天",
+      "title_en": "Get a head start on your day with Daily Brief. Gemini can now proactively flag what matters most i…",
+      "url": "https://x.com/GeminiApp/status/2057500470147698936",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-05-21T16:35:13.000Z",
+      "summary": "用Daily Brief开启高效一天。\nGemini现在能主动将最重要的事项整理成易于理解的待办清单，让你在早餐结束前就为一天做好准备。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfpmdn508jgsljwog7g8k3k",
+      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
+      "title_en": "Announcing ADK for Kotlin and ADK for Android 0.1.0： Building AI Agents on Android and Beyond",
+      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-21T16:33:06.339Z",
+      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfpmdn508jfsljwx8px8kj8",
+      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
+      "title_en": "Empowering Service Providers and Hardware Partners with Gemini for Home",
+      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-21T16:33:06.339Z",
+      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfoxw8508fasljwvrn0utgu",
+      "title": "Shoplift by PixVerse快速生成平台原生广告视频",
+      "title_en": "No studio. No editor queue. Paste a product URL into Shoplift by PixVerse and ship platform-native …",
+      "url": "https://x.com/PixVerse_/status/2057492991036588306",
+      "source": "X：PixVerse (@PixVerse_)",
+      "publishedAt": "2026-05-21T16:05:30.000Z",
+      "summary": "无需工作室，无需编辑队列。\n将产品URL粘贴到Shoplift by PixVerse，几分钟内即可发布平台原生广告视频\n--专为持续进行创意测试的DTC团队打造。\n免费早期访问：https：//shoplift.pixverse.ai\n转发+关注+回复=300积分（仅限72小时）",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfomtzp0898sljw1vinxid3",
+      "title": "Replit企业版现已开放自助购买",
+      "title_en": "Replit Enterprise is now self-serve！ In minutes you can： - Buy Replit Enterprise - Configure SSO…",
+      "url": "https://x.com/Replit/status/2057491954825674942",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-05-21T16:01:23.000Z",
+      "summary": "Replit Enterprise现已支持自助服务！\n\n几分钟内即可：\n- 购买Replit Enterprise\n- 配置SSO + SCIM\n- 与团队开始协作开发\n\n无需合同谈判，无需等待。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpflmlt207lbsljwukjoavli",
+      "title": "Krea 2 推出 LoRA 微调系统",
+      "title_en": "introducing LoRAs for Krea 2 （beta）. our most powerful fine-tuning system to date； now you can trai…",
+      "url": "https://x.com/krea_ai/status/2057468861583347774",
+      "source": "X：Krea AI (@krea_ai)",
+      "publishedAt": "2026-05-21T14:29:37.000Z",
+      "summary": "为 Krea 2（测试版）引入 LoRA。\n\n我们迄今最强大的微调系统；现在你可以用惊人的精度，在 Krea 2 上训练你自己的特定风格、对象或角色。\n\n了解其工作原理 👇",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpft1pi009fusljwl6sy69na",
+      "title": "在OpenCode中使用Grok",
+      "title_en": "Use Grok in OpenCode",
+      "url": "https://x.ai/news/grok-opencode",
       "source": "xAI：News（网页）",
-      "publishedAt": "2026-05-22T00:00:00.000Z",
-      "summary": "5月22日，xAI宣布，其用户现可在开源个人助理OpenClaw中直接使用Grok模型。所有持有SuperGrok或X Premium订阅的用户均可使用该功能。OpenClaw是一个开源的、本地优先的智能助手，可在多种硬件上运行并保持跨会话记忆，同时能接入WhatsApp、Telegram等多款主流通讯平台。用户通过简单安装和登录，即可在自有设备上运行OpenClaw，并通过其界面或关联的聊天工具与Grok交互。此举进一步扩展了Grok的应用场景，未来还将推出更多开源代理与集成支持。",
+      "publishedAt": "2026-05-21T00:00:00.000Z",
+      "summary": "xAI宣布，其SuperGrok或X Premium订阅用户现可在开源编程工具OpenCode中使用Grok模型。OpenCode提供终端或独立桌面应用两种形式，用户连接Grok账户后，即可调用驱动xAI终端编程代理的Grok Build模型进行开发。该集成通过xAI Grok OAuth实现认证接入，官方表示未来将推出更多开源代理及集成方案。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpeq13j70ejcslk16skz7ozw",
+      "title": "腾讯张军官宣操作系统层级 AI 助手\"马维斯\"正式上工，Windows、Mac、安卓端同步上线",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/953/096.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-20T23:28:17.000Z",
+      "summary": "腾讯于5月21日发布了操作系统层级AI助手\"马维斯\"，支持Windows、Mac和安卓平台同步上线。该助手具备文档归类解析、图片智能识别处理、系统维护等功能，并强调与操作系统深度集成，可调度不同模型处理任务，部分功能可在离线状态下使用。腾讯表示\"马维斯\"能完成市面主流Agent的大部分工作，并具备桌面操控手机应用等能力。这是继3月WorkBuddy和\"龙虾\"产品矩阵后，腾讯推出的又一AI助手产品。",
       "category": "ai-products"
     },
     {
@@ -341,166 +501,6 @@
       "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
       "publishedAt": "2026-05-19T03:43:03.000Z",
       "summary": "🎨 介绍QoderWork的Design Desk。一个将语言转化为可运行代码的无限画布AI工作区。\n💡 用自然语言描述你的需求--即可在无限画布上获得可运行的React + Vite项目。设计师迭代，开发者交付相同文件。无缝交接。\n⏬立即下载QoderWork\nhttps：//www.qoderwork.ai\n#AI #Qoder #QoderWork #DesignDesk",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbxeg8y1b35slnzprzie0f5",
-      "title": "Claude AI助手v2.1.144版本更新",
-      "title_en": "v2.1.144",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-05-19T00:48:51.000Z",
-      "summary": "Claude AI助手发布了v2.1.144版本。此次更新主要新增了对后台会话的`/resume`支持，并将\"extra usage\"更名为\"usage credits\"。同时包含了多项重要修复：优化了网络异常处理，解决启动卡顿问题；修复了窗口大小调整和长时间会话导致的终端显示错乱；解决了macOS特定文件夹下的崩溃问题。此外，还改进了模型选择持久化、文件读取、工具调用以及MCP服务器分页工具列表的处理，并减少了在VS Code中的渲染故障。本次更新显著提升了工具的稳定性和用户体验。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbmco6t18j1slnz9eds1vyp",
-      "title": "Claude Design 全面升级创作能力",
-      "title_en": "You can now create more with Claude Design. We've doubled token limits across every plan.",
-      "url": "https://x.com/claudeai/status/2056460045756309820",
-      "source": "X：Claude (@claudeai)",
-      "publishedAt": "2026-05-18T19:40:56.000Z",
-      "summary": "现在你可以用 Claude Design 创作更多内容了。\n我们已将所有套餐的 token 限制翻倍。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbm33l518hnslnzebiu5any",
-      "title": "Claude Code快速模式默认切换至Opus 4.7",
-      "title_en": "Fast mode now defaults to Opus 4.7 in Claude Code. Try it out today with /fast",
-      "url": "https://x.com/ClaudeDevs/status/2056454359685476491",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-05-18T19:18:21.000Z",
-      "summary": "Claude Code的快速模式现已默认使用Opus 4.7。\n今天就试试 /fast",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbkz7b51895slnzqcluzjlp",
-      "title": "xAI Grok创意套件三款新模型上线OpenRouter",
-      "title_en": "3 new models from @xai's Grok creative stack are live on OpenRouter： • Grok Imagine Image Quality： …",
-      "url": "https://x.com/OpenRouter/status/2056448867982606754",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-18T18:56:31.000Z",
-      "summary": "@xai 的 Grok 创意套件中 3 款新模型现已在 OpenRouter 上线：\n\n• Grok Imagine Image Quality：照片级真实图像生成与编辑\n• Grok Imagine Video：从文本、图像或参考生成短片\n• Grok Voice TTS 1.0：支持 20 多种语言的 5 种语音\n\n更多详情见下方 🧵",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbivbxb17rrslnz8hdxuh4f",
-      "title": "Claude控制台新增提示缓存诊断功能",
-      "title_en": "Prompt cache diagnostics are now in Claude Console. When a request misses the cache， you can now se…",
-      "url": "https://x.com/ClaudeDevs/status/2056434422229123106",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-05-18T17:59:07.000Z",
-      "summary": "提示缓存诊断现已在Claude控制台上线。\n当请求未命中缓存时，您现在可以准确查看提示的哪一部分发生了变化，以及这消耗了多少令牌。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbg92bf174tslnzgr9bjsyy",
-      "title": "将你的本地GitHub会话带到任何地方",
-      "title_en": "Take your local GitHub sessions anywhere",
-      "url": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-05-18T16:54:53.000Z",
-      "summary": "GitHub为Copilot功能推出了远程控制会话能力，并已全面上线。该功能允许用户在VS Code或命令行中启动Copilot任务后，可随时随地通过github.com网站或GitHub Mobile移动端应用继续操作，实现了开发工作流从桌面端到移动端的无缝衔接。此更新增强了开发者在不同场景下的灵活性和工作效率。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd323rj00hhslk1bm0s582h",
-      "title": "更智能的 Google AI Edge Gallery：MCP 集成、通知和会话连续性",
-      "title_en": "A Smarter Google AI Edge Gallery： MCP integration， notifications， and session continuity",
-      "url": "https://developers.googleblog.com/a-smarter-google-ai-edge-gallery-mcp-integration-notifications-and-session-continuity",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-18T16:00:00.000Z",
-      "summary": "Google AI Edge Gallery 应用在安卓平台上扩展了设备端 AI 能力，通过引入对开源模型上下文协议（MCP）的实验性支持，使得 Gemma 4 模型能够协调处理跨 Google Workspace 和 Google Maps 等外部数据源的复杂任务。此次更新添加了\"定时通知\"技能，用于实现日常事务的自动化管理，并新增了持久化聊天记录功能，允许用户近乎即时地恢复长会话上下文。该平台依托开源工具包，积极鼓励社区开发者通过其 GitHub 仓库构建并分享专注实用的工作流、提示配置与工具集成。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd0wx2i01xdsljlb5qn6lbf",
-      "title": "Google Tensor ML SDK 测试版发布",
-      "title_en": "Google Tensor SDK Beta with LiteRT",
-      "url": "https://developers.googleblog.com/google-tensor-sdk-beta-with-litert",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-18T16:00:00.000Z",
-      "summary": "Google Tensor ML SDK 进入测试版，支持开发者直接在 Pixel 10 设备的 TPU 上构建和部署高性能机器学习模型。该 SDK 集成边缘部署框架 LiteRT，提供统一工作流，可高效转换、编译并运行 PyTorch 或 TFLite 模型，并具备稳定回退机制。此外，新推出的模型库包含超过 100 个经典及生成式 AI 模型（如 Gemma 3），支持低延迟、注重隐私的语音识别、计算机视觉与文本生成等功能。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcyrr9h01d6sljl4ivqyml6",
-      "title": "重要更新：Gemini CLI将迁移至Antigravity CLI",
-      "title_en": "An important update： Transitioning Gemini CLI to Antigravity CLI",
-      "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-18T16:00:00.000Z",
-      "summary": "Google正在整合其AI终端工具，将面向社区的Gemini CLI迁移至全新平台Antigravity CLI。这款新工具采用Go语言开发，作为代理优先的平台，支持复杂的多代理工作流，并提供更快的执行速度、异步处理能力以及与Antigravity 2.0桌面应用同步的统一架构。企业客户可维持现有访问权限，但个人及免费用户必须在2026年6月18日Gemini CLI停止服务前，完成向新平台的迁移。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcy2cbs017hsljly8fua8xn",
-      "title": "经验研究助手（ERA）：从Nature发表到催化计算发现",
-      "title_en": "Empirical Research Assistance （ERA）： From Nature publication to catalyzing Computational Discovery",
-      "url": "https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-05-18T16:00:00.000Z",
-      "summary": "Google Research开发的经验研究助手（ERA）现已在《Nature》期刊发表论文。这是一款基于Gemini的AI工具，旨在协助科学家编写专业级经验科学代码，其核心能力包括搜索文献、生成代码、探索方案并迭代优化，以加速耗时的计算实验过程。该工具已被用于构建\"计算发现\"原型，并已通过Google Labs的\"可信赖测试者计划\"向更广泛的科学家群体开放初步试用。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbdurfq16k7slnzyvoy9g0z",
-      "title": "PaddleOCR 3.5：使用Transformers后端运行OCR和文档解析任务",
-      "title_en": "PaddleOCR 3.5： Running OCR and Document Parsing Tasks with a Transformers Backend",
-      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-18T15:12:46.000Z",
-      "summary": "PaddleOCR 发布 3.5 版本，正式将 Transformers 确立为运行 PP-OCRv5 及 PaddleOCR-VL 1.5 模型的可选推理后端之一。此次更新引入了更灵活的 `engine` 与 `engine_config` 参数，允许开发者自主选择后端并配置数据类型、设备等选项。其核心价值在于，显著降低了将文档处理能力集成至以 Transformers 为中心的主流开发栈（如 RAG、智能体、文档AI）的门槛，使开发者能更便捷地利用现有生态，减少集成阻力，从而专注于下游应用构建。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbb6gwv15x7slnzrgk1ok0g",
-      "title": "Krea 2全面开放，订阅用户享一周无限生成",
-      "title_en": "today， Krea 2 goes live to everyone. to celebrate， we're offering unlimited Krea 2 generations to a…",
-      "url": "https://x.com/krea_ai/status/2056381933106651519",
-      "source": "X：Krea AI (@krea_ai)",
-      "publishedAt": "2026-05-18T14:30:33.000Z",
-      "summary": "今天，Krea 2正式向所有人开放。\n为庆祝上线，我们将为所有订阅用户提供整整一周的无限次Krea 2生成服务。\n免费试用 👇",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbbpl0f161tslnzxbl442c4",
-      "title": "The Open Agent Leaderboard（开放智能体排行榜）",
-      "title_en": "The Open Agent Leaderboard",
-      "url": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-18T14:12:58.000Z",
-      "summary": "IBM Research在Hugging Face平台发布博客文章，公布了\"开放智能体排行榜\"基准测试框架。该排行榜旨在系统化评估不同智能体（Agent）在多项任务中的综合表现，涵盖语言理解、工具调用、多步推理等能力。通过公开透明的评测标准与数据集，该框架为开发者对比各类智能体模型（如LLaMA、Claude等）的性能提供了统一基准，旨在推动智能体技术的标准化评估与协同发展。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpbh7f2g17czslnzd12y3ali",
-      "title": "OpenAI与Dell合作将Codex引入混合及本地企业环境",
-      "title_en": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-18T10:00:00.000Z",
-      "summary": "OpenAI与Dell达成合作，将Codex编程代理引入企业混合云及本地部署环境。该合作旨在帮助企业在自身数据和业务流程中安全集成AI编码能力，强化对敏感数据的管控。此举标志着企业级AI工具部署方式的重要扩展，为受监管行业提供了符合数据主权要求的解决方案。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpaybdqq12xjslnzh647p2h3",
-      "title": "AgentScope Java 1.1发布，强化企业级Agent能力",
-      "title_en": "AgentScope Java 1.1 launches with workspace-driven persistence， pluggable filesystems， auto-context …",
-      "url": "https://x.com/alibaba_cloud/status/2056291941776519299",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-18T08:32:57.000Z",
-      "summary": "AgentScope Java 1.1发布，支持工作区驱动持久化、可插拔文件系统、自动上下文管理以及安全沙箱编排，用于构建可扩展的企业级Agent 🚀\n了解更多：https：//int.alibabacloud.com/m/1000413005/\n#Java #AI #AgentScope",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpawmbny12jaslnzycwr5u1v",
-      "title": "Grok现已支持视频理解与分析",
-      "title_en": "Grok groks videos",
-      "url": "https://x.com/elonmusk/status/2056274129985085606",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-05-18T07:22:10.000Z",
-      "summary": "Grok可以处理视频了\n\n【引用 @XFreeze】：你现在可以将整个视频上传给Grok，让它实时为你分析、总结、翻译、解释场景或提取重要上下文。\n\nGrok能够理解完整的视频--而不仅仅是图像和文本。\n\n它具备原生多模态能力和极其强大的视觉理解能力。",
       "category": "ai-products"
     }
   ]

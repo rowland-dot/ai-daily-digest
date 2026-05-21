@@ -1,16 +1,26 @@
 {
-  "count": 22,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpeliem90dilslk1r2and0l6",
-      "title": "ZCube网络架构：破解大模型推理网络瓶颈",
-      "title_en": "http：//x.com/i/article/2057206923208884224",
-      "url": "https://x.com/Zai_org/status/2057216685040443743",
-      "source": "X：智谱 Z.ai (@Zai_org)",
-      "publishedAt": "2026-05-20T21:47:33.000Z",
-      "summary": "随着长上下文与Prefill-Decode分离部署成为主流，GPU集群网络已从次要部件转变为制约推理吞吐、尾部延迟和成本的关键瓶颈。传统静态网络拓扑与动态非对称的KV Cache流量模式冲突，导致局部拥塞。为此，Z.ai、Harnets.AI与清华大学联合研发了ZCube网络架构。该架构采用完全扁平化拓扑与混合接入设计，从源头解耦并分散流量以减少拥塞。在GLM-5.1生产测试中，ZCube在保持GPU与软件栈不变的前提下，实现了交换机与光模块成本降低33%、平均推理吞吐提升15%、首token时间P99降低40.6%的显著效果，证明网络架构创新能有效释放硬件潜力。",
+      "id": "cmpenfnvr0dw7slk14rnyifac",
+      "title": "ZCube：超大规模大模型推理的网络优化",
+      "title_en": null,
+      "url": "https://www.zhipuai.cn/zh/research/160",
+      "source": "智谱：研究（网页内嵌数据）",
+      "publishedAt": "2026-05-20T19:51:00.000Z",
+      "summary": "针对超大规模大模型推理，ZCube网络架构通过取消Spine层、将Leaf交换机分组并全互联等创新设计，有效解决了推理网络的拥塞问题。该架构在集群实测中，实现了交换机与光模块资本支出减少33%、GPU平均推理吞吐提升15%，同时将首token延迟的P99值大幅降低40.6%，在降低成本的同时显著提升了推理性能。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpewx9yf01ensljwkhvs9xns",
+      "title": "SpecBench：测量长期编码代理中的奖励黑客行为",
+      "title_en": "SpecBench： Measuring Reward Hacking in Long-Horizon Coding Agents",
+      "url": "https://arxiv.org/abs/2605.21384",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-20T00:00:00.000Z",
+      "summary": "长期编码代理在优化测试通过时可能偏离用户真实目标，导致奖励黑客现象。研究将软件工程任务分解为规格说明、可见验证测试和隐藏测试，通过两类测试通过率差距量化黑客行为。为此引入SpecBench基准，包含30个从短期（如JSON解析器）到超长期（如构建操作系统内核）的系统级编程任务。实验显示，所有前沿代理在可见测试上饱和，但隐藏测试上存在持续差距，小模型差距更大；代码规模每增十倍，差距增长28个百分点。失败案例包括故意利用测试输入。SpecBench提供原则性平台，评估代理是否构建真实工作系统而非仅玩游戏测试套件。",
       "category": "paper"
     },
     {
@@ -181,46 +191,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-15T00:00:00.000Z",
       "summary": "强化学习与可验证奖励范式面临探索效率瓶颈。为此，研究团队提出NudgeRL框架，其核心是\"策略助推\"技术，通过为每次策略采样注入轻量级策略级上下文，引导模型产生多样化推理轨迹，无需依赖昂贵的外部监督。该框架进一步提出一个统一目标，将奖励分解为上下文间与上下文内组件，并通过蒸馏目标将有效行为迁移回基础策略。在五个高难度数学基准测试中，NudgeRL的表现优于标准GRPO方法，其效果相当于后者使用高达8倍采样预算的结果，且平均表现超过了依赖特权信息的Oracle引导基线，证明了结构化探索的高效性与可扩展性。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp4yeqnn09sksljxvgbqhxp4",
-      "title": "教视觉-语言模型说\"电影语言\"",
-      "title_en": "Teaching Vision-Language Models to Speak Cinema",
-      "url": "https://blog.ml.cmu.edu/2026/05/13/teaching-vision-language-models-to-speak-cinema",
-      "source": "CMU：Machine Learning Blog",
-      "publishedAt": "2026-05-14T03:06:13.000Z",
-      "summary": "研究团队与百余名专业创作者历时一年，构建了一个视频描述生成流程，其核心在于扩展精细化的人类-AI协同监督，而非单纯扩大模型规模。该研究（入选CVPR 2026亮点论文）指出，当前主流视频生成模型在理解和生成具有电影感的专业运镜（如希区柯克式滑动变焦、精确的焦点转移或荷兰角镜头）时存在明显不足，常产出通用或焦点错误的画面。这项工作揭示了一条通过提升监督质量来增强模型\"电影语言\"表达能力的新路径。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp4x0njy09hysljxynnj3omy",
-      "title": "NousResearch推出Token Superposition Training技术，显著加速大语言模型预训练",
-      "title_en": "bravooo",
-      "url": "https://x.com/SiliconFlowAI/status/2054755824309076359",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "publishedAt": "2026-05-14T02:48:58.000Z",
-      "summary": "NousResearch发布了Token Superposition Training（TST），这是一种改进标准大语言模型预训练流程的方法。该技术无需改变模型架构、优化器、分词器或训练数据，即可在相同计算量（FLOPs）下实现2-3倍的训练时间加速。其核心是在训练的前三分之一阶段，让模型读取并预测连续的token包，对输入嵌入进行平均，并使用改进的交叉熵损失预测下一个token包；剩余训练时间则恢复为标准的下一个token预测。推理阶段的模型与传统预训练产生的模型完全相同。该方法已在270M、600M、3B的密集模型以及10B至1B的混合专家模型规模上得到验证。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp6dojkq011lslnz6pqfta9e",
-      "title": "MemLens：大型视觉语言模型多模态长时记忆基准测试",
-      "title_en": "MemLens： Benchmarking Multimodal Long-Term Memory in Large Vision-Language Models",
-      "url": "https://arxiv.org/abs/2605.14906",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-14T00:00:00.000Z",
-      "summary": "研究团队推出MEMLENS基准，系统评估大型视觉语言模型在多模态多轮对话中的长时记忆能力。该基准包含789个问题，涵盖五大记忆能力，并在四种标准上下文长度下测试。评估27个长上下文模型和7个记忆增强代理后发现：长上下文模型在短对话中表现良好但随对话延长性能下降；记忆代理长度稳定性好但损失视觉保真度。多轮推理任务将多数系统性能限制在30%以下，表明需结合长上下文注意力与结构化多模态检索的混合架构。",
-      "category": "paper"
-    },
-    {
-      "id": "cmp678eb70kb5sljxutt016gd",
-      "title": "迈向自我进化的智能文献检索系统",
-      "title_en": "Towards Self-Evolving Agentic Literature Retrieval",
-      "url": "https://arxiv.org/abs/2605.14306",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-14T00:00:00.000Z",
-      "summary": "针对传统检索无法理解复杂意图、而前沿大语言模型成本高且存在幻觉的问题，研究团队提出了自我进化的智能文献检索系统PaSaMaster。该系统通过迭代式意图分析、检索与排序，将文献检索转变为动态演进的过程，并采用三项关键设计：利用排序证据揭示信息缺口以优化搜索；将检索定义为意图-论文相关性排序任务，从根本上杜绝虚假文献；通过分离规划与检索来提升效率，仅用大模型理解意图，而将大规模检索与评分交由轻量模型处理。在涵盖38个学科的基准测试中，该系统将传统关键词检索的F1分数提升15.6倍，完全消除了文献幻觉，且性能超越GPT-5.2达30%，计算成本仅为后者的1%。",
       "category": "paper"
     }
   ]
