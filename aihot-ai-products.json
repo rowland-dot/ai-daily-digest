@@ -1,8 +1,108 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MTYyMTgzMDAwLCJpIjoiY21wYzRhb25zMDA2eHNsdmZ1eW4xbDdrZSJ9",
+  "nextCursor": "eyJhIjoxNzc5MjEyNzAwMDAwLCJpIjoiY21wY3lpb3F3MDFienNsamxib2Y2MWoyZSJ9",
   "items": [
+    {
+      "id": "cmphdt39c0njesljw5m72ds3y",
+      "title": "新增差异标记样式设置选项",
+      "title_en": "Shipped papercut： new diff markers setting in Appearance. Prefer classic + / - markers when reviewi…",
+      "url": "https://x.com/OpenAIDevs/status/2057918624841728349",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-05-22T20:16:49.000Z",
+      "summary": "已发布剪纸功能：外观设置中新增差异标记样式。\n\n在查看差异时更喜欢经典的 + / - 标记？现在你可以选择使用它们，而不仅仅是彩色差异条。\n\n默认设置保持不变，除非你主动选择启用。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmphbp5r30n1asljwb1oaa1ly",
+      "title": "ChatGPT语音模式实现表单语音填写",
+      "title_en": "Paperwork is better when you can just talk through it. With Images in ChatGPT and voice mode， you c…",
+      "url": "https://x.com/ChatGPTapp/status/2057908052968521902",
+      "source": "X：ChatGPT (@ChatGPTapp)",
+      "publishedAt": "2026-05-22T19:34:48.000Z",
+      "summary": "用对话处理文书工作更轻松。\n\n借助ChatGPT的图像功能和语音模式，您可以上传表单，说出要填写的内容，即可获得填写完成的版本。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmph7eb1t0m08sljwk4zixd2k",
+      "title": "Warp现已支持OpenRouter接入",
+      "title_en": "OpenRouter is now supported in @warpdotdev！ ❤️",
+      "url": "https://x.com/OpenRouter/status/2057875517391667492",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-05-22T17:25:31.000Z",
+      "summary": "OpenRouter现已在@warpdotdev中得到支持！❤️\n\n工程师Dagm Assefa展示了如何连接DeepSeek和OpenRouter。\n\n文档：https：//docs.warp.dev/agent-platform/inference/custom-inference-endpoint/ 🔖",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmph6k3uv0lqqsljwlwu0lr4z",
+      "title": "谷歌I/O大会发布AI代理全套开发工具链",
+      "title_en": "http：//x.com/i/article/2057866361636888576",
+      "url": "https://x.com/GoogleAI/status/2057871583843135978",
+      "source": "X：Google AI (@GoogleAI)",
+      "publishedAt": "2026-05-22T17:09:53.000Z",
+      "summary": "谷歌在I/O开发者大会宣布，系统性构建面向AI代理（Agent）的开发与部署工具链。核心更新包括：独立桌面应用Antigravity 2.0及其命令行工具、SDK面世；Google AI Studio新增Kotlin支持，可一键开发安卓应用并发布，同时推出移动端App。此外，Gemini API推出托管代理服务，实现一键部署；WebMCP作为开放标准在Chrome 149中推出，允许网页向代理暴露工具；Chrome DevTools也开放给AI代理以自动化调试。企业级客户可直接连接Google Cloud项目，而DeepMind的科学技能包则加速特定领域研究。此举标志着谷歌正全面打造从开发、接口到部署的完整AI代理生态系统。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmph4m21w0laosljw49bblm8j",
+      "title": "DeepSeek-V4-Pro永久降价公告",
+      "title_en": "We are making our discount permanent！ 🎉 Enjoy building with DeepSeek-V4-Pro and bring your innovat…",
+      "url": "https://x.com/deepseek_ai/status/2057854261699195173",
+      "source": "X：DeepSeek (@deepseek_ai)",
+      "publishedAt": "2026-05-22T16:01:03.000Z",
+      "summary": "我们将优惠永久化！🎉\n\n享受使用 DeepSeek-V4-Pro 构建的乐趣，将您的创新想法变为现实！🚀",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmph294ju0ko5sljwmb0hxida",
+      "title": "Project Genie与谷歌街景合作推出交互式世界",
+      "title_en": "Project Genie 🤝 @GoogleMaps Street View You can now take real U.S. places and transform them into …",
+      "url": "https://x.com/GoogleDeepMind/status/2057842131142590512",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-05-22T15:12:51.000Z",
+      "summary": "Project Genie 🤝 @GoogleMaps Street View\n\n你现在可以将真实的美国地点转化为全新的交互式世界。🌍",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpgtwqma0infsljwhk4gdbmx",
+      "title": "PixVerse App上线图像生成功能",
+      "title_en": "Create Image is live in PixVerse App Prompt or reference in， generate on your phone. 3 free generati…",
+      "url": "https://x.com/PixVerse_/status/2057777743027392848",
+      "source": "X：PixVerse (@PixVerse_)",
+      "publishedAt": "2026-05-22T10:57:00.000Z",
+      "summary": "Create Image已在PixVerse App上线。\n输入提示词或参考图，在手机上即可生成。\n5月24日至31日11：00 UTC，每人可免费生成3次。\n转发+关注+回复 = 300 Creds（仅限72小时）",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpgf40dn0ew7sljw5dd58ynk",
+      "title": "Antigravity付费版Gemini配额再翻三倍",
+      "title_en": "Update： *Weekly* Gemini quotas on all paid @Antigravity tiers have just been tripled， and quotas are…",
+      "url": "https://x.com/googleaidevs/status/2057679246085226965",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-05-22T04:25:36.000Z",
+      "summary": "更新：所有付费@Antigravity层级的*每周*Gemini配额已再次提升至三倍，且配额已正式重置。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpg7ztcn0d1vsljwywtcyylh",
+      "title": "用户好评即最佳文案，视觉呈现由AI完成",
+      "title_en": "Your customers wrote the best copy you'll ever have. Now give it the visual to match. Drop in the q…",
+      "url": "https://x.com/LumaLabsAI/status/2057628006353670163",
+      "source": "X：Luma AI (@LumaLabsAI)",
+      "publishedAt": "2026-05-22T01:02:00.000Z",
+      "summary": "你的客户写出了你永远无法超越的文案。现在，为它匹配视觉呈现吧。\n只需粘贴评价，设定风格，Luma Agents 将处理所有推荐语图形。\n让它被听见 → http：//lumalabs.ai/app",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpg6xm8b0ctysljw2zo14zo8",
+      "title": "Gemini Omni发布，创意作品涌现",
+      "title_en": "Gemini Omni is here， and we've been seeing amazing creations all week. Here are some standouts 👇",
+      "url": "https://x.com/GeminiApp/status/2057616371748651054",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-05-22T00:15:46.000Z",
+      "summary": "Gemini Omni来了，我们本周看到了许多令人惊叹的创作。以下是一些杰出作品 👇",
+      "category": "ai-products"
+    },
     {
       "id": "cmpg08wzy0b65sljwgzjw8l6d",
       "title": "v2.1.147版本更新",
@@ -74,26 +174,6 @@
       "category": "ai-products"
     },
     {
-      "id": "cmpfs4pdm097psljw3p8uqz54",
-      "title": "合作伙伴如何运用Opus强化网络安全",
-      "title_en": "How our partners are putting Opus to work for cybersecurity",
-      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-21T17:43:01.640Z",
-      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfs4pdm097osljw5pa6ryb6",
-      "title": "Claude现已支持更多安全合规工具",
-      "title_en": "Claude now works with more security and compliance tools",
-      "url": "https://claude.com/blog/compliance-api-security-partners",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-21T17:43:01.640Z",
-      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
-      "category": "ai-products"
-    },
-    {
       "id": "cmpfpql9r08kzsljwm397lepk",
       "title": "Gemini每日简报助你高效规划一天",
       "title_en": "Get a head start on your day with Daily Brief. Gemini can now proactively flag what matters most i…",
@@ -101,26 +181,6 @@
       "source": "X：Gemini (@GeminiApp)",
       "publishedAt": "2026-05-21T16:35:13.000Z",
       "summary": "用Daily Brief开启高效一天。\nGemini现在能主动将最重要的事项整理成易于理解的待办清单，让你在早餐结束前就为一天做好准备。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfpmdn508jgsljwog7g8k3k",
-      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
-      "title_en": "Announcing ADK for Kotlin and ADK for Android 0.1.0： Building AI Agents on Android and Beyond",
-      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-21T16:33:06.339Z",
-      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfpmdn508jfsljwx8px8kj8",
-      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
-      "title_en": "Empowering Service Providers and Hardware Partners with Gemini for Home",
-      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-21T16:33:06.339Z",
-      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
       "category": "ai-products"
     },
     {
@@ -241,6 +301,46 @@
       "source": "X：OpenAI Developers (@OpenAIDevs)",
       "publishedAt": "2026-05-20T16:54:01.000Z",
       "summary": "你的笔记本电脑可以留在家里。\n通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfs4pdm097psljw3p8uqz54",
+      "title": "合作伙伴如何运用Opus强化网络安全",
+      "title_en": "How our partners are putting Opus to work for cybersecurity",
+      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-05-20T16:00:00.000Z",
+      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfs4pdm097osljw5pa6ryb6",
+      "title": "Claude现已支持更多安全合规工具",
+      "title_en": "Claude now works with more security and compliance tools",
+      "url": "https://claude.com/blog/compliance-api-security-partners",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-05-20T16:00:00.000Z",
+      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfpmdn508jgsljwog7g8k3k",
+      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
+      "title_en": "Announcing ADK for Kotlin and ADK for Android 0.1.0： Building AI Agents on Android and Beyond",
+      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-20T16:00:00.000Z",
+      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpfpmdn508jfsljwx8px8kj8",
+      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
+      "title_en": "Empowering Service Providers and Hardware Partners with Gemini for Home",
+      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-20T16:00:00.000Z",
+      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
       "category": "ai-products"
     },
     {
@@ -401,106 +501,6 @@
       "source": "Google Blog：AI（RSS）",
       "publishedAt": "2026-05-19T17:45:00.000Z",
       "summary": "Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。同时，其 AI Inbox 功能也得到了升级与优化。这些更新旨在进一步提升用户在工作场景中的协作效率与创作体验，通过集成更智能的工具和交互方式，帮助用户更便捷地完成多项任务。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcy5k73018asljl1p7ulh4u",
-      "title": "Google AI Ultra套餐降价并新增档位",
-      "title_en": "We're reducing the price of our top-tier Google AI Ultra plan from $250 to $200/mo AND introducing a…",
-      "url": "https://x.com/GeminiApp/status/2056792679607103626",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T17:42:42.000Z",
-      "summary": "我们将顶级Google AI Ultra套餐的价格从每月250美元降至200美元，并推出新的每月100美元Ultra套餐档位。\n\n这个新套餐解锁了比Pro套餐高5倍的Gemini应用使用限额，助您加速编程与创作。它还包括新功能抢先体验、20TB存储空间、@YouTube Premium等更多权益。适用条款。https：//goo.gle/4wEuFGK #GoogleIO",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcy5k73018bsljlb97r1dme",
-      "title": "Gemini Spark：全天候自主AI助手",
-      "title_en": "Gemini Spark is your new 24/7 personal AI agent. Give it a task and it works autonomously in the ba…",
-      "url": "https://x.com/GeminiApp/status/2056792333132460322",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T17:41:20.000Z",
-      "summary": "Gemini Spark 是你的新全天候个人AI代理。\n\n给它一个任务，它会在后台自主工作，即使你的手机和笔记本电脑已关机。你选择启用它，它被设计为在执行重大操作前会先征询你的意见。#GoogleIO",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpctnmzc009csl50wbxd15zx",
-      "title": "Luma Agents现已支持Seedance 2.0生成",
-      "title_en": "Luma Agents can now generate with Seedance 2.0. Point your next project at it， see what it produces…",
-      "url": "https://x.com/LumaLabsAI/status/2056766837430600099",
-      "source": "X：Luma AI (@LumaLabsAI)",
-      "publishedAt": "2026-05-19T16:00:01.000Z",
-      "summary": "Luma Agents现在可以使用Seedance 2.0进行生成了。\n\n将你的下一个项目指向它，看看它能产出什么，然后继续前进。同样的工作流程，但有了更多可用内容。\n\n打开Luma Agents → http：//lumalabs.ai/app",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcsj6sz050yslae7rv43rvq",
-      "title": "OpenRouter工具调用模型现可自主进行网络搜索",
-      "title_en": "Any tool-calling model on OpenRouter can call web search and web fetch agentically. The model decid…",
-      "url": "https://x.com/OpenRouter/status/2056758698400452705",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-19T15:27:41.000Z",
-      "summary": "OpenRouter上的任何工具调用模型现在都可以自主调用网络搜索和网页抓取功能。\n模型可以自行决定何时搜索、搜索什么以及搜索次数。\n我们新增了@p0作为新的网络搜索提供商。了解更多：https：//openrouter.ai/announcements/agentic-web-tools",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcqdn7c04hpslaeeo65dvvp",
-      "title": "Claude托管代理新增两项安全功能",
-      "title_en": "We've added two security improvements to Claude Managed Agents. Self-hosted sandboxes keep the age…",
-      "url": "https://x.com/ClaudeDevs/status/2056740346529468717",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-05-19T14:14:45.000Z",
-      "summary": "我们为Claude Managed Agents增加了两项安全改进。\n自托管沙箱将代理的执行环境保留在您的基础设施或托管沙箱提供商处。\nMCP隧道让代理能够连接到您安全边界内的服务。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcr5ydw04mpslaee36vi0j9",
-      "title": "宣布Claude Managed Agents登陆Cloudflare",
-      "title_en": "Announcing Claude Managed Agents on Cloudflare",
-      "url": "https://blog.cloudflare.com/claude-managed-agents",
-      "source": "Cloudflare Blog",
-      "publishedAt": "2026-05-19T13:00:00.000Z",
-      "summary": "Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcxv1cv014esljlajekrpeq",
-      "title": "推进内容溯源，构建更安全、更透明的AI生态系统",
-      "title_en": "Advancing content provenance for a safer， more transparent AI ecosystem",
-      "url": "https://openai.com/index/advancing-content-provenance",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-19T10:45:00.000Z",
-      "summary": "OpenAI推出了新的AI内容溯源体系，旨在提升AI生成媒体的可信度。该体系集成了Content Credentials和SynthID两种技术标准，并配套推出了一个验证工具。此举的核心目标是帮助公众有效识别AI生成的内容，从而建立对AI媒体的信任，最终推动一个更安全、更透明的AI生态发展。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcew7mp01s5slaemjh52y5b",
-      "title": "Claude智能体托管平台新增自托管沙箱与MCP隧道功能",
-      "title_en": "New in Claude Managed Agents： self-hosted sandboxes and MCP tunnels",
-      "url": "https://claude.com/blog/claude-managed-agents-updates",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-19T09:09:26.458Z",
-      "summary": "Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。目前沙箱功能已进入公测，隧道处于研究预览阶段。这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpccjtl2017qslaeequgv5v9",
-      "title": "Claude推出自托管沙箱与MCP隧道功能",
-      "title_en": "Live from Code with Claude London： we're launching self-hosted sandboxes （public beta） and MCP tunne…",
-      "url": "https://x.com/claudeai/status/2056645485696315581",
-      "source": "X：Claude (@claudeai)",
-      "publishedAt": "2026-05-19T07:57:49.000Z",
-      "summary": "来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。\n在您自己的安全边界内运行代理，默认应用您的安全控制。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpc4aons006xslvfuyn1l7ke",
-      "title": "QoderWork推出Design Desk无限画布AI工作区",
-      "title_en": "🎨 Introducing Design Desk by QoderWork. An infinite-canvas AI workspace that turns language into ru…",
-      "url": "https://x.com/alibaba_cloud/status/2056581373301788747",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-19T03:43:03.000Z",
-      "summary": "🎨 介绍QoderWork的Design Desk。一个将语言转化为可运行代码的无限画布AI工作区。\n💡 用自然语言描述你的需求--即可在无限画布上获得可运行的React + Vite项目。设计师迭代，开发者交付相同文件。无缝交接。\n⏬立即下载QoderWork\nhttps：//www.qoderwork.ai\n#AI #Qoder #QoderWork #DesignDesk",
       "category": "ai-products"
     }
   ]

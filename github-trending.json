@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-21T21:59:41.934Z",
+  "fetched_at": "2026-05-22T21:43:58.413Z",
   "repos": [
     {
       "owner": "anthropics",
@@ -8,86 +8,31 @@
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 22235,
-      "forks": 2636,
-      "starsToday": 891
+      "stars": 24726,
+      "forks": 2754,
+      "starsToday": 2556
     },
     {
       "owner": "colbymchenry",
       "name": "codegraph",
       "url": "https://github.com/colbymchenry/codegraph",
-      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 13172,
-      "forks": 747,
-      "starsToday": 4222
+      "stars": 16349,
+      "forks": 903,
+      "starsToday": 3688
     },
     {
-      "owner": "multica-ai",
-      "name": "andrej-karpathy-skills",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "",
-      "languageColor": "",
-      "stars": 142994,
-      "forks": 14660,
-      "starsToday": 2590
-    },
-    {
-      "owner": "dotnet",
-      "name": "skills",
-      "url": "https://github.com/dotnet/skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 2159,
-      "forks": 177,
-      "starsToday": 179
-    },
-    {
-      "owner": "obra",
-      "name": "superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 201425,
-      "forks": 17942,
-      "starsToday": 1572
-    },
-    {
-      "owner": "HKUDS",
-      "name": "CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 39069,
-      "forks": 3709,
-      "starsToday": 644
-    },
-    {
-      "owner": "rmyndharis",
-      "name": "OpenWA",
-      "url": "https://github.com/rmyndharis/OpenWA",
-      "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 5367,
-      "forks": 1074,
-      "starsToday": 704
-    },
-    {
-      "owner": "ChromeDevTools",
-      "name": "chrome-devtools-mcp",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 40445,
-      "forks": 2569,
-      "starsToday": 132
+      "owner": "ruvnet",
+      "name": "RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 63930,
+      "forks": 8450,
+      "starsToday": 992
     },
     {
       "owner": "rohitg00",
@@ -96,108 +41,31 @@
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 10645,
-      "forks": 2102,
-      "starsToday": 1318
+      "stars": 11781,
+      "forks": 2250,
+      "starsToday": 988
     },
     {
-      "owner": "teng-lin",
-      "name": "notebooklm-py",
-      "url": "https://github.com/teng-lin/notebooklm-py",
-      "description": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 14342,
-      "forks": 1991,
-      "starsToday": 182
-    },
-    {
-      "owner": "can1357",
-      "name": "oh-my-pi",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "owner": "ChromeDevTools",
+      "name": "chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 5816,
-      "forks": 475,
-      "starsToday": 483
+      "stars": 40933,
+      "forks": 2600,
+      "starsToday": 499
     },
     {
-      "owner": "antoinezambelli",
-      "name": "forge",
-      "url": "https://github.com/antoinezambelli/forge",
-      "description": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1452,
-      "forks": 75,
-      "starsToday": 449
-    },
-    {
-      "owner": "multica-ai",
-      "name": "multica",
-      "url": "https://github.com/multica-ai/multica",
-      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 30663,
-      "forks": 3730,
-      "starsToday": 511
-    },
-    {
-      "owner": "Imbad0202",
-      "name": "academic-research-skills",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
-      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 18090,
-      "forks": 1553,
-      "starsToday": 2502
-    },
-    {
-      "owner": "trimstray",
-      "name": "the-book-of-secret-knowledge",
-      "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
-      "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
-      "language": "",
-      "languageColor": "",
-      "stars": 222347,
-      "forks": 13312,
-      "starsToday": 429
-    },
-    {
-      "owner": "truelockmc",
-      "name": "streambert",
-      "url": "https://github.com/truelockmc/streambert",
-      "description": "A cross-platform Electron Desktop App to stream and download any Movie, TV Series or Anime in the World. Zero Ads and Tracking",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 3904,
-      "forks": 301,
-      "starsToday": 1057
-    },
-    {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 103603,
-      "forks": 17032,
-      "starsToday": 990
-    },
-    {
-      "owner": "alireza0",
-      "name": "s-ui",
-      "url": "https://github.com/alireza0/s-ui",
-      "description": "An advanced Web Panel • Built for SagerNet/Sing-Box",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 8912,
-      "forks": 1501,
-      "starsToday": 25
+      "owner": "dotnet",
+      "name": "skills",
+      "url": "https://github.com/dotnet/skills",
+      "description": "Repository for skills to assist AI coding agents with .NET and C#",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 2497,
+      "forks": 197,
+      "starsToday": 391
     },
     {
       "owner": "Lum1104",
@@ -206,9 +74,86 @@
       "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 16517,
-      "forks": 1547,
-      "starsToday": 854
+      "stars": 18360,
+      "forks": 1663,
+      "starsToday": 1391
+    },
+    {
+      "owner": "odoo",
+      "name": "odoo",
+      "url": "https://github.com/odoo/odoo",
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 51094,
+      "forks": 32514,
+      "starsToday": 48
+    },
+    {
+      "owner": "byJoey",
+      "name": "cfnew",
+      "url": "https://github.com/byJoey/cfnew",
+      "description": "",
+      "language": "",
+      "languageColor": "",
+      "stars": 13285,
+      "forks": 6477,
+      "starsToday": 85
+    },
+    {
+      "owner": "trimstray",
+      "name": "the-book-of-secret-knowledge",
+      "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+      "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+      "language": "",
+      "languageColor": "",
+      "stars": 223148,
+      "forks": 13379,
+      "starsToday": 964
+    },
+    {
+      "owner": "Fincept-Corporation",
+      "name": "FinceptTerminal",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 22581,
+      "forks": 3120,
+      "starsToday": 337
+    },
+    {
+      "owner": "can1357",
+      "name": "oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 6307,
+      "forks": 512,
+      "starsToday": 455
+    },
+    {
+      "owner": "yt-dlp",
+      "name": "yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "description": "A feature-rich command-line audio/video downloader",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 164272,
+      "forks": 13815,
+      "starsToday": 536
+    },
+    {
+      "owner": "karpathy",
+      "name": "nn-zero-to-hero",
+      "url": "https://github.com/karpathy/nn-zero-to-hero",
+      "description": "Neural Networks: Zero to Hero",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 22293,
+      "forks": 3240,
+      "starsToday": 270
     }
   ]
 }

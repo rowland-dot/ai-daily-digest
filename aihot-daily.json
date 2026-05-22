@@ -1,30 +1,30 @@
 {
-  "date": "2026-05-21",
-  "generatedAt": "2026-05-21T00:00:12.163Z",
-  "windowStart": "2026-05-20T00:00:00.000Z",
-  "windowEnd": "2026-05-21T00:00:00.000Z",
+  "date": "2026-05-22",
+  "generatedAt": "2026-05-22T00:00:00.182Z",
+  "windowStart": "2026-05-21T00:00:00.000Z",
+  "windowEnd": "2026-05-22T00:00:00.000Z",
   "lead": null,
   "sections": [
     {
       "label": "模型发布/更新",
       "items": [
         {
-          "title": "Qwen3.7：智能体前沿",
-          "summary": "Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。",
-          "sourceUrl": "https://qwen.ai/blog?id=qwen3.7",
-          "sourceName": "Qwen：Blog Retrieval（API）"
+          "title": "Aleph 2.0 与 Edit Studio",
+          "summary": "正式发布 Aleph 2.0 及配套的 Edit Studio 创作工具。此次更新实现了创作流程的全面整合，将内容生成、编辑与后期制作集中于统一平台。新版本显著优化了多模态内容的处理效率，并提供了从构思到成品的一站式解决方案，旨在为创作者提供更流畅、集成的数字内容制作体验。",
+          "sourceUrl": "https://app.runwayml.com/generate?mode=edit",
+          "sourceName": "Runway：Changelog（网页）"
         },
         {
-          "title": "Kling AI推出全球首个原生4K视频生成模型",
-          "summary": "4月23日，Kling AI正式推出全球首个原生4K视频生成模型，专为专业内容创作设计。该功能支持一键生成真4K画质视频，显著提升画面细节与制作效率。模型已获得好莱坞团队、动画工作室等多方采用。好莱坞制片人指出，这是其工作流中首个使用的原生4K基础模型；Wonder Studios强调，原生4K从底层生成避免了传统放大技术的角色变形问题，保持了画面一致性；动画导演则认为，该模型在保留艺术色调与复杂特效纹理方面优于同类产品。",
-          "sourceUrl": "https://x.com/Kling_ai/status/2056950317712101599",
-          "sourceName": "X：可灵 Kling AI (@Kling_ai)"
+          "title": "腾讯开源Hy-MT2多语言翻译模型",
+          "summary": "腾讯正式开源Hy-MT2多语言翻译模型，支持33种语言间的无缝互译。其7B与30B-A3B版本在开源模型中达到最先进的翻译性能，超越了许多参数规模大数十倍的模型。更具突破性的是，1.8B轻量级版本性能超越微软等主流商业API，并凭借腾讯AngelSlim 1.25-bit极量化技术，仅需440MB存储空间，即可在主流手机芯片上本地运行，推理速度较前代提升1.5倍，显著降低了高质量AI翻译的部署门槛。",
+          "sourceUrl": "https://x.com/TencentHunyuan/status/2057384034544804136",
+          "sourceName": "X：腾讯混元 (@TencentHunyuan)"
         },
         {
-          "title": "SenseNova U1：同时思考文本与图像的AI",
-          "summary": "将你的想法转化为激发故事的视觉画面 🧨 [引用 @Adamaestr0_]：大多数AI工具可以写作或生成图像。 但这个能同时做这两件事。 向你介绍 SenseNova U1。 一个能同时思考文本和图像的AI。 这改变了一切 🧵",
-          "sourceUrl": "https://x.com/SenseTime_AI/status/2057049434782097851",
-          "sourceName": "X：商汤 SenseTime (@SenseTime_AI)"
+          "title": "LongCat-Video-Avatar-1.5：升级版音频驱动数字人视频生成框架",
+          "summary": "美团LongCat团队发布了LongCat-Video-Avatar-1.5，一个专注于音频驱动数字人视频生成的开源框架。其核心升级在于采用Whisper-Large音频编码器，显著优化了唇部动态的流畅度与自然度。该版本实现了精准的唇形同步、全身时序稳定性以及长视频中的身份一致性，并能泛化应用于动漫、动物及多人交互等复杂场景。通过基于DMD2的步蒸馏技术，模型仅需8步即可高效推理。团队还构建了一个涵盖多场景、多语言的人工评估基准，通过大规模主观评分与专家分析，验证了其在多项关键维度上的优异性能。",
+          "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
+          "sourceName": "美团 LongCat：HuggingFace 新模型"
         }
       ]
     },
@@ -32,52 +32,52 @@
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "GPT-5即将发布",
-          "summary": "GPT-5即将发布 🚢",
-          "sourceUrl": "https://x.com/ChatGPTapp/status/2057178633249394819",
-          "sourceName": "X：ChatGPT (@ChatGPTapp)"
-        },
-        {
-          "title": "腾讯张军官宣操作系统层级 AI 助手“马维斯”正式上工，Windows、Mac、安卓端同步上线",
-          "summary": "腾讯于5月21日发布了操作系统层级AI助手“马维斯”，支持Windows、Mac和安卓平台同步上线。该助手具备文档归类解析、图片智能识别处理、系统维护等功能，并强调与操作系统深度集成，可调度不同模型处理任务，部分功能可在离线状态下使用。腾讯表示“马维斯”能完成市面主流Agent的大部分工作，并具备桌面操控手机应用等能力。这是继3月WorkBuddy和“龙虾”产品矩阵后，腾讯推出的又一AI助手产品。",
-          "sourceUrl": "https://www.ithome.com/0/953/096.htm",
-          "sourceName": "IT之家（RSS）"
-        },
-        {
-          "title": "Google Stitch更新：AI设计助手实现全流程构建",
-          "summary": "Google推出了其AI设计伙伴Stitch的多项重要更新。新功能支持实时流式构建设计，允许用户在不中断流程的情况下直接进行编辑和互动反馈。Stitch现已能够导入现有代码库或Design.md文件，基于实际生产组件进行设计以保持品牌一致性。同时，工具新增了动态界面生成功能，并可将设计项目直接导出为可分享的线上URL，简化了从原型到生产的部署流程。该工具现已面向全球用户开放。",
-          "sourceUrl": "https://x.com/googleaidevs/status/2057209295763300785",
-          "sourceName": "X：Google AI for Developers (@googleaidevs)"
-        },
-        {
-          "title": "ChatGPT移动端支持Codex，实现跨设备协作",
-          "summary": "你的笔记本电脑可以留在家里。 通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
-          "sourceUrl": "https://x.com/OpenAIDevs/status/2057142816497906045",
+          "title": "Codex实现全天候跨设备安全操控Mac",
+          "summary": "Codex随时随地，无处不在。 现在您的Mac无需解锁，Codex即可使用您的电脑。 通过手机，Codex可以安全地使用您Mac上的应用程序，即使屏幕关闭且处于锁定状态。 https://developers.openai.com/codex/app/computer-use#locked-use",
+          "sourceUrl": "https://x.com/OpenAIDevs/status/2057536706778378692",
           "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
         },
         {
-          "title": "V8.1新增反向提示功能",
-          "summary": "今日小幅更新。许多用户要求为V8模型恢复“反向提示”功能（旧版本已有），我们称之为--no标志。该功能现已在V8.1中上线！如果您想从图像中排除某些元素（例如人物），可以尝试使用--no people。玩得开心！",
-          "sourceUrl": "https://x.com/midjourney/status/2057184157869199429",
-          "sourceName": "X：Midjourney (@midjourney)"
+          "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
+          "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
+          "sourceUrl": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
+          "sourceName": "Google Developers Blog（RSS）"
         },
         {
-          "title": "MiniMax语音模型新增600余种声音",
-          "summary": "600多种由MiniMax Speech 2.8 Turbo驱动的新声音现已登陆Together AI @togethercompute 🎙️✨ 立即体验：https://voicefinder.together.ai/minimax--speech-2.8-turbo",
-          "sourceUrl": "https://x.com/MiniMax_AI/status/2057177048356180296",
-          "sourceName": "X：MiniMax (@MiniMax_AI)"
+          "title": "合作伙伴如何运用Opus强化网络安全",
+          "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
+          "sourceUrl": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
+          "sourceName": "Claude：Blog（网页）"
         },
         {
-          "title": "OpenClaw 2026.5.19版本发布",
-          "summary": "OpenClaw 2026.5.19 🦞 📱 Android Talk Mode 实现实时化 🍎 Mac 设置界面更清爽 🔐 xAI 登录支持无头模式 🧵 Telegram 话题功能更稳定 大版本更新，简短公告。 https://github.com/openclaw/openclaw/releases/tag/v2026.5.19",
-          "sourceUrl": "https://x.com/openclaw/status/2057202955581809093",
-          "sourceName": "X：OpenClaw (@openclaw)"
+          "title": "v2.1.147版本更新",
+          "summary": "本次更新引入了`Workflow`工具，支持确定性多智能体编排（默认关闭）。将`/simplify`命令重命名为`/code-review`，现可报告代码正确性问题并支持生成GitHub PR内联评论。改进了自动更新器（增加重试与错误报告）、大文件diff渲染性能，并优化了提示历史记录以避免重复条目。修复了多个关键问题，包括企业登录限制未生效、Windows下的PowerShell工具与终端闪烁问题、插件系统及shell快照的bug，并增强了沙箱安全性与终端兼容性。",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+          "sourceName": "Claude Code：GitHub Releases（RSS）"
         },
         {
-          "title": "Gemini 3.5 Flash登陆OpenCode平台",
-          "summary": "Gemini 3.5 Flash现已在OpenCode上线 - 速度极快 - 100万上下文 - 定价与GLM、Kimi和DeepSeek Pro相近",
-          "sourceUrl": "https://x.com/opencode/status/2057017380941795667",
-          "sourceName": "X：opencode (@opencode)"
+          "title": "Replit企业版现已开放自助购买",
+          "summary": "Replit Enterprise现已支持自助服务！ 几分钟内即可： - 购买Replit Enterprise - 配置SSO + SCIM - 与团队开始协作开发 无需合同谈判，无需等待。",
+          "sourceUrl": "https://x.com/Replit/status/2057491954825674942",
+          "sourceName": "X：Replit (@Replit)"
+        },
+        {
+          "title": "Datasette Agent",
+          "summary": "Datasette Agent是Datasette推出的首个可扩展AI助手，为用户提供对话式界面以查询数据，并支持通过插件生成图表。该工具基于其LLM Python库构建，是LLM与Datasette整合的重要成果。目前提供图表生成、AI图像创建和沙箱代码执行等官方插件。它既可运行于Gemini 3.1 Flash-Lite等云端模型，也支持通过LM Studio连接本地开源模型，具备可靠的工具调用与查询能力。",
+          "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent",
+          "sourceName": "Simon Willison 博客"
+        },
+        {
+          "title": "Shoplift by PixVerse快速生成平台原生广告视频",
+          "summary": "无需工作室，无需编辑队列。 将产品URL粘贴到Shoplift by PixVerse，几分钟内即可发布平台原生广告视频 ——专为持续进行创意测试的DTC团队打造。 免费早期访问：https://shoplift.pixverse.ai 转发+关注+回复=300积分（仅限72小时）",
+          "sourceUrl": "https://x.com/PixVerse_/status/2057492991036588306",
+          "sourceName": "X：PixVerse (@PixVerse_)"
+        },
+        {
+          "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
+          "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
+          "sourceUrl": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
+          "sourceName": "Google Developers Blog（RSS）"
         }
       ]
     },
@@ -85,69 +85,52 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "SpaceX与Anthropic合作提供大规模AI算力服务",
-          "summary": "正如最近与@AnthropicAI扩大合作所展示的，@SpaceX正在大规模提供AI算力服务。 我们正在与其他公司进行类似合作的讨论。 随着时间的推移，特别是通过轨道数据中心，我们预计将以极高的规模提供AI服务。",
-          "sourceUrl": "https://x.com/elonmusk/status/2057228707606196434",
-          "sourceName": "X：Elon Musk (@elonmusk, xAI)"
-        },
-        {
-          "title": "OpenAI向所有YC创业公司提供200万美元API投资",
-          "summary": "OpenAI宣布向Y Combinator当前批次的每家创业公司提供价值200万美元的API信用额度投资，以换取股权。此举旨在为初创公司提供AI算力资源，支持下一代创新。这让人联想到Sam Altman在YC合伙人时期，Yuri Milner向每家创业公司提供投资的先例。OpenAI希望通过此举释放创业者潜力，推动AI应用创新。",
-          "sourceUrl": "https://x.com/gdb/status/2056948285038887255",
-          "sourceName": "X：Greg Brockman (@gdb)"
-        },
-        {
-          "title": "欧盟委员会发布《欧盟人工智能法》高风险AI系统分类指导草案并开启公众咨询",
-          "summary": "欧盟委员会于2026年5月19日发布了关于《欧盟人工智能法》第六条项下高风险AI系统分类的指导草案。该草案旨在为AI系统的提供商、部署者及市场监管机构提供明确的分类标准，以确保在欧盟范围内执法的一致性。分类主要依据AI系统的预期用途，例如作为受监管产品的组件或用于特定高风险场景。草案也规定了部分豁免条件，例如仅执行辅助性任务时可能不被视为高风险。公众咨询期至206月23日。",
-          "sourceUrl": "https://www.dataguidance.com/news/eu-commission-publishes-draft-guidelines-classifying",
-          "sourceName": "DataGuidance：Artificial Intelligence（网页）"
-        },
-        {
-          "title": "投资超 600 亿美元，孙正义豪赌 OpenAI 引发内部质疑“迷信奥尔特曼如追星”",
-          "summary": "软银对OpenAI的投资承诺已超600亿美元，引发内部对孙正义过度信任其创始人奥尔特曼的担忧。部分高管质疑将巨额资本集中于单一公司存在风险，且软银虽持股超10%却无董事会席位，缺乏决策影响力。同时，Anthropic等竞争对手的崛起加剧了对OpenAI领先地位的挑战。尽管软银表示对OpenAI抱有“高度信心”，并已从中获得账面收益，但其股价下跌及信用展望被下调反映出市场对其豪赌的顾虑。",
-          "sourceUrl": "https://www.ithome.com/0/953/021.htm",
-          "sourceName": "IT之家（RSS）"
-        },
-        {
-          "title": "Meta万人重组：裁员与AI转型并举",
-          "summary": "Meta启动大规模裁员，计划削减约8000个岗位。与此同时，约7000名员工将被调配至新的AI相关职位。此次调整并非单纯的削减成本，更是公司围绕AI进行内部结构重塑的关键举措，重点将资源集中于AI基础设施、基础模型的构建以及AI技术的商业化，旨在打造从模型训练、产品开发到实现盈利的完整链条。",
-          "sourceUrl": "https://x.com/rohanpaul_ai/status/2057177976492720363",
+          "title": "加州州长纽森签署首创性行政令，为应对AI可能带来的劳动力市场冲击做准备",
+          "summary": "加州州长纽森签署行政令，首次将AI引发的失业问题正式列为公共政策议题，要求各部门研究遣散费、就业保险及员工持股等保障措施。该命令认识到AI可能渐进式替代岗位任务，而非一次性取代整个职位，因此计划建立新的劳动力数据看板，以更早捕捉行业受到的冲击。政策核心在于探讨如何将AI带来的生产力红利，通过股权、薪酬支持等方式在企业与员工间进行更公平的分配。同时指出，单纯的职业培训可能无法解决被AI彻底取代的岗位所带来的根本性就业错配问题。",
+          "sourceUrl": "https://x.com/rohanpaul_ai/status/2057555054387949848",
           "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
         },
         {
-          "title": "谷歌的人工智能正遭到操纵。这家搜索巨头正在悄然反击",
-          "summary": "谷歌的AI系统正面临被操纵的风险。为应对这一挑战，这家科技巨头已悄然启动防御措施，以保护其AI生成内容的结果免受恶意干扰。此举旨在确保搜索和AI服务的可靠性与可信度，反映了当前人工智能安全领域日益增长的对抗性问题。谷歌在未公开宣传的情况下，正在通过技术手段加强对其AI系统的防护。",
-          "sourceUrl": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+          "title": "FSD正式登陆中国大陆市场",
+          "summary": "FSD来了… 官宣进入大陆…",
+          "sourceUrl": "https://x.com/xiaohu/status/2057279976467218765",
+          "sourceName": "X：小互 (@xiaohu)"
+        },
+        {
+          "title": "Anthropic即将成为首个盈利的AI实验室",
+          "summary": "根据《华尔街日报》报道，Anthropic正接近实现其首个盈利季度，预计第二季度营收达109亿美元，运营利润为5.59亿美元。该公司在去年夏季时还预计最早在2028年才能盈利。主要增长动力来自编程工具和Claude的代理功能使用，其需求一度超过了可用的算力容量。这一转变标志着Anthropic可能成为业界首个实现盈利的领先AI研发机构。",
+          "sourceUrl": "https://the-decoder.com/anthropic-is-about-to-become-the-first-profitable-ai-lab",
+          "sourceName": "The Decoder：AI News（RSS）"
+        },
+        {
+          "title": "Intuit将裁员逾3000人，以重新聚焦人工智能",
+          "summary": "软件公司Intuit宣布将裁员超过3000人，作为其战略重组的一部分。此次裁员旨在将公司资源重新聚焦于人工智能（AI）领域的发展，以适应技术趋势并提升长期竞争力。裁员规模约占其全球员工总数的10%。",
+          "sourceUrl": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai",
           "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
         },
         {
-          "title": "消息称微软内部示警：GitHub 面临生存级风险，AI 编程工具削弱托管必要性",
-          "summary": "微软内部发出警告，称其代码托管平台GitHub正面临“生存级风险”。主要原因是Cursor、Claude Code等AI编程助手兴起，改变了开发者工作流，削弱了持续将代码上传至GitHub的必要性。为统一工具链并控制成本，微软已要求部分团队在2026年6月底前停止试用Claude Code，转而使用自有工具GitHub Copilot CLI。同时，OpenAI曾考虑自建替代平台，也加剧了对GitHub地位的潜在威胁。",
-          "sourceUrl": "https://www.ithome.com/0/952/645.htm",
-          "sourceName": "IT之家（RSS）"
+          "title": "首部100%AI生成电影亮相戛纳，剑指2026院线",
+          "summary": "AI电影项目RAPHAEL在戛纳亮相。该片由Mateo AI Studio与韩国MBC C&I的AI内容实验室联合开发，全程使用Kling AI视频模型进行制作，旨在实现独特的视觉效果与差异化的观影体验。项目计划于2026年登陆院线，其大规模制作旨在证明纯AI电影制作的工业可行性，标志着AI原生院线电影新趋势的开端。",
+          "sourceUrl": "https://x.com/Kling_ai/status/2057295321831539054",
+          "sourceName": "X：可灵 Kling AI (@Kling_ai)"
         },
         {
-          "title": "Gemini与XPRIZE联合举办全球黑客松",
-          "summary": "用Gemini构建，改变世界🌍 我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。 点击加入：https://www.geminixprize.com/",
-          "sourceUrl": "https://x.com/googleaidevs/status/2057166550243872920",
-          "sourceName": "X：Google AI for Developers (@googleaidevs)"
-        }
-      ]
-    },
-    {
-      "label": "论文研究",
-      "items": [
+          "title": "谷歌DeepMind在亚太启动AI气候加速器",
+          "summary": "亚太地区经济增长迅速，但极易受到气候变化影响，且现有绿色技术发展速度跟不上环境风险的增长。为此，Google DeepMind宣布启动首届专注于“AI for the Planet”的加速器计划。该计划为期三个月，面向亚太地区的初创企业、研究团队和非营利组织，旨在利用前沿人工智能技术解决自然、气候、农业和能源等领域的挑战。入选组织将获得专家指导、定制化支持，并可集成Google AI的前沿模型。计划将从新加坡的线下训练营开始，现已开放注册。",
+          "sourceUrl": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks",
+          "sourceName": "Google DeepMind：Blog（RSS）"
+        },
         {
-          "title": "OpenAI模型证伪了离散几何中的一个核心猜想",
-          "summary": "OpenAI开发的人工智能模型成功解决了数学界悬而未决逾80年的“单元距离问题”，并由此推翻了离散几何领域的一个核心猜想。这一突破被视作人工智能驱动数学研究的里程碑事件，标志着AI在基础科学理论探索中取得了实质性进展。该模型通过创新算法处理复杂的几何问题，展示了机器在自动化发现与验证数学猜想方面的巨大潜力。",
-          "sourceUrl": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+          "title": "商汤连续十年领跑中国计算机视觉市场",
+          "summary": "商汤科技被IDC连续十年评为中国计算机视觉市场第一。其关键驱动因素包括：主导推进CV 2.0架构演进，原生嵌入生成式AI能力；海外市场扩展至12个国际区域，服务超500家企业客户并保持高留存率；以年度经常性收入增长为锚点实现盈利性增长；并从项目制交付转型为高度可扩展的AI平台。这一十年市场领导地位为其引领计算机视觉与生成式AI的融合浪潮奠定了基础。",
+          "sourceUrl": "https://x.com/SenseTime_AI/status/2057289342654300586",
+          "sourceName": "X：商汤 SenseTime (@SenseTime_AI)"
+        },
+        {
+          "title": "AdventHealth携手OpenAI推进全人医疗",
+          "summary": "AdventHealth正在采用OpenAI的ChatGPT for Healthcare解决方案，旨在优化医疗工作流程，减轻医务人员行政负担，从而将更多时间还给患者护理。该合作利用人工智能技术处理文档、协调等非临床任务，以提升整体医疗效率与患者体验。",
+          "sourceUrl": "https://openai.com/index/adventhealth",
           "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
-        },
-        {
-          "title": "ZCube:超大规模大模型推理的网络优化",
-          "summary": "针对超大规模大模型推理，ZCube网络架构通过取消Spine层、将Leaf交换机分组并全互联等创新设计，有效解决了推理网络的拥塞问题。该架构在集群实测中，实现了交换机与光模块资本支出减少33%、GPU平均推理吞吐提升15%，同时将首token延迟的P99值大幅降低40.6%，在降低成本的同时显著提升了推理性能。",
-          "sourceUrl": "https://www.zhipuai.cn/zh/research/160",
-          "sourceName": "智谱：研究（网页内嵌数据）"
         }
       ]
     },
@@ -155,46 +138,46 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "开源油猴脚本实现多平台截图上传与内容处理",
-          "summary": "开源油猴脚本实现小红书、抖音、微信公众号的截图粘贴自动上传，并支持YouTube字幕复制、倍速调节及内容导出至NotebookLM、ChatGPT等工具。主推文作者表示，该工具增强了将X平台内容同步至国内平台的意愿，尽管部分平台体验欠佳。",
-          "sourceUrl": "https://x.com/vista8/status/2056982823169568779",
+          "title": "游戏开发门槛被AI大幅降低",
+          "summary": "Grok展示了AI深度介入游戏开发的全新工作流。通过“提示词生成角色图→图片转动画视频→自动拼接成Spritesheet→导入引擎”四步流程，将传统需要美术与动画师耗时数天的工作，在几分钟内完成。这标志着AI不再仅生成静态内容，而是能实时生成可直接导入Unity或Godot等游戏引擎的可运行资产。该技术极大压缩了游戏原型的迭代周期，将反馈循环从“天”缩短至“秒”，使得独立开发者也能快速实现创意，显著降低了游戏创作的门槛。",
+          "sourceUrl": "https://x.com/AYi_AInotes/status/2057371332359201103",
+          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)"
+        },
+        {
+          "title": "开源Suno技能：一键生成任意风格AI音乐",
+          "summary": "这是基于Suno AI音乐生成工具的技能实现，可通过简单指令按用户需求生成不同风格的歌曲（例如德语空灵风格）。该技能订阅费用为每月10美元，支持高度自定义的风格生成。技术层面已优化，新增近6000个音乐风格检索以提升准确性，并可通过谷歌CDP免登录直接调用。项目已开源，提供GitHub仓库地址与安装指令，降低了创作门槛。目前AI生成音乐在艺术性上仍与人工制作存在差距，但实现了快速、灵活的创作可能。",
+          "sourceUrl": "https://x.com/vista8/status/2057287459759698400",
           "sourceName": "X：Vista (@vista8)"
         },
         {
-          "title": "开源插件为Codex App增添高级功能",
-          "summary": "一个开源项目允许用户增强Codex App的功能。即使通过API登录，也能通过安装插件的方式启用Computer Use特性并添加Goal指令。项目还支持界面自定义，例如调整为类似Chrome浏览器的顶部Tab样式，并可设置任务开始和完成的提醒音效。相关开源项目地址已在评论区提供。",
-          "sourceUrl": "https://x.com/vista8/status/2057124658927812758",
-          "sourceName": "X：Vista (@vista8)"
+          "title": "Cloudflare首席执行官谈如何决定用人工智能取代哪些员工",
+          "summary": "Cloudflare首席执行官在《华尔街日报》撰文，分享其公司用AI替代部分员工的决策逻辑。该文于2026年5月21日发布，引发了技术社区的广泛讨论，在Hacker News上获得100个点赞。",
+          "sourceUrl": "https://www.wsj.com/opinion/how-i-choose-which-cloudflare-employees-to-replace-with-ai-40a197e5",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
         },
         {
-          "title": "OpenRouter自动路由缓存机制说明",
-          "summary": "提示💡 你无需担心自动路由（以及所有单独模型）的缓存未命中问题 OpenRouter会将你的会话固定在一个模型/提供商上，直到缓存过期",
-          "sourceUrl": "https://x.com/OpenRouter/status/2057128446300737702",
-          "sourceName": "X：OpenRouter (@OpenRouter)"
-        },
-        {
-          "title": "Ramp工程师如何用Codex加速代码审查",
-          "summary": "Ramp工程师团队通过集成Codex与GPT-5.5模型，实现了代码审查流程的显著提速。该工具能够在数分钟内为代码变更提供实质性反馈与改进建议，将传统需耗时数小时的审查周期大幅压缩，从而加快了产品迭代与上线的效率。",
-          "sourceUrl": "https://openai.com/index/ramp",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
-        },
-        {
-          "title": "Prompt驱动AI生成超真实足球自拍视频",
-          "summary": "这条推文展示了一个用于在PixVerse平台生成视频的复杂提示词。核心目标是制作一段在大型体育场内，五位朋友进行超真实智能手机自拍风格的视频。提示词的关键在于，它通过极其详细的设定来确保生成内容的连贯性和真实感：包括对五个角色外貌的严格一致性要求、具体的球场环境、模拟真实手机拍摄的镜头运动（如抖动、失焦）以及一系列自然的动作序列。",
-          "sourceUrl": "https://x.com/PixVerse_/status/2057003487716876505",
-          "sourceName": "X：PixVerse (@PixVerse_)"
-        },
-        {
-          "title": "Anthropic销售负责人如何利用Claude Cowork管理4000个客户账户",
-          "summary": "Anthropic美国中端市场业务负责人Travis Bryant利用Claude Cowork自动化销售管理工作。该工具帮助他高效完成客户倾向性评分、每日客户简报准备及每周销售预测报告生成，每晚自动处理4000个账户数据，替代了以往跨部门团队需数百小时完成的工作。通过自动化日常任务调度，他每天节省约90分钟，并将数据整合为可交互的销售仪表板，使其能更专注于客户沟通与战略决策。",
-          "sourceUrl": "https://claude.com/blog/how-an-anthropic-sales-leader-uses-claude-cowork-to-run-a-4-000-account-book",
-          "sourceName": "Claude：Blog（网页）"
-        },
-        {
-          "title": "生成式AI是否会沦为科技行业的“越南战争”？公众抵制能否引领AI走向更优的发展路径？",
-          "summary": "当前生成式AI的狂飙突进正引发深度审视，其潜在风险与社会反弹可能将该技术拖入类似“越南战争”的漫长泥潭。公众的担忧与抵制运动，正从数据隐私、内容真实性到伦理冲击等多方面施加压力，迫使行业进行根本性反思。这些反作用力虽可能延缓发展，却也可能成为校准方向的关键力量，推动技术在安全、透明和负责任的基础上重新定义进步。我们正身处一个充满挑战与不确定性的“有趣时代”。",
-          "sourceUrl": "https://garymarcus.substack.com/p/could-generative-ai-could-turn-out",
+          "title": "核算OpenAI和Anthropic最新动态背后的数学",
+          "summary": "OpenAI与Anthropic近期相继发布重要产品更新。Claude 3.5 Sonnet在多项基准测试中超越GPT-4o，同时宣布API价格下调50%。Anthropic披露其模型训练成本年均增长约3.2倍，而OpenAI被曝已通过企业服务实现单季度超10亿美元营收。两家公司在技术突破与商业化竞赛中，正通过精密的成本核算与性能权衡重塑行业格局。",
+          "sourceUrl": "https://garymarcus.substack.com/p/checking-the-math-behind-openai-and",
           "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+        },
+        {
+          "title": "谷歌高级副总裁曼尼卡：AI短期内不会摧毁就业市场",
+          "summary": "谷歌高级副总裁詹姆斯·曼尼卡近日表示，AI短期内不会摧毁就业市场，也不同意“大规模失业”的激进预测。他援引其2017年参与的麦肯锡报告指出，自动化将同时导致岗位减少、新岗位出现以及现有岗位被重新定义。他认为当前争议在于这三种情况的占比，而非是否发生。曼尼卡批评AI行业放大了公众焦虑，这种恐慌可能削弱技术价值。他强调，AI最大的影响是改变工作内容与方式，而非让职业消失。",
+          "sourceUrl": "https://www.ithome.com/0/953/469.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "SpaceX的无限野心：AI企业集团",
+          "summary": "SpaceX在提交S-1文件后，展现为一家AI时代的企业集团。公司由三大业务构成：Starlink（星链）、太空业务与AI业务。2025年总营收达187亿美元。其中，星链是绝对的核心与现金引擎，贡献了61%的营收并实现39%的营业利润率。太空业务收入占比22%，而AI业务（含X平台与xAI）虽仅占17%且处于巨额投入阶段，但代表了未来的战略方向。整体上，星链的强劲盈利为公司的太空探索与AI雄心提供了关键的资金支持。",
+          "sourceUrl": "https://www.tomtunguz.com/spacex-s1-analysis",
+          "sourceName": "Tomer Tunguz 博客（VC 分析）"
+        },
+        {
+          "title": "构建云端智能体的经验总结",
+          "summary": "云端智能体已从本地智能体的简单扩展，发展为具备独立环境、可并行无人值守处理长任务的系统。构建的核心经验在于：完整的开发环境是输出质量的关键，这需重建大量基础设施；可靠性方面，团队从自研架构迁移至Temporal平台，将可靠性提升至99.9%以上，该平台每日处理超5000万次操作，支撑超40%的代码拉取请求；同时，实现了智能体循环、机器状态与对话状态的解耦，以适应复杂的跨环境协作。",
+          "sourceUrl": "https://cursor.com/blog/cloud-agent-lessons",
+          "sourceName": "Cursor Blog"
         }
       ]
     }

@@ -4,13 +4,33 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpfu0rza09nbsljwx1gui6ol",
-      "title": "Aleph 2.0 与 Edit Studio",
-      "title_en": "Aleph 2.0 & Edit Studio",
-      "url": "https://app.runwayml.com/generate?mode=edit",
-      "source": "Runway：Changelog（网页）",
-      "publishedAt": "2026-05-21T18:36:25.024Z",
-      "summary": "正式发布 Aleph 2.0 及配套的 Edit Studio 创作工具。此次更新实现了创作流程的全面整合，将内容生成、编辑与后期制作集中于统一平台。新版本显著优化了多模态内容的处理效率，并提供了从构思到成品的一站式解决方案，旨在为创作者提供更流畅、集成的数字内容制作体验。",
+      "id": "cmph1mhwi0kj7sljwklnw8x2l",
+      "title": "首个基于华为昇腾910B NPU全栈训练的1.58比特开源大模型BitCPM-CANN发布",
+      "title_en": "BitCPM-CANN just became the world's first open-sourced 1.58-bit ternary LLM trained entirely on Chin…",
+      "url": "https://x.com/rohanpaul_ai/status/2057833050692800926",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-05-22T14:36:46.000Z",
+      "summary": "ModelBest、清华大学与OpenBMB社区联合发布了BitCPM-CANN，这是全球首个完全基于华为昇腾910B NPU训练的开源1.58比特三元大模型。其核心创新在于采用仅含三种权重状态的极低比特量化技术，使模型内存占用相比BF16降低约6倍，可高效部署于手机、电脑、车载设备等边缘端。更关键的是，整个训练全栈（从量化算子到框架）均在昇腾上原生构建与验证，而非简单移植。该模型家族（0.5B-8B）在多项基准测试上保持了全精度模型95-97%的性能，为资源受限环境下部署和复现大模型提供了可落地的解决方案。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpgrcly80hyfsljwa00hvczv",
+      "title": "网易有道\"子曰4\"多模态模型、语音合成模型全量开源",
+      "title_en": "网易有道\"子曰 4\"多模态模型、语音合成模型全量开源",
+      "url": "https://www.ithome.com/0/954/124.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-22T09:45:01.000Z",
+      "summary": "网易有道宣布将其\"子曰\"大模型4.0的多模态模型与语音合成模型面向全球全量开源。其中，多模态模型（27B参数）专注于教育场景，在处理高难度视觉数理问题上达到行业顶尖水平，纯文本中文数理难题准确率为81.4%。该模型通过思维链优化，将输出长度压缩43.2%，有效降低了推理成本。同时开源的语音合成模型支持跨语种音色与情感迁移克隆，3秒内即可完成零样本复制，准确度超97%，并支持包括中、英、日、韩在内的14种语言。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpga762r0dm4sljw23zihurw",
+      "title": "ZhipuGLM-5.1高速版发布：刷新全球大模型API速度纪录",
+      "title_en": "智谱 GLM-5.1 高速版 AI 模型发布，跑出全球最快速度 400 tokens/s",
+      "url": "https://www.ithome.com/0/953/717.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-22T02:02:46.000Z",
+      "summary": "5月22日，Zhipu向部分企业客户推出了旗舰大模型GLM-5.1的高速版API\"GLM-5.1-highspeed\"。该版本输出速度达400 tokens/s，刷新了全球大模型API速度上限。关键突破在于，它首次在国产大模型中实现了旗舰级能力与低延迟的结合，打破了\"高速模型即轻量模型\"的传统。该版本由ZhipuGLM团队与TileRT团队合作，通过系统级优化确保了速度的生产级稳定性，适用于AI编程、实时语音交互等场景。",
       "category": "ai-models"
     },
     {
@@ -31,6 +51,16 @@
       "source": "X：腾讯混元 (@TencentHunyuan)",
       "publishedAt": "2026-05-21T08:52:32.000Z",
       "summary": "腾讯正式开源Hy-MT2多语言翻译模型，支持33种语言间的无缝互译。其7B与30B-A3B版本在开源模型中达到最先进的翻译性能，超越了许多参数规模大数十倍的模型。更具突破性的是，1.8B轻量级版本性能超越微软等主流商业API，并凭借腾讯AngelSlim 1.25-bit极量化技术，仅需440MB存储空间，即可在主流手机芯片上本地运行，推理速度较前代提升1.5倍，显著降低了高质量AI翻译的部署门槛。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpfu0rza09nbsljwx1gui6ol",
+      "title": "Aleph 2.0 与 Edit Studio",
+      "title_en": "Aleph 2.0 & Edit Studio",
+      "url": "https://app.runwayml.com/generate?mode=edit",
+      "source": "Runway：Changelog（网页）",
+      "publishedAt": "2026-05-20T16:00:00.000Z",
+      "summary": "正式发布 Aleph 2.0 及配套的 Edit Studio 创作工具。此次更新实现了创作流程的全面整合，将内容生成、编辑与后期制作集中于统一平台。新版本显著优化了多模态内容的处理效率，并提供了从构思到成品的一站式解决方案，旨在为创作者提供更流畅、集成的数字内容制作体验。",
       "category": "ai-models"
     },
     {
@@ -251,36 +281,6 @@
       "source": "Google DeepMind：Blog（RSS）",
       "publishedAt": "2026-05-15T22:50:12.000Z",
       "summary": "Google发布了Gemini 3.5模型，该模型专注于提升执行复杂任务的能力。其核心特点是支持\"代理式工作流\"，即能够像助手一样自主规划并执行一系列多步骤、复杂的操作，旨在将先进的语言理解与实际问题解决能力相结合。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp7670my07u2slnzpgzvw1yy",
-      "title": "MiniMax M2.7模型上线OrcaRouter平台",
-      "title_en": "M2.7 is live on @OrcaRouter - accessible via a single OpenAI-compatible API. Try it today！🐋",
-      "url": "https://x.com/MiniMax_AI/status/2055331545402245246",
-      "source": "X：MiniMax (@MiniMax_AI)",
-      "publishedAt": "2026-05-15T16:56:41.000Z",
-      "summary": "M2.7已在@OrcaRouter上线--可通过单一OpenAI兼容API访问。\n\n今天就来试试吧！🐋",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp74kzdx07fhslnzgxi917g9",
-      "title": "SenseNova发布增强版信息图表生成模型SenseNova-U1-8B-MoT-Infographic",
-      "title_en": "📢📢 Introducing an enhanced model for infographic gene�…",
-      "url": "https://x.com/SenseTime_AI/status/2055315819165597702",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-05-15T15:54:11.000Z",
-      "summary": "SenseNova近日推出专为信息图表生成设计的增强模型SenseNova-U1-8B-MoT-Infographic。该模型能够根据指令生成多种视觉格式内容，包括海报、图表、食谱卡、明信片以及学术风格的arXiv页面等。在性能方面，模型在BizGenEval（困难版）和IGenBench（Q-ACC）两项基准测试上表现突出，相比其基础U1模型分别提升了6.8分和18.2分。目前，该模型已在Hugging Face平台开源，并提供了超过100个多样化的生成示例，供开发者和研究者参考与试用。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmp6c0i6i00nbslnzm1hefdiu",
-      "title": "inclusionAI/ARGenSeg-8B",
-      "title_en": null,
-      "url": "https://huggingface.co/inclusionAI/ARGenSeg-8B",
-      "source": "蚂蚁 inclusionAI：HuggingFace 新模型",
-      "publishedAt": "2026-05-15T02:33:52.000Z",
-      "summary": "包容性AI团队发布ARGenSeg-8B模型，致力于通过开源和开放科学推动人工智能的进步与普及。该举措强调技术民主化，使更广泛的社区能够参与AI研发与应用。开源策略将促进协作创新，加速AI工具在多元场景中的落地，降低技术门槛，推动产业生态的开放发展。",
       "category": "ai-models"
     }
   ]
