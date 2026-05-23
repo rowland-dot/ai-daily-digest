@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-05-22T21:43:58.413Z",
+  "fetched_at": "2026-05-23T21:27:33.536Z",
   "repos": [
+    {
+      "owner": "Lum1104",
+      "name": "Understand-Anything",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 21188,
+      "forks": 1895,
+      "starsToday": 2331
+    },
     {
       "owner": "anthropics",
       "name": "claude-plugins-official",
@@ -8,9 +19,9 @@
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 24726,
-      "forks": 2754,
-      "starsToday": 2556
+      "stars": 26331,
+      "forks": 2848,
+      "starsToday": 2172
     },
     {
       "owner": "colbymchenry",
@@ -19,20 +30,9 @@
       "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 16349,
-      "forks": 903,
-      "starsToday": 3688
-    },
-    {
-      "owner": "ruvnet",
-      "name": "RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 63930,
-      "forks": 8450,
-      "starsToday": 992
+      "stars": 19200,
+      "forks": 1058,
+      "starsToday": 2434
     },
     {
       "owner": "rohitg00",
@@ -41,75 +41,9 @@
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 11781,
-      "forks": 2250,
-      "starsToday": 988
-    },
-    {
-      "owner": "ChromeDevTools",
-      "name": "chrome-devtools-mcp",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 40933,
-      "forks": 2600,
-      "starsToday": 499
-    },
-    {
-      "owner": "dotnet",
-      "name": "skills",
-      "url": "https://github.com/dotnet/skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 2497,
-      "forks": 197,
-      "starsToday": 391
-    },
-    {
-      "owner": "Lum1104",
-      "name": "Understand-Anything",
-      "url": "https://github.com/Lum1104/Understand-Anything",
-      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 18360,
-      "forks": 1663,
-      "starsToday": 1391
-    },
-    {
-      "owner": "odoo",
-      "name": "odoo",
-      "url": "https://github.com/odoo/odoo",
-      "description": "Odoo. Open Source Apps To Grow Your Business.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 51094,
-      "forks": 32514,
-      "starsToday": 48
-    },
-    {
-      "owner": "byJoey",
-      "name": "cfnew",
-      "url": "https://github.com/byJoey/cfnew",
-      "description": "",
-      "language": "",
-      "languageColor": "",
-      "stars": 13285,
-      "forks": 6477,
-      "starsToday": 85
-    },
-    {
-      "owner": "trimstray",
-      "name": "the-book-of-secret-knowledge",
-      "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
-      "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
-      "language": "",
-      "languageColor": "",
-      "stars": 223148,
-      "forks": 13379,
-      "starsToday": 964
+      "stars": 13598,
+      "forks": 2549,
+      "starsToday": 1523
     },
     {
       "owner": "Fincept-Corporation",
@@ -118,20 +52,108 @@
       "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 22581,
-      "forks": 3120,
-      "starsToday": 337
+      "stars": 23084,
+      "forks": 3183,
+      "starsToday": 537
     },
     {
-      "owner": "can1357",
-      "name": "oh-my-pi",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "owner": "multica-ai",
+      "name": "andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "languageColor": "",
+      "stars": 149431,
+      "forks": 15322,
+      "starsToday": 3372
+    },
+    {
+      "owner": "dotnet",
+      "name": "skills",
+      "url": "https://github.com/dotnet/skills",
+      "description": "Repository for skills to assist AI coding agents with .NET and C#",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 2722,
+      "forks": 207,
+      "starsToday": 262
+    },
+    {
+      "owner": "ChromeDevTools",
+      "name": "chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 6307,
-      "forks": 512,
-      "starsToday": 455
+      "stars": 41298,
+      "forks": 2623,
+      "starsToday": 437
+    },
+    {
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 7305,
+      "forks": 1003,
+      "starsToday": 238
+    },
+    {
+      "owner": "presenton",
+      "name": "presenton",
+      "url": "https://github.com/presenton/presenton",
+      "description": "Open-Source AI Presentation Generator and API (Gamma, Beautiful AI, Decktopus Alternative)",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 6291,
+      "forks": 1113,
+      "starsToday": 335
+    },
+    {
+      "owner": "multica-ai",
+      "name": "multica",
+      "url": "https://github.com/multica-ai/multica",
+      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 31862,
+      "forks": 3858,
+      "starsToday": 429
+    },
+    {
+      "owner": "trimstray",
+      "name": "the-book-of-secret-knowledge",
+      "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+      "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+      "language": "",
+      "languageColor": "",
+      "stars": 223778,
+      "forks": 13422,
+      "starsToday": 628
+    },
+    {
+      "owner": "odoo",
+      "name": "odoo",
+      "url": "https://github.com/odoo/odoo",
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 51441,
+      "forks": 32528,
+      "starsToday": 386
+    },
+    {
+      "owner": "NVlabs",
+      "name": "LongLive",
+      "url": "https://github.com/NVlabs/LongLive",
+      "description": "LongLive 2.0: Infra - Long Video Gen",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 1780,
+      "forks": 167,
+      "starsToday": 79
     },
     {
       "owner": "yt-dlp",
@@ -140,20 +162,20 @@
       "description": "A feature-rich command-line audio/video downloader",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 164272,
-      "forks": 13815,
-      "starsToday": 536
+      "stars": 164910,
+      "forks": 13857,
+      "starsToday": 745
     },
     {
-      "owner": "karpathy",
-      "name": "nn-zero-to-hero",
-      "url": "https://github.com/karpathy/nn-zero-to-hero",
-      "description": "Neural Networks: Zero to Hero",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 22293,
-      "forks": 3240,
-      "starsToday": 270
+      "owner": "janestreet",
+      "name": "magic-trace",
+      "url": "https://github.com/janestreet/magic-trace",
+      "description": "magic-trace collects and displays high-resolution traces of what a process is doing",
+      "language": "OCaml",
+      "languageColor": "#ef7a08",
+      "stars": 5808,
+      "forks": 179,
+      "starsToday": 70
     }
   ]
 }

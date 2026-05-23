@@ -1,8 +1,58 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MjEyNzAwMDAwLCJpIjoiY21wY3lpb3F3MDFienNsamxib2Y2MWoyZSJ9",
+  "nextCursor": "eyJhIjoxNzc5MjE1MzM0MDAwLCJpIjoiY21wY3piajRzMDFrNnNsamw2YWx5d3FneSJ9",
   "items": [
+    {
+      "id": "cmpiq2r6p0z5bsljwnmtrw2la",
+      "title": "Replit Agent与Squidler集成，实现全自动化AI质量保障",
+      "title_en": "Replit Agent builds your app. Squidler tests it like a real user. Replit Agent fixes what's broken. …",
+      "url": "https://x.com/Replit/status/2058261705998602548",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-05-23T19:00:06.000Z",
+      "summary": "Replit Agent与Squidler已完成集成，形成一套完整的AI驱动质量保障闭环。用户可通过自然语言描述应用功能，由Replit Agent负责构建。构建完成后，Squidler会像真实用户一样对线上应用进行自动化测试，无需编写任何测试脚本。测试中发现的问题会自动反馈给Replit Agent进行修复。该流程已通过Squidler加入Replit的MCP库正式上线，实现了从构建、测试到修复的全自动化，显著降低了应用测试与维护的门槛。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmphp7csm0qaxsljwnztpsgpc",
+      "title": "Models.dev：一个关于人工智能模型规格、定价和功能的开源数据库",
+      "title_en": null,
+      "url": "https://github.com/anomalyco/models.dev",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-23T01:39:14.985Z",
+      "summary": "近期发布了开源数据库Models.dev，专门收录人工智能模型的各项规格、定价及功能信息。该项目在GitHub公开，便于开发者查询和比较不同AI模型。其在Hacker News社区获得101点关注度，显示出技术社区对这类集中化、透明化的模型信息资源的较大兴趣。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmphi58uq0olfsljw5hm9fmom",
+      "title": "动作捕捉与角色动画制作更轻松",
+      "title_en": "motion capture and character animation have never been easier. keep building &amp； more features c…",
+      "url": "https://x.com/ViggleAI/status/2057947352195858568",
+      "source": "X：Viggle AI (@ViggleAI)",
+      "publishedAt": "2026-05-22T22:10:58.000Z",
+      "summary": "动作捕捉和角色动画制作从未如此简单。\n\n持续构建，更多功能即将推出！",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmphhu4x20ohusljw43utrbfd",
+      "title": "v2.1.149 更新摘要",
+      "title_en": "v2.1.149",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-22T22:09:29.000Z",
+      "summary": "本次 v2.1.149 更新包含功能增强、企业设置和多项修复。新增 `/usage` 命令的使用量分类显示功能，可区分技能、子代理、插件及每个 MCP 服务器的消耗；`/diff` 详情视图支持键盘滚动；Markdown 输出兼容 GFM 任务列表。企业版新增 `allowAllClaudeAiMcps` 设置以加载云 MCP 连接器。修复了 PowerShell 权限绕过、Git 工作树沙盒写入白名单越界、脚本路径含空格时 `otelHeadersHelper` 静默失败等安全问题。改进了 `/feedback` 报告，包含上下文压缩前的对话内容，便于排查长会话中的早期问题。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmphi2mo10ojusljwzc35z3mk",
+      "title": "Claude自动模式新增Pro计划与模型支持",
+      "title_en": "Two updates to auto mode： · Now available on the Pro plan · Sonnet 4.6 is now supported， alongside …",
+      "url": "https://x.com/ClaudeDevs/status/2057946803685974482",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "publishedAt": "2026-05-22T22:08:47.000Z",
+      "summary": "自动模式的两项更新：\n\n· 现已在Pro计划中提供\n· 现已支持Sonnet 4.6，以及Opus 4.7\n\n按下Shift+tab，让Claude运行。",
+      "category": "ai-products"
+    },
     {
       "id": "cmphdt39c0njesljw5m72ds3y",
       "title": "新增差异标记样式设置选项",
@@ -451,56 +501,6 @@
       "source": "X：Google DeepMind (@GoogleDeepMind)",
       "publishedAt": "2026-05-19T18:28:54.000Z",
       "summary": "Google Flow 🤝 Gemini Omni\n\n使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。以下是@FlowbyGoogle的其他新功能 → https：//goo.gle/42K2nge\n\n#GoogleIO",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcz81ck01ifsljlbi5lavdp",
-      "title": "Gemini Spark：全天候个人AI代理",
-      "title_en": "Gemini Spark is your 24/7 personal AI agent that helps you navigate your digital life. It transfor…",
-      "url": "https://x.com/GeminiApp/status/2056801918018564538",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T18:19:25.000Z",
-      "summary": "Gemini Spark 是您的全天候个人AI代理，帮助您驾驭数字生活。\n\n它将 Gemini 从一个回答您问题的助手，转变为一个在您的指导下、代表您完成工作的助手。#GoogleIO",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcz81ck01igsljl0shp9lbm",
-      "title": "Google推出每日简报个性化摘要功能",
-      "title_en": "Daily Brief is a new personalized digest that's designed to be your first stop every morning. It ga…",
-      "url": "https://x.com/GeminiApp/status/2056800978343764238",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T18:15:41.000Z",
-      "summary": "Daily Brief是一项新的个性化摘要功能，旨在成为您每天早晨的首选信息来源。\n它从您的收件箱、日历和任务中收集信息，进行优先级排序、整理，并在专为快速浏览设计的超简洁晨间摘要中为您建议下一步行动。#GoogleIO",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcyioqw01c3sljlknwkg5gr",
-      "title": "Google AI 订阅服务全新内容，源自 I/O 2026 大会",
-      "title_en": "Everything new in our Google AI subscriptions， fresh from I/O 2026",
-      "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-19T17:45:00.000Z",
-      "summary": "Google 在 I/O 2026 大会上宣布更新其 AI 订阅服务，推出了全新的 100 美元\"AI Ultra\"计划。同时，面向 Google AI Plus、Pro 和 Ultra 三个层级的现有订阅者，服务均增加了新的功能和权益。此次更新标志着 Google 在 AI 付费订阅领域推出了更高端的选项并强化了现有套餐的价值。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcyioqw01c2sljlyy71uqlh",
-      "title": "AI搜索的新时代",
-      "title_en": "A new era for AI Search",
-      "url": "https://blog.google/products-and-platforms/products/search/search-io-2026",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-19T17:45:00.000Z",
-      "summary": "谷歌宣布了其搜索引擎与AI技术融合的最新进展，标志着AI搜索进入新阶段。此次更新旨在将搜索引擎的广度与AI的深度理解能力相结合，目标是提供更智能、更直观的搜索体验，推动搜索技术的下一代演进。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcyioqw01bzsljlbof61j2e",
-      "title": "Google Workspace 推出全新创建方式与高效工作功能",
-      "title_en": "New ways to create and get things done in Google Workspace",
-      "url": "https://blog.google/products-and-platforms/products/workspace/workspace-updates",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-19T17:45:00.000Z",
-      "summary": "Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。同时，其 AI Inbox 功能也得到了升级与优化。这些更新旨在进一步提升用户在工作场景中的协作效率与创作体验，通过集成更智能的工具和交互方式，帮助用户更便捷地完成多项任务。",
       "category": "ai-products"
     }
   ]

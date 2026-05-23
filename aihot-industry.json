@@ -1,16 +1,76 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc4OTM5MjA2MDAwLCJpIjoiY21wOGdodWN5MGlmbHNsbnp2azc0YmN1MCJ9",
+  "nextCursor": "eyJhIjoxNzc5MTU1NTQwMDAwLCJpIjoiY21wYzE2c2RuMWJ6b3Nsbnpkc2xjN2U4ZiJ9",
   "items": [
     {
-      "id": "cmphcciiv0n76sljw2c5qbnwe",
-      "title": "Project Glasswing：初步更新",
-      "title_en": "Project Glasswing： An initial update",
-      "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-22T19:57:01.055Z",
-      "summary": "上月启动的Project Glasswing项目，旨在利用先进AI模型保障关键软件安全。通过约50家合作伙伴使用Claude Mythos Preview模型，已在全球关键系统中发现超过10，000个高危或严重漏洞。多家合作伙伴报告漏洞发现效率提升超过十倍。例如，Cloudflare在关键路径系统发现2，000个漏洞；Mozilla在Firefox 150中发现并修复271个漏洞，数量远超前代模型。项目还扫描了千余个支撑互联网的开源项目，独立验证准确率达90.6%。这标志着AI网络安全能力进入新阶段，漏洞发现速度已远超人工。",
+      "id": "cmpijo6pj0xnmsljwps8cgh8g",
+      "title": "消息称 Anthropic 最快下周完成逾 300 亿美元融资，有望推动估值反超 OpenAI",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/954/452.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-23T15:12:40.000Z",
+      "summary": "据彭博社报道，Anthropic即将完成一轮超300亿美元的融资，最快可能于下周敲定。此轮融资将使其估值突破9000亿美元，正式超越OpenAI，成为全球估值最高的AI初创企业。融资的迅速推进反映了市场的强烈追捧。同时，公司营收高速增长，预计第二季度营收将达109亿美元，环比增长超一倍，有望迎来首个盈利季度。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpi5yk550udosljwr18jxglb",
+      "title": "加倍投入科学以赢得工业AI",
+      "title_en": "Doubling Down on Science to Win Industrial AI May 22， 2026 Mistral AI",
+      "url": "https://mistral.ai/news/science-to-win-industrial-ai",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-05-23T09:46:00.745Z",
+      "summary": "Mistral AI宣布与物理AI先驱Emmi AI达成最终收购协议，旨在加强其在工业AI领域的领导地位。通过整合Emmi AI在物理仿真与数字孪生方面的专长，Mistral AI将提升其工程解决方案能力，并加速科学研发路线。Emmi AI的30余名研究员与工程师将加入Mistral AI团队，共同构建由物理AI驱动的综合技术栈。此次合作将为航空航天、汽车等高风险行业提供实时仿真与复杂问题解决平台，推动工业研发的突破性进展。",
+      "category": "industry"
+    },
+    {
+      "id": "cmphwpi4y0s4ysljwoypw5kck",
+      "title": "微软称，使用人工智能的成本高于支付人工工资",
+      "title_en": null,
+      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-23T05:23:21.531Z",
+      "summary": "微软发布报告指出，在特定工作场景中，部署和使用人工智能（AI）的成本目前已高于支付相应的人工工资。报告分析了基于\"tokens\"（令牌）和\"agents\"（智能体）的AI使用模式，发现其综合开销超过了雇佣人类员工完成同类任务的费用。这一发现揭示了当前企业应用AI技术面临的现实经济挑战。",
+      "category": "industry"
+    },
+    {
+      "id": "cmphqn8pz0qnlsljwi7q35oae",
+      "title": "Kling AI亮相戛纳，推动AI赋能电影制作",
+      "title_en": "Debut in Cannes | Kling AI Conference Highlights On May 18， Kling AI hosted its official conference…",
+      "url": "https://x.com/Kling_ai/status/2058013861404684739",
+      "source": "X：可灵 Kling AI (@Kling_ai)",
+      "publishedAt": "2026-05-23T02:35:15.000Z",
+      "summary": "Kling AI在戛纳电影市场（Marché du Film）举办官方会议，首次登上这一世界顶级电影舞台。会议汇集全球电影专业人士，共同探讨AI如何融入实际电影制作流程。Kling AI已证明其能力可服务于动画长片、好莱坞剧集、实验短片及影院电影等多种创作形式。未来，Kling AI将继续推进电影级AI影像技术，与全球创作者合作，将更多\"不可能\"的故事呈现在银幕上。",
+      "category": "industry"
+    },
+    {
+      "id": "cmphmn2560pnrsljwzrhpl8vs",
+      "title": "扩大与新加坡合作，推动AI安全规模化部署",
+      "title_en": "We're expanding our partnership with Singapore to help safely deploy AI at scale. 🇸🇬 Together wit…",
+      "url": "https://x.com/GoogleDeepMind/status/2057985225100235022",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-05-23T00:41:27.000Z",
+      "summary": "我们正在扩大与新加坡的合作，以帮助安全地大规模部署AI。🇸🇬\n\n与各国专家合作，我们的新项目将重点加速科学发现、加强大流行病防范并改善医疗保健。\n\n了解更多 → https：//goo.gle/49jGwjv",
+      "category": "industry"
+    },
+    {
+      "id": "cmphld9mr0pcfsljwy8xhd1kg",
+      "title": "AI 替代入门级工作：科技行业受裁员冲击最重，74% CEO 冻结或缩减招聘",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/954/235.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-23T00:05:55.000Z",
+      "summary": "奥纬咨询研究发现，AI工具正被广泛用于入门级任务，导致企业招聘重心转向高级岗位，年轻人求职难度加大。科技行业受冲击最严重，74%的CEO已冻结或缩减招聘。计划削减初级岗位的比例从17%跃升至43%，而招聘转向中层岗位的比例则升至30%。尽管超90%的企业在部署AI，但多数仍处试点阶段。报告警告，过快裁员或忽视初级人才储备，可能对人才梯队造成长远风险。",
+      "category": "industry"
+    },
+    {
+      "id": "cmphj83pb0oufsljw1o50bxte",
+      "title": "黄仁勋：AI 基建年度开支要冲到 4 万亿美元！",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/954/223.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-22T22:30:03.000Z",
+      "summary": "英伟达发布2027财年Q1财报，营收816亿美元，同比增长85%，净利润583亿美元，翻两倍多，市值达5.7万亿美元，已超德国2026年GDP预测。黄仁勋预测，超大规模云厂商的AI基建年度开支将从当前的1万亿美元，增长至3-4万亿美元，远超华尔街预期。财报同时显示，数据中心业务营收752亿美元，占比超九成。值得注意的是，AI基建的高能耗正推高居民电费，数据中心用电成本转嫁效应已初步显现。",
       "category": "industry"
     },
     {
@@ -131,6 +191,16 @@
       "source": "Google DeepMind：Blog（RSS）",
       "publishedAt": "2026-05-21T19:46:42.000Z",
       "summary": "亚太地区经济增长迅速，但极易受到气候变化影响，且现有绿色技术发展速度跟不上环境风险的增长。为此，Google DeepMind宣布启动首届专注于\"AI for the Planet\"的加速器计划。该计划为期三个月，面向亚太地区的初创企业、研究团队和非营利组织，旨在利用前沿人工智能技术解决自然、气候、农业和能源等领域的挑战。入选组织将获得专家指导、定制化支持，并可集成Google AI的前沿模型。计划将从新加坡的线下训练营开始，现已开放注册。",
+      "category": "industry"
+    },
+    {
+      "id": "cmphcciiv0n76sljw2c5qbnwe",
+      "title": "Project Glasswing：初步更新",
+      "title_en": "Project Glasswing： An initial update",
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-21T16:00:00.000Z",
+      "summary": "上月启动的Project Glasswing项目，旨在利用先进AI模型保障关键软件安全。通过约50家合作伙伴使用Claude Mythos Preview模型，已在全球关键系统中发现超过10，000个高危或严重漏洞。多家合作伙伴报告漏洞发现效率提升超过十倍。例如，Cloudflare在关键路径系统发现2，000个漏洞；Mozilla在Firefox 150中发现并修复271个漏洞，数量远超前代模型。项目还扫描了千余个支撑互联网的开源项目，独立验证准确率达90.6%。这标志着AI网络安全能力进入新阶段，漏洞发现速度已远超人工。",
       "category": "industry"
     },
     {
@@ -431,76 +501,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-19T01:52:20.000Z",
       "summary": "谷歌与黑石集团宣布合作成立一家新的AI云服务公司，黑石率先投入50亿美元股权资本，结合后续杠杆，总投资规模预计约250亿美元。该公司计划依托谷歌自研的TPU芯片和云基础设施，与CoreWeave等算力服务商展开竞争，并争取在2027年上线容量达500兆瓦的数据中心，相当于一座中等城市的用电规模。此举标志着谷歌迄今最大规模的对外芯片商业化尝试，将加剧与英伟达等公司在AI算力市场的角逐。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpbjmbxb17w5slnz70k0vm5l",
-      "title": "埃隆·Musk对山姆·阿尔特曼和OpenAI提起的诉讼败诉",
-      "title_en": null,
-      "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-18T18:14:08.505Z",
-      "summary": "埃隆·Musk对山姆·阿尔特曼及OpenAI提起的诉讼以败诉告终。这场广受关注的案件主要涉及人工智能公司OpenAI的创立初衷、公司治理结构以及未来发展方向等核心争议。法院的裁决标志着这一涉及商业、技术伦理与公司控制权的重大法律纠纷阶段性落幕。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpbgzmcq17atslnz0tmjre6x",
-      "title": "Anthropic收购SDK平台Stainless",
-      "title_en": "Anthropic is acquiring @stainlessapi， an SDK and MCP server platform that has powered every Anthropi…",
-      "url": "https://x.com/AnthropicAI/status/2056419620643541012",
-      "source": "X：Anthropic (@AnthropicAI)",
-      "publishedAt": "2026-05-18T17:00:18.000Z",
-      "summary": "Anthropic正在收购@stainlessapi，这是一个SDK和MCP服务器平台，自我们API早期以来就为所有Anthropic SDK提供支持。\n\n阅读更多：https：//www.anthropic.com/news/anthropic-acquires-stainless",
-      "category": "industry"
-    },
-    {
-      "id": "cmpd57aiz00zqslk11q0lp88m",
-      "title": "创新一周年：庆祝Google Cloud x NVIDIA开发者社区达到10万会员",
-      "title_en": "One Year of Innovation： Celebrating 100k Members in the Google Cloud x NVIDIA Developer Community",
-      "url": "https://developers.googleblog.com/one-year-of-innovation-celebrating-100k-members-in-the-google-cloud-x-nvidia-developer-community",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-18T16:00:00.000Z",
-      "summary": "Google Cloud与NVIDIA开发者社区迎来成立一周年，会员规模突破10万。社区为开发者提供先进AI基础设施与资源支持，包括LLM优化、GPU加速数据分析等专项学习路径及专家网络研讨会。第二年计划将进一步扩展，推出实践实验室、工程活动及聚焦代理式AI增长的专项内容。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpbb1r3q15vxslnz1pi8xz2l",
-      "title": "百度核心AI业务Q1营收超136亿元",
-      "title_en": "Our AI businesses continued to scale in Q1 2026. Revenue from Baidu Core AI-powered Business exceed…",
-      "url": "https://x.com/Baidu_Inc/status/2056375547400503355",
-      "source": "X：百度 Baidu (@Baidu_Inc)",
-      "publishedAt": "2026-05-18T14:05:10.000Z",
-      "summary": "我们的AI业务在2026年第一季度持续扩大规模。\n百度核心AI驱动业务收入超过136亿元人民币，同比增长49%，延续了多季度的增长趋势。该业务首次占百度通用业务收入的一半以上。\n本季度还体现了AI云基础设施、AI应用和Apollo Go的持续增长势头。\n完整报告：https：//bit.ly/3RMmact",
-      "category": "industry"
-    },
-    {
-      "id": "cmpbgh7e51779slnz95461dox",
-      "title": "Anthropic收购SDK与MCP服务器工具开发商Stainless",
-      "title_en": "Anthropic acquires Stainless",
-      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-17T16:00:00.000Z",
-      "summary": "Anthropic宣布收购SDK与MCP服务器工具开发商Stainless。Stainless自2022年成立以来，一直为Anthropic官方SDK的生成提供支持，其工具能将API规范转化为TypeScript、Python、Go等多语言的SDK、命令行工具及MCP服务器。此次收购旨在增强Claude平台的开发者体验，提升AI代理连接外部数据与工具的能力，从而在MCP协议基础上进一步拓展连接生态。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp8rvo9o0l0lslnz1fqjrx38",
-      "title": "美国开始出现人工智能相关岗位的大规模裁员",
-      "title_en": null,
-      "url": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-16T19:58:00.612Z",
-      "summary": "美国人工智能相关岗位正出现大规模裁员。根据彭博社报道，受AI影响的职位开始经历严重的就业岗位流失。这一趋势表明AI技术对劳动力市场的冲击已从理论讨论进入现实阶段，具体裁员数字和涉及的行业领域在进一步显现中。",
-      "category": "industry"
-    },
-    {
-      "id": "cmp8ghucy0iflslnzvk74bcu0",
-      "title": "杭州基地启用，机器人有了国家级职业技能训练场",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/951/390.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-16T13:46:46.000Z",
-      "summary": "国家人工智能应用中试基地（具身智能）5月16日在浙江杭州挂牌启用，为机器人提供国家级职业技能训练场。该基地是集场景体验、技术展示、研发合作、产业赋能于一体的综合性平台，旨在推动具身智能技术从实验室迈向现实应用。杭州市于5月1日施行首部具身智能机器人地方性法规，支持核心研发、平台建设和场景开放。目前杭州已集聚机器人产业相关企业700余家，2025年具身智能产业集群产值达1068亿元。",
       "category": "industry"
     }
   ]
