@@ -1,8 +1,28 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MjE1MzM0MDAwLCJpIjoiY21wY3piajRzMDFrNnNsamw2YWx5d3FneSJ9",
+  "nextCursor": "eyJhIjoxNzc5MjE2NDIyMDAwLCJpIjoiY21wZDBlNGVhMDF1dXNsamw5cmYwd3RvdiJ9",
   "items": [
+    {
+      "id": "cmpj9ln4013s6sljw06oz5ujz",
+      "title": "OpenClaw 2026.5.22发布：性能优化与安全加固",
+      "title_en": "OpenClaw 2026.5.22 is live ⚡ Gateway/model startup paths got leaner 🧠 /models drops to ~5ms 🔒 npm…",
+      "url": "https://x.com/openclaw/status/2058397616124072274",
+      "source": "X：OpenClaw (@openclaw)",
+      "publishedAt": "2026-05-24T04:00:09.000Z",
+      "summary": "OpenClaw 2026.5.22 已上线\n\n⚡ Gateway/模型启动路径更精简\n🧠 /models 响应时间降至约5毫秒\n🔒 npm包现提供锁定依赖项\n🪟 Windows安装/更新路径更安全\n\n等待更少，意外更少。\nhttps：//github.com/openclaw/openclaw/releases/tag/v2026.5.22",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpivt5vv10hnsljwzwzhpe7k",
+      "title": "StepAudio 2.5实时语音发布：副语言感知与人格化交互",
+      "title_en": "StepAudio 2.5 Realtime is live！ Real-time voice that picks up what you actually mean - tone， pace，…",
+      "url": "https://x.com/StepFun_ai/status/2058303294544425197",
+      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+      "publishedAt": "2026-05-23T21:45:21.000Z",
+      "summary": "StepAudio 2.5 Realtime是一款实时语音模型，能够深度理解用户语音中的语气、语速、停顿乃至微表情等副语言特征。它支持通过API接入自定义人格，允许设定个性、背景故事和语言风格，并提供了上万种原生人格选项，可组合出数百万种特征。产品还内置了5个可直接体验的预设人格，并经过RLHF调优，确保在复杂的角色扮演压力测试中也能保持角色一致性。该模型支持中文和英文。",
+      "category": "ai-products"
+    },
     {
       "id": "cmpiq2r6p0z5bsljwnmtrw2la",
       "title": "Replit Agent与Squidler集成，实现全自动化AI质量保障",
@@ -481,26 +501,6 @@
       "source": "X：Google DeepMind (@GoogleDeepMind)",
       "publishedAt": "2026-05-19T18:47:02.000Z",
       "summary": "我们希望借助AI帮助科学家发现下一个重大突破。\n\nGemini for Science是我们全新的实验性工具套件，旨在帮助他们探索更多假设、大规模验证工作、轻松解析文献等。🧵",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpcz81ck01idsljlbzgwzrzm",
-      "title": "GoogleIO发布多项Gemini更新",
-      "title_en": "We announced a lot of Gemini updates at #GoogleIO， including： - A complete redesign of the Gemini e…",
-      "url": "https://x.com/GeminiApp/status/2056805027394859137",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T18:31:46.000Z",
-      "summary": "我们在#GoogleIO上宣布了多项Gemini更新，包括：\n- 采用神经表达技术的全新Gemini体验设计\n- 即将推出的Gemini智能体功能，含每日简报与Gemini Spark\n- Gemini Omni与3.5 Flash模型\n- 以及更多内容！\n详情请见此线程🧵",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpczbj4s01k6sljl6alywqgy",
-      "title": "Gemini Omni助力Google Flow创作电影级故事",
-      "title_en": "Google Flow 🤝 Gemini Omni Create more cinematic stories with our latest model， which brings batch …",
-      "url": "https://x.com/GoogleDeepMind/status/2056804306653794336",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-05-19T18:28:54.000Z",
-      "summary": "Google Flow 🤝 Gemini Omni\n\n使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。以下是@FlowbyGoogle的其他新功能 → https：//goo.gle/42K2nge\n\n#GoogleIO",
       "category": "ai-products"
     }
   ]

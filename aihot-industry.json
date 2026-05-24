@@ -1,8 +1,28 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MTU1NTQwMDAwLCJpIjoiY21wYzE2c2RuMWJ6b3Nsbnpkc2xjN2U4ZiJ9",
+  "nextCursor": "eyJhIjoxNzc5MTc2MzU1MDAwLCJpIjoiY21wY2M0NmF2MDExb3NsYWVvbmszcWx4YyJ9",
   "items": [
+    {
+      "id": "cmpk417ey03vssl01z5zsemms",
+      "title": "DeepSeek将对其旗舰AI模型实施永久性75%折扣",
+      "title_en": null,
+      "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-24T18:08:57.964Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpjzqznj02vssl01si4neefz",
+      "title": "TrapDoor供应链攻击：AI助手成新型攻击面",
+      "title_en": "A coordinated supply chain attack called \"TrapDoor\" just hit npm， PyPI， and Crates. io simultaneousl…",
+      "url": "https://x.com/kimmonismus/status/2058584943052161488",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-05-24T16:24:31.000Z",
+      "summary": "一场名为\"TrapDoor\"的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。",
+      "category": "industry"
+    },
     {
       "id": "cmpijo6pj0xnmsljwps8cgh8g",
       "title": "消息称 Anthropic 最快下周完成逾 300 亿美元融资，有望推动估值反超 OpenAI",
@@ -481,26 +501,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-19T07:39:15.000Z",
       "summary": "月之暗面旗下AI助手Kimi正在进行20亿美元新融资，国智投、中国移动等国资机构及央企已加入股东名单，该轮融资已进入收尾阶段。今年1月和2月，Kimi已密集完成3轮融资，累计融资超39亿美元（约376亿元人民币），最新估值相比去年11月已翻4倍有余，成为大模型创业公司中融资最多的企业。产品层面，基于Kimi K2.5模型的Composer 2.5已集成至编程应用Cursor，公司近期也发布了开源模型Kimi K2.6。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpc0rsyk1bv1slnzg9w4btuu",
-      "title": "Anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕",
-      "title_en": null,
-      "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-19T02:13:08.248Z",
-      "summary": "Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕\"magnifica humanitas\"。这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpc16sdn1bzoslnzdslc7e8f",
-      "title": "谷歌联手黑石组建 AI 云公司：50 亿美元起步，2027 年冲刺 500 兆瓦",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/952/097.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-19T01:52:20.000Z",
-      "summary": "谷歌与黑石集团宣布合作成立一家新的AI云服务公司，黑石率先投入50亿美元股权资本，结合后续杠杆，总投资规模预计约250亿美元。该公司计划依托谷歌自研的TPU芯片和云基础设施，与CoreWeave等算力服务商展开竞争，并争取在2027年上线容量达500兆瓦的数据中心，相当于一座中等城市的用电规模。此举标志着谷歌迄今最大规模的对外芯片商业化尝试，将加剧与英伟达等公司在AI算力市场的角逐。",
       "category": "industry"
     }
   ]

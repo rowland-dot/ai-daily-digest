@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -171,26 +171,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-18T00:00:00.000Z",
       "summary": "本文提出零专家自蒸馏适应框架，将训练完成的静态混合专家模型转换为高效动态模型。该方法通过在每个混合专家层注入零输出专家，并利用原始模型作为冻结教师进行两阶段自蒸馏适应，以实现稳定的架构转换。在两个大型开源模型及11个基准测试上的实验表明，该方法能消除超过50%的专家计算量，同时仅带来极小的准确率损失，并显著提升端到端推理速度。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpc80hvi00aksl6k8762pzia",
-      "title": "从可运行到可交付：基于多智能体测试驱动的开发范式用于从需求生成全栈Web应用",
-      "title_en": "From Runnable to Shippable： Multi-Agent Test-Driven Development for Generating Full-Stack Web Applications from Requirements",
-      "url": "https://arxiv.org/abs/2605.17242",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-17T00:00:00.000Z",
-      "summary": "针对编码智能体生成的Web应用超70%不满足需求的问题，本文提出TDDev框架。该框架通过三阶段实现自动化闭环：先将需求转化为结构化测试，再通过浏览器模拟交互验证应用，最后将故障转化为修复报告。首次针对Web应用生成的TDD实证研究发现，引入TDD基础设施可提升质量34-48个百分点。关键结论是最佳协议需与模型生成风格匹配，不匹配将完全抵消TDD优势并最多增加25倍Token消耗。用户研究证实，该框架使人工干预降为零，开发转向自主反馈优化。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpc5tl9a00c0sl2i7z45eqdk",
-      "title": "OProver：一个统一的智能体化形式定理证明框架",
-      "title_en": "OProver： A Unified Framework for Agentic Formal Theorem Proving",
-      "url": "https://arxiv.org/abs/2605.17283",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-17T00:00:00.000Z",
-      "summary": "OProver是首个将智能体化证明过程深度整合到定理证明器训练中的统一框架，而非仅在推理时应用。该框架通过持续预训练和迭代式后训练进行优化，每次迭代均执行智能体化证明，并将新验证的证明索引至OProofs数据集和检索记忆中。OProofs数据集规模庞大，包含1.77M个Lean语句和6.86M个经编译器验证的证明。基于此，OProver-32B模型在MiniF2F、ProverBench和PutnamBench三个基准测试上取得了最优的Pass@32成绩，展现了超越此前所有开源全证明证明器的性能。",
       "category": "paper"
     }
   ]
