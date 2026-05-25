@@ -1,8 +1,18 @@
 {
-  "count": 17,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpkr0wyr09fisl01izzkuo8q",
+      "title": "华为何庭波\"韬定律\"论文发布，逻辑折叠技术提升芯片性能",
+      "title_en": "不依赖新光刻工艺！麒麟 2027、昇腾 990 芯片在路上，华为何庭波\"韬定律\"论文要点大揭秘",
+      "url": "https://www.ithome.com/0/954/778.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-25T04:27:21.000Z",
+      "summary": "华为何庭波在ISCAS 2026上提出\"韬定律\"，并介绍逻辑折叠（LogicFolding）技术。该技术通过三维空间拓扑重组提升芯片性能，不依赖新光刻工艺。在麒麟2026芯片测试中，晶体管密度从155 MTr/mm2提升至238 MTr/mm2，性能核心能效提高41%，最大时钟频率提升近13%。论文显示，麒麟2027芯片已进入Silicon状态，后续规划包括麒麟2028、2029。AI芯片方面，昇腾990计划在2030年左右引入逻辑折叠，硬件集成预计到2035年提高超过100倍。",
+      "category": "paper"
+    },
     {
       "id": "cmphlmb8l0peosljw5rpq8dt2",
       "title": "Nemotron-Labs 扩散语言模型实现光速级文本生成",
@@ -141,36 +151,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-18T23:22:40.000Z",
       "summary": "近日，小米在 CVPR 2026 NTIRE 图像恢复与增强赛事中获得三项大奖。小米玄戒多媒体算法团队凭借自研SPANV2方法，以综合得分4.43夺得高效超分辨率赛道冠军，实现了画质与速度的均衡提升。小米大模型应用团队通过双阶段级联框架与单步扩散技术，获得人像修复赛道冠军；并在反光消除赛道通过骨干网络升级与知识蒸馏等策略获得亚军，主观评分达4.31分，多项客观指标位列第一。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpcxg3ae00yxsljld1mkz7nk",
-      "title": "加速遗传线索以逆转细胞衰老",
-      "title_en": "Fast-tracking genetic leads to reverse cellular aging",
-      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-05-18T18:21:39.000Z",
-      "summary": "生物学家利用Co-Scientist这一工具，成功发现能够使人类细胞年轻化的新型因子。该研究通过人工智能加速了遗传线索的探索过程，为逆转细胞衰老领域提供了新的关键因素。这一发现标志着利用技术手段干预生物老化进程取得了实质性进展。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpc5tl9900btsl2i4pmrw04x",
-      "title": "StableVLA：无需额外数据的鲁棒视觉-语言-动作模型",
-      "title_en": "StableVLA： Towards Robust Vision-Language-Action Models without Extra Data",
-      "url": "https://arxiv.org/abs/2605.18287",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-18T00:00:00.000Z",
-      "summary": "视觉-语言-动作模型在面对训练数据未涵盖的视觉干扰时性能显著下降。为此，本文提出一种基于信息论的轻量级适配器模块（IB-Adapter），能从视觉输入中选择性过滤噪声，且无需额外数据或增强策略。该适配器以少于1000万的额外参数，平均提升性能30%。实验表明，即使骨干网络参数仅为0.5B（较现有7B模型小14倍），StableVLA在合成与真实视觉损坏场景下的长时程任务中，仍能达到与大模型相当的鲁棒性，并超越OpenPi基线。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpc3irem1ck7slnzc2q3wcws",
-      "title": "训练后 MoE 可通过自蒸馏跳过一半专家",
-      "title_en": "Post-Trained MoE Can Skip Half Experts via Self-Distillation",
-      "url": "https://arxiv.org/abs/2605.18643",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-18T00:00:00.000Z",
-      "summary": "本文提出零专家自蒸馏适应框架，将训练完成的静态混合专家模型转换为高效动态模型。该方法通过在每个混合专家层注入零输出专家，并利用原始模型作为冻结教师进行两阶段自蒸馏适应，以实现稳定的架构转换。在两个大型开源模型及11个基准测试上的实验表明，该方法能消除超过50%的专家计算量，同时仅带来极小的准确率损失，并显著提升端到端推理速度。",
       "category": "paper"
     }
   ]

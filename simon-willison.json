@@ -1,7 +1,28 @@
 {
-  "fetched_at": "2026-05-24T21:31:06.102Z",
+  "fetched_at": "2026-05-25T21:46:26.866Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "datasette 1.0a30",
+      "link": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
+      "updated": "2026-05-24T23:52:37+00:00",
+      "summary": "The big new feature in this alpha is a new customizable \"Jump to... \" menu, described in detail in The extensible \"Jump to\" menu in Datasette 1. 0a30 on the Datasette blog. You can try it out by hitting / on latest. datasette.",
+      "body": "The big new feature in this alpha is a new customizable \"Jump to...\" menu, described in detail in The extensible \"Jump to\" menu in Datasette 1.0a30 on the Datasette blog. You can try it out by hitting / on latest.datasette.io - it looks like this:\n\nThe new jumpitemssql() plugin hook allows plugins to add their own items to the set that's searched by the plugin."
+    },
+    {
+      "title": "datasette-agent 0.1a4",
+      "link": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+      "updated": "2026-05-24T23:19:34+00:00",
+      "summary": "You can try this out by signing into agent. datasette. io using your GitHub account.",
+      "body": "Taking advantage of the new makeJumpSections() JavaScript plugin hook added in Datasette 1.0a30, datasette-agent now presents this \"Start a new agent chat\" interface as part of the Jump to menu, any time you hit /:\n\nYou can try this out by signing into agent.datasette.io using your GitHub account."
+    },
+    {
+      "title": "datasette-fixtures 0.1a0",
+      "link": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything",
+      "updated": "2026-05-24T21:38:32+00:00",
+      "summary": "New documented datasette. fixtures. populatefixturedatabase(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites. This new plugin takes advantage of that API.",
+      "body": "One of the smaller features in Datasette 1.0a30 is this:\n\nNew documented datasette.fixtures.populatefixturedatabase(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites.\n\nThis new plugin takes advantage of that API. You can try it out using uvx without even installing Datasette like this:\n\nuvx --prerelease=allow \\\n  --with datasette-fixtures datasette \\\n  --get /fixtures/roadsideattractions.json\nWhich outputs:\n\n{\n  \"ok\": true,\n  \"next\": null,\n  \"rows\": [\n    {\"pk\": 1, \"name\": \"The Mystery Spot\", \"address\": \"465 Mystery Spot Road, Santa Cruz, CA 95065\", \"url\": \"https://www.mysteryspot.com/\", \"latitude\": 37.0167, \"longitude\": -122.0024},\n    {\"pk\": 2, \"name\": \"Winchester Mystery House\", \"address\": \"525 South Winchester Boulevard, San Jose, CA 95128\", \"url\": \"https://winchestermysteryhouse.com/\", \"latitude\": 37.3184, \"longitude\": -121.9511},\n    {\"pk\": 3, \"name\": \"Burlingame Museum of PEZ Memorabilia\", \"address\": \"214 California Drive, Burlingame, CA 94010\", \"url\": null, \"latitude\": 37.5793, \"longitude\": -122.3442},\n    {\"pk\": 4, \"name\": \"Bigfoot Discovery Museum\", \"address\": \"5497 Highway 9, Felton, CA 95018\", \"url\": \"https://www.bigfootdiscoveryproject.com/\", \"latitude\": 37.0414, \"longitude\": -122.0725}\n  ],\n  \"truncated\": false\n}"
+    },
     {
       "title": "Quoting Armin Ronacher",
       "link": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
@@ -64,27 +85,6 @@
       "updated": "2026-05-21T15:04:09+00:00",
       "summary": "\"View SQL query\" buttons for both visible tables and collapsed SQL result tool calls. Don't display empty reasoning chunks Improved handling of truncated responses - table still displays to the user even if the SQL results were truncated when showing the agent.",
       "body": "Release: datasette-agent 0.1a3\n\nSimon Willison’s Weblog\n\nSubscribe\n\nSponsored by: Datadog — Ship reliable AI faster with LLM Observability. Read the best practices guide\n\n21st May 2026\n\nReleasedatasette-agent 0.1a3— An LLM-powered agent for Datasette\n\n   \"View SQL query\" buttons for both visible tables and collapsed SQL result tool calls.\n   Don't display empty reasoning chunks\n   Improved handling of truncated responses - table still displays to the user even if the SQL results were truncated when showing the agent.\n\nSee Datasette Agent, an extensible AI assistant for Datasette.\n\nPosted 21st May 2026 at 3:04 pm\n\nRecent articles\n\n   Datasette Agent - 21st May 2026\n   Gemini 3.5 Flash: more expensive, but Google plan to use it for everything - 19th May 2026\n   The last six months in LLMs in five minutes - 19th May 2026\n\nThis is a beat by Simon Willison, posted on 21st May 2026.\n\ndatasette 1496datasette-agent 10\nMonthly briefing\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\n\nPay me to send you less!\n\nSponsor & subscribe\n\n   Disclosures\n   Colophon\n   ©\n   2002\n   2003\n   2004\n   2005\n   2006\n   2007\n   2008\n   2009\n   2010\n   2011\n   2012\n   2013\n   2014\n   2015\n   2016\n   2017\n   2018\n   2019\n   2020\n   2021\n   2022\n   2023\n   2024\n   2025\n   2026"
-    },
-    {
-      "title": "Quoting SpaceX S-1",
-      "link": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
-      "updated": "2026-05-20T22:26:36+00:00",
-      "summary": "We have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers.",
-      "body": "20th May 2026\n\nWe have the ability to use compute resources to support our proprietary AI applications (such as Grok 5, which is currently being trained at COLOSSUS II), while also providing access to select compute capacity to third-party customers. For example, in May 2026, we entered into Cloud Services Agreements with Anthropic PBC (“Anthropic”), an AI research and development public benefit corporation, with respect to access to compute capacity across COLOSSUS and COLOSSUS II. Pursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days’ notice.\n\n— SpaceX S-1, highlights mine"
-    },
-    {
-      "title": "How fast is 10 tokens per second really?",
-      "link": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
-      "updated": "2026-05-20T17:57:45+00:00",
-      "summary": "How fast is 10 tokens per second really? (via) Neat little HTML app by Mike Veerman (source code here) which simulates LLM token output speeds from 5/second to 800/second. Useful if you see a model advertised as \"30 tokens/second\" and want to get a feel for what that actually looks like.",
-      "body": "How fast is 10 tokens per second really?\n\nSimon Willison’s Weblog\n\nSubscribe\n\nSponsored by: Datadog — Ship reliable AI faster with LLM Observability. Read the best practices guide\n\n20th May 2026 - Link Blog\n\nHow fast is 10 tokens per second really? (via) Neat little HTML app by Mike Veerman (source code here) which simulates LLM token output speeds from 5/second to 800/second.\n\nUseful if you see a model advertised as \"30 tokens/second\" and want to get a feel for what that actually looks like.\n\nPosted 20th May 2026 at 5:57 pm\n\nRecent articles\n\n   Gemini 3.5 Flash: more expensive, but Google plan to use it for everything - 19th May 2026\n   The last six months in LLMs in five minutes - 19th May 2026\n   Notes on the xAI/Anthropic data center deal - 7th May 2026\n\nThis is a link post by Simon Willison, posted on 20th May 2026.\n\nai 2028generative-ai 1795llms 1761\nMonthly briefing\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\n\nPay me to send you less!\n\nSponsor & subscribe\n\n   Disclosures\n   Colophon\n   ©\n   2002\n   2003\n   2004\n   2005\n   2006\n   2007\n   2008\n   2009\n   2010\n   2011\n   2012\n   2013\n   2014\n   2015\n   2016\n   2017\n   2018\n   2019\n   2020\n   2021\n   2022\n   2023\n   2024\n   2025\n   2026"
-    },
-    {
-      "title": "Google I/O, Gemini Spark, Antigravity",
-      "link": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
-      "updated": "2026-05-20T15:32:17+00:00",
-      "summary": "It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\".",
-      "body": "It's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"coming soon\".\n\nI actually prefer to write about things that are in general availability, because I've had instances in the past where the previews didn't match what was released to the general public later on.\n\nAside from Gemini 3.5 Flash the most interesting announcement looks to be Google's upcoming OpenClaw competitor Gemini Spark, described as \"your personal AI agent\" which can \"connect natively with your favorite Google apps like Gmail, Calendar, Drive, Docs, Sheets, Slides, YouTube, and Google Maps\". The FAQ for that also includes this confusing detail:\n\nWhat Gemini model does Gemini Spark run on?\nGemini Spark runs on Gemini 3.5 Flash and Antigravity.\n\nThe antigravity.google website currently lists Antigravity as a desktop app, a CLI agent tool (written in Go), the Antigravity SDK (an open source Python wrapper around a bundled closed source Go binary), and the original Antigravity IDE (a VS Code fork).\n\nI guess Gemini Spark, the user-facing hosted agent product, might be running on that Go binary, but I'm not sure why that's worth mentioning in the FAQ!\n\nNaturally I went looking for notes on how Gemini Spark intends to handle the risk of prompt injection. The best information I could find on that was in the Everything Google Cloud customers need to know coming out of Google I/O post aimed at enterprise customers, which includes:\n\nSpark operates in a fully managed, secure runtime on Google Cloud, meaning you get enterprise-grade security without ever having to manage the underlying infrastructure. Every task executes in a fresh, strictly isolated, ephemeral VM to help ensure data never overlaps between sessions. To protect your enterprise, all traffic routes through our secure Agent Gateway that enforces Data Loss Prevention (DLP) policies, while user credentials remain fully encrypted and are never exposed directly to the agent.\n\nGiven how many people are going to be piping very sensitive data through Gemini Spark in the near future I hope they've made this bullet-proof, or this could be a top candidate for the agent security challenger disaster that we still haven't seen.\n\nAlso of note: in Transitioning Gemini CLI to Antigravity CLI Google announce that the open source Gemini CLI tool (Apache 2.0 licensed TypeScript) will stop working with their AI subscription plans on June 18th, replaced by the new closed source Antigravity CLI."
     }
   ]
 }

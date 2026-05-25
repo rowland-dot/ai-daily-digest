@@ -1,8 +1,28 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MTc2MzU1MDAwLCJpIjoiY21wY2M0NmF2MDExb3NsYWVvbmszcWx4YyJ9",
+  "nextCursor": "eyJhIjoxNzc5MTk1NDY3OTY4LCJpIjoiY21wY24xcHBmMDNvMXNsYWVsamhqc2NkNyJ9",
   "items": [
+    {
+      "id": "cmplmpmdq0h63sl013njdyiug",
+      "title": "苹果据称正使用定制版1.2T参数Google模型重塑下一代Siri",
+      "title_en": "Apple isn't just adding Gemini to Siri. It is reportedly using a custom 1.2T-parameter Google model …",
+      "url": "https://x.com/kimmonismus/status/2058997271803674991",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-05-25T19:42:58.000Z",
+      "summary": "据报道，苹果为改造下一代Siri，正使用一个定制版、参数规模达1.2T的Google大模型作为其核心，这显著大于预估约300B参数的Gemini 3.5 Flash。该模型将驱动Siri的部分功能，其中简单查询预期会在本地设备运行。苹果面临的关键挑战是确保该大模型能够足够快速地响应日常问题。此外，下个月AI领域预计将有多项重要发布，包括WWDC上的Apple Intelligence与Gemini整合、GPT-5.6、可能的Sonnet 4.8/Opus 4.8，以及已确认的Gemini 3.5 Pro。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpldcxz10ew3sl01caeact4o",
+      "title": "教皇里奥呼吁在AI时代保持\"深刻的人性\"",
+      "title_en": "Pope Leo calls for being 'profoundly human' in the age of AI",
+      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-05-25T15:05:07.000Z",
+      "summary": "教皇里奥十四世在首份重要通谕《Magnifica Humanitas》中警告了AI及不受约束的技术力量带来的风险。该通谕于2026年5月15日发布，是教皇关于\"在人工智能时代守护人\"的宣言。文件重点讨论了AI驱动战争的危险、AI对劳动的影响，以及建立新的法律和伦理框架来规范技术的必要性，强调AI的快速普及正造成经济和社会动荡，对个人的保护不足威胁着人类尊严。",
+      "category": "industry"
+    },
     {
       "id": "cmpk417ey03vssl01z5zsemms",
       "title": "DeepSeek将对其旗舰AI模型实施永久性75%折扣",
@@ -481,26 +501,6 @@
       "source": "Anthropic：Newsroom（网页）",
       "publishedAt": "2026-05-19T12:57:47.968Z",
       "summary": "毕马威宣布与Anthropic建立全球联盟，将Claude人工智能模型全面整合至其核心业务与数字平台。此举将向毕马威全球超过27.6万名员工开放Claude访问权限，并率先应用于税务与法律等领域的客户工具开发。双方还将合作开发面向私募股权投资组合公司及网络安全漏洞检测的新产品。毕马威强调此次合作基于其可信AI框架，旨在通过负责任、可治理的AI部署，加速企业数字化转型。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcijozf02lfslaerefjeqam",
-      "title": "现代汽车集团计划部署 2.5 万台波士顿动力 Atlas 人形机器人",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/952/459.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-19T10:50:31.000Z",
-      "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmpcc46av011oslaeonk3qlxc",
-      "title": "Kimi最新融资获国资与央企加注，估值半年翻四倍",
-      "title_en": "月之暗面 Kimi 融资获国资加持，国智投、中国移动等央企巨头入场",
-      "url": "https://www.ithome.com/0/952/336.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-19T07:39:15.000Z",
-      "summary": "月之暗面旗下AI助手Kimi正在进行20亿美元新融资，国智投、中国移动等国资机构及央企已加入股东名单，该轮融资已进入收尾阶段。今年1月和2月，Kimi已密集完成3轮融资，累计融资超39亿美元（约376亿元人民币），最新估值相比去年11月已翻4倍有余，成为大模型创业公司中融资最多的企业。产品层面，基于Kimi K2.5模型的Composer 2.5已集成至编程应用Cursor，公司近期也发布了开源模型Kimi K2.6。",
       "category": "industry"
     }
   ]

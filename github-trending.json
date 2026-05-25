@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-24T21:30:55.001Z",
+  "fetched_at": "2026-05-25T21:46:05.510Z",
   "repos": [
     {
       "owner": "Lum1104",
@@ -8,31 +8,9 @@
       "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 25381,
-      "forks": 2196,
-      "starsToday": 3987
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 15689,
-      "forks": 2809,
-      "starsToday": 1836
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 27192,
-      "forks": 2902,
-      "starsToday": 1179
+      "stars": 30725,
+      "forks": 2545,
+      "starsToday": 5625
     },
     {
       "owner": "anthropics",
@@ -41,130 +19,31 @@
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 13918,
-      "forks": 1724,
-      "starsToday": 486
+      "stars": 15271,
+      "forks": 1851,
+      "starsToday": 1448
     },
     {
-      "owner": "multica-ai",
-      "name": "andrej-karpathy-skills",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "",
-      "languageColor": "",
-      "stars": 151859,
-      "forks": 15574,
-      "starsToday": 2555
-    },
-    {
-      "owner": "earendil-works",
-      "name": "pi",
-      "url": "https://github.com/earendil-works/pi",
-      "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 53868,
-      "forks": 6433,
-      "starsToday": 444
-    },
-    {
-      "owner": "Alishahryar1",
-      "name": "free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 29098,
-      "forks": 4368,
-      "starsToday": 557
+      "stars": 18340,
+      "forks": 3124,
+      "starsToday": 3167
     },
     {
-      "owner": "colbymchenry",
-      "name": "codegraph",
-      "url": "https://github.com/colbymchenry/codegraph",
-      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 21766,
-      "forks": 1210,
-      "starsToday": 2993
-    },
-    {
-      "owner": "multica-ai",
-      "name": "multica",
-      "url": "https://github.com/multica-ai/multica",
-      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 32424,
-      "forks": 3902,
-      "starsToday": 584
-    },
-    {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 25766,
-      "forks": 4493,
-      "starsToday": 96
-    },
-    {
-      "owner": "manaflow-ai",
-      "name": "cmux",
-      "url": "https://github.com/manaflow-ai/cmux",
-      "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 18957,
-      "forks": 1447,
-      "starsToday": 634
-    },
-    {
-      "owner": "666ghj",
-      "name": "MiroFish",
-      "url": "https://github.com/666ghj/MiroFish",
-      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 62091,
-      "forks": 9726,
-      "starsToday": 179
-    },
-    {
-      "owner": "codecrafters-io",
-      "name": "build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "description": "Master programming by recreating your favorite technologies from scratch.",
-      "language": "Markdown",
-      "languageColor": "#083fa1",
-      "stars": 504201,
-      "forks": 47826,
-      "starsToday": 590
-    },
-    {
-      "owner": "dotnet",
-      "name": "skills",
-      "url": "https://github.com/dotnet/skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 2933,
-      "forks": 217,
-      "starsToday": 181
-    },
-    {
-      "owner": "blakeblackshear",
-      "name": "frigate",
-      "url": "https://github.com/blakeblackshear/frigate",
-      "description": "NVR with realtime local object detection for IP cameras",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 32798,
-      "forks": 3177,
-      "starsToday": 226
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 192221,
+      "forks": 29756,
+      "starsToday": 2052
     },
     {
       "owner": "mukul975",
@@ -173,9 +52,141 @@
       "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 8211,
-      "forks": 1051,
-      "starsToday": 934
+      "stars": 9131,
+      "forks": 1130,
+      "starsToday": 999
+    },
+    {
+      "owner": "colbymchenry",
+      "name": "codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 24751,
+      "forks": 1364,
+      "starsToday": 3171
+    },
+    {
+      "owner": "manaflow-ai",
+      "name": "cmux",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 19446,
+      "forks": 1468,
+      "starsToday": 598
+    },
+    {
+      "owner": "multica-ai",
+      "name": "andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "languageColor": "",
+      "stars": 154744,
+      "forks": 15853,
+      "starsToday": 2753
+    },
+    {
+      "owner": "Fincept-Corporation",
+      "name": "FinceptTerminal",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 23835,
+      "forks": 3279,
+      "starsToday": 345
+    },
+    {
+      "owner": "paperless-ngx",
+      "name": "paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 41287,
+      "forks": 2741,
+      "starsToday": 151
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-cookbooks",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 43976,
+      "forks": 5044,
+      "starsToday": 218
+    },
+    {
+      "owner": "Leonxlnx",
+      "name": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 19592,
+      "forks": 1649,
+      "starsToday": 542
+    },
+    {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 39672,
+      "forks": 4021,
+      "starsToday": 32
+    },
+    {
+      "owner": "shiyu-coder",
+      "name": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 26002,
+      "forks": 4515,
+      "starsToday": 243
+    },
+    {
+      "owner": "Axorax",
+      "name": "awesome-free-apps",
+      "url": "https://github.com/Axorax/awesome-free-apps",
+      "description": "Curated list of the best free apps for PC and mobile",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 4436,
+      "forks": 226,
+      "starsToday": 141
+    },
+    {
+      "owner": "hardikpandya",
+      "name": "stop-slop",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "description": "A skill file for removing AI tells from prose",
+      "language": "",
+      "languageColor": "",
+      "stars": 4346,
+      "forks": 378,
+      "starsToday": 353
+    },
+    {
+      "owner": "garrytan",
+      "name": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 102375,
+      "forks": 15268,
+      "starsToday": 600
     }
   ]
 }

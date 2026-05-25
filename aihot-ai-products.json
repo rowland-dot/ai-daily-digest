@@ -1,8 +1,38 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MjE2NDIyMDAwLCJpIjoiY21wZDBlNGVhMDF1dXNsamw5cmYwd3RvdiJ9",
+  "nextCursor": "eyJhIjoxNzc5MjI1MTU3MDAwLCJpIjoiY21wZDVxYTNqMDE0d3NsazFjc204ZzNsYiJ9",
   "items": [
+    {
+      "id": "cmplja6yg0gb1sl01686zrkeo",
+      "title": "Grok Build Beta版向SuperGrok用户开放",
+      "title_en": "Grok Build is now available in Beta for all SuperGrok and X Premium+ users. Use Plan Mode， create i…",
+      "url": "https://x.com/xai/status/2058973760708091907",
+      "source": "X：xAI (@xai)",
+      "publishedAt": "2026-05-25T18:09:33.000Z",
+      "summary": "Grok Build 现已面向所有 SuperGrok 和 X Premium+ 用户推出 Beta 版。\n使用 Plan Mode，通过 Imagine 创建图像和视频，并使用 CLI 构建自动化或编排器。\n访问 http：//x.ai/cli 开始使用。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpldyuyz0f2nsl01au9kw3uf",
+      "title": "Qwen3.7-Max隐式缓存功能上线",
+      "title_en": "✅Implicit caching is now live on Qwen3.7-Max - kicks in automatically， no setup needed. ⚡️Faster + …",
+      "url": "https://x.com/Alibaba_Qwen/status/2058932656797368619",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-05-25T15:26:13.000Z",
+      "summary": "✅隐式缓存现已在Qwen3.7-Max上线--自动启用，无需设置。\n⚡️开箱即用，更快更便宜。\n\n需要更高、更确定的命中率？请尝试显式缓存。🙌\n🔗最佳实践🔗：https：//www.alibabacloud.com/help/en/model-studio/explicit-cache-best-practice",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpkd0u6q05zssl01cy9jq6ro",
+      "title": "Luma Agents 实现规模化真实 UGC 广告生成",
+      "title_en": "Authenticity at scale used to be a contradiction. Not anymore. Define the brief. Set the style. Lum…",
+      "url": "https://x.com/LumaLabsAI/status/2058672731705503959",
+      "source": "X：Luma AI (@LumaLabsAI)",
+      "publishedAt": "2026-05-24T22:13:22.000Z",
+      "summary": "规模化的真实性曾是矛盾，如今已成现实。\n定义简报，设定风格，Luma Agents 从这里构建每一条 UGC 风格广告。\n让它真实 → http：//lumalabs.ai/app",
+      "category": "ai-products"
+    },
     {
       "id": "cmpj9ln4013s6sljw06oz5ujz",
       "title": "OpenClaw 2026.5.22发布：性能优化与安全加固",
@@ -471,36 +501,6 @@
       "source": "X：Google AI (@GoogleAI)",
       "publishedAt": "2026-05-19T21:12:37.000Z",
       "summary": "谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd2mw0v00fgslk1zs271rbt",
-      "title": "OpenAI推出长期算力保障服务",
-      "title_en": "Introducing OpenAI Guaranteed Capacity： a new offering that enables customers to guarantee long-term…",
-      "url": "https://x.com/OpenAI/status/2056823271774101907",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-05-19T19:44:16.000Z",
-      "summary": "推出 OpenAI Guaranteed Capacity：一项新服务，让客户能够保障长期获取 OpenAI 算力。\n\n我们已在基础设施、合作伙伴关系和容量规划方面进行了长期投资，以帮助客户可靠地扩展。\n\n现在，Guaranteed Capacity 帮助客户在算力受限的环境中提前规划关键工作负载。\n\nhttp：//openai.com/guaranteed-capacity",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd24zua0091slk1t8thoz19",
-      "title": "Antigravity生态：面向智能体的开发平台",
-      "title_en": "The new @Antigravity ecosystem is your ultimate agent-first development platform. For anyone buildi…",
-      "url": "https://x.com/googleaidevs/status/2056821026038964360",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-05-19T19:35:21.000Z",
-      "summary": "全新的 @Antigravity 生态系统是您终极的智能体优先开发平台。\n\n对于任何构建或编排智能体的开发者，以下是 Google I/O 上发布的内容 🚀↓",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpd0e4ea01uusljl9rf0wtov",
-      "title": "Gemini for Science：AI助力科学突破",
-      "title_en": "We want to help scientists discover their next breakthrough with AI. Gemini for Science is our new …",
-      "url": "https://x.com/GoogleDeepMind/status/2056808869242826957",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-05-19T18:47:02.000Z",
-      "summary": "我们希望借助AI帮助科学家发现下一个重大突破。\n\nGemini for Science是我们全新的实验性工具套件，旨在帮助他们探索更多假设、大规模验证工作、轻松解析文献等。🧵",
       "category": "ai-products"
     }
   ]
