@@ -1,8 +1,28 @@
 {
-  "count": 15,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpmsjd610rghsl01l5zfielj",
+      "title": "KPop 新方法让 Ring-2.6-1T 在 SWE-bench Verified 上突破 76 分",
+      "title_en": "From IcePop to KPop - our team keeps pushing on RL training stability for large MoE models. 👇 KPop…",
+      "url": "https://x.com/AntLingAGI/status/2059292063032918422",
+      "source": "X：蚂蚁百灵 (@AntLingAGI)",
+      "publishedAt": "2026-05-26T15:14:22.000Z",
+      "summary": "团队推出 KPop，用于稳定大规模 MoE 模型的智能体强化学习训练。它用基于二元 KL 散度的自适应掩码机制，替代了此前 IcePop 方法中的固定比例掩码，能根据训练过程中的训练-推理不匹配程度动态调整。这一改进使得 Ring-2.6-1T 模型在无需修改基础设施或路由重放的情况下，仅通过纯 RL 训练，在 SWE-bench Verified 上取得了超过 76 分的成绩。",
+      "category": "paper"
+    },
+    {
+      "id": "cmplva72h0j6jsl01yvgbp7mk",
+      "title": "微软 Copilot Cowork 存在文件泄露问题",
+      "title_en": null,
+      "url": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-25T23:25:48.799Z",
+      "summary": null,
+      "category": "paper"
+    },
     {
       "id": "cmpkr0wyr09fisl01izzkuo8q",
       "title": "华为何庭波\"韬定律\"论文发布，逻辑折叠技术提升芯片性能",
@@ -11,6 +31,16 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-25T04:27:21.000Z",
       "summary": "华为何庭波在ISCAS 2026上提出\"韬定律\"，并介绍逻辑折叠（LogicFolding）技术。该技术通过三维空间拓扑重组提升芯片性能，不依赖新光刻工艺。在麒麟2026芯片测试中，晶体管密度从155 MTr/mm2提升至238 MTr/mm2，性能核心能效提高41%，最大时钟频率提升近13%。论文显示，麒麟2027芯片已进入Silicon状态，后续规划包括麒麟2028、2029。AI芯片方面，昇腾990计划在2030年左右引入逻辑折叠，硬件集成预计到2035年提高超过100倍。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpm8v6b70mknsl01qf8lgf1r",
+      "title": "通过奖励倾斜分布匹配强化少步生成器",
+      "title_en": "Reinforcing Few-step Generators via Reward-Tilted Distribution Matching",
+      "url": "https://arxiv.org/abs/2605.26108",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "summary": "本文提出奖励倾斜分布匹配蒸馏（RTDMD），这是一个将分布匹配蒸馏与奖励引导强化学习统一应用于少步流生成器的两阶段框架。该方法通过最小化到奖励倾斜教师分布的KL散度，自然分解为分布匹配项与奖励最大化项。第一阶段引入环境一致分布匹配蒸馏（AC-DMD），在子区间进行分布匹配，并通过一致性正则化辅助分数模型追踪生成器分布。第二阶段联合优化两项，并推导混合策略梯度及步子集GRPO（SubGRPO）以降低方差。在SD3、SD3.5和FLUX.2上的实验表明，RTDMD仅用4步推理即可在偏好、美学和组合指标上达到新的 state-of-the-art。",
       "category": "paper"
     },
     {
@@ -101,56 +131,6 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-05-20T00:00:00.000Z",
       "summary": "OpenAI开发的人工智能模型成功解决了数学界悬而未决逾80年的\"单元距离问题\"，并由此推翻了离散几何领域的一个核心猜想。这一突破被视作人工智能驱动数学研究的里程碑事件，标志着AI在基础科学理论探索中取得了实质性进展。该模型通过创新算法处理复杂的几何问题，展示了机器在自动化发现与验证数学猜想方面的巨大潜力。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpd5fjlb010tslk16bffs0ly",
-      "title": "研究发现人类说服技巧对AI同样有效",
-      "title_en": "🚨Our paper is out in PNAS： we found classic human persuasion techniques worked on AIs in a \"parahum…",
-      "url": "https://x.com/emollick/status/2056843673145401722",
-      "source": "X：Ethan Mollick (@emollick)",
-      "publishedAt": "2026-05-19T21:05:20.000Z",
-      "summary": "🚨我们的论文已在PNAS发表：我们发现经典的人类说服技巧以一种\"类人\"的方式对AI有效，使其同意不当请求（将顺从率从35%提高到51%）\n该技巧对一系列主流大语言模型有效，尽管较新的模型抵抗力更强 https：//www.pnas.org/doi/10.1073/pnas.2535868123",
-      "category": "paper"
-    },
-    {
-      "id": "cmpc1uga61c67slnzs7cijp9e",
-      "title": "开源古代汉字视觉感知评估基准Chronicles-OCR",
-      "title_en": "🎉 🎉 🎉 We're open-sourcing Chronicles-OCR， a visual perception benchmark evaluating VLLMs on ancie…",
-      "url": "https://x.com/TencentHunyuan/status/2056567125205270882",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-05-19T02:46:26.000Z",
-      "summary": "开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。相关论文与代码已开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpe2ulhk091fslk1debhyygu",
-      "title": "优化_anything：通用文本参数优化API",
-      "title_en": "optimize_anything： A Universal API for Optimizing any Text Parameter",
-      "url": "https://arxiv.org/abs/2605.19633",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-19T00:00:00.000Z",
-      "summary": "该研究提出了一种基于大语言模型的通用文本优化系统，将优化问题统一表述为通过评分函数改进文本产物。在六项任务中达到最优结果：智能体架构使Gemini Flash在ARC-AGI上的准确率从32.5%提升至89.5%；调度算法降低40%云成本；87%的CUDA内核匹配或超越PyTorch表现；圆包装问题超越AlphaEvolve。实验表明，可操作的附加信息比仅使用分数反馈收敛更快、得分更高；多任务搜索通过跨任务迁移学习，在同等预算下优于独立优化，且任务数量越多收益越大。该工作首次证明基于LLM的文本优化是通用问题解决范式，能统一传统领域特定算法。系统已开源，支持多种后端。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpdjhbyu04gqslk1o0dakqxr",
-      "title": "GoLongRL：面向能力的长期上下文强化学习与多任务对齐",
-      "title_en": "GoLongRL： Capability-Oriented Long Context Reinforcement Learning with Multitask Alignment",
-      "url": "https://arxiv.org/abs/2605.19577",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-19T00:00:00.000Z",
-      "summary": "GoLongRL是一个全开源的长期上下文强化学习方案，聚焦于使用可验证奖励的强化学习。该工作提出了面向能力的数据构建方法，公开发布了包含23K样本的数据集、完整构建管线及训练代码。数据集依据长期上下文能力分类，涵盖9种任务类型，由真实文档生成的问答对构成；实验证明该数据集性能优于闭源的QwenLong-L1.5数据集。训练得到的Qwen3-30B-A3B模型在长期上下文任务上达到了与DeepSeek-R1-0528等先进模型可比的性能。此外，提出了TMN-Reweight多任务优化方法，通过任务级归一化和难度自适应加权，在提升平均性能的同时保持或增强了通用能力。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpbur9px1afsslnzn91fx045",
-      "title": "小米斩获 CVPR 2026 NTIRE 赛事三项奖项",
-      "title_en": "小米斩获 CVPR 2026 NTIRE 赛事三项奖项，影像算法取得技术突破",
-      "url": "https://www.ithome.com/0/952/050.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-18T23:22:40.000Z",
-      "summary": "近日，小米在 CVPR 2026 NTIRE 图像恢复与增强赛事中获得三项大奖。小米玄戒多媒体算法团队凭借自研SPANV2方法，以综合得分4.43夺得高效超分辨率赛道冠军，实现了画质与速度的均衡提升。小米大模型应用团队通过双阶段级联框架与单步扩散技术，获得人像修复赛道冠军；并在反光消除赛道通过骨干网络升级与知识蒸馏等策略获得亚军，主观评分达4.31分，多项客观指标位列第一。",
       "category": "paper"
     }
   ]

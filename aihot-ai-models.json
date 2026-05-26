@@ -1,8 +1,48 @@
 {
-  "count": 24,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpmacj4m0mxusl014abz5r1f",
+      "title": "Qwen3.7-Max 成为全球第二AI编程模型",
+      "title_en": "Qwen3.7-Max is officially the #2 AI coding model globally. Scoring 1541 on Code Arena， it trails onl…",
+      "url": "https://x.com/alibaba_cloud/status/2059163881361048011",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-26T06:45:01.000Z",
+      "summary": "Qwen3.7-Max 正式成为全球第二大 AI 编程模型。在 Code Arena 上得分 1541，仅次于 Claude。专为生产环境打造：可运行 35 小时任务、1000+ 次工具调用，并在数小时内交付两周的项目。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpm8mi1b0miusl01tr5zuge8",
+      "title": "面壁智能开源 MiniCPM5-1B：在 AA-Index 上超越所有 2B 参数以下模型，能跑在手机、浏览器上",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/267.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-26T05:13:08.000Z",
+      "summary": "面壁智能开源其新一代端侧大语言模型MiniCPM5-1B。该模型仅1B参数，在AA-Index榜单上超越所有2B参数以下模型，相比3个月前的Qwen3.5-2B效果更优且参数量减半。经INT4量化后权重仅0.5GB，支持在手机和浏览器上运行。其Base Model版本由面壁智能自主研发的AI训练框架ForgeTrain预训练完成，现已全面开源模型权重、训练数据集与部署方案。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpm6hb7i0m09sl01wqopbsoh",
+      "title": "谷歌 AI 框架 AlphaProof Nexus 攻克 2 道悬置 56 年数学难题",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/261.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-26T04:54:06.000Z",
+      "summary": null,
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpm1qxvl0ktesl01chbln28n",
+      "title": "腾讯混元新翻译模型双榜亮眼，小程序发布",
+      "title_en": "🙏 Thank you all for the incredible love and support！ Our latest Tencent Hunyuan translation model…",
+      "url": "https://x.com/TencentHunyuan/status/2059104921778352626",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-05-26T02:50:44.000Z",
+      "summary": "腾讯混元发布翻译模型 Hy-MT2，在 Hugging Face 开源模型趋势排行榜上表现突出：1.8B 版本排名第一，30B-A3B（MoE）版本排名第四，下载量已超 7K。官方同步推出了基于该模型的\"腾讯混译\"微信小程序，支持语音输入与离线翻译，并可自定义翻译风格与指令。模型代码与权重已开源。",
+      "category": "ai-models"
+    },
     {
       "id": "cmpkovqp508w4sl01zz63gssx",
       "title": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
@@ -111,136 +151,6 @@
       "source": "Qwen：Blog Retrieval（API）",
       "publishedAt": "2026-05-20T02:00:00.000Z",
       "summary": "Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpd1208z01yasljldmz8605q",
-      "title": "Gemini Omni发布：物理推理与多模态生成新突破",
-      "title_en": "Gemini Omni doesn't just build scenes that look real， it reasons about what should happen next. It c…",
-      "url": "https://x.com/sundarpichai/status/2056816915717443862",
-      "source": "X：Sundar Pichai (@sundarpichai)",
-      "publishedAt": "2026-05-19T19:19:01.000Z",
-      "summary": "Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。\n今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpd1fujg022bsljlzjla22ld",
-      "title": "Gemini Omni：从任意输入创造内容的新模型",
-      "title_en": "By now， you've probably heard about Gemini Omni， our new model designed to create anything from any …",
-      "url": "https://x.com/GoogleAI/status/2056816653770625406",
-      "source": "X：Google AI (@GoogleAI)",
-      "publishedAt": "2026-05-19T19:17:58.000Z",
-      "summary": "到现在，你可能已经听说了 Gemini Omni，这是我们新推出的模型，旨在从任意输入（从视频开始）创造任何内容。\n但……这有什么大不了的？\n让我们来分解一下 🧵👇",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpd0arrt01tdsljlfb386xpt",
-      "title": "谷歌发布Gemini Omni多模态生成模型",
-      "title_en": "Meet Gemini Omni， our new model that can create anything from any input， starting with video. With …",
-      "url": "https://x.com/GeminiApp/status/2056814052039356806",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T19:07:38.000Z",
-      "summary": "介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。\n\n借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。#GoogleIO",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpd04j7d01rnsljl7yv1wl28",
-      "title": "OlmoEarth v1.1： 更高效的模型家族",
-      "title_en": "OlmoEarth v1.1： A more efficient family of models",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-19T18:38:09.000Z",
-      "summary": "Ai2（Allen Institute for AI）在Hugging Face平台发布了OlmoEarth模型家族的1.1版本。此次更新重点提升了模型的计算效率与运行性能，通过优化的模型架构与训练策略，使OlmoEarth v1.1在保持或增强任务表现的同时，显著降低了推理所需的计算资源与时间成本。这一改进旨在让该开源模型更适用于资源受限的部署场景，推动大规模语言模型的普惠应用。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcyy35v01fjsljl8d7pfb15",
-      "title": "Gemini Omni：迈向AGI的世界模型",
-      "title_en": "The real \"wow\" moment is Gemini Omni. A world model towards AGI. It can create anything from any in…",
-      "url": "https://x.com/kimmonismus/status/2056802929957568881",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-19T18:23:26.000Z",
-      "summary": "真正的\"哇\"时刻是 Gemini Omni。一个迈向 AGI 的世界模型。\n\n它可以从任何输入创建任何内容。这太疯狂了。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcyioqw01c0sljlnmkn1jvc",
-      "title": "I/O 2026： 欢迎来到自主的 Gemini 时代",
-      "title_en": "I/O 2026： Welcome to the agentic Gemini era",
-      "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-19T17:45:00.000Z",
-      "summary": "Google 在 I/O 2026 大会上宣布 Gemini 进入自主代理时代，新功能使其能够自动执行复杂任务，显著提升用户工作效率。大会展示了 Gemini 如何通过代理操作简化工作流程，实现自动化处理，例如自动管理邮件、安排日程或生成报告，帮助用户从重复性工作中解放出来，专注于创造性任务。这一更新基于先进机器学习模型，强调准确性与效率，标志着 AI 助手向更智能、更自主的方向发展。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcxoo8t0119sljlui7avpd7",
-      "title": "谷歌 Gemini Omni 全能模型发布：可从任意输入生成任意输出，一句话让 AI 修改视频",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/952/519.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-19T17:26:55.000Z",
-      "summary": "在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。该模型代表了Gemini家族迄今最全面的能力，\"Omni\"意为全能，能够无缝处理文本、图像、音频和视频等多种信息模态，实现\"从任何输入生成任何输出\"。其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcwzpwh00uysljlzqxjrw89",
-      "title": "谷歌发布Gemini Omni Flash，Pro版即将推出",
-      "title_en": "GOOGLE I/O 🔥： GEMINI OMNI FLASH HAS BEEN ANNOUNCED AND IS NOW AVAILABLE ON GEMINI AND GOOGLE FLOW. …",
-      "url": "https://x.com/testingcatalog/status/2056787680944406538",
-      "source": "X：Testing Catalog (@testingcatalog)",
-      "publishedAt": "2026-05-19T17:22:51.000Z",
-      "summary": "谷歌 I/O 🔥：GEMINI OMNI FLASH 已发布，现已在 GEMINI 和 GOOGLE FLOW 上可用。\n\nGEMINI OMNI PRO 即将推出 🤩",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcx6f4300wysljlabcyj9qx",
-      "title": "Gemini Omni发布：多模态生成新突破",
-      "title_en": "We're dropping Gemini Omni： our first step towards a model that can create anything from anything - …",
-      "url": "https://x.com/GoogleDeepMind/status/2056786446636212467",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-05-19T17:17:56.000Z",
-      "summary": "我们推出Gemini Omni：这是迈向一个能从任何内容生成任何内容的模型的第一步--从视频开始。\n它结合了Gemini的智能与我们的生成式媒体系统--代表了在世界理解、多模态和编辑方面的飞跃🧵",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcws51o00sasljlxkb5o66r",
-      "title": "Gemini Omni发布，迈向AGI新进展",
-      "title_en": "\"Progress towards AGI\"： Gemini Omni - world models -Gemini Omni official！！ It can create anythin…",
-      "url": "https://x.com/kimmonismus/status/2056786433458000041",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-19T17:17:53.000Z",
-      "summary": "\"迈向AGI的进展\"：Gemini Omni\n\n- 世界模型\n-Gemini Omni官方发布！！\n\n它可以从任何输入创建任何内容！！！",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpce9a1i01kislaea9ioa7tn",
-      "title": "地平线开源 HoloMotion-1 4 亿参数机器人小脑大模型，可实现舞蹈、健身、搬箱子等动作",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/952/354.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-19T08:08:57.000Z",
-      "summary": "地平线机器人实验室发布了其开源的人形机器人全身控制模型 HoloMotion-1。这是一个拥有 4 亿参数的\"小脑\"大模型，通过 MoE 稀疏激活与 KV-cache 推理机制，在端侧实现了约 300FPS 的实时推理能力。该模型利用互联网视频、光学动捕、VR 遥操作等多种来源的动作数据进行训练，并在真实机器人上成功展示了舞蹈、爬行、健身、搬箱子等复杂动作的零样本迁移能力。相关代码与技术报告已公开。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpbzez3z1bkhslnzwsppcvqn",
-      "title": "首个实时多agent世界模型发布，人类可与AI同屏互动",
-      "title_en": "今天就被奥德赛实验室的\"实际\"模型刷屏！ Odyssey刚刚把\"世界模型\"直接拉进多人模式了。 Agora-1，全球第一个真正实时的多agent世界模型。 人类和AI现在可以同时进同一个模拟…",
-      "url": "https://x.com/berryxia/status/2056548546544124240",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-05-19T01:32:36.000Z",
-      "summary": "奥德赛实验室推出Agora-1，这是全球首个实时多agent世界模型，允许多人与AI同时在同一个模拟世界中实时互动并相互影响。该模型以经典游戏GoldenEye死亡竞赛为演示场景，提供可玩研究预览，用户现在即可体验与AI共同参与动态生成的模拟世界。这标志着从单人生成视频向多人共享\"活世界\"的转变，长期来看可能重塑游戏、模拟、教育、机器人及AI协作等领域，使人类从旁观者变为与AI共同生活的参与者。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpcrgqiy04rdslaewcj0tfqm",
-      "title": "介绍 Ettin Reranker 系列",
-      "title_en": "Introducing the Ettin Reranker Family",
-      "url": "https://huggingface.co/blog/ettin-reranker",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-19T00:00:00.000Z",
-      "summary": "通过开源和开放科学的方式推动人工智能的发展与普及。该机构正式发布了 Ettin Reranker 系列模型，这是一组用于重排序的开源工具，旨在降低先进AI技术的使用门槛，促进技术普惠。",
       "category": "ai-models"
     }
   ]

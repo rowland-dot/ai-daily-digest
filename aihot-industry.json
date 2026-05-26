@@ -1,8 +1,88 @@
 {
-  "count": 50,
-  "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MTk1NDY3OTY4LCJpIjoiY21wY24xcHBmMDNvMXNsYWVsamhqc2NkNyJ9",
+  "count": 48,
+  "hasNext": false,
+  "nextCursor": null,
   "items": [
+    {
+      "id": "cmpn05f050tdcsl01mkpij1a9",
+      "title": "据报道Claude Mythos以\"巧妙简洁的证明\"解决了OpenAI里程碑式的Erdős问题",
+      "title_en": "Claude Mythos reportedly solves OpenAI's landmark Erdős problem with a \"cute， simple proof\"",
+      "url": "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-05-26T18:31:07.000Z",
+      "summary": "Anthropic工程师Sholto Douglas表示，Claude Mythos在周末期间解决了OpenAI提出的Erdős单位距离猜想问题，并给出了一个\"巧妙简洁的证明\"。这一成果被描述为人工智能在数学发现领域存在\"严重超前\"迹象。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpmq04030qtssl011r5fyxzr",
+      "title": "OpenRouter完成1.13亿美元B轮融资",
+      "title_en": "Today we're announcing our $113M Series B led by @CapitalGVC. Over the last 6 months， weekly volume…",
+      "url": "https://x.com/OpenRouter/status/2059277623629664758",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-05-26T14:16:59.000Z",
+      "summary": "今天我们宣布完成由@CapitalGVC领投的1.13亿美元B轮融资。\n过去6个月，随着AI从实验快速转向生产，OpenRouter的周处理量从5万亿增长到25万亿token。\n我们对未来充满期待。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpmpqf390qs1sl0100fxtfz5",
+      "title": "微软亚洲研究院发起全球AI价值观挑战赛",
+      "title_en": "Can AI reason about human values with real-world complexity？ Microsoft Research Asia's new Global AI…",
+      "url": "https://x.com/MSFTResearch/status/2059273348232724565",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-05-26T14:00:00.000Z",
+      "summary": "AI能否理解人类价值观的现实复杂性？微软亚洲研究院的全新全球AI价值观挑战赛，诚邀哲学、伦理、法学和社会科学领域的研究人员共同探索。立即注册：https：//msft.it/6012vk8OO",
+      "category": "industry"
+    },
+    {
+      "id": "cmpmkyxc60pjvsl01xm2idwf8",
+      "title": "SynthID水印技术扩展合作，覆盖超千亿内容",
+      "title_en": "SynthID has already watermarked over 100 billion pieces of content， but transparency is a team sport…",
+      "url": "https://x.com/GoogleDeepMind/status/2059235181274202500",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-05-26T11:28:20.000Z",
+      "summary": "SynthID已为超过1000亿条内容添加水印，但透明度需要行业协作。\n因此，我们正与OpenAI、ElevenLabs和Kakao合作，将SynthID水印技术集成到他们的模型中--这延续了我们与NVIDIA共同推动的全行业趋势。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpmh9qz30oonsl01ee1xgzlj",
+      "title": "四个月花光全年 AI 预算，Uber 总裁质疑 AI 投入合理性",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/563.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-26T10:09:46.000Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpmbf43e0n7xsl01lk5yoibm",
+      "title": "阿里云CTO阐述从云原生到智能体原生转型",
+      "title_en": "At #QwenConference2026， Dr. Feifei Li， CTO of Alibaba Cloud， President of International Business， ou…",
+      "url": "https://x.com/alibaba_cloud/status/2059174528786268669",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-26T07:27:19.000Z",
+      "summary": "在 #QwenConference2026 上，阿里云CTO、国际业务总裁李飞飞博士阐述了我们从云原生到智能体原生的转变。为了普及AI，我们构建了四大基石：模型、智能体云、工具与服务，以及规模。\n\n👉 敬请关注：https：//click.qwencloud.com/m/20000000187/",
+      "category": "industry"
+    },
+    {
+      "id": "cmplvrbvr0ja8sl01cwts44vh",
+      "title": "Anthropic 新模型震动金融圈，欧洲央行紧急开会要求升级网络防御",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/090.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-25T23:53:30.000Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpltm5n30is2sl015yqdvfvt",
+      "title": "OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/078.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-25T22:59:12.000Z",
+      "summary": "多名开发者在 OpenAI Codex 后端日志中发现未官宣的 GPT-5.6 模型，内部代号 iris-alpha。该模型将支持 150 万 token 的上下文窗口，较当前 GPT-5.5 的 105 万 token 提升约 43%，有望于今年 6 月发布。测试显示，在输入达到 90 万 token 时仍能流畅响应。同系列还发现了 ember-alpha 与 beacon-alpha 版本。此外，GPT-5.6 在前端界面生成能力上也有所提升。基于爆料信息，Anthropic Claude、Google Gemini 及 xAI Grok 也可能瞄准同期发布新模型。",
+      "category": "industry"
+    },
     {
       "id": "cmplmpmdq0h63sl013njdyiug",
       "title": "苹果据称正使用定制版1.2T参数Google模型重塑下一代Siri",
@@ -401,106 +481,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-20T02:39:19.000Z",
       "summary": "微软内部发出警告，称其代码托管平台GitHub正面临\"生存级风险\"。主要原因是Cursor、Claude Code等AI编程助手兴起，改变了开发者工作流，削弱了持续将代码上传至GitHub的必要性。为统一工具链并控制成本，微软已要求部分团队在2026年6月底前停止试用Claude Code，转而使用自有工具GitHub Copilot CLI。同时，OpenAI曾考虑自建替代平台，也加剧了对GitHub地位的潜在威胁。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcz81ck01ijsljlls9n0jxx",
-      "title": "Gemini月活用户超9亿，回顾年度重大功能发布",
-      "title_en": "More than 900 million users are coming to the Gemini app every month. A big part of that growth is …",
-      "url": "https://x.com/GeminiApp/status/2056799436052017597",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-19T18:09:33.000Z",
-      "summary": "每月有超过9亿用户使用Gemini应用。\n\n这一增长的重要部分源于我们快速的发布节奏。以下是过去一年我们推出的一些最重要功能的回顾。🧵 #GoogleIO",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcxg3ft00zrsljleo7yyeed",
-      "title": "Google I/O 2026",
-      "title_en": "I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-19T17:45:00.000Z",
-      "summary": "在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcxoo8t011asljl2ex48qey",
-      "title": "谷歌每月处理超 3200 万亿 Token，同比增长 7 倍",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/952/518.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-19T17:14:39.000Z",
-      "summary": "在2026年谷歌I/O开发者大会上，谷歌宣布其AI业务关键指标大幅增长。2026年5月，谷歌每月处理的Token数量超过3200万亿，同比增长达7倍。其Gemini App月度活跃用户已突破9亿，同比增长超过一倍，每日请求量增长超7倍。此外，Nano Banana模型已累计生成超过500亿张图片。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcw3sqr00nysljliwr90t6j",
-      "title": "谷歌IO大会首日：创新与技术突破",
-      "title_en": "Welcome to Day 1 of #GoogleIO. We're sharing @Google's latest innovations， product updates， and tec…",
-      "url": "https://x.com/GoogleDeepMind/status/2056782550924996816",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-05-19T17:02:27.000Z",
-      "summary": "欢迎来到 #GoogleIO 的第一天。\n\n我们将分享 @Google 的最新创新、产品更新和技术突破。\n\n请就座前排，观看直播 → https：//goo.gle/499OxaJ",
-      "category": "industry"
-    },
-    {
-      "id": "cmpculcys009gsljl1jpnwadp",
-      "title": "Google I/O 开发者大会日程公布",
-      "title_en": "It's time for Google I/O！ ✧ 10：00AM - Keynote ✧ 1：30PM - Developer Keynote ✧ 3：30PM - What's new in…",
-      "url": "https://x.com/googleaidevs/status/2056767412255805521",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-05-19T16:02:18.000Z",
-      "summary": "Google I/O 开发者大会即将开始！\n\n✧ 上午10：00 - 主题演讲\n✧ 下午1：30 - 开发者主题演讲\n✧ 下午3：30 - Google AI 新动态\n✧ 下午4：30 - 与 @GoogleDeepMind 和 @Antigravity 共同扩展开发者生态系统\n\n时间为太平洋时间。\nhttps：//x.com/i/events/2053241348807864323",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcth4wt0087slb7hk5e83cp",
-      "title": "Andrej加入Anthropic，Musk也点赞",
-      "title_en": "Andrej joined Anthropic. Even Elon couldn't help but praise Anthropic. Anthropic really aura-farmed …",
-      "url": "https://x.com/Yuchenj_UW/status/2056764450712256753",
-      "source": "X：Yuchen Jin (@Yuchenj_UW)",
-      "publishedAt": "2026-05-19T15:50:32.000Z",
-      "summary": "Andrej加入了Anthropic。\n连Elon都忍不住称赞Anthropic。\nAnthropic今天在Google I/O上真是气场全开。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpctfefn007nslb7d10w6thl",
-      "title": "安德烈·卡帕西加入Anthropic",
-      "title_en": null,
-      "url": "https://twitter.com/karpathy/status/2056753169888334312",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-19T15:33:04.992Z",
-      "summary": "AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpctird30077sl50ywlas903",
-      "title": "前OpenAI核心成员Andrej Karpathy选择Anthropic重返前沿LLM研究",
-      "title_en": "Prominent AI researcher Andrej Karpathy picks Anthropic over former home OpenAI to get back into frontier LLM research",
-      "url": "https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-05-19T15:29:27.000Z",
-      "summary": "著名AI研究人员Andrej Karpathy已加入Anthropic。这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究\"尤其具有塑造性\"。他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcsj5pu050sslaeoga8am89",
-      "title": "Karpathy加入Anthropic团队",
-      "title_en": "Welcome to the team， Andrej！",
-      "url": "https://x.com/ClaudeDevs/status/2056753265346564259",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-05-19T15:06:05.000Z",
-      "summary": "欢迎加入团队，Andrej！",
-      "category": "industry"
-    },
-    {
-      "id": "cmpcn1ppf03o1slaeljhjscd7",
-      "title": "毕马威与Anthropic建立全球联盟，全面整合Claude AI模型",
-      "title_en": "KPMG integrates Claude across its core business and workforce of more than 276，000 in strategic alliance",
-      "url": "https://www.anthropic.com/news/anthropic-kpmg",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-19T12:57:47.968Z",
-      "summary": "毕马威宣布与Anthropic建立全球联盟，将Claude人工智能模型全面整合至其核心业务与数字平台。此举将向毕马威全球超过27.6万名员工开放Claude访问权限，并率先应用于税务与法律等领域的客户工具开发。双方还将合作开发面向私募股权投资组合公司及网络安全漏洞检测的新产品。毕马威强调此次合作基于其可信AI框架，旨在通过负责任、可治理的AI部署，加速企业数字化转型。",
       "category": "industry"
     }
   ]

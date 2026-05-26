@@ -1,24 +1,35 @@
 {
-  "date": "2026-05-25",
-  "generatedAt": "2026-05-25T00:00:00.322Z",
-  "windowStart": "2026-05-24T00:00:00.000Z",
-  "windowEnd": "2026-05-25T00:00:00.000Z",
+  "date": "2026-05-26",
+  "generatedAt": "2026-05-26T00:00:00.939Z",
+  "windowStart": "2026-05-25T00:00:00.000Z",
+  "windowEnd": "2026-05-26T00:00:00.000Z",
   "lead": null,
   "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
+          "summary": "",
+          "sourceUrl": "https://www.ithome.com/0/954/759.htm",
+          "sourceName": "IT之家（RSS）"
+        }
+      ]
+    },
     {
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Luma Agents 实现规模化真实 UGC 广告生成",
-          "summary": "规模化的真实性曾是矛盾，如今已成现实。 定义简报，设定风格，Luma Agents 从这里构建每一条 UGC 风格广告。 让它真实 → http://lumalabs.ai/app",
-          "sourceUrl": "https://x.com/LumaLabsAI/status/2058672731705503959",
-          "sourceName": "X：Luma AI (@LumaLabsAI)"
+          "title": "Grok Build Beta版向SuperGrok用户开放",
+          "summary": "Grok Build 现已面向所有 SuperGrok 和 X Premium+ 用户推出 Beta 版。 使用 Plan Mode，通过 Imagine 创建图像和视频，并使用 CLI 构建自动化或编排器。 访问 http://x.ai/cli 开始使用。",
+          "sourceUrl": "https://x.com/xai/status/2058973760708091907",
+          "sourceName": "X：xAI (@xai)"
         },
         {
-          "title": "OpenClaw 2026.5.22发布：性能优化与安全加固",
-          "summary": "OpenClaw 2026.5.22 已上线 ⚡ Gateway/模型启动路径更精简 🧠 /models 响应时间降至约5毫秒 🔒 npm包现提供锁定依赖项 🪟 Windows安装/更新路径更安全 等待更少，意外更少。 https://github.com/openclaw/openclaw/releases/tag/v2026.5.22",
-          "sourceUrl": "https://x.com/openclaw/status/2058397616124072274",
-          "sourceName": "X：OpenClaw (@openclaw)"
+          "title": "Qwen3.7-Max隐式缓存功能上线",
+          "summary": "✅隐式缓存现已在Qwen3.7-Max上线——自动启用，无需设置。 ⚡️开箱即用，更快更便宜。 需要更高、更确定的命中率？请尝试显式缓存。🙌 🔗最佳实践🔗：https://www.alibabacloud.com/help/en/model-studio/explicit-cache-best-practice",
+          "sourceUrl": "https://x.com/Alibaba_Qwen/status/2058932656797368619",
+          "sourceName": "X：通义千问 / Qwen (@Alibaba_Qwen)"
         }
       ]
     },
@@ -26,16 +37,45 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "TrapDoor供应链攻击：AI助手成新型攻击面",
-          "summary": "一场名为“TrapDoor”的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。",
-          "sourceUrl": "https://x.com/kimmonismus/status/2058584943052161488",
+          "title": "苹果据称正使用定制版1.2T参数Google模型重塑下一代Siri",
+          "summary": "据报道，苹果为改造下一代Siri，正使用一个定制版、参数规模达1.2T的Google大模型作为其核心，这显著大于预估约300B参数的Gemini 3.5 Flash。该模型将驱动Siri的部分功能，其中简单查询预期会在本地设备运行。苹果面临的关键挑战是确保该大模型能够足够快速地响应日常问题。此外，下个月AI领域预计将有多项重要发布，包括WWDC上的Apple Intelligence与Gemini整合、GPT-5.6、可能的Sonnet 4.8/Opus 4.8，以及已确认的Gemini 3.5 Pro。",
+          "sourceUrl": "https://x.com/kimmonismus/status/2058997271803674991",
           "sourceName": "X：Kim (@kimmonismus)"
         },
         {
-          "title": "DeepSeek将对其旗舰AI模型实施永久性75%折扣",
+          "title": "教皇里奥呼吁在AI时代保持“深刻的人性”",
+          "summary": "教皇里奥十四世在首份重要通谕《Magnifica Humanitas》中警告了AI及不受约束的技术力量带来的风险。该通谕于2026年5月15日发布，是教皇关于“在人工智能时代守护人”的宣言。文件重点讨论了AI驱动战争的危险、AI对劳动的影响，以及建立新的法律和伦理框架来规范技术的必要性，强调AI的快速普及正造成经济和社会动荡，对个人的保护不足威胁着人类尊严。",
+          "sourceUrl": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+          "sourceName": "The Verge：AI（RSS）"
+        },
+        {
+          "title": "OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens",
+          "summary": "多名开发者在 OpenAI Codex 后端日志中发现未官宣的 GPT-5.6 模型，内部代号 iris-alpha。该模型将支持 150 万 token 的上下文窗口，较当前 GPT-5.5 的 105 万 token 提升约 43%，有望于今年 6 月发布。测试显示，在输入达到 90 万 token 时仍能流畅响应。同系列还发现了 ember-alpha 与 beacon-alpha 版本。此外，GPT-5.6 在前端界面生成能力上也有所提升。基于爆料信息，Anthropic Claude、Google Gemini 及 xAI Grok 也可能瞄准同期发布新模型。",
+          "sourceUrl": "https://www.ithome.com/0/955/078.htm",
+          "sourceName": "IT之家（RSS）"
+        },
+        {
+          "title": "OpenAI、Grupo Folha与Grupo UOL宣布战略内容合作",
+          "summary": "OpenAI与巴西媒体集团Grupo Folha和Grupo UOL达成合作，将可信的巴西新闻内容引入ChatGPT，以扩展新闻访问渠道，并确保内容来源的归属与透明度。",
+          "sourceUrl": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        }
+      ]
+    },
+    {
+      "label": "论文研究",
+      "items": [
+        {
+          "title": "微软 Copilot Cowork 存在文件泄露问题",
           "summary": "",
-          "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+          "sourceUrl": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
           "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "华为何庭波“韬定律”论文发布，逻辑折叠技术提升芯片性能",
+          "summary": "华为何庭波在ISCAS 2026上提出“韬定律”，并介绍逻辑折叠（LogicFolding）技术。该技术通过三维空间拓扑重组提升芯片性能，不依赖新光刻工艺。在麒麟2026芯片测试中，晶体管密度从155 MTr/mm²提升至238 MTr/mm²，性能核心能效提高41%，最大时钟频率提升近13%。论文显示，麒麟2027芯片已进入Silicon状态，后续规划包括麒麟2028、2029。AI芯片方面，昇腾990计划在2030年左右引入逻辑折叠，硬件集成预计到2035年提高超过100倍。",
+          "sourceUrl": "https://www.ithome.com/0/954/778.htm",
+          "sourceName": "IT之家（RSS）"
         }
       ]
     },
@@ -43,28 +83,16 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "面向 Codex 的自我优化提示词框架",
-          "summary": "这是一个结构化的提示词，用于指导 Codex 自动分析其历史记录以识别并固化重复工作流。该框架要求 Codex 回顾会话、Memories 等数据，找出重复、耗时且有明确复用价值的任务。筛选标准包括至少出现两次、输入稳定、可提升效率等。最终，Codex 应以“技能”、子智能体或自动化工具等最小实用形式创建或扩展现有资产，避免冗余。流程包括生成候选清单、执行创建，并汇报结果与待验证项。",
-          "sourceUrl": "https://x.com/gdb/status/2058598608224858442",
-          "sourceName": "X：Greg Brockman (@gdb)"
+          "title": "Anthropic联合创始人Chris Olah在教皇通谕发布会上的讲话",
+          "summary": "Anthropic联合创始人Chris Olah在梵蒂冈出席教皇Leo XIV关于AI的通谕发布会。他指出，所有前沿AI实验室都面临商业、研究及地缘政治等多重压力，这可能与做正确的事相冲突，因此外部监督至关重要。他强调，AI模型并非像飞机那样被工程化构建，而是基于人类语言和思想“生长”出来的，其内在性质可能复杂难解。他提出三个需审慎思考的问题：如何确保AI发展的全球收益公平分享、如何思考AI时代的人类繁荣，以及AI模型内在性质的本质。他呼吁社会各界，尤其是宗教与民间团体，严肃审视AI发展并引导其向善。",
+          "sourceUrl": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+          "sourceName": "Anthropic：Newsroom（网页）"
         },
         {
-          "title": "格雷格·布罗克曼：那段差点让OpenAI覆灭的72小时",
-          "summary": "",
-          "sourceUrl": "https://fs.blog/knowledge-project-podcast/greg-brockman",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
-        },
-        {
-          "title": "Claude Code自动模式：多任务并行的关键技巧",
-          "summary": "人们常问我，用好Claude Code的最大技巧是什么。 如今我的头号技巧是：使用自动模式。 自动模式意味着不再有权限提示。它是实现“多Claude并行”的关键构件：启动一个会话，然后在其运行时，并行处理另一个会话。",
-          "sourceUrl": "https://x.com/bcherny/status/2058519809214607704",
-          "sourceName": "X：Boris Cherny (@bcherny)"
-        },
-        {
-          "title": "Pixverse角色设计工作流测试",
-          "summary": "在Pixverse中进行角色设计工作流测试 使用GPT Image 2.0为Lucas创建视觉形象，使用Seedance 2.0制作动画弹跳表演。 从静态概念图到电影级动态效果。 RT + Follow + Reply = 工作流",
-          "sourceUrl": "https://x.com/PixVerse_/status/2058564994669727803",
-          "sourceName": "X：PixVerse (@PixVerse_)"
+          "title": "Harness、Scaffold 与 AI 智能体术语辨析",
+          "summary": "本文旨在厘清 AI 智能体领域中易混淆的关键术语。文章指出，模型（如 Claude、GPT）本身是无记忆、无循环的大语言模型。其行为由“Scaffolding”（行为定义层，如系统提示、工具描述）塑造，而“Harness”（执行层）负责调用模型、处理工具调用与控制循环，是智能体运行的核心。两者结合，模型才能成为智能体。文章以 Claude Code、Codex 为例，说明同一模型搭配不同 Harness 会产生迥异体验，并提出了 Agent = Model + Harness 的常见理解框架。术语尚未统一，本文旨在提供一个实用的心智模型。",
+          "sourceUrl": "https://huggingface.co/blog/agent-glossary",
+          "sourceName": "Hugging Face：Blog（RSS）"
         }
       ]
     }
