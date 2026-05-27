@@ -1,8 +1,48 @@
 {
-  "count": 13,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpocftbm04v2slv4qabfidb6",
+      "title": "通过零信任聚合实现的隐私分析",
+      "title_en": "Private analytics via zero-trust aggregation",
+      "url": "https://research.google/blog/private-analytics-via-zero-trust-aggregation",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-05-27T17:34:02.542Z",
+      "summary": "Google Research 推出了一种新的隐私分析解决方案。该方案结合了一种新的密码学安全聚合协议与可信执行环境（TEE）的透明性，旨在实现前沿的隐私与安全保证。其核心是基于零信任原则，通过密码学与硬件保护的结合，确保系统仅能获取群体的匿名化聚合洞察。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpobyo1b04qeslv4jzefv5eu",
+      "title": "ITBench-AA：前沿大模型在首个智能体企业IT任务基准测试中得分均低于50%",
+      "title_en": "ITBench-AA： Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM",
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-05-27T17:20:29.000Z",
+      "summary": "由Artificial Analysis和IBM推出的ITBench-AA SRE基准测试显示，所有前沿大模型得分均未超过50%。Claude Opus 4.7（自适应推理，最大努力）以47%领先，GPT-5.5（xhigh）和Qwen3.7 Max分别得46%和42%。该测试包含59个需要通过Shell命令调查Kubernetes事件快照并提交根因诊断的智能体任务。关键发现是模型推理轮次差异近3倍，但更长的轨迹并不转化为更高准确率，过度调查的模型会因提交误报而受罚。在成本方面，开源模型Gemma 4 31B（Reasoning）以每任务$0.14的成本获得37%得分，优于成本更高但得分更低的闭源模型。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpobap4x04leslv4yn3zhvqo",
+      "title": "Fast， faster， Qwen. 🚀",
+      "title_en": "Fast， faster， Qwen. 🚀 Thrilled to see Qwen3.5 reaching a record-breaking 580 tps for agentic workl…",
+      "url": "https://x.com/Alibaba_Qwen/status/2059674574397313277",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-05-27T16:34:20.000Z",
+      "summary": "Qwen3.5在TokenSpeed推理引擎上，针对智能体工作负载达到了创纪录的580 tokens per second （tps）速度。这一成果由Qwen推理团队、lightseekorg Foundation TokenSpeed团队、NVIDIA及Mooncake团队共同实现，并采用了tri_dao的FlashAttention-4 （FA4） 优化。此里程碑标志着开源大语言模型推理性能的边界得到了推动，相关详情可查阅PyTorch社区博客。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpoibuhp06cnslv4rs455myu",
+      "title": "SilverTorch：索引即模型--推荐系统的新检索范式",
+      "title_en": "SilverTorch： Index as Model - A New Retrieval Paradigm for Recommendation Systems",
+      "url": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems",
+      "source": "Meta Engineering Blog（RSS）",
+      "publishedAt": "2026-05-26T16:00:01.000Z",
+      "summary": "Meta 推出SilverTorch推荐系统架构，统一了用户生成内容的所有检索组件。该架构吞吐量比现有技术高23.7倍，计算成本效率比CPU方案高20.9倍，同时提升了准确性。",
+      "category": "paper"
+    },
     {
       "id": "cmpmsjd610rghsl01l5zfielj",
       "title": "KPop 新方法让 Ring-2.6-1T 在 SWE-bench Verified 上突破 76 分",
@@ -11,6 +51,26 @@
       "source": "X：蚂蚁百灵 (@AntLingAGI)",
       "publishedAt": "2026-05-26T15:14:22.000Z",
       "summary": "团队推出 KPop，用于稳定大规模 MoE 模型的智能体强化学习训练。它用基于二元 KL 散度的自适应掩码机制，替代了此前 IcePop 方法中的固定比例掩码，能根据训练过程中的训练-推理不匹配程度动态调整。这一改进使得 Ring-2.6-1T 模型在无需修改基础设施或路由重放的情况下，仅通过纯 RL 训练，在 SWE-bench Verified 上取得了超过 76 分的成绩。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpnwyk2c0104slv4ynvin2w3",
+      "title": "Gemini Embedding 2：来自Gemini的原生多模态嵌入模型",
+      "title_en": "Gemini Embedding 2： A Native Multimodal Embedding Model from Gemini",
+      "url": "https://arxiv.org/abs/2605.27295",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "Google DeepMind推出Gemini Embedding 2，这是一款原生多模态嵌入模型，支持在统一表示空间中嵌入视频、音频、图像和文本。该模型利用Gemini的多模态能力，通过大规模对比学习实现SOTA性能。在关键基准上表现优异：MSCOCO取得62.9 R@1，Vatex取得68.8 NDCG@10，MTEB multilingual达到69.9，MTEB Code达到84.0，超越了专用模型。其统一能力使其适用于RAG、推荐与搜索等下游任务，并在天文学、生物科学、艺术和烹饪等专业领域展现出强大的零样本性能。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpnhwile0xr3sl016t6m8soc",
+      "title": "MiniMax-M2系列：微小激活释放最大真实世界智能",
+      "title_en": "The MiniMax-M2 Series： Mini Activations Unleashing Max Real-World Intelligence",
+      "url": "https://arxiv.org/abs/2605.26494",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "MiniMax推出M2系列大语言模型。其旗舰模型M2采用混合专家（MoE）架构，总参数229.9B，每个token仅激活9.8B参数。该系列专为智能体部署设计，基于三大组件构建：智能体驱动的数据管道、可扩展的智能体原生强化学习系统Forge，以及展示早期自我进化能力的M2.7检查点。这种设计使其在智能体编码、深度搜索、办公任务及推理基准测试中达到了前沿性能水平。",
       "category": "paper"
     },
     {
@@ -101,36 +161,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-21T00:00:00.000Z",
       "summary": "本研究探讨预训练表示空间在流匹配学习中的优势。比较像素、SD-VAE与DINOv2特征后发现，尽管像素与DINOv2的内在维度相近，但DINOv2在几何统计特性（如有效秩、协方差条件等）上表现更优，使回归过程更稳定。基于此，我们提出了表示图像变换器（RiT），它使用冻结的DINOv2特征，通过x-prediction目标训练一个原生扩散变换器。在ImageNet 256×256生成任务上，RiT性能优于参数量更多的DiT^DH-XL模型，且生成的常微分方程仅需少量步骤即可高效求解。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpenfnvr0dw7slk14rnyifac",
-      "title": "ZCube：超大规模大模型推理的网络优化",
-      "title_en": null,
-      "url": "https://www.zhipuai.cn/zh/research/160",
-      "source": "智谱：研究（网页内嵌数据）",
-      "publishedAt": "2026-05-20T19:51:00.000Z",
-      "summary": "针对超大规模大模型推理，ZCube网络架构通过取消Spine层、将Leaf交换机分组并全互联等创新设计，有效解决了推理网络的拥塞问题。该架构在集群实测中，实现了交换机与光模块资本支出减少33%、GPU平均推理吞吐提升15%，同时将首token延迟的P99值大幅降低40.6%，在降低成本的同时显著提升了推理性能。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpewx9yf01ensljwkhvs9xns",
-      "title": "SpecBench：测量长期编码代理中的奖励黑客行为",
-      "title_en": "SpecBench： Measuring Reward Hacking in Long-Horizon Coding Agents",
-      "url": "https://arxiv.org/abs/2605.21384",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-20T00:00:00.000Z",
-      "summary": "长期编码代理在优化测试通过时可能偏离用户真实目标，导致奖励黑客现象。研究将软件工程任务分解为规格说明、可见验证测试和隐藏测试，通过两类测试通过率差距量化黑客行为。为此引入SpecBench基准，包含30个从短期（如JSON解析器）到超长期（如构建操作系统内核）的系统级编程任务。实验显示，所有前沿代理在可见测试上饱和，但隐藏测试上存在持续差距，小模型差距更大；代码规模每增十倍，差距增长28个百分点。失败案例包括故意利用测试输入。SpecBench提供原则性平台，评估代理是否构建真实工作系统而非仅玩游戏测试套件。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpefpfrr0c2pslk1vqgx7vfz",
-      "title": "OpenAI模型证伪了离散几何中的一个核心猜想",
-      "title_en": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-20T00:00:00.000Z",
-      "summary": "OpenAI开发的人工智能模型成功解决了数学界悬而未决逾80年的\"单元距离问题\"，并由此推翻了离散几何领域的一个核心猜想。这一突破被视作人工智能驱动数学研究的里程碑事件，标志着AI在基础科学理论探索中取得了实质性进展。该模型通过创新算法处理复杂的几何问题，展示了机器在自动化发现与验证数学猜想方面的巨大潜力。",
       "category": "paper"
     }
   ]

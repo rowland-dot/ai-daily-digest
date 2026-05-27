@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-05-26T22:06:25.549Z",
+  "fetched_at": "2026-05-27T22:17:41.673Z",
   "repos": [
+    {
+      "owner": "harry0703",
+      "name": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 61719,
+      "forks": 9024,
+      "starsToday": 1737
+    },
     {
       "owner": "Lum1104",
       "name": "Understand-Anything",
@@ -8,53 +19,9 @@
       "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 35524,
-      "forks": 2853,
-      "starsToday": 4721
-    },
-    {
-      "owner": "affaan-m",
-      "name": "ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 194210,
-      "forks": 29955,
-      "starsToday": 1912
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 20597,
-      "forks": 3438,
-      "starsToday": 2169
-    },
-    {
-      "owner": "anthropics",
-      "name": "knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 16605,
-      "forks": 1951,
-      "starsToday": 1698
-    },
-    {
-      "owner": "mukul975",
-      "name": "Anthropic-Cybersecurity-Skills",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 10033,
-      "forks": 1181,
-      "starsToday": 871
+      "stars": 39558,
+      "forks": 3150,
+      "starsToday": 4466
     },
     {
       "owner": "hardikpandya",
@@ -63,9 +30,31 @@
       "description": "A skill file for removing AI tells from prose",
       "language": "",
       "languageColor": "",
-      "stars": 4961,
-      "forks": 402,
-      "starsToday": 547
+      "stars": 5618,
+      "forks": 431,
+      "starsToday": 664
+    },
+    {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 195945,
+      "forks": 30142,
+      "starsToday": 2062
+    },
+    {
+      "owner": "anthropics",
+      "name": "knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 17214,
+      "forks": 2015,
+      "starsToday": 695
     },
     {
       "owner": "Leonxlnx",
@@ -74,42 +63,42 @@
       "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 21380,
-      "forks": 1727,
-      "starsToday": 1440
+      "stars": 24068,
+      "forks": 1855,
+      "starsToday": 2715
     },
     {
-      "owner": "DigitalPlatDev",
-      "name": "FreeDomain",
-      "url": "https://github.com/DigitalPlatDev/FreeDomain",
-      "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 167191,
-      "forks": 3074,
-      "starsToday": 1127
+      "owner": "p-e-w",
+      "name": "heretic",
+      "url": "https://github.com/p-e-w/heretic",
+      "description": "Fully automatic censorship removal for language models",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 21983,
+      "forks": 2346,
+      "starsToday": 219
     },
     {
-      "owner": "jellyfin",
-      "name": "jellyfin",
-      "url": "https://github.com/jellyfin/jellyfin",
-      "description": "The Free Software Media System - Server Backend & API",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 52349,
-      "forks": 4870,
-      "starsToday": 91
+      "owner": "shiyu-coder",
+      "name": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 26854,
+      "forks": 4654,
+      "starsToday": 402
     },
     {
-      "owner": "Axorax",
-      "name": "awesome-free-apps",
-      "url": "https://github.com/Axorax/awesome-free-apps",
-      "description": "Curated list of the best free apps for PC and mobile",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 5202,
-      "forks": 264,
-      "starsToday": 738
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 10898,
+      "forks": 1249,
+      "starsToday": 885
     },
     {
       "owner": "twentyhq",
@@ -118,42 +107,86 @@
       "description": "The open alternative to Salesforce, designed for AI.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 46806,
-      "forks": 6646,
-      "starsToday": 237
+      "stars": 47293,
+      "forks": 6715,
+      "starsToday": 520
     },
     {
-      "owner": "Open-Dev-Society",
-      "name": "OpenStock",
-      "url": "https://github.com/Open-Dev-Society/OpenStock",
-      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+      "owner": "Chachamaru127",
+      "name": "claude-code-harness",
+      "url": "https://github.com/Chachamaru127/claude-code-harness",
+      "description": "Claude Code Dedicated Development Harness - Achieving High-Quality Development Through an Autonomous Plan→Work→Review Cycle",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 1788,
+      "forks": 197,
+      "starsToday": 143
+    },
+    {
+      "owner": "DigitalPlatDev",
+      "name": "FreeDomain",
+      "url": "https://github.com/DigitalPlatDev/FreeDomain",
+      "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 169033,
+      "forks": 3189,
+      "starsToday": 2223
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 209442,
+      "forks": 18658,
+      "starsToday": 1680
+    },
+    {
+      "owner": "byoungd",
+      "name": "English-level-up-tips",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "language": "",
+      "languageColor": "",
+      "stars": 46413,
+      "forks": 4856,
+      "starsToday": 1133
+    },
+    {
+      "owner": "iii-hq",
+      "name": "iii",
+      "url": "https://github.com/iii-hq/iii",
+      "description": "Effortlessly compose, extend, and observe every service in real-time for the first time ever.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 16816,
+      "forks": 1103,
+      "starsToday": 427
+    },
+    {
+      "owner": "Axorax",
+      "name": "awesome-free-apps",
+      "url": "https://github.com/Axorax/awesome-free-apps",
+      "description": "Curated list of the best free apps for PC and mobile",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 5832,
+      "forks": 292,
+      "starsToday": 728
+    },
+    {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 12036,
-      "forks": 1625,
-      "starsToday": 128
-    },
-    {
-      "owner": "thedotmack",
-      "name": "claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 78581,
-      "forks": 6761,
-      "starsToday": 319
-    },
-    {
-      "owner": "st-tech",
-      "name": "ppf-contact-solver",
-      "url": "https://github.com/st-tech/ppf-contact-solver",
-      "description": "A contact solver for physics-based simulations involving 👚 shells, 🪵 solids and 🪢 rods.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 3441,
-      "forks": 246,
-      "starsToday": 207
+      "stars": 40186,
+      "forks": 4046,
+      "starsToday": 56
     }
   ]
 }

@@ -1,8 +1,108 @@
 {
-  "count": 48,
+  "count": 50,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpogcyqy05uoslv44xoll1r2",
+      "title": "Cognition成为全球最大独立智能体实验室",
+      "title_en": "cognition is now the largest independent agent lab in the world. take the 200% utilization that ever…",
+      "url": "https://x.com/swyx/status/2059717021944926238",
+      "source": "X：swyx (@swyx)",
+      "publishedAt": "2026-05-27T19:23:00.000Z",
+      "summary": "Cognition宣布已成为全球最大的独立智能体实验室。公司完成超10亿美元融资，估值达260亿美元，由Lux Capital、General Catalyst等领投。其企业使用量自年初增长超10倍，年化收入增至4.92亿美元。Cognition于两年前推出Devin，定位为首个AI软件工程师。公司强调其拥有多项领先优势，包括首个编码智能体、顶级代码审查能力等，并得到了Peter Thiel的重大投资。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpoci9gi04x9slv406d8w5uz",
+      "title": "黄仁勋展示英伟达台湾新园区",
+      "title_en": "Jensen Huang presents new Taiwan campus. Nvidia plans to invest around $150 bn a year in Taiwan， …",
+      "url": "https://x.com/rohanpaul_ai/status/2059689400267939925",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-05-27T17:33:14.000Z",
+      "summary": "黄仁勋展示了新的台湾园区。\n英伟达计划每年在台湾投资约1500亿美元。\n就在竞争对手AMD宣布将向台湾AI领域投资超过100亿美元一周后。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpocrldo050lslv45vxk0w5y",
+      "title": "Replit入选Redpoint 2026 InfraRed 100榜单",
+      "title_en": "Replit has been named to @Redpoint's 2026 InfraRed 100. A list of the companies building what AI ru…",
+      "url": "https://x.com/Replit/status/2059688584899154134",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-05-27T17:30:00.000Z",
+      "summary": "Replit 被列入 @Redpoint 的 2026 InfraRed 100 榜单。\n这是一份构建 AI 运行基础设施的公司名单。很荣幸能入选，与 Stripe、Snowflake 和 HashiCorp 等往届入选者并列。\n致每一位在 Replit 上发布产品的构建者：这份荣誉属于你们。\nhttps：//www.redpoint.com/infrared/report/",
+      "category": "industry"
+    },
+    {
+      "id": "cmpo1uaxp028dslv47o305cfh",
+      "title": "教皇没对AGI上头",
+      "title_en": "The Pope isn't AGI-pilled",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-05-27T12:00:00.000Z",
+      "summary": "教皇 Leo XIV 发布题为《Magnifica Humanitas》的通谕，警告人工智能的使用绝非纯粹技术问题，当其进入影响人类生活的过程时，便触及权利、机会、地位与自由。通谕发布时，Anthropic 联合创始人 Christopher Olah 出席。文件引发了科技界内外的广泛反应。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpomepbx07ckslv4qmr6x0hq",
+      "title": "思科与OpenAI携手Codex重新定义企业工程",
+      "title_en": "Cisco and OpenAI redefine enterprise engineering with Codex",
+      "url": "https://openai.com/index/cisco",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-27T11:00:00.000Z",
+      "summary": "思科正与OpenAI合作，利用Codex重新定义企业工程实践。此次合作旨在帮助思科扩展AI原生开发能力、加速其AI Defense安全工作，并实现缺陷修复流程的自动化。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpnnrtb10z7ksl01i08epdgv",
+      "title": "阿里云入选Omdia智能体AI市场雷达领导者",
+      "title_en": "Alibaba Cloud Has Been Recognized as a Leader in Omdia's Agentic AI Market Radar. Omdia highlights A…",
+      "url": "https://x.com/alibaba_cloud/status/2059509714854007181",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-27T05:39:14.000Z",
+      "summary": "阿里云在Omdia的智能体AI市场雷达中被评为领导者。Omdia强调了阿里云在每一层的全栈能力，认可其是首个将整个平台围绕智能体范式进行构建的云服务商。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpnhpsg40xpgsl01q9fjtegp",
+      "title": "我国将加快研究推进人工智能健康发展综合性立法、低空经济立法等",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/758.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-27T02:54:29.000Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpnf5uil0x10sl012miu1575",
+      "title": "阿里云成为PyTorch基金会白金会员",
+      "title_en": "Thrilled to join the @PyTorch Foundationas a Platinum Member！ Excited for what we'll build together….",
+      "url": "https://x.com/alibaba_cloud/status/2059453607075004835",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-27T01:56:17.000Z",
+      "summary": "阿里云宣布以白金会员身份加入PyTorch基金会。作为AI基础设施全球领导者，阿里云是开源模型家族Qwen的缔造方，已在多样化硬件上大规模运行PyTorch，将为社区带来生产级工程经验。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpndfb110wljsl01cqumtfgw",
+      "title": "消息称高通与字节跳动达成 AI ASIC 芯片合作，采购量在数百万颗级别",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/955/674.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-27T01:12:31.000Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpocoz6704yxslv4wth0r0jw",
+      "title": "2026年选举信息与保障",
+      "title_en": "Election information and safeguards in 2026",
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "在2026年全球选举临近之际，通过帮助公众获取选举信息、支持网络防御者以及提升人工智能透明度这三方面的努力，来为选举提供保障。",
+      "category": "industry"
+    },
     {
       "id": "cmpn05f050tdcsl01mkpij1a9",
       "title": "据报道Claude Mythos以\"巧妙简洁的证明\"解决了OpenAI里程碑式的Erdős问题",
@@ -91,6 +191,16 @@
       "source": "X：Kim (@kimmonismus)",
       "publishedAt": "2026-05-25T19:42:58.000Z",
       "summary": "据报道，苹果为改造下一代Siri，正使用一个定制版、参数规模达1.2T的Google大模型作为其核心，这显著大于预估约300B参数的Gemini 3.5 Flash。该模型将驱动Siri的部分功能，其中简单查询预期会在本地设备运行。苹果面临的关键挑战是确保该大模型能够足够快速地响应日常问题。此外，下个月AI领域预计将有多项重要发布，包括WWDC上的Apple Intelligence与Gemini整合、GPT-5.6、可能的Sonnet 4.8/Opus 4.8，以及已确认的Gemini 3.5 Pro。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpn9vusg0vq6sl0195qmighr",
+      "title": "Anthropic任命KiYoung Choi为韩国代表董事",
+      "title_en": "Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening",
+      "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-25T16:00:00.000Z",
+      "summary": "Anthropic宣布任命KiYoung Choi为韩国代表董事，以支持其即将在首尔开设的办公室。根据Anthropic的经济指数，韩国是Claude.ai全球最活跃的市场之一，其使用率超过人口规模预期的3.5倍，主要用于技术和创意领域。KiYoung Choi此前曾担任Snowflake韩国区总经理，在Google Cloud、Adobe等公司拥有超过30年的科技行业领导经验。他将在韩国领导市场战略，支持本地企业和初创公司应用Claude，例如法律科技公司Law&Company及韩国电信巨头SK Telecom均已在使用Claude构建产品。",
       "category": "industry"
     },
     {
@@ -391,96 +501,6 @@
       "source": "X：Elon Musk (@elonmusk, xAI)",
       "publishedAt": "2026-05-20T22:35:20.000Z",
       "summary": "正如最近与@AnthropicAI扩大合作所展示的，@SpaceX正在大规模提供AI算力服务。\n\n我们正在与其他公司进行类似合作的讨论。\n\n随着时间的推移，特别是通过轨道数据中心，我们预计将以极高的规模提供AI服务。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpejljy20d0uslk16n56adrz",
-      "title": "英伟达 2027 财年第一财季归母净利润 583.21 亿美元，同比增长 211%",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/088.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-20T20:25:27.000Z",
-      "summary": "英伟达2027财年第一季度业绩创新高，营业总收入达816.15亿美元，同比增长85%。净利润为583.21亿美元，同比激增211%。数据中心业务是核心增长引擎，营收达752亿美元，同比大增92%。公司毛利率提升至74.9%，并宣布了800亿美元股票回购及提高季度股息。展望第二季度，公司预计营收为910亿美元。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpegqt3n0cbsslk168f7p6g7",
-      "title": "Meta万人重组：裁员与AI转型并举",
-      "title_en": "CNBC： Meta starts major cuts with 8，000 layoffs as AI shakes the tech giant. Along with the layoffs…",
-      "url": "https://x.com/rohanpaul_ai/status/2057177976492720363",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-20T19:13:44.000Z",
-      "summary": "Meta启动大规模裁员，计划削减约8000个岗位。与此同时，约7000名员工将被调配至新的AI相关职位。此次调整并非单纯的削减成本，更是公司围绕AI进行内部结构重塑的关键举措，重点将资源集中于AI基础设施、基础模型的构建以及AI技术的商业化，旨在打造从模型训练、产品开发到实现盈利的完整链条。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpeejfgx0bt3slk14fyeulgg",
-      "title": "Gemini与XPRIZE联合举办全球黑客松",
-      "title_en": "Build with Gemini to change the world 🌍 We're launching a global hackathon with @xprize to solve r…",
-      "url": "https://x.com/googleaidevs/status/2057166550243872920",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-05-20T18:28:20.000Z",
-      "summary": "用Gemini构建，改变世界🌍\n\n我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。\n\n点击加入：https：//www.geminixprize.com/",
-      "category": "industry"
-    },
-    {
-      "id": "cmpea57r90arpslk1o2xw1hnw",
-      "title": "谷歌的人工智能正遭到操纵。这家搜索巨头正在悄然反击",
-      "title_en": null,
-      "url": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-20T16:20:07.607Z",
-      "summary": "谷歌的AI系统正面临被操纵的风险。为应对这一挑战，这家科技巨头已悄然启动防御措施，以保护其AI生成内容的结果免受恶意干扰。此举旨在确保搜索和AI服务的可靠性与可信度，反映了当前人工智能安全领域日益增长的对抗性问题。谷歌在未公开宣传的情况下，正在通过技术手段加强对其AI系统的防护。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpdxbe1707r9slk16ubu3l4a",
-      "title": "Qwen 2026大会：AI原生云架构蓝图发布",
-      "title_en": "Qwen Conference 2026： The Keynote Agenda AI-Native Cloud， Agent Native Cloud architectures， the Fut…",
-      "url": "https://x.com/alibaba_cloud/status/2057046828692934749",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-20T10:32:36.000Z",
-      "summary": "Qwen Conference 2026：主题演讲议程\n\nAI原生云、Agent原生云架构、推理的未来，以及多模态视觉技术发布。没有冗余内容，只有面向全球规模的工程蓝图。\n\n注册：https：//click.qwencloud.com/m/20000000190/",
-      "category": "industry"
-    },
-    {
-      "id": "cmpdy5tth07ytslk1ca1x16rs",
-      "title": "投资超 600 亿美元，孙正义豪赌 OpenAI 引发内部质疑\"迷信奥尔特曼如追星\"",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/021.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-20T10:15:47.000Z",
-      "summary": "软银对OpenAI的投资承诺已超600亿美元，引发内部对孙正义过度信任其创始人奥尔特曼的担忧。部分高管质疑将巨额资本集中于单一公司存在风险，且软银虽持股超10%却无董事会席位，缺乏决策影响力。同时，Anthropic等竞争对手的崛起加剧了对OpenAI领先地位的挑战。尽管软银表示对OpenAI抱有\"高度信心\"，并已从中获得账面收益，但其股价下跌及信用展望被下调反映出市场对其豪赌的顾虑。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpdrp1y406erslk17f3hcrfi",
-      "title": "欧盟委员会发布《欧盟人工智能法》高风险AI系统分类指导草案并开启公众咨询",
-      "title_en": "EU： Commission publishes draft guidelines on classifying high-risk AI systems under Article 6 of the EU AI Act and opens consultation The European Commission published draft guidelines for classifying high-risk AI systems under the EU AI Act and opened a consultation period for stakeholder input.",
-      "url": "https://www.dataguidance.com/news/eu-commission-publishes-draft-guidelines-classifying",
-      "source": "DataGuidance：Artificial Intelligence（网页）",
-      "publishedAt": "2026-05-20T07:53:27.780Z",
-      "summary": "欧盟委员会于2026年5月19日发布了关于《欧盟人工智能法》第六条项下高风险AI系统分类的指导草案。该草案旨在为AI系统的提供商、部署者及市场监管机构提供明确的分类标准，以确保在欧盟范围内执法的一致性。分类主要依据AI系统的预期用途，例如作为受监管产品的组件或用于特定高风险场景。草案也规定了部分豁免条件，例如仅执行辅助性任务时可能不被视为高风险。公众咨询期至206月23日。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpdjg8r504geslk199lfb9y0",
-      "title": "OpenAI向所有YC创业公司提供200万美元API投资",
-      "title_en": "openai offering to invest $2M in API credits in every @ycombinator startup in the current batch. com…",
-      "url": "https://x.com/gdb/status/2056948285038887255",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-05-20T04:01:02.000Z",
-      "summary": "OpenAI宣布向Y Combinator当前批次的每家创业公司提供价值200万美元的API信用额度投资，以换取股权。此举旨在为初创公司提供AI算力资源，支持下一代创新。这让人联想到Sam Altman在YC合伙人时期，Yuri Milner向每家创业公司提供投资的先例。OpenAI希望通过此举释放创业者潜力，推动AI应用创新。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpdgzagl03tyslk1ekr6memz",
-      "title": "消息称微软内部示警：GitHub 面临生存级风险，AI 编程工具削弱托管必要性",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/952/645.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-20T02:39:19.000Z",
-      "summary": "微软内部发出警告，称其代码托管平台GitHub正面临\"生存级风险\"。主要原因是Cursor、Claude Code等AI编程助手兴起，改变了开发者工作流，削弱了持续将代码上传至GitHub的必要性。为统一工具链并控制成本，微软已要求部分团队在2026年6月底前停止试用Claude Code，转而使用自有工具GitHub Copilot CLI。同时，OpenAI曾考虑自建替代平台，也加剧了对GitHub地位的潜在威胁。",
       "category": "industry"
     }
   ]

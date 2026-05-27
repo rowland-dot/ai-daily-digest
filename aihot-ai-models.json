@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -101,56 +101,6 @@
       "source": "X：腾讯混元 (@TencentHunyuan)",
       "publishedAt": "2026-05-21T08:52:32.000Z",
       "summary": "腾讯正式开源Hy-MT2多语言翻译模型，支持33种语言间的无缝互译。其7B与30B-A3B版本在开源模型中达到最先进的翻译性能，超越了许多参数规模大数十倍的模型。更具突破性的是，1.8B轻量级版本性能超越微软等主流商业API，并凭借腾讯AngelSlim 1.25-bit极量化技术，仅需440MB存储空间，即可在主流手机芯片上本地运行，推理速度较前代提升1.5倍，显著降低了高质量AI翻译的部署门槛。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpfu0rza09nbsljwx1gui6ol",
-      "title": "Aleph 2.0 与 Edit Studio",
-      "title_en": "Aleph 2.0 & Edit Studio",
-      "url": "https://app.runwayml.com/generate?mode=edit",
-      "source": "Runway：Changelog（网页）",
-      "publishedAt": "2026-05-20T16:00:00.000Z",
-      "summary": "正式发布 Aleph 2.0 及配套的 Edit Studio 创作工具。此次更新实现了创作流程的全面整合，将内容生成、编辑与后期制作集中于统一平台。新版本显著优化了多模态内容的处理效率，并提供了从构思到成品的一站式解决方案，旨在为创作者提供更流畅、集成的数字内容制作体验。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpe8vto10ah2slk1zwrd61c2",
-      "title": "Stability AI 推出音频模型 Stability Audio 3.0，可生成最长 6 分钟专业级歌曲",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/086.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-20T15:42:09.000Z",
-      "summary": "Stability AI 推出 Stability Audio 3.0 音频生成模型家族，包含四款不同规格模型，参数从45900万到27亿。小型模型专注设备端运行，可本地生成两分钟以内的音频；中型和大型模型支持创作超过6分20秒的完整音乐，",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpdxscye07wxslk1wdfmza4f",
-      "title": "SenseNova U1：同时思考文本与图像的AI",
-      "title_en": "Turn your ideas into visuals that spark stories 🧨",
-      "url": "https://x.com/SenseTime_AI/status/2057049434782097851",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-05-20T10:42:58.000Z",
-      "summary": "将你的想法转化为激发故事的视觉画面 🧨\n\n【引用 @Adamaestr0_】：大多数AI工具可以写作或生成图像。\n\n但这个能同时做这两件事。\n\n向你介绍 SenseNova U1。\n一个能同时思考文本和图像的AI。\n\n这改变了一切 🧵",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpdkkt0104q4slk1htr3h1ol",
-      "title": "Kling AI推出全球首个原生4K视频生成模型",
-      "title_en": "http：//x.com/i/article/2055141424790970368",
-      "url": "https://x.com/Kling_ai/status/2056950317712101599",
-      "source": "X：可灵 Kling AI (@Kling_ai)",
-      "publishedAt": "2026-05-20T04:09:06.000Z",
-      "summary": "4月23日，Kling AI正式推出全球首个原生4K视频生成模型，专为专业内容创作设计。该功能支持一键生成真4K画质视频，显著提升画面细节与制作效率。模型已获得好莱坞团队、动画工作室等多方采用。好莱坞制片人指出，这是其工作流中首个使用的原生4K基础模型；Wonder Studios强调，原生4K从底层生成避免了传统放大技术的角色变形问题，保持了画面一致性；动画导演则认为，该模型在保留艺术色调与复杂特效纹理方面优于同类产品。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpdgqw1n03smslk1jf4jiwce",
-      "title": "Qwen3.7：智能体前沿",
-      "title_en": "Qwen3.7： The Agent Frontier",
-      "url": "https://qwen.ai/blog?id=qwen3.7",
-      "source": "Qwen：Blog Retrieval（API）",
-      "publishedAt": "2026-05-20T02:00:00.000Z",
-      "summary": "Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。",
       "category": "ai-models"
     }
   ]

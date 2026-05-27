@@ -1,8 +1,138 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5MjcyMDg5MDAwLCJpIjoiY21wZHhiZTE3MDdyYXNsazE3bnB6ZzlyNSJ9",
+  "nextCursor": "eyJhIjoxNzc5MzIxNjAwMDAwLCJpIjoiY21wZnQxcGkwMDlmdXNsandsNnN5NjluYSJ9",
   "items": [
+    {
+      "id": "cmpofemy505maslv4n15rpet7",
+      "title": "Web 更新",
+      "title_en": "Web Updates",
+      "url": "https://updates.midjourney.com/web-updates-5",
+      "source": "Midjourney：Updates（RSS）",
+      "publishedAt": "2026-05-27T18:44:53.000Z",
+      "summary": "对话模式在文本和语音输入方面进行了改进。语音会话开始时，可访问用户的图像提示、风格参考、侧边栏设置和最近任务。图像提示功能现可从托盘和侧边栏直接使用。在语音提交过程中，托盘中的图像将保持不变，直至用户手动移除。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpoevkk105k2slv4iklwg0qm",
+      "title": "OpenAI产品支持私有MCP服务器安全连接",
+      "title_en": "Private MCP servers 🤝 OpenAI products Your team can keep MCP servers inside your network while Cha…",
+      "url": "https://x.com/OpenAIDevs/status/2059703536825565499",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-05-27T18:29:25.000Z",
+      "summary": "您的团队可以在内部网络中保留MCP服务器，同时ChatGPT、Codex和Responses API通过仅出站HTTPS进行连接。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpodsy24059vslv40tqd294a",
+      "title": "OpenCode与MiMo V2.5限时免费开放",
+      "title_en": "OpenCode x MiMo V2.5 - Free for a limited time 1M context • reasoning • text • image",
+      "url": "https://x.com/opencode/status/2059696100626297225",
+      "source": "X：opencode (@opencode)",
+      "publishedAt": "2026-05-27T17:59:52.000Z",
+      "summary": "OpenCode x MiMo V2.5 - 限时免费\n\n1M 上下文 • 推理 • 文本 • 图像",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpoddncn053yslv428au39s3",
+      "title": "开源FastVideo Dreamverse实时视频生成工具",
+      "title_en": "🚀Generate a 30-second 1080p video in just 7 seconds！ We're open-sourcing FastVideo Dreamverse： rea…",
+      "url": "https://x.com/haoailab/status/2059695648103112946",
+      "source": "X：Sky Computing Lab (@haoailab)",
+      "publishedAt": "2026-05-27T17:58:04.000Z",
+      "summary": "🚀仅需7秒即可生成30秒1080p视频！\n\n我们开源了FastVideo Dreamverse：基于单张NVIDIA B200 GPU和LTX-2模型，实现实时视频生成的氛围引导工具。\n\nRepo： https：//github.com/hao-ai-lab/FastVideo/tree/main/apps/dreamverse\nBlog： https：//haoailab.com/blogs/fastvideo-dreamverse-release/",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpocm9by04ymslv4agum9edi",
+      "title": "Google Pay 最新更新",
+      "title_en": "The latest updates to Google Pay",
+      "url": "https://developers.googleblog.com/the-latest-updates-to-google-pay",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-05-27T17:39:01.813Z",
+      "summary": "Google Pay 正向\"智能体商务\"演进，推出了通用商务协议和新的 MCP 服务器，允许 AI 智能体管理集成与分析趋势。Android 平台更新引入了动态回调以支持快速结账，并通过 WebView 将支付功能扩展至社交媒体应用。此外，平台还推出了跨设备生物认证和新的交易信号，旨在帮助商家减少流程摩擦。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpoa5pky04a6slv42pg4puzp",
+      "title": "Grok编程智能体登陆Kilo IDE平台",
+      "title_en": "Use your SuperGrok or X Premium+ subscription in @kilocode. Try grok-build-0.1 for high speed and …",
+      "url": "https://x.com/xai/status/2059666227115819149",
+      "source": "X：xAI (@xai)",
+      "publishedAt": "2026-05-27T16:01:09.000Z",
+      "summary": "在 @kilocode 中使用您的 SuperGrok 或 X Premium+ 订阅。\n\n尝试 grok-build-0.1，享受高速和智能体编程智能，可在 Kilo IDE 扩展或 CLI 中使用。\n\nhttps：//x.ai/news/grok-kilocode",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpo929df03ztslv4z9v93608",
+      "title": "Perplexity开源Unigram分词器降低CPU占用",
+      "title_en": "We're open-sourcing the Unigram tokenizer we rebuilt to reduce CPU utilization by 5-6x. Small reran…",
+      "url": "https://x.com/perplexity_ai/status/2059664738087469511",
+      "source": "X：Perplexity (@perplexity_ai)",
+      "publishedAt": "2026-05-27T15:55:14.000Z",
+      "summary": "我们开源了重新构建的Unigram分词器，可将CPU占用降低5-6倍。\n小型重排序器和嵌入模型在GPU上运行时间仅为个位数毫秒，使得CPU分词成为总延迟的重要组成部分。\nhttp：//github.com/perplexityai/pplx-garden",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpo8ubaz03ycslv4xm8w369g",
+      "title": "Claude Marketplace 新增五家合作伙伴",
+      "title_en": "New in the Claude Marketplace： @augmentcode， @boltdotnew， @coderabbitai， @hebbia， and @WeAreLegora. …",
+      "url": "https://x.com/claudeai/status/2059662933924123044",
+      "source": "X：Claude (@claudeai)",
+      "publishedAt": "2026-05-27T15:48:04.000Z",
+      "summary": "Claude Marketplace 新增成员：@augmentcode、@boltdotnew、@coderabbitai、@hebbia 和 @WeAreLegora。\n\n您现有的 Anthropic 消费承诺可用于购买其 Claude 驱动的产品。\n\n了解更多：http：//claude.com/platform/marketplace",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpo7308x03j5slv44eeuz2v1",
+      "title": "Krea 2 API发布，支持多平台与智能体",
+      "title_en": "today， we're releasing the API for Krea 2. now available in platforms like @fal or @ComfyUI， throu…",
+      "url": "https://x.com/krea_ai/status/2059650622203515143",
+      "source": "X：Krea AI (@krea_ai)",
+      "publishedAt": "2026-05-27T14:59:09.000Z",
+      "summary": "今天，我们发布了 Krea 2 的 API。\n现已在 @fal 或 @ComfyUI 等平台可用，通过 @NousResearch 的 Hermes 等智能体使用，并全面支持 Claude、Codex 或 OpenClaw。\n了解如何设置 👇",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpo55l4u030yslv4mwofhkbw",
+      "title": "Runway 推出 Model Context Protocol 服务器",
+      "title_en": "Introducing Runway MCP",
+      "url": "https://runwayml.com/news/mcp",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-05-27T14:09:52.649Z",
+      "summary": "Runway 正式推出 Runway MCP 服务器，允许任何兼容 MCP 的 AI 智能体（如 Claude、ChatGPT、Cursor）在对话界面中直接生成图像与视频，无需切换工作流。该服务器接入了 Runway 最新的多款 SOTA 模型，包括 Gen-4.5、Seedance 2.0、GPT Image 2、Kling 3.0 及 Nano Banana Pro。其应用场景涵盖为产品制作营销视频、批量生成网站视觉素材、创作角色广告以及在应用开发中集成视觉内容。用户设置简便，通过 runwayml.com/mcp 添加服务器并登录现有 Runway 账户即可使用，无需单独申请 API 密钥。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpnyfa3i01dmslv48x2rbk90",
+      "title": "Qoder平台限时半价使用Qwen3.7-Max模型",
+      "title_en": "🙌🙌",
+      "url": "https://x.com/Alibaba_Qwen/status/2059586373456380225",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-05-27T10:43:51.000Z",
+      "summary": "🙌🙌\n\n【引用 @qoder_ai_ide】：Qwen3.7-Max，半价。\n\n从今天起，Qwen3.7-Max--Qwen（Qwen）家族的最新旗舰模型--在Qoder上半价提供。限时活动。\n\n新用户？你每天还能获得100次免费模型调用。自动应用，无需领取，无需开关。\n桌面端、JetBrains插件、CLI、QoderWork、QoderWake--全部覆盖。\n\n现在正是用它处理难题的好时机。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpne4ihk0wscsl012kwlngba",
+      "title": "Claude Code v2.1.152 更新发布",
+      "title_en": "v2.1.152",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-05-27T01:30:59.000Z",
+      "summary": "Claude Code 发布 v2.1.152 版本更新。核心改进包括：`/code-review --fix` 现在会将审查建议直接应用于工作目录；技能与斜杠命令支持通过 frontmatter 的 `disallowed-tools` 移除模型工具；新增 `/reload-skills` 命令可不重启会话重新扫描技能目录；`SessionStart` 钩子现可返回 `reloadSkills： true` 重新扫描技能，并可通过 `hookSpecificOutput.sessionTitle` 设置会话标题；新增 `MessageDisplay` 钩子事件以变换或隐藏助手消息。其他更新涉及插件市场管理、主模型不可用时自动切换至 `--fallback-model`、会话用量统计优化等。同时修复了终端样式退化、沙箱警告显示、思考摘要、MCP 服务器去重、远程会话连接及多种会话卡顿问题。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpo5j5lm034mslv4qv9h13v8",
+      "title": "通过万亿参数与 Hub Bucket 实现增量权重同步：TRL 中的增量权重同步",
+      "title_en": "Shipping a Trillion Parameters With a Hub Bucket： Delta Weight Sync in TRL",
+      "url": "https://huggingface.co/blog/delta-weight-sync",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "本文标题涉及 Hugging Face TRL 框架中一项具体的增量权重同步技术。正文重申了 Hugging Face 的核心使命，即致力于通过开源和开放科学，来推动人工智能的进步与普及。",
+      "category": "ai-products"
+    },
     {
       "id": "cmpn5rnj30uqtsl016bosj7li",
       "title": "Claude Code推出安全漏洞识别插件",
@@ -51,6 +181,16 @@
       "source": "X：xAI (@xai)",
       "publishedAt": "2026-05-25T18:09:33.000Z",
       "summary": "Grok Build 现已面向所有 SuperGrok 和 X Premium+ 用户推出 Beta 版。\n使用 Plan Mode，通过 Imagine 创建图像和视频，并使用 CLI 构建自动化或编排器。\n访问 http：//x.ai/cli 开始使用。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpnd3ing0wilsl01bzc4xaky",
+      "title": "Code w/ Claude 伦敦活动：重塑开发体验",
+      "title_en": "Code w/ Claude London 2026： Rethinking how we build",
+      "url": "https://claude.com/blog/code-w-claude-london-2026-rethinking-how-we-build",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-05-25T16:00:00.000Z",
+      "summary": "在Code w/ Claude 伦敦活动上，Anthropic 宣布了 Claude Managed Agents 的两项新能力：自托管沙箱（公开测试版）和 MCP 隧道（研究预览）。这两项功能使 AI 智能体的工具执行环境与企业私有网络内的 MCP 服务器连接均可运行在客户自有基础设施或指定托管服务商处。活动还介绍了如何通过 Claude Code、优化思维预算以及模型努力级别来提升开发体验。目前，包括 Spotify、Base44 和 Legora 在内的客户已在使用这些新功能。",
       "category": "ai-products"
     },
     {
@@ -361,146 +501,6 @@
       "source": "xAI：News（网页）",
       "publishedAt": "2026-05-21T00:00:00.000Z",
       "summary": "xAI宣布，其SuperGrok或X Premium订阅用户现可在开源编程工具OpenCode中使用Grok模型。OpenCode提供终端或独立桌面应用两种形式，用户连接Grok账户后，即可调用驱动xAI终端编程代理的Grok Build模型进行开发。该集成通过xAI Grok OAuth实现认证接入，官方表示未来将推出更多开源代理及集成方案。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpeq13j70ejcslk16skz7ozw",
-      "title": "腾讯张军官宣操作系统层级 AI 助手\"马维斯\"正式上工，Windows、Mac、安卓端同步上线",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/096.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-20T23:28:17.000Z",
-      "summary": "腾讯于5月21日发布了操作系统层级AI助手\"马维斯\"，支持Windows、Mac和安卓平台同步上线。该助手具备文档归类解析、图片智能识别处理、系统维护等功能，并强调与操作系统深度集成，可调度不同模型处理任务，部分功能可在离线状态下使用。腾讯表示\"马维斯\"能完成市面主流Agent的大部分工作，并具备桌面操控手机应用等能力。这是继3月WorkBuddy和\"龙虾\"产品矩阵后，腾讯推出的又一AI助手产品。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpekzpha0dc3slk1bphli6rh",
-      "title": "Google Stitch更新：AI设计助手实现全流程构建",
-      "title_en": "🪡 @stitchbygoogle is your agentic AI design partner. Move from an idea to a live mobile and web ap…",
-      "url": "https://x.com/googleaidevs/status/2057209295763300785",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-05-20T21:18:11.000Z",
-      "summary": "Google推出了其AI设计伙伴Stitch的多项重要更新。新功能支持实时流式构建设计，允许用户在不中断流程的情况下直接进行编辑和互动反馈。Stitch现已能够导入现有代码库或Design.md文件，基于实际生产组件进行设计以保持品牌一致性。同时，工具新增了动态界面生成功能，并可将设计项目直接导出为可分享的线上URL，简化了从原型到生产的部署流程。该工具现已面向全球用户开放。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpekd9070d8islk1h15tb7oi",
-      "title": "OpenClaw 2026.5.19版本发布",
-      "title_en": "OpenClaw 2026.5.19 🦞 📱 Android Talk Mode goes realtime 🍎 Mac Settings feel much cleaner 🔐 xAI l…",
-      "url": "https://x.com/openclaw/status/2057202955581809093",
-      "source": "X：OpenClaw (@openclaw)",
-      "publishedAt": "2026-05-20T20:53:00.000Z",
-      "summary": "OpenClaw 2026.5.19 🦞\n\n📱 Android Talk Mode 实现实时化\n🍎 Mac 设置界面更清爽\n🔐 xAI 登录支持无头模式\n🧵 Telegram 话题功能更稳定\n\n大版本更新，简短公告。\nhttps：//github.com/openclaw/openclaw/releases/tag/v2026.5.19",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpeh7y5x0chnslk1zflfjrix",
-      "title": "V8.1新增反向提示功能",
-      "title_en": "Small update today. Many requested a \"anti-prompting\" feature for V8 models （which existed in previo…",
-      "url": "https://x.com/midjourney/status/2057184157869199429",
-      "source": "X：Midjourney (@midjourney)",
-      "publishedAt": "2026-05-20T19:38:18.000Z",
-      "summary": "今日小幅更新。许多用户要求为V8模型恢复\"反向提示\"功能（旧版本已有），我们称之为--no标志。该功能现已在V8.1中上线！如果您想从图像中排除某些元素（例如人物），可以尝试使用--no people。玩得开心！",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpeh0uf00ceislk1reo8ajbd",
-      "title": "GPT-5即将发布",
-      "title_en": "Gone shipping 🚢",
-      "url": "https://x.com/ChatGPTapp/status/2057178633249394819",
-      "source": "X：ChatGPT (@ChatGPTapp)",
-      "publishedAt": "2026-05-20T19:16:21.000Z",
-      "summary": "GPT-5即将发布 🚢",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpefwk7h0c4bslk1nhzkfwqz",
-      "title": "MiniMax语音模型新增600余种声音",
-      "title_en": "600+ new voices powered by MiniMax Speech 2.8 Turbo are now on Together AI @togethercompute 🎙️✨ Tr…",
-      "url": "https://x.com/MiniMax_AI/status/2057177048356180296",
-      "source": "X：MiniMax (@MiniMax_AI)",
-      "publishedAt": "2026-05-20T19:10:03.000Z",
-      "summary": "600多种由MiniMax Speech 2.8 Turbo驱动的新声音现已登陆Together AI @togethercompute 🎙️✨\n\n立即体验：https：//voicefinder.together.ai/minimax--speech-2.8-turbo",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpecsrym0bf5slk1l0wn31kj",
-      "title": "上下文压缩技术提升搜索效率与准确性",
-      "title_en": "We've productionized query-aware compression for faster， cleaner， more-accurate search. Better cont…",
-      "url": "https://x.com/perplexity_ai/status/2057151002105753950",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-05-20T17:26:33.000Z",
-      "summary": "我们已将查询感知压缩技术投入生产，以实现更快、更清晰、更准确的搜索。\n更好的上下文优于更多的上下文。\n我们的系统可将上下文令牌最多削减70%，同时提升回答质量。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpebdc1s0b28slk1ol5l7sub",
-      "title": "ChatGPT移动端支持Codex，实现跨设备协作",
-      "title_en": "Your laptop can stay home. Work with Codex from the ChatGPT mobile app， answer questions on the go，…",
-      "url": "https://x.com/OpenAIDevs/status/2057142816497906045",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-05-20T16:54:01.000Z",
-      "summary": "你的笔记本电脑可以留在家里。\n通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfs4pdm097psljw3p8uqz54",
-      "title": "合作伙伴如何运用Opus强化网络安全",
-      "title_en": "How our partners are putting Opus to work for cybersecurity",
-      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-20T16:00:00.000Z",
-      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfs4pdm097osljw5pa6ryb6",
-      "title": "Claude现已支持更多安全合规工具",
-      "title_en": "Claude now works with more security and compliance tools",
-      "url": "https://claude.com/blog/compliance-api-security-partners",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-20T16:00:00.000Z",
-      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfpmdn508jgsljwog7g8k3k",
-      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
-      "title_en": "Announcing ADK for Kotlin and ADK for Android 0.1.0： Building AI Agents on Android and Beyond",
-      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-20T16:00:00.000Z",
-      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpfpmdn508jfsljwx8px8kj8",
-      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
-      "title_en": "Empowering Service Providers and Hardware Partners with Gemini for Home",
-      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-20T16:00:00.000Z",
-      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpe6yylc0a04slk1ip15yb89",
-      "title": "AI视频一致性始于动作之前",
-      "title_en": "AI video consistency starts before motion. For this 15s cooking short， we first generated a clean ch…",
-      "url": "https://x.com/PixVerse_/status/2057114262145818752",
-      "source": "X：PixVerse (@PixVerse_)",
-      "publishedAt": "2026-05-20T15:00:34.000Z",
-      "summary": "AI视频的一致性始于动作之前。\n对于这个15秒的烹饪短片，我们首先在PixVerse中生成了一个清晰的角色分镜。\n然后将其用作视频的参考。\n相同的角色。清晰的故事节点。\n镜头指导。动作细节。\n转发 + 关注 + 回复 = 分镜工作流",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpdxbe1707raslk17npzg9r5",
-      "title": "MSE AI调度器：让Agent自主工作",
-      "title_en": "Transform Agents into autonomous workers！ 🚀 ❌ Open-source pain points： Low availability， high ops c…",
-      "url": "https://x.com/alibaba_cloud/status/2057042351978082719",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-20T10:14:49.000Z",
-      "summary": "将Agent转变为自主工作者！🚀\n❌ 开源痛点：可用性低、运维成本高、可观测性差。\n✅ MSE AI调度器通过以下方式解决：\n• 高可用分布式调度\n• 统一管理与细粒度权限\n• 弹性伸缩以降低成本\n• 全链路可观测性\n支持OpenClaw、Dify等。免费公测现已开放！\n🔗 https：//int.alibabacloud.com/m/1000413115/\n#AI #Agent #MSE",
       "category": "ai-products"
     }
   ]
