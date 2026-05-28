@@ -1,8 +1,48 @@
 {
-  "count": 10,
+  "count": 12,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpps64fo00p9slm6g6j53psu",
+      "title": "Nano Banana Pro与Nano Banana 2正式发布",
+      "title_en": "🍌 Nano Banana Pro 【gemini-3-pro-image】 and Nano Banana 2 【gemini-3.1-flash-image】 are now GA and re…",
+      "url": "https://x.com/googleaidevs/status/2060049962356916377",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-05-28T17:25:59.000Z",
+      "summary": "🍌 Nano Banana Pro 【gemini-3-pro-image】 和 Nano Banana 2 【gemini-3.1-flash-image】 现已正式发布，可通过 Gemini API 投入生产使用。查看这些优秀的社区示例，了解两个模型的实际能力 🧵↓",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmppqv0si0097slm6pmeqwf45",
+      "title": "Claude Opus 4.8 发布：在编码、智能体技能与推理方面实现全面升级",
+      "title_en": "Introducing Claude Opus 4.8",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-28T17:05:39.037Z",
+      "summary": "Anthropic 发布了新一代模型 Claude Opus 4.8，作为 Opus 4.7 的升级版本，其在编码、智能体技能、推理和实用知识工作等各项基准测试中均取得进步。Claude Opus 4.8 现已可用，价格与前代相同。同步推出的新功能包括：用户可控制任务投入程度、Claude Code 新增\"动态工作流\"特性，以及 Opus 4.8 的 2.5 倍速模式价格降低为以往的三分之一。早期测试者反馈其在智能体任务中的判断力更可靠、工具调用更高效。该模型在 Online-Mind2Web 测评中得分 84%，超越了 Opus 4.7 和 GPT-5.5。此外，其诚实度与对齐表现也得到提升，代码错误漏检率降低了约 75%。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmppnohkd01ptslvyykqn3897",
+      "title": "商汤发布信息图生成模型升级，增强多项核心能力",
+      "title_en": "How our upgraded infographic generation model - SenseN…",
+      "url": "https://x.com/SenseTime_AI/status/2060015749826240724",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-05-28T15:10:02.000Z",
+      "summary": "商汤科技介绍了其升级后的信息图生成模型 SenseNova-U1-8B-MoT-Infographic。该模型参数为8B，在四个关键维度进行了优化：文本准确性与可读性增强，减少了重复和不当放大；布局的一致性与合理性提升，背景更稳定；图表与示意图的质量提高；并新增了学术内容的渲染支持。推文提供了在 Hugging Face 上的模型页面链接及能力展示页面。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmppubmxw0190slm6mre7svcq",
+      "title": "Grok Build 0.1 on API",
+      "title_en": "Grok Build 0.1 on API Latest post May 28， 2026 # Grok Build 0.1 on API Grok Build 0.1， our fastest coding model， is now available via the xAI API in public beta. 【Read More】（http：//x.ai/news/grok-build-0-1）",
+      "url": "https://x.ai/news/grok-build-0-1",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "xAI 的最新编码模型 Grok Build 0.1 已通过 xAI API 进入公开测试阶段。该模型专为智能体编码任务训练，支持网页开发、调试和 MCP，同时也是驱动 Grok Build CLI 的同一模型。其推理速度超过 100 tokens/秒，定价为输入 $1/m tokens，输出 $2/m tokens。除编码外，它也适用于通用智能体及工具调用场景，并可通过 OpenRouter 和 Vercel AI Gateway 获取。",
+      "category": "ai-models"
+    },
     {
       "id": "cmpmacj4m0mxusl014abz5r1f",
       "title": "Qwen3.7-Max 成为全球第二AI编程模型",
@@ -81,26 +121,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-22T02:02:46.000Z",
       "summary": "5月22日，Zhipu向部分企业客户推出了旗舰大模型GLM-5.1的高速版API\"GLM-5.1-highspeed\"。该版本输出速度达400 tokens/s，刷新了全球大模型API速度上限。关键突破在于，它首次在国产大模型中实现了旗舰级能力与低延迟的结合，打破了\"高速模型即轻量模型\"的传统。该版本由ZhipuGLM团队与TileRT团队合作，通过系统级优化确保了速度的生产级稳定性，适用于AI编程、实时语音交互等场景。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpfoox6408bdsljwnbdhvasf",
-      "title": "LongCat-Video-Avatar-1.5：升级版音频驱动数字人视频生成框架",
-      "title_en": "meituan-longcat/LongCat-Video-Avatar-1.5",
-      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
-      "source": "美团 LongCat：HuggingFace 新模型",
-      "publishedAt": "2026-05-21T09:05:55.000Z",
-      "summary": "美团LongCat团队发布了LongCat-Video-Avatar-1.5，一个专注于音频驱动数字人视频生成的开源框架。其核心升级在于采用Whisper-Large音频编码器，显著优化了唇部动态的流畅度与自然度。该版本实现了精准的唇形同步、全身时序稳定性以及长视频中的身份一致性，并能泛化应用于动漫、动物及多人交互等复杂场景。通过基于DMD2的步蒸馏技术，模型仅需8步即可高效推理。团队还构建了一个涵盖多场景、多语言的人工评估基准，通过大规模主观评分与专家分析，验证了其在多项关键维度上的优异性能。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpf9b1ua04fzsljw1eu965w5",
-      "title": "腾讯开源Hy-MT2多语言翻译模型",
-      "title_en": "🚀 Introduce Hy-MT2： New Open-Source Multilingual Translation Model We proudly launch our new Hy-MT…",
-      "url": "https://x.com/TencentHunyuan/status/2057384034544804136",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-05-21T08:52:32.000Z",
-      "summary": "腾讯正式开源Hy-MT2多语言翻译模型，支持33种语言间的无缝互译。其7B与30B-A3B版本在开源模型中达到最先进的翻译性能，超越了许多参数规模大数十倍的模型。更具突破性的是，1.8B轻量级版本性能超越微软等主流商业API，并凭借腾讯AngelSlim 1.25-bit极量化技术，仅需440MB存储空间，即可在主流手机芯片上本地运行，推理速度较前代提升1.5倍，显著降低了高质量AI翻译的部署门槛。",
       "category": "ai-models"
     }
   ]

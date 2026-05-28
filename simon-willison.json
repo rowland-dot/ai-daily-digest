@@ -1,7 +1,14 @@
 {
-  "fetched_at": "2026-05-27T22:17:57.185Z",
+  "fetched_at": "2026-05-28T22:17:34.462Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "sqlite AGENTS.md",
+      "link": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+      "updated": "2026-05-27T23:44:37+00:00",
+      "summary": "sqlite AGENTS. md (via) SQLite gained an AGENTS. md file five days ago - but it's not intended for their own development, it's presumably aimed at people who are pointing agents at the SQLite codebase.",
+      "body": "27th May 2026 - Link Blog\n\nsqlite AGENTS.md (via) SQLite gained an AGENTS.md file five days ago - but it's not intended for their own development, it's presumably aimed at people who are pointing agents at the SQLite codebase. It includes:\n\nSQLite does not accept pull requests without prior agreement and/or accompanying legal paperwork that places the pull request in the public domain. However, the human SQLite developers will review a concise and well-written pull request as a proof-of-concept prior to reimplementing the changes themselves.\nSQLite does not accept agentic code. However the project will accept agentic bug reports that include a reproducible test case. Patches or pull requests demonstrating a possible fix, for documentation purposes, are welcomed.\n\nThe most recent commit to that file removed \"(currently)\" from \"SQLite does not (currently) accept agentic code\", with the commit message \"Strengthen the statement about not accepting agentic code\".\n\nMeanwhile the SQLite forum was being flooded with so many AI-generated bug reports - of varying quality - that they've now split those off into a new SQLite Bug Forum. D. Richard Hipp is resolving issues on there with a flurry of commits to the codebase."
+    },
     {
       "title": "I think Anthropic and OpenAI have found product-market fit",
       "link": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything",
@@ -78,13 +85,6 @@
       "updated": "2026-05-24T21:38:32+00:00",
       "summary": "New documented datasette. fixtures. populatefixturedatabase(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites. This new plugin takes advantage of that API.",
       "body": "One of the smaller features in Datasette 1.0a30 is this:\n\nNew documented datasette.fixtures.populatefixturedatabase(conn) helper for creating the fixture database tables used by Datasette's own tests, intended for plugin test suites.\n\nThis new plugin takes advantage of that API. You can try it out using uvx without even installing Datasette like this:\n\nuvx --prerelease=allow \\\n  --with datasette-fixtures datasette \\\n  --get /fixtures/roadsideattractions.json\nWhich outputs:\n\n{\n  \"ok\": true,\n  \"next\": null,\n  \"rows\": [\n    {\"pk\": 1, \"name\": \"The Mystery Spot\", \"address\": \"465 Mystery Spot Road, Santa Cruz, CA 95065\", \"url\": \"https://www.mysteryspot.com/\", \"latitude\": 37.0167, \"longitude\": -122.0024},\n    {\"pk\": 2, \"name\": \"Winchester Mystery House\", \"address\": \"525 South Winchester Boulevard, San Jose, CA 95128\", \"url\": \"https://winchestermysteryhouse.com/\", \"latitude\": 37.3184, \"longitude\": -121.9511},\n    {\"pk\": 3, \"name\": \"Burlingame Museum of PEZ Memorabilia\", \"address\": \"214 California Drive, Burlingame, CA 94010\", \"url\": null, \"latitude\": 37.5793, \"longitude\": -122.3442},\n    {\"pk\": 4, \"name\": \"Bigfoot Discovery Museum\", \"address\": \"5497 Highway 9, Felton, CA 95018\", \"url\": \"https://www.bigfootdiscoveryproject.com/\", \"latitude\": 37.0414, \"longitude\": -122.0725}\n  ],\n  \"truncated\": false\n}"
-    },
-    {
-      "title": "Quoting Armin Ronacher",
-      "link": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
-      "updated": "2026-05-24T18:46:53+00:00",
-      "summary": "The most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence.",
-      "body": "24th May 2026\n\nThe most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into a clanker and the clanker reworded it and made a huge mess of it. Typically, it was prompted so badly that the conclusions produced are more often than not inaccurate but always full of confidence. The result is complete guesswork on root causes, fake-minimal repros, suggested implementation strategies, analogies to adjacent but often the wrong code, and long lists of error classes that might or might not matter. [...]\nSo at least personally, I increasingly want issue reports to be condensed to what the human actually observed:\n1.   I ran this command.\n2.   I expected this to happen.\n3.   This happened instead.\n4.   Here is the exact error or log.\n\n— Armin Ronacher, on slop issues filed against Pi"
     }
   ]
 }

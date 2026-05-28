@@ -1,8 +1,88 @@
 {
-  "count": 50,
+  "count": 48,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpq1pcva00zuslno6kbpd0xz",
+      "title": "萨姆·阿尔特曼和达里奥·阿莫代伊都纷纷收回了关于AI将引发就业危机的预测",
+      "title_en": null,
+      "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-05-28T21:49:31.492Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmppu2sce013dslm6rliijffw",
+      "title": "Anthropic 完成 650 亿美元 H 轮融资，估值达 9650 亿美元",
+      "title_en": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+      "url": "https://www.anthropic.com/news/series-h",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-28T18:35:40.238Z",
+      "summary": "Anthropic 宣布完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，投后估值达 9650 亿美元。公司表示其旗舰模型 Claude 的企业部署持续增长，年化收入已突破 470 亿美元。此轮融资将用于推进 AI 安全与可解释性研究、扩展算力以满足 Claude 的需求，并规模化产品与合作伙伴关系。Anthropic 近期已显著扩大计算容量，并宣布 Claude 已登陆 AWS、Google Cloud 和 Microsoft Azure 三大云平台。",
+      "category": "industry"
+    },
+    {
+      "id": "cmppuiqqt01a5slm6n7mhtwo5",
+      "title": "Apple 正努力将庞大的 Gemini 模型塞进 iPhone 以驱动新 Siri",
+      "title_en": "Apple working to cram massive Gemini model into iPhone to power new Siri",
+      "url": "https://arstechnica.com/ai/2026/05/apple-reportedly-trying-to-distill-googles-multi-trillion-parameter-gemini-ai-to-run-on-iphone",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-05-28T18:30:48.000Z",
+      "summary": "Apple 正尝试将大型 Gemini 模型集成到 iPhone 中，以支持全新的 Siri 功能。由于模型规模庞大，本地处理可能无法完全实现，因此一个云端组件很可能是必然的选择。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpp0a46y0atsslv4grk6oh1w",
+      "title": "OpenRouter 获得1.13亿美元B轮融资",
+      "title_en": "OpenRouter Raises $113M Series B",
+      "url": "https://openrouter.ai/announcements/series-b",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-05-28T14:00:00.000Z",
+      "summary": "AI模型聚合平台OpenRouter宣布完成1.13亿美元B轮融资。本轮融资由CapitalG领投，NVentures、ServiceNow Ventures等多家机构参投，现有投资者Andreessen Horowitz与Menlo Ventures也参与了本轮融资。",
+      "category": "industry"
+    },
+    {
+      "id": "cmppe159m0eavslv4sq3myhrs",
+      "title": "DeepSeek计划在完成融资后立即申请科创板IPO",
+      "title_en": "Exclusive： DeepSeek plans to file for a STAR Market （A-share） IPO immediately after closing its curr…",
+      "url": "https://x.com/thexpin/status/2059947998302679059",
+      "source": "X：X.PIN (@thexpin)",
+      "publishedAt": "2026-05-28T10:40:49.000Z",
+      "summary": "独家：DeepSeek计划在完成当前约500亿美元（3500亿人民币）融资轮后，立即申请科创板（A股）IPO。\n来源：参与本轮融资的一位大型基金经理。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpp9s8g90d5pslv4cdirb5qo",
+      "title": "Qwen3.7-Max 登顶 OpenRouter 热门大模型榜",
+      "title_en": "Qwen3.7-Max hits #1 on the @OpenRouter Trending LLM chart with 77.3B tokens in usage. And we are ju…",
+      "url": "https://x.com/alibaba_cloud/status/2059918150997623004",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-28T08:42:13.000Z",
+      "summary": "Qwen3.7-Max 以 77.3B tokens 的使用量登顶 @OpenRouter 热门大语言模型榜单。\n\n而我们才刚刚开始。\n\n👇 https：//int.alibabacloud.com/m/1000413314/",
+      "category": "industry"
+    },
+    {
+      "id": "cmpp7sbi50cnwslv4ukds92j6",
+      "title": "可灵AI将在AI电影节展示20部4K原创短片",
+      "title_en": "Kling AI is taking the stage at AI on the Lot's Community Day - the world's largest AI film & media …",
+      "url": "https://x.com/Kling_ai/status/2059908126611292645",
+      "source": "X：可灵 Kling AI (@Kling_ai)",
+      "publishedAt": "2026-05-28T08:02:23.000Z",
+      "summary": "可灵AI将在全球最大AI影视会议AI on the Lot的社区日上，展示由Prompt Club的电影制作人创作的20部原创AI短片。所有短片均为原生4K分辨率，旨在探索AI电影的边界。该展示将于5月29日在加州卡尔弗市的卡尔弗剧院举行。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpppj8oq027jslvy6zrnekat",
+      "title": "OpenAI 的前沿治理框架",
+      "title_en": "OpenAI's Frontier Governance Framework",
+      "url": "https://openai.com/index/openai-frontier-governance-framework",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "OpenAI 发布了\"前沿治理框架\"，阐述其 AI 安全、安全与风险管理实践如何与欧盟和加州新出台的法规要求对齐。该框架旨在规范其前沿模型的开发与部署流程。",
+      "category": "industry"
+    },
     {
       "id": "cmpogcyqy05uoslv44xoll1r2",
       "title": "Cognition成为全球最大独立智能体实验室",
@@ -111,6 +191,16 @@
       "source": "The Decoder：AI News（RSS）",
       "publishedAt": "2026-05-26T18:31:07.000Z",
       "summary": "Anthropic工程师Sholto Douglas表示，Claude Mythos在周末期间解决了OpenAI提出的Erdős单位距离猜想问题，并给出了一个\"巧妙简洁的证明\"。这一成果被描述为人工智能在数学发现领域存在\"严重超前\"迹象。",
+      "category": "industry"
+    },
+    {
+      "id": "cmppiixeg00g2slvy9fy55vdx",
+      "title": "Anthropic 开设米兰办公室，深化意大利企业合作与 AI 安全对话",
+      "title_en": "Anthropic opens Milan office to support Italian enterprise， research， and developers",
+      "url": "https://www.anthropic.com/news/milan-office-opening",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "summary": "Anthropic 在米兰开设其欧洲第六家办公室，旨在与意大利企业及开发者社区合作，负责任地构建和扩展 Claude，并参与关于 AI 的对话。本地团队已与多家金融、生命科学、能源及汽车行业的公司展开合作。案例包括与 JAKALA 合作将 Claude 部署至超 3，000 席位，释放约 70% 高级团队时间；Satispay 借此将 18 个月路线图压缩至 7 个月；Bending Spoons 的大部分代码变更已与 Claude Code 共同完成。Anthropic 承诺支持意大利企业、研究及文化，通过安全的 AI 转型促进发展。",
       "category": "industry"
     },
     {
@@ -241,16 +331,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-23T15:12:40.000Z",
       "summary": "据彭博社报道，Anthropic即将完成一轮超300亿美元的融资，最快可能于下周敲定。此轮融资将使其估值突破9000亿美元，正式超越OpenAI，成为全球估值最高的AI初创企业。融资的迅速推进反映了市场的强烈追捧。同时，公司营收高速增长，预计第二季度营收将达109亿美元，环比增长超一倍，有望迎来首个盈利季度。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpi5yk550udosljwr18jxglb",
-      "title": "加倍投入科学以赢得工业AI",
-      "title_en": "Doubling Down on Science to Win Industrial AI May 22， 2026 Mistral AI",
-      "url": "https://mistral.ai/news/science-to-win-industrial-ai",
-      "source": "Mistral AI：News（网页）",
-      "publishedAt": "2026-05-23T09:46:00.745Z",
-      "summary": "Mistral AI宣布与物理AI先驱Emmi AI达成最终收购协议，旨在加强其在工业AI领域的领导地位。通过整合Emmi AI在物理仿真与数字孪生方面的专长，Mistral AI将提升其工程解决方案能力，并加速科学研发路线。Emmi AI的30余名研究员与工程师将加入Mistral AI团队，共同构建由物理AI驱动的综合技术栈。此次合作将为航空航天、汽车等高风险行业提供实时仿真与复杂问题解决平台，推动工业研发的突破性进展。",
       "category": "industry"
     },
     {
@@ -401,106 +481,6 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-05-22T00:00:00.000Z",
       "summary": "Gartner发布2026年企业AI编码代理魔力象限报告，OpenAI被列为领导者。其产品Codex因在技术创新和企业级部署方面的突出表现获得认可，反映了OpenAI在AI辅助编程工具领域的领先地位。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpfxyna10alksljwzi9qx4zk",
-      "title": "加州州长纽森签署首创性行政令，为应对AI可能带来的劳动力市场冲击做准备",
-      "title_en": "California's Governor Newsom signs first-of-its-kind executive order to prepare workers and business…",
-      "url": "https://x.com/rohanpaul_ai/status/2057555054387949848",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-21T20:12:07.000Z",
-      "summary": "加州州长纽森签署行政令，首次将AI引发的失业问题正式列为公共政策议题，要求各部门研究遣散费、就业保险及员工持股等保障措施。该命令认识到AI可能渐进式替代岗位任务，而非一次性取代整个职位，因此计划建立新的劳动力数据看板，以更早捕捉行业受到的冲击。政策核心在于探讨如何将AI带来的生产力红利，通过股权、薪酬支持等方式在企业与员工间进行更公平的分配。同时指出，单纯的职业培训可能无法解决被AI彻底取代的岗位所带来的根本性就业错配问题。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpfye43s0asbsljwhf5sd7cn",
-      "title": "谷歌DeepMind在亚太启动AI气候加速器",
-      "title_en": "We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
-      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-05-21T19:46:42.000Z",
-      "summary": "亚太地区经济增长迅速，但极易受到气候变化影响，且现有绿色技术发展速度跟不上环境风险的增长。为此，Google DeepMind宣布启动首届专注于\"AI for the Planet\"的加速器计划。该计划为期三个月，面向亚太地区的初创企业、研究团队和非营利组织，旨在利用前沿人工智能技术解决自然、气候、农业和能源等领域的挑战。入选组织将获得专家指导、定制化支持，并可集成Google AI的前沿模型。计划将从新加坡的线下训练营开始，现已开放注册。",
-      "category": "industry"
-    },
-    {
-      "id": "cmphcciiv0n76sljw2c5qbnwe",
-      "title": "Project Glasswing：初步更新",
-      "title_en": "Project Glasswing： An initial update",
-      "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-21T16:00:00.000Z",
-      "summary": "上月启动的Project Glasswing项目，旨在利用先进AI模型保障关键软件安全。通过约50家合作伙伴使用Claude Mythos Preview模型，已在全球关键系统中发现超过10，000个高危或严重漏洞。多家合作伙伴报告漏洞发现效率提升超过十倍。例如，Cloudflare在关键路径系统发现2，000个漏洞；Mozilla在Firefox 150中发现并修复271个漏洞，数量远超前代模型。项目还扫描了千余个支撑互联网的开源项目，独立验证准确率达90.6%。这标志着AI网络安全能力进入新阶段，漏洞发现速度已远超人工。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpfn8l6q07wdsljw3jydlv9i",
-      "title": "Anthropic即将成为首个盈利的AI实验室",
-      "title_en": "Anthropic is about to become the first profitable AI lab",
-      "url": "https://the-decoder.com/anthropic-is-about-to-become-the-first-profitable-ai-lab",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-05-21T15:15:30.000Z",
-      "summary": "根据《华尔街日报》报道，Anthropic正接近实现其首个盈利季度，预计第二季度营收达109亿美元，运营利润为5.59亿美元。该公司在去年夏季时还预计最早在2028年才能盈利。主要增长动力来自编程工具和Claude的代理功能使用，其需求一度超过了可用的算力容量。这一转变标志着Anthropic可能成为业界首个实现盈利的领先AI研发机构。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpf0anyx0288sljw22zedvw9",
-      "title": "Intuit将裁员逾3000人，以重新聚焦人工智能",
-      "title_en": null,
-      "url": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-21T04:35:50.680Z",
-      "summary": "软件公司Intuit宣布将裁员超过3000人，作为其战略重组的一部分。此次裁员旨在将公司资源重新聚焦于人工智能（AI）领域的发展，以适应技术趋势并提升长期竞争力。裁员规模约占其全球员工总数的10%。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpex8rgu01husljw7g79w8pc",
-      "title": "首部100%AI生成电影亮相戛纳，剑指2026院线",
-      "title_en": "Kling AI Debuts at Cannes - RAPHAEL RAPHAEL， a 100% AI-generated feature film project， is a large-s…",
-      "url": "https://x.com/Kling_ai/status/2057295321831539054",
-      "source": "X：可灵 Kling AI (@Kling_ai)",
-      "publishedAt": "2026-05-21T03:00:02.000Z",
-      "summary": "AI电影项目RAPHAEL在戛纳亮相。该片由Mateo AI Studio与韩国MBC C&I的AI内容实验室联合开发，全程使用Kling AI视频模型进行制作，旨在实现独特的视觉效果与差异化的观影体验。项目计划于2026年登陆院线，其大规模制作旨在证明纯AI电影制作的工业可行性，标志着AI原生院线电影新趋势的开端。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpeway6401ajsljw64tl7jmw",
-      "title": "商汤连续十年领跑中国计算机视觉市场",
-      "title_en": "🏆 @SenseTime_AI has been named China's No. 1 #VisionAI leader by @IDC …",
-      "url": "https://x.com/SenseTime_AI/status/2057289342654300586",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-05-21T02:36:16.000Z",
-      "summary": "商汤科技被IDC连续十年评为中国计算机视觉市场第一。其关键驱动因素包括：主导推进CV 2.0架构演进，原生嵌入生成式AI能力；海外市场扩展至12个国际区域，服务超500家企业客户并保持高留存率；以年度经常性收入增长为锚点实现盈利性增长；并从项目制交付转型为高度可扩展的AI平台。这一十年市场领导地位为其引领计算机视觉与生成式AI的融合浪潮奠定了基础。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpevggtd012zsljw5mhcy3k0",
-      "title": "FSD正式登陆中国大陆市场",
-      "title_en": "FSD来了… 官宣进入大陆…",
-      "url": "https://x.com/xiaohu/status/2057279976467218765",
-      "source": "X：小互 (@xiaohu)",
-      "publishedAt": "2026-05-21T01:59:03.000Z",
-      "summary": "FSD来了…\n\n官宣进入大陆…",
-      "category": "industry"
-    },
-    {
-      "id": "cmpenvx390e1dslk1uhs84uhr",
-      "title": "冲刺 9 月上市，OpenAI 最快本周五提交 IPO 招股书草案",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/090.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-20T22:45:37.000Z",
-      "summary": "据CNBC报道，OpenAI预计最快本周五递交首次公开募股（IPO）招股书草案，这标志着公司向资本市场迈出关键一步。首席执行官萨姆·奥尔特曼设定最早于2026年9月上市的目标。公司正与高盛和摩根士丹利合作，借助这两家投行的资源推动上市申报和承销安排。此前，埃隆·Musk针对OpenAI的诉讼失利后，上市障碍消除，进程明显加速。OpenAI目前私募估值超过8500亿美元，若顺利推进，可能成为公开市场历史上规模最大的首发之一。此外，公司最早考虑在今年第四季度上市，内部治理和运作已开始向上市公司转型，准备工作持续进行。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpenjxhk0dyeslk1k8hsw4nc",
-      "title": "SpaceX与Anthropic合作提供大规模AI算力服务",
-      "title_en": "As the recently expanded partnership with @AnthropicAI demonstrates， @SpaceX is offering AI compute …",
-      "url": "https://x.com/elonmusk/status/2057228707606196434",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-05-20T22:35:20.000Z",
-      "summary": "正如最近与@AnthropicAI扩大合作所展示的，@SpaceX正在大规模提供AI算力服务。\n\n我们正在与其他公司进行类似合作的讨论。\n\n随着时间的推移，特别是通过轨道数据中心，我们预计将以极高的规模提供AI服务。",
       "category": "industry"
     }
   ]

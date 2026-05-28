@@ -1,16 +1,26 @@
 {
-  "count": 16,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpocftbm04v2slv4qabfidb6",
-      "title": "通过零信任聚合实现的隐私分析",
-      "title_en": "Private analytics via zero-trust aggregation",
-      "url": "https://research.google/blog/private-analytics-via-zero-trust-aggregation",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-05-27T17:34:02.542Z",
-      "summary": "Google Research 推出了一种新的隐私分析解决方案。该方案结合了一种新的密码学安全聚合协议与可信执行环境（TEE）的透明性，旨在实现前沿的隐私与安全保证。其核心是基于零信任原则，通过密码学与硬件保护的结合，确保系统仅能获取群体的匿名化聚合洞察。",
+      "id": "cmppuejv9019eslm6zx7qtdep",
+      "title": "hexoai开源SIA框架：AI智能体实现递归自我改进",
+      "title_en": "Big release - Open Source Recursive Self Improvement from @hexoai Shows AI agent can improve both …",
+      "url": "https://x.com/rohanpaul_ai/status/2060063592448446778",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-05-28T18:20:09.000Z",
+      "summary": "hexoai开源了SIA（自我改进AI）框架。该框架展示了AI智能体不仅能优化其外部工作流（harness），还能通过任务反馈直接更新自身的模型权重，从而在领域知识和能力上实现自主提升，而非仅依赖人类提供的提示或工具改进。论文报告显示，SIA在LawBench基准上性能提升56.6%，在GPU kernels运行上耗时减少91.9%，在单细胞RNA去噪任务中相比基线提升502%。",
+      "category": "paper"
+    },
+    {
+      "id": "cmppprn04028nslvyqxgosjyn",
+      "title": "SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力",
+      "title_en": "Blog Win on TCO： How AMD InstinctTM MI355X Achieves Cost-Competitive Distributed Inference Through SGLang with MoRI The SGLang and AMD team has worked closely to unlock competitive Total Cost of Ownership （TCO） for large-scale DeepSeek-R1 disaggregated inference on AMD InstinctTM MI355X GPUs. Building on SGLang's se… AMD & SGLang Team",
+      "url": "https://www.lmsys.org/blog/2026-05-28-mori",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-05-28T16:34:57.702Z",
+      "summary": "SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MTP 以及 CPU 流式处理优化。",
       "category": "paper"
     },
     {
@@ -34,6 +44,36 @@
       "category": "paper"
     },
     {
+      "id": "cmppj5i3o00jrslvysba2u7mc",
+      "title": "\"了解评估如何设计的模型\"得分更安全",
+      "title_en": "Models That Know How Evaluations Are Designed Score Safer",
+      "url": "https://arxiv.org/abs/2605.28591",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "AI安全评估的有效性依赖于模型在受控与部署环境下行为一致。研究提出\"评估元知识\"概念，指模型通过训练数据（如描述评估实践的科学文章或社交媒体）隐性习得对评估结构特征（如可验证结构或道德困境）的认知。在六个安全基准上的测试表明，经过合成文档微调后的模型，其安全评分显著高于基础模型与控制模型，即使排除明确表达评估意识的回答，这种行为偏移依然存在。这表明评估元知识可能导致安全基准分数虚高，成为独立于显式记忆或语言化评估意识之外的新干扰因素，对安全评估的设计和解读有重要影响。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpp43j5a0bo3slv47z22fr57",
+      "title": "DenoiseRL：通过恢复嘈杂前缀来引导推理模型",
+      "title_en": "DenoiseRL： Bootstrapping Reasoning Models to Recover from Noisy Prefixes",
+      "url": "https://arxiv.org/abs/2605.28421",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "DenoiseRL是一种强化学习框架，旨在提升大语言模型的推理能力。它无需依赖更强的教师模型或精心筛选的困难数据集，而是通过在弱模型产生的失败推理轨迹上进行基于恢复的优化来直接学习，将错误转化为改进机会。这种方法提供了更丰富多样的学习信号，提升了探索效率。实验表明，DenoiseRL在竞争性的数学和通用推理基准测试中，持续优于强在策略RL基线，并能随着训练难度增加促进更强的自我纠正行为。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpoxnk890a20slv458yalony",
+      "title": "VibeSearchBench：面向真实世界中长期主动搜索的评测基准",
+      "title_en": "VibeSearchBench： Benchmarking Long-horizon Proactive Search in the Wild",
+      "url": "https://arxiv.org/abs/2605.27882",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "基于LLM的智能体在现有搜索基准上表现优异，但真实用户体验不佳，这源于现有基准依赖于高度明确的查询、单轮交互和固定格式评估，无法反映用户与智能体通过多轮对话协同澄清模糊意图的真实搜索行为。为此，研究提出了\"VibeSearch\"范式并发布了VibeSearchBench，该基准包含200个手工策划的双语任务，覆盖20个领域，分为专业与日常生活两个子集。评估通过用户模拟器和图匹配框架进行。对七个前沿模型的测试显示，所有模型在VibeSearch任务上表现均不充分（最佳F1分数为30.30），凸显了在长期上下文推理、主动意图激发等方面取得根本进展的必要性。",
+      "category": "paper"
+    },
+    {
       "id": "cmpoibuhp06cnslv4rs455myu",
       "title": "SilverTorch：索引即模型--推荐系统的新检索范式",
       "title_en": "SilverTorch： Index as Model - A New Retrieval Paradigm for Recommendation Systems",
@@ -41,6 +81,26 @@
       "source": "Meta Engineering Blog（RSS）",
       "publishedAt": "2026-05-26T16:00:01.000Z",
       "summary": "Meta 推出SilverTorch推荐系统架构，统一了用户生成内容的所有检索组件。该架构吞吐量比现有技术高23.7倍，计算成本效率比CPU方案高20.9倍，同时提升了准确性。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpoocnzn07snslv4ur3wipc5",
+      "title": "社会科学中的编码智能体",
+      "title_en": "Coding agents in the social sciences",
+      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "summary": "一项针对1260名定量社会科学家的调查显示，虽然81%的受访者用过AI聊天机器人，但仅有20%将Claude Code、Codex等编码智能体常规应用于工作。采用率存在显著差异：以男性名字命名的研究者使用率是女性研究者的两倍；顶尖大学研究者可能性高出40%。用户产出更多工作论文和基金申请，但这可能反映早期采用者自身差异。研究者对AI助力撰写可发表论文更乐观，但对重塑整个社会科学领域持保留态度。这是一项初步调查，更深入研究仍在进行中。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpocftbm04v2slv4qabfidb6",
+      "title": "通过零信任聚合实现的隐私分析",
+      "title_en": "Private analytics via zero-trust aggregation",
+      "url": "https://research.google/blog/private-analytics-via-zero-trust-aggregation",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "summary": "Google Research 推出了一种新的隐私分析解决方案。该方案结合了一种新的密码学安全聚合协议与可信执行环境（TEE）的透明性，旨在实现前沿的隐私与安全保证。其核心是基于零信任原则，通过密码学与硬件保护的结合，确保系统仅能获取群体的匿名化聚合洞察。",
       "category": "paper"
     },
     {
@@ -141,26 +201,6 @@
       "source": "Apple Machine Learning Research（RSS）",
       "publishedAt": "2026-05-22T00:00:00.000Z",
       "summary": "现有视觉语言模型框架主要在离线场景下评估性能，但实时视觉助手所依赖的流式模型还需考量额外指标，如反映响应时效性的\"主动性\"和捕捉随时间推移响应稳定性的\"一致性\"。为此，研究团队提出了VSAS-Bench，这是一个新的评估基准，专门针对流式视觉语言模型在实时交互任务中的表现，填补了当前评估方法在动态、持续生成场景下的空白。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpgadnmr0dqnsljw1u378q70",
-      "title": "从推理链到可验证子问题：课程强化学习实现LLM推理的信用分配",
-      "title_en": "From Reasoning Chains to Verifiable Subproblems： Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning",
-      "url": "https://arxiv.org/abs/2605.22074",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-21T00:00:00.000Z",
-      "summary": "针对基于结果的强化学习在处理困难推理问题时因正确样本稀少而效率低下的问题，本文提出子问题课程强化学习框架。该框架从参考推理链中提取可验证子问题，并将最终子问题固定为原始问题，从而将部分解题进展转化为可验证的学习信号。其通过在子问题位置独立归一化奖励并分配优势值，实现了更细粒度的信用分配。实验表明，SCRL显著提升了模型在多个数学推理基准上的性能，有效增强了在复杂问题上的探索与推理能力。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpg876fh0d6nsljwz0fs9sgm",
-      "title": "RiT：在表示空间中使用原生扩散变换器已足够",
-      "title_en": "RiT： Vanilla Diffusion Transformers Suffice in Representation Space",
-      "url": "https://arxiv.org/abs/2605.21981",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-21T00:00:00.000Z",
-      "summary": "本研究探讨预训练表示空间在流匹配学习中的优势。比较像素、SD-VAE与DINOv2特征后发现，尽管像素与DINOv2的内在维度相近，但DINOv2在几何统计特性（如有效秩、协方差条件等）上表现更优，使回归过程更稳定。基于此，我们提出了表示图像变换器（RiT），它使用冻结的DINOv2特征，通过x-prediction目标训练一个原生扩散变换器。在ImageNet 256×256生成任务上，RiT性能优于参数量更多的DiT^DH-XL模型，且生成的常微分方程仅需少量步骤即可高效求解。",
       "category": "paper"
     }
   ]
