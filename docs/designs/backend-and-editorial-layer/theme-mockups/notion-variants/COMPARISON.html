@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" data-theme="notion-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notion variants — colour + dot semantics — AI Daily Digest</title>
+  <link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-notion/tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header.page-head {
+      padding: 56px 24px 36px;
+      max-width: 1320px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .kicker {
+      font-family: var(--mono-font);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-family: var(--display-font);
+      font-size: clamp(34px, 4.6vw, 48px);
+      letter-spacing: var(--track-display);
+      margin: 0 0 14px;
+      line-height: 1.08;
+    }
+    .lede {
+      color: var(--text-muted);
+      font-size: 17px;
+      max-width: 780px;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 32px 24px 96px;
+    }
+
+    section.board {
+      margin-top: 48px;
+    }
+    section.board:first-of-type { margin-top: 16px; }
+
+    .section-head {
+      margin: 0 0 24px;
+      padding: 0 4px;
+    }
+    .section-head h2 {
+      font-family: var(--display-font);
+      font-size: clamp(24px, 2.8vw, 32px);
+      letter-spacing: var(--track-display);
+      margin: 0 0 6px;
+      line-height: 1.15;
+    }
+    .section-head .sub {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .card-head {
+      padding: 18px 22px 14px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .card-num {
+      font-family: var(--mono-font);
+      font-size: 11px;
+      color: var(--text-tertiary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .card-name {
+      font-family: var(--display-font);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+    .meaning {
+      font-size: 14.5px;
+      color: var(--text-charcoal);
+      margin: 0;
+    }
+    .meaning strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .card-preview {
+      position: relative;
+      background: var(--surface-3);
+      border-bottom: 1px solid var(--border-soft);
+      height: 500px;
+      overflow: hidden;
+    }
+    /* Scale the embedded variant down so the colour cards / dot strip
+       are visible inside the 500px preview window without scrolling.
+       1280 / 0.55 ≈ 2327 logical px wide; 500 / 0.55 ≈ 909 logical px tall —
+       comfortably past the hero into the tinted feature cards. */
+    .card-preview iframe {
+      width: calc(100% / 0.55);
+      height: calc(100% / 0.55);
+      border: 0;
+      display: block;
+      background: #fff;
+      transform: scale(0.55);
+      transform-origin: 0 0;
+    }
+
+    .card-foot {
+      padding: 14px 22px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .verdicts {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-family: var(--mono-font);
+      font-size: 11.5px;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+    .verdicts .judge-row { display: block; }
+    .verdicts .judge-row .lbl { color: var(--text-tertiary); }
+    .verdicts .judge-row .score { color: var(--text-charcoal); font-weight: 600; }
+
+    .open-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 8px 14px;
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .open-link:hover { background: var(--accent); color: #fff; }
+
+    .pick {
+      margin-top: 56px;
+      padding: 28px 28px 32px;
+      background: var(--tint-lavender);
+      color: var(--tint-lavender-bold);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+    .pick h2 {
+      font-family: var(--display-font);
+      font-size: 22px;
+      margin: 0 0 10px;
+      letter-spacing: -0.015em;
+      color: var(--tint-lavender-bold);
+    }
+    .pick p { margin: 0 0 10px; font-size: 15px; }
+    .pick code {
+      font-family: var(--mono-font);
+      font-size: 13.5px;
+      background: rgba(255,255,255,0.55);
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .pick .matrix {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(57, 28, 87, 0.18);
+    }
+    @media (max-width: 640px) { .pick .matrix { grid-template-columns: 1fr; } }
+    .pick .matrix h3 {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+      font-weight: 700;
+      color: var(--tint-lavender-bold);
+    }
+    .pick .matrix ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+    .pick .matrix li { margin: 4px 0; }
+    .pick .matrix li code { display: inline-block; }
+  </style>
+</head>
+<body>
+  <header class="page-head">
+    <div class="kicker">Design exploration · Notion theme variants</div>
+    <h1>What do the colours and dots <em>mean</em>?</h1>
+    <p class="lede">Eight Notion-theme variants split across two questions. The first half pins down what pastel card backgrounds encode; the second pins down what the scattered hero dots encode. Pick one from each — the answers compose into a single visual language.</p>
+  </header>
+
+  <main>
+
+    <section class="board">
+      <div class="section-head">
+        <h2>Colour-tint semantics &mdash; what does each pastel MEAN?</h2>
+        <p class="sub">Pastel card backgrounds are Notion's most distinctive move. They <em>have</em> to mean something or they read as decoration. Four candidate rules.</p>
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 01 &middot; colours-A</div>
+            <h3 class="card-name">Cut-only (lavender = Editor's Cut)</h3>
+            <p class="meaning"><strong>Rule:</strong> exactly one tint is semantic &mdash; lavender = Editor's Cut commentary. Every other card stays white. Maximally restrained; the cut is the only visual island.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-A-cut-only.html" title="colours-A-cut-only preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">9/10</span> &middot; one rule, zero ambiguity</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; might feel under-coloured next to peers</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-A-cut-only.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 02 &middot; colours-B</div>
+            <h3 class="card-name">Story-type (one tint per category)</h3>
+            <p class="meaning"><strong>Rule:</strong> tint encodes <em>kind of story</em> &mdash; lavender = Editor's Cut, mint = product launch / model release, peach = opinion, sky = tooling / dev post, yellow = research paper, cream = community thread.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-B-story-type.html" title="colours-B-story-type preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">7/10</span> &middot; rich but legend-dependent</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; scannable once learned; teaches the section structure</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-B-story-type.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 03 &middot; colours-C</div>
+            <h3 class="card-name">Heat-tier (importance encoded)</h3>
+            <p class="meaning"><strong>Rule:</strong> tint encodes <em>importance heat</em> &mdash; rose = breaking, peach = major release, mint = worth-reading, white = neutral (the default ~80%). Inverted pyramid; tinted cards are sparse by design.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-C-heat-tier.html" title="colours-C-heat-tier preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">9/10</span> &middot; reader instantly knows what to read first</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; assumes the editor can rank truthfully every day</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-C-heat-tier.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 04 &middot; colours-D</div>
+            <h3 class="card-name">Neutral (badge-only, no tinted cards)</h3>
+            <p class="meaning"><strong>Rule:</strong> cards stay white; source identity lives in the <em>badge</em> colour, and Editor's Cut is signalled by a purple left-border + badge. Tint never carries meaning &mdash; it's deliberately absent.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-D-neutral.html" title="colours-D-neutral preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">7/10</span> &middot; clean, but loses the Notion signature</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; meaning is unambiguous &mdash; nothing to memorise</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/colors-D-neutral.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="board">
+      <div class="section-head">
+        <h2>Hero-dot semantics &mdash; what do the dots MEAN?</h2>
+        <p class="sub">The scattered pastel dots in the Notion hero are the second contested signal. Either they encode something useful, or they should go. Four candidates.</p>
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 05 &middot; dots-A</div>
+            <h3 class="card-name">No dots (typography-only hero)</h3>
+            <p class="meaning"><strong>Rule:</strong> no dots at all. The hero leans entirely on display type and the live-edition kicker. Removes the &ldquo;what do they mean?&rdquo; question by removing the dots.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-A-no-dots.html" title="dots-A-no-dots preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">10/10</span> &middot; nothing to misread</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">7/10</span> &middot; loses the Notion signature visual</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-A-no-dots.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 06 &middot; dots-B</div>
+            <h3 class="card-name">Date strip (week's top-story types)</h3>
+            <p class="meaning"><strong>Rule:</strong> seven dots = the last seven days. Each dot's colour = the top-story <em>type</em> for that day (rose = lab post, peach = model drop, mint = products, sky = industry, cream = research, yellow = trending, lavender = today's cut). Today's dot is enlarged.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-B-date-strip.html" title="dots-B-date-strip preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; timeline metaphor lands fast</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">7/10</span> &middot; dual encoding (day + type) needs the day-label crutch</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-B-date-strip.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 07 &middot; dots-C</div>
+            <h3 class="card-name">Section mix (today's section anchors)</h3>
+            <p class="meaning"><strong>Rule:</strong> six dots = the six sections in <em>today's</em> edition (lavender = model drops, mint = products, sky = industry, cream = research, neutral = lab posts, yellow = GitHub trending). Each dot is an anchor link to its section.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-C-section-mix.html" title="dots-C-section-mix preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; doubles as a nav skeleton</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">9/10</span> &middot; clearest payoff &mdash; click goes somewhere</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-C-section-mix.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-num">Variant 08 &middot; dots-D</div>
+            <h3 class="card-name">Subscribe-anchor (dots above CTA)</h3>
+            <p class="meaning"><strong>Rule:</strong> same section-mix mapping as dots-C, but the dot strip is repositioned to sit directly above the subscribe CTA &mdash; visually anchoring &ldquo;here's what you'd get&rdquo; to the convert action.</p>
+          </div>
+          <div class="card-preview">
+            <iframe src="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-D-subscribe-anchor.html" title="dots-D-subscribe-anchor preview" loading="lazy"></iframe>
+          </div>
+          <div class="card-foot">
+            <div class="verdicts">
+              <span class="judge-row"><span class="lbl">Judge A &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; conversion-tuned; meaning is the pitch</span>
+              <span class="judge-row"><span class="lbl">Judge B &middot; MEANING_AT_A_GLANCE</span> <span class="score">8/10</span> &middot; subordinates dots to the CTA &mdash; trade-off both ways</span>
+            </div>
+            <a class="open-link" href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/dots-D-subscribe-anchor.html">Open full page &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <aside class="pick">
+      <h2>Pick one colour rule + one dot rule</h2>
+      <p>The two axes are independent &mdash; any colour rule composes with any dot rule. Tell me your combination using the shorthand below and I'll consolidate the choice into the canonical Notion theme.</p>
+      <p>Example: <code>colours C + dots A</code> &mdash; heat-tier tints on cards, no hero dots. Or <code>colours B + dots C</code> &mdash; story-type tints, with the hero dot strip doubling as a section nav.</p>
+
+      <div class="matrix">
+        <div>
+          <h3>Colour options</h3>
+          <ul>
+            <li><code>colours A</code> &mdash; cut-only (lavender = Editor's Cut)</li>
+            <li><code>colours B</code> &mdash; story-type (one tint per category)</li>
+            <li><code>colours C</code> &mdash; heat-tier (importance)</li>
+            <li><code>colours D</code> &mdash; neutral (badge-only, no tinted cards)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Dot options</h3>
+          <ul>
+            <li><code>dots A</code> &mdash; no dots</li>
+            <li><code>dots B</code> &mdash; date strip (last 7 days)</li>
+            <li><code>dots C</code> &mdash; section mix (today's anchors)</li>
+            <li><code>dots D</code> &mdash; subscribe-anchor (section mix above CTA)</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+</body>
+</html>
