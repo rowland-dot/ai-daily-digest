@@ -1,13 +1,37 @@
 ---
-smart-rerun-applied: 2026-05-17-rerun-1
+smart-rerun-applied:
+  - 2026-05-17-rerun-1
+  - 2026-05-17-rerun-2
 ---
 
 # Patch Brief — backend-and-editorial-layer
 
 **Branch:** `feat/backend-and-editorial-layer`
-**Date:** 2026-05-17
-**Pipeline outcome:** PASS (352/352 vitest tests + 10 E2E passing, 23/23 plan tasks, 37 commits ahead of `origin/main`)
+**Date:** 2026-05-17 (rerun-2: 2026-05-30)
+**Pipeline outcome:** PASS (394/394 vitest tests + 13 E2E passing, 23/23 plan tasks, 80 commits ahead of `origin/main`)
 **Ship-readiness:** Outstanding decisions resolved (see Smart Rerun results below). Branch is deferred-merge pending cloudflare-migration spec — do not merge PR #2 yet.
+
+## Smart Rerun results — 2026-05-30-rerun-2
+
+After rerun-1 closed 25 of 28 prior findings, the user surfaced two real UX gaps in manual preview that the static design-review missed:
+- Missing nav links to `/favourites/` and `/account/` from the home page (fixed by `09b94d8` — site-nav header strip)
+- Subscribe form gating logic was correct but a non-BACKEND_LIVE render had overwritten the preview output (root cause: Playwright `webServer` config didn't pass `BACKEND_LIVE=true`)
+
+Rerun-2 Phase A classified 4 residuals:
+- 1 HIGH `e2e-1` (editors-cut commentary doesn't respect language tab — B7b violation) → FIXED `0d97c5a`
+- 1 LOW `a11y-1` (site-nav uses `data-current` not `aria-current="page"`) → FIXED `2fa7b22`
+- 1 LOW `atom-1` (Atom feed item/source counts hardcoded `null` — falls back to "? ? ?") → DEFERRED, tracked
+- 1 LOW `d1-1` (D1 test shim returns raw better-sqlite3 result without `meta` wrapping) → DEFERRED until a worker helper needs `meta.changes`
+
+Test counts after rerun-2: 352 → 394 vitest passing (+42 across the B7b + a11y assertions). Playwright E2E: prior flake reclassified as real bug, now PASS — 13/13.
+
+Heuristic for next rerun: site-nav-style integration gaps (UI that ships but isn't reachable) are systematically missed by static design-review. Future runs should include a "reachability sweep" — `find docs -name index.html | xargs grep -l 'href=' → check every page is reachable from every other via grep`.
+
+## Recommended next steps (unchanged from rerun-1)
+
+1. **Do NOT merge PR #2 yet.** Defer until cloudflare-migration is ready (your explicit verdict).
+2. Author the **cloudflare-migration-and-vendor-onboarding spec**. T7/T8/T9 in current spec are its prereqs.
+3. When ready to ship: `/ship` from this branch after cloudflare-migration merges to main.
 
 ---
 
