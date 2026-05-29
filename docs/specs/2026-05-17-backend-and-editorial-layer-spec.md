@@ -115,6 +115,8 @@ Two outputs, two distinct surfaces:
 - **The daily subscriber email** — Editor's Cut overall narrative as the lead, followed by a curated list of the cut articles with one-line teases linking back to the site. The narrative does NOT appear on the website. The email is sent in the recipient's stored language (see D4).
 - **The website** — cut articles get an inline 🏅 commentary box (replacing the space where the card-refinements spec deleted "Read original" and "Translate EN"). The commentary text follows the active language tab — EN tab shows `commentary_en`, 中文 tab shows `commentary_zh`. Non-cut cards are unchanged.
 
+Per-article commentary appears **only on AIHOT (curated daily-news) cards** — models, products, industry, and papers — and NOT on community feeds (gh-trending, hf-popular, labs blog, builders, localllama, follow-builders); AIHOT sections carry curated signal that warrants editorial framing, whereas community feeds are raw discovery surfaces where injecting commentary would be editorially inappropriate.
+
 ### D4 — Daily email pipeline (bilingual, segmented send)
 
 The GHA fast-path workflow gains a new step that produces **two** scheduled Beehiiv posts each day — one in English, one in Chinese — using Beehiiv's audience segmentation. Each subscriber receives exactly one of them based on their `language` field.
