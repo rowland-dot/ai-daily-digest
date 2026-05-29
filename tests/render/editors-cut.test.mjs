@@ -82,3 +82,31 @@ describe('Feature flag — BACKEND_LIVE=false', () => {
     expect(id1).toBe(id2);
   });
 });
+
+describe('B7b — lang-switch wiring for Editor\'s Cut (render-site.mjs source check)', () => {
+  const renderSiteSrc = readFileSync('./scripts/render-site.mjs', 'utf8');
+
+  it('LANG_SWITCH_SCRIPT references editors-cut selector', () => {
+    expect(renderSiteSrc).toContain('[data-testid="editors-cut"]');
+  });
+
+  it('LANG_SWITCH_SCRIPT defines applyEditorsLangFor function', () => {
+    expect(renderSiteSrc).toContain('function applyEditorsLangFor(');
+  });
+
+  it('applyEditorsLangFor is called in the lang button click handler', () => {
+    expect(renderSiteSrc).toContain('applyEditorsLangFor(newLang)');
+  });
+
+  it('aside.dataset.lang is set to zh on ZH switch', () => {
+    expect(renderSiteSrc).toContain("aside.dataset.lang = 'zh'");
+  });
+
+  it('aside.dataset.lang is set to en on EN switch', () => {
+    expect(renderSiteSrc).toContain("aside.dataset.lang = 'en'");
+  });
+
+  it('.ec-body data-en attribute is cached for round-trip', () => {
+    expect(renderSiteSrc).toContain("body.setAttribute('data-en'");
+  });
+});

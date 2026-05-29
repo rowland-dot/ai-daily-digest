@@ -1515,9 +1515,35 @@ const LANG_SWITCH_SCRIPT = `
           other.setAttribute('aria-pressed', other.dataset.lang === newLang ? 'true' : 'false');
         });
         applyTextFor(newLang);
+        applyEditorsLangFor(newLang);
         document.dispatchEvent(new CustomEvent('digest-lang-change', { detail: { lang: newLang } }));
       });
     });
+
+    // ---- Editor's Cut lang-switch wiring ----
+    // Reads data-zh on .ec-body (embedded by renderEditorialCutBox).
+    // On init, caches the original EN text into data-en for round-trip.
+    // Swaps textContent and aside.dataset.lang on every lang change.
+    function applyEditorsLangFor(lang) {
+      document.querySelectorAll('[data-testid="editors-cut"]').forEach(function(aside) {
+        var body = aside.querySelector('.ec-body');
+        if (!body) return;
+        // Cache EN text once on first lang switch.
+        if (!body.hasAttribute('data-en')) {
+          body.setAttribute('data-en', body.textContent);
+        }
+        var zhText = body.getAttribute('data-zh');
+        if (lang === 'zh' && zhText) {
+          body.textContent = zhText;
+          aside.dataset.lang = 'zh';
+        } else {
+          body.textContent = body.getAttribute('data-en');
+          aside.dataset.lang = 'en';
+        }
+      });
+    }
+    // Apply on DOMContentLoaded to cache initial EN text into data-en.
+    window.addEventListener('DOMContentLoaded', function() { applyEditorsLangFor('en'); });
   })();
 `;
 
