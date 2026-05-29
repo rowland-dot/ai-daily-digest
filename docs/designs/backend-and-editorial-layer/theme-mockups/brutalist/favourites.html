@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="brutalist-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brutalist Theme — /favourites (Cloudflare-live, sync prompt) — AI Daily Digest</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-brutalist/tokens.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+
+/* Mockup nav */
+.mockup-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--text); color: var(--bg);
+  border-bottom: 2px solid var(--border);
+  padding: 7px 16px;
+  font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  overflow-x: auto; white-space: nowrap;
+}
+.mockup-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+.mockup-nav-label { font-weight: 700; color: var(--accent); padding-right: 12px; border-right: 2px solid var(--bg); margin-right: 12px; flex-shrink: 0; }
+.mockup-nav a { color: var(--bg); padding: 4px 10px; font-weight: 500; text-decoration: none; flex-shrink: 0; border-right: 1px solid rgba(255,255,255,0.15); }
+.mockup-nav a:hover { color: var(--accent); }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #0a0a0a; font-weight: 700; }
+.mockup-nav a.back-link { color: var(--bg); opacity: 0.6; border-right: 0; margin-left: 8px; }
+.mockup-nav a.back-link:hover { opacity: 1; color: var(--accent); }
+
+/* Theme toggle */
+.ts { position: fixed; top: 44px; right: 16px; z-index: 200; display: inline-flex; background: var(--surface); border: 2px solid var(--border); font-family: var(--mono-font); font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+.ts button { background: transparent; border: 0; color: var(--text); padding: 5px 10px; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; }
+.ts button[aria-pressed="true"] { background: var(--text); color: var(--surface); }
+
+/* Masthead */
+header.masthead { background: var(--hero-bg); color: var(--hero-text); border-bottom: 2px solid var(--text); padding: 28px 24px; }
+.masthead-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+h1.masthead-title { font-family: var(--display-font); font-size: clamp(24px, 3.5vw, 38px); font-weight: 800; letter-spacing: -0.02em; margin: 0; text-transform: uppercase; }
+h1.masthead-title::before { content: "★"; margin-right: 10px; color: var(--accent); }
+.masthead-meta { font-family: var(--mono-font); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; display: flex; gap: 14px; align-items: center; }
+.masthead-meta .pill { background: var(--text); color: var(--hero-bg); padding: 3px 10px; font-weight: 700; }
+.masthead-sub { max-width: 1100px; margin: 8px auto 0; font-family: var(--mono-font); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--hero-text); opacity: 0.7; }
+
+/* Site nav strip */
+nav.strip { background: var(--text); color: var(--bg); padding: 10px 24px; font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; border-bottom: 2px solid var(--text); }
+.strip-row { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; align-items: center; overflow-x: auto; }
+nav.strip a { color: var(--bg); text-decoration: none; padding: 3px 12px; border-right: 1px solid rgba(255,255,255,0.2); }
+nav.strip a:hover { color: var(--accent); }
+nav.strip a[data-current="true"] { color: var(--accent); font-weight: 700; }
+nav.strip a:last-child { border-right: 0; }
+
+/* TOC nav */
+nav.toc { background: var(--surface-2); border-bottom: 2px solid var(--border); padding: 0 24px; font-family: var(--mono-font); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; overflow-x: auto; }
+nav.toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 0; }
+nav.toc a { display: block; padding: 9px 14px; color: var(--text-muted); text-decoration: none; border-right: 1px solid var(--border); }
+nav.toc a:hover { background: var(--surface-3); color: var(--text); }
+
+/* Main */
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+
+/* Section heading */
+h2.section-head { font-family: var(--display-font); font-size: 15px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 16px; padding: 7px 12px; background: var(--text); color: var(--bg); display: inline-block; }
+p.section-sub { color: var(--text-muted); font-size: 13px; font-family: var(--mono-font); letter-spacing: 0.04em; margin: -8px 0 16px; }
+
+/* Sync prompt */
+.sync-prompt {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 20px; flex-wrap: wrap;
+  padding: 18px 20px;
+  background: var(--surface-3);
+  border: 2px solid var(--text);
+  margin-bottom: 32px;
+}
+.sync-prompt::before {
+  content: none;
+}
+.sp-flag {
+  font-family: var(--mono-font); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  background: var(--accent); color: #0a0a0a;
+  padding: 2px 8px; display: inline-block; margin-bottom: 6px;
+}
+.sp-title { font-size: 16px; font-weight: 700; margin: 0 0 4px; }
+.sp-sub { font-family: var(--mono-font); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin: 0; }
+.btn-sync {
+  padding: 11px 20px;
+  background: var(--accent); color: #0a0a0a;
+  border: 2px solid var(--text);
+  font-family: var(--mono-font); font-size: 13px;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; white-space: nowrap; flex-shrink: 0;
+}
+.btn-sync:hover { background: var(--text); color: var(--bg); }
+
+/* Card grid */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 2px solid var(--border); }
+@media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+
+article.card { padding: 20px 20px 16px; border-right: 2px solid var(--border); border-bottom: 2px solid var(--border); background: var(--surface); position: relative; }
+.grid > article.card:nth-child(2n) { border-right: 0; }
+.grid > article.card:last-child { border-bottom: 0; }
+.grid > article.card:nth-last-child(-n+2) { border-bottom: 0; }
+@media (max-width: 720px) { .grid > article.card { border-right: 0; border-bottom: 2px solid var(--border); } }
+
+.card-meta { font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 9px; display: flex; gap: 8px; align-items: center; }
+.card-meta .src { background: var(--text); color: var(--bg); padding: 2px 7px; font-weight: 700; }
+.card-meta .age { color: var(--text-muted); }
+h3.card-title { font-family: var(--body-font); font-size: 18px; font-weight: 700; line-height: 1.25; margin: 0 0 10px; letter-spacing: -0.01em; }
+h3.card-title a { color: var(--text); text-decoration: none; border-bottom: 2px solid transparent; }
+h3.card-title a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+.card-summary { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+
+.fav-star { position: absolute; top: 18px; right: 18px; background: none; border: 2px solid var(--border); font-size: 14px; cursor: pointer; padding: 3px 6px; color: var(--text-muted); line-height: 1; }
+.fav-star:hover { border-color: var(--accent); color: var(--accent); }
+.fav-star[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+
+/* Footer */
+footer.site-footer { padding: 20px 24px; border-top: 2px solid var(--border); background: var(--bg); font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+footer.site-footer a { color: var(--text); }
+footer.site-footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Brutalist</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html" aria-current="page">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/integrated-mockup/index.html" class="back-link">← Comparison</a>
+  </div>
+</nav>
+
+<div class="ts" role="group" aria-label="Theme mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='brutalist-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='brutalist-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1 class="masthead-title">Favourites</h1>
+    <div class="masthead-meta">
+      <span class="pill">3 saved</span>
+      <span>This device only</span>
+    </div>
+  </div>
+  <p class="masthead-sub">Articles you starred on Today's digest · Link to your email to sync across devices</p>
+</header>
+
+<nav class="strip" aria-label="Site">
+  <div class="strip-row">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">[←] Daily digest</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html" data-current="true" aria-current="page">[★] Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html" data-backend-live="true">Account</a>
+  </div>
+</nav>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">← Today's digest</a></li>
+    <li><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html">⚙ Account</a></li>
+  </ul>
+</nav>
+
+<main data-testid="favourites-page" data-backend-live="true" data-fav-source="localStorage" data-auth="anonymous">
+
+  <!-- Sync prompt — Cloudflare-live, anonymous state -->
+  <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
+    <div>
+      <span class="sp-flag">// Action required</span>
+      <p class="sp-title">Save these across devices →</p>
+      <p class="sp-sub">Link them to your email so they follow you to your phone and laptop.</p>
+    </div>
+    <button type="button" class="btn-sync" data-testid="sync-prompt-open-btn">→ Sync now</button>
+  </div>
+
+  <section>
+    <h2 class="section-head">★ Saved articles <span style="font-weight:400; opacity:0.6; margin-left:10px; font-size:12px;">3 total</span></h2>
+    <p class="section-sub">Sorted by most recently saved.</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="aihot-a3f12b8c">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-a3f12b8c">★</button>
+        <div class="card-meta"><span class="src">Anthropic · AIHOT</span><span class="age">Saved 2H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Claude 4.7 launches with 1M context window</a></h3>
+        <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window today. Pricing matches the previous Opus tier.</p>
+      </article>
+
+      <article class="card" data-article-id="aihot-7c3e9d1a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-7c3e9d1a">★</button>
+        <div class="card-meta"><span class="src">alibaba_cloud · AIHOT</span><span class="age">Saved 5H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Qwen3-Omni released as open weights</a></h3>
+        <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
+      </article>
+
+      <article class="card" data-article-id="builder-2f8c4e6a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="builder-2f8c4e6a">★</button>
+        <div class="card-meta"><span class="src">Simon Willison</span><span class="age">Saved yesterday</span></div>
+        <h3 class="card-title"><a href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a></h3>
+        <p class="card-summary">Walks through a Tailscale + Firecracker setup so Claude Code can rm -rf whatever it wants and the host stays clean.</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>Favourites stored on this device · <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">← Back to today's digest</a></div>
+  <div>AI Daily Digest</div>
+</footer>
+
+</body>
+</html>

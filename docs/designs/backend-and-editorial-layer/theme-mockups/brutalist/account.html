@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="brutalist-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brutalist Theme — /account (linked-active) — AI Daily Digest</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-brutalist/tokens.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+
+/* Mockup nav */
+.mockup-nav { position: sticky; top: 0; z-index: 100; background: var(--text); color: var(--bg); border-bottom: 2px solid var(--border); padding: 7px 16px; font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; overflow-x: auto; white-space: nowrap; }
+.mockup-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+.mockup-nav-label { font-weight: 700; color: var(--accent); padding-right: 12px; border-right: 2px solid var(--bg); margin-right: 12px; flex-shrink: 0; }
+.mockup-nav a { color: var(--bg); padding: 4px 10px; font-weight: 500; text-decoration: none; flex-shrink: 0; border-right: 1px solid rgba(255,255,255,0.15); }
+.mockup-nav a:hover { color: var(--accent); }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #0a0a0a; font-weight: 700; }
+.mockup-nav a.back-link { color: var(--bg); opacity: 0.6; border-right: 0; margin-left: 8px; }
+.mockup-nav a.back-link:hover { opacity: 1; color: var(--accent); }
+
+/* Theme toggle */
+.ts { position: fixed; top: 44px; right: 16px; z-index: 200; display: inline-flex; background: var(--surface); border: 2px solid var(--border); font-family: var(--mono-font); font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+.ts button { background: transparent; border: 0; color: var(--text); padding: 5px 10px; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; }
+.ts button[aria-pressed="true"] { background: var(--text); color: var(--surface); }
+
+/* Masthead */
+header.masthead { background: var(--hero-bg); color: var(--hero-text); border-bottom: 2px solid var(--text); padding: 28px 24px; }
+.masthead-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+h1.masthead-title { font-family: var(--display-font); font-size: clamp(24px, 3.5vw, 38px); font-weight: 800; letter-spacing: -0.02em; margin: 0; text-transform: uppercase; }
+h1.masthead-title::before { content: "⚙"; margin-right: 10px; color: var(--accent); }
+.masthead-meta { font-family: var(--mono-font); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; display: flex; gap: 14px; align-items: center; }
+.masthead-meta .pill { background: var(--text); color: var(--hero-bg); padding: 3px 10px; font-weight: 700; }
+.masthead-sub { max-width: 1100px; margin: 8px auto 0; font-family: var(--mono-font); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--hero-text); opacity: 0.7; }
+
+/* Site nav strip */
+nav.strip { background: var(--text); color: var(--bg); padding: 10px 24px; font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; border-bottom: 2px solid var(--text); }
+.strip-row { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; align-items: center; overflow-x: auto; }
+nav.strip a { color: var(--bg); text-decoration: none; padding: 3px 12px; border-right: 1px solid rgba(255,255,255,0.2); }
+nav.strip a:hover { color: var(--accent); }
+nav.strip a[data-current="true"] { color: var(--accent); font-weight: 700; }
+nav.strip a:last-child { border-right: 0; }
+
+/* TOC nav */
+nav.toc { background: var(--surface-2); border-bottom: 2px solid var(--border); padding: 0 24px; font-family: var(--mono-font); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; overflow-x: auto; }
+nav.toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 0; }
+nav.toc a { display: block; padding: 9px 14px; color: var(--text-muted); text-decoration: none; border-right: 1px solid var(--border); }
+nav.toc a:hover { background: var(--surface-3); color: var(--text); }
+
+/* Main */
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; display: flex; flex-direction: column; gap: 24px; }
+
+/* Account cards */
+.account-card {
+  border: 2px solid var(--border);
+  background: var(--surface);
+}
+.account-card-head {
+  padding: 14px 20px;
+  background: var(--text); color: var(--bg);
+  font-family: var(--mono-font); font-size: 13px;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  border-bottom: 2px solid var(--border);
+}
+.account-card-body { padding: 20px; }
+.muted { color: var(--text-muted); font-size: 13px; margin: 0 0 18px; font-family: var(--mono-font); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.account-row {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 14px 0; border-top: 2px solid var(--border);
+}
+.account-row:first-child { border-top: 0; padding-top: 0; }
+.row-label {
+  font-family: var(--mono-font); font-size: 11px;
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-muted); min-width: 140px; flex-shrink: 0;
+}
+.row-value { font-size: 14px; color: var(--text); flex: 1; }
+
+/* Buttons */
+.btn-secondary {
+  padding: 8px 14px;
+  border: 2px solid var(--border);
+  background: var(--surface-2); color: var(--text);
+  font-family: var(--mono-font); font-size: 12px;
+  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  cursor: pointer; text-decoration: none; display: inline-block;
+}
+.btn-secondary:hover { border-color: var(--text); background: var(--surface-3); }
+.btn-danger {
+  padding: 10px 18px;
+  border: 2px solid var(--danger);
+  background: var(--danger-bg); color: var(--danger);
+  font-family: var(--mono-font); font-size: 13px;
+  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-danger:hover { background: var(--danger); color: #fff; }
+
+/* Language pref toggle */
+.lang-pref {
+  display: inline-flex; border: 2px solid var(--border);
+  font-family: var(--mono-font); font-size: 12px;
+}
+.lang-pref button {
+  background: transparent; border: 0; color: var(--text);
+  padding: 6px 14px; cursor: pointer;
+  font-family: inherit; font-size: inherit; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.lang-pref button[aria-pressed="true"] { background: var(--text); color: var(--surface); }
+.lang-pref button + button { border-left: 2px solid var(--border); }
+
+/* Danger zone */
+.danger-note {
+  font-family: var(--mono-font); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-muted); margin: 0 0 16px;
+}
+
+/* Footer */
+footer.site-footer { padding: 20px 24px; border-top: 2px solid var(--border); background: var(--bg); font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+footer.site-footer a { color: var(--text); }
+footer.site-footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Brutalist</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html" aria-current="page">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/integrated-mockup/index.html" class="back-link">← Comparison</a>
+  </div>
+</nav>
+
+<div class="ts" role="group" aria-label="Theme mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='brutalist-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='brutalist-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1 class="masthead-title">Account</h1>
+    <div class="masthead-meta">
+      <span class="pill">Linked · Active</span>
+      <span>Subscribed</span>
+    </div>
+  </div>
+  <p class="masthead-sub">Manage your subscription and saved articles</p>
+</header>
+
+<nav class="strip" aria-label="Site">
+  <div class="strip-row">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">[←] Daily digest</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">[★] Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html" data-current="true" data-backend-live="true" aria-current="page">Account</a>
+  </div>
+</nav>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">← Today's digest</a></li>
+    <li><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">★ Favourites</a></li>
+  </ul>
+</nav>
+
+<main data-testid="account-page" data-auth="linked" data-newsletter-state="subscribed">
+
+  <!-- Subscription card -->
+  <div class="account-card">
+    <div class="account-card-head">// Your subscription</div>
+    <div class="account-card-body">
+      <p class="muted">Signed in as <strong>alex@example.com</strong></p>
+
+      <div class="account-row">
+        <span class="row-label">Newsletter</span>
+        <span class="row-value" data-testid="newsletter-status">Subscribed · daily email at 07:00 Sydney</span>
+        <button type="button" class="btn-secondary" data-testid="unsubscribe-btn">Unsubscribe</button>
+      </div>
+
+      <div class="account-row">
+        <span class="row-label">Language</span>
+        <div class="lang-pref" role="tablist" aria-label="Email language" data-testid="lang-pref">
+          <button type="button" role="tab" data-lang="en" aria-pressed="true" data-testid="lang-pref-en">EN</button>
+          <button type="button" role="tab" data-lang="zh" aria-pressed="false" data-testid="lang-pref-zh">中文</button>
+        </div>
+      </div>
+
+      <div class="account-row">
+        <span class="row-label">Saved articles</span>
+        <span class="row-value">3 saved · synced across devices</span>
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html" class="btn-secondary">View favourites</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Danger zone -->
+  <div class="account-card">
+    <div class="account-card-head" style="background: var(--danger); color: #fff;">// Danger zone</div>
+    <div class="account-card-body">
+      <p class="danger-note">Delete everything we know about you. This cannot be undone.</p>
+      <div class="account-row" style="border-top: 0; padding-top: 0;">
+        <button type="button" class="btn-danger" data-testid="delete-data-btn">Delete my data</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div>Signed in as alex@example.com · <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">← Back to today's digest</a></div>
+  <div>AI Daily Digest</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="brutalist-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brutalist Theme — Home (BACKEND_LIVE) — AI Daily Digest</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-brutalist/tokens.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+
+/* ── Mockup nav strip ── */
+.mockup-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--text); color: var(--bg);
+  border-bottom: 2px solid var(--border);
+  padding: 7px 16px;
+  font-family: var(--mono-font);
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  overflow-x: auto; white-space: nowrap;
+}
+.mockup-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+.mockup-nav-label {
+  font-weight: 700; color: var(--accent);
+  padding-right: 12px; border-right: 2px solid var(--bg);
+  margin-right: 12px; flex-shrink: 0;
+}
+.mockup-nav a {
+  color: var(--bg); padding: 4px 10px;
+  font-weight: 500; text-decoration: none; flex-shrink: 0;
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+.mockup-nav a:hover { color: var(--accent); }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #0a0a0a; font-weight: 700; }
+.mockup-nav a.back-link { color: var(--bg); opacity: 0.6; border-right: 0; margin-left: 8px; }
+.mockup-nav a.back-link:hover { opacity: 1; color: var(--accent); }
+
+/* ── Theme toggle ── */
+.ts {
+  position: fixed; top: 44px; right: 16px; z-index: 200;
+  display: inline-flex; background: var(--surface);
+  border: 2px solid var(--border);
+  font-family: var(--mono-font); font-size: 10px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.ts button {
+  background: transparent; border: 0; color: var(--text);
+  padding: 5px 10px; cursor: pointer;
+  font-family: inherit; font-size: inherit; font-weight: 700;
+}
+.ts button[aria-pressed="true"] { background: var(--text); color: var(--surface); }
+
+/* ── Masthead (hazard-yellow) ── */
+header.masthead {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  border-bottom: 2px solid var(--text);
+  padding: 28px 24px;
+}
+.masthead-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 20px; flex-wrap: wrap;
+}
+h1.masthead-title {
+  font-family: var(--display-font);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-transform: uppercase;
+}
+h1.masthead-title::before { content: "▌"; margin-right: 8px; color: var(--accent); }
+.masthead-meta {
+  font-family: var(--mono-font);
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+}
+.masthead-meta .pill {
+  background: var(--text); color: var(--hero-bg);
+  padding: 3px 10px; font-weight: 700;
+}
+.masthead-tagline {
+  max-width: 1100px; margin: 8px auto 0;
+  font-family: var(--mono-font); font-size: 12px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--hero-text); opacity: 0.7;
+}
+
+/* ── Site nav strip (black bar) ── */
+nav.strip {
+  background: var(--text); color: var(--bg);
+  padding: 10px 24px;
+  font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.10em; text-transform: uppercase;
+  border-bottom: 2px solid var(--text);
+}
+.strip-row {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; gap: 0; align-items: center; flex-wrap: nowrap; overflow-x: auto;
+}
+nav.strip a { color: var(--bg); text-decoration: none; padding: 3px 12px; border-right: 1px solid rgba(255,255,255,0.2); }
+nav.strip a:hover { color: var(--accent); }
+nav.strip a[data-current="true"] { color: var(--accent); font-weight: 700; }
+nav.strip a:last-child { border-right: 0; }
+.strip-sep { color: rgba(255,255,255,0.3); margin: 0 4px; }
+
+/* ── TOC nav bar ── */
+nav.toc {
+  background: var(--surface-2); border-bottom: 2px solid var(--border);
+  padding: 0 24px;
+  font-family: var(--mono-font); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  overflow-x: auto;
+}
+nav.toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 0; }
+nav.toc a {
+  display: block; padding: 9px 14px;
+  color: var(--text-muted); text-decoration: none;
+  border-right: 1px solid var(--border);
+}
+nav.toc a:hover { background: var(--surface-3); color: var(--text); }
+
+/* ── Main container ── */
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+
+/* ── Section headings ── */
+h2.section-head {
+  font-family: var(--display-font);
+  font-size: 15px; font-weight: 800;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  margin: 40px 0 16px;
+  padding: 7px 12px;
+  background: var(--text); color: var(--bg);
+  display: inline-block;
+}
+h2.section-head:first-child { margin-top: 0; }
+.section-head .count { font-weight: 400; opacity: 0.6; margin-left: 10px; font-size: 12px; }
+p.section-sub {
+  color: var(--text-muted); font-size: 13px;
+  font-family: var(--mono-font); letter-spacing: 0.04em;
+  margin: -8px 0 16px;
+}
+
+/* ── Card grid ── */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 2px solid var(--border); }
+@media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+
+article.card {
+  padding: 20px 20px 16px;
+  border-right: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  background: var(--surface);
+  position: relative;
+}
+.grid > article.card:nth-child(2n) { border-right: 0; }
+.grid > article.card:last-child:nth-child(2n-1) { border-bottom: 0; }
+.grid > article.card:nth-last-child(-n+2) { border-bottom: 0; }
+@media (max-width: 720px) { .grid > article.card { border-right: 0; border-bottom: 2px solid var(--border); } }
+
+.card-meta {
+  font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 9px; display: flex; gap: 8px; align-items: center;
+}
+.card-meta .src { background: var(--text); color: var(--bg); padding: 2px 7px; font-weight: 700; }
+.card-meta .age { color: var(--text-muted); }
+
+h3.card-title {
+  font-family: var(--body-font); font-size: 18px;
+  font-weight: 700; line-height: 1.25;
+  margin: 0 0 10px; letter-spacing: -0.01em;
+}
+h3.card-title a { color: var(--text); text-decoration: none; border-bottom: 2px solid transparent; }
+h3.card-title a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+.card-summary { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+
+/* ── Favourite star ── */
+.fav-star {
+  position: absolute; top: 18px; right: 18px;
+  background: none; border: 2px solid var(--border);
+  font-size: 14px; cursor: pointer; padding: 3px 6px;
+  color: var(--text-muted); line-height: 1;
+}
+.fav-star:hover { border-color: var(--accent); color: var(--accent); }
+.fav-star[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+
+/* ── Editor's Cut ── */
+.editors-cut {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: var(--surface-3);
+  border: 2px solid var(--text);
+  font-size: 13.5px; line-height: 1.55; color: var(--text);
+}
+.editors-cut::before {
+  content: "// EDITOR'S CUT";
+  display: block;
+  font-family: var(--mono-font); font-size: 10px;
+  letter-spacing: 0.12em; font-weight: 700;
+  margin-bottom: 6px; color: var(--text);
+}
+
+/* ── Writing / builder list ── */
+ul.writing-list { list-style: none; padding: 0; margin: 0; border: 2px solid var(--border); }
+li.writing-item {
+  padding: 18px 18px 14px; background: var(--surface);
+  border-bottom: 2px solid var(--border); position: relative;
+}
+li.writing-item:last-child { border-bottom: 0; }
+a.writing-title {
+  display: block; font-size: 16px; font-weight: 700;
+  color: var(--text); text-decoration: none;
+  border-bottom: 2px solid transparent; padding-right: 36px;
+  line-height: 1.3;
+}
+a.writing-title:hover { border-bottom-color: var(--accent); color: var(--accent); }
+.writing-summary { margin: 6px 0 0; font-size: 13.5px; color: var(--text-muted); }
+.writing-meta {
+  margin-top: 8px; font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-tertiary);
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+
+/* ── Builder section ── */
+.builder-group-title {
+  font-family: var(--mono-font); font-size: 11px; font-weight: 700;
+  color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;
+  margin: 0 0 0; padding: 6px 10px;
+  background: var(--surface-2); border: 2px solid var(--border); border-bottom: 0;
+  display: block;
+}
+ul.builder-list { list-style: none; padding: 0; margin: 0; border: 2px solid var(--border); }
+li.builder-item {
+  padding: 16px 18px 12px; background: var(--surface);
+  border-bottom: 2px solid var(--border); position: relative;
+}
+li.builder-item:last-child { border-bottom: 0; }
+.builder-meta-top { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.builder-meta-top .handle { font-family: var(--mono-font); font-size: 12px; color: var(--text-muted); margin-left: 6px; }
+.builder-text { font-size: 14px; line-height: 1.55; color: var(--text); margin: 0; }
+.builder-meta {
+  margin-top: 8px; font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-tertiary);
+  display: flex; gap: 12px;
+}
+.builder-meta a { color: var(--accent); text-decoration: none; }
+.builder-meta a:hover { text-decoration: underline; }
+
+/* ── GH card ── */
+.gh-meta {
+  display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+  font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted);
+  margin-top: 10px;
+}
+.gh-lang { display: inline-flex; align-items: center; gap: 5px; }
+.gh-dot { display: inline-block; width: 8px; height: 8px; }
+.gh-owner { color: var(--text-muted); font-family: var(--mono-font); }
+.gh-slash { color: var(--text-tertiary); margin: 0 1px; font-family: var(--mono-font); }
+.gh-name { color: var(--text); font-family: var(--mono-font); font-weight: 700; }
+.stat { color: var(--text-muted); }
+.stat-today { color: var(--success); font-weight: 700; }
+
+/* ── HF card ── */
+.hf-stats, .hf-tags {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-muted); margin-top: 8px;
+}
+.tag {
+  background: var(--surface-2); border: 1px solid var(--border);
+  padding: 2px 7px; font-size: 10px; color: var(--text-muted);
+  font-family: var(--mono-font); text-transform: uppercase; letter-spacing: 0.05em;
+}
+
+/* ── Subscribe block ── */
+.subscribe {
+  margin-top: 56px;
+  padding: 32px 24px;
+  background: var(--text); color: var(--bg);
+  border: 2px solid var(--border);
+}
+.subscribe h3 {
+  font-family: var(--display-font); font-size: 22px;
+  text-transform: uppercase; letter-spacing: -0.01em; margin: 0 0 6px;
+  color: var(--bg);
+}
+.subscribe p {
+  color: var(--bg); opacity: 0.75; margin: 0 0 20px;
+  font-family: var(--mono-font); font-size: 12px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.subscribe form { display: flex; gap: 0; max-width: 520px; }
+.subscribe input[type="email"] {
+  flex: 1; padding: 12px 14px;
+  border: 2px solid var(--bg);
+  background: var(--text); color: var(--bg);
+  font-family: var(--mono-font); font-size: 14px; min-width: 0;
+}
+.subscribe input[type="email"]::placeholder { color: var(--bg); opacity: 0.35; }
+.subscribe button {
+  padding: 12px 22px;
+  border: 2px solid var(--bg); border-left: 0;
+  background: var(--accent); color: #0a0a0a;
+  font-family: var(--mono-font); font-size: 13px;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;
+}
+.subscribe button:hover { background: var(--bg); color: var(--text); }
+
+/* ── Footer ── */
+footer.site-footer {
+  padding: 20px 24px;
+  border-top: 2px solid var(--border);
+  background: var(--bg);
+  font-family: var(--mono-font); font-size: 11px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between;
+  max-width: 1100px; margin: 0 auto;
+}
+footer.site-footer a { color: var(--text); }
+footer.site-footer a:hover { color: var(--accent); }
+.source-status { display: flex; gap: 10px; flex-wrap: wrap; }
+.status-ok { color: var(--success); }
+</style>
+</head>
+<body>
+
+<!-- Mockup nav strip -->
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Brutalist</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html" aria-current="page">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/integrated-mockup/index.html" class="back-link">← Comparison</a>
+  </div>
+</nav>
+
+<!-- Light / dark toggle -->
+<div class="ts" role="group" aria-label="Theme mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='brutalist-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='brutalist-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<!-- Hazard-yellow masthead -->
+<header class="masthead" data-backend-live="true">
+  <div class="masthead-inner">
+    <h1 class="masthead-title">AI Daily Digest</h1>
+    <div class="masthead-meta">
+      <span class="pill">2026-05-17</span>
+      <span>SAT · 07:00 AEST · ISSUE 142</span>
+    </div>
+  </div>
+  <p class="masthead-tagline">What shipped, what trended, what AI builders are saying — labs · builders · r/LocalLLaMA · GitHub · HuggingFace · Chinese AI media</p>
+</header>
+
+<!-- Site nav (black strip) -->
+<nav class="strip" aria-label="Site">
+  <div class="strip-row">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html" data-current="true" aria-current="page">[★] Daily digest</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html" data-backend-live="true">Account</a>
+  </div>
+</nav>
+
+<!-- TOC nav -->
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="#models">[01] Models</a></li>
+    <li><a href="#products">[02] Products</a></li>
+    <li><a href="#industry">[03] Industry</a></li>
+    <li><a href="#papers">[04] Research</a></li>
+    <li><a href="#labs">[05] Lab posts</a></li>
+    <li><a href="#writing">[06] Simon Willison</a></li>
+    <li><a href="#builders">[07] Builder voices</a></li>
+    <li><a href="#llama">[08] r/LocalLLaMA</a></li>
+    <li><a href="#trending">[09] GitHub</a></li>
+    <li><a href="#hf">[10] HuggingFace</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- Models -->
+  <section id="models">
+    <h2 class="section-head">01 / Model drops &amp; updates <span class="count">2 stories</span></h2>
+    <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT).</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="aihot-a3f12b8c">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-a3f12b8c">☆</button>
+        <div class="card-meta"><span class="src">Anthropic · AIHOT</span><span class="age">2H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Claude 4.7 launches with 1M context window</a></h3>
+        <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+        <div class="editors-cut">
+          A 1M context window matters less for "fits a novel" and more for "fits a codebase and still has room for tool output and conversation history." The pricing parity is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.
+        </div>
+      </article>
+
+      <article class="card" data-article-id="aihot-7c3e9d1a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-7c3e9d1a">★</button>
+        <div class="card-meta"><span class="src">alibaba_cloud · AIHOT</span><span class="age">5H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Qwen3-Omni released as open weights</a></h3>
+        <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint. First open-weight model competitive at frontier sizes.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2 class="section-head">02 / Products &amp; applications <span class="count">2 stories</span></h2>
+    <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="aihot-b2d8e4f1">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-b2d8e4f1">☆</button>
+        <div class="card-meta"><span class="src">AIHOT</span><span class="age">3H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Cursor ships agent mode for the JetBrains line</a></h3>
+        <p class="card-summary">After 18 months of VS Code-only releases, Cursor's agent mode lands in IntelliJ, WebStorm, and PyCharm.</p>
+      </article>
+
+      <article class="card" data-article-id="aihot-d4f1c7b2">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-d4f1c7b2">☆</button>
+        <div class="card-meta"><span class="src">AIHOT</span><span class="age">4H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Perplexity launches paid Spaces for teams</a></h3>
+        <p class="card-summary">Shared research workspaces with team-wide context — first move into B2B for the search-first AI company.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Industry -->
+  <section id="industry">
+    <h2 class="section-head">03 / Industry moves <span class="count">1 story</span></h2>
+    <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="aihot-9f4c2a8b">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-9f4c2a8b">☆</button>
+        <div class="card-meta"><span class="src">AIHOT</span><span class="age">6H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Mistral raises $850M at $14B valuation</a></h3>
+        <p class="card-summary">Series C led by a16z values the French lab at roughly half OpenAI's last public round. European sovereign-AI narrative takes centre stage in the announcement.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="papers">
+    <h2 class="section-head">04 / Research highlights <span class="count">1 story</span></h2>
+    <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="aihot-e1b7d3c9">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-e1b7d3c9">☆</button>
+        <div class="card-meta"><span class="src">AIHOT</span><span class="age">8H ago</span></div>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Sparse Mixture-of-Routers: a 30% inference speedup with no quality loss</a></h3>
+        <p class="card-summary">DeepSeek + ETH Zürich paper proposing learned routing inside MoE layers instead of fixed top-k gating.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Lab posts -->
+  <section id="labs">
+    <h2 class="section-head">05 / Lab announcements <span class="count">1 story</span></h2>
+    <p class="section-sub">Latest posts from OpenAI's blog. (Anthropic doesn't publish RSS; their announcements surface via AIHOT above.)</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="labs-44ae3b21">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="labs-44ae3b21">☆</button>
+        <div class="card-meta"><span class="src">OpenAI</span><span class="age">4H ago</span></div>
+        <h3 class="card-title"><a href="https://openai.com/blog/o4-mini-high-deprecation" target="_blank" rel="noopener">o4-mini-high deprecation timeline announced</a></h3>
+        <p class="card-summary">OpenAI plans to retire o4-mini-high on August 1, 2026 — three months earlier than the typical 6-month notice window.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Simon Willison -->
+  <section id="writing">
+    <h2 class="section-head">06 / Simon Willison <span class="count">2 posts</span></h2>
+    <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon's weblog.</p>
+    <ul class="writing-list">
+      <li class="writing-item" data-article-id="builder-2f8c4e6a">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="builder-2f8c4e6a">☆</button>
+        <a class="writing-title" href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a>
+        <p class="writing-summary">Walks through a Tailscale + Firecracker setup so Claude Code can rm -rf whatever it wants and the host stays clean.</p>
+        <div class="writing-meta"><span>Simon Willison</span><span>· 3H ago</span></div>
+      </li>
+      <li class="writing-item" data-article-id="builder-8b2e1c5f">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="builder-8b2e1c5f">☆</button>
+        <a class="writing-title" href="https://simonwillison.net/2026/May/17/prompt-caching/" target="_blank" rel="noopener">Prompt caching strategies — a practical guide</a>
+        <p class="writing-summary">When to cache, when not to, and how to reason about the break-even point between cached tokens and rewrite-from-scratch.</p>
+        <div class="writing-meta"><span>Simon Willison</span><span>· 6H ago</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Builder voices -->
+  <section id="builders">
+    <h2 class="section-head">07 / Builder voices <span class="count">1 post</span></h2>
+    <p class="section-sub">Recent posts, episodes, and writing from named AI builders (via Follow Builders feeds).</p>
+    <span class="builder-group-title">X / Twitter</span>
+    <ul class="builder-list">
+      <li class="builder-item" data-article-id="follow-6b1d8f4e">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="follow-6b1d8f4e">☆</button>
+        <div class="builder-meta-top">Andrej Karpathy <span class="handle">@karpathy</span></div>
+        <p class="builder-text">If you're not running your training jobs against a held-out eval that includes your last 30 days of production failures, you don't have an eval. You have a benchmark.</p>
+        <div class="builder-meta">
+          <span>♥ 4321</span><span>↻ 891</span>
+          <a href="https://x.com/karpathy" target="_blank" rel="noopener">View on X ↗</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- r/LocalLLaMA -->
+  <section id="llama">
+    <h2 class="section-head">08 / r/LocalLLaMA <span class="count">1 post</span></h2>
+    <p class="section-sub">Top of the day from the open-source LLM community — model drops, runtime benchmarks, quantization tricks.</p>
+    <ul class="writing-list">
+      <li class="writing-item" data-article-id="llama-c7e2a9b3">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="llama-c7e2a9b3">☆</button>
+        <a class="writing-title" href="https://www.reddit.com/r/LocalLLaMA/" target="_blank" rel="noopener">Qwen3-Omni Q4_K_M GGUFs are up — 14GB, runs on a 16GB Mac</a>
+        <p class="writing-summary">Two-hour-old quantization from TheBloke's successor; community reports 18 tok/s on M2 Pro.</p>
+        <div class="writing-meta"><span>r/LocalLLaMA</span><span>· u/the_qwen_guy</span><span>· 2H ago</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- GitHub Trending -->
+  <section id="trending">
+    <h2 class="section-head">09 / Trending on GitHub <span class="count">2 repos</span></h2>
+    <p class="section-sub">Top trending repositories across all languages.</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="gh-9d4e1b7c">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="gh-9d4e1b7c">☆</button>
+        <div class="card-meta"><span class="src">GitHub trending</span><span class="age">Today</span></div>
+        <h3 class="card-title">
+          <a href="https://github.com/microsoft/vscode-claude" target="_blank" rel="noopener">
+            <span class="gh-owner">microsoft</span><span class="gh-slash">/</span><span class="gh-name">vscode-claude</span>
+          </a>
+        </h3>
+        <p class="card-summary">First-party Claude Code integration for VS Code — agent mode, file system tools, no API key required.</p>
+        <div class="gh-meta">
+          <span class="gh-lang"><span class="gh-dot" style="background:#3178c6"></span>TypeScript</span>
+          <span class="stat">★ 12,847</span>
+          <span class="stat-today">+2,134 today</span>
+        </div>
+      </article>
+
+      <article class="card" data-article-id="gh-1f3a8c2e">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="gh-1f3a8c2e">☆</button>
+        <div class="card-meta"><span class="src">GitHub trending</span><span class="age">Today</span></div>
+        <h3 class="card-title">
+          <a href="https://github.com/QwenLM/Qwen3-Omni" target="_blank" rel="noopener">
+            <span class="gh-owner">QwenLM</span><span class="gh-slash">/</span><span class="gh-name">Qwen3-Omni</span>
+          </a>
+        </h3>
+        <p class="card-summary">Official inference code for the Qwen3-Omni omnimodal model. Apache-2 licensed.</p>
+        <div class="gh-meta">
+          <span class="gh-lang"><span class="gh-dot" style="background:#3572A5"></span>Python</span>
+          <span class="stat">★ 8,219</span>
+          <span class="stat-today">+1,402 today</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HuggingFace -->
+  <section id="hf">
+    <h2 class="section-head">10 / HuggingFace <span class="count">1 model</span></h2>
+    <p class="section-sub">Open-weight models ranked by ♥ likes (closest stable proxy for trending).</p>
+    <div class="grid">
+
+      <article class="card" data-article-id="hf-1a7b3c5d">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="hf-1a7b3c5d">☆</button>
+        <div class="card-meta"><span class="src">HuggingFace</span><span class="age">Top today</span></div>
+        <h3 class="card-title"><a href="https://huggingface.co/Qwen/Qwen3-Omni-30B" target="_blank" rel="noopener">Qwen/Qwen3-Omni-30B</a></h3>
+        <div class="hf-stats">
+          <span class="stat">♥ 3,421</span>
+          <span class="stat">↓ 89,234</span>
+        </div>
+        <div class="hf-tags">
+          <span class="tag">omnimodal</span>
+          <span class="tag">apache-2.0</span>
+          <span class="tag">qwen</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <div class="subscribe" data-backend-live="true" data-testid="subscribe-section">
+    <h3>// Subscribe</h3>
+    <p>One email per day · 07:00 AEST · Bilingual EN / 中文 · Unsubscribe any time.</p>
+    <form data-testid="subscribe-form" onsubmit="event.preventDefault()">
+      <input type="email" placeholder="you@example.com" autocomplete="email" data-testid="subscribe-email-input">
+      <button type="submit" data-testid="subscribe-submit-btn">→ Submit</button>
+    </form>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    Snapshot 2026-05-17 07:00 UTC ·
+    <a href="https://github.com/rowland-dot/ai-daily-digest" target="_blank" rel="noopener">Source on GitHub</a> ·
+    <a href="/feed.xml">Atom feed</a>
+  </div>
+  <div class="source-status">
+    <span class="status-ok">aihot ✓</span>
+    <span class="status-ok">openai ✓</span>
+    <span class="status-ok">anthropic ✓</span>
+    <span class="status-ok">simon ✓</span>
+    <span class="status-ok">gh-trending ✓</span>
+    <span class="status-ok">huggingface ✓</span>
+    <span class="status-ok">r/localllama ✓</span>
+    <span class="status-ok">x-feed ✓</span>
+  </div>
+</footer>
+
+</body>
+</html>

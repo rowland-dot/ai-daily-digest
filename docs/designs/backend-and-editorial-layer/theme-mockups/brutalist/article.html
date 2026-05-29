@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="brutalist-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brutalist Theme — Translation page (CN source + EN excerpt) — AI Daily Digest</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-brutalist/tokens.css">
+<!--
+SEO HEAD ELEMENTS (per Spec B D7 / B13) — present on the live page:
+<link rel="canonical" href="https://www.aihot.com/articles/claude-4-7-launch">
+<link rel="alternate" hreflang="zh" href="https://www.aihot.com/articles/claude-4-7-launch">
+<link rel="alternate" hreflang="en" href="https://ai-daily-digest.example/articles/aihot-claude-4-7-launch-a3f12b8c/">
+-->
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+
+/* Mockup nav */
+.mockup-nav { position: sticky; top: 0; z-index: 100; background: var(--text); color: var(--bg); border-bottom: 2px solid var(--border); padding: 7px 16px; font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; overflow-x: auto; white-space: nowrap; }
+.mockup-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+.mockup-nav-label { font-weight: 700; color: var(--accent); padding-right: 12px; border-right: 2px solid var(--bg); margin-right: 12px; flex-shrink: 0; }
+.mockup-nav a { color: var(--bg); padding: 4px 10px; font-weight: 500; text-decoration: none; flex-shrink: 0; border-right: 1px solid rgba(255,255,255,0.15); }
+.mockup-nav a:hover { color: var(--accent); }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #0a0a0a; font-weight: 700; }
+.mockup-nav a.back-link { color: var(--bg); opacity: 0.6; border-right: 0; margin-left: 8px; }
+.mockup-nav a.back-link:hover { opacity: 1; color: var(--accent); }
+
+/* Theme toggle */
+.ts { position: fixed; top: 44px; right: 16px; z-index: 200; display: inline-flex; background: var(--surface); border: 2px solid var(--border); font-family: var(--mono-font); font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+.ts button { background: transparent; border: 0; color: var(--text); padding: 5px 10px; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; }
+.ts button[aria-pressed="true"] { background: var(--text); color: var(--surface); }
+
+/* Masthead */
+header.masthead { background: var(--hero-bg); color: var(--hero-text); border-bottom: 2px solid var(--text); padding: 28px 24px; }
+.masthead-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+h1.masthead-title { font-family: var(--display-font); font-size: clamp(16px, 2.5vw, 22px); font-weight: 800; letter-spacing: -0.01em; margin: 0; text-transform: uppercase; line-height: 1.2; max-width: 700px; }
+h1.masthead-title::before { content: "AIHOT →"; display: block; font-size: 10px; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 4px; }
+.masthead-meta { font-family: var(--mono-font); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; flex-shrink: 0; }
+.masthead-meta .pill { background: var(--text); color: var(--hero-bg); padding: 3px 10px; font-weight: 700; }
+
+/* Site nav strip */
+nav.strip { background: var(--text); color: var(--bg); padding: 10px 24px; font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; border-bottom: 2px solid var(--text); }
+.strip-row { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; align-items: center; overflow-x: auto; }
+nav.strip a { color: var(--bg); text-decoration: none; padding: 3px 12px; border-right: 1px solid rgba(255,255,255,0.2); }
+nav.strip a:hover { color: var(--accent); }
+nav.strip a:last-child { border-right: 0; }
+
+/* TOC nav */
+nav.toc { background: var(--surface-2); border-bottom: 2px solid var(--border); padding: 0 24px; font-family: var(--mono-font); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; overflow-x: auto; }
+nav.toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 0; }
+nav.toc a { display: block; padding: 9px 14px; color: var(--text-muted); text-decoration: none; border-right: 1px solid var(--border); }
+nav.toc a:hover { background: var(--surface-3); color: var(--text); }
+
+/* Main */
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+
+/* Article */
+.translation-article {
+  max-width: 720px;
+}
+
+.article-headline {
+  font-family: var(--body-font);
+  font-size: clamp(22px, 3.5vw, 32px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  color: var(--text);
+}
+
+.translation-attribution {
+  display: flex; gap: 0; flex-wrap: wrap;
+  border: 2px solid var(--border);
+  margin-bottom: 24px;
+  font-family: var(--mono-font); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.translation-attribution span {
+  padding: 8px 14px;
+  border-right: 2px solid var(--border);
+  color: var(--text-muted);
+}
+.translation-attribution span:last-child { border-right: 0; }
+.translation-attribution strong { color: var(--text); }
+
+/* CTA button */
+.translation-cta {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--accent); color: #0a0a0a;
+  border: 2px solid var(--text);
+  font-family: var(--mono-font); font-size: 13px;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  text-decoration: none; margin-bottom: 28px;
+}
+.translation-cta:hover { background: var(--text); color: var(--bg); }
+
+/* Body text */
+.translation-body p {
+  font-size: 16px; line-height: 1.7;
+  color: var(--text); margin: 0 0 18px;
+}
+.translation-body p:last-child { margin-bottom: 0; }
+
+/* Excerpt note */
+.excerpt-note {
+  margin-top: 24px;
+  padding: 14px 16px;
+  background: var(--surface-3);
+  border: 2px solid var(--border);
+  font-family: var(--mono-font); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.excerpt-note::before { content: "// NOTE"; font-weight: 700; margin-right: 8px; color: var(--text); }
+
+/* Footer */
+footer.site-footer { padding: 20px 24px; border-top: 2px solid var(--border); background: var(--bg); font-family: var(--mono-font); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+footer.site-footer a { color: var(--text); }
+footer.site-footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Brutalist</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html" aria-current="page">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/integrated-mockup/index.html" class="back-link">← Comparison</a>
+  </div>
+</nav>
+
+<div class="ts" role="group" aria-label="Theme mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='brutalist-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='brutalist-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1 class="masthead-title">Claude 4.7 launches with 1M context window</h1>
+    <div class="masthead-meta">
+      <span class="pill">EN Translation</span>
+      <span>CN source · 2026-05-17</span>
+    </div>
+  </div>
+</header>
+
+<nav class="strip" aria-label="Site">
+  <div class="strip-row">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">[←] Daily digest</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">[★] Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html" data-backend-live="true">Account</a>
+  </div>
+</nav>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">← Today's digest</a></li>
+    <li><a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">★ Favourites</a></li>
+  </ul>
+</nav>
+
+<main>
+  <article class="translation-article" data-testid="translation-article">
+    <h2 class="article-headline">Claude 4.7 launches with 1M context window</h2>
+
+    <div class="translation-attribution">
+      <span><strong>Source:</strong> AIHOT</span>
+      <span><strong>Published:</strong> 2026-05-17 (Beijing time)</span>
+      <span><strong>Language:</strong> 中文 (Chinese)</span>
+    </div>
+
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+      → Read original (中文)
+    </a>
+
+    <div class="translation-body">
+      <p>Anthropic today shipped Claude 4.7, the first frontier-tier model with a 1 million-token context window available to all API users from day one. The launch matches the announcement made at Anthropic's developer day last week but arrives two weeks ahead of the projected release date. Pricing remains identical to the previous Opus tier: $15 per million input tokens and $75 per million output tokens, with prompt-caching discounts unchanged.</p>
+
+      <p>The 1M context window puts Claude 4.7 ahead of OpenAI's most generous Responses-API offering (512K, rolled out quietly last week) and well past Gemini Pro 2.5's 2M-token ceiling — though Gemini's window has historically come with sharper degradation past the 200K mark. Anthropic's internal benchmarks show Claude 4.7 maintaining recall accuracy above 95% out to the full 1M tokens; independent third-party verification is not yet available but the AIDanBench team has reportedly begun testing.</p>
+
+      <p>Behind the headline number, the more interesting shift is what Anthropic is asking developers to do with the additional context. The launch blog post emphasises tool-output retention ("keep the last 200 tool calls in context"), multi-document analysis ("entire 50-paper literature review in one prompt"), and long-running agentic workflows. Less discussed publicly: the team has been quietly preparing for Claude to read entire codebases by default, with a separate codebase-indexing API in private beta to a handful of enterprise customers.</p>
+
+      <div class="excerpt-note">
+        3-paragraph EN excerpt of the original article. Read the full piece in 中文 at AIHOT.
+      </div>
+    </div>
+
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta-bottom" style="margin-top: 24px; display: inline-block;">
+      → Read original (中文)
+    </a>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div>
+    Translation excerpt published 2026-05-17 ·
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">AI Daily Digest</a> ·
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">View original (中文)</a>
+  </div>
+  <div>AI Daily Digest</div>
+</footer>
+
+</body>
+</html>

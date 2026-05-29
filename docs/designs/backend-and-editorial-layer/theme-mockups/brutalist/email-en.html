@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brutalist Theme — Daily email, EN body — AI Daily Digest</title>
+<style>
+  /* Outer mockup chrome only — DOES NOT ship in the real email. */
+  .mockup-nav {
+    position: sticky; top: 0; z-index: 50;
+    background: #0a0a0a; color: #f4f4f0;
+    border-bottom: 2px solid #0a0a0a;
+    padding: 7px 16px;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    overflow-x: auto; white-space: nowrap;
+  }
+  .mockup-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 0; }
+  .mockup-nav-label { font-weight: 700; color: #ff3d00; padding-right: 12px; border-right: 2px solid #f4f4f0; margin-right: 12px; flex-shrink: 0; }
+  .mockup-nav a { color: #f4f4f0; padding: 4px 10px; font-weight: 500; text-decoration: none; flex-shrink: 0; border-right: 1px solid rgba(255,255,255,0.15); }
+  .mockup-nav a:hover { color: #ff3d00; }
+  .mockup-nav a[aria-current="page"] { background: #ff3d00; color: #0a0a0a; font-weight: 700; }
+  .mockup-nav a.back-link { color: #f4f4f0; opacity: 0.6; border-right: 0; margin-left: 8px; }
+  .mockup-nav a.back-link:hover { opacity: 1; color: #ff3d00; }
+  .email-intro {
+    max-width: 600px; margin: 14px auto 6px; padding: 0 16px;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+    color: #4a4a48; font-size: 12px; text-align: center;
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<!-- Email outer bg: near-black to match Brutalist dark aesthetic as email shell -->
+<body style="margin:0; padding:0; background:#f4f4f0; font-family:'Inter','IBM Plex Sans',-apple-system,BlinkMacSystemFont,system-ui,sans-serif; color:#0a0a0a; line-height:1.5;">
+
+<!-- Mockup nav chrome — NOT shipped in real email -->
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Brutalist</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/brutalist/email-en.html" aria-current="page">Email</a>
+    <a href="/designs/backend-and-editorial-layer/integrated-mockup/index.html" class="back-link">← Comparison</a>
+  </div>
+</nav>
+
+<p class="email-intro">Daily email body sent at 07:00 Sydney to EN subscribers. Inline styles only (email-client safe).</p>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     REAL EMAIL BODY STARTS HERE — everything below ships as HTML email
+     ═══════════════════════════════════════════════════════════════ -->
+<div data-testid="email-body-wrap">
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f4f4f0; padding:24px 12px;">
+  <tr><td align="center">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" data-testid="email-body" style="max-width:600px; width:100%; background:#ffffff; border:2px solid #0a0a0a;">
+
+      <!-- ── MASTHEAD (hazard yellow) ── -->
+      <tr>
+        <td style="background:#ffff00; border-bottom:2px solid #0a0a0a; padding:24px 24px 20px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td>
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono','SF Mono',Menlo,Consolas,monospace; font-size:26px; font-weight:800; letter-spacing:-0.02em; text-transform:uppercase; color:#0a0a0a; margin:0;">
+                  <span style="color:#ff3d00; margin-right:8px;">▌</span>AI DAILY DIGEST
+                </div>
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono','SF Mono',Menlo,Consolas,monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.10em; color:#0a0a0a; margin:8px 0 0; opacity:0.75;">
+                  SAT 17 MAY 2026 &nbsp;·&nbsp; 07:00 AEST &nbsp;·&nbsp; ISSUE 142 &nbsp;·&nbsp; EDITOR'S CUT
+                </div>
+              </td>
+              <td align="right" valign="top">
+                <div style="background:#0a0a0a; color:#ffff00; font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:4px 10px; white-space:nowrap;">EN</div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── EDITOR'S CUT label ── -->
+      <tr>
+        <td style="background:#0a0a0a; padding:10px 24px; border-bottom:2px solid #0a0a0a;">
+          <div style="font-family:'JetBrains Mono','IBM Plex Mono','SF Mono',Menlo,Consolas,monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.14em; color:#ff3d00;">// TODAY'S EDITOR'S CUT</div>
+        </td>
+      </tr>
+
+      <!-- ── Narrative ── -->
+      <tr>
+        <td style="padding:24px 24px 8px; background:#ffffff;">
+          <p style="margin:0 0 14px; font-size:15px; line-height:1.7; color:#0a0a0a;">
+            The dominant story today isn't a single model — it's that the major labs are converging on the same competitive surface: context length. Anthropic shipped Claude 4.7 at 1M tokens, the Qwen team open-sourced an omnimodal checkpoint, and OpenAI quietly extended Responses-API context to 512K. Everyone is fighting for room to fit your codebase, your conversation history, and a few thousand lines of tool output simultaneously.
+          </p>
+          <p style="margin:0 0 14px; font-size:15px; line-height:1.7; color:#0a0a0a;">
+            Meanwhile, the open-source side is still about cost. r/LocalLLaMA spent the day discussing how cheap a 70B model can run on consumer GPUs — and the answer keeps getting cheaper. The two trajectories (frontier labs scaling context, open-source compressing inference) are converging on the same end-user: someone who used to think 32K was generous.
+          </p>
+          <p style="margin:0; font-size:15px; line-height:1.7; color:#0a0a0a;">
+            Six picks below. The Anthropic and Qwen launches are the can't-miss ones; everything else is supporting context.
+          </p>
+        </td>
+      </tr>
+
+      <!-- ── TODAY'S PICKS header ── -->
+      <tr>
+        <td style="padding:20px 24px 12px; background:#ffffff;">
+          <div style="background:#0a0a0a; color:#f4f4f0; font-family:'JetBrains Mono','IBM Plex Mono','SF Mono',Menlo,Consolas,monospace; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; padding:8px 12px; display:inline-block;">// TODAY'S PICKS</div>
+        </td>
+      </tr>
+
+      <!-- ── Pick 1: Anthropic ── -->
+      <tr>
+        <td style="padding:0 24px 16px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="border-left:4px solid #ff3d00; padding-left:14px;">
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; color:#4a4a48; margin-bottom:5px;">ANTHROPIC · AIHOT · 2H AGO</div>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-a3f12b8c" style="font-size:17px; font-weight:700; color:#0a0a0a; text-decoration:none; display:block; margin-bottom:6px; line-height:1.3;">Claude 4.7 launches with 1M context window</a>
+                <p style="margin:0; font-size:13.5px; color:#4a4a48; line-height:1.55;">The pricing parity with Opus is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Pick 2: Qwen ── -->
+      <tr>
+        <td style="padding:0 24px 16px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="border-left:4px solid #ff3d00; padding-left:14px;">
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; color:#4a4a48; margin-bottom:5px;">alibaba_cloud · AIHOT · 5H AGO</div>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-qwen-omni" style="font-size:17px; font-weight:700; color:#0a0a0a; text-decoration:none; display:block; margin-bottom:6px; line-height:1.3;">Qwen3-Omni open-sourced at 32B parameters</a>
+                <p style="margin:0; font-size:13.5px; color:#4a4a48; line-height:1.55;">First open-weight omnimodal model competitive at frontier sizes. Expect a flood of fine-tunes within the week.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Pick 3: Simon ── -->
+      <tr>
+        <td style="padding:0 24px 16px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="border-left:4px solid #ff3d00; padding-left:14px;">
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; color:#4a4a48; margin-bottom:5px;">Simon Willison · 3H AGO</div>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=simon-prompt-caching" style="font-size:17px; font-weight:700; color:#0a0a0a; text-decoration:none; display:block; margin-bottom:6px; line-height:1.3;">Prompt caching strategies — a practical guide</a>
+                <p style="margin:0; font-size:13.5px; color:#4a4a48; line-height:1.55;">A practical guide already becoming the reference for new builders trying to keep API bills under control.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Pick 4: OpenAI ── -->
+      <tr>
+        <td style="padding:0 24px 16px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="border-left:4px solid #ff3d00; padding-left:14px;">
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; color:#4a4a48; margin-bottom:5px;">OpenAI · 4H AGO</div>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=openai-responses-512k" style="font-size:17px; font-weight:700; color:#0a0a0a; text-decoration:none; display:block; margin-bottom:6px; line-height:1.3;">OpenAI quietly extends Responses API to 512K context</a>
+                <p style="margin:0; font-size:13.5px; color:#4a4a48; line-height:1.55;">No blog post, no fanfare — just an API doc update. The pattern matches GPT-4 Turbo's 128K rollout strategy.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Pick 5: GitHub ── -->
+      <tr>
+        <td style="padding:0 24px 16px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="border-left:4px solid #ff3d00; padding-left:14px;">
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; color:#4a4a48; margin-bottom:5px;">GitHub trending · +2,134 stars</div>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=gh-vscode-claude" style="font-size:17px; font-weight:700; color:#0a0a0a; text-decoration:none; display:block; margin-bottom:6px; line-height:1.3;">microsoft/vscode-claude tops GitHub trending</a>
+                <p style="margin:0; font-size:13.5px; color:#4a4a48; line-height:1.55;">First-party Claude Code integration for VS Code — agent mode, file system tools, no API key required for Anthropic subscribers.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Pick 6: exa-labs ── -->
+      <tr>
+        <td style="padding:0 24px 24px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="border-left:4px solid #ff3d00; padding-left:14px;">
+                <div style="font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; color:#4a4a48; margin-bottom:5px;">exa-labs · GitHub · +2.1K stars</div>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=exa-mcp" style="font-size:17px; font-weight:700; color:#0a0a0a; text-decoration:none; display:block; margin-bottom:6px; line-height:1.3;">exa-labs/exa-mcp — production-grade web search MCP server</a>
+                <p style="margin:0; font-size:13.5px; color:#4a4a48; line-height:1.55;">Drop-in MCP server for Claude Code and Codex CLI. Handles citation extraction, content distillation, and rate-limited search across 12 providers.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── CTA ── -->
+      <tr>
+        <td style="padding:0 24px 24px; text-align:center;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td style="background:#ff3d00; border:2px solid #0a0a0a;">
+                <a href="https://ai-daily-digest.example/?ref=email-en" style="display:block; padding:12px 24px; font-family:'JetBrains Mono','IBM Plex Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#0a0a0a; text-decoration:none;">→ READ ALL PICKS ON THE SITE</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Footer ── -->
+      <tr>
+        <td style="padding:18px 24px; background:#0a0a0a; border-top:2px solid #0a0a0a;">
+          <div style="font-family:'JetBrains Mono','IBM Plex Mono','SF Mono',Menlo,Consolas,monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.10em; color:#a8a8a4; text-align:center; line-height:1.8;">
+            <div style="margin-bottom:8px;">You're getting this because you subscribed to AI Daily Digest in English.</div>
+            <div>
+              <a href="https://ai-daily-digest.example/account" style="color:#ff6b35; text-decoration:none; font-weight:700;">Manage account</a>
+              &nbsp;·&nbsp;
+              <a href="https://ai-daily-digest.example/account?lang=zh" style="color:#ff6b35; text-decoration:none; font-weight:700;">Switch to 中文</a>
+              &nbsp;·&nbsp;
+              <a href="{{ beehiiv_unsubscribe_url }}" style="color:#ff6b35; text-decoration:none; font-weight:700;">Unsubscribe</a>
+            </div>
+            <div style="margin-top:10px; color:#6a6a66;">AI Daily Digest &nbsp;·&nbsp; ai-daily-digest.example &nbsp;·&nbsp; Open source</div>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </td></tr>
+</table>
+
+</div>
+<!-- END real email body -->
+
+</body>
+</html>
