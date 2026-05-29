@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theme Shotgun — AI Daily Digest</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root {
+      --bg: #f7f6f3;
+      --surface: #fff;
+      --text: #1a1a1a;
+      --muted: #666;
+      --border: #e0ddd5;
+      --accent: #c75c3c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #14110d; --surface: #1d1a16; --text: #ecebe6; --muted: #999; --border: #2d2a25; --accent: #e08a72; }
+    }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      padding: 56px 24px 32px;
+      max-width: 1280px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .kicker {
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); font-weight: 600;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(32px, 4.5vw, 44px);
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 720px;
+      margin: 0;
+    }
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+    @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+    .card-shots {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 0;
+      background: #000;
+      aspect-ratio: 16 / 9;
+    }
+    .card-shots .desktop, .card-shots .mobile {
+      width: 100%; height: 100%;
+      overflow: hidden;
+      background: #fff;
+    }
+    .card-shots img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .card-shots .mobile { border-left: 2px solid var(--bg); }
+    .card-body {
+      padding: 22px 24px 24px;
+      display: flex; flex-direction: column;
+      gap: 8px;
+    }
+    .num {
+      font-family: 'SF Mono', Menlo, monospace;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .name {
+      font-size: 22px; font-weight: 700;
+      letter-spacing: -0.015em;
+      margin: 0;
+    }
+    .stance {
+      font-size: 14px;
+      color: var(--text);
+      margin: 0;
+    }
+    .audience {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin: 4px 0 0;
+    }
+    .links {
+      margin-top: 14px;
+      display: flex; gap: 12px; flex-wrap: wrap;
+    }
+    .links a {
+      font-size: 13px; font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .links a:hover { background: var(--accent); color: var(--bg); }
+    .links a.secondary {
+      color: var(--muted); border-color: var(--border);
+    }
+    .links a.secondary:hover { background: var(--surface); color: var(--text); border-color: var(--text); }
+
+    .notes {
+      margin: 56px auto 0;
+      max-width: 720px;
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .notes h2 { margin: 0 0 10px; font-size: 18px; }
+    .notes p { color: var(--muted); margin: 0 0 8px; font-size: 14.5px; }
+    .notes ol { color: var(--muted); margin: 8px 0 0; padding-left: 20px; font-size: 14.5px; }
+    .notes li { margin: 6px 0; }
+    .notes strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="kicker">Design exploration · AI Daily Digest</div>
+    <h1>Theme Shotgun — four directions</h1>
+    <p class="lede">Four distinct theme directions for AI Daily Digest on <code>feat/backend-and-editorial-layer</code>. Each one is a fundamentally different aesthetic stance, not a tweak. Open the previews, read the rationale, pick a lane.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-shots">
+          <div class="desktop"><img src="screenshots/editorial-desktop.png" alt="Editorial desktop preview"></div>
+          <div class="mobile"><img src="screenshots/editorial-mobile.png" alt="Editorial mobile preview"></div>
+        </div>
+        <div class="card-body">
+          <div class="num">Direction 01 · editorial</div>
+          <h3 class="name">Editorial / Magazine</h3>
+          <p class="stance">NYT-Wirecutter / Substack premium. Serif display, oxblood single accent, mono metadata, square corners, content-first hierarchy. Editor's Cut as pull-quote.</p>
+          <p class="audience">For readers who treat news as a daily ritual. The cut is the centrepiece.</p>
+          <div class="links">
+            <a href="/designs/backend-and-editorial-layer/theme-shotgun/theme-editorial/preview.html">Open preview</a>
+            <a class="secondary" href="theme-editorial/RATIONALE.md">Rationale</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-shots">
+          <div class="desktop"><img src="screenshots/brutalist-desktop.png" alt="Brutalist desktop preview"></div>
+          <div class="mobile"><img src="screenshots/brutalist-mobile.png" alt="Brutalist mobile preview"></div>
+        </div>
+        <div class="card-body">
+          <div class="num">Direction 02 · brutalist</div>
+          <h3 class="name">Brutalist / no-bullshit</h3>
+          <p class="stance">Linear marketing + Ben Holliday. Zero radius, hard 2px borders, hazard-yellow masthead, signal-orange accent. Mono chrome, geometric sans body.</p>
+          <p class="audience">For readers who keep Hacker News open in another tab. Tools, not entertainment.</p>
+          <div class="links">
+            <a href="/designs/backend-and-editorial-layer/theme-shotgun/theme-brutalist/preview.html">Open preview</a>
+            <a class="secondary" href="theme-brutalist/RATIONALE.md">Rationale</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-shots">
+          <div class="desktop"><img src="screenshots/cyber-desktop.png" alt="Cyber desktop preview"></div>
+          <div class="mobile"><img src="screenshots/cyber-mobile.png" alt="Cyber mobile preview"></div>
+        </div>
+        <div class="card-body">
+          <div class="num">Direction 03 · cyber</div>
+          <h3 class="name">Cyber / Terminal</h3>
+          <p class="stance">Dracula-derived. JetBrains Mono everywhere, syntax-highlight palette, shell-prompt masthead with blinking cursor. Editor's Cut as /* comment */ block.</p>
+          <p class="audience">For the r/LocalLLaMA / model-trafficker audience. Closest match to the product's sources.</p>
+          <div class="links">
+            <a href="/designs/backend-and-editorial-layer/theme-shotgun/theme-cyber/preview.html">Open preview</a>
+            <a class="secondary" href="theme-cyber/RATIONALE.md">Rationale</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-shots">
+          <div class="desktop"><img src="screenshots/soft-desktop.png" alt="Soft desktop preview"></div>
+          <div class="mobile"><img src="screenshots/soft-mobile.png" alt="Soft mobile preview"></div>
+        </div>
+        <div class="card-body">
+          <div class="num">Direction 04 · soft</div>
+          <h3 class="name">Soft contemporary</h3>
+          <p class="stance">Modern, friendly. System fonts, sage-green accent (not SaaS-blue), warm off-white bg, soft three-colour hero gradient, 12px card radius, micro-lift hover.</p>
+          <p class="audience">For broader audience — PMs, designers, AI-curious technical readers.</p>
+          <div class="links">
+            <a href="/designs/backend-and-editorial-layer/theme-shotgun/theme-soft/preview.html">Open preview</a>
+            <a class="secondary" href="theme-soft/RATIONALE.md">Rationale</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <aside class="notes">
+      <h2>How to choose</h2>
+      <ol>
+        <li><strong>Voice of the Editor's Cut.</strong> The cut is the product's signature. Look at how each theme renders it: pull-quote (editorial), sticky note (brutalist), <code>/* comment */</code> (cyber), tinted card (soft). Right theme = cut feels at home.</li>
+        <li><strong>Audience expansion.</strong> Editorial → magazine readers. Brutalist → holds technical, signals serious. Cyber → narrows to model-trafficker. Soft → broader, less distinct.</li>
+        <li><strong>Bilingual EN+中文.</strong> Editorial and soft handle CJK gracefully. Cyber's mono-everywhere bet weakens. Brutalist translates structurally but loses some character.</li>
+        <li><strong>Brand for years, not for now.</strong> Editorial / cyber are long-running lineages. Brutalist is current. Soft is "fits in".</li>
+      </ol>
+    </aside>
+  </main>
+</body>
+</html>
