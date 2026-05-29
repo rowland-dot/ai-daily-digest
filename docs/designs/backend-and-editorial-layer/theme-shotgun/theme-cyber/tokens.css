@@ -1,0 +1,78 @@
+/* Cyber / terminal-inspired theme
+ * Aesthetic stance: vim + tmux + Hacker News + Soundcloud's neon era.
+ * Mono everywhere, code-editor energy, syntax-highlight palette.
+ * Dark default; light is a "paper terminal" inversion.
+ */
+
+[data-theme="cyber-dark"] {
+  --bg: #07080a;                     /* near-black with cool tint */
+  --surface: #0d0f12;
+  --surface-2: #131619;
+  --surface-3: #1a1d22;
+  --text: #d4d4d4;                   /* not pure white — terminal foreground */
+  --text-muted: #858585;
+  --text-tertiary: #5a5a5a;
+  --border: #1f2329;
+  --border-strong: #2e333a;
+  --accent: #50fa7b;                 /* dracula green */
+  --accent-hover: #80ffa0;
+  --accent-soft: rgba(80, 250, 123, 0.10);
+  --link: #8be9fd;                   /* dracula cyan */
+  --link-hover: #bdf2ff;
+  --shadow: 0 0 0 1px rgba(80, 250, 123, 0.08), 0 8px 24px rgba(0,0,0,0.5);
+  --display-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  --body-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  --mono-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  --tracking-tight: 0em;
+  --hero-bg: radial-gradient(circle at 30% 0%, #131619 0%, #07080a 60%);
+  --hero-text: #d4d4d4;
+  --hero-accent: #50fa7b;
+  --radius: 2px;
+  --radius-lg: 4px;
+  /* Syntax-highlight family for source labels */
+  --syn-string: #f1fa8c;             /* yellow — strings */
+  --syn-keyword: #ff79c6;            /* pink — keywords */
+  --syn-fn: #50fa7b;                 /* green — functions */
+  --syn-num: #bd93f9;                /* purple — numbers */
+  --syn-comment: #6272a4;            /* slate — comments */
+  --danger: #ff5555;
+  --danger-bg: rgba(255, 85, 85, 0.10);
+  --success: #50fa7b;
+  --success-bg: rgba(80, 250, 123, 0.10);
+}
+
+[data-theme="cyber-light"] {
+  --bg: #f6f6f0;                     /* paper terminal */
+  --surface: #ffffff;
+  --surface-2: #ecece4;
+  --surface-3: #e0e0d4;
+  --text: #1a1c20;
+  --text-muted: #555861;
+  --text-tertiary: #888c95;
+  --border: #d4d4c8;
+  --border-strong: #a8a89c;
+  --accent: #008f4c;                 /* deeper green for legibility */
+  --accent-hover: #006d3a;
+  --accent-soft: rgba(0, 143, 76, 0.10);
+  --link: #0066b3;
+  --link-hover: #004a82;
+  --shadow: 0 1px 2px rgba(0,0,0,0.05), 0 6px 16px rgba(0,0,0,0.06);
+  --display-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  --body-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  --mono-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  --tracking-tight: 0em;
+  --hero-bg: linear-gradient(180deg, #ecece4 0%, #f6f6f0 100%);
+  --hero-text: #1a1c20;
+  --hero-accent: #008f4c;
+  --radius: 2px;
+  --radius-lg: 4px;
+  --syn-string: #b58900;
+  --syn-keyword: #c4286e;
+  --syn-fn: #008f4c;
+  --syn-num: #6c3fbc;
+  --syn-comment: #708090;
+  --danger: #c8281e;
+  --danger-bg: rgba(200, 40, 30, 0.06);
+  --success: #008f4c;
+  --success-bg: rgba(0, 143, 76, 0.06);
+}

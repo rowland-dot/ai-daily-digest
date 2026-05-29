@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" data-theme="cyber-dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Digest — Cyber theme</title>
+  <link rel="stylesheet" href="./tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+    }
+
+    .ts {
+      position: fixed; top: 12px; right: 12px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 0; font-size: 11px;
+      font-family: var(--mono-font);
+      box-shadow: var(--shadow);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 6px 12px; cursor: pointer;
+      font-family: inherit; font-size: inherit;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #07080a; font-weight: 700; }
+
+    /* Header — terminal prompt */
+    header.term {
+      background: var(--hero-bg);
+      color: var(--hero-text);
+      padding: 36px 24px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .term-row { max-width: 980px; margin: 0 auto; }
+    .prompt {
+      font-family: var(--mono-font);
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .prompt .user { color: var(--syn-fn); }
+    .prompt .host { color: var(--syn-keyword); }
+    .prompt .path { color: var(--link); }
+    h1.term-title {
+      font-family: var(--display-font);
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 600;
+      letter-spacing: 0;
+      margin: 0 0 6px;
+      color: var(--hero-text);
+    }
+    h1.term-title .blink {
+      color: var(--accent);
+      animation: blink 1.05s steps(2, end) infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .term-meta {
+      font-family: var(--mono-font); font-size: 12px;
+      color: var(--text-muted); margin-top: 8px;
+    }
+    .term-meta .comment { color: var(--syn-comment); }
+    .term-meta .str { color: var(--syn-string); }
+    .term-meta .num { color: var(--syn-num); }
+
+    nav.tabs {
+      max-width: 980px; margin: 0 auto;
+      padding: 0 24px;
+      display: flex; gap: 0; flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 12px;
+    }
+    nav.tabs a {
+      padding: 12px 16px;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+    }
+    nav.tabs a:hover { color: var(--text); border-bottom-color: var(--border-strong); }
+    nav.tabs a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    main { max-width: 980px; margin: 0 auto; padding: 28px 24px; }
+
+    h2.section-head {
+      font-family: var(--display-font);
+      font-size: 14px;
+      font-weight: 600;
+      margin: 32px 0 14px;
+      color: var(--text);
+      display: flex; align-items: center; gap: 10px;
+    }
+    h2.section-head::before {
+      content: "▸";
+      color: var(--accent);
+    }
+    h2.section-head .count {
+      color: var(--syn-comment);
+      font-weight: 400;
+      margin-left: 4px;
+    }
+
+    /* Cards as code-block-ish surfaces */
+    .stack { display: flex; flex-direction: column; gap: 12px; }
+
+    article.card {
+      padding: 16px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: border-color 0.12s ease, background 0.12s ease;
+    }
+    article.card:hover { border-color: var(--accent); background: var(--surface-2); }
+
+    .card-meta {
+      font-family: var(--mono-font);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .card-meta .src { color: var(--syn-fn); }
+    .card-meta .args { color: var(--syn-string); }
+    .card-meta .num { color: var(--syn-num); }
+    .card-meta .comment { color: var(--syn-comment); }
+    h3.card-title {
+      font-family: var(--display-font);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin: 0 0 8px;
+    }
+    h3.card-title a { color: var(--link); text-decoration: none; }
+    h3.card-title a:hover { color: var(--link-hover); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+    .card-summary {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Editor's Cut — comment block */
+    .editors-cut {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: var(--bg);
+      border-left: 2px solid var(--syn-comment);
+      font-family: var(--mono-font);
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text);
+    }
+    .editors-cut::before {
+      content: "/* editor's cut */";
+      display: block;
+      color: var(--syn-comment);
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+
+    /* Subscribe block */
+    .subscribe {
+      margin-top: 40px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+    .subscribe .lead {
+      font-family: var(--mono-font);
+      font-size: 12px;
+      color: var(--syn-comment);
+      margin-bottom: 4px;
+    }
+    .subscribe h3 {
+      font-family: var(--display-font);
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 4px;
+      color: var(--accent);
+    }
+    .subscribe p {
+      color: var(--text-muted);
+      margin: 0 0 16px;
+      font-size: 13px;
+    }
+    .subscribe form { display: flex; gap: 8px; max-width: 460px; flex-wrap: wrap; }
+    .subscribe input[type="email"] {
+      flex: 1; min-width: 200px;
+      padding: 10px 12px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--mono-font); font-size: 13px;
+      border-radius: var(--radius);
+    }
+    .subscribe input[type="email"]:focus { outline: 0; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+    .subscribe button {
+      padding: 10px 18px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #07080a;
+      font-family: var(--mono-font); font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: var(--radius);
+    }
+    .subscribe button:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+    .subscribe button::before { content: "$ "; opacity: 0.6; }
+
+    /* Footer */
+    footer {
+      margin-top: 56px;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 11px;
+      color: var(--text-tertiary);
+      max-width: 980px;
+      margin-left: auto; margin-right: auto;
+      display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between;
+    }
+    footer a { color: var(--text-muted); margin-right: 12px; }
+    footer a:hover { color: var(--accent); }
+    footer .ascii { color: var(--syn-comment); }
+  </style>
+</head>
+<body>
+  <div class="ts" role="group" aria-label="Theme">
+    <button aria-pressed="true" onclick="document.documentElement.dataset.theme='cyber-dark';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">dark</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='cyber-light';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">light</button>
+  </div>
+
+  <header class="term">
+    <div class="term-row">
+      <div class="prompt"><span class="user">reader</span>@<span class="host">digest</span>:<span class="path">~/2026-05-30</span>$ cat today.md<span style="color: var(--accent)">▌</span></div>
+      <h1 class="term-title">ai-daily-digest <span class="blink">_</span></h1>
+      <div class="term-meta">
+        <span class="comment">// </span><span class="str">"2026-05-30"</span><span class="comment"> · </span><span class="num">23</span><span class="comment"> stories · </span><span class="num">06:00</span><span class="comment"> AEST · issue </span><span class="num">142</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <a href="#" class="active">~/today</a>
+    <a href="#">~/archive</a>
+    <a href="#">~/favs</a>
+    <a href="#">~/feed.atom</a>
+    <a href="#">~/zh</a>
+    <a href="#">~/about</a>
+  </nav>
+
+  <main>
+    <h2 class="section-head">model_drops <span class="count">(4)</span></h2>
+    <div class="stack">
+      <article class="card">
+        <div class="card-meta">
+          <span class="src">anthropic</span>(<span class="args">"opus-4.7"</span>) <span class="comment">// 3h ago</span>
+        </div>
+        <h3 class="card-title"><a href="#">Claude Opus 4.7 ships with extended thinking and 1M token context</a></h3>
+        <p class="card-summary">New flagship doubles context, adds adjustable thinking budgets up to 64k tokens, SOTA on SWE-bench Verified. Pricing holds at Opus 4.5 levels.</p>
+        <div class="editors-cut">
+          1M context is the headline. The quiet news is the thinking-budget API — you spend more tokens on the hard step of a chain and almost none on the cheap ones. That changes how you build agents.
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-meta">
+          <span class="src">openai</span>(<span class="args">"gpt-5.1-mini"</span>) <span class="comment">// 7h ago</span>
+        </div>
+        <h3 class="card-title"><a href="#">GPT-5.1 mini available in API, half the cost of GPT-5 mini</a></h3>
+        <p class="card-summary">Quietly rolled out via API console. Same context window, similar coding benchmarks, materially cheaper. No public model card yet.</p>
+      </article>
+    </div>
+
+    <h2 class="section-head">trending_on_github <span class="count">(6)</span></h2>
+    <div class="stack">
+      <article class="card">
+        <div class="card-meta">
+          <span class="src">github</span>(<span class="args">"exa-labs/exa-mcp"</span>) <span class="comment">// +</span><span class="num">2.1k</span><span class="comment"> stars today</span>
+        </div>
+        <h3 class="card-title"><a href="#">exa-mcp: Production-grade web search MCP server with citation extraction</a></h3>
+        <p class="card-summary">Drop-in MCP server for Claude Code and Codex CLI. Citation extraction, content distillation, rate-limited search across 12 providers.</p>
+      </article>
+    </div>
+
+    <div class="subscribe">
+      <div class="lead">// $ subscribe</div>
+      <h3>get daily digest in inbox</h3>
+      <p>One email per day @ 06:00 AEST. No tracking pixels. <code style="color:var(--syn-fn)">unsubscribe()</code> in one click.</p>
+      <form onsubmit="event.preventDefault()">
+        <input type="email" placeholder="you@example.com" required>
+        <button type="submit">subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <a href="#">archive</a><a href="#">atom</a><a href="#">中文</a><a href="#">github</a>
+    </div>
+    <div class="ascii">// open-source · v3.142 · no js required</div>
+  </footer>
+</body>
+</html>
