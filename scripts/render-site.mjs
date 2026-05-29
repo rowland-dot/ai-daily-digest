@@ -1427,10 +1427,10 @@ function renderSiteNav(currentPage, { backendLive = false, pathPrefix = '' } = {
   const favHref   = `${pathPrefix}favourites/`;
   const accHref   = `${pathPrefix}account/`;
   const links = [
-    `<a href="${homeHref}" class="site-nav-link" data-current="${currentPage === 'home'}" aria-label="Daily digest home">Daily digest</a>`,
-    `<a href="${favHref}"  class="site-nav-link" data-current="${currentPage === 'favourites'}">★ Saved</a>`,
+    `<a href="${homeHref}" class="site-nav-link" data-current="${currentPage === 'home'}"${currentPage === 'home' ? ' aria-current="page"' : ''} aria-label="Daily digest home">Daily digest</a>`,
+    `<a href="${favHref}"  class="site-nav-link" data-current="${currentPage === 'favourites'}"${currentPage === 'favourites' ? ' aria-current="page"' : ''}>★ Saved</a>`,
     backendLive
-      ? `<a href="${accHref}"  class="site-nav-link" data-current="${currentPage === 'account'}">Account</a>`
+      ? `<a href="${accHref}"  class="site-nav-link" data-current="${currentPage === 'account'}"${currentPage === 'account' ? ' aria-current="page"' : ''}>Account</a>`
       : '',
   ].filter(Boolean).join('\n    ');
   return `<nav class="site-nav" aria-label="Site">\n    ${links}\n  </nav>`;

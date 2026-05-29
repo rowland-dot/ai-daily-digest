@@ -29,10 +29,10 @@ function renderSiteNav(currentPage, { backendLive = false, pathPrefix = '' } = {
   const favHref  = `${pathPrefix}favourites/`;
   const accHref  = `${pathPrefix}account/`;
   const links = [
-    `<a href="${homeHref}" class="site-nav-link" data-current="${currentPage === 'home'}" aria-label="Daily digest home">Daily digest</a>`,
-    `<a href="${favHref}"  class="site-nav-link" data-current="${currentPage === 'favourites'}">★ Saved</a>`,
+    `<a href="${homeHref}" class="site-nav-link" data-current="${currentPage === 'home'}"${currentPage === 'home' ? ' aria-current="page"' : ''} aria-label="Daily digest home">Daily digest</a>`,
+    `<a href="${favHref}"  class="site-nav-link" data-current="${currentPage === 'favourites'}"${currentPage === 'favourites' ? ' aria-current="page"' : ''}>★ Saved</a>`,
     backendLive
-      ? `<a href="${accHref}"  class="site-nav-link" data-current="${currentPage === 'account'}">Account</a>`
+      ? `<a href="${accHref}"  class="site-nav-link" data-current="${currentPage === 'account'}"${currentPage === 'account' ? ' aria-current="page"' : ''}>Account</a>`
       : '',
   ].filter(Boolean).join('\n    ');
   return `<nav class="site-nav" aria-label="Site">\n    ${links}\n  </nav>`;
@@ -236,5 +236,58 @@ describe('site-nav link integrity (sub-page pathPrefix="../")', () => {
   it('sub-page nav: Account absent when BACKEND_LIVE=false', () => {
     const html = renderSiteNav('favourites', { backendLive: false, pathPrefix: '../' });
     expect(html).not.toContain('Account');
+  });
+});
+
+// ---- aria-current="page" a11y tests -----------------------------------------
+
+describe('renderSiteNav — aria-current="page" on current page link', () => {
+  it('home: Daily digest link has aria-current="page"', () => {
+    const html = renderSiteNav('home', { backendLive: true });
+    const homeIdx = html.indexOf('Daily digest');
+    const anchorStart = html.lastIndexOf('<a ', homeIdx);
+    const anchorEnd   = html.indexOf('>', anchorStart);
+    const anchorSnippet = html.slice(anchorStart, anchorEnd);
+    expect(anchorSnippet).toContain('aria-current="page"');
+  });
+
+  it('home: ★ Saved link does NOT have aria-current', () => {
+    const html = renderSiteNav('home', { backendLive: true });
+    const favIdx = html.indexOf('★ Saved');
+    const anchorStart = html.lastIndexOf('<a ', favIdx);
+    const anchorEnd   = html.indexOf('>', anchorStart);
+    const anchorSnippet = html.slice(anchorStart, anchorEnd);
+    expect(anchorSnippet).not.toContain('aria-current');
+  });
+
+  it('favourites: ★ Saved link has aria-current="page"', () => {
+    const html = renderSiteNav('favourites', { backendLive: true });
+    const favIdx = html.indexOf('★ Saved');
+    const anchorStart = html.lastIndexOf('<a ', favIdx);
+    const anchorEnd   = html.indexOf('>', anchorStart);
+    const anchorSnippet = html.slice(anchorStart, anchorEnd);
+    expect(anchorSnippet).toContain('aria-current="page"');
+  });
+
+  it('account: Account link has aria-current="page"', () => {
+    const html = renderSiteNav('account', { backendLive: true });
+    const accIdx = html.indexOf('>Account<');
+    const anchorStart = html.lastIndexOf('<a ', accIdx);
+    const anchorEnd   = html.indexOf('>', anchorStart);
+    const anchorSnippet = html.slice(anchorStart, anchorEnd);
+    expect(anchorSnippet).toContain('aria-current="page"');
+  });
+
+  it('account: Daily digest link does NOT have aria-current', () => {
+    const html = renderSiteNav('account', { backendLive: true });
+    const homeIdx = html.indexOf('Daily digest');
+    const anchorStart = html.lastIndexOf('<a ', homeIdx);
+    const anchorEnd   = html.indexOf('>', anchorStart);
+    const anchorSnippet = html.slice(anchorStart, anchorEnd);
+    expect(anchorSnippet).not.toContain('aria-current');
+  });
+
+  it('render-site.mjs source contains aria-current="page" in renderSiteNav', () => {
+    expect(renderSiteSrc).toContain('aria-current="page"');
   });
 });
