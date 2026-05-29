@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-theme="notion-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>★ Favourites — AI Daily Digest · Notion Theme</title>
+  <link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-notion/tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    /* ── Mockup nav ── */
+    .mockup-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 12px; font-size: 12px;
+      overflow-x: auto; white-space: nowrap;
+      box-shadow: var(--shadow);
+      font-family: var(--mono-font);
+    }
+    .mockup-nav-inner {
+      max-width: 1040px; margin: 0 auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .mockup-nav-label {
+      font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.08em; font-size: 10px;
+      padding-right: 8px; border-right: 1px solid var(--border);
+      margin-right: 4px; flex-shrink: 0;
+    }
+    .mockup-nav a {
+      color: var(--text-muted); padding: 4px 9px;
+      border-radius: 999px; font-weight: 500;
+      text-decoration: none; flex-shrink: 0;
+    }
+    .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
+    .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+    /* ── Theme toggle ── */
+    .ts {
+      position: fixed; top: 48px; right: 14px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px; font-size: 12px;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-size: inherit; font-weight: 500;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+    /* ── Hero (compact brand-navy) ── */
+    header.hero {
+      background: var(--hero-bg);
+      color: var(--hero-text);
+      padding: 44px 24px 36px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute;
+      width: 160px; height: 160px;
+      background: #7b3ff2; top: -40px; right: 12%;
+      border-radius: 50%; filter: blur(40px); opacity: 0.35;
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 1; }
+    .hero-kicker {
+      display: inline-block; margin-bottom: 14px;
+      padding: 5px 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 999px;
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+    }
+    h1.hero-title {
+      font-family: var(--display-font);
+      font-size: clamp(32px, 5vw, 44px);
+      font-weight: 700; line-height: 1.05;
+      letter-spacing: -0.025em;
+      margin: 0 0 10px;
+      color: var(--hero-text);
+    }
+    .hero-date {
+      font-family: var(--mono-font); font-size: 13px;
+      color: var(--hero-muted); letter-spacing: 0.06em;
+    }
+    .hero-tag {
+      max-width: 520px; margin: 14px auto 0;
+      font-size: 15px;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.55;
+    }
+    .site-nav {
+      display: inline-flex; gap: 4px; margin-top: 24px;
+      padding: 5px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 999px;
+    }
+    .site-nav a {
+      color: rgba(255,255,255,0.75);
+      font-size: 13px; font-weight: 500;
+      padding: 7px 16px; border-radius: 999px;
+      text-decoration: none;
+    }
+    .site-nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+    .site-nav a[data-current="true"] { color: #fff; background: var(--accent); }
+
+    /* ── Main ── */
+    main { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    /* ── Sync prompt (Cloudflare-live, anonymous) ── */
+    .sync-prompt {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px;
+      background: var(--tint-lavender);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px; margin-bottom: 36px;
+    }
+    [data-theme="notion-dark"] .sync-prompt { background: var(--surface); border: 1px solid var(--border); }
+    @media (max-width: 540px) { .sync-prompt { flex-direction: column; align-items: flex-start; } }
+    .sp-title {
+      font-family: var(--display-font); font-size: 17px;
+      font-weight: 600; margin: 0 0 4px;
+      color: var(--text); letter-spacing: -0.01em;
+    }
+    .sp-sub { margin: 0; font-size: 14px; color: var(--text-muted); }
+    .btn-primary-pill {
+      flex-shrink: 0;
+      padding: 11px 22px;
+      background: var(--accent); color: #fff;
+      border: 0;
+      font-family: var(--body-font); font-size: 14px;
+      font-weight: 600;
+      cursor: pointer; border-radius: 999px;
+      text-decoration: none;
+    }
+    .btn-primary-pill:hover { background: var(--accent-hover); }
+
+    /* ── Section head ── */
+    h2.section-head {
+      font-family: var(--display-font); font-size: 26px;
+      font-weight: 700; letter-spacing: -0.015em;
+      margin: 0 0 4px;
+      color: var(--text);
+    }
+    .section-sub { font-size: 14px; color: var(--text-muted); margin: 4px 0 22px; }
+
+    /* ── Saved cards (list layout) ── */
+    article.card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+      position: relative;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    article.card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(15,15,15,0.05), 0 8px 20px rgba(15,15,15,0.08);
+    }
+    .card-meta {
+      font-family: var(--mono-font); font-size: 11px;
+      color: var(--text-tertiary); margin-bottom: 8px;
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+    .src-chip {
+      background: var(--accent-soft); color: var(--accent);
+      padding: 2px 8px; border-radius: var(--radius);
+      font-family: var(--body-font); font-size: 11px;
+      font-weight: 600; letter-spacing: 0;
+    }
+    .meta-time { color: var(--text-tertiary); }
+    h3.card-title {
+      font-family: var(--display-font); font-size: 18px;
+      font-weight: 600; line-height: 1.3;
+      margin: 0 0 8px; letter-spacing: -0.01em;
+    }
+    h3.card-title a { color: var(--text); text-decoration: none; }
+    h3.card-title a:hover { color: var(--accent); }
+    .card-summary { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+
+    .fav-star {
+      position: absolute; top: 16px; right: 16px;
+      background: none; border: 0;
+      color: var(--accent); font-size: 18px;
+      cursor: pointer; padding: 4px;
+      border-radius: var(--radius);
+    }
+    .fav-star:hover { background: var(--accent-soft); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px; text-align: center;
+      font-size: 13px; color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="ts" role="group" aria-label="Theme">
+    <button id="ts-light" aria-pressed="true">Light</button><button id="ts-dark" aria-pressed="false">Dark</button>
+  </div>
+
+  <nav class="mockup-nav" aria-label="Theme mockup pages">
+    <div class="mockup-nav-inner">
+      <span class="mockup-nav-label">Theme: Notion</span>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">Home</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html" aria-current="page">Favourites</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html">Account</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Article</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/email-en.html">Email</a>
+      <a href="/designs/backend-and-editorial-layer/theme-shotgun/INDEX.html">← Theme index</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">AI Daily Digest · Saved Articles</span>
+      <h1 class="hero-title">★ Favourites</h1>
+      <div class="hero-date">3 saved articles · this device only</div>
+      <p class="hero-tag">Articles you starred on today's digest. Save them across devices by linking to your email.</p>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html" data-current="false">Daily digest</a>
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html" data-current="true" aria-current="page">★ Favourites</a>
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html" data-current="false">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Sync prompt — Cloudflare-live, anonymous state (D5) -->
+    <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
+      <div>
+        <p class="sp-title">Save these across devices</p>
+        <p class="sp-sub">Link them to your subscription email so they follow you to your phone and laptop.</p>
+      </div>
+      <button type="button" class="btn-primary-pill" data-testid="sync-prompt-open-btn">Sync my articles</button>
+    </div>
+
+    <section>
+      <h2 class="section-head">★ Saved articles</h2>
+      <p class="section-sub">Sorted by most recently saved.</p>
+
+      <!-- Card 1 -->
+      <article class="card" data-article-id="aihot-a3f12b8c">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star">★</button>
+        <div class="card-meta">
+          <span class="src-chip">AIHOT</span>
+          <span class="meta-time">saved 2h ago</span>
+        </div>
+        <h3 class="card-title">
+          <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Claude 4.7 launches with 1M context window</a>
+        </h3>
+        <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window today. Pricing matches the previous Opus tier.</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" data-article-id="aihot-7c3e9d1a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star">★</button>
+        <div class="card-meta">
+          <span class="src-chip">AIHOT</span>
+          <span class="meta-time">saved 5h ago</span>
+        </div>
+        <h3 class="card-title">
+          <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Qwen3-Omni released as open weights</a>
+        </h3>
+        <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" data-article-id="builder-2f8c4e6a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star">★</button>
+        <div class="card-meta">
+          <span class="src-chip">Simon Willison</span>
+          <span class="meta-time">saved yesterday</span>
+        </div>
+        <h3 class="card-title">
+          <a href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a>
+        </h3>
+        <p class="card-summary">Walks through a Tailscale + Firecracker setup so Claude Code can delete whatever it wants and the host stays clean.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    Favourites stored on this device ·
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">← Today's digest</a> ·
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html">Account</a>
+  </footer>
+
+  <script>
+    (function () {
+      var L = document.getElementById('ts-light');
+      var D = document.getElementById('ts-dark');
+      var KEY = 'notion-theme-mode';
+      function apply(mode) {
+        document.documentElement.dataset.theme = (mode === 'dark') ? 'notion-dark' : 'notion-light';
+        L.setAttribute('aria-pressed', mode === 'dark' ? 'false' : 'true');
+        D.setAttribute('aria-pressed', mode === 'dark' ? 'true' : 'false');
+        try { localStorage.setItem(KEY, mode); } catch (e) {}
+      }
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch (e) {}
+      apply(saved === 'dark' ? 'dark' : 'light');
+      L.addEventListener('click', function () { apply('light'); });
+      D.addEventListener('click', function () { apply('dark'); });
+    })();
+  </script>
+
+</body>
+</html>

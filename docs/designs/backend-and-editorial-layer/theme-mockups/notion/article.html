@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" data-theme="notion-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude 4.7 launches with 1M context window — EN Translation — AI Daily Digest · Notion Theme</title>
+  <link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-notion/tokens.css">
+  <!--
+  SEO HEAD ELEMENTS (per Spec D6 / B13) — present on the live page:
+  <link rel="canonical" href="https://www.aihot.com/articles/claude-4-7-launch">
+  <link rel="alternate" hreflang="zh" href="https://www.aihot.com/articles/claude-4-7-launch">
+  <link rel="alternate" hreflang="en" href="https://ai-daily-digest.example/articles/aihot-claude-4-7-launch-a3f12b8c/">
+  <link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">
+  -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    /* ── Mockup nav ── */
+    .mockup-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 8px 12px; font-size: 12px;
+      overflow-x: auto; white-space: nowrap;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .mockup-nav-inner {
+      max-width: 1040px; margin: 0 auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .mockup-nav-label {
+      font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.08em; font-size: 10px;
+      padding-right: 8px; border-right: 1px solid var(--border);
+      margin-right: 4px; flex-shrink: 0;
+    }
+    .mockup-nav a {
+      color: var(--text-muted); padding: 4px 9px;
+      border-radius: 999px; font-weight: 500;
+      text-decoration: none; flex-shrink: 0;
+    }
+    .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
+    .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+    /* ── Theme toggle ── */
+    .ts {
+      position: fixed; top: 48px; right: 14px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px; font-size: 12px;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-size: inherit; font-weight: 500;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+    /* ── Hero band (Notion signature, article variant) ── */
+    header.hero {
+      background: var(--hero-bg);
+      color: var(--hero-text);
+      padding: 48px 24px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; border-radius: 50%;
+      filter: blur(40px); opacity: 0.32; pointer-events: none;
+    }
+    .hero::before { width: 180px; height: 180px; background: #5645d4; top: -50px; right: 15%; }
+    .hero::after { width: 150px; height: 150px; background: #2a9d99; bottom: -50px; left: 12%; }
+    .hero-inner { position: relative; z-index: 1; }
+    .hero-kicker {
+      display: inline-block; margin-bottom: 16px;
+      padding: 5px 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 999px;
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+    }
+    h1.hero-title {
+      font-family: var(--display-font);
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700; line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px; max-width: 720px;
+      margin-left: auto; margin-right: auto;
+      color: var(--hero-text);
+    }
+    .hero-date {
+      font-family: var(--mono-font); font-size: 12px;
+      color: var(--hero-muted); letter-spacing: 0.06em;
+    }
+    .site-nav {
+      display: inline-flex; gap: 4px; margin-top: 24px;
+      padding: 5px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 999px;
+    }
+    .site-nav a {
+      color: rgba(255,255,255,0.75);
+      font-size: 13px; font-weight: 500;
+      padding: 7px 16px; border-radius: 999px; text-decoration: none;
+    }
+    .site-nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+    .site-nav a[data-current="true"] { color: #fff; background: var(--accent); }
+
+    /* ── Breadcrumb ── */
+    nav.breadcrumb {
+      max-width: 760px; margin: 0 auto; padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+    nav.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    nav.breadcrumb a:hover { color: var(--accent); }
+
+    /* ── Article layout ── */
+    main { max-width: 760px; margin: 0 auto; padding: 36px 24px 80px; }
+
+    /* Attribution block */
+    .translation-attribution {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      padding: 14px 0; margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+    .translation-attribution span { display: flex; gap: 6px; align-items: center; }
+    .translation-attribution strong { color: var(--accent); font-weight: 600; }
+
+    /* CTA pill */
+    .translation-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-bottom: 28px; padding: 11px 22px;
+      background: var(--accent); color: #fff;
+      font-weight: 600;
+      font-family: var(--body-font); font-size: 14px;
+      letter-spacing: 0;
+      text-decoration: none; border-radius: 999px;
+      transition: background 0.12s ease;
+    }
+    .translation-cta:hover { background: var(--accent-hover); }
+
+    /* Article body */
+    .article-body p {
+      font-size: 17px; line-height: 1.7;
+      color: var(--text); margin: 0 0 22px;
+    }
+    .article-body p:last-child { margin-bottom: 0; }
+    .article-body .continued {
+      font-style: italic; color: var(--text-muted);
+      border-top: 1px solid var(--border); padding-top: 20px; margin-top: 24px;
+    }
+
+    /* Source-original block — tinted cream callout (Notion vocabulary) */
+    .source-original {
+      margin-top: 36px; padding: 20px 22px;
+      background: var(--tint-cream);
+      border-left: 3px solid var(--warning);
+      border-radius: var(--radius);
+    }
+    [data-theme="notion-dark"] .source-original { background: var(--surface); }
+    .source-original h4 {
+      font-family: var(--mono-font); font-size: 11px;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--warning); margin: 0 0 8px;
+    }
+    .source-original p {
+      font-size: 14px; color: var(--text-muted); margin: 0;
+      line-height: 1.6;
+    }
+    .source-original a { color: var(--link); font-weight: 500; }
+    .source-original a:hover { color: var(--link-hover); }
+
+    /* Back bar */
+    .back-bar {
+      margin-top: 40px; padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: var(--body-font); font-size: 14px;
+    }
+    .back-bar a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .back-bar a:hover { color: var(--accent-hover); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="ts" role="group" aria-label="Theme">
+    <button id="ts-light" aria-pressed="true">Light</button><button id="ts-dark" aria-pressed="false">Dark</button>
+  </div>
+
+  <nav class="mockup-nav" aria-label="Theme mockup pages">
+    <div class="mockup-nav-inner">
+      <span class="mockup-nav-label">Theme: Notion</span>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">Home</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html">Favourites</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html">Account</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html" aria-current="page">Article</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/email-en.html">Email</a>
+      <a href="/designs/backend-and-editorial-layer/theme-shotgun/INDEX.html">← Theme index</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">AI Daily Digest · EN Translation · AIHOT source</span>
+      <h1 class="hero-title">Claude 4.7 launches with 1M context window</h1>
+      <div class="hero-date">Originally published 2026-05-17 · Beijing time · Translated excerpt</div>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html" data-current="false">Daily digest</a>
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html" data-current="false">★ Favourites</a>
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html" data-current="false">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">← Today's digest</a>
+    &nbsp;/&nbsp; Model drops &nbsp;/&nbsp; Article
+  </nav>
+
+  <main>
+    <article data-testid="translation-article">
+
+      <div class="translation-attribution">
+        <span><strong>Source</strong> AIHOT</span>
+        <span><strong>Published</strong> 2026-05-17</span>
+        <span><strong>Language</strong> 中文 (Chinese)</span>
+        <span><strong>Type</strong> EN translation excerpt</span>
+      </div>
+
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+        Read original (中文) →
+      </a>
+
+      <div class="article-body">
+        <p>Anthropic today shipped Claude 4.7, the first frontier-tier model with a 1 million-token context window available to all API users from day one. The launch matches the announcement made at Anthropic's developer day last week but arrives two weeks ahead of the projected release date. Pricing remains identical to the previous Opus tier: $15 per million input tokens and $75 per million output tokens, with prompt-caching discounts unchanged.</p>
+
+        <p>The 1M context window puts Claude 4.7 ahead of OpenAI's most generous Responses-API offering (512K, rolled out quietly last week) and well past Gemini Pro 2.5's 2M-token ceiling — though Gemini's window has historically come with sharper degradation past the 200K mark. Anthropic's internal benchmarks show Claude 4.7 maintaining recall accuracy above 95% out to the full 1M tokens; independent third-party verification is not yet available but the AIDanBench team has reportedly begun testing.</p>
+
+        <p>Behind the headline number, the more interesting shift is what Anthropic is asking developers to do with the additional context. The launch blog post emphasises tool-output retention ("keep the last 200 tool calls in context"), multi-document analysis ("entire 50-paper literature review in one prompt"), and long-running agentic workflows. Less discussed publicly: the team has been quietly preparing for Claude to read entire codebases by default, with a separate codebase-indexing API in private beta to a handful of enterprise customers.</p>
+
+        <p class="continued">… continued in the original article →</p>
+      </div>
+
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta-bottom" style="margin-top: 24px;">
+        Read original (中文) →
+      </a>
+
+      <!-- Chinese original block -->
+      <div class="source-original">
+        <h4>About this translation</h4>
+        <p>This is a 3-paragraph English excerpt of the original Chinese-language article published by AIHOT. The excerpt is machine-translated and lightly edited for fluency. The original article contains additional analysis and industry commentary not included here. <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">Read the full piece in 中文 →</a></p>
+      </div>
+
+      <div class="back-bar">
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">← Back to today's digest</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    Translation excerpt published 2026-05-17 ·
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">AI Daily Digest</a> ·
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">View original (中文)</a>
+  </footer>
+
+  <script>
+    (function () {
+      var L = document.getElementById('ts-light');
+      var D = document.getElementById('ts-dark');
+      var KEY = 'notion-theme-mode';
+      function apply(mode) {
+        document.documentElement.dataset.theme = (mode === 'dark') ? 'notion-dark' : 'notion-light';
+        L.setAttribute('aria-pressed', mode === 'dark' ? 'false' : 'true');
+        D.setAttribute('aria-pressed', mode === 'dark' ? 'true' : 'false');
+        try { localStorage.setItem(KEY, mode); } catch (e) {}
+      }
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch (e) {}
+      apply(saved === 'dark' ? 'dark' : 'light');
+      L.addEventListener('click', function () { apply('light'); });
+      D.addEventListener('click', function () { apply('dark'); });
+    })();
+  </script>
+
+</body>
+</html>
