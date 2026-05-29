@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" data-theme="editorial-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude 4.7 launches with 1M context window — EN Translation — AI Daily Digest · Editorial Theme</title>
+  <link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-editorial/tokens.css">
+  <!--
+  SEO HEAD ELEMENTS (per Spec D6 / B13) — present on the live page:
+  <link rel="canonical" href="https://www.aihot.com/articles/claude-4-7-launch">
+  <link rel="alternate" hreflang="zh" href="https://www.aihot.com/articles/claude-4-7-launch">
+  <link rel="alternate" hreflang="en" href="https://ai-daily-digest.example/articles/aihot-claude-4-7-launch-a3f12b8c/">
+  <link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">
+  -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      font-size: 17px;
+    }
+
+    /* ── Mockup nav ── */
+    .mockup-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 8px 12px; font-size: 12px;
+      overflow-x: auto; white-space: nowrap;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .mockup-nav-inner {
+      max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .mockup-nav-label {
+      font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.08em; font-size: 10px;
+      padding-right: 8px; border-right: 1px solid var(--border);
+      margin-right: 4px; flex-shrink: 0;
+    }
+    .mockup-nav a {
+      color: var(--text-muted); padding: 4px 9px;
+      border-radius: 999px; font-weight: 500;
+      text-decoration: none; flex-shrink: 0;
+    }
+    .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
+    .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+    /* ── Theme toggle ── */
+    .ts {
+      position: fixed; top: 48px; right: 14px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px; font-size: 12px;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-size: inherit; font-weight: 500;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+    /* ── Masthead (article-style) ── */
+    header.mast {
+      background: var(--hero-bg);
+      border-bottom: 3px solid var(--text);
+      padding: 48px 24px 32px; text-align: center;
+    }
+    .kicker {
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 14px;
+    }
+    h1.mast-title {
+      font-family: var(--display-font);
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700; line-height: 1.1;
+      letter-spacing: var(--tracking-tight);
+      margin: 0 0 14px; max-width: 680px;
+      margin-left: auto; margin-right: auto;
+    }
+    .mast-date {
+      font-family: var(--mono-font); font-size: 12px;
+      color: var(--text-muted); letter-spacing: 0.06em;
+    }
+
+    .site-nav {
+      display: inline-flex; gap: 12px; margin-top: 22px;
+      padding: 6px 10px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; box-shadow: var(--shadow);
+    }
+    .site-nav a {
+      color: var(--text-muted); font-size: 11px; font-weight: 600;
+      padding: 4px 10px; border-radius: 999px; text-decoration: none;
+      font-family: var(--mono-font); letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .site-nav a:hover { color: var(--text); background: var(--accent-soft); }
+    .site-nav a[data-current="true"] { color: var(--accent); background: var(--accent-soft); }
+
+    /* ── Breadcrumb nav ── */
+    nav.breadcrumb {
+      max-width: 720px; margin: 0 auto; padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    nav.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    nav.breadcrumb a:hover { color: var(--accent); }
+
+    /* ── Article layout ── */
+    main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    /* Attribution block */
+    .translation-attribution {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      padding: 14px 0; margin-bottom: 22px;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .translation-attribution span { display: flex; gap: 5px; align-items: center; }
+    .translation-attribution strong { color: var(--accent); }
+
+    /* CTA link */
+    .translation-cta {
+      display: inline-block;
+      margin-bottom: 28px; padding: 12px 22px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--accent); font-weight: 700;
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; border-radius: var(--radius);
+    }
+    .translation-cta:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* Article body */
+    .article-body p {
+      font-size: 17px; line-height: 1.75;
+      color: var(--text); margin: 0 0 22px;
+    }
+    .article-body p:last-child { margin-bottom: 0; }
+    .article-body .continued {
+      font-style: italic; color: var(--text-muted);
+      border-top: 1px solid var(--border); padding-top: 20px; margin-top: 24px;
+    }
+
+    /* Source note (Chinese original block) */
+    .source-original {
+      margin-top: 36px; padding: 20px 22px;
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-left: 3px solid var(--border-strong);
+    }
+    .source-original h4 {
+      font-family: var(--mono-font); font-size: 11px;
+      font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text-muted); margin: 0 0 8px;
+    }
+    .source-original p {
+      font-size: 14px; color: var(--text-muted); margin: 0;
+      line-height: 1.6;
+    }
+    .source-original a { color: var(--link); }
+    .source-original a:hover { color: var(--link-hover); }
+
+    /* Back to digest bar */
+    .back-bar {
+      margin-top: 40px; padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: var(--mono-font); font-size: 12px;
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .back-bar a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .back-bar a:hover { color: var(--accent-hover); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 3px solid var(--text); padding: 28px 24px;
+      text-align: center;
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.10em; text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="ts" role="group" aria-label="Theme">
+    <button aria-pressed="true" onclick="document.documentElement.dataset.theme='editorial-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='editorial-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+  </div>
+
+  <nav class="mockup-nav" aria-label="Theme mockup pages">
+    <div class="mockup-nav-inner">
+      <span class="mockup-nav-label">Theme: Editorial</span>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html">Home</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/favourites.html">Favourites</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/account.html">Account</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/article.html" aria-current="page">Article</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/email-en.html">Email</a>
+      <a href="/designs/backend-and-editorial-layer/theme-shotgun/INDEX.html">← Theme index</a>
+    </div>
+  </nav>
+
+  <header class="mast">
+    <div class="kicker">AI Daily Digest &nbsp;·&nbsp; EN Translation &nbsp;·&nbsp; AIHOT source</div>
+    <h1 class="mast-title">Claude 4.7 launches with 1M context window</h1>
+    <div class="mast-date">Originally published 2026-05-17 · Beijing time · Translated excerpt</div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html" data-current="false">Daily digest</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/favourites.html" data-current="false">★ Favourites</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/account.html" data-current="false">Account</a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html">← Today's digest</a>
+    &nbsp;/&nbsp; Model drops &nbsp;/&nbsp; Article
+  </nav>
+
+  <main>
+    <article data-testid="translation-article">
+
+      <div class="translation-attribution">
+        <span><strong>Source</strong> AIHOT</span>
+        <span><strong>Published</strong> 2026-05-17</span>
+        <span><strong>Language</strong> 中文 (Chinese)</span>
+        <span><strong>Type</strong> EN translation excerpt</span>
+      </div>
+
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+        Read original (中文) →
+      </a>
+
+      <div class="article-body">
+        <p>Anthropic today shipped Claude 4.7, the first frontier-tier model with a 1 million-token context window available to all API users from day one. The launch matches the announcement made at Anthropic's developer day last week but arrives two weeks ahead of the projected release date. Pricing remains identical to the previous Opus tier: $15 per million input tokens and $75 per million output tokens, with prompt-caching discounts unchanged.</p>
+
+        <p>The 1M context window puts Claude 4.7 ahead of OpenAI's most generous Responses-API offering (512K, rolled out quietly last week) and well past Gemini Pro 2.5's 2M-token ceiling — though Gemini's window has historically come with sharper degradation past the 200K mark. Anthropic's internal benchmarks show Claude 4.7 maintaining recall accuracy above 95% out to the full 1M tokens; independent third-party verification is not yet available but the AIDanBench team has reportedly begun testing.</p>
+
+        <p>Behind the headline number, the more interesting shift is what Anthropic is asking developers to do with the additional context. The launch blog post emphasises tool-output retention ("keep the last 200 tool calls in context"), multi-document analysis ("entire 50-paper literature review in one prompt"), and long-running agentic workflows. Less discussed publicly: the team has been quietly preparing for Claude to read entire codebases by default, with a separate codebase-indexing API in private beta to a handful of enterprise customers.</p>
+
+        <p class="continued">… continued in the original article →</p>
+      </div>
+
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta-bottom" style="margin-top: 24px;">
+        Read original (中文) →
+      </a>
+
+      <!-- Chinese original block -->
+      <div class="source-original">
+        <h4>About this translation</h4>
+        <p>This is a 3-paragraph English excerpt of the original Chinese-language article published by AIHOT. The excerpt is machine-translated and lightly edited for fluency. The original article contains additional analysis and industry commentary not included here. <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">Read the full piece in 中文 →</a></p>
+      </div>
+
+      <div class="back-bar">
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html">← Back to today's digest</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    Translation excerpt published 2026-05-17
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html">AI Daily Digest</a>
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">View original (中文)</a>
+  </footer>
+
+</body>
+</html>

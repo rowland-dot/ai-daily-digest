@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en" data-theme="editorial-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Digest — Home (BACKEND_LIVE) — Editorial Theme</title>
+  <link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-editorial/tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      font-size: 17px;
+    }
+
+    /* ── Mockup-only nav strip ── */
+    .mockup-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 12px;
+      font-size: 12px;
+      overflow-x: auto; white-space: nowrap;
+      box-shadow: var(--shadow);
+      font-family: var(--mono-font);
+    }
+    .mockup-nav-inner {
+      max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .mockup-nav-label {
+      font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      font-size: 10px; padding-right: 8px;
+      border-right: 1px solid var(--border);
+      margin-right: 4px; flex-shrink: 0;
+    }
+    .mockup-nav a {
+      color: var(--text-muted);
+      padding: 4px 9px; border-radius: 999px;
+      font-weight: 500; text-decoration: none; flex-shrink: 0;
+    }
+    .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
+    .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+    /* ── Theme toggle ── */
+    .ts {
+      position: fixed; top: 48px; right: 14px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px; font-size: 12px;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-size: inherit; font-weight: 500;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+    /* ── Masthead ── */
+    header.mast {
+      background: var(--hero-bg);
+      border-bottom: 3px solid var(--text);
+      padding: 56px 24px 36px;
+      text-align: center;
+    }
+    .kicker {
+      font-family: var(--mono-font);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    h1.mast-title {
+      font-family: var(--display-font);
+      font-size: clamp(40px, 6vw, 64px);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: var(--tracking-tight);
+      margin: 0 0 14px;
+      color: var(--hero-text);
+    }
+    .mast-date {
+      font-family: var(--mono-font);
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+    }
+    .mast-tag {
+      max-width: 560px; margin: 16px auto 0;
+      font-size: 16px; color: var(--text-muted);
+      font-style: italic; line-height: 1.55;
+    }
+
+    /* Site nav pills (inside masthead) */
+    .site-nav {
+      display: inline-flex; gap: 12px;
+      margin-top: 24px;
+      padding: 6px 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+    }
+    .site-nav a {
+      color: var(--text-muted);
+      font-size: 13px; font-weight: 600;
+      padding: 4px 10px; border-radius: 999px;
+      text-decoration: none;
+      font-family: var(--mono-font);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .site-nav a:hover { color: var(--text); background: var(--accent-soft); }
+    .site-nav a[data-current="true"] { color: var(--accent); background: var(--accent-soft); }
+
+    /* ── Section TOC nav ── */
+    nav.toc {
+      max-width: 720px; margin: 0 auto; padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+      font-family: var(--mono-font); font-size: 10px;
+      letter-spacing: 0.14em; text-transform: uppercase;
+    }
+    nav.toc a { color: var(--text-muted); text-decoration: none; }
+    nav.toc a:hover { color: var(--accent); }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 720px; margin: 0 auto; padding: 48px 24px 80px;
+    }
+
+    /* Two-column card grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 32px;
+    }
+    @media (max-width: 600px) {
+      .card-grid { grid-template-columns: 1fr; }
+    }
+
+    section + section { margin-top: 56px; }
+    h2.section-head {
+      font-family: var(--display-font);
+      font-size: 26px; font-weight: 700;
+      letter-spacing: var(--tracking-tight);
+      margin: 0 0 4px; padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      grid-column: 1 / -1;
+    }
+    h2.section-head .count {
+      font-family: var(--mono-font);
+      font-size: 11px; color: var(--text-muted);
+      font-weight: 400; margin-left: 8px;
+      letter-spacing: 0.06em;
+    }
+    .section-sub {
+      font-size: 14px; color: var(--text-muted);
+      margin: 0 0 20px;
+      grid-column: 1 / -1;
+    }
+
+    /* ── Article cards ── */
+    article.card {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    article.card:last-child { border-bottom: 0; }
+    /* Full-width cards (default layout) */
+    .full-width-cards article.card {
+      padding: 20px 0;
+    }
+    .card-meta {
+      font-family: var(--mono-font);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 8px;
+    }
+    .card-meta .src { color: var(--accent); }
+    h3.card-title {
+      font-family: var(--display-font);
+      font-size: 21px; font-weight: 700;
+      line-height: 1.25; margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+    h3.card-title a { color: var(--text); text-decoration: none; }
+    h3.card-title a:hover { color: var(--accent); }
+    .card-summary {
+      font-size: 15px; color: var(--text-muted);
+      line-height: 1.6; margin: 0;
+    }
+
+    /* Grid card (smaller) */
+    .card-grid article.card {
+      padding: 0;
+      border-bottom: 0;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      padding: 18px 16px;
+      box-shadow: var(--shadow);
+    }
+    .card-grid h3.card-title { font-size: 17px; }
+
+    /* Fav star */
+    .fav-star {
+      float: right;
+      background: none; border: 0;
+      color: var(--text-tertiary); font-size: 16px;
+      cursor: pointer; padding: 0; margin-left: 8px;
+      line-height: 1;
+    }
+    .fav-star[aria-pressed="true"] { color: var(--accent); }
+
+    /* ── Editor's Cut — pull-quote style ── */
+    .editors-cut {
+      margin-top: 14px; padding: 16px 20px;
+      border-left: 3px solid var(--accent);
+      background: var(--surface-2);
+      font-style: italic;
+      font-size: 15px; line-height: 1.6;
+      color: var(--text);
+    }
+    .editors-cut::before {
+      content: "Editor's Cut";
+      display: block;
+      font-family: var(--mono-font);
+      font-size: 10px; font-style: normal;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 6px;
+    }
+
+    /* ── Subscribe block ── */
+    .subscribe {
+      margin-top: 64px; padding: 40px 32px;
+      background: var(--surface-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .subscribe h3 {
+      font-family: var(--display-font);
+      font-size: 26px; margin: 0 0 8px;
+      letter-spacing: var(--tracking-tight);
+    }
+    .subscribe p { color: var(--text-muted); margin: 0 0 22px; font-size: 15px; }
+    .subscribe form { display: flex; gap: 0; max-width: 440px; margin: 0 auto; }
+    .subscribe input[type="email"] {
+      flex: 1; padding: 12px 14px;
+      border: 1px solid var(--border-strong); border-right: 0;
+      background: var(--surface); color: var(--text);
+      font-family: inherit; font-size: 15px;
+      border-radius: var(--radius) 0 0 var(--radius);
+      min-width: 0;
+    }
+    .subscribe button {
+      padding: 12px 22px;
+      border: 1px solid var(--accent); background: var(--accent);
+      color: #fff; font-family: var(--mono-font); font-size: 11px;
+      font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .subscribe button:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+    .subscribe-note {
+      margin-top: 12px; font-size: 13px; color: var(--text-tertiary);
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 3px solid var(--text);
+      padding: 32px 24px;
+      text-align: center;
+      font-family: var(--mono-font);
+      font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); margin: 0 10px; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- Theme toggle -->
+  <div class="ts" role="group" aria-label="Theme">
+    <button aria-pressed="true" onclick="document.documentElement.dataset.theme='editorial-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='editorial-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+  </div>
+
+  <!-- Mockup nav strip -->
+  <nav class="mockup-nav" aria-label="Theme mockup pages">
+    <div class="mockup-nav-inner">
+      <span class="mockup-nav-label">Theme: Editorial</span>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html" aria-current="page">Home</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/favourites.html">Favourites</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/account.html">Account</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/article.html">Article</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/email-en.html">Email</a>
+      <a href="/designs/backend-and-editorial-layer/theme-shotgun/INDEX.html">← Theme index</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="mast">
+    <div class="kicker">AI Daily Digest &nbsp;·&nbsp; Vol. III &nbsp;·&nbsp; Issue 142</div>
+    <h1 class="mast-title">The Friday Edition</h1>
+    <div class="mast-date">Friday, 30 May 2026 · 07:00 AEST</div>
+    <p class="mast-tag">What shipped, what trended, what AI builders are saying — across labs, open-source, and the China AI scene.</p>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html" data-current="true" aria-current="page">Daily digest</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/favourites.html" data-current="false">★ Favourites</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/account.html" data-current="false">Account</a>
+    </nav>
+  </header>
+
+  <!-- Section TOC -->
+  <nav class="toc" aria-label="Sections">
+    <a href="#models">Model drops</a>
+    <a href="#products">Products</a>
+    <a href="#industry">Industry</a>
+    <a href="#research">Research</a>
+    <a href="#labs">Lab posts</a>
+    <a href="#trending">GitHub trending</a>
+  </nav>
+
+  <main>
+
+    <!-- ── Model drops (AIHOT) — two-column grid ── -->
+    <section id="models">
+      <div class="card-grid">
+        <h2 class="section-head">Model drops &amp; updates <span class="count">4 stories</span></h2>
+        <p class="section-sub">Latest model launches and capability releases from the Chinese AI ecosystem (AIHOT).</p>
+
+        <!-- Card 1: Editor's Cut card -->
+        <article class="card">
+          <div class="card-meta"><span class="src">Anthropic · AIHOT</span> &nbsp;·&nbsp; 2h ago</div>
+          <h3 class="card-title">
+            <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/article.html">Claude 4.7 launches with 1M context window</a>
+          </h3>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+          <div class="editors-cut">
+            A 1M context window matters less for "fits a novel" and more for "fits a codebase and still has room for tool output and conversation history." The pricing parity is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.
+          </div>
+        </article>
+
+        <!-- Card 2: Qwen, no Editor's Cut -->
+        <article class="card">
+          <div class="card-meta"><span class="src">alibaba_cloud · AIHOT</span> &nbsp;·&nbsp; 5h ago</div>
+          <h3 class="card-title">
+            <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/article.html">Qwen3-Omni released as open weights</a>
+          </h3>
+          <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint. First open-weight model competitive at frontier sizes.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-meta"><span class="src">OpenAI</span> &nbsp;·&nbsp; 7h ago</div>
+          <h3 class="card-title">
+            <a href="#">GPT-5.1 mini available in API, half the cost of GPT-5 mini</a>
+          </h3>
+          <p class="card-summary">Quietly rolled out via the API console. Same context window, similar coding benchmarks, materially cheaper. No public model card yet.</p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-meta"><span class="src">AIHOT</span> &nbsp;·&nbsp; 9h ago</div>
+          <h3 class="card-title">
+            <a href="#">Mistral Large 3.1 released with 200K context</a>
+          </h3>
+          <p class="card-summary">The French lab ships its largest context window to date. Benchmarks show improvement on long-document retrieval vs. the 128K predecessor.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Products ── -->
+    <section id="products">
+      <div class="card-grid">
+        <h2 class="section-head">Products &amp; applications <span class="count">3 stories</span></h2>
+        <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">AIHOT</span> &nbsp;·&nbsp; 3h ago</div>
+          <h3 class="card-title"><a href="#">Cursor ships agent mode for the JetBrains line</a></h3>
+          <p class="card-summary">After 18 months of VS Code-only releases, Cursor's agent mode lands in IntelliJ, WebStorm, and PyCharm.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">AIHOT</span> &nbsp;·&nbsp; 4h ago</div>
+          <h3 class="card-title"><a href="#">Perplexity launches paid Spaces for teams</a></h3>
+          <p class="card-summary">Shared research workspaces with team-wide context — first move into B2B for the search-first AI company.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Industry ── -->
+    <section id="industry">
+      <div class="card-grid">
+        <h2 class="section-head">Industry moves <span class="count">2 stories</span></h2>
+        <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">AIHOT</span> &nbsp;·&nbsp; 6h ago</div>
+          <h3 class="card-title"><a href="#">Mistral raises $850M at $14B valuation</a></h3>
+          <p class="card-summary">Series C led by a16z values the French lab at roughly half OpenAI's last public round.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">AIHOT</span> &nbsp;·&nbsp; 8h ago</div>
+          <h3 class="card-title"><a href="#">China's AI regulation framework enters implementation phase</a></h3>
+          <p class="card-summary">The CAC begins enforcing the Interim Measures for Generative AI Services — the first country-wide regulatory regime of its kind.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Research ── -->
+    <section id="research">
+      <div class="card-grid">
+        <h2 class="section-head">Research highlights <span class="count">2 stories</span></h2>
+        <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">AIHOT</span> &nbsp;·&nbsp; 8h ago</div>
+          <h3 class="card-title"><a href="#">Sparse Mixture-of-Routers: a 30% inference speedup with no quality loss</a></h3>
+          <p class="card-summary">DeepSeek + ETH Zürich propose learned routing inside MoE layers instead of fixed top-k gating.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">exa-labs</span> &nbsp;·&nbsp; 10h ago</div>
+          <h3 class="card-title"><a href="#">exa-mcp: Production-grade web search MCP server with citation extraction</a></h3>
+          <p class="card-summary">Drop-in MCP server for Claude Code and Codex CLI. Handles citation extraction, content distillation, and rate-limited search across 12 providers.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Lab posts ── -->
+    <section id="labs">
+      <div class="card-grid">
+        <h2 class="section-head">Lab announcements <span class="count">2 stories</span></h2>
+        <p class="section-sub">Latest posts from OpenAI's blog and the labs.</p>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">OpenAI</span> &nbsp;·&nbsp; 11h ago</div>
+          <h3 class="card-title"><a href="https://openai.com/blog/" target="_blank" rel="noopener">o4-mini-high deprecation timeline announced</a></h3>
+          <p class="card-summary">OpenAI plans to retire o4-mini-high on August 1, 2026 — three months earlier than the typical 6-month notice.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">Anthropic</span> &nbsp;·&nbsp; 12h ago</div>
+          <h3 class="card-title"><a href="https://www.anthropic.com/" target="_blank" rel="noopener">Anthropic releases prompt caching guide for enterprise</a></h3>
+          <p class="card-summary">Detailed documentation on structured prompts and cache anchoring patterns — targets developers running high-volume inference workloads.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── GitHub Trending ── -->
+    <section id="trending">
+      <div class="card-grid">
+        <h2 class="section-head">Trending on GitHub <span class="count">2 repos</span></h2>
+        <p class="section-sub">Repositories that spiked in the last 24 hours.</p>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">github.com/exa-labs/exa-mcp</span> &nbsp;·&nbsp; +2.1k stars today</div>
+          <h3 class="card-title"><a href="https://github.com/exa-labs/exa-mcp" target="_blank" rel="noopener">exa-labs/exa-mcp</a></h3>
+          <p class="card-summary">Production MCP server for web search with citation extraction. Python, MIT licence.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta"><span class="src">github.com/QwenLM/Qwen3</span> &nbsp;·&nbsp; +4.8k stars today</div>
+          <h3 class="card-title"><a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener">QwenLM/Qwen3</a></h3>
+          <p class="card-summary">Open-weights omnimodal checkpoint from Alibaba's Qwen team. 32B parameters, Apache 2.0.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Subscribe ── -->
+    <div class="subscribe">
+      <h3>Get this in your inbox</h3>
+      <p>Daily summary, 6am Sydney time. No tracking pixels. Unsubscribe in one click.</p>
+      <form onsubmit="event.preventDefault()">
+        <input type="email" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="subscribe-note">Vol. III · 2,100 subscribers · Free forever</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="#">Archive</a> &nbsp;·&nbsp;
+    <a href="#">Atom feed</a> &nbsp;·&nbsp;
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/article.html">中文 translations</a> &nbsp;·&nbsp;
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/account.html">Account</a> &nbsp;·&nbsp;
+    <a href="#">About</a>
+    <div style="margin-top: 12px; font-size: 10px;">AI Daily Digest · Vol. III · AEST</div>
+  </footer>
+
+</body>
+</html>

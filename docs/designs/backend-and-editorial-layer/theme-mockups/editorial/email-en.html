@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Digest — Daily Email EN — Editorial Theme</title>
+  <style>
+    /* Outer mockup chrome ONLY — does NOT ship in the real email. */
+    .mockup-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: #fbfaf7; border-bottom: 1px solid #e4ddd1;
+      padding: 8px 12px; font-size: 12px;
+      overflow-x: auto; white-space: nowrap;
+      box-shadow: 0 1px 2px rgba(26,23,20,0.04), 0 6px 16px rgba(26,23,20,0.06);
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+    }
+    .mockup-nav-inner {
+      max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .mockup-nav-label {
+      font-weight: 700; color: #7a1f1f;
+      text-transform: uppercase; letter-spacing: 0.08em; font-size: 10px;
+      padding-right: 8px; border-right: 1px solid #e4ddd1;
+      margin-right: 4px; flex-shrink: 0;
+    }
+    .mockup-nav a {
+      color: #5b554d; padding: 4px 9px;
+      border-radius: 999px; font-weight: 500;
+      text-decoration: none; flex-shrink: 0; font-size: 11px;
+    }
+    .mockup-nav a:hover { background: rgba(122,31,31,0.08); color: #1a1714; }
+    .mockup-nav a[aria-current="page"] { background: #7a1f1f; color: #fff; }
+    .email-intro {
+      max-width: 600px; margin: 16px auto 6px; padding: 0 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #5b554d; font-size: 13px; text-align: center;
+    }
+  </style>
+</head>
+<!-- Email body — inline styles only from here. The mockup nav above is chrome only. -->
+<body style="margin:0; padding:0; background:#f4f1ea; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; color:#1a1714; line-height:1.6;">
+
+<!-- Mockup chrome: nav strip -->
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Editorial</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/editorial/email-en.html" aria-current="page">Email EN</a>
+    <a href="/designs/backend-and-editorial-layer/theme-shotgun/INDEX.html">← Theme index</a>
+  </div>
+</nav>
+
+<p class="email-intro">Daily email sent at 07:00 Sydney to EN subscribers. Inline styles only — email-client safe.</p>
+
+<!-- ═══════════════════════════════════════════════════════
+     EMAIL BODY — everything below is email-client-safe
+     inline styles only. No linked CSS.
+     ═══════════════════════════════════════════════════════ -->
+<div data-testid="email-body-wrap">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f4f1ea; padding:28px 12px;">
+  <tr><td align="center">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" data-testid="email-body"
+      style="max-width:600px; width:100%; background:#fbfaf7; border:1px solid #e4ddd1; overflow:hidden;">
+
+      <!-- ── Masthead ── -->
+      <tr>
+        <td style="padding:0; background:linear-gradient(180deg,#f4f1ea 0%,#fbfaf7 100%); border-bottom:3px solid #1a1714;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td style="padding:32px 28px 10px; text-align:center;">
+                <p style="margin:0 0 10px; font-family:Courier New,Courier,monospace; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#7a1f1f;">
+                  AI Daily Digest &nbsp;·&nbsp; Vol. III &nbsp;·&nbsp; Issue 142
+                </p>
+                <h1 style="margin:0 0 8px; font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:36px; font-weight:700; color:#1a1714; letter-spacing:-0.015em; line-height:1.05;">
+                  The Friday Edition
+                </h1>
+                <p style="margin:0 0 16px; font-family:Courier New,Courier,monospace; font-size:12px; color:#5b554d; letter-spacing:0.06em;">
+                  Friday, 30 May 2026 &nbsp;·&nbsp; 07:00 AEST
+                </p>
+                <p style="margin:0 0 4px; font-size:15px; color:#5b554d; font-style:italic; line-height:1.5;">
+                  A daily read on what shipped, what broke, and what&rsquo;s worth your attention &mdash;<br>from the AI labs, the open-source frontier, and the China AI scene.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ── Editor's Cut — overall narrative ── -->
+      <tr>
+        <td style="padding:28px 28px 8px;">
+          <p style="margin:0 0 10px; font-family:Courier New,Courier,monospace; font-size:10px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#7a1f1f;">
+            Today&rsquo;s Editor&rsquo;s Cut
+          </p>
+          <p style="margin:0 0 14px; font-size:16px; line-height:1.75; color:#1a1714; font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif;">
+            The dominant story today isn&rsquo;t a single model &mdash; it&rsquo;s that the major labs are converging on the same competitive surface: context length. Anthropic shipped Claude 4.7 at 1M tokens, the Qwen team open-sourced an omnimodal checkpoint, and OpenAI quietly extended Responses-API context to 512K. Everyone is fighting for room to fit your codebase, your conversation history, and a few thousand lines of tool output simultaneously.
+          </p>
+          <p style="margin:0 0 14px; font-size:16px; line-height:1.75; color:#1a1714; font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif;">
+            Meanwhile, the open-source side is still about cost. The two trajectories &mdash; frontier labs scaling context, open-source compressing inference &mdash; are converging on the same end-user: someone who used to think 32k was generous.
+          </p>
+          <p style="margin:0; font-size:16px; line-height:1.75; color:#1a1714; font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif;">
+            Six picks below. The Anthropic and Qwen launches are the can&rsquo;t-miss ones; everything else is supporting context.
+          </p>
+        </td>
+      </tr>
+
+      <!-- Hairline divider -->
+      <tr>
+        <td style="padding:8px 28px 0;">
+          <div style="border-top:1px solid #e4ddd1;"></div>
+        </td>
+      </tr>
+
+      <!-- ── Today's picks ── -->
+      <tr>
+        <td style="padding:20px 28px 8px;">
+          <h2 style="margin:0 0 16px; font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:20px; font-weight:700; color:#1a1714; letter-spacing:-0.01em;">
+            Today&rsquo;s picks
+          </h2>
+
+          <!-- Pick 1 — Claude 4.7 -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:20px;">
+            <tr>
+              <td style="border-left:3px solid #7a1f1f; padding-left:14px;">
+                <p style="margin:0 0 3px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7a1f1f;">
+                  Anthropic &middot; AIHOT &middot; 2h ago
+                </p>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-a3f12b8c"
+                   style="font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:17px; font-weight:700; color:#1a1714; text-decoration:none; line-height:1.3; display:block; margin-bottom:6px;">
+                  Claude 4.7 launches with 1M context window
+                </a>
+                <p style="margin:0 0 8px; font-size:14px; color:#5b554d; line-height:1.6;">
+                  Anthropic shipped Claude 4.7 with a 1 million-token context window. Pricing matches the previous Opus tier.
+                </p>
+                <!-- Editor's Cut inline pull-quote -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:4px;">
+                  <tr>
+                    <td style="border-left:3px solid #7a1f1f; padding:10px 14px; background:#f4f1ea;">
+                      <p style="margin:0 0 4px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#7a1f1f; font-style:normal;">
+                        Editor&rsquo;s Cut
+                      </p>
+                      <p style="margin:0; font-size:14px; color:#1a1714; line-height:1.6; font-style:italic; font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif;">
+                        The pricing parity is the real signal &mdash; Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Pick 2 — Qwen3-Omni -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:20px;">
+            <tr>
+              <td style="border-left:3px solid #7a1f1f; padding-left:14px;">
+                <p style="margin:0 0 3px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7a1f1f;">
+                  alibaba_cloud &middot; AIHOT &middot; 5h ago
+                </p>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-qwen-omni"
+                   style="font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:17px; font-weight:700; color:#1a1714; text-decoration:none; line-height:1.3; display:block; margin-bottom:6px;">
+                  Qwen3-Omni open-sources at 32B parameters
+                </a>
+                <p style="margin:0; font-size:14px; color:#5b554d; line-height:1.6;">
+                  First open-weight omnimodal model competitive at frontier sizes. Expect a flood of fine-tunes within the week.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Pick 3 — OpenAI 512K -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:20px;">
+            <tr>
+              <td style="border-left:3px solid #7a1f1f; padding-left:14px;">
+                <p style="margin:0 0 3px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7a1f1f;">
+                  OpenAI &middot; 7h ago
+                </p>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=openai-responses-512k"
+                   style="font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:17px; font-weight:700; color:#1a1714; text-decoration:none; line-height:1.3; display:block; margin-bottom:6px;">
+                  OpenAI quietly extends Responses API to 512K context
+                </a>
+                <p style="margin:0; font-size:14px; color:#5b554d; line-height:1.6;">
+                  No blog post, no fanfare &mdash; just an API doc update. The pattern matches GPT-4 Turbo&rsquo;s 128K rollout.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Pick 4 — exa-mcp -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:20px;">
+            <tr>
+              <td style="border-left:3px solid #7a1f1f; padding-left:14px;">
+                <p style="margin:0 0 3px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7a1f1f;">
+                  exa-labs &middot; GitHub &middot; +2.1k stars today
+                </p>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=exa-mcp"
+                   style="font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:17px; font-weight:700; color:#1a1714; text-decoration:none; line-height:1.3; display:block; margin-bottom:6px;">
+                  exa-mcp: Production-grade web search MCP server
+                </a>
+                <p style="margin:0; font-size:14px; color:#5b554d; line-height:1.6;">
+                  Drop-in MCP server for Claude Code and Codex CLI with citation extraction and rate-limited search.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Pick 5 — Sparse MoR -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:20px;">
+            <tr>
+              <td style="border-left:3px solid #7a1f1f; padding-left:14px;">
+                <p style="margin:0 0 3px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7a1f1f;">
+                  AIHOT &middot; Research &middot; 8h ago
+                </p>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=sparse-mor"
+                   style="font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:17px; font-weight:700; color:#1a1714; text-decoration:none; line-height:1.3; display:block; margin-bottom:6px;">
+                  Sparse Mixture-of-Routers: 30% inference speedup, no quality loss
+                </a>
+                <p style="margin:0; font-size:14px; color:#5b554d; line-height:1.6;">
+                  DeepSeek &amp; ETH Z&uuml;rich propose learned routing inside MoE layers. Reproducible results on open checkpoints.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Pick 6 — Cursor JetBrains -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:8px;">
+            <tr>
+              <td style="border-left:3px solid #7a1f1f; padding-left:14px;">
+                <p style="margin:0 0 3px; font-family:Courier New,Courier,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7a1f1f;">
+                  AIHOT &middot; Products &middot; 3h ago
+                </p>
+                <a href="https://ai-daily-digest.example/?ref=email-en&article=cursor-jetbrains"
+                   style="font-family:Georgia,'Iowan Old Style','Source Serif Pro',serif; font-size:17px; font-weight:700; color:#1a1714; text-decoration:none; line-height:1.3; display:block; margin-bottom:6px;">
+                  Cursor ships agent mode for the JetBrains line
+                </a>
+                <p style="margin:0; font-size:14px; color:#5b554d; line-height:1.6;">
+                  After 18 months of VS Code-only releases, Cursor&rsquo;s agent mode lands in IntelliJ, WebStorm, and PyCharm.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Read all link -->
+          <p style="margin:20px 0 0; text-align:center; font-family:Courier New,Courier,monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase;">
+            <a href="https://ai-daily-digest.example/?ref=email-en" style="color:#7a1f1f; text-decoration:none; font-weight:700;">
+              Read all 14 picks on the site &rarr;
+            </a>
+          </p>
+        </td>
+      </tr>
+
+      <!-- ── Footer ── -->
+      <tr>
+        <td style="padding:24px 28px 28px; background:#f4f1ea; border-top:3px solid #1a1714; color:#5b554d; font-size:12px; text-align:center; font-family:Courier New,Courier,monospace; letter-spacing:0.06em; text-transform:uppercase;">
+          <p style="margin:0 0 10px;">
+            You&rsquo;re receiving this because you subscribed to AI Daily Digest in English.
+          </p>
+          <p style="margin:0 0 10px;">
+            <a href="https://ai-daily-digest.example/account" style="color:#7a1f1f; text-decoration:none; font-weight:700;">Manage account</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://ai-daily-digest.example/account?lang=zh" style="color:#7a1f1f; text-decoration:none; font-weight:700;">Switch to 中文</a>
+            &nbsp;&middot;&nbsp;
+            <a href="{{ beehiiv_unsubscribe_url }}" style="color:#7a1f1f; text-decoration:none; font-weight:700;">Unsubscribe</a>
+          </p>
+          <p style="margin:0; color:#8a847a;">
+            AI Daily Digest &nbsp;&middot;&nbsp; Vol. III &nbsp;&middot;&nbsp;
+            <a href="https://ai-daily-digest.example/" style="color:#8a847a; text-decoration:none;">ai-daily-digest.example</a>
+          </p>
+        </td>
+      </tr>
+
+    </table>
+  </td></tr>
+</table>
+</div>
+
+</body>
+</html>
