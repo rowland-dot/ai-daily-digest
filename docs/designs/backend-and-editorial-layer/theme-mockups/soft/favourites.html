@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="soft-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favourites — AI Daily Digest (Soft theme)</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-soft/tokens.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ── Mockup nav ── */
+.mockup-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 8px 16px; font-size: 12px;
+  overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow);
+}
+.mockup-nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; gap: 8px;
+}
+.mockup-nav-label {
+  font-weight: 700; color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em; font-size: 11px; padding-right: 8px;
+  border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0;
+}
+.mockup-nav a {
+  color: var(--text-muted); padding: 4px 10px; border-radius: 999px;
+  font-weight: 500; text-decoration: none; flex-shrink: 0;
+  transition: background 0.12s, color 0.12s;
+}
+.mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+.mockup-nav-back { color: var(--text-muted); margin-left: auto; flex-shrink: 0; font-size: 11px; }
+
+/* ── Theme toggle ── */
+.theme-toggle {
+  position: fixed; top: 56px; right: 16px; z-index: 40;
+  display: inline-flex;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; padding: 3px; font-size: 12px; box-shadow: var(--shadow);
+}
+.theme-toggle button {
+  background: transparent; border: 0; color: var(--text-muted);
+  padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  font-family: inherit; font-size: inherit; font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+.theme-toggle button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+/* ── Hero ── */
+.hero {
+  background: var(--hero-bg); color: var(--hero-text);
+  padding: 56px 24px 44px; text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-family: var(--display-font);
+  font-size: clamp(28px, 4.5vw, 42px); font-weight: 700;
+  letter-spacing: var(--tracking-tight); margin: 0 0 8px;
+}
+.hero-date { font-size: 15px; color: var(--text-muted); font-weight: 500; }
+.hero-tagline { margin: 12px auto 0; max-width: 520px; font-size: 15px; color: var(--text-muted); line-height: 1.55; }
+.hero-site-nav {
+  display: inline-flex; gap: 6px; margin-top: 26px;
+  padding: 5px 8px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; box-shadow: var(--shadow);
+}
+.hero-site-nav a {
+  color: var(--text-muted); font-size: 13px; font-weight: 600;
+  padding: 5px 12px; border-radius: 999px; text-decoration: none;
+  transition: color 0.12s, background 0.12s;
+}
+.hero-site-nav a:hover { color: var(--text); background: var(--accent-soft); }
+.hero-site-nav a[data-current="true"] { color: var(--accent); background: var(--accent-soft); }
+
+/* ── Sync prompt ── */
+.sync-prompt {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+  padding: 18px 22px; margin-bottom: 32px;
+  background: var(--accent-soft); border: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+}
+.sync-prompt p { margin: 0; }
+.sp-title { font-weight: 600; font-size: 15px; color: var(--text); }
+.sp-sub { font-size: 13.5px; color: var(--text-muted); margin-top: 4px; }
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-block; padding: 10px 20px;
+  background: var(--accent); color: #fff;
+  font-family: inherit; font-size: 14px; font-weight: 600;
+  border: 0; border-radius: var(--radius); cursor: pointer;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.15s, transform 0.1s;
+}
+.btn-primary:hover { background: var(--accent-hover); text-decoration: none; color: #fff; }
+.btn-primary:active { transform: translateY(1px); }
+
+/* ── Main ── */
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
+
+.section-head {
+  font-family: var(--display-font); font-size: 20px; font-weight: 700;
+  letter-spacing: var(--tracking-tight); margin: 0 0 6px;
+  display: flex; align-items: center; gap: 10px; color: var(--text);
+}
+.section-sub { color: var(--text-muted); font-size: 14px; margin: 0 0 20px; }
+
+/* ── Cards ── */
+.stack { display: flex; flex-direction: column; gap: 14px; }
+article.card {
+  padding: 22px 24px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow); position: relative;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+@media (prefers-reduced-motion: no-preference) {
+  article.card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(31,31,29,0.05), 0 12px 32px rgba(31,31,29,0.09);
+  }
+}
+.card-meta {
+  font-size: 12.5px; color: var(--text-muted);
+  margin-top: 10px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 999px;
+  background: var(--surface-2); color: var(--text-muted);
+  font-size: 11px; font-weight: 600;
+}
+h3.card-title {
+  font-family: var(--display-font); font-size: 17.5px; font-weight: 600;
+  line-height: 1.35; letter-spacing: -0.012em; margin: 0 0 6px; padding-right: 36px;
+}
+h3.card-title a { color: var(--text); text-decoration: none; }
+h3.card-title a:hover { color: var(--accent); }
+.card-summary { font-size: 14.5px; color: var(--text-muted); line-height: 1.6; margin: 0; }
+.fav-star {
+  position: absolute; top: 18px; right: 18px; background: transparent; border: 0;
+  cursor: pointer; font-size: 17px; color: var(--accent); padding: 4px; line-height: 1;
+  transition: transform 0.1s;
+}
+.fav-star:hover { transform: scale(1.15); }
+
+/* ── TOC ── */
+.toc-links {
+  max-width: 860px; margin: 0 auto;
+  padding: 16px 24px; display: flex; gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.toc-links a {
+  padding: 7px 14px; border-radius: 999px;
+  color: var(--text-muted); font-size: 13.5px; font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.toc-links a:hover { background: var(--surface-2); color: var(--text); }
+
+/* ── Footer ── */
+footer.site-footer {
+  max-width: 860px; margin: 64px auto 0;
+  padding: 28px 24px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--text-muted);
+}
+footer.site-footer a { color: var(--text-muted); }
+footer.site-footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Soft</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html" aria-current="page">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/theme-shotgun/" class="mockup-nav-back">← Comparison</a>
+  </div>
+</nav>
+
+<div class="theme-toggle" role="group" aria-label="Colour mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='soft-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='soft-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<header class="hero">
+  <h1>★ Favourites</h1>
+  <div class="hero-date">3 saved articles · this device only</div>
+  <p class="hero-tagline">Articles you starred on today's digest. Save them across devices by linking to your email.</p>
+  <nav class="hero-site-nav" aria-label="Site">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html" data-current="false">Daily digest</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html" data-current="true" aria-current="page">★ Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/account.html" data-current="false">Account</a>
+  </nav>
+</header>
+
+<nav class="toc-links" aria-label="Quick links">
+  <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">← Today's digest</a>
+  <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/account.html">⚙ Account</a>
+</nav>
+
+<main data-testid="favourites-page" data-backend-live="true" data-fav-source="localStorage" data-auth="anonymous">
+
+  <!-- Sync prompt — Cloudflare-live, anonymous state -->
+  <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
+    <div>
+      <p class="sp-title">Save these across devices →</p>
+      <p class="sp-sub">Link them to your email so they follow you to your phone and laptop.</p>
+    </div>
+    <button type="button" class="btn-primary" data-testid="sync-prompt-open-btn">Sync now</button>
+  </div>
+
+  <section>
+    <h2 class="section-head">★ Saved articles</h2>
+    <p class="section-sub">Sorted by most recently saved.</p>
+    <div class="stack">
+
+      <article class="card" data-article-id="aihot-a3f12b8c">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-a3f12b8c">★</button>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/soft/article.html">Claude 4.7 launches with 1M context window</a></h3>
+        <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window today. Pricing matches the previous Opus tier.</p>
+        <div class="card-meta">
+          <span class="badge">AIHOT</span>
+          <span>saved 2h ago</span>
+        </div>
+      </article>
+
+      <article class="card" data-article-id="aihot-7c3e9d1a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-7c3e9d1a">★</button>
+        <h3 class="card-title"><a href="/designs/backend-and-editorial-layer/theme-mockups/soft/article.html">Qwen3-Omni released as open weights</a></h3>
+        <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
+        <div class="card-meta">
+          <span class="badge">AIHOT</span>
+          <span>saved 5h ago</span>
+        </div>
+      </article>
+
+      <article class="card" data-article-id="builder-2f8c4e6a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="builder-2f8c4e6a">★</button>
+        <h3 class="card-title"><a href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a></h3>
+        <p class="card-summary">Walks through a Tailscale + Firecracker setup so Claude Code can rm -rf whatever it wants and the host stays clean.</p>
+        <div class="card-meta">
+          <span class="badge">Simon Willison</span>
+          <span>saved yesterday</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  Favourites stored on this device · <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">← back to today's digest</a>
+</footer>
+
+</body>
+</html>

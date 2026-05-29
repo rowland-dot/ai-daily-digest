@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="soft-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account — AI Daily Digest (Soft theme)</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-soft/tokens.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ── Mockup nav ── */
+.mockup-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 8px 16px; font-size: 12px;
+  overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow);
+}
+.mockup-nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; gap: 8px;
+}
+.mockup-nav-label {
+  font-weight: 700; color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em; font-size: 11px; padding-right: 8px;
+  border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0;
+}
+.mockup-nav a {
+  color: var(--text-muted); padding: 4px 10px; border-radius: 999px;
+  font-weight: 500; text-decoration: none; flex-shrink: 0;
+  transition: background 0.12s, color 0.12s;
+}
+.mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+.mockup-nav-back { color: var(--text-muted); margin-left: auto; flex-shrink: 0; font-size: 11px; }
+
+/* ── Theme toggle ── */
+.theme-toggle {
+  position: fixed; top: 56px; right: 16px; z-index: 40;
+  display: inline-flex;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; padding: 3px; font-size: 12px; box-shadow: var(--shadow);
+}
+.theme-toggle button {
+  background: transparent; border: 0; color: var(--text-muted);
+  padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  font-family: inherit; font-size: inherit; font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+.theme-toggle button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+/* ── Hero ── */
+.hero {
+  background: var(--hero-bg); color: var(--hero-text);
+  padding: 56px 24px 44px; text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-family: var(--display-font);
+  font-size: clamp(28px, 4.5vw, 42px); font-weight: 700;
+  letter-spacing: var(--tracking-tight); margin: 0 0 8px;
+}
+.hero-sub { font-size: 15px; color: var(--text-muted); }
+.hero-site-nav {
+  display: inline-flex; gap: 6px; margin-top: 26px;
+  padding: 5px 8px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; box-shadow: var(--shadow);
+}
+.hero-site-nav a {
+  color: var(--text-muted); font-size: 13px; font-weight: 600;
+  padding: 5px 12px; border-radius: 999px; text-decoration: none;
+  transition: color 0.12s, background 0.12s;
+}
+.hero-site-nav a:hover { color: var(--text); background: var(--accent-soft); }
+.hero-site-nav a[data-current="true"] { color: var(--accent); background: var(--accent-soft); }
+
+/* ── TOC ── */
+.toc-links {
+  max-width: 680px; margin: 0 auto;
+  padding: 16px 24px; display: flex; gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.toc-links a {
+  padding: 7px 14px; border-radius: 999px;
+  color: var(--text-muted); font-size: 13.5px; font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.toc-links a:hover { background: var(--surface-2); color: var(--text); }
+
+/* ── Main / account cards ── */
+main { max-width: 680px; margin: 0 auto; padding: 48px 24px; }
+
+.account-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 28px 28px 20px;
+  box-shadow: var(--shadow); margin-bottom: 20px;
+}
+.account-card + .account-card { margin-top: 20px; }
+.account-card h3 {
+  font-family: var(--display-font); font-size: 17px; font-weight: 700;
+  margin: 0 0 4px; color: var(--text);
+}
+.account-card .muted { color: var(--text-muted); font-size: 14px; margin: 0 0 20px; }
+.account-card .muted strong { color: var(--text); }
+
+/* ── Account rows ── */
+.account-row {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 14px 0; border-top: 1px solid var(--border);
+}
+.row-label {
+  font-size: 14px; font-weight: 600; color: var(--text-muted);
+  min-width: 160px; flex-shrink: 0;
+}
+.row-value { font-size: 14px; color: var(--text); flex: 1; }
+
+/* ── Buttons ── */
+.btn-secondary {
+  display: inline-block; padding: 7px 16px;
+  background: var(--surface-2); color: var(--text);
+  font-family: inherit; font-size: 13px; font-weight: 600;
+  border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+.btn-secondary:hover { background: var(--surface-3); border-color: var(--border-strong); text-decoration: none; color: var(--text); }
+
+.btn-danger {
+  display: inline-block; padding: 8px 18px;
+  background: var(--danger-bg); color: var(--danger);
+  font-family: inherit; font-size: 13px; font-weight: 600;
+  border: 1px solid var(--danger); border-radius: var(--radius); cursor: pointer;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.15s;
+}
+.btn-danger:hover { background: var(--danger); color: #fff; }
+
+/* ── Language pref toggle ── */
+.lang-pref {
+  display: inline-flex; gap: 0;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 999px; padding: 3px;
+}
+.lang-pref button {
+  background: transparent; border: 0; color: var(--text-muted);
+  padding: 5px 14px; border-radius: 999px; cursor: pointer;
+  font-family: inherit; font-size: 13px; font-weight: 600;
+  transition: background 0.15s, color 0.15s;
+}
+.lang-pref button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+/* ── Footer ── */
+footer.site-footer {
+  max-width: 680px; margin: 64px auto 0;
+  padding: 28px 24px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--text-muted);
+}
+footer.site-footer a { color: var(--text-muted); }
+footer.site-footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Soft</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/account.html" aria-current="page">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/article.html">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/theme-shotgun/" class="mockup-nav-back">← Comparison</a>
+  </div>
+</nav>
+
+<div class="theme-toggle" role="group" aria-label="Colour mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='soft-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='soft-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<header class="hero">
+  <h1>Account</h1>
+  <p class="hero-sub">Manage your subscription and saved articles</p>
+  <nav class="hero-site-nav" aria-label="Site">
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html" data-current="false">Daily digest</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html" data-current="false">★ Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/account.html" data-current="true" aria-current="page">Account</a>
+  </nav>
+</header>
+
+<nav class="toc-links" aria-label="Quick links">
+  <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">← Today's digest</a>
+  <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html">★ Favourites</a>
+</nav>
+
+<main data-testid="account-page" data-auth="linked" data-newsletter-state="subscribed">
+
+  <div class="account-card">
+    <h3>Your subscription</h3>
+    <p class="muted">Signed in as <strong>alex@example.com</strong></p>
+
+    <div class="account-row">
+      <span class="row-label">Newsletter</span>
+      <span class="row-value" data-testid="newsletter-status">Subscribed · daily email at 07:00 Sydney</span>
+      <button type="button" class="btn-secondary" data-testid="unsubscribe-btn">Unsubscribe</button>
+    </div>
+
+    <div class="account-row">
+      <span class="row-label">Language preference</span>
+      <div class="lang-pref" role="tablist" aria-label="Email language" data-testid="lang-pref">
+        <button type="button" role="tab" data-lang="en" aria-pressed="true" data-testid="lang-pref-en">EN</button>
+        <button type="button" role="tab" data-lang="zh" aria-pressed="false" data-testid="lang-pref-zh">中文</button>
+      </div>
+    </div>
+
+    <div class="account-row">
+      <span class="row-label">Saved articles</span>
+      <span class="row-value">3 saved · synced across devices</span>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html" class="btn-secondary">View favourites</a>
+    </div>
+  </div>
+
+  <div class="account-card">
+    <h3>Danger zone</h3>
+    <p class="muted">Delete everything we know about you. This cannot be undone.</p>
+    <div class="account-row" style="border-top: 0; padding-top: 0;">
+      <button type="button" class="btn-danger" data-testid="delete-data-btn">Delete my data</button>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Signed in as alex@example.com · <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">← back to today's digest</a>
+</footer>
+
+</body>
+</html>

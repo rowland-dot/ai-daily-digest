@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="soft-light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 4.7 launches with 1M context window — EN Translation — AI Daily Digest (Soft theme)</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-soft/tokens.css">
+<!--
+SEO HEAD ELEMENTS (per Spec B D7 / B13) — present on the live page:
+<link rel="canonical" href="https://www.aihot.com/articles/claude-4-7-launch">
+<link rel="alternate" hreflang="zh" href="https://www.aihot.com/articles/claude-4-7-launch">
+<link rel="alternate" hreflang="en" href="https://ai-daily-digest.example/articles/aihot-claude-4-7-launch-a3f12b8c/">
+<link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="/feed.xml">
+-->
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ── Mockup nav ── */
+.mockup-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 8px 16px; font-size: 12px;
+  overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow);
+}
+.mockup-nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; gap: 8px;
+}
+.mockup-nav-label {
+  font-weight: 700; color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.06em; font-size: 11px; padding-right: 8px;
+  border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0;
+}
+.mockup-nav a {
+  color: var(--text-muted); padding: 4px 10px; border-radius: 999px;
+  font-weight: 500; text-decoration: none; flex-shrink: 0;
+  transition: background 0.12s, color 0.12s;
+}
+.mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+.mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+.mockup-nav-back { color: var(--text-muted); margin-left: auto; flex-shrink: 0; font-size: 11px; }
+
+/* ── Theme toggle ── */
+.theme-toggle {
+  position: fixed; top: 56px; right: 16px; z-index: 40;
+  display: inline-flex;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; padding: 3px; font-size: 12px; box-shadow: var(--shadow);
+}
+.theme-toggle button {
+  background: transparent; border: 0; color: var(--text-muted);
+  padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  font-family: inherit; font-size: inherit; font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+.theme-toggle button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+/* ── Hero ── */
+.hero {
+  background: var(--hero-bg); color: var(--hero-text);
+  padding: 52px 24px 40px; text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.hero-kicker {
+  display: inline-block; padding: 5px 14px;
+  background: var(--accent-soft); color: var(--accent);
+  font-size: 12px; font-weight: 600; border-radius: 999px;
+  letter-spacing: 0.02em; margin-bottom: 16px;
+}
+.hero h1 {
+  font-family: var(--display-font);
+  font-size: clamp(22px, 3.5vw, 34px); font-weight: 700;
+  letter-spacing: var(--tracking-tight); margin: 0 0 8px;
+  max-width: 680px; margin-left: auto; margin-right: auto;
+}
+.hero-sub { font-size: 14px; color: var(--text-muted); margin: 0; }
+
+/* ── TOC ── */
+.toc-links {
+  max-width: 780px; margin: 0 auto;
+  padding: 14px 24px; display: flex; gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.toc-links a {
+  padding: 7px 14px; border-radius: 999px;
+  color: var(--text-muted); font-size: 13.5px; font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.toc-links a:hover { background: var(--surface-2); color: var(--text); }
+
+/* ── Article ── */
+main { max-width: 780px; margin: 0 auto; padding: 48px 24px 64px; }
+
+.translation-article {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 36px 40px;
+  box-shadow: var(--shadow);
+}
+
+.translation-article h1 {
+  font-family: var(--display-font);
+  font-size: clamp(24px, 3.8vw, 36px); font-weight: 700;
+  letter-spacing: var(--tracking-tight); line-height: 1.2;
+  margin: 0 0 20px; color: var(--text);
+}
+
+.translation-attribution {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  font-size: 13px; color: var(--text-muted);
+  padding: 14px 0; border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); margin-bottom: 20px;
+}
+.translation-attribution span strong { color: var(--text); }
+
+/* Read original CTA */
+.translation-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px; margin: 4px 0 24px;
+  background: var(--accent); color: #fff;
+  font-size: 14px; font-weight: 600;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+}
+.translation-cta:hover { background: var(--accent-hover); text-decoration: none; color: #fff; }
+.translation-cta:active { transform: translateY(1px); }
+
+/* Language tag on the source note */
+.lang-tag {
+  display: inline-block; padding: 2px 8px; border-radius: 999px;
+  background: var(--surface-2); color: var(--text-muted);
+  font-size: 11.5px; font-weight: 600; letter-spacing: 0.02em;
+}
+
+.translation-body p {
+  font-size: 16px; line-height: 1.75; color: var(--text); margin: 0 0 18px;
+}
+.translation-body p:last-child { margin-bottom: 0; }
+
+/* ── Source note block ── */
+.source-note {
+  margin-top: 28px; padding: 16px 18px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); font-size: 13.5px; color: var(--text-muted);
+}
+.source-note strong { color: var(--text-muted); }
+
+/* ── Footer ── */
+footer.site-footer {
+  max-width: 780px; margin: 64px auto 0;
+  padding: 28px 24px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--text-muted);
+  display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+}
+footer.site-footer a { color: var(--text-muted); }
+footer.site-footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Theme mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">Theme: Soft</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">Home</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html">Favourites</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/account.html">Account</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/article.html" aria-current="page">Article</a>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/email-en.html">Email</a>
+    <a href="/designs/backend-and-editorial-layer/theme-shotgun/" class="mockup-nav-back">← Comparison</a>
+  </div>
+</nav>
+
+<div class="theme-toggle" role="group" aria-label="Colour mode">
+  <button aria-pressed="true" onclick="document.documentElement.dataset.theme='soft-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='soft-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+</div>
+
+<header class="hero">
+  <div class="hero-kicker">AIHOT · Translation · CN → EN</div>
+  <h1>Claude 4.7 launches with 1M context window</h1>
+  <p class="hero-sub">3-paragraph excerpt of the original Chinese article · published 2026-05-17 (Beijing time)</p>
+</header>
+
+<nav class="toc-links" aria-label="Quick links">
+  <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">← Today's digest</a>
+  <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/favourites.html">★ Favourites</a>
+</nav>
+
+<main>
+  <article class="translation-article" data-testid="translation-article">
+    <h1>Claude 4.7 launches with 1M context window</h1>
+
+    <div class="translation-attribution">
+      <span><strong>Source:</strong> AIHOT <span class="lang-tag">中文</span></span>
+      <span><strong>Published:</strong> 2026-05-17 (Beijing time)</span>
+      <span><strong>Translation:</strong> EN excerpt</span>
+    </div>
+
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
+      Read original (中文) →
+    </a>
+
+    <div class="translation-body">
+      <p>Anthropic today shipped Claude 4.7, the first frontier-tier model with a 1 million-token context window available to all API users from day one. The launch matches the announcement made at Anthropic's developer day last week but arrives two weeks ahead of the projected release date. Pricing remains identical to the previous Opus tier: $15 per million input tokens and $75 per million output tokens, with prompt-caching discounts unchanged.</p>
+
+      <p>The 1M context window puts Claude 4.7 ahead of OpenAI's most generous Responses-API offering (512K, rolled out quietly last week) and well past Gemini Pro 2.5's 2M-token ceiling — though Gemini's window has historically come with sharper degradation past the 200K mark. Anthropic's internal benchmarks show Claude 4.7 maintaining recall accuracy above 95% out to the full 1M tokens; independent third-party verification is not yet available but the AIDanBench team has reportedly begun testing.</p>
+
+      <p>Behind the headline number, the more interesting shift is what Anthropic is asking developers to do with the additional context. The launch blog post emphasises tool-output retention ("keep the last 200 tool calls in context"), multi-document analysis ("entire 50-paper literature review in one prompt"), and long-running agentic workflows. Less discussed publicly: the team has been quietly preparing for Claude to read entire codebases by default, with a separate codebase-indexing API in private beta to a handful of enterprise customers.</p>
+    </div>
+
+    <div class="source-note">
+      <strong>Note:</strong> This is a 3-paragraph EN excerpt. The full article continues in the original Chinese source.
+    </div>
+
+    <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta-bottom" style="margin-top: 24px;">
+      Read full article in 中文 →
+    </a>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <span>Translation excerpt published 2026-05-17 · <a href="/designs/backend-and-editorial-layer/theme-mockups/soft/home.html">AI Daily Digest</a></span>
+  <span>· <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">view original (中文) ↗</a></span>
+</footer>
+
+</body>
+</html>
