@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en" data-theme="notion-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notion variant — colours-B-story-type</title>
+  <link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-notion/tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    /* ── Mockup-only nav strip ── */
+    .mockup-nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 12px;
+      font-size: 12px;
+      overflow-x: auto; white-space: nowrap;
+      box-shadow: var(--shadow);
+      font-family: var(--mono-font);
+    }
+    .mockup-nav-inner {
+      max-width: 1040px; margin: 0 auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .mockup-nav-label {
+      font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      font-size: 10px; padding-right: 8px;
+      border-right: 1px solid var(--border);
+      margin-right: 4px; flex-shrink: 0;
+    }
+    .mockup-nav a {
+      color: var(--text-muted);
+      padding: 4px 9px; border-radius: var(--radius-full);
+      font-weight: 500; text-decoration: none; flex-shrink: 0;
+    }
+    .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
+    .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+    /* ── Theme toggle ── */
+    .ts {
+      position: fixed; top: 48px; right: 14px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-full); padding: 3px; font-size: 12px;
+      box-shadow: var(--shadow); font-family: var(--mono-font);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 5px 11px; border-radius: var(--radius-full); cursor: pointer;
+      font-family: inherit; font-size: inherit; font-weight: 500;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+    /* ───────────────────────────────────────────────────
+       MASTHEAD — clean light slab above the hero band
+       ─────────────────────────────────────────────────── */
+    .masthead {
+      max-width: 1040px; margin: 0 auto;
+      padding: 56px 32px 28px;
+      text-align: left;
+    }
+    .masthead-row {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 24px; flex-wrap: wrap;
+    }
+    .masthead h1 {
+      font-family: var(--display-font);
+      font-size: var(--display-hero);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: var(--track-hero);
+      margin: 0;
+      color: var(--text);
+    }
+    .masthead .issue-line {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 14px;
+      font-family: var(--mono-font);
+      font-size: var(--micro-uppercase);
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--text-tertiary);
+      font-weight: 600;
+    }
+    .masthead .issue-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--brand-green);
+      box-shadow: 0 0 0 3px rgba(26,174,57,0.15);
+    }
+    .masthead-meta {
+      text-align: right;
+      font-family: var(--body-font);
+      font-size: var(--body-sm);
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .masthead-meta strong { color: var(--text); font-weight: 600; }
+    @media (max-width: 640px) {
+      .masthead { padding: 40px 20px 20px; }
+      .masthead-meta { text-align: left; }
+    }
+
+    /* ───────────────────────────────────────────────────
+       HERO BAND — brand-navy with scattered pastel DOTS
+       ─────────────────────────────────────────────────── */
+    .hero-wrap {
+      max-width: 1040px; margin: 0 auto;
+      padding: 0 32px;
+    }
+    @media (max-width: 640px) { .hero-wrap { padding: 0 16px; } }
+
+    header.hero {
+      background: var(--hero-bg);
+      color: var(--hero-text);
+      padding: 56px 40px 60px;
+      border-radius: var(--radius-xl);
+      position: relative;
+      overflow: hidden;
+    }
+    /* Pastel sticky-note dots scattered around — UNCHANGED from base */
+    .hero-dot {
+      position: absolute; border-radius: 50%;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      pointer-events: none;
+    }
+    .hero-dot.d1 { width: 18px; height: 18px; background: #ffe8d4; top: 24px; left: 8%; }
+    .hero-dot.d2 { width: 14px; height: 14px; background: #ff64c8; top: 70px; left: 18%; }
+    .hero-dot.d3 { width: 22px; height: 22px; background: #d9f3e1; top: 40px; right: 14%; }
+    .hero-dot.d4 { width: 16px; height: 16px; background: #dcecfa; bottom: 50px; left: 12%; }
+    .hero-dot.d5 { width: 12px; height: 12px; background: #fef7d6; bottom: 90px; left: 22%; }
+    .hero-dot.d6 { width: 20px; height: 20px; background: #e6e0f5; bottom: 30px; right: 22%; }
+    .hero-dot.d7 { width: 14px; height: 14px; background: #f5d75e; top: 110px; right: 8%; }
+    .hero-dot.d8 { width: 10px; height: 10px; background: #1aae39; bottom: 60px; right: 8%; }
+
+    .hero-inner {
+      max-width: 720px; margin: 0 auto;
+      position: relative; z-index: 1;
+      text-align: center;
+    }
+    .hero-kicker {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; margin-bottom: 18px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: var(--radius-full);
+      font-family: var(--mono-font); font-size: var(--micro-uppercase);
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.92);
+      font-weight: 600;
+    }
+    .hero-live-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: #51d36a; box-shadow: 0 0 8px rgba(81,211,106,0.7);
+    }
+    h2.hero-title {
+      font-family: var(--display-font);
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: var(--track-display);
+      margin: 0 0 12px;
+      color: var(--hero-text);
+    }
+    .hero-date {
+      font-family: var(--mono-font);
+      font-size: var(--caption);
+      color: var(--hero-muted);
+      letter-spacing: 0.06em;
+    }
+    .hero-tag {
+      max-width: 540px; margin: 18px auto 28px;
+      font-size: var(--body-lg);
+      color: rgba(255,255,255,0.82);
+      line-height: 1.55;
+    }
+    .hero-cta-row {
+      display: inline-flex; gap: 10px; flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: 0; padding: 11px 20px;
+      border-radius: var(--radius);
+      font-family: var(--body-font);
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: background 0.12s ease;
+      line-height: 1.3;
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-on-dark {
+      background: #ffffff;
+      color: var(--text);
+      border: 0;
+      padding: 11px 20px;
+      border-radius: var(--radius);
+      font-family: var(--body-font);
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      line-height: 1.3;
+    }
+    .btn-on-dark:hover { background: #f0eeec; }
+    .btn-ghost-on-dark {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.30);
+      padding: 11px 20px;
+      border-radius: var(--radius);
+      font-family: var(--body-font);
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      line-height: 1.3;
+    }
+    .btn-ghost-on-dark:hover { background: rgba(255,255,255,0.10); }
+
+    .site-nav {
+      display: inline-flex; gap: 4px; margin-top: 28px;
+      padding: 5px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius-full);
+    }
+    .site-nav a {
+      color: rgba(255,255,255,0.78);
+      font-size: 13px; font-weight: 500;
+      padding: 7px 16px; border-radius: var(--radius-full);
+      text-decoration: none;
+    }
+    .site-nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+    .site-nav a[data-current="true"] { color: #fff; background: var(--accent); }
+
+    /* ── VARIANT LEGEND — story-type colour key ──
+       Sits just under the hero band, before the section TOC.
+       Lightweight semantic-pill row explaining what each tint encodes. */
+    .colour-legend {
+      max-width: 1040px;
+      margin: 24px auto 0;
+      padding: 14px 24px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      font-family: var(--body-font);
+    }
+    .colour-legend-head {
+      font-family: var(--mono-font);
+      font-size: var(--micro-uppercase);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .colour-legend-head::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .legend-pills {
+      display: flex; flex-wrap: wrap; gap: 6px 10px;
+      align-items: center;
+    }
+    .legend-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 4px 11px 4px 6px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-charcoal);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      line-height: 1.4;
+    }
+    .legend-swatch {
+      display: inline-block;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.06);
+      flex-shrink: 0;
+    }
+    .legend-swatch.lavender { background: var(--tint-lavender); }
+    .legend-swatch.mint     { background: var(--tint-mint); }
+    .legend-swatch.peach    { background: var(--tint-peach); }
+    .legend-swatch.sky      { background: var(--tint-sky); }
+    .legend-swatch.yellow   { background: var(--tint-yellow); }
+    .legend-swatch.cream    { background: var(--tint-cream); }
+    [data-theme="notion-dark"] .legend-pill { color: var(--text); background: var(--surface); border-color: var(--border); }
+    @media (max-width: 640px) {
+      .colour-legend { margin: 16px 16px 0; padding: 12px 14px; }
+    }
+
+    /* ── Section TOC (just under hero) ── */
+    nav.toc {
+      max-width: 1040px; margin: 0 auto;
+      padding: 28px 32px 10px;
+      display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
+      font-size: 13px;
+    }
+    nav.toc a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      font-weight: 500;
+    }
+    nav.toc a:hover { color: var(--text); background: var(--surface); }
+    @media (max-width: 640px) { nav.toc { padding: 20px 16px 4px; } }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 1040px; margin: 0 auto;
+      padding: 32px 32px 80px;
+    }
+    @media (max-width: 640px) { main { padding: 24px 16px 60px; } }
+    section + section { margin-top: 56px; }
+
+    h3.section-head {
+      font-family: var(--display-font);
+      font-size: var(--display-md);
+      font-weight: 700;
+      letter-spacing: var(--track-display);
+      margin: 0 0 6px;
+      color: var(--text);
+      display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    }
+    h3.section-head .count-pill {
+      background: var(--surface);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0;
+    }
+    .section-sub {
+      font-size: var(--body); color: var(--text-muted);
+      margin: 0 0 24px;
+      max-width: 640px;
+    }
+
+    /* Two-column card grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 720px) {
+      .card-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Article cards — VARIANT B: tint encodes STORY TYPE ──
+       Every card is tinted; no white cards. The tint is deterministic
+       from the story_type data attribute (see legend in hero).
+
+       Base card uses light borders + soft shadow so tinted bgs read.
+       Featured cards (with .feature) bump padding and remove border. */
+    article.card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+      position: relative;
+      /* Default fallback — only used if a card somehow has no story_type */
+      background: var(--bg);
+      color: var(--text);
+    }
+    article.card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      border-color: var(--border-strong);
+    }
+
+    /* ── Story-type tint mapping (the variant rule) ──
+       Applies to every .card with a [data-story-type] attribute.
+       Featured + non-featured cards share the same tint family;
+       featured just gets a bolder ink color via existing .feature rules. */
+    article.card[data-story-type="editors-cut"] {
+      background: var(--tint-lavender);
+      color: var(--tint-lavender-bold);
+      border-color: transparent;
+    }
+    article.card[data-story-type="model-release"] {
+      background: var(--tint-mint);
+      color: var(--tint-mint-bold);
+      border-color: transparent;
+    }
+    article.card[data-story-type="opinion"] {
+      background: var(--tint-peach);
+      color: var(--tint-peach-bold);
+      border-color: transparent;
+    }
+    article.card[data-story-type="tooling"] {
+      background: var(--tint-sky);
+      color: var(--tint-sky-bold);
+      border-color: transparent;
+    }
+    article.card[data-story-type="research"] {
+      background: var(--tint-yellow);
+      color: var(--tint-yellow-bold);
+      border-color: transparent;
+    }
+    article.card[data-story-type="community"] {
+      background: var(--tint-cream);
+      color: var(--tint-cream-bold);
+      border-color: transparent;
+    }
+
+    .card-meta {
+      margin-bottom: 10px;
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+    .meta-time {
+      font-family: var(--mono-font);
+      font-size: var(--micro);
+      color: var(--text-tertiary);
+      letter-spacing: 0.02em;
+    }
+    /* On tinted cards, give the time stamp enough contrast */
+    article.card[data-story-type] .meta-time {
+      color: inherit;
+      opacity: 0.65;
+    }
+
+    /* ── Vivid colored source badges ── */
+    .src-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      color: #fff;
+      line-height: 1.4;
+    }
+    .src-badge.aihot { background: #ff64c8; }
+    .src-badge.anthropic { background: #37352f; }
+    .src-badge.openai { background: #1aae39; }
+    .src-badge.github { background: #5d5b54; }
+    .src-badge.alibaba { background: #dd5b00; }
+    .src-badge.mistral { background: #2a9d99; }
+    .src-badge.exa { background: #5645d4; }
+    .src-badge.research { background: #391c57; }
+    .src-badge.deepseek { background: #7b3ff2; }
+    .src-badge.builder { background: #523410; }
+    .src-tag-soft {
+      display: inline-flex; align-items: center;
+      padding: 3px 9px;
+      border-radius: var(--radius-sm);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0;
+      background: rgba(255,255,255,0.55);
+      color: var(--text-charcoal);
+    }
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .status-pill.new { background: var(--success-bg); color: var(--success); }
+    .status-pill.breaking { background: var(--danger-bg); color: var(--danger); }
+    .status-pill.today { background: rgba(255,255,255,0.65); color: var(--tint-yellow-bold); }
+
+    h4.card-title {
+      font-family: var(--display-font);
+      font-size: 18px; font-weight: 600;
+      line-height: 1.3;
+      margin: 0 0 8px;
+      letter-spacing: var(--track-heading);
+    }
+    h4.card-title a { color: inherit; text-decoration: none; }
+    h4.card-title a:hover { opacity: 0.75; }
+    .card-summary {
+      font-size: var(--body-sm);
+      color: inherit;
+      opacity: 0.82;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* ── Featured cards — bigger type, no border ── */
+    article.card.feature {
+      padding: 26px 28px;
+      border: 0;
+      box-shadow: var(--shadow-sm);
+    }
+    article.card.feature .card-summary { opacity: 0.85; font-size: 15px; }
+    article.card.feature h4.card-title { font-size: 22px; font-weight: 700; margin-bottom: 12px; line-height: 1.25; }
+
+    /* Kicker label inside feature card */
+    .feature-kicker {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--body-font);
+      font-size: var(--micro-uppercase); font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      margin-bottom: 10px;
+      padding: 4px 10px;
+      background: rgba(255,255,255,0.55);
+      border-radius: var(--radius-sm);
+      color: inherit;
+    }
+    [data-theme="notion-dark"] .feature-kicker { background: rgba(255,255,255,0.10); }
+
+    /* Editor's Cut nested callout inside feature card */
+    .editors-cut {
+      margin-top: 14px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.55);
+      border-left: 3px solid var(--brand-purple, #5645d4);
+      border-radius: var(--radius);
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-charcoal);
+    }
+    [data-theme="notion-dark"] .editors-cut {
+      background: rgba(0,0,0,0.30);
+      color: var(--text);
+    }
+    .editors-cut-label {
+      display: block;
+      font-family: var(--body-font);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--brand-purple, #5645d4);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    /* Fav star */
+    .fav-star {
+      position: absolute; top: 16px; right: 16px;
+      background: none; border: 0;
+      color: inherit;
+      opacity: 0.55;
+      font-size: 18px;
+      cursor: pointer; padding: 4px;
+      line-height: 1;
+      border-radius: var(--radius-sm);
+    }
+    .fav-star:hover { background: rgba(255,255,255,0.4); opacity: 1; }
+    .fav-star[aria-pressed="true"] { opacity: 1; }
+    [data-theme="notion-dark"] .fav-star:hover { background: rgba(255,255,255,0.10); }
+
+    /* ── Subscribe block ── */
+    .subscribe {
+      margin-top: 72px;
+      padding: 40px 36px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative; overflow: hidden;
+    }
+    .subscribe::before {
+      content: ""; position: absolute;
+      width: 280px; height: 280px;
+      background: var(--tint-lavender);
+      border-radius: 50%;
+      top: -140px; right: -100px;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+    .subscribe::after {
+      content: ""; position: absolute;
+      width: 160px; height: 160px;
+      background: var(--tint-peach);
+      border-radius: 50%;
+      bottom: -80px; left: -50px;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+    .subscribe-inner { position: relative; z-index: 1; }
+    .subscribe-pills {
+      display: inline-flex; gap: 6px; margin-bottom: 12px;
+      flex-wrap: wrap; justify-content: center;
+    }
+    .pill-free {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 4px 10px;
+      background: var(--success-bg);
+      color: var(--success);
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .pill-meta {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 4px 10px;
+      background: var(--surface);
+      color: var(--text-muted);
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .subscribe h3 {
+      font-family: var(--display-font);
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: var(--track-display);
+      margin: 0 0 10px;
+      color: var(--text);
+      line-height: 1.15;
+    }
+    .subscribe p.lead { color: var(--text-muted); margin: 0 0 24px; font-size: 16px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .subscribe form { display: flex; gap: 8px; max-width: 460px; margin: 0 auto; }
+    .subscribe input[type="email"] {
+      flex: 1; padding: 12px 14px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg); color: var(--text);
+      font-family: inherit; font-size: 14px;
+      border-radius: var(--radius);
+      min-width: 0;
+    }
+    .subscribe input[type="email"]:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: var(--accent); }
+    .subscribe button {
+      padding: 12px 22px;
+      border: 0; background: var(--accent);
+      color: #fff;
+      font-family: var(--body-font);
+      font-size: 14px; font-weight: 600;
+      cursor: pointer;
+      border-radius: var(--radius);
+    }
+    .subscribe button:hover { background: var(--accent-hover); }
+    .subscribe-note {
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a {
+      color: var(--text-muted);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- Theme toggle (light/dark, localStorage-backed) -->
+  <div class="ts" role="group" aria-label="Theme">
+    <button id="ts-light" aria-pressed="true">Light</button><button id="ts-dark" aria-pressed="false">Dark</button>
+  </div>
+
+  <!-- Mockup nav strip (variant-aware) -->
+  <nav class="mockup-nav" aria-label="Theme mockup pages">
+    <div class="mockup-nav-inner">
+      <span class="mockup-nav-label">Notion variant: colours-B (story-type)</span>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion-variants/COMPARISON.html">← back to /notion-variants/COMPARISON.html</a>
+      <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">Base home</a>
+      <a href="/designs/backend-and-editorial-layer/theme-shotgun/INDEX.html">Theme index</a>
+    </div>
+  </nav>
+
+  <!-- ── Masthead (big display type) ── -->
+  <div class="masthead">
+    <div class="issue-line">
+      <span class="issue-dot"></span>
+      <span>Vol. III · Issue 142 · Live · colours-B variant</span>
+    </div>
+    <div class="masthead-row">
+      <h1>AI Daily Digest</h1>
+      <div class="masthead-meta">
+        <strong>Friday, 30 May 2026</strong><br>
+        07:00 AEST · 14 stories
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Hero band — brand-navy with scattered pastel dots (UNCHANGED) ── -->
+  <div class="hero-wrap">
+    <header class="hero">
+      <span class="hero-dot d1"></span>
+      <span class="hero-dot d2"></span>
+      <span class="hero-dot d3"></span>
+      <span class="hero-dot d4"></span>
+      <span class="hero-dot d5"></span>
+      <span class="hero-dot d6"></span>
+      <span class="hero-dot d7"></span>
+      <span class="hero-dot d8"></span>
+
+      <div class="hero-inner">
+        <span class="hero-kicker"><span class="hero-live-dot"></span> Today's edition · refreshed 2 min ago</span>
+        <h2 class="hero-title">What shipped, what trended, what AI builders are saying.</h2>
+        <p class="hero-tag">Frontier labs, open-source, and the China AI scene — distilled into a 4-minute read, every weekday at 7am Sydney time.</p>
+        <div class="hero-cta-row">
+          <a href="#models" class="btn-on-dark">Read today's digest →</a>
+          <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html" class="btn-ghost-on-dark">Subscribe by email</a>
+        </div>
+        <nav class="site-nav" aria-label="Site">
+          <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html" data-current="true" aria-current="page">Daily digest</a>
+          <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html" data-current="false">★ Favourites</a>
+          <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html" data-current="false">Account</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- ── Variant B legend — what each card tint means ── -->
+  <aside class="colour-legend" aria-label="Card colour legend">
+    <div class="colour-legend-head">Card tint = story type</div>
+    <div class="legend-pills">
+      <span class="legend-pill"><span class="legend-swatch lavender"></span> Editor's Cut commentary</span>
+      <span class="legend-pill"><span class="legend-swatch mint"></span> Product launch / model release</span>
+      <span class="legend-pill"><span class="legend-swatch peach"></span> Opinion / community voice</span>
+      <span class="legend-pill"><span class="legend-swatch sky"></span> Tooling / developer post</span>
+      <span class="legend-pill"><span class="legend-swatch yellow"></span> Research paper</span>
+      <span class="legend-pill"><span class="legend-swatch cream"></span> Community thread (Reddit / Twitter)</span>
+    </div>
+  </aside>
+
+  <!-- Section TOC -->
+  <nav class="toc" aria-label="Sections">
+    <a href="#models">Model drops</a>
+    <a href="#products">Products</a>
+    <a href="#industry">Industry</a>
+    <a href="#research">Research</a>
+    <a href="#labs">Lab posts</a>
+    <a href="#trending">GitHub trending</a>
+  </nav>
+
+  <main>
+
+    <!-- ── Model drops (AIHOT) ── -->
+    <section id="models">
+      <h3 class="section-head">Model drops &amp; updates <span class="count-pill">4 stories</span></h3>
+      <p class="section-sub">Latest model launches and capability releases.</p>
+      <div class="card-grid">
+
+        <!-- Card 1: Editor's Cut commentary → LAVENDER (story-type rule) -->
+        <article class="card feature" data-story-type="editors-cut">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge anthropic">Anthropic</span>
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="status-pill breaking">Breaking</span>
+            <span class="meta-time">2h ago</span>
+          </div>
+          <div class="feature-kicker">★ Editor's Cut</div>
+          <h4 class="card-title">
+            <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Claude 4.7 launches with 1M context window</a>
+          </h4>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+          <div class="editors-cut">
+            <span class="editors-cut-label">Why it matters</span>
+            A 1M context window matters less for "fits a novel" and more for "fits a codebase and still has room for tool output and conversation history." The pricing parity is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.
+          </div>
+        </article>
+
+        <!-- Card 2: Model release → MINT -->
+        <article class="card feature" data-story-type="model-release">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge alibaba">Alibaba</span>
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="status-pill today">Today</span>
+            <span class="meta-time">5h ago</span>
+          </div>
+          <h4 class="card-title">
+            <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Qwen3-Omni released as open weights</a>
+          </h4>
+          <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint. First open-weight model competitive at frontier sizes.</p>
+        </article>
+
+        <!-- Card 3: Model release → MINT -->
+        <article class="card" data-story-type="model-release">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge openai">OpenAI</span>
+            <span class="meta-time">7h ago</span>
+          </div>
+          <h4 class="card-title">
+            <a href="#">GPT-5.1 mini lands in API, half the cost of GPT-5 mini</a>
+          </h4>
+          <p class="card-summary">Quietly rolled out via the API console. Same context window, similar coding benchmarks, materially cheaper. No public model card yet.</p>
+        </article>
+
+        <!-- Card 4: Model release → MINT -->
+        <article class="card" data-story-type="model-release">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge mistral">Mistral</span>
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="meta-time">9h ago</span>
+          </div>
+          <h4 class="card-title">
+            <a href="#">Mistral Large 3.1 released with 200K context</a>
+          </h4>
+          <p class="card-summary">The French lab ships its largest context window to date. Benchmarks show improvement on long-document retrieval vs. the 128K predecessor.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Products ── -->
+    <section id="products">
+      <h3 class="section-head">Products &amp; applications <span class="count-pill">2 stories</span></h3>
+      <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
+      <div class="card-grid">
+        <!-- Cursor agent mode → SKY (tooling / developer post) -->
+        <article class="card feature" data-story-type="tooling">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="status-pill new">New</span>
+            <span class="meta-time">3h ago</span>
+          </div>
+          <h4 class="card-title"><a href="#">Cursor ships agent mode for the JetBrains line</a></h4>
+          <p class="card-summary">After 18 months of VS Code-only releases, Cursor's agent mode lands in IntelliJ, WebStorm, and PyCharm.</p>
+        </article>
+
+        <!-- Perplexity Spaces → MINT (product launch) -->
+        <article class="card" data-story-type="model-release">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="meta-time">4h ago</span>
+          </div>
+          <h4 class="card-title"><a href="#">Perplexity launches paid Spaces for teams</a></h4>
+          <p class="card-summary">Shared research workspaces with team-wide context — first move into B2B for the search-first AI company.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Industry ── -->
+    <section id="industry">
+      <h3 class="section-head">Industry moves <span class="count-pill">2 stories</span></h3>
+      <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
+      <div class="card-grid">
+        <!-- Mistral funding → PEACH (opinion / community voice — industry commentary) -->
+        <article class="card feature" data-story-type="opinion">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="src-tag-soft">Funding</span>
+            <span class="meta-time">6h ago</span>
+          </div>
+          <h4 class="card-title"><a href="#">Mistral raises $850M at $14B valuation</a></h4>
+          <p class="card-summary">Series C led by a16z values the French lab at roughly half OpenAI's last public round.</p>
+        </article>
+
+        <!-- China AI regulation → PEACH (opinion / community voice) -->
+        <article class="card" data-story-type="opinion">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge aihot">AIHOT</span>
+            <span class="src-tag-soft">Regulation</span>
+            <span class="meta-time">8h ago</span>
+          </div>
+          <h4 class="card-title"><a href="#">China's AI regulation framework enters implementation phase</a></h4>
+          <p class="card-summary">The CAC begins enforcing the Interim Measures for Generative AI Services — the first country-wide regulatory regime of its kind.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Research ── -->
+    <section id="research">
+      <h3 class="section-head">Research highlights <span class="count-pill">2 stories</span></h3>
+      <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
+      <div class="card-grid">
+        <!-- Sparse Mixture-of-Routers → YELLOW (research paper) -->
+        <article class="card feature" data-story-type="research">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge deepseek">DeepSeek</span>
+            <span class="src-badge research">Research</span>
+            <span class="meta-time">8h ago</span>
+          </div>
+          <h4 class="card-title"><a href="#">Sparse Mixture-of-Routers: 30% inference speedup, no quality loss</a></h4>
+          <p class="card-summary">DeepSeek + ETH Zürich propose learned routing inside MoE layers instead of fixed top-k gating.</p>
+        </article>
+
+        <!-- exa-mcp writeup → SKY (tooling / developer post) -->
+        <article class="card" data-story-type="tooling">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge exa">Exa</span>
+            <span class="src-badge github">GitHub</span>
+            <span class="meta-time">10h ago</span>
+          </div>
+          <h4 class="card-title"><a href="#">exa-mcp: Production-grade web search MCP server with citation extraction</a></h4>
+          <p class="card-summary">Drop-in MCP server for Claude Code and Codex CLI. Handles citation extraction and content distillation across 12 providers.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Lab posts ── -->
+    <section id="labs">
+      <h3 class="section-head">Lab announcements <span class="count-pill">2 stories</span></h3>
+      <p class="section-sub">Latest posts from OpenAI's blog and the frontier labs.</p>
+      <div class="card-grid">
+        <!-- o4-mini-high deprecation → MINT (model lifecycle = release-adjacent) -->
+        <article class="card" data-story-type="model-release">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge openai">OpenAI</span>
+            <span class="meta-time">11h ago</span>
+          </div>
+          <h4 class="card-title"><a href="https://openai.com/blog/" target="_blank" rel="noopener">o4-mini-high deprecation timeline announced</a></h4>
+          <p class="card-summary">OpenAI plans to retire o4-mini-high on August 1, 2026 — three months earlier than the typical 6-month notice.</p>
+        </article>
+
+        <!-- Anthropic prompt caching guide → SKY (tooling / developer post) -->
+        <article class="card" data-story-type="tooling">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge anthropic">Anthropic</span>
+            <span class="meta-time">12h ago</span>
+          </div>
+          <h4 class="card-title"><a href="https://www.anthropic.com/" target="_blank" rel="noopener">Anthropic releases prompt caching guide for enterprise</a></h4>
+          <p class="card-summary">Detailed documentation on structured prompts and cache anchoring patterns — targets developers running high-volume inference workloads.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── GitHub Trending ── -->
+    <section id="trending">
+      <h3 class="section-head">Trending on GitHub <span class="count-pill">2 repos</span></h3>
+      <p class="section-sub">Repositories that spiked in the last 24 hours.</p>
+      <div class="card-grid">
+        <!-- QwenLM/Qwen3 → MINT (open-weights model checkpoint repo) -->
+        <article class="card feature" data-story-type="model-release">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge github">github.com</span>
+            <span class="src-tag-soft">+4.8k today</span>
+            <span class="meta-time">trending</span>
+          </div>
+          <h4 class="card-title"><a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener">QwenLM/Qwen3</a></h4>
+          <p class="card-summary">Open-weights omnimodal checkpoint from Alibaba's Qwen team. 32B parameters, Apache 2.0.</p>
+        </article>
+
+        <!-- exa-labs/exa-mcp → SKY (tooling / developer post) -->
+        <article class="card" data-story-type="tooling">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article">★</button>
+          <div class="card-meta">
+            <span class="src-badge github">github.com</span>
+            <span class="src-tag-soft">+2.1k today</span>
+            <span class="meta-time">trending</span>
+          </div>
+          <h4 class="card-title"><a href="https://github.com/exa-labs/exa-mcp" target="_blank" rel="noopener">exa-labs/exa-mcp</a></h4>
+          <p class="card-summary">Production MCP server for web search with citation extraction. Python, MIT licence.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Subscribe ── -->
+    <div class="subscribe">
+      <div class="subscribe-inner">
+        <div class="subscribe-pills">
+          <span class="pill-free">● Free</span>
+          <span class="pill-meta">Daily · 6am Sydney</span>
+          <span class="pill-meta">Unsubscribe anytime</span>
+        </div>
+        <h3>Get this in your inbox.</h3>
+        <p class="lead">One short email every weekday. The big launches, the smart writeups, the open-source breakthroughs — nothing else.</p>
+        <form onsubmit="event.preventDefault()">
+          <input type="email" placeholder="you@example.com" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="subscribe-note">Vol. III · 2,100 subscribers · No tracking pixels</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="#">Archive</a> ·
+    <a href="#">Atom feed</a> ·
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">中文 translations</a> ·
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html">Account</a> ·
+    <a href="#">About</a>
+    <div style="margin-top: 12px; font-size: 11px; color: var(--text-tertiary);">AI Daily Digest · Vol. III · AEST · colours-B variant</div>
+  </footer>
+
+  <script>
+    (function () {
+      var L = document.getElementById('ts-light');
+      var D = document.getElementById('ts-dark');
+      var KEY = 'notion-theme-mode';
+      function apply(mode) {
+        document.documentElement.dataset.theme = (mode === 'dark') ? 'notion-dark' : 'notion-light';
+        L.setAttribute('aria-pressed', mode === 'dark' ? 'false' : 'true');
+        D.setAttribute('aria-pressed', mode === 'dark' ? 'true' : 'false');
+        try { localStorage.setItem(KEY, mode); } catch (e) {}
+      }
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch (e) {}
+      apply(saved === 'dark' ? 'dark' : 'light');
+      L.addEventListener('click', function () { apply('light'); });
+      D.addEventListener('click', function () { apply('dark'); });
+    })();
+  </script>
+
+</body>
+</html>
