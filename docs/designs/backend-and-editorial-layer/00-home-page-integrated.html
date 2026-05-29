@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — home-page-integrated</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  /* Integrated-page only: site-nav strip + subscribe-section banner.
+     Both extend existing tokens; no new design tokens introduced. */
+  .site-nav {
+    display: inline-flex;
+    gap: 14px;
+    margin-bottom: 22px;
+    padding: 6px 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+  }
+  .site-nav-link {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: color 0.12s ease, background 0.12s ease;
+  }
+  .site-nav-link:hover {
+    color: var(--text);
+    background: var(--accent-soft);
+  }
+  .site-nav-link[data-current="true"] {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  /* Subscribe section — sits between </main> and <footer>.
+     Visually a footer-area call-to-action, not a hero banner. */
+  .subscribe-section {
+    background: var(--surface-2);
+    border-top: 1px solid var(--border);
+    padding: 44px 20px 36px;
+    text-align: center;
+  }
+  .subscribe-section h2 {
+    font-family: var(--display-font);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: var(--tracking-tight);
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  .subscribe-section .section-sub {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 0 0 18px;
+  }
+</style>
+</head>
+<body>
+<!--
+| State slug              | Tier | Entry-point | What it shows |
+|-------------------------|------|-------------|---------------|
+| home-page-integrated    | A    | none        | Full assembled home page showing every backend-and-editorial-layer surface in its decided slot: site-nav + lang-switch + theme-switch in the hero, 10 content sections in order, Editor's Cut commentary boxes inline on cut cards across multiple section types, subscribe form gated by BACKEND_LIVE in the footer area, snapshot footer unchanged. |
+-->
+<section class="screen"
+         data-mockup-state="home-page-integrated"
+         data-mockup-tier="A"
+         data-mockup-entry-point="none"
+         data-mockup-capture="body"
+         data-mockup-trigger='[]'>
+
+  <header class="hero">
+    <div class="lang-switch" role="tablist" aria-label="Audio language">
+      <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+      <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+    </div>
+    <div class="theme-switch" role="tablist" aria-label="Theme">
+      <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+      <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/" class="site-nav-link" data-current="true" aria-current="page" aria-label="Daily digest home">Daily digest</a>
+      <a href="/favourites" class="site-nav-link" data-current="false">★ Favourites</a>
+      <a href="/account" class="site-nav-link" data-current="false" data-backend-live="true">Account</a>
+    </nav>
+    <h1>AI Daily Digest</h1>
+    <p class="date">2026-05-17 · 07:00 AEST</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, builder voices, r/LocalLLaMA, GitHub, HuggingFace, and Chinese AI media.</p>
+  </header>
+
+  <nav class="toc" aria-label="Sections">
+    <ul>
+      <li><a href="#models">🤖 Models</a></li>
+      <li><a href="#products">📦 Products</a></li>
+      <li><a href="#industry">📰 Industry</a></li>
+      <li><a href="#papers">📄 Research</a></li>
+      <li><a href="#labs">🏢 Lab posts</a></li>
+      <li><a href="#writing">✍ Simon Willison</a></li>
+      <li><a href="#builders">🎙 Builder voices</a></li>
+      <li><a href="#llama">🦙 r/LocalLLaMA</a></li>
+      <li><a href="#trending">🚀 GitHub</a></li>
+      <li><a href="#hf">🤗 HuggingFace</a></li>
+      <li><a href="/digests/">🗂 Archive</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- ───── Models (AIHOT) — example card with Editor's Cut ───── -->
+    <section id="models" class="block">
+      <h2><span class="section-icon">🤖</span> Model drops &amp; updates</h2>
+      <p class="section-sub">Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT).</p>
+      <div class="cards">
+        <article class="card" id="article-models-0" data-article-id="aihot-a3f12b8c">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" title="Save" data-testid="fav-star" data-article-id="aihot-a3f12b8c">☆</button>
+          <h3 class="card-title"><a href="/articles/aihot-claude-4-7-launch-a3f12b8c/" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+          <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">2h ago</span>
+          </div>
+          <aside class="editors-cut" data-testid="editors-cut" data-lang="en" data-commentary-source="commentary_en">
+            <span class="ec-label">🏅 Editor's Cut</span>
+            <p class="ec-body">A 1M context window matters less for "fits a novel" and more for "fits a codebase and still has room for tool output and conversation history." The pricing parity is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.</p>
+          </aside>
+        </article>
+        <article class="card" id="article-models-1" data-article-id="aihot-7c3e9d1a">
+          <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved" title="Saved" data-testid="fav-star" data-article-id="aihot-7c3e9d1a">★</button>
+          <h3 class="card-title"><a href="/articles/aihot-qwen3-omni-release-7c3e9d1a/" target="_blank" rel="noopener">Qwen3-Omni released as open weights</a></h3>
+          <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">5h ago</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───── Products (AIHOT) ───── -->
+    <section id="products" class="block">
+      <h2><span class="section-icon">📦</span> Products &amp; applications</h2>
+      <p class="section-sub">Consumer-facing and developer-facing product launches.</p>
+      <div class="cards">
+        <article class="card" id="article-products-0" data-article-id="aihot-b2d8e4f1">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-b2d8e4f1">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Cursor ships agent mode for the JetBrains line</a></h3>
+          <p class="card-summary">After 18 months of VS Code-only releases, Cursor's agent mode lands in IntelliJ, WebStorm, and PyCharm.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">3h ago</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───── Industry (AIHOT) ───── -->
+    <section id="industry" class="block">
+      <h2><span class="section-icon">📰</span> Industry moves</h2>
+      <p class="section-sub">Funding, hiring, regulation, partnerships.</p>
+      <div class="cards">
+        <article class="card" id="article-industry-0" data-article-id="aihot-9f4c2a8b">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-9f4c2a8b">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Mistral raises $850M at $14B valuation</a></h3>
+          <p class="card-summary">Series C led by a16z values the French lab at roughly half OpenAI's last public round.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">6h ago</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───── Research (AIHOT) ───── -->
+    <section id="papers" class="block">
+      <h2><span class="section-icon">📄</span> Research highlights</h2>
+      <p class="section-sub">Notable papers and technical writeups from the last 24 hours.</p>
+      <div class="cards">
+        <article class="card" id="article-papers-0" data-article-id="aihot-e1b7d3c9">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-e1b7d3c9">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Sparse Mixture-of-Routers: a 30% inference speedup with no quality loss</a></h3>
+          <p class="card-summary">DeepSeek + ETH Zürich paper proposing learned routing inside MoE layers instead of fixed top-k gating.</p>
+          <div class="card-meta">
+            <span class="badge">AIHOT</span>
+            <span class="meta-time">8h ago</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───── Labs (OpenAI / Anthropic) — non-AIHOT example with Editor's Cut ───── -->
+    <section id="labs" class="block">
+      <h2><span class="section-icon">🏢</span> Lab announcements</h2>
+      <p class="section-sub">Latest posts from OpenAI's blog. <span class="meta-time">(Anthropic doesn't publish RSS; their announcements surface elsewhere on this page.)</span></p>
+      <div class="cards">
+        <article class="card" id="article-labs-0" data-article-id="labs-44ae3b21">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="labs-44ae3b21">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">o4-mini-high deprecation timeline announced</a></h3>
+          <p class="card-summary">OpenAI plans to retire o4-mini-high on August 1, 2026 — three months earlier than the typical 6-month notice.</p>
+          <div class="card-meta">
+            <span class="badge">OpenAI</span>
+            <span class="meta-time">4h ago</span>
+          </div>
+          <aside class="editors-cut" data-testid="editors-cut" data-lang="en" data-commentary-source="commentary_en">
+            <span class="ec-label">🏅 Editor's Cut</span>
+            <p class="ec-body">Three-month deprecation is faster than the 6-month industry norm and worth watching — if OpenAI sustains this cadence, "build on o4" becomes a 90-day lease rather than a foundation. Migration cost passes to downstream apps.</p>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───── Simon Willison — non-card layout, fav-star still wired ───── -->
+    <section id="writing" class="block">
+      <h2><span class="section-icon">✍</span> Simon Willison</h2>
+      <p class="section-sub">Daily-ish AI commentary, tool-of-the-day posts, and link roundups from Simon's weblog.</p>
+      <ul class="writing-list">
+        <li class="writing-item" id="article-writing-0" data-article-id="builder-2f8c4e6a">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="builder-2f8c4e6a">☆</button>
+          <a class="writing-title" href="#" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a>
+          <p class="writing-summary">Walks through a Tailscale + Firecracker setup so Claude Code can `rm -rf` whatever it wants and the host stays clean.</p>
+          <div class="writing-meta">
+            <span>Simon Willison</span>
+            <span>· 3h ago</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───── Builder voices — X + podcasts + blogs ───── -->
+    <section id="builders" class="block">
+      <h2><span class="section-icon">🎙</span> Builder voices</h2>
+      <p class="section-sub">Recent posts, episodes, and writing from named AI builders <span class="meta-time">(via Follow Builders feeds)</span>.</p>
+      <div class="builder-group">
+        <h3 class="builder-group-title">X / Twitter</h3>
+        <ul class="builder-list">
+          <li class="builder-item" id="article-builders-x-0" data-article-id="follow-6b1d8f4e">
+            <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="follow-6b1d8f4e">☆</button>
+            <div class="builder-meta-top">
+              <strong>Andrej Karpathy</strong>
+              <span class="muted">@karpathy</span>
+            </div>
+            <p class="builder-text">If you're not running your training jobs against a held-out eval that includes your last 30 days of production failures, you don't have an eval. You have a benchmark.</p>
+            <div class="builder-meta">
+              <span>♥ 4321</span>
+              <span>↻ 891</span>
+              <a href="#" target="_blank" rel="noopener">View on X ↗</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───── r/LocalLLaMA — list layout, fav-star still wired ───── -->
+    <section id="llama" class="block">
+      <h2><span class="section-icon">🦙</span> r/LocalLLaMA</h2>
+      <p class="section-sub">Top of the day from the open-source LLM community — model drops, runtime benchmarks, quantization tricks.</p>
+      <ul class="writing-list">
+        <li class="writing-item" id="article-llama-0" data-article-id="llama-c7e2a9b3">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="llama-c7e2a9b3">☆</button>
+          <a class="writing-title" href="#" target="_blank" rel="noopener">Qwen3-Omni Q4_K_M GGUFs are up — 14GB, runs on a 16GB Mac</a>
+          <p class="writing-summary">Two-hour-old quantization from TheBloke's successor; community reports 18 tok/s on M2 Pro.</p>
+          <div class="writing-meta">
+            <span>r/LocalLLaMA</span>
+            <span>· u/the_qwen_guy</span>
+            <span>· 2h ago</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───── GitHub Trending — distinct gh-card layout ───── -->
+    <section id="trending" class="block">
+      <h2><span class="section-icon">🚀</span> Trending on GitHub</h2>
+      <p class="section-sub">Top trending repositories across all languages.</p>
+      <div class="cards">
+        <article class="card gh-card" id="article-trending-0" data-article-id="gh-9d4e1b7c">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="gh-9d4e1b7c">☆</button>
+          <h3 class="card-title">
+            <a href="#" target="_blank" rel="noopener">
+              <span class="gh-owner">microsoft</span>
+              <span class="gh-slash">/</span>
+              <span class="gh-name">vscode-claude</span>
+            </a>
+          </h3>
+          <p class="card-summary">First-party Claude Code integration for VS Code — agent mode, file system tools, no API key required.</p>
+          <div class="gh-meta">
+            <span class="gh-lang"><span class="gh-dot" style="background:#3178c6"></span>TypeScript</span>
+            <span class="stat">★ 12,847</span>
+            <span class="stat-today">+2,134 today</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───── HuggingFace — distinct hf-card layout ───── -->
+    <section id="hf" class="block">
+      <h2><span class="section-icon">🤗</span> HuggingFace</h2>
+      <p class="section-sub">Open-weight models ranked by ♥ likes (closest stable proxy for trending).</p>
+      <div class="cards">
+        <article class="card hf-card" id="article-hf-0" data-article-id="hf-1a7b3c5d">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="hf-1a7b3c5d">☆</button>
+          <h3 class="card-title"><a href="#" target="_blank" rel="noopener">Qwen/Qwen3-Omni-30B</a></h3>
+          <div class="hf-stats">
+            <span class="stat">♥ 3,421</span>
+            <span class="stat">↓ 89,234</span>
+            <span class="badge">any-to-any</span>
+          </div>
+          <div class="hf-tags">
+            <span class="tag">omnimodal</span>
+            <span class="tag">apache-2.0</span>
+            <span class="tag">qwen</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Subscribe banner — sits between </main> and <footer>.
+       Gated by BACKEND_LIVE: when false (GH Pages today), this whole
+       <section> is omitted by the renderer. Shown here with the flag on. -->
+  <section class="subscribe-section" data-backend-live="true" data-testid="subscribe-section">
+    <h2><span class="section-icon">📬</span> Subscribe to the daily email</h2>
+    <p class="section-sub">One email per day at 07:00 Sydney. Bilingual support (EN / 中文). Unsubscribe any time.</p>
+    <form class="subscribe-form" data-testid="subscribe-form" data-form-state="idle" novalidate>
+      <label for="email-home">Your email</label>
+      <input id="email-home" name="email" type="email" placeholder="you@example.com" autocomplete="email" data-testid="subscribe-email-input">
+      <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">Subscribe</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div>Snapshot fetched 2026-05-17 07:00 UTC · <a href="https://github.com/rowland-dot/ai-daily-digest" target="_blank" rel="noopener">source on GitHub</a></div>
+    <div class="source-status">
+      <span class="status-ok">aihot ✓</span>
+      <span class="status-ok">openai ✓</span>
+      <span class="status-ok">anthropic ✓</span>
+      <span class="status-ok">simon ✓</span>
+      <span class="status-ok">gh-trending ✓</span>
+      <span class="status-ok">huggingface ✓</span>
+      <span class="status-ok">r/localllama ✓</span>
+      <span class="status-ok">x-feed ✓</span>
+    </div>
+  </footer>
+
+</section>
+</body>
+</html>
