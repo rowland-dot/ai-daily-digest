@@ -1,8 +1,18 @@
 {
-  "count": 20,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpr6m8dg0be7slno4oc8myl7",
+      "title": "GPIC：大规模视觉生成基准数据集发布",
+      "title_en": "I'm very excited by this new benchmark dataset for visual generation that is suitable for the modern…",
+      "url": "https://x.com/drfeifei/status/2060404846734512205",
+      "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
+      "publishedAt": "2026-05-29T16:56:10.000Z",
+      "summary": "我对这个适用于大规模生成模型新时代的视觉生成基准数据集感到非常兴奋！🤩",
+      "category": "paper"
+    },
     {
       "id": "cmppuejv9019eslm6zx7qtdep",
       "title": "hexoai开源SIA框架：AI智能体实现递归自我改进",
@@ -14,13 +24,23 @@
       "category": "paper"
     },
     {
-      "id": "cmppprn04028nslvyqxgosjyn",
-      "title": "SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力",
-      "title_en": "Blog Win on TCO： How AMD InstinctTM MI355X Achieves Cost-Competitive Distributed Inference Through SGLang with MoRI The SGLang and AMD team has worked closely to unlock competitive Total Cost of Ownership （TCO） for large-scale DeepSeek-R1 disaggregated inference on AMD InstinctTM MI355X GPUs. Building on SGLang's se… AMD & SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-05-28-mori",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-05-28T16:34:57.702Z",
-      "summary": "SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MTP 以及 CPU 流式处理优化。",
+      "id": "cmpqjlfr105k3slnoo00wtyvu",
+      "title": "彩色噪声扩散采样",
+      "title_en": "Colored Noise Diffusion Sampling",
+      "url": "https://arxiv.org/abs/2605.30332",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "扩散模型的生成轨迹具有频谱偏差，早期处理低频全局结构，后期处理高频细节。传统随机微分方程求解器在整个过程中均匀注入白噪声，能量分配效率低。本研究提出彩色噪声采样（CNS），一种免训练的即插即用采样器。它通过动态、随时间和频率调整的噪声调度，更高效地将能量分配给尚未解析的频段。在SiT、JiT、FLUX等架构上的实验表明，CNS作为推理时的替换采样器显著提升了生成质量：在ImageNet-256上，无引导FID在SiT-XL/2上从8.26降至6.27，在JiT-B/16上从32.39降至26.69，在JiT-H/16上从11.88降至8.31，并且在使用无分类器引导时带来一致改进。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpqd5x5k03xvslno4auivqbj",
+      "title": "WorldMemArena：通过行动-世界交互循环评估多模态智能体记忆",
+      "title_en": "WorldMemArena： Evaluating Multimodal Agent Memory Through Action-World Interaction",
+      "url": "https://arxiv.org/abs/2605.29341",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "针对现有基准无法精确诊断多模态智能体记忆在动态环境中的具体失败阶段，研究提出了\"行动-世界交互循环\"记忆模型，并构建了WorldMemArena基准。该基准包含400个多会话多模态任务，涵盖\"终身进化\"和\"智能体执行\"两类场景，支持对记忆写入、维护、检索和使用的阶段级评估。研究首次对长上下文、RAG等手工设计系统与基于框架的记忆智能体进行直接比较，发现记忆写入与存储质量的提升不直接带来性能改善，且多模态记忆在利用视觉证据及跨领域稳定性上仍存在挑战。",
       "category": "paper"
     },
     {
@@ -41,6 +61,16 @@
       "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
       "publishedAt": "2026-05-27T16:34:20.000Z",
       "summary": "Qwen3.5在TokenSpeed推理引擎上，针对智能体工作负载达到了创纪录的580 tokens per second （tps）速度。这一成果由Qwen推理团队、lightseekorg Foundation TokenSpeed团队、NVIDIA及Mooncake团队共同实现，并采用了tri_dao的FlashAttention-4 （FA4） 优化。此里程碑标志着开源大语言模型推理性能的边界得到了推动，相关详情可查阅PyTorch社区博客。",
+      "category": "paper"
+    },
+    {
+      "id": "cmppprn04028nslvyqxgosjyn",
+      "title": "SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力",
+      "title_en": "Blog Win on TCO： How AMD InstinctTM MI355X Achieves Cost-Competitive Distributed Inference Through SGLang with MoRI The SGLang and AMD team has worked closely to unlock competitive Total Cost of Ownership （TCO） for large-scale DeepSeek-R1 disaggregated inference on AMD InstinctTM MI355X GPUs. Building on SGLang's se… AMD & SGLang Team",
+      "url": "https://www.lmsys.org/blog/2026-05-28-mori",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-05-27T16:00:00.000Z",
+      "summary": "SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MTP 以及 CPU 流式处理优化。",
       "category": "paper"
     },
     {
@@ -181,26 +211,6 @@
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "publishedAt": "2026-05-22T22:37:39.000Z",
       "summary": "Google DeepMind提出了AlphaProof Nexus系统，它将大型语言模型与Lean形式化验证工具相结合。该系统允许LLM在生成证明的过程中，不断读取Lean的编译错误并进行修正，还可调用更强的工具辅助解决子问题。这一机制迫使模型将每一步逻辑都转化为可编译、可验证的代码，从而将其角色从\"令人信服的叙述者\"转变为\"候选方案生成器\"。在针对353个Erdős问题和492个开放猜想的测试中，系统成功解决了9个Erdős问题并证明了44个序列猜想。该研究展示了形式化验证在暴露AI逻辑错误、建立\"人类提问-模型探索-验证器把关\"新分工中的关键作用。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpga762r0dmfsljwzsp341eh",
-      "title": "Turing测试 76 年后首现 AI 通过实证：GPT-4.5 以 73% 判定率超越真人",
-      "title_en": "图灵测试 76 年后首现 AI 通过实证：GPT-4.5 以 73% 判定率超越真人，聊天 15 分钟难辨人机",
-      "url": "https://www.ithome.com/0/953/705.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T01:22:11.000Z",
-      "summary": "加州大学圣地亚哥分校研究首次实证现代AI可通过Turing测试。研究表明，在获得特定提示后，GPT-4.5在5至15分钟的对话中被误认为人类的概率高达73%，显著超过真人。LLaMa-3.1-405B的判定率（56%）与真人相当，而GPT-4o和ELIZA仅约20%。研究指出提示词至关重要，它使AI能模仿人类语气、幽默感甚至易错性等社会行为特征。这一发现迫使人们重新思考Turing测试的意义，并凸显了大语言模型在网络信任与安全方面构成的潜在挑战。",
-      "category": "paper"
-    },
-    {
-      "id": "cmph748qc0lwnsljwiu60grlt",
-      "title": "VSAS-Bench：视觉流式辅助模型的实时评估基准",
-      "title_en": "VSAS-Bench： Real-Time Evaluation of Visual Streaming Assistant Models",
-      "url": "https://machinelearning.apple.com/research/vsas-bench-streaming-assistant",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-05-22T00:00:00.000Z",
-      "summary": "现有视觉语言模型框架主要在离线场景下评估性能，但实时视觉助手所依赖的流式模型还需考量额外指标，如反映响应时效性的\"主动性\"和捕捉随时间推移响应稳定性的\"一致性\"。为此，研究团队提出了VSAS-Bench，这是一个新的评估基准，专门针对流式视觉语言模型在实时交互任务中的表现，填补了当前评估方法在动态、持续生成场景下的空白。",
       "category": "paper"
     }
   ]

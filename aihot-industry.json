@@ -1,8 +1,38 @@
 {
-  "count": 48,
+  "count": 41,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpr47z7g0apislno5cuj0pne",
+      "title": "波士顿儿童医院利用AI解锁新诊断",
+      "title_en": "Boston Children's uses AI to unlock new diagnoses",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "summary": "波士顿儿童医院通过部署OpenAI技术，用于改善患者护理并减轻运营负担，成功帮助诊断了超过40种罕见病病例。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpqu09p1088islno9gfp24ow",
+      "title": "中央网信办等四部门：提升全民人工智能素养，加快人才培育、深化普及应用",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/957/319.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-29T10:21:56.000Z",
+      "summary": "中央网信办等四部门联合印发《2026年提升全民数字素养与技能工作要点》，部署了六项重点任务。其中明确要求\"提升全民人工智能素养\"，具体包括强化人工智能赋能教育、加快人工智能人才培育、深化人工智能普及应用。其他任务涵盖数字资源供给、应用场景建设、普惠包容发展、安全有序网络空间以及协同联动机制。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpq8kjw502qrslnouugetmfh",
+      "title": "三星电子业内率先出样 HBM4E 内存",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/956/851.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-29T00:45:13.000Z",
+      "summary": null,
+      "category": "industry"
+    },
     {
       "id": "cmpq1pcva00zuslno6kbpd0xz",
       "title": "萨姆·阿尔特曼和达里奥·阿莫代伊都纷纷收回了关于AI将引发就业危机的预测",
@@ -11,16 +41,6 @@
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-05-28T21:49:31.492Z",
       "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmppu2sce013dslm6rliijffw",
-      "title": "Anthropic 完成 650 亿美元 H 轮融资，估值达 9650 亿美元",
-      "title_en": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
-      "url": "https://www.anthropic.com/news/series-h",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-28T18:35:40.238Z",
-      "summary": "Anthropic 宣布完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，投后估值达 9650 亿美元。公司表示其旗舰模型 Claude 的企业部署持续增长，年化收入已突破 470 亿美元。此轮融资将用于推进 AI 安全与可解释性研究、扩展算力以满足 Claude 的需求，并规模化产品与合作伙伴关系。Anthropic 近期已显著扩大计算容量，并宣布 Claude 已登陆 AWS、Google Cloud 和 Microsoft Azure 三大云平台。",
       "category": "industry"
     },
     {
@@ -111,6 +131,16 @@
       "source": "X：Replit (@Replit)",
       "publishedAt": "2026-05-27T17:30:00.000Z",
       "summary": "Replit 被列入 @Redpoint 的 2026 InfraRed 100 榜单。\n这是一份构建 AI 运行基础设施的公司名单。很荣幸能入选，与 Stripe、Snowflake 和 HashiCorp 等往届入选者并列。\n致每一位在 Replit 上发布产品的构建者：这份荣誉属于你们。\nhttps：//www.redpoint.com/infrared/report/",
+      "category": "industry"
+    },
+    {
+      "id": "cmppu2sce013dslm6rliijffw",
+      "title": "Anthropic 完成 650 亿美元 H 轮融资，估值达 9650 亿美元",
+      "title_en": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+      "url": "https://www.anthropic.com/news/series-h",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-27T16:00:00.000Z",
+      "summary": "Anthropic 宣布完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，投后估值达 9650 亿美元。公司表示其旗舰模型 Claude 的企业部署持续增长，年化收入已突破 470 亿美元。此轮融资将用于推进 AI 安全与可解释性研究、扩展算力以满足 Claude 的需求，并规模化产品与合作伙伴关系。Anthropic 近期已显著扩大计算容量，并宣布 Claude 已登陆 AWS、Google Cloud 和 Microsoft Azure 三大云平台。",
       "category": "industry"
     },
     {
@@ -381,106 +411,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-22T22:30:03.000Z",
       "summary": "英伟达发布2027财年Q1财报，营收816亿美元，同比增长85%，净利润583亿美元，翻两倍多，市值达5.7万亿美元，已超德国2026年GDP预测。黄仁勋预测，超大规模云厂商的AI基建年度开支将从当前的1万亿美元，增长至3-4万亿美元，远超华尔街预期。财报同时显示，数据中心业务营收752亿美元，占比超九成。值得注意的是，AI基建的高能耗正推高居民电费，数据中心用电成本转嫁效应已初步显现。",
-      "category": "industry"
-    },
-    {
-      "id": "cmph8trkr0mc4sljwb6bn498k",
-      "title": "回顾Google I/O 2026对话环节",
-      "title_en": "Catch up on the Dialogues stage at Google I/O 2026.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-22T18:00:00.000Z",
-      "summary": "在2026年Google I/O开发者大会上，对话环节聚焦于未来科技趋势。行业领导者围绕人工智能、量子计算、机器人学以及创造力等核心议题展开了深入探讨，旨在勾勒这些前沿领域的技术演进路径与发展蓝图。",
-      "category": "industry"
-    },
-    {
-      "id": "cmph4kqfx0l9xsljw0q29ydog",
-      "title": "Suno AI创作夏日神曲《波多黎各》爆火",
-      "title_en": "The song of the summer was made on Suno.☀️Huge thanks to @GMA for highlighting the viral \"Puerto Ric…",
-      "url": "https://x.com/suno/status/2057858423664894196",
-      "source": "X：Suno (@suno)",
-      "publishedAt": "2026-05-22T16:17:36.000Z",
-      "summary": "今年夏天的热门歌曲是用 Suno 制作的。☀️非常感谢 @GMA 让这首病毒式传播的《Puerto Rico》歌曲被更多人看到！还有谁的脑海里也一直回响着这首歌？🇵🇷🎶",
-      "category": "industry"
-    },
-    {
-      "id": "cmph4z1rb0ld0sljwldi3jhdn",
-      "title": "GitHub 连续第三年被 Gartner® 魔力象限TM 评为企业级 AI 编程代理领域的领导者",
-      "title_en": "GitHub recognized as a Leader in the Gartner® Magic QuadrantTM for Enterprise AI Coding Agents for the third year in a row",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-05-22T16:10:21.000Z",
-      "summary": "Gartner 最新发布的魔力象限报告中，GitHub 连续第三年被列为\"领导者\"象限，该评估专注于企业级 AI 编程代理领域。GitHub 表示，其致力于构建一个开放、安全且由 AI 驱动的平台，以赋能每一位开发者并定义软件开发的未来。此次评选进一步巩固了 GitHub 在 AI 辅助开发工具市场的领先地位。",
-      "category": "industry"
-    },
-    {
-      "id": "cmph65ybi0lmlsljwu8otwerv",
-      "title": "Cursor 被评为 2026 年 Gartner 企业级 AI 编码代理魔力象限领导者",
-      "title_en": "Cursor named a Leader in the 2026 Gartner® Magic QuadrantTM for Enterprise AI Coding Agents",
-      "url": "https://cursor.com/blog/cursor-leads-gartner-mq-2026",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-05-22T12:00:00.000Z",
-      "summary": "Gartner 在 2026 年魔力象限报告中，将 Cursor 评为企业级 AI 编码代理领域的领导者，并在愿景完整性上领先。超过 70% 的财富 500 强企业使用 Cursor 部署和管理编码代理。未来一年，Cursor 将聚焦于三个方向：提升前沿模型智能；自动化软件开发全生命周期的任务（如代码审查、漏洞修复）；以及通过新的管理工具和控制面板，增强企业级的控制力、协作性与部署灵活性，以拓展至更多行业和地区。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpgrcly80hyesljwttfmd9iu",
-      "title": "国家发改委：加快具身智能训练基础设施建设，让机器人不仅能上赛场，还能\"进工厂、进商场、进家庭\"",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/954/126.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T09:46:08.000Z",
-      "summary": "国家发改委在5月22日新闻发布会上表示，人形机器人在半程马拉松比赛中表现显著提升，速度更快、更灵活、更自主，参赛队伍从20余支增至百余支，完赛队伍从6支增至40余支，反映具身智能创新活力增强和产业规模扩大。下一步，发改委将加快具身智能训练基础设施建设，推动机器人融入工厂、商场、家庭等场景，并建设应用中试基地以加速技术落地。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpgp7fka0hfgsljw59faowv9",
-      "title": "18 年老粉与微软 GitHub 决裂：我希望它更好，但我更想编程",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/977.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T08:10:33.000Z",
-      "summary": "全球最大的代码托管平台GitHub正面临严重危机。资深开发者Mitchell Hashimoto公开与平台决裂，因频繁崩溃影响编程。近几个月，花旗银行、英特尔等巨头因持续故障表达不满，OpenAI探索自建方案。更严重的是，3800多个内部仓库遭黑客入侵，源代码被公开叫卖。同时，微软取消GitHub CEO职位，将其并入CoreAI团队，导致大量技术骨干流失。这个承载1.5亿开发者的平台，正以惨烈方式站在生死存亡的十字路口。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpgiqiwh0frlsljw8w0tjz0h",
-      "title": "DeepSeek V4 Flash登顶周榜",
-      "title_en": "DeepSeek V4 Flash has topped the weekly leaderboard",
-      "url": "https://x.com/OpenRouter/status/2057703179882749985",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-22T06:00:43.000Z",
-      "summary": "DeepSeek V4 Flash已登顶周排行榜",
-      "category": "industry"
-    },
-    {
-      "id": "cmpggmof80f99sljw4fsa94ek",
-      "title": "DeepSeek 推进 700 亿元融资，梁文锋承诺坚持开发开源 AI 模型而非追求短期商业化目标",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/832.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T04:30:38.000Z",
-      "summary": "DeepSeek正推进700亿元人民币的巨额融资，估值约450亿美元。创始人梁文锋承诺将继续开源开发AI模型，不追求短期商业化，目标是技术升级与通用人工智能。腾讯、IDG资本等接近参投，梁文锋个人可能注资200亿元。若成功将创下中国科技初创公司首轮融资纪录。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpga762r0dmcsljw5170mv58",
-      "title": "美国 AI 监管令突然告吹内幕：白宫内讧，Musk、Zuckerberg游说特朗普",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/953/708.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T01:37:31.000Z",
-      "summary": "5月22日，美国总统特朗普突然取消了原定签署的AI行政令，该行政令旨在加强监管，赋予政府在AI模型公开发布前进行评估的权力。取消源于特朗普本人对监管的反感，以及高级顾问大卫·萨克斯和科技界领袖如Zuckerberg、Musk的反对与游说，凸显白宫内讧。特朗普认为监管会成为绊脚石，阻碍美国AI领先优势。草案中还存在如财政部在安全协调中角色过重等争议，白宫表示正制定其他AI安全举措。",
-      "category": "industry"
-    },
-    {
-      "id": "cmph3ld5o0l1rsljw8j7x2le7",
-      "title": "OpenAI被Gartner评为企业AI编码代理领域领导者",
-      "title_en": "OpenAI named a Leader in enterprise coding agents by Gartner",
-      "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-22T00:00:00.000Z",
-      "summary": "Gartner发布2026年企业AI编码代理魔力象限报告，OpenAI被列为领导者。其产品Codex因在技术创新和企业级部署方面的突出表现获得认可，反映了OpenAI在AI辅助编程工具领域的领先地位。",
       "category": "industry"
     }
   ]

@@ -1,8 +1,48 @@
 {
-  "count": 12,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmprd8aty0d2jslnojk7ompp6",
+      "title": "OpenAI推出实时翻译模型，支持70+语言输入",
+      "title_en": "OpenAI for realtime translation - speak in any of 70+ input languages and translate into 13 output o…",
+      "url": "https://x.com/gdb/status/2060452095279415725",
+      "source": "X：Greg Brockman (@gdb)",
+      "publishedAt": "2026-05-29T20:03:55.000Z",
+      "summary": "OpenAI 实时翻译功能--使用70多种输入语言说话，翻译成13种输出语言：\n\ngpt-realtime-translate 接收任意语言的语音输入，并输出目标语言的语音。\n\n大语言模型很棒，但特定用例需要专用模型。\n\n我们正在智能眼镜上运行此功能。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpqppxpf075oslno4jxz0h8b",
+      "title": "小米开源可控视频音效生成模型 ControlFoley，让声音\"按你想要的来\"",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/957/282.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-29T09:13:13.000Z",
+      "summary": "小米大模型应用团队发布开源可控视频音效生成模型 ControlFoley，旨在解决创作中的可控性难题。该模型统一支持文本引导视频配音、文本控制视频配音和参考音频控制视频配音三类任务。ControlFoley 在 VGGSound-Test 等多个 benchmark 上取得开源 SOTA 表现，其代码、模型权重和在线 Demo 均已开放。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpr2b1l40aa6slnoit9b7p92",
+      "title": "Qwen-VLA：从理解世界到在其中行动",
+      "title_en": "Qwen-VLA： From Understanding the World to Acting in It",
+      "url": "https://qwen.ai/blog?id=qwenvla",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-05-29T09:00:00.000Z",
+      "summary": "Qwen Studio提供全面功能，涵盖聊天机器人、图像与视频理解、图像生成、文档处理、网络搜索集成、工具利用及Artifacts。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpq60e9m022kslnocucomhik",
+      "title": "阶跃星辰 Step 3.7 Flash 发布，聚焦智能体效率",
+      "title_en": "⚡️ Step 3.7 Flash is here： The new frontier is agent efficiency. #1 ClawEval-1.1 （67.1）， #1 SimpleV…",
+      "url": "https://x.com/StepFun_ai/status/2060149124117475791",
+      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
+      "publishedAt": "2026-05-29T00:00:01.000Z",
+      "summary": "阶跃星辰（Step）发布了开源大模型 Step 3.7 Flash，主打智能体（Agent）工作流的效率。该模型在 ClawEval-1.1（67.1分）和 SimpleVQA Search（79.2分）评测中排名第一。其架构为 198B 参数的 MoE，约 11B 为活跃参数，支持 256K 上下文。模型具备多模态理解能力，能处理图像、文档并生成代码或调用工具执行任务。在工具使用方面，它致力于高可靠性，τ2-bench 得分超过 98%。Step 3.7 Flash 兼容 Claude Code、MCP 协议等工具链，并支持在 Mac Studio M4 Max 等设备上本地运行。模型权重以 Apache 2.0 许可开源。",
+      "category": "ai-models"
+    },
     {
       "id": "cmpps64fo00p9slm6g6j53psu",
       "title": "Nano Banana Pro与Nano Banana 2正式发布",
@@ -11,16 +51,6 @@
       "source": "X：Google AI for Developers (@googleaidevs)",
       "publishedAt": "2026-05-28T17:25:59.000Z",
       "summary": "🍌 Nano Banana Pro 【gemini-3-pro-image】 和 Nano Banana 2 【gemini-3.1-flash-image】 现已正式发布，可通过 Gemini API 投入生产使用。查看这些优秀的社区示例，了解两个模型的实际能力 🧵↓",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmppqv0si0097slm6pmeqwf45",
-      "title": "Claude Opus 4.8 发布：在编码、智能体技能与推理方面实现全面升级",
-      "title_en": "Introducing Claude Opus 4.8",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-28T17:05:39.037Z",
-      "summary": "Anthropic 发布了新一代模型 Claude Opus 4.8，作为 Opus 4.7 的升级版本，其在编码、智能体技能、推理和实用知识工作等各项基准测试中均取得进步。Claude Opus 4.8 现已可用，价格与前代相同。同步推出的新功能包括：用户可控制任务投入程度、Claude Code 新增\"动态工作流\"特性，以及 Opus 4.8 的 2.5 倍速模式价格降低为以往的三分之一。早期测试者反馈其在智能体任务中的判断力更可靠、工具调用更高效。该模型在 Online-Mind2Web 测评中得分 84%，超越了 Opus 4.7 和 GPT-5.5。此外，其诚实度与对齐表现也得到提升，代码错误漏检率降低了约 75%。",
       "category": "ai-models"
     },
     {
@@ -41,6 +71,16 @@
       "source": "xAI：News（网页）",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "summary": "xAI 的最新编码模型 Grok Build 0.1 已通过 xAI API 进入公开测试阶段。该模型专为智能体编码任务训练，支持网页开发、调试和 MCP，同时也是驱动 Grok Build CLI 的同一模型。其推理速度超过 100 tokens/秒，定价为输入 $1/m tokens，输出 $2/m tokens。除编码外，它也适用于通用智能体及工具调用场景，并可通过 OpenRouter 和 Vercel AI Gateway 获取。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmppqv0si0097slm6pmeqwf45",
+      "title": "Claude Opus 4.8 发布：在编码、智能体技能与推理方面实现全面升级",
+      "title_en": "Introducing Claude Opus 4.8",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-05-27T16:00:00.000Z",
+      "summary": "Anthropic 发布了新一代模型 Claude Opus 4.8，作为 Opus 4.7 的升级版本，其在编码、智能体技能、推理和实用知识工作等各项基准测试中均取得进步。Claude Opus 4.8 现已可用，价格与前代相同。同步推出的新功能包括：用户可控制任务投入程度、Claude Code 新增\"动态工作流\"特性，以及 Opus 4.8 的 2.5 倍速模式价格降低为以往的三分之一。早期测试者反馈其在智能体任务中的判断力更可靠、工具调用更高效。该模型在 Online-Mind2Web 测评中得分 84%，超越了 Opus 4.7 和 GPT-5.5。此外，其诚实度与对齐表现也得到提升，代码错误漏检率降低了约 75%。",
       "category": "ai-models"
     },
     {
@@ -91,36 +131,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-25T03:48:30.000Z",
       "summary": null,
-      "category": "ai-models"
-    },
-    {
-      "id": "cmph1mhwi0kj7sljwklnw8x2l",
-      "title": "首个基于华为昇腾910B NPU全栈训练的1.58比特开源大模型BitCPM-CANN发布",
-      "title_en": "BitCPM-CANN just became the world's first open-sourced 1.58-bit ternary LLM trained entirely on Chin…",
-      "url": "https://x.com/rohanpaul_ai/status/2057833050692800926",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-22T14:36:46.000Z",
-      "summary": "ModelBest、清华大学与OpenBMB社区联合发布了BitCPM-CANN，这是全球首个完全基于华为昇腾910B NPU训练的开源1.58比特三元大模型。其核心创新在于采用仅含三种权重状态的极低比特量化技术，使模型内存占用相比BF16降低约6倍，可高效部署于手机、电脑、车载设备等边缘端。更关键的是，整个训练全栈（从量化算子到框架）均在昇腾上原生构建与验证，而非简单移植。该模型家族（0.5B-8B）在多项基准测试上保持了全精度模型95-97%的性能，为资源受限环境下部署和复现大模型提供了可落地的解决方案。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpgrcly80hyfsljwa00hvczv",
-      "title": "网易有道\"子曰4\"多模态模型、语音合成模型全量开源",
-      "title_en": "网易有道\"子曰 4\"多模态模型、语音合成模型全量开源",
-      "url": "https://www.ithome.com/0/954/124.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T09:45:01.000Z",
-      "summary": "网易有道宣布将其\"子曰\"大模型4.0的多模态模型与语音合成模型面向全球全量开源。其中，多模态模型（27B参数）专注于教育场景，在处理高难度视觉数理问题上达到行业顶尖水平，纯文本中文数理难题准确率为81.4%。该模型通过思维链优化，将输出长度压缩43.2%，有效降低了推理成本。同时开源的语音合成模型支持跨语种音色与情感迁移克隆，3秒内即可完成零样本复制，准确度超97%，并支持包括中、英、日、韩在内的14种语言。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpga762r0dm4sljw23zihurw",
-      "title": "ZhipuGLM-5.1高速版发布：刷新全球大模型API速度纪录",
-      "title_en": "智谱 GLM-5.1 高速版 AI 模型发布，跑出全球最快速度 400 tokens/s",
-      "url": "https://www.ithome.com/0/953/717.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T02:02:46.000Z",
-      "summary": "5月22日，Zhipu向部分企业客户推出了旗舰大模型GLM-5.1的高速版API\"GLM-5.1-highspeed\"。该版本输出速度达400 tokens/s，刷新了全球大模型API速度上限。关键突破在于，它首次在国产大模型中实现了旗舰级能力与低延迟的结合，打破了\"高速模型即轻量模型\"的传统。该版本由ZhipuGLM团队与TileRT团队合作，通过系统级优化确保了速度的生产级稳定性，适用于AI编程、实时语音交互等场景。",
       "category": "ai-models"
     }
   ]
