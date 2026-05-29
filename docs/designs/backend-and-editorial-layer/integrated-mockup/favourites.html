@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrated end-state — /favourites (Cloudflare-live, anonymous, sync prompt) — AI Daily Digest</title>
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .mockup-nav { position: sticky; top: 0; z-index: 50; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 12px; font-size: 12px; overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow); }
+  .mockup-nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+  .mockup-nav-label { font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; padding-right: 6px; border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0; }
+  .mockup-nav a { color: var(--text-muted); padding: 4px 9px; border-radius: 999px; font-weight: 500; text-decoration: none; flex-shrink: 0; }
+  .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+  .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+  .site-nav { display: inline-flex; gap: 14px; margin-bottom: 22px; padding: 6px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow); }
+  .site-nav-link { color: var(--text-muted); font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 999px; text-decoration: none; }
+  .site-nav-link:hover { color: var(--text); background: var(--accent-soft); }
+  .site-nav-link[data-current="true"] { color: var(--accent); background: var(--accent-soft); }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Integrated mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">End-state mockup</span>
+    <a href="index.html">Home</a>
+    <a href="favourites.html" aria-current="page">Favourites</a>
+    <a href="account.html">Account</a>
+    <a href="article.html">Article</a>
+    <a href="subscribe-states.html">Subscribe states</a>
+    <a href="favourites-sync-flow.html">Sync flow</a>
+    <a href="account-states.html">Account states</a>
+    <a href="email-en.html">Email EN</a>
+    <a href="email-zh.html">Email ZH</a>
+    <a href="README.md">Index</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="lang-switch" role="tablist" aria-label="Audio language">
+    <button data-lang="en" role="tab" aria-pressed="true">EN</button>
+    <button data-lang="zh" role="tab" aria-pressed="false">中文</button>
+  </div>
+  <div class="theme-switch" role="tablist" aria-label="Theme">
+    <button data-theme="linear" role="tab" aria-pressed="false">Linear</button>
+    <button data-theme="claude" role="tab" aria-pressed="true">Claude</button>
+  </div>
+  <nav class="site-nav" aria-label="Site">
+    <a href="index.html" class="site-nav-link" data-current="false">Daily digest</a>
+    <a href="favourites.html" class="site-nav-link" data-current="true" aria-current="page">★ Favourites</a>
+    <a href="account.html" class="site-nav-link" data-current="false" data-backend-live="true">Account</a>
+  </nav>
+  <h1>★ Favourites</h1>
+  <p class="date">3 saved articles · this device only</p>
+  <p class="tagline">Articles you starred on Today's digest. Save them across devices by linking to your email.</p>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="index.html">← Today's digest</a></li>
+    <li><a href="account.html">⚙ Account</a></li>
+  </ul>
+</nav>
+
+<main class="container" data-testid="favourites-page" data-backend-live="true" data-fav-source="localStorage" data-auth="anonymous">
+
+  <!-- Sync prompt — Spec B §D5 L145, /favourites-only. Collapsed entry-point state. -->
+  <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
+    <div>
+      <p class="sp-title">Save these across devices →</p>
+      <p class="sp-sub">Link them to your email so they follow you to your phone and laptop.</p>
+    </div>
+    <button type="button" class="btn-primary" data-testid="sync-prompt-open-btn">Sync</button>
+  </div>
+
+  <section class="block">
+    <h2><span class="section-icon">★</span> Saved articles</h2>
+    <p class="section-sub">Sorted by most recently saved.</p>
+    <div class="cards">
+
+      <article class="card" data-article-id="aihot-a3f12b8c">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-a3f12b8c">★</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+        <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window today. Pricing matches the previous Opus tier.</p>
+        <div class="card-meta">
+          <span class="badge">AIHOT</span>
+          <span class="meta-time">saved 2h ago</span>
+        </div>
+      </article>
+
+      <article class="card" data-article-id="aihot-7c3e9d1a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-7c3e9d1a">★</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Qwen3-Omni released as open weights</a></h3>
+        <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
+        <div class="card-meta">
+          <span class="badge">AIHOT</span>
+          <span class="meta-time">saved 5h ago</span>
+        </div>
+      </article>
+
+      <article class="card" data-article-id="builder-2f8c4e6a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="builder-2f8c4e6a">★</button>
+        <h3 class="card-title"><a href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a></h3>
+        <p class="card-summary">Walks through a Tailscale + Firecracker setup so Claude Code can `rm -rf` whatever it wants and the host stays clean.</p>
+        <div class="card-meta">
+          <span class="badge">Simon Willison</span>
+          <span class="meta-time">saved yesterday</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>Favourites stored on this device · <a href="index.html">← back to today's digest</a></div>
+</footer>
+
+</body>
+</html>

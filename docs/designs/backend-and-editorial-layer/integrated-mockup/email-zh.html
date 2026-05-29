@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrated end-state — Daily email, 中文 — AI Daily Digest</title>
+<style>
+  /* Outer mockup chrome only — DOES NOT ship in the real email. */
+  .mockup-nav { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid #e6dfd8; padding: 8px 12px; font-size: 12px; overflow-x: auto; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.04); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .mockup-nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+  .mockup-nav-label { font-weight: 700; color: #cc785c; text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; padding-right: 6px; border-right: 1px solid #e6dfd8; margin-right: 4px; flex-shrink: 0; }
+  .mockup-nav a { color: #6c6a64; padding: 4px 9px; border-radius: 999px; font-weight: 500; text-decoration: none; flex-shrink: 0; }
+  .mockup-nav a:hover { background: rgba(204, 120, 92, 0.10); color: #141413; }
+  .mockup-nav a[aria-current="page"] { background: #cc785c; color: #fff; }
+  .email-intro { max-width: 600px; margin: 18px auto 6px; padding: 0 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #6c6a64; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body style="margin:0; padding:0; background:#efe9de; font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif; color:#141413; line-height:1.7;">
+
+<nav class="mockup-nav" aria-label="Integrated mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">End-state mockup</span>
+    <a href="index.html">Home</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="account.html">Account</a>
+    <a href="article.html">Article</a>
+    <a href="subscribe-states.html">Subscribe states</a>
+    <a href="favourites-sync-flow.html">Sync flow</a>
+    <a href="account-states.html">Account states</a>
+    <a href="email-en.html">Email EN</a>
+    <a href="email-zh.html" aria-current="page">Email ZH</a>
+    <a href="README.md">Index</a>
+  </div>
+</nav>
+
+<p class="email-intro">Daily email body sent at 07:00 Sydney to ZH subscribers. Inline styles only.</p>
+
+<div data-testid="email-body-wrap">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#efe9de; padding:24px 12px;">
+  <tr><td align="center">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" data-testid="email-body" style="max-width:600px; width:100%; background:#faf9f5; border:1px solid #e6dfd8; border-radius:14px; overflow:hidden; box-shadow:0 4px 12px rgba(20,20,19,0.05);">
+
+      <!-- Hero -->
+      <tr><td style="padding:32px 28px 24px; background:linear-gradient(135deg,#efe9de 0%,#faf9f5 100%); border-bottom:1px solid #e6dfd8;">
+        <h1 style="margin:0 0 6px; font-family:Georgia,serif; font-size:28px; font-weight:700; color:#141413; letter-spacing:-0.01em;">AI 每日精选</h1>
+        <p style="margin:0; font-size:14px; color:#6c6a64;">2026年5月17日 周六 · 编辑精选</p>
+      </td></tr>
+
+      <!-- Editor's Cut overall narrative -->
+      <tr><td style="padding:28px 28px 8px;">
+        <p style="margin:0 0 12px; font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#cc785c;">🏅 今日编辑精选</p>
+        <p style="margin:0 0 12px; font-size:16px; line-height:1.8; color:#141413;">
+          今日真正值得关注的不是某一款单独的模型,而是各大实验室正在同一战场上竞速:上下文长度。Anthropic 推出 100 万 token 的 Claude 4.7,通义千问团队开源了一款全模态模型,OpenAI 也悄然把 Responses API 上下文扩展至 51.2 万。所有人都在抢占同一片空间——你能同时塞入整套代码库、对话历史和成千上万行的工具输出。
+        </p>
+        <p style="margin:0 0 12px; font-size:16px; line-height:1.8; color:#141413;">
+          与此同时,开源阵营关心的依然是成本。r/LocalLLaMA 用一整天讨论 70B 模型在消费级显卡上的最低运行成本——而这个数字仍在持续下探。前沿实验室扩展上下文、开源社区压缩推理,两条路径正在汇聚于同一个最终用户:那些曾经觉得 32k 已经够用的开发者。
+        </p>
+        <p style="margin:0; font-size:16px; line-height:1.8; color:#141413;">
+          下方为今日六篇精选。Anthropic 和 Qwen 的发布是绝不能错过的两条;其他几条是辅助理解的背景。
+        </p>
+      </td></tr>
+
+      <tr><td style="padding:18px 28px 8px;">
+        <h2 style="margin:24px 0 12px; font-family:Georgia,serif; font-size:18px; font-weight:700; color:#141413;">今日精选</h2>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-zh&article=aihot-a3f12b8c&lang=zh" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">Claude 4.7 发布,带来 100 万 token 上下文窗口</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.7;">定价与上一代 Opus 持平才是关键信号——Anthropic 押注的是上下文长度,而非原始智能,将成为本轮竞争的差异化点。</p>
+          </td></tr>
+        </table>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-zh&article=aihot-qwen-omni&lang=zh" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">通义千问 Qwen3-Omni 以 32B 参数开源</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.7;">首款在前沿规模上具备竞争力的开源全模态模型。一周内预计会涌现大量微调版本。</p>
+          </td></tr>
+        </table>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-zh&article=simon-prompt-caching&lang=zh" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">Simon Willison 谈提示缓存策略</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.7;">一份务实的指南,已成为新晋开发者控制 API 账单的必读参考。</p>
+          </td></tr>
+        </table>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:16px;">
+          <tr><td style="border-left:3px solid #cc785c; padding-left:12px;">
+            <a href="https://ai-daily-digest.example/?ref=email-zh&article=openai-responses-512k&lang=zh" style="font-family:Georgia,serif; font-size:17px; font-weight:700; color:#141413; text-decoration:none;">OpenAI 悄然将 Responses API 上下文扩展至 51.2 万</a>
+            <p style="margin:6px 0 0; font-size:14px; color:#6c6a64; line-height:1.7;">没有官方博客,没有声势——只是 API 文档静默更新。模式与当年 GPT-4 Turbo 推出 128K 时如出一辙。</p>
+          </td></tr>
+        </table>
+
+        <p style="margin:12px 0; font-size:13px; color:#6c6a64; text-align:center;">
+          <a href="https://ai-daily-digest.example/?ref=email-zh&lang=zh" style="color:#a9583e; text-decoration:none; font-weight:600;">在网站阅读全部 14 条 →</a>
+        </p>
+      </td></tr>
+
+      <tr><td style="padding:24px 28px 32px; background:#efe9de; border-top:1px solid #e6dfd8; color:#6c6a64; font-size:12px; text-align:center;">
+        <p style="margin:0 0 8px;">您订阅的是 AI 每日精选(中文版),因此收到此邮件。</p>
+        <p style="margin:0 0 8px;">
+          <a href="https://ai-daily-digest.example/account?lang=zh" style="color:#a9583e; text-decoration:none;">账户管理</a>
+          ·
+          <a href="https://ai-daily-digest.example/account?lang=en" style="color:#a9583e; text-decoration:none;">切换至 English</a>
+          ·
+          <a href="{{ beehiiv_unsubscribe_url }}" style="color:#a9583e; text-decoration:none;">退订</a>
+        </p>
+        <p style="margin:0;">AI 每日精选 · <a href="https://ai-daily-digest.example/?lang=zh" style="color:#6c6a64; text-decoration:none;">ai-daily-digest.example</a></p>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</div>
+
+</body>
+</html>

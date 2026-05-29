@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrated end-state — Sync-favourites flow: 4 states — AI Daily Digest</title>
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .mockup-nav { position: sticky; top: 0; z-index: 50; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 12px; font-size: 12px; overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow); }
+  .mockup-nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+  .mockup-nav-label { font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; padding-right: 6px; border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0; }
+  .mockup-nav a { color: var(--text-muted); padding: 4px 9px; border-radius: 999px; font-weight: 500; text-decoration: none; flex-shrink: 0; }
+  .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+  .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+  .state-grid { display: grid; gap: 28px; grid-template-columns: 1fr; max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
+  @media (min-width: 880px) { .state-grid { grid-template-columns: 1fr 1fr; } }
+  .state-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px 18px 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; }
+  .state-card .state-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+  .state-card .state-title { font-family: var(--display-font); font-size: 16px; font-weight: 700; margin: 0; }
+  .state-card .state-tag { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); padding: 3px 8px; border: 1px solid var(--accent); border-radius: 999px; background: var(--accent-soft); }
+  .state-card .state-note { color: var(--text-muted); font-size: 13px; margin: 0; }
+
+  .page-intro { max-width: 1180px; margin: 0 auto; padding: 28px 20px 4px; }
+  .page-intro h1 { font-family: var(--display-font); font-size: clamp(24px, 4vw, 32px); margin: 0 0 6px; letter-spacing: var(--tracking-tight); }
+  .page-intro p { color: var(--text-muted); font-size: 14.5px; margin: 0; }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Integrated mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">End-state mockup</span>
+    <a href="index.html">Home</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="account.html">Account</a>
+    <a href="article.html">Article</a>
+    <a href="subscribe-states.html">Subscribe states</a>
+    <a href="favourites-sync-flow.html" aria-current="page">Sync flow</a>
+    <a href="account-states.html">Account states</a>
+    <a href="email-en.html">Email EN</a>
+    <a href="email-zh.html">Email ZH</a>
+    <a href="README.md">Index</a>
+  </div>
+</nav>
+
+<div class="page-intro">
+  <h1>Sync-favourites flow — 4 states</h1>
+  <p>The "Save these across devices" prompt on <a href="favourites.html">/favourites</a>. Anonymous user with localStorage saves; flow links the device to an email so favourites follow them. Test IDs preserved from per-state mockups 13–16.</p>
+</div>
+
+<div class="state-grid">
+
+  <!-- 1. collapsed -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">1. Prompt collapsed</h2>
+      <span class="state-tag">Entry point</span>
+    </div>
+    <p class="state-note">At rest on /favourites — the "Sync" button is visible. Spec B §D5 L145.</p>
+    <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
+      <div>
+        <p class="sp-title">Save these across devices →</p>
+        <p class="sp-sub">Link them to your email so they follow you to your phone and laptop.</p>
+      </div>
+      <button type="button" class="btn-primary" data-testid="sync-prompt-open-btn">Sync</button>
+    </div>
+  </div>
+
+  <!-- 2. open email input -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">2. Open — email input</h2>
+      <span class="state-tag">Transition</span>
+    </div>
+    <p class="state-note">User clicked "Sync"; prompt expanded with email input + "Send link" button.</p>
+    <div class="sync-prompt" data-state="open" data-testid="sync-prompt">
+      <p class="sp-title">Save these across devices</p>
+      <p class="sp-sub">Enter your email — we'll send a one-click link to link this device.</p>
+      <form class="subscribe-form subscribe-form--bare" data-testid="sync-form" data-form-state="idle" novalidate>
+        <input id="sync-email-2" name="email" type="email" placeholder="you@example.com" autocomplete="email" data-testid="sync-email-input">
+        <button type="submit" class="btn-primary" data-testid="sync-submit-btn">Send link</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. link sent confirmation -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">3. Link sent (success)</h2>
+      <span class="state-tag">Success</span>
+    </div>
+    <p class="state-note">Form submit succeeded. Prompt replaced with confirmation showing the email + 30-min expiry note.</p>
+    <div class="sync-prompt" data-state="confirmation" data-testid="sync-prompt" data-form-state="link-sent" role="status" aria-live="polite">
+      <p class="sp-title">✓ Check your inbox</p>
+      <p class="sp-sub">We sent a one-click link to <strong>alex@example.com</strong>. Click it within 30 minutes to sync your favourites.</p>
+    </div>
+  </div>
+
+  <!-- 4. error -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">4. Error</h2>
+      <span class="state-tag">Error</span>
+    </div>
+    <p class="state-note">Submit failed (network or invalid email). Form stays open with email retained; retry button.</p>
+    <div class="sync-prompt" data-state="open" data-testid="sync-prompt">
+      <p class="sp-title">Save these across devices</p>
+      <p class="sp-sub">Enter your email — we'll send a one-click link to link this device.</p>
+      <form class="subscribe-form subscribe-form--bare" data-testid="sync-form" data-form-state="error" novalidate>
+        <input id="sync-email-4" name="email" type="email" value="alex@example.com" data-testid="sync-email-input">
+        <button type="submit" class="btn-primary" data-testid="sync-submit-btn">Try again</button>
+        <div class="form-msg is-error" role="alert">
+          <strong>Couldn't send the link.</strong> Network error — please try again. If this keeps happening, your favourites stay safe on this device.
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div>Per-state mockups 13–16 · <a href="favourites.html">← back to /favourites</a></div>
+</footer>
+
+</body>
+</html>

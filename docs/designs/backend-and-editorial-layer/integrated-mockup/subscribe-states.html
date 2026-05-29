@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrated end-state — Subscribe form: 5 states — AI Daily Digest</title>
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .mockup-nav { position: sticky; top: 0; z-index: 50; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 12px; font-size: 12px; overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow); }
+  .mockup-nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+  .mockup-nav-label { font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; padding-right: 6px; border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0; }
+  .mockup-nav a { color: var(--text-muted); padding: 4px 9px; border-radius: 999px; font-weight: 500; text-decoration: none; flex-shrink: 0; }
+  .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+  .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+  /* State-grid layout — one column per state on wide viewports, single column on mobile */
+  .state-grid { display: grid; gap: 28px; grid-template-columns: 1fr; max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
+  @media (min-width: 880px) { .state-grid { grid-template-columns: 1fr 1fr; } }
+  .state-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 18px 18px 22px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .state-card .state-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+  }
+  .state-card .state-title { font-family: var(--display-font); font-size: 16px; font-weight: 700; margin: 0; }
+  .state-card .state-tag { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); padding: 3px 8px; border: 1px solid var(--accent); border-radius: 999px; background: var(--accent-soft); }
+  .state-card .state-note { color: var(--text-muted); font-size: 13px; margin: 0; }
+  .state-card .subscribe-form { max-width: none; }
+
+  .page-intro { max-width: 1180px; margin: 0 auto; padding: 28px 20px 4px; }
+  .page-intro h1 { font-family: var(--display-font); font-size: clamp(24px, 4vw, 32px); margin: 0 0 6px; letter-spacing: var(--tracking-tight); }
+  .page-intro p { color: var(--text-muted); font-size: 14.5px; margin: 0; }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Integrated mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">End-state mockup</span>
+    <a href="index.html">Home</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="account.html">Account</a>
+    <a href="article.html">Article</a>
+    <a href="subscribe-states.html" aria-current="page">Subscribe states</a>
+    <a href="favourites-sync-flow.html">Sync flow</a>
+    <a href="account-states.html">Account states</a>
+    <a href="email-en.html">Email EN</a>
+    <a href="email-zh.html">Email ZH</a>
+    <a href="README.md">Index</a>
+  </div>
+</nav>
+
+<div class="page-intro">
+  <h1>Subscribe form — 5 states</h1>
+  <p>The footer subscribe banner (Variant A) lifecycle. Each card shows the form in one state, with realistic copy. Test IDs preserved from per-state mockups 01–05.</p>
+</div>
+
+<div class="state-grid">
+
+  <!-- 1. idle -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">1. Idle (resting)</h2>
+      <span class="state-tag">Entry point</span>
+    </div>
+    <p class="state-note">Email field empty, submit button enabled, no message row.</p>
+    <form class="subscribe-form" data-testid="subscribe-form" data-form-state="idle" novalidate>
+      <label for="email-s1">Your email</label>
+      <input id="email-s1" name="email" type="email" placeholder="you@example.com" autocomplete="email" data-testid="subscribe-email-input">
+      <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- 2. submitting -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">2. Submitting</h2>
+      <span class="state-tag">Transition</span>
+    </div>
+    <p class="state-note">User clicked Subscribe. Input + button disabled. Spinner in button. <code>aria-busy="true"</code>.</p>
+    <form class="subscribe-form" data-testid="subscribe-form" data-form-state="submitting" novalidate aria-busy="true">
+      <label for="email-s2">Your email</label>
+      <input id="email-s2" name="email" type="email" value="alex@example.com" disabled data-testid="subscribe-email-input">
+      <button type="submit" class="btn-primary" disabled data-testid="subscribe-submit-btn" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        Sending link…
+      </button>
+    </form>
+  </div>
+
+  <!-- 3. link-sent -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">3. Link sent (success)</h2>
+      <span class="state-tag">Success</span>
+    </div>
+    <p class="state-note">Magic-link email dispatched. Form replaced with success message; email shown.</p>
+    <form class="subscribe-form" data-testid="subscribe-form" data-form-state="link-sent" role="status" aria-live="polite">
+      <div class="form-msg is-success">
+        <strong>✓ Check your inbox.</strong> We sent a confirmation link to <strong>alex@example.com</strong>. Click it to finish subscribing — the link expires in 30 minutes.
+      </div>
+    </form>
+  </div>
+
+  <!-- 4. error-invalid-email -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">4. Error — invalid email</h2>
+      <span class="state-tag">Error</span>
+    </div>
+    <p class="state-note">User submitted before email validates. Inline error; input is <code>aria-invalid</code>; focus returned to input.</p>
+    <form class="subscribe-form" data-testid="subscribe-form" data-form-state="error-invalid-email" novalidate>
+      <label for="email-s4">Your email</label>
+      <input id="email-s4" name="email" type="email" value="not-an-email" aria-invalid="true" aria-describedby="email-err-s4" data-testid="subscribe-email-input">
+      <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">Subscribe</button>
+      <div id="email-err-s4" class="form-msg is-error" role="alert">
+        Please enter a valid email address (e.g. you@example.com).
+      </div>
+    </form>
+  </div>
+
+  <!-- 5. error-network -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">5. Error — network</h2>
+      <span class="state-tag">Error</span>
+    </div>
+    <p class="state-note">Submit reached server-side / network failure. Form remains usable; retry button labelled "Try again".</p>
+    <form class="subscribe-form" data-testid="subscribe-form" data-form-state="error-network" novalidate>
+      <label for="email-s5">Your email</label>
+      <input id="email-s5" name="email" type="email" value="alex@example.com" data-testid="subscribe-email-input">
+      <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">Try again</button>
+      <div class="form-msg is-error" role="alert">
+        <strong>Couldn't send the link.</strong> Network error — check your connection and try again. If this keeps happening, email
+        <a href="mailto:hello@ai-daily-digest.example">hello@ai-daily-digest.example</a>.
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div>Per-state mockups 01–05 · <a href="index.html">← back to integrated home</a></div>
+</footer>
+
+</body>
+</html>

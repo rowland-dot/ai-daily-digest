@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="claude">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrated end-state — /account: 6 states — AI Daily Digest</title>
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .mockup-nav { position: sticky; top: 0; z-index: 50; background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 12px; font-size: 12px; overflow-x: auto; white-space: nowrap; box-shadow: var(--shadow); }
+  .mockup-nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+  .mockup-nav-label { font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; padding-right: 6px; border-right: 1px solid var(--border); margin-right: 4px; flex-shrink: 0; }
+  .mockup-nav a { color: var(--text-muted); padding: 4px 9px; border-radius: 999px; font-weight: 500; text-decoration: none; flex-shrink: 0; }
+  .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); text-decoration: none; }
+  .mockup-nav a[aria-current="page"] { background: var(--accent); color: #fff; }
+
+  .state-grid { display: grid; gap: 28px; grid-template-columns: 1fr; max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
+  @media (min-width: 880px) { .state-grid { grid-template-columns: 1fr 1fr; } }
+  .state-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px 18px 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; position: relative; }
+  .state-card .state-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+  .state-card .state-title { font-family: var(--display-font); font-size: 16px; font-weight: 700; margin: 0; }
+  .state-card .state-tag { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); padding: 3px 8px; border: 1px solid var(--accent); border-radius: 999px; background: var(--accent-soft); }
+  .state-card .state-note { color: var(--text-muted); font-size: 13px; margin: 0; }
+  .state-card .account-card { margin-bottom: 0; }
+
+  /* Demo: inline modal preview INSIDE its state-card (not full-viewport overlay so multiple cards stay readable). */
+  .modal-inline {
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    padding: 20px;
+    margin-top: 6px;
+  }
+  .modal-inline h3 { font-family: var(--display-font); margin: 0 0 8px; font-size: 18px; }
+  .modal-inline p { color: var(--text-muted); font-size: 13.5px; margin: 0 0 14px; }
+  .modal-inline .modal-actions { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }
+  .modal-inline-dim { opacity: 0.45; pointer-events: none; }
+
+  /* Inline toast preview anchored to the state-card */
+  .toast-inline {
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    margin-top: 4px;
+  }
+  .toast-inline .toast-icon { color: var(--accent); font-weight: 700; }
+
+  .page-intro { max-width: 1180px; margin: 0 auto; padding: 28px 20px 4px; }
+  .page-intro h1 { font-family: var(--display-font); font-size: clamp(24px, 4vw, 32px); margin: 0 0 6px; letter-spacing: var(--tracking-tight); }
+  .page-intro p { color: var(--text-muted); font-size: 14.5px; margin: 0; }
+</style>
+</head>
+<body>
+
+<nav class="mockup-nav" aria-label="Integrated mockup pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">End-state mockup</span>
+    <a href="index.html">Home</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="account.html">Account</a>
+    <a href="article.html">Article</a>
+    <a href="subscribe-states.html">Subscribe states</a>
+    <a href="favourites-sync-flow.html">Sync flow</a>
+    <a href="account-states.html" aria-current="page">Account states</a>
+    <a href="email-en.html">Email EN</a>
+    <a href="email-zh.html">Email ZH</a>
+    <a href="README.md">Index</a>
+  </div>
+</nav>
+
+<div class="page-intro">
+  <h1>/account — 6 states</h1>
+  <p>Each card shows one variant of <a href="account.html">/account</a>. Modal states (5, 6) render the modal inline inside the card rather than full-viewport so siblings remain readable. Test IDs preserved from per-state mockups 17–22.</p>
+</div>
+
+<div class="state-grid">
+
+  <!-- 1. linked-active -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">1. Linked &amp; active</h2>
+      <span class="state-tag">Entry point</span>
+    </div>
+    <p class="state-note">Logged-in subscriber. Newsletter subscribed; EN language picker; favourites synced.</p>
+    <div class="account-card" data-auth="linked" data-newsletter-state="subscribed">
+      <h3>Your subscription</h3>
+      <p class="muted">Signed in as <strong>alex@example.com</strong></p>
+      <div class="account-row">
+        <span class="row-label">Newsletter</span>
+        <span class="row-value">Subscribed · 07:00 Sydney</span>
+        <button type="button" class="btn-secondary" data-testid="unsubscribe-btn">Unsubscribe</button>
+      </div>
+      <div class="account-row">
+        <span class="row-label">Language</span>
+        <div class="lang-pref" role="tablist" aria-label="Email language" data-testid="lang-pref">
+          <button type="button" role="tab" aria-pressed="true" data-testid="lang-pref-en">EN</button>
+          <button type="button" role="tab" aria-pressed="false" data-testid="lang-pref-zh">中文</button>
+        </div>
+      </div>
+      <div class="account-row">
+        <span class="row-label">Saved articles</span>
+        <span class="row-value">3 saved · synced</span>
+        <a href="favourites.html" class="btn-secondary" style="text-decoration: none;">View</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. linked-unsubscribed -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">2. Unsubscribed</h2>
+      <span class="state-tag">Variant</span>
+    </div>
+    <p class="state-note">User unsubscribed via the email footer. Re-subscribe button available; favourites intact.</p>
+    <div class="account-card" data-auth="linked" data-newsletter-state="unsubscribed">
+      <h3>Your subscription</h3>
+      <p class="muted">Signed in as <strong>alex@example.com</strong></p>
+      <div class="account-row">
+        <span class="row-label">Newsletter</span>
+        <span class="row-value" data-testid="newsletter-status">Unsubscribed</span>
+        <button type="button" class="btn-primary" data-testid="resubscribe-btn">Re-subscribe</button>
+      </div>
+      <div class="account-row">
+        <span class="row-label">Language</span>
+        <div class="lang-pref" role="tablist" aria-label="Email language">
+          <button type="button" role="tab" aria-pressed="true">EN</button>
+          <button type="button" role="tab" aria-pressed="false">中文</button>
+        </div>
+      </div>
+      <div class="account-row">
+        <span class="row-label">Saved articles</span>
+        <span class="row-value">3 saved · still synced</span>
+        <a href="favourites.html" class="btn-secondary" style="text-decoration: none;">View</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. language-saving -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">3. Language — saving</h2>
+      <span class="state-tag">Transition</span>
+    </div>
+    <p class="state-note">User clicked 中文. <code>PUT /api/account/language</code> in flight; both buttons disabled; ZH visually selected with spinner.</p>
+    <div class="account-card">
+      <h3>Language preference</h3>
+      <p class="muted">Switching to Chinese…</p>
+      <div class="account-row" style="border-top: 0;">
+        <span class="row-label">Language</span>
+        <div class="lang-pref" role="tablist" aria-label="Email language" aria-busy="true" data-testid="lang-pref" data-saving="true">
+          <button type="button" role="tab" aria-pressed="false" disabled data-testid="lang-pref-en">EN</button>
+          <button type="button" role="tab" aria-pressed="true" disabled data-testid="lang-pref-zh">中文 <span class="spinner" aria-hidden="true" style="margin-left: 4px;"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. language-saved-toast -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">4. Language — saved (toast)</h2>
+      <span class="state-tag">Success</span>
+    </div>
+    <p class="state-note">PUT succeeded. ZH firmly selected; transient toast confirms next-email language. (Live site shows toast bottom-right; rendered inline here.)</p>
+    <div class="account-card">
+      <h3>Language preference</h3>
+      <p class="muted">Updated.</p>
+      <div class="account-row" style="border-top: 0;">
+        <span class="row-label">Language</span>
+        <div class="lang-pref" role="tablist" aria-label="Email language" data-testid="lang-pref">
+          <button type="button" role="tab" aria-pressed="false" data-testid="lang-pref-en">EN</button>
+          <button type="button" role="tab" aria-pressed="true" data-testid="lang-pref-zh">中文</button>
+        </div>
+      </div>
+    </div>
+    <div class="toast-inline" role="status" aria-live="polite" data-testid="toast">
+      <span class="toast-icon" aria-hidden="true">✓</span>
+      Language updated — tomorrow's email arrives in 中文.
+    </div>
+  </div>
+
+  <!-- 5. delete-confirm-modal-open -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">5. Delete confirm — open</h2>
+      <span class="state-tag">Modal</span>
+    </div>
+    <p class="state-note">User clicked "Delete my data". Modal explains consequence; Cancel is autofocused (safer default); destructive action is red.</p>
+    <div class="account-card modal-inline-dim" aria-hidden="true">
+      <h3>Danger zone</h3>
+      <p class="muted">Delete everything we know about you. This can't be undone.</p>
+      <div class="account-row" style="border-top: 0; justify-content: flex-start;">
+        <button type="button" class="btn-danger" data-testid="delete-data-btn">Delete my data</button>
+      </div>
+    </div>
+    <div class="modal-inline" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title-inline" aria-describedby="delete-modal-body-inline" data-testid="delete-confirm-modal">
+      <h3 id="delete-modal-title-inline">Delete your account?</h3>
+      <p id="delete-modal-body-inline">This will permanently remove <strong>alex@example.com</strong> from our newsletter list, delete all 3 saved articles, and erase any session data on this device. This action can't be undone.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" data-testid="delete-cancel-btn" autofocus>Cancel</button>
+        <button type="button" class="btn-danger" data-testid="delete-confirm-btn">Yes, delete everything</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. delete-confirm-modal-closed -->
+  <div class="state-card">
+    <div class="state-heading">
+      <h2 class="state-title">6. Delete confirm — closed</h2>
+      <span class="state-tag">Baseline</span>
+    </div>
+    <p class="state-note">Entry-point baseline for state 5 (identical to state 1, named for parity coverage).</p>
+    <div class="account-card" data-auth="linked">
+      <h3>Danger zone</h3>
+      <p class="muted">Delete everything we know about you. This can't be undone.</p>
+      <div class="account-row" style="border-top: 0; justify-content: flex-start;">
+        <button type="button" class="btn-danger" data-testid="delete-data-btn">Delete my data</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div>Per-state mockups 17–22 · <a href="account.html">← back to /account</a></div>
+</footer>
+
+</body>
+</html>
