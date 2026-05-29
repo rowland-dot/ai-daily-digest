@@ -1,0 +1,67 @@
+/* Brutalist / no-bullshit theme
+ * Aesthetic stance: Linear marketing + Ben Holliday + raw HTML.
+ * Sharp corners, hard borders, mono-or-geometric type, high contrast.
+ * Information density is a feature. Light by default.
+ */
+
+[data-theme="brutalist-light"] {
+  --bg: #f4f4f0;
+  --surface: #ffffff;
+  --surface-2: #e8e8e2;
+  --surface-3: #dedeb8;            /* highlighter yellow-green */
+  --text: #0a0a0a;
+  --text-muted: #4a4a48;
+  --text-tertiary: #8a8a86;
+  --border: #0a0a0a;               /* hard black borders */
+  --border-strong: #0a0a0a;
+  --accent: #ff3d00;               /* signal orange */
+  --accent-hover: #d63100;
+  --accent-soft: rgba(255, 61, 0, 0.12);
+  --link: #0a0a0a;
+  --link-hover: #ff3d00;
+  --shadow: 4px 4px 0 #0a0a0a;     /* hard offset, no blur */
+  --display-font: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --body-font: 'Inter', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --mono-font: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --tracking-tight: -0.01em;
+  --hero-bg: #ffff00;              /* hazard yellow hero */
+  --hero-text: #0a0a0a;
+  --hero-accent: #ff3d00;
+  --radius: 0px;                   /* zero. radius. anywhere. */
+  --radius-lg: 0px;
+  --danger: #d10000;
+  --danger-bg: #ffe5e5;
+  --success: #007a2e;
+  --success-bg: #e0f5e8;
+}
+
+[data-theme="brutalist-dark"] {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface-2: #1c1c1c;
+  --surface-3: #2a2a14;            /* dim hazard */
+  --text: #f4f4f0;
+  --text-muted: #a8a8a4;
+  --text-tertiary: #6a6a66;
+  --border: #f4f4f0;               /* hard white borders */
+  --border-strong: #f4f4f0;
+  --accent: #ff6b35;
+  --accent-hover: #ff8c5a;
+  --accent-soft: rgba(255, 107, 53, 0.14);
+  --link: #f4f4f0;
+  --link-hover: #ff6b35;
+  --shadow: 4px 4px 0 #f4f4f0;
+  --display-font: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --body-font: 'Inter', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --mono-font: 'JetBrains Mono', 'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --tracking-tight: -0.01em;
+  --hero-bg: #ffff00;              /* hazard yellow still */
+  --hero-text: #0a0a0a;
+  --hero-accent: #ff3d00;
+  --radius: 0px;
+  --radius-lg: 0px;
+  --danger: #ff5555;
+  --danger-bg: #2a0a0a;
+  --success: #4ade80;
+  --success-bg: #0a2a14;
+}
