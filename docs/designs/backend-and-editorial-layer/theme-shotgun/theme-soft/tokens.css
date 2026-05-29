@@ -1,0 +1,67 @@
+/* Soft contemporary / Notion-ish theme
+ * Aesthetic stance: modern friendly. System fonts, soft neutrals,
+ * generous radius, gentle hero gradient. Approachable without being soft-AI-product
+ * generic. Light by default.
+ */
+
+[data-theme="soft-light"] {
+  --bg: #fcfcfa;                     /* slight warmth, not stark white */
+  --surface: #ffffff;
+  --surface-2: #f6f5f1;
+  --surface-3: #efece5;
+  --text: #1f1f1d;
+  --text-muted: #5e5d57;
+  --text-tertiary: #8a8881;
+  --border: #ebe8e0;
+  --border-strong: #d6d2c8;
+  --accent: #3d7a5f;                 /* moss / sage — not the usual blue */
+  --accent-hover: #2d5d48;
+  --accent-soft: rgba(61, 122, 95, 0.10);
+  --link: #3d7a5f;
+  --link-hover: #2d5d48;
+  --shadow: 0 1px 2px rgba(31,31,29,0.04), 0 8px 24px rgba(31,31,29,0.06);
+  --display-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Inter', system-ui, sans-serif;
+  --body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Inter', system-ui, sans-serif;
+  --mono-font: 'SF Mono', Menlo, 'JetBrains Mono', Consolas, monospace;
+  --tracking-tight: -0.018em;
+  --hero-bg: linear-gradient(135deg, #f4efe4 0%, #e9efe7 60%, #e4ecef 100%);
+  --hero-text: #1f1f1d;
+  --hero-accent: #3d7a5f;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --danger: #b54848;
+  --danger-bg: rgba(181, 72, 72, 0.07);
+  --success: #3d7a5f;
+  --success-bg: rgba(61, 122, 95, 0.08);
+}
+
+[data-theme="soft-dark"] {
+  --bg: #18181a;
+  --surface: #1f2022;
+  --surface-2: #25272a;
+  --surface-3: #2c2f33;
+  --text: #ecebe6;
+  --text-muted: #a0a09a;
+  --text-tertiary: #6e6d68;
+  --border: #2e3034;
+  --border-strong: #444751;
+  --accent: #7fc8a1;
+  --accent-hover: #a0e0bf;
+  --accent-soft: rgba(127, 200, 161, 0.12);
+  --link: #7fc8a1;
+  --link-hover: #a0e0bf;
+  --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.30);
+  --display-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Inter', system-ui, sans-serif;
+  --body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Inter', system-ui, sans-serif;
+  --mono-font: 'SF Mono', Menlo, 'JetBrains Mono', Consolas, monospace;
+  --tracking-tight: -0.018em;
+  --hero-bg: linear-gradient(135deg, #232628 0%, #1d2422 60%, #1a2224 100%);
+  --hero-text: #ecebe6;
+  --hero-accent: #7fc8a1;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --danger: #e09090;
+  --danger-bg: rgba(224, 144, 144, 0.10);
+  --success: #7fc8a1;
+  --success-bg: rgba(127, 200, 161, 0.10);
+}
