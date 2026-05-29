@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" data-theme="editorial-light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily Digest — Editorial theme</title>
+  <link rel="stylesheet" href="./tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--body-font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      font-size: 17px;
+    }
+
+    /* Theme switch (preview only) */
+    .ts {
+      position: fixed; top: 14px; right: 14px; z-index: 10;
+      display: inline-flex; gap: 0;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 3px; font-size: 12px;
+      box-shadow: var(--shadow);
+    }
+    .ts button {
+      background: transparent; border: 0; color: var(--text-muted);
+      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      font-family: inherit; font-size: inherit; font-weight: 500;
+    }
+    .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+    /* Masthead */
+    header.mast {
+      background: var(--hero-bg);
+      border-bottom: 2px solid var(--text);
+      padding: 64px 24px 40px;
+      text-align: center;
+    }
+    .kicker {
+      font-family: var(--mono-font);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    h1.mast-title {
+      font-family: var(--display-font);
+      font-size: clamp(40px, 6vw, 64px);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: var(--tracking-tight);
+      margin: 0 0 14px;
+      color: var(--hero-text);
+    }
+    .mast-date {
+      font-family: var(--mono-font);
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+    .mast-tag {
+      max-width: 580px;
+      margin: 18px auto 0;
+      font-size: 16px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Section nav */
+    nav.toc {
+      max-width: 720px; margin: 0 auto; padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;
+      font-family: var(--mono-font); font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+    }
+    nav.toc a { color: var(--text-muted); }
+    nav.toc a:hover { color: var(--accent); }
+
+    main { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+
+    section + section { margin-top: 56px; }
+    h2.section-head {
+      font-family: var(--display-font);
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: var(--tracking-tight);
+      margin: 0 0 4px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2.section-head .count {
+      font-family: var(--mono-font);
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-left: 8px;
+      letter-spacing: 0.06em;
+    }
+
+    /* Article cards — newspaper feel */
+    article.card {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    article.card:last-child { border-bottom: 0; }
+    .card-meta {
+      font-family: var(--mono-font);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 8px;
+    }
+    .card-meta .src { color: var(--accent); }
+    h3.card-title {
+      font-family: var(--display-font);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
+    }
+    h3.card-title a { color: var(--text); text-decoration: none; }
+    h3.card-title a:hover { color: var(--accent); }
+    .card-summary {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Editor's Cut — pull-quote style */
+    .editors-cut {
+      margin-top: 16px;
+      padding: 18px 22px;
+      border-left: 3px solid var(--accent);
+      background: var(--surface-2);
+      font-style: italic;
+      font-size: 15.5px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .editors-cut::before {
+      content: "Editor's Cut";
+      display: block;
+      font-family: var(--mono-font);
+      font-size: 10px;
+      font-style: normal;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    /* Subscribe block */
+    .subscribe {
+      margin-top: 64px;
+      padding: 40px 32px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .subscribe h3 {
+      font-family: var(--display-font);
+      font-size: 26px;
+      margin: 0 0 8px;
+      letter-spacing: var(--tracking-tight);
+    }
+    .subscribe p {
+      color: var(--text-muted);
+      margin: 0 0 22px;
+      font-size: 15px;
+    }
+    .subscribe form { display: flex; gap: 0; max-width: 440px; margin: 0 auto; }
+    .subscribe input[type="email"] {
+      flex: 1;
+      padding: 12px 14px;
+      border: 1px solid var(--border-strong);
+      border-right: 0;
+      background: var(--surface);
+      color: var(--text);
+      font-family: inherit; font-size: 15px;
+      border-radius: var(--radius) 0 0 var(--radius);
+      min-width: 0;
+    }
+    .subscribe button {
+      padding: 12px 22px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+      font-family: inherit; font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .subscribe button:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+    /* Footer */
+    footer {
+      margin-top: 80px;
+      padding: 32px 24px;
+      border-top: 2px solid var(--text);
+      text-align: center;
+      font-family: var(--mono-font);
+      font-size: 11px;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); margin: 0 10px; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="ts" role="group" aria-label="Theme">
+    <button aria-pressed="true" onclick="document.documentElement.dataset.theme='editorial-light';this.setAttribute('aria-pressed','true');this.nextElementSibling.setAttribute('aria-pressed','false');">Light</button><button aria-pressed="false" onclick="document.documentElement.dataset.theme='editorial-dark';this.setAttribute('aria-pressed','true');this.previousElementSibling.setAttribute('aria-pressed','false');">Dark</button>
+  </div>
+
+  <header class="mast">
+    <div class="kicker">AI Daily Digest &nbsp;·&nbsp; Vol. III &nbsp;·&nbsp; Issue 142</div>
+    <h1 class="mast-title">The Friday Edition</h1>
+    <div class="mast-date">Friday, 30 May 2026</div>
+    <p class="mast-tag">A daily read on what shipped, what broke, and what's worth your attention &mdash; from the AI labs, the open-source frontier, and the China AI scene.</p>
+  </header>
+
+  <nav class="toc">
+    <a href="#models">Model drops</a>
+    <a href="#trending">Trending on GitHub</a>
+    <a href="#china">China (AIHOT)</a>
+    <a href="#voices">Voices</a>
+  </nav>
+
+  <main>
+    <section id="models">
+      <h2 class="section-head">Model drops &amp; updates <span class="count">4 stories</span></h2>
+
+      <article class="card">
+        <div class="card-meta"><span class="src">Anthropic</span> &nbsp;·&nbsp; 3 hours ago</div>
+        <h3 class="card-title"><a href="#">Claude Opus 4.7 ships with extended thinking and 1M token context</a></h3>
+        <p class="card-summary">The new flagship doubles context, adds adjustable thinking budgets up to 64k tokens, and posts state-of-the-art on SWE-bench Verified. Pricing holds at Opus 4.5 levels.</p>
+        <div class="editors-cut">
+          The 1M context is the headline, but the quiet news is the thinking-budget API. You can now spend more tokens on the hard step of a chain and almost none on the cheap ones. That changes how you build agents.
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-meta"><span class="src">OpenAI</span> &nbsp;·&nbsp; 7 hours ago</div>
+        <h3 class="card-title"><a href="#">GPT-5.1 mini available in API, half the cost of GPT-5 mini</a></h3>
+        <p class="card-summary">Quietly rolled out via the API console. Same context window, similar coding benchmarks, materially cheaper. No public model card yet.</p>
+      </article>
+    </section>
+
+    <section id="trending">
+      <h2 class="section-head">Trending on GitHub <span class="count">6 repos</span></h2>
+
+      <article class="card">
+        <div class="card-meta"><span class="src">github.com/exa-labs/exa-mcp</span> &nbsp;·&nbsp; +2.1k stars today</div>
+        <h3 class="card-title"><a href="#">exa-mcp: Production-grade web search MCP server with citation extraction</a></h3>
+        <p class="card-summary">Drop-in MCP server for Claude Code and Codex CLI. Handles citation extraction, content distillation, and rate-limited search across 12 providers.</p>
+      </article>
+    </section>
+
+    <div class="subscribe">
+      <h3>Get this in your inbox</h3>
+      <p>Daily summary, 6am Sydney time. No tracking pixels. Unsubscribe in one click.</p>
+      <form onsubmit="event.preventDefault()">
+        <input type="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#">Archive</a> &nbsp;·&nbsp;
+    <a href="#">Atom feed</a> &nbsp;·&nbsp;
+    <a href="#">中文</a> &nbsp;·&nbsp;
+    <a href="#">About</a>
+  </footer>
+</body>
+</html>

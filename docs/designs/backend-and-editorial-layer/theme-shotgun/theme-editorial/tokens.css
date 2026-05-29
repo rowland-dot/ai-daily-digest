@@ -1,0 +1,70 @@
+/* Editorial / Magazine theme
+ * Aesthetic stance: New York Times + Wirecutter + Substack premium.
+ * Single accent (oxblood), serif display headlines, generous whitespace,
+ * content-first hierarchy. Light by default; dark is a subdued night-read.
+ *
+ * Token names mirror scripts/render-site.mjs PAGE_CSS so the renderer can
+ * swap themes by swapping this file.
+ */
+
+[data-theme="editorial-light"] {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --surface-2: #f4f1ea;
+  --surface-3: #ebe6db;
+  --text: #1a1714;
+  --text-muted: #5b554d;
+  --text-tertiary: #8a847a;
+  --border: #e4ddd1;
+  --border-strong: #c9c0b0;
+  --accent: #7a1f1f;            /* oxblood */
+  --accent-hover: #5e1717;
+  --accent-soft: rgba(122, 31, 31, 0.08);
+  --link: #7a1f1f;
+  --link-hover: #5e1717;
+  --shadow: 0 1px 2px rgba(26,23,20,0.04), 0 6px 16px rgba(26,23,20,0.06);
+  --display-font: 'Charter', 'Iowan Old Style', 'Source Serif Pro', 'Georgia', serif;
+  --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --mono-font: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --tracking-tight: -0.015em;
+  --hero-bg: linear-gradient(180deg, #f4f1ea 0%, #fbfaf7 100%);
+  --hero-text: #1a1714;
+  --hero-accent: #7a1f1f;
+  --radius: 4px;
+  --radius-lg: 6px;
+  --danger: #a02828;
+  --danger-bg: rgba(160, 40, 40, 0.06);
+  --success: #2f6a3e;
+  --success-bg: rgba(47, 106, 62, 0.06);
+}
+
+[data-theme="editorial-dark"] {
+  --bg: #14110d;
+  --surface: #1c1814;
+  --surface-2: #221d18;
+  --surface-3: #2a241e;
+  --text: #f0ebe1;
+  --text-muted: #a8a195;
+  --text-tertiary: #7a7367;
+  --border: #2f2922;
+  --border-strong: #463e34;
+  --accent: #c9837a;
+  --accent-hover: #e0a098;
+  --accent-soft: rgba(201, 131, 122, 0.10);
+  --link: #c9837a;
+  --link-hover: #e0a098;
+  --shadow: 0 1px 2px rgba(0,0,0,0.5), 0 6px 16px rgba(0,0,0,0.3);
+  --display-font: 'Charter', 'Iowan Old Style', 'Source Serif Pro', 'Georgia', serif;
+  --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --mono-font: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --tracking-tight: -0.015em;
+  --hero-bg: linear-gradient(180deg, #221d18 0%, #14110d 100%);
+  --hero-text: #f0ebe1;
+  --hero-accent: #c9837a;
+  --radius: 4px;
+  --radius-lg: 6px;
+  --danger: #e07878;
+  --danger-bg: rgba(224, 120, 120, 0.10);
+  --success: #7fc28f;
+  --success-bg: rgba(127, 194, 143, 0.10);
+}
