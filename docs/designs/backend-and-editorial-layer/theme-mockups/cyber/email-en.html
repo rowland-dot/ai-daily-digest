@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~/email-en — Daily digest, EN body · cyber theme</title>
+<style>
+/* Outer mockup chrome only — does NOT ship in real email */
+.mockup-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #0d0f12;
+  border-bottom: 1px solid #1f2329;
+  padding: 7px 12px;
+  font-size: 11px;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+}
+.mockup-nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; }
+.mockup-nav-label { font-weight: 700; color: #50fa7b; text-transform: uppercase; letter-spacing: 0.08em; font-size: 10px; padding-right: 8px; border-right: 1px solid #2e333a; margin-right: 2px; flex-shrink: 0; }
+.mockup-nav a { color: #858585; padding: 3px 8px; border-radius: 2px; font-weight: 500; text-decoration: none; border: 1px solid transparent; flex-shrink: 0; }
+.mockup-nav a:hover { color: #50fa7b; border-color: rgba(80,250,123,0.1); }
+.mockup-nav a.active { color: #50fa7b; border-color: #50fa7b; background: rgba(80,250,123,0.1); }
+.mockup-nav .nav-sep { color: #5a5a5a; flex-shrink: 0; }
+.email-intro {
+  max-width: 600px;
+  margin: 14px auto 8px;
+  padding: 0 16px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  color: #6272a4;
+  font-size: 12px;
+  text-align: center;
+}
+.email-intro::before { content: "/* "; }
+.email-intro::after { content: " */"; }
+</style>
+</head>
+<!-- Real email body: inline styles only, table layout, terminal/code aesthetic -->
+<body style="margin:0; padding:0; background:#07080a; font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace; color:#d4d4d4; line-height:1.6;">
+
+<!-- Mockup nav (not part of real email) -->
+<nav class="mockup-nav" aria-label="Cyber theme pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">theme: cyber</span>
+    <a href="home.html">~/today</a>
+    <span class="nav-sep">·</span>
+    <a href="favourites.html">~/favs</a>
+    <span class="nav-sep">·</span>
+    <a href="account.html">~/account</a>
+    <span class="nav-sep">·</span>
+    <a href="article.html">~/article</a>
+    <span class="nav-sep">·</span>
+    <a href="email-en.html" class="active">~/email</a>
+    <span class="nav-sep">·</span>
+    <a href="../comparison/index.html">cd ../comparison</a>
+  </div>
+</nav>
+
+<p class="email-intro">Daily email body sent at 07:00 Sydney to EN subscribers. Inline styles only (email-client safe). Terminal/code aesthetic.</p>
+
+<!-- Real email HTML starts here -->
+<div data-testid="email-body-wrap">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#07080a; padding:24px 12px;">
+  <tr><td align="center">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" data-testid="email-body" style="max-width:600px; width:100%; background:#0d0f12; border:1px solid #1f2329; border-radius:4px; overflow:hidden;">
+
+      <!-- Hero: shell prompt header -->
+      <tr><td style="padding:28px 28px 20px; background:radial-gradient(circle at 30% 0%, #131619 0%, #07080a 60%); border-bottom:1px solid #1f2329;">
+        <p style="margin:0 0 2px; font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace; font-size:11px; color:#6272a4;">// 2026-05-17 07:00 AEST · daily digest</p>
+        <p style="margin:0 0 8px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:13px; color:#858585;">
+          <span style="color:#50fa7b;">ai-digest</span><span style="color:#858585;">@</span><span style="color:#ff79c6;">prod</span><span style="color:#858585;">:</span><span style="color:#f1fa8c;">~/today</span><span style="color:#858585;"> $</span>
+        </p>
+        <h1 style="margin:0 0 4px; font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace; font-size:22px; font-weight:700; color:#d4d4d4; letter-spacing:0;">./send digest --date 2026-05-17</h1>
+        <p style="margin:0; font-size:12px; color:#6272a4; font-family:'JetBrains Mono','Fira Code',monospace;">// Saturday · Editor's Cut · EN subscribers</p>
+      </td></tr>
+
+      <!-- Editor's Cut narrative — /* comment block */ -->
+      <tr><td style="padding:24px 28px 8px;">
+        <p style="margin:0 0 10px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#6272a4;">/* Editor's Cut */</p>
+
+        <!-- Comment-block styled editorial -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:14px;">
+          <tr>
+            <td style="border-left:3px solid #6272a4; padding:10px 14px; background:#131619; border-radius:0 2px 2px 0;">
+              <p style="margin:0 0 10px; font-size:13px; line-height:1.7; color:#6272a4; font-family:'JetBrains Mono','Fira Code',monospace; font-style:italic;">
+                /* The dominant story today isn't a single model — it's that the major labs are converging on the same competitive surface: context length. Anthropic shipped Claude 4.7 at 1M tokens, the Qwen team open-sourced an omnimodal checkpoint, and OpenAI quietly extended Responses-API context to 512K. Everyone is fighting for room to fit your codebase, your conversation history, and a few thousand lines of tool output simultaneously. */
+              </p>
+              <p style="margin:0 0 10px; font-size:13px; line-height:1.7; color:#6272a4; font-family:'JetBrains Mono','Fira Code',monospace; font-style:italic;">
+                /* Meanwhile, the open-source side is still about cost. r/LocalLLaMA spent the day discussing how cheap a 70B model can run on consumer GPUs — and the answer keeps getting cheaper. The two trajectories (frontier labs scaling context, open-source compressing inference) are converging on the same end-user: someone who used to think 32k was generous. */
+              </p>
+              <p style="margin:0; font-size:13px; line-height:1.7; color:#6272a4; font-family:'JetBrains Mono','Fira Code',monospace; font-style:italic;">
+                /* Six picks below. The Anthropic and Qwen launches are the can't-miss ones; everything else is supporting context. */
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <!-- Today's picks -->
+      <tr><td style="padding:8px 28px 12px;">
+        <p style="margin:0 0 14px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:12px; font-weight:700; color:#50fa7b; letter-spacing:0.06em;">// today's picks[]</p>
+
+        <!-- Pick 1 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:12px;">
+          <tr><td style="border-left:3px solid #50fa7b; padding:10px 14px; background:#131619; border-radius:0 2px 2px 0;">
+            <p style="margin:0 0 4px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:10px; color:#6272a4;">aihot(<span style="color:#f1fa8c;">"claude-4-7"</span>)</p>
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-a3f12b8c" style="font-family:'JetBrains Mono','Fira Code',monospace; font-size:14px; font-weight:700; color:#d4d4d4; text-decoration:none; display:block; margin-bottom:5px;">Claude 4.7 launches with 1M context window</a>
+            <p style="margin:0; font-size:12px; color:#858585; line-height:1.55; font-family:'JetBrains Mono','Fira Code',monospace;">The pricing parity with Opus is the real signal — Anthropic is betting context length is the differentiator this cycle.</p>
+          </td></tr>
+        </table>
+
+        <!-- Pick 2 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:12px;">
+          <tr><td style="border-left:3px solid #50fa7b; padding:10px 14px; background:#131619; border-radius:0 2px 2px 0;">
+            <p style="margin:0 0 4px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:10px; color:#6272a4;">aihot(<span style="color:#f1fa8c;">"qwen3-omni"</span>)</p>
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=aihot-qwen-omni" style="font-family:'JetBrains Mono','Fira Code',monospace; font-size:14px; font-weight:700; color:#d4d4d4; text-decoration:none; display:block; margin-bottom:5px;">Qwen3-Omni open-sources at 32B parameters</a>
+            <p style="margin:0; font-size:12px; color:#858585; line-height:1.55; font-family:'JetBrains Mono','Fira Code',monospace;">First open-weight omnimodal model competitive at frontier sizes. Expect a flood of fine-tunes within the week.</p>
+          </td></tr>
+        </table>
+
+        <!-- Pick 3 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:12px;">
+          <tr><td style="border-left:3px solid #50fa7b; padding:10px 14px; background:#131619; border-radius:0 2px 2px 0;">
+            <p style="margin:0 0 4px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:10px; color:#6272a4;">simon(<span style="color:#f1fa8c;">"prompt-caching"</span>)</p>
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=simon-prompt-caching" style="font-family:'JetBrains Mono','Fira Code',monospace; font-size:14px; font-weight:700; color:#d4d4d4; text-decoration:none; display:block; margin-bottom:5px;">Simon Willison on prompt caching strategies</a>
+            <p style="margin:0; font-size:12px; color:#858585; line-height:1.55; font-family:'JetBrains Mono','Fira Code',monospace;">A practical guide that's already the reference for new builders trying to keep API bills under control.</p>
+          </td></tr>
+        </table>
+
+        <!-- Pick 4 -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:12px;">
+          <tr><td style="border-left:3px solid #50fa7b; padding:10px 14px; background:#131619; border-radius:0 2px 2px 0;">
+            <p style="margin:0 0 4px; font-family:'JetBrains Mono','Fira Code',monospace; font-size:10px; color:#6272a4;">openai(<span style="color:#f1fa8c;">"responses-api-512k"</span>)</p>
+            <a href="https://ai-daily-digest.example/?ref=email-en&article=openai-responses-512k" style="font-family:'JetBrains Mono','Fira Code',monospace; font-size:14px; font-weight:700; color:#d4d4d4; text-decoration:none; display:block; margin-bottom:5px;">OpenAI quietly extends Responses API to 512K context</a>
+            <p style="margin:0; font-size:12px; color:#858585; line-height:1.55; font-family:'JetBrains Mono','Fira Code',monospace;">No blog post, no fanfare — just an API doc update. The pattern matches GPT-4 Turbo's 128K rollout.</p>
+          </td></tr>
+        </table>
+
+        <!-- See all -->
+        <p style="margin:14px 0 4px; text-align:center; font-family:'JetBrains Mono','Fira Code',monospace; font-size:12px; color:#6272a4;">
+          <a href="https://ai-daily-digest.example/?ref=email-en" style="color:#8be9fd; text-decoration:none; font-weight:600;">→ open("site") // read all 14 picks</a>
+        </p>
+      </td></tr>
+
+      <!-- Footer -->
+      <tr><td style="padding:20px 28px 28px; background:#07080a; border-top:1px solid #1f2329; color:#6272a4; font-size:11px; text-align:center; font-family:'JetBrains Mono','Fira Code',monospace;">
+        <p style="margin:0 0 6px; color:#5a5a5a;">// subscribed · EN · ai-daily-digest</p>
+        <p style="margin:0 0 6px;">
+          <a href="https://ai-daily-digest.example/account" style="color:#8be9fd; text-decoration:none;">manage account</a>
+          <span style="color:#5a5a5a;"> · </span>
+          <a href="https://ai-daily-digest.example/account?lang=zh" style="color:#8be9fd; text-decoration:none;">switch to 中文</a>
+          <span style="color:#5a5a5a;"> · </span>
+          <a href="{{ beehiiv_unsubscribe_url }}" style="color:#8be9fd; text-decoration:none;">./unsubscribe</a>
+        </p>
+        <p style="margin:0; color:#5a5a5a;">AI Daily Digest · <a href="https://ai-daily-digest.example/" style="color:#5a5a5a; text-decoration:none;">ai-daily-digest.example</a></p>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</div>
+
+</body>
+</html>

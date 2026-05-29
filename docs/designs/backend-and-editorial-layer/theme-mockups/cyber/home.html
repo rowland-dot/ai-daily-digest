@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyber-dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~/today — AI Daily Digest · cyber theme</title>
+<link rel="stylesheet" href="/designs/backend-and-editorial-layer/theme-shotgun/theme-cyber/tokens.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ─── Reset + base ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: var(--body-font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ─── Mockup nav strip ─── */
+.mockup-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 7px 12px;
+  font-size: 11px;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  font-family: var(--mono-font);
+}
+.mockup-nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+.mockup-nav-label {
+  font-weight: 700;
+  color: var(--syn-fn);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  padding-right: 8px;
+  border-right: 1px solid var(--border-strong);
+  margin-right: 2px;
+  flex-shrink: 0;
+}
+.mockup-nav a {
+  color: var(--text-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+}
+.mockup-nav a:hover { color: var(--accent); border-color: var(--accent-soft); text-decoration: none; }
+.mockup-nav a.active { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.mockup-nav .nav-sep { color: var(--text-tertiary); flex-shrink: 0; }
+
+/* ─── Blinking cursor ─── */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cursor { display: inline-block; animation: blink 1.05s steps(1) infinite; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor { display: inline-block; opacity: 1; }
+}
+
+/* ─── Hero (shell-prompt masthead) ─── */
+.hero {
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 20px 28px;
+}
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.hero-prompt {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.prompt-user { color: var(--syn-fn); font-weight: 700; }
+.prompt-at { color: var(--text-muted); }
+.prompt-host { color: var(--syn-keyword); font-weight: 700; }
+.prompt-sep { color: var(--text-muted); }
+.prompt-path { color: var(--syn-string); }
+.prompt-dollar { color: var(--text-muted); margin: 0 6px; }
+.hero h1 {
+  font-family: var(--display-font);
+  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 700;
+  color: var(--hero-text);
+  letter-spacing: 0;
+  display: inline;
+}
+.hero .date {
+  font-size: 12px;
+  color: var(--syn-comment);
+  margin-top: 8px;
+}
+.hero .tagline {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  max-width: 680px;
+  line-height: 1.55;
+}
+
+/* ─── Site nav (shell-style inline) ─── */
+.site-nav {
+  display: flex;
+  gap: 0;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.site-nav-link {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px 4px 0;
+  text-decoration: none;
+  border-right: 1px solid var(--border-strong);
+  margin-right: 12px;
+}
+.site-nav-link:last-child { border-right: none; }
+.site-nav-link:hover { color: var(--accent); text-decoration: none; }
+.site-nav-link.active { color: var(--accent); }
+.site-nav-prefix { color: var(--text-tertiary); margin-right: 2px; }
+
+/* ─── TOC ─── */
+.toc {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+  overflow-x: auto;
+}
+.toc ul {
+  max-width: 1180px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 0;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+.toc li a {
+  display: block;
+  padding: 9px 14px;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-right: 1px solid var(--border);
+  text-decoration: none;
+}
+.toc li:first-child a { padding-left: 0; }
+.toc li a:hover { color: var(--accent); }
+
+/* ─── Main container ─── */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+/* ─── Section blocks ─── */
+.block { margin-bottom: 36px; }
+.block h2 {
+  font-family: var(--display-font);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--syn-keyword);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+/* section-icon in cyber = comment prefix */
+.block h2::before { content: "// "; color: var(--syn-comment); font-weight: 400; letter-spacing: 0; text-transform: none; }
+.section-icon { display: none; } /* replaced by comment prefix */
+.section-sub {
+  font-size: 11.5px;
+  color: var(--syn-comment);
+  margin-bottom: 12px;
+}
+
+/* ─── Cards grid ─── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.card:hover {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+/* ─── Fav star ─── */
+.fav-star {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-tertiary);
+  padding: 2px 4px;
+  line-height: 1;
+  transition: color 0.1s ease;
+}
+.fav-star:hover { color: var(--syn-string); }
+.fav-star[aria-pressed="true"] { color: var(--syn-string); }
+
+/* ─── Card title + content ─── */
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding-right: 24px;
+  margin-bottom: 6px;
+}
+.card-title a { color: var(--text); }
+.card-title a:hover { color: var(--link); text-decoration: none; }
+.card-summary {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.card-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 11px;
+}
+
+/* ─── Badge (source label — syntax-highlight style) ─── */
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--syn-fn);
+  background: var(--surface-3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 1px 6px;
+  font-family: var(--mono-font);
+}
+/* Source labels as code: badge wraps function-call style */
+.badge-aihot::before { content: "aihot("; color: var(--syn-fn); }
+.badge-aihot::after { content: ")"; color: var(--syn-fn); }
+.badge-openai::before { content: "openai("; color: var(--syn-fn); }
+.badge-openai::after { content: ")"; color: var(--syn-fn); }
+.badge-simon::before { content: "simon("; color: var(--syn-fn); }
+.badge-simon::after { content: ")"; color: var(--syn-fn); }
+.badge-inner { color: var(--syn-string); }
+
+.meta-time {
+  color: var(--syn-comment);
+  font-size: 11px;
+}
+
+/* ─── Editor's Cut (/* comment block */) ─── */
+.editors-cut {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: var(--surface-3);
+  border-left: 2px solid var(--syn-comment);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.ec-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--syn-comment);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.ec-label::before { content: "/* "; }
+.ec-label::after  { content: " */"; }
+.ec-body {
+  color: var(--syn-comment);
+  font-style: italic;
+}
+.ec-body::before { content: "/* "; color: var(--syn-comment); }
+.ec-body::after  { content: " */"; color: var(--syn-comment); }
+
+/* ─── Writing list (Simon / r/LocalLLaMA) ─── */
+.writing-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.writing-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: border-color 0.12s ease;
+}
+.writing-item:hover { border-color: var(--accent); }
+.writing-title {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+  padding-right: 28px;
+  line-height: 1.4;
+}
+.writing-title:hover { color: var(--link); text-decoration: none; }
+.writing-summary { margin: 5px 0 0; color: var(--text-muted); font-size: 12px; line-height: 1.5; }
+.writing-meta { margin-top: 7px; color: var(--syn-comment); font-size: 11px; display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* ─── Builder section ─── */
+.builder-group { margin-bottom: 14px; }
+.builder-group-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+.builder-group-title::before { content: "// "; color: var(--syn-comment); }
+.builder-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.builder-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: border-color 0.12s ease;
+}
+.builder-item:hover { border-color: var(--accent); }
+.builder-meta-top { font-size: 13px; }
+.builder-meta-top strong { font-weight: 700; color: var(--text); }
+.builder-meta-top .muted { color: var(--syn-comment); margin-left: 6px; font-size: 12px; }
+.builder-text { margin: 7px 0 0; font-size: 13px; line-height: 1.55; color: var(--text-muted); }
+.builder-meta { margin-top: 8px; color: var(--syn-comment); font-size: 11px; display: flex; gap: 10px; flex-wrap: wrap; }
+.builder-meta a { color: var(--link); font-size: 11px; }
+
+/* ─── GitHub cards ─── */
+.gh-owner { color: var(--text-muted); }
+.gh-slash { color: var(--text-tertiary); margin: 0 1px; }
+.gh-name { color: var(--syn-fn); font-weight: 700; }
+.gh-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 11.5px; color: var(--text-muted); margin-top: 8px; }
+.gh-lang { display: inline-flex; align-items: center; gap: 5px; }
+.gh-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+.stat { color: var(--syn-num); }
+.stat-today { color: var(--success); font-weight: 700; }
+
+/* ─── HuggingFace ─── */
+.hf-stats, .hf-tags { display: flex; gap: 8px; flex-wrap: wrap; font-size: 11.5px; color: var(--text-muted); margin-top: 6px; }
+.tag {
+  background: var(--surface-3);
+  padding: 1px 7px;
+  border-radius: var(--radius);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* ─── Subscribe section ─── */
+.subscribe-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 36px 20px 32px;
+  text-align: center;
+}
+.subscribe-section h2 {
+  font-family: var(--display-font);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--accent);
+}
+.subscribe-section h2::before { content: "$ "; color: var(--text-muted); }
+.subscribe-section .section-sub { color: var(--syn-comment); font-size: 12px; margin-bottom: 16px; }
+.subscribe-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.subscribe-form label { display: none; }
+.subscribe-form input {
+  background: var(--surface-3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--mono-font);
+  font-size: 13px;
+  padding: 8px 12px;
+  width: 240px;
+  outline: none;
+}
+.subscribe-form input:focus { border-color: var(--accent); }
+.subscribe-form input::placeholder { color: var(--text-tertiary); }
+
+/* ─── Buttons ─── */
+.btn-primary {
+  background: var(--accent);
+  color: #07080a;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  font-family: var(--mono-font);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+.btn-primary:hover { background: var(--accent-hover); }
+
+/* ─── Footer ─── */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 14px 20px;
+  font-size: 11.5px;
+  color: var(--syn-comment);
+  text-align: center;
+}
+.site-footer a { color: var(--link); }
+.site-footer a:hover { color: var(--link-hover); }
+.source-status { margin-top: 6px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; font-size: 11px; }
+.status-ok { color: var(--success); }
+</style>
+</head>
+<body>
+
+<!-- Mockup nav strip -->
+<nav class="mockup-nav" aria-label="Cyber theme pages">
+  <div class="mockup-nav-inner">
+    <span class="mockup-nav-label">theme: cyber</span>
+    <a href="home.html" class="active">~/today</a>
+    <span class="nav-sep">·</span>
+    <a href="favourites.html">~/favs</a>
+    <span class="nav-sep">·</span>
+    <a href="account.html">~/account</a>
+    <span class="nav-sep">·</span>
+    <a href="article.html">~/article</a>
+    <span class="nav-sep">·</span>
+    <a href="email-en.html">~/email</a>
+    <span class="nav-sep">·</span>
+    <a href="../comparison/index.html">cd ../comparison</a>
+  </div>
+</nav>
+
+<!-- Hero: shell-prompt masthead -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-prompt">
+      <span class="prompt-user">ai-digest</span>
+      <span class="prompt-at">@</span>
+      <span class="prompt-host">prod</span>
+      <span class="prompt-sep">:</span>
+      <span class="prompt-path">~/today</span>
+      <span class="prompt-dollar">$</span>
+      <h1>./run digest --date 2026-05-17<span class="cursor">▌</span></h1>
+    </div>
+    <p class="date">// 2026-05-17 · 07:00 AEST · BACKEND_LIVE=true</p>
+    <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, builder voices, r/LocalLLaMA, GitHub, HuggingFace, and Chinese AI media.</p>
+    <nav class="site-nav" aria-label="Site">
+      <a href="home.html" class="site-nav-link active"><span class="site-nav-prefix">~/</span>today</a>
+      <a href="favourites.html" class="site-nav-link"><span class="site-nav-prefix">~/</span>favs</a>
+      <a href="account.html" class="site-nav-link"><span class="site-nav-prefix">~/</span>account</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="#models">models</a></li>
+    <li><a href="#products">products</a></li>
+    <li><a href="#industry">industry</a></li>
+    <li><a href="#papers">research</a></li>
+    <li><a href="#labs">labs</a></li>
+    <li><a href="#writing">simon</a></li>
+    <li><a href="#builders">builders</a></li>
+    <li><a href="#llama">r/LocalLLaMA</a></li>
+    <li><a href="#trending">gh-trending</a></li>
+    <li><a href="#hf">huggingface</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <!-- Models -->
+  <section id="models" class="block">
+    <h2><span class="section-icon"></span>Model drops &amp; updates</h2>
+    <p class="section-sub">// Latest model launches, version bumps, and capability releases from the Chinese AI ecosystem (AIHOT).</p>
+    <div class="cards">
+
+      <article class="card" id="article-models-0" data-article-id="aihot-a3f12b8c">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-a3f12b8c">☆</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Claude 4.7 launches with 1M context window</a></h3>
+        <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window, available today on the API. Pricing matches the previous Opus tier.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">AIHOT</span></span>
+          <span class="meta-time">// 2h ago</span>
+        </div>
+        <!-- Editor's Cut as /* comment block */ -->
+        <aside class="editors-cut" data-testid="editors-cut" data-lang="en">
+          <span class="ec-label">Editor's Cut</span>
+          <p class="ec-body">A 1M context window matters less for "fits a novel" and more for "fits a codebase and still has room for tool output and conversation history." The pricing parity is the real signal — Anthropic is betting context length, not raw intelligence, will be the differentiator this cycle.</p>
+        </aside>
+      </article>
+
+      <article class="card" id="article-models-1" data-article-id="aihot-7c3e9d1a">
+        <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star" data-article-id="aihot-7c3e9d1a">★</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Qwen3-Omni released as open weights</a></h3>
+        <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">AIHOT</span></span>
+          <span class="meta-time">// 5h ago</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="block">
+    <h2><span class="section-icon"></span>Products &amp; applications</h2>
+    <p class="section-sub">// Consumer-facing and developer-facing product launches.</p>
+    <div class="cards">
+      <article class="card" id="article-products-0" data-article-id="aihot-b2d8e4f1">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-b2d8e4f1">☆</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Cursor ships agent mode for the JetBrains line</a></h3>
+        <p class="card-summary">After 18 months of VS Code-only releases, Cursor's agent mode lands in IntelliJ, WebStorm, and PyCharm.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">AIHOT</span></span>
+          <span class="meta-time">// 3h ago</span>
+        </div>
+      </article>
+      <article class="card" id="article-products-1" data-article-id="aihot-d4f1c7b2">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-d4f1c7b2">☆</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Perplexity launches paid Spaces for teams</a></h3>
+        <p class="card-summary">Shared research workspaces with team-wide context — first move into B2B for the search-first AI company.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">AIHOT</span></span>
+          <span class="meta-time">// 4h ago</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Industry -->
+  <section id="industry" class="block">
+    <h2><span class="section-icon"></span>Industry moves</h2>
+    <p class="section-sub">// Funding, hiring, regulation, partnerships.</p>
+    <div class="cards">
+      <article class="card" id="article-industry-0" data-article-id="aihot-9f4c2a8b">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-9f4c2a8b">☆</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Mistral raises $850M at $14B valuation</a></h3>
+        <p class="card-summary">Series C led by a16z values the French lab at roughly half OpenAI's last public round.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">AIHOT</span></span>
+          <span class="meta-time">// 6h ago</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="papers" class="block">
+    <h2><span class="section-icon"></span>Research highlights</h2>
+    <p class="section-sub">// Notable papers and technical writeups from the last 24 hours.</p>
+    <div class="cards">
+      <article class="card" id="article-papers-0" data-article-id="aihot-e1b7d3c9">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="aihot-e1b7d3c9">☆</button>
+        <h3 class="card-title"><a href="article.html" target="_blank" rel="noopener">Sparse Mixture-of-Routers: a 30% inference speedup with no quality loss</a></h3>
+        <p class="card-summary">DeepSeek + ETH Zürich paper proposing learned routing inside MoE layers instead of fixed top-k gating.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">AIHOT</span></span>
+          <span class="meta-time">// 8h ago</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Labs -->
+  <section id="labs" class="block">
+    <h2><span class="section-icon"></span>Lab announcements</h2>
+    <p class="section-sub">// Latest posts from OpenAI's blog. Anthropic surfaces via AIHOT above.</p>
+    <div class="cards">
+      <article class="card" id="article-labs-0" data-article-id="labs-44ae3b21">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="labs-44ae3b21">☆</button>
+        <h3 class="card-title"><a href="https://openai.com/blog/o4-mini-high-deprecation" target="_blank" rel="noopener">o4-mini-high deprecation timeline announced</a></h3>
+        <p class="card-summary">OpenAI plans to retire o4-mini-high on August 1, 2026 — three months earlier than the typical 6-month notice.</p>
+        <div class="card-meta">
+          <span class="badge"><span class="badge-inner">OpenAI</span></span>
+          <span class="meta-time">// 4h ago</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Simon Willison -->
+  <section id="writing" class="block">
+    <h2><span class="section-icon"></span>Simon Willison</h2>
+    <p class="section-sub">// Daily-ish AI commentary, tool-of-the-day posts, and link roundups.</p>
+    <ul class="writing-list">
+      <li class="writing-item" id="article-writing-0" data-article-id="builder-2f8c4e6a">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="builder-2f8c4e6a">☆</button>
+        <a class="writing-title" href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a>
+        <p class="writing-summary">Walks through a Tailscale + Firecracker setup so Claude Code can <code>rm -rf</code> whatever it wants and the host stays clean.</p>
+        <div class="writing-meta">
+          <span>simon_willison()</span>
+          <span>// 3h ago</span>
+        </div>
+      </li>
+      <li class="writing-item" id="article-writing-1" data-article-id="builder-8b2e1c5f">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="builder-8b2e1c5f">☆</button>
+        <a class="writing-title" href="https://simonwillison.net/2026/May/17/prompt-caching/" target="_blank" rel="noopener">Prompt caching strategies — a practical guide</a>
+        <p class="writing-summary">When to cache, when not to, and how to reason about the break-even point between cached tokens and rewrite-from-scratch.</p>
+        <div class="writing-meta">
+          <span>simon_willison()</span>
+          <span>// 6h ago</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Builder voices -->
+  <section id="builders" class="block">
+    <h2><span class="section-icon"></span>Builder voices</h2>
+    <p class="section-sub">// Recent posts from named AI builders via Follow Builders feeds.</p>
+    <div class="builder-group">
+      <h3 class="builder-group-title">X / Twitter</h3>
+      <ul class="builder-list">
+        <li class="builder-item" id="article-builders-x-0" data-article-id="follow-6b1d8f4e">
+          <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="follow-6b1d8f4e">☆</button>
+          <div class="builder-meta-top">
+            <strong>Andrej Karpathy</strong>
+            <span class="muted">// @karpathy</span>
+          </div>
+          <p class="builder-text">If you're not running your training jobs against a held-out eval that includes your last 30 days of production failures, you don't have an eval. You have a benchmark.</p>
+          <div class="builder-meta">
+            <span>♥ 4321</span>
+            <span>↻ 891</span>
+            <a href="https://x.com/karpathy" target="_blank" rel="noopener">open("x.com/karpathy") →</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- r/LocalLLaMA -->
+  <section id="llama" class="block">
+    <h2><span class="section-icon"></span>r/LocalLLaMA</h2>
+    <p class="section-sub">// Top of the day from the open-source LLM community — model drops, runtime benchmarks, quantization tricks.</p>
+    <ul class="writing-list">
+      <li class="writing-item" id="article-llama-0" data-article-id="llama-c7e2a9b3">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="llama-c7e2a9b3">☆</button>
+        <a class="writing-title" href="https://www.reddit.com/r/LocalLLaMA/" target="_blank" rel="noopener">Qwen3-Omni Q4_K_M GGUFs are up — 14GB, runs on a 16GB Mac</a>
+        <p class="writing-summary">Two-hour-old quantization from TheBloke's successor; community reports 18 tok/s on M2 Pro.</p>
+        <div class="writing-meta">
+          <span>r/LocalLLaMA</span>
+          <span>// u/the_qwen_guy</span>
+          <span>// 2h ago</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- GitHub Trending -->
+  <section id="trending" class="block">
+    <h2><span class="section-icon"></span>Trending on GitHub</h2>
+    <p class="section-sub">// Top trending repositories across all languages.</p>
+    <div class="cards">
+      <article class="card gh-card" id="article-trending-0" data-article-id="gh-9d4e1b7c">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="gh-9d4e1b7c">☆</button>
+        <h3 class="card-title">
+          <a href="https://github.com/microsoft/vscode-claude" target="_blank" rel="noopener">
+            <span class="gh-owner">microsoft</span><span class="gh-slash">/</span><span class="gh-name">vscode-claude</span>
+          </a>
+        </h3>
+        <p class="card-summary">First-party Claude Code integration for VS Code — agent mode, file system tools, no API key required.</p>
+        <div class="gh-meta">
+          <span class="gh-lang"><span class="gh-dot" style="background:#3178c6"></span>TypeScript</span>
+          <span class="stat">★ 12,847</span>
+          <span class="stat-today">+2,134 today</span>
+        </div>
+      </article>
+      <article class="card gh-card" id="article-trending-1" data-article-id="gh-1f3a8c2e">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="gh-1f3a8c2e">☆</button>
+        <h3 class="card-title">
+          <a href="https://github.com/QwenLM/Qwen3-Omni" target="_blank" rel="noopener">
+            <span class="gh-owner">QwenLM</span><span class="gh-slash">/</span><span class="gh-name">Qwen3-Omni</span>
+          </a>
+        </h3>
+        <p class="card-summary">Official inference code for the Qwen3-Omni omnimodal model.</p>
+        <div class="gh-meta">
+          <span class="gh-lang"><span class="gh-dot" style="background:#3572A5"></span>Python</span>
+          <span class="stat">★ 8,219</span>
+          <span class="stat-today">+1,402 today</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- HuggingFace -->
+  <section id="hf" class="block">
+    <h2><span class="section-icon"></span>HuggingFace</h2>
+    <p class="section-sub">// Open-weight models ranked by ♥ likes — closest stable proxy for trending.</p>
+    <div class="cards">
+      <article class="card hf-card" id="article-hf-0" data-article-id="hf-1a7b3c5d">
+        <button class="fav-star" type="button" aria-pressed="false" aria-label="Save article" data-testid="fav-star" data-article-id="hf-1a7b3c5d">☆</button>
+        <h3 class="card-title"><a href="https://huggingface.co/Qwen/Qwen3-Omni-30B" target="_blank" rel="noopener">Qwen/Qwen3-Omni-30B</a></h3>
+        <div class="hf-stats">
+          <span class="stat">♥ 3,421</span>
+          <span class="stat">↓ 89,234</span>
+          <span class="badge"><span class="badge-inner">any-to-any</span></span>
+        </div>
+        <div class="hf-tags">
+          <span class="tag">omnimodal</span>
+          <span class="tag">apache-2.0</span>
+          <span class="tag">qwen</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<section class="subscribe-section" data-backend-live="true" data-testid="subscribe-section">
+  <h2>subscribe --email &lt;you@example.com&gt;</h2>
+  <p class="section-sub">// One email per day at 07:00 Sydney. Bilingual support (EN / 中文). Unsubscribe any time.</p>
+  <form class="subscribe-form" data-testid="subscribe-form" data-form-state="idle" novalidate>
+    <label for="email-home">Your email</label>
+    <input id="email-home" name="email" type="email" placeholder="you@example.com" autocomplete="email" data-testid="subscribe-email-input">
+    <button type="submit" class="btn-primary" data-testid="subscribe-submit-btn">./subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div>// snapshot fetched 2026-05-17 07:00 UTC · <a href="https://github.com/rowland-dot/ai-daily-digest" target="_blank" rel="noopener">source on GitHub</a> · <a href="/feed.xml">atom feed</a></div>
+  <div class="source-status">
+    <span class="status-ok">aihot ✓</span>
+    <span class="status-ok">openai ✓</span>
+    <span class="status-ok">anthropic ✓</span>
+    <span class="status-ok">simon ✓</span>
+    <span class="status-ok">gh-trending ✓</span>
+    <span class="status-ok">huggingface ✓</span>
+    <span class="status-ok">r/localllama ✓</span>
+    <span class="status-ok">x-feed ✓</span>
+  </div>
+</footer>
+
+</body>
+</html>
