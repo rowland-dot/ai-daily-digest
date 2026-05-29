@@ -44,7 +44,7 @@
     }
     .mockup-nav a {
       color: var(--text-muted); padding: 4px 9px;
-      border-radius: 999px; font-weight: 500;
+      border-radius: var(--radius-full); font-weight: 500;
       text-decoration: none; flex-shrink: 0;
     }
     .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
@@ -55,110 +55,167 @@
       position: fixed; top: 48px; right: 14px; z-index: 10;
       display: inline-flex; gap: 0;
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 999px; padding: 3px; font-size: 12px;
+      border-radius: var(--radius-full); padding: 3px; font-size: 12px;
       box-shadow: var(--shadow); font-family: var(--mono-font);
     }
     .ts button {
       background: transparent; border: 0; color: var(--text-muted);
-      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      padding: 5px 11px; border-radius: var(--radius-full); cursor: pointer;
       font-family: inherit; font-size: inherit; font-weight: 500;
     }
     .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 
-    /* ── Hero band (Notion signature, article variant) ── */
-    header.hero {
-      background: var(--hero-bg);
-      color: var(--hero-text);
-      padding: 48px 24px 44px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before, .hero::after {
-      content: ""; position: absolute; border-radius: 50%;
-      filter: blur(40px); opacity: 0.32; pointer-events: none;
-    }
-    .hero::before { width: 180px; height: 180px; background: #5645d4; top: -50px; right: 15%; }
-    .hero::after { width: 150px; height: 150px; background: #2a9d99; bottom: -50px; left: 12%; }
-    .hero-inner { position: relative; z-index: 1; }
-    .hero-kicker {
-      display: inline-block; margin-bottom: 16px;
-      padding: 5px 14px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 999px;
-      font-family: var(--mono-font); font-size: 11px;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: rgba(255,255,255,0.85);
-    }
-    h1.hero-title {
-      font-family: var(--display-font);
-      font-size: clamp(26px, 4vw, 38px);
-      font-weight: 700; line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin: 0 0 14px; max-width: 720px;
-      margin-left: auto; margin-right: auto;
-      color: var(--hero-text);
-    }
-    .hero-date {
-      font-family: var(--mono-font); font-size: 12px;
-      color: var(--hero-muted); letter-spacing: 0.06em;
-    }
-    .site-nav {
-      display: inline-flex; gap: 4px; margin-top: 24px;
-      padding: 5px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 999px;
-    }
-    .site-nav a {
-      color: rgba(255,255,255,0.75);
-      font-size: 13px; font-weight: 500;
-      padding: 7px 16px; border-radius: 999px; text-decoration: none;
-    }
-    .site-nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
-    .site-nav a[data-current="true"] { color: #fff; background: var(--accent); }
-
-    /* ── Breadcrumb ── */
+    /* ── Top breadcrumb strip ── */
     nav.breadcrumb {
-      max-width: 760px; margin: 0 auto; padding: 14px 24px;
-      border-bottom: 1px solid var(--border);
-      font-family: var(--mono-font); font-size: 11px;
-      letter-spacing: 0.04em;
+      max-width: 760px; margin: 0 auto; padding: 18px 24px 0;
+      font-family: var(--body-font); font-size: 13px;
       color: var(--text-muted);
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     }
-    nav.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    nav.breadcrumb a { color: var(--text-muted); text-decoration: none; font-weight: 500; }
     nav.breadcrumb a:hover { color: var(--accent); }
+    nav.breadcrumb .sep { color: var(--text-tertiary); }
 
-    /* ── Article layout ── */
-    main { max-width: 760px; margin: 0 auto; padding: 36px 24px 80px; }
+    /* ── Article header (light, on canvas — like Notion docs) ── */
+    .article-header {
+      max-width: 760px; margin: 0 auto;
+      padding: 32px 24px 12px;
+    }
+    .badge-row {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .src-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      color: #fff;
+      line-height: 1.4;
+    }
+    .src-badge.aihot { background: #ff64c8; }
+    .src-badge.anthropic { background: #37352f; }
+    .src-badge.translation { background: #5645d4; }
+    .status-pill {
+      display: inline-flex; align-items: center;
+      padding: 2px 10px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .status-pill.breaking { background: var(--danger-bg); color: var(--danger); }
+    .status-pill.lang-zh { background: var(--accent-soft); color: var(--accent); }
 
-    /* Attribution block */
-    .translation-attribution {
-      display: flex; gap: 16px; flex-wrap: wrap;
-      padding: 14px 0; margin-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-      font-family: var(--mono-font); font-size: 11px;
-      letter-spacing: 0.04em;
+    h1.article-title {
+      font-family: var(--display-font);
+      font-size: var(--display-lg);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: var(--track-display);
+      margin: 0 0 18px;
+      color: var(--text);
+    }
+    .article-meta-row {
+      display: flex; gap: 18px; flex-wrap: wrap;
+      font-family: var(--body-font); font-size: 13px;
       color: var(--text-muted);
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
     }
-    .translation-attribution span { display: flex; gap: 6px; align-items: center; }
-    .translation-attribution strong { color: var(--accent); font-weight: 600; }
+    .article-meta-row strong { color: var(--text); font-weight: 600; }
 
-    /* CTA pill */
-    .translation-cta {
-      display: inline-flex; align-items: center; gap: 8px;
-      margin-bottom: 28px; padding: 11px 22px;
-      background: var(--accent); color: #fff;
+    /* ── Brand-navy CTA strip (Notion signature) ── */
+    .source-cta-strip {
+      max-width: 760px; margin: 28px auto 0;
+      padding: 0 24px;
+    }
+    .source-cta-strip-inner {
+      background: var(--hero-bg);
+      color: #fff;
+      padding: 20px 26px;
+      border-radius: var(--radius-lg);
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; flex-wrap: wrap;
+      position: relative; overflow: hidden;
+    }
+    .source-cta-strip-inner::before {
+      content: ""; position: absolute;
+      width: 12px; height: 12px; background: #ff64c8;
+      border-radius: 50%; top: 12px; left: 24%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .source-cta-strip-inner::after {
+      content: ""; position: absolute;
+      width: 10px; height: 10px; background: #f5d75e;
+      border-radius: 50%; bottom: 14px; right: 32%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .source-cta-text {
+      position: relative; z-index: 1;
+    }
+    .source-cta-kicker {
+      font-family: var(--mono-font);
+      font-size: var(--micro-uppercase);
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.78);
+      margin-bottom: 4px;
       font-weight: 600;
-      font-family: var(--body-font); font-size: 14px;
-      letter-spacing: 0;
-      text-decoration: none; border-radius: 999px;
-      transition: background 0.12s ease;
     }
-    .translation-cta:hover { background: var(--accent-hover); }
+    .source-cta-title {
+      font-family: var(--display-font);
+      font-size: 18px; font-weight: 700;
+      letter-spacing: var(--track-heading);
+      margin: 0;
+    }
+    .btn-on-dark {
+      background: #ffffff;
+      color: var(--text);
+      border: 0;
+      padding: 11px 20px;
+      border-radius: var(--radius);
+      font-family: var(--body-font);
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      position: relative; z-index: 1;
+      line-height: 1.3;
+    }
+    .btn-on-dark:hover { background: #f0eeec; }
 
-    /* Article body */
+    /* ── Article body ── */
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    /* Editor's note callout — LAVENDER feature */
+    .editors-note {
+      background: var(--tint-lavender);
+      color: var(--tint-lavender-bold);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    [data-theme="notion-dark"] .editors-note { color: var(--tint-lavender-bold); }
+    .editors-note .kicker {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--body-font);
+      font-size: var(--micro-uppercase); font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 3px 9px;
+      background: rgba(255,255,255,0.55);
+      border-radius: var(--radius-sm);
+      color: inherit;
+      margin-bottom: 10px;
+    }
+    [data-theme="notion-dark"] .editors-note .kicker { background: rgba(255,255,255,0.10); }
+    .editors-note p {
+      margin: 0; font-size: 15px; line-height: 1.65;
+      color: var(--text-charcoal); opacity: 0.92;
+    }
+    [data-theme="notion-dark"] .editors-note p { color: var(--tint-lavender-bold); opacity: 0.92; }
+
     .article-body p {
       font-size: 17px; line-height: 1.7;
       color: var(--text); margin: 0 0 22px;
@@ -167,33 +224,50 @@
     .article-body .continued {
       font-style: italic; color: var(--text-muted);
       border-top: 1px solid var(--border); padding-top: 20px; margin-top: 24px;
+      font-size: 15px;
     }
 
-    /* Source-original block — tinted cream callout (Notion vocabulary) */
+    /* Source-original block — CREAM feature card (Notion vocabulary) */
     .source-original {
-      margin-top: 36px; padding: 20px 22px;
+      margin-top: 40px; padding: 24px 26px;
       background: var(--tint-cream);
-      border-left: 3px solid var(--warning);
-      border-radius: var(--radius);
+      color: var(--tint-cream-bold);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
     }
-    [data-theme="notion-dark"] .source-original { background: var(--surface); }
-    .source-original h4 {
-      font-family: var(--mono-font); font-size: 11px;
-      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--warning); margin: 0 0 8px;
+    [data-theme="notion-dark"] .source-original { color: var(--tint-cream-bold); }
+    .source-original .kicker {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--body-font); font-size: var(--micro-uppercase);
+      font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 3px 9px;
+      background: rgba(255,255,255,0.55);
+      border-radius: var(--radius-sm);
+      color: inherit;
+      margin-bottom: 10px;
+    }
+    [data-theme="notion-dark"] .source-original .kicker { background: rgba(255,255,255,0.10); }
+    .source-original h3 {
+      font-family: var(--display-font); font-size: 18px;
+      font-weight: 700; margin: 0 0 8px;
+      letter-spacing: var(--track-heading);
+      color: inherit;
     }
     .source-original p {
-      font-size: 14px; color: var(--text-muted); margin: 0;
-      line-height: 1.6;
+      font-size: 14px; color: var(--text-charcoal);
+      opacity: 0.85; margin: 0;
+      line-height: 1.65;
     }
-    .source-original a { color: var(--link); font-weight: 500; }
-    .source-original a:hover { color: var(--link-hover); }
+    [data-theme="notion-dark"] .source-original p { color: var(--tint-cream-bold); opacity: 0.85; }
+    .source-original a { color: var(--accent); font-weight: 600; }
+    .source-original a:hover { color: var(--accent-hover); }
 
     /* Back bar */
     .back-bar {
       margin-top: 40px; padding-top: 24px;
       border-top: 1px solid var(--border);
       font-family: var(--body-font); font-size: 14px;
+      display: flex; gap: 16px; flex-wrap: wrap;
     }
     .back-bar a { color: var(--accent); text-decoration: none; font-weight: 600; }
     .back-bar a:hover { color: var(--accent-hover); }
@@ -228,37 +302,54 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-inner">
-      <span class="hero-kicker">AI Daily Digest · EN Translation · AIHOT source</span>
-      <h1 class="hero-title">Claude 4.7 launches with 1M context window</h1>
-      <div class="hero-date">Originally published 2026-05-17 · Beijing time · Translated excerpt</div>
-      <nav class="site-nav" aria-label="Site">
-        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html" data-current="false">Daily digest</a>
-        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html" data-current="false">★ Favourites</a>
-        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html" data-current="false">Account</a>
-      </nav>
-    </div>
-  </header>
-
+  <!-- Breadcrumb -->
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">← Today's digest</a>
-    &nbsp;/&nbsp; Model drops &nbsp;/&nbsp; Article
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">AI Daily Digest</a>
+    <span class="sep">/</span>
+    <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html#models">Model drops</a>
+    <span class="sep">/</span>
+    <span>Article</span>
   </nav>
+
+  <!-- Article header -->
+  <div class="article-header">
+    <div class="badge-row">
+      <span class="src-badge anthropic">Anthropic</span>
+      <span class="src-badge aihot">AIHOT</span>
+      <span class="src-badge translation">EN Translation</span>
+      <span class="status-pill breaking">Breaking</span>
+      <span class="status-pill lang-zh">Originally 中文</span>
+    </div>
+    <h1 class="article-title">Claude 4.7 launches with 1M context window</h1>
+    <div class="article-meta-row">
+      <span><strong>Published</strong> 2026-05-17</span>
+      <span><strong>Source</strong> AIHOT</span>
+      <span><strong>Language</strong> 中文 (Chinese)</span>
+      <span><strong>Translation</strong> 3-paragraph excerpt</span>
+    </div>
+  </div>
+
+  <!-- Brand-navy CTA strip — Notion signature -->
+  <div class="source-cta-strip">
+    <div class="source-cta-strip-inner">
+      <div class="source-cta-text">
+        <div class="source-cta-kicker">Read in original language</div>
+        <p class="source-cta-title">Full article on AIHOT (中文)</p>
+      </div>
+      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="btn-on-dark" data-testid="read-original-cta">
+        Read original (中文) →
+      </a>
+    </div>
+  </div>
 
   <main>
     <article data-testid="translation-article">
 
-      <div class="translation-attribution">
-        <span><strong>Source</strong> AIHOT</span>
-        <span><strong>Published</strong> 2026-05-17</span>
-        <span><strong>Language</strong> 中文 (Chinese)</span>
-        <span><strong>Type</strong> EN translation excerpt</span>
+      <!-- Editor's note callout — LAVENDER -->
+      <div class="editors-note">
+        <span class="kicker">★ Editor's note</span>
+        <p>This is a 3-paragraph English excerpt of the original Chinese article. The Editor's Cut on today's digest sits below — the full piece is on AIHOT.</p>
       </div>
-
-      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta">
-        Read original (中文) →
-      </a>
 
       <div class="article-body">
         <p>Anthropic today shipped Claude 4.7, the first frontier-tier model with a 1 million-token context window available to all API users from day one. The launch matches the announcement made at Anthropic's developer day last week but arrives two weeks ahead of the projected release date. Pricing remains identical to the previous Opus tier: $15 per million input tokens and $75 per million output tokens, with prompt-caching discounts unchanged.</p>
@@ -270,18 +361,16 @@
         <p class="continued">… continued in the original article →</p>
       </div>
 
-      <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener" class="translation-cta" data-testid="read-original-cta-bottom" style="margin-top: 24px;">
-        Read original (中文) →
-      </a>
-
-      <!-- Chinese original block -->
+      <!-- Chinese original block — CREAM feature -->
       <div class="source-original">
-        <h4>About this translation</h4>
+        <span class="kicker">📄 About this translation</span>
+        <h3>This is a 3-paragraph excerpt</h3>
         <p>This is a 3-paragraph English excerpt of the original Chinese-language article published by AIHOT. The excerpt is machine-translated and lightly edited for fluency. The original article contains additional analysis and industry commentary not included here. <a href="https://www.aihot.com/articles/claude-4-7-launch" target="_blank" rel="noopener">Read the full piece in 中文 →</a></p>
       </div>
 
       <div class="back-bar">
         <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">← Back to today's digest</a>
+        <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html">★ Save to favourites</a>
       </div>
 
     </article>

@@ -1,19 +1,14 @@
-/* Notion theme
+/* Notion theme — iteration 2
  * Aesthetic stance: Confident, illustration-rich productivity brand.
- * Signature brand-navy hero band with white text, purple primary CTA,
- * Inter (Notion Sans surrogate) across every surface, warm off-white
- * canvas with pastel-tinted feature cards. Light is default; dark
- * inverts via the brand-navy spectrum.
- *
- * Token names mirror scripts/render-site.mjs PAGE_CSS so the renderer
- * can swap themes by swapping this file.
+ * Signature brand-navy hero band with scattered pastel dots, BOLD
+ * pastel feature cards with colored headings, vivid colored
+ * source/category badges (not gray), 8px-rounded buttons (NOT pills),
+ * and a generous display-type hierarchy reaching 72px on the masthead.
  *
  * Source: DESIGN.md (Notion-design-analysis, alpha) at repo root.
- * Brand purple primary: #5645d4 (light) / #7b3ff2 (dark).
- * Hero band: brand-navy #0a1530 in both modes (Notion's signature treatment).
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 [data-theme="notion-light"] {
   --bg: #ffffff;                                  /* canvas */
@@ -21,81 +16,184 @@
   --surface-2: #fafaf9;                           /* surface-soft */
   --surface-3: #f0eeec;                           /* card-tint-gray */
   --text: #1a1a1a;                                /* ink */
+  --text-charcoal: #37352f;                       /* Notion's warm charcoal */
   --text-muted: #5d5b54;                          /* slate */
   --text-tertiary: #787671;                       /* steel */
   --border: #e5e3df;                              /* hairline */
+  --border-soft: #ede9e4;                         /* hairline-soft */
   --border-strong: #c8c4be;                       /* hairline-strong */
   --accent: #5645d4;                              /* primary purple */
   --accent-hover: #4534b3;                        /* primary-pressed */
+  --accent-deep: #3a2a99;                         /* primary-deep */
   --accent-soft: rgba(86, 69, 212, 0.10);
   --link: #0075de;                                /* link-blue */
   --link-hover: #005bab;                          /* link-blue-pressed */
-  --shadow: 0 1px 2px rgba(15,15,15,0.04), 0 4px 12px rgba(15,15,15,0.06);
+
+  /* Shadow scale */
+  --shadow-sm: 0 1px 2px rgba(15,15,15,0.04);
+  --shadow: 0 1px 2px rgba(15,15,15,0.04), 0 4px 12px rgba(15,15,15,0.08);
+  --shadow-lg: 0 4px 16px rgba(15,15,15,0.10), 0 24px 48px -8px rgba(15,15,15,0.20);
+
+  /* Typography */
   --display-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
   --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
   --mono-font: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
-  --tracking-tight: -0.015em;
-  --hero-bg: linear-gradient(180deg, #0a1530 0%, #070f24 100%);
-  --hero-text: #ffffff;                           /* on-dark */
-  --hero-muted: #a4a097;                          /* on-dark-muted */
-  --hero-accent: #5645d4;
-  --radius: 6px;                                  /* rounded.sm */
-  --radius-lg: 10px;                              /* mid-way between md and lg */
-  --danger: #e03131;                              /* semantic-error */
-  --danger-bg: rgba(224, 49, 49, 0.08);
-  --success: #1aae39;                             /* semantic-success */
-  --success-bg: rgba(26, 174, 57, 0.10);
-  --warning: #dd5b00;                             /* brand-orange */
 
-  /* Card pastel tints — Notion signature */
-  --tint-peach: #ffe8d4;
-  --tint-rose: #fde0ec;
-  --tint-mint: #d9f3e1;
-  --tint-lavender: #e6e0f5;
-  --tint-sky: #dcecfa;
-  --tint-yellow: #fef7d6;
-  --tint-cream: #f8f5e8;
+  /* Type scale — Notion is generous on display */
+  --display-hero: clamp(48px, 8vw, 72px);         /* masthead */
+  --display-lg: clamp(36px, 5vw, 48px);           /* page h1 */
+  --display-md: clamp(28px, 3.4vw, 36px);         /* section h2 */
+  --display-sm: 24px;                             /* card title prominent */
+  --heading-md: 20px;
+  --heading-sm: 18px;
+  --body-lg: 17px;
+  --body: 16px;
+  --body-sm: 14px;
+  --caption: 13px;
+  --micro: 12px;
+  --micro-uppercase: 11px;
+
+  --track-hero: -0.035em;                         /* tight on display */
+  --track-display: -0.02em;
+  --track-heading: -0.012em;
+  --tracking-tight: -0.015em;
+
+  /* Hero band — Notion signature brand-navy */
+  --hero-bg: #0a1530;
+  --hero-bg-deep: #070f24;
+  --hero-bg-mid: #1a2a52;
+  --hero-text: #ffffff;
+  --hero-muted: #d9d6cf;
+  --hero-on-dark-muted: #a4a097;
+
+  /* Border radius — Notion uses 8px on buttons, 12px on cards */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 8px;                                  /* buttons, inputs */
+  --radius-md: 10px;
+  --radius-lg: 12px;                              /* cards */
+  --radius-xl: 16px;
+  --radius-xxl: 20px;
+  --radius-full: 9999px;
+
+  /* Semantic */
+  --danger: #e03131;
+  --danger-bg: rgba(224, 49, 49, 0.08);
+  --success: #1aae39;
+  --success-bg: rgba(26, 174, 57, 0.10);
+  --warning: #dd5b00;
+  --warning-bg: rgba(221, 91, 0, 0.10);
+
+  /* ── Card pastel tints — Notion signature ── */
+  --tint-peach: #ffe8d4;       --tint-peach-bold: #793400;
+  --tint-rose: #fde0ec;        --tint-rose-bold: #a02e6d;
+  --tint-mint: #d9f3e1;        --tint-mint-bold: #0e7a2a;
+  --tint-lavender: #e6e0f5;    --tint-lavender-bold: #391c57;
+  --tint-sky: #dcecfa;         --tint-sky-bold: #005bab;
+  --tint-yellow: #fef7d6;      --tint-yellow-bold: #93730a;
+  --tint-yellow-bold-bg: #f9e79f;  /* high-emphasis banner */
+  --tint-cream: #f8f5e8;       --tint-cream-bold: #523410;
+  --tint-gray: #f0eeec;        --tint-gray-bold: #37352f;
+
+  /* ── Brand color spectrum — for vivid status badges ── */
+  --brand-pink: #ff64c8;       --brand-pink-deep: #a02e6d;
+  --brand-orange: #dd5b00;     --brand-orange-deep: #793400;
+  --brand-purple: #7b3ff2;     --brand-purple-deep: #391c57;
+  --brand-purple-300: #d6b6f6;
+  --brand-teal: #2a9d99;
+  --brand-green: #1aae39;
+  --brand-yellow: #f5d75e;
+  --brand-brown: #523410;
+  --brand-charcoal: #37352f;
 }
 
 [data-theme="notion-dark"] {
   --bg: #0a1530;                                  /* brand-navy */
   --surface: #1a2a52;                             /* brand-navy-mid */
-  --surface-2: #213262;                           /* derived elevated */
-  --surface-3: #2a3a72;                           /* derived strong */
-  --text: #ffffff;                                /* on-dark */
-  --text-muted: #a4a097;                          /* stone */
-  --text-tertiary: #787671;                       /* steel */
-  --border: #213262;                              /* derived */
-  --border-strong: #2a3a72;                       /* derived */
-  --accent: #7b3ff2;                              /* brand-purple — brighter on dark */
+  --surface-2: #213262;                           /* derived */
+  --surface-3: #2a3a72;                           /* derived */
+  --text: #ffffff;
+  --text-charcoal: #e8e6e0;
+  --text-muted: #a4a097;
+  --text-tertiary: #787671;
+  --border: #213262;
+  --border-soft: #1a2a52;
+  --border-strong: #2a3a72;
+  --accent: #7b3ff2;                              /* brand-purple brighter on dark */
   --accent-hover: #9056ff;
-  --accent-soft: rgba(123, 63, 242, 0.15);
+  --accent-deep: #5645d4;
+  --accent-soft: rgba(123, 63, 242, 0.18);
   --link: #5ba8ff;
   --link-hover: #8bc4ff;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
   --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.35), 0 24px 48px -8px rgba(0,0,0,0.50);
+
   --display-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
   --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
   --mono-font: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  --display-hero: clamp(48px, 8vw, 72px);
+  --display-lg: clamp(36px, 5vw, 48px);
+  --display-md: clamp(28px, 3.4vw, 36px);
+  --display-sm: 24px;
+  --heading-md: 20px;
+  --heading-sm: 18px;
+  --body-lg: 17px;
+  --body: 16px;
+  --body-sm: 14px;
+  --caption: 13px;
+  --micro: 12px;
+  --micro-uppercase: 11px;
+
+  --track-hero: -0.035em;
+  --track-display: -0.02em;
+  --track-heading: -0.012em;
   --tracking-tight: -0.015em;
-  --hero-bg: linear-gradient(180deg, #070f24 0%, #0a1530 100%);
+
+  --hero-bg: #070f24;
+  --hero-bg-deep: #050a18;
+  --hero-bg-mid: #1a2a52;
   --hero-text: #ffffff;
-  --hero-muted: #a4a097;
-  --hero-accent: #7b3ff2;
-  --radius: 6px;
-  --radius-lg: 10px;
+  --hero-muted: #c6c1b8;
+  --hero-on-dark-muted: #a4a097;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-xxl: 20px;
+  --radius-full: 9999px;
+
   --danger: #ff6b6b;
   --danger-bg: rgba(255, 107, 107, 0.12);
   --success: #51d36a;
   --success-bg: rgba(81, 211, 106, 0.12);
   --warning: #ffa45c;
+  --warning-bg: rgba(255, 164, 92, 0.12);
 
-  /* Card pastel tints — desaturated for dark mode (kept as identifiable
-     hue family but darkened so type-on-tint still meets contrast) */
-  --tint-peach: #3a2818;
-  --tint-rose: #3a1f2b;
-  --tint-mint: #15331e;
-  --tint-lavender: #2a234a;
-  --tint-sky: #1b2e44;
-  --tint-yellow: #353018;
-  --tint-cream: #2c2a1f;
+  /* Pastel tints darkened for dark mode while keeping hue family.
+     Type-on-tint flips to lightened bold variant. */
+  --tint-peach: #4a2f1a;       --tint-peach-bold: #ffd5a8;
+  --tint-rose: #4a2436;        --tint-rose-bold: #ffb1d8;
+  --tint-mint: #18402a;        --tint-mint-bold: #7fdf99;
+  --tint-lavender: #2d2657;    --tint-lavender-bold: #c6b0f5;
+  --tint-sky: #1e3550;         --tint-sky-bold: #9ac8ec;
+  --tint-yellow: #3d361b;      --tint-yellow-bold: #f5d75e;
+  --tint-yellow-bold-bg: #5a4a1a;
+  --tint-cream: #2c2a1f;       --tint-cream-bold: #e9d7a8;
+  --tint-gray: #2a2a28;        --tint-gray-bold: #d6d3ce;
+
+  --brand-pink: #ff64c8;       --brand-pink-deep: #ffb1d8;
+  --brand-orange: #ff8a3d;     --brand-orange-deep: #ffd5a8;
+  --brand-purple: #9d6cff;     --brand-purple-deep: #c6b0f5;
+  --brand-purple-300: #d6b6f6;
+  --brand-teal: #4dc3bf;
+  --brand-green: #51d36a;
+  --brand-yellow: #f5d75e;
+  --brand-brown: #d6b893;
+  --brand-charcoal: #e8e6e0;
 }

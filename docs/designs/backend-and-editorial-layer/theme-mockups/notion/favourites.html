@@ -39,7 +39,7 @@
     }
     .mockup-nav a {
       color: var(--text-muted); padding: 4px 9px;
-      border-radius: 999px; font-weight: 500;
+      border-radius: var(--radius-full); font-weight: 500;
       text-decoration: none; flex-shrink: 0;
     }
     .mockup-nav a:hover { background: var(--accent-soft); color: var(--text); }
@@ -50,161 +50,274 @@
       position: fixed; top: 48px; right: 14px; z-index: 10;
       display: inline-flex; gap: 0;
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 999px; padding: 3px; font-size: 12px;
+      border-radius: var(--radius-full); padding: 3px; font-size: 12px;
       box-shadow: var(--shadow); font-family: var(--mono-font);
     }
     .ts button {
       background: transparent; border: 0; color: var(--text-muted);
-      padding: 5px 11px; border-radius: 999px; cursor: pointer;
+      padding: 5px 11px; border-radius: var(--radius-full); cursor: pointer;
       font-family: inherit; font-size: inherit; font-weight: 500;
     }
     .ts button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 
-    /* ── Hero (compact brand-navy) ── */
+    /* ── Masthead ── */
+    .masthead {
+      max-width: 880px; margin: 0 auto;
+      padding: 48px 32px 24px;
+    }
+    .masthead .issue-line {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 14px;
+      font-family: var(--mono-font);
+      font-size: var(--micro-uppercase);
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--text-tertiary);
+      font-weight: 600;
+    }
+    .masthead-pre {
+      font-family: var(--body-font);
+      font-size: var(--body-sm);
+      color: var(--text-muted);
+      font-weight: 500;
+      margin: 0 0 8px;
+      letter-spacing: 0.02em;
+    }
+    .masthead h1 {
+      font-family: var(--display-font);
+      font-size: var(--display-lg);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: var(--track-display);
+      margin: 0 0 8px;
+      color: var(--text);
+    }
+    .masthead-sub {
+      font-size: var(--body-lg);
+      color: var(--text-muted);
+      margin: 0;
+      max-width: 520px;
+    }
+    @media (max-width: 640px) { .masthead { padding: 32px 20px 16px; } }
+
+    /* ── Hero band (compact) ── */
+    .hero-wrap { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+    @media (max-width: 640px) { .hero-wrap { padding: 0 16px; } }
     header.hero {
       background: var(--hero-bg);
       color: var(--hero-text);
-      padding: 44px 24px 36px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+      padding: 28px 36px;
+      border-radius: var(--radius-xl);
+      position: relative; overflow: hidden;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; flex-wrap: wrap;
     }
-    .hero::before {
-      content: ""; position: absolute;
-      width: 160px; height: 160px;
-      background: #7b3ff2; top: -40px; right: 12%;
-      border-radius: 50%; filter: blur(40px); opacity: 0.35;
+    .hero-dot {
+      position: absolute; border-radius: 50%;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
       pointer-events: none;
     }
-    .hero-inner { position: relative; z-index: 1; }
-    .hero-kicker {
-      display: inline-block; margin-bottom: 14px;
-      padding: 5px 12px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 999px;
-      font-family: var(--mono-font); font-size: 11px;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: rgba(255,255,255,0.85);
+    .hero-dot.d1 { width: 14px; height: 14px; background: #ff64c8; top: 18px; left: 12%; }
+    .hero-dot.d2 { width: 10px; height: 10px; background: #f5d75e; top: 40px; left: 22%; }
+    .hero-dot.d3 { width: 16px; height: 16px; background: #d9f3e1; bottom: 20px; right: 28%; }
+    .hero-stats {
+      display: flex; gap: 22px;
+      position: relative; z-index: 1;
     }
-    h1.hero-title {
+    .hero-stat-num {
       font-family: var(--display-font);
-      font-size: clamp(32px, 5vw, 44px);
-      font-weight: 700; line-height: 1.05;
-      letter-spacing: -0.025em;
-      margin: 0 0 10px;
-      color: var(--hero-text);
+      font-size: 32px; font-weight: 700;
+      line-height: 1; color: #fff;
+      letter-spacing: var(--track-display);
     }
-    .hero-date {
-      font-family: var(--mono-font); font-size: 13px;
-      color: var(--hero-muted); letter-spacing: 0.06em;
-    }
-    .hero-tag {
-      max-width: 520px; margin: 14px auto 0;
-      font-size: 15px;
-      color: rgba(255,255,255,0.78);
-      line-height: 1.55;
+    .hero-stat-label {
+      font-family: var(--mono-font);
+      font-size: var(--micro-uppercase);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--hero-muted);
+      margin-top: 4px;
     }
     .site-nav {
-      display: inline-flex; gap: 4px; margin-top: 24px;
+      display: inline-flex; gap: 4px;
       padding: 5px;
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 999px;
+      border-radius: var(--radius-full);
+      position: relative; z-index: 1;
     }
     .site-nav a {
-      color: rgba(255,255,255,0.75);
+      color: rgba(255,255,255,0.78);
       font-size: 13px; font-weight: 500;
-      padding: 7px 16px; border-radius: 999px;
+      padding: 7px 16px; border-radius: var(--radius-full);
       text-decoration: none;
     }
     .site-nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
     .site-nav a[data-current="true"] { color: #fff; background: var(--accent); }
 
     /* ── Main ── */
-    main { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+    main { max-width: 880px; margin: 0 auto; padding: 40px 32px 80px; }
+    @media (max-width: 640px) { main { padding: 28px 16px 60px; } }
 
-    /* ── Sync prompt (Cloudflare-live, anonymous) ── */
+    /* ── Sync prompt — LAVENDER feature card ── */
     .sync-prompt {
       display: flex; align-items: center; justify-content: space-between;
-      gap: 16px;
+      gap: 18px;
       background: var(--tint-lavender);
+      color: var(--tint-lavender-bold);
       border-radius: var(--radius-lg);
-      padding: 20px 22px; margin-bottom: 36px;
+      padding: 22px 26px; margin-bottom: 36px;
+      box-shadow: var(--shadow-sm);
     }
-    [data-theme="notion-dark"] .sync-prompt { background: var(--surface); border: 1px solid var(--border); }
+    [data-theme="notion-dark"] .sync-prompt { color: var(--tint-lavender-bold); }
     @media (max-width: 540px) { .sync-prompt { flex-direction: column; align-items: flex-start; } }
-    .sp-title {
-      font-family: var(--display-font); font-size: 17px;
-      font-weight: 600; margin: 0 0 4px;
-      color: var(--text); letter-spacing: -0.01em;
+    .sp-kicker {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--body-font);
+      font-size: var(--micro-uppercase); font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      margin-bottom: 8px;
+      padding: 3px 9px;
+      background: rgba(255,255,255,0.55);
+      border-radius: var(--radius-sm);
+      color: inherit;
     }
-    .sp-sub { margin: 0; font-size: 14px; color: var(--text-muted); }
-    .btn-primary-pill {
+    [data-theme="notion-dark"] .sp-kicker { background: rgba(255,255,255,0.10); }
+    .sp-title {
+      font-family: var(--display-font); font-size: 20px;
+      font-weight: 700; margin: 0 0 6px;
+      color: inherit; letter-spacing: var(--track-heading);
+    }
+    .sp-sub { margin: 0; font-size: 14px; color: var(--text-charcoal); opacity: 0.78; }
+    [data-theme="notion-dark"] .sp-sub { color: var(--tint-lavender-bold); opacity: 0.78; }
+    .btn-primary {
       flex-shrink: 0;
-      padding: 11px 22px;
-      background: var(--accent); color: #fff;
+      padding: 11px 20px;
+      background: var(--brand-purple); color: #fff;
       border: 0;
       font-family: var(--body-font); font-size: 14px;
       font-weight: 600;
-      cursor: pointer; border-radius: 999px;
+      cursor: pointer; border-radius: var(--radius);
       text-decoration: none;
+      line-height: 1.3;
     }
-    .btn-primary-pill:hover { background: var(--accent-hover); }
+    .btn-primary:hover { background: var(--accent-hover); }
 
     /* ── Section head ── */
-    h2.section-head {
-      font-family: var(--display-font); font-size: 26px;
-      font-weight: 700; letter-spacing: -0.015em;
-      margin: 0 0 4px;
+    h3.section-head {
+      font-family: var(--display-font);
+      font-size: var(--display-md);
+      font-weight: 700; letter-spacing: var(--track-display);
+      margin: 0 0 6px;
       color: var(--text);
+      display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
     }
-    .section-sub { font-size: 14px; color: var(--text-muted); margin: 4px 0 22px; }
-
-    /* ── Saved cards (list layout) ── */
-    article.card {
+    .count-pill {
       background: var(--surface);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 12px; font-weight: 600;
+    }
+    .section-sub { font-size: var(--body); color: var(--text-muted); margin: 4px 0 22px; }
+
+    /* ── Saved cards (list layout, top one gets feature treatment) ── */
+    article.card {
+      background: var(--bg);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 18px 20px;
+      padding: 20px 22px;
       margin-bottom: 14px;
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow-sm);
       position: relative;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
     }
     article.card:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(15,15,15,0.05), 0 8px 20px rgba(15,15,15,0.08);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      border-color: var(--border-strong);
     }
+    article.card.feature {
+      border: 0;
+      padding: 24px 26px;
+    }
+    article.card.feature.peach { background: var(--tint-peach); color: var(--tint-peach-bold); }
+    article.card.feature.peach .card-summary { color: var(--text-charcoal); opacity: 0.85; }
+    [data-theme="notion-dark"] article.card.feature.peach .card-summary { color: var(--tint-peach-bold); opacity: 0.80; }
+    article.card.feature h4.card-title { font-size: 20px; font-weight: 700; }
+    article.card.feature h4.card-title a { color: inherit; }
+
     .card-meta {
-      font-family: var(--mono-font); font-size: 11px;
-      color: var(--text-tertiary); margin-bottom: 8px;
+      margin-bottom: 10px;
       display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
     }
-    .src-chip {
-      background: var(--accent-soft); color: var(--accent);
-      padding: 2px 8px; border-radius: var(--radius);
-      font-family: var(--body-font); font-size: 11px;
-      font-weight: 600; letter-spacing: 0;
+    .meta-time {
+      font-family: var(--mono-font);
+      font-size: var(--micro);
+      color: var(--text-tertiary);
     }
-    .meta-time { color: var(--text-tertiary); }
-    h3.card-title {
+    article.card.feature .meta-time { color: inherit; opacity: 0.7; }
+
+    /* Vivid colored source badges */
+    .src-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      color: #fff;
+      line-height: 1.4;
+    }
+    .src-badge.aihot { background: #ff64c8; }
+    .src-badge.anthropic { background: #37352f; }
+    .src-badge.openai { background: #1aae39; }
+    .src-badge.github { background: #5d5b54; }
+    .src-badge.alibaba { background: #dd5b00; }
+    .src-badge.builder { background: #523410; }
+    .src-badge.simonw { background: #2a9d99; }
+
+    .status-pill {
+      display: inline-flex; align-items: center;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-family: var(--body-font);
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .status-pill.saved { background: var(--accent-soft); color: var(--accent); }
+
+    h4.card-title {
       font-family: var(--display-font); font-size: 18px;
       font-weight: 600; line-height: 1.3;
-      margin: 0 0 8px; letter-spacing: -0.01em;
+      margin: 0 0 8px; letter-spacing: var(--track-heading);
     }
-    h3.card-title a { color: var(--text); text-decoration: none; }
-    h3.card-title a:hover { color: var(--accent); }
-    .card-summary { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+    h4.card-title a { color: var(--text); text-decoration: none; }
+    h4.card-title a:hover { color: var(--accent); }
+    .card-summary { font-size: var(--body-sm); color: var(--text-muted); line-height: 1.55; margin: 0; }
 
     .fav-star {
       position: absolute; top: 16px; right: 16px;
       background: none; border: 0;
       color: var(--accent); font-size: 18px;
       cursor: pointer; padding: 4px;
-      border-radius: var(--radius);
+      border-radius: var(--radius-sm);
+      line-height: 1;
     }
     .fav-star:hover { background: var(--accent-soft); }
+    article.card.feature .fav-star { color: inherit; opacity: 0.7; }
+    article.card.feature .fav-star[aria-pressed="true"] { opacity: 1; }
+    article.card.feature .fav-star:hover { background: rgba(255,255,255,0.4); opacity: 1; }
+
+    /* Empty state look — small note at bottom */
+    .empty-note {
+      text-align: center; margin-top: 32px;
+      padding: 24px;
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .empty-note a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
     /* ── Footer ── */
     footer {
@@ -234,73 +347,104 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-inner">
-      <span class="hero-kicker">AI Daily Digest · Saved Articles</span>
-      <h1 class="hero-title">★ Favourites</h1>
-      <div class="hero-date">3 saved articles · this device only</div>
-      <p class="hero-tag">Articles you starred on today's digest. Save them across devices by linking to your email.</p>
+  <!-- Masthead -->
+  <div class="masthead">
+    <div class="issue-line"><span>AI Daily Digest · Saved articles</span></div>
+    <p class="masthead-pre">Your saved reading list</p>
+    <h1>★ Favourites</h1>
+    <p class="masthead-sub">Articles you starred while reading today's digest. They live in this browser by default — link them to your email to sync across devices.</p>
+  </div>
+
+  <!-- Compact hero band with stats -->
+  <div class="hero-wrap">
+    <header class="hero">
+      <span class="hero-dot d1"></span>
+      <span class="hero-dot d2"></span>
+      <span class="hero-dot d3"></span>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">3</div>
+          <div class="hero-stat-label">Saved</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">1</div>
+          <div class="hero-stat-label">This device</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">0</div>
+          <div class="hero-stat-label">Synced</div>
+        </div>
+      </div>
       <nav class="site-nav" aria-label="Site">
         <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html" data-current="false">Daily digest</a>
         <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/favourites.html" data-current="true" aria-current="page">★ Favourites</a>
         <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/account.html" data-current="false">Account</a>
       </nav>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <main>
 
-    <!-- Sync prompt — Cloudflare-live, anonymous state (D5) -->
+    <!-- Sync prompt — LAVENDER feature card -->
     <div class="sync-prompt" data-state="collapsed" data-testid="sync-prompt">
       <div>
+        <span class="sp-kicker">★ Cross-device sync</span>
         <p class="sp-title">Save these across devices</p>
         <p class="sp-sub">Link them to your subscription email so they follow you to your phone and laptop.</p>
       </div>
-      <button type="button" class="btn-primary-pill" data-testid="sync-prompt-open-btn">Sync my articles</button>
+      <button type="button" class="btn-primary" data-testid="sync-prompt-open-btn">Sync my articles →</button>
     </div>
 
     <section>
-      <h2 class="section-head">★ Saved articles</h2>
+      <h3 class="section-head">Saved articles <span class="count-pill">3 stories</span></h3>
       <p class="section-sub">Sorted by most recently saved.</p>
 
-      <!-- Card 1 -->
-      <article class="card" data-article-id="aihot-a3f12b8c">
+      <!-- Card 1 — PEACH feature (most recent) -->
+      <article class="card feature peach" data-article-id="aihot-a3f12b8c">
         <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star">★</button>
         <div class="card-meta">
-          <span class="src-chip">AIHOT</span>
+          <span class="src-badge anthropic">Anthropic</span>
+          <span class="src-badge aihot">AIHOT</span>
+          <span class="status-pill saved">★ Saved</span>
           <span class="meta-time">saved 2h ago</span>
         </div>
-        <h3 class="card-title">
+        <h4 class="card-title">
           <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Claude 4.7 launches with 1M context window</a>
-        </h3>
+        </h4>
         <p class="card-summary">Anthropic shipped Claude 4.7 with a 1 million-token context window today. Pricing matches the previous Opus tier.</p>
       </article>
 
-      <!-- Card 2 -->
+      <!-- Card 2 — white -->
       <article class="card" data-article-id="aihot-7c3e9d1a">
         <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star">★</button>
         <div class="card-meta">
-          <span class="src-chip">AIHOT</span>
+          <span class="src-badge alibaba">Alibaba</span>
+          <span class="src-badge aihot">AIHOT</span>
           <span class="meta-time">saved 5h ago</span>
         </div>
-        <h3 class="card-title">
+        <h4 class="card-title">
           <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/article.html">Qwen3-Omni released as open weights</a>
-        </h3>
+        </h4>
         <p class="card-summary">Alibaba's Qwen team open-sourced their omnimodal model with voice, vision, and text in one checkpoint.</p>
       </article>
 
-      <!-- Card 3 -->
+      <!-- Card 3 — white -->
       <article class="card" data-article-id="builder-2f8c4e6a">
         <button class="fav-star" type="button" aria-pressed="true" aria-label="Saved — click to unsave" data-testid="fav-star">★</button>
         <div class="card-meta">
-          <span class="src-chip">Simon Willison</span>
+          <span class="src-badge simonw">Simon Willison</span>
+          <span class="src-badge builder">Builder</span>
           <span class="meta-time">saved yesterday</span>
         </div>
-        <h3 class="card-title">
+        <h4 class="card-title">
           <a href="https://simonwillison.net/2026/May/17/claude-code-vm/" target="_blank" rel="noopener">Notes on running Claude Code in a sandboxed VM</a>
-        </h3>
+        </h4>
         <p class="card-summary">Walks through a Tailscale + Firecracker setup so Claude Code can delete whatever it wants and the host stays clean.</p>
       </article>
+
+      <div class="empty-note">
+        That's everything you've saved today. <a href="/designs/backend-and-editorial-layer/theme-mockups/notion/home.html">Browse today's digest →</a>
+      </div>
 
     </section>
   </main>
