@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -191,26 +191,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-25T00:00:00.000Z",
       "summary": "本文提出奖励倾斜分布匹配蒸馏（RTDMD），这是一个将分布匹配蒸馏与奖励引导强化学习统一应用于少步流生成器的两阶段框架。该方法通过最小化到奖励倾斜教师分布的KL散度，自然分解为分布匹配项与奖励最大化项。第一阶段引入环境一致分布匹配蒸馏（AC-DMD），在子区间进行分布匹配，并通过一致性正则化辅助分数模型追踪生成器分布。第二阶段联合优化两项，并推导混合策略梯度及步子集GRPO（SubGRPO）以降低方差。在SD3、SD3.5和FLUX.2上的实验表明，RTDMD仅用4步推理即可在偏好、美学和组合指标上达到新的 state-of-the-art。",
-      "category": "paper"
-    },
-    {
-      "id": "cmphlmb8l0peosljw5rpq8dt2",
-      "title": "Nemotron-Labs 扩散语言模型实现光速级文本生成",
-      "title_en": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-23T00:02:03.000Z",
-      "summary": "NVIDIA 在 Hugging Face 发布了关于 Nemotron-Labs 扩散语言模型的技术博客。该研究聚焦于通过扩散语言模型架构大幅提升文本生成速度，目标是逼近\"光速级\"生成效率。文章可能介绍了该模型在生成速度上的突破，以及相较于传统自回归模型在延迟和吞吐量方面的性能优势。具体技术细节或对比数据需参考原文。",
-      "category": "paper"
-    },
-    {
-      "id": "cmphirw6f0oqmsljw84zngzfo",
-      "title": "AlphaProof Nexus：用形式化验证驱动AI数学证明搜索",
-      "title_en": "Google DeepMind's new paper. Shows that AI can now search formal mathematics proofs， but only insid…",
-      "url": "https://x.com/rohanpaul_ai/status/2057954067146781151",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-22T22:37:39.000Z",
-      "summary": "Google DeepMind提出了AlphaProof Nexus系统，它将大型语言模型与Lean形式化验证工具相结合。该系统允许LLM在生成证明的过程中，不断读取Lean的编译错误并进行修正，还可调用更强的工具辅助解决子问题。这一机制迫使模型将每一步逻辑都转化为可编译、可验证的代码，从而将其角色从\"令人信服的叙述者\"转变为\"候选方案生成器\"。在针对353个Erdős问题和492个开放猜想的测试中，系统成功解决了9个Erdős问题并证明了44个序列猜想。该研究展示了形式化验证在暴露AI逻辑错误、建立\"人类提问-模型探索-验证器把关\"新分工中的关键作用。",
       "category": "paper"
     }
   ]

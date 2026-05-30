@@ -1,17 +1,6 @@
 {
-  "fetched_at": "2026-05-29T22:13:11.603Z",
+  "fetched_at": "2026-05-30T21:34:42.055Z",
   "repos": [
-    {
-      "owner": "harry0703",
-      "name": "MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 69497,
-      "forks": 10017,
-      "starsToday": 3563
-    },
     {
       "owner": "microsoft",
       "name": "markitdown",
@@ -19,31 +8,20 @@
       "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 129791,
-      "forks": 8905,
-      "starsToday": 1876
+      "stars": 132124,
+      "forks": 9046,
+      "starsToday": 2473
     },
     {
-      "owner": "EveryInc",
-      "name": "compound-engineering-plugin",
-      "url": "https://github.com/EveryInc/compound-engineering-plugin",
-      "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 18104,
-      "forks": 1376,
-      "starsToday": 354
-    },
-    {
-      "owner": "twentyhq",
-      "name": "twenty",
-      "url": "https://github.com/twentyhq/twenty",
-      "description": "The open alternative to Salesforce, designed for AI.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 48366,
-      "forks": 6858,
-      "starsToday": 575
+      "owner": "harry0703",
+      "name": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 71832,
+      "forks": 10301,
+      "starsToday": 2775
     },
     {
       "owner": "anthropics",
@@ -52,20 +30,9 @@
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 127829,
-      "forks": 20906,
-      "starsToday": 460
-    },
-    {
-      "owner": "Leonxlnx",
-      "name": "taste-skill",
-      "url": "https://github.com/Leonxlnx/taste-skill",
-      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 28033,
-      "forks": 2077,
-      "starsToday": 2066
+      "stars": 128358,
+      "forks": 20949,
+      "starsToday": 595
     },
     {
       "owner": "cursor",
@@ -74,75 +41,31 @@
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 1274,
-      "forks": 108,
-      "starsToday": 129
+      "stars": 1432,
+      "forks": 117,
+      "starsToday": 206
     },
     {
-      "owner": "run-llama",
-      "name": "liteparse",
-      "url": "https://github.com/run-llama/liteparse",
-      "description": "A fast, helpful, and open-source document parser",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 7203,
-      "forks": 441,
-      "starsToday": 680
-    },
-    {
-      "owner": "galilai-group",
-      "name": "stable-worldmodel",
-      "url": "https://github.com/galilai-group/stable-worldmodel",
-      "description": "A platform for reproducible world model research and evaluation",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1223,
-      "forks": 148,
-      "starsToday": 346
-    },
-    {
-      "owner": "byoungd",
-      "name": "English-level-up-tips",
-      "url": "https://github.com/byoungd/English-level-up-tips",
-      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
-      "language": "",
-      "languageColor": "",
-      "stars": 49612,
-      "forks": 5196,
-      "starsToday": 1564
-    },
-    {
-      "owner": "Biohub",
-      "name": "esm",
-      "url": "https://github.com/Biohub/esm",
-      "description": "",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 2557,
-      "forks": 312,
-      "starsToday": 64
-    },
-    {
-      "owner": "Crosstalk-Solutions",
-      "name": "project-nomad",
-      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 26918,
-      "forks": 2653,
-      "starsToday": 294
-    },
-    {
-      "owner": "DigitalPlatDev",
-      "name": "FreeDomain",
-      "url": "https://github.com/DigitalPlatDev/FreeDomain",
-      "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
+      "owner": "revfactory",
+      "name": "harness",
+      "url": "https://github.com/revfactory/harness",
+      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 171698,
-      "forks": 3340,
-      "starsToday": 1317
+      "stars": 4217,
+      "forks": 622,
+      "starsToday": 80
+    },
+    {
+      "owner": "EveryInc",
+      "name": "compound-engineering-plugin",
+      "url": "https://github.com/EveryInc/compound-engineering-plugin",
+      "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 18393,
+      "forks": 1390,
+      "starsToday": 348
     },
     {
       "owner": "affaan-m",
@@ -151,20 +74,86 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 198522,
-      "forks": 30504,
-      "starsToday": 1413
+      "stars": 199217,
+      "forks": 30586,
+      "starsToday": 918
     },
     {
-      "owner": "hardikpandya",
-      "name": "stop-slop",
-      "url": "https://github.com/hardikpandya/stop-slop",
-      "description": "A skill file for removing AI tells from prose",
-      "language": "",
-      "languageColor": "",
-      "stars": 6945,
-      "forks": 490,
-      "starsToday": 618
+      "owner": "OpenBMB",
+      "name": "VoxCPM",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 22717,
+      "forks": 2669,
+      "starsToday": 658
+    },
+    {
+      "owner": "galilai-group",
+      "name": "stable-worldmodel",
+      "url": "https://github.com/galilai-group/stable-worldmodel",
+      "description": "A platform for reproducible world model research and evaluation",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 1437,
+      "forks": 163,
+      "starsToday": 319
+    },
+    {
+      "owner": "Crosstalk-Solutions",
+      "name": "project-nomad",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 27304,
+      "forks": 2678,
+      "starsToday": 473
+    },
+    {
+      "owner": "run-llama",
+      "name": "liteparse",
+      "url": "https://github.com/run-llama/liteparse",
+      "description": "A fast, helpful, and open-source document parser",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 7851,
+      "forks": 463,
+      "starsToday": 929
+    },
+    {
+      "owner": "chen08209",
+      "name": "FlClash",
+      "url": "https://github.com/chen08209/FlClash",
+      "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
+      "language": "Dart",
+      "languageColor": "#00B4AB",
+      "stars": 40342,
+      "forks": 2523,
+      "starsToday": 190
+    },
+    {
+      "owner": "FareedKhan-dev",
+      "name": "train-llm-from-scratch",
+      "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "description": "A straightforward method for training your LLM, from downloading data to generating text.",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 2192,
+      "forks": 364,
+      "starsToday": 316
+    },
+    {
+      "owner": "ruvnet",
+      "name": "RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 68807,
+      "forks": 9173,
+      "starsToday": 656
     },
     {
       "owner": "DataTalksClub",
@@ -173,9 +162,42 @@
       "description": "Data Engineering Zoomcamp is a free 9-week course on building production-ready data pipelines. The next cohort starts in January 2026. Join the course here 👇🏼",
       "language": "Jupyter Notebook",
       "languageColor": "#DA5B0B",
-      "stars": 41535,
-      "forks": 8271,
-      "starsToday": 180
+      "stars": 41769,
+      "forks": 8285,
+      "starsToday": 277
+    },
+    {
+      "owner": "OpenMOSS",
+      "name": "MOSS-TTS",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 2601,
+      "forks": 235,
+      "starsToday": 88
+    },
+    {
+      "owner": "dreammis",
+      "name": "social-auto-upload",
+      "url": "https://github.com/dreammis/social-auto-upload",
+      "description": "自动化上传视频到社交媒体：抖音、小红书、视频号、tiktok、youtube、bilibili",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 11743,
+      "forks": 2086,
+      "starsToday": 106
+    },
+    {
+      "owner": "anthropics",
+      "name": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 144062,
+      "forks": 16978,
+      "starsToday": 471
     },
     {
       "owner": "codecrafters-io",
@@ -184,9 +206,9 @@
       "description": "Master programming by recreating your favorite technologies from scratch.",
       "language": "Markdown",
       "languageColor": "#083fa1",
-      "stars": 507305,
-      "forks": 48164,
-      "starsToday": 867
+      "stars": 508101,
+      "forks": 48236,
+      "starsToday": 814
     }
   ]
 }

@@ -1,8 +1,78 @@
 {
-  "count": 41,
+  "count": 42,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpsqnar803r5sluzkn3gfps1",
+      "title": "据报道：软银将在法国投资750亿欧元用于AI",
+      "title_en": "SoftBank to Invest Some €75 Billion in AI in France， Reports Say",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-05-30T18:55:33.000Z",
+      "summary": "软银集团计划投资高达750亿欧元（约合870亿美元），用于在法国建设人工智能数据中心。该投资计划由《论坛报》与《金融时报》报道。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpsl2i5v02fpsluzlu1d98zl",
+      "title": "\"开玩笑吧\"：GitHub Copilot 新的基于 token 的计费模式引发开发者不满",
+      "title_en": "'What a joke'： Github Copilot's new token-based billing spurs consternation among devs",
+      "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-05-30T16:30:00.000Z",
+      "summary": "微软旗下 GitHub Copilot 的黄金时代似乎正在终结。其新推出的计费模式改为按 token 计量，这一变化引发了开发者的广泛担忧与不满。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpsdkdec00j8sluzgrm37l7c",
+      "title": "AI 骗子正在创建虚假的黑人形象来销售 Shein 劣质商品",
+      "title_en": "AI grifters are creating fake Black people to sell Shein junk",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-05-30T13:00:00.000Z",
+      "summary": "有卖家利用 AI 生成虚假的黑人形象，在 TikTok、Facebook 和 Instagram 上扮演手工制品创作者进行销售。例如一个名为 Aliyah 的 AI 生成形象，以带泪诉说的方式售卖所谓手工皮带扣，但该形象及其产品均为虚构。此类 AI 虚拟网红被用于推广通过代发货模式销售的批量生产品。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpscn1r60074sluz9xgi8sxm",
+      "title": "新加坡防务论坛：AI 风险超过核武器",
+      "title_en": "AI Dangers Eclipse Nuclear Weapons at Singapore Defense Forum",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-30/ai-dangers-eclipse-nuclear-weapons-at-singapore-defense-forum",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-05-30T11:59:32.000Z",
+      "summary": "在新加坡举行的防务论坛上，专家警告AI风险已超越核武器。面板讨论指出，AI可能大幅压缩反应时间，导致决策者做出草率决定，对战略稳定构成威胁。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpruchr0049uslljygmtsttx",
+      "title": "xAI放弃JAX GPU转向自研训练框架",
+      "title_en": "BREAKING NEWS： JAX NVIDIA GPU & XLA： GPU's biggest customer just announced that they have dropped JA…",
+      "url": "https://x.com/SemiAnalysis_/status/2060571944575963482",
+      "source": "X：SemiAnalysis (@SemiAnalysis_)",
+      "publishedAt": "2026-05-30T04:00:09.000Z",
+      "summary": "突发新闻：JAX NVIDIA GPU & XLA：GPU最大客户刚刚宣布已放弃JAX GPU，宁愿用Grok Build\"氛围编程\"一个C训练框架。据报道xAI的JAX堆栈MFU低于10%。NVIDIA JAX团队过去两年全部主力996专注于支持xAI却失败了，我想他们现在可以休息并兑现期权了。",
+      "category": "industry"
+    },
+    {
+      "id": "cmprmoxnt02e1slljz93fu7ni",
+      "title": "阿里云与Qwen成为UEFA多年全球AI合作伙伴",
+      "title_en": "UEFA and UC3 have announced Alibaba Group as global AI， Cloud Computing and E-Commerce Partner for U…",
+      "url": "https://x.com/alibaba_cloud/status/2060520586489770167",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-05-30T00:36:05.000Z",
+      "summary": "阿里云和Qwen成为UEFA官方独家AI、云计算与电子商务合作伙伴，合作期覆盖2027/2028赛季至2032/2033赛季的UEFA男子俱乐部赛事，以及UEFA EURO 2028。阿里巴巴集团主席蔡崇信表示，将投入云计算、全栈AI及全球电商平台能力，支持赛事运营。合作将利用Qwen大语言模型部署先进AI技术，增强球迷互动与媒体内容体验，并依托阿里云基础设施打造全球沉浸式观赛体验。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpscn1r7007ksluzefjak77p",
+      "title": "Anthropic估值9650亿美元超越OpenAI",
+      "title_en": "Anthropic Valuation of $965 Billion Passes OpenAI",
+      "url": "https://www.bloomberg.com/news/videos/2026-05-29/anthropic-valuation-of-965-billion-passes-openai-video",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-05-29T17:26:32.000Z",
+      "summary": "Anthropic在最新融资轮中筹集了650亿美元，融资后公司估值达到9650亿美元，首次超越竞争对手OpenAI的估值水平。",
+      "category": "industry"
+    },
     {
       "id": "cmpr47z7g0apislno5cuj0pne",
       "title": "波士顿儿童医院利用AI解锁新诊断",
@@ -351,66 +421,6 @@
       "source": "X：Kim (@kimmonismus)",
       "publishedAt": "2026-05-24T16:24:31.000Z",
       "summary": "一场名为\"TrapDoor\"的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpijo6pj0xnmsljwps8cgh8g",
-      "title": "消息称 Anthropic 最快下周完成逾 300 亿美元融资，有望推动估值反超 OpenAI",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/954/452.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-23T15:12:40.000Z",
-      "summary": "据彭博社报道，Anthropic即将完成一轮超300亿美元的融资，最快可能于下周敲定。此轮融资将使其估值突破9000亿美元，正式超越OpenAI，成为全球估值最高的AI初创企业。融资的迅速推进反映了市场的强烈追捧。同时，公司营收高速增长，预计第二季度营收将达109亿美元，环比增长超一倍，有望迎来首个盈利季度。",
-      "category": "industry"
-    },
-    {
-      "id": "cmphwpi4y0s4ysljwoypw5kck",
-      "title": "微软称，使用人工智能的成本高于支付人工工资",
-      "title_en": null,
-      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-23T05:23:21.531Z",
-      "summary": "微软发布报告指出，在特定工作场景中，部署和使用人工智能（AI）的成本目前已高于支付相应的人工工资。报告分析了基于\"tokens\"（令牌）和\"agents\"（智能体）的AI使用模式，发现其综合开销超过了雇佣人类员工完成同类任务的费用。这一发现揭示了当前企业应用AI技术面临的现实经济挑战。",
-      "category": "industry"
-    },
-    {
-      "id": "cmphqn8pz0qnlsljwi7q35oae",
-      "title": "Kling AI亮相戛纳，推动AI赋能电影制作",
-      "title_en": "Debut in Cannes | Kling AI Conference Highlights On May 18， Kling AI hosted its official conference…",
-      "url": "https://x.com/Kling_ai/status/2058013861404684739",
-      "source": "X：可灵 Kling AI (@Kling_ai)",
-      "publishedAt": "2026-05-23T02:35:15.000Z",
-      "summary": "Kling AI在戛纳电影市场（Marché du Film）举办官方会议，首次登上这一世界顶级电影舞台。会议汇集全球电影专业人士，共同探讨AI如何融入实际电影制作流程。Kling AI已证明其能力可服务于动画长片、好莱坞剧集、实验短片及影院电影等多种创作形式。未来，Kling AI将继续推进电影级AI影像技术，与全球创作者合作，将更多\"不可能\"的故事呈现在银幕上。",
-      "category": "industry"
-    },
-    {
-      "id": "cmphmn2560pnrsljwzrhpl8vs",
-      "title": "扩大与新加坡合作，推动AI安全规模化部署",
-      "title_en": "We're expanding our partnership with Singapore to help safely deploy AI at scale. 🇸🇬 Together wit…",
-      "url": "https://x.com/GoogleDeepMind/status/2057985225100235022",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-05-23T00:41:27.000Z",
-      "summary": "我们正在扩大与新加坡的合作，以帮助安全地大规模部署AI。🇸🇬\n\n与各国专家合作，我们的新项目将重点加速科学发现、加强大流行病防范并改善医疗保健。\n\n了解更多 → https：//goo.gle/49jGwjv",
-      "category": "industry"
-    },
-    {
-      "id": "cmphld9mr0pcfsljwy8xhd1kg",
-      "title": "AI 替代入门级工作：科技行业受裁员冲击最重，74% CEO 冻结或缩减招聘",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/954/235.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-23T00:05:55.000Z",
-      "summary": "奥纬咨询研究发现，AI工具正被广泛用于入门级任务，导致企业招聘重心转向高级岗位，年轻人求职难度加大。科技行业受冲击最严重，74%的CEO已冻结或缩减招聘。计划削减初级岗位的比例从17%跃升至43%，而招聘转向中层岗位的比例则升至30%。尽管超90%的企业在部署AI，但多数仍处试点阶段。报告警告，过快裁员或忽视初级人才储备，可能对人才梯队造成长远风险。",
-      "category": "industry"
-    },
-    {
-      "id": "cmphj83pb0oufsljw1o50bxte",
-      "title": "黄仁勋：AI 基建年度开支要冲到 4 万亿美元！",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/954/223.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-22T22:30:03.000Z",
-      "summary": "英伟达发布2027财年Q1财报，营收816亿美元，同比增长85%，净利润583亿美元，翻两倍多，市值达5.7万亿美元，已超德国2026年GDP预测。黄仁勋预测，超大规模云厂商的AI基建年度开支将从当前的1万亿美元，增长至3-4万亿美元，远超华尔街预期。财报同时显示，数据中心业务营收752亿美元，占比超九成。值得注意的是，AI基建的高能耗正推高居民电费，数据中心用电成本转嫁效应已初步显现。",
       "category": "industry"
     }
   ]

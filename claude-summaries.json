@@ -1,79 +1,77 @@
 {
-  "generated_at": "2026-05-20T22:30:00Z",
+  "generated_at": "2026-05-29T22:45:00Z",
   "summaries": {
-    "https://openai.com/index/model-disproves-discrete-geometry-conjecture": {
-      "en": "An internal OpenAI reasoning model has disproved a longstanding conjecture in discrete geometry first posed by Paul Erdős in 1946. The planar unit distance problem asks how many pairs among n points in the plane can be exactly one unit apart. The proof draws unexpectedly on algebraic number theory, including class field towers and Golod-Shafarevich theory, to beat the classic rescaled square grid construction. Fields medalist Tim Gowers calls it a milestone in AI mathematics.",
-      "zh": "OpenAI 内部通用推理模型自主破解了 Paul Erdős 1946 年提出的平面单位距离问题中长期未决的猜想。证明意外借助代数数论中的类域塔与 Golod-Shafarevich 理论，构造出超越方格阵列的点集，使单位距离对数获得多项式级提升。Fields 奖得主 Tim Gowers 称这是 AI 数学领域的里程碑，论文已由外部数学家验证。"
+    "https://openai.com/index/boston-childrens-hospital": {
+      "en": "Boston Children's Hospital has woven OpenAI tools into clinical and back office work, building a shared enterprise AI layer rather than scattered point solutions. The team has cut operational costs, eased administrative load on billing and supply chain staff, and helped diagnose more than forty rare conditions that had previously gone unsolved by combining genetic data, clinical notes and the medical literature. Chief Innovation Officer John Brownstein frames the win as overcoming human cognitive limits, not effort.",
+      "zh": "Boston Children's Hospital 将 OpenAI 工具嵌入临床与运营工作流，建立统一企业级 AI 平台而非零散方案，降低成本、减轻账单与供应链团队负担，并通过整合基因数据、病历与医学文献协助诊断了四十多种此前未明的罕见病。首席创新官 John Brownstein 表示，AI 突破的不是努力的极限，而是人类认知本身的极限。"
     },
-    "https://openai.com/index/ramp": {
-      "en": "Ramp's AI Developer Experience team describes using Codex with GPT-5.5 to accelerate code review, delivering substantive pull request feedback in minutes instead of hours. Lead Austin Ray says Codex's deep codebase reasoning catches issues that humans and other AI reviewers miss, and engineers now ask for it by name. The team also uses Codex to build an internal On-Call Assistant agent, treating engineers as orchestrators who direct AI rather than write every line themselves.",
-      "zh": "Ramp 的 AI 开发者体验团队介绍如何用搭载 GPT-5.5 的 Codex 加速代码审查，让工程师在几分钟而非数小时内获得有深度的合并请求反馈。负责人 Austin Ray 表示 Codex 能捕捉人类和其他 AI 评审遗漏的问题，已成为强制审查流程的一部分。团队还用 Codex 构建 On-Call Assistant 智能体，让工程师从写代码转向编排 AI。"
+    "https://openai.com/index/braintrust": {
+      "en": "Braintrust, the observability and eval platform for AI products, says half its engineering team moved to Codex with GPT 5.5 in a single month. Founder Ankur Goyal credits raw speed and the ability to keep printing output without slowing down: engineers paste customer feature requests straight into Codex, spin up preview branches, and show working ideas to customers in minutes. Goyal also writes failing tests, hands them to Codex in a sandbox, and lets it iterate autonomously.",
+      "zh": "AI 产品可观测与评估平台 Braintrust 表示，一个月内一半的工程团队已转用搭载 GPT 5.5 的 Codex。创始人 Ankur Goyal 认为关键在于原始速度：工程师把客户的功能请求直接粘进 Codex，几分钟内生成预览分支与客户实时迭代。他还会先写失败测试，再让 Codex 在沙箱中自主修复。"
     },
-    "https://openai.com/index/the-next-phase-of-education-for-countries": {
-      "en": "OpenAI shares progress on its Education for Countries program launched at Davos, with first cohort partners including Estonia, Greece, Italy, Slovakia, Trinidad and Tobago, Kazakhstan, the United Arab Emirates, and Jordan. Estonia's deployment now reaches over twenty thousand students and four thousand six hundred teachers, Jordan's Siraj assistant has engaged a million students, and Kazakhstan has trained eighty four thousand educators. Singapore joins as the latest partner, focused on personalized learning and teacher-driven workshops.",
-      "zh": "OpenAI 公布在达沃斯启动的 Education for Countries 项目首批进展，合作国家包括爱沙尼亚、希腊、意大利、斯洛伐克、特立尼达和多巴哥、哈萨克斯坦、阿联酋与约旦。爱沙尼亚部署已覆盖两万学生与四千六百名教师，约旦 Siraj 助手触达百万学生，哈萨克斯坦已培训八万四千名教育者。新加坡作为最新伙伴加入，聚焦个性化学习与以教师为中心的工作坊。"
+    "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense": {
+      "en": "OpenAI is launching Rosalind Biodefense, a program offering trusted developers a path to build pandemic preparedness and biodefense applications on frontier models. It is also expanding access to GPT Rosalind for vetted U.S. government and allied public health partners. The announcement frames the work as defensive acceleration, citing OpenAI's Preparedness Framework, expert red teaming and bio specific evaluations, and pointing to ChatGPT agent's July 2025 designation as the first High Capability biology model.",
+      "zh": "OpenAI 启动 Rosalind Biodefense 计划，向可信开发者开放前沿模型以构建大流行病防范与生物防御应用，同时向通过审核的美国政府及盟友公共卫生伙伴扩大 GPT Rosalind 访问权限。OpenAI 将此定位为防御性加速，配合 Preparedness Framework、专家红队与生物专项评测体系。"
     },
-    "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything": {
-      "en": "Simon Willison highlights a small HTML app by Mike Veerman that simulates large language model token output speeds from five to eight hundred tokens per second. The tool is useful for getting an intuitive feel for what a model advertised as, say, thirty tokens per second actually looks like when streaming text. Source code is published, making it a handy reference when comparing perceived inference speed across local and hosted models.",
-      "zh": "Simon Willison 推荐了 Mike Veerman 制作的小型 HTML 应用，可模拟大语言模型每秒五到八百 token 的输出速度。这个工具方便用户直观感受某个模型号称每秒三十 token 时实际看起来是什么样子。源代码已开源，在比较本地与托管模型推理速度的真实体感时非常有用。"
+    "https://openai.com/index/trustworthy-third-party-evaluations-foundations": {
+      "en": "OpenAI shares lessons on what makes third party safety evaluations of frontier models valid. The post argues evaluations must specify which of three claims they test (capability elicitation, safeguard robustness, or model comparison) and must also report evidence against threats to validity such as reward hacking, refusals, training data contamination, broken tasks, and harness setup. Because modern models use tools and run multi step workflows, the surrounding harness now shapes results as much as the model itself.",
+      "zh": "OpenAI 总结前沿模型第三方安全评测的有效性经验。文章主张评测必须明确测试三类主张之一：能力可达性、安全防护稳健性，或不同模型间的对比，并需报告对奖励作弊、拒答、训练数据污染、任务损坏与工具环境的检查证据。现代模型使用工具与多步流程，外围 harness 对结果的影响已不亚于模型本身。"
     },
-    "https://simonwillison.net/2026/May/20/google-io/#atom-everything": {
-      "en": "Simon Willison comments on Google I/O 2026, noting most of the headline announcements are not yet generally available. Gemini Spark is Google's new personal agent product running on Gemini 3.5 Flash plus a closed source Antigravity Go binary, with native access to Gmail, Calendar, Drive and other apps. Simon raises prompt injection concerns given the sensitive data involved, and notes the open source Gemini command line tool will be replaced by a closed source Antigravity command line tool on June eighteenth.",
-      "zh": "Simon Willison 点评 Google I/O 2026，指出大部分头部发布仍未正式可用。Gemini Spark 是 Google 新推出的个人智能体，运行于 Gemini 3.5 Flash 与闭源的 Antigravity Go 二进制之上，可原生访问 Gmail、Calendar、Drive 等应用。他对提示注入风险表示担忧，并提到开源 Gemini 命令行工具将于六月十八日被闭源 Antigravity 命令行替代。"
+    "https://simonwillison.net/2026/May/29/anthropic/#atom-everything": {
+      "en": "Simon Willison highlights one line from Anthropic's Series H announcement: run rate revenue, an annualized projection from the most recent month, crossed forty seven billion dollars earlier this month, up from thirty billion in April and fourteen billion in February. He plotted the trajectory with Claude Opus 4.8 in Matplotlib, dismisses claims the figure is inflated since lying to Series H investors would be securities fraud, and notes one consultant client reportedly spent half a billion dollars in a single month on Claude.",
+      "zh": "Simon Willison 提炼 Anthropic Series H 公告中的关键数字：按最近一个月折算年化的 run-rate revenue 本月初已突破 470 亿美元，2 月 Series G 时为 140 亿，4 月为 300 亿。他用 Claude Opus 4.8 配 Matplotlib 画了走势图，并反驳数字虚高的质疑——向刚投入 650 亿的投资者撒谎构成证券欺诈。"
     },
-    "https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything": {
-      "en": "Simon Willison releases version 0.32 of his llm-gemini plugin, which lets the llm command line tool access Google's Gemini family of models. The headline change is support for the newly released gemini-3.5-flash model. Simon also links to his accompanying notes on Gemini 3.5 Flash and the obligatory pelican on a bicycle drawing he produced via the updated plugin to give a feel for the new model's coding capabilities.",
-      "zh": "Simon Willison 发布 llm-gemini 0.32 版插件，更新让 llm 命令行工具可以调用 Google 全新发布的 gemini-3.5-flash 模型。除模型支持之外，他还附上对 Gemini 3.5 Flash 的笔记，以及用该插件生成的鹈鹕骑自行车 SVG 测试图，方便读者直观体会新模型的编码能力。",
-      "title_en": "Simon Willison's llm-gemini plugin reaches version zero point three two, adding support for Gemini 3.5 Flash",
-      "title_zh": "Simon Willison 的 llm-gemini 插件发布 0.32 版，加入对 Gemini 3.5 Flash 的支持"
+    "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything": {
+      "en": "Anthropic shipped Claude Opus 4.8 and Simon Willison welcomes its unusually candid release note, which calls the model a modest but tangible improvement and admits work remains on cheaper variants. Honesty is the headline upgrade: Opus 4.8 is roughly four times less likely than 4.7 to let flaws in its own code go unremarked, and abstains rather than guesses when uncertain. Pricing matches 4.5 through 4.7, and Fast Mode is now half its previous price for research preview accounts.",
+      "zh": "Anthropic 发布 Claude Opus 4.8，Simon Willison 称赞其罕见坦诚的更新说明，称该模型只是温和但可感知的改进。亮点是诚实：漏报自身代码缺陷的概率比 4.7 降低约四倍，对不确定问题更倾向拒答而非乱猜。定价与 4.5 至 4.7 持平，Fast Mode 对研究预览用户半价。"
     },
-    "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything": {
-      "en": "Google released Gemini 3.5 Flash straight to general availability at Google I/O and is rolling it out across the Gemini app, Google Search AI Mode, Antigravity, and Gemini Enterprise. It supports just over one million input tokens but drops computer use. The price has tripled compared to the previous 3 Flash Preview, approaching Gemini 3.1 Pro pricing. Simon notes all three major AI labs are now probing API customer price tolerance with similar increases.",
-      "zh": "Google 在 I/O 大会直接将 Gemini 3.5 Flash 推向正式可用，覆盖 Gemini 应用、Google 搜索 AI 模式、Antigravity 与 Gemini Enterprise，支持约一百万输入 token 但不再具备电脑操作能力。价格相较上一代 3 Flash Preview 翻了三倍，已逼近 Gemini 3.1 Pro。Simon 指出三大 AI 实验室正联手试探 API 用户的价格承受力。"
+    "https://simonwillison.net/2026/May/28/llm-anthropic/#atom-everything": {
+      "en": "Simon Willison released llm anthropic version zero point twenty five point one, the plugin that lets his llm command line tool talk to Anthropic Claude models. The release adds the new Claude Opus 4.8 model, introduces a fast mode option for accounts with that feature enabled, and changes the default max tokens for each model to that model's true maximum output rather than the previous eight thousand one hundred ninety two. Simon used this build to generate his Opus 4.8 pelican drawings.",
+      "zh": "Simon Willison 发布 llm-anthropic 0.25.1，让其 llm 命令行工具支持新发布的 Claude Opus 4.8，新增 fast mode 选项供启用该功能的账户使用，并将各模型默认 max tokens 改为该模型实际最大输出，而非此前的 8192。Simon 用这版插件生成了 Opus 4.8 的鹈鹕测试图。",
+      "title_en": "Simon Willison's llm-anthropic plugin reaches version zero point twenty five point one, adding Claude Opus 4.8",
+      "title_zh": "Simon Willison 的 llm-anthropic 插件发布 0.25.1 版，加入对 Claude Opus 4.8 的支持"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tie6gy/qwen37_max_scored_by_artificial_analysis_27b35b/": {
-      "en": "A LocalLLaMA post tracks Qwen 3.7 Max landing fifth on the Artificial Analysis intelligence leaderboard, roughly on par with GPT-5.4 at extra-high effort and a notch above the freshly released Gemini 3.5 Flash. At the lower end the chart shows DeepSeek V4 Flash and Qwen 3.6 at twenty seven billion parameters, which sits about six points behind its Max sibling. Commenters are now waiting for smaller Qwen 3.7 open weight releases to follow.",
-      "zh": "LocalLLaMA 帖子记录 Qwen 3.7 Max 在 Artificial Analysis 智能榜单上排名第五，几乎与极高强度档的 GPT-5.4 持平，略高于刚发布的 Gemini 3.5 Flash。榜单下端可见 DeepSeek V4 Flash 与二百七十亿参数版本的 Qwen 3.6，后者落后其 Max 大哥约六分。社区正等待 Qwen 3.7 系列较小的开放权重版本登场。",
-      "title_en": "Qwen 3.7 Max ranks fifth on the Artificial Analysis leaderboard while users wait for smaller open weight siblings",
-      "title_zh": "Qwen 3.7 Max 在 Artificial Analysis 榜单排名第五，社区等待较小的开放权重版本"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tqloii/stepfun_37_flash/": {
+      "en": "StepFun released Step 3.7 Flash, a 196 billion parameter Mixture of Experts model with only 11 billion active parameters and a built in 1.8 billion parameter vision encoder. It fits on a 128 gigabyte RAM machine for local use and benchmarks competitively against larger flash tier rivals, hitting 56 percent on SWE Bench Pro, 92 percent on DeepSearchQA F1, and 47 percent on Humanity's Last Exam with tools. It is also available on OpenRouter and NVIDIA NIM for users who do not want to self host.",
+      "zh": "StepFun 发布 Step 3.7 Flash 多模态混合专家模型：总参数 1960 亿、仅 110 亿激活，内置 18 亿参数视觉编码器，可在 128GB 内存机器本地运行。SWE-Bench Pro 56%、DeepSearchQA F1 92%、Humanity's Last Exam 带工具 47%，agent 与编码远超其激活参数量级。也可通过 OpenRouter 与 NVIDIA NIM 调用。",
+      "title_en": "StepFun releases Step 3.7 Flash, a 196 billion parameter Mixture of Experts model with 11 billion active parameters",
+      "title_zh": "StepFun 发布 Step 3.7 Flash：1960 亿总参数、110 亿激活参数的多模态混合专家模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ti99an/lm_studio_finally_added_support_for_mtp/": {
-      "en": "LM Studio's 0.4.14 Build 2 beta finally adds support for Multi-Token Prediction speculative decoding, provided the underlying llama.cpp engine is updated to version 2.15.0. The feature is not enabled by default, so users must select the manual model load parameters option and toggle Multi-Token Prediction on before loading a compatible model. This brings the desktop runner into parity with the recent mainline llama.cpp merge.",
-      "zh": "LM Studio 0.4.14 Build 2 测试版终于加入多 Token 预测推测解码支持，前提是底层 llama.cpp 引擎更新到 2.15.0 版。该功能默认关闭，用户需在加载模型前手动选择模型加载参数选项并打开多 Token 预测开关。本次更新让桌面端跟上了 llama.cpp 主线最近的合并。",
-      "title_en": "LM Studio adds support for Multi-Token Prediction speculative decoding in its latest beta build",
-      "title_zh": "LM Studio 最新测试版加入多 Token 预测推测解码支持"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tqqnsl/liquid_ai_releases_lfm258ba1b/": {
+      "en": "Liquid AI released LFM2.5 8B A1B, an edge model aimed at real world deployments on entry level laptops. It upgrades the previous LFM2 8B A1B with a 128 thousand token context window, 38 trillion tokens of pre training up from 12 trillion, and large scale reinforcement learning. Vocabulary size has doubled to improve tokenization of non Latin languages, and the model is tuned for chained tool calls and complex agentic tasks. Weights are on Hugging Face.",
+      "zh": "Liquid AI 发布边缘模型 LFM2.5-8B-A1B，旨在入门级笔记本上运行真实场景应用。相比 LFM2-8B-A1B，上下文扩展至 12.8 万 token，预训练数据从 12 万亿提升至 38 万亿 token，并加入大规模强化学习。词表翻倍以改善非拉丁语种分词，模型针对链式工具调用与复杂代理任务做了优化。权重已上传 Hugging Face。",
+      "title_en": "Liquid AI releases LFM2.5 8B A1B edge model with 128 thousand token context and expanded multilingual tokenizer",
+      "title_zh": "Liquid AI 发布边缘模型 LFM2.5-8B-A1B，提供 12.8 万 token 上下文与扩展的多语言分词器"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tipihx/qwen_36_35b_gguf_ntp_vs_mtp_quantization_results/": {
-      "en": "The ByteShape team released two families of Qwen 3.6 thirty five billion parameter quantizations, one using standard next token prediction and one using multi-token prediction. Across cards from the RTX 4090 and 5090 down to the 5060 Ti, plus Intel and AMD CPUs and a Raspberry Pi 5, the counterintuitive finding was that picking the largest quantization that fits in memory generally won on both quality and speed. Multi-token prediction gave a twenty to forty percent GPU generation speedup but was not worthwhile on CPUs.",
-      "zh": "ByteShape 团队发布两套 Qwen 3.6 三百五十亿参数量化模型，分别采用标准下一 Token 预测与多 Token 预测。覆盖 RTX 4090、5090、5060 Ti 以及 Intel、AMD 处理器和树莓派 5 的测试显示，对下一 Token 预测来说，能装下显存的最大量化反而在质量与速度上都领先。多 Token 预测在 GPU 上能带来百分之二十到四十的生成提速，但在 CPU 上并不划算。",
-      "title_en": "ByteShape benchmarks Qwen 3.6 at thirty five billion parameters, comparing next token and multi-token prediction quantizations across GPUs and CPUs",
-      "title_zh": "ByteShape 对比 Qwen 3.6 三百五十亿参数模型在多种 GPU 与 CPU 上的下一 Token 预测与多 Token 预测量化效果"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tr9vzn/qwen3627b_quantization_benchmark/": {
+      "en": "A user benchmarks Qwen 3.6 27B quantizations from Q8 down to Q2 across unsloth, mradermacher, Ununnilium and cHunter789's IQ4 XS. Using llama.cpp's perplexity tool, they measure mean KL divergence between the quantized model and the BF16 base, plus how often it picks the same top token. Q6 to Q8 are essentially lossless; in the 4 bit cluster, Q4 K XL is the quality compromise pick, IQ4 XS works for tight VRAM, and quality degrades sharply from Q3 K XL downward.",
+      "zh": "一位用户用 llama.cpp perplexity 工具，对 unsloth、mradermacher、Ununnilium 与 cHunter789 的 Qwen 3.6 27B 量化版从 Q8 到 Q2 做对比，指标为相对 BF16 的 KL 散度均值与首选 token 一致率。结论：Q6 至 Q8 几乎无损；4 比特区段 Q4_K_XL 最佳，IQ4_XS 显存紧张时可用；Q3_K_XL 以下下滑明显。",
+      "title_en": "Benchmarking Qwen 3.6 27B quantizations from Q8 down to Q2 using KL divergence and same top token rate",
+      "title_zh": "用 KL 散度与首选 token 一致率对 Qwen 3.6 27B 从 Q8 到 Q2 的量化版本做基准测试"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tiixql/rtx_5080_16gb_qwen36_35b_moe_at_128k_context_56/": {
-      "en": "A detailed llama.cpp benchmark on a RTX 5080 with sixteen gigabytes of video memory finds that the Qwen 3.6 thirty five billion parameter Mixture of Experts model runs at fifty six tokens per second generation and roughly fifteen hundred tokens per second prompt processing at the full one hundred twenty eight thousand token context. Surprisingly, Multi-Token Prediction does not help at long context because the key value cache dominates memory either way. The author posts reproducible scripts and raw data.",
-      "zh": "在 RTX 5080 十六 GB 显存上的详细 llama.cpp 基准测试显示，Qwen 3.6 三百五十亿参数混合专家模型在十二万八千上下文下，生成速度每秒五十六 Token，提示处理约每秒一千五百 Token。出人意料的是，长上下文下多 Token 预测并不能提速，因为键值缓存无论如何都会占满显存。作者附上完整可复现脚本与原始数据。",
-      "title_en": "RTX 5080 with sixteen gigabytes of video memory runs Qwen 3.6 Mixture of Experts at one hundred twenty eight thousand token context at fifty six tokens per second",
-      "title_zh": "RTX 5080 十六 GB 显存运行 Qwen 3.6 混合专家模型，十二万八千上下文下达每秒五十六 Token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tqy2iv/shoutout_to_gemma4_as_a_conversational_assistant/": {
+      "en": "A user reports that Gemma4 26B A4B runs blazingly fast on an Apple M5 Pro despite its modest memory bandwidth, and serves as an excellent all round daily local assistant: creative writing, coding, debugging, image classification and casual chat. They note Qwen 3.6 35B A3B edges Gemma slightly on coding but feels more robotic and is worse at non coding tasks. Pairing Gemma with a web search tool turns it into a strong everyday agent.",
+      "zh": "一位用户称 Gemma4 26B A4B 在 Apple M5 Pro 上速度极快，是优秀的全能日常本地大模型，能胜任创作、编程、调试、图像识别与闲聊。对比之下 Qwen 3.6 35B A3B 编码略强但更机械，非编码任务明显逊色。给 Gemma 接入 Web 搜索工具后，作为日常智能体表现非常出色。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tizmar/re_what_ever_happened_to_coheres_commanda_series/": {
-      "en": "Cohere cofounder Nick Frosst announces the launch of Command A+, the company's first Mixture of Experts model, released under Apache 2.0 to keep it practical for smaller teams and individual developers. Frosst says the team prioritized efficiency and aggressive quantization so the model runs well on just one or two GPUs, positioning it among the fastest and most responsive in its class. He invites the open source community to share feedback and projects directly.",
-      "zh": "Cohere 联合创始人 Nick Frosst 宣布发布 Command A+，这是公司首款混合专家模型，依然以 Apache 2.0 许可证开源，方便小团队与开发者使用。Frosst 表示团队重点打磨效率与激进量化，让模型只需一到两块 GPU 即可流畅运行，跻身同类最快、响应最敏捷之列。他邀请开源社区直接反馈使用体验与项目。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tqt12p/use_html_as_the_primary_chat_language_for_your/": {
+      "en": "A developer experiments with switching their coding agent's chat protocol from Markdown to HTML, on the premise that modern models work better with HTML. Once the system prompt itself was rewritten in HTML, Qwen 3.6 27B started returning structured HTML with inline SVG diagrams rendered directly into the chat UI. The agent can now draw tables and diagrams inline, and the developer suspects HTML plus SVG output is an emerging capability missing from smaller models like Qwen 3 VL 4.",
+      "zh": "一位开发者尝试把自家编码智能体的聊天协议从 Markdown 切换为 HTML，依据是现代模型对 HTML 处理更好。把系统提示也改写为 HTML 后，Qwen 3.6 27B 开始返回结构化 HTML 并内嵌 SVG 图，直接在网页 UI 中呈现表格与流程图。作者认为 HTML 加 SVG 输出是大模型新兴能力，较小的 Qwen 3-VL-4 还做不到。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ti5sxu/running_deepseekv4_locally_with_4x_legacy_rtx/": {
-      "en": "A budget build of under two thousand five hundred dollars runs DeepSeek V4 Flash, a Mixture of Experts model with two hundred eighty four billion total and thirteen billion active parameters, on four legacy RTX 2080 Ti cards plus a Xeon processor and one terabyte of system memory. The team wrote custom Turing CUDA kernels for eight bit matrix multiplication, designed heterogeneous memory offloading, and overlapped computation with expert routing communication. Prefill speed reaches roughly two hundred fifty five tokens per second, with full code open sourced.",
-      "zh": "一台预算不到两千五百美元的机器，用四张二手 RTX 2080 Ti、Xeon 处理器和一 TB 内存，本地运行了 DeepSeek V4 Flash 这一二千八百四十亿总参数、一百三十亿激活参数的混合专家模型。团队为 Turing 架构编写自定义 CUDA 核函数实现八位矩阵乘法，设计异构显存与内存调度，并将计算与专家路由通信重叠。最终预填充速度约每秒二百五十五 Token，全部代码已开源。",
-      "title_en": "Running DeepSeek V4 locally on four legacy RTX 2080 Ti cards under a twenty five hundred dollar budget, with custom Turing kernels and eight bit quantization reaching about two hundred fifty five prefill tokens per second",
-      "title_zh": "用四张二手 RTX 2080 Ti 在两千五百美元预算内本地跑通 DeepSeek V4，自定义 Turing 核函数与八位量化达到每秒约二百五十五预填充 Token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tqqebc/stepfun_37_flash_speed_benchmark_in_m5_max/": {
+      "en": "A user benchmarks StepFun's Step 3.7 Flash on a 128 gigabyte Apple M5 Max running a day zero llama.cpp branch with Q4 K S quantization. Memory peaks around 120 gigabytes, making the machine sluggish but usable. Throughput starts at about 62 tokens per second of generation at short context and degrades gracefully to roughly 33 tokens per second at 64 thousand token context, with prompt processing dropping from over a thousand tokens per second to roughly 360.",
+      "zh": "一位用户在 128GB 的 Apple M5 Max 上用 day-0 llama.cpp 分支跑 StepFun Step 3.7 Flash 的 Q4_K_S 量化版。内存峰值约 120GB，机器略卡但可用。短上下文下生成约每秒 62 token，到 6.4 万 token 上下文降至约 33 token 每秒，prompt processing 从千余降至约 360。",
+      "title_en": "StepFun Step 3.7 Flash speed benchmark on an Apple M5 Max with 128 gigabytes of unified memory",
+      "title_zh": "在 128GB 内存的 Apple M5 Max 上测试 StepFun Step 3.7 Flash 的推理速度"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tikgej/a_streamlined_hugging_face_model_search_utility/": {
-      "en": "A LocalLLaMA developer shares a single file HTML and JavaScript utility for searching Hugging Face that lets users filter models by date range, parameter count, and quantization type, and organize results by base model author and derivative authors. About ninety percent of the code was vibe coded with Qwen 3.6 at twenty seven billion parameters inside OpenCode, with light manual touch ups for alignment. Results are cached and the tool sips at the Hugging Face API after the first heavy load.",
-      "zh": "一位 LocalLLaMA 开发者分享了一个单文件 HTML 加 JavaScript 的 Hugging Face 模型搜索工具，可按日期范围、参数量与量化类型筛选，并按基础模型作者与衍生作者分层组织结果。约九成代码由二百七十亿参数的 Qwen 3.6 模型在 OpenCode 中协助生成，作者只手动微调对齐。首次搜索后结果会缓存，对 Hugging Face API 调用极为节制。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tr0end/vllm_pr_adding_native_hip_w4a16_kernel_was_merged/": {
+      "en": "A new vLLM pull request added a native HIP kernel for 4 bit weight 16 bit activation quantization, and it has just been merged. On Qwen 3.6 27B GPTQ in this format, the kernel hits 270 tokens per second on RDNA3 at batch size eight in fp16, climbing to 445 tokens per second at batch size 32. That comfortably beats the previous Triton path at roughly 83 tokens per second and matches or exceeds ExLlama, making ROCm rigs notably more useful for serving local models.",
+      "zh": "vLLM 刚合并一条 pull request，原生支持 HIP 上 4 比特权重 16 比特激活内核。在 Qwen 3.6 27B GPTQ 上，RDNA3 显卡 fp16 单批 8 时达 270 token 每秒，单批 32 时升至 445，远超此前 Triton 路径约 83 token 每秒，与 ExLlama 持平甚至更高。ROCm 平台本地推理实用性大幅提升。",
+      "title_en": "vLLM merges a native HIP 4 bit weight 16 bit activation kernel that speeds up Qwen 3.6 27B on RDNA3 ROCm GPUs",
+      "title_zh": "vLLM 合并原生 HIP 四比特权重十六比特激活内核，大幅提升 Qwen 3.6 27B 在 RDNA3 ROCm 显卡上的速度"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tivvd4/i_got_qwen3vlembedding2b_working_with_rkllm_on_an/": {
-      "en": "A LocalLLaMA hobbyist reports getting the Qwen 3 vision language embedding model at two billion parameters running on an Orange Pi 5b single board computer through the rkllm runtime. The included demo script compares over one thousand three hundred phrases for similarity against a live webcam image, processing roughly one image every ten seconds. The author had been waiting for someone else to land the port on this Rockchip platform and ended up doing it themselves.",
-      "zh": "一位 LocalLLaMA 爱好者报告称，他通过 rkllm 运行时让二十亿参数的 Qwen 3 视觉语言嵌入模型在 Orange Pi 5b 单板计算机上跑了起来。配套演示脚本可将一千三百多条短语与实时摄像头画面比较相似度，每张图大约十秒处理完。作者本来一直在等别人在这块 Rockchip 平台上完成移植，最终决定亲自上阵。",
-      "title_en": "Qwen 3 vision language embedding model at two billion parameters runs on an Orange Pi 5b single board computer via the rkllm runtime",
-      "title_zh": "二十亿参数的 Qwen 3 视觉语言嵌入模型借助 rkllm 在 Orange Pi 5b 单板计算机上跑通"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1tr57ci/we_gave_a_reachy_mini_a_realtime_voice_brain/": {
+      "en": "A team hooked OpenAI's GPT Realtime 2 to a Reachy Mini robot from Hugging Face, giving it ears, eyes and a body in about an hour. The model hears through the microphone, sees through the camera, talks through the speaker, and calls 19 motion and perception tools mid conversation to wave, nod, tilt and emote in response to the user. The realtime client and tool layer are decoupled, so any provider or local realtime model can swap in. The repo is MIT licensed.",
+      "zh": "一支团队把 OpenAI 的 GPT Realtime 2 接入 Hugging Face 的 Reachy Mini 机器人，一小时就给它装上了耳眼与身体。模型通过麦克风听、摄像头看、扬声器说，并在对话中调用 19 个运动与感知工具，根据用户挥手、点头、歪头做出实时模仿动作。Realtime 客户端与工具层解耦，可一键换为其他厂商或本地实时模型。仓库以 MIT 协议开源。"
     }
   }
 }
