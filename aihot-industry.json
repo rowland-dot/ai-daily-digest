@@ -1,8 +1,38 @@
 {
-  "count": 42,
+  "count": 43,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmptzbrme00aasla8lu56k78h",
+      "title": "OpenAI正式进军机器人领域并启动招聘",
+      "title_en": "OpenAI Robotics is hiring， looking for exceptional full-stack hardware， ops， systems， and ML enginee…",
+      "url": "https://x.com/sama/status/2061117302528188712",
+      "source": "X：Sam Altman (@sama)",
+      "publishedAt": "2026-05-31T16:07:13.000Z",
+      "summary": "OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。该项目由Aditya Ramesh领导，其世界模拟研究计划已演变为机器人研究，强调硬件与ML研究的协同设计。短期目标是支持技术工人构建未来基础设施，长期愿景是为每个人提供个人机器人。",
+      "category": "industry"
+    },
+    {
+      "id": "cmptqxpc00056slpme4gyxf5n",
+      "title": "苹果WWDC将推AI升级：Gemini蒸馏模型本地运行，但技术栈外部依赖显著",
+      "title_en": "Interesting updates on Apple AI： As Apple's WWDC lands next month， and the long-delayed Siri and on-…",
+      "url": "https://x.com/kimmonismus/status/2061058117304262999",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-05-31T12:12:02.000Z",
+      "summary": "苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低token成本。但该技术栈大部分源自外部：本地模型由Gemini蒸馏，设备无法处理的复杂查询将路由至Google Cloud处理，并采用了Nvidia的机密计算技术。苹果据称正在寻觅小型设备端AI初创公司以加速模型缩减工作。此外，苹果2024年承诺的Private Cloud Compute方案原计划使用苹果芯片，因无法承载完整Gemini模型，现已部分转向谷歌云，但该名称仍将保留。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpt5p76d07g3sluzcbxft4f4",
+      "title": "6000 多公里全程零干预：特斯拉 FSD 完成全球首次横穿加拿大自动驾驶",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/957/718.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-05-31T01:30:46.000Z",
+      "summary": "一辆特斯拉汽车搭载 FSD V14.3.3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。车辆从温哥华出发，历时 4 天 21 小时，行驶 3760 英里（6051 公里）抵达哈利法克斯，全程所有驾驶操作（包括高速并线、应对复杂路况与自动泊车）均由系统自主完成，无任何系统退出或人工修正。该版本随 2026.14.6.6 更新推送，整合了春季软件功能。",
+      "category": "industry"
+    },
     {
       "id": "cmpsqnar803r5sluzkn3gfps1",
       "title": "据报道：软银将在法国投资750亿欧元用于AI",
@@ -401,26 +431,6 @@
       "source": "The Verge：AI（RSS）",
       "publishedAt": "2026-05-25T15:05:07.000Z",
       "summary": "教皇里奥十四世在首份重要通谕《Magnifica Humanitas》中警告了AI及不受约束的技术力量带来的风险。该通谕于2026年5月15日发布，是教皇关于\"在人工智能时代守护人\"的宣言。文件重点讨论了AI驱动战争的危险、AI对劳动的影响，以及建立新的法律和伦理框架来规范技术的必要性，强调AI的快速普及正造成经济和社会动荡，对个人的保护不足威胁着人类尊严。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpk417ey03vssl01z5zsemms",
-      "title": "DeepSeek将对其旗舰AI模型实施永久性75%折扣",
-      "title_en": null,
-      "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-24T18:08:57.964Z",
-      "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmpjzqznj02vssl01si4neefz",
-      "title": "TrapDoor供应链攻击：AI助手成新型攻击面",
-      "title_en": "A coordinated supply chain attack called \"TrapDoor\" just hit npm， PyPI， and Crates. io simultaneousl…",
-      "url": "https://x.com/kimmonismus/status/2058584943052161488",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-24T16:24:31.000Z",
-      "summary": "一场名为\"TrapDoor\"的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。",
       "category": "industry"
     }
   ]

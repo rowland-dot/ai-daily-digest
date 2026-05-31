@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -21,6 +21,16 @@
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "publishedAt": "2026-05-28T18:20:09.000Z",
       "summary": "hexoai开源了SIA（自我改进AI）框架。该框架展示了AI智能体不仅能优化其外部工作流（harness），还能通过任务反馈直接更新自身的模型权重，从而在领域知识和能力上实现自主提升，而非仅依赖人类提供的提示或工具改进。论文报告显示，SIA在LawBench基准上性能提升56.6%，在GPU kernels运行上耗时减少91.9%，在单细胞RNA去噪任务中相比基线提升502%。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpu2kv1z0011slag0dem81sw",
+      "title": "NVIDIA 研究推动机器人技术从仿真走向现实世界",
+      "title_en": "NVIDIA Research Advances Robotics From Simulation to the Real World",
+      "url": "https://blogs.nvidia.com/blog/category/nvidia-research",
+      "source": "NVIDIA Blog：Generative AI（网页）",
+      "publishedAt": "2026-05-28T13:00:51.000Z",
+      "summary": "机器人技术正在进入一个新阶段：从受控的演示和脚本化的自动化，转向在现实世界中实现泛化、可靠的具身自主。这项工作代表了机器人领域的一个关键转变，即如何让机器人在复杂的真实环境中更灵活、更自主地执行任务。",
       "category": "paper"
     },
     {

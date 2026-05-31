@@ -1,8 +1,38 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5ODExMjAwMDAwLCJpIjoiY21wb2NtOWJ5MDR5bXNsdjRhZ3VtOWVkaSJ9",
+  "nextCursor": "eyJhIjoxNzc5ODMwNjc3MDAwLCJpIjoiY21wbjVybmozMHVxdHNsMDE2Ym9zajdsaSJ9",
   "items": [
+    {
+      "id": "cmpu58ppf00syslagod0p5uv7",
+      "title": "DeepSeek V4 Flash 已上线 OpenCode Zen",
+      "title_en": "DeepSeek V4 Flash is now available in OpenCode Zen",
+      "url": "https://x.com/opencode/status/2061153857321775209",
+      "source": "X：opencode (@opencode)",
+      "publishedAt": "2026-05-31T18:32:28.000Z",
+      "summary": "DeepSeek V4 Flash 现已在 OpenCode Zen 上线。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmptx6l3x00xosl7z5f75gwfm",
+      "title": "OpenAI发布生物防御AI工具Rosalind",
+      "title_en": "We want to help the world get a head start on biodefense： https：//openai.com/index/strengthening-so…",
+      "url": "https://x.com/sama/status/2061101875303530871",
+      "source": "X：Sam Altman (@sama)",
+      "publishedAt": "2026-05-31T15:05:55.000Z",
+      "summary": "我们希望帮助世界在生物防御领域抢占先机：",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpu2kwvj0022slagmtocgkym",
+      "title": "DynoSim：模拟驱动推理堆栈优化",
+      "title_en": "There's a better way to serve your inference stack， you just haven't found it yet. DynoSim is a wor…",
+      "url": "https://x.com/NVIDIAAI/status/2060781385686659416",
+      "source": "X：NVIDIA AI (@NVIDIAAI)",
+      "publishedAt": "2026-05-30T17:52:24.000Z",
+      "summary": "NVIDIA 发布 DynoSim，这是一个针对其 Dynamo 推理服务栈的工作负载驱动仿真工具。它将部署测试转化为\"模拟-验证\"循环：团队无需逐个测试部署选项，而是在单一虚拟时间线上建模整个堆栈，通过高保真仿真快速筛查数千种配置，仅将最佳候选方案投入实机验证。DynoSim 完全使用 Rust 实现，运行速度极快，在测试中达到实时速度的 1，500 倍。",
+      "category": "ai-products"
+    },
     {
       "id": "cmprt0b0303xesllj5i7bbs1z",
       "title": "Show HN： Tiny-vLLM--基于 C 和 CUDA 的高性能大型语言模型推理引擎",
@@ -471,36 +501,6 @@
       "source": "X：Claude Devs (@ClaudeDevs)",
       "publishedAt": "2026-05-26T21:24:37.000Z",
       "summary": "我们为Claude Code发布了一个安全指导插件，可在编写代码时帮助识别和修复漏洞。\n所有Claude Code用户均可使用。从插件市场（/plugins）安装。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpn19jg60tn5sl01wq8vrgm1",
-      "title": "MiMo 2.5 Pro大幅降价，与DeepSeek V4 Pro同价",
-      "title_en": "MiMo 2.5 Pro now costs the same as DeepSeek V4 Pro. The cost of good models is falling at breakneck…",
-      "url": "https://x.com/kimmonismus/status/2059354372643975490",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-26T19:21:58.000Z",
-      "summary": "小米MiMo-V2.5系列API价格永久下调，最高降幅达99%，现与DeepSeek V4 Pro同价。Token套餐同步升级，同等价格下可用token量增加5-8倍，计费规则更简单透明。所有现有用户套餐额度将全额重置。此次降价源于MiMo全栈推理优化与服务效率提升，后续将发布技术博客详述细节。MiMo-V2.5-TTS限时免费，新定价于5月26日生效。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpmu0srh0rvzsl01sq59jkbk",
-      "title": "Replit 应用添加登录的两种方式",
-      "title_en": "There are two ways to add login to your app on Replit： → Replit Auth： zero setup， users sign in with…",
-      "url": "https://x.com/Replit/status/2059303550375674139",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-05-26T16:00:01.000Z",
-      "summary": "在 Replit 上为你的应用添加登录有两种方式：\n→ Replit Auth：零配置，用户使用其 Replit 账户登录\n→ Clerk Auth：你自己的品牌化登录，开发/生产环境均只需一个提示词。文档和视频见下方 👇\n\n文档：https：//docs.replit.com/learn/projects-and-artifacts/auth#auth",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpocm9by04ymslv4agum9edi",
-      "title": "Google Pay 最新更新",
-      "title_en": "The latest updates to Google Pay",
-      "url": "https://developers.googleblog.com/the-latest-updates-to-google-pay",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "summary": "Google Pay 正向\"智能体商务\"演进，推出了通用商务协议和新的 MCP 服务器，允许 AI 智能体管理集成与分析趋势。Android 平台更新引入了动态回调以支持快速结账，并通过 WebView 将支付功能扩展至社交媒体应用。此外，平台还推出了跨设备生物认证和新的交易信号，旨在帮助商家减少流程摩擦。",
       "category": "ai-products"
     }
   ]

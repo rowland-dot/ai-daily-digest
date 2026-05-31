@@ -1,17 +1,6 @@
 {
-  "fetched_at": "2026-05-30T21:34:42.055Z",
+  "fetched_at": "2026-05-31T21:33:28.199Z",
   "repos": [
-    {
-      "owner": "microsoft",
-      "name": "markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "description": "Python tool for converting files and office documents to Markdown.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 132124,
-      "forks": 9046,
-      "starsToday": 2473
-    },
     {
       "owner": "harry0703",
       "name": "MoneyPrinterTurbo",
@@ -19,42 +8,42 @@
       "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 71832,
-      "forks": 10301,
-      "starsToday": 2775
+      "stars": 73971,
+      "forks": 10561,
+      "starsToday": 1937
     },
     {
-      "owner": "anthropics",
-      "name": "claude-code",
-      "url": "https://github.com/anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "owner": "microsoft",
+      "name": "markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 128358,
-      "forks": 20949,
-      "starsToday": 595
+      "stars": 134727,
+      "forks": 9212,
+      "starsToday": 2759
     },
     {
-      "owner": "cursor",
-      "name": "plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 1432,
-      "forks": 117,
-      "starsToday": 206
+      "owner": "D4Vinci",
+      "name": "Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 56514,
+      "forks": 5478,
+      "starsToday": 639
     },
     {
-      "owner": "revfactory",
-      "name": "harness",
-      "url": "https://github.com/revfactory/harness",
-      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 4217,
-      "forks": 622,
-      "starsToday": 80
+      "owner": "nesquena",
+      "name": "hermes-webui",
+      "url": "https://github.com/nesquena/hermes-webui",
+      "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 9879,
+      "forks": 1360,
+      "starsToday": 320
     },
     {
       "owner": "EveryInc",
@@ -63,20 +52,20 @@
       "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 18393,
-      "forks": 1390,
-      "starsToday": 348
+      "stars": 18678,
+      "forks": 1408,
+      "starsToday": 243
     },
     {
-      "owner": "affaan-m",
-      "name": "ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 199217,
-      "forks": 30586,
-      "starsToday": 918
+      "owner": "github",
+      "name": "docs",
+      "url": "https://github.com/github/docs",
+      "description": "The open-source repo for docs.github.com",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 19694,
+      "forks": 67285,
+      "starsToday": 20
     },
     {
       "owner": "OpenBMB",
@@ -85,53 +74,20 @@
       "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 22717,
-      "forks": 2669,
-      "starsToday": 658
+      "stars": 23412,
+      "forks": 2710,
+      "starsToday": 639
     },
     {
-      "owner": "galilai-group",
-      "name": "stable-worldmodel",
-      "url": "https://github.com/galilai-group/stable-worldmodel",
-      "description": "A platform for reproducible world model research and evaluation",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1437,
-      "forks": 163,
-      "starsToday": 319
-    },
-    {
-      "owner": "Crosstalk-Solutions",
-      "name": "project-nomad",
-      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 27304,
-      "forks": 2678,
-      "starsToday": 473
-    },
-    {
-      "owner": "run-llama",
-      "name": "liteparse",
-      "url": "https://github.com/run-llama/liteparse",
-      "description": "A fast, helpful, and open-source document parser",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 7851,
-      "forks": 463,
-      "starsToday": 929
-    },
-    {
-      "owner": "chen08209",
-      "name": "FlClash",
-      "url": "https://github.com/chen08209/FlClash",
-      "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
-      "language": "Dart",
-      "languageColor": "#00B4AB",
-      "stars": 40342,
-      "forks": 2523,
-      "starsToday": 190
+      "owner": "revfactory",
+      "name": "harness",
+      "url": "https://github.com/revfactory/harness",
+      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 4556,
+      "forks": 643,
+      "starsToday": 318
     },
     {
       "owner": "FareedKhan-dev",
@@ -140,64 +96,64 @@
       "description": "A straightforward method for training your LLM, from downloading data to generating text.",
       "language": "Jupyter Notebook",
       "languageColor": "#DA5B0B",
-      "stars": 2192,
-      "forks": 364,
-      "starsToday": 316
+      "stars": 2882,
+      "forks": 434,
+      "starsToday": 627
     },
     {
-      "owner": "ruvnet",
-      "name": "RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 68807,
-      "forks": 9173,
-      "starsToday": 656
+      "owner": "supermemoryai",
+      "name": "supermemory",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 23272,
+      "forks": 2100,
+      "starsToday": 236
     },
     {
-      "owner": "DataTalksClub",
-      "name": "data-engineering-zoomcamp",
-      "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp",
-      "description": "Data Engineering Zoomcamp is a free 9-week course on building production-ready data pipelines. The next cohort starts in January 2026. Join the course here 👇🏼",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 41769,
-      "forks": 8285,
-      "starsToday": 277
-    },
-    {
-      "owner": "OpenMOSS",
-      "name": "MOSS-TTS",
-      "url": "https://github.com/OpenMOSS/MOSS-TTS",
-      "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 2601,
-      "forks": 235,
-      "starsToday": 88
-    },
-    {
-      "owner": "dreammis",
-      "name": "social-auto-upload",
-      "url": "https://github.com/dreammis/social-auto-upload",
-      "description": "自动化上传视频到社交媒体：抖音、小红书、视频号、tiktok、youtube、bilibili",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 11743,
-      "forks": 2086,
-      "starsToday": 106
+      "owner": "Crosstalk-Solutions",
+      "name": "project-nomad",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 27672,
+      "forks": 2709,
+      "starsToday": 372
     },
     {
       "owner": "anthropics",
-      "name": "skills",
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills",
+      "name": "claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 144062,
-      "forks": 16978,
-      "starsToday": 471
+      "stars": 128839,
+      "forks": 20993,
+      "starsToday": 490
+    },
+    {
+      "owner": "nicobailon",
+      "name": "pi-subagents",
+      "url": "https://github.com/nicobailon/pi-subagents",
+      "description": "Pi extension for async subagent delegation with truncation, artifacts, and session sharing",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 1819,
+      "forks": 254,
+      "starsToday": 59
+    },
+    {
+      "owner": "emmabostian",
+      "name": "developer-portfolios",
+      "url": "https://github.com/emmabostian/developer-portfolios",
+      "description": "A list of developer portfolios for your inspiration",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 23317,
+      "forks": 4605,
+      "starsToday": 67
     },
     {
       "owner": "codecrafters-io",
@@ -206,9 +162,9 @@
       "description": "Master programming by recreating your favorite technologies from scratch.",
       "language": "Markdown",
       "languageColor": "#083fa1",
-      "stars": 508101,
-      "forks": 48236,
-      "starsToday": 814
+      "stars": 509291,
+      "forks": 48303,
+      "starsToday": 1112
     }
   ]
 }
