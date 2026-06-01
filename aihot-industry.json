@@ -1,8 +1,148 @@
 {
-  "count": 43,
-  "hasNext": false,
-  "nextCursor": null,
+  "count": 50,
+  "hasNext": true,
+  "nextCursor": "eyJhIjoxNzc5Nzk0OTAwMDAwLCJpIjoiY21wbWt5eGM2MHBqdnNsMDF4bTJpZHdmOCJ9",
   "items": [
+    {
+      "id": "cmpvphtkh00j0slukzfwj1aez",
+      "title": "Alphabet将通过发行股票筹集800亿美元用于AI支出计划",
+      "title_en": "Alphabet to Raise $80 Billion in Equity Capital for AI Spending",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-01/alphabet-to-raise-80-billion-in-equity-capital-for-ai-spending",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-01T20:50:33.000Z",
+      "summary": "Alphabet正在通过发行股票等方式筹集800亿美元资金，其中包括与Berkshire Hathaway的投资协议，以资助其雄心勃勃的AI支出计划。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpvmvuc000r2slfpabxe89ry",
+      "title": "Meta的AI被利用来劫持Instagram账号",
+      "title_en": "Meta's own AI was exploited to hijack Instagram accounts",
+      "url": "https://www.theverge.com/tech/941179/meta-instagram-ai-support-chatbot-exploit-hacked",
+      "source": "The Verge：订阅版科技（RSS）",
+      "publishedAt": "2026-06-01T19:20:47.000Z",
+      "summary": "Meta的AI聊天机器人被发现存在安全漏洞，黑客可以通过请求该AI关联一个新的电子邮件地址，从而接管目标用户的Instagram账号。该漏洞利用了AI智能体直接执行账户管理操作的能力。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpvl6hcy00b3slfp8iajt5kg",
+      "title": "佛罗里达州起诉OpenAI与Sam Altman：涉多起ChatGPT相关谋杀案",
+      "title_en": "Florida sues OpenAI， Sam Altman after multiple ChatGPT-linked murders",
+      "url": "https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-01T18:52:19.000Z",
+      "summary": "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼。该州总检察长指控Altman对人命\"完全漠视\"，案件与多起涉及ChatGPT的谋杀事件相关。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpvf63k406b0sl0zv0ef9647",
+      "title": "Anthropic 保密向 SEC 提交 S-1 草案",
+      "title_en": "Anthropic confidentially submits draft S-1 to the SEC",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-01T16:24:52.982Z",
+      "summary": "Anthropic， PBC 今日保密向美国证券交易委员会提交了 S-1 表格草案，计划进行普通股的首次公开发行。这使其在 SEC 完成审核后拥有上市的选择权。IPO 的具体发行股数和价格尚未确定，将取决于市场条件等因素。公司近期刚完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，估值达 9650 亿美元，并发布了 Claude Opus 4.8 模型。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpvej11l065tsl0zrvg9kj3a",
+      "title": "Zhipu：建议 A 股发行并在科创板上市",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/958/444.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-01T15:53:42.000Z",
+      "summary": "Zhipu计划向中国监管机构申请发行A股并在科创板上市。发行股份数量占发行完成后总股本的2%至8%，预计全部为新股，原股东不发售。本次发行募集资金净额将投资于人工智能通用基座大模型、大模型MaaS一站式服务平台及补充流动资金。此外，公司拟将英文名称由\"Knowledge Atlas Technology Joint Stock Company Limited\"变更为\"Z.AI Co.， Ltd.\"。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpvcojae05ppsl0zvu5vzvcf",
+      "title": "Luma成立开放物理AI实验室攻克泛化难题",
+      "title_en": "To improve human life， AI systems must be able to help us improve the physical world. What stands be…",
+      "url": "https://x.com/LumaLabsAI/status/2061460217616027961",
+      "source": "X：Luma AI (@LumaLabsAI)",
+      "publishedAt": "2026-06-01T14:49:50.000Z",
+      "summary": "为改善人类生活，AI系统必须能帮助我们改善物理世界。阻碍我们迈向这一繁荣未来的是物理AI的泛化问题。\n\n为解决此问题，我们在Luma建立了一个新的开放科学物理AI实验室。\n\n阅读更多 → https：//lumalabs.ai/news/luma-open-physical-ai-lab",
+      "category": "industry"
+    },
+    {
+      "id": "cmpv8241x04hdsl0zyngfkobk",
+      "title": "王兴：美团 AI Agent\"小美\"与腾讯元宝即将深度合作，用户订单无缝连接",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/958/410.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-01T12:34:05.000Z",
+      "summary": "美团2026年第一季度财报显示营收910.39亿元，净利润亏损68.27亿元。财报电话会上，CEO王兴透露其AI Agent\"小美\"将与腾讯元宝深度合作。用户在腾讯元宝中提交本地服务需求，将被无缝连接至美团的外卖点餐、配送等生态。王兴强调，面向智能体的服务（To A）正变得日益重要，美团已将AI助手\"小团\"置于App核心位置，并拓展AI服务外延。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpvlaey600deslfpl35rf3t5",
+      "title": "OpenAI在密歇根州启动Stargate 1GW数据中心建设",
+      "title_en": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "summary": "OpenAI在密歇根州启动了名为Stargate的1GW数据中心项目。作为AI基础设施建设的一部分，该项目旨在扩大人工智能技术的可及性、为当地创造就业机会并支持社区发展。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpv2byxq02zxsl0z1ea4vm86",
+      "title": "Runway 在伦敦设立欧洲总部及世界模型研究中心",
+      "title_en": "Runway Opens London HQ， Bringing World Model Research Hub to the UK and Europe",
+      "url": "https://runwayml.com/news/runway-opens-london-hq",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-06-01T10:24:49.447Z",
+      "summary": "Runway 宣布在伦敦建立新的欧洲总部和专注于通用世界模型的研究中心。公司计划在未来18个月向英国AI生态投资$100M，到2028年投资额将翻倍以上。过去12个月，其在欧洲的订阅销量增长了50%，企业客户占比超20%。新总部将扩大其在欧洲的研究与商业布局，公司正招聘欧洲负责人以组建跨研究、产品、工程和销售的团队，并深化与BBC、Fremantle、WPP等企业的合作。世界模型是其研究的核心，旨在将生成式AI的应用扩展至机器人、科学研究与工业模拟等领域。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpuv5v540180sl0zee33wa3b",
+      "title": "英伟达和台积电将 AI 引入晶圆厂，推动半导体设计与制造发展",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/958/109.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-01T06:13:32.000Z",
+      "summary": null,
+      "category": "industry"
+    },
+    {
+      "id": "cmpurl8qd009dsl0zyghfa9kw",
+      "title": "介绍Cosmos Coalition",
+      "title_en": "Introducing the Cosmos Coalition",
+      "url": "https://runwayml.com/news/introducing-cosmos-coalition",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-06-01T05:24:22.746Z",
+      "summary": "Runway宣布作为创始成员加入Cosmos Coalition，该联盟与NVIDIA及多家领先AI实验室合作，旨在构建并开源面向物理AI的前沿世界模型。首个项目将由Runway与NVIDIA共同开发一个基础模型，以推动下一代开放世界模型的研究与发展。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpu2kv1z001eslagcgl0irro",
+      "title": "NVIDIA与Google Cloud助力下一波AI构建者",
+      "title_en": "NVIDIA and Google Cloud Empower the Next Wave of AI Builders",
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/cloud-2",
+      "source": "NVIDIA Blog：Generative AI（网页）",
+      "publishedAt": "2026-06-01T05:00:56.000Z",
+      "summary": "在Google I/O大会上，NVIDIA与Google Cloud宣布深化合作，旨在支持其联合开发者社区中超过10万名开发者。合作将重点提供NVIDIA L4 Tensor Core GPU以优化AI推理与图形工作负载，并通过支持Vertex AI平台来增强Gemini模型性能。双方还将提供开源软件工具，以简化AI应用的构建与部署流程。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpula55004pmslag0bkoy1lq",
+      "title": "上海：支持多模态智能体开发与应用，有序推进智能驾驶在共享出行、物流运输等多场景应用",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/957/985.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-01T02:16:40.000Z",
+      "summary": "上海市人民政府办公厅印发《上海市服务业发展\"十五五\"规划》，提出发展AI软件技术及服务产业集群。规划支持多模态智能体开发与应用，推动智能客服等工具规模化；有序推进智能驾驶在共享出行、物流运输等多场景应用；做强算运存协同布局的智算云网络，推广模型即服务（MaaS）；并支持开发面向家庭、养老、文旅等场景的具身智能整机产品，加速机器人向通用智能与精细化服务跃升。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpuj4yr0045lslaglcf8y5b2",
+      "title": "全球首次：MWC26 上海将举办\"人形机器人点球大战\"，宇树科技等 8 支队伍参赛、参演",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/957/938.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-01T00:55:00.000Z",
+      "summary": "全球首次\"人形机器人点球大战\"将于2026年6月在MWC上海举行。8支中国顶尖具身智能战队将进行自主对抗，无需人工操控或预设脚本。赛事旨在集中展示人形机器人在动态平衡、精准控制与自主决策等方面的技术突破。",
+      "category": "industry"
+    },
     {
       "id": "cmptzbrme00aasla8lu56k78h",
       "title": "OpenAI正式进军机器人领域并启动招聘",
@@ -361,76 +501,6 @@
       "source": "X：Google DeepMind (@GoogleDeepMind)",
       "publishedAt": "2026-05-26T11:28:20.000Z",
       "summary": "SynthID已为超过1000亿条内容添加水印，但透明度需要行业协作。\n因此，我们正与OpenAI、ElevenLabs和Kakao合作，将SynthID水印技术集成到他们的模型中--这延续了我们与NVIDIA共同推动的全行业趋势。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpmh9qz30oonsl01ee1xgzlj",
-      "title": "四个月花光全年 AI 预算，Uber 总裁质疑 AI 投入合理性",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/955/563.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-26T10:09:46.000Z",
-      "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmpmbf43e0n7xsl01lk5yoibm",
-      "title": "阿里云CTO阐述从云原生到智能体原生转型",
-      "title_en": "At #QwenConference2026， Dr. Feifei Li， CTO of Alibaba Cloud， President of International Business， ou…",
-      "url": "https://x.com/alibaba_cloud/status/2059174528786268669",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-26T07:27:19.000Z",
-      "summary": "在 #QwenConference2026 上，阿里云CTO、国际业务总裁李飞飞博士阐述了我们从云原生到智能体原生的转变。为了普及AI，我们构建了四大基石：模型、智能体云、工具与服务，以及规模。\n\n👉 敬请关注：https：//click.qwencloud.com/m/20000000187/",
-      "category": "industry"
-    },
-    {
-      "id": "cmplvrbvr0ja8sl01cwts44vh",
-      "title": "Anthropic 新模型震动金融圈，欧洲央行紧急开会要求升级网络防御",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/955/090.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-25T23:53:30.000Z",
-      "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmpltm5n30is2sl015yqdvfvt",
-      "title": "OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/955/078.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-25T22:59:12.000Z",
-      "summary": "多名开发者在 OpenAI Codex 后端日志中发现未官宣的 GPT-5.6 模型，内部代号 iris-alpha。该模型将支持 150 万 token 的上下文窗口，较当前 GPT-5.5 的 105 万 token 提升约 43%，有望于今年 6 月发布。测试显示，在输入达到 90 万 token 时仍能流畅响应。同系列还发现了 ember-alpha 与 beacon-alpha 版本。此外，GPT-5.6 在前端界面生成能力上也有所提升。基于爆料信息，Anthropic Claude、Google Gemini 及 xAI Grok 也可能瞄准同期发布新模型。",
-      "category": "industry"
-    },
-    {
-      "id": "cmplmpmdq0h63sl013njdyiug",
-      "title": "苹果据称正使用定制版1.2T参数Google模型重塑下一代Siri",
-      "title_en": "Apple isn't just adding Gemini to Siri. It is reportedly using a custom 1.2T-parameter Google model …",
-      "url": "https://x.com/kimmonismus/status/2058997271803674991",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-05-25T19:42:58.000Z",
-      "summary": "据报道，苹果为改造下一代Siri，正使用一个定制版、参数规模达1.2T的Google大模型作为其核心，这显著大于预估约300B参数的Gemini 3.5 Flash。该模型将驱动Siri的部分功能，其中简单查询预期会在本地设备运行。苹果面临的关键挑战是确保该大模型能够足够快速地响应日常问题。此外，下个月AI领域预计将有多项重要发布，包括WWDC上的Apple Intelligence与Gemini整合、GPT-5.6、可能的Sonnet 4.8/Opus 4.8，以及已确认的Gemini 3.5 Pro。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpn9vusg0vq6sl0195qmighr",
-      "title": "Anthropic任命KiYoung Choi为韩国代表董事",
-      "title_en": "Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening",
-      "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-05-25T16:00:00.000Z",
-      "summary": "Anthropic宣布任命KiYoung Choi为韩国代表董事，以支持其即将在首尔开设的办公室。根据Anthropic的经济指数，韩国是Claude.ai全球最活跃的市场之一，其使用率超过人口规模预期的3.5倍，主要用于技术和创意领域。KiYoung Choi此前曾担任Snowflake韩国区总经理，在Google Cloud、Adobe等公司拥有超过30年的科技行业领导经验。他将在韩国领导市场战略，支持本地企业和初创公司应用Claude，例如法律科技公司Law&Company及韩国电信巨头SK Telecom均已在使用Claude构建产品。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpldcxz10ew3sl01caeact4o",
-      "title": "教皇里奥呼吁在AI时代保持\"深刻的人性\"",
-      "title_en": "Pope Leo calls for being 'profoundly human' in the age of AI",
-      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
-      "source": "The Verge：AI（RSS）",
-      "publishedAt": "2026-05-25T15:05:07.000Z",
-      "summary": "教皇里奥十四世在首份重要通谕《Magnifica Humanitas》中警告了AI及不受约束的技术力量带来的风险。该通谕于2026年5月15日发布，是教皇关于\"在人工智能时代守护人\"的宣言。文件重点讨论了AI驱动战争的危险、AI对劳动的影响，以及建立新的法律和伦理框架来规范技术的必要性，强调AI的快速普及正造成经济和社会动荡，对个人的保护不足威胁着人类尊严。",
       "category": "industry"
     }
   ]

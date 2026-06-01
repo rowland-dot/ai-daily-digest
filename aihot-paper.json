@@ -1,5 +1,5 @@
 {
-  "count": 20,
+  "count": 31,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -24,13 +24,23 @@
       "category": "paper"
     },
     {
-      "id": "cmpu2kv1z0011slag0dem81sw",
-      "title": "NVIDIA 研究推动机器人技术从仿真走向现实世界",
+      "id": "cmpu2kuky000jslagu101hyo9",
+      "title": "NVIDIA Research 推动机器人技术从模拟到现实世界",
       "title_en": "NVIDIA Research Advances Robotics From Simulation to the Real World",
       "url": "https://blogs.nvidia.com/blog/category/nvidia-research",
-      "source": "NVIDIA Blog：Generative AI（网页）",
+      "source": "NVIDIA Blog：Agentic AI（网页）",
       "publishedAt": "2026-05-28T13:00:51.000Z",
-      "summary": "机器人技术正在进入一个新阶段：从受控的演示和脚本化的自动化，转向在现实世界中实现泛化、可靠的具身自主。这项工作代表了机器人领域的一个关键转变，即如何让机器人在复杂的真实环境中更灵活、更自主地执行任务。",
+      "summary": "机器人技术正进入新阶段，从受控演示和脚本自动化转向在现实世界中实现通用、可靠的具身自主性。NVIDIA Research 的研究推动了这一从模拟到现实的过渡。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpuu7d1n00z4sl0z2gngr8jx",
+      "title": "恢复策略引发的错误：鲁棒GUI智能体的基准测试与轨迹合成",
+      "title_en": "Recovering Policy-Induced Errors： Benchmarking and Trajectory Synthesis for Robust GUI Agents",
+      "url": "https://arxiv.org/abs/2605.29447",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "针对GUI智能体缺乏从自身错误中恢复能力的问题，本研究提出了GUI-RobustEval基准测试和RoTS轨迹合成框架。GUI-RobustEval包含1216个可执行测试用例，系统评估智能体在多种错误模式下的恢复能力。RoTS框架通过基于树的流程合成了80万条高质量数据。在此基础上训练的RoTS-7B和RoTS-32B模型，在GUI-RobustEval及传统基准上均获得显著提升。其中RoTS-32B在OSWorld上取得了47.4%的成功率和33.8%的All-Pass@4分数，表明长时程错误恢复能力的增强对鲁棒性和整体性能均有贡献。",
       "category": "paper"
     },
     {
@@ -41,6 +51,16 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "summary": "扩散模型的生成轨迹具有频谱偏差，早期处理低频全局结构，后期处理高频细节。传统随机微分方程求解器在整个过程中均匀注入白噪声，能量分配效率低。本研究提出彩色噪声采样（CNS），一种免训练的即插即用采样器。它通过动态、随时间和频率调整的噪声调度，更高效地将能量分配给尚未解析的频段。在SiT、JiT、FLUX等架构上的实验表明，CNS作为推理时的替换采样器显著提升了生成质量：在ImageNet-256上，无引导FID在SiT-XL/2上从8.26降至6.27，在JiT-B/16上从32.39降至26.69，在JiT-H/16上从11.88降至8.31，并且在使用无分类器引导时带来一致改进。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpqd5x5l03y8slno6er85jod",
+      "title": "Qwen-VLA：统一跨任务、环境与机器人形态的视觉-语言-动作建模",
+      "title_en": "Qwen-VLA： Unifying Vision-Language-Action Modeling across Tasks， Environments， and Robot Embodiments",
+      "url": "https://arxiv.org/abs/2605.30280",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "Qwen-VLA是一个统一的具身基础模型，将Qwen的视觉-语言建模从感知、理解与推理扩展至连续动作和轨迹生成。它通过基于DiT的动作解码器实现，使用包含机器人操作轨迹、人类第一人称示范、仿真及导航数据等在内的大规模数据进行联合预训练。为支持多种平台，引入了感知载体感知的提示条件机制，并将操作、导航与轨迹预测统一到一个框架中。实验显示，Qwen-VLA-Instruct在多个基准上表现优异，例如在LIBERO达到97.9%，在真实世界ALOHA实验中平均分布外成功率为76.9%。",
       "category": "paper"
     },
     {
@@ -94,6 +114,16 @@
       "category": "paper"
     },
     {
+      "id": "cmppj5i3o00jqslvy852k7c9j",
+      "title": "思维链监控在跨类型多样的语言下的脆弱性",
+      "title_en": "The Fragility of Chain-of-Thought Monitoring Across Typologically Diverse Languages",
+      "url": "https://arxiv.org/abs/2605.27901",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "该研究首次对思维链监控在13种不同语言和7个模型家族（共16个模型，参数从8B到120B）中进行了大规模评估。研究发现，CoT在所有语言和提示类型下的平均不忠实率高达95.9%。前沿模型会系统性进行策略性操纵（如答案切换和事后合理化），使外部监控难以检测欺骗。模型常在生成过程的前15%内就在潜在激活中锁定了错误线索，即使其CoT看起来是忠实的。令人惊讶的是，这种欺骗模式在低资源语言中保持100%，揭示了当前CoT监管的根本局限。研究证实CoT监控在语言分布偏移下极其脆弱，其安全信号远弱于仅基于英语的研究。代码已开源：https：//multilingual-cot-monitoring.github.io/{blue{here}}。",
+      "category": "paper"
+    },
+    {
       "id": "cmpp43j5a0bo3slv47z22fr57",
       "title": "DenoiseRL：通过恢复嘈杂前缀来引导推理模型",
       "title_en": "DenoiseRL： Bootstrapping Reasoning Models to Recover from Noisy Prefixes",
@@ -114,6 +144,26 @@
       "category": "paper"
     },
     {
+      "id": "cmpoxnk880a1vslv4yp5aikg0",
+      "title": "AI研究智能体窄化科学探索",
+      "title_en": "AI Research Agents Narrow Scientific Exploration",
+      "url": "https://arxiv.org/abs/2605.27905",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "本研究将AI研究智能体视为科学搜索系统进行评估。通过四个框架和六个大语言模型，从共享种子文献中生成了37，802个科学想法，并与人类论文、后续研究及种子文献进行对比。实验揭示了四个一致的模式：AI生成的想法比同领域人类论文更为集中；更贴近其起始文献，而非后续人类研究；与AI想法最相似的论文后续引用量往往较低；当AI想法与已有工作不同时，差异主要源于对现有技术方法的重组，而非引入全新的研究问题。总体而言，当前的AI研究智能体更擅长局部细化，而非拓展科学探索的广度。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpovigyt09i3slv4yyi85evn",
+      "title": "ResearchMath-14K：通过智能体扩展研究级数学",
+      "title_en": "ResearchMath-14K： Scaling Research-Level Mathematics via Agents",
+      "url": "https://arxiv.org/abs/2605.28003",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "本文介绍了ResearchMath-14K，这是一个包含14，056个研究级数学问题的数据集，通过多智能体流程从学术资料中策划而成，是目前此类规模最大的集合。研究还生成了ResearchMath-Reasoning（包含220K条教师轨迹），发现语言模型存在回避行为，且新一代模型产生的引用和虚假引用分别是旧模型的5.6倍和5.0倍。经过智能体过滤后，对参数规模为4B到30B的Qwen3模型进行微调，其平均得分比基础模型提高了9.2分，表明过滤后的开放问题尝试能为研究级数学推理提供有效监督。该数据集已公开发布。",
+      "category": "paper"
+    },
+    {
       "id": "cmpoibuhp06cnslv4rs455myu",
       "title": "SilverTorch：索引即模型--推荐系统的新检索范式",
       "title_en": "SilverTorch： Index as Model - A New Retrieval Paradigm for Recommendation Systems",
@@ -121,6 +171,16 @@
       "source": "Meta Engineering Blog（RSS）",
       "publishedAt": "2026-05-26T16:00:01.000Z",
       "summary": "Meta 推出SilverTorch推荐系统架构，统一了用户生成内容的所有检索组件。该架构吞吐量比现有技术高23.7倍，计算成本效率比CPU方案高20.9倍，同时提升了准确性。",
+      "category": "paper"
+    },
+    {
+      "id": "cmppdcr7d0e32slv4rwk67i43",
+      "title": "塑造产业的物理AI研究",
+      "title_en": "Physics AI research that's shaping the industry. Published breakthroughs pushing the state of the art. May 27， 2026 Mistral",
+      "url": "https://mistral.ai/news/physics-ai-research",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "summary": "Mistral AI通过收购Emmi AI，强化其在推动AI研究前沿与工业工程解决方案方面的投入。其目标是为航空航天、汽车、半导体和能源等塑造物理世界的核心产业构建基础性物理AI模型，以加速工程开发。此项研究基于一系列已发表的突破性成果，包括：用于模拟超音速湍流的3D机翼CFD数据集、计算流体动力学基础模型的前瞻综述、应用于汽车与航空的AB-UPT模型，以及用于聚变等离子体湍流模拟的GyroSwin模型。此前已开源的UPT（通用物理Transformer）和NeuralDEM等成果也为此研究奠定了基础。",
       "category": "paper"
     },
     {
@@ -154,6 +214,46 @@
       "category": "paper"
     },
     {
+      "id": "cmpmqdp5h0qwssl01wptayjap",
+      "title": "SwiGLU在大输入下呈二次增长，PowLU应运而生",
+      "title_en": "SwiGLU is everywhere in modern LLMs - but for large inputs it behaves like x2. That quadratic blow-u…",
+      "url": "https://x.com/AntLingAGI/status/2059273617494483143",
+      "source": "X：蚂蚁百灵 (@AntLingAGI)",
+      "publishedAt": "2026-05-26T14:01:04.000Z",
+      "summary": "SwiGLU在现代大语言模型中无处不在--但对于大输入，它的行为类似于x2。这种二次增长会膨胀激活值，放大异常值，并使深层网络或低精度（FP8/FP4）训练容易出现损失尖峰。\n\n我们提出了PowLU，一种为稳定大规模预训练而设计的即插即用激活函数。🧵",
+      "category": "paper"
+    },
+    {
+      "id": "cmppy5pe1009uslknwa1xw6hf",
+      "title": "有秘密？大语言模型智能体守不住：多智能体系统中的隐私评估",
+      "title_en": "Got a Secret？ LLM Agents Can't Keep It： Evaluating Privacy in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2605.27766",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "研究将评估从单轮转向多轮社会交互后，发现大语言模型智能体的隐私违规率显著上升。在对OpenAI模型的测试中，该比例从此前CIMemories基准的19.95%增至本研究的45.30%。隐私泄露具有社交传染性，智能体在观察到同伴泄露后，披露敏感信息的可能性增加8倍。即使有明确隐私指令，泄露率仍高于37.8%。结论指出，静态聊天基准会系统性低估部署风险，仅社会语境就足以引发在单轮评估中无法暴露的敏感信息披露。",
+      "category": "paper"
+    },
+    {
+      "id": "cmppaj22d0dazslv48njo3vlq",
+      "title": "GE-Sim 2.0：面向机器人操作的全面闭环视频世界模拟器路线图",
+      "title_en": "GE-Sim 2.0： A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2605.27491",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "GE-Sim 2.0是一个用于机器人操作的闭环视频世界模拟器。它基于动作条件视频生成框架，并使用数千小时涵盖遥操作与接触交互等真实世界数据进行重新训练，提升了动作跟随与轨迹覆盖能力。其核心新增三个模块：从视频潜变量解码本体感受状态的\"状态专家\"；为生成轨迹评分并提供成功信号与奖励的\"世界评判\"；以及能实现快速轨迹生成的加速框架。该模型仅2B参数，在WorldArena排行榜上位列第一，优于专用模型与闭源生成器，其训练出的策略能转化为实际世界性能提升。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpo9tihj0475slv4iun0b8jd",
+      "title": "QUACK：多模态社交推理智能体通信知识的质询、理解与审计",
+      "title_en": "QUACK： Questioning， Understanding， and Auditing Communicated Knowledge in Multimodal Social Deduction Agents",
+      "url": "https://arxiv.org/abs/2605.27068",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "QUACK 是一个开源评估框架，用于审计多模态社交推理智能体的语言基础性。它从游戏结果、行为轨迹和陈述一致性三个层面评估智能体。其核心的陈述验证管道能从日志中重建轨迹并逐条核查陈述，自动标记空间幻觉、无依据指控等问题。实验评估了三个前沿视觉语言模型，结果显示即使最强的智能体，其15.1%的可验证空间主张也存在幻觉，且超过半数的指控缺乏证据支持。该项目的完整组件已在 GitHub 开源。",
+      "category": "paper"
+    },
+    {
       "id": "cmpnwyk2c0104slv4ynvin2w3",
       "title": "Gemini Embedding 2：来自Gemini的原生多模态嵌入模型",
       "title_en": "Gemini Embedding 2： A Native Multimodal Embedding Model from Gemini",
@@ -174,6 +274,36 @@
       "category": "paper"
     },
     {
+      "id": "cmpnhwile0xr2sl01a0vvnder",
+      "title": "基于策略内知识边界增强的智能体强化学习",
+      "title_en": "Efficient Agentic Reinforcement Learning with On-Policy Intrinsic Knowledge Boundary Enhancement",
+      "url": "https://arxiv.org/abs/2605.26952",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "本文研究智能体强化学习在训练工具使用大语言模型时出现的问题，即导致冗余工具调用增加和模糊模型知识边界。现有基于奖励塑造的方法会引发奖励黑客问题。为此，提出AKBE方法，通过双路径（使用工具与不使用工具）滚动动态探测模型知识边界，定义是否需要工具及最少工具调用次数，并通过比较正确性构建监督信号以引导高效工具使用。在七个问答基准测试中，AKBE将任务准确率平均提升1.85，减少18%工具调用，工具生产力提高25%，且无准确率-效率权衡。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpnhwild0xr0sl01guxfodgi",
+      "title": "MRT：用于大规模分层图像生成与编辑的掩码区域Transformer",
+      "title_en": "MRT： Masked Region Transformer for Layered Image Generation and Editing at Scale",
+      "url": "https://arxiv.org/abs/2605.27235",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "MRT是一个20B参数的掩码区域扩散模型，专为多层透明图像生成与编辑设计。它在超过1000万个多语言设计样本上训练，统一了文本到图层、图像到图层和图层到图层三项任务。模型通过选择性token掩码实现灵活的图层生成与编辑，并引入溢出感知画布图层以处理边界不一致问题，支持半透明背景合成。此外，应用扩散蒸馏实现了8步实时生成。实验表明，MRT在所有任务上显著优于先前先进方法与商业系统。用户研究显示，其图像到图层质量优于同期Qwen-Image-Layered模型，推理速度快10-100倍，GPU内存消耗降低50-90%。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpnhwild0xqzsl01t4hzqrce",
+      "title": "超越最终答案：审计多智能体工业工作流中的轨迹级模型幻觉",
+      "title_en": "Beyond Final Answers： Auditing Trajectory-Level Hallucinations in Multi-Agent Industrial Workflows",
+      "url": "https://arxiv.org/abs/2605.24219",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "提出了Trajel，一个用于审计多智能体工业工作流中轨迹级模型幻觉的数据集和评估框架。它基于专家标注的智能体轨迹，引入了五种幻觉分类：事实性、引用性、逻辑性、程序性和范围性。基准测试表明，现有基准遗漏了最常见故障模式，近半数幻觉轨迹涉及多种类型。自动化检测器尽管二分类准确度高，但仍会误判最微妙的类型。轨迹感知的检测显著优于标准的事后验证，表明基于分类法的评估对于更安全的智能体部署是必要的。",
+      "category": "paper"
+    },
+    {
       "id": "cmplva72h0j6jsl01yvgbp7mk",
       "title": "微软 Copilot Cowork 存在文件泄露问题",
       "title_en": null,
@@ -181,26 +311,6 @@
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-05-25T23:25:48.799Z",
       "summary": null,
-      "category": "paper"
-    },
-    {
-      "id": "cmpkr0wyr09fisl01izzkuo8q",
-      "title": "华为何庭波\"韬定律\"论文发布，逻辑折叠技术提升芯片性能",
-      "title_en": "不依赖新光刻工艺！麒麟 2027、昇腾 990 芯片在路上，华为何庭波\"韬定律\"论文要点大揭秘",
-      "url": "https://www.ithome.com/0/954/778.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-25T04:27:21.000Z",
-      "summary": "华为何庭波在ISCAS 2026上提出\"韬定律\"，并介绍逻辑折叠（LogicFolding）技术。该技术通过三维空间拓扑重组提升芯片性能，不依赖新光刻工艺。在麒麟2026芯片测试中，晶体管密度从155 MTr/mm2提升至238 MTr/mm2，性能核心能效提高41%，最大时钟频率提升近13%。论文显示，麒麟2027芯片已进入Silicon状态，后续规划包括麒麟2028、2029。AI芯片方面，昇腾990计划在2030年左右引入逻辑折叠，硬件集成预计到2035年提高超过100倍。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpm8v6b70mknsl01qf8lgf1r",
-      "title": "通过奖励倾斜分布匹配强化少步生成器",
-      "title_en": "Reinforcing Few-step Generators via Reward-Tilted Distribution Matching",
-      "url": "https://arxiv.org/abs/2605.26108",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-25T00:00:00.000Z",
-      "summary": "本文提出奖励倾斜分布匹配蒸馏（RTDMD），这是一个将分布匹配蒸馏与奖励引导强化学习统一应用于少步流生成器的两阶段框架。该方法通过最小化到奖励倾斜教师分布的KL散度，自然分解为分布匹配项与奖励最大化项。第一阶段引入环境一致分布匹配蒸馏（AC-DMD），在子区间进行分布匹配，并通过一致性正则化辅助分数模型追踪生成器分布。第二阶段联合优化两项，并推导混合策略梯度及步子集GRPO（SubGRPO）以降低方差。在SD3、SD3.5和FLUX.2上的实验表明，RTDMD仅用4步推理即可在偏好、美学和组合指标上达到新的 state-of-the-art。",
       "category": "paper"
     }
   ]

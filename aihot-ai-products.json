@@ -1,16 +1,136 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5ODMwNjc3MDAwLCJpIjoiY21wbjVybmozMHVxdHNsMDE2Ym9zajdsaSJ9",
+  "nextCursor": "eyJhIjoxNzc5OTA0Njg0MDAwLCJpIjoiY21wb2RkbmNuMDUzeXNsdjQyOGF1MzlzMyJ9",
   "items": [
     {
-      "id": "cmpu58ppf00syslagod0p5uv7",
-      "title": "DeepSeek V4 Flash 已上线 OpenCode Zen",
-      "title_en": "DeepSeek V4 Flash is now available in OpenCode Zen",
-      "url": "https://x.com/opencode/status/2061153857321775209",
-      "source": "X：opencode (@opencode)",
-      "publishedAt": "2026-05-31T18:32:28.000Z",
-      "summary": "DeepSeek V4 Flash 现已在 OpenCode Zen 上线。",
+      "id": "cmpvs3efm015wslukv1os8v5x",
+      "title": "ChatGPT 新增长文编辑与保存功能",
+      "title_en": "Long-form writing works better with a little more space. Now you can edit longer pieces in full-sc…",
+      "url": "https://x.com/ChatGPTapp/status/2061571468992126982",
+      "source": "X：ChatGPT (@ChatGPTapp)",
+      "publishedAt": "2026-06-01T22:11:55.000Z",
+      "summary": "长文写作需要更多空间。\n\n现在你可以在全屏模式下编辑更长的文章，并将其保存到你的资料库中，以便稍后继续。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvpam6b00h8sluknoirrj6e",
+      "title": "Krea AI 开放 Krea 2 LoRAs 全员使用",
+      "title_en": "Krea 2 LoRAs are now available to everyone. try this one below 👇",
+      "url": "https://x.com/krea_ai/status/2061554472925696128",
+      "source": "X：Krea AI (@krea_ai)",
+      "publishedAt": "2026-06-01T21:04:22.000Z",
+      "summary": "Krea 2 LoRAs 现已向所有人开放。\n试试下面这个 👇",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvmm0ab00ndslfpbxb2m5kh",
+      "title": "Replit 用单个提示词构建完整业务",
+      "title_en": "Can you build a real business for free with a single prompt？ Starting today on Replit， the answer …",
+      "url": "https://x.com/Replit/status/2061534759520760112",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-06-01T19:46:02.000Z",
+      "summary": "你能用单个提示词免费构建一个真实的业务吗？\n\n从今天起，在 Replit 上，答案是肯定的。\n\n从一个提示词开始，获得一个网站、移动应用、幻灯片和发布视频。\n此外，还能解锁使用 @stripe @atlas， @QuickBooks， @mercury & @doolaHQ 运营业务的福利。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvij4w2002vslykng47v8ya",
+      "title": "Perplexity发布Search as Code搜索架构",
+      "title_en": "Introducing Search as Code， our new search architecture for AI agents. It writes Python that calls …",
+      "url": "https://x.com/perplexity_ai/status/2061506359326384319",
+      "source": "X：Perplexity (@perplexity_ai)",
+      "publishedAt": "2026-06-01T17:53:11.000Z",
+      "summary": "推出Search as Code，我们为AI智能体打造的全新搜索架构。\n\n它直接编写Python代码调用我们的搜索栈，而非逐个循环函数调用。\n\n现已在Perplexity Agent API中提供，并成为Computer的默认选项。\n\nhttps：//research.perplexity.ai/articles/rethinking-search-as-code-generation",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvf7a5k06b9sl0zz7qam8wm",
+      "title": "Auto Router 新增成本质量权衡参数",
+      "title_en": "The Auto Router now lets you tune how it weighs cost against quality. New `cost_quality_tradeoff` p…",
+      "url": "https://x.com/OpenRouter/status/2061476882470580329",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-06-01T15:56:03.000Z",
+      "summary": "Auto Router 现在允许你调整其在成本与质量之间的权衡。\n新增 `cost_quality_tradeoff` 参数，范围 0 到 10：\n设为 0 时，它总是选择最强大的模型，无论价格如何。设为 10 时，最便宜的模型胜出。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpv8b6wa04jvsl0zc4newlns",
+      "title": "OpenBMB发布UltraData两大开源数据集，登顶HuggingFace趋势榜",
+      "title_en": "🏆 Big news！ UltraData just hit #1 AND #2 on HuggingFace Trending worldwide！ 🎉 Released by OpenBMB …",
+      "url": "https://x.com/OpenBMB/status/2061432928492810535",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-06-01T13:01:24.000Z",
+      "summary": "OpenBMB联合清华NLP与Modelbest发布两个开源数据集：Ultra-FineWeb-L3（预训练合成数据）包含600B+ tokens（超400B英文、200B+中文），是迄今最大开源中文预训练合成数据集；UltraData-SFT-2605（后训练SFT数据）包含15M+样本，是中国首个开源且包含思考与非思考标注的大规模SFT数据集，覆盖数学、代码、知识和指令遵循。两者均基于UltraData L0-L4框架构建，并在MiniCPM5-1B训练中完成验证。数据集已在HuggingFace免费开放。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpv3pmle03drsl0zpaegquwp",
+      "title": "Apache RocketMQ 发布 AI 专用消息引擎",
+      "title_en": "🚀 Apache RocketMQ just leveled up for AI！ Introducing RocketMQ for AI-a new message engine built fo…",
+      "url": "https://x.com/alibaba_cloud/status/2061400724018217381",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-06-01T10:53:26.000Z",
+      "summary": "🚀 Apache RocketMQ 为 AI 升级！推出 RocketMQ for AI--一个专为长时间会话、多智能体工作流和公平资源调度构建的新消息引擎。凭借 Lite-Topics、有序消息和智能流量整形，它解决了状态丢失、级联故障和突发负载问题。由阿里云大规模构建，现已开源。\n\n了解更多： https：//int.alibabacloud.com/m/1000413178/\n\n#RocketMQ #AI #CloudNative",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvqq6bd00ubslukf8jsko23",
+      "title": "OpenAI前沿模型与Codex现可在AWS上使用",
+      "title_en": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-01T10:00:00.000Z",
+      "summary": "OpenAI的前沿模型与Codex现已在AWS上全面可用。企业客户可通过其现有的AWS环境、控制与采购流程来使用OpenAI的AI技术，从而加速从评估到生产部署的过程。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpuzjn4q02bzsl0zm8pgfo93",
+      "title": "腾讯混元发布智能体长期记忆插件Hy-Memory",
+      "title_en": "🚀We're excited to officially release Hy-Memory - a powerful memory plugin built specifically for lo…",
+      "url": "https://x.com/TencentHunyuan/status/2061372535267357029",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-06-01T09:01:25.000Z",
+      "summary": "腾讯混元正式发布专为OpenClaw等长期协作智能体（Agent）设计的记忆插件 Hy-Memory。它基于6层记忆框架、System1/System2双系统与三层进化链构建，旨在成为智能体的\"第二大脑\"。该插件解决了记忆碎片化问题，实现了显著性能提升：记忆数量减少70%以上，单条记忆信息密度提升45%以上，在超长上下文场景中token消耗降低35%，记忆更新速度提升20%。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpuse81v00hrsl0zr2uqw9km",
+      "title": "NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体",
+      "title_en": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
+      "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain",
+      "source": "NVIDIA Blog：Agentic AI（网页）",
+      "publishedAt": "2026-06-01T05:00:47.000Z",
+      "summary": "NVIDIA 在 GTC Taipei 发布了 NVIDIA 工厂运营蓝图（FOX），这是一个用于构建自主工厂管理智能体的参考设计。该蓝图基于 NVIDIA NemoClaw、AI-Q Blueprint 和 NVIDIA Nemotron 开源模型构建，旨在为工厂提供一个统一的决策层，以连接实时机器信号、质量数据和操作警报，实现快速问题解决。蓝图针对 NVIDIA DGX Station 桌面 AI 超级计算机进行了优化。首批采用者包括富士康、和硕、研华和纬创。富士康利用 FOX 和 NemoClaw 构建了 MoMClaw 多智能体系统，预计将根源分析时间缩短 80%，劳动生产率提高 15%，机器故障率降低 10%。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpuse81w00husl0zx3yib4u9",
+      "title": "NVIDIA 发布 RTX Spark 及本地 AI 智能体安全与性能更新",
+      "title_en": "NVIDIA Levels Up Local AI Agents Across RTX PCs and DGX Spark",
+      "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents",
+      "source": "NVIDIA Blog：Agentic AI（网页）",
+      "publishedAt": "2026-06-01T04:30:11.000Z",
+      "summary": "NVIDIA 发布了 RTX Spark，一款专为本地 AI 智能体设计的 Windows 电脑，提供 1 petaflops AI 算力与 128GB 统一内存。其推出的 OpenShell 运行时与微软合作，基于新的 Windows 安全原语，确保智能体在设备端安全私密运行。性能方面，通过在 llama.cpp 中采用多 token 预测等优化，Qwen 3.6 和 3.5 27B 模型推理吞吐量提升最高达 2 倍，35B 模型提升 1.6 倍；多 GPU 优化使 llama.cpp 和 ComfyUI 获得最高 2 倍性能提升。此外，Adobe、Blender 等应用也进行了更新。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpuqq2mt0027sl0zrbpifgdh",
+      "title": "NVIDIA Vera CPU 为AI工厂的智能体工作负载设立新标准",
+      "title_en": "NVIDIA Vera CPU Sets a New Standard for Agentic Workloads in AI Factories",
+      "url": "https://developer.nvidia.com/blog/nvidia-vera-cpu-sets-a-new-standard-for-agentic-workloads-in-ai-factories",
+      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
+      "publishedAt": "2026-06-01T03:59:15.000Z",
+      "summary": "NVIDIA Vera CPU 旨在为AI工厂中智能体工作负载树立新性能标杆。文章阐述了AI领域扩展规律的演变：预训练通过更大数据集、更多参数和大规模并行GPU系统扩展智能；后训练通过指令微调扩展实用性，并重新调整GPU用于生成式推理；测试时缩放则通过给模型更多生成token来提升推理能力。当前，智能体AI与强化学习正推动下一阶段的扩展。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpuokbhx006jslbr3qxktcmy",
+      "title": "NVIDIA DSX OS 提供开放、模块化软件用于规模化运营AI工厂",
+      "title_en": "NVIDIA DSX OS Delivers Open， Modular Software for Operating AI Factories at Scale",
+      "url": "https://developer.nvidia.com/blog/nvidia-dsx-os-delivers-open-modular-software-for-operating-ai-factories-at-scale",
+      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
+      "publishedAt": "2026-06-01T03:36:52.000Z",
+      "summary": "NVIDIA DSX 平台为设计、模拟和构建 AI 工厂提供完整解决方案，旨在应对不断增长的智能需求。该平台通过开放、模块化的软件栈，帮助运营方更快地扩展规模、提高效率，并降低从能源、芯片、基础设施、模型到应用这五层架构的整体智能成本。",
       "category": "ai-products"
     },
     {
@@ -111,6 +231,16 @@
       "source": "X：OpenAI (@OpenAI)",
       "publishedAt": "2026-05-29T18:30:34.000Z",
       "summary": "Windows用户，这条消息是给你的。\n\n计算机使用功能现已在Windows上可用，因此Codex可以在你的Windows电脑上执行操作。\n\n通过ChatGPT移动应用中Codex的Windows支持，你可以在工作继续在Windows电脑上进行时，随时随地启动、审查和引导任务。\n\n这是一项早期体验，但我们正在努力提供更多方式，让你的工作无论身在何处都能持续进行。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvmbw1000l1slfptyrmi9lg",
+      "title": "OpenRouter融合预算模型性能超越GPT-5.5与Claude Opus 4.7",
+      "title_en": "Surpassing Frontier Performance with Model Fusion",
+      "url": "https://openrouter.ai/announcements/fusion-beats-frontier",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-05-29T18:00:00.000Z",
+      "summary": "一组预算模型通过OpenRouter平台进行模型融合，在包含100个复杂研究任务的评估中，得分超过了GPT-5.5与Claude Opus 4.7。",
       "category": "ai-products"
     },
     {
@@ -371,136 +501,6 @@
       "source": "X：Sky Computing Lab (@haoailab)",
       "publishedAt": "2026-05-27T17:58:04.000Z",
       "summary": "🚀仅需7秒即可生成30秒1080p视频！\n\n我们开源了FastVideo Dreamverse：基于单张NVIDIA B200 GPU和LTX-2模型，实现实时视频生成的氛围引导工具。\n\nRepo： https：//github.com/hao-ai-lab/FastVideo/tree/main/apps/dreamverse\nBlog： https：//haoailab.com/blogs/fastvideo-dreamverse-release/",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpscn37j008zsluzbufyuq1s",
-      "title": "NVIDIA RTX 面向游戏开发者的更新：适用于 UE5 的 DLSS 4.5 与多语言 AI 角色",
-      "title_en": "What's New for Game Developers in NVIDIA RTX： DLSS 4.5 for UE5 and Multilingual AI Characters",
-      "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-in-nvidia-rtx-dlss-4-5-for-ue5-and-multilingual-ai-characters",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-05-27T16:59:58.000Z",
-      "summary": "NVIDIA RTX 为游戏开发者提供了实现 AI 驱动角色、帧生成和光线追踪渲染的直接路径。NVIDIA ACE 扩展了多语言 AI 角色能力，使开发者更易于构建对话式 NPC。NVIDIA DLSS 4.5 作为 Unreal Engine （UE） 插件发布。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppua8gx0183slm67cnmtqp8",
-      "title": "使用 Google Pay & Wallet Developer MCP server 加速你的集成工作流",
-      "title_en": "Supercharge your integration workflow with the Google Pay & Wallet Developer MCP server",
-      "url": "https://developers.googleblog.com/supercharge-your-integration-workflow-with-the-google-pay-wallet-developer-mcp-server",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-05-27T16:00:00.000Z",
-      "summary": "Google 推出 Google Pay & Wallet Developer MCP server，这是一款开放标准工具，旨在将 AI 开发助手和 IDE 安全连接到实时的 API 与账户上下文。开发者无需离开开发环境，即可搜索官方文档、验证 Wallet pass 定义、检查集成状态以及管理商户账户。该集成旨在通过减少上下文切换并提供实时、可靠的 AI 支持来减少开发摩擦，从而加速开发工作流。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpprfa7400hmslm6nclfncqk",
-      "title": "在Claude Code中引入动态工作流",
-      "title_en": "Introducing dynamic workflows in Claude Code",
-      "url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-05-27T16:00:00.000Z",
-      "summary": "Claude Code 推出\"动态工作流\"功能，使 Claude 能端到端处理复杂任务。该功能通过动态编写脚本，在单个会话中并行运行数十到数百个子智能体来完成工作，并会在结果呈现前进行验证。它适用于跨代码库的 bug 查找、大规模迁移（如将 Bun 从 Zig 移植到 Rust）等需要多角度分析的任务。该功能现已在研究预览阶段可用，支持 Claude Code CLI、桌面端、VS Code 扩展以及 API、Amazon Bedrock、Vertex AI 等平台，面向 Max、Team 及已启用的 Enterprise 计划用户。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpo929df03ztslv4z9v93608",
-      "title": "Perplexity开源Unigram分词器降低CPU占用",
-      "title_en": "We're open-sourcing the Unigram tokenizer we rebuilt to reduce CPU utilization by 5-6x. Small reran…",
-      "url": "https://x.com/perplexity_ai/status/2059664738087469511",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-05-27T15:55:14.000Z",
-      "summary": "我们开源了重新构建的Unigram分词器，可将CPU占用降低5-6倍。\n小型重排序器和嵌入模型在GPU上运行时间仅为个位数毫秒，使得CPU分词成为总延迟的重要组成部分。\nhttp：//github.com/perplexityai/pplx-garden",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpo8ubaz03ycslv4xm8w369g",
-      "title": "Claude Marketplace 新增五家合作伙伴",
-      "title_en": "New in the Claude Marketplace： @augmentcode， @boltdotnew， @coderabbitai， @hebbia， and @WeAreLegora. …",
-      "url": "https://x.com/claudeai/status/2059662933924123044",
-      "source": "X：Claude (@claudeai)",
-      "publishedAt": "2026-05-27T15:48:04.000Z",
-      "summary": "Claude Marketplace 新增成员：@augmentcode、@boltdotnew、@coderabbitai、@hebbia 和 @WeAreLegora。\n\n您现有的 Anthropic 消费承诺可用于购买其 Claude 驱动的产品。\n\n了解更多：http：//claude.com/platform/marketplace",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpo7308x03j5slv44eeuz2v1",
-      "title": "Krea 2 API发布，支持多平台与智能体",
-      "title_en": "today， we're releasing the API for Krea 2. now available in platforms like @fal or @ComfyUI， throu…",
-      "url": "https://x.com/krea_ai/status/2059650622203515143",
-      "source": "X：Krea AI (@krea_ai)",
-      "publishedAt": "2026-05-27T14:59:09.000Z",
-      "summary": "今天，我们发布了 Krea 2 的 API。\n现已在 @fal 或 @ComfyUI 等平台可用，通过 @NousResearch 的 Hermes 等智能体使用，并全面支持 Claude、Codex 或 OpenClaw。\n了解如何设置 👇",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpo55l4u030yslv4mwofhkbw",
-      "title": "Runway 推出 Model Context Protocol 服务器",
-      "title_en": "Introducing Runway MCP",
-      "url": "https://runwayml.com/news/mcp",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-05-27T14:09:52.649Z",
-      "summary": "Runway 正式推出 Runway MCP 服务器，允许任何兼容 MCP 的 AI 智能体（如 Claude、ChatGPT、Cursor）在对话界面中直接生成图像与视频，无需切换工作流。该服务器接入了 Runway 最新的多款 SOTA 模型，包括 Gen-4.5、Seedance 2.0、GPT Image 2、Kling 3.0 及 Nano Banana Pro。其应用场景涵盖为产品制作营销视频、批量生成网站视觉素材、创作角色广告以及在应用开发中集成视觉内容。用户设置简便，通过 runwayml.com/mcp 添加服务器并登录现有 Runway 账户即可使用，无需单独申请 API 密钥。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpnyfa3i01dmslv48x2rbk90",
-      "title": "Qoder平台限时半价使用Qwen3.7-Max模型",
-      "title_en": "🙌🙌",
-      "url": "https://x.com/Alibaba_Qwen/status/2059586373456380225",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "publishedAt": "2026-05-27T10:43:51.000Z",
-      "summary": "🙌🙌\n\n【引用 @qoder_ai_ide】：Qwen3.7-Max，半价。\n\n从今天起，Qwen3.7-Max--Qwen（Qwen）家族的最新旗舰模型--在Qoder上半价提供。限时活动。\n\n新用户？你每天还能获得100次免费模型调用。自动应用，无需领取，无需开关。\n桌面端、JetBrains插件、CLI、QoderWork、QoderWake--全部覆盖。\n\n现在正是用它处理难题的好时机。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpne4ihk0wscsl012kwlngba",
-      "title": "Claude Code v2.1.152 更新发布",
-      "title_en": "v2.1.152",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-05-27T01:30:59.000Z",
-      "summary": "Claude Code 发布 v2.1.152 版本更新。核心改进包括：`/code-review --fix` 现在会将审查建议直接应用于工作目录；技能与斜杠命令支持通过 frontmatter 的 `disallowed-tools` 移除模型工具；新增 `/reload-skills` 命令可不重启会话重新扫描技能目录；`SessionStart` 钩子现可返回 `reloadSkills： true` 重新扫描技能，并可通过 `hookSpecificOutput.sessionTitle` 设置会话标题；新增 `MessageDisplay` 钩子事件以变换或隐藏助手消息。其他更新涉及插件市场管理、主模型不可用时自动切换至 `--fallback-model`、会话用量统计优化等。同时修复了终端样式退化、沙箱警告显示、思考摘要、MCP 服务器去重、远程会话连接及多种会话卡顿问题。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpo5j5lm034mslv4qv9h13v8",
-      "title": "通过万亿参数与 Hub Bucket 实现增量权重同步：TRL 中的增量权重同步",
-      "title_en": "Shipping a Trillion Parameters With a Hub Bucket： Delta Weight Sync in TRL",
-      "url": "https://huggingface.co/blog/delta-weight-sync",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "本文标题涉及 Hugging Face TRL 框架中一项具体的增量权重同步技术。正文重申了 Hugging Face 的核心使命，即致力于通过开源和开放科学，来推动人工智能的进步与普及。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpscn37j0090sluz6aa6ax62",
-      "title": "通过 NVIDIA CompileIQ 自动调优，提取更多内核性能",
-      "title_en": "Extract More Kernel Performance with NVIDIA CompileIQ Auto-Tuning",
-      "url": "https://developer.nvidia.com/blog/extract-more-kernel-performance-with-nvidia-compileiq-auto-tuning",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-05-26T22:08:56.000Z",
-      "summary": "NVIDIA 推出了 CompileIQ 自动调优工具，旨在解决性能工程中的一个核心难题：为特定工作负载（例如 GPU 上的 LLM 推理管道）寻找能发挥最佳性能的编译器选项。即使在对批大小、FP8 量化、flash attention 和内核融合等已进行全面优化后，该工具仍可能通过编译器选项的自动搜索，进一步提升内核性能。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpscn37j0092sluzhh4p6v0u",
-      "title": "NVIDIA CUDA 13.3 增强 GPU 开发，引入 C++ Tile 编程、编译器自动调优与 Python 更新",
-      "title_en": "NVIDIA CUDA 13.3 Enhances GPU Development with Tile Programming in C++， Compiler Autotuning， and Python Updates",
-      "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-3-enhances-gpu-development-with-tile-programming-in-c-compiler-autotuning-and-python-updates",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-05-26T21:39:17.000Z",
-      "summary": "NVIDIA 发布了 CUDA 13.3，为开发者带来多项新功能与性能优化。此次更新的核心亮点是引入了 NVIDIA CUDA Tile 编程功能，该功能允许开发者使用 C++ 进行高层级、基于 Tile 的内核开发，并能自动管理复杂的底层 GPU 细节，从而优化性能与可移植性。此外，本次更新还包括了编译器的自动调优功能以及对 Python 生态的更新。CUDA Tile 编程现已支持 Compute Capability 9.0 架构。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpn5rnj30uqtsl016bosj7li",
-      "title": "Claude Code推出安全漏洞识别插件",
-      "title_en": "We've shipped a security-guidance plugin for Claude Code that helps identify and fix vulnerabilities…",
-      "url": "https://x.com/ClaudeDevs/status/2059385239781384341",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-05-26T21:24:37.000Z",
-      "summary": "我们为Claude Code发布了一个安全指导插件，可在编写代码时帮助识别和修复漏洞。\n所有Claude Code用户均可使用。从插件市场（/plugins）安装。",
       "category": "ai-products"
     }
   ]
