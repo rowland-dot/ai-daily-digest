@@ -1,8 +1,218 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzc5OTA0Njg0MDAwLCJpIjoiY21wb2RkbmNuMDUzeXNsdjQyOGF1MzlzMyJ9",
+  "nextCursor": "eyJhIjoxNzgwMDcxNDM2MDAwLCJpIjoiY21wcjU5bDkxMGF6bXNsbm9teG1pODNlYyJ9",
   "items": [
+    {
+      "id": "cmpx64ru900yoslckuec4q8ne",
+      "title": "Google DeepMind 开源科学智能体工具包",
+      "title_en": "Building autonomous agents for scientific discovery？ 🧬🤖 @GoogleDeepMind Science Skills is now ava…",
+      "url": "https://x.com/googleaidevs/status/2061924472245153863",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-06-02T21:34:37.000Z",
+      "summary": "构建用于科学发现的自主智能体？🧬🤖\n\n@GoogleDeepMind Science Skills 现已在 GitHub 上发布。我们已开源这个专用工具包，以科学基础和更高的 token 效率加速您的智能体工作流。\n\n立即下载 ↓\nhttps：//github.com/google-deepmind/science-skills",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx51hf700otslcksx7ng54n",
+      "title": "Claude Code 新增动态工作流功能",
+      "title_en": "A harness for every task： dynamic workflows in Claude Code",
+      "url": "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-06-02T21:16:49.491Z",
+      "summary": "Claude Code 新增动态工作流功能，允许模型在运行时即兴创建和协调多智能体框架来处理复杂任务。该功能通过执行特定的 JavaScript 文件来生成和协调拥有独立上下文窗口的子代理，可解决单一上下文窗口中长时间执行任务可能出现的智能惰性等问题。工作流适用于研究、安全分析、代码审查等场景，通常消耗更多 token，更适合高价值复杂任务，其最佳实践仍在发展中。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx3fvdq009rslckxcfsidbc",
+      "title": "NVIDIA DGX Station 开始交付开发者和研究人员",
+      "title_en": "NVIDIA DGX Station systems are beginning to arrive at the desks of developers and researchers. 📦 E…",
+      "url": "https://x.com/nvidia/status/2061904438478970985",
+      "source": "X：NVIDIA (@nvidia)",
+      "publishedAt": "2026-06-02T20:15:01.000Z",
+      "summary": "NVIDIA DGX Station 系统正开始送达开发者和研究人员的办公桌。📦\n\n企业团队可以本地部署数据中心级性能，搭载 GB300 的系统正从华硕、戴尔、技嘉、惠普、微星和超微等合作伙伴处发货。\n\n👉 阅读博客：https：//nvda.ws/4x3VdBr",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx2idh8001aslckycuy1oby",
+      "title": "Runway API 推出 Aleph 2.0 视频编辑功能",
+      "title_en": "Aleph 2.0 is now available via the Runway API. Bring precise video editing directly into your apps， …",
+      "url": "https://x.com/runwayml/status/2061895998545244342",
+      "source": "X：Runway (@runwayml)",
+      "publishedAt": "2026-06-02T19:41:28.000Z",
+      "summary": "Aleph 2.0 现已通过 Runway API 提供。将精准视频编辑直接集成到您的应用、产品和平台中。支持在多镜头序列中编辑最长 30 秒、1080p 分辨率的视频，仅修改您想要的部分。\n\n请通过以下链接开始使用。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx2aezv00d8slgygrrq7o5v",
+      "title": "OpenRouter上线微软三款新模型",
+      "title_en": "Three new @MicrosoftAI models now live on OpenRouter！ Launching together： MAI-Image-2.5， MAI-Transc…",
+      "url": "https://x.com/OpenRouter/status/2061894672847671724",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-06-02T19:36:12.000Z",
+      "summary": "三款新的 @MicrosoftAI 模型现已在 OpenRouter 上线！\n同步推出：MAI-Image-2.5、MAI-Transcribe-1.5 和 MAI-Voice-2。详情见下文 🧵",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx26aaw00b6slgyo930b0bu",
+      "title": "Replit 与微软合作发布 Fabric 集成",
+      "title_en": "Announcing our new collaboration with @Microsoft Organizations can now build internal tools， workf…",
+      "url": "https://x.com/Replit/status/2061892255028486435",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-06-02T19:26:36.000Z",
+      "summary": "宣布与 @Microsoft 的新合作\n\n组织现在可以在 Replit 中构建内部工具、工作流或数据仪表板，并直接发布到 Microsoft Fabric，内置安全、身份验证和治理功能。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx11l8102mmsl7940fhk41n",
+      "title": "OpenAI Codex 推出团队专属插件",
+      "title_en": "Role-specific plugins in Codex are built around the work teams actually do. Plugins for Data Analyt…",
+      "url": "https://x.com/OpenAIDevs/status/2061888366791246071",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-06-02T19:11:09.000Z",
+      "summary": "Codex 中的角色专属插件围绕团队实际工作构建。\n\n数据分析、创意制作和产品设计插件为 Codex 提供了创建报告、创意方向和原型的工具与上下文。\n\n由 OpenAI 团队构建并使用。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx0fzub02i1sl79g649uesx",
+      "title": "微软发布开源框架 Adaptive Spec-driven Scoring：支持用文本描述创建 AI 评估测试",
+      "title_en": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+      "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-02T19:02:21.000Z",
+      "summary": "微软开源发布 Adaptive Spec-driven Scoring for Evaluation and Regression Testing 框架。开发者可通过文本描述快速生成 AI 行为测试，用于模型评估与回归测试。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwzyueg02bcsl796alxq7x4",
+      "title": "Claude Platform 新增 CLI 工具",
+      "title_en": "We've added a CLI for Claude Platform to make every API endpoint runnable from your terminal. Call …",
+      "url": "https://x.com/ClaudeDevs/status/2061877343078244459",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "publishedAt": "2026-06-02T18:27:21.000Z",
+      "summary": "我们为 Claude Platform 添加了一个 CLI，使每个 API 端点都可以从你的终端运行。\n调用 Messages API，启动 Claude 托管智能体，并将结果直接管道传输到你的 shell。\nant CLI 被使用 claude-api 技能的编码智能体（Claude Code）很好地理解。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwy18z701t8sl795u95o45d",
+      "title": "NVIDIA发布自进化Hermes智能体",
+      "title_en": "Self-Evolving Hermes Agents： Enterprise AI That Gets Better With Use | Nemotron Labs https：//x.com/i…",
+      "url": "https://x.com/NVIDIAAI/status/2061870499232190967",
+      "source": "X：NVIDIA AI (@NVIDIAAI)",
+      "publishedAt": "2026-06-02T18:00:09.000Z",
+      "summary": "自进化Hermes智能体：随使用而改进的企业AI | Nemotron Labs",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwy5yga01v6sl7900pid5op",
+      "title": "OpenClaw 与微软合作进入企业生态",
+      "title_en": "\"You can run OpenClaw inside your company now.\" Annoucing our work with @Microsoft to bring OpenClaw…",
+      "url": "https://x.com/openclaw/status/2061869633624580452",
+      "source": "X：OpenClaw (@openclaw)",
+      "publishedAt": "2026-06-02T17:56:42.000Z",
+      "summary": "\"你现在可以在公司内部运行 OpenClaw 了。\" 宣布我们与 @Microsoft 的合作，将 OpenClaw 带入微软和 Windows 生态系统。Claws 现在可以在企业环境中安全运行。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwxvkik01qzsl79wf8zf34a",
+      "title": "GitHub Copilot应用：智能体原生的桌面体验",
+      "title_en": "GitHub Copilot app： The agent-native desktop experience",
+      "url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-06-02T17:30:03.000Z",
+      "summary": "在微软 Build 2026 大会上，GitHub 发布了新的工具和更新，并将 Copilot 应用定位为\"智能体原生的桌面体验\"。其核心目标是让 AI 智能体能够以用户已经习惯的方式进行工作。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwwzyh801j7sl79ct5sj0pa",
+      "title": "Google DeepMind 发布 Gemini 多智能体科研系统",
+      "title_en": "We believe AI can be a dedicated research partner to help discover the next breakthrough. Enter Co-…",
+      "url": "https://x.com/GoogleDeepMind/status/2061857539977842793",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-06-02T17:08:39.000Z",
+      "summary": "我们相信 AI 可以成为专属研究伙伴，帮助发现下一个突破。\n\n隆重推出 Co-Scientist：我们最新的基于 Gemini 的多智能体系统，能够为复杂科学问题生成、辩论和演进新颖的假设 🧵",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwv0pz000zusl79b2q9k21q",
+      "title": "OpenAI Codex 发布 Python SDK，可直接嵌入应用",
+      "title_en": "这个有点厉害，Codex 出 Python SDK了。 安装指令：pip install openai-codex 整合到自己的代码中，相当于直接内置了顶级编程和生图Agent？ 最关键的是，可…",
+      "url": "https://x.com/vista8/status/2061846741885018296",
+      "source": "X：Vista (@vista8)",
+      "publishedAt": "2026-06-02T16:25:45.000Z",
+      "summary": "这个有点厉害，Codex 出 Python SDK了。\n\n安装指令：pip install openai-codex\n\n整合到自己的代码中，相当于直接内置了顶级编程和生图Agent？\n\n最关键的是，可以复用 Codex 登录态。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwux2bp00ybsl79gk8k3m4c",
+      "title": "OpenAI Codex Sites 功能发布",
+      "title_en": "Building apps has never been easier. With Sites， Codex can turn your work， ideas， and plans into an…",
+      "url": "https://x.com/OpenAI/status/2061845949170045346",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-06-02T16:22:36.000Z",
+      "summary": "构建应用从未如此简单。\n通过 Sites，Codex 可以将你的工作、想法和计划转化为一个交互式网站或应用，你的团队可以通过一个 URL 进行探索、使用和分享。\n该功能将首先向 Business 和 Enterprise 计划推出，之后会更广泛地扩展。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwurmxc00wcsl79be1mbjhr",
+      "title": "DigitalOcean AI云服务上线OpenRouter",
+      "title_en": "⚡ New provider drop： AI-Native Cloud from @digitalocean is now live on OpenRouter. High performance…",
+      "url": "https://x.com/OpenRouter/status/2061840338973806961",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-06-02T16:00:18.000Z",
+      "summary": "⚡ 新增服务商：DigitalOcean 的 AI-Native Cloud 现已在 OpenRouter 上线。\n提供高性能推理，覆盖热门开源权重模型。在 DeepSeek V3.2 的输出速度和延迟方面排名第一（数据来自 @ArtificialAnlys）。\n查看其数据并试用模型：https：//openrouter.ai/provider/digitalocean",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwuner100vnsl79pq06judg",
+      "title": "Replit Canvas 推出多项新功能",
+      "title_en": "Replit Canvas has a few new updates！ ⭐️ Learn more at： http：//replit.com/canvas Open thread 🧵 ↓",
+      "url": "https://x.com/Replit/status/2061840304534102036",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-06-02T16:00:10.000Z",
+      "summary": "Replit Canvas 有一些新更新！⭐️\n\n了解更多请访问：http：//replit.com/canvas\n\n展开讨论 🧵 ↓",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwq7j6k0562slsn6jkahkn5",
+      "title": "MiniCPM-V 4.6 现已支持 vLLM v0.22.0",
+      "title_en": "MiniCPM-V 4.6 is now fully supported in vLLM v0.22.0！ No custom branch. No extra compile. Just pull …",
+      "url": "https://x.com/OpenBMB/status/2061810723169415205",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-06-02T14:02:37.000Z",
+      "summary": "MiniCPM-V 4.6 现已完全支持 vLLM v0.22.0！\n无需自定义分支，无需额外编译。\n只需拉取预构建包即可运行。\n非常感谢 @vllm_project 的顺畅集成！ 🤝\n🤗 http：//huggingface.co/openbmb/MiniCPM-V-4.6",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwh3lil02w7slsnbx42kvq2",
+      "title": "阿里云发布AgentScope Java 1.1及Claw等新功能",
+      "title_en": "🚀 AgentScope Java 1.1： Build Self-Evolving Agents ✨ Claw： Local \"MinQwenPaw\" with shell access ✨ Bu…",
+      "url": "https://x.com/alibaba_cloud/status/2061745401393291554",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-06-02T09:43:03.000Z",
+      "summary": "🚀 AgentScope Java 1.1：构建可自我进化的智能体\n✨ Claw：具备Shell访问权限的本地\"MinQwenPaw\"\n✨ Builder：多租户、零代码企业平台\n✨ 工作区驱动的进化与分布式隔离\n从笔记本电脑到集群无缝扩展。👇\nhttps：//int.alibabacloud.com/m/1000413896/\n\n#AgentScope #AIAgents #Java",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpwtn26i00l3sl79dy8bjnhq",
+      "title": "为什么金融机构正汇聚在交易基础模型上来构建自身智能",
+      "title_en": "Why Financial Institutions Are Converging on Transaction Foundation Models to Build Their Own Intelligence",
+      "url": "https://blogs.nvidia.com/blog/financial-institutions-transaction-foundation-models",
+      "source": "NVIDIA AI Blog",
+      "publishedAt": "2026-06-02T06:00:36.000Z",
+      "summary": "金融机构正从为每个业务线构建独立AI模型，转向采用基于Transformer的交易基础模型，以统一理解消费者行为并克服数据孤岛限制。NVIDIA报告显示，65%的金融机构已使用AI，近90%正在部署或评估。实践案例包括：Revolut与NVIDIA合作构建了PRAGMA模型系列，在240亿事件上训练，单个模型在信用评分等领域超越特定任务模型；Mastercard正开发专有大型表格基础模型；Adyen的模型处理了1万亿美元支付；Stripe利用相关平台构建模型，去年阻止了近1120亿美元欺诈。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpvzrkrk0347slukwn0rkg8r",
+      "title": "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署",
+      "title_en": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
+      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
+      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
+      "publishedAt": "2026-06-02T02:00:00.000Z",
+      "summary": "NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。",
+      "category": "ai-products"
+    },
     {
       "id": "cmpvs3efm015wslukv1os8v5x",
       "title": "ChatGPT 新增长文编辑与保存功能",
@@ -11,6 +221,16 @@
       "source": "X：ChatGPT (@ChatGPTapp)",
       "publishedAt": "2026-06-01T22:11:55.000Z",
       "summary": "长文写作需要更多空间。\n\n现在你可以在全屏模式下编辑更长的文章，并将其保存到你的资料库中，以便稍后继续。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpx174nl001nslgy17hiomfy",
+      "title": "Google AI Studio 新增 Gmail 等应用构建能力",
+      "title_en": "We just shipped the ability to build apps that connect to Gmail， Drive， Sheets， and more directly in…",
+      "url": "https://x.com/OfficialLoganK/status/2061568290984800740",
+      "source": "X：Logan Kilpatrick (@OfficialLoganK)",
+      "publishedAt": "2026-06-01T21:59:17.000Z",
+      "summary": "我们刚刚上线了在 @GoogleAIStudio 内直接构建连接 Gmail、Drive、Sheets 等应用的功能，无需跳转其他网站，你可以直接在 AI Studio 内添加测试人员，完整的公开分享功能即将推出！！",
       "category": "ai-products"
     },
     {
@@ -94,6 +314,26 @@
       "category": "ai-products"
     },
     {
+      "id": "cmpvtskbb01lusluksydtav6e",
+      "title": "Cursor Teams计划定价方案更新",
+      "title_en": "Improvements to Teams Pricing",
+      "url": "https://cursor.com/blog/teams-pricing-june-2026",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-06-01T07:00:00.000Z",
+      "summary": "Cursor Teams计划推出三项更新：增加Composer特定使用池，将第一方模型（Composer和Auto）与第三方API的使用额度分开计费；推出Premium席位，提供5倍于标准席位（$40/月）的使用量，价格为$96/月（年付）；仪表盘现可实时显示用户额度使用情况，管理员可通过Slack或邮件配置智能提醒。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpw7vhj300h7slsnx8o52dv4",
+      "title": "NVIDIA 工厂运营蓝图为工厂打造 AI 大脑",
+      "title_en": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
+      "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain",
+      "source": "NVIDIA Blog：Generative AI（网页）",
+      "publishedAt": "2026-06-01T05:00:47.000Z",
+      "summary": "NVIDIA发布了工厂运营蓝图（FOX），这是一项用于构建自主工厂管理AI智能体的参考设计。该蓝图基于NVIDIA NemoClaw、AI-Q Blueprint及Nemotron开源模型构建，并针对DGX Station工作站进行了优化，可在配备GB300 Grace Blackwell Ultra芯片的本地环境运行。台湾制造商富士康、和硕、研华和纬创是首批部署FOX蓝图的厂商。其中，富士康基于该蓝图构建了MoMClaw多智能体系统，预计将根因分析时间缩短80%，劳动生产率提升15%，机器故障率降低10%。",
+      "category": "ai-products"
+    },
+    {
       "id": "cmpuse81v00hrsl0zr2uqw9km",
       "title": "NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体",
       "title_en": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
@@ -131,6 +371,16 @@
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "publishedAt": "2026-06-01T03:36:52.000Z",
       "summary": "NVIDIA DSX 平台为设计、模拟和构建 AI 工厂提供完整解决方案，旨在应对不断增长的智能需求。该平台通过开放、模块化的软件栈，帮助运营方更快地扩展规模、提高效率，并降低从能源、芯片、基础设施、模型到应用这五层架构的整体智能成本。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpw4pmcw000ysl1u9sl8mrwr",
+      "title": "OpenRouter 5月发布亮点",
+      "title_en": "May Release Spotlight",
+      "url": "https://openrouter.ai/announcements/may-release-spotlight",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "summary": "OpenRouter 发布5月更新，推出语音与转录API、模型融合（Model Fusion）功能，并为平台添加了私有模型和企业工作区管控能力。此次更新共上线20个新模型，其中包括 Gemini 3.5 Flash 和 Claude Opus 4.8。",
       "category": "ai-products"
     },
     {
@@ -251,256 +501,6 @@
       "source": "X：OpenRouter (@OpenRouter)",
       "publishedAt": "2026-05-29T16:17:16.000Z",
       "summary": "OpenRouter 现已支持 \"apply_patch\"，这是一个服务器工具，允许任何模型通过 Responses API 使用 V4A diffs 提出文件编辑建议。\n\n模型生成一个补丁（创建、更新或删除文件）。OpenRouter 在服务器端验证 diff 语法。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpr4wr050axrslno7hhf6kbg",
-      "title": "Canvas新功能与Clerk自定义登录介绍",
-      "title_en": "What's New in Canvas + Customizable Sign-In with Clerk https：//x.com/i/broadcasts/1pJdRRzreMRKW",
-      "url": "https://x.com/Replit/status/2060390354910859401",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-05-29T15:58:35.000Z",
-      "summary": "Canvas 新功能 + 使用 Clerk 自定义登录 https：//x.com/i/broadcasts/1pJdRRzreMRKW",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpr59n6i0azqslnoxcv1zsd8",
-      "title": "Gemini 本月更新：全新界面与智能体助手",
-      "title_en": "From a newly redesigned Gemini experience to 24/7 agentic assistance with Gemini Spark， here's a loo…",
-      "url": "https://x.com/GeminiApp/status/2060389565052096911",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-29T15:55:27.000Z",
-      "summary": "从全新设计的 Gemini 界面，到 Gemini Spark 提供的全天候智能体辅助，以下是本月 Gemini 更新概览。🧵",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmprjnsl401moslljay7ixk7d",
-      "title": "Guardrails：保护你的智能体、数据与成本",
-      "title_en": "Guardrails： Protect your Agents， Data， and Costs",
-      "url": "https://openrouter.ai/announcements/guardrails",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "Guardrails 是一套可配置的安全与治理工具，提供预算执行、零数据保留、模型与提供商限制、提示词注入防御及数据丢失预防等功能，旨在保护智能体（Agents）、数据与控制成本。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpqlfk6e061bslnoitk181h9",
-      "title": "阿里云开源百炼 CLI，Agent 可调用全套模型和应用能力",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/957/149.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-29T07:15:20.000Z",
-      "summary": null,
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpqswm4y07zcslnoal5cw6oi",
-      "title": "用 Rosalind Biodefense 增强社会韧性",
-      "title_en": "Strengthening societal resilience with Rosalind Biodefense",
-      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-29T03:00:00.000Z",
-      "summary": "OpenAI 推出 Rosalind Biodefense，为通过审核的开发者和美国政府伙伴提供 GPT-Rosalind 的可信访问，以推动前沿 AI 在生物防御、公共卫生和大流行病准备方面的应用。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpq757a802d8slnouzkrvkv1",
-      "title": "llm-anthropic 0.25.1",
-      "title_en": null,
-      "url": "https://simonwillison.net/2026/May/28/llm-anthropic",
-      "source": "Simon Willison 博客",
-      "publishedAt": "2026-05-28T23:54:56.000Z",
-      "summary": "llm-anthropic 发布 0.25.1 版本。主要更新包括：新增 Claude Opus 4.8 （`claude-opus-4.8`） 模型；为账户启用了该功能的组织新增了 `-o fast 1` 选项以使用快速模式；调整了各模型的默认 `max_tokens` 值，使其直接使用模型的最大输出长度，而非固定的 8，192。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpq4tkpq01pbslnomanmo8i5",
-      "title": "别只看基准测试，要看全面表现",
-      "title_en": "Don't rely on benchmarks； look at the full picture！ Try our new Compare page， which also lets you v…",
-      "url": "https://x.com/OpenRouter/status/2060142412408717518",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-28T23:33:21.000Z",
-      "summary": "不要只依赖基准测试；要看全面情况！\n\n试试我们的新比较页面，它还能让你可视化模型性能：https：//openrouter.ai/compare/openai/gpt-5.5/anthropic/claude-opus-4.7/anthropic/claude-opus-4.8",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppzjfxo00grslno218up73l",
-      "title": "Grok Build 0.2.7 发布，新增多项功能",
-      "title_en": "Grok Build 0.2.7 is now out， with /usage， /login， shared terminals across subagents， and improved im…",
-      "url": "https://x.com/xai/status/2060102590122385460",
-      "source": "X：xAI (@xai)",
-      "publishedAt": "2026-05-28T20:55:06.000Z",
-      "summary": "Grok Build 0.2.7 现已发布，包含 /usage、/login、跨子智能体共享终端，以及改进的图像理解功能。\n所有更新请查看 https：//x.ai/build/changelog",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppyywnt00djslno0rujv5zz",
-      "title": "Replit Canvas：智能体设计工具发布",
-      "title_en": "The best design work doesn't happen in a chat box. You need space to explore ideas， create variants，…",
-      "url": "https://x.com/Replit/status/2060097656207413613",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-05-28T20:35:30.000Z",
-      "summary": "最好的设计工作不会在聊天框里发生。你需要空间来探索想法、创建变体并进行迭代。\n认识新的 Replit Canvas。\n你的智能体设计工具，用于构建精美的网站、应用、营销资产等。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppv6bhy01dlslm6hh647pnl",
-      "title": "Gemini Omni向印度用户开放视频编辑功能",
-      "title_en": "You're in luck！ Users in India can now upload videos （from their camera roll or saved files） and use…",
-      "url": "https://x.com/GeminiApp/status/2060074415304610168",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-05-28T19:03:09.000Z",
-      "summary": "好消息！印度用户现在可以上传视频（来自相册或已保存文件），并使用Gemini Omni进行编辑和转换。快来试试，并告诉我们你的想法。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppvr37p01lgslm6udm3v6qa",
-      "title": "MiniMax M2.7 免费智能体编程限时开放",
-      "title_en": "Free agentic coding with MiniMax M2.7 on @OpenHandsDev？ Yes， please！ Available for a limited time …",
-      "url": "https://x.com/MiniMax_AI/status/2060071852970844377",
-      "source": "X：MiniMax (@MiniMax_AI)",
-      "publishedAt": "2026-05-28T18:52:58.000Z",
-      "summary": "在 @OpenHandsDev 上使用 MiniMax M2.7 进行免费智能体编程？\n\n是的，请给我！限时提供 ⚡👀",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpppb2nv026tslvycbh7zsqj",
-      "title": "Data Formulator 推出企业数据 AI 分析工具",
-      "title_en": "Data Formulator introduces AI-powered analytics for enterprise data workflows. Data teams can easily…",
-      "url": "https://x.com/MSFTResearch/status/2060028999229735199",
-      "source": "X：Microsoft Research (@MSFTResearch)",
-      "publishedAt": "2026-05-28T16:02:41.000Z",
-      "summary": "Data Formulator 为企业数据工作流引入了 AI 驱动的分析功能。数据团队可以轻松将企业数据带入一个 AI 就绪的工作空间，用户可以使用 AI 智能体来探索、分析和可视化数据，将原始数据转化为可操作的洞察：https：//msft.it/6013vZzUl",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppnwspx01u1slvyd9y65jz0",
-      "title": "Sesame，这家由Oculus创始人创办的对话式AI初创公司，发布其iOS应用",
-      "title_en": "Sesame， the conversational AI startup from Oculus founders， launches its iOS app",
-      "url": "https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-05-28T15:35:43.000Z",
-      "summary": "由Oculus创始人创办的AI初创公司Sesame发布了其iOS应用，该应用将对话式AI智能体带给公众。应用提供更自然的来回交互体验，设计上区别于传统聊天机器人，旨在让用户感觉更像在和真人对话。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppmltf501fhslvyqsj7bfug",
-      "title": "Perplexity Computer现已集成微软Office套件",
-      "title_en": "Perplexity Computer is now available inside Microsoft Excel， Word， PowerPoint， and Outlook. Orchest…",
-      "url": "https://x.com/perplexity_ai/status/2060013442720010598",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-05-28T15:00:52.000Z",
-      "summary": "Perplexity Computer现已登陆Microsoft Excel、Word、PowerPoint和Outlook。\n\n您可以在应用程序的侧边栏中直接使用Computer来协调工作，起草文档、建模、制作演示文稿并处理电子邮件。\n\n现已推出：https：//www.perplexity.ai/hub/products/integrations/microsoft",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppoquyb01zqslvyr95y5eme",
-      "title": "Google I/O 2026 一文速览：12 大重要时刻",
-      "title_en": "Catch up on 12 major I/O 2026 moments",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-05-28T15:00:00.000Z",
-      "summary": "Google I/O 2026 发布会上披露了 12 个重要时刻，其中包括 Gemini Omni 和 Gemini 3.5 Flash 等产品的相关消息。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppkhoox00xfslvyuiolqwse",
-      "title": "AI生成短片《昨夜》探索记忆碎片中的东京之夜",
-      "title_en": "Last Night. A fully AI-generated short film exploring a life-changing evening in Tokyo through the l…",
-      "url": "https://x.com/runwayml/status/2059998751742128635",
-      "source": "X：Runway (@runwayml)",
-      "publishedAt": "2026-05-28T14:02:29.000Z",
-      "summary": "昨夜。一部完全由AI生成的短片，通过破碎记忆的视角，探索了在东京改变人生的一个夜晚。由一人使用Runway在一天内创作完成。\n\n这是Project Luxo的一部分：一个探索AI生成视频如何跨越恐怖谷的新项目。\n\n通过下方链接了解更多关于《昨夜》和Project Luxo的信息。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmppje3ro00m9slvyk6v86ggp",
-      "title": "OpenClaw 2026.5.27 版本发布",
-      "title_en": "OpenClaw 2026.5.27 is live 🦞 🔒 tighter runtime/security boundaries ⚡ faster gateway + reply paths…",
-      "url": "https://x.com/openclaw/status/2059985767456231751",
-      "source": "X：OpenClaw (@openclaw)",
-      "publishedAt": "2026-05-28T13:10:54.000Z",
-      "summary": "OpenClaw 2026.5.27 已上线 🦞\n\n🔒 更严格的运行时/安全边界\n⚡ 更快的网关 + 回复路径\n🧠 更稳定的 Codex/应用服务器内存\n📡 更好的频道、提供商、Pixverse 视频\n\n更少阻碍，更多掌控。\nhttps：//github.com/openclaw/openclaw/releases/tag/v2026.5.27",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpphmulc007mslvypdjwo7y7",
-      "title": "发布 Search Toolkit",
-      "title_en": "Introducing Search Toolkit",
-      "url": "https://mistral.ai/news/search-toolkit",
-      "source": "Mistral AI：News（网页）",
-      "publishedAt": "2026-05-28T12:47:09.083Z",
-      "summary": "Mistral AI 发布了 Search Toolkit 的公共预览版。这是一个用于构建 AI 应用生产级搜索管道的可组合框架。该框架旨在解决团队在搭建搜索基础设施时，因数据摄取、检索和评估工具分散而耗费过多工程时间的问题。Search Toolkit 将这三者整合到单一框架与共享接口中，使团队能更专注于提升搜索质量。该工具开源，可部署在云端、本地或边缘环境，并支持企业搜索、RAG 等多种检索场景。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpoxybor0a6vslv4ptqykinw",
-      "title": "阿里云DataWorks推出AI数据智能体",
-      "title_en": "🚀 Meet DataWorks Data Agent- Alibaba Cloud's AI agent for data！ Simplify data workflows， speed up …",
-      "url": "https://x.com/alibaba_cloud/status/2059840407618396391",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-28T03:33:17.000Z",
-      "summary": "🚀 认识 DataWorks Data Agent--阿里云的AI数据智能体！\n\n借助AI简化数据工作流，加速洞察，让数据管理更智能。\n\n了解更多：https：//int.alibabacloud.com/m/1000413560/\n\n#AlibabaCloud #DataWorks #AI #DataAgent #BigData #DataAnalytics",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpovt4hk09muslv4u7z0mrsi",
-      "title": "MuleRun登陆阿里云市场，提供全天候AI劳动力",
-      "title_en": "Meet MuleRun on Alibaba Cloud Marketplace - An always-on AI workforce for research， reports， code， d…",
-      "url": "https://x.com/alibaba_cloud/status/2059821825140367565",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-28T02:19:27.000Z",
-      "summary": "在阿里云市场遇见 MuleRun--一个全天候的AI劳动力，用于研究、报告、代码、设计等。功能强大，适合个人使用；企业就绪，适合团队协作--支持SSO、RBAC、私有网络、团队知识管理和无缝集成。\n\n想得更大。让 MuleRun 处理其余事务。\n\n方案起价 $20/月 → https：//int.alibabacloud.com/m/1000413520/\n\n#AlibabaCloud #AIAgents #AIWorkforce #FutureOfWork #EnterpriseAI",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpscn37j008xsluzsd1xe4zp",
-      "title": "NVIDIA Dynamo Snapshot：Kubernetes 上推理工作负载的快速启动",
-      "title_en": "NVIDIA Dynamo Snapshot： Fast Startup for Inference Workloads on Kubernetes",
-      "url": "https://developer.nvidia.com/blog/nvidia-dynamo-snapshot-fast-startup-for-inference-workloads-on-kubernetes",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-05-27T23:09:52.000Z",
-      "summary": "生产环境的推理部署需要弹性伸缩以应对需求波动，但在 Kubernetes 上冷启动推理工作负载可能需要数分钟。在此期间，GPU 被分配却处于空闲状态，不产生 token 也不处理请求，这在流量高峰时增加了违反服务等级协议的风险。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpofemy505maslv4n15rpet7",
-      "title": "Web 更新",
-      "title_en": "Web Updates",
-      "url": "https://updates.midjourney.com/web-updates-5",
-      "source": "Midjourney：Updates（RSS）",
-      "publishedAt": "2026-05-27T18:44:53.000Z",
-      "summary": "对话模式在文本和语音输入方面进行了改进。语音会话开始时，可访问用户的图像提示、风格参考、侧边栏设置和最近任务。图像提示功能现可从托盘和侧边栏直接使用。在语音提交过程中，托盘中的图像将保持不变，直至用户手动移除。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpoevkk105k2slv4iklwg0qm",
-      "title": "OpenAI产品支持私有MCP服务器安全连接",
-      "title_en": "Private MCP servers 🤝 OpenAI products Your team can keep MCP servers inside your network while Cha…",
-      "url": "https://x.com/OpenAIDevs/status/2059703536825565499",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-05-27T18:29:25.000Z",
-      "summary": "您的团队可以在内部网络中保留MCP服务器，同时ChatGPT、Codex和Responses API通过仅出站HTTPS进行连接。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpodsy24059vslv40tqd294a",
-      "title": "OpenCode与MiMo V2.5限时免费开放",
-      "title_en": "OpenCode x MiMo V2.5 - Free for a limited time 1M context • reasoning • text • image",
-      "url": "https://x.com/opencode/status/2059696100626297225",
-      "source": "X：opencode (@opencode)",
-      "publishedAt": "2026-05-27T17:59:52.000Z",
-      "summary": "OpenCode x MiMo V2.5 - 限时免费\n\n1M 上下文 • 推理 • 文本 • 图像",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpoddncn053yslv428au39s3",
-      "title": "开源FastVideo Dreamverse实时视频生成工具",
-      "title_en": "🚀Generate a 30-second 1080p video in just 7 seconds！ We're open-sourcing FastVideo Dreamverse： rea…",
-      "url": "https://x.com/haoailab/status/2059695648103112946",
-      "source": "X：Sky Computing Lab (@haoailab)",
-      "publishedAt": "2026-05-27T17:58:04.000Z",
-      "summary": "🚀仅需7秒即可生成30秒1080p视频！\n\n我们开源了FastVideo Dreamverse：基于单张NVIDIA B200 GPU和LTX-2模型，实现实时视频生成的氛围引导工具。\n\nRepo： https：//github.com/hao-ai-lab/FastVideo/tree/main/apps/dreamverse\nBlog： https：//haoailab.com/blogs/fastvideo-dreamverse-release/",
       "category": "ai-products"
     }
   ]

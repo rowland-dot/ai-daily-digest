@@ -1,8 +1,98 @@
 {
-  "count": 31,
+  "count": 25,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpx6ljcj013yslck2447n70s",
+      "title": "微软研究：Aurora天气预报速度超传统超算数千倍",
+      "title_en": "Weather forecasts thousands of times faster than traditional supercomputers. Hear from Kenji Takeda …",
+      "url": "https://x.com/MSFTResearch/status/2061927189977727450",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-06-02T21:45:25.000Z",
+      "summary": "天气预报速度比传统超级计算机快数千倍。听听Kenji Takeda在#MSBuild微软研究实验室关于Aurora的分享。了解更多：https：//msft.it/6018vjGUA",
+      "category": "paper"
+    },
+    {
+      "id": "cmpwgl5go02q3slsnw6pl0fs5",
+      "title": "Anthropic可解释性研究：区分因果效应相似的特征",
+      "title_en": "Circuits Updates - May 2026",
+      "url": "https://transformer-circuits.pub/2026/may-update/index.html",
+      "source": "Anthropic：Transformer Circuits（可解释性研究）",
+      "publishedAt": "2026-06-02T09:52:20.287Z",
+      "summary": "Anthropic可解释性团队介绍了其Circuits研究的新进展。为区分那些激活模式相似但因果效应不同的模型特征，团队提出一种新方法。该方法通过分析特征的下游连接来预测其实际影响，并使用基于共激活统计的TWERA（虚拟权重）对连接进行加权排序。实验表明，借助下游连接信息能更准确地判断哪个特征会引导特定输出。此方法为识别模型内部真正的因果组件提供了新途径。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpwf5ekt02dvslsnxsj6m2rp",
+      "title": "Codex正在成为每个人的生产力工具",
+      "title_en": "Codex is becoming a productivity tool for everyone",
+      "url": "https://openai.com/index/codex-for-knowledge-work",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-02T02:00:00.000Z",
+      "summary": "The Next Era of Knowledge Work报告指出，Codex正通过AI增强的研究、数据分析、工作流自动化与内容创作，变革知识工作的生产力。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpwxbmhb01lisl79elctr7z8",
+      "title": "AFUN： 迈向功能理解的可供性基础模型",
+      "title_en": "AFUN： Towards an Affordance Foundation Model for Functionality Understanding",
+      "url": "https://arxiv.org/abs/2606.02551",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "summary": "AFUN是一个用于功能理解的可供性基础模型。它从单个RGB-D观察和语言任务描述出发，能同时预测任务条件的功能掩码（where）和3D接触后运动曲线（how）。为实现开放世界泛化，该研究构建了一个大规模标准化数据管道，整合了机器人、人类、仿真与真实扫描数据。评估结果显示，AFUN在可供性分割任务上，于4个基准的8个测试集中平均gIoU/cIoU指标分别大幅领先基线模型+23.9/+26.3；在接触点预测上，命中率比最佳基线高出12.7%-61.3%；在3D运动预测上也取得最佳性能。该模型无需针对特定机器人实体进行微调即可直接部署。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpwmljjs049cslsnfoe42el4",
+      "title": "NLP领域2018-2025年人类标注报告实践的大规模审计",
+      "title_en": "Who Annotates in NLP？ A Large-scale Assessment of Human Annotation Reporting between 2018 and 2025",
+      "url": "https://arxiv.org/abs/2606.02255",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "summary": "本研究对NLP领域2018至2025年间的人类标注报告实践进行了首次大规模审计。研究构建并验证了一个LLM辅助提取管线，其在Annotated-gold数据集（41篇论文，72个标注任务）上与人工裁决的一致性（Krippendorff's alpha）达到0.606。基于此，研究构建了Annotated-llm数据集，涵盖ACL会议论文，从1603篇论文中提取了2667个标注任务。分析发现，论文常报告招募策略、标注者专长等操作细节，但经常遗漏评估标注效度所需的关键信息，如培训、语言能力、薪酬、裁决过程及一致性数值。研究指出标注报告虽有改善但仍不均衡，并提出了一个可扩展的框架和最低报告标准。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpw7layz00esslsnshn4dzp3",
+      "title": "OpenWebRL：面向视觉网页智能体的在线多轮强化学习开源框架",
+      "title_en": "OpenWebRL： Demystifying Online Multi-turn Reinforcement Learning for Visual Web Agents",
+      "url": "https://arxiv.org/abs/2606.02031",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "summary": "OpenWebRL是一个用于在真实网站上通过在线多轮强化学习训练视觉网页智能体的开源框架，覆盖了完整的训练流程。基于该框架训练的OpenWebRL-4B模型，在仅使用0.4K条监督初始化轨迹和2.2K个开放式RL训练任务的情况下，在Online-Mind2Web基准上达到67.0%成功率，在DeepShop基准上达到64.0%，超越了同规模或更大规模的先前开源智能体，性能可与OpenAI CUA和Gemini CUA等闭源系统竞争。该工作为构建更强、可复现且高性价比的开源网页智能体提供了实践路径。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpwqvwfq05ctslsnc93eaikd",
+      "title": "τ_0-WM：用于机器人操控的统一视频-动作世界模型",
+      "title_en": "τ_0-WM： A Unified Video-Action World Model for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2606.01027",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "τ_0-World Model （τ_0-WM） 是一个统一的视频-动作世界模型，旨在机器人执行动作前预测并评估其未来后果。模型基于共享的视频扩散主干网络构建，提供两个接口：一个联合预测未来视觉潜在表示与连续动作块的视频动作模型，以及一个能将动作序列展开为多视角未来并预测任务进度分数的动作条件视频模拟器。τ_0-WM 使用约27，300小时的多元数据训练，包括真实机器人遥操作、UMI风格交互、自我中心人类视频等。推理时，模型通过测试时计算采样动作候选，并利用去噪一致性和基于模拟器的修正来筛选低质量动作，在长时程和精细机器人操控任务上表现出优于相关基准的性能。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpwbvnb101iwslsnq39efzz8",
+      "title": "ChartArena：跨语言、场景与格式的图表解析基准测试",
+      "title_en": "ChartArena： Benchmarking Chart Parsing across Languages， Scenarios， and Formats",
+      "url": "https://arxiv.org/abs/2606.01348",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "ChartArena 是一个旨在系统评估图表解析模型的双语基准测试。它覆盖了八种图表家族（包括数字图表与流程图等结构），并针对数字渲染、打印照片和手绘照片三种场景进行评估。数据集采用人机协作标注流程，并设计了格式无关的评估协议，将不同模型输出映射到标准化语义空间进行评分。对26个多模态大语言模型的评估显示，前沿闭源模型如Gemini 3.1 Pro领先，开源系统正快速追赶；文档解析模型在数字图表上表现尚可，但在图表结构上明显不足；专业解析器仍局限于特定图表类型。雷达图和手绘场景对所有模型都尤其具有挑战性。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpw3ayof03zbsluk2voh8h1v",
+      "title": "定位何处：基础模型能否通过主动探索达到目标视角",
+      "title_en": "Where to Look： Can Foundation Models Reach a Target Viewpoint Through Active Exploration？",
+      "url": "https://arxiv.org/abs/2606.01247",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "研究提出目标视角复现任务（TVR）与模拟基准TVRBench，评估基础模型在3D环境中主动调整视角以匹配目标图像的能力。当前最优开源与闭源模型成功率仅7.8%和12.0%，瓶颈在于处理多轮视觉历史及需要平移而非旋转时的性能下降。通过构建统一的后训练框架，视觉动作SFT将9B开源模型成功率提升至50.8%，多轮GRPO进一步达到51.4%，为训练主动感知与行动的模型提供了基准。代码与模型已开源。",
+      "category": "paper"
+    },
     {
       "id": "cmpr6m8dg0be7slno4oc8myl7",
       "title": "GPIC：大规模视觉生成基准数据集发布",
@@ -161,156 +251,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-27T00:00:00.000Z",
       "summary": "本文介绍了ResearchMath-14K，这是一个包含14，056个研究级数学问题的数据集，通过多智能体流程从学术资料中策划而成，是目前此类规模最大的集合。研究还生成了ResearchMath-Reasoning（包含220K条教师轨迹），发现语言模型存在回避行为，且新一代模型产生的引用和虚假引用分别是旧模型的5.6倍和5.0倍。经过智能体过滤后，对参数规模为4B到30B的Qwen3模型进行微调，其平均得分比基础模型提高了9.2分，表明过滤后的开放问题尝试能为研究级数学推理提供有效监督。该数据集已公开发布。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpoibuhp06cnslv4rs455myu",
-      "title": "SilverTorch：索引即模型--推荐系统的新检索范式",
-      "title_en": "SilverTorch： Index as Model - A New Retrieval Paradigm for Recommendation Systems",
-      "url": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems",
-      "source": "Meta Engineering Blog（RSS）",
-      "publishedAt": "2026-05-26T16:00:01.000Z",
-      "summary": "Meta 推出SilverTorch推荐系统架构，统一了用户生成内容的所有检索组件。该架构吞吐量比现有技术高23.7倍，计算成本效率比CPU方案高20.9倍，同时提升了准确性。",
-      "category": "paper"
-    },
-    {
-      "id": "cmppdcr7d0e32slv4rwk67i43",
-      "title": "塑造产业的物理AI研究",
-      "title_en": "Physics AI research that's shaping the industry. Published breakthroughs pushing the state of the art. May 27， 2026 Mistral",
-      "url": "https://mistral.ai/news/physics-ai-research",
-      "source": "Mistral AI：News（网页）",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "summary": "Mistral AI通过收购Emmi AI，强化其在推动AI研究前沿与工业工程解决方案方面的投入。其目标是为航空航天、汽车、半导体和能源等塑造物理世界的核心产业构建基础性物理AI模型，以加速工程开发。此项研究基于一系列已发表的突破性成果，包括：用于模拟超音速湍流的3D机翼CFD数据集、计算流体动力学基础模型的前瞻综述、应用于汽车与航空的AB-UPT模型，以及用于聚变等离子体湍流模拟的GyroSwin模型。此前已开源的UPT（通用物理Transformer）和NeuralDEM等成果也为此研究奠定了基础。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpoocnzn07snslv4ur3wipc5",
-      "title": "社会科学中的编码智能体",
-      "title_en": "Coding agents in the social sciences",
-      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "summary": "一项针对1260名定量社会科学家的调查显示，虽然81%的受访者用过AI聊天机器人，但仅有20%将Claude Code、Codex等编码智能体常规应用于工作。采用率存在显著差异：以男性名字命名的研究者使用率是女性研究者的两倍；顶尖大学研究者可能性高出40%。用户产出更多工作论文和基金申请，但这可能反映早期采用者自身差异。研究者对AI助力撰写可发表论文更乐观，但对重塑整个社会科学领域持保留态度。这是一项初步调查，更深入研究仍在进行中。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpocftbm04v2slv4qabfidb6",
-      "title": "通过零信任聚合实现的隐私分析",
-      "title_en": "Private analytics via zero-trust aggregation",
-      "url": "https://research.google/blog/private-analytics-via-zero-trust-aggregation",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "summary": "Google Research 推出了一种新的隐私分析解决方案。该方案结合了一种新的密码学安全聚合协议与可信执行环境（TEE）的透明性，旨在实现前沿的隐私与安全保证。其核心是基于零信任原则，通过密码学与硬件保护的结合，确保系统仅能获取群体的匿名化聚合洞察。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpmsjd610rghsl01l5zfielj",
-      "title": "KPop 新方法让 Ring-2.6-1T 在 SWE-bench Verified 上突破 76 分",
-      "title_en": "From IcePop to KPop - our team keeps pushing on RL training stability for large MoE models. 👇 KPop…",
-      "url": "https://x.com/AntLingAGI/status/2059292063032918422",
-      "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "publishedAt": "2026-05-26T15:14:22.000Z",
-      "summary": "团队推出 KPop，用于稳定大规模 MoE 模型的智能体强化学习训练。它用基于二元 KL 散度的自适应掩码机制，替代了此前 IcePop 方法中的固定比例掩码，能根据训练过程中的训练-推理不匹配程度动态调整。这一改进使得 Ring-2.6-1T 模型在无需修改基础设施或路由重放的情况下，仅通过纯 RL 训练，在 SWE-bench Verified 上取得了超过 76 分的成绩。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpmqdp5h0qwssl01wptayjap",
-      "title": "SwiGLU在大输入下呈二次增长，PowLU应运而生",
-      "title_en": "SwiGLU is everywhere in modern LLMs - but for large inputs it behaves like x2. That quadratic blow-u…",
-      "url": "https://x.com/AntLingAGI/status/2059273617494483143",
-      "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "publishedAt": "2026-05-26T14:01:04.000Z",
-      "summary": "SwiGLU在现代大语言模型中无处不在--但对于大输入，它的行为类似于x2。这种二次增长会膨胀激活值，放大异常值，并使深层网络或低精度（FP8/FP4）训练容易出现损失尖峰。\n\n我们提出了PowLU，一种为稳定大规模预训练而设计的即插即用激活函数。🧵",
-      "category": "paper"
-    },
-    {
-      "id": "cmppy5pe1009uslknwa1xw6hf",
-      "title": "有秘密？大语言模型智能体守不住：多智能体系统中的隐私评估",
-      "title_en": "Got a Secret？ LLM Agents Can't Keep It： Evaluating Privacy in Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2605.27766",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "研究将评估从单轮转向多轮社会交互后，发现大语言模型智能体的隐私违规率显著上升。在对OpenAI模型的测试中，该比例从此前CIMemories基准的19.95%增至本研究的45.30%。隐私泄露具有社交传染性，智能体在观察到同伴泄露后，披露敏感信息的可能性增加8倍。即使有明确隐私指令，泄露率仍高于37.8%。结论指出，静态聊天基准会系统性低估部署风险，仅社会语境就足以引发在单轮评估中无法暴露的敏感信息披露。",
-      "category": "paper"
-    },
-    {
-      "id": "cmppaj22d0dazslv48njo3vlq",
-      "title": "GE-Sim 2.0：面向机器人操作的全面闭环视频世界模拟器路线图",
-      "title_en": "GE-Sim 2.0： A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2605.27491",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "GE-Sim 2.0是一个用于机器人操作的闭环视频世界模拟器。它基于动作条件视频生成框架，并使用数千小时涵盖遥操作与接触交互等真实世界数据进行重新训练，提升了动作跟随与轨迹覆盖能力。其核心新增三个模块：从视频潜变量解码本体感受状态的\"状态专家\"；为生成轨迹评分并提供成功信号与奖励的\"世界评判\"；以及能实现快速轨迹生成的加速框架。该模型仅2B参数，在WorldArena排行榜上位列第一，优于专用模型与闭源生成器，其训练出的策略能转化为实际世界性能提升。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpo9tihj0475slv4iun0b8jd",
-      "title": "QUACK：多模态社交推理智能体通信知识的质询、理解与审计",
-      "title_en": "QUACK： Questioning， Understanding， and Auditing Communicated Knowledge in Multimodal Social Deduction Agents",
-      "url": "https://arxiv.org/abs/2605.27068",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "QUACK 是一个开源评估框架，用于审计多模态社交推理智能体的语言基础性。它从游戏结果、行为轨迹和陈述一致性三个层面评估智能体。其核心的陈述验证管道能从日志中重建轨迹并逐条核查陈述，自动标记空间幻觉、无依据指控等问题。实验评估了三个前沿视觉语言模型，结果显示即使最强的智能体，其15.1%的可验证空间主张也存在幻觉，且超过半数的指控缺乏证据支持。该项目的完整组件已在 GitHub 开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpnwyk2c0104slv4ynvin2w3",
-      "title": "Gemini Embedding 2：来自Gemini的原生多模态嵌入模型",
-      "title_en": "Gemini Embedding 2： A Native Multimodal Embedding Model from Gemini",
-      "url": "https://arxiv.org/abs/2605.27295",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "Google DeepMind推出Gemini Embedding 2，这是一款原生多模态嵌入模型，支持在统一表示空间中嵌入视频、音频、图像和文本。该模型利用Gemini的多模态能力，通过大规模对比学习实现SOTA性能。在关键基准上表现优异：MSCOCO取得62.9 R@1，Vatex取得68.8 NDCG@10，MTEB multilingual达到69.9，MTEB Code达到84.0，超越了专用模型。其统一能力使其适用于RAG、推荐与搜索等下游任务，并在天文学、生物科学、艺术和烹饪等专业领域展现出强大的零样本性能。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpnhwile0xr3sl016t6m8soc",
-      "title": "MiniMax-M2系列：微小激活释放最大真实世界智能",
-      "title_en": "The MiniMax-M2 Series： Mini Activations Unleashing Max Real-World Intelligence",
-      "url": "https://arxiv.org/abs/2605.26494",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "MiniMax推出M2系列大语言模型。其旗舰模型M2采用混合专家（MoE）架构，总参数229.9B，每个token仅激活9.8B参数。该系列专为智能体部署设计，基于三大组件构建：智能体驱动的数据管道、可扩展的智能体原生强化学习系统Forge，以及展示早期自我进化能力的M2.7检查点。这种设计使其在智能体编码、深度搜索、办公任务及推理基准测试中达到了前沿性能水平。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpnhwile0xr2sl01a0vvnder",
-      "title": "基于策略内知识边界增强的智能体强化学习",
-      "title_en": "Efficient Agentic Reinforcement Learning with On-Policy Intrinsic Knowledge Boundary Enhancement",
-      "url": "https://arxiv.org/abs/2605.26952",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "本文研究智能体强化学习在训练工具使用大语言模型时出现的问题，即导致冗余工具调用增加和模糊模型知识边界。现有基于奖励塑造的方法会引发奖励黑客问题。为此，提出AKBE方法，通过双路径（使用工具与不使用工具）滚动动态探测模型知识边界，定义是否需要工具及最少工具调用次数，并通过比较正确性构建监督信号以引导高效工具使用。在七个问答基准测试中，AKBE将任务准确率平均提升1.85，减少18%工具调用，工具生产力提高25%，且无准确率-效率权衡。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpnhwild0xr0sl01guxfodgi",
-      "title": "MRT：用于大规模分层图像生成与编辑的掩码区域Transformer",
-      "title_en": "MRT： Masked Region Transformer for Layered Image Generation and Editing at Scale",
-      "url": "https://arxiv.org/abs/2605.27235",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "MRT是一个20B参数的掩码区域扩散模型，专为多层透明图像生成与编辑设计。它在超过1000万个多语言设计样本上训练，统一了文本到图层、图像到图层和图层到图层三项任务。模型通过选择性token掩码实现灵活的图层生成与编辑，并引入溢出感知画布图层以处理边界不一致问题，支持半透明背景合成。此外，应用扩散蒸馏实现了8步实时生成。实验表明，MRT在所有任务上显著优于先前先进方法与商业系统。用户研究显示，其图像到图层质量优于同期Qwen-Image-Layered模型，推理速度快10-100倍，GPU内存消耗降低50-90%。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpnhwild0xqzsl01t4hzqrce",
-      "title": "超越最终答案：审计多智能体工业工作流中的轨迹级模型幻觉",
-      "title_en": "Beyond Final Answers： Auditing Trajectory-Level Hallucinations in Multi-Agent Industrial Workflows",
-      "url": "https://arxiv.org/abs/2605.24219",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-26T00:00:00.000Z",
-      "summary": "提出了Trajel，一个用于审计多智能体工业工作流中轨迹级模型幻觉的数据集和评估框架。它基于专家标注的智能体轨迹，引入了五种幻觉分类：事实性、引用性、逻辑性、程序性和范围性。基准测试表明，现有基准遗漏了最常见故障模式，近半数幻觉轨迹涉及多种类型。自动化检测器尽管二分类准确度高，但仍会误判最微妙的类型。轨迹感知的检测显著优于标准的事后验证，表明基于分类法的评估对于更安全的智能体部署是必要的。",
-      "category": "paper"
-    },
-    {
-      "id": "cmplva72h0j6jsl01yvgbp7mk",
-      "title": "微软 Copilot Cowork 存在文件泄露问题",
-      "title_en": null,
-      "url": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-25T23:25:48.799Z",
-      "summary": null,
       "category": "paper"
     }
   ]

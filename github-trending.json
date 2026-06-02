@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-06-01T22:41:23.603Z",
+  "fetched_at": "2026-06-02T22:35:16.199Z",
   "repos": [
+    {
+      "owner": "chopratejas",
+      "name": "headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 6200,
+      "forks": 431,
+      "starsToday": 1266
+    },
     {
       "owner": "microsoft",
       "name": "markitdown",
@@ -8,42 +19,20 @@
       "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 138180,
-      "forks": 9415,
-      "starsToday": 3086
+      "stars": 141012,
+      "forks": 9606,
+      "starsToday": 3616
     },
     {
-      "owner": "nesquena",
-      "name": "hermes-webui",
-      "url": "https://github.com/nesquena/hermes-webui",
-      "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 11179,
-      "forks": 1447,
-      "starsToday": 984
-    },
-    {
-      "owner": "supermemoryai",
-      "name": "supermemory",
-      "url": "https://github.com/supermemoryai/supermemory",
-      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 23923,
-      "forks": 2141,
-      "starsToday": 660
-    },
-    {
-      "owner": "harry0703",
-      "name": "MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 76759,
-      "forks": 10890,
-      "starsToday": 3325
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 203804,
+      "forks": 31263,
+      "starsToday": 1597
     },
     {
       "owner": "D4Vinci",
@@ -52,86 +41,31 @@
       "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 57946,
-      "forks": 5625,
-      "starsToday": 1475
+      "stars": 59098,
+      "forks": 5706,
+      "starsToday": 1196
     },
     {
-      "owner": "pbakaus",
-      "name": "impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 32635,
-      "forks": 1779,
-      "starsToday": 612
-    },
-    {
-      "owner": "p-e-w",
-      "name": "heretic",
-      "url": "https://github.com/p-e-w/heretic",
-      "description": "Fully automatic censorship removal for language models",
+      "owner": "nesquena",
+      "name": "hermes-webui",
+      "url": "https://github.com/nesquena/hermes-webui",
+      "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 23011,
-      "forks": 2465,
-      "starsToday": 241
+      "stars": 12499,
+      "forks": 1536,
+      "starsToday": 1725
     },
     {
-      "owner": "EveryInc",
-      "name": "compound-engineering-plugin",
-      "url": "https://github.com/EveryInc/compound-engineering-plugin",
-      "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
+      "owner": "reconurge",
+      "name": "flowsint",
+      "url": "https://github.com/reconurge/flowsint",
+      "description": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 19078,
-      "forks": 1428,
-      "starsToday": 428
-    },
-    {
-      "owner": "TauricResearch",
-      "name": "TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 81720,
-      "forks": 15886,
-      "starsToday": 284
-    },
-    {
-      "owner": "revfactory",
-      "name": "harness",
-      "url": "https://github.com/revfactory/harness",
-      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 5111,
-      "forks": 687,
-      "starsToday": 527
-    },
-    {
-      "owner": "godotengine",
-      "name": "godot",
-      "url": "https://github.com/godotengine/godot",
-      "description": "Godot Engine – Multi-platform 2D and 3D game engine",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 111613,
-      "forks": 25509,
-      "starsToday": 121
-    },
-    {
-      "owner": "can1357",
-      "name": "oh-my-pi",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "description": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 9432,
-      "forks": 759,
-      "starsToday": 333
+      "stars": 4471,
+      "forks": 580,
+      "starsToday": 190
     },
     {
       "owner": "OpenBMB",
@@ -140,20 +74,9 @@
       "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 24178,
-      "forks": 2784,
-      "starsToday": 880
-    },
-    {
-      "owner": "FareedKhan-dev",
-      "name": "train-llm-from-scratch",
-      "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
-      "description": "A straightforward method for training your LLM, from downloading data to generating text.",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 3673,
-      "forks": 514,
-      "starsToday": 860
+      "stars": 25065,
+      "forks": 2878,
+      "starsToday": 779
     },
     {
       "owner": "stefan-jansen",
@@ -162,31 +85,42 @@
       "description": "Code for Machine Learning for Algorithmic Trading, 2nd edition.",
       "language": "Jupyter Notebook",
       "languageColor": "#DA5B0B",
-      "stars": 17811,
-      "forks": 5182,
-      "starsToday": 82
+      "stars": 18424,
+      "forks": 5222,
+      "starsToday": 570
     },
     {
-      "owner": "dmtrKovalenko",
-      "name": "fff",
-      "url": "https://github.com/dmtrKovalenko/fff",
-      "description": "The fastest and the most accurate file search toolkit for AI agents, Neovim, Rust, C, and NodeJS",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 7142,
-      "forks": 298,
-      "starsToday": 121
+      "owner": "jamwithai",
+      "name": "production-agentic-rag-course",
+      "url": "https://github.com/jamwithai/production-agentic-rag-course",
+      "description": "",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 6358,
+      "forks": 1488,
+      "starsToday": 31
     },
     {
-      "owner": "codecrafters-io",
-      "name": "build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "description": "Master programming by recreating your favorite technologies from scratch.",
-      "language": "Markdown",
-      "languageColor": "#083fa1",
-      "stars": 510345,
-      "forks": 48388,
-      "starsToday": 1194
+      "owner": "supermemoryai",
+      "name": "supermemory",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 24589,
+      "forks": 2176,
+      "starsToday": 677
+    },
+    {
+      "owner": "Open-LLM-VTuber",
+      "name": "Open-LLM-VTuber",
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 8302,
+      "forks": 1071,
+      "starsToday": 65
     }
   ]
 }
