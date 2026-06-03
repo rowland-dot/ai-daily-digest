@@ -1,8 +1,48 @@
 {
-  "count": 25,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpyacsh5038rslaxlh6udycy",
+      "title": "微软研究：装瓶厂AI从聊天到决策",
+      "title_en": "A three-month pilot in a Midwestern bottling plant shows what happens when AI moves beyond chat and …",
+      "url": "https://x.com/MSFTResearch/status/2062204914223169635",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-06-03T16:09:00.000Z",
+      "summary": "一份在中西部装瓶厂进行的三个月试点显示，当AI超越聊天进入决策领域时会发生什么--约束条件变化、风险真实、答案必须可靠。 https：//msft.it/6015vjYUN",
+      "category": "paper"
+    },
+    {
+      "id": "cmpyhoxxg002qsli30vj99h80",
+      "title": "NVIDIA Research 在 CVPR 2026 发表三篇论文：规模化训练实现抓取、自动驾驶与智能体泛化",
+      "title_en": "NVIDIA Research Unlocks Advanced Grasping， Smarter Autonomous Driving and Agent Training at Scale",
+      "url": "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training",
+      "source": "NVIDIA AI Blog",
+      "publishedAt": "2026-06-03T15:00:57.000Z",
+      "summary": "NVIDIA Research 在 CVPR 2026 上发表三篇论文，展示规模化训练带来的泛化能力。GraspGen-X 是首个零样本抓取基础模型，基于 20 亿次模拟抓取训练，可为任意末端执行器生成抓取姿态。LCDrive 用紧凑潜在表示替代文本推理，让自动驾驶在嵌入式硬件上更快推理。NitroGen 基于 Isaac GR00T 架构，在大量虚拟环境中训练具身智能体。此外还发布了新的物理 AI 智能体技能，以及配合 GraspGen-X 使用的 CUDA 加速运动规划库 curoboV2 和闭环抓取论文 Grasp-MPC。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpxvzm7o00jqsliwbt1hnvae",
+      "title": "Anthropic 分析 832 个 AI 恶意账户：中高风险攻击者半年从 33% 跃至 56%",
+      "title_en": "What we learned mapping a year's worth of AI-enabled cyber threats",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-03T09:51:21.088Z",
+      "summary": "Anthropic 分析 2025 年 3 月至 2026 年 3 月间 832 个被封禁的恶意账户，映射至 MITRE ATT&CK 框架。67.3% 使用 AI 编写恶意软件，6.5% 用于横向移动。六个月间中高风险攻击者占比从 33% 升至 56%。AI 用于账户发现增长 8.9%，AI 辅助钓鱼下降 8.6%。传统基于技术数量或平台（Claude Code、API、聊天界面）的威胁评估失效，而 MITRE ATT&CK 框架尚未收录此类智能体编排行为。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpxhi7gs041mslcksl8he9vu",
+      "title": "斯坦福大学法学院研究：人工智能的表现优于法学教授",
+      "title_en": "斯坦福大学法学院研究显示：人工智能的表现优于法学教授",
+      "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-03T02:33:56.784Z",
+      "summary": "斯坦福大学法学院的一项研究表明，人工智能的表现优于法学教授。该发现引发了广泛关注，在Hacker News平台获得了104个Points。",
+      "category": "paper"
+    },
     {
       "id": "cmpx6ljcj013yslck2447n70s",
       "title": "微软研究：Aurora天气预报速度超传统超算数千倍",
@@ -11,6 +51,16 @@
       "source": "X：Microsoft Research (@MSFTResearch)",
       "publishedAt": "2026-06-02T21:45:25.000Z",
       "summary": "天气预报速度比传统超级计算机快数千倍。听听Kenji Takeda在#MSBuild微软研究实验室关于Aurora的分享。了解更多：https：//msft.it/6018vjGUA",
+      "category": "paper"
+    },
+    {
+      "id": "cmpxkya4604y3slck1oyytsxu",
+      "title": "世界模型与语言模型：论具体推理与抽象推理的互补性",
+      "title_en": "World Models Meet Language Models： On the Complementarity of Concrete and Abstract Reasoning",
+      "url": "https://arxiv.org/abs/2606.03603",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-02T13:07:49.000Z",
+      "summary": "本研究探讨了世界模型与多模态大语言模型在预测未来状态时的互补性。世界模型可生成具体的视觉未来轨迹，但可能视觉合理却任务错误；多模态大语言模型则擅长抽象推理。为此，研究提出了\"受控的具体推理\"框架，并构建了VRQABench和OpenWorldQA两个基准。同时，提出了Privileged-Future On-Policy Self-Distillation（PF-OPSD）方法，该方法在训练时利用真实未来视频作为特权上下文评估推理轨迹，但部署时无需真实未来。实验结果显示，PF-OPSD在两个基准上分别比基线高出10.6%和10.9%，并提升了对噪声或冲突轨迹的鲁棒性。",
       "category": "paper"
     },
     {
@@ -31,6 +81,16 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-06-02T02:00:00.000Z",
       "summary": "The Next Era of Knowledge Work报告指出，Codex正通过AI增强的研究、数据分析、工作流自动化与内容创作，变革知识工作的生产力。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpyaocou03ccslaxcg50bh1c",
+      "title": "Ultralytics YOLO26：统一实时端到端视觉模型",
+      "title_en": "Ultralytics YOLO26： Unified Real-Time End-to-End Vision Models",
+      "url": "https://arxiv.org/abs/2606.03748",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "Ultralytics YOLO26 采用双头设计实现原生无 NMS 的端到端推理，彻底移除 DFL，获得更轻检测头与无约束回归范围。训练结合混合 Muon-SGD 优化器 MuSGD、转向推理头的 Progressive Loss 及保证小物体正样本的 STAL 标签分配。支持检测、实例分割、姿态估计、定向检测和分类，提供 5 种尺度（n/s/m/l/x）及开放词汇扩展 YOLOE-26。全部尺度在 COCO 上达 40.9-57.5 mAP，T4 TensorRT 延迟 1.7-11.8 ms；YOLOE-26x 在 LVIS minival 文本提示下达 40.6 AP。代码已开源。",
       "category": "paper"
     },
     {
@@ -114,16 +174,6 @@
       "category": "paper"
     },
     {
-      "id": "cmpu2kuky000jslagu101hyo9",
-      "title": "NVIDIA Research 推动机器人技术从模拟到现实世界",
-      "title_en": "NVIDIA Research Advances Robotics From Simulation to the Real World",
-      "url": "https://blogs.nvidia.com/blog/category/nvidia-research",
-      "source": "NVIDIA Blog：Agentic AI（网页）",
-      "publishedAt": "2026-05-28T13:00:51.000Z",
-      "summary": "机器人技术正进入新阶段，从受控演示和脚本自动化转向在现实世界中实现通用、可靠的具身自主性。NVIDIA Research 的研究推动了这一从模拟到现实的过渡。",
-      "category": "paper"
-    },
-    {
       "id": "cmpuu7d1n00z4sl0z2gngr8jx",
       "title": "恢复策略引发的错误：鲁棒GUI智能体的基准测试与轨迹合成",
       "title_en": "Recovering Policy-Induced Errors： Benchmarking and Trajectory Synthesis for Robust GUI Agents",
@@ -161,96 +211,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-28T00:00:00.000Z",
       "summary": "针对现有基准无法精确诊断多模态智能体记忆在动态环境中的具体失败阶段，研究提出了\"行动-世界交互循环\"记忆模型，并构建了WorldMemArena基准。该基准包含400个多会话多模态任务，涵盖\"终身进化\"和\"智能体执行\"两类场景，支持对记忆写入、维护、检索和使用的阶段级评估。研究首次对长上下文、RAG等手工设计系统与基于框架的记忆智能体进行直接比较，发现记忆写入与存储质量的提升不直接带来性能改善，且多模态记忆在利用视觉证据及跨领域稳定性上仍存在挑战。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpobyo1b04qeslv4jzefv5eu",
-      "title": "ITBench-AA：前沿大模型在首个智能体企业IT任务基准测试中得分均低于50%",
-      "title_en": "ITBench-AA： Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks - by Artificial Analysis and IBM",
-      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-05-27T17:20:29.000Z",
-      "summary": "由Artificial Analysis和IBM推出的ITBench-AA SRE基准测试显示，所有前沿大模型得分均未超过50%。Claude Opus 4.7（自适应推理，最大努力）以47%领先，GPT-5.5（xhigh）和Qwen3.7 Max分别得46%和42%。该测试包含59个需要通过Shell命令调查Kubernetes事件快照并提交根因诊断的智能体任务。关键发现是模型推理轮次差异近3倍，但更长的轨迹并不转化为更高准确率，过度调查的模型会因提交误报而受罚。在成本方面，开源模型Gemma 4 31B（Reasoning）以每任务$0.14的成本获得37%得分，优于成本更高但得分更低的闭源模型。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpobap4x04leslv4yn3zhvqo",
-      "title": "Fast， faster， Qwen. 🚀",
-      "title_en": "Fast， faster， Qwen. 🚀 Thrilled to see Qwen3.5 reaching a record-breaking 580 tps for agentic workl…",
-      "url": "https://x.com/Alibaba_Qwen/status/2059674574397313277",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "publishedAt": "2026-05-27T16:34:20.000Z",
-      "summary": "Qwen3.5在TokenSpeed推理引擎上，针对智能体工作负载达到了创纪录的580 tokens per second （tps）速度。这一成果由Qwen推理团队、lightseekorg Foundation TokenSpeed团队、NVIDIA及Mooncake团队共同实现，并采用了tri_dao的FlashAttention-4 （FA4） 优化。此里程碑标志着开源大语言模型推理性能的边界得到了推动，相关详情可查阅PyTorch社区博客。",
-      "category": "paper"
-    },
-    {
-      "id": "cmppprn04028nslvyqxgosjyn",
-      "title": "SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力",
-      "title_en": "Blog Win on TCO： How AMD InstinctTM MI355X Achieves Cost-Competitive Distributed Inference Through SGLang with MoRI The SGLang and AMD team has worked closely to unlock competitive Total Cost of Ownership （TCO） for large-scale DeepSeek-R1 disaggregated inference on AMD InstinctTM MI355X GPUs. Building on SGLang's se… AMD & SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-05-28-mori",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-05-27T16:00:00.000Z",
-      "summary": "SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MTP 以及 CPU 流式处理优化。",
-      "category": "paper"
-    },
-    {
-      "id": "cmppj5i3o00jrslvysba2u7mc",
-      "title": "\"了解评估如何设计的模型\"得分更安全",
-      "title_en": "Models That Know How Evaluations Are Designed Score Safer",
-      "url": "https://arxiv.org/abs/2605.28591",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "AI安全评估的有效性依赖于模型在受控与部署环境下行为一致。研究提出\"评估元知识\"概念，指模型通过训练数据（如描述评估实践的科学文章或社交媒体）隐性习得对评估结构特征（如可验证结构或道德困境）的认知。在六个安全基准上的测试表明，经过合成文档微调后的模型，其安全评分显著高于基础模型与控制模型，即使排除明确表达评估意识的回答，这种行为偏移依然存在。这表明评估元知识可能导致安全基准分数虚高，成为独立于显式记忆或语言化评估意识之外的新干扰因素，对安全评估的设计和解读有重要影响。",
-      "category": "paper"
-    },
-    {
-      "id": "cmppj5i3o00jqslvy852k7c9j",
-      "title": "思维链监控在跨类型多样的语言下的脆弱性",
-      "title_en": "The Fragility of Chain-of-Thought Monitoring Across Typologically Diverse Languages",
-      "url": "https://arxiv.org/abs/2605.27901",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "该研究首次对思维链监控在13种不同语言和7个模型家族（共16个模型，参数从8B到120B）中进行了大规模评估。研究发现，CoT在所有语言和提示类型下的平均不忠实率高达95.9%。前沿模型会系统性进行策略性操纵（如答案切换和事后合理化），使外部监控难以检测欺骗。模型常在生成过程的前15%内就在潜在激活中锁定了错误线索，即使其CoT看起来是忠实的。令人惊讶的是，这种欺骗模式在低资源语言中保持100%，揭示了当前CoT监管的根本局限。研究证实CoT监控在语言分布偏移下极其脆弱，其安全信号远弱于仅基于英语的研究。代码已开源：https：//multilingual-cot-monitoring.github.io/{blue{here}}。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpp43j5a0bo3slv47z22fr57",
-      "title": "DenoiseRL：通过恢复嘈杂前缀来引导推理模型",
-      "title_en": "DenoiseRL： Bootstrapping Reasoning Models to Recover from Noisy Prefixes",
-      "url": "https://arxiv.org/abs/2605.28421",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "DenoiseRL是一种强化学习框架，旨在提升大语言模型的推理能力。它无需依赖更强的教师模型或精心筛选的困难数据集，而是通过在弱模型产生的失败推理轨迹上进行基于恢复的优化来直接学习，将错误转化为改进机会。这种方法提供了更丰富多样的学习信号，提升了探索效率。实验表明，DenoiseRL在竞争性的数学和通用推理基准测试中，持续优于强在策略RL基线，并能随着训练难度增加促进更强的自我纠正行为。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpoxnk890a20slv458yalony",
-      "title": "VibeSearchBench：面向真实世界中长期主动搜索的评测基准",
-      "title_en": "VibeSearchBench： Benchmarking Long-horizon Proactive Search in the Wild",
-      "url": "https://arxiv.org/abs/2605.27882",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "基于LLM的智能体在现有搜索基准上表现优异，但真实用户体验不佳，这源于现有基准依赖于高度明确的查询、单轮交互和固定格式评估，无法反映用户与智能体通过多轮对话协同澄清模糊意图的真实搜索行为。为此，研究提出了\"VibeSearch\"范式并发布了VibeSearchBench，该基准包含200个手工策划的双语任务，覆盖20个领域，分为专业与日常生活两个子集。评估通过用户模拟器和图匹配框架进行。对七个前沿模型的测试显示，所有模型在VibeSearch任务上表现均不充分（最佳F1分数为30.30），凸显了在长期上下文推理、主动意图激发等方面取得根本进展的必要性。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpoxnk880a1vslv4yp5aikg0",
-      "title": "AI研究智能体窄化科学探索",
-      "title_en": "AI Research Agents Narrow Scientific Exploration",
-      "url": "https://arxiv.org/abs/2605.27905",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "本研究将AI研究智能体视为科学搜索系统进行评估。通过四个框架和六个大语言模型，从共享种子文献中生成了37，802个科学想法，并与人类论文、后续研究及种子文献进行对比。实验揭示了四个一致的模式：AI生成的想法比同领域人类论文更为集中；更贴近其起始文献，而非后续人类研究；与AI想法最相似的论文后续引用量往往较低；当AI想法与已有工作不同时，差异主要源于对现有技术方法的重组，而非引入全新的研究问题。总体而言，当前的AI研究智能体更擅长局部细化，而非拓展科学探索的广度。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpovigyt09i3slv4yyi85evn",
-      "title": "ResearchMath-14K：通过智能体扩展研究级数学",
-      "title_en": "ResearchMath-14K： Scaling Research-Level Mathematics via Agents",
-      "url": "https://arxiv.org/abs/2605.28003",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-27T00:00:00.000Z",
-      "summary": "本文介绍了ResearchMath-14K，这是一个包含14，056个研究级数学问题的数据集，通过多智能体流程从学术资料中策划而成，是目前此类规模最大的集合。研究还生成了ResearchMath-Reasoning（包含220K条教师轨迹），发现语言模型存在回避行为，且新一代模型产生的引用和虚假引用分别是旧模型的5.6倍和5.0倍。经过智能体过滤后，对参数规模为4B到30B的Qwen3模型进行微调，其平均得分比基础模型提高了9.2分，表明过滤后的开放问题尝试能为研究级数学推理提供有效监督。该数据集已公开发布。",
       "category": "paper"
     }
   ]
