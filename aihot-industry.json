@@ -1,8 +1,68 @@
 {
-  "count": 45,
+  "count": 44,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq00q1w401tvsltr2b8zysje",
+      "title": "Nemotron Parakeet ASR 印尼语准确率达 97.7%",
+      "title_en": "When laws and oversight depend on transcripts， 70-80% isn't enough. http：//Rafiqspace.ai hit 97.7% …",
+      "url": "https://x.com/nvidia/status/2062647600424128773",
+      "source": "X：NVIDIA (@nvidia)",
+      "publishedAt": "2026-06-04T21:28:04.000Z",
+      "summary": "当法律和监督依赖于转录内容时，70-80% 是不够的。\n\nhttp：//Rafiqspace.ai 通过微调 Nemotron Parakeet ASR 达到了 97.7% 的印尼语准确率（2.3% WER）-- 优于全球工具，同时每小时成本降低高达 90%。⚖️",
+      "category": "industry"
+    },
+    {
+      "id": "cmpzmsurk050jslkpxfuptzyp",
+      "title": "台积电难以跟上AI需求：\"我们只能支持这么多\"",
+      "title_en": "TSMC struggles to keep up with AI demand： 'We can only support so much'",
+      "url": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
+      "source": "The Verge：订阅版科技（RSS）",
+      "publishedAt": "2026-06-04T14:15:44.000Z",
+      "summary": "全球最大芯片制造商台积电表示，通过美国本土生产满足客户需求可能需要\"非常长的时间\"，凸显AI需求带来的产能压力。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpzljcev04oyslkpirsh5gdy",
+      "title": "DeepSeek连续四周登顶Token份额榜",
+      "title_en": "DeepSeek has now topped our token share rankings 4 weeks in a row： https：//openrouter.ai/rankings",
+      "url": "https://x.com/OpenRouter/status/2062538625225548118",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-06-04T14:15:03.000Z",
+      "summary": "DeepSeek 现已连续四周在我们平台的 token 份额排行榜上位居第一： https：//openrouter.ai/rankings",
+      "category": "industry"
+    },
+    {
+      "id": "cmpzer05a02v8slkpi6r58kcw",
+      "title": "微软AI负责人：Anthropic模型太贵，正自研更便宜的替代模型",
+      "title_en": "Microsoft's AI Chief Says Anthropic Models Are Too Expensive",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-06-04/microsoft-says-anthropic-models-are-too-expensive",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-04T11:02:01.000Z",
+      "summary": "微软AI部门负责人表示，Anthropic推出的模型成本过高，公司目前正在内部研发更廉价的替代模型，以降低成本。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpyx4llm047vsli313nmjw1m",
+      "title": "Cloudflare Radar：机器人流量首次超过人类占比57.5%",
+      "title_en": "📢 里程碑 机器人流量🤖 首次在互联网历史上超过了人类在线流量👨🦰 根据Cloudflare Radar的实时统计 过去一周（5月28日到6月4日），全球所有请求 HTML 网页的流…",
+      "url": "https://x.com/xiaohu/status/2062367357868355622",
+      "source": "X：小互 (@xiaohu)",
+      "publishedAt": "2026-06-04T02:54:29.000Z",
+      "summary": "Cloudflare Radar 实时统计显示，过去一周（5月28日至6月4日）全球所有 HTML 网页请求流量中，57.5% 来自机器人（爬虫、AI 抓取、自动化脚本），仅42.5%来自真人浏览器，机器人流量首次超过人类。按所有 HTTP 流量返回内容分类，JSON（API 机器通信）占33.1%居首，HTML 仅12%。互联网流量主体已从人类浏览网页转向机器间通信和机器人抓取。",
+      "category": "industry"
+    },
+    {
+      "id": "cmpysu6gj030usli3gqo1qtsd",
+      "title": "联合国报告：2030年AI数据中心水电消耗将翻倍",
+      "title_en": "联合国报告警示：AI 驱动下，2030 年数据中心水电消耗将翻倍",
+      "url": "https://www.ithome.com/0/959/607.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-04T00:50:46.000Z",
+      "summary": "联合国大学水、环境与健康研究所报告指出，受AI需求驱动，去年全球数据中心耗电448太瓦时（AI占五分之一），耗水4.5万亿升，碳排放1.89亿吨。预计到2030年，年耗电量将翻倍至945太瓦时（AI占40%），耗水增至9.3万亿升，碳排放升至3.99亿吨，占地面积从6900平方公里扩展至14500平方公里。报告警告若忽视环境成本，AI落地还将加剧土地紧张与电子废弃物问题。",
+      "category": "industry"
+    },
     {
       "id": "cmpy7c7v402flslaxwaf0jfr1",
       "title": "Suno完成4亿美元D轮融资",
@@ -80,7 +140,7 @@
       "url": "https://www.ithome.com/0/959/083.htm",
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-03T01:31:15.000Z",
-      "summary": "据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2025 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。",
+      "summary": "据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2026 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。",
       "category": "industry"
     },
     {
@@ -381,76 +441,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-29T00:45:13.000Z",
       "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmpq1pcva00zuslno6kbpd0xz",
-      "title": "萨姆·阿尔特曼和达里奥·阿莫代伊都纷纷收回了关于AI将引发就业危机的预测",
-      "title_en": null,
-      "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-28T21:49:31.492Z",
-      "summary": null,
-      "category": "industry"
-    },
-    {
-      "id": "cmppuiqqt01a5slm6n7mhtwo5",
-      "title": "Apple 正努力将庞大的 Gemini 模型塞进 iPhone 以驱动新 Siri",
-      "title_en": "Apple working to cram massive Gemini model into iPhone to power new Siri",
-      "url": "https://arstechnica.com/ai/2026/05/apple-reportedly-trying-to-distill-googles-multi-trillion-parameter-gemini-ai-to-run-on-iphone",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-05-28T18:30:48.000Z",
-      "summary": "Apple 正尝试将大型 Gemini 模型集成到 iPhone 中，以支持全新的 Siri 功能。由于模型规模庞大，本地处理可能无法完全实现，因此一个云端组件很可能是必然的选择。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpp0a46y0atsslv4grk6oh1w",
-      "title": "OpenRouter 获得1.13亿美元B轮融资",
-      "title_en": "OpenRouter Raises $113M Series B",
-      "url": "https://openrouter.ai/announcements/series-b",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-05-28T14:00:00.000Z",
-      "summary": "AI模型聚合平台OpenRouter宣布完成1.13亿美元B轮融资。本轮融资由CapitalG领投，NVentures、ServiceNow Ventures等多家机构参投，现有投资者Andreessen Horowitz与Menlo Ventures也参与了本轮融资。",
-      "category": "industry"
-    },
-    {
-      "id": "cmppe159m0eavslv4sq3myhrs",
-      "title": "DeepSeek计划在完成融资后立即申请科创板IPO",
-      "title_en": "Exclusive： DeepSeek plans to file for a STAR Market （A-share） IPO immediately after closing its curr…",
-      "url": "https://x.com/thexpin/status/2059947998302679059",
-      "source": "X：X.PIN (@thexpin)",
-      "publishedAt": "2026-05-28T10:40:49.000Z",
-      "summary": "独家：DeepSeek计划在完成当前约500亿美元（3500亿人民币）融资轮后，立即申请科创板（A股）IPO。\n来源：参与本轮融资的一位大型基金经理。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpp9s8g90d5pslv4cdirb5qo",
-      "title": "Qwen3.7-Max 登顶 OpenRouter 热门大模型榜",
-      "title_en": "Qwen3.7-Max hits #1 on the @OpenRouter Trending LLM chart with 77.3B tokens in usage. And we are ju…",
-      "url": "https://x.com/alibaba_cloud/status/2059918150997623004",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-28T08:42:13.000Z",
-      "summary": "Qwen3.7-Max 以 77.3B tokens 的使用量登顶 @OpenRouter 热门大语言模型榜单。\n\n而我们才刚刚开始。\n\n👇 https：//int.alibabacloud.com/m/1000413314/",
-      "category": "industry"
-    },
-    {
-      "id": "cmpp7sbi50cnwslv4ukds92j6",
-      "title": "可灵AI将在AI电影节展示20部4K原创短片",
-      "title_en": "Kling AI is taking the stage at AI on the Lot's Community Day - the world's largest AI film & media …",
-      "url": "https://x.com/Kling_ai/status/2059908126611292645",
-      "source": "X：可灵 Kling AI (@Kling_ai)",
-      "publishedAt": "2026-05-28T08:02:23.000Z",
-      "summary": "可灵AI将在全球最大AI影视会议AI on the Lot的社区日上，展示由Prompt Club的电影制作人创作的20部原创AI短片。所有短片均为原生4K分辨率，旨在探索AI电影的边界。该展示将于5月29日在加州卡尔弗市的卡尔弗剧院举行。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpppj8oq027jslvy6zrnekat",
-      "title": "OpenAI 的前沿治理框架",
-      "title_en": "OpenAI's Frontier Governance Framework",
-      "url": "https://openai.com/index/openai-frontier-governance-framework",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "summary": "OpenAI 发布了\"前沿治理框架\"，阐述其 AI 安全、安全与风险管理实践如何与欧盟和加州新出台的法规要求对齐。该框架旨在规范其前沿模型的开发与部署流程。",
       "category": "industry"
     }
   ]

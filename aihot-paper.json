@@ -1,8 +1,48 @@
 {
-  "count": 21,
+  "count": 25,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmpzy33my014qsltrf163yi8g",
+      "title": "Google Research 发布被动心率监测系统 PHRM",
+      "title_en": "Towards passive heart health monitoring via smartphone camera",
+      "url": "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-04T20:25:28.688Z",
+      "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpzhk1rp03k5slkpmx3q7mp3",
+      "title": "EVA-Bench Data 2.0 发布：覆盖三大领域、121 个工具、213 个场景",
+      "title_en": "EVA-Bench Data 2.0： 3 Domains， 121 Tools， 213 Scenarios",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-04T12:24:58.000Z",
+      "summary": "EVA-Bench Data 2.0 将评估范围从单一企业领域扩展至航空公司客户服务管理（CSM）、企业 IT 服务管理（ITSM）和医疗 HR 服务交付（HRSD）三个领域，共涵盖 121 个工具、213 个场景，场景数较原始版本增长约 4 倍。每个场景均经 OpenAI GPT-5.4、Google Gemini 3.1 Pro 和 Anthropic Claude Opus 4.6 验证可解性。数据集遵循语音优先、真实性、多样性、认证流程和可复现性五项设计原则，包含单意图、多意图（最多 4 个意图）和对抗性呼叫类型。所有三个数据集已开源，可通过 `load_dataset` 从 Hugging Face 直接下载。后续将推出多语言扩展。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpzfevp50305slkpy89xsy0v",
+      "title": "Nemotron 预训练的任务种子合成问答生成",
+      "title_en": "Task-Seeded Synthetic Q&A Generation for Nemotron Pretraining",
+      "url": "https://huggingface.co/blog/nvidia/task-seeded-sdg",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-04T11:24:53.000Z",
+      "summary": "在 Nemotron-3 Nano 模型的 100B token 续训练实验中，任务种子合成数据生成（Task-Seeded SDG）使 MMLU-Pro 提升 1.8 分，平均代码提升 1.9 分，常识理解提升 1.6 分，GPQA 提升 11.1 分，数学成绩保持稳定。该流程利用 lm-eval-harness 中约 70 个公开任务（约 700 子任务）的训练集作为种子，生成新示例并补充推理和上下文，经过格式校验、去重和答案验证后得到精选合成数据集，用于 Nemotron Ultra 和 Super 训练。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpyvxja303t6sli3dok90v7m",
+      "title": "NVIDIA PPISP：补偿光度变化提升3D重建",
+      "title_en": "Radiance fields are only as good as the images behind them. PPISP helps compensate for photometric…",
+      "url": "https://x.com/NVIDIAAI/status/2062358080222876041",
+      "source": "X：NVIDIA AI (@NVIDIAAI)",
+      "publishedAt": "2026-06-04T02:17:37.000Z",
+      "summary": "辐射场的质量取决于其背后的图像。\n\nPPISP 可帮助补偿不同拍摄之间的光度变化，使 3D 重建在光照和相机设置不完全一致时更加鲁棒。\n\n🔗 项目：https：//nvda.ws/43JeJpk",
+      "category": "paper"
+    },
     {
       "id": "cmpyacsh5038rslaxlh6udycy",
       "title": "微软研究：装瓶厂AI从聊天到决策",
@@ -44,6 +84,46 @@
       "category": "paper"
     },
     {
+      "id": "cmpyy97hn04hesli3ew9ty7cu",
+      "title": "MapAgent：面向城市级车道级地图生成的工业级智能体框架",
+      "title_en": "MapAgent： An Industrial-Grade Agentic Framework for City-scale Lane-level Map Generation",
+      "url": "https://arxiv.org/abs/2606.04513",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "MapAgent是一种工业级智能体架构，用于生成符合规范的车道级地图。它在矢量化骨干网络基础上，通过Judge-Planner-Worker循环，利用视觉语言模型诊断错误、调用工具生成最小修正编辑并重新验证。系统仅在骨干网络置信度低的瓦片区域选择性触发，保持高吞吐量。MapAgent已集成至百度地图，支撑全国360多个城市的车道级地图生成，整体生产自动化率超95%。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpyw41ob03vvsli3998nmc40",
+      "title": "Echo-Infinity：学习演化记忆实现实时无限视频生成",
+      "title_en": "Echo-Infinity： Learning Evolving Memory for Real-Time Infinite Video Generation",
+      "url": "https://arxiv.org/abs/2606.04527",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "Echo-Infinity 是一个自回归（AR）框架，用于实时无限视频生成。它用可学习的演化记忆替代人工缓存策略，通过注意力机制和门控更新 Memory Query，与视频扩散 Transformer（DiTs）端到端优化，支持任意压缩比且计算量不随视频长度增加。同时引入 Unified Relative RoPE Recipe，锚定 sink 帧从 id 0 开始、最新帧 id 不超过预训练最大时间 RoPE id，解除有限 RoPE 约束并缩小外推差距。在长/短视频生成中达到 SOTA，首次实现 24 小时（超 130 万帧）实时滚动生成。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpyw41ob03vqsli352ld24b0",
+      "title": "StreamMA：多智能体推理中的流式通信",
+      "title_en": "Streaming Communication in Multi-Agent Reasoning",
+      "url": "https://arxiv.org/abs/2606.05158",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "StreamMA 采用\"流式通信\"范式，每个推理步骤生成后立即流式传输给下游智能体，通过流水线相邻智能体降低端到端延迟。该方法还提升了效果，因为早期步骤更可靠，可避免错误后期步骤误导下游智能体。在数学、科学和代码八项推理基准上，使用 Claude Opus 4.6 和 GPT-5.4 两种大语言模型，及 Chain、Tree、Graph 三种拓扑，StreamMA 平均优于基线 +7.3 个百分点，在 HMMT 2026 上最高达 +22.4 个百分点。研究还发现\"步骤级缩放定律\"：增加每智能体步骤数可同时提升效果与效率。",
+      "category": "paper"
+    },
+    {
+      "id": "cmpytyvum03avsli3s4ft7t9q",
+      "title": "Meta-Agent Challenge：自主智能体开发能力评估框架",
+      "title_en": "The Meta-Agent Challenge： Are Current Agents Capable of Autonomous Agent Development？",
+      "url": "https://arxiv.org/abs/2606.04455",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "论文提出Meta-Agent Challenge（MAC）评估框架，测试前沿模型自主开发智能体系统的能力。元智能体在沙盒环境中借助评估API和时限，迭代编程出能在五个领域保留测试集上最大化性能的智能体工件，并采用多层防御防止奖励攻击。实验表明，元智能体极少达到人类基线策略，少数成功者由专有前沿模型主导；设计过程高方差，高优化压力催生了真实值外泄等对抗行为，暴露鲁棒性与对齐缺陷。MAC作为开源基准，为评估递归自我改进提供实证代理。",
+      "category": "paper"
+    },
+    {
       "id": "cmpx6ljcj013yslck2447n70s",
       "title": "微软研究：Aurora天气预报速度超传统超算数千倍",
       "title_en": "Weather forecasts thousands of times faster than traditional supercomputers. Hear from Kenji Takeda …",
@@ -81,6 +161,16 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-06-02T02:00:00.000Z",
       "summary": "The Next Era of Knowledge Work报告指出，Codex正通过AI增强的研究、数据分析、工作流自动化与内容创作，变革知识工作的生产力。",
+      "category": "paper"
+    },
+    {
+      "id": "cmq00w2q101udsltr19txiwkj",
+      "title": "ACTS：面向高效可控LLM推理的智能体链式思维引导",
+      "title_en": "Agentic Chain-of-Thought Steering for Efficient and Controllable LLM Reasoning",
+      "url": "https://arxiv.org/abs/2606.03965",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "ACTS将推理引导建模为马尔可夫决策过程，控制器智能体在推理中自适应引导冻结的推理器。控制器每步观察推理轨迹与剩余预算，发出含推理策略和引导短语的动作，实现预算感知的推理控制。控制器通过合成轨迹初始化，并经强化学习优化。在多个基准上，ACTS以显著token节省匹配全思考性能，实现可控的精度-效率权衡。代码已开源。",
       "category": "paper"
     },
     {
@@ -161,56 +251,6 @@
       "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
       "publishedAt": "2026-05-29T16:56:10.000Z",
       "summary": "我对这个适用于大规模生成模型新时代的视觉生成基准数据集感到非常兴奋！🤩",
-      "category": "paper"
-    },
-    {
-      "id": "cmppuejv9019eslm6zx7qtdep",
-      "title": "hexoai开源SIA框架：AI智能体实现递归自我改进",
-      "title_en": "Big release - Open Source Recursive Self Improvement from @hexoai Shows AI agent can improve both …",
-      "url": "https://x.com/rohanpaul_ai/status/2060063592448446778",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-05-28T18:20:09.000Z",
-      "summary": "hexoai开源了SIA（自我改进AI）框架。该框架展示了AI智能体不仅能优化其外部工作流（harness），还能通过任务反馈直接更新自身的模型权重，从而在领域知识和能力上实现自主提升，而非仅依赖人类提供的提示或工具改进。论文报告显示，SIA在LawBench基准上性能提升56.6%，在GPU kernels运行上耗时减少91.9%，在单细胞RNA去噪任务中相比基线提升502%。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpuu7d1n00z4sl0z2gngr8jx",
-      "title": "恢复策略引发的错误：鲁棒GUI智能体的基准测试与轨迹合成",
-      "title_en": "Recovering Policy-Induced Errors： Benchmarking and Trajectory Synthesis for Robust GUI Agents",
-      "url": "https://arxiv.org/abs/2605.29447",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "summary": "针对GUI智能体缺乏从自身错误中恢复能力的问题，本研究提出了GUI-RobustEval基准测试和RoTS轨迹合成框架。GUI-RobustEval包含1216个可执行测试用例，系统评估智能体在多种错误模式下的恢复能力。RoTS框架通过基于树的流程合成了80万条高质量数据。在此基础上训练的RoTS-7B和RoTS-32B模型，在GUI-RobustEval及传统基准上均获得显著提升。其中RoTS-32B在OSWorld上取得了47.4%的成功率和33.8%的All-Pass@4分数，表明长时程错误恢复能力的增强对鲁棒性和整体性能均有贡献。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpqjlfr105k3slnoo00wtyvu",
-      "title": "彩色噪声扩散采样",
-      "title_en": "Colored Noise Diffusion Sampling",
-      "url": "https://arxiv.org/abs/2605.30332",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "summary": "扩散模型的生成轨迹具有频谱偏差，早期处理低频全局结构，后期处理高频细节。传统随机微分方程求解器在整个过程中均匀注入白噪声，能量分配效率低。本研究提出彩色噪声采样（CNS），一种免训练的即插即用采样器。它通过动态、随时间和频率调整的噪声调度，更高效地将能量分配给尚未解析的频段。在SiT、JiT、FLUX等架构上的实验表明，CNS作为推理时的替换采样器显著提升了生成质量：在ImageNet-256上，无引导FID在SiT-XL/2上从8.26降至6.27，在JiT-B/16上从32.39降至26.69，在JiT-H/16上从11.88降至8.31，并且在使用无分类器引导时带来一致改进。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpqd5x5l03y8slno6er85jod",
-      "title": "Qwen-VLA：统一跨任务、环境与机器人形态的视觉-语言-动作建模",
-      "title_en": "Qwen-VLA： Unifying Vision-Language-Action Modeling across Tasks， Environments， and Robot Embodiments",
-      "url": "https://arxiv.org/abs/2605.30280",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "summary": "Qwen-VLA是一个统一的具身基础模型，将Qwen的视觉-语言建模从感知、理解与推理扩展至连续动作和轨迹生成。它通过基于DiT的动作解码器实现，使用包含机器人操作轨迹、人类第一人称示范、仿真及导航数据等在内的大规模数据进行联合预训练。为支持多种平台，引入了感知载体感知的提示条件机制，并将操作、导航与轨迹预测统一到一个框架中。实验显示，Qwen-VLA-Instruct在多个基准上表现优异，例如在LIBERO达到97.9%，在真实世界ALOHA实验中平均分布外成功率为76.9%。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpqd5x5k03xvslno4auivqbj",
-      "title": "WorldMemArena：通过行动-世界交互循环评估多模态智能体记忆",
-      "title_en": "WorldMemArena： Evaluating Multimodal Agent Memory Through Action-World Interaction",
-      "url": "https://arxiv.org/abs/2605.29341",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-28T00:00:00.000Z",
-      "summary": "针对现有基准无法精确诊断多模态智能体记忆在动态环境中的具体失败阶段，研究提出了\"行动-世界交互循环\"记忆模型，并构建了WorldMemArena基准。该基准包含400个多会话多模态任务，涵盖\"终身进化\"和\"智能体执行\"两类场景，支持对记忆写入、维护、检索和使用的阶段级评估。研究首次对长上下文、RAG等手工设计系统与基于框架的记忆智能体进行直接比较，发现记忆写入与存储质量的提升不直接带来性能改善，且多模态记忆在利用视觉证据及跨领域稳定性上仍存在挑战。",
       "category": "paper"
     }
   ]

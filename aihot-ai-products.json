@@ -1,8 +1,98 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwMDg1NDQzMDAwLCJpIjoiY21wcmN4Mm9zMGN6ZnNsbm8wZzVjN2VyNSJ9",
+  "nextCursor": "eyJhIjoxNzgwMjg2MzU1MDAwLCJpIjoiY21wdXFxMm10MDAyN3NsMHpyYnBpZmdkaCJ9",
   "items": [
+    {
+      "id": "cmq01ld46020ksltri2vkr5uv",
+      "title": "NotebookLM 来源归属功能上线",
+      "title_en": "Today we're launching another highly requested feature： Source Attribution！ 🥳 No more guessing. No…",
+      "url": "https://x.com/NotebookLM/status/2062653124326863077",
+      "source": "X：NotebookLM (@NotebookLM)",
+      "publishedAt": "2026-06-04T21:50:01.000Z",
+      "summary": "今天，我们推出又一项呼声很高的功能：来源归属！🥳\n\n无需再猜测。现在你可以看到每个创作物背后所用的确切公式（提示词 + 来源）。想要调整？只需轻点\"迭代\"，随心定制 💖",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq010okb01vbsltr3j2n6q5t",
+      "title": "Anthropic 开源 AI 驱动漏洞发现框架",
+      "title_en": "Anthropic 用于人工智能驱动漏洞发现的开源框架",
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-04T21:32:05.585Z",
+      "summary": "Anthropic 将其用于 AI 驱动漏洞发现的开源框架代码托管在 GitHub 上。该框架借助 AI 技术进行漏洞发现，旨在帮助识别软件中的安全缺陷。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpzxaxqv00w8sltrueor0hp8",
+      "title": "OpenAI API 新增内容审核评分",
+      "title_en": "Moderation scores are now available in the Responses API and Completions API. Return moderation sig…",
+      "url": "https://x.com/OpenAIDevs/status/2062619558440267801",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-06-04T19:36:39.000Z",
+      "summary": "Moderation scores 现已在 Responses API 和 Completions API 中可用。\n\n在与生成相同的请求流程中返回审核信号，然后由你的应用决定如何使用它们进行记录、路由、审核或拦截。\n\nhttps：//developers.openai.com/api/docs/guides/moderation",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpztzorc000vsltrtvxh4va3",
+      "title": "Codex 推出 iOS 应用构建插件",
+      "title_en": "More of the iOS app loop， now inside Codex. The Build iOS Apps plugin lets Codex view and test your…",
+      "url": "https://x.com/OpenAIDevs/status/2062599291479478275",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-06-04T18:16:06.000Z",
+      "summary": "更多 iOS 应用循环，现已集成至 Codex。\n\nBuild iOS Apps 插件让 Codex 可在应用内浏览器查看和测试你的 iOS 应用，打开 SwiftUI 预览，并无需离开 Codex 即可热重载编辑。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpzt2dat0039sll37lufc7ax",
+      "title": "Replit Agent 联手 Shopify 快速建店",
+      "title_en": "We partnered with Shopify so you can go from idea to live store in minutes Just tell Replit Agent …",
+      "url": "https://x.com/Replit/status/2062594881625940379",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-06-04T17:58:35.000Z",
+      "summary": "我们与 Shopify 合作，让你从想法到上线商店只需几分钟\n\n只需告诉 Replit Agent 你想卖什么。它会：\n\n- 构建自定义店铺页面\n- 创建你的 Shopify 商店\n- 帮你添加商品\n\n在 Shopify 中认领店铺，设置支付，即可开业。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpzrtp0u06dxslkp7tqka277",
+      "title": "NotebookLM 推出福尔摩斯游戏笔记本",
+      "title_en": "PRO TIP： Gamify your notebooks Don't just read your notes- investigate them. Our new Sherlock Holme…",
+      "url": "https://x.com/NotebookLM/status/2062582348194197743",
+      "source": "X：NotebookLM (@NotebookLM)",
+      "publishedAt": "2026-06-04T17:08:47.000Z",
+      "summary": "专业技巧：将笔记本游戏化\n\n不要只是阅读笔记--去调查它们。我们全新的福尔摩斯笔记本将学习变成一款互动侦探游戏。推理事实，发现线索，证明即使是最复杂的问题也能迎刃而解。\n\n➡️ https：//goo.gle/Sherlock",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpzosigs05knslkpwrpnvf65",
+      "title": "Dreaming： ChatGPT 推出更强的记忆系统，更好记住用户偏好",
+      "title_en": "Dreaming： Better memory for a more helpful ChatGPT",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-04T09:00:00.000Z",
+      "summary": "ChatGPT 推出名为 Dreaming 的新记忆系统，能够更有效地记住用户偏好，并在跨对话场景中保持上下文的新鲜感和相关性，从而提升助手的个性化体验。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpz4ztc400a8slkpncco9ljl",
+      "title": "Meet OpenJarvis：一个本地优先的设备端个人AI智能体框架，支持工具、记忆与学习",
+      "title_en": "Meet OpenJarvis： A Local-First Framework for On-Device Personal AI Agents with Tools， Memory， and Learning",
+      "url": "https://www.marktechpost.com/2026/06/03/meet-openjarvis-a-local-first-framework-for-on-device-personal-ai-agents-with-tools-memory-and-learning",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-06-04T06:23:10.000Z",
+      "summary": "Stanford 研究人员发布 OpenJarvis，一个完全在设备端运行推理、智能体、记忆与学习的开源框架。它将个人 AI 系统分解为五个可组合原语：Intelligence、Engine、Agents、Tools & Memory 和 Learning。该框架与最佳云端模型的性能差距在 3.2 points 以内，边际 API 成本降低约 800 倍。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpznzjs205baslkpa2lb0j2d",
+      "title": "Hugging Face 为编码智能体重塑 hf CLI 输出格式",
+      "title_en": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "url": "https://huggingface.co/blog/hf-cli-for-agents",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "Hugging Face 重新设计 hf CLI，使其同时服务人类用户和编码智能体（Claude Code、Codex 等）。CLI 通过环境变量自动检测智能体驱动，输出紧凑无截断的 TSV 格式，避免 ANSI 和交互提示，大幅降低 token 消耗。复杂多步任务中，不使用 CLI 的智能体 token 消耗最高达 hf CLI 的 6 倍。2026 年 4 月起，Hugging Face 追踪 Hub 智能体流量，Claude Code 约 4 万用户、近 4900 万次请求，Codex 紧随其后。",
+      "category": "ai-products"
+    },
     {
       "id": "cmpymcfaz01b5sli3o5nw1ytc",
       "title": "Grok模型登陆Cloudflare AI Gateway",
@@ -54,16 +144,6 @@
       "category": "ai-products"
     },
     {
-      "id": "cmpyblbsv03m0slaxnu9mkovt",
-      "title": "xAI Grok语音模型上线Vapi平台",
-      "title_en": "Try the most natural TTS and cost-effective STT APIs in @Vapi_AI",
-      "url": "https://x.com/xai/status/2062209374039499178",
-      "source": "X：xAI (@xai)",
-      "publishedAt": "2026-06-03T16:26:43.000Z",
-      "summary": "试试 @Vapi_AI 上最自然的TTS和性价比最高的STT API。\n\n来自 @xai 的Grok STT和Grok TTS现已在企业语音AI平台Vapi上线。基于Vapi构建自定义语音智能体，可让它们用客户的语言交流、在受监管的工作流中捕捉重要细节，并在每次通话中明显更具人性化。",
-      "category": "ai-products"
-    },
-    {
       "id": "cmpy8aaoz02oxslaxh0ql786h",
       "title": "Perplexity Personal Computer 登陆 Windows",
       "title_en": "Personal Computer is coming to Windows. Personal Computer for Windows runs on your machine and orch…",
@@ -111,6 +191,16 @@
       "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
       "publishedAt": "2026-06-03T05:24:52.000Z",
       "summary": "官方 Hermes Agent 桌面应用现已推出！",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmpywp2ei041asli3q9bqnks0",
+      "title": "Grok 成为 Vapi 的默认语音引擎",
+      "title_en": "Grok Becomes the Voice of Vapi Latest post Jun 3， 2026 # Grok Becomes the Voice of Vapi Bringing frontier voice quality to millions of Vapi agents. 【Read More】（http：//x.ai/news/grok-vapi）",
+      "url": "https://x.ai/news/grok-vapi",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "xAI 宣布与 Vapi 合作，Grok 将作为 Vapi 平台上 12 种核心语音的默认引擎，覆盖超过 250 万个语音智能体。在 Vapi 独立盲测中，Grok Voice 位列第一；X 平台上的人机语音盲猜中，超 4500 名用户有一半无法区分 Grok 与真人。现在，Grok Speech-to-Text 和 Text-to-Speech 已集成至 Vapi Dashboard，团队还可通过 Grok Voice API 获取高级定制选项（含语音克隆），用于旁白、播客、广告等场景。",
       "category": "ai-products"
     },
     {
@@ -411,96 +501,6 @@
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "publishedAt": "2026-06-01T03:59:15.000Z",
       "summary": "NVIDIA Vera CPU 旨在为AI工厂中智能体工作负载树立新性能标杆。文章阐述了AI领域扩展规律的演变：预训练通过更大数据集、更多参数和大规模并行GPU系统扩展智能；后训练通过指令微调扩展实用性，并重新调整GPU用于生成式推理；测试时缩放则通过给模型更多生成token来提升推理能力。当前，智能体AI与强化学习正推动下一阶段的扩展。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpuokbhx006jslbr3qxktcmy",
-      "title": "NVIDIA DSX OS 提供开放、模块化软件用于规模化运营AI工厂",
-      "title_en": "NVIDIA DSX OS Delivers Open， Modular Software for Operating AI Factories at Scale",
-      "url": "https://developer.nvidia.com/blog/nvidia-dsx-os-delivers-open-modular-software-for-operating-ai-factories-at-scale",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-06-01T03:36:52.000Z",
-      "summary": "NVIDIA DSX 平台为设计、模拟和构建 AI 工厂提供完整解决方案，旨在应对不断增长的智能需求。该平台通过开放、模块化的软件栈，帮助运营方更快地扩展规模、提高效率，并降低从能源、芯片、基础设施、模型到应用这五层架构的整体智能成本。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpw4pmcw000ysl1u9sl8mrwr",
-      "title": "OpenRouter 5月发布亮点",
-      "title_en": "May Release Spotlight",
-      "url": "https://openrouter.ai/announcements/may-release-spotlight",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "summary": "OpenRouter 发布5月更新，推出语音与转录API、模型融合（Model Fusion）功能，并为平台添加了私有模型和企业工作区管控能力。此次更新共上线20个新模型，其中包括 Gemini 3.5 Flash 和 Claude Opus 4.8。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpu2kwvj0022slagmtocgkym",
-      "title": "DynoSim：模拟驱动推理堆栈优化",
-      "title_en": "There's a better way to serve your inference stack， you just haven't found it yet. DynoSim is a wor…",
-      "url": "https://x.com/NVIDIAAI/status/2060781385686659416",
-      "source": "X：NVIDIA AI (@NVIDIAAI)",
-      "publishedAt": "2026-05-30T17:52:24.000Z",
-      "summary": "NVIDIA 发布 DynoSim，这是一个针对其 Dynamo 推理服务栈的工作负载驱动仿真工具。它将部署测试转化为\"模拟-验证\"循环：团队无需逐个测试部署选项，而是在单一虚拟时间线上建模整个堆栈，通过高保真仿真快速筛查数千种配置，仅将最佳候选方案投入实机验证。DynoSim 完全使用 Rust 实现，运行速度极快，在测试中达到实时速度的 1，500 倍。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmprt0b0303xesllj5i7bbs1z",
-      "title": "Show HN： Tiny-vLLM--基于 C 和 CUDA 的高性能大型语言模型推理引擎",
-      "title_en": null,
-      "url": "https://github.com/jmaczan/tiny-vllm",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-05-30T03:25:01.798Z",
-      "summary": "Tiny-vLLM 是一个用 C 和 CUDA 编写的高性能大语言模型推理引擎，项目代码已开源至 GitHub。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmprlcgbc0205sllj84qulx8l",
-      "title": "ComfyUI现已支持OpenRouter模型直接调用",
-      "title_en": "Now you can use your OpenRouter models directly inside @ComfyUI workflows！",
-      "url": "https://x.com/OpenRouter/status/2060511136932315259",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-05-29T23:58:32.000Z",
-      "summary": "现在你可以直接在ComfyUI工作流中使用你的OpenRouter模型了！\n\n【引用 @ComfyUI】：ComfyUI刚刚添加了@OpenRouter支持。\n\n你不再局限于单一的大语言模型，现在可以直接在Comfy中访问20多个模型。\n\n更多灵活性，更少摩擦，同样的工作流。\n\n工作流链接在下方👇",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmprilbss01egsllj3maz5i8a",
-      "title": "Codex可自主管理对话线程与并行任务",
-      "title_en": "codex for managing the codex UI：",
-      "url": "https://x.com/gdb/status/2060486309886443787",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-05-29T22:19:52.000Z",
-      "summary": "Codex用于管理Codex界面：\n\n【引用 @guinnesschen】：如果你厌倦了管理Codex对话线程，就让Codex自己管理自己吧！Codex现在可以创建对话线程、搜索它们、整理它们、固定重要的线程，并为并行任务启动工作树。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpreww0500fosllj22uja0ac",
-      "title": "ChatGPT对话目录功能现已上线",
-      "title_en": "For every ChatGPT conversation that started as \"one quick thing\" and became a full on saga： table of…",
-      "url": "https://x.com/ChatGPTapp/status/2060467129066070182",
-      "source": "X：ChatGPT (@ChatGPTapp)",
-      "publishedAt": "2026-05-29T21:03:39.000Z",
-      "summary": "对于每个始于\"就问一件事\"却演变成完整长篇的ChatGPT对话：目录功能现已推出。\n适用于包含5条以上回复的对话。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpreiy8h00dwslljv0r8dmt7",
-      "title": "Luma Agents 自动生成宣传图，输入内容即可",
-      "title_en": "The blog post did the thinking. Now let the promo do the work. Drop in the content. Define the hoo…",
-      "url": "https://x.com/LumaLabsAI/status/2060461313713909783",
-      "source": "X：Luma AI (@LumaLabsAI)",
-      "publishedAt": "2026-05-29T20:40:33.000Z",
-      "summary": "博客文章完成了思考。现在让宣传来发挥作用。\n\n输入内容。定义钩子。Luma Agents 从那里构建每一张宣传图。\n\n投入使用 → http：//lumalabs.ai/app",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmprcx2os0czfslno0g5c7er5",
-      "title": "Runway API持续扩展模型与端点支持",
-      "title_en": "We are continually adding new models and endpoints to the Runway API so you can build the best gener…",
-      "url": "https://x.com/runwayml/status/2060453805519765548",
-      "source": "X：Runway (@runwayml)",
-      "publishedAt": "2026-05-29T20:10:43.000Z",
-      "summary": "我们持续为 Runway API 添加新模型和端点，以便您能将最佳生成能力直接集成到应用、产品和平台中。通过 Runway API，您可以在一个地方获得所需的所有模型，包括 Seedance 2.0、GPT Image 2、HappyHorse 1.0、Nano Banana Pro、Magnific Precision Upscaler V2 等更多内容。请通过下方链接开始使用。",
       "category": "ai-products"
     }
   ]

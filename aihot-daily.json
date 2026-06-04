@@ -1,30 +1,36 @@
 {
-  "date": "2026-06-03",
-  "generatedAt": "2026-06-03T00:00:18.182Z",
-  "windowStart": "2026-06-02T00:00:00.000Z",
-  "windowEnd": "2026-06-03T00:00:00.000Z",
+  "date": "2026-06-04",
+  "generatedAt": "2026-06-04T00:00:00.452Z",
+  "windowStart": "2026-06-03T00:00:00.000Z",
+  "windowEnd": "2026-06-04T00:00:00.000Z",
   "lead": null,
   "sections": [
     {
       "label": "模型发布/更新",
       "items": [
         {
-          "title": "微软首款高级推理AI模型MAI-Thinking-1发布",
-          "summary": "微软在Build 2026上发布了其首款高级推理AI模型MAI-Thinking-1。该模型被定位为“中等规模”，能在“关键”软件工程基准测试中达到领先模型的水平。微软称其完全从头使用干净数据进行训练，未涉及从第三方模型进行知识蒸馏。这标志着微软在自研AI模型上迈出重要一步，此前其主要依赖OpenAI。近期两家公司已重新协商合作协议，关系有所松绑。",
-          "sourceUrl": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026",
-          "sourceName": "The Verge：AI（RSS）"
+          "title": "Grok Imagine 1.5 预览版发布",
+          "summary": "Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI 正在发力。",
+          "sourceUrl": "https://x.com/cb_doge/status/2062242490745594085",
+          "sourceName": "X：cb_doge (@cb_doge)"
         },
         {
-          "title": "Holo3.1：快速本地计算机使用智能体",
-          "summary": "Holo3.1 是基于 Qwen 模型家族的计算机使用智能体系列，旨在提升在桌面、网页和移动环境中的鲁棒性。新模型提供 0.8B、4B、9B 和 35B-A3B 四种尺寸，并首次发布量化检查点，包括 FP8、Q4 GGUF 和 NVFP4，以优化本地推理。在 AndroidWorld 基准测试中，35B-A3B 模型得分从 67% 提升至 79.3%。在 DGX Spark 上，NVFP4 量化相比 BF16 实现 1.74 倍 token 吞吐量提升，并将平均步骤时间从 6.8 秒缩短至 3.3 秒。模型支持函数调用协议，可在第三方智能体框架中部署。",
-          "sourceUrl": "https://huggingface.co/blog/Hcompany/holo31",
-          "sourceName": "Hugging Face：Blog（RSS）"
+          "title": "MiniMax M3 1M token 解码加速 15.6 倍",
+          "summary": "15.6× faster decoding at 1M tokens 🔥 感谢 @FireworksAI_HQ 为 M3 提供推理支持。 立即尝试 👇",
+          "sourceUrl": "https://x.com/MiniMax_AI/status/2062316914618388758",
+          "sourceName": "X：MiniMax (@MiniMax_AI)"
         },
         {
-          "title": "阶跃星辰Step 3.7 Flash发布，专为高效推理设计",
-          "summary": "阶跃星辰发布其推理优化型模型Step 3.7 Flash。该模型为196B MoE架构，从设计之初就专注于推理效率。其采用多矩阵分解注意力机制，使KV-cache成本仅为DeepSeek模型的约22%；同时通过注意力与FFN解耦技术，实现了硬件优化的高效服务。该模型已通过Fireworks AI提供，采用Apache 2.0许可，并可用于构建智能体应用。",
-          "sourceUrl": "https://x.com/StepFun_ai/status/2061655529731342402",
-          "sourceName": "X：阶跃星辰 StepFun (@StepFun_ai)"
+          "title": "Miso One 开源语音模型：8B 参数、110ms 延迟、一次语音克隆",
+          "summary": "Miso One 正式发布，一个 8B 参数的开源权重语音模型（TTS），旨在模拟真实人类朗读的温暖与节奏。它支持一次语音克隆（只需短样本），推理延迟仅 110ms。模型权重已开源至 GitHub，无需 API 即可自托管，音频数据不离开本地。API 访问即将推出。演示已上线，可先试听再克隆仓库。",
+          "sourceUrl": "https://x.com/kimmonismus/status/2062210845308780639",
+          "sourceName": "X：Kim (@kimmonismus)"
+        },
+        {
+          "title": "Ideogram v4.0 发布：2K 分辨率和 JSON 提示支持",
+          "summary": "介绍 Ideogram v4.0。 原生 2K 分辨率，出色的文字渲染，支持 JSON 提示词。 立即在 Krea 中体验。",
+          "sourceUrl": "https://x.com/krea_ai/status/2062227837130887567",
+          "sourceName": "X：Krea AI (@krea_ai)"
         }
       ]
     },
@@ -32,52 +38,52 @@
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Claude Code 新增动态工作流功能",
-          "summary": "Claude Code 新增动态工作流功能，允许模型在运行时即兴创建和协调多智能体框架来处理复杂任务。该功能通过执行特定的 JavaScript 文件来生成和协调拥有独立上下文窗口的子代理，可解决单一上下文窗口中长时间执行任务可能出现的智能惰性等问题。工作流适用于研究、安全分析、代码审查等场景，通常消耗更多 token，更适合高价值复杂任务，其最佳实践仍在发展中。",
-          "sourceUrl": "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
-          "sourceName": "Claude：Blog（网页）"
-        },
-        {
-          "title": "Claude Platform 新增 CLI 工具",
-          "summary": "我们为 Claude Platform 添加了一个 CLI，使每个 API 端点都可以从你的终端运行。 调用 Messages API，启动 Claude 托管智能体，并将结果直接管道传输到你的 shell。 ant CLI 被使用 claude-api 技能的编码智能体（Claude Code）很好地理解。",
-          "sourceUrl": "https://x.com/ClaudeDevs/status/2061877343078244459",
-          "sourceName": "X：Claude Devs (@ClaudeDevs)"
-        },
-        {
-          "title": "OpenAI Codex 发布 Python SDK，可直接嵌入应用",
-          "summary": "这个有点厉害，Codex 出 Python SDK了。 安装指令：pip install openai-codex 整合到自己的代码中，相当于直接内置了顶级编程和生图Agent？ 最关键的是，可以复用 Codex 登录态。",
-          "sourceUrl": "https://x.com/vista8/status/2061846741885018296",
-          "sourceName": "X：Vista (@vista8)"
-        },
-        {
-          "title": "Google DeepMind 开源科学智能体工具包",
-          "summary": "构建用于科学发现的自主智能体？🧬🤖 @GoogleDeepMind Science Skills 现已在 GitHub 上发布。我们已开源这个专用工具包，以科学基础和更高的 token 效率加速您的智能体工作流。 立即下载 ↓ https://github.com/google-deepmind/science-skills",
-          "sourceUrl": "https://x.com/googleaidevs/status/2061924472245153863",
-          "sourceName": "X：Google AI for Developers (@googleaidevs)"
-        },
-        {
-          "title": "微软发布开源框架 Adaptive Spec-driven Scoring：支持用文本描述创建 AI 评估测试",
-          "summary": "微软开源发布 Adaptive Spec-driven Scoring for Evaluation and Regression Testing 框架。开发者可通过文本描述快速生成 AI 行为测试，用于模型评估与回归测试。",
-          "sourceUrl": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions",
+          "title": "Meta 面向 WhatsApp Business 的 AI 智能体现已全球上线",
+          "summary": "Meta 为 WhatsApp Business 打造的 AI 智能体面向全球商家开放，将按照模型 token 使用量向企业收费。",
+          "sourceUrl": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally",
           "sourceName": "TechCrunch：AI（RSS）"
         },
         {
-          "title": "Runway API 推出 Aleph 2.0 视频编辑功能",
-          "summary": "Aleph 2.0 现已通过 Runway API 提供。将精准视频编辑直接集成到您的应用、产品和平台中。支持在多镜头序列中编辑最长 30 秒、1080p 分辨率的视频，仅修改您想要的部分。 请通过以下链接开始使用。",
-          "sourceUrl": "https://x.com/runwayml/status/2061895998545244342",
-          "sourceName": "X：Runway (@runwayml)"
+          "title": "NousResearch 发布 Hermes Agent 桌面应用公测版",
+          "summary": "官方 Hermes Agent 桌面应用现已推出！",
+          "sourceUrl": "https://x.com/SiliconFlowAI/status/2062042813852995899",
+          "sourceName": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
         },
         {
-          "title": "GitHub Copilot应用：智能体原生的桌面体验",
-          "summary": "在微软 Build 2026 大会上，GitHub 发布了新的工具和更新，并将 Copilot 应用定位为“智能体原生的桌面体验”。其核心目标是让 AI 智能体能够以用户已经习惯的方式进行工作。",
-          "sourceUrl": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
-          "sourceName": "GitHub Blog"
+          "title": "xAI Grok语音模型上线Vapi平台",
+          "summary": "试试 @Vapi_AI 上最自然的TTS和性价比最高的STT API。 来自 @xai 的Grok STT和Grok TTS现已在企业语音AI平台Vapi上线。基于Vapi构建自定义语音智能体，可让它们用客户的语言交流、在受监管的工作流中捕捉重要细节，并在每次通话中明显更具人性化。",
+          "sourceUrl": "https://x.com/xai/status/2062209374039499178",
+          "sourceName": "X：xAI (@xai)"
         },
         {
-          "title": "Replit 与微软合作发布 Fabric 集成",
-          "summary": "宣布与 @Microsoft 的新合作 组织现在可以在 Replit 中构建内部工具、工作流或数据仪表板，并直接发布到 Microsoft Fabric，内置安全、身份验证和治理功能。",
-          "sourceUrl": "https://x.com/Replit/status/2061892255028486435",
+          "title": "Grok模型登陆Cloudflare AI Gateway",
+          "summary": "在 @Cloudflare 的 AI Gateway 上尝试 Grok 模型！",
+          "sourceUrl": "https://x.com/xai/status/2062294202625696081",
+          "sourceName": "X：xAI (@xai)"
+        },
+        {
+          "title": "OpenShell v0.0.55 发布：新增 Vertex AI 推理支持",
+          "summary": "OpenShell v0.0.55 🧩 Google Vertex AI 推理提供者 🔒 基于配置文件的策略可见性 🐳 网关中更好的 Podman 检测 🖥️ 恢复 GPU procfs 基准行为 🔧 CI 与文档修复 运行智能体对接 Vertex AI，同时拥有改进的策略可见性以及更可靠的 Podman 和 GPU 沙箱行为。 https://github.com/NVIDIA/OpenShell/releases/tag/v0.0.55",
+          "sourceUrl": "https://x.com/NVIDIAAI/status/2062210034109677665",
+          "sourceName": "X：NVIDIA AI (@NVIDIAAI)"
+        },
+        {
+          "title": "Replit上线SEO Agent助应用被发现",
+          "summary": "你发布了你的应用。然后呢？ 你的应用可能看起来很棒，但如果没人能找到它，它就依然不可见。 发布只是开始。 认识一下SEO Agent。它会为你运行一次扫描，并建议修复措施，帮助你的应用在网页搜索和AI搜索中被发现。",
+          "sourceUrl": "https://x.com/Replit/status/2062211976995188871",
           "sourceName": "X：Replit (@Replit)"
+        },
+        {
+          "title": "OpenClaw 2026.6.1发布：新增Windows节点与技能工坊",
+          "summary": "OpenClaw 2026.6.1 已上线 🦞 🪟 原生 Windows 节点主机 🛠️ 用于自主学习型智能体的技能工坊（Skill Workshop） 📋 工作板（Workboard）编排 🧠 支持 MiniMax M3 Windows 加入集群。无需企鹅服。 https://github.com/openclaw/openclaw/releases/tag/v2026.6.1",
+          "sourceUrl": "https://x.com/openclaw/status/2062288421406785710",
+          "sourceName": "X：OpenClaw (@openclaw)"
+        },
+        {
+          "title": "黄仁勋与Nadella共议智能体AI时代",
+          "summary": "智能体AI时代来了。 从台北，黄仁勋与@satyanadella共同出席#MSBuild，展示NVIDIA与@Microsoft如何携手构建，从Windows设备到规模化AI工厂。 ▶️ 观看对话：https://nvda.ws/4uefQbs",
+          "sourceUrl": "https://x.com/nvidia/status/2062228974273716457",
+          "sourceName": "X：NVIDIA (@nvidia)"
         }
       ]
     },
@@ -85,46 +91,52 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "Alphabet拟融资800亿美元 Anthropic提交IPO申请",
-          "summary": "Alphabet宣布拟通过股权融资800亿美元，用于扩展AI基础设施。Anthropic已秘密提交IPO申请，在上市竞赛中领先于竞争对手OpenAI。此外，SpaceX正与华尔街机构协商其IPO的承销费用，HPE则因AI基础设施需求旺盛，年度销售预期超出市场估计。",
-          "sourceUrl": "https://www.bloomberg.com/news/videos/2026-06-02/bloomberg-tech-6-2-2026-video",
+          "title": "微软与OpenAI分道扬镳——如今双方准备正面交锋",
+          "summary": "微软与OpenAI的合作关系已彻底破裂，双方进入正面竞争态势。前DeepMind高管、现任微软AI主管Mustafa Suleyman明确表示，微软现在必须从头证明自己能独立完成所有必需的任务。这标志着两家科技巨头从紧密合作伙伴转变为直接竞争对手。",
+          "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942242/microsoft-build-ai-agents-openai-competition",
+          "sourceName": "The Verge：订阅版科技（RSS）"
+        },
+        {
+          "title": "Satya Nadella 谈微软 Build 大会主旨演讲",
+          "summary": "与我们共同构建前沿智能生态系统。 今早我在 Microsoft Build 上的主旨演讲亮点。",
+          "sourceUrl": "https://x.com/satyanadella/status/2062022060176801826",
+          "sourceName": "X：Satya Nadella (@satyanadella)"
+        },
+        {
+          "title": "欧盟公布全面技术主权计划，推动芯片与AI自主发展",
+          "summary": "欧盟公布一项全面技术主权计划，旨在扩大本土半导体、人工智能和云计算供应链，以减少对美国和亚洲的依赖。该计划覆盖芯片制造、AI基础设施及云计算服务等多个关键领域，目标是增强欧洲在核心技术上的自主能力。",
+          "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-03/europe-unveils-sweeping-tech-sovereignty-plan-to-boost-chips-ai",
           "sourceName": "Bloomberg：Technology（RSS）"
         },
         {
-          "title": "Nathan Lambert离开Ai2，结束2.5年OLMO等项目工作",
-          "summary": "Ai2（Allen Institute for AI）研究员Nathan Lambert宣布离职。他在Ai2工作超过2.5年，期间主导或参与了OLMO和Tulu等开源模型项目，称其为职业生涯的巅峰。他表示将暂时休息，未来仍会继续深耕开源模型与开放科学领域。",
-          "sourceUrl": "https://x.com/natolambert/status/2061813361848029631",
-          "sourceName": "X：Nathan Lambert (@natolambert)"
-        },
-        {
-          "title": "Anthropic扩展Project Glasswing计划",
-          "summary": "Anthropic正将其Project Glasswing计划扩展至约150个新组织，此前首批约50个合作伙伴。新伙伴分布于十五个多国家，覆盖电力、水务、医疗、通信和硬件等关键基础设施行业。这些合作伙伴的共同点在于，其代码库若遭成功攻击，后果可能极其严重，影响或超1亿人。项目旨在利用Claude Mythos Preview等前沿模型扫描漏洞并协助修复，以应对AI驱动的网络安全挑战。同时，Anthropic推出了基于Claude Opus 4.8等公开模型的Claude Security产品，用于扫描代码并建议补丁。",
-          "sourceUrl": "https://www.anthropic.com/news/expanding-project-glasswing",
-          "sourceName": "Anthropic：Newsroom（网页）"
-        },
-        {
-          "title": "SK会长崔泰源：SK海力士计划未来五年内晶圆产能翻倍",
-          "summary": "SK海力士会长崔泰源宣布，计划在未来五年内将整体晶圆产能提高一倍，以应对AI普及带来的持续存储供应短缺。他预测AI数据中心和AI PC的普及将持续拉动存储需求，供需紧张局面可能延续至2030年。SK海力士将投入大规模资金用于设备、建设等扩张，尽管面临前置时间长（新建晶圆厂至少三年）和资源成本上涨等挑战。目前，SK海力士市值已首次突破1万亿美元。",
-          "sourceUrl": "https://www.ithome.com/0/958/810.htm",
+          "title": "Sensor Tower：OpenAI 旗下 ChatGPT 月活已破 10 亿，史上最快",
+          "summary": "据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2025 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。",
+          "sourceUrl": "https://www.ithome.com/0/959/083.htm",
           "sourceName": "IT之家（RSS）"
         },
         {
-          "title": "Anthropic支持美国AI行政令实施",
-          "summary": "这项行政令是加强美国AI领导地位的重要一步。 我们期待与白宫合作，支持其实施。 https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
-          "sourceUrl": "https://x.com/AnthropicAI/status/2061924580222968183",
-          "sourceName": "X：Anthropic (@AnthropicAI)"
+          "title": "消息称 DeepSeek 首轮融资拟筹集 500 亿元，腾讯、宁德时代等参投",
+          "summary": "DeepSeek 计划在首轮融资中从腾讯、宁德时代等投资方处筹集约 500 亿元人民币。融资落地后，其投后估值预计在 3500 亿至 4000 亿元。创始人梁文峰将出资 200 亿元，腾讯和宁德时代分别拟投资 100 亿元和 50 亿元，成为最大外部投资者。DeepSeek 去年凭借 V3 大模型与 R1 推理模型获得广泛认可。此次融资凸显了中国正打造从大模型到算力能源基建的全链条 AI 产业。",
+          "sourceUrl": "https://www.ithome.com/0/959/249.htm",
+          "sourceName": "IT之家（RSS）"
         },
         {
-          "title": "OpenAI呼吁通过全球领导力推进青年AI安全与机遇",
-          "summary": "OpenAI呼吁通过设立专门的AI安全研究所，在全球范围内采取行动，以保障青少年在使用AI时的安全，并创造更多发展机遇。",
-          "sourceUrl": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+          "title": "Suno完成4亿美元D轮融资",
+          "summary": "我们激动地宣布Suno的新篇章：4亿美元D轮融资，估值54亿美元！🚀 我们的使命一直很简单：让更多人能体验制作音乐的乐趣。非常感谢我们不可思议的社区和投资者与我们共同建设。 点击此处阅读Mikey的博客：https://suno.com/blog/series-d-announcement",
+          "sourceUrl": "https://x.com/suno/status/2062183524887675243",
+          "sourceName": "X：Suno (@suno)"
         },
         {
-          "title": "Travelers借助OpenAI在全国部署AI理赔助手",
-          "summary": "美国保险公司Travelers与OpenAI合作，构建了一款AI驱动的Claim Assistant。该工具旨在引导客户完成理赔流程，并提供全天候支持，以在业务高峰期扩展运营规模。",
-          "sourceUrl": "https://openai.com/index/travelers",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+          "title": "Qwen Cloud全球AI黑客马拉松启动",
+          "summary": "首届Qwen Cloud全球AI黑客马拉松现已启动！ 参与5大高级赛道，在全球舞台上挑战AI智能体极限。 总奖金池超过70,000美元（赛道冠军1万美元）。 立即在Devpost报名：https://click.qwencloud.com/m/20000000281/",
+          "sourceUrl": "https://x.com/alibaba_cloud/status/2062113338994172169",
+          "sourceName": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)"
+        },
+        {
+          "title": "宏利香港与阿里云达成AI战略合作",
+          "summary": "宏利香港宣布与阿里云建立战略合作伙伴关系，旨在构建一个专注于推进负责任的AI创新，并加速AI技术在业务中部署的合作框架。",
+          "sourceUrl": "https://x.com/alibaba_cloud/status/2062006591377829922",
+          "sourceName": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)"
         }
       ]
     },
@@ -132,22 +144,28 @@
       "label": "论文研究",
       "items": [
         {
-          "title": "微软研究：Aurora天气预报速度超传统超算数千倍",
-          "summary": "天气预报速度比传统超级计算机快数千倍。听听Kenji Takeda在#MSBuild微软研究实验室关于Aurora的分享。了解更多：https://msft.it/6018vjGUA",
-          "sourceUrl": "https://x.com/MSFTResearch/status/2061927189977727450",
+          "title": "斯坦福大学法学院研究：人工智能的表现优于法学教授",
+          "summary": "斯坦福大学法学院的一项研究表明，人工智能的表现优于法学教授。该发现引发了广泛关注，在Hacker News平台获得了104个Points。",
+          "sourceUrl": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+        },
+        {
+          "title": "NVIDIA Research 在 CVPR 2026 发表三篇论文：规模化训练实现抓取、自动驾驶与智能体泛化",
+          "summary": "NVIDIA Research 在 CVPR 2026 上发表三篇论文，展示规模化训练带来的泛化能力。GraspGen-X 是首个零样本抓取基础模型，基于 20 亿次模拟抓取训练，可为任意末端执行器生成抓取姿态。LCDrive 用紧凑潜在表示替代文本推理，让自动驾驶在嵌入式硬件上更快推理。NitroGen 基于 Isaac GR00T 架构，在大量虚拟环境中训练具身智能体。此外还发布了新的物理 AI 智能体技能，以及配合 GraspGen-X 使用的 CUDA 加速运动规划库 curoboV2 和闭环抓取论文 Grasp-MPC。",
+          "sourceUrl": "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training",
+          "sourceName": "NVIDIA AI Blog"
+        },
+        {
+          "title": "Anthropic 分析 832 个 AI 恶意账户：中高风险攻击者半年从 33% 跃至 56%",
+          "summary": "Anthropic 分析 2025 年 3 月至 2026 年 3 月间 832 个被封禁的恶意账户，映射至 MITRE ATT&CK 框架。67.3% 使用 AI 编写恶意软件，6.5% 用于横向移动。六个月间中高风险攻击者占比从 33% 升至 56%。AI 用于账户发现增长 8.9%，AI 辅助钓鱼下降 8.6%。传统基于技术数量或平台（Claude Code、API、聊天界面）的威胁评估失效，而 MITRE ATT&CK 框架尚未收录此类智能体编排行为。",
+          "sourceUrl": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "sourceName": "Anthropic：Research（发表成果 · 网页）"
+        },
+        {
+          "title": "微软研究：装瓶厂AI从聊天到决策",
+          "summary": "一份在中西部装瓶厂进行的三个月试点显示，当AI超越聊天进入决策领域时会发生什么——约束条件变化、风险真实、答案必须可靠。 https://msft.it/6015vjYUN",
+          "sourceUrl": "https://x.com/MSFTResearch/status/2062204914223169635",
           "sourceName": "X：Microsoft Research (@MSFTResearch)"
-        },
-        {
-          "title": "Anthropic可解释性研究：区分因果效应相似的特征",
-          "summary": "Anthropic可解释性团队介绍了其Circuits研究的新进展。为区分那些激活模式相似但因果效应不同的模型特征，团队提出一种新方法。该方法通过分析特征的下游连接来预测其实际影响，并使用基于共激活统计的TWERA（虚拟权重）对连接进行加权排序。实验表明，借助下游连接信息能更准确地判断哪个特征会引导特定输出。此方法为识别模型内部真正的因果组件提供了新途径。",
-          "sourceUrl": "https://transformer-circuits.pub/2026/may-update/index.html",
-          "sourceName": "Anthropic：Transformer Circuits（可解释性研究）"
-        },
-        {
-          "title": "Codex正在成为每个人的生产力工具",
-          "summary": "The Next Era of Knowledge Work报告指出，Codex正通过AI增强的研究、数据分析、工作流自动化与内容创作，变革知识工作的生产力。",
-          "sourceUrl": "https://openai.com/index/codex-for-knowledge-work",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
         }
       ]
     },
@@ -155,52 +173,52 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "为了不花那120刀，我把电脑清理软件做成了开源skill",
-          "summary": "作者受一条推文启发，使用Codex对自己的MacBook进行了只读存储分析，发现了B站缓存视频等大量可清理空间（激进方案超140G）。为替代收费软件CleanMyMac，作者制作并开源了一个跨平台（支持Mac/Windows）的AI清理skill。该skill会扫描文件并生成可交互的HTML报告，通过三色分级（绿灯可放心清理、黄灯需人工判断、红灯禁止动）直观展示，并提供安全执行按钮。实测清理后释放了近120G空间，相比CleanMyMac仅扫描出的15.8G，其信息更透明、建议更详细。",
-          "sourceUrl": "https://x.com/Khazix0918/status/2061669881725309048",
-          "sourceName": "X：卡兹克 (@Khazix0918)"
+          "title": "世界模型的功能分类",
+          "summary": "World Labs团队与李飞飞发文，梳理“世界模型”这一被滥用的术语。对比语言模型学习文本统计，世界模型学习空间与时间统计（如光照、物理规律）。基于部分可观马尔可夫决策过程（POMDP）框架，智能体通过动作影响世界状态，观测是部分视图。当前被称为“世界模型”的不同系统本质上是同一循环的不同投影：第一类为渲染器，输出给人眼看的像素，以视觉保真度为核心。文章着重于概念分层，未给出具体模型名、参数或基准分数。",
+          "sourceUrl": "https://x.com/drfeifei/status/2062247238143996275",
+          "sourceName": "X：Fei-Fei Li (@drfeifei, World Labs)"
         },
         {
-          "title": "商汤开源SenseNova-Skills AI办公技能套件",
-          "summary": "商汤开源了AI办公技能套件SenseNova-Skills。这是一个为任何技能兼容智能体（如OpenClaw与HermesAgent）设计的开源技能集合，提供四大核心功能：图像信息图表生成（可镜像参考风格）、数据分析（支持多表解析、清洗与可视化）、PPT创建（生成大纲内容并智能排版，输出可编辑文件）以及深度研究（跨学术、技术、社交等多源搜索并生成报告）。该技能套件现已完全开源。",
-          "sourceUrl": "https://x.com/SenseTime_AI/status/2061822148076093625",
-          "sourceName": "X：商汤 SenseTime (@SenseTime_AI)"
+          "title": "智能体工程实战窍门全录",
+          "summary": "该内容源自@mvanhorn的分享，介绍了“智能体工程”如何重塑软件开发。其核心是从“人主导编码”转向“人主导方向、智能体执行”，中心从IDE变为终端与计划文件。方法论遵循Research → Plan → Work循环，核心是让plan.md约束智能体行为。分享者总结了22条实战技巧，涵盖规划、并行执行、输入方式、远程控制等方面，并列出了完整的工具栈。",
+          "sourceUrl": "https://x.com/shao__meng/status/2061974983094755575",
+          "sourceName": "X：邵猛 (@shao__meng)"
         },
         {
-          "title": "Karpathy 分享学习方法论",
-          "summary": "🎯 Andrej Karpathy 谈如何学习。",
-          "sourceUrl": "https://x.com/rohanpaul_ai/status/2061601689841648120",
-          "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
+          "title": "优步每月 1,500 美元的 AI 使用上限为 AI 工具定价提供参考",
+          "summary": "优步将 AI 工具每月使用上限定为 1500 美元，这一做法为行业 AI 工具定价提供了有价值的参考信号。",
+          "sourceUrl": "https://simonwillison.net/2026/Jun/3/uber-caps-usage",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
         },
         {
-          "title": "Claude Code团队实践：智能体编程如何重塑工程组织与流程",
-          "summary": "在Code w/ Claude SF 2026活动上，Claude Code工程团队分享了将智能体编程设为默认工作方式后带来的流程与结构变革。核心变化包括：规划转向即时（JIT）模式，强调快速原型与反馈；上下文收集变为“先问Claude”；代码审查中Claude处理风格与测试，人工专注于法律、安全等专业判断。新范式下，工程瓶颈从编写代码转向验证、审查与安全维护。",
-          "sourceUrl": "https://claude.com/blog/running-an-ai-native-engineering-org",
+          "title": "Anthropic 用 Claude 赋能自助数据分析",
+          "summary": "Anthropic 使用 Claude 自动化了 95% 的业务分析查询，整体准确率约 95%。其关键在于构建智能体分析栈（agentic analytics stack），通过数据基础层、维护验证流程和技能（skills）分别解决概念-实体歧义、数据过时和检索失败三大错误来源。相比编码场景，数据分析的难点在于将用户问题映射到正确的数据实体，而执行 SQL 反而是简单的。Anthropic 的数据科学团队因此得以专注于因果建模、预测和机器学习等战略工作。",
+          "sourceUrl": "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
           "sourceName": "Claude：Blog（网页）"
         },
         {
-          "title": "Claude Code 自我检查与反馈闭环技巧",
-          "summary": "如何让 Claude Code 在交回工作前检查自己的成果？ 看看如何编码你的手动检查，让 Claude 自己关闭反馈循环：",
-          "sourceUrl": "https://x.com/ClaudeDevs/status/2061900434722496604",
-          "sourceName": "X：Claude Devs (@ClaudeDevs)"
+          "title": "洪水韧性新篇章：Google 开源水文建模框架",
+          "summary": "Google Research 在 GitHub 开源了其水文建模框架，这是一个基于 PyTorch 的 Python 包，采用与 Flood Hub 河段洪水预报相同的模型架构和训练数据。该框架允许研究者和预报员训练 AI 洪水预报模型、添加新模型与数据，并已与捷克水文气象研究所（CHMI）等合作测试。开放模型架构和训练管线旨在让各国气象水文部门在保留数据完全控制权的同时，整合基于 AI 的洪水预报。",
+          "sourceUrl": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+          "sourceName": "Google Research：Blog（网页）"
         },
         {
-          "title": "Gemini Spark：最令人印象深刻也最可怕的AI体验",
-          "summary": "Google DeepMind的AI模型Gemini Spark提供了一次极为深刻但同时令人感到不安的用户体验。该模型展现的强大能力令人印象深刻，但其带来的影响和潜力也引发了深刻的恐惧感。",
-          "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning",
-          "sourceName": "The Verge：订阅版科技（RSS）"
+          "title": "Karpathy 的 llm-wiki 项目获超五千星",
+          "summary": "@karpathy 的 llm-wiki 在几周内获得了 5,000+ 颗星。 其理念是：停止在每个会话中重新发现知识。让一个大语言模型构建并维护一个维基，每次使用时它都会变得更智能。 以下是如何使用 @opencode + @justsisyphus OMO + SiliconFlow 构建你自己的版本 🧵",
+          "sourceUrl": "https://x.com/SiliconFlowAI/status/2062054848762450324",
+          "sourceName": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
         },
         {
-          "title": "开放模型的繁荣生态",
-          "summary": "根据OpenRouter平台数据，自2025年以来，开放模型使用量显著增长。最新数据显示，开放权重模型产生了69.1%的token使用量，闭源模型为30.9%。新模型的发布会吸引开发者测试，推动token使用量达到新的平台期。开放模型市场内部竞争激烈，领导地位频繁更迭，如DeepSeek的早期优势在2025年末至2026年初被MiniMax与Kimi模型取代，随后MiMo、Qwen、腾讯Hy3、阿里巴巴及Arcee等模型的发布再次改变了份额格局。尽管开放模型目前仍只占推理总量的一小部分，但激烈的竞争与增长表明，开发者正越来越愿意将生产流量路由至开放模型。",
-          "sourceUrl": "https://www.tomtunguz.com/the-thriving-ecosystem-of-open-models",
-          "sourceName": "Tomer Tunguz 博客（VC 分析）"
+          "title": "Reachy Mini 添加 MCP 工具",
+          "summary": "Reachy Mini 推出了公开的 MCP canary Space，用于远程工具调用。",
+          "sourceUrl": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+          "sourceName": "Hugging Face：Blog（RSS）"
         },
         {
-          "title": "Gary Marcus：为什么事情终将崩塌",
-          "summary": "知名人工智能批评者Gary Marcus在其关于可信赖AI的专栏中，探讨了人工智能发展面临的根本性挑战。文章开篇即指向问题的核心，指出相关数学理论的局限性与人类心理的复杂性，是导致AI系统最终可能出现问题的根源。",
-          "sourceUrl": "https://garymarcus.substack.com/p/why-things-will-eventually-fall-apart",
-          "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+          "title": "超越聊天机器人的直接偏好优化",
+          "summary": "Dharma-AI 在 Hugging Face 博客发文，探讨直接偏好优化（Direct Preference Optimization，DPO）在聊天机器人之外的更广泛应用场景。",
+          "sourceUrl": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "sourceName": "Hugging Face：Blog（RSS）"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-03T22:38:06.892Z",
+  "fetched_at": "2026-06-04T22:05:32.076Z",
   "repos": [
     {
       "owner": "chopratejas",
@@ -8,31 +8,9 @@
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 9489,
-      "forks": 626,
-      "starsToday": 3528
-    },
-    {
-      "owner": "affaan-m",
-      "name": "ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 205621,
-      "forks": 31569,
-      "starsToday": 2147
-    },
-    {
-      "owner": "aquasecurity",
-      "name": "trivy",
-      "url": "https://github.com/aquasecurity/trivy",
-      "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 35373,
-      "forks": 413,
-      "starsToday": 26
+      "stars": 12298,
+      "forks": 802,
+      "starsToday": 3139
     },
     {
       "owner": "NousResearch",
@@ -41,64 +19,64 @@
       "description": "The agent that grows with you",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 179002,
-      "forks": 30667,
+      "stars": 180868,
+      "forks": 31019,
+      "starsToday": 1951
+    },
+    {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 207128,
+      "forks": 31800,
       "starsToday": 1736
     },
     {
-      "owner": "microsoft",
-      "name": "markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "description": "Python tool for converting files and office documents to Markdown.",
+      "owner": "PaddlePaddle",
+      "name": "PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 142781,
-      "forks": 9755,
-      "starsToday": 2006
+      "stars": 79806,
+      "forks": 10597,
+      "starsToday": 105
     },
     {
-      "owner": "nesquena",
-      "name": "hermes-webui",
-      "url": "https://github.com/nesquena/hermes-webui",
-      "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+      "owner": "github",
+      "name": "spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 13074,
-      "forks": 1590,
-      "starsToday": 734
+      "stars": 108528,
+      "forks": 9593,
+      "starsToday": 311
     },
     {
-      "owner": "D4Vinci",
-      "name": "Scrapling",
-      "url": "https://github.com/D4Vinci/Scrapling",
-      "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 60163,
-      "forks": 5801,
-      "starsToday": 1078
+      "owner": "NVIDIA",
+      "name": "cosmos",
+      "url": "https://github.com/NVIDIA/cosmos",
+      "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 8952,
+      "forks": 578,
+      "starsToday": 244
     },
     {
-      "owner": "opendataloader-project",
-      "name": "opendataloader-pdf",
-      "url": "https://github.com/opendataloader-project/opendataloader-pdf",
-      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 23219,
-      "forks": 2177,
-      "starsToday": 573
-    },
-    {
-      "owner": "odoo",
-      "name": "odoo",
-      "url": "https://github.com/odoo/odoo",
-      "description": "Odoo. Open Source Apps To Grow Your Business.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 51902,
-      "forks": 32642,
-      "starsToday": 29
+      "owner": "lfnovo",
+      "name": "open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 24917,
+      "forks": 2907,
+      "starsToday": 482
     },
     {
       "owner": "Open-LLM-VTuber",
@@ -107,9 +85,9 @@
       "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 8907,
-      "forks": 1103,
-      "starsToday": 702
+      "stars": 9538,
+      "forks": 1144,
+      "starsToday": 583
     },
     {
       "owner": "jwasham",
@@ -118,42 +96,64 @@
       "description": "A complete computer science study plan to become a software engineer.",
       "language": "",
       "languageColor": "",
-      "stars": 348965,
-      "forks": 83153,
-      "starsToday": 459
+      "stars": 349670,
+      "forks": 83224,
+      "starsToday": 740
     },
     {
-      "owner": "lyogavin",
-      "name": "airllm",
-      "url": "https://github.com/lyogavin/airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 18849,
-      "forks": 2068,
-      "starsToday": 208
+      "owner": "github",
+      "name": "copilot-sdk",
+      "url": "https://github.com/github/copilot-sdk",
+      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+      "language": "Java",
+      "languageColor": "#b07219",
+      "stars": 8938,
+      "forks": 1209,
+      "starsToday": 107
     },
     {
-      "owner": "supermemoryai",
-      "name": "supermemory",
-      "url": "https://github.com/supermemoryai/supermemory",
-      "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+      "owner": "aquasecurity",
+      "name": "trivy",
+      "url": "https://github.com/aquasecurity/trivy",
+      "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 35652,
+      "forks": 431,
+      "starsToday": 255
+    },
+    {
+      "owner": "openclaw",
+      "name": "openclaw-windows-node",
+      "url": "https://github.com/openclaw/openclaw-windows-node",
+      "description": "Windows companion suite for OpenClaw - System Tray app, Shared library, Node, and PowerToys Command Palette extension",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 1299,
+      "forks": 166,
+      "starsToday": 358
+    },
+    {
+      "owner": "reconurge",
+      "name": "flowsint",
+      "url": "https://github.com/reconurge/flowsint",
+      "description": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 25127,
-      "forks": 2206,
-      "starsToday": 601
+      "stars": 5267,
+      "forks": 637,
+      "starsToday": 308
     },
     {
-      "owner": "HKUDS",
-      "name": "Vibe-Trading",
-      "url": "https://github.com/HKUDS/Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "owner": "mvanhorn",
+      "name": "last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 9853,
-      "forks": 1998,
-      "starsToday": 221
+      "stars": 27523,
+      "forks": 2342,
+      "starsToday": 173
     }
   ]
 }

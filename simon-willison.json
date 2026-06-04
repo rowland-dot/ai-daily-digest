@@ -1,7 +1,14 @@
 {
-  "fetched_at": "2026-06-03T22:38:19.202Z",
+  "fetched_at": "2026-06-04T22:05:34.723Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Emanuel Maiberg, 404 Media",
+      "link": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+      "updated": "2026-06-04T16:38:29+00:00",
+      "summary": "After this story was published Google's spokesperson reached out and asked us to publish a slightly different version of that statement. The new statement no longer stated that \"it's critical that we maintain humans in the loop.",
+      "body": "4th June 2026\n\nAfter this story was published Google's spokesperson reached out and asked us to publish a slightly different version of that statement. The new statement no longer stated that \"it's critical that we maintain humans in the loop.\"\n\n— Emanuel Maiberg, 404 Media, Google Employees Internally Share Memes About How Its AI Sucks\n\nPosted 4th June 2026 at 4:38 pm\n\nRecent articles\n\n   Claude Opus 4.8: \"a modest but tangible improvement\" - 28th May 2026\n   I think Anthropic and OpenAI have found product-market fit - 27th May 2026\n   Notes on Pope Leo XIV's encyclical on AI - 25th May 2026\n\nThis is a quotation collected by Simon Willison, posted on 4th June 2026.\n\ngoogle 410journalism 50ai 2,052ai-ethics 310"
+    },
     {
       "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
       "link": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
@@ -78,13 +85,6 @@
       "updated": "2026-05-31T16:31:32+00:00",
       "summary": "The solution might be cancelling my AI subscription (via) I find this post by David Wilson very relatable. I didn't mean to build most of these things.",
       "body": "31st May 2026 - Link Blog\n\nThe solution might be cancelling my AI subscription (via) I find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes:\n\nI didn't mean to build most of these things. Usually the Claude session started with something like \"write a quick script for X\", and one hour later the result is not a quick script for X, nor in the usual case is my problem solved, whatever the original itch happened to be.\nOn that last point, this technology is horrific for attention. It's a thermonuclear ADHD amplifier and I have seen the same effect in every single one of my adult friends. Folk running 3 screens simultaneously working on totally unrelated \"projects\" they have little hope of maintaining, and such little commitment to the outcome that the time is obviously wasted.\n\nThis is a very real problem. I'm finding that coding agents can take me from a vague idea to a working solution, one with tests and documentation and that looks like a carefully considered project evolved over the course of many weeks... in less than an hour.\n\nEven if the code is rock solid, there's a limit to how many projects like that I can sensibly care for - and if they're instantly abandoned, what value was there from creating them in the first place?\n\nDavid doesn't think this is sustainable at all:\n\nI have no idea how to manage AI at present except by curtailing use, because a tool producing a cheap reward with minimal input and no friction can only be a liability, and achieving that realisation is probably the only real contribution of AI to date.\n\nI'm hopeful that the critical skill to develop here is discipline. That’s not great news for me: I’ve been trying to figure that one out for decades!\n\nInterestingly, the Hacker News thread has gathered a number of comments from people with ADHD who are finding agents help them achieve the focus they've been missing:\n\n   \"... for me (also ADHD) it's kind of the opposite. I'm finishing side projects for the first time ever because I can actually get them working before I get bored of them\"\n   \"As someone with ADHD I feel like AI is a salve for my mind. I used to listen to intense EDM while working. Now I sit in silence and talk to my agents. I maintain inbox zero. I absorb and comment across all relevant projects, even outside my team. I literally feel like I have a support team for the first time.\"\n   \"For those of us prone to hyperfocus, working with AI can provide the kinds of stimulation we crave. I can hardly remember a time when I've felt more engaged with my work, more productive, and more badass.\""
-    },
-    {
-      "title": "Quoting Karen Kwok for Reuters Breakingviews",
-      "link": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
-      "updated": "2026-05-31T01:48:12+00:00",
-      "summary": "Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together.",
-      "body": "31st May 2026\n\nAnthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together.\n\n— Karen Kwok for Reuters Breakingviews, citing \"a person familiar with the matter\"\n\nPosted 31st May 2026 at 1:48 am\n\nRecent articles\n\n   Claude Opus 4.8: \"a modest but tangible improvement\" - 28th May 2026\n   I think Anthropic and OpenAI have found product-market fit - 27th May 2026\n   Notes on Pope Leo XIV's encyclical on AI - 25th May 2026\n\nThis is a quotation collected by Simon Willison, posted on 31st May 2026.\n\nai 2,047anthropic 289"
     }
   ]
 }

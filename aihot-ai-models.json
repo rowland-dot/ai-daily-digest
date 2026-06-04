@@ -1,16 +1,46 @@
 {
-  "count": 15,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpyfj31g04nwslaxmex7d8l3",
-      "title": "Grok Imagine 1.5 预览版发布",
-      "title_en": "SpaceXAI is cooking.",
-      "url": "https://x.com/cb_doge/status/2062242490745594085",
-      "source": "X：cb_doge (@cb_doge)",
-      "publishedAt": "2026-06-03T18:38:19.000Z",
-      "summary": "Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI 正在发力。",
+      "id": "cmpzwl55v00pfsltr6bq95ouh",
+      "title": "Nemotron 3.5 Content Safety：面向全球企业AI的可定制多模态安全",
+      "title_en": "Nemotron 3.5 Content Safety： Customizable Multimodal Safety for Global Enterprise AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-04T18:57:45.000Z",
+      "summary": "Nemotron 3.5 Content Safety基于Gemma 3 4B IT，提供128K上下文窗口，支持用户提示、可选图像与助手响应的统一多模态安全评估。新增自定义策略执行，允许企业用自然语言定义专属安全规则；THINK模式可输出可审计的逐步推理痕迹。显式训练覆盖12种语言，并借助基座模型零样本泛化至约140种语言。输出提供低延迟二分类、带分类标签、THINK推理痕迹三种模式。安全分类遵循Aegis 2.0框架（13核心类别+10细分类别）。同步发布多模态、多语言安全数据集，可在8GB+ VRAM GPU上实时部署。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpzuuks4008tsltr89qxlntr",
+      "title": "Google Magenta RealTime 2 （MRT2） 实时音乐模型发布",
+      "title_en": "Play our new open-weights music model， @GoogleMagenta RealTime 2， using a MIDI keyboard， live text p…",
+      "url": "https://x.com/googleaidevs/status/2062603374789263646",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-06-04T18:32:20.000Z",
+      "summary": "Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpzn05ag052vslkpo3cb21hq",
+      "title": "Nex-N2-Pro 发布：基于 Qwen3.5 的 397B MoE 推理模型，性能达 GPT-5.5 水平",
+      "title_en": "Post-training is having a moment - Nex-N2-Pro from neolab @NexEcosystem proves it. Built on Qwen3.5-…",
+      "url": "https://x.com/SiliconFlowAI/status/2062549952266723493",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "publishedAt": "2026-06-04T15:00:03.000Z",
+      "summary": "neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpzigjmt03udslkp0elkhz7c",
+      "title": "NVIDIA Nemotron 3 Ultra 为长时间运行的智能体带来更快、更高效的推理能力",
+      "title_en": "NVIDIA Nemotron 3 Ultra Powers Faster， More Efficient Reasoning for Long-Running Agents",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
+      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
+      "publishedAt": "2026-06-04T13:02:49.000Z",
+      "summary": "NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。",
       "category": "ai-models"
     },
     {
@@ -31,6 +61,16 @@
       "source": "X：Kim (@kimmonismus)",
       "publishedAt": "2026-06-03T16:32:34.000Z",
       "summary": "Miso One 正式发布，一个 8B 参数的开源权重语音模型（TTS），旨在模拟真实人类朗读的温暖与节奏。它支持一次语音克隆（只需短样本），推理延迟仅 110ms。模型权重已开源至 GitHub，无需 API 即可自托管，音频数据不离开本地。API 访问即将推出。演示已上线，可先试听再克隆仓库。",
+      "category": "ai-models"
+    },
+    {
+      "id": "cmpythfxu0365sli38hn2bjc9",
+      "title": "xAI 发布 Grok Imagine 1.5 预览版（图像转视频模型）",
+      "title_en": "Grok Imagine 1.5 Preview Latest post Jun 3， 2026 # Grok Imagine 1.5 Preview grok-imagine-video-1.5-preview， our latest image-to-video model， is now available via the xAI API in preview. 【Read More】（http：//x.ai/news/grok-imagine-1-5）",
+      "url": "https://x.ai/news/grok-imagine-1-5",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "xAI 通过 API 发布了图像转视频模型 `grok-imagine-video-1.5-preview`（Grok Imagine 1.5 预览版）。该模型能将单张静态图片转为流畅的电影感视频，用户提供起始帧和描述运动的提示词后，模型可生成包含相机移动、氛围和物理效果的动画，并保持对源图像的忠实。支持生成 720p 片段，可使用自然语言指令控制镜头、节奏和音效，并支持逐帧拼接成长场景。模型目前通过 xAI API 提供预览使用。",
       "category": "ai-models"
     },
     {
@@ -55,12 +95,12 @@
     },
     {
       "id": "cmpvfn56c06fxsl0zknga1ztr",
-      "title": "介绍 Mellum2：JetBrains 推出的 12B 混合专家模型",
+      "title": "JetBrains 发布 Mellum2：12B 参数混合专家模型",
       "title_en": "Introducing Mellum2： A 12B Mixture-of-Experts Model by JetBrains",
       "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-06-01T15:45:17.000Z",
-      "summary": "JetBrains 在 Hugging Face 发布博客，介绍其新发布的 Mellum2 模型。该模型采用混合专家架构，参数规模为 12B。",
+      "summary": "Mellum2 是 JetBrains 从头训练的 12B 参数混合专家（MoE）模型，专注于自然语言与代码。每个 token 仅激活 2.5B 参数，推理速度可达同类模型的 2 倍以上，适合高吞吐、低延迟场景。该模型支持路由、RAG、摘要、子智能体及私有部署，以 Apache 2.0 许可证开源。在代码生成、推理、科学和数学基准测试中，Mellum2 与同等规模的开放模型竞争力相当。",
       "category": "ai-models"
     },
     {
@@ -71,16 +111,6 @@
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "publishedAt": "2026-06-01T04:43:58.000Z",
       "summary": "NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpuqjg2f002ysly7qhxq1oeq",
-      "title": "Nemotron 3 Ultra 本周即将发布",
-      "title_en": "Nemotron 3 Ultra is coming this week. ⌛️",
-      "url": "https://x.com/NVIDIAAI/status/2061305524700758050",
-      "source": "X：NVIDIA AI (@NVIDIAAI)",
-      "publishedAt": "2026-06-01T04:35:08.000Z",
-      "summary": "Nemotron 3 Ultra 本周即将发布。 ⌛️",
       "category": "ai-models"
     },
     {
@@ -135,22 +165,12 @@
     },
     {
       "id": "cmpr2b1l40aa6slnoit9b7p92",
-      "title": "Qwen-VLA：从理解世界到在其中行动",
+      "title": "Qwen-VLA：从理解世界到付诸行动",
       "title_en": "Qwen-VLA： From Understanding the World to Acting in It",
       "url": "https://qwen.ai/blog?id=qwenvla",
       "source": "Qwen：Blog Retrieval（API）",
       "publishedAt": "2026-05-29T09:00:00.000Z",
-      "summary": "Qwen Studio提供全面功能，涵盖聊天机器人、图像与视频理解、图像生成、文档处理、网络搜索集成、工具利用及Artifacts。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpps64fo00p9slm6g6j53psu",
-      "title": "Nano Banana Pro与Nano Banana 2正式发布",
-      "title_en": "🍌 Nano Banana Pro 【gemini-3-pro-image】 and Nano Banana 2 【gemini-3.1-flash-image】 are now GA and re…",
-      "url": "https://x.com/googleaidevs/status/2060049962356916377",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-05-28T17:25:59.000Z",
-      "summary": "🍌 Nano Banana Pro 【gemini-3-pro-image】 和 Nano Banana 2 【gemini-3.1-flash-image】 现已正式发布，可通过 Gemini API 投入生产使用。查看这些优秀的社区示例，了解两个模型的实际能力 🧵↓",
+      "summary": "Qwen推出通用视觉-语言-动作模型Qwen-VLA，基于Qwen多模态骨干，将视觉感知、语言理解与空间推理扩展至连续动作生成和轨迹预测。训练分四阶段：文本到动作预训练（T2A）、持续预训练（CPT）、监督微调（SFT）和强化学习（RL）。在LIBERO上达97.9%，Simpler-WidowX达73.7%，RoboTwin-Easy/Hard达86.1%/87.2%，匹配或超越专精模型。数据涵盖超10，000小时公共机器人轨迹、1，000+小时内部真实轨迹及800万+合成仿真轨迹。",
       "category": "ai-models"
     }
   ]
