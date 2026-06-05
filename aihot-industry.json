@@ -1,8 +1,108 @@
 {
-  "count": 44,
-  "hasNext": false,
-  "nextCursor": null,
+  "count": 50,
+  "hasNext": true,
+  "nextCursor": "eyJhIjoxNzgwMTEzNjA5MDAwLCJpIjoiY21wcnVjaHIwMDQ5dXNsbGp5Z210c3R0eCJ9",
   "items": [
+    {
+      "id": "cmq1fw2bb0ffssltrvl691wnx",
+      "title": "Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片",
+      "title_en": "Apollo Wraps Up $35 Billion Debt to Buy AI Chips for Anthropic",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-05T21:02:29.000Z",
+      "summary": "Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq1eqdug0f4bsltr1nzlten4",
+      "title": "SpaceX与Google达成云计算新协议",
+      "title_en": "SpaceX just disclosed a new Cloud Service Agreement with Google. Google to pay SpaceX $920 million …",
+      "url": "https://x.com/rohanpaul_ai/status/2063000834045313314",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-05T20:51:42.000Z",
+      "summary": "SpaceX 刚刚披露了一份与 Google 的新云服务协议。\n\nGoogle 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。\n\n这再次表明，AI 算力正成为一种战略性商品，就像发射能力或能源一样，而那些能够为庞大的 GPU 集群提供资金、电力、冷却和运营的公司，可能会在其原有业务之外获得巨大的杠杆优势。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq1cb2df0ehlsltrb0nb702a",
+      "title": "五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器",
+      "title_en": null,
+      "url": "https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-05T19:23:20.788Z",
+      "summary": "据 The Intercept 6月5日报道，美国五角大楼正在运营一个针对拉丁美洲的人工智能宣传机器（AI propaganda mill）。报道指出，该机器利用 AI 技术生成并传播宣传内容，目标为拉丁美洲地区。该消息在 Hacker News 上获得 100 点热度。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq15u3mt0cqjsltrhb1ch36w",
+      "title": "AI热推高美国计算基建GDP占比翻倍",
+      "title_en": "The AI boom has doubled computing infrastructure's share of US GDP. Investment in AI-related data c…",
+      "url": "https://x.com/EpochAIResearch/status/2062933470373146828",
+      "source": "X：Epoch AI (@EpochAIResearch)",
+      "publishedAt": "2026-06-05T16:24:01.000Z",
+      "summary": "AI 热潮使计算基础设施占美国 GDP 比重翻倍。\n\n2026 年第一季度，与 AI 相关的数据中心建设、计算硬件和网络设备投资约占美国 GDP 的 0.8%，推动整个计算基础设施占 GDP 比重达到约 1.5%。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq12z6ag0bzssltrkou6khap",
+      "title": "OpenAI 前 CTO 称若 Altman 未回归公司可能已\"瓦解\"",
+      "title_en": "OpenAI Would've 'Imploded' If Altman Didn't Return， Ex-CTO Says",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/openai-would-ve-imploded-if-altman-didn-t-return-ex-cto-says",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-05T15:18:30.000Z",
+      "summary": "Mira Murati 表示，如果 Sam Altman 在 2023 年被短暂罢免后没有回归 CEO 职位，OpenAI 很可能已经\"瓦解\"。这是她对那场硅谷最激烈的董事会斗争的最清晰描述。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq12gsy20buksltr2nwivyhu",
+      "title": "苹果新版 Siri 不会被宣传为完成品，内部将其标记为\"Beta\"版",
+      "title_en": "古尔曼称苹果新版 Siri 不会被宣传为完成品，内部将其标记为\"Beta 版\"",
+      "url": "https://www.ithome.com/0/960/739.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-05T14:21:03.000Z",
+      "summary": "苹果新版Siri被内部标记为\"Beta\"版，不会作为完成品宣传；可能设置等待清单供用户尝试。iOS 27细节：通知到达重新设计，通知中心手势移至左上角；\"查找\"应用视觉重设计；照片\"清理\"功能改进；大量底层安全改进。部分Siri查询将通过Google Cloud调用授权版Gemini，并使用谷歌的NVIDIA Blackwell B200集群处理。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq10bltr0b9ksltrs7mappfh",
+      "title": "Meta 智能眼镜 App 暗藏人脸识别代码，NameTag 功能已推送至超 5000 万设备",
+      "title_en": "Meta 智能眼镜 App 被曝暗藏 AI 人脸识别功能相关代码：影响超 5000 万设备，公司回应称仅为探索而已",
+      "url": "https://www.ithome.com/0/960/735.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-05T13:59:37.000Z",
+      "summary": "据《连线》今日报道，Meta 通过多次应用更新将人脸识别代码推送到智能眼镜配套 App 中，代号\"NameTag\"。该功能利用已部署的三个 AI 模型将人脸转换为\"人脸特征模板\"，与手机本地数据库匹配，识别成功后向佩戴者发送通知。App 下载量超 5000 万次。Meta 回应称代码仅为探索，尚未决定推出，且不会建立中央人脸数据库。此前 Meta 曾因人脸识别问题在伊利诺伊州和得克萨斯州分别达成 6.5 亿美元和 14 亿美元和解。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq0irius06k5sltr35ji4gbi",
+      "title": "NVIDIA CEO 黄仁勋访问首尔：与韩国共建 AI 未来",
+      "title_en": "Seoul Purpose： How NVIDIA and South Korea Are Building the Future of AI",
+      "url": "https://blogs.nvidia.com/blog/korea-ecosystem-2026",
+      "source": "NVIDIA AI Blog",
+      "publishedAt": "2026-06-05T05:38:37.000Z",
+      "summary": "NVIDIA 创始人兼 CEO 黄仁勋本周到访首尔，会见韩国的 AI 建造者、主权基础设施合作伙伴及游戏社区。黄仁勋表示，为应对下半年繁忙的 AI 基础设施建设，需对齐 AI 供应链。他指出 Grace Blackwell 系统表现良好，Vera Rubin 已全面投产。他还强调机器人技术将成为韩国的下一个重要产业，并呼吁韩国投资 AI。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq0cow5r050csltrm2m7furf",
+      "title": "腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/960/323.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-05T03:04:23.000Z",
+      "summary": "在 6 月 5 日的腾讯云 AI 产业应用大会上，腾讯高级执行副总裁汤道生表示，今年腾讯大部分代码都由 AI 生成，工程师将更多时间用于架构设计，定期指导与修正 AI 输出。腾讯 2026 年 Q1 财报显示，重组后的 AI 研发团队重构了基础设施，并搭建了 Hy3 preview 模型。腾讯总裁刘炽平今年 3 月透露，去年腾讯在 AI 新产品上投入 180 亿元，今年投入至少翻倍。",
+      "category": "industry"
+    },
+    {
+      "id": "cmq0ajq1h04eusltr7graqcb9",
+      "title": "Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发",
+      "title_en": "Anthropic 称最新 AI 模型已显现可能脱离人类控制迹象，呼吁全球暂缓先进 AI 研发",
+      "url": "https://www.ithome.com/0/960/218.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-05T01:16:34.000Z",
+      "summary": "Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比\"核武器不扩散条约\"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。",
+      "category": "industry"
+    },
     {
       "id": "cmq00q1w401tvsltr2b8zysje",
       "title": "Nemotron Parakeet ASR 印尼语准确率达 97.7%",
@@ -401,46 +501,6 @@
       "source": "X：SemiAnalysis (@SemiAnalysis_)",
       "publishedAt": "2026-05-30T04:00:09.000Z",
       "summary": "突发新闻：JAX NVIDIA GPU & XLA：GPU最大客户刚刚宣布已放弃JAX GPU，宁愿用Grok Build\"氛围编程\"一个C训练框架。据报道xAI的JAX堆栈MFU低于10%。NVIDIA JAX团队过去两年全部主力996专注于支持xAI却失败了，我想他们现在可以休息并兑现期权了。",
-      "category": "industry"
-    },
-    {
-      "id": "cmprmoxnt02e1slljz93fu7ni",
-      "title": "阿里云与Qwen成为UEFA多年全球AI合作伙伴",
-      "title_en": "UEFA and UC3 have announced Alibaba Group as global AI， Cloud Computing and E-Commerce Partner for U…",
-      "url": "https://x.com/alibaba_cloud/status/2060520586489770167",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-05-30T00:36:05.000Z",
-      "summary": "阿里云和Qwen成为UEFA官方独家AI、云计算与电子商务合作伙伴，合作期覆盖2027/2028赛季至2032/2033赛季的UEFA男子俱乐部赛事，以及UEFA EURO 2028。阿里巴巴集团主席蔡崇信表示，将投入云计算、全栈AI及全球电商平台能力，支持赛事运营。合作将利用Qwen大语言模型部署先进AI技术，增强球迷互动与媒体内容体验，并依托阿里云基础设施打造全球沉浸式观赛体验。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpr47z7g0apislno5cuj0pne",
-      "title": "波士顿儿童医院利用AI解锁新诊断",
-      "title_en": "Boston Children's uses AI to unlock new diagnoses",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "波士顿儿童医院通过部署OpenAI技术，用于改善患者护理并减轻运营负担，成功帮助诊断了超过40种罕见病病例。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpqu09p1088islno9gfp24ow",
-      "title": "中央网信办等四部门：提升全民人工智能素养，加快人才培育、深化普及应用",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/957/319.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-29T10:21:56.000Z",
-      "summary": "中央网信办等四部门联合印发《2026年提升全民数字素养与技能工作要点》，部署了六项重点任务。其中明确要求\"提升全民人工智能素养\"，具体包括强化人工智能赋能教育、加快人工智能人才培育、深化人工智能普及应用。其他任务涵盖数字资源供给、应用场景建设、普惠包容发展、安全有序网络空间以及协同联动机制。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpq8kjw502qrslnouugetmfh",
-      "title": "三星电子业内率先出样 HBM4E 内存",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/956/851.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-29T00:45:13.000Z",
-      "summary": null,
       "category": "industry"
     }
   ]

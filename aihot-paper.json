@@ -1,16 +1,36 @@
 {
-  "count": 25,
+  "count": 27,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmpzy33my014qsltrf163yi8g",
-      "title": "Google Research 发布被动心率监测系统 PHRM",
-      "title_en": "Towards passive heart health monitoring via smartphone camera",
-      "url": "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-04T20:25:28.688Z",
-      "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
+      "id": "cmq1d2vyt0epssltrsz0gvbky",
+      "title": "微软Project Mosaic：micro-LED光学互连技术",
+      "title_en": "During the Inside Azure Innovations breakout at Build 2026， Microsoft Azure CTO， deputy CISO and tec…",
+      "url": "https://x.com/MSFTResearch/status/2062983588606320714",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-06-05T19:43:10.000Z",
+      "summary": "微软Azure CTO Mark Russinovich在Build 2026上介绍Project Mosaic，这是微软剑桥研究院的实验性光学互连技术，采用micro-LED实现低功耗、高速数据传输。高级研究员Kaoutar Benyahya现场演示单个LED调制形成字母，证明概念具备实时响应能力。",
+      "category": "paper"
+    },
+    {
+      "id": "cmq1bny1b0ebysltrc6b1fxmk",
+      "title": "Anthropic：让Claude成为化学家",
+      "title_en": "Making Claude a chemist",
+      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-05T19:33:26.491Z",
+      "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。",
+      "category": "paper"
+    },
+    {
+      "id": "cmq13pme90c62sltraucjmvp2",
+      "title": "Meta SAM 3D 获 CVPR26 最佳论文荣誉提名",
+      "title_en": "Big congrats to our SAM 3D team for receiving a Best Paper Honorable Mention at #CVPR26！ This presti…",
+      "url": "https://x.com/AIatMeta/status/2062920724944507095",
+      "source": "X：AI at Meta (@AIatMeta)",
+      "publishedAt": "2026-06-05T15:33:22.000Z",
+      "summary": "热烈祝贺我们的 SAM 3D 团队在 #CVPR26 获得最佳论文荣誉提名！这项殊荣凸显了他们在推动计算机视觉边界方面的杰出工作。\n\n论文链接：https：//arxiv.org/abs/2511.16624",
       "category": "paper"
     },
     {
@@ -51,6 +71,16 @@
       "source": "X：Microsoft Research (@MSFTResearch)",
       "publishedAt": "2026-06-03T16:09:00.000Z",
       "summary": "一份在中西部装瓶厂进行的三个月试点显示，当AI超越聊天进入决策领域时会发生什么--约束条件变化、风险真实、答案必须可靠。 https：//msft.it/6015vjYUN",
+      "category": "paper"
+    },
+    {
+      "id": "cmpzy33my014qsltrf163yi8g",
+      "title": "Google Research 发布被动心率监测系统 PHRM",
+      "title_en": "Towards passive heart health monitoring via smartphone camera",
+      "url": "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-03T16:00:00.000Z",
+      "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
       "category": "paper"
     },
     {
@@ -241,16 +271,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-31T00:00:00.000Z",
       "summary": "研究提出目标视角复现任务（TVR）与模拟基准TVRBench，评估基础模型在3D环境中主动调整视角以匹配目标图像的能力。当前最优开源与闭源模型成功率仅7.8%和12.0%，瓶颈在于处理多轮视觉历史及需要平移而非旋转时的性能下降。通过构建统一的后训练框架，视觉动作SFT将9B开源模型成功率提升至50.8%，多轮GRPO进一步达到51.4%，为训练主动感知与行动的模型提供了基准。代码与模型已开源。",
-      "category": "paper"
-    },
-    {
-      "id": "cmpr6m8dg0be7slno4oc8myl7",
-      "title": "GPIC：大规模视觉生成基准数据集发布",
-      "title_en": "I'm very excited by this new benchmark dataset for visual generation that is suitable for the modern…",
-      "url": "https://x.com/drfeifei/status/2060404846734512205",
-      "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
-      "publishedAt": "2026-05-29T16:56:10.000Z",
-      "summary": "我对这个适用于大规模生成模型新时代的视觉生成基准数据集感到非常兴奋！🤩",
       "category": "paper"
     }
   ]

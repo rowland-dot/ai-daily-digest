@@ -1,8 +1,128 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwMjg2MzU1MDAwLCJpIjoiY21wdXFxMm10MDAyN3NsMHpyYnBpZmdkaCJ9",
+  "nextCursor": "eyJhIjoxNzgwMzgwMDM2MDAwLCJpIjoiY21wd3RuMjZpMDBsM3NsNzlkeThiam5ocSJ9",
   "items": [
+    {
+      "id": "cmq1dossi0ev7sltrrihfn7pb",
+      "title": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
+      "title_en": "Unlocking dependable responses with Gemini Enterprise Agent Platform's Agentic RAG",
+      "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-05T20:30:02.046Z",
+      "summary": "Google Research 与 Google Cloud 合作推出跨语料库检索（Cross-Corpus Retrieval）框架，作为 Gemini Enterprise Agent Platform 的 Agentic RAG。该多智能体工作流将复杂企业查询分解为子任务，通过规划、重写和路由，迭代搜索多个数据源直至获得充分上下文，再生成可靠回答。与标准 RAG 相比，在事实性数据集上准确率最高提升 34%；在多个领域特定内部数据集上也实现了更好的接地与推理准确性。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq18rbp70dk3sltr7eqx8xil",
+      "title": "智能体协作应如同事般对话和手势",
+      "title_en": "Working with agents should feel like working with a colleague. You should be able \"speak to\" them no…",
+      "url": "https://x.com/mntruell/status/2062955210897801520",
+      "source": "X：Michael Truell (@mntruell)",
+      "publishedAt": "2026-06-05T17:50:24.000Z",
+      "summary": "与 AI 智能体协作应感觉像与同事协作一样。你应能\"与它们交谈\"--不仅通过文本聊天，还能一起对着屏幕做手势、实时对话等。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq16mdmy0d0hsltriwaiyzvh",
+      "title": "Google Colab CLI 发布",
+      "title_en": "Introducing the Google Colab CLI",
+      "url": "https://developers.googleblog.com/introducing-the-google-colab-cli",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-06-05T17:12:11.075Z",
+      "summary": "Google 推出 Colab 命令行界面（CLI），允许开发者和 AI 智能体将本地终端连接到远程 Colab 运行时，实现无摩擦执行。该轻量级 CLI 支持请求高性能 GPU、远程运行本地 Python 脚本，并检索工件日志或模型（如微调后的 Gemma 3 适配器）。工具可直接集成到标准终端环境，可被 Antigravity、Claude Code 等 AI 智能体调用以管理复杂机器学习流水线。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq16lagb0czbsltr4d2whlpo",
+      "title": "ChatGPT 网页版支持从写作块发送邮件",
+      "title_en": "Draft it. Tweak it. Send it. You can now send emails directly from writing blocks in ChatGPT on the…",
+      "url": "https://x.com/ChatGPTapp/status/2062944254591430917",
+      "source": "X：ChatGPT (@ChatGPTapp)",
+      "publishedAt": "2026-06-05T17:06:52.000Z",
+      "summary": "草拟。调整。发送。\n\n现在你可以在网页版 ChatGPT 中直接从写作块发送邮件，无需离开对话。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq16wkmr0d1qsltrrxq2ijpb",
+      "title": "Google AI 本周产品更新：Nano Banana 2、Co-Scientist、dreambeans、Gemma 4 等",
+      "title_en": "Here's this week's shipping recap 👇 - Nano Banana 2 & Nano Banana Pro are now GA and available via…",
+      "url": "https://x.com/GoogleAI/status/2062942864288387430",
+      "source": "X：Google AI (@GoogleAI)",
+      "publishedAt": "2026-06-05T17:01:21.000Z",
+      "summary": "Google AI 本周发布多项更新：Nano Banana 2 及 Pro 正式 GA，可通过 Gemini Enterprise Agent Platform、Gemini API 和 Google AI Studio 获取；Co-Scientist 多智能体系统面向科研自动生成优化新假设；Google Labs 推出 dreambeans，根据用户 Google 应用数据每日生成个性化话题集；Gemma 4 12B 统一无编码器多模态模型可完全离线运行于笔记本；Gemma 4 系列及草稿模型引入 QAT 降低内存需求；Google Magenta RealTime 2 开源实时音乐模型，支持 MIDI 键盘、文本提示和手势演奏。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq15ifnr0comsltrb2vd53mu",
+      "title": "Gemini Live 支持实时创建编辑图像",
+      "title_en": "You can now create and edit images directly in Gemini Live. Whether testing out room decor， getting…",
+      "url": "https://x.com/GeminiApp/status/2062936486509785385",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-06-05T16:36:00.000Z",
+      "summary": "你现可直接在 Gemini Live 中创建和编辑图像。\n\n无论是测试房间装饰、解决数学问题，还是制作可分享的梗图，所有操作都实时完成。\n\n只需打开 Gemini 应用，点击 Live 按钮，共享摄像头，告诉 Gemini 你想看到的。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq118d2f0bjmsltrjj0o010h",
+      "title": "Viggle_PINOC 免费动捕测试开启",
+      "title_en": "Mocap shouldn't require a suit， a studio， or thousands of dollars. With @Viggle_PINOC， anyone can s…",
+      "url": "https://x.com/ViggleAI/status/2062904007123714329",
+      "source": "X：Viggle AI (@ViggleAI)",
+      "publishedAt": "2026-06-05T14:26:56.000Z",
+      "summary": "Mocap 不需要套装、工作室或数千美元。\n\n使用 @Viggle_PINOC，任何人都可以简单地拍摄自己，并将该视频转换为动作捕捉。\n\n我们仍处于测试阶段，且对所有人完全免费。试试看，告诉我们你还想看什么！",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq10blts0b9qsltr3hvk0fy1",
+      "title": "开源鸿蒙 OpenHarmony 具身智能版本 EmbodiedAI 1.0.1 发布",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/960/722.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-05T13:31:13.000Z",
+      "summary": "6月5日，开源鸿蒙具身智能PMC（筹）发布EmbodiedAI 1.0.1版本。该版本聚焦机器人控制与智能体应用，升级导航规划、运动控制、仿真开发、硬件适配等核心能力，兼容ROS生态、机器人模拟器及多种本体形态。集成开源鸿蒙原生模拟器、MuJoCo、Gazebo三大仿真环境，打通从代码开发到真机验证的全流程链路。人形机器人、四足机器狗、商用服务机器人等已完成适配验证。目前具身智能方向已组建18个专项SIG工作组，版本源码已正式开放。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq0yxent0avgsltr8x9ya6jn",
+      "title": "社区基于MiniCPM-V 4.6打造财务分析工具AccountingLLM",
+      "title_en": "A developer in our community recently built AccountingLLM （http：//quaesto.com/） using MiniCPM-V 4.6 …",
+      "url": "https://x.com/OpenBMB/status/2062889699056984281",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-06-05T13:30:05.000Z",
+      "summary": "社区开发者使用面壁智能MiniCPM-V 4.6构建了AccountingLLM（quaesto.com），用于自动化财务文档分析。该工具可上传IPO招股书、年报或审计文件，自动从复杂PDF中提取财务表格、重建跨页表格、对照会计等式检查关键数据，并标记可疑条目供人工审核。开发者已将其商业化，成为实际可用的产品。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq10uxf80bfesltrngu1lo15",
+      "title": "你的AI账单失控了。Cloudflare现在可以解决这个问题。",
+      "title_en": "Your AI bill is out of control. Cloudflare can fix it now.",
+      "url": "https://blog.cloudflare.com/ai-gateway-spend-limits",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-06-05T13:00:00.000Z",
+      "summary": "Cloudflare AI Gateway新增实时消费限制功能，防止跨多个AI提供商的token账单失控。通过与Cloudflare Access集成，企业可以使用基于身份的预算和策略管理AI使用成本。",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq0jeh6o06sosltrqizuioxb",
+      "title": "PolarDB-X Zero 上线：30秒全分布式数据库",
+      "title_en": "PolarDB-X Zero is live！ No signup. No config. Just one API call. Get a full distributed database i…",
+      "url": "https://x.com/alibaba_cloud/status/2062781182417490310",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-06-05T06:18:53.000Z",
+      "summary": "PolarDB-X Zero 上线了！\n\n无需注册。无需配置。只需一次 API 调用。\n30 秒内获得一个全分布式数据库。\n原生 HNSW 向量索引--内置兼容 MySQL 的引擎。\n关系型 + 语义搜索--一条 SQL 语句。\nAI 智能体就绪--MCP 协议、AI IDE 兼容（Cursor、Claude、Qoder、Qodex 等）\n\n立即尝试：https：//zero.polardbx.com\n#AlibabaCloud #PolarDB #ApsaraDB",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq0jeh6o06sqsltretmigj6c",
+      "title": "阿里云发布SkillClaw与Nacos的Agent技能进化循环",
+      "title_en": "SkillClaw × Nacos： The Agent Skill Evolution Loop 🔄 Key Highlights： • Auto-Extraction： Captures exp…",
+      "url": "https://x.com/alibaba_cloud/status/2062777684120244656",
+      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
+      "publishedAt": "2026-06-05T06:04:59.000Z",
+      "summary": "阿里云推出SkillClaw与Nacos结合，构建AI智能体技能进化流水线。关键特性：自动从真实对话中提取经验并封装为可复用技能（Skill）；Nacos负责集中化版本管理、审核与审计；打破本地孤岛，实现团队安全共享与分发；形成完整的\"生成-治理-分发\"持续进化闭环。目标是将个人洞察转化为团队的AI资产。",
+      "category": "ai-products"
+    },
     {
       "id": "cmq01ld46020ksltri2vkr5uv",
       "title": "NotebookLM 来源归属功能上线",
@@ -11,6 +131,16 @@
       "source": "X：NotebookLM (@NotebookLM)",
       "publishedAt": "2026-06-04T21:50:01.000Z",
       "summary": "今天，我们推出又一项呼声很高的功能：来源归属！🥳\n\n无需再猜测。现在你可以看到每个创作物背后所用的确切公式（提示词 + 来源）。想要调整？只需轻点\"迭代\"，随心定制 💖",
+      "category": "ai-products"
+    },
+    {
+      "id": "cmq01qi40023fsltru08k8zx9",
+      "title": "Gemini macOS 双击 Command 附加活动窗口",
+      "title_en": "Get tailored help for what's on your screen using the Gemini app for macOS. 💻 Simply press both Co…",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-06-04T21:47:38.000Z",
+      "summary": "使用适用于 macOS 的 Gemini 应用，获取针对屏幕内容的定制帮助。💻\n\n只需同时按下两个 Command ⌘ 键，即可将当前活动窗口无缝附加到聊天中，无需手动截图或切换标签页。",
       "category": "ai-products"
     },
     {
@@ -371,136 +501,6 @@
       "source": "NVIDIA AI Blog",
       "publishedAt": "2026-06-02T06:00:36.000Z",
       "summary": "金融机构正从为每个业务线构建独立AI模型，转向采用基于Transformer的交易基础模型，以统一理解消费者行为并克服数据孤岛限制。NVIDIA报告显示，65%的金融机构已使用AI，近90%正在部署或评估。实践案例包括：Revolut与NVIDIA合作构建了PRAGMA模型系列，在240亿事件上训练，单个模型在信用评分等领域超越特定任务模型；Mastercard正开发专有大型表格基础模型；Adyen的模型处理了1万亿美元支付；Stripe利用相关平台构建模型，去年阻止了近1120亿美元欺诈。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvzrkrk0347slukwn0rkg8r",
-      "title": "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署",
-      "title_en": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
-      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-06-02T02:00:00.000Z",
-      "summary": "NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvs3efm015wslukv1os8v5x",
-      "title": "ChatGPT 新增长文编辑与保存功能",
-      "title_en": "Long-form writing works better with a little more space. Now you can edit longer pieces in full-sc…",
-      "url": "https://x.com/ChatGPTapp/status/2061571468992126982",
-      "source": "X：ChatGPT (@ChatGPTapp)",
-      "publishedAt": "2026-06-01T22:11:55.000Z",
-      "summary": "长文写作需要更多空间。\n\n现在你可以在全屏模式下编辑更长的文章，并将其保存到你的资料库中，以便稍后继续。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpx174nl001nslgy17hiomfy",
-      "title": "Google AI Studio 新增 Gmail 等应用构建能力",
-      "title_en": "We just shipped the ability to build apps that connect to Gmail， Drive， Sheets， and more directly in…",
-      "url": "https://x.com/OfficialLoganK/status/2061568290984800740",
-      "source": "X：Logan Kilpatrick (@OfficialLoganK)",
-      "publishedAt": "2026-06-01T21:59:17.000Z",
-      "summary": "我们刚刚上线了在 @GoogleAIStudio 内直接构建连接 Gmail、Drive、Sheets 等应用的功能，无需跳转其他网站，你可以直接在 AI Studio 内添加测试人员，完整的公开分享功能即将推出！！",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvpam6b00h8sluknoirrj6e",
-      "title": "Krea AI 开放 Krea 2 LoRAs 全员使用",
-      "title_en": "Krea 2 LoRAs are now available to everyone. try this one below 👇",
-      "url": "https://x.com/krea_ai/status/2061554472925696128",
-      "source": "X：Krea AI (@krea_ai)",
-      "publishedAt": "2026-06-01T21:04:22.000Z",
-      "summary": "Krea 2 LoRAs 现已向所有人开放。\n试试下面这个 👇",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvmm0ab00ndslfpbxb2m5kh",
-      "title": "Replit 用单个提示词构建完整业务",
-      "title_en": "Can you build a real business for free with a single prompt？ Starting today on Replit， the answer …",
-      "url": "https://x.com/Replit/status/2061534759520760112",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-06-01T19:46:02.000Z",
-      "summary": "你能用单个提示词免费构建一个真实的业务吗？\n\n从今天起，在 Replit 上，答案是肯定的。\n\n从一个提示词开始，获得一个网站、移动应用、幻灯片和发布视频。\n此外，还能解锁使用 @stripe @atlas， @QuickBooks， @mercury & @doolaHQ 运营业务的福利。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvij4w2002vslykng47v8ya",
-      "title": "Perplexity发布Search as Code搜索架构",
-      "title_en": "Introducing Search as Code， our new search architecture for AI agents. It writes Python that calls …",
-      "url": "https://x.com/perplexity_ai/status/2061506359326384319",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-06-01T17:53:11.000Z",
-      "summary": "推出Search as Code，我们为AI智能体打造的全新搜索架构。\n\n它直接编写Python代码调用我们的搜索栈，而非逐个循环函数调用。\n\n现已在Perplexity Agent API中提供，并成为Computer的默认选项。\n\nhttps：//research.perplexity.ai/articles/rethinking-search-as-code-generation",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvf7a5k06b9sl0zz7qam8wm",
-      "title": "Auto Router 新增成本质量权衡参数",
-      "title_en": "The Auto Router now lets you tune how it weighs cost against quality. New `cost_quality_tradeoff` p…",
-      "url": "https://x.com/OpenRouter/status/2061476882470580329",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-06-01T15:56:03.000Z",
-      "summary": "Auto Router 现在允许你调整其在成本与质量之间的权衡。\n新增 `cost_quality_tradeoff` 参数，范围 0 到 10：\n设为 0 时，它总是选择最强大的模型，无论价格如何。设为 10 时，最便宜的模型胜出。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpv8b6wa04jvsl0zc4newlns",
-      "title": "OpenBMB发布UltraData两大开源数据集，登顶HuggingFace趋势榜",
-      "title_en": "🏆 Big news！ UltraData just hit #1 AND #2 on HuggingFace Trending worldwide！ 🎉 Released by OpenBMB …",
-      "url": "https://x.com/OpenBMB/status/2061432928492810535",
-      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "publishedAt": "2026-06-01T13:01:24.000Z",
-      "summary": "OpenBMB联合清华NLP与Modelbest发布两个开源数据集：Ultra-FineWeb-L3（预训练合成数据）包含600B+ tokens（超400B英文、200B+中文），是迄今最大开源中文预训练合成数据集；UltraData-SFT-2605（后训练SFT数据）包含15M+样本，是中国首个开源且包含思考与非思考标注的大规模SFT数据集，覆盖数学、代码、知识和指令遵循。两者均基于UltraData L0-L4框架构建，并在MiniCPM5-1B训练中完成验证。数据集已在HuggingFace免费开放。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpv3pmle03drsl0zpaegquwp",
-      "title": "Apache RocketMQ 发布 AI 专用消息引擎",
-      "title_en": "🚀 Apache RocketMQ just leveled up for AI！ Introducing RocketMQ for AI-a new message engine built fo…",
-      "url": "https://x.com/alibaba_cloud/status/2061400724018217381",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-06-01T10:53:26.000Z",
-      "summary": "🚀 Apache RocketMQ 为 AI 升级！推出 RocketMQ for AI--一个专为长时间会话、多智能体工作流和公平资源调度构建的新消息引擎。凭借 Lite-Topics、有序消息和智能流量整形，它解决了状态丢失、级联故障和突发负载问题。由阿里云大规模构建，现已开源。\n\n了解更多： https：//int.alibabacloud.com/m/1000413178/\n\n#RocketMQ #AI #CloudNative",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvqq6bd00ubslukf8jsko23",
-      "title": "OpenAI前沿模型与Codex现可在AWS上使用",
-      "title_en": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-01T10:00:00.000Z",
-      "summary": "OpenAI的前沿模型与Codex现已在AWS上全面可用。企业客户可通过其现有的AWS环境、控制与采购流程来使用OpenAI的AI技术，从而加速从评估到生产部署的过程。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpuzjn4q02bzsl0zm8pgfo93",
-      "title": "腾讯混元发布智能体长期记忆插件Hy-Memory",
-      "title_en": "🚀We're excited to officially release Hy-Memory - a powerful memory plugin built specifically for lo…",
-      "url": "https://x.com/TencentHunyuan/status/2061372535267357029",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-06-01T09:01:25.000Z",
-      "summary": "腾讯混元正式发布专为OpenClaw等长期协作智能体（Agent）设计的记忆插件 Hy-Memory。它基于6层记忆框架、System1/System2双系统与三层进化链构建，旨在成为智能体的\"第二大脑\"。该插件解决了记忆碎片化问题，实现了显著性能提升：记忆数量减少70%以上，单条记忆信息密度提升45%以上，在超长上下文场景中token消耗降低35%，记忆更新速度提升20%。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpvtskbb01lusluksydtav6e",
-      "title": "Cursor Teams计划定价方案更新",
-      "title_en": "Improvements to Teams Pricing",
-      "url": "https://cursor.com/blog/teams-pricing-june-2026",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-06-01T07:00:00.000Z",
-      "summary": "Cursor Teams计划推出三项更新：增加Composer特定使用池，将第一方模型（Composer和Auto）与第三方API的使用额度分开计费；推出Premium席位，提供5倍于标准席位（$40/月）的使用量，价格为$96/月（年付）；仪表盘现可实时显示用户额度使用情况，管理员可通过Slack或邮件配置智能提醒。",
-      "category": "ai-products"
-    },
-    {
-      "id": "cmpuqq2mt0027sl0zrbpifgdh",
-      "title": "NVIDIA Vera CPU 为AI工厂的智能体工作负载设立新标准",
-      "title_en": "NVIDIA Vera CPU Sets a New Standard for Agentic Workloads in AI Factories",
-      "url": "https://developer.nvidia.com/blog/nvidia-vera-cpu-sets-a-new-standard-for-agentic-workloads-in-ai-factories",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-06-01T03:59:15.000Z",
-      "summary": "NVIDIA Vera CPU 旨在为AI工厂中智能体工作负载树立新性能标杆。文章阐述了AI领域扩展规律的演变：预训练通过更大数据集、更多参数和大规模并行GPU系统扩展智能；后训练通过指令微调扩展实用性，并重新调整GPU用于生成式推理；测试时缩放则通过给模型更多生成token来提升推理能力。当前，智能体AI与强化学习正推动下一阶段的扩展。",
       "category": "ai-products"
     }
   ]

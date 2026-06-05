@@ -1,8 +1,18 @@
 {
-  "count": 17,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq16l9id0cz7sltrd5u9tevg",
+      "title": "Riverflow 2.5：可控制评分标准的图像模型",
+      "title_en": "Live on OpenRouter： Riverflow 2.5 from @Sourceful. The first image model with an independent scorin…",
+      "url": "https://x.com/OpenRouter/status/2062944965978992935",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-06-05T17:09:42.000Z",
+      "summary": "在OpenRouter上线：来自@Sourceful的Riverflow 2.5。\n\n首个具有独立评分标准的图像模型，你可控制该标准以引导其思维和编辑，并具备可控的推理努力，可在速度与质量之间进行权衡。\n\n免费至6月9日（周二）。Fast和Pro见下方🧵。",
+      "category": "ai-models"
+    },
     {
       "id": "cmpzwl55v00pfsltr6bq95ouh",
       "title": "Nemotron 3.5 Content Safety：面向全球企业AI的可定制多模态安全",
@@ -141,36 +151,6 @@
       "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
       "publishedAt": "2026-05-30T11:04:34.000Z",
       "summary": "小即是美。😌",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmprd8aty0d2jslnojk7ompp6",
-      "title": "OpenAI推出实时翻译模型，支持70+语言输入",
-      "title_en": "OpenAI for realtime translation - speak in any of 70+ input languages and translate into 13 output o…",
-      "url": "https://x.com/gdb/status/2060452095279415725",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-05-29T20:03:55.000Z",
-      "summary": "OpenAI 实时翻译功能--使用70多种输入语言说话，翻译成13种输出语言：\n\ngpt-realtime-translate 接收任意语言的语音输入，并输出目标语言的语音。\n\n大语言模型很棒，但特定用例需要专用模型。\n\n我们正在智能眼镜上运行此功能。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpqppxpf075oslno4jxz0h8b",
-      "title": "小米开源可控视频音效生成模型 ControlFoley，让声音\"按你想要的来\"",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/957/282.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-05-29T09:13:13.000Z",
-      "summary": "小米大模型应用团队发布开源可控视频音效生成模型 ControlFoley，旨在解决创作中的可控性难题。该模型统一支持文本引导视频配音、文本控制视频配音和参考音频控制视频配音三类任务。ControlFoley 在 VGGSound-Test 等多个 benchmark 上取得开源 SOTA 表现，其代码、模型权重和在线 Demo 均已开放。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmpr2b1l40aa6slnoit9b7p92",
-      "title": "Qwen-VLA：从理解世界到付诸行动",
-      "title_en": "Qwen-VLA： From Understanding the World to Acting in It",
-      "url": "https://qwen.ai/blog?id=qwenvla",
-      "source": "Qwen：Blog Retrieval（API）",
-      "publishedAt": "2026-05-29T09:00:00.000Z",
-      "summary": "Qwen推出通用视觉-语言-动作模型Qwen-VLA，基于Qwen多模态骨干，将视觉感知、语言理解与空间推理扩展至连续动作生成和轨迹预测。训练分四阶段：文本到动作预训练（T2A）、持续预训练（CPT）、监督微调（SFT）和强化学习（RL）。在LIBERO上达97.9%，Simpler-WidowX达73.7%，RoboTwin-Easy/Hard达86.1%/87.2%，匹配或超越专精模型。数据涵盖超10，000小时公共机器人轨迹、1，000+小时内部真实轨迹及800万+合成仿真轨迹。",
       "category": "ai-models"
     }
   ]
