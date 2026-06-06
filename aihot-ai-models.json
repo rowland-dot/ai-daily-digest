@@ -11,7 +11,9 @@
       "source": "X：OpenRouter (@OpenRouter)",
       "publishedAt": "2026-06-05T17:09:42.000Z",
       "summary": "在OpenRouter上线：来自@Sourceful的Riverflow 2.5。\n\n首个具有独立评分标准的图像模型，你可控制该标准以引导其思维和编辑，并具备可控的推理努力，可在速度与质量之间进行权衡。\n\n免费至6月9日（周二）。Fast和Pro见下方🧵。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 60,
+      "selected": true
     },
     {
       "id": "cmpzwl55v00pfsltr6bq95ouh",
@@ -21,7 +23,9 @@
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-06-04T18:57:45.000Z",
       "summary": "Nemotron 3.5 Content Safety基于Gemma 3 4B IT，提供128K上下文窗口，支持用户提示、可选图像与助手响应的统一多模态安全评估。新增自定义策略执行，允许企业用自然语言定义专属安全规则；THINK模式可输出可审计的逐步推理痕迹。显式训练覆盖12种语言，并借助基座模型零样本泛化至约140种语言。输出提供低延迟二分类、带分类标签、THINK推理痕迹三种模式。安全分类遵循Aegis 2.0框架（13核心类别+10细分类别）。同步发布多模态、多语言安全数据集，可在8GB+ VRAM GPU上实时部署。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 78,
+      "selected": true
     },
     {
       "id": "cmpzuuks4008tsltr89qxlntr",
@@ -31,7 +35,9 @@
       "source": "X：Google AI for Developers (@googleaidevs)",
       "publishedAt": "2026-06-04T18:32:20.000Z",
       "summary": "Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpzn05ag052vslkpo3cb21hq",
@@ -41,7 +47,9 @@
       "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
       "publishedAt": "2026-06-04T15:00:03.000Z",
       "summary": "neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 72,
+      "selected": true
     },
     {
       "id": "cmpzigjmt03udslkp0elkhz7c",
@@ -51,7 +59,9 @@
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "publishedAt": "2026-06-04T13:02:49.000Z",
       "summary": "NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpyd2ph203z9slaxfwx9nd13",
@@ -61,7 +71,9 @@
       "source": "X：Krea AI (@krea_ai)",
       "publishedAt": "2026-06-03T17:40:05.000Z",
       "summary": "介绍 Ideogram v4.0。\n\n原生 2K 分辨率，出色的文字渲染，支持 JSON 提示词。\n\n立即在 Krea 中体验。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 74,
+      "selected": true
     },
     {
       "id": "cmpyayd9g03ebslaxqumvlu4w",
@@ -71,7 +83,9 @@
       "source": "X：Kim (@kimmonismus)",
       "publishedAt": "2026-06-03T16:32:34.000Z",
       "summary": "Miso One 正式发布，一个 8B 参数的开源权重语音模型（TTS），旨在模拟真实人类朗读的温暖与节奏。它支持一次语音克隆（只需短样本），推理延迟仅 110ms。模型权重已开源至 GitHub，无需 API 即可自托管，音频数据不离开本地。API 访问即将推出。演示已上线，可先试听再克隆仓库。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpythfxu0365sli38hn2bjc9",
@@ -81,7 +95,9 @@
       "source": "xAI：News（网页）",
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "xAI 通过 API 发布了图像转视频模型 `grok-imagine-video-1.5-preview`（Grok Imagine 1.5 预览版）。该模型能将单张静态图片转为流畅的电影感视频，用户提供起始帧和描述运动的提示词后，模型可生成包含相机移动、氛围和物理效果的动画，并保持对源图像的忠实。支持生成 720p 片段，可使用自然语言指令控制镜头、节奏和音效，并支持逐帧拼接成长场景。模型目前通过 xAI API 提供预览使用。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpwzm8ij028gsl798th4vl54",
@@ -91,7 +107,9 @@
       "source": "The Verge：AI（RSS）",
       "publishedAt": "2026-06-02T18:12:44.000Z",
       "summary": "微软在Build 2026上发布了其首款高级推理AI模型MAI-Thinking-1。该模型被定位为\"中等规模\"，能在\"关键\"软件工程基准测试中达到领先模型的水平。微软称其完全从头使用干净数据进行训练，未涉及从第三方模型进行知识蒸馏。这标志着微软在自研AI模型上迈出重要一步，此前其主要依赖OpenAI。近期两家公司已重新协商合作协议，关系有所松绑。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 78,
+      "selected": true
     },
     {
       "id": "cmpwqvwfa05cqslsncgvlgd9q",
@@ -101,7 +119,21 @@
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-06-02T14:13:23.000Z",
       "summary": "Holo3.1 是基于 Qwen 模型家族的计算机使用智能体系列，旨在提升在桌面、网页和移动环境中的鲁棒性。新模型提供 0.8B、4B、9B 和 35B-A3B 四种尺寸，并首次发布量化检查点，包括 FP8、Q4 GGUF 和 NVFP4，以优化本地推理。在 AndroidWorld 基准测试中，35B-A3B 模型得分从 67% 提升至 79.3%。在 DGX Spark 上，NVFP4 量化相比 BF16 实现 1.74 倍 token 吞吐量提升，并将平均步骤时间从 6.8 秒缩短至 3.3 秒。模型支持函数调用协议，可在第三方智能体框架中部署。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq2o71l001ipsl6ncxpguq7v",
+      "title": "Qwen3.7-Plus：把多模态AI变成\"实干家\"",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/vk-rc_NQwK951HY9KiX6eg",
+      "source": "公众号：通义实验室（千问）",
+      "publishedAt": "2026-06-01T17:59:25.000Z",
+      "summary": null,
+      "category": "ai-models",
+      "score": 74,
+      "selected": true
     },
     {
       "id": "cmpvfn56c06fxsl0zknga1ztr",
@@ -111,7 +143,9 @@
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-06-01T15:45:17.000Z",
       "summary": "Mellum2 是 JetBrains 从头训练的 12B 参数混合专家（MoE）模型，专注于自然语言与代码。每个 token 仅激活 2.5B 参数，推理速度可达同类模型的 2 倍以上，适合高吞吐、低延迟场景。该模型支持路由、RAG、摘要、子智能体及私有部署，以 Apache 2.0 许可证开源。在代码生成、推理、科学和数学基准测试中，Mellum2 与同等规模的开放模型竞争力相当。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpuqq2mt0025sl0z5qnshwpd",
@@ -121,7 +155,9 @@
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "publishedAt": "2026-06-01T04:43:58.000Z",
       "summary": "NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpunu0g50002slbrlfonpoc3",
@@ -131,7 +167,9 @@
       "source": "MiniMax：Blog（网页）",
       "publishedAt": "2026-06-01T03:39:41.634Z",
       "summary": "MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 83,
+      "selected": true
     },
     {
       "id": "cmpvj4oqx009islykdg19umm6",
@@ -141,17 +179,9 @@
       "source": "xAI：News（网页）",
       "publishedAt": "2026-06-01T00:00:00.000Z",
       "summary": "xAI的最新编程模型Composer 2.5现已在Grok Build中可用，用户可通过`/models`菜单选择使用。这是一款快速、先进的模型，擅长处理长时间运行的任务和复杂指令。该模型面向SuperGrok和X Premium+用户开放。",
-      "category": "ai-models"
-    },
-    {
-      "id": "cmps939np07v7slljd0bbkc91",
-      "title": "小即是美：开源多模态模型发布",
-      "title_en": "Small is a feature. 😌",
-      "url": "https://x.com/StepFun_ai/status/2060678753030947226",
-      "source": "X：阶跃星辰 StepFun (@StepFun_ai)",
-      "publishedAt": "2026-05-30T11:04:34.000Z",
-      "summary": "小即是美。😌",
-      "category": "ai-models"
+      "category": "ai-models",
+      "score": 78,
+      "selected": true
     }
   ]
 }

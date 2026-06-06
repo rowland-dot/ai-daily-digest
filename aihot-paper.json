@@ -1,8 +1,32 @@
 {
-  "count": 27,
+  "count": 31,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq1jj4u00gejsltrelu93dbg",
+      "title": "PixelDiT入选CVPR2026最佳论文决赛",
+      "title_en": "Selected as a best paper finalist at #CVPR2026： PixelDiT from NVIDIA Research In most image generat…",
+      "url": "https://x.com/NVIDIAAI/status/2063034422698389625",
+      "source": "X：NVIDIA AI (@NVIDIAAI)",
+      "publishedAt": "2026-06-05T23:05:10.000Z",
+      "summary": "被选为 #CVPR2026 最佳论文决赛作品：来自 NVIDIA Research 的 PixelDiT\n\n在大多数图像生成模型中，预训练的自编码器会在任何扩散发生前压缩图像，导致质量损失在整个流程中累积。\n\nPixelDiT，即像素扩散变换器，完全去掉了这一步骤。它是一个单阶段模型，直接在像素空间中端到端地学习扩散过程。",
+      "category": "paper",
+      "score": 68,
+      "selected": true
+    },
+    {
+      "id": "cmq1hy4wt0fyrsltrxx64boz8",
+      "title": "Arena 发布真实世界 AI 智能体排行榜 Agent Arena",
+      "title_en": "Arena just released a real-world agent leaderboard that ranks AI models by how well they complete ac…",
+      "url": "https://x.com/rohanpaul_ai/status/2063018358795300982",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-05T22:01:20.000Z",
+      "summary": "Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。",
+      "category": "paper",
+      "score": 76,
+      "selected": true
+    },
     {
       "id": "cmq1d2vyt0epssltrsz0gvbky",
       "title": "微软Project Mosaic：micro-LED光学互连技术",
@@ -11,17 +35,9 @@
       "source": "X：Microsoft Research (@MSFTResearch)",
       "publishedAt": "2026-06-05T19:43:10.000Z",
       "summary": "微软Azure CTO Mark Russinovich在Build 2026上介绍Project Mosaic，这是微软剑桥研究院的实验性光学互连技术，采用micro-LED实现低功耗、高速数据传输。高级研究员Kaoutar Benyahya现场演示单个LED调制形成字母，证明概念具备实时响应能力。",
-      "category": "paper"
-    },
-    {
-      "id": "cmq1bny1b0ebysltrc6b1fxmk",
-      "title": "Anthropic：让Claude成为化学家",
-      "title_en": "Making Claude a chemist",
-      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-05T19:33:26.491Z",
-      "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。",
-      "category": "paper"
+      "category": "paper",
+      "score": 60,
+      "selected": true
     },
     {
       "id": "cmq13pme90c62sltraucjmvp2",
@@ -31,7 +47,45 @@
       "source": "X：AI at Meta (@AIatMeta)",
       "publishedAt": "2026-06-05T15:33:22.000Z",
       "summary": "热烈祝贺我们的 SAM 3D 团队在 #CVPR26 获得最佳论文荣誉提名！这项殊荣凸显了他们在推动计算机视觉边界方面的杰出工作。\n\n论文链接：https：//arxiv.org/abs/2511.16624",
-      "category": "paper"
+      "category": "paper",
+      "score": 64,
+      "selected": true
+    },
+    {
+      "id": "cmq2o71l001iisl6n8ljx5jbt",
+      "title": "首字延迟降低3.6倍，腾讯混元提出Stem稀疏注意力算法，长文推理加速新SOTA",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/XneOSvjt-7A-DU546cGoZA",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-06-05T11:22:41.000Z",
+      "summary": null,
+      "category": "paper",
+      "score": 56,
+      "selected": true
+    },
+    {
+      "id": "cmq2o71l001imsl6nw5cypu9a",
+      "title": "PawBench：给通用智能体一把可度量的尺",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/Q1fa3KwT63HBOF2fmWKzlg",
+      "source": "公众号：通义实验室（千问）",
+      "publishedAt": "2026-06-05T09:54:27.000Z",
+      "summary": null,
+      "category": "paper",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq1bny1b0ebysltrc6b1fxmk",
+      "title": "Anthropic：让Claude成为化学家",
+      "title_en": "Making Claude a chemist",
+      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-04T16:00:00.000Z",
+      "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。",
+      "category": "paper",
+      "score": 65,
+      "selected": true
     },
     {
       "id": "cmpzhk1rp03k5slkpmx3q7mp3",
@@ -41,7 +95,9 @@
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-06-04T12:24:58.000Z",
       "summary": "EVA-Bench Data 2.0 将评估范围从单一企业领域扩展至航空公司客户服务管理（CSM）、企业 IT 服务管理（ITSM）和医疗 HR 服务交付（HRSD）三个领域，共涵盖 121 个工具、213 个场景，场景数较原始版本增长约 4 倍。每个场景均经 OpenAI GPT-5.4、Google Gemini 3.1 Pro 和 Anthropic Claude Opus 4.6 验证可解性。数据集遵循语音优先、真实性、多样性、认证流程和可复现性五项设计原则，包含单意图、多意图（最多 4 个意图）和对抗性呼叫类型。所有三个数据集已开源，可通过 `load_dataset` 从 Hugging Face 直接下载。后续将推出多语言扩展。",
-      "category": "paper"
+      "category": "paper",
+      "score": 65,
+      "selected": true
     },
     {
       "id": "cmpzfevp50305slkpy89xsy0v",
@@ -51,7 +107,9 @@
       "source": "Hugging Face：Blog（RSS）",
       "publishedAt": "2026-06-04T11:24:53.000Z",
       "summary": "在 Nemotron-3 Nano 模型的 100B token 续训练实验中，任务种子合成数据生成（Task-Seeded SDG）使 MMLU-Pro 提升 1.8 分，平均代码提升 1.9 分，常识理解提升 1.6 分，GPQA 提升 11.1 分，数学成绩保持稳定。该流程利用 lm-eval-harness 中约 70 个公开任务（约 700 子任务）的训练集作为种子，生成新示例并补充推理和上下文，经过格式校验、去重和答案验证后得到精选合成数据集，用于 Nemotron Ultra 和 Super 训练。",
-      "category": "paper"
+      "category": "paper",
+      "score": 68,
+      "selected": true
     },
     {
       "id": "cmpyvxja303t6sli3dok90v7m",
@@ -61,7 +119,9 @@
       "source": "X：NVIDIA AI (@NVIDIAAI)",
       "publishedAt": "2026-06-04T02:17:37.000Z",
       "summary": "辐射场的质量取决于其背后的图像。\n\nPPISP 可帮助补偿不同拍摄之间的光度变化，使 3D 重建在光照和相机设置不完全一致时更加鲁棒。\n\n🔗 项目：https：//nvda.ws/43JeJpk",
-      "category": "paper"
+      "category": "paper",
+      "score": 62,
+      "selected": true
     },
     {
       "id": "cmpyacsh5038rslaxlh6udycy",
@@ -71,7 +131,9 @@
       "source": "X：Microsoft Research (@MSFTResearch)",
       "publishedAt": "2026-06-03T16:09:00.000Z",
       "summary": "一份在中西部装瓶厂进行的三个月试点显示，当AI超越聊天进入决策领域时会发生什么--约束条件变化、风险真实、答案必须可靠。 https：//msft.it/6015vjYUN",
-      "category": "paper"
+      "category": "paper",
+      "score": 62,
+      "selected": true
     },
     {
       "id": "cmpzy33my014qsltrf163yi8g",
@@ -81,7 +143,9 @@
       "source": "Google Research：Blog（网页）",
       "publishedAt": "2026-06-03T16:00:00.000Z",
       "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
-      "category": "paper"
+      "category": "paper",
+      "score": 79,
+      "selected": true
     },
     {
       "id": "cmpyhoxxg002qsli30vj99h80",
@@ -91,7 +155,9 @@
       "source": "NVIDIA AI Blog",
       "publishedAt": "2026-06-03T15:00:57.000Z",
       "summary": "NVIDIA Research 在 CVPR 2026 上发表三篇论文，展示规模化训练带来的泛化能力。GraspGen-X 是首个零样本抓取基础模型，基于 20 亿次模拟抓取训练，可为任意末端执行器生成抓取姿态。LCDrive 用紧凑潜在表示替代文本推理，让自动驾驶在嵌入式硬件上更快推理。NitroGen 基于 Isaac GR00T 架构，在大量虚拟环境中训练具身智能体。此外还发布了新的物理 AI 智能体技能，以及配合 GraspGen-X 使用的 CUDA 加速运动规划库 curoboV2 和闭环抓取论文 Grasp-MPC。",
-      "category": "paper"
+      "category": "paper",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpxvzm7o00jqsliwbt1hnvae",
@@ -101,7 +167,9 @@
       "source": "Anthropic：Research（发表成果 · 网页）",
       "publishedAt": "2026-06-03T09:51:21.088Z",
       "summary": "Anthropic 分析 2025 年 3 月至 2026 年 3 月间 832 个被封禁的恶意账户，映射至 MITRE ATT&CK 框架。67.3% 使用 AI 编写恶意软件，6.5% 用于横向移动。六个月间中高风险攻击者占比从 33% 升至 56%。AI 用于账户发现增长 8.9%，AI 辅助钓鱼下降 8.6%。传统基于技术数量或平台（Claude Code、API、聊天界面）的威胁评估失效，而 MITRE ATT&CK 框架尚未收录此类智能体编排行为。",
-      "category": "paper"
+      "category": "paper",
+      "score": 69,
+      "selected": true
     },
     {
       "id": "cmpxhi7gs041mslcksl8he9vu",
@@ -111,7 +179,9 @@
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-06-03T02:33:56.784Z",
       "summary": "斯坦福大学法学院的一项研究表明，人工智能的表现优于法学教授。该发现引发了广泛关注，在Hacker News平台获得了104个Points。",
-      "category": "paper"
+      "category": "paper",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpyy97hn04hesli3ew9ty7cu",
@@ -121,7 +191,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "MapAgent是一种工业级智能体架构，用于生成符合规范的车道级地图。它在矢量化骨干网络基础上，通过Judge-Planner-Worker循环，利用视觉语言模型诊断错误、调用工具生成最小修正编辑并重新验证。系统仅在骨干网络置信度低的瓦片区域选择性触发，保持高吞吐量。MapAgent已集成至百度地图，支撑全国360多个城市的车道级地图生成，整体生产自动化率超95%。",
-      "category": "paper"
+      "category": "paper",
+      "score": 74,
+      "selected": true
     },
     {
       "id": "cmpyw41ob03vvsli3998nmc40",
@@ -131,7 +203,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "Echo-Infinity 是一个自回归（AR）框架，用于实时无限视频生成。它用可学习的演化记忆替代人工缓存策略，通过注意力机制和门控更新 Memory Query，与视频扩散 Transformer（DiTs）端到端优化，支持任意压缩比且计算量不随视频长度增加。同时引入 Unified Relative RoPE Recipe，锚定 sink 帧从 id 0 开始、最新帧 id 不超过预训练最大时间 RoPE id，解除有限 RoPE 约束并缩小外推差距。在长/短视频生成中达到 SOTA，首次实现 24 小时（超 130 万帧）实时滚动生成。",
-      "category": "paper"
+      "category": "paper",
+      "score": 79,
+      "selected": true
     },
     {
       "id": "cmpyw41ob03vqsli352ld24b0",
@@ -141,7 +215,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "StreamMA 采用\"流式通信\"范式，每个推理步骤生成后立即流式传输给下游智能体，通过流水线相邻智能体降低端到端延迟。该方法还提升了效果，因为早期步骤更可靠，可避免错误后期步骤误导下游智能体。在数学、科学和代码八项推理基准上，使用 Claude Opus 4.6 和 GPT-5.4 两种大语言模型，及 Chain、Tree、Graph 三种拓扑，StreamMA 平均优于基线 +7.3 个百分点，在 HMMT 2026 上最高达 +22.4 个百分点。研究还发现\"步骤级缩放定律\"：增加每智能体步骤数可同时提升效果与效率。",
-      "category": "paper"
+      "category": "paper",
+      "score": 73,
+      "selected": true
     },
     {
       "id": "cmpytyvum03avsli3s4ft7t9q",
@@ -151,7 +227,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "论文提出Meta-Agent Challenge（MAC）评估框架，测试前沿模型自主开发智能体系统的能力。元智能体在沙盒环境中借助评估API和时限，迭代编程出能在五个领域保留测试集上最大化性能的智能体工件，并采用多层防御防止奖励攻击。实验表明，元智能体极少达到人类基线策略，少数成功者由专有前沿模型主导；设计过程高方差，高优化压力催生了真实值外泄等对抗行为，暴露鲁棒性与对齐缺陷。MAC作为开源基准，为评估递归自我改进提供实证代理。",
-      "category": "paper"
+      "category": "paper",
+      "score": 72,
+      "selected": true
     },
     {
       "id": "cmpx6ljcj013yslck2447n70s",
@@ -161,7 +239,9 @@
       "source": "X：Microsoft Research (@MSFTResearch)",
       "publishedAt": "2026-06-02T21:45:25.000Z",
       "summary": "天气预报速度比传统超级计算机快数千倍。听听Kenji Takeda在#MSBuild微软研究实验室关于Aurora的分享。了解更多：https：//msft.it/6018vjGUA",
-      "category": "paper"
+      "category": "paper",
+      "score": 72,
+      "selected": true
     },
     {
       "id": "cmpxkya4604y3slck1oyytsxu",
@@ -171,7 +251,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-02T13:07:49.000Z",
       "summary": "本研究探讨了世界模型与多模态大语言模型在预测未来状态时的互补性。世界模型可生成具体的视觉未来轨迹，但可能视觉合理却任务错误；多模态大语言模型则擅长抽象推理。为此，研究提出了\"受控的具体推理\"框架，并构建了VRQABench和OpenWorldQA两个基准。同时，提出了Privileged-Future On-Policy Self-Distillation（PF-OPSD）方法，该方法在训练时利用真实未来视频作为特权上下文评估推理轨迹，但部署时无需真实未来。实验结果显示，PF-OPSD在两个基准上分别比基线高出10.6%和10.9%，并提升了对噪声或冲突轨迹的鲁棒性。",
-      "category": "paper"
+      "category": "paper",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpwgl5go02q3slsnw6pl0fs5",
@@ -181,7 +263,9 @@
       "source": "Anthropic：Transformer Circuits（可解释性研究）",
       "publishedAt": "2026-06-02T09:52:20.287Z",
       "summary": "Anthropic可解释性团队介绍了其Circuits研究的新进展。为区分那些激活模式相似但因果效应不同的模型特征，团队提出一种新方法。该方法通过分析特征的下游连接来预测其实际影响，并使用基于共激活统计的TWERA（虚拟权重）对连接进行加权排序。实验表明，借助下游连接信息能更准确地判断哪个特征会引导特定输出。此方法为识别模型内部真正的因果组件提供了新途径。",
-      "category": "paper"
+      "category": "paper",
+      "score": 63,
+      "selected": true
     },
     {
       "id": "cmpwf5ekt02dvslsnxsj6m2rp",
@@ -191,7 +275,9 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-06-02T02:00:00.000Z",
       "summary": "The Next Era of Knowledge Work报告指出，Codex正通过AI增强的研究、数据分析、工作流自动化与内容创作，变革知识工作的生产力。",
-      "category": "paper"
+      "category": "paper",
+      "score": 57,
+      "selected": true
     },
     {
       "id": "cmq00w2q101udsltr19txiwkj",
@@ -201,7 +287,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-02T00:00:00.000Z",
       "summary": "ACTS将推理引导建模为马尔可夫决策过程，控制器智能体在推理中自适应引导冻结的推理器。控制器每步观察推理轨迹与剩余预算，发出含推理策略和引导短语的动作，实现预算感知的推理控制。控制器通过合成轨迹初始化，并经强化学习优化。在多个基准上，ACTS以显著token节省匹配全思考性能，实现可控的精度-效率权衡。代码已开源。",
-      "category": "paper"
+      "category": "paper",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpyaocou03ccslaxcg50bh1c",
@@ -211,7 +299,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-02T00:00:00.000Z",
       "summary": "Ultralytics YOLO26 采用双头设计实现原生无 NMS 的端到端推理，彻底移除 DFL，获得更轻检测头与无约束回归范围。训练结合混合 Muon-SGD 优化器 MuSGD、转向推理头的 Progressive Loss 及保证小物体正样本的 STAL 标签分配。支持检测、实例分割、姿态估计、定向检测和分类，提供 5 种尺度（n/s/m/l/x）及开放词汇扩展 YOLOE-26。全部尺度在 COCO 上达 40.9-57.5 mAP，T4 TensorRT 延迟 1.7-11.8 ms；YOLOE-26x 在 LVIS minival 文本提示下达 40.6 AP。代码已开源。",
-      "category": "paper"
+      "category": "paper",
+      "score": 76,
+      "selected": true
     },
     {
       "id": "cmpwxbmhb01lisl79elctr7z8",
@@ -221,7 +311,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-01T00:00:00.000Z",
       "summary": "AFUN是一个用于功能理解的可供性基础模型。它从单个RGB-D观察和语言任务描述出发，能同时预测任务条件的功能掩码（where）和3D接触后运动曲线（how）。为实现开放世界泛化，该研究构建了一个大规模标准化数据管道，整合了机器人、人类、仿真与真实扫描数据。评估结果显示，AFUN在可供性分割任务上，于4个基准的8个测试集中平均gIoU/cIoU指标分别大幅领先基线模型+23.9/+26.3；在接触点预测上，命中率比最佳基线高出12.7%-61.3%；在3D运动预测上也取得最佳性能。该模型无需针对特定机器人实体进行微调即可直接部署。",
-      "category": "paper"
+      "category": "paper",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpwmljjs049cslsnfoe42el4",
@@ -231,7 +323,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-01T00:00:00.000Z",
       "summary": "本研究对NLP领域2018至2025年间的人类标注报告实践进行了首次大规模审计。研究构建并验证了一个LLM辅助提取管线，其在Annotated-gold数据集（41篇论文，72个标注任务）上与人工裁决的一致性（Krippendorff's alpha）达到0.606。基于此，研究构建了Annotated-llm数据集，涵盖ACL会议论文，从1603篇论文中提取了2667个标注任务。分析发现，论文常报告招募策略、标注者专长等操作细节，但经常遗漏评估标注效度所需的关键信息，如培训、语言能力、薪酬、裁决过程及一致性数值。研究指出标注报告虽有改善但仍不均衡，并提出了一个可扩展的框架和最低报告标准。",
-      "category": "paper"
+      "category": "paper",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpw7layz00esslsnshn4dzp3",
@@ -241,7 +335,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-01T00:00:00.000Z",
       "summary": "OpenWebRL是一个用于在真实网站上通过在线多轮强化学习训练视觉网页智能体的开源框架，覆盖了完整的训练流程。基于该框架训练的OpenWebRL-4B模型，在仅使用0.4K条监督初始化轨迹和2.2K个开放式RL训练任务的情况下，在Online-Mind2Web基准上达到67.0%成功率，在DeepShop基准上达到64.0%，超越了同规模或更大规模的先前开源智能体，性能可与OpenAI CUA和Gemini CUA等闭源系统竞争。该工作为构建更强、可复现且高性价比的开源网页智能体提供了实践路径。",
-      "category": "paper"
+      "category": "paper",
+      "score": 73,
+      "selected": true
     },
     {
       "id": "cmpwqvwfq05ctslsnc93eaikd",
@@ -251,7 +347,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-31T00:00:00.000Z",
       "summary": "τ_0-World Model （τ_0-WM） 是一个统一的视频-动作世界模型，旨在机器人执行动作前预测并评估其未来后果。模型基于共享的视频扩散主干网络构建，提供两个接口：一个联合预测未来视觉潜在表示与连续动作块的视频动作模型，以及一个能将动作序列展开为多视角未来并预测任务进度分数的动作条件视频模拟器。τ_0-WM 使用约27，300小时的多元数据训练，包括真实机器人遥操作、UMI风格交互、自我中心人类视频等。推理时，模型通过测试时计算采样动作候选，并利用去噪一致性和基于模拟器的修正来筛选低质量动作，在长时程和精细机器人操控任务上表现出优于相关基准的性能。",
-      "category": "paper"
+      "category": "paper",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpwbvnb101iwslsnq39efzz8",
@@ -261,7 +359,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-31T00:00:00.000Z",
       "summary": "ChartArena 是一个旨在系统评估图表解析模型的双语基准测试。它覆盖了八种图表家族（包括数字图表与流程图等结构），并针对数字渲染、打印照片和手绘照片三种场景进行评估。数据集采用人机协作标注流程，并设计了格式无关的评估协议，将不同模型输出映射到标准化语义空间进行评分。对26个多模态大语言模型的评估显示，前沿闭源模型如Gemini 3.1 Pro领先，开源系统正快速追赶；文档解析模型在数字图表上表现尚可，但在图表结构上明显不足；专业解析器仍局限于特定图表类型。雷达图和手绘场景对所有模型都尤其具有挑战性。",
-      "category": "paper"
+      "category": "paper",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpw3ayof03zbsluk2voh8h1v",
@@ -271,7 +371,9 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-05-31T00:00:00.000Z",
       "summary": "研究提出目标视角复现任务（TVR）与模拟基准TVRBench，评估基础模型在3D环境中主动调整视角以匹配目标图像的能力。当前最优开源与闭源模型成功率仅7.8%和12.0%，瓶颈在于处理多轮视觉历史及需要平移而非旋转时的性能下降。通过构建统一的后训练框架，视觉动作SFT将9B开源模型成功率提升至50.8%，多轮GRPO进一步达到51.4%，为训练主动感知与行动的模型提供了基准。代码与模型已开源。",
-      "category": "paper"
+      "category": "paper",
+      "score": 70,
+      "selected": true
     }
   ]
 }

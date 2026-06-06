@@ -1,94 +1,6 @@
 {
-  "fetched_at": "2026-06-05T21:58:02.249Z",
+  "fetched_at": "2026-06-06T21:38:04.792Z",
   "repos": [
-    {
-      "owner": "NousResearch",
-      "name": "hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "description": "The agent that grows with you",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 182999,
-      "forks": 31379,
-      "starsToday": 1821
-    },
-    {
-      "owner": "chopratejas",
-      "name": "headroom",
-      "url": "https://github.com/chopratejas/headroom",
-      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 14425,
-      "forks": 914,
-      "starsToday": 2503
-    },
-    {
-      "owner": "CopilotKit",
-      "name": "CopilotKit",
-      "url": "https://github.com/CopilotKit/CopilotKit",
-      "description": "The Frontend Stack for Agents & Generative UI. React + Angular. Makers of the AG-UI Protocol",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 32624,
-      "forks": 4188,
-      "starsToday": 350
-    },
-    {
-      "owner": "lfnovo",
-      "name": "open-notebook",
-      "url": "https://github.com/lfnovo/open-notebook",
-      "description": "An Open Source implementation of Notebook LM with more flexibility and features",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 25928,
-      "forks": 2984,
-      "starsToday": 1142
-    },
-    {
-      "owner": "affaan-m",
-      "name": "ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 208278,
-      "forks": 31957,
-      "starsToday": 1368
-    },
-    {
-      "owner": "Panniantong",
-      "name": "Agent-Reach",
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 21501,
-      "forks": 1860,
-      "starsToday": 127
-    },
-    {
-      "owner": "NVIDIA",
-      "name": "cosmos",
-      "url": "https://github.com/NVIDIA/cosmos",
-      "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 9378,
-      "forks": 600,
-      "starsToday": 494
-    },
-    {
-      "owner": "666ghj",
-      "name": "MiroFish",
-      "url": "https://github.com/666ghj/MiroFish",
-      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 64653,
-      "forks": 10081,
-      "starsToday": 324
-    },
     {
       "owner": "mvanhorn",
       "name": "last30days-skill",
@@ -96,31 +8,20 @@
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 28171,
-      "forks": 2390,
-      "starsToday": 738
+      "stars": 28717,
+      "forks": 2432,
+      "starsToday": 441
     },
     {
-      "owner": "PaddlePaddle",
-      "name": "PaddleOCR",
-      "url": "https://github.com/PaddlePaddle/PaddleOCR",
-      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 80497,
-      "forks": 10631,
-      "starsToday": 755
-    },
-    {
-      "owner": "openai",
-      "name": "plugins",
-      "url": "https://github.com/openai/plugins",
-      "description": "OpenAI Plugins",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 1508,
-      "forks": 238,
-      "starsToday": 82
+      "owner": "CopilotKit",
+      "name": "CopilotKit",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 33158,
+      "forks": 4235,
+      "starsToday": 613
     },
     {
       "owner": "MemPalace",
@@ -129,20 +30,64 @@
       "description": "The best-benchmarked open-source AI memory system. And it's free.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 53835,
-      "forks": 7079,
-      "starsToday": 228
+      "stars": 54233,
+      "forks": 7103,
+      "starsToday": 441
     },
     {
-      "owner": "openclaw",
-      "name": "openclaw-windows-node",
-      "url": "https://github.com/openclaw/openclaw-windows-node",
-      "description": "Windows companion suite for OpenClaw - System Tray app, Shared library, Node, and PowerToys Command Palette extension",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 1584,
-      "forks": 180,
-      "starsToday": 329
+      "owner": "danielmiessler",
+      "name": "Personal_AI_Infrastructure",
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 14920,
+      "forks": 2120,
+      "starsToday": 63
+    },
+    {
+      "owner": "openai",
+      "name": "plugins",
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 1740,
+      "forks": 255,
+      "starsToday": 215
+    },
+    {
+      "owner": "Panniantong",
+      "name": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 22248,
+      "forks": 1901,
+      "starsToday": 700
+    },
+    {
+      "owner": "sveltejs",
+      "name": "svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 86953,
+      "forks": 4937,
+      "starsToday": 34
+    },
+    {
+      "owner": "nginx",
+      "name": "nginx",
+      "url": "https://github.com/nginx/nginx",
+      "description": "The official NGINX Open Source repository.",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 30664,
+      "forks": 7955,
+      "starsToday": 37
     },
     {
       "owner": "aquasecurity",
@@ -151,31 +96,108 @@
       "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 35834,
-      "forks": 443,
-      "starsToday": 208
+      "stars": 35987,
+      "forks": 453,
+      "starsToday": 159
     },
     {
-      "owner": "jwasham",
-      "name": "coding-interview-university",
-      "url": "https://github.com/jwasham/coding-interview-university",
-      "description": "A complete computer science study plan to become a software engineer.",
-      "language": "",
-      "languageColor": "",
-      "stars": 350348,
-      "forks": 83290,
-      "starsToday": 757
+      "owner": "golang",
+      "name": "go",
+      "url": "https://github.com/golang/go",
+      "description": "The Go programming language",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 134497,
+      "forks": 19089,
+      "starsToday": 24
     },
     {
-      "owner": "github",
-      "name": "copilot-sdk",
-      "url": "https://github.com/github/copilot-sdk",
-      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 9212,
-      "forks": 1223,
-      "starsToday": 310
+      "owner": "lfnovo",
+      "name": "open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 26561,
+      "forks": 3035,
+      "starsToday": 783
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 219595,
+      "forks": 19539,
+      "starsToday": 1008
+    },
+    {
+      "owner": "santifer",
+      "name": "career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 49250,
+      "forks": 10192,
+      "starsToday": 203
+    },
+    {
+      "owner": "openai",
+      "name": "whisper",
+      "url": "https://github.com/openai/whisper",
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 101819,
+      "forks": 12439,
+      "starsToday": 155
+    },
+    {
+      "owner": "vitejs",
+      "name": "vite",
+      "url": "https://github.com/vitejs/vite",
+      "description": "Next generation frontend tooling. It's fast!",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 81157,
+      "forks": 8274,
+      "starsToday": 73
+    },
+    {
+      "owner": "microsoft",
+      "name": "mxc",
+      "url": "https://github.com/microsoft/mxc",
+      "description": "Policy-driven, layered isolation and containment",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 553,
+      "forks": 24,
+      "starsToday": 57
+    },
+    {
+      "owner": "PaddlePaddle",
+      "name": "PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 80925,
+      "forks": 10654,
+      "starsToday": 449
+    },
+    {
+      "owner": "microsoft",
+      "name": "VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 48443,
+      "forks": 5389,
+      "starsToday": 219
     }
   ]
 }

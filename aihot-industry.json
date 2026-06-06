@@ -1,8 +1,20 @@
 {
-  "count": 50,
-  "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwMTEzNjA5MDAwLCJpIjoiY21wcnVjaHIwMDQ5dXNsbGp5Z210c3R0eCJ9",
+  "count": 47,
+  "hasNext": false,
+  "nextCursor": null,
   "items": [
+    {
+      "id": "cmq2o63pf01dosl6n6n4wr3tr",
+      "title": "阶跃首席科学家张祥雨合著论文 ResNet 获 CVPR 2026 「时间检验奖」",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/ZVgqdH_fE42jO4kcI-lF3g",
+      "source": "公众号：阶跃星辰（Step）",
+      "publishedAt": "2026-06-06T06:46:02.000Z",
+      "summary": null,
+      "category": "industry",
+      "score": 57,
+      "selected": true
+    },
     {
       "id": "cmq1fw2bb0ffssltrvl691wnx",
       "title": "Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片",
@@ -11,7 +23,9 @@
       "source": "Bloomberg：Technology（RSS）",
       "publishedAt": "2026-06-05T21:02:29.000Z",
       "summary": "Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。",
-      "category": "industry"
+      "category": "industry",
+      "score": 77,
+      "selected": true
     },
     {
       "id": "cmq1eqdug0f4bsltr1nzlten4",
@@ -21,7 +35,9 @@
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "publishedAt": "2026-06-05T20:51:42.000Z",
       "summary": "SpaceX 刚刚披露了一份与 Google 的新云服务协议。\n\nGoogle 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。\n\n这再次表明，AI 算力正成为一种战略性商品，就像发射能力或能源一样，而那些能够为庞大的 GPU 集群提供资金、电力、冷却和运营的公司，可能会在其原有业务之外获得巨大的杠杆优势。",
-      "category": "industry"
+      "category": "industry",
+      "score": 77,
+      "selected": true
     },
     {
       "id": "cmq1cb2df0ehlsltrb0nb702a",
@@ -31,7 +47,9 @@
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-06-05T19:23:20.788Z",
       "summary": "据 The Intercept 6月5日报道，美国五角大楼正在运营一个针对拉丁美洲的人工智能宣传机器（AI propaganda mill）。报道指出，该机器利用 AI 技术生成并传播宣传内容，目标为拉丁美洲地区。该消息在 Hacker News 上获得 100 点热度。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmq15u3mt0cqjsltrhb1ch36w",
@@ -41,7 +59,9 @@
       "source": "X：Epoch AI (@EpochAIResearch)",
       "publishedAt": "2026-06-05T16:24:01.000Z",
       "summary": "AI 热潮使计算基础设施占美国 GDP 比重翻倍。\n\n2026 年第一季度，与 AI 相关的数据中心建设、计算硬件和网络设备投资约占美国 GDP 的 0.8%，推动整个计算基础设施占 GDP 比重达到约 1.5%。",
-      "category": "industry"
+      "category": "industry",
+      "score": 76,
+      "selected": true
     },
     {
       "id": "cmq12z6ag0bzssltrkou6khap",
@@ -51,7 +71,9 @@
       "source": "Bloomberg：Technology（RSS）",
       "publishedAt": "2026-06-05T15:18:30.000Z",
       "summary": "Mira Murati 表示，如果 Sam Altman 在 2023 年被短暂罢免后没有回归 CEO 职位，OpenAI 很可能已经\"瓦解\"。这是她对那场硅谷最激烈的董事会斗争的最清晰描述。",
-      "category": "industry"
+      "category": "industry",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmq12gsy20buksltr2nwivyhu",
@@ -61,7 +83,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-05T14:21:03.000Z",
       "summary": "苹果新版Siri被内部标记为\"Beta\"版，不会作为完成品宣传；可能设置等待清单供用户尝试。iOS 27细节：通知到达重新设计，通知中心手势移至左上角；\"查找\"应用视觉重设计；照片\"清理\"功能改进；大量底层安全改进。部分Siri查询将通过Google Cloud调用授权版Gemini，并使用谷歌的NVIDIA Blackwell B200集群处理。",
-      "category": "industry"
+      "category": "industry",
+      "score": 73,
+      "selected": true
     },
     {
       "id": "cmq10bltr0b9ksltrs7mappfh",
@@ -71,7 +95,21 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-05T13:59:37.000Z",
       "summary": "据《连线》今日报道，Meta 通过多次应用更新将人脸识别代码推送到智能眼镜配套 App 中，代号\"NameTag\"。该功能利用已部署的三个 AI 模型将人脸转换为\"人脸特征模板\"，与手机本地数据库匹配，识别成功后向佩戴者发送通知。App 下载量超 5000 万次。Meta 回应称代码仅为探索，尚未决定推出，且不会建立中央人脸数据库。此前 Meta 曾因人脸识别问题在伊利诺伊州和得克萨斯州分别达成 6.5 亿美元和 14 亿美元和解。",
-      "category": "industry"
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmq2l9lfs009zsl6n45wlgkj8",
+      "title": "FluxA与百度智能云合作：DAA时代，AI开始自己赚钱",
+      "title_en": "FluxA🤝百度智能云：DAA时代，终于轮到AI自己赚钱了",
+      "url": "https://mp.weixin.qq.com/s/_Gxb4JWjVidXVfeCRjghzg",
+      "source": "公众号：百度智能云（文心）",
+      "publishedAt": "2026-06-05T10:52:01.000Z",
+      "summary": "FluxA与百度智能云达成合作，标志着DAA时代到来--AI开始实现自身盈利，不再依赖外部投入。",
+      "category": "industry",
+      "score": 65,
+      "selected": true
     },
     {
       "id": "cmq0irius06k5sltr35ji4gbi",
@@ -81,7 +119,9 @@
       "source": "NVIDIA AI Blog",
       "publishedAt": "2026-06-05T05:38:37.000Z",
       "summary": "NVIDIA 创始人兼 CEO 黄仁勋本周到访首尔，会见韩国的 AI 建造者、主权基础设施合作伙伴及游戏社区。黄仁勋表示，为应对下半年繁忙的 AI 基础设施建设，需对齐 AI 供应链。他指出 Grace Blackwell 系统表现良好，Vera Rubin 已全面投产。他还强调机器人技术将成为韩国的下一个重要产业，并呼吁韩国投资 AI。",
-      "category": "industry"
+      "category": "industry",
+      "score": 63,
+      "selected": true
     },
     {
       "id": "cmq0cow5r050csltrm2m7furf",
@@ -91,7 +131,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-05T03:04:23.000Z",
       "summary": "在 6 月 5 日的腾讯云 AI 产业应用大会上，腾讯高级执行副总裁汤道生表示，今年腾讯大部分代码都由 AI 生成，工程师将更多时间用于架构设计，定期指导与修正 AI 输出。腾讯 2026 年 Q1 财报显示，重组后的 AI 研发团队重构了基础设施，并搭建了 Hy3 preview 模型。腾讯总裁刘炽平今年 3 月透露，去年腾讯在 AI 新产品上投入 180 亿元，今年投入至少翻倍。",
-      "category": "industry"
+      "category": "industry",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmq0ajq1h04eusltr7graqcb9",
@@ -101,7 +143,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-05T01:16:34.000Z",
       "summary": "Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比\"核武器不扩散条约\"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。",
-      "category": "industry"
+      "category": "industry",
+      "score": 79,
+      "selected": true
     },
     {
       "id": "cmq00q1w401tvsltr2b8zysje",
@@ -111,7 +155,9 @@
       "source": "X：NVIDIA (@nvidia)",
       "publishedAt": "2026-06-04T21:28:04.000Z",
       "summary": "当法律和监督依赖于转录内容时，70-80% 是不够的。\n\nhttp：//Rafiqspace.ai 通过微调 Nemotron Parakeet ASR 达到了 97.7% 的印尼语准确率（2.3% WER）-- 优于全球工具，同时每小时成本降低高达 90%。⚖️",
-      "category": "industry"
+      "category": "industry",
+      "score": 60,
+      "selected": true
     },
     {
       "id": "cmpzmsurk050jslkpxfuptzyp",
@@ -121,7 +167,9 @@
       "source": "The Verge：订阅版科技（RSS）",
       "publishedAt": "2026-06-04T14:15:44.000Z",
       "summary": "全球最大芯片制造商台积电表示，通过美国本土生产满足客户需求可能需要\"非常长的时间\"，凸显AI需求带来的产能压力。",
-      "category": "industry"
+      "category": "industry",
+      "score": 82,
+      "selected": true
     },
     {
       "id": "cmpzljcev04oyslkpirsh5gdy",
@@ -131,7 +179,9 @@
       "source": "X：OpenRouter (@OpenRouter)",
       "publishedAt": "2026-06-04T14:15:03.000Z",
       "summary": "DeepSeek 现已连续四周在我们平台的 token 份额排行榜上位居第一： https：//openrouter.ai/rankings",
-      "category": "industry"
+      "category": "industry",
+      "score": 67,
+      "selected": true
     },
     {
       "id": "cmpzer05a02v8slkpi6r58kcw",
@@ -141,7 +191,9 @@
       "source": "Bloomberg：Technology（RSS）",
       "publishedAt": "2026-06-04T11:02:01.000Z",
       "summary": "微软AI部门负责人表示，Anthropic推出的模型成本过高，公司目前正在内部研发更廉价的替代模型，以降低成本。",
-      "category": "industry"
+      "category": "industry",
+      "score": 73,
+      "selected": true
     },
     {
       "id": "cmpyx4llm047vsli313nmjw1m",
@@ -151,7 +203,9 @@
       "source": "X：小互 (@xiaohu)",
       "publishedAt": "2026-06-04T02:54:29.000Z",
       "summary": "Cloudflare Radar 实时统计显示，过去一周（5月28日至6月4日）全球所有 HTML 网页请求流量中，57.5% 来自机器人（爬虫、AI 抓取、自动化脚本），仅42.5%来自真人浏览器，机器人流量首次超过人类。按所有 HTTP 流量返回内容分类，JSON（API 机器通信）占33.1%居首，HTML 仅12%。互联网流量主体已从人类浏览网页转向机器间通信和机器人抓取。",
-      "category": "industry"
+      "category": "industry",
+      "score": 82,
+      "selected": true
     },
     {
       "id": "cmpysu6gj030usli3gqo1qtsd",
@@ -161,7 +215,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-04T00:50:46.000Z",
       "summary": "联合国大学水、环境与健康研究所报告指出，受AI需求驱动，去年全球数据中心耗电448太瓦时（AI占五分之一），耗水4.5万亿升，碳排放1.89亿吨。预计到2030年，年耗电量将翻倍至945太瓦时（AI占40%），耗水增至9.3万亿升，碳排放升至3.99亿吨，占地面积从6900平方公里扩展至14500平方公里。报告警告若忽视环境成本，AI落地还将加剧土地紧张与电子废弃物问题。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpy7c7v402flslaxwaf0jfr1",
@@ -171,7 +227,9 @@
       "source": "X：Suno (@suno)",
       "publishedAt": "2026-06-03T14:44:00.000Z",
       "summary": "我们激动地宣布Suno的新篇章：4亿美元D轮融资，估值54亿美元！🚀\n我们的使命一直很简单：让更多人能体验制作音乐的乐趣。非常感谢我们不可思议的社区和投资者与我们共同建设。\n\n点击此处阅读Mikey的博客：https：//suno.com/blog/series-d-announcement",
-      "category": "industry"
+      "category": "industry",
+      "score": 68,
+      "selected": true
     },
     {
       "id": "cmpy54eze01szslaxdx3t6qv4",
@@ -181,7 +239,9 @@
       "source": "The Verge：订阅版科技（RSS）",
       "publishedAt": "2026-06-03T14:04:00.000Z",
       "summary": "微软与OpenAI的合作关系已彻底破裂，双方进入正面竞争态势。前DeepMind高管、现任微软AI主管Mustafa Suleyman明确表示，微软现在必须从头证明自己能独立完成所有必需的任务。这标志着两家科技巨头从紧密合作伙伴转变为直接竞争对手。",
-      "category": "industry"
+      "category": "industry",
+      "score": 82,
+      "selected": true
     },
     {
       "id": "cmpy1ckz600sgslaxrelv5loe",
@@ -191,7 +251,9 @@
       "source": "Bloomberg：Technology（RSS）",
       "publishedAt": "2026-06-03T12:12:15.000Z",
       "summary": "欧盟公布一项全面技术主权计划，旨在扩大本土半导体、人工智能和云计算供应链，以减少对美国和亚洲的依赖。该计划覆盖芯片制造、AI基础设施及云计算服务等多个关键领域，目标是增强欧洲在核心技术上的自主能力。",
-      "category": "industry"
+      "category": "industry",
+      "score": 76,
+      "selected": true
     },
     {
       "id": "cmpxwnz6900slsliwlo35fqk0",
@@ -201,7 +263,9 @@
       "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
       "publishedAt": "2026-06-03T10:05:06.000Z",
       "summary": "首届Qwen Cloud全球AI黑客马拉松现已启动！\n\n参与5大高级赛道，在全球舞台上挑战AI智能体极限。\n\n总奖金池超过70，000美元（赛道冠军1万美元）。\n\n立即在Devpost报名：https：//click.qwencloud.com/m/20000000281/",
-      "category": "industry"
+      "category": "industry",
+      "score": 65,
+      "selected": true
     },
     {
       "id": "cmpxlx0y5058eslckymzyv282",
@@ -211,7 +275,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-03T04:36:30.000Z",
       "summary": "DeepSeek 计划在首轮融资中从腾讯、宁德时代等投资方处筹集约 500 亿元人民币。融资落地后，其投后估值预计在 3500 亿至 4000 亿元。创始人梁文峰将出资 200 亿元，腾讯和宁德时代分别拟投资 100 亿元和 50 亿元，成为最大外部投资者。DeepSeek 去年凭借 V3 大模型与 R1 推理模型获得广泛认可。此次融资凸显了中国正打造从大模型到算力能源基建的全链条 AI 产业。",
-      "category": "industry"
+      "category": "industry",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpxjje1j04kwslckd0qcw0s7",
@@ -221,7 +287,9 @@
       "source": "X：Satya Nadella (@satyanadella)",
       "publishedAt": "2026-06-03T04:02:24.000Z",
       "summary": "与我们共同构建前沿智能生态系统。\n\n今早我在 Microsoft Build 上的主旨演讲亮点。",
-      "category": "industry"
+      "category": "industry",
+      "score": 77,
+      "selected": true
     },
     {
       "id": "cmpxhlosv042lslcki3p7lb9x",
@@ -231,7 +299,9 @@
       "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
       "publishedAt": "2026-06-03T03:00:56.000Z",
       "summary": "宏利香港宣布与阿里云建立战略合作伙伴关系，旨在构建一个专注于推进负责任的AI创新，并加速AI技术在业务中部署的合作框架。",
-      "category": "industry"
+      "category": "industry",
+      "score": 62,
+      "selected": true
     },
     {
       "id": "cmpxfhah803htslckwpwwf6sf",
@@ -241,7 +311,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-03T01:31:15.000Z",
       "summary": "据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2026 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpx6ffoc010yslckfofiel4y",
@@ -251,7 +323,9 @@
       "source": "X：Anthropic (@AnthropicAI)",
       "publishedAt": "2026-06-02T21:35:03.000Z",
       "summary": "这项行政令是加强美国AI领导地位的重要一步。\n\n我们期待与白宫合作，支持其实施。\n\nhttps：//www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
-      "category": "industry"
+      "category": "industry",
+      "score": 69,
+      "selected": true
     },
     {
       "id": "cmpx0v4c202l6sl793y51zks8",
@@ -261,7 +335,9 @@
       "source": "Bloomberg：Technology（RSS）",
       "publishedAt": "2026-06-02T18:39:17.000Z",
       "summary": "Alphabet宣布拟通过股权融资800亿美元，用于扩展AI基础设施。Anthropic已秘密提交IPO申请，在上市竞赛中领先于竞争对手OpenAI。此外，SpaceX正与华尔街机构协商其IPO的承销费用，HPE则因AI基础设施需求旺盛，年度销售预期超出市场估计。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpwqmim605awslsn13ybjfuw",
@@ -271,7 +347,9 @@
       "source": "X：Nathan Lambert (@natolambert)",
       "publishedAt": "2026-06-02T14:13:06.000Z",
       "summary": "Ai2（Allen Institute for AI）研究员Nathan Lambert宣布离职。他在Ai2工作超过2.5年，期间主导或参与了OLMO和Tulu等开源模型项目，称其为职业生涯的巅峰。他表示将暂时休息，未来仍会继续深耕开源模型与开放科学领域。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpwf05rk02d5slsnyqog4n3x",
@@ -281,7 +359,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-02T08:31:12.000Z",
       "summary": "SK海力士会长崔泰源宣布，计划在未来五年内将整体晶圆产能提高一倍，以应对AI普及带来的持续存储供应短缺。他预测AI数据中心和AI PC的普及将持续拉动存储需求，供需紧张局面可能延续至2030年。SK海力士将投入大规模资金用于设备、建设等扩张，尽管面临前置时间长（新建晶圆厂至少三年）和资源成本上涨等挑战。目前，SK海力士市值已首次突破1万亿美元。",
-      "category": "industry"
+      "category": "industry",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpwrifyw0017sl79bcjk20i4",
@@ -291,7 +371,9 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-06-02T07:00:00.000Z",
       "summary": "OpenAI呼吁通过设立专门的AI安全研究所，在全球范围内采取行动，以保障青少年在使用AI时的安全，并创造更多发展机遇。",
-      "category": "industry"
+      "category": "industry",
+      "score": 69,
+      "selected": true
     },
     {
       "id": "cmpvphtkh00j0slukzfwj1aez",
@@ -301,7 +383,9 @@
       "source": "Bloomberg：Technology（RSS）",
       "publishedAt": "2026-06-01T20:50:33.000Z",
       "summary": "Alphabet正在通过发行股票等方式筹集800亿美元资金，其中包括与Berkshire Hathaway的投资协议，以资助其雄心勃勃的AI支出计划。",
-      "category": "industry"
+      "category": "industry",
+      "score": 74,
+      "selected": true
     },
     {
       "id": "cmpvmvuc000r2slfpabxe89ry",
@@ -311,7 +395,9 @@
       "source": "The Verge：订阅版科技（RSS）",
       "publishedAt": "2026-06-01T19:20:47.000Z",
       "summary": "Meta的AI聊天机器人被发现存在安全漏洞，黑客可以通过请求该AI关联一个新的电子邮件地址，从而接管目标用户的Instagram账号。该漏洞利用了AI智能体直接执行账户管理操作的能力。",
-      "category": "industry"
+      "category": "industry",
+      "score": 70,
+      "selected": true
     },
     {
       "id": "cmpvl6hcy00b3slfp8iajt5kg",
@@ -321,7 +407,9 @@
       "source": "Ars Technica：AI（RSS）",
       "publishedAt": "2026-06-01T18:52:19.000Z",
       "summary": "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼。该州总检察长指控Altman对人命\"完全漠视\"，案件与多起涉及ChatGPT的谋杀事件相关。",
-      "category": "industry"
+      "category": "industry",
+      "score": 73,
+      "selected": true
     },
     {
       "id": "cmpvw4hpp027lslukhs91b8ux",
@@ -331,7 +419,9 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-06-01T17:00:00.000Z",
       "summary": "OpenAI阐述了其在AI政策与政治倡导方面的立场，包括对透明度、深思熟虑的监管以及AI安全的支持。同时，公司明确表示，任何外部政治组织均不能代表OpenAI发言。",
-      "category": "industry"
+      "category": "industry",
+      "score": 63,
+      "selected": true
     },
     {
       "id": "cmpvej11l065tsl0zrvg9kj3a",
@@ -341,7 +431,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-01T15:53:42.000Z",
       "summary": "Zhipu计划向中国监管机构申请发行A股并在科创板上市。发行股份数量占发行完成后总股本的2%至8%，预计全部为新股，原股东不发售。本次发行募集资金净额将投资于人工智能通用基座大模型、大模型MaaS一站式服务平台及补充流动资金。此外，公司拟将英文名称由\"Knowledge Atlas Technology Joint Stock Company Limited\"变更为\"Z.AI Co.， Ltd.\"。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpvcojae05ppsl0zvu5vzvcf",
@@ -351,7 +443,9 @@
       "source": "X：Luma AI (@LumaLabsAI)",
       "publishedAt": "2026-06-01T14:49:50.000Z",
       "summary": "为改善人类生活，AI系统必须能帮助我们改善物理世界。阻碍我们迈向这一繁荣未来的是物理AI的泛化问题。\n\n为解决此问题，我们在Luma建立了一个新的开放科学物理AI实验室。\n\n阅读更多 → https：//lumalabs.ai/news/luma-open-physical-ai-lab",
-      "category": "industry"
+      "category": "industry",
+      "score": 62,
+      "selected": true
     },
     {
       "id": "cmpv8241x04hdsl0zyngfkobk",
@@ -361,7 +455,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-01T12:34:05.000Z",
       "summary": "美团2026年第一季度财报显示营收910.39亿元，净利润亏损68.27亿元。财报电话会上，CEO王兴透露其AI Agent\"小美\"将与腾讯元宝深度合作。用户在腾讯元宝中提交本地服务需求，将被无缝连接至美团的外卖点餐、配送等生态。王兴强调，面向智能体的服务（To A）正变得日益重要，美团已将AI助手\"小团\"置于App核心位置，并拓展AI服务外延。",
-      "category": "industry"
+      "category": "industry",
+      "score": 73,
+      "selected": true
     },
     {
       "id": "cmpvlaey600deslfpl35rf3t5",
@@ -371,7 +467,9 @@
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
       "publishedAt": "2026-06-01T12:00:00.000Z",
       "summary": "OpenAI在密歇根州启动了名为Stargate的1GW数据中心项目。作为AI基础设施建设的一部分，该项目旨在扩大人工智能技术的可及性、为当地创造就业机会并支持社区发展。",
-      "category": "industry"
+      "category": "industry",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpv2byxq02zxsl0z1ea4vm86",
@@ -381,7 +479,9 @@
       "source": "Runway：News（网页）",
       "publishedAt": "2026-06-01T10:24:49.447Z",
       "summary": "Runway 宣布在伦敦建立新的欧洲总部和专注于通用世界模型的研究中心。公司计划在未来18个月向英国AI生态投资$100M，到2028年投资额将翻倍以上。过去12个月，其在欧洲的订阅销量增长了50%，企业客户占比超20%。新总部将扩大其在欧洲的研究与商业布局，公司正招聘欧洲负责人以组建跨研究、产品、工程和销售的团队，并深化与BBC、Fremantle、WPP等企业的合作。世界模型是其研究的核心，旨在将生成式AI的应用扩展至机器人、科学研究与工业模拟等领域。",
-      "category": "industry"
+      "category": "industry",
+      "score": 65,
+      "selected": true
     },
     {
       "id": "cmpurl8qd009dsl0zyghfa9kw",
@@ -391,7 +491,9 @@
       "source": "Runway：News（网页）",
       "publishedAt": "2026-06-01T05:24:22.746Z",
       "summary": "Runway宣布作为创始成员加入Cosmos Coalition，该联盟与NVIDIA及多家领先AI实验室合作，旨在构建并开源面向物理AI的前沿世界模型。首个项目将由Runway与NVIDIA共同开发一个基础模型，以推动下一代开放世界模型的研究与发展。",
-      "category": "industry"
+      "category": "industry",
+      "score": 64,
+      "selected": true
     },
     {
       "id": "cmpula55004pmslag0bkoy1lq",
@@ -401,7 +503,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-01T02:16:40.000Z",
       "summary": "上海市人民政府办公厅印发《上海市服务业发展\"十五五\"规划》，提出发展AI软件技术及服务产业集群。规划支持多模态智能体开发与应用，推动智能客服等工具规模化；有序推进智能驾驶在共享出行、物流运输等多场景应用；做强算运存协同布局的智算云网络，推广模型即服务（MaaS）；并支持开发面向家庭、养老、文旅等场景的具身智能整机产品，加速机器人向通用智能与精细化服务跃升。",
-      "category": "industry"
+      "category": "industry",
+      "score": 71,
+      "selected": true
     },
     {
       "id": "cmpuj4yr0045lslaglcf8y5b2",
@@ -411,7 +515,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-01T00:55:00.000Z",
       "summary": "全球首次\"人形机器人点球大战\"将于2026年6月在MWC上海举行。8支中国顶尖具身智能战队将进行自主对抗，无需人工操控或预设脚本。赛事旨在集中展示人形机器人在动态平衡、精准控制与自主决策等方面的技术突破。",
-      "category": "industry"
+      "category": "industry",
+      "score": 72,
+      "selected": true
     },
     {
       "id": "cmptzbrme00aasla8lu56k78h",
@@ -421,7 +527,9 @@
       "source": "X：Sam Altman (@sama)",
       "publishedAt": "2026-05-31T16:07:13.000Z",
       "summary": "OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。该项目由Aditya Ramesh领导，其世界模拟研究计划已演变为机器人研究，强调硬件与ML研究的协同设计。短期目标是支持技术工人构建未来基础设施，长期愿景是为每个人提供个人机器人。",
-      "category": "industry"
+      "category": "industry",
+      "score": 83,
+      "selected": true
     },
     {
       "id": "cmpvf63k406b0sl0zv0ef9647",
@@ -431,7 +539,9 @@
       "source": "Anthropic：Newsroom（网页）",
       "publishedAt": "2026-05-31T16:00:00.000Z",
       "summary": "Anthropic， PBC 今日保密向美国证券交易委员会提交了 S-1 表格草案，计划进行普通股的首次公开发行。这使其在 SEC 完成审核后拥有上市的选择权。IPO 的具体发行股数和价格尚未确定，将取决于市场条件等因素。公司近期刚完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，估值达 9650 亿美元，并发布了 Claude Opus 4.8 模型。",
-      "category": "industry"
+      "category": "industry",
+      "score": 86,
+      "selected": true
     },
     {
       "id": "cmptqxpc00056slpme4gyxf5n",
@@ -441,7 +551,9 @@
       "source": "X：Kim (@kimmonismus)",
       "publishedAt": "2026-05-31T12:12:02.000Z",
       "summary": "苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低token成本。但该技术栈大部分源自外部：本地模型由Gemini蒸馏，设备无法处理的复杂查询将路由至Google Cloud处理，并采用了Nvidia的机密计算技术。苹果据称正在寻觅小型设备端AI初创公司以加速模型缩减工作。此外，苹果2024年承诺的Private Cloud Compute方案原计划使用苹果芯片，因无法承载完整Gemini模型，现已部分转向谷歌云，但该名称仍将保留。",
-      "category": "industry"
+      "category": "industry",
+      "score": 75,
+      "selected": true
     },
     {
       "id": "cmpt5p76d07g3sluzcbxft4f4",
@@ -451,57 +563,9 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-05-31T01:30:46.000Z",
       "summary": "一辆特斯拉汽车搭载 FSD V14.3.3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。车辆从温哥华出发，历时 4 天 21 小时，行驶 3760 英里（6051 公里）抵达哈利法克斯，全程所有驾驶操作（包括高速并线、应对复杂路况与自动泊车）均由系统自主完成，无任何系统退出或人工修正。该版本随 2026.14.6.6 更新推送，整合了春季软件功能。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpsqnar803r5sluzkn3gfps1",
-      "title": "据报道：软银将在法国投资750亿欧元用于AI",
-      "title_en": "SoftBank to Invest Some €75 Billion in AI in France， Reports Say",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-05-30T18:55:33.000Z",
-      "summary": "软银集团计划投资高达750亿欧元（约合870亿美元），用于在法国建设人工智能数据中心。该投资计划由《论坛报》与《金融时报》报道。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpsl2i5v02fpsluzlu1d98zl",
-      "title": "\"开玩笑吧\"：GitHub Copilot 新的基于 token 的计费模式引发开发者不满",
-      "title_en": "'What a joke'： Github Copilot's new token-based billing spurs consternation among devs",
-      "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-05-30T16:30:00.000Z",
-      "summary": "微软旗下 GitHub Copilot 的黄金时代似乎正在终结。其新推出的计费模式改为按 token 计量，这一变化引发了开发者的广泛担忧与不满。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpsdkdec00j8sluzgrm37l7c",
-      "title": "AI 骗子正在创建虚假的黑人形象来销售 Shein 劣质商品",
-      "title_en": "AI grifters are creating fake Black people to sell Shein junk",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
-      "source": "The Verge：AI（RSS）",
-      "publishedAt": "2026-05-30T13:00:00.000Z",
-      "summary": "有卖家利用 AI 生成虚假的黑人形象，在 TikTok、Facebook 和 Instagram 上扮演手工制品创作者进行销售。例如一个名为 Aliyah 的 AI 生成形象，以带泪诉说的方式售卖所谓手工皮带扣，但该形象及其产品均为虚构。此类 AI 虚拟网红被用于推广通过代发货模式销售的批量生产品。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpscn1r60074sluz9xgi8sxm",
-      "title": "新加坡防务论坛：AI 风险超过核武器",
-      "title_en": "AI Dangers Eclipse Nuclear Weapons at Singapore Defense Forum",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-30/ai-dangers-eclipse-nuclear-weapons-at-singapore-defense-forum",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-05-30T11:59:32.000Z",
-      "summary": "在新加坡举行的防务论坛上，专家警告AI风险已超越核武器。面板讨论指出，AI可能大幅压缩反应时间，导致决策者做出草率决定，对战略稳定构成威胁。",
-      "category": "industry"
-    },
-    {
-      "id": "cmpruchr0049uslljygmtsttx",
-      "title": "xAI放弃JAX GPU转向自研训练框架",
-      "title_en": "BREAKING NEWS： JAX NVIDIA GPU & XLA： GPU's biggest customer just announced that they have dropped JA…",
-      "url": "https://x.com/SemiAnalysis_/status/2060571944575963482",
-      "source": "X：SemiAnalysis (@SemiAnalysis_)",
-      "publishedAt": "2026-05-30T04:00:09.000Z",
-      "summary": "突发新闻：JAX NVIDIA GPU & XLA：GPU最大客户刚刚宣布已放弃JAX GPU，宁愿用Grok Build\"氛围编程\"一个C训练框架。据报道xAI的JAX堆栈MFU低于10%。NVIDIA JAX团队过去两年全部主力996专注于支持xAI却失败了，我想他们现在可以休息并兑现期权了。",
-      "category": "industry"
+      "category": "industry",
+      "score": 72,
+      "selected": true
     }
   ]
 }
