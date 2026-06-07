@@ -1,8 +1,44 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwNDIwMTE5MDAwLCJpIjoiY21wd3d6eWg4MDFqN3NsNzljdDVzajBwYSJ9",
+  "nextCursor": "eyJhIjoxNzgwNDIzMjA5MDAwLCJpIjoiY21wd3kxOHo3MDF0OHNsNzk1dTk1bzQ1ZCJ9",
   "items": [
+    {
+      "id": "cmq3nuz12009bsla9rbw1qhyn",
+      "title": "Her · हेर - Claude Code 会话分析工具",
+      "title_en": "Her · हेर - a detective for your Claude Code sessions",
+      "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-07T10:13:41.000Z",
+      "summary": "Her（हेर）是专为 Claude Code 设计的会话分析工具。用户上传 `.jsonl` 文件后，Her 用自然语言重建每轮交互，标记部署、配置变更、秘密等高风险操作并定位到具体轮次。它展示 token 消耗、所用工具、子智能体、技能和 MCP 服务器，并结合 Anthropic 与社区最佳实践给出改进建议（仅在有明确可修复模式时）。内置\"Ask Her\"问答功能，支持单会话与跨会话项目分析。工具不调用第三方 AI API，使用 Nemotron-Mini-4B-Instruct 模型在 Hugging Face ZeroGPU 上运行，评估引擎完全确定，模型仅负责文本生成与建议。Her 内置 Homebrew、npm、PyPI 主流 CLI 工具数据库，自动识别会话中使用的工具，并对部署工具、数据库客户端等执行活动进行标记提醒。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmq3i394000ouslqlpcl2mnr6",
+      "title": "NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark 发布",
+      "title_en": "NVIDIA， KRAFTON， NC and Reigning 'League of Legends' Champions T1 Celebrate RTX Spark at Korea's PC Bangs",
+      "url": "https://blogs.nvidia.com/blog/krafton-nc-t1-korea-gaming-pc-bang-rtx-spark",
+      "source": "NVIDIA AI Blog",
+      "publishedAt": "2026-06-07T07:00:15.000Z",
+      "summary": "继上周 GTC Taipei 发布后，NVIDIA CEO Jensen Huang 前往韩国，向当地游戏社区正式介绍 RTX Spark 超芯片。该芯片集成 30 年 NVIDIA 技术，可在 Windows 笔记本上实现全天续航，并以 1440p 分辨率、超过 100fps 运行 AAA 游戏，支持包括 DLSS 4.5 Ray Reconstruction（基于第二代 Transformer 模型）在内的全套 RTX 技术。KRAFTON、NC 与 Riot Games 正合作将旗下游戏适配 RTX Spark。周五，Huang 在 T1 电竞场馆与 Faker 共同亮相，并突袭江南区网吧，演示《PUBG： BATTLEGROUNDS》及基于 NVIDIA ACE 的\"PUBG Ally\"AI 队友、《CINDER CITY》《AION 2》等作品。《CINDER CITY》首发支持 DLSS 4.5 动态多帧生成与超分辨率。已有超过 100 家 Windows 软件与游戏开发商采纳 RTX Spark。",
+      "category": "ai-products",
+      "score": 56,
+      "selected": true
+    },
+    {
+      "id": "cmq3e8n9k06evsl97fee4j5ki",
+      "title": "Opus 4.8 缓存命中率与有效价格可实时查看",
+      "title_en": "How do different model providers differ on cache hit rate and effective price？ Now you can see real…",
+      "url": "https://x.com/OpenRouter/status/2063504950429147376",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-06-07T06:14:52.000Z",
+      "summary": "不同模型提供商在缓存命中率和有效价格上有什么差异？\n\n现在你可以从 Pricing 标签查看实时缓存命中率和历史流量。这里是 Opus 4.8：https：//openrouter.ai/anthropic/claude-opus-4.8/pricing",
+      "category": "ai-products",
+      "score": 62,
+      "selected": true
+    },
     {
       "id": "cmq2e53d100lpsl783tyjx1iw",
       "title": "GitHub 开源 Spec Kit 工具包，用产品规范引导 AI 编码",
@@ -565,42 +601,6 @@
       "summary": "自进化Hermes智能体：随使用而改进的企业AI | Nemotron Labs",
       "category": "ai-products",
       "score": 62,
-      "selected": true
-    },
-    {
-      "id": "cmpwy5yga01v6sl7900pid5op",
-      "title": "OpenClaw 与微软合作进入企业生态",
-      "title_en": "\"You can run OpenClaw inside your company now.\" Annoucing our work with @Microsoft to bring OpenClaw…",
-      "url": "https://x.com/openclaw/status/2061869633624580452",
-      "source": "X：OpenClaw (@openclaw)",
-      "publishedAt": "2026-06-02T17:56:42.000Z",
-      "summary": "\"你现在可以在公司内部运行 OpenClaw 了。\" 宣布我们与 @Microsoft 的合作，将 OpenClaw 带入微软和 Windows 生态系统。Claws 现在可以在企业环境中安全运行。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmpwxvkik01qzsl79wf8zf34a",
-      "title": "GitHub Copilot应用：智能体原生的桌面体验",
-      "title_en": "GitHub Copilot app： The agent-native desktop experience",
-      "url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-06-02T17:30:03.000Z",
-      "summary": "在微软 Build 2026 大会上，GitHub 发布了新的工具和更新，并将 Copilot 应用定位为\"智能体原生的桌面体验\"。其核心目标是让 AI 智能体能够以用户已经习惯的方式进行工作。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpwwzyh801j7sl79ct5sj0pa",
-      "title": "Google DeepMind 发布 Gemini 多智能体科研系统",
-      "title_en": "We believe AI can be a dedicated research partner to help discover the next breakthrough. Enter Co-…",
-      "url": "https://x.com/GoogleDeepMind/status/2061857539977842793",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-06-02T17:08:39.000Z",
-      "summary": "我们相信 AI 可以成为专属研究伙伴，帮助发现下一个突破。\n\n隆重推出 Co-Scientist：我们最新的基于 Gemini 的多智能体系统，能够为复杂科学问题生成、辩论和演进新颖的假设 🧵",
-      "category": "ai-products",
-      "score": 61,
       "selected": true
     }
   ]

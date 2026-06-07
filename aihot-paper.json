@@ -1,5 +1,5 @@
 {
-  "count": 31,
+  "count": 28,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -337,42 +337,6 @@
       "summary": "OpenWebRL是一个用于在真实网站上通过在线多轮强化学习训练视觉网页智能体的开源框架，覆盖了完整的训练流程。基于该框架训练的OpenWebRL-4B模型，在仅使用0.4K条监督初始化轨迹和2.2K个开放式RL训练任务的情况下，在Online-Mind2Web基准上达到67.0%成功率，在DeepShop基准上达到64.0%，超越了同规模或更大规模的先前开源智能体，性能可与OpenAI CUA和Gemini CUA等闭源系统竞争。该工作为构建更强、可复现且高性价比的开源网页智能体提供了实践路径。",
       "category": "paper",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmpwqvwfq05ctslsnc93eaikd",
-      "title": "τ_0-WM：用于机器人操控的统一视频-动作世界模型",
-      "title_en": "τ_0-WM： A Unified Video-Action World Model for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2606.01027",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-31T00:00:00.000Z",
-      "summary": "τ_0-World Model （τ_0-WM） 是一个统一的视频-动作世界模型，旨在机器人执行动作前预测并评估其未来后果。模型基于共享的视频扩散主干网络构建，提供两个接口：一个联合预测未来视觉潜在表示与连续动作块的视频动作模型，以及一个能将动作序列展开为多视角未来并预测任务进度分数的动作条件视频模拟器。τ_0-WM 使用约27，300小时的多元数据训练，包括真实机器人遥操作、UMI风格交互、自我中心人类视频等。推理时，模型通过测试时计算采样动作候选，并利用去噪一致性和基于模拟器的修正来筛选低质量动作，在长时程和精细机器人操控任务上表现出优于相关基准的性能。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmpwbvnb101iwslsnq39efzz8",
-      "title": "ChartArena：跨语言、场景与格式的图表解析基准测试",
-      "title_en": "ChartArena： Benchmarking Chart Parsing across Languages， Scenarios， and Formats",
-      "url": "https://arxiv.org/abs/2606.01348",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-31T00:00:00.000Z",
-      "summary": "ChartArena 是一个旨在系统评估图表解析模型的双语基准测试。它覆盖了八种图表家族（包括数字图表与流程图等结构），并针对数字渲染、打印照片和手绘照片三种场景进行评估。数据集采用人机协作标注流程，并设计了格式无关的评估协议，将不同模型输出映射到标准化语义空间进行评分。对26个多模态大语言模型的评估显示，前沿闭源模型如Gemini 3.1 Pro领先，开源系统正快速追赶；文档解析模型在数字图表上表现尚可，但在图表结构上明显不足；专业解析器仍局限于特定图表类型。雷达图和手绘场景对所有模型都尤其具有挑战性。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmpw3ayof03zbsluk2voh8h1v",
-      "title": "定位何处：基础模型能否通过主动探索达到目标视角",
-      "title_en": "Where to Look： Can Foundation Models Reach a Target Viewpoint Through Active Exploration？",
-      "url": "https://arxiv.org/abs/2606.01247",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-05-31T00:00:00.000Z",
-      "summary": "研究提出目标视角复现任务（TVR）与模拟基准TVRBench，评估基础模型在3D环境中主动调整视角以匹配目标图像的能力。当前最优开源与闭源模型成功率仅7.8%和12.0%，瓶颈在于处理多轮视觉历史及需要平移而非旋转时的性能下降。通过构建统一的后训练框架，视觉动作SFT将9B开源模型成功率提升至50.8%，多轮GRPO进一步达到51.4%，为训练主动感知与行动的模型提供了基准。代码与模型已开源。",
-      "category": "paper",
-      "score": 70,
       "selected": true
     }
   ]
