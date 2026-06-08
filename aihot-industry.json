@@ -1,8 +1,80 @@
 {
-  "count": 47,
+  "count": 41,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq5qpm6l01h6sl5i3pzk6mto",
+      "title": "OpenAI 秘密提交 IPO 申请，加入 AI 对手上市融资竞赛",
+      "title_en": "OpenAI Filed Confidentially for IPO as Rivals Race to Market",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-08/openai-filed-confidentially-for-ipo-as-rivals-race-to-market",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-08T21:19:23.000Z",
+      "summary": "ChatGPT 开发商 OpenAI 已秘密提交首次公开募股（IPO）申请，加入人工智能竞争对手行列，通过公开市场为雄心勃勃的增长计划筹集资金。",
+      "category": "industry",
+      "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmq5js0wr009ksl38tvk1llo2",
+      "title": "苹果 WWDC 2026 直播",
+      "title_en": null,
+      "url": "https://www.apple.com/apple-events/event-stream",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-08T18:17:22.096Z",
+      "summary": "苹果 WWDC 2026 主题演讲通过官网进行直播，Hacker News 用户讨论热度达到 110 点。",
+      "category": "industry",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq5lakyn00nesl38edfw2m19",
+      "title": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线",
+      "title_en": "Due to DMA， Siri AI delayed in EU for iOS 27 and iPadOS 27",
+      "url": "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27",
+      "source": "Apple：Newsroom（RSS）",
+      "publishedAt": "2026-06-08T18:13:26.639Z",
+      "summary": "由于欧盟《数字市场法案》（DMA），Apple 无法在 iOS 27 和 iPadOS 27 发布时于欧盟地区推出 Siri AI。该功能在欧盟的上线时间将晚于其他地区，具体时间未公布。",
+      "category": "industry",
+      "score": 65,
+      "selected": true
+    },
+    {
+      "id": "cmq5pocki017bsl5ikjj1dzhk",
+      "title": "OpenAI 向 SEC 机密提交 S-1 草案，上市时间未定",
+      "title_en": "Confidential submission of draft S-1 to the SEC",
+      "url": "https://openai.com/index/openai-submits-confidential-s-1",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-08T14:00:00.000Z",
+      "summary": "OpenAI 近日向 SEC 机密提交了 S-1 草案（即首次公开募股注册声明），目前尚未决定上市时间。",
+      "category": "industry",
+      "score": 89,
+      "selected": true
+    },
+    {
+      "id": "cmq50iuao03eislt2og43waqb",
+      "title": "生数科技与华策影视达成战略合作，共建AI视听创制中心",
+      "title_en": "生数科技与华策集团达成战略合作，推动AI与影视产业融合落地",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDQ5NTQwMQ%3D%3D&mid=2247488842&idx=1&sn=3dab63189fa60b3b78c5ad72e3358791",
+      "source": "公众号：生数科技（Vidu·视频）",
+      "publishedAt": "2026-06-08T09:30:33.000Z",
+      "summary": "6月7日，生数科技与华策影视签署战略合作协议，共同推动AI与影视产业融合。双方将以华策影视科技产教示范区为载体、生数科技Vidu视频生成大模型为技术底座，设立\"AI视听创制中心\"，探索AI虚拟制作与实拍结合。同时在浙江华策影视学校设立\"华策&生数AI影视创制专业\"，课程覆盖传统编导剪与AI视频制作技术。内容生产层面推广\"实拍+AI\"融合方案并优先在华策项目中试点，创作者生态层面引导Vidu社区超级创作者到产教基地注册。",
+      "category": "industry",
+      "score": 65,
+      "selected": true
+    },
+    {
+      "id": "cmq4gflji00qtslotgoi786jr",
+      "title": "Nvidia 与 SK Hynix 签署多年协议，共同开发下一代 AI 存储芯片",
+      "title_en": "Nvidia， SK Hynix Sign Multi-Year Pact to Develop Next-Gen Chips",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-07/nvidia-sk-hynix-sign-multi-year-pact-to-develop-next-gen-chips",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-07T23:26:02.000Z",
+      "summary": "Nvidia 与 SK Hynix 达成合作，将共同设计面向 AI 应用的未来几代存储芯片。此举巩固了 SK Hynix 在高端半导体领域的领先地位。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
     {
       "id": "cmq44c1hy00d9slz5itsduqad",
       "title": "ChatGPT 要变 AgentGPT 了",
@@ -52,15 +124,27 @@
       "selected": true
     },
     {
+      "id": "cmq28dvet000pslopfql7jlc7",
+      "title": "海螺AI×上影节活动日历：开放日6.14-6.15",
+      "title_en": "海螺AI×上影节活动日历|请收下邀请函！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDUzMzEzNw%3D%3D&mid=2247487793&idx=1&sn=b5649b5c9c4204135b4914d89f71cb41",
+      "source": "公众号：MiniMax（稀宇科技）",
+      "publishedAt": "2026-06-06T09:52:47.000Z",
+      "summary": "MiniMax旗下海螺AI作为第28届上影节独家AI影像战略合作伙伴，6.14-6.15举办开放日。活动包括：AI片场·海螺专属Booth（展示1+1组合作品及过程）、6.14多模态行业交流会、6.15专题圆桌（超级创作者呈现四种图景、《流浪地球》制片人与青年导演对谈）。具体时间地点详见图片。",
+      "category": "industry",
+      "score": 56,
+      "selected": true
+    },
+    {
       "id": "cmq2o63pf01dosl6n6n4wr3tr",
       "title": "阶跃首席科学家张祥雨合著论文 ResNet 获 CVPR 2026 「时间检验奖」",
       "title_en": null,
       "url": "https://mp.weixin.qq.com/s/ZVgqdH_fE42jO4kcI-lF3g",
       "source": "公众号：阶跃星辰（Step）",
       "publishedAt": "2026-06-06T06:46:02.000Z",
-      "summary": null,
+      "summary": "CVPR 2026 将 Longuet-Higgins Prize「时间检验奖」授予 2015 年发表的《Deep Residual Learning for Image Recognition》（ResNet）。该论文由何恺明、张祥雨、任少卿、孙剑完成，提出的残差学习思想解决了深层神经网络训练难题，已成为现代深度学习基础结构。同获该奖的还有 YOLO v1。ResNet 全球引用量超 32 万次，是 21 世纪被引最多论文。阶跃算法团队正热招大模型技术人才。",
       "category": "industry",
-      "score": 57,
+      "score": 71,
       "selected": true
     },
     {
@@ -124,18 +208,6 @@
       "selected": true
     },
     {
-      "id": "cmq12gsy20buksltr2nwivyhu",
-      "title": "苹果新版 Siri 不会被宣传为完成品，内部将其标记为\"Beta\"版",
-      "title_en": "古尔曼称苹果新版 Siri 不会被宣传为完成品，内部将其标记为\"Beta 版\"",
-      "url": "https://www.ithome.com/0/960/739.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-05T14:21:03.000Z",
-      "summary": "苹果新版Siri被内部标记为\"Beta\"版，不会作为完成品宣传；可能设置等待清单供用户尝试。iOS 27细节：通知到达重新设计，通知中心手势移至左上角；\"查找\"应用视觉重设计；照片\"清理\"功能改进；大量底层安全改进。部分Siri查询将通过Google Cloud调用授权版Gemini，并使用谷歌的NVIDIA Blackwell B200集群处理。",
-      "category": "industry",
-      "score": 73,
-      "selected": true
-    },
-    {
       "id": "cmq10bltr0b9ksltrs7mappfh",
       "title": "Meta 智能眼镜 App 暗藏人脸识别代码，NameTag 功能已推送至超 5000 万设备",
       "title_en": "Meta 智能眼镜 App 被曝暗藏 AI 人脸识别功能相关代码：影响超 5000 万设备，公司回应称仅为探索而已",
@@ -149,26 +221,14 @@
     },
     {
       "id": "cmq2l9lfs009zsl6n45wlgkj8",
-      "title": "FluxA与百度智能云合作：DAA时代，AI开始自己赚钱",
+      "title": "FluxA与百度智能云战略合作，为Agent经济搭建基础设施",
       "title_en": "FluxA🤝百度智能云：DAA时代，终于轮到AI自己赚钱了",
       "url": "https://mp.weixin.qq.com/s/_Gxb4JWjVidXVfeCRjghzg",
       "source": "公众号：百度智能云（文心）",
       "publishedAt": "2026-06-05T10:52:01.000Z",
-      "summary": "FluxA与百度智能云达成合作，标志着DAA时代到来--AI开始实现自身盈利，不再依赖外部投入。",
+      "summary": "百度智能云与FluxA建立战略合作，共同为Agent经济搭建基础设施。百度智能云提供可交易商品体系、自雇佣交易机制、能力工具箱及出海分销通道；FluxA作为支付底座，提供低费率高频微交易、Financial Harness安全授权、全球收款与Token Paywall。目前超9万个Agent使用FluxA钱包，超1万个AI Agent资源完成商业化。今年一季度中国两地区OPC新增超6000户，日均Token消耗140万亿。DAA被视为AI时代衡量生态价值的核心指标。",
       "category": "industry",
-      "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmq0irius06k5sltr35ji4gbi",
-      "title": "NVIDIA CEO 黄仁勋访问首尔：与韩国共建 AI 未来",
-      "title_en": "Seoul Purpose： How NVIDIA and South Korea Are Building the Future of AI",
-      "url": "https://blogs.nvidia.com/blog/korea-ecosystem-2026",
-      "source": "NVIDIA AI Blog",
-      "publishedAt": "2026-06-05T05:38:37.000Z",
-      "summary": "NVIDIA 创始人兼 CEO 黄仁勋本周到访首尔，会见韩国的 AI 建造者、主权基础设施合作伙伴及游戏社区。黄仁勋表示，为应对下半年繁忙的 AI 基础设施建设，需对齐 AI 供应链。他指出 Grace Blackwell 系统表现良好，Vera Rubin 已全面投产。他还强调机器人技术将成为韩国的下一个重要产业，并呼吁韩国投资 AI。",
-      "category": "industry",
-      "score": 63,
+      "score": 57,
       "selected": true
     },
     {
@@ -193,18 +253,6 @@
       "summary": "Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比\"核武器不扩散条约\"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。",
       "category": "industry",
       "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmq00q1w401tvsltr2b8zysje",
-      "title": "Nemotron Parakeet ASR 印尼语准确率达 97.7%",
-      "title_en": "When laws and oversight depend on transcripts， 70-80% isn't enough. http：//Rafiqspace.ai hit 97.7% …",
-      "url": "https://x.com/nvidia/status/2062647600424128773",
-      "source": "X：NVIDIA (@nvidia)",
-      "publishedAt": "2026-06-04T21:28:04.000Z",
-      "summary": "当法律和监督依赖于转录内容时，70-80% 是不够的。\n\nhttp：//Rafiqspace.ai 通过微调 Nemotron Parakeet ASR 达到了 97.7% 的印尼语准确率（2.3% WER）-- 优于全球工具，同时每小时成本降低高达 90%。⚖️",
-      "category": "industry",
-      "score": 60,
       "selected": true
     },
     {
@@ -400,6 +448,30 @@
       "selected": true
     },
     {
+      "id": "cmq2o5zfw018nsl6n9xplfvt0",
+      "title": "截稿在即|可灵AI NEXTGEN高校AIGC创作大赛评委阵容揭晓",
+      "title_en": "截稿在即|评委阵容揭晓，共赴创意之约",
+      "url": "https://mp.weixin.qq.com/s/hk99tlRYeQjTJ6oiVftxqg",
+      "source": "公众号：可灵AI（快手·视频）",
+      "publishedAt": "2026-06-02T12:14:40.000Z",
+      "summary": "可灵AI NEXTGEN高校AIGC创作大赛评审委员会正式官宣，评委包括清华大学双聘教授沈阳、浙江传媒学院教授陈奕、中国美术学院教授杜海滨、中国传媒大学主任丛芳君，以及可灵AI超级创作者汗青、陈升亮。作品征集时间为3月16日至6月7日，获奖名单将于6月18日公示。目前征稿进入最后5天冲刺阶段，优秀获奖作品有机会在首尔电影中心及釜山国际电影节期间展映。",
+      "category": "industry",
+      "score": 55,
+      "selected": true
+    },
+    {
+      "id": "cmq2l9lfs00a6sl6nhu2ne349",
+      "title": "北京人形机器人创新中心联合百度智能云发起具身智能黑客松大赛",
+      "title_en": "北京人形🤝百度智能云：百万奖金，真机悬赏！具身智能黑客松大赛等你来战",
+      "url": "https://mp.weixin.qq.com/s/CBGF3yJ1010_EJnS1Lav0g",
+      "source": "公众号：百度智能云（文心）",
+      "publishedAt": "2026-06-02T10:00:00.000Z",
+      "summary": "北京人形机器人创新中心与百度智能云发起具身智能黑客松大赛，设运动控制与VLA模型微调双赛道，面向全球征集真机可部署方案。提供百万奖金、天工3.0本体及世界人形机器人运动会直通名额。天工Ultra曾夺半马冠军（2：40：42）及百米冠军（21.50秒）。",
+      "category": "industry",
+      "score": 58,
+      "selected": true
+    },
+    {
       "id": "cmpwf05rk02d5slsnyqog4n3x",
       "title": "SK会长崔泰源：SK海力士计划未来五年内晶圆产能翻倍",
       "title_en": "SK 会长崔泰源：计划未来五年内，SK 海力士晶圆产能实现翻倍",
@@ -421,150 +493,6 @@
       "summary": "OpenAI呼吁通过设立专门的AI安全研究所，在全球范围内采取行动，以保障青少年在使用AI时的安全，并创造更多发展机遇。",
       "category": "industry",
       "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmpvphtkh00j0slukzfwj1aez",
-      "title": "Alphabet将通过发行股票筹集800亿美元用于AI支出计划",
-      "title_en": "Alphabet to Raise $80 Billion in Equity Capital for AI Spending",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/alphabet-to-raise-80-billion-in-equity-capital-for-ai-spending",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-01T20:50:33.000Z",
-      "summary": "Alphabet正在通过发行股票等方式筹集800亿美元资金，其中包括与Berkshire Hathaway的投资协议，以资助其雄心勃勃的AI支出计划。",
-      "category": "industry",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmpvmvuc000r2slfpabxe89ry",
-      "title": "Meta的AI被利用来劫持Instagram账号",
-      "title_en": "Meta's own AI was exploited to hijack Instagram accounts",
-      "url": "https://www.theverge.com/tech/941179/meta-instagram-ai-support-chatbot-exploit-hacked",
-      "source": "The Verge：订阅版科技（RSS）",
-      "publishedAt": "2026-06-01T19:20:47.000Z",
-      "summary": "Meta的AI聊天机器人被发现存在安全漏洞，黑客可以通过请求该AI关联一个新的电子邮件地址，从而接管目标用户的Instagram账号。该漏洞利用了AI智能体直接执行账户管理操作的能力。",
-      "category": "industry",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmpvl6hcy00b3slfp8iajt5kg",
-      "title": "佛罗里达州起诉OpenAI与Sam Altman：涉多起ChatGPT相关谋杀案",
-      "title_en": "Florida sues OpenAI， Sam Altman after multiple ChatGPT-linked murders",
-      "url": "https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-01T18:52:19.000Z",
-      "summary": "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼。该州总检察长指控Altman对人命\"完全漠视\"，案件与多起涉及ChatGPT的谋杀事件相关。",
-      "category": "industry",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmpvw4hpp027lslukhs91b8ux",
-      "title": "OpenAI的AI政策与政治倡导观点",
-      "title_en": "Our views on AI policy and political advocacy",
-      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "summary": "OpenAI阐述了其在AI政策与政治倡导方面的立场，包括对透明度、深思熟虑的监管以及AI安全的支持。同时，公司明确表示，任何外部政治组织均不能代表OpenAI发言。",
-      "category": "industry",
-      "score": 63,
-      "selected": true
-    },
-    {
-      "id": "cmpvej11l065tsl0zrvg9kj3a",
-      "title": "Zhipu：建议 A 股发行并在科创板上市",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/958/444.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-01T15:53:42.000Z",
-      "summary": "Zhipu计划向中国监管机构申请发行A股并在科创板上市。发行股份数量占发行完成后总股本的2%至8%，预计全部为新股，原股东不发售。本次发行募集资金净额将投资于人工智能通用基座大模型、大模型MaaS一站式服务平台及补充流动资金。此外，公司拟将英文名称由\"Knowledge Atlas Technology Joint Stock Company Limited\"变更为\"Z.AI Co.， Ltd.\"。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmpvcojae05ppsl0zvu5vzvcf",
-      "title": "Luma成立开放物理AI实验室攻克泛化难题",
-      "title_en": "To improve human life， AI systems must be able to help us improve the physical world. What stands be…",
-      "url": "https://x.com/LumaLabsAI/status/2061460217616027961",
-      "source": "X：Luma AI (@LumaLabsAI)",
-      "publishedAt": "2026-06-01T14:49:50.000Z",
-      "summary": "为改善人类生活，AI系统必须能帮助我们改善物理世界。阻碍我们迈向这一繁荣未来的是物理AI的泛化问题。\n\n为解决此问题，我们在Luma建立了一个新的开放科学物理AI实验室。\n\n阅读更多 → https：//lumalabs.ai/news/luma-open-physical-ai-lab",
-      "category": "industry",
-      "score": 62,
-      "selected": true
-    },
-    {
-      "id": "cmpv8241x04hdsl0zyngfkobk",
-      "title": "王兴：美团 AI Agent\"小美\"与腾讯元宝即将深度合作，用户订单无缝连接",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/958/410.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-01T12:34:05.000Z",
-      "summary": "美团2026年第一季度财报显示营收910.39亿元，净利润亏损68.27亿元。财报电话会上，CEO王兴透露其AI Agent\"小美\"将与腾讯元宝深度合作。用户在腾讯元宝中提交本地服务需求，将被无缝连接至美团的外卖点餐、配送等生态。王兴强调，面向智能体的服务（To A）正变得日益重要，美团已将AI助手\"小团\"置于App核心位置，并拓展AI服务外延。",
-      "category": "industry",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmpvlaey600deslfpl35rf3t5",
-      "title": "OpenAI在密歇根州启动Stargate 1GW数据中心建设",
-      "title_en": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "summary": "OpenAI在密歇根州启动了名为Stargate的1GW数据中心项目。作为AI基础设施建设的一部分，该项目旨在扩大人工智能技术的可及性、为当地创造就业机会并支持社区发展。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpv2byxq02zxsl0z1ea4vm86",
-      "title": "Runway 在伦敦设立欧洲总部及世界模型研究中心",
-      "title_en": "Runway Opens London HQ， Bringing World Model Research Hub to the UK and Europe",
-      "url": "https://runwayml.com/news/runway-opens-london-hq",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-06-01T10:24:49.447Z",
-      "summary": "Runway 宣布在伦敦建立新的欧洲总部和专注于通用世界模型的研究中心。公司计划在未来18个月向英国AI生态投资$100M，到2028年投资额将翻倍以上。过去12个月，其在欧洲的订阅销量增长了50%，企业客户占比超20%。新总部将扩大其在欧洲的研究与商业布局，公司正招聘欧洲负责人以组建跨研究、产品、工程和销售的团队，并深化与BBC、Fremantle、WPP等企业的合作。世界模型是其研究的核心，旨在将生成式AI的应用扩展至机器人、科学研究与工业模拟等领域。",
-      "category": "industry",
-      "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmpurl8qd009dsl0zyghfa9kw",
-      "title": "介绍Cosmos Coalition",
-      "title_en": "Introducing the Cosmos Coalition",
-      "url": "https://runwayml.com/news/introducing-cosmos-coalition",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-06-01T05:24:22.746Z",
-      "summary": "Runway宣布作为创始成员加入Cosmos Coalition，该联盟与NVIDIA及多家领先AI实验室合作，旨在构建并开源面向物理AI的前沿世界模型。首个项目将由Runway与NVIDIA共同开发一个基础模型，以推动下一代开放世界模型的研究与发展。",
-      "category": "industry",
-      "score": 64,
-      "selected": true
-    },
-    {
-      "id": "cmpula55004pmslag0bkoy1lq",
-      "title": "上海：支持多模态智能体开发与应用，有序推进智能驾驶在共享出行、物流运输等多场景应用",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/957/985.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-01T02:16:40.000Z",
-      "summary": "上海市人民政府办公厅印发《上海市服务业发展\"十五五\"规划》，提出发展AI软件技术及服务产业集群。规划支持多模态智能体开发与应用，推动智能客服等工具规模化；有序推进智能驾驶在共享出行、物流运输等多场景应用；做强算运存协同布局的智算云网络，推广模型即服务（MaaS）；并支持开发面向家庭、养老、文旅等场景的具身智能整机产品，加速机器人向通用智能与精细化服务跃升。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpuj4yr0045lslaglcf8y5b2",
-      "title": "全球首次：MWC26 上海将举办\"人形机器人点球大战\"，宇树科技等 8 支队伍参赛、参演",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/957/938.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-01T00:55:00.000Z",
-      "summary": "全球首次\"人形机器人点球大战\"将于2026年6月在MWC上海举行。8支中国顶尖具身智能战队将进行自主对抗，无需人工操控或预设脚本。赛事旨在集中展示人形机器人在动态平衡、精准控制与自主决策等方面的技术突破。",
-      "category": "industry",
-      "score": 72,
       "selected": true
     }
   ]

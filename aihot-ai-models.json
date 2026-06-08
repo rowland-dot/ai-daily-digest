@@ -1,8 +1,56 @@
 {
-  "count": 16,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq5bjjga06d1slt2lstyzq8i",
+      "title": "小米 MiMo-V2.5-Pro-UltraSpeed 突破 1，000 tokens/s，单台 8-GPGPU 节点运行 1T MoE 模型",
+      "title_en": "🚀 1，000+ TOKENS/S ON A 1T MODEL！ 🚀 We are thrilled to release Xiaomi MiMo-V2.5-Pro-UltraSpeed in …",
+      "url": "https://x.com/XiaomiMiMo/status/2063993790587904362",
+      "source": "X：小米 MiMo (@XiaomiMiMo)",
+      "publishedAt": "2026-06-08T14:37:21.000Z",
+      "summary": "小米 MiMo 联合 TileRT_AI 发布 MiMo-V2.5-Pro-UltraSpeed，首次在 1 万亿参数 MoE 模型上实现超过 1，000 tokens/s 输出速度，仅用单台标准 8-GPGPU 节点（非 Cerebras 或 Groq 方案）。提供限时免费聊天体验，UltraSpeed API 价格为 3 倍，输出体验提升约 10 倍。申请时间为 6 月 8 日至 23 日（PDT），企业可邮件联系 business-mimo@xiaomi.com。",
+      "category": "ai-models",
+      "score": 82,
+      "selected": true
+    },
+    {
+      "id": "cmq5bpym306fbslt2cnfcangy",
+      "title": "VoxCPM2 技术报告发布",
+      "title_en": "🚀 VoxCPM2 Technical Report is now available on arXiv！ VoxCPM2 is the latest speech generation mode…",
+      "url": "https://x.com/OpenBMB/status/2063991963133903317",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-06-08T14:30:05.000Z",
+      "summary": "面壁智能 OpenBMB 发布 VoxCPM2 技术报告。该模型为最新语音生成模型，拥有 2B 参数，基于超 200 万小时多语言语音数据训练，支持 30 种语言和 9 种中文方言。具备自然语言语音设计、可控及高保真延续性语音克隆能力。技术报告涵盖架构设计、统一序列公式、AudioVAE 高保真语音重建、大规模训练评估，以及零样本和指令跟随 TTS 基准结果。采用 16kHz 语义编码 + 48kHz 波形重建，在公开 TTS 基准上达到 SOTA 或极具竞争力。模型权重、微调代码和推理工具以 Apache 2.0 开源。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq4tna5301m5slt2fr7nmpp7",
+      "title": "全球首个：高德发布3D原生城市世界模型ABot-Earth0.5",
+      "title_en": "全球首个：高德发布 3D 原生城市世界模型 ABot-Earth0.5，单图 10 分钟重建 3D 城市",
+      "url": "https://www.ithome.com/0/961/378.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-08T05:53:46.000Z",
+      "summary": "阿里巴巴旗下高德发布全球首个3D原生城市世界模型ABot-Earth0.5，已建成覆盖190多个国家和地区的3D地图。用户输入卫星图或文字描述，10分钟即可在消费级GPU上生成公里级3D城市，输出可编辑3DGS格式，可直接导入Unity等引擎。制图成本为传统百分之一，效率提升约千倍，可为具身智能、低空经济、应急救援等提供支撑。目前已开放内测，可前往abot-earth.amap.com提交申请。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq5pmqqc0166sl5icnriem6v",
+      "title": "苹果发布第三代 Apple Foundation Models（AFM）",
+      "title_en": "Introducing the Third Generation of Apple's Foundation Models",
+      "url": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models",
+      "source": "Apple Machine Learning Research（RSS）",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "苹果推出第三代 Apple Foundation Models（AFM）基础模型家族，与 Google 合作定制，包含五个模型，覆盖从设备端到基于 Private Cloud Compute 的服务器端模型。这些模型旨在驱动 Apple Intelligence 功能，包括全新 Siri 和智能工具，以用户为中心深度融合操作系统，隐私为核心设计原则。",
+      "category": "ai-models",
+      "score": 79,
+      "selected": true
+    },
     {
       "id": "cmq3eppdj06j7sl97koo7u9xf",
       "title": "Harness-1：基于强化学习训练的有状态搜索20B检索子智能体",
@@ -64,18 +112,6 @@
       "selected": true
     },
     {
-      "id": "cmpzigjmt03udslkp0elkhz7c",
-      "title": "NVIDIA Nemotron 3 Ultra 为长时间运行的智能体带来更快、更高效的推理能力",
-      "title_en": "NVIDIA Nemotron 3 Ultra Powers Faster， More Efficient Reasoning for Long-Running Agents",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-06-04T13:02:49.000Z",
-      "summary": "NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true
-    },
-    {
       "id": "cmpyd2ph203z9slaxfwx9nd13",
       "title": "Ideogram v4.0 发布：2K 分辨率和 JSON 提示支持",
       "title_en": "introducing Ideogram v4.0. 2k native resolution， excellent text rendering， and support for JSON pr…",
@@ -133,66 +169,6 @@
       "summary": "Holo3.1 是基于 Qwen 模型家族的计算机使用智能体系列，旨在提升在桌面、网页和移动环境中的鲁棒性。新模型提供 0.8B、4B、9B 和 35B-A3B 四种尺寸，并首次发布量化检查点，包括 FP8、Q4 GGUF 和 NVFP4，以优化本地推理。在 AndroidWorld 基准测试中，35B-A3B 模型得分从 67% 提升至 79.3%。在 DGX Spark 上，NVFP4 量化相比 BF16 实现 1.74 倍 token 吞吐量提升，并将平均步骤时间从 6.8 秒缩短至 3.3 秒。模型支持函数调用协议，可在第三方智能体框架中部署。",
       "category": "ai-models",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq2o71l001ipsl6ncxpguq7v",
-      "title": "Qwen3.7-Plus：把多模态AI变成\"实干家\"",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/vk-rc_NQwK951HY9KiX6eg",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-06-01T17:59:25.000Z",
-      "summary": null,
-      "category": "ai-models",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmpvfn56c06fxsl0zknga1ztr",
-      "title": "JetBrains 发布 Mellum2：12B 参数混合专家模型",
-      "title_en": "Introducing Mellum2： A 12B Mixture-of-Experts Model by JetBrains",
-      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-01T15:45:17.000Z",
-      "summary": "Mellum2 是 JetBrains 从头训练的 12B 参数混合专家（MoE）模型，专注于自然语言与代码。每个 token 仅激活 2.5B 参数，推理速度可达同类模型的 2 倍以上，适合高吞吐、低延迟场景。该模型支持路由、RAG、摘要、子智能体及私有部署，以 Apache 2.0 许可证开源。在代码生成、推理、科学和数学基准测试中，Mellum2 与同等规模的开放模型竞争力相当。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpuqq2mt0025sl0z5qnshwpd",
-      "title": "使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型",
-      "title_en": "Develop Physical AI Reasoning， World， and Action Models with NVIDIA Cosmos 3",
-      "url": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3",
-      "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
-      "publishedAt": "2026-06-01T04:43:58.000Z",
-      "summary": "NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpunu0g50002slbrlfonpoc3",
-      "title": "MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型",
-      "title_en": "MiniMax M3： Frontier Coding， 1M Context， Native Multimodality - All in One Model",
-      "url": "https://www.minimax.io/blog/minimax-m3",
-      "source": "MiniMax：Blog（网页）",
-      "publishedAt": "2026-06-01T03:39:41.634Z",
-      "summary": "MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。",
-      "category": "ai-models",
-      "score": 83,
-      "selected": true
-    },
-    {
-      "id": "cmpvj4oqx009islykdg19umm6",
-      "title": "xAI发布Composer 2.5",
-      "title_en": "Composer 2.5 Latest post Jun 1， 2026 # Composer 2.5 Composer 2.5 is now available in Grok Build. Try it from the /models menu. 【Read More】（http：//x.ai/news/composer-2-5）",
-      "url": "https://x.ai/news/composer-2-5",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "summary": "xAI的最新编程模型Composer 2.5现已在Grok Build中可用，用户可通过`/models`菜单选择使用。这是一款快速、先进的模型，擅长处理长时间运行的任务和复杂指令。该模型面向SuperGrok和X Premium+用户开放。",
-      "category": "ai-models",
-      "score": 78,
       "selected": true
     }
   ]

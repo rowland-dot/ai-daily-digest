@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-07T21:45:15.553Z",
+  "fetched_at": "2026-06-08T22:11:07.440Z",
   "repos": [
     {
       "owner": "mvanhorn",
@@ -8,97 +8,9 @@
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 30639,
-      "forks": 2569,
-      "starsToday": 1097
-    },
-    {
-      "owner": "opencv",
-      "name": "opencv",
-      "url": "https://github.com/opencv/opencv",
-      "description": "Open Source Computer Vision Library",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 88040,
-      "forks": 56596,
-      "starsToday": 89
-    },
-    {
-      "owner": "Leonxlnx",
-      "name": "taste-skill",
-      "url": "https://github.com/Leonxlnx/taste-skill",
-      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 36460,
-      "forks": 2638,
-      "starsToday": 1104
-    },
-    {
-      "owner": "NousResearch",
-      "name": "hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "description": "The agent that grows with you",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 185818,
-      "forks": 31958,
-      "starsToday": 1117
-    },
-    {
-      "owner": "lfnovo",
-      "name": "open-notebook",
-      "url": "https://github.com/lfnovo/open-notebook",
-      "description": "An Open Source implementation of Notebook LM with more flexibility and features",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 27158,
-      "forks": 3088,
-      "starsToday": 555
-    },
-    {
-      "owner": "yikart",
-      "name": "AiToEarn",
-      "url": "https://github.com/yikart/AiToEarn",
-      "description": "Let's use AI to Earn!",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 18706,
-      "forks": 2902,
-      "starsToday": 180
-    },
-    {
-      "owner": "aaif-goose",
-      "name": "goose",
-      "url": "https://github.com/aaif-goose/goose",
-      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 47423,
-      "forks": 5003,
-      "starsToday": 338
-    },
-    {
-      "owner": "Crosstalk-Solutions",
-      "name": "project-nomad",
-      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-      "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 29659,
-      "forks": 2938,
-      "starsToday": 304
-    },
-    {
-      "owner": "ggml-org",
-      "name": "llama.cpp",
-      "url": "https://github.com/ggml-org/llama.cpp",
-      "description": "LLM inference in C/C++",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 115283,
-      "forks": 19294,
-      "starsToday": 197
+      "stars": 34329,
+      "forks": 2812,
+      "starsToday": 3558
     },
     {
       "owner": "RyanCodrai",
@@ -107,31 +19,20 @@
       "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 7009,
-      "forks": 689,
-      "starsToday": 1533
+      "stars": 8721,
+      "forks": 807,
+      "starsToday": 1730
     },
     {
-      "owner": "TapXWorld",
-      "name": "ChinaTextbook",
-      "url": "https://github.com/TapXWorld/ChinaTextbook",
-      "description": "所有小初高、大学PDF教材。",
-      "language": "Roff",
-      "languageColor": "#ecdebe",
-      "stars": 72411,
-      "forks": 16235,
-      "starsToday": 355
-    },
-    {
-      "owner": "openai",
-      "name": "plugins",
-      "url": "https://github.com/openai/plugins",
-      "description": "OpenAI Plugins",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 1997,
-      "forks": 270,
-      "starsToday": 262
+      "owner": "google",
+      "name": "skills",
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 12338,
+      "forks": 965,
+      "starsToday": 481
     },
     {
       "owner": "refactoringhq",
@@ -140,31 +41,141 @@
       "description": "Desktop app to manage markdown knowledge bases",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 12810,
-      "forks": 906,
-      "starsToday": 242
+      "stars": 13523,
+      "forks": 950,
+      "starsToday": 649
     },
     {
-      "owner": "HunxByts",
-      "name": "GhostTrack",
-      "url": "https://github.com/HunxByts/GhostTrack",
-      "description": "Useful tool to track location or mobile number",
+      "owner": "Panniantong",
+      "name": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 13700,
-      "forks": 1832,
-      "starsToday": 21
+      "stars": 24017,
+      "forks": 2026,
+      "starsToday": 796
     },
     {
-      "owner": "microsoft",
-      "name": "pg_durable",
-      "url": "https://github.com/microsoft/pg_durable",
-      "description": "PostgreSQL in-database durable execution",
+      "owner": "danielmiessler",
+      "name": "Personal_AI_Infrastructure",
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "description": "Agentic AI Infrastructure for magnifying HUMAN capabilities.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 15393,
+      "forks": 2158,
+      "starsToday": 121
+    },
+    {
+      "owner": "santifer",
+      "name": "career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 50438,
+      "forks": 10329,
+      "starsToday": 477
+    },
+    {
+      "owner": "phuryn",
+      "name": "pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "language": "",
+      "languageColor": "",
+      "stars": 12602,
+      "forks": 1494,
+      "starsToday": 112
+    },
+    {
+      "owner": "openai",
+      "name": "plugins",
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 2299,
+      "forks": 289,
+      "starsToday": 296
+    },
+    {
+      "owner": "Andyyyy64",
+      "name": "whichllm",
+      "url": "https://github.com/Andyyyy64/whichllm",
+      "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 3406,
+      "forks": 200,
+      "starsToday": 103
+    },
+    {
+      "owner": "MemPalace",
+      "name": "mempalace",
+      "url": "https://github.com/MemPalace/mempalace",
+      "description": "The best-benchmarked open-source AI memory system. And it's free.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 54887,
+      "forks": 7158,
+      "starsToday": 237
+    },
+    {
+      "owner": "roboflow",
+      "name": "supervision",
+      "url": "https://github.com/roboflow/supervision",
+      "description": "We write your reusable computer vision tools. 💜",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 42304,
+      "forks": 3781,
+      "starsToday": 1140
+    },
+    {
+      "owner": "CopilotKit",
+      "name": "CopilotKit",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "description": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 34094,
+      "forks": 4303,
+      "starsToday": 398
+    },
+    {
+      "owner": "TapXWorld",
+      "name": "ChinaTextbook",
+      "url": "https://github.com/TapXWorld/ChinaTextbook",
+      "description": "所有小初高、大学PDF教材。",
+      "language": "Roff",
+      "languageColor": "#ecdebe",
+      "stars": 72953,
+      "forks": 16330,
+      "starsToday": 593
+    },
+    {
+      "owner": "luongnv89",
+      "name": "claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 35722,
+      "forks": 4342,
+      "starsToday": 393
+    },
+    {
+      "owner": "aaif-goose",
+      "name": "goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 1427,
-      "forks": 31,
-      "starsToday": 314
+      "stars": 48062,
+      "forks": 5062,
+      "starsToday": 699
     }
   ]
 }

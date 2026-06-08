@@ -1,18 +1,42 @@
 {
-  "count": 28,
+  "count": 26,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmq1jj4u00gejsltrelu93dbg",
-      "title": "PixelDiT入选CVPR2026最佳论文决赛",
-      "title_en": "Selected as a best paper finalist at #CVPR2026： PixelDiT from NVIDIA Research In most image generat…",
-      "url": "https://x.com/NVIDIAAI/status/2063034422698389625",
-      "source": "X：NVIDIA AI (@NVIDIAAI)",
-      "publishedAt": "2026-06-05T23:05:10.000Z",
-      "summary": "被选为 #CVPR2026 最佳论文决赛作品：来自 NVIDIA Research 的 PixelDiT\n\n在大多数图像生成模型中，预训练的自编码器会在任何扩散发生前压缩图像，导致质量损失在整个流程中累积。\n\nPixelDiT，即像素扩散变换器，完全去掉了这一步骤。它是一个单阶段模型，直接在像素空间中端到端地学习扩散过程。",
+      "id": "cmq5i5o4g0861slt2rprafeu2",
+      "title": "为生物学AI智能体铺路",
+      "title_en": "Paving the way for agents in biology",
+      "url": "https://www.anthropic.com/research/agents-in-biology",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-08T17:46:10.323Z",
+      "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
       "category": "paper",
-      "score": 68,
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmq5gf74e07p1slt2ae83siz1",
+      "title": "Perplexity与哈佛：AI智能体提效87%降本94%",
+      "title_en": "We published new research with Harvard on the shift from chat interfaces to autonomous agents like C…",
+      "url": "https://x.com/perplexity_ai/status/2064023455453110286",
+      "source": "X：Perplexity (@perplexity_ai)",
+      "publishedAt": "2026-06-08T16:35:14.000Z",
+      "summary": "我们与哈佛大学发表新研究，关于从聊天界面转向像Computer这样的自主智能体的转变。\n\n超过3个月的研究结果表明，使用Computer的工人在完成任务上比仅使用搜索快87%，成本低94%，且满意度更高。\n\nhttps：//research.perplexity.ai/articles/how-ai-agents-reshape-knowledge-work",
+      "category": "paper",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmq4tfme001jlslt2hle9mu5a",
+      "title": "腾讯混元联合多家机构发布首个音频编辑基准MMAE",
+      "title_en": "Can AI truly edit audio， not just generate it？ 🎧 Tencent Hy， in collaboration with SJTU， SII， NTU，…",
+      "url": "https://x.com/TencentHunyuan/status/2063862263434613237",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-06-08T05:54:42.000Z",
+      "summary": "腾讯混元联合上海交大、南洋理工等机构推出MMAE（Massive Multitask Audio Editing Benchmark），这是首个全面评估AI语音/音频编辑能力的基准。MMAE要求模型理解现有音频并按自然语言指令精确修改，而非简单生成。当前模型在该基准上的精确匹配率（EMR）低于5%，暴露了可靠音频编辑的短板。MMAE包含2000个真实场景高保真样本、17741条细粒度评估项，覆盖声音/音乐/语音及混合共7种模态、6种任务复杂度（基础修改到多跳推理及多轮编辑）、8种操作类型（局部到全局）。论文、代码、数据集和演示已公开。",
+      "category": "paper",
+      "score": 69,
       "selected": true
     },
     {
@@ -53,24 +77,36 @@
     },
     {
       "id": "cmq2o71l001iisl6n8ljx5jbt",
-      "title": "首字延迟降低3.6倍，腾讯混元提出Stem稀疏注意力算法，长文推理加速新SOTA",
-      "title_en": null,
+      "title": "腾讯混元提出Stem稀疏注意力算法，被ICML 2026收录",
+      "title_en": "首字延迟降低3.6倍，腾讯混元提出Stem稀疏注意力算法，长文推理加速新SOTA",
       "url": "https://mp.weixin.qq.com/s/XneOSvjt-7A-DU546cGoZA",
       "source": "公众号：腾讯混元",
       "publishedAt": "2026-06-05T11:22:41.000Z",
-      "summary": null,
+      "summary": "Stem算法通过Token位置衰减（TPD）和输出感知度量（OAM）两项创新，仅用25%算力即逼近稠密注意力精度。配套HPC算子针对Hopper架构优化，支持FP8量化与vLLM的Paged KV Cache，在混元Hy3 preview上实现首字延迟降低3.6倍。HPC-BSA相比MIT-BSA稳定保持约3倍加速，在8K至256K序列长度上表现一致。",
       "category": "paper",
-      "score": 56,
+      "score": 62,
       "selected": true
     },
     {
-      "id": "cmq2o71l001imsl6nw5cypu9a",
-      "title": "PawBench：给通用智能体一把可度量的尺",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/Q1fa3KwT63HBOF2fmWKzlg",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-06-05T09:54:27.000Z",
-      "summary": null,
+      "id": "cmq2l9lhg00dxsl6ns5nl3hik",
+      "title": "ACL'26美团技术团队6篇论文入选：聚焦大模型评测与推理优化",
+      "title_en": "报名|ACL'26 美团中稿精选：从能力评测到推理优化，构建生成新范式",
+      "url": "https://mp.weixin.qq.com/s/qgq5fstJNeNmfSigedFOeQ",
+      "source": "公众号：龙猫LongCat（美团）",
+      "publishedAt": "2026-06-05T02:24:00.000Z",
+      "summary": "美团技术团队在ACL'26上分享6篇论文，涵盖代码评测、复杂流程推理、数学竞赛、过度思考分析、推理后训练优化及生成式推荐。CoreCodeBench从12个开源库生成1524个结构化任务，有效性达78.55%；SOP-Maze基于真实业务构建397个流程实例，测试显示前沿模型存在流程遵循、对话脆弱性和计算错误三类短板；AMO-Bench含50道高难度数学题，最强模型准确率仅52.4%；The Evolution of Thought提出推理完成点（RCP）检测器减少冗余生成；MASPO通过软高斯门控等优化推理后训练，提升Avg@32和Pass@32；FLR将隐式推理分解为多维偏好因子，平均提升3.2%。",
+      "category": "paper",
+      "score": 55,
+      "selected": true
+    },
+    {
+      "id": "cmq4k0mcr01psslot5yxg2wpu",
+      "title": "dots.tts 技术报告",
+      "title_en": "dots.tts Technical Report",
+      "url": "https://arxiv.org/abs/2606.07080",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "dots.tts 是一个 2B 参数的连续自回归 TTS 基座模型，在连续潜在空间中建模语音。其创新包括：多目标训练的 AudioVAE 构建语义结构化连续语音空间；全历史条件的 flow-matching 头保持长程一致性；无奖励自纠正后训练提升鲁棒性和音质。在 Seed-TTS-Eval 上取得最佳平均性能，中文/英文/中文-hard 的 WER 分别为 0.94%/1.30%/6.60%，SIM 分别为 81.0/77.1/79.5。其他基准也达开源 SOTA。基于 CFG 的 MeanFlow 蒸馏实现低延迟推理，输出流首包 85ms，双流 54ms。训练推理代码及检查点已开源。",
       "category": "paper",
       "score": 73,
       "selected": true
@@ -112,18 +148,6 @@
       "selected": true
     },
     {
-      "id": "cmpyvxja303t6sli3dok90v7m",
-      "title": "NVIDIA PPISP：补偿光度变化提升3D重建",
-      "title_en": "Radiance fields are only as good as the images behind them. PPISP helps compensate for photometric…",
-      "url": "https://x.com/NVIDIAAI/status/2062358080222876041",
-      "source": "X：NVIDIA AI (@NVIDIAAI)",
-      "publishedAt": "2026-06-04T02:17:37.000Z",
-      "summary": "辐射场的质量取决于其背后的图像。\n\nPPISP 可帮助补偿不同拍摄之间的光度变化，使 3D 重建在光照和相机设置不完全一致时更加鲁棒。\n\n🔗 项目：https：//nvda.ws/43JeJpk",
-      "category": "paper",
-      "score": 62,
-      "selected": true
-    },
-    {
       "id": "cmpyacsh5038rslaxlh6udycy",
       "title": "微软研究：装瓶厂AI从聊天到决策",
       "title_en": "A three-month pilot in a Midwestern bottling plant shows what happens when AI moves beyond chat and …",
@@ -145,18 +169,6 @@
       "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
       "category": "paper",
       "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmpyhoxxg002qsli30vj99h80",
-      "title": "NVIDIA Research 在 CVPR 2026 发表三篇论文：规模化训练实现抓取、自动驾驶与智能体泛化",
-      "title_en": "NVIDIA Research Unlocks Advanced Grasping， Smarter Autonomous Driving and Agent Training at Scale",
-      "url": "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training",
-      "source": "NVIDIA AI Blog",
-      "publishedAt": "2026-06-03T15:00:57.000Z",
-      "summary": "NVIDIA Research 在 CVPR 2026 上发表三篇论文，展示规模化训练带来的泛化能力。GraspGen-X 是首个零样本抓取基础模型，基于 20 亿次模拟抓取训练，可为任意末端执行器生成抓取姿态。LCDrive 用紧凑潜在表示替代文本推理，让自动驾驶在嵌入式硬件上更快推理。NitroGen 基于 Isaac GR00T 架构，在大量虚拟环境中训练具身智能体。此外还发布了新的物理 AI 智能体技能，以及配合 GraspGen-X 使用的 CUDA 加速运动规划库 curoboV2 和闭环抓取论文 Grasp-MPC。",
-      "category": "paper",
-      "score": 71,
       "selected": true
     },
     {
@@ -301,42 +313,6 @@
       "summary": "Ultralytics YOLO26 采用双头设计实现原生无 NMS 的端到端推理，彻底移除 DFL，获得更轻检测头与无约束回归范围。训练结合混合 Muon-SGD 优化器 MuSGD、转向推理头的 Progressive Loss 及保证小物体正样本的 STAL 标签分配。支持检测、实例分割、姿态估计、定向检测和分类，提供 5 种尺度（n/s/m/l/x）及开放词汇扩展 YOLOE-26。全部尺度在 COCO 上达 40.9-57.5 mAP，T4 TensorRT 延迟 1.7-11.8 ms；YOLOE-26x 在 LVIS minival 文本提示下达 40.6 AP。代码已开源。",
       "category": "paper",
       "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmpwxbmhb01lisl79elctr7z8",
-      "title": "AFUN： 迈向功能理解的可供性基础模型",
-      "title_en": "AFUN： Towards an Affordance Foundation Model for Functionality Understanding",
-      "url": "https://arxiv.org/abs/2606.02551",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "summary": "AFUN是一个用于功能理解的可供性基础模型。它从单个RGB-D观察和语言任务描述出发，能同时预测任务条件的功能掩码（where）和3D接触后运动曲线（how）。为实现开放世界泛化，该研究构建了一个大规模标准化数据管道，整合了机器人、人类、仿真与真实扫描数据。评估结果显示，AFUN在可供性分割任务上，于4个基准的8个测试集中平均gIoU/cIoU指标分别大幅领先基线模型+23.9/+26.3；在接触点预测上，命中率比最佳基线高出12.7%-61.3%；在3D运动预测上也取得最佳性能。该模型无需针对特定机器人实体进行微调即可直接部署。",
-      "category": "paper",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpwmljjs049cslsnfoe42el4",
-      "title": "NLP领域2018-2025年人类标注报告实践的大规模审计",
-      "title_en": "Who Annotates in NLP？ A Large-scale Assessment of Human Annotation Reporting between 2018 and 2025",
-      "url": "https://arxiv.org/abs/2606.02255",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "summary": "本研究对NLP领域2018至2025年间的人类标注报告实践进行了首次大规模审计。研究构建并验证了一个LLM辅助提取管线，其在Annotated-gold数据集（41篇论文，72个标注任务）上与人工裁决的一致性（Krippendorff's alpha）达到0.606。基于此，研究构建了Annotated-llm数据集，涵盖ACL会议论文，从1603篇论文中提取了2667个标注任务。分析发现，论文常报告招募策略、标注者专长等操作细节，但经常遗漏评估标注效度所需的关键信息，如培训、语言能力、薪酬、裁决过程及一致性数值。研究指出标注报告虽有改善但仍不均衡，并提出了一个可扩展的框架和最低报告标准。",
-      "category": "paper",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpw7layz00esslsnshn4dzp3",
-      "title": "OpenWebRL：面向视觉网页智能体的在线多轮强化学习开源框架",
-      "title_en": "OpenWebRL： Demystifying Online Multi-turn Reinforcement Learning for Visual Web Agents",
-      "url": "https://arxiv.org/abs/2606.02031",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "summary": "OpenWebRL是一个用于在真实网站上通过在线多轮强化学习训练视觉网页智能体的开源框架，覆盖了完整的训练流程。基于该框架训练的OpenWebRL-4B模型，在仅使用0.4K条监督初始化轨迹和2.2K个开放式RL训练任务的情况下，在Online-Mind2Web基准上达到67.0%成功率，在DeepShop基准上达到64.0%，超越了同规模或更大规模的先前开源智能体，性能可与OpenAI CUA和Gemini CUA等闭源系统竞争。该工作为构建更强、可复现且高性价比的开源网页智能体提供了实践路径。",
-      "category": "paper",
-      "score": 73,
       "selected": true
     }
   ]

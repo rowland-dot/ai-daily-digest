@@ -1,7 +1,14 @@
 {
-  "fetched_at": "2026-06-07T21:45:29.416Z",
+  "fetched_at": "2026-06-08T22:11:15.513Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "datasette-agent-edit 0.1a0",
+      "link": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything",
+      "updated": "2026-06-07T23:56:38+00:00",
+      "summary": "I'm planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files. Agentic editing of text is a little tricky to get right.",
+      "body": "I'm planning several plugins for Datasette Agent which can make edits to existing pieces of text - things like collaborative Markdown editing, updating large SQL queries, and editing SVG files.\n\nAgentic editing of text is a little tricky to get right. My favorite published design for this is for the Claude text editor, which implements the following tools:\n\n   view - view sections of a file, with line numbers added to every line.\n   strreplace - find an exact oldstr and replace it with newstr - fail if the original string is not unique\n   insert - insert the specified text after the specified line number\n\nRather than recreate these patterns for every plugin that needs them I decided to create this base plugin, datasette-agent-edit, which implements the core tools in a way that allows them to be adapted for other plugins."
+    },
     {
       "title": "micropython-wasm 0.1a2",
       "link": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
@@ -78,13 +85,6 @@
       "updated": "2026-06-02T18:17:03+00:00",
       "summary": "Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.",
       "body": "Sighting: California Brown Pelican\n\nSimon Willison’s Weblog\n\nSubscribe\n\nSponsored by: The AI App and Agent Factory — Microsoft Foundry is the enterprise Al platform where intelligence and trust ship with every agent. Try Foundry\n\n2nd June 2026\n\nSighting11:17 AM— California Brown Pelican, in Fort Mason, CA, US\n\nCalifornia Brown Pelican\n\nPosted 2nd June 2026 at 6:17 pm\n\nRecent articles\n\n   Claude Opus 4.8: \"a modest but tangible improvement\" - 28th May 2026\n   I think Anthropic and OpenAI have found product-market fit - 27th May 2026\n   Notes on Pope Leo XIV's encyclical on AI - 25th May 2026\n\nThis is a beat by Simon Willison, posted on 2nd June 2026.\n\nMonthly briefing\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\n\nPay me to send you less!\n\nSponsor & subscribe\n\n   Disclosures\n   Colophon\n   ©\n   2002\n   2003\n   2004\n   2005\n   2006\n   2007\n   2008\n   2009\n   2010\n   2011\n   2012\n   2013\n   2014\n   2015\n   2016\n   2017\n   2018\n   2019\n   2020\n   2021\n   2022\n   2023\n   2024\n   2025\n   2026"
-    },
-    {
-      "title": "Pasted File Editor",
-      "link": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
-      "updated": "2026-06-02T04:13:36+00:00",
-      "summary": "ToolPasted File Editor— Create and manage a text editor with automatic file attachment capabilities. Paste files or text content of 1,000 characters or more to attach them below the editor, while keeping the editor text unchanged. View attached files as previews or in full, and remove files as needed using drag-and-drop, file selection, or clipboard paste functionality.",
-      "body": "ToolPasted File Editor— Create and manage a text editor with automatic file attachment capabilities. Paste files or text content of 1,000 characters or more to attach them below the editor, while keeping the editor text unchanged. View attached files as previews or in full, and remove files as needed using drag-and-drop, file selection, or clipboard paste functionality.\n\nI really like how you can paste a large volume of text into claude.ai (or the Claude desktop/mobile apps) and it will detect it as a large paste and turn it into a file attachment instead.\n\nI decided to have Codex desktop build me a version of that as a prototype.\n\nYou can also open files directly - including images which will be shown as thumbnails - or drag files onto the textarea."
     }
   ]
 }
