@@ -1,18 +1,78 @@
 {
-  "count": 14,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmq5bjjga06d1slt2lstyzq8i",
-      "title": "小米 MiMo-V2.5-Pro-UltraSpeed 突破 1，000 tokens/s，单台 8-GPGPU 节点运行 1T MoE 模型",
-      "title_en": "🚀 1，000+ TOKENS/S ON A 1T MODEL！ 🚀 We are thrilled to release Xiaomi MiMo-V2.5-Pro-UltraSpeed in …",
-      "url": "https://x.com/XiaomiMiMo/status/2063993790587904362",
-      "source": "X：小米 MiMo (@XiaomiMiMo)",
-      "publishedAt": "2026-06-08T14:37:21.000Z",
-      "summary": "小米 MiMo 联合 TileRT_AI 发布 MiMo-V2.5-Pro-UltraSpeed，首次在 1 万亿参数 MoE 模型上实现超过 1，000 tokens/s 输出速度，仅用单台标准 8-GPGPU 节点（非 Cerebras 或 Groq 方案）。提供限时免费聊天体验，UltraSpeed API 价格为 3 倍，输出体验提升约 10 倍。申请时间为 6 月 8 日至 23 日（PDT），企业可邮件联系 business-mimo@xiaomi.com。",
+      "id": "cmq6w3soi002gslbhz3kkhav0",
+      "title": "Claude Fable 5 和 Claude Mythos 5",
+      "title_en": "Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-09T17:04:29.001Z",
+      "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing 向网络安全防御者开放。",
       "category": "ai-models",
-      "score": 82,
+      "score": 90,
+      "selected": true
+    },
+    {
+      "id": "cmq74dg8m006psloprllkcbmm",
+      "title": "Cohere发布North Mini Code：面向开发者的开源编码模型",
+      "title_en": "Introducing North Mini Code： Cohere's First Model For Developers",
+      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-09T15:56:23.000Z",
+      "summary": "Cohere发布North Mini Code，一款30B参数MoE模型（3B活跃参数），Apache 2.0开源。在Artificial Analysis Coding Index上得分33.4，超越Qwen3.5、Gemma 4等同类模型。后训练采用两阶段SFT和RLVR，在SWE-Bench Verified上pass@10达80.2%，Terminal-Bench v2上达55.1%。支持64K/128K上下文长度，专为智能体编码任务优化。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq6sxx1u0bizsl5ib9ja78pe",
+      "title": "Gemini 3.5 Live Translate 发布",
+      "title_en": "Say hello， hola， 你好 to Gemini 3.5 Live Translate： our latest audio model built for fast， cross-langu…",
+      "url": "https://x.com/GoogleDeepMind/status/2064366504745828689",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-06-09T15:18:23.000Z",
+      "summary": "说 hello， hola， 你好--欢迎 Gemini 3.5 Live Translate：我们最新的音频模型，专为快速跨语言交流而构建。🌐",
+      "category": "ai-models",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmq6rv40r0b8isl5iwmqtrlxl",
+      "title": "Claude Mythos 即将发布，Fable 精简版同日登场",
+      "title_en": "Confirmed， Claude Mythos will be unveiled in the next few hours",
+      "url": "https://x.com/kimmonismus/status/2064362469632405807",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-06-09T15:02:21.000Z",
+      "summary": "确认，Claude Mythos 将在接下来几小时内揭晓。\n\n【引用 @steph_palazzolo】：\n独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。\n\n更多内容及 Apple WWDC 见 AI Agenda：\n\nhttps：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp",
+      "category": "ai-models",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmq6qqqbp0axhsl5i2ow5j5co",
+      "title": "Google DeepMind 发布 Gemma 4 12B：统一的无编码器多模态模型",
+      "title_en": "Introducing Gemma 4 12B： a unified， encoder-free multimodal model",
+      "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-06-09T14:10:19.000Z",
+      "summary": "Gemma 4 12B 是 Google DeepMind 最新推出的中等规模多模态模型，采用无编码器统一架构，原生支持音频输入。其基准测试性能接近 26B MoE 模型，但内存占用不到一半，仅需 16GB 显存或统一内存即可在消费级笔记本上本地运行。模型内置多 token 预测（MTP）drafter 以降低延迟，基于 Apache 2.0 开源许可发布，已累计超过 1.5 亿次下载。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmq63dzew04srsl5ix1r8n4ne",
+      "title": "小米 MiMo 与 TileRT 联合发布 UltraSpeed 模式，1T 模型输出突破 1000 tokens/s",
+      "title_en": "Xiaomi MiMo 携手 TileRT|1T 模型首次突破 1000 tokens/s 输出速度",
+      "url": "https://mp.weixin.qq.com/s/EZvmrx8xfM9MZNCMDwImFQ",
+      "source": "公众号：小米 MiMo",
+      "publishedAt": "2026-06-09T03:31:32.000Z",
+      "summary": "小米 MiMo 与 TileRT 联合发布 MiMo-V2.5-Pro-UltraSpeed 模式，使 1T 参数旗舰模型输出速度首次突破 1000 tokens/s。模型侧采用 FP4 混合量化（仅量化 MoE Expert）与 DFlash 块级 masked 并行推测解码（coding 场景平均接受长度 6.30 tokens）；系统侧 TileRT 引入常驻内核引擎与异构流水线协作。API 限时开放（2026 年 6 月 9 日至 23 日），定价为 MiMo-V2.5-Pro 的 3 倍，速度提升约 10 倍。FP4 权重与 DFlash 模型 checkpoint 已开源至 HuggingFace。",
+      "category": "ai-models",
+      "score": 80,
       "selected": true
     },
     {
@@ -64,15 +124,27 @@
       "selected": true
     },
     {
-      "id": "cmq16l9id0cz7sltrd5u9tevg",
-      "title": "Riverflow 2.5：可控制评分标准的图像模型",
-      "title_en": "Live on OpenRouter： Riverflow 2.5 from @Sourceful. The first image model with an independent scorin…",
-      "url": "https://x.com/OpenRouter/status/2062944965978992935",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-06-05T17:09:42.000Z",
-      "summary": "在OpenRouter上线：来自@Sourceful的Riverflow 2.5。\n\n首个具有独立评分标准的图像模型，你可控制该标准以引导其思维和编辑，并具备可控的推理努力，可在速度与质量之间进行权衡。\n\n免费至6月9日（周二）。Fast和Pro见下方🧵。",
+      "id": "cmq0m70ih07k6sltrnfhibwso",
+      "title": "Grok模型更新：更自主更准确",
+      "title_en": "Grok model improvement",
+      "url": "https://x.com/elonmusk/status/2062795019551957383",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-06-05T07:13:52.000Z",
+      "summary": "更新后的 Grok-build 模型（仍是 0.5T 那个）比以前好很多。它不那么偷懒、更自主、更准确。我们仍在改进长时任务。请期待并在我们漂亮的 TUI 中使用新的使用限制！🚀",
       "category": "ai-models",
-      "score": 60,
+      "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmq642x6l0501sl5i3sl7adjt",
+      "title": "京东开源JoyAI-Echo长音视频生成框架",
+      "title_en": "京东开源JoyAI-Echo框架，进入全球第一梯队！",
+      "url": "https://mp.weixin.qq.com/s/6ZKUwaMufy1cpUFFijokTQ",
+      "source": "公众号：京东JoyAI",
+      "publishedAt": "2026-06-05T05:27:22.000Z",
+      "summary": "6月3日，京东开源JoyAI-Echo框架，解决长视频生成中角色身份崩坏、音色突变和生成缓慢三大难题。该框架通过跨模态音视频记忆库保持5分钟内角色外观与音色一致，记忆驱动后训练结合DMD技术带来约7.5倍推理加速。新增Director Agent支持自然语言对话式局部修订，无需重跑整条视频。配套轻量化实时超分模块，支持736×1280→1152×1920及1472×2560两档分辨率。评测集显示，语音内容准确率0.8646，用户偏好多项领先。代码与权重已开源至GitHub。",
+      "category": "ai-models",
+      "score": 72,
       "selected": true
     },
     {
@@ -112,6 +184,30 @@
       "selected": true
     },
     {
+      "id": "cmpysolhn02y3sli3a8gmksck",
+      "title": "Grok Imagine 1.5制作《伊利亚特》预告片",
+      "title_en": "Iliad （Troy） trailer made by Grok Imagine 1.5， which was just released",
+      "url": "https://x.com/elonmusk/status/2062337074368508253",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-06-04T00:54:09.000Z",
+      "summary": "伊利亚特（特洛伊）预告片由刚刚发布的 Grok Imagine 1.5 制作",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmpysolhn02y4sli3qzy0o7te",
+      "title": "Grok Imagine视频生成上线Vercel",
+      "title_en": "Grok Imagine on Vercel",
+      "url": "https://x.com/elonmusk/status/2062332654587118036",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-06-04T00:36:35.000Z",
+      "summary": "Vercel 的 AI Gateway 上现已推出 Grok Imagine Video 1.5。该服务支持图生视频并同步音频，一次性完成。示例代码：\n`await generateVideo（{ model： 'xai/grok-imagine-video-1.5-preview'， prompt： 'a rabbit sprinting through nyc' }）；`",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true
+    },
+    {
       "id": "cmpyd2ph203z9slaxfwx9nd13",
       "title": "Ideogram v4.0 发布：2K 分辨率和 JSON 提示支持",
       "title_en": "introducing Ideogram v4.0. 2k native resolution， excellent text rendering， and support for JSON pr…",
@@ -145,30 +241,6 @@
       "summary": "xAI 通过 API 发布了图像转视频模型 `grok-imagine-video-1.5-preview`（Grok Imagine 1.5 预览版）。该模型能将单张静态图片转为流畅的电影感视频，用户提供起始帧和描述运动的提示词后，模型可生成包含相机移动、氛围和物理效果的动画，并保持对源图像的忠实。支持生成 720p 片段，可使用自然语言指令控制镜头、节奏和音效，并支持逐帧拼接成长场景。模型目前通过 xAI API 提供预览使用。",
       "category": "ai-models",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmpwzm8ij028gsl798th4vl54",
-      "title": "微软首款高级推理AI模型MAI-Thinking-1发布",
-      "title_en": "Microsoft's first advanced reasoning AI is here",
-      "url": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026",
-      "source": "The Verge：AI（RSS）",
-      "publishedAt": "2026-06-02T18:12:44.000Z",
-      "summary": "微软在Build 2026上发布了其首款高级推理AI模型MAI-Thinking-1。该模型被定位为\"中等规模\"，能在\"关键\"软件工程基准测试中达到领先模型的水平。微软称其完全从头使用干净数据进行训练，未涉及从第三方模型进行知识蒸馏。这标志着微软在自研AI模型上迈出重要一步，此前其主要依赖OpenAI。近期两家公司已重新协商合作协议，关系有所松绑。",
-      "category": "ai-models",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmpwqvwfa05cqslsncgvlgd9q",
-      "title": "Holo3.1：快速本地计算机使用智能体",
-      "title_en": "Holo3.1： Fast & Local Computer Use Agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo31",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-02T14:13:23.000Z",
-      "summary": "Holo3.1 是基于 Qwen 模型家族的计算机使用智能体系列，旨在提升在桌面、网页和移动环境中的鲁棒性。新模型提供 0.8B、4B、9B 和 35B-A3B 四种尺寸，并首次发布量化检查点，包括 FP8、Q4 GGUF 和 NVFP4，以优化本地推理。在 AndroidWorld 基准测试中，35B-A3B 模型得分从 67% 提升至 79.3%。在 DGX Spark 上，NVFP4 量化相比 BF16 实现 1.74 倍 token 吞吐量提升，并将平均步骤时间从 6.8 秒缩短至 3.3 秒。模型支持函数调用协议，可在第三方智能体框架中部署。",
-      "category": "ai-models",
-      "score": 73,
       "selected": true
     }
   ]

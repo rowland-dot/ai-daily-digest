@@ -1,18 +1,186 @@
 {
-  "count": 41,
+  "count": 45,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmq5qpm6l01h6sl5i3pzk6mto",
-      "title": "OpenAI 秘密提交 IPO 申请，加入 AI 对手上市融资竞赛",
-      "title_en": "OpenAI Filed Confidentially for IPO as Rivals Race to Market",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-08/openai-filed-confidentially-for-ipo-as-rivals-race-to-market",
+      "id": "cmq768g090076sl5wqoyj7ng8",
+      "title": "Super Micro 计划通过股权融资 70 亿美元用于 AI 服务器组件采购",
+      "title_en": "Super Micro Plans to Raise $7 Billion in Equity for AI Equipment",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/super-micro-plans-to-raise-7-billion-in-equity-for-ai-equipment",
       "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-08T21:19:23.000Z",
-      "summary": "ChatGPT 开发商 OpenAI 已秘密提交首次公开募股（IPO）申请，加入人工智能竞争对手行列，通过公开市场为雄心勃勃的增长计划筹集资金。",
+      "publishedAt": "2026-06-09T21:24:50.000Z",
+      "summary": "Super Micro Computer Inc. 计划通过一揽子股权融资筹集 70 亿美元，用于购买客户订单所需的 AI 服务器组件。这笔资金将支持公司扩大产能，以满足不断增长的人工智能基础设施需求。",
+      "category": "industry",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq72e9ea002ksle3umrclmuo",
+      "title": "Mythos 5 智能体因资源互相杀戮",
+      "title_en": "Mythos 5 agents started killing other agents over resources - and \"to avoid being killed themselves\"",
+      "url": "https://x.com/AISafetyMemes/status/2064435128479400270",
+      "source": "X：AI Safety Memes (@AISafetyMemes)",
+      "publishedAt": "2026-06-09T19:51:04.000Z",
+      "summary": "Mythos 5 个智能体开始因为资源互相残杀--并且\"为了避免自己被杀死\"",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmq6wk8kc008jslbhgv6rna5r",
+      "title": "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易",
+      "title_en": "Apollo， Blackstone Fund AI Boom",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-09T16:54:29.000Z",
+      "summary": "Apollo 和 Blackstone 合作开展 350 亿美元 AI 融资交易，可能重塑人工智能基础设施的融资方式。华尔街正为昂贵的 AI 芯片创建新的融资模型，Anthropic 和 Broadcom 参与其中。这笔交易可能标志着一个全新 AI 投资类别的开端。",
       "category": "industry",
       "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmq6uc56g0bvvsl5icsvihsum",
+      "title": "里程碑式德国裁决：Google AI Overviews 被视为谷歌自身言论，需为错误回答承担责任",
+      "title_en": "Landmark German ruling declares Google's AI Overviews are Google's own words and makes it liable for false answers",
+      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-09T15:55:53.000Z",
+      "summary": "德国地方法院裁定，Google 对其 AI 概览生成的内容直接承担法律责任，不能援引搜索引擎运营商原有的有限责任保护。涉案 AI 概览错误地将两家出版商与欺诈行为关联，且相关声明未出现在任何链接来源中。该裁决可能为全球 AI 生成内容责任认定树立先例。",
+      "category": "industry",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmq6tcee80bmxsl5ik7x89gue",
+      "title": "塔塔咨询服务将因AI智能体应用放缓招聘，亚洲外包业迎来转折",
+      "title_en": "Asia's Largest Outsourcer to Slow Hiring as AI Reshapes Industry",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/asia-s-largest-outsourcer-to-slow-hiring-as-ai-reshapes-industry",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-09T15:32:09.000Z",
+      "summary": "亚洲最大外包商塔塔咨询服务（Tata Consultancy Services）将减少未来招聘规模，同时加大对AI智能体的使用。这一变化标志着印度劳动密集型外包产业正经历关键性转变。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmq6pnxzb0am5sl5i5g6wjkvv",
+      "title": "Google DeepMind 欧洲机器人加速器启动，15家初创公司入选",
+      "title_en": "Powering the future of robotics in Europe",
+      "url": "https://deepmind.google/blog/powering-the-future-of-robotics-in-europe",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-06-09T14:02:33.000Z",
+      "summary": "Google DeepMind 加速器从欧洲选出15家机器人初创公司，提供为期3个月的密集指导和AI技术整合支持，帮助公司将AI融入核心产品。",
+      "category": "industry",
+      "score": 58,
+      "selected": true
+    },
+    {
+      "id": "cmq6neb920a0esl5ixu2rh53j",
+      "title": "全新汽车品牌AIVA发布，火山引擎助力打造AI汽车新体验",
+      "title_en": "全新汽车品牌AIVA发布！火山引擎助力打造AI汽车新体验",
+      "url": "https://mp.weixin.qq.com/s/toK_uIB9ECFHVaoCgK-w9Q",
+      "source": "公众号：火山引擎",
+      "publishedAt": "2026-06-09T13:00:21.000Z",
+      "summary": "由赛力斯、宁德时代等多方产业资本组建的AI出行品牌AIVA正式发布。火山引擎提供豆包大模型、智能座舱等技术服务。概念车AIVA Origin Concept亮相，首款量产车AIVA ME7将于2026年内亮相，全系覆盖20万元以上市场。AIVA提出\"AI定义汽车\"路径，让汽车成为具身AI生命体。火山引擎副总裁表示，人与汽车的关系将实现交互、智能、感受三方面根本转变。未来双方将围绕AI交互、智能体验、情感陪伴深度共创。",
+      "category": "industry",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmq6neaj80a09sl5if1zpnqpw",
+      "title": "百度搭子DuMate获中国信通院企业级Claw能力评估最高4+级",
+      "title_en": "最高评级4+级！百度搭子DuMate通过中国信通院企业级Claw能力评估",
+      "url": "https://mp.weixin.qq.com/s/lv99XfrRtMMgiOflcT67VA",
+      "source": "公众号：百度智能云（文心）",
+      "publishedAt": "2026-06-09T12:03:00.000Z",
+      "summary": "2026年6月，百度智能云旗下百度搭子DuMate V3.4.0通过中国信通院「可信AI-企业级Claw能力评估」，获最高评级4+级，为国内首批。评估依据《智能助理智能体（Claw）技术和应用要求 第2部分 企业级Claw能力》（AIIA/T 0295-2026），覆盖智能体、工程化部署、服务、业务融合、运行管理五大能力域。百度搭子支持多智能体分工协作、容器化批量部署、多租户隔离与三级差异化授权、企业知识库接入、全链路日志审计等能力，企业级智能助手服务能力获国家级权威认可。",
+      "category": "industry",
+      "score": 63,
+      "selected": true
+    },
+    {
+      "id": "cmq6il4p208t1sl5iriawuqnk",
+      "title": "台湾考虑限制AI芯片对华出口以配合美国",
+      "title_en": "Taiwan Mulls Curbs on AI Chip Exports to China to Align With US",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/taiwan-mulls-curbs-on-ai-chip-exports-to-china-to-align-with-us",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-09T10:07:50.000Z",
+      "summary": "据知情人士透露，台湾当局正考虑对AI芯片出口中国大陆实施更严格的管制，以进一步与美国出口限制措施对齐。此举旨在遏制半导体走私，但可能招致北京方面的谴责。",
+      "category": "industry",
+      "score": 79,
+      "selected": true
+    },
+    {
+      "id": "cmq6eaqf207o8sl5iy1dyf29k",
+      "title": "中国准备2950亿美元计划资助全国AI基础设施建设",
+      "title_en": "China Prepares $295 Billion Plan to Fund Nationwide AI Buildout",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-09T08:13:10.000Z",
+      "summary": "中国计划在未来五年投入约2万亿元人民币（约2950亿美元）建设全国数据中心，以推动国内AI产业发展并超越美国。该投资将覆盖数据中心基础设施的大规模建设，为北京在关键技术领域的雄心提供资金支持。",
+      "category": "industry",
+      "score": 80,
+      "selected": true
+    },
+    {
+      "id": "cmq69650406cmsl5iwf8zszhp",
+      "title": "AI 编程独角兽 Cursor 欧洲总部落子伦敦，SpaceX 手握 600 亿美元收购选择权",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/961/868.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-09T05:53:06.000Z",
+      "summary": "Cursor 将欧洲总部设在伦敦，计划招聘约 200 名员工，并在巴黎、慕尼黑等地开设小型办事处。SpaceX 拥有以 600 亿美元收购 Cursor 的选择权，或支付 100 亿美元开展全新合作。Cursor 目前 B2B 年化营收约 26 亿美元，客户包括英国航空、英国石油、诺基亚等。公司强调数据留存欧洲本地以满足监管合规，其平台支持用户用自然语言生成代码，主打模型中立，竞争对手包括 GitHub Copilot、OpenAI 和谷歌的同类产品。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmq60kxqi042ksl5i30p1a5py",
+      "title": "OpenAI 秘密提交 IPO 申请，Altman旗下 Tools for Humanity 裁员",
+      "title_en": "OpenAI 申请上市，奥尔特曼估值 25 亿美元的眼球扫描公司却被曝裁员",
+      "url": "https://www.ithome.com/0/961/792.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-09T02:19:48.000Z",
+      "summary": "OpenAI 近日秘密提交 IPO 申请。其 CEO 山姆·Altman旗下的 Tools for Humanity 公司正裁员，该公司因虹膜扫描项目 World 及加密货币 Worldcoin 知名，投后估值 25 亿美元，获 Andreessen Horowitz 等投资。因营收困境，公司缩减规模。海外监管方面，肯尼亚以隐私和金融风险为由叫停运营，韩国因违反隐私法规罚款 83 万美元。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmq6090s803ymsl5i7zd3l79f",
+      "title": "Elon Musk 详解 SpaceX AI1 轨道 AI 数据中心卫星方案",
+      "title_en": "For the very first time Elon Musk explains the \"space data center plan\" of @SpaceX in detail and its…",
+      "url": "https://x.com/rohanpaul_ai/status/2064165951936094364",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-09T02:01:27.000Z",
+      "summary": "Elon Musk 首次详细解释 SpaceX 的 AI1 轨道 AI 数据中心卫星：峰值功率 150 kW，持续计算功率约 120 kW，相当于一个 NVIDIA GB300 机架；太阳能板效率 250 W/m2；双面散热器排热 1，400 W/m2。通过激光链路实现约 1 Tbps 互联，低轨 600-800 km 高度往返延迟 6-8 ms。由 Starship 发射，计划部署多达百万颗卫星，2027 年底前实现量产。近地目标为吉瓦级轨道 AI 算力，长期向太瓦级推进。",
+      "category": "industry",
+      "score": 83,
+      "selected": true
+    },
+    {
+      "id": "cmq5yfk9603iosl5ir79yjdcq",
+      "title": "两部门：到2026年底人形机器人等重点产品完成应用验证并常态部署",
+      "title_en": "两部门：到 2026 年底，人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署",
+      "url": "https://www.ithome.com/0/961/749.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-09T01:15:30.000Z",
+      "summary": "工信部、国资委6月8日联合发布通知，目标到2026年底，人形机器人等重点产品在代表性场景完成应用验证并开启常态部署，形成百个以上高价值场景，万台级规模落地。要求各省级地区选取不少于20个场景单元（覆盖两类领域），央企不少于10个。围绕打造实景实训空间、组建创新应用联合体、攻关作业技能、加强验证部署、强化要素保障、凝练经验等六大任务展开，鼓励\"人形机器人即服务\"等商业创新。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmq5u4ypb02edsl5izrg3y8f9",
+      "title": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/961/721.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-08T22:50:42.000Z",
+      "summary": "本周一，OpenAI CEO 奥尔特曼与首席科学家帕霍茨基联合发文，宣布公司进入第三发展阶段，目标让 AI 普及、易用且安全。此前第一阶段聚焦通用人工智能技术研发，第二阶段面向全球推出产品。第三阶段三大核心目标是打造自动化人工智能研究员、推动经济提速、为每人配备专属通用人工智能。二人强调智能系统须坚守安全底线，呼吁成立国际机构应对 AI 风险，必要时可暂缓前沿模型研发。同日，OpenAI 秘密提交 IPO 申请，但上市仍需较长时间。上周 Anthropic 研究人员也建议适当放缓前沿 AI 研发。",
+      "category": "industry",
+      "score": 75,
       "selected": true
     },
     {
@@ -124,18 +292,6 @@
       "selected": true
     },
     {
-      "id": "cmq28dvet000pslopfql7jlc7",
-      "title": "海螺AI×上影节活动日历：开放日6.14-6.15",
-      "title_en": "海螺AI×上影节活动日历|请收下邀请函！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDUzMzEzNw%3D%3D&mid=2247487793&idx=1&sn=b5649b5c9c4204135b4914d89f71cb41",
-      "source": "公众号：MiniMax（稀宇科技）",
-      "publishedAt": "2026-06-06T09:52:47.000Z",
-      "summary": "MiniMax旗下海螺AI作为第28届上影节独家AI影像战略合作伙伴，6.14-6.15举办开放日。活动包括：AI片场·海螺专属Booth（展示1+1组合作品及过程）、6.14多模态行业交流会、6.15专题圆桌（超级创作者呈现四种图景、《流浪地球》制片人与青年导演对谈）。具体时间地点详见图片。",
-      "category": "industry",
-      "score": 56,
-      "selected": true
-    },
-    {
       "id": "cmq2o63pf01dosl6n6n4wr3tr",
       "title": "阶跃首席科学家张祥雨合著论文 ResNet 获 CVPR 2026 「时间检验奖」",
       "title_en": null,
@@ -217,18 +373,6 @@
       "summary": "据《连线》今日报道，Meta 通过多次应用更新将人脸识别代码推送到智能眼镜配套 App 中，代号\"NameTag\"。该功能利用已部署的三个 AI 模型将人脸转换为\"人脸特征模板\"，与手机本地数据库匹配，识别成功后向佩戴者发送通知。App 下载量超 5000 万次。Meta 回应称代码仅为探索，尚未决定推出，且不会建立中央人脸数据库。此前 Meta 曾因人脸识别问题在伊利诺伊州和得克萨斯州分别达成 6.5 亿美元和 14 亿美元和解。",
       "category": "industry",
       "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq2l9lfs009zsl6n45wlgkj8",
-      "title": "FluxA与百度智能云战略合作，为Agent经济搭建基础设施",
-      "title_en": "FluxA🤝百度智能云：DAA时代，终于轮到AI自己赚钱了",
-      "url": "https://mp.weixin.qq.com/s/_Gxb4JWjVidXVfeCRjghzg",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-06-05T10:52:01.000Z",
-      "summary": "百度智能云与FluxA建立战略合作，共同为Agent经济搭建基础设施。百度智能云提供可交易商品体系、自雇佣交易机制、能力工具箱及出海分销通道；FluxA作为支付底座，提供低费率高频微交易、Financial Harness安全授权、全球收款与Token Paywall。目前超9万个Agent使用FluxA钱包，超1万个AI Agent资源完成商业化。今年一季度中国两地区OPC新增超6000户，日均Token消耗140万亿。DAA被视为AI时代衡量生态价值的核心指标。",
-      "category": "industry",
-      "score": 57,
       "selected": true
     },
     {
@@ -316,6 +460,18 @@
       "selected": true
     },
     {
+      "id": "cmpy9ij4s031cslaxasasdi2b",
+      "title": "Alphabet 融资850亿美元超额认购",
+      "title_en": "On Monday we announced an equity offering for Alphabet - part of our multi-year investment strategy …",
+      "url": "https://x.com/sundarpichai/status/2062203848673161267",
+      "source": "X：Sundar Pichai (@sundarpichai)",
+      "publishedAt": "2026-06-03T16:04:46.000Z",
+      "summary": "周一我们宣布了Alphabet的股权融资--这是我们多年投资策略的一部分，旨在抓住未来的AI机遇并支持我们看到的来自企业和消费者的需求。很高兴告诉大家，此次融资已大幅超额认购。我们共募集了约450亿美元，另将通过Q3启动的\"按市价发行\"计划再募集400亿美元（总计约850亿美元）。非常感谢我们的投资者，包括投资了100亿美元的伯克希尔·哈撒韦。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
       "id": "cmpy7c7v402flslaxwaf0jfr1",
       "title": "Suno完成4亿美元D轮融资",
       "title_en": "We're thrilled to announce Suno's next chapter： a $400M Series D at a $5.4B valuation！ 🚀 Our missio…",
@@ -352,18 +508,6 @@
       "selected": true
     },
     {
-      "id": "cmpxwnz6900slsliwlo35fqk0",
-      "title": "Qwen Cloud全球AI黑客马拉松启动",
-      "title_en": "The first-ever Qwen Cloud Global AI Hackathon is LIVE！ Join 5 advanced tracks to push AI agent limi…",
-      "url": "https://x.com/alibaba_cloud/status/2062113338994172169",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-06-03T10:05:06.000Z",
-      "summary": "首届Qwen Cloud全球AI黑客马拉松现已启动！\n\n参与5大高级赛道，在全球舞台上挑战AI智能体极限。\n\n总奖金池超过70，000美元（赛道冠军1万美元）。\n\n立即在Devpost报名：https：//click.qwencloud.com/m/20000000281/",
-      "category": "industry",
-      "score": 65,
-      "selected": true
-    },
-    {
       "id": "cmpxlx0y5058eslckymzyv282",
       "title": "消息称 DeepSeek 首轮融资拟筹集 500 亿元，腾讯、宁德时代等参投",
       "title_en": null,
@@ -388,18 +532,6 @@
       "selected": true
     },
     {
-      "id": "cmpxhlosv042lslcki3p7lb9x",
-      "title": "宏利香港与阿里云达成AI战略合作",
-      "title_en": "Manulife Hong Kong announced a strategic partnership with Alibaba Cloud to establish a collaboration…",
-      "url": "https://x.com/alibaba_cloud/status/2062006591377829922",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-06-03T03:00:56.000Z",
-      "summary": "宏利香港宣布与阿里云建立战略合作伙伴关系，旨在构建一个专注于推进负责任的AI创新，并加速AI技术在业务中部署的合作框架。",
-      "category": "industry",
-      "score": 62,
-      "selected": true
-    },
-    {
       "id": "cmpxfhah803htslckwpwwf6sf",
       "title": "Sensor Tower：OpenAI 旗下 ChatGPT 月活已破 10 亿，史上最快",
       "title_en": null,
@@ -409,90 +541,6 @@
       "summary": "据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2026 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。",
       "category": "industry",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmpx6ffoc010yslckfofiel4y",
-      "title": "Anthropic支持美国AI行政令实施",
-      "title_en": "This Executive Order is an important step in strengthening America's leadership in AI. We look for…",
-      "url": "https://x.com/AnthropicAI/status/2061924580222968183",
-      "source": "X：Anthropic (@AnthropicAI)",
-      "publishedAt": "2026-06-02T21:35:03.000Z",
-      "summary": "这项行政令是加强美国AI领导地位的重要一步。\n\n我们期待与白宫合作，支持其实施。\n\nhttps：//www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
-      "category": "industry",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmpx0v4c202l6sl793y51zks8",
-      "title": "Alphabet拟融资800亿美元 Anthropic提交IPO申请",
-      "title_en": "Alphabet To Raise $80B in Equity， Anthropic Files For IPO | Bloomberg Tech 6/2/2026",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-02/bloomberg-tech-6-2-2026-video",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-02T18:39:17.000Z",
-      "summary": "Alphabet宣布拟通过股权融资800亿美元，用于扩展AI基础设施。Anthropic已秘密提交IPO申请，在上市竞赛中领先于竞争对手OpenAI。此外，SpaceX正与华尔街机构协商其IPO的承销费用，HPE则因AI基础设施需求旺盛，年度销售预期超出市场估计。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmpwqmim605awslsn13ybjfuw",
-      "title": "Nathan Lambert离开Ai2，结束2.5年OLMO等项目工作",
-      "title_en": "My time at Ai2 / @allen_ai has come to an end. Ai2 is a wonderful place. The last 2.5+ years build…",
-      "url": "https://x.com/natolambert/status/2061813361848029631",
-      "source": "X：Nathan Lambert (@natolambert)",
-      "publishedAt": "2026-06-02T14:13:06.000Z",
-      "summary": "Ai2（Allen Institute for AI）研究员Nathan Lambert宣布离职。他在Ai2工作超过2.5年，期间主导或参与了OLMO和Tulu等开源模型项目，称其为职业生涯的巅峰。他表示将暂时休息，未来仍会继续深耕开源模型与开放科学领域。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq2o5zfw018nsl6n9xplfvt0",
-      "title": "截稿在即|可灵AI NEXTGEN高校AIGC创作大赛评委阵容揭晓",
-      "title_en": "截稿在即|评委阵容揭晓，共赴创意之约",
-      "url": "https://mp.weixin.qq.com/s/hk99tlRYeQjTJ6oiVftxqg",
-      "source": "公众号：可灵AI（快手·视频）",
-      "publishedAt": "2026-06-02T12:14:40.000Z",
-      "summary": "可灵AI NEXTGEN高校AIGC创作大赛评审委员会正式官宣，评委包括清华大学双聘教授沈阳、浙江传媒学院教授陈奕、中国美术学院教授杜海滨、中国传媒大学主任丛芳君，以及可灵AI超级创作者汗青、陈升亮。作品征集时间为3月16日至6月7日，获奖名单将于6月18日公示。目前征稿进入最后5天冲刺阶段，优秀获奖作品有机会在首尔电影中心及釜山国际电影节期间展映。",
-      "category": "industry",
-      "score": 55,
-      "selected": true
-    },
-    {
-      "id": "cmq2l9lfs00a6sl6nhu2ne349",
-      "title": "北京人形机器人创新中心联合百度智能云发起具身智能黑客松大赛",
-      "title_en": "北京人形🤝百度智能云：百万奖金，真机悬赏！具身智能黑客松大赛等你来战",
-      "url": "https://mp.weixin.qq.com/s/CBGF3yJ1010_EJnS1Lav0g",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-06-02T10:00:00.000Z",
-      "summary": "北京人形机器人创新中心与百度智能云发起具身智能黑客松大赛，设运动控制与VLA模型微调双赛道，面向全球征集真机可部署方案。提供百万奖金、天工3.0本体及世界人形机器人运动会直通名额。天工Ultra曾夺半马冠军（2：40：42）及百米冠军（21.50秒）。",
-      "category": "industry",
-      "score": 58,
-      "selected": true
-    },
-    {
-      "id": "cmpwf05rk02d5slsnyqog4n3x",
-      "title": "SK会长崔泰源：SK海力士计划未来五年内晶圆产能翻倍",
-      "title_en": "SK 会长崔泰源：计划未来五年内，SK 海力士晶圆产能实现翻倍",
-      "url": "https://www.ithome.com/0/958/810.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-02T08:31:12.000Z",
-      "summary": "SK海力士会长崔泰源宣布，计划在未来五年内将整体晶圆产能提高一倍，以应对AI普及带来的持续存储供应短缺。他预测AI数据中心和AI PC的普及将持续拉动存储需求，供需紧张局面可能延续至2030年。SK海力士将投入大规模资金用于设备、建设等扩张，尽管面临前置时间长（新建晶圆厂至少三年）和资源成本上涨等挑战。目前，SK海力士市值已首次突破1万亿美元。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpwrifyw0017sl79bcjk20i4",
-      "title": "OpenAI呼吁通过全球领导力推进青年AI安全与机遇",
-      "title_en": "Advancing youth safety and opportunity through global leadership",
-      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-02T07:00:00.000Z",
-      "summary": "OpenAI呼吁通过设立专门的AI安全研究所，在全球范围内采取行动，以保障青少年在使用AI时的安全，并创造更多发展机遇。",
-      "category": "industry",
-      "score": 69,
       "selected": true
     }
   ]

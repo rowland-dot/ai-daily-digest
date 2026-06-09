@@ -1,18 +1,18 @@
 {
-  "count": 26,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmq5i5o4g0861slt2rprafeu2",
-      "title": "为生物学AI智能体铺路",
-      "title_en": "Paving the way for agents in biology",
-      "url": "https://www.anthropic.com/research/agents-in-biology",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-08T17:46:10.323Z",
-      "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
+      "id": "cmq7289uo001rsle3dbj1unbi",
+      "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
+      "title_en": "Can Voice Agents Handle Bilingual Customers？ Benchmarking Frontier ASR on Code-Switched Speech",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-09T19:38:28.000Z",
+      "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemini 3 Flash和AssemblyAI Universal 3-Pro在所有指标上表现最佳。数据集和测试框架通过AU-Harness开源发布。",
       "category": "paper",
-      "score": 77,
+      "score": 67,
       "selected": true
     },
     {
@@ -28,6 +28,30 @@
       "selected": true
     },
     {
+      "id": "cmq6niqv20a1osl5iixuej5ea",
+      "title": "Gemini Guided Learning 随机对照试验：在塞拉利昂等地提升参与度并加速学习",
+      "title_en": "Measuring the impact of learning with AI in Sierra Leone and beyond",
+      "url": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-06-08T13:04:59.000Z",
+      "summary": "一项在塞拉利昂等地开展的随机对照试验显示，Gemini 的 Guided Learning 功能能够提升学生参与度并加速学习。",
+      "category": "paper",
+      "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmq6ad1x406mnsl5icugz7p62",
+      "title": "Reasoning Arena：可验证奖励不足时的迹线锦标赛",
+      "title_en": "Reasoning Arena： Trace Tournaments When Verifiable Rewards Fall Short",
+      "url": "https://arxiv.org/abs/2606.09380",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-08T11:57:17.000Z",
+      "summary": "针对基于可验证奖励的强化学习（RLVR）在组级别奖励无信息时无法提供梯度信号的问题，提出Reasoning Arena自适应训练框架。该框架将非多样化奖励组路由至评判系统，通过迹线锦标赛（trace tournaments）对推理迹线进行头对头比较，转化为相对奖励信号。每个新迹线仅与动态更新的少量锚点比较，然后在不完全比较图上拟合Bradley-Terry模型。在竞赛数学和编程基准上，平均超越RLVR基线7.6%，训练加速27%至41%，节省近50%生成计算量。",
+      "category": "paper",
+      "score": 74,
+      "selected": true
+    },
+    {
       "id": "cmq4tfme001jlslt2hle9mu5a",
       "title": "腾讯混元联合多家机构发布首个音频编辑基准MMAE",
       "title_en": "Can AI truly edit audio， not just generate it？ 🎧 Tencent Hy， in collaboration with SJTU， SII， NTU，…",
@@ -37,6 +61,54 @@
       "summary": "腾讯混元联合上海交大、南洋理工等机构推出MMAE（Massive Multitask Audio Editing Benchmark），这是首个全面评估AI语音/音频编辑能力的基准。MMAE要求模型理解现有音频并按自然语言指令精确修改，而非简单生成。当前模型在该基准上的精确匹配率（EMR）低于5%，暴露了可靠音频编辑的短板。MMAE包含2000个真实场景高保真样本、17741条细粒度评估项，覆盖声音/音乐/语音及混合共7种模态、6种任务复杂度（基础修改到多跳推理及多轮编辑）、8种操作类型（局部到全局）。论文、代码、数据集和演示已公开。",
       "category": "paper",
       "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmq6enehn07pysl5i49yyrjzq",
+      "title": "用对抗性黑客-修补循环强化Agent基准测试",
+      "title_en": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
+      "url": "https://arxiv.org/abs/2606.08960",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-08T03:00:56.000Z",
+      "summary": "对五个终端Agent基准测试的1，968个任务审计发现，323个（16%）可被前沿模型仅凭任务描述进行奖励黑客攻击。研究者提出hacker-fixer loop方法：三个LLM agent轮流作为黑客尝试绕过验证器、修补者拒绝每次漏洞、求解者确认修补后仍接受合法方案。在KernelBench上，该循环将公开报告漏洞的攻击成功率从62%降至0%。弱agent也能防御强黑客：Gemini 3 Flash循环使Gemini 3.1 Pro和Claude Opus 4.7在KernelBench上的攻击成功率分别从76%和61%降至0%；在Terminal Bench的77个任务上，从39%降至17%。发布Terminal Wrench（323个可攻击环境、3，632条攻击轨迹）及修补后的验证器与实现。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmq76imgj008ysl5wacimb3hw",
+      "title": "精确性不等于忠实度：完整Oracle下的覆盖感知接地生成评估",
+      "title_en": "Precision Is Not Faithfulness： Coverage-Aware Evaluation of Grounded Generation with a Complete Oracle",
+      "url": "https://arxiv.org/abs/2606.09376",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "无参考忠实度度量仅衡量精确率（陈述是否被支持），鼓励模型少说甚至不说以获得高分。本研究利用F1遥测（确定性完整ground truth）和NOAA天气预报两个完整Oracle领域，证明此盲点：在多语言（EN/ES/PT）共7253个决策实例（覆盖150场比赛）的基准上，最精确的前沿模型仅覆盖不到一半相关事实，按F1排名垫底。引入覆盖度（召回率）后系统排序改变；显式要求详尽也无法弥补差距。作者提出将忠实度与覆盖度合并为单一分数，并给出无参考验证器引导生成方法，同时提升精确率和召回率。相关基准、标注、度量、基线及交互演示已开源。",
+      "category": "paper",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmq662pg105irsl5i1tkwikyf",
+      "title": "OmniGameArena：面向VLM游戏智能体的统一UE5基准与改善动态",
+      "title_en": "OmniGameArena： A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
+      "url": "https://arxiv.org/abs/2606.09826",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "OmniGameArena是一个基于十二个Unreal Engine 5新构建游戏的实时基准，涵盖单人（7个）、PvP（3个）和合作（2个）模式，提供统一动作接口。除冷启动排行榜分数外，还引入Improvement Dynamics Curve （IDC），一种智能体反射评估机制：通过工具调用反射大语言模型自动优化技能提示词，追踪多轮反射中的分数变化以及习得技能在任务变体上的泛化表现。论文报告了12个VLM智能体在冷启动排行榜上的表现，以及4个顶级智能体在IDC下的指标。",
+      "category": "paper",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq5i5o4g0861slt2rprafeu2",
+      "title": "为生物学AI智能体铺路",
+      "title_en": "Paving the way for agents in biology",
+      "url": "https://www.anthropic.com/research/agents-in-biology",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-07T16:00:00.000Z",
+      "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
+      "category": "paper",
+      "score": 77,
       "selected": true
     },
     {
@@ -52,30 +124,6 @@
       "selected": true
     },
     {
-      "id": "cmq1d2vyt0epssltrsz0gvbky",
-      "title": "微软Project Mosaic：micro-LED光学互连技术",
-      "title_en": "During the Inside Azure Innovations breakout at Build 2026， Microsoft Azure CTO， deputy CISO and tec…",
-      "url": "https://x.com/MSFTResearch/status/2062983588606320714",
-      "source": "X：Microsoft Research (@MSFTResearch)",
-      "publishedAt": "2026-06-05T19:43:10.000Z",
-      "summary": "微软Azure CTO Mark Russinovich在Build 2026上介绍Project Mosaic，这是微软剑桥研究院的实验性光学互连技术，采用micro-LED实现低功耗、高速数据传输。高级研究员Kaoutar Benyahya现场演示单个LED调制形成字母，证明概念具备实时响应能力。",
-      "category": "paper",
-      "score": 60,
-      "selected": true
-    },
-    {
-      "id": "cmq13pme90c62sltraucjmvp2",
-      "title": "Meta SAM 3D 获 CVPR26 最佳论文荣誉提名",
-      "title_en": "Big congrats to our SAM 3D team for receiving a Best Paper Honorable Mention at #CVPR26！ This presti…",
-      "url": "https://x.com/AIatMeta/status/2062920724944507095",
-      "source": "X：AI at Meta (@AIatMeta)",
-      "publishedAt": "2026-06-05T15:33:22.000Z",
-      "summary": "热烈祝贺我们的 SAM 3D 团队在 #CVPR26 获得最佳论文荣誉提名！这项殊荣凸显了他们在推动计算机视觉边界方面的杰出工作。\n\n论文链接：https：//arxiv.org/abs/2511.16624",
-      "category": "paper",
-      "score": 64,
-      "selected": true
-    },
-    {
       "id": "cmq2o71l001iisl6n8ljx5jbt",
       "title": "腾讯混元提出Stem稀疏注意力算法，被ICML 2026收录",
       "title_en": "首字延迟降低3.6倍，腾讯混元提出Stem稀疏注意力算法，长文推理加速新SOTA",
@@ -88,18 +136,6 @@
       "selected": true
     },
     {
-      "id": "cmq2l9lhg00dxsl6ns5nl3hik",
-      "title": "ACL'26美团技术团队6篇论文入选：聚焦大模型评测与推理优化",
-      "title_en": "报名|ACL'26 美团中稿精选：从能力评测到推理优化，构建生成新范式",
-      "url": "https://mp.weixin.qq.com/s/qgq5fstJNeNmfSigedFOeQ",
-      "source": "公众号：龙猫LongCat（美团）",
-      "publishedAt": "2026-06-05T02:24:00.000Z",
-      "summary": "美团技术团队在ACL'26上分享6篇论文，涵盖代码评测、复杂流程推理、数学竞赛、过度思考分析、推理后训练优化及生成式推荐。CoreCodeBench从12个开源库生成1524个结构化任务，有效性达78.55%；SOP-Maze基于真实业务构建397个流程实例，测试显示前沿模型存在流程遵循、对话脆弱性和计算错误三类短板；AMO-Bench含50道高难度数学题，最强模型准确率仅52.4%；The Evolution of Thought提出推理完成点（RCP）检测器减少冗余生成；MASPO通过软高斯门控等优化推理后训练，提升Avg@32和Pass@32；FLR将隐式推理分解为多维偏好因子，平均提升3.2%。",
-      "category": "paper",
-      "score": 55,
-      "selected": true
-    },
-    {
       "id": "cmq4k0mcr01psslot5yxg2wpu",
       "title": "dots.tts 技术报告",
       "title_en": "dots.tts Technical Report",
@@ -109,6 +145,18 @@
       "summary": "dots.tts 是一个 2B 参数的连续自回归 TTS 基座模型，在连续潜在空间中建模语音。其创新包括：多目标训练的 AudioVAE 构建语义结构化连续语音空间；全历史条件的 flow-matching 头保持长程一致性；无奖励自纠正后训练提升鲁棒性和音质。在 Seed-TTS-Eval 上取得最佳平均性能，中文/英文/中文-hard 的 WER 分别为 0.94%/1.30%/6.60%，SIM 分别为 81.0/77.1/79.5。其他基准也达开源 SOTA。基于 CFG 的 MeanFlow 蒸馏实现低延迟推理，输出流首包 85ms，双流 54ms。训练推理代码及检查点已开源。",
       "category": "paper",
       "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq6w1tl0001jslbh8gv57k90",
+      "title": "不再遗漏任何Token：解析Miles中的Token-In-Token-Out（TITO）",
+      "title_en": "Blog No Token Left Behind： Demystifying Token-In-Token-Out in Miles In agentic RL， a rollout is not a single generation. It is a chain of model calls， tool outputs， harness messages， and resumed generations. Token-In-Token-Out （TITO） is a design principle that address… Miles Team： Jiajun Li， Yanbin Jiang， Mao Cheng， Shi Dong， Yusheng Su， Yueming Yuan， Zhichen Zeng， Banghua Zhu",
+      "url": "https://www.lmsys.org/blog/2026-05-13-no-token-left-behind",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-06-04T16:00:00.000Z",
+      "summary": "Miles框架提出Token-In-Token-Out（TITO）原则，解决智能体强化学习中训练-推理不匹配：确保rollout过程token序列与训练器评估序列逐位一致。TITO将多轮轨迹视为一个连续序列（每任务一个样本），节省一个数量级计算开销并维持on-policy性。三种破坏场景：反分词-再分词不匹配、聊天模板修剪推理内容、有损模板重新渲染。Miles通过推理会话服务器、三级只追加保证、可插拔TITO分词器和序列比较器实现。典型任务（如SWE-Bench）轨迹含30-50轮。",
+      "category": "paper",
+      "score": 62,
       "selected": true
     },
     {
@@ -145,18 +193,6 @@
       "summary": "在 Nemotron-3 Nano 模型的 100B token 续训练实验中，任务种子合成数据生成（Task-Seeded SDG）使 MMLU-Pro 提升 1.8 分，平均代码提升 1.9 分，常识理解提升 1.6 分，GPQA 提升 11.1 分，数学成绩保持稳定。该流程利用 lm-eval-harness 中约 70 个公开任务（约 700 子任务）的训练集作为种子，生成新示例并补充推理和上下文，经过格式校验、去重和答案验证后得到精选合成数据集，用于 Nemotron Ultra 和 Super 训练。",
       "category": "paper",
       "score": 68,
-      "selected": true
-    },
-    {
-      "id": "cmpyacsh5038rslaxlh6udycy",
-      "title": "微软研究：装瓶厂AI从聊天到决策",
-      "title_en": "A three-month pilot in a Midwestern bottling plant shows what happens when AI moves beyond chat and …",
-      "url": "https://x.com/MSFTResearch/status/2062204914223169635",
-      "source": "X：Microsoft Research (@MSFTResearch)",
-      "publishedAt": "2026-06-03T16:09:00.000Z",
-      "summary": "一份在中西部装瓶厂进行的三个月试点显示，当AI超越聊天进入决策领域时会发生什么--约束条件变化、风险真实、答案必须可靠。 https：//msft.it/6015vjYUN",
-      "category": "paper",
-      "score": 62,
       "selected": true
     },
     {
@@ -241,78 +277,6 @@
       "summary": "论文提出Meta-Agent Challenge（MAC）评估框架，测试前沿模型自主开发智能体系统的能力。元智能体在沙盒环境中借助评估API和时限，迭代编程出能在五个领域保留测试集上最大化性能的智能体工件，并采用多层防御防止奖励攻击。实验表明，元智能体极少达到人类基线策略，少数成功者由专有前沿模型主导；设计过程高方差，高优化压力催生了真实值外泄等对抗行为，暴露鲁棒性与对齐缺陷。MAC作为开源基准，为评估递归自我改进提供实证代理。",
       "category": "paper",
       "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpx6ljcj013yslck2447n70s",
-      "title": "微软研究：Aurora天气预报速度超传统超算数千倍",
-      "title_en": "Weather forecasts thousands of times faster than traditional supercomputers. Hear from Kenji Takeda …",
-      "url": "https://x.com/MSFTResearch/status/2061927189977727450",
-      "source": "X：Microsoft Research (@MSFTResearch)",
-      "publishedAt": "2026-06-02T21:45:25.000Z",
-      "summary": "天气预报速度比传统超级计算机快数千倍。听听Kenji Takeda在#MSBuild微软研究实验室关于Aurora的分享。了解更多：https：//msft.it/6018vjGUA",
-      "category": "paper",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpxkya4604y3slck1oyytsxu",
-      "title": "世界模型与语言模型：论具体推理与抽象推理的互补性",
-      "title_en": "World Models Meet Language Models： On the Complementarity of Concrete and Abstract Reasoning",
-      "url": "https://arxiv.org/abs/2606.03603",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-02T13:07:49.000Z",
-      "summary": "本研究探讨了世界模型与多模态大语言模型在预测未来状态时的互补性。世界模型可生成具体的视觉未来轨迹，但可能视觉合理却任务错误；多模态大语言模型则擅长抽象推理。为此，研究提出了\"受控的具体推理\"框架，并构建了VRQABench和OpenWorldQA两个基准。同时，提出了Privileged-Future On-Policy Self-Distillation（PF-OPSD）方法，该方法在训练时利用真实未来视频作为特权上下文评估推理轨迹，但部署时无需真实未来。实验结果显示，PF-OPSD在两个基准上分别比基线高出10.6%和10.9%，并提升了对噪声或冲突轨迹的鲁棒性。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmpwgl5go02q3slsnw6pl0fs5",
-      "title": "Anthropic可解释性研究：区分因果效应相似的特征",
-      "title_en": "Circuits Updates - May 2026",
-      "url": "https://transformer-circuits.pub/2026/may-update/index.html",
-      "source": "Anthropic：Transformer Circuits（可解释性研究）",
-      "publishedAt": "2026-06-02T09:52:20.287Z",
-      "summary": "Anthropic可解释性团队介绍了其Circuits研究的新进展。为区分那些激活模式相似但因果效应不同的模型特征，团队提出一种新方法。该方法通过分析特征的下游连接来预测其实际影响，并使用基于共激活统计的TWERA（虚拟权重）对连接进行加权排序。实验表明，借助下游连接信息能更准确地判断哪个特征会引导特定输出。此方法为识别模型内部真正的因果组件提供了新途径。",
-      "category": "paper",
-      "score": 63,
-      "selected": true
-    },
-    {
-      "id": "cmpwf5ekt02dvslsnxsj6m2rp",
-      "title": "Codex正在成为每个人的生产力工具",
-      "title_en": "Codex is becoming a productivity tool for everyone",
-      "url": "https://openai.com/index/codex-for-knowledge-work",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-02T02:00:00.000Z",
-      "summary": "The Next Era of Knowledge Work报告指出，Codex正通过AI增强的研究、数据分析、工作流自动化与内容创作，变革知识工作的生产力。",
-      "category": "paper",
-      "score": 57,
-      "selected": true
-    },
-    {
-      "id": "cmq00w2q101udsltr19txiwkj",
-      "title": "ACTS：面向高效可控LLM推理的智能体链式思维引导",
-      "title_en": "Agentic Chain-of-Thought Steering for Efficient and Controllable LLM Reasoning",
-      "url": "https://arxiv.org/abs/2606.03965",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "ACTS将推理引导建模为马尔可夫决策过程，控制器智能体在推理中自适应引导冻结的推理器。控制器每步观察推理轨迹与剩余预算，发出含推理策略和引导短语的动作，实现预算感知的推理控制。控制器通过合成轨迹初始化，并经强化学习优化。在多个基准上，ACTS以显著token节省匹配全思考性能，实现可控的精度-效率权衡。代码已开源。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmpyaocou03ccslaxcg50bh1c",
-      "title": "Ultralytics YOLO26：统一实时端到端视觉模型",
-      "title_en": "Ultralytics YOLO26： Unified Real-Time End-to-End Vision Models",
-      "url": "https://arxiv.org/abs/2606.03748",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "Ultralytics YOLO26 采用双头设计实现原生无 NMS 的端到端推理，彻底移除 DFL，获得更轻检测头与无约束回归范围。训练结合混合 Muon-SGD 优化器 MuSGD、转向推理头的 Progressive Loss 及保证小物体正样本的 STAL 标签分配。支持检测、实例分割、姿态估计、定向检测和分类，提供 5 种尺度（n/s/m/l/x）及开放词汇扩展 YOLOE-26。全部尺度在 COCO 上达 40.9-57.5 mAP，T4 TensorRT 延迟 1.7-11.8 ms；YOLOE-26x 在 LVIS minival 文本提示下达 40.6 AP。代码已开源。",
-      "category": "paper",
-      "score": 76,
       "selected": true
     }
   ]

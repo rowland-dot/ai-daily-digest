@@ -1,8 +1,116 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwNDQ0ODAwMDAwLCJpIjoiY21weXdwMmVpMDQxYXNsaTNxOWJxbmtzMCJ9",
+  "nextCursor": "eyJhIjoxNzgwNTA0NjI0MDAwLCJpIjoiY21weWI5OTE4MDNpNXNsYXh5dHB2ODg4eCJ9",
   "items": [
+    {
+      "id": "cmq74r6rm008wslophwgthx4l",
+      "title": "Claude Managed Agents 新增定时运行和环境变量存储功能",
+      "title_en": "New in Claude Managed Agents： run agents on a schedule and store environment variables in vaults",
+      "url": "https://claude.com/blog/whats-new-in-claude-managed-agents",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-06-09T21:06:26.068Z",
+      "summary": "Claude Managed Agents 今日在 Claude Platform 公开测试两项新功能：代理可按 cron 计划自动执行周期性任务（如夜间数据同步、周度合规扫描、每日摘要），无需用户自建调度器，支持暂停、恢复、归档或按需触发；vaults 新增环境变量支持，允许代理通过 CLI 进行认证请求，真实密钥仅附加在网络边界，代理无法读取。已集成的 CLI 包括 Browserbase、KERNEL、Notion、Ramp 和 Sentry。Rakuten、Actively AI、Ando、Milana 等团队正在使用这些功能实现自动化数据报表、跨账户搜索、招聘提醒等场景。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq6zc2gi00zlslbhqf3iwgv1",
+      "title": "NotebookLM 笔记本功能在 Gemini App 欧洲全面上线",
+      "title_en": "Notebooks in @GeminiApp are now 100% rolled out in Europe！ We're so excited to hear what you think！…",
+      "url": "https://x.com/NotebookLM/status/2064410506287538387",
+      "source": "X：NotebookLM (@NotebookLM)",
+      "publishedAt": "2026-06-09T18:13:14.000Z",
+      "summary": "NotbookLM 宣布其笔记本功能已在欧洲的 Gemini App 中 100% 上线。此前用户只能上传笔记本作为 Gemini 的来源，现在可直接在 Gemini App 内访问所有个人未共享的笔记本，并将与 Gemini 的对话作为新笔记本或已有笔记本的来源。该功能先面向 Google AI Ultra、Pro 和 Plus 订阅者的网页端，未来几周将扩展到移动端、更多欧洲国家及免费用户。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmq737old00b0sle3025e4b4c",
+      "title": "OpenRouter 推出 Advisor 工具：让低成本模型可随时调用强模型增强生成",
+      "title_en": "Advisor： Give Any Model a Lifeline to a Smarter One",
+      "url": "https://openrouter.ai/blog/advisor-server-tool",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-06-09T18:00:00.000Z",
+      "summary": "OpenRouter 发布 advisor 服务器工具，允许一个快速、便宜的模型在生成过程中咨询一个更强大的模型。具体而言，可用 GPT-4o Mini 处理日常例行工作，在关键时刻调用 Claude Fable 解决真正重要的问题，从而实现成本和质量的动态平衡。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq6yahue00p0slbh0r0bgk9q",
+      "title": "Cursor Evals 新增成本与输出 Token 图表",
+      "title_en": "we just shipped some improvements to http：//cursor.com/evals！ you can now see cost， output tokens a…",
+      "url": "https://x.com/ericzakariasson/status/2064404502053294565",
+      "source": "X：Eric Zakariasson (@ericzakariasson)",
+      "publishedAt": "2026-06-09T17:49:22.000Z",
+      "summary": "我们刚刚向 http：//cursor.com/evals 推送了一些改进！\n\n你现在可以看到每个模型的成本、输出 token 和步骤绘制在图表中",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq6x171500clslbherqa4dhg",
+      "title": "Responses API 网页搜索新增图片结果",
+      "title_en": "Your app can now search the web for images. Web search in the Responses API now supports image resu…",
+      "url": "https://x.com/OpenAIDevs/status/2064395155688616153",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-06-09T17:12:14.000Z",
+      "summary": "你的应用现在可以搜索网页上的图片。\n\nResponses API 中的网页搜索现在除了文本结果外，还支持图片结果，因此你可以构建能展示商品、地点、视觉参考和来源链接以激发灵感的应用。",
+      "category": "ai-products",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmq6w8kfq0054slbhl8fai2wp",
+      "title": "World Labs与Lore合作打造互动体验",
+      "title_en": "The creativity and imagination is out of the world！ So grateful that @theworldlabs got to partner wi…",
+      "url": "https://x.com/drfeifei/status/2064387365930676695",
+      "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
+      "publishedAt": "2026-06-09T16:41:17.000Z",
+      "summary": "创意和想象力无与伦比！非常感谢@theworldlabs能与@withloreco的优秀人才合作，将他们不可思议的想法转化为用户可以享受的互动体验！🤩",
+      "category": "ai-products",
+      "score": 78,
+      "selected": true
+    },
+    {
+      "id": "cmq6l8zwy09g0sl5ioa7ahxqv",
+      "title": "火山引擎TRAE Work企业版正式上线，面向全员提供AI办公平台",
+      "title_en": "TRAE Work企业版正式上线：每个岗位都有AI搭档",
+      "url": "https://mp.weixin.qq.com/s/f7QzLzwHPHHv3tWT1Wrnkw",
+      "source": "公众号：火山引擎",
+      "publishedAt": "2026-06-09T11:45:02.000Z",
+      "summary": "火山引擎将TRAE Solo品牌升级为TRAE Work企业版，发布面向企业的AI办公平台。平台提供Work和Code两种模式：Work模式面向产品、运营、市场等非技术岗位，支持上传.pptx、.xlsx、图片等多种格式混合输入直接输出PPT或文档，支持语音讨论自动整理结构化纪要，支持按天或按周自动运行的数据整理和报告生成；Code模式面向开发者和业务同学，可用自然语言描述需求直接生成页面或小应用。桌面端、网页端和移动端多端同步。企业后台可统一配置模型、用量限额、上传内部文档，沙箱机制隔离执行，支持命令黑名单、MCP白名单、内容安全策略，关键操作可审计。同时发起TRAE Enterprise Fellow招募计划。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmq6w49b2002qslbh4c4bh43i",
+      "title": "Gopuff与SpaceXAI推出Go AI购物助手",
+      "title_en": "Powering Gopuff's Go agent Jun 9， 2026 # Powering Gopuff's Go agent Gopuff and SpaceXAI launched Go， an AI-powered shopping assistant built into the Gopuff app and powered by Grok text， audio， and image models. Read More",
+      "url": "https://x.ai/news/grok-gopuff",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "Gopuff与SpaceXAI合作推出Go智能购物助手，内置于Gopuff应用，由Grok文本、音频和图像模型驱动。Go结合Grok的推理、语音和图像生成能力与Gopuff的13年需求智能，利用X和网络实时信号。它可在用户打开应用前根据历史偏好和天气等信号构建个性化购物车，并包含基于Grok Imagine的超逼真视觉购物信息流。Go目前在美国iOS和Android端可用，随后在英国推出。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true
+    },
+    {
+      "id": "cmq5ujnt202iesl5ig6vg5i3r",
+      "title": "Apple Core AI 框架",
+      "title_en": null,
+      "url": "https://developer.apple.com/documentation/coreai",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-08T23:05:07.159Z",
+      "summary": "一篇关于 Apple Core AI 框架的 Hacker News 帖子获得 109 个点赞。帖子内容包含一张苹果开发者 OG 图片和一个指向 Apple Core AI Framework 官方文档的链接（developer.apple.com）。该帖子由 buzzing.cc 中文翻译，发布于 2026 年 6 月 8 日 02：47（UTC）。",
+      "category": "ai-products",
+      "score": 77,
+      "selected": true
+    },
     {
       "id": "cmq5p0eag0118sl5iydnwrhui",
       "title": "Viggle API 上线：任意角色任意动作秒级生成",
@@ -13,18 +121,6 @@
       "summary": "推出 Viggle API。\n\n给任意角色添加任意动作，一次 API 调用--数秒内即可激活。\n\n可接入 Claude、Codex 或你正在构建的任何智能体。起价 $0.01/秒。\n\n注册即获 100 次免费额度。\n\n转发 + 关注 + 评论，10 位中奖者再获 100 次！\n\n了解更多👇",
       "category": "ai-products",
       "score": 66,
-      "selected": true
-    },
-    {
-      "id": "cmq5kh0q200g7sl38uoitn0e3",
-      "title": "Claude 为 Connector 开发者推出性能监控仪表盘",
-      "title_en": "Observability for developers building connectors",
-      "url": "https://claude.com/blog/observability-for-developers-building-connectors",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-06-08T18:50:51.580Z",
-      "summary": "Claude 为目录中已发布的 Connector 新增性能监控仪表盘（公开测试版）。所有者可追踪活跃用户、工具调用次数、目录排名、健康评分、错误率、延迟，并按工具细分错误归因；还能按 Claude、Claude Code、Cowork 等产品分解使用情况。访问需 Team 或 Enterprise 账号（Admin/Owner 权限或自定义角色）。基于 MCP 构建的 Connector 可直接在 Claude 应用内提交至目录，该目录已有超 300 个第三方 Connector，每日被数百万人使用。",
-      "category": "ai-products",
-      "score": 72,
       "selected": true
     },
     {
@@ -124,18 +220,6 @@
       "selected": true
     },
     {
-      "id": "cmq4xiqwk02l4slt2amhfh2do",
-      "title": "PixVerse Creative Partner Program 2.0 上线",
-      "title_en": "Thank you for the thoughtful sharing. Our chat at Berlinale was truly inspiring and rewarding！ Looki…",
-      "url": "https://x.com/PixVerse_/status/2063890444413706442",
-      "source": "X：PixVerse (@PixVerse_)",
-      "publishedAt": "2026-06-08T07:46:41.000Z",
-      "summary": "PixVerse 宣布 Creative Partner Program （CPP） 2.0 正式上线，面向 AI 视频创作者。该计划围绕真实创作：发布、测试、教学、故事片及公开推广新想法。核心福利包括：合格帖子每周最高可获得 150，000 credits；每周 $2，500 现金奖池，单个创作者单周最高 $850；对大项目、教程、测试内容和电影节投稿提供特别支持。参与者还可获得更多曝光、项目机会及与 PixVerse 共创的可能。申请可通过官网进行。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true
-    },
-    {
       "id": "cmq59qphf05vuslt2zgw6ndy6",
       "title": "开源社区支持 OpenEnv 用于智能体强化学习",
       "title_en": "The Open Source Community is backing OpenEnv for Agentic RL",
@@ -148,6 +232,30 @@
       "selected": true
     },
     {
+      "id": "cmq5s35qm01vksl5i8iuvz0zv",
+      "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包",
+      "title_en": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
+      "url": "https://claude.com/blog/claude-for-foundation-models",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-06-07T16:00:00.000Z",
+      "summary": "Anthropic 通过一个新 Swift 包，让 Apple 开发者能在 Foundation Models 框架中直接调用 Claude。开发者用 Apple 框架以原生 Swift 方式，仅需三行代码即可通过引导生成返回类型化 Swift 值。当请求涉及多步推理、代码生成、联网搜索或数据分析时，Claude 可接手处理，并将流式响应传回同一视图。该支持可在 iOS 27、iPadOS 27、macOS 27、visionOS 27 和 watchOS 27 上使用，开发者需添加包并配置 Anthropic API 密钥。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true
+    },
+    {
+      "id": "cmq5kh0q200g7sl38uoitn0e3",
+      "title": "Claude 为 Connector 开发者推出性能监控仪表盘",
+      "title_en": "Observability for developers building connectors",
+      "url": "https://claude.com/blog/observability-for-developers-building-connectors",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-06-07T16:00:00.000Z",
+      "summary": "Claude 为目录中已发布的 Connector 新增性能监控仪表盘（公开测试版）。所有者可追踪活跃用户、工具调用次数、目录排名、健康评分、错误率、延迟，并按工具细分错误归因；还能按 Claude、Claude Code、Cowork 等产品分解使用情况。访问需 Team 或 Enterprise 账号（Admin/Owner 权限或自定义角色）。基于 MCP 构建的 Connector 可直接在 Claude 应用内提交至目录，该目录已有超 300 个第三方 Connector，每日被数百万人使用。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true
+    },
+    {
       "id": "cmq3nuz12009bsla9rbw1qhyn",
       "title": "Her · हेर - Claude Code 会话分析工具",
       "title_en": "Her · हेर - a detective for your Claude Code sessions",
@@ -157,18 +265,6 @@
       "summary": "Her（हेर）是专为 Claude Code 设计的会话分析工具。用户上传 `.jsonl` 文件后，Her 用自然语言重建每轮交互，标记部署、配置变更、秘密等高风险操作并定位到具体轮次。它展示 token 消耗、所用工具、子智能体、技能和 MCP 服务器，并结合 Anthropic 与社区最佳实践给出改进建议（仅在有明确可修复模式时）。内置\"Ask Her\"问答功能，支持单会话与跨会话项目分析。工具不调用第三方 AI API，使用 Nemotron-Mini-4B-Instruct 模型在 Hugging Face ZeroGPU 上运行，评估引擎完全确定，模型仅负责文本生成与建议。Her 内置 Homebrew、npm、PyPI 主流 CLI 工具数据库，自动识别会话中使用的工具，并对部署工具、数据库客户端等执行活动进行标记提醒。",
       "category": "ai-products",
       "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq3e8n9k06evsl97fee4j5ki",
-      "title": "Opus 4.8 缓存命中率与有效价格可实时查看",
-      "title_en": "How do different model providers differ on cache hit rate and effective price？ Now you can see real…",
-      "url": "https://x.com/OpenRouter/status/2063504950429147376",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-06-07T06:14:52.000Z",
-      "summary": "不同模型提供商在缓存命中率和有效价格上有什么差异？\n\n现在你可以从 Pricing 标签查看实时缓存命中率和历史流量。这里是 Opus 4.8：https：//openrouter.ai/anthropic/claude-opus-4.8/pricing",
-      "category": "ai-products",
-      "score": 62,
       "selected": true
     },
     {
@@ -316,6 +412,18 @@
       "selected": true
     },
     {
+      "id": "cmq0m70ig07k4sltro8abpbi0",
+      "title": "Grok 推出 worktrees 并行智能体",
+      "title_en": "Grok supports worktrees",
+      "url": "https://x.com/elonmusk/status/2062796095764234421",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-06-05T07:18:08.000Z",
+      "summary": "Grok 现已支持 worktrees。worktrees 是代码仓库的轻量级副本，允许在独立工作区中并行运行 AI 智能体，可通过主页或 `grok -w` 使用。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true
+    },
+    {
       "id": "cmq0jeh6o06sosltrqizuioxb",
       "title": "PolarDB-X Zero 上线：30秒全分布式数据库",
       "title_en": "PolarDB-X Zero is live！ No signup. No config. Just one API call. Get a full distributed database i…",
@@ -325,18 +433,6 @@
       "summary": "PolarDB-X Zero 上线了！\n\n无需注册。无需配置。只需一次 API 调用。\n30 秒内获得一个全分布式数据库。\n原生 HNSW 向量索引--内置兼容 MySQL 的引擎。\n关系型 + 语义搜索--一条 SQL 语句。\nAI 智能体就绪--MCP 协议、AI IDE 兼容（Cursor、Claude、Qoder、Qodex 等）\n\n立即尝试：https：//zero.polardbx.com\n#AlibabaCloud #PolarDB #ApsaraDB",
       "category": "ai-products",
       "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq0jeh6o06sqsltretmigj6c",
-      "title": "阿里云发布SkillClaw与Nacos的Agent技能进化循环",
-      "title_en": "SkillClaw × Nacos： The Agent Skill Evolution Loop 🔄 Key Highlights： • Auto-Extraction： Captures exp…",
-      "url": "https://x.com/alibaba_cloud/status/2062777684120244656",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-06-05T06:04:59.000Z",
-      "summary": "阿里云推出SkillClaw与Nacos结合，构建AI智能体技能进化流水线。关键特性：自动从真实对话中提取经验并封装为可复用技能（Skill）；Nacos负责集中化版本管理、审核与审计；打破本地孤岛，实现团队安全共享与分发；形成完整的\"生成-治理-分发\"持续进化闭环。目标是将个人洞察转化为团队的AI资产。",
-      "category": "ai-products",
-      "score": 65,
       "selected": true
     },
     {
@@ -412,18 +508,6 @@
       "selected": true
     },
     {
-      "id": "cmpzrtp0u06dxslkp7tqka277",
-      "title": "NotebookLM 推出福尔摩斯游戏笔记本",
-      "title_en": "PRO TIP： Gamify your notebooks Don't just read your notes- investigate them. Our new Sherlock Holme…",
-      "url": "https://x.com/NotebookLM/status/2062582348194197743",
-      "source": "X：NotebookLM (@NotebookLM)",
-      "publishedAt": "2026-06-04T17:08:47.000Z",
-      "summary": "专业技巧：将笔记本游戏化\n\n不要只是阅读笔记--去调查它们。我们全新的福尔摩斯笔记本将学习变成一款互动侦探游戏。推理事实，发现线索，证明即使是最复杂的问题也能迎刃而解。\n\n➡️ https：//goo.gle/Sherlock",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true
-    },
-    {
       "id": "cmq1dossi0ev7sltrrihfn7pb",
       "title": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
       "title_en": "Unlocking dependable responses with Gemini Enterprise Agent Platform's Agentic RAG",
@@ -472,6 +556,18 @@
       "selected": true
     },
     {
+      "id": "cmpytr88o038ksli37i4bd9fv",
+      "title": "Grok 登陆 Cloudflare AI Gateway",
+      "title_en": "Grok on Cloudflare",
+      "url": "https://x.com/elonmusk/status/2062346295256527350",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-06-04T01:30:47.000Z",
+      "summary": "xAI 与 Cloudflare 合作，将 Grok 的 LLM、音频、图像和视频模型接入 Cloudflare AI Gateway，用户可直接通过 Cloudflare 计费，无需额外认证或 API 密钥。Elon Musk 发推称 \"Grok on Cloudflare\"。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true
+    },
+    {
       "id": "cmpznzjs205baslkpa2lb0j2d",
       "title": "Hugging Face 为编码智能体重塑 hf CLI 输出格式",
       "title_en": "Designing the hf CLI as an agent-optimized way to work with the Hub",
@@ -496,18 +592,6 @@
       "selected": true
     },
     {
-      "id": "cmpymda2v01bdsli35e5jhioh",
-      "title": "OpenClaw 2026.6.1发布：新增Windows节点与技能工坊",
-      "title_en": "OpenClaw 2026.6.1 is live 🦞 🪟 native Windows node host 🛠️ Skill Workshop for self-learning agent…",
-      "url": "https://x.com/openclaw/status/2062288421406785710",
-      "source": "X：OpenClaw (@openclaw)",
-      "publishedAt": "2026-06-03T21:40:49.000Z",
-      "summary": "OpenClaw 2026.6.1 已上线 🦞\n\n🪟 原生 Windows 节点主机\n🛠️ 用于自主学习型智能体的技能工坊（Skill Workshop）\n📋 工作板（Workboard）编排\n🧠 支持 MiniMax M3\n\nWindows 加入集群。无需企鹅服。\nhttps：//github.com/openclaw/openclaw/releases/tag/v2026.6.1",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true
-    },
-    {
       "id": "cmpyb991803i5slaxytpv888x",
       "title": "Replit上线SEO Agent助应用被发现",
       "title_en": "You shipped your app. Now what？ Your app may look great， but if no one can find it， it stays invisi…",
@@ -517,90 +601,6 @@
       "summary": "你发布了你的应用。然后呢？\n\n你的应用可能看起来很棒，但如果没人能找到它，它就依然不可见。\n\n发布只是开始。\n\n认识一下SEO Agent。它会为你运行一次扫描，并建议修复措施，帮助你的应用在网页搜索和AI搜索中被发现。",
       "category": "ai-products",
       "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmpy8aaoz02oxslaxh0ql786h",
-      "title": "Perplexity Personal Computer 登陆 Windows",
-      "title_en": "Personal Computer is coming to Windows. Personal Computer for Windows runs on your machine and orch…",
-      "url": "https://x.com/perplexity_ai/status/2062189045728596080",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-06-03T15:05:56.000Z",
-      "summary": "Personal Computer 即将登陆 Windows。\n\n面向 Windows 的 Personal Computer 在你的机器上运行，并协调你每天使用的应用和文件。\n\n我们将首先向等候名单上的付费 Max 和 Enterprise Max 订阅用户推送。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true
-    },
-    {
-      "id": "cmpy4c9s101l0slaxcumea3tp",
-      "title": "Meta 面向 WhatsApp Business 的 AI 智能体现已全球上线",
-      "title_en": "Meta's AI agent for WhatsApp Business is now available globally",
-      "url": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-03T13:40:00.000Z",
-      "summary": "Meta 为 WhatsApp Business 打造的 AI 智能体面向全球商家开放，将按照模型 token 使用量向企业收费。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpy3tdza01g9slaxmze2wjve",
-      "title": "介绍 Claude Partner Network 的 Services Track 和 Partner Hub",
-      "title_en": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-03T13:30:21.674Z",
-      "summary": "Anthropic 扩展 Claude Partner Network，推出 Services Track 分级体系和 Partner Hub 门户。Services Track 设 Select、Preferred、Global Premier 三级，按认证人数、投产客户数及客户推荐信量化评定。Partner Hub 提供每日更新仪表盘和公开目录，方便合作伙伴查看进展、客户寻找供应商。该网络三月启动以来已有超 4 万家公司申请，逾 1 万顾问获认证；Accenture 训练 3 万人，Cognizant 部署约 35 万员工，Deloitte 惠及 47 万人，KPMG 覆盖 27.6 万，Infosys 构建行业智能体，PwC 先在美推广再扩至全球。",
-      "category": "ai-products",
-      "score": 59,
-      "selected": true
-    },
-    {
-      "id": "cmq2otyj001qysl6n9ws92l6k",
-      "title": "Kimi Work Beta版发布：面向知识工作者的本地Agent",
-      "title_en": "Kimi Work （Beta 版） 邀你体验：你的工作，分我一半",
-      "url": "https://mp.weixin.qq.com/s/cpy4PddGBQZl5w8eEKX2uw",
-      "source": "公众号：月之暗面（Kimi）",
-      "publishedAt": "2026-06-03T13:30:07.000Z",
-      "summary": "Kimi Work Beta版随Kimi最新Mac和Windows客户端推出，是基于Kimi Code的通用型本地Agent。它内置Kimi WebBridge浏览器操作方案，支持安装和使用Skill、运行定时任务，并能根据任务复杂度自主创建最多300个子Agent的团队。开发中使用的Kimi K2.6模型支持13小时连续编码、4000余次工具调用，累计产出超5万行有效代码，其中92%由AI自主生成。用户可用自然语言描述目标，Kimi Work即可拆解任务、并行执行、调用工具、操作浏览器，交付文档、表格、PPT等工作产物。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmpyia45j008gsli3u7h5u1jt",
-      "title": "Cursor Enterprise 推出 Organizations 组织管理功能",
-      "title_en": "Introducing organizations for Cursor Enterprise",
-      "url": "https://cursor.com/blog/organizations",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-06-03T12:00:00.000Z",
-      "summary": "Cursor Enterprise 正式推出 Organizations 结构，允许企业在统一面板中管理多个团队。每个团队可独立设置预算、安全策略、模型访问和功能控制。新增 Groups 作为跨团队或团队内的轻量级用户集合，用于分段管理模型访问、花销上限和智能体权限，不同设置取最宽松权限生效。管理员可创建沙箱团队预先测试新功能，再向全公司推送；也可按部门划分模型访问和预算。组织级仪表盘汇总所有团队的 token 用量与花费，支持按团队、用户等维度筛选。身份提供商和 SCIM 目录在组织层面一次配置，成员自动同步。该功能现已全面开放给所有 Enterprise 客户。",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true
-    },
-    {
-      "id": "cmpxnygnz05rnslckz87nvi12",
-      "title": "NousResearch 发布 Hermes Agent 桌面应用公测版",
-      "title_en": "The official Hermes Agent Desktop app is HERE！",
-      "url": "https://x.com/SiliconFlowAI/status/2062042813852995899",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "publishedAt": "2026-06-03T05:24:52.000Z",
-      "summary": "官方 Hermes Agent 桌面应用现已推出！",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmpywp2ei041asli3q9bqnks0",
-      "title": "Grok 成为 Vapi 的默认语音引擎",
-      "title_en": "Grok Becomes the Voice of Vapi Latest post Jun 3， 2026 # Grok Becomes the Voice of Vapi Bringing frontier voice quality to millions of Vapi agents. 【Read More】（http：//x.ai/news/grok-vapi）",
-      "url": "https://x.ai/news/grok-vapi",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "xAI 宣布与 Vapi 合作，Grok 将作为 Vapi 平台上 12 种核心语音的默认引擎，覆盖超过 250 万个语音智能体。在 Vapi 独立盲测中，Grok Voice 位列第一；X 平台上的人机语音盲猜中，超 4500 名用户有一半无法区分 Grok 与真人。现在，Grok Speech-to-Text 和 Text-to-Speech 已集成至 Vapi Dashboard，团队还可通过 Grok Voice API 获取高级定制选项（含语音克隆），用于旁白、播客、广告等场景。",
-      "category": "ai-products",
-      "score": 72,
       "selected": true
     }
   ]
