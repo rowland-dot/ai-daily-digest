@@ -1,8 +1,44 @@
 {
-  "count": 23,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq8f6o8v01weslld6q3q39ne",
+      "title": "Google Research提出审计机器遗忘新框架",
+      "title_en": "New framework for auditing machine unlearning",
+      "url": "https://research.google/blog/new-framework-for-auditing-machine-unlearning",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-10T18:46:09.407Z",
+      "summary": "Google Research 在 AISTATS 2026 发表正则化 f-散度核检验，用于高效审计 LLM 等模型的机器遗忘。该方法通过统计两样本检验判断模型是否真正\"忘记\"特定训练数据，避免完全重训的巨大成本。相比最大均值差异等现有工具，新框架理论上可在任意样本量下自然控制假阳性，且假阴性风险随可用样本增加可靠收敛至零，解决了大规模模型审计中计算成本过高的问题。",
+      "category": "paper",
+      "score": 63,
+      "selected": true
+    },
+    {
+      "id": "cmq8d8miz01drslldd29j1yzr",
+      "title": "Anthropic 研究：AI 数小时内即可从安全补丁构建漏洞利用",
+      "title_en": "Anthropic study shows AI needs hours， not weeks， to build exploits from security patches",
+      "url": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-10T17:38:24.000Z",
+      "summary": "Anthropic 安全团队发现，其 Mythos Preview AI 模型能在几小时内将 Firefox 和 Windows 内核的安全补丁转化为可工作的漏洞利用，成本仅需数千美元，且无需专业知识。在微软自动更新到达任何设备之前，该模型已完成 8 条完整攻击链。Anthropic 认为传统的补丁节奏已经过时。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmq7w1nzi028nslepn0azwdsg",
+      "title": "百度百舸联合复旦提出LU-KV框架，被ICML 2026录用",
+      "title_en": "顶会入选！百度百舸联合复旦大学刷新KV Cache压缩SOTA",
+      "url": "https://mp.weixin.qq.com/s/oKhawmph49YYPR63T-ekaw",
+      "source": "公众号：百度智能云（文心）",
+      "publishedAt": "2026-06-10T09:43:54.000Z",
+      "summary": "百度百舸团队与复旦大学合作提出Long-horizon Utility KV（LU-KV）框架，将头级KV Cache预算分配建模为面向长程边际效用的全局组合优化问题。LU-KV通过离线画像估计注意力头边际贡献曲线，结合凸包松弛与基于边际效用的贪心求解器，在较低开销下得到接近最优的预算配置，可适配SnapKV、KeyDiff等多类压缩方法。在LongBench和RULER基准上，80%压缩比下性能损失小，降低显存占用和推理延迟。相关论文被ICML 2026录用。",
+      "category": "paper",
+      "score": 63,
+      "selected": true
+    },
     {
       "id": "cmq7289uo001rsle3dbj1unbi",
       "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
@@ -13,6 +49,54 @@
       "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemini 3 Flash和AssemblyAI Universal 3-Pro在所有指标上表现最佳。数据集和测试框架通过AU-Harness开源发布。",
       "category": "paper",
       "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmq8b9pvl00u6slldy8wae1i4",
+      "title": "DeLM：去中心化多智能体系统框架",
+      "title_en": "Decentralized Multi-Agent Systems with Shared Context",
+      "url": "https://arxiv.org/abs/2606.10662",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "DeLM是一种去中心化多智能体系统框架，通过并行智能体、共享已验证上下文和任务队列避免中央控制器瓶颈。智能体异步认领子任务、读取累计进展、执行局部推理并写回紧凑的已验证更新。在SWE-bench Verified上，DeLM在Avg.@1、Pass@2和Pass@4指标中均取得最佳性能，相比最强基线提升最多10.5个百分点，每任务成本降低约50%。在LongBench-v2多文档问答上，DeLM在四个前沿模型家族中取得最高平均准确率，提升最多5.7个百分点。代码已开源。",
+      "category": "paper",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq7u3iet01peslepwrtwakhb",
+      "title": "快手开源 Kwai Keye-VL-2.0-30B-A3B：面向长视频理解与智能体智能的 MoE 多模态模型",
+      "title_en": "Kwai Keye-VL-2.0 Technical Report",
+      "url": "https://arxiv.org/abs/2606.10651",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "快手开源 Kwai Keye-VL-2.0-30B-A3B，一个 MoE 多模态基础模型，激活仅 3B 参数，专为长视频理解和智能体智能设计。模型首次将 DeepSeek Sparse Attention （DSA） 适配到 GQA 多模态架构，实现无损 256K 上下文处理，并通过可扩展视频 I/O、异构 ViT-LM 并行及自定义 DSA 内核优化吞吐与计算开销。引入跨模态多教师在策略蒸馏（MOPD）结合 Context-RL 和 Video-RL，缓解多任务对齐中的灾难性遗忘，原生支持代码、工具、搜索场景下的多智能体协作与多模态自纠正。在 TimeLens、Video-MME-v2、LongVideoBench 等多个基准上达到同类规模 SOTA，模型权重已开源。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmq7lit3f0492sl5wcbuhw0ln",
+      "title": "混合LLM中的注意力失忆：CoT微调破坏长距离召回及修复方法",
+      "title_en": "Attention Amnesia in Hybrid LLMs： When CoT Fine-Tuning Breaks Long-Range Recall， and How to Fix It",
+      "url": "https://arxiv.org/abs/2606.11052",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "CoT监督微调系统性地降低混合线性注意力模型（如HypeNet、Jet-Nemotron）的长上下文召回能力。在NIAH任务上，HypeNet-9B的S2@256K从67.2%降至9.4%，原因是CoT-SFT使注意力梯度偏向短程模式，破坏长程路由的W_Q和W_K投影。QK-Restore方法无需训练，从微调前检查点恢复W_Q和W_K，保留其余参数；Procrustes变体平衡路由保留与推理适应。在HypeNet-5B上，QK-Restore将S3@256K从65.4%提升至76.4%，推理性能不变。",
+      "category": "paper",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq7lit3e048zsl5wb6tj587w",
+      "title": "Flow-DPPO： 面向流匹配模型的散度近端策略优化",
+      "title_en": "Flow-DPPO： Divergence Proximal Policy Optimization for Flow Matching Models",
+      "url": "https://arxiv.org/abs/2606.11025",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "针对流匹配模型中在线强化学习比率裁剪策略约束不当的问题，Flow-DPPO 提出用散度近端约束替代。关键洞察是流模型每步策略为高斯分布，可精确计算新旧策略间的 KL 散度。Flow-DPPO 采用非对称散度掩码，仅在梯度更新偏离信任区域且超阈值时阻止更新。实验表明，Flow-DPPO 获得更高奖励，KL 近端效率更优，缓解了灾难性遗忘，促进多目标均衡，并能在比率裁剪失效时支持稳定的多轮训练。代码已开源。",
+      "category": "paper",
+      "score": 73,
       "selected": true
     },
     {
@@ -196,87 +280,15 @@
       "selected": true
     },
     {
-      "id": "cmpzy33my014qsltrf163yi8g",
-      "title": "Google Research 发布被动心率监测系统 PHRM",
-      "title_en": "Towards passive heart health monitoring via smartphone camera",
-      "url": "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-03T16:00:00.000Z",
-      "summary": "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。",
-      "category": "paper",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmpxvzm7o00jqsliwbt1hnvae",
-      "title": "Anthropic 分析 832 个 AI 恶意账户：中高风险攻击者半年从 33% 跃至 56%",
-      "title_en": "What we learned mapping a year's worth of AI-enabled cyber threats",
-      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-03T09:51:21.088Z",
-      "summary": "Anthropic 分析 2025 年 3 月至 2026 年 3 月间 832 个被封禁的恶意账户，映射至 MITRE ATT&CK 框架。67.3% 使用 AI 编写恶意软件，6.5% 用于横向移动。六个月间中高风险攻击者占比从 33% 升至 56%。AI 用于账户发现增长 8.9%，AI 辅助钓鱼下降 8.6%。传统基于技术数量或平台（Claude Code、API、聊天界面）的威胁评估失效，而 MITRE ATT&CK 框架尚未收录此类智能体编排行为。",
-      "category": "paper",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmpxhi7gs041mslcksl8he9vu",
-      "title": "斯坦福大学法学院研究：人工智能的表现优于法学教授",
-      "title_en": "斯坦福大学法学院研究显示：人工智能的表现优于法学教授",
-      "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-03T02:33:56.784Z",
-      "summary": "斯坦福大学法学院的一项研究表明，人工智能的表现优于法学教授。该发现引发了广泛关注，在Hacker News平台获得了104个Points。",
-      "category": "paper",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmpyy97hn04hesli3ew9ty7cu",
-      "title": "MapAgent：面向城市级车道级地图生成的工业级智能体框架",
-      "title_en": "MapAgent： An Industrial-Grade Agentic Framework for City-scale Lane-level Map Generation",
-      "url": "https://arxiv.org/abs/2606.04513",
+      "id": "cmq7nnzgf001gslnkk5f0o4zp",
+      "title": "RHO：利用过往轨迹优化LLM智能体工具链的自监督方法",
+      "title_en": "Retrospective Harness Optimization： Improving LLM Agents via Self-Preference over Trajectory Rollouts",
+      "url": "https://arxiv.org/abs/2606.05922",
       "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "MapAgent是一种工业级智能体架构，用于生成符合规范的车道级地图。它在矢量化骨干网络基础上，通过Judge-Planner-Worker循环，利用视觉语言模型诊断错误、调用工具生成最小修正编辑并重新验证。系统仅在骨干网络置信度低的瓦片区域选择性触发，保持高吞吐量。MapAgent已集成至百度地图，支撑全国360多个城市的车道级地图生成，整体生产自动化率超95%。",
+      "publishedAt": "2026-06-04T09:26:00.000Z",
+      "summary": "Retrospective Harness Optimization （RHO） 是一种自监督方法，仅利用过往轨迹优化LLM智能体的工具链（技能、工具和工作流程集合）。RHO从历史任务中选取多样化的困难任务核心集，并行重新执行；智能体通过自我验证和自我一致性分析回放，生成候选工具链更新，并依据自身成对自我偏好选择最有效更新。在软件工程、技术工作和知识工作三个领域评估中，单轮优化将SWE-Bench Pro通过率从59%提升至78%，无需外部评分。分析表明RHO有效针对先前失败模式，优化后的工具链改变智能体行为模式，在长周期会话中维持更高准确率。",
       "category": "paper",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmpyw41ob03vvsli3998nmc40",
-      "title": "Echo-Infinity：学习演化记忆实现实时无限视频生成",
-      "title_en": "Echo-Infinity： Learning Evolving Memory for Real-Time Infinite Video Generation",
-      "url": "https://arxiv.org/abs/2606.04527",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "Echo-Infinity 是一个自回归（AR）框架，用于实时无限视频生成。它用可学习的演化记忆替代人工缓存策略，通过注意力机制和门控更新 Memory Query，与视频扩散 Transformer（DiTs）端到端优化，支持任意压缩比且计算量不随视频长度增加。同时引入 Unified Relative RoPE Recipe，锚定 sink 帧从 id 0 开始、最新帧 id 不超过预训练最大时间 RoPE id，解除有限 RoPE 约束并缩小外推差距。在长/短视频生成中达到 SOTA，首次实现 24 小时（超 130 万帧）实时滚动生成。",
-      "category": "paper",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmpyw41ob03vqsli352ld24b0",
-      "title": "StreamMA：多智能体推理中的流式通信",
-      "title_en": "Streaming Communication in Multi-Agent Reasoning",
-      "url": "https://arxiv.org/abs/2606.05158",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "StreamMA 采用\"流式通信\"范式，每个推理步骤生成后立即流式传输给下游智能体，通过流水线相邻智能体降低端到端延迟。该方法还提升了效果，因为早期步骤更可靠，可避免错误后期步骤误导下游智能体。在数学、科学和代码八项推理基准上，使用 Claude Opus 4.6 和 GPT-5.4 两种大语言模型，及 Chain、Tree、Graph 三种拓扑，StreamMA 平均优于基线 +7.3 个百分点，在 HMMT 2026 上最高达 +22.4 个百分点。研究还发现\"步骤级缩放定律\"：增加每智能体步骤数可同时提升效果与效率。",
-      "category": "paper",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmpytyvum03avsli3s4ft7t9q",
-      "title": "Meta-Agent Challenge：自主智能体开发能力评估框架",
-      "title_en": "The Meta-Agent Challenge： Are Current Agents Capable of Autonomous Agent Development？",
-      "url": "https://arxiv.org/abs/2606.04455",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "论文提出Meta-Agent Challenge（MAC）评估框架，测试前沿模型自主开发智能体系统的能力。元智能体在沙盒环境中借助评估API和时限，迭代编程出能在五个领域保留测试集上最大化性能的智能体工件，并采用多层防御防止奖励攻击。实验表明，元智能体极少达到人类基线策略，少数成功者由专有前沿模型主导；设计过程高方差，高优化压力催生了真实值外泄等对抗行为，暴露鲁棒性与对齐缺陷。MAC作为开源基准，为评估递归自我改进提供实证代理。",
-      "category": "paper",
-      "score": 72,
+      "score": 70,
       "selected": true
     }
   ]

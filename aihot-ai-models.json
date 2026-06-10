@@ -4,15 +4,39 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmq6w3soi002gslbhz3kkhav0",
-      "title": "Claude Fable 5 和 Claude Mythos 5",
-      "title_en": "Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-09T17:04:29.001Z",
-      "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing 向网络安全防御者开放。",
+      "id": "cmq8f9x2k01xqslldudfgsdh4",
+      "title": "Grok Voice性能出色价格低廉",
+      "title_en": "Grok Voice offers state-of-the-art performance with human-like timing， tone， and warmth. And it's a …",
+      "url": "https://x.com/xai/status/2064777588036530309",
+      "source": "X：xAI (@xai)",
+      "publishedAt": "2026-06-10T18:31:53.000Z",
+      "summary": "Grok Voice 提供最先进的性能，具有类人的时机、语调和温暖感。而且价格仅为竞争对手的一小部分。\n\n查看详情：http：//x.ai/api/voice",
       "category": "ai-models",
-      "score": 90,
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmq8aoxud00ngslldd191n34b",
+      "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
+      "title_en": "DiffusionGemma： 4x faster text generation",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-06-10T16:24:11.000Z",
+      "summary": "Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。",
+      "category": "ai-models",
+      "score": 84,
+      "selected": true
+    },
+    {
+      "id": "cmq7t3hhr01f3slepkahaev5l",
+      "title": "摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练",
+      "title_en": "摩尔线程开源 MusaCoder：首个基于国产全功能 GPU 全栈训练的代码大模型",
+      "url": "https://www.ithome.com/0/962/509.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-10T08:21:45.000Z",
+      "summary": "摩尔线程发布并开源 MusaCoder 代码大模型，含 9B 和 27B 两个参数规模，是业内首个基于国产 GPU 算力底座完成全链路训练与验证的开源模型。后训练流程在基于 MTT S5000 的夸娥智算集群上完成，支持从 PyTorch 标准算子自动生成高性能 CUDA/MUSA 原生 Kernel 代码。在 KernelBench 评测中，MusaCoder-27B-RL 以 Overall Pass@8 93.2%、Avg.@8 88.60% 超越 Claude Opus、DeepSeek-V4 Pro、GLM-5.1、Kimi K2.6 等主流 SOTA 代码模型。",
+      "category": "ai-models",
+      "score": 72,
       "selected": true
     },
     {
@@ -73,6 +97,18 @@
       "summary": "小米 MiMo 与 TileRT 联合发布 MiMo-V2.5-Pro-UltraSpeed 模式，使 1T 参数旗舰模型输出速度首次突破 1000 tokens/s。模型侧采用 FP4 混合量化（仅量化 MoE Expert）与 DFlash 块级 masked 并行推测解码（coding 场景平均接受长度 6.30 tokens）；系统侧 TileRT 引入常驻内核引擎与异构流水线协作。API 限时开放（2026 年 6 月 9 日至 23 日），定价为 MiMo-V2.5-Pro 的 3 倍，速度提升约 10 倍。FP4 权重与 DFlash 模型 checkpoint 已开源至 HuggingFace。",
       "category": "ai-models",
       "score": 80,
+      "selected": true
+    },
+    {
+      "id": "cmq6w3soi002gslbhz3kkhav0",
+      "title": "Claude Fable 5 和 Claude Mythos 5",
+      "title_en": "Claude Fable 5 and Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-08T16:00:00.000Z",
+      "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing 向网络安全防御者开放。",
+      "category": "ai-models",
+      "score": 90,
       "selected": true
     },
     {
@@ -205,42 +241,6 @@
       "summary": "Vercel 的 AI Gateway 上现已推出 Grok Imagine Video 1.5。该服务支持图生视频并同步音频，一次性完成。示例代码：\n`await generateVideo（{ model： 'xai/grok-imagine-video-1.5-preview'， prompt： 'a rabbit sprinting through nyc' }）；`",
       "category": "ai-models",
       "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpyd2ph203z9slaxfwx9nd13",
-      "title": "Ideogram v4.0 发布：2K 分辨率和 JSON 提示支持",
-      "title_en": "introducing Ideogram v4.0. 2k native resolution， excellent text rendering， and support for JSON pr…",
-      "url": "https://x.com/krea_ai/status/2062227837130887567",
-      "source": "X：Krea AI (@krea_ai)",
-      "publishedAt": "2026-06-03T17:40:05.000Z",
-      "summary": "介绍 Ideogram v4.0。\n\n原生 2K 分辨率，出色的文字渲染，支持 JSON 提示词。\n\n立即在 Krea 中体验。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmpyayd9g03ebslaxqumvlu4w",
-      "title": "Miso One 开源语音模型：8B 参数、110ms 延迟、一次语音克隆",
-      "title_en": "Miso One is live： an open-weights voice model built to sound like a real person reading， with actual…",
-      "url": "https://x.com/kimmonismus/status/2062210845308780639",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-06-03T16:32:34.000Z",
-      "summary": "Miso One 正式发布，一个 8B 参数的开源权重语音模型（TTS），旨在模拟真实人类朗读的温暖与节奏。它支持一次语音克隆（只需短样本），推理延迟仅 110ms。模型权重已开源至 GitHub，无需 API 即可自托管，音频数据不离开本地。API 访问即将推出。演示已上线，可先试听再克隆仓库。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmpythfxu0365sli38hn2bjc9",
-      "title": "xAI 发布 Grok Imagine 1.5 预览版（图像转视频模型）",
-      "title_en": "Grok Imagine 1.5 Preview Latest post Jun 3， 2026 # Grok Imagine 1.5 Preview grok-imagine-video-1.5-preview， our latest image-to-video model， is now available via the xAI API in preview. 【Read More】（http：//x.ai/news/grok-imagine-1-5）",
-      "url": "https://x.ai/news/grok-imagine-1-5",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "xAI 通过 API 发布了图像转视频模型 `grok-imagine-video-1.5-preview`（Grok Imagine 1.5 预览版）。该模型能将单张静态图片转为流畅的电影感视频，用户提供起始帧和描述运动的提示词后，模型可生成包含相机移动、氛围和物理效果的动画，并保持对源图像的忠实。支持生成 720p 片段，可使用自然语言指令控制镜头、节奏和音效，并支持逐帧拼接成长场景。模型目前通过 xAI API 提供预览使用。",
-      "category": "ai-models",
-      "score": 75,
       "selected": true
     }
   ]
