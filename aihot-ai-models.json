@@ -1,8 +1,32 @@
 {
-  "count": 20,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq9rke110ekyslldmbw1ap3o",
+      "title": "Gemini Omni Flash 视频任务达 SOTA",
+      "title_en": "Gemini Omni Flash is SOTA at image to video， text to video， and video editing ： ） Excited to get t…",
+      "url": "https://x.com/OfficialLoganK/status/2065118111360303414",
+      "source": "X：Logan Kilpatrick (@OfficialLoganK)",
+      "publishedAt": "2026-06-11T17:05:00.000Z",
+      "summary": "Gemini Omni Flash 在图像到视频、文本到视频和视频编辑方面达到了 SATA ： ）\n\n很高兴很快能将这一能力通过 API 提供给开发者！",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmq8zcaxy076fslldrds65pvu",
+      "title": "Midjourney V8.1 已成为默认模型",
+      "title_en": "V8.1 is now the default model on Midjourney！",
+      "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
+      "source": "Midjourney：Updates（RSS）",
+      "publishedAt": "2026-06-11T04:08:51.000Z",
+      "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
+      "category": "ai-models",
+      "score": 64,
+      "selected": true
+    },
     {
       "id": "cmq8f9x2k01xqslldudfgsdh4",
       "title": "Grok Voice性能出色价格低廉",
@@ -179,66 +203,6 @@
       "source": "公众号：京东JoyAI",
       "publishedAt": "2026-06-05T05:27:22.000Z",
       "summary": "6月3日，京东开源JoyAI-Echo框架，解决长视频生成中角色身份崩坏、音色突变和生成缓慢三大难题。该框架通过跨模态音视频记忆库保持5分钟内角色外观与音色一致，记忆驱动后训练结合DMD技术带来约7.5倍推理加速。新增Director Agent支持自然语言对话式局部修订，无需重跑整条视频。配套轻量化实时超分模块，支持736×1280→1152×1920及1472×2560两档分辨率。评测集显示，语音内容准确率0.8646，用户偏好多项领先。代码与权重已开源至GitHub。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpzwl55v00pfsltr6bq95ouh",
-      "title": "Nemotron 3.5 Content Safety：面向全球企业AI的可定制多模态安全",
-      "title_en": "Nemotron 3.5 Content Safety： Customizable Multimodal Safety for Global Enterprise AI",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-04T18:57:45.000Z",
-      "summary": "Nemotron 3.5 Content Safety基于Gemma 3 4B IT，提供128K上下文窗口，支持用户提示、可选图像与助手响应的统一多模态安全评估。新增自定义策略执行，允许企业用自然语言定义专属安全规则；THINK模式可输出可审计的逐步推理痕迹。显式训练覆盖12种语言，并借助基座模型零样本泛化至约140种语言。输出提供低延迟二分类、带分类标签、THINK推理痕迹三种模式。安全分类遵循Aegis 2.0框架（13核心类别+10细分类别）。同步发布多模态、多语言安全数据集，可在8GB+ VRAM GPU上实时部署。",
-      "category": "ai-models",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmpzuuks4008tsltr89qxlntr",
-      "title": "Google Magenta RealTime 2 （MRT2） 实时音乐模型发布",
-      "title_en": "Play our new open-weights music model， @GoogleMagenta RealTime 2， using a MIDI keyboard， live text p…",
-      "url": "https://x.com/googleaidevs/status/2062603374789263646",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-06-04T18:32:20.000Z",
-      "summary": "Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmpzn05ag052vslkpo3cb21hq",
-      "title": "Nex-N2-Pro 发布：基于 Qwen3.5 的 397B MoE 推理模型，性能达 GPT-5.5 水平",
-      "title_en": "Post-training is having a moment - Nex-N2-Pro from neolab @NexEcosystem proves it. Built on Qwen3.5-…",
-      "url": "https://x.com/SiliconFlowAI/status/2062549952266723493",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "publishedAt": "2026-06-04T15:00:03.000Z",
-      "summary": "neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmpysolhn02y3sli3a8gmksck",
-      "title": "Grok Imagine 1.5制作《伊利亚特》预告片",
-      "title_en": "Iliad （Troy） trailer made by Grok Imagine 1.5， which was just released",
-      "url": "https://x.com/elonmusk/status/2062337074368508253",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-06-04T00:54:09.000Z",
-      "summary": "伊利亚特（特洛伊）预告片由刚刚发布的 Grok Imagine 1.5 制作",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmpysolhn02y4sli3qzy0o7te",
-      "title": "Grok Imagine视频生成上线Vercel",
-      "title_en": "Grok Imagine on Vercel",
-      "url": "https://x.com/elonmusk/status/2062332654587118036",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-06-04T00:36:35.000Z",
-      "summary": "Vercel 的 AI Gateway 上现已推出 Grok Imagine Video 1.5。该服务支持图生视频并同步音频，一次性完成。示例代码：\n`await generateVideo（{ model： 'xai/grok-imagine-video-1.5-preview'， prompt： 'a rabbit sprinting through nyc' }）；`",
       "category": "ai-models",
       "score": 72,
       "selected": true

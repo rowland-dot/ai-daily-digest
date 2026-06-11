@@ -1,20 +1,8 @@
 {
-  "count": 24,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
-    {
-      "id": "cmq8f6o8v01weslld6q3q39ne",
-      "title": "Google Research提出审计机器遗忘新框架",
-      "title_en": "New framework for auditing machine unlearning",
-      "url": "https://research.google/blog/new-framework-for-auditing-machine-unlearning",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-10T18:46:09.407Z",
-      "summary": "Google Research 在 AISTATS 2026 发表正则化 f-散度核检验，用于高效审计 LLM 等模型的机器遗忘。该方法通过统计两样本检验判断模型是否真正\"忘记\"特定训练数据，避免完全重训的巨大成本。相比最大均值差异等现有工具，新框架理论上可在任意样本量下自然控制假阳性，且假阴性风险随可用样本增加可靠收敛至零，解决了大规模模型审计中计算成本过高的问题。",
-      "category": "paper",
-      "score": 63,
-      "selected": true
-    },
     {
       "id": "cmq8d8miz01drslldd29j1yzr",
       "title": "Anthropic 研究：AI 数小时内即可从安全补丁构建漏洞利用",
@@ -40,6 +28,18 @@
       "selected": true
     },
     {
+      "id": "cmq8ws2lk06imslld3t5k4rid",
+      "title": "Bebop：通过带拒绝采样的多token预测加速RL训练",
+      "title_en": "Breaking Entropy Bounds： Accelerating RL Training via MTP with Rejection Sampling",
+      "url": "https://arxiv.org/abs/2606.12370",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "Bebop系统研究多token预测（MTP）在大语言模型RL后训练中的加速瓶颈。发现MTP接受率与模型熵波动呈负线性关系；概率拒绝采样相比贪婪草稿采样能缓解熵干扰。提出端到端TV损失直接优化多步拒绝采样接受率，带来约10%提升，最高达95%接受率，额外推理吞吐提升25%。在Qwen3.5、Qwen3.6和Qwen3.7上，异步RL训练实现1.8倍端到端加速。预RL阶段的MTP训练结合e2e TV损失和拒绝采样可保持全程一致的加速，无需在线更新。",
+      "category": "paper",
+      "score": 73,
+      "selected": true
+    },
+    {
       "id": "cmq7289uo001rsle3dbj1unbi",
       "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
       "title_en": "Can Voice Agents Handle Bilingual Customers？ Benchmarking Frontier ASR on Code-Switched Speech",
@@ -49,6 +49,42 @@
       "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemini 3 Flash和AssemblyAI Universal 3-Pro在所有指标上表现最佳。数据集和测试框架通过AU-Harness开源发布。",
       "category": "paper",
       "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmq8f6o8v01weslld6q3q39ne",
+      "title": "Google Research提出审计机器遗忘新框架",
+      "title_en": "New framework for auditing machine unlearning",
+      "url": "https://research.google/blog/new-framework-for-auditing-machine-unlearning",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-09T16:00:00.000Z",
+      "summary": "Google Research 在 AISTATS 2026 发表正则化 f-散度核检验，用于高效审计 LLM 等模型的机器遗忘。该方法通过统计两样本检验判断模型是否真正\"忘记\"特定训练数据，避免完全重训的巨大成本。相比最大均值差异等现有工具，新框架理论上可在任意样本量下自然控制假阳性，且假阴性风险随可用样本增加可靠收敛至零，解决了大规模模型审计中计算成本过高的问题。",
+      "category": "paper",
+      "score": 63,
+      "selected": true
+    },
+    {
+      "id": "cmq8ws2lj06ikslldd7r6waue",
+      "title": "i1：面向强文生图模型的简单且完全开源配方",
+      "title_en": "i1： A Simple and Fully Open Recipe for Strong Text-to-Image Models",
+      "url": "https://arxiv.org/abs/2606.11289",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "i1 是一个 3B 参数的文本到图像扩散模型，仅使用公开数据集训练。在 GenEval、DPG、PRISM、CVTG-2K 和 LongText 五个基准上，i1 性能与领先模型相当，平均比最佳现有完全开源模型高 29.5 个百分点。研究基于 300 余项控制实验（超 700K TPU v6e 小时），发现等权重混合 curated 数据集是强默认配置、更大文本编码器适配器以极少参数提升性能。i1 的检查点、训练与推理代码及数据处理流程已全部开源。",
+      "category": "paper",
+      "score": 82,
+      "selected": true
+    },
+    {
+      "id": "cmq8ws2lj06iislldscf42bb5",
+      "title": "Embodied-R1.5：通过具身基础模型演化物理智能",
+      "title_en": "Embodied-R1.5： Evolving Physical Intelligence via Embodied Foundation Models",
+      "url": "https://arxiv.org/abs/2606.11324",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "Embodied-R1.5是一个统一具身基础模型，将具身认知、任务规划、纠错与指向能力整合在单一架构中。基于三条自动化数据构建流水线，团队搭建超过150亿模型token的数据系统，并设计多任务平衡强化学习方案以缓解异构任务冲突。其Planner-Grounder-Corrector闭环框架使模型能在长周期任务中自主执行并自我纠正。仅8B参数的Embodied-R1.5在24个具身VLM基准中的16个上达到SOTA，超越Gemini-Robotics-ER-1.5与GPT-5.4，并可微调为VLA，在4个操作任务基准上领先π_{0.5}等模型。零样本真实机器人实验验证了其指令遵循、可操作物体判别、铰接物体操控与长周期复杂任务中的泛化能力。模型权重、数据集、训练代码及评估框架EmbodiedEvalKit已开源。",
+      "category": "paper",
+      "score": 78,
       "selected": true
     },
     {
@@ -229,66 +265,6 @@
       "summary": "dots.tts 是一个 2B 参数的连续自回归 TTS 基座模型，在连续潜在空间中建模语音。其创新包括：多目标训练的 AudioVAE 构建语义结构化连续语音空间；全历史条件的 flow-matching 头保持长程一致性；无奖励自纠正后训练提升鲁棒性和音质。在 Seed-TTS-Eval 上取得最佳平均性能，中文/英文/中文-hard 的 WER 分别为 0.94%/1.30%/6.60%，SIM 分别为 81.0/77.1/79.5。其他基准也达开源 SOTA。基于 CFG 的 MeanFlow 蒸馏实现低延迟推理，输出流首包 85ms，双流 54ms。训练推理代码及检查点已开源。",
       "category": "paper",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq6w1tl0001jslbh8gv57k90",
-      "title": "不再遗漏任何Token：解析Miles中的Token-In-Token-Out（TITO）",
-      "title_en": "Blog No Token Left Behind： Demystifying Token-In-Token-Out in Miles In agentic RL， a rollout is not a single generation. It is a chain of model calls， tool outputs， harness messages， and resumed generations. Token-In-Token-Out （TITO） is a design principle that address… Miles Team： Jiajun Li， Yanbin Jiang， Mao Cheng， Shi Dong， Yusheng Su， Yueming Yuan， Zhichen Zeng， Banghua Zhu",
-      "url": "https://www.lmsys.org/blog/2026-05-13-no-token-left-behind",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-06-04T16:00:00.000Z",
-      "summary": "Miles框架提出Token-In-Token-Out（TITO）原则，解决智能体强化学习中训练-推理不匹配：确保rollout过程token序列与训练器评估序列逐位一致。TITO将多轮轨迹视为一个连续序列（每任务一个样本），节省一个数量级计算开销并维持on-policy性。三种破坏场景：反分词-再分词不匹配、聊天模板修剪推理内容、有损模板重新渲染。Miles通过推理会话服务器、三级只追加保证、可插拔TITO分词器和序列比较器实现。典型任务（如SWE-Bench）轨迹含30-50轮。",
-      "category": "paper",
-      "score": 62,
-      "selected": true
-    },
-    {
-      "id": "cmq1bny1b0ebysltrc6b1fxmk",
-      "title": "Anthropic：让Claude成为化学家",
-      "title_en": "Making Claude a chemist",
-      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-04T16:00:00.000Z",
-      "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。",
-      "category": "paper",
-      "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmpzhk1rp03k5slkpmx3q7mp3",
-      "title": "EVA-Bench Data 2.0 发布：覆盖三大领域、121 个工具、213 个场景",
-      "title_en": "EVA-Bench Data 2.0： 3 Domains， 121 Tools， 213 Scenarios",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-04T12:24:58.000Z",
-      "summary": "EVA-Bench Data 2.0 将评估范围从单一企业领域扩展至航空公司客户服务管理（CSM）、企业 IT 服务管理（ITSM）和医疗 HR 服务交付（HRSD）三个领域，共涵盖 121 个工具、213 个场景，场景数较原始版本增长约 4 倍。每个场景均经 OpenAI GPT-5.4、Google Gemini 3.1 Pro 和 Anthropic Claude Opus 4.6 验证可解性。数据集遵循语音优先、真实性、多样性、认证流程和可复现性五项设计原则，包含单意图、多意图（最多 4 个意图）和对抗性呼叫类型。所有三个数据集已开源，可通过 `load_dataset` 从 Hugging Face 直接下载。后续将推出多语言扩展。",
-      "category": "paper",
-      "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmpzfevp50305slkpy89xsy0v",
-      "title": "Nemotron 预训练的任务种子合成问答生成",
-      "title_en": "Task-Seeded Synthetic Q&A Generation for Nemotron Pretraining",
-      "url": "https://huggingface.co/blog/nvidia/task-seeded-sdg",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-04T11:24:53.000Z",
-      "summary": "在 Nemotron-3 Nano 模型的 100B token 续训练实验中，任务种子合成数据生成（Task-Seeded SDG）使 MMLU-Pro 提升 1.8 分，平均代码提升 1.9 分，常识理解提升 1.6 分，GPQA 提升 11.1 分，数学成绩保持稳定。该流程利用 lm-eval-harness 中约 70 个公开任务（约 700 子任务）的训练集作为种子，生成新示例并补充推理和上下文，经过格式校验、去重和答案验证后得到精选合成数据集，用于 Nemotron Ultra 和 Super 训练。",
-      "category": "paper",
-      "score": 68,
-      "selected": true
-    },
-    {
-      "id": "cmq7nnzgf001gslnkk5f0o4zp",
-      "title": "RHO：利用过往轨迹优化LLM智能体工具链的自监督方法",
-      "title_en": "Retrospective Harness Optimization： Improving LLM Agents via Self-Preference over Trajectory Rollouts",
-      "url": "https://arxiv.org/abs/2606.05922",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-04T09:26:00.000Z",
-      "summary": "Retrospective Harness Optimization （RHO） 是一种自监督方法，仅利用过往轨迹优化LLM智能体的工具链（技能、工具和工作流程集合）。RHO从历史任务中选取多样化的困难任务核心集，并行重新执行；智能体通过自我验证和自我一致性分析回放，生成候选工具链更新，并依据自身成对自我偏好选择最有效更新。在软件工程、技术工作和知识工作三个领域评估中，单轮优化将SWE-Bench Pro通过率从59%提升至78%，无需外部评分。分析表明RHO有效针对先前失败模式，优化后的工具链改变智能体行为模式，在长周期会话中维持更高准确率。",
-      "category": "paper",
-      "score": 70,
       "selected": true
     }
   ]

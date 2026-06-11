@@ -1,8 +1,128 @@
 {
-  "count": 44,
+  "count": 50,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmq9wt5fl0g09slldyw8h9u7p",
+      "title": "全自主无人机首次击毙了人类士兵",
+      "title_en": null,
+      "url": "https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-11T19:29:06.279Z",
+      "summary": "据《新科学家》6月10日报道，全自主无人机首次击毙了人类士兵。这是有记录以来第一次由完全自主运行的无人机执行致命攻击，标志着自主武器系统在实战中的新进展。该报道来自《新科学家》网站，目前尚无更多细节公布。",
+      "category": "industry",
+      "score": 88,
+      "selected": true
+    },
+    {
+      "id": "cmq9tg1bi0f3qslld86ne1vt3",
+      "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
+      "title_en": "DXC will integrate Claude into the systems banks， airlines， and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-11T18:13:16.585Z",
+      "summary": "Anthropic与IT服务公司DXC Technology达成多年全球联盟。DXC将培训数万名获得Claude认证的前沿部署工程师（FDE），将Claude引入其为全球大型银行、航空公司、保险公司及政府机构运营的关键系统。内部部署中，Claude已成为DXC OASIS平台的默认基础模型，该平台超95%代码由Claude编写，开发速度提升10倍，已服务50多家客户。DXC加入Claude Partner Network，将在保险、现代化服务、网络安全及应用服务四个领域率先推出基于Claude的解决方案。",
+      "category": "industry",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmq9ob4g50dqhslldg9noqyw9",
+      "title": "Prometheus 融资120亿美元，估值410亿美元，定位\"人工通用工程师\"",
+      "title_en": "Jeff Bezos raised $12B for Prometheus at a $41B valuation， seven months after launching it at $6.2B …",
+      "url": "https://x.com/kimmonismus/status/2065097988859744503",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-06-11T15:45:02.000Z",
+      "summary": "杰夫·贝佐斯旗下AI公司Prometheus在成立仅7个月、尚无任何产品交付的情况下，以410亿美元估值完成120亿美元融资（最初估值62亿美元）。该公司定位为\"人工通用工程师\"，目标是将设计到制造的循环压缩10倍以上。但物理经济无法像互联网数据那样抓取，缺乏制造业训练数据。为此，Prometheus计划斥资1000亿美元收购传统工业企业，通过获取工厂生成的数据构建护城河。",
+      "category": "industry",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmq9ljue40czuslldeag7dg21",
+      "title": "Runway与Lionsgate扩大战略合作",
+      "title_en": "Runway and Lionsgate Expand Partnership",
+      "url": "https://runwayml.com/news/runway-and-lionsgate-expand-partnership",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-06-11T14:31:51.811Z",
+      "summary": "全球内容巨头Lionsgate与生成式AI研究公司Runway今日宣布扩大战略合作。Lionsgate已取得Runway股权，双方将启动联合开发项目，共同创作并制作新IP，首推一部基于Lionsgate现有IP和Runway生成模型的短剧系列。此外，Lionsgate将作为主持伙伴参与6月举行的Runway AI电影节。这是双方继2024年9月首次合作后的深化，Lionsgate此前已在预可视化、故事板及最终帧制作中应用Runway工具。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmq9ip4u40c8eslldarnso34b",
+      "title": "Anthropic 启动 Claude Corps 全国奖学金项目",
+      "title_en": "Introducing Claude Corps",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-11T13:12:25.934Z",
+      "summary": "Anthropic 推出 Claude Corps 奖学金项目，面向早期职业生涯的年轻人，培训 1，000 名研究员使用 Claude，并匹配给美国非营利组织全职工作一年。研究员年薪 85，000 美元及福利，每周接受 5 小时持续培训。Anthropic 初始投入 1.5 亿美元，合作方为 CodePath 和 Social Finance。至少 400 家非营利组织将参与接待，包括 Braven、Code the Dream、Heartland Forward 等。",
+      "category": "industry",
+      "score": 61,
+      "selected": true
+    },
+    {
+      "id": "cmq958epc08qasllddc5u86n8",
+      "title": "AI浪潮引发中国担忧：官媒呼吁保护劳动者权益",
+      "title_en": "AI Wave Sparks Alarm in China With Call to Protect Worker Rights",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-11/ai-wave-sparks-alarm-in-china-with-call-to-protect-worker-rights",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-11T06:19:13.000Z",
+      "summary": "中国工作场所快速采用人工智能，引发官媒异常直白地呼吁保护劳工权利。北京正在考虑如何控制这项新技术带来的风险。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmq9s8u4a0et6slldp9ssbb96",
+      "title": "BBVA 将 AI 置于银行业务核心，与 OpenAI 合作",
+      "title_en": "BBVA puts AI at the core of banking with OpenAI",
+      "url": "https://openai.com/index/bbva",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "BBVA 将 ChatGPT Enterprise 推广至 10 万名员工，并与 OpenAI 达成合作，加速全球银行业 AI 驱动的转型。",
+      "category": "industry",
+      "score": 60,
+      "selected": true
+    },
+    {
+      "id": "cmq9q3mrj0e8jslld20gniuzv",
+      "title": "OpenAI 将收购 Ona",
+      "title_en": "OpenAI to acquire Ona",
+      "url": "https://openai.com/index/openai-to-acquire-ona",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "OpenAI 计划收购 Ona，以拓展 Codex 的功能，提供安全、持久的云端环境，从而支持企业工作流中长时间运行的 AI 智能体。",
+      "category": "industry",
+      "score": 60,
+      "selected": true
+    },
+    {
+      "id": "cmq95mssa08tgslldrinkc8s3",
+      "title": "OpenAI 支持欧洲构建可信 AI 生态系统",
+      "title_en": "Supporting Europe's work in ensuring a trustworthy AI ecosystem",
+      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "OpenAI 支持欧盟《AI 内容透明度行为准则》，推进内容溯源标准与工具，帮助用户识别 AI 生成内容。",
+      "category": "industry",
+      "score": 64,
+      "selected": true
+    },
+    {
+      "id": "cmq8nblte041islldguc1eqww",
+      "title": "通过 Oracle 云承诺访问 OpenAI 模型和 Codex",
+      "title_en": "Access OpenAI models and Codex through your Oracle cloud commitment",
+      "url": "https://openai.com/index/openai-on-oracle-cloud",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-10T20:00:00.000Z",
+      "summary": "OpenAI 与 Oracle 合作，用户可利用现有 Oracle 云服务承诺（commitment）额度，在 Oracle 云上访问 OpenAI 模型和 Codex，用于构建和部署 AI 应用，同时获得企业级安全与治理能力。",
+      "category": "industry",
+      "score": 56,
+      "selected": true
+    },
     {
       "id": "cmq8czh9501agslldqnmwupbv",
       "title": "突发：Google 因模型幻觉被判负有法律责任",
@@ -13,6 +133,18 @@
       "summary": "一项法律裁决判定 Google 对其 AI 模型产生的幻觉内容负有法律责任。该判决可能产生巨大影响，尤其若其他国家跟进做出类似裁定。",
       "category": "industry",
       "score": 64,
+      "selected": true
+    },
+    {
+      "id": "cmq9fhg180bf6slldy6yurdhh",
+      "title": "Google DeepMind 宣布投入 1000 万美元资助多智能体AI安全研究",
+      "title_en": "Investing in multi-agent AI safety research",
+      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-06-10T10:21:19.000Z",
+      "summary": "Google DeepMind 与合作伙伴共同发起一项 1000 万美元的资金征集，专门用于多智能体 AI 安全方向的研究。",
+      "category": "industry",
+      "score": 71,
       "selected": true
     },
     {
@@ -469,66 +601,6 @@
       "summary": "Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比\"核武器不扩散条约\"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。",
       "category": "industry",
       "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmpzmsurk050jslkpxfuptzyp",
-      "title": "台积电难以跟上AI需求：\"我们只能支持这么多\"",
-      "title_en": "TSMC struggles to keep up with AI demand： 'We can only support so much'",
-      "url": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
-      "source": "The Verge：订阅版科技（RSS）",
-      "publishedAt": "2026-06-04T14:15:44.000Z",
-      "summary": "全球最大芯片制造商台积电表示，通过美国本土生产满足客户需求可能需要\"非常长的时间\"，凸显AI需求带来的产能压力。",
-      "category": "industry",
-      "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmpzljcev04oyslkpirsh5gdy",
-      "title": "DeepSeek连续四周登顶Token份额榜",
-      "title_en": "DeepSeek has now topped our token share rankings 4 weeks in a row： https：//openrouter.ai/rankings",
-      "url": "https://x.com/OpenRouter/status/2062538625225548118",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-06-04T14:15:03.000Z",
-      "summary": "DeepSeek 现已连续四周在我们平台的 token 份额排行榜上位居第一： https：//openrouter.ai/rankings",
-      "category": "industry",
-      "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmpzer05a02v8slkpi6r58kcw",
-      "title": "微软AI负责人：Anthropic模型太贵，正自研更便宜的替代模型",
-      "title_en": "Microsoft's AI Chief Says Anthropic Models Are Too Expensive",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-06-04/microsoft-says-anthropic-models-are-too-expensive",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-04T11:02:01.000Z",
-      "summary": "微软AI部门负责人表示，Anthropic推出的模型成本过高，公司目前正在内部研发更廉价的替代模型，以降低成本。",
-      "category": "industry",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmpyx4llm047vsli313nmjw1m",
-      "title": "Cloudflare Radar：机器人流量首次超过人类占比57.5%",
-      "title_en": "📢 里程碑 机器人流量🤖 首次在互联网历史上超过了人类在线流量👨🦰 根据Cloudflare Radar的实时统计 过去一周（5月28日到6月4日），全球所有请求 HTML 网页的流…",
-      "url": "https://x.com/xiaohu/status/2062367357868355622",
-      "source": "X：小互 (@xiaohu)",
-      "publishedAt": "2026-06-04T02:54:29.000Z",
-      "summary": "Cloudflare Radar 实时统计显示，过去一周（5月28日至6月4日）全球所有 HTML 网页请求流量中，57.5% 来自机器人（爬虫、AI 抓取、自动化脚本），仅42.5%来自真人浏览器，机器人流量首次超过人类。按所有 HTTP 流量返回内容分类，JSON（API 机器通信）占33.1%居首，HTML 仅12%。互联网流量主体已从人类浏览网页转向机器间通信和机器人抓取。",
-      "category": "industry",
-      "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmpysu6gj030usli3gqo1qtsd",
-      "title": "联合国报告：2030年AI数据中心水电消耗将翻倍",
-      "title_en": "联合国报告警示：AI 驱动下，2030 年数据中心水电消耗将翻倍",
-      "url": "https://www.ithome.com/0/959/607.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-04T00:50:46.000Z",
-      "summary": "联合国大学水、环境与健康研究所报告指出，受AI需求驱动，去年全球数据中心耗电448太瓦时（AI占五分之一），耗水4.5万亿升，碳排放1.89亿吨。预计到2030年，年耗电量将翻倍至945太瓦时（AI占40%），耗水增至9.3万亿升，碳排放升至3.99亿吨，占地面积从6900平方公里扩展至14500平方公里。报告警告若忽视环境成本，AI落地还将加剧土地紧张与电子废弃物问题。",
-      "category": "industry",
-      "score": 75,
       "selected": true
     }
   ]
