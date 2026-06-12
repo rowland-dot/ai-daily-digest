@@ -1,8 +1,68 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwNjgxODI0MDAwLCJpIjoiY21xMThyYnA3MGRrM3NsdHI3ZXF4OHhpbCJ9",
+  "nextCursor": "eyJhIjoxNzgwODQ4MDAwMDAwLCJpIjoiY21xNWtoMHEyMDBnN3NsMzh1b2l0bjBlMyJ9",
   "items": [
+    {
+      "id": "cmqb4534400wqsl9znvhs39jk",
+      "title": "olmo-eval：面向模型开发循环的评估工作台",
+      "title_en": "olmo-eval： An evaluation workbench for the model development loop",
+      "url": "https://huggingface.co/blog/allenai/olmo-eval",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-12T15:56:10.000Z",
+      "summary": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+      "category": "ai-products",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqb39p8x00o2sl9z85e1r79i",
+      "title": "字节豆包上线\"任务模式\"：支持定时执行与文件生成，\"思考模式\"升级为\"专家模式\"",
+      "title_en": "字节豆包上线\"任务模式\"：支持定时执行、代码运行与文件生成，\"思考模式\"已升级为\"专家模式\"",
+      "url": "https://www.ithome.com/0/963/725.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-12T15:33:19.000Z",
+      "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线\"任务模式\"，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原\"思考模式\"升级为\"专家模式\"，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为\"快速、专家、任务\"。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
+      "category": "ai-products",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqabcv2q0jvmslldd7my04uo",
+      "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
+      "title_en": "苹果升级 iOS 27 版健康 App：卡片布局、评估食物营养、追踪围绝经期等",
+      "url": "https://www.ithome.com/0/963/302.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-12T02:06:41.000Z",
+      "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqa7bz2g0itbslld0f4rluhk",
+      "title": "Codex 推出浏览器开发者模式",
+      "title_en": "Introducing developer mode for browser use in Chrome and the Codex in-app browser. Codex can use th…",
+      "url": "https://x.com/OpenAIDevs/status/2065226355495895521",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-06-12T00:15:07.000Z",
+      "summary": "为 Chrome 和 Codex 内置浏览器引入开发者模式。\n\nCodex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqa6vs2i0iodslldledhp882",
+      "title": "OpenAI Codex 推出速率重置攒存功能",
+      "title_en": "We heard you wanted to use Codex rate limit resets on your own time. Starting today， we're rolling …",
+      "url": "https://x.com/OpenAI/status/2065225362544726371",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-06-12T00:11:11.000Z",
+      "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true
+    },
     {
       "id": "cmqa20ewf0hf9slldu9bj1rhz",
       "title": "Replit 与 Databricks 集成升级，公开预览开放",
@@ -541,66 +601,6 @@
       "summary": "Claude 为目录中已发布的 Connector 新增性能监控仪表盘（公开测试版）。所有者可追踪活跃用户、工具调用次数、目录排名、健康评分、错误率、延迟，并按工具细分错误归因；还能按 Claude、Claude Code、Cowork 等产品分解使用情况。访问需 Team 或 Enterprise 账号（Admin/Owner 权限或自定义角色）。基于 MCP 构建的 Connector 可直接在 Claude 应用内提交至目录，该目录已有超 300 个第三方 Connector，每日被数百万人使用。",
       "category": "ai-products",
       "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmq3nuz12009bsla9rbw1qhyn",
-      "title": "Her · हेर - Claude Code 会话分析工具",
-      "title_en": "Her · हेर - a detective for your Claude Code sessions",
-      "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-07T10:13:41.000Z",
-      "summary": "Her（हेर）是专为 Claude Code 设计的会话分析工具。用户上传 `.jsonl` 文件后，Her 用自然语言重建每轮交互，标记部署、配置变更、秘密等高风险操作并定位到具体轮次。它展示 token 消耗、所用工具、子智能体、技能和 MCP 服务器，并结合 Anthropic 与社区最佳实践给出改进建议（仅在有明确可修复模式时）。内置\"Ask Her\"问答功能，支持单会话与跨会话项目分析。工具不调用第三方 AI API，使用 Nemotron-Mini-4B-Instruct 模型在 Hugging Face ZeroGPU 上运行，评估引擎完全确定，模型仅负责文本生成与建议。Her 内置 Homebrew、npm、PyPI 主流 CLI 工具数据库，自动识别会话中使用的工具，并对部署工具、数据库客户端等执行活动进行标记提醒。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq2e53d100lpsl783tyjx1iw",
-      "title": "GitHub 开源 Spec Kit 工具包，用产品规范引导 AI 编码",
-      "title_en": "GitHub released Spec Kit， an open-source toolkit to fix vibe coding's biggest weakness： the AI often…",
-      "url": "https://x.com/rohanpaul_ai/status/2063246343842501091",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-06T13:07:16.000Z",
-      "summary": "GitHub 发布开源工具包 Spec Kit，旨在解决 \"vibe coding\" 的最大弱点--AI 常在规则未明确时就开始编码。它把流程从 \"让 AI 直接构建\" 改为 \"先写产品规范，再让 AI 根据规范实现\"。当前 AI 编码模式常因松散提示直接跳入代码，导致需求薄弱、边界遗漏和反复返工。Spec Kit 推动反向流程：先定义产品功能，再澄清差距、制订技术计划、分解任务，最后让 agent 执行。规范成为可执行的开发合约，支持 Copilot、Claude Code、Codex、Gemini、Cursor、Qwen 等 30+ agent 集成。项目已获 109K+ 星标。",
-      "category": "ai-products",
-      "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmq2doi6700hlsl78fk3tm0l4",
-      "title": "OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/960/969.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-06T12:48:12.000Z",
-      "summary": "OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq2ahm4y00o9slopm7hxc8ld",
-      "title": "Persona Atlas：Hugging Face 上的开源人物思维映射工具",
-      "title_en": "Persona Atlas： Mapping How Famous Minds Think",
-      "url": "https://huggingface.co/blog/build-small-hackathon/persona-atlas",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-06T11:42:01.000Z",
-      "summary": "Persona Atlas 是一个运行在 Hugging Face Inference Providers 上的开源项目。它通过工具调用代理执行真实网络搜索，生成公众人物的资料、事实清单和风格假设，然后让该人物回答十个关于身份、伦理等开放式问题。每个回答被转化为嵌入向量，从而在向量空间中对不同人物进行距离比较，并基于十个特质锚点绘制热力图。前端采用 Gradio，提供研究、比较和检查代理完整追溯三个标签页，预设多个人物角色，无需 token 即可直接体验。",
-      "category": "ai-products",
-      "score": 58,
-      "selected": true
-    },
-    {
-      "id": "cmq18rbp70dk3sltr7eqx8xil",
-      "title": "智能体协作应如同事般对话和手势",
-      "title_en": "Working with agents should feel like working with a colleague. You should be able \"speak to\" them no…",
-      "url": "https://x.com/mntruell/status/2062955210897801520",
-      "source": "X：Michael Truell (@mntruell)",
-      "publishedAt": "2026-06-05T17:50:24.000Z",
-      "summary": "与 AI 智能体协作应感觉像与同事协作一样。你应能\"与它们交谈\"--不仅通过文本聊天，还能一起对着屏幕做手势、实时对话等。",
-      "category": "ai-products",
-      "score": 80,
       "selected": true
     }
   ]

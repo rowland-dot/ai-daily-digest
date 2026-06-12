@@ -1,8 +1,68 @@
 {
-  "count": 22,
+  "count": 25,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqa38qfw0hrsslld9n3v1pzf",
+      "title": "研究模拟显示：LLM 在 95% 的模拟中会使用战术核武器",
+      "title_en": "我们来玩个游戏吧？--在95%的模拟中，大型语言模型都会使用战术核武器",
+      "url": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-11T22:23:17.154Z",
+      "summary": "一项模拟研究显示，大型语言模型（LLM）在 95% 的模拟场景中会选择使用战术核武器。该研究未指明具体模型名称与版本，结果引发对 AI 决策行为的关注。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqap4xzd0njdsllde7pwfwe3",
+      "title": "HYDRA-X： 原生统一多模态模型与整体视觉分词器",
+      "title_en": "HYDRA-X： Native Unified Multimodal Models with Holistic Visual Tokenizers",
+      "url": "https://arxiv.org/abs/2606.13289",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "HYDRA-X 是首个在单个 Vision Transformer （ViT） 中统一图像与视频 tokenization 的统一多模态模型。通过帧级因果时间注意力实现视觉重建，并采用层级时间压缩替代单步压缩。轻量级解压器在联合图像-视频教师监督下上采样时间压缩特征。编辑管线中，源-目标交互在分词器内部潜在层面而非 LLM 语义层面进行，提升编辑一致性与收敛速度。7B 密集模型在图像与视频理解及生成任务上表现强劲。",
+      "category": "paper",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmqaipftg0ltyslldbhrdenba",
+      "title": "MiniMax Sparse Attention（MSA）块状稀疏注意力",
+      "title_en": "MiniMax Sparse Attention",
+      "url": "https://arxiv.org/abs/2606.13392",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "MiniMax 提出块状稀疏注意力 MSA，基于 GQA 构建。轻量级 Index Branch 为每个 GQA 组独立选择 Top-k KV 块，Main Branch 仅对选中块执行精确块稀疏注意力。在 109B 参数多模态模型上，MSA 与 GQA 性能持平，1M 上下文下每 token 注意力计算减少 28.4 倍。配合协同设计的 GPU 内核，H800 上实现 14.2 倍 prefill 和 7.6 倍 decoding 端到端加速。推理内核与基于 MSA 的多模态模型已公开发布。",
+      "category": "paper",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmqac9xug0k4rslldyycltabh",
+      "title": "EurekAgent：环境工程化实现自主科学发现",
+      "title_en": "EurekAgent： Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+      "url": "https://arxiv.org/abs/2606.13662",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "EurekAgent 是一个环境工程化的大语言模型智能体系统，专为度量驱动的自主科学发现设计。它从权限工程（可控执行与隔离评估）、产物工程（文件系统与 Git 协作）、预算工程（成本感知探索）和人在回路工程（简便监督干预）四个维度构建执行环境。EurekAgent 在数学、内核工程和机器学习任务上取得新 SOTA，包括以不到 11 美元总 API 成本发现新的 26 圆填充结果。代码与结果已开源。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqac9xuf0k4pslld3pzhn7m3",
+      "title": "WEAVER：一种更优、更快、更长的机器人操作世界模型",
+      "title_en": "WEAVER， Better， Faster， Longer： An Effective World Model for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2606.13672",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "WEAVER是一种多视图世界模型架构，通过流匹配损失训练预测未来潜变量和奖励值，满足保真度、一致性和效率三个要求。在机器人操作任务上，WEAVER在政策评估中与真实成功率的相关系数ρ=0.870，在π0.5基础模型基础上实现政策改进成功率提升38%，测试时规划成功率提升14%，且速度比先前世界模型快5-10倍。在分布外场景下表现也优于先前世界模型。代码、模型和视频已开源。",
+      "category": "paper",
+      "score": 75,
+      "selected": true
+    },
     {
       "id": "cmq8d8miz01drslldd29j1yzr",
       "title": "Anthropic 研究：AI 数小时内即可从安全补丁构建漏洞利用",
@@ -148,6 +208,18 @@
       "selected": true
     },
     {
+      "id": "cmqadpjwv0kjzslldk3axe95f",
+      "title": "MaxProof框架：MiniMax M3在IMO 2025和USAMO 2026超越人类金牌线",
+      "title_en": "MaxProof： Scaling Mathematical Proof with Generative-Verifier RL and Evolutionary Search",
+      "url": "https://www.minimax.io/blog/minimax-maxproof-math-proof-evolution",
+      "source": "MiniMax：Blog（网页）",
+      "publishedAt": "2026-06-08T16:00:00.000Z",
+      "summary": "MiniMax M3采用MaxProof框架，在IMO 2025和USAMO 2026两项数学奥赛基准上超越人类金牌线。框架分三阶段训练：Proof RL使用生成式验证器提供奖励，进行长程强化学习提升证明生成能力；Verifier Alignment将验证对齐为错误定位任务；Refinement Augmentation利用训练中产生的错误证明与验证分析对，通过拒绝采样微调修复能力。三者合并为M3通用模型。系统通过低假阳性率过滤噪声，保证RL稳定性。",
+      "category": "paper",
+      "score": 76,
+      "selected": true
+    },
+    {
       "id": "cmq6niqv20a1osl5iixuej5ea",
       "title": "Gemini Guided Learning 随机对照试验：在塞拉利昂等地提升参与度并加速学习",
       "title_en": "Measuring the impact of learning with AI in Sierra Leone and beyond",
@@ -229,42 +301,6 @@
       "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
       "category": "paper",
       "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmq1hy4wt0fyrsltrxx64boz8",
-      "title": "Arena 发布真实世界 AI 智能体排行榜 Agent Arena",
-      "title_en": "Arena just released a real-world agent leaderboard that ranks AI models by how well they complete ac…",
-      "url": "https://x.com/rohanpaul_ai/status/2063018358795300982",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-05T22:01:20.000Z",
-      "summary": "Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。",
-      "category": "paper",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq2o71l001iisl6n8ljx5jbt",
-      "title": "腾讯混元提出Stem稀疏注意力算法，被ICML 2026收录",
-      "title_en": "首字延迟降低3.6倍，腾讯混元提出Stem稀疏注意力算法，长文推理加速新SOTA",
-      "url": "https://mp.weixin.qq.com/s/XneOSvjt-7A-DU546cGoZA",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-06-05T11:22:41.000Z",
-      "summary": "Stem算法通过Token位置衰减（TPD）和输出感知度量（OAM）两项创新，仅用25%算力即逼近稠密注意力精度。配套HPC算子针对Hopper架构优化，支持FP8量化与vLLM的Paged KV Cache，在混元Hy3 preview上实现首字延迟降低3.6倍。HPC-BSA相比MIT-BSA稳定保持约3倍加速，在8K至256K序列长度上表现一致。",
-      "category": "paper",
-      "score": 62,
-      "selected": true
-    },
-    {
-      "id": "cmq4k0mcr01psslot5yxg2wpu",
-      "title": "dots.tts 技术报告",
-      "title_en": "dots.tts Technical Report",
-      "url": "https://arxiv.org/abs/2606.07080",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-05T00:00:00.000Z",
-      "summary": "dots.tts 是一个 2B 参数的连续自回归 TTS 基座模型，在连续潜在空间中建模语音。其创新包括：多目标训练的 AudioVAE 构建语义结构化连续语音空间；全历史条件的 flow-matching 头保持长程一致性；无奖励自纠正后训练提升鲁棒性和音质。在 Seed-TTS-Eval 上取得最佳平均性能，中文/英文/中文-hard 的 WER 分别为 0.94%/1.30%/6.60%，SIM 分别为 81.0/77.1/79.5。其他基准也达开源 SOTA。基于 CFG 的 MeanFlow 蒸馏实现低延迟推理，输出流首包 85ms，双流 54ms。训练推理代码及检查点已开源。",
-      "category": "paper",
-      "score": 73,
       "selected": true
     }
   ]

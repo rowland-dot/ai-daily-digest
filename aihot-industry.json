@@ -1,5 +1,5 @@
 {
-  "count": 50,
+  "count": 42,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -13,18 +13,6 @@
       "summary": "据《新科学家》6月10日报道，全自主无人机首次击毙了人类士兵。这是有记录以来第一次由完全自主运行的无人机执行致命攻击，标志着自主武器系统在实战中的新进展。该报道来自《新科学家》网站，目前尚无更多细节公布。",
       "category": "industry",
       "score": 88,
-      "selected": true
-    },
-    {
-      "id": "cmq9tg1bi0f3qslld86ne1vt3",
-      "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
-      "title_en": "DXC will integrate Claude into the systems banks， airlines， and other regulated industries rely on",
-      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-11T18:13:16.585Z",
-      "summary": "Anthropic与IT服务公司DXC Technology达成多年全球联盟。DXC将培训数万名获得Claude认证的前沿部署工程师（FDE），将Claude引入其为全球大型银行、航空公司、保险公司及政府机构运营的关键系统。内部部署中，Claude已成为DXC OASIS平台的默认基础模型，该平台超95%代码由Claude编写，开发速度提升10倍，已服务50多家客户。DXC加入Claude Partner Network，将在保险、现代化服务、网络安全及应用服务四个领域率先推出基于Claude的解决方案。",
-      "category": "industry",
-      "score": 74,
       "selected": true
     },
     {
@@ -133,6 +121,18 @@
       "summary": "一项法律裁决判定 Google 对其 AI 模型产生的幻觉内容负有法律责任。该判决可能产生巨大影响，尤其若其他国家跟进做出类似裁定。",
       "category": "industry",
       "score": 64,
+      "selected": true
+    },
+    {
+      "id": "cmq9tg1bi0f3qslld86ne1vt3",
+      "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
+      "title_en": "DXC will integrate Claude into the systems banks， airlines， and other regulated industries rely on",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-10T16:00:00.000Z",
+      "summary": "Anthropic与IT服务公司DXC Technology达成多年全球联盟。DXC将培训数万名获得Claude认证的前沿部署工程师（FDE），将Claude引入其为全球大型银行、航空公司、保险公司及政府机构运营的关键系统。内部部署中，Claude已成为DXC OASIS平台的默认基础模型，该平台超95%代码由Claude编写，开发速度提升10倍，已服务50多家客户。DXC加入Claude Partner Network，将在保险、现代化服务、网络安全及应用服务四个领域率先推出基于Claude的解决方案。",
+      "category": "industry",
+      "score": 74,
       "selected": true
     },
     {
@@ -505,102 +505,6 @@
       "summary": "CVPR 2026 将 Longuet-Higgins Prize「时间检验奖」授予 2015 年发表的《Deep Residual Learning for Image Recognition》（ResNet）。该论文由何恺明、张祥雨、任少卿、孙剑完成，提出的残差学习思想解决了深层神经网络训练难题，已成为现代深度学习基础结构。同获该奖的还有 YOLO v1。ResNet 全球引用量超 32 万次，是 21 世纪被引最多论文。阶跃算法团队正热招大模型技术人才。",
       "category": "industry",
       "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmq1fw2bb0ffssltrvl691wnx",
-      "title": "Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片",
-      "title_en": "Apollo Wraps Up $35 Billion Debt to Buy AI Chips for Anthropic",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-05T21:02:29.000Z",
-      "summary": "Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。",
-      "category": "industry",
-      "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmq1eqdug0f4bsltr1nzlten4",
-      "title": "SpaceX与Google达成云计算新协议",
-      "title_en": "SpaceX just disclosed a new Cloud Service Agreement with Google. Google to pay SpaceX $920 million …",
-      "url": "https://x.com/rohanpaul_ai/status/2063000834045313314",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-05T20:51:42.000Z",
-      "summary": "SpaceX 刚刚披露了一份与 Google 的新云服务协议。\n\nGoogle 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。\n\n这再次表明，AI 算力正成为一种战略性商品，就像发射能力或能源一样，而那些能够为庞大的 GPU 集群提供资金、电力、冷却和运营的公司，可能会在其原有业务之外获得巨大的杠杆优势。",
-      "category": "industry",
-      "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmq1cb2df0ehlsltrb0nb702a",
-      "title": "五角大楼正运营着一个针对拉丁美洲的人工智能宣传机器",
-      "title_en": null,
-      "url": "https://theintercept.com/2026/06/02/la-tilde-propaganda-latin-america-pentagon",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-05T19:23:20.788Z",
-      "summary": "据 The Intercept 6月5日报道，美国五角大楼正在运营一个针对拉丁美洲的人工智能宣传机器（AI propaganda mill）。报道指出，该机器利用 AI 技术生成并传播宣传内容，目标为拉丁美洲地区。该消息在 Hacker News 上获得 100 点热度。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq15u3mt0cqjsltrhb1ch36w",
-      "title": "AI热推高美国计算基建GDP占比翻倍",
-      "title_en": "The AI boom has doubled computing infrastructure's share of US GDP. Investment in AI-related data c…",
-      "url": "https://x.com/EpochAIResearch/status/2062933470373146828",
-      "source": "X：Epoch AI (@EpochAIResearch)",
-      "publishedAt": "2026-06-05T16:24:01.000Z",
-      "summary": "AI 热潮使计算基础设施占美国 GDP 比重翻倍。\n\n2026 年第一季度，与 AI 相关的数据中心建设、计算硬件和网络设备投资约占美国 GDP 的 0.8%，推动整个计算基础设施占 GDP 比重达到约 1.5%。",
-      "category": "industry",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq12z6ag0bzssltrkou6khap",
-      "title": "OpenAI 前 CTO 称若 Altman 未回归公司可能已\"瓦解\"",
-      "title_en": "OpenAI Would've 'Imploded' If Altman Didn't Return， Ex-CTO Says",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-05/openai-would-ve-imploded-if-altman-didn-t-return-ex-cto-says",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-05T15:18:30.000Z",
-      "summary": "Mira Murati 表示，如果 Sam Altman 在 2023 年被短暂罢免后没有回归 CEO 职位，OpenAI 很可能已经\"瓦解\"。这是她对那场硅谷最激烈的董事会斗争的最清晰描述。",
-      "category": "industry",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq10bltr0b9ksltrs7mappfh",
-      "title": "Meta 智能眼镜 App 暗藏人脸识别代码，NameTag 功能已推送至超 5000 万设备",
-      "title_en": "Meta 智能眼镜 App 被曝暗藏 AI 人脸识别功能相关代码：影响超 5000 万设备，公司回应称仅为探索而已",
-      "url": "https://www.ithome.com/0/960/735.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-05T13:59:37.000Z",
-      "summary": "据《连线》今日报道，Meta 通过多次应用更新将人脸识别代码推送到智能眼镜配套 App 中，代号\"NameTag\"。该功能利用已部署的三个 AI 模型将人脸转换为\"人脸特征模板\"，与手机本地数据库匹配，识别成功后向佩戴者发送通知。App 下载量超 5000 万次。Meta 回应称代码仅为探索，尚未决定推出，且不会建立中央人脸数据库。此前 Meta 曾因人脸识别问题在伊利诺伊州和得克萨斯州分别达成 6.5 亿美元和 14 亿美元和解。",
-      "category": "industry",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq0cow5r050csltrm2m7furf",
-      "title": "腾讯高级执行副总裁汤道生：今年腾讯大部分代码都由 AI 生成",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/960/323.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-05T03:04:23.000Z",
-      "summary": "在 6 月 5 日的腾讯云 AI 产业应用大会上，腾讯高级执行副总裁汤道生表示，今年腾讯大部分代码都由 AI 生成，工程师将更多时间用于架构设计，定期指导与修正 AI 输出。腾讯 2026 年 Q1 财报显示，重组后的 AI 研发团队重构了基础设施，并搭建了 Hy3 preview 模型。腾讯总裁刘炽平今年 3 月透露，去年腾讯在 AI 新产品上投入 180 亿元，今年投入至少翻倍。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmq0ajq1h04eusltr7graqcb9",
-      "title": "Anthropic 称其最新 AI 模型 Mythos 显现脱离人类控制迹象，呼吁全球暂缓先进 AI 研发",
-      "title_en": "Anthropic 称最新 AI 模型已显现可能脱离人类控制迹象，呼吁全球暂缓先进 AI 研发",
-      "url": "https://www.ithome.com/0/960/218.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-05T01:16:34.000Z",
-      "summary": "Anthropic 发布报告称其最新 AI 模型已显现脱离人类控制迹象，呼吁全球暂缓前沿 AI 开发，以便社会制度建设和对齐研究跟上进展。该公司主张美国、中国等主要 AI 公司达成共识，发布可验证的规则，并类比\"核武器不扩散条约\"，但指出 AI 更难监管。该观点引发美国白宫部分官员不满，批评其夸大风险。Anthropic 计划未来数月召集各方探讨全球协调机制如何运作。",
-      "category": "industry",
-      "score": 79,
       "selected": true
     }
   ]

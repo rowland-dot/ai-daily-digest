@@ -4,6 +4,30 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmqb0ab1w010xsl359sr4xe9u",
+      "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
+      "title_en": "MiniMax M3， Open-Weight， Now On Hugging Face ， with only ~428B parameters and ~23B activated paramet…",
+      "url": "https://x.com/MiniMax_AI/status/2065436935188058208",
+      "source": "X：MiniMax (@MiniMax_AI)",
+      "publishedAt": "2026-06-12T14:11:53.000Z",
+      "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmqas4pf30obzslldpvkbrqde",
+      "title": "Kimi 发布并开源最新代码模型 Kimi-K2.7-Code",
+      "title_en": "🌘 Kimi-K2.7-Code， our latest coding model， is now released and open-sourced！ 🔷 Improved coding & …",
+      "url": "https://x.com/Kimi_Moonshot/status/2065377579130142937",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-06-12T10:16:02.000Z",
+      "summary": "Kimi 发布并开源最新代码模型 Kimi-K2.7-Code。相比 K2.6，其在 Kimi Code Bench v2 上提升 +21.8%，Program Bench 提升 +11.0%，MLS Bench Lite 提升 +31.5%。推理效率改进，推理 token 使用量降低 30%，长时编码任务中指令遵循和端到端成功率均提升。6x 高速模式即将推出，即日起可通过 Kimi API 和 Kimi Code 使用。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true
+    },
+    {
       "id": "cmq9rke110ekyslldmbw1ap3o",
       "title": "Gemini Omni Flash 视频任务达 SOTA",
       "title_en": "Gemini Omni Flash is SOTA at image to video， text to video， and video editing ： ） Excited to get t…",
@@ -181,30 +205,6 @@
       "summary": "UIUC与Chroma联合推出Harness-1，一个20B参数的检索子智能体。它通过强化学习在一个有状态搜索框架中训练，该框架维护候选池、重要性标注集、证据图和验证记录，由策略决定搜索、筛选、验证及停止的时机。Harness-1在8个基准测试上达到0.730平均curated recall，比下一个最佳开源子智能体高出11.4个百分点，仅落后于Opus-4.6。模型权重和框架代码均已公开。",
       "category": "ai-models",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq0m70ih07k6sltrnfhibwso",
-      "title": "Grok模型更新：更自主更准确",
-      "title_en": "Grok model improvement",
-      "url": "https://x.com/elonmusk/status/2062795019551957383",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-06-05T07:13:52.000Z",
-      "summary": "更新后的 Grok-build 模型（仍是 0.5T 那个）比以前好很多。它不那么偷懒、更自主、更准确。我们仍在改进长时任务。请期待并在我们漂亮的 TUI 中使用新的使用限制！🚀",
-      "category": "ai-models",
-      "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmq642x6l0501sl5i3sl7adjt",
-      "title": "京东开源JoyAI-Echo长音视频生成框架",
-      "title_en": "京东开源JoyAI-Echo框架，进入全球第一梯队！",
-      "url": "https://mp.weixin.qq.com/s/6ZKUwaMufy1cpUFFijokTQ",
-      "source": "公众号：京东JoyAI",
-      "publishedAt": "2026-06-05T05:27:22.000Z",
-      "summary": "6月3日，京东开源JoyAI-Echo框架，解决长视频生成中角色身份崩坏、音色突变和生成缓慢三大难题。该框架通过跨模态音视频记忆库保持5分钟内角色外观与音色一致，记忆驱动后训练结合DMD技术带来约7.5倍推理加速。新增Director Agent支持自然语言对话式局部修订，无需重跑整条视频。配套轻量化实时超分模块，支持736×1280→1152×1920及1472×2560两档分辨率。评测集显示，语音内容准确率0.8646，用户偏好多项领先。代码与权重已开源至GitHub。",
-      "category": "ai-models",
-      "score": 72,
       "selected": true
     }
   ]
