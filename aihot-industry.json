@@ -1,8 +1,80 @@
 {
-  "count": 42,
+  "count": 47,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqcpszqx00r5slttxgr6scpy",
+      "title": "亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治",
+      "title_en": "亚马逊首席执行官与美国官员的会谈引发了对Anthropic模型的整治",
+      "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-13T18:22:19.626Z",
+      "summary": "亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqca4a1900uxsl9izm7hb426",
+      "title": "Anthropic 秘密申请上市，估值 9650 亿美元",
+      "title_en": "Global Capitalism Bets It All on AI Future That Alarms Voters",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-13/global-capitalism-bets-it-all-on-ai-future-that-alarms-voters",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-13T11:00:00.000Z",
+      "summary": "Anthropic，这家估值达 9650 亿美元的 AI 巨头、史上增长最快的初创公司之一，在秘密提交 IPO 申请后，再次投下重磅炸弹。",
+      "category": "industry",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmqc5usi000cbslt49vfrpgge",
+      "title": "谷歌Android安全负责人因反对军事AI合作辞职",
+      "title_en": "谷歌抛弃\"不作恶\"承诺：Android 安全主管因军事 AI 合作愤而辞职，控诉公司丧失道德底线",
+      "url": "https://www.ithome.com/0/963/888.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-13T08:40:39.000Z",
+      "summary": "谷歌Android平台安全负责人René Mayrhofer辞职，他在5月18日内部告别信中指责公司\"丧失道德指针\"，批评谷歌悄悄放弃碳中和目标（因AI模型能耗），并与美国战争部签署允许AI用于\"任何合法目的\"的协议。今年4月下旬谷歌宣布向五角大楼提供AI用于机密工作，2025年2月更新AI原则时移除了不使用AI开发武器或监控工具的承诺。Mayrhofer担忧谷歌AI产品可能被用于针对公民的大规模监控，包括自己和家人。",
+      "category": "industry",
+      "score": 80,
+      "selected": true
+    },
+    {
+      "id": "cmqc1kg4p00ctsl9bfiuzkt6u",
+      "title": "Zuckerberg承认 Meta AI 转型\"脱轨\"：裁员 10%、转岗 7000 人后组织调整过快",
+      "title_en": "Meta 裁员 10%、转岗约 7000 人后，扎克伯格坦言公司 AI 转型\"脱轨\"",
+      "url": "https://www.ithome.com/0/963/858.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-13T06:49:25.000Z",
+      "summary": "路透社披露的 Meta 内部备忘录显示，CEO Zuckerberg承认公司在 AI 转型中组织调整节奏过快，带来员工安置、管理跨度等问题，预计未来\"几乎肯定会犯更多错误\"。Meta 今年 5 月已裁减全球 10% 员工，并将 7000 人转入 AI 相关新项目。为缓解协作问题，公司将增加团队建设预算，7 月举办黑客松。新成立的应用 AI 工程部门个人贡献者与管理者比例最高达 50：1。Zuckerberg重申今年不再全公司裁员。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqbrjero04b5slamicgrz7kn",
+      "title": "Anthropic的安全警告可能适得其反--政府已撤回其最强大AI",
+      "title_en": "Anthropic's safety warnings may have just backfired - the government has pulled the plug on its most powerful AI",
+      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-13T02:26:30.000Z",
+      "summary": "Anthropic对政府撤回其最强大AI模型表达不满，称仅基于一个狭窄的潜在越狱发现就召回已部署给数亿用户的商业模型不合理。",
+      "category": "industry",
+      "score": 87,
+      "selected": true
+    },
+    {
+      "id": "cmqbnjbai034islame1d5jkaf",
+      "title": "OpenAI 遭多州总检察长联合调查",
+      "title_en": "OpenAI Probed by Coalition of State Attorneys General",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
+      "source": "Bloomberg：Technology（RSS）",
+      "publishedAt": "2026-06-13T00:27:02.000Z",
+      "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
     {
       "id": "cmq9wt5fl0g09slldyw8h9u7p",
       "title": "全自主无人机首次击毙了人类士兵",
@@ -493,18 +565,6 @@
       "summary": "美国众议院议员发布一项法案草案，旨在禁止各州自行制定人工智能相关法规，将AI监管权力集中到联邦层面。",
       "category": "industry",
       "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmq2o63pf01dosl6n6n4wr3tr",
-      "title": "阶跃首席科学家张祥雨合著论文 ResNet 获 CVPR 2026 「时间检验奖」",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/ZVgqdH_fE42jO4kcI-lF3g",
-      "source": "公众号：阶跃星辰（Step）",
-      "publishedAt": "2026-06-06T06:46:02.000Z",
-      "summary": "CVPR 2026 将 Longuet-Higgins Prize「时间检验奖」授予 2015 年发表的《Deep Residual Learning for Image Recognition》（ResNet）。该论文由何恺明、张祥雨、任少卿、孙剑完成，提出的残差学习思想解决了深层神经网络训练难题，已成为现代深度学习基础结构。同获该奖的还有 YOLO v1。ResNet 全球引用量超 32 万次，是 21 世纪被引最多论文。阶跃算法团队正热招大模型技术人才。",
-      "category": "industry",
-      "score": 71,
       "selected": true
     }
   ]

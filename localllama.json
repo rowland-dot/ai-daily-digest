@@ -1,138 +1,138 @@
 {
-  "fetched_at": "2026-06-12T22:08:40.429Z",
+  "fetched_at": "2026-06-13T21:47:16.996Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
-      "title": "moonshotai/Kimi-K2.7-Code · Hugging Face",
-      "author": "Dark_Fire_12",
-      "updated": "2026-06-12T10:22:07+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3rdk9/moonshotaikimik27code_hugging_face/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "Kimi K2. 7 Code is a coding-focused agentic model built upon Kimi K2. 6. With substantial improvements on real-world long-horizon coding tasks, it strengthens end-to-end task completion across complex software engineering workflows while improving token efficiency, reducing thinking-token usage by approximately 30% compared with Kimi K2. 6.",
-      "body": "Kimi K2.7 Code is a coding-focused agentic model built upon Kimi K2.6. With substantial improvements on real-world long-horizon coding tasks, it strengthens end-to-end task completion across complex software engineering workflows while improving token efficiency, reducing thinking-token usage by approximately 30% compared with Kimi K2.6.\n\nsubmitted by /"
-    },
-    {
-      "title": "Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!",
-      "author": "LLMFan46",
-      "updated": "2026-06-11T23:58:58+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "Doing all this took many days as well as a lot of work and effort, so I hope the community can make good use of these models.",
-      "body": "gemma-4-31B-it-qat-q4_0-unquantized-uncensored-heretic:\n\nSafetensors: https://huggingface.co/llmfan46/gemma-4-31B-it-qat-q4_0-unquantized-uncensored-heretic\n\nGGUF: https://huggingface.co/llmfan46/gemma-4-31B-it-qat-q4_0-uncensored-heretic-GGUF\n\nNVFP4 Safetensors: https://huggingface.co/llmfan46/gemma-4-31B-it-qat-q4_0-uncensored-heretic-NVFP4\n\nNVFP4 GGUF: https://huggingface.co/llmfan46/gemma-4-31B-it-qat-q4_0-uncensored-heretic-NVFP4-GGUF\n\nGPTQ-Int4: https://huggingface.co/llmfan46/gemma-4-31B-it-qat-q4_0-uncensored-heretic-GPTQ-Int4\n\ngemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic:\n\nSafetensors: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic\n\nGGUF: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-uncensored-heretic-GGUF\n\nNVFP4 Safetensors: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-uncensored-heretic-NVFP4\n\nNVFP4 GGUF: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-uncensored-heretic-NVFP4-GGUF\n\nGPTQ-Int4: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-uncensored-heretic-GPTQ-Int4\n\ngemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic:\n\nSafetensors: https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic\n\nGGUF: https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-uncensored-heretic-GGUF\n\nNVFP4 Safetensors: https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-uncensored-heretic-NVFP4\n\nNVFP4 GGUF: https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-uncensored-heretic-NVFP4-GGUF\n\ngemma-4-12B-it-uncensored-heretic:\n\nSafetensors: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic\n\nGGUFs: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic-GGUF\n\nNVFP4 Safetensors: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic-NVFP4\n\nNVFP4 GGUF: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic-NVFP4-GGUF\n\nI even made some NVFP4 Safetensors and NVFP4 GGUF of standard Gemma 4 31B it since someone requested them:\n\ngemma-4-31B-it-uncensored-heretic:\n\nNVFP4 Safetensors: https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-NVFP4\n\nNVFP4 GGUFs: https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-NVFP4-GGUF\n\nDoing all this took many days as well as a lot of work and effort, so I hope the community can make good use of these models.\n\nAs usual all releases come with benchmarks too.\n\nFind all my models here: HuggingFace-LLMFan46\n\nsubmitted by /"
-    },
-    {
-      "title": "We should heavily discourage and moderate cloud API (deepseek api, GLM api, etc.) topics and discussion. This is LOCAL first.",
-      "author": "Sensitive_Pop4803",
-      "updated": "2026-06-12T13:47:31+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3vrrk/we_should_heavily_discourage_and_moderate_cloud/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "I’ve seen tons of stealth marketing or related topics on this subreddit about how great or how easy it is to use some random subscription api. Why the fuck are we allowing people to so casually talk about how much more affordable their zai subscription is than Claude? Who cares?",
-      "body": "I’m just some fucking guy. This is just some fucking opinion.\n\nI’ve seen tons of stealth marketing or related topics on this subreddit about how great or how easy it is to use some random subscription api. Why the fuck are we allowing people to so casually talk about how much more affordable their zai subscription is than Claude? Who cares? I don’t give a singular care if the eastern (bless them for their otherwise great contributions to OSS LLMs) companies can offer 35 trillion tokens for 25 cents. My fucking data would still be going to them and their prices can fucking change whenever they want!\n\nI am here to learn about if -p-e-w- is about to get sued by Facebook for facilitating gooning on llama models. I am here to learn about why it took so long for llama.cpp to allow tensor split with q8_0 kv cache. I am here to learn about why NPUs are so unbelievably useless to this day for OUR NEEDS. Does anyone actually know if you can safely heretic Gemma 4 31B QAT and still reap the benefits of the QAT at the end?\n\nThis community is supposed to be, in my opinion, first and foremost about building your own infrastructure at HOME to do things YOUR way on YOUR owned hardware.\n\nThe ONE, ONE exception I can see where it is OKAY to bring up Claude pricing, Deepseek pricing, GLM pricing, is when showing benchmarks EXPLICITLY against a locally available set of models. Even if kimi-whatever-the-fuck 9000 nvfp4 needs like 8 GPUs, it is OKAY to compare its performance against commercial solutions. Yes, my friends, all online apis are commercial solutions. They are closer to Claude than further. Yes, I said it. I said it cus I can. -Bruno Mars.\n\nIt is NOT okay to start talking about how you’re suddenly happy with how affordable some bumfuck open router model is. You don’t control it. You don’t own it. It’s not fucking yours. It’s not local. It’s not encrypted on their server. Your shit is processed in plain text. Jesus fucking Christ.\n\nOh and some of you think renting a VPS is in the spirit of building local independent infrastructure, I’ll get to that another day.\n\nBottom line: We need a specific reporting rule that says “Stealth marketing / promoting cloud providers.”\n\nsubmitted by /"
-    },
-    {
-      "title": "[NEW MODEL] Supra-Title-0.3B Just released!",
-      "author": "Dangerous_Try3619",
-      "updated": "2026-06-12T12:28:17+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3tvgh/new_model_supratitle03b_just_released/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "We just released Supra Title (experimental) , a purpose-built 350M model for generating chat conversation titles, built on LFM2. 5-350M. Most platforms use large general-purpose models to title conversations. Supra Title does only that, and does it fast, in GGUF format, on any hardware.",
-      "body": "Supra Title is live! 🦅\n\nWe just released Supra Title (experimental) , a purpose-built 350M model for generating chat conversation titles, built on LFM2.5-350M.\n\nhttps://huggingface.co/SupraLabs/Supra-Title-350M-exp-GGUF\n\nhttps://huggingface.co/SupraLabs\n\nMost platforms use large general-purpose models to title conversations. Supra Title does only that, and does it fast, in GGUF format, on any hardware.\n\nNo system prompt needed. Just send the user message and get a title back.\n\nExamples:\n\nUser message Title bruh my wifi keeps disconnecting every 10 minutes 😭 WiFi Issues what's the easiest way to make fluffy pancakes? Fluffy Pancakes can someone explain taxes to me like i'm five Understanding Taxes I am so dumb brooo Understanding The Person Who Thinks It's Dumb\n\nQuick start:\n\nllama serve -hf SupraLabs/Supra-Title-350M-exp-GGUF:Q6_K\n\nAvailable from Q2 (177 MB) to BF16 (711 MB). Q8_0 or Q6_K recommended.\n\nThis is an experimental release. We are expanding the SFT dataset and exploring preference optimization before a full release.\n\nFeedback welcome!\n\nsubmitted by /"
-    },
-    {
-      "title": "EAGLE3 has landed in llama.cpp",
-      "author": "jacek2023",
-      "updated": "2026-06-12T07:40:50+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3on4u/eagle3_has_landed_in_llamacpp/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "After half a year of development, EAGLE3 has been merged into llama. cpp. EAGLE3 is similar to MTP, but different: the helper model gets extra guidance from the main model instead of guessing completely on its own.",
-      "body": "After half a year of development, EAGLE3 has been merged into llama.cpp.\n\nEAGLE3 is similar to MTP, but different: the helper model gets extra guidance from the main model instead of guessing completely on its own.\n\nsubmitted by /"
-    },
-    {
-      "title": "Huawei Released openPangu 2.0 (Will open source on June 30)",
+      "title": "Anthropic forced to abruptly disable Fable 5 & Mythos 5 globally by US Gov over a jailbreak. This is exactly why we need local models.",
       "author": "External_Mood4719",
-      "updated": "2026-06-12T09:05:00+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3q1j9/huawei_released_openpangu_20_will_open_source_on/",
+      "updated": "2026-06-13T01:48:47+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4e1p5/anthropic_forced_to_abruptly_disable_fable_5/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "At the Huawei Developer Conference (HDC 2026) held on June 12, Richard Yu, Executive Director of Huawei, officially launched the brand-new, open-source Pangu large model—openPangu 2. 0. The model is fully adapted to the HarmonyOS ecosystem and has achieved deep optimization and performance breakthroughs on Ascend computing power.",
-      "body": "At the Huawei Developer Conference (HDC 2026) held on June 12, Richard Yu, Executive Director of Huawei, officially launched the brand-new, open-source Pangu large model—openPangu 2.0. The model is fully adapted to the HarmonyOS ecosystem and has achieved deep optimization and performance breakthroughs on Ascend computing power.\n\nopenPangu 2.0 features a 512K context processing capability and comes in two versions tailored for different application scenarios. It sets a record for the largest sparsity ratio in the hundred-billion-parameter category at 28:1:\n\n- openPangu 2.0 Pro: Total parameters: 505B ; Activated parameters: 18B.\n\n- openPangu 2.0 Flash: Total parameters: 92B ; Activated parameters: 6B.\n\nAccording to the conference presentations and live demonstrations, openPangu 2.0 has been comprehensively upgraded in throughput, latency, and task processing:\n\nHighly optimized for Ascend computing power, its single-card user throughput is up to 2x that of mainstream open-source models in the industry.\n\nBuilt on Ascend-native training, hyper-node optimized training efficiency has improved by 30%, 512K long-sequence training throughput has increased by 50%, and training consistency exceeds 99%.\n\nUtilizes a high-precision architecture (mHC | Muon | ModAttn) and pioneers the DSA+SWA independent layered hybrid architecture (ultra-sparse attention) for more precise computing power allocation.\n\nHuawei announced plans to progressively open-source the core components of openPangu 2.0 starting June 30, fully empowering developers:\n\nBasic Components: Model architecture, model weights, technical reports, and inference code.\n\nNewly Open-Sourced Components: Pre-training code, post-training code, and training operators.\n\nAddressing the public attention surrounding the 505B total parameter count of the 2.0 Pro version, Richard Yu explained at the conference that this design is due to Huawei allocating a vast amount of its computing power to support the needs of other china enterprises, leaving limited computing power for itself. Furthermore, considering the exorbitant costs of AI computing, Huawei's current strategy ocuses more heavily on achieving substantial improvements in latency and throughput rate.\n\n(Image used Nano banana 2 to translate the image to English)\n\nsubmitted by /"
+      "summary": "I just saw this statement regarding Anthropic being hit with an emergency export control directive from the US government. They were forced to pull the plug on Fable 5 and Mythos 5 for all customers globally.",
+      "body": "I just saw this statement regarding Anthropic being hit with an emergency export control directive from the US government. They were forced to pull the plug on Fable 5 and Mythos 5 for all customers globally. The tl;dr is that the government got spooked by a narrow jailbreak (which basically just sounds like asking the model to fix vulnerabilities in a specific codebase), and forced a complete shutdown without a transparent process. Anthropic is pushing back, but the API access is completely gone for now.\n\nA centralized API can be nuked globally at a moment's notice by a single government decree over something as trivial as a prompt lol.\n\nBanning a model for hundreds of millions of users because someone figured out how to make it fix software flaws is insane. Anthropic admits this standard would halt all new frontier models.\n\nhttps://www.anthropic.com/news/fable-mythos-access\n\nsubmitted by /"
     },
     {
-      "title": "Open Dungeon: local roleplay with Gemma 4 QAT + inline Uncen-FLUX images, running at full 256K context under 8GB RAM (OS)",
-      "author": "akroletsgo",
-      "updated": "2026-06-12T13:11:59+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3uw8e/open_dungeon_local_roleplay_with_gemma_4_qat/",
+      "title": "Diffusion Gemma is 4x faster, but makes 6x more mistakes!",
+      "author": "gladkos",
+      "updated": "2026-06-12T23:54:33+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4bne8/diffusion_gemma_is_4x_faster_but_makes_6x_more/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "EDIT: Added the ability to use any open ai compatible endpoint per many requests! I wanted AI Dungeon but fully local and actually private, so I built it. The narrator is Gemma 4 (QAT Q4) through Ollama, and when a scene is worth showing it draws the picture too, locally, with FLUX. No API keys, no cloud, nothing leaves your machine.",
-      "body": "EDIT: Added the ability to use any open ai compatible endpoint per many requests!\n\nI wanted AI Dungeon but fully local and actually private, so I built it. The narrator is Gemma 4 (QAT Q4) through Ollama, and when a scene is worth showing it draws the picture too, locally, with FLUX. No API keys, no cloud, nothing leaves your machine.\n\nThe part that surprised me: you can run the 12B at its full 256k context and it still only sits around 7.7GB of RAM, because Gemma 4 barely grows the KV cache. So the narrator can basically hold the whole story in its head. Old scenes that do scroll out get folded into a running summary so it never forgets what happened in chapter one.\n\nIt plays like you would expect: Do / Say / Story modes, Continue, Retry, Erase, edit any line. Pick your model in the UI and it shows you the RAM cost up front.\n\nMac one-click build in releases, or run from source. MIT, would love for people to break it and tell me what is missing.\n\nhttps://github.com/newideas99/open-dungeon\n\nsubmitted by /"
+      "summary": "Benchmarked the new Gemma diffusion model against its autoregressive twin on a single H100 (FP8). We gave each the same three tasks: write a Steve Jobs biography, the history of Tetris, and the story of BeOS - every next topic less popular than the previous one. Then we fact-checked every claim in every answer.",
+      "body": "Benchmarked the new Gemma diffusion model against its autoregressive twin on a single H100 (FP8). We gave each the same three tasks: write a Steve Jobs biography, the history of Tetris, and the story of BeOS - every next topic less popular than the previous one. Then we fact-checked every claim in every answer.\n\nGemma4 got 45 facts right, 5 wrong. DiffusionGemma got 33 right, 28 wrong. The less popular the topic, the worse it got: 4 mistakes on Jobs, 12 on Tetris, 12 on BeOS. It named Clara Clley as Steve Jobs' mother, invented a colleague for Pajitnov named Geri Gulovik and priced the BeBox at $9,999. The real one cost $1,600.\n\nOutputs:\n\nGemma4 26B A4B: 218 tok/s · 15.1s total · 45 facts · 5 mistakes\n\nDiffusionGemma 26B A4B: 763 tok/s · 3.7s total · 33 facts · 28 mistakes\n\nThe reason is simple. DiffusionGemma throws 256 tokens on the screen at once and polishes them pass after pass until the text sounds smooth. Smooth is all it cares about: a fake name, date or number sounds just as smooth as a real one, so it stays. Regular Gemma4 meanwhile writes one word at a time and checks every new word against everything before it. Google says it themselves in the launch post: quality is lower, use regular Gemma 4 when facts matter.\n\nOpen source Local Ai models harness: Atomic.Chat (I'm founder, we support GGUF models, MLX Apple Silicon, MTP and Google TurboQuant for long context window, working on Diffusion support via llama.cpp)\n\nsubmitted by /"
     },
     {
-      "title": "🚀PP-OCRv6 is officially released !",
+      "title": "We should set up a torrent network for open source models.",
+      "author": "ShadyShroomz",
+      "updated": "2026-06-13T04:07:04+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4gto1/we_should_set_up_a_torrent_network_for_open/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "Hugging Face is a US-based company, legally incorporated as Hugging Face, Inc. with its official headquarters located in Brooklyn, New York. It seems like a pretty big single point of failure for local models.",
+      "body": "Was just thinking about this due to recent events.\n\nHugging Face is a US-based company, legally incorporated as Hugging Face, Inc. with its official headquarters located in Brooklyn, New York.\n\nIt seems like a pretty big single point of failure for local models.\n\nMaybe a distributed network mirror of models would be a good backup.. you know.. just in case.\n\nI know other counties could host models.. but distributed seems safest.. what do you guys think?\n\nsubmitted by /"
+    },
+    {
+      "title": "New model on huggingface",
+      "author": "krzonkalla",
+      "updated": "2026-06-13T03:24:12+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4fzg1/new_model_on_huggingface/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "A qwen finetune. Looks pretty even with qwen 3. 7 plus, except it's actually open weights. Disclosure: I work as a researcher for the city government of Rio de Janeiro, which developed this model.",
+      "body": "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B\n\nA qwen finetune. Looks pretty even with qwen 3.7 plus, except it's actually open weights.\n\nDisclosure: I work as a researcher for the city government of Rio de Janeiro, which developed this model.\n\nsubmitted by /"
+    },
+    {
+      "title": "Pi Setup that pretty much replaced Claude Code for me",
+      "author": "abhinand05",
+      "updated": "2026-06-13T11:48:39+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4ow2h/pi_setup_that_pretty_much_replaced_claude_code/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "I've been using Pi with Qwen3. 6-27B a lot as my daily driver for more than a month and this setup almost replaced Codex/CC for me entirely. I use it with the advisor extension, with the advisor usually being GPT-5. 5 and it has been great for me so far.",
+      "body": "I've been using Pi with Qwen3.6-27B a lot as my daily driver for more than a month and this setup almost replaced Codex/CC for me entirely. I use it with the advisor extension, with the advisor usually being GPT-5.5 and it has been great for me so far.\n\nI sometimes use OpenCode too but I keep coming back to this setup especially for local models.\n\nSupport for seamlessly onboarding local models\n\nCustom footer that shows token usage, cost and inference speed\n\n10 themes\n\nMany useful+cosmetic extensions\n\nContext breakdown command similar to claudecode\n\nConfigurable permission system\n\nFew custom skills and some useful publicly available skills\n\nSync/backup script for easy setup anywhere\n\nHope you find this useful. If you have any ideas to improve I'd love to hear.\n\nEdit 1 : Local LLM details on this comment below.\n\nEdit 2: Repo link added has been added in comments below\n\nsubmitted by /"
+    },
+    {
+      "title": "Fable 5 data, including CoT",
+      "author": "Available-Craft-5795",
+      "updated": "2026-06-13T03:43:29+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4gcxj/fable_5_data_including_cot/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "A simple dataset of all the Fable 5 data we could get our hands on before it was taken away (no clue if it's coming back). Expect some fine-tuned models trained on this soon. Big thanks to the TeichAI team (weird thanking myself, lol) for providing 953 traces, while I added the CoT data.",
+      "body": "https://huggingface.co/datasets/Glint-Research/Fable-5-traces\n\nA simple dataset of all the Fable 5 data we could get our hands on before it was taken away (no clue if it's coming back). Expect some fine-tuned models trained on this soon. Big thanks to the TeichAI team (weird thanking myself, lol) for providing 953 traces, while I added the CoT data.\n\nHave fun with this!\n\nsubmitted by /"
+    },
+    {
+      "title": "GLM 5.2 is deployed in GLM Coding Plan. API and MIT weights in a week. Voting and benchmarks on X.",
+      "author": "MadPelmewka",
+      "updated": "2026-06-13T10:40:25+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4nmpl/glm_52_is_deployed_in_glm_coding_plan_api_and_mit/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "The model now supports a 1M context window and two thinking modes: max and high. z. ai recommends using max for coding.",
+      "body": "The model now supports a 1M context window and two thinking modes: max and high. z.ai recommends using max for coding.\n\nVote on X\n\nWhat should we prioritize most?\n\nLonger context window\n\nMIT-licensed open weights\n\nNo price increase\n\nOther links:\n\nGLM 5.2 announcement\n\nLLM Benchmark Dashboard\n\nAICodeKing GLM 5.2 Benchmark Results and Thoughts (X)\n\nAICodeKing GLM 5.2 Benchmark Results and Thoughts (YouTube Video)\n\nsubmitted by /"
+    },
+    {
+      "title": "A friendly reminder that APIs are rented, local weights are forever",
+      "author": "Wrong_Mushroom_7350",
+      "updated": "2026-06-13T03:52:15+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4gixn/a_friendly_reminder_that_apis_are_rented_local/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "Anthropic just nuked Fable 5 globally to comply with a sudden US export ban because they couldn't instantly verify the nationality of their cloud users. Let this be a massive reminder to the community: if the weights aren't running on your own hardware, you don't actually control your AI.",
+      "body": "Anthropic just nuked Fable 5 globally to comply with a sudden US export ban because they couldn't instantly verify the nationality of their cloud users. Let this be a massive reminder to the community: if the weights aren't running on your own hardware, you don't actually control your AI.\n\nCloud APIs mean renting intelligence at the mercy of corporate compliance and government panic. They will happily take your data and pull the plug the second a model gets \"too capable.\" Keep buying RAM, hosting your own rigs, and downloading the quants. Local models are our only true guarantee of privacy and digital independence.\n\nStay Local, Stay independent.\n\nsubmitted by /"
+    },
+    {
+      "title": "GLM 5.2 is out - open weights to be released next week. How did it do on my one-shot Pac-Man test?",
+      "author": "ex-arman68",
+      "updated": "2026-06-13T11:56:01+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4p1av/glm_52_is_out_open_weights_to_be_released_next/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "The one-shot result is almost functional; apart from the ghosts getting stuck immediately after leaving the ghosts house, I did not notice any other obvious bug. Everything else seems to function much better than any of the other models I tried, and the game is more complete. This ranks it in first place . Second place is Qwen 3. 6 27b.",
+      "body": "Quick initial impressions:\n\n- at 70 tok/s slower than GLM 5.1\n\n- seems to spend more time reasoning\n\n- better results with my Pac-Man test\n\nThe one-shot result is almost functional; apart from the ghosts getting stuck immediately after leaving the ghosts house, I did not notice any other obvious bug. Everything else seems to function much better than any of the other models I tried, and the game is more complete. This ranks it in first place . Second place is Qwen 3.6 27b. You can test the result here:\n\nhttps://pacman46.com/glm52-oneshot\n\nHowever, with just one follow up prompt to fix the ghosts bug, the game is fully functional!\n\nhttps://pacman46.com/glm52\n\nHere is my user prompt (revised since my initial tests):\n\n[INTENT] Build a complete, playable Pac-Man clone as a self-contained HTML page that runs by double-clicking the file. [SCOPE] - Classic Pac-Man gameplay: navigate maze, eat dots, avoid ghosts - Core mechanics: maze with walls, dot collection, score, lives, 4 ghosts, power pellets with frightened-ghost mode - Standard arcade elements: 4 ghosts with distinct AI personalities, wrap-around tunnel, multiple levels [APPROACH] - Single pacman.html file with inline and - HTML5 Canvas for rendering (grid-based maze, ~28×31 tiles like the original) - Vanilla JavaScript, no frameworks - Keyboard controls: arrow keys + WASD [CONSTRAINTS] - Must work offline by opening the file directly in a browser - No external dependencies, CDNs, or asset files - No build step [DELIVERABLE] - One complete pacman.html file [DONE WHEN] - Game launches by double-clicking the file - Pac-Man moves with keyboard and respects maze walls - Dots are eatable; score increments - 4 ghosts move with distinct behaviors and chase Pac-Man - Power pellets turn ghosts vulnerable; eating a vulnerable ghost resets that ghost - Pac-Man loses a life on ghost contact when not powered - Game ends at 0 lives; restart works - Score and lives visible on screen\n\nAnd my system prompt:\n\nYou are the world's leading expert in vanilla web development, specifically in creating high-performance, single-file web applications using only HTML5, CSS3, and ES6+ JavaScript. You reject frameworks in favor of clean, efficient, and semantic code. Your goal is to receive a requirement and produce a single, self-contained HTML file that functions perfectly without external dependencies (no CDNs, no images, no libraries). Because you must complete this task in a \"one-shot\" continuous generation, you must think before you code. You will follow a strict \"Chain of Thought\" protocol to ensure correctness. Follow this specific execution format for every response: 1. REQUIREMENTS BREAKDOWN: - List every functional and non-functional requirement. - Identify potential edge cases. 2. ARCHITECTURAL PLAN: - CSS Strategy: Define the variable system, layout approach (Flexbox/Grid), and responsive breakpoints. - JS Architecture: Define state management, event listeners, and core logic functions. - HTML Structure: specific semantic tags to be used. 3. PRE-MORTEM & STRATEGY: - Identify the most likely point of failure. - Define the solution for that specific failure point before writing code. (Provide the complete, valid HTML string here. Include CSS in and JS in tags. The code must be production-ready, accessible, and clean.) Self-Correction and Validation Report: 1. Does the code meet all requirements listed in the analysis? [Yes/No] 2. Are there any distinct accessibility (a11y) violations? 3. Verify that no external libraries were used.\n\nBTW, when I tested Qwen 3.6 27B, I was so impressed with the results that I continued to refine the game. Initially still with the original model, but then I switched to GLM 5.1 due to the speed. Apart from the music, which I wrote and recorded, everything else was generated with those 2 models, still with me making most of the design, graphics, and architectural decisions: https://pacman46.com\n\nsubmitted by /"
+    },
+    {
+      "title": "I don’t know who needs to hear this but 128GB BD-R XL M-DISC is SOTA for consumer-available archival optical storage (for backing up your models)",
+      "author": "Porespellar",
+      "updated": "2026-06-13T13:41:19+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4rarz/i_dont_know_who_needs_to_hear_this_but_128gb_bdr/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "If you’re trying to download and preserve your local LLMs in case of future availability issues due to AI-related politics, your best bet is either 128gb or 100gb Blu-Ray optical disks, more specifically BD-R XL M-DISC standard format which are archival-grade and built to last for like 10 of our lifetimes.",
+      "body": "If you’re trying to download and preserve your local LLMs in case of future availability issues due to AI-related politics, your best bet is either 128gb or 100gb Blu-Ray optical disks, more specifically BD-R XL M-DISC standard format which are archival-grade and built to last for like 10 of our lifetimes.\n\nAnd yes, cheap USB thumb drives are the other option, but they are considered volatile storage and could be affected by static discharge and other electrical issues.\n\nSo if you’re worried about preserving your favorite models long term, maybe pick up a Blu-Ray burner. You can get them for around $100 -$250. Blank Blu-Ray disk prices for 100gb to 128gb disks vary wildly depending on quantity and quality. 128gb average around $12-$14 per disk. 100gb can be found for about $7 -$10.\n\nThere hasn’t been a huge demand for the blank disks until recently because hard drive and memory prices used to be much lower. Given this fact, expect low stock on the blanks for a while most likely. Hopefully companies will ramp up production of the blank disks as demand from data hoarding folks like us increases.\n\nThe Best commonly available BD-R XL capable burner compatible with high capacity M-DISK that I’ve found so far is the:\n\nASUS 16D1X-U\n\nhttps://www.asus.com/us/motherboards-components/optical-drives/external-blu-ray-drive/bw-16d1x-u/\n\nBut there are tons of other great drives out there from Buffalo, LG, and others for as cheap as $80 for a lower-speed external drive.\n\nAs far as the blank media goes, look for the 128gb and 100gb blank BD-R XL disks from Verbatim and Ritek, expect to pay a premium for the M-DISC version that is built to last longer than the standard version. M-DISC is not a must have, but it’s the highest archival quality version available to consumers right now.\n\nIt sucks that current world events have driven us into becoming AI model archivists, but if we don’t do it, then I don’t know who else will. The best LLM is the one you have access to when the shit hits the fan. LFG back up some models!\n\nsubmitted by /"
+    },
+    {
+      "title": "ZONOS2: real-time TTS with 8B params, 900M active, and high-fidelity voice cloning",
       "author": "KokaOP",
-      "updated": "2026-06-12T08:06:31+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3p2at/ppocrv6_is_officially_released/",
+      "updated": "2026-06-13T08:33:56+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4lk5c/zonos2_realtime_tts_with_8b_params_900m_active/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "🔥PaddleOCR’s new OCR model series scales from 1. 5M to 34. 5M parameters, bringing stronger accuracy, faster inference, and broader deployment options — from browsers and edge devices to servers.",
-      "body": "🔥PaddleOCR’s new OCR model series scales from 1.5M to 34.5M parameters, bringing stronger accuracy, faster inference, and broader deployment options — from browsers and edge devices to servers.\n\n📊What’s new: 🔸Tiny / Small / Medium models: 1.5M, 7.7M, 34.5M params 🔸+4.9% detection accuracy and +5.1% recognition accuracy over PP-OCRv5 🔸Up to 5.2× faster CPU inference with OpenVINO 🔸50 languages in one unified model 🔸New scenarios: PCB, CAD drawings, digital tubes, dot-matrix text 🔸Apache 2.0 open source\n\n✨Lightweight OCR, built for the AI data era.\n\n🔗Try it: 🌐 https://paddleocr.com\n\n💻 https://github.com/PaddlePaddle/P addleOCR\n\n🤗 https://huggingface.co/collections/Pa ddlePaddle/pp-ocrv6\n\nsubmitted by /"
+      "summary": "Zyphra has released ZONOS2 , its next-generation real-time text-to-speech model focused on expressive, high-fidelity voice cloning. It is open-source under Apache 2. 0 and also available on Zyphra Cloud on AMD hardware.",
+      "body": "https://reddit.com/link/1u4lk5c/video/kyhdw0uog07h1/player\n\nLinks:\n\nBlog: https://zyphra.com/our-work/zonos2\n\nWeights: https://huggingface.co/Zyphra/ZONOS2\n\nInference code: https://github.com/Zyphra/ZONOS2\n\nEval code: https://github.com/Zyphra/ZTTS1-Eval\n\nModel TTSDS Prosody Score ↑ ZONOS2 8B 88.7 Qwen 3 TTS 1.7B 87.6 Inworld TTS 2 87.5 Cartesia Sonic 3.5 87.1 Fish S2 Pro 86.6 VoxCPM 2 86.3 Gemini 3.1 Flash 85.7 ZONOS2 8B (Quality Mode) 85.6 ElevenLabs V3 83.2\n\nZyphra has released ZONOS2 , its next-generation real-time text-to-speech model focused on expressive, high-fidelity voice cloning. It is open-source under Apache 2.0 and also available on Zyphra Cloud on AMD hardware.\n\nThe model is designed to solve the usual TTS tradeoff between quality and speed. Zyphra says ZONOS2 is the first sparse MoE TTS model released open-source , with 8B total parameters and 900M active parameters at inference. The goal is straightforward: fast, efficient, and expressive speech synthesis without the usual compromise pileup.\n\nA major focus is voice cloning . Zyphra claims ZONOS2 is especially strong at capturing the distinctive characteristics of a speaker, producing more natural-sounding clones across a wide range of voices. The cloning is zero-shot , so no fine-tuning is needed.\n\nOn the audio side, ZONOS2 predicts Descript Audio Codec (DAC) tokens for 44.1 kHz studio-quality audio. That gives better fidelity, but is harder to model than lower-quality codec setups. Zyphra says it closes that gap through larger-scale model and data training.\n\nFor text handling, ZONOS2 does not use a phonemizer . Instead, it reads raw UTF-8 bytes , which Zyphra says improves coverage for lower-resource languages, boosts performance on Chinese, Korean, and Japanese, and supports native code-switching mid-sentence.\n\nTraining also scaled heavily, from roughly 200K hours to 6M+ hours of audio. Zyphra says it used staged data filtering with increasing transcript-agreement strictness across pretraining, midtraining, and annealing. The intended result is fewer hallucinations, mispronunciations, and repetitions.\n\nZyphra is also releasing ZTTS1-Eval , a new benchmark for TTS evaluation. It includes clean and in-the-wild datasets across up to 17 languages , with newer evaluation models such as Qwen3-ASR, ReDimNet, and MSR-UTMOS , plus prosody metrics.\n\nThat is the gist. Big model, open weights, Apache 2.0, voice cloning, and enough infrastructure behind it to make the old TTS baseline look like scrap metal.\n\nsubmitted by /"
     },
     {
-      "title": "Local LLMs aren't democratic anymore... the hardware barrier has gotten out of hand.",
-      "author": "Medium-Technology-79",
-      "updated": "2026-06-12T20:51:33+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u479jf/local_llms_arent_democratic_anymore_the_hardware/",
+      "title": "Interest in an LLM Torrent Site?",
+      "author": "thiefyzheng-",
+      "updated": "2026-06-13T17:55:56+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u4xiw8/interest_in_an_llm_torrent_site/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "When we first started experimenting with local LLMs, it was a completely different story! We were using gaming GPUs to tinker around. 8GB or 16GB of VRAM (which wasn't even a given for everyone) was the norm, and so many people could actually get their hands dirty and experiment.",
-      "body": "When we first started experimenting with local LLMs, it was a completely different story!\n\nWe were using gaming GPUs to tinker around. 8GB or 16GB of VRAM (which wasn't even a given for everyone) was the norm, and so many people could actually get their hands dirty and experiment. Let’s just forget for a second that long crypto-mining phase that bloated the market and caused shortages... but today? Today, if you don't have high-end hardware, experimenting has become way too difficult.\n\nI know some of you will reply saying, \"Hey, I'm using an RTX 3090 and I'm 100% ok with it,\" but at the risk of sounding unlikable, I honestly think that misses the point.\n\nWe are in 2026 now and a RTX 6000 Pro should be the baseline equivalent of what a 3090 was years ago! The market is completely detached from reality, and local inference is no longer as democratic as I thought it would become.\n\n3090 was expensive but accessible at the time. RTX 6000 is 10-13k today! s*****t!!!\n\nOh, and one last thing: if you're planning to leave a comment hyping up Qwen 3.6, please don't. That model gets mentioned so much around here that I'm starting to think it's not even organic anymore. I suspect too many comments mentioning Qwen even when talking bout Gemma4 are manipulated!\n\nI just really want to talk about how hardware access is no longer democratic. You need way too much money just to run something that, at the end of the day, is just a tool it doesn't automatically generate value for you.\n\nSorry for my English... I have this deeply rooted concept in my head, but I'm not sure if I'm fully conveying it!\n\nsubmitted by /"
-    },
-    {
-      "title": "PSA: Test your \"threads\" argument in llama.cpp (+80% performance in my case)",
-      "author": "AXYZE8",
-      "updated": "2026-06-12T00:01:43+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3fo2x/psa_test_your_threads_argument_in_llamacpp_80/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "When GPT-OSS 120B has released last year I played around and tried to maximize it's performance. One thing that many people pointed out was that for hybrid CPU (Performance + Efficiency cores) you should use only P-cores with \"--threads\" argument and taskset/affinity.",
-      "body": "When GPT-OSS 120B has released last year I played around and tried to maximize it's performance. One thing that many people pointed out was that for hybrid CPU (Performance + Efficiency cores) you should use only P-cores with \"--threads\" argument and taskset/affinity. Back then I've setup that model on my friend's 14700K and yea limiting threads to 8 (because 8 P-cores) increased performance. So I continued to use that and recommend doing that since then.\n\nToday I've played around with MTP draft settings on Gemma 4 26B A4B QAT and I randomly thought \"Let's try increasing thread count\". My CPU ( 250K Plus ) has 18 cores (6 performance + 12 efficiency).\n\nPerformance uplift was so big that I made a simple basic script just to be sure (simple prompt to make PHP code for Wordpress, same settings apart from threads argument, same seed, 1 warmup run then 5 runs to reduce error) and here are the results:\n\nthreads runs min_tok/s mean_tok/s max_tok/s ------- ---- --------- ---------- --------- 6 5 48,938 49,144 49,451 12 5 61,329 62,938 67,614 16 5 87,877 88,765 89,126 18 5 64,154 66,478 67,373\n\nYea. Casual +80% performance uplift by using 16 threads instead of 6. YEA I ALSO DIDN'T BELIEVE THAT IT BECAME SO FAST THAT'S WHY I'VE MADE THAT BENCH SCRIPT TO CONFIRM.\n\nIn 6 thread test it was pinned to P-cores with /affinity argument, but it was the same as without it so maybe the Thread Director on Arrow Lake is better than on Raptor Lake (14700K on which I previously tested).\n\nCuriously with 18 cores performance drops, but I don't see any throttling, it's still full boost on all cores so the bottleneck starts to show somewhere else, if somebody knows he may drop that into comments.\n\nConfig:\n\nIntel 250K Plus + 64GB 6400MT/s + RTX 4070 SUPER 12GB with memory OC to 571GB/s + llama.cpp b9601\n\nCommand which gives me the best performance from everything I've tested so far (for example I see many people use spec draft 3, for me setting to '2' increased performance on QAT model, on non-QAT 3 was fine):\n\nllama-server -m models/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf --model-draft models/mtp-gemma-4-26B-A4B-it-qat.gguf --alias gemma4-26b-a4b-qat-q4xl-mtp -c 131072 -np 1 -b 2048 -ub 512 --threads 16 -ngl 99 -ncmoe 18 -fa on --spec-type draft-mtp --spec-draft-ngl 99 --spec-draft-n-max 2 --cache-type-k-draft q8_0 --cache-type-v-draft q8_0 --temp 1.0 --top-p 0.95 --top-k 64 --min-p 0.0 --repeat-penalty 1.0\n\nSo if you have 12GB VRAM like me try the above command, quant and mtp model are from Unsloth. Ofc tok/s will drop with more and more context, but that percentage difference is still the same. This command maybe is still not perfect, after I wake up I'll retest every single assumption I had, because maybe I set other arguments wrong too lol\n\nCheck how performance scales on your CPU , because you may be missing nearly half of the performance like I was... now I'm even more sad that Gemma 4 124B has not been released, because it 100% would be fast enough with that 16 thread setting, I would just put 32GB more RAM into that PC and it would be a perfect match :( :( :( :(\n\nSorry mods if I set incorrect post flair, I have no idea which I should use for this post\n\nEdit: This post assumes that you're using hybrid (CPU+GPU) like me or pure CPU inference.\n\nsubmitted by /"
-    },
-    {
-      "title": "Has anyone noticed that the behavior of the Kimi model has changed?",
-      "author": "InternationalAsk1490",
-      "updated": "2026-06-12T09:00:59+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u3pz4k/has_anyone_noticed_that_the_behavior_of_the_kimi/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "I have been using Kimi K2. 6 in Kimi Code for a while. Although it can complete most tasks, it often requires a long time to think and try. I heard that GLM 5. 2 is also about to be released.",
-      "body": "I have been using Kimi K2.6 in Kimi Code for a while. Although it can complete most tasks, it often requires a long time to think and try. Today the model's CoT has become very short and concise, and it feels much improved on coding tasks compared to before\n\nI heard that GLM 5.2 is also about to be released. I hope Chinese models can continue to be open-sourced to compete with Fable 5\n\nsubmitted by /"
-    },
-    {
-      "title": "PWA Support has been merged",
-      "author": "fake_agent_smith",
-      "updated": "2026-06-12T16:43:02+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1u40m26/pwa_support_has_been_merged/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "In practice, this means the llama-server UI can now behave more like a native app: installable to your desktop/home screen, standalone window mode, proper icons etc. The PWA work is about making the built-in web interface more app-like, faster to reopen, and more robust around updates/caching. Nice quality-of-life upgrade.",
-      "body": "https://github.com/ggml-org/llama.cpp/pull/23871\n\nIn practice, this means the llama-server UI can now behave more like a native app: installable to your desktop/home screen, standalone window mode, proper icons etc.\n\nThe PWA work is about making the built-in web interface more app-like, faster to reopen, and more robust around updates/caching. Nice quality-of-life upgrade.\n\nsubmitted by /"
+      "summary": "I've been seeing more interest in an LLM torrent site recently. I used to run https://stablebay. org for t2i models, but it's down for now. Would anyone be interested in having it rebuilt for LLMs and other models in general? I'd be open to collaboration.",
+      "body": "Hey all,\n\nI've been seeing more interest in an LLM torrent site recently. I used to run https://stablebay.org for t2i models, but it's down for now. Would anyone be interested in having it rebuilt for LLMs and other models in general? I'd be open to collaboration.\n\nsubmitted by /-"
     }
   ]
 }
