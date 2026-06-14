@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 18,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -96,7 +96,7 @@
       "publishedAt": "2026-06-10T16:24:11.000Z",
       "summary": "Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。",
       "category": "ai-models",
-      "score": 84,
+      "score": 72,
       "selected": true
     },
     {
@@ -156,7 +156,7 @@
       "publishedAt": "2026-06-09T14:10:19.000Z",
       "summary": "Gemma 4 12B 是 Google DeepMind 最新推出的中等规模多模态模型，采用无编码器统一架构，原生支持音频输入。其基准测试性能接近 26B MoE 模型，但内存占用不到一半，仅需 16GB 显存或统一内存即可在消费级笔记本上本地运行。模型内置多 token 预测（MTP）drafter 以降低延迟，基于 Apache 2.0 开源许可发布，已累计超过 1.5 亿次下载。",
       "category": "ai-models",
-      "score": 81,
+      "score": 80,
       "selected": true
     },
     {
@@ -217,18 +217,6 @@
       "summary": "苹果推出第三代 Apple Foundation Models（AFM）基础模型家族，与 Google 合作定制，包含五个模型，覆盖从设备端到基于 Private Cloud Compute 的服务器端模型。这些模型旨在驱动 Apple Intelligence 功能，包括全新 Siri 和智能工具，以用户为中心深度融合操作系统，隐私为核心设计原则。",
       "category": "ai-models",
       "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmq3eppdj06j7sl97koo7u9xf",
-      "title": "Harness-1：基于强化学习训练的有状态搜索20B检索子智能体",
-      "title_en": "Meet Harness-1： A 20B Retrieval Subagent Trained With Reinforcement Learning Inside a Stateful Search Harness on gpt-oss-20b",
-      "url": "https://www.marktechpost.com/2026/06/06/meet-harness-1-a-20b-retrieval-subagent-trained-with-reinforcement-learning-inside-a-stateful-search-harness-on-gpt-oss-20b",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-06-07T06:25:18.000Z",
-      "summary": "UIUC与Chroma联合推出Harness-1，一个20B参数的检索子智能体。它通过强化学习在一个有状态搜索框架中训练，该框架维护候选池、重要性标注集、证据图和验证记录，由策略决定搜索、筛选、验证及停止的时机。Harness-1在8个基准测试上达到0.730平均curated recall，比下一个最佳开源子智能体高出11.4个百分点，仅落后于Opus-4.6。模型权重和框架代码均已公开。",
-      "category": "ai-models",
-      "score": 73,
       "selected": true
     }
   ]

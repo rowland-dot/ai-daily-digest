@@ -1,7 +1,7 @@
 {
   "count": 50,
   "hasNext": true,
-  "nextCursor": "eyJhIjoxNzgwOTA1NzU4MDAwLCJpIjoiY21xNHh4bTF2MDJyNHNsdDJiYmUxNzh5cSJ9",
+  "nextCursor": "eyJhIjoxNzgwOTI2MjU2MDAwLCJpIjoiY21xNWE2MTlqMDV5bHNsdDJjc3VqZWp3YiJ9",
   "items": [
     {
       "id": "cmqcoyrfo00ieslttjd60zi3a",
@@ -85,6 +85,18 @@
       "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
       "category": "ai-products",
       "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqck73e2001gslzwhu2x5dcg",
+      "title": "OpenRouter融合预算模型面板超越GPT-5.5和Claude Opus 4.8",
+      "title_en": "Surpassing Frontier Performance with Fusion",
+      "url": "https://openrouter.ai/blog/announcements/fusion-beats-frontier",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-06-12T00:00:00.000Z",
+      "summary": "通过OpenRouter融合的一组预算模型，在100个复杂研究任务上得分超过GPT-5.5和Claude Opus 4.8。",
+      "category": "ai-products",
+      "score": 73,
       "selected": true
     },
     {
@@ -484,6 +496,30 @@
       "selected": true
     },
     {
+      "id": "cmq5l4kxt00lmsl384yhftczo",
+      "title": "苹果刚刚教会你的iPhone补全句子、完善照片和简化工作流程",
+      "title_en": "Apple just taught your iPhone to finish your sentences， your photos， and your workflows",
+      "url": "https://techcrunch.com/2026/06/08/apple-just-taught-your-iphone-to-finish-your-sentences-your-photos-and-your-workflows",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-08T18:48:45.000Z",
+      "summary": "Apple为Safari、Shortcuts和Password应用添加了AI驱动的新功能，让iPhone能够自动补全句子、完善照片和简化工作流程。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmq5k1cor00bqsl38828awmgh",
+      "title": "苹果为Siri推出专属应用",
+      "title_en": "Apple gives Siri its own dedicated app",
+      "url": "https://techcrunch.com/2026/06/08/apple-gives-siri-its-own-dedicated-app",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-08T18:33:42.000Z",
+      "summary": "苹果公司为Siri推出了独立的专属应用程序，标志着该语音助手首次拥有了自己的独立应用入口。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true
+    },
+    {
       "id": "cmq5lakyn00nasl382lj0ka6f",
       "title": "Apple发布新一代Apple Intelligence和Siri AI",
       "title_en": "Apple unveils next generation of Apple Intelligence， Siri AI， and more",
@@ -504,7 +540,7 @@
       "publishedAt": "2026-06-08T18:17:44.449Z",
       "summary": "Apple 发布下一代 Apple Intelligence，将 AI 能力集成到 iPhone、iPad 和 Mac 中，带来更个性化和有帮助的日常体验。",
       "category": "ai-products",
-      "score": 72,
+      "score": 63,
       "selected": true
     },
     {
@@ -565,42 +601,6 @@
       "summary": "Kimi Code 开源 Coding Agent 迎来大版本升级：一行命令安装，毫秒级启动；新增视频理解能力，支持提取视频风格生成 LUT 文件、长视频切片、根据录屏生成代码；集成同花顺、天眼查等权威数据源，可查询股票价格、财报、学术论文；支持 ACP 协议，可在 JetBrains、Zed 中使用；丰富 hook 生态方便集成其他工具。底层视觉推理由 Kimi K2.6 模型提供。",
       "category": "ai-products",
       "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqc6igvl00leslt4oap6fwa1",
-      "title": "Kimi Code 焕新升级（附视频教程）",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/sqGuRyeU9AvZZ3IXj8ddJg",
-      "source": "公众号：月之暗面（Kimi）",
-      "publishedAt": "2026-06-08T13:43:49.000Z",
-      "summary": "Kimi Code 开源 Coding Agent 大版本升级：一行命令安装，毫秒级启动；新增视频理解，可提取参考视频色调生成 LUT、将长视频切分为短视频、根据录屏生成代码；接入同花顺、天眼查等权威数据源，支持实时查询股票价格、财报和学术论文；兼容 ACP 协议，可在 JetBrains、Zed 等 IDE 使用；拓展 hook 生态方便集成。视频理解基于 Kimi K2.6 模型。通过 /plugins 安装 kimi-datasource 插件即可使用权威数据源。",
-      "category": "ai-products",
-      "score": 62,
-      "selected": true
-    },
-    {
-      "id": "cmq5oofrd00x3sl5iadjbb59k",
-      "title": "EU AI Act 合规：面向 AI 智能体的人工监督",
-      "title_en": "EU AI Act Compliance： Human Oversight for AI Agents",
-      "url": "https://openrouter.ai/blog/human-oversight-eu-ai-act-compliance-agent-sdk",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "summary": "使用智能体 SDK 的人机协作（HITL）工具，可满足 EU AI Act、Colorado AI Act 和 NIST AI RMF 对 AI 智能体的合规要求。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true
-    },
-    {
-      "id": "cmq4xxm1v02r4slt2bbe178yq",
-      "title": "微信AI官宣内测：两种接入模式供开发者选择",
-      "title_en": "微信 AI 官宣内测：用户一句话，可直接操作小程序页面",
-      "url": "https://www.ithome.com/0/961/480.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-08T08:02:38.000Z",
-      "summary": "微信开发者官方今日发布指引，确认微信AI正在内测阶段。开放平台提供两种接入模式：自动模式可授权平台读取小程序源码，无需额外开发即可让微信AI直接操作页面；开发模式下开发者可自主开发技能，审核后由微信AI调用。两种模式可同时开启。微信AI是微信内的AI助手，用户通过自然语言对话即可调用、访问和操作小程序。服务条款称\"微信AI\"可能非最终名称。接入与否不影响现有小程序服务。",
-      "category": "ai-products",
-      "score": 73,
       "selected": true
     }
   ]

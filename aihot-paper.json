@@ -1,5 +1,5 @@
 {
-  "count": 25,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -228,7 +228,7 @@
       "publishedAt": "2026-06-08T13:04:59.000Z",
       "summary": "一项在塞拉利昂等地开展的随机对照试验显示，Gemini 的 Guided Learning 功能能够提升学生参与度并加速学习。",
       "category": "paper",
-      "score": 67,
+      "score": 56,
       "selected": true
     },
     {
@@ -289,18 +289,6 @@
       "summary": "OmniGameArena是一个基于十二个Unreal Engine 5新构建游戏的实时基准，涵盖单人（7个）、PvP（3个）和合作（2个）模式，提供统一动作接口。除冷启动排行榜分数外，还引入Improvement Dynamics Curve （IDC），一种智能体反射评估机制：通过工具调用反射大语言模型自动优化技能提示词，追踪多轮反射中的分数变化以及习得技能在任务变体上的泛化表现。论文报告了12个VLM智能体在冷启动排行榜上的表现，以及4个顶级智能体在IDC下的指标。",
       "category": "paper",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq5i5o4g0861slt2rprafeu2",
-      "title": "为生物学AI智能体铺路",
-      "title_en": "Paving the way for agents in biology",
-      "url": "https://www.anthropic.com/research/agents-in-biology",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-07T16:00:00.000Z",
-      "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
-      "category": "paper",
-      "score": 77,
       "selected": true
     }
   ]

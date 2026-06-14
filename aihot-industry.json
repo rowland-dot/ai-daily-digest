@@ -1,18 +1,30 @@
 {
-  "count": 47,
+  "count": 46,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqcpszqx00r5slttxgr6scpy",
-      "title": "亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治",
-      "title_en": "亚马逊首席执行官与美国官员的会谈引发了对Anthropic模型的整治",
-      "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-13T18:22:19.626Z",
-      "summary": "亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。",
+      "id": "cmqdcj53706qpslttlp0b4n9p",
+      "title": "Anthropic 暂停新模型访问，印度辩论 AI 未来",
+      "title_en": "As Anthropic suspends access to new models， India debates its AI future",
+      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-14T03:00:00.000Z",
+      "summary": "Anthropic 暂停了新模型的访问权限，印度科技领袖围绕这一事件展开辩论，探讨其是否是对该国 AI 雄心的警示。",
       "category": "industry",
-      "score": 76,
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqd1t7a003wgslttffgjyn8q",
+      "title": "Meta 开始撤销 20 亿美元收购 Manus 的交易",
+      "title_en": "Meta reportedly moves to unwind $2B Manus deal after Beijing's demand",
+      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-14T00:03:49.000Z",
+      "summary": "据 TechCrunch 报道，Meta 已开始撤销对 Manus 的 20 亿美元收购交易，此前北京要求该交易必须反转。目前收购解除程序已启动。",
+      "category": "industry",
+      "score": 71,
       "selected": true
     },
     {
@@ -52,18 +64,6 @@
       "selected": true
     },
     {
-      "id": "cmqbrjero04b5slamicgrz7kn",
-      "title": "Anthropic的安全警告可能适得其反--政府已撤回其最强大AI",
-      "title_en": "Anthropic's safety warnings may have just backfired - the government has pulled the plug on its most powerful AI",
-      "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-13T02:26:30.000Z",
-      "summary": "Anthropic对政府撤回其最强大AI模型表达不满，称仅基于一个狭窄的潜在越狱发现就召回已部署给数亿用户的商业模型不合理。",
-      "category": "industry",
-      "score": 87,
-      "selected": true
-    },
-    {
       "id": "cmqbnjbai034islame1d5jkaf",
       "title": "OpenAI 遭多州总检察长联合调查",
       "title_en": "OpenAI Probed by Coalition of State Attorneys General",
@@ -73,6 +73,54 @@
       "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
       "category": "industry",
       "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqb99dkw00pyslruihl7p4h6",
+      "title": "Google 起诉被指使用 AI 发送诈骗短信的中国网络犯罪团伙\"Outsider Enterprise\"",
+      "title_en": "Google sues alleged Chinese cybercrime operation that used AI to send scam texts",
+      "url": "https://techcrunch.com/2026/06/12/google-sues-alleged-chinese-cybercrime-operation-that-used-ai-to-send-scam-texts",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-12T17:26:08.000Z",
+      "summary": "Google 起诉一个名为\"Outsider Enterprise\"的组织，指控其利用人工智能在两周内发送了 250 万条诈骗短信，导致数十万受害者上当。该组织被描述为中国网络犯罪团伙。",
+      "category": "industry",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqb7ichm009mslruda4cweq1",
+      "title": "今年价值1300亿美元的数据中心项目因抗议被叫停",
+      "title_en": "$130 billion in data center projects blocked by protests so far this year",
+      "url": "https://arstechnica.com/tech-policy/2026/06/130-billion-in-data-center-projects-blocked-by-protests-so-far-this-year",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-12T17:18:49.000Z",
+      "summary": "截至今年，抗议活动已成功阻止价值约1300亿美元的AI数据中心项目。反对者通过组织行动阻碍了多地的开发计划，称这一胜利让参与者\"尝到了政治权力的滋味\"。抗议主要针对数据中心带来的能源消耗、水资源占用和环境影响，部分项目已被政府暂停或重新审查。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqaumbha0oz5slldur6mcs8h",
+      "title": "Pokémon Go玩家无意中为军用无人机技术贡献数据，引发持续审视",
+      "title_en": "Pokémon Go players unwittingly contributed to tech with military drone uses",
+      "url": "https://arstechnica.com/ai/2026/06/pokemon-go-players-unwittingly-contributed-to-tech-with-military-drone-uses",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-12T11:15:41.000Z",
+      "summary": "Pokémon Go玩家在游戏中收集的数据被重新用于AI训练，支持军用无人机技术。这一做法持续引发各方审视。",
+      "category": "industry",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmqatz4nc0otgslld30imx725",
+      "title": "DeepMind机器人加速器启动15家初创公司",
+      "title_en": "Our Robotics Accelerator has launched with 15 startups helping shape the future of physical AI in Eu…",
+      "url": "https://x.com/GoogleDeepMind/status/2065388989146628563",
+      "source": "X：Google DeepMind (@GoogleDeepMind)",
+      "publishedAt": "2026-06-12T11:01:22.000Z",
+      "summary": "我们的机器人加速器已启动，15家初创公司助力塑造欧洲的物理AI未来。🤖\n\n这个为期三个月的项目将为他们提供我们的AI堆栈、Gemini Robotics模型以及我们团队的实际支持。\n\n了解这些公司 → https：//goo.gle/4oeEk2K",
+      "category": "industry",
+      "score": 67,
       "selected": true
     },
     {
@@ -88,6 +136,18 @@
       "selected": true
     },
     {
+      "id": "cmq9w5ykx0ftoslldqwmy3asu",
+      "title": "WSJ：OpenAI 考虑大幅降价，同准备 ChatGPT 史上最大改版备战 IPO",
+      "title_en": "WSJ： OpenAI is considering deep price reductions as competition with Anthropic intensifies. Anthro…",
+      "url": "https://x.com/rohanpaul_ai/status/2065150529068769357",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-11T19:13:49.000Z",
+      "summary": "WSJ 报道，OpenAI 正考虑大幅降价以应对与 Anthropic 的竞争。Anthropic 增长主要来自开发者和编码工作流，Claude Code 消耗大量 token，已让企业团队将其融入日常工作。OpenAI 虽在消费品牌上更大，但企业市场才是关键--企业为编码智能体、自动化等工具付费。同时，OpenAI 在 IPO 前准备对 ChatGPT 进行史上最大改版，将其打造成涵盖编码、AI 智能体、图像生成和商业软件的超级应用，改版将在未来几周陆续推出。OpenAI 将更多资源投入编码工具 Codex，目标实现 Codex 工程负责人所说的\"个人智能体\"。",
+      "category": "industry",
+      "score": 82,
+      "selected": true
+    },
+    {
       "id": "cmq9ob4g50dqhslldg9noqyw9",
       "title": "Prometheus 融资120亿美元，估值410亿美元，定位\"人工通用工程师\"",
       "title_en": "Jeff Bezos raised $12B for Prometheus at a $41B valuation， seven months after launching it at $6.2B …",
@@ -97,18 +157,6 @@
       "summary": "杰夫·贝佐斯旗下AI公司Prometheus在成立仅7个月、尚无任何产品交付的情况下，以410亿美元估值完成120亿美元融资（最初估值62亿美元）。该公司定位为\"人工通用工程师\"，目标是将设计到制造的循环压缩10倍以上。但物理经济无法像互联网数据那样抓取，缺乏制造业训练数据。为此，Prometheus计划斥资1000亿美元收购传统工业企业，通过获取工厂生成的数据构建护城河。",
       "category": "industry",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq9ljue40czuslldeag7dg21",
-      "title": "Runway与Lionsgate扩大战略合作",
-      "title_en": "Runway and Lionsgate Expand Partnership",
-      "url": "https://runwayml.com/news/runway-and-lionsgate-expand-partnership",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-06-11T14:31:51.811Z",
-      "summary": "全球内容巨头Lionsgate与生成式AI研究公司Runway今日宣布扩大战略合作。Lionsgate已取得Runway股权，双方将启动联合开发项目，共同创作并制作新IP，首推一部基于Lionsgate现有IP和Runway生成模型的短剧系列。此外，Lionsgate将作为主持伙伴参与6月举行的Runway AI电影节。这是双方继2024年9月首次合作后的深化，Lionsgate此前已在预可视化、故事板及最终帧制作中应用Runway工具。",
-      "category": "industry",
-      "score": 72,
       "selected": true
     },
     {
@@ -136,18 +184,6 @@
       "selected": true
     },
     {
-      "id": "cmq9s8u4a0et6slldp9ssbb96",
-      "title": "BBVA 将 AI 置于银行业务核心，与 OpenAI 合作",
-      "title_en": "BBVA puts AI at the core of banking with OpenAI",
-      "url": "https://openai.com/index/bbva",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "BBVA 将 ChatGPT Enterprise 推广至 10 万名员工，并与 OpenAI 达成合作，加速全球银行业 AI 驱动的转型。",
-      "category": "industry",
-      "score": 60,
-      "selected": true
-    },
-    {
       "id": "cmq9q3mrj0e8jslld20gniuzv",
       "title": "OpenAI 将收购 Ona",
       "title_en": "OpenAI to acquire Ona",
@@ -156,31 +192,7 @@
       "publishedAt": "2026-06-11T00:00:00.000Z",
       "summary": "OpenAI 计划收购 Ona，以拓展 Codex 的功能，提供安全、持久的云端环境，从而支持企业工作流中长时间运行的 AI 智能体。",
       "category": "industry",
-      "score": 60,
-      "selected": true
-    },
-    {
-      "id": "cmq95mssa08tgslldrinkc8s3",
-      "title": "OpenAI 支持欧洲构建可信 AI 生态系统",
-      "title_en": "Supporting Europe's work in ensuring a trustworthy AI ecosystem",
-      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "OpenAI 支持欧盟《AI 内容透明度行为准则》，推进内容溯源标准与工具，帮助用户识别 AI 生成内容。",
-      "category": "industry",
-      "score": 64,
-      "selected": true
-    },
-    {
-      "id": "cmq8nblte041islldguc1eqww",
-      "title": "通过 Oracle 云承诺访问 OpenAI 模型和 Codex",
-      "title_en": "Access OpenAI models and Codex through your Oracle cloud commitment",
-      "url": "https://openai.com/index/openai-on-oracle-cloud",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-10T20:00:00.000Z",
-      "summary": "OpenAI 与 Oracle 合作，用户可利用现有 Oracle 云服务承诺（commitment）额度，在 Oracle 云上访问 OpenAI 模型和 Codex，用于构建和部署 AI 应用，同时获得企业级安全与治理能力。",
-      "category": "industry",
-      "score": 56,
+      "score": 61,
       "selected": true
     },
     {
@@ -192,7 +204,7 @@
       "publishedAt": "2026-06-10T17:00:08.000Z",
       "summary": "一项法律裁决判定 Google 对其 AI 模型产生的幻觉内容负有法律责任。该判决可能产生巨大影响，尤其若其他国家跟进做出类似裁定。",
       "category": "industry",
-      "score": 64,
+      "score": 73,
       "selected": true
     },
     {
@@ -208,6 +220,18 @@
       "selected": true
     },
     {
+      "id": "cmq8hx7sg02n5slld4ehbk31i",
+      "title": "OpenAI报告：PRC关联影响力行动瞄准美国AI辩论",
+      "title_en": "PRC-linked influence operations are targeting AI debates in the US",
+      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-10T12:00:00.000Z",
+      "summary": "OpenAI发布最新报告，详细披露了PRC关联的影响力行动利用AI工具干扰美国科技辩论、数据中心选址叙事、关税政策讨论，并散布关于ChatGPT的虚假指控。",
+      "category": "industry",
+      "score": 55,
+      "selected": true
+    },
+    {
       "id": "cmq9fhg180bf6slldy6yurdhh",
       "title": "Google DeepMind 宣布投入 1000 万美元资助多智能体AI安全研究",
       "title_en": "Investing in multi-agent AI safety research",
@@ -216,7 +240,7 @@
       "publishedAt": "2026-06-10T10:21:19.000Z",
       "summary": "Google DeepMind 与合作伙伴共同发起一项 1000 万美元的资金征集，专门用于多智能体 AI 安全方向的研究。",
       "category": "industry",
-      "score": 71,
+      "score": 60,
       "selected": true
     },
     {
@@ -340,18 +364,6 @@
       "selected": true
     },
     {
-      "id": "cmq6pnxzb0am5sl5i5g6wjkvv",
-      "title": "Google DeepMind 欧洲机器人加速器启动，15家初创公司入选",
-      "title_en": "Powering the future of robotics in Europe",
-      "url": "https://deepmind.google/blog/powering-the-future-of-robotics-in-europe",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-06-09T14:02:33.000Z",
-      "summary": "Google DeepMind 加速器从欧洲选出15家机器人初创公司，提供为期3个月的密集指导和AI技术整合支持，帮助公司将AI融入核心产品。",
-      "category": "industry",
-      "score": 58,
-      "selected": true
-    },
-    {
       "id": "cmq6neb920a0esl5ixu2rh53j",
       "title": "全新汽车品牌AIVA发布，火山引擎助力打造AI汽车新体验",
       "title_en": "全新汽车品牌AIVA发布！火山引擎助力打造AI汽车新体验",
@@ -460,6 +472,18 @@
       "selected": true
     },
     {
+      "id": "cmq5kag8z00e4sl38l2cn7dlx",
+      "title": "数周内第二次：微软软件包被植入凭据窃取器",
+      "title_en": "For the 2nd time in weeks， Microsoft packages laced with credential stealer",
+      "url": "https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-08T18:34:23.000Z",
+      "summary": "73个软件包被植入自复制窃密程序，一旦被AI智能体打开就会立即运行。这是数周内第二次发现微软相关软件包被伪装成凭据窃取器。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
       "id": "cmq5js0wr009ksl38tvk1llo2",
       "title": "苹果 WWDC 2026 直播",
       "title_en": null,
@@ -480,7 +504,7 @@
       "publishedAt": "2026-06-08T18:13:26.639Z",
       "summary": "由于欧盟《数字市场法案》（DMA），Apple 无法在 iOS 27 和 iPadOS 27 发布时于欧盟地区推出 Siri AI。该功能在欧盟的上线时间将晚于其他地区，具体时间未公布。",
       "category": "industry",
-      "score": 65,
+      "score": 69,
       "selected": true
     },
     {
@@ -492,7 +516,19 @@
       "publishedAt": "2026-06-08T14:00:00.000Z",
       "summary": "OpenAI 近日向 SEC 机密提交了 S-1 草案（即首次公开募股注册声明），目前尚未决定上市时间。",
       "category": "industry",
-      "score": 89,
+      "score": 82,
+      "selected": true
+    },
+    {
+      "id": "cmq5akpwb062vslt2xnaqb2y6",
+      "title": "\"Chat is dead\"：OpenAI 准备全面改造 ChatGPT",
+      "title_en": "\"Chat is dead\"： OpenAI preps overhaul of ChatGPT",
+      "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-08T13:51:16.000Z",
+      "summary": "OpenAI 计划将热门聊天机器人 ChatGPT 重塑为通往更高利润产品的路径，为潜在的 IPO 铺路。公司高管引用\"Chat is dead\"作为改造理念，但未披露具体功能、版本或时间表。",
+      "category": "industry",
+      "score": 79,
       "selected": true
     },
     {
@@ -517,54 +553,6 @@
       "summary": "Nvidia 与 SK Hynix 达成合作，将共同设计面向 AI 应用的未来几代存储芯片。此举巩固了 SK Hynix 在高端半导体领域的领先地位。",
       "category": "industry",
       "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmq44c1hy00d9slz5itsduqad",
-      "title": "ChatGPT 要变 AgentGPT 了",
-      "title_en": "ChatGPT 要变 AgentGPT 了 当然 ChatGPT 应该不会改名字，但 ChatGPT 应该不再是一个单纯的 Chat 工具了。 OpenAI 内部一位高管对《金融时报》说：\"Cha…",
-      "url": "https://x.com/dotey/status/2063686036895478162",
-      "source": "X：宝玉 (@dotey)",
-      "publishedAt": "2026-06-07T18:14:27.000Z",
-      "summary": "OpenAI 正筹备 ChatGPT 自 2022 年上线以来最大规模改版，从聊天机器人转向超级应用/Agent 平台，整合编程工具 Codex、图像生成及第三方应用（Canva、Booking）。高管称\"聊天已死\"，目标成为跨平台个人 AI 助手，未来甚至省去用户输入提示词。改版预计未来几周在网页和手机端上线。商业压力：ChatGPT 有 9 亿周活用户、5000 万付费用户、月收入 20 亿美元但未盈利；企业客户贡献约 40% 收入，目标年底达 50%；Codex 桌面版周活超 500 万。竞争对手 Anthropic 估值已达 9650 亿美元。OpenAI 刚完成 1220 亿美元融资，估值 8520 亿美元，IPO 目标估值可能超 1 万亿美元。",
-      "category": "industry",
-      "score": 81,
-      "selected": true
-    },
-    {
-      "id": "cmq41cpfx00g9slr28fihcr5v",
-      "title": "特朗普政府与OpenAI讨论通过公共财富基金入股AI初创公司",
-      "title_en": "FT： The proposal suddenly of a sovereign-wealth-style fund got more attention inside the White House…",
-      "url": "https://x.com/rohanpaul_ai/status/2063662672835703126",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-07T16:41:36.000Z",
-      "summary": "据FT报道，特朗普政府正与OpenAI探讨通过公共财富基金机制让政府入股AI初创公司。方案是AI企业捐赠小部分股权至该基金，基金通过账户或分红将收益返还美国公民，而非政府直接运营公司。这不同于特朗普去年对Intel的90亿美元直接持股。OpenAI此前已提出公共财富基金概念，持有长期资产，让公民分享AI增长红利。政治背景方面，选民担忧失业、数据中心成本与企业控制，而AI公司需要华盛顿在基建、采购和监管上的支持。",
-      "category": "industry",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq404ny5005mslr29n96iugc",
-      "title": "OpenAI 仍推进超级应用计划",
-      "title_en": "OpenAI is still working on that 'super app'",
-      "url": "https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-07T16:23:22.000Z",
-      "summary": "OpenAI 一位高级员工表示\"聊天已死\"，同时公司仍在继续推进超级应用计划。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq2w7jzd01ojsl97krih83rb",
-      "title": "美国众议院议员发布法案草案，旨在禁止各州制定人工智能相关法规",
-      "title_en": null,
-      "url": "https://www.reuters.com/business/us-house-lawmakers-release-draft-bill-regulate-ai-2026-06-04",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-06T21:47:39.887Z",
-      "summary": "美国众议院议员发布一项法案草案，旨在禁止各州自行制定人工智能相关法规，将AI监管权力集中到联邦层面。",
-      "category": "industry",
-      "score": 78,
       "selected": true
     }
   ]
