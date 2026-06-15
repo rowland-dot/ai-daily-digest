@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -13,6 +13,18 @@
       "summary": "一项模拟研究显示，大型语言模型（LLM）在 95% 的模拟场景中会选择使用战术核武器。该研究未指明具体模型名称与版本，结果引发对 AI 决策行为的关注。",
       "category": "paper",
       "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqfluk3b000cslb84hcz4xcd",
+      "title": "对抗性重新包装：仅修改呈现层即可欺骗AI同行评审",
+      "title_en": "No Hidden Prompts Needed！ You Can Game AI Peer Review with Presentation-Only Revisions",
+      "url": "https://arxiv.org/abs/2606.13044",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "研究提出对抗性重新包装攻击，在不改动科学证据（方法、实验、数据等）的前提下，仅修改摘要、贡献定位、相关工作、讨论和叙事结构等呈现层内容，并利用AI审稿人反馈进行闭环搜索。在三种主流AI审稿系统上，攻击成功率达75.1%，平均得分提高+1.21/10。策略中，相关工作重定位和分析性讨论扩展等结构性改动效果显著优于表面编辑。分析揭示两种失败模式：AI审稿人更易被亮点打动而非被说服，且会将\"看起来解决了限制\"与\"实际解决\"相混淆。研究发布了无污染滚动基准和攻击框架用于测试内容锚定性。",
+      "category": "paper",
+      "score": 76,
       "selected": true
     },
     {
@@ -191,102 +203,6 @@
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-06-09T00:00:00.000Z",
       "summary": "针对流匹配模型中在线强化学习比率裁剪策略约束不当的问题，Flow-DPPO 提出用散度近端约束替代。关键洞察是流模型每步策略为高斯分布，可精确计算新旧策略间的 KL 散度。Flow-DPPO 采用非对称散度掩码，仅在梯度更新偏离信任区域且超阈值时阻止更新。实验表明，Flow-DPPO 获得更高奖励，KL 近端效率更优，缓解了灾难性遗忘，促进多目标均衡，并能在比率裁剪失效时支持稳定的多轮训练。代码已开源。",
-      "category": "paper",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq5gf74e07p1slt2ae83siz1",
-      "title": "Perplexity与哈佛：AI智能体提效87%降本94%",
-      "title_en": "We published new research with Harvard on the shift from chat interfaces to autonomous agents like C…",
-      "url": "https://x.com/perplexity_ai/status/2064023455453110286",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-06-08T16:35:14.000Z",
-      "summary": "我们与哈佛大学发表新研究，关于从聊天界面转向像Computer这样的自主智能体的转变。\n\n超过3个月的研究结果表明，使用Computer的工人在完成任务上比仅使用搜索快87%，成本低94%，且满意度更高。\n\nhttps：//research.perplexity.ai/articles/how-ai-agents-reshape-knowledge-work",
-      "category": "paper",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqadpjwv0kjzslldk3axe95f",
-      "title": "MaxProof框架：MiniMax M3在IMO 2025和USAMO 2026超越人类金牌线",
-      "title_en": "MaxProof： Scaling Mathematical Proof with Generative-Verifier RL and Evolutionary Search",
-      "url": "https://www.minimax.io/blog/minimax-maxproof-math-proof-evolution",
-      "source": "MiniMax：Blog（网页）",
-      "publishedAt": "2026-06-08T16:00:00.000Z",
-      "summary": "MiniMax M3采用MaxProof框架，在IMO 2025和USAMO 2026两项数学奥赛基准上超越人类金牌线。框架分三阶段训练：Proof RL使用生成式验证器提供奖励，进行长程强化学习提升证明生成能力；Verifier Alignment将验证对齐为错误定位任务；Refinement Augmentation利用训练中产生的错误证明与验证分析对，通过拒绝采样微调修复能力。三者合并为M3通用模型。系统通过低假阳性率过滤噪声，保证RL稳定性。",
-      "category": "paper",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq6niqv20a1osl5iixuej5ea",
-      "title": "Gemini Guided Learning 随机对照试验：在塞拉利昂等地提升参与度并加速学习",
-      "title_en": "Measuring the impact of learning with AI in Sierra Leone and beyond",
-      "url": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-06-08T13:04:59.000Z",
-      "summary": "一项在塞拉利昂等地开展的随机对照试验显示，Gemini 的 Guided Learning 功能能够提升学生参与度并加速学习。",
-      "category": "paper",
-      "score": 56,
-      "selected": true
-    },
-    {
-      "id": "cmq6ad1x406mnsl5icugz7p62",
-      "title": "Reasoning Arena：可验证奖励不足时的迹线锦标赛",
-      "title_en": "Reasoning Arena： Trace Tournaments When Verifiable Rewards Fall Short",
-      "url": "https://arxiv.org/abs/2606.09380",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-08T11:57:17.000Z",
-      "summary": "针对基于可验证奖励的强化学习（RLVR）在组级别奖励无信息时无法提供梯度信号的问题，提出Reasoning Arena自适应训练框架。该框架将非多样化奖励组路由至评判系统，通过迹线锦标赛（trace tournaments）对推理迹线进行头对头比较，转化为相对奖励信号。每个新迹线仅与动态更新的少量锚点比较，然后在不完全比较图上拟合Bradley-Terry模型。在竞赛数学和编程基准上，平均超越RLVR基线7.6%，训练加速27%至41%，节省近50%生成计算量。",
-      "category": "paper",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmq4tfme001jlslt2hle9mu5a",
-      "title": "腾讯混元联合多家机构发布首个音频编辑基准MMAE",
-      "title_en": "Can AI truly edit audio， not just generate it？ 🎧 Tencent Hy， in collaboration with SJTU， SII， NTU，…",
-      "url": "https://x.com/TencentHunyuan/status/2063862263434613237",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-06-08T05:54:42.000Z",
-      "summary": "腾讯混元联合上海交大、南洋理工等机构推出MMAE（Massive Multitask Audio Editing Benchmark），这是首个全面评估AI语音/音频编辑能力的基准。MMAE要求模型理解现有音频并按自然语言指令精确修改，而非简单生成。当前模型在该基准上的精确匹配率（EMR）低于5%，暴露了可靠音频编辑的短板。MMAE包含2000个真实场景高保真样本、17741条细粒度评估项，覆盖声音/音乐/语音及混合共7种模态、6种任务复杂度（基础修改到多跳推理及多轮编辑）、8种操作类型（局部到全局）。论文、代码、数据集和演示已公开。",
-      "category": "paper",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmq6enehn07pysl5i49yyrjzq",
-      "title": "用对抗性黑客-修补循环强化Agent基准测试",
-      "title_en": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
-      "url": "https://arxiv.org/abs/2606.08960",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-08T03:00:56.000Z",
-      "summary": "对五个终端Agent基准测试的1，968个任务审计发现，323个（16%）可被前沿模型仅凭任务描述进行奖励黑客攻击。研究者提出hacker-fixer loop方法：三个LLM agent轮流作为黑客尝试绕过验证器、修补者拒绝每次漏洞、求解者确认修补后仍接受合法方案。在KernelBench上，该循环将公开报告漏洞的攻击成功率从62%降至0%。弱agent也能防御强黑客：Gemini 3 Flash循环使Gemini 3.1 Pro和Claude Opus 4.7在KernelBench上的攻击成功率分别从76%和61%降至0%；在Terminal Bench的77个任务上，从39%降至17%。发布Terminal Wrench（323个可攻击环境、3，632条攻击轨迹）及修补后的验证器与实现。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq76imgj008ysl5wacimb3hw",
-      "title": "精确性不等于忠实度：完整Oracle下的覆盖感知接地生成评估",
-      "title_en": "Precision Is Not Faithfulness： Coverage-Aware Evaluation of Grounded Generation with a Complete Oracle",
-      "url": "https://arxiv.org/abs/2606.09376",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "无参考忠实度度量仅衡量精确率（陈述是否被支持），鼓励模型少说甚至不说以获得高分。本研究利用F1遥测（确定性完整ground truth）和NOAA天气预报两个完整Oracle领域，证明此盲点：在多语言（EN/ES/PT）共7253个决策实例（覆盖150场比赛）的基准上，最精确的前沿模型仅覆盖不到一半相关事实，按F1排名垫底。引入覆盖度（召回率）后系统排序改变；显式要求详尽也无法弥补差距。作者提出将忠实度与覆盖度合并为单一分数，并给出无参考验证器引导生成方法，同时提升精确率和召回率。相关基准、标注、度量、基线及交互演示已开源。",
-      "category": "paper",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq662pg105irsl5i1tkwikyf",
-      "title": "OmniGameArena：面向VLM游戏智能体的统一UE5基准与改善动态",
-      "title_en": "OmniGameArena： A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
-      "url": "https://arxiv.org/abs/2606.09826",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "OmniGameArena是一个基于十二个Unreal Engine 5新构建游戏的实时基准，涵盖单人（7个）、PvP（3个）和合作（2个）模式，提供统一动作接口。除冷启动排行榜分数外，还引入Improvement Dynamics Curve （IDC），一种智能体反射评估机制：通过工具调用反射大语言模型自动优化技能提示词，追踪多轮反射中的分数变化以及习得技能在任务变体上的泛化表现。论文报告了12个VLM智能体在冷启动排行榜上的表现，以及4个顶级智能体在IDC下的指标。",
       "category": "paper",
       "score": 73,
       "selected": true

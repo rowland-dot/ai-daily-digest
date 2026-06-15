@@ -1,8 +1,44 @@
 {
-  "count": 46,
+  "count": 42,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqfewpje00u4sl2awgrmj4ke",
+      "title": "Nvidia 加入 AI 债务热潮，发行 200 亿美元债券",
+      "title_en": "Nvidia joins AI debt boom with $20 billion bond sale",
+      "url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-15T15:43:04.000Z",
+      "summary": "Nvidia 计划通过自 2021 年以来的首次债券发行筹集至少 200 亿美元，消息援引知情人士透露。此举标志着 Nvidia 加入 AI 领域的债务融资热潮。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqfc38a1005fsl2a21dido83",
+      "title": "Salesforce以36亿美元收购AI客服平台Fin",
+      "title_en": "Salesforce acquires AI customer service platform Fin for $3.6 billion",
+      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-15T14:34:45.000Z",
+      "summary": "Salesforce宣布以36亿美元收购AI客服平台Fin（前身为Intercom）。Fin提供可跨实时聊天、WhatsApp、短信、电话、Slack等多渠道解决客户问题的AI智能体。Salesforce计划利用Fin的技术和团队增强其企业级Agentforce平台，该平台允许企业构建自定义AI智能体以自动化任务。交易预计在Salesforce 2027财年第四季度（即2027年初）完成。Fin联合创始人兼CEO Eoghan McCabe将继续担任CEO，研发负责人Des继续领导研发。",
+      "category": "industry",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmqegnuc40214slunxe96pbiy",
+      "title": "OpenAI 推出合作伙伴网络 OpenAI Partner Network",
+      "title_en": "Introducing the OpenAI Partner Network",
+      "url": "https://openai.com/index/introducing-openai-partner-network",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-14T17:00:00.000Z",
+      "summary": "OpenAI 宣布推出 OpenAI Partner Network，并投资 1.5 亿美元支持全球合作伙伴构建、销售和交付 AI 解决方案。该计划设立 Select、Advanced、Elite 三级合作伙伴层级，提供 Codex、网络安全、智能体等专业方向认证，并试点 Forward Deployed Experts 项目以支持复杂企业部署。目标在 2026 年底前培训认证 30 万名顾问。案例显示，Paychex 借助 Bain 和 OpenAI 的方案将等待时间降低 80%，人工审核时间减少 30%。",
+      "category": "industry",
+      "score": 59,
+      "selected": true
+    },
     {
       "id": "cmqdcj53706qpslttlp0b4n9p",
       "title": "Anthropic 暂停新模型访问，印度辩论 AI 未来",
@@ -469,90 +505,6 @@
       "summary": "本周一，OpenAI CEO 奥尔特曼与首席科学家帕霍茨基联合发文，宣布公司进入第三发展阶段，目标让 AI 普及、易用且安全。此前第一阶段聚焦通用人工智能技术研发，第二阶段面向全球推出产品。第三阶段三大核心目标是打造自动化人工智能研究员、推动经济提速、为每人配备专属通用人工智能。二人强调智能系统须坚守安全底线，呼吁成立国际机构应对 AI 风险，必要时可暂缓前沿模型研发。同日，OpenAI 秘密提交 IPO 申请，但上市仍需较长时间。上周 Anthropic 研究人员也建议适当放缓前沿 AI 研发。",
       "category": "industry",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq5kag8z00e4sl38l2cn7dlx",
-      "title": "数周内第二次：微软软件包被植入凭据窃取器",
-      "title_en": "For the 2nd time in weeks， Microsoft packages laced with credential stealer",
-      "url": "https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-08T18:34:23.000Z",
-      "summary": "73个软件包被植入自复制窃密程序，一旦被AI智能体打开就会立即运行。这是数周内第二次发现微软相关软件包被伪装成凭据窃取器。",
-      "category": "industry",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq5js0wr009ksl38tvk1llo2",
-      "title": "苹果 WWDC 2026 直播",
-      "title_en": null,
-      "url": "https://www.apple.com/apple-events/event-stream",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-08T18:17:22.096Z",
-      "summary": "苹果 WWDC 2026 主题演讲通过官网进行直播，Hacker News 用户讨论热度达到 110 点。",
-      "category": "industry",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq5lakyn00nesl38edfw2m19",
-      "title": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟上线",
-      "title_en": "Due to DMA， Siri AI delayed in EU for iOS 27 and iPadOS 27",
-      "url": "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27",
-      "source": "Apple：Newsroom（RSS）",
-      "publishedAt": "2026-06-08T18:13:26.639Z",
-      "summary": "由于欧盟《数字市场法案》（DMA），Apple 无法在 iOS 27 和 iPadOS 27 发布时于欧盟地区推出 Siri AI。该功能在欧盟的上线时间将晚于其他地区，具体时间未公布。",
-      "category": "industry",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmq5pocki017bsl5ikjj1dzhk",
-      "title": "OpenAI 向 SEC 机密提交 S-1 草案，上市时间未定",
-      "title_en": "Confidential submission of draft S-1 to the SEC",
-      "url": "https://openai.com/index/openai-submits-confidential-s-1",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-08T14:00:00.000Z",
-      "summary": "OpenAI 近日向 SEC 机密提交了 S-1 草案（即首次公开募股注册声明），目前尚未决定上市时间。",
-      "category": "industry",
-      "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmq5akpwb062vslt2xnaqb2y6",
-      "title": "\"Chat is dead\"：OpenAI 准备全面改造 ChatGPT",
-      "title_en": "\"Chat is dead\"： OpenAI preps overhaul of ChatGPT",
-      "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-08T13:51:16.000Z",
-      "summary": "OpenAI 计划将热门聊天机器人 ChatGPT 重塑为通往更高利润产品的路径，为潜在的 IPO 铺路。公司高管引用\"Chat is dead\"作为改造理念，但未披露具体功能、版本或时间表。",
-      "category": "industry",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmq50iuao03eislt2og43waqb",
-      "title": "生数科技与华策影视达成战略合作，共建AI视听创制中心",
-      "title_en": "生数科技与华策集团达成战略合作，推动AI与影视产业融合落地",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMDQ5NTQwMQ%3D%3D&mid=2247488842&idx=1&sn=3dab63189fa60b3b78c5ad72e3358791",
-      "source": "公众号：生数科技（Vidu·视频）",
-      "publishedAt": "2026-06-08T09:30:33.000Z",
-      "summary": "6月7日，生数科技与华策影视签署战略合作协议，共同推动AI与影视产业融合。双方将以华策影视科技产教示范区为载体、生数科技Vidu视频生成大模型为技术底座，设立\"AI视听创制中心\"，探索AI虚拟制作与实拍结合。同时在浙江华策影视学校设立\"华策&生数AI影视创制专业\"，课程覆盖传统编导剪与AI视频制作技术。内容生产层面推广\"实拍+AI\"融合方案并优先在华策项目中试点，创作者生态层面引导Vidu社区超级创作者到产教基地注册。",
-      "category": "industry",
-      "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmq4gflji00qtslotgoi786jr",
-      "title": "Nvidia 与 SK Hynix 签署多年协议，共同开发下一代 AI 存储芯片",
-      "title_en": "Nvidia， SK Hynix Sign Multi-Year Pact to Develop Next-Gen Chips",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-07/nvidia-sk-hynix-sign-multi-year-pact-to-develop-next-gen-chips",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-07T23:26:02.000Z",
-      "summary": "Nvidia 与 SK Hynix 达成合作，将共同设计面向 AI 应用的未来几代存储芯片。此举巩固了 SK Hynix 在高端半导体领域的领先地位。",
-      "category": "industry",
-      "score": 71,
       "selected": true
     }
   ]

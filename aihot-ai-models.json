@@ -1,8 +1,32 @@
 {
-  "count": 18,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqfhhoq001hksl2aw53w2wz8",
+      "title": "下一代投机解码：DFlash 与 Spec V2",
+      "title_en": "Blog The next generation of speculative decoding： DFlash and Spec V2 Using Modal and Z Lab's DFlash speculative decoding models with SGLang's newly default Spec V2 engine， you can achieve state-of-the-art latencies for LLM inference serving. Our new， jointly-released D… Z Lab， Modal， and SGLang Teams",
+      "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-06-15T17:25:17.048Z",
+      "summary": "Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上、并发 1 时吞吐量达到基线的 4.3",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmqfccohd008esl2a2ofz86v0",
+      "title": "MiniMax 开源 M3 模型权重及 MSA 技术论文",
+      "title_en": "我们开源了 MiniMax M3",
+      "url": "https://mp.weixin.qq.com/s/AW6L89QZkwN-jD27hQ84ww",
+      "source": "公众号：MiniMax（稀宇科技）",
+      "publishedAt": "2026-06-15T14:40:02.000Z",
+      "summary": "MiniMax 上周五开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）技术论文，该架构显著降低长上下文计算成本。M3 是首个从预训练阶段就进行文本、图像等多模态交错混合训练的开源模型。发布两周后，M3 在 Artificial Analysis 综合智能指数、GDPval-AA 排行榜均获开源模型第一，Code Arena WebDev 跻身帕累托最优序列，Vals.AI 榜单居国产模型首位。输出速度已从约 30 TPS 提升至约 80 TPS，计划再提速 30-40%；Token Plan 后台新增调用量看板。",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true
+    },
     {
       "id": "cmqc6iauc00klslt434x4od86",
       "title": "Zhipu GLM-5.2 全量开放，支持 1M 上下文且下周开源",
@@ -13,18 +37,6 @@
       "summary": "GLM-5.2 是Zhipu迄今能力最强的开源模型，支持真正可用的 1M 上下文，在长程任务中继续保持领先，并被Zhipu称为最强的国产 Coding 模型。今晚 5：21 起面向 GLM Coding Plan 全量用户开放（覆盖 Lite、Pro、Max、团队版）。API 将于下周上线，模型下周正式开源，遵循 MIT 协议。",
       "category": "ai-models",
       "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqb0ab1w010xsl359sr4xe9u",
-      "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
-      "title_en": "MiniMax M3， Open-Weight， Now On Hugging Face ， with only ~428B parameters and ~23B activated paramet…",
-      "url": "https://x.com/MiniMax_AI/status/2065436935188058208",
-      "source": "X：MiniMax (@MiniMax_AI)",
-      "publishedAt": "2026-06-12T14:11:53.000Z",
-      "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
-      "category": "ai-models",
-      "score": 81,
       "selected": true
     },
     {
@@ -169,54 +181,6 @@
       "summary": "小米 MiMo 与 TileRT 联合发布 MiMo-V2.5-Pro-UltraSpeed 模式，使 1T 参数旗舰模型输出速度首次突破 1000 tokens/s。模型侧采用 FP4 混合量化（仅量化 MoE Expert）与 DFlash 块级 masked 并行推测解码（coding 场景平均接受长度 6.30 tokens）；系统侧 TileRT 引入常驻内核引擎与异构流水线协作。API 限时开放（2026 年 6 月 9 日至 23 日），定价为 MiMo-V2.5-Pro 的 3 倍，速度提升约 10 倍。FP4 权重与 DFlash 模型 checkpoint 已开源至 HuggingFace。",
       "category": "ai-models",
       "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmq6w3soi002gslbhz3kkhav0",
-      "title": "Claude Fable 5 和 Claude Mythos 5",
-      "title_en": "Claude Fable 5 and Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-08T16:00:00.000Z",
-      "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing 向网络安全防御者开放。",
-      "category": "ai-models",
-      "score": 90,
-      "selected": true
-    },
-    {
-      "id": "cmq5bpym306fbslt2cnfcangy",
-      "title": "VoxCPM2 技术报告发布",
-      "title_en": "🚀 VoxCPM2 Technical Report is now available on arXiv！ VoxCPM2 is the latest speech generation mode…",
-      "url": "https://x.com/OpenBMB/status/2063991963133903317",
-      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "publishedAt": "2026-06-08T14:30:05.000Z",
-      "summary": "面壁智能 OpenBMB 发布 VoxCPM2 技术报告。该模型为最新语音生成模型，拥有 2B 参数，基于超 200 万小时多语言语音数据训练，支持 30 种语言和 9 种中文方言。具备自然语言语音设计、可控及高保真延续性语音克隆能力。技术报告涵盖架构设计、统一序列公式、AudioVAE 高保真语音重建、大规模训练评估，以及零样本和指令跟随 TTS 基准结果。采用 16kHz 语义编码 + 48kHz 波形重建，在公开 TTS 基准上达到 SOTA 或极具竞争力。模型权重、微调代码和推理工具以 Apache 2.0 开源。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq4tna5301m5slt2fr7nmpp7",
-      "title": "全球首个：高德发布3D原生城市世界模型ABot-Earth0.5",
-      "title_en": "全球首个：高德发布 3D 原生城市世界模型 ABot-Earth0.5，单图 10 分钟重建 3D 城市",
-      "url": "https://www.ithome.com/0/961/378.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-08T05:53:46.000Z",
-      "summary": "阿里巴巴旗下高德发布全球首个3D原生城市世界模型ABot-Earth0.5，已建成覆盖190多个国家和地区的3D地图。用户输入卫星图或文字描述，10分钟即可在消费级GPU上生成公里级3D城市，输出可编辑3DGS格式，可直接导入Unity等引擎。制图成本为传统百分之一，效率提升约千倍，可为具身智能、低空经济、应急救援等提供支撑。目前已开放内测，可前往abot-earth.amap.com提交申请。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq5pmqqc0166sl5icnriem6v",
-      "title": "苹果发布第三代 Apple Foundation Models（AFM）",
-      "title_en": "Introducing the Third Generation of Apple's Foundation Models",
-      "url": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "苹果推出第三代 Apple Foundation Models（AFM）基础模型家族，与 Google 合作定制，包含五个模型，覆盖从设备端到基于 Private Cloud Compute 的服务器端模型。这些模型旨在驱动 Apple Intelligence 功能，包括全新 Siri 和智能工具，以用户为中心深度融合操作系统，隐私为核心设计原则。",
-      "category": "ai-models",
-      "score": 79,
       "selected": true
     }
   ]
