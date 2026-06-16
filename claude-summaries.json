@@ -1,77 +1,53 @@
 {
-  "generated_at": "2026-05-29T22:45:00Z",
+  "generated_at": "2026-06-15T22:40:51.000Z",
   "summaries": {
-    "https://openai.com/index/boston-childrens-hospital": {
-      "en": "Boston Children's Hospital has woven OpenAI tools into clinical and back office work, building a shared enterprise AI layer rather than scattered point solutions. The team has cut operational costs, eased administrative load on billing and supply chain staff, and helped diagnose more than forty rare conditions that had previously gone unsolved by combining genetic data, clinical notes and the medical literature. Chief Innovation Officer John Brownstein frames the win as overcoming human cognitive limits, not effort.",
-      "zh": "Boston Children's Hospital 将 OpenAI 工具嵌入临床与运营工作流，建立统一企业级 AI 平台而非零散方案，降低成本、减轻账单与供应链团队负担，并通过整合基因数据、病历与医学文献协助诊断了四十多种此前未明的罕见病。首席创新官 John Brownstein 表示，AI 突破的不是努力的极限，而是人类认知本身的极限。"
+    "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything": {
+      "en": "The Axios piece collects behind-the-scenes detail on the US government export control story that pulled Anthropic's Mythos and Fable models offline. Logan Graham, Dave Orr, and Nicholas Carlini head to the Commerce Department today. Simon Willison notes that perfect jailbreak resistance may be impossible and points to Anthropic's Constitutional Classifiers work, while questioning whether universal adversarial attacks against aligned language models from the 2023 paper have ever been fully solved.",
+      "zh": "Simon Willison 评论 Axios 关于美国政府出口管制导致 Anthropic Mythos 与 Fable 模型下架的内幕。Logan Graham、Dave Orr 与 Nicholas Carlini 今日赴商务部沟通。Willison 指出完美的越狱抵抗或许根本不可能，并提及 Anthropic 的 Constitutional Classifiers 研究，质疑 2023 年那篇通用对抗攻击论文揭示的问题是否真正得到解决。"
     },
-    "https://openai.com/index/braintrust": {
-      "en": "Braintrust, the observability and eval platform for AI products, says half its engineering team moved to Codex with GPT 5.5 in a single month. Founder Ankur Goyal credits raw speed and the ability to keep printing output without slowing down: engineers paste customer feature requests straight into Codex, spin up preview branches, and show working ideas to customers in minutes. Goyal also writes failing tests, hands them to Codex in a sandbox, and lets it iterate autonomously.",
-      "zh": "AI 产品可观测与评估平台 Braintrust 表示，一个月内一半的工程团队已转用搭载 GPT 5.5 的 Codex。创始人 Ankur Goyal 认为关键在于原始速度：工程师把客户的功能请求直接粘进 Codex，几分钟内生成预览分支与客户实时迭代。他还会先写失败测试，再让 Codex 在沙箱中自主修复。"
+    "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything": {
+      "en": "Arvind Narayanan and Sayash Kapoor argue that software engineering, despite being uniquely exposed to AI, has not seen mass layoffs — none of the 160 New York WARN Act filings checked the AI box. They identify three real bottlenecks that resist automation: deciding what to build, verifying and being accountable for what is delivered, and the deep human understanding of codebase, business, and environment. Simon Willison adds that this understanding remains the anchor of his value.",
+      "zh": "Arvind Narayanan 与 Sayash Kapoor 反驳 AI 即将取代程序员的叙事。纽约一年内 160 家公司的 WARN 裁员通知中无一勾选 AI 选项。三大真正瓶颈难以自动化：决定要做什么、验证并对交付负责，以及对代码库、业务和环境的深度人类理解。Simon Willison 也认为这种深度理解仍是程序员价值的核心。"
     },
-    "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense": {
-      "en": "OpenAI is launching Rosalind Biodefense, a program offering trusted developers a path to build pandemic preparedness and biodefense applications on frontier models. It is also expanding access to GPT Rosalind for vetted U.S. government and allied public health partners. The announcement frames the work as defensive acceleration, citing OpenAI's Preparedness Framework, expert red teaming and bio specific evaluations, and pointing to ChatGPT agent's July 2025 designation as the first High Capability biology model.",
-      "zh": "OpenAI 启动 Rosalind Biodefense 计划，向可信开发者开放前沿模型以构建大流行病防范与生物防御应用，同时向通过审核的美国政府及盟友公共卫生伙伴扩大 GPT Rosalind 访问权限。OpenAI 将此定位为防御性加速，配合 Preparedness Framework、专家红队与生物专项评测体系。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u6bca1/this_is_amazing_token_speed_doubled_kv_cache_now/": {
+      "en": "On a single RTX 3090, Qwen 3.6 27B at Q4_K_M can now run a native 256K context at 38.6 tokens per second using only 72 MiB of resident KV cache thanks to a new kvflash optimization. Generation speed doubled and VRAM dropped from 21 GB to 17.5 GB. Harness accuracy held at 36 of 36 across HumanEval, GSM, MATH, and agent suites, though outputs are not byte-identical because a masked kernel rounds differently.",
+      "zh": "在单张 RTX 3090 上，Qwen 3.6 27B Q4_K_M 借助新的 kvflash 优化，本地原生支持 256K 上下文，每秒可生成 38.6 个 token，仅占用 72 MiB KV 缓存。生成速度翻倍，显存从 21 GB 降至 17.5 GB。HumanEval、GSM、MATH 与 agent 基准 36 题全对，与完整缓存一致，但因掩码内核舍入不同，输出并非逐字节相同。",
+      "title_en": "Qwen 3.6 27B doubles its tokens per second and shrinks KV cache memory with the new kvflash optimization on a single RTX 3090",
+      "title_zh": "kvflash 优化让 Qwen 3.6 27B 在单张 RTX 3090 上速度翻倍，KV 缓存显存大幅下降"
     },
-    "https://openai.com/index/trustworthy-third-party-evaluations-foundations": {
-      "en": "OpenAI shares lessons on what makes third party safety evaluations of frontier models valid. The post argues evaluations must specify which of three claims they test (capability elicitation, safeguard robustness, or model comparison) and must also report evidence against threats to validity such as reward hacking, refusals, training data contamination, broken tasks, and harness setup. Because modern models use tools and run multi step workflows, the surrounding harness now shapes results as much as the model itself.",
-      "zh": "OpenAI 总结前沿模型第三方安全评测的有效性经验。文章主张评测必须明确测试三类主张之一：能力可达性、安全防护稳健性，或不同模型间的对比，并需报告对奖励作弊、拒答、训练数据污染、任务损坏与工具环境的检查证据。现代模型使用工具与多步流程，外围 harness 对结果的影响已不亚于模型本身。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u6e0fo/why_there_is_a_lack_of_new_100b120b_models/": {
+      "en": "The post asks why the 100B to 120B Mixture of Experts class has gone quiet. GPT OSS 120B is roughly ten months old, and follow-ups GLM 4.5 Air, Nemotron 3 Super, Qwen 3.5 122B, and Mistral Small 4 119B are all at least three months out of date. Recent launches either cluster at 25B to 35B or jump to 200B and above, raising the question of whether the mid-large segment is dying off like the 70B and 80B class did.",
+      "zh": "帖子询问为什么 100B 到 120B 的 Mixture of Experts 类模型最近沉寂。GPT OSS 120B 已发布约十个月，GLM 4.5 Air、Nemotron 3 Super、Qwen 3.5 122B 与 Mistral Small 4 119B 都至少三个月没更新。最新发布要么集中在 25B 到 35B，要么直接跳到 200B 以上，作者疑问这个中大型区间是否像 70B 与 80B 一样正在凋零。"
     },
-    "https://simonwillison.net/2026/May/29/anthropic/#atom-everything": {
-      "en": "Simon Willison highlights one line from Anthropic's Series H announcement: run rate revenue, an annualized projection from the most recent month, crossed forty seven billion dollars earlier this month, up from thirty billion in April and fourteen billion in February. He plotted the trajectory with Claude Opus 4.8 in Matplotlib, dismisses claims the figure is inflated since lying to Series H investors would be securities fraud, and notes one consultant client reportedly spent half a billion dollars in a single month on Claude.",
-      "zh": "Simon Willison 提炼 Anthropic Series H 公告中的关键数字：按最近一个月折算年化的 run-rate revenue 本月初已突破 470 亿美元，2 月 Series G 时为 140 亿，4 月为 300 亿。他用 Claude Opus 4.8 配 Matplotlib 画了走势图，并反驳数字虚高的质疑——向刚投入 650 亿的投资者撒谎构成证券欺诈。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u64t9i/command_a_plus_ggufs_posted/": {
+      "en": "Llama.cpp gained support for both Command A Plus and North Mini Code over the past weekend. Unsloth has already shared GGUF quantizations for North Mini Code, but no up-to-date Command A Plus GGUFs were available, so the author converted and quantized Command A Plus themselves and posted the resulting GGUFs for community use.",
+      "zh": "llama.cpp 本周末新增对 Command A Plus 与 North Mini Code 的支持。Unsloth 已发布 North Mini Code 的 GGUF 量化版，但没有人放出最新的 Command A Plus GGUF。作者亲自转换并量化 Command A Plus，并将 GGUF 分享给社区使用。"
     },
-    "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything": {
-      "en": "Anthropic shipped Claude Opus 4.8 and Simon Willison welcomes its unusually candid release note, which calls the model a modest but tangible improvement and admits work remains on cheaper variants. Honesty is the headline upgrade: Opus 4.8 is roughly four times less likely than 4.7 to let flaws in its own code go unremarked, and abstains rather than guesses when uncertain. Pricing matches 4.5 through 4.7, and Fast Mode is now half its previous price for research preview accounts.",
-      "zh": "Anthropic 发布 Claude Opus 4.8，Simon Willison 称赞其罕见坦诚的更新说明，称该模型只是温和但可感知的改进。亮点是诚实：漏报自身代码缺陷的概率比 4.7 降低约四倍，对不确定问题更倾向拒答而非乱猜。定价与 4.5 至 4.7 持平，Fast Mode 对研究预览用户半价。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u63qny/made_a_macos_app_that_creates_highly_personal/": {
+      "en": "Ironsmith is a new open-source macOS app that generates small, highly personal macOS apps from a prompt and is tuned to work with very small local models like Gemma 4 E2B or Apple foundation models. It uses a custom agentic loop with aggressive linting and deterministic repair to fix syntax errors and hallucinations, letting an 8 GB MacBook Air build apps fully on device. Larger Gemma 4 26B A4B yields better quality, and Ollama and OpenAI-compatible APIs are supported.",
+      "zh": "Ironsmith 是新的开源 macOS 应用，可根据提示词生成个性化的小型 macOS 应用，特别为 Gemma 4 E2B、Apple Foundation 等小型本地模型优化。它通过自定义 agent 循环、大量格式化与确定性修复来弥补小模型的语法错误与幻觉，可在 8GB MacBook Air 上完全本地运行。更大的 Gemma 4 26B A4B 质量更佳，兼容 Ollama 与 OpenAI 风格 API。"
     },
-    "https://simonwillison.net/2026/May/28/llm-anthropic/#atom-everything": {
-      "en": "Simon Willison released llm anthropic version zero point twenty five point one, the plugin that lets his llm command line tool talk to Anthropic Claude models. The release adds the new Claude Opus 4.8 model, introduces a fast mode option for accounts with that feature enabled, and changes the default max tokens for each model to that model's true maximum output rather than the previous eight thousand one hundred ninety two. Simon used this build to generate his Opus 4.8 pelican drawings.",
-      "zh": "Simon Willison 发布 llm-anthropic 0.25.1，让其 llm 命令行工具支持新发布的 Claude Opus 4.8，新增 fast mode 选项供启用该功能的账户使用，并将各模型默认 max tokens 改为该模型实际最大输出，而非此前的 8192。Simon 用这版插件生成了 Opus 4.8 的鹈鹕测试图。",
-      "title_en": "Simon Willison's llm-anthropic plugin reaches version zero point twenty five point one, adding Claude Opus 4.8",
-      "title_zh": "Simon Willison 的 llm-anthropic 插件发布 0.25.1 版，加入对 Claude Opus 4.8 的支持"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u6qso1/evalatro_an_open_benchmark_where_llms_play_the/": {
+      "en": "Evalatro is an open benchmark that has language models play the real Balatro through the balatrobot mod. Models receive game state as text, make decisions without tactical hints, and play under fixed seeds with server-side scoring on a public leaderboard. The goal is clearing Ante 12, but early runs show no model close — mimo v2.5 pro only reached Ante 5, and DeepSeek V4 Pro could not beat the Ante 8 boss. The author seeks feedback on the bar and on anti-cheating.",
+      "zh": "Evalatro 是开源基准，让大型语言模型真实游玩 Balatro。借助 balatrobot 模组，模型以文本形式获取游戏状态并自主决策，使用固定随机种子，分数由服务器计算并发布到公开排行榜，可回看模型推理。目标是通关 Ante 12，但目前最佳的 mimo v2.5 pro 只到 Ante 5，DeepSeek V4 Pro 连 Ante 8 都过不去。作者征集难度与防作弊建议。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tqloii/stepfun_37_flash/": {
-      "en": "StepFun released Step 3.7 Flash, a 196 billion parameter Mixture of Experts model with only 11 billion active parameters and a built in 1.8 billion parameter vision encoder. It fits on a 128 gigabyte RAM machine for local use and benchmarks competitively against larger flash tier rivals, hitting 56 percent on SWE Bench Pro, 92 percent on DeepSearchQA F1, and 47 percent on Humanity's Last Exam with tools. It is also available on OpenRouter and NVIDIA NIM for users who do not want to self host.",
-      "zh": "StepFun 发布 Step 3.7 Flash 多模态混合专家模型：总参数 1960 亿、仅 110 亿激活，内置 18 亿参数视觉编码器，可在 128GB 内存机器本地运行。SWE-Bench Pro 56%、DeepSearchQA F1 92%、Humanity's Last Exam 带工具 47%，agent 与编码远超其激活参数量级。也可通过 OpenRouter 与 NVIDIA NIM 调用。",
-      "title_en": "StepFun releases Step 3.7 Flash, a 196 billion parameter Mixture of Experts model with 11 billion active parameters",
-      "title_zh": "StepFun 发布 Step 3.7 Flash：1960 亿总参数、110 亿激活参数的多模态混合专家模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u6bwz0/im_still_surprised_on_how_good_the_kv/": {
+      "en": "The author shows that KV cache quantized to q4_0 — including the speculative drafter's KV — still retrieves obscure details accurately from a roughly 100K token context. To rule out training-data memorization, the test used a 2026 Italian book the author bought. The result reinforces just how robust aggressive KV quantization has become for long-context recall, even when the drafter model also runs at the same low precision.",
+      "zh": "作者展示将 KV 缓存量化到 q4_0（连推测解码草稿模型的 KV 也用 q4_0）后，仍能在约 10 万 token 上下文中准确取回细节。为排除训练数据记忆嫌疑，特意使用了 2026 年新出的意大利文书籍。结果表明激进 KV 量化对长上下文检索依然稳定，即使草稿模型同样保持低精度也无明显损失。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tqqnsl/liquid_ai_releases_lfm258ba1b/": {
-      "en": "Liquid AI released LFM2.5 8B A1B, an edge model aimed at real world deployments on entry level laptops. It upgrades the previous LFM2 8B A1B with a 128 thousand token context window, 38 trillion tokens of pre training up from 12 trillion, and large scale reinforcement learning. Vocabulary size has doubled to improve tokenization of non Latin languages, and the model is tuned for chained tool calls and complex agentic tasks. Weights are on Hugging Face.",
-      "zh": "Liquid AI 发布边缘模型 LFM2.5-8B-A1B，旨在入门级笔记本上运行真实场景应用。相比 LFM2-8B-A1B，上下文扩展至 12.8 万 token，预训练数据从 12 万亿提升至 38 万亿 token，并加入大规模强化学习。词表翻倍以改善非拉丁语种分词，模型针对链式工具调用与复杂代理任务做了优化。权重已上传 Hugging Face。",
-      "title_en": "Liquid AI releases LFM2.5 8B A1B edge model with 128 thousand token context and expanded multilingual tokenizer",
-      "title_zh": "Liquid AI 发布边缘模型 LFM2.5-8B-A1B，提供 12.8 万 token 上下文与扩展的多语言分词器"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u698b1/an_agent_that_plans_with_a_frontier_model_but/": {
+      "en": "A dual RTX 3090 user built a tiered agent that delegates planning to a frontier model like Codex while routing roughly 85 to 90 percent of tokens through a local Qwen 3.6 27B, with optional Kimi K2.6 via opencode-go as a senior fallback. The planner emits phase and epoch decisions in JSON, and a deterministic validator confirms each task by exit code or expected file, so multi-hour chains cannot drift. A repomapper curates context to keep local models focused.",
+      "zh": "双 RTX 3090 玩家自建分层 agent：让 Codex 等前沿模型负责规划，约百分之 85 到 90 的 token 由本地 Qwen 3.6 27B 执行，并可选用 opencode-go 调用 Kimi K2.6 作为资深模型兜底。规划器输出阶段与轮次的 JSON 决策，确定性校验器通过命令退出码或产物文件确认每项任务，防止长链漂移。仓库图工具收敛上下文，让小模型保持专注。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tr9vzn/qwen3627b_quantization_benchmark/": {
-      "en": "A user benchmarks Qwen 3.6 27B quantizations from Q8 down to Q2 across unsloth, mradermacher, Ununnilium and cHunter789's IQ4 XS. Using llama.cpp's perplexity tool, they measure mean KL divergence between the quantized model and the BF16 base, plus how often it picks the same top token. Q6 to Q8 are essentially lossless; in the 4 bit cluster, Q4 K XL is the quality compromise pick, IQ4 XS works for tight VRAM, and quality degrades sharply from Q3 K XL downward.",
-      "zh": "一位用户用 llama.cpp perplexity 工具，对 unsloth、mradermacher、Ununnilium 与 cHunter789 的 Qwen 3.6 27B 量化版从 Q8 到 Q2 做对比，指标为相对 BF16 的 KL 散度均值与首选 token 一致率。结论：Q6 至 Q8 几乎无损；4 比特区段 Q4_K_XL 最佳，IQ4_XS 显存紧张时可用；Q3_K_XL 以下下滑明显。",
-      "title_en": "Benchmarking Qwen 3.6 27B quantizations from Q8 down to Q2 using KL divergence and same top token rate",
-      "title_zh": "用 KL 散度与首选 token 一致率对 Qwen 3.6 27B 从 Q8 到 Q2 的量化版本做基准测试"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u6fham/react_native_executorch_now_runs_gemma_4_vulkan/": {
+      "en": "React Native ExecuTorch has integrated Gemma 4, letting React Native apps run the model fully offline. The library accelerates inference on Android via the Vulkan delegate and on Apple Silicon via the MLX delegate. A demo app is linked from the post.",
+      "zh": "React Native ExecuTorch 新增对 Gemma 4 的支持，可让 React Native 应用完全离线运行该模型。库在 Android 上使用 Vulkan delegate 进行 GPU 加速，在 Apple Silicon 上则通过 MLX delegate 加速。帖子附带演示应用链接。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tqy2iv/shoutout_to_gemma4_as_a_conversational_assistant/": {
-      "en": "A user reports that Gemma4 26B A4B runs blazingly fast on an Apple M5 Pro despite its modest memory bandwidth, and serves as an excellent all round daily local assistant: creative writing, coding, debugging, image classification and casual chat. They note Qwen 3.6 35B A3B edges Gemma slightly on coding but feels more robotic and is worse at non coding tasks. Pairing Gemma with a web search tool turns it into a strong everyday agent.",
-      "zh": "一位用户称 Gemma4 26B A4B 在 Apple M5 Pro 上速度极快，是优秀的全能日常本地大模型，能胜任创作、编程、调试、图像识别与闲聊。对比之下 Qwen 3.6 35B A3B 编码略强但更机械，非编码任务明显逊色。给 Gemma 接入 Web 搜索工具后，作为日常智能体表现非常出色。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tqt12p/use_html_as_the_primary_chat_language_for_your/": {
-      "en": "A developer experiments with switching their coding agent's chat protocol from Markdown to HTML, on the premise that modern models work better with HTML. Once the system prompt itself was rewritten in HTML, Qwen 3.6 27B started returning structured HTML with inline SVG diagrams rendered directly into the chat UI. The agent can now draw tables and diagrams inline, and the developer suspects HTML plus SVG output is an emerging capability missing from smaller models like Qwen 3 VL 4.",
-      "zh": "一位开发者尝试把自家编码智能体的聊天协议从 Markdown 切换为 HTML，依据是现代模型对 HTML 处理更好。把系统提示也改写为 HTML 后，Qwen 3.6 27B 开始返回结构化 HTML 并内嵌 SVG 图，直接在网页 UI 中呈现表格与流程图。作者认为 HTML 加 SVG 输出是大模型新兴能力，较小的 Qwen 3-VL-4 还做不到。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tqqebc/stepfun_37_flash_speed_benchmark_in_m5_max/": {
-      "en": "A user benchmarks StepFun's Step 3.7 Flash on a 128 gigabyte Apple M5 Max running a day zero llama.cpp branch with Q4 K S quantization. Memory peaks around 120 gigabytes, making the machine sluggish but usable. Throughput starts at about 62 tokens per second of generation at short context and degrades gracefully to roughly 33 tokens per second at 64 thousand token context, with prompt processing dropping from over a thousand tokens per second to roughly 360.",
-      "zh": "一位用户在 128GB 的 Apple M5 Max 上用 day-0 llama.cpp 分支跑 StepFun Step 3.7 Flash 的 Q4_K_S 量化版。内存峰值约 120GB，机器略卡但可用。短上下文下生成约每秒 62 token，到 6.4 万 token 上下文降至约 33 token 每秒，prompt processing 从千余降至约 360。",
-      "title_en": "StepFun Step 3.7 Flash speed benchmark on an Apple M5 Max with 128 gigabytes of unified memory",
-      "title_zh": "在 128GB 内存的 Apple M5 Max 上测试 StepFun Step 3.7 Flash 的推理速度"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tr0end/vllm_pr_adding_native_hip_w4a16_kernel_was_merged/": {
-      "en": "A new vLLM pull request added a native HIP kernel for 4 bit weight 16 bit activation quantization, and it has just been merged. On Qwen 3.6 27B GPTQ in this format, the kernel hits 270 tokens per second on RDNA3 at batch size eight in fp16, climbing to 445 tokens per second at batch size 32. That comfortably beats the previous Triton path at roughly 83 tokens per second and matches or exceeds ExLlama, making ROCm rigs notably more useful for serving local models.",
-      "zh": "vLLM 刚合并一条 pull request，原生支持 HIP 上 4 比特权重 16 比特激活内核。在 Qwen 3.6 27B GPTQ 上，RDNA3 显卡 fp16 单批 8 时达 270 token 每秒，单批 32 时升至 445，远超此前 Triton 路径约 83 token 每秒，与 ExLlama 持平甚至更高。ROCm 平台本地推理实用性大幅提升。",
-      "title_en": "vLLM merges a native HIP 4 bit weight 16 bit activation kernel that speeds up Qwen 3.6 27B on RDNA3 ROCm GPUs",
-      "title_zh": "vLLM 合并原生 HIP 四比特权重十六比特激活内核，大幅提升 Qwen 3.6 27B 在 RDNA3 ROCm 显卡上的速度"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tr57ci/we_gave_a_reachy_mini_a_realtime_voice_brain/": {
-      "en": "A team hooked OpenAI's GPT Realtime 2 to a Reachy Mini robot from Hugging Face, giving it ears, eyes and a body in about an hour. The model hears through the microphone, sees through the camera, talks through the speaker, and calls 19 motion and perception tools mid conversation to wave, nod, tilt and emote in response to the user. The realtime client and tool layer are decoupled, so any provider or local realtime model can swap in. The repo is MIT licensed.",
-      "zh": "一支团队把 OpenAI 的 GPT Realtime 2 接入 Hugging Face 的 Reachy Mini 机器人，一小时就给它装上了耳眼与身体。模型通过麦克风听、摄像头看、扬声器说，并在对话中调用 19 个运动与感知工具，根据用户挥手、点头、歪头做出实时模仿动作。Realtime 客户端与工具层解耦，可一键换为其他厂商或本地实时模型。仓库以 MIT 协议开源。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u6etje/towerplus72bultrauncensoredheretic_a_model_that/": {
+      "en": "An uncensored fine-tune of Tower-Plus 72B is now available on Hugging Face in both safetensors and GGUF formats. The base model supports 22 languages and is geared toward multilingual translation workflows where refusals are unwanted. The author says the heretic tune refuses only about 5 of 100 test prompts, positioning it for translation use cases that need consistent compliance.",
+      "zh": "Tower-Plus 72B 的去审查微调版现已在 Hugging Face 提供 safetensors 与 GGUF 两种格式。基础模型支持 22 种语言，主打多语翻译类工作流，对拒答场景十分敏感。作者称该 heretic 版在 100 次测试提示中仅出现约 5 次拒答，适合需要稳定回应的翻译用途。",
+      "title_en": "Tower-Plus 72B uncensored fine-tune released for multilingual translation, supporting 22 languages with a very low refusal rate",
+      "title_zh": "Tower-Plus 72B 去审查微调版发布，支持 22 种语言，主打多语翻译且拒答率极低"
     }
   }
 }

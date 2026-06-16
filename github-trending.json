@@ -1,16 +1,27 @@
 {
-  "fetched_at": "2026-06-15T22:34:38.173Z",
+  "fetched_at": "2026-06-16T22:30:28.771Z",
   "repos": [
     {
-      "owner": "iptv-org",
-      "name": "iptv",
-      "url": "https://github.com/iptv-org/iptv",
-      "description": "Collection of publicly available IPTV channels from all over the world",
+      "owner": "freeCodeCamp",
+      "name": "freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 122790,
-      "forks": 6587,
-      "starsToday": 2650
+      "stars": 448503,
+      "forks": 45034,
+      "starsToday": 640
+    },
+    {
+      "owner": "swc-project",
+      "name": "swc",
+      "url": "https://github.com/swc-project/swc",
+      "description": "Rust-based platform for the Web",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 33956,
+      "forks": 1416,
+      "starsToday": 21
     },
     {
       "owner": "teslamate-org",
@@ -19,20 +30,31 @@
       "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer= @JakobLichterfeld ]",
       "language": "Elixir",
       "languageColor": "#6e4a7e",
-      "stars": 8215,
-      "forks": 945,
-      "starsToday": 35
+      "stars": 8392,
+      "forks": 956,
+      "starsToday": 214
     },
     {
-      "owner": "Panniantong",
-      "name": "Agent-Reach",
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 30025,
-      "forks": 2441,
-      "starsToday": 1045
+      "owner": "iptv-org",
+      "name": "iptv",
+      "url": "https://github.com/iptv-org/iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 123967,
+      "forks": 6689,
+      "starsToday": 1196
+    },
+    {
+      "owner": "puppeteer",
+      "name": "puppeteer",
+      "url": "https://github.com/puppeteer/puppeteer",
+      "description": "JavaScript API for Chrome and Firefox",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 94861,
+      "forks": 9449,
+      "starsToday": 80
     },
     {
       "owner": "meshery",
@@ -41,75 +63,20 @@
       "description": "Meshery, the cloud native manager",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 10605,
-      "forks": 3434,
-      "starsToday": 227
+      "stars": 10829,
+      "forks": 3448,
+      "starsToday": 229
     },
     {
-      "owner": "chatwoot",
-      "name": "chatwoot",
-      "url": "https://github.com/chatwoot/chatwoot",
-      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "stars": 31642,
-      "forks": 7628,
-      "starsToday": 431
-    },
-    {
-      "owner": "krahets",
-      "name": "hello-algo",
-      "url": "https://github.com/krahets/hello-algo",
-      "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 126865,
-      "forks": 15134,
-      "starsToday": 95
-    },
-    {
-      "owner": "freeCodeCamp",
-      "name": "freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "owner": "cypress-io",
+      "name": "cypress",
+      "url": "https://github.com/cypress-io/cypress",
+      "description": "Fast, easy and reliable testing for anything that runs in a browser.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 447842,
-      "forks": 44985,
-      "starsToday": 738
-    },
-    {
-      "owner": "trycua",
-      "name": "cua",
-      "url": "https://github.com/trycua/cua",
-      "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 18124,
-      "forks": 1171,
-      "starsToday": 57
-    },
-    {
-      "owner": "jwasham",
-      "name": "coding-interview-university",
-      "url": "https://github.com/jwasham/coding-interview-university",
-      "description": "A complete computer science study plan to become a software engineer.",
-      "language": "",
-      "languageColor": "",
-      "stars": 352269,
-      "forks": 83560,
-      "starsToday": 352
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 33027,
-      "forks": 5406,
-      "starsToday": 538
+      "stars": 50179,
+      "forks": 3425,
+      "starsToday": 11
     },
     {
       "owner": "music-assistant",
@@ -118,86 +85,64 @@
       "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 2375,
-      "forks": 444,
-      "starsToday": 226
+      "stars": 2546,
+      "forks": 450,
+      "starsToday": 157
     },
     {
-      "owner": "Free-TV",
-      "name": "IPTV",
-      "url": "https://github.com/Free-TV/IPTV",
-      "description": "M3U Playlist for free TV channels",
+      "owner": "Universal-Debloater-Alliance",
+      "name": "universal-android-debloater-next-generation",
+      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 7260,
+      "forks": 313,
+      "starsToday": 146
+    },
+    {
+      "owner": "OpenBMB",
+      "name": "VoxCPM",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 17253,
-      "forks": 2561,
-      "starsToday": 361
+      "stars": 30101,
+      "forks": 3404,
+      "starsToday": 413
     },
     {
-      "owner": "Introduction-to-Autonomous-Robots",
-      "name": "Introduction-to-Autonomous-Robots",
-      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "description": "Introduction to Autonomous Robots",
-      "language": "TeX",
-      "languageColor": "#3D6117",
-      "stars": 3049,
-      "forks": 654,
-      "starsToday": 488
+      "owner": "alibaba",
+      "name": "zvec",
+      "url": "https://github.com/alibaba/zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 10416,
+      "forks": 605,
+      "starsToday": 188
     },
     {
-      "owner": "Raphire",
-      "name": "Win11Debloat",
-      "url": "https://github.com/Raphire/Win11Debloat",
-      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-      "language": "PowerShell",
-      "languageColor": "#012456",
-      "stars": 47989,
-      "forks": 1936,
-      "starsToday": 114
+      "owner": "rmyndharis",
+      "name": "OpenWA",
+      "url": "https://github.com/rmyndharis/OpenWA",
+      "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 9046,
+      "forks": 1995,
+      "starsToday": 185
     },
     {
-      "owner": "mikeroyal",
-      "name": "Self-Hosting-Guide",
-      "url": "https://github.com/mikeroyal/Self-Hosting-Guide",
-      "description": "Self-Hosting Guide. Learn all about locally hosting (on premises & private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Automation, Home Assistant, and Networking.",
-      "language": "Dockerfile",
-      "languageColor": "#384d54",
-      "stars": 20958,
-      "forks": 1062,
-      "starsToday": 256
-    },
-    {
-      "owner": "itsfatduck",
-      "name": "optimizerDuck",
-      "url": "https://github.com/itsfatduck/optimizerDuck",
-      "description": "Free, open-source Windows optimization tool for performance, privacy, and simplicity.",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 3657,
-      "forks": 159,
-      "starsToday": 321
-    },
-    {
-      "owner": "NVIDIA",
-      "name": "SkillSpector",
-      "url": "https://github.com/NVIDIA/SkillSpector",
-      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6276,
-      "forks": 460,
-      "starsToday": 1079
-    },
-    {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 30247,
-      "forks": 5186,
-      "starsToday": 395
+      "owner": "n0-computer",
+      "name": "iroh",
+      "url": "https://github.com/n0-computer/iroh",
+      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 9248,
+      "forks": 433,
+      "starsToday": 326
     }
   ]
 }

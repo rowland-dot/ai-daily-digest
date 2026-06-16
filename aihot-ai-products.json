@@ -1,8 +1,92 @@
 {
-  "count": 45,
+  "count": 42,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqh78bnl01mrsle11gmghtv0",
+      "title": "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览",
+      "title_en": "Draft mode for V8.1 and new feature previews",
+      "url": "https://updates.midjourney.com/draft-mode-for-v8-1-and-new-feature-previews",
+      "source": "Midjourney：Updates（RSS）",
+      "publishedAt": "2026-06-16T22:04:29.000Z",
+      "summary": "Midjourney V8.1 的 Draft mode 草稿模式每次生成24张低分辨率低质量图片。用户可对任意图片点击 \"Vary\"，将其渲染为全质量、全分辨率版本。草稿任务消耗的快速小时数减半。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true
+    },
+    {
+      "id": "cmqguowxx00nuslpuulayglav",
+      "title": "Copilot Cowork 全球正式可用，支持多模型",
+      "title_en": "Copilot Cowork is now generally available worldwide， now with multi-model support！ Every organizati…",
+      "url": "https://x.com/satyanadella/status/2066911399494963335",
+      "source": "X：Satya Nadella (@satyanadella)",
+      "publishedAt": "2026-06-16T15:50:53.000Z",
+      "summary": "Copilot Cowork 现已全球正式可用，并支持多模型！\n每个组织都可以让长期运行的智能体处理复杂的多步骤任务，基于你组织的独特知识和专有技术。 https：//www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/？v=15",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqgqp9qb0269sliczlncs17a",
+      "title": "小米 MiMo Claw 正式版发布：旗舰模型+金山办公，全新订阅服务上线",
+      "title_en": "Xiaomi MiMo Claw 正式版|旗舰模型+金山办公，全新订阅服务上线",
+      "url": "https://mp.weixin.qq.com/s/N5ac768a8LkhEjOVpkR1dQ",
+      "source": "公众号：小米 MiMo",
+      "publishedAt": "2026-06-16T13:32:48.000Z",
+      "summary": "小米推出云端轻量化 Claw 类产品 MiMo Claw 正式版，搭载与 OpenClaw 框架深度适配的 MiMo-V2.5-Pro 旗舰模型。该模型原生兼容 MCP 工具调用协议，内置百万级超长上下文，支持单会话千次以上连续工具调用；依托 MTP 三层解码架构，在 OpenClaw 标准 Agent 工作流中吞吐效率提升约 3 倍。ClawEval 测试中任务达标率（Pass3）达 63.8%，Token 消耗较同类产品降低 40%-60%。联动金山办公生态，提供 Word、Excel、PPT、PDF 等格式的 AI 生成、预览与在线编辑一站式服务。免费用户每日单次体验时长从1小时升级至4小时，面向高频用户推出 TokenPlan 分层订阅（Lite/Standard/Pro/Max），支持灵活叠加，限时定价14.9元/月、19.9元/月、233.8元/年。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqge6m08007fslmsro38gcnl",
+      "title": "Google Cloud 推出 OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
+      "title_en": "Google Cloud Introduces Open Knowledge Format （OKF）： A Vendor-Neutral Markdown Spec for Giving AI Agents Curated Context",
+      "url": "https://www.marktechpost.com/2026/06/16/google-cloud-introduces-open-knowledge-format-okf-a-vendor-neutral-markdown-spec-for-giving-ai-agents-curated-context",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-06-16T08:18:58.000Z",
+      "summary": "Google Cloud 发布 Open Knowledge Format （OKF） v0.1，一种供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文知识。OKF 将知识表示为带 YAML 前置元数据的 markdown 文件目录，每个概念对应一个文件，通过 `type`、`title`、`description` 等少量保留字段实现互操作。无需专有服务、SDK 或运行时，目录可托管在 GitHub、以 tarball 传输或挂载到任意文件系统。OKF 旨在解决组织内部知识碎片化问题--表结构、指标定义、runbook 等散落在不同 catalog 和 wiki 中，各厂商方案互不兼容。遵循最少意见原则，只强制 `type` 字段，生产者和消费者可独立实现。使用场景包括数据团队将 BigQuery 表定义导出为代码、为智能体存储 incident runbook、跨组织知识交换等。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmqg20v1a02rtslspl2co5zge",
+      "title": "AI 版支付宝官宣开启邀测：右滑打开\"阿宝\"，官方放出 100 个邀请码",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/964/691.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-16T02:39:06.000Z",
+      "summary": "支付宝今日开启 AI 版邀测，用户可右滑进入新版界面，在对话框或语音中输入指令，由\"阿宝\"助手代办事项。以查询公积金为例，阿宝自动匹配对应小程序和服务入口，用户点击确认即可完成，将多步跳转折叠为一句指令。所有涉及资金变动和支付的环节均需用户本人确认。首批放出 100 个邀请码。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqfzvk1h026rslspuhwh30px",
+      "title": "教育部\"阳光志愿\"信息服务系统全新升级上线：智能筛选志愿，数据权威可信",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/964/675.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-16T01:56:49.000Z",
+      "summary": "教育部\"阳光志愿\"信息服务系统今日全新升级上线，依托招生、学籍、就业等海量官方数据，免费为考生和家长提供志愿填报服务。系统支持31个省区市本专科普通批次志愿筛选，输入高考成绩、位次及个性化条件即可快速生成合理参考方案。AI助手\"智慧小招\"24小时在线解答政策规则。平台数据由高校直接报送、官方核验，真实可靠。同时推出专业倾向测评和21项生涯测评工具，帮助学生认清特长、规划未来。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmqguqu9r00rqslpuu5cpfao3",
+      "title": "Grok for PowerPoint 发布：在 Microsoft PowerPoint 内直接生成和编辑幻灯片",
+      "title_en": "Grok for PowerPoint Jun 16， 2026 # Grok for PowerPoint Grok now works inside Microsoft PowerPoint - turn outlines into slides， expand the deck， and tighten the narrative without leaving the app. Read More",
+      "url": "https://x.ai/news/introducing-powerpoint-addin",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "summary": "xAI 于 6 月 16 日发布 Grok for PowerPoint，作为免费 Microsoft 365 插件上线。用户无需离开应用即可利用 Grok 将大纲转为完整幻灯片，进行内容研究、撰写、排版，并支持添加单张幻灯片、调整样式主题、重构章节。插件还能调用 Grok 连接器，从邮件或 SharePoint 中获取信息。该插件同样适用于 Word 和 Excel。",
+      "category": "ai-products",
+      "score": 64,
+      "selected": true
+    },
     {
       "id": "cmqfjwpb500o2slq8vbryuxyg",
       "title": "Meta 在 Facebook 上线\"AI Mode\"，基于平台公开信息合成答案",
@@ -85,6 +169,18 @@
       "summary": "推出Fusion API，市场上最智能的复合模型。\n\nFusion以一半的价格实现Fable级别的智能。\n\n工作原理如下👇",
       "category": "ai-products",
       "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqcoq94v00fxsltty2h9ohuh",
+      "title": "Paca：一款适用于人机协作的轻量级 Jira 替代方案",
+      "title_en": "Show HN： Paca--一款适用于人机协作的轻量级 Jira 替代方案",
+      "url": "https://github.com/Paca-AI/paca",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-13T17:50:09.601Z",
+      "summary": "Paca 是一款面向人类与 AI 智能体协作场景的轻量级项目管理工具，旨在替代 Jira。项目已开源并托管于 GitHub，支持团队通过直观界面协同管理任务，特别针对 AI 参与工作流进行了优化。",
+      "category": "ai-products",
+      "score": 74,
       "selected": true
     },
     {
@@ -193,18 +289,6 @@
       "summary": "我们正在将 Deep Research 作为原生技能集成到 Computer 中。\n\n它现在连接到驱动 Computer 的智能体框架，可访问搜索即代码生成、长运行沙箱、连接器、工具和授权数据。\n\nPro 和 Max 订阅者现已可用。",
       "category": "ai-products",
       "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmq9rg6q70ekjslldnvejg7m9",
-      "title": "DeepSeek-R1 的开源实现",
-      "title_en": null,
-      "url": "https://github.com/huggingface/open-r1",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-11T17:07:18.181Z",
-      "summary": "DeepSeek-R1 的开源复现项目已在 GitHub 发布，在 Hacker News 上获得 101 个积分。该项目旨在以开源方式复现 DeepSeek-R1 模型。",
-      "category": "ai-products",
-      "score": 71,
       "selected": true
     },
     {
@@ -328,18 +412,6 @@
       "selected": true
     },
     {
-      "id": "cmq8f7imu01wnslld8czaif69",
-      "title": "Apache Burr：构建可靠的人工智能代理和应用程序",
-      "title_en": null,
-      "url": "https://burr.apache.org/",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-10T18:33:56.920Z",
-      "summary": "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true
-    },
-    {
       "id": "cmq8whf5x06f2slld2conqwg5",
       "title": "小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议",
       "title_en": "MiMo Code 发布并开源|模型 Agent 协同优化，迈向自进化时代",
@@ -433,114 +505,6 @@
       "summary": "火山引擎今日上线火山方舟版权商业化平台，推出行业首个覆盖\"授权-保护-审核-分发-变现\"全链路的版权合作机制。平台搭载视频生成模型Seedance 2.0及版权治理体系，已获周星驰旗下比高集团《喜剧之王》《食神》《长江七号》三部影片在AI视频创作场景下的版权使用权，并基于Seedance 2.0打造经典桥段AI创作模板。模板已在火山方舟体验中心、火山引擎Kickart上线，同步开放给LibTV、筷子科技丽帧引擎等工具合作伙伴。平台面向UGC和商业广告场景提供分润制、项目制等变现路径，未来还将提供版权管理后台，实现授权可见、使用可查、收入透明。",
       "category": "ai-products",
       "score": 68,
-      "selected": true
-    },
-    {
-      "id": "cmq6zc2gi00zlslbhqf3iwgv1",
-      "title": "NotebookLM 笔记本功能在 Gemini App 欧洲全面上线",
-      "title_en": "Notebooks in @GeminiApp are now 100% rolled out in Europe！ We're so excited to hear what you think！…",
-      "url": "https://x.com/NotebookLM/status/2064410506287538387",
-      "source": "X：NotebookLM (@NotebookLM)",
-      "publishedAt": "2026-06-09T18:13:14.000Z",
-      "summary": "NotbookLM 宣布其笔记本功能已在欧洲的 Gemini App 中 100% 上线。此前用户只能上传笔记本作为 Gemini 的来源，现在可直接在 Gemini App 内访问所有个人未共享的笔记本，并将与 Gemini 的对话作为新笔记本或已有笔记本的来源。该功能先面向 Google AI Ultra、Pro 和 Plus 订阅者的网页端，未来几周将扩展到移动端、更多欧洲国家及免费用户。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmq737old00b0sle3025e4b4c",
-      "title": "OpenRouter 推出 Advisor 工具：让低成本模型可随时调用强模型增强生成",
-      "title_en": "Advisor： Give Any Model a Lifeline to a Smarter One",
-      "url": "https://openrouter.ai/blog/advisor-server-tool",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-06-09T18:00:00.000Z",
-      "summary": "OpenRouter 发布 advisor 服务器工具，允许一个快速、便宜的模型在生成过程中咨询一个更强大的模型。具体而言，可用 GPT-4o Mini 处理日常例行工作，在关键时刻调用 Claude Fable 解决真正重要的问题，从而实现成本和质量的动态平衡。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq6yahue00p0slbh0r0bgk9q",
-      "title": "Cursor Evals 新增成本与输出 Token 图表",
-      "title_en": "we just shipped some improvements to http：//cursor.com/evals！ you can now see cost， output tokens a…",
-      "url": "https://x.com/ericzakariasson/status/2064404502053294565",
-      "source": "X：Eric Zakariasson (@ericzakariasson)",
-      "publishedAt": "2026-06-09T17:49:22.000Z",
-      "summary": "我们刚刚向 http：//cursor.com/evals 推送了一些改进！\n\n你现在可以看到每个模型的成本、输出 token 和步骤绘制在图表中",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq6x171500clslbherqa4dhg",
-      "title": "Responses API 网页搜索新增图片结果",
-      "title_en": "Your app can now search the web for images. Web search in the Responses API now supports image resu…",
-      "url": "https://x.com/OpenAIDevs/status/2064395155688616153",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-06-09T17:12:14.000Z",
-      "summary": "你的应用现在可以搜索网页上的图片。\n\nResponses API 中的网页搜索现在除了文本结果外，还支持图片结果，因此你可以构建能展示商品、地点、视觉参考和来源链接以激发灵感的应用。",
-      "category": "ai-products",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq6vx8zl000uslbhiiucbbxy",
-      "title": "Luma AI Ray3.2 API：电影级渲染可集成",
-      "title_en": "The Ray3.2 API runs cinematic-grade at scale and integrates into the products you already build. Mad…",
-      "url": "https://x.com/LumaLabsAI/status/2064389582997897216",
-      "source": "X：Luma AI (@LumaLabsAI)",
-      "publishedAt": "2026-06-09T16:50:05.000Z",
-      "summary": "Ray3.2 API 可大规模运行电影级渲染，并集成到您正在构建的产品中。专为在交付的产品中打造电影感的开发者、代理机构和企业而设计。\n\n开始构建 → http：//lumalabs.ai/api",
-      "category": "ai-products",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmq6w8kfq0054slbhl8fai2wp",
-      "title": "World Labs与Lore合作打造互动体验",
-      "title_en": "The creativity and imagination is out of the world！ So grateful that @theworldlabs got to partner wi…",
-      "url": "https://x.com/drfeifei/status/2064387365930676695",
-      "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
-      "publishedAt": "2026-06-09T16:41:17.000Z",
-      "summary": "创意和想象力无与伦比！非常感谢@theworldlabs能与@withloreco的优秀人才合作，将他们不可思议的想法转化为用户可以享受的互动体验！🤩",
-      "category": "ai-products",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmq6l8zwy09g0sl5ioa7ahxqv",
-      "title": "火山引擎TRAE Work企业版正式上线，面向全员提供AI办公平台",
-      "title_en": "TRAE Work企业版正式上线：每个岗位都有AI搭档",
-      "url": "https://mp.weixin.qq.com/s/f7QzLzwHPHHv3tWT1Wrnkw",
-      "source": "公众号：火山引擎",
-      "publishedAt": "2026-06-09T11:45:02.000Z",
-      "summary": "火山引擎将TRAE Solo品牌升级为TRAE Work企业版，发布面向企业的AI办公平台。平台提供Work和Code两种模式：Work模式面向产品、运营、市场等非技术岗位，支持上传.pptx、.xlsx、图片等多种格式混合输入直接输出PPT或文档，支持语音讨论自动整理结构化纪要，支持按天或按周自动运行的数据整理和报告生成；Code模式面向开发者和业务同学，可用自然语言描述需求直接生成页面或小应用。桌面端、网页端和移动端多端同步。企业后台可统一配置模型、用量限额、上传内部文档，沙箱机制隔离执行，支持命令黑名单、MCP白名单、内容安全策略，关键操作可审计。同时发起TRAE Enterprise Fellow招募计划。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq6w49b2002qslbh4c4bh43i",
-      "title": "Gopuff与SpaceXAI推出Go AI购物助手",
-      "title_en": "Powering Gopuff's Go agent Jun 9， 2026 # Powering Gopuff's Go agent Gopuff and SpaceXAI launched Go， an AI-powered shopping assistant built into the Gopuff app and powered by Grok text， audio， and image models. Read More",
-      "url": "https://x.ai/news/grok-gopuff",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "summary": "Gopuff与SpaceXAI合作推出Go智能购物助手，内置于Gopuff应用，由Grok文本、音频和图像模型驱动。Go结合Grok的推理、语音和图像生成能力与Gopuff的13年需求智能，利用X和网络实时信号。它可在用户打开应用前根据历史偏好和天气等信号构建个性化购物车，并包含基于Grok Imagine的超逼真视觉购物信息流。Go目前在美国iOS和Android端可用，随后在英国推出。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmq5ujnt202iesl5ig6vg5i3r",
-      "title": "Apple Core AI 框架",
-      "title_en": null,
-      "url": "https://developer.apple.com/documentation/coreai",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-08T23:05:07.159Z",
-      "summary": "一篇关于 Apple Core AI 框架的 Hacker News 帖子获得 109 个点赞。帖子内容包含一张苹果开发者 OG 图片和一个指向 Apple Core AI Framework 官方文档的链接（developer.apple.com）。该帖子由 buzzing.cc 中文翻译，发布于 2026 年 6 月 8 日 02：47（UTC）。",
-      "category": "ai-products",
-      "score": 77,
       "selected": true
     }
   ]

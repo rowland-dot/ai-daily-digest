@@ -1,18 +1,78 @@
 {
-  "count": 15,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqfhhoq001hksl2aw53w2wz8",
-      "title": "下一代投机解码：DFlash 与 Spec V2",
-      "title_en": "Blog The next generation of speculative decoding： DFlash and Spec V2 Using Modal and Z Lab's DFlash speculative decoding models with SGLang's newly default Spec V2 engine， you can achieve state-of-the-art latencies for LLM inference serving. Our new， jointly-released D… Z Lab， Modal， and SGLang Teams",
-      "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-06-15T17:25:17.048Z",
-      "summary": "Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上、并发 1 时吞吐量达到基线的 4.3",
+      "id": "cmqh7o7tf01qbsle1hr7ppmfa",
+      "title": "Qwen-Robot Suite：一套面向物理世界智能的基础模型套件",
+      "title_en": null,
+      "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-16T22:21:10.001Z",
+      "summary": "Qwen-Robot Suite 包含三个基础模型：Qwen-RobotNav 通过可控观察编码统一指令跟随、点/物体目标导航、目标跟踪和自动驾驶五个导航域；Qwen-RobotManip 利用规范状态-动作空间和相机帧增量位姿，在超3.81万小时开源语料上实现跨具身操作对齐；Qwen-RobotWorld 以自然语言为动作接口，联合训练20余种具身，预测物理世界动态。三者可组合成通用智能体系统。",
       "category": "ai-models",
-      "score": 67,
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmqgas9pf00yjsl9spz4fexrr",
+      "title": "Cartesia 发布 Sonic 3.5 与 Ink 2 实时语音模型",
+      "title_en": "Cartesia shipped Sonic 3.5 and Ink 2， two models built to run as a single real-time voice stack， wit…",
+      "url": "https://x.com/testingcatalog/status/2066773392527655252",
+      "source": "X：Testing Catalog (@testingcatalog)",
+      "publishedAt": "2026-06-16T06:42:30.000Z",
+      "summary": "Cartesia 推出 Sonic 3.5 和 Ink 2 两个模型，作为单一实时语音栈，分别负责文本转语音和语音转文本。Ink 2 在 Artificial Analysis 的流式语音转文字排行榜上排名第一。Sonic 3.5 在实时文本转语音中位列榜首，首音频延迟约 82ms。Cartesia 成为目前唯一同时拥有 #1 听与说模型的提供商。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqfzvk1h026sslspt58nzmdd",
+      "title": "成本砍半，字节跳动推出 Seedance 2.0 Mini 视频生成模型",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/964/672.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-16T01:49:40.000Z",
+      "summary": "字节跳动火山引擎旗下火山方舟体验中心于 6 月 15 日上线 Seedance 2.0 Mini 视频生成模型，计划近期开放 API。该模型比 Seedance 2.0 Fast 快 2 倍，输出质量相当。图生视频定价 0.023 元/千 tokens，视频生视频 0.014 元/千 tokens，720P 规格下单秒生成成本约 0.5 元，较 Seedance 2.0 标准版降低约一半。模型面向电商内容生产、营销素材批量生成、UGC 创作及特效玩法等高频率、大规模视频生成场景。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqg5kvq2006hslncx7x7o1r2",
+      "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
+      "title_en": "Qwen-RobotManip： Alignment Unlocks Scale for Robotic Manipulation Foundation Models",
+      "url": "https://qwen.ai/blog?id=qwen-robotmanip",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "summary": "Qwen-RobotManip 是Qwen基于 Qwen-VL 的视觉-语言-动作（VLA）基础模型，引入覆盖表示、运动和行为三维度的统一对齐框架。仅使用开源机器人数据集和人演示视频，构建约 38，100 小时预训练语料，涵盖 15 种机器人形态。在 LIBERO-Plus 达 91.4%，RoboTwin-C2R Hard 达 69.4%，RoboCasa365 Composite-Unseen 达 14.9%，EBench 达 45.6%，RoboTwin-IF 达 72.0%，并在 RoboChallenge Table30 v1 generalist track 夺冠。模型采用 80 维状态-动作表示、人-机器人数据合成管道（1，933 小时第一人称视频转 24，808 小时数据）及上下文策略适配。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqg5kvq2006gslnchk1ngslk",
+      "title": "Qwen-RobotWorld：具身智能体的无界世界",
+      "title_en": "Qwen-RobotWorld： Boundless Worlds for Embodied Agents",
+      "url": "https://qwen.ai/blog?id=qwen-robotworld",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "summary": "Qwen-RobotWorld以语言为统一动作接口，采用双流Multimodal Diffusion Transformer（MMDiT）架构，将Qwen2.5-VL作为动作编码器。在4个基准测试中取得顶尖成绩，统一20余种机器人形态，基于860万跨场景训练对和1300多项操作技能。语言接口标准化500多种动作类别，支持操作、自动驾驶、室内导航的联合训练。还支持Scene2Robot人类到机器人转移及2-4路多视角几何一致视频生成。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqg5kvq2006eslnc27k3juhc",
+      "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
+      "title_en": "Qwen-RobotNav： A Scalable Navigation Model Designed for an Agentic Navigation System",
+      "url": "https://qwen.ai/blog?id=qwen-robotnav",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 77%。模型已零样本部署在 Unitree Go2 四足机器人上，无需环境微调。",
+      "category": "ai-models",
+      "score": 70,
       "selected": true
     },
     {
@@ -25,6 +85,42 @@
       "summary": "MiniMax 上周五开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）技术论文，该架构显著降低长上下文计算成本。M3 是首个从预训练阶段就进行文本、图像等多模态交错混合训练的开源模型。发布两周后，M3 在 Artificial Analysis 综合智能指数、GDPval-AA 排行榜均获开源模型第一，Code Arena WebDev 跻身帕累托最优序列，Vals.AI 榜单居国产模型首位。输出速度已从约 30 TPS 提升至约 80 TPS，计划再提速 30-40%；Token Plan 后台新增调用量看板。",
       "category": "ai-models",
       "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqe399mn0003sl618w3y9fnh",
+      "title": "里约热内卢市政府 AI 模型 Rio3.5 在基准测试中击败 Qwen3.7",
+      "title_en": "里约热内卢市政府的模型Rio3.5在最近的基准测试中击败了Qwen3.7",
+      "url": "https://twitter.com/zenmagnets/status/2065796012820848699",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-14T17:34:09.183Z",
+      "summary": "里约热内卢市政府开发的 AI 模型 Rio3.5，在近期基准测试中超越了 Qwen3.7。该消息源自 Hacker News 上的一篇帖子，指出 Rio3.5 在多项评测中表现优于 Qwen3.7。目前尚未公开具体的测试细节或基准名称。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqfhhoq001hksl2aw53w2wz8",
+      "title": "下一代投机解码：DFlash 与 Spec V2",
+      "title_en": "Blog The next generation of speculative decoding： DFlash and Spec V2 Using Modal and Z Lab's DFlash speculative decoding models with SGLang's newly default Spec V2 engine， you can achieve state-of-the-art latencies for LLM inference serving. Our new， jointly-released D… Z Lab， Modal， and SGLang Teams",
+      "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-06-14T16:00:00.000Z",
+      "summary": "Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上、并发 1 时吞吐量达到基线的 4.3",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmqcqvtnc010psltt2q0d17fc",
+      "title": "GLM 5.2 发布",
+      "title_en": "GLM 5.2 已发布",
+      "url": "https://digg.com/tech/ii9xibgn",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-13T18:54:17.932Z",
+      "summary": "GLM 5.2 版本已正式发布。该消息来自 Hacker News 的一则热门讨论，帖子获得 111 个 HN 积分。页面包含一张发布图片，但未提供具体功能或更新内容。",
+      "category": "ai-models",
+      "score": 72,
       "selected": true
     },
     {
@@ -61,6 +157,18 @@
       "summary": "VISTA-4B 是基于 Qwen3.5-4B 骨干的 GUI 定位模型，输入截图与自然语言指令，输出归一化 0-1000 坐标。训练采用视图一致 GRPO 和自验证交叉视图锚定。在 GUI 定位基准上，SSPro 得分 64.2（相比 GRPO-4B 提升 2.0），SSV2 得分 93.8（下降 0.4），OSWorld-G 得分 61.2（提升 1.3），OSWorld-G-R 得分 69.7（提升 0.5）。模型已开源在 HuggingFace，推荐使用提示词并返回 【x，y】 格式坐标。",
       "category": "ai-models",
       "score": 62,
+      "selected": true
+    },
+    {
+      "id": "cmq9rg6q70ekjslldnvejg7m9",
+      "title": "DeepSeek-R1 的开源实现",
+      "title_en": null,
+      "url": "https://github.com/huggingface/open-r1",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-11T17:07:18.181Z",
+      "summary": "DeepSeek-R1 的开源复现项目已在 GitHub 发布，在 Hacker News 上获得 101 个积分。该项目旨在以开源方式复现 DeepSeek-R1 模型。",
+      "category": "ai-models",
+      "score": 72,
       "selected": true
     },
     {
@@ -124,63 +232,15 @@
       "selected": true
     },
     {
-      "id": "cmq74dg8m006psloprllkcbmm",
-      "title": "Cohere发布North Mini Code：面向开发者的开源编码模型",
-      "title_en": "Introducing North Mini Code： Cohere's First Model For Developers",
-      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-09T15:56:23.000Z",
-      "summary": "Cohere发布North Mini Code，一款30B参数MoE模型（3B活跃参数），Apache 2.0开源。在Artificial Analysis Coding Index上得分33.4，超越Qwen3.5、Gemma 4等同类模型。后训练采用两阶段SFT和RLVR，在SWE-Bench Verified上pass@10达80.2%，Terminal-Bench v2上达55.1%。支持64K/128K上下文长度，专为智能体编码任务优化。",
+      "id": "cmqg55i9m0004sl45hjfi5669",
+      "title": "JoyAI-VL-Interaction：实时视觉-语言交互智能",
+      "title_en": "JoyAI-VL-Interaction： Real-Time Vision-Language Interaction Intelligence",
+      "url": "https://arxiv.org/abs/2606.14777",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "JoyAI-VL-Interaction是一个8B参数的视觉优先交互模型，能像人一样持续观察实时画面，自主决定每秒钟保持沉默、回应或将复杂问题委托给后台模型。模型擅长视觉触发响应和时间感知，并涌现出引导用户切换屏幕、根据幻灯片即兴讲解等未专门训练的能力。配合完整可部署系统，支持实时视频流输入、可插拔ASR/TTS模块、记忆、可视化UI及可连接任意API或智能体的后台大脑。在六个真实场景中，人类评估者更偏好该模型而非豆包和Gemini的应用内视频通话助手。这是首个开源且附带训练配方、数据和完整部署系统的视觉驱动交互模型。",
       "category": "ai-models",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmq6sxx1u0bizsl5ib9ja78pe",
-      "title": "Gemini 3.5 Live Translate 发布",
-      "title_en": "Say hello， hola， 你好 to Gemini 3.5 Live Translate： our latest audio model built for fast， cross-langu…",
-      "url": "https://x.com/GoogleDeepMind/status/2064366504745828689",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-06-09T15:18:23.000Z",
-      "summary": "说 hello， hola， 你好--欢迎 Gemini 3.5 Live Translate：我们最新的音频模型，专为快速跨语言交流而构建。🌐",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmq6rv40r0b8isl5iwmqtrlxl",
-      "title": "Claude Mythos 即将发布，Fable 精简版同日登场",
-      "title_en": "Confirmed， Claude Mythos will be unveiled in the next few hours",
-      "url": "https://x.com/kimmonismus/status/2064362469632405807",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-06-09T15:02:21.000Z",
-      "summary": "确认，Claude Mythos 将在接下来几小时内揭晓。\n\n【引用 @steph_palazzolo】：\n独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。\n\n更多内容及 Apple WWDC 见 AI Agenda：\n\nhttps：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp",
-      "category": "ai-models",
-      "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmq6qqqbp0axhsl5i2ow5j5co",
-      "title": "Google DeepMind 发布 Gemma 4 12B：统一的无编码器多模态模型",
-      "title_en": "Introducing Gemma 4 12B： a unified， encoder-free multimodal model",
-      "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-06-09T14:10:19.000Z",
-      "summary": "Gemma 4 12B 是 Google DeepMind 最新推出的中等规模多模态模型，采用无编码器统一架构，原生支持音频输入。其基准测试性能接近 26B MoE 模型，但内存占用不到一半，仅需 16GB 显存或统一内存即可在消费级笔记本上本地运行。模型内置多 token 预测（MTP）drafter 以降低延迟，基于 Apache 2.0 开源许可发布，已累计超过 1.5 亿次下载。",
-      "category": "ai-models",
-      "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmq63dzew04srsl5ix1r8n4ne",
-      "title": "小米 MiMo 与 TileRT 联合发布 UltraSpeed 模式，1T 模型输出突破 1000 tokens/s",
-      "title_en": "Xiaomi MiMo 携手 TileRT|1T 模型首次突破 1000 tokens/s 输出速度",
-      "url": "https://mp.weixin.qq.com/s/EZvmrx8xfM9MZNCMDwImFQ",
-      "source": "公众号：小米 MiMo",
-      "publishedAt": "2026-06-09T03:31:32.000Z",
-      "summary": "小米 MiMo 与 TileRT 联合发布 MiMo-V2.5-Pro-UltraSpeed 模式，使 1T 参数旗舰模型输出速度首次突破 1000 tokens/s。模型侧采用 FP4 混合量化（仅量化 MoE Expert）与 DFlash 块级 masked 并行推测解码（coding 场景平均接受长度 6.30 tokens）；系统侧 TileRT 引入常驻内核引擎与异构流水线协作。API 限时开放（2026 年 6 月 9 日至 23 日），定价为 MiMo-V2.5-Pro 的 3 倍，速度提升约 10 倍。FP4 权重与 DFlash 模型 checkpoint 已开源至 HuggingFace。",
-      "category": "ai-models",
-      "score": 80,
+      "score": 78,
       "selected": true
     }
   ]

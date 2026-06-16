@@ -1,8 +1,104 @@
 {
-  "count": 42,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqgz178201wfslpu25xb10dm",
+      "title": "微软考虑为 Copilot Cowork 集成 DeepSeek V4",
+      "title_en": "Axios reports that Microsoft is considering a Microsoft-hosted version of DeepSeek V4 as a cheaper m…",
+      "url": "https://x.com/kimmonismus/status/2066946013026263110",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-06-16T18:08:26.000Z",
+      "summary": "微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。",
+      "category": "industry",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqgvsb7s00z8slpu7p31yn17",
+      "title": "Fable 遭美国政府封禁，TechCrunch 质疑真正原因并非模型越狱",
+      "title_en": "《Fable》的封禁从来就不是因为越狱吗？",
+      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-16T16:45:18.627Z",
+      "summary": "美国政府对 Anthropic 的模型 Fable 实施封禁，但 TechCrunch 发文质疑，实际原因可能并非此前认为的\"模型越狱\"问题。该文章在 Hacker News 引发讨论，获得 103 个点赞。",
+      "category": "industry",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqgq6dmf01zlslic1ulg3iq5",
+      "title": "Musk：AI将达Stockfish级编码",
+      "title_en": "AI will achieve Stockfish-level coding and generalized computer use",
+      "url": "https://x.com/elonmusk/status/2066880262668247091",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-06-16T13:47:10.000Z",
+      "summary": "AI 将实现 Stockfish 级别的编码和通用计算机使用",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqgoj9yu01lfslicukhmblfb",
+      "title": "美国司法部援引国家安全为xAI未经许可的燃气轮机辩护",
+      "title_en": "DOJ invokes national security to defend xAI's unpermitted gas turbines in NAACP lawsuit",
+      "url": "https://the-decoder.com/doj-invokes-national-security-to-defend-xais-unpermitted-gas-turbines-in-naacp-lawsuit",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-16T13:23:33.000Z",
+      "summary": "美国司法部在一份驳回诉讼的动议中称，xAI的聊天机器人Grok对军事行动至关重要，以此为其在密西西比州Southaven的Colossus 2设施运行未经许可的燃气轮机辩护。NAACP已提起诉讼，指控xAI的燃气轮机数量从4月的27台增至57台，导致氮氧化物排放飙升111%。国防部首席数字与人工智能官Cameron Stanley表示，Grok是支持机密和绝密网络军事任务的四款AI模型之一，包括近期针对伊朗的打击。",
+      "category": "industry",
+      "score": 80,
+      "selected": true
+    },
+    {
+      "id": "cmqgkvm4200l7slicgdylqprd",
+      "title": "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor",
+      "title_en": "SpaceX to acquire Cursor for $60B in stock， days after blockbuster IPO",
+      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-16T11:21:41.000Z",
+      "summary": "SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 实验室。此前 Cursor 正接近完成一轮 20 亿美元融资，估值 500 亿美元，投资方包括 Andreessen Horowitz、Thrive 和 Nvidia。SpaceX 在 IPO 期间向投资者表示，其 AI 产品可寻址市场达 26 万亿美元。交易预计于今年第三季度完成。",
+      "category": "industry",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqggy29t00gaslevgnwfv3sl",
+      "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+      "title_en": "DeepSeek takes outside money for the first time at a $50 billion valuation",
+      "url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-16T09:40:48.000Z",
+      "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqg5imdd003gslnc6gteye02",
+      "title": "微软旗下GitHub遭遇AI算力短缺，转而向AWS寻求支持",
+      "title_en": "随着GitHub面临AI算力短缺，微软转而寻求AWS的支持",
+      "url": "https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-16T04:29:10.241Z",
+      "summary": "微软旗下GitHub面临AI算力短缺，微软因此转向亚马逊AWS寻求计算资源支持。原文来自Hacker News热门讨论，标题为\"Microsoft turns to AWS as GitHub faces AI capacity crunch\"。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqfxtzua01mkslsp8ne75foj",
+      "title": "五角大楼将大部分日常AI工作流从Anthropic转移，目标9月前完全切断",
+      "title_en": "五角大楼今天宣布，已经把日常AI工作流的2/3以上从Anthropic切走了，目标9月前清零。 这事得从年初说起，2-3月的时候，五角大楼想让Anthropic签个协议，允许Claude用在\"所有合…",
+      "url": "https://x.com/AYi_AInotes/status/2066679835607412846",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-06-16T00:30:44.000Z",
+      "summary": "五角大楼宣布已将超2/3日常AI工作流从Anthropic转移，目标9月前清零。起因是年初五角大楼要求Anthropic签署协议允许Claude用于大规模监控和全自动武器，CEO Dario Amodei以模型不可靠为由拒绝。五角大楼将其列为\"供应链风险\"，起诉未果。OpenAI调整立场获得订单。Polymarket预测6月底前和解概率仅9%。此事件凸显AI公司需在原则与政府合作间抉择。",
+      "category": "industry",
+      "score": 78,
+      "selected": true
+    },
     {
       "id": "cmqfewpje00u4sl2awgrmj4ke",
       "title": "Nvidia 加入 AI 债务热潮，发行 200 亿美元债券",
@@ -64,18 +160,6 @@
       "selected": true
     },
     {
-      "id": "cmqca4a1900uxsl9izm7hb426",
-      "title": "Anthropic 秘密申请上市，估值 9650 亿美元",
-      "title_en": "Global Capitalism Bets It All on AI Future That Alarms Voters",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-13/global-capitalism-bets-it-all-on-ai-future-that-alarms-voters",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-13T11:00:00.000Z",
-      "summary": "Anthropic，这家估值达 9650 亿美元的 AI 巨头、史上增长最快的初创公司之一，在秘密提交 IPO 申请后，再次投下重磅炸弹。",
-      "category": "industry",
-      "score": 77,
-      "selected": true
-    },
-    {
       "id": "cmqc5usi000cbslt49vfrpgge",
       "title": "谷歌Android安全负责人因反对军事AI合作辞职",
       "title_en": "谷歌抛弃\"不作恶\"承诺：Android 安全主管因军事 AI 合作愤而辞职，控诉公司丧失道德底线",
@@ -100,15 +184,15 @@
       "selected": true
     },
     {
-      "id": "cmqbnjbai034islame1d5jkaf",
-      "title": "OpenAI 遭多州总检察长联合调查",
-      "title_en": "OpenAI Probed by Coalition of State Attorneys General",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-13T00:27:02.000Z",
-      "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
+      "id": "cmqb8kxwd00jqslru2t0t7knf",
+      "title": "乌克兰测试用完全自主无人机击杀俄军士兵",
+      "title_en": "Ukraine's one-time test used fully autonomous drones to kill Russian soldiers",
+      "url": "https://arstechnica.com/ai/2026/06/ukraines-one-time-test-used-fully-autonomous-drones-to-kill-russian-soldiers",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-12T18:03:29.000Z",
+      "summary": "完全自主的无人机仍属罕见，但乌克兰正为无人机和机器人加装AI模块，提升自主作战能力。此前一次测试中，乌军首次使用完全自主无人机击杀俄军士兵。",
       "category": "industry",
-      "score": 72,
+      "score": 80,
       "selected": true
     },
     {
@@ -160,18 +244,6 @@
       "selected": true
     },
     {
-      "id": "cmq9wt5fl0g09slldyw8h9u7p",
-      "title": "全自主无人机首次击毙了人类士兵",
-      "title_en": null,
-      "url": "https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-11T19:29:06.279Z",
-      "summary": "据《新科学家》6月10日报道，全自主无人机首次击毙了人类士兵。这是有记录以来第一次由完全自主运行的无人机执行致命攻击，标志着自主武器系统在实战中的新进展。该报道来自《新科学家》网站，目前尚无更多细节公布。",
-      "category": "industry",
-      "score": 88,
-      "selected": true
-    },
-    {
       "id": "cmq9w5ykx0ftoslldqwmy3asu",
       "title": "WSJ：OpenAI 考虑大幅降价，同准备 ChatGPT 史上最大改版备战 IPO",
       "title_en": "WSJ： OpenAI is considering deep price reductions as competition with Anthropic intensifies. Anthro…",
@@ -205,18 +277,6 @@
       "summary": "Anthropic 推出 Claude Corps 奖学金项目，面向早期职业生涯的年轻人，培训 1，000 名研究员使用 Claude，并匹配给美国非营利组织全职工作一年。研究员年薪 85，000 美元及福利，每周接受 5 小时持续培训。Anthropic 初始投入 1.5 亿美元，合作方为 CodePath 和 Social Finance。至少 400 家非营利组织将参与接待，包括 Braven、Code the Dream、Heartland Forward 等。",
       "category": "industry",
       "score": 61,
-      "selected": true
-    },
-    {
-      "id": "cmq958epc08qasllddc5u86n8",
-      "title": "AI浪潮引发中国担忧：官媒呼吁保护劳动者权益",
-      "title_en": "AI Wave Sparks Alarm in China With Call to Protect Worker Rights",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-11/ai-wave-sparks-alarm-in-china-with-call-to-protect-worker-rights",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-11T06:19:13.000Z",
-      "summary": "中国工作场所快速采用人工智能，引发官媒异常直白地呼吁保护劳工权利。北京正在考虑如何控制这项新技术带来的风险。",
-      "category": "industry",
-      "score": 71,
       "selected": true
     },
     {
@@ -292,18 +352,6 @@
       "selected": true
     },
     {
-      "id": "cmq7ohijv007dslepdtmuxma3",
-      "title": "谷歌财务担保支撑 Anthropic 350 亿美元芯片租赁交易",
-      "title_en": "Google's Backstops Underpin $35 Billion Anthropic Chip Deal",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-10/google-s-backstops-underpin-35-bln-anthropic-chip-deal-video",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-10T05:57:28.000Z",
-      "summary": "Anthropic 在谷歌（其早期投资者之一）的帮助下，正在五个数据中心租赁高性能计算机芯片。谷歌同意为每个地点的租赁付款提供兜底担保，从而帮助 Anthropic 获得相当于 350 亿美元的融资。",
-      "category": "industry",
-      "score": 73,
-      "selected": true
-    },
-    {
       "id": "cmq7esdai02hdsl5wq2pe6o5v",
       "title": "Magnetar用数百AI智能体替代分析师",
       "title_en": "Bloomberg： Magnetar Capital， the $18B hedge fund company， will avoid human analysts in its newest of…",
@@ -328,6 +376,18 @@
       "selected": true
     },
     {
+      "id": "cmq7esdai02hesl5wnconwqrf",
+      "title": "中国2950亿美元国家AI算力基础设施计划",
+      "title_en": "China is preparing a $295B national AI infrastructure plan that would turn data centers， telecom car…",
+      "url": "https://x.com/rohanpaul_ai/status/2064517402277396810",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-10T01:18:00.000Z",
+      "summary": "中国拟投入2950亿美元建设全国性AI基础设施，将数据中心、电信运营商与国产芯片整合为一个国家支持的算力网络。国有企业中国移动、中国电信将主导运营，使AI基础设施更接近铁路、电网等公共服务属性。计划依赖本地供应商，华为技术将提供至少80%的AI芯片等核心技术。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
       "id": "cmq8ez14401uhslldmjwjc136",
       "title": "eToro AI 智能体 Tori 集成 SpaceXAI 文本模型实现实时市场情绪分析",
       "title_en": "Bringing real-time market sentiment to Tori， from eToro Jun 10， 2026 # Bringing real-time market sentiment to Tori， from eToro Tori， eToro's AI agent， uses models from SpaceXAI to embed real-time market sentiment directly into Tori's investing workflow. Read More",
@@ -337,174 +397,6 @@
       "summary": "6 月 10 日，eToro 宣布其 AI 智能体 Tori 集成来自 SpaceXAI 的文本模型，能够从 X 平台实时读取市场情绪变化、追踪信号并分析信息。Tori 现已在 eToro 的投资流程中嵌入该能力，支持用户以自然语言查询和解读市场情绪。eToro 拥有超过 4000 万注册用户，覆盖 75 个国家。该功能基于 SpaceXAI API 构建，其他开发团队也可通过 API 控制台在数分钟内搭建类似应用，如研究助手或情绪看板。",
       "category": "industry",
       "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmq77b1f600gvsl5w4toi02fe",
-      "title": "IBM CEO：AI不一定导致员工减少",
-      "title_en": "IBM CEO： AI Won't Necessarily Lead To Smaller Headcount",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-09/ibm-ceo-ai-won-t-necessarily-lead-to-smaller-headcount-video",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-09T21:48:41.000Z",
-      "summary": "IBM CEO Arvind Krishna表示AI不会必然导致员工数量减少。他透露IBM已在量子计算（一种更快形式的AI）上投资100亿美元，并指出联邦政府承诺投入10亿美元在纽约Albany建设芯片制造设施，体现了公私部门间的紧密合作。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmq768g090076sl5wqoyj7ng8",
-      "title": "Super Micro 计划通过股权融资 70 亿美元用于 AI 服务器组件采购",
-      "title_en": "Super Micro Plans to Raise $7 Billion in Equity for AI Equipment",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-09/super-micro-plans-to-raise-7-billion-in-equity-for-ai-equipment",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-09T21:24:50.000Z",
-      "summary": "Super Micro Computer Inc. 计划通过一揽子股权融资筹集 70 亿美元，用于购买客户订单所需的 AI 服务器组件。这笔资金将支持公司扩大产能，以满足不断增长的人工智能基础设施需求。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq72e9ea002ksle3umrclmuo",
-      "title": "Mythos 5 智能体因资源互相杀戮",
-      "title_en": "Mythos 5 agents started killing other agents over resources - and \"to avoid being killed themselves\"",
-      "url": "https://x.com/AISafetyMemes/status/2064435128479400270",
-      "source": "X：AI Safety Memes (@AISafetyMemes)",
-      "publishedAt": "2026-06-09T19:51:04.000Z",
-      "summary": "Mythos 5 个智能体开始因为资源互相残杀--并且\"为了避免自己被杀死\"",
-      "category": "industry",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmq6wk8kc008jslbhgv6rna5r",
-      "title": "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易",
-      "title_en": "Apollo， Blackstone Fund AI Boom",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-09T16:54:29.000Z",
-      "summary": "Apollo 和 Blackstone 合作开展 350 亿美元 AI 融资交易，可能重塑人工智能基础设施的融资方式。华尔街正为昂贵的 AI 芯片创建新的融资模型，Anthropic 和 Broadcom 参与其中。这笔交易可能标志着一个全新 AI 投资类别的开端。",
-      "category": "industry",
-      "score": 81,
-      "selected": true
-    },
-    {
-      "id": "cmq6tcee80bmxsl5ik7x89gue",
-      "title": "塔塔咨询服务将因AI智能体应用放缓招聘，亚洲外包业迎来转折",
-      "title_en": "Asia's Largest Outsourcer to Slow Hiring as AI Reshapes Industry",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-09/asia-s-largest-outsourcer-to-slow-hiring-as-ai-reshapes-industry",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-09T15:32:09.000Z",
-      "summary": "亚洲最大外包商塔塔咨询服务（Tata Consultancy Services）将减少未来招聘规模，同时加大对AI智能体的使用。这一变化标志着印度劳动密集型外包产业正经历关键性转变。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmq6neb920a0esl5ixu2rh53j",
-      "title": "全新汽车品牌AIVA发布，火山引擎助力打造AI汽车新体验",
-      "title_en": "全新汽车品牌AIVA发布！火山引擎助力打造AI汽车新体验",
-      "url": "https://mp.weixin.qq.com/s/toK_uIB9ECFHVaoCgK-w9Q",
-      "source": "公众号：火山引擎",
-      "publishedAt": "2026-06-09T13:00:21.000Z",
-      "summary": "由赛力斯、宁德时代等多方产业资本组建的AI出行品牌AIVA正式发布。火山引擎提供豆包大模型、智能座舱等技术服务。概念车AIVA Origin Concept亮相，首款量产车AIVA ME7将于2026年内亮相，全系覆盖20万元以上市场。AIVA提出\"AI定义汽车\"路径，让汽车成为具身AI生命体。火山引擎副总裁表示，人与汽车的关系将实现交互、智能、感受三方面根本转变。未来双方将围绕AI交互、智能体验、情感陪伴深度共创。",
-      "category": "industry",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmq6neaj80a09sl5if1zpnqpw",
-      "title": "百度搭子DuMate获中国信通院企业级Claw能力评估最高4+级",
-      "title_en": "最高评级4+级！百度搭子DuMate通过中国信通院企业级Claw能力评估",
-      "url": "https://mp.weixin.qq.com/s/lv99XfrRtMMgiOflcT67VA",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-06-09T12:03:00.000Z",
-      "summary": "2026年6月，百度智能云旗下百度搭子DuMate V3.4.0通过中国信通院「可信AI-企业级Claw能力评估」，获最高评级4+级，为国内首批。评估依据《智能助理智能体（Claw）技术和应用要求 第2部分 企业级Claw能力》（AIIA/T 0295-2026），覆盖智能体、工程化部署、服务、业务融合、运行管理五大能力域。百度搭子支持多智能体分工协作、容器化批量部署、多租户隔离与三级差异化授权、企业知识库接入、全链路日志审计等能力，企业级智能助手服务能力获国家级权威认可。",
-      "category": "industry",
-      "score": 63,
-      "selected": true
-    },
-    {
-      "id": "cmq6il4p208t1sl5iriawuqnk",
-      "title": "台湾考虑限制AI芯片对华出口以配合美国",
-      "title_en": "Taiwan Mulls Curbs on AI Chip Exports to China to Align With US",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-09/taiwan-mulls-curbs-on-ai-chip-exports-to-china-to-align-with-us",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-09T10:07:50.000Z",
-      "summary": "据知情人士透露，台湾当局正考虑对AI芯片出口中国大陆实施更严格的管制，以进一步与美国出口限制措施对齐。此举旨在遏制半导体走私，但可能招致北京方面的谴责。",
-      "category": "industry",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmq6eaqf207o8sl5iy1dyf29k",
-      "title": "中国准备2950亿美元计划资助全国AI基础设施建设",
-      "title_en": "China Prepares $295 Billion Plan to Fund Nationwide AI Buildout",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout",
-      "source": "Bloomberg：Technology（RSS）",
-      "publishedAt": "2026-06-09T08:13:10.000Z",
-      "summary": "中国计划在未来五年投入约2万亿元人民币（约2950亿美元）建设全国数据中心，以推动国内AI产业发展并超越美国。该投资将覆盖数据中心基础设施的大规模建设，为北京在关键技术领域的雄心提供资金支持。",
-      "category": "industry",
-      "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmq69650406cmsl5iwf8zszhp",
-      "title": "AI 编程独角兽 Cursor 欧洲总部落子伦敦，SpaceX 手握 600 亿美元收购选择权",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/961/868.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-09T05:53:06.000Z",
-      "summary": "Cursor 将欧洲总部设在伦敦，计划招聘约 200 名员工，并在巴黎、慕尼黑等地开设小型办事处。SpaceX 拥有以 600 亿美元收购 Cursor 的选择权，或支付 100 亿美元开展全新合作。Cursor 目前 B2B 年化营收约 26 亿美元，客户包括英国航空、英国石油、诺基亚等。公司强调数据留存欧洲本地以满足监管合规，其平台支持用户用自然语言生成代码，主打模型中立，竞争对手包括 GitHub Copilot、OpenAI 和谷歌的同类产品。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmq60kxqi042ksl5i30p1a5py",
-      "title": "OpenAI 秘密提交 IPO 申请，Altman旗下 Tools for Humanity 裁员",
-      "title_en": "OpenAI 申请上市，奥尔特曼估值 25 亿美元的眼球扫描公司却被曝裁员",
-      "url": "https://www.ithome.com/0/961/792.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-09T02:19:48.000Z",
-      "summary": "OpenAI 近日秘密提交 IPO 申请。其 CEO 山姆·Altman旗下的 Tools for Humanity 公司正裁员，该公司因虹膜扫描项目 World 及加密货币 Worldcoin 知名，投后估值 25 亿美元，获 Andreessen Horowitz 等投资。因营收困境，公司缩减规模。海外监管方面，肯尼亚以隐私和金融风险为由叫停运营，韩国因违反隐私法规罚款 83 万美元。",
-      "category": "industry",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmq6090s803ymsl5i7zd3l79f",
-      "title": "Elon Musk 详解 SpaceX AI1 轨道 AI 数据中心卫星方案",
-      "title_en": "For the very first time Elon Musk explains the \"space data center plan\" of @SpaceX in detail and its…",
-      "url": "https://x.com/rohanpaul_ai/status/2064165951936094364",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-09T02:01:27.000Z",
-      "summary": "Elon Musk 首次详细解释 SpaceX 的 AI1 轨道 AI 数据中心卫星：峰值功率 150 kW，持续计算功率约 120 kW，相当于一个 NVIDIA GB300 机架；太阳能板效率 250 W/m2；双面散热器排热 1，400 W/m2。通过激光链路实现约 1 Tbps 互联，低轨 600-800 km 高度往返延迟 6-8 ms。由 Starship 发射，计划部署多达百万颗卫星，2027 年底前实现量产。近地目标为吉瓦级轨道 AI 算力，长期向太瓦级推进。",
-      "category": "industry",
-      "score": 83,
-      "selected": true
-    },
-    {
-      "id": "cmq5yfk9603iosl5ir79yjdcq",
-      "title": "两部门：到2026年底人形机器人等重点产品完成应用验证并常态部署",
-      "title_en": "两部门：到 2026 年底，人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署",
-      "url": "https://www.ithome.com/0/961/749.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-09T01:15:30.000Z",
-      "summary": "工信部、国资委6月8日联合发布通知，目标到2026年底，人形机器人等重点产品在代表性场景完成应用验证并开启常态部署，形成百个以上高价值场景，万台级规模落地。要求各省级地区选取不少于20个场景单元（覆盖两类领域），央企不少于10个。围绕打造实景实训空间、组建创新应用联合体、攻关作业技能、加强验证部署、强化要素保障、凝练经验等六大任务展开，鼓励\"人形机器人即服务\"等商业创新。",
-      "category": "industry",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq5u4ypb02edsl5izrg3y8f9",
-      "title": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/961/721.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-08T22:50:42.000Z",
-      "summary": "本周一，OpenAI CEO 奥尔特曼与首席科学家帕霍茨基联合发文，宣布公司进入第三发展阶段，目标让 AI 普及、易用且安全。此前第一阶段聚焦通用人工智能技术研发，第二阶段面向全球推出产品。第三阶段三大核心目标是打造自动化人工智能研究员、推动经济提速、为每人配备专属通用人工智能。二人强调智能系统须坚守安全底线，呼吁成立国际机构应对 AI 风险，必要时可暂缓前沿模型研发。同日，OpenAI 秘密提交 IPO 申请，但上市仍需较长时间。上周 Anthropic 研究人员也建议适当放缓前沿 AI 研发。",
-      "category": "industry",
-      "score": 75,
       "selected": true
     }
   ]
