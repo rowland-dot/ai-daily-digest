@@ -1,18 +1,42 @@
 {
-  "count": 20,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqh7o7tf01qbsle1hr7ppmfa",
-      "title": "Qwen-Robot Suite：一套面向物理世界智能的基础模型套件",
-      "title_en": null,
-      "url": "https://qwen.ai/blog?id=qwen-robotsuite",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-16T22:21:10.001Z",
-      "summary": "Qwen-Robot Suite 包含三个基础模型：Qwen-RobotNav 通过可控观察编码统一指令跟随、点/物体目标导航、目标跟踪和自动驾驶五个导航域；Qwen-RobotManip 利用规范状态-动作空间和相机帧增量位姿，在超3.81万小时开源语料上实现跨具身操作对齐；Qwen-RobotWorld 以自然语言为动作接口，联合训练20余种具身，预测物理世界动态。三者可组合成通用智能体系统。",
+      "id": "cmqi8qht206mtslf0a4q8mkrb",
+      "title": "MolmoMotion：语言引导的3D运动预测模型",
+      "title_en": "MolmoMotion： Language-guided 3D motion forecasting",
+      "url": "https://huggingface.co/blog/allenai/molmomotion",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-17T15:26:44.000Z",
+      "summary": "MolmoMotion基于Molmo 2骨干网络，输入视频帧、物体上的3D点标记及文字动作指令（如\"移动并旋转桌上放水果的木碗\"），预测未来数秒内这些点的3D轨迹。提供两个变体：自回归的MolmoMotion-AR逐步预测坐标，流匹配的MolmoMotion-FM通过连续空间变换处理多可能性运动。同时发布MolmoMotion-1M数据集（含116万视频的3D点轨迹及动作描述）和PointMotionBench基准测试（2700个人工验证视频片段）。模型权重、数据集和基准测试均已开源。",
       "category": "ai-models",
-      "score": 71,
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqihhij5010ksl5w7mpblibe",
+      "title": "Grok 4.3 在 Amazon Bedrock 正式可用",
+      "title_en": "Grok on Amazon Bedrock Jun 17， 2026 # Grok on Amazon Bedrock Grok models are now available via Amazon Bedrock. Read More",
+      "url": "https://x.ai/news/grok-amazon-bedrock",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "summary": "6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2-10 倍。",
+      "category": "ai-models",
+      "score": 61,
+      "selected": true
+    },
+    {
+      "id": "cmqhsj1k2025oslf0co5nf14c",
+      "title": "GLM-5.2 上线并开源：专注 Coding 与长程任务",
+      "title_en": "GLM-5.2上线并开源：专注Coding与长程任务",
+      "url": "https://www.zhipuai.cn/zh/research/161",
+      "source": "智谱：研究（网页内嵌数据）",
+      "publishedAt": "2026-06-16T16:00:00.000Z",
+      "summary": "GLM-5.2 已发布并开源，采用 MIT 协议，支持 1M 上下文窗口。Coding 方面能承载项目级上下文，长程任务执行更稳定，遵循生产级工程规范，并支持客户端与移动端真机调试闭环。通过极致 Infra 优化，发布首日即可在国产算力平台运行。模型已开源至 GitHub、Hugging Face、ModelScope、BigModel 开放平台、Z.ai、Zhipu清言、AutoClaw 及 ZCode。",
+      "category": "ai-models",
+      "score": 59,
       "selected": true
     },
     {
@@ -28,6 +52,18 @@
       "selected": true
     },
     {
+      "id": "cmqg1bu4n02o9slsp8813ls12",
+      "title": "蚂蚁百灵发布 Ling & Ring 2.6 技术报告",
+      "title_en": "百灵 Ling & Ring 2.6 技术报告发布：面向真实 Agent 工作流的高效万亿级模型",
+      "url": "https://mp.weixin.qq.com/s/j8ZXKvDZzMkSSiUyXecqGA",
+      "source": "公众号：蚂蚁百灵（Ling）",
+      "publishedAt": "2026-06-16T02:23:34.000Z",
+      "summary": "蚂蚁百灵发布 Ling & Ring 2.6 技术报告，系统公开 Ling-2.6-flash、Ling-2.6-1T 和 Ring-2.6-1T 的架构、预训练、后训练及 Agent 强化学习细节。三款模型采用 Hybrid Linear Attention 架构，将 Lightning Attention 与 MLA 以 7：1 比例结合。Ling-2.6-flash 在 4×H20 硬件上解码速度达 340 tokens/s，Ling-2.6-1T 在 Artificial Analysis Intelligence Index 上 token efficiency 较前代提升约 4 倍。Ring-2.6-1T high 在 PinchBench 得 87.60，ClawEval 得 63.82。三款模型均已开源。",
+      "category": "ai-models",
+      "score": 79,
+      "selected": true
+    },
+    {
       "id": "cmqfzvk1h026sslspt58nzmdd",
       "title": "成本砍半，字节跳动推出 Seedance 2.0 Mini 视频生成模型",
       "title_en": null,
@@ -37,6 +73,18 @@
       "summary": "字节跳动火山引擎旗下火山方舟体验中心于 6 月 15 日上线 Seedance 2.0 Mini 视频生成模型，计划近期开放 API。该模型比 Seedance 2.0 Fast 快 2 倍，输出质量相当。图生视频定价 0.023 元/千 tokens，视频生视频 0.014 元/千 tokens，720P 规格下单秒生成成本约 0.5 元，较 Seedance 2.0 标准版降低约一半。模型面向电商内容生产、营销素材批量生成、UGC 创作及特效玩法等高频率、大规模视频生成场景。",
       "category": "ai-models",
       "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqhjt0sx052usle11gqmucdr",
+      "title": "xAI 发布 Grok Imagine Video 1.5",
+      "title_en": "Grok Imagine Video 1.5 Jun 16， 2026 # Grok Imagine Video 1.5 Improved quality at even faster speeds. Read More",
+      "url": "https://x.ai/news/grok-imagine-video-1-5",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "summary": "xAI 将 Grok Imagine Video 1.5 从预览转为全面可用，在 Imagine API 上提供 `grok-imagine-video-1.5`，并在 grok.com/imagine 及 iOS/Android 应用上推出 Video 1.5 Fast 版。相比前代，模型在音频与语音（更清晰、嘴型同步更好）、运动与物理（更连贯、重量感更真实）、生成速度（6 秒 720p 视频约 25 秒，此前超 40 秒）上全面提升。同时逐步推出 Projects、Multiple agents（并行运行多个生成任务）、Search 等新功能，以优化创作流程。",
+      "category": "ai-models",
+      "score": 73,
       "selected": true
     },
     {
@@ -136,6 +184,18 @@
       "selected": true
     },
     {
+      "id": "cmqaycjq400insl35zr0910mv",
+      "title": "Kimi K2.7-Code：具有更高模型 token 效率的开源编码模型",
+      "title_en": "Kimi K2.7-Code：一种具有更高令牌效率的开源编码模型",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-12T13:08:02.126Z",
+      "summary": "Kimi K2.7-Code 是一个开源编码模型，相比同类模型拥有更高的模型 token 效率，能够用更少的 token 完成相同的代码生成任务。模型已在 HuggingFace 上发布。",
+      "category": "ai-models",
+      "score": 77,
+      "selected": true
+    },
+    {
       "id": "cmqas4pf30obzslldpvkbrqde",
       "title": "Kimi 发布并开源最新代码模型 Kimi-K2.7-Code",
       "title_en": "🌘 Kimi-K2.7-Code， our latest coding model， is now released and open-sourced！ 🔷 Improved coding & …",
@@ -193,54 +253,6 @@
       "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
       "category": "ai-models",
       "score": 64,
-      "selected": true
-    },
-    {
-      "id": "cmq8f9x2k01xqslldudfgsdh4",
-      "title": "Grok Voice性能出色价格低廉",
-      "title_en": "Grok Voice offers state-of-the-art performance with human-like timing， tone， and warmth. And it's a …",
-      "url": "https://x.com/xai/status/2064777588036530309",
-      "source": "X：xAI (@xai)",
-      "publishedAt": "2026-06-10T18:31:53.000Z",
-      "summary": "Grok Voice 提供最先进的性能，具有类人的时机、语调和温暖感。而且价格仅为竞争对手的一小部分。\n\n查看详情：http：//x.ai/api/voice",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmq8aoxud00ngslldd191n34b",
-      "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
-      "title_en": "DiffusionGemma： 4x faster text generation",
-      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-06-10T16:24:11.000Z",
-      "summary": "Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmq7t3hhr01f3slepkahaev5l",
-      "title": "摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练",
-      "title_en": "摩尔线程开源 MusaCoder：首个基于国产全功能 GPU 全栈训练的代码大模型",
-      "url": "https://www.ithome.com/0/962/509.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-10T08:21:45.000Z",
-      "summary": "摩尔线程发布并开源 MusaCoder 代码大模型，含 9B 和 27B 两个参数规模，是业内首个基于国产 GPU 算力底座完成全链路训练与验证的开源模型。后训练流程在基于 MTT S5000 的夸娥智算集群上完成，支持从 PyTorch 标准算子自动生成高性能 CUDA/MUSA 原生 Kernel 代码。在 KernelBench 评测中，MusaCoder-27B-RL 以 Overall Pass@8 93.2%、Avg.@8 88.60% 超越 Claude Opus、DeepSeek-V4 Pro、GLM-5.1、Kimi K2.6 等主流 SOTA 代码模型。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqg55i9m0004sl45hjfi5669",
-      "title": "JoyAI-VL-Interaction：实时视觉-语言交互智能",
-      "title_en": "JoyAI-VL-Interaction： Real-Time Vision-Language Interaction Intelligence",
-      "url": "https://arxiv.org/abs/2606.14777",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "JoyAI-VL-Interaction是一个8B参数的视觉优先交互模型，能像人一样持续观察实时画面，自主决定每秒钟保持沉默、回应或将复杂问题委托给后台模型。模型擅长视觉触发响应和时间感知，并涌现出引导用户切换屏幕、根据幻灯片即兴讲解等未专门训练的能力。配合完整可部署系统，支持实时视频流输入、可插拔ASR/TTS模块、记忆、可视化UI及可连接任意API或智能体的后台大脑。在六个真实场景中，人类评估者更偏好该模型而非豆包和Gemini的应用内视频通话助手。这是首个开源且附带训练配方、数据和完整部署系统的视觉驱动交互模型。",
-      "category": "ai-models",
-      "score": 78,
       "selected": true
     }
   ]

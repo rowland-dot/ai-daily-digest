@@ -1,18 +1,54 @@
 {
-  "count": 14,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqh1kwnx002asle1lo0di435",
-      "title": "Anthropic：智能体编码中专业知识回报持续存在",
-      "title_en": "Agentic coding and persistent returns to expertise",
-      "url": "https://www.anthropic.com/research/claude-code-expertise",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-16T19:35:22.252Z",
-      "summary": "Anthropic 基于约40万次 Claude Code 交互会话（2025年10月至2026年4月）分析发现：人类主导规划决策（做什么），Claude 主导执行决策（怎么做）。领域专业知识越强，模型每次指令完成的工作量越多。各类职业完成任务的成功率与软件工程师平均相近；领域专家成功率更高，但与中级用户差距不大。七个月间调试会话占比下降近一半，使用转向端到端智能体任务（部署运行代码、分析数据、编写非代码文档），典型任务价值平均上升约25%。",
+      "id": "cmqiddvsx07xcslf0wcefjhm6",
+      "title": "用SGLang-JAX在TPU上优化Ling-2.6-1T：一个Pallas核将MoE数据移动隐藏在计算中",
+      "title_en": "Blog Optimizing Ling-2.6-1T on TPU with SGLang-JAX： Hiding MoE Data Movement Behind Compute with One Pallas Kernel SGLang-JAX now supports efficient serving of inclusionAI's Ling-2.6-1T on TPU v7x. With a working baseline in place， profiling pointed to the Mixture-of-Experts （MoE） path as the main bottleneck： each… Prayer， JamesBrianD， Haolin Fu， Haoguang Cai， Qinghan Chen",
+      "url": "https://www.lmsys.org/blog/2026-06-17-ling-2-6-tpu",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-06-17T17:53:38.527Z",
+      "summary": "SGLang-JAX现已支持inclusionAI的Ling-2.6-1T（1T稀疏MoE，63B激活参数，256路由专家，top-8路由加共享专家）在TPU v7x上高效推理。团队开发了Fused MoE V2--一个融合scatter、专家FFN和gather的Pallas核，通过将MoE数据移动隐藏在计算中，使MoE预填充延迟从5.16ms降至2.42ms（降幅53%），解码核延迟从0.249ms降至0.211ms（降幅约15%）。仅替换MoE核即提升预填充吞吐量24.8%，解码吞吐量18.5%-35.3%。在SGLang解码基准测试中，16块TPU v7x芯片输出吞吐量达16块H200 GPU的1.29倍（mc=128）至1.77倍（mc=512）。完整上线还包含混合KV/循环内存池、GLA线性注意力和单控制器数据并行支持。",
       "category": "paper",
-      "score": 76,
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqiakygm075xslf0a7v3eqfl",
+      "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
+      "title_en": "I made Physical AutoResearch sound simple （conceptually）， but it took a village to pull off and lots…",
+      "url": "https://x.com/DrJimFan/status/2067283904986517866",
+      "source": "X：Jim Fan (@DrJimFan)",
+      "publishedAt": "2026-06-17T16:31:05.000Z",
+      "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
+      "category": "paper",
+      "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmqi8ca6w06k1slf0tgau5lib",
+      "title": "Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理",
+      "title_en": "New research shows how AMIE， our medical AI， could help manage health conditions.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-06-17T15:00:00.000Z",
+      "summary": "今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。",
+      "category": "paper",
+      "score": 55,
+      "selected": true
+    },
+    {
+      "id": "cmqijfbdz01grsl5wxf4rd7e6",
+      "title": "LifeSciBench 发布",
+      "title_en": "Introducing LifeSciBench",
+      "url": "https://openai.com/index/introducing-life-sci-bench",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "summary": "2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19，020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。",
+      "category": "paper",
+      "score": 58,
       "selected": true
     },
     {
@@ -37,6 +73,18 @@
       "summary": "OpenAI 近日发布 Deployment Simulation 方法，通过在隐私保护下重放历史对话、用新候选模型重新生成回复，模拟模型上线后的实际表现。在多个 GPT-5-series Thinking 部署中，该方法比传统评估更准确地估计了不良行为频率，发现新型对齐问题，并降低模型识别测试的风险。它还能扩展至涉及工具使用的智能体场景。传统评估存在覆盖不足、选择偏差和模型可识别测试等局限，而 Deployment Simulation 使用真实对话分布缓解了这些问题，但无法测量频率低于每 20 万条消息 1 次的行为。",
       "category": "paper",
       "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqh1kwnx002asle1lo0di435",
+      "title": "Anthropic：智能体编码中专业知识回报持续存在",
+      "title_en": "Agentic coding and persistent returns to expertise",
+      "url": "https://www.anthropic.com/research/claude-code-expertise",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-15T16:00:00.000Z",
+      "summary": "Anthropic 基于约40万次 Claude Code 交互会话（2025年10月至2026年4月）分析发现：人类主导规划决策（做什么），Claude 主导执行决策（怎么做）。领域专业知识越强，模型每次指令完成的工作量越多。各类职业完成任务的成功率与软件工程师平均相近；领域专家成功率更高，但与中级用户差距不大。七个月间调试会话占比下降近一半，使用转向端到端智能体任务（部署运行代码、分析数据、编写非代码文档），典型任务价值平均上升约25%。",
+      "category": "paper",
+      "score": 76,
       "selected": true
     },
     {
@@ -133,42 +181,6 @@
       "summary": "WEAVER是一种多视图世界模型架构，通过流匹配损失训练预测未来潜变量和奖励值，满足保真度、一致性和效率三个要求。在机器人操作任务上，WEAVER在政策评估中与真实成功率的相关系数ρ=0.870，在π0.5基础模型基础上实现政策改进成功率提升38%，测试时规划成功率提升14%，且速度比先前世界模型快5-10倍。在分布外场景下表现也优于先前世界模型。代码、模型和视频已开源。",
       "category": "paper",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq8d8miz01drslldd29j1yzr",
-      "title": "Anthropic 研究：AI 数小时内即可从安全补丁构建漏洞利用",
-      "title_en": "Anthropic study shows AI needs hours， not weeks， to build exploits from security patches",
-      "url": "https://the-decoder.com/anthropic-study-shows-ai-needs-hours-not-weeks-to-build-exploits-from-security-patches",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-10T17:38:24.000Z",
-      "summary": "Anthropic 安全团队发现，其 Mythos Preview AI 模型能在几小时内将 Firefox 和 Windows 内核的安全补丁转化为可工作的漏洞利用，成本仅需数千美元，且无需专业知识。在微软自动更新到达任何设备之前，该模型已完成 8 条完整攻击链。Anthropic 认为传统的补丁节奏已经过时。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmq7w1nzi028nslepn0azwdsg",
-      "title": "百度百舸联合复旦提出LU-KV框架，被ICML 2026录用",
-      "title_en": "顶会入选！百度百舸联合复旦大学刷新KV Cache压缩SOTA",
-      "url": "https://mp.weixin.qq.com/s/oKhawmph49YYPR63T-ekaw",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-06-10T09:43:54.000Z",
-      "summary": "百度百舸团队与复旦大学合作提出Long-horizon Utility KV（LU-KV）框架，将头级KV Cache预算分配建模为面向长程边际效用的全局组合优化问题。LU-KV通过离线画像估计注意力头边际贡献曲线，结合凸包松弛与基于边际效用的贪心求解器，在较低开销下得到接近最优的预算配置，可适配SnapKV、KeyDiff等多类压缩方法。在LongBench和RULER基准上，80%压缩比下性能损失小，降低显存占用和推理延迟。相关论文被ICML 2026录用。",
-      "category": "paper",
-      "score": 63,
-      "selected": true
-    },
-    {
-      "id": "cmq8ws2lk06imslld3t5k4rid",
-      "title": "Bebop：通过带拒绝采样的多token预测加速RL训练",
-      "title_en": "Breaking Entropy Bounds： Accelerating RL Training via MTP with Rejection Sampling",
-      "url": "https://arxiv.org/abs/2606.12370",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "Bebop系统研究多token预测（MTP）在大语言模型RL后训练中的加速瓶颈。发现MTP接受率与模型熵波动呈负线性关系；概率拒绝采样相比贪婪草稿采样能缓解熵干扰。提出端到端TV损失直接优化多步拒绝采样接受率，带来约10%提升，最高达95%接受率，额外推理吞吐提升25%。在Qwen3.5、Qwen3.6和Qwen3.7上，异步RL训练实现1.8倍端到端加速。预RL阶段的MTP训练结合e2e TV损失和拒绝采样可保持全程一致的加速，无需在线更新。",
-      "category": "paper",
-      "score": 73,
       "selected": true
     }
   ]
