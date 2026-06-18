@@ -226,5 +226,9 @@
   "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything": "Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them. Here's an example that demonstrates the new row editing tools in Datasette - in fact I built this Web Component for that post.",
   "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything": "The big feature in this alpha is tools to insert, edit and delete rows within the Datasette interface. These features are available on table pages, and edit and delete are also available as action items on the row page.",
   "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything": "This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette. It's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism.",
-  "https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything": "NetNewsWire Status (via) I find this inspiring. Brent Simmons retired a year ago, and his retirement project is making one piece of software really, really good - free from any commercial pressure. The software is NetNewsWire - \"it's like podcasts, but for reading\" - first released in 2002 and made open source in 2018."
+  "https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything": "NetNewsWire Status (via) I find this inspiring. Brent Simmons retired a year ago, and his retirement project is making one piece of software really, really good - free from any commercial pressure. The software is NetNewsWire - \"it's like podcasts, but for reading\" - first released in 2002 and made open source in 2018.",
+  "https://openai.com/index/chatgpt-enterprise-spend-controls": "",
+  "https://openai.com/index/improving-health-intelligence-in-chatgpt": "",
+  "https://openai.com/index/diagnose-rare-childhood-diseases": "",
+  "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything": ""
 }

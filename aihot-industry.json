@@ -1,8 +1,116 @@
 {
-  "count": 29,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqjy18o2018cslhialdbdvi7",
+      "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+      "title_en": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-18T19:59:22.000Z",
+      "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqjsoas006duslmh9878irin",
+      "title": "AI数据中心获政府强制电网快车道",
+      "title_en": "AI data centers just got a government-mandated fast lane to the grid",
+      "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-18T17:49:23.000Z",
+      "summary": "美国联邦能源监管委员会（FERC）命令六大电网运营商为数据中心等大型用户提供快速并网通道，数据中心需承担并网费用。FERC同时要求运营商考虑\"替代输电技术\"，并在30天内报告剩余发电容量、60天内审查本区域电价。指令并未解决发电容量短缺问题。数据中心电力需求预计到2035年增长近三倍，而电网运营商此前长期应对近乎零的需求增长。据Bloomberg，部分地区批发电价较五年前上涨了267%。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqjrpzbw069mslmheof3twe3",
+      "title": "伯尼·桑德斯提出7万亿美元AI计划：对大型AI公司征收50%股票税",
+      "title_en": "Bernie Sanders unveils $7 trillion plan to give Americans control of AI industry",
+      "url": "https://arstechnica.com/tech-policy/2026/06/bernie-sanders-unveils-7-trillion-plan-to-give-americans-control-of-ai-industry",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-18T17:02:49.000Z",
+      "summary": "伯尼·桑德斯提出立法，对年AI销售额超2亿美元的公司征收50%股票税，建立价值约7万亿美元的主权财富基金。基金每年向每位美国公民发放超1000美元股息（5%年股息），并资助医疗、教育、住房。同时成立由总统提名、参议院确认的两党\"民主AI独立委员会\"，通过投票权阻止公司损害公共利益。法案还要求AI公司剥离非AI业务。该计划面临共和党国会和特朗普政府阻力。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqjn5l3e04weslmhr1vnj797",
+      "title": "我国首部L3/L4自动驾驶强制性国标公示：2027年7月起实施",
+      "title_en": "我国首部 L3/L4 自动驾驶强制性国标公示：2027 年 7 月起正式实施，车企靠模糊宣传抢市场的阶段结束",
+      "url": "https://www.ithome.com/0/966/272.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-18T14:57:30.000Z",
+      "summary": "工信部6月16日就《智能网联汽车自动驾驶系统安全要求》等2项强制性国标公开征求意见，公示至6月24日，建议2027年7月1日起实施。该标准系我国首部针对L3/L4的强制性国标，要求系统安全水平至少达到\"合格且专注驾驶人\"，引入Safety Case机制。L3重点规范人机交接，L4强调自身风险处置、不得依赖远程协助。新申请车型实施日起执行，已获批车型有约一年过渡期。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqjaaffp01gcslmhhkxrobvo",
+      "title": "八部门：用好个人消费贷款财政贴息政策，支持消费者购买 AI 相关产品",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/966/154.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-18T09:03:28.000Z",
+      "summary": "商务部等八部门6月18日发布关于加快\"人工智能+消费\"发展的实施意见。其中提到加大财政资金支持，落实数码和智能产品购新政策，鼓励地方在消费品以旧换新框架内自主制定补贴，重点支持新一代智能终端消费。增加AI手机、智能电脑、智能电视、智能家居、AI眼镜、智能网联汽车、人形机器人等产品供给，培育智能穿戴消费市场。同时加快AI在居家服务、养老服务、文化旅游、住宿餐饮、教育教学等领域的应用，建设AI商品首发平台，举办\"人工智能进万家\"活动。",
+      "category": "industry",
+      "score": 82,
+      "selected": true
+    },
+    {
+      "id": "cmqit4gtr040zsl5wam5ck48b",
+      "title": "上交所发布指引：AI大模型企业可适用科创板第五套上市标准",
+      "title_en": "上交所：AI 大模型企业适用科创板第五套上市标准，在申报时至少有一个大模型产品已完成上线发布并实现规模化应用",
+      "url": "https://www.ithome.com/0/965/735.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-18T00:49:16.000Z",
+      "summary": "上海证券交易所6月17日发布指引，支持尚未形成稳定收入的优质人工智能大模型企业通过科创板第五套上市标准发行上市。申报企业需在行业地位、产业链优势、目标市场需求、研发进度及关键指标方面具备突出竞争力。指引明确，申报时至少有一个大模型产品已完成上线发布并实现规模化应用，以验证商业模式可行性。下一步，上交所将在中国证监会指导下推进符合标准的企业上市。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqirdp5603n0sl5wjfnes2e3",
+      "title": "Noam Shazeer 离开 Google 加入 OpenAI",
+      "title_en": "Noam Shazeer， the AI legend Google paid $2.7B to bring back two years ago， has left Google， to join …",
+      "url": "https://x.com/Yuchenj_UW/status/2067401895178817999",
+      "source": "X：Yuchen Jin (@Yuchenj_UW)",
+      "publishedAt": "2026-06-18T00:19:56.000Z",
+      "summary": "两年前谷歌花 27 亿美元请回的 AI 传奇 Noam Shazeer 已离开谷歌，加入 OpenAI。\n\n对 Gemini 来说是个残酷的消息。",
+      "category": "industry",
+      "score": 82,
+      "selected": true
+    },
+    {
+      "id": "cmqiot8mp02u5sl5w0n1vprt0",
+      "title": "泄露文件显示OpenAI年营收130亿但亏损远超收入",
+      "title_en": "泄露的财务文件显示，OpenAI每年亏损数十亿美元",
+      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-17T23:09:09.056Z",
+      "summary": "OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。",
+      "category": "industry",
+      "score": 78,
+      "selected": true
+    },
+    {
+      "id": "cmqiotxxz02vfsl5wx32nujv2",
+      "title": "库克：AI 浪潮引发存储芯片价格暴涨，iPhone 等苹果产品涨价已\"不可避免\"",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/965/694.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-17T22:41:15.000Z",
+      "summary": "苹果CEO库克确认，AI热潮导致存储芯片严重短缺和价格暴涨，苹果产品涨价已\"不可避免\"。库克未透露涨价具体细节。华尔街日报指出，全球AI巨头大幅增加资本开支，高带宽内存需求激增，挤压消费电子芯片供应。自2024年以来内存和存储芯片价格已翻四倍，涨势预计延续至2027年。研究机构估算，下一代iPhone 18 Pro售价或需增加约270美元。苹果已在上月提高Mac Mini起售价。摩根士丹利预测，今年美国智能手机和PC价格将上涨15%。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
     {
       "id": "cmqiewg85009zsl5w0gbt6hbe",
       "title": "Anthropic与DeepMind CEO呼吁G7组建AI联盟排除中国",
@@ -13,18 +121,6 @@
       "summary": "Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。",
       "category": "industry",
       "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmqi9mvca06wuslf0gcpfh1hv",
-      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-      "title_en": "Announcing the Agentic Resource Discovery specification",
-      "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-06-17T16:08:36.794Z",
-      "summary": "Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。",
-      "category": "industry",
-      "score": 63,
       "selected": true
     },
     {
@@ -85,6 +181,18 @@
       "summary": "美国政府对 Anthropic 的模型 Fable 实施封禁，但 TechCrunch 发文质疑，实际原因可能并非此前认为的\"模型越狱\"问题。该文章在 Hacker News 引发讨论，获得 103 个点赞。",
       "category": "industry",
       "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqi9mvca06wuslf0gcpfh1hv",
+      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+      "title_en": "Announcing the Agentic Resource Discovery specification",
+      "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-06-16T16:00:00.000Z",
+      "summary": "Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。",
+      "category": "industry",
+      "score": 63,
       "selected": true
     },
     {
@@ -196,18 +304,6 @@
       "selected": true
     },
     {
-      "id": "cmqdcj53706qpslttlp0b4n9p",
-      "title": "Anthropic 暂停新模型访问，印度辩论 AI 未来",
-      "title_en": "As Anthropic suspends access to new models， India debates its AI future",
-      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-14T03:00:00.000Z",
-      "summary": "Anthropic 暂停了新模型的访问权限，印度科技领袖围绕这一事件展开辩论，探讨其是否是对该国 AI 雄心的警示。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
       "id": "cmqd1t7a003wgslttffgjyn8q",
       "title": "Meta 开始撤销 20 亿美元收购 Manus 的交易",
       "title_en": "Meta reportedly moves to unwind $2B Manus deal after Beijing's demand",
@@ -301,54 +397,6 @@
       "summary": "我们的机器人加速器已启动，15家初创公司助力塑造欧洲的物理AI未来。🤖\n\n这个为期三个月的项目将为他们提供我们的AI堆栈、Gemini Robotics模型以及我们团队的实际支持。\n\n了解这些公司 → https：//goo.gle/4oeEk2K",
       "category": "industry",
       "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmq9w5ykx0ftoslldqwmy3asu",
-      "title": "WSJ：OpenAI 考虑大幅降价，同准备 ChatGPT 史上最大改版备战 IPO",
-      "title_en": "WSJ： OpenAI is considering deep price reductions as competition with Anthropic intensifies. Anthro…",
-      "url": "https://x.com/rohanpaul_ai/status/2065150529068769357",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-11T19:13:49.000Z",
-      "summary": "WSJ 报道，OpenAI 正考虑大幅降价以应对与 Anthropic 的竞争。Anthropic 增长主要来自开发者和编码工作流，Claude Code 消耗大量 token，已让企业团队将其融入日常工作。OpenAI 虽在消费品牌上更大，但企业市场才是关键--企业为编码智能体、自动化等工具付费。同时，OpenAI 在 IPO 前准备对 ChatGPT 进行史上最大改版，将其打造成涵盖编码、AI 智能体、图像生成和商业软件的超级应用，改版将在未来几周陆续推出。OpenAI 将更多资源投入编码工具 Codex，目标实现 Codex 工程负责人所说的\"个人智能体\"。",
-      "category": "industry",
-      "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmq9ob4g50dqhslldg9noqyw9",
-      "title": "Prometheus 融资120亿美元，估值410亿美元，定位\"人工通用工程师\"",
-      "title_en": "Jeff Bezos raised $12B for Prometheus at a $41B valuation， seven months after launching it at $6.2B …",
-      "url": "https://x.com/kimmonismus/status/2065097988859744503",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-06-11T15:45:02.000Z",
-      "summary": "杰夫·贝佐斯旗下AI公司Prometheus在成立仅7个月、尚无任何产品交付的情况下，以410亿美元估值完成120亿美元融资（最初估值62亿美元）。该公司定位为\"人工通用工程师\"，目标是将设计到制造的循环压缩10倍以上。但物理经济无法像互联网数据那样抓取，缺乏制造业训练数据。为此，Prometheus计划斥资1000亿美元收购传统工业企业，通过获取工厂生成的数据构建护城河。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmq9ip4u40c8eslldarnso34b",
-      "title": "Anthropic 启动 Claude Corps 全国奖学金项目",
-      "title_en": "Introducing Claude Corps",
-      "url": "https://www.anthropic.com/news/claude-corps",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-11T13:12:25.934Z",
-      "summary": "Anthropic 推出 Claude Corps 奖学金项目，面向早期职业生涯的年轻人，培训 1，000 名研究员使用 Claude，并匹配给美国非营利组织全职工作一年。研究员年薪 85，000 美元及福利，每周接受 5 小时持续培训。Anthropic 初始投入 1.5 亿美元，合作方为 CodePath 和 Social Finance。至少 400 家非营利组织将参与接待，包括 Braven、Code the Dream、Heartland Forward 等。",
-      "category": "industry",
-      "score": 61,
-      "selected": true
-    },
-    {
-      "id": "cmq9q3mrj0e8jslld20gniuzv",
-      "title": "OpenAI 将收购 Ona",
-      "title_en": "OpenAI to acquire Ona",
-      "url": "https://openai.com/index/openai-to-acquire-ona",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "OpenAI 计划收购 Ona，以拓展 Codex 的功能，提供安全、持久的云端环境，从而支持企业工作流中长时间运行的 AI 智能体。",
-      "category": "industry",
-      "score": 61,
       "selected": true
     }
   ]

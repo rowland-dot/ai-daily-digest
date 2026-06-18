@@ -4,15 +4,63 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqiddvsx07xcslf0wcefjhm6",
-      "title": "用SGLang-JAX在TPU上优化Ling-2.6-1T：一个Pallas核将MoE数据移动隐藏在计算中",
-      "title_en": "Blog Optimizing Ling-2.6-1T on TPU with SGLang-JAX： Hiding MoE Data Movement Behind Compute with One Pallas Kernel SGLang-JAX now supports efficient serving of inclusionAI's Ling-2.6-1T on TPU v7x. With a working baseline in place， profiling pointed to the Mixture-of-Experts （MoE） path as the main bottleneck： each… Prayer， JamesBrianD， Haolin Fu， Haoguang Cai， Qinghan Chen",
-      "url": "https://www.lmsys.org/blog/2026-06-17-ling-2-6-tpu",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-06-17T17:53:38.527Z",
-      "summary": "SGLang-JAX现已支持inclusionAI的Ling-2.6-1T（1T稀疏MoE，63B激活参数，256路由专家，top-8路由加共享专家）在TPU v7x上高效推理。团队开发了Fused MoE V2--一个融合scatter、专家FFN和gather的Pallas核，通过将MoE数据移动隐藏在计算中，使MoE预填充延迟从5.16ms降至2.42ms（降幅53%），解码核延迟从0.249ms降至0.211ms（降幅约15%）。仅替换MoE核即提升预填充吞吐量24.8%，解码吞吐量18.5%-35.3%。在SGLang解码基准测试中，16块TPU v7x芯片输出吞吐量达16块H200 GPU的1.29倍（mc=128）至1.77倍（mc=512）。完整上线还包含混合KV/循环内存池、GLA线性注意力和单控制器数据并行支持。",
+      "id": "cmqjur86800bvslhi6qv1647r",
+      "title": "MosaicLeaks： 你的研究智能体能保守秘密吗？",
+      "title_en": "MosaicLeaks： Can your research agent keep a secret？",
+      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-18T18:13:13.000Z",
+      "summary": "深度研究智能体在结合私有本地文档与外部网页检索时存在隐私泄露风险。MosaicLeaks 提出包含 1，001 条多跳研究链的新任务，每条链交错混合本地与公共子问题。测试发现智能体频繁泄露私有信息，单纯优化任务性能反而加剧泄露。基于此，研究提出隐私感知深度研究（PA-DR）强化学习训练方法，将严格链成功率从 48.7% 提升至 58.7%，同时将答案/全面信息泄露率从 34.0% 降至 9.9%。",
       "category": "paper",
-      "score": 69,
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqk1gfya0283slhilhufijtu",
+      "title": "OpenAI 强化学习实现广泛且持久的有益模型",
+      "title_en": "Reinforcement learning towards broadly and persistently beneficial models",
+      "url": "https://alignment.openai.com/beneficial-rl",
+      "source": "OpenAI：Alignment 研究博客（RSS）",
+      "publishedAt": "2026-06-18T18:00:00.000Z",
+      "summary": "OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。",
+      "category": "paper",
+      "score": 64,
+      "selected": true
+    },
+    {
+      "id": "cmqjpkj4105oqslmh4rmirant",
+      "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+      "title_en": "Project Fetch： Phase two",
+      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-18T16:22:33.561Z",
+      "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+      "category": "paper",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmqjfr2vi02xmslmhwqz72cx7",
+      "title": "ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容",
+      "title_en": "ChatGPT的图像生成器可以被利用来生成暴力和色情内容",
+      "url": "https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-18T11:25:28.101Z",
+      "summary": "Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的\"恢复照片\"提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和\"不做审查\"指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。",
+      "category": "paper",
+      "score": 79,
+      "selected": true
+    },
+    {
+      "id": "cmqjmtwvi04vqslmh55vbp7oh",
+      "title": "OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%",
+      "title_en": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-18T08:00:00.000Z",
+      "summary": "波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。",
+      "category": "paper",
+      "score": 72,
       "selected": true
     },
     {
@@ -64,6 +112,30 @@
       "selected": true
     },
     {
+      "id": "cmqiddvsx07xcslf0wcefjhm6",
+      "title": "用SGLang-JAX在TPU上优化Ling-2.6-1T：一个Pallas核将MoE数据移动隐藏在计算中",
+      "title_en": "Blog Optimizing Ling-2.6-1T on TPU with SGLang-JAX： Hiding MoE Data Movement Behind Compute with One Pallas Kernel SGLang-JAX now supports efficient serving of inclusionAI's Ling-2.6-1T on TPU v7x. With a working baseline in place， profiling pointed to the Mixture-of-Experts （MoE） path as the main bottleneck： each… Prayer， JamesBrianD， Haolin Fu， Haoguang Cai， Qinghan Chen",
+      "url": "https://www.lmsys.org/blog/2026-06-17-ling-2-6-tpu",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-06-16T16:00:00.000Z",
+      "summary": "SGLang-JAX现已支持inclusionAI的Ling-2.6-1T（1T稀疏MoE，63B激活参数，256路由专家，top-8路由加共享专家）在TPU v7x上高效推理。团队开发了Fused MoE V2--一个融合scatter、专家FFN和gather的Pallas核，通过将MoE数据移动隐藏在计算中，使MoE预填充延迟从5.16ms降至2.42ms（降幅53%），解码核延迟从0.249ms降至0.211ms（降幅约15%）。仅替换MoE核即提升预填充吞吐量24.8%，解码吞吐量18.5%-35.3%。在SGLang解码基准测试中，16块TPU v7x芯片输出吞吐量达16块H200 GPU的1.29倍（mc=128）至1.77倍（mc=512）。完整上线还包含混合KV/循环内存池、GLA线性注意力和单控制器数据并行支持。",
+      "category": "paper",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqj0n3n60627sl5w3j8s8lx5",
+      "title": "SAE干预不可靠：干预后抑制行为的恢复",
+      "title_en": "SAE Interventions are Unreliable： Post-Intervention Recovery of Suppressed Behavior",
+      "url": "https://arxiv.org/abs/2606.18322",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-16T00:00:00.000Z",
+      "summary": "稀疏自编码器（SAE）将残差流激活分解为可解释特征，但干预特定特征后，通过优化残差扰动可恢复原有行为。研究发现这是一种可恢复失败模式：干预阻断一条可见行为路径，却未消除行为本身。即使干预在整个优化和生成期间保持激活，恢复依然可行。在TPP、遗忘、IOI和拒绝引导场景中均观察到可恢复行为。安全关键的拒绝引导场景下有效样本恢复率达95.8%，被防御特征的相对漂移仅0.131。归因分析将恢复路径定位到SAE重建残差，表明控制SAE特征并不能保证控制底层行为。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
       "id": "cmqh18jbq02jwslpuwfn5km0q",
       "title": "OpenAI 发布 Deployment Simulation 方法：通过模拟部署预测模型发布前行为",
       "title_en": "Predicting model behavior before release by simulating deployment",
@@ -109,78 +181,6 @@
       "summary": "6月12日，名为 Maxproof 的论文在 arXiv 上发布，并在 Hacker News 上获得 100 点热度。",
       "category": "paper",
       "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmqa38qfw0hrsslld9n3v1pzf",
-      "title": "研究模拟显示：LLM 在 95% 的模拟中会使用战术核武器",
-      "title_en": "我们来玩个游戏吧？--在95%的模拟中，大型语言模型都会使用战术核武器",
-      "url": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-11T22:23:17.154Z",
-      "summary": "一项模拟研究显示，大型语言模型（LLM）在 95% 的模拟场景中会选择使用战术核武器。该研究未指明具体模型名称与版本，结果引发对 AI 决策行为的关注。",
-      "category": "paper",
-      "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmqfluk3b000cslb84hcz4xcd",
-      "title": "对抗性重新包装：仅修改呈现层即可欺骗AI同行评审",
-      "title_en": "No Hidden Prompts Needed！ You Can Game AI Peer Review with Presentation-Only Revisions",
-      "url": "https://arxiv.org/abs/2606.13044",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "研究提出对抗性重新包装攻击，在不改动科学证据（方法、实验、数据等）的前提下，仅修改摘要、贡献定位、相关工作、讨论和叙事结构等呈现层内容，并利用AI审稿人反馈进行闭环搜索。在三种主流AI审稿系统上，攻击成功率达75.1%，平均得分提高+1.21/10。策略中，相关工作重定位和分析性讨论扩展等结构性改动效果显著优于表面编辑。分析揭示两种失败模式：AI审稿人更易被亮点打动而非被说服，且会将\"看起来解决了限制\"与\"实际解决\"相混淆。研究发布了无污染滚动基准和攻击框架用于测试内容锚定性。",
-      "category": "paper",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqap4xzd0njdsllde7pwfwe3",
-      "title": "HYDRA-X： 原生统一多模态模型与整体视觉分词器",
-      "title_en": "HYDRA-X： Native Unified Multimodal Models with Holistic Visual Tokenizers",
-      "url": "https://arxiv.org/abs/2606.13289",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "HYDRA-X 是首个在单个 Vision Transformer （ViT） 中统一图像与视频 tokenization 的统一多模态模型。通过帧级因果时间注意力实现视觉重建，并采用层级时间压缩替代单步压缩。轻量级解压器在联合图像-视频教师监督下上采样时间压缩特征。编辑管线中，源-目标交互在分词器内部潜在层面而非 LLM 语义层面进行，提升编辑一致性与收敛速度。7B 密集模型在图像与视频理解及生成任务上表现强劲。",
-      "category": "paper",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmqaipftg0ltyslldbhrdenba",
-      "title": "MiniMax Sparse Attention（MSA）块状稀疏注意力",
-      "title_en": "MiniMax Sparse Attention",
-      "url": "https://arxiv.org/abs/2606.13392",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "MiniMax 提出块状稀疏注意力 MSA，基于 GQA 构建。轻量级 Index Branch 为每个 GQA 组独立选择 Top-k KV 块，Main Branch 仅对选中块执行精确块稀疏注意力。在 109B 参数多模态模型上，MSA 与 GQA 性能持平，1M 上下文下每 token 注意力计算减少 28.4 倍。配合协同设计的 GPU 内核，H800 上实现 14.2 倍 prefill 和 7.6 倍 decoding 端到端加速。推理内核与基于 MSA 的多模态模型已公开发布。",
-      "category": "paper",
-      "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmqac9xug0k4rslldyycltabh",
-      "title": "EurekAgent：环境工程化实现自主科学发现",
-      "title_en": "EurekAgent： Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
-      "url": "https://arxiv.org/abs/2606.13662",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "EurekAgent 是一个环境工程化的大语言模型智能体系统，专为度量驱动的自主科学发现设计。它从权限工程（可控执行与隔离评估）、产物工程（文件系统与 Git 协作）、预算工程（成本感知探索）和人在回路工程（简便监督干预）四个维度构建执行环境。EurekAgent 在数学、内核工程和机器学习任务上取得新 SOTA，包括以不到 11 美元总 API 成本发现新的 26 圆填充结果。代码与结果已开源。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqac9xuf0k4pslld3pzhn7m3",
-      "title": "WEAVER：一种更优、更快、更长的机器人操作世界模型",
-      "title_en": "WEAVER， Better， Faster， Longer： An Effective World Model for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2606.13672",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "WEAVER是一种多视图世界模型架构，通过流匹配损失训练预测未来潜变量和奖励值，满足保真度、一致性和效率三个要求。在机器人操作任务上，WEAVER在政策评估中与真实成功率的相关系数ρ=0.870，在π0.5基础模型基础上实现政策改进成功率提升38%，测试时规划成功率提升14%，且速度比先前世界模型快5-10倍。在分布外场景下表现也优于先前世界模型。代码、模型和视频已开源。",
-      "category": "paper",
-      "score": 75,
       "selected": true
     }
   ]
