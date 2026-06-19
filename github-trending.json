@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-06-18T22:30:40.475Z",
+  "fetched_at": "2026-06-19T21:45:48.711Z",
   "repos": [
+    {
+      "owner": "DeusData",
+      "name": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 8111,
+      "forks": 622,
+      "starsToday": 1055
+    },
     {
       "owner": "google-research",
       "name": "timesfm",
@@ -8,42 +19,75 @@
       "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 23057,
-      "forks": 2210,
-      "starsToday": 858
+      "stars": 24039,
+      "forks": 2268,
+      "starsToday": 1516
     },
     {
-      "owner": "n0-computer",
-      "name": "iroh",
-      "url": "https://github.com/n0-computer/iroh",
-      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 9991,
-      "forks": 461,
-      "starsToday": 369
+      "owner": "palmier-io",
+      "name": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "description": "macOS video editor built for AI",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 1785,
+      "forks": 181,
+      "starsToday": 749
     },
     {
-      "owner": "freeCodeCamp",
-      "name": "freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "owner": "koala73",
+      "name": "worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 449519,
-      "forks": 45125,
-      "starsToday": 417
+      "stars": 57175,
+      "forks": 9135,
+      "starsToday": 300
     },
     {
-      "owner": "obra",
-      "name": "superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 232353,
-      "forks": 20638,
-      "starsToday": 1435
+      "owner": "aishwaryanr",
+      "name": "awesome-generative-ai-guide",
+      "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide",
+      "description": "A one stop repository for generative AI research updates, interview resources, notebooks and much more!",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 27582,
+      "forks": 5738,
+      "starsToday": 155
+    },
+    {
+      "owner": "BuilderIO",
+      "name": "agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "description": "A framework for building agent-native applications.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 998,
+      "forks": 116,
+      "starsToday": 210
+    },
+    {
+      "owner": "chopratejas",
+      "name": "headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 38365,
+      "forks": 2618,
+      "starsToday": 3938
+    },
+    {
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 6214,
+      "forks": 1077,
+      "starsToday": 236
     },
     {
       "owner": "zai-org",
@@ -52,42 +96,9 @@
       "description": "GLM-5: From Vibe Coding to Agentic Engineering",
       "language": "",
       "languageColor": "",
-      "stars": 4087,
-      "forks": 428,
-      "starsToday": 286
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "language": "C",
-      "languageColor": "#555555",
-      "stars": 6951,
-      "forks": 563,
-      "starsToday": 2308
-    },
-    {
-      "owner": "yifanfeng97",
-      "name": "Hyper-Extract",
-      "url": "https://github.com/yifanfeng97/Hyper-Extract",
-      "description": "Transform unstructured text into structured knowledge with LLMs. Graphs, hypergraphs, and spatio-temporal extractions — with one command.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1729,
-      "forks": 199,
-      "starsToday": 124
-    },
-    {
-      "owner": "alibaba",
-      "name": "zvec",
-      "url": "https://github.com/alibaba/zvec",
-      "description": "A lightweight, lightning-fast, in-process vector database",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 11196,
-      "forks": 648,
-      "starsToday": 344
+      "stars": 4526,
+      "forks": 459,
+      "starsToday": 478
     },
     {
       "owner": "withastro",
@@ -96,31 +107,42 @@
       "description": "The sandbox agent framework.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 5470,
-      "forks": 297,
-      "starsToday": 164
+      "stars": 5802,
+      "forks": 323,
+      "starsToday": 305
     },
     {
-      "owner": "Kilo-Org",
-      "name": "kilocode",
-      "url": "https://github.com/Kilo-Org/kilocode",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 22058,
-      "forks": 2703,
-      "starsToday": 1339
+      "owner": "n0-computer",
+      "name": "iroh",
+      "url": "https://github.com/n0-computer/iroh",
+      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 10233,
+      "forks": 466,
+      "starsToday": 307
     },
     {
-      "owner": "makeplane",
-      "name": "plane",
-      "url": "https://github.com/makeplane/plane",
-      "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 51800,
-      "forks": 4599,
-      "starsToday": 610
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 233270,
+      "forks": 20720,
+      "starsToday": 1113
+    },
+    {
+      "owner": "penpot",
+      "name": "penpot",
+      "url": "https://github.com/penpot/penpot",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "language": "Clojure",
+      "languageColor": "#db5855",
+      "stars": 50550,
+      "forks": 3268,
+      "starsToday": 318
     },
     {
       "owner": "Kong",
@@ -129,42 +151,9 @@
       "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 38650,
-      "forks": 2289,
-      "starsToday": 13
-    },
-    {
-      "owner": "Universal-Debloater-Alliance",
-      "name": "universal-android-debloater-next-generation",
-      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 7904,
-      "forks": 338,
-      "starsToday": 247
-    },
-    {
-      "owner": "dotnet",
-      "name": "aspnetcore",
-      "url": "https://github.com/dotnet/aspnetcore",
-      "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 38091,
-      "forks": 10708,
-      "starsToday": 22
-    },
-    {
-      "owner": "owainlewis",
-      "name": "awesome-artificial-intelligence",
-      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
-      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
-      "language": "",
-      "languageColor": "",
-      "stars": 14357,
-      "forks": 2333,
-      "starsToday": 33
+      "stars": 38940,
+      "forks": 2300,
+      "starsToday": 291
     },
     {
       "owner": "Lightricks",
@@ -173,20 +162,9 @@
       "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 7476,
-      "forks": 1206,
-      "starsToday": 47
-    },
-    {
-      "owner": "LibreTranslate",
-      "name": "LibreTranslate",
-      "url": "https://github.com/LibreTranslate/LibreTranslate",
-      "description": "Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 14948,
-      "forks": 1530,
-      "starsToday": 83
+      "stars": 7652,
+      "forks": 1220,
+      "starsToday": 196
     }
   ]
 }

@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-06-18T22:30:48.890Z",
+  "fetched_at": "2026-06-19T21:45:53.144Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "link": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
+      "updated": "2026-06-18T23:58:38+00:00",
+      "summary": "Today we launched a new plugin for Datasette, datasette-apps , with this launch announcement post on the Datasette project blog. That post has the what , but I'm going to expand on that a little bit here to provide the why ."
+    },
+    {
+      "title": "datasette-acl 0.6a0",
+      "link": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
+      "updated": "2026-06-18T19:03:13+00:00",
+      "summary": "This release expands datasette-acl from table-only permissions toward a general resource-sharing system."
+    },
     {
       "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
       "link": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
@@ -70,20 +82,6 @@
       "updated": "2026-06-16T00:21:36+00:00",
       "summary": "TILCloudflare CAPTCHA on at least one ampersand— I use Cloudflare's CAPTCHA (they call it a \"Managed Challenge\") on simonwillison. net/search/ to prevent crawlers from following every single possible combination of my faceted search UI.",
       "body": "TILCloudflare CAPTCHA on at least one ampersand— I use Cloudflare's CAPTCHA (they call it a \"Managed Challenge\") on simonwillison.net/search/ to prevent crawlers from following every single possible combination of my faceted search UI.\n\nI'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall > Custom rules > Managed Challenge\" these days) to prevent crawlers from aggresively spidering my faceted search engine on this site, but I got fed up of even simple ?q=term searches triggering the challenge.\n\nAfter some mucking around with Claude Code it turns out you can register the following rule instead, so the CAPTCHA only kicks in for search URLs containing at least one ampersand:\n\n(http.request.uri.path wildcard r\"/search/\" and http.request.uri.query contains \"&\")\n\nAnd now /search/?q=lemur works without triggering a CAPTCHA!\n\nAlso included: notes on trying out the Cloudflare MCP with Claude Code, though it turned out not to be able to edit the rules in question so I had Claude Code switch to the Cloudflare API instead."
-    },
-    {
-      "title": "datasette-agent 0.3a0",
-      "link": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
-      "updated": "2026-06-15T17:19:27+00:00",
-      "summary": "New tool, executewritesql, which requests user approval and then writes to a database - taking user permissions into account. I added a mechanism for asking user approval in datasette agent 0. 2a0. The new executewritesql tool can now prompt the user for all kinds of useful operations.",
-      "body": "New tool, executewritesql, which requests user approval and then writes to a database - taking user permissions into account. #27\n\nI added a mechanism for asking user approval in datasette agent 0.2a0. The new executewritesql tool can now prompt the user for all kinds of useful operations. Here's an example where I add some pelican sightings to my pelicansightings table:\n\nThe new version also enhances the datasette agent chat terminal mode to support approvals, and adds several new options including --unsafe mode for auto-approving them:\n\n   datasette agent chat can execute tools that require user approval. #30\n   Three new options for datasette agent chat - --root to run as root, --yes to approve all ask user questions, and --unsafe for both.\n   Tools can now provide plain text alternatives to HTML, for display in the datasette agent chat CLI. #31\n\nThe datasette agent chat content.db -m gpt-5.5 --unsafe command can now be used to chat directly with a specific database and directly modify it through prompts like \"create a notes table\", \"add a note about X\" etc."
-    },
-    {
-      "title": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
-      "link": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
-      "updated": "2026-06-15T14:57:33+00:00",
-      "summary": "\"They screwed us\": Personality clashes sent Anthropic's models offline. Lots of \"source familiar with the administration's thinking\" and \"source close to Anthropic\" in this Axios piece, which is the best collection of behind-the-scenes gossip I've seen about the US government export control Mythos/Fable story so far.",
-      "body": "15th June 2026 - Link Blog\n\n\"They screwed us\": Personality clashes sent Anthropic's models offline. Lots of \"source familiar with the administration's thinking\" and \"source close to Anthropic\" in this Axios piece, which is the best collection of behind-the-scenes gossip I've seen about the US government export control Mythos/Fable story so far.\n\nLogan Graham (I lead the Frontier Red Team at Anthropic), Dave Orr (Head of Safeguards, previously a Director of Engineering at Google DeepMind), and blog favorite Nicholas Carlini are reported to be meeting with the Commerce Department today in D.C. Good luck to them!\n\n(I just noticed Logan was \"Special Adviser to the Prime Minister\" in the Boris Johnson era, covering AI, science, and technology policy - so significant political experience.)\n\nThis closing notes doesn't give me much optimism that we'll be getting Fable back any time soon:\n\nThe bottom line: One option is to make sure Anthropic's models can't be jailbroken — though perfect jailbreak resistance may be impossible.\nAbsent that, a source familiar with the administration's thinking said it may simply come down to an attitude fix where, instead of feeling dismissed, \"everyone feels safe, secure and happy.\"\n\nThis made me wonder if Anthropic ever successfully addressed the class of attacks described in the Universal and Transferable Adversarial Attacks on Aligned Language Models paper from 2023.\n\nIt looks like their Constitutional Classifiers work (that post is from January this year) is relevant to that. They continue to claim that no \"universal jailbreak\" has been found against Claude Mythos, classifying the jailbreak that triggered the US government response as \"a potential narrow, non-universal jailbreak\"."
     }
   ]
 }

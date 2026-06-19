@@ -1,18 +1,42 @@
 {
-  "count": 33,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqjy18o2018cslhialdbdvi7",
-      "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
-      "title_en": "OpenAI is bringing on some big guns in the lead-up to its IPO",
-      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-18T19:59:22.000Z",
-      "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+      "id": "cmqlclrpp01h9sl2s1c94el8x",
+      "title": "JAWBONE Act：一项打击政府为压制合法网络言论而施压的新法案",
+      "title_en": "一项新法案旨在打击政府为压制合法网络言论而施加的压力",
+      "url": "https://www.eff.org/deeplinks/2026/06/new-bill-takes-aim-government-pressure-silence-lawful-online-speech",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-19T19:41:30.069Z",
+      "summary": "上周，参议员Ted Cruz和Ron Wyden提出两党法案JAWBONE Act，为受政府胁迫的广播商、互动计算机服务商及AI提供商创建针对政府官员的联邦诉讼权，并建立政府与中间方就用户表达问题沟通的透明度体系。法案旨在应对政府施压私营公司审查受第一修正案保护的言论。EFF支持该法案，并举证：2025年6月联邦高官威胁起诉ICEBlock创建者，同年10月司法部长要求苹果下架该应用。EFF还提起信息自由诉讼，要求披露政府与苹果、谷歌、Meta的沟通记录。",
       "category": "industry",
-      "score": 70,
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmql4yj5e014zsllucl69g3l6",
+      "title": "AlphaFold 负责人 John Jumper 离职 Google DeepMind，加入 Anthropic",
+      "title_en": "Thanks John for an extraordinary partnership and wonderful collaboration over the past 9 years！ What…",
+      "url": "https://x.com/demishassabis/status/2068002732250640603",
+      "source": "X：Demis Hassabis (@demishassabis)",
+      "publishedAt": "2026-06-19T16:07:27.000Z",
+      "summary": "AlphaFold 团队负责人 John Jumper 宣布，在 Google DeepMind 工作近 9 年后决定离职，将加入 Anthropic（先休整一段时间）。DeepMind CEO Demis Hassabis 表示，过去 9 年与 Jumper 的非凡合作改变了世界，AlphaFold 展示了 AI 在科学与医学领域的巨大潜力，并为 AI 造福人类指明了方向。Jumper 回忆，Hassabis 在他博士毕业仅 6 个月后就大胆让他领导 AlphaFold 团队，感谢团队教会他如何做伟大的科学。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqk6htvg03g1slhi1nagpabj",
+      "title": "八部门联合发文力推\"人工智能 + 消费\"，扩大 AI 手机电脑及智能网联汽车消费",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/966/295.htm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-18T23:56:08.000Z",
+      "summary": "商务部等8部门近日印发《关于加快\"人工智能 + 消费\"发展的实施意见》，从5方面提出17条举措。重点包括：扩大AI手机电脑、智能家居、智能网联汽车、智能穿戴、AI机器人等供给；推动AI与居家、养老、文旅、餐饮、教育等融合；促进AI在批发零售、电商、物流领域应用；建设集聚区和体验中心，开展产品租赁、共享、试用等模式创新；完善基础设施、标准体系和监管，推动互联互通。商务部将协同落实，促进AI进千家万户。",
+      "category": "industry",
+      "score": 76,
       "selected": true
     },
     {
@@ -25,18 +49,6 @@
       "summary": "美国联邦能源监管委员会（FERC）命令六大电网运营商为数据中心等大型用户提供快速并网通道，数据中心需承担并网费用。FERC同时要求运营商考虑\"替代输电技术\"，并在30天内报告剩余发电容量、60天内审查本区域电价。指令并未解决发电容量短缺问题。数据中心电力需求预计到2035年增长近三倍，而电网运营商此前长期应对近乎零的需求增长。据Bloomberg，部分地区批发电价较五年前上涨了267%。",
       "category": "industry",
       "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqjrpzbw069mslmheof3twe3",
-      "title": "伯尼·桑德斯提出7万亿美元AI计划：对大型AI公司征收50%股票税",
-      "title_en": "Bernie Sanders unveils $7 trillion plan to give Americans control of AI industry",
-      "url": "https://arstechnica.com/tech-policy/2026/06/bernie-sanders-unveils-7-trillion-plan-to-give-americans-control-of-ai-industry",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-18T17:02:49.000Z",
-      "summary": "伯尼·桑德斯提出立法，对年AI销售额超2亿美元的公司征收50%股票税，建立价值约7万亿美元的主权财富基金。基金每年向每位美国公民发放超1000美元股息（5%年股息），并资助医疗、教育、住房。同时成立由总统提名、参议院确认的两党\"民主AI独立委员会\"，通过投票权阻止公司损害公共利益。法案还要求AI公司剥离非AI业务。该计划面临共和党国会和特朗普政府阻力。",
-      "category": "industry",
-      "score": 72,
       "selected": true
     },
     {
@@ -88,18 +100,6 @@
       "selected": true
     },
     {
-      "id": "cmqiot8mp02u5sl5w0n1vprt0",
-      "title": "泄露文件显示OpenAI年营收130亿但亏损远超收入",
-      "title_en": "泄露的财务文件显示，OpenAI每年亏损数十亿美元",
-      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-17T23:09:09.056Z",
-      "summary": "OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。",
-      "category": "industry",
-      "score": 78,
-      "selected": true
-    },
-    {
       "id": "cmqiotxxz02vfsl5wx32nujv2",
       "title": "库克：AI 浪潮引发存储芯片价格暴涨，iPhone 等苹果产品涨价已\"不可避免\"",
       "title_en": null,
@@ -121,18 +121,6 @@
       "summary": "Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。",
       "category": "industry",
       "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmqhly7hf0068slf0ujjfjo0x",
-      "title": "消息称 OpenAI 今年一季度现金消耗达 37 亿美元，超同期收入的一半",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/965/335.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-17T04:55:33.000Z",
-      "summary": "OpenAI 在 2026 年第一季度现金消耗达 37 亿美元，超过同期 57 亿美元收入的一半。数据来自一份向股东披露的文件，直观体现 AI 大模型研发与规模化落地的巨额成本。OpenAI 正筹备上市，已在美国保密递交 IPO 申请，最早或于 9 月完成，估值最高可达 1 万亿美元。头部 AI 企业持续重金投入算力、模型研发与人才招募以维持竞争优势。",
-      "category": "industry",
-      "score": 73,
       "selected": true
     },
     {
@@ -172,18 +160,6 @@
       "selected": true
     },
     {
-      "id": "cmqgvsb7s00z8slpu7p31yn17",
-      "title": "Fable 遭美国政府封禁，TechCrunch 质疑真正原因并非模型越狱",
-      "title_en": "《Fable》的封禁从来就不是因为越狱吗？",
-      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-16T16:45:18.627Z",
-      "summary": "美国政府对 Anthropic 的模型 Fable 实施封禁，但 TechCrunch 发文质疑，实际原因可能并非此前认为的\"模型越狱\"问题。该文章在 Hacker News 引发讨论，获得 103 个点赞。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
       "id": "cmqi9mvca06wuslf0gcpfh1hv",
       "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
       "title_en": "Announcing the Agentic Resource Discovery specification",
@@ -217,30 +193,6 @@
       "summary": "美国司法部在一份驳回诉讼的动议中称，xAI的聊天机器人Grok对军事行动至关重要，以此为其在密西西比州Southaven的Colossus 2设施运行未经许可的燃气轮机辩护。NAACP已提起诉讼，指控xAI的燃气轮机数量从4月的27台增至57台，导致氮氧化物排放飙升111%。国防部首席数字与人工智能官Cameron Stanley表示，Grok是支持机密和绝密网络军事任务的四款AI模型之一，包括近期针对伊朗的打击。",
       "category": "industry",
       "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmqgkvm4200l7slicgdylqprd",
-      "title": "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor",
-      "title_en": "SpaceX to acquire Cursor for $60B in stock， days after blockbuster IPO",
-      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-16T11:21:41.000Z",
-      "summary": "SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 实验室。此前 Cursor 正接近完成一轮 20 亿美元融资，估值 500 亿美元，投资方包括 Andreessen Horowitz、Thrive 和 Nvidia。SpaceX 在 IPO 期间向投资者表示，其 AI 产品可寻址市场达 26 万亿美元。交易预计于今年第三季度完成。",
-      "category": "industry",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqggy29t00gaslevgnwfv3sl",
-      "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
-      "title_en": "DeepSeek takes outside money for the first time at a $50 billion valuation",
-      "url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-16T09:40:48.000Z",
-      "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
-      "category": "industry",
-      "score": 72,
       "selected": true
     },
     {
@@ -325,78 +277,6 @@
       "summary": "谷歌Android平台安全负责人René Mayrhofer辞职，他在5月18日内部告别信中指责公司\"丧失道德指针\"，批评谷歌悄悄放弃碳中和目标（因AI模型能耗），并与美国战争部签署允许AI用于\"任何合法目的\"的协议。今年4月下旬谷歌宣布向五角大楼提供AI用于机密工作，2025年2月更新AI原则时移除了不使用AI开发武器或监控工具的承诺。Mayrhofer担忧谷歌AI产品可能被用于针对公民的大规模监控，包括自己和家人。",
       "category": "industry",
       "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmqc1kg4p00ctsl9bfiuzkt6u",
-      "title": "Zuckerberg承认 Meta AI 转型\"脱轨\"：裁员 10%、转岗 7000 人后组织调整过快",
-      "title_en": "Meta 裁员 10%、转岗约 7000 人后，扎克伯格坦言公司 AI 转型\"脱轨\"",
-      "url": "https://www.ithome.com/0/963/858.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-13T06:49:25.000Z",
-      "summary": "路透社披露的 Meta 内部备忘录显示，CEO Zuckerberg承认公司在 AI 转型中组织调整节奏过快，带来员工安置、管理跨度等问题，预计未来\"几乎肯定会犯更多错误\"。Meta 今年 5 月已裁减全球 10% 员工，并将 7000 人转入 AI 相关新项目。为缓解协作问题，公司将增加团队建设预算，7 月举办黑客松。新成立的应用 AI 工程部门个人贡献者与管理者比例最高达 50：1。Zuckerberg重申今年不再全公司裁员。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqb8kxwd00jqslru2t0t7knf",
-      "title": "乌克兰测试用完全自主无人机击杀俄军士兵",
-      "title_en": "Ukraine's one-time test used fully autonomous drones to kill Russian soldiers",
-      "url": "https://arstechnica.com/ai/2026/06/ukraines-one-time-test-used-fully-autonomous-drones-to-kill-russian-soldiers",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-12T18:03:29.000Z",
-      "summary": "完全自主的无人机仍属罕见，但乌克兰正为无人机和机器人加装AI模块，提升自主作战能力。此前一次测试中，乌军首次使用完全自主无人机击杀俄军士兵。",
-      "category": "industry",
-      "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmqb99dkw00pyslruihl7p4h6",
-      "title": "Google 起诉被指使用 AI 发送诈骗短信的中国网络犯罪团伙\"Outsider Enterprise\"",
-      "title_en": "Google sues alleged Chinese cybercrime operation that used AI to send scam texts",
-      "url": "https://techcrunch.com/2026/06/12/google-sues-alleged-chinese-cybercrime-operation-that-used-ai-to-send-scam-texts",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-12T17:26:08.000Z",
-      "summary": "Google 起诉一个名为\"Outsider Enterprise\"的组织，指控其利用人工智能在两周内发送了 250 万条诈骗短信，导致数十万受害者上当。该组织被描述为中国网络犯罪团伙。",
-      "category": "industry",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqb7ichm009mslruda4cweq1",
-      "title": "今年价值1300亿美元的数据中心项目因抗议被叫停",
-      "title_en": "$130 billion in data center projects blocked by protests so far this year",
-      "url": "https://arstechnica.com/tech-policy/2026/06/130-billion-in-data-center-projects-blocked-by-protests-so-far-this-year",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-12T17:18:49.000Z",
-      "summary": "截至今年，抗议活动已成功阻止价值约1300亿美元的AI数据中心项目。反对者通过组织行动阻碍了多地的开发计划，称这一胜利让参与者\"尝到了政治权力的滋味\"。抗议主要针对数据中心带来的能源消耗、水资源占用和环境影响，部分项目已被政府暂停或重新审查。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqaumbha0oz5slldur6mcs8h",
-      "title": "Pokémon Go玩家无意中为军用无人机技术贡献数据，引发持续审视",
-      "title_en": "Pokémon Go players unwittingly contributed to tech with military drone uses",
-      "url": "https://arstechnica.com/ai/2026/06/pokemon-go-players-unwittingly-contributed-to-tech-with-military-drone-uses",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-12T11:15:41.000Z",
-      "summary": "Pokémon Go玩家在游戏中收集的数据被重新用于AI训练，支持军用无人机技术。这一做法持续引发各方审视。",
-      "category": "industry",
-      "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmqatz4nc0otgslld30imx725",
-      "title": "DeepMind机器人加速器启动15家初创公司",
-      "title_en": "Our Robotics Accelerator has launched with 15 startups helping shape the future of physical AI in Eu…",
-      "url": "https://x.com/GoogleDeepMind/status/2065388989146628563",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-06-12T11:01:22.000Z",
-      "summary": "我们的机器人加速器已启动，15家初创公司助力塑造欧洲的物理AI未来。🤖\n\n这个为期三个月的项目将为他们提供我们的AI堆栈、Gemini Robotics模型以及我们团队的实际支持。\n\n了解这些公司 → https：//goo.gle/4oeEk2K",
-      "category": "industry",
-      "score": 67,
       "selected": true
     }
   ]

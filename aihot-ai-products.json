@@ -1,42 +1,42 @@
 {
-  "count": 49,
+  "count": 41,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqjv0f7b00icslhi7qozgr78",
-      "title": "Claude Code 现已支持 artifacts",
-      "title_en": "Claude Code now supports artifacts",
-      "url": "https://claude.com/blog/artifacts-in-claude-code",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-06-18T18:54:47.698Z",
-      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试：工程师调查事件，Claude Code 分析日志并发布包含时间线、嫌疑提交和错误率图表的 artifact，团队无需再\"走过场式汇报\"。",
+      "id": "cmqkzxdp0009eslcw0jlr6pvl",
+      "title": "Cloudflare 为 AI 智能体推出临时账户",
+      "title_en": "Temporary Cloudflare Accounts for AI agents",
+      "url": "https://blog.cloudflare.com/temporary-accounts",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-06-19T13:00:00.000Z",
+      "summary": "Cloudflare 在 Workers 上推出临时账户（Temporary Accounts），允许 AI 智能体直接运行 `wrangler deploy --temporary`，在数秒内获取一个可用的实时 Worker，无需绕开面向人类设计的部署流程。该功能旨在降低智能体部署门槛。",
       "category": "ai-products",
-      "score": 72,
+      "score": 62,
       "selected": true
     },
     {
-      "id": "cmqjuxull00fuslhitp791yyz",
-      "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
-      "title_en": "We've collaborating with hundreds of physicians across 60 countries， 49 languages， and 26 specialtie…",
-      "url": "https://x.com/gdb/status/2067675030335668270",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-06-18T18:25:17.000Z",
-      "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
+      "id": "cmqkhbjf5069eslhiepqm55gr",
+      "title": "阿里开源向量数据库Zvec，UCSD黄碧薇教授提出因果AI第四代范式",
+      "title_en": "卧槽，阿里把内部用了多年的向量数据库直接开源了，Pinecone每月70刀的能力，它pip一行免费就能用，十亿向量毫秒级还不用单独起服务🤯 以后做RAG和AI搜索的，不用再每月给Pinecone交…",
+      "url": "https://x.com/AYi_AInotes/status/2067832098816250346",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-06-19T04:49:25.000Z",
+      "summary": "阿里开源内部向量数据库Zvec，pip install zvec免费使用，对标Pinecone每月70美元能力。支持十亿向量毫秒级检索，无需单独起服务，全平台兼容；v0.5.0新增原生全文混合搜索。UCSD黄碧薇教授（causal-learn作者）提出AI四代范式：相关性小模型→因果小模型→相关性大模型（LLM）→因果大模型，认为当前正站在第四代门口。其创立的Aether AI完成首轮融资，致力于从视频中自动抽取物理规律，探索下一代因果AI范式。",
       "category": "ai-products",
       "score": 79,
       "selected": true
     },
     {
-      "id": "cmqjsqzm906hvslmhamqrju3u",
-      "title": "Claude Enterprise 推出企业托管 MCP 连接器授权管理",
-      "title_en": "Centrally manage authorization for MCP connectors",
-      "url": "https://claude.com/blog/enterprise-managed-auth",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-06-18T17:51:29.795Z",
-      "summary": "Claude Enterprise 推出企业托管授权功能，管理员可通过身份提供商（率先支持 Okta）为整个组织配置 MCP 连接器。用户首次登录 Claude 时自动获得授权，无需手动操作，实现零接触设置。该功能基于 Model Context Protocol 的 Enterprise-Managed Authorization 扩展构建，支持 Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等 MCP 提供商，Slack 即将支持。授权管理集成到现有 IdP 工作流中，可按组限定范围、通过 IdP 快速撤销授权，并支持要求连接器仅通过 IdP 连接以隔离工作与个人使用。",
+      "id": "cmqk5umoz03d0slhi4qnma1r3",
+      "title": "AI 员工 Viktor 登陆 Microsoft Teams，年化收入达 2000 万美元",
+      "title_en": "Viktor grew a $20M annualized revenue run rate outside Microsoft Teams. Now it works inside Teams. …",
+      "url": "https://x.com/rohanpaul_ai/status/2067755504613613699",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-18T23:45:03.000Z",
+      "summary": "AI 员工 Viktor 在 Slack 上实现 2000 万美元年化收入（无销售团队、未大规模推广），现已正式进驻 Microsoft Teams。Viktor 定位为零门槛 AI：用户无需学习、无需提示词，像 @同事 一样提及即可获得完整工作成果，甚至无需主动 @ 也能自动完成。产品面向 Teams 的 3.2 亿用户，助力企业内部运营和管理人员零学习成本使用 AI。即日起免费试用，含 100 美元信用额度，无需绑定信用卡。",
       "category": "ai-products",
-      "score": 68,
+      "score": 75,
       "selected": true
     },
     {
@@ -73,18 +73,6 @@
       "summary": "每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。",
       "category": "ai-products",
       "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmqja53m201fgslmhigeqiqu6",
-      "title": "Kimi Work 新增目标模式与插件中心，6月推出额度消耗5折福利",
-      "title_en": "Kimi Work 上新：目标模式、插件中心和 6 月限时福利",
-      "url": "https://mp.weixin.qq.com/s/KJav-s9qlkzV9yN8r6-sNg",
-      "source": "公众号：月之暗面（Kimi）",
-      "publishedAt": "2026-06-18T09:06:57.000Z",
-      "summary": "月之暗面旗下 Kimi Work（Beta 版）新增「目标模式」，支持设定终点后由 Agent 自主循环推进任务，最长连续运行24小时，过程中人类可随时中断调整。同时上线「插件中心」，可选装百度网盘、Canva可画、钉钉、飞书、WPS、Notion、Cloudflare 等外部应用。6月限时福利期间，Kimi 电脑客户端 Work 模式所有任务会员额度消耗减半，即从0.02%降至0.01%。",
-      "category": "ai-products",
-      "score": 70,
       "selected": true
     },
     {
@@ -136,18 +124,6 @@
       "selected": true
     },
     {
-      "id": "cmqit4gtr0410sl5w4ovwwmwa",
-      "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/965/734.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-18T00:43:26.000Z",
-      "summary": "在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true
-    },
-    {
       "id": "cmqjw516300uqslhirb12dvrf",
       "title": "xAI 发布 Grok for Word 插件",
       "title_en": "Grok for Word Jun 18， 2026 # Grok for Word Use the Grok add-in for Microsoft Word to turn notes into documents， style and format your work， or bring research from the web into Word. Read More",
@@ -184,15 +160,15 @@
       "selected": true
     },
     {
-      "id": "cmqihbkcr00xcsl5wavwez5ua",
-      "title": "Claude Design与Replit联动，设计变应用",
-      "title_en": "Design in Claude. Build in Replit You can now send your design from Claude Design to Replit to turn…",
-      "url": "https://x.com/Replit/status/2067328501003497684",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-06-17T19:28:18.000Z",
-      "summary": "在Claude中设计。在Replit中构建。\n\n你现在可以将Claude Design中的设计发送到Replit，将其变成一个可工作的应用。",
+      "id": "cmqimp36k02crsl5w124pcg7q",
+      "title": "Cloudflare 将更多智能体框架引入平台，以 Flue 为首",
+      "title_en": "Bringing more agent harnesses and frameworks to Cloudflare， starting with Flue",
+      "url": "https://blog.cloudflare.com/agents-platform-flue-sdk",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-06-17T19:35:00.000Z",
+      "summary": "Cloudflare Agents SDK 现已成为任何智能体框架均可构建的运行时。Cloudflare 开放了 Agents SDK 原语，Flue 成为首个针对该 SDK 的框架，同时仪表盘中已推出智能体功能。",
       "category": "ai-products",
-      "score": 69,
+      "score": 64,
       "selected": true
     },
     {
@@ -217,6 +193,30 @@
       "summary": "Google推出首款专为Gemini打造的智能音箱Google Home Speaker，售价99.99美元。支持自然语言请求和多步指令，可在说话中途纠正，并具备连续对话功能。内置10种新声音。高级AI功能需订阅Google Home Premium（月费10美元或年费100美元），包括Gemini Live自由对话、Nest摄像头活动摘要等。即日起预售，本月发货。",
       "category": "ai-products",
       "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqjv0f7b00icslhi7qozgr78",
+      "title": "Claude Code 现已支持 artifacts",
+      "title_en": "Claude Code now supports artifacts",
+      "url": "https://claude.com/blog/artifacts-in-claude-code",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-06-17T16:00:00.000Z",
+      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试：工程师调查事件，Claude Code 分析日志并发布包含时间线、嫌疑提交和错误率图表的 artifact，团队无需再\"走过场式汇报\"。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqjsqzm906hvslmhamqrju3u",
+      "title": "Claude Enterprise 推出企业托管 MCP 连接器授权管理",
+      "title_en": "Centrally manage authorization for MCP connectors",
+      "url": "https://claude.com/blog/enterprise-managed-auth",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-06-17T16:00:00.000Z",
+      "summary": "Claude Enterprise 推出企业托管授权功能，管理员可通过身份提供商（率先支持 Okta）为整个组织配置 MCP 连接器。用户首次登录 Claude 时自动获得授权，无需手动操作，实现零接触设置。该功能基于 Model Context Protocol 的 Enterprise-Managed Authorization 扩展构建，支持 Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等 MCP 提供商，Slack 即将支持。授权管理集成到现有 IdP 工作流中，可按组限定范围、通过 IdP 快速撤销授权，并支持要求连接器仅通过 IdP 连接以隔离工作与个人使用。",
+      "category": "ai-products",
+      "score": 68,
       "selected": true
     },
     {
@@ -289,18 +289,6 @@
       "summary": "在 Mathematica 诞生近 38 年后，Wolfram 语言与 Mathematica 发布 Version 15。每个笔记本内置 AI 助手，支持从 AI 环境中直接调用 Wolfram 技术。新增符号音乐系统、大规模时间序列与事件序列处理、分类数据计算、模型拟合超函数 ModelFit。笔记本支持千兆字节级大小与实时查找，首次引入侧边栏、视觉主题及弃用功能样式。强化了表格连接、多点可视化、图形刻度绘制与轨道运行计算等功能。DSolve 拐角处获得 AI 方法辅助，支持偏微分方程曲线坐标求解。扩充了矩阵分解、多元 zeta 函数与调和数、流线型部分分式分解。强化了 WebSocket 实时连接、Python 交互改进，支持 CUDA 内核作为外部函数，Wolfram Compute Services 新增 GPU 支持。",
       "category": "ai-products",
       "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqh78bnl01mrsle11gmghtv0",
-      "title": "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览",
-      "title_en": "Draft mode for V8.1 and new feature previews",
-      "url": "https://updates.midjourney.com/draft-mode-for-v8-1-and-new-feature-previews",
-      "source": "Midjourney：Updates（RSS）",
-      "publishedAt": "2026-06-16T22:04:29.000Z",
-      "summary": "Midjourney V8.1 的 Draft mode 草稿模式每次生成24张低分辨率低质量图片。用户可对任意图片点击 \"Vary\"，将其渲染为全质量、全分辨率版本。草稿任务消耗的快速小时数减半。",
-      "category": "ai-products",
-      "score": 66,
       "selected": true
     },
     {
@@ -436,18 +424,6 @@
       "selected": true
     },
     {
-      "id": "cmqfjwkcg00nsslq8hl0hy4hc",
-      "title": "OpenRouter新增免费模型gpt-oss-20b和Gemma4 26B",
-      "title_en": "New Free capacity on OpenRouter， served by @eigenlabs's Darkbloom： gpt-oss-20b and Gemma 4 26B Star…",
-      "url": "https://x.com/OpenRouter/status/2066585705581797616",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-06-15T18:16:42.000Z",
-      "summary": "OpenRouter 上新增免费容量，由 @eigenlabs 的 Darkbloom 提供：gpt-oss-20b 和 Gemma 4 26B。\n今天就开始使用这些模型吧 ↓",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true
-    },
-    {
       "id": "cmqf2oucs027eslwayb6fe3ro",
       "title": "6倍速！Kimi K2.7 Code 高速版已上线",
       "title_en": "6 倍速！Kimi K2.7 Code 高速版已上线",
@@ -484,18 +460,6 @@
       "selected": true
     },
     {
-      "id": "cmqcoyrfo00ieslttjd60zi3a",
-      "title": "Suno 音轨分离：从零生成更纯净",
-      "title_en": "Major update： Stem separation on Suno just got a massive level up. 🚀 We're now regenerating stems …",
-      "url": "https://x.com/suno/status/2065862499765821916",
-      "source": "X：Suno (@suno)",
-      "publishedAt": "2026-06-13T18:22:56.000Z",
-      "summary": "重大更新：Suno 的音轨分离刚刚大幅升级。🚀\n\n我们现在从零重新生成音轨，而非仅仅隔离频率。结果如何？纯净无伪影的音轨，可直接拖入你的 DAW。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true
-    },
-    {
       "id": "cmqcopoix00f8slttxcyouu31",
       "title": "Fusion API：半价达Fable级智能",
       "title_en": "Introducing the Fusion API， the smartest compound model in the market. Fusion achieves Fable-level …",
@@ -520,75 +484,15 @@
       "selected": true
     },
     {
-      "id": "cmqb4534400wqsl9znvhs39jk",
-      "title": "olmo-eval：面向模型开发循环的评估工作台",
-      "title_en": "olmo-eval： An evaluation workbench for the model development loop",
-      "url": "https://huggingface.co/blog/allenai/olmo-eval",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-12T15:56:10.000Z",
-      "summary": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+      "id": "cmqbi1j6001otslamifftgpw8",
+      "title": "GitHub Copilot CLI 在委托任务上变得更具选择性",
+      "title_en": "How we made GitHub Copilot CLI more selective about delegation",
+      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-06-12T22:26:23.000Z",
+      "summary": "GitHub Copilot CLI 通过更好的编排实现了更少的任务交接和更快的进度，且没有新增任何配置选项。",
       "category": "ai-products",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqb39p8x00o2sl9z85e1r79i",
-      "title": "字节豆包上线\"任务模式\"：支持定时执行与文件生成，\"思考模式\"升级为\"专家模式\"",
-      "title_en": "字节豆包上线\"任务模式\"：支持定时执行、代码运行与文件生成，\"思考模式\"已升级为\"专家模式\"",
-      "url": "https://www.ithome.com/0/963/725.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-12T15:33:19.000Z",
-      "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线\"任务模式\"，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原\"思考模式\"升级为\"专家模式\"，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为\"快速、专家、任务\"。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqabcv2q0jvmslldd7my04uo",
-      "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
-      "title_en": "苹果升级 iOS 27 版健康 App：卡片布局、评估食物营养、追踪围绝经期等",
-      "url": "https://www.ithome.com/0/963/302.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-12T02:06:41.000Z",
-      "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqa7bz2g0itbslld0f4rluhk",
-      "title": "Codex 推出浏览器开发者模式",
-      "title_en": "Introducing developer mode for browser use in Chrome and the Codex in-app browser. Codex can use th…",
-      "url": "https://x.com/OpenAIDevs/status/2065226355495895521",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-06-12T00:15:07.000Z",
-      "summary": "为 Chrome 和 Codex 内置浏览器引入开发者模式。\n\nCodex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmqa6vs2i0iodslldledhp882",
-      "title": "OpenAI Codex 推出速率重置攒存功能",
-      "title_en": "We heard you wanted to use Codex rate limit resets on your own time. Starting today， we're rolling …",
-      "url": "https://x.com/OpenAI/status/2065225362544726371",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-06-12T00:11:11.000Z",
-      "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqck73e2001gslzwhu2x5dcg",
-      "title": "OpenRouter融合预算模型面板超越GPT-5.5和Claude Opus 4.8",
-      "title_en": "Surpassing Frontier Performance with Fusion",
-      "url": "https://openrouter.ai/blog/announcements/fusion-beats-frontier",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-06-12T00:00:00.000Z",
-      "summary": "通过OpenRouter融合的一组预算模型，在100个复杂研究任务上得分超过GPT-5.5和Claude Opus 4.8。",
-      "category": "ai-products",
-      "score": 73,
+      "score": 61,
       "selected": true
     }
   ]

@@ -28,15 +28,15 @@
       "selected": true
     },
     {
-      "id": "cmqjpkj4105oqslmh4rmirant",
-      "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
-      "title_en": "Project Fetch： Phase two",
-      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-18T16:22:33.561Z",
-      "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+      "id": "cmqjmc80604sqslmhz4738b0k",
+      "title": "Nature两篇研究：MIRA和AMIE诊断与治疗计划媲美甚至超越医生",
+      "title_en": "AI systems rival doctors in new Nature studies， but one result suggests the tech won't age well",
+      "url": "https://the-decoder.com/ai-systems-rival-doctors-in-new-nature-studies-but-one-result-suggests-the-tech-wont-age-well",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-18T14:37:06.000Z",
+      "summary": "德国团队开发的MIRA智能体在模拟电子病历中操作85，000种选项，500余例急诊诊断准确率88.9%，对比测试（311例）得分87.8%，高于资深专科医生（78.1%）和混合团队（71.1%）。MIRA在阑尾炎（98.6%）和胰腺炎（92.3%）最佳，未发现危险药物交互或剂量错误，性能不受语言影响，代码已公开。谷歌AMIE采用双智能体架构，在100个多访视病例中治疗计划适切率95%（初级保健医生72%），并在药物知识基准RxQA上超过医生。两项研究均警告模拟环境与现实存在差距，实际性能可能更低。",
       "category": "paper",
-      "score": 77,
+      "score": 78,
       "selected": true
     },
     {
@@ -64,6 +64,18 @@
       "selected": true
     },
     {
+      "id": "cmqkmvyxz00hxslh6sv4zzxc7",
+      "title": "HumanScale：自我中心人类视频在具身预训练中可超越真实机器人数据",
+      "title_en": "HumanScale： Egocentric Human Video Can Outperform Real-Robot Data for Embodied Pretraining",
+      "url": "https://arxiv.org/abs/2606.20521",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-18T00:00:00.000Z",
+      "summary": "HumanScale项目比较了自我中心人类视频与遥操作真实机器人轨迹作为具身基础模型预训练数据源。经精心设计的过滤与标注流程后，基于自我中心数据预训练的模型在真实机器人动作预测上验证损失降低24%，分布内任务成功率高52.5%，分布外任务成功率高90%。研究验证了一种可扩展范式：先以人类视频预训练学习多样世界表征，再以少量标注机器人数据微调对齐动作空间。",
+      "category": "paper",
+      "score": 75,
+      "selected": true
+    },
+    {
       "id": "cmqiakygm075xslf0a7v3eqfl",
       "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
       "title_en": "I made Physical AutoResearch sound simple （conceptually）， but it took a village to pull off and lots…",
@@ -73,6 +85,18 @@
       "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
       "category": "paper",
       "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmqjpkj4105oqslmh4rmirant",
+      "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+      "title_en": "Project Fetch： Phase two",
+      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-06-17T16:00:00.000Z",
+      "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+      "category": "paper",
+      "score": 77,
       "selected": true
     },
     {
@@ -148,18 +172,6 @@
       "selected": true
     },
     {
-      "id": "cmqh1kwnx002asle1lo0di435",
-      "title": "Anthropic：智能体编码中专业知识回报持续存在",
-      "title_en": "Agentic coding and persistent returns to expertise",
-      "url": "https://www.anthropic.com/research/claude-code-expertise",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-15T16:00:00.000Z",
-      "summary": "Anthropic 基于约40万次 Claude Code 交互会话（2025年10月至2026年4月）分析发现：人类主导规划决策（做什么），Claude 主导执行决策（怎么做）。领域专业知识越强，模型每次指令完成的工作量越多。各类职业完成任务的成功率与软件工程师平均相近；领域专家成功率更高，但与中级用户差距不大。七个月间调试会话占比下降近一半，使用转向端到端智能体任务（部署运行代码、分析数据、编写非代码文档），典型任务价值平均上升约25%。",
-      "category": "paper",
-      "score": 76,
-      "selected": true
-    },
-    {
       "id": "cmqfzukav0264slspmybg065u",
       "title": "伯克利RDI发布Agents' Last Exam基准",
       "title_en": "Agents' Last Exam",
@@ -169,18 +181,6 @@
       "summary": "2026年6月，伯克利RDI发布Agents' Last Exam（ALE）基准，包含1，500余项源于真实工作的任务，覆盖55个非体力职业。对Fable 5、GPT-5.5、Composer 2.5等前沿智能体的测评显示：在最困难层级成功率均为0%；整体任务表现接近，但单任务成本差异巨大（Fable 5约$15.70，GPT-5.5约$3.80，Composer 2.5约$1.33）。CLI子集ALE-CLI最佳通过率仅25.2%。主要失败模式是智能体未验证输出即宣称完成。数据集、代码及CLI子集已开源。",
       "category": "paper",
       "score": 83,
-      "selected": true
-    },
-    {
-      "id": "cmqb80i4m00faslruqcckz9xw",
-      "title": "Maxproof 论文发布",
-      "title_en": "Maxproof",
-      "url": "https://arxiv.org/abs/2606.13473",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-12T17:37:58.476Z",
-      "summary": "6月12日，名为 Maxproof 的论文在 arXiv 上发布，并在 Hacker News 上获得 100 点热度。",
-      "category": "paper",
-      "score": 71,
       "selected": true
     }
   ]
