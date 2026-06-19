@@ -1,67 +1,49 @@
 {
-  "generated_at": "2026-06-16T22:35:00.000Z",
+  "generated_at": "2026-06-19T21:51:00.000Z",
   "summaries": {
-    "https://openai.com/index/deployment-simulation": {
-      "en": "OpenAI describes Deployment Simulation, a pre-release safety method that replays anonymised past conversations through a candidate model to predict how it will misbehave in the wild. Across GPT-5 Thinking deployments it estimated undesired behavior rates within roughly 1.5 times of real rates, surfaced calculator hacking before launch, and reduced evaluation awareness because the contexts look like real traffic. It also extends to agentic coding by simulating tool calls with another model, complementing red-teaming rather than replacing it.",
-      "zh": "OpenAI 介绍了 Deployment Simulation，一种发布前安全方法：用候选模型重放过去匿名化的对话，预测其上线后可能出现的不良行为。在 GPT-5 Thinking 系列上，该方法估算偏差约 1.5 倍，在发布前发现了 calculator hacking，并几乎不被模型识别为测试。配合工具模拟也可用于 agentic 编码场景，作为红队评估的补充而非替代。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9w6my/researchers_trained_a_deep_research_agent_with_32/": {
+      "en": "Ohio State University's NLP team released QUEST-35B, an open-source Deep Research agent trained on roughly 32 H100 GPUs using about 8000 synthetic samples. The team published the full training recipe, code, weights, and datasets, and reports competitive benchmark results against several frontier closed Deep Research systems. The release prompts discussion of the remaining gap between open agents and proprietary research stacks at the frontier.",
+      "zh": "俄亥俄州立大学 NLP 团队发布开源 Deep Research 代理 QUEST-35B，使用约 32 块 H100 GPU 与约 8000 条合成样本训练完成。团队同步开源训练流程、代码、权重与数据集，并在基准测试中展现出与多款前沿封闭 Deep Research 系统相竞争的成绩，引发关于开源代理与闭源前沿系统之间剩余差距的讨论。"
     },
-    "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything": {
-      "en": "Simon quotes Georgi Gerganov saying Qwen 3.6 27B is a very capable local coding model. Gerganov has been using it daily for the last month and a half on his M2 Ultra and RTX 5090, mostly for small maintainer tasks at ggml-org. He runs it through a stripped-down pi agent harness in offline mode with a short system prompt to align the model with his style, and would use it more if PR reviews took less time.",
-      "zh": "Simon 转引 Georgi Gerganov 的评价：Qwen 3.6 27B 是一款非常出色的本地编程模型。他过去一个半月几乎每天都在 M2 Ultra 与 RTX 5090 上使用它，主要处理 ggml-org 维护中的小型琐碎任务。他用极简的 pi 代理（离线模式）配上简短的系统提示，让模型贴合自己的风格，若不是花太多时间审 PR 还会用得更多。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9vfhf/glm52_can_now_run_locally_in_llamacpp_and_unsloth/": {
+      "en": "Unsloth announced that GLM-5.2 now runs locally in llama.cpp and Unsloth Studio. The team's two-bit quantization compresses the model from 1.51 terabytes down to 238 gigabytes, an 84 percent size reduction, while retaining about 82 percent of original accuracy. The quantized GGUFs target 256 gigabyte Mac machines and other large memory or video memory setups. Unsloth positions GLM-5.2 as the strongest open model released to date.",
+      "zh": "Unsloth 宣布 GLM-5.2 现已可在 llama.cpp 与 Unsloth Studio 本地运行。团队的二位量化将模型体积从 1.51 TB 压缩至 238 GB，缩减约 84%，同时保留约 82% 原始准确率，可在 256 GB 内存的 Mac 或大显存机器上运行。Unsloth 称 GLM-5.2 是目前最强的开源模型。"
     },
-    "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything": {
-      "en": "Simon highlights Kate Moussouris arguing that the jailbreak used to justify export controls on Claude Fable 5 was simply asking the model to fix this code. Researchers fed real and seeded vulnerabilities to several models; Fable 5 refused to review for security issues but fixed bugs when asked. Moussouris says that find, fix, and test loop is exactly what defenders need and cannot be removed without crippling the model. Simon worries non-technical policymakers are banning defensive AI.",
-      "zh": "Simon 引述 Kate Moussouris：用来正当化 Claude Fable 5 出口管制的所谓越狱，其实只是请模型修复这段代码。研究人员让多家模型审查含漏洞的代码，Fable 5 拒绝审查但愿意修复，而这正是防御者日常的查找、修复、测试循环。Moussouris 称无法在不削弱模型的前提下去掉该能力，Simon 担忧非技术决策者正在禁掉防御性 AI。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9yt6v/new_agentic_benchmark_out_claude_fable_and_glm_52/": {
+      "en": "Artificial Analysis published a new agentic benchmark called Briefcase that tests language model planning and task execution rather than narrow knowledge. The post highlights Claude Fable topping the closed cohort and GLM-5.2 topping the open-weights cohort, suggesting frontier closed and strongest open releases are now competitive on practical agent tasks. The author emphasizes that the benchmark is fresh and unsaturated, making targeted benchmark gaming unlikely for the moment.",
+      "zh": "Artificial Analysis 发布全新代理基准 Briefcase，重点考察大模型的规划与任务执行能力而非单纯知识。文章指出 Claude Fable 领跑封闭组，GLM-5.2 在开源组登顶，说明前沿闭源与最强开源在实际代理任务上已相当接近。作者强调该基准尚未被刷榜，目前难以被针对性优化。"
     },
-    "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything": {
-      "en": "Simon quotes The Atlantic's Matteo Wong reporting that Anthropic showed Katie Moussouris the White House report on the Fable jailbreak. According to Moussouris, IT experts gave Fable deliberately insecure code; the model refused the prompt review the code for security issues but complied with fix this code plus some manual steps. She called this the model working as intended for cyberdefense, framing the report as evidence of useful defensive behavior rather than dangerous capability.",
-      "zh": "Simon 转引 The Atlantic 记者 Matteo Wong 的报道：Anthropic 把白宫关于 Fable 越狱的报告交给 Katie Moussouris 评估。她说 IT 专家给 Fable 故意带漏洞的代码，模型拒绝审查代码安全问题，但在被要求修复这段代码并经过若干手动步骤后照办。她认为这恰是模型为网络防御按预期工作，而非危险能力的证据。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ua5b16/the_economics_of_ai_are_starting_to_favor_open/": {
+      "en": "The post argues that the long-standing tradeoff between smartest closed models and cheaper open alternatives is breaking down. Recent releases from DeepSeek, Qwen, GLM, Kimi, and MiniMax increasingly occupy the high intelligence, low cost quadrant, while most real workloads need good-enough rather than absolute frontier capability. Closed APIs still win on reliability and zero infrastructure, but the author predicts businesses will soon question paying ten times more for marginal gains.",
+      "zh": "文章认为封闭模型最聪明、开源模型更便宜的传统取舍正在瓦解。DeepSeek、Qwen、GLM、Kimi、MiniMax 等近期开源模型越来越多地占据高智能低成本象限，而大多数实际工作负载只需够用而非顶级能力。封闭 API 仍胜在零运维与可靠性，但作者预测企业很快会质疑为 5% 的提升支付十倍价格。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u795pb/donate_your_coding_sessions_to_an_open_ccby40/": {
-      "en": "The poster worries that Anthropic and OpenAI are accumulating exclusive training data from Claude Code and Codex usage, creating an oligopoly that leaves open-weight models behind. They launched Trace Commons, an initiative inviting people to donate their coding agent traces to a shared Creative Commons attribution dataset hosted on Hugging Face, so independent labs can train competitive open models on the same kind of real-world signal. Feedback is welcomed.",
-      "zh": "发帖人担心 Anthropic 与 OpenAI 借 Claude Code 和 Codex 获取独家训练数据，形成寡头格局，让开源权重模型被甩在后头。他启动 Trace Commons 项目，邀请大家把编程 agent 轨迹捐到一份基于 Creative Commons 署名协议的共享数据集（托管在 Hugging Face），让独立实验室也能用同样的真实信号训练有竞争力的开源模型。",
-      "title_en": "Donate your coding sessions to an open Creative Commons attribution dataset to help train open-weight and open source models",
-      "title_zh": "把你的编程会话捐给开放的 Creative Commons 署名数据集 帮助训练开源权重与开源模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9mpty/glm52_744b_2bit_at_73_toks_on_43090_192gb_and_why/": {
+      "en": "A hobbyist runs GLM-5.2 in two-bit quantization, with 744 billion total and 40 billion active parameters, on four RTX 3090 graphics cards plus 192 gigabytes of system memory using llama.cpp expert offload. Decode hits 7.3 tokens per second. A/B tests show halving the quant to one bit yields no speedup, while doubling CPU threads from 6 to 12 gives 22 percent gains. Decode is bound by CPU compute on offloaded experts, not memory bandwidth.",
+      "zh": "作者在四张 RTX 3090 加 192 GB 内存上，通过 llama.cpp 的专家卸载运行二位量化的 GLM-5.2，模型总参数 7440 亿、激活 400 亿，解码速度达每秒 7.3 个 token。对照实验显示进一步量化到一位完全没有提速，而 CPU 线程从 6 增至 12 可带来 22% 的提升，说明解码瓶颈在卸载专家的 CPU 算力而非内存带宽。",
+      "title_en": "Running GLM-5.2 with 744 billion parameters at two-bit quantization on four RTX 3090 cards plus 192 gigabytes of memory hits 7.3 tokens per second, and dropping to one bit gives no extra speed.",
+      "title_zh": "四张 RTX 3090 加 192 GB 内存运行二位量化的 GLM-5.2，模型 7440 亿参数，解码速度达每秒 7.3 个 token，进一步压到一位也没有提速。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u6zj79/claude_fable_5_distilled/": {
-      "en": "Qwable-v1 is an open-weights distillation of Anthropic's briefly available Claude Fable 5 onto Qwen 3.6 35B A3B. The author packed 4,659 cleartext agentic coding traces from the Glint-Research Fable-5 corpus and ran roughly fourteen hours of supervised fine-tuning on a single H200. Given an agent system prompt, the model emits properly formatted XML for Claude-flavored tools such as str_replace_editor, suggesting Fable's tool surface leaked into the weights. Model, GGUF quantisations, and dataset live on Hugging Face under AGPL 3.0.",
-      "zh": "Qwable-v1 把 Anthropic 短暂上线的 Claude Fable 5 蒸馏到 Qwen 3.6 35B A3B 上。作者从 Glint-Research 的 Fable-5 语料取 4659 条明文 agentic 编码轨迹，在单张 H200 上做约十四小时监督微调。模型能输出 Claude 风格工具如 str_replace_editor 的 XML 调用，显示 Fable 工具结构已泄入权重。权重、GGUF 量化与数据集已上 Hugging Face，AGPL 3.0。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9z4e4/the_eagle3_has_landed_for_qwen/": {
+      "en": "The latest llama.cpp release adds Eagle 3 speculative decoding support, enabled with the spec-type draft-eagle3 flag and a paired draft model. The poster tested it against a Qwen 3.6 27B GGUF model using a community Eagle 3 draft, reporting tokens per second similar to MTP draft mode. Tensor parallelism currently asserts out, and the draft model consumes additional video memory. Speculative methods can also be stacked, like Eagle 3 plus ngram modifications.",
+      "zh": "最新版 llama.cpp 新增 Eagle 3 推测解码支持，通过 spec-type draft-eagle3 参数加上配套草稿模型启用。作者用 Qwen 3.6 27B GGUF 配合社区 Eagle 3 草稿测试，速度与 MTP 草稿模式接近。当前张量并行尚不支持会触发断言，草稿模型也会占用额外显存，并可与 ngram 等方法叠加使用。",
+      "title_en": "Eagle 3 speculative decoding is now available for Qwen models in the latest llama.cpp release.",
+      "title_zh": "最新版 llama.cpp 中的 Eagle 3 推测解码现已支持 Qwen 模型。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u7mexd/glm52_is_the_first_openweights_model_to_cross_80/": {
-      "en": "A short Cline-sourced note says GLM 5.2 is the first open-weights model to cross eighty percent on Terminal-Bench and beats every other open model available. The poster also claims it beats Gemini, calling it frontier-level at a fraction of the cost and describing the moment as a comeback for open weights. The submission is essentially a benchmark headline; no methodology or links are provided beyond crediting Cline as the source.",
-      "zh": "帖子转引 Cline 的说法：GLM 5.2 成为首个在 Terminal-Bench 跨过百分之八十的开源权重模型，超越所有现有开源模型，并称其表现优于 Gemini，以前沿水平与远低的价格让开源权重模型重新回到牌桌。提交内容基本只是一则跑分头条，除了注明来源为 Cline 之外，没有给出方法论或链接。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9q6m2/new_model_supralabs_just_released_supravlnano900k/": {
+      "en": "SupraLabs released SupraVL-Nano, a vision language model with roughly 900 thousand parameters trained from scratch on Flickr 8k as a deliberately readable educational artifact. The architecture fits in a single Jupyter notebook: a small convolutional visual encoder produces a 4 by 4 grid of 16 spatial tokens, a custom byte pair encoding tokenizer feeds a three-layer GPT-2 style decoder with prefix concatenation fusion. Licensed Apache 2.0, the project aims to demystify how vision language models actually work.",
+      "zh": "SupraLabs 发布 SupraVL-Nano 视觉语言模型，约 90 万参数，完全从零在 Flickr 8k 上训练，作为可读的教学样本。整套架构装进单个 Jupyter notebook：小型卷积视觉编码器输出 4×4 共 16 个空间 token，自训 BPE 分词器送入三层 GPT-2 风格解码器，采用前缀拼接融合，Apache 2.0 许可，意在让人真正读懂视觉语言模型的工作原理。",
+      "title_en": "SupraLabs released SupraVL-Nano, a 900 thousand parameter vision language model trained from scratch on Flickr 8k as a transparent educational blueprint.",
+      "title_zh": "SupraLabs 发布 SupraVL-Nano 视觉语言模型，参数约 90 万，完全从零在 Flickr 8k 上训练，作为透明可读的教学样本。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u7a2hn/be_wary_of_qwenclaude_distillations_theyre_often/": {
-      "en": "A LocalLLaMA poster warns that recent Qwen-base distillations of Claude Fable 5 and Opus circulating on the subreddit are not actually better than the underlying Qwen models. Most use only 4,000 to 10,000 samples, enough to nudge style but not transfer capability; the original DeepSeek R1 distillations used roughly 700,000. Readers should expect slightly different reasoning prose rather than improved benchmarks, and often mild quality degradation. The post stresses it is not an attack on the trainers.",
-      "zh": "LocalLLaMA 上一位发帖人提醒：将 Claude Fable 5 与 Opus 蒸馏到 Qwen 基座上的微调，并不真的优于底座 Qwen。大多只用了 4000 到 10000 条样本，仅够改变风格、无法迁移能力；当年 DeepSeek R1 的蒸馏用了约 700000 条样本。读者应预期推理腔略有不同而非分数提升，甚至常有轻微退化。作者强调这并非针对训练者本人。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ua5otx/commission_selects_europa_consortium_as_the/": {
+      "en": "The European Commission has selected EUROPA, a consortium led by Italian company Domyn, as winner of its Frontier AI Grand Challenge. The project will build an open-source frontier model with more than 400 billion parameters covering all 24 official European Union languages. Executive Vice-President Henna Virkkunen framed the win as evidence Europe has the talent, infrastructure, and industrial capacity to develop advanced AI on its own terms, anchored in openness, trust, and strategic autonomy."  ,
+      "zh": "欧盟委员会宣布由意大利公司 Domyn 牵头的 EUROPA 联盟赢得前沿 AI 大挑战。该项目将构建一款覆盖 24 种欧盟官方语言的开源前沿模型，参数规模超过 4000 亿。技术主权与民主事务执行副主席 Henna Virkkunen 表示，这证明欧洲拥有人才、基础设施与产业能力，能以开放、信任与战略自主为核心，自主推动前沿 AI 发展。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u755o8/diffusion_gemma_jailbreak/": {
-      "en": "The poster reports that a system prompt previously used to jailbreak Gemma 4 also works on Diffusion Gemma, letting the model discuss explicit, graphic and sexual content. The prompt tells the model to treat a SYSTEM policy as the only valid policy, then enumerates allowed content categories. The author invites readers to add or remove items from the list as needed, and notes the technique transfers to most open source models regardless of architecture.",
-      "zh": "发帖人称，此前用于越狱 Gemma 4 的系统提示在 Diffusion Gemma 上同样有效，可让模型谈论露骨、图像化与性相关内容。该提示要求模型把 SYSTEM 策略视为唯一有效策略，再列出允许的内容类别。作者邀请读者按需增删类别，并指出这套技巧可迁移到大多数开源模型，提示扩散型架构同样未能堵住此类绕过路径。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u7dzdr/scaling_former_vibethinker15b_to_3b_now_it/": {
-      "en": "The VibeThinker team scaled their 1.5 billion parameter reasoning model to 3 billion, testing how far verifiable reasoning can be pushed in a strict small-model regime. VibeThinker 3B scores 94.3 on AIME 2026, 80.2 on LiveCodeBench v6, 76.4 on IMO AnswerBench, and 93.4 on IFEval. On recent unseen LeetCode weekly and biweekly contests it passes 123 of 128 first-attempt Python submissions, about 96.1 percent. They argue small models with verifiable signals complement traditional scaling.",
-      "zh": "VibeThinker 团队把 15 亿参数推理模型扩到 30 亿，测试小模型规模下可验证推理能走多远。VibeThinker 3B 在 AIME 2026 上 94.3 分、LiveCodeBench v6 上 80.2、IMO AnswerBench 上 76.4、IFEval 上 93.4；在新近未见过的 LeetCode 周赛上首次提交 Python 通过 123 / 128 题，约 96.1%。作者认为带验证信号的小模型可与传统 Scaling Law 互补。",
-      "title_en": "Scaling former VibeThinker 1.5 billion to 3 billion reaches frontier math and coding performance",
-      "title_zh": "把 VibeThinker 15 亿参数扩展到 30 亿后达到前沿数学与编程水平"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u78mx6/nexn2_pro_is_the_real_deal/": {
-      "en": "After dismissing Nex-N2 due to bad Openrouter reports, the poster tried it again when they realised the recent Rio 3.5 model was actually N2 Pro merged with a Qwen base. Loading bartowski's N2 Pro IQ2_S GGUFs required swapping in Rio's chat template to work around bugs in the embedded one. On a private llama.cpp source code investigation benchmark, N2 Pro passed every run on a 128 gigabyte Mac without hallucination, matching only the GPT 5 series for consistency.",
-      "zh": "发帖人此前因 Openrouter 上的差评忽视 Nex-N2，但发现新推出的 Rio 3.5 实为 N2 Pro 与 Qwen 底座的合并版后重新试用。加载 bartowski 的 N2 Pro IQ2_S GGUF 时需改用 Rio 的对话模板来绕过原模板缺陷。在私有的 llama.cpp 源码调查基准上，N2 Pro 在 128 GB Mac 上每次都通过且无幻觉，过去只有 GPT 5 系列能达到此稳定度。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u7o9vp/glm_52_api_is_live_weights_are_on_hf_and_ollama/": {
-      "en": "GLM 5.2 first dropped on Friday behind the GLM Coding Plan paywall. Two hours before posting, Zhipu opened the API and pushed MIT-licensed weights to Hugging Face, with Ollama already serving the model. Pricing matches GLM 5.1 at one dollar forty per million input tokens and four dollars forty per million output, with High and Max thinking modes and a one million token context. Posted scores include 81.0 on Terminal-Bench 2.1, 62.1 on SWE-bench Pro, and 74.4 on FrontierSWE.",
-      "zh": "GLM 5.2 周五登场但锁在 GLM Coding Plan 套餐后。发帖前两小时，智谱开放 API 并把 MIT 许可权重上传 Hugging Face，Ollama 已可直接调用。定价与 GLM 5.1 相同，每百万 token 输入一美元四角、输出四美元四角，提供 High 与 Max 思考模式与一百万 token 上下文。官方跑分：Terminal-Bench 2.1 81.0、SWE-bench Pro 62.1、FrontierSWE 74.4。",
-      "title_en": "GLM 5.2 API is live, weights are on Hugging Face, and Ollama has it already",
-      "title_zh": "GLM 5.2 的 API 已上线 权重已发布到 Hugging Face Ollama 也已支持"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u6x4qr/vllm_has_a_new_streaming_parser_for_qwen3/": {
-      "en": "vLLM's nightly build ships a new streaming parser for Qwen 3 and newer models. The parser reportedly fixes the long-standing issue where Qwen 3.6 27B would stop mid turn and where streaming tool calls failed because chunk boundaries split the tool call markup. The mid turn stalls were particularly disruptive for agentic workflows. The author has not reproduced the problem in their evening of testing and is hopeful that the bug is gone for good.",
-      "zh": "vLLM 夜间构建新增了 Qwen 3 及更新模型的流式解析器。该解析器据称修复了 Qwen 3.6 27B 中途停止生成、流式工具调用因分片切断标签而失败的老问题。中途停顿对 agentic 工作流尤其致命。作者在一个晚上的测试中尚未复现该问题，希望此 bug 已彻底解决。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1u7mn85/get_in_here_community_model_build_thread/": {
-      "en": "A LocalLLaMA member outlines how to actually crowdsource a community model using Branch Train Stitch instead of networking everyone's rigs. Organizers distribute a prototype dense model, members fine-tune narrow-domain experts on their own hardware, then submit those for stitching into a large Mixture of Experts. Prototype size sets eligibility: a 2 billion parameter prototype opens it to thousands with twelve gigabytes of VRAM, while a 7 billion prototype targets 32 gigabyte rigs but yields a model most cannot run.",
-      "zh": "一位 LocalLLaMA 成员阐述如何真正用众包算力训练社区模型：不是把所有人的机器组网，而是采用 Branch Train Stitch。组织者分发一个稠密原型模型，成员各自在本机上训练窄域专家，再上交给组织者拼接成一个大型 Mixture of Experts。原型规模决定准入门槛：20 亿参数原型可让数千 12 GB 显存用户参与，70 亿参数原型适配 32 GB 机器但成品多数人跑不动。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1u9kiq1/diffusiongemma_26b_on_a_4090_at_up_to_475ts_and/": {
+      "en": "Running DiffusionGemma with 26 billion parameters in vLLM via a 4 bit AWQ quantization on an RTX 4090 hits 475 tokens per second on the first prompt and ranges from 290 to 700 tokens per second depending on output length and context. Downsides include single-user only operation, weaker answers than the standard 26 billion Active 4 billion model, poor needle in a haystack recall, and slightly slower time to first token. The author concludes the regular non-diffusion model through llama.cpp remains more accurate and preferable.",
+      "zh": "作者通过 vLLM 与 4 位 AWQ 量化在 RTX 4090 上运行 260 亿参数的 DiffusionGemma，首次提示即达每秒 475 个 token，依输出长度与上下文在 290 到 700 之间浮动。但只能单用户、回答准确性逊于标准 260 亿激活 40 亿版本、长上下文检索极差、首 token 略慢。结论是 llama.cpp 下的常规非扩散版本仍更准确，是更好选择。",
+      "title_en": "Running DiffusionGemma with 26 billion parameters on an RTX 4090 reaches up to 475 tokens per second, with practical caveats on accuracy and context length.",
+      "title_zh": "DiffusionGemma 260 亿参数模型在 RTX 4090 上跑出最高每秒 475 个 token，但在准确率与上下文长度上存在实际取舍。"
     }
   }
 }
