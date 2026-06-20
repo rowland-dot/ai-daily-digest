@@ -1,8 +1,20 @@
 {
-  "count": 41,
+  "count": 38,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqlj0jn600pdsljggy6btum5",
+      "title": "NVIDIA Research 发布 SpatialClaw：免训练空间推理框架",
+      "title_en": "NVIDIA AI Introduce SpatialClaw： A Training-Free Agent That Treats Code as the Action Interface for Spatial Reasoning",
+      "url": "https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-06-19T22:51:59.000Z",
+      "summary": "NVIDIA Research 发布 SpatialClaw，一个免训练的空间推理框架。它通过将代码作为动作接口，让智能体调用感知工具（Depth Anything 3、SAM 3）并自由组合输出，解决视觉语言模型在 3D 空间判断上的弱点。在 20 项基准测试中平均准确率达 59.9%，比近期智能体 SpaceTools 高 11.2 个百分点，比无工具基线高 6.5 点，比结构化工具调用高 3.2 点。框架无需重新训练，同一提示词和工具集可跨所有基准和骨干网络运行，支持 Qwen3.5/3.6 及 Gemma4 等 26B 至 397B 参数的模型。",
+      "category": "ai-products",
+      "score": 77,
+      "selected": true
+    },
     {
       "id": "cmqkzxdp0009eslcw0jlr6pvl",
       "title": "Cloudflare 为 AI 智能体推出临时账户",
@@ -400,18 +412,6 @@
       "selected": true
     },
     {
-      "id": "cmqguqu9r00rqslpuu5cpfao3",
-      "title": "Grok for PowerPoint 发布：在 Microsoft PowerPoint 内直接生成和编辑幻灯片",
-      "title_en": "Grok for PowerPoint Jun 16， 2026 # Grok for PowerPoint Grok now works inside Microsoft PowerPoint - turn outlines into slides， expand the deck， and tighten the narrative without leaving the app. Read More",
-      "url": "https://x.ai/news/introducing-powerpoint-addin",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "summary": "xAI 于 6 月 16 日发布 Grok for PowerPoint，作为免费 Microsoft 365 插件上线。用户无需离开应用即可利用 Grok 将大纲转为完整幻灯片，进行内容研究、撰写、排版，并支持添加单张幻灯片、调整样式主题、重构章节。插件还能调用 Grok 连接器，从邮件或 SharePoint 中获取信息。该插件同样适用于 Word 和 Excel。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true
-    },
-    {
       "id": "cmqfjwpb500o2slq8vbryuxyg",
       "title": "Meta 在 Facebook 上线\"AI Mode\"，基于平台公开信息合成答案",
       "title_en": "Meta's new 'AI Mode' on Facebook pulls from public info across its platforms",
@@ -457,42 +457,6 @@
       "summary": "xAI 为 Grok Build 推出 Agent Dashboard，提供单一屏幕管理多个编码会话。仪表板按状态分组（等待输入、工作中、空闲），每行显示状态标记、名称、分支、权限模式和当前操作。选中会话可打开 peek 面板查看最新输出并直接回复，等待输入的会话支持用箭头键或数字键选择选项。底部输入框用于分派新会话，支持设置模型、启动计划模式或自动批准编辑。通过 `grok dashboard`、`/dashboard` 或 `Ctrl+\\` 打开，关闭后会话继续运行，重新打开即可恢复。",
       "category": "ai-products",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmqcopoix00f8slttxcyouu31",
-      "title": "Fusion API：半价达Fable级智能",
-      "title_en": "Introducing the Fusion API， the smartest compound model in the market. Fusion achieves Fable-level …",
-      "url": "https://x.com/OpenRouter/status/2065856853989270011",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-06-13T18:00:30.000Z",
-      "summary": "推出Fusion API，市场上最智能的复合模型。\n\nFusion以一半的价格实现Fable级别的智能。\n\n工作原理如下👇",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqcoq94v00fxsltty2h9ohuh",
-      "title": "Paca：一款适用于人机协作的轻量级 Jira 替代方案",
-      "title_en": "Show HN： Paca--一款适用于人机协作的轻量级 Jira 替代方案",
-      "url": "https://github.com/Paca-AI/paca",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-13T17:50:09.601Z",
-      "summary": "Paca 是一款面向人类与 AI 智能体协作场景的轻量级项目管理工具，旨在替代 Jira。项目已开源并托管于 GitHub，支持团队通过直观界面协同管理任务，特别针对 AI 参与工作流进行了优化。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqbi1j6001otslamifftgpw8",
-      "title": "GitHub Copilot CLI 在委托任务上变得更具选择性",
-      "title_en": "How we made GitHub Copilot CLI more selective about delegation",
-      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-06-12T22:26:23.000Z",
-      "summary": "GitHub Copilot CLI 通过更好的编排实现了更少的任务交接和更快的进度，且没有新增任何配置选项。",
-      "category": "ai-products",
-      "score": 61,
       "selected": true
     }
   ]

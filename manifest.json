@@ -1,61 +1,61 @@
 {
-  "fetched_at": "2026-06-19T21:45:45.602Z",
-  "date_utc": "2026-06-19",
+  "fetched_at": "2026-06-20T21:48:40.940Z",
+  "date_utc": "2026-06-20",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 1077
+      "ms": 1427
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 275
+      "ms": 264
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 281
+      "ms": 271
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 277
+      "ms": 266
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 274
+      "ms": 264
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 98
+      "ms": 62
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 825
+      "ms": 980
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 504
+      "ms": 653
     },
     "anthropic_news": {
       "status": "ok",
       "file": "anthropic-news.json",
-      "ms": 1639
+      "ms": 999
     },
     "anthropic_engineering": {
       "status": "ok",
       "file": "anthropic-engineering.json",
-      "ms": 1945
+      "ms": 388
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 345
+      "ms": 337
     },
     "follow_builders_x": {
       "status": "ok",
@@ -65,17 +65,17 @@
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 10
+      "ms": 5
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 265
+      "ms": 17
     },
     "localllama": {
       "status": "ok",
       "file": "localllama.json",
-      "ms": 817
+      "ms": 447
     },
     "article_bodies": {
       "status": "ok",

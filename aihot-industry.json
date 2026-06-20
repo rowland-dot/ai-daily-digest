@@ -1,8 +1,32 @@
 {
-  "count": 23,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqm0elho009fsliiybg230vu",
+      "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
+      "title_en": "还得是微软会闷声发大财啊，它现在已经成为全球最大的 AI 中间商，oh no ，是最大的中转站， 不仅把ChatGPT卖给中国企业，也把DeepSeek 反向卖给西方客户😁 以上来自彭博社的最新报…",
+      "url": "https://x.com/AYi_AInotes/status/2068218661710512231",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-06-20T06:25:29.000Z",
+      "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
+      "category": "industry",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqlgwh3f006nsljg3exh1nge",
+      "title": "Figure机器人数首超人类员工",
+      "title_en": "We are past the point of theory. For the first time ever， Figure's robot count has passed its human…",
+      "url": "https://x.com/rohanpaul_ai/status/2068089038213693800",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-06-19T21:50:24.000Z",
+      "summary": "我们已超越理论阶段。\n\n有史以来第一次，Figure的机器人数量超过了人类员工数量。",
+      "category": "industry",
+      "score": 78,
+      "selected": true
+    },
     {
       "id": "cmqlclrpp01h9sl2s1c94el8x",
       "title": "JAWBONE Act：一项打击政府为压制合法网络言论而施压的新法案",
@@ -265,18 +289,6 @@
       "summary": "据 TechCrunch 报道，Meta 已开始撤销对 Manus 的 20 亿美元收购交易，此前北京要求该交易必须反转。目前收购解除程序已启动。",
       "category": "industry",
       "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmqc5usi000cbslt49vfrpgge",
-      "title": "谷歌Android安全负责人因反对军事AI合作辞职",
-      "title_en": "谷歌抛弃\"不作恶\"承诺：Android 安全主管因军事 AI 合作愤而辞职，控诉公司丧失道德底线",
-      "url": "https://www.ithome.com/0/963/888.htm",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-13T08:40:39.000Z",
-      "summary": "谷歌Android平台安全负责人René Mayrhofer辞职，他在5月18日内部告别信中指责公司\"丧失道德指针\"，批评谷歌悄悄放弃碳中和目标（因AI模型能耗），并与美国战争部签署允许AI用于\"任何合法目的\"的协议。今年4月下旬谷歌宣布向五角大楼提供AI用于机密工作，2025年2月更新AI原则时移除了不使用AI开发武器或监控工具的承诺。Mayrhofer担忧谷歌AI产品可能被用于针对公民的大规模监控，包括自己和家人。",
-      "category": "industry",
-      "score": 80,
       "selected": true
     }
   ]

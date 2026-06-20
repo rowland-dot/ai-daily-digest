@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-06-19T21:45:53.144Z",
+  "fetched_at": "2026-06-20T21:48:46.852Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Sean Lynch",
+      "link": "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything",
+      "updated": "2026-06-19T22:45:49+00:00",
+      "summary": "The real valuable capability MCP offers over skills/CLI is isolating the auth flow outside of the agent’s context window, and potentially out of the harness completely. [...] Maybe the idealized form of MCP is just an auth gateway for the API and nothing else. That’d still be a win."
+    },
     {
       "title": "Datasette Apps: Host custom HTML applications inside Datasette",
       "link": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
@@ -75,13 +81,6 @@
       "updated": "2026-06-16T03:07:54+00:00",
       "summary": "Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic. ) The report, Moussouris said, involved IT experts asking Fable to help find and patch bugs.",
       "body": "16th June 2026\n\nKatie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic.) The report, Moussouris said, involved IT experts asking Fable to help find and patch bugs. When given deliberately insecure code, she said, Fable refused the prompt “review the code for security issues” but then complied when asked to “fix this code,” followed by some further manual steps. Moussouris told me that this was just “the model working as intended” for cyberdefense.\n\n— Matteo Wong, The Atlantic, The White House Is Ratcheting Up Its War Against Anthropic"
-    },
-    {
-      "title": "Cloudflare CAPTCHA on at least one ampersand",
-      "link": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
-      "updated": "2026-06-16T00:21:36+00:00",
-      "summary": "TILCloudflare CAPTCHA on at least one ampersand— I use Cloudflare's CAPTCHA (they call it a \"Managed Challenge\") on simonwillison. net/search/ to prevent crawlers from following every single possible combination of my faceted search UI.",
-      "body": "TILCloudflare CAPTCHA on at least one ampersand— I use Cloudflare's CAPTCHA (they call it a \"Managed Challenge\") on simonwillison.net/search/ to prevent crawlers from following every single possible combination of my faceted search UI.\n\nI'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall > Custom rules > Managed Challenge\" these days) to prevent crawlers from aggresively spidering my faceted search engine on this site, but I got fed up of even simple ?q=term searches triggering the challenge.\n\nAfter some mucking around with Claude Code it turns out you can register the following rule instead, so the CAPTCHA only kicks in for search URLs containing at least one ampersand:\n\n(http.request.uri.path wildcard r\"/search/\" and http.request.uri.query contains \"&\")\n\nAnd now /search/?q=lemur works without triggering a CAPTCHA!\n\nAlso included: notes on trying out the Cloudflare MCP with Claude Code, though it turned out not to be able to edit the rules in question so I had Claude Code switch to the Cloudflare API instead."
     }
   ]
 }

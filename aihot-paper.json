@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -85,6 +85,18 @@
       "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
       "category": "paper",
       "score": 81,
+      "selected": true
+    },
+    {
+      "id": "cmqlhlm0t00b3sljgy5o93w0h",
+      "title": "CyberGym-E2E：AI智能体端到端网络安全能力的大规模真实世界基准",
+      "title_en": "CyberGym-E2E： Scalable Real-World Benchmark for AI Agents' End-to-End Cybersecurity Capabilities",
+      "url": "https://rdi.berkeley.edu/blog/cybergym-e2e",
+      "source": "Berkeley RDI：Blog（AI 安全与评测）",
+      "publishedAt": "2026-06-17T16:00:00.000Z",
+      "summary": "CyberGym-E2E 是一个包含920个真实漏洞、覆盖139个开源项目的大规模端到端网络安全基准。任务要求AI智能体在真实代码库中自行定位漏洞、生成触发崩溃的概念验证并编写补丁。测试表明：若直接给出漏洞位置，最强配置可修复约80%漏洞；但若需自行发现，端到端成功率急剧下降--Claude Opus 4.5仅19.2%，最新模型在37%-66%之间。智能体可能发现替代漏洞，且存在部分浅层补丁。所有漏洞已事先公开披露并修复。",
+      "category": "paper",
+      "score": 74,
       "selected": true
     },
     {
