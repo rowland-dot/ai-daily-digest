@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-20T21:48:44.474Z",
+  "fetched_at": "2026-06-21T21:56:18.197Z",
   "repos": [
     {
       "owner": "palmier-io",
@@ -8,20 +8,9 @@
       "description": "macOS video editor built for AI",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 3194,
-      "forks": 266,
-      "starsToday": 904
-    },
-    {
-      "owner": "penpot",
-      "name": "penpot",
-      "url": "https://github.com/penpot/penpot",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "language": "Clojure",
-      "languageColor": "#db5855",
-      "stars": 51322,
-      "forks": 3295,
-      "starsToday": 424
+      "stars": 4927,
+      "forks": 375,
+      "starsToday": 1829
     },
     {
       "owner": "calesthio",
@@ -30,75 +19,9 @@
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 6970,
-      "forks": 1146,
-      "starsToday": 677
-    },
-    {
-      "owner": "tursodatabase",
-      "name": "turso",
-      "url": "https://github.com/tursodatabase/turso",
-      "description": "Turso is an in-process SQL database, compatible with SQLite.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 20272,
-      "forks": 1039,
-      "starsToday": 774
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "language": "C",
-      "languageColor": "#555555",
-      "stars": 9243,
-      "forks": 702,
-      "starsToday": 1267
-    },
-    {
-      "owner": "google-research",
-      "name": "timesfm",
-      "url": "https://github.com/google-research/timesfm",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 24490,
-      "forks": 2321,
-      "starsToday": 432
-    },
-    {
-      "owner": "twentyhq",
-      "name": "twenty",
-      "url": "https://github.com/twentyhq/twenty",
-      "description": "The open alternative to Salesforce, designed for AI.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 50816,
-      "forks": 7412,
-      "starsToday": 140
-    },
-    {
-      "owner": "Kong",
-      "name": "insomnia",
-      "url": "https://github.com/Kong/insomnia",
-      "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 39283,
-      "forks": 2324,
-      "starsToday": 327
-    },
-    {
-      "owner": "tw93",
-      "name": "Pake",
-      "url": "https://github.com/tw93/Pake",
-      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 54506,
-      "forks": 10844,
-      "starsToday": 2398
+      "stars": 8481,
+      "forks": 1282,
+      "starsToday": 993
     },
     {
       "owner": "chopratejas",
@@ -107,31 +30,152 @@
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 41650,
-      "forks": 2858,
-      "starsToday": 3786
+      "stars": 44106,
+      "forks": 3070,
+      "starsToday": 2617
     },
     {
-      "owner": "jamiepine",
-      "name": "voicebox",
-      "url": "https://github.com/jamiepine/voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 30968,
-      "forks": 3831,
-      "starsToday": 140
+      "owner": "tursodatabase",
+      "name": "turso",
+      "url": "https://github.com/tursodatabase/turso",
+      "description": "Turso is an in-process SQL database, compatible with SQLite.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 20752,
+      "forks": 1060,
+      "starsToday": 543
     },
     {
-      "owner": "Kilo-Org",
-      "name": "kilocode",
-      "url": "https://github.com/Kilo-Org/kilocode",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "owner": "penpot",
+      "name": "penpot",
+      "url": "https://github.com/penpot/penpot",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "language": "Clojure",
+      "languageColor": "#db5855",
+      "stars": 52157,
+      "forks": 3334,
+      "starsToday": 1131
+    },
+    {
+      "owner": "ZhuLinsen",
+      "name": "daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 44345,
+      "forks": 41413,
+      "starsToday": 519
+    },
+    {
+      "owner": "koala73",
+      "name": "worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 23306,
-      "forks": 2739,
-      "starsToday": 470
+      "stars": 58014,
+      "forks": 9202,
+      "starsToday": 253
+    },
+    {
+      "owner": "bytedance",
+      "name": "deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 72514,
+      "forks": 9827,
+      "starsToday": 415
+    },
+    {
+      "owner": "DeusData",
+      "name": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 10178,
+      "forks": 769,
+      "starsToday": 1029
+    },
+    {
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 17594,
+      "forks": 2121,
+      "starsToday": 445
+    },
+    {
+      "owner": "tw93",
+      "name": "Pake",
+      "url": "https://github.com/tw93/Pake",
+      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 56064,
+      "forks": 11080,
+      "starsToday": 1850
+    },
+    {
+      "owner": "mikumifa",
+      "name": "biliTickerBuy",
+      "url": "https://github.com/mikumifa/biliTickerBuy",
+      "description": "b站会员购购票辅助工具",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 3702,
+      "forks": 464,
+      "starsToday": 56
+    },
+    {
+      "owner": "smicallef",
+      "name": "spiderfoot",
+      "url": "https://github.com/smicallef/spiderfoot",
+      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 18717,
+      "forks": 3104,
+      "starsToday": 288
+    },
+    {
+      "owner": "topoteretes",
+      "name": "cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 18598,
+      "forks": 1967,
+      "starsToday": 361
+    },
+    {
+      "owner": "byoungd",
+      "name": "English-level-up-tips",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "language": "",
+      "languageColor": "",
+      "stars": 53985,
+      "forks": 5552,
+      "starsToday": 121
+    },
+    {
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 44323,
+      "forks": 7324,
+      "starsToday": 366
     },
     {
       "owner": "mattpocock",
@@ -140,53 +184,9 @@
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 138104,
-      "forks": 11980,
-      "starsToday": 1360
-    },
-    {
-      "owner": "withastro",
-      "name": "flue",
-      "url": "https://github.com/withastro/flue",
-      "description": "The sandbox agent framework.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 6063,
-      "forks": 341,
-      "starsToday": 313
-    },
-    {
-      "owner": "owainlewis",
-      "name": "awesome-artificial-intelligence",
-      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
-      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
-      "language": "",
-      "languageColor": "",
-      "stars": 14749,
-      "forks": 2354,
-      "starsToday": 223
-    },
-    {
-      "owner": "pppscn",
-      "name": "SmsForwarder",
-      "url": "https://github.com/pppscn/SmsForwarder",
-      "description": "短信转发器——监控Android手机短信、来电、APP通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内机器人、企业微信群机器人、飞书机器人、企业微信应用消息、邮箱、bark、webhook、Telegram机器人、Server酱、PushPlus、手机短信等。包括主动控制服务端与客户端，让你轻松远程发短信、查短信、查通话、查话簿、查电量等。（V3.0 新增）PS.这个APK主要是学习与自用，如有BUG请提ISSUE，同时欢迎大家提PR指正",
-      "language": "Kotlin",
-      "languageColor": "#A97BFF",
-      "stars": 26473,
-      "forks": 3272,
-      "starsToday": 134
-    },
-    {
-      "owner": "1jehuang",
-      "name": "jcode",
-      "url": "https://github.com/1jehuang/jcode",
-      "description": "Coding Agent Harness",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 7379,
-      "forks": 827,
-      "starsToday": 108
+      "stars": 139612,
+      "forks": 12113,
+      "starsToday": 1441
     }
   ]
 }
