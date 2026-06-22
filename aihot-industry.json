@@ -4,16 +4,42 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqny6q7v0288slhkbzc8ob3u",
-      "title": "NSA局长：Mythos数小时内攻破其几乎所有机密系统",
-      "title_en": "The head of the NSA （！） said Mythos \"broke into almost all of our classified systems， not in weeks， …",
-      "url": "https://x.com/AISafetyMemes/status/2068718552174252477",
-      "permalink": "https://aihot.virxact.com/items/cmqny6q7v0288slhkbzc8ob3u",
-      "source": "X：AI Safety Memes (@AISafetyMemes)",
-      "publishedAt": "2026-06-21T15:31:52.000Z",
-      "summary": "美国NSA局长称，Mythos在数小时内攻破了其几乎所有机密系统。此前Mythos已在5天内破解MacOS。而顶级漏洞团队Google Project Zero完成同等攻击需6个月，单个MacOS零日漏洞价值约200万美元。苹果原假设全球仅10-20个团队具备此能力，Mythos将使该数字增至数千。全球约20亿活跃苹果设备中，Mac用户多为记者、高管、政府官员等高价值目标，苹果曾是\"最安全\"的选择。",
+      "id": "cmqpqqsrw030aslp5c0jt14yr",
+      "title": "美国警长利用Flock车牌系统跟踪前女友案频发，Flock法务官承认\"最常见滥用\"",
+      "title_en": "由\"群情\"驱使的警察局长们尾随女性，这说明了为何需要搜查令",
+      "url": "https://ipvm.com/reports/police-chiefs-track",
+      "permalink": "https://aihot.virxact.com/items/cmqpqqsrw030aslp5c0jt14yr",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-22T21:32:12.384Z",
+      "summary": "伊利诺伊州Holiday Hills警察局长于2026年6月18日被捕，被控两项渎职重罪。检方指控他利用Flock车牌读取系统及州警察数据库，跟踪6名认识的人，其中3人为前女友，并对其中一人的前男友车牌查询140次（86次脱岗），持续18个月。全美至少18起类似案例：佐治亚州Braselton警察局长、爱达荷州Jerome县警长（700余次查询其妻车牌）等均因此辞职或被捕。Flock首席法务官Dan Haley承认，滥用该系统\"最常见情况\"就是跟踪前女友。Flock称系统只跟踪车辆，但案例表明车辆是手段，人是目标。",
       "category": "industry",
       "score": 80,
+      "selected": true
+    },
+    {
+      "id": "cmqpl4smd01j1slp5npj3krmn",
+      "title": "Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具",
+      "title_en": "Google DeepMind bets $75M on AI's future in Hollywood with A24 deal",
+      "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal",
+      "permalink": "https://aihot.virxact.com/items/cmqpl4smd01j1slp5npj3krmn",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-06-22T18:49:44.000Z",
+      "summary": "Google DeepMind 宣布向独立电影制片厂 A24 投资 7500 万美元（据《华尔街日报》），双方将合作开发电影制作 AI 工具。A24 出品过《万事俱备》《后室》等影片。Google DeepMind CEO Demis Hassabis 称，希望通过与艺术家直接合作，打造支持创意表达的 AI 功能。此举是好莱坞最新一次科技公司与电影 AI 联手，此前 Netflix 已收购 Ben Affleck 的 AI 工具公司 Interpositive，亚马逊 MGM 工作室也在去年设立了影视 AI 部门。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqpepyo500j1sldkfj5exgj8",
+      "title": "开辟新赛道：小米 YU7 GT 创全球首个纽北自动驾驶圈速纪录，官方圈速榜新增\"自动驾驶\"分类",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/967/234.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqpepyo500j1sldkfj5exgj8",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-22T15:13:29.000Z",
+      "summary": "小米 YU7 GT（选配赛道专业套装）在纽博格林北环赛道以自动驾驶系统完成全程无人计时圈，成绩 10 分 29 秒 483，成为全球首个纽北自动驾驶圈速纪录。纽北官方圈速榜因此新增\"自动驾驶\"分类。小米汽车表示，在极限赛道中锤炼的动态模型、高频扭矩分配和毫秒级救车能力，将逐步下放至量产车，以提升用户在暴雨、冰雪等极端工况下的底盘与智驾安全。",
+      "category": "industry",
+      "score": 85,
       "selected": true
     },
     {
@@ -274,32 +300,6 @@
       "summary": "五角大楼宣布已将超2/3日常AI工作流从Anthropic转移，目标9月前清零。起因是年初五角大楼要求Anthropic签署协议允许Claude用于大规模监控和全自动武器，CEO Dario Amodei以模型不可靠为由拒绝。五角大楼将其列为\"供应链风险\"，起诉未果。OpenAI调整立场获得订单。Polymarket预测6月底前和解概率仅9%。此事件凸显AI公司需在原则与政府合作间抉择。",
       "category": "industry",
       "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqfewpje00u4sl2awgrmj4ke",
-      "title": "Nvidia 加入 AI 债务热潮，发行 200 亿美元债券",
-      "title_en": "Nvidia joins AI debt boom with $20 billion bond sale",
-      "url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
-      "permalink": "https://aihot.virxact.com/items/cmqfewpje00u4sl2awgrmj4ke",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-15T15:43:04.000Z",
-      "summary": "Nvidia 计划通过自 2021 年以来的首次债券发行筹集至少 200 亿美元，消息援引知情人士透露。此举标志着 Nvidia 加入 AI 领域的债务融资热潮。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqfc38a1005fsl2a21dido83",
-      "title": "Salesforce以36亿美元收购AI客服平台Fin",
-      "title_en": "Salesforce acquires AI customer service platform Fin for $3.6 billion",
-      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b",
-      "permalink": "https://aihot.virxact.com/items/cmqfc38a1005fsl2a21dido83",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-15T14:34:45.000Z",
-      "summary": "Salesforce宣布以36亿美元收购AI客服平台Fin（前身为Intercom）。Fin提供可跨实时聊天、WhatsApp、短信、电话、Slack等多渠道解决客户问题的AI智能体。Salesforce计划利用Fin的技术和团队增强其企业级Agentforce平台，该平台允许企业构建自定义AI智能体以自动化任务。交易预计在Salesforce 2027财年第四季度（即2027年初）完成。Fin联合创始人兼CEO Eoghan McCabe将继续担任CEO，研发负责人Des继续领导研发。",
-      "category": "industry",
-      "score": 73,
       "selected": true
     }
   ]

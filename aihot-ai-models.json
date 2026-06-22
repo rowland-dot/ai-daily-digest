@@ -1,8 +1,21 @@
 {
-  "count": 9,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqpamzm108huslx6vf1oonz9",
+      "title": "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M",
+      "title_en": "PP-OCRv6 on Hugging Face： 50-Language OCR from 1.5M to 34.5M Parameters",
+      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "permalink": "https://aihot.virxact.com/items/cmqpamzm108huslx6vf1oonz9",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-06-22T13:18:56.000Z",
+      "summary": "PP-OCRv6 是 PaddleOCR 最新一代通用 OCR 模型族，提供 tiny（1.5M）、small（7.7M）和 medium（34.5M）三级。medium 和 small 支持 50 种语言（简体/繁体中文、英文、日文及 46 种拉丁语系）。在官方多场景基准上，medium 检测 Hmean 86.2%，识别准确率 83.2%，较 PP-OCRv5_server 分别提升 +4.6 和 +5.1 个百分点。模型采用 PPLCNetV4 统一骨干、RepLKFPN 检测模块和 EncoderWithLightSVTR 识别模块，可通过 PaddleOCR、Transformers、ONNX Runtime 等后端灵活部署。",
+      "category": "ai-models",
+      "score": 69,
+      "selected": true
+    },
     {
       "id": "cmqjdctxe02bfslmhz7m5hdlk",
       "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",

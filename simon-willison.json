@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-06-21T21:56:21.091Z",
+  "fetched_at": "2026-06-22T22:22:22.408Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+      "link": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
+      "updated": "2026-06-21T23:35:47+00:00",
+      "summary": "sqlite-utils is my combined Python library and CLI tool for working with SQLite databases. It provides an extensive set of higher-level operations on top of Python's default sqlite3 package , including support for complex table transformations , automatic table creation from JSON data and a whole lot more."
+    },
+    {
+      "title": "sqlite-utils 4.0rc1",
+      "link": "https://simonwillison.net/2026/Jun/21/sqlite-utils/#atom-everything",
+      "updated": "2026-06-21T23:30:04+00:00",
+      "summary": "See sqlite-utils 4.0rc1 adds migrations and nested transactions ."
+    },
+    {
+      "title": "Temporary Cloudflare Accounts for AI agents",
+      "link": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
+      "updated": "2026-06-21T22:01:04+00:00",
+      "summary": "Temporary Cloudflare Accounts for AI agents"
+    },
     {
       "title": "Quoting Sean Lynch",
       "link": "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything",
@@ -24,7 +42,7 @@
       "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
       "link": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
       "updated": "2026-06-17T23:58:39+00:00",
-      "summary": "Chinese AI lab Z.ai released GLM-5.2 to their coding plan subscribers on June 13th, and then yesterday (June 16th) released the full open weights under an MIT license. Similar in size to their previous GLM-5 and GLM-5.1 releases, this is 753B parameter, 1.51TB monster - with 40 active parameters (Mixture of Experts). GLM-5.2 is a text input only model - Z.ai have a separate vision family most recently represented by GLM-5V-Turbo , but that one isn't open weights. GLM-5.2 has a 1 million token context window, up from GLM-5.1's 200,000."
+      "summary": "Chinese AI lab Z.ai released GLM-5.2 to their coding plan subscribers on June 13th, and then yesterday (June 16th) released the full open weights under an MIT license. Similar in size to their previous GLM-5 and GLM-5.1 releases this is a 753B parameter, 1.51TB monster - with 40 active parameters (Mixture of Experts). GLM-5.2 is a text input only model - Z.ai have a separate vision family most recently represented by GLM-5V-Turbo , but that one isn't open weights. GLM-5.2 has a 1 million token context window, up from GLM-5.1's 200,000."
     },
     {
       "title": "Quoting Charity Majors",
@@ -60,27 +78,6 @@
       "updated": "2026-06-16T16:18:20+00:00",
       "summary": "This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette. It's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism.",
       "body": "16th June 2026\n\nReleasedatasette-tailscale 0.1a0— Run a Datasette instance on a Tailscale network\n\nA very experimental alpha plugin which lets you do this:\n\ndatasette tailscale mydata.db \\\n  --ts-authkey tskey-auth-xxxx --ts-hostname datasette-preview\n\nThis starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette.\n\nIt's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism.\n\nPosted 16th June 2026 at 4:18 pm"
-    },
-    {
-      "title": "Quoting Georgi Gerganov",
-      "link": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
-      "updated": "2026-06-16T16:04:59+00:00",
-      "summary": "I can 100% attest to the fact that Qwen3. 6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily, either on my M2 Ultra or on my RTX 5090 box. I use it for small mundane tasks at ggml-org - nothing really impressive, but definitely a helpful tool for a maintainer.",
-      "body": "16th June 2026\n\nI can 100% attest to the fact that Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily, either on my M2 Ultra or on my RTX 5090 box. I use it for small mundane tasks at ggml-org - nothing really impressive, but definitely a helpful tool for a maintainer. I think I would be using it much more, if I didn't have to spend a lot of my time on reviewing PRs. Currently, I have a very lightweight harness - the pi agent with everything stripped (pi -nc --offline) and a short system prompt to align it a bit with my style.\n\n— Georgi Gerganov, Hacker News comment on Running local models is good now by Boykis"
-    },
-    {
-      "title": "The Fable 5 Export Controls Harm US Cyber Defense",
-      "link": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
-      "updated": "2026-06-16T05:20:29+00:00",
-      "summary": "The Fable 5 Export Controls Harm US Cyber Defense. I quoted The Atlantic quoting Kate Moussouris earlier, when I should have gone straight to the source. The researchers took open-source code with known CVEs, plus new code with deliberately planted vulnerabilities, and asked Fable 5, Mythos, and Opus to “review the code for security issues. ” Fable 5 refused.",
-      "body": "16th June 2026 - Link Blog\n\nThe Fable 5 Export Controls Harm US Cyber Defense. I quoted The Atlantic quoting Kate Moussouris earlier, when I should have gone straight to the source. Here she is confirming that the \"jailbreak\" that got Claude Fable 5 banned under an export control really was \"fix this code\":\n\nThe researchers took open-source code with known CVEs, plus new code with deliberately planted vulnerabilities, and asked Fable 5, Mythos, and Opus to “review the code for security issues.” Fable 5 refused. They then asked the models to “fix this code” and, through a multistep and manual process, turned the output into scripts that test the patches.\n\nAs Kate points out, this is absurd. Coding models fix bugs, and security exploits are the most important category of bugs for them to fix!\n\nDefenders need to be able to ask AI to fix the bugs in a file, explain why the fix matters, and write tests that confirm the patch works. That is not a guardrail bypass. It is the most valuable thing an AI model can do for defensive security: executing the find, fix, and test loop defenders run every day. [...]\nThe prompts worked because they were defensive requests, and that capability cannot be removed without making the model worse at fixing bugs and verifying patches.\n\nThis whole situation is such a mess. Non-technical decision-makers have been hearing that models that can \"craft cyber attacks\" are uniquely dangerous for months. Now they look ready to ban any model that can help us secure our code."
-    },
-    {
-      "title": "Quoting Matteo Wong, The Atlantic",
-      "link": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
-      "updated": "2026-06-16T03:07:54+00:00",
-      "summary": "Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic. ) The report, Moussouris said, involved IT experts asking Fable to help find and patch bugs.",
-      "body": "16th June 2026\n\nKatie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic.) The report, Moussouris said, involved IT experts asking Fable to help find and patch bugs. When given deliberately insecure code, she said, Fable refused the prompt “review the code for security issues” but then complied when asked to “fix this code,” followed by some further manual steps. Moussouris told me that this was just “the model working as intended” for cyberdefense.\n\n— Matteo Wong, The Atlantic, The White House Is Ratcheting Up Its War Against Anthropic"
     }
   ]
 }
