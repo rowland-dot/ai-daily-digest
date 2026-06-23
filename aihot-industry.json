@@ -1,8 +1,47 @@
 {
-  "count": 23,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqr4zhkm0gidslp5x8ow892r",
+      "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+      "title_en": "Oracle's 21，000 layoffs help drive its debt-fueled AI investments",
+      "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
+      "permalink": "https://aihot.virxact.com/items/cmqr4zhkm0gidslp5x8ow892r",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-23T20:17:38.000Z",
+      "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141，000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqr1y54m0frmslp5b6e6js37",
+      "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
+      "title_en": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source",
+      "permalink": "https://aihot.virxact.com/items/cmqr1y54m0frmslp5b6e6js37",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-06-23T15:48:00.000Z",
+      "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。",
+      "category": "industry",
+      "score": 56,
+      "selected": true
+    },
+    {
+      "id": "cmqqdbcno08taslp5yd9dbxjt",
+      "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
+      "title_en": "Top spy agencies say AI cyber threats will impact you within months. Here's why",
+      "url": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats",
+      "permalink": "https://aihot.virxact.com/items/cmqqdbcno08taslp5yd9dbxjt",
+      "source": "Artificial Intelligence News（RSS）",
+      "publishedAt": "2026-06-23T08:00:00.000Z",
+      "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
+      "category": "industry",
+      "score": 74,
+      "selected": true
+    },
     {
       "id": "cmqpqqsrw030aslp5c0jt14yr",
       "title": "美国警长利用Flock车牌系统跟踪前女友案频发，Flock法务官承认\"最常见滥用\"",
@@ -222,84 +261,6 @@
       "summary": "Anthropic 5月企业AI订阅市场份额达41%，首次超越OpenAI（39.5%）。公司刚完成650亿美元融资、估值9650亿美元，并因首次盈利季度秘密提交IPO。特朗普政府以出口管制为由要求Anthropic禁止非美国人访问最新模型Mythos 5及Fable 5，导致两款模型下架。Ramp首席经济学家指出，类似争议（如3月被国防部列为供应链风险）反而推动Anthropic企业采用量创纪录。Ramp数据显示，企业支出主要流向Claude Opus模型（最新为Opus 4.8）。",
       "category": "industry",
       "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmqgz178201wfslpu25xb10dm",
-      "title": "微软考虑为 Copilot Cowork 集成 DeepSeek V4",
-      "title_en": "Axios reports that Microsoft is considering a Microsoft-hosted version of DeepSeek V4 as a cheaper m…",
-      "url": "https://x.com/kimmonismus/status/2066946013026263110",
-      "permalink": "https://aihot.virxact.com/items/cmqgz178201wfslpu25xb10dm",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-06-16T18:08:26.000Z",
-      "summary": "微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqi9mvca06wuslf0gcpfh1hv",
-      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-      "title_en": "Announcing the Agentic Resource Discovery specification",
-      "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-      "permalink": "https://aihot.virxact.com/items/cmqi9mvca06wuslf0gcpfh1hv",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-06-16T16:00:00.000Z",
-      "summary": "Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。",
-      "category": "industry",
-      "score": 63,
-      "selected": true
-    },
-    {
-      "id": "cmqgq6dmf01zlslic1ulg3iq5",
-      "title": "Musk：AI将达Stockfish级编码",
-      "title_en": "AI will achieve Stockfish-level coding and generalized computer use",
-      "url": "https://x.com/elonmusk/status/2066880262668247091",
-      "permalink": "https://aihot.virxact.com/items/cmqgq6dmf01zlslic1ulg3iq5",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-06-16T13:47:10.000Z",
-      "summary": "AI 将实现 Stockfish 级别的编码和通用计算机使用",
-      "category": "industry",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqgoj9yu01lfslicukhmblfb",
-      "title": "美国司法部援引国家安全为xAI未经许可的燃气轮机辩护",
-      "title_en": "DOJ invokes national security to defend xAI's unpermitted gas turbines in NAACP lawsuit",
-      "url": "https://the-decoder.com/doj-invokes-national-security-to-defend-xais-unpermitted-gas-turbines-in-naacp-lawsuit",
-      "permalink": "https://aihot.virxact.com/items/cmqgoj9yu01lfslicukhmblfb",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-16T13:23:33.000Z",
-      "summary": "美国司法部在一份驳回诉讼的动议中称，xAI的聊天机器人Grok对军事行动至关重要，以此为其在密西西比州Southaven的Colossus 2设施运行未经许可的燃气轮机辩护。NAACP已提起诉讼，指控xAI的燃气轮机数量从4月的27台增至57台，导致氮氧化物排放飙升111%。国防部首席数字与人工智能官Cameron Stanley表示，Grok是支持机密和绝密网络军事任务的四款AI模型之一，包括近期针对伊朗的打击。",
-      "category": "industry",
-      "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmqg5imdd003gslnc6gteye02",
-      "title": "微软旗下GitHub遭遇AI算力短缺，转而向AWS寻求支持",
-      "title_en": "随着GitHub面临AI算力短缺，微软转而寻求AWS的支持",
-      "url": "https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch",
-      "permalink": "https://aihot.virxact.com/items/cmqg5imdd003gslnc6gteye02",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-16T04:29:10.241Z",
-      "summary": "微软旗下GitHub面临AI算力短缺，微软因此转向亚马逊AWS寻求计算资源支持。原文来自Hacker News热门讨论，标题为\"Microsoft turns to AWS as GitHub faces AI capacity crunch\"。",
-      "category": "industry",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqfxtzua01mkslsp8ne75foj",
-      "title": "五角大楼将大部分日常AI工作流从Anthropic转移，目标9月前完全切断",
-      "title_en": "五角大楼今天宣布，已经把日常AI工作流的2/3以上从Anthropic切走了，目标9月前清零。 这事得从年初说起，2-3月的时候，五角大楼想让Anthropic签个协议，允许Claude用在\"所有合…",
-      "url": "https://x.com/AYi_AInotes/status/2066679835607412846",
-      "permalink": "https://aihot.virxact.com/items/cmqfxtzua01mkslsp8ne75foj",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "publishedAt": "2026-06-16T00:30:44.000Z",
-      "summary": "五角大楼宣布已将超2/3日常AI工作流从Anthropic转移，目标9月前清零。起因是年初五角大楼要求Anthropic签署协议允许Claude用于大规模监控和全自动武器，CEO Dario Amodei以模型不可靠为由拒绝。五角大楼将其列为\"供应链风险\"，起诉未果。OpenAI调整立场获得订单。Polymarket预测6月底前和解概率仅9%。此事件凸显AI公司需在原则与政府合作间抉择。",
-      "category": "industry",
-      "score": 78,
       "selected": true
     }
   ]

@@ -4,16 +4,68 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmqr02j580f8oslp5i6wajucu",
+      "title": "九位评委，两个有效投票：相关错误削弱LLM评审面板",
+      "title_en": "Nine Judges， Two Effective Votes： Correlated Errors Undermine LLM Evaluation Panels",
+      "url": "https://machinelearning.apple.com/research/correlated-llm-evaluation-panels",
+      "permalink": "https://aihot.virxact.com/items/cmqr02j580f8oslp5i6wajucu",
+      "source": "Apple Machine Learning Research（RSS）",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "summary": "苹果机器学习研究团队发现，LLM-as-a-judge面板因模型间高度相关而严重受限。对7个模型家族的9个前沿大语言模型在3个自然语言推理数据集上的测试表明，9位评委实际仅提供约2个独立投票的信息量，面板准确率比独立投票理想值低8-22个百分点，最佳单一模型的表现已匹敌或超越整个面板。增加评委数量或改进聚合算法收效甚微，即使允许算法获取正确答案也仅能缩小至多11%的差距。该结论在多种提示变体、温度设置及偏好任务中均得到验证，瓶颈在于评委间的相关性而非聚合算法。",
+      "category": "paper",
+      "score": 68,
+      "selected": true
+    },
+    {
+      "id": "cmqqrfwu40cpwslp5zbjpmubs",
+      "title": "能力强但粗心：计算机使用智能体是否遵循情境完整性？",
+      "title_en": "Capable but Careless： Do Computer-Use Agents Follow Contextual Integrity？",
+      "url": "https://arxiv.org/abs/2606.23189",
+      "permalink": "https://aihot.virxact.com/items/cmqqrfwu40cpwslp5zbjpmubs",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "summary": "AgentCIBench评估计算机使用智能体（CUA）是否遵循情境完整性。它针对三种常见失败模式：视觉共置（智能体拉取任务目标旁边被禁止的项目）、任务模糊性过度分享（在提示不明确时泄露个人状态）以及收件人错配（向不适当的收件人发送内容）。对15个前沿CUA的评测显示平均泄漏率67.9%，其中11个在超过50%的场景中泄漏，这些失败在端到端任务中同样存在。AgentCIBench已发布，旨在推动开发更安全的计算机使用智能体。",
+      "category": "paper",
+      "score": 78,
+      "selected": true
+    },
+    {
+      "id": "cmqqb5ey4088oslp5vvpveegf",
+      "title": "HAKARI-Bench：统一条件下比较检索架构与效率设置的轻量级基准",
+      "title_en": "HAKARI-Bench： A Lightweight Benchmark for Comparing Retrieval Architectures and Efficiency Settings under Unified Conditions",
+      "url": "https://arxiv.org/abs/2606.22778",
+      "permalink": "https://aihot.virxact.com/items/cmqqb5ey4088oslp5vvpveegf",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "summary": "HAKARI-Bench 是一个轻量级检索基准，将现有检索套件重建为小型数据集（Nano-sets），涵盖 35 个基准、551 个任务和 43 种语言，采用统一格式实现模型无关比较。它支持 BM25、稠密、稀疏、晚交互和重排序五种检索家族及其效率变体（降维、量化等）在同一条件下对比。在 55 个模型上，整体排名与 MTEB retrieval v2、MMTEB v2 retrieval 及 English BEIR（完整版）的 Spearman 相关系数均高于 0.97。HAKARI-Bench 不取代全面评测，而是用于快速模型选择、回归检测和探索质量-效率帕累托前沿。代码、数据和排行榜以 MIT 许可证开源。",
+      "category": "paper",
+      "score": 75,
+      "selected": true
+    },
+    {
       "id": "cmqpeu90600l4sldksepc49lt",
       "title": "Google Labs 提出用\"洞察策略\"评估 AI 编码智能体的主动性",
       "title_en": "Measuring What Matters with Jules",
       "url": "https://developers.googleblog.com/measuring-what-matters-with-jules",
       "permalink": "https://aihot.virxact.com/items/cmqpeu90600l4sldksepc49lt",
       "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-06-22T16:08:41.780Z",
+      "publishedAt": "2026-06-21T16:00:00.000Z",
       "summary": "Google Labs 提出以\"洞察策略\"评估 AI 编码智能体的主动性，而非仅按任务完成度打分。团队基于 Google 内部代码库 705 个 bug（1178 个 CL），通过时空近邻与语义相似度聚类还原开发者实际的高层级目标。初步实验显示：Jules 在单轮探索下洞察相关性评分平均 4.5/5；探索预算从两轮增至三轮时，Hit@5 准确率从 33% 升至 57%。团队正将评估方法扩展至公开 GitHub 数据，并探索纳入问题追踪器、对话等更丰富的上下文。",
       "category": "paper",
       "score": 61,
+      "selected": true
+    },
+    {
+      "id": "cmqqu3riv0dfhslp52jol2jkp",
+      "title": "可验证搜索不是可学习的链式思维",
+      "title_en": "A Verifiable Search Is Not a Learnable Chain-of-Thought",
+      "url": "https://arxiv.org/abs/2606.21884",
+      "permalink": "https://aihot.virxact.com/items/cmqqu3riv0dfhslp52jol2jkp",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-20T00:00:00.000Z",
+      "summary": "论文以九个确定性生成器推理任务为测试床，证明可验证搜索无法作为可学习的CoT进行蒸馏。Cryptarithm任务中，即使backbone规模从3B到671B、采用多种CoT设计、基于可验证奖励的强化学习和自训练，蒸馏后准确率始终为0.01-0.07，而搜索求解器回答71%实例。模型能正确计算97-100%的算术步骤并将正确密码排在候选前八（71%），但无法前向推导。干预实验揭示密码键后，同一实例准确率从0.03提升至0.57。只有移除搜索、预计算组合核心为目录，让模型仅做回忆加验证，才能学会该任务（Private LB 0.92）。结论：蒸馏学到的是记忆和验证，而非搜索。",
+      "category": "paper",
+      "score": 74,
       "selected": true
     },
     {
@@ -157,58 +209,6 @@
       "summary": "2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19，020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。",
       "category": "paper",
       "score": 58,
-      "selected": true
-    },
-    {
-      "id": "cmqh269tl004esle1vztceb34",
-      "title": "公开聊天数据能否预测真实世界AI失调？",
-      "title_en": "Can public chat data predict real-world AI misalignments？",
-      "url": "https://alignment.openai.com/validating-public-evals",
-      "permalink": "https://aihot.virxact.com/items/cmqh269tl004esle1vztceb34",
-      "source": "OpenAI：Alignment 研究博客（RSS）",
-      "publishedAt": "2026-06-16T18:00:00.000Z",
-      "summary": "OpenAI利用WildChat公开数据集（2023年4月至2024年5月收集的100万条对话）模拟模型部署，预测GPT-5.1、GPT-5.2、GPT-5.4在真实生产环境中的不良行为率。与私有生产数据对比发现，WildChat模拟的平均预测误差约3倍；但对技术性和智能体型失调的预测精度下降。研究验证了公开数据集作为外部审计工具的可行性。",
-      "category": "paper",
-      "score": 73,
-      "selected": true
-    },
-    {
-      "id": "cmqiddvsx07xcslf0wcefjhm6",
-      "title": "用SGLang-JAX在TPU上优化Ling-2.6-1T：一个Pallas核将MoE数据移动隐藏在计算中",
-      "title_en": "Blog Optimizing Ling-2.6-1T on TPU with SGLang-JAX： Hiding MoE Data Movement Behind Compute with One Pallas Kernel SGLang-JAX now supports efficient serving of inclusionAI's Ling-2.6-1T on TPU v7x. With a working baseline in place， profiling pointed to the Mixture-of-Experts （MoE） path as the main bottleneck： each… Prayer， JamesBrianD， Haolin Fu， Haoguang Cai， Qinghan Chen",
-      "url": "https://www.lmsys.org/blog/2026-06-17-ling-2-6-tpu",
-      "permalink": "https://aihot.virxact.com/items/cmqiddvsx07xcslf0wcefjhm6",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-06-16T16:00:00.000Z",
-      "summary": "SGLang-JAX现已支持inclusionAI的Ling-2.6-1T（1T稀疏MoE，63B激活参数，256路由专家，top-8路由加共享专家）在TPU v7x上高效推理。团队开发了Fused MoE V2--一个融合scatter、专家FFN和gather的Pallas核，通过将MoE数据移动隐藏在计算中，使MoE预填充延迟从5.16ms降至2.42ms（降幅53%），解码核延迟从0.249ms降至0.211ms（降幅约15%）。仅替换MoE核即提升预填充吞吐量24.8%，解码吞吐量18.5%-35.3%。在SGLang解码基准测试中，16块TPU v7x芯片输出吞吐量达16块H200 GPU的1.29倍（mc=128）至1.77倍（mc=512）。完整上线还包含混合KV/循环内存池、GLA线性注意力和单控制器数据并行支持。",
-      "category": "paper",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmqj0n3n60627sl5w3j8s8lx5",
-      "title": "SAE干预不可靠：干预后抑制行为的恢复",
-      "title_en": "SAE Interventions are Unreliable： Post-Intervention Recovery of Suppressed Behavior",
-      "url": "https://arxiv.org/abs/2606.18322",
-      "permalink": "https://aihot.virxact.com/items/cmqj0n3n60627sl5w3j8s8lx5",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "summary": "稀疏自编码器（SAE）将残差流激活分解为可解释特征，但干预特定特征后，通过优化残差扰动可恢复原有行为。研究发现这是一种可恢复失败模式：干预阻断一条可见行为路径，却未消除行为本身。即使干预在整个优化和生成期间保持激活，恢复依然可行。在TPP、遗忘、IOI和拒绝引导场景中均观察到可恢复行为。安全关键的拒绝引导场景下有效样本恢复率达95.8%，被防御特征的相对漂移仅0.131。归因分析将恢复路径定位到SAE重建残差，表明控制SAE特征并不能保证控制底层行为。",
-      "category": "paper",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqh18jbq02jwslpuwfn5km0q",
-      "title": "OpenAI 发布 Deployment Simulation 方法：通过模拟部署预测模型发布前行为",
-      "title_en": "Predicting model behavior before release by simulating deployment",
-      "url": "https://openai.com/index/deployment-simulation",
-      "permalink": "https://aihot.virxact.com/items/cmqh18jbq02jwslpuwfn5km0q",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-16T00:00:00.000Z",
-      "summary": "OpenAI 近日发布 Deployment Simulation 方法，通过在隐私保护下重放历史对话、用新候选模型重新生成回复，模拟模型上线后的实际表现。在多个 GPT-5-series Thinking 部署中，该方法比传统评估更准确地估计了不良行为频率，发现新型对齐问题，并降低模型识别测试的风险。它还能扩展至涉及工具使用的智能体场景。传统评估存在覆盖不足、选择偏差和模型可识别测试等局限，而 Deployment Simulation 使用真实对话分布缓解了这些问题，但无法测量频率低于每 20 万条消息 1 次的行为。",
-      "category": "paper",
-      "score": 74,
       "selected": true
     }
   ]

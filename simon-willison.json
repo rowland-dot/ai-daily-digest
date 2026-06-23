@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-06-22T22:22:22.408Z",
+  "fetched_at": "2026-06-23T21:58:22.603Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "OPFS + Pyodide test harness",
+      "link": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
+      "updated": "2026-06-23T18:58:54+00:00",
+      "summary": "I've been pondering if Datasette Lite - the Python Datasette application run entirely in the browser using Pyodide and WebAssembly - might be able to edit persistent SQLite files stored on the user's computer."
+    },
+    {
+      "title": "Prompt Injection as Role Confusion",
+      "link": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+      "updated": "2026-06-22T23:59:53+00:00",
+      "summary": "Prompt Injection as Role Confusion"
+    },
+    {
+      "title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
+      "link": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
+      "updated": "2026-06-22T23:43:51+00:00",
+      "summary": "This morning on Hacker News I saw Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance , describing a small but effective inpainting model - a model where you can mark regions of an image to remove and the model imagines what should fill the space. The released model required PyTorch and NVIDIA CUDA , but since it described itself as 0.2B I decided to try and get it running using WebGPU in a browser. TL;DR: I got it working, and you can try the demo at simonw.github.io/moebius-web/ . Read on for the details."
+    },
     {
       "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
       "link": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
@@ -57,27 +75,6 @@
       "updated": "2026-06-17T03:56:10+00:00",
       "summary": "Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them. Here's an example that demonstrates the new row editing tools in Datasette - in fact I built this Web Component for that post.",
       "body": "17th June 2026\n\nTool<click-to-play> — a still that plays\n\nA progressive enchantment Web Component that turns this markup:\n\n<click-to-play>\n  <a href=\"URL to GIF\">\n    <img src=\"URL to first frame\" alt=\"...\">\n  </a>\n</click-to-play>\n\nInto a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play them.\n\nHere's an example that demonstrates the new row editing tools in Datasette - in fact I built this Web Component for that post.\n\nPosted 17th June 2026 at 3:56 am"
-    },
-    {
-      "title": "NetNewsWire Status",
-      "link": "https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything",
-      "updated": "2026-06-17T03:36:09+00:00",
-      "summary": "NetNewsWire Status (via) I find this inspiring. Brent Simmons retired a year ago, and his retirement project is making one piece of software really, really good - free from any commercial pressure. The software is NetNewsWire - \"it's like podcasts, but for reading\" - first released in 2002 and made open source in 2018.",
-      "body": "17th June 2026 - Link Blog\n\nNetNewsWire Status (via) I find this inspiring. Brent Simmons retired a year ago, and his retirement project is making one piece of software really, really good - free from any commercial pressure.\n\nThe software is NetNewsWire - \"it's like podcasts, but for reading\" - first released in 2002 and made open source in 2018.\n\nI've been using it on Mac and iPhone for several years now and I'm finding it indispensable.\n\nPosted 17th June 2026 at 3:36 am\n\nRecent articles\n\n   Publishing WASM wheels to PyPI for use with Pyodide - 13th June 2026\n   Claude Fable is relentlessly proactive - 11th June 2026\n   Initial impressions of Claude Fable 5 - 9th June 2026\n\nThis is a link post by Simon Willison, posted on 17th June 2026.\n\nbrent-simmons 4netnewswire 6open-source 308\n\nMonthly briefing\n\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\n\nPay me to send you less!\n\nSponsor & subscribe"
-    },
-    {
-      "title": "datasette 1.0a34",
-      "link": "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything",
-      "updated": "2026-06-16T21:31:24+00:00",
-      "summary": "The big feature in this alpha is tools to insert, edit and delete rows within the Datasette interface. These features are available on table pages, and edit and delete are also available as action items on the row page.",
-      "body": "Quoting the release notes:\n\nThe big feature in this alpha is tools to insert, edit and delete rows within the Datasette interface. These features are available on table pages, and edit and delete are also available as action items on the row page.\n\nThe inspiration for this feature - which is long overdue - was Datasette Agent. I added SQL write support to that the other day which highlighted how absurd it was that you could insert and edit ties via the chat interface but not in the regular Datasette UI!"
-    },
-    {
-      "title": "datasette-tailscale 0.1a0",
-      "link": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
-      "updated": "2026-06-16T16:18:20+00:00",
-      "summary": "This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette. It's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism.",
-      "body": "16th June 2026\n\nReleasedatasette-tailscale 0.1a0— Run a Datasette instance on a Tailscale network\n\nA very experimental alpha plugin which lets you do this:\n\ndatasette tailscale mydata.db \\\n  --ts-authkey tskey-auth-xxxx --ts-hostname datasette-preview\n\nThis starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette.\n\nIt's using the Python bindings for the experimental tailscale-rs library. I filed an issue asking if there's a cleaner way of setting up the proxy mechanism.\n\nPosted 16th June 2026 at 4:18 pm"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-22T22:22:19.831Z",
+  "fetched_at": "2026-06-23T21:58:13.012Z",
   "repos": [
     {
       "owner": "calesthio",
@@ -8,119 +8,9 @@
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 11788,
-      "forks": 1532,
-      "starsToday": 2935
-    },
-    {
-      "owner": "palmier-io",
-      "name": "palmier-pro",
-      "url": "https://github.com/palmier-io/palmier-pro",
-      "description": "macOS video editor built for AI",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 7225,
-      "forks": 499,
-      "starsToday": 2462
-    },
-    {
-      "owner": "jamiepine",
-      "name": "voicebox",
-      "url": "https://github.com/jamiepine/voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 32150,
-      "forks": 3929,
-      "starsToday": 508
-    },
-    {
-      "owner": "mukul975",
-      "name": "Anthropic-Cybersecurity-Skills",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 18613,
-      "forks": 2206,
-      "starsToday": 957
-    },
-    {
-      "owner": "penpot",
-      "name": "penpot",
-      "url": "https://github.com/penpot/penpot",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "language": "Clojure",
-      "languageColor": "#db5855",
-      "stars": 52818,
-      "forks": 3382,
-      "starsToday": 730
-    },
-    {
-      "owner": "Stirling-Tools",
-      "name": "Stirling-PDF",
-      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 82825,
-      "forks": 7234,
-      "starsToday": 691
-    },
-    {
-      "owner": "garrytan",
-      "name": "gstack",
-      "url": "https://github.com/garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 113079,
-      "forks": 16790,
-      "starsToday": 649
-    },
-    {
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 29926,
-      "forks": 2817,
-      "starsToday": 369
-    },
-    {
-      "owner": "tursodatabase",
-      "name": "turso",
-      "url": "https://github.com/tursodatabase/turso",
-      "description": "Turso is an in-process SQL database, compatible with SQLite.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 21417,
-      "forks": 1084,
-      "starsToday": 538
-    },
-    {
-      "owner": "bytedance",
-      "name": "deer-flow",
-      "url": "https://github.com/bytedance/deer-flow",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 73192,
-      "forks": 9892,
-      "starsToday": 736
-    },
-    {
-      "owner": "DeusData",
-      "name": "codebase-memory-mcp",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "language": "C",
-      "languageColor": "#555555",
-      "stars": 11436,
-      "forks": 845,
-      "starsToday": 1186
+      "stars": 15394,
+      "forks": 1838,
+      "starsToday": 3590
     },
     {
       "owner": "ZhuLinsen",
@@ -129,20 +19,108 @@
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 45741,
-      "forks": 41894,
-      "starsToday": 1560
+      "stars": 46957,
+      "forks": 42359,
+      "starsToday": 1121
     },
     {
-      "owner": "firecrawl",
-      "name": "firecrawl",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 19592,
+      "forks": 2276,
+      "starsToday": 1040
+    },
+    {
+      "owner": "garrytan",
+      "name": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 137180,
-      "forks": 7960,
-      "starsToday": 736
+      "stars": 113999,
+      "forks": 16877,
+      "starsToday": 1012
+    },
+    {
+      "owner": "bytedance",
+      "name": "deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 73859,
+      "forks": 9965,
+      "starsToday": 741
+    },
+    {
+      "owner": "koala73",
+      "name": "worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 59021,
+      "forks": 9279,
+      "starsToday": 279
+    },
+    {
+      "owner": "palmier-io",
+      "name": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "description": "macOS video editor built for AI",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 8370,
+      "forks": 552,
+      "starsToday": 1631
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 30810,
+      "forks": 3358,
+      "starsToday": 66
+    },
+    {
+      "owner": "shanraisshan",
+      "name": "claude-code-best-practice",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 59365,
+      "forks": 5977,
+      "starsToday": 329
+    },
+    {
+      "owner": "revfactory",
+      "name": "harness",
+      "url": "https://github.com/revfactory/harness",
+      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 7418,
+      "forks": 1045,
+      "starsToday": 123
+    },
+    {
+      "owner": "jamiepine",
+      "name": "voicebox",
+      "url": "https://github.com/jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 33078,
+      "forks": 3993,
+      "starsToday": 1042
     },
     {
       "owner": "JCodesMore",
@@ -151,31 +129,53 @@
       "description": "Clone any website with one command using AI coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 17667,
-      "forks": 2742,
-      "starsToday": 63
+      "stars": 18478,
+      "forks": 2799,
+      "starsToday": 827
     },
     {
-      "owner": "lyogavin",
-      "name": "airllm",
-      "url": "https://github.com/lyogavin/airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 21013,
-      "forks": 2423,
-      "starsToday": 187
+      "owner": "byoungd",
+      "name": "English-level-up-tips",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 人生进阶指南 离谱的人生 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "language": "",
+      "languageColor": "",
+      "stars": 54477,
+      "forks": 5584,
+      "starsToday": 151
     },
     {
-      "owner": "mattpocock",
-      "name": "skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 141539,
-      "forks": 12245,
-      "starsToday": 2051
+      "owner": "DeusData",
+      "name": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 12782,
+      "forks": 927,
+      "starsToday": 1299
+    },
+    {
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 200853,
+      "forks": 35819,
+      "starsToday": 933
+    },
+    {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 220453,
+      "forks": 33773,
+      "starsToday": 582
     }
   ]
 }
