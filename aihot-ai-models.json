@@ -1,8 +1,60 @@
 {
-  "count": 13,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqsl6c5y042hslfu74apxkap",
+      "title": "Gemini 3.5 Flash 中的计算机使用",
+      "title_en": null,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash",
+      "permalink": "https://aihot.virxact.com/items/cmqsl6c5y042hslfu74apxkap",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-24T21:16:01.786Z",
+      "summary": "Google 将计算机使用（Computer use）作为内置工具集成至 Gemini 3.5 Flash，使开发者能构建跨浏览器、移动端和桌面环境的智能体。此前该功能仅作为独立模型在 Gemini 2.5 中提供，现已原生整合至主 Flash 模型。开发者可通过 Gemini API 及 Gemini Enterprise Agent Platform 调用。安全方面，模型采用针对性对抗训练降低提示注入风险，并新增两项可选企业级保护：要求用户确认敏感操作、检测到间接提示注入时自动停止。该能力在持续软件测试、跨应用知识工作等长周期企业自动化场景中表现更优。（198字）",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmqsef9c302f0slfu6lvuhnu7",
+      "title": "GPT-5.5 Instant 新版本，对话更有趣",
+      "title_en": "We have a new version of GPT-5.5 Instant for you， and it's much more fun to talk to. Our most-used …",
+      "url": "https://x.com/OpenAI/status/2069843083701915755",
+      "permalink": "https://aihot.virxact.com/items/cmqsef9c302f0slfu6lvuhnu7",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-06-24T18:00:21.000Z",
+      "summary": "我们为你带来了新版 GPT-5.5 Instant，它现在聊起天来有趣多了。\n\n我们最常用的模型现在能更好地理解问题背后的意图，并相应地调整回应。\n\n它也能更可靠地处理复杂约束，让购物和本地推荐更加实用和连贯。\n\n今天向付费用户推送，明天向免费用户推送。",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true
+    },
+    {
+      "id": "cmqrl73460l9gslp5w33pryqi",
+      "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
+      "title_en": "OpenAI ChatGPT 语音最大规模升级：双向 AI 语音模型 Bidi 1 已上线测试",
+      "url": "https://www.ithome.com/0/967/852.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqrl73460l9gslp5w33pryqi",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-24T04:34:24.000Z",
+      "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。",
+      "category": "ai-models",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqrizuey0kmcslp5zt7bajh0",
+      "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/NV9WGpGsfFz35jww5agM9g",
+      "permalink": "https://aihot.virxact.com/items/cmqrizuey0kmcslp5zt7bajh0",
+      "source": "公众号：通义实验室（千问）",
+      "publishedAt": "2026-06-24T03:32:04.000Z",
+      "summary": "Qwen推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+      "category": "ai-models",
+      "score": 74,
+      "selected": true
+    },
     {
       "id": "cmqr15pz20fjzslp5eps5gotw",
       "title": "FastWan-QAD：单卡5090上1.8秒生成5秒视频",
@@ -131,45 +183,6 @@
       "summary": "LOGOS 由 ATH-Token Foundry 联合中国人民大学高瓴人工智能学院开源，是首个基于统一\"科学语法\"的多领域科学生成基础模型。LOGOS-1B（1B参数）在六大科学任务上匹配或超越领域专用方法：口袋条件配体生成纯序列范式首次超越3D扩散模型，超越NatureLM（8×7B）；逆合成预测Top-1准确率74.8%；口袋位点识别仅靠序列达58.5% Top-n准确率；MOF材料生成NBB提升至17.78%。模型采用统一词汇表将蛋白质、小分子等编码为离散Token，通过空间交互离散化实现无需3D坐标的序列预测。预训练与下游任务形式与目标一致，跨领域知识迁移经实验验证有效。已完整开源模型权重、推理代码与技术报告。",
       "category": "ai-models",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqi8qht206mtslf0a4q8mkrb",
-      "title": "MolmoMotion：语言引导的3D运动预测模型",
-      "title_en": "MolmoMotion： Language-guided 3D motion forecasting",
-      "url": "https://huggingface.co/blog/allenai/molmomotion",
-      "permalink": "https://aihot.virxact.com/items/cmqi8qht206mtslf0a4q8mkrb",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-17T15:26:44.000Z",
-      "summary": "MolmoMotion基于Molmo 2骨干网络，输入视频帧、物体上的3D点标记及文字动作指令（如\"移动并旋转桌上放水果的木碗\"），预测未来数秒内这些点的3D轨迹。提供两个变体：自回归的MolmoMotion-AR逐步预测坐标，流匹配的MolmoMotion-FM通过连续空间变换处理多可能性运动。同时发布MolmoMotion-1M数据集（含116万视频的3D点轨迹及动作描述）和PointMotionBench基准测试（2700个人工验证视频片段）。模型权重、数据集和基准测试均已开源。",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmqiygkr105h9sl5wy9xi09kx",
-      "title": "Sumi：从头训练的7B开源均匀扩散语言模型",
-      "title_en": "Sumi： Open Uniform Diffusion Language Model from Scratch",
-      "url": "https://arxiv.org/abs/2606.19005",
-      "permalink": "https://aihot.virxact.com/items/cmqiygkr105h9sl5wy9xi09kx",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "summary": "Sumi（日语\"墨\"）是一个完全开源的7B参数均匀扩散语言模型，从零开始在1.5T模型token上预训练。它在知识、推理和编程评测中与同等token预算的自回归模型表现相当，但在常识推理benchmark上略逊，教育密集型数据混合可能是原因之一。Sumi开放模型权重、检查点及完整训练配方（含公开语料数据混合说明），为社区提供首个大规模均匀扩散模型的基准参考。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqihhij5010ksl5w7mpblibe",
-      "title": "Grok 4.3 在 Amazon Bedrock 正式可用",
-      "title_en": "Grok on Amazon Bedrock Jun 17， 2026 # Grok on Amazon Bedrock Grok models are now available via Amazon Bedrock. Read More",
-      "url": "https://x.ai/news/grok-amazon-bedrock",
-      "permalink": "https://aihot.virxact.com/items/cmqihhij5010ksl5w7mpblibe",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "summary": "6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2-10 倍。",
-      "category": "ai-models",
-      "score": 61,
       "selected": true
     }
   ]

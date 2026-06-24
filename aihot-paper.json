@@ -1,8 +1,47 @@
 {
-  "count": 16,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqsbr8l701ndslfubzp0hnmi",
+      "title": "思考即回忆：推理如何解锁LLM中的参数化知识",
+      "title_en": "Thinking to recall： How reasoning unlocks parametric knowledge in LLMs",
+      "url": "https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
+      "permalink": "https://aihot.virxact.com/items/cmqsbr8l701ndslfubzp0hnmi",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-24T17:05:40.380Z",
+      "summary": "Google Research研究发现，推理（chain-of-thought）能帮助大语言模型（LLM）回忆简单事实，即使这些事实无需复杂推导。在Gemini-2.5 Flash和Pro以及Qwen3-32B上，启用推理后模型能够回答原本无法直接回答的简单问题，pass@k显示正确事实存在于输出分布中。该现象由两个机制驱动：一是生成的推理token充当计算缓冲，允许模型进行隐藏计算以提取参数化知识；二是推理过程中产生的相关事实起到启动效应（factual priming），帮助模型激活正确答案。",
+      "category": "paper",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqrrgnay0n08slp5phvdk394",
+      "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
+      "title_en": "DFlash Speculative Decoding Drafts Whole Token Blocks in Parallel for Up to 15x Higher Throughput on NVIDIA Blackwell",
+      "url": "https://www.marktechpost.com/2026/06/24/dflash-speculative-decoding-drafts-whole-token-blocks-in-parallel-for-up-to-15x-higher-throughput-on-nvidia-blackwell",
+      "permalink": "https://aihot.virxact.com/items/cmqrrgnay0n08slp5phvdk394",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-06-24T07:21:10.000Z",
+      "summary": "DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块扩散草稿模型。它一次前向推理生成整块 token，再由目标模型并行验证，保证输出无损。相比 EAGLE-3，DFlash 实现最高 2.5 倍加速，在 Qwen3-8B 等多种模型上平均无损加速超过 6 倍（MATH-500 达 6.08×）。在 NVIDIA Blackwell 上（TensorRT-LLM），gpt-oss-120b 模型吞吐量提升最高 15 倍，约为 EAGLE-3 的 1.5 倍。核心创新是将目标模型多层隐藏特征注入草稿模型每一层的 Key-Value 投影，使接受长度随草稿深度增长。",
+      "category": "paper",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmqr73j5g0h1nslp5g9y52k0v",
+      "title": "AI招聘工具存在种族偏见和系统性排斥；黑人占比26%，亚裔占比15%",
+      "title_en": null,
+      "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
+      "permalink": "https://aihot.virxact.com/items/cmqr73j5g0h1nslp5g9y52k0v",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-23T21:48:25.964Z",
+      "summary": "一项覆盖340万人、400万份申请、150家雇主和1700个职位的大规模实地研究发现，AI招聘筛选工具存在显著的种族歧视：26%的黑人申请者和15%的亚裔申请者遭遇算法对其族群的系统性排斥；若AI按推荐率最高群体（通常为白人）标准执行，将有4万份额外申请进入下一轮。多数雇主依赖同一第三方供应商算法，形成\"算法单一文化\"，导致10%提交4份申请者被所有职位拒绝。对比同期未用AI的招聘数据（8.3万份申请、108家财富500强企业），未发现此类模式。研究呼吁对算法招聘进行独立监管。",
+      "category": "paper",
+      "score": 71,
+      "selected": true
+    },
     {
       "id": "cmqr02j580f8oslp5i6wajucu",
       "title": "九位评委，两个有效投票：相关错误削弱LLM评审面板",
@@ -144,71 +183,6 @@
       "summary": "HumanScale项目比较了自我中心人类视频与遥操作真实机器人轨迹作为具身基础模型预训练数据源。经精心设计的过滤与标注流程后，基于自我中心数据预训练的模型在真实机器人动作预测上验证损失降低24%，分布内任务成功率高52.5%，分布外任务成功率高90%。研究验证了一种可扩展范式：先以人类视频预训练学习多样世界表征，再以少量标注机器人数据微调对齐动作空间。",
       "category": "paper",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqiakygm075xslf0a7v3eqfl",
-      "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
-      "title_en": "I made Physical AutoResearch sound simple （conceptually）， but it took a village to pull off and lots…",
-      "url": "https://x.com/DrJimFan/status/2067283904986517866",
-      "permalink": "https://aihot.virxact.com/items/cmqiakygm075xslf0a7v3eqfl",
-      "source": "X：Jim Fan (@DrJimFan)",
-      "publishedAt": "2026-06-17T16:31:05.000Z",
-      "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
-      "category": "paper",
-      "score": 81,
-      "selected": true
-    },
-    {
-      "id": "cmqlhlm0t00b3sljgy5o93w0h",
-      "title": "CyberGym-E2E：AI智能体端到端网络安全能力的大规模真实世界基准",
-      "title_en": "CyberGym-E2E： Scalable Real-World Benchmark for AI Agents' End-to-End Cybersecurity Capabilities",
-      "url": "https://rdi.berkeley.edu/blog/cybergym-e2e",
-      "permalink": "https://aihot.virxact.com/items/cmqlhlm0t00b3sljgy5o93w0h",
-      "source": "Berkeley RDI：Blog（AI 安全与评测）",
-      "publishedAt": "2026-06-17T16:00:00.000Z",
-      "summary": "CyberGym-E2E 是一个包含920个真实漏洞、覆盖139个开源项目的大规模端到端网络安全基准。任务要求AI智能体在真实代码库中自行定位漏洞、生成触发崩溃的概念验证并编写补丁。测试表明：若直接给出漏洞位置，最强配置可修复约80%漏洞；但若需自行发现，端到端成功率急剧下降--Claude Opus 4.5仅19.2%，最新模型在37%-66%之间。智能体可能发现替代漏洞，且存在部分浅层补丁。所有漏洞已事先公开披露并修复。",
-      "category": "paper",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqjpkj4105oqslmh4rmirant",
-      "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
-      "title_en": "Project Fetch： Phase two",
-      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
-      "permalink": "https://aihot.virxact.com/items/cmqjpkj4105oqslmh4rmirant",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-17T16:00:00.000Z",
-      "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
-      "category": "paper",
-      "score": 77,
-      "selected": true
-    },
-    {
-      "id": "cmqi8ca6w06k1slf0tgau5lib",
-      "title": "Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理",
-      "title_en": "New research shows how AMIE， our medical AI， could help manage health conditions.",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
-      "permalink": "https://aihot.virxact.com/items/cmqi8ca6w06k1slf0tgau5lib",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-06-17T15:00:00.000Z",
-      "summary": "今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。",
-      "category": "paper",
-      "score": 55,
-      "selected": true
-    },
-    {
-      "id": "cmqijfbdz01grsl5wxf4rd7e6",
-      "title": "LifeSciBench 发布",
-      "title_en": "Introducing LifeSciBench",
-      "url": "https://openai.com/index/introducing-life-sci-bench",
-      "permalink": "https://aihot.virxact.com/items/cmqijfbdz01grsl5wxf4rd7e6",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-17T00:00:00.000Z",
-      "summary": "2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19，020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。",
-      "category": "paper",
-      "score": 58,
       "selected": true
     }
   ]

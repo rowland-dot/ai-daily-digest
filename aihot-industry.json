@@ -1,8 +1,21 @@
 {
-  "count": 20,
+  "count": 18,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqsgw1tf0304slfurlccxlvs",
+      "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
+      "title_en": null,
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
+      "permalink": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-24T19:08:32.032Z",
+      "summary": "美国国家安全局（NSA）因与人工智能公司Anthropic的纠纷，失去了对Mythos系统的访问权限。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
     {
       "id": "cmqr4zhkm0gidslp5x8ow892r",
       "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
@@ -222,45 +235,6 @@
       "summary": "苹果CEO库克确认，AI热潮导致存储芯片严重短缺和价格暴涨，苹果产品涨价已\"不可避免\"。库克未透露涨价具体细节。华尔街日报指出，全球AI巨头大幅增加资本开支，高带宽内存需求激增，挤压消费电子芯片供应。自2024年以来内存和存储芯片价格已翻四倍，涨势预计延续至2027年。研究机构估算，下一代iPhone 18 Pro售价或需增加约270美元。苹果已在上月提高Mac Mini起售价。摩根士丹利预测，今年美国智能手机和PC价格将上涨15%。",
       "category": "industry",
       "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqiewg85009zsl5w0gbt6hbe",
-      "title": "Anthropic与DeepMind CEO呼吁G7组建AI联盟排除中国",
-      "title_en": "We are entering a new era of the Cold War. Dario Amodei and Demis Hassabis are calling for a \"U.S.-…",
-      "url": "https://x.com/kimmonismus/status/2067310431669223425",
-      "permalink": "https://aihot.virxact.com/items/cmqiewg85009zsl5w0gbt6hbe",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-06-17T18:16:30.000Z",
-      "summary": "Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。",
-      "category": "industry",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmqhhkrpp04hksle1vu6mkikf",
-      "title": "中国加紧筹建世界人工智能合作组织",
-      "title_en": "中国正在加紧筹建世界人工智能合作组织",
-      "url": "https://www.ithome.com/0/965/248.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqhhkrpp04hksle1vu6mkikf",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-17T02:50:01.000Z",
-      "summary": "中国正加紧筹建世界人工智能合作组织，欢迎各方加入。2025年7月26日，中国政府倡议成立该组织，作为践行多边主义、推动共商共建共享全球治理的举措，旨在弥合数字和智能鸿沟、促进人工智能向善普惠发展。初步考虑总部设在上海。同日，2025世界人工智能大会发表《人工智能全球治理行动计划》，呼吁各方遵循向善为民、尊重主权、发展导向、安全可控、公平普惠、开放合作的原则，协力推进全球人工智能发展与治理。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqh8r5nd020ysle1tvadx7vs",
-      "title": "Anthropic 5月企业AI订阅份额首超OpenAI，特朗普政府禁令反促采用量创新高",
-      "title_en": "Anthropic's latest feud with the Trump admin may actually help it， sales data suggests",
-      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests",
-      "permalink": "https://aihot.virxact.com/items/cmqh8r5nd020ysle1tvadx7vs",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-16T22:34:17.000Z",
-      "summary": "Anthropic 5月企业AI订阅市场份额达41%，首次超越OpenAI（39.5%）。公司刚完成650亿美元融资、估值9650亿美元，并因首次盈利季度秘密提交IPO。特朗普政府以出口管制为由要求Anthropic禁止非美国人访问最新模型Mythos 5及Fable 5，导致两款模型下架。Ramp首席经济学家指出，类似争议（如3月被国防部列为供应链风险）反而推动Anthropic企业采用量创纪录。Ramp数据显示，企业支出主要流向Claude Opus模型（最新为Opus 4.8）。",
-      "category": "industry",
-      "score": 73,
       "selected": true
     }
   ]
