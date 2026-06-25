@@ -1,19 +1,45 @@
 {
-  "count": 14,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqsbr8l701ndslfubzp0hnmi",
-      "title": "思考即回忆：推理如何解锁LLM中的参数化知识",
-      "title_en": "Thinking to recall： How reasoning unlocks parametric knowledge in LLMs",
-      "url": "https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
-      "permalink": "https://aihot.virxact.com/items/cmqsbr8l701ndslfubzp0hnmi",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-24T17:05:40.380Z",
-      "summary": "Google Research研究发现，推理（chain-of-thought）能帮助大语言模型（LLM）回忆简单事实，即使这些事实无需复杂推导。在Gemini-2.5 Flash和Pro以及Qwen3-32B上，启用推理后模型能够回答原本无法直接回答的简单问题，pass@k显示正确事实存在于输出分布中。该现象由两个机制驱动：一是生成的推理token充当计算缓冲，允许模型进行隐藏计算以提取参数化知识；二是推理过程中产生的相关事实起到启动效应（factual priming），帮助模型激活正确答案。",
+      "id": "cmqtvbv4r076ssl0e588aopiw",
+      "title": "IBM 首度推出亚纳米级芯片技术",
+      "title_en": "IBM首度推出亚纳米级芯片技术",
+      "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+      "permalink": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-25T18:52:05.282Z",
+      "summary": "IBM 于 2026 年 6 月 25 日发布全球首款亚纳米级芯片技术，采用 0.7 nm（7 埃米）节点与全新三维纳米堆叠（nanostack）架构。指甲盖大小的芯片集成近 1000 亿个晶体管，密度约为 IBM 2021 年 2 nm 芯片的两倍。相比 2 nm 芯片，性能最高提升 50%，能效最高提升 70%。纳米堆叠架构还实现 SRAM 面积缩减 40%，有助于支撑先进 AI 工作负载的高带宽需求。该技术已在 VLSI 2026 会议上验证，IBM 预计 5 年内量产。",
       "category": "paper",
-      "score": 69,
+      "score": 78,
+      "selected": true
+    },
+    {
+      "id": "cmqtu9a7r06x3sl0exw2blt0o",
+      "title": "赫库兰尼姆古卷首次被完整虚拟解读",
+      "title_en": "赫库兰尼姆的一卷古卷首次被解读",
+      "url": "https://scrollprize.org/firstscroll",
+      "permalink": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-25T18:03:58.685Z",
+      "summary": "研究人员利用高分辨率X射线显微断层扫描和机器学习，在未物理展开的情况下完整虚拟展开并读取了赫库兰尼姆古卷PHerc.1667（Scroll4）。这是首卷被从头到尾连续读取的纸莎草卷，内容为斯多葛哲学论著，提及克里西普斯的侄子Aristocreon。第二卷PHerc.Paris4通过更高分辨率成像使墨水在三维数据中直接可见，独立确认了2023年大奖赛的解读。第三卷PHerc.139确定标题和作者为菲洛德穆《论诸神》第八卷。所有数据与代码已公开。",
+      "category": "paper",
+      "score": 79,
+      "selected": true
+    },
+    {
+      "id": "cmqta6kw701sasl0es975w0zc",
+      "title": "OpenAI内部报告：智能体Codex如何改变工作",
+      "title_en": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "permalink": "https://aihot.virxact.com/items/cmqta6kw701sasl0es975w0zc",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-25T02:00:00.000Z",
+      "summary": "OpenAI 在2025年8月至2026年6月间观察到，智能体产品 Codex 取代 ChatGPT 成为主要工作工具，各部门输出 token 中 Codex 占比从不足10%升至99.8%。80.6%个体用户曾发起预计等效人类工作时间超30分钟的请求，70.2%超1小时，25.6%超8小时；99百分位用户每日生成超60小时 agent turns。非开发者用户增长迅猛：个体用户增长137倍，组织用户增长189倍。Legal、Finance、Recruiting 部门在2026年4月前后跨过 Codex 使用过半拐点，平均每位律师或招聘人员超85%输出 token 来自 Codex。",
+      "category": "paper",
+      "score": 65,
       "selected": true
     },
     {
@@ -30,6 +56,19 @@
       "selected": true
     },
     {
+      "id": "cmqsxg0qe0764slfui5djtfyx",
+      "title": "Causal-rCM：自回归视频扩散蒸馏的统一教师强制与自强制开源方案",
+      "title_en": "Causal-rCM： A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models",
+      "url": "https://arxiv.org/abs/2606.25473",
+      "permalink": "https://aihot.virxact.com/items/cmqsxg0qe0764slfui5djtfyx",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-24T00:00:00.000Z",
+      "summary": "Causal-rCM将扩散蒸馏框架rCM扩展至自回归视频扩散，提出教师强制（TF）与自强制（SF）互补训练范式，并发布统一开源算法与基础设施。通过自定义掩码FlashAttention-2 JVP内核，首次实现基于教师强制的连续时间一致性模型（sCM/MeanFlow）用于自回归视频扩散，收敛速度比离散时间版本快10倍。蒸馏后的2步因果Wan2.1-1.3B模型在仅1或2步采样下取得VBench-T2V分数84.63，仅使用合成数据即达到帧级和块级流式视频生成SOTA。该方法还应用于Cosmos 3全模态世界基础模型，实现动作条件生成的交互式世界模型。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
       "id": "cmqr73j5g0h1nslp5g9y52k0v",
       "title": "AI招聘工具存在种族偏见和系统性排斥；黑人占比26%，亚裔占比15%",
       "title_en": null,
@@ -40,6 +79,32 @@
       "summary": "一项覆盖340万人、400万份申请、150家雇主和1700个职位的大规模实地研究发现，AI招聘筛选工具存在显著的种族歧视：26%的黑人申请者和15%的亚裔申请者遭遇算法对其族群的系统性排斥；若AI按推荐率最高群体（通常为白人）标准执行，将有4万份额外申请进入下一轮。多数雇主依赖同一第三方供应商算法，形成\"算法单一文化\"，导致10%提交4份申请者被所有职位拒绝。对比同期未用AI的招聘数据（8.3万份申请、108家财富500强企业），未发现此类模式。研究呼吁对算法招聘进行独立监管。",
       "category": "paper",
       "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmqsbr8l701ndslfubzp0hnmi",
+      "title": "思考即回忆：推理如何解锁LLM中的参数化知识",
+      "title_en": "Thinking to recall： How reasoning unlocks parametric knowledge in LLMs",
+      "url": "https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
+      "permalink": "https://aihot.virxact.com/items/cmqsbr8l701ndslfubzp0hnmi",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-23T16:00:00.000Z",
+      "summary": "Google Research研究发现，推理（chain-of-thought）能帮助大语言模型（LLM）回忆简单事实，即使这些事实无需复杂推导。在Gemini-2.5 Flash和Pro以及Qwen3-32B上，启用推理后模型能够回答原本无法直接回答的简单问题，pass@k显示正确事实存在于输出分布中。该现象由两个机制驱动：一是生成的推理token充当计算缓冲，允许模型进行隐藏计算以提取参数化知识；二是推理过程中产生的相关事实起到启动效应（factual priming），帮助模型激活正确答案。",
+      "category": "paper",
+      "score": 69,
+      "selected": true
+    },
+    {
+      "id": "cmqtxwj4g006oslcv6jp1vwpy",
+      "title": "推理模型的思考Token真的有助于提升安全性吗？--来自GPT-OSS、Qwen、Olmo和Phi家族的证据",
+      "title_en": "Do Thinking Tokens Help with Safety？",
+      "url": "https://arxiv.org/abs/2606.25013",
+      "permalink": "https://aihot.virxact.com/items/cmqtxwj4g006oslcv6jp1vwpy",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "summary": "对GPT-OSS、Qwen、Olmo和Phi系列前沿开源推理模型的研究发现，所谓的\"思考token\"并未带来真正的安全性深思熟虑。模型是否拒绝或服从指令，在第一个token的",
+      "category": "paper",
+      "score": 75,
       "selected": true
     },
     {
@@ -105,84 +170,6 @@
       "summary": "论文以九个确定性生成器推理任务为测试床，证明可验证搜索无法作为可学习的CoT进行蒸馏。Cryptarithm任务中，即使backbone规模从3B到671B、采用多种CoT设计、基于可验证奖励的强化学习和自训练，蒸馏后准确率始终为0.01-0.07，而搜索求解器回答71%实例。模型能正确计算97-100%的算术步骤并将正确密码排在候选前八（71%），但无法前向推导。干预实验揭示密码键后，同一实例准确率从0.03提升至0.57。只有移除搜索、预计算组合核心为目录，让模型仅做回忆加验证，才能学会该任务（Private LB 0.92）。结论：蒸馏学到的是记忆和验证，而非搜索。",
       "category": "paper",
       "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqjur86800bvslhi6qv1647r",
-      "title": "MosaicLeaks： 你的研究智能体能保守秘密吗？",
-      "title_en": "MosaicLeaks： Can your research agent keep a secret？",
-      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
-      "permalink": "https://aihot.virxact.com/items/cmqjur86800bvslhi6qv1647r",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-18T18:13:13.000Z",
-      "summary": "深度研究智能体在结合私有本地文档与外部网页检索时存在隐私泄露风险。MosaicLeaks 提出包含 1，001 条多跳研究链的新任务，每条链交错混合本地与公共子问题。测试发现智能体频繁泄露私有信息，单纯优化任务性能反而加剧泄露。基于此，研究提出隐私感知深度研究（PA-DR）强化学习训练方法，将严格链成功率从 48.7% 提升至 58.7%，同时将答案/全面信息泄露率从 34.0% 降至 9.9%。",
-      "category": "paper",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqk1gfya0283slhilhufijtu",
-      "title": "OpenAI 强化学习实现广泛且持久的有益模型",
-      "title_en": "Reinforcement learning towards broadly and persistently beneficial models",
-      "url": "https://alignment.openai.com/beneficial-rl",
-      "permalink": "https://aihot.virxact.com/items/cmqk1gfya0283slhilhufijtu",
-      "source": "OpenAI：Alignment 研究博客（RSS）",
-      "publishedAt": "2026-06-18T18:00:00.000Z",
-      "summary": "OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。",
-      "category": "paper",
-      "score": 64,
-      "selected": true
-    },
-    {
-      "id": "cmqjmc80604sqslmhz4738b0k",
-      "title": "Nature两篇研究：MIRA和AMIE诊断与治疗计划媲美甚至超越医生",
-      "title_en": "AI systems rival doctors in new Nature studies， but one result suggests the tech won't age well",
-      "url": "https://the-decoder.com/ai-systems-rival-doctors-in-new-nature-studies-but-one-result-suggests-the-tech-wont-age-well",
-      "permalink": "https://aihot.virxact.com/items/cmqjmc80604sqslmhz4738b0k",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-18T14:37:06.000Z",
-      "summary": "德国团队开发的MIRA智能体在模拟电子病历中操作85，000种选项，500余例急诊诊断准确率88.9%，对比测试（311例）得分87.8%，高于资深专科医生（78.1%）和混合团队（71.1%）。MIRA在阑尾炎（98.6%）和胰腺炎（92.3%）最佳，未发现危险药物交互或剂量错误，性能不受语言影响，代码已公开。谷歌AMIE采用双智能体架构，在100个多访视病例中治疗计划适切率95%（初级保健医生72%），并在药物知识基准RxQA上超过医生。两项研究均警告模拟环境与现实存在差距，实际性能可能更低。",
-      "category": "paper",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqjfr2vi02xmslmhwqz72cx7",
-      "title": "ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容",
-      "title_en": "ChatGPT的图像生成器可以被利用来生成暴力和色情内容",
-      "url": "https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt",
-      "permalink": "https://aihot.virxact.com/items/cmqjfr2vi02xmslmhwqz72cx7",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-18T11:25:28.101Z",
-      "summary": "Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的\"恢复照片\"提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和\"不做审查\"指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。",
-      "category": "paper",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmqjmtwvi04vqslmh55vbp7oh",
-      "title": "OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%",
-      "title_en": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "permalink": "https://aihot.virxact.com/items/cmqjmtwvi04vqslmh55vbp7oh",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-18T08:00:00.000Z",
-      "summary": "波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。",
-      "category": "paper",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqkmvyxz00hxslh6sv4zzxc7",
-      "title": "HumanScale：自我中心人类视频在具身预训练中可超越真实机器人数据",
-      "title_en": "HumanScale： Egocentric Human Video Can Outperform Real-Robot Data for Embodied Pretraining",
-      "url": "https://arxiv.org/abs/2606.20521",
-      "permalink": "https://aihot.virxact.com/items/cmqkmvyxz00hxslh6sv4zzxc7",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-18T00:00:00.000Z",
-      "summary": "HumanScale项目比较了自我中心人类视频与遥操作真实机器人轨迹作为具身基础模型预训练数据源。经精心设计的过滤与标注流程后，基于自我中心数据预训练的模型在真实机器人动作预测上验证损失降低24%，分布内任务成功率高52.5%，分布外任务成功率高90%。研究验证了一种可扩展范式：先以人类视频预训练学习多样世界表征，再以少量标注机器人数据微调对齐动作空间。",
-      "category": "paper",
-      "score": 75,
       "selected": true
     }
   ]

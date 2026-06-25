@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-06-24T21:54:28.282Z",
+  "fetched_at": "2026-06-25T22:05:14.172Z",
   "repos": [
+    {
+      "owner": "google-labs-code",
+      "name": "design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 19011,
+      "forks": 1636,
+      "starsToday": 1407
+    },
     {
       "owner": "calesthio",
       "name": "OpenMontage",
@@ -8,20 +19,31 @@
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 19102,
-      "forks": 2173,
-      "starsToday": 3703
+      "stars": 21943,
+      "forks": 2461,
+      "starsToday": 3553
     },
     {
-      "owner": "ZhuLinsen",
-      "name": "daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "owner": "xbtlin",
+      "name": "ai-berkshire",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 48390,
-      "forks": 42937,
-      "starsToday": 1461
+      "stars": 1794,
+      "forks": 292,
+      "starsToday": 201
+    },
+    {
+      "owner": "mauriceboe",
+      "name": "TREK",
+      "url": "https://github.com/mauriceboe/TREK",
+      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 6571,
+      "forks": 602,
+      "starsToday": 112
     },
     {
       "owner": "apple",
@@ -30,20 +52,9 @@
       "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 42083,
-      "forks": 1230,
-      "starsToday": 1746
-    },
-    {
-      "owner": "interviewstreet",
-      "name": "hiring-agent",
-      "url": "https://github.com/interviewstreet/hiring-agent",
-      "description": "AI agent to evaluate and score resumes.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 2090,
-      "forks": 593,
-      "starsToday": 152
+      "stars": 43151,
+      "forks": 1266,
+      "starsToday": 1366
     },
     {
       "owner": "JCodesMore",
@@ -52,97 +63,119 @@
       "description": "Clone any website with one command using AI coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 19234,
-      "forks": 2877,
-      "starsToday": 693
+      "stars": 20340,
+      "forks": 2999,
+      "starsToday": 1021
     },
     {
-      "owner": "revfactory",
-      "name": "harness",
-      "url": "https://github.com/revfactory/harness",
-      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 7697,
-      "forks": 1053,
-      "starsToday": 274
-    },
-    {
-      "owner": "flutter",
-      "name": "flutter",
-      "url": "https://github.com/flutter/flutter",
-      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
-      "language": "Dart",
-      "languageColor": "#00B4AB",
-      "stars": 177280,
-      "forks": 30544,
-      "starsToday": 200
-    },
-    {
-      "owner": "andreknieriem",
-      "name": "headunit-revived",
-      "url": "https://github.com/andreknieriem/headunit-revived",
-      "description": "Headunit App for displaying Android Auto",
-      "language": "Kotlin",
-      "languageColor": "#A97BFF",
-      "stars": 1403,
-      "forks": 112,
-      "starsToday": 62
-    },
-    {
-      "owner": "stablyai",
-      "name": "orca",
-      "url": "https://github.com/stablyai/orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "owner": "every-app",
+      "name": "open-seo",
+      "url": "https://github.com/every-app/open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 6709,
-      "forks": 486,
-      "starsToday": 387
+      "stars": 2464,
+      "forks": 294,
+      "starsToday": 57
     },
     {
-      "owner": "google-labs-code",
-      "name": "design.md",
-      "url": "https://github.com/google-labs-code/design.md",
-      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "owner": "garrytan",
+      "name": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 17217,
-      "forks": 1563,
-      "starsToday": 504
+      "stars": 115743,
+      "forks": 17159,
+      "starsToday": 836
     },
     {
-      "owner": "Flowseal",
-      "name": "zapret-discord-youtube",
-      "url": "https://github.com/Flowseal/zapret-discord-youtube",
-      "description": "",
-      "language": "Batchfile",
-      "languageColor": "#C1F12E",
-      "stars": 30018,
-      "forks": 2341,
-      "starsToday": 103
-    },
-    {
-      "owner": "kunchenguid",
-      "name": "no-mistakes",
-      "url": "https://github.com/kunchenguid/no-mistakes",
-      "description": "git push no-mistakes",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 1976,
-      "forks": 138,
-      "starsToday": 182
-    },
-    {
-      "owner": "NousResearch",
-      "name": "hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "description": "The agent that grows with you",
+      "owner": "aws",
+      "name": "agent-toolkit-for-aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 201973,
-      "forks": 36091,
-      "starsToday": 1174
+      "stars": 1112,
+      "forks": 113,
+      "starsToday": 15
+    },
+    {
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 21152,
+      "forks": 2438,
+      "starsToday": 600
+    },
+    {
+      "owner": "alibaba",
+      "name": "page-agent",
+      "url": "https://github.com/alibaba/page-agent",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 19760,
+      "forks": 1704,
+      "starsToday": 196
+    },
+    {
+      "owner": "IceWhaleTech",
+      "name": "CasaOS",
+      "url": "https://github.com/IceWhaleTech/CasaOS",
+      "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 34756,
+      "forks": 1989,
+      "starsToday": 202
+    },
+    {
+      "owner": "opendatalab",
+      "name": "MinerU",
+      "url": "https://github.com/opendatalab/MinerU",
+      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 69477,
+      "forks": 5873,
+      "starsToday": 524
+    },
+    {
+      "owner": "Free-TV",
+      "name": "IPTV",
+      "url": "https://github.com/Free-TV/IPTV",
+      "description": "M3U Playlist for free TV channels",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 18185,
+      "forks": 2676,
+      "starsToday": 141
+    },
+    {
+      "owner": "shanraisshan",
+      "name": "claude-code-best-practice",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 60454,
+      "forks": 6058,
+      "starsToday": 450
+    },
+    {
+      "owner": "NanmiCoder",
+      "name": "MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 52722,
+      "forks": 10918,
+      "starsToday": 347
     }
   ]
 }

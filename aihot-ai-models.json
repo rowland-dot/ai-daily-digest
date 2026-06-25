@@ -1,19 +1,19 @@
 {
-  "count": 14,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmqsl6c5y042hslfu74apxkap",
-      "title": "Gemini 3.5 Flash 中的计算机使用",
-      "title_en": null,
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash",
-      "permalink": "https://aihot.virxact.com/items/cmqsl6c5y042hslfu74apxkap",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-24T21:16:01.786Z",
-      "summary": "Google 将计算机使用（Computer use）作为内置工具集成至 Gemini 3.5 Flash，使开发者能构建跨浏览器、移动端和桌面环境的智能体。此前该功能仅作为独立模型在 Gemini 2.5 中提供，现已原生整合至主 Flash 模型。开发者可通过 Gemini API 及 Gemini Enterprise Agent Platform 调用。安全方面，模型采用针对性对抗训练降低提示注入风险，并新增两项可选企业级保护：要求用户确认敏感操作、检测到间接提示注入时自动停止。该能力在持续软件测试、跨应用知识工作等长周期企业自动化场景中表现更优。（198字）",
+      "id": "cmqtpj36o05pusl0e9ingyoye",
+      "title": "Ornith-1.0 开源模型家族发布，专注 Agentic Coding 全参数规模",
+      "title_en": "卧槽！最近开源大模型太卷了啊！ 这不又一个专注agentic coding的开源模型家族来了，叫Ornith-1.0。 它覆盖了从9B到397B MoE的全尺寸，在Terminal-Bench、S…",
+      "url": "https://x.com/berryxia/status/2070167806700908957",
+      "permalink": "https://aihot.virxact.com/items/cmqtpj36o05pusl0e9ingyoye",
+      "source": "X：Berry Xia (@berryxia)",
+      "publishedAt": "2026-06-25T15:30:41.000Z",
+      "summary": "Ornith-1.0 开源模型家族发布，专注智能体编程（Agentic Coding），覆盖 9B Dense、31B Dense、35B MoE 及 397B MoE 全参数规模。在 Agent Coding 基准上达开源顶尖：SWE-Bench Verified 82.4、SWE-Bench Pro 62.2、Terminal-Bench 2.1 77.5、NL2Repo 48.2、SWE Atlas 41.2 QnA、ClawEval 77.1。基于 gemma4 和 qwen3.5 后训练，采用强化学习联合优化任务脚手架（scaffold）与最终解决方案，让模型自主改进执行框架。全系列 MIT 开源，提供 GGUF 版本，支持 Ollama、Unsloth 等本地运行。",
       "category": "ai-models",
-      "score": 71,
+      "score": 76,
       "selected": true
     },
     {
@@ -38,19 +38,6 @@
       "source": "IT之家（RSS）",
       "publishedAt": "2026-06-24T04:34:24.000Z",
       "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqrizuey0kmcslp5zt7bajh0",
-      "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/NV9WGpGsfFz35jww5agM9g",
-      "permalink": "https://aihot.virxact.com/items/cmqrizuey0kmcslp5zt7bajh0",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-06-24T03:32:04.000Z",
-      "summary": "Qwen推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
       "category": "ai-models",
       "score": 74,
       "selected": true
@@ -134,6 +121,19 @@
       "selected": true
     },
     {
+      "id": "cmqrjhuo40kszslp5qsjmxdy7",
+      "title": "Qwen-AgentWorld：面向通用智能体的语言世界模型",
+      "title_en": "Qwen-AgentWorld： Language World Models for General Agents",
+      "url": "https://qwen.ai/blog?id=qwen-agentworld",
+      "permalink": "https://aihot.virxact.com/items/cmqrjhuo40kszslp5qsjmxdy7",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-06-23T03:30:30.000Z",
+      "summary": "Qwen 团队发布 Qwen-AgentWorld，一个以环境建模为训练目标的原生语言世界模型，在单个模型中模拟 MCP、Search、Terminal、SWE 及 GUI 域（Web、OS、Android）共七个域。模型使用超 1000 万条真实交互轨迹训练，在 AgentWorldBench 上以 Qwen-AgentWorld-397B-A17B 版本达最高模拟质量，超越 GPT-5.4、Claude Opus 4.8 和 Gemini 3.1 Pro。同时发布评测基准 AgentWorldBench。该模型可作为解耦环境模拟器用于智能体 RL 训练，也可作为统一智能体基础模型，经 LWM 预热后无需智能体 RL 微调即可迁移。模型和基准已开源在 Hugging Face 和 ModelScope。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true
+    },
+    {
       "id": "cmqq5ns6p06scslp5dlnxluux",
       "title": "Seed2.1 正式发布，深入 AI 生产力",
       "title_en": "Seed2.1 正式发布，深入 AI 生产力",
@@ -160,29 +160,16 @@
       "selected": true
     },
     {
-      "id": "cmqjdctxe02bfslmhz7m5hdlk",
-      "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",
-      "title_en": "豆包实时语音模型3.0 API 服务正式上线",
-      "url": "https://mp.weixin.qq.com/s/L4BJnexabQu5DAxDnwEGxw",
-      "permalink": "https://aihot.virxact.com/items/cmqjdctxe02bfslmhz7m5hdlk",
-      "source": "公众号：火山引擎",
-      "publishedAt": "2026-06-18T10:36:31.000Z",
-      "summary": "火山引擎上线豆包实时语音模型3.0（Seeduplex）API 服务并开启邀测。该模型为原生全双工端到端语音大模型，具备精准遵循、抗干扰、动态判停三大优势。可在多人对话中安静待命，指定话题出现时主动加入；支持通过自定义工具在实时交互中完成预定日历、发送邮件等任务。抗干扰力提升，误回复率与误打断率大幅降低；判停延迟缩短约250ms，复杂场景抢话比例下降40%，用户主动打断延迟缩短约300ms。适用于汽车智能座舱、智能硬件、智能客服等场景。",
+      "id": "cmqph7ap700n2slp5g4tfjs46",
+      "title": "OpenAI 扩展 Daybreak 计划：推出 GPT-5.5-Cyber 完整版与 Codex Security 更新",
+      "title_en": "Daybreak： Tools for securing every organization in the world",
+      "url": "https://openai.com/index/daybreak-securing-the-world",
+      "permalink": "https://aihot.virxact.com/items/cmqph7ap700n2slp5g4tfjs46",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-22T10:00:00.000Z",
+      "summary": "OpenAI 于 2026 年 6 月 22 日宣布扩展 Daybreak 计划，发布 GPT-5.5-Cyber 完整版和 Codex Security 插件更新。GPT-5.5-Cyber 在 CyberGym 上达 85.6%，超越 GPT-5.5 的 81.8%。Codex Security 插件可深度扫描代码库、验证漏洞并自动生成补丁，支持导出至漏洞管理系统。自 3 月预览以来已扫描超 3000 万次提交，超 7 万项发现经人工确认已修复。同期启动 Patch the Planet 计划，联合 Trail of Bits、HackerOne 等，cURL、Go、Python、Sigstore、pyca/cryptography 等 30 多个开源项目已参与。",
       "category": "ai-models",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqiw7jw604v7sl5w10zed5s8",
-      "title": "首个统一科学大模型 LOGOS 正式开源",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/50q5uY849FKnBzk1Q04MRg",
-      "permalink": "https://aihot.virxact.com/items/cmqiw7jw604v7sl5w10zed5s8",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-06-18T02:31:28.000Z",
-      "summary": "LOGOS 由 ATH-Token Foundry 联合中国人民大学高瓴人工智能学院开源，是首个基于统一\"科学语法\"的多领域科学生成基础模型。LOGOS-1B（1B参数）在六大科学任务上匹配或超越领域专用方法：口袋条件配体生成纯序列范式首次超越3D扩散模型，超越NatureLM（8×7B）；逆合成预测Top-1准确率74.8%；口袋位点识别仅靠序列达58.5% Top-n准确率；MOF材料生成NBB提升至17.78%。模型采用统一词汇表将蛋白质、小分子等编码为离散Token，通过空间交互离散化实现无需3D坐标的序列预测。预训练与下游任务形式与目标一致，跨领域知识迁移经实验验证有效。已完整开源模型权重、推理代码与技术报告。",
-      "category": "ai-models",
-      "score": 75,
+      "score": 63,
       "selected": true
     }
   ]
