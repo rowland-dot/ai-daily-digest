@@ -1,7 +1,43 @@
 {
-  "fetched_at": "2026-06-25T22:05:21.389Z",
+  "fetched_at": "2026-06-26T21:48:36.047Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Timothy B. Lee",
+      "link": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything",
+      "updated": "2026-06-26T21:15:09+00:00",
+      "summary": "This is like saying there's no learning curve to being a manager because your employees will just do whatever you tell them to do."
+    },
+    {
+      "title": "What happened after 2,000 people tried to hack my AI assistant",
+      "link": "https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/#atom-everything",
+      "updated": "2026-06-26T18:33:14+00:00",
+      "summary": "What happened after 2,000 people tried to hack my AI assistant"
+    },
+    {
+      "title": "Incident Report: CVE-2026-LGTM",
+      "link": "https://simonwillison.net/2026/Jun/26/incident-report/#atom-everything",
+      "updated": "2026-06-26T17:58:54+00:00",
+      "summary": "Incident Report: CVE-2026-LGTM"
+    },
+    {
+      "title": "Quoting OpenAI",
+      "link": "https://simonwillison.net/2026/Jun/26/openai/#atom-everything",
+      "updated": "2026-06-26T17:10:43+00:00",
+      "summary": "We're beginning a limited preview of the GPT‑5.6 series: Sol, our flagship model; Terra, a balanced model for everyday work; and Luna, a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost. [...] We believe in broad access, and we plan to make GPT‑5.6 Sol, Terra, and Luna generally available in the coming weeks. As part of our ongoing engagement with the U.S. government, we previewed our plans and the models’ capabilities ahead of today’s launch. At their request, we are starting with a limited preview for a small group of trusted partners whose participation has been shared with the government, before releasing more broadly. [...] GPT‑5.6 is priced per 1M tokens across three model sizes: Sol is $5 input / $30 output; Terra is $2.50 input / $15 output; and Luna is $1 input / $6 output. GPT‑5.6 also introduces more predictable prompt caching, including support for explicit cache breakpoints and a 30-minute minimum cache life. For GPT‑5.6 and later models, cache writes are billed at 1.25x the model’s uncached input rate, while cache reads continue to receive the 90% cached-input discount."
+    },
+    {
+      "title": "AI and Liability",
+      "link": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
+      "updated": "2026-06-25T22:28:46+00:00",
+      "summary": "AI and Liability"
+    },
+    {
+      "title": "datasette-export-database 0.3a2",
+      "link": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+      "updated": "2026-06-25T17:21:09+00:00",
+      "summary": "An embarrassingly tiny release. The pyproject.toml had pinned to datasette==1.0a27 , inadvertently making this plugin incompatible with all other Datasette versions. It's now datasette>=1.0a27 instead."
+    },
     {
       "title": "simonw/browser-compat-db",
       "link": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
@@ -37,42 +73,6 @@
       "link": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
       "updated": "2026-06-22T23:43:51+00:00",
       "summary": "This morning on Hacker News I saw Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance , describing a small but effective inpainting model - a model where you can mark regions of an image to remove and the model imagines what should fill the space. The released model required PyTorch and NVIDIA CUDA , but since it described itself as 0.2B I decided to try and get it running using WebGPU in a browser. TL;DR: I got it working, and you can try the demo at simonw.github.io/moebius-web/ . Read on for the details."
-    },
-    {
-      "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
-      "link": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-      "updated": "2026-06-21T23:35:47+00:00",
-      "summary": "sqlite-utils is my combined Python library and CLI tool for working with SQLite databases. It provides an extensive set of higher-level operations on top of Python's default sqlite3 package , including support for complex table transformations , automatic table creation from JSON data and a whole lot more."
-    },
-    {
-      "title": "sqlite-utils 4.0rc1",
-      "link": "https://simonwillison.net/2026/Jun/21/sqlite-utils/#atom-everything",
-      "updated": "2026-06-21T23:30:04+00:00",
-      "summary": "See sqlite-utils 4.0rc1 adds migrations and nested transactions ."
-    },
-    {
-      "title": "Temporary Cloudflare Accounts for AI agents",
-      "link": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
-      "updated": "2026-06-21T22:01:04+00:00",
-      "summary": "Temporary Cloudflare Accounts for AI agents"
-    },
-    {
-      "title": "Quoting Sean Lynch",
-      "link": "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything",
-      "updated": "2026-06-19T22:45:49+00:00",
-      "summary": "The real valuable capability MCP offers over skills/CLI is isolating the auth flow outside of the agent’s context window, and potentially out of the harness completely. [...] Maybe the idealized form of MCP is just an auth gateway for the API and nothing else. That’d still be a win."
-    },
-    {
-      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
-      "link": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
-      "updated": "2026-06-18T23:58:38+00:00",
-      "summary": "Today we launched a new plugin for Datasette, datasette-apps , with this launch announcement post on the Datasette project blog. That post has the what , but I'm going to expand on that a little bit here to provide the why ."
-    },
-    {
-      "title": "datasette-acl 0.6a0",
-      "link": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
-      "updated": "2026-06-18T19:03:13+00:00",
-      "summary": "This release expands datasette-acl from table-only permissions toward a general resource-sharing system."
     }
   ]
 }

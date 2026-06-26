@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-06-25T22:05:14.172Z",
+  "fetched_at": "2026-06-26T21:48:23.338Z",
   "repos": [
+    {
+      "owner": "simplex-chat",
+      "name": "simplex-chat",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+      "language": "Haskell",
+      "languageColor": "#5e5086",
+      "stars": 12446,
+      "forks": 705,
+      "starsToday": 191
+    },
     {
       "owner": "google-labs-code",
       "name": "design.md",
@@ -8,130 +19,53 @@
       "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 19011,
-      "forks": 1636,
-      "starsToday": 1407
+      "stars": 21103,
+      "forks": 1715,
+      "starsToday": 2319
     },
     {
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "owner": "commaai",
+      "name": "openpilot",
+      "url": "https://github.com/commaai/openpilot",
+      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 21943,
-      "forks": 2461,
-      "starsToday": 3553
+      "stars": 61753,
+      "forks": 11044,
+      "starsToday": 67
     },
     {
-      "owner": "xbtlin",
-      "name": "ai-berkshire",
-      "url": "https://github.com/xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1794,
-      "forks": 292,
-      "starsToday": 201
-    },
-    {
-      "owner": "mauriceboe",
-      "name": "TREK",
-      "url": "https://github.com/mauriceboe/TREK",
-      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 6571,
-      "forks": 602,
-      "starsToday": 112
-    },
-    {
-      "owner": "apple",
-      "name": "container",
-      "url": "https://github.com/apple/container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 43151,
-      "forks": 1266,
-      "starsToday": 1366
-    },
-    {
-      "owner": "JCodesMore",
-      "name": "ai-website-cloner-template",
-      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "description": "Clone any website with one command using AI coding agents",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 20340,
-      "forks": 2999,
-      "starsToday": 1021
-    },
-    {
-      "owner": "every-app",
-      "name": "open-seo",
-      "url": "https://github.com/every-app/open-seo",
-      "description": "Open source alternative to Semrush and Ahrefs",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 2464,
-      "forks": 294,
-      "starsToday": 57
-    },
-    {
-      "owner": "garrytan",
-      "name": "gstack",
-      "url": "https://github.com/garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 115743,
-      "forks": 17159,
-      "starsToday": 836
-    },
-    {
-      "owner": "aws",
-      "name": "agent-toolkit-for-aws",
-      "url": "https://github.com/aws/agent-toolkit-for-aws",
-      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1112,
-      "forks": 113,
-      "starsToday": 15
-    },
-    {
-      "owner": "mukul975",
-      "name": "Anthropic-Cybersecurity-Skills",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 21152,
-      "forks": 2438,
-      "starsToday": 600
-    },
-    {
-      "owner": "alibaba",
-      "name": "page-agent",
-      "url": "https://github.com/alibaba/page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 19760,
-      "forks": 1704,
-      "starsToday": 196
-    },
-    {
-      "owner": "IceWhaleTech",
-      "name": "CasaOS",
-      "url": "https://github.com/IceWhaleTech/CasaOS",
-      "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+      "owner": "kunchenguid",
+      "name": "no-mistakes",
+      "url": "https://github.com/kunchenguid/no-mistakes",
+      "description": "git push no-mistakes",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 34756,
-      "forks": 1989,
-      "starsToday": 202
+      "stars": 3368,
+      "forks": 203,
+      "starsToday": 412
+    },
+    {
+      "owner": "grafana",
+      "name": "grafana",
+      "url": "https://github.com/grafana/grafana",
+      "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 74858,
+      "forks": 14124,
+      "starsToday": 17
+    },
+    {
+      "owner": "ripienaar",
+      "name": "free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 123693,
+      "forks": 13050,
+      "starsToday": 137
     },
     {
       "owner": "opendatalab",
@@ -140,31 +74,64 @@
       "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 69477,
-      "forks": 5873,
-      "starsToday": 524
+      "stars": 70348,
+      "forks": 5936,
+      "starsToday": 944
     },
     {
-      "owner": "Free-TV",
-      "name": "IPTV",
-      "url": "https://github.com/Free-TV/IPTV",
-      "description": "M3U Playlist for free TV channels",
+      "owner": "alchaincyf",
+      "name": "zhangxuefeng-skill",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "language": "",
+      "languageColor": "",
+      "stars": 9236,
+      "forks": 2560,
+      "starsToday": 185
+    },
+    {
+      "owner": "mauriceboe",
+      "name": "TREK",
+      "url": "https://github.com/mauriceboe/TREK",
+      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 7590,
+      "forks": 646,
+      "starsToday": 1063
+    },
+    {
+      "owner": "xbtlin",
+      "name": "ai-berkshire",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 18185,
-      "forks": 2676,
-      "starsToday": 141
+      "stars": 3060,
+      "forks": 450,
+      "starsToday": 1270
     },
     {
-      "owner": "shanraisshan",
-      "name": "claude-code-best-practice",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 60454,
-      "forks": 6058,
-      "starsToday": 450
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 23497,
+      "forks": 2608,
+      "starsToday": 1674
+    },
+    {
+      "owner": "aws",
+      "name": "agent-toolkit-for-aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 1334,
+      "forks": 120,
+      "starsToday": 238
     },
     {
       "owner": "NanmiCoder",
@@ -173,9 +140,53 @@
       "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 52722,
-      "forks": 10918,
-      "starsToday": 347
+      "stars": 53331,
+      "forks": 10972,
+      "starsToday": 640
+    },
+    {
+      "owner": "garrytan",
+      "name": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 116570,
+      "forks": 17297,
+      "starsToday": 919
+    },
+    {
+      "owner": "IceWhaleTech",
+      "name": "CasaOS",
+      "url": "https://github.com/IceWhaleTech/CasaOS",
+      "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 35324,
+      "forks": 2024,
+      "starsToday": 612
+    },
+    {
+      "owner": "JCodesMore",
+      "name": "ai-website-cloner-template",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "description": "Clone any website with one command using AI coding agents",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 21294,
+      "forks": 3090,
+      "starsToday": 1076
+    },
+    {
+      "owner": "Panniantong",
+      "name": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 42259,
+      "forks": 3353,
+      "starsToday": 1164
     }
   ]
 }

@@ -4,6 +4,45 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmqvdw37s0cb7sl80kpi0thke",
+      "title": "纽约时报修订诉讼，指控微软为OpenAI建造版权侵权超级计算机",
+      "title_en": "NYT slams Microsoft for building copyright-infringing supercomputer for OpenAI",
+      "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged",
+      "permalink": "https://aihot.virxact.com/items/cmqvdw37s0cb7sl80kpi0thke",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-06-26T20:04:55.000Z",
+      "summary": "《纽约时报》周四提交经大量编辑的法庭文件，提议修订对OpenAI和微软的版权诉讼，明确指控微软通过建造全球最强大的超级计算系统之一，主动鼓励OpenAI窃取其作品。此举源于最高法院在Cox案中确立的新帮助侵权标准，要求原告证明被告有意诱导非法行为。《纽约时报》认为新证据显示该超级计算机专为帮助OpenAI未经许可训练AI而设计，其文章在训练数据中被加权处理。微软称修订是\"挽救不利先例的最后手段\"。",
+      "category": "industry",
+      "score": 84,
+      "selected": true
+    },
+    {
+      "id": "cmquitk6o04qnsl805yictrvb",
+      "title": "小鹏 CEO 何小鹏：2026 年底自动驾驶可以合法进入全球",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/968/894.htm",
+      "permalink": "https://aihot.virxact.com/items/cmquitk6o04qnsl805yictrvb",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-26T05:40:52.000Z",
+      "summary": "小鹏汽车 CEO 何小鹏微博透露，VLA 2.0 走向全球进入确定模式。联合国 WP29 缔约国会议批准了 DCAS UNR 171 series 02（对应城区 NGP 法规）与 UNR ADS（对应 L3-L5 自动驾驶法规）。DCAS 将在六个月后成为欧盟强制法规，即 2026 年底自动驾驶可合法进入全球；UNR ADS 为框架性法规，加速 L4 级 Robotaxi 落地。何小鹏称 2027 年海外小鹏汽车将搭载 VLA 和 VLM，支持中英文混合语音对话。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqugodz30481sl80as72hqx1",
+      "title": "近400家美国报纸起诉微软和OpenAI：未经授权抓取新闻内容训练AI",
+      "title_en": "近 400 家美国报纸联合起诉 OpenAI 和微软白嫖内容，AI 热潮恐成地方新闻\"丧钟\"",
+      "url": "https://www.ithome.com/0/968/872.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqugodz30481sl80as72hqx1",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-26T04:37:58.000Z",
+      "summary": "代表近400家纸媒的出版商联盟向美国纽约南区联邦地区法院起诉微软和OpenAI，指控其未经授权抓取新闻内容用于训练Copilot、ChatGPT等AI模型，侵犯版权并触犯《数字千年版权法》。起诉书称被告\"系统性且秘密地\"爬取网站，复制文章并删除版权管理信息。原告表示AI产品基于其内容创造数十亿美元价值，但出版商分文未得，称此举或成地方新闻业\"丧钟\"。OpenAI回应训练数据基于公开可获取内容且符合合理使用原则，微软未置评。",
+      "category": "industry",
+      "score": 74,
+      "selected": true
+    },
+    {
       "id": "cmqu0e95l006ysl8097qhn8ny",
       "title": "美国政府要求OpenAI暂缓GPT-5.6广泛发布",
       "title_en": "The Information： The US government is asking OpenAI to slow GPT-5.6 into a controlled preview instea…",
@@ -53,19 +92,6 @@
       "summary": "Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力。该指控基于Anthropic的调查，认为阿里巴巴通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。",
       "category": "industry",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqsgw1tf0304slfurlccxlvs",
-      "title": "在与Anthropic的纠纷中，NSA失去了对Mythos的访问权限",
-      "title_en": null,
-      "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
-      "permalink": "https://aihot.virxact.com/items/cmqsgw1tf0304slfurlccxlvs",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-24T19:08:32.032Z",
-      "summary": "美国国家安全局（NSA）因与人工智能公司Anthropic的纠纷，失去了对Mythos系统的访问权限。",
-      "category": "industry",
-      "score": 71,
       "selected": true
     },
     {
@@ -147,6 +173,19 @@
       "selected": true
     },
     {
+      "id": "cmqny6q7v0288slhkbzc8ob3u",
+      "title": "NSA局长：Mythos数小时内攻破其几乎所有机密系统",
+      "title_en": "The head of the NSA （！） said Mythos \"broke into almost all of our classified systems， not in weeks， …",
+      "url": "https://x.com/AISafetyMemes/status/2068718552174252477",
+      "permalink": "https://aihot.virxact.com/items/cmqny6q7v0288slhkbzc8ob3u",
+      "source": "X：AI Safety Memes (@AISafetyMemes)",
+      "publishedAt": "2026-06-21T15:31:52.000Z",
+      "summary": "美国NSA局长称，Mythos在数小时内攻破了其几乎所有机密系统。此前Mythos已在5天内破解MacOS。而顶级漏洞团队Google Project Zero完成同等攻击需6个月，单个MacOS零日漏洞价值约200万美元。苹果原假设全球仅10-20个团队具备此能力，Mythos将使该数字增至数千。全球约20亿活跃苹果设备中，Mac用户多为记者、高管、政府官员等高价值目标，苹果曾是\"最安全\"的选择。",
+      "category": "industry",
+      "score": 80,
+      "selected": true
+    },
+    {
       "id": "cmqm0elho009fsliiybg230vu",
       "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
       "title_en": "还得是微软会闷声发大财啊，它现在已经成为全球最大的 AI 中间商，oh no ，是最大的中转站， 不仅把ChatGPT卖给中国企业，也把DeepSeek 反向卖给西方客户😁 以上来自彭博社的最新报…",
@@ -170,45 +209,6 @@
       "summary": "我们已超越理论阶段。\n\n有史以来第一次，Figure的机器人数量超过了人类员工数量。",
       "category": "industry",
       "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqlclrpp01h9sl2s1c94el8x",
-      "title": "JAWBONE Act：一项打击政府为压制合法网络言论而施压的新法案",
-      "title_en": "一项新法案旨在打击政府为压制合法网络言论而施加的压力",
-      "url": "https://www.eff.org/deeplinks/2026/06/new-bill-takes-aim-government-pressure-silence-lawful-online-speech",
-      "permalink": "https://aihot.virxact.com/items/cmqlclrpp01h9sl2s1c94el8x",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-19T19:41:30.069Z",
-      "summary": "上周，参议员Ted Cruz和Ron Wyden提出两党法案JAWBONE Act，为受政府胁迫的广播商、互动计算机服务商及AI提供商创建针对政府官员的联邦诉讼权，并建立政府与中间方就用户表达问题沟通的透明度体系。法案旨在应对政府施压私营公司审查受第一修正案保护的言论。EFF支持该法案，并举证：2025年6月联邦高官威胁起诉ICEBlock创建者，同年10月司法部长要求苹果下架该应用。EFF还提起信息自由诉讼，要求披露政府与苹果、谷歌、Meta的沟通记录。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmql4yj5e014zsllucl69g3l6",
-      "title": "AlphaFold 负责人 John Jumper 离职 Google DeepMind，加入 Anthropic",
-      "title_en": "Thanks John for an extraordinary partnership and wonderful collaboration over the past 9 years！ What…",
-      "url": "https://x.com/demishassabis/status/2068002732250640603",
-      "permalink": "https://aihot.virxact.com/items/cmql4yj5e014zsllucl69g3l6",
-      "source": "X：Demis Hassabis (@demishassabis)",
-      "publishedAt": "2026-06-19T16:07:27.000Z",
-      "summary": "AlphaFold 团队负责人 John Jumper 宣布，在 Google DeepMind 工作近 9 年后决定离职，将加入 Anthropic（先休整一段时间）。DeepMind CEO Demis Hassabis 表示，过去 9 年与 Jumper 的非凡合作改变了世界，AlphaFold 展示了 AI 在科学与医学领域的巨大潜力，并为 AI 造福人类指明了方向。Jumper 回忆，Hassabis 在他博士毕业仅 6 个月后就大胆让他领导 AlphaFold 团队，感谢团队教会他如何做伟大的科学。",
-      "category": "industry",
-      "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqk6htvg03g1slhi1nagpabj",
-      "title": "八部门联合发文力推\"人工智能 + 消费\"，扩大 AI 手机电脑及智能网联汽车消费",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/966/295.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqk6htvg03g1slhi1nagpabj",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-18T23:56:08.000Z",
-      "summary": "商务部等8部门近日印发《关于加快\"人工智能 + 消费\"发展的实施意见》，从5方面提出17条举措。重点包括：扩大AI手机电脑、智能家居、智能网联汽车、智能穿戴、AI机器人等供给；推动AI与居家、养老、文旅、餐饮、教育等融合；促进AI在批发零售、电商、物流领域应用；建设集聚区和体验中心，开展产品租赁、共享、试用等模式创新；完善基础设施、标准体系和监管，推动互联互通。商务部将协同落实，促进AI进千家万户。",
-      "category": "industry",
-      "score": 76,
       "selected": true
     }
   ]

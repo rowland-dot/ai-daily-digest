@@ -1,8 +1,21 @@
 {
-  "count": 13,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqv6ikhu0ah8sl80m2p7v2m4",
+      "title": "OpenAI 预览新一代模型 GPT-5.6 Sol",
+      "title_en": "Previewing GPT-5.6 Sol： a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "permalink": "https://aihot.virxact.com/items/cmqv6ikhu0ah8sl80m2p7v2m4",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-26T10:00:00.000Z",
+      "summary": "OpenAI 发布了新一代模型 GPT-5.6 Sol 的预览信息。该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。",
+      "category": "ai-models",
+      "score": 78,
+      "selected": true
+    },
     {
       "id": "cmqtpj36o05pusl0e9ingyoye",
       "title": "Ornith-1.0 开源模型家族发布，专注 Agentic Coding 全参数规模",
