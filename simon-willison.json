@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-06-26T21:48:36.047Z",
+  "fetched_at": "2026-06-27T21:38:59.551Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Dean W. Ball",
+      "link": "https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything",
+      "updated": "2026-06-26T22:25:46+00:00",
+      "summary": "This is a bad state of affairs. Consider, in particular, some industry dynamics: Frontier models are trained at an enormous cost, and a significant fraction of that cost is recouped in the few post-release months that they are broadly available. After that period elapses, the models become sub-frontier, competition emerges, and margins compress. Every week of delay is eating into the narrow window that labs have to make their accounting work. The ongoing AI infrastructure buildout—the one that is, according to former US AI Czar David Sacks, essential to the US economy , assumes a functionally global total addressable market for US AI services. No one is building $100 billion dollar data centers to serve frontier models to whatever 100 companies the US government will allow access. [...]"
+    },
     {
       "title": "Quoting Timothy B. Lee",
       "link": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
       "updated": "2026-06-22T23:59:53+00:00",
       "summary": "Prompt Injection as Role Confusion"
-    },
-    {
-      "title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
-      "link": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
-      "updated": "2026-06-22T23:43:51+00:00",
-      "summary": "This morning on Hacker News I saw Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance , describing a small but effective inpainting model - a model where you can mark regions of an image to remove and the model imagines what should fill the space. The released model required PyTorch and NVIDIA CUDA , but since it described itself as 0.2B I decided to try and get it running using WebGPU in a browser. TL;DR: I got it working, and you can try the demo at simonw.github.io/moebius-web/ . Read on for the details."
     }
   ]
 }

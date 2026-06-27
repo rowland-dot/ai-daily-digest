@@ -1,8 +1,34 @@
 {
-  "count": 14,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqwm45f901n6sly0gpl6b6l5",
+      "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60-85%",
+      "title_en": "DeepSeek Releases DSpark， a Speculative Decoding Framework That Accelerates DeepSeek-V4 Per-User Generation 60-85% Over MTP-1",
+      "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1",
+      "permalink": "https://aihot.virxact.com/items/cmqwm45f901n6sly0gpl6b6l5",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-06-27T16:59:58.000Z",
+      "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60-85% 和 57-78%。离线测试中，接受长度比 Eagle3 高 26-31%，比 DFlash 高 16-18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
+      "category": "paper",
+      "score": 79,
+      "selected": true
+    },
+    {
+      "id": "cmqvkko1q0dvqsl80vjsqu4rm",
+      "title": "Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数",
+      "title_en": "Cursor Study Finds Reward Hacking Inflates Coding-Agent Benchmark Scores on SWE-bench Pro",
+      "url": "https://www.marktechpost.com/2026/06/26/cursor-study-finds-reward-hacking-inflates-coding-agent-benchmark-scores-on-swe-bench-pro",
+      "permalink": "https://aihot.virxact.com/items/cmqvkko1q0dvqsl80vjsqu4rm",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-06-26T23:31:29.000Z",
+      "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。",
+      "category": "paper",
+      "score": 75,
+      "selected": true
+    },
     {
       "id": "cmqv2tn1509khsl80vpek6zqe",
       "title": "Anthropic Economic Index 报告：使用节奏",
@@ -40,6 +66,19 @@
       "summary": "研究人员利用高分辨率X射线显微断层扫描和机器学习，在未物理展开的情况下完整虚拟展开并读取了赫库兰尼姆古卷PHerc.1667（Scroll4）。这是首卷被从头到尾连续读取的纸莎草卷，内容为斯多葛哲学论著，提及克里西普斯的侄子Aristocreon。第二卷PHerc.Paris4通过更高分辨率成像使墨水在三维数据中直接可见，独立确认了2023年大奖赛的解读。第三卷PHerc.139确定标题和作者为菲洛德穆《论诸神》第八卷。所有数据与代码已公开。",
       "category": "paper",
       "score": 79,
+      "selected": true
+    },
+    {
+      "id": "cmqwtvowe0035slp023899gx2",
+      "title": "冻结多token预测加速Pixel上的Gemini Nano模型",
+      "title_en": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
+      "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction",
+      "permalink": "https://aihot.virxact.com/items/cmqwtvowe0035slp023899gx2",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-25T16:00:00.000Z",
+      "summary": "Google Research提出一种新架构，在已冻结的Gemini Nano v3模型上改造Multi-Token Prediction（MTP），以加速Pixel 9和10系列上的设备端推理。该方法基于EAGLE框架和CALM，无需单独训练占用内存的草稿模型，通过\"晚期退出\"策略实现加速。AI通知摘要和校对功能因此生成文本速度显著提升、能耗降低，开发者无需为每个新任务微调独立模型。",
+      "category": "paper",
+      "score": 55,
       "selected": true
     },
     {
@@ -170,19 +209,6 @@
       "summary": "Google Labs 提出以\"洞察策略\"评估 AI 编码智能体的主动性，而非仅按任务完成度打分。团队基于 Google 内部代码库 705 个 bug（1178 个 CL），通过时空近邻与语义相似度聚类还原开发者实际的高层级目标。初步实验显示：Jules 在单轮探索下洞察相关性评分平均 4.5/5；探索预算从两轮增至三轮时，Hit@5 准确率从 33% 升至 57%。团队正将评估方法扩展至公开 GitHub 数据，并探索纳入问题追踪器、对话等更丰富的上下文。",
       "category": "paper",
       "score": 61,
-      "selected": true
-    },
-    {
-      "id": "cmqqu3riv0dfhslp52jol2jkp",
-      "title": "可验证搜索不是可学习的链式思维",
-      "title_en": "A Verifiable Search Is Not a Learnable Chain-of-Thought",
-      "url": "https://arxiv.org/abs/2606.21884",
-      "permalink": "https://aihot.virxact.com/items/cmqqu3riv0dfhslp52jol2jkp",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-20T00:00:00.000Z",
-      "summary": "论文以九个确定性生成器推理任务为测试床，证明可验证搜索无法作为可学习的CoT进行蒸馏。Cryptarithm任务中，即使backbone规模从3B到671B、采用多种CoT设计、基于可验证奖励的强化学习和自训练，蒸馏后准确率始终为0.01-0.07，而搜索求解器回答71%实例。模型能正确计算97-100%的算术步骤并将正确密码排在候选前八（71%），但无法前向推导。干预实验揭示密码键后，同一实例准确率从0.03提升至0.57。只有移除搜索、预计算组合核心为目录，让模型仅做回忆加验证，才能学会该任务（Private LB 0.92）。结论：蒸馏学到的是记忆和验证，而非搜索。",
-      "category": "paper",
-      "score": 74,
       "selected": true
     }
   ]

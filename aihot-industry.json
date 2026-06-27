@@ -1,8 +1,73 @@
 {
-  "count": 16,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqwub84n008jslp0ael13807",
+      "title": "SpaceX 注册 SpaceXAI 商标，将合并 xAI",
+      "title_en": "NEWS： SpaceX just trademarked \"SpaceXAI\" Elon Musk says xAI will be dissolved as a separate company…",
+      "url": "https://x.com/cb_doge/status/2070973276562530507",
+      "permalink": "https://aihot.virxact.com/items/cmqwub84n008jslp0ael13807",
+      "source": "X：cb_doge (@cb_doge)",
+      "publishedAt": "2026-06-27T20:51:20.000Z",
+      "summary": "消息：SpaceX 刚刚注册了\"SpaceXAI\"商标。\n\n埃隆·Musk表示 xAI 将解散，不再作为独立公司，因此它将只是 SpaceXAI，SpaceX 的 AI 产品。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqwmotnk01tasly021bf38i5",
+      "title": "苹果Vision负责人跳槽OpenAI，触控OLED MacBook用M5芯片",
+      "title_en": "刚刚！苹果VisionPro 眼镜负责大神跳槽OpenAI！AI 硬件大战，库克最担心的事儿发生了！ Apple 这几天也是亏麻了！ 宣布涨价以来，市值直接蒸发2300 多e美金！ 2026年6月…",
+      "url": "https://x.com/berryxia/status/2070916520822321292",
+      "permalink": "https://aihot.virxact.com/items/cmqwmotnk01tasly021bf38i5",
+      "source": "X：Berry Xia (@berryxia)",
+      "publishedAt": "2026-06-27T17:05:48.000Z",
+      "summary": "2026年6月26日，Mark Gurman称苹果Vision产品组副总裁Paul Meade下周离职加入OpenAI硬件部门。他负责Vision Pro、无屏幕AI智能眼镜及AR眼镜研发。苹果计划首款触控OLED MacBook使用M5 Pro/Max芯片，2026年底到2027年初发布；M7 Pro/Max版本2027年底跟进。苹果此前因涨价市值蒸发2300多亿美元。核心高管流失至OpenAI凸显AI硬件竞争加速。",
+      "category": "industry",
+      "score": 76,
+      "selected": true
+    },
+    {
+      "id": "cmqwclgpa00a0slfd8mlysoe8",
+      "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
+      "title_en": "The companies most likely to automate your job are now funding a $1 billion program to retrain you",
+      "url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
+      "permalink": "https://aihot.virxact.com/items/cmqwclgpa00a0slfd8mlysoe8",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-27T12:25:21.000Z",
+      "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利\"Raise Us\"，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqw4pe3v007islohecqcejvi",
+      "title": "AI 账单失控后 DeepSeek 成\"香饽饽\"，部分美国企业已 100% 切换",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/969/400.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqw4pe3v007islohecqcejvi",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-27T08:16:09.000Z",
+      "summary": "美国企业面临 AI 账单失控，开始转向 Token 最小化策略。旧金山公司 Lindy 此前主要调用 Anthropic 的 Claude 模型，每月 AI 账单超支甚至超过员工工资。该公司 CEO 弗洛·克里维洛表示，本月初已将 100% 流量切换到 DeepSeek，预计未来几个月可节省数百万美元。企业开始采用按任务匹配模型的\"模型路由\"，不再将最贵的前沿模型用于所有场景。部分客户已决定暂停 AI 投入，待证明投资回报率后再继续。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqvpp1zi0f57sl80zxcbnmqz",
+      "title": "国家统计局：1-5月规上工业企业利润增18.8%，电子行业利润增103.9%贡献43.1%",
+      "title_en": "国家统计局：电子行业利润 1-5 月增长 103.9%，AI 驱动高端算力 / 存储芯片需求爆发",
+      "url": "https://www.ithome.com/0/969/311.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqvpp1zi0f57sl80zxcbnmqz",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-27T01:43:18.000Z",
+      "summary": "1-5月全国规上工业企业利润同比增18.8%。电子行业利润增103.9%，贡献率43.1%，主因全球AI技术变革推动高端算力芯片和存储芯片需求爆发。原材料制造业利润增83.1%，其中有色增117.1%、化工增71.6%。高技术制造业利润增44.7%，电子专用材料制造增665.4%。企业每百元营收成本降0.59元，营收利润率5.56%，为2024年以来累计最高。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
     {
       "id": "cmqvdw37s0cb7sl80kpi0thke",
       "title": "纽约时报修订诉讼，指控微软为OpenAI建造版权侵权超级计算机",
@@ -183,32 +248,6 @@
       "summary": "美国NSA局长称，Mythos在数小时内攻破了其几乎所有机密系统。此前Mythos已在5天内破解MacOS。而顶级漏洞团队Google Project Zero完成同等攻击需6个月，单个MacOS零日漏洞价值约200万美元。苹果原假设全球仅10-20个团队具备此能力，Mythos将使该数字增至数千。全球约20亿活跃苹果设备中，Mac用户多为记者、高管、政府官员等高价值目标，苹果曾是\"最安全\"的选择。",
       "category": "industry",
       "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmqm0elho009fsliiybg230vu",
-      "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
-      "title_en": "还得是微软会闷声发大财啊，它现在已经成为全球最大的 AI 中间商，oh no ，是最大的中转站， 不仅把ChatGPT卖给中国企业，也把DeepSeek 反向卖给西方客户😁 以上来自彭博社的最新报…",
-      "url": "https://x.com/AYi_AInotes/status/2068218661710512231",
-      "permalink": "https://aihot.virxact.com/items/cmqm0elho009fsliiybg230vu",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "publishedAt": "2026-06-20T06:25:29.000Z",
-      "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
-      "category": "industry",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqlgwh3f006nsljg3exh1nge",
-      "title": "Figure机器人数首超人类员工",
-      "title_en": "We are past the point of theory. For the first time ever， Figure's robot count has passed its human…",
-      "url": "https://x.com/rohanpaul_ai/status/2068089038213693800",
-      "permalink": "https://aihot.virxact.com/items/cmqlgwh3f006nsljg3exh1nge",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-06-19T21:50:24.000Z",
-      "summary": "我们已超越理论阶段。\n\n有史以来第一次，Figure的机器人数量超过了人类员工数量。",
-      "category": "industry",
-      "score": 78,
       "selected": true
     }
   ]

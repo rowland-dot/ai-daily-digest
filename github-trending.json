@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-26T21:48:23.338Z",
+  "fetched_at": "2026-06-27T21:38:48.356Z",
   "repos": [
     {
       "owner": "simplex-chat",
@@ -8,97 +8,9 @@
       "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
       "language": "Haskell",
       "languageColor": "#5e5086",
-      "stars": 12446,
-      "forks": 705,
-      "starsToday": 191
-    },
-    {
-      "owner": "google-labs-code",
-      "name": "design.md",
-      "url": "https://github.com/google-labs-code/design.md",
-      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 21103,
-      "forks": 1715,
-      "starsToday": 2319
-    },
-    {
-      "owner": "commaai",
-      "name": "openpilot",
-      "url": "https://github.com/commaai/openpilot",
-      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 61753,
-      "forks": 11044,
-      "starsToday": 67
-    },
-    {
-      "owner": "kunchenguid",
-      "name": "no-mistakes",
-      "url": "https://github.com/kunchenguid/no-mistakes",
-      "description": "git push no-mistakes",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 3368,
-      "forks": 203,
-      "starsToday": 412
-    },
-    {
-      "owner": "grafana",
-      "name": "grafana",
-      "url": "https://github.com/grafana/grafana",
-      "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 74858,
-      "forks": 14124,
-      "starsToday": 17
-    },
-    {
-      "owner": "ripienaar",
-      "name": "free-for-dev",
-      "url": "https://github.com/ripienaar/free-for-dev",
-      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 123693,
-      "forks": 13050,
-      "starsToday": 137
-    },
-    {
-      "owner": "opendatalab",
-      "name": "MinerU",
-      "url": "https://github.com/opendatalab/MinerU",
-      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 70348,
-      "forks": 5936,
-      "starsToday": 944
-    },
-    {
-      "owner": "alchaincyf",
-      "name": "zhangxuefeng-skill",
-      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
-      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
-      "language": "",
-      "languageColor": "",
-      "stars": 9236,
-      "forks": 2560,
-      "starsToday": 185
-    },
-    {
-      "owner": "mauriceboe",
-      "name": "TREK",
-      "url": "https://github.com/mauriceboe/TREK",
-      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 7590,
-      "forks": 646,
-      "starsToday": 1063
+      "stars": 13747,
+      "forks": 790,
+      "starsToday": 1470
     },
     {
       "owner": "xbtlin",
@@ -107,53 +19,20 @@
       "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 3060,
-      "forks": 450,
-      "starsToday": 1270
+      "stars": 4039,
+      "forks": 572,
+      "starsToday": 686
     },
     {
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "owner": "commaai",
+      "name": "openpilot",
+      "url": "https://github.com/commaai/openpilot",
+      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 23497,
-      "forks": 2608,
-      "starsToday": 1674
-    },
-    {
-      "owner": "aws",
-      "name": "agent-toolkit-for-aws",
-      "url": "https://github.com/aws/agent-toolkit-for-aws",
-      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1334,
-      "forks": 120,
-      "starsToday": 238
-    },
-    {
-      "owner": "NanmiCoder",
-      "name": "MediaCrawler",
-      "url": "https://github.com/NanmiCoder/MediaCrawler",
-      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 53331,
-      "forks": 10972,
-      "starsToday": 640
-    },
-    {
-      "owner": "garrytan",
-      "name": "gstack",
-      "url": "https://github.com/garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 116570,
-      "forks": 17297,
-      "starsToday": 919
+      "stars": 62048,
+      "forks": 11063,
+      "starsToday": 322
     },
     {
       "owner": "IceWhaleTech",
@@ -162,9 +41,53 @@
       "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 35324,
-      "forks": 2024,
-      "starsToday": 612
+      "stars": 35755,
+      "forks": 2043,
+      "starsToday": 502
+    },
+    {
+      "owner": "ripienaar",
+      "name": "free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 124138,
+      "forks": 13080,
+      "starsToday": 459
+    },
+    {
+      "owner": "google-labs-code",
+      "name": "design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 22273,
+      "forks": 1781,
+      "starsToday": 1542
+    },
+    {
+      "owner": "microsoft",
+      "name": "PowerToys",
+      "url": "https://github.com/microsoft/PowerToys",
+      "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 135682,
+      "forks": 8167,
+      "starsToday": 67
+    },
+    {
+      "owner": "hugohe3",
+      "name": "ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI generates a real, editable PowerPoint from any document — native shapes & animations, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images · by Hugo He",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 33006,
+      "forks": 2811,
+      "starsToday": 589
     },
     {
       "owner": "JCodesMore",
@@ -173,20 +96,130 @@
       "description": "Clone any website with one command using AI coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 21294,
-      "forks": 3090,
-      "starsToday": 1076
+      "stars": 22063,
+      "forks": 3163,
+      "starsToday": 750
     },
     {
-      "owner": "Panniantong",
-      "name": "Agent-Reach",
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "owner": "garrytan",
+      "name": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 117183,
+      "forks": 17409,
+      "starsToday": 674
+    },
+    {
+      "owner": "NanmiCoder",
+      "name": "MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 42259,
-      "forks": 3353,
-      "starsToday": 1164
+      "stars": 53751,
+      "forks": 11008,
+      "starsToday": 394
+    },
+    {
+      "owner": "Anil-matcha",
+      "name": "Open-Generative-AI",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "description": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 21341,
+      "forks": 3637,
+      "starsToday": 254
+    },
+    {
+      "owner": "topoteretes",
+      "name": "cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 23935,
+      "forks": 2252,
+      "starsToday": 808
+    },
+    {
+      "owner": "dbt-labs",
+      "name": "dbt-core",
+      "url": "https://github.com/dbt-labs/dbt-core",
+      "description": "dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 13194,
+      "forks": 2437,
+      "starsToday": 45
+    },
+    {
+      "owner": "luongnv89",
+      "name": "claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 38581,
+      "forks": 4646,
+      "starsToday": 138
+    },
+    {
+      "owner": "anomalyco",
+      "name": "opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 179683,
+      "forks": 22092,
+      "starsToday": 428
+    },
+    {
+      "owner": "Fission-AI",
+      "name": "OpenSpec",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "description": "Spec-driven development (SDD) for AI coding assistants.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 57082,
+      "forks": 3981,
+      "starsToday": 167
+    },
+    {
+      "owner": "HKUDS",
+      "name": "Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 13663,
+      "forks": 2582,
+      "starsToday": 83
+    },
+    {
+      "owner": "keycloak",
+      "name": "keycloak",
+      "url": "https://github.com/keycloak/keycloak",
+      "description": "Open Source Identity and Access Management For Modern Applications and Services",
+      "language": "Java",
+      "languageColor": "#b07219",
+      "stars": 35241,
+      "forks": 8552,
+      "starsToday": 11
+    },
+    {
+      "owner": "every-app",
+      "name": "open-seo",
+      "url": "https://github.com/every-app/open-seo",
+      "description": "Open source alternative to Semrush and Ahrefs",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 3339,
+      "forks": 368,
+      "starsToday": 230
     }
   ]
 }

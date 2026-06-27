@@ -1,8 +1,47 @@
 {
-  "count": 33,
+  "count": 37,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqwe6jrq000isl6uw2i3e6zy",
+      "title": "Runway API 推出广告本地化 Recipe",
+      "title_en": "Localize ads is now available as a Recipe via the Runway API. You can now translate static ads and …",
+      "url": "https://x.com/runwayml/status/2070855164584726791",
+      "permalink": "https://aihot.virxact.com/items/cmqwe6jrq000isl6uw2i3e6zy",
+      "source": "X：Runway (@runwayml)",
+      "publishedAt": "2026-06-27T13:02:00.000Z",
+      "summary": "广告本地化现在可通过 Runway API 以 Recipe 形式使用。\n\n现在您可以通过单次 API 调用翻译静态广告和图形资产。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true
+    },
+    {
+      "id": "cmqvtzehe0g65sl800jrc1x17",
+      "title": "阿里千问输入法上线 macOS 版：最快 300 字/分，AI 自动润色",
+      "title_en": "阿里千问输入法上线 macOS 版：最快 300 字 / 分，AI 自动润色",
+      "url": "https://www.ithome.com/0/969/334.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqvtzehe0g65sl800jrc1x17",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-27T03:39:06.000Z",
+      "summary": "阿里千问输入法 macOS 版今日上线官网，支持最快 300 字/分的 AI 语音输入，可自动润色、将口语转为工整文字，并支持 9 种方言，纯净无广告。官方预告 iOS、Android、Windows 版将于近日发布。此前千问团队已于今年 5 月推出千问语音输入法（千问 App 内的组件），具备去语气词、纠错、格式化整理及基于上下文的智能回复等能力，而本次上线的输入法则定位为独立 App，填补千问在移动端 AI 输入法赛道的空白。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmqwticse001aslp07j2fbwv8",
+      "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+      "title_en": "Show HN： Smart model routing directly in Claude， Codex and Cursor",
+      "url": "https://github.com/workweave/router",
+      "permalink": "https://aihot.virxact.com/items/cmqwticse001aslp07j2fbwv8",
+      "source": "Hacker News：AI 热帖",
+      "publishedAt": "2026-06-26T16:40:11.000Z",
+      "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true
+    },
     {
       "id": "cmqu24x8v00lssl8065rajmsy",
       "title": "Claude Code v2.1.193 发布",
@@ -56,16 +95,29 @@
       "selected": true
     },
     {
-      "id": "cmqtun7jv06zvsl0ejc2rnrpp",
-      "title": "Runway发布Agent 2.0",
-      "title_en": "Introducing Agent 2.0",
-      "url": "https://runwayml.com/news/introducing-agent-2",
-      "permalink": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-06-25T18:41:58.502Z",
-      "summary": "Runway发布Agent 2.0，帮助营销人员创建、测试和优化广告、视频及营销活动。品牌营销人员可在对话中开发活动概念、生成变体并自动本地化；绩效营销人员可上传创意并导入Meta、YouTube、TikTok或Google广告数据，由Agent分析后生成下一轮待测广告。社交媒体营销人员可一次性生成一周内容，自动裁切为9：16、16：9、1：1等格式；产品营销人员可借助Agent确定定位角度并构建活动资产。Agent 2.0面向所有用户开放。",
+      "id": "cmqwticse001bslp0tye275nx",
+      "title": "OpenKnowledge：开源、AI 优先的 Obsidian/Notion 替代品",
+      "title_en": "Show HN： OpenKnowledge - open source AI-first alternative to Obsidian/Notion",
+      "url": "https://github.com/inkeep/open-knowledge",
+      "permalink": "https://aihot.virxact.com/items/cmqwticse001bslp0tye275nx",
+      "source": "Hacker News：AI 热帖",
+      "publishedAt": "2026-06-25T16:04:46.000Z",
+      "summary": "OpenKnowledge 是一款开源、本地优先的 Markdown 编辑器，私密免费，提供完整的所见即所得编辑体验。支持 macOS 桌面应用和 Web UI，内置文件导航、搜索、标签和图谱 wiki 链接查看器。可与 Claude、Codex、Cursor 等桌面应用协同实现 AI 编辑，并通过 MCP/CLI 兼容任意 AI 智能体框架。自带 MCP、技能和智能搜索，支持 LLM Wiki 和知识图谱。团队协作基于 Git/GitHub 实现无代码共享与自动同步。支持嵌入 HTML 及富文本组件。桌面应用内建 TUI，Linux/Windows/Intel Mac 用户可通过 CLI（Node.js 24+）以本地 Web 应用运行。可直接打开任何包含 Markdown/MDX 文件的文件夹。开源协议 GPL-3.0-or-later。",
       "category": "ai-products",
-      "score": 65,
+      "score": 71,
+      "selected": true
+    },
+    {
+      "id": "cmqwtlsg0001nslp0zt3eyzhr",
+      "title": "SGLang 引入 Waterfill 与 LPLB 提升 DeepEP MoE 负载均衡",
+      "title_en": "Blog Improving DeepEP MoE Load Balance in SGLang with Waterfill and LPLB Mixture-of-Experts （MoE） models rely on Expert Parallelism （EP） to scale inference across multiple GPUs. In SGLang， DeepEP and EPLB provide high-performance serving under EP， but the workload seen by … NVIDIA Team",
+      "url": "https://www.lmsys.org/blog/2026-06-26-waterfill-lplb",
+      "permalink": "https://aihot.virxact.com/items/cmqwtlsg0001nslp0zt3eyzhr",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-06-25T16:00:00.000Z",
+      "summary": "SGLang 为 DeepEP MoE 推理新增两种调度时负载均衡方法：Waterfill 将共享专家分配给负载更低的 rank，在 DeepSeek-V3/R1 服务负载下使总吞吐量提升 1.48% 至 4.66%，在 DeepSeek V4 上最佳点从 49，253 tok/s 提升至 51，677 tok/s（+4.92%）；LPLB 基于线性规划优化冗余专家副本的 token 路由，配合 EPLB 在相同集群上实现吞吐量提升 0.84% 至 7.34%。",
+      "category": "ai-products",
+      "score": 58,
       "selected": true
     },
     {
@@ -170,6 +222,19 @@
       "summary": "Google DeepMind 宣布，computer use 现作为内置工具集成于 Gemini 3.5 Flash，开发者可构建跨浏览器、移动端和桌面的智能体，实现视觉感知、推理与操作。此前该功能仅以独立模型形式存在于 Gemini 2.5。3.5 Flash 已支持函数调用及 Search、Maps 等内置工具，新增的 computer use 可提升持续软件测试和跨专业应用知识工作等长周期企业自动化任务的性能。安全方面采用针对性对抗训练，并可选配两项企业防护系统：要求用户确认敏感操作，以及在检测到间接 prompt 注入时自动停止任务。可通过 Gemini API 和 Gemini Enterprise Agent Platform 使用。",
       "category": "ai-products",
       "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmqtun7jv06zvsl0ejc2rnrpp",
+      "title": "Runway发布Agent 2.0",
+      "title_en": "Introducing Agent 2.0",
+      "url": "https://runwayml.com/news/introducing-agent-2",
+      "permalink": "https://aihot.virxact.com/items/cmqtun7jv06zvsl0ejc2rnrpp",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-06-24T16:00:00.000Z",
+      "summary": "Runway发布Agent 2.0，帮助营销人员创建、测试和优化广告、视频及营销活动。品牌营销人员可在对话中开发活动概念、生成变体并自动本地化；绩效营销人员可上传创意并导入Meta、YouTube、TikTok或Google广告数据，由Agent分析后生成下一轮待测广告。社交媒体营销人员可一次性生成一周内容，自动裁切为9：16、16：9、1：1等格式；产品营销人员可借助Agent确定定位角度并构建活动资产。Agent 2.0面向所有用户开放。",
+      "category": "ai-products",
+      "score": 65,
       "selected": true
     },
     {
@@ -417,19 +482,6 @@
       "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
       "category": "ai-products",
       "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqlj0jn600pdsljggy6btum5",
-      "title": "NVIDIA Research 发布 SpatialClaw：免训练空间推理框架",
-      "title_en": "NVIDIA AI Introduce SpatialClaw： A Training-Free Agent That Treats Code as the Action Interface for Spatial Reasoning",
-      "url": "https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning",
-      "permalink": "https://aihot.virxact.com/items/cmqlj0jn600pdsljggy6btum5",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-06-19T22:51:59.000Z",
-      "summary": "NVIDIA Research 发布 SpatialClaw，一个免训练的空间推理框架。它通过将代码作为动作接口，让智能体调用感知工具（Depth Anything 3、SAM 3）并自由组合输出，解决视觉语言模型在 3D 空间判断上的弱点。在 20 项基准测试中平均准确率达 59.9%，比近期智能体 SpaceTools 高 11.2 个百分点，比无工具基线高 6.5 点，比结构化工具调用高 3.2 点。框架无需重新训练，同一提示词和工具集可跨所有基准和骨干网络运行，支持 Qwen3.5/3.6 及 Gemma4 等 26B 至 397B 参数的模型。",
-      "category": "ai-products",
-      "score": 77,
       "selected": true
     }
   ]
