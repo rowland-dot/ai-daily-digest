@@ -4,6 +4,19 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmqxnrjtc004ssljh9zvejgbo",
+      "title": "仅有三个AI模型在500天创业测试中盈利超过起始资本",
+      "title_en": "Only three AI models finished above starting capital in a 500-day startup survival test",
+      "url": "https://the-decoder.com/only-three-ai-models-finished-above-starting-capital-in-a-500-day-startup-survival-test",
+      "permalink": "https://aihot.virxact.com/items/cmqxnrjtc004ssljh9zvejgbo",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-28T10:16:13.000Z",
+      "summary": "普林斯顿大学推出CEO-Bench基准测试，让AI智能体在模拟环境中运营订阅软件公司NovaMind 500天，起始资金100万美元。14个测试模型中，仅Claude Fable 5（最佳轮次盈利4715万美元）、Claude Opus 4.8（2780万美元）和GPT-5.5（2130万美元）在最佳运行中超过起始资本。一个不调用语言模型的简单规则启发式方法通过固定定价、配额和针对性开发达到1576万美元，超越除上述三款外的所有模型。多数模型无法保持连贯策略，在模拟结束前破产。该测试旨在衡量AI的长期战略决策能力。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
       "id": "cmqwm45f901n6sly0gpl6b6l5",
       "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60-85%",
       "title_en": "DeepSeek Releases DSpark， a Speculative Decoding Framework That Accelerates DeepSeek-V4 Per-User Generation 60-85% Over MTP-1",
@@ -196,19 +209,6 @@
       "summary": "HAKARI-Bench 是一个轻量级检索基准，将现有检索套件重建为小型数据集（Nano-sets），涵盖 35 个基准、551 个任务和 43 种语言，采用统一格式实现模型无关比较。它支持 BM25、稠密、稀疏、晚交互和重排序五种检索家族及其效率变体（降维、量化等）在同一条件下对比。在 55 个模型上，整体排名与 MTEB retrieval v2、MMTEB v2 retrieval 及 English BEIR（完整版）的 Spearman 相关系数均高于 0.97。HAKARI-Bench 不取代全面评测，而是用于快速模型选择、回归检测和探索质量-效率帕累托前沿。代码、数据和排行榜以 MIT 许可证开源。",
       "category": "paper",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqpeu90600l4sldksepc49lt",
-      "title": "Google Labs 提出用\"洞察策略\"评估 AI 编码智能体的主动性",
-      "title_en": "Measuring What Matters with Jules",
-      "url": "https://developers.googleblog.com/measuring-what-matters-with-jules",
-      "permalink": "https://aihot.virxact.com/items/cmqpeu90600l4sldksepc49lt",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-06-21T16:00:00.000Z",
-      "summary": "Google Labs 提出以\"洞察策略\"评估 AI 编码智能体的主动性，而非仅按任务完成度打分。团队基于 Google 内部代码库 705 个 bug（1178 个 CL），通过时空近邻与语义相似度聚类还原开发者实际的高层级目标。初步实验显示：Jules 在单轮探索下洞察相关性评分平均 4.5/5；探索预算从两轮增至三轮时，Hit@5 准确率从 33% 升至 57%。团队正将评估方法扩展至公开 GitHub 数据，并探索纳入问题追踪器、对话等更丰富的上下文。",
-      "category": "paper",
-      "score": 61,
       "selected": true
     }
   ]

@@ -1,8 +1,34 @@
 {
-  "count": 37,
+  "count": 36,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqy1fj3003cislwfljtykjvx",
+      "title": "Wayfinder Router：在本地和托管的大语言模型之间进行确定性查询路由",
+      "title_en": "Wayfinder Router：在本地和托管的大型语言模型（LLM）之间进行确定性查询路由",
+      "url": "https://github.com/itsthelore/wayfinder-router",
+      "permalink": "https://aihot.virxact.com/items/cmqy1fj3003cislwfljtykjvx",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-28T16:58:56.073Z",
+      "summary": "Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。用户可在自有数据上校准评分阈值。支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqx9k72u0425slp05ijlfezl",
+      "title": "阿德拉菲尼尔：仅在AI agent工作时阻止Mac睡眠的菜单栏工具",
+      "title_en": "Show HN： 阿德拉菲尼尔--仅在药物起效期间保持\"盖子紧闭的Mac\"处于清醒状态",
+      "url": "https://github.com/kageroumado/adrafinil",
+      "permalink": "https://aihot.virxact.com/items/cmqx9k72u0425slp05ijlfezl",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-06-28T03:55:17.096Z",
+      "summary": "Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true
+    },
     {
       "id": "cmqwe6jrq000isl6uw2i3e6zy",
       "title": "Runway API 推出广告本地化 Recipe",
@@ -443,45 +469,6 @@
       "summary": "xAI 在 Grok Build 中引入 `/goal` 新模式。用户只需用一行命令设定目标，agent 便会自动规划方案、分解任务为进度清单并持续执行，直至目标完成且通过验证，期间可额外下达指令。该模式支持监控与引导命令，任务完成时清单全部勾选。即日起可用，用户可通过 `curl -fsSL | bash` 安装 CLI 并登录账号即可使用。",
       "category": "ai-products",
       "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmqpu6z9y03w3slp59okauzsw",
-      "title": "Aleph 2.0 现已集成到 Figma Weave",
-      "title_en": "Aleph 2.0 Is Now in Figma Weave",
-      "url": "https://runwayml.com/news/aleph-2-in-figma-weave",
-      "permalink": "https://aihot.virxact.com/items/cmqpu6z9y03w3slp59okauzsw",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-06-21T16:00:00.000Z",
-      "summary": "Aleph 2.0 是 Runway 的旗舰视频编辑模型，现已在 Figma Weave 中上线。它是一个基于上下文的视频编辑模型，通过关键帧工作：从视频中提取一帧，重新设计风格并附上时间戳连接回 Aleph 2.0 节点，即可将该编辑传递到主体出现的每一帧，同时保持其他内容不变。支持最长 30 秒、1080p 的片段，可跨多镜头序列应用编辑，无需逐镜头处理。",
-      "category": "ai-products",
-      "score": 59,
-      "selected": true
-    },
-    {
-      "id": "cmqppyj5702txslp5d7ahupmr",
-      "title": "在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop",
-      "title_en": "The full Claude Desktop experience on AWS， Google Cloud， and Microsoft Foundry",
-      "url": "https://claude.com/blog/the-full-claude-desktop-experience-on-aws-google-cloud-and-microsoft-foundry",
-      "permalink": "https://aihot.virxact.com/items/cmqppyj5702txslp5d7ahupmr",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-06-21T16:00:00.000Z",
-      "summary": "通过 AWS、Google Cloud 和 Microsoft Foundry 使用 Claude Desktop 的组织现已获得 Chat、Claude Cowork 和 Claude Code 集成的完整桌面体验。IT 团队可将推理保留在自己的云环境中，对话历史本地存储。支持 IAM Identity Center、Workforce Identity Federation、Microsoft Entra ID 或 Okta 登录；策略模板可导出至 Intune、GPO 或 Jamf；提供离线安装器。Chat、Claude Cowork 和 Claude Code 各有独立策略键，支持精细访问控制。M365 连接器通过 Entra 应用访问邮件和文档，并支持 GCC High/DoD 端点。",
-      "category": "ai-products",
-      "score": 55,
-      "selected": true
-    },
-    {
-      "id": "cmqnokdyn007jsl4nxazzzxp1",
-      "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
-      "title_en": "我去，GPT 5.5， Claude Opus 4.8， Gemini 3.5flash，最新旗舰版全接入，完全免费不用单独开订阅！ 美团最近悄悄上了一个叫 tabbit 国际版的应用，里面接了好几…",
-      "url": "https://x.com/AYi_AInotes/status/2068637890247016607",
-      "permalink": "https://aihot.virxact.com/items/cmqnokdyn007jsl4nxazzzxp1",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "publishedAt": "2026-06-21T10:11:21.000Z",
-      "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
-      "category": "ai-products",
-      "score": 78,
       "selected": true
     }
   ]
