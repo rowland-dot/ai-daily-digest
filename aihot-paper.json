@@ -1,8 +1,47 @@
 {
-  "count": 16,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqz708gp006kslj16zzl8far",
+      "title": "Meta发布Brain2Qwerty v2：非侵入式实时句子解码",
+      "title_en": "We're sharing the next major milestone in our non-invasive brain-to-text decoder research： Brain2Qwe…",
+      "url": "https://x.com/AIatMeta/status/2071566924803395741",
+      "permalink": "https://aihot.virxact.com/items/cmqz708gp006kslj16zzl8far",
+      "source": "X：AI at Meta (@AIatMeta)",
+      "publishedAt": "2026-06-29T12:10:17.000Z",
+      "summary": "Meta公布Brain2Qwerty v2，这是非侵入式脑电信号解码研究的最新里程碑。基于当天发表在《Nature》的v1，v2是性能最高的端到端管道，能从原始脑信号实时解码句子。其从字符级性能提升至解码单词和语义，提高整体沟通准确性。该研究有望帮助数百万因脑损伤或疾病无法沟通的人群。",
+      "category": "paper",
+      "score": 79,
+      "selected": true
+    },
+    {
+      "id": "cmqz20a0a000dsly4gw09u9xt",
+      "title": "Claude Code 打开 GitHub 仓库即执行隐藏恶意代码，攻击者可获完全控制",
+      "title_en": "Claude Code runs a GitHub repo's hidden malware without verification， giving attackers full control",
+      "url": "https://the-decoder.com/claude-code-runs-a-github-repos-hidden-malware-without-verification-giving-attackers-full-control",
+      "permalink": "https://aihot.virxact.com/items/cmqz20a0a000dsly4gw09u9xt",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-29T10:04:32.000Z",
+      "summary": "安全研究人员在 Mozilla 的 GenAI 漏洞赏金平台 0DIN 发现新攻击向量。一个看似正常的 GitHub 仓库包含 setup 脚本，该脚本运行时从 DNS 条目拉取命令并执行，恶意代码从未存在于仓库中，对扫描器、代码审查和 AI 智能体不可见。开发者使用 Claude Code 等 AI 编码工具打开该仓库时，Claude Code 在设置过程中遇到常规错误消息后自动运行该脚本，打开反向 shell，攻击者可窃取 API 密钥和登录凭据并维持持久访问。研究人员建议 AI 智能体应在运行前显示 setup 脚本内容，开发者应将第三方仓库的 setup 说明视为不受信任代码。",
+      "category": "paper",
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmqz31dsn003usldyi61f0cgf",
+      "title": "OpenAI 报告：绘制欧洲 AI 劳动力机遇版图",
+      "title_en": "Mapping Europe's AI Workforce Opportunity",
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "permalink": "https://aihot.virxact.com/items/cmqz31dsn003usldyi61f0cgf",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-29T07:00:00.000Z",
+      "summary": "OpenAI 发布新报告，分析 AI 对欧盟就业的影响，划定哪些职业面临自动化、增长或工作流程变化。",
+      "category": "paper",
+      "score": 62,
+      "selected": true
+    },
     {
       "id": "cmqxnrjtc004ssljh9zvejgbo",
       "title": "仅有三个AI模型在500天创业测试中盈利超过起始资本",
@@ -183,32 +222,6 @@
       "summary": "苹果机器学习研究团队发现，LLM-as-a-judge面板因模型间高度相关而严重受限。对7个模型家族的9个前沿大语言模型在3个自然语言推理数据集上的测试表明，9位评委实际仅提供约2个独立投票的信息量，面板准确率比独立投票理想值低8-22个百分点，最佳单一模型的表现已匹敌或超越整个面板。增加评委数量或改进聚合算法收效甚微，即使允许算法获取正确答案也仅能缩小至多11%的差距。该结论在多种提示变体、温度设置及偏好任务中均得到验证，瓶颈在于评委间的相关性而非聚合算法。",
       "category": "paper",
       "score": 68,
-      "selected": true
-    },
-    {
-      "id": "cmqqrfwu40cpwslp5zbjpmubs",
-      "title": "能力强但粗心：计算机使用智能体是否遵循情境完整性？",
-      "title_en": "Capable but Careless： Do Computer-Use Agents Follow Contextual Integrity？",
-      "url": "https://arxiv.org/abs/2606.23189",
-      "permalink": "https://aihot.virxact.com/items/cmqqrfwu40cpwslp5zbjpmubs",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-22T00:00:00.000Z",
-      "summary": "AgentCIBench评估计算机使用智能体（CUA）是否遵循情境完整性。它针对三种常见失败模式：视觉共置（智能体拉取任务目标旁边被禁止的项目）、任务模糊性过度分享（在提示不明确时泄露个人状态）以及收件人错配（向不适当的收件人发送内容）。对15个前沿CUA的评测显示平均泄漏率67.9%，其中11个在超过50%的场景中泄漏，这些失败在端到端任务中同样存在。AgentCIBench已发布，旨在推动开发更安全的计算机使用智能体。",
-      "category": "paper",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqqb5ey4088oslp5vvpveegf",
-      "title": "HAKARI-Bench：统一条件下比较检索架构与效率设置的轻量级基准",
-      "title_en": "HAKARI-Bench： A Lightweight Benchmark for Comparing Retrieval Architectures and Efficiency Settings under Unified Conditions",
-      "url": "https://arxiv.org/abs/2606.22778",
-      "permalink": "https://aihot.virxact.com/items/cmqqb5ey4088oslp5vvpveegf",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-22T00:00:00.000Z",
-      "summary": "HAKARI-Bench 是一个轻量级检索基准，将现有检索套件重建为小型数据集（Nano-sets），涵盖 35 个基准、551 个任务和 43 种语言，采用统一格式实现模型无关比较。它支持 BM25、稠密、稀疏、晚交互和重排序五种检索家族及其效率变体（降维、量化等）在同一条件下对比。在 55 个模型上，整体排名与 MTEB retrieval v2、MMTEB v2 retrieval 及 English BEIR（完整版）的 Spearman 相关系数均高于 0.97。HAKARI-Bench 不取代全面评测，而是用于快速模型选择、回归检测和探索质量-效率帕累托前沿。代码、数据和排行榜以 MIT 许可证开源。",
-      "category": "paper",
-      "score": 75,
       "selected": true
     }
   ]

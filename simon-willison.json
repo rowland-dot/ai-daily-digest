@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-06-28T21:39:38.215Z",
+  "fetched_at": "2026-06-29T21:53:21.739Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Count the number of Safari tabs",
+      "link": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+      "updated": "2026-06-29T18:36:18+00:00",
+      "summary": "Tiniest TIL, using AppleScript to count the number of open browser tabs in Safari:"
+    },
+    {
+      "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+      "link": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+      "updated": "2026-06-29T16:17:59+00:00",
+      "summary": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding"
+    },
+    {
+      "title": "Quoting Jon Udell",
+      "link": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
+      "updated": "2026-06-28T21:57:41+00:00",
+      "summary": "Human Agent in the loop I dislike the phrase “human in the loop” because it cedes authority to the machines. Let’s flip the narrative. It’s our loop, we work the same way we always have, now we recruit agents to join the team. An agent-assisted process need not be a black box that takes in prompts and emits features. [...] Let’s do agentic software development like that. Not as a loop we’ve been excluded from, instead as one we invite agents into."
+    },
+    {
+      "title": "Hack Your Summer",
+      "link": "https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything",
+      "updated": "2026-06-28T19:26:11+00:00",
+      "summary": "Hack Your Summer"
+    },
     {
       "title": "Quoting Dean W. Ball",
       "link": "https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
       "updated": "2026-06-24T23:59:03+00:00",
       "summary": "simonw/browser-compat-db"
-    },
-    {
-      "title": "Quoting Tom MacWright",
-      "link": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
-      "updated": "2026-06-24T18:13:51+00:00",
-      "summary": "In the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated GitHub projects, with purely LLM-generated commit messages. [...] My other reaction is that I don't know anything about these people . They haven't put themselves out there. They haven't said anything true. [...] The perfected, generated, prompted resume is generic and impersonal. It tells me nothing about this person, other than that they use particular tools."
-    },
-    {
-      "title": "datasette 1.0a35",
-      "link": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
-      "updated": "2026-06-23T21:34:37+00:00",
-      "summary": "I'll write more about this one soon, but it's a big release. Three highlights from the release notes:"
-    },
-    {
-      "title": "OPFS + Pyodide test harness",
-      "link": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
-      "updated": "2026-06-23T18:58:54+00:00",
-      "summary": "I've been pondering if Datasette Lite - the Python Datasette application run entirely in the browser using Pyodide and WebAssembly - might be able to edit persistent SQLite files stored on the user's computer."
-    },
-    {
-      "title": "Prompt Injection as Role Confusion",
-      "link": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
-      "updated": "2026-06-22T23:59:53+00:00",
-      "summary": "Prompt Injection as Role Confusion"
     }
   ]
 }

@@ -1,8 +1,21 @@
 {
-  "count": 16,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqzqabkh0069slkildw65dhy",
+      "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
+      "title_en": "Most popular model on @OpenRouter （10tr tokens） turns out to be a 1.6tr MoE by @Meituan_LongCat （sup…",
+      "url": "https://x.com/EMostaque/status/2071701921241448574",
+      "permalink": "https://aihot.virxact.com/items/cmqzqabkh0069slkildw65dhy",
+      "source": "X：Emad Mostaque (@EMostaque)",
+      "publishedAt": "2026-06-29T21:06:43.000Z",
+      "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。",
+      "category": "ai-models",
+      "score": 79,
+      "selected": true
+    },
     {
       "id": "cmqxo43c90009slwfmy4wm3z3",
       "title": "Grok 4.5 私测于 SpaceX 和 Tesla，性能接近 Opus",
@@ -183,32 +196,6 @@
       "summary": "字节Seed发布Seed2.1系列，面向真实生产力场景的智能体，强化通用Agent能力、代码工程交付与多模态理解。Seed2.1 Pro在GDPval基准获最高分，Agents' Last Exam位列参评模型第一梯队；MobileWorld手机GUI任务最高分，CreativeWork多环境任务表现突出。多模态在CharXiv-RQ等多项基准取得SOTA。代码能力上，Seed2.1 Pro在NL2Repo-Bench表现良好，开发者评测相比Claude Opus 4.6获59.1%胜率。模型已在豆包、TRAE上线，API通过火山方舟提供。",
       "category": "ai-models",
       "score": 64,
-      "selected": true
-    },
-    {
-      "id": "cmqpamzm108huslx6vf1oonz9",
-      "title": "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M",
-      "title_en": "PP-OCRv6 on Hugging Face： 50-Language OCR from 1.5M to 34.5M Parameters",
-      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
-      "permalink": "https://aihot.virxact.com/items/cmqpamzm108huslx6vf1oonz9",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-06-22T13:18:56.000Z",
-      "summary": "PP-OCRv6 是 PaddleOCR 最新一代通用 OCR 模型族，提供 tiny（1.5M）、small（7.7M）和 medium（34.5M）三级。medium 和 small 支持 50 种语言（简体/繁体中文、英文、日文及 46 种拉丁语系）。在官方多场景基准上，medium 检测 Hmean 86.2%，识别准确率 83.2%，较 PP-OCRv5_server 分别提升 +4.6 和 +5.1 个百分点。模型采用 PPLCNetV4 统一骨干、RepLKFPN 检测模块和 EncoderWithLightSVTR 识别模块，可通过 PaddleOCR、Transformers、ONNX Runtime 等后端灵活部署。",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmqph7ap700n2slp5g4tfjs46",
-      "title": "OpenAI 扩展 Daybreak 计划：推出 GPT-5.5-Cyber 完整版与 Codex Security 更新",
-      "title_en": "Daybreak： Tools for securing every organization in the world",
-      "url": "https://openai.com/index/daybreak-securing-the-world",
-      "permalink": "https://aihot.virxact.com/items/cmqph7ap700n2slp5g4tfjs46",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-22T10:00:00.000Z",
-      "summary": "OpenAI 于 2026 年 6 月 22 日宣布扩展 Daybreak 计划，发布 GPT-5.5-Cyber 完整版和 Codex Security 插件更新。GPT-5.5-Cyber 在 CyberGym 上达 85.6%，超越 GPT-5.5 的 81.8%。Codex Security 插件可深度扫描代码库、验证漏洞并自动生成补丁，支持导出至漏洞管理系统。自 3 月预览以来已扫描超 3000 万次提交，超 7 万项发现经人工确认已修复。同期启动 Patch the Planet 计划，联合 Trail of Bits、HackerOne 等，cURL、Go、Python、Sigstore、pyca/cryptography 等 30 多个开源项目已参与。",
-      "category": "ai-models",
-      "score": 63,
       "selected": true
     }
   ]

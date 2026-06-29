@@ -1,8 +1,73 @@
 {
-  "count": 18,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmqzpe7kz003xslznxpw78tx5",
+      "title": "Rubin Ultra取消，新版尺寸性能减半",
+      "title_en": "INTERESTING： Only 3 months after Rubin Ultra was announced at GTC 2026， the original 4-die Rubin Ult…",
+      "url": "https://x.com/SemiAnalysis_/status/2071700428249596290",
+      "permalink": "https://aihot.virxact.com/items/cmqzpe7kz003xslznxpw78tx5",
+      "source": "X：SemiAnalysis (@SemiAnalysis_)",
+      "publishedAt": "2026-06-29T21:00:47.000Z",
+      "summary": "有意思：在GTC 2026宣布Rubin Ultra仅3个月后，原4-die Rubin Ultra因制造执行问题被取消。新的\"Rubin Ultra\"尺寸减半，实际性能约为原版的一半。1/4🧵",
+      "category": "industry",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmqz7d8df001gslurh618qik6",
+      "title": "美军用AI选目标却误炸伊朗学校，Anthropic Claude嵌入Palantir系统首日建议约1000目标",
+      "title_en": "The US military used AI to pick thousands of targets but missed a note saying one was a school",
+      "url": "https://the-decoder.com/the-us-military-used-ai-to-pick-thousands-of-targets-but-missed-a-note-saying-one-was-a-school",
+      "permalink": "https://aihot.virxact.com/items/cmqz7d8df001gslurh618qik6",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-29T12:30:21.000Z",
+      "summary": "美军在打击伊朗时首次大规模使用AI选择目标（Anthropic的Claude模型嵌入Palantir的Maven Smart System，首日建议约1000个目标），但对一所学校的导弹袭击导致约120名儿童死亡。调查发现，情报分析师早在2019年就通过数字工具标记该地点已变为小学，但该工具未连接军方官方目标数据库MIDB，信息从未送达指挥官。MIDB建于1980年代，依赖手动输入，替代系统MARS多年延迟。五角大楼事后宣布推出agentic AI initiative。Project Maven创建人Jack Shanahan批评目标验证不力不可原谅。",
+      "category": "industry",
+      "score": 75,
+      "selected": true
+    },
+    {
+      "id": "cmqz1tatr01doslxsae6mpoyv",
+      "title": "国务院印发《教育发展\"十五五\"规划》，推进人工智能全学段教育",
+      "title_en": "国务院：推进人工智能全学段教育，提升学生人工智能素养",
+      "url": "https://www.ithome.com/0/970/097.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqz1tatr01doslxsae6mpoyv",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-29T09:27:36.000Z",
+      "summary": "国务院日前印发《教育发展\"十五五\"规划》，要求推进人工智能全学段教育，提升学生人工智能素养及提出问题、解决问题的能力。规划明确完善科学教育体系，强化科技教育与人文教育协同，加强青少年科学素养、批判性思维和创新能力培养。同时实施学生体质强健计划、心理健康促进行动，加大拔尖创新人才自主培养力度，推动学科交叉融合，扩大优质本科招生规模。目标到2030年高质量教育体系基本建成。",
+      "category": "industry",
+      "score": 80,
+      "selected": true
+    },
+    {
+      "id": "cmqyysibx00l8slxscq4crs8k",
+      "title": "三星和SK海力士计划投资5900亿美元扩产芯片，AI需求推高内存价格",
+      "title_en": "Samsung and SK Hynix plan $590 billion chip investment as AI demand sends memory prices soaring",
+      "url": "https://the-decoder.com/samsung-and-sk-hynix-plan-590-billion-chip-investment-as-ai-demand-sends-memory-prices-soaring",
+      "permalink": "https://aihot.virxact.com/items/cmqyysibx00l8slxscq4crs8k",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-29T08:17:41.000Z",
+      "summary": "在韩国政府支持下，三星和SK海力士计划投入5900亿美元扩大芯片产能，包括800万亿韩元新建四座工厂、81万亿韩元建封装中心，以及未来15年30万亿韩元用于研发下一代芯片。AI数据中心需求是主要驱动力。Jefferies预测，2026年Q3内存价格将上涨40%至50%，Q4再涨30%至40%，2027年继续上涨40%至45%，到2028年新产能仅上线15%至20%才可能缓解。两家公司合计控制全球近80%的高带宽内存芯片市场。内存涨价已推高消费电子产品成本，苹果已上调Mac和MacBook售价。",
+      "category": "industry",
+      "score": 72,
+      "selected": true
+    },
+    {
+      "id": "cmqyvdkok000qslf1ctykave9",
+      "title": "SK 集团会长崔泰源：到 2035 年建设 15GW AI 数据中心，总投资达 1000 万亿韩元",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/969/953.htm",
+      "permalink": "https://aihot.virxact.com/items/cmqyvdkok000qslf1ctykave9",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-29T06:44:15.000Z",
+      "summary": "SK 集团会长崔泰源 6 月 29 日宣布，计划到 2035 年建成 15GW AI 数据中心容量，作为韩国国家级基础设施和实体 AI 时代核心底座。项目总投资 1000 万亿韩元（约 4.4 万亿元人民币），未来 10 年保持年均 100 万亿韩元以上国内投资，旨在实现从出口传统商品向智能服务的转变，构建韩国智能市场。此外，SK 海力士将向韩国西南部投资 400 万亿韩元，半导体供应项目总投资达 1100 万亿韩元（约 4.84 万亿元人民币）。",
+      "category": "industry",
+      "score": 71,
+      "selected": true
+    },
     {
       "id": "cmqwub84n008jslp0ael13807",
       "title": "SpaceX 注册 SpaceXAI 商标，将合并 xAI",
@@ -196,45 +261,6 @@
       "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
       "category": "industry",
       "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqpqqsrw030aslp5c0jt14yr",
-      "title": "美国警长利用Flock车牌系统跟踪前女友案频发，Flock法务官承认\"最常见滥用\"",
-      "title_en": "由\"群情\"驱使的警察局长们尾随女性，这说明了为何需要搜查令",
-      "url": "https://ipvm.com/reports/police-chiefs-track",
-      "permalink": "https://aihot.virxact.com/items/cmqpqqsrw030aslp5c0jt14yr",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-22T21:32:12.384Z",
-      "summary": "伊利诺伊州Holiday Hills警察局长于2026年6月18日被捕，被控两项渎职重罪。检方指控他利用Flock车牌读取系统及州警察数据库，跟踪6名认识的人，其中3人为前女友，并对其中一人的前男友车牌查询140次（86次脱岗），持续18个月。全美至少18起类似案例：佐治亚州Braselton警察局长、爱达荷州Jerome县警长（700余次查询其妻车牌）等均因此辞职或被捕。Flock首席法务官Dan Haley承认，滥用该系统\"最常见情况\"就是跟踪前女友。Flock称系统只跟踪车辆，但案例表明车辆是手段，人是目标。",
-      "category": "industry",
-      "score": 80,
-      "selected": true
-    },
-    {
-      "id": "cmqpl4smd01j1slp5npj3krmn",
-      "title": "Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具",
-      "title_en": "Google DeepMind bets $75M on AI's future in Hollywood with A24 deal",
-      "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal",
-      "permalink": "https://aihot.virxact.com/items/cmqpl4smd01j1slp5npj3krmn",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-22T18:49:44.000Z",
-      "summary": "Google DeepMind 宣布向独立电影制片厂 A24 投资 7500 万美元（据《华尔街日报》），双方将合作开发电影制作 AI 工具。A24 出品过《万事俱备》《后室》等影片。Google DeepMind CEO Demis Hassabis 称，希望通过与艺术家直接合作，打造支持创意表达的 AI 功能。此举是好莱坞最新一次科技公司与电影 AI 联手，此前 Netflix 已收购 Ben Affleck 的 AI 工具公司 Interpositive，亚马逊 MGM 工作室也在去年设立了影视 AI 部门。",
-      "category": "industry",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqpepyo500j1sldkfj5exgj8",
-      "title": "开辟新赛道：小米 YU7 GT 创全球首个纽北自动驾驶圈速纪录，官方圈速榜新增\"自动驾驶\"分类",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/967/234.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqpepyo500j1sldkfj5exgj8",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-22T15:13:29.000Z",
-      "summary": "小米 YU7 GT（选配赛道专业套装）在纽博格林北环赛道以自动驾驶系统完成全程无人计时圈，成绩 10 分 29 秒 483，成为全球首个纽北自动驾驶圈速纪录。纽北官方圈速榜因此新增\"自动驾驶\"分类。小米汽车表示，在极限赛道中锤炼的动态模型、高频扭矩分配和毫秒级救车能力，将逐步下放至量产车，以提升用户在暴雨、冰雪等极端工况下的底盘与智驾安全。",
-      "category": "industry",
-      "score": 85,
       "selected": true
     }
   ]
