@@ -4,6 +4,45 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmr0kov5302qnslolcwg00yqd",
+      "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
+      "title_en": "Meta secretly tested ChatGPT， Gemini， and Character.AI with thousands of minor-perspective crisis prompts",
+      "url": "https://the-decoder.com/meta-secretly-tested-chatgpt-gemini-and-character-ai-with-thousands-of-minor-perspective-crisis-prompts",
+      "permalink": "https://aihot.virxact.com/items/cmr0kov5302qnslolcwg00yqd",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-06-30T11:14:52.000Z",
+      "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmr0czddc00pyslole7byaugu",
+      "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
+      "title_en": "另类资管巨头黑石未来 3~5 年将斥资 300 亿美元在日本建设 AI 数据中心",
+      "url": "https://www.ithome.com/0/970/583.htm",
+      "permalink": "https://aihot.virxact.com/items/cmr0czddc00pyslole7byaugu",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-30T07:56:46.000Z",
+      "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。",
+      "category": "industry",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmr0au6v3005gslol3ritaun0",
+      "title": "特斯拉Cybercab量产版在奥斯汀启动公开道路工程测试",
+      "title_en": "无方向盘、无踏板，特斯拉 Cybercab 量产版启动公开道路工程测试",
+      "url": "https://www.ithome.com/0/970/539.htm",
+      "permalink": "https://aihot.virxact.com/items/cmr0au6v3005gslol3ritaun0",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-06-30T06:45:03.000Z",
+      "summary": "2026年6月30日，特斯拉在奥斯汀公共道路启动首批量产版Cybercab工程测试。车辆无方向盘与脚踏板，配有安全监督员，Musk发布实拍视频。从2024年10月概念车首秀到实车上路约20个月。目前不对外开放乘客，投入34台Cybercab在市中心验证硬件可靠性。Cybercab为双座车型，完全围绕无人驾驶打造，无后期改装。此前奥斯汀已有无安全员Model Y无人驾驶出租于1月启用、6月22日开放付费服务。",
+      "category": "industry",
+      "score": 79,
+      "selected": true
+    },
+    {
       "id": "cmqzpe7kz003xslznxpw78tx5",
       "title": "Rubin Ultra取消，新版尺寸性能减半",
       "title_en": "INTERESTING： Only 3 months after Rubin Ultra was announced at GTC 2026， the original 4-die Rubin Ult…",
@@ -222,45 +261,6 @@
       "summary": "Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力。该指控基于Anthropic的调查，认为阿里巴巴通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。",
       "category": "industry",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqr4zhkm0gidslp5x8ow892r",
-      "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
-      "title_en": "Oracle's 21，000 layoffs help drive its debt-fueled AI investments",
-      "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
-      "permalink": "https://aihot.virxact.com/items/cmqr4zhkm0gidslp5x8ow892r",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-06-23T20:17:38.000Z",
-      "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141，000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
-      "category": "industry",
-      "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqr1y54m0frmslp5b6e6js37",
-      "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
-      "title_en": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
-      "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source",
-      "permalink": "https://aihot.virxact.com/items/cmqr1y54m0frmslp5b6e6js37",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-06-23T15:48:00.000Z",
-      "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。",
-      "category": "industry",
-      "score": 56,
-      "selected": true
-    },
-    {
-      "id": "cmqqdbcno08taslp5yd9dbxjt",
-      "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
-      "title_en": "Top spy agencies say AI cyber threats will impact you within months. Here's why",
-      "url": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats",
-      "permalink": "https://aihot.virxact.com/items/cmqqdbcno08taslp5yd9dbxjt",
-      "source": "Artificial Intelligence News（RSS）",
-      "publishedAt": "2026-06-23T08:00:00.000Z",
-      "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
-      "category": "industry",
-      "score": 74,
       "selected": true
     }
   ]

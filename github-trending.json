@@ -1,16 +1,27 @@
 {
-  "fetched_at": "2026-06-29T21:53:07.754Z",
+  "fetched_at": "2026-06-30T21:57:44.119Z",
   "repos": [
     {
-      "owner": "simplex-chat",
-      "name": "simplex-chat",
-      "url": "https://github.com/simplex-chat/simplex-chat",
-      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
-      "language": "Haskell",
-      "languageColor": "#5e5086",
-      "stars": 16481,
-      "forks": 951,
-      "starsToday": 1611
+      "owner": "hasaneyldrm",
+      "name": "exercises-dataset",
+      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 6406,
+      "forks": 777,
+      "starsToday": 1413
+    },
+    {
+      "owner": "usestrix",
+      "name": "strix",
+      "url": "https://github.com/usestrix/strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 28054,
+      "forks": 3118,
+      "starsToday": 395
     },
     {
       "owner": "msitarzewski",
@@ -19,86 +30,31 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 118774,
-      "forks": 19459,
-      "starsToday": 1221
-    },
-    {
-      "owner": "cupy",
-      "name": "cupy",
-      "url": "https://github.com/cupy/cupy",
-      "description": "NumPy & SciPy for GPU",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 11800,
-      "forks": 1082,
-      "starsToday": 352
+      "stars": 120734,
+      "forks": 19731,
+      "starsToday": 1793
     },
     {
       "owner": "altic-dev",
       "name": "FluidVoice",
       "url": "https://github.com/altic-dev/FluidVoice",
-      "description": "FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. One ⭐ takes us a long way :))",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 4331,
-      "forks": 271,
-      "starsToday": 836
+      "stars": 4874,
+      "forks": 300,
+      "starsToday": 586
     },
     {
-      "owner": "soxoj",
-      "name": "maigret",
-      "url": "https://github.com/soxoj/maigret",
-      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 34322,
-      "forks": 2595,
-      "starsToday": 191
-    },
-    {
-      "owner": "commaai",
-      "name": "openpilot",
-      "url": "https://github.com/commaai/openpilot",
-      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 62744,
-      "forks": 11111,
-      "starsToday": 465
-    },
-    {
-      "owner": "ripienaar",
-      "name": "free-for-dev",
-      "url": "https://github.com/ripienaar/free-for-dev",
-      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 126667,
-      "forks": 13255,
-      "starsToday": 1971
-    },
-    {
-      "owner": "logto-io",
-      "name": "logto",
-      "url": "https://github.com/logto-io/logto",
-      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "owner": "diegosouzapw",
+      "name": "OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 12602,
-      "forks": 862,
-      "starsToday": 77
-    },
-    {
-      "owner": "xbtlin",
-      "name": "ai-berkshire",
-      "url": "https://github.com/xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6557,
-      "forks": 862,
-      "starsToday": 1397
+      "stars": 8417,
+      "forks": 1391,
+      "starsToday": 459
     },
     {
       "owner": "browser-use",
@@ -107,31 +63,119 @@
       "description": "Edit videos with coding agents",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 11872,
-      "forks": 1569,
-      "starsToday": 976
+      "stars": 12530,
+      "forks": 1601,
+      "starsToday": 722
     },
     {
-      "owner": "Unclecheng-li",
-      "name": "VulnClaw",
-      "url": "https://github.com/Unclecheng-li/VulnClaw",
-      "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+      "owner": "xbtlin",
+      "name": "ai-berkshire",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 1101,
-      "forks": 169,
-      "starsToday": 105
+      "stars": 7452,
+      "forks": 953,
+      "starsToday": 966
     },
     {
-      "owner": "0xNyk",
-      "name": "council-of-high-intelligence",
-      "url": "https://github.com/0xNyk/council-of-high-intelligence",
-      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 1827,
-      "forks": 199,
-      "starsToday": 323
+      "owner": "Mebus",
+      "name": "cupp",
+      "url": "https://github.com/Mebus/cupp",
+      "description": "Common User Passwords Profiler (CUPP)",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 6083,
+      "forks": 2046,
+      "starsToday": 61
+    },
+    {
+      "owner": "ripienaar",
+      "name": "free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 127282,
+      "forks": 13304,
+      "starsToday": 740
+    },
+    {
+      "owner": "google",
+      "name": "agents-cli",
+      "url": "https://github.com/google/agents-cli",
+      "description": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 4126,
+      "forks": 450,
+      "starsToday": 433
+    },
+    {
+      "owner": "roboflow",
+      "name": "supervision",
+      "url": "https://github.com/roboflow/supervision",
+      "description": "We write your reusable computer vision tools. 💜",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 45873,
+      "forks": 4070,
+      "starsToday": 336
+    },
+    {
+      "owner": "ogulcancelik",
+      "name": "herdr",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "description": "agent multiplexer that lives in your terminal.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 8948,
+      "forks": 537,
+      "starsToday": 485
+    },
+    {
+      "owner": "simplex-chat",
+      "name": "simplex-chat",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+      "language": "Haskell",
+      "languageColor": "#5e5086",
+      "stars": 17306,
+      "forks": 1007,
+      "starsToday": 1229
+    },
+    {
+      "owner": "CoreBunch",
+      "name": "Instatic",
+      "url": "https://github.com/CoreBunch/Instatic",
+      "description": "Instatic is a modern self-hosted visual CMS - get it running in 1 minute",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 1476,
+      "forks": 137,
+      "starsToday": 351
+    },
+    {
+      "owner": "microsoft",
+      "name": "AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 49284,
+      "forks": 10154,
+      "starsToday": 180
+    },
+    {
+      "owner": "facebook",
+      "name": "astryx",
+      "url": "https://github.com/facebook/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 1711,
+      "forks": 94,
+      "starsToday": 399
     },
     {
       "owner": "HKUDS",
@@ -140,31 +184,31 @@
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 15043,
-      "forks": 2685,
-      "starsToday": 840
+      "stars": 15743,
+      "forks": 2729,
+      "starsToday": 719
     },
     {
-      "owner": "refactoringhq",
-      "name": "tolaria",
-      "url": "https://github.com/refactoringhq/tolaria",
-      "description": "Desktop app to manage markdown knowledge bases",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 17478,
-      "forks": 1205,
-      "starsToday": 249
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 242418,
+      "forks": 21511,
+      "starsToday": 884
     },
     {
-      "owner": "veracrypt",
-      "name": "VeraCrypt",
-      "url": "https://github.com/veracrypt/VeraCrypt",
-      "description": "Disk encryption with strong security based on TrueCrypt",
-      "language": "C",
-      "languageColor": "#555555",
-      "stars": 10455,
-      "forks": 1231,
-      "starsToday": 187
+      "owner": "Robbyant",
+      "name": "lingbot-map",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 8833,
+      "forks": 856,
+      "starsToday": 210
     }
   ]
 }

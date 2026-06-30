@@ -1,8 +1,21 @@
 {
-  "count": 17,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmr0wblyn0050sl40bngva2bq",
+      "title": "OpenAI 发布 GeneBench-Pro：计算生物学研究级基准测试",
+      "title_en": "Introducing GeneBench-Pro",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "permalink": "https://aihot.virxact.com/items/cmr0wblyn0050sl40bngva2bq",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "summary": "OpenAI 发布 GeneBench-Pro，用于评估 AI 智能体在计算生物学中处理模糊性和做出判断性分析的能力。该基准包含 129 个问题，覆盖统计遗传学、群体遗传学等 10 个领域 21 个子领域。每个问题提供真实混乱的数据集和实验背景，要求模型探索数据、选择分析路径并迭代实验。采用合成数据构建，已知完整因果结构。82 个问题已由外部领域专家审核确认其现实性。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
     {
       "id": "cmqz708gp006kslj16zzl8far",
       "title": "Meta发布Brain2Qwerty v2：非侵入式实时句子解码",
@@ -43,6 +56,19 @@
       "selected": true
     },
     {
+      "id": "cmr034hsc03fdslki184emljf",
+      "title": "Agents-A1：35B MoE 智能体模型通过扩展 horizon 达到万亿参数级性能",
+      "title_en": "Scaling the Horizon， Not the Parameters： Reaching Trillion-Parameter Performance with a 35B Agent",
+      "url": "https://arxiv.org/abs/2606.30616",
+      "permalink": "https://aihot.virxact.com/items/cmr034hsc03fdslki184emljf",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-29T00:00:00.000Z",
+      "summary": "研究人员提出 Agents-A1，一个 35B 参数的 Mixture-of-Experts 智能体模型，通过扩展智能体 horizon（长轨迹与异构能力两个视角）达到万亿参数模型性能。团队构建了长 horizon 知识-行动基础设施，生成平均 45K token 的智能体轨迹，并采用三阶段训练：全领域监督微调、领域级教师模型训练、多教师领域路由在线蒸馏（含显著词汇对齐）。对比万亿参数模型 Kimi-K2.6 和 DeepSeek-V4-pro，Agents-A1 在 SEAL-0（56.4）、IFBench（80.6）、HiPhO（46.4）、FrontierScience-Olympiad（79.0）和 MolBench-Bind（56.8）上领先，并在 SciCode（44.3）、HLE（47.6）和 BrowseComp（75.5）上保持强竞争力。",
+      "category": "paper",
+      "score": 77,
+      "selected": true
+    },
+    {
       "id": "cmqxnrjtc004ssljh9zvejgbo",
       "title": "仅有三个AI模型在500天创业测试中盈利超过起始资本",
       "title_en": "Only three AI models finished above starting capital in a 500-day startup survival test",
@@ -53,6 +79,19 @@
       "summary": "普林斯顿大学推出CEO-Bench基准测试，让AI智能体在模拟环境中运营订阅软件公司NovaMind 500天，起始资金100万美元。14个测试模型中，仅Claude Fable 5（最佳轮次盈利4715万美元）、Claude Opus 4.8（2780万美元）和GPT-5.5（2130万美元）在最佳运行中超过起始资本。一个不调用语言模型的简单规则启发式方法通过固定定价、配额和针对性开发达到1576万美元，超越除上述三款外的所有模型。多数模型无法保持连贯策略，在模拟结束前破产。该测试旨在衡量AI的长期战略决策能力。",
       "category": "paper",
       "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmr059nvo0402slkikkryczay",
+      "title": "OSWorld2.0：长时域真实世界计算机使用工作流基准",
+      "title_en": "OSWorld2.0： Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+      "url": "https://arxiv.org/abs/2606.29537",
+      "permalink": "https://aihot.virxact.com/items/cmr059nvo0402slkikkryczay",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-06-28T00:00:00.000Z",
+      "summary": "OSWorld2.0 发布，包含108个长时域计算机使用工作流，覆盖日常与专业任务。每项任务用户中位数约1.6小时完成，Claude Opus 4.7（最大思考）平均需318次工具调用（OSWorld 1.0约30次）。基准聚焦流交互、动态环境、跨源推理、隐式状态推断、视觉空间精度等真实挑战。任务基于真实输入工件和状态化用户档案，附安全报告。500步二元完成指标下，Claude Opus 4.8（最大思考+批量调用）得分最高仅20.6%（部分54.8%）；GPT-5.5更省token但约13%。结果表明当前智能体远未达专业级：瓶颈不在基本GUI控制或编码，而是丢失约束、错过中途信息、猜测而非询问、跳过验证，尤其依赖隐藏状态时最差。",
+      "category": "paper",
+      "score": 82,
       "selected": true
     },
     {
@@ -170,58 +209,6 @@
       "summary": "Causal-rCM将扩散蒸馏框架rCM扩展至自回归视频扩散，提出教师强制（TF）与自强制（SF）互补训练范式，并发布统一开源算法与基础设施。通过自定义掩码FlashAttention-2 JVP内核，首次实现基于教师强制的连续时间一致性模型（sCM/MeanFlow）用于自回归视频扩散，收敛速度比离散时间版本快10倍。蒸馏后的2步因果Wan2.1-1.3B模型在仅1或2步采样下取得VBench-T2V分数84.63，仅使用合成数据即达到帧级和块级流式视频生成SOTA。该方法还应用于Cosmos 3全模态世界基础模型，实现动作条件生成的交互式世界模型。",
       "category": "paper",
       "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqr73j5g0h1nslp5g9y52k0v",
-      "title": "AI招聘工具存在种族偏见和系统性排斥；黑人占比26%，亚裔占比15%",
-      "title_en": null,
-      "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
-      "permalink": "https://aihot.virxact.com/items/cmqr73j5g0h1nslp5g9y52k0v",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-23T21:48:25.964Z",
-      "summary": "一项覆盖340万人、400万份申请、150家雇主和1700个职位的大规模实地研究发现，AI招聘筛选工具存在显著的种族歧视：26%的黑人申请者和15%的亚裔申请者遭遇算法对其族群的系统性排斥；若AI按推荐率最高群体（通常为白人）标准执行，将有4万份额外申请进入下一轮。多数雇主依赖同一第三方供应商算法，形成\"算法单一文化\"，导致10%提交4份申请者被所有职位拒绝。对比同期未用AI的招聘数据（8.3万份申请、108家财富500强企业），未发现此类模式。研究呼吁对算法招聘进行独立监管。",
-      "category": "paper",
-      "score": 71,
-      "selected": true
-    },
-    {
-      "id": "cmqsbr8l701ndslfubzp0hnmi",
-      "title": "思考即回忆：推理如何解锁LLM中的参数化知识",
-      "title_en": "Thinking to recall： How reasoning unlocks parametric knowledge in LLMs",
-      "url": "https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
-      "permalink": "https://aihot.virxact.com/items/cmqsbr8l701ndslfubzp0hnmi",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-23T16:00:00.000Z",
-      "summary": "Google Research研究发现，推理（chain-of-thought）能帮助大语言模型（LLM）回忆简单事实，即使这些事实无需复杂推导。在Gemini-2.5 Flash和Pro以及Qwen3-32B上，启用推理后模型能够回答原本无法直接回答的简单问题，pass@k显示正确事实存在于输出分布中。该现象由两个机制驱动：一是生成的推理token充当计算缓冲，允许模型进行隐藏计算以提取参数化知识；二是推理过程中产生的相关事实起到启动效应（factual priming），帮助模型激活正确答案。",
-      "category": "paper",
-      "score": 69,
-      "selected": true
-    },
-    {
-      "id": "cmqtxwj4g006oslcv6jp1vwpy",
-      "title": "推理模型的思考Token真的有助于提升安全性吗？--来自GPT-OSS、Qwen、Olmo和Phi家族的证据",
-      "title_en": "Do Thinking Tokens Help with Safety？",
-      "url": "https://arxiv.org/abs/2606.25013",
-      "permalink": "https://aihot.virxact.com/items/cmqtxwj4g006oslcv6jp1vwpy",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "summary": "对GPT-OSS、Qwen、Olmo和Phi系列前沿开源推理模型的研究发现，所谓的\"思考token\"并未带来真正的安全性深思熟虑。模型是否拒绝或服从指令，在第一个token的",
-      "category": "paper",
-      "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqr02j580f8oslp5i6wajucu",
-      "title": "九位评委，两个有效投票：相关错误削弱LLM评审面板",
-      "title_en": "Nine Judges， Two Effective Votes： Correlated Errors Undermine LLM Evaluation Panels",
-      "url": "https://machinelearning.apple.com/research/correlated-llm-evaluation-panels",
-      "permalink": "https://aihot.virxact.com/items/cmqr02j580f8oslp5i6wajucu",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "summary": "苹果机器学习研究团队发现，LLM-as-a-judge面板因模型间高度相关而严重受限。对7个模型家族的9个前沿大语言模型在3个自然语言推理数据集上的测试表明，9位评委实际仅提供约2个独立投票的信息量，面板准确率比独立投票理想值低8-22个百分点，最佳单一模型的表现已匹敌或超越整个面板。增加评委数量或改进聚合算法收效甚微，即使允许算法获取正确答案也仅能缩小至多11%的差距。该结论在多种提示变体、温度设置及偏好任务中均得到验证，瓶颈在于评委间的相关性而非聚合算法。",
-      "category": "paper",
-      "score": 68,
       "selected": true
     }
   ]
