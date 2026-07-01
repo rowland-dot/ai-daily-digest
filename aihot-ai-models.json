@@ -1,19 +1,32 @@
 {
-  "count": 9,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmr0yev3s005cslw8omm20ml6",
-      "title": "Claude Sonnet 5 发布",
-      "title_en": "Introducing Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "permalink": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-30T18:02:06.984Z",
-      "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。",
+      "id": "cmr1ti4v001xlsl8zovi1yoqa",
+      "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",
+      "title_en": "NVIDIA Releases Nemotron-Labs-TwoTower： an Open-Weight Diffusion Language Model Built on a Frozen Autoregressive Nemotron-3-Nano-30B-A3B Backbone",
+      "url": "https://www.marktechpost.com/2026/07/01/nvidia-releases-nemotron-labs-twotower",
+      "permalink": "https://aihot.virxact.com/items/cmr1ti4v001xlsl8zovi1yoqa",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-01T08:10:17.000Z",
+      "summary": "NVIDIA 发布 Nemotron-Labs-TwoTower，基于冻结的自回归骨干 Nemotron-3-Nano-30B-A3B 的扩散语言模型。采用双塔架构：上下文塔冻结，降噪器塔训练，通过层对齐交叉注意力和状态播种协作。在 2×H100 上 BF16 评估，保留 98.7% 的 AR 基线质量，生成吞吐量提升 2.42 倍（γ=0.8，块大小 S=16）。降噪器在约 2.1T token 上训练，骨干使用 25T token 预训练。总参数约 60B，每 token 活跃参数约 3B/塔。支持扩散、模拟 AR 和 AR 三种解码模式。",
       "category": "ai-models",
-      "score": 81,
+      "score": 73,
+      "selected": true
+    },
+    {
+      "id": "cmr1js18u03imslnld2yrjboo",
+      "title": "美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型",
+      "title_en": "美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型",
+      "url": "https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow",
+      "permalink": "https://aihot.virxact.com/items/cmr1js18u03imslnld2yrjboo",
+      "source": "公众号：龙猫LongCat（美团）",
+      "publishedAt": "2026-07-01T02:24:00.000Z",
+      "summary": "美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。",
+      "category": "ai-models",
+      "score": 82,
       "selected": true
     },
     {
@@ -30,16 +43,16 @@
       "selected": true
     },
     {
-      "id": "cmr08dev204qjslkit52gdrur",
-      "title": "美团 LongCat 发布旗舰模型 LongCat-2.0",
-      "title_en": "The full model behind \"Owl Alpha\" on @OpenRouter is here🦉 Let's meet @Meituan_LongCat 's latest fla…",
-      "url": "https://x.com/SiliconFlowAI/status/2071831773076746715",
-      "permalink": "https://aihot.virxact.com/items/cmr08dev204qjslkit52gdrur",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "publishedAt": "2026-06-30T05:42:42.000Z",
-      "summary": "美团 LongCat 推出旗舰模型 LongCat-2.0，采用 1.6T 参数 MoE 架构（约 48B 活跃参数），原生支持 1M 上下文窗口。定价为 Input Cache $0.015/1M tokens、Input $0.75/1M tokens、Output $2.95/1M tokens。模型专为 Agentic Coding 设计，包含三大技术：LSA 稀疏注意力实现高效 1M 扩展；Zero-Compute Experts 动态激活 33B-56B 参数/token，无算力浪费；MOPD 将专家分为 Agent / Reasoning / Interaction 三组，按任务门控路由。在 SWE-bench Pro 上取得 59.5 分，性能接近主流闭源模型。现已上线 SiliconFlow Day 0 服务。",
+      "id": "cmr0yev3s005cslw8omm20ml6",
+      "title": "Claude Sonnet 5 发布",
+      "title_en": "Introducing Claude Sonnet 5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "permalink": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-06-29T16:00:00.000Z",
+      "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。",
       "category": "ai-models",
-      "score": 67,
+      "score": 81,
       "selected": true
     },
     {
@@ -92,32 +105,6 @@
       "summary": "Ornith-1.0 开源模型家族发布，专注智能体编程（Agentic Coding），覆盖 9B Dense、31B Dense、35B MoE 及 397B MoE 全参数规模。在 Agent Coding 基准上达开源顶尖：SWE-Bench Verified 82.4、SWE-Bench Pro 62.2、Terminal-Bench 2.1 77.5、NL2Repo 48.2、SWE Atlas 41.2 QnA、ClawEval 77.1。基于 gemma4 和 qwen3.5 后训练，采用强化学习联合优化任务脚手架（scaffold）与最终解决方案，让模型自主改进执行框架。全系列 MIT 开源，提供 GGUF 版本，支持 Ollama、Unsloth 等本地运行。",
       "category": "ai-models",
       "score": 76,
-      "selected": true
-    },
-    {
-      "id": "cmqsef9c302f0slfu6lvuhnu7",
-      "title": "GPT-5.5 Instant 新版本，对话更有趣",
-      "title_en": "We have a new version of GPT-5.5 Instant for you， and it's much more fun to talk to. Our most-used …",
-      "url": "https://x.com/OpenAI/status/2069843083701915755",
-      "permalink": "https://aihot.virxact.com/items/cmqsef9c302f0slfu6lvuhnu7",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-06-24T18:00:21.000Z",
-      "summary": "我们为你带来了新版 GPT-5.5 Instant，它现在聊起天来有趣多了。\n\n我们最常用的模型现在能更好地理解问题背后的意图，并相应地调整回应。\n\n它也能更可靠地处理复杂约束，让购物和本地推荐更加实用和连贯。\n\n今天向付费用户推送，明天向免费用户推送。",
-      "category": "ai-models",
-      "score": 67,
-      "selected": true
-    },
-    {
-      "id": "cmqrl73460l9gslp5w33pryqi",
-      "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
-      "title_en": "OpenAI ChatGPT 语音最大规模升级：双向 AI 语音模型 Bidi 1 已上线测试",
-      "url": "https://www.ithome.com/0/967/852.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqrl73460l9gslp5w33pryqi",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-24T04:34:24.000Z",
-      "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。",
-      "category": "ai-models",
-      "score": 74,
       "selected": true
     }
   ]

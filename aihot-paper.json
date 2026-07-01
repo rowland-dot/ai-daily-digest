@@ -1,8 +1,21 @@
 {
-  "count": 16,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmr190seo00nsslnlxmfddenz",
+      "title": "AI 用 prover-verifier LLM 循环攻克 9 个未解数学难题",
+      "title_en": "AI just solved not one， but ***9*** unsolved math problems. Once again， instead of this being a glo…",
+      "url": "https://x.com/AISafetyMemes/status/2072085914558558402",
+      "permalink": "https://aihot.virxact.com/items/cmr190seo00nsslnlxmfddenz",
+      "source": "X：AI Safety Memes (@AISafetyMemes)",
+      "publishedAt": "2026-06-30T22:32:34.000Z",
+      "summary": "AI Safety Memes 推文指出，AI 刚刚解决了 9 个未解决的数学问题，但全球没有记者报道。引用 @WeinsteinOmri 的推文称，采用\"prover-verifier\"LLM 循环的方法，成功解决了理论计算机科学中 9 个重大开放问题，其中包括一个困扰其长达 2 年的难题。该研究由哥伦比亚大学合作者完成，并计划将这一方法扩展到所有科学领域。",
+      "category": "paper",
+      "score": 76,
+      "selected": true
+    },
     {
       "id": "cmr0wblyn0050sl40bngva2bq",
       "title": "OpenAI 发布 GeneBench-Pro：计算生物学研究级基准测试",
@@ -183,32 +196,6 @@
       "summary": "OpenAI 在2025年8月至2026年6月间观察到，智能体产品 Codex 取代 ChatGPT 成为主要工作工具，各部门输出 token 中 Codex 占比从不足10%升至99.8%。80.6%个体用户曾发起预计等效人类工作时间超30分钟的请求，70.2%超1小时，25.6%超8小时；99百分位用户每日生成超60小时 agent turns。非开发者用户增长迅猛：个体用户增长137倍，组织用户增长189倍。Legal、Finance、Recruiting 部门在2026年4月前后跨过 Codex 使用过半拐点，平均每位律师或招聘人员超85%输出 token 来自 Codex。",
       "category": "paper",
       "score": 65,
-      "selected": true
-    },
-    {
-      "id": "cmqrrgnay0n08slp5phvdk394",
-      "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
-      "title_en": "DFlash Speculative Decoding Drafts Whole Token Blocks in Parallel for Up to 15x Higher Throughput on NVIDIA Blackwell",
-      "url": "https://www.marktechpost.com/2026/06/24/dflash-speculative-decoding-drafts-whole-token-blocks-in-parallel-for-up-to-15x-higher-throughput-on-nvidia-blackwell",
-      "permalink": "https://aihot.virxact.com/items/cmqrrgnay0n08slp5phvdk394",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-06-24T07:21:10.000Z",
-      "summary": "DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块扩散草稿模型。它一次前向推理生成整块 token，再由目标模型并行验证，保证输出无损。相比 EAGLE-3，DFlash 实现最高 2.5 倍加速，在 Qwen3-8B 等多种模型上平均无损加速超过 6 倍（MATH-500 达 6.08×）。在 NVIDIA Blackwell 上（TensorRT-LLM），gpt-oss-120b 模型吞吐量提升最高 15 倍，约为 EAGLE-3 的 1.5 倍。核心创新是将目标模型多层隐藏特征注入草稿模型每一层的 Key-Value 投影，使接受长度随草稿深度增长。",
-      "category": "paper",
-      "score": 74,
-      "selected": true
-    },
-    {
-      "id": "cmqsxg0qe0764slfui5djtfyx",
-      "title": "Causal-rCM：自回归视频扩散蒸馏的统一教师强制与自强制开源方案",
-      "title_en": "Causal-rCM： A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models",
-      "url": "https://arxiv.org/abs/2606.25473",
-      "permalink": "https://aihot.virxact.com/items/cmqsxg0qe0764slfui5djtfyx",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-06-24T00:00:00.000Z",
-      "summary": "Causal-rCM将扩散蒸馏框架rCM扩展至自回归视频扩散，提出教师强制（TF）与自强制（SF）互补训练范式，并发布统一开源算法与基础设施。通过自定义掩码FlashAttention-2 JVP内核，首次实现基于教师强制的连续时间一致性模型（sCM/MeanFlow）用于自回归视频扩散，收敛速度比离散时间版本快10倍。蒸馏后的2步因果Wan2.1-1.3B模型在仅1或2步采样下取得VBench-T2V分数84.63，仅使用合成数据即达到帧级和块级流式视频生成SOTA。该方法还应用于Cosmos 3全模态世界基础模型，实现动作条件生成的交互式世界模型。",
-      "category": "paper",
-      "score": 70,
       "selected": true
     }
   ]

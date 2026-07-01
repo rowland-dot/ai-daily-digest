@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T21:57:45.497Z",
+  "fetched_at": "2026-07-01T22:04:08.374Z",
   "source": "OpenAI",
   "items": [
     {
@@ -7,6 +7,12 @@
       "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
       "pubDate": "Tue, 30 Jun 2026 09:00:00 GMT",
       "description": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages."
+    },
+    {
+      "title": "Inside Genebench-Pro",
+      "link": "https://openai.com/index/genebench-pro/case-studies",
+      "pubDate": "Tue, 30 Jun 2026 00:00:00 GMT",
+      "description": ""
     },
     {
       "title": "Introducing GeneBench-Pro",
@@ -19,12 +25,6 @@
       "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
       "pubDate": "Tue, 30 Jun 2026 00:00:00 GMT",
       "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug."
-    },
-    {
-      "title": "Inside Genebench-Pro",
-      "link": "https://openai.com/index/genebench-pro/case-studies",
-      "pubDate": "Tue, 30 Jun 2026 00:00:00 GMT",
-      "description": ""
     },
     {
       "title": "Mapping Europe’s AI Workforce Opportunity",
@@ -75,16 +75,16 @@
       "description": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company."
     },
     {
-      "title": "Daybreak: Tools for securing every organization in the world",
-      "link": "https://openai.com/index/daybreak-securing-the-world",
-      "pubDate": "Mon, 22 Jun 2026 10:00:00 GMT",
-      "description": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale."
-    },
-    {
       "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
       "link": "https://openai.com/index/patch-the-planet",
       "pubDate": "Mon, 22 Jun 2026 10:00:00 GMT",
       "description": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review."
+    },
+    {
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "link": "https://openai.com/index/daybreak-securing-the-world",
+      "pubDate": "Mon, 22 Jun 2026 10:00:00 GMT",
+      "description": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale."
     },
     {
       "title": "Codex-maxxing for long-running work",
