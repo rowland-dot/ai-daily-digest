@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-01T22:04:10.134Z",
+  "fetched_at": "2026-07-02T21:45:54.051Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "link": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+      "updated": "2026-07-02T18:25:00+00:00",
+      "summary": "One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:"
+    },
+    {
+      "title": "Understand to participate",
+      "link": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
+      "updated": "2026-07-02T17:07:14+00:00",
+      "summary": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me:"
+    },
     {
       "title": "Quoting Anthropic",
       "link": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
       "updated": "2026-06-28T21:57:41+00:00",
       "summary": "Human Agent in the loop I dislike the phrase “human in the loop” because it cedes authority to the machines. Let’s flip the narrative. It’s our loop, we work the same way we always have, now we recruit agents to join the team. An agent-assisted process need not be a black box that takes in prompts and emits features. [...] Let’s do agentic software development like that. Not as a loop we’ve been excluded from, instead as one we invite agents into."
-    },
-    {
-      "title": "Hack Your Summer",
-      "link": "https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything",
-      "updated": "2026-06-28T19:26:11+00:00",
-      "summary": "Hack Your Summer"
-    },
-    {
-      "title": "Quoting Dean W. Ball",
-      "link": "https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything",
-      "updated": "2026-06-26T22:25:46+00:00",
-      "summary": "This is a bad state of affairs. Consider, in particular, some industry dynamics: Frontier models are trained at an enormous cost, and a significant fraction of that cost is recouped in the few post-release months that they are broadly available. After that period elapses, the models become sub-frontier, competition emerges, and margins compress. Every week of delay is eating into the narrow window that labs have to make their accounting work. The ongoing AI infrastructure buildout—the one that is, according to former US AI Czar David Sacks, essential to the US economy , assumes a functionally global total addressable market for US AI services. No one is building $100 billion dollar data centers to serve frontier models to whatever 100 companies the US government will allow access. [...]"
     }
   ]
 }

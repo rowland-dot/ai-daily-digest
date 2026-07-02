@@ -1,17 +1,6 @@
 {
-  "fetched_at": "2026-07-01T22:04:07.456Z",
+  "fetched_at": "2026-07-02T21:45:45.178Z",
   "repos": [
-    {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 123206,
-      "forks": 20055,
-      "starsToday": 2097
-    },
     {
       "owner": "usestrix",
       "name": "strix",
@@ -19,20 +8,31 @@
       "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 29563,
-      "forks": 3214,
-      "starsToday": 1195
+      "stars": 31962,
+      "forks": 3357,
+      "starsToday": 2167
     },
     {
-      "owner": "HKUDS",
-      "name": "Vibe-Trading",
-      "url": "https://github.com/HKUDS/Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 16467,
-      "forks": 2796,
-      "starsToday": 682
+      "owner": "JuliusBrussee",
+      "name": "caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 80694,
+      "forks": 4518,
+      "starsToday": 866
+    },
+    {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 125395,
+      "forks": 20338,
+      "starsToday": 2925
     },
     {
       "owner": "hasaneyldrm",
@@ -41,163 +41,42 @@
       "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 8327,
-      "forks": 943,
-      "starsToday": 2203
+      "stars": 9199,
+      "forks": 1030,
+      "starsToday": 942
     },
     {
-      "owner": "facebook",
-      "name": "astryx",
-      "url": "https://github.com/facebook/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 2516,
-      "forks": 128,
-      "starsToday": 714
+      "owner": "santifer",
+      "name": "career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 57729,
+      "forks": 11377,
+      "starsToday": 322
     },
     {
-      "owner": "diegosouzapw",
-      "name": "OmniRoute",
-      "url": "https://github.com/diegosouzapw/OmniRoute",
-      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 9454,
-      "forks": 1458,
-      "starsToday": 1012
-    },
-    {
-      "owner": "allenai",
-      "name": "olmocr",
-      "url": "https://github.com/allenai/olmocr",
-      "description": "Toolkit for linearizing PDFs for LLM datasets/training",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 18232,
-      "forks": 1502,
-      "starsToday": 295
-    },
-    {
-      "owner": "logto-io",
-      "name": "logto",
-      "url": "https://github.com/logto-io/logto",
-      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 13220,
-      "forks": 902,
-      "starsToday": 131
-    },
-    {
-      "owner": "togatoga",
-      "name": "karukan",
-      "url": "https://github.com/togatoga/karukan",
-      "description": "Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 564,
-      "forks": 33,
-      "starsToday": 29
-    },
-    {
-      "owner": "Mebus",
-      "name": "cupp",
-      "url": "https://github.com/Mebus/cupp",
-      "description": "Common User Passwords Profiler (CUPP)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6230,
-      "forks": 2064,
-      "starsToday": 185
-    },
-    {
-      "owner": "Unclecheng-li",
-      "name": "VulnClaw",
-      "url": "https://github.com/Unclecheng-li/VulnClaw",
-      "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1555,
-      "forks": 216,
-      "starsToday": 123
-    },
-    {
-      "owner": "microsoft",
-      "name": "AI-For-Beginners",
-      "url": "https://github.com/microsoft/AI-For-Beginners",
-      "description": "12 Weeks, 24 Lessons, AI for All!",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 50352,
-      "forks": 10249,
-      "starsToday": 1086
-    },
-    {
-      "owner": "refactoringhq",
-      "name": "tolaria",
-      "url": "https://github.com/refactoringhq/tolaria",
-      "description": "Desktop app to manage markdown knowledge bases",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 18005,
-      "forks": 1222,
-      "starsToday": 160
-    },
-    {
-      "owner": "ogulcancelik",
-      "name": "herdr",
-      "url": "https://github.com/ogulcancelik/herdr",
-      "description": "agent multiplexer that lives in your terminal.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 9546,
-      "forks": 561,
-      "starsToday": 611
-    },
-    {
-      "owner": "0xNyk",
-      "name": "council-of-high-intelligence",
-      "url": "https://github.com/0xNyk/council-of-high-intelligence",
-      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council",
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 2586,
-      "forks": 243,
-      "starsToday": 473
+      "stars": 244323,
+      "forks": 21676,
+      "starsToday": 962
     },
     {
-      "owner": "altic-dev",
-      "name": "FluidVoice",
-      "url": "https://github.com/altic-dev/FluidVoice",
-      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 5438,
-      "forks": 330,
-      "starsToday": 568
-    },
-    {
-      "owner": "CoreBunch",
-      "name": "Instatic",
-      "url": "https://github.com/CoreBunch/Instatic",
-      "description": "Instatic is a modern self-hosted visual CMS - get it running in 1 minute",
+      "owner": "ChromeDevTools",
+      "name": "chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 1978,
-      "forks": 164,
-      "starsToday": 518
-    },
-    {
-      "owner": "TencentCloud",
-      "name": "CubeSandbox",
-      "url": "https://github.com/TencentCloud/CubeSandbox",
-      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 6763,
-      "forks": 567,
-      "starsToday": 46
+      "stars": 45063,
+      "forks": 2932,
+      "starsToday": 141
     },
     {
       "owner": "browser-use",
@@ -206,20 +85,108 @@
       "description": "Edit videos with coding agents",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 13181,
-      "forks": 1652,
-      "starsToday": 690
+      "stars": 13738,
+      "forks": 1689,
+      "starsToday": 550
     },
     {
-      "owner": "yikart",
-      "name": "AiToEarn",
-      "url": "https://github.com/yikart/AiToEarn",
-      "description": "Let's use AI to Earn!",
+      "owner": "actions",
+      "name": "checkout",
+      "url": "https://github.com/actions/checkout",
+      "description": "Action for checking out a repo",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 22501,
-      "forks": 3396,
-      "starsToday": 149
+      "stars": 8146,
+      "forks": 2526,
+      "starsToday": 5
+    },
+    {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 225128,
+      "forks": 34454,
+      "starsToday": 508
+    },
+    {
+      "owner": "HKUDS",
+      "name": "Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 17289,
+      "forks": 2879,
+      "starsToday": 918
+    },
+    {
+      "owner": "agentskills",
+      "name": "agentskills",
+      "url": "https://github.com/agentskills/agentskills",
+      "description": "Specification and documentation for Agent Skills",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 21568,
+      "forks": 1374,
+      "starsToday": 47
+    },
+    {
+      "owner": "openai",
+      "name": "codex-plugin-cc",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "description": "Use Codex from Claude Code to review code or delegate tasks.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 22568,
+      "forks": 1375,
+      "starsToday": 448
+    },
+    {
+      "owner": "langflow-ai",
+      "name": "langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 150674,
+      "forks": 9394,
+      "starsToday": 74
+    },
+    {
+      "owner": "pytorch",
+      "name": "pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 101208,
+      "forks": 28228,
+      "starsToday": 45
+    },
+    {
+      "owner": "harvard-edge",
+      "name": "cs249r_book",
+      "url": "https://github.com/harvard-edge/cs249r_book",
+      "description": "Machine Learning Systems",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 25519,
+      "forks": 3058,
+      "starsToday": 33
+    },
+    {
+      "owner": "ryanmcdermott",
+      "name": "clean-code-javascript",
+      "url": "https://github.com/ryanmcdermott/clean-code-javascript",
+      "description": "Clean Code concepts adapted for JavaScript",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 94542,
+      "forks": 12473,
+      "starsToday": 11
     }
   ]
 }

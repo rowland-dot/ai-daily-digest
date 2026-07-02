@@ -1,5 +1,5 @@
 {
-  "count": 8,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -92,19 +92,6 @@
       "summary": "OpenAI 发布了新一代模型 GPT-5.6 Sol 的预览信息。该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。",
       "category": "ai-models",
       "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqtpj36o05pusl0e9ingyoye",
-      "title": "Ornith-1.0 开源模型家族发布，专注 Agentic Coding 全参数规模",
-      "title_en": "卧槽！最近开源大模型太卷了啊！ 这不又一个专注agentic coding的开源模型家族来了，叫Ornith-1.0。 它覆盖了从9B到397B MoE的全尺寸，在Terminal-Bench、S…",
-      "url": "https://x.com/berryxia/status/2070167806700908957",
-      "permalink": "https://aihot.virxact.com/items/cmqtpj36o05pusl0e9ingyoye",
-      "source": "X：Berry Xia (@berryxia)",
-      "publishedAt": "2026-06-25T15:30:41.000Z",
-      "summary": "Ornith-1.0 开源模型家族发布，专注智能体编程（Agentic Coding），覆盖 9B Dense、31B Dense、35B MoE 及 397B MoE 全参数规模。在 Agent Coding 基准上达开源顶尖：SWE-Bench Verified 82.4、SWE-Bench Pro 62.2、Terminal-Bench 2.1 77.5、NL2Repo 48.2、SWE Atlas 41.2 QnA、ClawEval 77.1。基于 gemma4 和 qwen3.5 后训练，采用强化学习联合优化任务脚手架（scaffold）与最终解决方案，让模型自主改进执行框架。全系列 MIT 开源，提供 GGUF 版本，支持 Ollama、Unsloth 等本地运行。",
-      "category": "ai-models",
-      "score": 76,
       "selected": true
     }
   ]

@@ -1,50 +1,43 @@
 {
-  "generated_at": "2026-06-29T21:59:22.000Z",
+  "generated_at": "2026-07-01T22:10:45Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uibt9o/npc_engine_using_local_models/": {
-      "en": "A developer is building a game-agnostic NPC backend inspired by SillyTavern architecture with small local models. The stack uses NVIDIA Parakeet 0.6 for speech-to-text, Gemma 4 26B A4B as the language model, and Qwen3-TTS for voice synthesis, all reportedly running with fast response times. Retrieval Augmented Generation keeps prompts lean by injecting only the in-game actions relevant to the current player context instead of dumping the full action list every turn.",
-      "zh": "一位开发者参考 SillyTavern 架构，用小型本地模型搭建与具体游戏无关的 NPC 后端。栈使用 NVIDIA Parakeet 0.6 做语音识别，Gemma 4 26B A4B 做语言模型，Qwen3-TTS 做语音合成，响应速度据称很快。检索增强生成只把与当前情境相关的动作注入提示，而不是每轮塞入完整动作列表。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ukp2bu/the_gap_between_closed_and_open_models_might_be/": {
+      "en": "A LocalLLaMA post argues the gap between closed models like Claude and open weights such as GLM-5.2 may be smaller than benchmarks suggest, because Anthropic's product likely wraps inference with retrieval, prompt preprocessing, context-dependent system prompts, hidden tool calls, and specialist expert routing. Users see the full product, not raw inference, so benchmarks effectively pit an entire pipeline against bare open-model output, which is arguably apples to oranges.",
+      "zh": "一篇LocalLLaMA帖子认为，Claude等闭源模型与GLM-5.2等开源权重的差距可能比基准测试显示的更小。因为Anthropic可能在推理外叠加了检索增强、提示预处理、上下文相关系统提示、隐藏工具调用和专家模型路由。用户看到的是整个产品而非纯模型输出，所以基准对比其实是拿完整管线对比裸模型推理，不太公平。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uimjdi/glm_52_q1_s_vs_qwen_27b_q8/": {
-      "en": "An amateur head-to-head on dual RTX 3090 cards pits GLM-5.2 at the smallest available 1-bit quantization against Qwen 3.6 27B at 8-bit, both on a Three.js coding task. GLM-5.2 produced a working game in roughly comparable total tokens, while the smaller Qwen failed first and needed multiple follow-ups. Throughput differed sharply, with Qwen at around sixty tokens per second versus GLM at about six, sustaining the view that a larger model at low quant can beat a smaller one at high quant.",
-      "zh": "一项业余对比在双 RTX 3090 上让 GLM-5.2 最低 1 比特量化对阵 Qwen 3.6 27B 的 8 比特量化，任务是用 Three.js 写代码。GLM-5.2 一次给出可运行游戏，所耗总词元相近，Qwen 则首轮失败需多次追加修正。吞吐量差距明显，Qwen 每秒约六十词元，GLM 约六词元。这支持大模型低量化优于小模型高量化的旧观点。",
-      "title_en": "GLM 5.2 at 1-bit quantization compared against Qwen 27B at 8-bit quantization",
-      "title_zh": "GLM 5.2 的 1 比特量化对比 Qwen 27B 的 8 比特量化"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uk7khq/audiocpp_vibevoice_15b_released_90min_podcast_in/": {
+      "en": "The author of audio.cpp, a native C++ and ggml runtime for local audio models, added VibeVoice 1.5 billion parameter support and shared benchmarks. On an RTX 5090 the runtime produced 93.6 minutes of audio in 22.95 minutes of wall time, running 4.08 times faster than real time and 2.86 times faster than the Python baseline with no quantization. The project targets long-form multi-speaker text to speech for podcasts, character chat, and narration.",
+      "zh": "audio.cpp作者宣布该原生C++与ggml本地音频运行时新增VibeVoice 15亿参数模型支持。RTX 5090上生成93.6分钟音频耗时22.95分钟，达到实时速度的4.08倍，未使用量化即比Python基线快2.86倍。项目聚焦长播客、多说话人对话和角色语音等长文本合成场景。",
+      "title_en": "audio.cpp adds VibeVoice 1.5 billion parameter support, running long-form podcast synthesis over four times faster than real time on an RTX 5090 with no quantization",
+      "title_zh": "audio.cpp新增VibeVoice 15亿参数模型支持，在RTX 5090上以四倍实时速度合成长播客，无需量化"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uicq8x/locally_running_mode_turns_an_image_into_a_cute/": {
-      "en": "An indie researcher released an 800 million parameter sequel to an earlier image-to-playable-character model that runs comfortably on consumer GPUs. Context now spans twelve latent frames, the flashing artifacts are gone, and a smaller 500 million parameter variant exceeds sixty frames per second on an RTX 5090. The architecture uses causal diffusion: each frame is denoised then added to the key-value cache, with a sliding window evicting older frames so the model stays inside its training context.",
-      "zh": "独立研究者发布了图像转可玩角色模型的 8 亿参数续作，可在消费级 GPU 上流畅运行。上下文扩展到十二个潜在帧，此前的闪烁问题已消失，更小的 5 亿参数版本在 RTX 5090 上超过每秒六十帧。架构采用因果扩散：每帧去噪后写入键值缓存，并用滑动窗口淘汰旧帧，使模型保持在训练上下文范围内。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uknx14/swerebench_leaderboard_update_glm52_qwen3627b/": {
+      "en": "The SWE-rebench software engineering benchmark added new models and a cleaner comparison interface. Claude Opus 4.8 xhigh leads at 56.5 percent, followed by GLM-5.2 at 51.1 percent and Gemini 3.5 Flash at 49.5 percent. Among locally hostable options, Qwen3.6-27B scores 36.5 percent, Qwen3.6-35B-A3B reaches 33.8 percent, and Gemma 4 31B trails at 16.5 percent. The maintainers ask which local coding models to add next.",
+      "zh": "SWE-rebench软件工程编程基准新增多款模型并翻新对比界面。Claude Opus 4.8 xhigh以56.5%领先，GLM-5.2达51.1%，Gemini 3.5 Flash为49.5%。本地可部署模型中Qwen3.6-27B得36.5%，Qwen3.6-35B-A3B为33.8%，Gemma 4 31B为16.5%。维护者征询社区下一步应加入哪些本地编程模型。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uii78d/update_first_manual_results_from_testing/": {
-      "en": "A follow-up experiment tests whether a larger model can transfer procedural discipline to a smaller one without any fine-tuning. The protocol spans two domains, a cinematic Three.js choreography scene and a low-poly turret, chosen because the renderer immediately exposes weak planning. The larger model studies the smaller model's poor output in the source domain, derives a procedural scaffold, then applies that scaffold to the unseen target prompt to see if hierarchy and composition improve.",
-      "zh": "这篇后续实验测试大模型能否在不微调的前提下把程序化能力传递给小模型。协议涵盖两个领域：电影感的 Three.js 编舞场景与低多边形炮塔，选这两类是因为渲染会立刻暴露规划不足。大模型分析小模型在源领域的薄弱输出后构建程序脚手架，再把脚手架应用到未见过的目标提示，观察层级与构图是否改善。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ukorvr/open_models_june_2026/": {
+      "en": "A monthly roundup of open model releases for June 2026. Notable finetunes include Nex-N2, Ornith-1.0, Agents-A1, Holo3.1, Tmax-27b, MusaCoder-27B, and VibeThinker-3B. NVIDIA published NVFP4 quantizations of NVIDIA-Nemotron-3-Ultra-550B-A55B, diffusiongemma-26B-A4B-it, Qwen3.6-27B, GLM-5.2, MiniMax-M3, and Qwen3.5-397B-A17B. AMD contributed MXFP4 versions of Kimi-K2.7-Code, GLM-5.2, Qwen3.5-397B-A17B, and MiniMax-M3. Intel released AutoRound builds. Also notable: Gemma 4 quantization-aware training checkpoints and NVIDIA's TwoTower diffusion base model.",
+      "zh": "2026年6月开源模型月度盘点。微调模型包括Nex-N2、Ornith-1.0、Agents-A1、Holo3.1、Tmax-27b、MusaCoder-27B和VibeThinker-3B。NVIDIA为NVIDIA-Nemotron-3-Ultra-550B-A55B、diffusiongemma-26B-A4B-it、Qwen3.6-27B、GLM-5.2、MiniMax-M3、Qwen3.5-397B-A17B发布NVFP4量化；AMD为Kimi-K2.7-Code等发布MXFP4；Intel发布AutoRound版本。此外还有Gemma 4量化感知训练权重及NVIDIA双塔扩散基座模型。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uisspl/nasa_testing_local_llm_inference_for_future_space/": {
-      "en": "Red Hat detailed a collaboration with NASA Johnson Space Center on the Crew Medical Officer Digital Assistant, which runs language models locally on spacecraft hardware with zero cloud dependency. The system uses llama.cpp via RamaLama, an open source command line wrapper that packages models like container images for reproducible edge deployment. Crews on lunar or Mars missions face light delay and communication blackouts that make Earth-based telehealth impractical, so onboard retrieval over spaceflight medical literature is essential.",
-      "zh": "Red Hat 介绍了与 NASA 约翰逊航天中心合作的 Crew Medical Officer Digital Assistant 项目，在航天器硬件本地运行语言模型，完全无云端依赖。系统通过开源命令行工具 RamaLama 调用 llama.cpp，将模型像容器镜像一样打包以便边缘可复现部署。月球或火星任务面临光延迟与通信中断，地面远程医疗不可行，因此机上对航天医学文献的检索增强生成至关重要。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ukn45x/i_mapped_which_local_llms_actually_fit_each_ram/": {
+      "en": "An open GitHub dataset maps which local LLMs realistically fit each RAM tier from 8 gigabytes up to 128 gigabytes. The rule of thumb is about 0.6 gigabytes per billion parameters at Q4 K M quantization, sized to roughly 70 percent of available memory so the operating system, context, and KV cache still have room. Sixty-two models are included, along with ready ollama commands and separate GPU, Mac, and iPhone breakdowns.",
+      "zh": "一份GitHub开源数据集列出了8GB到128GB各内存档位可实际运行的本地大模型。经验法则是Q4_K_M量化下每十亿参数约需0.6GB内存，并按可用内存70%估算容量，为系统、上下文和KV缓存预留空间。收录62款模型，附各档ollama启动命令，并区分GPU、Mac和iPhone不同硬件形态。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uidtb8/highquality_glm52_quant_on_4x_dgx_spark_guide/": {
-      "en": "A hobbyist got the NVFP4 quantization of GLM-5.2 serving on four NVIDIA DGX Spark units at 128 thousand context length. Mixture of Experts feed-forward weights are 4-bit while attention and the router stay in 16-bit brain float, shrinking the checkpoint from 1.5 terabytes to 410 gigabytes. Decode-context parallelism across four ranks sustains about fifteen output tokens per second on short prompts and roughly thirteen at long context, holding up far better than an M3 Ultra Mac as context grows.",
-      "zh": "一位爱好者把 GLM-5.2 的 NVFP4 量化部署到四台 NVIDIA DGX Spark 上，上下文达 12.8 万。Mixture of Experts 前馈层使用 4 比特，注意力与路由保持 16 比特脑浮点，将检查点从 1.5 太字节压到 410 吉字节。跨四秩的解码上下文并行在短提示下约每秒十五词元，长上下文约十三词元，长程表现明显优于 M3 Ultra Mac。",
-      "title_en": "High quality GLM 5.2 quantization on four DGX Spark units, with guide, results, and comparisons",
-      "title_zh": "在四台 DGX Spark 上跑高质量 GLM 5.2 量化，附指南、结果与对比"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ukx9p1/end_of_an_agony_real_production_service_that_uses/": {
+      "en": "After eight months, a team is shutting down their production LLM assistant that scheduled clinic appointments over messenger, and the author shares lessons. Open models are now competitive for personal one-on-one use, but a business-to-business-to-consumer service cannot guarantee the 100 percent correctness clients promise their users. Failures piled up: PydanticAI sync and async issues, provider outages, broken structured output, emojis derailing the agent's persona, hallucinated appointments, and agents cancelling records to fit new bookings.",
+      "zh": "作者团队运营了八个月的诊所预约LLM助手即将下线，他分享了惨痛教训。开源模型如今在一对一个人使用场景已具竞争力，但把服务卖给企业再服务终端用户时，无法保证客户承诺的100%正确率。具体问题包括：PydanticAI同步异步冲突、供应商宕机、结构化输出失效、表情符号让代理人格崩坏、幻觉出预约时间、甚至擅自取消已有预约来腾出档期。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uiuyyp/going_from_single_gpu_to_dual_gpu_is_nice_but_not/": {
-      "en": "A user upgrading from one to two RTX 3090 cards found the real benefit came not from higher quantization or longer context but from parallel agent workflows. They run Qwen 27B as an orchestrator that splits work into narrow subtasks handed to Qwen 35B A3B subagents, which finish then exit. Three agents now run in parallel where one ran before, raising throughput. Compaction is rarer, and a closed model is hired only for occasional whole-project reviews.",
-      "zh": "一位用户从单卡升到双 RTX 3090 后发现，真正的收益不是更高量化或更长上下文，而是并行智能体工作流。他们用 Qwen 27B 做调度器，把工作拆成窄子任务交给 Qwen 35B A3B 子智能体执行后退出。原本只能跑一个智能体，现在三个并行，整体吞吐显著提升。主智能体压缩更少，封闭模型只在偶尔全项目评审时启用。",
-      "title_en": "Upgrading from one GPU to two is nice but not in the way the author expected",
-      "title_zh": "从单 GPU 升级到双 GPU 确实不错，但收益方向与作者预想不同"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ukhu5g/readme_enmd_openpanguopenpangu20flash_at_main/": {
+      "en": "openPangu 2.0 Flash is a Mixture of Experts model trained on Huawei Ascend hardware, with 92 billion total parameters, 6 billion activated per token, and a 512 thousand token context window. Pretraining used 34 trillion tokens. Architecture combines Multi-head Latent Attention with a one to two mix of DeepSeek Sparse Attention and Sliding Window Attention layers, a four-stream residual topology, three multi-token-prediction heads for self-speculative decoding, and the Muon optimizer.",
+      "zh": "openPangu 2.0 Flash是在华为Ascend硬件上训练的Mixture of Experts模型，总参数920亿、激活参数60亿，支持51.2万上下文窗口，预训练数据量34万亿tokens。架构上结合MLA注意力，并按1比2比例混合DSA稀疏注意力与SWA滑动窗口，采用四路残差拓扑、三个多token预测头实现自投机解码，使用Muon优化器加速训练。",
+      "title_en": "openPangu 2.0 Flash release notes describe a 92 billion parameter Mixture of Experts model trained on Huawei Ascend with 512 thousand context, sparse attention, and multi-token prediction",
+      "title_zh": "openPangu 2.0 Flash发布说明：华为Ascend训练的920亿参数Mixture of Experts模型，51.2万上下文窗口，采用稀疏注意力与多token预测"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uiqiqc/cpuonly_glm_52_epyc_and_512gb_ram/": {
-      "en": "A tester ran the 4-bit unsloth quantization of GLM-5.2 entirely on an Epyc Rome 7452 system with 512 gigabytes of memory and no GPU. Given a complex Three.js arena game prompt covering player movement, enemy spawns, a heads-up display, and difficulty ramps, the model produced 15510 tokens of code over 2 hours and 29 minutes at medium reasoning. The author reports being seriously surprised by the unedited code's quality coming out of pure CPU inference.",
-      "zh": "测试者在 Epyc Rome 7452 平台搭配 512 吉字节内存、无 GPU 的环境下，仅用 CPU 跑 GLM-5.2 的 4 比特 unsloth 量化版。面对一份复杂的 Three.js 竞技场游戏提示，包含玩家移动、敌人生成、抬头显示与难度递增，模型以中等推理生成 15510 词元代码，耗时 2 小时 29 分钟。作者表示对纯 CPU 推理输出的未编辑代码质量非常惊讶。",
-      "title_en": "Running GLM 5.2 entirely on CPU with an Epyc system and 512 gigabytes of memory",
-      "title_zh": "在 Epyc 平台搭配 512 吉字节内存上仅用 CPU 运行 GLM 5.2"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uip09j/apparently_you_can_skip_entire_transformer_blocks/": {
-      "en": "Following recent papers, a developer added a runtime layer-skip flag to a llama.cpp fork that simply never instantiates the transformer blocks named by the user. This complements existing bake-time pruning options like prune-layers and mergekit passthrough, and stacks with quantization to fit larger models into limited hardware. Which blocks are skipped matters by orders of magnitude, so the implementation ships with a selector mechanism, and the writeup covers results plus failure cases."
-,
-      "zh": "沿用近期论文成果，一位开发者在 llama.cpp 分支中加入运行时跳过层的开关，按用户指定直接不实例化目标 Transformer 块。它与 prune-layers、mergekit passthrough 等编译期裁剪互补，可与量化叠加，把更大模型塞进有限硬件。跳过哪些块带来的差异可达数量级，因此实现内置了选择器机制，文章覆盖结果与失败案例。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uk5y5m/deepseekv4flash_mxfp4_compute_buffer_scales_3x/": {
+      "en": "A user testing Bartowski's DeepSeek V4 Flash MXFP4 GGUF in llama.cpp reports that switching the KV cache from 16-bit to 8-bit quantization saves the expected 200 megabytes on the cache itself but also slashes the compute buffer from around 13 gigabytes to under 4 gigabytes, a 3.26 times reduction. That resolved an out-of-memory error at 32 thousand context on a 32 gigabyte card. They ask whether others see the same pattern.",
+      "zh": "一位用户在llama.cpp中测试Bartowski发布的DeepSeek V4 Flash MXFP4 GGUF时发现，KV缓存从16位切换到8位量化后，缓存本身仅省约200兆字节，但计算缓冲区却从约13吉字节骤降到不到4吉字节，缩减约3.26倍。这解决了32吉字节显卡在32000上下文下的显存溢出问题。他询问其他人是否也遇到相同现象。",
+      "title_en": "DeepSeek V4 Flash MXFP4 users find that switching the KV cache quantization from 16-bit to 8-bit shrinks the llama.cpp compute buffer roughly three times, fixing out-of-memory errors at high context",
+      "title_zh": "DeepSeek V4 Flash MXFP4用户发现将KV缓存从16位切换到8位后，llama.cpp计算缓冲区缩小约三倍，解决了长上下文的显存溢出问题"
     }
   }
 }

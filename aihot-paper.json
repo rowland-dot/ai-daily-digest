@@ -4,6 +4,58 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmr3yrwnf00e1slw21f16oh2d",
+      "title": "关于Mythos和网络安全的讨论并非炒作",
+      "title_en": "The talk about Mythos and cybersecurity was not， in fact， hype. （As anyone using Fable to do autonom…",
+      "url": "https://x.com/emollick/status/2072778376494895139",
+      "permalink": "https://aihot.virxact.com/items/cmr3yrwnf00e1slw21f16oh2d",
+      "source": "X：Ethan Mollick (@emollick)",
+      "publishedAt": "2026-07-02T20:24:09.000Z",
+      "summary": "关于Mythos和网络安全的讨论并非炒作。\n（正如任何使用Fable进行自主工作的人可能已经认识到的那样。）",
+      "category": "paper",
+      "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmr3rd0l901bwsl7ld54ejrgb",
+      "title": "RL微调VLM的鲁棒性与思维链一致性研究",
+      "title_en": "On Robustness and Chain-of-Thought Consistency of RL-Finetuned VLMs",
+      "url": "https://machinelearning.apple.com/research/robustness-chain-thought-consistency",
+      "permalink": "https://aihot.virxact.com/items/cmr3rd0l901bwsl7ld54ejrgb",
+      "source": "Apple Machine Learning Research（RSS）",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "summary": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动--误导性标题或错误思维链（CoT）--会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
+      "category": "paper",
+      "score": 62,
+      "selected": true
+    },
+    {
+      "id": "cmr3rd0l901busl7l11krygj3",
+      "title": "VideoFlexTok：可变长度粗到细视频分词",
+      "title_en": "VideoFlexTok： Flexible-Length Coarse-to-Fine Video Tokenization",
+      "url": "https://machinelearning.apple.com/research/videoflextok",
+      "permalink": "https://aihot.virxact.com/items/cmr3rd0l901busl7l11krygj3",
+      "source": "Apple Machine Learning Research（RSS）",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "summary": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构--首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
+      "category": "paper",
+      "score": 56,
+      "selected": true
+    },
+    {
+      "id": "cmr3rd0l901btsl7lars7am9q",
+      "title": "多智能体团队阻碍专家发挥",
+      "title_en": "Multi-Agent Teams Hold Experts Back",
+      "url": "https://machinelearning.apple.com/research/multi-agent-teams-experts",
+      "permalink": "https://aihot.virxact.com/items/cmr3rd0l901btsl7lars7am9q",
+      "source": "Apple Machine Learning Research（RSS）",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "summary": "在自我组织的多智能体LLM系统中，团队无法有效利用专家成员的专业知识。在多个基准测试中，即使明确告知专家身份，团队表现仍落后于最佳成员（专家智能体）的独立能力，性能损失最高达41.1%。失败主因是未能有效利用专家意见，而非识别专家。对话分析显示，团队倾向于\"整合性妥协\"--平均化专家与非专家观点，随团队规模增大而加剧，且与表现负相关。这种寻求共识的行为同时提升了对抗恶意智能体的鲁棒性，揭示了协同对齐与专业利用之间的根本性权衡。",
+      "category": "paper",
+      "score": 72,
+      "selected": true
+    },
+    {
       "id": "cmr190seo00nsslnlxmfddenz",
       "title": "AI 用 prover-verifier LLM 循环攻克 9 个未解数学难题",
       "title_en": "AI just solved not one， but ***9*** unsolved math problems. Once again， instead of this being a glo…",
@@ -144,58 +196,6 @@
       "summary": "Anthropic 发布 Economic Index 报告，基于隐私保护遥测数据分析了 Claude 的使用节奏。工作日个人对话占比约 35%，周末升至近 50%；高薪职业在工作日外的使用占比更高。日内模式显示：新闻请求集中在早上 7 点，食谱在下午 6 点达到 2.3 倍高频，睡眠建议凌晨 3 点最多。税收相关请求在 4 月 15 日美国报税截止日前激增。调查还发现：使用 Claude 最自动化的用户预计 AI 明年将承担更多任务，但对薪资、工作安全及工作意义的预期最为乐观。",
       "category": "paper",
       "score": 55,
-      "selected": true
-    },
-    {
-      "id": "cmqtvbv4r076ssl0e588aopiw",
-      "title": "IBM 首度推出亚纳米级芯片技术",
-      "title_en": "IBM首度推出亚纳米级芯片技术",
-      "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-      "permalink": "https://aihot.virxact.com/items/cmqtvbv4r076ssl0e588aopiw",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-25T18:52:05.282Z",
-      "summary": "IBM 于 2026 年 6 月 25 日发布全球首款亚纳米级芯片技术，采用 0.7 nm（7 埃米）节点与全新三维纳米堆叠（nanostack）架构。指甲盖大小的芯片集成近 1000 亿个晶体管，密度约为 IBM 2021 年 2 nm 芯片的两倍。相比 2 nm 芯片，性能最高提升 50%，能效最高提升 70%。纳米堆叠架构还实现 SRAM 面积缩减 40%，有助于支撑先进 AI 工作负载的高带宽需求。该技术已在 VLSI 2026 会议上验证，IBM 预计 5 年内量产。",
-      "category": "paper",
-      "score": 78,
-      "selected": true
-    },
-    {
-      "id": "cmqtu9a7r06x3sl0exw2blt0o",
-      "title": "赫库兰尼姆古卷首次被完整虚拟解读",
-      "title_en": "赫库兰尼姆的一卷古卷首次被解读",
-      "url": "https://scrollprize.org/firstscroll",
-      "permalink": "https://aihot.virxact.com/items/cmqtu9a7r06x3sl0exw2blt0o",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-25T18:03:58.685Z",
-      "summary": "研究人员利用高分辨率X射线显微断层扫描和机器学习，在未物理展开的情况下完整虚拟展开并读取了赫库兰尼姆古卷PHerc.1667（Scroll4）。这是首卷被从头到尾连续读取的纸莎草卷，内容为斯多葛哲学论著，提及克里西普斯的侄子Aristocreon。第二卷PHerc.Paris4通过更高分辨率成像使墨水在三维数据中直接可见，独立确认了2023年大奖赛的解读。第三卷PHerc.139确定标题和作者为菲洛德穆《论诸神》第八卷。所有数据与代码已公开。",
-      "category": "paper",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmqwtvowe0035slp023899gx2",
-      "title": "冻结多token预测加速Pixel上的Gemini Nano模型",
-      "title_en": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
-      "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction",
-      "permalink": "https://aihot.virxact.com/items/cmqwtvowe0035slp023899gx2",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-25T16:00:00.000Z",
-      "summary": "Google Research提出一种新架构，在已冻结的Gemini Nano v3模型上改造Multi-Token Prediction（MTP），以加速Pixel 9和10系列上的设备端推理。该方法基于EAGLE框架和CALM，无需单独训练占用内存的草稿模型，通过\"晚期退出\"策略实现加速。AI通知摘要和校对功能因此生成文本速度显著提升、能耗降低，开发者无需为每个新任务微调独立模型。",
-      "category": "paper",
-      "score": 55,
-      "selected": true
-    },
-    {
-      "id": "cmqta6kw701sasl0es975w0zc",
-      "title": "OpenAI内部报告：智能体Codex如何改变工作",
-      "title_en": "How agents are transforming work",
-      "url": "https://openai.com/index/how-agents-are-transforming-work",
-      "permalink": "https://aihot.virxact.com/items/cmqta6kw701sasl0es975w0zc",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-25T02:00:00.000Z",
-      "summary": "OpenAI 在2025年8月至2026年6月间观察到，智能体产品 Codex 取代 ChatGPT 成为主要工作工具，各部门输出 token 中 Codex 占比从不足10%升至99.8%。80.6%个体用户曾发起预计等效人类工作时间超30分钟的请求，70.2%超1小时，25.6%超8小时；99百分位用户每日生成超60小时 agent turns。非开发者用户增长迅猛：个体用户增长137倍，组织用户增长189倍。Legal、Finance、Recruiting 部门在2026年4月前后跨过 Codex 使用过半拐点，平均每位律师或招聘人员超85%输出 token 来自 Codex。",
-      "category": "paper",
-      "score": 65,
       "selected": true
     }
   ]
