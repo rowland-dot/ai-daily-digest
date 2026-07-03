@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-07-02T21:45:54.051Z",
+  "fetched_at": "2026-07-03T21:40:58.231Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Josh W. Comeau",
+      "link": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
+      "updated": "2026-07-03T21:25:52+00:00",
+      "summary": "I just launched my third course, Whimsical Animations, and so far, it’s on track to sell roughly ⅓ as many copies as a typical course launch. It’s a similar story with my two existing courses. Sales are down significantly from last year. There are likely a lot of reasons for this, but I think the biggest is AI. There’s sort of a double whammy with AI: Many people are wondering whether developer jobs will even exist in a few months, so they’re reluctant to spend time/money learning new dev skills. Even if they do want to learn new dev skills, LLMs can provide personalized tutoring, so there’s less incentive to buy a paid course. [...] I’ve spoken to a few course creators now, and we’re all seeing the same trend. Revenue down 50%+. Fewer people engaging with our content. People switching to LLMs, which slurp up all of our work and regurgitate it, without consent or compensation."
+    },
+    {
+      "title": "Fable's judgement",
+      "link": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "updated": "2026-07-03T18:51:06+00:00",
+      "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work."
+    },
+    {
+      "title": "June 2026 newsletter",
+      "link": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
+      "updated": "2026-07-03T14:50:50+00:00",
+      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here ."
+    },
+    {
+      "title": "llm-coding-agent 0.1a0",
+      "link": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
+      "updated": "2026-07-02T19:33:12+00:00",
+      "summary": "Another Fable 5 experiment. Now that my LLM library has evolved into more of an agent framework it's time to see what a simple coding agent would look like built on it."
+    },
     {
       "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
       "link": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything",
       "updated": "2026-06-30T15:10:14+00:00",
       "summary": "The big new feature is shot-scraper video storyboard.yml , described in detail in Have your agent record video demos of its work with shot-scraper video ."
-    },
-    {
-      "title": "HTML table extractor",
-      "link": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
-      "updated": "2026-06-29T23:38:21+00:00",
-      "summary": "Yet another in my growing collection of paste-conversion tools. This one accepts pasted rich text from browsers (with embedded HTML tables) and converts every detected table into HTML, Markdown, CSV, TSV, or JSON."
-    },
-    {
-      "title": "Count the number of Safari tabs",
-      "link": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
-      "updated": "2026-06-29T18:36:18+00:00",
-      "summary": "Tiniest TIL, using AppleScript to count the number of open browser tabs in Safari:"
-    },
-    {
-      "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
-      "link": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-      "updated": "2026-06-29T16:17:59+00:00",
-      "summary": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding"
-    },
-    {
-      "title": "Quoting Jon Udell",
-      "link": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
-      "updated": "2026-06-28T21:57:41+00:00",
-      "summary": "Human Agent in the loop I dislike the phrase “human in the loop” because it cedes authority to the machines. Let’s flip the narrative. It’s our loop, we work the same way we always have, now we recruit agents to join the team. An agent-assisted process need not be a black box that takes in prompts and emits features. [...] Let’s do agentic software development like that. Not as a loop we’ve been excluded from, instead as one we invite agents into."
     }
   ]
 }

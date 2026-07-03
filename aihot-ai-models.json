@@ -1,8 +1,34 @@
 {
-  "count": 7,
+  "count": 9,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmr53vzsc07l3sll5x8mfscz3",
+      "title": "生数科技发布 Vidu S1，推动视频生成迈向\"实时交互\"新时代",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/RuukpnoOA2tI0ERCNrLgtQ",
+      "permalink": "https://aihot.virxact.com/items/cmr53vzsc07l3sll5x8mfscz3",
+      "source": "公众号：生数科技（Vidu·视频）",
+      "publishedAt": "2026-07-03T11:17:47.000Z",
+      "summary": "7月3日，生数科技在2026全球数字经济大会上发布Vidu S1实时交互模型，支持实时视频通话和语音控制视频走向，实现无限时长连续互动。模型采用自回归扩散路线，基于已生成画面和语音指令持续预测后续内容；无需传统建模，一张图片即可创建角色并自定义音色。Vidu S1在540P分辨率下实现25FPS（最高42FPS）实时生成，通过TurboDiffusion等技术降低计算成本，已开启内测。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmr52xv9507bssll51ft3loac",
+      "title": "Leanstral 1.5：人人可用的证明丰富性",
+      "title_en": "Leanstral 1.5： Proof Abundance for All July 2， 2026 Leanstral Team at Mistral AI",
+      "url": "https://mistral.ai/news/leanstral-1-5",
+      "permalink": "https://aihot.virxact.com/items/cmr52xv9507bssll51ft3loac",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-07-01T16:00:00.000Z",
+      "summary": "Mistral AI 今日发布 Leanstral 1.5，一款 Apache-2.0 许可的开源形式化验证模型，119B 总参数仅 6B 活跃。在 miniF2F 上达 100% 饱和，PutnamBench 解决 587/672 题，FATE-H（87%）和 FATE-X（34%）创 SOTA。训练经历 mid-training、SFT 和基于 CISPO 的强化学习。具备智能体式证明能力，在 57 个开源仓库中发现 5 个未知 bug。模型已通过 HuggingFace 和免费 API 开放使用。",
+      "category": "ai-models",
+      "score": 66,
+      "selected": true
+    },
     {
       "id": "cmr1ti4v001xlsl8zovi1yoqa",
       "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",
@@ -43,6 +69,19 @@
       "selected": true
     },
     {
+      "id": "cmr5bqxtn00z1slc77gvm7ybl",
+      "title": "Google Research 推出 TabFM：用于表格数据的零样本基础模型",
+      "title_en": "Introducing TabFM： A zero-shot foundation model for tabular data",
+      "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data",
+      "permalink": "https://aihot.virxact.com/items/cmr5bqxtn00z1slc77gvm7ybl",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-06-29T16:00:00.000Z",
+      "summary": "Google Research 发布 TabFM，一种基于上下文学习（ICL）的零样本基础模型，专为表格数据的分类与回归任务设计。TabFM 将整个数据集（包含训练样本与待预测行）作为统一提示输入，在推理时直接从上下文中学习行列关系，无需模型训练、超参数调优或特征工程。与需大量人工调优的传统方法（如 XGBoost）不同，TabFM 通过单次前向传播即可在新表格上生成高质量预测。该模型已在 Hugging Face 和 GitHub 上开源。",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true
+    },
+    {
       "id": "cmr0yev3s005cslw8omm20ml6",
       "title": "Claude Sonnet 5 发布",
       "title_en": "Introducing Claude Sonnet 5",
@@ -79,19 +118,6 @@
       "summary": "新浪发布仅3B参数的VibeThinker-3B，在AIME26等数学编程基准上持平DeepSeek V3.2等大200-333倍的模型，LiveCodeBench超越所有20B以下模型，LeetCode竞赛解决123/128题超过GPT-5.2、Kimi K2.5等。但知识密集型GPQA-Diamond大幅落后。模型基于阿里Qwen2.5-Coder-3B，经SFT、强化学习、自蒸馏等多阶段后训练。研究提出\"参数压缩-覆盖假说\"：逻辑推理依赖少数可压缩模式，而广泛世界知识仍需大参数。模型已开源。",
       "category": "ai-models",
       "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqv6ikhu0ah8sl80m2p7v2m4",
-      "title": "OpenAI 预览新一代模型 GPT-5.6 Sol",
-      "title_en": "Previewing GPT-5.6 Sol： a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-      "permalink": "https://aihot.virxact.com/items/cmqv6ikhu0ah8sl80m2p7v2m4",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-06-26T10:00:00.000Z",
-      "summary": "OpenAI 发布了新一代模型 GPT-5.6 Sol 的预览信息。该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。",
-      "category": "ai-models",
-      "score": 78,
       "selected": true
     }
   ]

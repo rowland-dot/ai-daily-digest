@@ -1,8 +1,21 @@
 {
-  "count": 15,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmr4ewvnu016msll54kwma7sx",
+      "title": "阿里达摩院发布超导材料发现AI智能体Elements Claw",
+      "title_en": "阿里达摩院：AI 智能体发现 4 种全新超导材料，已获实验验证",
+      "url": "https://www.ithome.com/0/972/089.htm",
+      "permalink": "https://aihot.virxact.com/items/cmr4ewvnu016msll54kwma7sx",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-03T03:27:15.000Z",
+      "summary": "7月3日，阿里达摩院联合中国人民大学、中国科学院大学发布首个超导材料发现AI智能体Elements Claw。该智能体采用\"专通融合\"架构，基于1.25亿分子/晶体结构预训练的1B参数原子基础模型Elements，判断超导性AUC达0.996，预测临界温度平均误差小于1K。AI仅用28个GPU小时筛选240万晶体结构，预测出6.8万个候选材料，其中4种（Hf21Re25、Zr4VRe7、HfZrRe4、Zr3ScRe8）已合成并验证超导性，临界温度最高6.5K。全部240万稳定晶体数据库已开放。",
+      "category": "paper",
+      "score": 80,
+      "selected": true
+    },
     {
       "id": "cmr3yrwnf00e1slw21f16oh2d",
       "title": "关于Mythos和网络安全的讨论并非炒作",
@@ -14,6 +27,32 @@
       "summary": "关于Mythos和网络安全的讨论并非炒作。\n（正如任何使用Fable进行自主工作的人可能已经认识到的那样。）",
       "category": "paper",
       "score": 77,
+      "selected": true
+    },
+    {
+      "id": "cmr4dqzbq00uksll5xkxyo3nw",
+      "title": "表示分布匹配（RDM）用于一步视觉生成",
+      "title_en": "Representation Distribution Matching for One-Step Visual Generation",
+      "url": "https://arxiv.org/abs/2607.02375",
+      "permalink": "https://aihot.virxact.com/items/cmr4dqzbq00uksll5xkxyo3nw",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "summary": "表示分布匹配（RDM）通过匹配冻结预训练编码器下的生成与参考特征分布来训练一步图像生成器。三个发现：经典MMD正确估计后成为可扩展目标；生成批次大小最优超过2048；单一表示可被欺骗，需匹配平衡编码器组合并采用独立于训练损失的SW_r14评估。改进的iRDM在ImageNet上以SW_r14 1.30达一步生成SOTA，PickScore在71.2%样本上偏好iRDM。该方法将四步FLUX.2后训练为一步生成器，在GenEval（0.826对0.794）和PickScore（22.76对22.58）上超越原版，仅需90 H200 GPU小时。",
+      "category": "paper",
+      "score": 74,
+      "selected": true
+    },
+    {
+      "id": "cmr4blm3e00amsll5l19jk6ce",
+      "title": "Program-as-Weights：一种面向模糊函数的编程范式",
+      "title_en": "Program-as-Weights： A Programming Paradigm for Fuzzy Functions",
+      "url": "https://arxiv.org/abs/2607.02512",
+      "permalink": "https://aihot.virxact.com/items/cmr4blm3e00amsll5l19jk6ce",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "summary": "Program-as-Weights （PAW） 提出模糊函数编程范式，将自然语言描述的函数编译为紧凑、可本地执行的神经制品。PAW 使用在 10M 示例数据集 FuzzyBench 上训练的 4B 编译器，为冻结的轻量级解释器输出参数高效适配器。0.6B 的 Qwen3 解释器执行 PAW 程序性能匹敌直接提示 Qwen3-32B，推理内存仅约五十分之一，在 MacBook M3 上达 30 tokens/s。该方法将基础模型从每次输入的求解器重新定义为工具构建器，一次函数定义后生成的制品可离线廉价复用。",
+      "category": "paper",
+      "score": 74,
       "selected": true
     },
     {
@@ -183,19 +222,6 @@
       "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。",
       "category": "paper",
       "score": 75,
-      "selected": true
-    },
-    {
-      "id": "cmqv2tn1509khsl80vpek6zqe",
-      "title": "Anthropic Economic Index 报告：使用节奏",
-      "title_en": "Anthropic Economic Index report： Cadences",
-      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
-      "permalink": "https://aihot.virxact.com/items/cmqv2tn1509khsl80vpek6zqe",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-06-26T15:18:56.294Z",
-      "summary": "Anthropic 发布 Economic Index 报告，基于隐私保护遥测数据分析了 Claude 的使用节奏。工作日个人对话占比约 35%，周末升至近 50%；高薪职业在工作日外的使用占比更高。日内模式显示：新闻请求集中在早上 7 点，食谱在下午 6 点达到 2.3 倍高频，睡眠建议凌晨 3 点最多。税收相关请求在 4 月 15 日美国报税截止日前激增。调查还发现：使用 Claude 最自动化的用户预计 AI 明年将承担更多任务，但对薪资、工作安全及工作意义的预期最为乐观。",
-      "category": "paper",
-      "score": 55,
       "selected": true
     }
   ]
