@@ -4,6 +4,32 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmr5zuihg0739slc7nv4mlc5r",
+      "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
+      "title_en": "NVIDIA AI Introduces ASPIRE： A Self-Improving Robotics Framework Reaching 31% Zero-Shot on LIBERO-Pro Long Tasks",
+      "url": "https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks",
+      "permalink": "https://aihot.virxact.com/items/cmr5zuihg0739slc7nv4mlc5r",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-04T06:32:47.000Z",
+      "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
+      "category": "paper",
+      "score": 70,
+      "selected": true
+    },
+    {
+      "id": "cmr5wizx2067eslc7xynzcf9y",
+      "title": "我国研制全球首款基于可控存内计算的忆阻器神经动力学芯片",
+      "title_en": "我国研制全球首款神经动力学芯片，首次将单步运算时延压缩至 2.12 毫秒",
+      "url": "https://www.ithome.com/0/972/526.htm",
+      "permalink": "https://aihot.virxact.com/items/cmr5wizx2067eslc7xynzcf9y",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-04T05:01:02.000Z",
+      "summary": "北京大学集成电路学院联合中科院上海微系统所，发布全球首款基于可控存内计算的忆阻器神经动力学芯片，首次将单步运算时延压缩至2.12毫秒。芯片采用40纳米工艺，存内计算阵列与外围电路总面积0.28平方毫米，运行频率50 MHz，单步积分仅需9级流水。在脑皮层重建等任务中较当前GPU提速50至478倍，突破神经动力学实时计算瓶颈。相关成果7月3日发表于《科学》。",
+      "category": "paper",
+      "score": 74,
+      "selected": true
+    },
+    {
       "id": "cmr4ewvnu016msll54kwma7sx",
       "title": "阿里达摩院发布超导材料发现AI智能体Elements Claw",
       "title_en": "阿里达摩院：AI 智能体发现 4 种全新超导材料，已获实验验证",
@@ -196,32 +222,6 @@
       "summary": "OSWorld2.0 发布，包含108个长时域计算机使用工作流，覆盖日常与专业任务。每项任务用户中位数约1.6小时完成，Claude Opus 4.7（最大思考）平均需318次工具调用（OSWorld 1.0约30次）。基准聚焦流交互、动态环境、跨源推理、隐式状态推断、视觉空间精度等真实挑战。任务基于真实输入工件和状态化用户档案，附安全报告。500步二元完成指标下，Claude Opus 4.8（最大思考+批量调用）得分最高仅20.6%（部分54.8%）；GPT-5.5更省token但约13%。结果表明当前智能体远未达专业级：瓶颈不在基本GUI控制或编码，而是丢失约束、错过中途信息、猜测而非询问、跳过验证，尤其依赖隐藏状态时最差。",
       "category": "paper",
       "score": 82,
-      "selected": true
-    },
-    {
-      "id": "cmqwm45f901n6sly0gpl6b6l5",
-      "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60-85%",
-      "title_en": "DeepSeek Releases DSpark， a Speculative Decoding Framework That Accelerates DeepSeek-V4 Per-User Generation 60-85% Over MTP-1",
-      "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1",
-      "permalink": "https://aihot.virxact.com/items/cmqwm45f901n6sly0gpl6b6l5",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-06-27T16:59:58.000Z",
-      "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60-85% 和 57-78%。离线测试中，接受长度比 Eagle3 高 26-31%，比 DFlash 高 16-18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
-      "category": "paper",
-      "score": 79,
-      "selected": true
-    },
-    {
-      "id": "cmqvkko1q0dvqsl80vjsqu4rm",
-      "title": "Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数",
-      "title_en": "Cursor Study Finds Reward Hacking Inflates Coding-Agent Benchmark Scores on SWE-bench Pro",
-      "url": "https://www.marktechpost.com/2026/06/26/cursor-study-finds-reward-hacking-inflates-coding-agent-benchmark-scores-on-swe-bench-pro",
-      "permalink": "https://aihot.virxact.com/items/cmqvkko1q0dvqsl80vjsqu4rm",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-06-26T23:31:29.000Z",
-      "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。",
-      "category": "paper",
-      "score": 75,
       "selected": true
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "count": 37,
+  "count": 35,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -456,32 +456,6 @@
       "summary": "Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。",
       "category": "ai-products",
       "score": 72,
-      "selected": true
-    },
-    {
-      "id": "cmqwe6jrq000isl6uw2i3e6zy",
-      "title": "Runway API 推出广告本地化 Recipe",
-      "title_en": "Localize ads is now available as a Recipe via the Runway API. You can now translate static ads and …",
-      "url": "https://x.com/runwayml/status/2070855164584726791",
-      "permalink": "https://aihot.virxact.com/items/cmqwe6jrq000isl6uw2i3e6zy",
-      "source": "X：Runway (@runwayml)",
-      "publishedAt": "2026-06-27T13:02:00.000Z",
-      "summary": "广告本地化现在可通过 Runway API 以 Recipe 形式使用。\n\n现在您可以通过单次 API 调用翻译静态广告和图形资产。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true
-    },
-    {
-      "id": "cmqvtzehe0g65sl800jrc1x17",
-      "title": "阿里千问输入法上线 macOS 版：最快 300 字/分，AI 自动润色",
-      "title_en": "阿里千问输入法上线 macOS 版：最快 300 字 / 分，AI 自动润色",
-      "url": "https://www.ithome.com/0/969/334.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqvtzehe0g65sl800jrc1x17",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-27T03:39:06.000Z",
-      "summary": "阿里千问输入法 macOS 版今日上线官网，支持最快 300 字/分的 AI 语音输入，可自动润色、将口语转为工整文字，并支持 9 种方言，纯净无广告。官方预告 iOS、Android、Windows 版将于近日发布。此前千问团队已于今年 5 月推出千问语音输入法（千问 App 内的组件），具备去语气词、纠错、格式化整理及基于上下文的智能回复等能力，而本次上线的输入法则定位为独立 App，填补千问在移动端 AI 输入法赛道的空白。",
-      "category": "ai-products",
-      "score": 73,
       "selected": true
     }
   ]

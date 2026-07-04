@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-07-03T21:40:58.231Z",
+  "fetched_at": "2026-07-04T21:29:08.943Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Open Source AI Gap Map",
+      "link": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+      "updated": "2026-07-03T22:04:31+00:00",
+      "summary": "Open Source AI Gap Map"
+    },
     {
       "title": "Quoting Josh W. Comeau",
       "link": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
       "updated": "2026-06-30T16:54:26+00:00",
       "summary": "shot-scraper video is a new command introduced in today's shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to record a video of that routine. I've written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling them to do that."
-    },
-    {
-      "title": "shot-scraper 1.10",
-      "link": "https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything",
-      "updated": "2026-06-30T15:10:14+00:00",
-      "summary": "The big new feature is shot-scraper video storyboard.yml , described in detail in Have your agent record video demos of its work with shot-scraper video ."
     }
   ]
 }
