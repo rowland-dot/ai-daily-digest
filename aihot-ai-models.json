@@ -1,8 +1,25 @@
 {
-  "count": 9,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmr7vpphy007oslgnz4aotpx4",
+      "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
+      "title_en": "🐱 LongCat-2.0 is now fully open-source - MIT licensed， no restrictions. Since our launch a few day…",
+      "url": "https://x.com/Meituan_LongCat/status/2073768940078317713",
+      "permalink": "https://aihot.virxact.com/items/cmr7vpphy007oslgnz4aotpx4",
+      "source": "X：美团 LongCat (@Meituan_LongCat)",
+      "publishedAt": "2026-07-05T14:00:18.000Z",
+      "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B-56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual 77.3；FORTE 73.2；RWSearch 78.8；BrowseComp 79.9。原生集成 Claude Code、OpenClaw、Hermes Agent 等工具，支持 GPU 与 NPU 部署，已在大规模国内集群验证。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr7vpphy007oslgnz4aotpx4"
+      }
+    },
     {
       "id": "cmr53vzsc07l3sll5x8mfscz3",
       "title": "生数科技发布 Vidu S1，推动视频生成迈向\"实时交互\"新时代",
@@ -14,7 +31,11 @@
       "summary": "7月3日，生数科技在2026全球数字经济大会上发布Vidu S1实时交互模型，支持实时视频通话和语音控制视频走向，实现无限时长连续互动。模型采用自回归扩散路线，基于已生成画面和语音指令持续预测后续内容；无需传统建模，一张图片即可创建角色并自定义音色。Vidu S1在540P分辨率下实现25FPS（最高42FPS）实时生成，通过TurboDiffusion等技术降低计算成本，已开启内测。",
       "category": "ai-models",
       "score": 70,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr53vzsc07l3sll5x8mfscz3"
+      }
     },
     {
       "id": "cmr52xv9507bssll51ft3loac",
@@ -27,7 +48,11 @@
       "summary": "Mistral AI 今日发布 Leanstral 1.5，一款 Apache-2.0 许可的开源形式化验证模型，119B 总参数仅 6B 活跃。在 miniF2F 上达 100% 饱和，PutnamBench 解决 587/672 题，FATE-H（87%）和 FATE-X（34%）创 SOTA。训练经历 mid-training、SFT 和基于 CISPO 的强化学习。具备智能体式证明能力，在 57 个开源仓库中发现 5 个未知 bug。模型已通过 HuggingFace 和免费 API 开放使用。",
       "category": "ai-models",
       "score": 66,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr52xv9507bssll51ft3loac"
+      }
     },
     {
       "id": "cmr1ti4v001xlsl8zovi1yoqa",
@@ -40,7 +65,11 @@
       "summary": "NVIDIA 发布 Nemotron-Labs-TwoTower，基于冻结的自回归骨干 Nemotron-3-Nano-30B-A3B 的扩散语言模型。采用双塔架构：上下文塔冻结，降噪器塔训练，通过层对齐交叉注意力和状态播种协作。在 2×H100 上 BF16 评估，保留 98.7% 的 AR 基线质量，生成吞吐量提升 2.42 倍（γ=0.8，块大小 S=16）。降噪器在约 2.1T token 上训练，骨干使用 25T token 预训练。总参数约 60B，每 token 活跃参数约 3B/塔。支持扩散、模拟 AR 和 AR 三种解码模式。",
       "category": "ai-models",
       "score": 73,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr1ti4v001xlsl8zovi1yoqa"
+      }
     },
     {
       "id": "cmr1js18u03imslnld2yrjboo",
@@ -53,7 +82,11 @@
       "summary": "美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。",
       "category": "ai-models",
       "score": 82,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr1js18u03imslnld2yrjboo"
+      }
     },
     {
       "id": "cmr0ucc880030slatw1gfkq2h",
@@ -66,7 +99,11 @@
       "summary": "Google DeepMind 推出 Nano Banana 2 Lite（gemini-3.1-flash-lite-image），为 Nano Banana 系列速度最快、成本最低的图像模型，文本到图像输出仅需 4 秒，每 1K 分辨率图像成本 $0.034，已上线 Google AI Studio、Gemini API 及消费者产品（AI Mode in Search、Gemini app 等）。同时推出 Gemini Omni Flash（gemini-omni-flash-preview），支持高画质视频生成与对话式编辑，视频输出定价 $0.10/秒，面向开发者开放 API。",
       "category": "ai-models",
       "score": 70,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr0ucc880030slatw1gfkq2h"
+      }
     },
     {
       "id": "cmr5bqxtn00z1slc77gvm7ybl",
@@ -79,7 +116,11 @@
       "summary": "Google Research 发布 TabFM，一种基于上下文学习（ICL）的零样本基础模型，专为表格数据的分类与回归任务设计。TabFM 将整个数据集（包含训练样本与待预测行）作为统一提示输入，在推理时直接从上下文中学习行列关系，无需模型训练、超参数调优或特征工程。与需大量人工调优的传统方法（如 XGBoost）不同，TabFM 通过单次前向传播即可在新表格上生成高质量预测。该模型已在 Hugging Face 和 GitHub 上开源。",
       "category": "ai-models",
       "score": 76,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr5bqxtn00z1slc77gvm7ybl"
+      }
     },
     {
       "id": "cmr0yev3s005cslw8omm20ml6",
@@ -92,33 +133,11 @@
       "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。",
       "category": "ai-models",
       "score": 81,
-      "selected": true
-    },
-    {
-      "id": "cmqxo43c90009slwfmy4wm3z3",
-      "title": "Grok 4.5 私测于 SpaceX 和 Tesla，性能接近 Opus",
-      "title_en": "Grok 4.5， based on our 1.5T V9 foundation model， with Cursor data added in supplemental training， is…",
-      "url": "https://x.com/elonmusk/status/2071184354756477041",
-      "permalink": "https://aihot.virxact.com/items/cmqxo43c90009slwfmy4wm3z3",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-06-28T10:50:05.000Z",
-      "summary": "Grok 4.5，基于我们的1.5T V9基础模型，并在补充训练中加入Cursor数据，现已在SpaceX和Tesla进入私测。初步评估显示其性能接近，或许超越Opus。\n\n强化学习仍在持续显著改进模型，Grok Build工具链也在日益完善。\n\n所有参与者的出色工作！\n\n今年，@SpaceX 将每月发布完全从头训练的新模型。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true
-    },
-    {
-      "id": "cmqxiel9h004ysl50umg2c011",
-      "title": "新浪开源VibeThinker-3B：推理可压缩，事实知识不能",
-      "title_en": "Sina's open model VibeThinker-3B aims to show reasoning compresses well but factual knowledge doesn't",
-      "url": "https://the-decoder.com/sinas-open-model-vibethinker-3b-aims-to-show-reasoning-compresses-well-but-factual-knowledge-doesnt",
-      "permalink": "https://aihot.virxact.com/items/cmqxiel9h004ysl50umg2c011",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-28T07:44:41.000Z",
-      "summary": "新浪发布仅3B参数的VibeThinker-3B，在AIME26等数学编程基准上持平DeepSeek V3.2等大200-333倍的模型，LiveCodeBench超越所有20B以下模型，LeetCode竞赛解决123/128题超过GPT-5.2、Kimi K2.5等。但知识密集型GPQA-Diamond大幅落后。模型基于阿里Qwen2.5-Coder-3B，经SFT、强化学习、自蒸馏等多阶段后训练。研究提出\"参数压缩-覆盖假说\"：逻辑推理依赖少数可压缩模式，而广泛世界知识仍需大参数。模型已开源。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6"
+      }
     }
   ]
 }

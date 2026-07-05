@@ -1,61 +1,6 @@
 {
-  "fetched_at": "2026-07-04T21:28:56.490Z",
+  "fetched_at": "2026-07-05T21:34:46.593Z",
   "repos": [
-    {
-      "owner": "openai",
-      "name": "codex-plugin-cc",
-      "url": "https://github.com/openai/codex-plugin-cc",
-      "description": "Use Codex from Claude Code to review code or delegate tasks.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 24248,
-      "forks": 1476,
-      "starsToday": 716
-    },
-    {
-      "owner": "JuliusBrussee",
-      "name": "caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 83845,
-      "forks": 4673,
-      "starsToday": 1089
-    },
-    {
-      "owner": "alibaba",
-      "name": "page-agent",
-      "url": "https://github.com/alibaba/page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 23032,
-      "forks": 2003,
-      "starsToday": 726
-    },
-    {
-      "owner": "usestrix",
-      "name": "strix",
-      "url": "https://github.com/usestrix/strix",
-      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 35922,
-      "forks": 3647,
-      "starsToday": 1910
-    },
-    {
-      "owner": "ChromeDevTools",
-      "name": "chrome-devtools-mcp",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 45739,
-      "forks": 2978,
-      "starsToday": 303
-    },
     {
       "owner": "Zackriya-Solutions",
       "name": "meetily",
@@ -63,9 +8,20 @@
       "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai ) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 15097,
-      "forks": 1654,
-      "starsToday": 865
+      "stars": 16746,
+      "forks": 1787,
+      "starsToday": 1409
+    },
+    {
+      "owner": "openai",
+      "name": "codex-plugin-cc",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "description": "Use Codex from Claude Code to review code or delegate tasks.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 25377,
+      "forks": 1534,
+      "starsToday": 1519
     },
     {
       "owner": "asgeirtj",
@@ -74,108 +30,20 @@
       "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 48818,
-      "forks": 7959,
-      "starsToday": 432
+      "stars": 49822,
+      "forks": 8157,
+      "starsToday": 981
     },
     {
-      "owner": "harvard-edge",
-      "name": "cs249r_book",
-      "url": "https://github.com/harvard-edge/cs249r_book",
-      "description": "Machine Learning Systems",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 26521,
-      "forks": 3164,
-      "starsToday": 446
-    },
-    {
-      "owner": "rommapp",
-      "name": "romm",
-      "url": "https://github.com/rommapp/romm",
-      "description": "A beautiful, powerful, self-hosted rom manager and player.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 10156,
-      "forks": 492,
-      "starsToday": 400
-    },
-    {
-      "owner": "ogulcancelik",
-      "name": "herdr",
-      "url": "https://github.com/ogulcancelik/herdr",
-      "description": "agent multiplexer that lives in your terminal.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 11362,
-      "forks": 668,
-      "starsToday": 706
-    },
-    {
-      "owner": "dotnet",
-      "name": "skills",
-      "url": "https://github.com/dotnet/skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 3786,
-      "forks": 288,
-      "starsToday": 57
-    },
-    {
-      "owner": "agentskills",
-      "name": "agentskills",
-      "url": "https://github.com/agentskills/agentskills",
-      "description": "Specification and documentation for Agent Skills",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 22290,
-      "forks": 1408,
-      "starsToday": 351
-    },
-    {
-      "owner": "immich-app",
-      "name": "immich",
-      "url": "https://github.com/immich-app/immich",
-      "description": "High performance self-hosted photo and video management solution.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 105576,
-      "forks": 6027,
-      "starsToday": 198
-    },
-    {
-      "owner": "chthollyphile",
-      "name": "folia-major",
-      "url": "https://github.com/chthollyphile/folia-major",
-      "description": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方网易云播放器",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 975,
-      "forks": 62,
-      "starsToday": 319
-    },
-    {
-      "owner": "mattpocock",
-      "name": "skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 156483,
-      "forks": 13467,
-      "starsToday": 1013
-    },
-    {
-      "owner": "CoplayDev",
-      "name": "unity-mcp",
-      "url": "https://github.com/CoplayDev/unity-mcp",
-      "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 11552,
-      "forks": 1259,
-      "starsToday": 68
+      "owner": "Leonxlnx",
+      "name": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 57352,
+      "forks": 3924,
+      "starsToday": 850
     },
     {
       "owner": "alirezarezvani",
@@ -184,20 +52,196 @@
       "description": "337 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 20101,
-      "forks": 2753,
-      "starsToday": 197
+      "stars": 20488,
+      "forks": 2792,
+      "starsToday": 394
     },
     {
-      "owner": "crynta",
-      "name": "terax-ai",
-      "url": "https://github.com/crynta/terax-ai",
-      "description": "Lightweight (7MB) Terminal-first AI-native dev workspace",
+      "owner": "rommapp",
+      "name": "romm",
+      "url": "https://github.com/rommapp/romm",
+      "description": "A beautiful, powerful, self-hosted rom manager and player.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 10493,
+      "forks": 502,
+      "starsToday": 411
+    },
+    {
+      "owner": "ogulcancelik",
+      "name": "herdr",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "description": "agent multiplexer that lives in your terminal.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 11992,
+      "forks": 697,
+      "starsToday": 650
+    },
+    {
+      "owner": "alibaba",
+      "name": "page-agent",
+      "url": "https://github.com/alibaba/page-agent",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 8024,
-      "forks": 858,
-      "starsToday": 44
+      "stars": 23781,
+      "forks": 2053,
+      "starsToday": 801
+    },
+    {
+      "owner": "harvard-edge",
+      "name": "cs249r_book",
+      "url": "https://github.com/harvard-edge/cs249r_book",
+      "description": "Machine Learning Systems",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 26806,
+      "forks": 3188,
+      "starsToday": 333
+    },
+    {
+      "owner": "usestrix",
+      "name": "strix",
+      "url": "https://github.com/usestrix/strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 36996,
+      "forks": 3758,
+      "starsToday": 1121
+    },
+    {
+      "owner": "hesreallyhim",
+      "name": "awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 48304,
+      "forks": 4232,
+      "starsToday": 188
+    },
+    {
+      "owner": "coreyhaines31",
+      "name": "marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 36374,
+      "forks": 5891,
+      "starsToday": 209
+    },
+    {
+      "owner": "JuliusBrussee",
+      "name": "caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 84779,
+      "forks": 4719,
+      "starsToday": 1043
+    },
+    {
+      "owner": "CoplayDev",
+      "name": "unity-mcp",
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 11895,
+      "forks": 1275,
+      "starsToday": 415
+    },
+    {
+      "owner": "facebook",
+      "name": "astryx",
+      "url": "https://github.com/facebook/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 5833,
+      "forks": 371,
+      "starsToday": 540
+    },
+    {
+      "owner": "immich-app",
+      "name": "immich",
+      "url": "https://github.com/immich-app/immich",
+      "description": "High performance self-hosted photo and video management solution.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 106045,
+      "forks": 6053,
+      "starsToday": 475
+    },
+    {
+      "owner": "ruvnet",
+      "name": "RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 76673,
+      "forks": 10281,
+      "starsToday": 198
+    },
+    {
+      "owner": "gastownhall",
+      "name": "gastown",
+      "url": "https://github.com/gastownhall/gastown",
+      "description": "Gas Town - multi-agent workspace manager",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 16342,
+      "forks": 1520,
+      "starsToday": 48
+    },
+    {
+      "owner": "dotnet",
+      "name": "skills",
+      "url": "https://github.com/dotnet/skills",
+      "description": "Repository for skills to assist AI coding agents with .NET and C#",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 4013,
+      "forks": 301,
+      "starsToday": 247
+    },
+    {
+      "owner": "OthmanAdi",
+      "name": "planning-with-files",
+      "url": "https://github.com/OthmanAdi/planning-with-files",
+      "description": "Persistent file-based planning for AI coding agents and long-running agentic tasks. Crash-proof markdown plans that survive context loss and /clear, plus a deterministic completion gate and multi-agent shared state on disk. Manus-style. Works with Claude Code, Codex CLI, Cursor, Kiro, OpenCode and 60+ agents via the SKILL.md standard.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 24664,
+      "forks": 2106,
+      "starsToday": 61
+    },
+    {
+      "owner": "steipete",
+      "name": "CodexBar",
+      "url": "https://github.com/steipete/CodexBar",
+      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 16119,
+      "forks": 1347,
+      "starsToday": 201
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 136260,
+      "forks": 21906,
+      "starsToday": 182
     }
   ]
 }
