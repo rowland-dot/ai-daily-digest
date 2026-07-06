@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-07-05T21:34:58.471Z",
+  "fetched_at": "2026-07-06T21:57:01.145Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "sqlite-utils 4.0rc3",
+      "link": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
+      "updated": "2026-07-06T05:40:08+00:00",
+      "summary": "I hoped to release sqlite-utils 4.0 stable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 and GPT-5.5 the changelog since rc2 kept getting bigger ."
+    },
     {
       "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
       "link": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
       "updated": "2026-07-02T17:07:14+00:00",
       "summary": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me:"
-    },
-    {
-      "title": "Quoting Anthropic",
-      "link": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
-      "updated": "2026-06-30T23:58:15+00:00",
-      "summary": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon."
     }
   ]
 }
