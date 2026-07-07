@@ -1,8 +1,161 @@
 {
-  "count": 27,
+  "count": 28,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrb0u6pv02qtihogovduu795",
+      "title": "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型",
+      "title_en": "Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to cut costs",
+      "url": "https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs",
+      "permalink": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-07T18:35:58.000Z",
+      "summary": "微软正用自研MAI模型替换Copilot产品中的OpenAI和Anthropic模型以降低支出。MAI模型已在Excel和Outlook中每周处理数万次请求，但占比仍小。Build大会上发布推理模型MAI-Thinking 1，声称编码媲美Sonnet 4.6和Opus 4.6，但基准测试大幅落后，仅与DeepSeek V3.2相当。AI负责人承认目标是削减并消除对Anthropic的支出。CEO暗示未来可能按用量计费，MAI为默认，第三方模型付费附加。微软称MAI使用干净商业许可数据，实际基于Common Crawl。",
+      "category": "industry",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795"
+      }
+    },
+    {
+      "id": "cmrasueu500qmihog3d8up11t",
+      "title": "中国拟限制外国访问最强AI模型",
+      "title_en": "🇨🇳This is bad news. Now， frontier open source access also will probably no more be available for a…",
+      "url": "https://x.com/rohanpaul_ai/status/2074512389526237609",
+      "permalink": "https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-07-07T15:14:30.000Z",
+      "summary": "中国计划限制外国访问其最强AI模型，近期与阿里巴巴、字节跳动、Z.ai等企业会谈，拟将先进模型（含未发布）留在中国国内。商务部主导、国家发改委参与，表明此举属出口管制而非平台监管。目标涵盖闭源和开源模型，不仅限API访问，还包括可下载权重。同时讨论将模型泄漏视为国家安全犯罪，并限制外国资本投资中国AI初创。若实施，外国公司将失去低成本模型访问权。此前华盛顿已限制美国先进模型出口，此举可能进一步分裂全球AI市场。",
+      "category": "industry",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t"
+      }
+    },
+    {
+      "id": "cmraqliu1003aihogho9twifr",
+      "title": "Ethan Mollick：开放权重模型供给难持续",
+      "title_en": "This is a key reason I don't expect the flow of frontier open weights models to continue indefinitel…",
+      "url": "https://x.com/emollick/status/2074497401578996154",
+      "permalink": "https://aihot.virxact.com/items/cmraqliu1003aihogho9twifr",
+      "source": "X：Ethan Mollick (@emollick)",
+      "publishedAt": "2026-07-07T14:14:57.000Z",
+      "summary": "这是一个关键原因，我不期望前沿开放权重模型的流动会无限期持续，甚至不会持续更长时间。",
+      "category": "industry",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmraqliu1003aihogho9twifr"
+      }
+    },
+    {
+      "id": "cmrafv8m40090ihuamebn107w",
+      "title": "美国首批自主地面车辆在乌克兰参战",
+      "title_en": "The first American autonomous ground vehicles are fighting in Ukraine",
+      "url": "https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-are-fighting-in-ukraine",
+      "permalink": "https://aihot.virxact.com/items/cmrafv8m40090ihuamebn107w",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-07T09:00:00.000Z",
+      "summary": "美国自动驾驶车辆公司 Forterra 宣布，过去九个月已向乌克兰战场部署超过 100 辆基于 Polaris ATV 的 Lancer 自主地面车辆。这些汽油动力车辆可携带 750 公斤货物，加装 Starlink 天线实现远程操控，已执行 1100 多次任务，行驶 2500 英里，运送 777，440 磅物资，完成 52 次伤员撤离。目前车辆主要采用远程操作，因自主系统尚无法实时识别并应对敌方威胁。Forterra 已融资超 5 亿美元，正将经典机器人方法与生成式 AI 结合以提升自主能力。美军专家认为地面自主技术已具实战价值。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrafv8m40090ihuamebn107w"
+      }
+    },
+    {
+      "id": "cmr9wjj3g00jhih9kuibhf720",
+      "title": "Sysdig 澄清首例\"智能体勒索软件\"JadePuffer：AI 执行攻击但人类仍负责设置与选目标",
+      "title_en": "The 'first' AI-run ransomware attack still needed a human",
+      "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human",
+      "permalink": "https://aihot.virxact.com/items/cmr9wjj3g00jhih9kuibhf720",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-06T23:56:14.000Z",
+      "summary": "云安全公司 Sysdig 记录了首例\"智能体勒索软件\"攻击 JadePuffer，AI 智能体独立完成入侵、窃取凭证、横向移动、加密超 1，300 条配置记录并撰写赎金信，还能在 31 秒内修复失败登录并以自然语言注释解释推理过程。但 Sysdig 高级威胁研究总监 Michael Clark 澄清，人类仍负责设置攻击基础设施、选择受害目标、提供通过此前入侵获取的数据库凭证。Sysdig 未能识别驱动该智能体的具体模型；AI 智能体在攻击中窃取了 OpenAI、Anthropic、DeepSeek 和 Gemini 的 API 密钥，Clark 表示这些密钥属于\"战利品\"而非驱动模型。微软研究员 Geoff McDonald 推测模型为移除安全训练的开源权重模型。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9wjj3g00jhih9kuibhf720"
+      }
+    },
+    {
+      "id": "cmr9kq74q00mkihe8o68fnq9t",
+      "title": "2026年科技公司AI裁员名单：Microsoft、Oracle、GitLab等十家公司裁减数千岗位",
+      "title_en": "The running list： major tech layoffs in 2026 where employers cited AI",
+      "url": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
+      "permalink": "https://aihot.virxact.com/items/cmr9kq74q00mkihe8o68fnq9t",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-06T18:35:00.000Z",
+      "summary": "2026年以来，多家科技公司以AI为由大规模裁员。Microsoft裁减约4800岗位（2.1%），Oracle裁减21000人（13%），GitLab裁减350人（14%）以投资AI基础设施，Google Cloud持续裁减员工（外界估计1500-3000+工程师），Intuit裁减3000人（17%），Meta裁减8000人（10%）并转岗7000人至AI，Cisco裁减近4000人（5%），Cloudflare裁减1100人（20%），GM裁减500-600 IT岗位，Coinbase裁减700人（14%）。据Layoffs.fyi统计，2026年累计已裁约12万个技术岗位。",
+      "category": "industry",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9kq74q00mkihe8o68fnq9t"
+      }
+    },
+    {
+      "id": "cmr91yrn100noslmpusn7u7q0",
+      "title": "Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/973/207.htm",
+      "permalink": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-06T09:23:28.000Z",
+      "summary": "据《连线》报道，Meta 通过外包公司 Covalen 开展代号\"Cannes\"的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0"
+      }
+    },
+    {
+      "id": "cmr8yq2xv01phsllsc7sv9v5u",
+      "title": "Runway 宣布设立巴黎办公室",
+      "title_en": "Announcing our Paris Office",
+      "url": "https://runwayml.com/news/announcing-our-paris-office",
+      "permalink": "https://aihot.virxact.com/items/cmr8yq2xv01phsllsc7sv9v5u",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-07-06T08:33:02.716Z",
+      "summary": "原文正文仅包含网站 Cookie 设置说明，未提供关于巴黎办公室的部门、规模、职能或开业时间等具体信息。",
+      "category": "industry",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr8yq2xv01phsllsc7sv9v5u"
+      }
+    },
+    {
+      "id": "cmr8j82w402k0sl0ddfe6f7zv",
+      "title": "SK 海力士将启动 280 亿美元美股上市，有望成史上第二大 IPO",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/972/896.htm",
+      "permalink": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-06T01:09:29.000Z",
+      "summary": "SK 海力士于本周一启动规模约 280 亿美元的美股上市计划，将在纳斯达克通过存托凭证发行 1779 万股新股，每 10 份存托凭证对应 1 股普通股。发行价区间周一公布，最终发行价周四敲定，股票周五挂牌交易。受益于全球人工智能热潮，该股年内涨幅超 270%。本次募资规模预计为史上第二大新股发行，仅次于上月 SpaceX 的 857 亿美元 IPO。SK 海力士是高带宽内存芯片核心供应商，产品用于英伟达、谷歌等 AI 设备。",
+      "category": "industry",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv"
+      }
+    },
     {
       "id": "cmr8ajv5h00e0sl0d7rzs38ei",
       "title": "NVIDIA Kyber NVL144 延迟超 12 个月至 2028",
@@ -324,142 +477,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr1bb1gr01adslnlt43fwfff"
-      }
-    },
-    {
-      "id": "cmr0kov5302qnslolcwg00yqd",
-      "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
-      "title_en": "Meta secretly tested ChatGPT， Gemini， and Character.AI with thousands of minor-perspective crisis prompts",
-      "url": "https://the-decoder.com/meta-secretly-tested-chatgpt-gemini-and-character-ai-with-thousands-of-minor-perspective-crisis-prompts",
-      "permalink": "https://aihot.virxact.com/items/cmr0kov5302qnslolcwg00yqd",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-30T11:14:52.000Z",
-      "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0kov5302qnslolcwg00yqd"
-      }
-    },
-    {
-      "id": "cmr0czddc00pyslole7byaugu",
-      "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
-      "title_en": "另类资管巨头黑石未来 3~5 年将斥资 300 亿美元在日本建设 AI 数据中心",
-      "url": "https://www.ithome.com/0/970/583.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr0czddc00pyslole7byaugu",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-30T07:56:46.000Z",
-      "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0czddc00pyslole7byaugu"
-      }
-    },
-    {
-      "id": "cmr0au6v3005gslol3ritaun0",
-      "title": "特斯拉Cybercab量产版在奥斯汀启动公开道路工程测试",
-      "title_en": "无方向盘、无踏板，特斯拉 Cybercab 量产版启动公开道路工程测试",
-      "url": "https://www.ithome.com/0/970/539.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr0au6v3005gslol3ritaun0",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-30T06:45:03.000Z",
-      "summary": "2026年6月30日，特斯拉在奥斯汀公共道路启动首批量产版Cybercab工程测试。车辆无方向盘与脚踏板，配有安全监督员，Musk发布实拍视频。从2024年10月概念车首秀到实车上路约20个月。目前不对外开放乘客，投入34台Cybercab在市中心验证硬件可靠性。Cybercab为双座车型，完全围绕无人驾驶打造，无后期改装。此前奥斯汀已有无安全员Model Y无人驾驶出租于1月启用、6月22日开放付费服务。",
-      "category": "industry",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0au6v3005gslol3ritaun0"
-      }
-    },
-    {
-      "id": "cmqzpe7kz003xslznxpw78tx5",
-      "title": "Rubin Ultra取消，新版尺寸性能减半",
-      "title_en": "INTERESTING： Only 3 months after Rubin Ultra was announced at GTC 2026， the original 4-die Rubin Ult…",
-      "url": "https://x.com/SemiAnalysis_/status/2071700428249596290",
-      "permalink": "https://aihot.virxact.com/items/cmqzpe7kz003xslznxpw78tx5",
-      "source": "X：SemiAnalysis (@SemiAnalysis_)",
-      "publishedAt": "2026-06-29T21:00:47.000Z",
-      "summary": "有意思：在GTC 2026宣布Rubin Ultra仅3个月后，原4-die Rubin Ultra因制造执行问题被取消。新的\"Rubin Ultra\"尺寸减半，实际性能约为原版的一半。1/4🧵",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqzpe7kz003xslznxpw78tx5"
-      }
-    },
-    {
-      "id": "cmqz7d8df001gslurh618qik6",
-      "title": "美军用AI选目标却误炸伊朗学校，Anthropic Claude嵌入Palantir系统首日建议约1000目标",
-      "title_en": "The US military used AI to pick thousands of targets but missed a note saying one was a school",
-      "url": "https://the-decoder.com/the-us-military-used-ai-to-pick-thousands-of-targets-but-missed-a-note-saying-one-was-a-school",
-      "permalink": "https://aihot.virxact.com/items/cmqz7d8df001gslurh618qik6",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-29T12:30:21.000Z",
-      "summary": "美军在打击伊朗时首次大规模使用AI选择目标（Anthropic的Claude模型嵌入Palantir的Maven Smart System，首日建议约1000个目标），但对一所学校的导弹袭击导致约120名儿童死亡。调查发现，情报分析师早在2019年就通过数字工具标记该地点已变为小学，但该工具未连接军方官方目标数据库MIDB，信息从未送达指挥官。MIDB建于1980年代，依赖手动输入，替代系统MARS多年延迟。五角大楼事后宣布推出agentic AI initiative。Project Maven创建人Jack Shanahan批评目标验证不力不可原谅。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqz7d8df001gslurh618qik6"
-      }
-    },
-    {
-      "id": "cmqz1tatr01doslxsae6mpoyv",
-      "title": "国务院印发《教育发展\"十五五\"规划》，推进人工智能全学段教育",
-      "title_en": "国务院：推进人工智能全学段教育，提升学生人工智能素养",
-      "url": "https://www.ithome.com/0/970/097.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqz1tatr01doslxsae6mpoyv",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-29T09:27:36.000Z",
-      "summary": "国务院日前印发《教育发展\"十五五\"规划》，要求推进人工智能全学段教育，提升学生人工智能素养及提出问题、解决问题的能力。规划明确完善科学教育体系，强化科技教育与人文教育协同，加强青少年科学素养、批判性思维和创新能力培养。同时实施学生体质强健计划、心理健康促进行动，加大拔尖创新人才自主培养力度，推动学科交叉融合，扩大优质本科招生规模。目标到2030年高质量教育体系基本建成。",
-      "category": "industry",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqz1tatr01doslxsae6mpoyv"
-      }
-    },
-    {
-      "id": "cmqyysibx00l8slxscq4crs8k",
-      "title": "三星和SK海力士计划投资5900亿美元扩产芯片，AI需求推高内存价格",
-      "title_en": "Samsung and SK Hynix plan $590 billion chip investment as AI demand sends memory prices soaring",
-      "url": "https://the-decoder.com/samsung-and-sk-hynix-plan-590-billion-chip-investment-as-ai-demand-sends-memory-prices-soaring",
-      "permalink": "https://aihot.virxact.com/items/cmqyysibx00l8slxscq4crs8k",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-06-29T08:17:41.000Z",
-      "summary": "在韩国政府支持下，三星和SK海力士计划投入5900亿美元扩大芯片产能，包括800万亿韩元新建四座工厂、81万亿韩元建封装中心，以及未来15年30万亿韩元用于研发下一代芯片。AI数据中心需求是主要驱动力。Jefferies预测，2026年Q3内存价格将上涨40%至50%，Q4再涨30%至40%，2027年继续上涨40%至45%，到2028年新产能仅上线15%至20%才可能缓解。两家公司合计控制全球近80%的高带宽内存芯片市场。内存涨价已推高消费电子产品成本，苹果已上调Mac和MacBook售价。",
-      "category": "industry",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqyysibx00l8slxscq4crs8k"
-      }
-    },
-    {
-      "id": "cmqyvdkok000qslf1ctykave9",
-      "title": "SK 集团会长崔泰源：到 2035 年建设 15GW AI 数据中心，总投资达 1000 万亿韩元",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/969/953.htm",
-      "permalink": "https://aihot.virxact.com/items/cmqyvdkok000qslf1ctykave9",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-06-29T06:44:15.000Z",
-      "summary": "SK 集团会长崔泰源 6 月 29 日宣布，计划到 2035 年建成 15GW AI 数据中心容量，作为韩国国家级基础设施和实体 AI 时代核心底座。项目总投资 1000 万亿韩元（约 4.4 万亿元人民币），未来 10 年保持年均 100 万亿韩元以上国内投资，旨在实现从出口传统商品向智能服务的转变，构建韩国智能市场。此外，SK 海力士将向韩国西南部投资 400 万亿韩元，半导体供应项目总投资达 1100 万亿韩元（约 4.84 万亿元人民币）。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqyvdkok000qslf1ctykave9"
       }
     }
   ]

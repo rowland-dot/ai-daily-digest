@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-07-06T21:57:01.145Z",
+  "fetched_at": "2026-07-07T21:54:32.236Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "sqlite-utils 4.0, now with database schema migrations",
+      "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+      "updated": "2026-07-07T19:32:57+00:00",
+      "summary": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide ), this version introduces three major features: database migrations , nested transactions (via a new db.atomic() method), and support for compound foreign keys ."
+    },
+    {
+      "title": "sqlite-utils 4.0",
+      "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything",
+      "updated": "2026-07-07T15:42:43+00:00",
+      "summary": "See sqlite-utils 4.0, now with database schema migrations for details."
+    },
+    {
+      "title": "sqlite-utils 4.0rc4",
+      "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
+      "updated": "2026-07-07T05:36:15+00:00",
+      "summary": "The last RC before the 4.0 stable release. Mainly implements feedback from a detailed review by Claude Fable 5."
+    },
+    {
+      "title": "tencent/Hy3",
+      "link": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
+      "updated": "2026-07-06T23:57:35+00:00",
+      "summary": "tencent/Hy3"
+    },
     {
       "title": "sqlite-utils 4.0rc3",
       "link": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
       "updated": "2026-07-03T18:51:06+00:00",
       "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work."
-    },
-    {
-      "title": "June 2026 newsletter",
-      "link": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
-      "updated": "2026-07-03T14:50:50+00:00",
-      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here ."
-    },
-    {
-      "title": "llm-coding-agent 0.1a0",
-      "link": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
-      "updated": "2026-07-02T19:33:12+00:00",
-      "summary": "Another Fable 5 experiment. Now that my LLM library has evolved into more of an agent framework it's time to see what a simple coding agent would look like built on it."
-    },
-    {
-      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
-      "link": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-      "updated": "2026-07-02T18:25:00+00:00",
-      "summary": "One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:"
-    },
-    {
-      "title": "Understand to participate",
-      "link": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
-      "updated": "2026-07-02T17:07:14+00:00",
-      "summary": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me:"
     }
   ]
 }

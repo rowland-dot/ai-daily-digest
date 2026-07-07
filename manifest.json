@@ -1,91 +1,86 @@
 {
-  "fetched_at": "2026-07-06T21:56:00.270Z",
-  "date_utc": "2026-07-06",
+  "fetched_at": "2026-07-07T21:54:10.084Z",
+  "date_utc": "2026-07-07",
   "sources": {
     "aihot_daily": {
-      "status": "error",
-      "file": null,
-      "error": "fetch failed",
-      "ms": 10558
+      "status": "ok",
+      "file": "aihot-daily.json",
+      "ms": 4240
     },
     "aihot_ai_models": {
-      "status": "error",
-      "file": null,
-      "error": "fetch failed",
-      "ms": 10496
+      "status": "ok",
+      "file": "aihot-ai-models.json",
+      "ms": 311
     },
     "aihot_ai_products": {
-      "status": "error",
-      "file": null,
-      "error": "fetch failed",
-      "ms": 10494
+      "status": "ok",
+      "file": "aihot-ai-products.json",
+      "ms": 308
     },
     "aihot_industry": {
-      "status": "error",
-      "file": null,
-      "error": "fetch failed",
-      "ms": 10490
+      "status": "ok",
+      "file": "aihot-industry.json",
+      "ms": 325
     },
     "aihot_paper": {
-      "status": "error",
-      "file": null,
-      "error": "fetch failed",
-      "ms": 10491
+      "status": "ok",
+      "file": "aihot-paper.json",
+      "ms": 350
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 80
+      "ms": 53
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 1322
+      "ms": 775
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 1129
+      "ms": 1089
     },
     "anthropic_news": {
       "status": "ok",
       "file": "anthropic-news.json",
-      "ms": 5056
+      "ms": 7074
     },
     "anthropic_engineering": {
       "status": "ok",
       "file": "anthropic-engineering.json",
-      "ms": 113
+      "ms": 7002
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 645
+      "ms": 629
     },
     "follow_builders_x": {
       "status": "ok",
       "file": "follow-builders-x.json",
-      "ms": 16
+      "ms": 49
     },
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 5
+      "ms": 6
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 14
+      "ms": 142
     },
     "localllama": {
       "status": "ok",
       "file": "localllama.json",
-      "ms": 533
+      "ms": 659
     },
     "article_bodies": {
       "status": "ok",
       "file": "article-bodies.json",
-      "ms": 2
+      "ms": 3
     }
   }
 }

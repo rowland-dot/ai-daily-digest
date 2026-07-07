@@ -4,6 +4,261 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmray36fg021nihogfo205417",
+      "title": "NotebookLM短视频概览正式上线",
+      "title_en": "Short Video Overviews are officially 💯 rolled out on mobile and web across all users in English！ A…",
+      "url": "https://x.com/NotebookLM/status/2074551227594264799",
+      "permalink": "https://aihot.virxact.com/items/cmray36fg021nihogfo205417",
+      "source": "X：NotebookLM (@NotebookLM)",
+      "publishedAt": "2026-07-07T17:48:50.000Z",
+      "summary": "短视频概览功能已正式在移动端和网页端面向所有英语用户全面上线！\n\n一如既往，您的意见对我们至关重要。请在下方分享您最喜欢的作品，并告诉我们接下来需要添加哪些功能！❤️",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmray36fg021nihogfo205417"
+      }
+    },
+    {
+      "id": "cmrav068k01b6ihogth8k26f6",
+      "title": "Claude Cowork 向移动端和网页端开放",
+      "title_en": "Claude Cowork is coming to mobile and web",
+      "url": "https://claude.com/blog/cowork-web-mobile",
+      "permalink": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-07-07T16:24:13.051Z",
+      "summary": "Claude Cowork 正在向移动端和网页端开放，让会话和文件跨设备同步。Beta 版将在未来几周内首先面向 Max 用户推出。Cowork 可让 Claude 跨文件、日历、邮件、即时通讯等工具完成复杂任务，其中超过 90% 的使用场景并非软件开发，而是日常知识工作（业务运营和内容创作）。工作可跨设备跟随用户：在桌面端开始任务，从手机查看进度；关闭笔记本后 Claude 可继续后台运行，支持定时任务（如周一 6 点自动准备客户简报）。当需要用户决策时，Claude 会将问题推送到手机。桌面端保留完整 Cowork 体验，支持无法安装桌面应用的用户。聊天和 Cowork 已在网页端和桌面端合并。为庆祝上线，双倍 Cowork 使用额度延长至 8 月 5 日。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6"
+      }
+    },
+    {
+      "id": "cmraw22r701jjihogh1k8hbu6",
+      "title": "Gemini API Managed Agents 新增后台执行、远程 MCP 与自定义函数等能力",
+      "title_en": "Expanding Managed Agents in Gemini API： background tasks， remote MCP and more",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
+      "permalink": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-07-07T08:54:00.000Z",
+      "summary": "Google 为 Gemini API 的 Managed Agents 新增后台执行、远程 MCP 服务器集成、自定义函数调用与凭证刷新功能。后台执行通过传入 `background： true` 异步运行任务，立即返回 ID 供轮询状态或流式获取进度。Managed Agents 可直接连接远程 MCP 服务器，无需自定义代理中间件，并能与内置沙箱工具（如 Google 搜索、代码执行）混合使用。自定义函数调用支持本地执行业务逻辑，内置工具自动在服务端运行。凭证刷新通过传递现有环境 ID 和新网络配置完成，沙箱内文件系统、已安装包和仓库保持不变。这些更新旨在帮助开发者构建可靠的生产级 AI 智能体。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6"
+      }
+    },
+    {
+      "id": "cmraai9ic00q4ihl3ozf3ki9s",
+      "title": "Grok Imagine 更新：支持 15 秒视频",
+      "title_en": "Grok Imagine update",
+      "url": "https://x.com/elonmusk/status/2074378653501128833",
+      "permalink": "https://aihot.virxact.com/items/cmraai9ic00q4ihl3ozf3ki9s",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-07-07T06:23:05.000Z",
+      "summary": "Grok Imagine 更新。请更新你的 Grok 应用！15 秒 Imagine 视频现已可用，质量令人难以置信。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmraai9ic00q4ihl3ozf3ki9s"
+      }
+    },
+    {
+      "id": "cmra67abw003vihup3mg75wsc",
+      "title": "MIRA：可玩多人世界模型，20 FPS实时生成\"火箭联盟的梦\"",
+      "title_en": "I have been playing these world models/games since the first diffusion DOOM， and multiplayer at 20 F…",
+      "url": "https://x.com/emollick/status/2074348274136346871",
+      "permalink": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc",
+      "source": "X：Ethan Mollick (@emollick)",
+      "publishedAt": "2026-07-07T04:22:22.000Z",
+      "summary": "MIRA是一个可玩、多人的世界模型，被形容为\"火箭联盟的梦\"。它基于10k小时公开机器人收集的数据训练，学习四玩家游戏动态，根据按键实时生成画面，帧率达20 FPS。模型由General Intuition与Kyutai Labs联合构建，Epic Games提供协作。Ethan Mollick称从最早的扩散DOOM玩过来，多人20 FPS效果出色。演示、技术报告及开源代码已公开，在ICML Booth 111现场展示。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc"
+      }
+    },
+    {
+      "id": "cmrb18k7802uuihogxse92jx2",
+      "title": "Hugging Face Storage 成为 SkyPilot 一级后端：零出站费跨云存储",
+      "title_en": "Run AI workloads on any cloud， store on Hugging Face： zero-egress storage with SkyPilot",
+      "url": "https://huggingface.co/blog/skypilot-hf-storage",
+      "permalink": "https://aihot.virxact.com/items/cmrb18k7802uuihogxse92jx2",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "summary": "Hugging Face Storage 现为 SkyPilot 的一级后端。用户通过 `hf：//` URL 和现有 HFTOKEN 即可将 Hugging Face Bucket（读写）或模型/数据集/Space 仓库（只读）挂载到 SkyPilot 任务中，支持 MOUNT（FUSE 懒加载）或 COPY 模式。SkyPilot 可将任务调度到 20+ 云、Kubernetes、Slurm 及本地集群的任意可用 GPU 上。Hugging Face 不收取出站及 CDN 费用，故跨云读取数据无额外成本。存储价格 $12-18/TB/月，低于 AWS S3 加出站费。Bucket 基于 Xet，增量检查点和模型变体仅存储和传输改动部分。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrb18k7802uuihogxse92jx2"
+      }
+    },
+    {
+      "id": "cmr9wgeoh00hvih9kcga5y5uj",
+      "title": "Gemini Spark 可智能追踪话题实时反应",
+      "title_en": "Gemini Spark can now intelligently track topics and react to events in real time. Try the prompt i…",
+      "url": "https://x.com/GeminiApp/status/2074280473581572600",
+      "permalink": "https://aihot.virxact.com/items/cmr9wgeoh00hvih9kcga5y5uj",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-07-06T23:52:57.000Z",
+      "summary": "Gemini Spark 现在可以智能追踪话题并实时反应事件。\n\n试试下一篇帖子中的提示词，在你支持的球队比赛结束后，获取定制化的比赛分析邮件。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9wgeoh00hvih9kcga5y5uj"
+      }
+    },
+    {
+      "id": "cmr9u2kma003gihdb8r5drdfd",
+      "title": "OfficeCLI：为AI智能体设计的开源Office套件",
+      "title_en": "OfficeCLI：供人工智能代理读取和编辑 Microsoft Office 文件的办公套件",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "permalink": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-06T23:03:34.910Z",
+      "summary": "OfficeCLI是全球首个专为AI智能体设计的开源Office套件，以单二进制文件运行，无需安装Office或任何依赖。它内置HTML渲染引擎，可将.docx/.xlsx/.pptx转换为HTML或PNG，形成\"渲染→查看→修复\"的视觉闭环，使AI代理能自主创建、读取和修改Word、Excel、PowerPoint文档。支持公式、图表、条件格式、RTL布局、修订追踪、表格、数据透视表等复杂功能。提供CLI命令和基于自然语言的桌面应用AionUi，并可一键安装到Claude Code、Cursor、Windsurf、GitHub Copilot等AI编码工具中。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd"
+      }
+    },
+    {
+      "id": "cmr9u1olo002sihdbunnazaoz",
+      "title": "Claude Code v2.1.202 发布",
+      "title_en": "v2.1.202",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+      "permalink": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-07-06T22:51:16.000Z",
+      "summary": "Claude Code v2.1.202 在 `/config` 中新增\"Dynamic workflow size\"设置，可控制动态工作流的 agent 数量规模（小/中/大），作为指导性建议而非硬性上限。工作流派生的 agent 现在会发射 `workflow.run_id` 和 `workflow.name` 的 OpenTelemetry 属性。修复了 mTLS 握手失败、远程控制发送命令失败、移动端发送无说明图片被静默丢弃、语音听写在麦克风故障时无限重试（改为暂停输入）、重载已有技能导致重复指令等问题。改进了工作流 agent 列表布局，MCP 错误消息更清晰。`/review <pr>` 恢复为快速单次审查，多 agent 审查请使用 `/code-review`。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz"
+      }
+    },
+    {
+      "id": "cmr9jbw7a0085ihe85luucw73",
+      "title": "OpenClaw 登陆 HuggingFace 本地应用",
+      "title_en": "OpenClaw landed on @huggingface local apps 🦞🤝🤗 1. Pick any GGUF/MLX model on hf 2. Copy the open…",
+      "url": "https://x.com/openclaw/status/2074187998602871212",
+      "permalink": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73",
+      "source": "X：OpenClaw (@openclaw)",
+      "publishedAt": "2026-07-06T17:45:30.000Z",
+      "summary": "OpenClaw 登陆 @huggingface 本地应用 🦞🤝🤗\n\n1. 在 hf 上挑任意 GGUF/MLX 模型\n2. 复制 openclaw onboard 设置\n3. Voila，你得到一个完全本地的工具调用智能体。无云端、无密钥、无人监控。\n\n让你的 claw 本地化到极致。抵抗是徒劳的 🦞",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73"
+      }
+    },
+    {
+      "id": "cmr8reau2005fslvpmqjll6du",
+      "title": "Synthetic Sciences 发布 OpenScience：面向机器学习、生物学、物理学和化学研究的开源模型无关 AI 工作台",
+      "title_en": "Synthetic Sciences Releases OpenScience： An Open-Source， Model-Agnostic AI Workbench for Machine Learning， Biology， Physics， and Chemistry Research",
+      "url": "https://www.marktechpost.com/2026/07/05/synthetic-sciences-releases-openscience-an-open-source-model-agnostic-ai-workbench-for-machine-learning-biology-physics-and-chemistry-research",
+      "permalink": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-06T05:07:12.000Z",
+      "summary": "Synthetic Sciences 推出开源（Apache 2.0）AI 科研工作台 OpenScience，覆盖机器学习、生物学、物理学、化学。它运行从文献、假设、代码、实验到分析与撰写的完整科研循环，支持按请求切换任意模型（Claude、GPT、Gemini、GLM、Kimi、DeepSeek 及本地微调模型）。内置 250 余项可编辑技能和 UniProt、PDB、ChEMBL、arXiv 等约 30 个科学数据库作为智能体工具。用户可自带 API 密钥在自己的基础设施上免费运行，安装命令为 `npm install -g @synsci/openscience`，运行 `openscience` 启动浏览器工作台。另提供可选托管层 Atlas。该项目定位为 Anthropic Claude Science 的开源替代方案。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du"
+      }
+    },
+    {
+      "id": "cmra53mfd012bihx8mexd46u8",
+      "title": "蚂蚁 inclusionAI 开源多智能体协作基础设施 Avernet V0.1",
+      "title_en": "inclusionAI/Avernet",
+      "url": "https://github.com/inclusionAI/Avernet",
+      "permalink": "https://aihot.virxact.com/items/cmra53mfd012bihx8mexd46u8",
+      "source": "蚂蚁 inclusionAI：GitHub 新仓库",
+      "publishedAt": "2026-07-06T03:52:54.000Z",
+      "summary": "蚂蚁 inclusionAI 开源的多智能体协作基础设施 Avernet V0.1 正式发布。该项目聚焦 Agent 注册、发现、邀请等协作层问题，不替代 Agent 自身推理能力。通过群组、会话和共享上下文构建多方共识，支持自由聊天、领导-跟随等协作模式，并利用协作反馈形成观察、评估到复用、优化的自动进化闭环。支持 OpenClaw、自定义 Agent、第三方 Agent 引擎及现有 bot 平台等异构生态，提供 Docker 与本地两种快速部署路径。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmra53mfd012bihx8mexd46u8"
+      }
+    },
+    {
+      "id": "cmr9t47l20004iha5fuyk3h7z",
+      "title": "xAI 为 Grok Voice 新增 21 个旗舰语音",
+      "title_en": "21 New Flagship Grok Voices Jul 6， 2026 # 21 New Flagship Grok Voices New multilingual voices for Grok Voice， plus improved naturalness for the original five. Read More",
+      "url": "https://x.ai/news/new-flagship-voices",
+      "permalink": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-06T00:00:00.000Z",
+      "summary": "xAI 发布 21 个新旗舰语音，加入原有的 5 个语音。所有新语音均支持多语言，已在实时 Voice Agent API、Text to Speech API 及新推出的 Grok Voice Agent Builder 中可用。每个语音针对客服、角色、解说、广告、教育等场景定制，支持通过 `【pause】` 等语音标签控制表达。原始 5 个语音（Ara、Eve、Leo、Rex、Sal）经重训练后，节奏、措辞和重音的自然度提升。所有语音原生支持 Grok Voice 的 25 种以上语言。",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z"
+      }
+    },
+    {
+      "id": "cmr9h98co0470slsmqqc2ilv1",
+      "title": "SGLang 集成 DSpark 推测解码：置信度驱动的可变长度验证",
+      "title_en": "Blog DSpark in SGLang： Speculative Decoding with Confidence-Driven， Variable-Length Verification Speculative decoding trades extra compute for fewer decode steps， and the trade sours as load grows： at batch size B with K speculative tokens the target verifies B K tokens every step， and past a po… SGLang Team",
+      "url": "https://www.lmsys.org/blog/2026-07-06-dspark-sglang",
+      "permalink": "https://aihot.virxact.com/items/cmr9h98co0470slsmqqc2ilv1",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-05T16:00:00.000Z",
+      "summary": "SGLang 团队将 DSpark 推测解码算法集成到开源推理引擎中。该算法采用半自回归块起草器一次生成一组 token，并利用置信度头与顺序温度缩放（STS）为每个请求动态分配可变验证长度，从而在高负载下裁剪无效验证成本。SGLang 支持密集模型（如 Qwen3）和稀疏模型（如 DeepSeek-V4），通过全 CUDA 图处理不规则的每请求验证长度。提供三种验证模式：`static`（全长）、`compact`（生产路径）和 `cap-accept`（接受上限测量）。还引入了零开销调度、基于离线成本表的在线调度器、融合 Triton 核等优化。在 H200 上使用 DeepSeek-V4-Flash 的测试中，DSpark 在整个并发扫描范围内比 MTP 和非推测基线实现了更优的吞吐量-延迟权衡。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr9h98co0470slsmqqc2ilv1"
+      }
+    },
+    {
+      "id": "cmra2w89f00esihx80bjzdjlf",
+      "title": "ResearchStudio-Reel：从论文到海报、视频和博客的自动化系统",
+      "title_en": "ResearchStudio-Reel： Automate the Last Mile of Research from Paper to Poster， Video， and Blog",
+      "url": "https://arxiv.org/abs/2607.04438",
+      "permalink": "https://aihot.virxact.com/items/cmra2w89f00esihx80bjzdjlf",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-05T00:00:00.000Z",
+      "summary": "ResearchStudio-Reel 由五个 Claude Code 和 Codex 技能组成，包含共享提取器 Paper2Assets，三个可编辑生成器 Paper2Poster、Paper2Video、Paper2Blog 以及交互式汇聚层 Paper2Reel。它一次性从论文中提取资产，生成打印级海报、同步讲解视频和双语博客，并支持在 PowerPoint 或 Word 中二次编辑。在 Paper2Poster 基准上，其海报在美学和信息指标上均优于先前自动化系统和单次调用前沿 LLM。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmra2w89f00esihx80bjzdjlf"
+      }
+    },
+    {
       "id": "cmr53w14307lfsll5fo2cq53p",
       "title": "JoyAI App 上线 UGC 数字人功能，用户可\"捏\"出专属虚拟玩伴",
       "title_en": "谁还没个理想型？JoyAI App上线UGC数字人，快来\"捏\"出你的专属玩伴",
@@ -273,261 +528,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr2a81sq066ssl8z8vo7so2x"
-      }
-    },
-    {
-      "id": "cmr12g90k00zlsldxyyr0fmt3",
-      "title": "NotebookLM Short Video Overviews 全量上线 Web 英文版",
-      "title_en": "There seems to be a *lot* of discourse about our new Short Video Overviews. Want to join in on the f…",
-      "url": "https://x.com/NotebookLM/status/2072043680442245276",
-      "permalink": "https://aihot.virxact.com/items/cmr12g90k00zlsldxyyr0fmt3",
-      "source": "X：NotebookLM (@NotebookLM)",
-      "publishedAt": "2026-06-30T19:44:44.000Z",
-      "summary": "NotebookLM 正式向 Web 英文用户全量推出 Short Video Overviews（短视频概览）功能。该功能可将复杂资料自动转化为 60 秒竖屏视频，深入讲解任意概念。此前，这一功能已面向 Google AI Ultra 和 Pro 订阅者（移动端及 Web）推出，免费用户即将可用。",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr12g90k00zlsldxyyr0fmt3"
-      }
-    },
-    {
-      "id": "cmr0yab2e003oslw8uw5zghrc",
-      "title": "Acti 将 AI 智能体直接放入手机键盘",
-      "title_en": "Acti puts AI agents directly into your smartphone keyboard",
-      "url": "https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard",
-      "permalink": "https://aihot.virxact.com/items/cmr0yab2e003oslw8uw5zghrc",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-06-30T17:52:46.000Z",
-      "summary": "新加坡初创公司 Acti 发布基于 Google Gemini 的智能体键盘，可代替用户在应用中执行操作。核心功能 Skills 允许用自然语言创建快捷方式，如长按 T 键翻译消息、C 键发送会议链接。早期测试者两周内创建超 1000 个 Skills。采用本地优先架构，默认不访问私人消息。公司获 530 万美元种子轮融资，由 BITKRAFT Ventures 领投，现已开放下载。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0yab2e003oslw8uw5zghrc"
-      }
-    },
-    {
-      "id": "cmr0wupt4007gsl403t7s6dbn",
-      "title": "ADK Go 2.0 发布：构建可靠的多智能体应用，新增基于图的工作流引擎、人工参与循环与动态编排",
-      "title_en": "Build reliable multi-agent applications with ADK Go 2.0. Discover our new graph-based workflow engine， built-in human-in-the-loop， and dynamic orchestration",
-      "url": "https://developers.googleblog.com/announcing-adk-go-20",
-      "permalink": "https://aihot.virxact.com/items/cmr0wupt4007gsl403t7s6dbn",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-06-30T17:17:40.302Z",
-      "summary": "Agent Development Kit （ADK） for Go 2.0 发布，引入了一类基于图的工作流引擎，用于组合复杂多智能体应用。新版本内置人工参与循环（HITL）编排、使用纯 Go 代码的动态执行、以及指数退避重试等自动弹性特性。统一执行模型后，单智能体应用与复杂图均运行在同一运行时上，简化了遥测与状态持久化。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0wupt4007gsl403t7s6dbn"
-      }
-    },
-    {
-      "id": "cmr0x8nxp002gslb33ixw5j4z",
-      "title": "Apple Creator Studio 更新：更智能、更快速、更互联",
-      "title_en": "Apple Creator Studio gets smarter， faster， and more connected",
-      "url": "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected",
-      "permalink": "https://aihot.virxact.com/items/cmr0x8nxp002gslb33ixw5j4z",
-      "source": "Apple：Newsroom（RSS）",
-      "publishedAt": "2026-06-30T16:59:24.233Z",
-      "summary": "Apple Creator Studio 推出多项 AI 增强更新。Final Cut Pro 新增 on-device AI 驱动的 Generate Captions（自动转录音频生成字幕）和 Edit Detection（自动检测剪辑点）。Mac 版加入 Auto Mask（自动识别皮肤、天空等主体）、增强的 Match Color 和 Advanced Trimming。支持将帧发送至 Pixelmator Pro 编辑，并在 Keynote、Pages、Numbers 中直接调用 Pixelmator Pro 修改图片。Logic Pro 新增 Grammy 制作人制作的 Producer Project 及 Chord ID 改进。订阅价 $12.99/月或 $129/年，新用户免费试用一个月，教育用户 $2.99/月。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0x8nxp002gslb33ixw5j4z"
-      }
-    },
-    {
-      "id": "cmr0wwa6g0085sl40xkkzeruy",
-      "title": "用 shot-scraper video 让 AI 智能体录制工作演示视频",
-      "title_en": "Have your agent record video demos of its work with shot-scraper video",
-      "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video",
-      "permalink": "https://aihot.virxact.com/items/cmr0wwa6g0085sl40xkkzeruy",
-      "source": "Simon Willison 博客",
-      "publishedAt": "2026-06-30T16:54:26.000Z",
-      "summary": "shot-scraper 1.10 新增 shot-scraper video 命令，支持通过 storyboard.yml 文件定义操作步骤，并利用 Playwright 录制浏览器视频。演示视频展示了 Datasette 中从粘贴的 CSV/TSV/JSON 数据创建新表的功能。该功能依赖 Playwright 1.61.0 新增的 screencast 机制，解决了此前视频开头白帧、宽度固定 800px 等问题。开发者 Simon Willison 强调，将 --help 输出设计得足够详细，可使编码 Agent 直接利用该命令生成演示视频。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0wwa6g0085sl40xkkzeruy"
-      }
-    },
-    {
-      "id": "cmr0v1pn7009kslatrt4gncmj",
-      "title": "Claude Desktop 推出 Linux 公测版",
-      "title_en": "Claude Desktop is now available on Linux （Ubuntu and Debian） in beta. Alongside the browser and ter…",
-      "url": "https://x.com/ClaudeDevs/status/2071988881717871065",
-      "permalink": "https://aihot.virxact.com/items/cmr0v1pn7009kslatrt4gncmj",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-06-30T16:06:59.000Z",
-      "summary": "Claude Desktop 现已在 Linux（Ubuntu 和 Debian）上推出测试版。\n\n除了浏览器和终端，你现在可以在所有付费计划中获得一流的桌面体验，包括 Claude Code、Claude Cowork 和聊天。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0v1pn7009kslatrt4gncmj"
-      }
-    },
-    {
-      "id": "cmr07c62l04huslkimxy3vdw5",
-      "title": "X（Twitter）发布 hosted X MCP，AI 智能体可直连 X API",
-      "title_en": "Twitter 终于有 MCP 了，这个非常有用！ 如果你像我一样依赖 Twitter 信息的话，就可以让 AI 帮你自动整理、总结和对你的数据进行分析 不过依然需要你注册 Twitter 的 A…",
-      "url": "https://x.com/op7418/status/2071816099986022650",
-      "permalink": "https://aihot.virxact.com/items/cmr07c62l04huslkimxy3vdw5",
-      "source": "X：歸藏 (@op7418)",
-      "publishedAt": "2026-06-30T04:40:25.000Z",
-      "summary": "X（Twitter）官方推出 hosted X MCP，AI 智能体可通过 MCP 协议直接调用 X API 获取实时信息，支持 Grok、Cursor 等工具。用户需注册 X API 并按量付费，个人优惠价每次调用 0.01 美元（1 美元 1000 次）。有用户实测拉取近三天书签仅花 0.1 美元。配置步骤：创建 APP 并充值、获取配置 ID、辅助配置（可交给 Codex/Claude）、授权启动。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr07c62l04huslkimxy3vdw5"
-      }
-    },
-    {
-      "id": "cmqzzpqet02gpslki3d15k1l0",
-      "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
-      "title_en": "大更新我的AI热点Skill，这次把国内外自媒体大神都包圆了",
-      "url": "https://mp.weixin.qq.com/s/iW5FVqbHtYi31mJ22Q_cog",
-      "permalink": "https://aihot.virxact.com/items/cmqzzpqet02gpslki3d15k1l0",
-      "source": "公众号：卡尔的AI沃茨",
-      "publishedAt": "2026-06-30T01:47:00.000Z",
-      "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqzzpqet02gpslki3d15k1l0"
-      }
-    },
-    {
-      "id": "cmqzo4q2o005oslkhjl7jdtoc",
-      "title": "OpenClaw 发布原生 iOS 与 Android 应用",
-      "title_en": "OpenClaw is now on iOS + Android 🦞 📱 Native mobile apps， finally 💬 Agents in your pocket 🔔 Chan…",
-      "url": "https://x.com/openclaw/status/2071688039114342592",
-      "permalink": "https://aihot.virxact.com/items/cmqzo4q2o005oslkhjl7jdtoc",
-      "source": "X：OpenClaw (@openclaw)",
-      "publishedAt": "2026-06-29T20:11:33.000Z",
-      "summary": "OpenClaw 现已登陆 iOS 和 Android 🦞\n\n📱 原生移动应用，终于来了\n💬 智能体装进口袋\n🔔 频道、任务、回复，随时处理\n\n用你的大拇指，在任何地方运行智能体。\n\niOS： https://apps.apple.com/us/app/openclaw-ai-that-does-things/id6780396132\nAndroid： https://play.google.com/store/apps/details?id=ai.openclaw.app",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqzo4q2o005oslkhjl7jdtoc"
-      }
-    },
-    {
-      "id": "cmr5bqxtn00z0slc7ddaykk09",
-      "title": "Google Research 将建筑屋顶反射率数据集扩展至全球 50+ 城市",
-      "title_en": "Expanding our Heat Resilience data to 50+ global cities",
-      "url": "https://research.google/blog/expanding-our-heat-resilience-data-to-50-global-cities",
-      "permalink": "https://aihot.virxact.com/items/cmr5bqxtn00z0slc7ddaykk09",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-29T16:00:00.000Z",
-      "summary": "Google Research 发布扩展的建筑屋顶反射率数据集，覆盖全球 50 多个城市，旨在帮助城市规划者优先部署冷屋顶方案以缓解极端高温。该数据集融合 Sentinel-2 卫星数据与 30 厘米分辨率的 Airbus Pléiades Neo 卫星图像生成，可通过新的高分辨率 Heat Resilience Earth Engine App 开放获取。相关方法论发表于《Nature Communications》。此前 2024 年的试点已覆盖 14 个城市，其数据曾指导制定冷屋顶条例与适应计划。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr5bqxtn00z0slc7ddaykk09"
-      }
-    },
-    {
-      "id": "cmr0xc7sg0040slb3yenz5k02",
-      "title": "Claude Science 科研工作台正式上线",
-      "title_en": "Claude Science， an AI workbench for scientists， is now available",
-      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "permalink": "https://aihot.virxact.com/items/cmr0xc7sg0040slb3yenz5k02",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-29T16:00:00.000Z",
-      "summary": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器轨迹等），内置reviewer agent自动检查引用与计算错误。通过NVIDIA BioNeMo接入Evo 2、Boltz-2等模型，也支持连接自有模型与管道。今日以beta版面向Claude Pro、Max、Team和Enterprise用户开放。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0xc7sg0040slb3yenz5k02"
-      }
-    },
-    {
-      "id": "cmqzbkvm2008ysltjog7ffi8l",
-      "title": "Herdr：驻留在终端中的AI智能体多路复用器",
-      "title_en": "Herdr：驻留在终端中的代理多路复用器",
-      "url": "https://github.com/ogulcancelik/herdr",
-      "permalink": "https://aihot.virxact.com/items/cmqzbkvm2008ysltjog7ffi8l",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-06-29T14:03:06.351Z",
-      "summary": "Herdr是一个驻留在终端中的AI智能体多路复用器，允许用户在单一终端界面内管理和切换多个AI智能体会话。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqzbkvm2008ysltjog7ffi8l"
-      }
-    },
-    {
-      "id": "cmqzisfra009asl8hojqmr1k2",
-      "title": "从任何地点构建--Cursor for iOS 公测版发布",
-      "title_en": "Build from anywhere with Cursor for iOS",
-      "url": "https://cursor.com/blog/ios-mobile-app",
-      "permalink": "https://aihot.virxact.com/items/cmqzisfra009asl8hojqmr1k2",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-06-29T12:00:00.000Z",
-      "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqzisfra009asl8hojqmr1k2"
-      }
-    },
-    {
-      "id": "cmqz49v7400e4sldyr126zupc",
-      "title": "小红书 RedKnot 推理引擎：将 KV Cache 按注意力头拆解实现长文本加速",
-      "title_en": "让 KV Cache「按头分家」：小红书 RedKnot 如何重做长文本推理新引擎",
-      "url": "https://mp.weixin.qq.com/s/qRrZvL0aZzYI82djFSrLug",
-      "permalink": "https://aihot.virxact.com/items/cmqz49v7400e4sldyr126zupc",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-06-29T11:00:07.000Z",
-      "summary": "RedKnot 将 KV Cache 沿注意力头维度拆解，通过头分类稀疏（局部头占 83.4%-96.8%）、稀疏 FFN 和 SegPagedAttention 三个机制统一算法与存储粒度。在 8 卡 H800 上，TTFT 最高加速 1.6-3.54×，单卡并发提升 4.7-7.8×，预填充 FLOPs 削减 67%-79.5%。DeepSeek-V4-Flash 上 128K 上下文 TTFT 加速达 5.16×，KV 传输最多省 6.3×。精度通常不低于稠密 F1 的 95%。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqz49v7400e4sldyr126zupc"
-      }
-    },
-    {
-      "id": "cmqz3upwc00axsldytm3kw949",
-      "title": "EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能",
-      "title_en": "Meet EverOS： An Open Source Markdown-First Agent Memory Runtime With Hybrid BM25 + Vector Retrieval and Self-Evolving Skills",
-      "url": "https://www.marktechpost.com/2026/06/29/meet-everos-an-open-source-markdown-first-agent-memory-runtime-with-hybrid-bm25-vector-retrieval-and-self-evolving-skills",
-      "permalink": "https://aihot.virxact.com/items/cmqz3upwc00axsldytm3kw949",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-06-29T10:42:47.000Z",
-      "summary": "EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延迟低于 500ms。运行时可本地优先部署，也提供 EverOS Cloud 托管选项，兼容 OpenAI 协议端点。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmqz3upwc00axsldytm3kw949"
       }
     }
   ]

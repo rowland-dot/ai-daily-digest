@@ -4,6 +4,40 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmrb2mxmc0072ihl1mx0aw1bz",
+      "title": "Meta Superintelligence Labs 推出 Muse Image 和 Muse Video",
+      "title_en": "Introducing Muse Image and Muse Video， the first media generation models developed by Meta Superinte…",
+      "url": "https://x.com/AIatMeta/status/2074577662840832382",
+      "permalink": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz",
+      "source": "X：AI at Meta (@AIatMeta)",
+      "publishedAt": "2026-07-07T19:33:53.000Z",
+      "summary": "Meta Superintelligence Labs 发布首个媒体生成模型 Muse Image 和 Muse Video。Muse Image 是目前最先进的图像生成模型，能精确遵循指令、精准编辑、多参考构图，并利用 Instagram 社交上下文。它还具备智能体工具使用能力并集成 Muse Spark。用户可通过 Meta AI 应用、网页、Instagram Stories 和 WhatsApp 试用，初始限于部分国家。Muse Video 基于相同预训练基础，实现高视觉保真度并原生支持音频。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz"
+      }
+    },
+    {
+      "id": "cmr8tzbde00jjsllsayhpgjqg",
+      "title": "Fun-ASR-Realtime 发布：单模型支持30种语言与16种方言，识别准确率领先",
+      "title_en": "🔥Fun-ASR-Realtime发布：语音识别再升级！",
+      "url": "https://mp.weixin.qq.com/s/ntw0SliBi4f8LROnFY26kA",
+      "permalink": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg",
+      "source": "公众号：通义实验室（千问）",
+      "publishedAt": "2026-07-06T06:09:29.000Z",
+      "summary": "通义实验室发布Fun-ASR-Realtime实时语音识别模型。单模型覆盖30种语言及16种方言，针对东亚、东南亚地区重点优化。在工业级方言测评inhouse上取得87.8%的语义准确率，大幅领先，多地方言接近人工水平。引入上下文理解与动态热词注入，实现同音词、品牌名等语义消歧。流式识别首字延迟控制在百毫秒级，准确率接近离线水平，支持多语言无缝切换。API已上线阿里云百炼平台。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg"
+      }
+    },
+    {
       "id": "cmr7vpphy007oslgnz4aotpx4",
       "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
       "title_en": "🐱 LongCat-2.0 is now fully open-source - MIT licensed， no restrictions. Since our launch a few day…",
@@ -35,6 +69,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr53vzsc07l3sll5x8mfscz3"
+      }
+    },
+    {
+      "id": "cmr8voeny011bsllslvt09azq",
+      "title": "腾讯混元正式发布Hy3模型",
+      "title_en": "Hy3正式发布",
+      "url": "https://hunyuan.tencent.com/research/100064?langVersion=zh",
+      "permalink": "https://aihot.virxact.com/items/cmr8voeny011bsllslvt09azq",
+      "source": "腾讯混元：Research（API）",
+      "publishedAt": "2026-07-02T02:32:08.000Z",
+      "summary": "腾讯混元于7月6日正式发布Hy3模型。相比preview版，任务解决率从72%升至90%，平均耗时缩短34%；幻觉率从12.5%降至5.4%，常识错误率从25.4%降至12.7%，多轮问题率从17.4%降至7.9%，长对话基准MRCR从42.9%升至75.1%。在270位专家盲测中均分2.67/4，优于GLM5.1的2.51/4。API价格为输入1元/百万tokens、输出4元、缓存命中0.25元。模型已基于Apache 2.0协议开源。",
+      "category": "ai-models",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr8voeny011bsllslvt09azq"
       }
     },
     {
@@ -86,57 +137,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr1js18u03imslnld2yrjboo"
-      }
-    },
-    {
-      "id": "cmr0ucc880030slatw1gfkq2h",
-      "title": "Google DeepMind 发布 Nano Banana 2 Lite 和 Gemini Omni Flash",
-      "title_en": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
-      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
-      "permalink": "https://aihot.virxact.com/items/cmr0ucc880030slatw1gfkq2h",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-06-30T16:02:40.000Z",
-      "summary": "Google DeepMind 推出 Nano Banana 2 Lite（gemini-3.1-flash-lite-image），为 Nano Banana 系列速度最快、成本最低的图像模型，文本到图像输出仅需 4 秒，每 1K 分辨率图像成本 $0.034，已上线 Google AI Studio、Gemini API 及消费者产品（AI Mode in Search、Gemini app 等）。同时推出 Gemini Omni Flash（gemini-omni-flash-preview），支持高画质视频生成与对话式编辑，视频输出定价 $0.10/秒，面向开发者开放 API。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0ucc880030slatw1gfkq2h"
-      }
-    },
-    {
-      "id": "cmr5bqxtn00z1slc77gvm7ybl",
-      "title": "Google Research 推出 TabFM：用于表格数据的零样本基础模型",
-      "title_en": "Introducing TabFM： A zero-shot foundation model for tabular data",
-      "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data",
-      "permalink": "https://aihot.virxact.com/items/cmr5bqxtn00z1slc77gvm7ybl",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-06-29T16:00:00.000Z",
-      "summary": "Google Research 发布 TabFM，一种基于上下文学习（ICL）的零样本基础模型，专为表格数据的分类与回归任务设计。TabFM 将整个数据集（包含训练样本与待预测行）作为统一提示输入，在推理时直接从上下文中学习行列关系，无需模型训练、超参数调优或特征工程。与需大量人工调优的传统方法（如 XGBoost）不同，TabFM 通过单次前向传播即可在新表格上生成高质量预测。该模型已在 Hugging Face 和 GitHub 上开源。",
-      "category": "ai-models",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr5bqxtn00z1slc77gvm7ybl"
-      }
-    },
-    {
-      "id": "cmr0yev3s005cslw8omm20ml6",
-      "title": "Claude Sonnet 5 发布",
-      "title_en": "Introducing Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "permalink": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-06-29T16:00:00.000Z",
-      "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。",
-      "category": "ai-models",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6"
       }
     }
   ]

@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-07-06T21:56:54.203Z",
+  "fetched_at": "2026-07-07T21:54:16.446Z",
   "repos": [
     {
-      "owner": "asgeirtj",
-      "name": "system_prompts_leaks",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 51378,
-      "forks": 8374,
-      "starsToday": 1386
-    },
-    {
-      "owner": "addyosmani",
-      "name": "agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 70709,
-      "forks": 7661,
-      "starsToday": 1114
+      "owner": "MadsLorentzen",
+      "name": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 10464,
+      "forks": 3575,
+      "starsToday": 2402
     },
     {
       "owner": "Zackriya-Solutions",
@@ -30,9 +19,20 @@
       "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai ) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 19212,
-      "forks": 1949,
-      "starsToday": 2493
+      "stars": 20598,
+      "forks": 2071,
+      "starsToday": 1781
+    },
+    {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 72035,
+      "forks": 7802,
+      "starsToday": 1311
     },
     {
       "owner": "ruvnet",
@@ -41,97 +41,42 @@
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 77442,
-      "forks": 10401,
-      "starsToday": 471
+      "stars": 78439,
+      "forks": 10559,
+      "starsToday": 1122
     },
     {
-      "owner": "Leonxlnx",
-      "name": "taste-skill",
-      "url": "https://github.com/Leonxlnx/taste-skill",
-      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 58823,
-      "forks": 4007,
-      "starsToday": 1453
+      "stars": 52876,
+      "forks": 8618,
+      "starsToday": 1704
     },
     {
-      "owner": "alirezarezvani",
-      "name": "claude-skills",
-      "url": "https://github.com/alirezarezvani/claude-skills",
-      "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 21107,
-      "forks": 2838,
-      "starsToday": 611
-    },
-    {
-      "owner": "openai",
-      "name": "codex-plugin-cc",
-      "url": "https://github.com/openai/codex-plugin-cc",
-      "description": "Use Codex from Claude Code to review code or delegate tasks.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 26231,
-      "forks": 1571,
-      "starsToday": 910
-    },
-    {
-      "owner": "mvanhorn",
-      "name": "last30days-skill",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 49683,
-      "forks": 4139,
-      "starsToday": 511
-    },
-    {
-      "owner": "ogulcancelik",
-      "name": "herdr",
-      "url": "https://github.com/ogulcancelik/herdr",
-      "description": "agent multiplexer that lives in your terminal.",
+      "owner": "TencentCloud",
+      "name": "CubeSandbox",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 12803,
-      "forks": 745,
-      "starsToday": 783
+      "stars": 8418,
+      "forks": 708,
+      "starsToday": 665
     },
     {
-      "owner": "bradautomates",
-      "name": "claude-video",
-      "url": "https://github.com/bradautomates/claude-video",
-      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 4147,
-      "forks": 594,
-      "starsToday": 539
-    },
-    {
-      "owner": "karakeep-app",
-      "name": "karakeep",
-      "url": "https://github.com/karakeep-app/karakeep",
-      "description": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 26847,
-      "forks": 1318,
-      "starsToday": 178
-    },
-    {
-      "owner": "firecrawl",
-      "name": "firecrawl",
-      "url": "https://github.com/firecrawl/firecrawl",
-      "description": "The API to search, scrape, and interact with the web at scale. 🔥",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 146136,
-      "forks": 8405,
-      "starsToday": 834
+      "owner": "AhmadIbrahiim",
+      "name": "Website-downloader",
+      "url": "https://github.com/AhmadIbrahiim/Website-downloader",
+      "description": "💡 Download the complete source code of any website (including all assets). [ Javascripts, Stylesheets, Images ] using Node.js",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 3918,
+      "forks": 982,
+      "starsToday": 173
     },
     {
       "owner": "steipete",
@@ -140,42 +85,64 @@
       "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "stars": 16699,
-      "forks": 1374,
-      "starsToday": 598
+      "stars": 17006,
+      "forks": 1386,
+      "starsToday": 377
     },
     {
-      "owner": "alibaba",
-      "name": "zvec",
-      "url": "https://github.com/alibaba/zvec",
-      "description": "A lightweight, lightning-fast, in-process vector database",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 13452,
-      "forks": 819,
-      "starsToday": 355
+      "owner": "dotnet",
+      "name": "skills",
+      "url": "https://github.com/dotnet/skills",
+      "description": "Repository for skills to assist AI coding agents with .NET and C#",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 4279,
+      "forks": 324,
+      "starsToday": 82
     },
     {
-      "owner": "sindresorhus",
-      "name": "awesome",
-      "url": "https://github.com/sindresorhus/awesome",
-      "description": "😎 Awesome lists about all kinds of interesting topics",
-      "language": "",
-      "languageColor": "",
-      "stars": 482224,
-      "forks": 35731,
-      "starsToday": 393
+      "owner": "iOfficeAI",
+      "name": "OfficeCLI",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 9814,
+      "forks": 671,
+      "starsToday": 802
     },
     {
-      "owner": "gastownhall",
-      "name": "gastown",
-      "url": "https://github.com/gastownhall/gastown",
-      "description": "Gas Town - multi-agent workspace manager",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 16657,
-      "forks": 1537,
-      "starsToday": 293
+      "owner": "bradautomates",
+      "name": "claude-video",
+      "url": "https://github.com/bradautomates/claude-video",
+      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 5083,
+      "forks": 657,
+      "starsToday": 953
+    },
+    {
+      "owner": "kyutai-labs",
+      "name": "pocket-tts",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "description": "A TTS that fits in your CPU (and pocket)",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 6089,
+      "forks": 637,
+      "starsToday": 510
+    },
+    {
+      "owner": "hesreallyhim",
+      "name": "awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 49052,
+      "forks": 4274,
+      "starsToday": 227
     }
   ]
 }
