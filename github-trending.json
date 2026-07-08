@@ -1,28 +1,6 @@
 {
-  "fetched_at": "2026-07-07T21:54:16.446Z",
+  "fetched_at": "2026-07-08T21:43:07.363Z",
   "repos": [
-    {
-      "owner": "MadsLorentzen",
-      "name": "ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 10464,
-      "forks": 3575,
-      "starsToday": 2402
-    },
-    {
-      "owner": "Zackriya-Solutions",
-      "name": "meetily",
-      "url": "https://github.com/Zackriya-Solutions/meetily",
-      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai ) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 20598,
-      "forks": 2071,
-      "starsToday": 1781
-    },
     {
       "owner": "addyosmani",
       "name": "agent-skills",
@@ -30,9 +8,9 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 72035,
-      "forks": 7802,
-      "starsToday": 1311
+      "stars": 73828,
+      "forks": 7965,
+      "starsToday": 1322
     },
     {
       "owner": "ruvnet",
@@ -41,64 +19,53 @@
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 78439,
-      "forks": 10559,
-      "starsToday": 1122
-    },
-    {
-      "owner": "asgeirtj",
-      "name": "system_prompts_leaks",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 52876,
-      "forks": 8618,
-      "starsToday": 1704
+      "stars": 79083,
+      "forks": 10641,
+      "starsToday": 793
     },
     {
       "owner": "TencentCloud",
-      "name": "CubeSandbox",
-      "url": "https://github.com/TencentCloud/CubeSandbox",
-      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 8418,
-      "forks": 708,
-      "starsToday": 665
+      "name": "TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 7582,
+      "forks": 704,
+      "starsToday": 351
     },
     {
-      "owner": "AhmadIbrahiim",
-      "name": "Website-downloader",
-      "url": "https://github.com/AhmadIbrahiim/Website-downloader",
-      "description": "💡 Download the complete source code of any website (including all assets). [ Javascripts, Stylesheets, Images ] using Node.js",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 3918,
-      "forks": 982,
-      "starsToday": 173
+      "owner": "prisma",
+      "name": "prisma",
+      "url": "https://github.com/prisma/prisma",
+      "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 46519,
+      "forks": 2278,
+      "starsToday": 30
     },
     {
-      "owner": "steipete",
-      "name": "CodexBar",
-      "url": "https://github.com/steipete/CodexBar",
-      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 17006,
-      "forks": 1386,
-      "starsToday": 377
+      "owner": "mvanhorn",
+      "name": "last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 50685,
+      "forks": 4230,
+      "starsToday": 373
     },
     {
-      "owner": "dotnet",
-      "name": "skills",
-      "url": "https://github.com/dotnet/skills",
-      "description": "Repository for skills to assist AI coding agents with .NET and C#",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 4279,
-      "forks": 324,
-      "starsToday": 82
+      "owner": "argoproj",
+      "name": "argo-cd",
+      "url": "https://github.com/argoproj/argo-cd",
+      "description": "Declarative Continuous Deployment for Kubernetes",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 23414,
+      "forks": 7424,
+      "starsToday": 20
     },
     {
       "owner": "iOfficeAI",
@@ -107,9 +74,75 @@
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
       "language": "C#",
       "languageColor": "#178600",
-      "stars": 9814,
-      "forks": 671,
-      "starsToday": 802
+      "stars": 11645,
+      "forks": 790,
+      "starsToday": 1712
+    },
+    {
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 54072,
+      "forks": 8800,
+      "starsToday": 1226
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 249750,
+      "forks": 22160,
+      "starsToday": 999
+    },
+    {
+      "owner": "alibaba",
+      "name": "zvec",
+      "url": "https://github.com/alibaba/zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 14361,
+      "forks": 884,
+      "starsToday": 370
+    },
+    {
+      "owner": "Diolinux",
+      "name": "PhotoGIMP",
+      "url": "https://github.com/Diolinux/PhotoGIMP",
+      "description": "A Patch for GIMP 3+ for Photoshop Users",
+      "language": "CSS",
+      "languageColor": "#663399",
+      "stars": 14976,
+      "forks": 592,
+      "starsToday": 916
+    },
+    {
+      "owner": "wonderwhy-er",
+      "name": "DesktopCommanderMCP",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 6355,
+      "forks": 746,
+      "starsToday": 20
+    },
+    {
+      "owner": "huxingyi",
+      "name": "autoremesher",
+      "url": "https://github.com/huxingyi/autoremesher",
+      "description": "Automatic quad remeshing tool",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 1963,
+      "forks": 147,
+      "starsToday": 292
     },
     {
       "owner": "bradautomates",
@@ -118,31 +151,20 @@
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 5083,
-      "forks": 657,
-      "starsToday": 953
+      "stars": 5986,
+      "forks": 714,
+      "starsToday": 948
     },
     {
-      "owner": "kyutai-labs",
-      "name": "pocket-tts",
-      "url": "https://github.com/kyutai-labs/pocket-tts",
-      "description": "A TTS that fits in your CPU (and pocket)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6089,
-      "forks": 637,
-      "starsToday": 510
-    },
-    {
-      "owner": "hesreallyhim",
-      "name": "awesome-claude-code",
-      "url": "https://github.com/hesreallyhim/awesome-claude-code",
-      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 49052,
-      "forks": 4274,
-      "starsToday": 227
+      "owner": "TencentCloud",
+      "name": "CubeSandbox",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 8884,
+      "forks": 736,
+      "starsToday": 555
     }
   ]
 }

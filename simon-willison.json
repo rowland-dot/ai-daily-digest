@@ -1,12 +1,30 @@
 {
-  "fetched_at": "2026-07-07T21:54:32.236Z",
+  "fetched_at": "2026-07-08T21:43:22.049Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Kenton Varda",
+      "link": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything",
+      "updated": "2026-07-08T20:03:34+00:00",
+      "summary": "I just declared a moratorium against AI-written change descriptions (e.g. PR and commit messages, also issues/tickets) from my team. AI was writing change descriptions that were worse than useless to me as I tried to review PRs: outlining details of the code that could easily be seen by looking at the code, but omitting the higher-level framing needed to understand broadly what the code is doing."
+    },
     {
       "title": "sqlite-utils 4.0, now with database schema migrations",
       "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
       "updated": "2026-07-07T19:32:57+00:00",
       "summary": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide ), this version introduces three major features: database migrations , nested transactions (via a new db.atomic() method), and support for compound foreign keys ."
+    },
+    {
+      "title": "sqlite-migrate 0.2",
+      "link": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything",
+      "updated": "2026-07-07T16:33:55+00:00",
+      "summary": "The version that retires the library, instead implementing a compatibility shim against the new sqlite-utils 4.0 dependency."
+    },
+    {
+      "title": "github-code Web Component",
+      "link": "https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything",
+      "updated": "2026-07-07T16:18:16+00:00",
+      "summary": "An experimental Web Component built using GPT-5.5 and the following prompt :"
     },
     {
       "title": "sqlite-utils 4.0",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
       "updated": "2026-07-04T22:53:52+00:00",
       "summary": "Better Models: Worse Tools"
-    },
-    {
-      "title": "Open Source AI Gap Map",
-      "link": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
-      "updated": "2026-07-03T22:04:31+00:00",
-      "summary": "Open Source AI Gap Map"
-    },
-    {
-      "title": "Quoting Josh W. Comeau",
-      "link": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
-      "updated": "2026-07-03T21:25:52+00:00",
-      "summary": "I just launched my third course, Whimsical Animations, and so far, it’s on track to sell roughly ⅓ as many copies as a typical course launch. It’s a similar story with my two existing courses. Sales are down significantly from last year. There are likely a lot of reasons for this, but I think the biggest is AI. There’s sort of a double whammy with AI: Many people are wondering whether developer jobs will even exist in a few months, so they’re reluctant to spend time/money learning new dev skills. Even if they do want to learn new dev skills, LLMs can provide personalized tutoring, so there’s less incentive to buy a paid course. [...] I’ve spoken to a few course creators now, and we’re all seeing the same trend. Revenue down 50%+. Fewer people engaging with our content. People switching to LLMs, which slurp up all of our work and regurgitate it, without consent or compensation."
-    },
-    {
-      "title": "Fable's judgement",
-      "link": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
-      "updated": "2026-07-03T18:51:06+00:00",
-      "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work."
     }
   ]
 }
