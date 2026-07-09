@@ -1,49 +1,61 @@
 {
-  "generated_at": "2026-07-08T21:47:00Z",
+  "generated_at": "2026-07-09T22:09:37Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uqnqsc/chinas_minimax_plans_to_launch_27trillion/": {
-      "en": "The Information reports that Chinese startup MiniMax is preparing a next-generation large language model with 2.7 trillion parameters, internally codenamed M3 Pro. The company plans to release and open-source it as early as the third quarter, positioning it as a major upgrade over the current 428 billion parameter M3 flagship. The larger scale is expected to bring significant gains on complex reasoning and multi-step instruction-following tasks compared to prior MiniMax models.",
-      "zh": "The Information 报道称，中国 MiniMax 正在准备一款代号 M3 Pro 的新一代大语言模型，参数规模高达 2.7 万亿，最快将于第三季度开源发布。相比目前拥有 4280 亿参数的旗舰模型 M3，这款新模型规模大幅提升，预计在复杂推理和多步骤指令任务上会带来明显进步，被视为 MiniMax 的重大升级。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1urhzox/glm52_fearmongering_in_the_press/": {
+      "en": "The author flags a Futurism piece framing GLM-5.2 as dangerously capable, noting that it can be downloaded freely and run on almost any hardware. Security firms Semgrep and Graphistry benchmarked GLM-5.2 and found it proficient at identifying software bugs, with Semgrep quipping we have Mythos at home. The author worries this kind of framing could be used to justify censorship of open weights.",
+      "zh": "作者转述Futurism一篇报道，称GLM-5.2可自由下载并在几乎任何硬件上运行，被塑造为危险模型。Semgrep和Graphistry的测评显示它擅长识别软件漏洞，Semgrep戏称我们家里也有Mythos。作者担心此类恐慌叙事会成为审查开源权重的借口，直言当下时局难以预料。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uqpxgp/can_you_trust_local_models_to_answer_accurately/": {
-      "en": "A developer benchmarked local Gemma QAT, Qwen and Apple Intelligence models on 7,648 multiple-choice questions generated from Node, LangChain.js, TypeScript, Transformers.js and Vue documentation. Without retrieval, accuracy was mediocre, but adding a Retrieval Augmented Generation pipeline sharply improved results, with Apple Intelligence hitting 86 percent despite a 4 thousand token context limit. Thinking modes gave only about a one-point gain, so the takeaway is that a decent retrieval stack matters more than reasoning tokens.",
-      "zh": "一位开发者用从 Node、LangChain.js、TypeScript、Transformers.js 和 Vue 文档生成的 7648 道选择题，评测了本地 Gemma QAT、Qwen 以及 Apple Intelligence 模型。不接检索时表现平平，接入检索增强生成后大幅提升，Apple Intelligence 即使只有 4 千 tokens 上下文也拿到 86 分。开启思考模式只带来约一分提升，说明检索栈比推理链更关键。",
-      "title_en": "A developer benchmarks local Gemma, Qwen and Apple Intelligence on 7,648 documentation questions with and without retrieval augmented generation",
-      "title_zh": "开发者用 7648 道文档问题对比本地 Gemma、Qwen 与 Apple Intelligence 在检索增强下的表现"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ura4d0/qwen35_122b_is_the_best/": {
+      "en": "Running OpenCode on a 128 gigabyte machine, the author found Qwen 3.5 122B consistently outperformed smaller alternatives on complex agentic workflows. Qwen 3.6 27B and 33B behaved too aggressively and mishandled tool calls, while Gemma 4 26B and 31B were too passive and needed constant prompting. Qwen 3.5 122B extracted structured fields from 160 PowerPoint files in about two hours, making the 120 billion parameter Mixture of Experts band feel like the local sweet spot.",
+      "zh": "作者在128GB内存机器上通过OpenCode测试多款本地模型：Qwen 3.6 27B和33B在多工具调用中过于激进、工具调用不稳定；Gemma 4 26B和31B又过于被动需要频繁引导。而Qwen 3.5 122B在两小时内从160份PowerPoint中提取指定字段，作者认为120B级Mixture of Experts是本地推理的甜蜜点。",
+      "title_en": "Qwen 3.5 122B keeps outperforming smaller local models on complex agent tasks",
+      "title_zh": "Qwen 3.5 122B在复杂智能体任务上持续跑赢较小的本地模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uqk69n/introducing_horus_hiero_a_hieroglyphic_language/": {
-      "en": "Tokenaii released Horus Hiero, an open-source multimodal model line for translating Ancient Egyptian hieroglyphs, shipping in a 9 billion parameter version and a 4 billion Mini variant tuned for phones and CPUs. Built on Qwen 3.5, it covers roughly 150 languages, handles text, images and video, and offers a 512 thousand token context expandable to one million. Reported scores include 79 percent on MMLU-Pro, 63 on LiveCodeBench and 84 on HumanEval.",
-      "zh": "Tokenaii 发布开源多模态模型 Horus Hiero，用于翻译古埃及象形文字，包含 90 亿参数版和面向手机与 CPU 的 40 亿参数 Mini 版。模型基于 Qwen 3.5，支持约 150 种语言、文字图像视频三模态，上下文可达 51 万 2 千 tokens 并可扩展至一百万。MMLU-Pro 得 79 分，LiveCodeBench 63 分，HumanEval 84 分。",
-      "title_en": "Tokenaii releases Horus Hiero, an open source multimodal model for translating Ancient Egyptian hieroglyphs",
-      "title_zh": "Tokenaii 开源多模态模型 Horus Hiero，专注古埃及象形文字翻译"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1urbn11/which_open_models_help_the_eco_system_more/": {
+      "en": "The author points readers to the Artificial Analysis openness index as a way to compare how genuinely open various model releases are. K2 Think version 2 ranks highest because it publishes both training data and training procedure, letting anyone with enough compute reproduce it. DeepSeek scores lower because it withholds those details. The post analogizes model openness to software: shipping the binary is one level, shipping the source is a stronger commitment.",
+      "zh": "作者引用Artificial Analysis的开放度指数，比较各家开源模型的开放程度。K2 Think v2排名最高，因为它公开了训练数据和训练流程，任何有算力的人都可复现。DeepSeek因未公开这些细节而得分较低。作者类比软件：提供二进制是一层开放，提供源码则是更高层次的承诺。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uqs7ws/döner_bench_round_2_quant_compare/": {
-      "en": "The community Döner Bench returned for a second round, this time comparing quantization levels of the same base models on a single-file HTML canvas prompt that renders a rotating vertical kebab over a gas element. Nine finished runs per quant were retained, and the tester noted Gemma 4 in particular degraded visibly as bit depth dropped, while low quants of Qwen 3.6 27B and 35B Mixture of Experts variants produced increasingly chaotic scenes.",
-      "zh": "社区 Döner Bench 第二轮登场，这次用同一段旋转烤肉串画布提示，横向对比同一模型的不同量化档位。作者对每档保留 9 次有效运行，观察到 Gemma 4 在低位量化下明显变笨，Qwen 3.6 27B 及 35B 混合专家版低量化下画面愈发混乱，展示了量化压缩对复杂创作任务的削弱。",
-      "title_en": "Community Döner Bench compares quantization levels of Gemma 4 and Qwen 3.6 on a rotating kebab canvas prompt",
-      "title_zh": "社区 Döner Bench 用旋转烤肉串画布对比 Gemma 4 与 Qwen 3.6 的量化版本表现"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uru9ja/nvidia_puzzle75ba9b_nvfp4_at_132_ts_on_33090_why/": {
+      "en": "On three RTX 3090 GPUs, the author benchmarks Nemotron 3 Puzzle 75B with 9 billion active parameters at 4 bit floating point precision using vLLM 0.22.1. They report roughly 132 tokens per second decode across three concurrent streams, prefill near 1949 tokens per second, and about 500 watts at the wall. They argue the 75 billion total, 9 billion active Mixture of Experts shape fills 72 gigabytes of quantized VRAM exactly, hitting dense quality at sparse speed.",
+      "zh": "作者在三块RTX 3090上用vLLM 0.22.1测试Nemotron 3 Puzzle 75B（激活90亿参数）的4位浮点量化版本，三路并发解码约每秒132词元，预填充接近每秒1949词元，整机功耗约500瓦。作者认为750亿总参数、90亿激活的Mixture of Experts结构正好填满72GB量化显存，兼具密集模型质量与稀疏推理速度。",
+      "title_en": "Nemotron 3 Puzzle 75B with 9 billion active parameters fills a triple RTX 3090 rig",
+      "title_zh": "Nemotron 3 Puzzle 75B、90亿激活参数版本完美适配三块RTX 3090"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uqd8i7/i_need_an_adult_jspaceaware/": {
-      "en": "An amateur reader of Anthropic's recent J space paper sketches how the same Jacobian estimator, trained on about a thousand prompts to cheaply approximate how mid-layer vector changes reshape final logits, could be reused elsewhere. He proposes J space aware pruning and merging that scores activations by output influence rather than router weights, and distillation that amplifies the critical reasoning pathways when training smaller students, potentially cutting compute for the local community.",
-      "zh": "一位非科班读者把 Anthropic 最新的 J 空间论文拆解成大白话，并猜想把仅用约一千条 prompt 训练的雅可比估计器复用到别处。他提出以对最终输出影响力打分、而非路由权重的 J 空间感知剪枝与合并，以及在蒸馏时放大关键推理通路的思路，认为这可能让本地社区以更低算力得到不变笨的小模型。",
-      "title_en": "An amateur reader proposes applying Anthropic's J space Jacobian estimator to pruning, merging and distillation",
-      "title_zh": "业余读者设想把 Anthropic 的 J 空间雅可比估计器用于剪枝、合并与蒸馏"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ure84m/82_tps_on_qwen_36_27b_on_a_macbook_pro/": {
+      "en": "The developer announces MTPLX V2, an MLX runtime for Apple silicon. Turbo Mode using custom speculative decoding quantized matrix multiplication kernels plus a compiled verify step reaches 82 tokens per second running Qwen 3.6 27B on a MacBook Pro M5 Max at temperature 0.6. The release also brings solid state drive backed key value cache improvements and better long context tool calling. Preliminary benchmarks from Ivan Fioravanti compare MTPLX to oMLX and NVIDIA DGX Spark.",
+      "zh": "开发者发布MTPLX V2，一款面向Apple Silicon的MLX运行时。Turbo模式采用自研推测解码量化矩阵乘法内核加编译式验证步骤，在MacBook Pro M5 Max上以温度0.6运行Qwen 3.6 27B达到每秒82词元。新版还改进了固态硬盘辅助的键值缓存和长上下文工具调用能力，Ivan Fioravanti公开了对比oMLX和NVIDIA DGX Spark的初步基准。",
+      "title_en": "MTPLX V2 runs Qwen 3.6 27B at 82 tokens per second on a MacBook Pro",
+      "title_zh": "MTPLX V2在MacBook Pro上以每秒82词元运行Qwen 3.6 27B模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uqykgh/qllm_no_transformer_no_mamba_and_new_noval/": {
-      "en": "A long-time indie AI builder released QLLM, a 100 million parameter proof-of-concept model that abandons transformers and Mamba for a phase-associative architecture with constant-time inference and no key value cache, so context length no longer inflates memory. Trained on a 4 billion token mix of dclm, fineweb and smoltalk2 plus supervised fine-tuning, it lands near GPT-2 quality with weights, code and an arXiv paper co-authored with Berkeley and Indiana collaborators.",
-      "zh": "一位深耕多年的独立开发者放出 QLLM，一个仅一亿参数的概念验证模型，抛弃 transformer 与 Mamba，改用相位关联结构，实现常数时间推理且无键值缓存，上下文再长也不撑爆显存。模型在四十亿 tokens 的 dclm、fineweb、smoltalk2 混合语料上预训练并做了监督微调，质量接近 GPT-2，权重、代码和与 Berkeley、Indiana 合著的 arXiv 论文均已开源。",
-      "title_en": "Indie builder releases QLLM, a 100 million parameter proof of concept with a phase associative architecture and constant time inference",
-      "title_zh": "独立开发者发布 QLLM：一亿参数、相位关联架构、常数时间推理的概念验证模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1urd4ln/audiocpp_what_does_the_fox_say_4_asr_models/": {
+      "en": "The maintainer of audio.cpp adds initial streaming support and four speech recognition models: Nemotron 3.5 automatic speech recognition, Higgs Audio speech to text, VibeVoice, and Danish only Hviske. On an RTX 5090, Nemotron 3.5 transcribes 327.6 seconds of audio in 2.17 seconds offline at 3.18 percent word error rate, and its streaming server sent events path reaches a 307 millisecond time to first token. VibeVoice posts the lowest error rate but is much heavier.",
+      "zh": "audio.cpp维护者发布更新，新增流式支持和四款语音识别模型：Nemotron 3.5、Higgs Audio、VibeVoice和仅支持丹麦语的Hviske。在RTX 5090上，Nemotron 3.5离线转录327.6秒音频仅用2.17秒，词错率3.18%；流式服务端事件路径的首词元延迟约307毫秒。VibeVoice词错率最低但计算负担明显更重。",
+      "title_en": "audio.cpp adds four native speech recognition models and initial streaming support",
+      "title_zh": "audio.cpp新增四款原生语音识别模型并支持初步流式传输"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ur1i1a/distilled_deepseek_into_gemma_4_26ba4b_vs_12b_not/": {
-      "en": "A first-time fine-tuner distilled DeepSeek v4 Pro into both Gemma 4 12 billion dense and 26 billion Mixture of Experts checkpoints using Unsloth Studio, QLoRA and identical hyperparameters on a pair of RTX 3090 cards. The Mixture of Experts model soaked up training loss about four times deeper thanks to more internal knowledge, though evaluation loss barely differed. The dense student was faster wall-clock and per GPU, and the whole run cost roughly four dollars.",
-      "zh": "一位首次尝试微调的用户用 Unsloth Studio、QLoRA 与相同超参，在两张 RTX 3090 上把 DeepSeek v4 Pro 蒸馏进 Gemma 4 的 120 亿密集模型和 260 亿参数混合专家模型。混合专家版凭借更丰富的内在知识把训练损失压得约四倍更低，但评估损失几乎持平；密集版单卡吞吐更高、总耗时更短，全部实验成本约四美元。",
-      "title_en": "First time fine tuner distills DeepSeek v4 Pro into dense and Mixture of Experts Gemma 4 checkpoints with Unsloth Studio",
-      "title_zh": "首次微调者用 Unsloth Studio 将 DeepSeek v4 Pro 蒸馏进 Gemma 4 密集版与混合专家版"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uramdp/can_you_explain_the_concept_behind_each_of_the/": {
+      "en": "The poster asks the community to explain the reasoning behind why local large language model releases cluster around specific parameter counts, roughly 30 billion, 70 billion, 120 billion and 230 billion, with visible gaps in between. They speculate the sizing may map to consumer GPU VRAM at 4 bit quantization versus professional server memory at 8 bit precision, and invite others to walk through what each niche is engineered to fit.",
+      "zh": "提问者请社区解释为何本地大语言模型的发布规模集中在约300亿、700亿、1200亿、2300亿参数几个档位，中间存在明显空档。他猜测这些规模档位可能对应4位量化下的消费级GPU显存容量，或8位精度下的专业服务器内存容量，希望有人梳理每个档位究竟对应什么硬件部署场景。",
+      "title_en": "Why do local model sizes cluster around 30, 70, 120 and 230 billion parameters?",
+      "title_zh": "为何本地大模型规模集中在300亿、700亿、1200亿和2300亿参数？"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ur4tz5/what_china_said_at_the_uns_first_global_dialogue/": {
-      "en": "A short excerpt from China's statement at the United Nations' first Global Dialogue on AI Governance frames open-source AI as a shared asset for all humanity. It highlights Chinese open weight models such as DeepSeek and Qwen for lowering the cost and barriers of AI adoption, and pledges continued promotion of open source models for industry, academia and research through international cooperation and inclusive ecosystem building.",
-      "zh": "这段摘录来自中国在联合国首届人工智能治理全球对话上的发言，将开源 AI 定位为全人类的共同财富。发言特别指出 DeepSeek 与 Qwen 等中国开源权重模型显著降低了 AI 采用门槛与成本，并承诺通过国际合作继续向产业界、学术界和研究机构推广开源模型，构建包容性生态。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uru6wf/openmossteammosstranscribediarize_hugging_face/": {
+      "en": "OpenMOSS releases MOSS-Transcribe-Diarize, a 0.9 billion parameter end to end audio understanding model. It jointly performs long form transcription, speaker diarization, timestamping and acoustic event annotation in a single pass, emitting anonymous speaker labels like S01 and S02 without a separate diarization pipeline. Architecture pairs a Qwen 3 0.6B style causal decoder backbone with a Whisper Medium audio encoder, running 16 kilohertz audio through 80 mel bin features in 30 second chunks.",
+      "zh": "OpenMOSS发布MOSS-Transcribe-Diarize，一款9亿参数的端到端音频理解模型。它在单次推理中联合完成长时转录、说话人分离、时间戳标注和声学事件识别，直接输出如S01、S02的匿名说话人标签，无需独立分离流水线。架构上采用Qwen 3 0.6B风格因果解码器与Whisper Medium音频编码器，处理16千赫兹音频、80维梅尔特征、30秒切片。",
+      "title_en": "OpenMOSS releases MOSS Transcribe Diarize, an end to end long form audio understanding model",
+      "title_zh": "OpenMOSS发布端到端长时音频理解模型MOSS Transcribe Diarize"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1urt5o4/openmed_18_apache20_clinical_deidentification/": {
+      "en": "OpenMed 1.8 ships an Apache 2 licensed clinical natural language processing toolkit that keeps patient data on device. New in this release: an Android kit built on ONNX Runtime Mobile and ML Kit optical character recognition, iOS and React Native bridges, a browser runtime via Transformers dot js with web assembly and WebGPU backends, a verify pdf redaction checker, and DICOM de identification including burned in pixel text. Two OpenMed models currently rank first and second on the personally identifiable information masking benchmark English board.",
+      "zh": "OpenMed 1.8发布Apache 2许可的临床自然语言处理工具包，坚持患者数据不离设备。新版增加基于ONNX Runtime Mobile和ML Kit光学字符识别的Android套件、iOS及React Native桥接、通过Transformers.js配合WebAssembly和WebGPU的浏览器运行时、检查PDF残留文本的verify-pdf工具，以及支持烧入像素文字的DICOM去标识化。两款OpenMed模型目前在个人身份信息脱敏基准英文榜上排名第一和第二。",
+      "title_en": "OpenMed 1.8 brings Apache licensed clinical de identification to Android, iOS and browser",
+      "title_zh": "OpenMed 1.8将Apache许可的临床去标识化能力带到Android、iOS和浏览器"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1urymln/6x_mi50s_96gb_vs_6_p40s_144gb_running_minimax_m27/": {
+      "en": "The author benchmarks MiniMax M2.7 REAP 139 billion parameters at 3 bit K quantization on six AMD MI50 GPUs providing 96 gigabytes of VRAM across an Asus X99 workstation with a Xeon E5 2680 v4 and 128 gigabytes of DDR4. On llama.cpp with ROCm, prompt processing reaches about 139 tokens per second at 512 token prompts, generation runs at 24.87 tokens per second, and combined throughput stays above 100 tokens per second up to 16 thousand token contexts, tested out to 65 thousand tokens.",
+      "zh": "作者在六块AMD MI50显卡（合计96GB显存）上运行MiniMax M2.7 REAP 1390亿参数模型的3位K量化版本，硬件包括华硕X99-E-WS主板、Intel Xeon E5-2680 v4处理器和128GB DDR4内存。在llama.cpp配合ROCm下，512词元预填充速度约每秒139词元，生成速度每秒24.87词元，16千词元上下文组合吞吐仍超每秒100词元，最大测试到65千词元上下文。",
+      "title_en": "Six AMD MI50 GPUs benchmark MiniMax M2.7 REAP 139 billion parameters at 3 bit quantization",
+      "title_zh": "六块AMD MI50显卡实测MiniMax M2.7 REAP 1390亿参数模型3位量化版本"
     }
   }
 }
