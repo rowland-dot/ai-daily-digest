@@ -1,8 +1,212 @@
 {
-  "count": 8,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmre1qgk200f2ihwkzkndva9a",
+      "title": "GPT-5.6家族推出，Sol获53.6分",
+      "title_en": "OPENAI 👀： GPT-5.6 is a good candidate to be a daily driver for most agentic tasks. > On Agents' L…",
+      "url": "https://x.com/testingcatalog/status/2075330856499990830",
+      "permalink": "https://aihot.virxact.com/items/cmre1qgk200f2ihwkzkndva9a",
+      "source": "X：Testing Catalog (@testingcatalog)",
+      "publishedAt": "2026-07-09T21:26:48.000Z",
+      "summary": "OPENAI 👀：GPT-5.6 是大多数智能体任务日常使用的良好候选。\n\n> 在 Agents' Last Exam 中，GPT-5.6 Sol 创下 53.6 分的新高。\n\n目前，许多用户首先获得了 Luna 和 Terra 的访问权限，这些模型将针对不同应用分别推出。\n\n测试时间已开始 🤖",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmre1qgk200f2ihwkzkndva9a"
+      }
+    },
+    {
+      "id": "cmrds7pdr06qiih4b6f0yienf",
+      "title": "OpenAI 发布最强模型与最佳博文",
+      "title_en": "obviously the best model we have ever produced， but also one of the best blog posts we have ever pro…",
+      "url": "https://x.com/sama/status/2075266471316615436",
+      "permalink": "https://aihot.virxact.com/items/cmrds7pdr06qiih4b6f0yienf",
+      "source": "X：Sam Altman (@sama)",
+      "publishedAt": "2026-07-09T17:10:58.000Z",
+      "summary": "显然是我们有史以来最好的模型，也是我们写得最好的博文之一：\n\nhttps://openai.com/index/gpt-5-6/",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrds7pdr06qiih4b6f0yienf"
+      }
+    },
+    {
+      "id": "cmrdltu5h051cih4bum094j2e",
+      "title": "Meta 发布 Muse Spark 1.1 模型",
+      "title_en": "Straight from @finkd - Muse Spark 1.1 is live.",
+      "url": "https://x.com/AIatMeta/status/2075218647359111460",
+      "permalink": "https://aihot.virxact.com/items/cmrdltu5h051cih4bum094j2e",
+      "source": "X：AI at Meta (@AIatMeta)",
+      "publishedAt": "2026-07-09T14:00:55.000Z",
+      "summary": "来自 @finkd 的消息 - Muse Spark 1.1 已上线。",
+      "category": "ai-models",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrdltu5h051cih4bum094j2e"
+      }
+    },
+    {
+      "id": "cmrdrlair06hpih4bxerobguv",
+      "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体",
+      "title_en": "ChatGPT is now a partner for your most ambitious work",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "permalink": "https://aihot.virxact.com/items/cmrdrlair06hpih4bxerobguv",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-07-09T10:00:00.000Z",
+      "summary": "OpenAI 发布 ChatGPT Work，一个能跨应用和文件收集信息、将复杂项目分解为小步骤独立完成并持续工作数小时的 AI 智能体。它内置 Codex 技术，目前每周超 500 万用户使用 Codex，其中超 100 万用于非软件开发场景。ChatGPT Work 由今天同步推出的最新前沿模型 GPT-5.6 驱动，具备多步骤推理和按模板生成材料的能力。该功能今天起面向 Pro、Enterprise 和 Edu 计划推出，未来几天扩展至 Plus 和 Business 计划。桌面版 ChatGPT 在所有计划（含免费版）中提供 Chat、Work 和 Codex 模式，且 Codex 应用已合并至新的桌面应用。",
+      "category": "ai-models",
+      "score": 80,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrdrlair06hpih4bxerobguv"
+      }
+    },
+    {
+      "id": "cmrd9x7xz01wzih4bch5uoywh",
+      "title": "NVIDIA 发布 Nemotron-Labs-3-Puzzle-75B-A9B：压缩混合 MoE 模型，服务器吞吐量提升 2.03 倍",
+      "title_en": "NVIDIA Releases Nemotron-Labs-3-Puzzle-75B-A9B： A Compressed Hybrid MoE LLM Delivering 2.03x Server Throughput at Matched User Throughput",
+      "url": "https://www.marktechpost.com/2026/07/09/nvidia-releases-nemotron-labs-3-puzzle-75b-a9b-a-compressed-hybrid-moe-llm-delivering-2-03x-server-throughput-at-matched-user-throughput",
+      "permalink": "https://aihot.virxact.com/items/cmrd9x7xz01wzih4bch5uoywh",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-09T08:47:37.000Z",
+      "summary": "NVIDIA 发布 Nemotron-3-Super 的压缩变体 Nemotron-Labs-3-Puzzle-75B-A9B，总参数从 120.7B 降至 75.3B，活跃参数从 12.8B 降至 9.3B，保持 88 块混合布局（40 Mamba、40 MoE、8 注意力）。在 8×B200 节点上，8K/64K 场景匹配用户吞吐量≥100 tok/s 时，服务器吞吐量提升 2.03 倍。单 H100 上 1M-token 并发从 1 增至 8，权重占用从 70 GB 降至 44.5 GB。迭代式 Puzzle 方法平均得分比单步高 0.57。代价：Arena-Hard-V2 降 4.2 分、SWE-Bench 降 2.6 分。Hugging Face 提供 BF16、FP8、NVFP4 检查点。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrd9x7xz01wzih4bch5uoywh"
+      }
+    },
+    {
+      "id": "cmrd6bmv200xrih4b7i1ivun0",
+      "title": "蚂蚁灵波开源全球首个面向具身智能的MoE视频基模LingBot-Video",
+      "title_en": "全球首个面向具身智能的视频基模，蚂蚁灵波 LingBot-Video 开源",
+      "url": "https://www.ithome.com/0/974/517.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrd6bmv200xrih4b7i1ivun0",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-09T07:06:00.000Z",
+      "summary": "蚂蚁灵波科技正式开源LingBot-Video，这是全球首个基于MoE架构、面向具身智能的视频生成基础模型。总参数30B，推理时仅激活约3B，效率较同规模Dense架构提升约3倍。模型引入7万小时VLA、VLN、Ego等机器人数据，并通过多维强化学习奖励系统对齐物理合理性与任务完成度。在RBench上总分0.620，超越Wan2.6等模型；在Physics-IQ Verified评测中排名第一。可用于机器人动作预测、仿真数据生成等方向。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrd6bmv200xrih4b7i1ivun0"
+      }
+    },
+    {
+      "id": "cmrd6bmv300xxih4byg33dbws",
+      "title": "蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0",
+      "title_en": "无限世界、实时交互，蚂蚁灵波开源 LingBot-World 2.0 世界模型",
+      "url": "https://www.ithome.com/0/974/508.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrd6bmv300xxih4byg33dbws",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-09T06:53:40.000Z",
+      "summary": "蚂蚁灵波开源新一代实时交互世界模型 LingBot-World 2.0（14B 参数），支持施法、攻击、跳跃等丰富角色动作及文本驱动事件（如切换场景、召唤风暴），内置 Pilot Agent 与 Director Agent 实现世界持续演化，并支持多人同时交互。模型采用因果预训练范式和混合双向自回归注意力掩码（MoBA），可稳定输出 720p/60fps 实时画面，长达一小时测试画质不衰减。通过一致性蒸馏与 DMD 降低采样成本，结合注意力 kernel 优化、混合并行推理、动态 KV 缓存调度和异步流媒体传输实现低延迟交互。模型权重及推理代码以非商用协议开源，SGLang 已适配，并提供 Reactor PC 端和灵光 APP 在线体验。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrd6bmv300xxih4byg33dbws"
+      }
+    },
+    {
+      "id": "cmrcsrok60407ihx5jvrp15a1",
+      "title": "Robbyant 发布 LingBot-VLA 2.0：开源 6B 跨实体机器人视觉-语言-动作模型",
+      "title_en": "Robbyant Releases LingBot-VLA 2.0： An Open-Source 6B Vision-Language-Action （VLA） Model for Cross-Embodiment Robot Manipulation",
+      "url": "https://www.marktechpost.com/2026/07/08/lingbot-vla-2-0",
+      "permalink": "https://aihot.virxact.com/items/cmrcsrok60407ihx5jvrp15a1",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-09T00:45:39.000Z",
+      "summary": "Robbyant 推出 LingBot-VLA 2.0，一个 6B 参数的开源视觉-语言-动作（VLA）基础模型。它以 Qwen3-VL-4B-Instruct 为骨干，采用 MoE 动作专家架构，通过 55 维规范向量统一表示不同机器人的状态和动作。训练数据涵盖约 60，000 小时高质量数据（50，000 小时机器人轨迹 + 10，000 小时第一人称人类视频），覆盖 20 种机器人配置。在 GM-100 双机械臂基准测试中，模型在多个平台上超越 π0.5 和之前版本。模型权重、代码和技术报告已以 Apache-2.0 许可开源。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcsrok60407ihx5jvrp15a1"
+      }
+    },
+    {
+      "id": "cmrbikwbz04b5ihl16qfp5ntw",
+      "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
+      "title_en": "Ant Group's Robbyant Open-Sources LingBot-Vision： A 1B Boundary-Centric Vision Foundation Model for Dense Spatial Perception",
+      "url": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
+      "permalink": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-08T03:03:22.000Z",
+      "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw"
+      }
+    },
+    {
+      "id": "cmrbez8y903b9ihl133b5wr18",
+      "title": "Pulpie：用于清理网络的Pareto最优模型",
+      "title_en": "Show HN： Pulpie--用于清理网络的模型",
+      "url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+      "permalink": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-08T01:33:24.910Z",
+      "summary": "Pulpie是一族Pareto最优模型，用于从HTML页面提取主要内容。其最小模型pulpie-orange-small（210M参数）在WebMainBench上取得0.862的ROUGE-5 F1分数，接近600M参数的Dripper（0.864），但成本仅1/20。在NVIDIA L4 GPU上，Pulpie处理速度13.7页/秒，Dripper仅0.68页/秒。清理10亿页HTML，Pulpie成本约$7，900，Dripper需$159，000。模型采用编码器架构，单次前向传播即可标记每个HTML块为内容或模板，已在HuggingFace开源。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18"
+      }
+    },
+    {
+      "id": "cmrcdtas00074ihx5zzerv512",
+      "title": "推出 Grok 4.5",
+      "title_en": "Introducing Grok 4.5",
+      "url": "https://cursor.com/blog/grok-4-5",
+      "permalink": "https://aihot.virxact.com/items/cmrcdtas00074ihx5zzerv512",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "summary": "Cursor 与 SpaceXAI 联合训练了混合专家模型 Grok 4.5，在数万亿 tokens 的 Cursor 用户交互数据上训练，并通过强化学习解决软件工程、数据科学、金融、法律等领域的困难问题。基础版定价 $2/M 输入 tokens、$6/M 输出 tokens，快速版 $4/M 输入 tokens、$18/M 输出 tokens。即日起在 Cursor 桌面、网页、iOS、CLI 及 SDK 中可用，个人和团队计划首周使用量翻倍。Grok 4.5 与 Composer 2.5 为不同权重类别，两者将继续支持。",
+      "category": "ai-models",
+      "score": 80,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcdtas00074ihx5zzerv512"
+      }
+    },
+    {
+      "id": "cmrcc072t01eqihqcf5kht18y",
+      "title": "OpenAI 发布 GPT-Live 新一代全双工语音模型",
+      "title_en": "Introducing GPT-Live",
+      "url": "https://openai.com/index/introducing-gpt-live",
+      "permalink": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "summary": "OpenAI 今日推出 GPT-Live，基于全双工架构实现同时听与说，支持自然打断与实时回馈。该模型每秒多次判断是否说话、倾听、打断或调用工具，并将搜索、推理等复杂任务委托给后台 GPT-5.5，保持对话流畅。即日起向全球 ChatGPT 用户提供 GPT-Live-1 和 GPT-Live-1 mini 两个版本。人类评估显示，在 5-10 分钟对话中，GPT-Live-1 系列在自然度、轮流、打断等方面显著优于 Advanced Voice Mode；在 GPQA、BrowseComp 和 τ3-Voice Telecom 基准测试中也表现更强。未来将开放 API。",
+      "category": "ai-models",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y"
+      }
+    },
     {
       "id": "cmrb2mxmc0072ihl1mx0aw1bz",
       "title": "Meta Superintelligence Labs 推出 Muse Image 和 Muse Video",
@@ -18,6 +222,57 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz"
+      }
+    },
+    {
+      "id": "cmrc3xicn01grihyf9z6t1b4b",
+      "title": "Seedream 5.0 Pro 发布：不止\"生成\"，更懂\"设计\"",
+      "title_en": "不止\"生成\"，更懂\"设计\" | Seedream 5.0 Pro 发布",
+      "url": "https://seed.bytedance.com/zh/blog/%E4%B8%8D%E6%AD%A2-%E7%94%9F%E6%88%90-%E6%9B%B4%E6%87%82-%E8%AE%BE%E8%AE%A1-seedream-5-0-pro-%E5%8F%91%E5%B8%83",
+      "permalink": "https://aihot.virxact.com/items/cmrc3xicn01grihyf9z6t1b4b",
+      "source": "字节 Seed：Research Feed（网页内嵌数据）",
+      "publishedAt": "2026-07-07T16:00:00.000Z",
+      "summary": "字节 Seed 今日发布多模态图像创作模型 Seedream 5.0 Pro，在图文匹配、结构合理性、文字渲染与画面美感上全面升级。四大核心突破：复杂信息可视化，可生成高密度信息图；交互式精准编辑，支持点选、圈选、草图渲染、色彩与材质替换、图层分离及多图融合，实现像素级编辑；真实的影像与人像质感，还原光影、材质与皮肤肌理；原生多语种输入与生成，支持十余种语言及本地化视觉特征。已陆续在豆包、即梦、火山方舟等平台上线。",
+      "category": "ai-models",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrc3xicn01grihyf9z6t1b4b"
+      }
+    },
+    {
+      "id": "cmrbg84yf03mcihl1reivcibq",
+      "title": "Nemotron-Labs-Diffusion：统一自回归、扩散与自我推测解码的三模式语言模型",
+      "title_en": "Nemotron-Labs-Diffusion： A Tri-Mode Language Model Unifying Autoregressive， Diffusion， and Self-Speculation Decoding",
+      "url": "https://arxiv.org/abs/2607.05722",
+      "permalink": "https://aihot.virxact.com/items/cmrbg84yf03mcihl1reivcibq",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "summary": "Nemotron-Labs-Diffusion 是一种三模式语言模型，通过联合自回归（AR）和扩散损失训练，在单一架构中统一了 AR、扩散和自我推测解码。研究显示 AR 与扩散目标互补：扩散增强前瞻规划，AR 提供从左至右的语言先验。自我推测模式下，扩散充当草稿模型、AR 负责验证，其接受率和实际设备效率均优于多 token 预测（MTP）。在最优化采样器下，单次前向传播产出 token 数比自我推测最多高 76.5%。该系列包含 3B、8B、14B 参数的基础、指令和视觉语言模型，在准确率和速度上均超越现有开源 AR 和扩散 LM。例如 8B 模型单次前向解码 token 数是 Qwen3-8B 的 6 倍，在 GB200 GPU 上使用 SGLang 运行 SPEED-Bench 时吞吐量提升 4 倍。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrbg84yf03mcihl1reivcibq"
+      }
+    },
+    {
+      "id": "cmrc6hfeq002nih5mhc7h2btk",
+      "title": "Robostral Navigate：Mistral AI 首个具身导航模型",
+      "title_en": "Introducing Robostral Navigate Robostral Navigate， our first model built for embodied navigation. July 7， 2026 Mistral AI",
+      "url": "https://mistral.ai/news/robostral-navigate",
+      "permalink": "https://aihot.virxact.com/items/cmrc6hfeq002nih5mhc7h2btk",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-07-06T16:00:00.000Z",
+      "summary": "Robostral Navigate 是 Mistral AI 首个具身导航模型（8B 参数），仅用单 RGB 摄像头，在 R2R-CE 验证集上取得 76.6%（unseen）和 79.4%（seen）的成功率，超越最佳单摄像头方法 9.7 个百分点，超越使用深度或多摄像头的系统 4.5 个百分点。模型通过 pointing 预测目标坐标并结合强化学习持续改进，全部在模拟中训练（约 40 万轨迹、6000 场景），采用 prefix-caching 实现高效训练。通用适配轮式、腿式和飞行机器人，能适应真实环境中未训练的障碍。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrc6hfeq002nih5mhc7h2btk"
       }
     },
     {
@@ -69,74 +324,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr53vzsc07l3sll5x8mfscz3"
-      }
-    },
-    {
-      "id": "cmr8voeny011bsllslvt09azq",
-      "title": "腾讯混元正式发布Hy3模型",
-      "title_en": "Hy3正式发布",
-      "url": "https://hunyuan.tencent.com/research/100064?langVersion=zh",
-      "permalink": "https://aihot.virxact.com/items/cmr8voeny011bsllslvt09azq",
-      "source": "腾讯混元：Research（API）",
-      "publishedAt": "2026-07-02T02:32:08.000Z",
-      "summary": "腾讯混元于7月6日正式发布Hy3模型。相比preview版，任务解决率从72%升至90%，平均耗时缩短34%；幻觉率从12.5%降至5.4%，常识错误率从25.4%降至12.7%，多轮问题率从17.4%降至7.9%，长对话基准MRCR从42.9%升至75.1%。在270位专家盲测中均分2.67/4，优于GLM5.1的2.51/4。API价格为输入1元/百万tokens、输出4元、缓存命中0.25元。模型已基于Apache 2.0协议开源。",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8voeny011bsllslvt09azq"
-      }
-    },
-    {
-      "id": "cmr52xv9507bssll51ft3loac",
-      "title": "Leanstral 1.5：人人可用的证明丰富性",
-      "title_en": "Leanstral 1.5： Proof Abundance for All July 2， 2026 Leanstral Team at Mistral AI",
-      "url": "https://mistral.ai/news/leanstral-1-5",
-      "permalink": "https://aihot.virxact.com/items/cmr52xv9507bssll51ft3loac",
-      "source": "Mistral AI：News（网页）",
-      "publishedAt": "2026-07-01T16:00:00.000Z",
-      "summary": "Mistral AI 今日发布 Leanstral 1.5，一款 Apache-2.0 许可的开源形式化验证模型，119B 总参数仅 6B 活跃。在 miniF2F 上达 100% 饱和，PutnamBench 解决 587/672 题，FATE-H（87%）和 FATE-X（34%）创 SOTA。训练经历 mid-training、SFT 和基于 CISPO 的强化学习。具备智能体式证明能力，在 57 个开源仓库中发现 5 个未知 bug。模型已通过 HuggingFace 和免费 API 开放使用。",
-      "category": "ai-models",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr52xv9507bssll51ft3loac"
-      }
-    },
-    {
-      "id": "cmr1ti4v001xlsl8zovi1yoqa",
-      "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",
-      "title_en": "NVIDIA Releases Nemotron-Labs-TwoTower： an Open-Weight Diffusion Language Model Built on a Frozen Autoregressive Nemotron-3-Nano-30B-A3B Backbone",
-      "url": "https://www.marktechpost.com/2026/07/01/nvidia-releases-nemotron-labs-twotower",
-      "permalink": "https://aihot.virxact.com/items/cmr1ti4v001xlsl8zovi1yoqa",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-01T08:10:17.000Z",
-      "summary": "NVIDIA 发布 Nemotron-Labs-TwoTower，基于冻结的自回归骨干 Nemotron-3-Nano-30B-A3B 的扩散语言模型。采用双塔架构：上下文塔冻结，降噪器塔训练，通过层对齐交叉注意力和状态播种协作。在 2×H100 上 BF16 评估，保留 98.7% 的 AR 基线质量，生成吞吐量提升 2.42 倍（γ=0.8，块大小 S=16）。降噪器在约 2.1T token 上训练，骨干使用 25T token 预训练。总参数约 60B，每 token 活跃参数约 3B/塔。支持扩散、模拟 AR 和 AR 三种解码模式。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr1ti4v001xlsl8zovi1yoqa"
-      }
-    },
-    {
-      "id": "cmr1js18u03imslnld2yrjboo",
-      "title": "美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型",
-      "title_en": "美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型",
-      "url": "https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow",
-      "permalink": "https://aihot.virxact.com/items/cmr1js18u03imslnld2yrjboo",
-      "source": "公众号：龙猫LongCat（美团）",
-      "publishedAt": "2026-07-01T02:24:00.000Z",
-      "summary": "美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。",
-      "category": "ai-models",
-      "score": 82,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr1js18u03imslnld2yrjboo"
       }
     }
   ]

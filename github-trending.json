@@ -1,6 +1,28 @@
 {
-  "fetched_at": "2026-07-08T21:43:07.363Z",
+  "fetched_at": "2026-07-09T22:00:16.666Z",
   "repos": [
+    {
+      "owner": "MadsLorentzen",
+      "name": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 18707,
+      "forks": 5423,
+      "starsToday": 3728
+    },
+    {
+      "owner": "SmartlyDressedGames",
+      "name": "U3-SDK",
+      "url": "https://github.com/SmartlyDressedGames/U3-SDK",
+      "description": "Source code for Unturned, a free open-world zombie survival sandbox game.",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 1976,
+      "forks": 250,
+      "starsToday": 541
+    },
     {
       "owner": "addyosmani",
       "name": "agent-skills",
@@ -8,64 +30,20 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 73828,
-      "forks": 7965,
-      "starsToday": 1322
+      "stars": 75781,
+      "forks": 8150,
+      "starsToday": 2582
     },
     {
-      "owner": "ruvnet",
-      "name": "RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 79083,
-      "forks": 10641,
-      "starsToday": 793
-    },
-    {
-      "owner": "TencentCloud",
-      "name": "TencentDB-Agent-Memory",
-      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 7582,
-      "forks": 704,
-      "starsToday": 351
-    },
-    {
-      "owner": "prisma",
-      "name": "prisma",
-      "url": "https://github.com/prisma/prisma",
-      "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 46519,
-      "forks": 2278,
-      "starsToday": 30
-    },
-    {
-      "owner": "mvanhorn",
-      "name": "last30days-skill",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 50685,
-      "forks": 4230,
-      "starsToday": 373
-    },
-    {
-      "owner": "argoproj",
-      "name": "argo-cd",
-      "url": "https://github.com/argoproj/argo-cd",
-      "description": "Declarative Continuous Deployment for Kubernetes",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 23414,
-      "forks": 7424,
-      "starsToday": 20
+      "owner": "VoltAgent",
+      "name": "awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "language": "",
+      "languageColor": "",
+      "stars": 99547,
+      "forks": 11568,
+      "starsToday": 1233
     },
     {
       "owner": "iOfficeAI",
@@ -74,53 +52,9 @@
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
       "language": "C#",
       "languageColor": "#178600",
-      "stars": 11645,
-      "forks": 790,
-      "starsToday": 1712
-    },
-    {
-      "owner": "asgeirtj",
-      "name": "system_prompts_leaks",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 54072,
-      "forks": 8800,
-      "starsToday": 1226
-    },
-    {
-      "owner": "obra",
-      "name": "superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 249750,
-      "forks": 22160,
-      "starsToday": 999
-    },
-    {
-      "owner": "alibaba",
-      "name": "zvec",
-      "url": "https://github.com/alibaba/zvec",
-      "description": "A lightweight, lightning-fast, in-process vector database",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 14361,
-      "forks": 884,
-      "starsToday": 370
-    },
-    {
-      "owner": "Diolinux",
-      "name": "PhotoGIMP",
-      "url": "https://github.com/Diolinux/PhotoGIMP",
-      "description": "A Patch for GIMP 3+ for Photoshop Users",
-      "language": "CSS",
-      "languageColor": "#663399",
-      "stars": 14976,
-      "forks": 592,
-      "starsToday": 916
+      "stars": 13330,
+      "forks": 906,
+      "starsToday": 1923
     },
     {
       "owner": "wonderwhy-er",
@@ -129,9 +63,53 @@
       "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 6355,
-      "forks": 746,
-      "starsToday": 20
+      "stars": 6559,
+      "forks": 780,
+      "starsToday": 185
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-cookbooks",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 47101,
+      "forks": 5554,
+      "starsToday": 194
+    },
+    {
+      "owner": "vxcontrol",
+      "name": "pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 19326,
+      "forks": 2617,
+      "starsToday": 543
+    },
+    {
+      "owner": "unclecode",
+      "name": "crawl4ai",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 71778,
+      "forks": 7375,
+      "starsToday": 195
+    },
+    {
+      "owner": "imthenachoman",
+      "name": "How-To-Secure-A-Linux-Server",
+      "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
+      "description": "An evolving how-to guide for securing a Linux server.",
+      "language": "",
+      "languageColor": "",
+      "stars": 29039,
+      "forks": 1935,
+      "starsToday": 306
     },
     {
       "owner": "huxingyi",
@@ -140,9 +118,9 @@
       "description": "Automatic quad remeshing tool",
       "language": "C++",
       "languageColor": "#f34b7d",
-      "stars": 1963,
-      "forks": 147,
-      "starsToday": 292
+      "stars": 2332,
+      "forks": 171,
+      "starsToday": 405
     },
     {
       "owner": "bradautomates",
@@ -151,20 +129,42 @@
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 5986,
-      "forks": 714,
-      "starsToday": 948
+      "stars": 6637,
+      "forks": 764,
+      "starsToday": 727
     },
     {
-      "owner": "TencentCloud",
-      "name": "CubeSandbox",
-      "url": "https://github.com/TencentCloud/CubeSandbox",
-      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 8884,
-      "forks": 736,
-      "starsToday": 555
+      "owner": "prisma",
+      "name": "prisma",
+      "url": "https://github.com/prisma/prisma",
+      "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 46872,
+      "forks": 2329,
+      "starsToday": 373
+    },
+    {
+      "owner": "kyutai-labs",
+      "name": "pocket-tts",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "description": "A TTS that fits in your CPU (and pocket)",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 6940,
+      "forks": 697,
+      "starsToday": 273
+    },
+    {
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 55077,
+      "forks": 8993,
+      "starsToday": 1135
     }
   ]
 }

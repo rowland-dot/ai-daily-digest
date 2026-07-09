@@ -1,7 +1,43 @@
 {
-  "fetched_at": "2026-07-08T21:43:22.049Z",
+  "fetched_at": "2026-07-09T22:00:25.950Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "link": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "updated": "2026-07-09T19:46:38+00:00",
+      "summary": "OpenAI's latest flagship model hit general availability this morning , and comes in three sizes: Luna, Terra, and Sol (from smallest to largest)."
+    },
+    {
+      "title": "Introducing Muse Spark 1.1",
+      "link": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+      "updated": "2026-07-09T16:24:09+00:00",
+      "summary": "Introducing Muse Spark 1.1"
+    },
+    {
+      "title": "llm-meta-ai 0.1",
+      "link": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+      "updated": "2026-07-09T16:12:20+00:00",
+      "summary": "Let's LLM run prompts against the new muse-spark-1.1 model."
+    },
+    {
+      "title": "llm 0.31.1",
+      "link": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "updated": "2026-07-09T16:06:15+00:00",
+      "summary": "Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. #1521"
+    },
+    {
+      "title": "Rewriting Bun in Rust",
+      "link": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+      "updated": "2026-07-08T23:57:21+00:00",
+      "summary": "Rewriting Bun in Rust"
+    },
+    {
+      "title": "Introducing GPT‑Live",
+      "link": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
+      "updated": "2026-07-08T23:20:48+00:00",
+      "summary": "Introducing GPT‑Live"
+    },
     {
       "title": "Quoting Kenton Varda",
       "link": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything",
@@ -37,42 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
       "updated": "2026-07-07T05:36:15+00:00",
       "summary": "The last RC before the 4.0 stable release. Mainly implements feedback from a detailed review by Claude Fable 5."
-    },
-    {
-      "title": "tencent/Hy3",
-      "link": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
-      "updated": "2026-07-06T23:57:35+00:00",
-      "summary": "tencent/Hy3"
-    },
-    {
-      "title": "sqlite-utils 4.0rc3",
-      "link": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
-      "updated": "2026-07-06T05:40:08+00:00",
-      "summary": "I hoped to release sqlite-utils 4.0 stable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 and GPT-5.5 the changelog since rc2 kept getting bigger ."
-    },
-    {
-      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
-      "link": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
-      "updated": "2026-07-05T01:00:48+00:00",
-      "summary": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible."
-    },
-    {
-      "title": "sqlite-utils 4.0rc2",
-      "link": "https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything",
-      "updated": "2026-07-05T00:47:38+00:00",
-      "summary": "See sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) ."
-    },
-    {
-      "title": "Building a World Map with only 500 bytes",
-      "link": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
-      "updated": "2026-07-04T23:09:02+00:00",
-      "summary": "Building a World Map with only 500 bytes"
-    },
-    {
-      "title": "Better Models: Worse Tools",
-      "link": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
-      "updated": "2026-07-04T22:53:52+00:00",
-      "summary": "Better Models: Worse Tools"
     }
   ]
 }

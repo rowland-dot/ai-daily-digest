@@ -1,8 +1,59 @@
 {
-  "count": 19,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrcigf5k01bqihx54i8oph9u",
+      "title": "OpenAI 审计 SWE-Bench Pro 发现约 30% 的评测任务存在缺陷",
+      "title_en": "Separating signal from noise in coding evaluations",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "permalink": "https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-07-08T13:00:00.000Z",
+      "summary": "OpenAI 对编码评测基准 SWE-Bench Pro 进行详细审计，发现约 30% 的任务存在缺陷。在 731 个任务的公开子集中，前沿模型通过率在八个月内从 23.3% 提升至 80.3%，但数据质量检查显示大量任务存在测试过于严格、提示词描述不足、测试覆盖不全或误导性提示等问题。OpenAI 建议模型开发者仔细审视评测结果，并指出 AI 智能体在规模化数据质量检查中日益增长的实用性。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u"
+      }
+    },
+    {
+      "id": "cmrbqwsid06g2ihl1iiwufnz5",
+      "title": "黑客可利用9款最流行的AI工具组装大规模僵尸网络",
+      "title_en": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
+      "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets",
+      "permalink": "https://aihot.virxact.com/items/cmrbqwsid06g2ihl1iiwufnz5",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-07-08T07:00:51.000Z",
+      "summary": "提示注入已成为AI安全的首要威胁--大语言模型无法区分合法指令与恶意指令。此前推送式和拉取式攻击规模均有限。研究人员提出一种名为HalluSquatting的新型拉取式提示注入攻击，首次能组装大规模僵尸网络、执行分布式拒绝服务攻击（DDoS）并大规模感染设备。该攻击可作用于AI编码工具，标志着提示注入攻击从单点突破转向规模化利用。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrbqwsid06g2ihl1iiwufnz5"
+      }
+    },
+    {
+      "id": "cmrcpjgf00373ihx5mtyo2fsy",
+      "title": "面向AI模型双重用途知识的\"开关\"：Anthropic与AE Studio提出GRAM方法",
+      "title_en": "An off switch for dual use knowledge in AI models",
+      "url": "https://www.anthropic.com/research/off-switch-dual-use",
+      "permalink": "https://aihot.virxact.com/items/cmrcpjgf00373ihx5mtyo2fsy",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-07-07T16:00:00.000Z",
+      "summary": "Anthropic与AE Studio联合提出梯度路由辅助模块（GRAM）方法，通过在Transformer每层添加可移除的神经元模块，使模型在训练时将病毒学、网络安全、核物理、专业编程语言等双重用途知识仅路由到对应模块，而非扩散至全局。训练后删除模块即可消除该能力，保留则供可信部署使用。实验在合成数据、真实数据及50M到5B参数模型上测试，GRAM效果与数据过滤相当，移除模块不降低通用性能，且比事后\"遗忘\"技术更难恢复。该研究为平衡双重用途知识的安全访问与有益使用提供了更鲁棒的方案。",
+      "category": "paper",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcpjgf00373ihx5mtyo2fsy"
+      }
+    },
     {
       "id": "cmrasd6r300i2ihog8ifwrqs5",
       "title": "苹果研究：单个神经元即可绕过大型语言模型的安全对齐",
@@ -208,122 +259,20 @@
       }
     },
     {
-      "id": "cmr3yrwnf00e1slw21f16oh2d",
-      "title": "关于Mythos和网络安全的讨论并非炒作",
-      "title_en": "The talk about Mythos and cybersecurity was not， in fact， hype. （As anyone using Fable to do autonom…",
-      "url": "https://x.com/emollick/status/2072778376494895139",
-      "permalink": "https://aihot.virxact.com/items/cmr3yrwnf00e1slw21f16oh2d",
-      "source": "X：Ethan Mollick (@emollick)",
-      "publishedAt": "2026-07-02T20:24:09.000Z",
-      "summary": "关于Mythos和网络安全的讨论并非炒作。\n（正如任何使用Fable进行自主工作的人可能已经认识到的那样。）",
-      "category": "paper",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3yrwnf00e1slw21f16oh2d"
-      }
-    },
-    {
-      "id": "cmr4dqzbq00uksll5xkxyo3nw",
-      "title": "表示分布匹配（RDM）用于一步视觉生成",
-      "title_en": "Representation Distribution Matching for One-Step Visual Generation",
-      "url": "https://arxiv.org/abs/2607.02375",
-      "permalink": "https://aihot.virxact.com/items/cmr4dqzbq00uksll5xkxyo3nw",
+      "id": "cmrbg84yf03maihl15k3on92w",
+      "title": "SkillOpt-Lite：更快更好的智能体自我进化，只需一行代码",
+      "title_en": "SkillOpt-Lite： Better and Faster Agent Self-evolution via One Line of Vibe",
+      "url": "https://arxiv.org/abs/2607.03451",
+      "permalink": "https://aihot.virxact.com/items/cmrbg84yf03maihl15k3on92w",
       "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "summary": "表示分布匹配（RDM）通过匹配冻结预训练编码器下的生成与参考特征分布来训练一步图像生成器。三个发现：经典MMD正确估计后成为可扩展目标；生成批次大小最优超过2048；单一表示可被欺骗，需匹配平衡编码器组合并采用独立于训练损失的SW_r14评估。改进的iRDM在ImageNet上以SW_r14 1.30达一步生成SOTA，PickScore在71.2%样本上偏好iRDM。该方法将四步FLUX.2后训练为一步生成器，在GenEval（0.826对0.794）和PickScore（22.76对22.58）上超越原版，仅需90 H200 GPU小时。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr4dqzbq00uksll5xkxyo3nw"
-      }
-    },
-    {
-      "id": "cmr4blm3e00amsll5l19jk6ce",
-      "title": "Program-as-Weights：一种面向模糊函数的编程范式",
-      "title_en": "Program-as-Weights： A Programming Paradigm for Fuzzy Functions",
-      "url": "https://arxiv.org/abs/2607.02512",
-      "permalink": "https://aihot.virxact.com/items/cmr4blm3e00amsll5l19jk6ce",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "summary": "Program-as-Weights （PAW） 提出模糊函数编程范式，将自然语言描述的函数编译为紧凑、可本地执行的神经制品。PAW 使用在 10M 示例数据集 FuzzyBench 上训练的 4B 编译器，为冻结的轻量级解释器输出参数高效适配器。0.6B 的 Qwen3 解释器执行 PAW 程序性能匹敌直接提示 Qwen3-32B，推理内存仅约五十分之一，在 MacBook M3 上达 30 tokens/s。该方法将基础模型从每次输入的求解器重新定义为工具构建器，一次函数定义后生成的制品可离线廉价复用。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr4blm3e00amsll5l19jk6ce"
-      }
-    },
-    {
-      "id": "cmr3rd0l901bwsl7ld54ejrgb",
-      "title": "RL微调VLM的鲁棒性与思维链一致性研究",
-      "title_en": "On Robustness and Chain-of-Thought Consistency of RL-Finetuned VLMs",
-      "url": "https://machinelearning.apple.com/research/robustness-chain-thought-consistency",
-      "permalink": "https://aihot.virxact.com/items/cmr3rd0l901bwsl7ld54ejrgb",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "summary": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动--误导性标题或错误思维链（CoT）--会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
-      "category": "paper",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3rd0l901bwsl7ld54ejrgb"
-      }
-    },
-    {
-      "id": "cmr3rd0l901busl7l11krygj3",
-      "title": "VideoFlexTok：可变长度粗到细视频分词",
-      "title_en": "VideoFlexTok： Flexible-Length Coarse-to-Fine Video Tokenization",
-      "url": "https://machinelearning.apple.com/research/videoflextok",
-      "permalink": "https://aihot.virxact.com/items/cmr3rd0l901busl7l11krygj3",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "summary": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构--首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
-      "category": "paper",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3rd0l901busl7l11krygj3"
-      }
-    },
-    {
-      "id": "cmr3rd0l901btsl7lars7am9q",
-      "title": "多智能体团队阻碍专家发挥",
-      "title_en": "Multi-Agent Teams Hold Experts Back",
-      "url": "https://machinelearning.apple.com/research/multi-agent-teams-experts",
-      "permalink": "https://aihot.virxact.com/items/cmr3rd0l901btsl7lars7am9q",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-02T00:00:00.000Z",
-      "summary": "在自我组织的多智能体LLM系统中，团队无法有效利用专家成员的专业知识。在多个基准测试中，即使明确告知专家身份，团队表现仍落后于最佳成员（专家智能体）的独立能力，性能损失最高达41.1%。失败主因是未能有效利用专家意见，而非识别专家。对话分析显示，团队倾向于\"整合性妥协\"--平均化专家与非专家观点，随团队规模增大而加剧，且与表现负相关。这种寻求共识的行为同时提升了对抗恶意智能体的鲁棒性，揭示了协同对齐与专业利用之间的根本性权衡。",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "SkillOpt-Lite 将智能体技能优化形式化为零阶优化，提出文件系统轨迹探索、共识属性挖掘与独立验证门控三条原则。相比完整 SkillOpt，它加速收敛并在 LiveMath 上提升 GPT-5.5 达 +8.8 点、GPT-5.4-nano 达 +25.4 点，使 nano 模型超越标准 SkillOpt 优化的 GPT-5.4。该框架已集成至 VSCode Copilot，开发者仅需一行代码即可进化技能。框架还可泛化为完整工具链优化（HarnessOpt），在 SpreadsheetBench 上令 GPT-5.4-nano 达到 0.7758 准确率，超越运行标准流程的更大模型 GPT-5.5（0.7620）。代码已开源。",
       "category": "paper",
       "score": 72,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3rd0l901btsl7lars7am9q"
-      }
-    },
-    {
-      "id": "cmr190seo00nsslnlxmfddenz",
-      "title": "AI 用 prover-verifier LLM 循环攻克 9 个未解数学难题",
-      "title_en": "AI just solved not one， but ***9*** unsolved math problems. Once again， instead of this being a glo…",
-      "url": "https://x.com/AISafetyMemes/status/2072085914558558402",
-      "permalink": "https://aihot.virxact.com/items/cmr190seo00nsslnlxmfddenz",
-      "source": "X：AI Safety Memes (@AISafetyMemes)",
-      "publishedAt": "2026-06-30T22:32:34.000Z",
-      "summary": "AI Safety Memes 推文指出，AI 刚刚解决了 9 个未解决的数学问题，但全球没有记者报道。引用 @WeinsteinOmri 的推文称，采用\"prover-verifier\"LLM 循环的方法，成功解决了理论计算机科学中 9 个重大开放问题，其中包括一个困扰其长达 2 年的难题。该研究由哥伦比亚大学合作者完成，并计划将这一方法扩展到所有科学领域。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr190seo00nsslnlxmfddenz"
+        "canonical": "https://aihot.virxact.com/items/cmrbg84yf03maihl15k3on92w"
       }
     }
   ]

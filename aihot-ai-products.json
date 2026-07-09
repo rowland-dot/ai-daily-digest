@@ -1,8 +1,144 @@
 {
-  "count": 31,
+  "count": 29,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmre1bxqr00bhihwk8z3bz5qs",
+      "title": "ChatGPT Sites将创意变可发布网站",
+      "title_en": "Turn an idea into a live Site you can publish and share Here's what some of the team at OpenAI buil…",
+      "url": "https://x.com/OpenAIDevs/status/2075331020090687666",
+      "permalink": "https://aihot.virxact.com/items/cmre1bxqr00bhihwk8z3bz5qs",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-07-09T21:27:27.000Z",
+      "summary": "将一个想法变成可发布和分享的实时网站\n\n以下是OpenAI团队的一些成员用Sites构建的示例👇\n\n@prd_008 用Sites将一个想法变成了个人专注应用：",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmre1bxqr00bhihwk8z3bz5qs"
+      }
+    },
+    {
+      "id": "cmre0j0vj002sihwk71qvktk7",
+      "title": "Google 推出 LiteRT.js：高性能 Web AI 推理运行时",
+      "title_en": "LiteRT.js， Google's high performance Web AI Inference",
+      "url": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
+      "permalink": "https://aihot.virxact.com/items/cmre0j0vj002sihwk71qvktk7",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-07-09T21:21:08.292Z",
+      "summary": "Google 发布 LiteRT.js，这是 LiteRT 跨平台边缘 AI 运行时的最新成员，专为 JavaScript 开发者设计，可直接在浏览器中运行机器学习模型。LiteRT.js 基于 WebGPU 和即将推出的 WebNN 实现 SOTA 推理性能，同时支持回退到 WebAssembly CPU 方案。",
+      "category": "ai-products",
+      "score": 62,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmre0j0vj002sihwk71qvktk7"
+      }
+    },
+    {
+      "id": "cmrdlxidv0522ih4b6xv8iolk",
+      "title": "Mistral 推出 Studio，为 AI 提示词和技能提供系统记录",
+      "title_en": "Your Prompts and Skills need a system of record. Studio gives AI prompts & skills a system of record-versioned， owned， and traceable. July 9， 2026 By Mistral",
+      "url": "https://mistral.ai/news/manage-prompts-and-skills-in-studio",
+      "permalink": "https://aihot.virxact.com/items/cmrdlxidv0522ih4b6xv8iolk",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-07-09T14:33:44.761Z",
+      "summary": "Mistral 今日推出 Studio，为 AI 提示词和技能提供集中式系统记录。平台将 prompts 和 skills 视为生产资产，支持不可变版本、回滚、明确所有权、分类标签和审计日志，保证变更可追溯。非开发者可直接编辑测试，通过标签将变更推送至生产，保留原有 CI/CD 流程。可观测性让生产输出回溯到对应资产版本，形成闭环治理。现面向 Mistral Studio 客户开放。",
+      "category": "ai-products",
+      "score": 55,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrdlxidv0522ih4b6xv8iolk"
+      }
+    },
+    {
+      "id": "cmrdk0zfw04ixih4b84colsmb",
+      "title": "Claude 推出反思功能（Beta）",
+      "title_en": "Introducing a way to reflect on how you use Claude",
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "permalink": "https://aihot.virxact.com/items/cmrdk0zfw04ixih4b84colsmb",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-07-09T13:40:30.163Z",
+      "summary": "Anthropic 为 Claude 推出一项反思功能（Beta），帮助用户追踪使用模式。用户可回顾过去 1、3、6 或 12 个月的活动总结，涵盖关键主题、使用频率和任务类型。功能结合 4D AI Fluency Framework（委托、描述、辨别、勤勉）提供协作分析，支持设定静音时段或定时休息提醒。隐私方面，不涉及无痕对话和健康集成工具，也不提取连接工具中的底层文件。该功能面向 Free、Pro 和 Max 用户，需开启记忆功能，可通过 Claude 网页或桌面应用设置。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrdk0zfw04ixih4b84colsmb"
+      }
+    },
+    {
+      "id": "cmrcn8mlw02k5ihx5risshcr3",
+      "title": "Seedream 5.0 Pro 登陆 Runway，支持14种语言",
+      "title_en": "Seedream 5.0 Pro is now in Runway. Generate highly detailed images from a prompt or reference， with …",
+      "url": "https://x.com/runwayml/status/2074982268175630814",
+      "permalink": "https://aihot.virxact.com/items/cmrcn8mlw02k5ihx5risshcr3",
+      "source": "X：Runway (@runwayml)",
+      "publishedAt": "2026-07-08T22:21:38.000Z",
+      "summary": "Seedream 5.0 Pro 现已登陆 Runway。可通过提示词或参考图生成高细节图像，图像内文字清晰可读，支持多达14种语言。立即点击下方链接尝试。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcn8mlw02k5ihx5risshcr3"
+      }
+    },
+    {
+      "id": "cmrc8cfhc00jeihqc0r5wx6qz",
+      "title": "Replit 推出社区档案与力量排名",
+      "title_en": "New this week 🚀 Replit Community Profiles - Proof of Work for vibe coders. Your profile， your flex…",
+      "url": "https://x.com/Replit/status/2074871322220339515",
+      "permalink": "https://aihot.virxact.com/items/cmrc8cfhc00jeihqc0r5wx6qz",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-07-08T15:00:47.000Z",
+      "summary": "本周新功能 🚀 Replit 社区档案--vibe coders 的工作证明。\n\n你的档案，你的展示。获取你的智能体使用和检查点的活跃度图表，外加面向专业用户的 Replit 力量排名。\n\n登录，认领你的档案，挑选你最棒的项目，与朋友分享你的数据。\n\n立即查看 → http://replit.com/community",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrc8cfhc00jeihqc0r5wx6qz"
+      }
+    },
+    {
+      "id": "cmrc8c7rq00imihqcg5rp1u13",
+      "title": "OpenRouter聊天室推出一键零数据保留",
+      "title_en": "New： one-click ZDR （zero-data retention） in the Chatroom Compare models side-by-side with full priv…",
+      "url": "https://x.com/OpenRouter/status/2074870468394250461",
+      "permalink": "https://aihot.virxact.com/items/cmrc8c7rq00imihqcg5rp1u13",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-07-08T14:57:23.000Z",
+      "summary": "新功能：聊天室一键ZDR（零数据保留）\n在完全隐私保护下横向对比模型：https://openrouter.ai/chat",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrc8c7rq00imihqcg5rp1u13"
+      }
+    },
+    {
+      "id": "cmrcabmvj00ymihqce96ilbfi",
+      "title": "原生速度的 vLLM transformers 建模后端",
+      "title_en": "Native-speed vLLM transformers modeling backend",
+      "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+      "permalink": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "summary": "Hugging Face 宣布 transformers vLLM 后端现与手写原生 vLLM 实现速度相当甚至更快。模型作者无需移植代码，即可自动利用 transformers 获得超快推理。测试使用 Qwen3-4B（单 GPU）、Qwen3-32B（张量并行）和 Qwen3-235B-A22B-FP8 MoE（数据+专家并行）三种配置，吞吐量均达到或超过原生。该后端通过 torch.fx 静态分析图、AST 重写代码实现动态层融合，支持张量/管道/专家并行及 torch.compile。用户仅需添加 `--model-impl transformers` 标志。目前不支持线性注意力模型但即将支持。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi"
+      }
+    },
     {
       "id": "cmray36fg021nihogfo205417",
       "title": "NotebookLM短视频概览正式上线",
@@ -21,20 +157,20 @@
       }
     },
     {
-      "id": "cmrav068k01b6ihogth8k26f6",
-      "title": "Claude Cowork 向移动端和网页端开放",
-      "title_en": "Claude Cowork is coming to mobile and web",
-      "url": "https://claude.com/blog/cowork-web-mobile",
-      "permalink": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-07-07T16:24:13.051Z",
-      "summary": "Claude Cowork 正在向移动端和网页端开放，让会话和文件跨设备同步。Beta 版将在未来几周内首先面向 Max 用户推出。Cowork 可让 Claude 跨文件、日历、邮件、即时通讯等工具完成复杂任务，其中超过 90% 的使用场景并非软件开发，而是日常知识工作（业务运营和内容创作）。工作可跨设备跟随用户：在桌面端开始任务，从手机查看进度；关闭笔记本后 Claude 可继续后台运行，支持定时任务（如周一 6 点自动准备客户简报）。当需要用户决策时，Claude 会将问题推送到手机。桌面端保留完整 Cowork 体验，支持无法安装桌面应用的用户。聊天和 Cowork 已在网页端和桌面端合并。为庆祝上线，双倍 Cowork 使用额度延长至 8 月 5 日。",
+      "id": "cmrb7dzge01d6ihl1bthomtam",
+      "title": "Rowboat：开源、本地优先的桌面AI助手",
+      "title_en": "Show HN： Rowboat - Open-source， local-first alternative to Claude Desktop",
+      "url": "https://github.com/rowboatlabs/rowboat",
+      "permalink": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam",
+      "source": "Hacker News：AI 热帖",
+      "publishedAt": "2026-07-07T16:10:44.000Z",
+      "summary": "Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。",
       "category": "ai-products",
-      "score": 71,
+      "score": 73,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6"
+        "canonical": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam"
       }
     },
     {
@@ -86,6 +222,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc"
+      }
+    },
+    {
+      "id": "cmrbg84yf03mbihl1gfbbgeuz",
+      "title": "AlayaWorld：长程可玩视频世界生成",
+      "title_en": "AlayaWorld： Long-Horizon and Playable Video World Generation",
+      "url": "https://arxiv.org/abs/2607.06291",
+      "permalink": "https://aihot.virxact.com/items/cmrbg84yf03mbihl1gfbbgeuz",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "summary": "AlayaWorld 是一个全栈开源框架，用于构建交互式生成世界。该框架支持开放式实时交互，用户可自由导航并执行战斗、施法、召唤怪物等多种动作。AlayaWorld 将数据准备、模型架构、训练、推理加速和部署统一在模块化可扩展的架构中，并发布了可复现流程、参考实现、评估工具和完整文档，为生成世界模型的未来研究与实时应用奠定基础。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrbg84yf03mbihl1gfbbgeuz"
       }
     },
     {
@@ -171,6 +324,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73"
+      }
+    },
+    {
+      "id": "cmrav068k01b6ihogth8k26f6",
+      "title": "Claude Cowork 向移动端和网页端开放",
+      "title_en": "Claude Cowork is coming to mobile and web",
+      "url": "https://claude.com/blog/cowork-web-mobile",
+      "permalink": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-07-06T16:00:00.000Z",
+      "summary": "Claude Cowork 正在向移动端和网页端开放，让会话和文件跨设备同步。Beta 版将在未来几周内首先面向 Max 用户推出。Cowork 可让 Claude 跨文件、日历、邮件、即时通讯等工具完成复杂任务，其中超过 90% 的使用场景并非软件开发，而是日常知识工作（业务运营和内容创作）。工作可跨设备跟随用户：在桌面端开始任务，从手机查看进度；关闭笔记本后 Claude 可继续后台运行，支持定时任务（如周一 6 点自动准备客户简报）。当需要用户决策时，Claude 会将问题推送到手机。桌面端保留完整 Cowork 体验，支持无法安装桌面应用的用户。聊天和 Cowork 已在网页端和桌面端合并。为庆祝上线，双倍 Cowork 使用额度延长至 8 月 5 日。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6"
       }
     },
     {
@@ -324,210 +494,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr4psupf03zwsll57yggswsf"
-      }
-    },
-    {
-      "id": "cmr3zye9z00qfslw2sg1izmks",
-      "title": "阿里巴巴发布 Page Agent：开源 JavaScript 库实现网页 DOM 自然语言操控",
-      "title_en": "Meet Alibaba's Page Agent： A JavaScript In-Page GUI Agent That Controls Web Interfaces With Natural Language Through the DOM",
-      "url": "https://www.marktechpost.com/2026/07/02/meet-alibabas-page-agent-a-javascript-in-page-gui-agent-that-controls-web-interfaces-with-natural-language-through-the-dom",
-      "permalink": "https://aihot.virxact.com/items/cmr3zye9z00qfslw2sg1izmks",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-02T20:51:39.000Z",
-      "summary": "阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库，嵌入网页后可通过自然语言指令直接操作 DOM 元素。与 Playwright、Puppeteer 等外部浏览器自动化工具不同，Page Agent 不依赖截图或多模态模型，而是将实时 DOM 脱水压缩为 FlatDomTree 文本映射，让纯文本模型精准执行点击、表单填写等操作。它继承用户 cookies 和会话，无需独立后端，并支持任意 OpenAI 兼容端点的模型（示例使用 `qwen3.5-plus`）。项目采用 MIT 许可证，适合在自有应用内构建 AI 副驾、智能表单填充或无障碍控制等场景，但限于单页面范围，风险操作仍需服务端验证。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3zye9z00qfslw2sg1izmks"
-      }
-    },
-    {
-      "id": "cmr3epwmy008bsllx0y68akps",
-      "title": "Senior SWE-Bench：评估AI智能体作为高级工程师的基准测试",
-      "title_en": "Senior SWE-Bench：一款用于评估代理作为高级工程师表现的开源基准测试工具",
-      "url": "https://senior-swe-bench.snorkel.ai/",
-      "permalink": "https://aihot.virxact.com/items/cmr3epwmy008bsllx0y68akps",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-02T11:04:07.048Z",
-      "summary": "Senior SWE-Bench是一个开源基准测试，用于评估AI智能体完成高级软件工程师级别任务的能力。任务分功能开发与Bug修复两类：功能任务指令类似自然语言消息，采用验证智能体基于专家配方自动生成行为测试；Bug任务要求根据日志、profiling等运行时信息深入调查。排行榜显示，Claude Opus 4.8搭配Mini-SWE-Agent（max effort）通过率24.0%，Claude Sonnet 5为19.4%，GPT-5.5为16.0%，最强前沿模型在超75%任务中未能达到高级工程师级别的正确性与品味。每个功能任务平均涉及11个文件，最强智能体也需数百步完成；中位指令长度仅为SWE-Bench Pro的31%。任务来源于从库到多服务应用的仓库PR，由拥有数百次提交的工程师编写。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3epwmy008bsllx0y68akps"
-      }
-    },
-    {
-      "id": "cmr3a67dj01zusly043ms4axe",
-      "title": "Google Health API 推出 CLI：ghealth 是一款针对 Fitbit 数据的开源工具",
-      "title_en": "The Google Health API Got a CLI： ghealth is an Open-Source Tool for Your Fitbit Air Data",
-      "url": "https://www.marktechpost.com/2026/07/02/the-google-health-api-got-a-cli-ghealth-is-an-open-source-tool-for-your-fitbit-air-data",
-      "permalink": "https://aihot.virxact.com/items/cmr3a67dj01zusly043ms4axe",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-02T08:46:56.000Z",
-      "summary": "ghealth 是一款封装 Google Health API v4 的开源命令行工具，以单个 Go 二进制文件发布（Apache 2.0 协议）。它提供 40 种已验证的数据类型（包括步数、心率、睡眠、体重、血氧饱和度、心率变异性等）的结构化 JSON 输出。工具采用 Agent 优先设计，具备确定性退出码、--dry-run 和 --raw 标志，并附带两个 SKILL.md 文件供 AI 智能体使用。用户需自行创建 OAuth 凭据，通过 PKCE S256 认证。数据来源覆盖 Fitbit、Pixel Watch 及连接的第三方设备。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3a67dj01zusly043ms4axe"
-      }
-    },
-    {
-      "id": "cmr397vx001s3sly0t7mkh3fh",
-      "title": "Kimi K2.7 Code 已在 GitHub Copilot 上正式发布",
-      "title_en": null,
-      "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot",
-      "permalink": "https://aihot.virxact.com/items/cmr397vx001s3sly0t7mkh3fh",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-02T08:24:53.347Z",
-      "summary": "Kimi K2.7 Code 开源权重模型已在 GitHub Copilot 中正式可用，成为 Copilot 模型选择器首个可选的开源权重模型，为编程工作流提供更低成本选择。该模型由 GitHub 托管于 Microsoft Azure，按供应商列表价格以用量计费。逐步向 Copilot Pro、Pro+ 和 Max 计划用户推送，用户可在 Visual Studio Code 1.127.0 或更新版本、Visual Studio 17.14.6 或更新版本、JetBrains 1.9.1-251 或更新版本、Xcode、Eclipse 等 IDE 及 Copilot CLI、GitHub.com、GitHub Mobile 等平台中选用。后续几周将扩展至 Copilot Business 和 Enterprise，当前默认关闭，需管理员在 Copilot 设置中启用策略。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr397vx001s3sly0t7mkh3fh"
-      }
-    },
-    {
-      "id": "cmr2x3a7n0c0tsl8zxytx1kfx",
-      "title": "昆仑万维天工3.2发布Skywork Tags，AI智能体加入工作群聊",
-      "title_en": "天工 3.2 重磅升级：Skywork Tags 上线，给 Agent 一张工牌，邀其加入你的工作群聊",
-      "url": "https://mp.weixin.qq.com/s/OqL6ID-mAel8XN-slYgXOA",
-      "permalink": "https://aihot.virxact.com/items/cmr2x3a7n0c0tsl8zxytx1kfx",
-      "source": "公众号：昆仑万维（天工）",
-      "publishedAt": "2026-07-02T02:53:26.000Z",
-      "summary": "昆仑万维天工3.2发布Skywork Tags，将AI智能体以团队成员身份接入Slack、飞书、钉钉、Discord、Telegram等即时通讯工具。团队可在原有工作群中@Skywork参与讨论，无需切换窗口或迁移数据。共享版Agent持续吸收多样上下文后表现反超精心调教的个人版，团队最终完全改用共享版。Skywork Tags不要求改变工作方式，让AI积累团队上下文并越用越强。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr2x3a7n0c0tsl8zxytx1kfx"
-      }
-    },
-    {
-      "id": "cmr2x7ii20c2jsl8zygz5iw9n",
-      "title": "AI 版支付宝开放公测，蚂蚁阿宝无需邀请码即可体验",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/971/469.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr2x7ii20c2jsl8zygz5iw9n",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-02T02:51:10.000Z",
-      "summary": "支付宝阿宝 AI 助手今日正式开放公测，iOS 和安卓用户可在应用商店或支付宝 App 搜索\"阿宝\"或\"蚂蚁阿宝\"直接体验。开通后右滑进入新版，以对话方式安排办事，例如说出\"查公积金\"，阿宝会自动匹配对应小程序和服务入口，用户点击确认即可完成。支付宝承诺所有资金变动与支付环节均需用户本人确认，扫码、转账等功能已预留入口。",
-      "category": "ai-products",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr2x7ii20c2jsl8zygz5iw9n"
-      }
-    },
-    {
-      "id": "cmr2jtg2z08nvsl8zt9pagjoe",
-      "title": "Claude Code v2.1.198 发布",
-      "title_en": "v2.1.198",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
-      "permalink": "https://aihot.virxact.com/items/cmr2jtg2z08nvsl8zt9pagjoe",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-07-01T20:45:36.000Z",
-      "summary": "Claude Code v2.1.198 更新。Claude in Chrome 现已全面可用。为 claude agents 新增后台智能体通知（agent_needs_input / agent_completed）。新增 /dataviz 技能，提供图表与仪表盘设计指导及配色验证器。Gateway 增加 AWS 上的 Claude Platform 作为上游提供商。后台智能体在 worktree 中完成代码后自动提交、推送并创建草稿 PR。内置 Explore 智能体现继承主会话模型（上限 opus）。修复网络短暂断开导致响应中断、后台任务卡在\"Running\"状态、智能体团队队友因 API 错误失败等问题。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr2jtg2z08nvsl8zt9pagjoe"
-      }
-    },
-    {
-      "id": "cmr2cbj7s06qgsl8zt4giih2x",
-      "title": "Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境",
-      "title_en": "ML Development in VS Code with Google Cloud Power： Workbench Extension Now Available",
-      "url": "https://developers.googleblog.com/ml-development-in-vs-code-with-google-cloud-power-workbench-extension-now-available",
-      "permalink": "https://aihot.virxact.com/items/cmr2cbj7s06qgsl8zt4giih2x",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-07-01T17:17:56.374Z",
-      "summary": "Google Cloud Workbench Notebooks 扩展正式上线，开发者可在 VS Code 中直接连接可扩展的云端 Jupyter 环境，无需切换上下文即可利用高性能 Google Cloud 基础设施完成机器学习全流程。该扩展已完全开源，可在 GitHub 和 VS Code Marketplace 获取。",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr2cbj7s06qgsl8zt4giih2x"
-      }
-    },
-    {
-      "id": "cmr3tce0201rwsl7lm25hjxbo",
-      "title": "Claude Enterprise 新增用量与成本分析及支出管控功能",
-      "title_en": "Giving admins more visibility and control over Claude spend",
-      "url": "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend",
-      "permalink": "https://aihot.virxact.com/items/cmr3tce0201rwsl7lm25hjxbo",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-07-01T16:00:00.000Z",
-      "summary": "Claude Enterprise 推出更丰富的管理分析工具和成本控制功能。仪表板现可按群组和用户分析用量与成本，支持按 SCIM 群组筛选，展示制品创建、文件编辑、技能和连接器对应的成本。Claude Code 管理控制台新增\"使用量\"和\"价值\"选项卡，分别显示活跃开发者、会话次数、常用命令，以及生产力提升估算、每次提交成本和年度价值估算。分析聊天支持自然语言查询并返回可导出图表。Analytics API 可将数据接入 Datadog Cloud Cost Management 和 CloudZero。管理员可设置模型默认和权限控制，并配置组织级支出限额的 75%、90% 告警通知；用户在 75% 和 95% 时收到应用内提醒。Admin API 支持自动审批额度增加、标记接近限额用户及快速变化的用量。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr3tce0201rwsl7lm25hjxbo"
-      }
-    },
-    {
-      "id": "cmr29qmtz064gsl8zqzza1stv",
-      "title": "Zhipu推出GLM-5.2官方开发环境ZCode",
-      "title_en": "Introducing ZCode， the official development environment for GLM-5.2 - GLM Coding Plan subscribers： …",
-      "url": "https://x.com/Zai_org/status/2072349453361557898",
-      "permalink": "https://aihot.virxact.com/items/cmr29qmtz064gsl8zqzza1stv",
-      "source": "X：智谱 Z.ai (@Zai_org)",
-      "publishedAt": "2026-07-01T15:59:46.000Z",
-      "summary": "推出 ZCode，GLM-5.2 的官方开发环境\n\n- GLM Coding Plan 订阅用户：现可在 ZCode 获得 1.5 倍使用配额\n- 支持 BYOK：可与您现有的订阅和 API 配合使用\n- 适用于 macOS、Windows 和 Linux\n\n立即下载：http://zcode.z.ai/en",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr29qmtz064gsl8zqzza1stv"
-      }
-    },
-    {
-      "id": "cmr25x2x2051tsl8ze3nntrkd",
-      "title": "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
-      "title_en": "Your site， your rules： new AI traffic options for all customers",
-      "url": "https://blog.cloudflare.com/content-independence-day-ai-options",
-      "permalink": "https://aihot.virxact.com/items/cmr25x2x2051tsl8ze3nntrkd",
-      "source": "Cloudflare Blog",
-      "publishedAt": "2026-07-01T13:00:00.000Z",
-      "summary": "Cloudflare 为所有网站所有者提供更精细的AI流量管控选项，取代一刀切的屏蔽方式。用户可轻松区分并管理搜索爬虫、AI智能体爬虫和训练爬虫，同时新增保护广告变现页面的能力。",
-      "category": "ai-products",
-      "score": 58,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr25x2x2051tsl8ze3nntrkd"
-      }
-    },
-    {
-      "id": "cmr2a81sq066ssl8z8vo7so2x",
-      "title": "xAI 发布 Voice Agent Builder 测试版",
-      "title_en": "Introducing the Voice Agent Builder Jul 1， 2026 # Introducing the Voice Agent Builder Create a personalized voice agent in under 2 minutes without a single line of code. Read More",
-      "url": "https://x.ai/news/grok-voice-agent-builder",
-      "permalink": "https://aihot.virxact.com/items/cmr2a81sq066ssl8z8vo7so2x",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-01T00:00:00.000Z",
-      "summary": "xAI 推出 Voice Agent Builder 测试版，这是一个基于 Grok Voice 的无代码平台，可在两分钟内创建生产级语音智能体。它集成电话、知识检索、工具、MCP、Guardrails 及可观测性，支持连接现有 SIP 号码、API 和 WebSocket，采用语音到语音路径。在 τ-voice Bench 上，Grok Voice Think Fast 1.0 得分 67.3%，领先 Gemini 3.1 Flash Live（43.8%）和 GPT Realtime 1.5（35.3%）。定价为每分钟音频 0.05 美元、电话费 0.01 美元，提供 80+ 种语音及声音克隆，每个账户附赠一个免费电话号码。",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr2a81sq066ssl8z8vo7so2x"
       }
     }
   ]

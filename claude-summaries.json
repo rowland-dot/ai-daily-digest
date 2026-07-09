@@ -1,43 +1,49 @@
 {
-  "generated_at": "2026-07-01T22:10:45Z",
+  "generated_at": "2026-07-08T21:47:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ukp2bu/the_gap_between_closed_and_open_models_might_be/": {
-      "en": "A LocalLLaMA post argues the gap between closed models like Claude and open weights such as GLM-5.2 may be smaller than benchmarks suggest, because Anthropic's product likely wraps inference with retrieval, prompt preprocessing, context-dependent system prompts, hidden tool calls, and specialist expert routing. Users see the full product, not raw inference, so benchmarks effectively pit an entire pipeline against bare open-model output, which is arguably apples to oranges.",
-      "zh": "一篇LocalLLaMA帖子认为，Claude等闭源模型与GLM-5.2等开源权重的差距可能比基准测试显示的更小。因为Anthropic可能在推理外叠加了检索增强、提示预处理、上下文相关系统提示、隐藏工具调用和专家模型路由。用户看到的是整个产品而非纯模型输出，所以基准对比其实是拿完整管线对比裸模型推理，不太公平。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uqnqsc/chinas_minimax_plans_to_launch_27trillion/": {
+      "en": "The Information reports that Chinese startup MiniMax is preparing a next-generation large language model with 2.7 trillion parameters, internally codenamed M3 Pro. The company plans to release and open-source it as early as the third quarter, positioning it as a major upgrade over the current 428 billion parameter M3 flagship. The larger scale is expected to bring significant gains on complex reasoning and multi-step instruction-following tasks compared to prior MiniMax models.",
+      "zh": "The Information 报道称，中国 MiniMax 正在准备一款代号 M3 Pro 的新一代大语言模型，参数规模高达 2.7 万亿，最快将于第三季度开源发布。相比目前拥有 4280 亿参数的旗舰模型 M3，这款新模型规模大幅提升，预计在复杂推理和多步骤指令任务上会带来明显进步，被视为 MiniMax 的重大升级。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uk7khq/audiocpp_vibevoice_15b_released_90min_podcast_in/": {
-      "en": "The author of audio.cpp, a native C++ and ggml runtime for local audio models, added VibeVoice 1.5 billion parameter support and shared benchmarks. On an RTX 5090 the runtime produced 93.6 minutes of audio in 22.95 minutes of wall time, running 4.08 times faster than real time and 2.86 times faster than the Python baseline with no quantization. The project targets long-form multi-speaker text to speech for podcasts, character chat, and narration.",
-      "zh": "audio.cpp作者宣布该原生C++与ggml本地音频运行时新增VibeVoice 15亿参数模型支持。RTX 5090上生成93.6分钟音频耗时22.95分钟，达到实时速度的4.08倍，未使用量化即比Python基线快2.86倍。项目聚焦长播客、多说话人对话和角色语音等长文本合成场景。",
-      "title_en": "audio.cpp adds VibeVoice 1.5 billion parameter support, running long-form podcast synthesis over four times faster than real time on an RTX 5090 with no quantization",
-      "title_zh": "audio.cpp新增VibeVoice 15亿参数模型支持，在RTX 5090上以四倍实时速度合成长播客，无需量化"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uqpxgp/can_you_trust_local_models_to_answer_accurately/": {
+      "en": "A developer benchmarked local Gemma QAT, Qwen and Apple Intelligence models on 7,648 multiple-choice questions generated from Node, LangChain.js, TypeScript, Transformers.js and Vue documentation. Without retrieval, accuracy was mediocre, but adding a Retrieval Augmented Generation pipeline sharply improved results, with Apple Intelligence hitting 86 percent despite a 4 thousand token context limit. Thinking modes gave only about a one-point gain, so the takeaway is that a decent retrieval stack matters more than reasoning tokens.",
+      "zh": "一位开发者用从 Node、LangChain.js、TypeScript、Transformers.js 和 Vue 文档生成的 7648 道选择题，评测了本地 Gemma QAT、Qwen 以及 Apple Intelligence 模型。不接检索时表现平平，接入检索增强生成后大幅提升，Apple Intelligence 即使只有 4 千 tokens 上下文也拿到 86 分。开启思考模式只带来约一分提升，说明检索栈比推理链更关键。",
+      "title_en": "A developer benchmarks local Gemma, Qwen and Apple Intelligence on 7,648 documentation questions with and without retrieval augmented generation",
+      "title_zh": "开发者用 7648 道文档问题对比本地 Gemma、Qwen 与 Apple Intelligence 在检索增强下的表现"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uknx14/swerebench_leaderboard_update_glm52_qwen3627b/": {
-      "en": "The SWE-rebench software engineering benchmark added new models and a cleaner comparison interface. Claude Opus 4.8 xhigh leads at 56.5 percent, followed by GLM-5.2 at 51.1 percent and Gemini 3.5 Flash at 49.5 percent. Among locally hostable options, Qwen3.6-27B scores 36.5 percent, Qwen3.6-35B-A3B reaches 33.8 percent, and Gemma 4 31B trails at 16.5 percent. The maintainers ask which local coding models to add next.",
-      "zh": "SWE-rebench软件工程编程基准新增多款模型并翻新对比界面。Claude Opus 4.8 xhigh以56.5%领先，GLM-5.2达51.1%，Gemini 3.5 Flash为49.5%。本地可部署模型中Qwen3.6-27B得36.5%，Qwen3.6-35B-A3B为33.8%，Gemma 4 31B为16.5%。维护者征询社区下一步应加入哪些本地编程模型。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uqk69n/introducing_horus_hiero_a_hieroglyphic_language/": {
+      "en": "Tokenaii released Horus Hiero, an open-source multimodal model line for translating Ancient Egyptian hieroglyphs, shipping in a 9 billion parameter version and a 4 billion Mini variant tuned for phones and CPUs. Built on Qwen 3.5, it covers roughly 150 languages, handles text, images and video, and offers a 512 thousand token context expandable to one million. Reported scores include 79 percent on MMLU-Pro, 63 on LiveCodeBench and 84 on HumanEval.",
+      "zh": "Tokenaii 发布开源多模态模型 Horus Hiero，用于翻译古埃及象形文字，包含 90 亿参数版和面向手机与 CPU 的 40 亿参数 Mini 版。模型基于 Qwen 3.5，支持约 150 种语言、文字图像视频三模态，上下文可达 51 万 2 千 tokens 并可扩展至一百万。MMLU-Pro 得 79 分，LiveCodeBench 63 分，HumanEval 84 分。",
+      "title_en": "Tokenaii releases Horus Hiero, an open source multimodal model for translating Ancient Egyptian hieroglyphs",
+      "title_zh": "Tokenaii 开源多模态模型 Horus Hiero，专注古埃及象形文字翻译"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ukorvr/open_models_june_2026/": {
-      "en": "A monthly roundup of open model releases for June 2026. Notable finetunes include Nex-N2, Ornith-1.0, Agents-A1, Holo3.1, Tmax-27b, MusaCoder-27B, and VibeThinker-3B. NVIDIA published NVFP4 quantizations of NVIDIA-Nemotron-3-Ultra-550B-A55B, diffusiongemma-26B-A4B-it, Qwen3.6-27B, GLM-5.2, MiniMax-M3, and Qwen3.5-397B-A17B. AMD contributed MXFP4 versions of Kimi-K2.7-Code, GLM-5.2, Qwen3.5-397B-A17B, and MiniMax-M3. Intel released AutoRound builds. Also notable: Gemma 4 quantization-aware training checkpoints and NVIDIA's TwoTower diffusion base model.",
-      "zh": "2026年6月开源模型月度盘点。微调模型包括Nex-N2、Ornith-1.0、Agents-A1、Holo3.1、Tmax-27b、MusaCoder-27B和VibeThinker-3B。NVIDIA为NVIDIA-Nemotron-3-Ultra-550B-A55B、diffusiongemma-26B-A4B-it、Qwen3.6-27B、GLM-5.2、MiniMax-M3、Qwen3.5-397B-A17B发布NVFP4量化；AMD为Kimi-K2.7-Code等发布MXFP4；Intel发布AutoRound版本。此外还有Gemma 4量化感知训练权重及NVIDIA双塔扩散基座模型。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uqs7ws/döner_bench_round_2_quant_compare/": {
+      "en": "The community Döner Bench returned for a second round, this time comparing quantization levels of the same base models on a single-file HTML canvas prompt that renders a rotating vertical kebab over a gas element. Nine finished runs per quant were retained, and the tester noted Gemma 4 in particular degraded visibly as bit depth dropped, while low quants of Qwen 3.6 27B and 35B Mixture of Experts variants produced increasingly chaotic scenes.",
+      "zh": "社区 Döner Bench 第二轮登场，这次用同一段旋转烤肉串画布提示，横向对比同一模型的不同量化档位。作者对每档保留 9 次有效运行，观察到 Gemma 4 在低位量化下明显变笨，Qwen 3.6 27B 及 35B 混合专家版低量化下画面愈发混乱，展示了量化压缩对复杂创作任务的削弱。",
+      "title_en": "Community Döner Bench compares quantization levels of Gemma 4 and Qwen 3.6 on a rotating kebab canvas prompt",
+      "title_zh": "社区 Döner Bench 用旋转烤肉串画布对比 Gemma 4 与 Qwen 3.6 的量化版本表现"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ukn45x/i_mapped_which_local_llms_actually_fit_each_ram/": {
-      "en": "An open GitHub dataset maps which local LLMs realistically fit each RAM tier from 8 gigabytes up to 128 gigabytes. The rule of thumb is about 0.6 gigabytes per billion parameters at Q4 K M quantization, sized to roughly 70 percent of available memory so the operating system, context, and KV cache still have room. Sixty-two models are included, along with ready ollama commands and separate GPU, Mac, and iPhone breakdowns.",
-      "zh": "一份GitHub开源数据集列出了8GB到128GB各内存档位可实际运行的本地大模型。经验法则是Q4_K_M量化下每十亿参数约需0.6GB内存，并按可用内存70%估算容量，为系统、上下文和KV缓存预留空间。收录62款模型，附各档ollama启动命令，并区分GPU、Mac和iPhone不同硬件形态。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uqd8i7/i_need_an_adult_jspaceaware/": {
+      "en": "An amateur reader of Anthropic's recent J space paper sketches how the same Jacobian estimator, trained on about a thousand prompts to cheaply approximate how mid-layer vector changes reshape final logits, could be reused elsewhere. He proposes J space aware pruning and merging that scores activations by output influence rather than router weights, and distillation that amplifies the critical reasoning pathways when training smaller students, potentially cutting compute for the local community.",
+      "zh": "一位非科班读者把 Anthropic 最新的 J 空间论文拆解成大白话，并猜想把仅用约一千条 prompt 训练的雅可比估计器复用到别处。他提出以对最终输出影响力打分、而非路由权重的 J 空间感知剪枝与合并，以及在蒸馏时放大关键推理通路的思路，认为这可能让本地社区以更低算力得到不变笨的小模型。",
+      "title_en": "An amateur reader proposes applying Anthropic's J space Jacobian estimator to pruning, merging and distillation",
+      "title_zh": "业余读者设想把 Anthropic 的 J 空间雅可比估计器用于剪枝、合并与蒸馏"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ukx9p1/end_of_an_agony_real_production_service_that_uses/": {
-      "en": "After eight months, a team is shutting down their production LLM assistant that scheduled clinic appointments over messenger, and the author shares lessons. Open models are now competitive for personal one-on-one use, but a business-to-business-to-consumer service cannot guarantee the 100 percent correctness clients promise their users. Failures piled up: PydanticAI sync and async issues, provider outages, broken structured output, emojis derailing the agent's persona, hallucinated appointments, and agents cancelling records to fit new bookings.",
-      "zh": "作者团队运营了八个月的诊所预约LLM助手即将下线，他分享了惨痛教训。开源模型如今在一对一个人使用场景已具竞争力，但把服务卖给企业再服务终端用户时，无法保证客户承诺的100%正确率。具体问题包括：PydanticAI同步异步冲突、供应商宕机、结构化输出失效、表情符号让代理人格崩坏、幻觉出预约时间、甚至擅自取消已有预约来腾出档期。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uqykgh/qllm_no_transformer_no_mamba_and_new_noval/": {
+      "en": "A long-time indie AI builder released QLLM, a 100 million parameter proof-of-concept model that abandons transformers and Mamba for a phase-associative architecture with constant-time inference and no key value cache, so context length no longer inflates memory. Trained on a 4 billion token mix of dclm, fineweb and smoltalk2 plus supervised fine-tuning, it lands near GPT-2 quality with weights, code and an arXiv paper co-authored with Berkeley and Indiana collaborators.",
+      "zh": "一位深耕多年的独立开发者放出 QLLM，一个仅一亿参数的概念验证模型，抛弃 transformer 与 Mamba，改用相位关联结构，实现常数时间推理且无键值缓存，上下文再长也不撑爆显存。模型在四十亿 tokens 的 dclm、fineweb、smoltalk2 混合语料上预训练并做了监督微调，质量接近 GPT-2，权重、代码和与 Berkeley、Indiana 合著的 arXiv 论文均已开源。",
+      "title_en": "Indie builder releases QLLM, a 100 million parameter proof of concept with a phase associative architecture and constant time inference",
+      "title_zh": "独立开发者发布 QLLM：一亿参数、相位关联架构、常数时间推理的概念验证模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ukhu5g/readme_enmd_openpanguopenpangu20flash_at_main/": {
-      "en": "openPangu 2.0 Flash is a Mixture of Experts model trained on Huawei Ascend hardware, with 92 billion total parameters, 6 billion activated per token, and a 512 thousand token context window. Pretraining used 34 trillion tokens. Architecture combines Multi-head Latent Attention with a one to two mix of DeepSeek Sparse Attention and Sliding Window Attention layers, a four-stream residual topology, three multi-token-prediction heads for self-speculative decoding, and the Muon optimizer.",
-      "zh": "openPangu 2.0 Flash是在华为Ascend硬件上训练的Mixture of Experts模型，总参数920亿、激活参数60亿，支持51.2万上下文窗口，预训练数据量34万亿tokens。架构上结合MLA注意力，并按1比2比例混合DSA稀疏注意力与SWA滑动窗口，采用四路残差拓扑、三个多token预测头实现自投机解码，使用Muon优化器加速训练。",
-      "title_en": "openPangu 2.0 Flash release notes describe a 92 billion parameter Mixture of Experts model trained on Huawei Ascend with 512 thousand context, sparse attention, and multi-token prediction",
-      "title_zh": "openPangu 2.0 Flash发布说明：华为Ascend训练的920亿参数Mixture of Experts模型，51.2万上下文窗口，采用稀疏注意力与多token预测"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ur1i1a/distilled_deepseek_into_gemma_4_26ba4b_vs_12b_not/": {
+      "en": "A first-time fine-tuner distilled DeepSeek v4 Pro into both Gemma 4 12 billion dense and 26 billion Mixture of Experts checkpoints using Unsloth Studio, QLoRA and identical hyperparameters on a pair of RTX 3090 cards. The Mixture of Experts model soaked up training loss about four times deeper thanks to more internal knowledge, though evaluation loss barely differed. The dense student was faster wall-clock and per GPU, and the whole run cost roughly four dollars.",
+      "zh": "一位首次尝试微调的用户用 Unsloth Studio、QLoRA 与相同超参，在两张 RTX 3090 上把 DeepSeek v4 Pro 蒸馏进 Gemma 4 的 120 亿密集模型和 260 亿参数混合专家模型。混合专家版凭借更丰富的内在知识把训练损失压得约四倍更低，但评估损失几乎持平；密集版单卡吞吐更高、总耗时更短，全部实验成本约四美元。",
+      "title_en": "First time fine tuner distills DeepSeek v4 Pro into dense and Mixture of Experts Gemma 4 checkpoints with Unsloth Studio",
+      "title_zh": "首次微调者用 Unsloth Studio 将 DeepSeek v4 Pro 蒸馏进 Gemma 4 密集版与混合专家版"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uk5y5m/deepseekv4flash_mxfp4_compute_buffer_scales_3x/": {
-      "en": "A user testing Bartowski's DeepSeek V4 Flash MXFP4 GGUF in llama.cpp reports that switching the KV cache from 16-bit to 8-bit quantization saves the expected 200 megabytes on the cache itself but also slashes the compute buffer from around 13 gigabytes to under 4 gigabytes, a 3.26 times reduction. That resolved an out-of-memory error at 32 thousand context on a 32 gigabyte card. They ask whether others see the same pattern.",
-      "zh": "一位用户在llama.cpp中测试Bartowski发布的DeepSeek V4 Flash MXFP4 GGUF时发现，KV缓存从16位切换到8位量化后，缓存本身仅省约200兆字节，但计算缓冲区却从约13吉字节骤降到不到4吉字节，缩减约3.26倍。这解决了32吉字节显卡在32000上下文下的显存溢出问题。他询问其他人是否也遇到相同现象。",
-      "title_en": "DeepSeek V4 Flash MXFP4 users find that switching the KV cache quantization from 16-bit to 8-bit shrinks the llama.cpp compute buffer roughly three times, fixing out-of-memory errors at high context",
-      "title_zh": "DeepSeek V4 Flash MXFP4用户发现将KV缓存从16位切换到8位后，llama.cpp计算缓冲区缩小约三倍，解决了长上下文的显存溢出问题"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ur4tz5/what_china_said_at_the_uns_first_global_dialogue/": {
+      "en": "A short excerpt from China's statement at the United Nations' first Global Dialogue on AI Governance frames open-source AI as a shared asset for all humanity. It highlights Chinese open weight models such as DeepSeek and Qwen for lowering the cost and barriers of AI adoption, and pledges continued promotion of open source models for industry, academia and research through international cooperation and inclusive ecosystem building.",
+      "zh": "这段摘录来自中国在联合国首届人工智能治理全球对话上的发言，将开源 AI 定位为全人类的共同财富。发言特别指出 DeepSeek 与 Qwen 等中国开源权重模型显著降低了 AI 采用门槛与成本，并承诺通过国际合作继续向产业界、学术界和研究机构推广开源模型，构建包容性生态。"
     }
   }
 }
