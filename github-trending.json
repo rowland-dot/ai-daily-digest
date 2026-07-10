@@ -1,27 +1,38 @@
 {
-  "fetched_at": "2026-07-09T22:00:16.666Z",
+  "fetched_at": "2026-07-10T21:35:45.545Z",
   "repos": [
     {
-      "owner": "MadsLorentzen",
-      "name": "ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+      "owner": "wonderwhy-er",
+      "name": "DesktopCommanderMCP",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 18707,
-      "forks": 5423,
-      "starsToday": 3728
+      "stars": 7211,
+      "forks": 914,
+      "starsToday": 349
     },
     {
-      "owner": "SmartlyDressedGames",
-      "name": "U3-SDK",
-      "url": "https://github.com/SmartlyDressedGames/U3-SDK",
-      "description": "Source code for Unturned, a free open-world zombie survival sandbox game.",
-      "language": "C#",
-      "languageColor": "#178600",
-      "stars": 1976,
-      "forks": 250,
-      "starsToday": 541
+      "owner": "oven-sh",
+      "name": "bun",
+      "url": "https://github.com/oven-sh/bun",
+      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 94169,
+      "forks": 4938,
+      "starsToday": 307
+    },
+    {
+      "owner": "abseil",
+      "name": "abseil-cpp",
+      "url": "https://github.com/abseil/abseil-cpp",
+      "description": "Abseil Common Libraries (C++)",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 17503,
+      "forks": 3193,
+      "starsToday": 106
     },
     {
       "owner": "addyosmani",
@@ -30,20 +41,130 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 75781,
-      "forks": 8150,
-      "starsToday": 2582
+      "stars": 76754,
+      "forks": 8242,
+      "starsToday": 1114
     },
     {
-      "owner": "VoltAgent",
-      "name": "awesome-design-md",
-      "url": "https://github.com/VoltAgent/awesome-design-md",
-      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "language": "",
-      "languageColor": "",
-      "stars": 99547,
-      "forks": 11568,
-      "starsToday": 1233
+      "owner": "jbeder",
+      "name": "yaml-cpp",
+      "url": "https://github.com/jbeder/yaml-cpp",
+      "description": "A YAML parser and emitter in C++",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 6072,
+      "forks": 2254,
+      "starsToday": 65
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 164502,
+      "forks": 14154,
+      "starsToday": 1663
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 251724,
+      "forks": 22460,
+      "starsToday": 969
+    },
+    {
+      "owner": "microsoft",
+      "name": "TypeScript",
+      "url": "https://github.com/microsoft/TypeScript",
+      "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 109752,
+      "forks": 13630,
+      "starsToday": 166
+    },
+    {
+      "owner": "catchorg",
+      "name": "Catch2",
+      "url": "https://github.com/catchorg/Catch2",
+      "description": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 20603,
+      "forks": 3406,
+      "starsToday": 69
+    },
+    {
+      "owner": "chriskohlhoff",
+      "name": "asio",
+      "url": "https://github.com/chriskohlhoff/asio",
+      "description": "Asio C++ Library",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 6063,
+      "forks": 1499,
+      "starsToday": 87
+    },
+    {
+      "owner": "TencentCloud",
+      "name": "TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 8190,
+      "forks": 753,
+      "starsToday": 134
+    },
+    {
+      "owner": "davila7",
+      "name": "claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 28742,
+      "forks": 3155,
+      "starsToday": 104
+    },
+    {
+      "owner": "zeux",
+      "name": "meshoptimizer",
+      "url": "https://github.com/zeux/meshoptimizer",
+      "description": "Mesh optimization library that makes meshes smaller and faster to render",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 8011,
+      "forks": 781,
+      "starsToday": 86
+    },
+    {
+      "owner": "tailscale",
+      "name": "tailscale",
+      "url": "https://github.com/tailscale/tailscale",
+      "description": "The easiest, most secure way to use WireGuard and 2FA.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 33603,
+      "forks": 2908,
+      "starsToday": 183
+    },
+    {
+      "owner": "google-labs-code",
+      "name": "stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 6699,
+      "forks": 925,
+      "starsToday": 101
     },
     {
       "owner": "iOfficeAI",
@@ -52,119 +173,42 @@
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
       "language": "C#",
       "languageColor": "#178600",
-      "stars": 13330,
-      "forks": 906,
-      "starsToday": 1923
+      "stars": 14372,
+      "forks": 971,
+      "starsToday": 1210
     },
     {
-      "owner": "wonderwhy-er",
-      "name": "DesktopCommanderMCP",
-      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 6559,
-      "forks": 780,
-      "starsToday": 185
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-cookbooks",
-      "url": "https://github.com/anthropics/claude-cookbooks",
-      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 47101,
-      "forks": 5554,
-      "starsToday": 194
-    },
-    {
-      "owner": "vxcontrol",
-      "name": "pentagi",
-      "url": "https://github.com/vxcontrol/pentagi",
-      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "owner": "hashicorp",
+      "name": "terraform",
+      "url": "https://github.com/hashicorp/terraform",
+      "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 19326,
-      "forks": 2617,
-      "starsToday": 543
+      "stars": 49138,
+      "forks": 10669,
+      "starsToday": 168
     },
     {
-      "owner": "unclecode",
-      "name": "crawl4ai",
-      "url": "https://github.com/unclecode/crawl4ai",
-      "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 71778,
-      "forks": 7375,
-      "starsToday": 195
-    },
-    {
-      "owner": "imthenachoman",
-      "name": "How-To-Secure-A-Linux-Server",
-      "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
-      "description": "An evolving how-to guide for securing a Linux server.",
-      "language": "",
-      "languageColor": "",
-      "stars": 29039,
-      "forks": 1935,
-      "starsToday": 306
-    },
-    {
-      "owner": "huxingyi",
-      "name": "autoremesher",
-      "url": "https://github.com/huxingyi/autoremesher",
-      "description": "Automatic quad remeshing tool",
+      "owner": "grpc",
+      "name": "grpc",
+      "url": "https://github.com/grpc/grpc",
+      "description": "C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)",
       "language": "C++",
       "languageColor": "#f34b7d",
-      "stars": 2332,
-      "forks": 171,
-      "starsToday": 405
+      "stars": 45123,
+      "forks": 11319,
+      "starsToday": 68
     },
     {
-      "owner": "bradautomates",
-      "name": "claude-video",
-      "url": "https://github.com/bradautomates/claude-video",
-      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6637,
-      "forks": 764,
-      "starsToday": 727
-    },
-    {
-      "owner": "prisma",
-      "name": "prisma",
-      "url": "https://github.com/prisma/prisma",
-      "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 46872,
-      "forks": 2329,
-      "starsToday": 373
-    },
-    {
-      "owner": "kyutai-labs",
-      "name": "pocket-tts",
-      "url": "https://github.com/kyutai-labs/pocket-tts",
-      "description": "A TTS that fits in your CPU (and pocket)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6940,
-      "forks": 697,
-      "starsToday": 273
-    },
-    {
-      "owner": "asgeirtj",
-      "name": "system_prompts_leaks",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "owner": "vercel",
+      "name": "next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 55077,
-      "forks": 8993,
-      "starsToday": 1135
+      "stars": 140663,
+      "forks": 31521,
+      "starsToday": 176
     }
   ]
 }

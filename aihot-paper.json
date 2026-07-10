@@ -1,8 +1,59 @@
 {
-  "count": 16,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrf93thr003iihxbrnllhiyd",
+      "title": "宇树G1人形机器人完成首例活体微创手术",
+      "title_en": "A new Nature paper shows Unitree's G1 humanoid robot performing what researchers call the first live…",
+      "url": "https://x.com/thexpin/status/2075640168896516139",
+      "permalink": "https://aihot.virxact.com/items/cmrf93thr003iihxbrnllhiyd",
+      "source": "X：X.PIN (@thexpin)",
+      "publishedAt": "2026-07-10T17:55:54.000Z",
+      "summary": "一篇新的《自然》论文展示了宇树G1人形机器人执行研究人员所称的首例由人形机器人完成的活体标准微创手术。加州大学圣地亚哥团队使用G1，以常规手术器械完成了对两只活猪的腹腔镜胆囊切除术；第二次手术耗时32分钟。该机器人仍需反复校正，且尚无法满足手术无菌标准，但其成本可能仅为达芬奇系统的约5%。",
+      "category": "paper",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrf93thr003iihxbrnllhiyd"
+      }
+    },
+    {
+      "id": "cmrf7a5kg000wihpr80vvnaxn",
+      "title": "DeepSeek-V4 Flash 强化学习训练登陆 AMD Instinct MI355X GPU，由 Miles 框架支持",
+      "title_en": "News Bringing DeepSeek-V4 Flash RL Training to AMD Instinct MI355X GPUs with Miles DeepSeek-V4 RL is now supported in Miles on AMD InstinctTM MI355X GPUs with ROCmTM！ RL requires SGLang rollout and Megatron training to implement the same policy closely enough that token probabilities … AMD & Miles Team",
+      "url": "https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4",
+      "permalink": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-10T17:19:11.037Z",
+      "summary": "DeepSeek-V4 Flash 的强化学习训练现已在 AMD Instinct MI355X GPU 上通过 Miles 框架获得支持，基于 ROCm 软件栈运行。该 2840 亿参数 MoE 模型（每 token 激活 130 亿参数）需 SGLang 进行 rollout 生成、Megatron 进行策略更新，Miles 负责异步循环与权重同步。团队解决了 SGLang 与 Megatron 间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，最终在四个八 GPU 节点上完成端到端验证：超过 100 个优化器步骤中训练-rollout 对数概率差可控，在线奖励持续提升，离线 AIME-2024 基准分数同步上涨。",
+      "category": "paper",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn"
+      }
+    },
+    {
+      "id": "cmrerlfrs0046ihm87smc2el4",
+      "title": "小红书发布大模型新架构 PIPO",
+      "title_en": "小红书发布大模型新架构 PIPO ，让模型一次「吞两个、吐两个」",
+      "url": "https://mp.weixin.qq.com/s/1eo7rrCAH-OA0TnXwwqJEg",
+      "permalink": "https://aihot.virxact.com/items/cmrerlfrs0046ihm87smc2el4",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-10T09:59:00.000Z",
+      "summary": "小红书提出 PIPO 架构，通过输入侧压缩器将两个 token 折叠为一个 latent，输出侧 MTP head 将隐藏状态展开为额外 token，实现输入长度减半、每步输出翻倍。基于 Qwen3.5-4B/9B backbone，在 AIME 2025 等基准上最高带来 +7.15 pass@4 提升。部署测评中，TTFT 加速约 1.23×，TPOT 加速约 1.86×。训练采用 SFT 和 On-Policy Distillation 两阶段，将 verifier 校验能力蒸馏进轻量 confidence head。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrerlfrs0046ihm87smc2el4"
+      }
+    },
     {
       "id": "cmrcigf5k01bqihx54i8oph9u",
       "title": "OpenAI 审计 SWE-Bench Pro 发现约 30% 的评测任务存在缺陷",
@@ -239,40 +290,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmra2w89f00etihx86n1ot96l"
-      }
-    },
-    {
-      "id": "cmr4ewvnu016msll54kwma7sx",
-      "title": "阿里达摩院发布超导材料发现AI智能体Elements Claw",
-      "title_en": "阿里达摩院：AI 智能体发现 4 种全新超导材料，已获实验验证",
-      "url": "https://www.ithome.com/0/972/089.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr4ewvnu016msll54kwma7sx",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-03T03:27:15.000Z",
-      "summary": "7月3日，阿里达摩院联合中国人民大学、中国科学院大学发布首个超导材料发现AI智能体Elements Claw。该智能体采用\"专通融合\"架构，基于1.25亿分子/晶体结构预训练的1B参数原子基础模型Elements，判断超导性AUC达0.996，预测临界温度平均误差小于1K。AI仅用28个GPU小时筛选240万晶体结构，预测出6.8万个候选材料，其中4种（Hf21Re25、Zr4VRe7、HfZrRe4、Zr3ScRe8）已合成并验证超导性，临界温度最高6.5K。全部240万稳定晶体数据库已开放。",
-      "category": "paper",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr4ewvnu016msll54kwma7sx"
-      }
-    },
-    {
-      "id": "cmrbg84yf03maihl15k3on92w",
-      "title": "SkillOpt-Lite：更快更好的智能体自我进化，只需一行代码",
-      "title_en": "SkillOpt-Lite： Better and Faster Agent Self-evolution via One Line of Vibe",
-      "url": "https://arxiv.org/abs/2607.03451",
-      "permalink": "https://aihot.virxact.com/items/cmrbg84yf03maihl15k3on92w",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "SkillOpt-Lite 将智能体技能优化形式化为零阶优化，提出文件系统轨迹探索、共识属性挖掘与独立验证门控三条原则。相比完整 SkillOpt，它加速收敛并在 LiveMath 上提升 GPT-5.5 达 +8.8 点、GPT-5.4-nano 达 +25.4 点，使 nano 模型超越标准 SkillOpt 优化的 GPT-5.4。该框架已集成至 VSCode Copilot，开发者仅需一行代码即可进化技能。框架还可泛化为完整工具链优化（HarnessOpt），在 SpreadsheetBench 上令 GPT-5.4-nano 达到 0.7758 准确率，超越运行标准流程的更大模型 GPT-5.5（0.7620）。代码已开源。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbg84yf03maihl15k3on92w"
       }
     }
   ]

@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-09T22:00:25.950Z",
+  "fetched_at": "2026-07-10T21:35:53.416Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Nilay Patel",
+      "link": "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
+      "updated": "2026-07-10T17:05:26+00:00",
+      "summary": "The reality is to make augmented reality glasses, you need to put a camera next to your eyes that is continuously recording everything you see and processing that to put information over it. There is not another way around it. And there's certainly not a chip that can fit in the stem of a glasses that is both powerful enough and power miserly enough to do that in real time. You have to send that data to a cloud. You gotta do it. [...] Or you can build something the size of a Vision Pro with a battery pack that lives somewhere else. Those are the current choices in this world. And it means if you want to build the product that everyone thinks is the next thing, you are going to have to invade people's privacy. And maybe you shouldn't. Like, there's an incredible argument for, nope, you shouldn't do that. Nope, the trade-offs required to make this product are so high at a societal level that we should stop it."
+    },
+    {
+      "title": "Quoting OpenAI",
+      "link": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+      "updated": "2026-07-10T01:05:57+00:00",
+      "summary": "[...] Work on web and mobile runs in the cloud. Work in the desktop app can also use local files and desktop apps with your permission. At launch, cloud Work conversations do not appear in desktop Work; desktop Work threads and local files remain on that computer."
+    },
     {
       "title": "The new GPT-5.6 family: Luna, Terra, Sol",
       "link": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything",
       "updated": "2026-07-07T16:18:16+00:00",
       "summary": "An experimental Web Component built using GPT-5.5 and the following prompt :"
-    },
-    {
-      "title": "sqlite-utils 4.0",
-      "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything",
-      "updated": "2026-07-07T15:42:43+00:00",
-      "summary": "See sqlite-utils 4.0, now with database schema migrations for details."
-    },
-    {
-      "title": "sqlite-utils 4.0rc4",
-      "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
-      "updated": "2026-07-07T05:36:15+00:00",
-      "summary": "The last RC before the 4.0 stable release. Mainly implements feedback from a detailed review by Claude Fable 5."
     }
   ]
 }
