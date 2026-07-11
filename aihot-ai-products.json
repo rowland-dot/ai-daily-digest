@@ -1,8 +1,25 @@
 {
-  "count": 31,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrfoggdz01o7ihjl1exdh1qt",
+      "title": "Claude Code v2.1.207 发布",
+      "title_en": "v2.1.207",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "permalink": "https://aihot.virxact.com/items/cmrfoggdz01o7ihjl1exdh1qt",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "publishedAt": "2026-07-11T00:52:10.000Z",
+      "summary": "Claude Code v2.1.207 发布。Auto 模式在 Bedrock、Vertex AI 和 Foundry 上无需 `CLAUDE_CODE_ENABLE_AUTO_MODE` 即可使用，可通过 `disableAutoMode` 设置关闭。修复了流式响应中包含超长列表、表格、段落或代码块时终端冻结和按键延迟的问题；修复了非交互式运行中远程托管设置被永久记录为已同意而未显示安全同意对话框的问题；修复了自动更新程序每次发布时覆盖 `~/.local/bin/claude` 自定义启动脚本或符号链接的问题。Bedrock、Vertex 和 Claude Platform on AWS 默认切换为 Claude Opus 4.8。Auto 模式不再从 `.claude/settings.local.json` 读取 `autoMode`，改为使用 `~/.claude/settings.json`。修复了 Windows 上 AWS 凭证解析卡住时无限挂起的问题，60 秒超时保护现在生效。",
+      "category": "ai-products",
+      "score": 56,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrfoggdz01o7ihjl1exdh1qt"
+      }
+    },
     {
       "id": "cmrf8177m007bihprf4zml1hn",
       "title": "Claude Code桌面版新增应用内浏览器",
@@ -324,6 +341,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc"
+      }
+    },
+    {
+      "id": "cmra2lgp000ayihx8eacylpo3",
+      "title": "腾讯混元Hy3登陆OpenRouter，免费至7月21日",
+      "title_en": "Thank you @novita_labs for making Hy3 available on @OpenRouter 🎉🎉🎉",
+      "url": "https://x.com/TencentHunyuan/status/2074327740757823511",
+      "permalink": "https://aihot.virxact.com/items/cmra2lgp000ayihx8eacylpo3",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-07-07T03:00:47.000Z",
+      "summary": "腾讯混元Hy3模型已通过Novita Labs作为Day-0合作伙伴在OpenRouter上线，并开放免费使用至7月21日。Hy3采用295B MoE架构（21B active），原生支持256K上下文，提供三种可配置推理模式，在编码、推理及长上下文任务上表现强劲，专为智能体工作流和生产级AI场景优化，兼顾可靠性、效率与成本。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmra2lgp000ayihx8eacylpo3"
       }
     },
     {

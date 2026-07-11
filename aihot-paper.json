@@ -1,8 +1,42 @@
 {
-  "count": 17,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrfiocpi0035ihjlcm4qu8af",
+      "title": "博科圣地如何利用前沿AI技术",
+      "title_en": "恐怖组织\"博科圣地\"如何利用前沿人工智能技术",
+      "url": "https://casp.ac/reports/ai-enabled-terrorism",
+      "permalink": "https://aihot.virxact.com/items/cmrfiocpi0035ihjlcm4qu8af",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-10T22:07:19.177Z",
+      "summary": "2025至2026年间对尼日利亚东北部27名前\"博科圣地\"成员的半结构化访谈揭示了该组织在2024年系统性地利用前沿AI技术。两大派系均使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek辅助作战与日常运作，AI应用已通过专门小组和内部培训实现制度化。成员成功绕过部分安全限制，将AI用于袭击策划、武器故障排查及爆炸装置设计。相关技术通过跨国圣战网络传播，伊斯兰国特工提供了面对面培训。受访者对AI表现出强烈热情，部分人对大规模杀伤性武器持开放态度，但记录在案的使用仍限于常规手段。",
+      "category": "paper",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrfiocpi0035ihjlcm4qu8af"
+      }
+    },
+    {
+      "id": "cmrfdbe4g016aihxb8btg5nu0",
+      "title": "OpenAI 论文：GPT-5.6 Sol Ultra 证明图论\"循环双覆盖猜想\"",
+      "title_en": "GPT-5.6 Sol Ultra 给出了\"循环双覆盖猜想\"的证明 【pdf】",
+      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "permalink": "https://aihot.virxact.com/items/cmrfdbe4g016aihxb8btg5nu0",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-10T19:59:11.362Z",
+      "summary": "OpenAI 发布论文，称 GPT-5.6 Sol Ultra 证明了图论中悬而未决的\"循环双覆盖猜想\"。该猜想断言每个无桥无向图都存在一组环，每条边恰好被覆盖两次。论文利用 GPT-5.6 Sol Ultra 完成证明，并借助 Codex 撰写。证明过程首先将问题简化为三次图，利用 8-流定理和 Tutte 的结果将边标记为 F32 的非零元，再转化为每个顶点处每个元素出现零次或两次的二元集标记，最终归结为线性代数论证。",
+      "category": "paper",
+      "score": 84,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrfdbe4g016aihxb8btg5nu0"
+      }
+    },
     {
       "id": "cmrf93thr003iihxbrnllhiyd",
       "title": "宇树G1人形机器人完成首例活体微创手术",
@@ -21,23 +55,6 @@
       }
     },
     {
-      "id": "cmrf7a5kg000wihpr80vvnaxn",
-      "title": "DeepSeek-V4 Flash 强化学习训练登陆 AMD Instinct MI355X GPU，由 Miles 框架支持",
-      "title_en": "News Bringing DeepSeek-V4 Flash RL Training to AMD Instinct MI355X GPUs with Miles DeepSeek-V4 RL is now supported in Miles on AMD InstinctTM MI355X GPUs with ROCmTM！ RL requires SGLang rollout and Megatron training to implement the same policy closely enough that token probabilities … AMD & Miles Team",
-      "url": "https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4",
-      "permalink": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-07-10T17:19:11.037Z",
-      "summary": "DeepSeek-V4 Flash 的强化学习训练现已在 AMD Instinct MI355X GPU 上通过 Miles 框架获得支持，基于 ROCm 软件栈运行。该 2840 亿参数 MoE 模型（每 token 激活 130 亿参数）需 SGLang 进行 rollout 生成、Megatron 进行策略更新，Miles 负责异步循环与权重同步。团队解决了 SGLang 与 Megatron 间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，最终在四个八 GPU 节点上完成端到端验证：超过 100 个优化器步骤中训练-rollout 对数概率差可控，在线奖励持续提升，离线 AIME-2024 基准分数同步上涨。",
-      "category": "paper",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn"
-      }
-    },
-    {
       "id": "cmrerlfrs0046ihm87smc2el4",
       "title": "小红书发布大模型新架构 PIPO",
       "title_en": "小红书发布大模型新架构 PIPO ，让模型一次「吞两个、吐两个」",
@@ -52,6 +69,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrerlfrs0046ihm87smc2el4"
+      }
+    },
+    {
+      "id": "cmrf7a5kg000wihpr80vvnaxn",
+      "title": "DeepSeek-V4 Flash 强化学习训练登陆 AMD Instinct MI355X GPU，由 Miles 框架支持",
+      "title_en": "News Bringing DeepSeek-V4 Flash RL Training to AMD Instinct MI355X GPUs with Miles DeepSeek-V4 RL is now supported in Miles on AMD InstinctTM MI355X GPUs with ROCmTM！ RL requires SGLang rollout and Megatron training to implement the same policy closely enough that token probabilities … AMD & Miles Team",
+      "url": "https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4",
+      "permalink": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-09T16:00:00.000Z",
+      "summary": "DeepSeek-V4 Flash 的强化学习训练现已在 AMD Instinct MI355X GPU 上通过 Miles 框架获得支持，基于 ROCm 软件栈运行。该 2840 亿参数 MoE 模型（每 token 激活 130 亿参数）需 SGLang 进行 rollout 生成、Megatron 进行策略更新，Miles 负责异步循环与权重同步。团队解决了 SGLang 与 Megatron 间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，最终在四个八 GPU 节点上完成端到端验证：超过 100 个优化器步骤中训练-rollout 对数概率差可控，在线奖励持续提升，离线 AIME-2024 基准分数同步上涨。",
+      "category": "paper",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn"
       }
     },
     {
@@ -157,23 +191,6 @@
       }
     },
     {
-      "id": "cmra3zy5200p0ihx88zih8ib8",
-      "title": "字节 Seed 发布 EdgeBench：衡量真实世界环境学习，发现新 Scaling Law",
-      "title_en": "EdgeBench：衡量真实世界环境学习，发现新 Scaling Law",
-      "url": "https://seed.bytedance.com/zh/blog/edgebench-%E8%A1%A1%E9%87%8F%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%8E%AF%E5%A2%83%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%8E%B0%E6%96%B0-scaling-law",
-      "permalink": "https://aihot.virxact.com/items/cmra3zy5200p0ihx88zih8ib8",
-      "source": "字节 Seed：Research Feed（网页内嵌数据）",
-      "publishedAt": "2026-07-06T16:00:00.000Z",
-      "summary": "字节 Seed 发布超长程评测集 EdgeBench，含 134 个真实任务（覆盖六大领域），每个任务支持 Agent 持续工作至少 12 小时。基于约 38000 小时交互数据，发现 Agent 环境学习表现遵循高精度 log-sigmoid 曲线（平均 R2=0.998）；自 2025 年 9 月至 2026 年 5 月，前沿模型学习速度约每三个月翻一倍。EdgeBench 已开源 51 个任务及完整评测框架。",
-      "category": "paper",
-      "score": 55,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra3zy5200p0ihx88zih8ib8"
-      }
-    },
-    {
       "id": "cmraoctt6001mihvtza6yc7it",
       "title": "统一音频智能模型 Nemotron-Labs-Audex-30B-A3B 发布",
       "title_en": "Unified Audio Intelligence Without Regressing on Text Intelligence",
@@ -225,6 +242,23 @@
       }
     },
     {
+      "id": "cmra57ei80146ihx8c551d8w6",
+      "title": "EdgeBench：从真实世界环境中揭示学习缩放定律",
+      "title_en": "EdgeBench： Unveiling Scaling Laws of Learning from Real-World Environments",
+      "url": "https://arxiv.org/pdf/2607.05155",
+      "permalink": "https://aihot.virxact.com/items/cmra57ei80146ihx8c551d8w6",
+      "source": "字节 Seed：Research Papers（网页内嵌数据）",
+      "publishedAt": "2026-07-05T16:00:00.000Z",
+      "summary": "字节跳动Seed团队发布EdgeBench，包含134个真实世界任务，覆盖科学发现、软件工程等6个领域，每任务支持至少12小时连续智能体运行。基于约38，000小时交互数据，发现总体性能与环境交互时间呈精确对数S形缩放定律（R2=0.998），且智能体学习速度约每三个月翻倍。已公开51个任务及完整评估框架。",
+      "category": "paper",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmra57ei80146ihx8c551d8w6"
+      }
+    },
+    {
       "id": "cmr9hdvnk049yslsmggdh1n33",
       "title": "语言模型中的全局工作空间",
       "title_en": "A global workspace in language models",
@@ -239,57 +273,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr9hdvnk049yslsmggdh1n33"
-      }
-    },
-    {
-      "id": "cmr5zuihg0739slc7nv4mlc5r",
-      "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
-      "title_en": "NVIDIA AI Introduces ASPIRE： A Self-Improving Robotics Framework Reaching 31% Zero-Shot on LIBERO-Pro Long Tasks",
-      "url": "https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks",
-      "permalink": "https://aihot.virxact.com/items/cmr5zuihg0739slc7nv4mlc5r",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-04T06:32:47.000Z",
-      "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr5zuihg0739slc7nv4mlc5r"
-      }
-    },
-    {
-      "id": "cmr5wizx2067eslc7xynzcf9y",
-      "title": "我国研制全球首款基于可控存内计算的忆阻器神经动力学芯片",
-      "title_en": "我国研制全球首款神经动力学芯片，首次将单步运算时延压缩至 2.12 毫秒",
-      "url": "https://www.ithome.com/0/972/526.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr5wizx2067eslc7xynzcf9y",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-04T05:01:02.000Z",
-      "summary": "北京大学集成电路学院联合中科院上海微系统所，发布全球首款基于可控存内计算的忆阻器神经动力学芯片，首次将单步运算时延压缩至2.12毫秒。芯片采用40纳米工艺，存内计算阵列与外围电路总面积0.28平方毫米，运行频率50 MHz，单步积分仅需9级流水。在脑皮层重建等任务中较当前GPU提速50至478倍，突破神经动力学实时计算瓶颈。相关成果7月3日发表于《科学》。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr5wizx2067eslc7xynzcf9y"
-      }
-    },
-    {
-      "id": "cmra2w89f00etihx86n1ot96l",
-      "title": "Vera：大规模LLM智能体安全测试框架",
-      "title_en": "Safety Testing LLM Agents at Scale： From Risk Discovery to Evidence-Grounded Verification",
-      "url": "https://arxiv.org/abs/2607.01793",
-      "permalink": "https://aihot.virxact.com/items/cmra2w89f00etihx86n1ot96l",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-04T00:00:00.000Z",
-      "summary": "Vera是一个端到端自动化安全测试框架，通过三阶段自增强流水线对LLM智能体进行规模化的安全检验：文献驱动探索持续发现新兴风险；组合生成跨维度构造可执行安全用例；自适应执行在隔离沙箱中运行异构agent并基于环境状态与工具调用证据验证结果。在OpenClaw、Hermes、Codex、Claude Code四个生产级agent框架上测试，多通道攻击下平均攻击成功率达93.9%。同步发布Vera-Bench，包含1600个可执行安全用例，覆盖124个风险类别。代码已公开。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra2w89f00etihx86n1ot96l"
       }
     }
   ]

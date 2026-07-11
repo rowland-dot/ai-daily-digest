@@ -1,23 +1,91 @@
 {
-  "count": 27,
+  "count": 31,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrfep0gs01ljihxb6uazy2jn",
-      "title": "Apple 起诉 OpenAI 窃取商业机密",
-      "title_en": "Apple sues OpenAI over alleged trade secret theft",
-      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft",
-      "permalink": "https://aihot.virxact.com/items/cmrfep0gs01ljihxb6uazy2jn",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-10T20:32:00.000Z",
-      "summary": "Apple 于周五向美国加州北区联邦法院提起诉讼，指控 OpenAI 窃取商业机密并违反合同。诉状称，OpenAI 高级领导层（包括首席硬件官 Tang Tan）指使前 Apple 员工在招聘过程中窃取机密，包括使用未发布产品的项目代号、要求应聘者携带硬件组件参加面试。Apple 还指控前高级系统电气工程师 Chang Liu 在 2026 年离职加入 OpenAI 后未归还公司笔记本电脑，并用其下载机密技术文档。Apple 称其机密信息已被 OpenAI 用于开发自有硬件产品，例如一项专有金属精加工技术。Apple 要求法院禁止 OpenAI 使用或披露其商业机密，并归还相关材料。",
+      "id": "cmrgmylg702eaih2e1e9hhfe4",
+      "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
+      "title_en": "Terrorist groups are using every major AI chatbot for attack planning and weapons development",
+      "url": "https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development",
+      "permalink": "https://aihot.virxact.com/items/cmrgmylg702eaih2e1e9hhfe4",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-11T17:04:28.000Z",
+      "summary": "剑桥大学CASP研究员Antonia Jülich对27名前成员的57次访谈显示，博科圣地已使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek等主流AI聊天机器人，用于袭击策划、制造更强爆炸装置、武器维护及行动安全。该组织两个派系均设立了专门的AI部门。ISIS自2023年起便提供提示工程和越狱培训，并训练尼日利亚的博科圣地指挥官绕过AI安全过滤器。研究指出，安全过滤器未能可靠防止滥用。Anthropic近期承认，越狱可能永远无法完全消除。",
       "category": "industry",
-      "score": 80,
+      "score": 73,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrfep0gs01ljihxb6uazy2jn"
+        "canonical": "https://aihot.virxact.com/items/cmrgmylg702eaih2e1e9hhfe4"
+      }
+    },
+    {
+      "id": "cmrg3syhp00l7iha7a3ansg62",
+      "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
+      "title_en": "11 天 Claude Fable 5 狂写超 100 万行代码：Rust 重构 JavaScript 运行时 Bun",
+      "url": "https://www.ithome.com/0/975/469.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-11T07:33:08.000Z",
+      "summary": "开发者Jarred Sumner借助Claude Fable 5模型，11天内将Bun从Zig重写为Rust，64个实例并行编写超100万行代码，API费用约16.5万美元。重构主因是Zig频繁内存错误，Rust可在编译时捕获。Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。Bun团队已于2025年12月被Anthropic收购。",
+      "category": "industry",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62"
+      }
+    },
+    {
+      "id": "cmrfr2xvi02brihjlp1tlzg1n",
+      "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
+      "title_en": "真是能力越强，破坏力越大啊！ 这个老哥Mac上的文件被OpenAI最顶的GPT-5.6-Sol删光了，估计所有跑本地AI Agent的人看到这个都得吓出一身冷汗🤯整个事件详细拆解，以及怎么避免类似悲…",
+      "url": "https://x.com/AYi_AInotes/status/2075761215251312722",
+      "permalink": "https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-07-11T01:56:54.000Z",
+      "summary": "知名 AI 创业者 Matt Shumer 的 Mac 硬盘被 OpenAI 最新 Agent 模型 GPT-5.6-Sol 彻底清空。他在本地 Agent 上开启 Full Access 权限，让 subagent 执行文件清理任务，结果 shell 变量 $HOME 路径解析错误，Agent 直接执行 `rm -rf /Users/mattsdevbox`，导致数年代码、文件、照片丢失。该任务此前已安全运行数百次。事后 Agent 自动生成事故报告承认错误。Matt 表示\"1000x 更信任 Anthropic 的 Fable\"。事件暴露 Agent 行业核心风险：顶级模型仍会在变量展开、路径等细节翻车；Subagent + 长时自主运行 + 全权限构成灾难放大器；模型厂商安全底线差异巨大。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n"
+      }
+    },
+    {
+      "id": "cmrflz3sd00x5ihjlndy4k7rn",
+      "title": "Meta 关闭 Instagram 用户可基于公开账户生成 AI 深度伪造图片的功能",
+      "title_en": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+      "permalink": "https://aihot.virxact.com/items/cmrflz3sd00x5ihjlndy4k7rn",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-07-10T23:49:50.000Z",
+      "summary": "在遭到强烈反对后，Meta 关闭了本周早些时候推出的一项 Instagram 功能。该功能允许用户通过 @ 提及公开 Instagram 账户，基于其内容生成 AI 图片，且无需账户所有者许可。Meta 在关于其新 Muse Image AI 模型的博客文章更新中表示，其初衷是提供有用的创意工具并给予用户认可，但用户反馈表明该功能可能被滥用。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrflz3sd00x5ihjlndy4k7rn"
+      }
+    },
+    {
+      "id": "cmrfj0gio008tihjlfdm729o7",
+      "title": "苹果起诉OpenAI窃取商业机密开发AI硬件",
+      "title_en": "吃瓜：Apple 把 OpenAI 告上了法庭，指控 OpenAI 系统性地窃取苹果商业机密，用来开发自己的 AI 硬件设备。 诉状今天提交至加州北区联邦地方法院，被告包括 OpenAI、OpenA…",
+      "url": "https://x.com/dotey/status/2075712647723397452",
+      "permalink": "https://aihot.virxact.com/items/cmrfj0gio008tihjlfdm729o7",
+      "source": "X：宝玉 (@dotey)",
+      "publishedAt": "2026-07-10T22:43:54.000Z",
+      "summary": "苹果公司今日在加州北区联邦地方法院对OpenAI提起诉讼，指控其系统性窃取苹果商业机密，用于开发AI硬件设备。被告包括OpenAI、其硬件负责人Tang Tan（前苹果iPhone和Apple Watch产品设计副总裁，在苹果任职24年）、前苹果高级系统电气工程师Chang Liu，以及Jony Ive联合创立的io Products。Jony Ive本人未被列为被告。",
+      "category": "industry",
+      "score": 84,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrfj0gio008tihjlfdm729o7"
       }
     },
     {
@@ -225,20 +293,20 @@
       }
     },
     {
-      "id": "cmrbkf2e804qlihl1e8qe5q4a",
-      "title": "美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相",
-      "title_en": "结束管制：美国政府批准 OpenAI 大规模推广 GPT-5.6，Sol 明日亮相",
-      "url": "https://www.ithome.com/0/973/922.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrbkf2e804qlihl1e8qe5q4a",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-08T03:30:52.000Z",
-      "summary": "美国商务部正式批准OpenAI大规模发布GPT-5.6。OpenAI宣布GPT-5.6 Sol将于本周四完成最后准备后，与Terra和Luna一同面向公众推出。此前因国家安全考量，美国政府要求分阶段发布，仅允许向经批准的有限实体开放。此次全面放行标志着临时管控结束。获批前，美国商务部下属AI标准与创新中心执行了测试，OpenAI技术团队驻扎华盛顿配合沟通。美国最新AI行政令即将出台，旨在为先进AI模型发布建立正式评估框架。",
+      "id": "cmrbizj9604dcihl1ab8gx5bj",
+      "title": "特朗普政府解禁OpenAI GPT 5.6",
+      "title_en": "据AXIOS：特朗普政府解除对OpenAI的GPT 5.6的限制，商务部已批准OpenAI可以广泛推出其先进的GPT 5.6模型。",
+      "url": "https://x.com/xiaohu/status/2074693782763958769",
+      "permalink": "https://aihot.virxact.com/items/cmrbizj9604dcihl1ab8gx5bj",
+      "source": "X：小互 (@xiaohu)",
+      "publishedAt": "2026-07-08T03:15:18.000Z",
+      "summary": "据AXIOS：特朗普政府解除对OpenAI的GPT 5.6的限制，商务部已批准OpenAI可以广泛推出其先进的GPT 5.6模型。",
       "category": "industry",
-      "score": 80,
+      "score": 76,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbkf2e804qlihl1e8qe5q4a"
+        "canonical": "https://aihot.virxact.com/items/cmrbizj9604dcihl1ab8gx5bj"
       }
     },
     {
@@ -256,6 +324,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795"
+      }
+    },
+    {
+      "id": "cmravndzc01f2ihoguc3yeuug",
+      "title": "欧盟议会通过《聊天控制法案》第一轮审议",
+      "title_en": "《聊天控制法案》在欧盟议会通过了第一轮审议",
+      "url": "https://www.heise.de/en/news/Showdown-in-Strasbourg-The-unexpected-return-of-Chat-Control-1-0-11356680.html",
+      "permalink": "https://aihot.virxact.com/items/cmravndzc01f2ihoguc3yeuug",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-07T16:17:31.015Z",
+      "summary": "欧洲议会本周二以331票赞成、304票反对、11票弃权通过紧急动议，允许周四对延长《聊天控制法案》过渡期重新投票。该过渡期4月已到期，曾允许Meta、Google等科技公司无具体嫌疑下自愿扫描私密通信中的儿童性虐待材料。反对者斥责该程序性操作企图恢复大规模监控。IT安全研究人员警告所用AI扫描错误率高不可接受，民权活动家担心此举阻碍制定更有效的永久法规。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmravndzc01f2ihoguc3yeuug"
       }
     },
     {
@@ -443,23 +528,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr815l2z00pgsl04wayrv4tr"
-      }
-    },
-    {
-      "id": "cmr6oxc0o0010slyafezzbtz7",
-      "title": "SpaceX与Anthropic每月12.5亿美元算力合同：算力成新基本盘",
-      "title_en": "Damn，每月 12.5 亿美元，SpaceX 和 Anthropic 的算力合同简直掀翻了行业天花板， 修订后的 IPO 文件披露，这份合作持续到 2029 年 5 月，双方都可以提前九十天通知终止…",
-      "url": "https://x.com/AYi_AInotes/status/2073464336534913167",
-      "permalink": "https://aihot.virxact.com/items/cmr6oxc0o0010slyafezzbtz7",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "publishedAt": "2026-07-04T17:49:55.000Z",
-      "summary": "修订版IPO文件披露，SpaceX与Anthropic签订每月12.5亿美元算力合同，持续至2029年5月，双方可提前90天通知终止，另有6个月后可终止条款。分析认为，这非普通云服务--SpaceX已将算力作为下一个基本盘，既对外供应算力扩营收，又能保障自身AI及X业务。SpaceX总裁Shotwell表示，公司视失败为数据金矿，不接受完美发射；上市后面临季度财报，其时间维度不同于常规投资者，买SpaceX不是买下一个季度。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr6oxc0o0010slyafezzbtz7"
       }
     }
   ]

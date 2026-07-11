@@ -1,23 +1,40 @@
 {
-  "count": 23,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrfg6n6301y4ihxb3mg2hmf7",
-      "title": "GPT-5.6 提升健康智能，Luna 性能更强成本更低",
-      "title_en": "GPT-5.6 is a major step forward for health intelligence. Across the lineup， we're delivering strong…",
-      "url": "https://x.com/OpenAI/status/2075686461693898868",
-      "permalink": "https://aihot.virxact.com/items/cmrfg6n6301y4ihxb3mg2hmf7",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-07-10T20:59:51.000Z",
-      "summary": "GPT-5.6 是健康智能领域的一大进步。\n\n在整个产品线中，我们以更低成本提供更强性能：GPT-5.6 Luna 在最高推理设置下性能优于 GPT-5.5，而成本降低 25 倍。\n\n这些进步共同提升了质量，同时让全球更多人能够使用先进模型。",
+      "id": "cmrglvcki024uih2edvsk7pef",
+      "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
+      "title_en": "\"physicians found fewer flaws in GPT-5.6 responses than physician-written responses.\"",
+      "url": "https://x.com/sama/status/2075985056846451123",
+      "permalink": "https://aihot.virxact.com/items/cmrglvcki024uih2edvsk7pef",
+      "source": "X：Sam Altman (@sama)",
+      "publishedAt": "2026-07-11T16:46:22.000Z",
+      "summary": "OpenAI 发布 GPT-5.6 系列在医疗领域的评估结果。最小变体 GPT-5.6 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，且成本低 25 倍；最大变体 GPT-5.6 Sol 树立新标杆。在涵盖患者端与临床端的多样化任务中，专科医生被要求以无限时间和网络访问权限撰写回答，随后由其他医生盲评。评估基于准确性、沟通、完整性、指令遵循及健康决策帮助性五个维度，共 20000 次评分。结果显示，所有 GPT-5.6 模型表现均显著优于医生，且医生发现 GPT-5.6 回答中的缺陷少于医生自己撰写的回答。",
       "category": "ai-models",
-      "score": 73,
+      "score": 68,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrfg6n6301y4ihxb3mg2hmf7"
+        "canonical": "https://aihot.virxact.com/items/cmrglvcki024uih2edvsk7pef"
+      }
+    },
+    {
+      "id": "cmrg3dsyt00g4iha7og0687tc",
+      "title": "蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型",
+      "title_en": "Ant Group's Robbyant Unveils LingBot-VA 2.0： A Causal Video-Action Model Built Natively for Physical AI",
+      "url": "https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0",
+      "permalink": "https://aihot.virxact.com/items/cmrg3dsyt00g4iha7og0687tc",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-11T07:56:11.000Z",
+      "summary": "蚂蚁集团旗下具身智能团队 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型。该模型采用因果 DiT 架构，视频专家约 13.0B 参数（约 1.9B 激活），训练规模约 15.3B 参数，推理时每 token 约 2.5B 激活。模型引入多块预测（MCP）实现 2.3 倍训练加速，并通过前瞻推理将推理延迟降至 142 ms/chunk。在 RoboTwin 2.0 的 50 个任务上，干净与随机演示数据平均成功率分别达 93.8% 和 93.4%。",
+      "category": "ai-models",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrg3dsyt00g4iha7og0687tc"
       }
     },
     {
@@ -35,23 +52,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmre2mjao00nrihwkhnv9ahqj"
-      }
-    },
-    {
-      "id": "cmrds7pdr06qiih4b6f0yienf",
-      "title": "OpenAI 发布最强模型与最佳博文",
-      "title_en": "obviously the best model we have ever produced， but also one of the best blog posts we have ever pro…",
-      "url": "https://x.com/sama/status/2075266471316615436",
-      "permalink": "https://aihot.virxact.com/items/cmrds7pdr06qiih4b6f0yienf",
-      "source": "X：Sam Altman (@sama)",
-      "publishedAt": "2026-07-09T17:10:58.000Z",
-      "summary": "显然是我们有史以来最好的模型，也是我们写得最好的博文之一：\n\nhttps://openai.com/index/gpt-5-6/",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrds7pdr06qiih4b6f0yienf"
       }
     },
     {
@@ -225,20 +225,20 @@
       }
     },
     {
-      "id": "cmrbikwbz04b5ihl16qfp5ntw",
-      "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
-      "title_en": "Ant Group's Robbyant Open-Sources LingBot-Vision： A 1B Boundary-Centric Vision Foundation Model for Dense Spatial Perception",
-      "url": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
-      "permalink": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-08T03:03:22.000Z",
-      "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。",
+      "id": "cmrbspnw906wlihl1bo8bu63i",
+      "title": "OpenAI GPT-5.6 周四发布，此前因美国政府强制延迟",
+      "title_en": "OpenAI's GPT-5.6 launches Thursday after a delay forced by the U.S. government",
+      "url": "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government",
+      "permalink": "https://aihot.virxact.com/items/cmrbspnw906wlihl1bo8bu63i",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-08T08:00:30.000Z",
+      "summary": "OpenAI GPT-5.6 模型于周四发布。该模型6月底亮相，最初因美国政府限制仅向部分合作伙伴提供，商务部在AI标准与创新中心完成额外测试后批准公开。OpenAI公开批评延迟，称将最佳工具与开发者及企业隔离。新模型Sol在TerminalBench 2.1得分88.8%，Sol Ultra达91.9%，高于Anthropic的Claude Mythos 5（88%）。在网络安全任务中，Sol与Mythos 5水平相当但仅用三分之一的token。Sol定价$5/$30每百万输入/输出token，Anthropic的Fable 5为$10/$50。",
       "category": "ai-models",
-      "score": 71,
+      "score": 74,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw"
+        "canonical": "https://aihot.virxact.com/items/cmrbspnw906wlihl1bo8bu63i"
       }
     },
     {
@@ -256,23 +256,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18"
-      }
-    },
-    {
-      "id": "cmrcdtas00074ihx5zzerv512",
-      "title": "推出 Grok 4.5",
-      "title_en": "Introducing Grok 4.5",
-      "url": "https://cursor.com/blog/grok-4-5",
-      "permalink": "https://aihot.virxact.com/items/cmrcdtas00074ihx5zzerv512",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-07-08T00:00:00.000Z",
-      "summary": "Cursor 与 SpaceXAI 联合训练了混合专家模型 Grok 4.5，在数万亿 tokens 的 Cursor 用户交互数据上训练，并通过强化学习解决软件工程、数据科学、金融、法律等领域的困难问题。基础版定价 $2/M 输入 tokens、$6/M 输出 tokens，快速版 $4/M 输入 tokens、$18/M 输出 tokens。即日起在 Cursor 桌面、网页、iOS、CLI 及 SDK 中可用，个人和团队计划首周使用量翻倍。Grok 4.5 与 Composer 2.5 为不同权重类别，两者将继续支持。",
-      "category": "ai-models",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcdtas00074ihx5zzerv512"
       }
     },
     {
@@ -307,6 +290,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz"
+      }
+    },
+    {
+      "id": "cmrcfo6cf00lwihx5z6xn4s83",
+      "title": "xAI 发布 Grok 4.5",
+      "title_en": "Introducing Grok 4.5 Jul 8， 2026 # Introducing Grok 4.5 Grok 4.5 is SpaceXAI's smartest model built for coding， agentic tasks， and knowledge work. Read More",
+      "url": "https://x.ai/news/grok-4-5",
+      "permalink": "https://aihot.virxact.com/items/cmrcfo6cf00lwihx5z6xn4s83",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-07T16:00:00.000Z",
+      "summary": "xAI 今日推出 Grok 4.5，为其最强模型，专为编程、智能体任务和知识工作打造。模型训练于数万块 NVIDIA GB300 GPU，DeepSWE 1.0 得分 62.0%，DeepSWE 1.1 得分 53%，Terminal Bench 2.1 得分 83.3%，SWE Bench Pro 解决率 64.7%。服务速度 80 TPS，token 效率约为 Opus 4.8 （max） 的 4.2 倍，在 Harvey Legal Agent Benchmark 排名第一。定价 $2/百万输入 token、$6/百万输出 token。即日起在 Grok Build、Cursor 和 SpaceXAI API 可用，欧盟地区预计 7 月中旬上线。",
+      "category": "ai-models",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrcfo6cf00lwihx5z6xn4s83"
       }
     },
     {
@@ -358,6 +358,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrc6hfeq002nih5mhc7h2btk"
+      }
+    },
+    {
+      "id": "cmr8w4ho5013isllsr07z577p",
+      "title": "腾讯混元 Hy3 正式发布：智能体与产品体验显著提升",
+      "title_en": "腾讯混元 Hy3 发布：Agent 能力和产品体验跃升",
+      "url": "https://mp.weixin.qq.com/s/X2x1GF09bFbTzc3M1981BQ",
+      "permalink": "https://aihot.virxact.com/items/cmr8w4ho5013isllsr07z577p",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-07-06T07:11:20.000Z",
+      "summary": "腾讯混元发布 Hy3，在推理、智能体、长上下文等任务上显著进步，比肩 2~5 倍参数规模旗舰模型。内部盲测均分 2.67/4，优于 GLM5.1（2.51/4）。幻觉率从 12.5% 降至 5.4%，常识错误率从 25.4% 降至 12.7%，多轮问题率降至 7.9%，MRCR 从 42.9% 升至 75.1%。任务解决率从 72% 跃升至 90%，平均耗时缩短 34%。API 价格为输入 1 元、输出 4 元（每百万 tokens），命中缓存 0.25 元。已以 Apache 2.0 协议在 GitHub、HuggingFace 等平台开源。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmr8w4ho5013isllsr07z577p"
       }
     },
     {
