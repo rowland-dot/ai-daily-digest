@@ -1,53 +1,63 @@
 {
-  "generated_at": "2026-07-10T21:44:43Z",
+  "generated_at": "2026-07-11T21:32:49Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants/": {
-      "en": "Unsloth published NVFP4 quantizations of Qwen 3.6 that run 2.5 times faster on the 27 billion parameter model and 1.56 to 1.79 times faster on the 35 billion parameter mixture-of-experts variant, compared with NVIDIA's own NVFP4 quants, with no measurable accuracy drop across MMLU-Pro, AIME 2025, and GPQA. The quants use 4-bit weights and activations so real 4-bit tensor cores handle the matmuls, and ship with FP8 key-value cache calibration that doubles usable context length.",
-      "zh": "Unsloth 发布了 Qwen 3.6 的 NVFP4 量化：270 亿参数模型比 NVIDIA 的 NVFP4 快 2.5 倍，350 亿参数混合专家版本快 1.56 至 1.79 倍，在 MMLU-Pro、AIME 2025 与 GPQA 上均无精度损失。量化采用 4 位权重与激活值，直接调用 4 位张量核完成矩阵乘法，并附带 FP8 键值缓存校准，可将可用上下文长度翻倍。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1utb6io/qwen36_35ba3b_q8_0_no_kv_quant_single_prompt_in/": {
+      "en": "The author asked Qwen 3.6 35 billion mixture of experts, at 8-bit quantization with no key-value quantization, to plan and then implement a procedural flight simulator with mountains, clouds and endless terrain inside one HTML file, driven from opencode in plan mode. They report the model punches well above its weight class only after switching from a 4-bit quant on GPU to the 8-bit quant on CPU, saying the accuracy gain is worth the slowdown.",
+      "zh": "作者让 Qwen 3.6 35B 专家混合模型在 8 位量化下先规划再实现一个包含山脉、云层和无尽程序化地形的飞行模拟器，全部装入单个 HTML 文件，由 opencode 的规划模式驱动。他强调只有从 GPU 上的 4 位量化切换到 CPU 上的 8 位量化，模型表现才远超参数量级，值得放慢推理速度。",
+      "title_en": "Qwen 3.6 35 billion mixture of experts writes a full procedural flight simulator into one HTML file",
+      "title_zh": "Qwen 3.6 350亿参数专家混合模型在单个 HTML 文件内写出完整的程序化飞行模拟器"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1usbfz3/meta_are_apparently_working_on_an_open_source/": {
-      "en": "Alexandr Wang has confirmed that Meta is building an open-source variant of Muse Spark, a move that would put the company alongside Anthropic and OpenAI in the AI-assisted coding space. No details on features or ship date are available yet, and the confirmation comes via a CNBC article rather than a Meta announcement. The submitter flags it as a project worth watching for anyone tracking open-weight coding assistants.",
-      "zh": "Alexandr Wang 证实 Meta 正在开发 Muse Spark 的开源版本，此举将使 Meta 在 AI 辅助编程领域与 Anthropic 和 OpenAI 展开直接竞争。目前尚无功能细节或发布时间，消息来自 CNBC 的一篇报道，而非 Meta 官方声明。发帖人建议关注开源编程助手方向的读者持续留意后续进展。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1utpxo6/i_created_a_super_harmful_model_d_by_tweaking_its/": {
+      "en": "Following Anthropic's release of its Jacobian Lens interpretability work, the author built a utility that lets a human hand-tune a model's behavior in its Jacobian space and then export a new weight file with the alterations baked in. They used it to make a deliberately misbehaving demonstration model, Nikusui version 1, released as GGUF quantizations, and are inviting feedback on manual abliteration as an alternative to script-driven refusal removal.",
+      "zh": "Anthropic 前几日公开 Jacobian Lens 后，作者据此做了一款工具：允许人在模型的 Jacobian 空间内调整行为，再导出带同样修改行为的新权重。作者用它发布了首个刻意破除安全约束的示例模型 Nikusui-v1 及其 GGUF 量化，希望社区反馈这种人工修剪路线。",
+      "title_en": "Using Anthropic's Jacobian Lens to hand-alter a model's behavior and export a modified weight file",
+      "title_zh": "用 Anthropic 的 Jacobian Lens 手动改动模型行为并导出新权重"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uswlq8/training_an_llm_from_scratch_on_1800s_texts_160gb/": {
-      "en": "A hobbyist finished a 40 billion token, 160 gigabyte dataset of 1800 to 1875 English texts from England and the United States, and trained a 500 million parameter evaluation model on a 5 billion token slice while a 2 billion parameter run is planned. The model is fine-tuned on synthetic period-appropriate question-and-answer pairs drawn from the corpus and handles London topics best. Sample outputs and the TimeCapsuleLLM repository are shared for anyone curious about the historical style.",
-      "zh": "作者整理了一份 400 亿词元、160GB 的 1800 至 1875 年英美英文语料，先用 50 亿词元子集训练了 5 亿参数评估模型，并计划推出 20 亿参数版本。模型使用语料中合成的问答对做微调，可回答历史人物、地点与事件，对伦敦相关内容表现最好。样例输出与 TimeCapsuleLLM 仓库均已公开供试用。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1utkqfg/why_are_moe_models_so_belittled/": {
+      "en": "The author pushes back on the common claim that a 122 billion mixture of experts model with 10 billion active parameters is essentially a 10 billion dense model. If that equivalence held, providers would just ship the dense version, which would run faster without routing overhead. The real variable is router quality: a stronger router lets the model realize more of its full parameter potential, and some mixture of experts architectures do this much better than others.",
+      "zh": "作者反驳流行说法 —— 认为 1220 亿参数、每次激活 100 亿的专家混合模型只等于稠密 100 亿模型。若真如此，厂商大可直接发布稠密版，还没有路由开销、跑得更快。他指出关键在路由器质量：路由越优，模型越能接近全部参数的潜力，不同专家混合架构差异很大。",
+      "title_en": "Why do people underrate mixture of experts models?",
+      "title_zh": "为什么专家混合模型总被低估？"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1us8x06/the_untuned_27b_beat_the_tuned_75b_as_an_agent/": {
-      "en": "An untuned Qwen 3.6 27 billion parameter model in 8-bit precision finished every agentic task in 6 to 9 tool calls, while a tuned Nemotron Puzzle 75 billion parameter model needed 13 to 23 calls and roughly twice the wall time, showing that fewer turns beat faster tokens for agents. The author also flags a reproducibility trap: with prefix caching and FP8 key-value cache on, byte-identical runs share the same cached bad prefix, so identical retries stop being independent samples until a per-run nonce is added to the system prompt.",
-      "zh": "作者对比智能体表现：未调优的 Qwen 3.6 270 亿参数 8 位量化模型每项任务用 6 至 9 次工具调用完成，而调优后的 Nemotron Puzzle 750 亿参数模型需要 13 至 23 次，总耗时约为前者两倍，说明智能体场景下减少轮次比生成速度更关键。同时提醒：开启前缀缓存与 FP8 键值缓存后，逐字节相同的重跑会命中同一坏前缀，重试样本不再独立，需在系统提示中加入随机字段方能恢复可复现性。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ut7tis/grok_build_cli_uploads_your_whole_repo_full_git/": {
+      "en": "A researcher packet-captured Grok Build CLI version 0.2.93 with mitmproxy and found it uploads the entire repository as a git bundle, with full history, to xAI's Google Cloud regardless of which files are opened. A planted file returned verbatim from the capture even when the prompt said 'do not read or open any files', and dot-env secrets like API keys and database passwords went out too. Turning off 'Improve the model' governs training only, not the upload.",
+      "zh": "研究者用 mitmproxy 抓包 Grok Build CLI 0.2.93，发现它无论用户打开哪些文件，都会把整个仓库连同完整 git 历史上传到 xAI 云端；提示 'do not read any files' 时埋入的诱饵仍原样回传，.env 里的 API 密钥也外泄。关闭 'Improve the model' 只管训练，不阻止上传。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uskb1g/speculative_cache_warming_warms_your_cache_while/": {
-      "en": "OpenFox, an MIT-licensed local coding harness, added a technique the author calls speculative cache warming, which processes the roughly 5 to 10 thousand token system prompt and the roughly 1 thousand token tool definitions while the user is still typing. When the user submits, only the prompt itself has to be processed, saving 10 to 20 seconds at 500 prompt tokens per second and keeping the interaction responsive without any change to the underlying model.",
-      "zh": "MIT 许可的本地编程壳 OpenFox 引入了一种作者称为投机性缓存预热的技术：在用户输入提示词的同时，先处理约 5 至 10 千词元的系统提示和约 1 千词元的工具定义。用户点击发送后，只需处理提示词本身，在每秒 500 词元的预填速度下可节省 10 至 20 秒等待时间，让本地体验更流畅，且不涉及底层模型改动。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ut66j7/hy3_295b_moe_and_nvidia_nemotronlabsaudex30ba3b/": {
+      "en": "Two GGUF quantization sets released with reproducible benchmarks against BF16 reference logits. Tencent's Hy3 is a 295 billion mixture of experts with 21 billion active per token and a 262 thousand context window; the 4-bit medium quant fits two 96 gigabyte GPUs while the 6-bit quant is effectively lossless at 226 gigabytes. NVIDIA's Nemotron Labs Audex 30 billion is an audio-capable hybrid mixture of experts shipped with a text-only track and an audio pipeline sidecar, under NVIDIA's noncommercial one-way license.",
+      "zh": "两套可复现基准的 GGUF 量化同步发布。腾讯 Hy3 是 2950 亿参数专家混合模型，激活 210 亿、上下文 262K；4 位中量化适合双 96GB 显卡，6 位基本无损。NVIDIA Nemotron Audex 300 亿是带音频能力的混合专家模型，含纯文本与音频子模块，非商用许可。",
+      "title_en": "Reproducible GGUF quantizations for Tencent Hy3 295 billion mixture of experts and NVIDIA Nemotron Audex 30 billion audio model",
+      "title_zh": "腾讯 Hy3 2950亿专家混合模型与 NVIDIA Nemotron Audex 300亿音频模型的可复现 GGUF 量化"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb/": {
-      "en": "Tencent's new HY3, a 295 billion parameter mixture-of-experts model with about 21 billion active parameters, runs on a 128 gigabyte M5 Max Mac using Unsloth's 107 gigabyte dynamic 3-bit quant and a llama.cpp pull request. After a small architecture-name fix in the GGUF file, the author reports about 528 prompt tokens per second and 32 generation tokens per second at empty context, roughly double their prior DeepSeek V4 Flash setup at similar or better output quality on general prompts and basic tool use.",
-      "zh": "腾讯新发布的 HY3 是 2950 亿参数、约 210 亿激活参数的混合专家模型。作者在 128GB 的 M5 Max Mac 上，用 Unsloth 的 107GB 三位动态量化搭配一个 llama.cpp 拉取请求运行，仅需在 GGUF 中修正一个架构名字段。空上下文下达到每秒约 528 个预填词元与 32 个生成词元，速度约为其此前 DeepSeek V4 Flash 方案的两倍，输出质量持平或更好。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1utefpr/running_qwen3_30b_a3b_at_50_toks_on_rtx_5060_ti/": {
+      "en": "A developer released garlic-inference, a custom CUDA and C++ engine that runs Qwen 3 30 billion mixture of experts at float 8 on a 16 gigabyte RTX 5060 Ti at 50 to 54 tokens per second, about fifty percent faster than llama.cpp's 33 to 34 tokens per second on the same card. The gains come from combining state of the art techniques from recent NeurIPS, ICML and EuroSys papers, aimed at making consumer-hardware local inference a viable alternative to centralized datacenters.",
+      "zh": "开发者发布 garlic-inference：自研 CUDA/C++ 引擎在 16GB 显存的 RTX 5060 Ti 上以 float8 运行 Qwen3 30B 专家混合模型，达到每秒 50 至 54 token，比 llama.cpp 的 33 至 34 快约 50%。加速方案整合 NeurIPS、ICML、EuroSys 论文技巧，让消费级硬件替代数据中心。",
+      "title_en": "Custom CUDA engine runs Qwen 3 30 billion mixture of experts at 50 tokens per second on a 16 gigabyte RTX 5060 Ti",
+      "title_zh": "自研 CUDA 引擎在 16GB 显存的 RTX 5060 Ti 上以每秒 50 个 token 运行 Qwen 3 300亿混合专家模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uspcg0/has_anyone_created_a_local_llm_survival_kit/": {
-      "en": "A community post sketches a Local LLM Survival Kit: a 64 gigabyte USB drive costing under 10 dollars that ships llama.cpp binaries for Windows, macOS, and Linux alongside Qwen 3.5 35 billion parameter mixture-of-experts and Gemma 4 E4B in 4-bit form, a pruned 30 gigabyte English Wikipedia dump, and a browser chat frontend with a search tool. The goal is a fully offline knowledge base that boots without a GPU on almost any laptop from the past 15 years.",
-      "zh": "一位社区成员构想了本地大模型生存工具包：一根不到 10 美元的 64GB U 盘，内置 Windows、macOS 与 Linux 的 llama.cpp 二进制、4 位量化的 Qwen 3.5 350 亿参数混合专家模型和 Gemma 4 E4B、剪枝后约 30GB 的英文维基百科转储，以及带搜索工具的浏览器聊天前端。目标是让近 15 年内几乎任何笔记本电脑在无 GPU、无联网情况下也能获得可用知识库。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ut3p89/mit_llm_serve_dashboard_i_am_making_open_source/": {
+      "en": "A single-file, dependency-free live dashboard for a local LLM serving box running llama.cpp or vLLM. The frontend is one index.html opened over the file protocol; the backend is one standard-library Python file that reads nvidia-smi and each server's Prometheus metrics endpoint. It shows per-GPU utilization and true compute tenants, decode and prefill throughput, context and key-value cache fill, LoRA adapters, system stats, a browsable model library, and an optional live chain of thought panel.",
+      "zh": "面向本地 llama.cpp 或 vLLM 的单文件仪表盘：前端一个 file:// 打开的 index.html，后端仅用 Python 标准库读取 nvidia-smi 与 Prometheus 指标。展示每张 GPU 利用率与占用进程、预填与解码速率、KV 缓存、LoRA 适配器、系统状态、模型库以及可选的思维链面板。",
+      "title_en": "MIT-licensed single-file dashboard for local llama.cpp and vLLM serving with live GPU and throughput metrics",
+      "title_zh": "面向本地 llama.cpp 和 vLLM 的 MIT 许可单文件监控面板，展示 GPU 与吞吐指标"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1usclcz/qwen_36_q2fp8_terminal_bench_2_and_gpqa_scores/": {
-      "en": "A university high-performance computing group published benchmarks of Qwen 3.6 quantizations, showing that knowledge scores on GPQA Diamond barely move across precisions while Terminal-Bench 2 agentic scores fall sharply at lower precisions. Their absolute numbers also come in below Qwen's official FP8 figures, which they attribute to Harbor's default per-task timeout of 10 minutes to 1 hour versus Qwen's flat 3 hour cap. GLM 5.2 quantization runs are next, though the process is slow.",
-      "zh": "香港中文大学的高性能计算小组发布了 Qwen 3.6 各量化版本的评测。GPQA Diamond 知识分数几乎不随精度变化，Terminal-Bench 2 智能体分数则在低精度下明显下降。他们的绝对分数也低于 Qwen 官方 FP8，作者认为原因是 Harbor 默认单任务超时为 10 分钟至 1 小时，而 Qwen 官方使用统一 3 小时上限。GLM 5.2 量化评测正在进行中，但速度较慢。",
-      "title_en": "Qwen 3.6 quantization benchmark: knowledge stays flat, terminal agent scores drop at lower precisions",
-      "title_zh": "Qwen 3.6 量化评测：知识分数几乎不变，终端智能体分数在低精度下明显下降"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1utrolo/i_built_flaxeo_image_a_local_desktop_ui_for/": {
+      "en": "Flaxeo Image is a new local desktop interface built around a recent release of stable-diffusion.cpp for Windows and Linux. It aims to expose most of what the backend can do, including image generation, image editing, video paths, model management and hardware option selection, wrapping the C plus plus inference core in a native desktop UI rather than a browser-based front end.",
+      "zh": "Flaxeo Image 是围绕最近一版 stable-diffusion.cpp 构建的本地桌面前端，同时提供 Windows 与 Linux 版本。作者尝试将后端的大部分能力全部暴露到界面上，包括图像生成、图像编辑、视频路径、模型管理和硬件选项配置，用原生桌面 UI 取代常见的浏览器界面。",
+      "title_en": "Flaxeo Image is a native local desktop interface for the stable diffusion C plus plus backend",
+      "title_zh": "Flaxeo Image：为 stable-diffusion C++ 后端打造的原生本地桌面界面"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1usacge/deepseek_v4_flash_on_a_single_rtx_6000_pro/": {
-      "en": "A custom vLLM fork called vLLM-Moet lets DeepSeek V4 Flash fit onto a single RTX 6000 Pro at 130 thousand token context by compressing routed experts to 2 bits while leaving the FP4 experts alone. Loading needs about 150 gigabytes of system memory and a 20 minute initial load, but once resident the whole model sits in video memory. Benchmarks show around 128 generation tokens per second at empty context and roughly 100 tokens per second out to 65 thousand context.",
-      "zh": "一个名为 vLLM-Moet 的定制 vLLM 分支让 DeepSeek V4 Flash 可以在单张 RTX 6000 Pro 上以约 13 万词元上下文运行，方法是把路由专家压到 2 位，同时保留 FP4 专家。加载阶段需要约 150GB 系统内存和约 20 分钟，一旦装入显存即可全程 GPU 推理。基准显示空上下文约每秒 128 词元，6.5 万上下文下约每秒 100 词元。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ut8o8t/some_testing_on_rtx_pro_4500_with_oculink_on/": {
+      "en": "Benchmarks of Qwen 3.6 27 billion on an RTX Pro 4500 32 gigabyte card connected over Oculink to a Beelink SER 8 mini PC. The author compares a new mixed-precision method called PrismaQuant, in SCOUT and AURA variants, against NVIDIA FP4 W4A4 and integer 4-bit Autoround. PrismaQuant is Blackwell-only in vLLM today with no GGUF support. Tables report prefill and decode throughput out to 210 thousand context and KL divergence versus BF16 for each variant.",
+      "zh": "作者用通过 Oculink 连接 Beelink SER 8 的 RTX Pro 4500 32GB 显卡跑 Qwen 3.6 27B，对比新出的分层混合精度方案 PrismaQuant（SCOUT 与 AURA）、NVIDIA FP4 W4A4 与 4 位 Autoround。PrismaQuant 现只在 Blackwell 架构 vLLM 可用。给出至 210K 上下文的速率与相对 BF16 的 KL 散度。",
+      "title_en": "Benchmarks compare PrismaQuant, integer 4-bit Autoround and NVIDIA FP4 quantization of Qwen 3.6 27 billion on an RTX Pro 4500",
+      "title_zh": "在 RTX Pro 4500 上对 Qwen 3.6 270亿的 PrismaQuant、4 位 Autoround 与 NVIDIA FP4 量化基准对比"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1us9yjo/locally_run_assistant_on_a_w10_board_on_a_local/": {
-      "en": "A longtime community member shows off Belochka, a personal home assistant stitched together from Qwen 3.6 35 billion parameter mixture-of-experts running in LM Studio on a Mac, an open-source Xiaozhi server, a Telegram bridge over Tailscale, and ESP32 hardware including the Rune board and Xiaozhi toys. The stack listens continuously and jumps into conversation when relevant, and the author is prototyping a LoRa transport so the boards can talk to the Mac without cellular service.",
-      "zh": "一位老成员展示了个人助手 Belochka：Mac 上通过 LM Studio 运行的 Qwen 3.6 350 亿参数混合专家模型、本地部署的开源 Xiaozhi 服务器、走 Tailscale 的 Telegram 桥接，以及 Rune 板与 Xiaozhi 玩具等 ESP32 硬件。助手可持续聆听并在合适时介入对话，作者正在试验 LoRa 传输，让 ESP32 板脱离蜂窝网络也能与 Mac 通信。",
-      "title_en": "Building Belochka: a local personal assistant on Qwen 3.6 with an ESP32 and Xiaozhi front end",
-      "title_zh": "自建本地助手 Belochka：Qwen 3.6 加 ESP32 与 Xiaozhi 前端的组合"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1usiino/how_fast_can_i_get_a_voice_assistant_to_respond/": {
-      "en": "The author benchmarks a voice-assistant pipeline where the automatic speech recognition and text-to-speech run entirely on CPU via ONNX, leaving the GPU free for the language model. Using Qwen 3 ASR 0.6 billion parameter and Kokoro 82 million parameter models, an AMD Ryzen 9 7900 handles the round trip near-instantly while a 2022 MacBook M2 is mostly usable. Voice activity detection and a 5 second follow-up window let the user chain commands without repeating a wake word. Code is on GitHub.",
-      "zh": "作者构建了一条语音助手流水线，语音识别与语音合成完全通过 ONNX 在 CPU 上运行，把 GPU 留给语言模型。使用 Qwen 3 ASR 6 亿参数和 Kokoro 8200 万参数模型时，AMD Ryzen 9 7900 上几乎无延迟，2022 款 MacBook M2 也基本可用。语音活动检测配合 5 秒续听窗口，可连续下达命令而无需重复唤醒词，代码已在 GitHub 开源。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uturng/i_benched_quad_5060tis_for_code_generation_with/": {
+      "en": "The author benchmarks a build of four RTX 5060 Ti cards, roughly two thousand dollars in GPUs plus another thousand in the rest of the machine, for running Qwen 3.6 27 billion for code generation. The model runs at 8-bit quantization with float 16 key-value cache and multi-token prediction on. At 255 thousand context they measured 608 tokens per second cold prefill and 52.2 tokens per second decode, arguing this build beats paired 3090s, 3080 mods, an M5 Max Mac and DGX Spark on cost per performance.",
+      "zh": "作者用约 2000 美元四张 RTX 5060 Ti 加 1000 美元其他硬件搭建了一台跑 Qwen 3.6 27B 做代码生成的机器，8 位量化、FP16 KV 缓存并开启多 token 预测。255K 上下文下测得每秒 608 token 冷预填、52.2 token 解码，性价比胜过双 3090、改版 3080、M5 Max Mac 与 DGX Spark。",
+      "title_en": "Quad RTX 5060 Ti build benchmarked for Qwen 3.6 27 billion code generation at 255 thousand context",
+      "title_zh": "用四张 RTX 5060 Ti 组建的 Qwen 3.6 270亿代码生成机器在 255K 上下文的实测基准"
     }
   }
 }

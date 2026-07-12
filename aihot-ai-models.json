@@ -4,6 +4,23 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmri0lo1e00irbixecx7cj2f5",
+      "title": "腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户",
+      "title_en": "这个我看第一眼直接卧槽，效果有点炸裂， 腾讯这几个月到底发生了什么，前面组织架构调整，老登高管退位，年轻一代掌权的结果吗？ 兄弟们看这个，腾讯Hy3 把你摄像头直接调起来了， 手往镜头前一伸，整只手的…",
+      "url": "https://x.com/AYi_AInotes/status/2076341952023310580",
+      "permalink": "https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-07-12T16:24:32.000Z",
+      "summary": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5"
+      }
+    },
+    {
       "id": "cmrglvcki024uih2edvsk7pef",
       "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
       "title_en": "\"physicians found fewer flaws in GPT-5.6 responses than physician-written responses.\"",
@@ -392,23 +409,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg"
-      }
-    },
-    {
-      "id": "cmr7vpphy007oslgnz4aotpx4",
-      "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
-      "title_en": "🐱 LongCat-2.0 is now fully open-source - MIT licensed， no restrictions. Since our launch a few day…",
-      "url": "https://x.com/Meituan_LongCat/status/2073768940078317713",
-      "permalink": "https://aihot.virxact.com/items/cmr7vpphy007oslgnz4aotpx4",
-      "source": "X：美团 LongCat (@Meituan_LongCat)",
-      "publishedAt": "2026-07-05T14:00:18.000Z",
-      "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B-56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual 77.3；FORTE 73.2；RWSearch 78.8；BrowseComp 79.9。原生集成 Claude Code、OpenClaw、Hermes Agent 等工具，支持 GPU 与 NPU 部署，已在大规模国内集群验证。",
-      "category": "ai-models",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr7vpphy007oslgnz4aotpx4"
       }
     }
   ]

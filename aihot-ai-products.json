@@ -1,8 +1,59 @@
 {
-  "count": 33,
+  "count": 34,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmri4sa9p00r9bi3hn0yjz7jx",
+      "title": "Codex 移除5小时限制，GPT 5.6 Sol 效率提升",
+      "title_en": "给 Codex 点赞👍 暂时移除5小时使用限制，GPT 5.6 Sol更省token，下一小时内进行使用量重置",
+      "url": "https://x.com/dotey/status/2076372677577576864",
+      "permalink": "https://aihot.virxact.com/items/cmri4sa9p00r9bi3hn0yjz7jx",
+      "source": "X：宝玉 (@dotey)",
+      "publishedAt": "2026-07-12T18:26:38.000Z",
+      "summary": "Codex 和 ChatGPT Work 发布三项更新：1）临时移除所有 Plus、Business 和 Pro 计划的5小时使用限制；2）推出 GPT 5.6 Sol 的全面效率改进，使其更省 token，具体影响待量化公布；3）活跃用户达600万，下一小时内进行使用量重置。",
+      "category": "ai-products",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmri4sa9p00r9bi3hn0yjz7jx"
+      }
+    },
+    {
+      "id": "cmrhvwe6k00y7biidjabepmem",
+      "title": "Mindwalk：在代码库 3D 地图上回放编码代理会话",
+      "title_en": "Show HN： Mindwalk--在代码库的 3D 地图上重放编码代理会话",
+      "url": "https://github.com/cosmtrek/mindwalk",
+      "permalink": "https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-12T13:51:05.035Z",
+      "summary": "Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放。它将仓库绘制成夜间地图，代理搜索、读取和编辑过的文件会发光，未触及区域保持黑暗，让用户一眼看清代理对任务的理解范围。单个 Go 二进制文件即可运行，所有会话数据完全本地处理，不会离开机器。支持树状图/地形图两种视图，文件触达状态分为未访问、已查看、已读取、已编辑四种颜色标记。播放界面包含错误率、文件修改量等摩擦信号面板，以及上下文压缩、子代理启动、用户交互等时间轴标记。支持键盘快捷键控制播放速度、跳转编辑点或错误点。",
+      "category": "ai-products",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem"
+      }
+    },
+    {
+      "id": "cmrh78s5t00w5bir7mozf8oyb",
+      "title": "Mesh LLM：在 iroh 上进行分布式人工智能计算",
+      "title_en": null,
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "permalink": "https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-12T02:23:05.249Z",
+      "summary": "Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称\"Skippy\"）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost：9337/v1` 提供服务。",
+      "category": "ai-products",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb"
+      }
+    },
     {
       "id": "cmrfoggdz01o7ihjl1exdh1qt",
       "title": "Claude Code v2.1.207 发布",
@@ -528,40 +579,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z"
-      }
-    },
-    {
-      "id": "cmr9h98co0470slsmqqc2ilv1",
-      "title": "SGLang 集成 DSpark 推测解码：置信度驱动的可变长度验证",
-      "title_en": "Blog DSpark in SGLang： Speculative Decoding with Confidence-Driven， Variable-Length Verification Speculative decoding trades extra compute for fewer decode steps， and the trade sours as load grows： at batch size B with K speculative tokens the target verifies B K tokens every step， and past a po… SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-07-06-dspark-sglang",
-      "permalink": "https://aihot.virxact.com/items/cmr9h98co0470slsmqqc2ilv1",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-07-05T16:00:00.000Z",
-      "summary": "SGLang 团队将 DSpark 推测解码算法集成到开源推理引擎中。该算法采用半自回归块起草器一次生成一组 token，并利用置信度头与顺序温度缩放（STS）为每个请求动态分配可变验证长度，从而在高负载下裁剪无效验证成本。SGLang 支持密集模型（如 Qwen3）和稀疏模型（如 DeepSeek-V4），通过全 CUDA 图处理不规则的每请求验证长度。提供三种验证模式：`static`（全长）、`compact`（生产路径）和 `cap-accept`（接受上限测量）。还引入了零开销调度、基于离线成本表的在线调度器、融合 Triton 核等优化。在 H200 上使用 DeepSeek-V4-Flash 的测试中，DSpark 在整个并发扫描范围内比 MTP 和非推测基线实现了更优的吞吐量-延迟权衡。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9h98co0470slsmqqc2ilv1"
-      }
-    },
-    {
-      "id": "cmra2w89f00esihx80bjzdjlf",
-      "title": "ResearchStudio-Reel：从论文到海报、视频和博客的自动化系统",
-      "title_en": "ResearchStudio-Reel： Automate the Last Mile of Research from Paper to Poster， Video， and Blog",
-      "url": "https://arxiv.org/abs/2607.04438",
-      "permalink": "https://aihot.virxact.com/items/cmra2w89f00esihx80bjzdjlf",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-05T00:00:00.000Z",
-      "summary": "ResearchStudio-Reel 由五个 Claude Code 和 Codex 技能组成，包含共享提取器 Paper2Assets，三个可编辑生成器 Paper2Poster、Paper2Video、Paper2Blog 以及交互式汇聚层 Paper2Reel。它一次性从论文中提取资产，生成打印级海报、同步讲解视频和双语博客，并支持在 PowerPoint 或 Word 中二次编辑。在 Paper2Poster 基准上，其海报在美学和信息指标上均优于先前自动化系统和单次调用前沿 LLM。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra2w89f00esihx80bjzdjlf"
       }
     }
   ]

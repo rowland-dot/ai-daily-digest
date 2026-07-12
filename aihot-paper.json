@@ -1,8 +1,25 @@
 {
-  "count": 16,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrh4d5cj009ubir7yazlez7q",
+      "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
+      "title_en": "仅用一小时，OpenAI GPT-5.6 Sol Ultra 证明了一个已有 50 年历史的数学猜想",
+      "url": "https://www.ithome.com/0/975/646.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-12T00:44:43.000Z",
+      "summary": "OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题\"循环双覆盖猜想\"的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科\"未解决数学问题\"列表中的难题。",
+      "category": "paper",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q"
+      }
+    },
     {
       "id": "cmrfiocpi0035ihjlcm4qu8af",
       "title": "博科圣地如何利用前沿AI技术",
@@ -239,40 +256,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr9jb1wn007eihe8jhd6zhrj"
-      }
-    },
-    {
-      "id": "cmra57ei80146ihx8c551d8w6",
-      "title": "EdgeBench：从真实世界环境中揭示学习缩放定律",
-      "title_en": "EdgeBench： Unveiling Scaling Laws of Learning from Real-World Environments",
-      "url": "https://arxiv.org/pdf/2607.05155",
-      "permalink": "https://aihot.virxact.com/items/cmra57ei80146ihx8c551d8w6",
-      "source": "字节 Seed：Research Papers（网页内嵌数据）",
-      "publishedAt": "2026-07-05T16:00:00.000Z",
-      "summary": "字节跳动Seed团队发布EdgeBench，包含134个真实世界任务，覆盖科学发现、软件工程等6个领域，每任务支持至少12小时连续智能体运行。基于约38，000小时交互数据，发现总体性能与环境交互时间呈精确对数S形缩放定律（R2=0.998），且智能体学习速度约每三个月翻倍。已公开51个任务及完整评估框架。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra57ei80146ihx8c551d8w6"
-      }
-    },
-    {
-      "id": "cmr9hdvnk049yslsmggdh1n33",
-      "title": "语言模型中的全局工作空间",
-      "title_en": "A global workspace in language models",
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "permalink": "https://aihot.virxact.com/items/cmr9hdvnk049yslsmggdh1n33",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-07-05T16:00:00.000Z",
-      "summary": "Anthropic在Claude中发现一组名为J-space的内部神经模式，类似神经科学的全局工作空间。每个模式关联特定词汇，但模型不必说出该词即可激活。Claude能报告J-space中的表征，并可应要求调节（如\"在脑中思考\"时点亮对应模式）。J-space还用于多步推理的中间步骤，且灵活支持多种任务（如从\"法国\"联想首都、货币等）。去除J-space后Claude仍能正常对话，但丧失高阶认知功能。该发现可用于监测模型私下察觉测试、生成虚假数据或执行隐藏目标。",
-      "category": "paper",
-      "score": 90,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9hdvnk049yslsmggdh1n33"
       }
     }
   ]

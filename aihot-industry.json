@@ -1,8 +1,42 @@
 {
-  "count": 31,
+  "count": 30,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrh8o88501e4bir7wzxmfpfm",
+      "title": "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划",
+      "title_en": "分析师：即使窃密指控未获证实，苹果诉讼仍可能重创 OpenAI 硬件计划",
+      "url": "https://www.ithome.com/0/975/666.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-12T02:37:22.000Z",
+      "summary": "苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使指控最终无法证实，OpenAI的硬件计划仍可能受拖累，双方本就脆弱的合作关系将进一步削弱。斯坦福大学教授Mark Lemley指出，若前苹果员工确实带走机密文件并在OpenAI使用，问题将变得严重。该案涉及消费级硬件产品，预计未来将有更多信息曝光。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm"
+      }
+    },
+    {
+      "id": "cmrgzykqg00jabid4acp6zpjm",
+      "title": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句\"哈哈\"成窃密关键",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/975/634.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrgzykqg00jabid4acp6zpjm",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-11T23:21:57.000Z",
+      "summary": "苹果起诉 OpenAI，指控前工程师 Chang Liu 离职时带走未归还的 MacBook、一名可分享内情的员工，并利用软件漏洞持续访问苹果内网。他发现漏洞后向同事分享\"哈哈，我发现我还能访问网络存储\"，后者协助其获取更多机密。苹果称 OpenAI 试图复制 iPhone 产品研发体系，核心从非法窃取的商业机密腐烂。目前已有超 400 名苹果员工跳槽至 OpenAI，包括前苹果高管、现任 OpenAI 首席硬件官 Tang Tan。苹果曾于今年 2 月尝试私了，但 OpenAI 未回应。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrgzykqg00jabid4acp6zpjm"
+      }
+    },
     {
       "id": "cmrgmylg702eaih2e1e9hhfe4",
       "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
@@ -477,57 +511,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv"
-      }
-    },
-    {
-      "id": "cmr8ajv5h00e0sl0d7rzs38ei",
-      "title": "NVIDIA Kyber NVL144 延迟超 12 个月至 2028",
-      "title_en": "MASSIVE DELAY： Just 3 months after Jensen demoed Kyber NVL144 at GTC， it has faced major setbacks an…",
-      "url": "https://x.com/SemiAnalysis_/status/2073874671498387899",
-      "permalink": "https://aihot.virxact.com/items/cmr8ajv5h00e0sl0d7rzs38ei",
-      "source": "X：SemiAnalysis (@SemiAnalysis_)",
-      "publishedAt": "2026-07-05T21:00:27.000Z",
-      "summary": "重大延迟：Jensen 在 GTC 上展示 Kyber NVL144 仅 3 个月后，该项目遭遇重大挫折，已推迟超过 12 个月，延至 2028 年。下文我们将解释 Kyber 为何面临大幅延迟，以及 NVIDIA 的 NVL72x2 背靠背机架架构为何也被取消，导致 Rubin Ultra 的扩展域受限。👇️ 1/6🧵",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8ajv5h00e0sl0d7rzs38ei"
-      }
-    },
-    {
-      "id": "cmr84d4v901hssl04oav0ki73",
-      "title": "Zuckerberg：建千兆瓦级AI集群，集中精英与资本",
-      "title_en": "\"We're building this Prometheus cluster， the first gigawatt-plus single cluster…We're talking abou…",
-      "url": "https://x.com/rohanpaul_ai/status/2073834219659534816",
-      "permalink": "https://aihot.virxact.com/items/cmr84d4v901hssl04oav0ki73",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-07-05T18:19:42.000Z",
-      "summary": "\"我们正在建设这个 Prometheus 集群，首个千兆瓦以上的单一集群……我们是在谈论数千亿美元的资本投入。\"\n\nMark Zuckerberg 表示，他的职责就是集中精英人才、资本和基础设施。",
-      "category": "industry",
-      "score": 84,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr84d4v901hssl04oav0ki73"
-      }
-    },
-    {
-      "id": "cmr815l2z00pgsl04wayrv4tr",
-      "title": "欧盟理事会通过快速通道强制推行\"聊天管控\"（Chat Control 2.0）",
-      "title_en": "欧盟理事会通过快速通道强制推行\"聊天管控\"",
-      "url": "https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html",
-      "permalink": "https://aihot.virxact.com/items/cmr815l2z00pgsl04wayrv4tr",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-05T16:23:44.440Z",
-      "summary": "欧盟理事会通过书面程序快速通过一项新法规，强制要求科技集团对加密通信进行无差别扫描（Chat Control 2.0），以填补过渡性规定4月3日到期后的法律漏洞，并向欧洲议会施压。批评者指责该做法试图绕过民主监督。草案将在夏季休会前以紧急程序提交议会表决，多数议员可能已离会，反对需绝对多数，几乎无法阻止。理事会称扫描限于必要范围，处理的数据须在检测后12个月内不可撤销地删除。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr815l2z00pgsl04wayrv4tr"
       }
     }
   ]
