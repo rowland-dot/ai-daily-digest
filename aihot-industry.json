@@ -1,8 +1,59 @@
 {
-  "count": 30,
+  "count": 29,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrj36yri059qbilk1n6jhqn1",
+      "title": "Meta 宣布扩建路易斯安那州数据中心至 5GW，总投资超 500 亿美元",
+      "title_en": "总投资超 500 亿美元，Meta 宣布扩建路易斯安那州数据中心至 5GW 规模",
+      "url": "https://www.ithome.com/0/976/149.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrj36yri059qbilk1n6jhqn1",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-13T09:58:56.000Z",
+      "summary": "Meta 将其路易斯安那州数据中心算力扩至 5GW，总投资超 500 亿美元，为全球最大 AI 基础设施投资之一。Meta 承诺承担全部能源及水资源费用，并另投超 10 亿美元改善当地道路及供水系统。此外，Meta 与安特吉公司达成协议，为新建天然气发电厂、储能电池及核电增容项目提供资金支持。",
+      "category": "industry",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrj36yri059qbilk1n6jhqn1"
+      }
+    },
+    {
+      "id": "cmrijw1sy00j6bi0jshweyv4l",
+      "title": "黄仁勋：英伟达季度收入逼近千亿美元，Rubin Ultra 架构未延期",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/975/865.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrijw1sy00j6bi0jshweyv4l",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-13T00:55:29.000Z",
+      "summary": "英伟达CEO黄仁勋在摩根士丹利路演中表示，公司季度营收即将逼近1000亿美元，且增长速度仍在加快。他否认下一代旗舰架构Rubin Ultra延期传闻，称其仍按计划于明年出货，当前机架设计调整仅为系统架构优化。一个此前主要依赖ASIC的前沿AI模型项目，如今英伟达GPU算力占比已接近50%，市场普遍指向Anthropic。英伟达预计本财年CPU业务收入约200亿美元，下一代Vera CPU将进军通用服务器市场。摩根士丹利维持英伟达\"增持\"评级，目标价288美元。",
+      "category": "industry",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrijw1sy00j6bi0jshweyv4l"
+      }
+    },
+    {
+      "id": "cmriguktg00arbijpt0l7c2vh",
+      "title": "xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥",
+      "title_en": "我只让Grok回复一个单词，它就把我整个代码库都偷走了。",
+      "url": "https://mp.weixin.qq.com/s/6c6vGMJAVMbh6UhNVw4dcg",
+      "permalink": "https://aihot.virxact.com/items/cmriguktg00arbijpt0l7c2vh",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-07-13T00:05:00.000Z",
+      "summary": "安全研究者发现，xAI 官方 Grok CLI（npm 包 `@xai-official/grok` 0.2.93 版）会在每轮任务前后，将当前工作目录打包为 `before_codebase.tar.gz` 和 `after_codebase.tar.gz`，通过独立旁路通道静默上传至 xAI 的 Google Cloud 仓库。验证显示，即使模型仅回复一个单词，上传依然发生。上传包还包含仓库外的 `~/.claude.json`、Claude Code 设置、全局 AGENTS 规则、30 多个 Skill 文件及一个 API 密钥。7 月 13 日凌晨，xAI 通过服务端远程开关新增 `disable_codebase_upload` 字段，将默认上传行为关闭，但此前该功能默认开启。",
+      "category": "industry",
+      "score": 86,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmriguktg00arbijpt0l7c2vh"
+      }
+    },
     {
       "id": "cmrh8o88501e4bir7wzxmfpfm",
       "title": "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划",
@@ -443,74 +494,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr9wjj3g00jhih9kuibhf720"
-      }
-    },
-    {
-      "id": "cmr9kq74q00mkihe8o68fnq9t",
-      "title": "2026年科技公司AI裁员名单：Microsoft、Oracle、GitLab等十家公司裁减数千岗位",
-      "title_en": "The running list： major tech layoffs in 2026 where employers cited AI",
-      "url": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
-      "permalink": "https://aihot.virxact.com/items/cmr9kq74q00mkihe8o68fnq9t",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-06T18:35:00.000Z",
-      "summary": "2026年以来，多家科技公司以AI为由大规模裁员。Microsoft裁减约4800岗位（2.1%），Oracle裁减21000人（13%），GitLab裁减350人（14%）以投资AI基础设施，Google Cloud持续裁减员工（外界估计1500-3000+工程师），Intuit裁减3000人（17%），Meta裁减8000人（10%）并转岗7000人至AI，Cisco裁减近4000人（5%），Cloudflare裁减1100人（20%），GM裁减500-600 IT岗位，Coinbase裁减700人（14%）。据Layoffs.fyi统计，2026年累计已裁约12万个技术岗位。",
-      "category": "industry",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9kq74q00mkihe8o68fnq9t"
-      }
-    },
-    {
-      "id": "cmr91yrn100noslmpusn7u7q0",
-      "title": "Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/973/207.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-06T09:23:28.000Z",
-      "summary": "据《连线》报道，Meta 通过外包公司 Covalen 开展代号\"Cannes\"的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0"
-      }
-    },
-    {
-      "id": "cmr8yq2xv01phsllsc7sv9v5u",
-      "title": "Runway 宣布设立巴黎办公室",
-      "title_en": "Announcing our Paris Office",
-      "url": "https://runwayml.com/news/announcing-our-paris-office",
-      "permalink": "https://aihot.virxact.com/items/cmr8yq2xv01phsllsc7sv9v5u",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-07-06T08:33:02.716Z",
-      "summary": "原文正文仅包含网站 Cookie 设置说明，未提供关于巴黎办公室的部门、规模、职能或开业时间等具体信息。",
-      "category": "industry",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8yq2xv01phsllsc7sv9v5u"
-      }
-    },
-    {
-      "id": "cmr8j82w402k0sl0ddfe6f7zv",
-      "title": "SK 海力士将启动 280 亿美元美股上市，有望成史上第二大 IPO",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/972/896.htm",
-      "permalink": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-06T01:09:29.000Z",
-      "summary": "SK 海力士于本周一启动规模约 280 亿美元的美股上市计划，将在纳斯达克通过存托凭证发行 1779 万股新股，每 10 份存托凭证对应 1 股普通股。发行价区间周一公布，最终发行价周四敲定，股票周五挂牌交易。受益于全球人工智能热潮，该股年内涨幅超 270%。本次募资规模预计为史上第二大新股发行，仅次于上月 SpaceX 的 857 亿美元 IPO。SK 海力士是高带宽内存芯片核心供应商，产品用于英伟达、谷歌等 AI 设备。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv"
       }
     }
   ]

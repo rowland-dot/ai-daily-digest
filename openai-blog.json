@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-12T21:26:03.980Z",
+  "fetched_at": "2026-07-13T21:29:21.005Z",
   "source": "OpenAI",
   "items": [
     {
@@ -9,10 +9,22 @@
       "description": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice."
     },
     {
+      "title": "Getting started with ChatGPT",
+      "link": "https://openai.com/academy/getting-started",
+      "pubDate": "Fri, 10 Jul 2026 00:00:00 GMT",
+      "description": "Learn how to use ChatGPT, start your first conversation, and discover simple ways to write, brainstorm, and solve problems with AI."
+    },
+    {
       "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
       "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
       "pubDate": "Thu, 09 Jul 2026 13:00:00 GMT",
       "description": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work."
+    },
+    {
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "link": "https://openai.com/index/bio-bug-bounty",
+      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
+      "description": "Details about the OpenAI Bio Bounty program"
     },
     {
       "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
@@ -25,12 +37,6 @@
       "link": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
       "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
       "description": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work."
-    },
-    {
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "link": "https://openai.com/index/bio-bug-bounty",
-      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
-      "description": "Details about the OpenAI Bio Bounty program"
     },
     {
       "title": "Our approach to government and national security partnerships",
@@ -75,12 +81,6 @@
       "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
       "pubDate": "Tue, 30 Jun 2026 09:00:00 GMT",
       "description": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages."
-    },
-    {
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "pubDate": "Tue, 30 Jun 2026 00:00:00 GMT",
-      "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug."
     },
     {
       "title": "Introducing GeneBench-Pro",

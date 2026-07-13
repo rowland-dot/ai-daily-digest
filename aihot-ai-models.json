@@ -4,6 +4,40 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmrj6actv0651bilkm5pfz6ub",
+      "title": "德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先",
+      "title_en": "German AI consortium releases Soofi S， an open 30B model that tops benchmarks in both English and German",
+      "url": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german",
+      "permalink": "https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-13T11:41:01.000Z",
+      "summary": "德国AI协会协调的研究联盟发布开源大语言模型Soofi S 30B-A3B。该模型总参数量316亿，每个token仅激活约32亿参数，采用Mamba-2与标准注意力层混合的MoE架构。模型完全在德国电信慕尼黑工业AI云上训练，训练数据中德语占比从第一阶段的7.2%提升至第二阶段的15.3%。在基准测试中，Soofi S在所有完全开源模型中取得英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。在HumanEval上得分73.8%，MBPP得分70.2，德语版MBPP得分84.2。上下文窗口支持最高100万token，在4万token长度下，生成吞吐量约为同规模稠密模型的8倍。模型权重已开源。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub"
+      }
+    },
+    {
+      "id": "cmrj4s89p05nhbilkljqel2d5",
+      "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
+      "title_en": "训推全开源：HyOCR-1.5 让端到端 OCR 大模型跑得更快、看得更准、功能更全",
+      "url": "https://mp.weixin.qq.com/s/vKFCa9FfoGBUGK8J1MhFag",
+      "permalink": "https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-07-13T11:12:59.000Z",
+      "summary": "腾讯混元发布 HyOCR-1.5，这是端到端 OCR 大模型领域首个将训练、推理、模型权重完整开源的专家模型。仅 1B 参数，覆盖 8 种以上 text-centric 任务。引入 DFlash 投机解码框架，在 Transformers 下实现 6.37× 加速，vLLM 下 2.14× 加速，端到端推理达每页 1.408s。支持 4K 分辨率与 128K 上下文窗口，通过 Agentic Data Flow 扩展低资源 OCR（331 种语言）、古文字识别与多图问答能力。在 OmniDocBench v1.6 上以 94.74 分居端到端第一。",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5"
+      }
+    },
+    {
       "id": "cmri0lo1e00irbixecx7cj2f5",
       "title": "腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户",
       "title_en": "这个我看第一眼直接卧槽，效果有点炸裂， 腾讯这几个月到底发生了什么，前面组织架构调整，老登高管退位，年轻一代掌权的结果吗？ 兄弟们看这个，腾讯Hy3 把你摄像头直接调起来了， 手往镜头前一伸，整只手的…",
@@ -259,6 +293,23 @@
       }
     },
     {
+      "id": "cmrbikwbz04b5ihl16qfp5ntw",
+      "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
+      "title_en": "Ant Group's Robbyant Open-Sources LingBot-Vision： A 1B Boundary-Centric Vision Foundation Model for Dense Spatial Perception",
+      "url": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
+      "permalink": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-08T03:03:22.000Z",
+      "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw"
+      }
+    },
+    {
       "id": "cmrbez8y903b9ihl133b5wr18",
       "title": "Pulpie：用于清理网络的Pareto最优模型",
       "title_en": "Show HN： Pulpie--用于清理网络的模型",
@@ -358,57 +409,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrbg84yf03mcihl1reivcibq"
-      }
-    },
-    {
-      "id": "cmrc6hfeq002nih5mhc7h2btk",
-      "title": "Robostral Navigate：Mistral AI 首个具身导航模型",
-      "title_en": "Introducing Robostral Navigate Robostral Navigate， our first model built for embodied navigation. July 7， 2026 Mistral AI",
-      "url": "https://mistral.ai/news/robostral-navigate",
-      "permalink": "https://aihot.virxact.com/items/cmrc6hfeq002nih5mhc7h2btk",
-      "source": "Mistral AI：News（网页）",
-      "publishedAt": "2026-07-06T16:00:00.000Z",
-      "summary": "Robostral Navigate 是 Mistral AI 首个具身导航模型（8B 参数），仅用单 RGB 摄像头，在 R2R-CE 验证集上取得 76.6%（unseen）和 79.4%（seen）的成功率，超越最佳单摄像头方法 9.7 个百分点，超越使用深度或多摄像头的系统 4.5 个百分点。模型通过 pointing 预测目标坐标并结合强化学习持续改进，全部在模拟中训练（约 40 万轨迹、6000 场景），采用 prefix-caching 实现高效训练。通用适配轮式、腿式和飞行机器人，能适应真实环境中未训练的障碍。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrc6hfeq002nih5mhc7h2btk"
-      }
-    },
-    {
-      "id": "cmr8w4ho5013isllsr07z577p",
-      "title": "腾讯混元 Hy3 正式发布：智能体与产品体验显著提升",
-      "title_en": "腾讯混元 Hy3 发布：Agent 能力和产品体验跃升",
-      "url": "https://mp.weixin.qq.com/s/X2x1GF09bFbTzc3M1981BQ",
-      "permalink": "https://aihot.virxact.com/items/cmr8w4ho5013isllsr07z577p",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-07-06T07:11:20.000Z",
-      "summary": "腾讯混元发布 Hy3，在推理、智能体、长上下文等任务上显著进步，比肩 2~5 倍参数规模旗舰模型。内部盲测均分 2.67/4，优于 GLM5.1（2.51/4）。幻觉率从 12.5% 降至 5.4%，常识错误率从 25.4% 降至 12.7%，多轮问题率降至 7.9%，MRCR 从 42.9% 升至 75.1%。任务解决率从 72% 跃升至 90%，平均耗时缩短 34%。API 价格为输入 1 元、输出 4 元（每百万 tokens），命中缓存 0.25 元。已以 Apache 2.0 协议在 GitHub、HuggingFace 等平台开源。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8w4ho5013isllsr07z577p"
-      }
-    },
-    {
-      "id": "cmr8tzbde00jjsllsayhpgjqg",
-      "title": "Fun-ASR-Realtime 发布：单模型支持30种语言与16种方言，识别准确率领先",
-      "title_en": "🔥Fun-ASR-Realtime发布：语音识别再升级！",
-      "url": "https://mp.weixin.qq.com/s/ntw0SliBi4f8LROnFY26kA",
-      "permalink": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-07-06T06:09:29.000Z",
-      "summary": "通义实验室发布Fun-ASR-Realtime实时语音识别模型。单模型覆盖30种语言及16种方言，针对东亚、东南亚地区重点优化。在工业级方言测评inhouse上取得87.8%的语义准确率，大幅领先，多地方言接近人工水平。引入上下文理解与动态热词注入，实现同音词、品牌名等语义消歧。流式识别首字延迟控制在百毫秒级，准确率接近离线水平，支持多语言无缝切换。API已上线阿里云百炼平台。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg"
       }
     }
   ]

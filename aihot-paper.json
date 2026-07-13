@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -86,6 +86,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrerlfrs0046ihm87smc2el4"
+      }
+    },
+    {
+      "id": "cmrillgtw009abilk3fe1kk05",
+      "title": "GenCeption：视频生成模型作为通用视觉学习器",
+      "title_en": "Video Generation Models are General-Purpose Vision Learners",
+      "url": "https://arxiv.org/abs/2607.09024",
+      "permalink": "https://aihot.virxact.com/items/cmrillgtw009abilk3fe1kk05",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-10T00:00:00.000Z",
+      "summary": "论文提出 GenCeption，利用预训练文本到视频扩散模型作为前馈感知骨干，通过文本指令驱动完成深度估计、表面法线、相机位姿、指代分割和 3D 关键点预测等多种视觉任务。GenCeption 在多个基准上达到 SOTA，匹配或超越 DepthAnything3、SAM3、D4RT、VGGT-Omega 等专用模型。视频生成预训练骨干在同等设置下优于 V-JEPA 和 Video MAE 等替代范式。GenCeption 展现出数据与模型缩放特性，仅用 7 到 500 倍更少的训练数据即可达到 D4RT 和 VGGT-Omega 的同等性能。模型仅用合成人类视频训练，即可泛化到真实场景及动物、机器人等分布外物体类别。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrillgtw009abilk3fe1kk05"
       }
     },
     {
@@ -205,57 +222,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrasd6r300hxihog9hxmteoz"
-      }
-    },
-    {
-      "id": "cmraoctt6001mihvtza6yc7it",
-      "title": "统一音频智能模型 Nemotron-Labs-Audex-30B-A3B 发布",
-      "title_en": "Unified Audio Intelligence Without Regressing on Text Intelligence",
-      "url": "https://arxiv.org/abs/2607.05196",
-      "permalink": "https://aihot.virxact.com/items/cmraoctt6001mihvtza6yc7it",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-06T00:00:00.000Z",
-      "summary": "Nemotron-Labs-Audex-30B-A3B（Audex）是基于Nemotron-Cascade-2-30B-A3B的MoE大语言模型，采用单一Transformer解码器统一处理文本与量化音频token。训练使用157.4B音频token和320.5B文本token，经多阶段监督训练、文本Cascade RL和多域on-policy蒸馏优化。在音频理解、语音识别/翻译、文本转语音、音频生成及语音到语音生成任务上达SOTA，同时保持原文本LLM的推理、对齐等能力几乎无退化。模型权重已开源。",
-      "category": "paper",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmraoctt6001mihvtza6yc7it"
-      }
-    },
-    {
-      "id": "cmra76mxz00buihupmesig9k5",
-      "title": "LLM-as-a-Verifier：一种通用验证框架",
-      "title_en": "LLM-as-a-Verifier： A General-Purpose Verification Framework",
-      "url": "https://arxiv.org/abs/2607.05391",
-      "permalink": "https://aihot.virxact.com/items/cmra76mxz00buihupmesig9k5",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-06T00:00:00.000Z",
-      "summary": "LLM-as-a-Verifier 是一种无需额外训练的通用验证框架，通过计算评分 token logits 分布的期望生成连续分数，实现细粒度反馈。该框架在 Terminal-Bench V2（86.5%）、SWE-Bench Verified（78.2%）、RoboRewardBench（87.4%）和 MedAgentBench（73.3%）上取得 SOTA 性能。其细粒度信号可用于 Claude Code 扩展，帮助开发者监控和改进智能体系统，也可为强化学习（如 SAC、GRPO）提供密集反馈，提升机器人学和数学推理基准的样本效率。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra76mxz00buihupmesig9k5"
-      }
-    },
-    {
-      "id": "cmr9jb1wn007eihe8jhd6zhrj",
-      "title": "用可解释性理解标注者安全策略",
-      "title_en": "Understanding Annotator Safety Policy with Interpretability",
-      "url": "https://machinelearning.apple.com/research/annotator-safety-policy-interpretability",
-      "permalink": "https://aihot.virxact.com/items/cmr9jb1wn007eihe8jhd6zhrj",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-06T00:00:00.000Z",
-      "summary": "标注分歧可源于操作失败、政策模糊或价值多元。Annotator Policy Models（APMs）是一种可解释模型，仅从标注行为学习标注者内在的安全策略，无需额外负担。验证表明模型准确率超过80%，能忠实预测反事实编辑并恢复已知差异。将APMs应用于LLM和人类标注者，可揭示不同标注者对安全指令解释的差异（政策模糊）以及不同人口群体在安全优先级上的系统性差异（价值多元），支持更具针对性、透明和包容的安全策略设计。",
-      "category": "paper",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9jb1wn007eihe8jhd6zhrj"
       }
     }
   ]

@@ -1,12 +1,30 @@
 {
-  "fetched_at": "2026-07-12T21:26:13.093Z",
+  "fetched_at": "2026-07-13T21:29:25.813Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Directly Responsible Individuals (DRI)",
+      "link": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
+      "updated": "2026-07-12T23:57:14+00:00",
+      "summary": "Directly Responsible Individuals (DRI)"
+    },
+    {
+      "title": "shot-scraper 1.11",
+      "link": "https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything",
+      "updated": "2026-07-12T23:46:52+00:00",
+      "summary": "Some minor improvements, mainly around command option consistency and making the server: mechanism used by both shot-scraper video and shot-scraper multi work if the server takes longer than a second to start serving traffic."
+    },
     {
       "title": "Fable gets another bump",
       "link": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
       "updated": "2026-07-12T21:20:07+00:00",
       "summary": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans:"
+    },
+    {
+      "title": "sqlite-utils 4.1.1",
+      "link": "https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything",
+      "updated": "2026-07-12T20:55:30+00:00",
+      "summary": "Mainly a fix for an edge case that regular Claude chat spotted while experimenting with the 4.1 release to answer a question about ON DELETE."
     },
     {
       "title": "sqlite-utils 4.1",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
       "updated": "2026-07-08T23:57:21+00:00",
       "summary": "Rewriting Bun in Rust"
-    },
-    {
-      "title": "Introducing GPT‑Live",
-      "link": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
-      "updated": "2026-07-08T23:20:48+00:00",
-      "summary": "Introducing GPT‑Live"
-    },
-    {
-      "title": "Quoting Kenton Varda",
-      "link": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything",
-      "updated": "2026-07-08T20:03:34+00:00",
-      "summary": "I just declared a moratorium against AI-written change descriptions (e.g. PR and commit messages, also issues/tickets) from my team. AI was writing change descriptions that were worse than useless to me as I tried to review PRs: outlining details of the code that could easily be seen by looking at the code, but omitting the higher-level framing needed to understand broadly what the code is doing."
-    },
-    {
-      "title": "sqlite-utils 4.0, now with database schema migrations",
-      "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
-      "updated": "2026-07-07T19:32:57+00:00",
-      "summary": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide ), this version introduces three major features: database migrations , nested transactions (via a new db.atomic() method), and support for compound foreign keys ."
     }
   ]
 }

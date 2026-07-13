@@ -1,23 +1,23 @@
 {
-  "count": 34,
+  "count": 29,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmri4sa9p00r9bi3hn0yjz7jx",
-      "title": "Codex 移除5小时限制，GPT 5.6 Sol 效率提升",
-      "title_en": "给 Codex 点赞👍 暂时移除5小时使用限制，GPT 5.6 Sol更省token，下一小时内进行使用量重置",
-      "url": "https://x.com/dotey/status/2076372677577576864",
-      "permalink": "https://aihot.virxact.com/items/cmri4sa9p00r9bi3hn0yjz7jx",
-      "source": "X：宝玉 (@dotey)",
-      "publishedAt": "2026-07-12T18:26:38.000Z",
-      "summary": "Codex 和 ChatGPT Work 发布三项更新：1）临时移除所有 Plus、Business 和 Pro 计划的5小时使用限制；2）推出 GPT 5.6 Sol 的全面效率改进，使其更省 token，具体影响待量化公布；3）活跃用户达600万，下一小时内进行使用量重置。",
+      "id": "cmri4o4kx00qcbi3hqxj8rxqd",
+      "title": "Codex与ChatGPT Work多项更新：取消5小时限制",
+      "title_en": "Morning. The last 48 hours of Codex and ChatGPT Work have been intense！ Three important updates： - …",
+      "url": "https://x.com/thsottiaux/status/2076365965915467978",
+      "permalink": "https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd",
+      "source": "X：Tibo (@thsottiaux)",
+      "publishedAt": "2026-07-12T17:59:57.000Z",
+      "summary": "早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新：\n\n- 暂时取消所有Plus、Business和Pro计划的5小时使用限制\n- 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布\n- 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置\n\n去创造吧。",
       "category": "ai-products",
-      "score": 77,
+      "score": 76,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmri4sa9p00r9bi3hn0yjz7jx"
+        "canonical": "https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd"
       }
     },
     {
@@ -494,91 +494,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz"
-      }
-    },
-    {
-      "id": "cmr9jbw7a0085ihe85luucw73",
-      "title": "OpenClaw 登陆 HuggingFace 本地应用",
-      "title_en": "OpenClaw landed on @huggingface local apps 🦞🤝🤗 1. Pick any GGUF/MLX model on hf 2. Copy the open…",
-      "url": "https://x.com/openclaw/status/2074187998602871212",
-      "permalink": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73",
-      "source": "X：OpenClaw (@openclaw)",
-      "publishedAt": "2026-07-06T17:45:30.000Z",
-      "summary": "OpenClaw 登陆 @huggingface 本地应用 🦞🤝🤗\n\n1. 在 hf 上挑任意 GGUF/MLX 模型\n2. 复制 openclaw onboard 设置\n3. Voila，你得到一个完全本地的工具调用智能体。无云端、无密钥、无人监控。\n\n让你的 claw 本地化到极致。抵抗是徒劳的 🦞",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73"
-      }
-    },
-    {
-      "id": "cmrav068k01b6ihogth8k26f6",
-      "title": "Claude Cowork 向移动端和网页端开放",
-      "title_en": "Claude Cowork is coming to mobile and web",
-      "url": "https://claude.com/blog/cowork-web-mobile",
-      "permalink": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-07-06T16:00:00.000Z",
-      "summary": "Claude Cowork 正在向移动端和网页端开放，让会话和文件跨设备同步。Beta 版将在未来几周内首先面向 Max 用户推出。Cowork 可让 Claude 跨文件、日历、邮件、即时通讯等工具完成复杂任务，其中超过 90% 的使用场景并非软件开发，而是日常知识工作（业务运营和内容创作）。工作可跨设备跟随用户：在桌面端开始任务，从手机查看进度；关闭笔记本后 Claude 可继续后台运行，支持定时任务（如周一 6 点自动准备客户简报）。当需要用户决策时，Claude 会将问题推送到手机。桌面端保留完整 Cowork 体验，支持无法安装桌面应用的用户。聊天和 Cowork 已在网页端和桌面端合并。为庆祝上线，双倍 Cowork 使用额度延长至 8 月 5 日。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6"
-      }
-    },
-    {
-      "id": "cmr8reau2005fslvpmqjll6du",
-      "title": "Synthetic Sciences 发布 OpenScience：面向机器学习、生物学、物理学和化学研究的开源模型无关 AI 工作台",
-      "title_en": "Synthetic Sciences Releases OpenScience： An Open-Source， Model-Agnostic AI Workbench for Machine Learning， Biology， Physics， and Chemistry Research",
-      "url": "https://www.marktechpost.com/2026/07/05/synthetic-sciences-releases-openscience-an-open-source-model-agnostic-ai-workbench-for-machine-learning-biology-physics-and-chemistry-research",
-      "permalink": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-06T05:07:12.000Z",
-      "summary": "Synthetic Sciences 推出开源（Apache 2.0）AI 科研工作台 OpenScience，覆盖机器学习、生物学、物理学、化学。它运行从文献、假设、代码、实验到分析与撰写的完整科研循环，支持按请求切换任意模型（Claude、GPT、Gemini、GLM、Kimi、DeepSeek 及本地微调模型）。内置 250 余项可编辑技能和 UniProt、PDB、ChEMBL、arXiv 等约 30 个科学数据库作为智能体工具。用户可自带 API 密钥在自己的基础设施上免费运行，安装命令为 `npm install -g @synsci/openscience`，运行 `openscience` 启动浏览器工作台。另提供可选托管层 Atlas。该项目定位为 Anthropic Claude Science 的开源替代方案。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du"
-      }
-    },
-    {
-      "id": "cmra53mfd012bihx8mexd46u8",
-      "title": "蚂蚁 inclusionAI 开源多智能体协作基础设施 Avernet V0.1",
-      "title_en": "inclusionAI/Avernet",
-      "url": "https://github.com/inclusionAI/Avernet",
-      "permalink": "https://aihot.virxact.com/items/cmra53mfd012bihx8mexd46u8",
-      "source": "蚂蚁 inclusionAI：GitHub 新仓库",
-      "publishedAt": "2026-07-06T03:52:54.000Z",
-      "summary": "蚂蚁 inclusionAI 开源的多智能体协作基础设施 Avernet V0.1 正式发布。该项目聚焦 Agent 注册、发现、邀请等协作层问题，不替代 Agent 自身推理能力。通过群组、会话和共享上下文构建多方共识，支持自由聊天、领导-跟随等协作模式，并利用协作反馈形成观察、评估到复用、优化的自动进化闭环。支持 OpenClaw、自定义 Agent、第三方 Agent 引擎及现有 bot 平台等异构生态，提供 Docker 与本地两种快速部署路径。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra53mfd012bihx8mexd46u8"
-      }
-    },
-    {
-      "id": "cmr9t47l20004iha5fuyk3h7z",
-      "title": "xAI 为 Grok Voice 新增 21 个旗舰语音",
-      "title_en": "21 New Flagship Grok Voices Jul 6， 2026 # 21 New Flagship Grok Voices New multilingual voices for Grok Voice， plus improved naturalness for the original five. Read More",
-      "url": "https://x.ai/news/new-flagship-voices",
-      "permalink": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-06T00:00:00.000Z",
-      "summary": "xAI 发布 21 个新旗舰语音，加入原有的 5 个语音。所有新语音均支持多语言，已在实时 Voice Agent API、Text to Speech API 及新推出的 Grok Voice Agent Builder 中可用。每个语音针对客服、角色、解说、广告、教育等场景定制，支持通过 `【pause】` 等语音标签控制表达。原始 5 个语音（Ara、Eve、Leo、Rex、Sal）经重训练后，节奏、措辞和重音的自然度提升。所有语音原生支持 Grok Voice 的 25 种以上语言。",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z"
       }
     }
   ]
