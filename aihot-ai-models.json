@@ -1,8 +1,76 @@
 {
-  "count": 24,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrl2m4yg00awbicqo2arojvd",
+      "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+      "title_en": "Bonsai 27B：首款可在手机上运行的27B级模型",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "permalink": "https://aihot.virxact.com/items/cmrl2m4yg00awbicqo2arojvd",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-14T19:51:19.560Z",
+      "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrl2m4yg00awbicqo2arojvd"
+      }
+    },
+    {
+      "id": "cmrkw3h0101xtbi5qs4nj3sxa",
+      "title": "Google 在 I/O Connect India 展示由 Tensor SoC 和 TPU 驱动的 Pixel 10 端侧 AI 未来",
+      "title_en": "Unlocking the Next Era of On-Device AI with Google Tensor and Pixel",
+      "url": "https://developers.googleblog.com/unlocking-the-next-era-of-on-device-ai-with-google-tensor-and-pixel",
+      "permalink": "https://aihot.virxact.com/items/cmrkw3h0101xtbi5qs4nj3sxa",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-07-14T16:51:42.219Z",
+      "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta 及其配套开源资源，开始构建这些安全的边缘应用。",
+      "category": "ai-models",
+      "score": 58,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrkw3h0101xtbi5qs4nj3sxa"
+      }
+    },
+    {
+      "id": "cmrkf8gun01a4bizsthjytx6c",
+      "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
+      "title_en": "极致量化，近三千亿参数 Hy3 单卡即可部署",
+      "url": "https://mp.weixin.qq.com/s/Kq30ftirASryPrUtjK2xSw",
+      "permalink": "https://aihot.virxact.com/items/cmrkf8gun01a4bizsthjytx6c",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-07-14T08:56:07.000Z",
+      "summary": "腾讯混元团队为旗舰模型 Hy3（295B 参数）推出量化版本。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，缩小 6.7 倍，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 169.9 GiB，两张显卡可承载。量化版在 Agent、多语言代码、工具调用、长文理解等任务上表现接近满血模型。团队还提供 GPTQ Int4 版本，支持 vLLM 部署。配合 MTP 投机解码，1bit 版本解码速度提升约 50%，4bit 版本提升近 60%。所有版本已开源并打包为 GGUF 格式，适配 llama.cpp 生态。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrkf8gun01a4bizsthjytx6c"
+      }
+    },
+    {
+      "id": "cmrjy99kt01nvbiw22bwjsvnv",
+      "title": "商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型",
+      "title_en": "SenseNova-Vision-7B-MoT， fully open-sourced： one model， �…",
+      "url": "https://x.com/SenseTime_AI/status/2076828658531262619",
+      "permalink": "https://aihot.virxact.com/items/cmrjy99kt01nvbiw22bwjsvnv",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-07-14T00:38:32.000Z",
+      "summary": "商汤发布并完全开源 SenseNova-Vision-7B-MoT，一个统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务的模型。该模型支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及 SenseNova-Vision Corpus（含 5000 万示例子集及复现剩余公开数据的完整工具包）。",
+      "category": "ai-models",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrjy99kt01nvbiw22bwjsvnv"
+      }
+    },
     {
       "id": "cmrj6actv0651bilkm5pfz6ub",
       "title": "德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先",
@@ -276,23 +344,6 @@
       }
     },
     {
-      "id": "cmrbspnw906wlihl1bo8bu63i",
-      "title": "OpenAI GPT-5.6 周四发布，此前因美国政府强制延迟",
-      "title_en": "OpenAI's GPT-5.6 launches Thursday after a delay forced by the U.S. government",
-      "url": "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government",
-      "permalink": "https://aihot.virxact.com/items/cmrbspnw906wlihl1bo8bu63i",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-08T08:00:30.000Z",
-      "summary": "OpenAI GPT-5.6 模型于周四发布。该模型6月底亮相，最初因美国政府限制仅向部分合作伙伴提供，商务部在AI标准与创新中心完成额外测试后批准公开。OpenAI公开批评延迟，称将最佳工具与开发者及企业隔离。新模型Sol在TerminalBench 2.1得分88.8%，Sol Ultra达91.9%，高于Anthropic的Claude Mythos 5（88%）。在网络安全任务中，Sol与Mythos 5水平相当但仅用三分之一的token。Sol定价$5/$30每百万输入/输出token，Anthropic的Fable 5为$10/$50。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbspnw906wlihl1bo8bu63i"
-      }
-    },
-    {
       "id": "cmrbikwbz04b5ihl16qfp5ntw",
       "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
       "title_en": "Ant Group's Robbyant Open-Sources LingBot-Vision： A 1B Boundary-Centric Vision Foundation Model for Dense Spatial Perception",
@@ -341,74 +392,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y"
-      }
-    },
-    {
-      "id": "cmrb2mxmc0072ihl1mx0aw1bz",
-      "title": "Meta Superintelligence Labs 推出 Muse Image 和 Muse Video",
-      "title_en": "Introducing Muse Image and Muse Video， the first media generation models developed by Meta Superinte…",
-      "url": "https://x.com/AIatMeta/status/2074577662840832382",
-      "permalink": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz",
-      "source": "X：AI at Meta (@AIatMeta)",
-      "publishedAt": "2026-07-07T19:33:53.000Z",
-      "summary": "Meta Superintelligence Labs 发布首个媒体生成模型 Muse Image 和 Muse Video。Muse Image 是目前最先进的图像生成模型，能精确遵循指令、精准编辑、多参考构图，并利用 Instagram 社交上下文。它还具备智能体工具使用能力并集成 Muse Spark。用户可通过 Meta AI 应用、网页、Instagram Stories 和 WhatsApp 试用，初始限于部分国家。Muse Video 基于相同预训练基础，实现高视觉保真度并原生支持音频。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz"
-      }
-    },
-    {
-      "id": "cmrcfo6cf00lwihx5z6xn4s83",
-      "title": "xAI 发布 Grok 4.5",
-      "title_en": "Introducing Grok 4.5 Jul 8， 2026 # Introducing Grok 4.5 Grok 4.5 is SpaceXAI's smartest model built for coding， agentic tasks， and knowledge work. Read More",
-      "url": "https://x.ai/news/grok-4-5",
-      "permalink": "https://aihot.virxact.com/items/cmrcfo6cf00lwihx5z6xn4s83",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-07T16:00:00.000Z",
-      "summary": "xAI 今日推出 Grok 4.5，为其最强模型，专为编程、智能体任务和知识工作打造。模型训练于数万块 NVIDIA GB300 GPU，DeepSWE 1.0 得分 62.0%，DeepSWE 1.1 得分 53%，Terminal Bench 2.1 得分 83.3%，SWE Bench Pro 解决率 64.7%。服务速度 80 TPS，token 效率约为 Opus 4.8 （max） 的 4.2 倍，在 Harvey Legal Agent Benchmark 排名第一。定价 $2/百万输入 token、$6/百万输出 token。即日起在 Grok Build、Cursor 和 SpaceXAI API 可用，欧盟地区预计 7 月中旬上线。",
-      "category": "ai-models",
-      "score": 85,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcfo6cf00lwihx5z6xn4s83"
-      }
-    },
-    {
-      "id": "cmrc3xicn01grihyf9z6t1b4b",
-      "title": "Seedream 5.0 Pro 发布：不止\"生成\"，更懂\"设计\"",
-      "title_en": "不止\"生成\"，更懂\"设计\" | Seedream 5.0 Pro 发布",
-      "url": "https://seed.bytedance.com/zh/blog/%E4%B8%8D%E6%AD%A2-%E7%94%9F%E6%88%90-%E6%9B%B4%E6%87%82-%E8%AE%BE%E8%AE%A1-seedream-5-0-pro-%E5%8F%91%E5%B8%83",
-      "permalink": "https://aihot.virxact.com/items/cmrc3xicn01grihyf9z6t1b4b",
-      "source": "字节 Seed：Research Feed（网页内嵌数据）",
-      "publishedAt": "2026-07-07T16:00:00.000Z",
-      "summary": "字节 Seed 今日发布多模态图像创作模型 Seedream 5.0 Pro，在图文匹配、结构合理性、文字渲染与画面美感上全面升级。四大核心突破：复杂信息可视化，可生成高密度信息图；交互式精准编辑，支持点选、圈选、草图渲染、色彩与材质替换、图层分离及多图融合，实现像素级编辑；真实的影像与人像质感，还原光影、材质与皮肤肌理；原生多语种输入与生成，支持十余种语言及本地化视觉特征。已陆续在豆包、即梦、火山方舟等平台上线。",
-      "category": "ai-models",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrc3xicn01grihyf9z6t1b4b"
-      }
-    },
-    {
-      "id": "cmrbg84yf03mcihl1reivcibq",
-      "title": "Nemotron-Labs-Diffusion：统一自回归、扩散与自我推测解码的三模式语言模型",
-      "title_en": "Nemotron-Labs-Diffusion： A Tri-Mode Language Model Unifying Autoregressive， Diffusion， and Self-Speculation Decoding",
-      "url": "https://arxiv.org/abs/2607.05722",
-      "permalink": "https://aihot.virxact.com/items/cmrbg84yf03mcihl1reivcibq",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "summary": "Nemotron-Labs-Diffusion 是一种三模式语言模型，通过联合自回归（AR）和扩散损失训练，在单一架构中统一了 AR、扩散和自我推测解码。研究显示 AR 与扩散目标互补：扩散增强前瞻规划，AR 提供从左至右的语言先验。自我推测模式下，扩散充当草稿模型、AR 负责验证，其接受率和实际设备效率均优于多 token 预测（MTP）。在最优化采样器下，单次前向传播产出 token 数比自我推测最多高 76.5%。该系列包含 3B、8B、14B 参数的基础、指令和视觉语言模型，在准确率和速度上均超越现有开源 AR 和扩散 LM。例如 8B 模型单次前向解码 token 数是 Qwen3-8B 的 6 倍，在 GB200 GPU 上使用 SGLang 运行 SPEED-Bench 时吞吐量提升 4 倍。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbg84yf03mcihl1reivcibq"
       }
     }
   ]

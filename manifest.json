@@ -1,61 +1,61 @@
 {
-  "fetched_at": "2026-07-13T21:29:16.941Z",
-  "date_utc": "2026-07-13",
+  "fetched_at": "2026-07-14T21:31:12.913Z",
+  "date_utc": "2026-07-14",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 607
+      "ms": 830
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 388
+      "ms": 277
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 340
+      "ms": 507
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 368
+      "ms": 492
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 323
+      "ms": 453
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 90
+      "ms": 97
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 995
+      "ms": 1047
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 953
+      "ms": 862
     },
     "anthropic_news": {
       "status": "ok",
       "file": "anthropic-news.json",
-      "ms": 668
+      "ms": 3906
     },
     "anthropic_engineering": {
       "status": "ok",
       "file": "anthropic-engineering.json",
-      "ms": 3482
+      "ms": 4137
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 658
+      "ms": 816
     },
     "follow_builders_x": {
       "status": "ok",
@@ -65,12 +65,12 @@
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 5
+      "ms": 7
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 13
+      "ms": 16
     },
     "localllama": {
       "status": "ok",
@@ -80,7 +80,7 @@
     "article_bodies": {
       "status": "ok",
       "file": "article-bodies.json",
-      "ms": 3
+      "ms": 2
     }
   }
 }

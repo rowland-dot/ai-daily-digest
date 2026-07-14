@@ -1,8 +1,76 @@
 {
-  "count": 29,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrkta2fv011vbi5qe7hdwh0s",
+      "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
+      "title_en": "http://x.com/i/article/2067347903761485824",
+      "url": "https://x.com/googleaidevs/status/2077049898059354565",
+      "permalink": "https://aihot.virxact.com/items/cmrkta2fv011vbi5qe7hdwh0s",
+      "source": "X：Google AI for Developers (@googleaidevs)",
+      "publishedAt": "2026-07-14T15:17:40.000Z",
+      "summary": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言、近实时延迟的语音到语音翻译。该模型直接处理原始音频流，保留说话者语调、节奏和音高。东南亚超级应用 Grab 正探索将其用于司机与乘客间的跨语言沟通，其用户每月发起超 1000 万次语音通话。开发者可通过 Gemini Live API 集成 LiveKit、Fishjam、Pipecat 或 Vision Agents 构建应用。LiveKit 已实现虚拟会议室多语言即时理解；Software Mansion 结合 MoQ 协议突破流媒体瓶颈；VisionAgents AI 展示了动态多语言切换能力。开发者可在 Google AI Studio 试用并获取 Cookbook 示例代码。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrkta2fv011vbi5qe7hdwh0s"
+      }
+    },
+    {
+      "id": "cmrksgyym00utbi5qx5x6v42u",
+      "title": "Anthropic 推出 Claude for Teachers",
+      "title_en": "Introducing Claude for Teachers",
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "permalink": "https://aihot.virxact.com/items/cmrksgyym00utbi5qx5x6v42u",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-07-14T15:11:11.440Z",
+      "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrksgyym00utbi5qx5x6v42u"
+      }
+    },
+    {
+      "id": "cmrkedwpc013nbizssg3olzs7",
+      "title": "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试",
+      "title_en": "内置\"任意门\"，高德发布通用世界模型工坊 ABot-WorldStudio",
+      "url": "https://www.ithome.com/0/976/538.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrkedwpc013nbizssg3olzs7",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-14T07:46:46.000Z",
+      "summary": "阿里巴巴旗下高德发布通用世界模型工坊 ABot-WorldStudio，并开放测试。该产品将交互式视频生成与 3DGS 场景生成统一，用户输入文字或图片即可生成可实时交互、可分享的 AI 世界。工坊内置\"时空任意门\"，穿越后可跃迁至另一完整 3D 世界。官方实测单次连续推理稳定运行超1小时，无崩溃、无质量衰减。底层模型 ABot-World0 与 ABot-3DWorld0 均可在单张 5090 上本地部署，已全面开源。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrkedwpc013nbizssg3olzs7"
+      }
+    },
+    {
+      "id": "cmrkvk6vb01sqbi5qxm4z15il",
+      "title": "Juggler：一款开源 GUI 编程智能体，由 JUCE 创建者开发",
+      "title_en": "Show HN： Juggler - an open-source GUI coding agent， by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "permalink": "https://aihot.virxact.com/items/cmrkvk6vb01sqbi5qxm4z15il",
+      "source": "Hacker News：AI 热帖",
+      "publishedAt": "2026-07-12T18:28:15.000Z",
+      "summary": "Juggler 是一款开源 GUI 编程智能体，提供可视化工作台，支持可检查的工具调用、分支线程和可编辑上下文。会话以树状结构组织，而非线性聊天记录，用户可创建子线程、回溯、比较和编辑。所有关键信息以 Finder 风格 Miller 列展示。Juggler 支持本地、远程或同时运行，桌面应用与浏览器可连接同一会话。模型支持包括 Claude Code、OpenAI、Gemini、Ollama、OpenRouter、Z.AI、Deepseek 等。后端使用 Go 和 Wails，UI 为 HTML/JS。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrkvk6vb01sqbi5qxm4z15il"
+      }
+    },
     {
       "id": "cmri4o4kx00qcbi3hqxj8rxqd",
       "title": "Codex与ChatGPT Work多项更新：取消5小时限制",
@@ -307,193 +375,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi"
-      }
-    },
-    {
-      "id": "cmray36fg021nihogfo205417",
-      "title": "NotebookLM短视频概览正式上线",
-      "title_en": "Short Video Overviews are officially 💯 rolled out on mobile and web across all users in English！ A…",
-      "url": "https://x.com/NotebookLM/status/2074551227594264799",
-      "permalink": "https://aihot.virxact.com/items/cmray36fg021nihogfo205417",
-      "source": "X：NotebookLM (@NotebookLM)",
-      "publishedAt": "2026-07-07T17:48:50.000Z",
-      "summary": "短视频概览功能已正式在移动端和网页端面向所有英语用户全面上线！\n\n一如既往，您的意见对我们至关重要。请在下方分享您最喜欢的作品，并告诉我们接下来需要添加哪些功能！❤️",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmray36fg021nihogfo205417"
-      }
-    },
-    {
-      "id": "cmrb7dzge01d6ihl1bthomtam",
-      "title": "Rowboat：开源、本地优先的桌面AI助手",
-      "title_en": "Show HN： Rowboat - Open-source， local-first alternative to Claude Desktop",
-      "url": "https://github.com/rowboatlabs/rowboat",
-      "permalink": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam",
-      "source": "Hacker News：AI 热帖",
-      "publishedAt": "2026-07-07T16:10:44.000Z",
-      "summary": "Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam"
-      }
-    },
-    {
-      "id": "cmraw22r701jjihogh1k8hbu6",
-      "title": "Gemini API Managed Agents 新增后台执行、远程 MCP 与自定义函数等能力",
-      "title_en": "Expanding Managed Agents in Gemini API： background tasks， remote MCP and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
-      "permalink": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-07-07T08:54:00.000Z",
-      "summary": "Google 为 Gemini API 的 Managed Agents 新增后台执行、远程 MCP 服务器集成、自定义函数调用与凭证刷新功能。后台执行通过传入 `background： true` 异步运行任务，立即返回 ID 供轮询状态或流式获取进度。Managed Agents 可直接连接远程 MCP 服务器，无需自定义代理中间件，并能与内置沙箱工具（如 Google 搜索、代码执行）混合使用。自定义函数调用支持本地执行业务逻辑，内置工具自动在服务端运行。凭证刷新通过传递现有环境 ID 和新网络配置完成，沙箱内文件系统、已安装包和仓库保持不变。这些更新旨在帮助开发者构建可靠的生产级 AI 智能体。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6"
-      }
-    },
-    {
-      "id": "cmraai9ic00q4ihl3ozf3ki9s",
-      "title": "Grok Imagine 更新：支持 15 秒视频",
-      "title_en": "Grok Imagine update",
-      "url": "https://x.com/elonmusk/status/2074378653501128833",
-      "permalink": "https://aihot.virxact.com/items/cmraai9ic00q4ihl3ozf3ki9s",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-07-07T06:23:05.000Z",
-      "summary": "Grok Imagine 更新。请更新你的 Grok 应用！15 秒 Imagine 视频现已可用，质量令人难以置信。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmraai9ic00q4ihl3ozf3ki9s"
-      }
-    },
-    {
-      "id": "cmra67abw003vihup3mg75wsc",
-      "title": "MIRA：可玩多人世界模型，20 FPS实时生成\"火箭联盟的梦\"",
-      "title_en": "I have been playing these world models/games since the first diffusion DOOM， and multiplayer at 20 F…",
-      "url": "https://x.com/emollick/status/2074348274136346871",
-      "permalink": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc",
-      "source": "X：Ethan Mollick (@emollick)",
-      "publishedAt": "2026-07-07T04:22:22.000Z",
-      "summary": "MIRA是一个可玩、多人的世界模型，被形容为\"火箭联盟的梦\"。它基于10k小时公开机器人收集的数据训练，学习四玩家游戏动态，根据按键实时生成画面，帧率达20 FPS。模型由General Intuition与Kyutai Labs联合构建，Epic Games提供协作。Ethan Mollick称从最早的扩散DOOM玩过来，多人20 FPS效果出色。演示、技术报告及开源代码已公开，在ICML Booth 111现场展示。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc"
-      }
-    },
-    {
-      "id": "cmra2lgp000ayihx8eacylpo3",
-      "title": "腾讯混元Hy3登陆OpenRouter，免费至7月21日",
-      "title_en": "Thank you @novita_labs for making Hy3 available on @OpenRouter 🎉🎉🎉",
-      "url": "https://x.com/TencentHunyuan/status/2074327740757823511",
-      "permalink": "https://aihot.virxact.com/items/cmra2lgp000ayihx8eacylpo3",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-07-07T03:00:47.000Z",
-      "summary": "腾讯混元Hy3模型已通过Novita Labs作为Day-0合作伙伴在OpenRouter上线，并开放免费使用至7月21日。Hy3采用295B MoE架构（21B active），原生支持256K上下文，提供三种可配置推理模式，在编码、推理及长上下文任务上表现强劲，专为智能体工作流和生产级AI场景优化，兼顾可靠性、效率与成本。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmra2lgp000ayihx8eacylpo3"
-      }
-    },
-    {
-      "id": "cmrbg84yf03mbihl1gfbbgeuz",
-      "title": "AlayaWorld：长程可玩视频世界生成",
-      "title_en": "AlayaWorld： Long-Horizon and Playable Video World Generation",
-      "url": "https://arxiv.org/abs/2607.06291",
-      "permalink": "https://aihot.virxact.com/items/cmrbg84yf03mbihl1gfbbgeuz",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "summary": "AlayaWorld 是一个全栈开源框架，用于构建交互式生成世界。该框架支持开放式实时交互，用户可自由导航并执行战斗、施法、召唤怪物等多种动作。AlayaWorld 将数据准备、模型架构、训练、推理加速和部署统一在模块化可扩展的架构中，并发布了可复现流程、参考实现、评估工具和完整文档，为生成世界模型的未来研究与实时应用奠定基础。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbg84yf03mbihl1gfbbgeuz"
-      }
-    },
-    {
-      "id": "cmrb18k7802uuihogxse92jx2",
-      "title": "Hugging Face Storage 成为 SkyPilot 一级后端：零出站费跨云存储",
-      "title_en": "Run AI workloads on any cloud， store on Hugging Face： zero-egress storage with SkyPilot",
-      "url": "https://huggingface.co/blog/skypilot-hf-storage",
-      "permalink": "https://aihot.virxact.com/items/cmrb18k7802uuihogxse92jx2",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "summary": "Hugging Face Storage 现为 SkyPilot 的一级后端。用户通过 `hf：//` URL 和现有 HFTOKEN 即可将 Hugging Face Bucket（读写）或模型/数据集/Space 仓库（只读）挂载到 SkyPilot 任务中，支持 MOUNT（FUSE 懒加载）或 COPY 模式。SkyPilot 可将任务调度到 20+ 云、Kubernetes、Slurm 及本地集群的任意可用 GPU 上。Hugging Face 不收取出站及 CDN 费用，故跨云读取数据无额外成本。存储价格 $12-18/TB/月，低于 AWS S3 加出站费。Bucket 基于 Xet，增量检查点和模型变体仅存储和传输改动部分。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrb18k7802uuihogxse92jx2"
-      }
-    },
-    {
-      "id": "cmr9wgeoh00hvih9kcga5y5uj",
-      "title": "Gemini Spark 可智能追踪话题实时反应",
-      "title_en": "Gemini Spark can now intelligently track topics and react to events in real time. Try the prompt i…",
-      "url": "https://x.com/GeminiApp/status/2074280473581572600",
-      "permalink": "https://aihot.virxact.com/items/cmr9wgeoh00hvih9kcga5y5uj",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-07-06T23:52:57.000Z",
-      "summary": "Gemini Spark 现在可以智能追踪话题并实时反应事件。\n\n试试下一篇帖子中的提示词，在你支持的球队比赛结束后，获取定制化的比赛分析邮件。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9wgeoh00hvih9kcga5y5uj"
-      }
-    },
-    {
-      "id": "cmr9u2kma003gihdb8r5drdfd",
-      "title": "OfficeCLI：为AI智能体设计的开源Office套件",
-      "title_en": "OfficeCLI：供人工智能代理读取和编辑 Microsoft Office 文件的办公套件",
-      "url": "https://github.com/iOfficeAI/OfficeCLI",
-      "permalink": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-06T23:03:34.910Z",
-      "summary": "OfficeCLI是全球首个专为AI智能体设计的开源Office套件，以单二进制文件运行，无需安装Office或任何依赖。它内置HTML渲染引擎，可将.docx/.xlsx/.pptx转换为HTML或PNG，形成\"渲染→查看→修复\"的视觉闭环，使AI代理能自主创建、读取和修改Word、Excel、PowerPoint文档。支持公式、图表、条件格式、RTL布局、修订追踪、表格、数据透视表等复杂功能。提供CLI命令和基于自然语言的桌面应用AionUi，并可一键安装到Claude Code、Cursor、Windsurf、GitHub Copilot等AI编码工具中。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd"
-      }
-    },
-    {
-      "id": "cmr9u1olo002sihdbunnazaoz",
-      "title": "Claude Code v2.1.202 发布",
-      "title_en": "v2.1.202",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
-      "permalink": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-07-06T22:51:16.000Z",
-      "summary": "Claude Code v2.1.202 在 `/config` 中新增\"Dynamic workflow size\"设置，可控制动态工作流的 agent 数量规模（小/中/大），作为指导性建议而非硬性上限。工作流派生的 agent 现在会发射 `workflow.run_id` 和 `workflow.name` 的 OpenTelemetry 属性。修复了 mTLS 握手失败、远程控制发送命令失败、移动端发送无说明图片被静默丢弃、语音听写在麦克风故障时无限重试（改为暂停输入）、重载已有技能导致重复指令等问题。改进了工作流 agent 列表布局，MCP 错误消息更清晰。`/review <pr>` 恢复为快速单次审查，多 agent 审查请使用 `/code-review`。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz"
       }
     }
   ]

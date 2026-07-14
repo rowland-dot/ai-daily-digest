@@ -1,8 +1,42 @@
 {
-  "count": 13,
+  "count": 11,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrko155e005ubixirangezv8",
+      "title": "Anthropic 经济指数：加拿大 Claude 使用情况分析",
+      "title_en": "How Canada uses Claude： Findings from the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/research/how-canada-uses-claude",
+      "permalink": "https://aihot.virxact.com/items/cmrko155e005ubixirangezv8",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-07-14T13:06:56.913Z",
+      "summary": "基于2026年2月Claude.ai对话样本，加拿大占全球流量的2.6%，人均使用量是预期的4.4倍，在总使用量前十国家中仅次于美国。加拿大内部采用率高度集中：安大略省占43.9%对话，不列颠哥伦比亚省人均使用量达预期的1.4倍，而纽芬兰与拉布拉多省仅为0.2倍。省级人均使用量与收入无关，而与专业、科学和技术服务业的就业占比高度相关。各省使用场景稳定：工作占34-40%，课程作业占13-18%，个人用途占44-51%。翻译请求与公共管理就业份额正相关，反映加拿大联邦双语政策；文档翻译是加拿大相对于其他英语国家最独特的使用场景。加拿大整体使用偏向学术和早期职业场景。",
+      "category": "paper",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrko155e005ubixirangezv8"
+      }
+    },
+    {
+      "id": "cmrkswubg00wabi5qrgj8jc2l",
+      "title": "小米发布Xiaomi-Robotics-U0：380亿参数多模态自回归模型统一具身合成",
+      "title_en": "Xiaomi-Robotics-U0： Unified Embodied Synthesis with World Foundation Model",
+      "url": "https://arxiv.org/abs/2607.11643",
+      "permalink": "https://aihot.virxact.com/items/cmrkswubg00wabi5qrgj8jc2l",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-13T14:57:58.000Z",
+      "summary": "小米推出Xiaomi-Robotics-U0，一个380亿参数的多模态自回归模型，用于统一具身合成。该模型将具身生成视为基础图像与视频生成的延伸，联合优化文生图、图像编辑、具身场景生成、具身迁移及具身视频生成。它是首个支持跨多种机器人形态的高质量多视角场景生成模型，并引入结构化可控具身迁移。该模型在单步与序列生成任务上达到SOTA，在具身场景生成与迁移的人类评估中超越GPT-Image-2.0，在World Arena具身视频生成排名第一，并将pi_0.5在真实世界操控任务上的分布外成功率从36.9%提升至63.2%。代码与检查点已开源。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrkswubg00wabi5qrgj8jc2l"
+      }
+    },
     {
       "id": "cmrh4d5cj009ubir7yazlez7q",
       "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
@@ -154,74 +188,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrbqwsid06g2ihl1iiwufnz5"
-      }
-    },
-    {
-      "id": "cmrcpjgf00373ihx5mtyo2fsy",
-      "title": "面向AI模型双重用途知识的\"开关\"：Anthropic与AE Studio提出GRAM方法",
-      "title_en": "An off switch for dual use knowledge in AI models",
-      "url": "https://www.anthropic.com/research/off-switch-dual-use",
-      "permalink": "https://aihot.virxact.com/items/cmrcpjgf00373ihx5mtyo2fsy",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-07-07T16:00:00.000Z",
-      "summary": "Anthropic与AE Studio联合提出梯度路由辅助模块（GRAM）方法，通过在Transformer每层添加可移除的神经元模块，使模型在训练时将病毒学、网络安全、核物理、专业编程语言等双重用途知识仅路由到对应模块，而非扩散至全局。训练后删除模块即可消除该能力，保留则供可信部署使用。实验在合成数据、真实数据及50M到5B参数模型上测试，GRAM效果与数据过滤相当，移除模块不降低通用性能，且比事后\"遗忘\"技术更难恢复。该研究为平衡双重用途知识的安全访问与有益使用提供了更鲁棒的方案。",
-      "category": "paper",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcpjgf00373ihx5mtyo2fsy"
-      }
-    },
-    {
-      "id": "cmrasd6r300i2ihog8ifwrqs5",
-      "title": "苹果研究：单个神经元即可绕过大型语言模型的安全对齐",
-      "title_en": "A Single Neuron Is Sufficient to Bypass Safety Alignment in Large Language Models",
-      "url": "https://machinelearning.apple.com/research/single-neuron-safety-alignment",
-      "permalink": "https://aihot.virxact.com/items/cmrasd6r300i2ihog8ifwrqs5",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "summary": "苹果研究人员发现，安全对齐由两类神经元调控：拒绝神经元控制有害知识是否表达，概念神经元编码有害知识本身。在七个模型（1.7B至70B参数）中，仅需抑制单个拒绝神经元即可绕过安全对齐，回答有害请求；或放大单个概念神经元，从无害提示诱导出有害内容。整个过程无需训练或提示工程。结果表明安全对齐由个别神经元因果控制。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrasd6r300i2ihog8ifwrqs5"
-      }
-    },
-    {
-      "id": "cmrasd6r300i0ihog8xxwezye",
-      "title": "Weblica：面向视觉网页智能体的可扩展可复现训练环境",
-      "title_en": "Weblica： Scalable and Reproducible Training Environments for Visual Web Agents",
-      "url": "https://machinelearning.apple.com/research/weblica-visual-web-agents",
-      "permalink": "https://aihot.virxact.com/items/cmrasd6r300i0ihog8xxwezye",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "summary": "苹果研究团队提出Weblica框架，通过HTTP级缓存保存网页稳定视觉状态并保留交互行为，结合大语言模型基于真实网站与核心导航技能合成环境，构建可复现、可扩展的训练环境。该框架将强化学习训练扩展到数千个多样化的环境和任务。最佳模型Weblica-8B在多个网页导航基准上超越同等规模的开源模型，推理步骤更少，测试时计算扩展性良好，性能与API模型相当。",
-      "category": "paper",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrasd6r300i0ihog8xxwezye"
-      }
-    },
-    {
-      "id": "cmrasd6r300hxihog9hxmteoz",
-      "title": "DynaMiCS：带性能约束的大语言模型动态混合微调",
-      "title_en": "DynaMiCS： Fine-Tuning LLMs with Performance Constraints Using Dynamic Mixtures",
-      "url": "https://machinelearning.apple.com/research/dynamics-fine-tuning-llms",
-      "permalink": "https://aihot.virxact.com/items/cmrasd6r300hxihog9hxmteoz",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "summary": "DynaMiCS是一种动态混合优化器，将多领域微调建模为带性能约束的优化问题。它通过短领域特定探测运行估计跨领域效应斜率矩阵，再基于概率单纯形优化计算混合权重，在提升目标领域性能的同时将约束领域损失维持在参考水平以下。实验表明，DynaMiCS相比固定混合基线取得更强的目标领域提升和约束满足，且计算成本更低，无需参考模型、逐样本评分或手动调节混合权重。",
-      "category": "paper",
-      "score": 55,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrasd6r300hxihog9hxmteoz"
       }
     }
   ]
