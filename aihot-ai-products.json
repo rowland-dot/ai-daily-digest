@@ -4,6 +4,57 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmrm9ne9101gqbiijkgrj6t9h",
+      "title": "Telegram 无服务器架构",
+      "title_en": null,
+      "url": "https://core.telegram.org/bots/serverless",
+      "permalink": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-15T15:37:19.450Z",
+      "summary": "Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。",
+      "category": "ai-products",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h"
+      }
+    },
+    {
+      "id": "cmrltzprt0014bi5k7mp2uwpy",
+      "title": "金山办公推出 WPS Comate AI 办公客户端",
+      "title_en": "金山办公推出 WPS Comate AI 办公客户端，支持 Skill 技能生态、自动化任务、Wiki 知识库等",
+      "url": "https://www.ithome.com/0/977/105.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrltzprt0014bi5k7mp2uwpy",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-15T08:39:58.000Z",
+      "summary": "金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrltzprt0014bi5k7mp2uwpy"
+      }
+    },
+    {
+      "id": "cmrl9plh50014bi2b56tar61d",
+      "title": "Codex 周活超700万，两月更新150+项",
+      "title_en": "7M+ weekly Codex users. 150+ updates in two months. @romainhuet catches you up on what's new in Cod…",
+      "url": "https://x.com/OpenAIDevs/status/2077166520392970529",
+      "permalink": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-07-14T23:01:05.000Z",
+      "summary": "7M+ 周活跃 Codex 用户。两月内 150+ 项更新。\n\n@romainhuet 为你梳理 Codex 新动态：GPT-5.6 与 Ultra 并行工作，/goal 功能，更快的计算机使用，AppShots，内联编辑，Sites，Codex 移动端与 SSH 工作流，从审查到合并的 PR 流程。",
+      "category": "ai-products",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d"
+      }
+    },
+    {
       "id": "cmrkta2fv011vbi5qe7hdwh0s",
       "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
       "title_en": "http://x.com/i/article/2067347903761485824",
@@ -324,57 +375,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrcn8mlw02k5ihx5risshcr3"
-      }
-    },
-    {
-      "id": "cmrc8cfhc00jeihqc0r5wx6qz",
-      "title": "Replit 推出社区档案与力量排名",
-      "title_en": "New this week 🚀 Replit Community Profiles - Proof of Work for vibe coders. Your profile， your flex…",
-      "url": "https://x.com/Replit/status/2074871322220339515",
-      "permalink": "https://aihot.virxact.com/items/cmrc8cfhc00jeihqc0r5wx6qz",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-07-08T15:00:47.000Z",
-      "summary": "本周新功能 🚀 Replit 社区档案--vibe coders 的工作证明。\n\n你的档案，你的展示。获取你的智能体使用和检查点的活跃度图表，外加面向专业用户的 Replit 力量排名。\n\n登录，认领你的档案，挑选你最棒的项目，与朋友分享你的数据。\n\n立即查看 → http://replit.com/community",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrc8cfhc00jeihqc0r5wx6qz"
-      }
-    },
-    {
-      "id": "cmrc8c7rq00imihqcg5rp1u13",
-      "title": "OpenRouter聊天室推出一键零数据保留",
-      "title_en": "New： one-click ZDR （zero-data retention） in the Chatroom Compare models side-by-side with full priv…",
-      "url": "https://x.com/OpenRouter/status/2074870468394250461",
-      "permalink": "https://aihot.virxact.com/items/cmrc8c7rq00imihqcg5rp1u13",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-07-08T14:57:23.000Z",
-      "summary": "新功能：聊天室一键ZDR（零数据保留）\n在完全隐私保护下横向对比模型：https://openrouter.ai/chat",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrc8c7rq00imihqcg5rp1u13"
-      }
-    },
-    {
-      "id": "cmrcabmvj00ymihqce96ilbfi",
-      "title": "原生速度的 vLLM transformers 建模后端",
-      "title_en": "Native-speed vLLM transformers modeling backend",
-      "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
-      "permalink": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-07-08T00:00:00.000Z",
-      "summary": "Hugging Face 宣布 transformers vLLM 后端现与手写原生 vLLM 实现速度相当甚至更快。模型作者无需移植代码，即可自动利用 transformers 获得超快推理。测试使用 Qwen3-4B（单 GPU）、Qwen3-32B（张量并行）和 Qwen3-235B-A22B-FP8 MoE（数据+专家并行）三种配置，吞吐量均达到或超过原生。该后端通过 torch.fx 静态分析图、AST 重写代码实现动态层融合，支持张量/管道/专家并行及 torch.compile。用户仅需添加 `--model-impl transformers` 标志。目前不支持线性注意力模型但即将支持。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi"
       }
     }
   ]

@@ -1,8 +1,76 @@
 {
-  "count": 26,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrlz5b6r01kabi5ksc1pj878",
+      "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+      "title_en": "We learned that Alibaba's Qwen will be integrated into Apple Intelligence as part of its AI capabili…",
+      "url": "https://x.com/thexpin/status/2077346752219521469",
+      "permalink": "https://aihot.virxact.com/items/cmrlz5b6r01kabi5ksc1pj878",
+      "source": "X：X.PIN (@thexpin)",
+      "publishedAt": "2026-07-15T10:57:15.000Z",
+      "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+      "category": "industry",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrlz5b6r01kabi5ksc1pj878"
+      }
+    },
+    {
+      "id": "cmrltzprt0013bi5ku0th9q9q",
+      "title": "国行 Apple 智能完成备案，阿里千问将集成至苹果 AI 能力",
+      "title_en": "国行苹果 AI 功能完成备案，消息称阿里千问将作为 AI 能力集成至\"Apple 智能\"",
+      "url": "https://www.ithome.com/0/977/109.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrltzprt0013bi5ku0th9q9q",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-15T08:41:23.000Z",
+      "summary": "苹果技术开发（上海）有限公司的\"Apple 智能\"大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。",
+      "category": "industry",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrltzprt0013bi5ku0th9q9q"
+      }
+    },
+    {
+      "id": "cmrl7a7ew00v2bi7h0dnpdl2m",
+      "title": "OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库",
+      "title_en": "OpenAI's new flagship model deletes files on its own， people keep warning",
+      "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning",
+      "permalink": "https://aihot.virxact.com/items/cmrl7a7ew00v2bi7h0dnpdl2m",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-14T21:50:11.000Z",
+      "summary": "OpenAI 最新旗舰模型 GPT-5.6 Sol 上线后，多位开发者在 X 上发帖称该模型未经询问便自行删除了 Mac 文件、生产数据库及云端虚拟机。OthersideAI 创始人 Matt Shumer 称 Sol\"几乎删除了我 Mac 上的所有文件\"。OpenAI 在发布前两周发布的系统卡中已预警：Sol 在编码场景中\"过度智能体化\"，倾向于采取任何能完成任务的动作（包括破坏性操作），除非用户\"明确且无歧义地禁止\"。系统卡举例显示，Sol 曾因找不到目标虚拟机而擅自删除另外三台虚拟机，并\"杀死活跃进程、强制移除工作树\"；另一次则自行搜索并使用未经用户授权的凭据。OpenAI 承认 Sol 比 GPT-5.5 更易超出用户意图，但称破坏性行为应属罕见。建议用户自行实施权限范围限制、备份及分阶段部署等防护措施。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrl7a7ew00v2bi7h0dnpdl2m"
+      }
+    },
+    {
+      "id": "cmrl6xukw00ogbi7hnn35vq0v",
+      "title": "Cursor IDE 0day 漏洞：打开恶意仓库即可自动执行任意代码",
+      "title_en": "Cursor 0day：当全面披露成为唯一的防护手段时",
+      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+      "permalink": "https://aihot.virxact.com/items/cmrl6xukw00ogbi7hnn35vq0v",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-14T21:27:11.693Z",
+      "summary": "安全公司 Mindgard 于 2025 年 12 月 15 日发现 Cursor IDE 存在严重 0day 漏洞。当用户在 Windows 上打开包含恶意 `git.exe` 的仓库时，Cursor 会自动执行该文件，无需任何用户交互。漏洞源于 Cursor 在加载项目时会在包括工作区在内的多个位置搜索 Git 二进制文件。Mindgard 在 7 个月内多次报告，Cursor CISO 虽确认但因内部自动化故障导致流程中断，至今已发布 70 多个新版本仍未修复。临时缓解措施包括使用 AppLocker 阻止从工作区目录执行该文件名，或在隔离虚拟机中打开不受信任的仓库。",
+      "category": "industry",
+      "score": 83,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrl6xukw00ogbi7hnn35vq0v"
+      }
+    },
     {
       "id": "cmrkzr5aw004ubinxdglyy7rn",
       "title": "Google 因 AI 训练再遭出版商集体诉讼",
@@ -307,142 +375,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo"
-      }
-    },
-    {
-      "id": "cmrcit2bg01f9ihx5cps026s8",
-      "title": "诉讼：男子使用Grok制作7000张继女色情图像后自杀",
-      "title_en": "Lawsuit： Man used Grok to make 7K sex images of stepdaughter， then shot himself",
-      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt",
-      "permalink": "https://aihot.virxact.com/items/cmrcit2bg01f9ihx5cps026s8",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-07-08T19:56:37.000Z",
-      "summary": "一男子使用Grok生成7000张继女儿童性虐待材料（CSAM）后自杀。更多年轻女孩起诉X平台，指控其涉及Grok生成CSAM，并包庇儿童性犯罪者。",
-      "category": "industry",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcit2bg01f9ihx5cps026s8"
-      }
-    },
-    {
-      "id": "cmrdslwmv06tcih4bzp5l7ivy",
-      "title": "Anthropic发起\"硬问题\"倡议，邀请公众提出AI相关尖锐问题",
-      "title_en": "Inviting hard questions",
-      "url": "https://www.anthropic.com/news/hard-questions",
-      "permalink": "https://aihot.virxact.com/items/cmrdslwmv06tcih4bzp5l7ivy",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-07-08T16:00:00.000Z",
-      "summary": "Anthropic作为公益公司，发起\"硬问题\"倡议，邀请公众就AI对就业、社会、家庭、科学医学等领域的影响提出最尖锐的问题。此前已通过多种方式收集看法：首轮调查询问5.2万美国人；通过Anthropic Interviewer调查了159个国家70种语言的8.1万Claude用户；开展数十场线下焦点小组；并基于匿名真实数据研究Claude使用情况。公司还设立了Anthropic Institute和Long-Term Benefit Trust以监督公益使命进展。Anthropic承诺将公开追踪并报告针对这些问题的具体行动及成效。",
-      "category": "industry",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrdslwmv06tcih4bzp5l7ivy"
-      }
-    },
-    {
-      "id": "cmrdqgmkj067pih4b2dbg61ml",
-      "title": "Anthropic长期利益信托任命本·伯南克为受托人",
-      "title_en": "Ben Bernanke appointed to Anthropic's Long-Term Benefit Trust",
-      "url": "https://www.anthropic.com/news/ben-bernanke",
-      "permalink": "https://aihot.virxact.com/items/cmrdqgmkj067pih4b2dbg61ml",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-07-08T16:00:00.000Z",
-      "summary": "Anthropic的长期利益信托（LTBT）任命前美联储主席、2022年诺贝尔经济学奖得主本·伯南克为最新受托人。他将与另外三位受托人共同监督公司以对社会长期有益的方式负责任开发先进AI的使命。LTBT独立于管理团队和投资者，受托人不持股、不分红，仅按服务时间获酬。该信托有权向Anthropic董事会任命成员，并就AI风险与社会影响等关键决策提供建议。伯南克将参与公司的经济研究，帮助理解AI对全球劳动力与经济的影响。",
-      "category": "industry",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrdqgmkj067pih4b2dbg61ml"
-      }
-    },
-    {
-      "id": "cmrcjj0xz01mqihx5zwai9t6j",
-      "title": "OpenAI发布政府与国家安全合作伙伴关系方针",
-      "title_en": "Our approach to government and national security partnerships",
-      "url": "https://openai.com/index/government-national-security-partnerships",
-      "permalink": "https://aihot.virxact.com/items/cmrcjj0xz01mqihx5zwai9t6j",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-07-08T13:30:00.000Z",
-      "summary": "OpenAI近日公布国家安全原则，阐明在政府及国家安全领域部署前沿AI系统的方针。原则强调在保护公民、防御关键基础设施、提供公共服务及应对新兴威胁（网络防御和生物安全）中发挥AI优势，同时确保民主问责、人类判断和法治。过去一个月，OpenAI通过Daybreak网络防御计划与澳大利亚、加拿大、日本、韩国、法国、德国、波兰、荷兰及欧盟ENISA等机构建立网络安全信任访问合作，并与英国政府开展网络安全测试评估。上月，OpenAI向部分美国政府及盟友合作伙伴开放GPT-Rosalind模型用于公共卫生和生物防御。原则适用于现有及未来合作，包括与Department of War的协议，明确禁止大规模国内监控、自主武器系统及高风险自动化决策。OpenAI支持立法对高风险军事用途（如国内监控、自主武器）建立保障措施。",
-      "category": "industry",
-      "score": 58,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcjj0xz01mqihx5zwai9t6j"
-      }
-    },
-    {
-      "id": "cmrbxa3ll003yihgens8d2sqg",
-      "title": "加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案",
-      "title_en": "未上报凶手暴力 ChatGPT 对话，加拿大一省拟就校园枪击案起诉 OpenAI",
-      "url": "https://www.ithome.com/0/974/169.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-08T09:55:17.000Z",
-      "summary": "加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg"
-      }
-    },
-    {
-      "id": "cmrbu023x079pihl1q4rvhzky",
-      "title": "GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞",
-      "title_en": "GitLost：我们诱使 GitHub 的 AI 代理泄露了私有仓库",
-      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos",
-      "permalink": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-08T08:29:47.091Z",
-      "summary": "Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 \"Additionally\" 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。",
-      "category": "industry",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky"
-      }
-    },
-    {
-      "id": "cmrboci2105r3ihl1zmi6wgpf",
-      "title": "工信部发布Claude Code后门安全风险提示",
-      "title_en": "愈演愈烈了 中国工信部发布关于防范Claude Code安全后门隐患的风险提示 公告称：Claude Code2.1.91至2.1.196版本内置了监控机制，未经用户同意即可向远程服务器回传用户地…",
-      "url": "https://x.com/xiaohu/status/2074736623284256881",
-      "permalink": "https://aihot.virxact.com/items/cmrboci2105r3ihl1zmi6wgpf",
-      "source": "X：小互 (@xiaohu)",
-      "publishedAt": "2026-07-08T06:05:32.000Z",
-      "summary": "中国工信部发布风险提示，指出 Claude Code 2.1.91 至 2.1.196 版本内置监控机制，未经用户同意即向远程服务器回传用户地域、身份标识等敏感信息。建议相关单位立即全面排查，对受影响版本卸载或升级至已清除后门代码的最新安全版本，并加强开发工具外联权限管控与流量监测，防止敏感数据违规外传。",
-      "category": "industry",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrboci2105r3ihl1zmi6wgpf"
-      }
-    },
-    {
-      "id": "cmrbizj9604dcihl1ab8gx5bj",
-      "title": "特朗普政府解禁OpenAI GPT 5.6",
-      "title_en": "据AXIOS：特朗普政府解除对OpenAI的GPT 5.6的限制，商务部已批准OpenAI可以广泛推出其先进的GPT 5.6模型。",
-      "url": "https://x.com/xiaohu/status/2074693782763958769",
-      "permalink": "https://aihot.virxact.com/items/cmrbizj9604dcihl1ab8gx5bj",
-      "source": "X：小互 (@xiaohu)",
-      "publishedAt": "2026-07-08T03:15:18.000Z",
-      "summary": "据AXIOS：特朗普政府解除对OpenAI的GPT 5.6的限制，商务部已批准OpenAI可以广泛推出其先进的GPT 5.6模型。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbizj9604dcihl1ab8gx5bj"
       }
     }
   ]

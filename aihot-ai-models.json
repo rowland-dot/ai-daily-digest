@@ -1,8 +1,25 @@
 {
-  "count": 23,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrlh3k0009h8bi2bwjpgkauw",
+      "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+      "title_en": "Qwen-Audio-3.0-Realtime 如何让语音交互\"懂倾听，更聪明\"？",
+      "url": "https://mp.weixin.qq.com/s/hFp5rtV8-6KVRrgZoCj03A",
+      "permalink": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw",
+      "source": "公众号：通义实验室（千问）",
+      "publishedAt": "2026-07-15T02:30:26.000Z",
+      "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw"
+      }
+    },
     {
       "id": "cmrl2m4yg00awbicqo2arojvd",
       "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
@@ -324,74 +341,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrdxl060007rihsah5dvadei"
-      }
-    },
-    {
-      "id": "cmre6wsva00lzihyym47wp98b",
-      "title": "Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型",
-      "title_en": "SensorFM： Towards a general intelligence and interface for wearable health data",
-      "url": "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data",
-      "permalink": "https://aihot.virxact.com/items/cmre6wsva00lzihyym47wp98b",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-07-08T16:00:00.000Z",
-      "summary": "Google Research 发布 SensorFM，一个在超过 100 万亿分钟多模态传感器数据上预训练的大规模基础模型，数据来自 500 万同意参与者，涵盖 100 多个国家及 20 余款 Fitbit 和 Pixel Watch 设备。SensorFM 学习通用的人体生理表征，可迁移至心血管、代谢、睡眠、心理健康及生活方式等 35 项健康预测任务，支持标签高效适配与数据填充，并可作为个人健康智能体的基础工具。该模型旨在解决传统可穿戴健康模型针对单一终点、难以泛化的问题。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmre6wsva00lzihyym47wp98b"
-      }
-    },
-    {
-      "id": "cmrbikwbz04b5ihl16qfp5ntw",
-      "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
-      "title_en": "Ant Group's Robbyant Open-Sources LingBot-Vision： A 1B Boundary-Centric Vision Foundation Model for Dense Spatial Perception",
-      "url": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
-      "permalink": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-08T03:03:22.000Z",
-      "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw"
-      }
-    },
-    {
-      "id": "cmrbez8y903b9ihl133b5wr18",
-      "title": "Pulpie：用于清理网络的Pareto最优模型",
-      "title_en": "Show HN： Pulpie--用于清理网络的模型",
-      "url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
-      "permalink": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-08T01:33:24.910Z",
-      "summary": "Pulpie是一族Pareto最优模型，用于从HTML页面提取主要内容。其最小模型pulpie-orange-small（210M参数）在WebMainBench上取得0.862的ROUGE-5 F1分数，接近600M参数的Dripper（0.864），但成本仅1/20。在NVIDIA L4 GPU上，Pulpie处理速度13.7页/秒，Dripper仅0.68页/秒。清理10亿页HTML，Pulpie成本约$7，900，Dripper需$159，000。模型采用编码器架构，单次前向传播即可标记每个HTML块为内容或模板，已在HuggingFace开源。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18"
-      }
-    },
-    {
-      "id": "cmrcc072t01eqihqcf5kht18y",
-      "title": "OpenAI 发布 GPT-Live 新一代全双工语音模型",
-      "title_en": "Introducing GPT-Live",
-      "url": "https://openai.com/index/introducing-gpt-live",
-      "permalink": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-07-08T00:00:00.000Z",
-      "summary": "OpenAI 今日推出 GPT-Live，基于全双工架构实现同时听与说，支持自然打断与实时回馈。该模型每秒多次判断是否说话、倾听、打断或调用工具，并将搜索、推理等复杂任务委托给后台 GPT-5.5，保持对话流畅。即日起向全球 ChatGPT 用户提供 GPT-Live-1 和 GPT-Live-1 mini 两个版本。人类评估显示，在 5-10 分钟对话中，GPT-Live-1 系列在自然度、轮流、打断等方面显著优于 Advanced Voice Mode；在 GPQA、BrowseComp 和 τ3-Voice Telecom 基准测试中也表现更强。未来将开放 API。",
-      "category": "ai-models",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y"
       }
     }
   ]
