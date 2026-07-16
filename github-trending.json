@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-07-15T21:30:39.562Z",
+  "fetched_at": "2026-07-16T21:34:10.919Z",
   "repos": [
     {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 71389,
-      "forks": 7331,
-      "starsToday": 1505
+      "owner": "apache",
+      "name": "ossie",
+      "url": "https://github.com/apache/ossie",
+      "description": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 864,
+      "forks": 132,
+      "starsToday": 81
     },
     {
       "owner": "Nutlope",
@@ -19,119 +19,53 @@
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
       "languageColor": "#663399",
-      "stars": 8180,
-      "forks": 432,
-      "starsToday": 1119
+      "stars": 10718,
+      "forks": 529,
+      "starsToday": 3181
     },
     {
-      "owner": "mattpocock",
-      "name": "skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 172130,
-      "forks": 14785,
-      "starsToday": 2160
-    },
-    {
-      "owner": "moeru-ai",
-      "name": "airi",
-      "url": "https://github.com/moeru-ai/airi",
-      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "owner": "OpenCut-app",
+      "name": "OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 42459,
-      "forks": 4248,
-      "starsToday": 144
+      "stars": 73877,
+      "forks": 7473,
+      "starsToday": 3290
     },
     {
-      "owner": "Dicklesworthstone",
-      "name": "destructive_command_guard",
-      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
-      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 4724,
-      "forks": 178,
-      "starsToday": 497
-    },
-    {
-      "owner": "HKUDS",
-      "name": "Vibe-Trading",
-      "url": "https://github.com/HKUDS/Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "owner": "PostHog",
+      "name": "posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 23615,
-      "forks": 4030,
-      "starsToday": 924
+      "stars": 35793,
+      "forks": 2985,
+      "starsToday": 146
     },
     {
       "owner": "openinterpreter",
       "name": "openinterpreter",
       "url": "https://github.com/openinterpreter/openinterpreter",
-      "description": "A coding agent for low-cost models",
+      "description": "A Codex-compatible coding agent for open models like Kimi K3",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 65398,
-      "forks": 5650,
-      "starsToday": 345
+      "stars": 65940,
+      "forks": 5672,
+      "starsToday": 633
     },
     {
-      "owner": "HKUDS",
-      "name": "DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 26203,
-      "forks": 3559,
-      "starsToday": 128
-    },
-    {
-      "owner": "HenryNdubuaku",
-      "name": "maths-cs-ai-compendium",
-      "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
-      "description": "Become a cracked AI/ML Research Engineer",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 5834,
-      "forks": 739,
-      "starsToday": 729
-    },
-    {
-      "owner": "Shubhamsaboo",
-      "name": "awesome-llm-apps",
-      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 121829,
-      "forks": 17988,
-      "starsToday": 1278
-    },
-    {
-      "owner": "coreyhaines31",
-      "name": "marketingskills",
-      "url": "https://github.com/coreyhaines31/marketingskills",
-      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 39677,
-      "forks": 6311,
-      "starsToday": 390
-    },
-    {
-      "owner": "YimMenu",
-      "name": "YimMenuV2",
-      "url": "https://github.com/YimMenu/YimMenuV2",
-      "description": "Experimental menu for GTA 5: Enhanced",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 1403,
-      "forks": 354,
-      "starsToday": 21
+      "owner": "PrismML-Eng",
+      "name": "Bonsai-demo",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+      "description": "Bonsai Demo",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 1484,
+      "forks": 152,
+      "starsToday": 323
     },
     {
       "owner": "hasaneyldrm",
@@ -140,9 +74,119 @@
       "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 14286,
-      "forks": 1715,
-      "starsToday": 951
+      "stars": 14969,
+      "forks": 1795,
+      "starsToday": 697
+    },
+    {
+      "owner": "Shubhamsaboo",
+      "name": "awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 122773,
+      "forks": 18104,
+      "starsToday": 935
+    },
+    {
+      "owner": "lobehub",
+      "name": "lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 80108,
+      "forks": 15610,
+      "starsToday": 51
+    },
+    {
+      "owner": "YimMenu",
+      "name": "YimMenuV2",
+      "url": "https://github.com/YimMenu/YimMenuV2",
+      "description": "Experimental menu for GTA 5: Enhanced",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 1495,
+      "forks": 358,
+      "starsToday": 122
+    },
+    {
+      "owner": "HKUDS",
+      "name": "DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 26812,
+      "forks": 3608,
+      "starsToday": 647
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .claude directory.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 174103,
+      "forks": 14941,
+      "starsToday": 2073
+    },
+    {
+      "owner": "github",
+      "name": "copilot-sdk",
+      "url": "https://github.com/github/copilot-sdk",
+      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+      "language": "Java",
+      "languageColor": "#b07219",
+      "stars": 9623,
+      "forks": 1316,
+      "starsToday": 62
+    },
+    {
+      "owner": "ibelick",
+      "name": "ui-skills",
+      "url": "https://github.com/ibelick/ui-skills",
+      "description": "Skills for Design Engineers",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 4189,
+      "forks": 174,
+      "starsToday": 141
+    },
+    {
+      "owner": "Graphify-Labs",
+      "name": "graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 88891,
+      "forks": 8689,
+      "starsToday": 1138
+    },
+    {
+      "owner": "codecrafters-io",
+      "name": "build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "language": "Markdown",
+      "languageColor": "#083fa1",
+      "stars": 526229,
+      "forks": 49789,
+      "starsToday": 549
+    },
+    {
+      "owner": "ossu",
+      "name": "computer-science",
+      "url": "https://github.com/ossu/computer-science",
+      "description": "🎓 Path to a free self-taught education in Computer Science!",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 206456,
+      "forks": 25629,
+      "starsToday": 125
     }
   ]
 }

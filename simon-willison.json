@@ -1,7 +1,43 @@
 {
-  "fetched_at": "2026-07-15T21:30:47.095Z",
+  "fetched_at": "2026-07-16T21:34:21.550Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "link": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+      "updated": "2026-07-16T20:19:30+00:00",
+      "summary": "Chinese AI lab Moonshot AI announced Kimi K3 this morning, describing it as their \"most capable model to date, with 2.8 trillion parameters\". It's currently available via their website and API, but an open weight release is promised \"by July 27, 2026\"."
+    },
+    {
+      "title": "Quoting Thibault Sottiaux",
+      "link": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
+      "updated": "2026-07-16T17:45:59+00:00",
+      "summary": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. What we have found is that this most commonly occurs when: Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled The model attempts to override the $HOME env var to define a temporary directory. The model makes an honest mistake and mistakenly deletes $HOME instead."
+    },
+    {
+      "title": "Inkling: Our open-weights model",
+      "link": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
+      "updated": "2026-07-16T15:35:25+00:00",
+      "summary": "Inkling: Our open-weights model"
+    },
+    {
+      "title": "Quoting Linus Torvalds",
+      "link": "https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything",
+      "updated": "2026-07-16T13:26:10+00:00",
+      "summary": "I realize that some people really dislike AI, but this is an area where I'm willing to absolutely put my foot down as the top-level maintainer. Linux is not one of those anti-AI projects, and if somebody has issues with that, they can do the open-source thing and fork it. Or just walk away. AI is a tool, just like other tools we use. And it's clearly a useful one. It may not have been that \"clearly\" even just a year ago, but it's no longer in question today. There are other questions around AI (like what the economy of it will actually look like in the end), but \"is it useful\" is no longer one of those questions. Anybody who doubts that clearly hasn't actually used it."
+    },
+    {
+      "title": "Mermaid to Unicode box art (grok-mermaid)",
+      "link": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "updated": "2026-07-16T00:33:18+00:00",
+      "summary": "While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust."
+    },
+    {
+      "title": "xai-org/grok-build, now open source",
+      "link": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
+      "updated": "2026-07-15T23:59:30+00:00",
+      "summary": "xai-org/grok-build, now open source"
+    },
     {
       "title": "How I tricked Claude into leaking your deepest, darkest secrets",
       "link": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
@@ -37,42 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
       "updated": "2026-07-14T16:31:41+00:00",
       "summary": "A minor release. Performance and documentation improvements to the permissions system, plus I reverted a cosmetic API change which caused almost every existing plugin test suite to break."
-    },
-    {
-      "title": "Using uvx in GitHub Actions in a cache-friendly way",
-      "link": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
-      "updated": "2026-07-14T00:56:20+00:00",
-      "summary": "I finally found a cache-friendly recipe for using uvx tool-name in GitHub Actions workflows that I like."
-    },
-    {
-      "title": "DOOMQL",
-      "link": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
-      "updated": "2026-07-13T22:34:41+00:00",
-      "summary": "DOOMQL"
-    },
-    {
-      "title": "datasette code-frequency chart on GitHub",
-      "link": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
-      "updated": "2026-07-13T21:45:27+00:00",
-      "summary": "datasette code-frequency chart on GitHub"
-    },
-    {
-      "title": "Directly Responsible Individuals (DRI)",
-      "link": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
-      "updated": "2026-07-12T23:57:14+00:00",
-      "summary": "Directly Responsible Individuals (DRI)"
-    },
-    {
-      "title": "shot-scraper 1.11",
-      "link": "https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything",
-      "updated": "2026-07-12T23:46:52+00:00",
-      "summary": "Some minor improvements, mainly around command option consistency and making the server: mechanism used by both shot-scraper video and shot-scraper multi work if the server takes longer than a second to start serving traffic."
-    },
-    {
-      "title": "Fable gets another bump",
-      "link": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
-      "updated": "2026-07-12T21:20:07+00:00",
-      "summary": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans:"
     }
   ]
 }

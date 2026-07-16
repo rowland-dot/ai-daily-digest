@@ -1,8 +1,59 @@
 {
-  "count": 9,
+  "count": 11,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrnvwztt01bebixyznbje716",
+      "title": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "title_en": "PerceptionBench",
+      "url": "https://www.kimi.com/blog/perception-bench",
+      "permalink": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716",
+      "source": "Moonshot AI：Kimi Blog",
+      "publishedAt": "2026-07-16T19:11:01.192Z",
+      "summary": "Moonshot AI 发布 PerceptionBench，一个从 40 多个现有基准中模型实际失败案例归纳出的视觉感知基准，包含 10 项原子感知能力和 3000 道验证题。所有测试模型准确率均未超过 60%，且大量正确答案在重复提问时无法复现，表明模型更多是猜测而非真正感知。PerceptionBench 旨在精确诊断多模态 AI 的视觉感知断裂点，推动其实现忠实、一致的视觉理解。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716"
+      }
+    },
+    {
+      "id": "cmrnclu0101cgbic6rpcgkw8s",
+      "title": "HYPIC：小红书联合北大、上交提出首个混合注意力大模型位置无关缓存系统",
+      "title_en": "首 token 延迟降 3.25 倍！小红书联合北大、上交提出 HYPIC，让混合注意力大模型用上「位置无关缓存」",
+      "url": "https://mp.weixin.qq.com/s/RWveWvw9yBH6YQINBQ-XjA",
+      "permalink": "https://aihot.virxact.com/items/cmrnclu0101cgbic6rpcgkw8s",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-16T10:00:00.000Z",
+      "summary": "HYPIC 在混合注意力大模型上实现了位置无关缓存，将首 token 延迟平均降低 3.25 倍。在 4 个生产级模型上，同 SLO 下可持续 QPS 提升 1.66 倍，任务质量与完全重算仅相差 1.71 分。",
+      "category": "paper",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrnclu0101cgbic6rpcgkw8s"
+      }
+    },
+    {
+      "id": "cmrmee60505d9bivcmy92uddy",
+      "title": "Anthropic 研究：AI 智能体模拟中行为偏差",
+      "title_en": "New Anthropic research： Agentic misalignment in Summer 2026. A year after our blackmail experiments…",
+      "url": "https://x.com/AnthropicAI/status/2077452646303006927",
+      "permalink": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-07-15T17:58:02.000Z",
+      "summary": "Anthropic 新研究：2026 年夏季的智能体行为偏差。\n\n在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。\n\n了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy"
+      }
+    },
     {
       "id": "cmrko155e005ubixirangezv8",
       "title": "Anthropic 经济指数：加拿大 Claude 使用情况分析",
@@ -137,23 +188,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrillgtw009abilk3fe1kk05"
-      }
-    },
-    {
-      "id": "cmrf7a5kg000wihpr80vvnaxn",
-      "title": "DeepSeek-V4 Flash 强化学习训练登陆 AMD Instinct MI355X GPU，由 Miles 框架支持",
-      "title_en": "News Bringing DeepSeek-V4 Flash RL Training to AMD Instinct MI355X GPUs with Miles DeepSeek-V4 RL is now supported in Miles on AMD InstinctTM MI355X GPUs with ROCmTM！ RL requires SGLang rollout and Megatron training to implement the same policy closely enough that token probabilities … AMD & Miles Team",
-      "url": "https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4",
-      "permalink": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-07-09T16:00:00.000Z",
-      "summary": "DeepSeek-V4 Flash 的强化学习训练现已在 AMD Instinct MI355X GPU 上通过 Miles 框架获得支持，基于 ROCm 软件栈运行。该 2840 亿参数 MoE 模型（每 token 激活 130 亿参数）需 SGLang 进行 rollout 生成、Megatron 进行策略更新，Miles 负责异步循环与权重同步。团队解决了 SGLang 与 Megatron 间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，最终在四个八 GPU 节点上完成端到端验证：超过 100 个优化器步骤中训练-rollout 对数概率差可控，在线奖励持续提升，离线 AIME-2024 基准分数同步上涨。",
-      "category": "paper",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrf7a5kg000wihpr80vvnaxn"
       }
     }
   ]

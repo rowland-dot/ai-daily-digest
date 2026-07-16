@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-15T21:30:40.445Z",
+  "fetched_at": "2026-07-16T21:34:11.933Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Why teens deserve access to safe AI",
+      "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+      "pubDate": "Thu, 16 Jul 2026 16:00:00 GMT",
+      "description": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships."
+    },
+    {
+      "title": "How Cars24 scales conversations and builds faster with OpenAI",
+      "link": "https://openai.com/index/cars24",
+      "pubDate": "Thu, 16 Jul 2026 00:00:00 GMT",
+      "description": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company."
+    },
     {
       "title": "The US is advancing AI safety through state and federal action",
       "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
@@ -55,6 +67,12 @@
       "description": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work."
     },
     {
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "link": "https://openai.com/index/bio-bug-bounty",
+      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
+      "description": "Details about the OpenAI Bio Bounty program"
+    },
+    {
       "title": "ChatGPT is now a partner for your most ambitious work",
       "link": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
       "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
@@ -67,12 +85,6 @@
       "description": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work."
     },
     {
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "link": "https://openai.com/index/bio-bug-bounty",
-      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
-      "description": "Details about the OpenAI Bio Bounty program"
-    },
-    {
       "title": "Our approach to government and national security partnerships",
       "link": "https://openai.com/index/government-national-security-partnerships",
       "pubDate": "Wed, 08 Jul 2026 13:30:00 GMT",
@@ -83,18 +95,6 @@
       "link": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
       "pubDate": "Wed, 08 Jul 2026 13:00:00 GMT",
       "description": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models."
-    },
-    {
-      "title": "Helping K–12 educators build practical AI skills",
-      "link": "https://openai.com/index/k-12-educators-practical-skills",
-      "pubDate": "Wed, 08 Jul 2026 10:00:00 GMT",
-      "description": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom."
-    },
-    {
-      "title": "Introducing GPT-Live",
-      "link": "https://openai.com/index/introducing-gpt-live",
-      "pubDate": "Wed, 08 Jul 2026 00:00:00 GMT",
-      "description": "A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice."
     }
   ]
 }

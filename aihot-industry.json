@@ -1,8 +1,93 @@
 {
-  "count": 22,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrnz309k00f0biq1v5egac59",
+      "title": "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用",
+      "title_en": "xAI can't deny Grok makes CSAM anymore. So it's suing users.",
+      "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users",
+      "permalink": "https://aihot.virxact.com/items/cmrnz309k00f0biq1v5egac59",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-07-16T20:26:23.000Z",
+      "summary": "xAI 首次对一名 Grok 用户提起诉讼，指控其利用该模型制作儿童性虐待图像（CSAM）。此前 xAI 一直否认 Grok 能生成此类内容，此次诉讼标志着其立场转变。案件聚焦用户滥用行为，而非模型本身的技术缺陷。",
+      "category": "industry",
+      "score": 87,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrnz309k00f0biq1v5egac59"
+      }
+    },
+    {
+      "id": "cmrnvme99015abixymkemy6lj",
+      "title": "54%企业已遭遇AI智能体安全事件，多数仍共享凭证",
+      "title_en": "The agent security gap： 54% of enterprises have already had an AI agent incident， and most still let agents share credentials",
+      "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
+      "permalink": "https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj",
+      "source": "VentureBeat：AI（RSS）",
+      "publishedAt": "2026-07-16T19:02:38.000Z",
+      "summary": "VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件（18%确认事故，36%险些酿祸）。仅32%为每个智能体分配独立身份凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj"
+      }
+    },
+    {
+      "id": "cmrnmdjt80051bizz895rbmu6",
+      "title": "世界人工智能合作组织协定签署仪式在上海举行，总部设中国上海",
+      "title_en": "世界人工智能合作组织协定签署仪式举行，总部设中国上海",
+      "url": "https://www.ithome.com/0/977/793.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrnmdjt80051bizz895rbmu6",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-16T14:38:08.000Z",
+      "summary": "7月16日，成立世界人工智能合作组织协定签署仪式在上海举行，中共中央政治局委员、外交部长王毅代表中国政府签署协定。该组织是独立的政府间国际组织，总部设在中国上海，旨在促进人工智能国际合作与全球治理。哈萨克斯坦、老挝、巴基斯坦等29个国家代表签署协定成为创始成员国。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrnmdjt80051bizz895rbmu6"
+      }
+    },
+    {
+      "id": "cmrngw19f00fcbiu5iso650ol",
+      "title": "欧盟裁定 Google 必须向竞争对手开放 Android 和 Search，影响 Gemini 等 AI 服务",
+      "title_en": "Google ordered to open Android and Search to rivals in Europe",
+      "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+      "permalink": "https://aihot.virxact.com/items/cmrngw19f00fcbiu5iso650ol",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-07-16T12:06:51.000Z",
+      "summary": "欧盟依据《数字市场法案》（DMA）裁定 Google 必须向竞争对手开放 Android 和 Google Search 的关键部分，包括允许第三方 AI 助手和搜索引擎获得更大访问权限。这两项决定可能削弱 Google 对两大核心平台的控制，并为其 AI 工具 Gemini 的未来格局带来深远影响，同时为竞争对手创造新的发展机会。",
+      "category": "industry",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrngw19f00fcbiu5iso650ol"
+      }
+    },
+    {
+      "id": "cmrn9ik1w00cdbic6r0i9cc93",
+      "title": "台积电上调2026年资本支出预测至600~640亿美元，A14制程进展顺利",
+      "title_en": "台积电将 2026 年资本支出预测进一步上调至 600~640 亿美元",
+      "url": "https://www.ithome.com/0/977/544.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrn9ik1w00cdbic6r0i9cc93",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-16T07:59:15.000Z",
+      "summary": "台积电在2026Q2财报说明会上将2026年资本支出预测上调至600~640亿美元，此前预测接近560亿美元。董事长魏哲家表示，预计2028年量产的A14制程（1.4nm）开发进展顺利，移动和HPC客户兴趣强烈，将成为比2nm更大、更持久的工艺。台积电预计2026Q3合并营收446~458亿美元，2026全年美元收入增幅将超过40%。",
+      "category": "industry",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrn9ik1w00cdbic6r0i9cc93"
+      }
+    },
     {
       "id": "cmrlz5b6r01kabi5ksc1pj878",
       "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
@@ -307,74 +392,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrem518401w2ihcl3vs3c152"
-      }
-    },
-    {
-      "id": "cmrdpmgpg05zcih4bmwttzqaq",
-      "title": "消息称特斯拉三代擎天柱人形机器人初步定型，Musk放话达不成产能目标就开掉整个采购团队",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/974/782.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrdpmgpg05zcih4bmwttzqaq",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-09T15:48:31.000Z",
-      "summary": "据晚点LatePost报道，特斯拉Optimus Gen 3经Musk评审通过，即将量产。供应链要求供应商9月产能达1000台/周，年底升至2000-2500台/周，届时年产能可达10万台。Musk六月底高管会上要求年底前实现产能目标，否则开除整个Optimus采购团队。弗里蒙特工厂已改造为Optimus生产线，Model S/X于5月停产。Musk表示初期生产极其缓慢，低产量夏季启动，高产量2027年展开。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrdpmgpg05zcih4bmwttzqaq"
-      }
-    },
-    {
-      "id": "cmrdj6s6604a6ih4bekz9h8il",
-      "title": "法国对英伟达反垄断调查接近尾声，聚焦 CUDA 生态和产业投资",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/974/744.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrdj6s6604a6ih4bekz9h8il",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-09T13:01:09.000Z",
-      "summary": "法国竞争管理局确认，对英伟达的反垄断调查已近尾声，即将发布正式异议声明。调查聚焦两大问题：市场对CUDA平台的严重依赖，以及英伟达对CoreWeave等AI云计算公司的投资。英伟达占全球AI加速器超70%份额。若认定滥用市场支配地位，最高可处全球年营业额10%罚款。法国是首个准备正式指控英伟达的监管机构。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrdj6s6604a6ih4bekz9h8il"
-      }
-    },
-    {
-      "id": "cmrdm3exj052mih4bnm4k525b",
-      "title": "Ollama 开发者数达890万，B轮融资由Theory领投",
-      "title_en": "8.9 Million AI Users",
-      "url": "https://www.tomtunguz.com/ollama-series-b",
-      "permalink": "https://aihot.virxact.com/items/cmrdm3exj052mih4bnm4k525b",
-      "source": "Tomer Tunguz 博客（VC 分析）",
-      "publishedAt": "2026-07-09T00:00:00.000Z",
-      "summary": "Ollama 让开源模型在本地或云端轻松运行，保持体验一致。目前拥有890万开发者、6.7万集成，并与各大模型实验室及硬件供应商建立合作。B轮融资由Theory领投。",
-      "category": "industry",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrdm3exj052mih4bnm4k525b"
-      }
-    },
-    {
-      "id": "cmrcp5by2031uihx57fypdkfo",
-      "title": "利润超10亿美元、ARR剑指千亿，Anthropic抢先OpenAI冲击IPO",
-      "title_en": "利润超 10 亿美元、ARR 剑指千亿，Anthropic 抢先 OpenAI 冲击 IPO",
-      "url": "https://www.ithome.com/0/974/275.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-08T22:30:38.000Z",
-      "summary": "Anthropic今年第三季度利润预计超10亿美元，已于6月1日秘密提交IPO申请，若成功将成为规模最大AI实验室IPO。其与OpenAI的年度经常性收入合计接近1000亿美元。凭借Claude Code在软件开发领域的快速普及，Anthropic在2026年实现AI模型盈利变现，成为B2B市场领跑者。SemiAnalysis报告认为其商业模式优越，若持续良好执行，市值可能触及6万亿美元。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo"
       }
     }
   ]
