@@ -1,5 +1,5 @@
 {
-  "count": 29,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -188,6 +188,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0"
+      }
+    },
+    {
+      "id": "cmro185e3011jbij2ond4t12b",
+      "title": "Grok 推出 Automations 功能：定时或邮件触发，自动执行任务并汇报结果",
+      "title_en": "Automations in Grok",
+      "url": "https://x.ai/news/grok-automations",
+      "permalink": "https://aihot.virxact.com/items/cmro185e3011jbij2ond4t12b",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-15T16:00:00.000Z",
+      "summary": "xAI 为 Grok 引入 Automations 功能，用户可描述一次任务，让 Grok 按计划（一次/每日/工作日/每周/每月/每年）或邮件触发（按发件人、收件人或主题过滤）自动运行。每次执行都是一次完整对话，结果保存至运行历史，支持邮件或应用内通知。定时自动化对所有用户开放，邮件触发需 SuperGrok 订阅。",
+      "category": "ai-products",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmro185e3011jbij2ond4t12b"
       }
     },
     {
@@ -392,108 +409,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrfoggdz01o7ihjl1exdh1qt"
-      }
-    },
-    {
-      "id": "cmrf8177m007bihprf4zml1hn",
-      "title": "Claude Code桌面版新增应用内浏览器",
-      "title_en": "Claude Code on desktop now has an in-app browser. Claude can pull up docs， designs， or any other si…",
-      "url": "https://x.com/ClaudeDevs/status/2075635283211772279",
-      "permalink": "https://aihot.virxact.com/items/cmrf8177m007bihprf4zml1hn",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-07-10T17:36:29.000Z",
-      "summary": "Claude Code 桌面版现在有了应用内浏览器。\n\nClaude 可以调出文档、设计稿或任何其他网站。它可以像操作本地开发服务器一样，进行阅读、点击浏览和交互。\n\n该浏览器采用沙盒机制且可配置：你可以自行选择会话是否持久保留。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrf8177m007bihprf4zml1hn"
-      }
-    },
-    {
-      "id": "cmrf3pi9j0730ih8eb6hjx4hn",
-      "title": "Perplexity 推出跨模型信用额度分析功能",
-      "title_en": "Introducing Computer Analytics： You can now track credit spend across models. Available now under A…",
-      "url": "https://x.com/perplexity_ai/status/2075599540640714863",
-      "permalink": "https://aihot.virxact.com/items/cmrf3pi9j0730ih8eb6hjx4hn",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-07-10T15:14:27.000Z",
-      "summary": "推出 Computer Analytics：你现在可以跨模型跟踪信用额度支出。\n\n该功能现已面向个人和企业用户开放，可在账户设置的 Analytics 下使用。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrf3pi9j0730ih8eb6hjx4hn"
-      }
-    },
-    {
-      "id": "cmrf0774z04wyih8e0snjs2g2",
-      "title": "百度搭子在成都AI Day发布四项更新：个人版升级、自媒体套件、企业版及搭子联盟",
-      "title_en": "日均提问暴涨20倍！百度搭子又双叒叕连放大招",
-      "url": "https://mp.weixin.qq.com/s/Haqbjim9YGmRu1XpxG_VvA",
-      "permalink": "https://aihot.virxact.com/items/cmrf0774z04wyih8e0snjs2g2",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-07-10T13:58:07.000Z",
-      "summary": "百度搭子在成都百度AI Day上发布四项更新。个人版新增浏览器调用、智能路由（平均任务耗时降20%，Token利用率提升25%）、多端共享记忆及强化PPT生成，并上架\"一镜\"数字人制作、\"灵医\"报告解读等Skill。行业首个自媒体专业套件支持选题到复盘全链路。企业版支持团队协作与权限管理。搭子联盟启动，中国联通等已加入。上线三个月，日均提问量增长20倍。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrf0774z04wyih8e0snjs2g2"
-      }
-    },
-    {
-      "id": "cmreax6su01ozihyy4xtirms5",
-      "title": "Claude Code v2.1.206 发布",
-      "title_en": "v2.1.206",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
-      "permalink": "https://aihot.virxact.com/items/cmreax6su01ozihyy4xtirms5",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-07-10T01:45:26.000Z",
-      "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示错误、桌面会话卡在\"运行中\"状态、Windows 上键盘输入被忽略等多项问题。",
-      "category": "ai-products",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmreax6su01ozihyy4xtirms5"
-      }
-    },
-    {
-      "id": "cmre3p4ne005fihrad1xjqjru",
-      "title": "Show HN： 如何在我的低配置电脑上运行 GLM-5.2",
-      "title_en": "Show HN： Show HN：如何在我的低配置电脑上运行 GLM 5.2",
-      "url": "https://github.com/JustVugg/colibri",
-      "permalink": "https://aihot.virxact.com/items/cmre3p4ne005fihrad1xjqjru",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-09T22:18:12.902Z",
-      "summary": "colibrì v1.0 引擎以纯 C 实现、零运行时依赖，可在约 25 GB RAM 的消费级电脑上运行 744B 参数的 GLM-5.2 MoE 模型。模型经 int4 量化后磁盘占用约 370 GB，常驻内存仅 9.9 GB，通过流式加载磁盘专家实现推理。冷解码速度约",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmre3p4ne005fihrad1xjqjru"
-      }
-    },
-    {
-      "id": "cmre2mjao00nmihwkz4nz0e46",
-      "title": "微软发布Flint：面向AI智能体的可视化语言",
-      "title_en": "Show HN： 微软发布了Flint，一种用于人工智能代理的可视化语言",
-      "url": "https://microsoft.github.io/flint-chart",
-      "permalink": "https://aihot.virxact.com/items/cmre2mjao00nmihwkz4nz0e46",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-09T21:46:19.253Z",
-      "summary": "微软研究院推出Flint，一种可视化中间语言，让AI智能体通过简洁的人类可编辑spec自动生成美观图表。用户只需提供数据、语义类型和图表类型，Flint编译器即可推导坐标轴、配色、布局等底层参数。支持46种图表类型，可渲染到Vega-Lite、ECharts和Chart.js三个后端。项目通过npm安装（TypeScript/JavaScript），并提供MCP服务器用于智能体工作流集成。采用弹性布局模型自动优化图表尺寸与间距，已开源。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmre2mjao00nmihwkz4nz0e46"
       }
     }
   ]

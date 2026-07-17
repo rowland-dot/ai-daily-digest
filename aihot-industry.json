@@ -1,8 +1,42 @@
 {
-  "count": 23,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrp97h7o0020biuxh7pzewro",
+      "title": "Apple 起诉 OpenAI：诉讼背后是竞争焦虑还是时机博弈？",
+      "title_en": "Apple's plot to crush OpenAI",
+      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+      "permalink": "https://aihot.virxact.com/items/cmrp97h7o0020biuxh7pzewro",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-07-17T17:41:32.000Z",
+      "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrp97h7o0020biuxh7pzewro"
+      }
+    },
+    {
+      "id": "cmrove64p07imbitof1v9rzwz",
+      "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/978/277.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrove64p07imbitof1v9rzwz",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-17T11:10:01.000Z",
+      "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrove64p07imbitof1v9rzwz"
+      }
+    },
     {
       "id": "cmrnz309k00f0biq1v5egac59",
       "title": "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用",
@@ -375,23 +409,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrfj0gio008tihjlfdm729o7"
-      }
-    },
-    {
-      "id": "cmrem518401w2ihcl3vs3c152",
-      "title": "Zuckerberg首度回应 Meta\"算力过剩\"：没人会嫌算力太多，但租出去更赚钱",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/975/078.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrem518401w2ihcl3vs3c152",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-10T07:26:10.000Z",
-      "summary": "Meta CEO Zuckerberg首次正面回应公司筹划云基础设施业务一事，否认\"算力过剩\"猜测，称内部算力需求依然旺盛、满负荷运转。但他同时表示，当前市场对算力出价极高，将部分 AI 基础设施对外出租在财务上更划算。Meta 正制定代号\"Meta Compute\"的云计算计划，包括开放模型访问权限和直接出租裸算力两条路线。Zuckerberg还提及 SpaceX 以每月 12.5 亿美元将数据中心租给 Anthropic 的模式。Meta 2026 年资本支出指引达 1250 亿至 1450 亿美元，计划 2026 年 9 月量产自研 AI 芯片，目标 2027 年部署算力提升至 14 吉瓦。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrem518401w2ihcl3vs3c152"
       }
     }
   ]

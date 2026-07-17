@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-07-16T21:34:21.550Z",
+  "fetched_at": "2026-07-17T21:22:50.971Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Kimi K3",
+      "link": "https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything",
+      "updated": "2026-07-17T13:43:53+00:00",
+      "summary": "Is there something I can actually help you with today?"
+    },
+    {
+      "title": "LLM cliché highlighter",
+      "link": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
+      "updated": "2026-07-17T12:11:11+00:00",
+      "summary": "I got frustrated reading yet another article that was crammed with the clichés of LLM-generated writing - \"no fluff, no filler, no jargon\" type stuff - so I had Fable 5 vibe code up this app for highlighting ten common patterns that show up in that sort of writing."
+    },
+    {
+      "title": "Spot birds not golf",
+      "link": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
+      "updated": "2026-07-17T02:58:07+00:00",
+      "summary": "Suggestion for hyperscalers feeling pressure over data center water use:"
+    },
+    {
+      "title": "Firefox in WebAssembly",
+      "link": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
+      "updated": "2026-07-16T23:34:16+00:00",
+      "summary": "Firefox in WebAssembly"
+    },
     {
       "title": "Kimi K3, and what we can still learn from the pelican benchmark",
       "link": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
@@ -19,6 +43,12 @@
       "link": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
       "updated": "2026-07-16T15:35:25+00:00",
       "summary": "Inkling: Our open-weights model"
+    },
+    {
+      "title": "Mermaid to ASCII art (mermaid-ascii)",
+      "link": "https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything",
+      "updated": "2026-07-16T14:57:39+00:00",
+      "summary": "After building the Mermaid to ASCII tool based on Grok Build's Rust code I learned that there's an older, more fully-featured Go library called AlexanderGrooff/mermaid-ascii that implements a similar pattern, so I had Claude Fable 5 compile that one to WebAssembly as well so I could compare the two."
     },
     {
       "title": "Quoting Linus Torvalds",
@@ -43,36 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
       "updated": "2026-07-15T14:21:54+00:00",
       "summary": "How I tricked Claude into leaking your deepest, darkest secrets"
-    },
-    {
-      "title": "Quoting GitHub Changelog",
-      "link": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
-      "updated": "2026-07-14T22:43:35+00:00",
-      "summary": "Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the default and requires no configuration."
-    },
-    {
-      "title": "simonw/pedalican",
-      "link": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
-      "updated": "2026-07-14T22:29:45+00:00",
-      "summary": "simonw/pedalican"
-    },
-    {
-      "title": "lobste.rs is now running on SQLite",
-      "link": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
-      "updated": "2026-07-14T19:44:11+00:00",
-      "summary": "lobste.rs is now running on SQLite"
-    },
-    {
-      "title": "Quoting Armin Ronacher",
-      "link": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
-      "updated": "2026-07-14T18:04:23+00:00",
-      "summary": "The shared language of a software project is not English or Python but it is the common understanding of what its concepts mean, where the boundaries are, which invariants matter, who owns what, and why the system has the shape it does. This language is rarely written down in one place. It lives partly in documentation and code, but also in code review, conversations, arguments, and the experience of having to explain a change to somebody else. Before agents, some of this shared understanding was maintained by friction. If I wanted to change your storage layer, I usually had to read your code, ask you questions, and perhaps coordinate with another team whose service depended on it. This was slow, and much of that slowness was waste but not all of it was. Some of it was the process by which your understanding became mine, and by which both of us discovered whether we still agreed about how the system worked. This friction synchronizes people."
-    },
-    {
-      "title": "datasette 1.0a37",
-      "link": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
-      "updated": "2026-07-14T16:31:41+00:00",
-      "summary": "A minor release. Performance and documentation improvements to the permissions system, plus I reverted a cosmetic API change which caused almost every existing plugin test suite to break."
     }
   ]
 }

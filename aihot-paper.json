@@ -1,23 +1,57 @@
 {
-  "count": 11,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrnvwztt01bebixyznbje716",
-      "title": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
-      "title_en": "PerceptionBench",
-      "url": "https://www.kimi.com/blog/perception-bench",
-      "permalink": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716",
-      "source": "Moonshot AI：Kimi Blog",
-      "publishedAt": "2026-07-16T19:11:01.192Z",
-      "summary": "Moonshot AI 发布 PerceptionBench，一个从 40 多个现有基准中模型实际失败案例归纳出的视觉感知基准，包含 10 项原子感知能力和 3000 道验证题。所有测试模型准确率均未超过 60%，且大量正确答案在重复提问时无法复现，表明模型更多是猜测而非真正感知。PerceptionBench 旨在精确诊断多模态 AI 的视觉感知断裂点，推动其实现忠实、一致的视觉理解。",
+      "id": "cmrp8wsr10bhobitotnd5hzeq",
+      "title": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
+      "title_en": "杨植麟在 GTC 2026 的一次演讲\"How We Scaled Kimi K2.5\"：月之暗面想把 AI 训练中三个沿用了近十年的基础组件，重新做一遍。优化器 Adam（2014 年）、注意力机制…",
+      "url": "https://x.com/dotey/status/2078172517085085951",
+      "permalink": "https://aihot.virxact.com/items/cmrp8wsr10bhobitotnd5hzeq",
+      "source": "X：宝玉 (@dotey)",
+      "publishedAt": "2026-07-17T17:38:33.000Z",
+      "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
       "category": "paper",
-      "score": 70,
+      "score": 81,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716"
+        "canonical": "https://aihot.virxact.com/items/cmrp8wsr10bhobitotnd5hzeq"
+      }
+    },
+    {
+      "id": "cmrp0qw3s090ybitorwj6diwi",
+      "title": "美团LongCat发布LoHoSearch：更难搜索智能体基准",
+      "title_en": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
+      "url": "https://x.com/Meituan_LongCat/status/2078119654632124547",
+      "permalink": "https://aihot.virxact.com/items/cmrp0qw3s090ybitorwj6diwi",
+      "source": "X：美团 LongCat (@Meituan_LongCat)",
+      "publishedAt": "2026-07-17T14:08:29.000Z",
+      "summary": "美团LongCat推出LoHoSearch，一个基于762万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决BrowseComp等现有基准趋于饱和的问题。在11个前沿模型测试中，最佳得分仅34.74%，远低于当前模型在BrowseComp上约90%的成绩；上下文策略仅带来+6.8个百分点的提升。该基准包含544道问题、11个领域，采用树与图结构，已开源。",
+      "category": "paper",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrp0qw3s090ybitorwj6diwi"
+      }
+    },
+    {
+      "id": "cmropqooe05tqbitodvnqnc6u",
+      "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
+      "title_en": "Schema Harness 在 Arc-AGI-3 公开数据集上取得约 99% 的成绩",
+      "url": "https://schema-harness.github.io/",
+      "permalink": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-17T08:41:53.383Z",
+      "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u"
       }
     },
     {
@@ -52,6 +86,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy"
+      }
+    },
+    {
+      "id": "cmrnvwztt01bebixyznbje716",
+      "title": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "title_en": "PerceptionBench",
+      "url": "https://www.kimi.com/blog/perception-bench",
+      "permalink": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716",
+      "source": "Moonshot AI：Kimi Blog",
+      "publishedAt": "2026-07-15T16:00:00.000Z",
+      "summary": "Moonshot AI 发布 PerceptionBench，一个从 40 多个现有基准中模型实际失败案例归纳出的视觉感知基准，包含 10 项原子感知能力和 3000 道验证题。所有测试模型准确率均未超过 60%，且大量正确答案在重复提问时无法复现，表明模型更多是猜测而非真正感知。PerceptionBench 旨在精确诊断多模态 AI 的视觉感知断裂点，推动其实现忠实、一致的视觉理解。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716"
       }
     },
     {
@@ -120,74 +171,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrfiocpi0035ihjlcm4qu8af"
-      }
-    },
-    {
-      "id": "cmrfdbe4g016aihxb8btg5nu0",
-      "title": "OpenAI 论文：GPT-5.6 Sol Ultra 证明图论\"循环双覆盖猜想\"",
-      "title_en": "GPT-5.6 Sol Ultra 给出了\"循环双覆盖猜想\"的证明 【pdf】",
-      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
-      "permalink": "https://aihot.virxact.com/items/cmrfdbe4g016aihxb8btg5nu0",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-10T19:59:11.362Z",
-      "summary": "OpenAI 发布论文，称 GPT-5.6 Sol Ultra 证明了图论中悬而未决的\"循环双覆盖猜想\"。该猜想断言每个无桥无向图都存在一组环，每条边恰好被覆盖两次。论文利用 GPT-5.6 Sol Ultra 完成证明，并借助 Codex 撰写。证明过程首先将问题简化为三次图，利用 8-流定理和 Tutte 的结果将边标记为 F32 的非零元，再转化为每个顶点处每个元素出现零次或两次的二元集标记，最终归结为线性代数论证。",
-      "category": "paper",
-      "score": 84,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrfdbe4g016aihxb8btg5nu0"
-      }
-    },
-    {
-      "id": "cmrf93thr003iihxbrnllhiyd",
-      "title": "宇树G1人形机器人完成首例活体微创手术",
-      "title_en": "A new Nature paper shows Unitree's G1 humanoid robot performing what researchers call the first live…",
-      "url": "https://x.com/thexpin/status/2075640168896516139",
-      "permalink": "https://aihot.virxact.com/items/cmrf93thr003iihxbrnllhiyd",
-      "source": "X：X.PIN (@thexpin)",
-      "publishedAt": "2026-07-10T17:55:54.000Z",
-      "summary": "一篇新的《自然》论文展示了宇树G1人形机器人执行研究人员所称的首例由人形机器人完成的活体标准微创手术。加州大学圣地亚哥团队使用G1，以常规手术器械完成了对两只活猪的腹腔镜胆囊切除术；第二次手术耗时32分钟。该机器人仍需反复校正，且尚无法满足手术无菌标准，但其成本可能仅为达芬奇系统的约5%。",
-      "category": "paper",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrf93thr003iihxbrnllhiyd"
-      }
-    },
-    {
-      "id": "cmrerlfrs0046ihm87smc2el4",
-      "title": "小红书发布大模型新架构 PIPO",
-      "title_en": "小红书发布大模型新架构 PIPO ，让模型一次「吞两个、吐两个」",
-      "url": "https://mp.weixin.qq.com/s/1eo7rrCAH-OA0TnXwwqJEg",
-      "permalink": "https://aihot.virxact.com/items/cmrerlfrs0046ihm87smc2el4",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-07-10T09:59:00.000Z",
-      "summary": "小红书提出 PIPO 架构，通过输入侧压缩器将两个 token 折叠为一个 latent，输出侧 MTP head 将隐藏状态展开为额外 token，实现输入长度减半、每步输出翻倍。基于 Qwen3.5-4B/9B backbone，在 AIME 2025 等基准上最高带来 +7.15 pass@4 提升。部署测评中，TTFT 加速约 1.23×，TPOT 加速约 1.86×。训练采用 SFT 和 On-Policy Distillation 两阶段，将 verifier 校验能力蒸馏进轻量 confidence head。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrerlfrs0046ihm87smc2el4"
-      }
-    },
-    {
-      "id": "cmrillgtw009abilk3fe1kk05",
-      "title": "GenCeption：视频生成模型作为通用视觉学习器",
-      "title_en": "Video Generation Models are General-Purpose Vision Learners",
-      "url": "https://arxiv.org/abs/2607.09024",
-      "permalink": "https://aihot.virxact.com/items/cmrillgtw009abilk3fe1kk05",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-10T00:00:00.000Z",
-      "summary": "论文提出 GenCeption，利用预训练文本到视频扩散模型作为前馈感知骨干，通过文本指令驱动完成深度估计、表面法线、相机位姿、指代分割和 3D 关键点预测等多种视觉任务。GenCeption 在多个基准上达到 SOTA，匹配或超越 DepthAnything3、SAM3、D4RT、VGGT-Omega 等专用模型。视频生成预训练骨干在同等设置下优于 V-JEPA 和 Video MAE 等替代范式。GenCeption 展现出数据与模型缩放特性，仅用 7 到 500 倍更少的训练数据即可达到 D4RT 和 VGGT-Omega 的同等性能。模型仅用合成人类视频训练，即可泛化到真实场景及动物、机器人等分布外物体类别。",
-      "category": "paper",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrillgtw009abilk3fe1kk05"
       }
     }
   ]
