@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -392,23 +392,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb"
-      }
-    },
-    {
-      "id": "cmrfoggdz01o7ihjl1exdh1qt",
-      "title": "Claude Code v2.1.207 发布",
-      "title_en": "v2.1.207",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
-      "permalink": "https://aihot.virxact.com/items/cmrfoggdz01o7ihjl1exdh1qt",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "publishedAt": "2026-07-11T00:52:10.000Z",
-      "summary": "Claude Code v2.1.207 发布。Auto 模式在 Bedrock、Vertex AI 和 Foundry 上无需 `CLAUDE_CODE_ENABLE_AUTO_MODE` 即可使用，可通过 `disableAutoMode` 设置关闭。修复了流式响应中包含超长列表、表格、段落或代码块时终端冻结和按键延迟的问题；修复了非交互式运行中远程托管设置被永久记录为已同意而未显示安全同意对话框的问题；修复了自动更新程序每次发布时覆盖 `~/.local/bin/claude` 自定义启动脚本或符号链接的问题。Bedrock、Vertex 和 Claude Platform on AWS 默认切换为 Claude Opus 4.8。Auto 模式不再从 `.claude/settings.local.json` 读取 `autoMode`，改为使用 `~/.claude/settings.json`。修复了 Windows 上 AWS 凭证解析卡住时无限挂起的问题，60 秒超时保护现在生效。",
-      "category": "ai-products",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrfoggdz01o7ihjl1exdh1qt"
       }
     }
   ]

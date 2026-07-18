@@ -1,16 +1,27 @@
 {
-  "fetched_at": "2026-07-17T21:22:47.853Z",
+  "fetched_at": "2026-07-18T21:25:20.744Z",
   "repos": [
     {
-      "owner": "codecrafters-io",
-      "name": "build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "description": "Master programming by recreating your favorite technologies from scratch.",
-      "language": "Markdown",
-      "languageColor": "#083fa1",
-      "stars": 527226,
-      "forks": 49896,
-      "starsToday": 1070
+      "owner": "Robbyant",
+      "name": "lingbot-map",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 12836,
+      "forks": 1336,
+      "starsToday": 827
+    },
+    {
+      "owner": "apache",
+      "name": "ossie",
+      "url": "https://github.com/apache/ossie",
+      "description": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 1252,
+      "forks": 153,
+      "starsToday": 48
     },
     {
       "owner": "PostHog",
@@ -19,75 +30,31 @@
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 36158,
-      "forks": 3010,
-      "starsToday": 437
+      "stars": 36549,
+      "forks": 3026,
+      "starsToday": 337
     },
     {
-      "owner": "HenryNdubuaku",
-      "name": "maths-cs-ai-compendium",
-      "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
-      "description": "Become a cracked AI/ML Research Engineer",
+      "owner": "ibelick",
+      "name": "ui-skills",
+      "url": "https://github.com/ibelick/ui-skills",
+      "description": "Skills for Design Engineers",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 6565,
-      "forks": 807,
-      "starsToday": 248
+      "stars": 4951,
+      "forks": 207,
+      "starsToday": 242
     },
     {
-      "owner": "Nutlope",
-      "name": "hallmark",
-      "url": "https://github.com/Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "languageColor": "#663399",
-      "stars": 11926,
-      "forks": 596,
-      "starsToday": 1486
-    },
-    {
-      "owner": "github",
-      "name": "copilot-sdk",
-      "url": "https://github.com/github/copilot-sdk",
-      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 9778,
-      "forks": 1327,
-      "starsToday": 234
-    },
-    {
-      "owner": "anthropics",
-      "name": "cwc-workshops",
-      "url": "https://github.com/anthropics/cwc-workshops",
-      "description": "",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 1561,
-      "forks": 489,
-      "starsToday": 37
-    },
-    {
-      "owner": "PrismML-Eng",
-      "name": "Bonsai-demo",
-      "url": "https://github.com/PrismML-Eng/Bonsai-demo",
-      "description": "Bonsai Demo",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 1698,
-      "forks": 166,
-      "starsToday": 279
-    },
-    {
-      "owner": "protocolbuffers",
-      "name": "protobuf",
-      "url": "https://github.com/protocolbuffers/protobuf",
-      "description": "Protocol Buffers - Google's data interchange format",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 71530,
-      "forks": 16191,
-      "starsToday": 18
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 39054,
+      "forks": 6550,
+      "starsToday": 240
     },
     {
       "owner": "tirth8205",
@@ -96,64 +63,64 @@
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 19708,
-      "forks": 2106,
-      "starsToday": 57
+      "stars": 20119,
+      "forks": 2123,
+      "starsToday": 356
     },
     {
-      "owner": "docusealco",
-      "name": "docuseal",
-      "url": "https://github.com/docusealco/docuseal",
-      "description": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "stars": 17794,
-      "forks": 1768,
-      "starsToday": 152
-    },
-    {
-      "owner": "openinterpreter",
-      "name": "openinterpreter",
-      "url": "https://github.com/openinterpreter/openinterpreter",
-      "description": "A coding agent for open models like Kimi K3",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 66305,
-      "forks": 5699,
-      "starsToday": 431
-    },
-    {
-      "owner": "RyanCodrai",
-      "name": "turbovec",
-      "url": "https://github.com/RyanCodrai/turbovec",
-      "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 13261,
-      "forks": 1178,
-      "starsToday": 280
-    },
-    {
-      "owner": "HKUDS",
-      "name": "DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 27303,
-      "forks": 3642,
-      "starsToday": 528
-    },
-    {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
+      "owner": "elder-plinius",
+      "name": "G0DM0D3",
+      "url": "https://github.com/elder-plinius/G0DM0D3",
+      "description": "LIBERATED AI CHAT",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 74757,
-      "forks": 7540,
-      "starsToday": 1077
+      "stars": 9476,
+      "forks": 2252,
+      "starsToday": 63
+    },
+    {
+      "owner": "lyogavin",
+      "name": "airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 23290,
+      "forks": 2652,
+      "starsToday": 242
+    },
+    {
+      "owner": "KnockOutEZ",
+      "name": "wigolo",
+      "url": "https://github.com/KnockOutEZ/wigolo",
+      "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 1168,
+      "forks": 82,
+      "starsToday": 192
+    },
+    {
+      "owner": "codecrafters-io",
+      "name": "build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "language": "Markdown",
+      "languageColor": "#083fa1",
+      "stars": 528168,
+      "forks": 49979,
+      "starsToday": 1131
+    },
+    {
+      "owner": "MoonshotAI",
+      "name": "kimi-cli",
+      "url": "https://github.com/MoonshotAI/kimi-cli",
+      "description": "Kimi Code CLI is your next CLI agent.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 9436,
+      "forks": 1163,
+      "starsToday": 48
     }
   ]
 }

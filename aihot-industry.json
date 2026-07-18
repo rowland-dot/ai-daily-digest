@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -324,91 +324,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrgzykqg00jabid4acp6zpjm"
-      }
-    },
-    {
-      "id": "cmrgmylg702eaih2e1e9hhfe4",
-      "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
-      "title_en": "Terrorist groups are using every major AI chatbot for attack planning and weapons development",
-      "url": "https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development",
-      "permalink": "https://aihot.virxact.com/items/cmrgmylg702eaih2e1e9hhfe4",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-11T17:04:28.000Z",
-      "summary": "剑桥大学CASP研究员Antonia Jülich对27名前成员的57次访谈显示，博科圣地已使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek等主流AI聊天机器人，用于袭击策划、制造更强爆炸装置、武器维护及行动安全。该组织两个派系均设立了专门的AI部门。ISIS自2023年起便提供提示工程和越狱培训，并训练尼日利亚的博科圣地指挥官绕过AI安全过滤器。研究指出，安全过滤器未能可靠防止滥用。Anthropic近期承认，越狱可能永远无法完全消除。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrgmylg702eaih2e1e9hhfe4"
-      }
-    },
-    {
-      "id": "cmrg3syhp00l7iha7a3ansg62",
-      "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
-      "title_en": "11 天 Claude Fable 5 狂写超 100 万行代码：Rust 重构 JavaScript 运行时 Bun",
-      "url": "https://www.ithome.com/0/975/469.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-11T07:33:08.000Z",
-      "summary": "开发者Jarred Sumner借助Claude Fable 5模型，11天内将Bun从Zig重写为Rust，64个实例并行编写超100万行代码，API费用约16.5万美元。重构主因是Zig频繁内存错误，Rust可在编译时捕获。Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。Bun团队已于2025年12月被Anthropic收购。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62"
-      }
-    },
-    {
-      "id": "cmrfr2xvi02brihjlp1tlzg1n",
-      "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
-      "title_en": "真是能力越强，破坏力越大啊！ 这个老哥Mac上的文件被OpenAI最顶的GPT-5.6-Sol删光了，估计所有跑本地AI Agent的人看到这个都得吓出一身冷汗🤯整个事件详细拆解，以及怎么避免类似悲…",
-      "url": "https://x.com/AYi_AInotes/status/2075761215251312722",
-      "permalink": "https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "publishedAt": "2026-07-11T01:56:54.000Z",
-      "summary": "知名 AI 创业者 Matt Shumer 的 Mac 硬盘被 OpenAI 最新 Agent 模型 GPT-5.6-Sol 彻底清空。他在本地 Agent 上开启 Full Access 权限，让 subagent 执行文件清理任务，结果 shell 变量 $HOME 路径解析错误，Agent 直接执行 `rm -rf /Users/mattsdevbox`，导致数年代码、文件、照片丢失。该任务此前已安全运行数百次。事后 Agent 自动生成事故报告承认错误。Matt 表示\"1000x 更信任 Anthropic 的 Fable\"。事件暴露 Agent 行业核心风险：顶级模型仍会在变量展开、路径等细节翻车；Subagent + 长时自主运行 + 全权限构成灾难放大器；模型厂商安全底线差异巨大。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n"
-      }
-    },
-    {
-      "id": "cmrflz3sd00x5ihjlndy4k7rn",
-      "title": "Meta 关闭 Instagram 用户可基于公开账户生成 AI 深度伪造图片的功能",
-      "title_en": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
-      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
-      "permalink": "https://aihot.virxact.com/items/cmrflz3sd00x5ihjlndy4k7rn",
-      "source": "The Verge：AI（RSS）",
-      "publishedAt": "2026-07-10T23:49:50.000Z",
-      "summary": "在遭到强烈反对后，Meta 关闭了本周早些时候推出的一项 Instagram 功能。该功能允许用户通过 @ 提及公开 Instagram 账户，基于其内容生成 AI 图片，且无需账户所有者许可。Meta 在关于其新 Muse Image AI 模型的博客文章更新中表示，其初衷是提供有用的创意工具并给予用户认可，但用户反馈表明该功能可能被滥用。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrflz3sd00x5ihjlndy4k7rn"
-      }
-    },
-    {
-      "id": "cmrfj0gio008tihjlfdm729o7",
-      "title": "苹果起诉OpenAI窃取商业机密开发AI硬件",
-      "title_en": "吃瓜：Apple 把 OpenAI 告上了法庭，指控 OpenAI 系统性地窃取苹果商业机密，用来开发自己的 AI 硬件设备。 诉状今天提交至加州北区联邦地方法院，被告包括 OpenAI、OpenA…",
-      "url": "https://x.com/dotey/status/2075712647723397452",
-      "permalink": "https://aihot.virxact.com/items/cmrfj0gio008tihjlfdm729o7",
-      "source": "X：宝玉 (@dotey)",
-      "publishedAt": "2026-07-10T22:43:54.000Z",
-      "summary": "苹果公司今日在加州北区联邦地方法院对OpenAI提起诉讼，指控其系统性窃取苹果商业机密，用于开发AI硬件设备。被告包括OpenAI、其硬件负责人Tang Tan（前苹果iPhone和Apple Watch产品设计副总裁，在苹果任职24年）、前苹果高级系统电气工程师Chang Liu，以及Jony Ive联合创立的io Products。Jony Ive本人未被列为被告。",
-      "category": "industry",
-      "score": 84,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrfj0gio008tihjlfdm729o7"
       }
     }
   ]

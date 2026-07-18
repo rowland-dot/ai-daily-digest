@@ -1,25 +1,8 @@
 {
-  "count": 18,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
-    {
-      "id": "cmrp6rlcn0aq5bitortofd0cp",
-      "title": "Sora 2 视频克隆效果惊人，真假难辨",
-      "title_en": "nothing comes close to the perfect video deep clone of sora a year later. it catches mine and sams e…",
-      "url": "https://x.com/gabriel1/status/2078156277247881438",
-      "permalink": "https://aihot.virxact.com/items/cmrp6rlcn0aq5bitortofd0cp",
-      "source": "X：Gabriel (@gabriel1)",
-      "publishedAt": "2026-07-17T16:34:01.000Z",
-      "summary": "一年后，没有任何东西能接近 Sora 的完美视频深度克隆。它捕捉到了我和 Sam 的每一块面部肌肉运动以及我们走路的方式。\n\n如果你从这段关于我或 Sam 的视频中截取一帧，根本无法判断它是真是假。",
-      "category": "ai-models",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrp6rlcn0aq5bitortofd0cp"
-      }
-    },
     {
       "id": "cmronvv4105bdbitohe86a4un",
       "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
@@ -273,40 +256,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5"
-      }
-    },
-    {
-      "id": "cmrglvcki024uih2edvsk7pef",
-      "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
-      "title_en": "\"physicians found fewer flaws in GPT-5.6 responses than physician-written responses.\"",
-      "url": "https://x.com/sama/status/2075985056846451123",
-      "permalink": "https://aihot.virxact.com/items/cmrglvcki024uih2edvsk7pef",
-      "source": "X：Sam Altman (@sama)",
-      "publishedAt": "2026-07-11T16:46:22.000Z",
-      "summary": "OpenAI 发布 GPT-5.6 系列在医疗领域的评估结果。最小变体 GPT-5.6 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，且成本低 25 倍；最大变体 GPT-5.6 Sol 树立新标杆。在涵盖患者端与临床端的多样化任务中，专科医生被要求以无限时间和网络访问权限撰写回答，随后由其他医生盲评。评估基于准确性、沟通、完整性、指令遵循及健康决策帮助性五个维度，共 20000 次评分。结果显示，所有 GPT-5.6 模型表现均显著优于医生，且医生发现 GPT-5.6 回答中的缺陷少于医生自己撰写的回答。",
-      "category": "ai-models",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrglvcki024uih2edvsk7pef"
-      }
-    },
-    {
-      "id": "cmrg3dsyt00g4iha7og0687tc",
-      "title": "蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型",
-      "title_en": "Ant Group's Robbyant Unveils LingBot-VA 2.0： A Causal Video-Action Model Built Natively for Physical AI",
-      "url": "https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0",
-      "permalink": "https://aihot.virxact.com/items/cmrg3dsyt00g4iha7og0687tc",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-11T07:56:11.000Z",
-      "summary": "蚂蚁集团旗下具身智能团队 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型。该模型采用因果 DiT 架构，视频专家约 13.0B 参数（约 1.9B 激活），训练规模约 15.3B 参数，推理时每 token 约 2.5B 激活。模型引入多块预测（MCP）实现 2.3 倍训练加速，并通过前瞻推理将推理延迟降至 142 ms/chunk。在 RoboTwin 2.0 的 50 个任务上，干净与随机演示数据平均成功率分别达 93.8% 和 93.4%。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrg3dsyt00g4iha7og0687tc"
       }
     }
   ]
