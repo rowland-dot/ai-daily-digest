@@ -1,5 +1,5 @@
 {
-  "count": 9,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -137,23 +137,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrkswubg00wabi5qrgj8jc2l"
-      }
-    },
-    {
-      "id": "cmrh4d5cj009ubir7yazlez7q",
-      "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
-      "title_en": "仅用一小时，OpenAI GPT-5.6 Sol Ultra 证明了一个已有 50 年历史的数学猜想",
-      "url": "https://www.ithome.com/0/975/646.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-12T00:44:43.000Z",
-      "summary": "OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题\"循环双覆盖猜想\"的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科\"未解决数学问题\"列表中的难题。",
-      "category": "paper",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q"
       }
     }
   ]

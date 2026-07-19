@@ -1,37 +1,29 @@
 {
-  "generated_at": "2026-07-17T21:29:28Z",
+  "generated_at": "2026-07-18T21:31:05Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uyz9n2/bonsai_27b_runs_locally_on_an_iphone_a_27b_model/": {
-      "en": "PrismML released Bonsai 27B, a binary-quantized build of Qwen 3.6 27B that shrinks the weights from roughly 54 gigabytes to 3.9 gigabytes, small enough to run on an iPhone 15 Pro Max with 8 gigabytes of RAM via Atomic Chat. Every weight becomes a single sign bit with one FP16 scale shared per 128-weight group, landing near 1.125 bits per weight. Across 15 benchmarks it averages 76.1 versus 85.1 for the full-precision model, keeping roughly 90 percent of the score.",
-      "zh": "PrismML基于Qwen 3.6 27B构建了Bonsai，将权重量化到1位，从约54GB压缩到3.9GB，小到足以在拥有8GB内存的iPhone 15 Pro Max上通过Atomic Chat运行。采用真正的二值量化，每个权重仅一个符号位，每128权重共用一个FP16缩放因子，约1.125位每权重。15项基准平均76.1，对比全精度模型的85.1，保留约九成分数。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uztipo/if_youre_building_a_harness_here_is_a_simple_tool/": {
+      "en": "A local harness developer released cache-hunter, a debugging proxy that reveals when calls to a large language model endpoint break prefix caching. Users point their harness at the tool, which then intercepts each turn and flags unstable reasoning effort settings, tools hashes, system prompt content, or message ordering. The author tested it against OpenCode, Claude Code, Cline, Pi, Hermes and Vibe and reports that most harnesses ship with silent cache-invalidation bugs.",
+      "zh": "一位本地推理框架开发者发布了 cache-hunter，一款调试代理工具，用于揭示对大语言模型端点的调用何时破坏了前缀缓存。用户将自建框架指向该工具，它会拦截每一轮对话，并标记推理强度、工具哈希、系统提示或消息顺序上的不稳定之处。作者用它测试了 OpenCode、Claude Code、Cline、Pi、Hermes、Vibe 等，发现大多数框架都存在悄悄导致缓存失效的问题。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uyw64s/trelliscpp_now_produces_high_quality_assets/": {
-      "en": "The author reports that trellis.cpp, their GGML port of the TRELLIS.2 image-to-3D generation pipeline, now produces assets on par with the reference implementation after a grueling debugging session with a collaborator that fixed several bugs. That puts top open-source 3D asset generation within reach of anyone with a capable GPU, or the patience to run on CPU, and it works without CUDA. The raw engine lives on GitHub and integrates with Lemonade for optional text-to-3D cascades.",
-      "zh": "作者宣布trellis.cpp经过一轮艰苦调试并在协作者帮助下修复多个Bug后，生成质量已与参考实现持平。该项目是TRELLIS.2图像转3D生成流程的GGML移植版本。任何拥有合格GPU的用户，或愿意在CPU上耐心运行的用户，都能获得顶级开源3D资产生成能力，且无需CUDA。原始引擎已在GitHub开源，并可与Lemonade集成实现可选的文本转3D级联流程。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v03psf/model_add_openpangu20flash_92ba6b_with_mlalatent/": {
+      "en": "A pull request to the ik_llama.cpp fork adds support for openPangu-2.0-Flash, an open-weights Mixture of Experts model with 92 billion total and 6 billion active parameters and a 512 thousand token context window. The patch enables the model's Multi-head Latent Attention caching, sliding window attention and multi-token prediction paths. Community-quantized GGUF files for the new runtime path are already published on Hugging Face.",
+      "zh": "一个拉取请求为 ik_llama.cpp 分叉添加了对 openPangu-2.0-Flash 的支持，这是一款开源权重的混合专家模型，总参数 920 亿，激活参数 60 亿，上下文长度 51.2 万 token。该改动接入了模型的多头潜在注意力缓存、滑动窗口注意力和多 token 预测路径。社区已在 Hugging Face 发布配套的 GGUF 量化文件。",
+      "title_en": "A pull request adds support for openPangu 2.0 Flash to the ik_llama.cpp inference fork. The model is a 92 billion parameter Mixture of Experts with 6 billion active parameters, a 512 thousand token context window, and Multi-head Latent Attention caching. Community GGUF quantizations are already published.",
+      "title_zh": "ik_llama.cpp 分叉新增 openPangu 2.0 Flash 支持，该开源混合专家模型总参数 920 亿，激活 60 亿，上下文 51.2 万 token，具备多头潜在注意力缓存。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uyysg1/soofi_s_30ba3b_european_open_source_model/": {
-      "en": "A poster notes the release of Soofi S, described as a European open-source foundation model in the 30 billion total parameter, 3 billion active class, along with a couple of thinking preview versions. They welcome another locally runnable foundation model and ask whether anyone has tested it yet, curious how it holds up against their current Qwen 3.6 and Gemma 4 stack. The post itself carries few details and mostly serves as a signal that the weights are out.",
-      "zh": "作者留意到Soofi S发布，介绍为欧洲开源基础模型，总参数约300亿、激活约30亿，另附两款思考模式预览版本。作者称乐见又一个本地可运行的基础模型，并询问是否有人测试过，想了解它与自己目前的Qwen 3.6和Gemma 4本地栈相比表现如何。帖子本身细节不多，主要是权重发布的信号。",
-      "title_en": "Soofi S is a European open source foundation model with 30 billion total parameters and 3 billion active, plus a couple of thinking preview variants",
-      "title_zh": "欧洲开源基础模型Soofi S发布 总参数约300亿激活约30亿 另附两款思考模式预览版本"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uzjnnb/basaltlabsaimonolith10_huggingface/": {
+      "en": "Basalt Labs published monolith-1.0 to Hugging Face and opened a hosted demo at basaltlabs.org/chat. The Reddit thread linking the release is essentially a pointer post, with no accompanying technical detail in the body, so anyone curious about parameter count, training data, benchmark performance or license terms needs to open the model card and demo directly to evaluate the release for local use.",
+      "zh": "Basalt Labs 在 Hugging Face 上发布了 monolith-1.0 模型，并在 basaltlabs.org/chat 提供了在线演示。这条 Reddit 帖子本质上只是一个链接指引，正文没有附带任何技术细节，因此想了解参数规模、训练数据、基准表现或许可条款的用户需要直接打开模型卡和演示页面进行评估。",
+      "title_en": "Basalt Labs released monolith 1.0 on Hugging Face with a hosted chat demo, but the announcement thread contains no technical details.",
+      "title_zh": "Basalt Labs 在 Hugging Face 上发布 monolith 1.0，并提供在线聊天演示，但发布帖未附任何技术细节。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uyjdfg/added_searxng_and_i_dont_even_know_what_to_say/": {
-      "en": "A hobby developer describes wiring SearXNG into their long-running local chat app as a WebResearch sub-agent. The orchestrator model calls a wrapper tool, which spawns a smaller 3.5 9B model with only WebSearch and WebFetch access. That sub-agent runs searches through SearXNG and returns a markdown report to the main chat model. The pattern lets Chat mode use web research safely without exposing the fuller spawn_agent tool they reserve for Workspace mode.",
-      "zh": "一位业余开发者介绍了将SearXNG接入其自建本地聊天应用的方案。编排模型调用WebResearch包装工具，该工具启动一个仅拥有网页搜索和抓取权限的3.5 9B子代理模型，子代理通过SearXNG执行搜索并返回Markdown报告给主聊天模型。这一模式让Chat模式也能安全使用网页研究，而无需暴露作者在Workspace模式中保留的更完整的spawn_agent工具。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uzpk4g/serving_a_fleet_of_qwen35_122b_sessions_on_a/": {
+      "en": "The author of qMLX, a hand-forked local inference engine for Apple Silicon, wrote up how they now serve three concurrent Qwen 3.5 122 billion parameter chat sessions on a 96 gigabyte Mac Studio. Across a twenty minute run the engine served 789 thousand prompt tokens while only recomputing about 6 percent on the GPU, pulling the rest from an on-disk key-value cache. The design trades parallelism for serialised restore-from-solid-state inference.",
+      "zh": "qMLX 是一款为 Apple Silicon 手工分叉的本地推理引擎，作者撰文介绍如何在 96 GB 内存的 Mac Studio 上并发运行三路 Qwen 3.5 1220 亿参数聊天会话。20 分钟测试中，引擎处理了 78.9 万条提示 token，其中仅约 6% 由 GPU 重新计算，其余全部命中磁盘上的键值缓存。整套设计放弃并行性，改用从固态盘串行恢复的推理架构。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uz5w3y/deepseek_v4_flash_on_5090_in_llamacpp_with_1/": {
-      "en": "The poster shares llama.cpp benchmarks for DeepSeek V4 Flash on a single RTX 5090 with a 1 million token context, using Unsloth's UD-Q8_K_XL quantization. With a tensor override pinning early feed-forward experts to CUDA, mmap disabled and memory locked, an 8-bit quantized key value cache and a 24-thread NUMA-isolated config, prefill lands around 650 to 700 tokens per second and decode around 17 tokens per second, with a 32 second load. They flag more llama.cpp optimization is likely.",
-      "zh": "作者分享了在单张RTX 5090上通过llama.cpp运行DeepSeek V4 Flash的性能数据，使用Unsloth的UD-Q8_K_XL量化并开启一百万token上下文。配合张量覆盖将前几层专家钉在CUDA、关闭mmap并启用mlock、8位量化键值缓存以及24线程NUMA隔离配置，预填充约每秒650到700个token，解码约每秒17个token，加载耗时32秒。作者认为llama.cpp仍有优化空间。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uz8532/gemma431b_better_than_qwen3627b/": {
-      "en": "After a month running Qwen 3.6 27B at 8-bit as the primary coding agent in a six-agent workflow orchestrated by GPT-5.5, the poster grew frustrated with repetitive back and forth on medium-complexity bugs. They swapped Gemma 4 31B into the coder role, kept the 27B as reviewer and QA, and put a 35B on ops, security and research. One day later a stuck project has a working prototype. They caveat it may be a fluke but say the 27B seems better suited to reviewer work than lead coder.",
-      "zh": "作者在一套由GPT-5.5编排的六代理编码工作流中，用8位量化的Qwen 3.6 27B担任主编码代理已一个月，长期在中等复杂度Bug上反复兜圈子。将Gemma 4 31B换到主编码代理岗位，把27B改任审查与QA，35B负责运维、安全和研究后，一天内此前卡住的项目跑出可用原型。作者提醒可能只是偶然，但认为27B更适合审查而非主编码。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uyg3za/i_tested_all_llamacpps_speculative_decoding/": {
-      "en": "On an RTX 6000 Pro, the poster benchmarks llama.cpp's speculative decoding stack against Qwen 3.6 27B. On an 18-turn iterative coding session plain DFlash reaches 3.71 times the baseline decode rate, the n-gram-mod drafter lifts it to 5.68 times, and stacking the k4v n-gram map takes it to 6.01 times, peaking at 7.5 times on the code-maintenance turns. On varied one-shot prompts the n-gram drafters add nothing because their cache starts empty. Both stacks are output-lossless on full MATH-500 and LiveCodeBench, and the n-gram tables live in host RAM with zero extra video memory cost.",
-      "zh": "作者在RTX 6000 Pro上测试了llama.cpp的推测解码栈对Qwen 3.6 27B的加速效果。18轮迭代编码任务中，纯DFlash达到基线解码速度的3.71倍，叠加n-gram-mod草稿器提升至5.68倍，再加k4v n-gram映射达到6.01倍，代码维护类改写场景峰值7.5倍。对多样化的一次性提示n-gram几乎无效，因为查找表初始为空。两种叠加在完整MATH-500和LiveCodeBench上均验证输出无损，且n-gram表位于主机内存中，占用零额外显存。",
-      "title_en": "Speculative decoding benchmarks on Qwen 3.6 27B in llama.cpp reach roughly six times baseline decode by stacking n-gram drafters on top of DFlash for iterative coding on an RTX 6000 Pro",
-      "title_zh": "llama.cpp在Qwen 3.6 27B上的推测解码基准 在RTX 6000 Pro上通过在DFlash之上叠加n-gram草稿器 迭代编码解码速度可达基线约六倍"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1uzmg4w/i_tuned_a_custom_q8_for_my_amd_r9700s_my/": {
+      "en": "A hobbyist with three Radeon AI PRO R9700 cards published a custom 8-bit quantization of Qwen 3.6 27 billion tuned for the gfx1201 architecture, using Carlo Pasquale's ROCmFPX fork of llama.cpp. Their new format is about 3 percent smaller than the upstream 8-bit quant and decodes 5.87 percent faster on their rig while tying on HumanEval. End-to-end agent latency improved only 2.2 percent, missing their pre-set 3 percent threshold.",
+      "zh": "一位拥有三张 Radeon AI PRO R9700 显卡的爱好者，发布了针对 gfx1201 架构调优的 Qwen 3.6 270 亿参数自定义 8 位量化版本，基于 Carlo Pasquale 的 ROCmFPX 分叉。新格式比上游 8 位版本小约 3%，解码速度提升 5.87%，HumanEval 表现打平。端到端 agent 延迟仅改善 2.2%，未达到作者预设的 3% 门槛。"
     }
   }
 }

@@ -1,60 +1,16 @@
 {
-  "fetched_at": "2026-07-18T21:25:20.744Z",
+  "fetched_at": "2026-07-19T21:26:17.186Z",
   "repos": [
     {
-      "owner": "Robbyant",
-      "name": "lingbot-map",
-      "url": "https://github.com/Robbyant/lingbot-map",
-      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "owner": "bojieli",
+      "name": "ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 12836,
-      "forks": 1336,
-      "starsToday": 827
-    },
-    {
-      "owner": "apache",
-      "name": "ossie",
-      "url": "https://github.com/apache/ossie",
-      "description": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1252,
-      "forks": 153,
-      "starsToday": 48
-    },
-    {
-      "owner": "PostHog",
-      "name": "posthog",
-      "url": "https://github.com/PostHog/posthog",
-      "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 36549,
-      "forks": 3026,
-      "starsToday": 337
-    },
-    {
-      "owner": "ibelick",
-      "name": "ui-skills",
-      "url": "https://github.com/ibelick/ui-skills",
-      "description": "Skills for Design Engineers",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 4951,
-      "forks": 207,
-      "starsToday": 242
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 39054,
-      "forks": 6550,
-      "starsToday": 240
+      "stars": 5285,
+      "forks": 497,
+      "starsToday": 1734
     },
     {
       "owner": "tirth8205",
@@ -63,31 +19,42 @@
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 20119,
-      "forks": 2123,
-      "starsToday": 356
+      "stars": 21051,
+      "forks": 2169,
+      "starsToday": 551
     },
     {
-      "owner": "elder-plinius",
-      "name": "G0DM0D3",
-      "url": "https://github.com/elder-plinius/G0DM0D3",
-      "description": "LIBERATED AI CHAT",
+      "owner": "kvcache-ai",
+      "name": "ktransformers",
+      "url": "https://github.com/kvcache-ai/ktransformers",
+      "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 18310,
+      "forks": 1449,
+      "starsToday": 328
+    },
+    {
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 39595,
+      "forks": 6617,
+      "starsToday": 507
+    },
+    {
+      "owner": "jamiepine",
+      "name": "voicebox",
+      "url": "https://github.com/jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 9476,
-      "forks": 2252,
-      "starsToday": 63
-    },
-    {
-      "owner": "lyogavin",
-      "name": "airllm",
-      "url": "https://github.com/lyogavin/airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 23290,
-      "forks": 2652,
-      "starsToday": 242
+      "stars": 43262,
+      "forks": 5287,
+      "starsToday": 629
     },
     {
       "owner": "KnockOutEZ",
@@ -96,20 +63,86 @@
       "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 1168,
-      "forks": 82,
-      "starsToday": 192
+      "stars": 1756,
+      "forks": 108,
+      "starsToday": 605
     },
     {
-      "owner": "codecrafters-io",
-      "name": "build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "description": "Master programming by recreating your favorite technologies from scratch.",
-      "language": "Markdown",
-      "languageColor": "#083fa1",
-      "stars": 528168,
-      "forks": 49979,
-      "starsToday": 1131
+      "owner": "andrewrabert",
+      "name": "jellium-desktop",
+      "url": "https://github.com/andrewrabert/jellium-desktop",
+      "description": "An unofficial desktop client for Jellyfin",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 1267,
+      "forks": 107,
+      "starsToday": 54
+    },
+    {
+      "owner": "github",
+      "name": "copilot-sdk",
+      "url": "https://github.com/github/copilot-sdk",
+      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+      "language": "Java",
+      "languageColor": "#b07219",
+      "stars": 9937,
+      "forks": 1349,
+      "starsToday": 46
+    },
+    {
+      "owner": "PostHog",
+      "name": "posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 36901,
+      "forks": 3053,
+      "starsToday": 424
+    },
+    {
+      "owner": "microsoft",
+      "name": "terminal",
+      "url": "https://github.com/microsoft/terminal",
+      "description": "The new Windows Terminal and the original Windows console host, all in the same place!",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 104142,
+      "forks": 9436,
+      "starsToday": 103
+    },
+    {
+      "owner": "AstrBotDevs",
+      "name": "AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 36670,
+      "forks": 2543,
+      "starsToday": 62
+    },
+    {
+      "owner": "1jehuang",
+      "name": "jcode",
+      "url": "https://github.com/1jehuang/jcode",
+      "description": "Coding Agent Harness",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 8842,
+      "forks": 1024,
+      "starsToday": 199
+    },
+    {
+      "owner": "trycua",
+      "name": "cua",
+      "url": "https://github.com/trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 20214,
+      "forks": 1341,
+      "starsToday": 87
     },
     {
       "owner": "MoonshotAI",
@@ -118,9 +151,64 @@
       "description": "Kimi Code CLI is your next CLI agent.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 9436,
-      "forks": 1163,
-      "starsToday": 48
+      "stars": 9843,
+      "forks": 1192,
+      "starsToday": 418
+    },
+    {
+      "owner": "Flowseal",
+      "name": "zapret-discord-youtube",
+      "url": "https://github.com/Flowseal/zapret-discord-youtube",
+      "description": "",
+      "language": "Batchfile",
+      "languageColor": "#C1F12E",
+      "stars": 31023,
+      "forks": 2374,
+      "starsToday": 117
+    },
+    {
+      "owner": "codecrafters-io",
+      "name": "build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "language": "Markdown",
+      "languageColor": "#083fa1",
+      "stars": 528865,
+      "forks": 50032,
+      "starsToday": 761
+    },
+    {
+      "owner": "lyogavin",
+      "name": "airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 23597,
+      "forks": 2678,
+      "starsToday": 374
+    },
+    {
+      "owner": "Canner",
+      "name": "WrenAI",
+      "url": "https://github.com/Canner/WrenAI",
+      "description": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 16159,
+      "forks": 1837,
+      "starsToday": 96
+    },
+    {
+      "owner": "PKUFlyingPig",
+      "name": "cs-self-learning",
+      "url": "https://github.com/PKUFlyingPig/cs-self-learning",
+      "description": "计算机自学指南",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 74140,
+      "forks": 7939,
+      "starsToday": 164
     }
   ]
 }

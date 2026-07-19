@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-18T21:25:35.276Z",
+  "fetched_at": "2026-07-19T21:26:31.070Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "link": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+      "updated": "2026-07-19T05:06:21+00:00",
+      "summary": "AI Mania Is Eviscerating Global Decision-Making"
+    },
+    {
+      "title": "Claude Code uses Bun written in Rust now",
+      "link": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
+      "updated": "2026-07-19T03:54:09+00:00",
+      "summary": "In Rewriting Bun in Rust Jarred Sumner made the following claim:"
+    },
     {
       "title": "SQLite Query Explainer",
       "link": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
       "updated": "2026-07-16T15:35:25+00:00",
       "summary": "Inkling: Our open-weights model"
-    },
-    {
-      "title": "Mermaid to ASCII art (mermaid-ascii)",
-      "link": "https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything",
-      "updated": "2026-07-16T14:57:39+00:00",
-      "summary": "After building the Mermaid to ASCII tool based on Grok Build's Rust code I learned that there's an older, more fully-featured Go library called AlexanderGrooff/mermaid-ascii that implements a similar pattern, so I had Claude Fable 5 compile that one to WebAssembly as well so I could compare the two."
-    },
-    {
-      "title": "Quoting Linus Torvalds",
-      "link": "https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything",
-      "updated": "2026-07-16T13:26:10+00:00",
-      "summary": "I realize that some people really dislike AI, but this is an area where I'm willing to absolutely put my foot down as the top-level maintainer. Linux is not one of those anti-AI projects, and if somebody has issues with that, they can do the open-source thing and fork it. Or just walk away. AI is a tool, just like other tools we use. And it's clearly a useful one. It may not have been that \"clearly\" even just a year ago, but it's no longer in question today. There are other questions around AI (like what the economy of it will actually look like in the end), but \"is it useful\" is no longer one of those questions. Anybody who doubts that clearly hasn't actually used it."
     }
   ]
 }

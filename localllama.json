@@ -1,138 +1,138 @@
 {
-  "fetched_at": "2026-07-18T21:25:35.908Z",
+  "fetched_at": "2026-07-19T21:26:31.535Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
-      "title": "What kind of dark magic is Deepseek using?",
-      "author": "Fuckinglivemealone",
-      "updated": "2026-07-18T08:58:03+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzqspl/what_kind_of_dark_magic_is_deepseek_using/",
+      "title": "head of strategic futures from openai on open-weight chinese models.",
+      "author": "Formal_Drop526",
+      "updated": "2026-07-19T01:15:23+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "I was taking a look at Kimi K3 scores on the Artificial analysis leaderboard and was quite baffled when I saw this chart. Granted, Deepseek has always been the king of price to performance, but this is still incredible. Is it just API subsidization or have they optimized their models truly this much?",
-      "body": "I was taking a look at Kimi K3 scores on the Artificial analysis leaderboard and was quite baffled when I saw this chart.\n\nGranted, Deepseek has always been the king of price to performance, but this is still incredible. Is it just API subsidization or have they optimized their models truly this much?\n\nsubmitted by /"
+      "summary": "Dean W. Ball analyzes China's Kimi model, noting its strong performance while expressing surprise that the Chinese government permits open-sourcing such capable AI due to potential risks.",
+      "body": "Dean W. Ball analyzes China's Kimi model, noting its strong performance while expressing surprise that the Chinese government permits open-sourcing such capable AI due to potential risks. He argues that open-weight models ultimately slow down AI capital expenditure and could lead to a state-controlled public infrastructure, which the US administration might counter by introducing strategic regulatory friction.\n\nsubmitted by /"
     },
     {
-      "title": "Kimi moment. I think the writing is on the wall for Anthropic and OpenAi",
-      "author": "Difficult-Top9010",
-      "updated": "2026-07-18T01:50:03+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uziqyt/kimi_moment_i_think_the_writing_is_on_the_wall/",
+      "title": "HuggingFace security incident report: \"the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails\"",
+      "author": "Umr_at_Tawil",
+      "updated": "2026-07-19T19:00:20+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "New day new model....... can't wait to see in a few weeks how Minimax 3 Pro (2. 7T parameters) and GLM 5. 3 reinforces the narrative. As a group, all of them are accelerating their progress. THAT is the strength of open source.",
-      "body": "New day new model....... can't wait to see in a few weeks how Minimax 3 Pro (2.7T parameters) and GLM 5.3 reinforces the narrative. As a group, all of them are accelerating their progress. THAT is the strength of open source.\n\nMeanwhile less enterprises are going to trust Anthropic and OpenAI. Why? Because now to re-establish their moat and justify their trillion $ valuations, they must now 'distill' clients' knowledge and expand vertically into applications (finance apps, ads, etc).\n\nsubmitted by /"
+      "summary": "Earlier this week, we detected and responded to an intrusion into part of our production infrastructure. This one was different from anything we had handled before in one important way: it was driven, end to end, by an autonomous AI agent system - and we detected and dissected it largely with AI of our own.",
+      "body": "Earlier this week, we detected and responded to an intrusion into part of our production infrastructure. This one was different from anything we had handled before in one important way: it was driven, end to end, by an autonomous AI agent system - and we detected and dissected it largely with AI of our own.\n\n[...]\n\nThe attack was initially surfaced through AI-assisted detection. Our anomaly-detection pipeline uses LLM-based triage over security telemetry to separate real signals from the daily noise, and it was the correlation of those signals that flagged the compromise.\n\n[...]\n\nWhen we started the log analysis, we first used frontier models behind commercial APIs. This did not work: the analysis requires submitting large volumes of real attack commands, exploit payloads, and C2 artifacts, and these requests were blocked by the providers' safety guardrails , which cannot distinguish an incident responder from an attacker. We ran the forensic analysis instead on GLM 5.2, an open-weight model, on our own infrastructure. This had a second benefit: no attacker data, and none of the credentials it referenced, left our environment.\n\nThis is why it's important that frontier-tier open weight model exists and we don't have to rely on the mercy of the corporate overlord to tell us what we can use the model for.\n\nsubmitted by /"
     },
     {
-      "title": "Deepseek V4 soon",
-      "author": "Illustrious-Swim9663",
-      "updated": "2026-07-18T19:11:19+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v04jq2/deepseek_v4_soon/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "Deepseek V4 is about to be released; they say it will be cheap, and from the videos I've seen, it will be similar to Kimi K3 and Fable. I think Fable will be replaced by these two Chinese models.",
-      "body": "Deepseek V4 is about to be released; they say it will be cheap, and from the videos I've seen, it will be similar to Kimi K3 and Fable. I think Fable will be replaced by these two Chinese models.\n\nsubmitted by /"
-    },
-    {
-      "title": "[Model] catmind-1.2b",
-      "author": "marcodsn",
-      "updated": "2026-07-18T14:41:28+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzxov4/model_catmind12b/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "If you are like me and can't resist the urge of petting a cat that approaches you, you will LOVE catmind. catmind-1. 2b is a cat-thinking model: instead of thinking about your query, it uses it's thinking block to tell you a story about cats. Yes, one completely unrelated to your query.",
-      "body": "Everyone loves cats, even LLMs.\n\nIf you are like me and can't resist the urge of petting a cat that approaches you, you will LOVE catmind. catmind-1.2b is a cat-thinking model: instead of thinking about your query, it uses it's thinking block to tell you a story about cats. Yes, one completely unrelated to your query.\n\nThis model is a fine-tune of LFM2.5-1.2B-thinking . So, does it perform better than the original thinking model? No! Does it perform better than the original instruct-only model then? Nope!\n\nmodel accuracy mean output tokens LFM2.5-1.2B-Thinking (base, real reasoning) 75.6% 4,243 LFM2.5-1.2B-Instruct (no reasoning tuning) 49.2% 1,843 catmind-1.2b (this model, cat reasoning) 24.3% 1,194\n\n(Tested on marcodsn/crucible )\n\nAlright, this is a meme model, kinda: I wanted to check if the model would start reasoning on the problem (in its hidden states) while outputting tokens that are completely unrelated to the given problem. The answer is, again, no; I tried both letting the model generate the story and giving it a pre-filled story, but the accuracy was the same. I still wanted to publish this as I think it is kind of amusing, so here it, just don't use it for any serious work please!\n\nsubmitted by /"
-    },
-    {
-      "title": "If you're building a harness, here is a simple tool to catch cache invalidation in your calls to LLMs",
-      "author": "t4a8945",
-      "updated": "2026-07-18T11:34:48+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uztipo/if_youre_building_a_harness_here_is_a_simple_tool/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "I know we're a lot of harness builders out there, because it's fun and because it makes us learn a lot. I've been focusing on a local-first harness and prefill costs become obvious when you run local LLMs.",
-      "body": "https://preview.redd.it/o6c5enqx3zdh1.png?width=1371&format=png&auto=webp&s=20f75d4cefa5f51f40c000db8f9bd7114758b354\n\nHello,\n\nI know we're a lot of harness builders out there, because it's fun and because it makes us learn a lot.\n\nI've been focusing on a local-first harness and prefill costs become obvious when you run local LLMs.\n\nThose often come from cache invalidation. Not respecting the order of the messages, or changing something in them (or in the system prompt, or in tools, heck even changing reasoning_effort triggers cache invalidation on my setup!).\n\nThat's why I built this tool: cache-hunter\n\nYou launch it, make it point to your actual LLM endpoint\n\nIn your harness, you point to cache-hunter local port\n\nHit \"Start capture\"\n\nDo a complete normal session in your harness\n\nThen you'll see the session live in the tool, and any red cell means something wasn't as stable as you thought.\n\nFirst row is reasnoning_effort, second it tools hash, third is system prompt\n\nI've run this with my own harness, but also with OpenCode, Claude Code, Cline, Pi, Hermes, Vibe. Most showed issues with unstable system prompt, unstable tools, unstable ordering or content.\n\nI find it crazy that this is not part of standard testing for harnesses out there.\n\nIf you build your own harness, use that and understand what it means (or build your own I don't care). This will help you and your users.\n\nsubmitted by /"
-    },
-    {
-      "title": "How does Kimi k3 feel? Does it match up where it stands on benchmarks?",
-      "author": "superSmitty9999",
-      "updated": "2026-07-17T23:47:50+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzg3n3/how_does_kimi_k3_feel_does_it_match_up_where_it/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "I've seen the benchmarks, they supposedly right up there with Fable 5 and Sol 5. 6. Howerver I'm skeptical of benchmarks and the kimi k3 creators even mentioned the user experience isn't quite on par.",
-      "body": "I've seen the benchmarks, they supposedly right up there with Fable 5 and Sol 5.6.\n\nHowerver I'm skeptical of benchmarks and the kimi k3 creators even mentioned the user experience isn't quite on par.\n\nHow is K3 doing on coding? How is the personality? Does it's thinking and train of thought feel high quality or sort of insane? Common sense?\n\nTrying to get a sense of the quality in real world use.\n\nsubmitted by /"
-    },
-    {
-      "title": "model: add openPangu-2.0-Flash (92B-A6B) with MLA-latent cache, DSA/SWA, mHC, and multi-head MTP by joelfarthing · Pull Request #2065 · ikawrakow/ik_llama.cpp",
+      "title": "OSS gathering in Shanghai",
       "author": "pmttyji",
-      "updated": "2026-07-18T18:38:39+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v03psf/model_add_openpangu20flash_92ba6b_with_mlalatent/",
+      "updated": "2026-07-19T11:02:22+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0nm43/oss_gathering_in_shanghai/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Model : https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/READMEEN.md",
-      "body": "openPangu-2.0-Flash - 92B A6B & 512K Context Length\n\nModel : https://huggingface.co/openpangu/openPangu-2.0-Flash/blob/main/README_EN.md\n\nGGUF for ik_llama folks : https://huggingface.co/ji-farthing/openPangu-2.0-Flash-ik-llama-GGUF\n\nsubmitted by /"
+      "summary": "This seems awesome meetup. Within a day, Qwen started the move with 3. 8 version. Hoping for more moves from others soon.",
+      "body": "This seems awesome meetup. Within a day, Qwen started the move with 3.8 version. Hoping for more moves from others soon.\n\nTweet : https://xcancel.com/RenLeanna/status/2078144481812185186#m\n\nsubmitted by /"
     },
     {
-      "title": "basaltlabsai/monolith-1.0 • HuggingFace",
-      "author": "External_Mood4719",
-      "updated": "2026-07-18T02:33:45+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzjnnb/basaltlabsaimonolith10_huggingface/",
+      "title": "How long before Chinese models fully surpass US models?",
+      "author": "seoulsrvr",
+      "updated": "2026-07-19T15:15:58+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0t6w4/how_long_before_chinese_models_fully_surpass_us/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "https://preview.redd.it/nmou7prrfwdh1.jpg?width=1920&format=pjpg&auto=webp&s=839bb4d3cf380ef544242c29042d4cbbb6212f10",
-      "body": "https://preview.redd.it/nmou7prrfwdh1.jpg?width=1920&format=pjpg&auto=webp&s=839bb4d3cf380ef544242c29042d4cbbb6212f10\n\nhttps://huggingface.co/basaltlabsai/monolith-1.0\n\ndemo: https://basaltlabs.org/chat\n\nsubmitted by /"
+      "summary": "Given the rate at which they have been advancing, I predict we are six months away from a leapfrog moment. EDIT - For those responding “never - they just copy everything”, how is that working out for EV and robotics? The idea that China is still some backwater knock-off empire is profoundly naive.",
+      "body": "Given the rate at which they have been advancing, I predict we are six months away from a leapfrog moment.\n\nEDIT - For those responding “never - they just copy everything”, how is that working out for EV and robotics? The idea that China is still some backwater knock-off empire is profoundly naive.\n\nsubmitted by /"
     },
     {
-      "title": "Qwen and Gemma providers",
-      "author": "scubid",
-      "updated": "2026-07-18T09:17:05+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzr4ia/qwen_and_gemma_providers/",
+      "title": "Are you guys buying huge HDDs to store the best open models just in case?",
+      "author": "JumpingJack79",
+      "updated": "2026-07-19T03:53:46+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0g429/are_you_guys_buying_huge_hdds_to_store_the_best/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "I like to use the MoE modles qwen3. 6-35B and Gemma-4-26B. I noticed differences in result quality between versions from different providers, like bartowski, unsloth, lm-studio, google, etc. My tests dont give me a clear answer to though.",
-      "body": "I like to use the MoE modles qwen3.6-35B and Gemma-4-26B. I noticed differences in result quality between versions from different providers, like bartowski, unsloth, lm-studio, google, etc. My tests dont give me a clear answer to though.\n\nIs there a rule if thumb which provider to prefer for 1) coding and 2) chatting and general world knowledge?\n\nsubmitted by /"
+      "summary": "HuggingFace is nice and all, but can we take it for granted? Edit: Thanks for the interesting replies.",
+      "body": "HuggingFace is nice and all, but can we take it for granted? 🤔\n\nEdit: Thanks for the interesting replies. I learned about the existence of some useful alternative hubs, such as:\n\nhttps://www.modelscope.ai/models\n\nhttps://ckpt.cc/\n\nhttps://huggingbay.xyz/\n\nsubmitted by /"
     },
     {
-      "title": "Serving a fleet of Qwen3.5 122b sessions on a single Mac Studio (96GB) without losing your sanity",
-      "author": "marzukia",
-      "updated": "2026-07-18T07:44:45+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzpk4g/serving_a_fleet_of_qwen35_122b_sessions_on_a/",
+      "title": "[Paper] Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices",
+      "author": "pmttyji",
+      "updated": "2026-07-19T16:54:44+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0vp9k/paper_automated_tensor_scheduling_for_hybrid/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Just following up on a post I made last week about my experiment to try minmax my Mac Studio. In particular, I've had quite a lot of success with pushing things even further. Across a 20 minute test with three concurrent sessions, my Mac Studio was offered 789,351 prompt tokens and only recomputed 48,996 of them on the GPU. The other 93. 8% came back off an on-disk KV cache.",
-      "body": "Hello all\n\nJust following up on a post I made last week about my experiment to try minmax my Mac Studio. In particular, I've had quite a lot of success with pushing things even further.\n\nAcross a 20 minute test with three concurrent sessions, my Mac Studio was offered 789,351 prompt tokens and only recomputed 48,996 of them on the GPU. The other 93.8% came back off an on-disk KV cache. That is roughly a 16x cut in prefill compute, three chats running on about one GPU's worth of work.\n\nThe main changes made:\n\nImplemented proper partial storage of the Gated DeltaNet KV cache\n\nImplemented a less stupid eviction strategy\n\nMy goal was to basically try achieve concurrency without parallelism given the memory constraints of the base Mac Studio model (96GB RAM). Since I've already made the insane decision to fork my own engine, I decided to see if I could optimise what I've already done to get me there. In otherwords, I've decided to go all in on cold caching.\n\nI am now dogfooding this setup with a frontier orchestrator and qMLX as my workers and I am pleasantly surprised how well it is working.\n\nMy write-up: https://mrzk.io/posts/qmlx-optimising-multiplexing-and-dogfood/\n\nThe repo: https://github.com/marzukia/qMLX\n\ntl;dr : I have completely removed the hot cache path, and made qMLX a-restore-from-SSD inference engine that limits requests in a serial manner. qMLX can now achieve concurrency without parallelism, which finally lets me run sub-agents off a local model.\n\nsubmitted by /"
+      "summary": "Running large language models on consumer devices such as laptops and desktops is challenging because model weights often exceed GPU memory capacity, making offloading inference necessary to extend effective model capacity with CPU memory.",
+      "body": "Running large language models on consumer devices such as laptops and desktops is challenging because model weights often exceed GPU memory capacity, making offloading inference necessary to extend effective model capacity with CPU memory. Existing offloading systems, however, typically rely on coarse layer-level or expert-level scheduling, which overlooks substantial heterogeneity among tensors within the same layer and adapts poorly to changing hardware load conditions on such devices. This paper presents ATSInfer, a hybrid CPU-GPU inference system for consumer devices that performs offloading at tensor granularity. ATSInfer combines static tensor placement with load-aware dynamic transfer, and introduces asynchronous CPU-GPU coordination to efficiently schedule hardware storage, data movement, and computation across heterogeneous backends. We implement ATSInfer and evaluate it on representative consumer platforms using both dense and MoE models. Compared with existing systems, ATSInfer improves prefill throughput by up to 1.94× and decode throughput by up to 3.29× , while also increasing GPU utilization and making more effective use of PCIe bandwidth. These results show that ATSInfer can substantially improve the user experience of local LLM deployment on personal consumer devices.\n\narXiv : https://arxiv.org/abs/2607.10183\n\nFull Paper : https://arxiv.org/pdf/2607.10183\n\nI did search for sometime, but couldn't find GitHub repo for this(Probably not made public yet). I'll include GitHub repo link as soon as available online.\n\nsubmitted by /"
     },
     {
-      "title": "Consumer grade server build - AMD Ryzen 9 vs Intel Ultra 7 prompt processing speed",
-      "author": "whiteh4cker",
-      "updated": "2026-07-18T14:33:10+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzxhc1/consumer_grade_server_build_amd_ryzen_9_vs_intel/",
+      "title": "How do we benefits from 2+ T models?",
+      "author": "zakadit",
+      "updated": "2026-07-19T12:58:26+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0py81/how_do_we_benefits_from_2_t_models/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "My AM4 server's motherboard's PCIe lanes got damaged, and I want to replace the platform because I don't want to invest in DDR4 ram. I have 2x RTX 3090. I am aware of the EPYC platforms, but I would have to pay 100% tax to import them here, so a $450 SP3 motherboard would cost me $900.",
-      "body": "My AM4 server's motherboard's PCIe lanes got damaged, and I want to replace the platform because I don't want to invest in DDR4 ram. I have 2x RTX 3090. I am aware of the EPYC platforms, but I would have to pay 100% tax to import them here, so a $450 SP3 motherboard would cost me $900. I have been considering Intel Ultra 7 270K Plus because of AMD's infinity fabric memory bandwidth limitation, but I am not sure after seeing the benchmarks for prompt processing. How much would this affect me with 2 GPUs? Should I just go with a Ryzen 9 9900X, which is slightly more expensive? AMD motherboards are also 30% more expensive. Intel Ultra CPUs also still lack AVX512 support. This benchmark is quite old, so I am wondering if anybody has experience with the current state of Intel Ultra CPUs.\n\nEdit: I bought an Intel Ultra 7 270K Plus, MSI PRO B860-P, and a used Crucial 1x48 GB DDR5 5600 MHz RAM. I will buy more RAM later.\n\nhttps://www.phoronix.com/review/intel-core-ultra-7-270k-plus/10\n\nsubmitted by /"
+      "summary": "Hey, I’ve been really excited to see the latest models being released, but I keep wondering: what are we actually supposed to do with them? I have 4× RTX 6000 Max-Q GPUs, 7× RX 7900 XTXs, 5× modded 48GB RTX 4090s, and a lot of DDR5 RAM.... and honestly, I can’t even imagine running Kimi K3 at a genuinely usable speed.",
+      "body": "Hey, I’ve been really excited to see the latest models being released, but I keep wondering: what are we actually supposed to do with them?\n\nI have 4× RTX 6000 Max-Q GPUs, 7× RX 7900 XTXs, 5× modded 48GB RTX 4090s, and a lot of DDR5 RAM.... and honestly, I can’t even imagine running Kimi K3 at a genuinely usable speed.\n\nI feel like my setup is already pretty extreme, so I’ve been wondering: what is the point of saying that “local AI is winning” when most users are still running models around the Qwen3.6 range, while even the wealthiest users seem to struggle with slow GLM-5.2 inference?\n\nsubmitted by /"
     },
     {
-      "title": "I tuned a custom Q8 for my AMD R9700s. My benchmark said 12.5% faster.",
-      "author": "alphatrad",
-      "updated": "2026-07-18T04:54:32+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1uzmg4w/i_tuned_a_custom_q8_for_my_amd_r9700s_my/",
+      "title": "poor man's way to local inference on the go",
+      "author": "jupiterbjy",
+      "updated": "2026-07-19T12:44:48+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0pnqd/poor_mans_way_to_local_inference_on_the_go/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "I have three Radeon AI PRO R9700s. I wanted to know if I could tune a quant for this specific hardware instead of just using the generic upstream formats. Came across the Github project for ROCmFPX by the wonderful Carlo Pasquale and started digging in.",
-      "body": "I have three Radeon AI PRO R9700s. I wanted to know if I could tune a quant for this specific hardware instead of just using the generic upstream formats. Came across the Github project for ROCmFPX by the wonderful Carlo Pasquale and started digging in.\n\nThe fastest variant I've used is the MTP version.\n\nThe format is Q8_0_ROCMFPX. My part was the gfx1201 decode tuning - VDR8 vector-dot width and a measured wave policy plus all the validaton. Each blok stores 32 signed int8 codes and one UE4M3 scale byte. It's not native FP8 or FP4. It's integer dot products with float accumulation.\n\nModel is up on HuggingFace: https://huggingface.co/1337Hero/Qwen3.6-27B-Q8_0-ROCMFPX-GGUF\n\nThe numbers - good and bad:\n\nMeasure Result Model size vs upstream Q8_0 2.94% smaller HumanEval 140/164 - tied Full-model decode 5.77-5.87% faster Equal-work, 18 matched pairs 5.82% faster median, 17/18 pairs, p=0.000965 End-to-end agent wall time 2.21% faster - failed my 3% threshold wanted faster\n\nEqual passes. End-to-end agent latency does not. Both thresholds were fixed before the runs. I'm not cherry-picking the one that passed.\n\nThe catch:\n\nThis does not run on upstream llama.cpp, Ollama, LM Studio, or vLLM. It uses a custom tensor type and needs the pinned ROCmFPX fork:\n\ngit clone https://github.com/1337hero/ROCmFPX.git cd ROCmFPX git checkout 45bcff509c4b1cff137e2cc1ea84671c61ceddea env JOBS=16 scripts/build-r9700.sh\n\nIf you're on gfx1201 and willing to build from source, give it a shot. If you're on NVIDIA or a different AMD card, this won't help you yet - the gfx1201 tuning is the whole point.\n\nSo far I've only had two others on X verify this. But would be helpful to find others to run some benches comparing it to the stock Q8\n\nIf you want to see the whole process of my vibe coded slop: https://github.com/1337hero/r9700-quant-lab\n\nsubmitted by /"
+      "summary": "Many bring egpu to game on laptop, yet here I am fiddling with llama cpp params for 1-time crappy HW configuration for Qwen3. 6 35B A3B. p. s. I really like recently added llama cpp's built in lightweight web ui, it's tool call aren't safe as already documented (no sandboxing) but is really fun to play with.",
+      "body": "Many bring egpu to game on laptop, yet here I am fiddling with llama cpp params for 1-time crappy HW configuration for Qwen3.6 35B A3B.\n\nidk if I'm having fun or not, but running llama bench runs are surely a good way to kill some time, I guess\n\np.s. I really like recently added llama cpp's built in lightweight web ui, it's tool call aren't safe as already documented (no sandboxing) but is really fun to play with.\n\nhw:\n\n- 1360p, my arch nemesis on both perf & thermal for last 5 years\n\n- 32GB LPDDR5 6400MT\n\n‐ AXLE's 1slot 3050 6GB\n\n- TH3P4 Lite + 120W DC brick\n\nEDIT:\n\nas someone asked for 64k ctx, here's llama-bench result for it:\n\nSeems like egpu is hitting practical bandwidth limit (considering overhead), as nvtop shows 3050 maxing out bandwidth at 2.5GB/s consistently over 3.0 x4 connection which should give higher bandwidth in theory.\n\ntype_k type_v pp512 tg128 q4_0 q4_0 78.18 ± 0.52 (d65536) 15.68 ± 0.47 (d65536) q4_0 q4_0 85.39 ± 1.27 24.24 ± 1.31 - - 85.59 ± 1.26 25.01 ± 1.18\n\nRaw log:\n\n./llama-bench -hf \"unsloth/Qwen3.6-35B-A3B-GGUF:Q4_K_XL\" -b 2048 -ub 1024 -ngl 99 -ctk q4_0 -ctv q4_0 -ncmoe 99 -mmp 0 -d 65536 ggml_cuda_init: found 1 CUDA devices (Total VRAM: 5803 MiB): Device 0: NVIDIA GeForce RTX 3050, compute capability 8.6, VMM: yes, VRAM: 5803 MiB ggml_vulkan: Found 2 Vulkan devices: ggml_vulkan: 0 = Intel(R) Iris(R) Xe Graphics (RPL-P) (Intel open-source Mesa driver) | uma: 1 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 65536 | int dot: 1 | matrix cores: none ggml_vulkan: 1 = NVIDIA GeForce RTX 3050 (NVIDIA) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: NV_coopmat2 | model | size | params | backend | ngl | n_cpu_moe | n_ubatch | type_k | type_v | mmap | test | t/s | | ------------------------------ | ---------: | ---------: | ---------- | --: | ---------: | -------: | -----: | -----: | ---: | --------------: | -------------------: | | qwen35moe 35B.A3B Q4_K - Medium | 20.81 GiB | 34.66 B | CUDA,Vulkan | 99 | 99 | 1024 | q4_0 | q4_0 | 0 | pp512 @ d65536 | 78.18 ± 0.52 | | qwen35moe 35B.A3B Q4_K - Medium | 20.81 GiB | 34.66 B | CUDA,Vulkan | 99 | 99 | 1024 | q4_0 | q4_0 | 0 | tg128 @ d65536 | 15.68 ± 0.47 | build: 571d0d540 (10068) ./llama-bench -hf \"unsloth/Qwen3.6-35B-A3B-GGUF:Q4_K_XL\" -b 2048 -ub 1024 -ngl 99 -ctk q4_0 -ctv q4_0 -ncmoe 99 -mmp 0 ... | model | size | params | backend | ngl | n_cpu_moe | n_ubatch | type_k | type_v | mmap | test | t/s | | ------------------------------ | ---------: | ---------: | ---------- | --: | ---------: | -------: | -----: | -----: | ---: | --------------: | -------------------: | | qwen35moe 35B.A3B Q4_K - Medium | 20.81 GiB | 34.66 B | CUDA,Vulkan | 99 | 99 | 1024 | q4_0 | q4_0 | 0 | pp512 | 85.39 ± 1.27 | | qwen35moe 35B.A3B Q4_K - Medium | 20.81 GiB | 34.66 B | CUDA,Vulkan | 99 | 99 | 1024 | q4_0 | q4_0 | 0 | tg128 | 24.24 ± 1.31 | ./llama-bench -hf \"unsloth/Qwen3.6-35B-A3B-GGUF:Q4_K_XL\" -b 2048 -ub 1024 -ngl 99 -ncmoe 99 -mmp 0 ... | model | size | params | backend | ngl | n_cpu_moe | n_ubatch | mmap | test | t/s | | ------------------------------ | ---------: | ---------: | ---------- | --: | ---------: | -------: | ---: | --------------: | -------------------: | | qwen35moe 35B.A3B Q4_K - Medium | 20.81 GiB | 34.66 B | CUDA,Vulkan | 99 | 99 | 1024 | 0 | pp512 | 85.59 ± 1.26 | | qwen35moe 35B.A3B Q4_K - Medium | 20.81 GiB | 34.66 B | CUDA,Vulkan | 99 | 99 | 1024 | 0 | tg128 | 25.01 ± 1.18 |\n\nsubmitted by /"
+    },
+    {
+      "title": "Qwen vs Gemma",
+      "author": "Jon_vs_Moloch",
+      "updated": "2026-07-19T01:45:00+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0dksm/qwen_vs_gemma/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "Hi! Been doing some local LLM stuff, and I can't help but notice: despite vastly-superior benchmark scores, Qwen 3. 6 35a3B feels... substantially less intelligent than Gemma 4 26a4B (QAT). In terms of prompt adherence, output coherence, and just general \"sanity\", Gemma seems head-and-shoulders ahead. Arena.",
+      "body": "Hi! Been doing some local LLM stuff, and I can't help but notice: despite vastly-superior benchmark scores, Qwen 3.6 35a3B feels... substantially less intelligent than Gemma 4 26a4B (QAT). In terms of prompt adherence, output coherence, and just general \"sanity\", Gemma seems head-and-shoulders ahead. Arena.ai rankings generally agree: Gemma 4 26a4 ranks like 7 ELO points below Qwen 3.6 Plus , a larger proprietary model.\n\nI'm running both at Q4, so maybe what I'm seeing is just the QAT... working? But, still, I'm a bit surprised by how big the gap feels.\n\nHas anyone else seem similar? Is there some \"trick\" to get Qwen to... act smarter? Curious to hear what your experiences have been like.\n\nsubmitted by /"
+    },
+    {
+      "title": "It could have been Meta",
+      "author": "ViRROOO",
+      "updated": "2026-07-19T14:12:06+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0rmz4/it_could_have_been_meta/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "Imma write some fan fiction for a second here if you indulge me. What we are seeing from the Chinese open models could have been Meta. As you can see from the name of this sub, they were the stars of open-source models, and the consistently poor decisions by their senior leadership just fumbled it in a way that must be studied by any other major company.",
+      "body": "Imma write some fan fiction for a second here if you indulge me.\n\nWhat we are seeing from the Chinese open models could have been Meta. As you can see from the name of this sub, they were the stars of open-source models, and the consistently poor decisions by their senior leadership just fumbled it in a way that must be studied by any other major company.\n\nI really wish they would just go back to it. They have the compute, the data, the money, and the talent. And the thought that they will be able to monetize these closed models is just lunacy; they can't monetize anything that isn't hacking the brain's attention span to sell ( allegedly ) scam ads. So they should just put the fries in the bag and compete on the open-source frontier as they were doing before, and hopefully attract some real talent that is leaving other frontier labs for principled reasons . Well, to attract the said talent, they must first drop this absurd culture shift they went for out of pure desperation .\n\nBefore you come with your cope, I know LLMs aren't the only thing out there, and that they have other categories of models that are SOTA. Be real, bro. First of all, the trillion-dollar company doesn't need your defense, and most importantly, those are far from the interesting fighting ground right now.\n\nI'm not anti-China or anything like that; I'm pro-competition, the more, the merrier and having a heavyweight like Meta back in it would be a massive win for us.\n\nThank you for reading my fanfic.\n\nsubmitted by /"
+    },
+    {
+      "title": "Introducing ASCIITermDraw Bench | Testing the ability of VLMs to Generate and Edit ASCII",
+      "author": "East-Muffin-6472",
+      "updated": "2026-07-19T09:17:21+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0ltno/introducing_asciitermdraw_bench_testing_the/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "Is it possible to let our AI assistants, easily absorb and understand and make possible changes easily relayed to them by us, the creators without much hassle? With this, introducing ASCIITermDraw, a benchmark with which we aim to evaluate SOTA Vision Language Models on their ability to follow instructions, recognize, and draw ASCII-based images.",
+      "body": "ASCIITermDraw-Bench: Can a Model Actually Draw in ASCII?\n\nDo we really need a image generator to relay our thoughts about -\n\nan architecture?\n\na topology?\n\na cluster og N nodes?\n\nIs it possible to let our AI assistants, easily absorb and understand and make possible changes easily relayed to them by us, the creators without much hassle?\n\nThe answer could be: simple, plain-old ASCII images\n\nWith this, introducing ASCIITermDraw, a benchmark with which we aim to evaluate SOTA Vision Language Models on their ability to follow instructions, recognize, and draw ASCII-based images.\n\nMost benchmarks focus on coding, mathematics, and reasoning, but ASCIITermDraw-Bench evaluates a different capability: whether a model can create accurate diagrams using only plain text, use ASCII -- freely.\n\nThis is more difficult than it may seem. Models can often describe a diagram correctly, but arranging boxes, labels, connections, and arrows with precise layout is a separate challenge.\n\nThe benchmark includes 80 tasks across four areas:\n\nBasic Box and layouts\n\nNetwork topologies\n\nSoftware architecture diagrams\n\nImage-conditioned diagram editing, where a model must modify a provided diagram while preserving everything it was not asked to change\n\nTasks span multiple difficulty levels and follow a consistent format, making results comparable across categories and models.\n\nEvaluation\n\nEach response receives two scores:\n\nA structural score that verifies required labels, edges, entities, and relationships\n\nA semantic score produced by an LLM judge, evaluated five times per task to reduce judge variability\n\nResults are aggregated across all 80 tasks, with a 95% confidence interval calculated for the final score. This provides a more rigorous measure than relying on whether a diagram simply appears correct.\n\nThe current leaderboard is:\n\n- Gemma-4-31B-IT — 73.8% (±4.1)\n\n- Qwen3.7-Plus — 70.2% (±4.6)\n\n- Kimi-K2.6 — 61.8% (±6.0)\n\n- MiniMax-M3 — 59.5% (±6.3)\n\n- Qwen3.5-9B — 47.0% (±6.4)\n\n- Ternary-Bonsai-27B — 45.9% (±7.1)\n\nExplore the Benchmark\n\nTwelve example tasks and the complete methodology are publicly available on Hugging Face. You can review the task format, examine the evaluation process, and run the benchmark yourself.\n\nLink\n\nsubmitted by /"
+    },
+    {
+      "title": "What’s your favorite underrated local model?",
+      "author": "be566",
+      "updated": "2026-07-19T02:46:37+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1v0eszf/whats_your_favorite_underrated_local_model/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "What’s your favorite underrated local model that you actually use every day? I’m not talking about the mainstream choices like Qwen 3. 6 or Gemma 4. I’m looking for the hidden gems that deserve more attention.",
+      "body": "What’s your favorite underrated local model that you actually use every day?\n\nI’m not talking about the mainstream choices like Qwen 3.6 or Gemma 4. I’m looking for the hidden gems that deserve more attention.\n\nWhat do you use it for, and what hardware are you running it on?\n\nI’m hoping this thread surfaces some overlooked models that more people should know about.\n\nsubmitted by /"
     }
   ]
 }

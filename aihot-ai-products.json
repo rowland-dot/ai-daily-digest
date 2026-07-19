@@ -1,8 +1,42 @@
 {
-  "count": 23,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrraq5dk03p5bi18vyrt83kp",
+      "title": "ChatGPT Work 功能：建站、邮件、文档处理",
+      "title_en": "ChatGPT Work is for ✅ Creating and hosting sites ✅ Managing your emails for you ✅ Summarizing mount…",
+      "url": "https://x.com/thsottiaux/status/2078697631019303273",
+      "permalink": "https://aihot.virxact.com/items/cmrraq5dk03p5bi18vyrt83kp",
+      "source": "X：Tibo (@thsottiaux)",
+      "publishedAt": "2026-07-19T04:25:10.000Z",
+      "summary": "ChatGPT Work 适用于\n\n✅ 创建和托管网站 ✅ 为你管理电子邮件 ✅ 总结海量文档 ✅ 制作一流的文档、表格和幻灯片\n\n已在你的移动应用或 http://chatgpt.com 上提供，包含在 Plus、Pro、Business 和 Enterprise 套餐中。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrraq5dk03p5bi18vyrt83kp"
+      }
+    },
+    {
+      "id": "cmrr7sdid02ybbi18afm9lr2i",
+      "title": "transcribe.cpp 发布：基于 ggml 的跨平台语音转录库，支持 16 个 ASR 模型族",
+      "title_en": "Transcribe.cpp",
+      "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
+      "permalink": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-19T02:49:15.657Z",
+      "summary": "transcribe.cpp v0.1.0 发布，一个基于 ggml 的语音转录库，支持 16 个 ASR 模型族（60+ 模型），并通过 Vulkan、Metal、CUDA 和 TinyBLAS 实现 GPU 加速。",
+      "category": "ai-products",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i"
+      }
+    },
     {
       "id": "cmrnvlijq012lbixy2xhlk8k8",
       "title": "ChatGPT 工作区支持文档表格幻灯片编辑",
@@ -324,74 +358,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrkedwpc013nbizssg3olzs7"
-      }
-    },
-    {
-      "id": "cmrkvk6vb01sqbi5qxm4z15il",
-      "title": "Juggler：一款开源 GUI 编程智能体，由 JUCE 创建者开发",
-      "title_en": "Show HN： Juggler - an open-source GUI coding agent， by the creator of JUCE",
-      "url": "https://github.com/juggler-ai/juggler",
-      "permalink": "https://aihot.virxact.com/items/cmrkvk6vb01sqbi5qxm4z15il",
-      "source": "Hacker News：AI 热帖",
-      "publishedAt": "2026-07-12T18:28:15.000Z",
-      "summary": "Juggler 是一款开源 GUI 编程智能体，提供可视化工作台，支持可检查的工具调用、分支线程和可编辑上下文。会话以树状结构组织，而非线性聊天记录，用户可创建子线程、回溯、比较和编辑。所有关键信息以 Finder 风格 Miller 列展示。Juggler 支持本地、远程或同时运行，桌面应用与浏览器可连接同一会话。模型支持包括 Claude Code、OpenAI、Gemini、Ollama、OpenRouter、Z.AI、Deepseek 等。后端使用 Go 和 Wails，UI 为 HTML/JS。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkvk6vb01sqbi5qxm4z15il"
-      }
-    },
-    {
-      "id": "cmri4o4kx00qcbi3hqxj8rxqd",
-      "title": "Codex与ChatGPT Work多项更新：取消5小时限制",
-      "title_en": "Morning. The last 48 hours of Codex and ChatGPT Work have been intense！ Three important updates： - …",
-      "url": "https://x.com/thsottiaux/status/2076365965915467978",
-      "permalink": "https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd",
-      "source": "X：Tibo (@thsottiaux)",
-      "publishedAt": "2026-07-12T17:59:57.000Z",
-      "summary": "早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新：\n\n- 暂时取消所有Plus、Business和Pro计划的5小时使用限制\n- 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布\n- 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置\n\n去创造吧。",
-      "category": "ai-products",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd"
-      }
-    },
-    {
-      "id": "cmrhvwe6k00y7biidjabepmem",
-      "title": "Mindwalk：在代码库 3D 地图上回放编码代理会话",
-      "title_en": "Show HN： Mindwalk--在代码库的 3D 地图上重放编码代理会话",
-      "url": "https://github.com/cosmtrek/mindwalk",
-      "permalink": "https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-12T13:51:05.035Z",
-      "summary": "Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放。它将仓库绘制成夜间地图，代理搜索、读取和编辑过的文件会发光，未触及区域保持黑暗，让用户一眼看清代理对任务的理解范围。单个 Go 二进制文件即可运行，所有会话数据完全本地处理，不会离开机器。支持树状图/地形图两种视图，文件触达状态分为未访问、已查看、已读取、已编辑四种颜色标记。播放界面包含错误率、文件修改量等摩擦信号面板，以及上下文压缩、子代理启动、用户交互等时间轴标记。支持键盘快捷键控制播放速度、跳转编辑点或错误点。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem"
-      }
-    },
-    {
-      "id": "cmrh78s5t00w5bir7mozf8oyb",
-      "title": "Mesh LLM：在 iroh 上进行分布式人工智能计算",
-      "title_en": null,
-      "url": "https://www.iroh.computer/blog/mesh-llm",
-      "permalink": "https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-12T02:23:05.249Z",
-      "summary": "Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称\"Skippy\"）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost：9337/v1` 提供服务。",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb"
       }
     }
   ]
