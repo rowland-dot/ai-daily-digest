@@ -1,29 +1,37 @@
 {
-  "generated_at": "2026-07-18T21:31:05Z",
+  "generated_at": "2026-07-20T21:49:16Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uztipo/if_youre_building_a_harness_here_is_a_simple_tool/": {
-      "en": "A local harness developer released cache-hunter, a debugging proxy that reveals when calls to a large language model endpoint break prefix caching. Users point their harness at the tool, which then intercepts each turn and flags unstable reasoning effort settings, tools hashes, system prompt content, or message ordering. The author tested it against OpenCode, Claude Code, Cline, Pi, Hermes and Vibe and reports that most harnesses ship with silent cache-invalidation bugs.",
-      "zh": "一位本地推理框架开发者发布了 cache-hunter，一款调试代理工具，用于揭示对大语言模型端点的调用何时破坏了前缀缓存。用户将自建框架指向该工具，它会拦截每一轮对话，并标记推理强度、工具哈希、系统提示或消息顺序上的不稳定之处。作者用它测试了 OpenCode、Claude Code、Cline、Pi、Hermes、Vibe 等，发现大多数框架都存在悄悄导致缓存失效的问题。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v1nor4/unsloth_now_supports_amd/": {
+      "en": "Unsloth now officially supports AMD hardware for local inference, fine-tuning, reinforcement learning, and deployment on Windows, Linux, WSL, and Mac. Supported hardware includes Radeon RX 9000 and 7000 series, Instinct MI350 and MI300 GPUs, and Strix Halo Ryzen AI Max systems, plus AMD CPU inference. Training can use up to 70 percent less video memory and reinforcement learning up to 80 percent less. Optimized ROCm, Triton, bitsandbytes, PyTorch, and llama.cpp builds install automatically, and nearly all major open weights work.",
+      "zh": "Unsloth 正式支持 AMD 硬件，可在 Windows、Linux、WSL 和 Mac 上进行本地推理、微调、强化学习与部署。支持的硬件包括 Radeon RX 9000 和 7000 系列、Instinct MI350 与 MI300 GPU、Strix Halo Ryzen AI Max 系统，以及 AMD CPU 推理。训练最高可节省 70% 显存，强化学习最高可节省 80% 显存。优化的 ROCm、Triton、bitsandbytes、PyTorch 与 llama.cpp 构建自动安装，几乎所有主流开源模型均可使用。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v03psf/model_add_openpangu20flash_92ba6b_with_mlalatent/": {
-      "en": "A pull request to the ik_llama.cpp fork adds support for openPangu-2.0-Flash, an open-weights Mixture of Experts model with 92 billion total and 6 billion active parameters and a 512 thousand token context window. The patch enables the model's Multi-head Latent Attention caching, sliding window attention and multi-token prediction paths. Community-quantized GGUF files for the new runtime path are already published on Hugging Face.",
-      "zh": "一个拉取请求为 ik_llama.cpp 分叉添加了对 openPangu-2.0-Flash 的支持，这是一款开源权重的混合专家模型，总参数 920 亿，激活参数 60 亿，上下文长度 51.2 万 token。该改动接入了模型的多头潜在注意力缓存、滑动窗口注意力和多 token 预测路径。社区已在 Hugging Face 发布配套的 GGUF 量化文件。",
-      "title_en": "A pull request adds support for openPangu 2.0 Flash to the ik_llama.cpp inference fork. The model is a 92 billion parameter Mixture of Experts with 6 billion active parameters, a 512 thousand token context window, and Multi-head Latent Attention caching. Community GGUF quantizations are already published.",
-      "title_zh": "ik_llama.cpp 分叉新增 openPangu 2.0 Flash 支持，该开源混合专家模型总参数 920 亿，激活 60 亿，上下文 51.2 万 token，具备多头潜在注意力缓存。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v1no8e/543_toks_singlerequest_qwen3635ba3b_on_one_rtx/": {
+      "en": "The author open-sourced NInfer, a from-scratch C++ and CUDA inference engine specialized for two Qwen 3.6 checkpoints on a single RTX 5090. It sustains 542 tokens per second decoding a 65,536 token completion on the 35 billion parameter Mixture of Experts model, using custom quantization, fused kernels, and a dedicated language model head draft. INT8 key-value cache enables the full 262,144 token context. Continuous batching is not yet supported, and only these two model artifacts are handled.",
+      "zh": "作者开源了 NInfer，一款从零构建的 C++ 与 CUDA 推理引擎，专为单张 RTX 5090 上的两个 Qwen 3.6 检查点优化。在 350 亿参数的混合专家模型上，可持续以每秒 542 个 token 解码完整的 65,536 token 输出。它采用自定义量化、算子融合和专用语言模型头草稿路径。INT8 键值缓存支持完整的 262,144 token 上下文，但暂不支持连续批处理，且仅支持这两个模型工件。",
+      "title_en": "NInfer C++ and CUDA engine sustains 543 tokens per second on Qwen 3.6 35B on a single RTX 5090",
+      "title_zh": "NInfer C++ 与 CUDA 引擎在单张 RTX 5090 上以每秒 543 个 token 运行 Qwen 3.6 35B"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uzjnnb/basaltlabsaimonolith10_huggingface/": {
-      "en": "Basalt Labs published monolith-1.0 to Hugging Face and opened a hosted demo at basaltlabs.org/chat. The Reddit thread linking the release is essentially a pointer post, with no accompanying technical detail in the body, so anyone curious about parameter count, training data, benchmark performance or license terms needs to open the model card and demo directly to evaluate the release for local use.",
-      "zh": "Basalt Labs 在 Hugging Face 上发布了 monolith-1.0 模型，并在 basaltlabs.org/chat 提供了在线演示。这条 Reddit 帖子本质上只是一个链接指引，正文没有附带任何技术细节，因此想了解参数规模、训练数据、基准表现或许可条款的用户需要直接打开模型卡和演示页面进行评估。",
-      "title_en": "Basalt Labs released monolith 1.0 on Hugging Face with a hosted chat demo, but the announcement thread contains no technical details.",
-      "title_zh": "Basalt Labs 在 Hugging Face 上发布 monolith 1.0，并提供在线聊天演示，但发布帖未附任何技术细节。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v1pume/running_a_13m_asr_conformer_on_a_microcontroller/": {
+      "en": "The author shares a project bringing a 13.1 million parameter convolution transformer model for automatic speech recognition onto a microcontroller. The full evaluation is available on GitHub. The author argues for more research into language model efficiency rather than chasing benchmark rankings at the cost of enormous parameter counts. Getting capable models running on affordable hardware keeps the local model hobby accessible to a wider community of tinkerers and researchers on modest budgets.",
+      "zh": "作者分享了将一个 1310 万参数的卷积 transformer 自动语音识别模型部署到微控制器上的项目，完整评估已在 GitHub 发布。作者呼吁研究应更多关注语言模型的效率，而非以巨额参数为代价追逐排行榜名次。让性能不俗的模型能够运行在价格亲民的硬件上，可以让本地模型这一爱好对更广泛的爱好者与预算有限的研究者保持可及。",
+      "title_en": "Running a 13 million parameter automatic speech recognition conformer on a microcontroller",
+      "title_zh": "在微控制器上运行 1310 万参数的自动语音识别 conformer 模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uzpk4g/serving_a_fleet_of_qwen35_122b_sessions_on_a/": {
-      "en": "The author of qMLX, a hand-forked local inference engine for Apple Silicon, wrote up how they now serve three concurrent Qwen 3.5 122 billion parameter chat sessions on a 96 gigabyte Mac Studio. Across a twenty minute run the engine served 789 thousand prompt tokens while only recomputing about 6 percent on the GPU, pulling the rest from an on-disk key-value cache. The design trades parallelism for serialised restore-from-solid-state inference.",
-      "zh": "qMLX 是一款为 Apple Silicon 手工分叉的本地推理引擎，作者撰文介绍如何在 96 GB 内存的 Mac Studio 上并发运行三路 Qwen 3.5 1220 亿参数聊天会话。20 分钟测试中，引擎处理了 78.9 万条提示 token，其中仅约 6% 由 GPU 重新计算，其余全部命中磁盘上的键值缓存。整套设计放弃并行性，改用从固态盘串行恢复的推理架构。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v1evsq/paper_xhc_expanded_hyperconnections_scale/": {
+      "en": "The paper introduces Expanded Hyper-Connections, widening the Transformer residual stream into 16 parallel channels while updating only 4 per layer. Prior Hyper-Connections methods stalled at 4 channels due to insufficient write-back and cubic residual-mixing cost. The authors add temporal feature augmentation and a sparse update scheme. On 18 billion parameter Mixture of Experts models, downstream scores improve by 4 points over prior methods. A companion Flash variant cuts per-sublayer memory traffic to match earlier baselines.",
+      "zh": "论文提出 Expanded Hyper-Connections，将 Transformer 残差流扩展至 16 条并行通道，每层仅更新其中 4 条。此前的 Hyper-Connections 方法在 4 条时便遭遇写回信息不足和残差混合的三次方成本瓶颈。作者引入时间特征增强与稀疏更新方案，在 180 亿参数的混合专家模型上，下游分数比原方法提升 4 分。配套的 Flash 变体将每子层显存流量降至先前基线水平。",
+      "title_en": "Expanded Hyper Connections paper scales Transformer residual streams beyond four parallel channels",
+      "title_zh": "Expanded Hyper-Connections 论文将 Transformer 残差流扩展到 4 条并行通道以上"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1uzmg4w/i_tuned_a_custom_q8_for_my_amd_r9700s_my/": {
-      "en": "A hobbyist with three Radeon AI PRO R9700 cards published a custom 8-bit quantization of Qwen 3.6 27 billion tuned for the gfx1201 architecture, using Carlo Pasquale's ROCmFPX fork of llama.cpp. Their new format is about 3 percent smaller than the upstream 8-bit quant and decodes 5.87 percent faster on their rig while tying on HumanEval. End-to-end agent latency improved only 2.2 percent, missing their pre-set 3 percent threshold.",
-      "zh": "一位拥有三张 Radeon AI PRO R9700 显卡的爱好者，发布了针对 gfx1201 架构调优的 Qwen 3.6 270 亿参数自定义 8 位量化版本，基于 Carlo Pasquale 的 ROCmFPX 分叉。新格式比上游 8 位版本小约 3%，解码速度提升 5.87%，HumanEval 表现打平。端到端 agent 延迟仅改善 2.2%，未达到作者预设的 3% 门槛。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v1mlcw/trelliscpp_now_has_a_studio/": {
+      "en": "Following complaints that Trellis.cpp had a high usability barrier requiring command line navigation and manual weight fetching, the project now ships a built-in Studio binary. Studio automatically picks the proper backend, downloads the weights, and provides an image-to-3D generation workflow. A Three.js preview component lets users inspect the generated 3D assets directly in the browser. The update meaningfully lowers the entry point for hobbyists running local image-to-3D generation on their own machines.",
+      "zh": "针对此前用户反映 Trellis.cpp 使用门槛过高——需要操作命令行并手动获取权重——项目现已内置 Studio 二进制程序。Studio 会自动选择合适的后端、下载权重，并提供图像转 3D 的生成流程。内置的 Three.js 预览组件让用户可以直接在浏览器中查看生成的 3D 资产。此次更新明显降低了在本地运行图像转 3D 生成的入门难度。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v174ql/fractale350mbase_memory_as_trained_behaviour/": {
+      "en": "A solo researcher released Fractale-350M-base, a 386 million parameter base model pretrained from scratch on 10 billion tokens of code and English web text. Its only long-term memory is a bank of 8 vectors the model writes to itself, one gist vector per 512-token chunk. The bank is read back as fast weights through a hypernet. On held-out documents, the carried bank cuts cross entropy by up to 9.4 nats over a reset bank. Weights, code, and paper are open.",
+      "zh": "独立研究者发布 Fractale-350M-base，这是一款 3.86 亿参数的基础模型，从零在 100 亿 token 的代码与英文网页数据上完成预训练。其唯一的长期记忆是模型自己写入的 8 个向量组成的记忆库，每 512 token 分块写入一个概要向量，再通过超网络作为快速权重读回。在留出文档上，携带记忆比重置记忆最多可将交叉熵降低 9.4 nats。权重、代码与论文全部开源。",
+      "title_en": "Fractale 350 million parameter base model treats memory as trained behavior instead of long context",
+      "title_zh": "Fractale 3.86 亿参数基础模型将记忆作为训练行为，而非依赖长上下文"
     }
   }
 }
