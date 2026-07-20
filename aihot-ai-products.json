@@ -1,8 +1,110 @@
 {
-  "count": 21,
+  "count": 27,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrtfkakm2undbitla364sgej",
+      "title": "Grok for Excel 发布：在 Microsoft Excel 中用自然语言提问、写公式和运行场景",
+      "title_en": "Grok for Excel",
+      "url": "https://x.ai/news/introducing-excel-addin",
+      "permalink": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-20T16:19:52.655Z",
+      "summary": "xAI 将 Grok 引入 Microsoft Excel，推出免费 Microsoft 365 加载项。用户可在工作表中用自然语言提问、根据描述编写公式或运行场景，答案会引用具体单元格，图表可直接插入工作表。该加载项还支持连接 SharePoint 或 Google Drive 获取上下文，并已同步支持 Word 和 PowerPoint。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej"
+      }
+    },
+    {
+      "id": "cmrtfjet52udzbitl7n6bqkqj",
+      "title": "Replit 新统一工具栏集成数据库与双因素认证",
+      "title_en": "Need a database？ Two-factor auth？ An SEO scanner？ Everything your project needs is now in reach wit…",
+      "url": "https://x.com/Replit/status/2079235154485109114",
+      "permalink": "https://aihot.virxact.com/items/cmrtfjet52udzbitl7n6bqkqj",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-07-20T16:01:05.000Z",
+      "summary": "需要数据库？双因素认证？SEO 扫描器？\n\n你的项目所需的一切现在都可以通过我们新的统一工具栏触手可及。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtfjet52udzbitl7n6bqkqj"
+      }
+    },
+    {
+      "id": "cmrt81fki1d1fbitln44dzsrr",
+      "title": "LoRA Speedrun 公开排行榜：6分05秒微调Qwen2.5-1.5B达GSM8K 61.1%准确率",
+      "title_en": "LoRA Speedrun--一个针对微调技术的公开实际运行时间排行榜",
+      "url": "https://github.com/Saivineeth147/lora-speedrun",
+      "permalink": "https://aihot.virxact.com/items/cmrt81fki1d1fbitln44dzsrr",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-20T12:21:09.021Z",
+      "summary": "LoRA Speedrun项目推出公开排行榜，在固定硬件（单张L40S）上比拼Qwen2.5-1.5B的微调运行时间。当前纪录由@Saivineeth147以6分05秒保持，采用序列打包与仅完成损失掩码技术，相比基线11分57秒提速约2倍且准确率更高（61.1%）。项目提供免费Modal沙箱验证，任何提交需经3次独立复现确认。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrt81fki1d1fbitln44dzsrr"
+      }
+    },
+    {
+      "id": "cmrtjg6im3u17bitl3rd7i7m4",
+      "title": "Cursor 测试新型 AI 智能体集群：规划者+执行者分工，4小时通过80% SQL测试",
+      "title_en": "Agent swarms and the new model economics",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "permalink": "https://aihot.virxact.com/items/cmrtjg6im3u17bitl3rd7i7m4",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-07-20T12:00:00.000Z",
+      "summary": "Cursor 测试了新型 AI 智能体集群，将任务分解为规划者（使用最强模型）和执行者（使用快速廉价模型）。使用 Grok 4.5 时，新集群在 4 小时内通过了 80% 的 SQL 测试套件，而旧集群在第二小时前失败。该系统已用于构建浏览器、修复漏洞和生成数十亿 token 合成训练数据。",
+      "category": "ai-products",
+      "score": 64,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtjg6im3u17bitl3rd7i7m4"
+      }
+    },
+    {
+      "id": "cmrsy2z9e03wpbitlqgh25fol",
+      "title": "小红书与北大开源 UltraEP：面向大规模 MoE 训推的实时负载均衡方案",
+      "title_en": "小红书、北大开源 UltraEP：面向大规模 MoE 训推的「最优」负载均衡方案",
+      "url": "https://mp.weixin.qq.com/s/rAoF65ywi5trWbI-heJieg",
+      "permalink": "https://aihot.virxact.com/items/cmrsy2z9e03wpbitlqgh25fol",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-20T08:00:45.000Z",
+      "summary": "小红书与北大提出 UltraEP，首次将基于精确路由信息的实时负载均衡引入生产系统，在每个 microbatch 和每一层动态复制热点专家。在 Qwen3-235B 等模型上，训练吞吐平均达到理想性能的 94.6%，相比 Megatron-LM 提升 42%；推理 prefill 吞吐相比 SGLang 提升 1.56 倍。",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsy2z9e03wpbitlqgh25fol"
+      }
+    },
+    {
+      "id": "cmrsopm9r0b7ubiwmtfvpwkxu",
+      "title": "字节跳动发布 Seed Audio 1.0 音频创作模型，统一建模人声与音效实现端到端影视级音频生成",
+      "title_en": "从\"会说\"走向\"会创作\"| Seed Audio 1.0 音频创作模型发布",
+      "url": "https://seed.bytedance.com/zh/blog/%E4%BB%8E-%E4%BC%9A%E8%AF%B4-%E8%B5%B0%E5%90%91-%E4%BC%9A%E5%88%9B%E4%BD%9C-seed-audio-1-0-%E9%9F%B3%E9%A2%91%E5%88%9B%E4%BD%9C%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+      "permalink": "https://aihot.virxact.com/items/cmrsopm9r0b7ubiwmtfvpwkxu",
+      "source": "字节 Seed：Research Feed（网页内嵌数据）",
+      "publishedAt": "2026-07-19T16:00:00.000Z",
+      "summary": "字节跳动 Seed 团队发布音频创作模型 Seed Audio 1.0，在统一框架下联合建模人声、音效和环境声，支持 100ms 间隔精度的时间控制、单次约 2 分钟音频的延展生成及 20+ 语种自然生成。该模型已在火山方舟体验中心上线，多数场景音频可用率达 90% 以上，多语言音频自然度 MOS 超 4 分。",
+      "category": "ai-products",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsopm9r0b7ubiwmtfvpwkxu"
+      }
+    },
     {
       "id": "cmrraq5dk03p5bi18vyrt83kp",
       "title": "ChatGPT Work 功能：建站、邮件、文档处理",

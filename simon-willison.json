@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-07-19T21:26:31.070Z",
+  "fetched_at": "2026-07-20T21:44:24.904Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Reverse-engineering is cheap now",
+      "link": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+      "updated": "2026-07-20T19:24:05+00:00",
+      "summary": "I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes."
+    },
+    {
+      "title": "Who’s Afraid of Chinese Models?",
+      "link": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+      "updated": "2026-07-20T17:09:19+00:00",
+      "summary": "Who’s Afraid of Chinese Models?"
+    },
+    {
+      "title": "Quoting Sam Altman",
+      "link": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+      "updated": "2026-07-20T03:47:59+00:00",
+      "summary": "We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that. We’d like to do it soon, before Stability or someone else does. In general, we think this helps discourage others from releasing similarly-powerful models, and makes it harder for new efforts to get funded."
+    },
     {
       "title": "AI Mania Is Eviscerating Global Decision-Making",
       "link": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
       "updated": "2026-07-16T23:34:16+00:00",
       "summary": "Firefox in WebAssembly"
-    },
-    {
-      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-      "link": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
-      "updated": "2026-07-16T20:19:30+00:00",
-      "summary": "Chinese AI lab Moonshot AI announced Kimi K3 this morning, describing it as their \"most capable model to date, with 2.8 trillion parameters\". It's currently available via their website and API, but an open weight release is promised \"by July 27, 2026\"."
-    },
-    {
-      "title": "Quoting Thibault Sottiaux",
-      "link": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
-      "updated": "2026-07-16T17:45:59+00:00",
-      "summary": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. What we have found is that this most commonly occurs when: Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled The model attempts to override the $HOME env var to define a temporary directory. The model makes an honest mistake and mistakenly deletes $HOME instead."
-    },
-    {
-      "title": "Inkling: Our open-weights model",
-      "link": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
-      "updated": "2026-07-16T15:35:25+00:00",
-      "summary": "Inkling: Our open-weights model"
     }
   ]
 }

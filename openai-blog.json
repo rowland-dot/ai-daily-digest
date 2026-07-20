@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-07-19T21:26:18.207Z",
+  "fetched_at": "2026-07-20T21:44:22.939Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Safety and alignment in an era of long-horizon models",
+      "link": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "pubDate": "Mon, 20 Jul 2026 10:00:00 GMT",
+      "description": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
+    },
     {
       "title": "A scorecard for the AI age",
       "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
@@ -73,12 +79,6 @@
       "description": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work."
     },
     {
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "link": "https://openai.com/index/bio-bug-bounty",
-      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
-      "description": "Details about the OpenAI Bio Bounty program"
-    },
-    {
       "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
       "link": "https://openai.com/index/gpt-5-6",
       "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
@@ -91,10 +91,10 @@
       "description": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work."
     },
     {
-      "title": "Our approach to government and national security partnerships",
-      "link": "https://openai.com/index/government-national-security-partnerships",
-      "pubDate": "Wed, 08 Jul 2026 13:30:00 GMT",
-      "description": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety."
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "link": "https://openai.com/index/bio-bug-bounty",
+      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
+      "description": "Details about the OpenAI Bio Bounty program"
     }
   ]
 }

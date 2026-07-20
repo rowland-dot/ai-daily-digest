@@ -1,8 +1,25 @@
 {
-  "count": 8,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrtkxcfk49mmbitl5rnaga7n",
+      "title": "ArXiv上超30%新投稿文本特征与AI撰写一致",
+      "title_en": "目前，ArXiv上超过30%的新投稿读起来像是人工智能撰写的",
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "permalink": "https://aihot.virxact.com/items/cmrtkxcfk49mmbitl5rnaga7n",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-20T18:28:23.600Z",
+      "summary": "一项对12，750篇ArXiv论文全文的检测显示，截至2026年7月，约32%的新投稿文本特征与AI撰写一致，该比例在2026年初峰值接近39%。计算机科学领域最高（65%），数学领域最低（0.7%）。检测器在0.4%假阳性率下可识别85%的AI学术文本。",
+      "category": "paper",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtkxcfk49mmbitl5rnaga7n"
+      }
+    },
     {
       "id": "cmrp8wsr10bhobitotnd5hzeq",
       "title": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
@@ -52,6 +69,40 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u"
+      }
+    },
+    {
+      "id": "cmrsmh6lu0aj3biwm320odnsc",
+      "title": "从预训练到后训练：理解推理能力的强化学习缩放规律",
+      "title_en": "Understanding Reasoning from Pretraining to Post-Training",
+      "url": "https://arxiv.org/abs/2607.16097",
+      "permalink": "https://aihot.virxact.com/items/cmrsmh6lu0aj3biwm320odnsc",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-17T00:00:00.000Z",
+      "summary": "一项新研究以国际象棋为受控实验平台，系统探究了预训练与强化学习（RL）在推理任务中的交互关系。研究发现，给定RL计算量下的后训练性能可由预训练损失准确预测，且RL奖励曲线的斜率随预训练token数近似线性提升。在1B参数数学语言模型上，更长预训练的检查点在RL下性能更高、提升更快。",
+      "category": "paper",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj3biwm320odnsc"
+      }
+    },
+    {
+      "id": "cmrsmh6lu0aj2biwm4bfip4jb",
+      "title": "RecGPT-V3 技术报告：状态化混合模态推荐系统在淘宝部署，IPV 提升 1.28%、GPU 成本降低 52.4%",
+      "title_en": "RecGPT-V3 Technical Report",
+      "url": "https://arxiv.org/abs/2607.15591",
+      "permalink": "https://aihot.virxact.com/items/cmrsmh6lu0aj2biwm4bfip4jb",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-17T00:00:00.000Z",
+      "summary": "淘宝部署的 RecGPT-V3 采用状态化行为建模、混合模态基础模型（融合文本标签与 Semantic IDs）和潜在意图推理，将用户建模计算量降低 55.8%，输出 token 成本下降。在\"猜你喜欢\"信息流的大规模在线 A/B 测试中，IPV 提升 1.28%、CTR 提升 1.00%、TC 提升 1.97%、GMV 提升 3.97%，端到端服务资源消耗降低 52.4%。",
+      "category": "paper",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj2biwm4bfip4jb"
       }
     },
     {
@@ -120,23 +171,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrko155e005ubixirangezv8"
-      }
-    },
-    {
-      "id": "cmrkswubg00wabi5qrgj8jc2l",
-      "title": "小米发布Xiaomi-Robotics-U0：380亿参数多模态自回归模型统一具身合成",
-      "title_en": "Xiaomi-Robotics-U0： Unified Embodied Synthesis with World Foundation Model",
-      "url": "https://arxiv.org/abs/2607.11643",
-      "permalink": "https://aihot.virxact.com/items/cmrkswubg00wabi5qrgj8jc2l",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-13T14:57:58.000Z",
-      "summary": "小米推出Xiaomi-Robotics-U0，一个380亿参数的多模态自回归模型，用于统一具身合成。该模型将具身生成视为基础图像与视频生成的延伸，联合优化文生图、图像编辑、具身场景生成、具身迁移及具身视频生成。它是首个支持跨多种机器人形态的高质量多视角场景生成模型，并引入结构化可控具身迁移。该模型在单步与序列生成任务上达到SOTA，在具身场景生成与迁移的人类评估中超越GPT-Image-2.0，在World Arena具身视频生成排名第一，并将pi_0.5在真实世界操控任务上的分布外成功率从36.9%提升至63.2%。代码与检查点已开源。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkswubg00wabi5qrgj8jc2l"
       }
     }
   ]

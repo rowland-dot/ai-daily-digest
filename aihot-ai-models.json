@@ -1,23 +1,74 @@
 {
-  "count": 18,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrrvig4h01ctbi5qyidwptd7",
-      "title": "面壁智能开源 MiniCPM-Robot 具身智能模型系列",
-      "title_en": "🚀 MiniCPM enters the physical world - enabling robots to understand， remember， and act. We open-so…",
-      "url": "https://x.com/OpenBMB/status/2078839529591759025",
-      "permalink": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7",
-      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "publishedAt": "2026-07-19T13:49:01.000Z",
-      "summary": "面壁智能开源首个具身AI模型系列 MiniCPM-Robot，包含 1.5B 参数的通用视觉-语言-动作（VLA）模型 MiniCPM-RobotManip 和用于目标跟踪的 MiniCPM-RobotTrack。同时发布高性能推理框架 PhyAI，旨在让机器人实现理解、记忆与行动。",
+      "id": "cmrtgmuyf3366bitl3gnpc8eo",
+      "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
+      "title_en": "Introducing Cosmos 3 Edge",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
+      "permalink": "https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-07-20T15:58:51.000Z",
+      "summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
       "category": "ai-models",
-      "score": 71,
+      "score": 70,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7"
+        "canonical": "https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo"
+      }
+    },
+    {
+      "id": "cmrt0856a09v9bitl62e4r17b",
+      "title": "通义实验室发布 Qwen-Audio-3.0-TTS 实时语音合成模型",
+      "title_en": "从\"能说话\"到\"会表达\"：Qwen-Audio-3.0-TTS 发布",
+      "url": "https://mp.weixin.qq.com/s/INvrqTrWLMm2WCLIqhqTrg",
+      "permalink": "https://aihot.virxact.com/items/cmrt0856a09v9bitl62e4r17b",
+      "source": "公众号：通义实验室（千问）",
+      "publishedAt": "2026-07-20T08:53:11.000Z",
+      "summary": "通义实验室发布 Qwen-Audio-3.0-TTS，含 Flash（首包延迟约300ms）和 Plus 两个版本。Plus 版本在 Artificial Analysis 榜单夺冠，支持16种语言和20种中文方言，平均 WER/CER 低至3.87（Flash），说话人相似度最高达82.75（Plus）。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrt0856a09v9bitl62e4r17b"
+      }
+    },
+    {
+      "id": "cmrsxb09d0098bitl4vd2rp04",
+      "title": "上海科学智能研究院开放科学多模态基础模型\"神珍\"",
+      "title_en": "多模态 AI 模型\"神珍\"开放，能处理蛋白质、天气等六类科学信息",
+      "url": "https://www.ithome.com/0/979/017.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrsxb09d0098bitl4vd2rp04",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-20T07:00:15.000Z",
+      "summary": "上海科学智能研究院开放科学多模态基础模型\"神珍\"，总参数约110亿，可处理DNA、RNA、蛋白质、小分子、地球系统和医学影像六类数据。在生物序列20项任务中，该模型9项取得最优结果；医学影像分割平均Dice得分91.20，在7种参评方法中最优。模型权重及代码已在星河启智、Hugging Face和GitHub开放。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsxb09d0098bitl4vd2rp04"
+      }
+    },
+    {
+      "id": "cmrsp4xym0bb4biwm2ex85cp2",
+      "title": "面壁智能发布首个具身智能成果 MiniCPM-Robot 系列模型，含 1.5B VLA 与 0.9B 跟踪模型",
+      "title_en": "WAIC 2026 | 面壁智能首个具身智能成果 MiniCPM-Robot 系列模型正式发布！",
+      "url": "https://mp.weixin.qq.com/s/KwBAC8TFa846WFj-DHrgIQ",
+      "permalink": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2",
+      "source": "公众号：面壁智能（MiniCPM）",
+      "publishedAt": "2026-07-20T03:54:08.000Z",
+      "summary": "面壁智能联合 OpenBMB 发布并开源 MiniCPM-Robot 系列，包括通用 VLA 模型 MiniCPM-RobotManip（1.5B 参数）与移动跟踪模型 MiniCPM-RobotTrack（0.9B 参数）。",
+      "category": "ai-models",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2"
       }
     },
     {
@@ -120,6 +171,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmroipdr803rvbito8t018vr1"
+      }
+    },
+    {
+      "id": "cmrsmh6lu0aj0biwmsi84t57e",
+      "title": "NVIDIA 发布 Audio-Visual Flamingo：面向长视频的开放音频-视觉大语言模型",
+      "title_en": "Audio-Visual Flamingo： Open Audio-Visual Intelligence for Long and Complex Videos",
+      "url": "https://arxiv.org/abs/2607.16107",
+      "permalink": "https://aihot.virxact.com/items/cmrsmh6lu0aj0biwmsi84t57e",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-17T00:00:00.000Z",
+      "summary": "NVIDIA 推出 Nemotron-Labs-Audio-Visual Flamingo（AV-Flamingo），一个完全开源的音频-视觉大语言模型，专为理解和推理长视频中的音频、图像与复杂场景设计。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj0biwmsi84t57e"
       }
     },
     {
@@ -256,57 +324,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrn2lfgm05nqbijez4jazf3n"
-      }
-    },
-    {
-      "id": "cmrnvwztt01bdbixyj6fk8322",
-      "title": "Kimi K3 发布：2.8T 参数开源模型，具备原生视觉与百万 token 上下文窗口",
-      "title_en": "Kimi K3",
-      "url": "https://www.kimi.com/blog/kimi-k3",
-      "permalink": "https://aihot.virxact.com/items/cmrnvwztt01bdbixyj6fk8322",
-      "source": "Moonshot AI：Kimi Blog",
-      "publishedAt": "2026-07-13T16:00:00.000Z",
-      "summary": "月之暗面发布 Kimi K3，一个 2.8T 参数的开源模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，支持原生视觉能力与 100 万 token 上下文窗口。",
-      "category": "ai-models",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnvwztt01bdbixyj6fk8322"
-      }
-    },
-    {
-      "id": "cmrj6actv0651bilkm5pfz6ub",
-      "title": "德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先",
-      "title_en": "German AI consortium releases Soofi S， an open 30B model that tops benchmarks in both English and German",
-      "url": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german",
-      "permalink": "https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-13T11:41:01.000Z",
-      "summary": "德国AI协会协调的研究联盟发布开源大语言模型Soofi S 30B-A3B。该模型总参数量316亿，每个token仅激活约32亿参数，采用Mamba-2与标准注意力层混合的MoE架构。模型完全在德国电信慕尼黑工业AI云上训练，训练数据中德语占比从第一阶段的7.2%提升至第二阶段的15.3%。在基准测试中，Soofi S在所有完全开源模型中取得英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。在HumanEval上得分73.8%，MBPP得分70.2，德语版MBPP得分84.2。上下文窗口支持最高100万token，在4万token长度下，生成吞吐量约为同规模稠密模型的8倍。模型权重已开源。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub"
-      }
-    },
-    {
-      "id": "cmrj4s89p05nhbilkljqel2d5",
-      "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
-      "title_en": "训推全开源：HyOCR-1.5 让端到端 OCR 大模型跑得更快、看得更准、功能更全",
-      "url": "https://mp.weixin.qq.com/s/vKFCa9FfoGBUGK8J1MhFag",
-      "permalink": "https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-07-13T11:12:59.000Z",
-      "summary": "腾讯混元发布 HyOCR-1.5，这是端到端 OCR 大模型领域首个将训练、推理、模型权重完整开源的专家模型。仅 1B 参数，覆盖 8 种以上 text-centric 任务。引入 DFlash 投机解码框架，在 Transformers 下实现 6.37× 加速，vLLM 下 2.14× 加速，端到端推理达每页 1.408s。支持 4K 分辨率与 128K 上下文窗口，通过 Agentic Data Flow 扩展低资源 OCR（331 种语言）、古文字识别与多图问答能力。在 OmniDocBench v1.6 上以 94.74 分居端到端第一。",
-      "category": "ai-models",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5"
       }
     }
   ]

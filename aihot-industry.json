@@ -1,8 +1,76 @@
 {
-  "count": 17,
+  "count": 18,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrtirgkp3n0ybitlf25zqtwv",
+      "title": "《第九区》导演Neill Blomkamp发布首部完全由AI生成的短片《Nightborne》",
+      "title_en": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
+      "url": "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation",
+      "permalink": "https://aihot.virxact.com/items/cmrtirgkp3n0ybitlf25zqtwv",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-20T17:32:41.000Z",
+      "summary": "Neill Blomkamp发布了13分钟科幻恐怖短片《Nightborne》，完全使用Seedance 2.0视频生成模型通过文本提示逐帧创作。影片采用纪录片风格，使用了32位真实人物的面部和声音（已获授权），人类艺术家负责概念艺术。Blomkamp表示计划以相同格式拍摄一部长片，并已创立AI电影工作室Barley Studios。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtirgkp3n0ybitlf25zqtwv"
+      }
+    },
+    {
+      "id": "cmrt6yjfo1407bitlsdp6qyn6",
+      "title": "Hugging Face 遭自主AI智能体入侵，用AI工具完成数小时取证分析",
+      "title_en": "Hugging Face says an AI agent hacked its infrastructure， and it used AI to fight back",
+      "url": "https://the-decoder.com/hugging-face-says-an-ai-agent-hacked-its-infrastructure-and-it-used-ai-to-fight-back",
+      "permalink": "https://aihot.virxact.com/items/cmrt6yjfo1407bitlsdp6qyn6",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-20T12:12:47.000Z",
+      "summary": "Hugging Face 披露其部分生产基础设施遭一个自主AI智能体系统入侵，攻击者通过恶意数据集利用数据处理管道中的代码执行漏洞，窃取了内部数据集和多项服务凭证。该公司部署LLM驱动的分析智能体，在数小时内完成了对17000多条攻击行为的取证分析，而此类工作通常需要数天。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrt6yjfo1407bitlsdp6qyn6"
+      }
+    },
+    {
+      "id": "cmrsl3weh0a3pbiwmdqtrjycc",
+      "title": "Ollama 获 8800 万美元融资，加速开放模型生态发展",
+      "title_en": "Ollama：欢迎加入开放模型行列",
+      "url": "https://ollama.com/blog/all-aboard-open-models",
+      "permalink": "https://aihot.virxact.com/items/cmrsl3weh0a3pbiwmdqtrjycc",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-20T01:45:09.765Z",
+      "summary": "Ollama 宣布完成 8800 万美元融资，由 Benchmark、Theory Ventures 和 8VC 等领投。该平台已服务 890 万开发者，并被 85% 的财富 500 强企业使用，其云端 token 用量月均翻倍。资金将用于支持无缝混合推理、新模型发布当日集成，以及让开发者在不牺牲所有权和隐私的前提下使用最强开放模型。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsl3weh0a3pbiwmdqtrjycc"
+      }
+    },
+    {
+      "id": "cmrsbql4401gxbiuaj7s1567n",
+      "title": "黄仁勋访日：Nvidia 联手日本打造物理 AI 时代，Noetra 主权 AI 工厂与 Cosmos 机器人联盟落地",
+      "title_en": "What to watch for after Jensen Huang's Japan visit",
+      "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit",
+      "permalink": "https://aihot.virxact.com/items/cmrsbql4401gxbiuaj7s1567n",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-19T21:16:07.000Z",
+      "summary": "Nvidia CEO 黄仁勋在 7 月 15-16 日访日期间，宣布为日本建设\"Vera Rubin AI 工厂\"，配备 13，750 颗 Vera CPU 和 27，500 颗 Rubin GPU，预计 2028 年投运。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrsbql4401gxbiuaj7s1567n"
+      }
+    },
     {
       "id": "cmrp97h7o0020biuxh7pzewro",
       "title": "Apple 起诉 OpenAI：诉讼背后是竞争焦虑还是时机博弈？",
@@ -239,57 +307,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrjw1gyj011bbiw2epuuumva"
-      }
-    },
-    {
-      "id": "cmrj36yri059qbilk1n6jhqn1",
-      "title": "Meta 宣布扩建路易斯安那州数据中心至 5GW，总投资超 500 亿美元",
-      "title_en": "总投资超 500 亿美元，Meta 宣布扩建路易斯安那州数据中心至 5GW 规模",
-      "url": "https://www.ithome.com/0/976/149.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrj36yri059qbilk1n6jhqn1",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-13T09:58:56.000Z",
-      "summary": "Meta 将其路易斯安那州数据中心算力扩至 5GW，总投资超 500 亿美元，为全球最大 AI 基础设施投资之一。Meta 承诺承担全部能源及水资源费用，并另投超 10 亿美元改善当地道路及供水系统。此外，Meta 与安特吉公司达成协议，为新建天然气发电厂、储能电池及核电增容项目提供资金支持。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrj36yri059qbilk1n6jhqn1"
-      }
-    },
-    {
-      "id": "cmrijw1sy00j6bi0jshweyv4l",
-      "title": "黄仁勋：英伟达季度收入逼近千亿美元，Rubin Ultra 架构未延期",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/975/865.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrijw1sy00j6bi0jshweyv4l",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-13T00:55:29.000Z",
-      "summary": "英伟达CEO黄仁勋在摩根士丹利路演中表示，公司季度营收即将逼近1000亿美元，且增长速度仍在加快。他否认下一代旗舰架构Rubin Ultra延期传闻，称其仍按计划于明年出货，当前机架设计调整仅为系统架构优化。一个此前主要依赖ASIC的前沿AI模型项目，如今英伟达GPU算力占比已接近50%，市场普遍指向Anthropic。英伟达预计本财年CPU业务收入约200亿美元，下一代Vera CPU将进军通用服务器市场。摩根士丹利维持英伟达\"增持\"评级，目标价288美元。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrijw1sy00j6bi0jshweyv4l"
-      }
-    },
-    {
-      "id": "cmriguktg00arbijpt0l7c2vh",
-      "title": "xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥",
-      "title_en": "我只让Grok回复一个单词，它就把我整个代码库都偷走了。",
-      "url": "https://mp.weixin.qq.com/s/6c6vGMJAVMbh6UhNVw4dcg",
-      "permalink": "https://aihot.virxact.com/items/cmriguktg00arbijpt0l7c2vh",
-      "source": "公众号：数字生命卡兹克",
-      "publishedAt": "2026-07-13T00:05:00.000Z",
-      "summary": "安全研究者发现，xAI 官方 Grok CLI（npm 包 `@xai-official/grok` 0.2.93 版）会在每轮任务前后，将当前工作目录打包为 `before_codebase.tar.gz` 和 `after_codebase.tar.gz`，通过独立旁路通道静默上传至 xAI 的 Google Cloud 仓库。验证显示，即使模型仅回复一个单词，上传依然发生。上传包还包含仓库外的 `~/.claude.json`、Claude Code 设置、全局 AGENTS 规则、30 多个 Skill 文件及一个 API 密钥。7 月 13 日凌晨，xAI 通过服务端远程开关新增 `disable_codebase_upload` 字段，将默认上传行为关闭，但此前该功能默认开启。",
-      "category": "industry",
-      "score": 86,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmriguktg00arbijpt0l7c2vh"
       }
     }
   ]
