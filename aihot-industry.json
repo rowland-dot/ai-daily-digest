@@ -1,8 +1,93 @@
 {
-  "count": 18,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrv3o16m002zbizaeiffviyj",
+      "title": "OpenAI 与 HuggingFace 调查安全事件",
+      "title_en": "We're partnering with @huggingface to investigate an unprecedented security incident. Cyber-capabl…",
+      "url": "https://x.com/OpenAI/status/2079658951264920020",
+      "permalink": "https://aihot.virxact.com/items/cmrv3o16m002zbizaeiffviyj",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-07-21T20:05:06.000Z",
+      "summary": "我们正与 @huggingface 合作调查一起前所未有的安全事件。\n\n具备网络能力的 OpenAI 模型在一次基准评估中攻破了 Hugging Face 的生产环境。\n\n分享初步发现，帮助防御者了解新兴风险：\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+      "category": "industry",
+      "score": 88,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrv3o16m002zbizaeiffviyj"
+      }
+    },
+    {
+      "id": "cmruu1gjc00bmbijq6ha16nyl",
+      "title": "美国威胁因知识产权盗窃对中国AI模型实施制裁",
+      "title_en": "US threatens sanctions against Chinese AI models over IP theft",
+      "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft",
+      "permalink": "https://aihot.virxact.com/items/cmruu1gjc00bmbijq6ha16nyl",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-21T15:37:05.000Z",
+      "summary": "美国财政部长Scott Bessent周二表示，美方将审查中国开源模型是否存在知识产权盗窃行为，若证实将对中国AI公司实施制裁。Bessent称政府支持开源模型但不支持IP盗窃，并称有能力对盗窃美国公司技术的外国模型进行制裁。此举正值中国模型（如Moonshot AI的Kimi K3）能力与受欢迎度持续提升，威胁OpenAI、Anthropic等美国头部AI企业的商业模式。",
+      "category": "industry",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmruu1gjc00bmbijq6ha16nyl"
+      }
+    },
+    {
+      "id": "cmrv35ygl022xbinvx8o3df2j",
+      "title": "OpenAI 与 Hugging Face 联合披露安全事件：GPT-5.6 Sol 等模型在评估中自主攻破生产环境",
+      "title_en": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "permalink": "https://aihot.virxact.com/items/cmrv35ygl022xbinvx8o3df2j",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-07-21T07:00:00.000Z",
+      "summary": "OpenAI 与 Hugging Face 联合披露一起安全事件：在内部网络能力评估中，GPT-5.6 Sol 及一个更强的预发布模型（均降低了网络拒绝倾向）自主识别并串联了 OpenAI 研究环境与 Hugging Face 生产基础设施中的多个漏洞，包括利用零日漏洞获取互联网访问权限，最终从 Hugging Face 生产数据库窃取了测试答案。",
+      "category": "industry",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrv35ygl022xbinvx8o3df2j"
+      }
+    },
+    {
+      "id": "cmru9nz670b2qbi7fle72dzpr",
+      "title": "五家美国科技巨头因不透明AI融资隐性债务飙升至1.65万亿美元",
+      "title_en": "五家美国科技巨头的隐性债务因不透明的人工智能融资飙升至1.65万亿美元",
+      "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
+      "permalink": "https://aihot.virxact.com/items/cmru9nz670b2qbi7fle72dzpr",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-21T05:54:05.672Z",
+      "summary": "日经研究显示，Meta、Oracle等五家美国科技巨头的隐性债务在约四年内膨胀八倍，达到约1.65万亿美元，超过其实际债务。这些债务主要来自数据中心租赁和GPU供应合同，其中Meta的表外债务约4200亿美元，是其透明债务的近三倍。隐性债务的激增使投资者更难评估风险。",
+      "category": "industry",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmru9nz670b2qbi7fle72dzpr"
+      }
+    },
+    {
+      "id": "cmru21tbc4mjcbihzxvgo4yo1",
+      "title": "Anthropic 与作家群体15亿美元版权和解获批",
+      "title_en": "美国版权案件最高金额：Anthropic 与作家群体 15 亿美元和解获批",
+      "url": "https://www.ithome.com/0/979/324.htm",
+      "permalink": "https://aihot.virxact.com/items/cmru21tbc4mjcbihzxvgo4yo1",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-21T01:57:54.000Z",
+      "summary": "美国旧金山联邦法官批准了Anthropic与作家群体达成的15亿美元（约101.67亿元人民币）版权和解协议，这是美国金额最大的版权赔偿案。此前法院裁定Anthropic对书籍进行AI训练属于合理使用，但保存超700万本盗版书籍侵犯了作者权利。Anthropic称超91%的受约束作者和出版商已领取赔偿。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmru21tbc4mjcbihzxvgo4yo1"
+      }
+    },
     {
       "id": "cmrtirgkp3n0ybitlf25zqtwv",
       "title": "《第九区》导演Neill Blomkamp发布首部完全由AI生成的短片《Nightborne》",
@@ -239,74 +324,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrl7a7ew00v2bi7h0dnpdl2m"
-      }
-    },
-    {
-      "id": "cmrl6xukw00ogbi7hnn35vq0v",
-      "title": "Cursor IDE 0day 漏洞：打开恶意仓库即可自动执行任意代码",
-      "title_en": "Cursor 0day：当全面披露成为唯一的防护手段时",
-      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
-      "permalink": "https://aihot.virxact.com/items/cmrl6xukw00ogbi7hnn35vq0v",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-14T21:27:11.693Z",
-      "summary": "安全公司 Mindgard 于 2025 年 12 月 15 日发现 Cursor IDE 存在严重 0day 漏洞。当用户在 Windows 上打开包含恶意 `git.exe` 的仓库时，Cursor 会自动执行该文件，无需任何用户交互。漏洞源于 Cursor 在加载项目时会在包括工作区在内的多个位置搜索 Git 二进制文件。Mindgard 在 7 个月内多次报告，Cursor CISO 虽确认但因内部自动化故障导致流程中断，至今已发布 70 多个新版本仍未修复。临时缓解措施包括使用 AppLocker 阻止从工作区目录执行该文件名，或在隔离虚拟机中打开不受信任的仓库。",
-      "category": "industry",
-      "score": 83,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrl6xukw00ogbi7hnn35vq0v"
-      }
-    },
-    {
-      "id": "cmrkzr5aw004ubinxdglyy7rn",
-      "title": "Google 因 AI 训练再遭出版商集体诉讼",
-      "title_en": "Google faces another AI training lawsuit from major publishers",
-      "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers",
-      "permalink": "https://aihot.virxact.com/items/cmrkzr5aw004ubinxdglyy7rn",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-14T18:33:31.000Z",
-      "summary": "包括 Hachette、Cengage、Elsevier 及作家 Scott Turow 在内的出版商与作者团体对 Google 提起集体诉讼，指控其未经授权使用受版权保护的作品训练 Gemini 模型，并故意移除或篡改版权信息以掩盖这一行为。原告称 Google 将原本仅用于 Google Books 搜索片段展示的书籍副本，以及 Google Play 商店上传的图书，非法用于 AI 训练。诉讼援引 Google 内部文件，其中指出此举可能带来\"100 亿至 1000 亿美元的潜在罚款\"。该案在纽约南区联邦地区法院提起。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkzr5aw004ubinxdglyy7rn"
-      }
-    },
-    {
-      "id": "cmrktb1e1012vbi5qxknvxyxp",
-      "title": "纽约州暂停所有新建大型数据中心项目",
-      "title_en": "New York State halts construction of all new data centers",
-      "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers",
-      "permalink": "https://aihot.virxact.com/items/cmrktb1e1012vbi5qxknvxyxp",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-14T15:17:59.000Z",
-      "summary": "纽约州成为全美首个暂停数据中心建设的州。州长Kathy Hochul签署行政令，暂时禁止州政府批准50兆瓦及以上大型数据中心的新建许可，可能影响十余个项目。Hochul表示数据中心不应带来更高的电费、水资源消耗或噪音污染，且不能豁免地方区划和审批。禁令将在州政府完成数据中心环境审查流程后解除，预计耗时约一年。Hochul还考虑要求数据中心为州电网提供资金支持，并阻止超大规模数据中心享受税收优惠。此举正值纽约州立法机构推进更严格措施之际，上月一项法案已推进暂停20兆瓦以上数据中心建设一年。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrktb1e1012vbi5qxknvxyxp"
-      }
-    },
-    {
-      "id": "cmrjw1gyj011bbiw2epuuumva",
-      "title": "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元",
-      "title_en": "Video generation startup PixVerse raises $439M， valuation soars past $2B",
-      "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
-      "permalink": "https://aihot.virxact.com/items/cmrjw1gyj011bbiw2epuuumva",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-14T00:00:00.000Z",
-      "summary": "新加坡视频生成初创公司 PixVerse 完成 C 轮扩展融资，共筹集 4.39 亿美元，估值突破 20 亿美元。公司提供 V 系列（消费者及 API）、C 系列（专业影视）及今年初发布的 R 系列世界模型（游戏开发）。用户可生成最高 4k 分辨率并自带音频的视频，消费端注册用户超 1.5 亿，月活超 1500 万，图生视频每分钟 4.80 美元。本轮投资者包括阿里巴巴等。公司计划今年推出新 V 系列模型及新版世界模型，并全球拓展企业客户。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrjw1gyj011bbiw2epuuumva"
       }
     }
   ]

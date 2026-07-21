@@ -1,23 +1,125 @@
 {
-  "count": 27,
+  "count": 30,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrtfkakm2undbitla364sgej",
-      "title": "Grok for Excel 发布：在 Microsoft Excel 中用自然语言提问、写公式和运行场景",
-      "title_en": "Grok for Excel",
-      "url": "https://x.ai/news/introducing-excel-addin",
-      "permalink": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-20T16:19:52.655Z",
-      "summary": "xAI 将 Grok 引入 Microsoft Excel，推出免费 Microsoft 365 加载项。用户可在工作表中用自然语言提问、根据描述编写公式或运行场景，答案会引用具体单元格，图表可直接插入工作表。该加载项还支持连接 SharePoint 或 Google Drive 获取上下文，并已同步支持 Word 和 PowerPoint。",
+      "id": "cmrv2m1gu01w8binv2kiup4x2",
+      "title": "OpenAI 在 ChatGPT 中正式推出广告服务",
+      "title_en": "在ChatGPT上投放广告",
+      "url": "https://ads.openai.com/",
+      "permalink": "https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-21T19:39:29.689Z",
+      "summary": "OpenAI 在 ChatGPT 中推出原生广告服务，允许广告主在用户探索选项、比较选择和做出决策时投放相关广告。广告在体验中明确标注并与回答区分，首批广告主包括 Best Buy、Lowe's 和 VistaPrint。广告主可通过 Ads Manager 创建广告系列、设置预算并优化效果。",
       "category": "ai-products",
-      "score": 69,
+      "score": 77,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej"
+        "canonical": "https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2"
+      }
+    },
+    {
+      "id": "cmruze9vm00ywbinvdmqyi5j0",
+      "title": "Laguna S 2.1 免费开源上线 OpenCode",
+      "title_en": "Laguna S 2.1 is now free on OpenCode 1M Context · fully open source Poolside's most capable model …",
+      "url": "https://x.com/opencode/status/2079631772770242808",
+      "permalink": "https://aihot.virxact.com/items/cmruze9vm00ywbinvdmqyi5j0",
+      "source": "X：opencode (@opencode)",
+      "publishedAt": "2026-07-21T18:17:06.000Z",
+      "summary": "Laguna S 2.1 现已在 OpenCode 上免费提供\n\n1M 上下文窗口 · 完全开源\n\nPoolside 迄今为止最强大的模型",
+      "category": "ai-products",
+      "score": 56,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmruze9vm00ywbinvdmqyi5j0"
+      }
+    },
+    {
+      "id": "cmrux94210069binvu0d80ww6",
+      "title": "xAI 推出 Grok for Outlook 加载项",
+      "title_en": "Grok for Outlook",
+      "url": "https://x.ai/news/introducing-outlook-addin",
+      "permalink": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-21T17:22:49.842Z",
+      "summary": "xAI 今日推出 Grok for Outlook，一个 Microsoft 365 加载项，可将 Grok 智能体嵌入邮箱，用于总结长邮件线程、以用户风格起草回复并整理收件箱。该工具即日起对所有付费 X 和 SuperGrok 用户开放，可从 Microsoft Marketplace 添加。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6"
+      }
+    },
+    {
+      "id": "cmruuc0d80006bii0tzwael16",
+      "title": "Google 推出 Tunix：基于 JAX 的高吞吐智能体后训练库",
+      "title_en": "Scaling Agentic RL： High-Throughput Agentic Training with Tunix",
+      "url": "https://developers.googleblog.com/scaling-agentic-rl-high-throughput-agentic-training-with-tunix",
+      "permalink": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-07-21T16:00:05.337Z",
+      "summary": "Google 发布 Tunix，一个基于 JAX 的原生后训练库，旨在消除多轮、使用工具的 LLM 推理智能体训练中的 TPU 闲置瓶颈。Tunix 通过高并发异步 rollout 与解耦的生产者-消费者流水线最大化硬件吞吐量，确保训练器持续获得数据。该库提供即插即用抽象和持续宏观级性能分析，便于集成自定义环境。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16"
+      }
+    },
+    {
+      "id": "cmruv42p2008ebii0yteu9750",
+      "title": "Claude Cowork 新增技能录制功能",
+      "title_en": "New in Claude Cowork： teach Claude a skill. Record your screen while you do a task， talk through it…",
+      "url": "https://x.com/claudeai/status/2079595988998554047",
+      "permalink": "https://aihot.virxact.com/items/cmruv42p2008ebii0yteu9750",
+      "source": "X：Claude (@claudeai)",
+      "publishedAt": "2026-07-21T15:54:55.000Z",
+      "summary": "Claude Cowork 新功能：教 Claude 一项技能。\n录制你执行任务时的屏幕操作，边做边讲解，Claude 会将其转化为可重复运行的技能。在 Claude 桌面应用的 + 菜单中找到\"录制技能\"即可使用。\n适用于 Pro、Max 和 Team 套餐。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmruv42p2008ebii0yteu9750"
+      }
+    },
+    {
+      "id": "cmru3vmv252v2bihzm2btrcpy",
+      "title": "腾讯混元推出Hyra-1.0递归自我改进研究智能体",
+      "title_en": "Hyra发布：一个简单有效的科学发现智能体",
+      "url": "https://mp.weixin.qq.com/s/upwDQ_6ZfmszBUcRQjR_Dg",
+      "permalink": "https://aihot.virxact.com/items/cmru3vmv252v2bihzm2btrcpy",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-07-21T03:33:08.000Z",
+      "summary": "腾讯混元推出Hyra-1.0，一个能递归自我改进的研究智能体，在NanoChat等三项任务上均超越Recursive公开结果。Hyra在55个数学开放问题中刷新29个历史最好结果，并设计出仅含15个可训练参数即可完成10位数加法的Transformer。所有产物已在GitHub开源。",
+      "category": "ai-products",
+      "score": 64,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmru3vmv252v2bihzm2btrcpy"
+      }
+    },
+    {
+      "id": "cmrtxsl2e3o24bihzutblssoo",
+      "title": "代理群（Agent Swarm）通过树状分解在构建 SQLite（Rust 版）任务中达到 80% 测试通过率",
+      "title_en": "代理群与新经济模式",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "permalink": "https://aihot.virxact.com/items/cmrtxsl2e3o24bihzutblssoo",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-21T00:35:26.928Z",
+      "summary": "一项实验证明，将任务分解为规划者与执行者的树状结构后，代理群在四小时内用 Grok 4.5 达到 80% 的 SQL 测试通过率，而旧版代理群在第二小时前即失败。新系统峰值提交速度达每秒 1，000 次，为此团队从零构建了专用版本控制系统。该架构已在构建浏览器、修复漏洞及生成数十亿 token 合成数据等任务中验证。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtxsl2e3o24bihzutblssoo"
       }
     },
     {
@@ -86,6 +188,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsy2z9e03wpbitlqgh25fol"
+      }
+    },
+    {
+      "id": "cmrtfkakm2undbitla364sgej",
+      "title": "Grok for Excel 发布：在 Microsoft Excel 中用自然语言提问、写公式和运行场景",
+      "title_en": "Grok for Excel",
+      "url": "https://x.ai/news/introducing-excel-addin",
+      "permalink": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-19T16:00:00.000Z",
+      "summary": "xAI 将 Grok 引入 Microsoft Excel，推出免费 Microsoft 365 加载项。用户可在工作表中用自然语言提问、根据描述编写公式或运行场景，答案会引用具体单元格，图表可直接插入工作表。该加载项还支持连接 SharePoint 或 Google Drive 获取上下文，并已同步支持 Word 和 PowerPoint。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej"
       }
     },
     {
@@ -392,74 +511,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d"
-      }
-    },
-    {
-      "id": "cmrmkn6j703yfbiul4fa0bai9",
-      "title": "xAI 开源 Grok Build 编程智能体与终端界面",
-      "title_en": "Grok Build is Now Open Source",
-      "url": "https://x.ai/news/grok-build-open-source",
-      "permalink": "https://aihot.virxact.com/items/cmrmkn6j703yfbiul4fa0bai9",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-14T16:00:00.000Z",
-      "summary": "xAI 已将 Grok Build 的源代码在 GitHub 上开源。Grok Build 是 SpaceXAI 的编程智能体与终端用户界面（TUI），开源后用户可自行编译并完全本地运行，指向本地推理引擎并通过 `config.toml` 配置。",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmkn6j703yfbiul4fa0bai9"
-      }
-    },
-    {
-      "id": "cmrkta2fv011vbi5qe7hdwh0s",
-      "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
-      "title_en": "http://x.com/i/article/2067347903761485824",
-      "url": "https://x.com/googleaidevs/status/2077049898059354565",
-      "permalink": "https://aihot.virxact.com/items/cmrkta2fv011vbi5qe7hdwh0s",
-      "source": "X：Google AI for Developers (@googleaidevs)",
-      "publishedAt": "2026-07-14T15:17:40.000Z",
-      "summary": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言、近实时延迟的语音到语音翻译。该模型直接处理原始音频流，保留说话者语调、节奏和音高。东南亚超级应用 Grab 正探索将其用于司机与乘客间的跨语言沟通，其用户每月发起超 1000 万次语音通话。开发者可通过 Gemini Live API 集成 LiveKit、Fishjam、Pipecat 或 Vision Agents 构建应用。LiveKit 已实现虚拟会议室多语言即时理解；Software Mansion 结合 MoQ 协议突破流媒体瓶颈；VisionAgents AI 展示了动态多语言切换能力。开发者可在 Google AI Studio 试用并获取 Cookbook 示例代码。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkta2fv011vbi5qe7hdwh0s"
-      }
-    },
-    {
-      "id": "cmrksgyym00utbi5qx5x6v42u",
-      "title": "Anthropic 推出 Claude for Teachers",
-      "title_en": "Introducing Claude for Teachers",
-      "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "permalink": "https://aihot.virxact.com/items/cmrksgyym00utbi5qx5x6v42u",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-07-14T15:11:11.440Z",
-      "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrksgyym00utbi5qx5x6v42u"
-      }
-    },
-    {
-      "id": "cmrkedwpc013nbizssg3olzs7",
-      "title": "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试",
-      "title_en": "内置\"任意门\"，高德发布通用世界模型工坊 ABot-WorldStudio",
-      "url": "https://www.ithome.com/0/976/538.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrkedwpc013nbizssg3olzs7",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-14T07:46:46.000Z",
-      "summary": "阿里巴巴旗下高德发布通用世界模型工坊 ABot-WorldStudio，并开放测试。该产品将交互式视频生成与 3DGS 场景生成统一，用户输入文字或图片即可生成可实时交互、可分享的 AI 世界。工坊内置\"时空任意门\"，穿越后可跃迁至另一完整 3D 世界。官方实测单次连续推理稳定运行超1小时，无崩溃、无质量衰减。底层模型 ABot-World0 与 ABot-3DWorld0 均可在单张 5090 上本地部署，已全面开源。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkedwpc013nbizssg3olzs7"
       }
     }
   ]

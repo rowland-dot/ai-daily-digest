@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-20T21:44:24.904Z",
+  "fetched_at": "2026-07-21T21:40:35.501Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Nativ: Run AI models locally on your Mac",
+      "link": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+      "updated": "2026-07-21T14:22:27+00:00",
+      "summary": "Nativ: Run AI models locally on your Mac"
+    },
+    {
+      "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+      "link": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+      "updated": "2026-07-21T12:54:02+00:00",
+      "summary": "Earlier this month I hosted a fireside chat session at the AI Engineer World's Fair with Cat Wu and Thariq Shihipar from Anthropic's Claude Code team. We talked about Claude Code, Claude Tag, Fable, coding agent security, evals, tool design, and how Anthropic use these tools themselves."
+    },
     {
       "title": "Reverse-engineering is cheap now",
       "link": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
       "updated": "2026-07-17T12:11:11+00:00",
       "summary": "I got frustrated reading yet another article that was crammed with the clichés of LLM-generated writing - \"no fluff, no filler, no jargon\" type stuff - so I had Fable 5 vibe code up this app for highlighting ten common patterns that show up in that sort of writing."
-    },
-    {
-      "title": "Spot birds not golf",
-      "link": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
-      "updated": "2026-07-17T02:58:07+00:00",
-      "summary": "Suggestion for hyperscalers feeling pressure over data center water use:"
-    },
-    {
-      "title": "Firefox in WebAssembly",
-      "link": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
-      "updated": "2026-07-16T23:34:16+00:00",
-      "summary": "Firefox in WebAssembly"
     }
   ]
 }

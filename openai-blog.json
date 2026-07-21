@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-07-20T21:44:22.939Z",
+  "fetched_at": "2026-07-21T21:40:29.149Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Introducing the ChatGPT for small business program",
+      "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "pubDate": "Tue, 21 Jul 2026 17:00:00 GMT",
+      "description": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work."
+    },
+    {
+      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "link": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "description": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders."
+    },
+    {
+      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+      "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+      "pubDate": "Tue, 21 Jul 2026 00:00:00 GMT",
+      "description": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance."
+    },
     {
       "title": "Safety and alignment in an era of long-horizon models",
       "link": "https://openai.com/index/safety-alignment-long-horizon-models",
@@ -77,24 +95,6 @@
       "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
       "pubDate": "Thu, 09 Jul 2026 13:00:00 GMT",
       "description": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work."
-    },
-    {
-      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
-      "link": "https://openai.com/index/gpt-5-6",
-      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
-      "description": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work."
-    },
-    {
-      "title": "ChatGPT is now a partner for your most ambitious work",
-      "link": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
-      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
-      "description": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work."
-    },
-    {
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "link": "https://openai.com/index/bio-bug-bounty",
-      "pubDate": "Thu, 09 Jul 2026 10:00:00 GMT",
-      "description": "Details about the OpenAI Bio Bounty program"
     }
   ]
 }

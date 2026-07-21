@@ -1,8 +1,76 @@
 {
-  "count": 19,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrux97ht007tbinvf2ol1jds",
+      "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
+      "title_en": "Google releases three new Gemini models - but no 3.5 Pro",
+      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro",
+      "permalink": "https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-21T17:11:50.000Z",
+      "summary": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 3.6 Flash 在编码和多模态性能上提升，token 用量降低 17%，成本低于前代；3.5 Flash Cyber 专为修复网络安全漏洞微调，仅限政府及可信合作伙伴使用。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds"
+      }
+    },
+    {
+      "id": "cmrusyoaf0bfgbi9ttofctwvj",
+      "title": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型",
+      "title_en": "Introducing Gemini 3.6 Flash， 3.5 Flash-Lite， and 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
+      "permalink": "https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-07-21T15:16:30.000Z",
+      "summary": "Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。",
+      "category": "ai-models",
+      "score": 57,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj"
+      }
+    },
+    {
+      "id": "cmrujyaak0mhmbi07h3daik9b",
+      "title": "小红书 dots 模型获 IMO 2026 满分金牌",
+      "title_en": "小红书dots模型取得IMO 2026满分金牌水平",
+      "url": "https://mp.weixin.qq.com/s/EITf-SrP5o62Ljp7UGzPVw",
+      "permalink": "https://aihot.virxact.com/items/cmrujyaak0mhmbi07h3daik9b",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-21T11:06:49.000Z",
+      "summary": "小红书 dots 团队携内部版本 dots-note 3.0 参加第 67 届 IMO 2026，六道题均获满分，以 42/42 分取得满分金牌，全球仅 7 位人类选手获此成绩。模型不依赖形式化语言，直接读取原始 LaTeX 题目，通过递归自我批判能力端到端完成解题。dots-note 3.0 是 dots3 系列最轻量级模型，预期将开源。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrujyaak0mhmbi07h3daik9b"
+      }
+    },
+    {
+      "id": "cmru9nwvo0b1kbi7f5vi9uqfu",
+      "title": "Qwen发布 Qwen-Image-3.0 图像生成模型，核心关键词为\"实\"",
+      "title_en": "Qwen-Image-3.0： Rich Content， Authentic Details， Deep Knowledge",
+      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
+      "permalink": "https://aihot.virxact.com/items/cmru9nwvo0b1kbi7f5vi9uqfu",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-07-21T06:00:00.000Z",
+      "summary": "Qwen发布第三代图像生成基座模型 Qwen-Image-3.0，核心关键词为\"实\"。该模型支持最长 4.5k token 指令输入，可单次生成包含 9 个复杂信息图的 3×3 网格布局；文本渲染精度达 10px，并支持 12 种语言原生渲染，旨在将图像转化为可部署的生产力工具。",
+      "category": "ai-models",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmru9nwvo0b1kbi7f5vi9uqfu"
+      }
+    },
     {
       "id": "cmrtgmuyf3366bitl3gnpc8eo",
       "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
@@ -18,6 +86,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo"
+      }
+    },
+    {
+      "id": "cmrtal6bt1vmsbitl1mta8hxg",
+      "title": "昆仑万维发布并开源可交互世界模型 Matrix-Game 3.5",
+      "title_en": "游戏引擎将死，世界模型奇点临近，Matrix Game-3.5引领游戏世界开源模型第一品牌",
+      "url": "https://mp.weixin.qq.com/s/TUVv2wvp4RixsblDLrvSGg",
+      "permalink": "https://aihot.virxact.com/items/cmrtal6bt1vmsbitl1mta8hxg",
+      "source": "公众号：昆仑万维（天工）",
+      "publishedAt": "2026-07-20T13:45:18.000Z",
+      "summary": "昆仑万维在 WAIC 2026 发布并开源新一代可交互世界模型 Matrix-Game 3.5。该模型通过 Patch Memory 与 Warped PRoPE 实现长期记忆与几何一致性建模，可在单张 GPU 上以 720P 分辨率、约 20FPS 实时生成流式视频。",
+      "category": "ai-models",
+      "score": 64,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrtal6bt1vmsbitl1mta8hxg"
       }
     },
     {
@@ -69,6 +154,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2"
+      }
+    },
+    {
+      "id": "cmrrvig4h01ctbi5qyidwptd7",
+      "title": "面壁智能开源 MiniCPM-Robot 具身智能模型系列",
+      "title_en": "🚀 MiniCPM enters the physical world - enabling robots to understand， remember， and act. We open-so…",
+      "url": "https://x.com/OpenBMB/status/2078839529591759025",
+      "permalink": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-07-19T13:49:01.000Z",
+      "summary": "面壁智能开源首个具身AI模型系列 MiniCPM-Robot，包含 1.5B 参数的通用视觉-语言-动作（VLA）模型 MiniCPM-RobotManip 和用于目标跟踪的 MiniCPM-RobotTrack。同时发布高性能推理框架 PhyAI，旨在让机器人实现理解、记忆与行动。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7"
       }
     },
     {
@@ -225,6 +327,23 @@
       }
     },
     {
+      "id": "cmrlkhlt50c6ebi2bm7wu1q8a",
+      "title": "腾讯混元发布 Hy3 1-bit 与 4-bit 版本",
+      "title_en": "Can't Find Benchmark and download link ？ See here 👇https://huggingface.co/AngelSlim/Hy3-GGUF",
+      "url": "https://x.com/TencentHunyuan/status/2077241060523426067",
+      "permalink": "https://aihot.virxact.com/items/cmrlkhlt50c6ebi2bm7wu1q8a",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-07-15T03:57:16.000Z",
+      "summary": "找不到基准测试和下载链接？看这里👇https://huggingface.co/AngelSlim/Hy3-GGUF\n\n我们刚刚发布了 Hy3 的 1-bit 与 4-bit 版本，这是一个旗舰级 295B 模型，可在单张 GPU 上运行。👌\n\n使用 llama.cpp 运行 Hy3，启用 MTP，在显著更低的硬件上体验强大的智能。🚀🚀🚀\n\n迫不及待想看到你们的作品。\n\n#Hy3 #Hy #GGUF #llamacpp",
+      "category": "ai-models",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrlkhlt50c6ebi2bm7wu1q8a"
+      }
+    },
+    {
       "id": "cmrlh3k0009h8bi2bwjpgkauw",
       "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
       "title_en": "Qwen-Audio-3.0-Realtime 如何让语音交互\"懂倾听，更聪明\"？",
@@ -239,91 +358,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw"
-      }
-    },
-    {
-      "id": "cmrl2m4yg00awbicqo2arojvd",
-      "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
-      "title_en": "Bonsai 27B：首款可在手机上运行的27B级模型",
-      "url": "https://prismml.com/news/bonsai-27b",
-      "permalink": "https://aihot.virxact.com/items/cmrl2m4yg00awbicqo2arojvd",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-14T19:51:19.560Z",
-      "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
-      "category": "ai-models",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrl2m4yg00awbicqo2arojvd"
-      }
-    },
-    {
-      "id": "cmrkw3h0101xtbi5qs4nj3sxa",
-      "title": "Google 在 I/O Connect India 展示由 Tensor SoC 和 TPU 驱动的 Pixel 10 端侧 AI 未来",
-      "title_en": "Unlocking the Next Era of On-Device AI with Google Tensor and Pixel",
-      "url": "https://developers.googleblog.com/unlocking-the-next-era-of-on-device-ai-with-google-tensor-and-pixel",
-      "permalink": "https://aihot.virxact.com/items/cmrkw3h0101xtbi5qs4nj3sxa",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-07-14T16:51:42.219Z",
-      "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta 及其配套开源资源，开始构建这些安全的边缘应用。",
-      "category": "ai-models",
-      "score": 58,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkw3h0101xtbi5qs4nj3sxa"
-      }
-    },
-    {
-      "id": "cmrkf8gun01a4bizsthjytx6c",
-      "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
-      "title_en": "极致量化，近三千亿参数 Hy3 单卡即可部署",
-      "url": "https://mp.weixin.qq.com/s/Kq30ftirASryPrUtjK2xSw",
-      "permalink": "https://aihot.virxact.com/items/cmrkf8gun01a4bizsthjytx6c",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-07-14T08:56:07.000Z",
-      "summary": "腾讯混元团队为旗舰模型 Hy3（295B 参数）推出量化版本。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，缩小 6.7 倍，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 169.9 GiB，两张显卡可承载。量化版在 Agent、多语言代码、工具调用、长文理解等任务上表现接近满血模型。团队还提供 GPTQ Int4 版本，支持 vLLM 部署。配合 MTP 投机解码，1bit 版本解码速度提升约 50%，4bit 版本提升近 60%。所有版本已开源并打包为 GGUF 格式，适配 llama.cpp 生态。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrkf8gun01a4bizsthjytx6c"
-      }
-    },
-    {
-      "id": "cmrjy99kt01nvbiw22bwjsvnv",
-      "title": "商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型",
-      "title_en": "SenseNova-Vision-7B-MoT， fully open-sourced： one model， �…",
-      "url": "https://x.com/SenseTime_AI/status/2076828658531262619",
-      "permalink": "https://aihot.virxact.com/items/cmrjy99kt01nvbiw22bwjsvnv",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-07-14T00:38:32.000Z",
-      "summary": "商汤发布并完全开源 SenseNova-Vision-7B-MoT，一个统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务的模型。该模型支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及 SenseNova-Vision Corpus（含 5000 万示例子集及复现剩余公开数据的完整工具包）。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrjy99kt01nvbiw22bwjsvnv"
-      }
-    },
-    {
-      "id": "cmrn2lfgm05nqbijez4jazf3n",
-      "title": "Boogu-Image-0.1 发布：开源统一多模态理解与生成模型，训练成本仅约 40 万美元",
-      "title_en": "Boogu-Image-0.1： Boosting Open-Source Unified Multimodal Understanding and Generation",
-      "url": "https://arxiv.org/abs/2607.13125",
-      "permalink": "https://aihot.virxact.com/items/cmrn2lfgm05nqbijez4jazf3n",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-14T00:00:00.000Z",
-      "summary": "Boogu-Image-0.1 系列开源统一多模态理解与生成模型发布，包含 Base、Turbo、Edit 和 Edit-Turbo 四个变体，支持高质量文生图、快速推理、指令编辑及中英双语文本渲染。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrn2lfgm05nqbijez4jazf3n"
       }
     }
   ]
