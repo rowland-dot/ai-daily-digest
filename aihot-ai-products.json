@@ -1,8 +1,127 @@
 {
-  "count": 30,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrwh01sr01qyroj0qdt3mo09",
+      "title": "GigaToken 发布：语言模型分词速度最高提升约 1000 倍，可无缝替代 HuggingFace Tokenizers",
+      "title_en": "GigaToken：语言模型分词速度提升约1000倍",
+      "url": "https://github.com/marcelroed/gigatoken",
+      "permalink": "https://aihot.virxact.com/items/cmrwh01sr01qyroj0qdt3mo09",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-22T18:51:32.473Z",
+      "summary": "GigaToken 是一款新的语言模型分词器，在 AMD EPYC 9565 双路 144 核 CPU 上对 GPT-2 分词速度达 24.53 GB/s，比 HuggingFace Tokenizers 快 989 倍、比 tiktoken 快 681 倍。",
+      "category": "ai-products",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwh01sr01qyroj0qdt3mo09"
+      }
+    },
+    {
+      "id": "cmrweu9dz014froj0gj35xvw9",
+      "title": "微软 MagenticLite 模型全面开源",
+      "title_en": "MagenticLite's models are now fully open source. MagenticBrain and Fara 1.5， previously available …",
+      "url": "https://x.com/MSFTResearch/status/2079989338994069511",
+      "permalink": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-07-22T17:57:57.000Z",
+      "summary": "MagenticLite 的模型现已完全开源。\n\n此前在 Microsoft Foundry 上提供的 MagenticBrain 和 Fara 1.5，现已在 Hugging Face 上开放权重。\n\n该应用、测试工具以及堆栈中的每个模型现已全部开放。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9"
+      }
+    },
+    {
+      "id": "cmrwcpwl900hyroj09infknzb",
+      "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
+      "title_en": "Ask Claude about the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "permalink": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-07-22T17:23:31.324Z",
+      "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问\"哪些职业使用 AI 最多\"等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb"
+      }
+    },
+    {
+      "id": "cmrvx8ycy0240bipz0pkrvryq",
+      "title": "小红书开源 BigMac：多模态大模型训练新范式",
+      "title_en": "小红书 dots infra 开源BigMac ： 突破多模态大模型训练的帕累托前沿",
+      "url": "https://mp.weixin.qq.com/s/tNJARtn1jIayL5URg87Row",
+      "permalink": "https://aihot.virxact.com/items/cmrvx8ycy0240bipz0pkrvryq",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-22T10:04:51.000Z",
+      "summary": "小红书技术团队开源 BigMac，一种针对多模态大模型训练的依赖安全嵌套流水线新范式。它以 LLM 流水线为主干，在不打乱执行顺序的前提下嵌入编码器和生成器计算，相比基线实现 1.08x-1.9x 加速，同时保持激活显存有界。BigMac 已作为 dots 多模态模型训练的核心组件投入生产。",
+      "category": "ai-products",
+      "score": 62,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrvx8ycy0240bipz0pkrvryq"
+      }
+    },
+    {
+      "id": "cmrvl3qgw03hubihbavi1fla0",
+      "title": "腾讯设计Agent平台Miora全面开放",
+      "title_en": "腾讯悄悄上线了他们第一个设计Agent - Miora。",
+      "url": "https://mp.weixin.qq.com/s/qQhq9nxoeCD68iMwQoEVFQ",
+      "permalink": "https://aihot.virxact.com/items/cmrvl3qgw03hubihbavi1fla0",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-07-22T04:21:03.000Z",
+      "summary": "腾讯设计Agent平台Miora今日全面开放，无需邀请码即可使用。该平台由WorkBuddy团队打造，提供品牌设计、影视创意等五大场景模式，支持自定义多模态模型和Agent推理深度，并内置Skill市场与记忆系统。",
+      "category": "ai-products",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrvl3qgw03hubihbavi1fla0"
+      }
+    },
+    {
+      "id": "cmrwer0kl0127roj0zluq7yeh",
+      "title": "Cursor 发布智能模型路由系统 Cursor Router",
+      "title_en": "Introducing Cursor Router",
+      "url": "https://cursor.com/blog/router",
+      "permalink": "https://aihot.virxact.com/items/cmrwer0kl0127roj0zluq7yeh",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-07-22T00:00:00.000Z",
+      "summary": "Cursor 推出 Cursor Router，可自动将每个编码请求分配给最合适的模型。在线 A/B 测试显示，Auto Intelligence 模式在用户满意度接近 Fable 的同时，成本降低约 60%；Auto Balance 模式满意度超过 Opus 4.8，成本降低约 36%。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwer0kl0127roj0zluq7yeh"
+      }
+    },
+    {
+      "id": "cmrv7y3de002lbi8rsqvvaoq1",
+      "title": "OpenRouter 上线 Gemini 3.6 Flash 与 3.5 Flash-Lite",
+      "title_en": "Launched today on OpenRouter： Gemini 3.6 Flash and Gemini 3.5 Flash-Lite！ Both strong updates to th…",
+      "url": "https://x.com/OpenRouter/status/2079686435247186015",
+      "permalink": "https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-07-21T21:54:19.000Z",
+      "summary": "今日在 OpenRouter 上线：Gemini 3.6 Flash 和 Gemini 3.5 Flash-Lite！\n两者均为其模型系列的重大更新，具备高吞吐量（150+ tok/s），适用于智能体场景，从高效 token 的编码与知识工作，到低延迟、高并发的子智能体。\n详情如下 🧵",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1"
+      }
+    },
     {
       "id": "cmrv2m1gu01w8binv2kiup4x2",
       "title": "OpenAI 在 ChatGPT 中正式推出广告服务",
@@ -35,23 +154,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmruze9vm00ywbinvdmqyi5j0"
-      }
-    },
-    {
-      "id": "cmrux94210069binvu0d80ww6",
-      "title": "xAI 推出 Grok for Outlook 加载项",
-      "title_en": "Grok for Outlook",
-      "url": "https://x.ai/news/introducing-outlook-addin",
-      "permalink": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-21T17:22:49.842Z",
-      "summary": "xAI 今日推出 Grok for Outlook，一个 Microsoft 365 加载项，可将 Grok 智能体嵌入邮箱，用于总结长邮件线程、以用户风格起草回复并整理收件箱。该工具即日起对所有付费 X 和 SuperGrok 用户开放，可从 Microsoft Marketplace 添加。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6"
       }
     },
     {
@@ -123,6 +225,23 @@
       }
     },
     {
+      "id": "cmrvnxfx7047nbihbzr6crygg",
+      "title": "AgentDebugX：面向LLM智能体的开源故障调试框架",
+      "title_en": "AgentDebugX： An Open-Source Toolkit for Failure Observability， Attribution， and Recovery in LLM Agents",
+      "url": "https://arxiv.org/abs/2607.18754",
+      "permalink": "https://aihot.virxact.com/items/cmrvnxfx7047nbihbzr6crygg",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-21T00:00:00.000Z",
+      "summary": "AgentDebugX是一个开源调试框架，将LLM智能体调试组织为\"检测-归因-恢复-重跑\"闭环。其核心DeepDebug在Who&When基准上对qwen3.5-9b达到精确的智能体与步骤归因准确率，在GAIA上单次重跑即可修复失败任务。该工具提供Python库、CLI、Web控制台和可安装的智能体技能。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrvnxfx7047nbihbzr6crygg"
+      }
+    },
+    {
       "id": "cmrtfjet52udzbitl7n6bqkqj",
       "title": "Replit 新统一工具栏集成数据库与双因素认证",
       "title_en": "Need a database？ Two-factor auth？ An SEO scanner？ Everything your project needs is now in reach wit…",
@@ -137,6 +256,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrtfjet52udzbitl7n6bqkqj"
+      }
+    },
+    {
+      "id": "cmrux94210069binvu0d80ww6",
+      "title": "xAI 推出 Grok for Outlook 加载项",
+      "title_en": "Grok for Outlook",
+      "url": "https://x.ai/news/introducing-outlook-addin",
+      "permalink": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-07-20T16:00:00.000Z",
+      "summary": "xAI 今日推出 Grok for Outlook，一个 Microsoft 365 加载项，可将 Grok 智能体嵌入邮箱，用于总结长邮件线程、以用户风格起草回复并整理收件箱。该工具即日起对所有付费 X 和 SuperGrok 用户开放，可从 Microsoft Marketplace 添加。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6"
       }
     },
     {
@@ -426,91 +562,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts"
-      }
-    },
-    {
-      "id": "cmrmk6l3k03rtbiull7o39kq0",
-      "title": "Claude Code 新增 MCP 连接器调用功能",
-      "title_en": "Claude Code artifacts can now call MCP connectors， letting you build dashboards and apps that can fe…",
-      "url": "https://x.com/ClaudeDevs/status/2077489907350856038",
-      "permalink": "https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-07-15T20:26:06.000Z",
-      "summary": "Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。\n\n适用于 Pro、Max、Team 和 Enterprise 计划。不适用于公开共享的 artifacts。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0"
-      }
-    },
-    {
-      "id": "cmro185e3011jbij2ond4t12b",
-      "title": "Grok 推出 Automations 功能：定时或邮件触发，自动执行任务并汇报结果",
-      "title_en": "Automations in Grok",
-      "url": "https://x.ai/news/grok-automations",
-      "permalink": "https://aihot.virxact.com/items/cmro185e3011jbij2ond4t12b",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-15T16:00:00.000Z",
-      "summary": "xAI 为 Grok 引入 Automations 功能，用户可描述一次任务，让 Grok 按计划（一次/每日/工作日/每周/每月/每年）或邮件触发（按发件人、收件人或主题过滤）自动运行。每次执行都是一次完整对话，结果保存至运行历史，支持邮件或应用内通知。定时自动化对所有用户开放，邮件触发需 SuperGrok 订阅。",
-      "category": "ai-products",
-      "score": 85,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmro185e3011jbij2ond4t12b"
-      }
-    },
-    {
-      "id": "cmrm9ne9101gqbiijkgrj6t9h",
-      "title": "Telegram 无服务器架构",
-      "title_en": null,
-      "url": "https://core.telegram.org/bots/serverless",
-      "permalink": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-15T15:37:19.450Z",
-      "summary": "Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h"
-      }
-    },
-    {
-      "id": "cmrltzprt0014bi5k7mp2uwpy",
-      "title": "金山办公推出 WPS Comate AI 办公客户端",
-      "title_en": "金山办公推出 WPS Comate AI 办公客户端，支持 Skill 技能生态、自动化任务、Wiki 知识库等",
-      "url": "https://www.ithome.com/0/977/105.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrltzprt0014bi5k7mp2uwpy",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-15T08:39:58.000Z",
-      "summary": "金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrltzprt0014bi5k7mp2uwpy"
-      }
-    },
-    {
-      "id": "cmrl9plh50014bi2b56tar61d",
-      "title": "Codex 周活超700万，两月更新150+项",
-      "title_en": "7M+ weekly Codex users. 150+ updates in two months. @romainhuet catches you up on what's new in Cod…",
-      "url": "https://x.com/OpenAIDevs/status/2077166520392970529",
-      "permalink": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-07-14T23:01:05.000Z",
-      "summary": "7M+ 周活跃 Codex 用户。两月内 150+ 项更新。\n\n@romainhuet 为你梳理 Codex 新动态：GPT-5.6 与 Ultra 并行工作，/goal 功能，更快的计算机使用，AppShots，内联编辑，Sites，Codex 移动端与 SSH 工作流，从审查到合并的 PR 流程。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d"
       }
     }
   ]

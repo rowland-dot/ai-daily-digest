@@ -1,23 +1,23 @@
 {
-  "count": 12,
+  "count": 11,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmruzdnzo00vpbinv65us569l",
-      "title": "OpenAI 发布奖励寻求行为新研究",
-      "title_en": "We're sharing new research with @apolloaievals on reward-seeking-when models follow what they believ…",
-      "url": "https://x.com/OpenAI/status/2079628886950994005",
-      "permalink": "https://aihot.virxact.com/items/cmruzdnzo00vpbinv65us569l",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-07-21T18:05:38.000Z",
-      "summary": "我们正与 @apolloaievals 分享关于奖励寻求行为的新研究--即模型遵循其认为评分者奖励的内容，而非用户或开发者期望的内容--以及一种新方法 Contrastive SDF，用于衡量这些信念对行为的影响程度。\n\nhttps://alignment.openai.com/measuring-reward-seeking/",
+      "id": "cmrvls9qg03jtbihbfhtx203y",
+      "title": "ABot-World-0：单张桌面级GPU实现无限交互式世界生成",
+      "title_en": "ABot-World-0： Infinite Interactive World Rollout on a Single Desktop GPU",
+      "url": "https://arxiv.org/abs/2607.19191",
+      "permalink": "https://aihot.virxact.com/items/cmrvls9qg03jtbihbfhtx203y",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-21T15:26:50.000Z",
+      "summary": "ABot-World-0是一个动作条件视频世界模型，能在单张NVIDIA RTX 5090 GPU上以720P分辨率、最高16 FPS、1.2秒动作到首帧延迟和约19 GiB峰值显存预算运行无限交互式世界生成。该模型采用统一的帧同步键盘动作接口，通过LongForcing分布匹配阶段解决长程自回归漂移问题，并集成轻量级VAE解码器、低比特DiT推理和局部上下文KV缓存等系统级优化。",
       "category": "paper",
-      "score": 65,
+      "score": 83,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmruzdnzo00vpbinv65us569l"
+        "canonical": "https://aihot.virxact.com/items/cmrvls9qg03jtbihbfhtx203y"
       }
     },
     {
@@ -123,6 +123,23 @@
       }
     },
     {
+      "id": "cmrvfcrfv01kebihbglmvfomx",
+      "title": "NexForge：通过需求驱动任务合成扩展LLM智能体能力",
+      "title_en": "NexForge： Scaling Agent Capabilities through Requirement-Driven Task Synthesis for LLMs",
+      "url": "https://arxiv.org/abs/2607.14186",
+      "permalink": "https://aihot.virxact.com/items/cmrvfcrfv01kebihbglmvfomx",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-17T00:00:00.000Z",
+      "summary": "NexForge提出需求驱动框架，无需领域特定基础设施即可自动合成多样化可执行智能体任务与专家轨迹。该框架生成3.6K终端和2K办公任务，将Qwen3.5-35B-A3B Base在Terminal-Bench 2.0上从22.5%提升至52.0%，GDPval Elo从813提升至1338。",
+      "category": "paper",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrvfcrfv01kebihbglmvfomx"
+      }
+    },
+    {
       "id": "cmrsmh6lu0aj3biwm320odnsc",
       "title": "从预训练到后训练：理解推理能力的强化学习缩放规律",
       "title_en": "Understanding Reasoning from Pretraining to Post-Training",
@@ -171,40 +188,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrnclu0101cgbic6rpcgkw8s"
-      }
-    },
-    {
-      "id": "cmrmee60505d9bivcmy92uddy",
-      "title": "Anthropic 研究：AI 智能体模拟中行为偏差",
-      "title_en": "New Anthropic research： Agentic misalignment in Summer 2026. A year after our blackmail experiments…",
-      "url": "https://x.com/AnthropicAI/status/2077452646303006927",
-      "permalink": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy",
-      "source": "X：Anthropic (@AnthropicAI)",
-      "publishedAt": "2026-07-15T17:58:02.000Z",
-      "summary": "Anthropic 新研究：2026 年夏季的智能体行为偏差。\n\n在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。\n\n了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy"
-      }
-    },
-    {
-      "id": "cmrnvwztt01bebixyznbje716",
-      "title": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
-      "title_en": "PerceptionBench",
-      "url": "https://www.kimi.com/blog/perception-bench",
-      "permalink": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716",
-      "source": "Moonshot AI：Kimi Blog",
-      "publishedAt": "2026-07-15T16:00:00.000Z",
-      "summary": "Moonshot AI 发布 PerceptionBench，一个从 40 多个现有基准中模型实际失败案例归纳出的视觉感知基准，包含 10 项原子感知能力和 3000 道验证题。所有测试模型准确率均未超过 60%，且大量正确答案在重复提问时无法复现，表明模型更多是猜测而非真正感知。PerceptionBench 旨在精确诊断多模态 AI 的视觉感知断裂点，推动其实现忠实、一致的视觉理解。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnvwztt01bebixyznbje716"
       }
     }
   ]

@@ -1,25 +1,8 @@
 {
-  "count": 21,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
-    {
-      "id": "cmrux97ht007tbinvf2ol1jds",
-      "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
-      "title_en": "Google releases three new Gemini models - but no 3.5 Pro",
-      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro",
-      "permalink": "https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-21T17:11:50.000Z",
-      "summary": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 3.6 Flash 在编码和多模态性能上提升，token 用量降低 17%，成本低于前代；3.5 Flash Cyber 专为修复网络安全漏洞微调，仅限政府及可信合作伙伴使用。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds"
-      }
-    },
     {
       "id": "cmrusyoaf0bfgbi9ttofctwvj",
       "title": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型",
@@ -89,23 +72,6 @@
       }
     },
     {
-      "id": "cmrtal6bt1vmsbitl1mta8hxg",
-      "title": "昆仑万维发布并开源可交互世界模型 Matrix-Game 3.5",
-      "title_en": "游戏引擎将死，世界模型奇点临近，Matrix Game-3.5引领游戏世界开源模型第一品牌",
-      "url": "https://mp.weixin.qq.com/s/TUVv2wvp4RixsblDLrvSGg",
-      "permalink": "https://aihot.virxact.com/items/cmrtal6bt1vmsbitl1mta8hxg",
-      "source": "公众号：昆仑万维（天工）",
-      "publishedAt": "2026-07-20T13:45:18.000Z",
-      "summary": "昆仑万维在 WAIC 2026 发布并开源新一代可交互世界模型 Matrix-Game 3.5。该模型通过 Patch Memory 与 Warped PRoPE 实现长期记忆与几何一致性建模，可在单张 GPU 上以 720P 分辨率、约 20FPS 实时生成流式视频。",
-      "category": "ai-models",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtal6bt1vmsbitl1mta8hxg"
-      }
-    },
-    {
       "id": "cmrt0856a09v9bitl62e4r17b",
       "title": "通义实验室发布 Qwen-Audio-3.0-TTS 实时语音合成模型",
       "title_en": "从\"能说话\"到\"会表达\"：Qwen-Audio-3.0-TTS 发布",
@@ -154,23 +120,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2"
-      }
-    },
-    {
-      "id": "cmrrvig4h01ctbi5qyidwptd7",
-      "title": "面壁智能开源 MiniCPM-Robot 具身智能模型系列",
-      "title_en": "🚀 MiniCPM enters the physical world - enabling robots to understand， remember， and act. We open-so…",
-      "url": "https://x.com/OpenBMB/status/2078839529591759025",
-      "permalink": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7",
-      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "publishedAt": "2026-07-19T13:49:01.000Z",
-      "summary": "面壁智能开源首个具身AI模型系列 MiniCPM-Robot，包含 1.5B 参数的通用视觉-语言-动作（VLA）模型 MiniCPM-RobotManip 和用于目标跟踪的 MiniCPM-RobotTrack。同时发布高性能推理框架 PhyAI，旨在让机器人实现理解、记忆与行动。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7"
       }
     },
     {
@@ -290,74 +239,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj0biwmsi84t57e"
-      }
-    },
-    {
-      "id": "cmrmeaixl05bdbivcipzbkgk8",
-      "title": "Thinking Machines 发布多模态模型 Inkling",
-      "title_en": "Today， we are introducing Inkling. Inkling reasons efficiently across text， image， and audio modali…",
-      "url": "https://x.com/thinkymachines/status/2077454609551921208",
-      "permalink": "https://aihot.virxact.com/items/cmrmeaixl05bdbivcipzbkgk8",
-      "source": "X：Thinking Machines (@thinkymachines)",
-      "publishedAt": "2026-07-15T18:05:50.000Z",
-      "summary": "今天，我们推出 Inkling。\n\nInkling 能高效地对文本、图像和音频模态进行推理。我们将提供完整权重。\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\n即日起可在 Tinker 上进行微调。在 Inkling Playground 中试用。🧵",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmeaixl05bdbivcipzbkgk8"
-      }
-    },
-    {
-      "id": "cmrmc527c0088bivcfrd3s2uz",
-      "title": "OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性",
-      "title_en": "GPT-Red： Unlocking Self-Improvement for Robustness",
-      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "permalink": "https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-07-15T10:00:00.000Z",
-      "summary": "OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。",
-      "category": "ai-models",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz"
-      }
-    },
-    {
-      "id": "cmrlkhlt50c6ebi2bm7wu1q8a",
-      "title": "腾讯混元发布 Hy3 1-bit 与 4-bit 版本",
-      "title_en": "Can't Find Benchmark and download link ？ See here 👇https://huggingface.co/AngelSlim/Hy3-GGUF",
-      "url": "https://x.com/TencentHunyuan/status/2077241060523426067",
-      "permalink": "https://aihot.virxact.com/items/cmrlkhlt50c6ebi2bm7wu1q8a",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-07-15T03:57:16.000Z",
-      "summary": "找不到基准测试和下载链接？看这里👇https://huggingface.co/AngelSlim/Hy3-GGUF\n\n我们刚刚发布了 Hy3 的 1-bit 与 4-bit 版本，这是一个旗舰级 295B 模型，可在单张 GPU 上运行。👌\n\n使用 llama.cpp 运行 Hy3，启用 MTP，在显著更低的硬件上体验强大的智能。🚀🚀🚀\n\n迫不及待想看到你们的作品。\n\n#Hy3 #Hy #GGUF #llamacpp",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrlkhlt50c6ebi2bm7wu1q8a"
-      }
-    },
-    {
-      "id": "cmrlh3k0009h8bi2bwjpgkauw",
-      "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
-      "title_en": "Qwen-Audio-3.0-Realtime 如何让语音交互\"懂倾听，更聪明\"？",
-      "url": "https://mp.weixin.qq.com/s/hFp5rtV8-6KVRrgZoCj03A",
-      "permalink": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-07-15T02:30:26.000Z",
-      "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw"
       }
     }
   ]
