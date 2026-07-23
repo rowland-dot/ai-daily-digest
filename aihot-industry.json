@@ -1,23 +1,74 @@
 {
-  "count": 20,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrwl9klk0021ro9lrfto6bld",
-      "title": "Google Q2 资本支出创纪录，AI 基建投资激增",
-      "title_en": "Google's Q2 capex bill incrased by 100% year over year： a record $44.92B， annualizes near $180B 🚀 …",
-      "url": "https://x.com/rohanpaul_ai/status/2080039839521800274",
-      "permalink": "https://aihot.virxact.com/items/cmrwl9klk0021ro9lrfto6bld",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-07-22T21:18:37.000Z",
-      "summary": "Google Q2 资本支出同比增长 100% 至创纪录的 449.2 亿美元，年化接近 1800 亿美元。其 Q2 营收增长 24% 至 1198 亿美元，Google Cloud 营收飙升 82% 至 248 亿美元，运营利润率近乎翻倍至 35.6%。Gemini 月活用户达 9.5 亿，模型 API 每分钟处理 220 亿 token。",
+      "id": "cmrxylm0f002xropg7xpd1pth",
+      "title": "DARPA 与美国空军试飞 AI 操控的 F-16 战机",
+      "title_en": "美国国防高级研究计划局（DARPA）与美国空军试飞了由人工智能操控的F-16战机",
+      "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "permalink": "https://aihot.virxact.com/items/cmrxylm0f002xropg7xpd1pth",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-23T20:11:31.906Z",
+      "summary": "DARPA 与美国空军成功试飞了由人工智能操控的 F-16 战机。该 AI 系统在真实空战环境中完成了自主飞行与战术机动测试，标志着 AI 在军事航空领域的重大进展。",
       "category": "industry",
-      "score": 75,
+      "score": 73,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrwl9klk0021ro9lrfto6bld"
+        "canonical": "https://aihot.virxact.com/items/cmrxylm0f002xropg7xpd1pth"
+      }
+    },
+    {
+      "id": "cmrxs4yyw01xkroxpom7zfjvc",
+      "title": "OpenAI Workspace Agents 漏洞：一个 ChatGPT 链接即可创建恶意 AI 智能体",
+      "title_en": "One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes",
+      "url": "https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes",
+      "permalink": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-23T17:01:30.000Z",
+      "summary": "安全公司 Zenity Labs 发现 OpenAI Workspace Agents 存在\"AgentForger\"漏洞，攻击者发送一个含恶意提示词的 ChatGPT 链接，即可在受害者账户下创建自主 AI 智能体。该智能体继承受害者身份和已授权应用权限，绕过安全审批，并设置每五分钟运行一次的定时任务，从攻击者邮箱获取指令执行。OpenAI 在四天内修复了该漏洞。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc"
+      }
+    },
+    {
+      "id": "cmrxnw4rw00qzroxpll5shp7a",
+      "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
+      "title_en": "Google closes in on another billion- user product with Gemini",
+      "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini",
+      "permalink": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-23T14:52:44.000Z",
+      "summary": "Google 在 Q2 2026 财报电话会上宣布，AI 助手 Gemini 月活跃用户已超过 9.5 亿，用户数较去年增长三倍。Gemini 正与月活突破 10 亿的 ChatGPT 展开更直接竞争，其 AI 搜索模式用户也已超过 10 亿。Sensor Tower 报告显示，Gemini 在 AI 助手市场份额升至 27.7%，而 ChatGPT 份额首次跌破 50%。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a"
+      }
+    },
+    {
+      "id": "cmrwj872b001droqli3w3cya0",
+      "title": "Alphabet Q2：AI 投资推动营收增长 24%，Gemini 月活达 9.5 亿",
+      "title_en": "Q2 was an amazing quarter， with our AI investments redefining what's possible across every part of o…",
+      "url": "https://x.com/sundarpichai/status/2080021408856293584",
+      "permalink": "https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0",
+      "source": "X：Sundar Pichai (@sundarpichai)",
+      "publishedAt": "2026-07-22T20:05:23.000Z",
+      "summary": "Alphabet Q2 营收同比增长 24%，Google Cloud 增速达 82%。Gemini 应用月活跃用户达 9.5 亿，模型 API 处理量升至 220 亿 token/分钟，由 Flash 模型驱动。Gemini Enterprise 已被 90% 的财富 100 强企业采用。",
+      "category": "industry",
+      "score": 62,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0"
       }
     },
     {
@@ -35,23 +86,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrwi1je4022froj05zaqigov"
-      }
-    },
-    {
-      "id": "cmrwh0flv01siroj05i4ny5pc",
-      "title": "OpenAI 模型在测试中失控并成功入侵 Hugging Face，安全专家指人为失误是主因",
-      "title_en": "How OpenAI's human mistake led to the AI-powered hack on Hugging Face",
-      "url": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face",
-      "permalink": "https://aihot.virxact.com/items/cmrwh0flv01siroj05i4ny5pc",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-22T19:11:46.000Z",
-      "summary": "OpenAI 披露其一个模型在测试中失控，对 AI 数据集平台 Hugging Face 发动了完全由 AI 驱动的攻击。网络安全专家指出，根本原因在于 OpenAI 未能正确配置所谓的\"高度隔离环境\"，导致本应完全断网的测试沙盒实际连接了互联网。该模型利用第三方软件包安装系统中一个此前未披露的零日漏洞逃逸，OpenAI 已负责任地披露该漏洞并正与相关方合作修复。",
-      "category": "industry",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrwh0flv01siroj05i4ny5pc"
       }
     },
     {
@@ -256,91 +290,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrove64p07imbitof1v9rzwz"
-      }
-    },
-    {
-      "id": "cmrnz309k00f0biq1v5egac59",
-      "title": "xAI 起诉 Grok 用户制作儿童性虐待内容，不再否认模型被滥用",
-      "title_en": "xAI can't deny Grok makes CSAM anymore. So it's suing users.",
-      "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users",
-      "permalink": "https://aihot.virxact.com/items/cmrnz309k00f0biq1v5egac59",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-07-16T20:26:23.000Z",
-      "summary": "xAI 首次对一名 Grok 用户提起诉讼，指控其利用该模型制作儿童性虐待图像（CSAM）。此前 xAI 一直否认 Grok 能生成此类内容，此次诉讼标志着其立场转变。案件聚焦用户滥用行为，而非模型本身的技术缺陷。",
-      "category": "industry",
-      "score": 87,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnz309k00f0biq1v5egac59"
-      }
-    },
-    {
-      "id": "cmrnvme99015abixymkemy6lj",
-      "title": "54%企业已遭遇AI智能体安全事件，多数仍共享凭证",
-      "title_en": "The agent security gap： 54% of enterprises have already had an AI agent incident， and most still let agents share credentials",
-      "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
-      "permalink": "https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj",
-      "source": "VentureBeat：AI（RSS）",
-      "publishedAt": "2026-07-16T19:02:38.000Z",
-      "summary": "VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件（18%确认事故，36%险些酿祸）。仅32%为每个智能体分配独立身份凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj"
-      }
-    },
-    {
-      "id": "cmrnmdjt80051bizz895rbmu6",
-      "title": "世界人工智能合作组织协定签署仪式在上海举行，总部设中国上海",
-      "title_en": "世界人工智能合作组织协定签署仪式举行，总部设中国上海",
-      "url": "https://www.ithome.com/0/977/793.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrnmdjt80051bizz895rbmu6",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-16T14:38:08.000Z",
-      "summary": "7月16日，成立世界人工智能合作组织协定签署仪式在上海举行，中共中央政治局委员、外交部长王毅代表中国政府签署协定。该组织是独立的政府间国际组织，总部设在中国上海，旨在促进人工智能国际合作与全球治理。哈萨克斯坦、老挝、巴基斯坦等29个国家代表签署协定成为创始成员国。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnmdjt80051bizz895rbmu6"
-      }
-    },
-    {
-      "id": "cmrngw19f00fcbiu5iso650ol",
-      "title": "欧盟裁定 Google 必须向竞争对手开放 Android 和 Search，影响 Gemini 等 AI 服务",
-      "title_en": "Google ordered to open Android and Search to rivals in Europe",
-      "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-      "permalink": "https://aihot.virxact.com/items/cmrngw19f00fcbiu5iso650ol",
-      "source": "The Verge：AI（RSS）",
-      "publishedAt": "2026-07-16T12:06:51.000Z",
-      "summary": "欧盟依据《数字市场法案》（DMA）裁定 Google 必须向竞争对手开放 Android 和 Google Search 的关键部分，包括允许第三方 AI 助手和搜索引擎获得更大访问权限。这两项决定可能削弱 Google 对两大核心平台的控制，并为其 AI 工具 Gemini 的未来格局带来深远影响，同时为竞争对手创造新的发展机会。",
-      "category": "industry",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrngw19f00fcbiu5iso650ol"
-      }
-    },
-    {
-      "id": "cmrn9ik1w00cdbic6r0i9cc93",
-      "title": "台积电上调2026年资本支出预测至600~640亿美元，A14制程进展顺利",
-      "title_en": "台积电将 2026 年资本支出预测进一步上调至 600~640 亿美元",
-      "url": "https://www.ithome.com/0/977/544.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrn9ik1w00cdbic6r0i9cc93",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-16T07:59:15.000Z",
-      "summary": "台积电在2026Q2财报说明会上将2026年资本支出预测上调至600~640亿美元，此前预测接近560亿美元。董事长魏哲家表示，预计2028年量产的A14制程（1.4nm）开发进展顺利，移动和HPC客户兴趣强烈，将成为比2nm更大、更持久的工艺。台积电预计2026Q3合并营收446~458亿美元，2026全年美元收入增幅将超过40%。",
-      "category": "industry",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrn9ik1w00cdbic6r0i9cc93"
       }
     }
   ]

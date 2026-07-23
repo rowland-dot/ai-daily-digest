@@ -1,8 +1,42 @@
 {
-  "count": 33,
+  "count": 25,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrxxl53u03q5roxp15huqnni",
+      "title": "Claude 语音模式现已支持 Opus、Sonnet 及连接工具与多语言",
+      "title_en": "Think through hard problems in voice mode",
+      "url": "https://claude.com/blog/think-through-hard-problems-in-voice-mode",
+      "permalink": "https://aihot.virxact.com/items/cmrxxl53u03q5roxp15huqnni",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-07-23T19:55:29.530Z",
+      "summary": "即日起，Claude 语音模式在 Opus、Sonnet 和 Haiku 上运行，并支持连接 Gmail、Slack 等工具及更多语言。用户可在对话中切换模型，语音模式默认沿用上次文本聊天使用的模型。该功能面向所有用户开放 beta 测试，免费版可使用 Haiku 及一个连接工具，付费版可访问更多模型和全部连接工具。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrxxl53u03q5roxp15huqnni"
+      }
+    },
+    {
+      "id": "cmrxxi2qg03kcroxpcugdaldy",
+      "title": "ChatGPT 桌面版上线语音控制多智能体",
+      "title_en": "ChatGPT Voice is now in the desktop app. Control your computer and direct multiple agents running i…",
+      "url": "https://x.com/OpenAI/status/2080378182469857576",
+      "permalink": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-07-23T19:43:04.000Z",
+      "summary": "ChatGPT 语音功能现已登陆桌面应用。\n\n只需使用语音，即可控制你的电脑，并指挥在 ChatGPT Work 或 Codex 中运行的多个智能体。\n\n该功能由 GPT-Live 驱动，因此它能够同时在该应用中说话、聆听并协调工作。\n\n今日起，面向 macOS 和 Windows 平台的 Plus、Pro、Business、Edu 及 Enterprise 计划用户全球推送。",
+      "category": "ai-products",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy"
+      }
+    },
     {
       "id": "cmrwh01sr01qyroj0qdt3mo09",
       "title": "GigaToken 发布：语言模型分词速度最高提升约 1000 倍，可无缝替代 HuggingFace Tokenizers",
@@ -35,23 +69,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9"
-      }
-    },
-    {
-      "id": "cmrwcpwl900hyroj09infknzb",
-      "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
-      "title_en": "Ask Claude about the Anthropic Economic Index",
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "permalink": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-07-22T17:23:31.324Z",
-      "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问\"哪些职业使用 AI 最多\"等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb"
       }
     },
     {
@@ -171,6 +188,23 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16"
+      }
+    },
+    {
+      "id": "cmrwcpwl900hyroj09infknzb",
+      "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
+      "title_en": "Ask Claude about the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "permalink": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-07-21T16:00:00.000Z",
+      "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问\"哪些职业使用 AI 最多\"等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb"
       }
     },
     {
@@ -392,176 +426,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i"
-      }
-    },
-    {
-      "id": "cmrnvlijq012lbixy2xhlk8k8",
-      "title": "ChatGPT 工作区支持文档表格幻灯片编辑",
-      "title_en": "Create and edit polished docs， spreadsheets， and slides in ChatGPT Work. @nickbaumann_ walks you th…",
-      "url": "https://x.com/ChatGPTapp/status/2077826846373380535",
-      "permalink": "https://aihot.virxact.com/items/cmrnvlijq012lbixy2xhlk8k8",
-      "source": "X：ChatGPT (@ChatGPTapp)",
-      "publishedAt": "2026-07-16T18:44:58.000Z",
-      "summary": "在 ChatGPT 工作区中创建和编辑精美的文档、电子表格和幻灯片。\n\n@nickbaumann_ 为你演示操作。",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnvlijq012lbixy2xhlk8k8"
-      }
-    },
-    {
-      "id": "cmrnvq3xd015sbixyztrtb01z",
-      "title": "Decoy 字体：用空间频率混淆让 AI 看不清你输入的文字",
-      "title_en": "Decoy 字体",
-      "url": "https://www.mixfont.com/experiments/decoy-font",
-      "permalink": "https://aihot.virxact.com/items/cmrnvq3xd015sbixyztrtb01z",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-16T18:32:23.680Z",
-      "summary": "Decoy Font 是一款 TTF 字体，通过在同一字符中叠加不同空间频率的图形（前景细轮廓与背景低频模糊块），使近距离观看时 AI 读到\"诱饵\"字母，而人眼远距离或眯眼时才能看到真实隐藏信息。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnvq3xd015sbixyztrtb01z"
-      }
-    },
-    {
-      "id": "cmrnq8ryq01d5bizzarqvm3y1",
-      "title": "Google Vids 上线 Gemini Omni 与个人数字分身功能",
-      "title_en": "Create， edit and star in videos with two Google Vids updates",
-      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars",
-      "permalink": "https://aihot.virxact.com/items/cmrnq8ryq01d5bizzarqvm3y1",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-07-16T16:00:00.000Z",
-      "summary": "Google Vids 推出两项更新：Gemini Omni 支持用户通过自然语言提示词和图片参考生成、逐步编辑高质量视频片段；个人数字分身功能允许用户上传自拍和语音录制后，输入文字即可让数字分身出镜。两项功能面向 Google AI Pro 和 Ultra 订阅者及 Google Workspace 商业客户开放，所有生成内容均含不可见的 SynthID 数字水印。",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnq8ryq01d5bizzarqvm3y1"
-      }
-    },
-    {
-      "id": "cmrnlyzl3006sbi8v0f80nbaz",
-      "title": "在 Claude Cowork 中使用 Claude Fable 5",
-      "title_en": "Working with Claude Fable 5 in Claude Cowork",
-      "url": "https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork",
-      "permalink": "https://aihot.virxact.com/items/cmrnlyzl3006sbi8v0f80nbaz",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-07-16T14:32:22.664Z",
-      "summary": "Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnlyzl3006sbi8v0f80nbaz"
-      }
-    },
-    {
-      "id": "cmrnj049b00hzbii5lr5jqwgm",
-      "title": "面壁智能开源企业AI数字员工平台StaffDeck",
-      "title_en": "The future of enterprise AI isn't a chatbot-it's a digital workforce. We're open-sourcing StaffDeck…",
-      "url": "https://x.com/OpenBMB/status/2077741814799548451",
-      "permalink": "https://aihot.virxact.com/items/cmrnj049b00hzbii5lr5jqwgm",
-      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "publishedAt": "2026-07-16T13:07:05.000Z",
-      "summary": "面壁智能联合多团队开源StaffDeck，一个用于构建与管理数字员工的企业平台。该平台旨在将专业知识、标准作业程序（SOP）和决策规则转化为持续工作、改进并保留组织知识的数字员工，而非传统聊天机器人。项目代码已发布于GitHub。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnj049b00hzbii5lr5jqwgm"
-      }
-    },
-    {
-      "id": "cmrnhly4m0007bii5zd6dhl1p",
-      "title": "秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级",
-      "title_en": "秒哒3.5： 全球首发iOS App 无代码开发、多端共享后端",
-      "url": "https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg",
-      "permalink": "https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-07-16T12:17:11.000Z",
-      "summary": "百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p"
-      }
-    },
-    {
-      "id": "cmrnc82t9016bbic6qmevgy67",
-      "title": "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商",
-      "title_en": "Expanding Choice in Gemini Enterprise Agent Platform： Introducing Grounding with Parallel Web Search",
-      "url": "https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search",
-      "permalink": "https://aihot.virxact.com/items/cmrnc82t9016bbic6qmevgy67",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-07-16T09:58:51.914Z",
-      "summary": "Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnc82t9016bbic6qmevgy67"
-      }
-    },
-    {
-      "id": "cmrmvgk9r01t6bijelx7vxglt",
-      "title": "天工短剧工作台发布\"Agent智能分镜+无限画布\"双轨创作模式",
-      "title_en": "告别\"随机抽卡\"，天工短剧工作台：让AI短剧制作第一次真正拥有导演思维！",
-      "url": "https://mp.weixin.qq.com/s/WlGAeogkF_N5122nHA0TtQ",
-      "permalink": "https://aihot.virxact.com/items/cmrmvgk9r01t6bijelx7vxglt",
-      "source": "公众号：昆仑万维（天工）",
-      "publishedAt": "2026-07-16T02:00:00.000Z",
-      "summary": "天工短剧工作台推出双轨创作模式，通过导演Agent自动解析剧本、规划站位与机位，并支持多视细节图生成，解决AI短剧角色变脸和站位漂移问题。该工具内置影视级提示词模板、720°全景图及3D导演台，实现可控生产。已有三部作品上线DramaWave 7天实现百万美元级营收。",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmvgk9r01t6bijelx7vxglt"
-      }
-    },
-    {
-      "id": "cmrmudyvj015jbije15lwn7k2",
-      "title": "MiniMax Code 2.0 桌面端焕新：底层架构全面升级，金融模块即将上线",
-      "title_en": "MiniMax Code 2.0 焕新，底层架构全面升级",
-      "url": "https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg",
-      "permalink": "https://aihot.virxact.com/items/cmrmudyvj015jbije15lwn7k2",
-      "source": "公众号：MiniMax（稀宇科技）",
-      "publishedAt": "2026-07-16T01:36:13.000Z",
-      "summary": "MiniMax Code 2.0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmudyvj015jbije15lwn7k2"
-      }
-    },
-    {
-      "id": "cmrmotlpp07iubiuloujszkts",
-      "title": "开源编程智能体内存方案发布，通过 SSH 同步",
-      "title_en": "用于编程代理的开源内存，通过SSH同步",
-      "url": "https://github.com/vshulcz/deja-vu",
-      "permalink": "https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-15T22:49:15.715Z",
-      "summary": "一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。",
-      "category": "ai-products",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts"
       }
     }
   ]

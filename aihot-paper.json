@@ -1,8 +1,59 @@
 {
-  "count": 11,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrwztuqg0000roqpmbblplr7",
+      "title": "小红书HELMSMAN：全闪存服务器实现高性能向量检索，硬件成本节省超90%",
+      "title_en": "小红书引擎架构团队OSDI 2026新成果：HELMSMAN重塑大规模向量检索基础设施",
+      "url": "https://mp.weixin.qq.com/s/WCYE6itbTBPU0Q_3BfQxkA",
+      "permalink": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-23T04:00:00.000Z",
+      "summary": "小红书引擎架构团队在OSDI 2026提出HELMSMAN，一个面向全闪存服务器的高性能向量近似最近邻搜索系统。该系统通过聚类式索引、定制化存储栈和分层学习式搜索剪枝，用约40台全闪存服务器承载了过去约35，000 CPU Core和约350 TB DRAM的负载，硬件成本节省超过90%。",
+      "category": "paper",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7"
+      }
+    },
+    {
+      "id": "cmrwz39z703xjrobh5ex10yo7",
+      "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/980/471.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-23T02:51:59.000Z",
+      "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的\"作弊\"行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
+      "category": "paper",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7"
+      }
+    },
+    {
+      "id": "cmrx3dmt7001nro69xdxeq8dd",
+      "title": "RECAP：通过可解码性监督训练可验证的激活解释",
+      "title_en": "Train the Model， Not the Reader： Decodability Supervision for Verifiable Activation Explanations",
+      "url": "https://arxiv.org/abs/2607.20379",
+      "permalink": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-22T00:00:00.000Z",
+      "summary": "研究发现自然语言自编码器（NLA）的重建分数无法验证逐声明的忠实性，模型可能依赖\"私密代码\"而非真实依据。作者提出RECAP方法，在目标模型上联合训练线性头以保持指定内容可解码。在Pythia-160M上，独立探针能可靠区分真假声明（AUC 0.96），并在对抗编辑下仍能标记谎言（AUC 0.95）。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd"
+      }
+    },
     {
       "id": "cmrvls9qg03jtbihbfhtx203y",
       "title": "ABot-World-0：单张桌面级GPU实现无限交互式世界生成",
@@ -123,6 +174,23 @@
       }
     },
     {
+      "id": "cmrx3dmt7001mro6976afq35y",
+      "title": "ActiveVision 基准测试揭示多模态大模型缺乏主动视觉观察能力",
+      "title_en": "An Exam for Active Observers",
+      "url": "https://arxiv.org/abs/2607.16165",
+      "permalink": "https://aihot.virxact.com/items/cmrx3dmt7001mro6976afq35y",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-17T00:00:00.000Z",
+      "summary": "最新基准测试 ActiveVision 通过 17 项任务评估多模态大语言模型（MLLM）的主动观察能力。得分最高的 GPT-5.5（最高推理层级）仅解决 10.6% 的任务，在 11 项任务上得零分；Claude Fable 5 仅解决 3.5%，而三名人类参与者平均得分 96.1%。即使模型自行编写并运行视觉代码，差距依然显著，表明当前 MLLM 缺乏鲁棒的主动视觉观察能力。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrx3dmt7001mro6976afq35y"
+      }
+    },
+    {
       "id": "cmrvfcrfv01kebihbglmvfomx",
       "title": "NexForge：通过需求驱动任务合成扩展LLM智能体能力",
       "title_en": "NexForge： Scaling Agent Capabilities through Requirement-Driven Task Synthesis for LLMs",
@@ -171,23 +239,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj2biwm4bfip4jb"
-      }
-    },
-    {
-      "id": "cmrnclu0101cgbic6rpcgkw8s",
-      "title": "HYPIC：小红书联合北大、上交提出首个混合注意力大模型位置无关缓存系统",
-      "title_en": "首 token 延迟降 3.25 倍！小红书联合北大、上交提出 HYPIC，让混合注意力大模型用上「位置无关缓存」",
-      "url": "https://mp.weixin.qq.com/s/RWveWvw9yBH6YQINBQ-XjA",
-      "permalink": "https://aihot.virxact.com/items/cmrnclu0101cgbic6rpcgkw8s",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-07-16T10:00:00.000Z",
-      "summary": "HYPIC 在混合注意力大模型上实现了位置无关缓存，将首 token 延迟平均降低 3.25 倍。在 4 个生产级模型上，同 SLO 下可持续 QPS 提升 1.66 倍，任务质量与完全重算仅相差 1.71 分。",
-      "category": "paper",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrnclu0101cgbic6rpcgkw8s"
       }
     }
   ]

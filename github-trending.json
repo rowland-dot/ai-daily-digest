@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-07-22T21:38:03.930Z",
+  "fetched_at": "2026-07-23T21:36:28.189Z",
   "repos": [
+    {
+      "owner": "block",
+      "name": "buzz",
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 6603,
+      "forks": 532,
+      "starsToday": 2460
+    },
     {
       "owner": "koala73",
       "name": "worldmonitor",
@@ -8,86 +19,9 @@
       "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 68699,
-      "forks": 10511,
-      "starsToday": 4131
-    },
-    {
-      "owner": "ruvnet",
-      "name": "RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 83660,
-      "forks": 11225,
-      "starsToday": 875
-    },
-    {
-      "owner": "ayghri",
-      "name": "i-have-adhd",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "description": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 8150,
-      "forks": 373,
-      "starsToday": 1682
-    },
-    {
-      "owner": "schollz",
-      "name": "croc",
-      "url": "https://github.com/schollz/croc",
-      "description": "Easily and securely send things from one computer to another 🐊 📦",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 37501,
-      "forks": 1482,
-      "starsToday": 737
-    },
-    {
-      "owner": "likec4",
-      "name": "likec4",
-      "url": "https://github.com/likec4/likec4",
-      "description": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 4233,
-      "forks": 300,
-      "starsToday": 172
-    },
-    {
-      "owner": "chrislgarry",
-      "name": "Apollo-11",
-      "url": "https://github.com/chrislgarry/Apollo-11",
-      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
-      "language": "Assembly",
-      "languageColor": "#6E4C13",
-      "stars": 70553,
-      "forks": 7879,
-      "starsToday": 766
-    },
-    {
-      "owner": "jamiepine",
-      "name": "voicebox",
-      "url": "https://github.com/jamiepine/voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 45684,
-      "forks": 5581,
-      "starsToday": 565
-    },
-    {
-      "owner": "diegosouzapw",
-      "name": "OmniRoute",
-      "url": "https://github.com/diegosouzapw/OmniRoute",
-      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 25080,
-      "forks": 3340,
-      "starsToday": 1648
+      "stars": 71403,
+      "forks": 10783,
+      "starsToday": 3196
     },
     {
       "owner": "shiyu-coder",
@@ -96,97 +30,9 @@
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 32560,
-      "forks": 5596,
-      "starsToday": 134
-    },
-    {
-      "owner": "ComposioHQ",
-      "name": "awesome-claude-skills",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 68717,
-      "forks": 7801,
-      "starsToday": 155
-    },
-    {
-      "owner": "oblien",
-      "name": "openship",
-      "url": "https://github.com/oblien/openship",
-      "description": "Self-hosted deployment platform",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 7207,
-      "forks": 528,
-      "starsToday": 1304
-    },
-    {
-      "owner": "agegr",
-      "name": "pi-web",
-      "url": "https://github.com/agegr/pi-web",
-      "description": "Web UI for the pi coding agent",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 2051,
-      "forks": 308,
-      "starsToday": 314
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 42178,
-      "forks": 7027,
-      "starsToday": 688
-    },
-    {
-      "owner": "tirth8205",
-      "name": "code-review-graph",
-      "url": "https://github.com/tirth8205/code-review-graph",
-      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 25257,
-      "forks": 2388,
-      "starsToday": 872
-    },
-    {
-      "owner": "dreamhunter2333",
-      "name": "cloudflare_temp_email",
-      "url": "https://github.com/dreamhunter2333/cloudflare_temp_email",
-      "description": "CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 IMAP SMTP TelegramBot",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 10778,
-      "forks": 7287,
-      "starsToday": 60
-    },
-    {
-      "owner": "DioxusLabs",
-      "name": "dioxus",
-      "url": "https://github.com/DioxusLabs/dioxus",
-      "description": "Fullstack app framework for web, desktop, and mobile.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 37975,
-      "forks": 1784,
-      "starsToday": 411
-    },
-    {
-      "owner": "hyprwm",
-      "name": "Hyprland",
-      "url": "https://github.com/hyprwm/Hyprland",
-      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 37273,
-      "forks": 1870,
-      "starsToday": 353
+      "stars": 32997,
+      "forks": 5643,
+      "starsToday": 398
     },
     {
       "owner": "Pumpkin-MC",
@@ -195,20 +41,141 @@
       "description": "Empowering everyone to host fast and efficient Minecraft servers.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 8351,
-      "forks": 589,
-      "starsToday": 96
+      "stars": 8855,
+      "forks": 612,
+      "starsToday": 563
     },
     {
-      "owner": "dottxt-ai",
-      "name": "outlines",
-      "url": "https://github.com/dottxt-ai/outlines",
-      "description": "Structured Outputs",
+      "owner": "citrolabs",
+      "name": "ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "description": "The best browser for both you and your AI agents work in parallel.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 1559,
+      "forks": 91,
+      "starsToday": 219
+    },
+    {
+      "owner": "chrislgarry",
+      "name": "Apollo-11",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "language": "Assembly",
+      "languageColor": "#6E4C13",
+      "stars": 71059,
+      "forks": 7915,
+      "starsToday": 599
+    },
+    {
+      "owner": "diegosouzapw",
+      "name": "OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 27005,
+      "forks": 3541,
+      "starsToday": 1925
+    },
+    {
+      "owner": "ComposioHQ",
+      "name": "awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 15084,
-      "forks": 802,
-      "starsToday": 362
+      "stars": 69367,
+      "forks": 7849,
+      "starsToday": 637
+    },
+    {
+      "owner": "earthtojake",
+      "name": "text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "A collection of agent skills for CAD, robotics and hardware design",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 9925,
+      "forks": 1095,
+      "starsToday": 293
+    },
+    {
+      "owner": "agegr",
+      "name": "pi-web",
+      "url": "https://github.com/agegr/pi-web",
+      "description": "Web UI for the pi coding agent",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 2328,
+      "forks": 324,
+      "starsToday": 315
+    },
+    {
+      "owner": "alibaba",
+      "name": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 11425,
+      "forks": 789,
+      "starsToday": 265
+    },
+    {
+      "owner": "ruvnet",
+      "name": "RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 85124,
+      "forks": 11364,
+      "starsToday": 1726
+    },
+    {
+      "owner": "Julian-adv",
+      "name": "OpenMMO",
+      "url": "https://github.com/Julian-adv/OpenMMO",
+      "description": "",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 1326,
+      "forks": 163,
+      "starsToday": 395
+    },
+    {
+      "owner": "likec4",
+      "name": "likec4",
+      "url": "https://github.com/likec4/likec4",
+      "description": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 4659,
+      "forks": 317,
+      "starsToday": 475
+    },
+    {
+      "owner": "Automattic",
+      "name": "harper",
+      "url": "https://github.com/Automattic/harper",
+      "description": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 12193,
+      "forks": 454,
+      "starsToday": 590
+    },
+    {
+      "owner": "jellyfin",
+      "name": "jellyfin",
+      "url": "https://github.com/jellyfin/jellyfin",
+      "description": "The Free Software Media System - Server Backend & API",
+      "language": "C#",
+      "languageColor": "#178600",
+      "stars": 54706,
+      "forks": 5164,
+      "starsToday": 66
     }
   ]
 }
