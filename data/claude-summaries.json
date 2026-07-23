@@ -1,37 +1,41 @@
 {
-  "generated_at": "2026-07-20T21:49:16Z",
+  "generated_at": "2026-07-23T21:45:51Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v1nor4/unsloth_now_supports_amd/": {
-      "en": "Unsloth now officially supports AMD hardware for local inference, fine-tuning, reinforcement learning, and deployment on Windows, Linux, WSL, and Mac. Supported hardware includes Radeon RX 9000 and 7000 series, Instinct MI350 and MI300 GPUs, and Strix Halo Ryzen AI Max systems, plus AMD CPU inference. Training can use up to 70 percent less video memory and reinforcement learning up to 80 percent less. Optimized ROCm, Triton, bitsandbytes, PyTorch, and llama.cpp builds install automatically, and nearly all major open weights work.",
-      "zh": "Unsloth 正式支持 AMD 硬件，可在 Windows、Linux、WSL 和 Mac 上进行本地推理、微调、强化学习与部署。支持的硬件包括 Radeon RX 9000 和 7000 系列、Instinct MI350 与 MI300 GPU、Strix Halo Ryzen AI Max 系统，以及 AMD CPU 推理。训练最高可节省 70% 显存，强化学习最高可节省 80% 显存。优化的 ROCm、Triton、bitsandbytes、PyTorch 与 llama.cpp 构建自动安装，几乎所有主流开源模型均可使用。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v49lxp/deepseek_founders_4hour_investor_meeting_deepseek/": {
+      "en": "A compilation of remarks from DeepSeek founder Liang Wenfeng's four hour investor meeting emphasizes that AGI is the firm's central objective, not commercialization or user growth. Products are cast as one rung on the path to AGI. Wenfeng defends open source as strategic restraint that trades captured value for organizational cohesion and long term positioning, arguing the AI market is too vast to monopolize. The models DeepSeek releases as open weights match the ones it deploys internally.",
+      "zh": "DeepSeek 创始人梁文锋在一场四小时投资者会议中反复强调，公司唯一核心目标是 AGI，商业化与用户增长只是通往 AGI 的中间产物。他把开源视作一种战略性克制：主动放弃部分商业价值，换取团队凝聚力和长期定位，并认为 AI 市场规模巨大到无法被单一公司垄断。DeepSeek 对外开源的权重与内部部署的模型完全一致，不存在私藏更强版本的情况。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v1no8e/543_toks_singlerequest_qwen3635ba3b_on_one_rtx/": {
-      "en": "The author open-sourced NInfer, a from-scratch C++ and CUDA inference engine specialized for two Qwen 3.6 checkpoints on a single RTX 5090. It sustains 542 tokens per second decoding a 65,536 token completion on the 35 billion parameter Mixture of Experts model, using custom quantization, fused kernels, and a dedicated language model head draft. INT8 key-value cache enables the full 262,144 token context. Continuous batching is not yet supported, and only these two model artifacts are handled.",
-      "zh": "作者开源了 NInfer，一款从零构建的 C++ 与 CUDA 推理引擎，专为单张 RTX 5090 上的两个 Qwen 3.6 检查点优化。在 350 亿参数的混合专家模型上，可持续以每秒 542 个 token 解码完整的 65,536 token 输出。它采用自定义量化、算子融合和专用语言模型头草稿路径。INT8 键值缓存支持完整的 262,144 token 上下文，但暂不支持连续批处理，且仅支持这两个模型工件。",
-      "title_en": "NInfer C++ and CUDA engine sustains 543 tokens per second on Qwen 3.6 35B on a single RTX 5090",
-      "title_zh": "NInfer C++ 与 CUDA 引擎在单张 RTX 5090 上以每秒 543 个 token 运行 Qwen 3.6 35B"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v44aa6/model_distillation_accusations_are_getting_way/": {
+      "en": "A post pushes back on the reflex to dismiss strong open weight releases as merely distilled from Claude or GPT 4, arguing that proper token level distillation requires access to the teacher's full logit distribution over the vocabulary, which no public API exposes. What finetuners actually do with API outputs is synthetic data generation, a practice every major closed lab already runs internally on its own older models. Conflating the two has become a lazy rhetorical device.",
+      "zh": "文章反驳了每当强力开源模型发布，社区总把它斥为从 Claude 或 GPT-4 蒸馏而来的惯性论调。作者指出真正的 token 级蒸馏需要访问教师模型完整的词表概率分布，而这从不通过公开 API 暴露。微调者能从 API 拿到的只是文本补全，本质是合成数据生成，各大闭源实验室内部对自家旧模型同样在做。将两者混为一谈，已成为一种懒惰的修辞武器。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v1pume/running_a_13m_asr_conformer_on_a_microcontroller/": {
-      "en": "The author shares a project bringing a 13.1 million parameter convolution transformer model for automatic speech recognition onto a microcontroller. The full evaluation is available on GitHub. The author argues for more research into language model efficiency rather than chasing benchmark rankings at the cost of enormous parameter counts. Getting capable models running on affordable hardware keeps the local model hobby accessible to a wider community of tinkerers and researchers on modest budgets.",
-      "zh": "作者分享了将一个 1310 万参数的卷积 transformer 自动语音识别模型部署到微控制器上的项目，完整评估已在 GitHub 发布。作者呼吁研究应更多关注语言模型的效率，而非以巨额参数为代价追逐排行榜名次。让性能不俗的模型能够运行在价格亲民的硬件上，可以让本地模型这一爱好对更广泛的爱好者与预算有限的研究者保持可及。",
-      "title_en": "Running a 13 million parameter automatic speech recognition conformer on a microcontroller",
-      "title_zh": "在微控制器上运行 1310 万参数的自动语音识别 conformer 模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v4iw0n/apple_m5_isnt_making_full_use_of_its_matmul_cores/": {
+      "en": "A developer benchmarks Apple's M5 silicon for local inference and shows that MLX and Llama.cpp still run 16 bit activations everywhere, even though the hardware natively supports 8 bit activations through the w4a8 data type. Hand written w8a8 kernels delivered a 1.4 times prefill speedup on Gemma4: baseline for the E2B model jumped from 2193 tokens per second to 3029 on 130,173 tokens of input, approaching nearly 10,000 tokens per second at short context lengths.",
+      "zh": "开发者对 Apple M5 芯片的本地推理做了基准测试，发现 MLX 和 Llama.cpp 目前仍在全程使用 16 位激活，而 M5 硬件其实通过 w4a8 数据类型原生支持 8 位激活，只是推理后端还没用上。作者自己写的 w8a8 内核让 Gemma4 的 prefill 提速约 1.4 倍：在 M5 MacBook Air 上处理 130,173 个 token 输入时，E2B 模型从每秒 2193 个 token 提升到 3029，短上下文场景接近每秒一万。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v1evsq/paper_xhc_expanded_hyperconnections_scale/": {
-      "en": "The paper introduces Expanded Hyper-Connections, widening the Transformer residual stream into 16 parallel channels while updating only 4 per layer. Prior Hyper-Connections methods stalled at 4 channels due to insufficient write-back and cubic residual-mixing cost. The authors add temporal feature augmentation and a sparse update scheme. On 18 billion parameter Mixture of Experts models, downstream scores improve by 4 points over prior methods. A companion Flash variant cuts per-sublayer memory traffic to match earlier baselines.",
-      "zh": "论文提出 Expanded Hyper-Connections，将 Transformer 残差流扩展至 16 条并行通道，每层仅更新其中 4 条。此前的 Hyper-Connections 方法在 4 条时便遭遇写回信息不足和残差混合的三次方成本瓶颈。作者引入时间特征增强与稀疏更新方案，在 180 亿参数的混合专家模型上，下游分数比原方法提升 4 分。配套的 Flash 变体将每子层显存流量降至先前基线水平。",
-      "title_en": "Expanded Hyper Connections paper scales Transformer residual streams beyond four parallel channels",
-      "title_zh": "Expanded Hyper-Connections 论文将 Transformer 残差流扩展到 4 条并行通道以上"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v4b9a8/kwaipilotkatcoderv25dev_hugging_face/": {
+      "en": "Kwaipilot has released KAT-Coder-V2.5-Dev, the open weight version of its recently launched KAT-Coder-V2.5. The model uses a Mixture of Experts architecture with 35 billion total parameters and 3 billion activated per token, trained via a combination of supervised fine tuning and reinforcement learning. Kwaipilot claims state of the art results in agentic coding among models of similar scale, and reports that the reinforcement learning stage cut abnormal tool label rates from 9.34 percent to 0.28 percent.",
+      "zh": "Kwaipilot 发布了 KAT-Coder-V2.5-Dev，作为七月发布的 KAT-Coder-V2.5 的开源权重版本。模型采用 Mixture of Experts 架构，总参数量 350 亿、每次激活 30 亿，通过监督微调和强化学习联合训练。团队声称在同规模模型中，Agent 化编程任务达到业界最好水平；强化学习阶段还把异常工具标签的出现比例从 9.34% 降到 0.28%，单轮无限重复几乎消失。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v1mlcw/trelliscpp_now_has_a_studio/": {
-      "en": "Following complaints that Trellis.cpp had a high usability barrier requiring command line navigation and manual weight fetching, the project now ships a built-in Studio binary. Studio automatically picks the proper backend, downloads the weights, and provides an image-to-3D generation workflow. A Three.js preview component lets users inspect the generated 3D assets directly in the browser. The update meaningfully lowers the entry point for hobbyists running local image-to-3D generation on their own machines.",
-      "zh": "针对此前用户反映 Trellis.cpp 使用门槛过高——需要操作命令行并手动获取权重——项目现已内置 Studio 二进制程序。Studio 会自动选择合适的后端、下载权重，并提供图像转 3D 的生成流程。内置的 Three.js 预览组件让用户可以直接在浏览器中查看生成的 3D 资产。此次更新明显降低了在本地运行图像转 3D 生成的入门难度。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v4iqjx/psa_on_laguna_s21_use_the_updated_chat_template/": {
+      "en": "A short PSA flags that the official Poolside Laguna S-2.1 GGUF repository received a fix roughly five hours before posting. The yarn attention factor was corrected to 1.0, letting llama.cpp derive mscale properly, and an updated chat template resolves broken thinking, preserve thinking, and tool calling behavior. Users are advised to re-pull the GGUFs and switch to the new template; the poster reports the model performing much better after the fixes.",
+      "zh": "帖子提醒使用 Poolside 官方 Laguna S-2.1 GGUF 权重的用户重新拉取模型和 chat template。约五小时前上传的更新把 yarn 注意力因子修正为 1.0，让 llama.cpp 能正确推导 mscale；新的 chat template 修复了断裂的 thinking、preserve thinking 以及工具调用行为。作者反馈换上新版本后，模型表现明显好转。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v174ql/fractale350mbase_memory_as_trained_behaviour/": {
-      "en": "A solo researcher released Fractale-350M-base, a 386 million parameter base model pretrained from scratch on 10 billion tokens of code and English web text. Its only long-term memory is a bank of 8 vectors the model writes to itself, one gist vector per 512-token chunk. The bank is read back as fast weights through a hypernet. On held-out documents, the carried bank cuts cross entropy by up to 9.4 nats over a reset bank. Weights, code, and paper are open.",
-      "zh": "独立研究者发布 Fractale-350M-base，这是一款 3.86 亿参数的基础模型，从零在 100 亿 token 的代码与英文网页数据上完成预训练。其唯一的长期记忆是模型自己写入的 8 个向量组成的记忆库，每 512 token 分块写入一个概要向量，再通过超网络作为快速权重读回。在留出文档上，携带记忆比重置记忆最多可将交叉熵降低 9.4 nats。权重、代码与论文全部开源。",
-      "title_en": "Fractale 350 million parameter base model treats memory as trained behavior instead of long context",
-      "title_zh": "Fractale 3.86 亿参数基础模型将记忆作为训练行为，而非依赖长上下文"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v3xosh/fyi_you_dont_need_expensive_networking_for/": {
+      "en": "A hobbyist shows that expensive interconnect is not needed for multi node local inference. Running Laguna UD-Q2_K_XL, roughly 39.7 gigabytes of weights, across two RTX 4060 Ti GPUs locally plus a third 4060 Ti on a remote node over a direct 20 dollar USB to ethernet cable between the machines, they sustain about 30 tokens per second on an 11,000 token prompt at 100,000 context. Peak inter GPU traffic stayed 30 to 70 megabytes per second; micro batch size 768 was the sweet spot.",
+      "zh": "作者证明多节点本地推理并不需要昂贵的互联硬件。他用一根 20 美元的 USB 转以太网线在两台机器之间点对点连接，跨两张本地 RTX 4060 Ti 加远程节点上的第三张 4060 Ti，运行 Laguna UD-Q2_K_XL（约 39.7GB 权重），在一万一千 token 提示词、十万上下文下稳定跑出每秒约 30 个 token。节点间流量峰值仅每秒 30 到 70 MB，经验上 ubatch 设为 768 是最佳平衡点。",
+      "title_en": "Cheap USB to ethernet cable is enough for multi node local inference across three RTX 4060 Ti GPUs",
+      "title_zh": "20 美元的 USB 转以太网线就能撑起多节点本地推理，跨三张 RTX 4060 Ti 跑 Laguna 权重达每秒 30 个 token"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v4csnj/inclusionaillada22flash_hugging_face/": {
+      "en": "InclusionAI has released LLaDA2.2-flash, an agent oriented diffusion language model that adds Levenshtein Editing to diffusion decoding via new DELETE and INSERT control tokens, letting parallel generation rewrite sequence structure and correct errors mid stream. The Mixture of Experts model carries 100 billion non embedding parameters across 32 layers with Rotary Position Embedding, and reaches a 128,000 token context through Block Routing, which bounds expert activation at the diffusion block level. Agentic behavior is trained through a new L-EBPO reinforcement learning objective.",
+      "zh": "InclusionAI 发布 LLaDA2.2-flash，一款面向 Agent 的扩散语言模型。它引入 DELETE 与 INSERT 两个 Levenshtein 编辑控制 token，让扩散解码在并行生成过程中调整序列结构、修正错误。模型采用 Mixture of Experts 架构，非嵌入参数 1000 亿，通过 Block Routing 将专家激活限制在扩散块粒度，把上下文扩展到 12.8 万 token。团队另提出 L-EBPO 强化学习目标训练多轮工具调用行为。",
+      "title_en": "InclusionAI releases LLaDA2.2 flash, an agent oriented Mixture of Experts diffusion language model",
+      "title_zh": "InclusionAI 发布 LLaDA2.2-flash：面向 Agent 场景的 Mixture of Experts 扩散语言模型"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v4hrtz/i_trained_a_05m_model_on_1b_tokens_of_finewebedu/": {
+      "en": "An independent researcher revised their paper on the Silia neural network architecture, a 0.5 million parameter transformer trained on 1 billion tokens of Fineweb edu across three epochs. The revision adds HellaSwag, PIQA, and LAMBADA benchmarks against Quark v2, Spark v4, and SupraMini v6, and addresses earlier compute overhead feedback by combining DeepSeek's Multi head Latent Attention without decoupled Rotary Position Embedding, Qwen's HydraHead, and Apple's Attention Free Transformer. Training flop counts remain unreported.",
+      "zh": "独立研究者更新了 Silia 神经网络架构的论文。新版本在 HellaSwag、PIQA 和 LAMBADA 基准上，把这颗 50 万参数、在 Fineweb-edu 上用 10 亿 token 训练三轮的小模型，与 Quark-v2、Spark-v4 和 SupraMini-v6 做了对比。作者还组合了 DeepSeek 的 Multi-head Latent Attention（去掉 decoupled RoPE）、Qwen 的 HydraHead 和 Apple 的 Attention Free Transformer，解决了此前 2 到 2.5 倍的算力开销。训练 FLOPs 仍未给出。"
     }
   }
 }
