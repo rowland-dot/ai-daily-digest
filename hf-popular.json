@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-07-23T21:36:27.150Z",
+  "fetched_at": "2026-07-24T21:38:29.385Z",
   "models": [
     {
       "_id": "66aaa908fc35e079a941470d",
       "id": "black-forest-labs/FLUX.1-dev",
-      "likes": 13761,
+      "likes": 13778,
       "private": false,
-      "downloads": 594510,
+      "downloads": 589783,
       "tags": [
         "diffusers",
         "safetensors",
@@ -27,9 +27,9 @@
     {
       "_id": "678dc6fff905d106be796d8a",
       "id": "deepseek-ai/DeepSeek-R1",
-      "likes": 13498,
+      "likes": 13504,
       "private": false,
-      "downloads": 9368615,
+      "downloads": 9361473,
       "tags": [
         "transformers",
         "safetensors",
@@ -54,9 +54,9 @@
     {
       "_id": "64bfcd5ff462a99a04fd1ec8",
       "id": "stabilityai/stable-diffusion-xl-base-1.0",
-      "likes": 7969,
+      "likes": 7974,
       "private": false,
-      "downloads": 1441523,
+      "downloads": 1455012,
       "tags": [
         "diffusers",
         "onnx",
@@ -84,7 +84,7 @@
       "id": "CompVis/stable-diffusion-v1-4",
       "likes": 7043,
       "private": false,
-      "downloads": 454609,
+      "downloads": 444616,
       "tags": [
         "diffusers",
         "safetensors",
@@ -109,9 +109,9 @@
     {
       "_id": "661f97d48e7f3438386f755d",
       "id": "meta-llama/Meta-Llama-3-8B",
-      "likes": 6613,
+      "likes": 6614,
       "private": false,
-      "downloads": 1536854,
+      "downloads": 1562006,
       "tags": [
         "transformers",
         "safetensors",
@@ -137,9 +137,9 @@
     {
       "_id": "676ca1388118866906abbd7c",
       "id": "hexgrad/Kokoro-82M",
-      "likes": 6574,
+      "likes": 6579,
       "private": false,
-      "downloads": 10295193,
+      "downloads": 10286371,
       "tags": [
         "text-to-speech",
         "en",
@@ -158,9 +158,9 @@
     {
       "_id": "6698d8a0653e4babe21e1e7d",
       "id": "meta-llama/Llama-3.1-8B-Instruct",
-      "likes": 6382,
+      "likes": 6389,
       "private": false,
-      "downloads": 8435024,
+      "downloads": 8429683,
       "tags": [
         "transformers",
         "safetensors",
@@ -197,9 +197,9 @@
     {
       "_id": "654a84cadff2f49007ce6c37",
       "id": "openai/whisper-large-v3",
-      "likes": 5974,
+      "likes": 5978,
       "private": false,
-      "downloads": 6140572,
+      "downloads": 6194901,
       "tags": [
         "transformers",
         "pytorch",
@@ -324,9 +324,9 @@
     {
       "_id": "66aa974d1f83b210ae7f74ae",
       "id": "black-forest-labs/FLUX.1-schnell",
-      "likes": 5408,
+      "likes": 5415,
       "private": false,
-      "downloads": 245990,
+      "downloads": 246116,
       "tags": [
         "diffusers",
         "safetensors",
@@ -349,9 +349,9 @@
     {
       "_id": "69e864fd6b68f7e6cfc63ca3",
       "id": "deepseek-ai/DeepSeek-V4-Pro",
-      "likes": 5294,
+      "likes": 5306,
       "private": false,
-      "downloads": 1617349,
+      "downloads": 1653101,
       "tags": [
         "transformers",
         "safetensors",
@@ -374,9 +374,9 @@
     {
       "_id": "621ffdc136468d709f180294",
       "id": "sentence-transformers/all-MiniLM-L6-v2",
-      "likes": 5113,
+      "likes": 5120,
       "private": false,
-      "downloads": 254761864,
+      "downloads": 255316543,
       "tags": [
         "sentence-transformers",
         "pytorch",
@@ -436,7 +436,7 @@
       "id": "Tongyi-MAI/Z-Image-Turbo",
       "likes": 5035,
       "private": false,
-      "downloads": 1150910,
+      "downloads": 1145125,
       "tags": [
         "diffusers",
         "safetensors",
@@ -458,9 +458,9 @@
     {
       "_id": "62862fbd504d37700308a82e",
       "id": "bigscience/bloom",
-      "likes": 5028,
+      "likes": 5029,
       "private": false,
-      "downloads": 8132,
+      "downloads": 8680,
       "tags": [
         "transformers",
         "pytorch",
@@ -534,9 +534,9 @@
     {
       "_id": "68913522f16f3c8aaffccf1f",
       "id": "openai/gpt-oss-120b",
-      "likes": 5020,
+      "likes": 5027,
       "private": false,
-      "downloads": 4547171,
+      "downloads": 4533330,
       "tags": [
         "transformers",
         "safetensors",
@@ -562,9 +562,9 @@
     {
       "_id": "66582ce552e752b1a72b985d",
       "id": "stabilityai/stable-diffusion-3-medium",
-      "likes": 5004,
+      "likes": 5005,
       "private": false,
-      "downloads": 8945,
+      "downloads": 8926,
       "tags": [
         "diffusion-single-file",
         "text-to-image",
@@ -582,9 +582,9 @@
     {
       "_id": "68913539bd3d0a833438591d",
       "id": "openai/gpt-oss-20b",
-      "likes": 4830,
+      "likes": 4835,
       "private": false,
-      "downloads": 7739567,
+      "downloads": 7768828,
       "tags": [
         "transformers",
         "safetensors",
@@ -610,9 +610,9 @@
     {
       "_id": "64b02a230c8415cd4a159fff",
       "id": "meta-llama/Llama-2-7b-chat-hf",
-      "likes": 4806,
+      "likes": 4808,
       "private": false,
-      "downloads": 309776,
+      "downloads": 550605,
       "tags": [
         "transformers",
         "pytorch",
@@ -639,9 +639,9 @@
     {
       "_id": "661f97d0b00f5f1f620c4f25",
       "id": "meta-llama/Meta-Llama-3-8B-Instruct",
-      "likes": 4752,
+      "likes": 4758,
       "private": false,
-      "downloads": 1633853,
+      "downloads": 1684957,
       "tags": [
         "transformers",
         "safetensors",
@@ -669,9 +669,9 @@
     {
       "_id": "657607b0a90ae2daaef65917",
       "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "likes": 4716,
+      "likes": 4717,
       "private": false,
-      "downloads": 824536,
+      "downloads": 826369,
       "tags": [
         "vllm",
         "safetensors",
@@ -694,9 +694,9 @@
     {
       "_id": "64aa630b73790912c790894e",
       "id": "meta-llama/Llama-2-7b",
-      "likes": 4519,
+      "likes": 4520,
       "private": false,
-      "downloads": 127,
+      "downloads": 130,
       "tags": [
         "facebook",
         "meta",

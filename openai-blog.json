@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-23T21:36:29.428Z",
+  "fetched_at": "2026-07-24T21:38:31.260Z",
   "source": "OpenAI",
   "items": [
     {
@@ -75,6 +75,12 @@
       "description": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships."
     },
     {
+      "title": "How Codex became a collaborator for OpenAI’s creative team",
+      "link": "https://openai.com/index/codex-collaborator-creative-team",
+      "pubDate": "Thu, 16 Jul 2026 07:00:00 GMT",
+      "description": "How OpenAI’s creative team uses Codex to build custom creative tools, accelerate ideation, and prototype faster with context-aware AI."
+    },
+    {
       "title": "How Cars24 scales conversations and builds faster with OpenAI",
       "link": "https://openai.com/index/cars24",
       "pubDate": "Thu, 16 Jul 2026 00:00:00 GMT",
@@ -85,12 +91,6 @@
       "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
       "pubDate": "Wed, 15 Jul 2026 12:00:00 GMT",
       "description": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI."
-    },
-    {
-      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
-      "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "pubDate": "Wed, 15 Jul 2026 10:00:00 GMT",
-      "description": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness."
     }
   ]
 }

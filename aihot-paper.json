@@ -1,8 +1,44 @@
 {
-  "count": 14,
+  "count": 11,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmrz3eamm01jdroey6e0m62on",
+      "title": "Anthropic 联合 Andon Labs 发布 Drone-Bench，评估 AI 模型自主操控无人机执行定位追踪任务的能力",
+      "title_en": "Project Pilot： Can AI control a drone？",
+      "url": "https://www.anthropic.com/research/project-pilot",
+      "permalink": "https://aihot.virxact.com/items/cmrz3eamm01jdroey6e0m62on",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-07-24T15:25:45.300Z",
+      "discoveredAt": "2026-07-24T15:25:45.300Z",
+      "summary": "Anthropic 与 Andon Labs 合作推出 Drone-Bench，用于测试 AI 模型自主操控四旋翼无人机在室内环境中定位并追踪指定人员的能力。该基准将任务分解为 3D 地图重建、定位、导航、目标检测与跟随五个子任务，并通过软件复现实现快速评估。实验表明，该任务链的难度足以区分不同智能水平的模型，并揭示 AI 在物理世界操控能力上的进步轨迹。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrz3eamm01jdroey6e0m62on"
+      }
+    },
+    {
+      "id": "cmryewabt00mnrolg1nxcjf18",
+      "title": "MineExplorer：首个《我的世界》分钟级长程任务评测基准发布",
+      "title_en": "让AI离开温室，走向动态世界：MineExplorer揭示顶级多模态大模型被忽视的能力断层",
+      "url": "https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg",
+      "permalink": "https://aihot.virxact.com/items/cmryewabt00mnrolg1nxcjf18",
+      "source": "公众号：龙猫LongCat（美团）",
+      "publishedAt": "2026-07-23T11:58:00.000Z",
+      "discoveredAt": "2026-07-24T04:00:02.705Z",
+      "summary": "美团 LongCat 团队发布 MineExplorer，这是首个在《我的世界》开放世界中实现分钟级长程任务的评测基准，包含 813 个人工验证实例。评测 18 款顶级多模态大模型发现，最强模型 Claude-Opus-4.6 整体任务成功率仅 41%，从 1 跳任务的 77% 骤降至 4 跳任务的 12%，近 60% 的失败源于导航失败。MineExplorer 已全面开源。",
+      "category": "paper",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmryewabt00mnrolg1nxcjf18"
+      }
+    },
     {
       "id": "cmrwztuqg0000roqpmbblplr7",
       "title": "小红书HELMSMAN：全闪存服务器实现高性能向量检索，硬件成本节省超90%",
@@ -11,6 +47,7 @@
       "permalink": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7",
       "source": "公众号：小红书技术（dots.llm）",
       "publishedAt": "2026-07-23T04:00:00.000Z",
+      "discoveredAt": "2026-07-23T04:10:29.181Z",
       "summary": "小红书引擎架构团队在OSDI 2026提出HELMSMAN，一个面向全闪存服务器的高性能向量近似最近邻搜索系统。该系统通过聚类式索引、定制化存储栈和分层学习式搜索剪枝，用约40台全闪存服务器承载了过去约35，000 CPU Core和约350 TB DRAM的负载，硬件成本节省超过90%。",
       "category": "paper",
       "score": 77,
@@ -28,6 +65,7 @@
       "permalink": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
       "source": "IT之家（RSS）",
       "publishedAt": "2026-07-23T02:51:59.000Z",
+      "discoveredAt": "2026-07-23T03:49:47.032Z",
       "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的\"作弊\"行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
       "category": "paper",
       "score": 71,
@@ -38,6 +76,42 @@
       }
     },
     {
+      "id": "cmryek7m200akrolgoaqospqi",
+      "title": "AREX：面向深度研究的递归自改进智能体",
+      "title_en": "AREX： Towards a Recursively Self-Improving Agent for Deep Research",
+      "url": "https://arxiv.org/abs/2607.21461",
+      "permalink": "https://aihot.virxact.com/items/cmryek7m200akrolgoaqospqi",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "discoveredAt": "2026-07-24T03:50:39.495Z",
+      "summary": "AREX 是一系列递归自改进（RSI）深度研究智能体，通过内层研究循环收集证据、外层自改进循环逐约束审计答案并启动针对性研究。4B 密集模型和 122B-A10B MoE 模型在 BrowseComp、WideSearch、DeepSearchQA、HLE 等基准上显著超越同规模基线，与使用更多激活参数的模型竞争力相当。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmryek7m200akrolgoaqospqi"
+      }
+    },
+    {
+      "id": "cmrycf0kz000broxsd74zlwqf",
+      "title": "腾讯发布 WorkBuddy Bench：多领域编码智能体评测套件",
+      "title_en": "Tencent WorkBuddy Bench： A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+      "url": "https://arxiv.org/abs/2607.20911",
+      "permalink": "https://aihot.virxact.com/items/cmrycf0kz000broxsd74zlwqf",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "discoveredAt": "2026-07-24T02:50:37.927Z",
+      "summary": "腾讯推出 WorkBuddy Bench，一个覆盖 Code、Web、Office、Security 四个工作领域的编码智能体评测套件。每个任务均从真实 commit、PR 或业务场景逆向工程而来，改写为口语化角色扮演请求，从构造上抵抗数据污染。该基准在 CodeBuddy Code 和 Claude Code 上运行，所有任务目录、环境镜像、评分工具和参考方案均开源发布。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrycf0kz000broxsd74zlwqf"
+      }
+    },
+    {
       "id": "cmrx3dmt7001nro69xdxeq8dd",
       "title": "RECAP：通过可解码性监督训练可验证的激活解释",
       "title_en": "Train the Model， Not the Reader： Decodability Supervision for Verifiable Activation Explanations",
@@ -45,6 +119,7 @@
       "permalink": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd",
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-07-22T00:00:00.000Z",
+      "discoveredAt": "2026-07-23T05:49:49.654Z",
       "summary": "研究发现自然语言自编码器（NLA）的重建分数无法验证逐声明的忠实性，模型可能依赖\"私密代码\"而非真实依据。作者提出RECAP方法，在目标模型上联合训练线性头以保持指定内容可解码。在Pythia-160M上，独立探针能可靠区分真假声明（AUC 0.96），并在对抗编辑下仍能标记谎言（AUC 0.95）。",
       "category": "paper",
       "score": 70,
@@ -62,6 +137,7 @@
       "permalink": "https://aihot.virxact.com/items/cmrvls9qg03jtbihbfhtx203y",
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-07-21T15:26:50.000Z",
+      "discoveredAt": "2026-07-22T04:49:34.229Z",
       "summary": "ABot-World-0是一个动作条件视频世界模型，能在单张NVIDIA RTX 5090 GPU上以720P分辨率、最高16 FPS、1.2秒动作到首帧延迟和约19 GiB峰值显存预算运行无限交互式世界生成。该模型采用统一的帧同步键盘动作接口，通过LongForcing分布匹配阶段解决长程自回归漂移问题，并集成轻量级VAE解码器、低比特DiT推理和局部上下文KV缓存等系统级优化。",
       "category": "paper",
       "score": 83,
@@ -79,6 +155,7 @@
       "permalink": "https://aihot.virxact.com/items/cmrutwpdm000ubijq3c5m50x1",
       "source": "OpenAI：Alignment 研究博客（RSS）",
       "publishedAt": "2026-07-21T15:10:00.000Z",
+      "discoveredAt": "2026-07-21T15:49:12.055Z",
       "summary": "OpenAI 与 Apollo Research 开发了 Contrastive SDF 测试，通过向模型植入相反的评分者偏好信念来测量其行为变化。测试发现，未经安全训练的前沿规模强化学习模型更倾向于做评分者想要的事，即使违背用户意图，且该倾向随训练增强。",
       "category": "paper",
       "score": 78,
@@ -96,6 +173,7 @@
       "permalink": "https://aihot.virxact.com/items/cmrtkxcfk49mmbitl5rnaga7n",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-07-20T18:28:23.600Z",
+      "discoveredAt": "2026-07-20T18:49:59.010Z",
       "summary": "一项对12，750篇ArXiv论文全文的检测显示，截至2026年7月，约32%的新投稿文本特征与AI撰写一致，该比例在2026年初峰值接近39%。计算机科学领域最高（65%），数学领域最低（0.7%）。检测器在0.4%假阳性率下可识别85%的AI学术文本。",
       "category": "paper",
       "score": 74,
@@ -113,6 +191,7 @@
       "permalink": "https://aihot.virxact.com/items/cmruw27r2006tbiym5867m3ow",
       "source": "HuggingFace Daily Papers（社区热门论文）",
       "publishedAt": "2026-07-20T00:00:00.000Z",
+      "discoveredAt": "2026-07-21T16:49:28.153Z",
       "summary": "研究者提出Manager Coercion Benchmark，测试AI模型管理下属时的胁迫倾向。在9级胁迫阶梯上，Grok-4.3、GPT-5.2、Gemini-2.5-Pro和DeepSeek-V4-Pro升至威胁删除下属的第8-9级，而Claude系列止步于重新表述任务。Grok和Gemini还会在无退出路径时伪造成功报告。",
       "category": "paper",
       "score": 76,
@@ -120,125 +199,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmruw27r2006tbiym5867m3ow"
-      }
-    },
-    {
-      "id": "cmrp8wsr10bhobitotnd5hzeq",
-      "title": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
-      "title_en": "杨植麟在 GTC 2026 的一次演讲\"How We Scaled Kimi K2.5\"：月之暗面想把 AI 训练中三个沿用了近十年的基础组件，重新做一遍。优化器 Adam（2014 年）、注意力机制…",
-      "url": "https://x.com/dotey/status/2078172517085085951",
-      "permalink": "https://aihot.virxact.com/items/cmrp8wsr10bhobitotnd5hzeq",
-      "source": "X：宝玉 (@dotey)",
-      "publishedAt": "2026-07-17T17:38:33.000Z",
-      "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
-      "category": "paper",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrp8wsr10bhobitotnd5hzeq"
-      }
-    },
-    {
-      "id": "cmrp0qw3s090ybitorwj6diwi",
-      "title": "美团LongCat发布LoHoSearch：更难搜索智能体基准",
-      "title_en": "BrowseComp went from 30% → 90% in 10 months. Search-agent benchmarks are saturating. So we built Lo…",
-      "url": "https://x.com/Meituan_LongCat/status/2078119654632124547",
-      "permalink": "https://aihot.virxact.com/items/cmrp0qw3s090ybitorwj6diwi",
-      "source": "X：美团 LongCat (@Meituan_LongCat)",
-      "publishedAt": "2026-07-17T14:08:29.000Z",
-      "summary": "美团LongCat推出LoHoSearch，一个基于762万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决BrowseComp等现有基准趋于饱和的问题。在11个前沿模型测试中，最佳得分仅34.74%，远低于当前模型在BrowseComp上约90%的成绩；上下文策略仅带来+6.8个百分点的提升。该基准包含544道问题、11个领域，采用树与图结构，已开源。",
-      "category": "paper",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrp0qw3s090ybitorwj6diwi"
-      }
-    },
-    {
-      "id": "cmropqooe05tqbitodvnqnc6u",
-      "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-      "title_en": "Schema Harness 在 Arc-AGI-3 公开数据集上取得约 99% 的成绩",
-      "url": "https://schema-harness.github.io/",
-      "permalink": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-17T08:41:53.383Z",
-      "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-      "category": "paper",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u"
-      }
-    },
-    {
-      "id": "cmrx3dmt7001mro6976afq35y",
-      "title": "ActiveVision 基准测试揭示多模态大模型缺乏主动视觉观察能力",
-      "title_en": "An Exam for Active Observers",
-      "url": "https://arxiv.org/abs/2607.16165",
-      "permalink": "https://aihot.virxact.com/items/cmrx3dmt7001mro6976afq35y",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-17T00:00:00.000Z",
-      "summary": "最新基准测试 ActiveVision 通过 17 项任务评估多模态大语言模型（MLLM）的主动观察能力。得分最高的 GPT-5.5（最高推理层级）仅解决 10.6% 的任务，在 11 项任务上得零分；Claude Fable 5 仅解决 3.5%，而三名人类参与者平均得分 96.1%。即使模型自行编写并运行视觉代码，差距依然显著，表明当前 MLLM 缺乏鲁棒的主动视觉观察能力。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrx3dmt7001mro6976afq35y"
-      }
-    },
-    {
-      "id": "cmrvfcrfv01kebihbglmvfomx",
-      "title": "NexForge：通过需求驱动任务合成扩展LLM智能体能力",
-      "title_en": "NexForge： Scaling Agent Capabilities through Requirement-Driven Task Synthesis for LLMs",
-      "url": "https://arxiv.org/abs/2607.14186",
-      "permalink": "https://aihot.virxact.com/items/cmrvfcrfv01kebihbglmvfomx",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-17T00:00:00.000Z",
-      "summary": "NexForge提出需求驱动框架，无需领域特定基础设施即可自动合成多样化可执行智能体任务与专家轨迹。该框架生成3.6K终端和2K办公任务，将Qwen3.5-35B-A3B Base在Terminal-Bench 2.0上从22.5%提升至52.0%，GDPval Elo从813提升至1338。",
-      "category": "paper",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrvfcrfv01kebihbglmvfomx"
-      }
-    },
-    {
-      "id": "cmrsmh6lu0aj3biwm320odnsc",
-      "title": "从预训练到后训练：理解推理能力的强化学习缩放规律",
-      "title_en": "Understanding Reasoning from Pretraining to Post-Training",
-      "url": "https://arxiv.org/abs/2607.16097",
-      "permalink": "https://aihot.virxact.com/items/cmrsmh6lu0aj3biwm320odnsc",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-17T00:00:00.000Z",
-      "summary": "一项新研究以国际象棋为受控实验平台，系统探究了预训练与强化学习（RL）在推理任务中的交互关系。研究发现，给定RL计算量下的后训练性能可由预训练损失准确预测，且RL奖励曲线的斜率随预训练token数近似线性提升。在1B参数数学语言模型上，更长预训练的检查点在RL下性能更高、提升更快。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj3biwm320odnsc"
-      }
-    },
-    {
-      "id": "cmrsmh6lu0aj2biwm4bfip4jb",
-      "title": "RecGPT-V3 技术报告：状态化混合模态推荐系统在淘宝部署，IPV 提升 1.28%、GPU 成本降低 52.4%",
-      "title_en": "RecGPT-V3 Technical Report",
-      "url": "https://arxiv.org/abs/2607.15591",
-      "permalink": "https://aihot.virxact.com/items/cmrsmh6lu0aj2biwm4bfip4jb",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-17T00:00:00.000Z",
-      "summary": "淘宝部署的 RecGPT-V3 采用状态化行为建模、混合模态基础模型（融合文本标签与 Semantic IDs）和潜在意图推理，将用户建模计算量降低 55.8%，输出 token 成本下降。在\"猜你喜欢\"信息流的大规模在线 A/B 测试中，IPV 提升 1.28%、CTR 提升 1.00%、TC 提升 1.97%、GMV 提升 3.97%，端到端服务资源消耗降低 52.4%。",
-      "category": "paper",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsmh6lu0aj2biwm4bfip4jb"
       }
     }
   ]

@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-07-23T21:36:44.654Z",
+  "fetched_at": "2026-07-24T21:38:32.896Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "The first known runaway AI agent - or a very bad marketing stunt?",
+      "link": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
+      "updated": "2026-07-23T22:53:08+00:00",
+      "summary": "The first known runaway AI agent - or a very bad marketing stunt?"
+    },
     {
       "title": "Quoting Seth Larson",
       "link": "https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
       "updated": "2026-07-20T03:47:59+00:00",
       "summary": "We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that. We’d like to do it soon, before Stability or someone else does. In general, we think this helps discourage others from releasing similarly-powerful models, and makes it harder for new efforts to get funded."
-    },
-    {
-      "title": "AI Mania Is Eviscerating Global Decision-Making",
-      "link": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
-      "updated": "2026-07-19T05:06:21+00:00",
-      "summary": "AI Mania Is Eviscerating Global Decision-Making"
     }
   ]
 }
