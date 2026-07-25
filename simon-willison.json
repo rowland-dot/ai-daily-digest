@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-24T21:38:32.896Z",
+  "fetched_at": "2026-07-25T21:27:04.878Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Boris Cherny",
+      "link": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+      "updated": "2026-07-25T00:42:59+00:00",
+      "summary": "More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully."
+    },
+    {
+      "title": "Introducing Claude Opus 5",
+      "link": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
+      "updated": "2026-07-24T23:48:50+00:00",
+      "summary": "Introducing Claude Opus 5"
+    },
     {
       "title": "The first known runaway AI agent - or a very bad marketing stunt?",
       "link": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
       "updated": "2026-07-20T19:24:05+00:00",
       "summary": "I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes."
-    },
-    {
-      "title": "Who’s Afraid of Chinese Models?",
-      "link": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
-      "updated": "2026-07-20T17:09:19+00:00",
-      "summary": "Who’s Afraid of Chinese Models?"
-    },
-    {
-      "title": "Quoting Sam Altman",
-      "link": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
-      "updated": "2026-07-20T03:47:59+00:00",
-      "summary": "We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that. We’d like to do it soon, before Stability or someone else does. In general, we think this helps discourage others from releasing similarly-powerful models, and makes it harder for new efforts to get funded."
     }
   ]
 }

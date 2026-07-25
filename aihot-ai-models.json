@@ -1,24 +1,24 @@
 {
-  "count": 18,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmrz7mrck00gprox8j0j9qfst",
-      "title": "Anthropic 发布 Claude Opus 5",
-      "title_en": "Introducing Claude Opus 5",
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "permalink": "https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-07-24T17:24:25.589Z",
-      "discoveredAt": "2026-07-24T17:24:25.589Z",
-      "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。",
+      "id": "cmrzi9yew001arop9eruk86n7",
+      "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
+      "title_en": "Version 8.2",
+      "url": "https://updates.midjourney.com/version-8-2",
+      "permalink": "https://aihot.virxact.com/items/cmrzi9yew001arop9eruk86n7",
+      "source": "Midjourney：Updates（RSS）",
+      "publishedAt": "2026-07-24T22:18:48.000Z",
+      "discoveredAt": "2026-07-24T22:22:25.866Z",
+      "summary": "Midjourney 今日推出 V8.2 图像模型，重点提升美学质量、图像创意与个性化表现。低质量图像出现频率将显著降低，个性化功能能更精准理解用户审美偏好。V8.2 的个性化配置文件拥有更大、更优的图像选择池，建议用户尝试新旧配置文件体验最新版本。",
       "category": "ai-models",
-      "score": 92,
+      "score": 73,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst"
+        "canonical": "https://aihot.virxact.com/items/cmrzi9yew001arop9eruk86n7"
       }
     },
     {
@@ -73,6 +73,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrykywyx026jrolgq06set4j"
+      }
+    },
+    {
+      "id": "cmrz7mrck00gprox8j0j9qfst",
+      "title": "Anthropic 发布 Claude Opus 5",
+      "title_en": "Introducing Claude Opus 5",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "permalink": "https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-07-23T16:00:00.000Z",
+      "discoveredAt": "2026-07-24T17:24:25.589Z",
+      "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。",
+      "category": "ai-models",
+      "score": 92,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst"
       }
     },
     {

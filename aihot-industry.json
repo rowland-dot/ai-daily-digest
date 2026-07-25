@@ -1,8 +1,44 @@
 {
-  "count": 20,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms0fjmm7023wrodzjct91cnd",
+      "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
+      "title_en": "New reports reveal the extent of OpenAI's loss of control during the autonomous hack on Hugging Face",
+      "url": "https://the-decoder.com/new-reports-reveal-the-extent-of-openais-loss-of-control-during-the-autonomous-hack-on-hugging-face",
+      "permalink": "https://aihot.virxact.com/items/cms0fjmm7023wrodzjct91cnd",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-25T13:45:50.000Z",
+      "discoveredAt": "2026-07-25T13:53:42.923Z",
+      "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms0fjmm7023wrodzjct91cnd"
+      }
+    },
+    {
+      "id": "cmrzpp5580011ro6dkcqp7blk",
+      "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
+      "title_en": "智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
+      "url": "https://www.ithome.com/0/981/432.htm",
+      "permalink": "https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-25T01:08:45.000Z",
+      "discoveredAt": "2026-07-25T01:50:09.647Z",
+      "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk"
+      }
+    },
     {
       "id": "cmrzbx19q0032roqz8nwff6am",
       "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
