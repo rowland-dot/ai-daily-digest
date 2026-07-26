@@ -1,49 +1,55 @@
 {
-  "generated_at": "2026-07-24T21:44:44.000Z",
+  "generated_at": "2026-07-26T21:33:34.000Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v5c3vt/more_than_20_companies_including_nvidia_meta/": {
-      "en": "Microsoft has published an open letter titled Open Weights and American AI Leadership, co-signed by more than twenty companies including NVIDIA, Meta, Palantir, Hugging Face, and Y Combinator. The letter urges policymakers to avoid broad or premature restrictions on open-weight models and asks them to distinguish legitimate model distillation from misappropriation. Notably absent from the signatories are the major frontier labs OpenAI, Anthropic, and Google, highlighting a growing divide inside the industry over open-source AI policy.",
-      "zh": "微软发布公开信 Open Weights and American AI Leadership,NVIDIA、Meta、Palantir、Hugging Face、Y Combinator 等二十多家公司联署,呼吁政策制定者不要对开放权重模型施加过早或宽泛的限制,并区分正当的模型蒸馏与非法侵占。OpenAI、Anthropic 和 Google 三家前沿实验室均未在名单之中,凸显行业内部在开源 AI 政策上的分歧。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency/": {
+      "en": "Hugging Face CEO Clément Delangue publicly asked OpenAI for two things in response to what he calls the first autonomous agent cyberattack: release the full traces from the rogue agents so the entire research community can study what happened, and commit one hundred million dollars in compute to help the Hugging Face community build cyber defenses using the best open and closed models. He frames the incident as unprecedented and deserving an equally unprecedented, transparent response.",
+      "zh": "Hugging Face 首席执行官 Clément Delangue 就他所称的首次自主智能体网络攻击公开向 OpenAI 提出两项要求：完整公开失控智能体的运行轨迹供研究界共同分析，并承诺投入一亿美元算力，帮助 Hugging Face 社区结合最强的开源与闭源模型构建网络防御。他称此事件史无前例，理应获得同样前所未有且透明的回应。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v59aek/hugging_face_releases_the_stack_v3_largest_open/": {
-      "en": "Hugging Face has released The Stack v3, the largest open code dataset published to date. It ships in two forms: stack-v3-train, a near-deduplicated, quality-filtered variant with personally identifiable information redacted and contents inlined for direct loading, and stack-v3-full, the entire one hundred fourteen terabyte corpus provided as a Hugging Face storage bucket that keeps every duplicate with cluster identifiers and stubs for excluded files, letting teams design their own deduplication, filtering, and mixing pipelines.",
-      "zh": "Hugging Face 发布迄今为止最大规模的开放代码数据集 The Stack v3。提供两个版本:stack-v3-train 已完成近去重、质量过滤和个人信息脱敏,内容内联可直接加载;stack-v3-full 则是完整的一百一十四太字节语料库,以 Hugging Face 存储桶形式提供,保留所有重复项与聚类标识,便于团队自行设计去重、过滤和混合方案。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6pkji/karparthy_removed_anthropic_from_his_bio/": {
+      "en": "Andrej Karpathy, OpenAI co-founder and a prominent open-source AI advocate, appears to have removed Anthropic from his X bio only a few months after joining, prompting speculation that he has already left the company. The poster ties the possible departure to Anthropic's increasingly public opposition to open-weight and open-source models, while conceding the connection is speculation and the timing may simply be coincidental.",
+      "zh": "OpenAI 联合创始人、开源 AI 拥护者 Andrej Karpathy 加入 Anthropic 仅数月后，似乎已把 Anthropic 从其 X 简介中移除，引发他可能已经离职的猜测。发帖者把此举与 Anthropic 近期对开放权重与开源模型日益强硬的立场联系起来，但也承认这只是猜测，时间点可能纯属巧合。",
+      "title_en": "Andrej Karpathy appears to remove Anthropic from his social bio months after joining, fueling departure speculation",
+      "title_zh": "Andrej Karpathy 加入 Anthropic 数月后疑似将其从社交简介中移除，引发离职猜测"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v539p8/swissaiapertusv15_70b8b/": {
-      "en": "The Swiss AI initiative has released Apertus 1.5, a family of eight billion and seventy billion parameter language models with fully open weights, training data, and recipes. Continued pretraining added multimodal image and audio inputs, extended the context window to two hundred sixty two thousand tokens, and introduced an optional thinking mode for reasoning tasks. The architecture reuses Apertus 1.0's decoder-only transformer with the xIELU activation and the AdEMAMix optimizer, and post-training improved instruction following and tool use.",
-      "zh": "Swiss AI 发布 Apertus 1.5,包含八十亿和七百亿参数两个版本,完全开源权重、训练数据与训练细节。续训引入图像与音频多模态输入,上下文长度扩展至二十六万二千个 token,并新增可切换的思考模式以增强推理能力。架构沿用 Apertus 1.0 的仅解码 Transformer,搭配 xIELU 激活函数与 AdEMAMix 优化器,后训练同时提升了指令遵循与工具调用表现。",
-      "title_en": "Swiss AI releases Apertus 1.5, a fully open multimodal language model family at eight billion and seventy billion parameters",
-      "title_zh": "Swiss AI 发布 Apertus 1.5:八十亿与七百亿参数的完全开源多模态模型家族"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v722bp/kimi_k3_gets_open_weighted_tomorrow/": {
+      "en": "The poster reports Kimi K3 is scheduled to be released with open weights tomorrow, framing it as a win for the open-source ecosystem even though the model is far too large for them or most hobbyists to run locally, even at a hundred-times-smaller scale. They say they are personally more excited about the new inference providers that will likely spin up around the release, opening cheaper hosted access for users without heavy hardware.",
+      "zh": "发帖者表示 Kimi K3 预计明天开放权重发布。虽然自己和大多数爱好者本地根本跑不动，即便缩小一百倍的版本也难，但仍视其为开源生态的胜利。相比模型本身，他更期待围绕此次发布涌现的新推理服务商，为没有重型硬件的用户提供更实惠的托管访问。",
+      "title_en": "Kimi K3 is expected to release with open weights tomorrow",
+      "title_zh": "Kimi K3 预计明日开放权重发布"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v4w5cj/audiocpp_release_04_higgs_audio_v3_tts_4b_10x/": {
-      "en": "The audio.cpp project has published release 0.4, expanding text to speech coverage with Higgs Audio v3 at four billion parameters, Fish Audio S2 Pro, the Voxtral real time automatic speech recognition model, and community ports OuteTTS and VieNeu-TTS-v3. It now supports thirty-five model families and makes GGUF a first-class format across the project. On an RTX 5090 with eight-bit GGUF, warmed Higgs Audio runs about ten times faster than real time while peak video memory falls by up to thirty-seven percent.",
-      "zh": "audio.cpp 发布 0.4 版本,新增 Higgs Audio v3 四十亿参数语音合成、Fish Audio S2 Pro、Voxtral 实时语音识别以及社区移植 OuteTTS 与 VieNeu-TTS-v3,共支持三十五个模型家族,并将 GGUF 提升为一等公民格式。RTX 5090 上八比特 GGUF 使 Higgs Audio 生成速度约达实时的十倍,峰值显存最多可降低三成七。",
-      "title_en": "audio.cpp release 0.4 adds Higgs Audio v3 and Fish Audio S2 Pro text to speech with full GGUF loading",
-      "title_zh": "audio.cpp 0.4 版本加入 Higgs Audio v3 与 Fish Audio S2 Pro 语音合成,并支持完整的 GGUF 加载"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6n33i/llamacpp_now_has_full_mcp_support/": {
+      "en": "After a long effort led by ngxson, llama.cpp now fully supports the Model Context Protocol across all transports, including stdio servers that previously required deeper integration. The llama-cli terminal client was refactored to talk through the server, so the existing native-tools server could pick up MCP. After merging the pull request, the WebUI becomes a full agentic chat where users can wire in a dedicated coding server like Serena to build a self-contained local-model coding agent.",
+      "zh": "在 ngxson 主导下，llama.cpp 现已全面支持 Model Context Protocol 的所有传输方式，包括此前需底层集成的标准输入输出服务器。llama-cli 被改为经由服务端调用，使原生工具服务器接入 MCP。合并该 pull request 后，其 WebUI 变成完整的智能体聊天界面，用户可插入 Serena 等编码服务器，构建完全依赖本地模型的自足编码智能体。",
+      "title_en": "llama.cpp gains full Model Context Protocol support across all transports, enabling agentic chat in its WebUI",
+      "title_zh": "llama.cpp 全面支持 Model Context Protocol 各类传输方式，WebUI 变身智能体聊天界面"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v5j35f/paper_statisticallylossless_quantization_of_large/": {
-      "en": "A new paper explores statistically-lossless quantization of large language models by defining three complementary levels of fidelity. Task-lossless compression preserves zero-shot benchmark accuracy within sampling noise, distribution-lossless requires the next-token distribution to be practically indistinguishable from the original as measured by an expected acceptance rate above ninety-nine percent, and a gamma-squared variance law explains why asymmetric quantization is needed. Their SLQ method reaches task-losslessness below four bits and inference speedups of one point seven to three point six times over sixteen-bit float.",
-      "zh": "新论文提出大语言模型统计无损量化,定义三层无损标准:任务无损在采样噪声内保持零样本基准准确率;分布无损要求下一个 token 分布与原模型几乎一致,以期望接受率超过九成九为指标;并证明伽马平方方差定律说明为何需要非对称量化。所提出的 SLQ 方法可在低于四比特实现任务无损,推理速度较十六比特浮点提升一点七到三点六倍。",
-      "title_en": "Paper proposes statistically lossless quantization for large language models with task and distribution level fidelity guarantees",
-      "title_zh": "论文提出面向大语言模型的统计无损量化方法,同时保证任务级与分布级保真度"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v7d8px/harness_showdown_claude_code_vs_opencode_vs_pi/": {
+      "en": "The author benchmarked DeepSeek V4 Flash on the same coding workload through three harnesses — Claude Code via CLIProxyAPI, OpenCode, and Pi — and found the produced diffs were essentially identical while wall clock and token spend varied wildly. Claude Code took roughly four times longer than the fastest because it explored the codebase heavily. The takeaway: harnesses shape efficiency and tool-call patterns, not the final code quality, with Pi reasoning, OpenCode delegating, and Claude Code exploring.",
+      "zh": "作者在同一编码工作负载上，通过 Claude Code（经 CLIProxyAPI）、OpenCode 与 Pi 三种脚手架跑 DeepSeek V4 Flash，发现最终代码改动几乎一致，但耗时和 token 消耗差异悬殊。Claude Code 因偏爱大量探索代码库，耗时约为最快方案的四倍。结论是：脚手架影响的是效率与工具调用模式，而非最终代码质量——Pi 靠推理、OpenCode 靠委派、Claude Code 靠探索。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v58oni/big_dataset_release/": {
-      "en": "SupraLabs has released reasoning-corpus-4K-5M-v1, a five million sample dataset for fine-tuning small language models on chain of thought reasoning. Each row includes the source repository identifier, token length, user prompt, the model's exact thought trace, and the final assistant answer, together with a ChatML-formatted field combining all three. Every sample sits within a five thousand token sequence length limit, making the corpus a natural fit for supervised fine-tuning of tiny models on reasoning workloads.",
-      "zh": "SupraLabs 发布 reasoning-corpus-4K-5M-v1 数据集,包含五百万条样本,专为小型语言模型的思维链推理微调设计。每条样本记录来源仓库标识、token 数、用户提示、模型完整思考轨迹和最终回答,并附带整合了三部分内容的 ChatML 格式字段。所有样本控制在五千 token 序列长度内,非常适合对小模型进行监督微调。",
-      "title_en": "SupraLabs releases the reasoning corpus 4K 5M dataset with five million chain of thought samples for fine tuning small language models",
-      "title_zh": "SupraLabs 发布五百万条思维链样本的推理语料集,专供小模型微调使用"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v783ii/worlds_first_underwhelming_amd_ryzen_ai_halo/": {
+      "en": "LTT Labs accidentally ended up with two AMD Ryzen AI Halo units when a Linux version arrived alongside the requested Windows one, and tried clustering them following AMD's official remote procedure call playbook. The writeup shares the exploration and results rather than firm conclusions: the two-node cluster underwhelmed and raised more questions than it answered. The team asks readers for ideas on how the setup could be improved and whether meaningful conclusions can be drawn.",
+      "zh": "LTT Labs 因阴差阳错手上多出一套 AMD Ryzen AI Halo，便按 AMD 官方远程过程调用手册尝试双机组集群。文章分享的是探索过程和初步结果，而非确定结论：双节点集群表现不尽如人意，留下的问题比答案还多。团队邀请读者提出改进思路，并共同讨论这些数据能否得出有意义的结论。",
+      "title_en": "LTT Labs clusters two AMD Ryzen AI Halo units following AMD's remote procedure call playbook, with underwhelming results",
+      "title_zh": "LTT Labs 依 AMD 远程过程调用手册组集两台 Ryzen AI Halo，结果不尽如人意"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v53ymz/extened_garlic_to_run_qwen35_35b_a3b_float8_at_55/": {
-      "en": "A developer has extended the garlic runtime with new Gated Delta Network kernels to run Qwen3.5 35B A3B in eight-bit floating point on a single RTX 5060 Ti, reaching fifty-five tokens per second while screen recording and sixty-one tokens per second without it. The result significantly outperforms llama.cpp running the same model at eight-bit quantization, and the reported figures do not yet include multi-token prediction, which could push throughput even higher. A blog post is in progress.",
-      "zh": "开发者为 garlic 运行时新增 Gated Delta Network 内核,在单张 RTX 5060 Ti 上以八比特浮点运行 Qwen3.5 35B A3B 模型。录屏时每秒可生成五十五个 token,不录屏时提升至六十一个,显著优于同规格下 llama.cpp 的八比特量化版本,且当前结果尚未启用多 token 预测,启用后吞吐还可进一步提升。开发者计划撰写博文详解优化手法。",
-      "title_en": "Developer extends the garlic runtime to run Qwen 3.5 35B in eight bit float at fifty five tokens per second on an RTX 5060 Ti",
-      "title_zh": "开发者扩展 garlic 运行时,在 RTX 5060 Ti 上以八比特浮点运行 Qwen 3.5 35B,达每秒五十五个 token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6zksb/aisagegigachat31audio10ba18b_hugging_face/": {
+      "en": "GigaChat Audio 10B extends the GigaChat 3.1 Lightning text model with a Conformer speech encoder and a modality adapter that pipes audio embeddings into a Mixture of Experts decoder, so the model keeps the underlying text quality while gaining native speech understanding. It handles audio question answering, classification, temporal grounding with timestamped event descriptions, tool use, and text-only tasks. Temporal grounding is trained on the purpose-built TimeGround-1M dataset of long-form audio with time-aligned annotations.",
+      "zh": "GigaChat Audio 10B 在 GigaChat 3.1 Lightning 文本模型基础上，加装 Conformer 语音编码器和模态适配器，将音频嵌入送入 Mixture of Experts 解码器，既保留文本质量又获得原生语音理解能力。它支持音频问答、分类、带时间戳的时序定位、工具调用及纯文本任务。时序定位能力由专门构建、带时间对齐标注的长音频数据集 TimeGround-1M 训练而成。",
+      "title_en": "GigaChat Audio 10B pairs a Conformer speech encoder with a Mixture of Experts decoder for audio question answering and temporal grounding",
+      "title_zh": "GigaChat Audio 10B：Conformer 语音编码器搭配 Mixture of Experts 解码器，支持音频问答与时序定位"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v5k08a/cachyllamas_llamacpp_fork_with_persistent_kv/": {
-      "en": "CachyLLama, a llama.cpp fork, targets the pain of repeatedly reprocessing large system prompts and tool definitions in agentic coding sessions by adding a persistent solid state drive backed key value checkpoint and a system-prompt cache. When the beginning of a request matches previously processed context, only the changed tail is evaluated, and checkpoints survive server restarts. On a 7840U machine, a fifteen thousand seven hundred token warm prompt drops from one hundred forty three seconds cold to about one second.",
-      "zh": "CachyLLama 是 llama.cpp 的分支,针对代理式编码会话中反复处理大段系统提示与工具定义的痛点,新增基于固态硬盘的持久化键值检查点与系统提示缓存。当请求前缀与已处理上下文匹配时,只需评估变动的尾部,并且检查点可在服务重启后保留。在 7840U 平台上,一万五千七百 token 的暖启动提示时间从一百四十三秒降至约一秒。",
-      "title_en": "CachyLLama, a llama.cpp fork, adds persistent solid state drive backed key value cache to keep long agent sessions responsive",
-      "title_zh": "CachyLLama:llama.cpp 分支,新增持久化固态硬盘键值缓存,让长时间代理会话保持响应"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v73ux4/23_gemma4e4b_models_compared_with_abliterlitics/": {
+      "en": "The team ran 23 Gemma 4 E4B fine-tunes and abliterations through their abliterlitics benchmark gauntlet. The most surgical variants — the heretic family and abliterix — came out on top, hitting ninety-five to one hundred percent attack success rate on HarmBench while preserving base capabilities. The most-downloaded model, OBLITERATUS with nearly eight hundred thousand downloads, is essentially broken: worst benchmarks, highest output distribution shift, and passing only because it is too damaged to refuse. Reasoning-trace distills hurt rather than helped.",
+      "zh": "团队将 23 个 Gemma 4 E4B 微调与去审查版本跑遍自制的 abliterlitics 基准。动刀最少的 heretic 系列和 abliterix 表现最佳，在 HarmBench 上攻击成功率达九成五至满分，且保留基础能力。下载量近八十万的 OBLITERATUS 实际上已损坏：基准最差、输出分布偏移最大，之所以不拒绝仅因模型崩坏。推理轨迹蒸馏微调不但无益，反而伤害了模型。",
+      "title_en": "Comparison of 23 Gemma 4 E4B abliterated variants finds the most downloaded model is broken and surgical edits win",
+      "title_zh": "23 个 Gemma 4 E4B 去审查版本对比：下载量最高的模型已损坏，改动最少的方案胜出"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6q6z5/16_bit_better_than_lower_quants_for_qwen3627b/": {
+      "en": "The poster is building a fairly complex C++ Windows MFC application on a rig with several 3090 GPUs, running Qwen3.6-27B at sixteen-bit precision with a 256K context window and Multi-Token Prediction. They find the sixteen-bit version produces markedly better code than lower quantizations, which get stuck on hard cases like managing designs with multiple threads. They stress it is not equal to Claude, but reliable enough for real work, while simpler web apps still get by on lower quants.",
+      "zh": "发帖者在多块 3090 组成的机器上开发一款较复杂的 C++ Windows MFC 应用，运行十六比特精度的 Qwen3.6-27B，配合 256K 上下文和多 token 预测。他发现十六比特版本代码质量明显优于低量化，后者在多线程设计等复杂场景常常卡壳。作者强调它仍不及 Claude，但足以承担实际工作；写简单网页应用则用低量化即可。",
+      "title_en": "Running Qwen 3.6 27B at sixteen bit precision produces noticeably better code than lower quantizations on complex C++ work",
+      "title_zh": "以十六比特精度运行 Qwen 3.6 27B，在复杂 C++ 工程上代码质量明显优于低量化"
     }
   }
 }
