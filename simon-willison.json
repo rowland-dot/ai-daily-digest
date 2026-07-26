@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-25T21:27:04.878Z",
+  "fetched_at": "2026-07-26T21:27:54.241Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "link": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+      "updated": "2026-07-26T19:30:54+00:00",
+      "summary": "An Inside Look at the Relay Market Powering Token Resellers and Fraud"
+    },
+    {
+      "title": "Ruff v0.16.0",
+      "link": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+      "updated": "2026-07-25T22:44:05+00:00",
+      "summary": "Ruff v0.16.0"
+    },
     {
       "title": "Quoting Boris Cherny",
       "link": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
       "updated": "2026-07-21T14:22:27+00:00",
       "summary": "Nativ: Run AI models locally on your Mac"
-    },
-    {
-      "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
-      "link": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
-      "updated": "2026-07-21T12:54:02+00:00",
-      "summary": "Earlier this month I hosted a fireside chat session at the AI Engineer World's Fair with Cat Wu and Thariq Shihipar from Anthropic's Claude Code team. We talked about Claude Code, Claude Tag, Fable, coding agent security, evals, tool design, and how Anthropic use these tools themselves."
-    },
-    {
-      "title": "Reverse-engineering is cheap now",
-      "link": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
-      "updated": "2026-07-20T19:24:05+00:00",
-      "summary": "I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes."
     }
   ]
 }

@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-07-25T21:27:02.853Z",
+  "fetched_at": "2026-07-26T21:27:52.302Z",
   "repos": [
     {
-      "owner": "block",
-      "name": "buzz",
-      "url": "https://github.com/block/buzz",
-      "description": "A hive mind communication platform",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 11735,
-      "forks": 929,
-      "starsToday": 2506
-    },
-    {
-      "owner": "alibaba",
-      "name": "open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 12870,
-      "forks": 884,
-      "starsToday": 439
+      "owner": "permissionlesstech",
+      "name": "bitchat",
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "description": "bluetooth mesh chat, IRC vibes",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 30116,
+      "forks": 4683,
+      "starsToday": 1198
     },
     {
       "owner": "citrolabs",
@@ -30,108 +19,31 @@
       "description": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 3468,
-      "forks": 173,
-      "starsToday": 986
+      "stars": 4376,
+      "forks": 219,
+      "starsToday": 898
     },
     {
-      "owner": "ComposioHQ",
-      "name": "awesome-claude-skills",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 70526,
-      "forks": 7936,
-      "starsToday": 574
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-cookbooks",
-      "url": "https://github.com/anthropics/claude-cookbooks",
-      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 49836,
-      "forks": 5894,
-      "starsToday": 144
-    },
-    {
-      "owner": "Automattic",
-      "name": "harper",
-      "url": "https://github.com/Automattic/harper",
-      "description": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+      "owner": "block",
+      "name": "buzz",
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 13369,
-      "forks": 505,
-      "starsToday": 503
+      "stars": 13039,
+      "forks": 1064,
+      "starsToday": 1705
     },
     {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 33757,
-      "forks": 5701,
-      "starsToday": 319
-    },
-    {
-      "owner": "obra",
-      "name": "superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 261029,
-      "forks": 23296,
-      "starsToday": 507
-    },
-    {
-      "owner": "Pumpkin-MC",
-      "name": "Pumpkin",
-      "url": "https://github.com/Pumpkin-MC/Pumpkin",
-      "description": "Empowering everyone to host fast and efficient Minecraft servers.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 9670,
-      "forks": 653,
-      "starsToday": 357
-    },
-    {
-      "owner": "permissionlesstech",
-      "name": "bitchat",
-      "url": "https://github.com/permissionlesstech/bitchat",
-      "description": "bluetooth mesh chat, IRC vibes",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 28616,
-      "forks": 4248,
-      "starsToday": 1695
-    },
-    {
-      "owner": "mattpocock",
-      "name": "skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 188130,
-      "forks": 16164,
-      "starsToday": 1743
-    },
-    {
-      "owner": "palmier-io",
-      "name": "palmier-pro",
-      "url": "https://github.com/palmier-io/palmier-pro",
-      "description": "macOS video editor built for AI",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 12170,
-      "forks": 893,
-      "starsToday": 346
+      "owner": "pingdotgg",
+      "name": "t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 15014,
+      "forks": 3305,
+      "starsToday": 159
     },
     {
       "owner": "CoreBunch",
@@ -140,31 +52,31 @@
       "description": "The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 4985,
-      "forks": 465,
-      "starsToday": 424
+      "stars": 5595,
+      "forks": 519,
+      "starsToday": 892
     },
     {
-      "owner": "Lordog",
-      "name": "dive-into-llms",
-      "url": "https://github.com/Lordog/dive-into-llms",
-      "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
-      "language": "Jupyter Notebook",
-      "languageColor": "#DA5B0B",
-      "stars": 45334,
-      "forks": 5414,
-      "starsToday": 405
+      "owner": "yorukot",
+      "name": "superfile",
+      "url": "https://github.com/yorukot/superfile",
+      "description": "Pretty fancy and modern terminal file manager",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 20149,
+      "forks": 638,
+      "starsToday": 180
     },
     {
-      "owner": "RyanCodrai",
-      "name": "turbovec",
-      "url": "https://github.com/RyanCodrai/turbovec",
-      "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 14253,
-      "forks": 1268,
-      "starsToday": 89
+      "owner": "nodejs",
+      "name": "node",
+      "url": "https://github.com/nodejs/node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 118443,
+      "forks": 36174,
+      "starsToday": 37
     },
     {
       "owner": "OtterMind",
@@ -173,9 +85,42 @@
       "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
       "language": "Java",
       "languageColor": "#b07219",
-      "stars": 26614,
-      "forks": 2901,
-      "starsToday": 364
+      "stars": 27059,
+      "forks": 2941,
+      "starsToday": 399
+    },
+    {
+      "owner": "pbakaus",
+      "name": "impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 50561,
+      "forks": 2980,
+      "starsToday": 466
+    },
+    {
+      "owner": "shiyu-coder",
+      "name": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 34116,
+      "forks": 5749,
+      "starsToday": 322
+    },
+    {
+      "owner": "alibaba",
+      "name": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 13704,
+      "forks": 937,
+      "starsToday": 840
     },
     {
       "owner": "andrewyng",
@@ -184,20 +129,64 @@
       "description": "Simple, unified interface to multiple Generative AI providers",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 15202,
-      "forks": 1614,
-      "starsToday": 75
+      "stars": 15373,
+      "forks": 1627,
+      "starsToday": 189
     },
     {
-      "owner": "affaan-m",
-      "name": "ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 233255,
-      "forks": 35559,
-      "starsToday": 364
+      "owner": "anthropics",
+      "name": "claude-cookbooks",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+      "language": "Jupyter Notebook",
+      "languageColor": "#DA5B0B",
+      "stars": 50183,
+      "forks": 5918,
+      "starsToday": 377
+    },
+    {
+      "owner": "Pumpkin-MC",
+      "name": "Pumpkin",
+      "url": "https://github.com/Pumpkin-MC/Pumpkin",
+      "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 9958,
+      "forks": 672,
+      "starsToday": 339
+    },
+    {
+      "owner": "permissionlesstech",
+      "name": "bitchat-android",
+      "url": "https://github.com/permissionlesstech/bitchat-android",
+      "description": "bluetooth mesh chat, IRC vibes",
+      "language": "Kotlin",
+      "languageColor": "#A97BFF",
+      "stars": 6649,
+      "forks": 1578,
+      "starsToday": 444
+    },
+    {
+      "owner": "jenkinsci",
+      "name": "jenkins",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "description": "Jenkins automation server",
+      "language": "Java",
+      "languageColor": "#b07219",
+      "stars": 25685,
+      "forks": 9655,
+      "starsToday": 8
+    },
+    {
+      "owner": "amnezia-vpn",
+      "name": "amnezia-client",
+      "url": "https://github.com/amnezia-vpn/amnezia-client",
+      "description": "Amnezia VPN Client (Desktop+Mobile)",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 13257,
+      "forks": 1005,
+      "starsToday": 17
     }
   ]
 }

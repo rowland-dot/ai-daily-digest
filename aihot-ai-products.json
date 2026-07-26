@@ -1,8 +1,44 @@
 {
-  "count": 29,
+  "count": 27,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms24qise02adro9fp4xzdhyd",
+      "title": "Suno 推出多项新功能，含MIDI导出等",
+      "title_en": "We've been building faster than ever！ 🚀 Here's a quick look at what's new across web & mobile： • …",
+      "url": "https://x.com/suno/status/2081443050312843765",
+      "permalink": "https://aihot.virxact.com/items/cms24qise02adro9fp4xzdhyd",
+      "source": "X：Suno (@suno)",
+      "publishedAt": "2026-07-26T18:14:29.000Z",
+      "discoveredAt": "2026-07-26T18:26:42.298Z",
+      "summary": "我们一直在以比以往更快的速度构建！🚀\n\n以下是网页端和移动端的新功能一览：\n\n• 高级音轨分离 • 将音轨导出为 MIDI • 歌词合写与自动保存 • 截图生成歌曲 • Apple CarPlay 与 Android Auto\n\n你最期待 Suno 的哪些新功能？",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms24qise02adro9fp4xzdhyd"
+      }
+    },
+    {
+      "id": "cms125zmg00usro0wwu4it7dg",
+      "title": "xAI 发布 Grok CLI 并支持 /tutorial 命令",
+      "title_en": "Download Grok Build and type /tutorial http://X.ai/cli",
+      "url": "https://x.com/elonmusk/status/2081174079969632347",
+      "permalink": "https://aihot.virxact.com/items/cms125zmg00usro0wwu4it7dg",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-07-26T00:25:41.000Z",
+      "discoveredAt": "2026-07-26T00:26:58.830Z",
+      "summary": "下载 Grok Build 并输入 /tutorial\n\nhttp://X.ai/cli",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms125zmg00usro0wwu4it7dg"
+      }
+    },
     {
       "id": "cmrz07a8z00ksroey0zfjw3iq",
       "title": "Runway Agent 推出自然语言工作流功能",
@@ -451,78 +487,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsy2z9e03wpbitlqgh25fol"
-      }
-    },
-    {
-      "id": "cmrtfkakm2undbitla364sgej",
-      "title": "Grok for Excel 发布：在 Microsoft Excel 中用自然语言提问、写公式和运行场景",
-      "title_en": "Grok for Excel",
-      "url": "https://x.ai/news/introducing-excel-addin",
-      "permalink": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-19T16:00:00.000Z",
-      "discoveredAt": "2026-07-20T16:19:52.655Z",
-      "summary": "xAI 将 Grok 引入 Microsoft Excel，推出免费 Microsoft 365 加载项。用户可在工作表中用自然语言提问、根据描述编写公式或运行场景，答案会引用具体单元格，图表可直接插入工作表。该加载项还支持连接 SharePoint 或 Google Drive 获取上下文，并已同步支持 Word 和 PowerPoint。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtfkakm2undbitla364sgej"
-      }
-    },
-    {
-      "id": "cmrsopm9r0b7ubiwmtfvpwkxu",
-      "title": "字节跳动发布 Seed Audio 1.0 音频创作模型，统一建模人声与音效实现端到端影视级音频生成",
-      "title_en": "从\"会说\"走向\"会创作\"| Seed Audio 1.0 音频创作模型发布",
-      "url": "https://seed.bytedance.com/zh/blog/%E4%BB%8E-%E4%BC%9A%E8%AF%B4-%E8%B5%B0%E5%90%91-%E4%BC%9A%E5%88%9B%E4%BD%9C-seed-audio-1-0-%E9%9F%B3%E9%A2%91%E5%88%9B%E4%BD%9C%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
-      "permalink": "https://aihot.virxact.com/items/cmrsopm9r0b7ubiwmtfvpwkxu",
-      "source": "字节 Seed：Research Feed（网页内嵌数据）",
-      "publishedAt": "2026-07-19T16:00:00.000Z",
-      "discoveredAt": "2026-07-20T03:48:07.955Z",
-      "summary": "字节跳动 Seed 团队发布音频创作模型 Seed Audio 1.0，在统一框架下联合建模人声、音效和环境声，支持 100ms 间隔精度的时间控制、单次约 2 分钟音频的延展生成及 20+ 语种自然生成。该模型已在火山方舟体验中心上线，多数场景音频可用率达 90% 以上，多语言音频自然度 MOS 超 4 分。",
-      "category": "ai-products",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsopm9r0b7ubiwmtfvpwkxu"
-      }
-    },
-    {
-      "id": "cmrraq5dk03p5bi18vyrt83kp",
-      "title": "ChatGPT Work 功能：建站、邮件、文档处理",
-      "title_en": "ChatGPT Work is for ✅ Creating and hosting sites ✅ Managing your emails for you ✅ Summarizing mount…",
-      "url": "https://x.com/thsottiaux/status/2078697631019303273",
-      "permalink": "https://aihot.virxact.com/items/cmrraq5dk03p5bi18vyrt83kp",
-      "source": "X：Tibo (@thsottiaux)",
-      "publishedAt": "2026-07-19T04:25:10.000Z",
-      "discoveredAt": "2026-07-19T04:28:55.066Z",
-      "summary": "ChatGPT Work 适用于\n\n✅ 创建和托管网站 ✅ 为你管理电子邮件 ✅ 总结海量文档 ✅ 制作一流的文档、表格和幻灯片\n\n已在你的移动应用或 http://chatgpt.com 上提供，包含在 Plus、Pro、Business 和 Enterprise 套餐中。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrraq5dk03p5bi18vyrt83kp"
-      }
-    },
-    {
-      "id": "cmrr7sdid02ybbi18afm9lr2i",
-      "title": "transcribe.cpp 发布：基于 ggml 的跨平台语音转录库，支持 16 个 ASR 模型族",
-      "title_en": "Transcribe.cpp",
-      "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
-      "permalink": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-19T02:49:15.657Z",
-      "discoveredAt": "2026-07-19T03:06:39.736Z",
-      "summary": "transcribe.cpp v0.1.0 发布，一个基于 ggml 的语音转录库，支持 16 个 ASR 模型族（60+ 模型），并通过 Vulkan、Metal、CUDA 和 TinyBLAS 实现 GPU 加速。",
-      "category": "ai-products",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i"
       }
     }
   ]

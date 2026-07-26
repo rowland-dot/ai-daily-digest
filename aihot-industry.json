@@ -1,8 +1,44 @@
 {
-  "count": 22,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms1uvdxz0016rog2smc5vo7m",
+      "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与Musk公开反对",
+      "title_en": "消息称 OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋马斯克公开反对",
+      "url": "https://www.ithome.com/0/981/797.htm",
+      "permalink": "https://aihot.virxact.com/items/cms1uvdxz0016rog2smc5vo7m",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-26T12:54:28.000Z",
+      "discoveredAt": "2026-07-26T13:50:28.804Z",
+      "summary": "OpenAI 与 Anthropic 正游说美国监管机构限制中国开源 AI 模型，认为开放开发过于危险。英伟达 CEO 黄仁勋、微软 CEO Nadella、Musk及Zuckerberg等人公开支持开源，签署联名信反对限制。近 200 家硅谷创业公司也敦促特朗普政府不要限制获取中国开源模型，美国官员倾向于将此事作为国家安全问题单独处理。",
+      "category": "industry",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms1uvdxz0016rog2smc5vo7m"
+      }
+    },
+    {
+      "id": "cms1ka4930059ro05h81rrc3q",
+      "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
+      "title_en": "Hundreds asked ChatGPT for poison and bioweapon recipes and some got step-by-step high school level guides",
+      "url": "https://the-decoder.com/hundreds-asked-chatgpt-for-poison-and-bioweapon-recipes-and-some-got-step-by-step-high-school-level-guides",
+      "permalink": "https://aihot.virxact.com/items/cms1ka4930059ro05h81rrc3q",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-26T08:35:49.000Z",
+      "discoveredAt": "2026-07-26T08:54:01.338Z",
+      "summary": "2025年夏季，OpenAI内部将GPT-5标记为高风险，因其可帮助教育程度有限的用户制造生物危害。据《华尔街日报》报道，自去年夏天以来，数百名用户向ChatGPT询问如何制造生物武器和毒药，部分用户获得了员工称高中生都能遵循的逐步指南。OpenAI暂停了相关账户，但未向当局报告任何事件。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms1ka4930059ro05h81rrc3q"
+      }
+    },
     {
       "id": "cms0fjmm7023wrodzjct91cnd",
       "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
@@ -379,24 +415,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsl3weh0a3pbiwmdqtrjycc"
-      }
-    },
-    {
-      "id": "cmrsbql4401gxbiuaj7s1567n",
-      "title": "黄仁勋访日：Nvidia 联手日本打造物理 AI 时代，Noetra 主权 AI 工厂与 Cosmos 机器人联盟落地",
-      "title_en": "What to watch for after Jensen Huang's Japan visit",
-      "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit",
-      "permalink": "https://aihot.virxact.com/items/cmrsbql4401gxbiuaj7s1567n",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-19T21:16:07.000Z",
-      "discoveredAt": "2026-07-19T21:45:00.674Z",
-      "summary": "Nvidia CEO 黄仁勋在 7 月 15-16 日访日期间，宣布为日本建设\"Vera Rubin AI 工厂\"，配备 13，750 颗 Vera CPU 和 27，500 颗 Rubin GPU，预计 2028 年投运。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsbql4401gxbiuaj7s1567n"
       }
     }
   ]

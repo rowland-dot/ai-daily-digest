@@ -1,5 +1,5 @@
 {
-  "count": 19,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -289,60 +289,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2"
-      }
-    },
-    {
-      "id": "cmrru2n5x00vzbi5qea6youod",
-      "title": "MiniCPM5-2B发布：4B以下全球性能第一，适配9款芯片",
-      "title_en": "WAIC 2026 | 最新「小钢炮」MiniCPM5-2B亮相：适配多款芯片、4B以下全球性能第一",
-      "url": "https://mp.weixin.qq.com/s/rjFxrUylyGMqa5QtgypCdw",
-      "permalink": "https://aihot.virxact.com/items/cmrru2n5x00vzbi5qea6youod",
-      "source": "公众号：面壁智能（MiniCPM）",
-      "publishedAt": "2026-07-19T13:12:39.000Z",
-      "discoveredAt": "2026-07-19T13:30:30.855Z",
-      "summary": "面壁智能联合OpenBMB发布端侧模型MiniCPM5-2B，以2B参数量在AA-Index榜单取得4B以下模型最高分17分，平均分54.26，超越Qwen3.5-2B等竞品。模型原生支持混合思考与512K上下文，已完成华为昇腾、英伟达等9款芯片的Day0适配，即将开源。",
-      "category": "ai-models",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrru2n5x00vzbi5qea6youod"
-      }
-    },
-    {
-      "id": "cmrrt03gx00mkbi5qtoim4wvo",
-      "title": "昆仑万维宣布2026为\"世界模型元年\"，发布Matrix-Game 3.5等模型",
-      "title_en": "昆仑万维WAIC专场论坛：董事长兼CEO方汉宣布2026为\"世界模型元年\"",
-      "url": "https://mp.weixin.qq.com/s/LidvGePhOOoUY3KTor_w9g",
-      "permalink": "https://aihot.virxact.com/items/cmrrt03gx00mkbi5qtoim4wvo",
-      "source": "公众号：昆仑万维（天工）",
-      "publishedAt": "2026-07-19T12:35:56.000Z",
-      "discoveredAt": "2026-07-19T13:00:31.466Z",
-      "summary": "昆仑万维董事长方汉在WAIC上宣布2026年为\"世界模型元年\"，并发布Matrix-Game 3.5世界模型、Mureka v9.5与O3音乐模型。Matrix-Game 3.5实现Patch级记忆注入，5B模型在720p分辨率下单卡可达20FPS实时生成，核心架构已开源。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrrt03gx00mkbi5qtoim4wvo"
-      }
-    },
-    {
-      "id": "cmrrjaxlv030jbihklywu3xy6",
-      "title": "Qwen3.8 开源发布，2.4T 参数模型上线",
-      "title_en": "Qwen3.8 is launching and going open-weight soon！🌐 With a massive 2.4T parameters， this model is co…",
-      "url": "https://x.com/Alibaba_Qwen/status/2078754377473601787",
-      "permalink": "https://aihot.virxact.com/items/cmrrjaxlv030jbihklywu3xy6",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "publishedAt": "2026-07-19T08:10:39.000Z",
-      "discoveredAt": "2026-07-19T08:29:01.517Z",
-      "summary": "Qwen3.8 即将发布并很快开源权重！🌐\n\n该模型拥有 2.4T 海量参数，正在持续进化。我们相信它是目前最强大的模型之一，可与领先的前沿 AI 模型媲美，仅次于 Fable 5。\n\n你无需等待即可测试。就在刚才，Qwen3.8-Max-Preview 已在阿里巴巴的 Token Plan、Qoder 和 QoderWork 上首次亮相。快来抢先体验吧。\n\n期待你的作品。敬请关注！🚀",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrrjaxlv030jbihklywu3xy6"
       }
     }
   ]
