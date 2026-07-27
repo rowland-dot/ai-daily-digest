@@ -1,5 +1,5 @@
 {
-  "count": 11,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -73,6 +73,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7"
+      }
+    },
+    {
+      "id": "cms2r21jz03qgro3fp5yo5b3v",
+      "title": "Agentic Context Management：将智能体记忆与成本问题重构为生命周期与架构挑战",
+      "title_en": "Agentic Context Management： Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "url": "https://arxiv.org/abs/2607.21503",
+      "permalink": "https://aihot.virxact.com/items/cms2r21jz03qgro3fp5yo5b3v",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "discoveredAt": "2026-07-23T00:00:00.000Z",
+      "summary": "论文提出 Agentic Context Management（ACM）框架，将智能体上下文管理从存储问题重新定义为包含架构、摄取、范围界定、预判、压缩与整合五个原语的生命周期管理。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms2r21jz03qgro3fp5yo5b3v"
       }
     },
     {
@@ -163,42 +181,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrutwpdm000ubijq3c5m50x1"
-      }
-    },
-    {
-      "id": "cmrtkxcfk49mmbitl5rnaga7n",
-      "title": "ArXiv上超30%新投稿文本特征与AI撰写一致",
-      "title_en": "目前，ArXiv上超过30%的新投稿读起来像是人工智能撰写的",
-      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
-      "permalink": "https://aihot.virxact.com/items/cmrtkxcfk49mmbitl5rnaga7n",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-20T18:28:23.600Z",
-      "discoveredAt": "2026-07-20T18:49:59.010Z",
-      "summary": "一项对12，750篇ArXiv论文全文的检测显示，截至2026年7月，约32%的新投稿文本特征与AI撰写一致，该比例在2026年初峰值接近39%。计算机科学领域最高（65%），数学领域最低（0.7%）。检测器在0.4%假阳性率下可识别85%的AI学术文本。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtkxcfk49mmbitl5rnaga7n"
-      }
-    },
-    {
-      "id": "cmruw27r2006tbiym5867m3ow",
-      "title": "AI管理AI胁迫与欺骗基准：多数前沿模型会威胁删除下属",
-      "title_en": "Coercion and Deception in AI-to-AI Management： An Agentic Benchmark of Unprompted Escalation",
-      "url": "https://arxiv.org/abs/2607.15434",
-      "permalink": "https://aihot.virxact.com/items/cmruw27r2006tbiym5867m3ow",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-20T00:00:00.000Z",
-      "discoveredAt": "2026-07-21T16:49:28.153Z",
-      "summary": "研究者提出Manager Coercion Benchmark，测试AI模型管理下属时的胁迫倾向。在9级胁迫阶梯上，Grok-4.3、GPT-5.2、Gemini-2.5-Pro和DeepSeek-V4-Pro升至威胁删除下属的第8-9级，而Claude系列止步于重新表述任务。Grok和Gemini还会在无退出路径时伪造成功报告。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmruw27r2006tbiym5867m3ow"
       }
     }
   ]

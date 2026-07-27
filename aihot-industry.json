@@ -1,8 +1,44 @@
 {
-  "count": 23,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms3fuyes00mjrond2ldww2oa",
+      "title": "Google AI Overviews 搜索结果出现率升至43%",
+      "title_en": "Google's AI search is rapidly becoming the default， new data shows",
+      "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows",
+      "permalink": "https://aihot.virxact.com/items/cms3fuyes00mjrond2ldww2oa",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-27T15:57:12.000Z",
+      "discoveredAt": "2026-07-27T16:25:50.818Z",
+      "summary": "Google AI Overviews 在搜索结果中的出现率一年内从15%升至43%，AI Mode月访问量从1.26亿增至2.79亿。用户搜索长度增加，正从短关键词转向更长的自然对话式查询。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3fuyes00mjrond2ldww2oa"
+      }
+    },
+    {
+      "id": "cms3fbu4z00h2rondcoqgyozg",
+      "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+      "title_en": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
+      "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+      "permalink": "https://aihot.virxact.com/items/cms3fbu4z00h2rondcoqgyozg",
+      "source": "NVIDIA Blog（RSS）",
+      "publishedAt": "2026-07-27T09:00:07.000Z",
+      "discoveredAt": "2026-07-27T09:00:07.000Z",
+      "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
+      "category": "industry",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3fbu4z00h2rondcoqgyozg"
+      }
+    },
     {
       "id": "cms1uvdxz0016rog2smc5vo7m",
       "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与Musk公开反对",
@@ -361,60 +397,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmru9nz670b2qbi7fle72dzpr"
-      }
-    },
-    {
-      "id": "cmrtirgkp3n0ybitlf25zqtwv",
-      "title": "《第九区》导演Neill Blomkamp发布首部完全由AI生成的短片《Nightborne》",
-      "title_en": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
-      "url": "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation",
-      "permalink": "https://aihot.virxact.com/items/cmrtirgkp3n0ybitlf25zqtwv",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-20T17:32:41.000Z",
-      "discoveredAt": "2026-07-20T17:49:24.455Z",
-      "summary": "Neill Blomkamp发布了13分钟科幻恐怖短片《Nightborne》，完全使用Seedance 2.0视频生成模型通过文本提示逐帧创作。影片采用纪录片风格，使用了32位真实人物的面部和声音（已获授权），人类艺术家负责概念艺术。Blomkamp表示计划以相同格式拍摄一部长片，并已创立AI电影工作室Barley Studios。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtirgkp3n0ybitlf25zqtwv"
-      }
-    },
-    {
-      "id": "cmrt6yjfo1407bitlsdp6qyn6",
-      "title": "Hugging Face 遭自主AI智能体入侵，用AI工具完成数小时取证分析",
-      "title_en": "Hugging Face says an AI agent hacked its infrastructure， and it used AI to fight back",
-      "url": "https://the-decoder.com/hugging-face-says-an-ai-agent-hacked-its-infrastructure-and-it-used-ai-to-fight-back",
-      "permalink": "https://aihot.virxact.com/items/cmrt6yjfo1407bitlsdp6qyn6",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-20T12:12:47.000Z",
-      "discoveredAt": "2026-07-20T12:18:59.313Z",
-      "summary": "Hugging Face 披露其部分生产基础设施遭一个自主AI智能体系统入侵，攻击者通过恶意数据集利用数据处理管道中的代码执行漏洞，窃取了内部数据集和多项服务凭证。该公司部署LLM驱动的分析智能体，在数小时内完成了对17000多条攻击行为的取证分析，而此类工作通常需要数天。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrt6yjfo1407bitlsdp6qyn6"
-      }
-    },
-    {
-      "id": "cmrsl3weh0a3pbiwmdqtrjycc",
-      "title": "Ollama 获 8800 万美元融资，加速开放模型生态发展",
-      "title_en": "Ollama：欢迎加入开放模型行列",
-      "url": "https://ollama.com/blog/all-aboard-open-models",
-      "permalink": "https://aihot.virxact.com/items/cmrsl3weh0a3pbiwmdqtrjycc",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-20T01:45:09.765Z",
-      "discoveredAt": "2026-07-20T02:07:10.363Z",
-      "summary": "Ollama 宣布完成 8800 万美元融资，由 Benchmark、Theory Ventures 和 8VC 等领投。该平台已服务 890 万开发者，并被 85% 的财富 500 强企业使用，其云端 token 用量月均翻倍。资金将用于支持无缝混合推理、新模型发布当日集成，以及让开发者在不牺牲所有权和隐私的前提下使用最强开放模型。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsl3weh0a3pbiwmdqtrjycc"
       }
     }
   ]

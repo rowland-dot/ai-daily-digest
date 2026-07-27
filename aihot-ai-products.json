@@ -4,6 +4,60 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cms3lggqj00c0roskhu1r5f09",
+      "title": "Kimi 发布视觉感知基准 PerceptionBench",
+      "title_en": "We are releasing PerceptionBench， a benchmark that isolates visual perception and evaluates it as a …",
+      "url": "https://x.com/Kimi_Moonshot/status/2081813202514681878",
+      "permalink": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-07-27T18:45:20.000Z",
+      "discoveredAt": "2026-07-27T19:02:32.798Z",
+      "summary": "Kimi.ai 发布 PerceptionBench，一个从当前前沿模型在 42 个基准上的失败模式中归纳出的视觉感知基准。该基准将视觉感知拆解为 10 种原子能力，并构建了 3000 道验证题，每道题只考察单一感知能力，无需推理或外部知识。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09"
+      }
+    },
+    {
+      "id": "cms3ivlee000oroiy8dntgvq9",
+      "title": "SGLang 和 Miles 为月之暗面 2.8T 参数 Kimi K3 模型提供发布当日支持",
+      "title_en": "Blog SGLang and Miles Add Day-0 Support for Kimi K3 We are excited to announce Day-0 support for Kimi K3 in SGLang and Miles. K3 is the first open-source model in the 3-trillion-parameter class， and its hybrid architecture departs from convention in al… SGLang Team",
+      "url": "https://www.lmsys.org/blog/2026-07-27-kimi-k3-day0-support",
+      "permalink": "https://aihot.virxact.com/items/cms3ivlee000oroiy8dntgvq9",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-27T17:50:17.260Z",
+      "discoveredAt": "2026-07-27T17:50:17.260Z",
+      "summary": "SGLang 和 Miles 为月之暗面开源的 2.8T 参数模型 Kimi K3 提供发布当日支持，分别负责推理和 RL 训练。K3 采用 69 层 KDA 线性注意力与 24 层 MLA 交错的混合架构，在 SGLang 上单卡 batch-1 解码速度达约 113 tok/s，结合 DSpark 推测解码可达约 423 tok/s。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3ivlee000oroiy8dntgvq9"
+      }
+    },
+    {
+      "id": "cms3dxit00berro3f8etbfxfh",
+      "title": "Kimi K3 开源分布式智能体环境 AgentENV",
+      "title_en": "We've open-sourced AgentENV in collaboration with kvcache-ai. AgentENV is a distributed system for …",
+      "url": "https://x.com/Kimi_Moonshot/status/2081762978391843020",
+      "permalink": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-07-27T15:25:45.000Z",
+      "discoveredAt": "2026-07-27T15:31:51.181Z",
+      "summary": "我们与 kvcache-ai 合作开源了 AgentENV。\n\nAgentENV 是一个用于大规模运行智能体环境的分布式系统。其组件为 Kimi K3 的智能体强化学习训练提供支持，具备快速快照、恢复和分支功能，适用于大规模并行智能体工作流。\n\n在 GitHub 上探索：http://github.com/kvcache-ai/AgentEnv",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh"
+      }
+    },
+    {
       "id": "cms24qise02adro9fp4xzdhyd",
       "title": "Suno 推出多项新功能，含MIDI导出等",
       "title_en": "We've been building faster than ever！ 🚀 Here's a quick look at what's new across web & mobile： • …",
@@ -184,6 +238,24 @@
       }
     },
     {
+      "id": "cms3fbu4z00h6rond0qo6j75s",
+      "title": "NVIDIA 开源首个 GPU 加速医疗物理仿真框架",
+      "title_en": "NVIDIA Open Sources First GPU-Accelerated Medical Physics Simulation Framework",
+      "url": "https://blogs.nvidia.com/blog/medical-physics-simulation-open-source",
+      "permalink": "https://aihot.virxact.com/items/cms3fbu4z00h6rond0qo6j75s",
+      "source": "NVIDIA Blog（RSS）",
+      "publishedAt": "2026-07-22T13:00:11.000Z",
+      "discoveredAt": "2026-07-22T13:00:11.000Z",
+      "summary": "NVIDIA 宣布开源 Medical Physics Simulation 框架，这是 Isaac for Healthcare 中首个 GPU 加速的医疗物理仿真能力。该框架可并行运行 8，192 个机器人训练环境，将训练时间从超过 5 小时缩短至不到 2 分钟。CMR Surgical、Johnson & Johnson MedTech 等机构已在使用该框架。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3fbu4z00h6rond0qo6j75s"
+      }
+    },
+    {
       "id": "cmrvx8ycy0240bipz0pkrvryq",
       "title": "小红书开源 BigMac：多模态大模型训练新范式",
       "title_en": "小红书 dots infra 开源BigMac ： 突破多模态大模型训练的帕累托前沿",
@@ -310,6 +382,24 @@
       }
     },
     {
+      "id": "cms3dqo6s0axdro3fg3b4mfc0",
+      "title": "AlloyDB 推出列式引擎加速 HNSW，pgvector 向量搜索 QPS 提升最高 4.9 倍",
+      "title_en": "Supercharging pgvector： 4x faster HNSW vector search with AlloyDB",
+      "url": "https://cloud.google.com/blog/products/databases/supercharge-pgvector-4x-faster-hnsw-with-alloydb",
+      "permalink": "https://aihot.virxact.com/items/cms3dqo6s0axdro3fg3b4mfc0",
+      "source": "Google Cloud：Databases（RSS）",
+      "publishedAt": "2026-07-21T16:00:00.000Z",
+      "discoveredAt": "2026-07-21T16:00:00.000Z",
+      "summary": "Google Cloud 的 AlloyDB 在预览版中推出列式引擎加速的 HNSW 索引，使 pgvector 向量搜索的每秒查询数（QPS）相比标准 PostgreSQL HNSW 提升最高 4.9 倍，在固定 QPS 下召回率可提升 0.163。该加速通过将索引固定在列式引擎内存中、使用向量化内存布局并绕过标准 PostgreSQL 缓冲管理器开销实现，无需修改应用即可获得性能提升。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3dqo6s0axdro3fg3b4mfc0"
+      }
+    },
+    {
       "id": "cmrwcpwl900hyroj09infknzb",
       "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
       "title_en": "Ask Claude about the Anthropic Economic Index",
@@ -397,96 +487,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrvnxfx7047nbihbzr6crygg"
-      }
-    },
-    {
-      "id": "cmrtfjet52udzbitl7n6bqkqj",
-      "title": "Replit 新统一工具栏集成数据库与双因素认证",
-      "title_en": "Need a database？ Two-factor auth？ An SEO scanner？ Everything your project needs is now in reach wit…",
-      "url": "https://x.com/Replit/status/2079235154485109114",
-      "permalink": "https://aihot.virxact.com/items/cmrtfjet52udzbitl7n6bqkqj",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-07-20T16:01:05.000Z",
-      "discoveredAt": "2026-07-20T16:19:11.102Z",
-      "summary": "需要数据库？双因素认证？SEO 扫描器？\n\n你的项目所需的一切现在都可以通过我们新的统一工具栏触手可及。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtfjet52udzbitl7n6bqkqj"
-      }
-    },
-    {
-      "id": "cmrux94210069binvu0d80ww6",
-      "title": "xAI 推出 Grok for Outlook 加载项",
-      "title_en": "Grok for Outlook",
-      "url": "https://x.ai/news/introducing-outlook-addin",
-      "permalink": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6",
-      "source": "xAI：News（网页）",
-      "publishedAt": "2026-07-20T16:00:00.000Z",
-      "discoveredAt": "2026-07-21T17:22:49.842Z",
-      "summary": "xAI 今日推出 Grok for Outlook，一个 Microsoft 365 加载项，可将 Grok 智能体嵌入邮箱，用于总结长邮件线程、以用户风格起草回复并整理收件箱。该工具即日起对所有付费 X 和 SuperGrok 用户开放，可从 Microsoft Marketplace 添加。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrux94210069binvu0d80ww6"
-      }
-    },
-    {
-      "id": "cmrt81fki1d1fbitln44dzsrr",
-      "title": "LoRA Speedrun 公开排行榜：6分05秒微调Qwen2.5-1.5B达GSM8K 61.1%准确率",
-      "title_en": "LoRA Speedrun--一个针对微调技术的公开实际运行时间排行榜",
-      "url": "https://github.com/Saivineeth147/lora-speedrun",
-      "permalink": "https://aihot.virxact.com/items/cmrt81fki1d1fbitln44dzsrr",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-20T12:21:09.021Z",
-      "discoveredAt": "2026-07-20T12:49:14.184Z",
-      "summary": "LoRA Speedrun项目推出公开排行榜，在固定硬件（单张L40S）上比拼Qwen2.5-1.5B的微调运行时间。当前纪录由@Saivineeth147以6分05秒保持，采用序列打包与仅完成损失掩码技术，相比基线11分57秒提速约2倍且准确率更高（61.1%）。项目提供免费Modal沙箱验证，任何提交需经3次独立复现确认。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrt81fki1d1fbitln44dzsrr"
-      }
-    },
-    {
-      "id": "cmrtjg6im3u17bitl3rd7i7m4",
-      "title": "Cursor 测试新型 AI 智能体集群：规划者+执行者分工，4小时通过80% SQL测试",
-      "title_en": "Agent swarms and the new model economics",
-      "url": "https://cursor.com/blog/agent-swarm-model-economics",
-      "permalink": "https://aihot.virxact.com/items/cmrtjg6im3u17bitl3rd7i7m4",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-07-20T12:00:00.000Z",
-      "discoveredAt": "2026-07-20T18:08:38.550Z",
-      "summary": "Cursor 测试了新型 AI 智能体集群，将任务分解为规划者（使用最强模型）和执行者（使用快速廉价模型）。使用 Grok 4.5 时，新集群在 4 小时内通过了 80% 的 SQL 测试套件，而旧集群在第二小时前失败。该系统已用于构建浏览器、修复漏洞和生成数十亿 token 合成训练数据。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtjg6im3u17bitl3rd7i7m4"
-      }
-    },
-    {
-      "id": "cmrsy2z9e03wpbitlqgh25fol",
-      "title": "小红书与北大开源 UltraEP：面向大规模 MoE 训推的实时负载均衡方案",
-      "title_en": "小红书、北大开源 UltraEP：面向大规模 MoE 训推的「最优」负载均衡方案",
-      "url": "https://mp.weixin.qq.com/s/rAoF65ywi5trWbI-heJieg",
-      "permalink": "https://aihot.virxact.com/items/cmrsy2z9e03wpbitlqgh25fol",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-07-20T08:00:45.000Z",
-      "discoveredAt": "2026-07-20T08:10:29.968Z",
-      "summary": "小红书与北大提出 UltraEP，首次将基于精确路由信息的实时负载均衡引入生产系统，在每个 microbatch 和每一层动态复制热点专家。在 Qwen3-235B 等模型上，训练吞吐平均达到理想性能的 94.6%，相比 Megatron-LM 提升 42%；推理 prefill 吞吐相比 SGLang 提升 1.56 倍。",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsy2z9e03wpbitlqgh25fol"
       }
     }
   ]

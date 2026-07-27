@@ -1,8 +1,44 @@
 {
-  "count": 16,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms3f0d9200b8rondo4rsvd7o",
+      "title": "Kimi K3 上线 Modal，支持无损加速推理",
+      "title_en": "Excited to have @modal as Day 0 launch partner for Kimi K3！ They trained a custom DFlash speculator…",
+      "url": "https://x.com/Kimi_Moonshot/status/2081767591887122564",
+      "permalink": "https://aihot.virxact.com/items/cms3f0d9200b8rondo4rsvd7o",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-07-27T15:44:05.000Z",
+      "discoveredAt": "2026-07-27T16:02:03.640Z",
+      "summary": "很高兴 @modal 成为 Kimi K3 的 Day 0 发布合作伙伴！\n\n他们为 K3 的架构训练了自定义 DFlash 投机器，实现更快推理且无质量损失。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3f0d9200b8rondo4rsvd7o"
+      }
+    },
+    {
+      "id": "cms3dxit00betro3fiwkotg0j",
+      "title": "Kimi K3 开源：2.8T MoE 模型与技术报告",
+      "title_en": "Releasing the model weights and technical report of Kimi K3. Kimi K3 is our most capable model： a 2…",
+      "url": "https://x.com/Kimi_Moonshot/status/2081760186235289764",
+      "permalink": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-07-27T15:14:40.000Z",
+      "discoveredAt": "2026-07-27T15:31:51.181Z",
+      "summary": "Kimi 发布其最强模型 Kimi K3，这是一个 2.8T 参数的 MoE 模型，具备原生视觉理解和 1M token 上下文窗口。新架构实现了每单位计算 2.5 倍的智能提升。除模型权重外，Kimi 还开源了高性能注意力内核、MoE 通信库及大规模智能体运行环境基础设施。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j"
+      }
+    },
     {
       "id": "cmrzi9yew001arop9eruk86n7",
       "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
@@ -19,24 +55,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrzi9yew001arop9eruk86n7"
-      }
-    },
-    {
-      "id": "cmrz0ch8700m7roeygv4eshdv",
-      "title": "蚂蚁百灵发布Ling-3.0-flash原生混合推理模型",
-      "title_en": "Ling-3.0-flash：智以密胜",
-      "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g",
-      "permalink": "https://aihot.virxact.com/items/cmrz0ch8700m7roeygv4eshdv",
-      "source": "公众号：蚂蚁百灵（Ling）",
-      "publishedAt": "2026-07-24T13:40:30.000Z",
-      "discoveredAt": "2026-07-24T14:00:30.582Z",
-      "summary": "蚂蚁百灵发布新一代原生混合推理模型Ling-3.0-flash，总参数量124B，激活参数量仅5.1B，在传统推理、指令遵循与长文本等指标上对标甚至超越上一代旗舰Ring-2.6-1T。模型采用原生混合线性注意力架构与1/64稀疏MoE，并扩展至10，000+可交互训练环境，长输入下TTFT降低60%至80%以上。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrz0ch8700m7roeygv4eshdv"
       }
     },
     {
@@ -58,21 +76,21 @@
       }
     },
     {
-      "id": "cmrykywyx026jrolgq06set4j",
-      "title": "Black Forest Labs 发布 FLUX 3 多模态模型，支持单次生成 20 秒视频与原生音频",
-      "title_en": "FLUX 3 多模态 AI 模型登场：支持单次生成 20 秒多样化视频",
-      "url": "https://www.ithome.com/0/981/137.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrykywyx026jrolgq06set4j",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-24T06:48:04.000Z",
-      "discoveredAt": "2026-07-24T06:50:01.581Z",
-      "summary": "Black Forest Labs 以 Early Access 方式推出 FLUX 3 多模态基础模型，采用统一架构联合学习图像、视频和音频。该模型基于 Self-Flow 学习框架扩展，可在单次生成中输出最长 20 秒视频并附带原生音频，支持文生视频、图生视频、多镜头串联等任务。",
+      "id": "cms3889p308xrro3fqkm5rabd",
+      "title": "蚂蚁百灵发布 Ling-3.0-flash：124B 总参数、5.1B 激活参数，智能密度超越 1T 级旗舰",
+      "title_en": "Ling-3.0-flash：智以密胜",
+      "url": "https://developer.ant-ling.com/zh-CN/blogs/ling-3.0-flash-release",
+      "permalink": "https://aihot.virxact.com/items/cms3889p308xrro3fqkm5rabd",
+      "source": "蚂蚁百灵：Developer Blog（网页）",
+      "publishedAt": "2026-07-23T16:00:00.000Z",
+      "discoveredAt": "2026-07-23T16:00:00.000Z",
+      "summary": "蚂蚁百灵正式发布新一代原生混合推理模型 Ling-3.0-flash，总参数 124B、激活参数仅 5.1B。该模型以极致智能密度对标并超越上一代 1T 级旗舰思考模型 Ring-2.6-1T。",
       "category": "ai-models",
-      "score": 73,
+      "score": 55,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrykywyx026jrolgq06set4j"
+        "canonical": "https://aihot.virxact.com/items/cms3889p308xrro3fqkm5rabd"
       }
     },
     {
@@ -112,6 +130,24 @@
       }
     },
     {
+      "id": "cms3dqexi0avdro3fs65mhx7g",
+      "title": "Gemini 3.6 Flash 与 3.5 Flash-Lite 正式版发布",
+      "title_en": "Gemini 3.6 Flash & 3.5 Flash-Lite： Developer guide",
+      "url": "https://dev.to/googleai/gemini-36-flash-35-flash-lite-developer-guide-268i",
+      "permalink": "https://aihot.virxact.com/items/cms3dqexi0avdro3fs65mhx7g",
+      "source": "Google AI：DEV 作者专属（RSS）",
+      "publishedAt": "2026-07-23T09:25:08.000Z",
+      "discoveredAt": "2026-07-23T09:25:08.000Z",
+      "summary": "Google 发布 Gemini 3.6 Flash 和 Gemini 3.5 Flash-Lite 正式版。3.6 Flash 在复杂智能体和多模态任务上性能更强，输出 token 价格降至 $7.50/1M，支持 1M token 上下文窗口和 Computer Use 工具。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3dqexi0avdro3fs65mhx7g"
+      }
+    },
+    {
       "id": "cmrx3iki50075ro694xrjogs3",
       "title": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
       "title_en": "Show HN： 《仙人掌杂交种》：我们教4岁的杰玛如何分辨对错",
@@ -145,6 +181,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmryvpwy905kerolgy47s0xdn"
+      }
+    },
+    {
+      "id": "cms3dpvqp0aorro3fx8vn2b5w",
+      "title": "FLUX 3 - Real World Models： Towards Multimodal Flow Models as the Backbone of Visual Intelligence. FLUX 3， our new multimodal frontier model， jointly learns from images， video， and audio to build one representation of the world. Now available in Early Access. July 23， 2026 Read more",
+      "title_en": null,
+      "url": "https://bfl.ai/blog/flux-3",
+      "permalink": "https://aihot.virxact.com/items/cms3dpvqp0aorro3fx8vn2b5w",
+      "source": "Black Forest Labs：Blog（网页）",
+      "publishedAt": "2026-07-22T16:00:00.000Z",
+      "discoveredAt": "2026-07-22T16:00:00.000Z",
+      "summary": null,
+      "category": "ai-models",
+      "score": 59,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3dpvqp0aorro3fx8vn2b5w"
       }
     },
     {
@@ -217,78 +271,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmru9nwvo0b1kbi7f5vi9uqfu"
-      }
-    },
-    {
-      "id": "cmrtgmuyf3366bitl3gnpc8eo",
-      "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
-      "title_en": "Introducing Cosmos 3 Edge",
-      "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
-      "permalink": "https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-07-20T15:58:51.000Z",
-      "discoveredAt": "2026-07-20T16:49:51.406Z",
-      "summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo"
-      }
-    },
-    {
-      "id": "cmrt0856a09v9bitl62e4r17b",
-      "title": "通义实验室发布 Qwen-Audio-3.0-TTS 实时语音合成模型",
-      "title_en": "从\"能说话\"到\"会表达\"：Qwen-Audio-3.0-TTS 发布",
-      "url": "https://mp.weixin.qq.com/s/INvrqTrWLMm2WCLIqhqTrg",
-      "permalink": "https://aihot.virxact.com/items/cmrt0856a09v9bitl62e4r17b",
-      "source": "公众号：通义实验室（千问）",
-      "publishedAt": "2026-07-20T08:53:11.000Z",
-      "discoveredAt": "2026-07-20T09:10:31.313Z",
-      "summary": "通义实验室发布 Qwen-Audio-3.0-TTS，含 Flash（首包延迟约300ms）和 Plus 两个版本。Plus 版本在 Artificial Analysis 榜单夺冠，支持16种语言和20种中文方言，平均 WER/CER 低至3.87（Flash），说话人相似度最高达82.75（Plus）。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrt0856a09v9bitl62e4r17b"
-      }
-    },
-    {
-      "id": "cmrsxb09d0098bitl4vd2rp04",
-      "title": "上海科学智能研究院开放科学多模态基础模型\"神珍\"",
-      "title_en": "多模态 AI 模型\"神珍\"开放，能处理蛋白质、天气等六类科学信息",
-      "url": "https://www.ithome.com/0/979/017.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrsxb09d0098bitl4vd2rp04",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-20T07:00:15.000Z",
-      "discoveredAt": "2026-07-20T07:48:44.543Z",
-      "summary": "上海科学智能研究院开放科学多模态基础模型\"神珍\"，总参数约110亿，可处理DNA、RNA、蛋白质、小分子、地球系统和医学影像六类数据。在生物序列20项任务中，该模型9项取得最优结果；医学影像分割平均Dice得分91.20，在7种参评方法中最优。模型权重及代码已在星河启智、Hugging Face和GitHub开放。",
-      "category": "ai-models",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsxb09d0098bitl4vd2rp04"
-      }
-    },
-    {
-      "id": "cmrsp4xym0bb4biwm2ex85cp2",
-      "title": "面壁智能发布首个具身智能成果 MiniCPM-Robot 系列模型，含 1.5B VLA 与 0.9B 跟踪模型",
-      "title_en": "WAIC 2026 | 面壁智能首个具身智能成果 MiniCPM-Robot 系列模型正式发布！",
-      "url": "https://mp.weixin.qq.com/s/KwBAC8TFa846WFj-DHrgIQ",
-      "permalink": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2",
-      "source": "公众号：面壁智能（MiniCPM）",
-      "publishedAt": "2026-07-20T03:54:08.000Z",
-      "discoveredAt": "2026-07-20T04:00:06.131Z",
-      "summary": "面壁智能联合 OpenBMB 发布并开源 MiniCPM-Robot 系列，包括通用 VLA 模型 MiniCPM-RobotManip（1.5B 参数）与移动跟踪模型 MiniCPM-RobotTrack（0.9B 参数）。",
-      "category": "ai-models",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrsp4xym0bb4biwm2ex85cp2"
       }
     }
   ]
