@@ -1,8 +1,62 @@
 {
-  "count": 27,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms4vd9hd02h9roa1iiub4unr",
+      "title": "Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐",
+      "title_en": "Gemini API Managed Agents： 3.6 Flash， hooks， and more",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
+      "permalink": "https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-07-28T16:00:00.000Z",
+      "discoveredAt": "2026-07-28T16:27:45.819Z",
+      "summary": "Google DeepMind 将 Gemini API Managed Agents 的默认模型升级为 Gemini 3.6 Flash，并支持显式选择 3.5 Flash 或 3.5 Flash-Lite。新增环境钩子允许在沙箱内工具调用前后执行自定义脚本，用于安全审查或代码格式化。此外，还推出了免费套餐、预算控制和基于 cron 的定时触发功能。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr"
+      }
+    },
+    {
+      "id": "cms4r3c3j012aroa17m492n76",
+      "title": "Perplexity 推出 Windows 版个人电脑智能体",
+      "title_en": "Personal Computer is now available in the Perplexity app for Windows. Personal Computer is the loca…",
+      "url": "https://x.com/perplexity_ai/status/2082103880155046176",
+      "permalink": "https://aihot.virxact.com/items/cms4r3c3j012aroa17m492n76",
+      "source": "X：Perplexity (@perplexity_ai)",
+      "publishedAt": "2026-07-28T14:00:23.000Z",
+      "discoveredAt": "2026-07-28T14:28:01.846Z",
+      "summary": "Personal Computer 现已在 Perplexity Windows 应用中可用。\n\nPersonal Computer 是面向你工作的本地智能体工具。它协调跨本地文件、已连接应用和网络的智能体。\n\n研究、编码、浏览和构建，全部在一个统一系统中完成。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms4r3c3j012aroa17m492n76"
+      }
+    },
+    {
+      "id": "cms4himl9047broepnobhk6n2",
+      "title": "火山引擎上线豆包搜索服务，为AI Agent提供实时可信搜索能力",
+      "title_en": "豆包搜索开放服务，为Agent提供实时、权威、可信的搜索能力",
+      "url": "https://mp.weixin.qq.com/s/1nZqQHYqclsIF6__WLscgA",
+      "permalink": "https://aihot.virxact.com/items/cms4himl9047broepnobhk6n2",
+      "source": "公众号：火山引擎",
+      "publishedAt": "2026-07-28T07:51:54.000Z",
+      "discoveredAt": "2026-07-28T10:00:00.793Z",
+      "summary": "火山引擎正式上线豆包搜索服务，为AI Agent提供跨语言、多模态、多垂类联网信息查询，融合全域互联网信息、行业知识与字节跳动独家内容资源。该服务从网站站点和创作者维度建立权威分级体系，过滤低质信息，在SimpleQA、FreshQA、BrowseComp-ZH等评测中表现优异。豆包搜索支持API、Skill、MCP等多种接入形态，面向企业和开发者提供每月500次免费搜索额度。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms4himl9047broepnobhk6n2"
+      }
+    },
     {
       "id": "cms3lggqj00c0roskhu1r5f09",
       "title": "Kimi 发布视觉感知基准 PerceptionBench",
@@ -19,24 +73,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09"
-      }
-    },
-    {
-      "id": "cms3ivlee000oroiy8dntgvq9",
-      "title": "SGLang 和 Miles 为月之暗面 2.8T 参数 Kimi K3 模型提供发布当日支持",
-      "title_en": "Blog SGLang and Miles Add Day-0 Support for Kimi K3 We are excited to announce Day-0 support for Kimi K3 in SGLang and Miles. K3 is the first open-source model in the 3-trillion-parameter class， and its hybrid architecture departs from convention in al… SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-07-27-kimi-k3-day0-support",
-      "permalink": "https://aihot.virxact.com/items/cms3ivlee000oroiy8dntgvq9",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-07-27T17:50:17.260Z",
-      "discoveredAt": "2026-07-27T17:50:17.260Z",
-      "summary": "SGLang 和 Miles 为月之暗面开源的 2.8T 参数模型 Kimi K3 提供发布当日支持，分别负责推理和 RL 训练。K3 采用 69 层 KDA 线性注意力与 24 层 MLA 交错的混合架构，在 SGLang 上单卡 batch-1 解码速度达约 113 tok/s，结合 DSpark 推测解码可达约 423 tok/s。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3ivlee000oroiy8dntgvq9"
       }
     },
     {
@@ -325,168 +361,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1"
-      }
-    },
-    {
-      "id": "cmrv2m1gu01w8binv2kiup4x2",
-      "title": "OpenAI 在 ChatGPT 中正式推出广告服务",
-      "title_en": "在ChatGPT上投放广告",
-      "url": "https://ads.openai.com/",
-      "permalink": "https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-21T19:39:29.689Z",
-      "discoveredAt": "2026-07-21T19:52:48.087Z",
-      "summary": "OpenAI 在 ChatGPT 中推出原生广告服务，允许广告主在用户探索选项、比较选择和做出决策时投放相关广告。广告在体验中明确标注并与回答区分，首批广告主包括 Best Buy、Lowe's 和 VistaPrint。广告主可通过 Ads Manager 创建广告系列、设置预算并优化效果。",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2"
-      }
-    },
-    {
-      "id": "cmruze9vm00ywbinvdmqyi5j0",
-      "title": "Laguna S 2.1 免费开源上线 OpenCode",
-      "title_en": "Laguna S 2.1 is now free on OpenCode 1M Context · fully open source Poolside's most capable model …",
-      "url": "https://x.com/opencode/status/2079631772770242808",
-      "permalink": "https://aihot.virxact.com/items/cmruze9vm00ywbinvdmqyi5j0",
-      "source": "X：opencode (@opencode)",
-      "publishedAt": "2026-07-21T18:17:06.000Z",
-      "discoveredAt": "2026-07-21T18:22:49.247Z",
-      "summary": "Laguna S 2.1 现已在 OpenCode 上免费提供\n\n1M 上下文窗口 · 完全开源\n\nPoolside 迄今为止最强大的模型",
-      "category": "ai-products",
-      "score": 56,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmruze9vm00ywbinvdmqyi5j0"
-      }
-    },
-    {
-      "id": "cmruuc0d80006bii0tzwael16",
-      "title": "Google 推出 Tunix：基于 JAX 的高吞吐智能体后训练库",
-      "title_en": "Scaling Agentic RL： High-Throughput Agentic Training with Tunix",
-      "url": "https://developers.googleblog.com/scaling-agentic-rl-high-throughput-agentic-training-with-tunix",
-      "permalink": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-07-21T16:00:05.337Z",
-      "discoveredAt": "2026-07-21T16:00:05.337Z",
-      "summary": "Google 发布 Tunix，一个基于 JAX 的原生后训练库，旨在消除多轮、使用工具的 LLM 推理智能体训练中的 TPU 闲置瓶颈。Tunix 通过高并发异步 rollout 与解耦的生产者-消费者流水线最大化硬件吞吐量，确保训练器持续获得数据。该库提供即插即用抽象和持续宏观级性能分析，便于集成自定义环境。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16"
-      }
-    },
-    {
-      "id": "cms3dqo6s0axdro3fg3b4mfc0",
-      "title": "AlloyDB 推出列式引擎加速 HNSW，pgvector 向量搜索 QPS 提升最高 4.9 倍",
-      "title_en": "Supercharging pgvector： 4x faster HNSW vector search with AlloyDB",
-      "url": "https://cloud.google.com/blog/products/databases/supercharge-pgvector-4x-faster-hnsw-with-alloydb",
-      "permalink": "https://aihot.virxact.com/items/cms3dqo6s0axdro3fg3b4mfc0",
-      "source": "Google Cloud：Databases（RSS）",
-      "publishedAt": "2026-07-21T16:00:00.000Z",
-      "discoveredAt": "2026-07-21T16:00:00.000Z",
-      "summary": "Google Cloud 的 AlloyDB 在预览版中推出列式引擎加速的 HNSW 索引，使 pgvector 向量搜索的每秒查询数（QPS）相比标准 PostgreSQL HNSW 提升最高 4.9 倍，在固定 QPS 下召回率可提升 0.163。该加速通过将索引固定在列式引擎内存中、使用向量化内存布局并绕过标准 PostgreSQL 缓冲管理器开销实现，无需修改应用即可获得性能提升。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3dqo6s0axdro3fg3b4mfc0"
-      }
-    },
-    {
-      "id": "cmrwcpwl900hyroj09infknzb",
-      "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
-      "title_en": "Ask Claude about the Anthropic Economic Index",
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "permalink": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-07-21T16:00:00.000Z",
-      "discoveredAt": "2026-07-22T17:23:31.324Z",
-      "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问\"哪些职业使用 AI 最多\"等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb"
-      }
-    },
-    {
-      "id": "cmruv42p2008ebii0yteu9750",
-      "title": "Claude Cowork 新增技能录制功能",
-      "title_en": "New in Claude Cowork： teach Claude a skill. Record your screen while you do a task， talk through it…",
-      "url": "https://x.com/claudeai/status/2079595988998554047",
-      "permalink": "https://aihot.virxact.com/items/cmruv42p2008ebii0yteu9750",
-      "source": "X：Claude (@claudeai)",
-      "publishedAt": "2026-07-21T15:54:55.000Z",
-      "discoveredAt": "2026-07-21T16:22:55.196Z",
-      "summary": "Claude Cowork 新功能：教 Claude 一项技能。\n录制你执行任务时的屏幕操作，边做边讲解，Claude 会将其转化为可重复运行的技能。在 Claude 桌面应用的 + 菜单中找到\"录制技能\"即可使用。\n适用于 Pro、Max 和 Team 套餐。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmruv42p2008ebii0yteu9750"
-      }
-    },
-    {
-      "id": "cmru3vmv252v2bihzm2btrcpy",
-      "title": "腾讯混元推出Hyra-1.0递归自我改进研究智能体",
-      "title_en": "Hyra发布：一个简单有效的科学发现智能体",
-      "url": "https://mp.weixin.qq.com/s/upwDQ_6ZfmszBUcRQjR_Dg",
-      "permalink": "https://aihot.virxact.com/items/cmru3vmv252v2bihzm2btrcpy",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-07-21T03:33:08.000Z",
-      "discoveredAt": "2026-07-21T03:40:32.112Z",
-      "summary": "腾讯混元推出Hyra-1.0，一个能递归自我改进的研究智能体，在NanoChat等三项任务上均超越Recursive公开结果。Hyra在55个数学开放问题中刷新29个历史最好结果，并设计出仅含15个可训练参数即可完成10位数加法的Transformer。所有产物已在GitHub开源。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmru3vmv252v2bihzm2btrcpy"
-      }
-    },
-    {
-      "id": "cmrtxsl2e3o24bihzutblssoo",
-      "title": "代理群（Agent Swarm）通过树状分解在构建 SQLite（Rust 版）任务中达到 80% 测试通过率",
-      "title_en": "代理群与新经济模式",
-      "url": "https://cursor.com/blog/agent-swarm-model-economics",
-      "permalink": "https://aihot.virxact.com/items/cmrtxsl2e3o24bihzutblssoo",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-21T00:35:26.928Z",
-      "discoveredAt": "2026-07-21T00:50:11.975Z",
-      "summary": "一项实验证明，将任务分解为规划者与执行者的树状结构后，代理群在四小时内用 Grok 4.5 达到 80% 的 SQL 测试通过率，而旧版代理群在第二小时前即失败。新系统峰值提交速度达每秒 1，000 次，为此团队从零构建了专用版本控制系统。该架构已在构建浏览器、修复漏洞及生成数十亿 token 合成数据等任务中验证。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrtxsl2e3o24bihzutblssoo"
-      }
-    },
-    {
-      "id": "cmrvnxfx7047nbihbzr6crygg",
-      "title": "AgentDebugX：面向LLM智能体的开源故障调试框架",
-      "title_en": "AgentDebugX： An Open-Source Toolkit for Failure Observability， Attribution， and Recovery in LLM Agents",
-      "url": "https://arxiv.org/abs/2607.18754",
-      "permalink": "https://aihot.virxact.com/items/cmrvnxfx7047nbihbzr6crygg",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-21T00:00:00.000Z",
-      "discoveredAt": "2026-07-22T05:49:34.683Z",
-      "summary": "AgentDebugX是一个开源调试框架，将LLM智能体调试组织为\"检测-归因-恢复-重跑\"闭环。其核心DeepDebug在Who&When基准上对qwen3.5-9b达到精确的智能体与步骤归因准确率，在GAIA上单次重跑即可修复失败任务。该工具提供Python库、CLI、Web控制台和可安装的智能体技能。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrvnxfx7047nbihbzr6crygg"
       }
     }
   ]

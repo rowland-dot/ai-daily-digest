@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-07-27T21:41:10.061Z",
+  "fetched_at": "2026-07-28T21:40:44.773Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Scientific computing in the age of agentic AI",
+      "link": "https://openai.com/index/scientific-computing-agentic-ai",
+      "pubDate": "Tue, 28 Jul 2026 17:00:00 GMT",
+      "description": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond."
+    },
     {
       "title": "How AI is expanding what people do at work",
       "link": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
@@ -85,12 +91,6 @@
       "link": "https://openai.com/index/codex-collaborator-creative-team",
       "pubDate": "Thu, 16 Jul 2026 07:00:00 GMT",
       "description": "How OpenAI’s creative team uses Codex to build custom creative tools, accelerate ideation, and prototype faster with context-aware AI."
-    },
-    {
-      "title": "How Cars24 scales conversations and builds faster with OpenAI",
-      "link": "https://openai.com/index/cars24",
-      "pubDate": "Thu, 16 Jul 2026 00:00:00 GMT",
-      "description": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company."
     }
   ]
 }

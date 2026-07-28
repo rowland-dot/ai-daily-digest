@@ -1,8 +1,62 @@
 {
-  "count": 10,
+  "count": 11,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms51p9ca00d8rorrkaqqfvr9",
+      "title": "Anthropic 的 Claude Mythos Preview 模型发现 AES 和 HAWK 加密算法漏洞",
+      "title_en": "Anthropic says its Mythos model found vulnerabilities in cryptographic algorithms that secure the internet",
+      "url": "https://the-decoder.com/anthropic-says-its-mythos-model-found-vulnerabilities-in-cryptographic-algorithms-that-secure-the-internet",
+      "permalink": "https://aihot.virxact.com/items/cms51p9ca00d8rorrkaqqfvr9",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-28T19:12:27.000Z",
+      "discoveredAt": "2026-07-28T19:25:02.281Z",
+      "summary": "Anthropic 的 Claude Mythos Preview 模型在自主多智能体系统中，发现了后量子签名方案 HAWK 的改进攻击，以及简化版 AES-128（7 轮）的新攻击方法。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms51p9ca00d8rorrkaqqfvr9"
+      }
+    },
+    {
+      "id": "cms4xie76037xroa13kv3uglm",
+      "title": "Claude 发现加密算法弱点研究发布",
+      "title_en": "New Anthropic research： Discovering cryptographic weaknesses with Claude. Claude Mythos Preview has…",
+      "url": "https://x.com/AnthropicAI/status/2082153297670992134",
+      "permalink": "https://aihot.virxact.com/items/cms4xie76037xroa13kv3uglm",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-07-28T17:16:45.000Z",
+      "discoveredAt": "2026-07-28T17:27:44.441Z",
+      "summary": "Anthropic 新研究：用 Claude 发现加密弱点。\n\nClaude Mythos 预览版已帮助我们的研究人员发现加密算法中的弱点--这些数学方法用于保护数据隐私。\n\n了解更多：https://anthropic.com/research/discovering-cryptographic-weaknesses",
+      "category": "paper",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms4xie76037xroa13kv3uglm"
+      }
+    },
+    {
+      "id": "cms4t5zra01o1roa10b19hmbh",
+      "title": "Kimi Linear：一种表现力强且高效的注意力架构",
+      "title_en": null,
+      "url": "https://arxiv.org/abs/2510.26692",
+      "permalink": "https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-28T15:21:28.545Z",
+      "discoveredAt": "2026-07-28T15:26:05.731Z",
+      "summary": "月之暗面推出 Kimi Linear，一种混合线性注意力架构，首次在短上下文、长上下文和强化学习场景下全面超越全注意力机制。其 3B 激活参数模型在所有评估任务上显著优于全 MLA，同时将 KV cache 使用量降低最多 75%，并在 1M 上下文下实现最高 6 倍解码吞吐量。月之暗面已开源 KDA 内核、vLLM 实现及模型权重。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh"
+      }
+    },
     {
       "id": "cmrz3eamm01jdroey6e0m62on",
       "title": "Anthropic 联合 Andon Labs 发布 Drone-Bench，评估 AI 模型自主操控无人机执行定位追踪任务的能力",
@@ -145,42 +199,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd"
-      }
-    },
-    {
-      "id": "cmrvls9qg03jtbihbfhtx203y",
-      "title": "ABot-World-0：单张桌面级GPU实现无限交互式世界生成",
-      "title_en": "ABot-World-0： Infinite Interactive World Rollout on a Single Desktop GPU",
-      "url": "https://arxiv.org/abs/2607.19191",
-      "permalink": "https://aihot.virxact.com/items/cmrvls9qg03jtbihbfhtx203y",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-21T15:26:50.000Z",
-      "discoveredAt": "2026-07-22T04:49:34.229Z",
-      "summary": "ABot-World-0是一个动作条件视频世界模型，能在单张NVIDIA RTX 5090 GPU上以720P分辨率、最高16 FPS、1.2秒动作到首帧延迟和约19 GiB峰值显存预算运行无限交互式世界生成。该模型采用统一的帧同步键盘动作接口，通过LongForcing分布匹配阶段解决长程自回归漂移问题，并集成轻量级VAE解码器、低比特DiT推理和局部上下文KV缓存等系统级优化。",
-      "category": "paper",
-      "score": 83,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrvls9qg03jtbihbfhtx203y"
-      }
-    },
-    {
-      "id": "cmrutwpdm000ubijq3c5m50x1",
-      "title": "OpenAI 与 Apollo Research 开发 Contrastive SDF 测试衡量 AI 的 reward-seeking 行为",
-      "title_en": "Measuring Reward-Seeking by Instilling Contrastive Beliefs",
-      "url": "https://alignment.openai.com/measuring-reward-seeking",
-      "permalink": "https://aihot.virxact.com/items/cmrutwpdm000ubijq3c5m50x1",
-      "source": "OpenAI：Alignment 研究博客（RSS）",
-      "publishedAt": "2026-07-21T15:10:00.000Z",
-      "discoveredAt": "2026-07-21T15:49:12.055Z",
-      "summary": "OpenAI 与 Apollo Research 开发了 Contrastive SDF 测试，通过向模型植入相反的评分者偏好信念来测量其行为变化。测试发现，未经安全训练的前沿规模强化学习模型更倾向于做评分者想要的事，即使违背用户意图，且该倾向随训练增强。",
-      "category": "paper",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrutwpdm000ubijq3c5m50x1"
       }
     }
   ]

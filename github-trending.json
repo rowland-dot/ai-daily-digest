@@ -1,104 +1,16 @@
 {
-  "fetched_at": "2026-07-27T21:41:09.100Z",
+  "fetched_at": "2026-07-28T21:40:44.073Z",
   "repos": [
     {
-      "owner": "permissionlesstech",
-      "name": "bitchat",
-      "url": "https://github.com/permissionlesstech/bitchat",
-      "description": "bluetooth mesh chat, IRC vibes",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 32142,
-      "forks": 5049,
-      "starsToday": 2344
-    },
-    {
-      "owner": "amnezia-vpn",
-      "name": "amnezia-client",
-      "url": "https://github.com/amnezia-vpn/amnezia-client",
-      "description": "Amnezia VPN Client (Desktop+Mobile)",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 13755,
-      "forks": 1028,
-      "starsToday": 515
-    },
-    {
-      "owner": "moeru-ai",
-      "name": "airi",
-      "url": "https://github.com/moeru-ai/airi",
-      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "owner": "pascalorg",
+      "name": "editor",
+      "url": "https://github.com/pascalorg/editor",
+      "description": "Create and share 3D architectural projects.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 43972,
-      "forks": 4389,
-      "starsToday": 554
-    },
-    {
-      "owner": "opengeos",
-      "name": "GeoLibre",
-      "url": "https://github.com/opengeos/GeoLibre",
-      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 2601,
-      "forks": 348,
-      "starsToday": 420
-    },
-    {
-      "owner": "yorukot",
-      "name": "superfile",
-      "url": "https://github.com/yorukot/superfile",
-      "description": "Pretty fancy and modern terminal file manager",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 20821,
-      "forks": 674,
-      "starsToday": 600
-    },
-    {
-      "owner": "NanmiCoder",
-      "name": "MediaCrawler",
-      "url": "https://github.com/NanmiCoder/MediaCrawler",
-      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 58129,
-      "forks": 11579,
-      "starsToday": 349
-    },
-    {
-      "owner": "pbakaus",
-      "name": "impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 51460,
-      "forks": 3037,
-      "starsToday": 849
-    },
-    {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 34531,
-      "forks": 5791,
-      "starsToday": 442
-    },
-    {
-      "owner": "alibaba",
-      "name": "open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 14711,
-      "forks": 995,
-      "starsToday": 980
+      "stars": 18607,
+      "forks": 2523,
+      "starsToday": 415
     },
     {
       "owner": "jenkinsci",
@@ -107,9 +19,108 @@
       "description": "Jenkins automation server",
       "language": "Java",
       "languageColor": "#b07219",
-      "stars": 25865,
-      "forks": 9679,
-      "starsToday": 179
+      "stars": 26052,
+      "forks": 9685,
+      "starsToday": 180
+    },
+    {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 44711,
+      "forks": 4446,
+      "starsToday": 796
+    },
+    {
+      "owner": "andrewyng",
+      "name": "aisuite",
+      "url": "https://github.com/andrewyng/aisuite",
+      "description": "Simple, unified interface to multiple Generative AI providers",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 15659,
+      "forks": 1654,
+      "starsToday": 92
+    },
+    {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 234725,
+      "forks": 35768,
+      "starsToday": 692
+    },
+    {
+      "owner": "huggingface",
+      "name": "speech-to-speech",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "description": "Build local voice agents with open-source models",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 7161,
+      "forks": 947,
+      "starsToday": 177
+    },
+    {
+      "owner": "virgiliojr94",
+      "name": "book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 11217,
+      "forks": 1328,
+      "starsToday": 366
+    },
+    {
+      "owner": "opengeos",
+      "name": "GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 3334,
+      "forks": 388,
+      "starsToday": 743
+    },
+    {
+      "owner": "paperswithbacktest",
+      "name": "awesome-systematic-trading",
+      "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+      "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 9509,
+      "forks": 1289,
+      "starsToday": 402
+    },
+    {
+      "owner": "microsoft",
+      "name": "agent-governance-toolkit",
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "description": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 5152,
+      "forks": 833,
+      "starsToday": 17
+    },
+    {
+      "owner": "yorukot",
+      "name": "superfile",
+      "url": "https://github.com/yorukot/superfile",
+      "description": "Pretty fancy and modern terminal file manager",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 21428,
+      "forks": 693,
+      "starsToday": 660
     },
     {
       "owner": "bradautomates",
@@ -118,53 +129,9 @@
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 11003,
-      "forks": 1138,
-      "starsToday": 412
-    },
-    {
-      "owner": "vudovn",
-      "name": "ag-kit",
-      "url": "https://github.com/vudovn/ag-kit",
-      "description": "",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 7935,
-      "forks": 1508,
-      "starsToday": 5
-    },
-    {
-      "owner": "apache",
-      "name": "cassandra",
-      "url": "https://github.com/apache/cassandra",
-      "description": "Open source transactional distributed database. Linear scalability and proven fault-tolerance on commodity hardware or cloud infrastructure without compromising performance.",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 9943,
-      "forks": 4004,
-      "starsToday": 34
-    },
-    {
-      "owner": "mvanhorn",
-      "name": "last30days-skill",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 54118,
-      "forks": 4695,
-      "starsToday": 221
-    },
-    {
-      "owner": "ocornut",
-      "name": "imgui",
-      "url": "https://github.com/ocornut/imgui",
-      "description": "Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 75181,
-      "forks": 11969,
-      "starsToday": 64
+      "stars": 12015,
+      "forks": 1209,
+      "starsToday": 989
     }
   ]
 }

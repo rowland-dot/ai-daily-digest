@@ -1,42 +1,78 @@
 {
-  "count": 15,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cms3f0d9200b8rondo4rsvd7o",
-      "title": "Kimi K3 上线 Modal，支持无损加速推理",
-      "title_en": "Excited to have @modal as Day 0 launch partner for Kimi K3！ They trained a custom DFlash speculator…",
-      "url": "https://x.com/Kimi_Moonshot/status/2081767591887122564",
-      "permalink": "https://aihot.virxact.com/items/cms3f0d9200b8rondo4rsvd7o",
-      "source": "X：Kimi.ai (@Kimi_Moonshot)",
-      "publishedAt": "2026-07-27T15:44:05.000Z",
-      "discoveredAt": "2026-07-27T16:02:03.640Z",
-      "summary": "很高兴 @modal 成为 Kimi K3 的 Day 0 发布合作伙伴！\n\n他们为 K3 的架构训练了自定义 DFlash 投机器，实现更快推理且无质量损失。",
+      "id": "cms54yoqa0090roehc2530rwk",
+      "title": "OpenAI 推出两款新转录模型 API",
+      "title_en": "We're introducing two new transcription models in the API： • GPT-Live-Transcribe： built for low-lat…",
+      "url": "https://x.com/OpenAIDevs/status/2082201169443905798",
+      "permalink": "https://aihot.virxact.com/items/cms54yoqa0090roehc2530rwk",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-07-28T20:26:58.000Z",
+      "discoveredAt": "2026-07-28T20:56:21.648Z",
+      "summary": "我们在 API 中引入了两种新的转录模型：\n\n• GPT-Live-Transcribe：专为低延迟实时转录而构建。\n• GPT-Transcribe：针对已完成音频文件和批量工作负载的异步转录进行了优化。\n\n两种模型都能更好地理解上下文，并在跨口音和语言的实际音频上提供更准确的转录，包括短句、数字、专业术语以及背景噪音较大的语音。",
       "category": "ai-models",
-      "score": 70,
+      "score": 65,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3f0d9200b8rondo4rsvd7o"
+        "canonical": "https://aihot.virxact.com/items/cms54yoqa0090roehc2530rwk"
       }
     },
     {
-      "id": "cms3dxit00betro3fiwkotg0j",
-      "title": "Kimi K3 开源：2.8T MoE 模型与技术报告",
-      "title_en": "Releasing the model weights and technical report of Kimi K3. Kimi K3 is our most capable model： a 2…",
-      "url": "https://x.com/Kimi_Moonshot/status/2081760186235289764",
-      "permalink": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j",
-      "source": "X：Kimi.ai (@Kimi_Moonshot)",
-      "publishedAt": "2026-07-27T15:14:40.000Z",
-      "discoveredAt": "2026-07-27T15:31:51.181Z",
-      "summary": "Kimi 发布其最强模型 Kimi K3，这是一个 2.8T 参数的 MoE 模型，具备原生视觉理解和 1M token 上下文窗口。新架构实现了每单位计算 2.5 倍的智能提升。除模型权重外，Kimi 还开源了高性能注意力内核、MoE 通信库及大规模智能体运行环境基础设施。",
+      "id": "cms4fb2n603f4roeprjoopbix",
+      "title": "Microsoft 发布 MAI-Cyber-1-Flash：5B 活跃参数的网络安全模型，驱动 MDASH 在 CyberGym 上达到 95.95%",
+      "title_en": "Microsoft AI Releases MAI-Cyber-1-Flash： A 5B-Active-Parameter Cyber Model That Pushes MDASH to 95.95% on CyberGym",
+      "url": "https://www.marktechpost.com/2026/07/28/microsoft-ai-releases-mai-cyber-1-flash-a-5b-active-parameter-cyber-model-that-pushes-mdash-to-95-95-on-cybergym",
+      "permalink": "https://aihot.virxact.com/items/cms4fb2n603f4roeprjoopbix",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-28T08:33:30.000Z",
+      "discoveredAt": "2026-07-28T08:58:05.501Z",
+      "summary": "Microsoft 发布 MAI-Cyber-1-Flash，一款 137B 总参数（5B 活跃参数）、256k 上下文窗口的稀疏 MoE 网络安全模型，是 MAI-Code-1-Flash 的微调版本。",
       "category": "ai-models",
-      "score": 81,
+      "score": 71,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j"
+        "canonical": "https://aihot.virxact.com/items/cms4fb2n603f4roeprjoopbix"
+      }
+    },
+    {
+      "id": "cms47q4jj00mxroep0x4at5sf",
+      "title": "FeyNoBg 发布：开源自动背景去除模型，在四项基准上达到 SOTA",
+      "title_en": "Show HN： FeyNoBg - 自动背景去除模型及训练库",
+      "url": "https://usefeyn.com/blog/feynobg",
+      "permalink": "https://aihot.virxact.com/items/cms47q4jj00mxroep0x4at5sf",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-07-28T04:57:13.190Z",
+      "discoveredAt": "2026-07-28T05:25:52.937Z",
+      "summary": "Feyn Labs 推出 FeyNoBg，一个用于自动背景去除的 SOTA 模型。它在八个基准测试中的四项上取得最佳 S-measure 分数，其余四项与领先者差距在 2% 以内。该模型基于 BiRefNet 架构，参数量从 222M 扩展至 263M，同时开源了训练库 NoBg，模型和代码分别可在 Hugging Face 和 GitHub 获取。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms47q4jj00mxroep0x4at5sf"
+      }
+    },
+    {
+      "id": "cms44no4v06arro82khvjxjj4",
+      "title": "Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s/IW9BdyA3hLvuuiX_aMCJEQ",
+      "permalink": "https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4",
+      "source": "公众号：月之暗面（Kimi）",
+      "publishedAt": "2026-07-27T15:34:59.000Z",
+      "discoveredAt": "2026-07-28T04:00:00.856Z",
+      "summary": "月之暗面发布 2.8 万亿参数的混合专家模型 Kimi K3，支持原生视觉理解和 100 万 token 上下文窗口。其规模化效率较 Kimi K2.5 提升 2.5 倍，并同步开源模型权重、技术报告及 MoonEP、FlashKDA、AgentEnv 三项 Infra 技术。",
+      "category": "ai-models",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4"
       }
     },
     {
@@ -199,78 +235,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms3dpvqp0aorro3fx8vn2b5w"
-      }
-    },
-    {
-      "id": "cmruv3zic006tbii0n6tubtgo",
-      "title": "Google 发布三款新模型：3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber",
-      "title_en": "Today's launches are all about better performance， lower latency， and a smaller bill. + 3.6 Flash c…",
-      "url": "https://x.com/joshwoodward/status/2079595879808569534",
-      "permalink": "https://aihot.virxact.com/items/cmruv3zic006tbii0n6tubtgo",
-      "source": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
-      "publishedAt": "2026-07-21T15:54:29.000Z",
-      "discoveredAt": "2026-07-21T16:22:51.609Z",
-      "summary": "Google 推出三款新模型，旨在提升性能、降低延迟和成本。其中，3.6 Flash 在复杂编码任务上 token 用量最高减少 65%，3.5 Flash-Lite 速度达 350 输出 token/秒。3.6 Flash 和 3.5 Flash-Lite 已在 Gemini 应用上线，3.5 Pro 进入合作伙伴测试。",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmruv3zic006tbii0n6tubtgo"
-      }
-    },
-    {
-      "id": "cmrusyoaf0bfgbi9ttofctwvj",
-      "title": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型",
-      "title_en": "Introducing Gemini 3.6 Flash， 3.5 Flash-Lite， and 3.5 Flash Cyber",
-      "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
-      "permalink": "https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-07-21T15:16:30.000Z",
-      "discoveredAt": "2026-07-21T15:22:41.135Z",
-      "summary": "Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。",
-      "category": "ai-models",
-      "score": 57,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj"
-      }
-    },
-    {
-      "id": "cmrujyaak0mhmbi07h3daik9b",
-      "title": "小红书 dots 模型获 IMO 2026 满分金牌",
-      "title_en": "小红书dots模型取得IMO 2026满分金牌水平",
-      "url": "https://mp.weixin.qq.com/s/EITf-SrP5o62Ljp7UGzPVw",
-      "permalink": "https://aihot.virxact.com/items/cmrujyaak0mhmbi07h3daik9b",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-07-21T11:06:49.000Z",
-      "discoveredAt": "2026-07-21T11:10:30.036Z",
-      "summary": "小红书 dots 团队携内部版本 dots-note 3.0 参加第 67 届 IMO 2026，六道题均获满分，以 42/42 分取得满分金牌，全球仅 7 位人类选手获此成绩。模型不依赖形式化语言，直接读取原始 LaTeX 题目，通过递归自我批判能力端到端完成解题。dots-note 3.0 是 dots3 系列最轻量级模型，预期将开源。",
-      "category": "ai-models",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrujyaak0mhmbi07h3daik9b"
-      }
-    },
-    {
-      "id": "cmru9nwvo0b1kbi7f5vi9uqfu",
-      "title": "Qwen发布 Qwen-Image-3.0 图像生成模型，核心关键词为\"实\"",
-      "title_en": "Qwen-Image-3.0： Rich Content， Authentic Details， Deep Knowledge",
-      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
-      "permalink": "https://aihot.virxact.com/items/cmru9nwvo0b1kbi7f5vi9uqfu",
-      "source": "Qwen：Blog Retrieval（API）",
-      "publishedAt": "2026-07-21T06:00:00.000Z",
-      "discoveredAt": "2026-07-21T06:22:27.175Z",
-      "summary": "Qwen发布第三代图像生成基座模型 Qwen-Image-3.0，核心关键词为\"实\"。该模型支持最长 4.5k token 指令输入，可单次生成包含 9 个复杂信息图的 3×3 网格布局；文本渲染精度达 10px，并支持 12 种语言原生渲染，旨在将图像转化为可部署的生产力工具。",
-      "category": "ai-models",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmru9nwvo0b1kbi7f5vi9uqfu"
       }
     }
   ]
