@@ -17,7 +17,11 @@
  */
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { renderFavouritesPage, SYNC_PROMPT_SCRIPT } from '../../scripts/lib/favourites-page.mjs';
+import {
+  FAVOURITES_PAGE_SCRIPT,
+  renderFavouritesPage,
+  SYNC_PROMPT_SCRIPT,
+} from '../../scripts/lib/favourites-page.mjs';
 
 const renderSiteSrc = readFileSync('./scripts/render-site.mjs', 'utf8');
 
@@ -148,6 +152,74 @@ describe('renderFavouritesPage — sync-prompt all four state panels present (H2
   });
 });
 
+describe('renderFavouritesPage local catalogue hydration', () => {
+  it('embeds a safely escaped catalogue for client-side localStorage hydration', () => {
+    const html = renderFavouritesPage({
+      backendLive: false,
+      articleCatalogue: [{ article_id: 'a-1', title: '</script><img src=x>', url: 'https://example.com' }],
+    });
+    expect(html).toContain('id="favourites-catalogue"');
+    expect(html).toContain('a-1');
+    expect(html).not.toContain('</script><img src=x>');
+  });
+
+  it('renders stable hooks for client-side empty/count/card updates', () => {
+    const html = renderFavouritesPage({ backendLive: false, articleCatalogue: [] });
+    expect(html).toContain('data-testid="favourites-count"');
+    expect(html).toContain('data-testid="favourites-content"');
+  });
+});
+
+describe('FAVOURITES_PAGE_SCRIPT - local-only hydration', () => {
+  it('is valid executable browser JavaScript after template interpolation', () => {
+    expect(() => new Function(FAVOURITES_PAGE_SCRIPT)).not.toThrow();
+  });
+
+  it('reads canonical favourites_v1 IDs and the embedded article catalogue', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain("'favourites_v1'");
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('favourites-catalogue');
+  });
+
+  it('renders saved IDs newest-first', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('savedIds.slice().reverse()');
+  });
+
+  it('falls back to persisted metadata when an ID is absent from today\'s catalogue', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain("'favourites_meta_v1'");
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('byId[id] || metadata[id]');
+  });
+
+  it('renders a recoverable placeholder when neither catalogue nor metadata has the saved ID', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('renderMissingCard');
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('Original article details are unavailable after migration.');
+    expect(FAVOURITES_PAGE_SCRIPT).not.toContain('filter(Boolean)');
+  });
+
+  it('migrates legacy IDs during the first favourites-page visit', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain("LEGACY_LS_KEY = 'favourites'");
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('localStorage.removeItem(LEGACY_LS_KEY)');
+  });
+
+  it('uses local hydration for anonymous visitors while linked server accounts remain API-backed', () => {
+    const anonymousHtml = renderFavouritesPage({ backendLive: true, auth: 'anonymous' });
+    const linkedHtml = renderFavouritesPage({ backendLive: true, auth: 'linked' });
+    expect(anonymousHtml).toContain('data-fav-source="localStorage"');
+    expect(linkedHtml).toContain('data-fav-source="api"');
+    expect(FAVOURITES_PAGE_SCRIPT).toContain("root.dataset.favSource === 'api'");
+  });
+
+  it('rerenders after an unsave event and updates empty/count DOM', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain("addEventListener('favourites:changed'");
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('favourites-count');
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('favourites-content');
+    expect(FAVOURITES_PAGE_SCRIPT).toContain('No favourites yet');
+  });
+
+  it('stays inactive for API-backed linked accounts', () => {
+    expect(FAVOURITES_PAGE_SCRIPT).toContain("dataset.favSource === 'api'");
+  });
+});
+
 describe('SYNC_PROMPT_SCRIPT — client behaviour wiring (H2)', () => {
   it('is a non-empty string', () => {
     expect(typeof SYNC_PROMPT_SCRIPT).toBe('string');
@@ -199,5 +271,10 @@ describe('render-site.mjs — SYNC_PROMPT_SCRIPT wired at favourites write site'
 
   it('favourites write call uses injectFavouritesScripts', () => {
     expect(renderSiteSrc).toContain('injectFavouritesScripts(renderFavouritesPage(');
+  });
+
+  it('passes a rendered-article catalogue instead of a permanently empty saved list', () => {
+    expect(renderSiteSrc).toContain('articleCatalogue: favouriteCatalogue');
+    expect(renderSiteSrc).not.toContain('savedArticles: [], siteOrigin');
   });
 });

@@ -1,9 +1,9 @@
-// Renders bridged JSON snapshots into a static HTML site with two themes:
+// Renders bridged JSON snapshots into a static HTML site with three themes:
 //   - linear  (dark, modernist, lavender accent)
 //   - claude  (warm cream, coral accent, serif display)
+//   - notion  (quiet workspace canvas, navy edition hero, semantic cut tint)
 //
-// Default theme follows the OS dark/light setting; user can override via
-// the header toggle, persisted to localStorage.
+// New visitors default to Notion. Existing valid choices remain persisted.
 //
 // Inputs:  data/*.json
 // Outputs: docs/index.html, docs/digests/YYYY-MM-DD.html, docs/digests/index.html
@@ -13,7 +13,11 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { articleId } from "./lib/article-id.mjs";
 import { renderEditorialCutBox } from "./lib/editorial.mjs";
-import { renderFavouritesPage, SYNC_PROMPT_SCRIPT } from "./lib/favourites-page.mjs";
+import {
+  FAVOURITES_PAGE_SCRIPT,
+  renderFavouritesPage,
+  SYNC_PROMPT_SCRIPT,
+} from "./lib/favourites-page.mjs";
 import { renderAccountPage } from "./lib/account-page.mjs";
 import { renderSubscribeForm, SUBSCRIBE_FORM_SCRIPT } from "./lib/subscribe-form.mjs";
 import { FAV_STAR_SCRIPT } from "./lib/fav-star-script.mjs";
@@ -435,6 +439,10 @@ const PAGE_CSS = `
     --hero-bg: linear-gradient(180deg, #18191a 0%, #010102 100%);
     --hero-text: #f7f8f8;
     --hero-accent: #5e6ad2;
+    --hero-secondary: rgba(247, 248, 248, 0.82);
+    --hero-muted: rgba(247, 248, 248, 0.62);
+    --hero-dot-border: rgba(247, 248, 248, 0.28);
+    --hero-dot-ring: rgba(247, 248, 248, 0.14);
     --radius: 8px;
     --radius-lg: 12px;
     /* Status colours for form feedback */
@@ -467,6 +475,10 @@ const PAGE_CSS = `
     --hero-bg: linear-gradient(135deg, #efe9de 0%, #faf9f5 100%);
     --hero-text: #141413;
     --hero-accent: #cc785c;
+    --hero-secondary: rgba(20, 20, 19, 0.78);
+    --hero-muted: rgba(20, 20, 19, 0.58);
+    --hero-dot-border: rgba(20, 20, 19, 0.28);
+    --hero-dot-ring: rgba(20, 20, 19, 0.12);
     --radius: 10px;
     --radius-lg: 14px;
     /* Status colours for form feedback */
@@ -474,6 +486,74 @@ const PAGE_CSS = `
     --danger-bg: rgba(176, 59, 59, 0.06);
     --success: #15803d;
     --success-bg: rgba(21, 128, 61, 0.06);
+  }
+
+  /* Notion-inspired workspace: neutral stories, semantic lavender for Editor's Cut. */
+  [data-theme="notion"] {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f7f6f3;
+    --surface-3: #efede9;
+    --text: #20201d;
+    --text-muted: #65645f;
+    --text-tertiary: #85837d;
+    --border: #e7e5e0;
+    --border-strong: #cbc7bf;
+    --accent: #6f4cc3;
+    --accent-hover: #5839a6;
+    --accent-soft: #eee9fa;
+    --link: #1268b3;
+    --link-hover: #0b4f8a;
+    --shadow: 0 1px 2px rgba(31, 30, 27, 0.04), 0 8px 24px rgba(31, 30, 27, 0.055);
+    --display-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+    --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    --tracking-tight: -0.032em;
+    --hero-bg: #0b1736;
+    --hero-text: #ffffff;
+    --hero-accent: #cbbcf4;
+    --hero-secondary: rgba(255, 255, 255, 0.82);
+    --hero-muted: rgba(255, 255, 255, 0.62);
+    --hero-dot-border: rgba(255, 255, 255, 0.22);
+    --hero-dot-ring: rgba(255, 255, 255, 0.13);
+    --cut-bg: #f0ebfb;
+    --cut-border: #8b68d3;
+    --cut-text: #3c286e;
+    --radius: 8px;
+    --radius-lg: 12px;
+    --danger: #b42318;
+    --danger-bg: #fef3f2;
+    --success: #16794b;
+    --success-bg: #ecfdf3;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    [data-theme="notion"] {
+      color-scheme: dark;
+      --bg: #151514;
+      --surface: #1f1f1d;
+      --surface-2: #282825;
+      --surface-3: #30302d;
+      --text: #f3f1ec;
+      --text-muted: #b7b3aa;
+      --text-tertiary: #8f8b83;
+      --border: #34332f;
+      --border-strong: #514f49;
+      --accent: #b49be9;
+      --accent-hover: #cab8f1;
+      --accent-soft: #33294b;
+      --link: #76b6ed;
+      --link-hover: #a8d2f5;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 30px rgba(0, 0, 0, 0.18);
+      --hero-bg: #09132c;
+      --cut-bg: #302746;
+      --cut-border: #a58ae0;
+      --cut-text: #e6dcfb;
+      --danger: #f97066;
+      --danger-bg: #3a211f;
+      --success: #75d6a5;
+      --success-bg: #17382a;
+    }
   }
 
   * { box-sizing: border-box; min-width: 0; }
@@ -1365,6 +1445,8 @@ const PAGE_CSS = `
   /* Site-nav strip — slim bar above each page header for cross-page navigation */
   .site-nav {
     display: flex;
+    position: relative;
+    z-index: 2;
     justify-content: center;
     gap: 6px;
     padding: 8px 16px 0;
@@ -1408,6 +1490,239 @@ const PAGE_CSS = `
     background: rgba(20,20,19,0.08);
   }
 
+  /* ---- Notion production direction: colours A + dots C ---- */
+  [data-theme="notion"] .container {
+    max-width: 1120px;
+    padding: 44px 28px 72px;
+  }
+  [data-theme="notion"] header.hero {
+    min-height: 420px;
+    padding: 96px 28px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+    border-bottom: 0;
+  }
+  [data-theme="notion"] header.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(circle at 14% 26%, rgba(255, 199, 219, 0.22) 0 5px, transparent 6px),
+      radial-gradient(circle at 83% 20%, rgba(158, 226, 205, 0.22) 0 7px, transparent 8px),
+      radial-gradient(circle at 74% 78%, rgba(255, 224, 140, 0.18) 0 4px, transparent 5px),
+      linear-gradient(145deg, rgba(255,255,255,0.035), transparent 52%);
+    pointer-events: none;
+  }
+  [data-theme="notion"] header.hero h1 {
+    max-width: 900px;
+    font-size: clamp(48px, 8vw, 76px);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    text-wrap: balance;
+  }
+  [data-theme="notion"] header.hero .date {
+    color: rgba(255,255,255,0.78);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+  [data-theme="notion"] header.hero .tagline {
+    max-width: 700px;
+    color: rgba(255,255,255,0.72);
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.65;
+    text-wrap: balance;
+  }
+  [data-theme="notion"] .theme-switch,
+  [data-theme="notion"] .lang-switch {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: none;
+    backdrop-filter: blur(12px);
+  }
+  [data-theme="notion"] .theme-switch button,
+  [data-theme="notion"] .lang-switch button { color: rgba(255,255,255,0.72); }
+  [data-theme="notion"] .theme-switch button[aria-pressed="true"],
+  [data-theme="notion"] .lang-switch button[aria-pressed="true"] {
+    color: #0b1736;
+    background: #ffffff;
+  }
+  [data-theme="notion"] .site-nav-link { color: rgba(255,255,255,0.68); }
+  [data-theme="notion"] .site-nav-link:hover,
+  [data-theme="notion"] .site-nav-link[data-current="true"] { color: #ffffff; }
+
+  .edition-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin: 10px 0 20px;
+    color: var(--hero-secondary);
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+  }
+  .edition-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #75d6a5;
+    box-shadow: 0 0 0 4px rgba(117,214,165,0.14);
+  }
+  .edition-status-separator { color: var(--hero-muted); }
+
+  .section-mix {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--hero-muted);
+  }
+  .section-mix-label {
+    font-size: 11px;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .section-mix-dots { display: inline-flex; align-items: center; gap: 9px; }
+  .section-mix-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--dot-color, #d9d5cd);
+    border: 2px solid var(--hero-dot-border);
+    box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .section-mix-dot:hover,
+  .section-mix-dot:focus-visible {
+    transform: scale(1.35);
+    box-shadow: 0 0 0 4px var(--hero-dot-ring);
+  }
+  .section-mix-dot:nth-child(6n + 1) { --dot-color: #cab9ef; }
+  .section-mix-dot:nth-child(6n + 2) { --dot-color: #a9dfc0; }
+  .section-mix-dot:nth-child(6n + 3) { --dot-color: #a8d1ef; }
+  .section-mix-dot:nth-child(6n + 4) { --dot-color: #f1d994; }
+  .section-mix-dot:nth-child(6n + 5) { --dot-color: #f0b9cb; }
+  .section-mix-dot:nth-child(6n) { --dot-color: #d8d4cc; }
+
+  [data-theme="notion"] nav.toc {
+    background: color-mix(in srgb, var(--bg) 90%, transparent);
+    padding: 12px 20px;
+  }
+  [data-theme="notion"] nav.toc a {
+    background: transparent;
+    border-color: transparent;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  [data-theme="notion"] nav.toc a:hover,
+  [data-theme="notion"] nav.toc a.toc-active {
+    background: var(--surface-2);
+    border-color: var(--border);
+    color: var(--text);
+  }
+  [data-theme="notion"] section.block { margin: 64px 0; }
+  [data-theme="notion"] section.block h2 {
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.12;
+    margin-bottom: 8px;
+  }
+  [data-theme="notion"] section.block .section-icon {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--surface-2);
+    font-size: 21px;
+  }
+  [data-theme="notion"] .cards { gap: 18px; }
+  [data-theme="notion"] .card {
+    background: var(--surface);
+    border-color: var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: none;
+    gap: 12px;
+  }
+  [data-theme="notion"] .card:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  [data-theme="notion"] .card-title { font-size: 17px; line-height: 1.35; }
+  [data-theme="notion"] .card-summary { color: var(--text-muted); line-height: 1.65; }
+  [data-theme="notion"] .badge {
+    background: var(--surface-2);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+  [data-theme="notion"] .card:has(.editors-cut) {
+    background: var(--cut-bg);
+    border-color: color-mix(in srgb, var(--cut-border) 55%, var(--border));
+  }
+  [data-theme="notion"] .editors-cut {
+    background: color-mix(in srgb, var(--cut-bg) 70%, var(--surface));
+    border: 0;
+    border-left: 3px solid var(--cut-border);
+    color: var(--cut-text);
+    padding: 13px 15px;
+  }
+  [data-theme="notion"] .editors-cut .ec-label { color: var(--cut-border); }
+  [data-theme="notion"] .editors-cut .ec-body { color: var(--cut-text); }
+  [data-theme="notion"] .writing-item,
+  [data-theme="notion"] .builder-item,
+  [data-theme="notion"] .hn-item,
+  [data-theme="notion"] .account-card,
+  [data-theme="notion"] .sync-prompt {
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: none;
+  }
+  [data-theme="notion"] .subscribe-form {
+    max-width: 660px;
+    padding: 24px;
+    border-radius: 14px;
+    background: var(--surface-2);
+    box-shadow: none;
+  }
+  [data-theme="notion"] footer.site-footer { background: var(--surface-2); }
+
+  @media (max-width: 640px) {
+    [data-theme="notion"] header.hero {
+      min-height: 0;
+      padding: 112px 20px 46px;
+      align-items: flex-start;
+      text-align: left;
+    }
+    [data-theme="notion"] header.hero h1 { font-size: clamp(42px, 15vw, 60px); }
+    [data-theme="notion"] header.hero .tagline { margin-left: 0; }
+    [data-theme="notion"] .container { padding: 28px 16px 56px; }
+    [data-theme="notion"] .theme-switch {
+      top: 54px;
+      left: 14px;
+      right: auto;
+    }
+    .section-mix { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .section-mix-dots { gap: 12px; flex-wrap: wrap; }
+    .section-mix-dot { width: 13px; height: 13px; }
+    [data-theme="notion"] section.block { margin: 48px 0; }
+    [data-theme="notion"] .card { padding: 18px; }
+    [data-theme="notion"] .subscribe-form { padding: 18px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .section-mix-dot,
+    [data-theme="notion"] .card { transition: none; }
+  }
+
   /* Focus-visible accessibility */
   button:focus-visible,
   a:focus-visible,
@@ -1447,10 +1762,11 @@ const THEME_BOOT_SCRIPT = `
   (function() {
     try {
       var saved = localStorage.getItem('digest-theme');
-      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'linear' : 'claude');
+      var validThemes = ['linear', 'claude', 'notion'];
+      var theme = validThemes.indexOf(saved) !== -1 ? saved : 'notion';
       document.documentElement.setAttribute('data-theme', theme);
     } catch (e) {
-      document.documentElement.setAttribute('data-theme', 'claude');
+      document.documentElement.setAttribute('data-theme', 'notion');
     }
   })();
 `;
@@ -1889,6 +2205,8 @@ function pickAihotSection(aihotDaily, labelHint) {
 
 // ---- Page assembly ----
 
+let favouriteCatalogue = [];
+
 async function renderPage({
   date,
   manifest,
@@ -1992,6 +2310,108 @@ async function renderPage({
     llama: llamaPosts.length > 0,
   };
 
+  // Dots-C: each hero dot is a functional anchor, sourced from the exact
+  // same visibility map that controls the section and sticky TOC output.
+  const sectionLinks = [
+    { id: "models", label: "Model drops" },
+    { id: "products", label: "Products" },
+    { id: "industry", label: "Industry" },
+    { id: "papers", label: "Research" },
+    { id: "labs", label: "Lab posts" },
+    { id: "writing", label: "Simon Willison" },
+    { id: "builders", label: "Builder voices" },
+    { id: "llama", label: "LocalLLaMA" },
+    { id: "trending", label: "GitHub trending" },
+    { id: "hf", label: "HuggingFace" },
+  ].filter((section) => has[section.id]);
+
+  if (pathPrefix === "") {
+    const aihotCatalogue = [...modelItems, ...productItems, ...industryItems, ...paperItems]
+      .map((item) => ({
+        article_id: item.article_id || (item.url ? articleId(item.source || "src", item.url) : ""),
+        title: item.title || "",
+        url: item.url || "",
+        summary: item.summary || "",
+        source: item.source || "AIHOT",
+      }));
+    const labCatalogue = labItems.map((item) => {
+      const url = item.url || item.link || "";
+      return {
+        article_id: item.article_id || (url ? articleId("labs", url) : ""),
+        title: item.title || "",
+        url,
+        summary: item.summary || item.description || "",
+        source: item.source || "Lab post",
+      };
+    });
+    const writingCatalogue = simonEntries.map((item) => {
+      const url = item.url || item.link || "";
+      return {
+        article_id: item.article_id || (url ? articleId("builder", url) : ""),
+        title: item.title || "",
+        url,
+        summary: item.summary || "",
+        source: "Simon Willison",
+      };
+    });
+    const llamaCatalogue = llamaPosts.map((item) => {
+      const url = item.url || item.permalink || "";
+      return {
+        article_id: item.article_id || (url ? articleId("llama", url) : ""),
+        title: item.title || "",
+        url,
+        summary: item.summary || "",
+        source: "r/LocalLLaMA",
+      };
+    });
+    const ghCatalogue = ghRepos.map((item) => ({
+      article_id: item.article_id || (item.url ? articleId("gh", item.url) : ""),
+      title: [item.owner, item.name].filter(Boolean).join("/"),
+      url: item.url || "",
+      summary: item.description || "",
+      source: "GitHub",
+    }));
+    const hfCatalogue = hfModels.map((item) => {
+      const url = item.url || (item.id ? `https://huggingface.co/${item.id}` : "");
+      return {
+        article_id: item.article_id || (url ? articleId("hf", url) : ""),
+        title: item.id || "",
+        url,
+        summary: "",
+        source: "HuggingFace",
+      };
+    });
+    const followCatalogue = [
+      ...builderTweets.map((item) => ({
+        article_id: item.article_id || (item.url ? articleId("follow", item.url) : ""),
+        title: item.text || item.author || "Builder post",
+        url: item.url || "",
+        summary: item.text || "",
+        source: item.author || "Builder voices",
+      })),
+      ...builderPods.map((item) => ({
+        article_id: item.article_id || (item.url ? articleId("follow", item.url) : ""),
+        title: item.title || "",
+        url: item.url || "",
+        summary: "",
+        source: item.name || "Podcast",
+      })),
+      ...builderBlogs.map((item) => ({
+        article_id: item.article_id || (item.url ? articleId("follow", item.url) : ""),
+        title: item.title || "",
+        url: item.url || "",
+        summary: "",
+        source: item.name || "Builder blog",
+      })),
+    ];
+    const uniqueCatalogue = new Map();
+    [...aihotCatalogue, ...labCatalogue, ...writingCatalogue, ...followCatalogue,
+      ...llamaCatalogue, ...ghCatalogue, ...hfCatalogue]
+      .filter((item) => item.article_id && item.url)
+      .forEach((item) => uniqueCatalogue.set(item.article_id, item));
+    favouriteCatalogue = [...uniqueCatalogue.values()];
+  }
+
   // Sydney-local timestamp for the header. Falls back to render time
   // if the manifest doesn't include fetched_at.
   const sydney = formatSydney(manifest?.fetched_at);
@@ -2015,6 +2435,10 @@ async function renderPage({
   ].filter(it => it.url).map(it => ({ title: it.title || "", url: it.url }));
   const itemListLd = renderItemListJsonLd(allVisibleItems, SITE_ORIGIN, date);
   const canonicalTag = renderCanonicalLink(pageCanonicalUrl);
+  const editionLabel = pathPrefix ? 'Edition archive' : 'Today\'s edition';
+  const editionStatusLabel = pathPrefix ? 'Edition archive status' : 'Today\'s edition status';
+  const sectionMixLabel = pathPrefix ? 'Edition section mix' : 'Today\'s section mix';
+  const sectionMixAriaLabel = pathPrefix ? 'Jump to edition sections' : 'Jump to today\'s sections';
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -2043,10 +2467,23 @@ async function renderPage({
     <div class="theme-switch" role="tablist" aria-label="Theme">
       <button data-theme="linear" role="tab">Linear</button>
       <button data-theme="claude" role="tab">Claude</button>
+      <button data-theme="notion" role="tab">Notion</button>
+    </div>
+    <div class="edition-status" role="status" aria-label="${editionStatusLabel}">
+      <span class="edition-status-dot" aria-hidden="true"></span>
+      <span>${editionLabel}</span>
+      <span class="edition-status-separator" aria-hidden="true">·</span>
+      <span>${escapeHtml(sydney.time)} ${escapeHtml(sydney.tz)}</span>
     </div>
     <h1>AI Daily Digest</h1>
     <p class="date">${escapeHtml(sydney.date)}</p>
     <p class="tagline">What shipped, what trended, what AI builders are saying — across labs, builder voices, r/LocalLLaMA, GitHub, HuggingFace, and Chinese AI media.</p>
+    ${sectionLinks.length ? `<nav class="section-mix" aria-label="${sectionMixAriaLabel}">
+      <span class="section-mix-label">${sectionMixLabel}</span>
+      <span class="section-mix-dots" role="list">
+        ${sectionLinks.map((section) => `<a class="section-mix-dot" href="#${section.id}" role="listitem" aria-label="Jump to ${section.label}"></a>`).join("")}
+      </span>
+    </nav>` : ""}
   </header>
 
   <nav class="toc">
@@ -2196,6 +2633,7 @@ async function renderArchiveIndex(days) {
     <div class="theme-switch" role="tablist" aria-label="Theme">
       <button data-theme="linear" role="tab">Linear</button>
       <button data-theme="claude" role="tab">Claude</button>
+      <button data-theme="notion" role="tab">Notion</button>
     </div>
     <h1>Archive</h1>
     <p class="date">All past AI Daily Digests</p>
@@ -2219,8 +2657,14 @@ async function renderArchiveIndex(days) {
 // is replaced with the inline sync-prompt client script when BACKEND_LIVE=true.
 const CSS_PLACEHOLDER = '<!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->';
 const SYNC_SCRIPT_PLACEHOLDER = '<!-- SYNC_PROMPT_SCRIPT_PLACEHOLDER -->';
+const THEME_BOOT_PLACEHOLDER = '<!-- THEME_BOOT_SCRIPT_PLACEHOLDER -->';
+const THEME_TOGGLE_PLACEHOLDER = '<!-- THEME_TOGGLE_SCRIPT_PLACEHOLDER -->';
+const FAVOURITES_RUNTIME_PLACEHOLDER = '<!-- FAVOURITES_RUNTIME_SCRIPT_PLACEHOLDER -->';
 function injectPageCss(html) {
-  return html.replace(CSS_PLACEHOLDER, `<style>${PAGE_CSS}</style>`);
+  const withCss = html.replace(CSS_PLACEHOLDER, `<style>${PAGE_CSS}</style>`);
+  return withCss
+    .replace(THEME_BOOT_PLACEHOLDER, `<script>${THEME_BOOT_SCRIPT}</script>`)
+    .replace(THEME_TOGGLE_PLACEHOLDER, `<script>${THEME_TOGGLE_SCRIPT}</script>`);
 }
 // Replace the site-nav placeholder in a helper page with the real rendered nav.
 // pathPrefix '../' is used for sub-pages (favourites/, account/) so href="/" resolves correctly.
@@ -2234,10 +2678,15 @@ function injectFavouritesScripts(html) {
   const withCss  = injectPageCss(html);
   const withNav  = injectSiteNav(withCss, 'favourites');
   // Only inject the sync-prompt script when BACKEND_LIVE=true; otherwise remove placeholder
-  return withNav.replace(
-    SYNC_SCRIPT_PLACEHOLDER,
-    BACKEND_LIVE ? `<script>${SYNC_PROMPT_SCRIPT}</script>` : ''
-  );
+  return withNav
+    .replace(
+      SYNC_SCRIPT_PLACEHOLDER,
+      BACKEND_LIVE ? `<script>${SYNC_PROMPT_SCRIPT}</script>` : '',
+    )
+    .replace(
+      FAVOURITES_RUNTIME_PLACEHOLDER,
+      `${BACKEND_LIVE ? '<script>window.__BACKEND_LIVE__ = true;</script>' : ''}<script>${FAV_STAR_SCRIPT}</script><script>${FAVOURITES_PAGE_SCRIPT}</script>`,
+    );
 }
 
 // ---- Run ----
@@ -2539,7 +2988,11 @@ await writeFile(join(DIGESTS_DIR, "index.html"), await renderArchiveIndex(archiv
 // /favourites page — always written; sync-prompt visible only when BACKEND_LIVE=true
 const FAVOURITES_DIR = join(SITE_DIR, "favourites");
 await mkdir(FAVOURITES_DIR, { recursive: true });
-const favouritesHtml = injectFavouritesScripts(renderFavouritesPage({ backendLive: BACKEND_LIVE, savedArticles: [], siteOrigin: SITE_ORIGIN }));
+const favouritesHtml = injectFavouritesScripts(renderFavouritesPage({
+  backendLive: BACKEND_LIVE,
+  articleCatalogue: favouriteCatalogue,
+  siteOrigin: SITE_ORIGIN,
+}));
 await writeFile(join(FAVOURITES_DIR, "index.html"), favouritesHtml, "utf8");
 
 // /account page — only written when BACKEND_LIVE=true (feature-flag gated)

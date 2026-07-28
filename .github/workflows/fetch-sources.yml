@@ -8,8 +8,16 @@ on:
     branches: [main]
     paths:
       - "scripts/**"
+      - "docs/**"
+      - "worker/**"
+      - "migrations/**"
+      - "tests/**"
       - ".github/workflows/**"
       - "data/claude-summaries.json"
+      - "package.json"
+      - "package-lock.json"
+      - "vitest.config.mjs"
+      - "wrangler.toml"
   workflow_dispatch:
 
 permissions:
@@ -34,7 +42,55 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  test:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Run unit and integration tests
+        run: npm test
+
+  e2e:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run end-to-end tests
+        run: npm run e2e
+
   build:
+    needs: [test, e2e]
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

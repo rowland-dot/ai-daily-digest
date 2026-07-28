@@ -66,7 +66,7 @@ export function renderAccountPage({
     : `<p class="muted">Signed in</p>`;
 
   return `<!DOCTYPE html>
-<html lang="en" data-theme="claude">
+<html lang="en" data-theme="notion">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,6 +74,7 @@ export function renderAccountPage({
 ${siteOrigin ? `<link rel="canonical" href="${escHtml(siteOrigin + '/account')}">` : ''}
 <link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="${escHtml((siteOrigin || '') + '/feed.xml')}">
 <!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->
+<!-- THEME_BOOT_SCRIPT_PLACEHOLDER -->
 </head>
 <body>
 <header class="hero">
@@ -85,6 +86,7 @@ ${siteOrigin ? `<link rel="canonical" href="${escHtml(siteOrigin + '/account')}"
   <div class="theme-switch" role="tablist" aria-label="Theme">
     <button data-theme="linear" role="tab">Linear</button>
     <button data-theme="claude" role="tab">Claude</button>
+    <button data-theme="notion" role="tab">Notion</button>
   </div>
   <h1>Account</h1>
   <p class="date">Manage your subscription and saved articles</p>
@@ -134,6 +136,7 @@ ${siteOrigin ? `<link rel="canonical" href="${escHtml(siteOrigin + '/account')}"
 
 <!-- Toast container for language-saved confirmation (mockup 20) — client-JS only -->
 <div id="toast-root" aria-live="polite" aria-atomic="true"></div>
+<!-- THEME_TOGGLE_SCRIPT_PLACEHOLDER -->
 </body>
 </html>`;
 }

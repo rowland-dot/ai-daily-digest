@@ -4,7 +4,7 @@
  * FAV_STAR_SCRIPT is an inline JS string injected near </body>.
  *
  * Behaviour (always — GH Pages and Cloudflare):
- *   - On DOMContentLoaded, reads localStorage key 'favourites' (JSON array of
+ *   - On DOMContentLoaded, reads localStorage key 'favourites_v1' (JSON array of
  *     article_ids). For every [data-testid="fav-star"] button whose
  *     data-article-id appears in the array, sets aria-pressed="true" and
  *     text content to ★.
@@ -27,11 +27,93 @@ export const FAV_STAR_SCRIPT = `
 (function () {
   if (document.body && document.body.hasAttribute('data-fav-star-init')) return;
 
-  var LS_KEY = 'favourites';
+  var LS_KEY = 'favourites_v1';
+  var LEGACY_LS_KEY = 'favourites';
+  var META_KEY = 'favourites_meta_v1';
+
+  function readMeta() {
+    try {
+      var parsed = JSON.parse(localStorage.getItem(META_KEY) || '{}');
+      return parsed && typeof parsed === 'object' && !Array.isArray(parsed)
+        ? parsed
+        : Object.create(null);
+    } catch (e) {
+      return Object.create(null);
+    }
+  }
+
+  function writeMeta(metadata) {
+    try {
+      localStorage.setItem(META_KEY, JSON.stringify(metadata));
+    } catch (e) {}
+  }
+
+  function cleanText(node, maxLength) {
+    if (!node) return '';
+    return String(node.textContent || '').replace(/\\s+/g, ' ').trim().slice(0, maxLength);
+  }
+
+  function safeArticleUrl(node) {
+    if (!node) return '';
+    try {
+      var value = node.getAttribute('href') || node.href || '';
+      var parsed = new URL(value, window.location.href);
+      return parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.href : '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function extractArticleMetadata(btn, articleId) {
+    var article = btn.closest ? btn.closest('article[data-article-id], li[data-article-id]') : btn.parentNode;
+    if (!article || !article.querySelector) return null;
+
+    var titleNode = article.querySelector('.card-title a, .writing-title, .builder-title, .builder-text, .builder-meta-top strong');
+    var summaryNode = article.querySelector('.card-summary, .writing-summary, .builder-text');
+    var linkNode = article.querySelector('.card-title a, .writing-title, .builder-title, .builder-meta a[href]');
+    var section = article.closest ? article.closest('section[id]') : null;
+    var sourceBySection = {
+      models: 'AI models',
+      products: 'AI products',
+      industry: 'AI industry',
+      papers: 'AI research',
+      labs: 'Lab posts',
+      writing: 'Simon Willison',
+      builders: 'Builder voices',
+      llama: 'r/LocalLLaMA',
+      trending: 'GitHub',
+      hf: 'HuggingFace',
+    };
+    var title = cleanText(titleNode, 500) || articleId;
+    var summary = summaryNode === titleNode ? '' : cleanText(summaryNode, 2000);
+    var source = section && sourceBySection[section.id]
+      ? sourceBySection[section.id]
+      : cleanText(article.querySelector('.card-meta .badge, .builder-meta .badge'), 120);
+
+    return {
+      article_id: articleId,
+      title: title,
+      summary: summary,
+      source: source,
+      url: safeArticleUrl(linkNode),
+      savedAt: new Date().toISOString(),
+    };
+  }
 
   function readFavs() {
     try {
       var raw = localStorage.getItem(LS_KEY);
+      if (!raw) {
+        var legacyRaw = localStorage.getItem(LEGACY_LS_KEY);
+        if (legacyRaw) {
+          var legacyParsed = JSON.parse(legacyRaw);
+          if (Array.isArray(legacyParsed)) {
+            raw = JSON.stringify(legacyParsed);
+            localStorage.setItem(LS_KEY, raw);
+            localStorage.removeItem(LEGACY_LS_KEY);
+          }
+        }
+      }
       if (!raw) return [];
       var parsed = JSON.parse(raw);
       return Array.isArray(parsed) ? parsed : [];
@@ -43,6 +125,9 @@ export const FAV_STAR_SCRIPT = `
   function writeFavs(arr) {
     try {
       localStorage.setItem(LS_KEY, JSON.stringify(arr));
+      document.dispatchEvent(new CustomEvent('favourites:changed', {
+        detail: { ids: arr.slice() },
+      }));
     } catch (e) {}
   }
 
@@ -99,11 +184,16 @@ export const FAV_STAR_SCRIPT = `
 
     /* Persist to localStorage */
     var favs = readFavs();
+    var metadata = readMeta();
     if (nowSaved) {
       if (favs.indexOf(aid) === -1) favs.push(aid);
+      var articleMetadata = extractArticleMetadata(btn, aid);
+      if (articleMetadata) metadata[aid] = articleMetadata;
     } else {
       favs = favs.filter(function (id) { return id !== aid; });
+      delete metadata[aid];
     }
+    writeMeta(metadata);
     writeFavs(favs);
 
     /* Server sync when backend is live */

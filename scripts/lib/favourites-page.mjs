@@ -36,6 +36,224 @@ function escHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
+function safeJsonForScript(value) {
+  return JSON.stringify(value ?? [])
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+}
+
+/**
+ * Hydrate the static GH Pages favourites shell from localStorage.
+ * The server-backed page deliberately returns early until that path is live.
+ */
+export const FAVOURITES_PAGE_SCRIPT = `
+(function () {
+  var root = document.querySelector('[data-testid="favourites-page"]');
+  if (!root || root.dataset.favSource === 'api') return;
+
+  var LS_KEY = 'favourites_v1';
+  var LEGACY_LS_KEY = 'favourites';
+  var META_KEY = 'favourites_meta_v1';
+  var content = root.querySelector('[data-testid="favourites-content"]');
+  var count = document.querySelector('[data-testid="favourites-count"]');
+  var catalogueNode = document.getElementById('favourites-catalogue');
+  var catalogue = [];
+
+  try {
+    catalogue = JSON.parse(catalogueNode ? catalogueNode.textContent : '[]');
+    if (!Array.isArray(catalogue)) catalogue = [];
+  } catch (e) {
+    catalogue = [];
+  }
+
+  var byId = Object.create(null);
+  catalogue.forEach(function (article) {
+    if (article && article.article_id) byId[article.article_id] = article;
+  });
+
+  function readSavedIds() {
+    try {
+      var raw = localStorage.getItem(LS_KEY);
+      if (!raw) {
+        var legacyRaw = localStorage.getItem(LEGACY_LS_KEY);
+        if (legacyRaw) {
+          var legacyParsed = JSON.parse(legacyRaw);
+          if (Array.isArray(legacyParsed)) {
+            raw = JSON.stringify(legacyParsed);
+            localStorage.setItem(LS_KEY, raw);
+            localStorage.removeItem(LEGACY_LS_KEY);
+          }
+        }
+      }
+      var parsed = JSON.parse(raw || '[]');
+      if (!Array.isArray(parsed)) return [];
+      var seen = Object.create(null);
+      return parsed.filter(function (id) {
+        if (typeof id !== 'string' || !id || seen[id]) return false;
+        seen[id] = true;
+        return true;
+      });
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function readMetadata() {
+    var metadata = Object.create(null);
+    try {
+      var parsed = JSON.parse(localStorage.getItem(META_KEY) || '{}');
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return metadata;
+      Object.keys(parsed).forEach(function (id) {
+        var article = parsed[id];
+        if (!article || typeof article !== 'object' || Array.isArray(article)) return;
+        metadata[id] = {
+          article_id: id,
+          title: typeof article.title === 'string' ? article.title : '',
+          summary: typeof article.summary === 'string' ? article.summary : '',
+          source: typeof article.source === 'string' ? article.source : '',
+          url: typeof article.url === 'string' ? article.url : '',
+          savedAt: typeof article.savedAt === 'string' ? article.savedAt : '',
+        };
+      });
+    } catch (e) {}
+    return metadata;
+  }
+
+  function safeHref(value) {
+    try {
+      var parsed = new URL(value, window.location.href);
+      return parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.href : '#';
+    } catch (e) {
+      return '#';
+    }
+  }
+
+  function renderEmpty() {
+    var empty = document.createElement('div');
+    empty.className = 'empty-state';
+    var icon = document.createElement('div');
+    icon.className = 'es-icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = '\\u2606';
+    var heading = document.createElement('h2');
+    heading.textContent = 'No favourites yet';
+    var copy = document.createElement('p');
+    copy.textContent = 'Tap the \\u2606 on any article to save it here. Your favourites live on this device — no account needed.';
+    var action = document.createElement('p');
+    action.style.marginTop = '18px';
+    var link = document.createElement('a');
+    link.href = '../';
+    link.className = 'btn-secondary';
+    link.style.textDecoration = 'none';
+    link.textContent = '← Browse today\\'s digest';
+    action.appendChild(link);
+    empty.append(icon, heading, copy, action);
+    return empty;
+  }
+
+  function renderCard(article) {
+    var card = document.createElement('article');
+    card.className = 'card';
+    card.dataset.articleId = article.article_id;
+
+    var star = document.createElement('button');
+    star.className = 'fav-star';
+    star.type = 'button';
+    star.setAttribute('aria-pressed', 'true');
+    star.setAttribute('aria-label', 'Remove saved article');
+    star.setAttribute('data-testid', 'fav-star');
+    star.dataset.articleId = article.article_id;
+    star.textContent = '\\u2605';
+
+    var title = document.createElement('h3');
+    title.className = 'card-title';
+    var link = document.createElement('a');
+    link.href = safeHref(article.url || '#');
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = article.title || 'Untitled article';
+    title.appendChild(link);
+    card.append(star, title);
+
+    if (article.summary) {
+      var summary = document.createElement('p');
+      summary.className = 'card-summary';
+      summary.textContent = article.summary;
+      card.appendChild(summary);
+    }
+    if (article.source) {
+      var meta = document.createElement('div');
+      meta.className = 'card-meta';
+      var badge = document.createElement('span');
+      badge.className = 'badge';
+      badge.textContent = article.source;
+      meta.appendChild(badge);
+      card.appendChild(meta);
+    }
+    return card;
+  }
+
+  function renderMissingCard(articleId) {
+    var card = document.createElement('article');
+    card.className = 'card missing-favourite';
+    card.dataset.articleId = articleId;
+
+    var star = document.createElement('button');
+    star.className = 'fav-star';
+    star.type = 'button';
+    star.setAttribute('aria-pressed', 'true');
+    star.setAttribute('aria-label', 'Remove unavailable saved article');
+    star.setAttribute('data-testid', 'fav-star');
+    star.dataset.articleId = articleId;
+    star.textContent = '\u2605';
+
+    var title = document.createElement('h3');
+    title.className = 'card-title';
+    title.textContent = 'Saved article unavailable';
+    var copy = document.createElement('p');
+    copy.className = 'card-summary';
+    copy.textContent = 'Original article details are unavailable after migration.';
+    card.append(star, title, copy);
+    return card;
+  }
+
+  function render(savedIds) {
+    if (!content) return;
+    var metadata = readMetadata();
+    var articles = savedIds.slice().reverse().map(function (id) {
+      return { id: id, article: byId[id] || metadata[id] || null };
+    });
+    content.replaceChildren();
+    if (!articles.length) {
+      content.appendChild(renderEmpty());
+      if (count) count.textContent = 'Your saved articles';
+      return;
+    }
+
+    var section = document.createElement('section');
+    section.className = 'block';
+    var heading = document.createElement('h2');
+    heading.textContent = '\\u2605 Saved articles';
+    var cards = document.createElement('div');
+    cards.className = 'cards';
+    articles.forEach(function (entry) {
+      cards.appendChild(entry.article ? renderCard(entry.article) : renderMissingCard(entry.id));
+    });
+    section.append(heading, cards);
+    content.appendChild(section);
+    if (count) count.textContent = articles.length + ' saved · this device only';
+  }
+
+  document.addEventListener('favourites:changed', function (event) {
+    render(event.detail && Array.isArray(event.detail.ids) ? event.detail.ids : readSavedIds());
+  });
+  render(readSavedIds());
+})();
+`;
+
 /**
  * Render the sync-prompt with all four state panels.
  * Collapsed (state 13) is visible; open/link-sent/error are hidden.
@@ -227,9 +445,15 @@ function renderEmptyState() {
 </div>`;
 }
 
-export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', savedArticles = [], siteOrigin = '' } = {}) {
+export function renderFavouritesPage({
+  backendLive = false,
+  auth = 'anonymous',
+  savedArticles = [],
+  articleCatalogue = [],
+  siteOrigin = '',
+} = {}) {
   const showSyncPrompt = backendLive && auth === 'anonymous';
-  const favSource = backendLive ? 'api' : 'localStorage';
+  const favSource = backendLive && auth === 'linked' ? 'api' : 'localStorage';
   const subtitleCount = savedArticles.length
     ? `${savedArticles.length} saved · this device only`
     : 'Your saved articles';
@@ -239,7 +463,7 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
     : renderEmptyState();
 
   return `<!DOCTYPE html>
-<html lang="en" data-theme="claude">
+<html lang="en" data-theme="notion">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -247,6 +471,7 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
 <link rel="canonical" href="${escHtml((siteOrigin || '') + '/favourites')}">
 <link rel="alternate" type="application/atom+xml" title="AI Daily Digest" href="${escHtml((siteOrigin || '') + '/feed.xml')}">
 <!-- Styles are inlined via PAGE_CSS in render-site.mjs; no external _shared.css needed -->
+<!-- THEME_BOOT_SCRIPT_PLACEHOLDER -->
 </head>
 <body>
 <header class="hero">
@@ -258,9 +483,10 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
   <div class="theme-switch" role="tablist" aria-label="Theme">
     <button data-theme="linear" role="tab">Linear</button>
     <button data-theme="claude" role="tab">Claude</button>
+    <button data-theme="notion" role="tab">Notion</button>
   </div>
   <h1>★ Favourites</h1>
-  <p class="date">${escHtml(subtitleCount)}</p>
+  <p class="date" data-testid="favourites-count">${escHtml(subtitleCount)}</p>
 </header>
 
 <nav class="toc"><ul>
@@ -276,13 +502,16 @@ export function renderFavouritesPage({ backendLive = false, auth = 'anonymous', 
 
   ${showSyncPrompt ? renderSyncPrompt() : ''}
 
-  ${bodyContent}
+  <div data-testid="favourites-content">${bodyContent}</div>
 </main>
 
 <footer class="site-footer">
   <div>AI Daily Digest · <a href="../">Home</a></div>
 </footer>
+<script id="favourites-catalogue" type="application/json">${safeJsonForScript(articleCatalogue)}</script>
 <!-- SYNC_PROMPT_SCRIPT_PLACEHOLDER -->
+<!-- FAVOURITES_RUNTIME_SCRIPT_PLACEHOLDER -->
+<!-- THEME_TOGGLE_SCRIPT_PLACEHOLDER -->
 </body>
 </html>`;
 }

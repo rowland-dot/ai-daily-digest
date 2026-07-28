@@ -28,13 +28,36 @@ describe('FAV_STAR_SCRIPT — content', () => {
     expect(FAV_STAR_SCRIPT.length).toBeGreaterThan(200);
   });
 
+  it('is valid executable browser JavaScript after template interpolation', () => {
+    expect(() => new Function(FAV_STAR_SCRIPT)).not.toThrow();
+  });
+
   it('targets fav-star buttons by data-testid', () => {
     expect(FAV_STAR_SCRIPT).toContain('data-testid');
     expect(FAV_STAR_SCRIPT).toContain('fav-star');
   });
 
-  it('uses localStorage key "favourites"', () => {
-    expect(FAV_STAR_SCRIPT).toContain("'favourites'");
+  it('uses canonical localStorage key "favourites_v1"', () => {
+    expect(FAV_STAR_SCRIPT).toContain("'favourites_v1'");
+  });
+
+  it('persists safe article metadata separately from the canonical ID array', () => {
+    expect(FAV_STAR_SCRIPT).toContain("'favourites_meta_v1'");
+    expect(FAV_STAR_SCRIPT).toContain('extractArticleMetadata');
+    expect(FAV_STAR_SCRIPT).toContain('savedAt: new Date().toISOString()');
+  });
+
+  it('removes persisted metadata before announcing an unsave', () => {
+    expect(FAV_STAR_SCRIPT).toMatch(/delete metadata\[aid\][\s\S]*writeMeta\(metadata\)[\s\S]*writeFavs\(favs\)/);
+  });
+
+  it('migrates the legacy "favourites" key once when canonical storage is absent', () => {
+    expect(FAV_STAR_SCRIPT).toContain("LEGACY_LS_KEY = 'favourites'");
+    expect(FAV_STAR_SCRIPT).toContain('localStorage.removeItem(LEGACY_LS_KEY)');
+  });
+
+  it('announces saved-ID changes so the favourites page can rerender after unsave', () => {
+    expect(FAV_STAR_SCRIPT).toContain("new CustomEvent('favourites:changed'");
   });
 
   it('toggles aria-pressed between true and false', () => {

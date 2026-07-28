@@ -68,3 +68,18 @@ test.describe('site-nav strip — presence and navigation', () => {
     await expect(link).toHaveAttribute('data-current', 'true');
   });
 });
+
+test.describe('site-nav hit targets', () => {
+  test('favourites-page home link owns its full center hit target', async ({ page }) => {
+    await page.goto('/favourites/');
+    const homeLink = page.locator('nav.site-nav a', { hasText: 'Daily digest' });
+    const ownsCenter = await homeLink.evaluate((link) => {
+      const box = link.getBoundingClientRect();
+      const hit = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
+      return hit === link || link.contains(hit);
+    });
+    expect(ownsCenter).toBe(true);
+    await homeLink.click();
+    await expect(page).toHaveURL(/^http:\/\/localhost:8000\/?$/);
+  });
+});
