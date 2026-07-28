@@ -3,13 +3,13 @@
  * Tests the GHA workflow YAML (L1 concern) and renderer helper contracts.
  */
 import { describe, it, expect } from 'vitest';
-import { readFileSync } from 'node:fs';
-import { globSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 
 describe('BACKEND_LIVE feature flag — workflow YAML', () => {
   it('GH Pages render step has BACKEND_LIVE=false in workflow YAML', () => {
-    const workflows = globSync('.github/workflows/*.yml')
-      .map(f => readFileSync(f, 'utf8'))
+    const workflows = readdirSync('.github/workflows')
+      .filter(file => file.endsWith('.yml'))
+      .map(file => readFileSync(`.github/workflows/${file}`, 'utf8'))
       .join('\n');
     expect(workflows).toContain('BACKEND_LIVE');
     expect(workflows).toContain('"false"');
