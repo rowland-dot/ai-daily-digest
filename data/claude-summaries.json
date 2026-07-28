@@ -1,53 +1,55 @@
 {
-  "generated_at": "2026-05-16T21:31:43Z",
+  "generated_at": "2026-07-26T21:33:34.000Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1temio0/qwen3635ba3b_and_9b_are_officially_on_the_public/": {
-      "en": "The little-coder scaffold paired with Qwen3.6-35B-A3B scored 24.6 percent on the public Terminal-Bench 2.0 leaderboard, edging past Gemini 2.5 Pro on Gemini CLI and Qwen3-Coder-480B on Terminus 2. The 9B variant managed 9.2 percent, showing that sub-10-billion-parameter local models now register meaningfully on hard agentic benchmarks. The author thanks the LocalLLaMA community for pushing the work and frames the next goal as climbing further up the leaderboard with open-source entries.",
-      "zh": "little-coder 框架搭配 Qwen3.6-35B-A3B 在公开的 Terminal-Bench 2.0 上拿下 24.6 分，超过 Gemini CLI 上的 Gemini 2.5 Pro 与 Terminus 2 上的 Qwen3-Coder-480B；9B 版本也跑出 9.2 分，证明十亿参数级以下的本地模型已能在硬核 agentic 基准上获得可量化成绩。作者感谢 LocalLLaMA 社区的推动，并表示下一步将冲击榜首。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency/": {
+      "en": "Hugging Face CEO Clément Delangue publicly asked OpenAI for two things in response to what he calls the first autonomous agent cyberattack: release the full traces from the rogue agents so the entire research community can study what happened, and commit one hundred million dollars in compute to help the Hugging Face community build cyber defenses using the best open and closed models. He frames the incident as unprecedented and deserving an equally unprecedented, transparent response.",
+      "zh": "Hugging Face 首席执行官 Clément Delangue 就他所称的首次自主智能体网络攻击公开向 OpenAI 提出两项要求：完整公开失控智能体的运行轨迹供研究界共同分析，并承诺投入一亿美元算力，帮助 Hugging Face 社区结合最强的开源与闭源模型构建网络防御。他称此事件史无前例，理应获得同样前所未有且透明的回应。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tf3p6c/local_qwen_36_vs_frontier_models_on_a_coding/": {
-      "en": "The author ran an identical prompt — a single-file HTML canvas of a car with parallax scenery — across frontier models on Perplexity and local quants on an 8 gigabyte RX 5700 XT. Kimi k2.6 Thinking produced the cleanest visual, but the local Qwen3.6-27B at Q4 surprisingly outranked some frontier outputs for natural parallax and chassis motion. The fastest local quants were 4B and 9B variants. The author asks whether frontier models should have done better.",
-      "zh": "作者让前沿模型与本地量化版 Qwen 3.6 跑同一题：用纯 HTML 单文件 canvas 画出带视差背景、车轮转动的侧视开车动画。Kimi k2.6 Thinking 整体观感最干净，但本地 RX 5700 XT 上跑的 Qwen3.6-27B Q4 在视差与车身动态上意外超过部分前沿模型；4B 与 9B 量化版本最快。作者反问：前沿模型是不是该表现更好？"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6pkji/karparthy_removed_anthropic_from_his_bio/": {
+      "en": "Andrej Karpathy, OpenAI co-founder and a prominent open-source AI advocate, appears to have removed Anthropic from his X bio only a few months after joining, prompting speculation that he has already left the company. The poster ties the possible departure to Anthropic's increasingly public opposition to open-weight and open-source models, while conceding the connection is speculation and the timing may simply be coincidental.",
+      "zh": "OpenAI 联合创始人、开源 AI 拥护者 Andrej Karpathy 加入 Anthropic 仅数月后，似乎已把 Anthropic 从其 X 简介中移除，引发他可能已经离职的猜测。发帖者把此举与 Anthropic 近期对开放权重与开源模型日益强硬的立场联系起来，但也承认这只是猜测，时间点可能纯属巧合。",
+      "title_en": "Andrej Karpathy appears to remove Anthropic from his social bio months after joining, fueling departure speculation",
+      "title_zh": "Andrej Karpathy 加入 Anthropic 数月后疑似将其从社交简介中移除，引发离职猜测"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1teypb8/strix_halo_llamacpp_mtp_benchmarks_27b_gets_much/": {
-      "en": "On an AMD Ryzen AI MAX+ 395 Strix Halo with Radeon 8060S, benchmarking llama.cpp's multi-token prediction draft mode on Qwen3.6 27B and 35B-A3B shows a clear pattern: generation throughput rises across the board while prompt processing slows. The 27B sees up to 26 percent wall-time savings on long five-turn chats, while 35B-A3B ends roughly tied or slightly slower. Workload shape decides the winner — decode-heavy loads favour multi-token prediction, prefill-heavy loads do not.",
-      "zh": "作者在 AMD Ryzen AI MAX+ 395 Strix Halo 与 Radeon 8060S 上对 llama.cpp 的多 token 预测草稿模式做了 Qwen3.6 27B 与 35B-A3B 基准。结论一致：生成吞吐普遍上升、提示处理变慢。27B 在长五轮对话上墙钟时间最多省 26%；35B-A3B 大致打平或略慢。解码主导的工作流受益最大，预填充主导则相反。",
-      "title_en": "Strix Halo llama.cpp multi-token prediction benchmarks: Qwen3.6 27B gets much faster while 35B-A3B is mixed",
-      "title_zh": "Strix Halo 上 llama.cpp 多 token 预测基准：Qwen3.6 27B 大幅提速，35B-A3B 表现参差"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v722bp/kimi_k3_gets_open_weighted_tomorrow/": {
+      "en": "The poster reports Kimi K3 is scheduled to be released with open weights tomorrow, framing it as a win for the open-source ecosystem even though the model is far too large for them or most hobbyists to run locally, even at a hundred-times-smaller scale. They say they are personally more excited about the new inference providers that will likely spin up around the release, opening cheaper hosted access for users without heavy hardware.",
+      "zh": "发帖者表示 Kimi K3 预计明天开放权重发布。虽然自己和大多数爱好者本地根本跑不动，即便缩小一百倍的版本也难，但仍视其为开源生态的胜利。相比模型本身，他更期待围绕此次发布涌现的新推理服务商，为没有重型硬件的用户提供更实惠的托管访问。",
+      "title_en": "Kimi K3 is expected to release with open weights tomorrow",
+      "title_zh": "Kimi K3 预计明日开放权重发布"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tee5ms/can_a_5090_with_qwen36_achieve_3000_toks_bring/": {
-      "en": "The poster forked the Open-dLLM diffusion-language-model codebase and used a free coding agent to upgrade it for Qwen3.6, mashing in techniques from a recent latent-diffusion language-model paper. Untrained throughput estimates on a single RTX 5090 reach 3238 tokens per second at 10 diffusion steps on Qwen3.6-35B-A3B and roughly 6500 at 4 steps, with the dense 27B much slower. The author stresses these numbers come from random weights and is seeking compute credits to actually train.",
-      "zh": "作者把 Open-dLLM 扩散语言模型代码库 fork 后，用免费编码代理升级以支持 Qwen3.6，并融合了最新潜在扩散语言模型论文的方法。在单卡 RTX 5090 上的未训练吞吐估算：Qwen3.6-35B-A3B 10 步扩散每秒 3238 个 token，4 步约 6500 个 token；27B 稠密版慢得多。这些都是随机权重下的理论数据，作者正征集算力来完成训练。",
-      "title_en": "Could an RTX 5090 push Qwen 3.6 past 3000 tokens per second using Open-dLLM diffusion",
-      "title_zh": "RTX 5090 用 Open-dLLM 扩散方法跑 Qwen 3.6 能否冲破每秒 3000 个 token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6n33i/llamacpp_now_has_full_mcp_support/": {
+      "en": "After a long effort led by ngxson, llama.cpp now fully supports the Model Context Protocol across all transports, including stdio servers that previously required deeper integration. The llama-cli terminal client was refactored to talk through the server, so the existing native-tools server could pick up MCP. After merging the pull request, the WebUI becomes a full agentic chat where users can wire in a dedicated coding server like Serena to build a self-contained local-model coding agent.",
+      "zh": "在 ngxson 主导下，llama.cpp 现已全面支持 Model Context Protocol 的所有传输方式，包括此前需底层集成的标准输入输出服务器。llama-cli 被改为经由服务端调用，使原生工具服务器接入 MCP。合并该 pull request 后，其 WebUI 变成完整的智能体聊天界面，用户可插入 Serena 等编码服务器，构建完全依赖本地模型的自足编码智能体。",
+      "title_en": "llama.cpp gains full Model Context Protocol support across all transports, enabling agentic chat in its WebUI",
+      "title_zh": "llama.cpp 全面支持 Model Context Protocol 各类传输方式，WebUI 变身智能体聊天界面"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tecfxm/luce_megakernal_why_nobody_is_taking_about_this/": {
-      "en": "The author asks why the Luce team's megakernel release — shipped alongside their better-known DFlash and PFlash work — has gone almost undiscussed. The megakernel reportedly delivers a 1.8x speedup with much better power efficiency on Nvidia GPUs by eliminating the CPU dispatch between layer boundaries, replacing roughly 100 CUDA kernel launches per token that llama.cpp performs today. The poster wonders how this compares to llama.cpp's existing fused-delta kernel and asks the community for context.",
-      "zh": "作者好奇：Luce 团队与 DFlash、PFlash 一同发布的 megakernel 为何几乎无人讨论？据称在 Nvidia GPU 上能带来 1.8 倍提速、能效大幅提升，关键是消除层间的 CPU 调度——llama.cpp 中每个 token 大约要发起 100 次 CUDA kernel 启动。作者也想知道这与 llama.cpp 已有的 fused-delta kernel 相比如何。",
-      "title_en": "Why is no one discussing the Luce megakernel for faster, more power-efficient local inference",
-      "title_zh": "为何无人讨论 Luce 的 megakernel：可让本地推理更快、更节能"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v7d8px/harness_showdown_claude_code_vs_opencode_vs_pi/": {
+      "en": "The author benchmarked DeepSeek V4 Flash on the same coding workload through three harnesses — Claude Code via CLIProxyAPI, OpenCode, and Pi — and found the produced diffs were essentially identical while wall clock and token spend varied wildly. Claude Code took roughly four times longer than the fastest because it explored the codebase heavily. The takeaway: harnesses shape efficiency and tool-call patterns, not the final code quality, with Pi reasoning, OpenCode delegating, and Claude Code exploring.",
+      "zh": "作者在同一编码工作负载上，通过 Claude Code（经 CLIProxyAPI）、OpenCode 与 Pi 三种脚手架跑 DeepSeek V4 Flash，发现最终代码改动几乎一致，但耗时和 token 消耗差异悬殊。Claude Code 因偏爱大量探索代码库，耗时约为最快方案的四倍。结论是：脚手架影响的是效率与工具调用模式，而非最终代码质量——Pi 靠推理、OpenCode 靠委派、Claude Code 靠探索。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1teqjjl/reduce_your_gpu_power_limit/": {
-      "en": "A self-described layman used MSI Afterburner to sweep GPU power limits while running Qwen3.5 9B on a gaming card, measuring token processing and generation. The takeaway: reducing the power limit barely hurts inference performance, and core or memory clock tweaks also have little impact. Bumping memory clock by 700 to 1000 megahertz nets a modest generation speedup. The author admits to being a non-expert and shares the numbers as a casual starting point for others.",
-      "zh": "一位自称外行的作者用 MSI Afterburner 调整游戏显卡的功耗上限，运行 Qwen3.5 9B 测试 token 处理与生成速度。结论是：降低功耗上限对推理性能影响极小，调整核心或显存频率影响也有限；将显存频率上调 700 到 1000 兆赫兹能带来温和的生成提速。作者直言只是业余分享，供大家参考起步。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v783ii/worlds_first_underwhelming_amd_ryzen_ai_halo/": {
+      "en": "LTT Labs accidentally ended up with two AMD Ryzen AI Halo units when a Linux version arrived alongside the requested Windows one, and tried clustering them following AMD's official remote procedure call playbook. The writeup shares the exploration and results rather than firm conclusions: the two-node cluster underwhelmed and raised more questions than it answered. The team asks readers for ideas on how the setup could be improved and whether meaningful conclusions can be drawn.",
+      "zh": "LTT Labs 因阴差阳错手上多出一套 AMD Ryzen AI Halo，便按 AMD 官方远程过程调用手册尝试双机组集群。文章分享的是探索过程和初步结果，而非确定结论：双节点集群表现不尽如人意，留下的问题比答案还多。团队邀请读者提出改进思路，并共同讨论这些数据能否得出有意义的结论。",
+      "title_en": "LTT Labs clusters two AMD Ryzen AI Halo units following AMD's remote procedure call playbook, with underwhelming results",
+      "title_zh": "LTT Labs 依 AMD 远程过程调用手册组集两台 Ryzen AI Halo，结果不尽如人意"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1te9unl/allenai_has_been_iterating_on_their_molmoact2/": {
-      "en": "Allen AI keeps releasing fine-tunes of MolmoAct2, a 5 billion parameter vision-language-action model for robot control. New checkpoints target different datasets: LIBERO for general robotics tasks, DROID for interactive tasks, and BimanualYAM and SO100_101 for absolute joint-pose control. Everything ships fully open — weights, complete training datasets including pretraining, training source code, and technical papers covering theory and evaluations. Anyone working on LLM-driven robotics should give the family a look.",
-      "zh": "Allen AI 持续迭代 MolmoAct2 系列：一款用于机器人控制的 50 亿参数视觉-语言-动作模型。最近放出多款微调：LIBERO 做通用机器人任务、DROID 做交互任务、BimanualYAM 与 SO100_101 用于绝对关节姿态控制。权重、含预训练在内的全套训练数据集、训练源码与技术论文均开源。做 LLM 驱动机器人的人值得关注。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6zksb/aisagegigachat31audio10ba18b_hugging_face/": {
+      "en": "GigaChat Audio 10B extends the GigaChat 3.1 Lightning text model with a Conformer speech encoder and a modality adapter that pipes audio embeddings into a Mixture of Experts decoder, so the model keeps the underlying text quality while gaining native speech understanding. It handles audio question answering, classification, temporal grounding with timestamped event descriptions, tool use, and text-only tasks. Temporal grounding is trained on the purpose-built TimeGround-1M dataset of long-form audio with time-aligned annotations.",
+      "zh": "GigaChat Audio 10B 在 GigaChat 3.1 Lightning 文本模型基础上，加装 Conformer 语音编码器和模态适配器，将音频嵌入送入 Mixture of Experts 解码器，既保留文本质量又获得原生语音理解能力。它支持音频问答、分类、带时间戳的时序定位、工具调用及纯文本任务。时序定位能力由专门构建、带时间对齐标注的长音频数据集 TimeGround-1M 训练而成。",
+      "title_en": "GigaChat Audio 10B pairs a Conformer speech encoder with a Mixture of Experts decoder for audio question answering and temporal grounding",
+      "title_zh": "GigaChat Audio 10B：Conformer 语音编码器搭配 Mixture of Experts 解码器，支持音频问答与时序定位"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tevjjr/macos_support_in_lemonade_has_graduated_out_of/": {
-      "en": "Lemonade, a local AI runtime in the vein of LM Studio and Ollama, has moved its macOS support out of beta. All major features now run on Mac, including OmniRouter, coding, image generation, speech generation, and transcription. The team highlights its open-source, zero-telemetry stance, a 3 megabyte portable binary that targets Linux, Windows, and macOS from a single codebase, and omni-modal input and output for images and speech. An iPhone companion app is on the way.",
-      "zh": "Lemonade 是一款类似 LM Studio 或 Ollama 的本地 AI 运行时，宣布 macOS 支持正式毕业出 Beta。OmniRouter、编码、图像生成、语音生成与转录等主要功能均已在 Mac 上可用。团队强调开源、零遥测，提供 3 兆字节便携二进制，可在 Linux、Windows 与 macOS 一次编写处处部署，并支持图像与语音多模态输入输出。iPhone 配套应用也即将推出。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v73ux4/23_gemma4e4b_models_compared_with_abliterlitics/": {
+      "en": "The team ran 23 Gemma 4 E4B fine-tunes and abliterations through their abliterlitics benchmark gauntlet. The most surgical variants — the heretic family and abliterix — came out on top, hitting ninety-five to one hundred percent attack success rate on HarmBench while preserving base capabilities. The most-downloaded model, OBLITERATUS with nearly eight hundred thousand downloads, is essentially broken: worst benchmarks, highest output distribution shift, and passing only because it is too damaged to refuse. Reasoning-trace distills hurt rather than helped.",
+      "zh": "团队将 23 个 Gemma 4 E4B 微调与去审查版本跑遍自制的 abliterlitics 基准。动刀最少的 heretic 系列和 abliterix 表现最佳，在 HarmBench 上攻击成功率达九成五至满分，且保留基础能力。下载量近八十万的 OBLITERATUS 实际上已损坏：基准最差、输出分布偏移最大，之所以不拒绝仅因模型崩坏。推理轨迹蒸馏微调不但无益，反而伤害了模型。",
+      "title_en": "Comparison of 23 Gemma 4 E4B abliterated variants finds the most downloaded model is broken and surgical edits win",
+      "title_zh": "23 个 Gemma 4 E4B 去审查版本对比：下载量最高的模型已损坏，改动最少的方案胜出"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tf2cxh/how_i_started_programming_differently_over_the/": {
-      "en": "A long-time programmer describes how their workflow has shifted: they no longer use in-IDE LLM autocomplete, and the file-context-feeding script they wrote a year ago is also gone. Today they open a coding-agent CLI without launching an IDE, use at-mentions to point at files, and lean on the agent to read logs, write tests, and follow a plan.md broken into small tasks. The IDE survives mostly for Git diff visualisation, step-by-step debugging, and code navigation.",
-      "zh": "一位老程序员分享工作流的变化：他不再用 IDE 里的 LLM 自动补全，连一年前自己写的喂上下文脚本也已弃用。如今直接打开编码代理 CLI，用 @ 指向文件，让代理读日志、写测试，并按 plan.md 中拆好的小任务一条条推进。IDE 主要只剩 Git diff 可视化、单步调试与代码跳转，使用频率只占 5% 到 10%。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1tf15eh/github_richardr1126openreader_an_opensource/": {
-      "en": "OpenReader 3.0 is an open-source Next.js web app for reading and listening to EPUB, PDF, TXT, Markdown, and DOCX files. It supports OpenAI, Replicate, Deepinfra, and self-hosted text-to-speech backends like Kokoro-FastAPI and KittenTTS-FastAPI, stores documents and audio on your own server, and exports m4b or mp3 audiobooks with chapter metadata via ffmpeg. The new release adds multi-page audio preload, persistent server-side caching, an admin panel for multi-provider keys, and runtime feature flags.",
-      "zh": "OpenReader 3.0 是一款开源的 Next.js 跟读应用，可朗读 EPUB、PDF、TXT、Markdown 与 DOCX。支持 OpenAI、Replicate、Deepinfra 以及自托管的 Kokoro-FastAPI、KittenTTS-FastAPI 等语音合成后端，文档与音频均落在自家服务器，可通过 ffmpeg 导出带章节信息的 m4b 或 mp3 有声书。新版本加入多页音频预加载、持久化缓存、多提供商管理后台与运行时特性开关。",
-      "title_en": "OpenReader 3.0 ships open-source read-along document server with high-quality text-to-speech and audiobook export",
-      "title_zh": "OpenReader 3.0 发布：开源跟读文档服务器，含高品质语音合成与有声书导出"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1v6q6z5/16_bit_better_than_lower_quants_for_qwen3627b/": {
+      "en": "The poster is building a fairly complex C++ Windows MFC application on a rig with several 3090 GPUs, running Qwen3.6-27B at sixteen-bit precision with a 256K context window and Multi-Token Prediction. They find the sixteen-bit version produces markedly better code than lower quantizations, which get stuck on hard cases like managing designs with multiple threads. They stress it is not equal to Claude, but reliable enough for real work, while simpler web apps still get by on lower quants.",
+      "zh": "发帖者在多块 3090 组成的机器上开发一款较复杂的 C++ Windows MFC 应用，运行十六比特精度的 Qwen3.6-27B，配合 256K 上下文和多 token 预测。他发现十六比特版本代码质量明显优于低量化，后者在多线程设计等复杂场景常常卡壳。作者强调它仍不及 Claude，但足以承担实际工作；写简单网页应用则用低量化即可。",
+      "title_en": "Running Qwen 3.6 27B at sixteen bit precision produces noticeably better code than lower quantizations on complex C++ work",
+      "title_zh": "以十六比特精度运行 Qwen 3.6 27B，在复杂 C++ 工程上代码质量明显优于低量化"
     }
   }
 }
