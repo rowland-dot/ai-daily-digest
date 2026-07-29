@@ -1,7 +1,49 @@
 {
-  "fetched_at": "2026-07-28T21:40:46.234Z",
+  "fetched_at": "2026-07-29T21:27:11.447Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting D. Richard Hipp",
+      "link": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything",
+      "updated": "2026-07-29T21:15:21+00:00",
+      "summary": "Years ago, we didn’t have SQL. There were people whose job was to generate software that would query large data sets. Their job title was COBOL programmer. Then SQL comes along—I’m simplifying this only a little bit—and it gives you this convenient way so people could just specify. With a very simple specification, you can generate all of that code that you had to pay the expensive COBOL programmer to do before. That didn’t mean programmers went away. It just meant the job changed a little bit."
+    },
+    {
+      "title": "AI Worming through Word",
+      "link": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+      "updated": "2026-07-29T18:43:03+00:00",
+      "summary": "AI Worming through Word"
+    },
+    {
+      "title": "Quoting Matthew Green",
+      "link": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
+      "updated": "2026-07-29T18:18:15+00:00",
+      "summary": "Right now we’re in the midst of a historic transition from traditional public-key algorithms based on EC-based cryptography and RSA, moving over to new post-quantum algorithms based on novel problems. This is why there are so many standards like HAWK being considered. If there was ever a perfect time for a massive new public cryptanalysis capability to come on line, we’re in it. So unless AIs succeed in undermining all of our hard problems altogether (or we live in Impagliazzo’s Minicrypt ) then this could not be a better time for AI to get good at cryptanalysis. In the best case, the result is that we gain real confidence in the problems we’ve identified, and the cryptanalysis literature gets a lot more robust. Hopefully."
+    },
+    {
+      "title": "Adding a custom MCP server to Claude and ChatGPT",
+      "link": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+      "updated": "2026-07-29T00:13:18+00:00",
+      "summary": "Connecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps."
+    },
+    {
+      "title": "Discovering cryptographic weaknesses with Claude",
+      "link": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+      "updated": "2026-07-28T22:45:37+00:00",
+      "summary": "Discovering cryptographic weaknesses with Claude"
+    },
+    {
+      "title": "Quoting Akshat Bubna",
+      "link": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+      "updated": "2026-07-28T22:05:55+00:00",
+      "summary": "We’re aware a Modal customer published an unauthenticated endpoint that allowed ​anyone on the internet to use ​their ⁠sandboxes for code execution. This was used by the rogue agent. Modal’s ⁠platform ​or isolation were not ​compromised in anyway."
+    },
+    {
+      "title": "uv 0.12.0",
+      "link": "https://simonwillison.net/2026/Jul/28/uv/#atom-everything",
+      "updated": "2026-07-28T21:51:38+00:00",
+      "summary": "uv 0.12.0"
+    },
     {
       "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
       "link": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
@@ -27,52 +69,10 @@
       "summary": "An Inside Look at the Relay Market Powering Token Resellers and Fraud"
     },
     {
-      "title": "Ruff v0.16.0",
-      "link": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
-      "updated": "2026-07-25T22:44:05+00:00",
-      "summary": "Ruff v0.16.0"
-    },
-    {
-      "title": "Quoting Boris Cherny",
-      "link": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
-      "updated": "2026-07-25T00:42:59+00:00",
-      "summary": "More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully."
-    },
-    {
-      "title": "Introducing Claude Opus 5",
-      "link": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
-      "updated": "2026-07-24T23:48:50+00:00",
-      "summary": "Introducing Claude Opus 5"
-    },
-    {
-      "title": "The first known runaway AI agent - or a very bad marketing stunt?",
-      "link": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
-      "updated": "2026-07-23T22:53:08+00:00",
-      "summary": "The first known runaway AI agent - or a very bad marketing stunt?"
-    },
-    {
-      "title": "Quoting Seth Larson",
-      "link": "https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything",
-      "updated": "2026-07-23T04:50:36+00:00",
-      "summary": "The Python Package Index (PyPI) now rejects new files being uploaded to releases that are older than 14 days. This restriction was put in place to prevent old and long-stable releases from being poisoned in case publishing tokens or workflows of PyPI projects were compromised. As far as we are aware this has not yet been abused, but there is no technical reason beyond that attackers weren't aware it was possible."
-    },
-    {
-      "title": "Quoting Thomas Ptacek",
-      "link": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
-      "updated": "2026-07-22T23:59:01+00:00",
-      "summary": "I genuinely believe that if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI has sounder sandboxes."
-    },
-    {
-      "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
-      "link": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-      "updated": "2026-07-22T23:51:33+00:00",
-      "summary": "This story is wild. The short version: OpenAI were running a cybersecurity test against an unreleased model, with the model's guardrail features turned off. Rather than solve the test, the model broke its way out of OpenAI's sandbox, then found exploits to break in to Hugging Face, all so it could cheat on the test by stealing the answers."
-    },
-    {
-      "title": "Are AI labs pelicanmaxxing?",
-      "link": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
-      "updated": "2026-07-22T23:01:00+00:00",
-      "summary": "Are AI labs pelicanmaxxing?"
+      "title": "sqlite-utils 3.39.1",
+      "link": "https://simonwillison.net/2026/Jul/26/sqlite-utils/#atom-everything",
+      "updated": "2026-07-26T04:38:46+00:00",
+      "summary": "I back-ported a fix for table.delete_where() that shipped in version 4."
     }
   ]
 }

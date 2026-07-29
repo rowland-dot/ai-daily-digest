@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-07-28T21:40:44.073Z",
+  "fetched_at": "2026-07-29T21:27:10.704Z",
   "repos": [
     {
-      "owner": "pascalorg",
-      "name": "editor",
-      "url": "https://github.com/pascalorg/editor",
-      "description": "Create and share 3D architectural projects.",
+      "owner": "opengeos",
+      "name": "GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 18607,
-      "forks": 2523,
-      "starsToday": 415
-    },
-    {
-      "owner": "jenkinsci",
-      "name": "jenkins",
-      "url": "https://github.com/jenkinsci/jenkins",
-      "description": "Jenkins automation server",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 26052,
-      "forks": 9685,
-      "starsToday": 180
+      "stars": 3978,
+      "forks": 429,
+      "starsToday": 667
     },
     {
       "owner": "moeru-ai",
@@ -30,20 +19,9 @@
       "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 44711,
-      "forks": 4446,
-      "starsToday": 796
-    },
-    {
-      "owner": "andrewyng",
-      "name": "aisuite",
-      "url": "https://github.com/andrewyng/aisuite",
-      "description": "Simple, unified interface to multiple Generative AI providers",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 15659,
-      "forks": 1654,
-      "starsToday": 92
+      "stars": 45340,
+      "forks": 4482,
+      "starsToday": 676
     },
     {
       "owner": "affaan-m",
@@ -52,9 +30,9 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 234725,
-      "forks": 35768,
-      "starsToday": 692
+      "stars": 235494,
+      "forks": 35862,
+      "starsToday": 860
     },
     {
       "owner": "huggingface",
@@ -63,31 +41,108 @@
       "description": "Build local voice agents with open-source models",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 7161,
-      "forks": 947,
-      "starsToday": 177
+      "stars": 7806,
+      "forks": 999,
+      "starsToday": 837
     },
     {
-      "owner": "virgiliojr94",
-      "name": "book-to-skill",
-      "url": "https://github.com/virgiliojr94/book-to-skill",
-      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "owner": "1jehuang",
+      "name": "jcode",
+      "url": "https://github.com/1jehuang/jcode",
+      "description": "The most RAM effiecent harness",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 13387,
+      "forks": 1471,
+      "starsToday": 652
+    },
+    {
+      "owner": "grokability",
+      "name": "snipe-it",
+      "url": "https://github.com/grokability/snipe-it",
+      "description": "A free open source IT asset/license management system",
+      "language": "PHP",
+      "languageColor": "#4F5D95",
+      "stars": 14408,
+      "forks": 3902,
+      "starsToday": 197
+    },
+    {
+      "owner": "deepfakes",
+      "name": "faceswap",
+      "url": "https://github.com/deepfakes/faceswap",
+      "description": "Deepfakes Software For All",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 11217,
-      "forks": 1328,
-      "starsToday": 366
+      "stars": 56204,
+      "forks": 13425,
+      "starsToday": 135
     },
     {
-      "owner": "opengeos",
-      "name": "GeoLibre",
-      "url": "https://github.com/opengeos/GeoLibre",
-      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+      "owner": "microsoft",
+      "name": "VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 51216,
+      "forks": 5707,
+      "starsToday": 332
+    },
+    {
+      "owner": "different-ai",
+      "name": "openwork",
+      "url": "https://github.com/different-ai/openwork",
+      "description": "The open-source alternative to Claude Cowork (powered by opencode)",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 3334,
-      "forks": 388,
-      "starsToday": 743
+      "stars": 17815,
+      "forks": 1851,
+      "starsToday": 58
+    },
+    {
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 263217,
+      "forks": 23505,
+      "starsToday": 686
+    },
+    {
+      "owner": "MoonshotAI",
+      "name": "FlashKDA",
+      "url": "https://github.com/MoonshotAI/FlashKDA",
+      "description": "FlashKDA: high-performance Kimi Delta Attention kernels",
+      "language": "Cuda",
+      "languageColor": "#3A4E3A",
+      "stars": 967,
+      "forks": 95,
+      "starsToday": 216
+    },
+    {
+      "owner": "NanmiCoder",
+      "name": "MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 59045,
+      "forks": 11672,
+      "starsToday": 187
+    },
+    {
+      "owner": "alibaba",
+      "name": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 15931,
+      "forks": 1077,
+      "starsToday": 386
     },
     {
       "owner": "paperswithbacktest",
@@ -96,42 +151,42 @@
       "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 9509,
-      "forks": 1289,
-      "starsToday": 402
+      "stars": 10339,
+      "forks": 1343,
+      "starsToday": 950
     },
     {
-      "owner": "microsoft",
-      "name": "agent-governance-toolkit",
-      "url": "https://github.com/microsoft/agent-governance-toolkit",
-      "description": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+      "owner": "maderix",
+      "name": "ANE",
+      "url": "https://github.com/maderix/ANE",
+      "description": "Training neural networks on Apple Neural Engine via reverse-engineered private APIs",
+      "language": "Objective-C",
+      "languageColor": "#438eff",
+      "stars": 7128,
+      "forks": 957,
+      "starsToday": 13
+    },
+    {
+      "owner": "pascalorg",
+      "name": "editor",
+      "url": "https://github.com/pascalorg/editor",
+      "description": "Create and share 3D architectural projects.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 19506,
+      "forks": 2587,
+      "starsToday": 1026
+    },
+    {
+      "owner": "virgiliojr94",
+      "name": "book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 5152,
-      "forks": 833,
-      "starsToday": 17
-    },
-    {
-      "owner": "yorukot",
-      "name": "superfile",
-      "url": "https://github.com/yorukot/superfile",
-      "description": "Pretty fancy and modern terminal file manager",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 21428,
-      "forks": 693,
-      "starsToday": 660
-    },
-    {
-      "owner": "bradautomates",
-      "name": "claude-video",
-      "url": "https://github.com/bradautomates/claude-video",
-      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 12015,
-      "forks": 1209,
-      "starsToday": 989
+      "stars": 12605,
+      "forks": 1409,
+      "starsToday": 1428
     }
   ]
 }

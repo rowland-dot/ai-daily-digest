@@ -4,21 +4,21 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cms51p9ca00d8rorrkaqqfvr9",
-      "title": "Anthropic 的 Claude Mythos Preview 模型发现 AES 和 HAWK 加密算法漏洞",
-      "title_en": "Anthropic says its Mythos model found vulnerabilities in cryptographic algorithms that secure the internet",
-      "url": "https://the-decoder.com/anthropic-says-its-mythos-model-found-vulnerabilities-in-cryptographic-algorithms-that-secure-the-internet",
-      "permalink": "https://aihot.virxact.com/items/cms51p9ca00d8rorrkaqqfvr9",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-28T19:12:27.000Z",
-      "discoveredAt": "2026-07-28T19:25:02.281Z",
-      "summary": "Anthropic 的 Claude Mythos Preview 模型在自主多智能体系统中，发现了后量子签名方案 HAWK 的改进攻击，以及简化版 AES-128（7 轮）的新攻击方法。",
+      "id": "cms6drkj8001crohzuxf7kfy7",
+      "title": "Miles 在 Blackwell 架构上实现端到端 MXFP8 与逐 token NVFP4 强化学习方案",
+      "title_en": "Blog Towards Blackwell-Native 8-bit and 4-bit RL： End-to-End MXFP8 and NVFP4 RL in Miles TL；DR： We implemented two Blackwell-native RL recipes in Miles： end-to-end MXFP8 and per-token NVFP4 for MoE experts. Both are supported by fine-grained precision control across checkpoint conversion，… Ziang Li， humans& and Miles Team",
+      "url": "https://www.lmsys.org/blog/2026-07-29-mxfp8-nvfp4-rl",
+      "permalink": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-29T17:50:30.529Z",
+      "discoveredAt": "2026-07-29T17:50:30.529Z",
+      "summary": "Miles 团队在 Blackwell 架构上实现了两种原生低精度强化学习方案：端到端 MXFP8 和 MoE 专家权重的逐 token NVFP4。在 8x B200 上对 Qwen3-30B-A3B 的消融实验中，BF16 与所有五种低精度配置的原始奖励曲线高度重合，且 MXFP8 和 NVFP4 减少了推理时间。",
       "category": "paper",
-      "score": 78,
+      "score": 69,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms51p9ca00d8rorrkaqqfvr9"
+        "canonical": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7"
       }
     },
     {
@@ -55,6 +55,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh"
+      }
+    },
+    {
+      "id": "cms5hnvv70015ros543ypf7it",
+      "title": "InMind 基准揭示智能体记忆系统的隐式关联盲点",
+      "title_en": "Keep It InMind： Benchmarking the Implicit-Association Blind Spot in Agent Memory",
+      "url": "https://arxiv.org/abs/2607.24368",
+      "permalink": "https://aihot.virxact.com/items/cms5hnvv70015ros543ypf7it",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-27T00:00:00.000Z",
+      "discoveredAt": "2026-07-27T00:00:00.000Z",
+      "summary": "研究团队发布 InMind 基准，包含 125 个专家验证任务，测试智能体记忆系统处理隐式关联的能力。当关键记忆直接放入上下文时，骨干模型能回答 84.0% 的间接查询；但通过六种记忆系统检索时，命中率最高仅 14.4%，尽管这些系统直接召回准确率可达 100%。失败根源在于查询驱动的检索接口本身，将\"路由--决定哪些事实必须保持可见\"确立为核心开放问题。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms5hnvv70015ros543ypf7it"
       }
     },
     {
@@ -181,24 +199,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrycf0kz000broxsd74zlwqf"
-      }
-    },
-    {
-      "id": "cmrx3dmt7001nro69xdxeq8dd",
-      "title": "RECAP：通过可解码性监督训练可验证的激活解释",
-      "title_en": "Train the Model， Not the Reader： Decodability Supervision for Verifiable Activation Explanations",
-      "url": "https://arxiv.org/abs/2607.20379",
-      "permalink": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-22T00:00:00.000Z",
-      "discoveredAt": "2026-07-23T05:49:49.654Z",
-      "summary": "研究发现自然语言自编码器（NLA）的重建分数无法验证逐声明的忠实性，模型可能依赖\"私密代码\"而非真实依据。作者提出RECAP方法，在目标模型上联合训练线性头以保持指定内容可解码。在Pythia-160M上，独立探针能可靠区分真假声明（AUC 0.96），并在对抗编辑下仍能标记谎言（AUC 0.95）。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd"
       }
     }
   ]
