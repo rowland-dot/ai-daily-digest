@@ -1,8 +1,116 @@
 {
-  "count": 20,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms7yv0bp02mwro20ov2cktzi",
+      "title": "Gemini Spark 集成 Chrome 自动浏览功能",
+      "title_en": "Gemini Spark 🤝 @GoogleChrome Gemini Spark is now integrated with auto browse in Google Chrome. Wit…",
+      "url": "https://x.com/GeminiApp/status/2082923048362299629",
+      "permalink": "https://aihot.virxact.com/items/cms7yv0bp02mwro20ov2cktzi",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-07-30T20:15:28.000Z",
+      "discoveredAt": "2026-07-30T20:28:51.065Z",
+      "summary": "Gemini Spark 🤝 @GoogleChrome\n\nGemini Spark 现已与 Google Chrome 的自动浏览功能集成。经你许可，Spark 可直接在你的 Chrome 浏览器中处理网页任务，例如预约看房或自动填写航班信息。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7yv0bp02mwro20ov2cktzi"
+      }
+    },
+    {
+      "id": "cms7w9p0p000fro20pyggbkmb",
+      "title": "Google Earth 集成 Nano Banana 2 图像生成",
+      "title_en": "What if you could see a city as it looked 100 years ago， or visualize a new basketball court at your…",
+      "url": "https://x.com/GoogleAI/status/2082902334984609936",
+      "permalink": "https://aihot.virxact.com/items/cms7w9p0p000fro20pyggbkmb",
+      "source": "X：Google AI (@GoogleAI)",
+      "publishedAt": "2026-07-30T18:53:09.000Z",
+      "discoveredAt": "2026-07-30T19:16:16.061Z",
+      "summary": "Google Earth 网页版上线基于 Nano Banana 2 的图像生成功能，用户可通过文本提示词将卫星与 3D 影像结合，重新想象全球任意地点（如百年前的城市风貌或社区新球场）。该功能现已面向所有用户开放。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7w9p0p000fro20pyggbkmb"
+      }
+    },
+    {
+      "id": "cms7teqy003lfropbgykvnbjy",
+      "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+      "title_en": "GPT-5.6 Terra and Luna just got price cuts from @OpenAI. OpenRouter is cheaper still. Our 50% exclu…",
+      "url": "https://x.com/OpenRouter/status/2082882158574911564",
+      "permalink": "https://aihot.virxact.com/items/cms7teqy003lfropbgykvnbjy",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-07-30T17:32:59.000Z",
+      "discoveredAt": "2026-07-30T17:56:13.228Z",
+      "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7teqy003lfropbgykvnbjy"
+      }
+    },
+    {
+      "id": "cms7t8vfu0365ropbxnkcx89n",
+      "title": "GitHub Copilot 应用新增堆叠会话与拉取请求功能",
+      "title_en": "Stacked sessions and pull requests in the GitHub Copilot app",
+      "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app",
+      "permalink": "https://aihot.virxact.com/items/cms7t8vfu0365ropbxnkcx89n",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-07-30T17:30:24.000Z",
+      "discoveredAt": "2026-07-30T17:51:40.088Z",
+      "summary": "GitHub Copilot 应用推出堆叠会话功能，允许用户在同一个仓库中创建一系列相互承接的任务，每个会话可基于前一个会话的成果继续工作。作者通过一个十余年历史的个人项目演示了该功能：先使用 Plan 模式制定前端现代化计划，再通过堆叠会话将 React-Bootstrap 替换工作拆分为独立会话，并自动为每个会话创建对应的拉取请求，避免范围蔓延。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7t8vfu0365ropbxnkcx89n"
+      }
+    },
+    {
+      "id": "cms7sw59802yyropbrio5ml9u",
+      "title": "Perplexity Computer 推出 Projects 功能",
+      "title_en": "Introducing Projects on Perplexity Computer. With the launch of Projects， we're turning Computer int…",
+      "url": "https://x.com/AravSrinivas/status/2082872551538380939",
+      "permalink": "https://aihot.virxact.com/items/cms7sw59802yyropbrio5ml9u",
+      "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
+      "publishedAt": "2026-07-30T16:54:48.000Z",
+      "discoveredAt": "2026-07-30T17:41:45.972Z",
+      "summary": "在 Perplexity Computer 上推出 Projects。\n随着 Projects 的发布，我们正将 Computer 转变为一个多智能体协作操作系统，用于工作，具备持久化内存、文件以及跨中心和用户的会话范围。\n现已向所有用户开放！",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7sw59802yyropbrio5ml9u"
+      }
+    },
+    {
+      "id": "cms782fxi02w4ro2evmcwz6uj",
+      "title": "Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展",
+      "title_en": "Meet Token Saver： An Open-Source MCP Extension Using Local Hybrid RAG to Cut Claude PDF Token Costs 90-99%",
+      "url": "https://www.marktechpost.com/2026/07/30/token-saver-an-open-source-mcp-extension-using-local-hybrid-rag",
+      "permalink": "https://aihot.virxact.com/items/cms782fxi02w4ro2evmcwz6uj",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-07-30T07:43:29.000Z",
+      "discoveredAt": "2026-07-30T07:58:47.346Z",
+      "summary": "Marktechpost AI 团队发布 Token Saver，一款面向 Claude Desktop 的开源 MCP 扩展，通过本地混合 RAG 在设备端检索 PDF，无需上传文件。该工具将 token 消耗削减 92%-99%，并保证数据隐私，设置无需 Python 环境或终端配置。",
+      "category": "ai-products",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms782fxi02w4ro2evmcwz6uj"
+      }
+    },
     {
       "id": "cms6kdopf05tbrohzoim2kpeg",
       "title": "Replit Design 发布：AI 赋能设计愿景",
@@ -325,42 +433,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmryxzcmz06cbrolgm4zhtc1m"
-      }
-    },
-    {
-      "id": "cmrxxi2qg03kcroxpcugdaldy",
-      "title": "ChatGPT 桌面版上线语音控制多智能体",
-      "title_en": "ChatGPT Voice is now in the desktop app. Control your computer and direct multiple agents running i…",
-      "url": "https://x.com/OpenAI/status/2080378182469857576",
-      "permalink": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-07-23T19:43:04.000Z",
-      "discoveredAt": "2026-07-23T19:53:05.984Z",
-      "summary": "ChatGPT 语音功能现已登陆桌面应用。\n\n只需使用语音，即可控制你的电脑，并指挥在 ChatGPT Work 或 Codex 中运行的多个智能体。\n\n该功能由 GPT-Live 驱动，因此它能够同时在该应用中说话、聆听并协调工作。\n\n今日起，面向 macOS 和 Windows 平台的 Plus、Pro、Business、Edu 及 Enterprise 计划用户全球推送。",
-      "category": "ai-products",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy"
-      }
-    },
-    {
-      "id": "cmrxubdvx02mjroxp2kzix1mf",
-      "title": "ChatGPT 向美国用户推出健康功能",
-      "title_en": "Launching Health in ChatGPT to U.S. users. 300 million people use ChatGPT each week for health quer…",
-      "url": "https://x.com/gdb/status/2080351159638704615",
-      "permalink": "https://aihot.virxact.com/items/cmrxubdvx02mjroxp2kzix1mf",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-07-23T17:55:42.000Z",
-      "discoveredAt": "2026-07-23T18:23:54.981Z",
-      "summary": "OpenAI 宣布向美国用户推出 ChatGPT 健康功能，支持安全连接 Apple Health 及受支持的医疗记录。每周有 3 亿用户使用 ChatGPT 进行健康咨询，新功能可让 ChatGPT 理解个人健康上下文，追踪变化并提供更个性化的帮助。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrxubdvx02mjroxp2kzix1mf"
       }
     }
   ]

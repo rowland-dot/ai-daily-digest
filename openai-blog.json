@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-07-29T21:27:10.912Z",
+  "fetched_at": "2026-07-30T21:44:24.449Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "pubDate": "Thu, 30 Jul 2026 10:00:00 GMT",
+      "description": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale."
+    },
+    {
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "pubDate": "Wed, 29 Jul 2026 15:00:00 GMT",
+      "description": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction."
+    },
     {
       "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
       "link": "https://openai.com/index/chatgpt-for-academic-researchers",
@@ -79,18 +91,6 @@
       "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
       "pubDate": "Tue, 21 Jul 2026 00:00:00 GMT",
       "description": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance."
-    },
-    {
-      "title": "Safety and alignment in an era of long-horizon models",
-      "link": "https://openai.com/index/safety-alignment-long-horizon-models",
-      "pubDate": "Mon, 20 Jul 2026 10:00:00 GMT",
-      "description": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
-    },
-    {
-      "title": "A scorecard for the AI age",
-      "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "pubDate": "Fri, 17 Jul 2026 10:00:00 GMT",
-      "description": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute."
     }
   ]
 }

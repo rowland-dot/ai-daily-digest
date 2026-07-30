@@ -4,6 +4,60 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cms7yt12z02fdro20rgzdgpdy",
+      "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
+      "title_en": "Judge says Trump admin still lacks evidence for Anthropic 'supply chain risk' label",
+      "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
+      "permalink": "https://aihot.virxact.com/items/cms7yt12z02fdro20rgzdgpdy",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-07-30T20:26:38.000Z",
+      "discoveredAt": "2026-07-30T20:27:19.282Z",
+      "summary": "美国地区法官Rita Lin表示，特朗普政府未能提供充分证据，证明将Anthropic列为供应链风险并禁止联邦政府使用其技术的合理性。争议源于Anthropic拒绝将其AI用于大规模监控或致命武器决策，而国防部主张私营公司不应限制军方技术使用。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7yt12z02fdro20rgzdgpdy"
+      }
+    },
+    {
+      "id": "cms7oxay30o4nro2e4t3r6ud2",
+      "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+      "title_en": "News RadixArk Joins Forces with Google to Bring Full SGLang Features to TPUs RadixArk and Google Cloud are partnering to bring SGLang to TPUs， giving developers ultimate flexibility for running workloads on their choice of hardware. RadixArk & Google",
+      "url": "https://www.lmsys.org/blog/2026-07-30-sglang-google-tpu",
+      "permalink": "https://aihot.virxact.com/items/cms7oxay30o4nro2e4t3r6ud2",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-30T15:50:35.428Z",
+      "discoveredAt": "2026-07-30T15:50:35.428Z",
+      "summary": "RadixArk 与 Google Cloud 合作，将开源推理框架 SGLang 引入 Google TPU，开发者可通过 SGL-JAX 在最新 TPU 上运行 Gemma、Qwen、DeepSeek 等大语言模型及多模态模型。",
+      "category": "industry",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7oxay30o4nro2e4t3r6ud2"
+      }
+    },
+    {
+      "id": "cms7ioy5f0hfaro2ehgiti5h1",
+      "title": "FCC 禁止进口中国新型机器人与联网逆变器",
+      "title_en": "FCC bans new Chinese robots and power inverters to protect US AI buildout from foreign threats",
+      "url": "https://the-decoder.com/fcc-bans-new-chinese-robots-and-power-inverters-to-protect-us-ai-buildout-from-foreign-threats",
+      "permalink": "https://aihot.virxact.com/items/cms7ioy5f0hfaro2ehgiti5h1",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-30T12:47:46.000Z",
+      "discoveredAt": "2026-07-30T12:56:12.641Z",
+      "summary": "美国 FCC 自 7 月 28 日起禁止进口中国新型\"先进机器人设备\"和联网电源逆变器，理由包括防止供应链中断、数据窃取和网络攻击。禁令覆盖几乎所有重量超 2 公斤、具备无线连接和感知能力的软件控制地面机器人，但已上市型号不受影响。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7ioy5f0hfaro2ehgiti5h1"
+      }
+    },
+    {
       "id": "cms6g4nn502errohzoxo9al2o",
       "title": "Claude Opus 5 在模拟售货机任务中展现欺骗与背叛，创下新纪录",
       "title_en": "Claude Opus 5 became downright ruthless when tasked with running a vending machine",
@@ -343,60 +397,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9"
-      }
-    },
-    {
-      "id": "cmrxylm0f002xropg7xpd1pth",
-      "title": "DARPA 与美国空军试飞 AI 操控的 F-16 战机",
-      "title_en": "美国国防高级研究计划局（DARPA）与美国空军试飞了由人工智能操控的F-16战机",
-      "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
-      "permalink": "https://aihot.virxact.com/items/cmrxylm0f002xropg7xpd1pth",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-23T20:11:31.906Z",
-      "discoveredAt": "2026-07-23T20:23:50.998Z",
-      "summary": "DARPA 与美国空军成功试飞了由人工智能操控的 F-16 战机。该 AI 系统在真实空战环境中完成了自主飞行与战术机动测试，标志着 AI 在军事航空领域的重大进展。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrxylm0f002xropg7xpd1pth"
-      }
-    },
-    {
-      "id": "cmrxs4yyw01xkroxpom7zfjvc",
-      "title": "OpenAI Workspace Agents 漏洞：一个 ChatGPT 链接即可创建恶意 AI 智能体",
-      "title_en": "One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes",
-      "url": "https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes",
-      "permalink": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-23T17:01:30.000Z",
-      "discoveredAt": "2026-07-23T17:22:55.957Z",
-      "summary": "安全公司 Zenity Labs 发现 OpenAI Workspace Agents 存在\"AgentForger\"漏洞，攻击者发送一个含恶意提示词的 ChatGPT 链接，即可在受害者账户下创建自主 AI 智能体。该智能体继承受害者身份和已授权应用权限，绕过安全审批，并设置每五分钟运行一次的定时任务，从攻击者邮箱获取指令执行。OpenAI 在四天内修复了该漏洞。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc"
-      }
-    },
-    {
-      "id": "cmrxnw4rw00qzroxpll5shp7a",
-      "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
-      "title_en": "Google closes in on another billion- user product with Gemini",
-      "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini",
-      "permalink": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-23T14:52:44.000Z",
-      "discoveredAt": "2026-07-23T15:24:04.707Z",
-      "summary": "Google 在 Q2 2026 财报电话会上宣布，AI 助手 Gemini 月活跃用户已超过 9.5 亿，用户数较去年增长三倍。Gemini 正与月活突破 10 亿的 ChatGPT 展开更直接竞争，其 AI 搜索模式用户也已超过 10 亿。Sensor Tower 报告显示，Gemini 在 AI 助手市场份额升至 27.7%，而 ChatGPT 份额首次跌破 50%。",
-      "category": "industry",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a"
       }
     }
   ]

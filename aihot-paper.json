@@ -1,24 +1,42 @@
 {
-  "count": 11,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cms6drkj8001crohzuxf7kfy7",
-      "title": "Miles 在 Blackwell 架构上实现端到端 MXFP8 与逐 token NVFP4 强化学习方案",
-      "title_en": "Blog Towards Blackwell-Native 8-bit and 4-bit RL： End-to-End MXFP8 and NVFP4 RL in Miles TL；DR： We implemented two Blackwell-native RL recipes in Miles： end-to-end MXFP8 and per-token NVFP4 for MoE experts. Both are supported by fine-grained precision control across checkpoint conversion，… Ziang Li， humans& and Miles Team",
-      "url": "https://www.lmsys.org/blog/2026-07-29-mxfp8-nvfp4-rl",
-      "permalink": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-07-29T17:50:30.529Z",
-      "discoveredAt": "2026-07-29T17:50:30.529Z",
-      "summary": "Miles 团队在 Blackwell 架构上实现了两种原生低精度强化学习方案：端到端 MXFP8 和 MoE 专家权重的逐 token NVFP4。在 8x B200 上对 Qwen3-30B-A3B 的消融实验中，BF16 与所有五种低精度配置的原始奖励曲线高度重合，且 MXFP8 和 NVFP4 减少了推理时间。",
+      "id": "cms6xa31u02nlrouq0wkhylfp",
+      "title": "腾讯混元Hyra破解50年数学难题",
+      "title_en": "For a finite set of integers （A）， how much faster can （|A+A|） grow than （|A-A|）？ A 1969 theorem gav…",
+      "url": "https://x.com/TencentHunyuan/status/2082655737541726636",
+      "permalink": "https://aihot.virxact.com/items/cms6xa31u02nlrouq0wkhylfp",
+      "source": "X：腾讯混元 (@TencentHunyuan)",
+      "publishedAt": "2026-07-30T02:33:16.000Z",
+      "discoveredAt": "2026-07-30T02:56:49.307Z",
+      "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
       "category": "paper",
-      "score": 69,
+      "score": 74,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7"
+        "canonical": "https://aihot.virxact.com/items/cms6xa31u02nlrouq0wkhylfp"
+      }
+    },
+    {
+      "id": "cms6x4iu80273rouqra49hny9",
+      "title": "AI 智能体能否进行开放式 AI 研究？两项案例的早期证据",
+      "title_en": "Can AI agents conduct open-ended AI research？ Early evidence from two case studies",
+      "url": "https://arxiv.org/abs/2607.27191",
+      "permalink": "https://aihot.virxact.com/items/cms6x4iu80273rouqra49hny9",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-29T00:00:00.000Z",
+      "discoveredAt": "2026-07-30T02:52:29.161Z",
+      "summary": "一项新研究通过\"影子评估\"测试前沿 AI 智能体能否独立完成开放式 AI 研究。智能体在六天和数千美元算力下完成了全部工程任务，但未能对两项未发表的 NeurIPS 2026 论文的核心研究问题取得实质性进展，被原作者明确拒稿。研究识别出五大失败模式，包括对发表标准判断不足、研究设计缺乏创意、无法有效回溯死胡同、资源意识差和指令漂移。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms6x4iu80273rouqra49hny9"
       }
     },
     {
@@ -40,6 +58,24 @@
       }
     },
     {
+      "id": "cms6drkj8001crohzuxf7kfy7",
+      "title": "Miles 在 Blackwell 架构上实现端到端 MXFP8 与逐 token NVFP4 强化学习方案",
+      "title_en": "Blog Towards Blackwell-Native 8-bit and 4-bit RL： End-to-End MXFP8 and NVFP4 RL in Miles TL；DR： We implemented two Blackwell-native RL recipes in Miles： end-to-end MXFP8 and per-token NVFP4 for MoE experts. Both are supported by fine-grained precision control across checkpoint conversion，… Ziang Li， humans& and Miles Team",
+      "url": "https://www.lmsys.org/blog/2026-07-29-mxfp8-nvfp4-rl",
+      "permalink": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-07-28T16:00:00.000Z",
+      "discoveredAt": "2026-07-29T17:50:30.529Z",
+      "summary": "Miles 团队在 Blackwell 架构上实现了两种原生低精度强化学习方案：端到端 MXFP8 和 MoE 专家权重的逐 token NVFP4。在 8x B200 上对 Qwen3-30B-A3B 的消融实验中，BF16 与所有五种低精度配置的原始奖励曲线高度重合，且 MXFP8 和 NVFP4 减少了推理时间。",
+      "category": "paper",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7"
+      }
+    },
+    {
       "id": "cms4t5zra01o1roa10b19hmbh",
       "title": "Kimi Linear：一种表现力强且高效的注意力架构",
       "title_en": null,
@@ -55,6 +91,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh"
+      }
+    },
+    {
+      "id": "cms6x4iu90276rouqaq8hzfw7",
+      "title": "GPT-Red：通过大规模自对弈实现自动化红队测试",
+      "title_en": "GPT-Red： Automated Red Teaming via Self-Play at Scale",
+      "url": "https://arxiv.org/abs/2607.26115",
+      "permalink": "https://aihot.virxact.com/items/cms6x4iu90276rouqaq8hzfw7",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-28T00:00:00.000Z",
+      "discoveredAt": "2026-07-28T00:00:00.000Z",
+      "summary": "OpenAI 推出 GPT-Red，一个通过自对弈算法训练的自动化红队智能体，用于发现针对前沿大语言模型的提示注入攻击。该模型在同等规模的最大 RL 后训练计算上训练，能可靠攻破 GPT-5.5 及更早模型，发现比人类红队更多的成功攻击，并泛化到未见环境与防御模型。GPT-Red 被用于对抗性训练 GPT-5.6，使其成为目前对提示注入最鲁棒的模型。",
+      "category": "paper",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms6x4iu90276rouqaq8hzfw7"
       }
     },
     {
@@ -91,114 +145,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrz3eamm01jdroey6e0m62on"
-      }
-    },
-    {
-      "id": "cmryewabt00mnrolg1nxcjf18",
-      "title": "MineExplorer：首个《我的世界》分钟级长程任务评测基准发布",
-      "title_en": "让AI离开温室，走向动态世界：MineExplorer揭示顶级多模态大模型被忽视的能力断层",
-      "url": "https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg",
-      "permalink": "https://aihot.virxact.com/items/cmryewabt00mnrolg1nxcjf18",
-      "source": "公众号：龙猫LongCat（美团）",
-      "publishedAt": "2026-07-23T11:58:00.000Z",
-      "discoveredAt": "2026-07-24T04:00:02.705Z",
-      "summary": "美团 LongCat 团队发布 MineExplorer，这是首个在《我的世界》开放世界中实现分钟级长程任务的评测基准，包含 813 个人工验证实例。评测 18 款顶级多模态大模型发现，最强模型 Claude-Opus-4.6 整体任务成功率仅 41%，从 1 跳任务的 77% 骤降至 4 跳任务的 12%，近 60% 的失败源于导航失败。MineExplorer 已全面开源。",
-      "category": "paper",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmryewabt00mnrolg1nxcjf18"
-      }
-    },
-    {
-      "id": "cmrwztuqg0000roqpmbblplr7",
-      "title": "小红书HELMSMAN：全闪存服务器实现高性能向量检索，硬件成本节省超90%",
-      "title_en": "小红书引擎架构团队OSDI 2026新成果：HELMSMAN重塑大规模向量检索基础设施",
-      "url": "https://mp.weixin.qq.com/s/WCYE6itbTBPU0Q_3BfQxkA",
-      "permalink": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-07-23T04:00:00.000Z",
-      "discoveredAt": "2026-07-23T04:10:29.181Z",
-      "summary": "小红书引擎架构团队在OSDI 2026提出HELMSMAN，一个面向全闪存服务器的高性能向量近似最近邻搜索系统。该系统通过聚类式索引、定制化存储栈和分层学习式搜索剪枝，用约40台全闪存服务器承载了过去约35，000 CPU Core和约350 TB DRAM的负载，硬件成本节省超过90%。",
-      "category": "paper",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7"
-      }
-    },
-    {
-      "id": "cmrwz39z703xjrobh5ex10yo7",
-      "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/980/471.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-23T02:51:59.000Z",
-      "discoveredAt": "2026-07-23T03:49:47.032Z",
-      "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的\"作弊\"行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
-      "category": "paper",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7"
-      }
-    },
-    {
-      "id": "cms2r21jz03qgro3fp5yo5b3v",
-      "title": "Agentic Context Management：将智能体记忆与成本问题重构为生命周期与架构挑战",
-      "title_en": "Agentic Context Management： Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
-      "url": "https://arxiv.org/abs/2607.21503",
-      "permalink": "https://aihot.virxact.com/items/cms2r21jz03qgro3fp5yo5b3v",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-23T00:00:00.000Z",
-      "discoveredAt": "2026-07-23T00:00:00.000Z",
-      "summary": "论文提出 Agentic Context Management（ACM）框架，将智能体上下文管理从存储问题重新定义为包含架构、摄取、范围界定、预判、压缩与整合五个原语的生命周期管理。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms2r21jz03qgro3fp5yo5b3v"
-      }
-    },
-    {
-      "id": "cmryek7m200akrolgoaqospqi",
-      "title": "AREX：面向深度研究的递归自改进智能体",
-      "title_en": "AREX： Towards a Recursively Self-Improving Agent for Deep Research",
-      "url": "https://arxiv.org/abs/2607.21461",
-      "permalink": "https://aihot.virxact.com/items/cmryek7m200akrolgoaqospqi",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-23T00:00:00.000Z",
-      "discoveredAt": "2026-07-24T03:50:39.495Z",
-      "summary": "AREX 是一系列递归自改进（RSI）深度研究智能体，通过内层研究循环收集证据、外层自改进循环逐约束审计答案并启动针对性研究。4B 密集模型和 122B-A10B MoE 模型在 BrowseComp、WideSearch、DeepSearchQA、HLE 等基准上显著超越同规模基线，与使用更多激活参数的模型竞争力相当。",
-      "category": "paper",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmryek7m200akrolgoaqospqi"
-      }
-    },
-    {
-      "id": "cmrycf0kz000broxsd74zlwqf",
-      "title": "腾讯发布 WorkBuddy Bench：多领域编码智能体评测套件",
-      "title_en": "Tencent WorkBuddy Bench： A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
-      "url": "https://arxiv.org/abs/2607.20911",
-      "permalink": "https://aihot.virxact.com/items/cmrycf0kz000broxsd74zlwqf",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-23T00:00:00.000Z",
-      "discoveredAt": "2026-07-24T02:50:37.927Z",
-      "summary": "腾讯推出 WorkBuddy Bench，一个覆盖 Code、Web、Office、Security 四个工作领域的编码智能体评测套件。每个任务均从真实 commit、PR 或业务场景逆向工程而来，改写为口语化角色扮演请求，从构造上抵抗数据污染。该基准在 CodeBuddy Code 和 Claude Code 上运行，所有任务目录、环境镜像、评分工具和参考方案均开源发布。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrycf0kz000broxsd74zlwqf"
       }
     }
   ]

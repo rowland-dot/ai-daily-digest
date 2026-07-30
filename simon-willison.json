@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-07-29T21:27:11.447Z",
+  "fetched_at": "2026-07-30T21:44:25.021Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Bruce Schneier",
+      "link": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
+      "updated": "2026-07-30T18:25:26+00:00",
+      "summary": "The writing assignments I give my students are gym tasks, not work tasks. I ask them to write policy memos not because the world needs more policy memos. I assign them because the very act of writing, which includes thinking and outlining and drafting and editing, making and criticizing and revising arguments, will help develop the critical thinking skills they will need in their future careers. And without this constant mental exercise, those skills will atrophy. Employers are already noticing ."
+    },
     {
       "title": "Quoting D. Richard Hipp",
       "link": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
       "updated": "2026-07-26T19:30:54+00:00",
       "summary": "An Inside Look at the Relay Market Powering Token Resellers and Fraud"
-    },
-    {
-      "title": "sqlite-utils 3.39.1",
-      "link": "https://simonwillison.net/2026/Jul/26/sqlite-utils/#atom-everything",
-      "updated": "2026-07-26T04:38:46+00:00",
-      "summary": "I back-ported a fix for table.delete_where() that shipped in version 4."
     }
   ]
 }
