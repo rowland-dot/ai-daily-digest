@@ -1,12 +1,48 @@
 {
-  "fetched_at": "2026-07-30T21:44:25.021Z",
+  "fetched_at": "2026-07-31T21:39:55.541Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "smevals - a small eval suite for evaluating models, prompts, and harnesses",
+      "link": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
+      "updated": "2026-07-31T21:15:23+00:00",
+      "summary": "smevals - a small eval suite for evaluating models, prompts, and harnesses"
+    },
+    {
+      "title": "Advancing the price-performance frontier with GPT‑5.6",
+      "link": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
+      "updated": "2026-07-30T23:58:42+00:00",
+      "summary": "Advancing the price-performance frontier with GPT‑5.6"
+    },
+    {
+      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "link": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents/#atom-everything",
+      "updated": "2026-07-30T23:41:29+00:00",
+      "summary": "Investigating three real-world incidents in our cybersecurity evaluations"
+    },
+    {
+      "title": "llm 0.32rc2",
+      "link": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
+      "updated": "2026-07-30T22:52:06+00:00",
+      "summary": "Hot on the heels of RC1 , this fixes a dependency issue and also adds two neat new features:"
+    },
     {
       "title": "Quoting Bruce Schneier",
       "link": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
       "updated": "2026-07-30T18:25:26+00:00",
       "summary": "The writing assignments I give my students are gym tasks, not work tasks. I ask them to write policy memos not because the world needs more policy memos. I assign them because the very act of writing, which includes thinking and outlining and drafting and editing, making and criticizing and revising arguments, will help develop the critical thinking skills they will need in their future careers. And without this constant mental exercise, those skills will atrophy. Employers are already noticing ."
+    },
+    {
+      "title": "llm-chat-completions-server 0.1a0",
+      "link": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything",
+      "updated": "2026-07-30T15:43:16+00:00",
+      "summary": "A key goal of the new content-addressable logs in LLM 0.32rc1 was being able to support OpenAI Chat Completion style requests where each incoming message extends the previous conversation, like this:"
+    },
+    {
+      "title": "llm 0.32rc1",
+      "link": "https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything",
+      "updated": "2026-07-30T15:30:20+00:00",
+      "summary": "This RC for LLM 0.32 finishes the work that started in LLM 0.32a0 - it adds a new schema design that does a much better job of capturing the details of the prompts and responses returned by the latest model families."
     },
     {
       "title": "Quoting D. Richard Hipp",
@@ -37,42 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
       "updated": "2026-07-28T22:45:37+00:00",
       "summary": "Discovering cryptographic weaknesses with Claude"
-    },
-    {
-      "title": "Quoting Akshat Bubna",
-      "link": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
-      "updated": "2026-07-28T22:05:55+00:00",
-      "summary": "We’re aware a Modal customer published an unauthenticated endpoint that allowed ​anyone on the internet to use ​their ⁠sandboxes for code execution. This was used by the rogue agent. Modal’s ⁠platform ​or isolation were not ​compromised in anyway."
-    },
-    {
-      "title": "uv 0.12.0",
-      "link": "https://simonwillison.net/2026/Jul/28/uv/#atom-everything",
-      "updated": "2026-07-28T21:51:38+00:00",
-      "summary": "uv 0.12.0"
-    },
-    {
-      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
-      "link": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
-      "updated": "2026-07-28T21:28:54+00:00",
-      "summary": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident"
-    },
-    {
-      "title": "moonshotai/Kimi-K3",
-      "link": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
-      "updated": "2026-07-27T23:39:04+00:00",
-      "summary": "moonshotai/Kimi-K3"
-    },
-    {
-      "title": "An opinionated guide to which AI to use to do stuff",
-      "link": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
-      "updated": "2026-07-27T21:55:53+00:00",
-      "summary": "An opinionated guide to which AI to use to do stuff"
-    },
-    {
-      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
-      "link": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
-      "updated": "2026-07-26T19:30:54+00:00",
-      "summary": "An Inside Look at the Relay Market Powering Token Resellers and Fraud"
     }
   ]
 }

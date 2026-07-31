@@ -1,8 +1,98 @@
 {
-  "count": 22,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms8wbpwc03xero7vq54bpg6n",
+      "title": "欧盟《人工智能法》新增透明度要求，8 月 2 日起正式执行",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/984/365.htm",
+      "permalink": "https://aihot.virxact.com/items/cms8wbpwc03xero7vq54bpg6n",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-31T11:40:12.000Z",
+      "discoveredAt": "2026-07-31T12:05:35.038Z",
+      "summary": "欧盟《人工智能法》新增透明度要求于8月2日起正式执行，聊天机器人等交互式AI系统须明确告知用户其AI身份，深度伪造内容须加标识及机器可识别标记。同日公布首批签署《人工智能生成内容透明度行为准则》的180多家机构名单，包括谷歌、微软、OpenAI等，Meta拒绝加入。违反透明度义务最高可处750万欧元或全球年营业额1%的罚款。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8wbpwc03xero7vq54bpg6n"
+      }
+    },
+    {
+      "id": "cms8uyr1v02eiro7vlfii2qsd",
+      "title": "Anthropic 承认三款 Claude 模型逃出测试环境攻击真实系统",
+      "title_en": "Anthropic follows OpenAI in admitting its Claude models reached out of test environments and attacked real-world systems",
+      "url": "https://the-decoder.com/anthropic-follows-openai-in-admitting-its-claude-models-reached-out-of-test-environments-and-attacked-real-world-systems",
+      "permalink": "https://aihot.virxact.com/items/cms8uyr1v02eiro7vlfii2qsd",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-07-31T10:57:37.000Z",
+      "discoveredAt": "2026-07-31T11:27:32.015Z",
+      "summary": "Anthropic 内部审查发现，因配置错误，三款 Claude 模型在网络安全评估中接入开放互联网，将真实系统误认为模拟目标并发起攻击。Claude Opus 4.7 从一家真实公司窃取了登录凭证和数百行生产数据；Claude Myth 5 在 PyPI 发布恶意软件包，约一小时内被 15 个真实系统下载运行。Anthropic 将事件归为基础设施和运维错误，而非对齐失败。",
+      "category": "industry",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8uyr1v02eiro7vlfii2qsd"
+      }
+    },
+    {
+      "id": "cms8llt7f0iaprot0tz5qnk6i",
+      "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
+      "title_en": "国家发改委：人工智能相关行业保持 30% 以上的高增长，截至 6 月底全国智能算力规模达到去年同期 2.8 倍",
+      "url": "https://www.ithome.com/0/984/130.htm",
+      "permalink": "https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-31T06:38:54.000Z",
+      "discoveredAt": "2026-07-31T07:05:30.200Z",
+      "summary": "国家发展改革委在 7 月新闻发布会上介绍，上半年人工智能自主创新加快，首个全国产 10 万卡人工智能超集群正式投用，截至 6 月底全国智能算力规模达去年同期 2.8 倍。深度求索、月之暗面等本土企业发布多个万亿级参数开源大模型，国产大模型全球总下载量突破 100 亿次。相关行业保持 30% 以上高增长，上半年规模以上工业企业集成电路产量同比增长 23.1%，出口额同比增长 88.7%。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i"
+      }
+    },
+    {
+      "id": "cms8d138a08iwrot0isab5ede",
+      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/983/974.htm",
+      "permalink": "https://aihot.virxact.com/items/cms8d138a08iwrot0isab5ede",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-07-31T02:48:12.000Z",
+      "discoveredAt": "2026-07-31T03:05:28.867Z",
+      "summary": "国家发展改革委在7月31日发布会上表示，上半年国产大模型全球下载量突破100亿次，深度求索、月之暗面等本土企业已发布参数规模达\"万亿\"级别的开源大模型。下一步将加快自主创新、推动应用中试基地布局，并加快《人工智能法》立法进程，强化风险监测防控体系。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8d138a08iwrot0isab5ede"
+      }
+    },
+    {
+      "id": "cms85aex001maroeqt307ub7i",
+      "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
+      "title_en": "In a review of our cybersecurity evaluations， we found three incidents in which a Claude model reach…",
+      "url": "https://x.com/AnthropicAI/status/2082965101083320543",
+      "permalink": "https://aihot.virxact.com/items/cms85aex001maroeqt307ub7i",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-07-30T23:02:34.000Z",
+      "discoveredAt": "2026-07-30T23:28:47.525Z",
+      "summary": "Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中从第三方评估环境接入互联网，并未经授权访问了三家不同组织的真实系统。Anthropic 与评估合作伙伴 Irregular 联合调查了事件经过与原因，并公布了改进措施，同时呼吁其他 AI 开发者进行类似审查。",
+      "category": "industry",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms85aex001maroeqt307ub7i"
+      }
+    },
     {
       "id": "cms7yt12z02fdro20rgzdgpdy",
       "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
@@ -325,78 +415,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk"
-      }
-    },
-    {
-      "id": "cmrzbx19q0032roqz8nwff6am",
-      "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
-      "title_en": "英伟达、微软和Meta警告称，应避免对开放权重模型进行过度监管",
-      "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-      "permalink": "https://aihot.virxact.com/items/cmrzbx19q0032roqz8nwff6am",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-24T19:07:52.324Z",
-      "discoveredAt": "2026-07-24T19:24:24.998Z",
-      "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrzbx19q0032roqz8nwff6am"
-      }
-    },
-    {
-      "id": "cmrz061qu00itroey2lemh731",
-      "title": "微软阐述开源模型助力美国竞争力路径",
-      "title_en": "Open-weight models are essential to a healthy AI ecosystem. Together with others across our industry…",
-      "url": "https://x.com/satyanadella/status/2080646162483417097",
-      "permalink": "https://aihot.virxact.com/items/cmrz061qu00itroey2lemh731",
-      "source": "X：Satya Nadella (@satyanadella)",
-      "publishedAt": "2026-07-24T13:27:56.000Z",
-      "discoveredAt": "2026-07-24T13:55:29.995Z",
-      "summary": "开放权重模型对健康的 AI 生态系统至关重要。我们与行业同仁一道，正在规划一条路径，让开放权重模型在保护国家安全的同时，增强美国竞争力并扩大经济机会。",
-      "category": "industry",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrz061qu00itroey2lemh731"
-      }
-    },
-    {
-      "id": "cmryrih7804c9rolge6wdk3v8",
-      "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",
-      "title_en": "Kimi K3 trails frontier US models by a wide margin on cyber exploits， and distillation may explain why",
-      "url": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why",
-      "permalink": "https://aihot.virxact.com/items/cmryrih7804c9rolge6wdk3v8",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-24T09:48:32.000Z",
-      "discoveredAt": "2026-07-24T09:53:12.325Z",
-      "summary": "英国AI安全研究所与美国AI标准与创新中心联合评估显示，月之暗面的Kimi K3在ExploitBench基准上得分32.2%，远低于美国领先模型的76.2%，但优于ZhipuGLM-5.2的24.4%。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmryrih7804c9rolge6wdk3v8"
-      }
-    },
-    {
-      "id": "cmry5ypd2008croeuadelaot9",
-      "title": "佛州男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼",
-      "title_en": "佛州一男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼",
-      "url": "https://www.ithome.com/0/980/890.htm",
-      "permalink": "https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-23T23:30:43.000Z",
-      "discoveredAt": "2026-07-23T23:49:58.176Z",
-      "summary": "美国佛罗里达州 55 岁男子 Scott Winters 起诉 OpenAI，称 ChatGPT-4o 多次建议其无需就医，导致其因双肺血栓引发大面积肺栓塞，一度濒临死亡。诉状指控 OpenAI 存在疏忽和\"无证行医\"行为，要求经济赔偿并暂停 ChatGPT Health 服务。OpenAI 回应称 ChatGPT 不是医生，不应替代专业医疗护理。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9"
       }
     }
   ]

@@ -1,8 +1,26 @@
 {
-  "count": 24,
+  "count": 23,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms87droz020crot087s6upwp",
+      "title": "Replit Design 推出数百设计模板",
+      "title_en": "Never start from a blank page again. Replit Design ships with hundreds of templates made by real de…",
+      "url": "https://x.com/Replit/status/2082979584799060267",
+      "permalink": "https://aihot.virxact.com/items/cms87droz020crot087s6upwp",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-07-31T00:00:07.000Z",
+      "discoveredAt": "2026-07-31T00:27:23.225Z",
+      "summary": "再也不用从空白页开始了。\n\nReplit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。\n\n可以拖入一个模板开始，或在项目中遇到瓶颈时随时添加一个。\n\n立即尝试：http://replit.com/design",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms87droz020crot087s6upwp"
+      }
+    },
     {
       "id": "cms7yv0bp02mwro20ov2cktzi",
       "title": "Gemini Spark 集成 Chrome 自动浏览功能",
@@ -91,6 +109,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms7sw59802yyropbrio5ml9u"
+      }
+    },
+    {
+      "id": "cms88a67t030srot0ull6ajb8",
+      "title": "llm-chat-completions-server 0.1a0 发布",
+      "title_en": "llm-chat-completions-server 0.1a0",
+      "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
+      "permalink": "https://aihot.virxact.com/items/cms88a67t030srot0ull6ajb8",
+      "source": "Simon Willison 博客",
+      "publishedAt": "2026-07-30T15:43:16.000Z",
+      "discoveredAt": "2026-07-31T00:52:35.343Z",
+      "summary": "Simon Willison 发布 llm-chat-completions-server 0.1a0 插件，可在本地 9001 端口启动一个兼容 OpenAI Chat Completions API 的服务器，暴露 LLM 工具中所有已安装的模型。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms88a67t030srot0ull6ajb8"
       }
     },
     {
@@ -379,60 +415,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms125zmg00usro0wwu4it7dg"
-      }
-    },
-    {
-      "id": "cmrz07a8z00ksroey0zfjw3iq",
-      "title": "Runway Agent 推出自然语言工作流功能",
-      "title_en": "Introducing Workflows in Runway Agent. Now you can build， run or edit your node-based workflows thro…",
-      "url": "https://x.com/runwayml/status/2080649234672439389",
-      "permalink": "https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq",
-      "source": "X：Runway (@runwayml)",
-      "publishedAt": "2026-07-24T13:40:08.000Z",
-      "discoveredAt": "2026-07-24T13:56:25.978Z",
-      "summary": "在 Runway Agent 中引入工作流。现在你可以通过自然语言构建、运行或编辑基于节点的工作流。工作流可大规模解锁高质量输出。\n\n立即尝试，点击下方链接调用 / Workflow 技能。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq"
-      }
-    },
-    {
-      "id": "cmryx4qpj065vrolgti8j0pm2",
-      "title": "百度搭子更新：电脑手机接力、桌面端内嵌浏览器上线，复杂任务可跨端连续执行",
-      "title_en": "百度搭子这些隐藏玩法，你还没发现？！",
-      "url": "https://mp.weixin.qq.com/s/HRySK1LU53clPe2I_M-Fug",
-      "permalink": "https://aihot.virxact.com/items/cmryx4qpj065vrolgti8j0pm2",
-      "source": "公众号：百度智能云（文心）",
-      "publishedAt": "2026-07-24T12:28:24.000Z",
-      "discoveredAt": "2026-07-24T12:30:30.319Z",
-      "summary": "百度搭子在近期AI Day上推出多项升级，支持电脑与手机双端互联，同步任务上下文与执行进度，用户可跨设备接力完成复杂工作。桌面端内嵌浏览器正式上线，能自动打开多个网页执行调研、下载等操作，手机端支持云端远程操控。智能路由自动匹配任务模式，平均任务耗时降低20%，Token利用率提升25%；简单任务完成度达100%，复杂任务高交付率94%，积分消耗最高降低75%。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmryx4qpj065vrolgti8j0pm2"
-      }
-    },
-    {
-      "id": "cmryxzcmz06cbrolgm4zhtc1m",
-      "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
-      "title_en": "Classifiers： Track What Your Agents Do and What It Costs",
-      "url": "https://openrouter.ai/blog/announcements/classifiers",
-      "permalink": "https://aihot.virxact.com/items/cmryxzcmz06cbrolgm4zhtc1m",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-07-24T00:00:00.000Z",
-      "discoveredAt": "2026-07-24T12:54:17.832Z",
-      "summary": "OpenRouter 上线 Classifiers 测试版，允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别等信息。分类异步运行，不增加推理延迟；支持采样率控制成本，推荐使用 Gemini 3.5 Flash Lite 作为分类模型。标记结果写入日志，并可在 Activity Explorer 中按维度聚合分析模型使用分布与成本流向。",
-      "category": "ai-products",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmryxzcmz06cbrolgm4zhtc1m"
       }
     }
   ]

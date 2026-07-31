@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-30T21:44:24.704Z",
+  "fetched_at": "2026-07-31T21:39:55.081Z",
   "source": "Anthropic news",
   "items": [
     {
@@ -28,6 +28,13 @@
       "link": "https://www.anthropic.com/news/claude-sonnet-5",
       "pubDate": "2026-06-30T00:00:00.000Z",
       "pubDateText": "Jun 30, 2026",
+      "description": ""
+    },
+    {
+      "title": "Investigating Incidents Cybersecurity Evals",
+      "link": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "pubDate": "2026-07-30T00:00:00.000Z",
+      "pubDateText": "Jul 30, 2026",
       "description": ""
     },
     {
@@ -84,13 +91,6 @@
       "link": "https://www.anthropic.com/news/canadian-ai-research",
       "pubDate": "2026-07-14T00:00:00.000Z",
       "pubDateText": "Jul 14, 2026",
-      "description": ""
-    },
-    {
-      "title": "Ust Claude",
-      "link": "https://www.anthropic.com/news/ust-claude",
-      "pubDate": "2026-07-09T00:00:00.000Z",
-      "pubDateText": "Jul 9, 2026",
       "description": ""
     }
   ]

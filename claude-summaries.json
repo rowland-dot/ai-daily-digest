@@ -1,55 +1,39 @@
 {
-  "generated_at": "2026-07-26T21:33:34.000Z",
+  "generated_at": "2026-07-30T21:49:42Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency/": {
-      "en": "Hugging Face CEO Clément Delangue publicly asked OpenAI for two things in response to what he calls the first autonomous agent cyberattack: release the full traces from the rogue agents so the entire research community can study what happened, and commit one hundred million dollars in compute to help the Hugging Face community build cyber defenses using the best open and closed models. He frames the incident as unprecedented and deserving an equally unprecedented, transparent response.",
-      "zh": "Hugging Face 首席执行官 Clément Delangue 就他所称的首次自主智能体网络攻击公开向 OpenAI 提出两项要求：完整公开失控智能体的运行轨迹供研究界共同分析，并承诺投入一亿美元算力，帮助 Hugging Face 社区结合最强的开源与闭源模型构建网络防御。他称此事件史无前例，理应获得同样前所未有且透明的回应。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vb16gj/inklingsmall_by_thinkingmachines/": {
+      "en": "Thinking Machines has released Inkling-Small, an open-weight model with 276 billion total parameters and 12 billion active parameters, supporting a one million token context window. Weights are available in NVFP4 format on Hugging Face, and Unsloth has published GGUF quantizations. Community testing confirms the Unsloth GGUF runs on CUDA with CPU offloading through a developmental llama.cpp branch, making the model accessible for local inference on mixed hardware setups.",
+      "zh": "Thinking Machines 发布开源模型 Inkling-Small，总参数 2760 亿、激活参数 120 亿，支持 100 万 token 上下文窗口。Hugging Face 上提供 NVFP4 权重，Unsloth 团队同步发布 GGUF 量化版本。社区实测 Unsloth GGUF 可通过 llama.cpp 开发分支在 CUDA 加 CPU 卸载配置下运行，为异构硬件本地推理提供便利。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v6pkji/karparthy_removed_anthropic_from_his_bio/": {
-      "en": "Andrej Karpathy, OpenAI co-founder and a prominent open-source AI advocate, appears to have removed Anthropic from his X bio only a few months after joining, prompting speculation that he has already left the company. The poster ties the possible departure to Anthropic's increasingly public opposition to open-weight and open-source models, while conceding the connection is speculation and the timing may simply be coincidental.",
-      "zh": "OpenAI 联合创始人、开源 AI 拥护者 Andrej Karpathy 加入 Anthropic 仅数月后，似乎已把 Anthropic 从其 X 简介中移除，引发他可能已经离职的猜测。发帖者把此举与 Anthropic 近期对开放权重与开源模型日益强硬的立场联系起来，但也承认这只是猜测，时间点可能纯属巧合。",
-      "title_en": "Andrej Karpathy appears to remove Anthropic from his social bio months after joining, fueling departure speculation",
-      "title_zh": "Andrej Karpathy 加入 Anthropic 数月后疑似将其从社交简介中移除，引发离职猜测"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vazdxp/lg_ai_research_releases_kexaone_20_750b_a37b/": {
+      "en": "LG AI Research has released K-EXAONE 2.0, a 750 billion parameter open-weight model developed under Phase 2 of Korea's Sovereign AI Foundation Model Project. Three times larger than its 236 billion parameter predecessor, it supports ten languages and ships under Apache 2.0. Reported benchmarks include 94.4 on OpenAI MRCR long context and 89.6 on Ko-LongBench, coding gains averaging 30 percent over version one, and 94.6 average on ROK-Fortress safety and Korean alignment tests.",
+      "zh": "LG AI Research 发布 K-EXAONE 2.0，总参数 7500 亿、激活 370 亿，为韩国主权 AI 基础模型项目第二阶段成果，规模是上代 2360 亿模型的三倍，Apache 2.0 授权，支持十种语言。官方基准显示长上下文 OpenAI MRCR 得分 94.4、Ko-LongBench 89.6，编码平均较上代提升 30%，安全与韩语对齐评测 ROK-Fortress 均分 94.6。",
+      "title_en": "LG AI Research releases K-EXAONE 2.0, a 750 billion parameter model with 37 billion active parameters",
+      "title_zh": "LG AI Research 发布 K-EXAONE 2.0：总参数 7500 亿、激活 370 亿"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v722bp/kimi_k3_gets_open_weighted_tomorrow/": {
-      "en": "The poster reports Kimi K3 is scheduled to be released with open weights tomorrow, framing it as a win for the open-source ecosystem even though the model is far too large for them or most hobbyists to run locally, even at a hundred-times-smaller scale. They say they are personally more excited about the new inference providers that will likely spin up around the release, opening cheaper hosted access for users without heavy hardware.",
-      "zh": "发帖者表示 Kimi K3 预计明天开放权重发布。虽然自己和大多数爱好者本地根本跑不动，即便缩小一百倍的版本也难，但仍视其为开源生态的胜利。相比模型本身，他更期待围绕此次发布涌现的新推理服务商，为没有重型硬件的用户提供更实惠的托管访问。",
-      "title_en": "Kimi K3 is expected to release with open weights tomorrow",
-      "title_zh": "Kimi K3 预计明日开放权重发布"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vapetj/glm_52_with_vision_on_hugging_face/": {
+      "en": "Baseten has published GLM-5.2-Vision on Hugging Face, produced by grafting the vision encoder from Kimi k2.6 onto the GLM 5.2 base model. Lack of vision was a common complaint when GLM 5.2 first shipped, so the community welcomes an open weight fix from an inference provider rather than the original lab. The release lands in NVFP4 quantization on Hugging Face; the poster has not personally tested output quality yet.",
+      "zh": "Baseten 在 Hugging Face 发布 GLM-5.2-Vision，将 Kimi k2.6 的视觉编码器嫁接到 GLM 5.2 基座之上。GLM 5.2 最初无视觉能力常被诟病，社区欢迎由推理服务商而非原厂发布的这一开源补充。权重以 NVFP4 量化形式提供，发帖者尚未亲自测试输出质量。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v6n33i/llamacpp_now_has_full_mcp_support/": {
-      "en": "After a long effort led by ngxson, llama.cpp now fully supports the Model Context Protocol across all transports, including stdio servers that previously required deeper integration. The llama-cli terminal client was refactored to talk through the server, so the existing native-tools server could pick up MCP. After merging the pull request, the WebUI becomes a full agentic chat where users can wire in a dedicated coding server like Serena to build a self-contained local-model coding agent.",
-      "zh": "在 ngxson 主导下，llama.cpp 现已全面支持 Model Context Protocol 的所有传输方式，包括此前需底层集成的标准输入输出服务器。llama-cli 被改为经由服务端调用，使原生工具服务器接入 MCP。合并该 pull request 后，其 WebUI 变成完整的智能体聊天界面，用户可插入 Serena 等编码服务器，构建完全依赖本地模型的自足编码智能体。",
-      "title_en": "llama.cpp gains full Model Context Protocol support across all transports, enabling agentic chat in its WebUI",
-      "title_zh": "llama.cpp 全面支持 Model Context Protocol 各类传输方式，WebUI 变身智能体聊天界面"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vasnys/turbofieldfare_opensource_engine_running_gemma_4/": {
+      "en": "Turbo-fieldfare is a custom Swift and Metal inference engine for M-series Macs that runs Gemma 4 26B, the A4B instruction tuned variant, in roughly 2 gigabytes of memory instead of the usual 14. Reported throughput is 5 to 6 tokens per second on an 8 gigabyte M2 MacBook Air and 31 to 35 tokens per second on an M5 MacBook Pro. It ships with an OpenAI compatible local server supporting streaming and tool calls.",
+      "zh": "Turbo-fieldfare 是一款面向 M 系列 Mac 的 Swift 与 Metal 自研推理引擎，可在约 2 GB 内存下运行 Gemma 4 26B（A4B 指令调优版），远低于常见的 14 GB。作者称 8 GB 内存 M2 MacBook Air 上可达每秒 5 到 6 token，M5 MacBook Pro 上达每秒 31 到 35 token，并附带兼容 OpenAI 接口的本地服务器，支持流式输出与工具调用。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v7d8px/harness_showdown_claude_code_vs_opencode_vs_pi/": {
-      "en": "The author benchmarked DeepSeek V4 Flash on the same coding workload through three harnesses — Claude Code via CLIProxyAPI, OpenCode, and Pi — and found the produced diffs were essentially identical while wall clock and token spend varied wildly. Claude Code took roughly four times longer than the fastest because it explored the codebase heavily. The takeaway: harnesses shape efficiency and tool-call patterns, not the final code quality, with Pi reasoning, OpenCode delegating, and Claude Code exploring.",
-      "zh": "作者在同一编码工作负载上，通过 Claude Code（经 CLIProxyAPI）、OpenCode 与 Pi 三种脚手架跑 DeepSeek V4 Flash，发现最终代码改动几乎一致，但耗时和 token 消耗差异悬殊。Claude Code 因偏爱大量探索代码库，耗时约为最快方案的四倍。结论是：脚手架影响的是效率与工具调用模式，而非最终代码质量——Pi 靠推理、OpenCode 靠委派、Claude Code 靠探索。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vaaqdl/quantizing_kimi_k3_28t_a50b_to_gguf_ourselves_q3/": {
+      "en": "The Atomic Chat team is producing dynamic GGUF quantizations of Kimi K3, a 2.8 trillion parameter mixture of experts model with 50 billion active parameters, using their own llama.cpp fork. The Q3_K_S build is complete and occupies about 1114 gibibytes on disk; Q1 and Q2 are in progress. Inference runs entirely from memory on a rented AMD EPYC 9554P box with 1.5 terabytes of DDR5 and no GPU, achieving 4.21 tokens per second at 512 token prompt processing.",
+      "zh": "Atomic Chat 团队用自家 llama.cpp 分支为 Kimi K3（2.8 万亿参数混合专家模型，激活 500 亿）自制动态 GGUF 量化。Q3_K_S 版本已完成，约占 1114 GiB 磁盘空间，Q1 与 Q2 仍在进行中。推理在无 GPU 的租赁 AMD EPYC 9554P 服务器上完全依赖 1.5 TB DDR5 内存，512 token 提示处理速度为每秒 4.21 token。",
+      "title_en": "Community produced GGUF quantization of Kimi K3 running on 1.5 terabytes of memory with no GPU",
+      "title_zh": "社区自制 Kimi K3 GGUF 量化：纯 CPU 加 1.5 TB 内存推理"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v783ii/worlds_first_underwhelming_amd_ryzen_ai_halo/": {
-      "en": "LTT Labs accidentally ended up with two AMD Ryzen AI Halo units when a Linux version arrived alongside the requested Windows one, and tried clustering them following AMD's official remote procedure call playbook. The writeup shares the exploration and results rather than firm conclusions: the two-node cluster underwhelmed and raised more questions than it answered. The team asks readers for ideas on how the setup could be improved and whether meaningful conclusions can be drawn.",
-      "zh": "LTT Labs 因阴差阳错手上多出一套 AMD Ryzen AI Halo，便按 AMD 官方远程过程调用手册尝试双机组集群。文章分享的是探索过程和初步结果，而非确定结论：双节点集群表现不尽如人意，留下的问题比答案还多。团队邀请读者提出改进思路，并共同讨论这些数据能否得出有意义的结论。",
-      "title_en": "LTT Labs clusters two AMD Ryzen AI Halo units following AMD's remote procedure call playbook, with underwhelming results",
-      "title_zh": "LTT Labs 依 AMD 远程过程调用手册组集两台 Ryzen AI Halo，结果不尽如人意"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vapbnl/benchmarked_mindcontrol_for_llamacpp/": {
+      "en": "Follow-up benchmarks for MindControl, a sampler level reasoning budget mechanism for llama.cpp that nudges the model with self-aware statements about its remaining tokens rather than hard truncation. Testing on Qwen3.6-27B across HumanEval+ and LiveCodeBench shows consistent token savings, with the most heavily guided configuration using less than half the tokens of naive cutoff for comparable accuracy. On HumanEval+ the most constrained setup scored a best-in-test 95.7 percent, suggesting reasoning budgets can curb overthinking on simple problems.",
+      "zh": "MindControl 后续基准测试。这项 llama.cpp 采样器级推理预算机制以自省式提示引导模型，替代硬性截断。在 Qwen3.6-27B 上跑 HumanEval+ 与 LiveCodeBench，token 消耗一致下降，最激进配置以不到裸截断一半的 token 达到相当准确度。HumanEval+ 中约束最强的方案更以 95.7% 拿下全场最高分，显示预算提示能抑制简单题的过度推理。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v6zksb/aisagegigachat31audio10ba18b_hugging_face/": {
-      "en": "GigaChat Audio 10B extends the GigaChat 3.1 Lightning text model with a Conformer speech encoder and a modality adapter that pipes audio embeddings into a Mixture of Experts decoder, so the model keeps the underlying text quality while gaining native speech understanding. It handles audio question answering, classification, temporal grounding with timestamped event descriptions, tool use, and text-only tasks. Temporal grounding is trained on the purpose-built TimeGround-1M dataset of long-form audio with time-aligned annotations.",
-      "zh": "GigaChat Audio 10B 在 GigaChat 3.1 Lightning 文本模型基础上，加装 Conformer 语音编码器和模态适配器，将音频嵌入送入 Mixture of Experts 解码器，既保留文本质量又获得原生语音理解能力。它支持音频问答、分类、带时间戳的时序定位、工具调用及纯文本任务。时序定位能力由专门构建、带时间对齐标注的长音频数据集 TimeGround-1M 训练而成。",
-      "title_en": "GigaChat Audio 10B pairs a Conformer speech encoder with a Mixture of Experts decoder for audio question answering and temporal grounding",
-      "title_zh": "GigaChat Audio 10B：Conformer 语音编码器搭配 Mixture of Experts 解码器，支持音频问答与时序定位"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v73ux4/23_gemma4e4b_models_compared_with_abliterlitics/": {
-      "en": "The team ran 23 Gemma 4 E4B fine-tunes and abliterations through their abliterlitics benchmark gauntlet. The most surgical variants — the heretic family and abliterix — came out on top, hitting ninety-five to one hundred percent attack success rate on HarmBench while preserving base capabilities. The most-downloaded model, OBLITERATUS with nearly eight hundred thousand downloads, is essentially broken: worst benchmarks, highest output distribution shift, and passing only because it is too damaged to refuse. Reasoning-trace distills hurt rather than helped.",
-      "zh": "团队将 23 个 Gemma 4 E4B 微调与去审查版本跑遍自制的 abliterlitics 基准。动刀最少的 heretic 系列和 abliterix 表现最佳，在 HarmBench 上攻击成功率达九成五至满分，且保留基础能力。下载量近八十万的 OBLITERATUS 实际上已损坏：基准最差、输出分布偏移最大，之所以不拒绝仅因模型崩坏。推理轨迹蒸馏微调不但无益，反而伤害了模型。",
-      "title_en": "Comparison of 23 Gemma 4 E4B abliterated variants finds the most downloaded model is broken and surgical edits win",
-      "title_zh": "23 个 Gemma 4 E4B 去审查版本对比：下载量最高的模型已损坏，改动最少的方案胜出"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1v6q6z5/16_bit_better_than_lower_quants_for_qwen3627b/": {
-      "en": "The poster is building a fairly complex C++ Windows MFC application on a rig with several 3090 GPUs, running Qwen3.6-27B at sixteen-bit precision with a 256K context window and Multi-Token Prediction. They find the sixteen-bit version produces markedly better code than lower quantizations, which get stuck on hard cases like managing designs with multiple threads. They stress it is not equal to Claude, but reliable enough for real work, while simpler web apps still get by on lower quants.",
-      "zh": "发帖者在多块 3090 组成的机器上开发一款较复杂的 C++ Windows MFC 应用，运行十六比特精度的 Qwen3.6-27B，配合 256K 上下文和多 token 预测。他发现十六比特版本代码质量明显优于低量化，后者在多线程设计等复杂场景常常卡壳。作者强调它仍不及 Claude，但足以承担实际工作；写简单网页应用则用低量化即可。",
-      "title_en": "Running Qwen 3.6 27B at sixteen bit precision produces noticeably better code than lower quantizations on complex C++ work",
-      "title_zh": "以十六比特精度运行 Qwen 3.6 27B，在复杂 C++ 工程上代码质量明显优于低量化"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vayzwm/nanbeige423b_im_not_impressed/": {
+      "en": "A hands-on review of Nanbeige 4.2 3B, whose benchmarks claimed to beat Qwen3.5 9B and Gemma4 12B. The reviewer found the looped architecture (each layer traversed twice) delivers the speed and context footprint of a 6 billion parameter model, with 128k context costing 5.2 gigabytes of KV cache. Its max thinking mode never stops reasoning, burning context on trivial tasks, and it flunked two straightforward brownfield coding tasks. Tool calling is the sole strong point.",
+      "zh": "Nanbeige 4.2 3B 实测评测。其官方基准声称压过 Qwen3.5 9B 与 Gemma4 12B。作者发现该模型采用循环架构（每层遍历两次），实际速度与上下文占用相当于 60 亿参数模型，128k 上下文 KV 缓存高达 5.2 GB。最高推理档位下永不停歇，简单任务也大量消耗上下文，两个直白的存量代码维护任务均以失败告终，唯一亮点是工具调用稳定。",
+      "title_en": "Hands-on review of Nanbeige 4.2 3B, an underwhelming looped small model",
+      "title_zh": "Nanbeige 4.2 3B 上手评测：循环架构小模型表现不佳"
     }
   }
 }

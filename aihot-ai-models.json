@@ -1,8 +1,98 @@
 {
-  "count": 11,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cms8rt1ml06j0roghw1n7a4bq",
+      "title": "MiniMax H3 发布：开源全能多模态生成模型，支持 2K 原生立体声视频",
+      "title_en": "MiniMax H3： An Open Model Breaking the Boundaries Between Tasks and Modalities",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "permalink": "https://aihot.virxact.com/items/cms8rt1ml06j0roghw1n7a4bq",
+      "source": "MiniMax：Blog（网页）",
+      "publishedAt": "2026-07-31T09:59:02.996Z",
+      "discoveredAt": "2026-07-31T09:59:02.996Z",
+      "summary": "MiniMax 正式推出全能多模态生成模型 H3，可联合理解文本、图像、视频和音频，生成最高 2K 分辨率、15 秒时长且带原生立体声的视频。H3 在指令跟随、文字与品牌呈现、V2V 动作迁移上表现突出，2K 下每秒价格低于主流模型三分之一，768p 下低于主流 720p 价格一半。官方计划近日开源模型权重，以支持开源社区并加速硬件兼容。",
+      "category": "ai-models",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8rt1ml06j0roghw1n7a4bq"
+      }
+    },
+    {
+      "id": "cms8rsusw06h8rogh8d81cpti",
+      "title": "DeepSeek V4 Flash 0731 发布，智能指数跃升 10 分",
+      "title_en": "DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis Intelligence Index， a 10-point jump over…",
+      "url": "https://x.com/ArtificialAnlys/status/2083123180869496865",
+      "permalink": "https://aihot.virxact.com/items/cms8rsusw06h8rogh8d81cpti",
+      "source": "X：Artificial Analysis (@ArtificialAnlys)",
+      "publishedAt": "2026-07-31T09:30:43.000Z",
+      "discoveredAt": "2026-07-31T09:58:59.071Z",
+      "summary": "DeepSeek V4 Flash 0731 在 Artificial Analysis 智能指数上得 50 分，较 4 月版提升 10 分，领先 V4 Pro 6 分，并进入智能与成本帕累托前沿。",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8rsusw06h8rogh8d81cpti"
+      }
+    },
+    {
+      "id": "cms7tgf3q03p5ropbe0xhilwo",
+      "title": "Inkling-Small 发布，276B 参数性能持平原版",
+      "title_en": "Today， we are releasing Inkling-Small. Inkling-Small achieves comparable performance to Inkling at …",
+      "url": "https://x.com/thinkymachines/status/2082885869426631032",
+      "permalink": "https://aihot.virxact.com/items/cms7tgf3q03p5ropbe0xhilwo",
+      "source": "X：Thinking Machines (@thinkymachines)",
+      "publishedAt": "2026-07-30T17:47:44.000Z",
+      "discoveredAt": "2026-07-30T17:57:32.378Z",
+      "summary": "今天，我们发布 Inkling-Small。\n\nInkling-Small 在仅为 Inkling 四分之一规模的情况下，实现了与之相当的性能。它拥有 276B 总参数，12B 激活参数。我们将开放完整权重。\n\nhttps://thinkingmachines.ai/news/inkling-small/\n\n现在即可在 Tinker 上对其进行微调，或在 Tinker Playground 中以文本、图像和音频形式与之对话。",
+      "category": "ai-models",
+      "score": 64,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms7tgf3q03p5ropbe0xhilwo"
+      }
+    },
+    {
+      "id": "cms8mb361000prof1z6fg37om",
+      "title": "DeepSeek-V4-Flash 正式版 API 上线公测",
+      "title_en": "DeepSeek-V4-Flash 更新",
+      "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-07-31",
+      "permalink": "https://aihot.virxact.com/items/cms8mb361000prof1z6fg37om",
+      "source": "DeepSeek：API 更新日志",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "discoveredAt": "2026-07-30T16:00:00.000Z",
+      "summary": "DeepSeek-V4-Flash 正式版 API 上线公测，模型名设为 deepseek-v4-flash 即可使用，调用方式不变。其 Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Toolathlon verified 70.3，DSBench-Hard 59.6，多项基准远超 V4-Pro-Preview。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8mb361000prof1z6fg37om"
+      }
+    },
+    {
+      "id": "cms8f7n9q0bezrot06im88lqu",
+      "title": "字节发布 Seedance 2.5：单次生成 30 秒视频，支持多模态参考与精准编辑",
+      "title_en": "一镜成片，随心参考|Seedance 2.5 正式发布",
+      "url": "https://seed.bytedance.com/zh/blog/%E4%B8%80%E9%95%9C%E6%88%90%E7%89%87-%E9%9A%8F%E5%BF%83%E5%8F%82%E8%80%83-seedance-2-5-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83",
+      "permalink": "https://aihot.virxact.com/items/cms8f7n9q0bezrot06im88lqu",
+      "source": "字节 Seed：Research Feed（网页内嵌数据）",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "discoveredAt": "2026-07-31T04:06:31.879Z",
+      "summary": "字节跳动今日正式发布新一代视频创作模型 Seedance 2.5，单次视频生成时长从 15 秒提升至 30 秒，并支持多轮延长，可产出数分钟连贯内容。模型支持单次输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，并升级白模参考、运动参考及绿幕编辑、时间戳精准编辑等能力。Seedance 2.5 已陆续上线即梦 AI、豆包专业版等平台，API 服务近期将上线火山方舟。",
+      "category": "ai-models",
+      "score": 80,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms8f7n9q0bezrot06im88lqu"
+      }
+    },
     {
       "id": "cms7o3b8o0nt9ro2ery7x50bb",
       "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
@@ -73,24 +163,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms6arrcb00rerotztt8cp1mv"
-      }
-    },
-    {
-      "id": "cms6i9q2n044erohzw2w8750m",
-      "title": "GPT-5.6 如何融合前沿智能与效率",
-      "title_en": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
-      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-      "permalink": "https://aihot.virxact.com/items/cms6i9q2n044erohzw2w8750m",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-07-29T00:00:00.000Z",
-      "discoveredAt": "2026-07-29T19:56:37.911Z",
-      "summary": "OpenAI 发布 GPT-5.6 模型家族，旗舰款 Sol 开启最大推理时在 Artificial Analysis Coding Agent Index 上超越 Claude Fable 5，成本不到后者一半。Terra 智能持平 GPT-5.5 但价格减半，Luna 定价比 Sol 低 80%。该系列通过负载均衡、推测解码等全栈优化实现更高 token 效率。",
-      "category": "ai-models",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6i9q2n044erohzw2w8750m"
       }
     },
     {
@@ -166,6 +238,24 @@
       }
     },
     {
+      "id": "cms3dxit00betro3fiwkotg0j",
+      "title": "Kimi K3 开源：2.8T MoE 模型与技术报告",
+      "title_en": "Releasing the model weights and technical report of Kimi K3. Kimi K3 is our most capable model： a 2…",
+      "url": "https://x.com/Kimi_Moonshot/status/2081760186235289764",
+      "permalink": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j",
+      "source": "X：Kimi.ai (@Kimi_Moonshot)",
+      "publishedAt": "2026-07-27T15:14:40.000Z",
+      "discoveredAt": "2026-07-27T15:31:51.181Z",
+      "summary": "Kimi 发布其最强模型 Kimi K3，这是一个 2.8T 参数的 MoE 模型，具备原生视觉理解和 1M token 上下文窗口。新架构实现了每单位计算 2.5 倍的智能提升。除模型权重外，Kimi 还开源了高性能注意力内核、MoE 通信库及大规模智能体运行环境基础设施。",
+      "category": "ai-models",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j"
+      }
+    },
+    {
       "id": "cmrzi9yew001arop9eruk86n7",
       "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
       "title_en": "Version 8.2",
@@ -181,24 +271,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmrzi9yew001arop9eruk86n7"
-      }
-    },
-    {
-      "id": "cmrywwsva05zgrolgrh7uc4ls",
-      "title": "FLUX 3 x mimic：新一代视频动作模型",
-      "title_en": "Flux 3 X Mimic：新一代视频动作模型",
-      "url": "https://bfl.ai/blog/flux-3-mimic",
-      "permalink": "https://aihot.virxact.com/items/cmrywwsva05zgrolgrh7uc4ls",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-24T11:55:45.885Z",
-      "discoveredAt": "2026-07-24T12:24:18.584Z",
-      "summary": "Black Forest Labs 发布多模态基础模型 FLUX 3，联合训练图像、视频和音频，其中视频预测占训练算力的 95% 以上。该模型与机器人公司 mimic 合作推出 FLUX-mimic，已在奥迪生产线上测试部署。加入动作预测后，视频生成质量最初下降最多 10%，但经 3500 步训练后恢复原有水平。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrywwsva05zgrolgrh7uc4ls"
       }
     }
   ]
