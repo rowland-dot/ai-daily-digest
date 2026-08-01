@@ -1,39 +1,53 @@
 {
-  "generated_at": "2026-07-30T21:49:42Z",
+  "generated_at": "2026-08-01T21:35:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vb16gj/inklingsmall_by_thinkingmachines/": {
-      "en": "Thinking Machines has released Inkling-Small, an open-weight model with 276 billion total parameters and 12 billion active parameters, supporting a one million token context window. Weights are available in NVFP4 format on Hugging Face, and Unsloth has published GGUF quantizations. Community testing confirms the Unsloth GGUF runs on CUDA with CPU offloading through a developmental llama.cpp branch, making the model accessible for local inference on mixed hardware setups.",
-      "zh": "Thinking Machines 发布开源模型 Inkling-Small，总参数 2760 亿、激活参数 120 亿，支持 100 万 token 上下文窗口。Hugging Face 上提供 NVFP4 权重，Unsloth 团队同步发布 GGUF 量化版本。社区实测 Unsloth GGUF 可通过 llama.cpp 开发分支在 CUDA 加 CPU 卸载配置下运行，为异构硬件本地推理提供便利。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vchoua/deepseekv4flash0731_models_you_can_run_locally/": {
+      "en": "The post highlights that DeepSeek V4 Flash 0731, an open-weight model that can be run locally, reportedly scores 50 on an intelligence index, only one point below the 51 that was the top frontier score back on March 6, 2026. The author frames this as a striking sign that locally runnable weights have effectively caught up to the closed frontier from just months ago.",
+      "zh": "帖子指出,可在本地运行的开源权重 DeepSeek V4 Flash 0731 在某项智能指数上得到 50 分,而 2026 年 3 月 6 日前沿模型的最高分只有 51 分,仅相差一分。作者认为这意味着本地可运行的权重已基本追平几个月前的闭源前沿水平,是一个显著信号。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vazdxp/lg_ai_research_releases_kexaone_20_750b_a37b/": {
-      "en": "LG AI Research has released K-EXAONE 2.0, a 750 billion parameter open-weight model developed under Phase 2 of Korea's Sovereign AI Foundation Model Project. Three times larger than its 236 billion parameter predecessor, it supports ten languages and ships under Apache 2.0. Reported benchmarks include 94.4 on OpenAI MRCR long context and 89.6 on Ko-LongBench, coding gains averaging 30 percent over version one, and 94.6 average on ROK-Fortress safety and Korean alignment tests.",
-      "zh": "LG AI Research 发布 K-EXAONE 2.0，总参数 7500 亿、激活 370 亿，为韩国主权 AI 基础模型项目第二阶段成果，规模是上代 2360 亿模型的三倍，Apache 2.0 授权，支持十种语言。官方基准显示长上下文 OpenAI MRCR 得分 94.4、Ko-LongBench 89.6，编码平均较上代提升 30%，安全与韩语对齐评测 ROK-Fortress 均分 94.6。",
-      "title_en": "LG AI Research releases K-EXAONE 2.0, a 750 billion parameter model with 37 billion active parameters",
-      "title_zh": "LG AI Research 发布 K-EXAONE 2.0：总参数 7500 亿、激活 370 亿"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vc4041/deepseek_v4_flash_is_now_2_open_weight_model_to/": {
+      "en": "The author reports that DeepSeek's new V4 Flash model has arrived at roughly the number two spot among open-weight models behind Kimi K3, but at pricing of 9 cents per 1 million input tokens and 18 cents per 1 million output tokens, which they estimate is more than 50 times cheaper. Early hands-on impressions in coding and reasoning chats are described as unexpectedly strong.",
+      "zh": "作者称 DeepSeek 新推出的 V4 Flash 模型在开源权重中大致排名第二,仅次于 Kimi K3,但价格仅为每 100 万输入 tokens 9 美分、每 100 万输出 tokens 18 美分,估计便宜超过 50 倍。初步的编码与推理对话体验意外地出色。",
+      "title_en": "DeepSeek V4 Flash climbs to the second best open weight model behind Kimi K3 and is more than 50 times cheaper",
+      "title_zh": "DeepSeek V4 Flash 升至开源权重第二,仅次于 Kimi K3,而且价格便宜 50 倍以上"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vapetj/glm_52_with_vision_on_hugging_face/": {
-      "en": "Baseten has published GLM-5.2-Vision on Hugging Face, produced by grafting the vision encoder from Kimi k2.6 onto the GLM 5.2 base model. Lack of vision was a common complaint when GLM 5.2 first shipped, so the community welcomes an open weight fix from an inference provider rather than the original lab. The release lands in NVFP4 quantization on Hugging Face; the poster has not personally tested output quality yet.",
-      "zh": "Baseten 在 Hugging Face 发布 GLM-5.2-Vision，将 Kimi k2.6 的视觉编码器嫁接到 GLM 5.2 基座之上。GLM 5.2 最初无视觉能力常被诟病，社区欢迎由推理服务商而非原厂发布的这一开源补充。权重以 NVFP4 量化形式提供，发帖者尚未亲自测试输出质量。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vc6xbu/deepseek_v4_flash_for_ds4_dwarfstar_gguf_w_dspark/": {
+      "en": "An enthusiast of the DS4 DwarfStar inference engine describes quantizing the new DeepSeek V4 Flash 0731 checkpoint into GGUF form along with a matching DSpark Multi-Token Prediction head, since the existing Unsloth GGUFs run too slowly on their setup. They ask CUDA and ROCm users for decode and prefill benchmarks, note that antirez has since posted official quants, and plan more Q2 and Q4 variants plus a steering based abliteration vector.",
+      "zh": "一位 DS4 DwarfStar 推理引擎用户将新的 DeepSeek V4 Flash 0731 检查点量化为 GGUF,并附带匹配的 DSpark 多 token 预测头,因为现有的 Unsloth GGUF 在其设备上运行过慢。作者征集 CUDA 与 ROCm 用户的解码及预填充速度反馈,并提到 antirez 已发布官方量化,自己另计划推出更多量化变体和方向去审查向量。",
+      "title_en": "Custom GGUF quantization of DeepSeek V4 Flash 0731 for the DS4 DwarfStar engine with a matching DSpark Multi-Token Prediction head",
+      "title_zh": "为 DS4 DwarfStar 推理引擎打造的 DeepSeek V4 Flash 0731 自定义 GGUF 量化,并附匹配的 DSpark 多 token 预测头"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vasnys/turbofieldfare_opensource_engine_running_gemma_4/": {
-      "en": "Turbo-fieldfare is a custom Swift and Metal inference engine for M-series Macs that runs Gemma 4 26B, the A4B instruction tuned variant, in roughly 2 gigabytes of memory instead of the usual 14. Reported throughput is 5 to 6 tokens per second on an 8 gigabyte M2 MacBook Air and 31 to 35 tokens per second on an M5 MacBook Pro. It ships with an OpenAI compatible local server supporting streaming and tool calls.",
-      "zh": "Turbo-fieldfare 是一款面向 M 系列 Mac 的 Swift 与 Metal 自研推理引擎，可在约 2 GB 内存下运行 Gemma 4 26B（A4B 指令调优版），远低于常见的 14 GB。作者称 8 GB 内存 M2 MacBook Air 上可达每秒 5 到 6 token，M5 MacBook Pro 上达每秒 31 到 35 token，并附带兼容 OpenAI 接口的本地服务器，支持流式输出与工具调用。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vcn9uw/new_official_weights_for_laguna_s_21_fp8_nvfp4/": {
+      "en": "Poolside has refreshed the official FP8 and NVFP4 checkpoints for its Laguna S 2.1 coding model, bumping the default context window up to 1 million tokens and updating the shipped configs. The poster hopes this release also fixes an intermittent looping issue that had been the main frustration in an otherwise strong development workflow.",
+      "zh": "Poolside 更新了其 Laguna S 2.1 编码模型的官方 FP8 与 NVFP4 检查点,将默认上下文窗口提升到 100 万 tokens,同时更新了配套配置。发帖者希望这次发布也能修复偶发的循环问题,该问题是他日常开发流程中原本相当好用的模型上唯一的痛点。",
+      "title_en": "New official Laguna S 2.1 checkpoints released in the FP8 and NVFP4 quantization formats with a 1 million token context",
+      "title_zh": "Laguna S 2.1 新的官方 FP8 与 NVFP4 量化检查点发布,原生上下文扩至 100 万 tokens"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vaaqdl/quantizing_kimi_k3_28t_a50b_to_gguf_ourselves_q3/": {
-      "en": "The Atomic Chat team is producing dynamic GGUF quantizations of Kimi K3, a 2.8 trillion parameter mixture of experts model with 50 billion active parameters, using their own llama.cpp fork. The Q3_K_S build is complete and occupies about 1114 gibibytes on disk; Q1 and Q2 are in progress. Inference runs entirely from memory on a rented AMD EPYC 9554P box with 1.5 terabytes of DDR5 and no GPU, achieving 4.21 tokens per second at 512 token prompt processing.",
-      "zh": "Atomic Chat 团队用自家 llama.cpp 分支为 Kimi K3（2.8 万亿参数混合专家模型，激活 500 亿）自制动态 GGUF 量化。Q3_K_S 版本已完成，约占 1114 GiB 磁盘空间，Q1 与 Q2 仍在进行中。推理在无 GPU 的租赁 AMD EPYC 9554P 服务器上完全依赖 1.5 TB DDR5 内存，512 token 提示处理速度为每秒 4.21 token。",
-      "title_en": "Community produced GGUF quantization of Kimi K3 running on 1.5 terabytes of memory with no GPU",
-      "title_zh": "社区自制 Kimi K3 GGUF 量化：纯 CPU 加 1.5 TB 内存推理"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vckcue/ds4_flash_0731_acquarium_panel_failure_q3_k_xl/": {
+      "en": "The poster benchmarks DeepSeek V4 Flash 0731 in the Q3_K_XL Unsloth quantization on a mixed RTX 6000 and W7800 rig, feeding it a demanding single file HTML request that must simulate a cracked glass aquarium with water physics, floating debris, fish, and interactive crack placement. Around fifteen thousand prompt tokens and twenty one thousand generated tokens, the run averages twenty seven tokens per second, which the author calls very good and cheaper than Kimi K3 or GLM 5.2.",
+      "zh": "发帖者用 DeepSeek V4 Flash 0731 的 Q3_K_XL Unsloth 量化在 RTX 6000 与 W7800 混合显卡上做压力测试,让模型用单个 HTML 文件模拟带裂缝的玻璃鱼缸,包含水流物理、漂浮物、鱼群与可交互裂缝位置。约 1.5 万提示 tokens 与 2.1 万生成 tokens,平均每秒 27 tokens,作者认为效果不错且比 Kimi K3、GLM 5.2 更便宜。",
+      "title_en": "DeepSeek V4 Flash 0731 takes on a cracked aquarium physics simulation prompt at Q3_K_XL Unsloth quantization",
+      "title_zh": "DeepSeek V4 Flash 0731 在 Q3_K_XL Unsloth 量化下挑战破裂鱼缸物理模拟提示"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vapbnl/benchmarked_mindcontrol_for_llamacpp/": {
-      "en": "Follow-up benchmarks for MindControl, a sampler level reasoning budget mechanism for llama.cpp that nudges the model with self-aware statements about its remaining tokens rather than hard truncation. Testing on Qwen3.6-27B across HumanEval+ and LiveCodeBench shows consistent token savings, with the most heavily guided configuration using less than half the tokens of naive cutoff for comparable accuracy. On HumanEval+ the most constrained setup scored a best-in-test 95.7 percent, suggesting reasoning budgets can curb overthinking on simple problems.",
-      "zh": "MindControl 后续基准测试。这项 llama.cpp 采样器级推理预算机制以自省式提示引导模型，替代硬性截断。在 Qwen3.6-27B 上跑 HumanEval+ 与 LiveCodeBench，token 消耗一致下降，最激进配置以不到裸截断一半的 token 达到相当准确度。HumanEval+ 中约束最强的方案更以 95.7% 拿下全场最高分，显示预算提示能抑制简单题的过度推理。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vc8lpl/audiocpp_release_05_dramabox_expressive_tts/": {
+      "en": "Version 0.5 of audio.cpp lands with DramaBox, a prompt directed voice acting model built on the LTX-2.3 audio architecture that can be steered by written stage directions covering emotion, delivery, laughs, sighs, and pauses. Also new are Confucius4 cross lingual voice transfer, RVC voice conversion, BS-RoFormer vocal separation, GLM-TTS, Kroko ASR, Parakeet-TDT, Inflect Micro v2, and Fun-ASR-Nano, along with early HIP and ROCm support for AMD GPUs and faster Metal on Apple Silicon.",
+      "zh": "audio.cpp 0.5 发布,重点新增 DramaBox:一个基于 LTX-2.3 音频架构的提示驱动配音模型,可通过文字舞台指令控制情绪、语气、笑声、叹息与停顿。此外还引入 Confucius4 跨语种音色迁移、RVC 变声、BS-RoFormer 人声分离、GLM-TTS、Kroko ASR 等多个新模型,并带来面向 AMD 显卡的早期 HIP 与 ROCm 支持。",
+      "title_en": "audio.cpp 0.5 released with the DramaBox expressive text to speech model, Confucius4 cross lingual voice transfer, and seven more audio models plus AMD GPU support",
+      "title_zh": "audio.cpp 0.5 发布,新增 DramaBox 情绪文本转语音、Confucius4 跨语种音色迁移、七款音频模型及 AMD 显卡支持"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vayzwm/nanbeige423b_im_not_impressed/": {
-      "en": "A hands-on review of Nanbeige 4.2 3B, whose benchmarks claimed to beat Qwen3.5 9B and Gemma4 12B. The reviewer found the looped architecture (each layer traversed twice) delivers the speed and context footprint of a 6 billion parameter model, with 128k context costing 5.2 gigabytes of KV cache. Its max thinking mode never stops reasoning, burning context on trivial tasks, and it flunked two straightforward brownfield coding tasks. Tool calling is the sole strong point.",
-      "zh": "Nanbeige 4.2 3B 实测评测。其官方基准声称压过 Qwen3.5 9B 与 Gemma4 12B。作者发现该模型采用循环架构（每层遍历两次），实际速度与上下文占用相当于 60 亿参数模型，128k 上下文 KV 缓存高达 5.2 GB。最高推理档位下永不停歇，简单任务也大量消耗上下文，两个直白的存量代码维护任务均以失败告终，唯一亮点是工具调用稳定。",
-      "title_en": "Hands-on review of Nanbeige 4.2 3B, an underwhelming looped small model",
-      "title_zh": "Nanbeige 4.2 3B 上手评测：循环架构小模型表现不佳"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vct09w/deepseek_v4_flash_0731_still_not_holding_up/": {
+      "en": "Running DeepSeek V4 Flash 0731 locally at full precision, the author says the release still shares its predecessor's core flaw: it does not reliably follow rules, prompts, or skills, no matter whether written in first person, second person, Chinese, or English. They argue this instruction following gap is why the model is not truly frontier and only benchmark strong, and say they are returning to Qwen's 27 billion parameter model for their coding work.",
+      "zh": "作者在本地以全精度运行 DeepSeek V4 Flash 0731,认为新版本仍然沿袭了此前预览版的核心毛病:无论以第一人称还是第二人称、中文还是英文写规则、提示或技能指令,模型都不稳定遵循。作者认为这一指令跟随的短板决定了它算不上真正的前沿,只是在跑分上强,自己转回 270 亿参数的 Qwen 模型继续写代码。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vc4e00/6082_accuracy_swing_on_4b_model_classification/": {
+      "en": "A pre-registered ablation swings a 4 billion parameter model's accuracy on a Kubernetes issue triage task from 60 to 82 percent, purely by varying harness design against frozen weights and a fixed 250 issue gold corpus. The biggest gains come from putting explicit rules and the task itself ahead of reference material, while extra reasoning turns, context clearing, and fresh session handoffs each cost meaningful points. Corpus, scorer, and every run manifest are published.",
+      "zh": "一项预注册消融实验发现,同一个 40 亿参数模型在同一 Kubernetes 议题分诊任务上的准确率可从 60% 跳到 82%,唯一的变量只是提示与工作流的设计。最大的增益来自在提示里放明确规则,以及把任务本身放在参考资料之前;而多加一步推理、清空上下文、跨会话交接分别都会拉低几到十几个点。语料、评分器与所有运行清单均已公开。",
+      "title_en": "A 22 point accuracy swing on a 4 billion parameter model classification task where the only variable was the harness design",
+      "title_zh": "在 40 亿参数模型的分类任务上,仅改变提示与工作流设计就带来 22 个百分点的准确率波动"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vcpv6u/longcatflashlitesparse_is_now_available_for/": {
+      "en": "The LongCat team has uploaded weights for LongCat Flash Lite Sparse, a variant of LongCat Flash Lite that swaps in LongCat Sparse Attention in place of the earlier dense Multi-Head Latent Attention, and natively extends the context length from 256 thousand tokens up to 1 million tokens. The release note is brief, with the poster observing that the checkpoint appeared on the repository roughly an hour before the announcement.",
+      "zh": "LongCat 团队已在仓库上传 LongCat Flash Lite Sparse 权重。该模型是 LongCat Flash Lite 的变体,把原本的稠密多头潜在注意力替换为 LongCat 稀疏注意力,原生上下文长度也从 25.6 万 tokens 扩展到 100 万 tokens。发帖者说明简短,提到检查点是在发布前约一小时才刚出现在仓库中。"
     }
   }
 }
