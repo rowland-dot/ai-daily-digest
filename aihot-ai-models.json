@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cms9hiyz80fdvro9kepvm1qvk",
+      "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
+      "title_en": "DeepSeek V4 Flash 0731 is now open weights！ @deepseek_ai has just released the weights for its new …",
+      "url": "https://x.com/ArtificialAnlys/status/2083306229074739285",
+      "permalink": "https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk",
+      "source": "X：Artificial Analysis (@ArtificialAnlys)",
+      "publishedAt": "2026-07-31T21:38:05.000Z",
+      "discoveredAt": "2026-07-31T21:59:08.343Z",
+      "summary": "DeepSeek 发布开源模型 DeepSeek V4 Flash 0731，在 Artificial Analysis 智能指数上得分 50，位列开源模型前三。该模型采用 MIT 许可，总参数 284B（激活 13B），FP4/FP8 混合精度约 167GB，与 V4 Flash 架构和定价一致，并已上线官方 API。",
+      "category": "ai-models",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk"
+      }
+    },
+    {
       "id": "cms8rt1ml06j0roghw1n7a4bq",
       "title": "MiniMax H3 发布：开源全能多模态生成模型，支持 2K 原生立体声视频",
       "title_en": "MiniMax H3： An Open Model Breaking the Boundaries Between Tasks and Modalities",
@@ -22,21 +40,21 @@
       }
     },
     {
-      "id": "cms8rsusw06h8rogh8d81cpti",
-      "title": "DeepSeek V4 Flash 0731 发布，智能指数跃升 10 分",
-      "title_en": "DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis Intelligence Index， a 10-point jump over…",
-      "url": "https://x.com/ArtificialAnlys/status/2083123180869496865",
-      "permalink": "https://aihot.virxact.com/items/cms8rsusw06h8rogh8d81cpti",
-      "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "publishedAt": "2026-07-31T09:30:43.000Z",
-      "discoveredAt": "2026-07-31T09:58:59.071Z",
-      "summary": "DeepSeek V4 Flash 0731 在 Artificial Analysis 智能指数上得 50 分，较 4 月版提升 10 分，领先 V4 Pro 6 分，并进入智能与成本帕累托前沿。",
+      "id": "cms8ld9380i7arot0lyxt8h3t",
+      "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
+      "title_en": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta！ 🔷 We've massively upgraded its Agent…",
+      "url": "https://x.com/deepseek_ai/status/2083084415157022911",
+      "permalink": "https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t",
+      "source": "X：DeepSeek (@deepseek_ai)",
+      "publishedAt": "2026-07-31T06:56:41.000Z",
+      "discoveredAt": "2026-07-31T06:58:53.583Z",
+      "summary": "🚀 DeepSeek-V4-Flash 官方 API 现已上线公测！\n\n🔷 我们大幅升级了其 Agent 能力--基准测试分数现已远超 V4-Pro-Preview。查看下方巨大的性能飞跃！👇 🔷 官方 V4-Flash 现已原生支持 Responses API 格式，并已完全适配 Codex！\n\n查看我们官方 API 文档中的配置详情：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
       "category": "ai-models",
-      "score": 76,
+      "score": 62,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8rsusw06h8rogh8d81cpti"
+        "canonical": "https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t"
       }
     },
     {
@@ -253,24 +271,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j"
-      }
-    },
-    {
-      "id": "cmrzi9yew001arop9eruk86n7",
-      "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
-      "title_en": "Version 8.2",
-      "url": "https://updates.midjourney.com/version-8-2",
-      "permalink": "https://aihot.virxact.com/items/cmrzi9yew001arop9eruk86n7",
-      "source": "Midjourney：Updates（RSS）",
-      "publishedAt": "2026-07-24T22:18:48.000Z",
-      "discoveredAt": "2026-07-24T22:22:25.866Z",
-      "summary": "Midjourney 今日推出 V8.2 图像模型，重点提升美学质量、图像创意与个性化表现。低质量图像出现频率将显著降低，个性化功能能更精准理解用户审美偏好。V8.2 的个性化配置文件拥有更大、更优的图像选择池，建议用户尝试新旧配置文件体验最新版本。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrzi9yew001arop9eruk86n7"
       }
     }
   ]

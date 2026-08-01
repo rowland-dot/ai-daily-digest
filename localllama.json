@@ -1,138 +1,138 @@
 {
-  "fetched_at": "2026-07-31T21:39:56.330Z",
+  "fetched_at": "2026-08-01T21:26:18.487Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
-      "title": "Anthropic “our models hacked three different external companies, months before OpenAI’s model was able to do the same\"",
-      "author": "Separate-Forever-447",
-      "updated": "2026-07-31T01:29:53+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbcmtn/anthropic_our_models_hacked_three_different/",
+      "title": "DeepSeek-V4-Flash-0731: Models you can run locally now have the intelligence score of the top frontier model from March 2026",
+      "author": "joorklee",
+      "updated": "2026-08-01T08:27:40+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vchoua/deepseekv4flash0731_models_you_can_run_locally/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "\"Company says it discovered unauthorized access during ‘proactive review’ after rival OpenAI revealed rogue agent… its AI Claude model hacked ⁠systems of ⁠three ​organizations during testing, days after rival OpenAI ⁠revealed a rogue agent had gone on a days-long ⁠hacking spree at AI ​firm Hugging ‌Face… The earliest cases dated back to April and ‌occurred in evaluation environments that lacked wh",
-      "body": "\"Anthropic’s AI Claude escaped testing environment and hacked organizations\"\n\n\"Company says it discovered unauthorized access during ‘proactive review’ after rival OpenAI revealed rogue agent… its AI Claude model hacked ⁠systems of ⁠three ​organizations during testing, days after rival OpenAI ⁠revealed a rogue agent had gone on a days-long ⁠hacking spree at AI ​firm Hugging ‌Face… The earliest cases dated back to April and ‌occurred in evaluation environments that lacked what the company described as standard safeguards.\"\n\nsubmitted by /"
+      "summary": "March 6th, 2026 the highest intelligence index score was 51 for frontier models. deepseek-ai/DeepSeek-V4-Flash-0731 that has an intelligence score of 50.",
+      "body": "March 6th, 2026 the highest intelligence index score was 51 for frontier models. deepseek-ai/DeepSeek-V4-Flash-0731 that has an intelligence score of 50. If these benchmarks are accurate, models available to run locally on submitted by /"
     },
     {
-      "title": "Minimax-H3 video model released, open weights coming in the next few days",
-      "author": "JGByvygyrfg",
-      "updated": "2026-07-31T02:22:26+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbdsmz/minimaxh3_video_model_released_open_weights/",
+      "title": "Me: Worn out from all the new model drops this week, but still hyped for all the great new releases.",
+      "author": "Porespellar",
+      "updated": "2026-08-01T02:29:43+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vcav6l/me_worn_out_from_all_the_new_model_drops_this/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Today, we're launching MiniMax H3, a general-purpose multimodal generation model. H3 understands unified context across text, images, video, and audio, generating video with native stereo sound, up to 15 seconds at 2K resolution.",
-      "body": "https://x.com/MiniMax_AI/status/2083006198828417501?s=20\n\nQuote from their article:\n\nToday, we're launching MiniMax H3, a general-purpose multimodal generation model. H3 understands unified context across text, images, video, and audio, generating video with native stereo sound, up to 15 seconds at 2K resolution.\n\nEarly testing shows H3 is ready for commercial content creation across a wide range of use cases, excelling at instruction following, accurate text and brand rendering, and V2V motion transfer. With precise, controllable multimodal generation and editing, H3 is built for advertising, branding, e-commerce, product design, UI/UX, gaming, and more.\n\nPowered by technologies including Contextual Omni Representation, H3-VAE, H3-Omni Transformer, and In-Context Regeneration, H3 delivers industry-leading price-performance. We offer 2K resolution by default. At 2K, H3's per-second price is less than a third of mainstream models, and at 768p, it's less than half the price of mainstream models' 720p.\n\nClosed-source models have long dominated video generation, with slower iteration and a less open ecosystem than fields like large language models. To support the open-source community, accelerate compatibility with a broader range of AI hardware, and make it easier for users to build their own customized versions, we plan to open up the model weights in the coming days, subject to applicable laws and regulations. Hardware compatibility has been a key consideration since the earliest stages of H3's design.\n\nsubmitted by /"
+      "summary": "I mean seriously y’all, what an amazing past few days. So many awesome new models to test out in the mid range model sizes.",
+      "body": "I mean seriously y’all, what an amazing past few days. So many awesome new models to test out in the mid range model sizes.\n\nEDIT: Added some of the more interesting models that came out over the last week and a half\n\n- Thinking Machines Inkling Small\n\n- DeepSeek v4 Flash 0731\n\n- Poolside Laguna\n\n- Upstage Solar\n\n- Microsoft Mage VL\n\n- LG ExaOne\n\n- SenseNova u1.5\n\n- BottleCap - ThinkingCap\n\n- Kimi K3\n\nsubmitted by /"
     },
     {
-      "title": "What actually happened to the whole Openclaw frenzy?",
-      "author": "Mr_Moonsilver",
-      "updated": "2026-07-30T22:26:47+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vb8d2v/what_actually_happened_to_the_whole_openclaw/",
+      "title": "Deepseek V4 Flash is now ~#2 open weight model to Kimi K3 and >50x cheaper",
+      "author": "davidthesong",
+      "updated": "2026-07-31T21:32:17+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vc4041/deepseek_v4_flash_is_now_2_open_weight_model_to/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "A while back you couldn't open reddit or youtube without sifting through tons of Openclaw content. And it wasn't just the internet that blew up, I remember seeing images from China where crowds would gather in the streets to get their instance set up by their local homelabber. Heck, even Nvidia jumped on the bandwaggon releasing some sort of enterprise version of it.",
-      "body": "A while back you couldn't open reddit or youtube without sifting through tons of Openclaw content.\n\nAnd it wasn't just the internet that blew up, I remember seeing images from China where crowds would gather in the streets to get their instance set up by their local homelabber. Heck, even Nvidia jumped on the bandwaggon releasing some sort of enterprise version of it. And now, a few weeks later... radiosilence? What happened?\n\nI don't believe the AI-Cabal psyops story (e.g. the github stars conspiracy), nor that it was a bad idea or poorly executed (Hermes Agent was the real implementation) and since I never got around to install it myself, I'm wondering if people are still using it, if the hype materialized into something durable or if the thing has completely disappeared? And if it has disappeared, why that?\n\nIirc the feeling conveyed when it first came out was: it's finally that magic AI assistant that truly does all the work for you. And it was the prospect to finally get out of a boring job because hey, you got this magic tool now that will slave away for you. And if that was the promise, and if it didn't materialize, why didn't it deliver?\n\nsubmitted by /"
+      "summary": "Deepseek's new flash model is unexpectedly cheap and high-performing across useful benchmarks. It's priced at $0. 09 / $0. 18 per 1M. Truly \"intelligence too cheap to meter\". Seems to work pretty well on coding, reasoning chat topics for me. How's it holding up for you all in your testing and work?",
+      "body": "50x cheaper\" title=\"Deepseek V4 Flash is now ~#2 open weight model to Kimi K3 and >50x cheaper\" />\n\nhttps://preview.redd.it/h7zv5tb3tmgh1.png?width=2854&format=png&auto=webp&s=507380e8f862c18f10f7c5c84da9e8d1c59139b0\n\nDeepseek's new flash model is unexpectedly cheap and high-performing across useful benchmarks. It's priced at $0.09 / $0.18 per 1M. Truly \"intelligence too cheap to meter\".\n\nSeems to work pretty well on coding, reasoning chat topics for me. How's it holding up for you all in your testing and work?\n\nsubmitted by /"
     },
     {
-      "title": "Inkling-Small-276B-12B, effort \"max\" VS Qwen3.6-27B",
-      "author": "lilian_moraru",
-      "updated": "2026-07-30T23:58:04+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbajj8/inklingsmall276b12b_effort_max_vs_qwen3627b/",
+      "title": "DeepSeek v4 Flash for DS4 (DwarfStar) GGUF w/ DSpark MTP Head",
+      "author": "returnity",
+      "updated": "2026-07-31T23:31:15+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vc6xbu/deepseek_v4_flash_for_ds4_dwarfstar_gguf_w_dspark/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "After it finished, it checked that all the classes are there, critical functions, etc... Next checked again if all HTML tags are opened/closed correctly and all the JavaScript parenthesis and brackets are opened/closed correctly as well.",
-      "body": "I saw 's 1-bit Kimi K3 post: https://huggingface.co/unsloth/Kimi-K3-GGUF/discussions/12#6a6a4a90ec74ef13d85d7cf6 and decided to test Inkling-Small and Qwen3.6-27B myself, based on the full shared prompt: https://huggingface.co/unsloth/Kimi-K3-GGUF/discussions/12#6a6aba4da9b88c3996c80fa6\n\nInkling-Small-276B-12B, UD-Q2_K_XL, effort \"max\"(above \"xhigh\"), result:\n\nhttps://i.redd.it/v3hoyuo98ggh1.gif\n\nOn DGX Spark GB10, it thought for 6 minutes and then started writing lots of hacky code:\n\nhttps://preview.redd.it/0in81v9jaggh1.png?width=927&format=png&auto=webp&s=b434eca3c34c8aba8333dd5462d46718c7c68718\n\nIt then dumped the file and wrote a short summary:\n\nhttps://preview.redd.it/d3u6x54egggh1.png?width=932&format=png&auto=webp&s=5cca9ef4bdd9105c98a904c6afaa2029bb286697\n\n---\n\nQwen3.6-27B result:\n\nhttps://i.redd.it/rfcertf39ggh1.gif\n\nIt thought for 38 seconds, realised it is a more complex task, so it wrote down the overall architecture plan and the key physics concepts/laws it should follow/implement:\n\nhttps://preview.redd.it/fmzebwusaggh1.png?width=927&format=png&auto=webp&s=fefc4b13a8bb763a9c75edab3307ff0791fbc37e\n\nIt then got to working, creating classes, with an \"update\" method, similar to a game engine or UI framework\n\nhttps://preview.redd.it/db6z2e7vbggh1.png?width=927&format=png&auto=webp&s=77a3f50d0d92204871cc05d5cb10d1418fef50d1\n\nAfter it finished, it checked that all the classes are there, critical functions, etc...\n\nhttps://preview.redd.it/lkcqt6r9cggh1.png?width=925&format=png&auto=webp&s=76ba519af2c1776126441eff36ffc3601bec09b0\n\nNext it reviewed its own code:\n\nhttps://preview.redd.it/4ctsqh4ncggh1.png?width=928&format=png&auto=webp&s=194df4bb888ac1efb13da7912741ece39f3d992d\n\nhttps://preview.redd.it/livh5n2jeggh1.png?width=928&format=png&auto=webp&s=4e7f8b08b4e9e55f08922b4c09f5670accc1c919\n\nNext checked again if all HTML tags are opened/closed correctly and all the JavaScript parenthesis and brackets are opened/closed correctly as well.\n\nhttps://preview.redd.it/ql8r9fzseggh1.png?width=925&format=png&auto=webp&s=76349c3d8367102ca4436cf540442a5640b595f2\n\nReviewed again and made more fixes:\n\nhttps://preview.redd.it/w0i096msdggh1.png?width=926&format=png&auto=webp&s=07834b77f732b6e597eb6dffe7a7d80ea92e7f88\n\nOne last time checked whether all the requested features were implemented:\n\nhttps://preview.redd.it/4ec1bb16eggh1.png?width=929&format=png&auto=webp&s=9732c938824178d70b8e649b3f17dad6c3a8ff17\n\nChecked -> the feature was there under a different name.\n\nPrinted the file path and size and then this final report:\n\nhttps://preview.redd.it/c5xks9jffggh1.png?width=932&format=png&auto=webp&s=2a031d4ab2422d86c6fbbfe1c38a273eae483370\n\nsubmitted by /"
+      "summary": "I'm an avid user of Deepseek v4 Flash via antirez's DS4 DwarfStar inference engine , and so when the new checkpoint dropped, the first thing I did was rent a cloud box and spin up a quantization for use in my DS4 deployment. Props to Unsloth for getting their GGUFs out so quickly, but for me it only runs at Here's the repo link.",
+      "body": "I'm an avid user of Deepseek v4 Flash via antirez's DS4 DwarfStar inference engine , and so when the new checkpoint dropped, the first thing I did was rent a cloud box and spin up a quantization for use in my DS4 deployment. Props to Unsloth for getting their GGUFs out so quickly, but for me it only runs at Here's the repo link. I have plans for additional quants (flat Q2_K & Q4_K, with matching MTP heads), possibly an improved imatrix, and a custom directional-steering abliteration vector file, leveraging the fascinating steering capability of DS4 to de-censor the model.\n\nI'm looking for reports from CUDA/ROCm users (I can only test Metal), tok/sec decode + prefill, reports on the MTP performance (have been quantizing all day, haven't gotten to A/B test yet), and any SSD streamers out there as well.\n\nIf you're new to DS4, it takes 60 seconds to setup, and you can use the model at 2X llama.cpp speed, with persistent KV cache on SSD, and any of your preferred coding harnesses via OpenAI API endpoint. Give it a shot.\n\nI really appreciate any and all feedback, and I'll happily credit your benchmarks in the Model Card. Also, any input on how to improve the card for users encountering DS4 for the first time. I love this project, and I wanted to contribute! TIA\n\nEDIT: Antirez himself has now released his 0731 quants, so I obviously recommend you go with his version. I didn't know how long he'd take, and I wanted to get something out there, but I'm sure his is better. However, he has not released the new DSpark MTP heads, so please give mine a try alongside his quants -- they should work together no problem.\n\nsubmitted by /"
     },
     {
-      "title": "Meituan just dropped LongCat-Flash-Lite-Sparse",
-      "author": "Gohab2001",
-      "updated": "2026-07-31T14:46:03+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbsztw/meituan_just_dropped_longcatflashlitesparse/",
+      "title": "What speeds are everyone getting with deepseek v4 flash 0731?",
+      "author": "Ambitious_Fold_2874",
+      "updated": "2026-08-01T02:35:54+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vcaztx/what_speeds_are_everyone_getting_with_deepseek_v4/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "It’s an MoE with ~3B active params and a 30B n-gram lookup table offloaded to RAM for fast 256k context on a 24GB GPU. Reminds me of Gemma 4’s PLE trick.",
-      "body": "It’s an MoE with ~3B active params and a 30B n-gram lookup table offloaded to RAM for fast 256k context on a 24GB GPU. Reminds me of Gemma 4’s PLE trick.\n\nInitial analysis suggest it wont be replacing my Qwen 3.6 27b.\n\nsubmitted by /"
+      "summary": "I’m getting~200 tps prompt processing / ~11 tps token gen, on 4x5060ti16gb with ddr4 3200 ram at 4-channel, via llamacpp, with context window of 128000, -ub/-b at 4096, “q8” unsloth’s lossless quant",
+      "body": "What speeds are everyone getting with deepseek v4 flash 0731?\n\nI’m getting~200 tps prompt processing / ~11 tps token gen, on 4x5060ti16gb with ddr4 3200 ram at 4-channel, via llamacpp, with context window of 128000, -ub/-b at 4096, “q8” unsloth’s lossless quant\n\nsubmitted by /"
     },
     {
-      "title": "Is it just me, or are current LLM benchmarks failing to capture actual usability? (Gemma 4 vs. Gemini/Claude Opus)",
-      "author": "MaxDev0",
-      "updated": "2026-07-31T02:18:16+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbdpcz/is_it_just_me_or_are_current_llm_benchmarks/",
+      "title": "New official weights for Laguna S 2.1 FP8 & NVFP4 are now available",
+      "author": "rmhubbert",
+      "updated": "2026-08-01T13:20:13+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vcn9uw/new_official_weights_for_laguna_s_21_fp8_nvfp4/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Disclaimer, this was kinda written with AI (Gemma 4 again) but it also did really well here, it outputted what I wanted, and when I asked it to refine stuff or improve on certain areas it did that without compromising others or making things bulky.",
-      "body": "Disclaimer, this was kinda written with AI (Gemma 4 again) but it also did really well here, it outputted what I wanted, and when I asked it to refine stuff or improve on certain areas it did that without compromising others or making things bulky.\n\nI’ve been noticing a massive disconnect lately between how models perform on technical leaderboards and how they actually perform in real-world tasks.\n\nRecently, I’ve been running some side-by-side tests, and I’m finding that Gemma 4 (26B A4B) is consistently outperforming much \"larger\" or more \"advanced\" models like Gemini 3.5 Flash and even Claude Opus 5 in practical instruction following.\n\nHere are two specific examples:\n\nEmail Composition: I asked Gemini to write a response to an email with specific ideas. It failed to follow my instructions and missed the tone entirely. I tried Claude Opus 5, and while it was \"smart,\" the output was sloppy, overly verbose, and sounded incredibly \"AI-ish.\" Gemma 4, however, was able to nail the subtleties. It understands when I want something expressed subtly rather than just being blunt—it actually understands the subtext and the layers of intent.\n\nPrompt Refining & Engineering: I tried to have Gemini refine a prompt for me, and it failed my instructions every single time. This goes beyond just refining; even when I'm engineering a new prompt and tell a model, \"Do X, Y, and Z, but avoid A, B, and C,\" Gemini is too literal—it just outputs: \"Do X, Y, and Z and don't do A, B, and C.\" It's clunky and obvious. Gemma 4 handles this naturally; it writes the prompt in a way that pushes it away from A, B, and C without needing to explicitly mention them. It just understands .\n\nMy takeaway: I’m starting to think that metrics used by sites like Artificial Analysis don't actually align with what the average user (or even a developer) needs. We don't just need high scores on math or coding benchmarks; we need models that actually listen , understand nuance, and don't hallucinate simple instructions.\n\nI want to hear from you guys:\n\nHas anyone else experienced this \"intelligence gap\" where smaller/different models feel more capable than the heavy hitters?\n\nDo you know of any leaderboards or benchmarks that more accurately represent real-world utility and instruction-following rather than just raw technical metrics?\n\nI’m not just looking for \"use Gemma\" because I like it, I know it isn't the \"smartest\" model overall. I want to know if there are other models (maybe the ChatGPT family?) that are actually stronger or bigger in this specific niche of nuance and instruction following?\n\nsubmitted by /"
+      "summary": "Poolside have updated the FP8 and NVFP4 checkpoints for Laguna S 2. 1, increasing the default context size to 1 million, and updating the configs. Here's hoping they fixed the looping issue, this model has been great in my development workflows, when not looping.",
+      "body": "Poolside have updated the FP8 and NVFP4 checkpoints for Laguna S 2.1, increasing the default context size to 1 million, and updating the configs.\n\nHere's hoping they fixed the looping issue, this model has been great in my development workflows, when not looping.\n\nsubmitted by /"
     },
     {
-      "title": "Rule Suggestion: \"Open\" models without weight releases should be tagged [no weights]",
-      "author": "SexyAlienHotTubWater",
-      "updated": "2026-07-31T12:25:56+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbpi44/rule_suggestion_open_models_without_weight/",
+      "title": "DS4 flash 0731 - Acquarium Panel Failure - Q3_K_XL Unsloth",
+      "author": "LegacyRemaster",
+      "updated": "2026-08-01T11:00:39+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vckcue/ds4_flash_0731_acquarium_panel_failure_q3_k_xl/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "A lot of recent models are being announced with promised open weights, but the weights are either weeks away, or in some cases (looking at you Meta) not being released at all. This sub is about local LLMs - not \"maybe local in the future\" llms.",
-      "body": "A lot of recent models are being announced with promised open weights, but the weights are either weeks away, or in some cases (looking at you Meta) not being released at all.\n\nThis sub is about local LLMs - not \"maybe local in the future\" llms.\n\nThese models are still useful to post, but I'm kind of sick of having to click through posts like this to find out that I can't actually download the weights at all. I think posts like this should have to be clearly labelled with [no weights], or similar in the title. A tag is another option, but it's less visible. Ideally I would clearly see on my Reddit homepage which posts I should not click.\n\nThoughts?\n\nsubmitted by /"
+      "summary": "Create a large glass aquarium whose side panel develops a visible crack and then bursts. Let the user drag the crack vertically before triggering the failure. A lower crack should initially produce a stronger jet than a higher crack.",
+      "body": "https://preview.redd.it/1a39x4zivqgh1.png?width=1550&format=png&auto=webp&s=de591c039cc18782a6b5d8e402fdc1594be05132\n\nstart C:\\llm\\llamam5\\build\\bin\\llama-server.exe --model \"H:\\UD-Q3_K_XL\\DeepSeek-V4-Flash-0731-UD-Q3_K_XL-00001-of-00004.gguf\" --host 127.0.0.1 --port 8080 -c 250000 --parallel 1 --no-warmup --flash-attn on --no-mmap --fit off -lv 4 -no-kvu --device CUDA0,rocm0 --threads 16 -no-kvu --metrics --perf -b 512 -ub 512 --no-warmup --temp 0.8 --top-p 0.95 --top-k 0 --min-p 0 --cont-batching\n\nRTX6000 96 cuda0 + W7800 48gb rocm0.\n\nCreate a large glass aquarium whose side panel develops a visible crack and then bursts.\n\nThe simulation must include:\n\nWater escaping through the opening with flow strength based on water depth and decreasing as the tank drains\n\nA curved water jet affected by gravity\n\nA spreading puddle that collides with the room boundaries\n\nFish, rocks, plants, and a floating toy reacting differently according to density, buoyancy, drag, and current\n\nObjects transitioning correctly from underwater motion to airborne motion and then to floor collisions\n\nFish attempting to swim against the current before being swept through the breach\n\nGlass fragments with angular velocity, collisions, and water resistance\n\nA visible waterline that lowers continuously rather than disappearing all at once\n\nLet the user drag the crack vertically before triggering the failure. A lower crack should initially produce a stronger jet than a higher crack. Give me 1 html file\n\n_\n\nPrompt tokens evaluated - 14.860 tok\n\nTokens generated - 20.988 tok\n\nAvg speed 27.2t/s\n\n______\n\nCheaper then K3 and GLM 5.2. But very good.\n\nsubmitted by /"
     },
     {
-      "title": "I ported TurboFieldfare to Qwen 3.6 35B and it runs in 1.4 GB of RAM",
-      "author": "Blahblahblakha",
-      "updated": "2026-07-31T12:14:10+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbp8te/i_ported_turbofieldfare_to_qwen_36_35b_and_it/",
+      "title": "[audio.cpp] Release 0.5: DramaBox expressive TTS, Confucius4 cross-lingual voice transfer, plus 7 more models and ROCm/HIP",
+      "author": "Acceptable-Cycle4645",
+      "updated": "2026-08-01T00:43:57+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vc8lpl/audiocpp_release_05_dramabox_expressive_tts/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Was playing around with TurboFieldfare , a Mac engine that runs Gemma 4 26B in ~2 GB by streaming MoE experts off SSD instead of loading them. It only supported that one model, so I added support for Qwen 3. 6 35B-A3B.",
-      "body": "Was playing around with TurboFieldfare , a Mac engine that runs Gemma 4 26B in ~2 GB by streaming MoE experts off SSD instead of loading them. It only supported that one model, so I added support for Qwen 3.6 35B-A3B.\n\nComparatively, Qwen needs lesser memory. ~1.4 GB vs ~2.1 GB for Gemma. Qwen's experts are half the size and 30 of its 40 layers use linear attention. So there's a drastic drop in the KV cache to hold onto.\n\nSpeed on my M5 is 19–23 tok/s depending on prompt length. Gemma gets 31–35 on the same machine. Qwen IS slower because its 18 GB of experts dont fit in the os page cache, so more reads actually hit the SSD.\n\nI also pinned the machine down to an 8 GB working set and it made no difference: 22.9 tok/s and byte-identical output which is expected since its already streaming from disk anyway.\n\nPR is open upstream: drumih/turbo-fieldfare#29\n\nBranch if you want to build it: NeelM0906/turbo-fieldfare@qwen36-support\n\nNotes: text-only, tested at 4K context, needs ~20 GB of disk, and my 8 GB test was simulated memory pressure, not an actual 8 GB Mac.\n\nsubmitted by /"
+      "summary": "The most fun new model in 0. 5 is DramaBox . It is closer to prompt-directed voice acting. DramaBox is built on the LTX-2. 3 audio architecture, and prompts can control emotion, delivery, laughs, sighs, pauses, transitions, and speaker behavior.",
+      "body": "audio.cpp 0.5 is out :)\n\nThe most fun new model in 0.5 is DramaBox . It is closer to prompt-directed voice acting. DramaBox is built on the LTX-2.3 audio architecture, and prompts can control emotion, delivery, laughs, sighs, pauses, transitions, and speaker behavior.\n\nExample input (check the audio in the post):\n\nA nervous young man whispers, \"I do not think we should be here.\"\n\nHe takes a shaky breath. \"Did you hear that?\"\n\nThe hallway answers with a slow metallic creak.\n\nHe tries to laugh, but his voice breaks. \"Okay. That was probably just the wind.\"\n\nAnother sound comes from behind the locked door, softer this time, almost like someone breathing.\n\nHe steps back. \"No. No, we are leaving now.\"\n\nThen, from the darkness, a small voice whispers her name.\n\nConfucius4-TTS is the other big voice highlight: cross-lingual voice transfer. Give it a reference voice, then synthesize in another supported language.\n\nThis release also added RVC for voice conversion, BS-RoFormer for vocal separation, GLM-TTS, Kroko ASR, Parakeet-TDT, Inflect Micro v2 (tiny but powerful), and Fun-ASR-Nano. Fun-ASR-Nano is especially exciting because it comes from the official FunASR team , and audio.cpp is now listed on the official FunASR deployment platform.\n\nThe platform story got wider too. Early HIP/ROCm support landed for AMD GPUs, Metal got faster on Apple Silicon, and the server/streaming paths became more useful for real applications with live PCM ingest and cleaner streaming transcript deltas.\n\nNone of this would be possible without contributions from our community. Contributors are showing up with new ports, backend tests, bug reports, docs, Web UI work, and production deployment feedback.\n\nA few areas where community help would be especially valuable:\n\nScoped model performance optimization :\n\nSome early model integrations were built parity-first and received less optimization work. Non-CUDA backends are also less optimized and need more focused performance work. As the number of models grows, it becomes harder to find time to backport proven performance patterns. Good contributions here are scoped, measurable optimizations: improve one model path, show before-and-after benchmarks, and gate aggressive changes behind perf_mode when appropriate.\n\nUI / Web UI :\n\nI’d like to replace the Python WebUI with a lightweight, portable alternative. If you enjoy UI work, help here would make a big difference.\n\nIf you are porting an audio model, optimizing one, or helping make local audio inference less painful, I would love to have you involved!\n\nsubmitted by /"
     },
     {
-      "title": "Huawei opensouced openPangu-2.0-Pro, 505B-A18B",
-      "author": "langsfang",
-      "updated": "2026-07-31T06:47:53+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbj6uf/huawei_opensouced_openpangu20pro_505ba18b/",
+      "title": "Deepseek v4 flash 0731 still not holding up.",
+      "author": "Juulk9087",
+      "updated": "2026-08-01T17:16:45+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vct09w/deepseek_v4_flash_0731_still_not_holding_up/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "openPangu-2. 0-Pro is an MoE model trained on Ascend. The model has 505B total parameters and 18B activated parameters. Its context length is 512k. The total pretraining data contains 34T tokens. During Post-training, openPangu-2.",
-      "body": "openPangu-2.0-Pro is an MoE model trained on Ascend. The model has 505B total parameters and 18B activated parameters. Its context length is 512k. The total pretraining data contains 34T tokens. During Post-training, openPangu-2.0-Pro is trained through unified SFT with slow and fast thinking capability, multiple specialist RL traning, on-policy distillation combining multiple RL specialists. More details, please refer to openPangu-2.0 Tech Report .\n\nsource: https://ai.gitcode.com/ascend-tribe/openPangu-2.0-Pro\n\nsubmitted by /"
+      "summary": "The biggest issue with preview was its inability to follow rules prompts and skills. It seems like no matter what you do it ignores them. I've tried first person and second person. I've tried Chinese and English. It does not follow them. That's the only problem with these models and why they're not actually frontier level and not just benchmaxxed.",
+      "body": "The biggest issue with preview was its inability to follow rules prompts and skills. It seems like no matter what you do it ignores them. I've tried first person and second person. I've tried Chinese and English. It does not follow them. That's the only problem with these models and why they're not actually frontier level and not just benchmaxxed. Every user's environment is different and they need to tune the actions and behavior of the model with rules or prompts or skills to exactly what they need to do and if the model ignores then it acts subpar. The newest version of flash has the same issue as the preview version and that's unfortunate.\n\nI run it native, full precision, locally. And I've held out making this post cause I know I'm going to get roasted to all fuck but when you can actually run the models locally and when you're not brainwashed by benchmarks and you actually code with them you see the holes. I'm going back to qwen 27b ugh\n\nsubmitted by /"
     },
     {
-      "title": "Deepseek V4 Flash on SlopCodeBench",
-      "author": "corruptbytes",
-      "updated": "2026-07-31T15:05:45+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbtiy7/deepseek_v4_flash_on_slopcodebench/",
+      "title": "60-82% accuracy swing on 4B model classification task: the only variable was harness design",
+      "author": "TGPSKI",
+      "updated": "2026-07-31T21:47:42+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vc4e00/6082_accuracy_swing_on_4b_model_classification/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "While waiting for some of the quants to drop, I load the API with $50 and ran it on SlopCodeBench",
-      "body": "While waiting for some of the quants to drop, I load the API with $50 and ran it on SlopCodeBench\n\nJust vibe reading the results it seems like Opus 4.8 https://github.com/michaelasper/benchmarks/blob/main/deepseek-v4-flash-on-slop-code-bench.md\n\nI was mostly curious from this blog post\n\nWhen Q2 drops - I'm goign to re-run on my macbook\n\nsubmitted by /"
+      "summary": "I ran a pre-registered ablation on a classification task (Kubernetes issue → SIG triage) using a 4B model on a 6GB laptop GPU. Same frozen weights, same 250-issue gold corpus, same scorer across every run. The variable under test was harness design: rule placement, evidence order, turn structure, what survives between turns.",
+      "body": "I ran a pre-registered ablation on a classification task (Kubernetes issue → SIG triage) using a 4B model on a 6GB laptop GPU.\n\nSame frozen weights, same 250-issue gold corpus, same scorer across every run. The variable under test was harness design: rule placement, evidence order, turn structure, what survives between turns.\n\nResult: 22 points of accuracy , same model, same task. 60% at the worst harness, 82% at the best.\n\n\"This model is bad at X\" is often actually \"my harness is bad at X.\"\n\nWhat moved accuracy:\n\nExplicit rules in the prompt: +13\n\nTask before reference material (not after): +6.5\n\nOne extra reasoning turn: −5\n\nClearing context each turn, carrying a summary forward instead of raw evidence: −12\n\nFresh-session handoff between stages: −15\n\nThe worst-designed harness paid for an extra stage and 250 tool calls and got nothing for it - landed right back at bare-model accuracy.\n\nEverything's public and archived - corpus, scorer, pre-registration, every run manifest. You can re-score the results without a GPU; you only need one to generate new predictions.\n\nEval harness: https://github.com/TGPSKI/leather/blob/main/examples/14-sig-triage/eval/README.md\n\nExample overview: https://github.com/TGPSKI/leather/tree/main/examples/14-sig-triage\n\nMatrix results: https://github.com/TGPSKI/leather/blob/main/examples/14-sig-triage/eval/results/MATRIX.md\n\nsubmitted by /"
     },
     {
-      "title": "Want to see all oneshot slops in one place?",
-      "author": "kms_dev",
-      "updated": "2026-07-31T01:05:46+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbc3kw/want_to_see_all_oneshot_slops_in_one_place/",
+      "title": "LongCat-Flash-Lite-Sparse Is Now Available for Download",
+      "author": "LLMFan46",
+      "updated": "2026-08-01T15:10:04+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vcpv6u/longcatflashlitesparse_is_now_available_for/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "I've been looking at oneshots posted here whenever a new model comes around and wondered if there is a single place to see all the \"oneslops\". Behold https://oneshotlm. com/ , where I'm trying to gather all the models from openrouter and interesting oneshot prompts around here.",
-      "body": "I've been looking at oneshots posted here whenever a new model comes around and wondered if there is a single place to see all the \"oneslops\". Behold https://oneshotlm.com/ , where I'm trying to gather all the models from openrouter and interesting oneshot prompts around here.\n\nCurrently at 40 models across 34 prompts = 1360 oneslops. More to come and if you have any model or prompt requests, raise a pull request here https://github.com/Nexight-ai/oneshotlm-prompts .\n\nsubmitted by /"
+      "summary": "This model is built upon LongCat-Flash-Lite , the differences are that LongCat-Flash-Lite-Sparse :",
+      "body": "The weights have now been added to the repo an hour ago.\n\nThis model is built upon LongCat-Flash-Lite , the differences are that LongCat-Flash-Lite-Sparse :\n\nReplaces dense MLA with LongCat Sparse Attention (LSA)\n\nNatively supports context lengths of up to 1M tokens (vs 256k for LongCat-Flash-Lite)\n\nsubmitted by /"
     },
     {
-      "title": "DeepSeek-V4-Flash-0731 unsloth gguf on A100",
-      "author": "Different-Pickle1021",
-      "updated": "2026-07-31T17:06:05+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vbwuq0/deepseekv4flash0731_unsloth_gguf_on_a100/",
+      "title": "We've gotten some great medium sized models lately (DSV4 Flash 0731, Inkling Small, Laguna S 2.1, Step 3.7 Flash) but does anybody else want to see some new 70-80b contenders?",
+      "author": "_TheWolfOfWalmart_",
+      "updated": "2026-07-31T21:46:40+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vc4d23/weve_gotten_some_great_medium_sized_models_lately/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "NOTE just tested coding on linux box DeepSeek-V4-Flash-0731 runs losslessly on the single 40GB A100 at 17.7 tok/s with 6 experts loaded into VRAM, with Codex driving it through a full agentic coding loop",
-      "body": "A100 with 40gb VRAM:\n\n162GB Q8_K_XL\n\n~16.1 tok/s generation\n\nOnly 15.8GB of 40GB VRAM used with all experts on CPU\n\nNOTE just tested coding on linux box DeepSeek-V4-Flash-0731 runs losslessly on the single 40GB A100 at 17.7 tok/s with 6 experts loaded into VRAM, with Codex driving it through a full agentic coding loop\n\nsubmitted by /"
+      "summary": "I can run the mediums, but sometimes I want a faster option that's smarter than Qwen 27B/35B. On my hardware I get like 500 to 800 tok/s prefill and 16 to 22 tok/s gen on ~120B class models, which is not the worst but it does get a bit annoying on agentic coding tasks.",
+      "body": "I can run the mediums, but sometimes I want a faster option that's smarter than Qwen 27B/35B.\n\nOn my hardware I get like 500 to 800 tok/s prefill and 16 to 22 tok/s gen on ~120B class models, which is not the worst but it does get a bit annoying on agentic coding tasks.\n\nIf we could get some new MoE 70-80B models that are smarter than the Qwen 3.6 family, I would be so happy.\n\nDouble-ish the prefill/gen would make all the difference.\n\nMaybe this is my fault for being cheap and building my GPU rig with some V620's but that price-to-VRAM ratio is hard to beat and I couldn't justify spending more than that so here we are.\n\nOr does anyone have some tips? I've been using ROCm + llama.cpp -- I tried using -sm tensor to speed things up, but it's slower. And it gets slower and slower as I try to enable more GPUs with it. So I'm just back to layer split.\n\nsubmitted by /"
     }
   ]
 }

@@ -1,8 +1,26 @@
 {
-  "count": 11,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsa302cc01xaro41omun2e1h",
+      "title": "OpenAI Astra 以约2000美元证明10项数学难题",
+      "title_en": "ten significant advances in mathematics and theoretical computer science. solved using an internal …",
+      "url": "https://x.com/gdb/status/2083457463337287721",
+      "permalink": "https://aihot.virxact.com/items/cmsa302cc01xaro41omun2e1h",
+      "source": "X：Greg Brockman (@gdb)",
+      "publishedAt": "2026-08-01T07:39:02.000Z",
+      "discoveredAt": "2026-08-01T08:00:16.762Z",
+      "summary": "OpenAI 用下一代模型 Astra 内部版解决了数学与理论计算机科学领域的10项重大进展，总成本约2000美元（按 Sol API 价格计算）。Astra 证明了非 sofic 群的存在，并推翻 Connes 刚性猜想，成果涵盖 von Neumann 代数、高维球堆积、电路复杂度等。OpenAI 已发布全部10项证明，附 Lean 证书与 CoT 逐步推导。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsa302cc01xaro41omun2e1h"
+      }
+    },
     {
       "id": "cms8zb830079vro7v2z6a4btv",
       "title": "面壁智能ALIGN：自动对齐智能体与环境接口",
@@ -91,6 +109,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms8ckrgb0826rot0xn8g8dt8"
+      }
+    },
+    {
+      "id": "cmsass3b802g4romzntw9ijll",
+      "title": "Science One Framework：通过 Chain-of-Evidence 实现可验证的自主科研框架",
+      "title_en": "Science One Framework： A verifiable autonomous research framework via Chain-of-Evidence",
+      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence",
+      "permalink": "https://aihot.virxact.com/items/cmsass3b802g4romzntw9ijll",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-07-29T16:00:00.000Z",
+      "discoveredAt": "2026-07-29T16:00:00.000Z",
+      "summary": "Google Research 推出 Science One Framework，一个原生构建证据链的自主科研原型，旨在消除模型幻觉，并配套自动化评估协议 CoE Audit。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsass3b802g4romzntw9ijll"
       }
     },
     {

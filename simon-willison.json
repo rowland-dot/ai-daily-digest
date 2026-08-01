@@ -1,12 +1,54 @@
 {
-  "fetched_at": "2026-07-31T21:39:55.541Z",
+  "fetched_at": "2026-08-01T21:26:17.672Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "link": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
+      "updated": "2026-08-01T20:34:49+00:00",
+      "summary": "Ten advances in mathematics and theoretical computer science"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "link": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
+      "updated": "2026-07-31T23:59:44+00:00",
+      "summary": "deepseek-ai/DeepSeek-V4-Flash-0731"
+    },
+    {
+      "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+      "link": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
+      "updated": "2026-07-31T23:13:22+00:00",
+      "summary": "Tuesday was Stateless MCP day - the rollout of MCP 2.0, or the 2026-07-28 Model Context Protocol specification to use the more formal but less memorable name. This is the most significant change to the MCP spec since it first launched, and has also served to reignite my personal interest in the protocol."
+    },
+    {
+      "title": "llm-mcp-client 0.1a0",
+      "link": "https://simonwillison.net/2026/Jul/31/llm-mcp-client/#atom-everything",
+      "updated": "2026-07-31T23:03:47+00:00",
+      "summary": "See this blog entry ."
+    },
+    {
+      "title": "Oxide and Friends: The Open Weight Revolution with Simon Willison",
+      "link": "https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything",
+      "updated": "2026-07-31T21:33:13+00:00",
+      "summary": "Oxide and Friends: The Open Weight Revolution with Simon Willison"
+    },
     {
       "title": "smevals - a small eval suite for evaluating models, prompts, and harnesses",
       "link": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
       "updated": "2026-07-31T21:15:23+00:00",
       "summary": "smevals - a small eval suite for evaluating models, prompts, and harnesses"
+    },
+    {
+      "title": "Slack Emoji Maker",
+      "link": "https://simonwillison.net/2026/Jul/31/slack-emoji-maker/#atom-everything",
+      "updated": "2026-07-31T20:18:05+00:00",
+      "summary": "I wanted to create a new Slack emoji, and their tool recommends a square that's 128x128 and has a transparent background... so I had Fable build me this simple image editor against those requirements."
+    },
+    {
+      "title": "datasette-agent 0.4a0",
+      "link": "https://simonwillison.net/2026/Jul/31/datasette-agent/#atom-everything",
+      "updated": "2026-07-31T14:14:23+00:00",
+      "summary": "New await context.browser_task() mechanism allowing agent tools to run code directly in the user's browser. #33"
     },
     {
       "title": "Advancing the price-performance frontier with GPT‑5.6",
@@ -31,48 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
       "updated": "2026-07-30T18:25:26+00:00",
       "summary": "The writing assignments I give my students are gym tasks, not work tasks. I ask them to write policy memos not because the world needs more policy memos. I assign them because the very act of writing, which includes thinking and outlining and drafting and editing, making and criticizing and revising arguments, will help develop the critical thinking skills they will need in their future careers. And without this constant mental exercise, those skills will atrophy. Employers are already noticing ."
-    },
-    {
-      "title": "llm-chat-completions-server 0.1a0",
-      "link": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything",
-      "updated": "2026-07-30T15:43:16+00:00",
-      "summary": "A key goal of the new content-addressable logs in LLM 0.32rc1 was being able to support OpenAI Chat Completion style requests where each incoming message extends the previous conversation, like this:"
-    },
-    {
-      "title": "llm 0.32rc1",
-      "link": "https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything",
-      "updated": "2026-07-30T15:30:20+00:00",
-      "summary": "This RC for LLM 0.32 finishes the work that started in LLM 0.32a0 - it adds a new schema design that does a much better job of capturing the details of the prompts and responses returned by the latest model families."
-    },
-    {
-      "title": "Quoting D. Richard Hipp",
-      "link": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything",
-      "updated": "2026-07-29T21:15:21+00:00",
-      "summary": "Years ago, we didn’t have SQL. There were people whose job was to generate software that would query large data sets. Their job title was COBOL programmer. Then SQL comes along—I’m simplifying this only a little bit—and it gives you this convenient way so people could just specify. With a very simple specification, you can generate all of that code that you had to pay the expensive COBOL programmer to do before. That didn’t mean programmers went away. It just meant the job changed a little bit."
-    },
-    {
-      "title": "AI Worming through Word",
-      "link": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
-      "updated": "2026-07-29T18:43:03+00:00",
-      "summary": "AI Worming through Word"
-    },
-    {
-      "title": "Quoting Matthew Green",
-      "link": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
-      "updated": "2026-07-29T18:18:15+00:00",
-      "summary": "Right now we’re in the midst of a historic transition from traditional public-key algorithms based on EC-based cryptography and RSA, moving over to new post-quantum algorithms based on novel problems. This is why there are so many standards like HAWK being considered. If there was ever a perfect time for a massive new public cryptanalysis capability to come on line, we’re in it. So unless AIs succeed in undermining all of our hard problems altogether (or we live in Impagliazzo’s Minicrypt ) then this could not be a better time for AI to get good at cryptanalysis. In the best case, the result is that we gain real confidence in the problems we’ve identified, and the cryptanalysis literature gets a lot more robust. Hopefully."
-    },
-    {
-      "title": "Adding a custom MCP server to Claude and ChatGPT",
-      "link": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
-      "updated": "2026-07-29T00:13:18+00:00",
-      "summary": "Connecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps."
-    },
-    {
-      "title": "Discovering cryptographic weaknesses with Claude",
-      "link": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
-      "updated": "2026-07-28T22:45:37+00:00",
-      "summary": "Discovering cryptographic weaknesses with Claude"
     }
   ]
 }

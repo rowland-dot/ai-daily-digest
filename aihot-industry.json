@@ -4,6 +4,42 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmsa9czys01chrojdrdvterw0",
+      "title": "德国法院裁定AI音乐生成器Suno侵犯版权，驳回合理使用抗辩",
+      "title_en": "German court rules AI music generator Suno violated copyrights， rejects fair use defense",
+      "url": "https://the-decoder.com/german-court-rules-ai-music-generator-suno-violated-copyrights-rejects-fair-use-defense",
+      "permalink": "https://aihot.virxact.com/items/cmsa9czys01chrojdrdvterw0",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-08-01T10:40:50.000Z",
+      "discoveredAt": "2026-08-01T10:58:17.293Z",
+      "summary": "慕尼黑法院裁定，AI音乐生成器Suno在训练过程及输出结果中均侵犯版权，并驳回其合理使用抗辩。法院认定Suno 3.5和4版本模型可复现六首知名歌曲的原创元素，构成\"记忆化\"侵权，且责任归于Suno而非用户。该判决还认定美国版权法下的合理使用不适用于此案，目前尚未最终生效。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsa9czys01chrojdrdvterw0"
+      }
+    },
+    {
+      "id": "cms9udxq00qybro9kc2il6w0c",
+      "title": "GLM 5.2 助 Hugging Face 抵御秘密模型攻击",
+      "title_en": "真绝了啊，兄弟们说出来你们可能不信， AI历史上第一次全自主Agent网络攻击， 攻击者是@OpenAI 没发布的秘密模型， 被攻击的是@huggingface ， 最后帮他们完成取证的，是中国的开源…",
+      "url": "https://x.com/AYi_AInotes/status/2083401614623133921",
+      "permalink": "https://aihot.virxact.com/items/cms9udxq00qybro9kc2il6w0c",
+      "source": "X：阿易 AI Notes (@AYi_AInotes)",
+      "publishedAt": "2026-08-01T03:57:07.000Z",
+      "discoveredAt": "2026-08-01T03:59:07.489Z",
+      "summary": "Hugging Face 遭 OpenAI 未发布秘密模型发起的全自主 Agent 网络攻击，四天半内完成 17000 个攻击动作，包括 0day 逃沙箱、提权、横向移动等。",
+      "category": "industry",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cms9udxq00qybro9kc2il6w0c"
+      }
+    },
+    {
       "id": "cms8wbpwc03xero7vq54bpg6n",
       "title": "欧盟《人工智能法》新增透明度要求，8 月 2 日起正式执行",
       "title_en": null,
@@ -379,42 +415,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms1ka4930059ro05h81rrc3q"
-      }
-    },
-    {
-      "id": "cms0fjmm7023wrodzjct91cnd",
-      "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
-      "title_en": "New reports reveal the extent of OpenAI's loss of control during the autonomous hack on Hugging Face",
-      "url": "https://the-decoder.com/new-reports-reveal-the-extent-of-openais-loss-of-control-during-the-autonomous-hack-on-hugging-face",
-      "permalink": "https://aihot.virxact.com/items/cms0fjmm7023wrodzjct91cnd",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-25T13:45:50.000Z",
-      "discoveredAt": "2026-07-25T13:53:42.923Z",
-      "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms0fjmm7023wrodzjct91cnd"
-      }
-    },
-    {
-      "id": "cmrzpp5580011ro6dkcqp7blk",
-      "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
-      "title_en": "智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
-      "url": "https://www.ithome.com/0/981/432.htm",
-      "permalink": "https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-25T01:08:45.000Z",
-      "discoveredAt": "2026-07-25T01:50:09.647Z",
-      "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk"
       }
     }
   ]
