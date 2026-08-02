@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-01T21:26:17.672Z",
+  "fetched_at": "2026-08-02T21:26:38.862Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Open letters about AI development",
+      "link": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
+      "updated": "2026-08-02T04:16:52+00:00",
+      "summary": "I wrote this summary of the past few weeks of open letters as a section of my sponsors-only newsletter but I've decided to share it here as well."
+    },
+    {
+      "title": "July 2026 newsletter",
+      "link": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+      "updated": "2026-08-02T04:12:41+00:00",
+      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here ."
+    },
+    {
+      "title": "Quoting Greg Brockman",
+      "link": "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
+      "updated": "2026-08-01T22:29:44+00:00",
+      "summary": "at openai, many people hook their chatgpt up to slack. people really don't like when a coworker's chatgpt contacts them asking for help with a task, even when they'd be perfectly happy doing that same work if asked by that coworker. reinforces how much people care about human relationships and helping each other, and want AI to give time back — or enhance time together — rather than become a layer separating people."
+    },
+    {
+      "title": "datasette-apps 0.2a0",
+      "link": "https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything",
+      "updated": "2026-08-01T21:23:56+00:00",
+      "summary": "Changes that improve Datasette Apps when created and edited using Datasette Agent : New app_debug() tool allowing agent to open an app (invisibly) and test it using JavaScript. #33 New app_list() tool for listing apps the user has permission to edit, so the agent can edit them. #36"
+    },
     {
       "title": "Ten advances in mathematics and theoretical computer science",
       "link": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/31/datasette-agent/#atom-everything",
       "updated": "2026-07-31T14:14:23+00:00",
       "summary": "New await context.browser_task() mechanism allowing agent tools to run code directly in the user's browser. #33"
-    },
-    {
-      "title": "Advancing the price-performance frontier with GPT‑5.6",
-      "link": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
-      "updated": "2026-07-30T23:58:42+00:00",
-      "summary": "Advancing the price-performance frontier with GPT‑5.6"
-    },
-    {
-      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
-      "link": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents/#atom-everything",
-      "updated": "2026-07-30T23:41:29+00:00",
-      "summary": "Investigating three real-world incidents in our cybersecurity evaluations"
-    },
-    {
-      "title": "llm 0.32rc2",
-      "link": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
-      "updated": "2026-07-30T22:52:06+00:00",
-      "summary": "Hot on the heels of RC1 , this fixes a dependency issue and also adds two neat new features:"
-    },
-    {
-      "title": "Quoting Bruce Schneier",
-      "link": "https://simonwillison.net/2026/Jul/30/bruce-schneier/#atom-everything",
-      "updated": "2026-07-30T18:25:26+00:00",
-      "summary": "The writing assignments I give my students are gym tasks, not work tasks. I ask them to write policy memos not because the world needs more policy memos. I assign them because the very act of writing, which includes thinking and outlining and drafting and editing, making and criticizing and revising arguments, will help develop the critical thinking skills they will need in their future careers. And without this constant mental exercise, those skills will atrophy. Employers are already noticing ."
     }
   ]
 }

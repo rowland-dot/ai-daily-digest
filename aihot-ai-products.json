@@ -1,8 +1,26 @@
 {
-  "count": 23,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsbf9by90dq7rohvp1oggqmk",
+      "title": "Grok 支持分析任意视频",
+      "title_en": "Grok can analyze any video https://grok.com/share/bGVnYWN5_8013f7a3-f604-4351-8cd7-acecf3ef165b",
+      "url": "https://x.com/elonmusk/status/2083800942927839307",
+      "permalink": "https://aihot.virxact.com/items/cmsbf9by90dq7rohvp1oggqmk",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-08-02T06:23:54.000Z",
+      "discoveredAt": "2026-08-02T06:31:11.917Z",
+      "summary": "Grok 可以分析任何视频 https://grok.com/share/bGVnYWN5_8013f7a3-f604-4351-8cd7-acecf3ef165b",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsbf9by90dq7rohvp1oggqmk"
+      }
+    },
     {
       "id": "cms87droz020crot087s6upwp",
       "title": "Replit Design 推出数百设计模板",
@@ -379,42 +397,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh"
-      }
-    },
-    {
-      "id": "cms24qise02adro9fp4xzdhyd",
-      "title": "Suno 推出多项新功能，含MIDI导出等",
-      "title_en": "We've been building faster than ever！ 🚀 Here's a quick look at what's new across web & mobile： • …",
-      "url": "https://x.com/suno/status/2081443050312843765",
-      "permalink": "https://aihot.virxact.com/items/cms24qise02adro9fp4xzdhyd",
-      "source": "X：Suno (@suno)",
-      "publishedAt": "2026-07-26T18:14:29.000Z",
-      "discoveredAt": "2026-07-26T18:26:42.298Z",
-      "summary": "我们一直在以比以往更快的速度构建！🚀\n\n以下是网页端和移动端的新功能一览：\n\n• 高级音轨分离 • 将音轨导出为 MIDI • 歌词合写与自动保存 • 截图生成歌曲 • Apple CarPlay 与 Android Auto\n\n你最期待 Suno 的哪些新功能？",
-      "category": "ai-products",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms24qise02adro9fp4xzdhyd"
-      }
-    },
-    {
-      "id": "cms125zmg00usro0wwu4it7dg",
-      "title": "xAI 发布 Grok CLI 并支持 /tutorial 命令",
-      "title_en": "Download Grok Build and type /tutorial http://X.ai/cli",
-      "url": "https://x.com/elonmusk/status/2081174079969632347",
-      "permalink": "https://aihot.virxact.com/items/cms125zmg00usro0wwu4it7dg",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-07-26T00:25:41.000Z",
-      "discoveredAt": "2026-07-26T00:26:58.830Z",
-      "summary": "下载 Grok Build 并输入 /tutorial\n\nhttp://X.ai/cli",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms125zmg00usro0wwu4it7dg"
       }
     }
   ]
