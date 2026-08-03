@@ -1,8 +1,26 @@
 {
-  "count": 21,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsdkgj9m00hnro0ocrleteo0",
+      "title": "欧盟《人工智能法案》透明度规则生效，违规最高罚 1500 万欧元",
+      "title_en": "Europe's AI labeling and transparency rules are now in effect",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
+      "permalink": "https://aihot.virxact.com/items/cmsdkgj9m00hnro0ocrleteo0",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-08-03T17:38:45.000Z",
+      "discoveredAt": "2026-08-03T18:32:18.029Z",
+      "summary": "欧盟《人工智能法案》下的新透明度义务于 8 月 2 日生效，要求公司披露用户何时与 AI 模型互动，并为合成音视频和文本添加机器可读标记。欧盟还推出了一套可选的 AI 披露标签供平台采用，但标注要求本身是强制性的。违规公司面临最高 1500 万欧元（约 1720 万美元）或全球年营业额 3% 的罚款，8 月 2 日前推出的模型有 4 个月宽限期。",
+      "category": "industry",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdkgj9m00hnro0ocrleteo0"
+      }
+    },
     {
       "id": "cmsa9czys01chrojdrdvterw0",
       "title": "德国法院裁定AI音乐生成器Suno侵犯版权，驳回合理使用抗辩",
@@ -343,42 +361,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms4b9e8401zrroepw4fw8oka"
-      }
-    },
-    {
-      "id": "cms3fuyes00mjrond2ldww2oa",
-      "title": "Google AI Overviews 搜索结果出现率升至43%",
-      "title_en": "Google's AI search is rapidly becoming the default， new data shows",
-      "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows",
-      "permalink": "https://aihot.virxact.com/items/cms3fuyes00mjrond2ldww2oa",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-27T15:57:12.000Z",
-      "discoveredAt": "2026-07-27T16:25:50.818Z",
-      "summary": "Google AI Overviews 在搜索结果中的出现率一年内从15%升至43%，AI Mode月访问量从1.26亿增至2.79亿。用户搜索长度增加，正从短关键词转向更长的自然对话式查询。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3fuyes00mjrond2ldww2oa"
-      }
-    },
-    {
-      "id": "cms3fbu4z00h2rondcoqgyozg",
-      "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
-      "title_en": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
-      "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
-      "permalink": "https://aihot.virxact.com/items/cms3fbu4z00h2rondcoqgyozg",
-      "source": "NVIDIA Blog（RSS）",
-      "publishedAt": "2026-07-27T09:00:07.000Z",
-      "discoveredAt": "2026-07-27T09:00:07.000Z",
-      "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
-      "category": "industry",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3fbu4z00h2rondcoqgyozg"
       }
     }
   ]

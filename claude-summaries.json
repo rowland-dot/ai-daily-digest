@@ -1,39 +1,49 @@
 {
-  "generated_at": "2026-07-30T21:49:42Z",
+  "generated_at": "2026-08-02T21:32:29Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vb16gj/inklingsmall_by_thinkingmachines/": {
-      "en": "Thinking Machines has released Inkling-Small, an open-weight model with 276 billion total parameters and 12 billion active parameters, supporting a one million token context window. Weights are available in NVFP4 format on Hugging Face, and Unsloth has published GGUF quantizations. Community testing confirms the Unsloth GGUF runs on CUDA with CPU offloading through a developmental llama.cpp branch, making the model accessible for local inference on mixed hardware setups.",
-      "zh": "Thinking Machines 发布开源模型 Inkling-Small，总参数 2760 亿、激活参数 120 亿，支持 100 万 token 上下文窗口。Hugging Face 上提供 NVFP4 权重，Unsloth 团队同步发布 GGUF 量化版本。社区实测 Unsloth GGUF 可通过 llama.cpp 开发分支在 CUDA 加 CPU 卸载配置下运行，为异构硬件本地推理提供便利。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vd874t/i_pushed_kimi_k3_onto_one_cpu_with_8_gb_of_ram/": {
+      "en": "An engineer wrote a C99 inference engine to run the 1.56 terabyte Kimi K3 checkpoint on a single machine using as little as 8 gigabytes of RAM. Ninety-three percent of the weights are routed experts and only 16 of 896 fire per token, so experts stream off NVMe on demand with no dequantization step. Peak memory sits at 8.24 gigabytes at 33 seconds per token; 128 gigabytes brings that to 20 seconds. Six C files, no framework, built to understand the architecture.",
+      "zh": "工程师用C99写了一个推理引擎，让1.56 TB的Kimi K3检查点在仅8 GB内存的单机上运行。93%的权重是路由专家，每token仅激活896个中的16个，因此专家按需从NVMe流式读取，省去反量化步骤。最小配置下峰值内存8.24 GB，约每33秒生成一个token；128 GB时可降至每20秒。六个C文件，无框架，仅为理解架构而构建。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vazdxp/lg_ai_research_releases_kexaone_20_750b_a37b/": {
-      "en": "LG AI Research has released K-EXAONE 2.0, a 750 billion parameter open-weight model developed under Phase 2 of Korea's Sovereign AI Foundation Model Project. Three times larger than its 236 billion parameter predecessor, it supports ten languages and ships under Apache 2.0. Reported benchmarks include 94.4 on OpenAI MRCR long context and 89.6 on Ko-LongBench, coding gains averaging 30 percent over version one, and 94.6 average on ROK-Fortress safety and Korean alignment tests.",
-      "zh": "LG AI Research 发布 K-EXAONE 2.0，总参数 7500 亿、激活 370 亿，为韩国主权 AI 基础模型项目第二阶段成果，规模是上代 2360 亿模型的三倍，Apache 2.0 授权，支持十种语言。官方基准显示长上下文 OpenAI MRCR 得分 94.4、Ko-LongBench 89.6，编码平均较上代提升 30%，安全与韩语对齐评测 ROK-Fortress 均分 94.6。",
-      "title_en": "LG AI Research releases K-EXAONE 2.0, a 750 billion parameter model with 37 billion active parameters",
-      "title_zh": "LG AI Research 发布 K-EXAONE 2.0：总参数 7500 亿、激活 370 亿"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vdh1us/vacuum_16t/": {
+      "en": "A prank repository claims 16.5 trillion parameters on Hugging Face while containing no real weights. Hugging Face computes parameter count from safetensors headers without reading tensor data, so the repo declares 3,841 giant tensors plus a 4.29 billion token context window backed by real zero-filled tensors. Xet content-defined chunking deduplicated the 8.25 terabytes of declared bytes down to about 692 kilobytes actually transferred. Storage quota bills logical size, but bandwidth cost collapses to nothing.",
+      "zh": "一个恶搞仓库在Hugging Face上声称拥有16.5万亿参数，实际不含任何真实权重。Hugging Face仅通过safetensors头部计算参数量而不读取张量数据，因此该仓库声明了3841个巨大张量和42.9亿token的上下文窗口，全部由零填充的真实张量支撑。Xet内容定义分块将声称的8.25 TB字节压缩到仅约692 KB实际传输。存储配额按逻辑大小计费，但带宽几乎为零。",
+      "title_en": "Vacuum 16T, a hoax sixteen point five trillion parameter Hugging Face repository made entirely of zero bytes",
+      "title_zh": "Vacuum 16T：一个由零字节构成的假的16.5万亿参数Hugging Face仓库"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vapetj/glm_52_with_vision_on_hugging_face/": {
-      "en": "Baseten has published GLM-5.2-Vision on Hugging Face, produced by grafting the vision encoder from Kimi k2.6 onto the GLM 5.2 base model. Lack of vision was a common complaint when GLM 5.2 first shipped, so the community welcomes an open weight fix from an inference provider rather than the original lab. The release lands in NVFP4 quantization on Hugging Face; the poster has not personally tested output quality yet.",
-      "zh": "Baseten 在 Hugging Face 发布 GLM-5.2-Vision，将 Kimi k2.6 的视觉编码器嫁接到 GLM 5.2 基座之上。GLM 5.2 最初无视觉能力常被诟病，社区欢迎由推理服务商而非原厂发布的这一开源补充。权重以 NVFP4 量化形式提供，发帖者尚未亲自测试输出质量。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vdbix4/deepseekv4flash_284b_on_53gb_of_memory/": {
+      "en": "Mference, a follow-up to a Qwen 3.6 port, is a new inference engine that streams selected Mixture of Experts weights off SSD while keeping the shared core and key-value cache resident. On a 24 gigabyte M5 Pro it runs Gemma 4 26B-A4B at 31 to 35 tokens per second, Qwen 3.6 35B-A3B at 19 to 23 tokens per second, and the new DeepSeek V4 Flash 284B-A13B at up to 4.8 tokens per second using a two-bit dynamic quantization occupying 91 gigabytes on disk.",
+      "zh": "Mference是Qwen 3.6移植的后续，一个将选定的混合专家权重从SSD流式读取、同时把共享核心和键值缓存驻留内存的新推理引擎。在24 GB的M5 Pro上，Gemma 4 26B-A4B达每秒31到35 token，Qwen 3.6 35B-A3B为每秒19到23 token，新增的DeepSeek V4 Flash 284B-A13B最高每秒4.8 token，采用2位动态量化，磁盘占91 GB。",
+      "title_en": "Running the 284 billion parameter DeepSeek V4 Flash model on 5.3 gigabytes of memory",
+      "title_zh": "在5.3 GB内存上运行2840亿参数的DeepSeek V4 Flash模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vasnys/turbofieldfare_opensource_engine_running_gemma_4/": {
-      "en": "Turbo-fieldfare is a custom Swift and Metal inference engine for M-series Macs that runs Gemma 4 26B, the A4B instruction tuned variant, in roughly 2 gigabytes of memory instead of the usual 14. Reported throughput is 5 to 6 tokens per second on an 8 gigabyte M2 MacBook Air and 31 to 35 tokens per second on an M5 MacBook Pro. It ships with an OpenAI compatible local server supporting streaming and tool calls.",
-      "zh": "Turbo-fieldfare 是一款面向 M 系列 Mac 的 Swift 与 Metal 自研推理引擎，可在约 2 GB 内存下运行 Gemma 4 26B（A4B 指令调优版），远低于常见的 14 GB。作者称 8 GB 内存 M2 MacBook Air 上可达每秒 5 到 6 token，M5 MacBook Pro 上达每秒 31 到 35 token，并附带兼容 OpenAI 接口的本地服务器，支持流式输出与工具调用。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vdld4v/deepseekv4flash0731_dwarfstar_on_mac/": {
+      "en": "A short benchmark for DeepSeek V4 Flash 0731 Dwarfstar running on an Apple M2 Ultra with 192 gigabytes of RAM. Decode speed starts at 28 tokens per second and holds up well as context grows: about 23.5 tokens per second at 45 thousand tokens deep, and 18 tokens per second at 192 thousand tokens deep. That decode rate is maintained across an 8 thousand token output at every tested depth.",
+      "zh": "一项针对DeepSeek V4 Flash 0731 Dwarfstar在192 GB M2 Ultra上的简短基准测试。解码速度起始为每秒28 token，随上下文增长仍保持稳定：45k深度时约每秒23.5 token，192k深度时约每秒18 token。该解码速率在所有测试深度下都能持续生成8k token输出。",
+      "title_en": "DeepSeek V4 Flash Dwarfstar decode benchmarks on an Apple M2 Ultra with 192 gigabytes of RAM",
+      "title_zh": "DeepSeek V4 Flash Dwarfstar在192 GB的Apple M2 Ultra上的解码基准测试"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vaaqdl/quantizing_kimi_k3_28t_a50b_to_gguf_ourselves_q3/": {
-      "en": "The Atomic Chat team is producing dynamic GGUF quantizations of Kimi K3, a 2.8 trillion parameter mixture of experts model with 50 billion active parameters, using their own llama.cpp fork. The Q3_K_S build is complete and occupies about 1114 gibibytes on disk; Q1 and Q2 are in progress. Inference runs entirely from memory on a rented AMD EPYC 9554P box with 1.5 terabytes of DDR5 and no GPU, achieving 4.21 tokens per second at 512 token prompt processing.",
-      "zh": "Atomic Chat 团队用自家 llama.cpp 分支为 Kimi K3（2.8 万亿参数混合专家模型，激活 500 亿）自制动态 GGUF 量化。Q3_K_S 版本已完成，约占 1114 GiB 磁盘空间，Q1 与 Q2 仍在进行中。推理在无 GPU 的租赁 AMD EPYC 9554P 服务器上完全依赖 1.5 TB DDR5 内存，512 token 提示处理速度为每秒 4.21 token。",
-      "title_en": "Community produced GGUF quantization of Kimi K3 running on 1.5 terabytes of memory with no GPU",
-      "title_zh": "社区自制 Kimi K3 GGUF 量化：纯 CPU 加 1.5 TB 内存推理"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vd51ey/ran_ds_v4flash0731_locally_on_3xmi50_32gb_15_ts_tg/": {
+      "en": "The author ran DeepSeek V4 Flash 0731 at UD-IQ2_M quantization fully in VRAM on three AMD MI50 32 gigabyte cards, occupying 91 gigabytes of a 96 gigabyte pool. Text generation stayed at 15 to 16 tokens per second even on 30 thousand token outputs, and prompt processing hit 105 to 110 tokens per second. A single coding test, a canvas Rubik's cube animation, produced working HTML with only a minor mix-up between memory bandwidth and PCIe bandwidth.",
+      "zh": "作者在三张AMD MI50 32 GB显卡上以UD-IQ2_M量化完全在显存中运行DeepSeek V4 Flash 0731，占用96 GB显存池中的91 GB。即使输出3万token，文本生成仍保持每秒15到16 token，提示处理达每秒105到110 token。单次编码测试用canvas实现魔方动画，生成的HTML可正常工作，仅在显存带宽与PCIe带宽上出现小错误。",
+      "title_en": "Running DeepSeek V4 Flash locally on three AMD MI50 32 gigabyte cards at about 15 tokens per second",
+      "title_zh": "在三张AMD MI50 32 GB显卡上本地运行DeepSeek V4 Flash，每秒约15 token"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vapbnl/benchmarked_mindcontrol_for_llamacpp/": {
-      "en": "Follow-up benchmarks for MindControl, a sampler level reasoning budget mechanism for llama.cpp that nudges the model with self-aware statements about its remaining tokens rather than hard truncation. Testing on Qwen3.6-27B across HumanEval+ and LiveCodeBench shows consistent token savings, with the most heavily guided configuration using less than half the tokens of naive cutoff for comparable accuracy. On HumanEval+ the most constrained setup scored a best-in-test 95.7 percent, suggesting reasoning budgets can curb overthinking on simple problems.",
-      "zh": "MindControl 后续基准测试。这项 llama.cpp 采样器级推理预算机制以自省式提示引导模型，替代硬性截断。在 Qwen3.6-27B 上跑 HumanEval+ 与 LiveCodeBench，token 消耗一致下降，最激进配置以不到裸截断一半的 token 达到相当准确度。HumanEval+ 中约束最强的方案更以 95.7% 拿下全场最高分，显示预算提示能抑制简单题的过度推理。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vdbgw5/psa_for_deepseekv4flash0731_users_dont_blow_out/": {
+      "en": "A public service announcement for DeepSeek V4 Flash 0731 users: the model's chat template has no mid-conversation system role, so any system message inserted mid-chat gets hoisted to the top of the prompt, breaking the prefix cache and stripping conversational proximity from the injection point. The correct role for late instructions is latest_reminder, which DeepSeek trained the model to consume. The author uses llama.cpp, which passes the role through cleanly.",
+      "zh": "给DeepSeek V4 Flash 0731用户的一则提醒：该模型的对话模板没有中途系统角色，任何中途插入的系统消息都会被提升到提示顶部，破坏前缀缓存并切断与注入点的对话邻近性。用于后续指令的正确角色是latest_reminder，这是DeepSeek训练模型接受的角色。作者使用llama.cpp可原样传递该角色。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vayzwm/nanbeige423b_im_not_impressed/": {
-      "en": "A hands-on review of Nanbeige 4.2 3B, whose benchmarks claimed to beat Qwen3.5 9B and Gemma4 12B. The reviewer found the looped architecture (each layer traversed twice) delivers the speed and context footprint of a 6 billion parameter model, with 128k context costing 5.2 gigabytes of KV cache. Its max thinking mode never stops reasoning, burning context on trivial tasks, and it flunked two straightforward brownfield coding tasks. Tool calling is the sole strong point.",
-      "zh": "Nanbeige 4.2 3B 实测评测。其官方基准声称压过 Qwen3.5 9B 与 Gemma4 12B。作者发现该模型采用循环架构（每层遍历两次），实际速度与上下文占用相当于 60 亿参数模型，128k 上下文 KV 缓存高达 5.2 GB。最高推理档位下永不停歇，简单任务也大量消耗上下文，两个直白的存量代码维护任务均以失败告终，唯一亮点是工具调用稳定。",
-      "title_en": "Hands-on review of Nanbeige 4.2 3B, an underwhelming looped small model",
-      "title_zh": "Nanbeige 4.2 3B 上手评测：循环架构小模型表现不佳"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vdd795/xberg_v1_is_out/": {
+      "en": "Xberg version one ships as the successor to Kreuzberg, a content intelligence framework covering 101 document formats, 367 code and data types, audio and video transcription, and static or JavaScript-rendered web pages. Highlights include a pure Rust PDF backend, layout-aware reading order via ONNX detection, native PaddleOCR, and a Candle-based optical character recognition and vision-language stack running TrOCR, GLM-OCR, GOT-OCR, DeepSeek-OCR, and PaddleOCR-VL. It ships fifteen language bindings with full Android and iOS support and in-browser inference via WebAssembly.",
+      "zh": "Xberg 1.0作为Kreuzberg的继任者发布，是一个内容智能框架，覆盖101种文档格式、367种代码和数据类型、音视频转录以及静态和JavaScript渲染的网页。亮点包括纯Rust的PDF后端、基于ONNX检测的布局感知阅读顺序、原生PaddleOCR，以及基于Candle运行TrOCR、GLM-OCR、GOT-OCR、DeepSeek-OCR和PaddleOCR-VL的光学字符识别与视觉语言栈。共15种语言绑定，含完整的Android和iOS支持及WebAssembly浏览器内推理。",
+      "title_en": "Xberg version one released as the successor to Kreuzberg for extracting content from documents, code, audio, and web pages",
+      "title_zh": "Xberg 1.0发布，作为Kreuzberg的继任者用于从文档、代码、音视频和网页提取内容"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vd44uv/expertonly_iq3_requant_of_deepseekv4flash0731/": {
+      "en": "The author requantized only the 129 routed expert tensors of DeepSeek V4 Flash 0731 down to three-bit precision, leaving attention, shared experts, router, and indexer at higher precision. The 111 gigabyte result scores better on Kullback-Leibler divergence than Unsloth's UD-IQ3_S variant at 0.24 versus 0.29, though it is about 2 gigabytes larger. On a mixed five-GPU box with expert spill to system memory, decode ran at about 14 tokens per second, roughly 1.4 times the full precision source at the same placement.",
+      "zh": "作者仅对DeepSeek V4 Flash 0731的129个路由专家张量进行三位量化，注意力、共享专家、路由器和索引器保留较高精度。111 GB的结果在Kullback-Leibler散度上优于Unsloth的UD-IQ3_S版本，为0.24对0.29，但体积多约2 GB。在专家溢出到系统内存的混合五GPU配置下，解码约每秒14 token，约为同配置下全精度源的1.4倍。",
+      "title_en": "Expert-only three-bit requantization of DeepSeek V4 Flash beats Unsloth's small three-bit variant on quality and runs 1.4 times faster on a CPU-spill rig",
+      "title_zh": "仅对DeepSeek V4 Flash专家做三位量化，质量优于Unsloth的三位small版本，在CPU溢出配置下解码提速1.4倍"
     }
   }
 }

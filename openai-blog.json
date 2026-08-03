@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-08-02T21:26:38.316Z",
+  "fetched_at": "2026-08-03T21:42:13.457Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "link": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "description": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations."
+    },
     {
       "title": "Ten advances in mathematics and theoretical computer science",
       "link": "https://openai.com/index/ten-advances-in-mathematics",
@@ -85,12 +91,6 @@
       "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
       "pubDate": "Wed, 22 Jul 2026 13:00:00 GMT",
       "description": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex."
-    },
-    {
-      "title": "How news organizations are using AI to advance their vital missions",
-      "link": "https://openai.com/index/how-news-organizations-are-using-ai",
-      "pubDate": "Wed, 22 Jul 2026 13:00:00 GMT",
-      "description": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide."
     }
   ]
 }

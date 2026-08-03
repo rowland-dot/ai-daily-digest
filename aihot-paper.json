@@ -76,6 +76,24 @@
       }
     },
     {
+      "id": "cmscxmzdc0qz4roeucecesunt",
+      "title": "大语言模型的显著性偏差：常识推理中的知识压制而非缺失",
+      "title_en": "Would You Walk to the Car Wash？ Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
+      "url": "https://arxiv.org/abs/2607.28478",
+      "permalink": "https://aihot.virxact.com/items/cmscxmzdc0qz4roeucecesunt",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "discoveredAt": "2026-07-30T00:00:00.000Z",
+      "summary": "研究提出\"显著性偏差\"概念，指大语言模型被输入中无用的显性干扰（如数字）劫持，忽略任务隐含的常识前提。基于新构建的 SaliTrap 基准评估 12 个主流模型，最佳模型仅 54.8% 查询避开陷阱，8/12 模型低于 30%；GLM-5.1 和 Kimi-K2 在识别陷阱后仍分别有 86.2% 和 81.8% 的遵从率。",
+      "category": "paper",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmscxmzdc0qz4roeucecesunt"
+      }
+    },
+    {
       "id": "cms8epxbt0auqrot06452whxb",
       "title": "BM25 在大规模语料中胜出：检索增强生成范式的规模扩展研究",
       "title_en": "BM25 Wins at Scale： A Scaling Study of Retrieval-Augmented Generation Paradigms",
@@ -217,24 +235,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms6x4iu90276rouqaq8hzfw7"
-      }
-    },
-    {
-      "id": "cms5hnvv70015ros543ypf7it",
-      "title": "InMind 基准揭示智能体记忆系统的隐式关联盲点",
-      "title_en": "Keep It InMind： Benchmarking the Implicit-Association Blind Spot in Agent Memory",
-      "url": "https://arxiv.org/abs/2607.24368",
-      "permalink": "https://aihot.virxact.com/items/cms5hnvv70015ros543ypf7it",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-27T00:00:00.000Z",
-      "discoveredAt": "2026-07-27T00:00:00.000Z",
-      "summary": "研究团队发布 InMind 基准，包含 125 个专家验证任务，测试智能体记忆系统处理隐式关联的能力。当关键记忆直接放入上下文时，骨干模型能回答 84.0% 的间接查询；但通过六种记忆系统检索时，命中率最高仅 14.4%，尽管这些系统直接召回准确率可达 100%。失败根源在于查询驱动的检索接口本身，将\"路由--决定哪些事实必须保持可见\"确立为核心开放问题。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms5hnvv70015ros543ypf7it"
       }
     }
   ]

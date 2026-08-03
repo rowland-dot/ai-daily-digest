@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-08-02T21:26:38.862Z",
+  "fetched_at": "2026-08-03T21:42:14.339Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting David Crawshaw's prompt",
+      "link": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
+      "updated": "2026-08-03T16:15:27+00:00",
+      "summary": "Set up a nightly cron job that executes the prompt: fetch upstream changes to the and rebase all local changes on top of upstream. Check that the software works as intended and replace the current version."
+    },
+    {
+      "title": "Devtools must be open source (exe.dev)",
+      "link": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
+      "updated": "2026-08-03T15:30:38+00:00",
+      "summary": "My comment on Devtools must be open source (exe.dev) &mdash; Hacker News."
+    },
+    {
+      "title": "condense-json 1.0",
+      "link": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+      "updated": "2026-08-02T22:19:59+00:00",
+      "summary": "I'm trying to get braver at releasing 1.0 versions. This little library is a year and a half old now - I've applied some sensible and non-disruptive fixes and shipped the big 1.0 for it."
+    },
     {
       "title": "Open letters about AI development",
       "link": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything",
       "updated": "2026-07-31T21:33:13+00:00",
       "summary": "Oxide and Friends: The Open Weight Revolution with Simon Willison"
-    },
-    {
-      "title": "smevals - a small eval suite for evaluating models, prompts, and harnesses",
-      "link": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
-      "updated": "2026-07-31T21:15:23+00:00",
-      "summary": "smevals - a small eval suite for evaluating models, prompts, and harnesses"
-    },
-    {
-      "title": "Slack Emoji Maker",
-      "link": "https://simonwillison.net/2026/Jul/31/slack-emoji-maker/#atom-everything",
-      "updated": "2026-07-31T20:18:05+00:00",
-      "summary": "I wanted to create a new Slack emoji, and their tool recommends a square that's 128x128 and has a transparent background... so I had Fable build me this simple image editor against those requirements."
-    },
-    {
-      "title": "datasette-agent 0.4a0",
-      "link": "https://simonwillison.net/2026/Jul/31/datasette-agent/#atom-everything",
-      "updated": "2026-07-31T14:14:23+00:00",
-      "summary": "New await context.browser_task() mechanism allowing agent tools to run code directly in the user's browser. #33"
     }
   ]
 }
