@@ -1,49 +1,61 @@
 {
-  "generated_at": "2026-08-02T21:32:29Z",
+  "generated_at": "2026-08-03T21:47:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vd874t/i_pushed_kimi_k3_onto_one_cpu_with_8_gb_of_ram/": {
-      "en": "An engineer wrote a C99 inference engine to run the 1.56 terabyte Kimi K3 checkpoint on a single machine using as little as 8 gigabytes of RAM. Ninety-three percent of the weights are routed experts and only 16 of 896 fire per token, so experts stream off NVMe on demand with no dequantization step. Peak memory sits at 8.24 gigabytes at 33 seconds per token; 128 gigabytes brings that to 20 seconds. Six C files, no framework, built to understand the architecture.",
-      "zh": "工程师用C99写了一个推理引擎，让1.56 TB的Kimi K3检查点在仅8 GB内存的单机上运行。93%的权重是路由专家，每token仅激活896个中的16个，因此专家按需从NVMe流式读取，省去反量化步骤。最小配置下峰值内存8.24 GB，约每33秒生成一个token；128 GB时可降至每20秒。六个C文件，无框架，仅为理解架构而构建。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ve1mvh/minimaxh3_now_on_huggingface/": {
+      "en": "MiniMax has released H3 on Hugging Face, positioning it as a general-purpose omni-modal generative system. The model accepts unified inputs across text, images, video, and audio, and can generate video with native stereo audio at resolutions up to two thousand pixels and durations of up to fifteen seconds. Its task-generalization-oriented design gives it broad multimodal understanding and generation ability directly from pre-training, without post-hoc adapters.",
+      "zh": "MiniMax在Hugging Face发布H3，一个通用全模态生成系统。它统一理解文本、图像、视频与音频输入，能生成分辨率最高达两千像素、时长十五秒且自带立体声的视频。系统以任务泛化为目标设计，预训练阶段即具备执行复杂多模态指令的能力。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vdh1us/vacuum_16t/": {
-      "en": "A prank repository claims 16.5 trillion parameters on Hugging Face while containing no real weights. Hugging Face computes parameter count from safetensors headers without reading tensor data, so the repo declares 3,841 giant tensors plus a 4.29 billion token context window backed by real zero-filled tensors. Xet content-defined chunking deduplicated the 8.25 terabytes of declared bytes down to about 692 kilobytes actually transferred. Storage quota bills logical size, but bandwidth cost collapses to nothing.",
-      "zh": "一个恶搞仓库在Hugging Face上声称拥有16.5万亿参数，实际不含任何真实权重。Hugging Face仅通过safetensors头部计算参数量而不读取张量数据，因此该仓库声明了3841个巨大张量和42.9亿token的上下文窗口，全部由零填充的真实张量支撑。Xet内容定义分块将声称的8.25 TB字节压缩到仅约692 KB实际传输。存储配额按逻辑大小计费，但带宽几乎为零。",
-      "title_en": "Vacuum 16T, a hoax sixteen point five trillion parameter Hugging Face repository made entirely of zero bytes",
-      "title_zh": "Vacuum 16T：一个由零字节构成的假的16.5万亿参数Hugging Face仓库"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1veipya/the_chinese_labs_everyone_lumps_together_are/": {
+      "en": "An Ant Group engineer working on the Ling models argues Chinese open-weight labs are pursuing distinct strategies rather than acting as one bloc. Qwen bets on distribution and day-one runtime support, DeepSeek on architecture and simultaneous paper-plus-weights drops, Moonshot on longer horizons, and Ant on serving cost, with Ling three point zero flash designed as a hundred twenty four billion parameter Mixture of Experts for cheap long-context agent loops.",
+      "zh": "一位在蚂蚁集团做Ling模型的工程师认为，中国开源实验室并非一个整体，各家押注不同：Qwen押注分发与运行时首日支持，DeepSeek押注架构并与论文同日放出权重，Moonshot押注更长的时间视野；蚂蚁则押注推理成本，Ling 3.0 flash设计为1240亿总参、约51亿激活的混合专家模型，专为长上下文智能体循环压低成本。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vdbix4/deepseekv4flash_284b_on_53gb_of_memory/": {
-      "en": "Mference, a follow-up to a Qwen 3.6 port, is a new inference engine that streams selected Mixture of Experts weights off SSD while keeping the shared core and key-value cache resident. On a 24 gigabyte M5 Pro it runs Gemma 4 26B-A4B at 31 to 35 tokens per second, Qwen 3.6 35B-A3B at 19 to 23 tokens per second, and the new DeepSeek V4 Flash 284B-A13B at up to 4.8 tokens per second using a two-bit dynamic quantization occupying 91 gigabytes on disk.",
-      "zh": "Mference是Qwen 3.6移植的后续，一个将选定的混合专家权重从SSD流式读取、同时把共享核心和键值缓存驻留内存的新推理引擎。在24 GB的M5 Pro上，Gemma 4 26B-A4B达每秒31到35 token，Qwen 3.6 35B-A3B为每秒19到23 token，新增的DeepSeek V4 Flash 284B-A13B最高每秒4.8 token，采用2位动态量化，磁盘占91 GB。",
-      "title_en": "Running the 284 billion parameter DeepSeek V4 Flash model on 5.3 gigabytes of memory",
-      "title_zh": "在5.3 GB内存上运行2840亿参数的DeepSeek V4 Flash模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1veg9uq/data_center_in_a_box_on_wheels_256gb_vram512gb/": {
+      "en": "An infrastructure engineer shares a six to eight month operational review of a self-built AI workstation packing eight RTX 3090s and two RTX 5090s for a combined two hundred fifty six gigabytes of GPU memory, alongside a sixty four core Threadripper and five hundred twelve gigabytes of ECC system RAM. The rig runs frontier Mixture of Experts inference plus image generation for a small business, and the write-up covers thermals, power, layout, and long-term stability trade-offs.",
+      "zh": "一位IT基础设施工程师分享自建AI工作站六至八个月的运维回顾：八张RTX 3090加两张RTX 5090合计256GB显存，配64核Threadripper和512GB ECC内存，用于替小企业运行前沿混合专家模型推理与图像生成。文中详述散热、供电、机箱布局及长期稳定性权衡。",
+      "title_en": "Six to eight month operational review of a mobile all-in-one AI server with 256 gigabytes of GPU memory and 512 gigabytes of system RAM",
+      "title_zh": "自建移动式AI服务器六至八个月运维回顾：256GB显存加512GB内存的稳定性与性能测评"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vdld4v/deepseekv4flash0731_dwarfstar_on_mac/": {
-      "en": "A short benchmark for DeepSeek V4 Flash 0731 Dwarfstar running on an Apple M2 Ultra with 192 gigabytes of RAM. Decode speed starts at 28 tokens per second and holds up well as context grows: about 23.5 tokens per second at 45 thousand tokens deep, and 18 tokens per second at 192 thousand tokens deep. That decode rate is maintained across an 8 thousand token output at every tested depth.",
-      "zh": "一项针对DeepSeek V4 Flash 0731 Dwarfstar在192 GB M2 Ultra上的简短基准测试。解码速度起始为每秒28 token，随上下文增长仍保持稳定：45k深度时约每秒23.5 token，192k深度时约每秒18 token。该解码速率在所有测试深度下都能持续生成8k token输出。",
-      "title_en": "DeepSeek V4 Flash Dwarfstar decode benchmarks on an Apple M2 Ultra with 192 gigabytes of RAM",
-      "title_zh": "DeepSeek V4 Flash Dwarfstar在192 GB的Apple M2 Ultra上的解码基准测试"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vee1ob/v4flash0731_vibes_after_first_weekend_of_use/": {
+      "en": "A user reports impressions after a weekend with DeepSeek V4 Flash 0731. Quantization drastically changes behavior: three-bit weights are a viable replacement for Qwen three point six twenty seven B, especially inside large tool-calling harnesses, while two-bit weights degrade too much. Full precision approaches GLM five point two quality at a fraction of the cost. The model is agent-focused and light on general knowledge, so tool use matters.",
+      "zh": "一位用户分享DeepSeek V4 Flash 0731一周使用体验：量化对该模型影响巨大，三位量化可作为Qwen 3.6 27B的替代，尤其在带工具的大型上下文中更稳，二位则明显掉档。全精度接近GLM 5.2水平但成本极低。模型明显偏智能体方向，通用知识偏弱，需靠工具调用弥补。",
+      "title_en": "First weekend impressions of DeepSeek V4 Flash 0731 across quantization levels",
+      "title_zh": "首个周末试用DeepSeek V4 Flash 0731各量化版本的主观印象"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vd51ey/ran_ds_v4flash0731_locally_on_3xmi50_32gb_15_ts_tg/": {
-      "en": "The author ran DeepSeek V4 Flash 0731 at UD-IQ2_M quantization fully in VRAM on three AMD MI50 32 gigabyte cards, occupying 91 gigabytes of a 96 gigabyte pool. Text generation stayed at 15 to 16 tokens per second even on 30 thousand token outputs, and prompt processing hit 105 to 110 tokens per second. A single coding test, a canvas Rubik's cube animation, produced working HTML with only a minor mix-up between memory bandwidth and PCIe bandwidth.",
-      "zh": "作者在三张AMD MI50 32 GB显卡上以UD-IQ2_M量化完全在显存中运行DeepSeek V4 Flash 0731，占用96 GB显存池中的91 GB。即使输出3万token，文本生成仍保持每秒15到16 token，提示处理达每秒105到110 token。单次编码测试用canvas实现魔方动画，生成的HTML可正常工作，仅在显存带宽与PCIe带宽上出现小错误。",
-      "title_en": "Running DeepSeek V4 Flash locally on three AMD MI50 32 gigabyte cards at about 15 tokens per second",
-      "title_zh": "在三张AMD MI50 32 GB显卡上本地运行DeepSeek V4 Flash，每秒约15 token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vdy1nd/github_sqliteaiwaste_run_the_full/": {
+      "en": "WASTE is a new dependency-free C inference engine that lets machines run the full two point seven eight trillion parameter Kimi K3 model even when it does not fit in RAM. It keeps the shared model trunk resident in memory, streams individual activated experts directly from NVMe storage on demand, and uses the leftover RAM as a bounded cache of recently used experts to soften disk latency.",
+      "zh": "WASTE是一款无外部依赖的C语言推理引擎，能在内存不足的情况下运行完整的2.78万亿参数Kimi K3模型。它把共享的模型主干常驻内存，按需从NVMe硬盘直接流式读取被激活的专家权重，并把剩余内存作为专家缓存以缓解磁盘延迟。",
+      "title_en": "WASTE inference engine streams Kimi K3's 2.78 trillion parameters directly from NVMe storage",
+      "title_zh": "WASTE推理引擎直接从NVMe硬盘流式加载Kimi K3的2.78万亿参数"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vdbgw5/psa_for_deepseekv4flash0731_users_dont_blow_out/": {
-      "en": "A public service announcement for DeepSeek V4 Flash 0731 users: the model's chat template has no mid-conversation system role, so any system message inserted mid-chat gets hoisted to the top of the prompt, breaking the prefix cache and stripping conversational proximity from the injection point. The correct role for late instructions is latest_reminder, which DeepSeek trained the model to consume. The author uses llama.cpp, which passes the role through cleanly.",
-      "zh": "给DeepSeek V4 Flash 0731用户的一则提醒：该模型的对话模板没有中途系统角色，任何中途插入的系统消息都会被提升到提示顶部，破坏前缀缓存并切断与注入点的对话邻近性。用于后续指令的正确角色是latest_reminder，这是DeepSeek训练模型接受的角色。作者使用llama.cpp可原样传递该角色。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ve9r2q/kat_coder_25_dev_do_yourself_a_favor_and_try_it/": {
+      "en": "A developer strongly recommends KAT Coder 2.5 dev, a thirty five billion parameter Mixture of Experts model with three billion active per token. On a real research-code modification benchmark it scored seven out of ten, tying near the top and beating Qwen three point six thirty five B A three B, Ornith one point zero thirty five B, and multiple Gemma four variants, while running roughly five times faster than a dense twenty seven B baseline.",
+      "zh": "一位开发者力荐KAT Coder 2.5 dev，一款35B总参、3B激活的混合专家模型。在一项真实科研代码修改评测中它得到7分（满分10分），与并列最高分接近，明显超过Qwen 3.6 35B A3B、Ornith 1.0 35B以及多款Gemma 4，同时速度约为27B稠密模型的五倍。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vdd795/xberg_v1_is_out/": {
-      "en": "Xberg version one ships as the successor to Kreuzberg, a content intelligence framework covering 101 document formats, 367 code and data types, audio and video transcription, and static or JavaScript-rendered web pages. Highlights include a pure Rust PDF backend, layout-aware reading order via ONNX detection, native PaddleOCR, and a Candle-based optical character recognition and vision-language stack running TrOCR, GLM-OCR, GOT-OCR, DeepSeek-OCR, and PaddleOCR-VL. It ships fifteen language bindings with full Android and iOS support and in-browser inference via WebAssembly.",
-      "zh": "Xberg 1.0作为Kreuzberg的继任者发布，是一个内容智能框架，覆盖101种文档格式、367种代码和数据类型、音视频转录以及静态和JavaScript渲染的网页。亮点包括纯Rust的PDF后端、基于ONNX检测的布局感知阅读顺序、原生PaddleOCR，以及基于Candle运行TrOCR、GLM-OCR、GOT-OCR、DeepSeek-OCR和PaddleOCR-VL的光学字符识别与视觉语言栈。共15种语言绑定，含完整的Android和iOS支持及WebAssembly浏览器内推理。",
-      "title_en": "Xberg version one released as the successor to Kreuzberg for extracting content from documents, code, audio, and web pages",
-      "title_zh": "Xberg 1.0发布，作为Kreuzberg的继任者用于从文档、代码、音视频和网页提取内容"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vduxth/you_really_should_not_quantize_kv_cache_for/": {
+      "en": "A user benchmarks the quality hit from switching DeepSeek V4 Flash's key-value cache from sixteen-bit BFloat to eight-bit and finds it significant: mean Kullback-Leibler divergence of about zero point one four six and a same-top-token rate of only eighty seven percent. The same test on Qwen three ninety seven B is nearly lossless, with divergence of about zero point zero zero four and same-top-token rate above ninety seven percent. Keep V4 Flash's cache full precision.",
+      "zh": "一位用户实测DeepSeek V4 Flash把键值缓存从16位BF16降到8位的质量损失：平均KL散度约0.146，最高概率词相同率仅87%。同样的实验在Qwen 397B上几乎无损，KL散度仅约0.004，相同率超过97%。结论：不要量化V4 Flash的键值缓存，保持全精度。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vd44uv/expertonly_iq3_requant_of_deepseekv4flash0731/": {
-      "en": "The author requantized only the 129 routed expert tensors of DeepSeek V4 Flash 0731 down to three-bit precision, leaving attention, shared experts, router, and indexer at higher precision. The 111 gigabyte result scores better on Kullback-Leibler divergence than Unsloth's UD-IQ3_S variant at 0.24 versus 0.29, though it is about 2 gigabytes larger. On a mixed five-GPU box with expert spill to system memory, decode ran at about 14 tokens per second, roughly 1.4 times the full precision source at the same placement.",
-      "zh": "作者仅对DeepSeek V4 Flash 0731的129个路由专家张量进行三位量化，注意力、共享专家、路由器和索引器保留较高精度。111 GB的结果在Kullback-Leibler散度上优于Unsloth的UD-IQ3_S版本，为0.24对0.29，但体积多约2 GB。在专家溢出到系统内存的混合五GPU配置下，解码约每秒14 token，约为同配置下全精度源的1.4倍。",
-      "title_en": "Expert-only three-bit requantization of DeepSeek V4 Flash beats Unsloth's small three-bit variant on quality and runs 1.4 times faster on a CPU-spill rig",
-      "title_zh": "仅对DeepSeek V4 Flash专家做三位量化，质量优于Unsloth的三位small版本，在CPU溢出配置下解码提速1.4倍"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ve9eo3/ai9stars_released_g9v339a5b/": {
+      "en": "AI9Stars has released G9v3, an open-weights language model with thirty nine billion total parameters and five active experts per token, positioned as a stronger reasoner than the same team's earlier three billion parameter version. It is licensed under Apache two point zero for personal and commercial use, targets general assistant, coding, tool-use, and reasoning workloads, and supports both thinking and non-thinking response modes.",
+      "zh": "AI9Stars发布G9v3开源权重语言模型，总参数390亿、每Token激活5个专家，推理能力据称优于同团队早前的30亿参数版本。采用Apache 2.0协议，个人和商业均可使用，面向通用助理、编程、工具调用和推理任务，同时支持思考与非思考两种响应模式。",
+      "title_en": "AI9Stars releases G9v3 open-weight reasoning model with 39 billion parameters and 5 active experts",
+      "title_zh": "AI9Stars发布G9v3开源权重推理模型：390亿总参与5个激活专家"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vecxhw/i_compared_mineru_granitedocling_and_paddleocrvl/": {
+      "en": "A user benchmarks three open-source PDF parsers, MinerU, Granite-Docling, and PaddleOCR-VL, across twelve capabilities on six document types including financial statements, arXiv papers, scanned invoices, and multilingual datasheets, all on the same NVIDIA L4 GPU. Granite-Docling emits the cleanest markdown with real heading levels and pipe tables. MinerU can read embedded bar charts but silently drops footers such as invoice bank numbers unless rebuilt from the raw block list.",
+      "zh": "一位用户在同一块NVIDIA L4显卡上，用六种文档、十二项能力对比三款开源PDF解析器：MinerU、Granite-Docling与PaddleOCR-VL。Granite-Docling输出的Markdown最干净，能生成真实标题层级和管道表格；MinerU能读懂条形图并把数据转为表格，但会静默丢弃发票银行账号等页面附件，除非绕过默认Markdown从原始块列表重建。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vegedy/deepseek_v4_flash_0731_happy_numbers_700pp18tg/": {
+      "en": "A user tunes DeepSeek V4 Flash 0731 at eight-bit quantization on a Threadripper 5965WX with five hundred twelve gigabytes of ECC RAM and a single RTX 5090. Raising llama dot cpp's batch and micro-batch sizes to eight thousand one hundred ninety two and enabling CPU offload for the Mixture of Experts weights lifts prompt processing from about one hundred forty to over seven hundred tokens per second, while generation stays around eighteen tokens per second out to one hundred thousand tokens of context.",
+      "zh": "一位用户在Threadripper 5965WX、512GB ECC内存加一张RTX 5090上跑DeepSeek V4 Flash 0731的8位量化版。将llama.cpp的批次与微批次调到8192并对混合专家权重启用CPU卸载后，提示处理速度从每秒约140 Token跃升至700 Token以上，生成速度在10万Token上下文内维持约每秒18 Token。",
+      "title_en": "Tuning DeepSeek V4 Flash 0731 on a Threadripper plus RTX 5090 for 700 prompt tokens per second",
+      "title_zh": "在Threadripper加RTX 5090上调优DeepSeek V4 Flash 0731：提示处理达每秒700 Token"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1ve6ds2/döner_bench_deepseekv4flash_iq2_xs_running_on_a/": {
+      "en": "A user runs DeepSeek V4 Flash 0731 quantized to the aggressive IQ2 XS two-bit scheme, with expert weights kept at eight bits, on a single RTX 3090 and one hundred twenty eight gigabytes of DDR4 RAM under llama dot cpp. Given a prompt to write a self-contained HTML canvas simulating a vertical döner kebab rotating in front of a gas heater, the model produces a complete working render, imperfect in fine detail but coherent overall.",
+      "zh": "一位用户在单张RTX 3090加128GB DDR4内存上，用llama.cpp运行DeepSeek V4 Flash 0731的IQ2_XS激进二位量化版，专家层保留8位。任务是写一个不依赖任何库的单文件HTML画布，模拟燃气加热器前旋转的立式土耳其烤肉。模型生成的动画完整可运行，细节欠精但整体场景与要求相符。",
+      "title_en": "DeepSeek V4 Flash 0731 at IQ2 XS two-bit quantization renders a rotating kebab canvas on a single RTX 3090",
+      "title_zh": "DeepSeek V4 Flash 0731的IQ2_XS二位量化版在单张RTX 3090上完成旋转烤肉画布测试"
     }
   }
 }

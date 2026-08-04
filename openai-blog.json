@@ -1,12 +1,36 @@
 {
-  "fetched_at": "2026-08-03T21:42:13.457Z",
+  "fetched_at": "2026-08-04T21:50:00.380Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "pubDate": "Tue, 04 Aug 2026 19:00:00 GMT",
+      "description": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation."
+    },
+    {
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "pubDate": "Tue, 04 Aug 2026 00:00:00 GMT",
+      "description": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build."
+    },
+    {
+      "title": "Apple is getting this wrong",
+      "link": "https://openai.com/index/apple-is-getting-this-wrong",
+      "pubDate": "Mon, 03 Aug 2026 22:00:00 GMT",
+      "description": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened."
+    },
     {
       "title": "How we built a realtime system for responsive voice AI in six months",
       "link": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
       "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
       "description": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations."
+    },
+    {
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "link": "https://openai.com/index/circles",
+      "pubDate": "Mon, 03 Aug 2026 00:00:00 GMT",
+      "description": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency."
     },
     {
       "title": "Ten advances in mathematics and theoretical computer science",
@@ -67,30 +91,6 @@
       "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
       "pubDate": "Wed, 29 Jul 2026 00:00:00 GMT",
       "description": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar."
-    },
-    {
-      "title": "Scientific computing in the age of agentic AI",
-      "link": "https://openai.com/index/scientific-computing-agentic-ai",
-      "pubDate": "Tue, 28 Jul 2026 17:00:00 GMT",
-      "description": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond."
-    },
-    {
-      "title": "How AI is expanding what people do at work",
-      "link": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
-      "pubDate": "Mon, 27 Jul 2026 03:30:00 GMT",
-      "description": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries."
-    },
-    {
-      "title": "Launching Health in ChatGPT",
-      "link": "https://openai.com/index/health-in-chatgpt",
-      "pubDate": "Thu, 23 Jul 2026 00:00:00 GMT",
-      "description": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health."
-    },
-    {
-      "title": "Building AI infrastructure with the Effingham County community",
-      "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-      "pubDate": "Wed, 22 Jul 2026 13:00:00 GMT",
-      "description": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex."
     }
   ]
 }

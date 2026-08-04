@@ -1,8 +1,350 @@
 {
-  "count": 22,
+  "count": 41,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsezylz31cadro2eoq1np3vh",
+      "title": "Soup v0.72.4：在4 GB显存笔记本GPU上微调8B模型",
+      "title_en": "Show HN： 在配备4 GB显存的笔记本电脑GPU上对8B模型进行微调",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "permalink": "https://aihot.virxact.com/items/cmsezylz31cadro2eoq1np3vh",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-04T18:17:29.648Z",
+      "discoveredAt": "2026-08-04T18:34:01.675Z",
+      "summary": "Soup 推出 v0.72.4，支持在配备 4 GB 显存的笔记本 GPU 上通过 QLoRA 微调 8B 模型，无需 SSH 或云服务。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsezylz31cadro2eoq1np3vh"
+      }
+    },
+    {
+      "id": "cmseyfjcz1au8ro2enx0b7os6",
+      "title": "SpecForge v0.3.0 发布：统一解耦与共置投机解码栈，新增开放 SpecBundle 草稿模型",
+      "title_en": "Blog SpecForge v0.3.0： a Unified Disaggregated and Colocated Speculative Decoding Stack， and New Open SpecBundle Draft Models When we first released SpecForge， a training job owned both the frozen target model and the draft model being optimized. This made EAGLE3 draft-model training practical and directly compatible with SG… The SpecForge Team",
+      "url": "https://www.lmsys.org/blog/2026-08-04-specforge-v0-3",
+      "permalink": "https://aihot.virxact.com/items/cmseyfjcz1au8ro2enx0b7os6",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-04T17:51:09.590Z",
+      "discoveredAt": "2026-08-04T17:51:09.590Z",
+      "summary": "SpecForge v0.3.0 将目标模型推理与草稿模型训练分离，支持 EAGLE3、EAGLE3.1、P-EAGLE、DFlash、Domino、DSpark 等多种投机解码算法，并统一在线、离线与解耦工作流。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseyfjcz1au8ro2enx0b7os6"
+      }
+    },
+    {
+      "id": "cmsew3l4y18qhro2edk0yaat8",
+      "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+      "title_en": "A unified API for AI model routing",
+      "url": "https://developers.googleblog.com/a-unified-api-for-ai-model-routing",
+      "permalink": "https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8",
+      "source": "Google Developers Blog（RSS）",
+      "publishedAt": "2026-08-04T16:45:02.138Z",
+      "discoveredAt": "2026-08-04T16:45:02.138Z",
+      "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8"
+      }
+    },
+    {
+      "id": "cmsevo5m118dmro2e9d1ven6v",
+      "title": "Google Cloud 推出 Database Operations Agents，实现自主数据库管理",
+      "title_en": "Introducing Database Operations Agents： The future of autonomous database management",
+      "url": "https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents",
+      "permalink": "https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v",
+      "source": "Google Cloud：Databases（RSS）",
+      "publishedAt": "2026-08-04T16:00:00.000Z",
+      "discoveredAt": "2026-08-04T16:33:49.420Z",
+      "summary": "Google Cloud 在 Agentic Data Cloud 发布中推出两款 AI 数据库智能体：Database Onboarding Agent 负责 Day 0 的配置与部署，Database Observability Agent 负责 Day 1/2 的监控、故障排查与维护。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v"
+      }
+    },
+    {
+      "id": "cmsesrlcn15j7ro2evd57my2c",
+      "title": "NVIDIA 开源 cuFile API，推动 GPU 直连存储",
+      "title_en": "As AI Increases Demands on Memory， Storage Steps Up",
+      "url": "https://blogs.nvidia.com/blog/ai-storage-fms",
+      "permalink": "https://aihot.virxact.com/items/cmsesrlcn15j7ro2evd57my2c",
+      "source": "NVIDIA Blog（RSS）",
+      "publishedAt": "2026-08-04T15:00:47.000Z",
+      "discoveredAt": "2026-08-04T15:12:36.927Z",
+      "summary": "NVIDIA 在 FMS 大会上宣布开源 cuFile API 及底层存储软件栈，让 GPU 可直接读写存储，访问延迟降至微秒级。其 Vera CPU 在两级压缩与加密流水线中吞吐量比 x86 CPU 最高提升 3.21 倍，并联合 40 多家厂商推出 Storage-Next 计划。",
+      "category": "ai-products",
+      "score": 62,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsesrlcn15j7ro2evd57my2c"
+      }
+    },
+    {
+      "id": "cmseq167s12m2ro2efhh7h5ia",
+      "title": "Cloudflare 让智能体通过本地追踪调试 Workers",
+      "title_en": "Your agent can now debug Workers with local tracing",
+      "url": "https://blog.cloudflare.com/local-tracing",
+      "permalink": "https://aihot.virxact.com/items/cmseq167s12m2ro2efhh7h5ia",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "discoveredAt": "2026-08-04T13:56:04.557Z",
+      "summary": "Cloudflare 即日起在 wrangler dev 和 vite dev 中自动为本地 Worker 调用捕获 OpenTelemetry 追踪，无需安装 SDK 或配置智能体。智能体可通过 Local Explorer API 查询追踪数据，定位失败操作、修复本地环境并验证结果。开发者也可在浏览器界面 Local Explorer 中可视化查看 spans、时序、错误及关联控制台日志。",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseq167s12m2ro2efhh7h5ia"
+      }
+    },
+    {
+      "id": "cmseq167r12m1ro2eqjsdn6wd",
+      "title": "Cloudflare 推出 Agents 平台，率先上线智能体追踪功能",
+      "title_en": "Introducing： Cloudflare Agents",
+      "url": "https://blog.cloudflare.com/agents-on-cloudflare",
+      "permalink": "https://aihot.virxact.com/items/cmseq167r12m1ro2eqjsdn6wd",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "discoveredAt": "2026-08-04T13:56:04.557Z",
+      "summary": "Cloudflare 推出 Cloudflare Agents，将部署在平台上的智能体会话统一到一个视图中，并率先上线 agent tracing 功能。该功能支持 OpenTelemetry 兼容的 Think、Flue 和 AI SDK 等智能体框架，可测量每次模型调用、工具执行和 token 消耗。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseq167r12m1ro2eqjsdn6wd"
+      }
+    },
+    {
+      "id": "cmseq167r12lzro2ecc1f23gs",
+      "title": "Cloudflare 推出 CI SDK：在 Cloudflare 上为百万级仓库运行 CI/CD 流水线",
+      "title_en": "Run CI/CD for millions of repos - on your platform， on Cloudflare",
+      "url": "https://blog.cloudflare.com/ci-workflows",
+      "permalink": "https://aihot.virxact.com/items/cmseq167r12lzro2ecc1f23gs",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "discoveredAt": "2026-08-04T13:56:04.557Z",
+      "summary": "Cloudflare 推出基于 Workflows 和 Sandbox SDK 的 CI SDK，让平台方直接在 Cloudflare 上运行 CI/CD 流水线，支持构建、lint、类型检查、单元测试、依赖缓存及条件部署。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseq167r12lzro2ecc1f23gs"
+      }
+    },
+    {
+      "id": "cmseq167r12lxro2erzimnhk2",
+      "title": "Cloudflare 推出 Agent Development Lifecycle，让智能体接管更多软件开发生命周期",
+      "title_en": "The Agent Development Lifecycle has arrived on Cloudflare",
+      "url": "https://blog.cloudflare.com/agent-development-lifecycle",
+      "permalink": "https://aihot.virxact.com/items/cmseq167r12lxro2erzimnhk2",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "discoveredAt": "2026-08-04T13:56:04.557Z",
+      "summary": "Cloudflare 宣布推出 Agent Development Lifecycle（ADLC），以取代传统 SDLC，让 AI 智能体从仅生成代码扩展到承担更多开发流程。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseq167r12lxro2erzimnhk2"
+      }
+    },
+    {
+      "id": "cmsefnjpn0q20ro2el7g7lyjw",
+      "title": "Reflex 开源 XY：基于 Rust 的超快 Python 绘图库，可保持 1 亿点图表交互流畅",
+      "title_en": "Reflex Open Sources XY： A Rust-Backed Super-Fast Python Charting Library That Keeps 100 Million Point Charts Interactive",
+      "url": "https://www.marktechpost.com/2026/08/04/reflex-open-sources-xy-a-rust-backed-super-fast-python-charting-library-that-keeps-100-million-point-charts-interactive",
+      "permalink": "https://aihot.virxact.com/items/cmsefnjpn0q20ro2el7g7lyjw",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-08-04T08:57:47.000Z",
+      "discoveredAt": "2026-08-04T09:05:32.725Z",
+      "summary": "Reflex AI 发布 Apache-2.0 许可的 Python 交互式 2D 绘图库 XY，通过 Rust 原生核心、二进制缓冲传输和 WebGL2 渲染，在 1 万至 1 亿点范围内保持约 0.08 秒的渲染时间。",
+      "category": "ai-products",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsefnjpn0q20ro2el7g7lyjw"
+      }
+    },
+    {
+      "id": "cmsebb0mc0kn1ro2ejvmi5lg8",
+      "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+      "title_en": "Show HN： 在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+      "url": "https://github.com/leonickson1/Swiftlet",
+      "permalink": "https://aihot.virxact.com/items/cmsebb0mc0kn1ro2ejvmi5lg8",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-04T06:32:44.149Z",
+      "discoveredAt": "2026-08-04T07:03:49.514Z",
+      "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
+      "category": "ai-products",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsebb0mc0kn1ro2ejvmi5lg8"
+      }
+    },
+    {
+      "id": "cmse5tvia0ej6ro2er0ptp9v8",
+      "title": "面壁智能开源 ForgeStencil：一周自动优化 100+ 工业与科学软件，全程零人工介入",
+      "title_en": "面壁智能开源 ForgeStencil：一周优化 100+ 工业与科学软件，全程 0 人工介入，国产「智」造升级加速",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247498861&idx=1&sn=d2d16692dd7eb27f9d466803f25c2b78",
+      "permalink": "https://aihot.virxact.com/items/cmse5tvia0ej6ro2er0ptp9v8",
+      "source": "公众号：面壁智能（MiniCPM）",
+      "publishedAt": "2026-08-04T04:20:28.000Z",
+      "discoveredAt": "2026-08-04T04:30:32.082Z",
+      "summary": "面壁智能联合 OpenBMB 开源全球首个支持 Stencil 自动研究、自动部署的 AI 优化系统 ForgeStencil，由 Kernel Agent 与 App Agent 闭环协作，实现从算子优化到应用集成的全自动流程。",
+      "category": "ai-products",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmse5tvia0ej6ro2er0ptp9v8"
+      }
+    },
+    {
+      "id": "cmsevo9td18ehro2e4owyq95q",
+      "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
+      "title_en": "Ori Harness： The Best Way to Use OpenRouter with Any Harness",
+      "url": "https://openrouter.ai/blog/announcements/ori-harness",
+      "permalink": "https://aihot.virxact.com/items/cmsevo9td18ehro2e4owyq95q",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "discoveredAt": "2026-08-04T16:34:00.141Z",
+      "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsevo9td18ehro2e4owyq95q"
+      }
+    },
+    {
+      "id": "cmsdt5gom0130rojfwd72clkl",
+      "title": "GPT-Live实时音频新架构发布",
+      "title_en": "GPT-Live is a new architecture and stack for realtime audio：",
+      "url": "https://x.com/gdb/status/2084405421041963356",
+      "permalink": "https://aihot.virxact.com/items/cmsdt5gom0130rojfwd72clkl",
+      "source": "X：Greg Brockman (@gdb)",
+      "publishedAt": "2026-08-03T22:25:53.000Z",
+      "discoveredAt": "2026-08-03T22:35:38.041Z",
+      "summary": "GPT-Live 是一种用于实时音频的新架构和栈：\n\nGPT-Live 可以在说话的同时聆听。\n\n为了让这种体验在 ChatGPT 规模下显得自然，我们从客户端到模型重建了语音栈。\n\n这一新架构让音频持续流动，因此更深入的推理和工具使用不会打断对话。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdt5gom0130rojfwd72clkl"
+      }
+    },
+    {
+      "id": "cmsdnp8wy035jro0oflgpii8f",
+      "title": "微软开源 Orchard 智能体训练框架",
+      "title_en": "Orchard is an open-source framework for the research community to train and evaluate AI agents acros…",
+      "url": "https://x.com/MSFTResearch/status/2084364547142418722",
+      "permalink": "https://aihot.virxact.com/items/cmsdnp8wy035jro0oflgpii8f",
+      "source": "X：Microsoft Research (@MSFTResearch)",
+      "publishedAt": "2026-08-03T19:43:28.000Z",
+      "discoveredAt": "2026-08-03T20:03:03.754Z",
+      "summary": "Orchard 是一个面向研究社区的开源框架，用于跨任务类型训练和评估 AI 智能体。它降低了复杂性，同时通过让研究人员复用同一套基础设施，支持较小模型也能实现强劲性能。https://msft.it/6019a8fqP",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdnp8wy035jro0oflgpii8f"
+      }
+    },
+    {
+      "id": "cmsdexxu702xbrotjockerya6",
+      "title": "OpenRouter 推出 Ori Eval 简化评估流程",
+      "title_en": "Introducing Ori Eval： the easiest way to write your first eval. There's no definitive best model， o…",
+      "url": "https://x.com/OpenRouter/status/2084301100078027143",
+      "permalink": "https://aihot.virxact.com/items/cmsdexxu702xbrotjockerya6",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-08-03T15:31:21.000Z",
+      "discoveredAt": "2026-08-03T15:57:52.352Z",
+      "summary": "推出 Ori Eval：编写首个评估的最简单方式。\n\n没有绝对最好的模型，只有最适合每项任务的模型。Ori Eval 利用 OpenRouter 的 API 处理代码库中的每项任务，然后评估结果。\n\ncurl -fsSL https://openrouter.ai/skills/spawn-ori-eval",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdexxu702xbrotjockerya6"
+      }
+    },
+    {
+      "id": "cmsdal06c16pxroeu5xtlavmg",
+      "title": "Cloudflare 推出 @cloudflare/computer 预览版：为智能体提供虚拟文件系统与多执行环境",
+      "title_en": "Your agent needs a computer， not a container - introducing @cloudflare/computer",
+      "url": "https://blog.cloudflare.com/cloudflare-computer",
+      "permalink": "https://aihot.virxact.com/items/cmsdal06c16pxroeu5xtlavmg",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-03T13:15:24.000Z",
+      "discoveredAt": "2026-08-03T13:55:49.808Z",
+      "summary": "Cloudflare 发布 @cloudflare/computer 早期预览版，这是一个开源智能体运行时，为每个智能体提供虚拟文件系统，并支持在 isolate、容器沙箱或浏览器中执行代码。",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdal06c16pxroeu5xtlavmg"
+      }
+    },
+    {
+      "id": "cmsdal06d16pzroeuf2u64pdv",
+      "title": "Cloudflare 推出 Billable Usage API：为自助账户提供按产品与计费周期的程序化成本可见性",
+      "title_en": "Introducing the Billable Usage API： programmatic cost visibility for Cloudflare",
+      "url": "https://blog.cloudflare.com/billable-usage-api",
+      "permalink": "https://aihot.virxact.com/items/cmsdal06d16pzroeuf2u64pdv",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-03T13:00:00.000Z",
+      "discoveredAt": "2026-08-03T13:55:49.808Z",
+      "summary": "Cloudflare 发布 Billable Usage API，为自助账户提供单一端点，一次调用即可返回按产品和计费周期拆分的用量与成本，覆盖 Workers、R2、D1、Workers AI、Vectorize、Images 和 Stream。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdal06d16pzroeuf2u64pdv"
+      }
+    },
+    {
+      "id": "cmsdal06d16pyroeu00obye0v",
+      "title": "Cloudflare Workers 与 Containers 现已支持入站 TCP 连接和 gRPC",
+      "title_en": "Cloudflare Workers and Containers now support inbound TCP connections and gRPC",
+      "url": "https://blog.cloudflare.com/grpc-workers",
+      "permalink": "https://aihot.virxact.com/items/cmsdal06d16pyroeu00obye0v",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-03T13:00:00.000Z",
+      "discoveredAt": "2026-08-03T13:55:49.808Z",
+      "summary": "Cloudflare 在 Agents Week 期间推出 Workers 运行时新处理器 connect（socket），可直接接受 Spectrum 提供的入站 TCP 套接字，并支持将套接字转发至 Durable Objects 或 Containers，实现全双工通信。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdal06d16pyroeu00obye0v"
+      }
+    },
     {
       "id": "cmsbf9by90dq7rohvp1oggqmk",
       "title": "Grok 支持分析任意视频",
@@ -22,6 +364,24 @@
       }
     },
     {
+      "id": "cmsdu102u00t0rofz3ymx69st",
+      "title": "百度搭子一镜Skill：一句话生成数字人口播视频",
+      "title_en": "一句话，生成数字人视频",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5NTQ5MzE5OQ%3D%3D&mid=2653159192&idx=1&sn=36f7f69db077393dab48eb6677b6b9c3",
+      "permalink": "https://aihot.virxact.com/items/cmsdu102u00t0rofz3ymx69st",
+      "source": "公众号：百度智能云（文心）",
+      "publishedAt": "2026-07-31T13:42:37.000Z",
+      "discoveredAt": "2026-07-31T13:42:37.000Z",
+      "summary": "百度搭子内置的一镜Skill支持仅凭一句话或一个主题，自动完成脚本生成、声音、数字人形象、口型驱动和视频渲染，生成可直接播放的数字人口播视频，全程无需拍摄、剪辑和露脸。该功能适用于旅游攻略、产品种草、知识科普、临时活动宣传、企业内部培训及个人IP起步等场景，大幅降低视频制作门槛。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu102u00t0rofz3ymx69st"
+      }
+    },
+    {
       "id": "cms87droz020crot087s6upwp",
       "title": "Replit Design 推出数百设计模板",
       "title_en": "Never start from a blank page again. Replit Design ships with hundreds of templates made by real de…",
@@ -37,6 +397,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms87droz020crot087s6upwp"
+      }
+    },
+    {
+      "id": "cmsdcxd3a00wlrotj7q8iexna",
+      "title": "OpenRouter 推出 Ori Eval：用你的数据证明哪款模型最适合你的项目",
+      "title_en": "Ori Eval： Prove the Best Model for What You're Building",
+      "url": "https://openrouter.ai/blog/announcements/ori-eval",
+      "permalink": "https://aihot.virxact.com/items/cmsdcxd3a00wlrotj7q8iexna",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "discoveredAt": "2026-07-31T00:00:00.000Z",
+      "summary": "OpenRouter 发布 Ori Eval，一个能扫描代码库、自动编写 eval 文件并运行评测的智能体，帮助开发者在 500 多款模型中选出最适合自己项目的单一模型。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdcxd3a00wlrotj7q8iexna"
       }
     },
     {
@@ -166,6 +544,24 @@
       }
     },
     {
+      "id": "cmsdu10dl00vxrofzot7vefhr",
+      "title": "WorkBuddy 深度打通腾讯文档，打造 Agent 时代的第三代办公协同",
+      "title_en": "WorkBuddy的这个新功能，我觉得就是Agent时代的Office。",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684792&idx=1&sn=63a0fd8e458f915460b6d0ca06173c04",
+      "permalink": "https://aihot.virxact.com/items/cmsdu10dl00vxrofzot7vefhr",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-07-30T04:30:35.000Z",
+      "discoveredAt": "2026-07-30T04:30:35.000Z",
+      "summary": "WorkBuddy 新版本深度打通腾讯文档，支持在侧边栏直接编辑生成的文件，并将腾讯文档嵌入工作流，实现人与 AI、同事及各自 Agent 间的协同。用户可选用 DeepSeek V4 Pro、Kimi K3 等模型处理文档，并将文件上传至云端分享流转。作者认为，这种\"人、Agent 与共享状态\"的协作模式，标志着第三代办公产品的到来。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vxrofzot7vefhr"
+      }
+    },
+    {
       "id": "cms6kdopf05tbrohzoim2kpeg",
       "title": "Replit Design 发布：AI 赋能设计愿景",
       "title_en": "You don't need to be a designer. You just need to know what you want to bring to life. The gap betw…",
@@ -274,6 +670,42 @@
       }
     },
     {
+      "id": "cmsdu2uhb013krofz97aog7sk",
+      "title": "腾讯混元开源 AngelSpec：投机解码推理加速最高 2.4 倍",
+      "title_en": "腾讯混元开源 AngelSpec：支持投机解码训练及部署，推理加速最高2.4倍",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498136&idx=1&sn=f77b7950ad68442c45ef739f0bcf8e1b",
+      "permalink": "https://aihot.virxact.com/items/cmsdu2uhb013krofz97aog7sk",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-07-29T11:52:19.000Z",
+      "discoveredAt": "2026-07-29T11:52:19.000Z",
+      "summary": "腾讯混元开源覆盖训练到部署的投机解码框架 AngelSpec，并放出 Hy3-A21B 的 MTP 与 DFly drafter 权重及训练代码。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu2uhb013krofz97aog7sk"
+      }
+    },
+    {
+      "id": "cmsdu4z3a018urofzpawk9sfj",
+      "title": "烧了一万块API后，我找到了同时适用于Fable5和GPT5.6的AI工作流",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247508880&idx=1&sn=968a2ff3d6013a96f2ebfb5ab1579e5c",
+      "permalink": "https://aihot.virxact.com/items/cmsdu4z3a018urofzpawk9sfj",
+      "source": "公众号：卡尔的AI沃茨",
+      "publishedAt": "2026-07-29T10:32:26.000Z",
+      "discoveredAt": "2026-07-29T10:32:26.000Z",
+      "summary": "作者将Claude Code与Codex的协作工具搭子升级至2.0版，通过deep_reasoner、fast_worker、arbiter三种身份及跨项目模型混编，把每周500美元的API账单压缩至400美元。2.0新增本地配置UI、一键试跑、Goal哈希校验和带证据链的小票，并支持按host分命名空间独立配置两个Agent。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu4z3a018urofzpawk9sfj"
+      }
+    },
+    {
       "id": "cms5htk9l004nros5wi94l4eh",
       "title": "在 M1 Max 上运行 2.8T 参数的 Kimi K3：Deltafin 项目实现 0.0687 token/s 推理",
       "title_en": "在 M1 Max 上运行 Kimi K3",
@@ -307,96 +739,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms5a9tpy00utro7c9bw0s295"
-      }
-    },
-    {
-      "id": "cms4vd9hd02h9roa1iiub4unr",
-      "title": "Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐",
-      "title_en": "Gemini API Managed Agents： 3.6 Flash， hooks， and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
-      "permalink": "https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-07-28T16:00:00.000Z",
-      "discoveredAt": "2026-07-28T16:27:45.819Z",
-      "summary": "Google DeepMind 将 Gemini API Managed Agents 的默认模型升级为 Gemini 3.6 Flash，并支持显式选择 3.5 Flash 或 3.5 Flash-Lite。新增环境钩子允许在沙箱内工具调用前后执行自定义脚本，用于安全审查或代码格式化。此外，还推出了免费套餐、预算控制和基于 cron 的定时触发功能。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr"
-      }
-    },
-    {
-      "id": "cms4r3c3j012aroa17m492n76",
-      "title": "Perplexity 推出 Windows 版个人电脑智能体",
-      "title_en": "Personal Computer is now available in the Perplexity app for Windows. Personal Computer is the loca…",
-      "url": "https://x.com/perplexity_ai/status/2082103880155046176",
-      "permalink": "https://aihot.virxact.com/items/cms4r3c3j012aroa17m492n76",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-07-28T14:00:23.000Z",
-      "discoveredAt": "2026-07-28T14:28:01.846Z",
-      "summary": "Personal Computer 现已在 Perplexity Windows 应用中可用。\n\nPersonal Computer 是面向你工作的本地智能体工具。它协调跨本地文件、已连接应用和网络的智能体。\n\n研究、编码、浏览和构建，全部在一个统一系统中完成。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms4r3c3j012aroa17m492n76"
-      }
-    },
-    {
-      "id": "cms4himl9047broepnobhk6n2",
-      "title": "火山引擎上线豆包搜索服务，为AI Agent提供实时可信搜索能力",
-      "title_en": "豆包搜索开放服务，为Agent提供实时、权威、可信的搜索能力",
-      "url": "https://mp.weixin.qq.com/s/1nZqQHYqclsIF6__WLscgA",
-      "permalink": "https://aihot.virxact.com/items/cms4himl9047broepnobhk6n2",
-      "source": "公众号：火山引擎",
-      "publishedAt": "2026-07-28T07:51:54.000Z",
-      "discoveredAt": "2026-07-28T10:00:00.793Z",
-      "summary": "火山引擎正式上线豆包搜索服务，为AI Agent提供跨语言、多模态、多垂类联网信息查询，融合全域互联网信息、行业知识与字节跳动独家内容资源。该服务从网站站点和创作者维度建立权威分级体系，过滤低质信息，在SimpleQA、FreshQA、BrowseComp-ZH等评测中表现优异。豆包搜索支持API、Skill、MCP等多种接入形态，面向企业和开发者提供每月500次免费搜索额度。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms4himl9047broepnobhk6n2"
-      }
-    },
-    {
-      "id": "cms3lggqj00c0roskhu1r5f09",
-      "title": "Kimi 发布视觉感知基准 PerceptionBench",
-      "title_en": "We are releasing PerceptionBench， a benchmark that isolates visual perception and evaluates it as a …",
-      "url": "https://x.com/Kimi_Moonshot/status/2081813202514681878",
-      "permalink": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09",
-      "source": "X：Kimi.ai (@Kimi_Moonshot)",
-      "publishedAt": "2026-07-27T18:45:20.000Z",
-      "discoveredAt": "2026-07-27T19:02:32.798Z",
-      "summary": "Kimi.ai 发布 PerceptionBench，一个从当前前沿模型在 42 个基准上的失败模式中归纳出的视觉感知基准。该基准将视觉感知拆解为 10 种原子能力，并构建了 3000 道验证题，每道题只考察单一感知能力，无需推理或外部知识。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09"
-      }
-    },
-    {
-      "id": "cms3dxit00berro3f8etbfxfh",
-      "title": "Kimi K3 开源分布式智能体环境 AgentENV",
-      "title_en": "We've open-sourced AgentENV in collaboration with kvcache-ai. AgentENV is a distributed system for …",
-      "url": "https://x.com/Kimi_Moonshot/status/2081762978391843020",
-      "permalink": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh",
-      "source": "X：Kimi.ai (@Kimi_Moonshot)",
-      "publishedAt": "2026-07-27T15:25:45.000Z",
-      "discoveredAt": "2026-07-27T15:31:51.181Z",
-      "summary": "我们与 kvcache-ai 合作开源了 AgentENV。\n\nAgentENV 是一个用于大规模运行智能体环境的分布式系统。其组件为 Kimi K3 的智能体强化学习训练提供支持，具备快速快照、恢复和分支功能，适用于大规模并行智能体工作流。\n\n在 GitHub 上探索：http://github.com/kvcache-ai/AgentEnv",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh"
       }
     }
   ]

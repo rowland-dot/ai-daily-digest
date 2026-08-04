@@ -1,8 +1,170 @@
 {
-  "count": 15,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmseyrhcj1bgmro2ed47t5b0k",
+      "title": "OpenRouter 上线 FLUX 3 Video 统一多模态模型",
+      "title_en": "FLUX 3 Video from @bfl_ai is now available for everyone on OpenRouter. One unified multimodal model…",
+      "url": "https://x.com/OpenRouter/status/2084699413898027064",
+      "permalink": "https://aihot.virxact.com/items/cmseyrhcj1bgmro2ed47t5b0k",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-08-04T17:54:06.000Z",
+      "discoveredAt": "2026-08-04T18:00:29.372Z",
+      "summary": "@bfl_ai 的 FLUX 3 Video 现已在 OpenRouter 上向所有人开放。\n\n一个统一的视频、音频、图像和动作预测多模态模型家族。严肃、有趣、创意、真实、电影感，随你所需。基于统一架构联合训练。",
+      "category": "ai-models",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseyrhcj1bgmro2ed47t5b0k"
+      }
+    },
+    {
+      "id": "cmseuq5vh17o9ro2eomueivmi",
+      "title": "商汤 SenseNova U1 开源：统一推理与图像生成",
+      "title_en": "Thanks Dan for testing SenseNova U1 - our open-source AI model that reasons and generates images in …",
+      "url": "https://x.com/SenseTime_AI/status/2084667189479837741",
+      "permalink": "https://aihot.virxact.com/items/cmseuq5vh17o9ro2eomueivmi",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-08-04T15:46:03.000Z",
+      "discoveredAt": "2026-08-04T16:07:29.131Z",
+      "summary": "商汤发布开源模型 SenseNova U1，可在统一流程中同时进行推理与图像生成。其信息图模式可将单条提示词转为结构化幻灯片，交错模式则逐步生成图文内容，如演示六步画龙教程。模型已上线 SenseNova Studio、HuggingFace 及 GitHub。",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseuq5vh17o9ro2eomueivmi"
+      }
+    },
+    {
+      "id": "cmsesgyzp159kro2efe58vs2u",
+      "title": "蚂蚁百灵发布Ling-3.0-flash开源权重",
+      "title_en": "Today， we're releasing the open weights for Ling-3.0-flash. 🎉 Official BF16 and FP8-quantized vers…",
+      "url": "https://x.com/AntLingAGI/status/2084656533489754475",
+      "permalink": "https://aihot.virxact.com/items/cmsesgyzp159kro2efe58vs2u",
+      "source": "X：蚂蚁百灵 (@AntLingAGI)",
+      "publishedAt": "2026-08-04T15:03:43.000Z",
+      "discoveredAt": "2026-08-04T15:04:20.575Z",
+      "summary": "今天，我们发布了 Ling-3.0-flash 的开源权重。🎉\n\n官方 BF16 和 FP8 量化版本现已可用，您可以根据自己的硬件、性能要求和部署需求选择最合适的版本。",
+      "category": "ai-models",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsesgyzp159kro2efe58vs2u"
+      }
+    },
+    {
+      "id": "cmsesrlcn15j6ro2ecpj577wj",
+      "title": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿开源模型",
+      "title_en": "NVIDIA Alpamayo 2 Super， the Frontier Open Model for Robotaxis and Autonomous Vehicles， Now Available for Commercial Use",
+      "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+      "permalink": "https://aihot.virxact.com/items/cmsesrlcn15j6ro2ecpj577wj",
+      "source": "NVIDIA Blog（RSS）",
+      "publishedAt": "2026-08-04T15:00:49.000Z",
+      "discoveredAt": "2026-08-04T15:12:36.927Z",
+      "summary": "NVIDIA Alpamayo 2 Super 现已开放商用，基于 Cosmos 3 Super Reasoner 构建，采用强化学习后训练，支持轨迹预测、因果链推理、元动作、自动标注及视觉问答等多任务输出。",
+      "category": "ai-models",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsesrlcn15j6ro2ecpj577wj"
+      }
+    },
+    {
+      "id": "cmsee1mhf0nn6ro2em6rt7tr4",
+      "title": "腾讯混元发布 Hy ASR 3.0 preview：真正懂上下文的语音识别",
+      "title_en": "Hy ASR 3.0 preview发布：真正懂上下文的语音识别",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498223&idx=1&sn=ae271ec2c72723393d3e1d8074a33205",
+      "permalink": "https://aihot.virxact.com/items/cmsee1mhf0nn6ro2em6rt7tr4",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-08-04T08:12:36.000Z",
+      "discoveredAt": "2026-08-04T08:20:31.023Z",
+      "summary": "腾讯混元发布新一代语音识别模型 Hy ASR 3.0 preview，基于大语言模型 Hy3 与 MoE 架构，融合高精度识别与语义理解。其在开源评测集中中文普通话 WER 3.34%、英语 WER 2.62%、粤语 WER 3.12%，并支持上下文纠错、热词注入及高噪耳语等场景。该模型已上线腾讯云 API，元宝 App 首发并免费开放。",
+      "category": "ai-models",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsee1mhf0nn6ro2em6rt7tr4"
+      }
+    },
+    {
+      "id": "cmsdczxnl0138rotj8fjenm4b",
+      "title": "商汤发布 SenseNova U1.5-Lite-Preview 开源模型",
+      "title_en": "Introducing SenseNova U1.5-Lite-Preview. An early open-source previ…",
+      "url": "https://x.com/SenseTime_AI/status/2084288424236782073",
+      "permalink": "https://aihot.virxact.com/items/cmsdczxnl0138rotj8fjenm4b",
+      "source": "X：商汤 SenseTime (@SenseTime_AI)",
+      "publishedAt": "2026-08-03T14:40:59.000Z",
+      "discoveredAt": "2026-08-03T15:03:25.468Z",
+      "summary": "商汤推出 SenseNova U1.5-Lite-Preview，一个基于 NEO-Unify 架构的轻量级原生统一多模态模型，仅 8B-MoT 参数即可达到商业闭源模型的生成与编辑质量。",
+      "category": "ai-models",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdczxnl0138rotj8fjenm4b"
+      }
+    },
+    {
+      "id": "cmsdu3hyr015xrofzqxuosm3y",
+      "title": "MiniMax H3 正式开源：通用全模态生成系统支持 2K 视频与原生立体声",
+      "title_en": "开放通用智能，MiniMax H3 正式开源",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&mid=2247488931&idx=1&sn=0506e1d52edd5166becf35f5ebd83a07",
+      "permalink": "https://aihot.virxact.com/items/cmsdu3hyr015xrofzqxuosm3y",
+      "source": "公众号：MiniMax（稀宇科技）",
+      "publishedAt": "2026-08-03T02:44:09.000Z",
+      "discoveredAt": "2026-08-03T02:44:09.000Z",
+      "summary": "MiniMax 正式开源新一代通用视频模型 H3，可统一理解文本、图像、视频和音频，生成最高 2K 分辨率、最长 15 秒、带 32 kHz 原生立体声音频的视频。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu3hyr015xrofzqxuosm3y"
+      }
+    },
+    {
+      "id": "cmscldw820c4kroeu7bw1kb27",
+      "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
+      "title_en": "Qwen3.8-Max： A New Bar for Coding and Cowork",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "permalink": "https://aihot.virxact.com/items/cmscldw820c4kroeu7bw1kb27",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-08-03T02:00:00.000Z",
+      "discoveredAt": "2026-08-03T02:10:26.416Z",
+      "summary": "Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。",
+      "category": "ai-models",
+      "score": 89,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmscldw820c4kroeu7bw1kb27"
+      }
+    },
+    {
+      "id": "cmse4jxrl0d1ero2edxdc05fq",
+      "title": "UEmbed：统一稀疏与稠密的多模态嵌入模型",
+      "title_en": "UEmbed： Unified Sparse and Dense Multimodal Embeddings",
+      "url": "https://arxiv.org/abs/2608.02583",
+      "permalink": "https://aihot.virxact.com/items/cmse4jxrl0d1ero2edxdc05fq",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "discoveredAt": "2026-08-04T03:54:49.548Z",
+      "summary": "UEmbed 是一种仅解码器的多模态嵌入模型，可在单次因果前向传播中同时生成稀疏词级和稠密表示，通过可学习特殊 token 与词汇表分区突破单 token 信息瓶颈。",
+      "category": "ai-models",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmse4jxrl0d1ero2edxdc05fq"
+      }
+    },
     {
       "id": "cms9hiyz80fdvro9kepvm1qvk",
       "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
@@ -55,6 +217,42 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t"
+      }
+    },
+    {
+      "id": "cmsdu10dl00vvrofzn6wd0oma",
+      "title": "DeepSeek V4 Flash 正式版发布：后训练重做，九项 Agent 测试全面超越 V4 Pro Preview",
+      "title_en": "等了好久，DeepSeek V4的正式版终于来了。 可惜，来的还是DeepSeek-V4-Flash，V4 Pro正式版还得继续等。 但我看到消息的第一反应，还有很开心的。 因为V4 Flash对我现在的生活，反而比V4 Pro还要重要。 这次，DeepSeek V4 Flash它的模型结构和参数规模完全没变，只重新做了后训练，但是强了特别多。 Terminal Bench 2.1从61.8涨到了82.7。 DeepSWE从7.3涨到了54.4。 DSBench-FullStack从37.0涨到了68.7。 官方列出的九项Agent测试里，它已经全部超过了V4 Pro Preview。 同时还原生支持Responses API，专门针对Codex进行了适配。 讲真，DeepSeek这次在后训练上，应该是憋了个大的。 但如果让我非常坦率地评价，DeepSeek V4 Flash在最顶级的Coding和Agent任务里，跟GPT-5.6 Sol、Claude Opus 5、Kimi K3这些最强模型，依然会有巨大的差距。 复杂项目的架构设计、长时间自主执行、充满意外的多步任务，我大概率还是会优先把最强的模型挂上去。 这没什么可避讳的。 但模型真正进入生产环境以后，能力上限只是一部分。 还有一个经常被低估到离谱的指标： 你到底用不用得起。 这也是我为什么反而更期待Flash。 我自己的AIHOT，现在每天差不多要抓一万条新闻。 这些新闻进来以后，要做结构化、数据清洗、预筛、标注、实体提取、原子事件分离、聚类、语义合并等等，还有一大堆后续判断。 最后才回到真正的精选打分环节那一步。 这里面绝大多数环节，都需要AI介入。 有些流程复杂到甚至需要Agent自己调用工具、检查结果、决定下一步。 一万条新闻，乘上一大串处理链路，最后就是一个极其恐怖的调用量。 按照我现在的调用规模，每个月大概API的消耗量在1000多人民币，你要是换成我常用的那些顶级模型，成本至少得翻十倍以上。 但DeepSeek V4 Flash就很适合干这个。 智能水平在中上等，却又便宜得离谱。 WorkBuddy里也是一样。 真正难到天上的任务，大家可以接K3。 可绝大多数日常任务，DeepSeek V4 Flash已经完全能处理，而且单次只消耗0.06积分。 行业当然需要那些一次跑通世界级难题的顶级模型。 可这个世界上更多的真实需求，是每天重复一万次、十万次、上百万次的普通任务。 当智能贵得像奢侈品时，大家只能偶尔体验。 当智能便宜到像水电一样时，它才会真正流进每一家公司、每一条流水线和每一个普通人的生活里。 所以我很多时候，真的挺感谢DeepSeek。 这才是真正的，智能平权。",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684859&idx=1&sn=29658a67b2b3ef46aead73698d900250",
+      "permalink": "https://aihot.virxact.com/items/cmsdu10dl00vvrofzn6wd0oma",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-07-31T06:41:10.000Z",
+      "discoveredAt": "2026-07-31T06:41:10.000Z",
+      "summary": "DeepSeek V4 Flash 正式版发布，模型结构和参数规模不变，仅重做后训练，Terminal Bench 2.1 从 61.8 涨至 82.7，DeepSWE 从 7.3 涨至 54.4。",
+      "category": "ai-models",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vvrofzn6wd0oma"
+      }
+    },
+    {
+      "id": "cmsdu10dl00vwrofzxoufabkl",
+      "title": "MiniMax H3 发布并将开源，主打视觉包装与后期特效",
+      "title_en": "MiniMax H3发布，还要开源，AI视频终于有了自己的后期之王。",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684857&idx=1&sn=03c84df8bc0389c4ceb8f50f6c0015e3",
+      "permalink": "https://aihot.virxact.com/items/cmsdu10dl00vwrofzxoufabkl",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-07-31T02:21:38.000Z",
+      "discoveredAt": "2026-07-31T02:21:38.000Z",
+      "summary": "MiniMax 发布 AI 视频模型 H3，并宣布开源。该模型主打视觉包装与后期特效，可生成动态 MV、动态海报、Vlog、电影片头、游戏 UI 等，语义遵循能力极强，在广告与动效领域表现优于 Seedance 2.0，但影视级张力镜头稍逊。H3 开源后预计将出现大量垂直领域特化版本。",
+      "category": "ai-models",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vwrofzxoufabkl"
       }
     },
     {
@@ -181,96 +379,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms6arrcb00rerotztt8cp1mv"
-      }
-    },
-    {
-      "id": "cms54yoqa0090roehc2530rwk",
-      "title": "OpenAI 推出两款新转录模型 API",
-      "title_en": "We're introducing two new transcription models in the API： • GPT-Live-Transcribe： built for low-lat…",
-      "url": "https://x.com/OpenAIDevs/status/2082201169443905798",
-      "permalink": "https://aihot.virxact.com/items/cms54yoqa0090roehc2530rwk",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-07-28T20:26:58.000Z",
-      "discoveredAt": "2026-07-28T20:56:21.648Z",
-      "summary": "我们在 API 中引入了两种新的转录模型：\n\n• GPT-Live-Transcribe：专为低延迟实时转录而构建。\n• GPT-Transcribe：针对已完成音频文件和批量工作负载的异步转录进行了优化。\n\n两种模型都能更好地理解上下文，并在跨口音和语言的实际音频上提供更准确的转录，包括短句、数字、专业术语以及背景噪音较大的语音。",
-      "category": "ai-models",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms54yoqa0090roehc2530rwk"
-      }
-    },
-    {
-      "id": "cms4fb2n603f4roeprjoopbix",
-      "title": "Microsoft 发布 MAI-Cyber-1-Flash：5B 活跃参数的网络安全模型，驱动 MDASH 在 CyberGym 上达到 95.95%",
-      "title_en": "Microsoft AI Releases MAI-Cyber-1-Flash： A 5B-Active-Parameter Cyber Model That Pushes MDASH to 95.95% on CyberGym",
-      "url": "https://www.marktechpost.com/2026/07/28/microsoft-ai-releases-mai-cyber-1-flash-a-5b-active-parameter-cyber-model-that-pushes-mdash-to-95-95-on-cybergym",
-      "permalink": "https://aihot.virxact.com/items/cms4fb2n603f4roeprjoopbix",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-07-28T08:33:30.000Z",
-      "discoveredAt": "2026-07-28T08:58:05.501Z",
-      "summary": "Microsoft 发布 MAI-Cyber-1-Flash，一款 137B 总参数（5B 活跃参数）、256k 上下文窗口的稀疏 MoE 网络安全模型，是 MAI-Code-1-Flash 的微调版本。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms4fb2n603f4roeprjoopbix"
-      }
-    },
-    {
-      "id": "cms47q4jj00mxroep0x4at5sf",
-      "title": "FeyNoBg 发布：开源自动背景去除模型，在四项基准上达到 SOTA",
-      "title_en": "Show HN： FeyNoBg - 自动背景去除模型及训练库",
-      "url": "https://usefeyn.com/blog/feynobg",
-      "permalink": "https://aihot.virxact.com/items/cms47q4jj00mxroep0x4at5sf",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-28T04:57:13.190Z",
-      "discoveredAt": "2026-07-28T05:25:52.937Z",
-      "summary": "Feyn Labs 推出 FeyNoBg，一个用于自动背景去除的 SOTA 模型。它在八个基准测试中的四项上取得最佳 S-measure 分数，其余四项与领先者差距在 2% 以内。该模型基于 BiRefNet 架构，参数量从 222M 扩展至 263M，同时开源了训练库 NoBg，模型和代码分别可在 Hugging Face 和 GitHub 获取。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms47q4jj00mxroep0x4at5sf"
-      }
-    },
-    {
-      "id": "cms44no4v06arro82khvjxjj4",
-      "title": "Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s/IW9BdyA3hLvuuiX_aMCJEQ",
-      "permalink": "https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4",
-      "source": "公众号：月之暗面（Kimi）",
-      "publishedAt": "2026-07-27T15:34:59.000Z",
-      "discoveredAt": "2026-07-28T04:00:00.856Z",
-      "summary": "月之暗面发布 2.8 万亿参数的混合专家模型 Kimi K3，支持原生视觉理解和 100 万 token 上下文窗口。其规模化效率较 Kimi K2.5 提升 2.5 倍，并同步开源模型权重、技术报告及 MoonEP、FlashKDA、AgentEnv 三项 Infra 技术。",
-      "category": "ai-models",
-      "score": 85,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4"
-      }
-    },
-    {
-      "id": "cms3dxit00betro3fiwkotg0j",
-      "title": "Kimi K3 开源：2.8T MoE 模型与技术报告",
-      "title_en": "Releasing the model weights and technical report of Kimi K3. Kimi K3 is our most capable model： a 2…",
-      "url": "https://x.com/Kimi_Moonshot/status/2081760186235289764",
-      "permalink": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j",
-      "source": "X：Kimi.ai (@Kimi_Moonshot)",
-      "publishedAt": "2026-07-27T15:14:40.000Z",
-      "discoveredAt": "2026-07-27T15:31:51.181Z",
-      "summary": "Kimi 发布其最强模型 Kimi K3，这是一个 2.8T 参数的 MoE 模型，具备原生视觉理解和 1M token 上下文窗口。新架构实现了每单位计算 2.5 倍的智能提升。除模型权重外，Kimi 还开源了高性能注意力内核、MoE 通信库及大规模智能体运行环境基础设施。",
-      "category": "ai-models",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j"
       }
     }
   ]

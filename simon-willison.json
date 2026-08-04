@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-08-03T21:42:14.339Z",
+  "fetched_at": "2026-08-04T21:50:01.255Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "PipeNetwork/minimax-h3-mlx",
+      "link": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
+      "updated": "2026-08-04T19:10:09+00:00",
+      "summary": "PipeNetwork/minimax-h3-mlx"
+    },
+    {
+      "title": "Quoting Steve Yegge",
+      "link": "https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything",
+      "updated": "2026-08-04T00:42:45+00:00",
+      "summary": "Gas Town was intended to be reusable, but I only ever wound up using it to build itself. Gas Town fell apart at the seams with Opus 4.7. Up through 4.6 it was working brilliantly. With 4.7 we saw the introduction of the \"just two more things\" tic, which prevented Opus from ever converging on being ready to do real work—it always wanted to fiddle with Gas Town itself. The Opus tic never went away, so Gas Town effectively burned down. It had other problems, too, but 4.7 was the final straw."
+    },
+    {
+      "title": "Don't be a meat proxy",
+      "link": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
+      "updated": "2026-08-03T23:45:04+00:00",
+      "summary": "Don't be a meat proxy"
+    },
     {
       "title": "Quoting David Crawshaw's prompt",
       "link": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
       "updated": "2026-07-31T23:59:44+00:00",
       "summary": "deepseek-ai/DeepSeek-V4-Flash-0731"
-    },
-    {
-      "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
-      "link": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
-      "updated": "2026-07-31T23:13:22+00:00",
-      "summary": "Tuesday was Stateless MCP day - the rollout of MCP 2.0, or the 2026-07-28 Model Context Protocol specification to use the more formal but less memorable name. This is the most significant change to the MCP spec since it first launched, and has also served to reignite my personal interest in the protocol."
-    },
-    {
-      "title": "llm-mcp-client 0.1a0",
-      "link": "https://simonwillison.net/2026/Jul/31/llm-mcp-client/#atom-everything",
-      "updated": "2026-07-31T23:03:47+00:00",
-      "summary": "See this blog entry ."
-    },
-    {
-      "title": "Oxide and Friends: The Open Weight Revolution with Simon Willison",
-      "link": "https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything",
-      "updated": "2026-07-31T21:33:13+00:00",
-      "summary": "Oxide and Friends: The Open Weight Revolution with Simon Willison"
     }
   ]
 }

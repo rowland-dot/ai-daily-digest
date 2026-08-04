@@ -1,8 +1,26 @@
 {
-  "count": 13,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmse4jxrl0d1gro2ewjdbr7n3",
+      "title": "SwanTale：面向指令与零样本任务的统一多说话人语音与音频生成",
+      "title_en": "SwanTale： Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks",
+      "url": "https://arxiv.org/abs/2608.02023",
+      "permalink": "https://aihot.virxact.com/items/cmse4jxrl0d1gro2ewjdbr7n3",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "discoveredAt": "2026-08-04T03:54:49.548Z",
+      "summary": "SwanTale 提出统一的多说话人语音与音频生成模型，同时支持零样本与指令任务。研究配套推出 SwanData-Caption 数据方案，通过清洗、合成覆盖与多级标注解决数据稀缺问题，并引入 SwanVAE、Unified MoE、GRPO 后训练等技术。实验显示，SwanTale 在多项零样本与指令指标上领先，并在两项任务的表达力评分中均取得最佳成绩。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmse4jxrl0d1gro2ewjdbr7n3"
+      }
+    },
     {
       "id": "cmsa302cc01xaro41omun2e1h",
       "title": "OpenAI Astra 以约2000美元证明10项数学难题",
@@ -40,6 +58,24 @@
       }
     },
     {
+      "id": "cmsdu108a00u8rofzj55w3j8n",
+      "title": "小红书 dots 团队发布 VibeLifeBench 与 VibeSearchBench：七个最强模型无一及格",
+      "title_en": "把最强模型丢进真实生活一个月，没有一个及格",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247495889&idx=1&sn=abb72082b7b1e1b12cc7dc6e4c812a50",
+      "permalink": "https://aihot.virxact.com/items/cmsdu108a00u8rofzj55w3j8n",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-07-31T10:00:00.000Z",
+      "discoveredAt": "2026-07-31T10:00:00.000Z",
+      "summary": "小红书 dots 团队推出 VibeLifeBench 与 VibeSearchBench 两个生活场景评测基准，测试中七个当前最强模型无一在正确时间点解决护照有效期等关键问题，最高分仅 0.325（Opus 5）。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu108a00u8rofzj55w3j8n"
+      }
+    },
+    {
       "id": "cms8i3p4m0ek6rot0xc8l3gak",
       "title": "Show HN：将 DeepSeek 整合到 GPT-OSS 中不会带来审查机制",
       "title_en": "Show HN： 将 DeepSeek 整合到 GPT-OSS 中不会带来审查机制。试试看",
@@ -58,6 +94,60 @@
       }
     },
     {
+      "id": "cmsdu2uhb013jrofz7ggai8af",
+      "title": "腾讯混元 Hyra 攻克加法组合学 50 年未解难题",
+      "title_en": "Hyra 攻克加法组合学 50 年未解难题",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498145&idx=1&sn=6968b330e01b1f306db418dc19ae4843",
+      "permalink": "https://aihot.virxact.com/items/cmsdu2uhb013jrofz7ggai8af",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-07-31T04:10:45.000Z",
+      "discoveredAt": "2026-07-31T04:10:45.000Z",
+      "summary": "腾讯混元上周推出的科研智能体 Hyra，基于本月开源的 Hy3 模型（总参数 295B、激活参数 21B），为加法组合学中悬置半个多世纪的开放问题给出完整答案，证明 2 是该问题指数的上确界。Hyra 先在有限搜索中将最好结果从约 1.14 提高到 1.21，经约 24 小时运行提出核心构造思路，并给出 Lean 4 形式化证明。论文预印本、显式构造和形式化证明均已公开。",
+      "category": "paper",
+      "score": 89,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsdu2uhb013jrofz7ggai8af"
+      }
+    },
+    {
+      "id": "cmses4u4i14t3ro2ehi9uj5vy",
+      "title": "Zero-Mem：为 LLM 智能体实现零 token 记忆操作",
+      "title_en": "Zero-Mem： Zero-Token Memory Operations for LLM Agents",
+      "url": "https://arxiv.org/abs/2607.29377",
+      "permalink": "https://aihot.virxact.com/items/cmses4u4i14t3ro2ehi9uj5vy",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "discoveredAt": "2026-07-31T00:00:00.000Z",
+      "summary": "Zero-Mem 提出零 token 记忆操作，除最终问答外，记忆构建、检索与校准等所有环节均不调用 LLM 或消耗其输入输出 token，仅用编码器计算。该方法保留原始交互轨迹，通过实体-上下文图与时间层级双视图组织证据，在长记忆与长上下文问答基准上达到竞争性表现，并将记忆操作时间成本较最快基线降低 57.6%。代码将在同行评审后公开。",
+      "category": "paper",
+      "score": 80,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmses4u4i14t3ro2ehi9uj5vy"
+      }
+    },
+    {
+      "id": "cmseazfg20k6gro2ezmd4a6qt",
+      "title": "DiffusionGemma 技术报告：基于离散扩散的高效文本生成模型",
+      "title_en": "DiffusionGemma Technical Report",
+      "url": "https://arxiv.org/abs/2608.00146",
+      "permalink": "https://aihot.virxact.com/items/cmseazfg20k6gro2ezmd4a6qt",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "discoveredAt": "2026-07-31T00:00:00.000Z",
+      "summary": "DiffusionGemma 是一个实验性开源权重语言模型，通过离散扩散并行迭代精炼 256 个 token 的块，而非逐 token 解码，从而避免自回归模型的顺序解码瓶颈。",
+      "category": "paper",
+      "score": 80,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseazfg20k6gro2ezmd4a6qt"
+      }
+    },
+    {
       "id": "cms6xa31u02nlrouq0wkhylfp",
       "title": "腾讯混元Hyra破解50年数学难题",
       "title_en": "For a finite set of integers （A）， how much faster can （|A+A|） grow than （|A-A|）？ A 1969 theorem gav…",
@@ -73,6 +163,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms6xa31u02nlrouq0wkhylfp"
+      }
+    },
+    {
+      "id": "cmsewf4ja195fro2e4ejknnqk",
+      "title": "删除回避：LLM 代码编辑中的系统性缺陷与缓解之道",
+      "title_en": "To Add Is Machine， To Delete Is Human： Measuring and Mitigating Deletion Avoidance in LLM Code Editing",
+      "url": "https://arxiv.org/abs/2607.28887",
+      "permalink": "https://aihot.virxact.com/items/cmsewf4ja195fro2e4ejknnqk",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "discoveredAt": "2026-07-30T00:00:00.000Z",
+      "summary": "研究发现，领先模型在 SWE-bench Verified 上对开发者补丁的删除召回率最高仅 71.7%，29.0% 的通过补丁采用 Guard-and-Go 模式保留目标代码。新基准 CanItDelete 含 200 个纯删除任务，最佳模型仍失败 19.5%。在 7B 模型后训练中加入 12.8k 删除示例（占 0.7% token）可将删除回避降低 13.9 个百分点。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsewf4ja195fro2e4ejknnqk"
       }
     },
     {
@@ -163,78 +271,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms6x4iu80273rouqra49hny9"
-      }
-    },
-    {
-      "id": "cms4xie76037xroa13kv3uglm",
-      "title": "Claude 发现加密算法弱点研究发布",
-      "title_en": "New Anthropic research： Discovering cryptographic weaknesses with Claude. Claude Mythos Preview has…",
-      "url": "https://x.com/AnthropicAI/status/2082153297670992134",
-      "permalink": "https://aihot.virxact.com/items/cms4xie76037xroa13kv3uglm",
-      "source": "X：Anthropic (@AnthropicAI)",
-      "publishedAt": "2026-07-28T17:16:45.000Z",
-      "discoveredAt": "2026-07-28T17:27:44.441Z",
-      "summary": "Anthropic 新研究：用 Claude 发现加密弱点。\n\nClaude Mythos 预览版已帮助我们的研究人员发现加密算法中的弱点--这些数学方法用于保护数据隐私。\n\n了解更多：https://anthropic.com/research/discovering-cryptographic-weaknesses",
-      "category": "paper",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms4xie76037xroa13kv3uglm"
-      }
-    },
-    {
-      "id": "cms6drkj8001crohzuxf7kfy7",
-      "title": "Miles 在 Blackwell 架构上实现端到端 MXFP8 与逐 token NVFP4 强化学习方案",
-      "title_en": "Blog Towards Blackwell-Native 8-bit and 4-bit RL： End-to-End MXFP8 and NVFP4 RL in Miles TL；DR： We implemented two Blackwell-native RL recipes in Miles： end-to-end MXFP8 and per-token NVFP4 for MoE experts. Both are supported by fine-grained precision control across checkpoint conversion，… Ziang Li， humans& and Miles Team",
-      "url": "https://www.lmsys.org/blog/2026-07-29-mxfp8-nvfp4-rl",
-      "permalink": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-07-28T16:00:00.000Z",
-      "discoveredAt": "2026-07-29T17:50:30.529Z",
-      "summary": "Miles 团队在 Blackwell 架构上实现了两种原生低精度强化学习方案：端到端 MXFP8 和 MoE 专家权重的逐 token NVFP4。在 8x B200 上对 Qwen3-30B-A3B 的消融实验中，BF16 与所有五种低精度配置的原始奖励曲线高度重合，且 MXFP8 和 NVFP4 减少了推理时间。",
-      "category": "paper",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6drkj8001crohzuxf7kfy7"
-      }
-    },
-    {
-      "id": "cms4t5zra01o1roa10b19hmbh",
-      "title": "Kimi Linear：一种表现力强且高效的注意力架构",
-      "title_en": null,
-      "url": "https://arxiv.org/abs/2510.26692",
-      "permalink": "https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-28T15:21:28.545Z",
-      "discoveredAt": "2026-07-28T15:26:05.731Z",
-      "summary": "月之暗面推出 Kimi Linear，一种混合线性注意力架构，首次在短上下文、长上下文和强化学习场景下全面超越全注意力机制。其 3B 激活参数模型在所有评估任务上显著优于全 MLA，同时将 KV cache 使用量降低最多 75%，并在 1M 上下文下实现最高 6 倍解码吞吐量。月之暗面已开源 KDA 内核、vLLM 实现及模型权重。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms4t5zra01o1roa10b19hmbh"
-      }
-    },
-    {
-      "id": "cms6x4iu90276rouqaq8hzfw7",
-      "title": "GPT-Red：通过大规模自对弈实现自动化红队测试",
-      "title_en": "GPT-Red： Automated Red Teaming via Self-Play at Scale",
-      "url": "https://arxiv.org/abs/2607.26115",
-      "permalink": "https://aihot.virxact.com/items/cms6x4iu90276rouqaq8hzfw7",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-28T00:00:00.000Z",
-      "discoveredAt": "2026-07-28T00:00:00.000Z",
-      "summary": "OpenAI 推出 GPT-Red，一个通过自对弈算法训练的自动化红队智能体，用于发现针对前沿大语言模型的提示注入攻击。该模型在同等规模的最大 RL 后训练计算上训练，能可靠攻破 GPT-5.5 及更早模型，发现比人类红队更多的成功攻击，并泛化到未见环境与防御模型。GPT-Red 被用于对抗性训练 GPT-5.6，使其成为目前对提示注入最鲁棒的模型。",
-      "category": "paper",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6x4iu90276rouqaq8hzfw7"
       }
     }
   ]
