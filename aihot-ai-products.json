@@ -1,8 +1,116 @@
 {
-  "count": 41,
+  "count": 37,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsg5h9ax06dtrolg09b7xrd8",
+      "title": "Cloudflare 如何用 Cloudflare OS 重构内部工作方式",
+      "title_en": "How we're rethinking work at Cloudflare with Cloudflare OS",
+      "url": "https://blog.cloudflare.com/how-we-use-ai-with-cloudflare-os",
+      "permalink": "https://aihot.virxact.com/items/cmsg5h9ax06dtrolg09b7xrd8",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-05T13:00:01.000Z",
+      "discoveredAt": "2026-08-05T13:56:13.182Z",
+      "summary": "Cloudflare 推出 Cloudflare OS，整合 Workers 与 Access 等组件，让员工安全使用 AI 并部署智能体。平台源于销售团队用 AI 构建 SuperApp 引发的内部需求，遵循\"人负责输出\"\"权限不因 AI 扩大\"等五项原则，面向工程师与非工程师分别提供支持。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsg5h9ax06dtrolg09b7xrd8"
+      }
+    },
+    {
+      "id": "cmsg5h9ay06dwrolgxlcyaou8",
+      "title": "Cloudflare 用身份感知分析捕捉失控 AI 行为",
+      "title_en": "Catching rogue AI behavior with identity-aware analytics",
+      "url": "https://blog.cloudflare.com/identity-aware-ai-gateway",
+      "permalink": "https://aihot.virxact.com/items/cmsg5h9ay06dwrolgxlcyaou8",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-05T13:00:00.000Z",
+      "discoveredAt": "2026-08-05T13:56:13.182Z",
+      "summary": "Cloudflare 推出身份感知 AI Gateway 与 User Insights，为每个请求绑定经 Access 验证的用户身份，并基于账户自身历史行为建立基线，识别偏离正常模式的异常会话。该功能现处于开放测试阶段，User Insights 已向所有 AI Gateway 客户免费开放。其异常检测以近 30 天会话成本 p95 为基准，超过 2 倍即标记为可疑行为。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsg5h9ay06dwrolgxlcyaou8"
+      }
+    },
+    {
+      "id": "cmsg5h9ay06durolg6bwl0p8e",
+      "title": "Cloudflare OS：面向智能体、应用与工作的开放平台",
+      "title_en": "Cloudflare OS： an open platform for agents， apps， and work",
+      "url": "https://blog.cloudflare.com/cloudflare-os",
+      "permalink": "https://aihot.virxact.com/items/cmsg5h9ay06durolg6bwl0p8e",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-05T13:00:00.000Z",
+      "discoveredAt": "2026-08-05T13:56:13.182Z",
+      "summary": "Cloudflare 开源新版 Cloudflare OS，任何组织均可部署并连接内部系统。该平台为每位员工提供基于公司上下文与技能的智能体工作区，包含隔离运行时、安全治理框架及可共享修改的个人应用。此前内部版本已供数千名员工日常使用，新版针对协作中的信息暴露风险重建了安全基础。",
+      "category": "ai-products",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsg5h9ay06durolg6bwl0p8e"
+      }
+    },
+    {
+      "id": "cmsflglsq04k6rochfekqziad",
+      "title": "Grok 4.5 免费体验，推荐 Build 工具链",
+      "title_en": "Best way to use Grok is via our Build harness. Download at http://X.ai/cli",
+      "url": "https://x.com/elonmusk/status/2084857373555101726",
+      "permalink": "https://aihot.virxact.com/items/cmsflglsq04k6rochfekqziad",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "publishedAt": "2026-08-05T04:21:47.000Z",
+      "discoveredAt": "2026-08-05T04:35:52.809Z",
+      "summary": "使用 Grok 的最佳方式是通过我们的 Build 工具链。\n\n下载地址：http://X.ai/cli",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsflglsq04k6rochfekqziad"
+      }
+    },
+    {
+      "id": "cmsfdkkcs1ocxro2ed4z3s131",
+      "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
+      "title_en": "New release of LLM adds support for reasoning traces， OpenAI Responses， server-side tools， and smarter logging",
+      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
+      "permalink": "https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131",
+      "source": "Simon Willison 博客",
+      "publishedAt": "2026-08-04T23:58:24.000Z",
+      "discoveredAt": "2026-08-05T00:55:01.452Z",
+      "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。",
+      "category": "ai-products",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131"
+      }
+    },
+    {
+      "id": "cmsf7gr271ii5ro2eiu0hihb5",
+      "title": "Replit 环境智能：免提示词自动生成设计",
+      "title_en": "You don't need to prompt. You don't need design language. Ambient Intelligence surfaces suggestion …",
+      "url": "https://x.com/Replit/status/2084761337570144424",
+      "permalink": "https://aihot.virxact.com/items/cmsf7gr271ii5ro2eiu0hihb5",
+      "source": "X：Replit (@Replit)",
+      "publishedAt": "2026-08-04T22:00:10.000Z",
+      "discoveredAt": "2026-08-04T22:04:05.931Z",
+      "summary": "你无需提示词，也无需设计语言。\n\n环境智能（Ambient Intelligence）会在每个画面旁显示建议卡片，每张卡片都指向你的设计的一个不同方向。点击你喜欢的那张，即可看到它生成一个新的画面。\n\n你再也不必纠结下一步该做什么。\n\n立即在 http://replit.com/design 体验。",
+      "category": "ai-products",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsf7gr271ii5ro2eiu0hihb5"
+      }
+    },
     {
       "id": "cmsezylz31cadro2eoq1np3vh",
       "title": "Soup v0.72.4：在4 GB显存笔记本GPU上微调8B模型",
@@ -19,24 +127,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmsezylz31cadro2eoq1np3vh"
-      }
-    },
-    {
-      "id": "cmseyfjcz1au8ro2enx0b7os6",
-      "title": "SpecForge v0.3.0 发布：统一解耦与共置投机解码栈，新增开放 SpecBundle 草稿模型",
-      "title_en": "Blog SpecForge v0.3.0： a Unified Disaggregated and Colocated Speculative Decoding Stack， and New Open SpecBundle Draft Models When we first released SpecForge， a training job owned both the frozen target model and the draft model being optimized. This made EAGLE3 draft-model training practical and directly compatible with SG… The SpecForge Team",
-      "url": "https://www.lmsys.org/blog/2026-08-04-specforge-v0-3",
-      "permalink": "https://aihot.virxact.com/items/cmseyfjcz1au8ro2enx0b7os6",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-04T17:51:09.590Z",
-      "discoveredAt": "2026-08-04T17:51:09.590Z",
-      "summary": "SpecForge v0.3.0 将目标模型推理与草稿模型训练分离，支持 EAGLE3、EAGLE3.1、P-EAGLE、DFlash、Domino、DSpark 等多种投机解码算法，并统一在线、离线与解耦工作流。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmseyfjcz1au8ro2enx0b7os6"
       }
     },
     {
@@ -271,6 +361,24 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmsdnp8wy035jro0oflgpii8f"
+      }
+    },
+    {
+      "id": "cmseyfjcz1au8ro2enx0b7os6",
+      "title": "SpecForge v0.3.0 发布：统一解耦与共置投机解码栈，新增开放 SpecBundle 草稿模型",
+      "title_en": "Blog SpecForge v0.3.0： a Unified Disaggregated and Colocated Speculative Decoding Stack， and New Open SpecBundle Draft Models When we first released SpecForge， a training job owned both the frozen target model and the draft model being optimized. This made EAGLE3 draft-model training practical and directly compatible with SG… The SpecForge Team",
+      "url": "https://www.lmsys.org/blog/2026-08-04-specforge-v0-3",
+      "permalink": "https://aihot.virxact.com/items/cmseyfjcz1au8ro2enx0b7os6",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-04T17:51:09.590Z",
+      "summary": "SpecForge v0.3.0 将目标模型推理与草稿模型训练分离，支持 EAGLE3、EAGLE3.1、P-EAGLE、DFlash、Domino、DSpark 等多种投机解码算法，并统一在线、离线与解耦工作流。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmseyfjcz1au8ro2enx0b7os6"
       }
     },
     {
@@ -559,186 +667,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vxrofzot7vefhr"
-      }
-    },
-    {
-      "id": "cms6kdopf05tbrohzoim2kpeg",
-      "title": "Replit Design 发布：AI 赋能设计愿景",
-      "title_en": "You don't need to be a designer. You just need to know what you want to bring to life. The gap betw…",
-      "url": "https://x.com/Replit/status/2082568269119062019",
-      "permalink": "https://aihot.virxact.com/items/cms6kdopf05tbrohzoim2kpeg",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-07-29T20:45:42.000Z",
-      "discoveredAt": "2026-07-29T20:55:42.166Z",
-      "summary": "你不需要成为设计师。你只需要知道你想把什么变为现实。\n\n你脑海中的想法与屏幕上的成果之间的差距刚刚消失了。\n\n这就是 Replit Design 背后的愿景。\n\n阅读我们构建它的原因以及我们认为 AI 驱动设计的未来方向：https://replit.com/blog/introducing-replit-design",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6kdopf05tbrohzoim2kpeg"
-      }
-    },
-    {
-      "id": "cms6cw5ha02sgrotzfmlr8p11",
-      "title": "OpenAI 为学术研究者免费提供前沿模型",
-      "title_en": "ChatGPT for Academic Researchers - free （！！） access to our frontier models， including GPT-5.6-Sol Pr…",
-      "url": "https://x.com/sherwinwu/status/2082517015944741342",
-      "permalink": "https://aihot.virxact.com/items/cms6cw5ha02sgrotzfmlr8p11",
-      "source": "X：Sherwin Wu（@sherwinwu）",
-      "publishedAt": "2026-07-29T17:22:02.000Z",
-      "discoveredAt": "2026-07-29T17:26:06.363Z",
-      "summary": "ChatGPT for Academic Researchers - 免费（！！）使用我们的前沿模型，包括 GPT-5.6-Sol Pro，面向数学家、科学家、研究人员和学者。\n\n让未解难题倒下！",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6cw5ha02sgrotzfmlr8p11"
-      }
-    },
-    {
-      "id": "cms6czboh031krotzmczxbw2v",
-      "title": "Perplexity 开源智能体检测层 Numbat",
-      "title_en": "Today we're open-sourcing Numbat， an agent-detection and response layer that is designed to work acr…",
-      "url": "https://x.com/perplexity_ai/status/2082511900580196596",
-      "permalink": "https://aihot.virxact.com/items/cms6czboh031krotzmczxbw2v",
-      "source": "X：Perplexity (@perplexity_ai)",
-      "publishedAt": "2026-07-29T17:01:42.000Z",
-      "discoveredAt": "2026-07-29T17:28:34.743Z",
-      "summary": "今天我们开源了 Numbat，这是一个智能体检测与响应层，旨在跨多种智能体框架工作。\n\nNumbat 为安全团队提供对智能体活动的可见性，并可在执行前阻止选定操作。\n\n了解更多：https://research.perplexity.ai/articles/securing-agents-across-perplexity%E2%80%99s-client-endpoints-with-numbat",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6czboh031krotzmczxbw2v"
-      }
-    },
-    {
-      "id": "cms6arrc700rbrotzo1wseql3",
-      "title": "开源引擎可在任何 M 系列 Mac 上以 2 GB 内存运行 Gemma 4 26B",
-      "title_en": "Show HN： 可在任何 M 系列 Mac 上，利用 2 GB 内存运行搭载 Gemma 4 26B 的开源引擎",
-      "url": "https://github.com/drumih/turbo-fieldfare",
-      "permalink": "https://aihot.virxact.com/items/cms6arrc700rbrotzo1wseql3",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-29T16:09:22.496Z",
-      "discoveredAt": "2026-07-29T16:26:41.196Z",
-      "summary": "一个开源引擎让 Gemma 4 26B 模型能在任何 M 系列 Mac 上运行，仅需 2 GB 内存。该项目已发布在 GitHub 上，大幅降低了本地运行大语言模型的硬件门槛。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6arrc700rbrotzo1wseql3"
-      }
-    },
-    {
-      "id": "cms69p7bn1ec3robkm6xscwbf",
-      "title": "Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手",
-      "title_en": "Hint， a new AI startup co-founded by Martha Stewart， offers an AI assistant for homeowners",
-      "url": "https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners",
-      "permalink": "https://aihot.virxact.com/items/cms69p7bn1ec3robkm6xscwbf",
-      "source": "TechCrunch：AI（RSS）",
-      "publishedAt": "2026-07-29T15:35:09.000Z",
-      "discoveredAt": "2026-07-29T15:56:41.175Z",
-      "summary": "Hint 今日上线，利用 AI 技术帮助房主管理维护计划、能耗、土壤与空气质量、保险理赔等事务，并支持存储和查询房屋相关合同与文件。该应用基于公开数据为每栋房屋建立档案，通过 AI 聊天机器人回答个性化问题，并提供主动维护提醒与\"房屋评分\"。Hint 目前免费提供 iOS 版，无订阅或广告，未来计划推出付费高级功能。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms69p7bn1ec3robkm6xscwbf"
-      }
-    },
-    {
-      "id": "cms639jt416x6robksy69dzel",
-      "title": "腾讯混元开源 AngelSpec 投机解码框架",
-      "title_en": "🚀 We've open-sourced AngelSpec， an end-to-end speculative decoding framework supporting both traini…",
-      "url": "https://x.com/TencentHunyuan/status/2082447023626944936",
-      "permalink": "https://aihot.virxact.com/items/cms639jt416x6robksy69dzel",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-07-29T12:43:55.000Z",
-      "discoveredAt": "2026-07-29T12:56:35.452Z",
-      "summary": "腾讯混元开源端到端投机解码框架 AngelSpec，支持训练与部署。在 Hy3-A21B 模型上，其 DFly 方案相比自回归解码实现 1.98-2.40 倍端到端加速，吞吐量比 DFlash 高 10.5-11.8%。训练代码及 Hy3-A21B MTP/DFly 草稿模型权重已开源。",
-      "category": "ai-products",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms639jt416x6robksy69dzel"
-      }
-    },
-    {
-      "id": "cmsdu2uhb013krofz97aog7sk",
-      "title": "腾讯混元开源 AngelSpec：投机解码推理加速最高 2.4 倍",
-      "title_en": "腾讯混元开源 AngelSpec：支持投机解码训练及部署，推理加速最高2.4倍",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498136&idx=1&sn=f77b7950ad68442c45ef739f0bcf8e1b",
-      "permalink": "https://aihot.virxact.com/items/cmsdu2uhb013krofz97aog7sk",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-07-29T11:52:19.000Z",
-      "discoveredAt": "2026-07-29T11:52:19.000Z",
-      "summary": "腾讯混元开源覆盖训练到部署的投机解码框架 AngelSpec，并放出 Hy3-A21B 的 MTP 与 DFly drafter 权重及训练代码。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdu2uhb013krofz97aog7sk"
-      }
-    },
-    {
-      "id": "cmsdu4z3a018urofzpawk9sfj",
-      "title": "烧了一万块API后，我找到了同时适用于Fable5和GPT5.6的AI工作流",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247508880&idx=1&sn=968a2ff3d6013a96f2ebfb5ab1579e5c",
-      "permalink": "https://aihot.virxact.com/items/cmsdu4z3a018urofzpawk9sfj",
-      "source": "公众号：卡尔的AI沃茨",
-      "publishedAt": "2026-07-29T10:32:26.000Z",
-      "discoveredAt": "2026-07-29T10:32:26.000Z",
-      "summary": "作者将Claude Code与Codex的协作工具搭子升级至2.0版，通过deep_reasoner、fast_worker、arbiter三种身份及跨项目模型混编，把每周500美元的API账单压缩至400美元。2.0新增本地配置UI、一键试跑、Goal哈希校验和带证据链的小票，并支持按host分命名空间独立配置两个Agent。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdu4z3a018urofzpawk9sfj"
-      }
-    },
-    {
-      "id": "cms5htk9l004nros5wi94l4eh",
-      "title": "在 M1 Max 上运行 2.8T 参数的 Kimi K3：Deltafin 项目实现 0.0687 token/s 推理",
-      "title_en": "在 M1 Max 上运行 Kimi K3",
-      "url": "https://github.com/gavamedia/deltafin",
-      "permalink": "https://aihot.virxact.com/items/cms5htk9l004nros5wi94l4eh",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-07-29T02:49:20.833Z",
-      "discoveredAt": "2026-07-29T02:56:17.464Z",
-      "summary": "Deltafin 项目成功在 64 GB M1 Max 上运行了 2.8T 参数的 MoE 模型 Kimi K3，当前中位推理速度为 0.0687 token/s（14.6 秒/token）。完整安装需约 1.7 TB 本地磁盘，流式模式仅需 215 GB 但推理速度降至 3 分钟以上/token。项目提供 OpenAI 兼容 API 服务器，支持聊天和代码补全，但建议客户端超时设为小时级别。",
-      "category": "ai-products",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms5htk9l004nros5wi94l4eh"
-      }
-    },
-    {
-      "id": "cms5a9tpy00utro7c9bw0s295",
-      "title": "OpenAI 发布 Codex 安全 CLI 与 SDK",
-      "title_en": "More opensource goodness. We have just released a CLI and TypeScript SDK for finding， validating， an…",
-      "url": "https://x.com/thsottiaux/status/2082241164850364555",
-      "permalink": "https://aihot.virxact.com/items/cms5a9tpy00utro7c9bw0s295",
-      "source": "X：Tibo (@thsottiaux)",
-      "publishedAt": "2026-07-28T23:05:54.000Z",
-      "discoveredAt": "2026-07-28T23:24:59.020Z",
-      "summary": "更多开源福利。我们刚刚发布了一个 CLI 和 TypeScript SDK，用于查找、验证和修复代码中的安全漏洞。扫描仓库、审查变更、随时间追踪发现，并在 CI 中运行安全检查。\n\nhttps://github.com/openai/codex-security",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms5a9tpy00utro7c9bw0s295"
       }
     }
   ]

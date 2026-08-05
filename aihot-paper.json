@@ -1,8 +1,62 @@
 {
-  "count": 15,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsg5h9ax06dsrolg11p7nhvv",
+      "title": "Cloudflare 提出智能体访问模型（Agent Access Model）",
+      "title_en": "The Agent Access Model",
+      "url": "https://blog.cloudflare.com/the-agent-access-model",
+      "permalink": "https://aihot.virxact.com/items/cmsg5h9ax06dsrolg11p7nhvv",
+      "source": "Cloudflare Blog",
+      "publishedAt": "2026-08-05T13:00:41.000Z",
+      "discoveredAt": "2026-08-05T13:56:13.182Z",
+      "summary": "Cloudflare 发布《The Agent Access Model》论文，提出面向 AI 智能体的访问控制模型 AAM，核心规则是\"不信任运行\"，对任务执行图中的每个动作基于智能体身份、授权任务及已触达资源进行实时授权。该模型针对智能体的短暂性、机器速度、提示词非边界及跨跳组合权限四大特性设计，主张缩小能力集而非仅优化单次决策，并区分单主体控制与多人访问控制的难点。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsg5h9ax06dsrolg11p7nhvv"
+      }
+    },
+    {
+      "id": "cmsfoajgx07p9roch4d7vrjuh",
+      "title": "Video-DeepResearch：迈向下一代多模态深度研究智能体",
+      "title_en": "Video-DeepResearch： Towards the Next-Generation Multimodal Deepresearch Agent",
+      "url": "https://arxiv.org/abs/2608.03979",
+      "permalink": "https://aihot.virxact.com/items/cmsfoajgx07p9roch4d7vrjuh",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "discoveredAt": "2026-08-05T05:55:09.022Z",
+      "summary": "Video-DeepResearch（Video-DR）将多模态智能体从静态图像扩展到连续视频流，提出解耦感知-探索流水线与分阶段工具解锁，以应对模态偏差和参数知识泄漏两大瓶颈。",
+      "category": "paper",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsfoajgx07p9roch4d7vrjuh"
+      }
+    },
+    {
+      "id": "cmsffpu8h1qz2ro2erlnfwib9",
+      "title": "Any-OPD：面向流匹配模型的异构同策略蒸馏框架",
+      "title_en": "Any-OPD： Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging",
+      "url": "https://arxiv.org/abs/2608.03316",
+      "permalink": "https://aihot.virxact.com/items/cmsffpu8h1qz2ro2erlnfwib9",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "discoveredAt": "2026-08-05T01:55:06.514Z",
+      "summary": "Any-OPD 提出首个支持任意异构流匹配生成器对的同策略蒸馏框架，仅通过冻结的 DINOv2 表示空间桥接教师与学生模型，无需共享 VAE、架构或噪声调度。将 FLUX.1-dev 蒸馏至 SD3.5-Medium 后，学生模型 PickScore 与 HPSv3 均显著提升，以教师五分之一的参数量达到接近其性能，而直接潜在回归训练完全失败。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsffpu8h1qz2ro2erlnfwib9"
+      }
+    },
     {
       "id": "cmse4jxrl0d1gro2ewjdbr7n3",
       "title": "SwanTale：面向指令与零样本任务的统一多说话人语音与音频生成",
@@ -235,42 +289,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms8ckrgb0826rot0xn8g8dt8"
-      }
-    },
-    {
-      "id": "cmsass3b802g4romzntw9ijll",
-      "title": "Science One Framework：通过 Chain-of-Evidence 实现可验证的自主科研框架",
-      "title_en": "Science One Framework： A verifiable autonomous research framework via Chain-of-Evidence",
-      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence",
-      "permalink": "https://aihot.virxact.com/items/cmsass3b802g4romzntw9ijll",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-07-29T16:00:00.000Z",
-      "discoveredAt": "2026-07-29T16:00:00.000Z",
-      "summary": "Google Research 推出 Science One Framework，一个原生构建证据链的自主科研原型，旨在消除模型幻觉，并配套自动化评估协议 CoE Audit。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsass3b802g4romzntw9ijll"
-      }
-    },
-    {
-      "id": "cms6x4iu80273rouqra49hny9",
-      "title": "AI 智能体能否进行开放式 AI 研究？两项案例的早期证据",
-      "title_en": "Can AI agents conduct open-ended AI research？ Early evidence from two case studies",
-      "url": "https://arxiv.org/abs/2607.27191",
-      "permalink": "https://aihot.virxact.com/items/cms6x4iu80273rouqra49hny9",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-29T00:00:00.000Z",
-      "discoveredAt": "2026-07-30T02:52:29.161Z",
-      "summary": "一项新研究通过\"影子评估\"测试前沿 AI 智能体能否独立完成开放式 AI 研究。智能体在六天和数千美元算力下完成了全部工程任务，但未能对两项未发表的 NeurIPS 2026 论文的核心研究问题取得实质性进展，被原作者明确拒稿。研究识别出五大失败模式，包括对发表标准判断不足、研究设计缺乏创意、无法有效回溯死胡同、资源意识差和指令漂移。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6x4iu80273rouqra49hny9"
       }
     }
   ]
