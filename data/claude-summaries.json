@@ -1,61 +1,57 @@
 {
-  "generated_at": "2026-08-03T21:47:00Z",
+  "generated_at": "2026-08-05T21:55:55Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ve1mvh/minimaxh3_now_on_huggingface/": {
-      "en": "MiniMax has released H3 on Hugging Face, positioning it as a general-purpose omni-modal generative system. The model accepts unified inputs across text, images, video, and audio, and can generate video with native stereo audio at resolutions up to two thousand pixels and durations of up to fifteen seconds. Its task-generalization-oriented design gives it broad multimodal understanding and generation ability directly from pre-training, without post-hoc adapters.",
-      "zh": "MiniMax在Hugging Face发布H3，一个通用全模态生成系统。它统一理解文本、图像、视频与音频输入，能生成分辨率最高达两千像素、时长十五秒且自带立体声的视频。系统以任务泛化为目标设计，预训练阶段即具备执行复杂多模态指令的能力。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vg0q6r/qwen3tts_voice_cloning_is_now_in_mainline/": {
+      "en": "llama.cpp has merged mainline support for Qwen3-TTS, replacing the older unmerged demo. The 1.7 billion parameter Base model runs from GGUF weights via the llama-tts binary, accepting a WAV or MP3 speaker reference and generating audio in ten languages including English, Chinese and Japanese. Qwen says voice cloning works from about three seconds of audio. The server endpoint is still a draft, and independent quality or speed comparisons against dedicated ports are not yet available.",
+      "zh": "llama.cpp 主线终于合并了 Qwen3-TTS 支持，取代了几个月前那份未合入的演示 PR。17亿参数 Base 模型通过 llama-tts 命令行工具运行 GGUF 权重，用一段 WAV 或 MP3 作为说话人参考，即可生成英语、中文、日语等十种语言的语音。官方称约三秒音频即可克隆音色，服务端接口仍是草稿。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1veipya/the_chinese_labs_everyone_lumps_together_are/": {
-      "en": "An Ant Group engineer working on the Ling models argues Chinese open-weight labs are pursuing distinct strategies rather than acting as one bloc. Qwen bets on distribution and day-one runtime support, DeepSeek on architecture and simultaneous paper-plus-weights drops, Moonshot on longer horizons, and Ant on serving cost, with Ling three point zero flash designed as a hundred twenty four billion parameter Mixture of Experts for cheap long-context agent loops.",
-      "zh": "一位在蚂蚁集团做Ling模型的工程师认为，中国开源实验室并非一个整体，各家押注不同：Qwen押注分发与运行时首日支持，DeepSeek押注架构并与论文同日放出权重，Moonshot押注更长的时间视野；蚂蚁则押注推理成本，Ling 3.0 flash设计为1240亿总参、约51亿激活的混合专家模型，专为长上下文智能体循环压低成本。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vg569y/qwen_developers_responses_from_their_recent/": {
+      "en": "Qwen developers ran a Twitter AMA around their imminent 27 billion parameter release, hinted at as a substantial capability jump over the previous 27 billion parameter model. They confirmed the 3.8 flagship uses 2.4 trillion total parameters with 95 billion active, said smaller Mixture of Experts variants and 8 billion parameter sizes are community requests they are collecting, and pointed users to Qoder for coding workflows. Post-training relied on heavy reinforcement learning and higher-quality data engineering rather than raw scaling.",
+      "zh": "Qwen 开发者在 Twitter AMA 中透露即将发布的270亿参数模型是一次能力大跃升，并确认3.8旗舰共2.4万亿参数、活跃950亿。对于更小的混合专家变体和80亿参数版本，团队称正在收集社区呼声。编码工作流则被引向 Qoder。他们还表示3.8的后训练靠大量强化学习和高质量数据工程，而非单纯扩规模。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1veg9uq/data_center_in_a_box_on_wheels_256gb_vram512gb/": {
-      "en": "An infrastructure engineer shares a six to eight month operational review of a self-built AI workstation packing eight RTX 3090s and two RTX 5090s for a combined two hundred fifty six gigabytes of GPU memory, alongside a sixty four core Threadripper and five hundred twelve gigabytes of ECC system RAM. The rig runs frontier Mixture of Experts inference plus image generation for a small business, and the write-up covers thermals, power, layout, and long-term stability trade-offs.",
-      "zh": "一位IT基础设施工程师分享自建AI工作站六至八个月的运维回顾：八张RTX 3090加两张RTX 5090合计256GB显存，配64核Threadripper和512GB ECC内存，用于替小企业运行前沿混合专家模型推理与图像生成。文中详述散热、供电、机箱布局及长期稳定性权衡。",
-      "title_en": "Six to eight month operational review of a mobile all-in-one AI server with 256 gigabytes of GPU memory and 512 gigabytes of system RAM",
-      "title_zh": "自建移动式AI服务器六至八个月运维回顾：256GB显存加512GB内存的稳定性与性能测评"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vfo8be/gptoss_has_turned_one_year_old_today/": {
+      "en": "The poster celebrates GPT-OSS's first anniversary, calling both the 20 billion and 120 billion parameter versions among the best local models ever released and still their daily driver. They rate Qwen 3.5 122B as its only real rival but slower and lacking a local-friendly quantised format, dismiss Nemotron 3 Super as a slower clone with a nicer architecture, and share a hand-fixed Jinja chat template that patches tool-call bugs and adds token smuggling protection.",
+      "zh": "作者庆祝 GPT-OSS 发布一周年，认为200亿和1200亿参数版本至今仍是最好的本地模型，是他的日常主力。他把 Qwen 3.5 122B 视为唯一对手，但更慢且没有本地友好的量化格式；Nemotron 3 Super 只是架构更漂亮的慢速克隆。文末分享了他修订过的 Jinja 对话模板，修好了工具调用并加入 token 走私保护。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vee1ob/v4flash0731_vibes_after_first_weekend_of_use/": {
-      "en": "A user reports impressions after a weekend with DeepSeek V4 Flash 0731. Quantization drastically changes behavior: three-bit weights are a viable replacement for Qwen three point six twenty seven B, especially inside large tool-calling harnesses, while two-bit weights degrade too much. Full precision approaches GLM five point two quality at a fraction of the cost. The model is agent-focused and light on general knowledge, so tool use matters.",
-      "zh": "一位用户分享DeepSeek V4 Flash 0731一周使用体验：量化对该模型影响巨大，三位量化可作为Qwen 3.6 27B的替代，尤其在带工具的大型上下文中更稳，二位则明显掉档。全精度接近GLM 5.2水平但成本极低。模型明显偏智能体方向，通用知识偏弱，需靠工具调用弥补。",
-      "title_en": "First weekend impressions of DeepSeek V4 Flash 0731 across quantization levels",
-      "title_zh": "首个周末试用DeepSeek V4 Flash 0731各量化版本的主观印象"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vg8qfv/lfm2526b_on_a_oneplus_13_at_17_toks_pure_cpu/": {
+      "en": "The poster demonstrates the 2.69 billion parameter LFM2.5 running on a OnePlus 13 phone at 17 tokens per second on CPU only, using a Q4 K M GGUF quantisation loaded by a from-scratch inference engine that weighs just 450 kilobytes and also handles Qwen, Gemma and Bonsai architectures. A homegrown terminal probe suite drives the device over Android Debug Bridge. The author is aiming to reach around 30 tokens per second next.",
+      "zh": "作者展示 LFM2.5-2.6B 在 OnePlus 13 手机上纯 CPU 每秒17个 token 的运行效果，使用 Q4 K M 量化 GGUF 权重。加载它的推理引擎完全自研，仅450 KB，还支持 Qwen、Gemma、Bonsai 等架构，通过 Android Debug Bridge 驱动设备，目标是推到每秒约30 token。",
+      "title_en": "LFM2.5 running on a OnePlus 13 at 17 tokens per second on pure CPU",
+      "title_zh": "LFM2.5 在 OnePlus 13 上纯 CPU 每秒17个 token 运行"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vdy1nd/github_sqliteaiwaste_run_the_full/": {
-      "en": "WASTE is a new dependency-free C inference engine that lets machines run the full two point seven eight trillion parameter Kimi K3 model even when it does not fit in RAM. It keeps the shared model trunk resident in memory, streams individual activated experts directly from NVMe storage on demand, and uses the leftover RAM as a bounded cache of recently used experts to soften disk latency.",
-      "zh": "WASTE是一款无外部依赖的C语言推理引擎，能在内存不足的情况下运行完整的2.78万亿参数Kimi K3模型。它把共享的模型主干常驻内存，按需从NVMe硬盘直接流式读取被激活的专家权重，并把剩余内存作为专家缓存以缓解磁盘延迟。",
-      "title_en": "WASTE inference engine streams Kimi K3's 2.78 trillion parameters directly from NVMe storage",
-      "title_zh": "WASTE推理引擎直接从NVMe硬盘流式加载Kimi K3的2.78万亿参数"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vfuawi/vibevoice_15b_running_locallyon_an_iphone_only_22/": {
+      "en": "The author got Microsoft's VibeVoice 1.5 billion parameter speech model running locally on an iPhone, using about 2.2 gigabytes of memory and reaching up to 1.28 times real-time speed on generation. Video memory stayed stable across long-form generation in a minute-long demo posted on X. The build sprang from a side detour off the next audio.cpp release, and they plan to publish the model to the audio.cpp Hugging Face repo and share the xcframework and code branch afterwards.",
+      "zh": "作者把微软 VibeVoice 15亿参数语音模型直接跑在 iPhone 本地上，约占用2.2 GB 内存，生成最高可达1.28倍实时速度。长语音测试中显存稳定，一分钟演示已发布在 X。这原本只是 audio.cpp 下一版本的一次偏离，模型将上传至 audio.cpp 的 Hugging Face 仓库。",
+      "title_en": "VibeVoice 1.5 billion parameter speech model running locally on an iPhone at up to 1.28 times real-time",
+      "title_zh": "VibeVoice 15亿参数语音模型在 iPhone 本地运行，最高可达1.28倍实时速度"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ve9r2q/kat_coder_25_dev_do_yourself_a_favor_and_try_it/": {
-      "en": "A developer strongly recommends KAT Coder 2.5 dev, a thirty five billion parameter Mixture of Experts model with three billion active per token. On a real research-code modification benchmark it scored seven out of ten, tying near the top and beating Qwen three point six thirty five B A three B, Ornith one point zero thirty five B, and multiple Gemma four variants, while running roughly five times faster than a dense twenty seven B baseline.",
-      "zh": "一位开发者力荐KAT Coder 2.5 dev，一款35B总参、3B激活的混合专家模型。在一项真实科研代码修改评测中它得到7分（满分10分），与并列最高分接近，明显超过Qwen 3.6 35B A3B、Ornith 1.0 35B以及多款Gemma 4，同时速度约为27B稠密模型的五倍。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vg8fi1/given_the_minimax_h3_loras_debacle_some_important/": {
+      "en": "A Chinese poster explains why MiniMax and other mainland labs aggressively suppress uncensored generation. Written pornography is illegal in China and can lead to prison, so a tool that gains a reputation for producing such content risks a regulatory crackdown, especially if discussion overwhelms the automatic social-media censors that currently blunt attention. Graphic violence is formally illegal too but less enforced. Copyright infringement, by contrast, is largely ignored by Chinese authorities, so training data is not the concern.",
+      "zh": "一位中国网友解释了为何 MiniMax 及大陆各实验室会强力压制不安全生成。文字色情在中国属违法，可判监禁，因此若某工具因能生成此类内容而广为人知，就会招致监管重拳，尤其当讨论量突破自动审查上限时。血腥暴力同样违法但执法较松。反观版权侵权，中国当局基本不管，所以训练数据并非顾虑所在。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vduxth/you_really_should_not_quantize_kv_cache_for/": {
-      "en": "A user benchmarks the quality hit from switching DeepSeek V4 Flash's key-value cache from sixteen-bit BFloat to eight-bit and finds it significant: mean Kullback-Leibler divergence of about zero point one four six and a same-top-token rate of only eighty seven percent. The same test on Qwen three ninety seven B is nearly lossless, with divergence of about zero point zero zero four and same-top-token rate above ninety seven percent. Keep V4 Flash's cache full precision.",
-      "zh": "一位用户实测DeepSeek V4 Flash把键值缓存从16位BF16降到8位的质量损失：平均KL散度约0.146，最高概率词相同率仅87%。同样的实验在Qwen 397B上几乎无损，KL散度仅约0.004，相同率超过97%。结论：不要量化V4 Flash的键值缓存，保持全精度。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vg41ot/i_updated_my_localy_run_benchmark_with_deepseek/": {
+      "en": "The author updated their local large language model benchmark with DeepSeek V4 Flash 0731, running the MXFP4 quantisation from Bartoswski through DSpark at roughly 1000 tokens per second prefill and 90 tokens per second generation on average. It lands as the top-left purple cluster on the chart, meaning best efficiency and highest score to date. Various sampling parameters were tried and are documented on the detail page. The model has no vision support.",
+      "zh": "作者更新了自己的本地大模型基准测试，新增 DeepSeek V4 Flash 0731 成绩：用 Bartoswski 的 MXFP4 量化通过 DSpark 运行，预填约每秒1000 token，生成平均每秒90 token，图上落在左上角紫色簇，是目前效率最好、得分最高的模型。不同采样参数的对比可在详情页查看。可惜它没有视觉能力。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ve9eo3/ai9stars_released_g9v339a5b/": {
-      "en": "AI9Stars has released G9v3, an open-weights language model with thirty nine billion total parameters and five active experts per token, positioned as a stronger reasoner than the same team's earlier three billion parameter version. It is licensed under Apache two point zero for personal and commercial use, targets general assistant, coding, tool-use, and reasoning workloads, and supports both thinking and non-thinking response modes.",
-      "zh": "AI9Stars发布G9v3开源权重语言模型，总参数390亿、每Token激活5个专家，推理能力据称优于同团队早前的30亿参数版本。采用Apache 2.0协议，个人和商业均可使用，面向通用助理、编程、工具调用和推理任务，同时支持思考与非思考两种响应模式。",
-      "title_en": "AI9Stars releases G9v3 open-weight reasoning model with 39 billion parameters and 5 active experts",
-      "title_zh": "AI9Stars发布G9v3开源权重推理模型：390亿总参与5个激活专家"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vfrjwl/deepseekv4flash_on_sm89_4x48gb_4090s_with_dspark/": {
+      "en": "The author showcases a working vLLM setup for DeepSeek V4 Flash on four 48 gigabyte modified RTX 4090s built on the older SM89 compute architecture, driven by the DSpark framework. Initial video showed the rig at 64 thousand token context; it now stretches to 256 thousand. The write-up simply points at the community fork behind the port. It stands as an unusual proof point that a specialised vLLM build can bring the model to this GPU configuration.",
+      "zh": "作者展示了 DeepSeek V4 Flash 在四块48 GB 改装 RTX 4090 上跑 vLLM 的成果，硬件是较老的 SM89 计算架构，配合 DSpark 框架。视频拍摄时上下文只有6.4万 token，如今已扩展到25.6万。文中只给出社区仓库链接，作为一个不常见的例证，说明专门魔改的 vLLM 分支能把该模型跑在这种 GPU 组合上。",
+      "title_en": "DeepSeek V4 Flash running under vLLM on four 48 gigabyte modified RTX 4090s with DSpark",
+      "title_zh": "DeepSeek V4 Flash 在四块48 GB 改装 RTX 4090 上通过 DSpark 运行 vLLM"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vecxhw/i_compared_mineru_granitedocling_and_paddleocrvl/": {
-      "en": "A user benchmarks three open-source PDF parsers, MinerU, Granite-Docling, and PaddleOCR-VL, across twelve capabilities on six document types including financial statements, arXiv papers, scanned invoices, and multilingual datasheets, all on the same NVIDIA L4 GPU. Granite-Docling emits the cleanest markdown with real heading levels and pipe tables. MinerU can read embedded bar charts but silently drops footers such as invoice bank numbers unless rebuilt from the raw block list.",
-      "zh": "一位用户在同一块NVIDIA L4显卡上，用六种文档、十二项能力对比三款开源PDF解析器：MinerU、Granite-Docling与PaddleOCR-VL。Granite-Docling输出的Markdown最干净，能生成真实标题层级和管道表格；MinerU能读懂条形图并把数据转为表格，但会静默丢弃发票银行账号等页面附件，除非绕过默认Markdown从原始块列表重建。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vg1dqw/building_a_fully_local_pdf_readaloud/": {
+      "en": "Speechfony is a new fully-local desktop app for reading PDFs and EPUBs aloud, built around Kokoro for speech and Qwen with llama.cpp for on-device embeddings and semantic search. Features include sentence-level playback with live highlighting, MP3 audiobook export, adjustable header and footer trims, and CoreML, DirectML or CUDA acceleration. Multi-column PDFs, scanned pages, footnotes and non-English text remain rough. It runs on macOS Apple Silicon, Windows and Linux and is MIT licensed.",
+      "zh": "Speechfony 是全本地桌面应用，把 PDF 和 EPUB 朗读出来。底层用 Kokoro 合成语音，Qwen 配 llama.cpp 提供本地嵌入与语义搜索。功能包括句级播放高亮、MP3 有声书导出、可调页眉页脚裁剪，支持 CoreML、DirectML、CUDA 加速。多栏 PDF、扫描件、脚注与非英语文本仍不完善，MIT 开源。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vegedy/deepseek_v4_flash_0731_happy_numbers_700pp18tg/": {
-      "en": "A user tunes DeepSeek V4 Flash 0731 at eight-bit quantization on a Threadripper 5965WX with five hundred twelve gigabytes of ECC RAM and a single RTX 5090. Raising llama dot cpp's batch and micro-batch sizes to eight thousand one hundred ninety two and enabling CPU offload for the Mixture of Experts weights lifts prompt processing from about one hundred forty to over seven hundred tokens per second, while generation stays around eighteen tokens per second out to one hundred thousand tokens of context.",
-      "zh": "一位用户在Threadripper 5965WX、512GB ECC内存加一张RTX 5090上跑DeepSeek V4 Flash 0731的8位量化版。将llama.cpp的批次与微批次调到8192并对混合专家权重启用CPU卸载后，提示处理速度从每秒约140 Token跃升至700 Token以上，生成速度在10万Token上下文内维持约每秒18 Token。",
-      "title_en": "Tuning DeepSeek V4 Flash 0731 on a Threadripper plus RTX 5090 for 700 prompt tokens per second",
-      "title_zh": "在Threadripper加RTX 5090上调优DeepSeek V4 Flash 0731：提示处理达每秒700 Token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vfv27k/intern_s2_mobius/": {
+      "en": "InternLM has released Intern S2 Mobius, a model derived from Qwen3.5 35 billion parameters with an unspecified architectural change that reportedly delivers higher throughput and lower token consumption than its parent. The post itself is essentially a pointer to the Hugging Face weights, with no benchmarks or architectural detail beyond that claim. It offers the community a Qwen-derived variant worth benchmarking to see whether the claimed efficiency gain holds up under real evaluation.",
+      "zh": "InternLM 发布了 Intern S2 Mobius，一款基于 Qwen3.5 350亿参数派生的模型，据称有一处未详述的架构改动，可带来更高吞吐和更低 token 消耗。原帖仅贴出 Hugging Face 权重链接，没有任何基准测试或架构细节。这是一款值得社区做基准评测的 Qwen 派生变体，可用来验证宣称的效率提升是否属实。",
+      "title_en": "InternLM releases Intern S2 Mobius, a Qwen3.5-derived model claimed to deliver higher throughput and lower token use",
+      "title_zh": "InternLM 发布 Intern S2 Mobius，一款 Qwen3.5 派生模型，据称吞吐更高、token 消耗更低"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1ve6ds2/döner_bench_deepseekv4flash_iq2_xs_running_on_a/": {
-      "en": "A user runs DeepSeek V4 Flash 0731 quantized to the aggressive IQ2 XS two-bit scheme, with expert weights kept at eight bits, on a single RTX 3090 and one hundred twenty eight gigabytes of DDR4 RAM under llama dot cpp. Given a prompt to write a self-contained HTML canvas simulating a vertical döner kebab rotating in front of a gas heater, the model produces a complete working render, imperfect in fine detail but coherent overall.",
-      "zh": "一位用户在单张RTX 3090加128GB DDR4内存上，用llama.cpp运行DeepSeek V4 Flash 0731的IQ2_XS激进二位量化版，专家层保留8位。任务是写一个不依赖任何库的单文件HTML画布，模拟燃气加热器前旋转的立式土耳其烤肉。模型生成的动画完整可运行，细节欠精但整体场景与要求相符。",
-      "title_en": "DeepSeek V4 Flash 0731 at IQ2 XS two-bit quantization renders a rotating kebab canvas on a single RTX 3090",
-      "title_zh": "DeepSeek V4 Flash 0731的IQ2_XS二位量化版在单张RTX 3090上完成旋转烤肉画布测试"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vfshny/psa_update_cuda_from_132_to_133_to_solve_deepseek/": {
+      "en": "A user reports that upgrading NVIDIA CUDA from 13.2 to 13.3 fixes a looping and quality-degradation issue that made DeepSeek V4 Flash 0731 essentially unusable under the Unsloth build. Before the driver bump the model would spiral into repetition within minutes and the chat would visibly degrade; after the upgrade it runs cleanly on long-horizon coding tasks and has already produced measurable improvements to their Qwen3.6 code. It is now their daily driver until Qwen 3.8 27B ships.",
+      "zh": "有用户报告，把 NVIDIA CUDA 从13.2升到13.3就能解决 Unsloth 版 DeepSeek V4 Flash 0731 的循环崩坏问题。此前模型跑几分钟就会陷入重复、输出退化，几近不可用。升级后可稳定完成长时编码任务，还改进了他自己 Qwen3.6 的代码。作者说这已是他的日常主力，直到 Qwen 3.8 27B 到来。"
     }
   }
 }
