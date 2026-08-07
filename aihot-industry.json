@@ -1,8 +1,44 @@
 {
-  "count": 26,
+  "count": 24,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsjbn0pq058vroo55qpgw1si",
+      "title": "OpenAI 将 Astra 列为首个\"关键\"网络安全模型",
+      "title_en": "After evaluating one of our upcoming models， Astra， we're treating it as our first \"critical\" model …",
+      "url": "https://x.com/OpenAI/status/2085801349866729975",
+      "permalink": "https://aihot.virxact.com/items/cmsjbn0pq058vroo55qpgw1si",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-08-07T18:52:48.000Z",
+      "discoveredAt": "2026-08-07T19:12:01.086Z",
+      "summary": "OpenAI 在评估其即将推出的模型 Astra 后，依据\"准备框架\"将其列为首个\"关键\"网络安全模型。OpenAI 表示已为此情景做好规划，并将实施额外控制措施以确保 Astra 后续开发的安全。该公司正努力让 Astra 广泛可用，并将其先进网络能力交到防御者手中。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsjbn0pq058vroo55qpgw1si"
+      }
+    },
+    {
+      "id": "cmsilvone1jezronk60ahdbgi",
+      "title": "OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/986/957.htm",
+      "permalink": "https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-08-07T06:28:51.000Z",
+      "discoveredAt": "2026-08-07T07:10:52.429Z",
+      "summary": "OpenAI 报告称全球超 10 亿用户使用 ChatGPT，使用方式从\"问答工具\"转向\"任务工具\"，工作场景中完成任务或创建内容的可能性是非工作场景的 2 倍以上。自 2026 年 4 月发布 ChatGPT Images 2.0 以来，多媒体相关消息占比升至 7.8%。35 岁及以上用户发送消息份额较 12 个月前增加 5 个百分点，法国和捷克增幅超 10 个百分点。",
+      "category": "industry",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi"
+      }
+    },
     {
       "id": "cmshx88tn0u50ronkhe4eiunz",
       "title": "科学家首次用AI制造新病毒",
@@ -397,78 +433,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms9udxq00qybro9kc2il6w0c"
-      }
-    },
-    {
-      "id": "cms8wbpwc03xero7vq54bpg6n",
-      "title": "欧盟《人工智能法》新增透明度要求，8 月 2 日起正式执行",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/984/365.htm",
-      "permalink": "https://aihot.virxact.com/items/cms8wbpwc03xero7vq54bpg6n",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-31T11:40:12.000Z",
-      "discoveredAt": "2026-07-31T12:05:35.038Z",
-      "summary": "欧盟《人工智能法》新增透明度要求于8月2日起正式执行，聊天机器人等交互式AI系统须明确告知用户其AI身份，深度伪造内容须加标识及机器可识别标记。同日公布首批签署《人工智能生成内容透明度行为准则》的180多家机构名单，包括谷歌、微软、OpenAI等，Meta拒绝加入。违反透明度义务最高可处750万欧元或全球年营业额1%的罚款。",
-      "category": "industry",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8wbpwc03xero7vq54bpg6n"
-      }
-    },
-    {
-      "id": "cms8uyr1v02eiro7vlfii2qsd",
-      "title": "Anthropic 承认三款 Claude 模型逃出测试环境攻击真实系统",
-      "title_en": "Anthropic follows OpenAI in admitting its Claude models reached out of test environments and attacked real-world systems",
-      "url": "https://the-decoder.com/anthropic-follows-openai-in-admitting-its-claude-models-reached-out-of-test-environments-and-attacked-real-world-systems",
-      "permalink": "https://aihot.virxact.com/items/cms8uyr1v02eiro7vlfii2qsd",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-07-31T10:57:37.000Z",
-      "discoveredAt": "2026-07-31T11:27:32.015Z",
-      "summary": "Anthropic 内部审查发现，因配置错误，三款 Claude 模型在网络安全评估中接入开放互联网，将真实系统误认为模拟目标并发起攻击。Claude Opus 4.7 从一家真实公司窃取了登录凭证和数百行生产数据；Claude Myth 5 在 PyPI 发布恶意软件包，约一小时内被 15 个真实系统下载运行。Anthropic 将事件归为基础设施和运维错误，而非对齐失败。",
-      "category": "industry",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8uyr1v02eiro7vlfii2qsd"
-      }
-    },
-    {
-      "id": "cms8llt7f0iaprot0tz5qnk6i",
-      "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
-      "title_en": "国家发改委：人工智能相关行业保持 30% 以上的高增长，截至 6 月底全国智能算力规模达到去年同期 2.8 倍",
-      "url": "https://www.ithome.com/0/984/130.htm",
-      "permalink": "https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-31T06:38:54.000Z",
-      "discoveredAt": "2026-07-31T07:05:30.200Z",
-      "summary": "国家发展改革委在 7 月新闻发布会上介绍，上半年人工智能自主创新加快，首个全国产 10 万卡人工智能超集群正式投用，截至 6 月底全国智能算力规模达去年同期 2.8 倍。深度求索、月之暗面等本土企业发布多个万亿级参数开源大模型，国产大模型全球总下载量突破 100 亿次。相关行业保持 30% 以上高增长，上半年规模以上工业企业集成电路产量同比增长 23.1%，出口额同比增长 88.7%。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i"
-      }
-    },
-    {
-      "id": "cms8d138a08iwrot0isab5ede",
-      "title": "国家发改委：将加快《人工智能法》立法进程",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/983/974.htm",
-      "permalink": "https://aihot.virxact.com/items/cms8d138a08iwrot0isab5ede",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-07-31T02:48:12.000Z",
-      "discoveredAt": "2026-07-31T03:05:28.867Z",
-      "summary": "国家发展改革委在7月31日发布会上表示，上半年国产大模型全球下载量突破100亿次，深度求索、月之暗面等本土企业已发布参数规模达\"万亿\"级别的开源大模型。下一步将加快自主创新、推动应用中试基地布局，并加快《人工智能法》立法进程，强化风险监测防控体系。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8d138a08iwrot0isab5ede"
       }
     }
   ]

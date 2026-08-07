@@ -1,8 +1,44 @@
 {
-  "count": 19,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsixbbry1x0qronkhbbjukhr",
+      "title": "蚂蚁百灵开源 Ling-3.0-flash：124B 总参数 MoE 模型，支持 API、单机与高性能三种部署",
+      "title_en": "Ling-3.0-flash 开源：为真实世界而生的开放智能",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487457&idx=1&sn=24ad4a355d81291e53fbe680ca987112",
+      "permalink": "https://aihot.virxact.com/items/cmsixbbry1x0qronkhbbjukhr",
+      "source": "公众号：蚂蚁百灵（Ling）",
+      "publishedAt": "2026-08-07T12:02:16.000Z",
+      "discoveredAt": "2026-08-07T12:31:00.791Z",
+      "summary": "蚂蚁百灵正式开源新一代原生混合推理模型 Ling-3.0-flash，采用 124B 总参数、5.1B 激活参数的 MoE 架构，并提供 FP8、FP4、INT4 等多个版本。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsixbbry1x0qronkhbbjukhr"
+      }
+    },
+    {
+      "id": "cmsilvone1jf1ronk6fs8o4d4",
+      "title": "谷歌推出 WeatherNext 气旋模型，AI 高精度预报飓风平均提前 24 小时",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/986/951.htm",
+      "permalink": "https://aihot.virxact.com/items/cmsilvone1jf1ronk6fs8o4d4",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-08-07T06:11:01.000Z",
+      "discoveredAt": "2026-08-07T07:10:52.429Z",
+      "summary": "谷歌 DeepMind 联合多家机构推出 WeatherNext Cyclones 气旋预测模型，在路径、强度和风场结构预测精度上达到业界领先。该模型将有效预报时长从 2 天延长至 3 天，平均提前 24 小时，预测量级约相当于 10 年气象进展。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsilvone1jf1ronk6fs8o4d4"
+      }
+    },
     {
       "id": "cmshjdgsn0gf5ronkj2dwsbwh",
       "title": "NVIDIA Cosmos 3：开放世界模型如何推动物理 AI 前沿",
@@ -130,24 +166,6 @@
       }
     },
     {
-      "id": "cmsesgyzp159kro2efe58vs2u",
-      "title": "蚂蚁百灵发布Ling-3.0-flash开源权重",
-      "title_en": "Today， we're releasing the open weights for Ling-3.0-flash. 🎉 Official BF16 and FP8-quantized vers…",
-      "url": "https://x.com/AntLingAGI/status/2084656533489754475",
-      "permalink": "https://aihot.virxact.com/items/cmsesgyzp159kro2efe58vs2u",
-      "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "publishedAt": "2026-08-04T15:03:43.000Z",
-      "discoveredAt": "2026-08-04T15:04:20.575Z",
-      "summary": "今天，我们发布了 Ling-3.0-flash 的开源权重。🎉\n\n官方 BF16 和 FP8 量化版本现已可用，您可以根据自己的硬件、性能要求和部署需求选择最合适的版本。",
-      "category": "ai-models",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsesgyzp159kro2efe58vs2u"
-      }
-    },
-    {
       "id": "cmsesrlcn15j6ro2ecpj577wj",
       "title": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿开源模型",
       "title_en": "NVIDIA Alpamayo 2 Super， the Frontier Open Model for Robotaxis and Autonomous Vehicles， Now Available for Commercial Use",
@@ -271,78 +289,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk"
-      }
-    },
-    {
-      "id": "cms8rt1ml06j0roghw1n7a4bq",
-      "title": "MiniMax H3 发布：开源全能多模态生成模型，支持 2K 原生立体声视频",
-      "title_en": "MiniMax H3： An Open Model Breaking the Boundaries Between Tasks and Modalities",
-      "url": "https://www.minimax.io/blog/minimax-h3",
-      "permalink": "https://aihot.virxact.com/items/cms8rt1ml06j0roghw1n7a4bq",
-      "source": "MiniMax：Blog（网页）",
-      "publishedAt": "2026-07-31T09:59:02.996Z",
-      "discoveredAt": "2026-07-31T09:59:02.996Z",
-      "summary": "MiniMax 正式推出全能多模态生成模型 H3，可联合理解文本、图像、视频和音频，生成最高 2K 分辨率、15 秒时长且带原生立体声的视频。H3 在指令跟随、文字与品牌呈现、V2V 动作迁移上表现突出，2K 下每秒价格低于主流模型三分之一，768p 下低于主流 720p 价格一半。官方计划近日开源模型权重，以支持开源社区并加速硬件兼容。",
-      "category": "ai-models",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8rt1ml06j0roghw1n7a4bq"
-      }
-    },
-    {
-      "id": "cms8ld9380i7arot0lyxt8h3t",
-      "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
-      "title_en": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta！ 🔷 We've massively upgraded its Agent…",
-      "url": "https://x.com/deepseek_ai/status/2083084415157022911",
-      "permalink": "https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t",
-      "source": "X：DeepSeek (@deepseek_ai)",
-      "publishedAt": "2026-07-31T06:56:41.000Z",
-      "discoveredAt": "2026-07-31T06:58:53.583Z",
-      "summary": "🚀 DeepSeek-V4-Flash 官方 API 现已上线公测！\n\n🔷 我们大幅升级了其 Agent 能力--基准测试分数现已远超 V4-Pro-Preview。查看下方巨大的性能飞跃！👇 🔷 官方 V4-Flash 现已原生支持 Responses API 格式，并已完全适配 Codex！\n\n查看我们官方 API 文档中的配置详情：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
-      "category": "ai-models",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t"
-      }
-    },
-    {
-      "id": "cmsdu10dl00vvrofzn6wd0oma",
-      "title": "DeepSeek V4 Flash 正式版发布：后训练重做，九项 Agent 测试全面超越 V4 Pro Preview",
-      "title_en": "等了好久，DeepSeek V4的正式版终于来了。 可惜，来的还是DeepSeek-V4-Flash，V4 Pro正式版还得继续等。 但我看到消息的第一反应，还有很开心的。 因为V4 Flash对我现在的生活，反而比V4 Pro还要重要。 这次，DeepSeek V4 Flash它的模型结构和参数规模完全没变，只重新做了后训练，但是强了特别多。 Terminal Bench 2.1从61.8涨到了82.7。 DeepSWE从7.3涨到了54.4。 DSBench-FullStack从37.0涨到了68.7。 官方列出的九项Agent测试里，它已经全部超过了V4 Pro Preview。 同时还原生支持Responses API，专门针对Codex进行了适配。 讲真，DeepSeek这次在后训练上，应该是憋了个大的。 但如果让我非常坦率地评价，DeepSeek V4 Flash在最顶级的Coding和Agent任务里，跟GPT-5.6 Sol、Claude Opus 5、Kimi K3这些最强模型，依然会有巨大的差距。 复杂项目的架构设计、长时间自主执行、充满意外的多步任务，我大概率还是会优先把最强的模型挂上去。 这没什么可避讳的。 但模型真正进入生产环境以后，能力上限只是一部分。 还有一个经常被低估到离谱的指标： 你到底用不用得起。 这也是我为什么反而更期待Flash。 我自己的AIHOT，现在每天差不多要抓一万条新闻。 这些新闻进来以后，要做结构化、数据清洗、预筛、标注、实体提取、原子事件分离、聚类、语义合并等等，还有一大堆后续判断。 最后才回到真正的精选打分环节那一步。 这里面绝大多数环节，都需要AI介入。 有些流程复杂到甚至需要Agent自己调用工具、检查结果、决定下一步。 一万条新闻，乘上一大串处理链路，最后就是一个极其恐怖的调用量。 按照我现在的调用规模，每个月大概API的消耗量在1000多人民币，你要是换成我常用的那些顶级模型，成本至少得翻十倍以上。 但DeepSeek V4 Flash就很适合干这个。 智能水平在中上等，却又便宜得离谱。 WorkBuddy里也是一样。 真正难到天上的任务，大家可以接K3。 可绝大多数日常任务，DeepSeek V4 Flash已经完全能处理，而且单次只消耗0.06积分。 行业当然需要那些一次跑通世界级难题的顶级模型。 可这个世界上更多的真实需求，是每天重复一万次、十万次、上百万次的普通任务。 当智能贵得像奢侈品时，大家只能偶尔体验。 当智能便宜到像水电一样时，它才会真正流进每一家公司、每一条流水线和每一个普通人的生活里。 所以我很多时候，真的挺感谢DeepSeek。 这才是真正的，智能平权。",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684859&idx=1&sn=29658a67b2b3ef46aead73698d900250",
-      "permalink": "https://aihot.virxact.com/items/cmsdu10dl00vvrofzn6wd0oma",
-      "source": "公众号：数字生命卡兹克",
-      "publishedAt": "2026-07-31T06:41:10.000Z",
-      "discoveredAt": "2026-07-31T06:41:10.000Z",
-      "summary": "DeepSeek V4 Flash 正式版发布，模型结构和参数规模不变，仅重做后训练，Terminal Bench 2.1 从 61.8 涨至 82.7，DeepSWE 从 7.3 涨至 54.4。",
-      "category": "ai-models",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vvrofzn6wd0oma"
-      }
-    },
-    {
-      "id": "cmsdu10dl00vwrofzxoufabkl",
-      "title": "MiniMax H3 发布并将开源，主打视觉包装与后期特效",
-      "title_en": "MiniMax H3发布，还要开源，AI视频终于有了自己的后期之王。",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684857&idx=1&sn=03c84df8bc0389c4ceb8f50f6c0015e3",
-      "permalink": "https://aihot.virxact.com/items/cmsdu10dl00vwrofzxoufabkl",
-      "source": "公众号：数字生命卡兹克",
-      "publishedAt": "2026-07-31T02:21:38.000Z",
-      "discoveredAt": "2026-07-31T02:21:38.000Z",
-      "summary": "MiniMax 发布 AI 视频模型 H3，并宣布开源。该模型主打视觉包装与后期特效，可生成动态 MV、动态海报、Vlog、电影片头、游戏 UI 等，语义遵循能力极强，在广告与动效领域表现优于 Seedance 2.0，但影视级张力镜头稍逊。H3 开源后预计将出现大量垂直领域特化版本。",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vwrofzxoufabkl"
       }
     }
   ]

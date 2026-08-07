@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-07T00:56:39.645Z",
+  "fetched_at": "2026-08-07T21:12:06.179Z",
   "source": "Anthropic news",
   "items": [
     {
@@ -28,6 +28,13 @@
       "link": "https://www.anthropic.com/news/claude-sonnet-5",
       "pubDate": "2026-06-30T00:00:00.000Z",
       "pubDateText": "Jun 30, 2026",
+      "description": ""
+    },
+    {
+      "title": "Improving Fable 5 S Biology Safeguards",
+      "link": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "pubDate": "2026-08-07T00:00:00.000Z",
+      "pubDateText": "Aug 7, 2026",
       "description": ""
     },
     {
@@ -84,13 +91,6 @@
       "link": "https://www.anthropic.com/news/rare-disease-research-grants",
       "pubDate": "2026-07-20T00:00:00.000Z",
       "pubDateText": "Jul 20, 2026",
-      "description": ""
-    },
-    {
-      "title": "Claude For Teachers",
-      "link": "https://www.anthropic.com/news/claude-for-teachers",
-      "pubDate": "2026-07-14T00:00:00.000Z",
-      "pubDateText": "Jul 14, 2026",
       "description": ""
     }
   ]

@@ -1,57 +1,41 @@
 {
-  "generated_at": "2026-08-05T21:55:55Z",
+  "generated_at": "2026-08-07T01:07:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vg0q6r/qwen3tts_voice_cloning_is_now_in_mainline/": {
-      "en": "llama.cpp has merged mainline support for Qwen3-TTS, replacing the older unmerged demo. The 1.7 billion parameter Base model runs from GGUF weights via the llama-tts binary, accepting a WAV or MP3 speaker reference and generating audio in ten languages including English, Chinese and Japanese. Qwen says voice cloning works from about three seconds of audio. The server endpoint is still a draft, and independent quality or speed comparisons against dedicated ports are not yet available.",
-      "zh": "llama.cpp 主线终于合并了 Qwen3-TTS 支持，取代了几个月前那份未合入的演示 PR。17亿参数 Base 模型通过 llama-tts 命令行工具运行 GGUF 权重，用一段 WAV 或 MP3 作为说话人参考，即可生成英语、中文、日语等十种语言的语音。官方称约三秒音频即可克隆音色，服务端接口仍是草稿。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vh9lx4/i_ported_vllms_serving_stack_to_c20_66_mib_binary/": {
+      "en": "The author released vllm.cpp, an unaffiliated community port of vLLM's serving stack rewritten in C++20 as a 66 mebibyte binary with no Python at runtime. It preserves continuous batching, paged key-value cache, prefix caching, speculative decoding, and an OpenAI-compatible server, verifying every supported architecture token-for-token against vLLM. Benchmarks on DGX Spark show parity or slight leads over vLLM up to 32 concurrent requests, plus wins over llama.cpp on CPU.",
+      "zh": "作者发布了 vllm.cpp，vLLM 服务栈的非官方 C++20 社区移植版，编译为 66 兆二进制文件、运行时无需 Python，仍保留连续批处理、分页键值缓存、前缀缓存与推测解码，并对每个架构逐 token 与 vLLM 校验一致。在 DGX Spark 上最高至 32 并发时与 vLLM 持平或略胜，CPU 前缀阶段亦超过 llama.cpp。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vg569y/qwen_developers_responses_from_their_recent/": {
-      "en": "Qwen developers ran a Twitter AMA around their imminent 27 billion parameter release, hinted at as a substantial capability jump over the previous 27 billion parameter model. They confirmed the 3.8 flagship uses 2.4 trillion total parameters with 95 billion active, said smaller Mixture of Experts variants and 8 billion parameter sizes are community requests they are collecting, and pointed users to Qoder for coding workflows. Post-training relied on heavy reinforcement learning and higher-quality data engineering rather than raw scaling.",
-      "zh": "Qwen 开发者在 Twitter AMA 中透露即将发布的270亿参数模型是一次能力大跃升，并确认3.8旗舰共2.4万亿参数、活跃950亿。对于更小的混合专家变体和80亿参数版本，团队称正在收集社区呼声。编码工作流则被引向 Qoder。他们还表示3.8的后训练靠大量强化学习和高质量数据工程，而非单纯扩规模。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vh7bxu/i_compared_even_more_parsers_on_14_pdfparsing/": {
+      "en": "The author expanded their earlier parser comparison to eight PDF parsers, testing 14 capabilities including tables, LaTeX, cursive handwriting, and stains. Chandra swept all 14 tests, producing faithful merged-cell tables, correct display and inline LaTeX, near-perfect cursive reading, and correctly skipping a stain, at 91 seconds per page on an L4. LightOnOCR-1B was impressive for its 1 billion parameters but hallucinated on illegible text, while classical OCR tools failed on handwriting entirely.",
+      "zh": "作者扩展了此前的 PDF 解析器对比，共评测八款，覆盖 14 项能力，包括表格、LaTeX、草书手写与污渍。Chandra 全部 14 项通过，生成忠实的合并单元格表、正确的 LaTeX、近乎完美的草书识别，并明智地跳过污渍，L4 上每页 91 秒。LightOnOCR-1B 10 亿参数下表现亮眼，但在难辨文本上产生幻觉；传统 OCR 工具在草书上则完全失效。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vfo8be/gptoss_has_turned_one_year_old_today/": {
-      "en": "The poster celebrates GPT-OSS's first anniversary, calling both the 20 billion and 120 billion parameter versions among the best local models ever released and still their daily driver. They rate Qwen 3.5 122B as its only real rival but slower and lacking a local-friendly quantised format, dismiss Nemotron 3 Super as a slower clone with a nicer architecture, and share a hand-fixed Jinja chat template that patches tool-call bugs and adds token smuggling protection.",
-      "zh": "作者庆祝 GPT-OSS 发布一周年，认为200亿和1200亿参数版本至今仍是最好的本地模型，是他的日常主力。他把 Qwen 3.5 122B 视为唯一对手，但更慢且没有本地友好的量化格式；Nemotron 3 Super 只是架构更漂亮的慢速克隆。文末分享了他修订过的 Jinja 对话模板，修好了工具调用并加入 token 走私保护。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhf70c/scotoma2_gemma4_but_with_less_annoying_slop_and/": {
+      "en": "Scotoma-2 is a fine-tune of Gemma4-31B by user AesSedai aimed at reducing Gemma4's common tropes, such as its recurring negation-then-affirmation phrasing and stacked-adjective descriptions, while preserving model intelligence. The author applied Heretic abliteration with J-lens projection to disrupt the assistant persona, then ran four separate Direct Preference Optimization passes against four rejected-versus-accepted datasets, each targeting a specific writing problem. Sample outputs show subtler, less formulaic prose than the base model.",
+      "zh": "Scotoma-2 是 AesSedai 对 Gemma4-31B 的微调版，旨在削弱 Gemma4 常见的先否定再肯定句式与堆叠形容词习气，同时保留模型智能。作者先用 Heretic 做 abliteration，配合 J-lens 投影扰动助手人格，再针对四个拒绝对接受的数据集分别做了四次直接偏好优化，每次针对一个写作问题。示例输出较基础模型更含蓄、不落套路。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vg8qfv/lfm2526b_on_a_oneplus_13_at_17_toks_pure_cpu/": {
-      "en": "The poster demonstrates the 2.69 billion parameter LFM2.5 running on a OnePlus 13 phone at 17 tokens per second on CPU only, using a Q4 K M GGUF quantisation loaded by a from-scratch inference engine that weighs just 450 kilobytes and also handles Qwen, Gemma and Bonsai architectures. A homegrown terminal probe suite drives the device over Android Debug Bridge. The author is aiming to reach around 30 tokens per second next.",
-      "zh": "作者展示 LFM2.5-2.6B 在 OnePlus 13 手机上纯 CPU 每秒17个 token 的运行效果，使用 Q4 K M 量化 GGUF 权重。加载它的推理引擎完全自研，仅450 KB，还支持 Qwen、Gemma、Bonsai 等架构，通过 Android Debug Bridge 驱动设备，目标是推到每秒约30 token。",
-      "title_en": "LFM2.5 running on a OnePlus 13 at 17 tokens per second on pure CPU",
-      "title_zh": "LFM2.5 在 OnePlus 13 上纯 CPU 每秒17个 token 运行"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vh7lzy/nvidianvidianemotronparse20_hugging_face/": {
+      "en": "NVIDIA released Nemotron Parse 2.0, a document image parser that outputs structured text with layout classes, bounding boxes, and reading order given an RGB page and prompt. Compared to version 1.2, it adds roughly 20,000 tokens of vocabulary for stronger multilingual support, especially on Chinese-Japanese-Korean and Indic scripts, chart-aware parsing via a class token, and better handwritten-text and table extraction. It targets retrieval-augmented generation, data extraction, and multimodal training-data curation.",
+      "zh": "NVIDIA 发布 Nemotron Parse 2.0 文档图像解析模型：给定 RGB 页面与任务提示，输出带布局类别、边界框和阅读顺序的结构化文本。相较 1.2 版，新增约两万词汇以强化多语言支持，尤其是中日韩与印度语系；加入图表感知解析与类别 token；改进手写文本与表格密集页面的抽取。适用于检索增强生成、数据抽取和多模态训练数据构建。",
+      "title_en": "NVIDIA releases Nemotron Parse 2.0 for structured document image parsing",
+      "title_zh": "NVIDIA 发布 Nemotron Parse 2.0 文档图像结构化解析模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vfuawi/vibevoice_15b_running_locallyon_an_iphone_only_22/": {
-      "en": "The author got Microsoft's VibeVoice 1.5 billion parameter speech model running locally on an iPhone, using about 2.2 gigabytes of memory and reaching up to 1.28 times real-time speed on generation. Video memory stayed stable across long-form generation in a minute-long demo posted on X. The build sprang from a side detour off the next audio.cpp release, and they plan to publish the model to the audio.cpp Hugging Face repo and share the xcframework and code branch afterwards.",
-      "zh": "作者把微软 VibeVoice 15亿参数语音模型直接跑在 iPhone 本地上，约占用2.2 GB 内存，生成最高可达1.28倍实时速度。长语音测试中显存稳定，一分钟演示已发布在 X。这原本只是 audio.cpp 下一版本的一次偏离，模型将上传至 audio.cpp 的 Hugging Face 仓库。",
-      "title_en": "VibeVoice 1.5 billion parameter speech model running locally on an iPhone at up to 1.28 times real-time",
-      "title_zh": "VibeVoice 15亿参数语音模型在 iPhone 本地运行，最高可达1.28倍实时速度"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhjeqy/nvidias_whole_speech_stack_just_went_local_asr/": {
+      "en": "NVIDIA's speech stack now runs locally via NeMo-Speech.cpp with GGUF quantization. The released set includes Magpie-TTS Multilingual, Nemotron Speech Streaming EN 0.6B, Nemotron-3.5 ASR Streaming, Parakeet CTC 1.1B, Parakeet TDT 0.6B v3, and the NanoCodec, whose merge request has landed. This puts a full on-device speech pipeline covering automatic speech recognition, text-to-speech, and neural audio coding within reach for local use.",
+      "zh": "NVIDIA 整套语音模型已可通过 NeMo-Speech.cpp 本地运行，并以 GGUF 量化。此次开放的包括 Magpie-TTS Multilingual、Nemotron Speech Streaming EN 0.6B、Nemotron-3.5 ASR Streaming、Parakeet CTC 1.1B、Parakeet TDT 0.6B v3，以及 NanoCodec 编解码器。由此在本地设备上实现覆盖语音识别、语音合成与神经音频编码的完整端到端流水线。",
+      "title_en": "NVIDIA speech stack goes local, with automatic speech recognition, text-to-speech, and neural codec ported to NeMo-Speech.cpp",
+      "title_zh": "NVIDIA 整套语音技术栈本地化：语音识别、语音合成与神经编解码器移植至 NeMo-Speech.cpp"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vg8fi1/given_the_minimax_h3_loras_debacle_some_important/": {
-      "en": "A Chinese poster explains why MiniMax and other mainland labs aggressively suppress uncensored generation. Written pornography is illegal in China and can lead to prison, so a tool that gains a reputation for producing such content risks a regulatory crackdown, especially if discussion overwhelms the automatic social-media censors that currently blunt attention. Graphic violence is formally illegal too but less enforced. Copyright infringement, by contrast, is largely ignored by Chinese authorities, so training data is not the concern.",
-      "zh": "一位中国网友解释了为何 MiniMax 及大陆各实验室会强力压制不安全生成。文字色情在中国属违法，可判监禁，因此若某工具因能生成此类内容而广为人知，就会招致监管重拳，尤其当讨论量突破自动审查上限时。血腥暴力同样违法但执法较松。反观版权侵权，中国当局基本不管，所以训练数据并非顾虑所在。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhaabz/kv_cache_quantization_benchmarks_413_pairs_tested/": {
+      "en": "A benchmark article uses BeeLlama.cpp version 0.4.0, a fork of llama.cpp offering more key-value cache quantization options, to run 413 configurations across Qwen 3.6 27B and Gemma 4 31B and measure output divergence with Kullback-Leibler divergence. The author reports that Huawei's variance-normalized cache at 6 bits beats standard 8-bit quantization, and that keeping the latest 1024 tokens of key-value cache in bfloat16 substantially reduces tail divergence. Practical recommendation ladders trade cache size against fidelity.",
+      "zh": "一篇基准文章基于 BeeLlama.cpp 0.4.0（llama.cpp 的分支，扩展了键值缓存量化选项），在 Qwen 3.6 27B 与 Gemma 4 31B 上跑了 413 组配置，用 Kullback-Leibler 散度衡量输出偏差。作者发现华为方差归一化缓存在 6 比特下胜过标准 8 比特量化，且将最近 1024 个 token 的缓存保留为 bfloat16 可显著降低尾部偏差，并给出以缓存体积换保真度的推荐阶梯。",
+      "title_en": "Key-value cache quantization benchmark on Qwen 3.6 27B and Gemma 4 31B, testing variance-normalized cache and precision tails",
+      "title_zh": "键值缓存量化基准测试：在 Qwen 3.6 27B 与 Gemma 4 31B 上评估方差归一化缓存与精度尾部策略"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vg41ot/i_updated_my_localy_run_benchmark_with_deepseek/": {
-      "en": "The author updated their local large language model benchmark with DeepSeek V4 Flash 0731, running the MXFP4 quantisation from Bartoswski through DSpark at roughly 1000 tokens per second prefill and 90 tokens per second generation on average. It lands as the top-left purple cluster on the chart, meaning best efficiency and highest score to date. Various sampling parameters were tried and are documented on the detail page. The model has no vision support.",
-      "zh": "作者更新了自己的本地大模型基准测试，新增 DeepSeek V4 Flash 0731 成绩：用 Bartoswski 的 MXFP4 量化通过 DSpark 运行，预填约每秒1000 token，生成平均每秒90 token，图上落在左上角紫色簇，是目前效率最好、得分最高的模型。不同采样参数的对比可在详情页查看。可惜它没有视觉能力。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vfrjwl/deepseekv4flash_on_sm89_4x48gb_4090s_with_dspark/": {
-      "en": "The author showcases a working vLLM setup for DeepSeek V4 Flash on four 48 gigabyte modified RTX 4090s built on the older SM89 compute architecture, driven by the DSpark framework. Initial video showed the rig at 64 thousand token context; it now stretches to 256 thousand. The write-up simply points at the community fork behind the port. It stands as an unusual proof point that a specialised vLLM build can bring the model to this GPU configuration.",
-      "zh": "作者展示了 DeepSeek V4 Flash 在四块48 GB 改装 RTX 4090 上跑 vLLM 的成果，硬件是较老的 SM89 计算架构，配合 DSpark 框架。视频拍摄时上下文只有6.4万 token，如今已扩展到25.6万。文中只给出社区仓库链接，作为一个不常见的例证，说明专门魔改的 vLLM 分支能把该模型跑在这种 GPU 组合上。",
-      "title_en": "DeepSeek V4 Flash running under vLLM on four 48 gigabyte modified RTX 4090s with DSpark",
-      "title_zh": "DeepSeek V4 Flash 在四块48 GB 改装 RTX 4090 上通过 DSpark 运行 vLLM"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vg1dqw/building_a_fully_local_pdf_readaloud/": {
-      "en": "Speechfony is a new fully-local desktop app for reading PDFs and EPUBs aloud, built around Kokoro for speech and Qwen with llama.cpp for on-device embeddings and semantic search. Features include sentence-level playback with live highlighting, MP3 audiobook export, adjustable header and footer trims, and CoreML, DirectML or CUDA acceleration. Multi-column PDFs, scanned pages, footnotes and non-English text remain rough. It runs on macOS Apple Silicon, Windows and Linux and is MIT licensed.",
-      "zh": "Speechfony 是全本地桌面应用，把 PDF 和 EPUB 朗读出来。底层用 Kokoro 合成语音，Qwen 配 llama.cpp 提供本地嵌入与语义搜索。功能包括句级播放高亮、MP3 有声书导出、可调页眉页脚裁剪，支持 CoreML、DirectML、CUDA 加速。多栏 PDF、扫描件、脚注与非英语文本仍不完善，MIT 开源。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vfv27k/intern_s2_mobius/": {
-      "en": "InternLM has released Intern S2 Mobius, a model derived from Qwen3.5 35 billion parameters with an unspecified architectural change that reportedly delivers higher throughput and lower token consumption than its parent. The post itself is essentially a pointer to the Hugging Face weights, with no benchmarks or architectural detail beyond that claim. It offers the community a Qwen-derived variant worth benchmarking to see whether the claimed efficiency gain holds up under real evaluation.",
-      "zh": "InternLM 发布了 Intern S2 Mobius，一款基于 Qwen3.5 350亿参数派生的模型，据称有一处未详述的架构改动，可带来更高吞吐和更低 token 消耗。原帖仅贴出 Hugging Face 权重链接，没有任何基准测试或架构细节。这是一款值得社区做基准评测的 Qwen 派生变体，可用来验证宣称的效率提升是否属实。",
-      "title_en": "InternLM releases Intern S2 Mobius, a Qwen3.5-derived model claimed to deliver higher throughput and lower token use",
-      "title_zh": "InternLM 发布 Intern S2 Mobius，一款 Qwen3.5 派生模型，据称吞吐更高、token 消耗更低"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vfshny/psa_update_cuda_from_132_to_133_to_solve_deepseek/": {
-      "en": "A user reports that upgrading NVIDIA CUDA from 13.2 to 13.3 fixes a looping and quality-degradation issue that made DeepSeek V4 Flash 0731 essentially unusable under the Unsloth build. Before the driver bump the model would spiral into repetition within minutes and the chat would visibly degrade; after the upgrade it runs cleanly on long-horizon coding tasks and has already produced measurable improvements to their Qwen3.6 code. It is now their daily driver until Qwen 3.8 27B ships.",
-      "zh": "有用户报告，把 NVIDIA CUDA 从13.2升到13.3就能解决 Unsloth 版 DeepSeek V4 Flash 0731 的循环崩坏问题。此前模型跑几分钟就会陷入重复、输出退化，几近不可用。升级后可稳定完成长时编码任务，还改进了他自己 Qwen3.6 的代码。作者说这已是他的日常主力，直到 Qwen 3.8 27B 到来。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vgx9m5/i_just_spent_weeks_rewriting_my_webui_from/": {
+      "en": "The author released openlumara, a fully open-source GPL3 web interface for local models, rewritten from scratch using Alpine.js without React or Vue framework bloat. It has few Python dependencies and ships no inference engine, expecting users to connect via llama.cpp, koboldcpp, or lemonade. Local-first features include showing prompt processing time, a llama.cpp-only capability, real-time tool call streaming, and no extra background requests for chat titles or follow-up replies. Cloud APIs are supported but treated as second-class.",
+      "zh": "作者发布 openlumara，一款完全开源、GPL3、面向本地模型的 Web 界面，从头手工重写，采用 Alpine.js 而不引入 React 或 Vue 等框架臃肿。它仅少量 Python 依赖，不内置推理引擎，需连接 llama.cpp、koboldcpp 或 lemonade。本地优先特性包括展示提示词处理耗时、实时呈现工具调用书写，且不额外发请求生成聊天标题或跟随回复。云端 API 支持但视为次要。",
+      "title_en": "openlumara, a lightweight local-first web interface for local models, released after a full rewrite in Alpine.js",
+      "title_zh": "openlumara 面向本地模型的轻量级 Web 界面发布，采用 Alpine.js 全新重写"
     }
   }
 }
