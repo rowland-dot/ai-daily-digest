@@ -1,41 +1,61 @@
 {
-  "generated_at": "2026-08-07T01:07:00Z",
+  "generated_at": "2026-08-07T21:20:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vh9lx4/i_ported_vllms_serving_stack_to_c20_66_mib_binary/": {
-      "en": "The author released vllm.cpp, an unaffiliated community port of vLLM's serving stack rewritten in C++20 as a 66 mebibyte binary with no Python at runtime. It preserves continuous batching, paged key-value cache, prefix caching, speculative decoding, and an OpenAI-compatible server, verifying every supported architecture token-for-token against vLLM. Benchmarks on DGX Spark show parity or slight leads over vLLM up to 32 concurrent requests, plus wins over llama.cpp on CPU.",
-      "zh": "作者发布了 vllm.cpp，vLLM 服务栈的非官方 C++20 社区移植版，编译为 66 兆二进制文件、运行时无需 Python，仍保留连续批处理、分页键值缓存、前缀缓存与推测解码，并对每个架构逐 token 与 vLLM 校验一致。在 DGX Spark 上最高至 32 并发时与 vLLM 持平或略胜，CPU 前缀阶段亦超过 llama.cpp。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vh7bxu/i_compared_even_more_parsers_on_14_pdfparsing/": {
-      "en": "The author expanded their earlier parser comparison to eight PDF parsers, testing 14 capabilities including tables, LaTeX, cursive handwriting, and stains. Chandra swept all 14 tests, producing faithful merged-cell tables, correct display and inline LaTeX, near-perfect cursive reading, and correctly skipping a stain, at 91 seconds per page on an L4. LightOnOCR-1B was impressive for its 1 billion parameters but hallucinated on illegible text, while classical OCR tools failed on handwriting entirely.",
-      "zh": "作者扩展了此前的 PDF 解析器对比，共评测八款，覆盖 14 项能力，包括表格、LaTeX、草书手写与污渍。Chandra 全部 14 项通过，生成忠实的合并单元格表、正确的 LaTeX、近乎完美的草书识别，并明智地跳过污渍，L4 上每页 91 秒。LightOnOCR-1B 10 亿参数下表现亮眼，但在难辨文本上产生幻觉；传统 OCR 工具在草书上则完全失效。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vhf70c/scotoma2_gemma4_but_with_less_annoying_slop_and/": {
-      "en": "Scotoma-2 is a fine-tune of Gemma4-31B by user AesSedai aimed at reducing Gemma4's common tropes, such as its recurring negation-then-affirmation phrasing and stacked-adjective descriptions, while preserving model intelligence. The author applied Heretic abliteration with J-lens projection to disrupt the assistant persona, then ran four separate Direct Preference Optimization passes against four rejected-versus-accepted datasets, each targeting a specific writing problem. Sample outputs show subtler, less formulaic prose than the base model.",
-      "zh": "Scotoma-2 是 AesSedai 对 Gemma4-31B 的微调版，旨在削弱 Gemma4 常见的先否定再肯定句式与堆叠形容词习气，同时保留模型智能。作者先用 Heretic 做 abliteration，配合 J-lens 投影扰动助手人格，再针对四个拒绝对接受的数据集分别做了四次直接偏好优化，每次针对一个写作问题。示例输出较基础模型更含蓄、不落套路。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vh7lzy/nvidianvidianemotronparse20_hugging_face/": {
-      "en": "NVIDIA released Nemotron Parse 2.0, a document image parser that outputs structured text with layout classes, bounding boxes, and reading order given an RGB page and prompt. Compared to version 1.2, it adds roughly 20,000 tokens of vocabulary for stronger multilingual support, especially on Chinese-Japanese-Korean and Indic scripts, chart-aware parsing via a class token, and better handwritten-text and table extraction. It targets retrieval-augmented generation, data extraction, and multimodal training-data curation.",
-      "zh": "NVIDIA 发布 Nemotron Parse 2.0 文档图像解析模型：给定 RGB 页面与任务提示，输出带布局类别、边界框和阅读顺序的结构化文本。相较 1.2 版，新增约两万词汇以强化多语言支持，尤其是中日韩与印度语系；加入图表感知解析与类别 token；改进手写文本与表格密集页面的抽取。适用于检索增强生成、数据抽取和多模态训练数据构建。",
-      "title_en": "NVIDIA releases Nemotron Parse 2.0 for structured document image parsing",
-      "title_zh": "NVIDIA 发布 Nemotron Parse 2.0 文档图像结构化解析模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhwilp/an_openweight_model_too_moonshot_joins_the_race/": {
+      "en": "A brief link post noting that Moonshot has released Kimi K3 as an open-weight model, pointing to a Sauers tweet and a Wired story headlined One of China's Most Powerful AI Models Has Also Escaped Containment. The post itself carries no commentary beyond the two links, but signals that Moonshot is joining the wave of Chinese labs putting frontier-class weights out into the open.",
+      "zh": "一则简短的链接帖，指出 Moonshot 已将 Kimi K3 作为开放权重模型发布，附上 Sauers 的推文和 Wired 报道 One of China's Most Powerful AI Models Has Also Escaped Containment。正文除链接外几乎无评论，但传达出这家中国实验室正加入开放权重前沿模型行列的信号。"
     },
     "https://www.reddit.com/r/LocalLLaMA/comments/1vhjeqy/nvidias_whole_speech_stack_just_went_local_asr/": {
-      "en": "NVIDIA's speech stack now runs locally via NeMo-Speech.cpp with GGUF quantization. The released set includes Magpie-TTS Multilingual, Nemotron Speech Streaming EN 0.6B, Nemotron-3.5 ASR Streaming, Parakeet CTC 1.1B, Parakeet TDT 0.6B v3, and the NanoCodec, whose merge request has landed. This puts a full on-device speech pipeline covering automatic speech recognition, text-to-speech, and neural audio coding within reach for local use.",
-      "zh": "NVIDIA 整套语音模型已可通过 NeMo-Speech.cpp 本地运行，并以 GGUF 量化。此次开放的包括 Magpie-TTS Multilingual、Nemotron Speech Streaming EN 0.6B、Nemotron-3.5 ASR Streaming、Parakeet CTC 1.1B、Parakeet TDT 0.6B v3，以及 NanoCodec 编解码器。由此在本地设备上实现覆盖语音识别、语音合成与神经音频编码的完整端到端流水线。",
-      "title_en": "NVIDIA speech stack goes local, with automatic speech recognition, text-to-speech, and neural codec ported to NeMo-Speech.cpp",
-      "title_zh": "NVIDIA 整套语音技术栈本地化：语音识别、语音合成与神经编解码器移植至 NeMo-Speech.cpp"
+      "en": "NVIDIA has published its full speech stack for local inference, including Magpie-TTS Multilingual for text to speech, Nemotron Speech Streaming EN 0.6B, Nemotron-3.5 speech recognition streaming, Parakeet CTC 1.1B, Parakeet TDT 0.6B v3, and a merged NanoCodec pull request. All are quantized to GGUF and can run on-device via the new NeMo-Speech.cpp runtime. A commenter asks how to run them on a phone.",
+      "zh": "NVIDIA 将完整语音技术栈开源用于本地推理，包括文本转语音模型 Magpie-TTS Multilingual、Nemotron Speech Streaming EN 0.6B、Nemotron-3.5 语音识别流式版、Parakeet CTC 1.1B、Parakeet TDT 0.6B v3，以及已合并的 NanoCodec。所有模型均量化为 GGUF，可通过新的 NeMo-Speech.cpp 运行时在设备端运行。有评论者询问如何在手机上运行。",
+      "title_en": "NVIDIA has released its complete speech stack for local inference, covering text to speech, speech recognition, and a codec, all quantized to GGUF and running on device via NeMo-Speech.cpp.",
+      "title_zh": "NVIDIA 开源完整语音技术栈用于本地推理，涵盖文本转语音、语音识别与编解码器，全部量化为 GGUF 并可通过 NeMo-Speech.cpp 在设备端运行。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vhaabz/kv_cache_quantization_benchmarks_413_pairs_tested/": {
-      "en": "A benchmark article uses BeeLlama.cpp version 0.4.0, a fork of llama.cpp offering more key-value cache quantization options, to run 413 configurations across Qwen 3.6 27B and Gemma 4 31B and measure output divergence with Kullback-Leibler divergence. The author reports that Huawei's variance-normalized cache at 6 bits beats standard 8-bit quantization, and that keeping the latest 1024 tokens of key-value cache in bfloat16 substantially reduces tail divergence. Practical recommendation ladders trade cache size against fidelity.",
-      "zh": "一篇基准文章基于 BeeLlama.cpp 0.4.0（llama.cpp 的分支，扩展了键值缓存量化选项），在 Qwen 3.6 27B 与 Gemma 4 31B 上跑了 413 组配置，用 Kullback-Leibler 散度衡量输出偏差。作者发现华为方差归一化缓存在 6 比特下胜过标准 8 比特量化，且将最近 1024 个 token 的缓存保留为 bfloat16 可显著降低尾部偏差，并给出以缓存体积换保真度的推荐阶梯。",
-      "title_en": "Key-value cache quantization benchmark on Qwen 3.6 27B and Gemma 4 31B, testing variance-normalized cache and precision tails",
-      "title_zh": "键值缓存量化基准测试：在 Qwen 3.6 27B 与 Gemma 4 31B 上评估方差归一化缓存与精度尾部策略"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhz989/a_llamacpp_pr_makes_q2_0_3036x_faster_on_x86_cpus/": {
+      "en": "A pending llama.cpp pull request adds an AVX-VNNI or AVX-512 VNNI code path for the Q2_0 by Q8_0 dot product, delivering roughly 3 to 3.6 times higher throughput on x86 CPUs across Bonsai models from 1.7 to 27 billion parameters. On an EPYC 9645 with eight cores, an 8 billion parameter model's decode rose from 2.39 to 8.20 tokens per second. Consumer Intel chips with only AVX-VNNI were silently missing the fast path. Perplexity impact is negligible.",
+      "zh": "一个待合并的 llama.cpp 拉取请求为 Q2_0 与 Q8_0 点积增加了 AVX-VNNI 或 AVX-512 VNNI 代码路径，使 x86 CPU 上从 17 亿到 270 亿参数的 Bonsai 系列模型吞吐量提升约 3 到 3.6 倍。EPYC 9645 上 80 亿参数模型解码从每秒 2.39 tokens 提升到 8.20 tokens。仅带 AVX-VNNI 的消费级 Intel 芯片此前静默错过了快速路径，困惑度影响可忽略。",
+      "title_en": "A pending llama.cpp pull request speeds up the Q2_0 quantization format by roughly three times on x86 processors by adding an AVX-VNNI code path for the inference dot product.",
+      "title_zh": "一个待合并的 llama.cpp 拉取请求通过为推理中的点积增加 AVX-VNNI 代码路径，将 x86 处理器上的 Q2_0 量化格式速度提升约三倍。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vgx9m5/i_just_spent_weeks_rewriting_my_webui_from/": {
-      "en": "The author released openlumara, a fully open-source GPL3 web interface for local models, rewritten from scratch using Alpine.js without React or Vue framework bloat. It has few Python dependencies and ships no inference engine, expecting users to connect via llama.cpp, koboldcpp, or lemonade. Local-first features include showing prompt processing time, a llama.cpp-only capability, real-time tool call streaming, and no extra background requests for chat titles or follow-up replies. Cloud APIs are supported but treated as second-class.",
-      "zh": "作者发布 openlumara，一款完全开源、GPL3、面向本地模型的 Web 界面，从头手工重写，采用 Alpine.js 而不引入 React 或 Vue 等框架臃肿。它仅少量 Python 依赖，不内置推理引擎，需连接 llama.cpp、koboldcpp 或 lemonade。本地优先特性包括展示提示词处理耗时、实时呈现工具调用书写，且不额外发请求生成聊天标题或跟随回复。云端 API 支持但视为次要。",
-      "title_en": "openlumara, a lightweight local-first web interface for local models, released after a full rewrite in Alpine.js",
-      "title_zh": "openlumara 面向本地模型的轻量级 Web 界面发布，采用 Alpine.js 全新重写"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhoyw1/my_issue_with_artificial_analysiss_intelligence/": {
+      "en": "A user argues that Artificial Analysis's agentic intelligence index is biased. Their open-source Qwen 3.8 Max was reportedly top-ranked, then a v4.1.1 update reweighted the GDPval and T3 banking components so Qwen slipped below Anthropic's Opus, despite Qwen holding an 8 percent T3 lead versus Opus's 5 percent GDPval lead. The poster alleges Artificial Analysis is not the neutral evaluator it claims to be and hints at a possible payoff.",
+      "zh": "一位用户质疑 Artificial Analysis 智能体智能指数存在偏见。开源模型 Qwen 3.8 Max 曾在榜单登顶，随后 v4.1.1 版本重新调整了 GDPval 与 T3 银行任务的权重，使 Qwen 跌至 Anthropic 的 Opus 之下，尽管 Qwen 在 T3 上领先 8 个百分点，而 Opus 仅在 GDPval 上领先 5 个百分点。作者暗示评测方并不中立，可能存在利益输送。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhv2bz/ds4_flash_incoming_price_increase_weve_been_able/": {
+      "en": "A commenter doubts OpenCode's Dax claim that DeepSeek 4 Flash's public API prices can be reproduced on rented GPUs, given rates of 0.14 dollars input, 0.0028 dollars cache, and 0.28 dollars output per million tokens. On their own dual-Spark hardware at 0.20 dollars per kilowatt-hour, input comes out cheaper than the API but output costs 0.32 to 0.39 dollars per million tokens, already more expensive, and that excludes hardware capital cost.",
+      "zh": "评论者质疑 OpenCode 的 Dax 关于 DeepSeek 4 Flash 公开 API 定价可在租用 GPU 上复现的说法。按每百万 tokens 输入 0.14 美元、缓存 0.0028 美元、输出 0.28 美元的价格，作者用自有双 Spark 硬件、每度电 0.20 美元测算：输入比 API 便宜，但输出每百万 tokens 需 0.32 至 0.39 美元，已经更贵，且未计入硬件成本。作者求教高效托管方式。",
+      "title_en": "A discussion questions how OpenCode could reproduce DeepSeek 4 Flash's public API prices on rented GPUs, ahead of a rumored price increase for the model.",
+      "title_zh": "讨论质疑 OpenCode 如何在租用 GPU 上复现 DeepSeek 4 Flash 的公开 API 价格，而该模型据传即将涨价。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vi1r6t/wananimate2_pushing_the_application_boundaries_of/": {
+      "en": "Wan-AI has released Wan-Animate-2, an end-to-end character animation framework that feeds driving videos directly into a redesigned Diffusion Transformer, achieving high-fidelity motion generation and identity preservation without intermediate motion extractors. It adds text-driven viewpoint control that decouples the output camera from the source video, and ships a Lite variant that reaches real-time streaming latency. Base and Distilled model weights plus inference scripts landed on August 7, 2026 on Hugging Face and GitHub.",
+      "zh": "Wan-AI 发布 Wan-Animate-2，一个端到端角色动画框架，直接将驱动视频输入重新设计的 Diffusion Transformer，实现高保真运动生成和身份保持，无需中间动作提取器。新增文本驱动的视角控制，可将输出相机与源视频解耦；Lite 变体达到实时流式延迟。2026 年 8 月 7 日在 Hugging Face 与 GitHub 上发布基础模型与蒸馏模型权重及推理脚本。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vi0d4i/lfm2526b_modelkv_cache_quantization_report/": {
+      "en": "LiquidAI's LFM2.5-2.6B is a small model that reportedly matches much larger ones. The author ran llama-perplexity across many GGUF weight quants crossed with key-value cache quants to find the best memory trade-off. Highlights: it fits on an 8 gigabyte Raspberry Pi with no material degradation and on a 4 gigabyte Pi with contained loss. Do not use Q4_K_M. Weight quant quality degrades faster than cache quant, and abliteration adds a flat cost near 0.075 KLD.",
+      "zh": "LiquidAI 新推的 LFM2.5-2.6B 小模型据称能与更大的模型媲美。作者在多种 GGUF 权重量化与键值缓存量化组合上运行 llama-perplexity，寻找给定内存下的最佳权衡。模型可在 8 GB 树莓派上无明显退化运行，4 GB 树莓派上退化可控。不要使用 Q4_K_M。权重量化质量下降快于缓存量化，去审查处理带来约 0.075 KLD 的固定代价。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhrdo3/amd_acquires_taalas_to_advance_compute_solutions/": {
+      "en": "AMD has acquired Taalas to strengthen its compute offerings for the fast-growing AI inference market. A commenter admits their earlier prediction that Tesla would buy Taalas was wrong, and observes that with AMD focused on enterprise, consumer-facing hot-swappable AI model chips look dead. They speculate that ten years out, buyers may collect used model blade cards on eBay, chaining several together to reassemble a single model's split weights.",
+      "zh": "AMD 收购 Taalas，以强化其面向高速增长的 AI 推理市场的算力方案。一位评论者承认自己此前认为 Tesla 会收购 Taalas 的预测落空，并指出 AMD 重心在企业级市场后，面向消费者的可热插拔 AI 模型芯片基本无望。他们推测十年后，人们或许要在 eBay 上收集二手模型刀片卡，串联多张才能拼出一个完整模型的分片权重。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vi6hmw/llamacpp_pr_reports_up_to_169_faster_quantizedkv/": {
+      "en": "A pending llama.cpp pull request changes a SYCL FlashAttention dispatch decision so quantized key-value cache decode uses the TILE kernel instead of VEC. Author benchmarks on Intel Battlemage show Qwen3.6-35B at 118,784 tokens rising from 12.99 to 29.61 tokens per second with q4_0 cache, and Gemma 4 12B gaining roughly 169 percent. Gains persist at 32 kilotokens. Backend tests pass 4001 of 4001, but independent hardware validation is still pending.",
+      "zh": "一个待合并的 llama.cpp 拉取请求调整了 SYCL FlashAttention 的调度决策，使量化键值缓存解码走 TILE 内核而非 VEC。作者在 Intel Battlemage 上测得 Qwen3.6-35B 在 118,784 tokens 上下文下从每秒 12.99 提升到 29.61 tokens（q4_0 缓存），Gemma 4 12B 提升约 169 个百分点。32K 上下文下增益依然显著。后端测试全数通过，但仍缺独立硬件验证。",
+      "title_en": "A pending llama.cpp pull request boosts quantized key-value cache decode by up to 169 percent on Intel Battlemage at 118 thousand tokens of context by switching one SYCL kernel dispatch decision.",
+      "title_zh": "一个待合并的 llama.cpp 拉取请求通过切换一次 SYCL 内核调度，在 Intel Battlemage 上将 118 千 tokens 上下文下的量化键值缓存解码速度最高提升约 169 个百分点。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhqihc/eschalabsqwen3635ba3beschaw2_hugging_face/": {
+      "en": "A user benchmarks EschaLabs's Qwen3.6-35B-A3B-Escha-W2, a 2-bit quantization, against APEX Q5. Escha runs 1.85 times faster at generation, fits in 12 gigabytes of VRAM versus 15 gigabytes plus 8 gigabytes system RAM for APEX, and ties on IFEval, GSM8K, HumanEval Plus, and LiveBench coding while edging APEX 10 to 9 on GPQA-Diamond. Perplexity is worse at 7.16 versus 5.87. The low-bit quant appears to hold up.",
+      "zh": "一位用户测试 EschaLabs 的 Qwen3.6-35B-A3B-Escha-W2 二位量化，对比 APEX Q5。Escha 生成速度快 1.85 倍，只需 12 GB 显存，而 APEX 需 15 GB 显存加 8 GB 系统内存卸载。在 IFEval、GSM8K、HumanEval Plus、LiveBench 编程上打平，并在 GPQA-Diamond 上以 10 比 9 胜出。困惑度较差，7.16 对 5.87。低位量化整体上似乎站得住。",
+      "title_en": "A user benchmarks EschaLabs's 2-bit quantization of Qwen3.6-35B-A3B against a 5-bit APEX baseline and finds it faster, smaller in memory, and holding its own on reasoning and coding tests.",
+      "title_zh": "一位用户将 EschaLabs 的 Qwen3.6-35B-A3B 二位量化与五位 APEX 基线对比，发现前者更快、更省显存，在推理与编程测试上表现不输。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vhw4f5/gemma_4_qat_could_be_improved_further_by_google/": {
+      "en": "The author benchmarks Gemma 4 26B quantization-aware-trained UD Q4_K_XL against Bartowski's non-QAT Q4_K_L and finds mixed results: the QAT model is smarter in some areas, but Q4_K_L wins where high fidelity or long-context recall matters. Inspecting tensors, Google's QAT model quantizes token embeddings and attention layers to Q4_0, while modern Q4_K recipes keep them at Q6_K or Q8_0. Proposal: train future QAT models aligned to modern Q4_K formats for better quality at similar size.",
+      "zh": "作者对比 Gemma 4 26B 量化感知训练版 UD Q4_K_XL 与 Bartowski 的非 QAT Q4_K_L，结果好坏参半：QAT 部分领域更聪明，但在需高精度或长上下文回忆的场景下 Q4_K_L 更强。检视张量发现 Google 的 QAT 模型将词嵌入和注意力层量化到 Q4_0，而现代 Q4_K 配方将其保留在 Q6_K 或 Q8_0。作者建议 Google 未来的 QAT 模型应对齐现代 Q4_K 格式，以在相近体积下提升质量。",
+      "title_en": "The author proposes that Google train future Gemma quantization-aware-trained models against modern Q4_K formats instead of Q4_0, so critical layers like embeddings and attention stay at higher precision.",
+      "title_zh": "作者建议 Google 未来的 Gemma 量化感知训练模型对齐现代 Q4_K 格式而非 Q4_0，以让词嵌入与注意力等关键层保留更高精度。"
     }
   }
 }
