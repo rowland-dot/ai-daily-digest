@@ -1,8 +1,44 @@
 {
-  "count": 23,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmshjdgsn0gf5ronkj2dwsbwh",
+      "title": "NVIDIA Cosmos 3：开放世界模型如何推动物理 AI 前沿",
+      "title_en": "Into the Omniverse： How Open World Models Push the Frontier of Physical AI",
+      "url": "https://blogs.nvidia.com/blog/open-world-models-physical-ai",
+      "permalink": "https://aihot.virxact.com/items/cmshjdgsn0gf5ronkj2dwsbwh",
+      "source": "NVIDIA Blog（RSS）",
+      "publishedAt": "2026-08-06T13:00:00.000Z",
+      "discoveredAt": "2026-08-06T13:12:59.188Z",
+      "summary": "NVIDIA 发布 Cosmos 3，一个基于混合 Transformer 架构的开放物理 AI 基础全模态模型，整合视觉推理、世界生成与动作预测。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmshjdgsn0gf5ronkj2dwsbwh"
+      }
+    },
+    {
+      "id": "cmshrwaqs0pmuronkuj6r8o4m",
+      "title": "ChatGPT 推出改进版 GPT-5.6 Sol，并扩大免费用户访问权限",
+      "title_en": "Improving GPT-5.6 Sol in ChatGPT-and expanding access for free users",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "permalink": "https://aihot.virxact.com/items/cmshrwaqs0pmuronkuj6r8o4m",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-08-06T10:00:00.000Z",
+      "discoveredAt": "2026-08-06T17:11:35.304Z",
+      "summary": "ChatGPT 推出改进版 GPT-5.6 Sol，提升准确性与一致性，同时扩大免费用户访问权限。免费用户还可无限次使用 GPT-5.6 Luna 进行日常对话。",
+      "category": "ai-models",
+      "score": 53,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmshrwaqs0pmuronkuj6r8o4m"
+      }
+    },
     {
       "id": "cmsfu19g30eg5rochm0d4q3po",
       "title": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
@@ -307,114 +343,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmsdu10dl00vwrofzxoufabkl"
-      }
-    },
-    {
-      "id": "cms7tgf3q03p5ropbe0xhilwo",
-      "title": "Inkling-Small 发布，276B 参数性能持平原版",
-      "title_en": "Today， we are releasing Inkling-Small. Inkling-Small achieves comparable performance to Inkling at …",
-      "url": "https://x.com/thinkymachines/status/2082885869426631032",
-      "permalink": "https://aihot.virxact.com/items/cms7tgf3q03p5ropbe0xhilwo",
-      "source": "X：Thinking Machines (@thinkymachines)",
-      "publishedAt": "2026-07-30T17:47:44.000Z",
-      "discoveredAt": "2026-07-30T17:57:32.378Z",
-      "summary": "今天，我们发布 Inkling-Small。\n\nInkling-Small 在仅为 Inkling 四分之一规模的情况下，实现了与之相当的性能。它拥有 276B 总参数，12B 激活参数。我们将开放完整权重。\n\nhttps://thinkingmachines.ai/news/inkling-small/\n\n现在即可在 Tinker 上对其进行微调，或在 Tinker Playground 中以文本、图像和音频形式与之对话。",
-      "category": "ai-models",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms7tgf3q03p5ropbe0xhilwo"
-      }
-    },
-    {
-      "id": "cms8mb361000prof1z6fg37om",
-      "title": "DeepSeek-V4-Flash 正式版 API 上线公测",
-      "title_en": "DeepSeek-V4-Flash 更新",
-      "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-07-31",
-      "permalink": "https://aihot.virxact.com/items/cms8mb361000prof1z6fg37om",
-      "source": "DeepSeek：API 更新日志",
-      "publishedAt": "2026-07-30T16:00:00.000Z",
-      "discoveredAt": "2026-07-30T16:00:00.000Z",
-      "summary": "DeepSeek-V4-Flash 正式版 API 上线公测，模型名设为 deepseek-v4-flash 即可使用，调用方式不变。其 Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Toolathlon verified 70.3，DSBench-Hard 59.6，多项基准远超 V4-Pro-Preview。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8mb361000prof1z6fg37om"
-      }
-    },
-    {
-      "id": "cms8f7n9q0bezrot06im88lqu",
-      "title": "字节发布 Seedance 2.5：单次生成 30 秒视频，支持多模态参考与精准编辑",
-      "title_en": "一镜成片，随心参考|Seedance 2.5 正式发布",
-      "url": "https://seed.bytedance.com/zh/blog/%E4%B8%80%E9%95%9C%E6%88%90%E7%89%87-%E9%9A%8F%E5%BF%83%E5%8F%82%E8%80%83-seedance-2-5-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83",
-      "permalink": "https://aihot.virxact.com/items/cms8f7n9q0bezrot06im88lqu",
-      "source": "字节 Seed：Research Feed（网页内嵌数据）",
-      "publishedAt": "2026-07-30T16:00:00.000Z",
-      "discoveredAt": "2026-07-31T04:06:31.879Z",
-      "summary": "字节跳动今日正式发布新一代视频创作模型 Seedance 2.5，单次视频生成时长从 15 秒提升至 30 秒，并支持多轮延长，可产出数分钟连贯内容。模型支持单次输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，并升级白模参考、运动参考及绿幕编辑、时间戳精准编辑等能力。Seedance 2.5 已陆续上线即梦 AI、豆包专业版等平台，API 服务近期将上线火山方舟。",
-      "category": "ai-models",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8f7n9q0bezrot06im88lqu"
-      }
-    },
-    {
-      "id": "cms7o3b8o0nt9ro2ery7x50bb",
-      "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
-      "title_en": "One brain. For any robot. 🤖 We're launching Gemini Robotics 2： our next-generation physical AI bri…",
-      "url": "https://x.com/GoogleDeepMind/status/2082844162928381956",
-      "permalink": "https://aihot.virxact.com/items/cms7o3b8o0nt9ro2ery7x50bb",
-      "source": "X：Google DeepMind (@GoogleDeepMind)",
-      "publishedAt": "2026-07-30T15:02:00.000Z",
-      "discoveredAt": "2026-07-30T15:27:21.649Z",
-      "summary": "One brain. For any robot. 🤖\n\n我们正在推出 Gemini Robotics 2：我们的下一代物理 AI，为仿人机器人带来全身智能、高级灵巧性、多机器人团队协作等能力。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms7o3b8o0nt9ro2ery7x50bb"
-      }
-    },
-    {
-      "id": "cms7o2xsk0nraro2epo1gt8ln",
-      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
-      "title_en": "Gemini Robotics ER 2： powering robotics with video understanding， task orchestration， and multi-robot collaboration",
-      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
-      "permalink": "https://aihot.virxact.com/items/cms7o2xsk0nraro2epo1gt8ln",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-07-30T15:00:59.000Z",
-      "discoveredAt": "2026-07-30T15:27:02.897Z",
-      "summary": "Google DeepMind 推出 Gemini Robotics ER 2，一个基于 Gemini 的机器人基础模型。该模型在视频理解、工具编排和多机器人协作方面实现阶跃式提升，使机器人能够推理、协作并解决真实世界任务。",
-      "category": "ai-models",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms7o2xsk0nraro2epo1gt8ln"
-      }
-    },
-    {
-      "id": "cms7sdkx702mjropbnq4l267q",
-      "title": "GPT-5.6 如何推进性价比前沿",
-      "title_en": "Advancing the price-performance frontier with GPT-5.6",
-      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "permalink": "https://aihot.virxact.com/items/cms7sdkx702mjropbnq4l267q",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-07-30T10:00:00.000Z",
-      "discoveredAt": "2026-07-30T17:27:19.970Z",
-      "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。",
-      "category": "ai-models",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms7sdkx702mjropbnq4l267q"
       }
     }
   ]

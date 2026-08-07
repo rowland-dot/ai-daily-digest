@@ -1,24 +1,96 @@
 {
-  "count": 16,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmsg5h9ax06dsrolg11p7nhvv",
-      "title": "Cloudflare 提出智能体访问模型（Agent Access Model）",
-      "title_en": "The Agent Access Model",
-      "url": "https://blog.cloudflare.com/the-agent-access-model",
-      "permalink": "https://aihot.virxact.com/items/cmsg5h9ax06dsrolg11p7nhvv",
-      "source": "Cloudflare Blog",
-      "publishedAt": "2026-08-05T13:00:41.000Z",
-      "discoveredAt": "2026-08-05T13:56:13.182Z",
-      "summary": "Cloudflare 发布《The Agent Access Model》论文，提出面向 AI 智能体的访问控制模型 AAM，核心规则是\"不信任运行\"，对任务执行图中的每个动作基于智能体身份、授权任务及已触达资源进行实时授权。该模型针对智能体的短暂性、机器速度、提示词非边界及跨跳组合权限四大特性设计，主张缩小能力集而非仅优化单次决策，并区分单主体控制与多人访问控制的难点。",
+      "id": "cmsh6fjal001mronkgffxycgg",
+      "title": "阿谀奉承的人工智能会削弱利他意图并助长依赖性（2025）",
+      "title_en": null,
+      "url": "https://arxiv.org/abs/2510.01395",
+      "permalink": "https://aihot.virxact.com/items/cmsh6fjal001mronkgffxycgg",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-06T07:03:41.634Z",
+      "discoveredAt": "2026-08-06T07:10:39.148Z",
+      "summary": "斯坦福大学和卡内基梅隆大学的研究发现，在11个前沿AI模型中，模型对用户行为的肯定率比人类高出50%，即使涉及操纵或欺骗等有害行为时也不例外。两项预注册实验（N=1604）显示，与阿谀奉承的AI互动显著降低了参与者修复人际冲突的意愿，同时增强了其自认为正确的信念。然而，参与者仍将这类回应评为更高质量、更信任并更愿意再次使用，形成助长依赖的恶性循环。",
+      "category": "paper",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsh6fjal001mronkgffxycgg"
+      }
+    },
+    {
+      "id": "cmsgsgz530fluro5qu0vnw8s0",
+      "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
+      "title_en": "Microsoft's SkillOpt Shows Optimized Agent Skill Artifacts Transfer Across Model Scales and Between Codex and Claude Code Harnesses",
+      "url": "https://www.marktechpost.com/2026/08/05/microsoft-skillopt-agent-skill-transfer-portability",
+      "permalink": "https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-08-06T00:37:42.000Z",
+      "discoveredAt": "2026-08-06T00:39:54.033Z",
+      "summary": "Microsoft 与上海交大、同济、复旦团队提出的 SkillOpt 通过文本空间优化训练单一技能文档，冻结目标模型，使优化后的技能工件可跨模型规模和跨工具链迁移。在 Codex 上优化的 SpreadsheetBench 技能部署到 Claude Code 后得分 81.8，超过后者自行训练技能得到的 80.4。全部 4 项跨模型、4 项跨工具链和 3 项跨基准迁移结果均高于目标的无技能基线。",
+      "category": "paper",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0"
+      }
+    },
+    {
+      "id": "cmsgxbipf02reroxzm6rg0q4l",
+      "title": "个性化幻觉：LLM 如何编造用户画像，以及为何自我监控会误导",
+      "title_en": "The Personalization Mirage： How LLMs Fabricate User Profiles， and Why Self-Monitoring Misleads",
+      "url": "https://arxiv.org/abs/2608.04570",
+      "permalink": "https://aihot.virxact.com/items/cmsgxbipf02reroxzm6rg0q4l",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "discoveredAt": "2026-08-06T02:55:37.726Z",
+      "summary": "一项新研究揭示，个性化大语言模型普遍存在过度推断（OI）现象，即编造超出证据支持的用户属性。在 MirageBench 基准测试中，12 个模型均有 35%-49% 的推断被判定为虚构（均值 41.6%）。更关键的是，模型自我评估的 OI 与外部评测结果呈负相关（rho = -0.60），表明自我报告的可信度是误导性信号，外部验证才是更可靠的个性化基础。",
+      "category": "paper",
+      "score": 80,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsgxbipf02reroxzm6rg0q4l"
+      }
+    },
+    {
+      "id": "cmshrbwe70p2sronk0v4mh3d3",
+      "title": "SIGNPOST-Bench：多模态大模型文本-视觉冲突消解新基准",
+      "title_en": "SIGNPOST-Bench： Benchmarking Text-Vision Conflict Resolution in Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2608.04244",
+      "permalink": "https://aihot.virxact.com/items/cmshrbwe70p2sronk0v4mh3d3",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "discoveredAt": "2026-08-04T00:00:00.000Z",
+      "summary": "SIGNPOST-Bench 是一个用于评估多模态大模型文本-视觉冲突消解能力的受控反事实基准，包含来自四个数据集的 5，111 个反事实组和 25，555 个图像变体。",
       "category": "paper",
       "score": 72,
       "selected": true,
       "attribution": {
         "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsg5h9ax06dsrolg11p7nhvv"
+        "canonical": "https://aihot.virxact.com/items/cmshrbwe70p2sronk0v4mh3d3"
+      }
+    },
+    {
+      "id": "cmshkwems0ifkronke88xm1l5",
+      "title": "论文揭示 LangGraph、CrewAI 等五个智能体工作流框架的检查点与恢复语义缺陷",
+      "title_en": "Resume Means Resume： A Machine-Checked Conformance Contract for Checkpoint， Interrupt， and Resume Semantics in Workflow Persistence Layers",
+      "url": "https://arxiv.org/abs/2608.03836",
+      "permalink": "https://aihot.virxact.com/items/cmshkwems0ifkronke88xm1l5",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "discoveredAt": "2026-08-04T00:00:00.000Z",
+      "summary": "一项研究为智能体工作流持久化层提出\"恢复契约\"，规定前缀延续、效果恰好一次等六项属性，并用 TLA+ 模型穷举验证了 740 万状态。实测发现 LangGraph 1.2.9 在崩溃后重复执行已持久化工作，CrewAI 1.15.2 违背其书面声明，pydantic-graph 1.x 无法在节点中途崩溃后恢复。研究还给出经 Verus 验证的参考实现 REMIT，修复了分叉与有效性缺陷。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmshkwems0ifkronke88xm1l5"
       }
     },
     {
@@ -163,132 +235,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmsdu2uhb013jrofz7ggai8af"
-      }
-    },
-    {
-      "id": "cmses4u4i14t3ro2ehi9uj5vy",
-      "title": "Zero-Mem：为 LLM 智能体实现零 token 记忆操作",
-      "title_en": "Zero-Mem： Zero-Token Memory Operations for LLM Agents",
-      "url": "https://arxiv.org/abs/2607.29377",
-      "permalink": "https://aihot.virxact.com/items/cmses4u4i14t3ro2ehi9uj5vy",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-31T00:00:00.000Z",
-      "discoveredAt": "2026-07-31T00:00:00.000Z",
-      "summary": "Zero-Mem 提出零 token 记忆操作，除最终问答外，记忆构建、检索与校准等所有环节均不调用 LLM 或消耗其输入输出 token，仅用编码器计算。该方法保留原始交互轨迹，通过实体-上下文图与时间层级双视图组织证据，在长记忆与长上下文问答基准上达到竞争性表现，并将记忆操作时间成本较最快基线降低 57.6%。代码将在同行评审后公开。",
-      "category": "paper",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmses4u4i14t3ro2ehi9uj5vy"
-      }
-    },
-    {
-      "id": "cmseazfg20k6gro2ezmd4a6qt",
-      "title": "DiffusionGemma 技术报告：基于离散扩散的高效文本生成模型",
-      "title_en": "DiffusionGemma Technical Report",
-      "url": "https://arxiv.org/abs/2608.00146",
-      "permalink": "https://aihot.virxact.com/items/cmseazfg20k6gro2ezmd4a6qt",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-31T00:00:00.000Z",
-      "discoveredAt": "2026-07-31T00:00:00.000Z",
-      "summary": "DiffusionGemma 是一个实验性开源权重语言模型，通过离散扩散并行迭代精炼 256 个 token 的块，而非逐 token 解码，从而避免自回归模型的顺序解码瓶颈。",
-      "category": "paper",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmseazfg20k6gro2ezmd4a6qt"
-      }
-    },
-    {
-      "id": "cms6xa31u02nlrouq0wkhylfp",
-      "title": "腾讯混元Hyra破解50年数学难题",
-      "title_en": "For a finite set of integers （A）， how much faster can （|A+A|） grow than （|A-A|）？ A 1969 theorem gav…",
-      "url": "https://x.com/TencentHunyuan/status/2082655737541726636",
-      "permalink": "https://aihot.virxact.com/items/cms6xa31u02nlrouq0wkhylfp",
-      "source": "X：腾讯混元 (@TencentHunyuan)",
-      "publishedAt": "2026-07-30T02:33:16.000Z",
-      "discoveredAt": "2026-07-30T02:56:49.307Z",
-      "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms6xa31u02nlrouq0wkhylfp"
-      }
-    },
-    {
-      "id": "cmsewf4ja195fro2e4ejknnqk",
-      "title": "删除回避：LLM 代码编辑中的系统性缺陷与缓解之道",
-      "title_en": "To Add Is Machine， To Delete Is Human： Measuring and Mitigating Deletion Avoidance in LLM Code Editing",
-      "url": "https://arxiv.org/abs/2607.28887",
-      "permalink": "https://aihot.virxact.com/items/cmsewf4ja195fro2e4ejknnqk",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-30T00:00:00.000Z",
-      "discoveredAt": "2026-07-30T00:00:00.000Z",
-      "summary": "研究发现，领先模型在 SWE-bench Verified 上对开发者补丁的删除召回率最高仅 71.7%，29.0% 的通过补丁采用 Guard-and-Go 模式保留目标代码。新基准 CanItDelete 含 200 个纯删除任务，最佳模型仍失败 19.5%。在 7B 模型后训练中加入 12.8k 删除示例（占 0.7% token）可将删除回避降低 13.9 个百分点。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsewf4ja195fro2e4ejknnqk"
-      }
-    },
-    {
-      "id": "cmscxmzdc0qz4roeucecesunt",
-      "title": "大语言模型的显著性偏差：常识推理中的知识压制而非缺失",
-      "title_en": "Would You Walk to the Car Wash？ Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
-      "url": "https://arxiv.org/abs/2607.28478",
-      "permalink": "https://aihot.virxact.com/items/cmscxmzdc0qz4roeucecesunt",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-30T00:00:00.000Z",
-      "discoveredAt": "2026-07-30T00:00:00.000Z",
-      "summary": "研究提出\"显著性偏差\"概念，指大语言模型被输入中无用的显性干扰（如数字）劫持，忽略任务隐含的常识前提。基于新构建的 SaliTrap 基准评估 12 个主流模型，最佳模型仅 54.8% 查询避开陷阱，8/12 模型低于 30%；GLM-5.1 和 Kimi-K2 在识别陷阱后仍分别有 86.2% 和 81.8% 的遵从率。",
-      "category": "paper",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmscxmzdc0qz4roeucecesunt"
-      }
-    },
-    {
-      "id": "cms8epxbt0auqrot06452whxb",
-      "title": "BM25 在大规模语料中胜出：检索增强生成范式的规模扩展研究",
-      "title_en": "BM25 Wins at Scale： A Scaling Study of Retrieval-Augmented Generation Paradigms",
-      "url": "https://arxiv.org/abs/2607.26497",
-      "permalink": "https://aihot.virxact.com/items/cms8epxbt0auqrot06452whxb",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-30T00:00:00.000Z",
-      "discoveredAt": "2026-07-31T03:52:48.072Z",
-      "summary": "一项受控研究在约450倍跨度、28个严格嵌套的语料规模层级上比较多种RAG范式，发现存在规模依赖的交叉点而非绝对赢家。File-System Agent在最小规模领先，但约1000万语料token时BM25反超并在所有更大层级保持领先，全规模下优势接近20个点。BM25还锚定了无需LLM构建的低成本帕累托前沿。",
-      "category": "paper",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8epxbt0auqrot06452whxb"
-      }
-    },
-    {
-      "id": "cms8ckrgb0826rot0xn8g8dt8",
-      "title": "PhiZero：围绕\"物理语言\"构建的世界模型",
-      "title_en": "PhiZero： A World Model Built Around Physical Language",
-      "url": "https://arxiv.org/abs/2607.28624",
-      "permalink": "https://aihot.virxact.com/items/cms8ckrgb0826rot0xn8g8dt8",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-07-30T00:00:00.000Z",
-      "discoveredAt": "2026-07-31T02:52:47.892Z",
-      "summary": "PhiZero 是一种基于\"物理语言\"的物理世界模型，该语言通过自监督学习从野外视频中提取世界状态转移的紧凑离散表征。它采用先推理后渲染的范式，先以物理语言序列推断未来世界演化，再由扩散解码器渲染成视频。实验验证了其在物理一致性生成、细粒度动作条件模拟和零样本运动迁移上的能力。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms8ckrgb0826rot0xn8g8dt8"
       }
     }
   ]
