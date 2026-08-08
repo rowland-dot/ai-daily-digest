@@ -1,5 +1,5 @@
 {
-  "count": 16,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -271,24 +271,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmse4jxrl0d1ero2edxdc05fq"
-      }
-    },
-    {
-      "id": "cms9hiyz80fdvro9kepvm1qvk",
-      "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
-      "title_en": "DeepSeek V4 Flash 0731 is now open weights！ @deepseek_ai has just released the weights for its new …",
-      "url": "https://x.com/ArtificialAnlys/status/2083306229074739285",
-      "permalink": "https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk",
-      "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "publishedAt": "2026-07-31T21:38:05.000Z",
-      "discoveredAt": "2026-07-31T21:59:08.343Z",
-      "summary": "DeepSeek 发布开源模型 DeepSeek V4 Flash 0731，在 Artificial Analysis 智能指数上得分 50，位列开源模型前三。该模型采用 MIT 许可，总参数 284B（激活 13B），FP4/FP8 混合精度约 167GB，与 V4 Flash 架构和定价一致，并已上线官方 API。",
-      "category": "ai-models",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk"
       }
     }
   ]

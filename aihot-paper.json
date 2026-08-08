@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmsk9yb97046zrow93i345be7",
+      "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
+      "title_en": "DeepMind's hurricane model bought forecasters an extra day",
+      "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day",
+      "permalink": "https://aihot.virxact.com/items/cmsk9yb97046zrow93i345be7",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-08-08T11:05:50.000Z",
+      "discoveredAt": "2026-08-08T11:12:34.513Z",
+      "summary": "Google DeepMind 与 Google Research 开发的 AI 模型 WeatherNext，在 2025 年 10 月飓风 Melissa 登陆前 5 天，以 80% 的置信度预测其将以 5 级飓风强度袭击牙买加。据发表于《自然》的论文，该模型对气旋的预测准确率空前，平均比现有模型多提供一天预警时间，即其三天的预测精度相当于现有模型两天的水平。",
+      "category": "paper",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AI HOT",
+        "canonical": "https://aihot.virxact.com/items/cmsk9yb97046zrow93i345be7"
+      }
+    },
+    {
       "id": "cmsiys4dz1yqironkuitnfi7t",
       "title": "斯坦福与 Arc Institute 用 AI 设计全新病毒基因组，16 种在实验室成功杀死细菌",
       "title_en": "Stanford and Arc Institute scientists used AI to design new viruses that killed bacteria in the lab",
@@ -217,24 +235,6 @@
       "attribution": {
         "source": "AI HOT",
         "canonical": "https://aihot.virxact.com/items/cmse4jxrl0d1gro2ewjdbr7n3"
-      }
-    },
-    {
-      "id": "cmsa302cc01xaro41omun2e1h",
-      "title": "OpenAI Astra 以约2000美元证明10项数学难题",
-      "title_en": "ten significant advances in mathematics and theoretical computer science. solved using an internal …",
-      "url": "https://x.com/gdb/status/2083457463337287721",
-      "permalink": "https://aihot.virxact.com/items/cmsa302cc01xaro41omun2e1h",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-08-01T07:39:02.000Z",
-      "discoveredAt": "2026-08-01T08:00:16.762Z",
-      "summary": "OpenAI 用下一代模型 Astra 内部版解决了数学与理论计算机科学领域的10项重大进展，总成本约2000美元（按 Sol API 价格计算）。Astra 证明了非 sofic 群的存在，并推翻 Connes 刚性猜想，成果涵盖 von Neumann 代数、高维球堆积、电路复杂度等。OpenAI 已发布全部10项证明，附 Lean 证书与 CoT 逐步推导。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AI HOT",
-        "canonical": "https://aihot.virxact.com/items/cmsa302cc01xaro41omun2e1h"
       }
     }
   ]
