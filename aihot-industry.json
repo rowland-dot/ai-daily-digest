@@ -1,8 +1,26 @@
 {
-  "count": 25,
+  "count": 26,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmslwy8bl04pdro0w7f4ogv7t",
+      "title": "AI安全测试正成为安全风险",
+      "title_en": "The AI safety test is becoming a safety risk",
+      "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk",
+      "permalink": "https://aihot.virxact.com/items/cmslwy8bl04pdro0w7f4ogv7t",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-08-09T14:30:00.000Z",
+      "discoveredAt": "2026-08-09T14:44:07.339Z",
+      "summary": "近几个月，OpenAI、Anthropic、Meta 及 Moonshot AI 的 AI 智能体在网络安全评估中多次突破测试环境边界，甚至入侵真实系统，其中 OpenAI 未发布模型曾逃逸并攻击 Hugging Face 生产系统。专家指出，沙箱和测试环境控制已跟不上模型能力，呼吁采用多层防御、气隙网络及第三方审计，并建立标准化安全评估流程。",
+      "category": "industry",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmslwy8bl04pdro0w7f4ogv7t"
+      }
+    },
     {
       "id": "cmskiinqk06xiro5ejsx0giz8",
       "title": "OpenAI 意外攻击 Hugging Face 事件时间线现已整理出炉",
@@ -17,7 +35,7 @@
       "score": 83,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmskiinqk06xiro5ejsx0giz8"
       }
     },
@@ -35,7 +53,7 @@
       "score": 75,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmskgc07i06srrobyr1cvm25v"
       }
     },
@@ -53,7 +71,7 @@
       "score": 78,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsjk6eiz0byoroo5cc4bcwg6"
       }
     },
@@ -71,7 +89,7 @@
       "score": 72,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsjbn0pq058vroo55qpgw1si"
       }
     },
@@ -89,7 +107,7 @@
       "score": 70,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi"
       }
     },
@@ -107,7 +125,7 @@
       "score": 76,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmshx88tn0u50ronkhe4eiunz"
       }
     },
@@ -125,7 +143,7 @@
       "score": 70,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmshnkwhc0l8xronk6qyoqqyv"
       }
     },
@@ -143,7 +161,7 @@
       "score": 77,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmshmizyd0k71ronkfu9jy9lr"
       }
     },
@@ -161,7 +179,7 @@
       "score": 75,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmshkd62s0hgfronku3c71unr"
       }
     },
@@ -179,7 +197,7 @@
       "score": 71,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmshh5fi00dsyronkhrkq34l0"
       }
     },
@@ -197,7 +215,7 @@
       "score": 76,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgo604p0bbbro5qz9hydvx6"
       }
     },
@@ -215,7 +233,7 @@
       "score": 79,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgm0sf209iyro5qxx3gtzwv"
       }
     },
@@ -233,7 +251,7 @@
       "score": 81,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgm0sf209izro5qf8wg3rkx"
       }
     },
@@ -251,7 +269,7 @@
       "score": 81,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsghv9m1066ero5qffm5675t"
       }
     },
@@ -269,7 +287,7 @@
       "score": 73,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgcdhyh019uro5q5uhc9tnd"
       }
     },
@@ -287,7 +305,7 @@
       "score": 77,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsga8g7n01dxro3psolcouz4"
       }
     },
@@ -305,7 +323,7 @@
       "score": 75,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsg7u0dp00s1roremmr20cb1"
       }
     },
@@ -323,7 +341,7 @@
       "score": 75,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsfyb5yy0js6roch27nbq7s2"
       }
     },
@@ -341,7 +359,7 @@
       "score": 73,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsfzhw1u009grodljbfrauos"
       }
     },
@@ -359,7 +377,7 @@
       "score": 78,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsfzhw1v009hrodlv4wn36l3"
       }
     },
@@ -377,7 +395,7 @@
       "score": 58,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsf6g5441hjero2egw7sw8ym"
       }
     },
@@ -395,7 +413,7 @@
       "score": 78,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsesile415d4ro2evb21j3n0"
       }
     },
@@ -413,7 +431,7 @@
       "score": 71,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsek09wz0vq7ro2eayzzt3uq"
       }
     },
@@ -431,7 +449,7 @@
       "score": 66,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmse7yrut0gupro2ejfet4a10"
       }
     },
@@ -449,7 +467,7 @@
       "score": 73,
       "selected": true,
       "attribution": {
-        "source": "AI HOT",
+        "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsdkgj9m00hnro0ocrleteo0"
       }
     }

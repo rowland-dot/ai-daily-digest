@@ -1,41 +1,55 @@
 {
-  "generated_at": "2026-08-07T01:07:00Z",
+  "generated_at": "2026-08-08T21:07:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vh9lx4/i_ported_vllms_serving_stack_to_c20_66_mib_binary/": {
-      "en": "The author released vllm.cpp, an unaffiliated community port of vLLM's serving stack rewritten in C++20 as a 66 mebibyte binary with no Python at runtime. It preserves continuous batching, paged key-value cache, prefix caching, speculative decoding, and an OpenAI-compatible server, verifying every supported architecture token-for-token against vLLM. Benchmarks on DGX Spark show parity or slight leads over vLLM up to 32 concurrent requests, plus wins over llama.cpp on CPU.",
-      "zh": "作者发布了 vllm.cpp，vLLM 服务栈的非官方 C++20 社区移植版，编译为 66 兆二进制文件、运行时无需 Python，仍保留连续批处理、分页键值缓存、前缀缓存与推测解码，并对每个架构逐 token 与 vLLM 校验一致。在 DGX Spark 上最高至 32 并发时与 vLLM 持平或略胜，CPU 前缀阶段亦超过 llama.cpp。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vio0x6/deepseek_v4_flash_0731_appreciation_post/": {
+      "en": "A small business owner shares an enthusiastic report on running DeepSeek-V4-Flash 0731 on dual DGX Spark boxes, calling it a workhorse across long coding sessions in OpenCode, agent tasks in Hermes, email retrieval, Paperless NGX document processing, DOCX form filling, and OS administration. They just ordered another pair of Sparks because the time savings already justify it, and describe the model as a clear step up from prior MiniMax M2.7 and Qwen 3.6 27B setups.",
+      "zh": "一位小企业主分享在双 DGX Spark 上运行 DeepSeek-V4-Flash 0731 的体验，称其在 OpenCode 长时编码、Hermes 智能体、邮件检索、Paperless NGX 文档处理、DOCX 表格填写与系统运维中都堪当重任。他因节省大量时间又下单了第二对 Spark，认为体验明显优于此前的 MiniMax M2.7 与 Qwen 3.6 27B。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vh7bxu/i_compared_even_more_parsers_on_14_pdfparsing/": {
-      "en": "The author expanded their earlier parser comparison to eight PDF parsers, testing 14 capabilities including tables, LaTeX, cursive handwriting, and stains. Chandra swept all 14 tests, producing faithful merged-cell tables, correct display and inline LaTeX, near-perfect cursive reading, and correctly skipping a stain, at 91 seconds per page on an L4. LightOnOCR-1B was impressive for its 1 billion parameters but hallucinated on illegible text, while classical OCR tools failed on handwriting entirely.",
-      "zh": "作者扩展了此前的 PDF 解析器对比，共评测八款，覆盖 14 项能力，包括表格、LaTeX、草书手写与污渍。Chandra 全部 14 项通过，生成忠实的合并单元格表、正确的 LaTeX、近乎完美的草书识别，并明智地跳过污渍，L4 上每页 91 秒。LightOnOCR-1B 10 亿参数下表现亮眼，但在难辨文本上产生幻觉；传统 OCR 工具在草书上则完全失效。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vikgrj/is_anyone_else_finding_deepseekv4flash_unreliable/": {
+      "en": "A user argues DeepSeek-V4-Flash-0731 has serious flaws for non-coding office work despite its high benchmark scores. Three concrete examples compare it to Gemma-4-31B on meeting-note extraction, correctly identifying which person a question refers to, and resisting a stray greeting that misdirects who a message addresses. In every case Gemma preserves nuance and speaker context while DeepSeek loses relevant threads, making DeepSeek unreliable for summarising or writing letters even though it excels at coding, research, and agentic tasks.",
+      "zh": "有用户指出 DeepSeek-V4-Flash-0731 在非编码办公任务上问题严重：与 Gemma-4-31B 相比，它在会议纪要提炼、判断问题指向的说话人、以及不被开头短语误导对话对象等三个具体案例中都遗漏了关键语境。虽然它在编码、研究、智能体任务上出色，但用于总结文本或撰写信件时并不可靠。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vhf70c/scotoma2_gemma4_but_with_less_annoying_slop_and/": {
-      "en": "Scotoma-2 is a fine-tune of Gemma4-31B by user AesSedai aimed at reducing Gemma4's common tropes, such as its recurring negation-then-affirmation phrasing and stacked-adjective descriptions, while preserving model intelligence. The author applied Heretic abliteration with J-lens projection to disrupt the assistant persona, then ran four separate Direct Preference Optimization passes against four rejected-versus-accepted datasets, each targeting a specific writing problem. Sample outputs show subtler, less formulaic prose than the base model.",
-      "zh": "Scotoma-2 是 AesSedai 对 Gemma4-31B 的微调版，旨在削弱 Gemma4 常见的先否定再肯定句式与堆叠形容词习气，同时保留模型智能。作者先用 Heretic 做 abliteration，配合 J-lens 投影扰动助手人格，再针对四个拒绝对接受的数据集分别做了四次直接偏好优化，每次针对一个写作问题。示例输出较基础模型更含蓄、不落套路。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vinr66/qwen_35ba3b_moe_vs_27b_dense_in_local_coding/": {
+      "en": "A local benchmark on a Radeon AI Pro R9700 with llama.cpp compares Qwen 3.6 35 billion Mixture of Experts against 27 billion dense on coding-maintenance tasks. The Mixture of Experts variant ran about 3.9 times faster, roughly 116 versus 30 tokens per second, yet the coding quality gap was much smaller than expected. Both handled ordinary fixes and multi-file changes; the dense model only pulled ahead on implicit invariants, unusual edge cases, and consequences beyond the literal request.",
+      "zh": "有人在 Radeon AI Pro R9700 上用 llama.cpp 对比了 Qwen 3.6 的 350 亿参数混合专家模型与 270 亿参数稠密模型在本地编码维护任务的表现：混合专家版本速度约快 3.9 倍，每秒约 116 与 30 个 token，但编码质量差距远小于预期。两者都能应付常规修复与多文件改动，稠密模型仅在隐含约束、罕见边界情况与超出字面要求的后果上占优。",
+      "title_en": "Qwen 35 billion Mixture of Experts versus 27 billion dense in local coding tests: about four times faster with a much smaller quality gap than expected",
+      "title_zh": "Qwen 350 亿混合专家与 270 亿稠密模型的本地编码对比：速度约快四倍，质量差距远小于预期"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vh7lzy/nvidianvidianemotronparse20_hugging_face/": {
-      "en": "NVIDIA released Nemotron Parse 2.0, a document image parser that outputs structured text with layout classes, bounding boxes, and reading order given an RGB page and prompt. Compared to version 1.2, it adds roughly 20,000 tokens of vocabulary for stronger multilingual support, especially on Chinese-Japanese-Korean and Indic scripts, chart-aware parsing via a class token, and better handwritten-text and table extraction. It targets retrieval-augmented generation, data extraction, and multimodal training-data curation.",
-      "zh": "NVIDIA 发布 Nemotron Parse 2.0 文档图像解析模型：给定 RGB 页面与任务提示，输出带布局类别、边界框和阅读顺序的结构化文本。相较 1.2 版，新增约两万词汇以强化多语言支持，尤其是中日韩与印度语系；加入图表感知解析与类别 token；改进手写文本与表格密集页面的抽取。适用于检索增强生成、数据抽取和多模态训练数据构建。",
-      "title_en": "NVIDIA releases Nemotron Parse 2.0 for structured document image parsing",
-      "title_zh": "NVIDIA 发布 Nemotron Parse 2.0 文档图像结构化解析模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vida0h/qwen_36_27b_flagssettings_in_llamacpp/": {
+      "en": "A user shares their llama.cpp server command for running Qwen 3.6 27B in Q6_K on an RTX 5090 at 262 thousand context, reporting around 80 to 100 tokens per second and roughly 40 at full context. They highlight modest batch and micro-batch sizes of 512 and 128, a high 16 thousand token reasoning budget, multi-token prediction speculative drafting, and quantised key-value cache, then ask what settings other people tweak differently and why.",
+      "zh": "有用户分享了在 RTX 5090 上以 Q6_K 运行 Qwen 3.6 27B 的 llama.cpp 服务命令，262K 上下文下每秒约 80 到 100 个 token，满上下文时约 40。他强调较小的批大小 512 与微批 128、较高的 1 万 6 千 token 推理预算、多 token 预测推测草稿以及量化的键值缓存，并询问他人对哪些参数做了不同调整以及原因。",
+      "title_en": "Qwen 3.6 27 billion parameter llama.cpp flags and settings shared for community feedback",
+      "title_zh": "分享 Qwen 3.6 270 亿参数模型在 llama.cpp 中的运行参数与设置"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vhjeqy/nvidias_whole_speech_stack_just_went_local_asr/": {
-      "en": "NVIDIA's speech stack now runs locally via NeMo-Speech.cpp with GGUF quantization. The released set includes Magpie-TTS Multilingual, Nemotron Speech Streaming EN 0.6B, Nemotron-3.5 ASR Streaming, Parakeet CTC 1.1B, Parakeet TDT 0.6B v3, and the NanoCodec, whose merge request has landed. This puts a full on-device speech pipeline covering automatic speech recognition, text-to-speech, and neural audio coding within reach for local use.",
-      "zh": "NVIDIA 整套语音模型已可通过 NeMo-Speech.cpp 本地运行，并以 GGUF 量化。此次开放的包括 Magpie-TTS Multilingual、Nemotron Speech Streaming EN 0.6B、Nemotron-3.5 ASR Streaming、Parakeet CTC 1.1B、Parakeet TDT 0.6B v3，以及 NanoCodec 编解码器。由此在本地设备上实现覆盖语音识别、语音合成与神经音频编码的完整端到端流水线。",
-      "title_en": "NVIDIA speech stack goes local, with automatic speech recognition, text-to-speech, and neural codec ported to NeMo-Speech.cpp",
-      "title_zh": "NVIDIA 整套语音技术栈本地化：语音识别、语音合成与神经编解码器移植至 NeMo-Speech.cpp"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vilcil/i_got_tired_of_my_300gb_model_loads_taking_5min/": {
+      "en": "A contributor benchmarks their llama.cpp pull request 26291, which cuts remote procedure call load time for a 300 gigabyte model from about four minutes 54 seconds to one minute 38 seconds when the client uses twelve load threads. The real bottleneck was not network, disk, or PCIe generation but a single CPU thread doing all the work while others sat idle. Client-side is done; a server-side fix could push loads under a minute.",
+      "zh": "一位贡献者在 llama.cpp 的第 26291 号拉取请求中优化了远程调用加载：300 GB 模型的加载时间从约 4 分 54 秒降至 1 分 38 秒，客户端使用 12 个加载线程。真正的瓶颈不在网络、磁盘或 PCIe 版本，而是单线程 CPU 独自搬运，其他核心闲置。客户端已完成，服务端继续优化后加载有望进入 1 分钟以内。",
+      "title_en": "Llama.cpp pull request 26291 cuts 300 gigabyte model load time over remote procedure call from about five minutes to one and a half minutes on modest hardware",
+      "title_zh": "llama.cpp 第 26291 号拉取请求将 300 GB 模型在远程调用下的加载时间从约 5 分钟缩短到 1 分半"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vhaabz/kv_cache_quantization_benchmarks_413_pairs_tested/": {
-      "en": "A benchmark article uses BeeLlama.cpp version 0.4.0, a fork of llama.cpp offering more key-value cache quantization options, to run 413 configurations across Qwen 3.6 27B and Gemma 4 31B and measure output divergence with Kullback-Leibler divergence. The author reports that Huawei's variance-normalized cache at 6 bits beats standard 8-bit quantization, and that keeping the latest 1024 tokens of key-value cache in bfloat16 substantially reduces tail divergence. Practical recommendation ladders trade cache size against fidelity.",
-      "zh": "一篇基准文章基于 BeeLlama.cpp 0.4.0（llama.cpp 的分支，扩展了键值缓存量化选项），在 Qwen 3.6 27B 与 Gemma 4 31B 上跑了 413 组配置，用 Kullback-Leibler 散度衡量输出偏差。作者发现华为方差归一化缓存在 6 比特下胜过标准 8 比特量化，且将最近 1024 个 token 的缓存保留为 bfloat16 可显著降低尾部偏差，并给出以缓存体积换保真度的推荐阶梯。",
-      "title_en": "Key-value cache quantization benchmark on Qwen 3.6 27B and Gemma 4 31B, testing variance-normalized cache and precision tails",
-      "title_zh": "键值缓存量化基准测试：在 Qwen 3.6 27B 与 Gemma 4 31B 上评估方差归一化缓存与精度尾部策略"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1viq0pq/qwen36_27b_35b_on_vllm_single_r9700_gfx1201/": {
+      "en": "A user shares vLLM benchmarks on a single Radeon AI Pro R9700 running Qwen 3.6 27B dense and 35B Mixture of Experts as INT4 W4A16 weights via a Radiance container image with tuned speculative decoding. The 35B Mixture of Experts sustains around 61 tokens per second decode at 4 thousand context, dropping to about 49 at 150 thousand. The 27B dense with speculative drafts hits roughly 60 tokens per second decode. Includes a tokenizer truncation fix that unblocks vision above 672 pixels.",
+      "zh": "有用户分享了在单张 Radeon AI Pro R9700 上用 vLLM 运行 Qwen 3.6 27B 稠密与 35B 混合专家模型的实测：以 INT4 W4A16 权重、Radiance 容器镜像和调优后的推测解码运行。35B 混合专家在 4K 上下文解码约每秒 61 个 token，150K 时降至约 49；27B 稠密约每秒 60 个 token。文中还给出了分词器截断的修复，可解除 672 像素以上视觉输入的限制。",
+      "title_en": "Qwen 3.6 27 billion and 35 billion on vLLM running on a single Radeon AI Pro R9700 with detailed configuration",
+      "title_zh": "在单张 Radeon AI Pro R9700 上用 vLLM 运行 Qwen 3.6 的 270 亿与 350 亿参数模型的详细配置"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vgx9m5/i_just_spent_weeks_rewriting_my_webui_from/": {
-      "en": "The author released openlumara, a fully open-source GPL3 web interface for local models, rewritten from scratch using Alpine.js without React or Vue framework bloat. It has few Python dependencies and ships no inference engine, expecting users to connect via llama.cpp, koboldcpp, or lemonade. Local-first features include showing prompt processing time, a llama.cpp-only capability, real-time tool call streaming, and no extra background requests for chat titles or follow-up replies. Cloud APIs are supported but treated as second-class.",
-      "zh": "作者发布 openlumara，一款完全开源、GPL3、面向本地模型的 Web 界面，从头手工重写，采用 Alpine.js 而不引入 React 或 Vue 等框架臃肿。它仅少量 Python 依赖，不内置推理引擎，需连接 llama.cpp、koboldcpp 或 lemonade。本地优先特性包括展示提示词处理耗时、实时呈现工具调用书写，且不额外发请求生成聊天标题或跟随回复。云端 API 支持但视为次要。",
-      "title_en": "openlumara, a lightweight local-first web interface for local models, released after a full rewrite in Alpine.js",
-      "title_zh": "openlumara 面向本地模型的轻量级 Web 界面发布，采用 Alpine.js 全新重写"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vj1cin/building_a_zerodependency_c_inference_engine_for/": {
+      "en": "A developer shares a pure C99 CPU inference engine for BitNet 1.58 bit ternary models with no Python, CUDA, or external libraries, reaching 36.25 tokens per second on BitNet b1.58 2 billion parameters at 4 trillion tokens using four threads on an Intel Xeon. Custom AVX2 and AVX-512 kernels accumulate packed ternary weights directly with VNNI integer instructions, and a C11 atomic thread pool keeps sync overhead near zero. At batch size one the main ceiling is memory bandwidth, already about 95 percent utilised.",
+      "zh": "一位开发者分享了用纯 C99 从零构建的 CPU 推理引擎，可原生运行 BitNet 1.58 位三值模型，无需 Python、CUDA 或外部库，在 Intel Xeon 上四线程运行 BitNet b1.58 20 亿参数 4 万亿 token 模型达到每秒 36.25 个 token。自定义 AVX2 与 AVX-512 内核借助 VNNI 整数指令直接累加打包的三值权重，C11 原子线程池将同步开销降至近零；批大小为 1 时瓶颈在内存带宽，已用满约 95%。",
+      "title_en": "Building a zero dependency C inference engine for BitNet 1.58 bit models with lessons from hitting 36 tokens per second on a Xeon CPU",
+      "title_zh": "从零构建 BitNet 1.58 位模型的零依赖 C 语言推理引擎：在 Xeon CPU 上达到每秒 36 个 token 的经验"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vipk8z/model_support_longcatflash_need_testing_by_ngxson/": {
+      "en": "A llama.cpp pull request adds support for the Longcat-Flash model and is ready for wider community testing. The author verified it only with a small 8 billion parameter sub-model extracted from the original and is asking others to try the full-size variant. GGUF conversions are available on Hugging Face under the ggml-org organisation, with contributors pointing to newer builds in the pull request comments.",
+      "zh": "llama.cpp 的一项拉取请求已为 Longcat-Flash 模型添加支持，现邀请社区更广泛地测试。作者仅用从原模型抽取的 80 亿参数小型子模型完成过验证，希望有人试验完整版本。转换后的 GGUF 文件可在 Hugging Face 的 ggml-org 组织下获取，最新版本请以拉取请求底部评论为准。",
+      "title_en": "Llama.cpp pull request adds Longcat Flash model support and asks the community to test the full sized version",
+      "title_zh": "llama.cpp 拉取请求新增对 Longcat Flash 模型的支持，邀请社区测试完整版本"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vixl0f/tesla_v100_qwen36_27b_performance/": {
+      "en": "A user asks other Tesla V100 owners to share configurations and benchmarks, while posting their own setup running Qwen 3.6 27B in Q4_K_M with a Q8_0 multi-token prediction draft model on a 32 gigabyte V100 PCIe card. Their llama.cpp preset uses 128 thousand context, full GPU offload, flash attention, multi-token prediction speculative decoding with a maximum draft length of one, and a Pi coding agent workflow.",
+      "zh": "有用户请其他 Tesla V100 用户分享配置与性能，并展示了自己的方案：在 32 GB Tesla V100 PCIe 上用 llama.cpp 运行 Qwen 3.6 27B 的 Q4_K_M 主模型与 Q8_0 的多 token 预测草稿模型，128K 上下文、全部层送入 GPU、启用 Flash Attention 与多 token 预测推测解码，草稿最长为 1，配合 Pi 编码助手工作流。",
+      "title_en": "Tesla V100 running Qwen 3.6 27 billion parameter model with configuration and performance details",
+      "title_zh": "在 Tesla V100 上运行 Qwen 3.6 270 亿参数模型的配置与性能"
     }
   }
 }

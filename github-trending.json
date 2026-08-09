@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T20:59:56.763Z",
+  "fetched_at": "2026-08-09T21:03:04.091Z",
   "repos": [
     {
       "owner": "PrimeIntellect-ai",
@@ -8,9 +8,53 @@
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 8609,
-      "forks": 769,
-      "starsToday": 2483
+      "stars": 10816,
+      "forks": 1123,
+      "starsToday": 2319
+    },
+    {
+      "owner": "vitali87",
+      "name": "code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 2926,
+      "forks": 518,
+      "starsToday": 59
+    },
+    {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 140560,
+      "forks": 22971,
+      "starsToday": 932
+    },
+    {
+      "owner": "pranshuparmar",
+      "name": "witr",
+      "url": "https://github.com/pranshuparmar/witr",
+      "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 20543,
+      "forks": 722,
+      "starsToday": 342
+    },
+    {
+      "owner": "google-deepmind",
+      "name": "weathernext",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "description": "",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 7037,
+      "forks": 936,
+      "starsToday": 105
     },
     {
       "owner": "addyosmani",
@@ -19,42 +63,20 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 84463,
-      "forks": 9045,
-      "starsToday": 778
+      "stars": 85054,
+      "forks": 9153,
+      "starsToday": 670
     },
     {
-      "owner": "TapXWorld",
-      "name": "ChinaTextbook",
-      "url": "https://github.com/TapXWorld/ChinaTextbook",
-      "description": "所有小初高、大学PDF教材。",
-      "language": "Roff",
-      "languageColor": "#ecdebe",
-      "stars": 77864,
-      "forks": 17600,
-      "starsToday": 591
-    },
-    {
-      "owner": "google",
-      "name": "skills",
-      "url": "https://github.com/google/skills",
-      "description": "Agent Skills for Google products and technologies",
+      "owner": "ZhuLinsen",
+      "name": "daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 16658,
-      "forks": 1335,
-      "starsToday": 481
-    },
-    {
-      "owner": "mattpocock",
-      "name": "skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 209881,
-      "forks": 18136,
-      "starsToday": 1354
+      "stars": 61121,
+      "forks": 51984,
+      "starsToday": 287
     },
     {
       "owner": "goauthentik",
@@ -63,75 +85,53 @@
       "description": "The authentication glue you need.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 23936,
-      "forks": 1834,
-      "starsToday": 467
-    },
-    {
-      "owner": "TauricResearch",
-      "name": "TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 96397,
-      "forks": 18642,
-      "starsToday": 126
+      "stars": 24226,
+      "forks": 1855,
+      "starsToday": 312
     },
     {
       "owner": "google",
-      "name": "guava",
-      "url": "https://github.com/google/guava",
-      "description": "Google core libraries for Java",
-      "language": "Java",
-      "languageColor": "#b07219",
-      "stars": 51836,
-      "forks": 11180,
-      "starsToday": 93
+      "name": "skills",
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 17174,
+      "forks": 1390,
+      "starsToday": 532
     },
     {
-      "owner": "LadybirdBrowser",
-      "name": "ladybird",
-      "url": "https://github.com/LadybirdBrowser/ladybird",
-      "description": "Truly independent web browser",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 64954,
-      "forks": 3103,
-      "starsToday": 79
+      "owner": "Comfy-Org",
+      "name": "ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 125407,
+      "forks": 14829,
+      "starsToday": 333
     },
     {
-      "owner": "denoland",
-      "name": "celld",
-      "url": "https://github.com/denoland/celld",
-      "description": "self-hosted, distributed Durable Objects",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 2515,
-      "forks": 71,
-      "starsToday": 432
+      "owner": "harveyai",
+      "name": "harvey-labs",
+      "url": "https://github.com/harveyai/harvey-labs",
+      "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 787,
+      "forks": 173,
+      "starsToday": 87
     },
     {
-      "owner": "litu54",
-      "name": "DevOps-Interview-Guide",
-      "url": "https://github.com/litu54/DevOps-Interview-Guide",
-      "description": "DevOps Interview Guide",
-      "language": "",
-      "languageColor": "",
-      "stars": 681,
-      "forks": 876,
-      "starsToday": 59
-    },
-    {
-      "owner": "bannedbook",
-      "name": "fanqiang",
-      "url": "https://github.com/bannedbook/fanqiang",
-      "description": "翻墙-科学上网",
-      "language": "Kotlin",
-      "languageColor": "#A97BFF",
-      "stars": 49854,
-      "forks": 8252,
-      "starsToday": 161
+      "owner": "pingdotgg",
+      "name": "t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 17605,
+      "forks": 4000,
+      "starsToday": 208
     }
   ]
 }

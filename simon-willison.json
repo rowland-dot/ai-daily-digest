@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-08-08T20:59:57.945Z",
+  "fetched_at": "2026-08-09T21:03:04.819Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+      "link": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+      "updated": "2026-08-08T22:36:03+00:00",
+      "summary": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans"
+    },
     {
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
       "link": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
       "updated": "2026-08-05T23:45:32+00:00",
       "summary": "Third-party cyber evaluations involving OpenAI models"
-    },
-    {
-      "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
-      "link": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
-      "updated": "2026-08-05T23:32:06+00:00",
-      "summary": "Incident Report: unsanctioned agent behaviour during cyber testing"
     }
   ]
 }
