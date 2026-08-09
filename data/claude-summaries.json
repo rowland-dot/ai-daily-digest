@@ -1,55 +1,57 @@
 {
-  "generated_at": "2026-08-08T21:07:00Z",
+  "generated_at": "2026-08-09T21:11:30Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vio0x6/deepseek_v4_flash_0731_appreciation_post/": {
-      "en": "A small business owner shares an enthusiastic report on running DeepSeek-V4-Flash 0731 on dual DGX Spark boxes, calling it a workhorse across long coding sessions in OpenCode, agent tasks in Hermes, email retrieval, Paperless NGX document processing, DOCX form filling, and OS administration. They just ordered another pair of Sparks because the time savings already justify it, and describe the model as a clear step up from prior MiniMax M2.7 and Qwen 3.6 27B setups.",
-      "zh": "一位小企业主分享在双 DGX Spark 上运行 DeepSeek-V4-Flash 0731 的体验，称其在 OpenCode 长时编码、Hermes 智能体、邮件检索、Paperless NGX 文档处理、DOCX 表格填写与系统运维中都堪当重任。他因节省大量时间又下单了第二对 Spark，认为体验明显优于此前的 MiniMax M2.7 与 Qwen 3.6 27B。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjb15v/no_wonder_qwen_and_gemma_are_so_different/": {
+      "en": "A user pasted 330 lines of HTML and JavaScript into Qwen 35 billion A3B and Gemma 26 billion A4B and found Qwen tokenised it to 1609 tokens while Gemma reached 4258. On a 55 line instruction document the counts matched. The author argues this tokenizer gap helps explain why Qwen is regarded as stronger at code while Gemma leans language, and wonders whether retraining Gemma with a more efficient tokenizer would let it catch up.",
+      "zh": "有人将同一段 330 行的 HTML 与 JavaScript 分别输入 Qwen 35B A3B 和 Gemma 26B A4B：Qwen 分词得到 1609 个 token，Gemma 却达到 4258 个；而 55 行的说明文档两者接近。作者认为此分词差距解释了为何 Qwen 在编码上更强、Gemma 更擅长自然语言，并好奇给 Gemma 换用更高效的分词器能否让其追上。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vikgrj/is_anyone_else_finding_deepseekv4flash_unreliable/": {
-      "en": "A user argues DeepSeek-V4-Flash-0731 has serious flaws for non-coding office work despite its high benchmark scores. Three concrete examples compare it to Gemma-4-31B on meeting-note extraction, correctly identifying which person a question refers to, and resisting a stray greeting that misdirects who a message addresses. In every case Gemma preserves nuance and speaker context while DeepSeek loses relevant threads, making DeepSeek unreliable for summarising or writing letters even though it excels at coding, research, and agentic tasks.",
-      "zh": "有用户指出 DeepSeek-V4-Flash-0731 在非编码办公任务上问题严重：与 Gemma-4-31B 相比，它在会议纪要提炼、判断问题指向的说话人、以及不被开头短语误导对话对象等三个具体案例中都遗漏了关键语境。虽然它在编码、研究、智能体任务上出色，但用于总结文本或撰写信件时并不可靠。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjklwo/deepseek_v4_flash_0731_hits_827_on_terminalbench/": {
+      "en": "The author of the Ante benchmarking harness independently reproduced DeepSeek's 82.7 percent claim for DeepSeek V4 Flash 0731 on Terminal Bench 2.1. Ante 0.preview.71 ran 5 trials across each of 89 tasks at maximum reasoning effort through OpenRouter, landing 368 of 445 successful runs. They note DeepSeek V4 is unusually harness sensitive, and publish the full Harbor job with pinned configuration, rewards, exceptions, durations and token usage for others to inspect.",
+      "zh": "Ante 基准工具作者用公开 Harness 独立复现了 DeepSeek 宣称的 82.7% 成绩：以 Ante 0.preview.71 通过 OpenRouter 在 89 项 Terminal Bench 2.1 任务上各跑 5 轮，共 445 次试验中 368 次成功。他指出 DeepSeek V4 对 Harness 异常敏感，并公开了 Harbor 完整任务的配置、奖励、异常、时长与 token 使用数据。",
+      "title_en": "Independent public harness reproduces DeepSeek V4 Flash 0731 at 82.7 percent on Terminal Bench 2.1 across 445 trials",
+      "title_zh": "公开 Harness 独立复现 DeepSeek V4 Flash 0731 在 Terminal Bench 2.1 上 82.7% 成绩共 445 次试验"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vinr66/qwen_35ba3b_moe_vs_27b_dense_in_local_coding/": {
-      "en": "A local benchmark on a Radeon AI Pro R9700 with llama.cpp compares Qwen 3.6 35 billion Mixture of Experts against 27 billion dense on coding-maintenance tasks. The Mixture of Experts variant ran about 3.9 times faster, roughly 116 versus 30 tokens per second, yet the coding quality gap was much smaller than expected. Both handled ordinary fixes and multi-file changes; the dense model only pulled ahead on implicit invariants, unusual edge cases, and consequences beyond the literal request.",
-      "zh": "有人在 Radeon AI Pro R9700 上用 llama.cpp 对比了 Qwen 3.6 的 350 亿参数混合专家模型与 270 亿参数稠密模型在本地编码维护任务的表现：混合专家版本速度约快 3.9 倍，每秒约 116 与 30 个 token，但编码质量差距远小于预期。两者都能应付常规修复与多文件改动，稠密模型仅在隐含约束、罕见边界情况与超出字面要求的后果上占优。",
-      "title_en": "Qwen 35 billion Mixture of Experts versus 27 billion dense in local coding tests: about four times faster with a much smaller quality gap than expected",
-      "title_zh": "Qwen 350 亿混合专家与 270 亿稠密模型的本地编码对比：速度约快四倍，质量差距远小于预期"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjanps/kimi_k3_unsloth_iq2xxs_from_711gb_down_to_478gb/": {
+      "en": "A pruning approach shared by user hellohazime removes Kimi K3's multilingual weights while keeping English intact, cutting the Unsloth two bit IQ XXS build from 711 gigabytes to 478 gigabytes. The poster reports the smaller model solved three SWE-Lancer tasks that the naive two bit version failed, though each run took about 2.5 hours streaming experts from SSD on a Mac. Verifying the gain properly on rented full VRAM would cost roughly 1800 US dollars.",
+      "zh": "hellohazime 分享的剪枝方法在保留英文能力的同时移除 Kimi K3 的多语言权重，将 Unsloth 二位 IQ XXS 版本从 711 GB 压缩到 478 GB。发帖者称该更小模型解出了三项 SWE-Lancer 任务，而普通二位版本都失败；Mac 上通过 SSD 流式加载专家层每题耗时约 2.5 小时，租满显存机器严格验证约需 1800 美元。",
+      "title_en": "Kimi K3 Unsloth two bit IQ XXS build shrinks from 711 gigabytes to 478 gigabytes by removing multilingual weights",
+      "title_zh": "Kimi K3 Unsloth 二位 IQ XXS 量化通过移除多语言权重从 711 GB 压缩至 478 GB"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vida0h/qwen_36_27b_flagssettings_in_llamacpp/": {
-      "en": "A user shares their llama.cpp server command for running Qwen 3.6 27B in Q6_K on an RTX 5090 at 262 thousand context, reporting around 80 to 100 tokens per second and roughly 40 at full context. They highlight modest batch and micro-batch sizes of 512 and 128, a high 16 thousand token reasoning budget, multi-token prediction speculative drafting, and quantised key-value cache, then ask what settings other people tweak differently and why.",
-      "zh": "有用户分享了在 RTX 5090 上以 Q6_K 运行 Qwen 3.6 27B 的 llama.cpp 服务命令，262K 上下文下每秒约 80 到 100 个 token，满上下文时约 40。他强调较小的批大小 512 与微批 128、较高的 1 万 6 千 token 推理预算、多 token 预测推测草稿以及量化的键值缓存，并询问他人对哪些参数做了不同调整以及原因。",
-      "title_en": "Qwen 3.6 27 billion parameter llama.cpp flags and settings shared for community feedback",
-      "title_zh": "分享 Qwen 3.6 270 亿参数模型在 llama.cpp 中的运行参数与设置"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjt4vi/lophius_a_workbench_for_language_model_research/": {
+      "en": "The creator of Heretic released Lophius, a hybrid code and GUI research workbench that runs inside a Jupyter notebook. It automates common transformer research tasks including model inspection, architecture analysis, tokenizer inspection, prompt management, inference, logits, entropy, attention scores, hidden states and chat, with intelligent GPU memory management and lazy loading of large output signals. Documentation and a full tutorial ship with it, and the author hints Heretic may adopt Lophius as its backend.",
+      "zh": "Heretic 作者发布 Lophius，一款运行于 Jupyter 笔记本内的代码与 GUI 混合式研究工作台。它自动处理模型检查、架构分析、分词器检查、提示管理、推理、logits、熵、注意力分数、隐藏状态与对话等任务，能智能管理 GPU 显存并按需加载大型输出信号。附有详尽文档与完整教程，作者暗示 Heretic 后端未来可能改用它。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vilcil/i_got_tired_of_my_300gb_model_loads_taking_5min/": {
-      "en": "A contributor benchmarks their llama.cpp pull request 26291, which cuts remote procedure call load time for a 300 gigabyte model from about four minutes 54 seconds to one minute 38 seconds when the client uses twelve load threads. The real bottleneck was not network, disk, or PCIe generation but a single CPU thread doing all the work while others sat idle. Client-side is done; a server-side fix could push loads under a minute.",
-      "zh": "一位贡献者在 llama.cpp 的第 26291 号拉取请求中优化了远程调用加载：300 GB 模型的加载时间从约 4 分 54 秒降至 1 分 38 秒，客户端使用 12 个加载线程。真正的瓶颈不在网络、磁盘或 PCIe 版本，而是单线程 CPU 独自搬运，其他核心闲置。客户端已完成，服务端继续优化后加载有望进入 1 分钟以内。",
-      "title_en": "Llama.cpp pull request 26291 cuts 300 gigabyte model load time over remote procedure call from about five minutes to one and a half minutes on modest hardware",
-      "title_zh": "llama.cpp 第 26291 号拉取请求将 300 GB 模型在远程调用下的加载时间从约 5 分钟缩短到 1 分半"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjgp6r/lfm_26b_is_a_lot_of_fun/": {
+      "en": "A user reports LFM 2.6 billion, the small Liquid Foundation Model built for phones, hits about 260 tokens per second generation and 20 thousand tokens per second prompt processing on 3090s. They find it handy for quick tasks like scanning long text for a mention, summarising a pop science article, remembering a Linux command, or reformatting a pasted command with stray backslashes. Context reaches 128 thousand tokens. Not for anything important, but a solid replacement for search overviews.",
+      "zh": "有用户反馈手机端的小模型 LFM 2.6B 在 3090 上跑到约每秒 260 个 token 生成、每秒 2 万 token 预填。适合快速任务，如扫描长文查关键词、总结科普文章、回忆 Linux 命令，或重排贴入的长命令；上下文可达 128K token。重要任务不推荐，但足以替代搜索概览。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1viq0pq/qwen36_27b_35b_on_vllm_single_r9700_gfx1201/": {
-      "en": "A user shares vLLM benchmarks on a single Radeon AI Pro R9700 running Qwen 3.6 27B dense and 35B Mixture of Experts as INT4 W4A16 weights via a Radiance container image with tuned speculative decoding. The 35B Mixture of Experts sustains around 61 tokens per second decode at 4 thousand context, dropping to about 49 at 150 thousand. The 27B dense with speculative drafts hits roughly 60 tokens per second decode. Includes a tokenizer truncation fix that unblocks vision above 672 pixels.",
-      "zh": "有用户分享了在单张 Radeon AI Pro R9700 上用 vLLM 运行 Qwen 3.6 27B 稠密与 35B 混合专家模型的实测：以 INT4 W4A16 权重、Radiance 容器镜像和调优后的推测解码运行。35B 混合专家在 4K 上下文解码约每秒 61 个 token，150K 时降至约 49；27B 稠密约每秒 60 个 token。文中还给出了分词器截断的修复，可解除 672 像素以上视觉输入的限制。",
-      "title_en": "Qwen 3.6 27 billion and 35 billion on vLLM running on a single Radeon AI Pro R9700 with detailed configuration",
-      "title_zh": "在单张 Radeon AI Pro R9700 上用 vLLM 运行 Qwen 3.6 的 270 亿与 350 亿参数模型的详细配置"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vj7wey/enabling_pcie_p2p_for_consumer_nvidia_cards_will/": {
+      "en": "On a server with eight channel AMD EPYC and four 5060 Ti 16 gigabyte cards in PCI Express 4.0 8x slots, enabling peer to peer between the GPUs lifted vLLM prompt processing throughput by roughly 25 percent under tensor parallelism. Setup needs resizable BAR turned on in BIOS, patched Nvidia drivers from aikitoria's open GPU kernel modules fork, and three NCCL environment flags. Benchmark tables cover both multi token prediction enabled and disabled.",
+      "zh": "在八通道 AMD EPYC 加四张 PCI Express 4.0 8x 插槽 5060 Ti 16 GB 显卡的服务器上，开启 GPU 间点对点传输后，vLLM 张量并行下的预填吞吐提升约 25%。需在 BIOS 开启 Resizable BAR，安装 aikitoria 开源 GPU 内核模块分支的补丁驱动，并配置三项 NCCL 环境变量。附有开启与关闭多 token 预测的完整基准表。",
+      "title_en": "Enabling PCI Express peer to peer on consumer Nvidia GPUs delivers roughly 25 percent extra prompt processing throughput in vLLM",
+      "title_zh": "在消费级 Nvidia GPU 上开启 PCI Express 点对点传输 vLLM 预填吞吐提升约 25%"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vj1cin/building_a_zerodependency_c_inference_engine_for/": {
-      "en": "A developer shares a pure C99 CPU inference engine for BitNet 1.58 bit ternary models with no Python, CUDA, or external libraries, reaching 36.25 tokens per second on BitNet b1.58 2 billion parameters at 4 trillion tokens using four threads on an Intel Xeon. Custom AVX2 and AVX-512 kernels accumulate packed ternary weights directly with VNNI integer instructions, and a C11 atomic thread pool keeps sync overhead near zero. At batch size one the main ceiling is memory bandwidth, already about 95 percent utilised.",
-      "zh": "一位开发者分享了用纯 C99 从零构建的 CPU 推理引擎，可原生运行 BitNet 1.58 位三值模型，无需 Python、CUDA 或外部库，在 Intel Xeon 上四线程运行 BitNet b1.58 20 亿参数 4 万亿 token 模型达到每秒 36.25 个 token。自定义 AVX2 与 AVX-512 内核借助 VNNI 整数指令直接累加打包的三值权重，C11 原子线程池将同步开销降至近零；批大小为 1 时瓶颈在内存带宽，已用满约 95%。",
-      "title_en": "Building a zero dependency C inference engine for BitNet 1.58 bit models with lessons from hitting 36 tokens per second on a Xeon CPU",
-      "title_zh": "从零构建 BitNet 1.58 位模型的零依赖 C 语言推理引擎：在 Xeon CPU 上达到每秒 36 个 token 的经验"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjwwrs/open_model_google_weather_next_2/": {
+      "en": "Google DeepMind's WeatherNext model, described in a Nature paper this week, predicts tropical cyclones with unprecedented accuracy and gives forecasters roughly a day more lead time than existing systems, so its three day forecasts match older two day ones. The poster highlights that Google has released the model on GitHub and that inference now fits on a single H100 rather than requiring the supercomputer traditionally needed for numerical weather prediction.",
+      "zh": "Google DeepMind 的 WeatherNext 模型在本周《自然》杂志的论文中被描述为能以前所未有的准确度预测热带气旋，比现有系统多约一天预警时间，其三日预报与旧模型两日预报同等精度。发帖者指出 Google 已在 GitHub 开源该模型，推理可在单张 H100 上完成，而不再必须动用传统数值天气预报所依赖的超算。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vipk8z/model_support_longcatflash_need_testing_by_ngxson/": {
-      "en": "A llama.cpp pull request adds support for the Longcat-Flash model and is ready for wider community testing. The author verified it only with a small 8 billion parameter sub-model extracted from the original and is asking others to try the full-size variant. GGUF conversions are available on Hugging Face under the ggml-org organisation, with contributors pointing to newer builds in the pull request comments.",
-      "zh": "llama.cpp 的一项拉取请求已为 Longcat-Flash 模型添加支持，现邀请社区更广泛地测试。作者仅用从原模型抽取的 80 亿参数小型子模型完成过验证，希望有人试验完整版本。转换后的 GGUF 文件可在 Hugging Face 的 ggml-org 组织下获取，最新版本请以拉取请求底部评论为准。",
-      "title_en": "Llama.cpp pull request adds Longcat Flash model support and asks the community to test the full sized version",
-      "title_zh": "llama.cpp 拉取请求新增对 Longcat Flash 模型的支持，邀请社区测试完整版本"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjmay5/amd_llamacpp_reducing_mtp_buffer_overhead_gave_me/": {
+      "en": "A llama.cpp patch shrinks the memory the multi token prediction path reserves during auto fit, freeing VRAM for context. On a single 16 gigabyte GPU running Qwen 27 billion in IQ4 XS, ROCm available context rose from about 19 thousand to 76 thousand tokens. On a 16 gigabyte plus 12 gigabyte pair with Q6 K L, ROCm reached 149 thousand and Vulkan 151 thousand. Tested against commit 7bd8282 with ROCm 7.14.",
+      "zh": "针对 llama.cpp 的补丁削减了多 token 预测路径在自适应阶段占用的显存，把节省空间腾给上下文。单卡 16 GB 运行 Qwen 27B IQ4 XS 时，ROCm 可用上下文从约 1.9 万涨到 7.6 万 token；16 GB 加 12 GB 双卡 Q6 K L 组合下，ROCm 达 14.9 万、Vulkan 达 15.1 万。测试基于提交 7bd8282 与 ROCm 7.14。",
+      "title_en": "AMD llama.cpp patch cuts multi token prediction buffer overhead more than doubling context on Qwen 27 billion",
+      "title_zh": "AMD llama.cpp 补丁削减多 token 预测缓冲区开销 Qwen 27B 可用上下文翻倍以上"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vixl0f/tesla_v100_qwen36_27b_performance/": {
-      "en": "A user asks other Tesla V100 owners to share configurations and benchmarks, while posting their own setup running Qwen 3.6 27B in Q4_K_M with a Q8_0 multi-token prediction draft model on a 32 gigabyte V100 PCIe card. Their llama.cpp preset uses 128 thousand context, full GPU offload, flash attention, multi-token prediction speculative decoding with a maximum draft length of one, and a Pi coding agent workflow.",
-      "zh": "有用户请其他 Tesla V100 用户分享配置与性能，并展示了自己的方案：在 32 GB Tesla V100 PCIe 上用 llama.cpp 运行 Qwen 3.6 27B 的 Q4_K_M 主模型与 Q8_0 的多 token 预测草稿模型，128K 上下文、全部层送入 GPU、启用 Flash Attention 与多 token 预测推测解码，草稿最长为 1，配合 Pi 编码助手工作流。",
-      "title_en": "Tesla V100 running Qwen 3.6 27 billion parameter model with configuration and performance details",
-      "title_zh": "在 Tesla V100 上运行 Qwen 3.6 270 亿参数模型的配置与性能"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjttcc/two_flags_took_the_official_ling30flash_int4_from/": {
+      "en": "An inclusionAI engineer relays a recipe from sudoingX for running the official four bit integer Ling 3.0 flash on one DGX Spark. Dropping enforce eager so cuda graphs execute, and enabling the hybrid v3 multi token prediction speculative draft already inside the checkpoint, lifts throughput from 20.8 to 38.7 tokens per second and beats the community GGUF at the full 256 thousand context. Stock vLLM silently produces wrong output; use the inclusionAI fork.",
+      "zh": "inclusionAI 工程师转发 sudoingX 的配方：单台 DGX Spark 上运行 Ling 3.0 flash 官方四位量化时，去掉 enforce eager 让 cuda graph 生效、开启检查点自带的 hybrid v3 多 token 预测投机采样，吞吐从每秒 20.8 提到 38.7 token，256K 上下文下超越社区 GGUF。原版 vLLM 缺 V3 支持会静默输出错误，需换 inclusionAI 分支。",
+      "title_en": "Two vLLM flags nearly double Ling 3.0 flash four bit throughput on a single DGX Spark to 38.7 tokens per second",
+      "title_zh": "两项 vLLM 参数让 Ling 3.0 flash 四位量化在单台 DGX Spark 上吞吐近乎翻倍至每秒 38.7 token"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vjk57h/best_embedding_reranking_model/": {
+      "en": "A user benchmarked local embedding and reranker pairs for a translation memory server covering fifteen western and eastern languages, all running under llama.cpp at Q8 quantisation. F2LLM V2 4B paired with Zerank 2 4B reached the top mean reciprocal rank of 0.919 and recall at twenty of 98.4 percent, beating Voyage's paid API. They call F2LLM fully open in license, data and code, and note Notion open sourced Zerank 2 sixteen days ago after acquiring Zeroentropy.",
+      "zh": "有用户在 llama.cpp Q8 量化下测试了 15 种东西方语言翻译记忆服务器的本地嵌入与重排组合。F2LLM V2 4B 搭配 Zerank 2 4B 取得最高 0.919 的平均倒数排名与 98.4% 的召回率@20，胜过 Voyage 付费 API。作者称 F2LLM 在许可证、数据、代码上完全开源，并提到 Notion 收购 Zeroentropy 后于 16 天前开源了 Zerank 2。",
+      "title_en": "Best local embedding and reranker combination for translation memory retrieval benchmarked across fifteen languages",
+      "title_zh": "面向翻译记忆检索的最佳本地嵌入与重排模型组合 覆盖 15 种语言的基准测试"
     }
   }
 }
