@@ -1,55 +1,43 @@
 {
-  "generated_at": "2026-08-08T21:07:00Z",
+  "generated_at": "2026-08-10T21:26:20Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vio0x6/deepseek_v4_flash_0731_appreciation_post/": {
-      "en": "A small business owner shares an enthusiastic report on running DeepSeek-V4-Flash 0731 on dual DGX Spark boxes, calling it a workhorse across long coding sessions in OpenCode, agent tasks in Hermes, email retrieval, Paperless NGX document processing, DOCX form filling, and OS administration. They just ordered another pair of Sparks because the time savings already justify it, and describe the model as a clear step up from prior MiniMax M2.7 and Qwen 3.6 27B setups.",
-      "zh": "一位小企业主分享在双 DGX Spark 上运行 DeepSeek-V4-Flash 0731 的体验，称其在 OpenCode 长时编码、Hermes 智能体、邮件检索、Paperless NGX 文档处理、DOCX 表格填写与系统运维中都堪当重任。他因节省大量时间又下单了第二对 Spark，认为体验明显优于此前的 MiniMax M2.7 与 Qwen 3.6 27B。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vkgsum/introducing_muse_glimmer_an_openweight_model/": {
+      "en": "Meta released Muse Glimmer, a 30 billion parameter dense open-weight model under Apache 2.0, built for local agent workflows. It is multimodal, supports over 100 languages, and offers controllable reasoning effort. Quantized to about 4 bits, weights fit under 20 gigabytes, leaving room in a 24 or 32 gigabyte envelope for the KV cache, perception encoder, and a DFlash speculative decoding drafter. Training targeted long-horizon tool use, function calling, and failure recovery. Weights are on Hugging Face.",
+      "zh": "Meta 发布 Muse Glimmer，一款以 Apache 2.0 许可开源的 300 亿参数稠密模型，专为本地代理工作流设计。支持多模态与超过 100 种语言，可控推理精度。量化到约 4 位后权重不到 20 GB，可在 24 或 32 GB 显存中同时容纳 KV 缓存、感知编码器与 DFlash 推测解码草稿模型。训练重点包括长期任务、函数调用与故障恢复。权重已上线 Hugging Face。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vikgrj/is_anyone_else_finding_deepseekv4flash_unreliable/": {
-      "en": "A user argues DeepSeek-V4-Flash-0731 has serious flaws for non-coding office work despite its high benchmark scores. Three concrete examples compare it to Gemma-4-31B on meeting-note extraction, correctly identifying which person a question refers to, and resisting a stray greeting that misdirects who a message addresses. In every case Gemma preserves nuance and speaker context while DeepSeek loses relevant threads, making DeepSeek unreliable for summarising or writing letters even though it excels at coding, research, and agentic tasks.",
-      "zh": "有用户指出 DeepSeek-V4-Flash-0731 在非编码办公任务上问题严重：与 Gemma-4-31B 相比，它在会议纪要提炼、判断问题指向的说话人、以及不被开头短语误导对话对象等三个具体案例中都遗漏了关键语境。虽然它在编码、研究、智能体任务上出色，但用于总结文本或撰写信件时并不可靠。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vkm42m/muse_glimmer_actually_fits_on_a_single_rtx_3090/": {
+      "en": "On a single RTX 3090, Muse Glimmer 30B fits comfortably with full 256K context, multimodal projector, and DFlash speculative decoding at Q4 quantization, using 22 to 23 gigabytes of VRAM. Generation speed ranged from 64 to 124 tokens per second, with prompt processing around 1400 tokens per second. A two-needle test at 150K tokens passed on the first try. Qwen 3.6 27B and Gemma 4 31B cannot reach the same context on the same card.",
+      "zh": "在单张 RTX 3090 上，Muse Glimmer 30B 以 Q4 量化搭配 256K 上下文、多模态投影层和 DFlash 推测解码，仅占 22 至 23 GB 显存。生成速度每秒 64 到 124 个 token，提示处理约每秒 1400 个 token。15 万 token 双针检索测试首次通过。Qwen 3.6 27B 和 Gemma 4 31B 在同一显卡上无法达到相同上下文长度。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vinr66/qwen_35ba3b_moe_vs_27b_dense_in_local_coding/": {
-      "en": "A local benchmark on a Radeon AI Pro R9700 with llama.cpp compares Qwen 3.6 35 billion Mixture of Experts against 27 billion dense on coding-maintenance tasks. The Mixture of Experts variant ran about 3.9 times faster, roughly 116 versus 30 tokens per second, yet the coding quality gap was much smaller than expected. Both handled ordinary fixes and multi-file changes; the dense model only pulled ahead on implicit invariants, unusual edge cases, and consequences beyond the literal request.",
-      "zh": "有人在 Radeon AI Pro R9700 上用 llama.cpp 对比了 Qwen 3.6 的 350 亿参数混合专家模型与 270 亿参数稠密模型在本地编码维护任务的表现：混合专家版本速度约快 3.9 倍，每秒约 116 与 30 个 token，但编码质量差距远小于预期。两者都能应付常规修复与多文件改动，稠密模型仅在隐含约束、罕见边界情况与超出字面要求的后果上占优。",
-      "title_en": "Qwen 35 billion Mixture of Experts versus 27 billion dense in local coding tests: about four times faster with a much smaller quality gap than expected",
-      "title_zh": "Qwen 350 亿混合专家与 270 亿稠密模型的本地编码对比：速度约快四倍，质量差距远小于预期"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vkqwso/inclusionailing30tiny_8b_a13b_moe_hugging_face/": {
+      "en": "The Ling team open-weighted a compact Ling 3.0 flash: an 8 billion parameter Mixture of Experts model with roughly 1.3 billion active parameters, slotting between the 4 billion and 8 to 12 billion Qwen and Gemma models. The model card reports about 100 to 105 tokens per second on DGX Spark and 86 to 90 on an M4 Pro MacBook using floating point 8 quantization, with peak memory near 8.34 gigabytes at 8K context.",
+      "zh": "Ling 团队开源了紧凑版 Ling 3.0 flash：80 亿参数、约 13 亿激活的专家混合模型，性能介于 40 亿与 80 至 120 亿的 Qwen 和 Gemma 之间。模型卡显示以 FP8 精度在 DGX Spark 上约每秒 100 到 105 个 token，在 M4 Pro MacBook 上每秒 86 到 90 个 token，8K 上下文峰值内存约 8.34 GB。",
+      "title_en": "Ling team open weights a smaller Ling 3.0 tiny with 8 billion parameters and 1.3 billion active in a Mixture of Experts layout",
+      "title_zh": "Ling 团队开源更小的 Ling 3.0 tiny：80 亿参数、13 亿激活的专家混合模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vida0h/qwen_36_27b_flagssettings_in_llamacpp/": {
-      "en": "A user shares their llama.cpp server command for running Qwen 3.6 27B in Q6_K on an RTX 5090 at 262 thousand context, reporting around 80 to 100 tokens per second and roughly 40 at full context. They highlight modest batch and micro-batch sizes of 512 and 128, a high 16 thousand token reasoning budget, multi-token prediction speculative drafting, and quantised key-value cache, then ask what settings other people tweak differently and why.",
-      "zh": "有用户分享了在 RTX 5090 上以 Q6_K 运行 Qwen 3.6 27B 的 llama.cpp 服务命令，262K 上下文下每秒约 80 到 100 个 token，满上下文时约 40。他强调较小的批大小 512 与微批 128、较高的 1 万 6 千 token 推理预算、多 token 预测推测草稿以及量化的键值缓存，并询问他人对哪些参数做了不同调整以及原因。",
-      "title_en": "Qwen 3.6 27 billion parameter llama.cpp flags and settings shared for community feedback",
-      "title_zh": "分享 Qwen 3.6 270 亿参数模型在 llama.cpp 中的运行参数与设置"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vkaypz/omlabvlxseek1510b_hugging_face/": {
+      "en": "VLX-Seek 1.5 10B is a 10 billion parameter open vision language model from Om AI Lab targeting embodied perception on drones, robots, and surveillance cameras. It reformulates localization as region retrieval and reference, treating candidate regions as addressable tokens instead of decoding bounding box coordinates. Highlights include a stronger vision backbone, faster proposal generation with linear attention, and explicit rejection of absent targets via hard negative training. The family also plans 0.6 and 3 billion parameter sizes.",
+      "zh": "VLX-Seek 1.5 10B 是 Om AI Lab 推出的 100 亿参数开源视觉语言模型，面向无人机、机器人与监控相机等具身感知场景。它把定位重新表述为区域检索与引用，将候选区域视作可寻址标记，而非直接解码边界框坐标。亮点包括更强的视觉主干、线性注意力带来的更快候选生成，以及通过硬负样本训练明确拒绝不存在的目标。系列还将推出 6 亿与 30 亿参数版本。",
+      "title_en": "VLX-Seek 1.5 10B is a 10 billion parameter open vision language model for fine grained perception and visual grounding",
+      "title_zh": "VLX-Seek 1.5 10B：100 亿参数的开源视觉语言模型，专注于精细感知与视觉定位"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vilcil/i_got_tired_of_my_300gb_model_loads_taking_5min/": {
-      "en": "A contributor benchmarks their llama.cpp pull request 26291, which cuts remote procedure call load time for a 300 gigabyte model from about four minutes 54 seconds to one minute 38 seconds when the client uses twelve load threads. The real bottleneck was not network, disk, or PCIe generation but a single CPU thread doing all the work while others sat idle. Client-side is done; a server-side fix could push loads under a minute.",
-      "zh": "一位贡献者在 llama.cpp 的第 26291 号拉取请求中优化了远程调用加载：300 GB 模型的加载时间从约 4 分 54 秒降至 1 分 38 秒，客户端使用 12 个加载线程。真正的瓶颈不在网络、磁盘或 PCIe 版本，而是单线程 CPU 独自搬运，其他核心闲置。客户端已完成，服务端继续优化后加载有望进入 1 分钟以内。",
-      "title_en": "Llama.cpp pull request 26291 cuts 300 gigabyte model load time over remote procedure call from about five minutes to one and a half minutes on modest hardware",
-      "title_zh": "llama.cpp 第 26291 号拉取请求将 300 GB 模型在远程调用下的加载时间从约 5 分钟缩短到 1 分半"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vkicyd/1m_context_with_17_gb_model_in_24_gb_vram_for_the/": {
+      "en": "A user reported running about 1 million tokens of context on a single RTX 3090 with a Qwen 3.5 35B A3B based model that occupies 17 gigabytes of VRAM. The setup used KVarN, Huawei's variance normalized 4 bit key value cache quantization, in a BeeLlama.cpp fork. Seven needles placed across the context were retrieved successfully, while conventional 4 bit key value quants reportedly failed to preserve the same reliability at this depth.",
+      "zh": "有用户报告在单张 RTX 3090 上以约 100 万 token 上下文运行一款基于 Qwen 3.5 35B A3B 的模型，模型本身占 17 GB 显存。该配置使用了华为的方差归一化 4 位键值缓存量化 KVarN，运行在 BeeLlama.cpp 分支中。分布在上下文各处的 7 个针都被成功检索到，而常规 4 位键值量化据称无法在同等长度上保持相同可靠性。",
+      "title_en": "Running 1 million token context in 24 gigabytes of VRAM with a 17 gigabyte model using Huawei KVarN cache quantization",
+      "title_zh": "在 24 GB 显存上用 17 GB 模型运行 100 万 token 上下文，采用华为 KVarN 缓存量化"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1viq0pq/qwen36_27b_35b_on_vllm_single_r9700_gfx1201/": {
-      "en": "A user shares vLLM benchmarks on a single Radeon AI Pro R9700 running Qwen 3.6 27B dense and 35B Mixture of Experts as INT4 W4A16 weights via a Radiance container image with tuned speculative decoding. The 35B Mixture of Experts sustains around 61 tokens per second decode at 4 thousand context, dropping to about 49 at 150 thousand. The 27B dense with speculative drafts hits roughly 60 tokens per second decode. Includes a tokenizer truncation fix that unblocks vision above 672 pixels.",
-      "zh": "有用户分享了在单张 Radeon AI Pro R9700 上用 vLLM 运行 Qwen 3.6 27B 稠密与 35B 混合专家模型的实测：以 INT4 W4A16 权重、Radiance 容器镜像和调优后的推测解码运行。35B 混合专家在 4K 上下文解码约每秒 61 个 token，150K 时降至约 49；27B 稠密约每秒 60 个 token。文中还给出了分词器截断的修复，可解除 672 像素以上视觉输入的限制。",
-      "title_en": "Qwen 3.6 27 billion and 35 billion on vLLM running on a single Radeon AI Pro R9700 with detailed configuration",
-      "title_zh": "在单张 Radeon AI Pro R9700 上用 vLLM 运行 Qwen 3.6 的 270 亿与 350 亿参数模型的详细配置"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vk3xpb/new_model_supraelegans500k/": {
+      "en": "SupraLabs released SupraElegans 500K, an experimental 500,000 parameter causal language model that swaps transformers for a sparse signed recurrent neural graph inspired by the C. elegans nervous system. Context lives in per-neuron membrane potentials updated token by token, with no attention, positional encoding, or key value cache. Benchmarks include HellaSwag at 26.5 percent, ARC-Easy at 21 percent, ARC-Challenge at 22 percent, and WinoGrande at 52 percent. The team frames it as architecture research, released under Apache 2.0.",
+      "zh": "SupraLabs 发布实验性 SupraElegans 500K：约 50 万参数因果语言模型，弃用 Transformer，改用受秀丽隐杆线虫神经系统启发的稀疏有向带符号循环神经图。上下文由每个神经元逐 token 更新的膜电位承载，没有注意力、位置编码或键值缓存。基准：HellaSwag 26.5%，ARC-Easy 21%，ARC-Challenge 22%，WinoGrande 52%。团队将其定位为架构研究，Apache 2.0 许可。",
+      "title_en": "SupraLabs releases SupraElegans 500K, an experimental 500,000 parameter non transformer language model inspired by the C. elegans nervous system",
+      "title_zh": "SupraLabs 发布实验性 SupraElegans 500K：受秀丽隐杆线虫神经系统启发的 50 万参数非 Transformer 语言模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vj1cin/building_a_zerodependency_c_inference_engine_for/": {
-      "en": "A developer shares a pure C99 CPU inference engine for BitNet 1.58 bit ternary models with no Python, CUDA, or external libraries, reaching 36.25 tokens per second on BitNet b1.58 2 billion parameters at 4 trillion tokens using four threads on an Intel Xeon. Custom AVX2 and AVX-512 kernels accumulate packed ternary weights directly with VNNI integer instructions, and a C11 atomic thread pool keeps sync overhead near zero. At batch size one the main ceiling is memory bandwidth, already about 95 percent utilised.",
-      "zh": "一位开发者分享了用纯 C99 从零构建的 CPU 推理引擎，可原生运行 BitNet 1.58 位三值模型，无需 Python、CUDA 或外部库，在 Intel Xeon 上四线程运行 BitNet b1.58 20 亿参数 4 万亿 token 模型达到每秒 36.25 个 token。自定义 AVX2 与 AVX-512 内核借助 VNNI 整数指令直接累加打包的三值权重，C11 原子线程池将同步开销降至近零；批大小为 1 时瓶颈在内存带宽，已用满约 95%。",
-      "title_en": "Building a zero dependency C inference engine for BitNet 1.58 bit models with lessons from hitting 36 tokens per second on a Xeon CPU",
-      "title_zh": "从零构建 BitNet 1.58 位模型的零依赖 C 语言推理引擎：在 Xeon CPU 上达到每秒 36 个 token 的经验"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vipk8z/model_support_longcatflash_need_testing_by_ngxson/": {
-      "en": "A llama.cpp pull request adds support for the Longcat-Flash model and is ready for wider community testing. The author verified it only with a small 8 billion parameter sub-model extracted from the original and is asking others to try the full-size variant. GGUF conversions are available on Hugging Face under the ggml-org organisation, with contributors pointing to newer builds in the pull request comments.",
-      "zh": "llama.cpp 的一项拉取请求已为 Longcat-Flash 模型添加支持，现邀请社区更广泛地测试。作者仅用从原模型抽取的 80 亿参数小型子模型完成过验证，希望有人试验完整版本。转换后的 GGUF 文件可在 Hugging Face 的 ggml-org 组织下获取，最新版本请以拉取请求底部评论为准。",
-      "title_en": "Llama.cpp pull request adds Longcat Flash model support and asks the community to test the full sized version",
-      "title_zh": "llama.cpp 拉取请求新增对 Longcat Flash 模型的支持，邀请社区测试完整版本"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vixl0f/tesla_v100_qwen36_27b_performance/": {
-      "en": "A user asks other Tesla V100 owners to share configurations and benchmarks, while posting their own setup running Qwen 3.6 27B in Q4_K_M with a Q8_0 multi-token prediction draft model on a 32 gigabyte V100 PCIe card. Their llama.cpp preset uses 128 thousand context, full GPU offload, flash attention, multi-token prediction speculative decoding with a maximum draft length of one, and a Pi coding agent workflow.",
-      "zh": "有用户请其他 Tesla V100 用户分享配置与性能，并展示了自己的方案：在 32 GB Tesla V100 PCIe 上用 llama.cpp 运行 Qwen 3.6 27B 的 Q4_K_M 主模型与 Q8_0 的多 token 预测草稿模型，128K 上下文、全部层送入 GPU、启用 Flash Attention 与多 token 预测推测解码，草稿最长为 1，配合 Pi 编码助手工作流。",
-      "title_en": "Tesla V100 running Qwen 3.6 27 billion parameter model with configuration and performance details",
-      "title_zh": "在 Tesla V100 上运行 Qwen 3.6 270 亿参数模型的配置与性能"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vksqju/i_compared_gguf_quants_of_qwen36_27b_to_nvfp4_awq/": {
+      "en": "A benchmark compared 16 quantizations of Qwen 3.6 27B against unquantized references by KL divergence of the next token distribution. Weight only GGUF recipes dominated the quality per gigabyte frontier, likely because they leave activations unquantized. Conventional Q4 GGUFs from Bartowski and Unsloth landed close together, and AWQ nearly tied NVIDIA's mixed NVFP4. GGUF Q5 emerged as the sweet spot. The author cautions that KL divergence rankings do not translate directly to real world performance.",
+      "zh": "一项基准对 Qwen 3.6 27B 的 16 种量化进行了对比，用 KL 散度衡量与未量化模型下一 token 分布的差异。仅量化权重的 GGUF 方案占据了质量与体积的前沿，很可能因为它们不量化激活。Bartowski 和 Unsloth 的常规 Q4 GGUF 结果接近，AWQ 与 NVIDIA 的混合 NVFP4 也几乎持平。GGUF Q5 被认为是甜点档。作者提醒 KL 散度排名不能完全对应真实使用体验。",
+      "title_en": "A KL divergence comparison of Qwen 3.6 27 billion parameter quantizations across GGUF, NVFP4, AWQ, AutoRound, and FP8 formats",
+      "title_zh": "以 KL 散度对 Qwen 3.6 27B 的多种量化格式进行对比，覆盖 GGUF、NVFP4、AWQ、AutoRound 和 FP8"
     }
   }
 }
