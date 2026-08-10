@@ -1,8 +1,98 @@
 {
-  "count": 15,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsn68brx03q2ron5vwp3pwta",
+      "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
+      "title_en": "Blog SGLang Adds Day-0 Support for Muse Glimmer， a Multimodal Model Built for Local Agentic Workflows We're excited to partner with Meta Superintelligence Labs to bring Day-0 support for Muse Glimmer to SGLang， with dedicated optimizations tailored for high-performance inference of agentic workflows o… Meta Superintelligence Labs and the SGLang Team",
+      "url": "https://www.lmsys.org/blog/2026-08-10-meta-muse-glimmer",
+      "permalink": "https://aihot.virxact.com/items/cmsn68brx03q2ron5vwp3pwta",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-10T11:51:38.747Z",
+      "discoveredAt": "2026-08-10T11:51:38.747Z",
+      "summary": "SGLang 与 Meta Superintelligence Labs 合作，为 30B 参数多模态模型 Muse Glimmer 提供 Day-0 支持，该模型拥有 128k+ token 上下文窗口。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsn68brx03q2ron5vwp3pwta"
+      }
+    },
+    {
+      "id": "cmsn2u3mt067ero8opidmwvz7",
+      "title": "Meta 发布开源模型 Muse Glimmer",
+      "title_en": "Introducing Muse Glimmer， an open-weight 30B-parameter model optimized for local， always-on agent wo…",
+      "url": "https://x.com/AIatMeta/status/2086757844544811485",
+      "permalink": "https://aihot.virxact.com/items/cmsn2u3mt067ero8opidmwvz7",
+      "source": "X：AI at Meta (@AIatMeta)",
+      "publishedAt": "2026-08-10T10:13:34.000Z",
+      "discoveredAt": "2026-08-10T10:16:39.953Z",
+      "summary": "推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。\n\n与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。\n\n秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。",
+      "category": "ai-models",
+      "score": 58,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsn2u3mt067ero8opidmwvz7"
+      }
+    },
+    {
+      "id": "cmsn3w3ln012wror1xk5nrmcw",
+      "title": "Scale AI 开源 Muse 系列模型",
+      "title_en": "1/ big announcement today： we will be releasing an open weight version of muse spark 1.2 soon. we a…",
+      "url": "https://x.com/alexandr_wang/status/2086756152034066792",
+      "permalink": "https://aihot.virxact.com/items/cmsn3w3ln012wror1xk5nrmcw",
+      "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+      "publishedAt": "2026-08-10T10:06:51.000Z",
+      "discoveredAt": "2026-08-10T10:46:12.574Z",
+      "summary": "1/ 今天有个重大消息：我们很快将发布 Muse Spark 1.2 的开源权重版本。\n\n同时，我们还将发布 Muse Glimmer--一个 30B 参数的智能体模型，采用 Apache 2.0 协议开源权重。Muse Glimmer 可在 24GB 显存上运行，且不损失智能体可靠性。🧵",
+      "category": "ai-models",
+      "score": 77,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsn3w3ln012wror1xk5nrmcw"
+      }
+    },
+    {
+      "id": "cmsnkpjin0c2nrohfczauf2t2",
+      "title": "OpenAI 推出 GPT-5.6-Cyber，面向授权漏洞研究的网络安全专用模型",
+      "title_en": "Expanding Daybreak as the Cyber Defense Window Narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "permalink": "https://aihot.virxact.com/items/cmsnkpjin0c2nrohfczauf2t2",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-08-10T10:00:00.000Z",
+      "discoveredAt": "2026-08-10T18:37:00.128Z",
+      "summary": "OpenAI 发布网络安全专用模型 GPT-5.6-Cyber，可通过 Daybreak Red 获取，用于授权的漏洞研究、漏洞验证和安全测试。该模型旨在应对网络防御窗口不断收窄的挑战，为安全研究人员提供专门工具。",
+      "category": "ai-models",
+      "score": 55,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsnkpjin0c2nrohfczauf2t2"
+      }
+    },
+    {
+      "id": "cmsmhbu4w0338ronxh92vej2u",
+      "title": "NVIDIA 发布 NemotronLabs VoiceChat 11B：开源全双工语音模型，支持约 450 毫秒轮换与实时工具调用",
+      "title_en": "NVIDIA Releases NemotronLabs VoiceChat 11B： An Open Full-Duplex Speech-to-Speech Model with ~450 ms Turn-Taking and Live Tool Calling",
+      "url": "https://www.marktechpost.com/2026/08/09/nvidia-releases-nemotronlabs-voicechat-11b-an-open-full-duplex-speech-to-speech-model-with-450-ms-turn-taking-and-live-tool-calling",
+      "permalink": "https://aihot.virxact.com/items/cmsmhbu4w0338ronxh92vej2u",
+      "source": "MarkTechPost（RSS）",
+      "publishedAt": "2026-08-09T23:58:34.000Z",
+      "discoveredAt": "2026-08-10T00:14:35.437Z",
+      "summary": "NVIDIA 发布开源端到端全双工语音对话模型 NemotronLabs VoiceChat 11B，在统一网络中完成流式语音理解与生成，实测轮换延迟 448 毫秒。该模型为首个支持对话中工具调用的开源全双工模型，通过独立输出通道及预置\"保持\"话术避免 API 执行期间冷场。权重与容器已公开，但仅限研究用途，需单张 80 GB 显存 GPU，目前无托管 API。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsmhbu4w0338ronxh92vej2u"
+      }
+    },
     {
       "id": "cmsixbbry1x0qronkhbbjukhr",
       "title": "蚂蚁百灵开源 Ling-3.0-flash：124B 总参数 MoE 模型，支持 API、单机与高性能三种部署",
@@ -199,78 +289,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsee1mhf0nn6ro2em6rt7tr4"
-      }
-    },
-    {
-      "id": "cmsdczxnl0138rotj8fjenm4b",
-      "title": "商汤发布 SenseNova U1.5-Lite-Preview 开源模型",
-      "title_en": "Introducing SenseNova U1.5-Lite-Preview. An early open-source previ…",
-      "url": "https://x.com/SenseTime_AI/status/2084288424236782073",
-      "permalink": "https://aihot.virxact.com/items/cmsdczxnl0138rotj8fjenm4b",
-      "source": "X：商汤 SenseTime (@SenseTime_AI)",
-      "publishedAt": "2026-08-03T14:40:59.000Z",
-      "discoveredAt": "2026-08-03T15:03:25.468Z",
-      "summary": "商汤推出 SenseNova U1.5-Lite-Preview，一个基于 NEO-Unify 架构的轻量级原生统一多模态模型，仅 8B-MoT 参数即可达到商业闭源模型的生成与编辑质量。",
-      "category": "ai-models",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdczxnl0138rotj8fjenm4b"
-      }
-    },
-    {
-      "id": "cmsdu3hyr015xrofzqxuosm3y",
-      "title": "MiniMax H3 正式开源：通用全模态生成系统支持 2K 视频与原生立体声",
-      "title_en": "开放通用智能，MiniMax H3 正式开源",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&mid=2247488931&idx=1&sn=0506e1d52edd5166becf35f5ebd83a07",
-      "permalink": "https://aihot.virxact.com/items/cmsdu3hyr015xrofzqxuosm3y",
-      "source": "公众号：MiniMax（稀宇科技）",
-      "publishedAt": "2026-08-03T02:44:09.000Z",
-      "discoveredAt": "2026-08-03T02:44:09.000Z",
-      "summary": "MiniMax 正式开源新一代通用视频模型 H3，可统一理解文本、图像、视频和音频，生成最高 2K 分辨率、最长 15 秒、带 32 kHz 原生立体声音频的视频。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdu3hyr015xrofzqxuosm3y"
-      }
-    },
-    {
-      "id": "cmscldw820c4kroeu7bw1kb27",
-      "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
-      "title_en": "Qwen3.8-Max： A New Bar for Coding and Cowork",
-      "url": "https://qwen.ai/blog?id=qwen3.8",
-      "permalink": "https://aihot.virxact.com/items/cmscldw820c4kroeu7bw1kb27",
-      "source": "Qwen：Blog Retrieval（API）",
-      "publishedAt": "2026-08-03T02:00:00.000Z",
-      "discoveredAt": "2026-08-03T02:10:26.416Z",
-      "summary": "Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。",
-      "category": "ai-models",
-      "score": 89,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmscldw820c4kroeu7bw1kb27"
-      }
-    },
-    {
-      "id": "cmse4jxrl0d1ero2edxdc05fq",
-      "title": "UEmbed：统一稀疏与稠密的多模态嵌入模型",
-      "title_en": "UEmbed： Unified Sparse and Dense Multimodal Embeddings",
-      "url": "https://arxiv.org/abs/2608.02583",
-      "permalink": "https://aihot.virxact.com/items/cmse4jxrl0d1ero2edxdc05fq",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-03T00:00:00.000Z",
-      "discoveredAt": "2026-08-04T03:54:49.548Z",
-      "summary": "UEmbed 是一种仅解码器的多模态嵌入模型，可在单次因果前向传播中同时生成稀疏词级和稠密表示，通过可学习特殊 token 与词汇表分区突破单 token 信息瓶颈。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmse4jxrl0d1ero2edxdc05fq"
       }
     }
   ]

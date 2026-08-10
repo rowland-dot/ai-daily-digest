@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-08-09T21:03:04.091Z",
+  "fetched_at": "2026-08-10T21:20:03.674Z",
   "repos": [
     {
-      "owner": "PrimeIntellect-ai",
-      "name": "prime-agent",
-      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
-      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 10816,
-      "forks": 1123,
-      "starsToday": 2319
-    },
-    {
-      "owner": "vitali87",
-      "name": "code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "owner": "semantica-agi",
+      "name": "semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 2926,
-      "forks": 518,
-      "starsToday": 59
+      "stars": 4001,
+      "forks": 477,
+      "starsToday": 967
     },
     {
       "owner": "msitarzewski",
@@ -30,31 +19,20 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 140560,
-      "forks": 22971,
-      "starsToday": 932
+      "stars": 141734,
+      "forks": 23128,
+      "starsToday": 1352
     },
     {
-      "owner": "pranshuparmar",
-      "name": "witr",
-      "url": "https://github.com/pranshuparmar/witr",
-      "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 20543,
-      "forks": 722,
-      "starsToday": 342
-    },
-    {
-      "owner": "google-deepmind",
-      "name": "weathernext",
-      "url": "https://github.com/google-deepmind/weathernext",
-      "description": "",
+      "owner": "NanmiCoder",
+      "name": "MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 7037,
-      "forks": 936,
-      "starsToday": 105
+      "stars": 60954,
+      "forks": 12002,
+      "starsToday": 215
     },
     {
       "owner": "addyosmani",
@@ -63,64 +41,108 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 85054,
-      "forks": 9153,
-      "starsToday": 670
+      "stars": 85696,
+      "forks": 9224,
+      "starsToday": 659
     },
     {
-      "owner": "ZhuLinsen",
-      "name": "daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 61121,
-      "forks": 51984,
-      "starsToday": 287
+      "owner": "paperclipai",
+      "name": "paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 76401,
+      "forks": 14199,
+      "starsToday": 167
     },
     {
-      "owner": "goauthentik",
-      "name": "authentik",
-      "url": "https://github.com/goauthentik/authentik",
-      "description": "The authentication glue you need.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 24226,
-      "forks": 1855,
-      "starsToday": 312
+      "owner": "PrimeIntellect-ai",
+      "name": "prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 12926,
+      "forks": 1312,
+      "starsToday": 2655
     },
     {
-      "owner": "google",
-      "name": "skills",
-      "url": "https://github.com/google/skills",
-      "description": "Agent Skills for Google products and technologies",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 17174,
-      "forks": 1390,
-      "starsToday": 532
+      "owner": "LadybirdBrowser",
+      "name": "ladybird",
+      "url": "https://github.com/LadybirdBrowser/ladybird",
+      "description": "Truly independent web browser",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 65228,
+      "forks": 3117,
+      "starsToday": 106
     },
     {
-      "owner": "Comfy-Org",
-      "name": "ComfyUI",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 125407,
-      "forks": 14829,
-      "starsToday": 333
+      "owner": "ruvnet",
+      "name": "RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 89322,
+      "forks": 11886,
+      "starsToday": 186
     },
     {
-      "owner": "harveyai",
-      "name": "harvey-labs",
-      "url": "https://github.com/harveyai/harvey-labs",
-      "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
+      "owner": "danielmiessler",
+      "name": "LifeOS",
+      "url": "https://github.com/danielmiessler/LifeOS",
+      "description": "⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 17845,
+      "forks": 2363,
+      "starsToday": 357
+    },
+    {
+      "owner": "firecrawl",
+      "name": "firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "The context API to search, scrape, and interact with the web at scale. 🔥",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 164977,
+      "forks": 9280,
+      "starsToday": 815
+    },
+    {
+      "owner": "TauricResearch",
+      "name": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 787,
-      "forks": 173,
-      "starsToday": 87
+      "stars": 97158,
+      "forks": 18731,
+      "starsToday": 234
+    },
+    {
+      "owner": "google-deepmind",
+      "name": "weathernext",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "description": "",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 7320,
+      "forks": 952,
+      "starsToday": 327
+    },
+    {
+      "owner": "vitali87",
+      "name": "code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 3479,
+      "forks": 542,
+      "starsToday": 682
     },
     {
       "owner": "pingdotgg",
@@ -129,9 +151,31 @@
       "description": "",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 17605,
-      "forks": 4000,
-      "starsToday": 208
+      "stars": 17988,
+      "forks": 4069,
+      "starsToday": 388
+    },
+    {
+      "owner": "Comfy-Org",
+      "name": "ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 126236,
+      "forks": 14894,
+      "starsToday": 921
+    },
+    {
+      "owner": "opa334",
+      "name": "Dopamine",
+      "url": "https://github.com/opa334/Dopamine",
+      "description": "Dopamine is a semi-untethered jailbreak for iOS 15 to 26(.0.1)",
+      "language": "C",
+      "languageColor": "#555555",
+      "stars": 5999,
+      "forks": 6192,
+      "starsToday": 95
     }
   ]
 }

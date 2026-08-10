@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-09T21:03:04.819Z",
+  "fetched_at": "2026-08-10T21:20:04.468Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting OpenClaw",
+      "link": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+      "updated": "2026-08-10T02:05:16+00:00",
+      "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already."
+    },
+    {
+      "title": "Quoting Claude Opus 5 system prompt",
+      "link": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "updated": "2026-08-09T23:31:39+00:00",
+      "summary": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos-access ). These events are after Claude's training-data cutoff, so Claude knows about them only from this notice. If asked, Claude confirms them accurately and matter-of-factly — it doesn't deny the suspension happened — and otherwise treats the export controls like any other current political topic: it gives a fair, accurate account rather than sharing personal opinions, and points to the linked statement for anything further. Things may have developed since this notice, so Claude checks for newer information when it can search, and otherwise suggests checking Anthropic's site."
+    },
+    {
+      "title": "GitHub Models is now retired",
+      "link": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+      "updated": "2026-08-09T22:48:05+00:00",
+      "summary": "GitHub Models is now retired"
+    },
+    {
+      "title": "SQLite compressed text-history prototypes",
+      "link": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/#atom-everything",
+      "updated": "2026-08-09T22:05:00+00:00",
+      "summary": "I'm perennially interested in options for storing revision histories in relational databases. While out on a dog walk I had a new idea: how about taking the full text of every prior version in a big JSON array of strings and then applying zlib or zstd compression to the whole thing? Surely that would compress really well due to all of the repeated strings."
+    },
     {
       "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
       "link": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
@@ -39,40 +63,16 @@
       "summary": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI"
     },
     {
+      "title": "datasette-auth-tokens 0.4a13",
+      "link": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/#atom-everything",
+      "updated": "2026-08-06T23:07:47+00:00",
+      "summary": "Upgraded for compatibility with `sqlite-utils 4."
+    },
+    {
       "title": "datasette 1.0a38",
       "link": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
       "updated": "2026-08-06T18:24:34+00:00",
       "summary": "This release fixes a SQL injection security issue that affects Datasette instances that serve a mixture of public and private tables in the same database, with access configured using the Datasette permissions system . Site administrators who serve private tables in this way are advised to disable the execute-sql permission ` on that database to prevent users from accessing private tables using raw SQL queries. The bug that has been fixed would have allowed users with access to any public table to execute SQL injection attacks despite that restriction, giving them read-only access to data in private tables in the same database. This fix is also available in Datasette 0.65.3 ."
-    },
-    {
-      "title": "datasette 0.65.3",
-      "link": "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything",
-      "updated": "2026-08-06T18:22:07+00:00",
-      "summary": "Back-ported the SQL Injection security fix from 1.0a38 ."
-    },
-    {
-      "title": "Simon Willison on Technical Blogging",
-      "link": "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/#atom-everything",
-      "updated": "2026-08-06T18:04:39+00:00",
-      "summary": "Simon Willison on Technical Blogging"
-    },
-    {
-      "title": "An AI model from Meta also hacked another company during testing",
-      "link": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
-      "updated": "2026-08-06T00:25:27+00:00",
-      "summary": "An AI model from Meta also hacked another company during testing"
-    },
-    {
-      "title": "Introducing Muse Code and Muse Spark 1.2",
-      "link": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
-      "updated": "2026-08-05T23:58:35+00:00",
-      "summary": "Introducing Muse Code and Muse Spark 1.2"
-    },
-    {
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "link": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
-      "updated": "2026-08-05T23:45:32+00:00",
-      "summary": "Third-party cyber evaluations involving OpenAI models"
     }
   ]
 }

@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmsnix1by08d3rohfftiex1xp",
+      "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
+      "title_en": "Learning more about Claude's mathematical capabilities",
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "permalink": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-08-10T17:46:50.781Z",
+      "discoveredAt": "2026-08-10T17:46:50.781Z",
+      "summary": "Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 在相关问题上取得突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%。",
+      "category": "paper",
+      "score": 57,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp"
+      }
+    },
+    {
       "id": "cmsk9yb97046zrow93i345be7",
       "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
       "title_en": "DeepMind's hurricane model bought forecasters an extra day",
@@ -217,24 +235,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsffpu8h1qz2ro2erlnfwib9"
-      }
-    },
-    {
-      "id": "cmse4jxrl0d1gro2ewjdbr7n3",
-      "title": "SwanTale：面向指令与零样本任务的统一多说话人语音与音频生成",
-      "title_en": "SwanTale： Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks",
-      "url": "https://arxiv.org/abs/2608.02023",
-      "permalink": "https://aihot.virxact.com/items/cmse4jxrl0d1gro2ewjdbr7n3",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-03T00:00:00.000Z",
-      "discoveredAt": "2026-08-04T03:54:49.548Z",
-      "summary": "SwanTale 提出统一的多说话人语音与音频生成模型，同时支持零样本与指令任务。研究配套推出 SwanData-Caption 数据方案，通过清洗、合成覆盖与多级标注解决数据稀缺问题，并引入 SwanVAE、Unified MoE、GRPO 后训练等技术。实验显示，SwanTale 在多项零样本与指令指标上领先，并在两项任务的表达力评分中均取得最佳成绩。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmse4jxrl0d1gro2ewjdbr7n3"
       }
     }
   ]
