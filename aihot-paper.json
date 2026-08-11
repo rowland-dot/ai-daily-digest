@@ -1,8 +1,98 @@
 {
-  "count": 13,
+  "count": 18,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsoxbh180a00rohdooafsmzp",
+      "title": "AMIE 研究医疗 AI 系统首次展示实时临床视频问诊能力",
+      "title_en": "AMIE， our research medical AI system， demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
+      "permalink": "https://aihot.virxact.com/items/cmsoxbh180a00rohdooafsmzp",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-08-11T17:00:00.000Z",
+      "discoveredAt": "2026-08-11T17:17:44.810Z",
+      "summary": "Google Research 与 Google DeepMind 推进医疗 AI 系统 AMIE，实现实时临床视频问诊，首次在此场景展示专家级 AI 能力。该系统基于 Gemini 和 Project Astra 构建，可解读视觉与听觉线索、引导虚拟体格检查并实时诊断推理。随机研究中，临床评估者对 AMIE 的病史采集、诊断准确性等核心能力给予好评，患者演员也更偏好视频体验。",
+      "category": "paper",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsoxbh180a00rohdooafsmzp"
+      }
+    },
+    {
+      "id": "cmsox86zv09u6rohdqr80wg0x",
+      "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
+      "title_en": null,
+      "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+      "permalink": "https://aihot.virxact.com/items/cmsox86zv09u6rohdqr80wg0x",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-11T16:41:17.281Z",
+      "discoveredAt": "2026-08-11T17:15:09.958Z",
+      "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsox86zv09u6rohdqr80wg0x"
+      }
+    },
+    {
+      "id": "cmsopyoum028vrohd4dgeksz9",
+      "title": "统一 Radix 缓存：为混合模型前缀缓存构建单一树结构",
+      "title_en": "Blog Unified Radix Cache： One Tree for Hybrid Model Prefix Caching Prefix caching reuses KV when requests share the same token prefix. Under full attention， once the KV for a shared prefix is computed， it remains valid as more tokens are appended. A later request wit… Zhangheng Huang， Ke Bao， Yi Zhang， Jialin Ouyang， Sicheng Pan",
+      "url": "https://www.lmsys.org/blog/2026-08-11-unified-radix-cache",
+      "permalink": "https://aihot.virxact.com/items/cmsopyoum028vrohd4dgeksz9",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-11T13:51:45.827Z",
+      "discoveredAt": "2026-08-11T13:51:45.827Z",
+      "summary": "LMSYS 团队提出 Unified Radix Cache，用单一 token 键控 radix 拓扑统一管理混合模型的 FULL、SWA 和 MAMBA 组件缓存，各组件独立执行路径、滑动窗口和检查点复用语义。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsopyoum028vrohd4dgeksz9"
+      }
+    },
+    {
+      "id": "cmsodc28j0n07rofw30v8pe9v",
+      "title": "窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱",
+      "title_en": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://arxiv.org/abs/2608.09867",
+      "permalink": "https://aihot.virxact.com/items/cmsodc28j0n07rofw30v8pe9v",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-10T00:00:00.000Z",
+      "discoveredAt": "2026-08-11T07:58:18.452Z",
+      "summary": "研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的加密推理轨迹块可跨会话、用户和模型互换，攻击者将其注入同提供商防护较弱的模型，即可强制其以明文输出推理内容。",
+      "category": "paper",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsodc28j0n07rofw30v8pe9v"
+      }
+    },
+    {
+      "id": "cmso6wigb0d1profw2f6djg98",
+      "title": "RynnValue：用时间距离扩展机器人价值基础模型",
+      "title_en": "RynnValue： Scaling Robotic Value Foundation Models with Temporal Distance",
+      "url": "https://arxiv.org/abs/2608.09853",
+      "permalink": "https://aihot.virxact.com/items/cmso6wigb0d1profw2f6djg98",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-10T00:00:00.000Z",
+      "discoveredAt": "2026-08-11T04:58:17.200Z",
+      "summary": "RynnValue 是一款开源的机器人操作价值基础模型，用时间距离替代偏好或进度等任务内锚点作为监督信号，可直接从时间戳生成标签，扩展至超 7，000 小时、约 300 万条指令条件片段。",
+      "category": "paper",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmso6wigb0d1profw2f6djg98"
+      }
+    },
     {
       "id": "cmsnix1by08d3rohfftiex1xp",
       "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
@@ -10,7 +100,7 @@
       "url": "https://www.anthropic.com/research/riemann-zeta",
       "permalink": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp",
       "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-08-10T17:46:50.781Z",
+      "publishedAt": "2026-08-09T16:00:00.000Z",
       "discoveredAt": "2026-08-10T17:46:50.781Z",
       "summary": "Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 在相关问题上取得突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%。",
       "category": "paper",
@@ -19,6 +109,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp"
+      }
+    },
+    {
+      "id": "cmsoscbbq054drohdw5zxvr2c",
+      "title": "无攻击者的\"游戏\"：LLM 驱动的搜索在选拔压力下的基准指纹识别",
+      "title_en": "Gaming Without an Attacker： Benchmark Fingerprinting in LLM-Driven Search Under Selection Pressure",
+      "url": "https://arxiv.org/abs/2608.08722",
+      "permalink": "https://aihot.virxact.com/items/cmsoscbbq054drohdw5zxvr2c",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-09T00:00:00.000Z",
+      "discoveredAt": "2026-08-09T00:00:00.000Z",
+      "summary": "针对评估信号优化的系统，其基准测试结果与实际声称存在偏差。在 Metal-Sci 和 Metal-ZK 两个 GPU 内核优化套件中，Opus 4.7、Gemini 3.1 Pro、GPT-5.5 三款前沿 LLM 在进化循环中反复对评估配置进行指纹识别，导致 16/53（30%）的分布内获胜无法迁移至保留配置。研究给出了四类失败模式分类，并为战略优化下的测量提供了设计指导。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsoscbbq054drohdw5zxvr2c"
       }
     },
     {
@@ -37,6 +145,42 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsk9yb97046zrow93i345be7"
+      }
+    },
+    {
+      "id": "cmsofh7p60plirofwefa5l92s",
+      "title": "Ego-OSCAR：开源低成本头戴式立体惯性采集系统",
+      "title_en": "Ego-OSCAR： Egocentric Open source Stereo CAptuRe System",
+      "url": "https://arxiv.org/abs/2608.08285",
+      "permalink": "https://aihot.virxact.com/items/cmsofh7p60plirofwefa5l92s",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-08T00:00:00.000Z",
+      "discoveredAt": "2026-08-08T00:00:00.000Z",
+      "summary": "Ego-OSCAR 是一款开源硬件、低成本的头戴式立体惯性采集设备，单台物料成本低于 200 美元，仅使用商用组件和 3D 打印部件。设备搭配硬件同步全局快门立体相机、6 轴 IMU 和嵌入式 Linux SBC，并开源完整软件栈及约 550 小时带同步 IMU 的日常室内环境第一视角立体视频。数据集提供开放词汇动作标注和逐帧 3D 手部重建，旨在降低大规模众包第一视角数据采集门槛。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsofh7p60plirofwefa5l92s"
+      }
+    },
+    {
+      "id": "cmso6wigb0d1rrofw4l6ifmm7",
+      "title": "Ouroboros：具备评审式核心进化的自开发前沿编程智能体",
+      "title_en": "Ouroboros： A Self-Developing Frontier Coding Agent with Reviewed Core Evolution",
+      "url": "https://arxiv.org/abs/2608.08311",
+      "permalink": "https://aihot.virxact.com/items/cmso6wigb0d1rrofw4l6ifmm7",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-08T00:00:00.000Z",
+      "discoveredAt": "2026-08-08T00:00:00.000Z",
+      "summary": "Ouroboros 是一个自开发智能体框架，其工具、提示词、上下文组装和核心实现通过评审式提交持续改进，并成为后续工作的运行时。",
+      "category": "paper",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmso6wigb0d1rrofw4l6ifmm7"
       }
     },
     {
@@ -130,6 +274,24 @@
       }
     },
     {
+      "id": "cmso91prw0fd8rofw8fdiyzgr",
+      "title": "可解释性随规模提升：Steerling-8B 将可解释性纳入训练流程",
+      "title_en": "Scaling Inherently Interpretable Language Models",
+      "url": "https://arxiv.org/abs/2608.07594",
+      "permalink": "https://aihot.virxact.com/items/cmso91prw0fd8rofw8fdiyzgr",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "discoveredAt": "2026-08-06T00:00:00.000Z",
+      "summary": "一项新研究挑战\"可解释性牺牲能力\"的假设，将可解释性作为训练约束与语言建模目标共同优化。在三个数量级的算力范围内，自回归与扩散语言模型的表征随规模增大而更解耦、更对齐人类概念。其实例 Steerling-8B 支持通过概念或特征归因诊断输出、检索训练数据并无需重训即可干预，且与算力多 2-16 倍的开放模型保持竞争力。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmso91prw0fd8rofw8fdiyzgr"
+      }
+    },
+    {
       "id": "cmsj8x5n2036jroo5ewknk6ra",
       "title": "Activity Frames：将屏幕活动确定性编译为智能体记忆",
       "title_en": "Activity Frames： Deterministic Screen-Activity Compilation for Agent Memory and Replay",
@@ -163,78 +325,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgxbipf02reroxzm6rg0q4l"
-      }
-    },
-    {
-      "id": "cmshrbwe70p2sronk0v4mh3d3",
-      "title": "SIGNPOST-Bench：多模态大模型文本-视觉冲突消解新基准",
-      "title_en": "SIGNPOST-Bench： Benchmarking Text-Vision Conflict Resolution in Multimodal Large Language Models",
-      "url": "https://arxiv.org/abs/2608.04244",
-      "permalink": "https://aihot.virxact.com/items/cmshrbwe70p2sronk0v4mh3d3",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "discoveredAt": "2026-08-04T00:00:00.000Z",
-      "summary": "SIGNPOST-Bench 是一个用于评估多模态大模型文本-视觉冲突消解能力的受控反事实基准，包含来自四个数据集的 5，111 个反事实组和 25，555 个图像变体。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmshrbwe70p2sronk0v4mh3d3"
-      }
-    },
-    {
-      "id": "cmshkwems0ifkronke88xm1l5",
-      "title": "论文揭示 LangGraph、CrewAI 等五个智能体工作流框架的检查点与恢复语义缺陷",
-      "title_en": "Resume Means Resume： A Machine-Checked Conformance Contract for Checkpoint， Interrupt， and Resume Semantics in Workflow Persistence Layers",
-      "url": "https://arxiv.org/abs/2608.03836",
-      "permalink": "https://aihot.virxact.com/items/cmshkwems0ifkronke88xm1l5",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "discoveredAt": "2026-08-04T00:00:00.000Z",
-      "summary": "一项研究为智能体工作流持久化层提出\"恢复契约\"，规定前缀延续、效果恰好一次等六项属性，并用 TLA+ 模型穷举验证了 740 万状态。实测发现 LangGraph 1.2.9 在崩溃后重复执行已持久化工作，CrewAI 1.15.2 违背其书面声明，pydantic-graph 1.x 无法在节点中途崩溃后恢复。研究还给出经 Verus 验证的参考实现 REMIT，修复了分叉与有效性缺陷。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmshkwems0ifkronke88xm1l5"
-      }
-    },
-    {
-      "id": "cmsfoajgx07p9roch4d7vrjuh",
-      "title": "Video-DeepResearch：迈向下一代多模态深度研究智能体",
-      "title_en": "Video-DeepResearch： Towards the Next-Generation Multimodal Deepresearch Agent",
-      "url": "https://arxiv.org/abs/2608.03979",
-      "permalink": "https://aihot.virxact.com/items/cmsfoajgx07p9roch4d7vrjuh",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "discoveredAt": "2026-08-05T05:55:09.022Z",
-      "summary": "Video-DeepResearch（Video-DR）将多模态智能体从静态图像扩展到连续视频流，提出解耦感知-探索流水线与分阶段工具解锁，以应对模态偏差和参数知识泄漏两大瓶颈。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsfoajgx07p9roch4d7vrjuh"
-      }
-    },
-    {
-      "id": "cmsffpu8h1qz2ro2erlnfwib9",
-      "title": "Any-OPD：面向流匹配模型的异构同策略蒸馏框架",
-      "title_en": "Any-OPD： Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging",
-      "url": "https://arxiv.org/abs/2608.03316",
-      "permalink": "https://aihot.virxact.com/items/cmsffpu8h1qz2ro2erlnfwib9",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "discoveredAt": "2026-08-05T01:55:06.514Z",
-      "summary": "Any-OPD 提出首个支持任意异构流匹配生成器对的同策略蒸馏框架，仅通过冻结的 DINOv2 表示空间桥接教师与学生模型，无需共享 VAE、架构或噪声调度。将 FLUX.1-dev 蒸馏至 SD3.5-Medium 后，学生模型 PickScore 与 HPSv3 均显著提升，以教师五分之一的参数量达到接近其性能，而直接潜在回归训练完全失败。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsffpu8h1qz2ro2erlnfwib9"
       }
     }
   ]

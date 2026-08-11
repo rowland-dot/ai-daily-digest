@@ -1,8 +1,80 @@
 {
-  "count": 38,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsp1lufu03a9rortoc0ci36q",
+      "title": "Runway Seedance 2.5 上线，支持50角色参考",
+      "title_en": "A full cast， a full track， one generation at a time. Seedance 2.5 is live on Runway， with 50 unique…",
+      "url": "https://x.com/runwayml/status/2087251184658657346",
+      "permalink": "https://aihot.virxact.com/items/cmsp1lufu03a9rortoc0ci36q",
+      "source": "X：Runway (@runwayml)",
+      "publishedAt": "2026-08-11T18:53:56.000Z",
+      "discoveredAt": "2026-08-11T19:17:47.577Z",
+      "summary": "完整阵容，完整曲目，一次生成一个。\n\nSeedance 2.5 已在 Runway 上线，支持 50 个独特角色参考，以及最长 30 秒、与音乐同步的片段。点击下方链接即可开始使用。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsp1lufu03a9rortoc0ci36q"
+      }
+    },
+    {
+      "id": "cmsp0j1ph027prortm21absbh",
+      "title": "ChatGPT 桌面端支持导入其他智能体工作数据",
+      "title_en": "You can now keep your work from other agents in sync with ChatGPT Work and Codex. Import projects， …",
+      "url": "https://x.com/OpenAIDevs/status/2087242829076791392",
+      "permalink": "https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-08-11T18:20:44.000Z",
+      "discoveredAt": "2026-08-11T18:47:37.597Z",
+      "summary": "你现在可以将其他智能体的工作内容与 ChatGPT Work 和 Codex 保持同步。\n\n可导入项目、聊天记录、技能和插件，查看导入历史，并可在设置中选择开启自动更新。\n\n现已在 ChatGPT 桌面应用中提供。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh"
+      }
+    },
+    {
+      "id": "cmsow47ob08oarohd6vhpqrwt",
+      "title": "Gemini 助力 Database Migration Service 加速 PostgreSQL 迁移",
+      "title_en": "Accelerate PostgreSQL migrations using Gemini in Database Migration Service",
+      "url": "https://cloud.google.com/blog/products/databases/accelerate-postgresql-migrations-with-gemini-in-dms",
+      "permalink": "https://aihot.virxact.com/items/cmsow47ob08oarohd6vhpqrwt",
+      "source": "Google Cloud：Databases（RSS）",
+      "publishedAt": "2026-08-11T16:00:00.000Z",
+      "discoveredAt": "2026-08-11T16:44:01.695Z",
+      "summary": "Google Cloud 在 Database Migration Service（DMS）中推出由 Gemini 驱动的 AI 辅助代码转换，可将 Oracle 或 SQL Server 的存储过程、触发器和自定义函数转换为 PostgreSQL PL/pgSQL 代码。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsow47ob08oarohd6vhpqrwt"
+      }
+    },
+    {
+      "id": "cmso95agg0ig3rofwaqvy9crw",
+      "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
+      "title_en": "ZCode全面升级，GLM最佳Harness，让复杂任务自主交付",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494052&idx=1&sn=ee3ab3d0f4550e9120927c53a27522c9",
+      "permalink": "https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw",
+      "source": "公众号：智谱（GLM）",
+      "publishedAt": "2026-08-11T05:52:25.000Z",
+      "discoveredAt": "2026-08-11T06:01:05.940Z",
+      "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw"
+      }
+    },
     {
       "id": "cmsnfpcwf05ecrohfuzbjwyar",
       "title": "Claude Code 自动模式默认开启原理",
@@ -523,168 +595,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsf7gr271ii5ro2eiu0hihb5"
-      }
-    },
-    {
-      "id": "cmsezylz31cadro2eoq1np3vh",
-      "title": "Soup v0.72.4：在4 GB显存笔记本GPU上微调8B模型",
-      "title_en": "Show HN： 在配备4 GB显存的笔记本电脑GPU上对8B模型进行微调",
-      "url": "https://github.com/MakazhanAlpamys/Soup",
-      "permalink": "https://aihot.virxact.com/items/cmsezylz31cadro2eoq1np3vh",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-04T18:17:29.648Z",
-      "discoveredAt": "2026-08-04T18:34:01.675Z",
-      "summary": "Soup 推出 v0.72.4，支持在配备 4 GB 显存的笔记本 GPU 上通过 QLoRA 微调 8B 模型，无需 SSH 或云服务。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsezylz31cadro2eoq1np3vh"
-      }
-    },
-    {
-      "id": "cmsew3l4y18qhro2edk0yaat8",
-      "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
-      "title_en": "A unified API for AI model routing",
-      "url": "https://developers.googleblog.com/a-unified-api-for-ai-model-routing",
-      "permalink": "https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-08-04T16:45:02.138Z",
-      "discoveredAt": "2026-08-04T16:45:02.138Z",
-      "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8"
-      }
-    },
-    {
-      "id": "cmsevo5m118dmro2e9d1ven6v",
-      "title": "Google Cloud 推出 Database Operations Agents，实现自主数据库管理",
-      "title_en": "Introducing Database Operations Agents： The future of autonomous database management",
-      "url": "https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents",
-      "permalink": "https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v",
-      "source": "Google Cloud：Databases（RSS）",
-      "publishedAt": "2026-08-04T16:00:00.000Z",
-      "discoveredAt": "2026-08-04T16:33:49.420Z",
-      "summary": "Google Cloud 在 Agentic Data Cloud 发布中推出两款 AI 数据库智能体：Database Onboarding Agent 负责 Day 0 的配置与部署，Database Observability Agent 负责 Day 1/2 的监控、故障排查与维护。",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v"
-      }
-    },
-    {
-      "id": "cmsesrlcn15j7ro2evd57my2c",
-      "title": "NVIDIA 开源 cuFile API，推动 GPU 直连存储",
-      "title_en": "As AI Increases Demands on Memory， Storage Steps Up",
-      "url": "https://blogs.nvidia.com/blog/ai-storage-fms",
-      "permalink": "https://aihot.virxact.com/items/cmsesrlcn15j7ro2evd57my2c",
-      "source": "NVIDIA Blog（RSS）",
-      "publishedAt": "2026-08-04T15:00:47.000Z",
-      "discoveredAt": "2026-08-04T15:12:36.927Z",
-      "summary": "NVIDIA 在 FMS 大会上宣布开源 cuFile API 及底层存储软件栈，让 GPU 可直接读写存储，访问延迟降至微秒级。其 Vera CPU 在两级压缩与加密流水线中吞吐量比 x86 CPU 最高提升 3.21 倍，并联合 40 多家厂商推出 Storage-Next 计划。",
-      "category": "ai-products",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsesrlcn15j7ro2evd57my2c"
-      }
-    },
-    {
-      "id": "cmsefnjpn0q20ro2el7g7lyjw",
-      "title": "Reflex 开源 XY：基于 Rust 的超快 Python 绘图库，可保持 1 亿点图表交互流畅",
-      "title_en": "Reflex Open Sources XY： A Rust-Backed Super-Fast Python Charting Library That Keeps 100 Million Point Charts Interactive",
-      "url": "https://www.marktechpost.com/2026/08/04/reflex-open-sources-xy-a-rust-backed-super-fast-python-charting-library-that-keeps-100-million-point-charts-interactive",
-      "permalink": "https://aihot.virxact.com/items/cmsefnjpn0q20ro2el7g7lyjw",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-08-04T08:57:47.000Z",
-      "discoveredAt": "2026-08-04T09:05:32.725Z",
-      "summary": "Reflex AI 发布 Apache-2.0 许可的 Python 交互式 2D 绘图库 XY，通过 Rust 原生核心、二进制缓冲传输和 WebGL2 渲染，在 1 万至 1 亿点范围内保持约 0.08 秒的渲染时间。",
-      "category": "ai-products",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsefnjpn0q20ro2el7g7lyjw"
-      }
-    },
-    {
-      "id": "cmsebb0mc0kn1ro2ejvmi5lg8",
-      "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
-      "title_en": "Show HN： 在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
-      "url": "https://github.com/leonickson1/Swiftlet",
-      "permalink": "https://aihot.virxact.com/items/cmsebb0mc0kn1ro2ejvmi5lg8",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-04T06:32:44.149Z",
-      "discoveredAt": "2026-08-04T07:03:49.514Z",
-      "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
-      "category": "ai-products",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsebb0mc0kn1ro2ejvmi5lg8"
-      }
-    },
-    {
-      "id": "cmse5tvia0ej6ro2er0ptp9v8",
-      "title": "面壁智能开源 ForgeStencil：一周自动优化 100+ 工业与科学软件，全程零人工介入",
-      "title_en": "面壁智能开源 ForgeStencil：一周优化 100+ 工业与科学软件，全程 0 人工介入，国产「智」造升级加速",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247498861&idx=1&sn=d2d16692dd7eb27f9d466803f25c2b78",
-      "permalink": "https://aihot.virxact.com/items/cmse5tvia0ej6ro2er0ptp9v8",
-      "source": "公众号：面壁智能（MiniCPM）",
-      "publishedAt": "2026-08-04T04:20:28.000Z",
-      "discoveredAt": "2026-08-04T04:30:32.082Z",
-      "summary": "面壁智能联合 OpenBMB 开源全球首个支持 Stencil 自动研究、自动部署的 AI 优化系统 ForgeStencil，由 Kernel Agent 与 App Agent 闭环协作，实现从算子优化到应用集成的全自动流程。",
-      "category": "ai-products",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmse5tvia0ej6ro2er0ptp9v8"
-      }
-    },
-    {
-      "id": "cmsevo9td18ehro2e4owyq95q",
-      "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
-      "title_en": "Ori Harness： The Best Way to Use OpenRouter with Any Harness",
-      "url": "https://openrouter.ai/blog/announcements/ori-harness",
-      "permalink": "https://aihot.virxact.com/items/cmsevo9td18ehro2e4owyq95q",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-08-04T00:00:00.000Z",
-      "discoveredAt": "2026-08-04T16:34:00.141Z",
-      "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsevo9td18ehro2e4owyq95q"
-      }
-    },
-    {
-      "id": "cmsdt5gom0130rojfwd72clkl",
-      "title": "GPT-Live实时音频新架构发布",
-      "title_en": "GPT-Live is a new architecture and stack for realtime audio：",
-      "url": "https://x.com/gdb/status/2084405421041963356",
-      "permalink": "https://aihot.virxact.com/items/cmsdt5gom0130rojfwd72clkl",
-      "source": "X：Greg Brockman (@gdb)",
-      "publishedAt": "2026-08-03T22:25:53.000Z",
-      "discoveredAt": "2026-08-03T22:35:38.041Z",
-      "summary": "GPT-Live 是一种用于实时音频的新架构和栈：\n\nGPT-Live 可以在说话的同时聆听。\n\n为了让这种体验在 ChatGPT 规模下显得自然，我们从客户端到模型重建了语音栈。\n\n这一新架构让音频持续流动，因此更深入的推理和工具使用不会打断对话。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsdt5gom0130rojfwd72clkl"
       }
     }
   ]

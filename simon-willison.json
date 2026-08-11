@@ -1,9 +1,15 @@
 {
-  "fetched_at": "2026-08-10T21:20:04.468Z",
+  "fetched_at": "2026-08-11T21:22:45.248Z",
   "source": "Simon Willison",
   "entries": [
     {
-      "title": "Quoting OpenClaw",
+      "title": "Introducing Muse Glimmer",
+      "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+      "updated": "2026-08-10T23:56:03+00:00",
+      "summary": "Introducing Muse Glimmer"
+    },
+    {
+      "title": "Quoting OpenClaw (running Opus 4.6)",
       "link": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
       "updated": "2026-08-10T02:05:16+00:00",
       "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already."
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/#atom-everything",
       "updated": "2026-08-06T23:07:47+00:00",
       "summary": "Upgraded for compatibility with `sqlite-utils 4."
-    },
-    {
-      "title": "datasette 1.0a38",
-      "link": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
-      "updated": "2026-08-06T18:24:34+00:00",
-      "summary": "This release fixes a SQL injection security issue that affects Datasette instances that serve a mixture of public and private tables in the same database, with access configured using the Datasette permissions system . Site administrators who serve private tables in this way are advised to disable the execute-sql permission ` on that database to prevent users from accessing private tables using raw SQL queries. The bug that has been fixed would have allowed users with access to any public table to execute SQL injection attacks despite that restriction, giving them read-only access to data in private tables in the same database. This fix is also available in Datasette 0.65.3 ."
     }
   ]
 }
