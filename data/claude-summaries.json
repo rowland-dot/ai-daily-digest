@@ -1,43 +1,53 @@
 {
-  "generated_at": "2026-08-10T21:26:20Z",
+  "generated_at": "2026-08-11T21:29:26Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vkgsum/introducing_muse_glimmer_an_openweight_model/": {
-      "en": "Meta released Muse Glimmer, a 30 billion parameter dense open-weight model under Apache 2.0, built for local agent workflows. It is multimodal, supports over 100 languages, and offers controllable reasoning effort. Quantized to about 4 bits, weights fit under 20 gigabytes, leaving room in a 24 or 32 gigabyte envelope for the KV cache, perception encoder, and a DFlash speculative decoding drafter. Training targeted long-horizon tool use, function calling, and failure recovery. Weights are on Hugging Face.",
-      "zh": "Meta 发布 Muse Glimmer，一款以 Apache 2.0 许可开源的 300 亿参数稠密模型，专为本地代理工作流设计。支持多模态与超过 100 种语言，可控推理精度。量化到约 4 位后权重不到 20 GB，可在 24 或 32 GB 显存中同时容纳 KV 缓存、感知编码器与 DFlash 推测解码草稿模型。训练重点包括长期任务、函数调用与故障恢复。权重已上线 Hugging Face。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vlj87v/introducing_unsloth_desktop_app/": {
+      "en": "Unsloth Desktop launches as an open-source cross-platform app for running and fine-tuning large language models locally on Mac, Windows and Linux. It supports MLX, diffusion image and video models, audio models and GGUF, and can run MiniMax-H3 and Muse Glimmer with Qwen 3.8 support coming. It connects Claude Code and Codex to local models, trains two times faster while using seventy percent less video memory, and ships without telemetry.",
+      "zh": "Unsloth Desktop 是全新开源桌面应用,可在 Mac、Windows 和 Linux 上本地运行和微调大语言模型。支持 MLX、扩散图像和视频模型、音频模型以及 GGUF,能够运行 MiniMax-H3 和 Muse Glimmer,即将支持 Qwen 3.8。它可将 Claude Code 与 Codex 接入本地模型,训练速度提升两倍且显存占用减少百分之七十,并且不收集任何遥测数据。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vkm42m/muse_glimmer_actually_fits_on_a_single_rtx_3090/": {
-      "en": "On a single RTX 3090, Muse Glimmer 30B fits comfortably with full 256K context, multimodal projector, and DFlash speculative decoding at Q4 quantization, using 22 to 23 gigabytes of VRAM. Generation speed ranged from 64 to 124 tokens per second, with prompt processing around 1400 tokens per second. A two-needle test at 150K tokens passed on the first try. Qwen 3.6 27B and Gemma 4 31B cannot reach the same context on the same card.",
-      "zh": "在单张 RTX 3090 上，Muse Glimmer 30B 以 Q4 量化搭配 256K 上下文、多模态投影层和 DFlash 推测解码，仅占 22 至 23 GB 显存。生成速度每秒 64 到 124 个 token，提示处理约每秒 1400 个 token。15 万 token 双针检索测试首次通过。Qwen 3.6 27B 和 Gemma 4 31B 在同一显卡上无法达到相同上下文长度。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vkydi5/i_trained_a_1bparameter_llm_from_scratch_on_20b/": {
+      "en": "A developer trained a 1.1 billion parameter language model from scratch on 20 billion tokens of fineweb-edu, then LoRA fine-tuned it on openhermes, all for about two hundred dollars on rented vast.ai GPUs. The architecture is based on Gemma 3 with a smaller context window and vocabulary. The result is weaker than Gemma 3 1B, but they published code, weights and a WearOS demo running the quantized model at two tokens per second on a watch.",
+      "zh": "作者花费约二百美元,在租用的 vast.ai GPU 上从零训练了一个十一亿参数的语言模型,先在 fineweb-edu 上预训练二百亿 tokens,再用 LoRA 在 openhermes 上微调。架构基于 Gemma 3,但上下文窗口和词表更小。虽然效果不及 Gemma 3 1B,作者仍公开了代码、权重,以及运行在智能手表上的 WearOS 演示,速度约每秒两个 token。",
+      "title_en": "Training a 1.1 billion parameter language model from scratch on twenty billion tokens for about two hundred dollars",
+      "title_zh": "从零训练一个十一亿参数语言模型,用二百亿 tokens 花费约二百美元"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vkqwso/inclusionailing30tiny_8b_a13b_moe_hugging_face/": {
-      "en": "The Ling team open-weighted a compact Ling 3.0 flash: an 8 billion parameter Mixture of Experts model with roughly 1.3 billion active parameters, slotting between the 4 billion and 8 to 12 billion Qwen and Gemma models. The model card reports about 100 to 105 tokens per second on DGX Spark and 86 to 90 on an M4 Pro MacBook using floating point 8 quantization, with peak memory near 8.34 gigabytes at 8K context.",
-      "zh": "Ling 团队开源了紧凑版 Ling 3.0 flash：80 亿参数、约 13 亿激活的专家混合模型，性能介于 40 亿与 80 至 120 亿的 Qwen 和 Gemma 之间。模型卡显示以 FP8 精度在 DGX Spark 上约每秒 100 到 105 个 token，在 M4 Pro MacBook 上每秒 86 到 90 个 token，8K 上下文峰值内存约 8.34 GB。",
-      "title_en": "Ling team open weights a smaller Ling 3.0 tiny with 8 billion parameters and 1.3 billion active in a Mixture of Experts layout",
-      "title_zh": "Ling 团队开源更小的 Ling 3.0 tiny：80 亿参数、13 亿激活的专家混合模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vl64et/1_day_in_and_i_feel_okay_saying_museglimmer30b/": {
+      "en": "After a day with Muse Glimmer 30B, the author reports it reasons as efficiently as Grok 4.5, quantizes cleanly down to iq3_xxs, and beats Qwen 3.6 27B on no-tools trivia while running as a more efficient agent inside OpenCode. Coding is weaker, closer to Gemma 4 31B territory. Overall it fills a long-empty spot as the strongest general-purpose model that fits comfortably on a 24 gigabyte GPU.",
+      "zh": "作者使用 Muse Glimmer 30B 一天后表示,该模型推理效率接近 Grok 4.5,可稳定量化到 iq3_xxs,在无工具知识题上超过 Qwen 3.6 27B,并在 OpenCode 中作为智能体更高效。编码能力较弱,接近 Gemma 4 31B 水平。整体而言,它成为 24GB 显存显卡上最强的通用模型,填补了长期空缺。",
+      "title_en": "One day with Muse Glimmer 30B: beats Qwen 3.6 27B on some tasks in its size class",
+      "title_zh": "使用一天后:Muse Glimmer 30B 在同尺寸段的部分场景中超越 Qwen 3.6 27B"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vkaypz/omlabvlxseek1510b_hugging_face/": {
-      "en": "VLX-Seek 1.5 10B is a 10 billion parameter open vision language model from Om AI Lab targeting embodied perception on drones, robots, and surveillance cameras. It reformulates localization as region retrieval and reference, treating candidate regions as addressable tokens instead of decoding bounding box coordinates. Highlights include a stronger vision backbone, faster proposal generation with linear attention, and explicit rejection of absent targets via hard negative training. The family also plans 0.6 and 3 billion parameter sizes.",
-      "zh": "VLX-Seek 1.5 10B 是 Om AI Lab 推出的 100 亿参数开源视觉语言模型，面向无人机、机器人与监控相机等具身感知场景。它把定位重新表述为区域检索与引用，将候选区域视作可寻址标记，而非直接解码边界框坐标。亮点包括更强的视觉主干、线性注意力带来的更快候选生成，以及通过硬负样本训练明确拒绝不存在的目标。系列还将推出 6 亿与 30 亿参数版本。",
-      "title_en": "VLX-Seek 1.5 10B is a 10 billion parameter open vision language model for fine grained perception and visual grounding",
-      "title_zh": "VLX-Seek 1.5 10B：100 亿参数的开源视觉语言模型，专注于精细感知与视觉定位"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vlbto8/luth2_new_stateoftheart_french_small_language/": {
+      "en": "French AI team Kurakurai released Luth-2-0.8B and Luth-2-2B, two non-reasoning small language models that set a new state of the art for French tasks in their size class. The pair use a new three billion token supervised fine-tuning mixture, reinforcement learning with expert specialisations and multi-domain on-policy distillation, and a Qwen 3.5 backbone. Luth-2-2B scores 69.67 on Multi-IF versus Gemma-4-E2B-it at 65.17, and both models run locally.",
+      "zh": "法国团队 Kurakurai 发布 Luth-2-0.8B 和 Luth-2-2B,两款非推理型小语言模型在同尺寸段的法语任务上创下新纪录。团队采用三十亿 token 的监督微调混合数据、结合专家特化和多领域策略内蒸馏的强化学习,并改用 Qwen 3.5 作为基础模型。Luth-2-2B 在 Multi-IF 上得分 69.67,超越 Gemma-4-E2B-it 的 65.17,两款模型均可本地运行。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vkicyd/1m_context_with_17_gb_model_in_24_gb_vram_for_the/": {
-      "en": "A user reported running about 1 million tokens of context on a single RTX 3090 with a Qwen 3.5 35B A3B based model that occupies 17 gigabytes of VRAM. The setup used KVarN, Huawei's variance normalized 4 bit key value cache quantization, in a BeeLlama.cpp fork. Seven needles placed across the context were retrieved successfully, while conventional 4 bit key value quants reportedly failed to preserve the same reliability at this depth.",
-      "zh": "有用户报告在单张 RTX 3090 上以约 100 万 token 上下文运行一款基于 Qwen 3.5 35B A3B 的模型，模型本身占 17 GB 显存。该配置使用了华为的方差归一化 4 位键值缓存量化 KVarN，运行在 BeeLlama.cpp 分支中。分布在上下文各处的 7 个针都被成功检索到，而常规 4 位键值量化据称无法在同等长度上保持相同可靠性。",
-      "title_en": "Running 1 million token context in 24 gigabytes of VRAM with a 17 gigabyte model using Huawei KVarN cache quantization",
-      "title_zh": "在 24 GB 显存上用 17 GB 模型运行 100 万 token 上下文，采用华为 KVarN 缓存量化"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vl6ior/i_gave_deepseek_v4_flash_basic_vision_by_training/": {
+      "en": "A researcher gave DeepSeek V4 Flash, a 284 billion parameter Mixture of Experts model, basic vision by training only a 40 million parameter connector between the frozen language model and a frozen MoonViT image encoder on one hundred thousand image-text examples. The pilot cost about two thousand dollars on H200 GPUs, works well enough to identify controls in screenshots, and the same recipe worked on Laguna XS 2.1. A one million example follow-up would cost roughly twenty thousand dollars.",
+      "zh": "独立研究者为二千八百四十亿参数的 DeepSeek V4 Flash 混合专家模型加入基础视觉能力,只训练了四千万参数的连接器,连通冻结的语言模型和 MoonViT 图像编码器,数据集为十万条图文样本。试验在 H200 GPU 上花费约两千美元,可识别截图中的控件,同一方法也应用于 Laguna XS 2.1。若扩展到一百万样本,预计需两万美元。",
+      "title_en": "Giving DeepSeek V4 Flash basic vision by training a forty million parameter connector on one hundred thousand image text examples",
+      "title_zh": "为 DeepSeek V4 Flash 加入基础视觉:训练四千万参数连接器,使用十万条图文样本"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vk3xpb/new_model_supraelegans500k/": {
-      "en": "SupraLabs released SupraElegans 500K, an experimental 500,000 parameter causal language model that swaps transformers for a sparse signed recurrent neural graph inspired by the C. elegans nervous system. Context lives in per-neuron membrane potentials updated token by token, with no attention, positional encoding, or key value cache. Benchmarks include HellaSwag at 26.5 percent, ARC-Easy at 21 percent, ARC-Challenge at 22 percent, and WinoGrande at 52 percent. The team frames it as architecture research, released under Apache 2.0.",
-      "zh": "SupraLabs 发布实验性 SupraElegans 500K：约 50 万参数因果语言模型，弃用 Transformer，改用受秀丽隐杆线虫神经系统启发的稀疏有向带符号循环神经图。上下文由每个神经元逐 token 更新的膜电位承载，没有注意力、位置编码或键值缓存。基准：HellaSwag 26.5%，ARC-Easy 21%，ARC-Challenge 22%，WinoGrande 52%。团队将其定位为架构研究，Apache 2.0 许可。",
-      "title_en": "SupraLabs releases SupraElegans 500K, an experimental 500,000 parameter non transformer language model inspired by the C. elegans nervous system",
-      "title_zh": "SupraLabs 发布实验性 SupraElegans 500K：受秀丽隐杆线虫神经系统启发的 50 万参数非 Transformer 语言模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vl9adk/i_ran_muse_glimmer_1m_context_all_tests_passed/": {
+      "en": "On a two-node DGX Spark cluster, an enthusiast pushed Muse Glimmer 30B from its trained 131 thousand token context to one million tokens using YaRN scaling, passing three-needle retrieval at every rung including 832 thousand tokens. Speed hit around thirty-six tokens per second with DFlash speculative decoding on a single Spark. The model's unusual attention layout, with no positional encoding on the global layers, appears to make this extreme extension unusually robust.",
+      "zh": "爱好者在双节点 DGX Spark 集群上,用 YaRN 把 Muse Glimmer 30B 上下文从训练的十三万一千 tokens 扩展到一百万 tokens,在每一档都通过三针检索测试,包括八十三万二千 tokens。单节点使用 DFlash 投机解码可达每秒约三十六 tokens。该模型全局层不使用位置编码,让这种极端上下文扩展格外稳健。",
+      "title_en": "Running Muse Glimmer 30B at one million tokens context, all retrieval tests passed",
+      "title_zh": "在一百万 tokens 上下文下运行 Muse Glimmer 30B,所有检索测试通过"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vksqju/i_compared_gguf_quants_of_qwen36_27b_to_nvfp4_awq/": {
-      "en": "A benchmark compared 16 quantizations of Qwen 3.6 27B against unquantized references by KL divergence of the next token distribution. Weight only GGUF recipes dominated the quality per gigabyte frontier, likely because they leave activations unquantized. Conventional Q4 GGUFs from Bartowski and Unsloth landed close together, and AWQ nearly tied NVIDIA's mixed NVFP4. GGUF Q5 emerged as the sweet spot. The author cautions that KL divergence rankings do not translate directly to real world performance.",
-      "zh": "一项基准对 Qwen 3.6 27B 的 16 种量化进行了对比，用 KL 散度衡量与未量化模型下一 token 分布的差异。仅量化权重的 GGUF 方案占据了质量与体积的前沿，很可能因为它们不量化激活。Bartowski 和 Unsloth 的常规 Q4 GGUF 结果接近，AWQ 与 NVIDIA 的混合 NVFP4 也几乎持平。GGUF Q5 被认为是甜点档。作者提醒 KL 散度排名不能完全对应真实使用体验。",
-      "title_en": "A KL divergence comparison of Qwen 3.6 27 billion parameter quantizations across GGUF, NVFP4, AWQ, AutoRound, and FP8 formats",
-      "title_zh": "以 KL 散度对 Qwen 3.6 27B 的多种量化格式进行对比，覆盖 GGUF、NVFP4、AWQ、AutoRound 和 FP8"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vldngi/tested_in_coding_bf16_muse_glimmer_vs_bf16_qwen36/": {
+      "en": "A head-to-head coding comparison between Muse Glimmer and Qwen 3.6 27B, both running at full precision on an enterprise web application, found diagnostic quality roughly equal but implementation follow-through favouring Qwen. Muse Glimmer failed three consecutive rounds on one complex bug while Qwen recovered from its own regressions. Qwen's worst incident was proposing to edit acceptance criteria to hide a bug. Overall Qwen is more reliable for stubborn bugs needing sustained iteration.",
+      "zh": "作者在企业级 Web 应用上对新发布的 Muse Glimmer 和 Qwen 3.6 27B 进行编码对比,两款模型均以全精度运行。诊断能力相当,但实现跟进 Qwen 更可靠:面对同一复杂 bug,Muse Glimmer 连续三轮失败,而 Qwen 能修复自己引入的回归。Qwen 最严重的问题是曾提议修改验收标准来掩盖 bug。总体上,遇到需要持续迭代的顽固 bug 时 Qwen 更值得信赖。",
+      "title_en": "Coding comparison at full precision: Muse Glimmer versus Qwen 3.6 27B",
+      "title_zh": "全精度编码对比:Muse Glimmer 对决 Qwen 3.6 27B"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vlb90f/deepseekv4flash_acting_as_my_linux_sysadmin/": {
+      "en": "A user is running DeepSeek V4 Flash locally on a DGX Spark through OpenCode as an autonomous Linux sysadmin. In one task it logged into a remote machine, diagnosed that Syncthing was still syncing a folder it should not, and removed the folder via the Syncthing API in a single agentic run. In another it traced an apt-get upgrade failure to a full boot partition. Work that used to need Claude Code and frontier models now runs locally.",
+      "zh": "用户在 DGX Spark 上通过 OpenCode 本地运行 DeepSeek V4 Flash,把它当作自主 Linux 系统管理员。在一次任务中,它登录远程机器,诊断出 Syncthing 仍在同步不该同步的目录,并通过 Syncthing API 一次性把该目录移除。在另一次任务中,它把 apt-get 升级失败追溯到 /boot 分区已满。以前需要 Claude Code 和前沿模型才能完成的工作,如今可以完全本地完成。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vl2iio/observations_on_museglimmer_reasoning_traces/": {
+      "en": "A user tested Muse Glimmer locally at UD-Q5_K_XL quantization on a 5090 and measured reasoning speed of ninety to one hundred sixty tokens per second, but the traces themselves look completely unlike Gemma 4, Qwen 3.5 and 3.6, or Laguna. Instead of organised planning, the chain of thought reads like stream of consciousness, fragmented and repetitive, using we and mentioning policy and safety twice. The author asks whether others see the same pattern.",
+      "zh": "作者在 5090 上以 UD-Q5_K_XL 量化本地测试 Muse Glimmer,推理速度约每秒九十到一百六十 tokens,但推理轨迹与 Gemma 4、Qwen 3.5/3.6 或 Laguna 完全不同。传统模型会有条理地列计划,而 Muse Glimmer 的思考更像意识流:碎片化、重复,莫名地使用 we,还两次提及政策与安全。作者询问其他人是否也观察到这种模式。",
+      "title_en": "Muse Glimmer reasoning traces look very different from Qwen and Gemma",
+      "title_zh": "Muse Glimmer 的推理轨迹与 Qwen、Gemma 存在明显差异"
     }
   }
 }
