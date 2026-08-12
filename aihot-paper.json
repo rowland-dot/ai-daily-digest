@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmsqe6mat01bsroli3hw71nz7",
+      "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
+      "title_en": "Empty shelves or lost keys？ Recall is the bottleneck for parametric factuality",
+      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality",
+      "permalink": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-08-12T17:57:36.369Z",
+      "discoveredAt": "2026-08-12T17:57:36.369Z",
+      "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于\"丢钥匙\"而非\"空货架\"。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2，150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。",
+      "category": "paper",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7"
+      }
+    },
+    {
       "id": "cmsoxbh180a00rohdooafsmzp",
       "title": "AMIE 研究医疗 AI 系统首次展示实时临床视频问诊能力",
       "title_en": "AMIE， our research medical AI system， demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
@@ -307,24 +325,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsj8x5n2036jroo5ewknk6ra"
-      }
-    },
-    {
-      "id": "cmsgxbipf02reroxzm6rg0q4l",
-      "title": "个性化幻觉：LLM 如何编造用户画像，以及为何自我监控会误导",
-      "title_en": "The Personalization Mirage： How LLMs Fabricate User Profiles， and Why Self-Monitoring Misleads",
-      "url": "https://arxiv.org/abs/2608.04570",
-      "permalink": "https://aihot.virxact.com/items/cmsgxbipf02reroxzm6rg0q4l",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "discoveredAt": "2026-08-06T02:55:37.726Z",
-      "summary": "一项新研究揭示，个性化大语言模型普遍存在过度推断（OI）现象，即编造超出证据支持的用户属性。在 MirageBench 基准测试中，12 个模型均有 35%-49% 的推断被判定为虚构（均值 41.6%）。更关键的是，模型自我评估的 OI 与外部评测结果呈负相关（rho = -0.60），表明自我报告的可信度是误导性信号，外部验证才是更可靠的个性化基础。",
-      "category": "paper",
-      "score": 80,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsgxbipf02reroxzm6rg0q4l"
       }
     }
   ]

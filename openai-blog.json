@@ -1,12 +1,24 @@
 {
-  "fetched_at": "2026-08-11T21:22:44.743Z",
+  "fetched_at": "2026-08-12T21:21:04.052Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "pubDate": "Wed, 12 Aug 2026 06:00:00 GMT",
+      "description": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption."
+    },
     {
       "title": "Testing ads in ChatGPT",
       "link": "https://openai.com/index/testing-ads-in-chatgpt",
       "pubDate": "Tue, 11 Aug 2026 10:00:00 GMT",
       "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
+    },
+    {
+      "title": "Daybreak models are now available on AWS",
+      "link": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "pubDate": "Tue, 11 Aug 2026 10:00:00 GMT",
+      "description": "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows."
     },
     {
       "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
@@ -27,16 +39,22 @@
       "description": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI."
     },
     {
+      "title": "Putting frontier cyber models in more trusted hands",
+      "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+      "pubDate": "Mon, 10 Aug 2026 10:00:00 GMT",
+      "description": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers."
+    },
+    {
       "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
       "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
       "pubDate": "Mon, 10 Aug 2026 10:00:00 GMT",
       "description": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing."
     },
     {
-      "title": "Putting frontier cyber models in more trusted hands",
-      "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-      "pubDate": "Mon, 10 Aug 2026 10:00:00 GMT",
-      "description": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers."
+      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+      "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+      "pubDate": "Mon, 10 Aug 2026 00:00:00 GMT",
+      "description": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey."
     },
     {
       "title": "Premium seats are coming to ChatGPT Business",
@@ -49,12 +67,6 @@
       "link": "https://openai.com/index/zapier",
       "pubDate": "Mon, 10 Aug 2026 00:00:00 GMT",
       "description": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting."
-    },
-    {
-      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-      "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-      "pubDate": "Mon, 10 Aug 2026 00:00:00 GMT",
-      "description": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey."
     },
     {
       "title": "Responding to the next frontier of critical cyber capabilities",
@@ -79,18 +91,6 @@
       "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
       "pubDate": "Thu, 06 Aug 2026 06:00:00 GMT",
       "description": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health."
-    },
-    {
-      "title": "From asking to doing: How the world is putting ChatGPT to work",
-      "link": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-      "pubDate": "Thu, 06 Aug 2026 00:00:00 GMT",
-      "description": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior."
-    },
-    {
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-      "pubDate": "Tue, 04 Aug 2026 19:00:00 GMT",
-      "description": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation."
     }
   ]
 }

@@ -1,8 +1,80 @@
 {
-  "count": 33,
+  "count": 34,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsqj4ly004izroxvzl349s3r",
+      "title": "Claude in Chrome 侧边栏升级为 Claude Cowork 会话",
+      "title_en": "The Claude in Chrome side panel is now Claude Cowork",
+      "url": "https://claude.com/blog/cowork-chrome-side-panel",
+      "permalink": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-12T20:15:51.977Z",
+      "discoveredAt": "2026-08-12T20:15:51.977Z",
+      "summary": "Claude in Chrome 浏览器扩展的侧边栏现已升级为 Claude Cowork 会话，对话会保存至历史记录，技能和连接器可在浏览器中工作，且任务可在桌面、网页和移动端应用间无缝切换。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r"
+      }
+    },
+    {
+      "id": "cmsq1hwsb02norobuzbw8cdcc",
+      "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
+      "title_en": "The first open-weights model from @AIatMeta Superintelligence Labs， Muse Glimmer is live on OpenRout…",
+      "url": "https://x.com/OpenRouter/status/2087509478480765218",
+      "permalink": "https://aihot.virxact.com/items/cmsq1hwsb02norobuzbw8cdcc",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-08-12T12:00:18.000Z",
+      "discoveredAt": "2026-08-12T12:02:29.478Z",
+      "summary": "Meta AI 超级智能实验室的首个开放权重模型 Muse Glimmer 已在 OpenRouter 上线！\n\n这是一款 30B 密集文本+图像模型，采用 Apache 2.0 许可证，旨在成为可靠的本地智能体，MCP Atlas 得分 75.5，SWE-Bench Pro 得分 51.2。\n\nhttps://openrouter.ai/meta/muse-glimmer-30b",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsq1hwsb02norobuzbw8cdcc"
+      }
+    },
+    {
+      "id": "cmsq9h6gs01x5ronde8fdla7e",
+      "title": "OpenRouter 推出实时网页搜索基准测试：如何为智能体选择引擎、深度与模型",
+      "title_en": "Live Web Search Benchmarks： Pick the Right Engine， Depth， and Model for Your Agent",
+      "url": "https://openrouter.ai/blog/announcements/web-search-benchmark",
+      "permalink": "https://aihot.virxact.com/items/cmsq9h6gs01x5ronde8fdla7e",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-08-12T00:00:00.000Z",
+      "discoveredAt": "2026-08-12T15:45:47.855Z",
+      "summary": "OpenRouter 发布实时排行榜，系统评测模型、搜索引擎、搜索方法与预算四类配置组合。数据显示，将搜索预算从 1 轮增至 25 轮可使 BrowseComp 得分近乎翻倍，成本仅增 2.5-7 倍；模型选择比引擎更重要，平均分差 15 分 vs 10 分。失败率高的任务应降低搜索深度以控制成本。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsq9h6gs01x5ronde8fdla7e"
+      }
+    },
+    {
+      "id": "cmsp3o23e04vnrortt7twvx4v",
+      "title": "Mojo 1.0 正式发布：为生态系统增长提供稳定基础",
+      "title_en": "Mojo 1.0",
+      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "permalink": "https://aihot.virxact.com/items/cmsp3o23e04vnrortt7twvx4v",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-11T19:52:14.184Z",
+      "discoveredAt": "2026-08-11T20:15:29.618Z",
+      "summary": "Mojo 语言正式发布 1.0 版本，提供稳定、可用于生产环境的语言基础，自 2023 年首次发布以来已发展成通用语言。自开源标准库以来，近 200 名贡献者合入超 1，100 个拉取请求，改动超 200，000 行代码。",
+      "category": "ai-products",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsp3o23e04vnrortt7twvx4v"
+      }
+    },
     {
       "id": "cmsp1lufu03a9rortoc0ci36q",
       "title": "Runway Seedance 2.5 上线，支持50角色参考",
@@ -541,60 +613,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgulpsm0hwaro5qcjgjlvgr"
-      }
-    },
-    {
-      "id": "cmsflglsq04k6rochfekqziad",
-      "title": "Grok 4.5 免费体验，推荐 Build 工具链",
-      "title_en": "Best way to use Grok is via our Build harness. Download at http://X.ai/cli",
-      "url": "https://x.com/elonmusk/status/2084857373555101726",
-      "permalink": "https://aihot.virxact.com/items/cmsflglsq04k6rochfekqziad",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "publishedAt": "2026-08-05T04:21:47.000Z",
-      "discoveredAt": "2026-08-05T04:35:52.809Z",
-      "summary": "使用 Grok 的最佳方式是通过我们的 Build 工具链。\n\n下载地址：http://X.ai/cli",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsflglsq04k6rochfekqziad"
-      }
-    },
-    {
-      "id": "cmsfdkkcs1ocxro2ed4z3s131",
-      "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
-      "title_en": "New release of LLM adds support for reasoning traces， OpenAI Responses， server-side tools， and smarter logging",
-      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
-      "permalink": "https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131",
-      "source": "Simon Willison 博客",
-      "publishedAt": "2026-08-04T23:58:24.000Z",
-      "discoveredAt": "2026-08-05T00:55:01.452Z",
-      "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。",
-      "category": "ai-products",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131"
-      }
-    },
-    {
-      "id": "cmsf7gr271ii5ro2eiu0hihb5",
-      "title": "Replit 环境智能：免提示词自动生成设计",
-      "title_en": "You don't need to prompt. You don't need design language. Ambient Intelligence surfaces suggestion …",
-      "url": "https://x.com/Replit/status/2084761337570144424",
-      "permalink": "https://aihot.virxact.com/items/cmsf7gr271ii5ro2eiu0hihb5",
-      "source": "X：Replit (@Replit)",
-      "publishedAt": "2026-08-04T22:00:10.000Z",
-      "discoveredAt": "2026-08-04T22:04:05.931Z",
-      "summary": "你无需提示词，也无需设计语言。\n\n环境智能（Ambient Intelligence）会在每个画面旁显示建议卡片，每张卡片都指向你的设计的一个不同方向。点击你喜欢的那张，即可看到它生成一个新的画面。\n\n你再也不必纠结下一步该做什么。\n\n立即在 http://replit.com/design 体验。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsf7gr271ii5ro2eiu0hihb5"
       }
     }
   ]

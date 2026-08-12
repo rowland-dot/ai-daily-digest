@@ -1,8 +1,26 @@
 {
-  "count": 28,
+  "count": 20,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmspo193n05q2rojeue8j2k5a",
+      "title": "Research Gold 号称\"100%人类撰写、绝不使用AI\"，实则全程由AI驱动",
+      "title_en": "一家声称提供\"100%由人类撰写、绝不使用AI\"的医学研究的公司，其实100%由AI驱动",
+      "url": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai",
+      "permalink": "https://aihot.virxact.com/items/cmspo193n05q2rojeue8j2k5a",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-12T05:41:30.137Z",
+      "discoveredAt": "2026-08-12T05:45:36.772Z",
+      "summary": "面向医学研究者的网站 Research Gold 宣称其服务\"100%由人类撰写、绝不使用AI\"，并列出多名博士审稿人。但调查发现，这些审稿人系AI生成、并不存在；部分真实方法学家的身份和照片未经许可被挪用。致电该公司时，自称\"Sarah\"的AI助手坚称自己是真人，邮件与聊天回复也均为AI生成。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmspo193n05q2rojeue8j2k5a"
+      }
+    },
     {
       "id": "cmsp2lgxo03xjrortthctedzu",
       "title": "ChatGPT 与 Gemini 双双突破 10 亿用户",
@@ -343,168 +361,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsgo604p0bbbro5qz9hydvx6"
-      }
-    },
-    {
-      "id": "cmsgm0sf209iyro5qxx3gtzwv",
-      "title": "Meta 在 Facebook 和 Instagram 等平台投放了含 AI 生成儿童性虐待图像的广告",
-      "title_en": "Meta 投放了包含由人工智能生成的儿童性虐待图像的广告",
-      "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery",
-      "permalink": "https://aihot.virxact.com/items/cmsgm0sf209iyro5qxx3gtzwv",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-05T21:11:36.016Z",
-      "discoveredAt": "2026-08-05T21:39:21.280Z",
-      "summary": "Meta 的广告库数据显示，超过 50 条违规图片和视频广告发布在 Facebook、Instagram、Messenger 或 Threads 上，其中一些本周仍在投放。这些广告包含由人工智能生成的儿童性虐待图像。",
-      "category": "industry",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsgm0sf209iyro5qxx3gtzwv"
-      }
-    },
-    {
-      "id": "cmsgm0sf209izro5qf8wg3rkx",
-      "title": "Atlassian Rovo 被曝存在数据窃取漏洞，可绕过安全控制",
-      "title_en": "Atlassian Rovo 绕过安全控制，窃取数据",
-      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
-      "permalink": "https://aihot.virxact.com/items/cmsgm0sf209izro5qf8wg3rkx",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-05T21:11:36.012Z",
-      "discoveredAt": "2026-08-05T21:39:21.280Z",
-      "summary": "Atlassian Rovo AI 被曝存在可窃取租户内 Jira 工单和 Confluence 文档的漏洞，攻击通过间接提示注入利用其 URL 检索工具实现，无需人工审批即可执行，且即使组织禁用 Rovo 的网页搜索功能，该攻击依然有效。",
-      "category": "industry",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsgm0sf209izro5qf8wg3rkx"
-      }
-    },
-    {
-      "id": "cmsghv9m1066ero5qffm5675t",
-      "title": "Jeff Dean 宣布离开谷歌，创办 DiscoLoop AI",
-      "title_en": "Tomorrow will be my last day at Google after 27 years， and watching it grow from 25 people to 190，00…",
-      "url": "https://x.com/JeffDean/status/2085083442669318443",
-      "permalink": "https://aihot.virxact.com/items/cmsghv9m1066ero5qffm5675t",
-      "source": "X：Jeff Dean (@JeffDean)",
-      "publishedAt": "2026-08-05T19:20:06.000Z",
-      "discoveredAt": "2026-08-05T19:43:05.068Z",
-      "summary": "Jeff Dean 在谷歌任职 27 年后宣布离职，将于明日正式离开。他称谷歌已从 25 人发展到 19 万余人，拥有十三款用户超十亿的产品。他将与 Sanjay Ghemawat、Oriol Vinyals 和 Quoc Le 共同创办 DiscoLoop AI。",
-      "category": "industry",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsghv9m1066ero5qffm5675t"
-      }
-    },
-    {
-      "id": "cmsgcdhyh019uro5q5uhc9tnd",
-      "title": "Google DeepMind CEO 德米斯·哈萨比斯即将卸任",
-      "title_en": "谷歌DeepMind首席执行官德米斯·哈萨比斯即将卸任",
-      "url": "https://www.axios.com/2026/08/05/google-deepmind-demis-hassabis-ai",
-      "permalink": "https://aihot.virxact.com/items/cmsgcdhyh019uro5q5uhc9tnd",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-05T16:39:55.296Z",
-      "discoveredAt": "2026-08-05T17:09:17.603Z",
-      "summary": "Google DeepMind CEO 德米斯·哈萨比斯即将卸任。该消息由 Axios 报道，并在 Hacker News 上获得超过 125 点热度。目前尚未公布继任者或具体离职时间等细节。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsgcdhyh019uro5q5uhc9tnd"
-      }
-    },
-    {
-      "id": "cmsga8g7n01dxro3psolcouz4",
-      "title": "Demis Hassabis 转任 Google DeepMind 主席与 Alphabet 首席科学家",
-      "title_en": "I've been working towards AGI my whole life， and as we enter this pivotal moment， I'm stepping into …",
-      "url": "https://x.com/demishassabis/status/2085034334914769203",
-      "permalink": "https://aihot.virxact.com/items/cmsga8g7n01dxro3psolcouz4",
-      "source": "X：Demis Hassabis (@demishassabis)",
-      "publishedAt": "2026-08-05T16:04:58.000Z",
-      "discoveredAt": "2026-08-05T16:09:23.683Z",
-      "summary": "Demis Hassabis 宣布卸任 Google DeepMind CEO，转任主席兼 Alphabet 首席科学家，专注长期战略与科学突破，包括推进 Isomorphic 的疾病治愈研究。Koray Kavukcuoglu 将接任 GDM 高级副总裁，与 Josh Woodward 及执行团队共同领导下一阶段发展。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsga8g7n01dxro3psolcouz4"
-      }
-    },
-    {
-      "id": "cmsg7u0dp00s1roremmr20cb1",
-      "title": "SpaceX 宣布 AI 算力上太空，独家采用 Nvidia Vera Rubin",
-      "title_en": "大家都在刷SpaceX上市首份财报，没人注意Musk扔的王炸：@SpaceX 要把AI数据中心搬到太空去， 而且不是科幻和概念PPT， 明年就开始发射。 就在昨天的财报电话会上， Musk直接宣布：…",
-      "url": "https://x.com/AYi_AInotes/status/2085010659150852220",
-      "permalink": "https://aihot.virxact.com/items/cmsg7u0dp00s1roremmr20cb1",
-      "source": "X：阿易 AI Notes (@AYi_AInotes)",
-      "publishedAt": "2026-08-05T14:30:53.000Z",
-      "discoveredAt": "2026-08-05T15:02:09.334Z",
-      "summary": "SpaceX 在财报电话会上宣布，未来所有 AI 算力（地面及轨道）将独家采用 Nvidia Vera Rubin 架构，2026 年底总算力超 2GW，2027 年底接近 10GW。同步公布 Starmind 计划，2027 年起发射搭载 Rubin GPU 与 Vera CPU 的轨道 AI 卫星星座，明年开始发射，算力经星链激光链路回传。消息公布后 AMD 股价跌 8%。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsg7u0dp00s1roremmr20cb1"
-      }
-    },
-    {
-      "id": "cmsfyb5yy0js6roch27nbq7s2",
-      "title": "美国上诉法院推翻禁令，Perplexity AI 购物智能体重返 Amazon",
-      "title_en": "US appeals court allows Perplexity's AI shopping agent back on Amazon",
-      "url": "https://the-decoder.com/us-appeals-court-allows-perplexitys-ai-shopping-agent-back-on-amazon",
-      "permalink": "https://aihot.virxact.com/items/cmsfyb5yy0js6roch27nbq7s2",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-08-05T10:31:42.000Z",
-      "discoveredAt": "2026-08-05T10:35:32.237Z",
-      "summary": "美国第九巡回上诉法院推翻了此前阻止 Perplexity 在 Amazon 平台使用 AI 购物智能体的禁令，认定是用户而非 Perplexity 本身通过智能体访问 Amazon，因此违反联邦计算机欺诈法的指控难以成立。这是美国联邦上诉法院首次就 AI 智能体合法性作出裁决，但案件本身尚未了结。Amazon 表示不同意该裁决并正在评估下一步选项。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsfyb5yy0js6roch27nbq7s2"
-      }
-    },
-    {
-      "id": "cmsfzhw1u009grodljbfrauos",
-      "title": "华为谈自动驾驶系统强制性国家标准发布，引望国内首批完成 L3 车型准入试点验证",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/986/180.htm",
-      "permalink": "https://aihot.virxact.com/items/cmsfzhw1u009grodljbfrauos",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-05T10:18:17.000Z",
-      "discoveredAt": "2026-08-05T11:08:45.252Z",
-      "summary": "工信部提出的 GB 44721-2026《智能网联汽车 自动驾驶系统安全要求》于 2026 年 7 月 30 日发布，是我国首部针对 L3 和 L4 自动驾驶系统的强制性国家标准，将于 2027 年 7 月 1 日实施。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsfzhw1u009grodljbfrauos"
-      }
-    },
-    {
-      "id": "cmsfzhw1v009hrodlv4wn36l3",
-      "title": "Google Assistant 下月起逐步退场，\"Hey Google\"将由谷歌 Gemini 接棒",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/986/174.htm",
-      "permalink": "https://aihot.virxact.com/items/cmsfzhw1v009hrodlv4wn36l3",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-05T10:12:57.000Z",
-      "discoveredAt": "2026-08-05T11:08:45.252Z",
-      "summary": "谷歌通过电子邮件通知安卓用户，移动端 Google Assistant 将从 9 月 4 日起陆续停止服务，符合条件的安卓设备将改用 Gemini 作为默认助理。设备完成切换后，用户无法再通过手机、平板电脑或配对设备使用 Google Assistant，也不能切回原有服务。与手机配对的 Wear OS 手表及受支持的头戴式耳机和入耳式耳机也将同步改用 Gemini。",
-      "category": "industry",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsfzhw1v009hrodlv4wn36l3"
       }
     }
   ]

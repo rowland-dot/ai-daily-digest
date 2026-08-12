@@ -1,16 +1,27 @@
 {
-  "fetched_at": "2026-08-11T21:22:44.505Z",
+  "fetched_at": "2026-08-12T21:21:03.833Z",
   "repos": [
     {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 143008,
-      "forks": 23256,
-      "starsToday": 971
+      "owner": "cathrynlavery",
+      "name": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 9933,
+      "forks": 652,
+      "starsToday": 2951
+    },
+    {
+      "owner": "macro-inc",
+      "name": "macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 1665,
+      "forks": 217,
+      "starsToday": 325
     },
     {
       "owner": "semantica-agi",
@@ -19,86 +30,9 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 4796,
-      "forks": 520,
-      "starsToday": 884
-    },
-    {
-      "owner": "nvm-sh",
-      "name": "nvm",
-      "url": "https://github.com/nvm-sh/nvm",
-      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 94468,
-      "forks": 10352,
-      "starsToday": 18
-    },
-    {
-      "owner": "addyosmani",
-      "name": "agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 86181,
-      "forks": 9262,
-      "starsToday": 571
-    },
-    {
-      "owner": "ZhuLinsen",
-      "name": "daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 62076,
-      "forks": 52416,
-      "starsToday": 317
-    },
-    {
-      "owner": "vitali87",
-      "name": "code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 3780,
-      "forks": 558,
-      "starsToday": 339
-    },
-    {
-      "owner": "anthropics",
-      "name": "skills",
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 168061,
-      "forks": 20026,
-      "starsToday": 468
-    },
-    {
-      "owner": "3b1b",
-      "name": "manim",
-      "url": "https://github.com/3b1b/manim",
-      "description": "Animation engine for explanatory math videos",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 90123,
-      "forks": 7475,
-      "starsToday": 246
-    },
-    {
-      "owner": "HKUDS",
-      "name": "DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 34643,
-      "forks": 4416,
-      "starsToday": 829
+      "stars": 5631,
+      "forks": 617,
+      "starsToday": 834
     },
     {
       "owner": "stablyai",
@@ -107,9 +41,64 @@
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 42657,
-      "forks": 2974,
-      "starsToday": 881
+      "stars": 43748,
+      "forks": 3051,
+      "starsToday": 1215
+    },
+    {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 144500,
+      "forks": 23411,
+      "starsToday": 1969
+    },
+    {
+      "owner": "shiyu-coder",
+      "name": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 36922,
+      "forks": 6147,
+      "starsToday": 277
+    },
+    {
+      "owner": "NanmiCoder",
+      "name": "MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 61941,
+      "forks": 12121,
+      "starsToday": 236
+    },
+    {
+      "owner": "hugohe3",
+      "name": "ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 45499,
+      "forks": 3711,
+      "starsToday": 364
+    },
+    {
+      "owner": "infiniflow",
+      "name": "ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 87499,
+      "forks": 10307,
+      "starsToday": 182
     },
     {
       "owner": "paperclipai",
@@ -118,75 +107,86 @@
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 77097,
-      "forks": 14241,
-      "starsToday": 743
+      "stars": 77663,
+      "forks": 14295,
+      "starsToday": 573
     },
     {
-      "owner": "huggingface",
-      "name": "transformers",
-      "url": "https://github.com/huggingface/transformers",
-      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 163757,
-      "forks": 34200,
-      "starsToday": 69
+      "owner": "NVIDIA-NeMo",
+      "name": "Switchyard",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "description": "",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 770,
+      "forks": 81,
+      "starsToday": 370
     },
     {
-      "owner": "harveyai",
-      "name": "harvey-labs",
-      "url": "https://github.com/harveyai/harvey-labs",
-      "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1057,
-      "forks": 194,
-      "starsToday": 24
-    },
-    {
-      "owner": "jaywcjlove",
-      "name": "awesome-mac",
-      "url": "https://github.com/jaywcjlove/awesome-mac",
-      "description": " This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 110421,
-      "forks": 8413,
-      "starsToday": 334
-    },
-    {
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 47253,
-      "forks": 5898,
-      "starsToday": 436
-    },
-    {
-      "owner": "practical-tutorials",
-      "name": "project-based-learning",
-      "url": "https://github.com/practical-tutorials/project-based-learning",
-      "description": "Curated list of project-based tutorials",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 278392,
-      "forks": 35777,
-      "starsToday": 394
-    },
-    {
-      "owner": "PrimeIntellect-ai",
-      "name": "prime-agent",
-      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
-      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "owner": "ZuodaoTech",
+      "name": "everyone-can-use-english",
+      "url": "https://github.com/ZuodaoTech/everyone-can-use-english",
+      "description": "人人都能用英语",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 13995,
-      "forks": 1445,
-      "starsToday": 1148
+      "stars": 36043,
+      "forks": 5026,
+      "starsToday": 53
+    },
+    {
+      "owner": "smicallef",
+      "name": "spiderfoot",
+      "url": "https://github.com/smicallef/spiderfoot",
+      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 20316,
+      "forks": 3295,
+      "starsToday": 40
+    },
+    {
+      "owner": "localsend",
+      "name": "localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "language": "Dart",
+      "languageColor": "#00B4AB",
+      "stars": 87734,
+      "forks": 4867,
+      "starsToday": 284
+    },
+    {
+      "owner": "Lightricks",
+      "name": "LTX-2",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 8679,
+      "forks": 1396,
+      "starsToday": 40
+    },
+    {
+      "owner": "embabel",
+      "name": "embabel-agent",
+      "url": "https://github.com/embabel/embabel-agent",
+      "description": "Agent framework for the JVM. Pronounced Em-BAY-bel /ɛmˈbeɪbəl/",
+      "language": "Kotlin",
+      "languageColor": "#A97BFF",
+      "stars": 4206,
+      "forks": 411,
+      "starsToday": 29
+    },
+    {
+      "owner": "cactus-compute",
+      "name": "needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 4138,
+      "forks": 301,
+      "starsToday": 346
     }
   ]
 }
