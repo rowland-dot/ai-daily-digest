@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-12T21:21:03.833Z",
+  "fetched_at": "2026-08-13T21:22:25.030Z",
   "repos": [
     {
       "owner": "cathrynlavery",
@@ -8,20 +8,9 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 9933,
-      "forks": 652,
-      "starsToday": 2951
-    },
-    {
-      "owner": "macro-inc",
-      "name": "macro",
-      "url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 1665,
-      "forks": 217,
-      "starsToday": 325
+      "stars": 14098,
+      "forks": 847,
+      "starsToday": 4504
     },
     {
       "owner": "semantica-agi",
@@ -30,152 +19,20 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 5631,
-      "forks": 617,
-      "starsToday": 834
+      "stars": 6534,
+      "forks": 689,
+      "starsToday": 727
     },
     {
-      "owner": "stablyai",
-      "name": "orca",
-      "url": "https://github.com/stablyai/orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 43748,
-      "forks": 3051,
-      "starsToday": 1215
-    },
-    {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 144500,
-      "forks": 23411,
-      "starsToday": 1969
-    },
-    {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "owner": "anthropics",
+      "name": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 36922,
-      "forks": 6147,
-      "starsToday": 277
-    },
-    {
-      "owner": "NanmiCoder",
-      "name": "MediaCrawler",
-      "url": "https://github.com/NanmiCoder/MediaCrawler",
-      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 61941,
-      "forks": 12121,
-      "starsToday": 236
-    },
-    {
-      "owner": "hugohe3",
-      "name": "ppt-master",
-      "url": "https://github.com/hugohe3/ppt-master",
-      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 45499,
-      "forks": 3711,
-      "starsToday": 364
-    },
-    {
-      "owner": "infiniflow",
-      "name": "ragflow",
-      "url": "https://github.com/infiniflow/ragflow",
-      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 87499,
-      "forks": 10307,
-      "starsToday": 182
-    },
-    {
-      "owner": "paperclipai",
-      "name": "paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 77663,
-      "forks": 14295,
-      "starsToday": 573
-    },
-    {
-      "owner": "NVIDIA-NeMo",
-      "name": "Switchyard",
-      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "description": "",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 770,
-      "forks": 81,
-      "starsToday": 370
-    },
-    {
-      "owner": "ZuodaoTech",
-      "name": "everyone-can-use-english",
-      "url": "https://github.com/ZuodaoTech/everyone-can-use-english",
-      "description": "人人都能用英语",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 36043,
-      "forks": 5026,
-      "starsToday": 53
-    },
-    {
-      "owner": "smicallef",
-      "name": "spiderfoot",
-      "url": "https://github.com/smicallef/spiderfoot",
-      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 20316,
-      "forks": 3295,
-      "starsToday": 40
-    },
-    {
-      "owner": "localsend",
-      "name": "localsend",
-      "url": "https://github.com/localsend/localsend",
-      "description": "An open-source cross-platform alternative to AirDrop",
-      "language": "Dart",
-      "languageColor": "#00B4AB",
-      "stars": 87734,
-      "forks": 4867,
-      "starsToday": 284
-    },
-    {
-      "owner": "Lightricks",
-      "name": "LTX-2",
-      "url": "https://github.com/Lightricks/LTX-2",
-      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 8679,
-      "forks": 1396,
-      "starsToday": 40
-    },
-    {
-      "owner": "embabel",
-      "name": "embabel-agent",
-      "url": "https://github.com/embabel/embabel-agent",
-      "description": "Agent framework for the JVM. Pronounced Em-BAY-bel /ɛmˈbeɪbəl/",
-      "language": "Kotlin",
-      "languageColor": "#A97BFF",
-      "stars": 4206,
-      "forks": 411,
-      "starsToday": 29
+      "stars": 168955,
+      "forks": 20126,
+      "starsToday": 383
     },
     {
       "owner": "cactus-compute",
@@ -184,9 +41,152 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 4138,
-      "forks": 301,
-      "starsToday": 346
+      "stars": 4904,
+      "forks": 332,
+      "starsToday": 768
+    },
+    {
+      "owner": "altic-dev",
+      "name": "FluidVoice",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 9819,
+      "forks": 661,
+      "starsToday": 187
+    },
+    {
+      "owner": "unslothai",
+      "name": "unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 71004,
+      "forks": 6404,
+      "starsToday": 354
+    },
+    {
+      "owner": "macro-inc",
+      "name": "macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 2554,
+      "forks": 272,
+      "starsToday": 1180
+    },
+    {
+      "owner": "megadose",
+      "name": "holehe",
+      "url": "https://github.com/megadose/holehe",
+      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 12372,
+      "forks": 1667,
+      "starsToday": 166
+    },
+    {
+      "owner": "smicallef",
+      "name": "spiderfoot",
+      "url": "https://github.com/smicallef/spiderfoot",
+      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 20636,
+      "forks": 3313,
+      "starsToday": 278
+    },
+    {
+      "owner": "NVIDIA-NeMo",
+      "name": "Switchyard",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 1172,
+      "forks": 104,
+      "starsToday": 408
+    },
+    {
+      "owner": "holaboss-ai",
+      "name": "holaOS",
+      "url": "https://github.com/holaboss-ai/holaOS",
+      "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 6512,
+      "forks": 597,
+      "starsToday": 380
+    },
+    {
+      "owner": "kepano",
+      "name": "obsidian-skills",
+      "url": "https://github.com/kepano/obsidian-skills",
+      "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+      "language": "",
+      "languageColor": "",
+      "stars": 45650,
+      "forks": 3294,
+      "starsToday": 411
+    },
+    {
+      "owner": "3b1b",
+      "name": "manim",
+      "url": "https://github.com/3b1b/manim",
+      "description": "Animation engine for explanatory math videos",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 90818,
+      "forks": 7529,
+      "starsToday": 204
+    },
+    {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 145148,
+      "forks": 23483,
+      "starsToday": 762
+    },
+    {
+      "owner": "Lightricks",
+      "name": "LTX-2",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 8889,
+      "forks": 1404,
+      "starsToday": 201
+    },
+    {
+      "owner": "lightningpixel",
+      "name": "modly",
+      "url": "https://github.com/lightningpixel/modly",
+      "description": "Desktop app to generate 3D models from images using local AI — runs entirely on your GPU",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 5348,
+      "forks": 574,
+      "starsToday": 221
+    },
+    {
+      "owner": "infiniflow",
+      "name": "ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 87974,
+      "forks": 10347,
+      "starsToday": 473
     }
   ]
 }

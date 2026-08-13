@@ -1,24 +1,96 @@
 {
-  "count": 34,
+  "count": 33,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmsqj4ly004izroxvzl349s3r",
-      "title": "Claude in Chrome 侧边栏升级为 Claude Cowork 会话",
-      "title_en": "The Claude in Chrome side panel is now Claude Cowork",
-      "url": "https://claude.com/blog/cowork-chrome-side-panel",
-      "permalink": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-12T20:15:51.977Z",
-      "discoveredAt": "2026-08-12T20:15:51.977Z",
-      "summary": "Claude in Chrome 浏览器扩展的侧边栏现已升级为 Claude Cowork 会话，对话会保存至历史记录，技能和连接器可在浏览器中工作，且任务可在桌面、网页和移动端应用间无缝切换。",
+      "id": "cmsrtfqyv04btro0nle3m5b20",
+      "title": "Google Sheets 推出 Sheets canvas：用 Gemini 将表格数据变为交互式迷你应用",
+      "title_en": "Bring your spreadsheet data to life with Sheets canvas",
+      "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets",
+      "permalink": "https://aihot.virxact.com/items/cmsrtfqyv04btro0nle3m5b20",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-08-13T16:45:00.000Z",
+      "discoveredAt": "2026-08-13T17:52:24.043Z",
+      "summary": "Google Sheets 发布新功能 Sheets canvas，基于 Gemini 构建，用户只需用自然语言提示词即可将表格数据转化为交互式仪表盘、学习追踪器、座位表等\"迷你应用\"。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsrtfqyv04btro0nle3m5b20"
+      }
+    },
+    {
+      "id": "cmsrlvwfp05gdro46mbfqtsgm",
+      "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
+      "title_en": "🚀 Day-0 Support！ @Alibaba_Qwen has open-sourced Qwen3.8-2.4T-A95B - and it's now live on SiliconFlo…",
+      "url": "https://x.com/SiliconFlowAI/status/2087903227224412222",
+      "permalink": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "publishedAt": "2026-08-13T14:04:55.000Z",
+      "discoveredAt": "2026-08-13T14:21:01.224Z",
+      "summary": "阿里开源 Qwen3.8-2.4T-A95B，硅基流动已提供 Day-0 支持。该模型拥有 2.4T 参数、95B 激活参数，主打自主编码、深度研究与端到端智能体执行。API 定价为输入 $2.00/百万 token，输出 $6.00/百万 token，缓存输入 $0.25/百万 token。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm"
+      }
+    },
+    {
+      "id": "cmsrjqqfg02z0ro469zple5jl",
+      "title": "DeepSeek Harness v0.1 开发者预览版发布",
+      "title_en": "🧩 DeepSeek Harness v0.1 is now available in Developer Preview！ 🔹 We're opening it up to developer…",
+      "url": "https://x.com/deepseek_ai/status/2087887408440164663",
+      "permalink": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
+      "source": "X：DeepSeek (@deepseek_ai)",
+      "publishedAt": "2026-08-13T13:02:03.000Z",
+      "discoveredAt": "2026-08-13T13:21:00.781Z",
+      "summary": "DeepSeek Harness v0.1 现已推出开发者预览版，并以 MIT 许可证开源。该智能体框架基于 Cordis 元框架构建，核心设计为\"一切皆插件\"，模型、工具、技能、会话、沙箱、文件系统、循环、编排及 UI 均可自由组合、替换和扩展。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl"
+      }
+    },
+    {
+      "id": "cmsruj6ik02dfrozeclkuve05",
+      "title": "Cursor 推出 builds：云智能体启动速度提升至 3 倍",
+      "title_en": "Cloud agents start 3x faster with builds",
+      "url": "https://cursor.com/blog/builds",
+      "permalink": "https://aihot.virxact.com/items/cmsruj6ik02dfrozeclkuve05",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-08-13T12:00:00.000Z",
+      "discoveredAt": "2026-08-13T18:23:04.579Z",
+      "summary": "Cursor 推出 builds 功能，在后台持续准备就绪的开发环境副本，让云智能体启动时无需从零搭建，响应速度最高提升 3 倍。内部环境启动快 10 倍，首个 token 生成快 3 倍；智能体始终从最近一次成功的 build 启动，依赖更新或安装脚本出错时不会影响运行。8 月 17 日起所有环境默认启用 builds，无需额外费用。",
       "category": "ai-products",
       "score": 65,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r"
+        "canonical": "https://aihot.virxact.com/items/cmsruj6ik02dfrozeclkuve05"
+      }
+    },
+    {
+      "id": "cmsr160kg0dk0roz2mb20yxwk",
+      "title": "WorkBuddy上线远程控制，国内也有了最丝滑的Agent工作方式",
+      "title_en": "WorkBuddy上线远程控制，国内也有了最丝滑的Agent工作方式。",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685179&idx=1&sn=4cbee32b677b57a9dc6ec2a79d6f72c7",
+      "permalink": "https://aihot.virxact.com/items/cmsr160kg0dk0roz2mb20yxwk",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-08-13T04:32:24.000Z",
+      "discoveredAt": "2026-08-13T04:41:00.631Z",
+      "summary": "WorkBuddy更新上线远程控制功能，将PC、App和小程序打通，手机端可实时同步电脑端的任务、对话、工作空间和产物，支持一台手机连接多台电脑并随时切换。App需升级至1.2.0及以上，电脑端需升级至5.3.8及以上，连接无需扫码。本次更新还新增资料库（我的文档与团队空间）、Markdown多人共同编辑、AI原生审阅模式，以及将资料库内容生成可发布链接的HTML网站。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsr160kg0dk0roz2mb20yxwk"
       }
     },
     {
@@ -109,6 +181,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh"
+      }
+    },
+    {
+      "id": "cmsqj4ly004izroxvzl349s3r",
+      "title": "Claude in Chrome 侧边栏升级为 Claude Cowork 会话",
+      "title_en": "The Claude in Chrome side panel is now Claude Cowork",
+      "url": "https://claude.com/blog/cowork-chrome-side-panel",
+      "permalink": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-11T16:00:00.000Z",
+      "discoveredAt": "2026-08-12T20:15:51.977Z",
+      "summary": "Claude in Chrome 浏览器扩展的侧边栏现已升级为 Claude Cowork 会话，对话会保存至历史记录，技能和连接器可在浏览器中工作，且任务可在桌面、网页和移动端应用间无缝切换。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r"
       }
     },
     {
@@ -505,114 +595,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsi5sy2s1192ronkt3lk2z88"
-      }
-    },
-    {
-      "id": "cmshra4es0oycronk0wcvjv03",
-      "title": "Agent Plugins 1.0.0 发布：谷歌、亚马逊、微软等支持的统一智能体插件规范",
-      "title_en": "Agent Plugins package your skills， tools， and more",
-      "url": "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more",
-      "permalink": "https://aihot.virxact.com/items/cmshra4es0oycronk0wcvjv03",
-      "source": "Google Developers Blog（RSS）",
-      "publishedAt": "2026-08-06T16:53:12.298Z",
-      "discoveredAt": "2026-08-06T16:53:12.298Z",
-      "summary": "Agent Plugins 1.0.0 是一项由谷歌、亚马逊、微软等支持的中立目录规范，将 Agent Skills 和 MCP 服务器打包为单一可移植单元。通过标准化 plugin.json 清单和固定目录布局，开发者无需为不同 AI 编码智能体和 IDE 维护单独封装。谷歌已作为核心维护者加入，并在 Agents CLI 和 Data Agent Kit 中提供支持。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmshra4es0oycronk0wcvjv03"
-      }
-    },
-    {
-      "id": "cmsj8rfkl02ruroo5uvyqiqiq",
-      "title": "HPC-Ops × SGLang：腾讯混元开源高性能 Attention、Router GEMM 与 MoE 算子",
-      "title_en": "Blog HPC-Ops × SGLang： High-Performance Attention， Router GEMM， and MoE Kernels from Tencent Hunyuan HPC-Ops is an open-source operator library for LLM inference， deployed in Tencent's large-scale production serving. Its core operators， including Dynamic Attention and Fused MoE， play a critical role … Tencent Hunyuan AI Infra and the SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-08-07-hpc-ops-sglang",
-      "permalink": "https://aihot.virxact.com/items/cmsj8rfkl02ruroo5uvyqiqiq",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-06T16:00:00.000Z",
-      "discoveredAt": "2026-08-07T17:51:24.888Z",
-      "summary": "腾讯混元开源算子库 HPC-Ops 已集成至 SGLang 主分支，其 Dynamic Attention 与 Fused MoE 在 Hy3 模型上最高降低 TPOT 48.8%。",
-      "category": "ai-products",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsj8rfkl02ruroo5uvyqiqiq"
-      }
-    },
-    {
-      "id": "cmshjzc390h6cronkkgtujtis",
-      "title": "千问全网首发公测，全新 Wan3.0 来了！",
-      "title_en": "千问全网首发公测，全新Wan3.0来了！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247488240&idx=1&sn=3fea5624e07184f42661d5f3bc798873",
-      "permalink": "https://aihot.virxact.com/items/cmshjzc390h6cronkkgtujtis",
-      "source": "公众号：千问APP（阿里）",
-      "publishedAt": "2026-08-06T13:25:10.000Z",
-      "discoveredAt": "2026-08-06T13:30:00.931Z",
-      "summary": "阿里千问全网首发公测视频生成模型 Wan3.0，在生成时长、镜头语言、角色真实感及一致性保持等维度全面升级。该模型支持稳定直出 30 秒一镜到底视频，具备导演级镜头与蒙太奇叙事，并强调角色、道具、场景高一致性保持。Wan3.0 主打超高性价比，现已在千问创作（c.qianwen.com）开放体验，千问 app 也将陆续开启。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmshjzc390h6cronkkgtujtis"
-      }
-    },
-    {
-      "id": "cmshjall30g5vronk3jwsdnyr",
-      "title": "谷歌地图 Ask Maps 智能体升级：可对话订餐、找酒店并接入 Gemini Personal Intelligence",
-      "title_en": "谷歌地图智能体功能迎来新升级：聊着天就把酒店、外卖订好了",
-      "url": "https://www.ithome.com/0/986/729.htm",
-      "permalink": "https://aihot.virxact.com/items/cmshjall30g5vronk3jwsdnyr",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-06T12:49:13.000Z",
-      "discoveredAt": "2026-08-06T13:10:43.399Z",
-      "summary": "谷歌地图宣布 Ask Maps 迎来新一轮升级，新增智能体功能，可替用户执行订餐操作，并综合考虑饮食要求、当前位置和收藏地点等信息；用户还可通过对话指定装修风格、环境氛围等条件查找酒店和当地活动。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmshjall30g5vronk3jwsdnyr"
-      }
-    },
-    {
-      "id": "cmsh5bwo400rjro280qm4x4is",
-      "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
-      "title_en": "Qwen-Image-3.0 is production-ready. 4.5K-token prompts. 100%+ text accuracy （no broken logos）. Nativ…",
-      "url": "https://x.com/alibaba_cloud/status/2085247637734002848",
-      "permalink": "https://aihot.virxact.com/items/cmsh5bwo400rjro280qm4x4is",
-      "source": "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-      "publishedAt": "2026-08-06T06:12:33.000Z",
-      "discoveredAt": "2026-08-06T06:39:52.811Z",
-      "summary": "Qwen-Image-3.0 已可投入生产。支持 4.5K token 提示词。100%+ 文本准确率（无破损 logo）。原生支持 12 种语言。定价灵活可扩展：高分辨率低至 $0.03。完整详情见图片。👉 探索：• Model Studio：https://click.alibabacloud.com/m/20000001606/ • Qwen Cloud：https://click.qwencloud.com/m/20000001648/ #Qwen #QwenImage3 #AlibabaCloud #GenerativeAI #AICreativity",
-      "category": "ai-products",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsh5bwo400rjro280qm4x4is"
-      }
-    },
-    {
-      "id": "cmsgulpsm0hwaro5qcjgjlvgr",
-      "title": "Prime Agent：一个具有自我改进能力的RLM代理",
-      "title_en": null,
-      "url": "https://www.primeintellect.ai/blog/prime-agent",
-      "permalink": "https://aihot.virxact.com/items/cmsgulpsm0hwaro5qcjgjlvgr",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-06T01:27:27.867Z",
-      "discoveredAt": "2026-08-06T01:39:34.524Z",
-      "summary": "Prime Agent 是一个自我改进的编码代理，围绕递归语言模型（RLM）和持续框架（Continual Harness）两大抽象构建，将上下文视为变量、子代理委派视为 REPL 内的函数调用，并允许代理对其提示词、技能、记忆和子代理进行 CRUD 操作。它完全开源，可通过 curl 命令安装，支持与前沿模型即时使用，并具备后台守护进程、会话恢复、分支分叉和异步内核压缩等特性。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsgulpsm0hwaro5qcjgjlvgr"
       }
     }
   ]

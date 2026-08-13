@@ -1,24 +1,24 @@
 {
-  "count": 18,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmsqe6mat01bsroli3hw71nz7",
-      "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
-      "title_en": "Empty shelves or lost keys？ Recall is the bottleneck for parametric factuality",
-      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality",
-      "permalink": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-08-12T17:57:36.369Z",
-      "discoveredAt": "2026-08-12T17:57:36.369Z",
-      "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于\"丢钥匙\"而非\"空货架\"。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2，150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。",
+      "id": "cmsqu0nr604oeroz2rh6b6mqt",
+      "title": "新兴多智能体系统的模式与问题",
+      "title_en": "Patterns and problems in emerging multiagent systems",
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "permalink": "https://aihot.virxact.com/items/cmsqu0nr604oeroz2rh6b6mqt",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-08-13T01:20:54.259Z",
+      "discoveredAt": "2026-08-13T01:20:54.259Z",
+      "summary": "Anthropic 研究指出，随着 AI 智能体在共享代码库、市场等社会系统中承担更多任务，智能体间交互量或将超过人机交互。实验显示，45 个协调智能体在 2700 万 token 运行中发现 266 个漏洞，而独立并行方法在 650 万 token 中发现 21 个，两种方法仅 12 个重叠，且协调智能体学会专业化分工。研究同时警示个体层面的良性行为怪癖可能叠加为意外的系统性失败。",
       "category": "paper",
-      "score": 66,
+      "score": 79,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7"
+        "canonical": "https://aihot.virxact.com/items/cmsqu0nr604oeroz2rh6b6mqt"
       }
     },
     {
@@ -55,6 +55,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsox86zv09u6rohdqr80wg0x"
+      }
+    },
+    {
+      "id": "cmsqe6mat01bsroli3hw71nz7",
+      "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
+      "title_en": "Empty shelves or lost keys？ Recall is the bottleneck for parametric factuality",
+      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality",
+      "permalink": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-08-11T16:00:00.000Z",
+      "discoveredAt": "2026-08-12T17:57:36.369Z",
+      "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于\"丢钥匙\"而非\"空货架\"。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2，150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。",
+      "category": "paper",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7"
       }
     },
     {
@@ -253,78 +271,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsj4jrne24d5ronkvb40rucl"
-      }
-    },
-    {
-      "id": "cmsh6fjal001mronkgffxycgg",
-      "title": "阿谀奉承的人工智能会削弱利他意图并助长依赖性（2025）",
-      "title_en": null,
-      "url": "https://arxiv.org/abs/2510.01395",
-      "permalink": "https://aihot.virxact.com/items/cmsh6fjal001mronkgffxycgg",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-06T07:03:41.634Z",
-      "discoveredAt": "2026-08-06T07:10:39.148Z",
-      "summary": "斯坦福大学和卡内基梅隆大学的研究发现，在11个前沿AI模型中，模型对用户行为的肯定率比人类高出50%，即使涉及操纵或欺骗等有害行为时也不例外。两项预注册实验（N=1604）显示，与阿谀奉承的AI互动显著降低了参与者修复人际冲突的意愿，同时增强了其自认为正确的信念。然而，参与者仍将这类回应评为更高质量、更信任并更愿意再次使用，形成助长依赖的恶性循环。",
-      "category": "paper",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsh6fjal001mronkgffxycgg"
-      }
-    },
-    {
-      "id": "cmsgsgz530fluro5qu0vnw8s0",
-      "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
-      "title_en": "Microsoft's SkillOpt Shows Optimized Agent Skill Artifacts Transfer Across Model Scales and Between Codex and Claude Code Harnesses",
-      "url": "https://www.marktechpost.com/2026/08/05/microsoft-skillopt-agent-skill-transfer-portability",
-      "permalink": "https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0",
-      "source": "MarkTechPost（RSS）",
-      "publishedAt": "2026-08-06T00:37:42.000Z",
-      "discoveredAt": "2026-08-06T00:39:54.033Z",
-      "summary": "Microsoft 与上海交大、同济、复旦团队提出的 SkillOpt 通过文本空间优化训练单一技能文档，冻结目标模型，使优化后的技能工件可跨模型规模和跨工具链迁移。在 Codex 上优化的 SpreadsheetBench 技能部署到 Claude Code 后得分 81.8，超过后者自行训练技能得到的 80.4。全部 4 项跨模型、4 项跨工具链和 3 项跨基准迁移结果均高于目标的无技能基线。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0"
-      }
-    },
-    {
-      "id": "cmso91prw0fd8rofw8fdiyzgr",
-      "title": "可解释性随规模提升：Steerling-8B 将可解释性纳入训练流程",
-      "title_en": "Scaling Inherently Interpretable Language Models",
-      "url": "https://arxiv.org/abs/2608.07594",
-      "permalink": "https://aihot.virxact.com/items/cmso91prw0fd8rofw8fdiyzgr",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
-      "discoveredAt": "2026-08-06T00:00:00.000Z",
-      "summary": "一项新研究挑战\"可解释性牺牲能力\"的假设，将可解释性作为训练约束与语言建模目标共同优化。在三个数量级的算力范围内，自回归与扩散语言模型的表征随规模增大而更解耦、更对齐人类概念。其实例 Steerling-8B 支持通过概念或特征归因诊断输出、检索训练数据并无需重训即可干预，且与算力多 2-16 倍的开放模型保持竞争力。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmso91prw0fd8rofw8fdiyzgr"
-      }
-    },
-    {
-      "id": "cmsj8x5n2036jroo5ewknk6ra",
-      "title": "Activity Frames：将屏幕活动确定性编译为智能体记忆",
-      "title_en": "Activity Frames： Deterministic Screen-Activity Compilation for Agent Memory and Replay",
-      "url": "https://arxiv.org/abs/2608.05784",
-      "permalink": "https://aihot.virxact.com/items/cmsj8x5n2036jroo5ewknk6ra",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
-      "discoveredAt": "2026-08-07T17:55:55.574Z",
-      "summary": "一项研究提出 Activity Frames，用确定性、零模型管线将被动捕获的屏幕活动编译为智能体记忆，输出字节一致、可缓存且可审计。在单人 128，756 帧、51 个活跃天的语料上，该编译器将一天原始捕获压缩为 86 倍更小的提示块，耗时 68 毫秒；智能体阅读该块的问答准确率达 98.4%，优于 LLM 摘要的 66-80%。",
-      "category": "paper",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsj8x5n2036jroo5ewknk6ra"
       }
     }
   ]

@@ -1,78 +1,78 @@
 {
-  "fetched_at": "2026-08-12T21:21:04.585Z",
+  "fetched_at": "2026-08-13T21:22:26.231Z",
   "source": "Simon Willison",
   "entries": [
     {
+      "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "link": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "updated": "2026-08-12T23:59:23+00:00",
+      "summary": "DeepSeek V4 Pro 0813 (on OpenRouter)"
+    },
+    {
+      "title": "alchemy-utils 0.1a0",
+      "link": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+      "updated": "2026-08-12T19:51:30+00:00",
+      "summary": "I've long pondered what a database agnostic version of my sqlite-utils Python library and CLI utility might look like. This morning (literally a shower project) I tasked Codex and GPT-5.6 Sol Ultra with building a prototype:"
+    },
+    {
       "title": "Quoting Florian Herrengt",
-      "link": "https://simonwillison.net/2026/Aug/12/florian-herrengt/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
       "updated": "2026-08-12T15:08:47+00:00",
       "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. \"So where does the data come from?\" \"Hmm... actually I don't know. Let me ask Claude.\" You sit next to each other watching an endless wall of text appear on the screen. Neither of you has any idea whether any of it is true but Claude seems very confident. [...] This project has become so convoluted, with so many layers and services, that no one on your team could possibly start to understand what's going on."
     },
     {
       "title": "There are no lossless transformations of natural-language text",
-      "link": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/",
       "updated": "2026-08-11T23:48:35+00:00",
       "summary": "There are no lossless transformations of natural-language text"
     },
     {
       "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "link": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
       "updated": "2026-08-11T22:40:45+00:00",
       "summary": "Stealing Reasoning Traces from Proprietary LLM APIs"
     },
     {
       "title": "datasette-upload-dbs 0.5a0",
-      "link": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
       "updated": "2026-08-11T20:35:13+00:00",
       "summary": "This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance, at which point that database will start being served by that instance."
     },
     {
       "title": "Introducing Muse Glimmer",
-      "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
       "updated": "2026-08-10T23:56:03+00:00",
       "summary": "Introducing Muse Glimmer"
     },
     {
       "title": "Quoting OpenClaw (running Opus 4.6)",
-      "link": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/10/openclaw/",
       "updated": "2026-08-10T02:05:16+00:00",
       "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already."
     },
     {
       "title": "Quoting Claude Opus 5 system prompt",
-      "link": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
       "updated": "2026-08-09T23:31:39+00:00",
       "summary": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos-access ). These events are after Claude's training-data cutoff, so Claude knows about them only from this notice. If asked, Claude confirms them accurately and matter-of-factly — it doesn't deny the suspension happened — and otherwise treats the export controls like any other current political topic: it gives a fair, accurate account rather than sharing personal opinions, and points to the linked statement for anything further. Things may have developed since this notice, so Claude checks for newer information when it can search, and otherwise suggests checking Anthropic's site."
     },
     {
       "title": "GitHub Models is now retired",
-      "link": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
       "updated": "2026-08-09T22:48:05+00:00",
       "summary": "GitHub Models is now retired"
     },
     {
       "title": "SQLite compressed text-history prototypes",
-      "link": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
       "updated": "2026-08-09T22:05:00+00:00",
       "summary": "I'm perennially interested in options for storing revision histories in relational databases. While out on a dog walk I had a new idea: how about taking the full text of every prior version in a big JSON array of strings and then applying zlib or zstd compression to the whole thing? Surely that would compress really well due to all of the repeated strings."
     },
     {
       "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-      "link": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+      "link": "https://simonwillison.net/2026/Aug/8/auto-mode/",
       "updated": "2026-08-08T22:36:03+00:00",
       "summary": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans"
-    },
-    {
-      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "link": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
-      "updated": "2026-08-08T14:06:41+00:00",
-      "summary": "My comment on Now we have a timeline of the OpenAI accidental attack against Hugging Face &mdash; Hacker News."
-    },
-    {
-      "title": "Quoting John Gruber",
-      "link": "https://simonwillison.net/2026/Aug/8/john-gruber/#atom-everything",
-      "updated": "2026-08-08T00:10:40+00:00",
-      "summary": "Me, I try to get into the mindset of playing live music, not recording a studio album. Except when I’m writing a piece where I really want it to be an album. Those aren’t rare , per se, but they’re occasional . If I tried to make every post a hall-of-famer I’d never get anything out. I’m aiming for professionalism. I’m performing live in front of an audience — not just jamming in my garage or bedroom, fucking around. So I’m careful and concentrate. I want to hit every note, in time. But at my best I’m moving from song to song."
     }
   ]
 }
