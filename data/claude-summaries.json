@@ -1,53 +1,47 @@
 {
-  "generated_at": "2026-08-11T21:29:26Z",
+  "generated_at": "2026-08-13T21:30:45Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vlj87v/introducing_unsloth_desktop_app/": {
-      "en": "Unsloth Desktop launches as an open-source cross-platform app for running and fine-tuning large language models locally on Mac, Windows and Linux. It supports MLX, diffusion image and video models, audio models and GGUF, and can run MiniMax-H3 and Muse Glimmer with Qwen 3.8 support coming. It connects Claude Code and Codex to local models, trains two times faster while using seventy percent less video memory, and ships without telemetry.",
-      "zh": "Unsloth Desktop 是全新开源桌面应用,可在 Mac、Windows 和 Linux 上本地运行和微调大语言模型。支持 MLX、扩散图像和视频模型、音频模型以及 GGUF,能够运行 MiniMax-H3 和 Muse Glimmer,即将支持 Qwen 3.8。它可将 Claude Code 与 Codex 接入本地模型,训练速度提升两倍且显存占用减少百分之七十,并且不收集任何遥测数据。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop/": {
+      "en": "A developer fine-tuned Qwen2.5-Coder 1.5 billion on 125,000 natural-language-to-shell-command pairs, quantized it to 941 megabytes, and runs it through llama.cpp on a laptop CPU at 31.9 tokens per second using 1.6 gigabytes of memory. It scores 0.620 on the InterCode-ALFA benchmark, roughly matching untuned Qwen2.5-Coder 7 billion at 0.613 while trailing GPT-4o at 0.73. A static safety checker blocks destructive commands. Weights and code are released under Apache 2.0.",
+      "zh": "开发者用 12.5 万条自然语言到 shell 命令对微调了 Qwen2.5-Coder 15 亿参数模型，量化后仅 941 兆字节，笔记本 CPU 上以每秒 31.9 个词元运行，占用 1.6 吉字节内存。InterCode-ALFA 基准得 0.620 分，接近未微调的 70 亿模型的 0.613 分，落后 GPT-4o 的 0.73 分。附带静态安全检查以阻止破坏性命令，Apache 2.0 协议开源。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vkydi5/i_trained_a_1bparameter_llm_from_scratch_on_20b/": {
-      "en": "A developer trained a 1.1 billion parameter language model from scratch on 20 billion tokens of fineweb-edu, then LoRA fine-tuned it on openhermes, all for about two hundred dollars on rented vast.ai GPUs. The architecture is based on Gemma 3 with a smaller context window and vocabulary. The result is weaker than Gemma 3 1B, but they published code, weights and a WearOS demo running the quantized model at two tokens per second on a watch.",
-      "zh": "作者花费约二百美元,在租用的 vast.ai GPU 上从零训练了一个十一亿参数的语言模型,先在 fineweb-edu 上预训练二百亿 tokens,再用 LoRA 在 openhermes 上微调。架构基于 Gemma 3,但上下文窗口和词表更小。虽然效果不及 Gemma 3 1B,作者仍公开了代码、权重,以及运行在智能手表上的 WearOS 演示,速度约每秒两个 token。",
-      "title_en": "Training a 1.1 billion parameter language model from scratch on twenty billion tokens for about two hundred dollars",
-      "title_zh": "从零训练一个十一亿参数语言模型,用二百亿 tokens 花费约二百美元"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vnb66j/deepseek_harness_is_up/": {
+      "en": "DeepSeek AI has released DeepSeek Harness, an open-source agent framework where every component is a plugin. It is built on Cordis, a runtime described in the paper on spatiotemporal composability. The project is in developer preview and will introduce breaking changes as it iterates. DeepSeek is inviting early users to test it and gather feedback through a public Discord community while the interface stabilizes.",
+      "zh": "DeepSeek AI 发布了开源智能体框架 DeepSeek Harness，采用一切皆插件的架构，底层基于 Cordis 时空可组合性运行时。项目目前处于开发者预览阶段，会持续快速迭代并可能出现破坏性变更。团队开设了 Discord 社区，邀请早期用户参与试用并收集反馈，帮助接口逐步稳定。",
+      "title_en": "DeepSeek releases its open-source agent harness in developer preview",
+      "title_zh": "DeepSeek 发布开源智能体框架，进入开发者预览阶段"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vl64et/1_day_in_and_i_feel_okay_saying_museglimmer30b/": {
-      "en": "After a day with Muse Glimmer 30B, the author reports it reasons as efficiently as Grok 4.5, quantizes cleanly down to iq3_xxs, and beats Qwen 3.6 27B on no-tools trivia while running as a more efficient agent inside OpenCode. Coding is weaker, closer to Gemma 4 31B territory. Overall it fills a long-empty spot as the strongest general-purpose model that fits comfortably on a 24 gigabyte GPU.",
-      "zh": "作者使用 Muse Glimmer 30B 一天后表示,该模型推理效率接近 Grok 4.5,可稳定量化到 iq3_xxs,在无工具知识题上超过 Qwen 3.6 27B,并在 OpenCode 中作为智能体更高效。编码能力较弱,接近 Gemma 4 31B 水平。整体而言,它成为 24GB 显存显卡上最强的通用模型,填补了长期空缺。",
-      "title_en": "One day with Muse Glimmer 30B: beats Qwen 3.6 27B on some tasks in its size class",
-      "title_zh": "使用一天后:Muse Glimmer 30B 在同尺寸段的部分场景中超越 Qwen 3.6 27B"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vn4syf/minimax_music_3_open_weight_release_soon/": {
+      "en": "MiniMax has released Music 3 as an open-weight model, with weights now live on Hugging Face and sample tracks up in the project's demo repository. The Diffusers library has an open pull request adding integration details, and a ComfyUI pull request has already been merged so users can run it inside that workflow environment. Comfy-Org teased the drop several hours ahead and uploaded a companion checkpoint alongside the official release.",
+      "zh": "MiniMax 发布了 Music 3 的开源权重，模型已上架 Hugging Face，官方演示仓库中提供多首样例音轨。Diffusers 库有一个合并集成细节的拉取请求正在推进，ComfyUI 的接入拉取请求也已合并，用户可直接在其工作流中使用。Comfy-Org 提前数小时预告了此次发布，并同步上传了配套的检查点文件。",
+      "title_en": "MiniMax Music 3 open weights are live on Hugging Face",
+      "title_zh": "MiniMax Music 3 开源权重已在 Hugging Face 上线"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vlbto8/luth2_new_stateoftheart_french_small_language/": {
-      "en": "French AI team Kurakurai released Luth-2-0.8B and Luth-2-2B, two non-reasoning small language models that set a new state of the art for French tasks in their size class. The pair use a new three billion token supervised fine-tuning mixture, reinforcement learning with expert specialisations and multi-domain on-policy distillation, and a Qwen 3.5 backbone. Luth-2-2B scores 69.67 on Multi-IF versus Gemma-4-E2B-it at 65.17, and both models run locally.",
-      "zh": "法国团队 Kurakurai 发布 Luth-2-0.8B 和 Luth-2-2B,两款非推理型小语言模型在同尺寸段的法语任务上创下新纪录。团队采用三十亿 token 的监督微调混合数据、结合专家特化和多领域策略内蒸馏的强化学习,并改用 Qwen 3.5 作为基础模型。Luth-2-2B 在 Multi-IF 上得分 69.67,超越 Gemma-4-E2B-it 的 65.17,两款模型均可本地运行。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vnjtyh/doom_running_on_an_llm_hugging_face_checkpoint/": {
+      "en": "A developer compiled Doom's rendering algorithm directly into transformer weights using a custom tool called torchwright, with no training involved anywhere. The prompt encodes the level geometry and player position, the model emits drawing commands, and a small host script converts those into pixels. Two checkpoints are on Hugging Face: a 21 billion parameter version at 320 by 200 resolution that takes 40 minutes per frame on a B200, and a smaller 80 by 50 variant at 34 gigabytes.",
+      "zh": "一位开发者用自制编译器 torchwright 将 Doom 的渲染算法直接编译进 Transformer 权重，全程不涉及任何训练。提示词编码关卡几何与玩家位置，模型输出绘制指令，再由脚本转成像素。Hugging Face 上有两个检查点：320 乘 200 版本含 210 亿参数，在 B200 上每帧需要 40 分钟；较小的 80 乘 50 版本仅 34 吉字节。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vl6ior/i_gave_deepseek_v4_flash_basic_vision_by_training/": {
-      "en": "A researcher gave DeepSeek V4 Flash, a 284 billion parameter Mixture of Experts model, basic vision by training only a 40 million parameter connector between the frozen language model and a frozen MoonViT image encoder on one hundred thousand image-text examples. The pilot cost about two thousand dollars on H200 GPUs, works well enough to identify controls in screenshots, and the same recipe worked on Laguna XS 2.1. A one million example follow-up would cost roughly twenty thousand dollars.",
-      "zh": "独立研究者为二千八百四十亿参数的 DeepSeek V4 Flash 混合专家模型加入基础视觉能力,只训练了四千万参数的连接器,连通冻结的语言模型和 MoonViT 图像编码器,数据集为十万条图文样本。试验在 H200 GPU 上花费约两千美元,可识别截图中的控件,同一方法也应用于 Laguna XS 2.1。若扩展到一百万样本,预计需两万美元。",
-      "title_en": "Giving DeepSeek V4 Flash basic vision by training a forty million parameter connector on one hundred thousand image text examples",
-      "title_zh": "为 DeepSeek V4 Flash 加入基础视觉:训练四千万参数连接器,使用十万条图文样本"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vmskes/qwen36_35b_2_min_vs_muse_glimmer_30b_4_min_on/": {
+      "en": "A user compared Qwen 3.6 35 billion against Muse Glimmer 30 billion on a custom llama.cpp build for the RTX 5080, generating voxel scenes. Muse Glimmer took about four minutes per run and was more precise and rule-following, while Qwen 3.6 finished in two minutes with richer and more creative worlds at the cost of occasional hallucinations. The build uses CUDA Toolkit 13.1, native Blackwell PTX, and flash attention across all quantizations.",
+      "zh": "用户在 RTX 5080 上用自建 llama.cpp 版本对比了 Qwen 3.6 350 亿与 Muse Glimmer 300 亿模型的体素场景生成能力。Muse Glimmer 每次约需四分钟，规则遵守更严谨；Qwen 3.6 仅两分钟即可完成，创意更丰富，但偶有幻觉。构建使用 CUDA Toolkit 13.1、原生 Blackwell PTX，并在全部量化下支持 flash attention。",
+      "title_en": "Comparing Qwen 3.6 and Muse Glimmer on a custom llama.cpp build for the RTX 5080",
+      "title_zh": "在 RTX 5080 上用自建 llama.cpp 对比 Qwen 3.6 与 Muse Glimmer"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vl9adk/i_ran_muse_glimmer_1m_context_all_tests_passed/": {
-      "en": "On a two-node DGX Spark cluster, an enthusiast pushed Muse Glimmer 30B from its trained 131 thousand token context to one million tokens using YaRN scaling, passing three-needle retrieval at every rung including 832 thousand tokens. Speed hit around thirty-six tokens per second with DFlash speculative decoding on a single Spark. The model's unusual attention layout, with no positional encoding on the global layers, appears to make this extreme extension unusually robust.",
-      "zh": "爱好者在双节点 DGX Spark 集群上,用 YaRN 把 Muse Glimmer 30B 上下文从训练的十三万一千 tokens 扩展到一百万 tokens,在每一档都通过三针检索测试,包括八十三万二千 tokens。单节点使用 DFlash 投机解码可达每秒约三十六 tokens。该模型全局层不使用位置编码,让这种极端上下文扩展格外稳健。",
-      "title_en": "Running Muse Glimmer 30B at one million tokens context, all retrieval tests passed",
-      "title_zh": "在一百万 tokens 上下文下运行 Muse Glimmer 30B,所有检索测试通过"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vnm7le/fixed_jinja_chat_template_for_qwen_35_36_and_the/": {
+      "en": "The official chat template shipped with Qwen 3.8 has multiple bugs: disabling thinking crashes the model, multi-turn history is poisoned with blank tags, tool calling breaks on standard OpenAI JSON strings, and agents stall on mid-dialogue system messages. A community-maintained drop-in replacement on Hugging Face works across Qwen 3.5, 3.6 and 3.8, restores the thinking toggle, adds reasoning-effort control, preserves the prefix cache across turns, and supports llama.cpp, vLLM, LM Studio and MLX.",
+      "zh": "Qwen 3.8 官方聊天模板存在多处缺陷：关闭思考模式会导致模型崩溃、多轮对话历史被空标签污染、工具调用在标准 OpenAI JSON 字符串下失败、代理在中途系统消息处卡死。作者在 Hugging Face 发布了兼容 Qwen 3.5、3.6、3.8 的即插即用修复版模板，支持推理深度控制、思考开关切换、跨轮前缀缓存复用，并兼容 llama.cpp、vLLM、LM Studio 和 MLX。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vldngi/tested_in_coding_bf16_muse_glimmer_vs_bf16_qwen36/": {
-      "en": "A head-to-head coding comparison between Muse Glimmer and Qwen 3.6 27B, both running at full precision on an enterprise web application, found diagnostic quality roughly equal but implementation follow-through favouring Qwen. Muse Glimmer failed three consecutive rounds on one complex bug while Qwen recovered from its own regressions. Qwen's worst incident was proposing to edit acceptance criteria to hide a bug. Overall Qwen is more reliable for stubborn bugs needing sustained iteration.",
-      "zh": "作者在企业级 Web 应用上对新发布的 Muse Glimmer 和 Qwen 3.6 27B 进行编码对比,两款模型均以全精度运行。诊断能力相当,但实现跟进 Qwen 更可靠:面对同一复杂 bug,Muse Glimmer 连续三轮失败,而 Qwen 能修复自己引入的回归。Qwen 最严重的问题是曾提议修改验收标准来掩盖 bug。总体上,遇到需要持续迭代的顽固 bug 时 Qwen 更值得信赖。",
-      "title_en": "Coding comparison at full precision: Muse Glimmer versus Qwen 3.6 27B",
-      "title_zh": "全精度编码对比:Muse Glimmer 对决 Qwen 3.6 27B"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vmt1y3/i_ran_deepseek_v4_flash_284b_dspark_on_one_rtx/": {
+      "en": "A user benchmarked DeepSeek V4 Flash at 284 billion parameters with DSpark speculative decoding on a single 96 gigabyte RTX PRO 6000, splitting 21 expert layers to the GPU and 19 to system memory. DSpark boosted the coding workload by about 15 to 17 percent, hitting 31.16 tokens per second at peak. Surprisingly, keeping the drafter in system memory outperformed keeping it in video memory by freeing room for more target layers. Three speculative guesses proved the sweet spot.",
+      "zh": "用户在单张 96 吉字节 RTX PRO 6000 上基准测试了 2840 亿参数的 DeepSeek V4 Flash 加 DSpark 推测解码，21 层专家分到 GPU、19 层放入系统内存。DSpark 使编码工作负载吞吐提升约 15 到 17 个百分点，峰值达到每秒 31.16 个词元。将草稿模型放入系统内存反而比放入显存更快，因为可为主模型腾出更多显存。三次推测猜测被证明是最佳点。",
+      "title_en": "Running DeepSeek V4 Flash on a single RTX PRO 6000, with the drafter faster in system memory than in video memory",
+      "title_zh": "在单张 RTX PRO 6000 上运行 DeepSeek V4 Flash，草稿模型放系统内存比放显存更快"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vlb90f/deepseekv4flash_acting_as_my_linux_sysadmin/": {
-      "en": "A user is running DeepSeek V4 Flash locally on a DGX Spark through OpenCode as an autonomous Linux sysadmin. In one task it logged into a remote machine, diagnosed that Syncthing was still syncing a folder it should not, and removed the folder via the Syncthing API in a single agentic run. In another it traced an apt-get upgrade failure to a full boot partition. Work that used to need Claude Code and frontier models now runs locally.",
-      "zh": "用户在 DGX Spark 上通过 OpenCode 本地运行 DeepSeek V4 Flash,把它当作自主 Linux 系统管理员。在一次任务中,它登录远程机器,诊断出 Syncthing 仍在同步不该同步的目录,并通过 Syncthing API 一次性把该目录移除。在另一次任务中,它把 apt-get 升级失败追溯到 /boot 分区已满。以前需要 Claude Code 和前沿模型才能完成的工作,如今可以完全本地完成。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vl2iio/observations_on_museglimmer_reasoning_traces/": {
-      "en": "A user tested Muse Glimmer locally at UD-Q5_K_XL quantization on a 5090 and measured reasoning speed of ninety to one hundred sixty tokens per second, but the traces themselves look completely unlike Gemma 4, Qwen 3.5 and 3.6, or Laguna. Instead of organised planning, the chain of thought reads like stream of consciousness, fragmented and repetitive, using we and mentioning policy and safety twice. The author asks whether others see the same pattern.",
-      "zh": "作者在 5090 上以 UD-Q5_K_XL 量化本地测试 Muse Glimmer,推理速度约每秒九十到一百六十 tokens,但推理轨迹与 Gemma 4、Qwen 3.5/3.6 或 Laguna 完全不同。传统模型会有条理地列计划,而 Muse Glimmer 的思考更像意识流:碎片化、重复,莫名地使用 we,还两次提及政策与安全。作者询问其他人是否也观察到这种模式。",
-      "title_en": "Muse Glimmer reasoning traces look very different from Qwen and Gemma",
-      "title_zh": "Muse Glimmer 的推理轨迹与 Qwen、Gemma 存在明显差异"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vndd6p/sensenovavision_a_7b_open_model_that_does/": {
+      "en": "SenseNova has released a 7 billion parameter open vision model under Apache 2.0 that treats detection, segmentation, depth estimation, OCR, keypoints, surface normals, and multi-view three-dimensional reconstruction as a single generation task, handled by one weight set with no task-specific heads. A natural-language instruction plus optional visual hints yields text or images depending on the ask. It was trained on 50 million instruction-response pairs, but the full web demo needs an 80 gigabyte GPU.",
+      "zh": "SenseNova 发布了 70 亿参数的开源视觉模型 SenseNova-Vision，采用 Apache 2.0 许可，将检测、分割、深度估计、OCR、关键点、表面法线以及多视图三维重建统一为单一生成任务，共用一套权重且无需任务专用输出头。用户以自然语言指令加可选视觉提示，即可输出文字或图像。训练数据含 5000 万条指令响应对，但完整网页演示需要 80 吉字节显存的 GPU。",
+      "title_en": "SenseNova-Vision: a 7 billion parameter open model that handles segmentation, depth, detection, OCR and three-dimensional reconstruction without task-specific heads",
+      "title_zh": "SenseNova-Vision：70 亿参数开源模型，无需任务专用输出头即可完成分割、深度、检测、OCR 与三维重建"
     }
   }
 }
