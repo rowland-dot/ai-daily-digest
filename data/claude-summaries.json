@@ -1,47 +1,40 @@
 {
-  "generated_at": "2026-08-13T21:30:45Z",
+  "generated_at": "2026-08-14T21:02:46Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop/": {
-      "en": "A developer fine-tuned Qwen2.5-Coder 1.5 billion on 125,000 natural-language-to-shell-command pairs, quantized it to 941 megabytes, and runs it through llama.cpp on a laptop CPU at 31.9 tokens per second using 1.6 gigabytes of memory. It scores 0.620 on the InterCode-ALFA benchmark, roughly matching untuned Qwen2.5-Coder 7 billion at 0.613 while trailing GPT-4o at 0.73. A static safety checker blocks destructive commands. Weights and code are released under Apache 2.0.",
-      "zh": "开发者用 12.5 万条自然语言到 shell 命令对微调了 Qwen2.5-Coder 15 亿参数模型，量化后仅 941 兆字节，笔记本 CPU 上以每秒 31.9 个词元运行，占用 1.6 吉字节内存。InterCode-ALFA 基准得 0.620 分，接近未微调的 70 亿模型的 0.613 分，落后 GPT-4o 的 0.73 分。附带静态安全检查以阻止破坏性命令，Apache 2.0 协议开源。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vo2iiz/a_preliminary_qwen3827b_model_card_is_live/": {
+      "en": "The Qwen3.8-27B model card is now visible on Hugging Face ahead of the full release. Scrolling past the countdown reveals a complete card with sections including Highlights, Model Overview, Quickstart, Best Practices, and Citation, though benchmark numbers were still absent at time of writing. A later edit confirms the model has gone live and community testing has begun, with roughly five and a half hours of waiting still remaining when the original post went up.",
+      "zh": "Qwen3.8-27B 的模型卡片已在 Hugging Face 提前公开，滚动到倒计时下方即可看到 Highlights、Model Overview、Quickstart、Best Practices、Citation 等章节，当时尚未附上基准测试数据。作者随后更新，确认模型正式上线，社区已开始测试。发文时距正式发布约还剩五个半小时。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnb66j/deepseek_harness_is_up/": {
-      "en": "DeepSeek AI has released DeepSeek Harness, an open-source agent framework where every component is a plugin. It is built on Cordis, a runtime described in the paper on spatiotemporal composability. The project is in developer preview and will introduce breaking changes as it iterates. DeepSeek is inviting early users to test it and gather feedback through a public Discord community while the interface stabilizes.",
-      "zh": "DeepSeek AI 发布了开源智能体框架 DeepSeek Harness，采用一切皆插件的架构，底层基于 Cordis 时空可组合性运行时。项目目前处于开发者预览阶段，会持续快速迭代并可能出现破坏性变更。团队开设了 Discord 社区，邀请早期用户参与试用并收集反馈，帮助接口逐步稳定。",
-      "title_en": "DeepSeek releases its open-source agent harness in developer preview",
-      "title_zh": "DeepSeek 发布开源智能体框架，进入开发者预览阶段"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1voblcs/qwen3827b_is_identical_to_qwen3627b/": {
+      "en": "Qwen3.8-27B shares an identical architecture with its predecessor Qwen3.6-27B, meaning every capability gain in the newer release comes from training improvements rather than any structural change. The poster links a diff viewer showing zero architectural changes between the two versions. The observation underscores how much room training data, curriculum, and optimization recipes still have to push open-weight model quality forward without adding parameters or restructuring the network."
+      ,
+      "zh": "有用户对比后发现 Qwen3.8-27B 与 Qwen3.6-27B 在架构上完全一致，两者结构差异为零。这意味着 3.8 版本的所有能力提升均来自训练方法的改进，而非模型结构调整。这一现象说明，在不增加参数、不改变网络结构的前提下，训练数据、课程设计与优化配方仍有很大空间提升开源权重模型的表现。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vn4syf/minimax_music_3_open_weight_release_soon/": {
-      "en": "MiniMax has released Music 3 as an open-weight model, with weights now live on Hugging Face and sample tracks up in the project's demo repository. The Diffusers library has an open pull request adding integration details, and a ComfyUI pull request has already been merged so users can run it inside that workflow environment. Comfy-Org teased the drop several hours ahead and uploaded a companion checkpoint alongside the official release.",
-      "zh": "MiniMax 发布了 Music 3 的开源权重，模型已上架 Hugging Face，官方演示仓库中提供多首样例音轨。Diffusers 库有一个合并集成细节的拉取请求正在推进，ComfyUI 的接入拉取请求也已合并，用户可直接在其工作流中使用。Comfy-Org 提前数小时预告了此次发布，并同步上传了配套的检查点文件。",
-      "title_en": "MiniMax Music 3 open weights are live on Hugging Face",
-      "title_zh": "MiniMax Music 3 开源权重已在 Hugging Face 上线"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vo6vvs/bitsandbytes_creator_teasing_new_quantization/": {
+      "en": "Tim Dettmers, creator of the bitsandbytes quantization library, is teasing a new quantization method that reportedly runs GLM 5.3 on a single DGX Spark at seven tokens per second, and DS4 Pro on a single B300 with 288 gigabytes of memory. The poster urges caution, noting that many quantization schemes over the years have promised big things without shipping. Still, Dettmers is a respected researcher, so the community will be watching to see whether this one materializes.",
+      "zh": "bitsandbytes 作者 Tim Dettmers 正在预告一种新的量化方法，据称可让 GLM 5.3 在单台 DGX Spark 上以每秒七个 token 运行，DS4 Pro 也能塞进一块 288 GB 显存的 B300。发帖者提醒不要过度期待，因为多年来许多量化方案都做过类似承诺却未能落地。但鉴于 Dettmers 的学术声誉，社区仍会持续关注其能否兑现。",
+      "title_en": "bitsandbytes creator Tim Dettmers teases a new quantization method running GLM 5.3 on a single DGX Spark at seven tokens per second",
+      "title_zh": "bitsandbytes 作者 Tim Dettmers 预告新量化方案，让 GLM 5.3 在单台 DGX Spark 上跑到每秒七个 token"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnjtyh/doom_running_on_an_llm_hugging_face_checkpoint/": {
-      "en": "A developer compiled Doom's rendering algorithm directly into transformer weights using a custom tool called torchwright, with no training involved anywhere. The prompt encodes the level geometry and player position, the model emits drawing commands, and a small host script converts those into pixels. Two checkpoints are on Hugging Face: a 21 billion parameter version at 320 by 200 resolution that takes 40 minutes per frame on a B200, and a smaller 80 by 50 variant at 34 gigabytes.",
-      "zh": "一位开发者用自制编译器 torchwright 将 Doom 的渲染算法直接编译进 Transformer 权重，全程不涉及任何训练。提示词编码关卡几何与玩家位置，模型输出绘制指令，再由脚本转成像素。Hugging Face 上有两个检查点：320 乘 200 版本含 210 亿参数，在 B200 上每帧需要 40 分钟；较小的 80 乘 50 版本仅 34 吉字节。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vnuymy/mistral_is_now_hosting_glm52/": {
+      "en": "Mistral has begun hosting GLM-5.2 through its own inference platform, priced below its flagship Mistral Medium 3.5 despite Z.ai being a direct competitor. The poster reads this as a possible strategic pivot, speculating that Mistral may be moving away from frontier model development to focus on selling compute and building smaller specialized models such as Shieldstral. The listing sits on Mistral's official model catalog page alongside its native offerings, making the pricing gap easy to verify.",
+      "zh": "Mistral 已开始通过自家推理平台托管 GLM-5.2，尽管 Z.ai 是其直接竞争对手，价格却比自家旗舰 Mistral Medium 3.5 更低。发帖者认为这可能预示战略转向，猜测 Mistral 或将放弃前沿模型研发，转而专注售卖算力并开发 Shieldstral 等小型专用模型。相关模型已列在 Mistral 官方模型目录中，价格差异一目了然。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vmskes/qwen36_35b_2_min_vs_muse_glimmer_30b_4_min_on/": {
-      "en": "A user compared Qwen 3.6 35 billion against Muse Glimmer 30 billion on a custom llama.cpp build for the RTX 5080, generating voxel scenes. Muse Glimmer took about four minutes per run and was more precise and rule-following, while Qwen 3.6 finished in two minutes with richer and more creative worlds at the cost of occasional hallucinations. The build uses CUDA Toolkit 13.1, native Blackwell PTX, and flash attention across all quantizations.",
-      "zh": "用户在 RTX 5080 上用自建 llama.cpp 版本对比了 Qwen 3.6 350 亿与 Muse Glimmer 300 亿模型的体素场景生成能力。Muse Glimmer 每次约需四分钟，规则遵守更严谨；Qwen 3.6 仅两分钟即可完成，创意更丰富，但偶有幻觉。构建使用 CUDA Toolkit 13.1、原生 Blackwell PTX，并在全部量化下支持 flash attention。",
-      "title_en": "Comparing Qwen 3.6 and Muse Glimmer on a custom llama.cpp build for the RTX 5080",
-      "title_zh": "在 RTX 5080 上用自建 llama.cpp 对比 Qwen 3.6 与 Muse Glimmer"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vo63d4/are_we_getting_qwen_38_35a3b/": {
+      "en": "Speculation about whether Qwen 3.8 will also ship a 35 billion parameter Mixture of Experts variant alongside the expected 27 billion dense model. The author notes that a dense-only release rules out the memory offloading tricks Mixture of Experts allows, recalling that Qwen 3.6 with 35 billion total parameters and 3 billion active ran at seventy tokens per second on an RTX 3060, while a similarly sized dense model would be roughly a hundred times slower under the same offloading strategy.",
+      "zh": "帖子讨论 Qwen 3.8 是否会同步推出 350 亿参数的 Mixture of Experts 版本。作者指出，若只发布 270 亿参数稠密模型，就无法使用 Mixture of Experts 的显存卸载技巧。他曾在 RTX 3060 上以每秒 70 个 token 运行 Qwen 3.6 的 350 亿总参数、30 亿激活版本，而同规模稠密模型在类似卸载方案下速度可能慢约一百倍。",
+      "title_en": "Will Qwen 3.8 also ship a 35 billion parameter Mixture of Experts variant alongside the dense release",
+      "title_zh": "Qwen 3.8 会同步推出 350 亿参数的 Mixture of Experts 版本吗"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnm7le/fixed_jinja_chat_template_for_qwen_35_36_and_the/": {
-      "en": "The official chat template shipped with Qwen 3.8 has multiple bugs: disabling thinking crashes the model, multi-turn history is poisoned with blank tags, tool calling breaks on standard OpenAI JSON strings, and agents stall on mid-dialogue system messages. A community-maintained drop-in replacement on Hugging Face works across Qwen 3.5, 3.6 and 3.8, restores the thinking toggle, adds reasoning-effort control, preserves the prefix cache across turns, and supports llama.cpp, vLLM, LM Studio and MLX.",
-      "zh": "Qwen 3.8 官方聊天模板存在多处缺陷：关闭思考模式会导致模型崩溃、多轮对话历史被空标签污染、工具调用在标准 OpenAI JSON 字符串下失败、代理在中途系统消息处卡死。作者在 Hugging Face 发布了兼容 Qwen 3.5、3.6、3.8 的即插即用修复版模板，支持推理深度控制、思考开关切换、跨轮前缀缓存复用，并兼容 llama.cpp、vLLM、LM Studio 和 MLX。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vnod14/dotsstudiodots3noteprev_hugging_face/": {
+      "en": "Introducing dots3-note preview, the first open-weight release in the dots3 family. It is a Mixture of Experts model with 280 billion total parameters, 16 billion active, and up to 512K context, and accepts text, images, video, and audio while producing text output. Targeted use cases include reasoning, tool use, multi-step agent workflows, code generation, multimodal understanding, and long-context processing. The dots3 family is planned to span multiple capability, latency, and cost tradeoffs, with this preview being the lightest member.",
+      "zh": "dots3-note preview 是 dots3 家族首个开放权重模型，采用 Mixture of Experts 架构，总参数 2800 亿、激活参数 160 亿，上下文长度可达 512K。它可理解文本、图像、视频与音频，仅输出文本，适用于推理、工具使用、多步智能体工作流、代码生成、多模态理解与长上下文任务。dots3 家族将覆盖不同能力、延迟与成本的组合，本次为其中最轻量的版本。",
+      "title_en": "dots3-note preview is the first open-weight release in the dots3 family, a Mixture of Experts model with 280 billion parameters",
+      "title_zh": "dots3-note preview 发布，dots3 家族首个开放权重模型，采用 2800 亿参数的 Mixture of Experts 架构"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vmt1y3/i_ran_deepseek_v4_flash_284b_dspark_on_one_rtx/": {
-      "en": "A user benchmarked DeepSeek V4 Flash at 284 billion parameters with DSpark speculative decoding on a single 96 gigabyte RTX PRO 6000, splitting 21 expert layers to the GPU and 19 to system memory. DSpark boosted the coding workload by about 15 to 17 percent, hitting 31.16 tokens per second at peak. Surprisingly, keeping the drafter in system memory outperformed keeping it in video memory by freeing room for more target layers. Three speculative guesses proved the sweet spot.",
-      "zh": "用户在单张 96 吉字节 RTX PRO 6000 上基准测试了 2840 亿参数的 DeepSeek V4 Flash 加 DSpark 推测解码，21 层专家分到 GPU、19 层放入系统内存。DSpark 使编码工作负载吞吐提升约 15 到 17 个百分点，峰值达到每秒 31.16 个词元。将草稿模型放入系统内存反而比放入显存更快，因为可为主模型腾出更多显存。三次推测猜测被证明是最佳点。",
-      "title_en": "Running DeepSeek V4 Flash on a single RTX PRO 6000, with the drafter faster in system memory than in video memory",
-      "title_zh": "在单张 RTX PRO 6000 上运行 DeepSeek V4 Flash，草稿模型放系统内存比放显存更快"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vndd6p/sensenovavision_a_7b_open_model_that_does/": {
-      "en": "SenseNova has released a 7 billion parameter open vision model under Apache 2.0 that treats detection, segmentation, depth estimation, OCR, keypoints, surface normals, and multi-view three-dimensional reconstruction as a single generation task, handled by one weight set with no task-specific heads. A natural-language instruction plus optional visual hints yields text or images depending on the ask. It was trained on 50 million instruction-response pairs, but the full web demo needs an 80 gigabyte GPU.",
-      "zh": "SenseNova 发布了 70 亿参数的开源视觉模型 SenseNova-Vision，采用 Apache 2.0 许可，将检测、分割、深度估计、OCR、关键点、表面法线以及多视图三维重建统一为单一生成任务，共用一套权重且无需任务专用输出头。用户以自然语言指令加可选视觉提示，即可输出文字或图像。训练数据含 5000 万条指令响应对，但完整网页演示需要 80 吉字节显存的 GPU。",
-      "title_en": "SenseNova-Vision: a 7 billion parameter open model that handles segmentation, depth, detection, OCR and three-dimensional reconstruction without task-specific heads",
-      "title_zh": "SenseNova-Vision：70 亿参数开源模型，无需任务专用输出头即可完成分割、深度、检测、OCR 与三维重建"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vobndt/qwen38_benchmarks_converted_to_charts/": {
+      "en": "A community effort converts Qwen3.8's published benchmark numbers, taken directly from the Hugging Face model page, into a set of charts that make the scores easier to scan than the original tables. Four preview images accompany the post, though no additional commentary or interpretation is offered. The poster frames it as a visualization aid for other users still digesting the release, rather than an independent evaluation of the model's actual capabilities.",
+      "zh": "有社区用户将 Qwen3.8 在 Hugging Face 页面上公布的基准测试分数转换成四张图表，方便他人一眼查看结果，而不必去读原始表格。发帖者只提供了图片，没有附上额外的评论或分析，明确说明这只是可视化辅助，帮助刚看到发布的用户更快消化信息，并非对模型能力的独立测评。"
     }
   }
 }
