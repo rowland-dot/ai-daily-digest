@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-13T21:22:26.231Z",
+  "fetched_at": "2026-08-14T20:57:01.204Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "sqlite-utils 4.2.1",
+      "link": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
+      "updated": "2026-08-13T23:53:47+00:00",
+      "summary": "Fixes a crashing bug in sqlite-utils 4.2 . I'd introduced code that looks like this:"
+    },
+    {
+      "title": "sqlite-utils 4.2",
+      "link": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
+      "updated": "2026-08-13T20:11:29+00:00",
+      "summary": "Lots of improvements in this one relating to the table.transform() feature , which adds support for complex alter table operations by creating a fresh table, copying across the data and then dropping and replacing the old one."
+    },
+    {
+      "title": "llm-gemini 0.33",
+      "link": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+      "updated": "2026-08-13T19:37:34+00:00",
+      "summary": "It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 ."
+    },
+    {
+      "title": "alchemy-utils 0.1a1",
+      "link": "https://simonwillison.net/2026/Aug/13/alchemy-utils/",
+      "updated": "2026-08-13T03:03:17+00:00",
+      "summary": "Performance boost for DuckDB exports and CSV imports, see here ."
+    },
     {
       "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
       "link": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/10/openclaw/",
       "updated": "2026-08-10T02:05:16+00:00",
       "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already."
-    },
-    {
-      "title": "Quoting Claude Opus 5 system prompt",
-      "link": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
-      "updated": "2026-08-09T23:31:39+00:00",
-      "summary": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos-access ). These events are after Claude's training-data cutoff, so Claude knows about them only from this notice. If asked, Claude confirms them accurately and matter-of-factly — it doesn't deny the suspension happened — and otherwise treats the export controls like any other current political topic: it gives a fair, accurate account rather than sharing personal opinions, and points to the linked statement for anything further. Things may have developed since this notice, so Claude checks for newer information when it can search, and otherwise suggests checking Anthropic's site."
-    },
-    {
-      "title": "GitHub Models is now retired",
-      "link": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
-      "updated": "2026-08-09T22:48:05+00:00",
-      "summary": "GitHub Models is now retired"
-    },
-    {
-      "title": "SQLite compressed text-history prototypes",
-      "link": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
-      "updated": "2026-08-09T22:05:00+00:00",
-      "summary": "I'm perennially interested in options for storing revision histories in relational databases. While out on a dog walk I had a new idea: how about taking the full text of every prior version in a big JSON array of strings and then applying zlib or zstd compression to the whole thing? Surely that would compress really well due to all of the repeated strings."
-    },
-    {
-      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-      "link": "https://simonwillison.net/2026/Aug/8/auto-mode/",
-      "updated": "2026-08-08T22:36:03+00:00",
-      "summary": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans"
     }
   ]
 }

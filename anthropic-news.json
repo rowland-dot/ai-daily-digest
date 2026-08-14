@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T21:22:25.790Z",
+  "fetched_at": "2026-08-14T20:57:00.944Z",
   "source": "Anthropic news",
   "items": [
     {
@@ -28,6 +28,13 @@
       "link": "https://www.anthropic.com/news/claude-sonnet-5",
       "pubDate": "2026-06-30T00:00:00.000Z",
       "pubDateText": "Jun 30, 2026",
+      "description": ""
+    },
+    {
+      "title": "Claude Text Watermark",
+      "link": "https://www.anthropic.com/news/claude-text-watermark",
+      "pubDate": "2026-08-14T00:00:00.000Z",
+      "pubDateText": "Aug 14, 2026",
       "description": ""
     },
     {
@@ -84,13 +91,6 @@
       "link": "https://www.anthropic.com/news/donation-public-first-action",
       "pubDate": "2026-07-21T00:00:00.000Z",
       "pubDateText": "Jul 21, 2026",
-      "description": ""
-    },
-    {
-      "title": "Rare Disease Research Grants",
-      "link": "https://www.anthropic.com/news/rare-disease-research-grants",
-      "pubDate": "2026-07-20T00:00:00.000Z",
-      "pubDateText": "Jul 20, 2026",
       "description": ""
     }
   ]

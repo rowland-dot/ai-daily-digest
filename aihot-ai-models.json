@@ -1,8 +1,98 @@
 {
-  "count": 18,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmst9yj3c05utrodz443l0odv",
+      "title": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
+      "title_en": "Gemini 3.7 Flash is now available to all Pro and Ultra users in Gemini chat. This model update deli…",
+      "url": "https://x.com/GeminiApp/status/2088326407730692538",
+      "permalink": "https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv",
+      "source": "X：Gemini (@GeminiApp)",
+      "publishedAt": "2026-08-14T18:06:29.000Z",
+      "discoveredAt": "2026-08-14T18:22:41.004Z",
+      "summary": "Gemini 3.7 Flash 现已向 Gemini 聊天中的 Pro 和 Ultra 用户开放。该模型更新提升了多步骤任务的推理与准确性，如智能整合数十个文件和邮件为一份主文档。同时，Gemini Spark 也已运行于 3.7 Flash，通过改进对 Google Workspace 应用的工具调用，让个人 AI 智能体更精准。",
+      "category": "ai-models",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv"
+      }
+    },
+    {
+      "id": "cmst3j53e03ncro068tgsr4xn",
+      "title": "Qwen开源 Qwen3.8 系列模型",
+      "title_en": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
+      "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
+      "permalink": "https://aihot.virxact.com/items/cmst3j53e03ncro068tgsr4xn",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-08-14T15:02:48.000Z",
+      "discoveredAt": "2026-08-14T15:22:45.052Z",
+      "summary": "Qwen兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmst3j53e03ncro068tgsr4xn"
+      }
+    },
+    {
+      "id": "cmssv94cg0h4mroffsb9e7a88",
+      "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+      "title_en": "dots3-note Preview：迈向服务真实生活的长程智能体，坚定的第一步",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
+      "permalink": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88",
+      "source": "公众号：小红书技术（dots.llm）",
+      "publishedAt": "2026-08-14T11:25:29.000Z",
+      "discoveredAt": "2026-08-14T11:31:00.943Z",
+      "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。",
+      "category": "ai-models",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88"
+      }
+    },
+    {
+      "id": "cmssir12d047oroffnpn5pcx1",
+      "title": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
+      "title_en": "GLM-5.3：前沿编程能力与涌现的网络安全能力",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492",
+      "permalink": "https://aihot.virxact.com/items/cmssir12d047oroffnpn5pcx1",
+      "source": "公众号：智谱（GLM）",
+      "publishedAt": "2026-08-14T05:31:04.000Z",
+      "discoveredAt": "2026-08-14T05:41:00.950Z",
+      "summary": "Zhipu发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一，并接近Claude Fable 5。模型在白盒代码审查等安全任务中表现持平Mythos 5，在CyberGym测试中得分84.5%。模型权重将在两周后开源，即日起上线ZCode、AutoClaw等工具。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmssir12d047oroffnpn5pcx1"
+      }
+    },
+    {
+      "id": "cmssi38vn03o9rofffr0z8lyb",
+      "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
+      "title_en": "This time， it's official. DeepSeek V4 Pro just landed. 🚀 @deepseek_ai DeepSeek-V4-Pro-0813 is now l…",
+      "url": "https://x.com/SiliconFlowAI/status/2088127458558271885",
+      "permalink": "https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "publishedAt": "2026-08-14T04:55:56.000Z",
+      "discoveredAt": "2026-08-14T05:22:30.653Z",
+      "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
+      "category": "ai-models",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb"
+      }
+    },
     {
       "id": "cmsrscwfn03f7ro0n7qijclds",
       "title": "Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型",
@@ -19,24 +109,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsrscwfn03f7ro0n7qijclds"
-      }
-    },
-    {
-      "id": "cmsrramim02jero0nte55cfgi",
-      "title": "MiniMax Music 3.0 发布：新一代开源权重、生产级全能音乐模型",
-      "title_en": "MiniMax Music 3.0： Next-Generation Open-Weights， Production-Ready & Versatile Music Model",
-      "url": "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model",
-      "permalink": "https://aihot.virxact.com/items/cmsrramim02jero0nte55cfgi",
-      "source": "MiniMax：Blog（网页）",
-      "publishedAt": "2026-08-13T16:52:23.676Z",
-      "discoveredAt": "2026-08-13T16:52:23.676Z",
-      "summary": "MiniMax 推出 Music 3.0，新一代音乐生成模型，可根据创意概念和可选歌词一次性完成整首歌的作曲、编曲、演奏与制作，最长支持五分钟。",
-      "category": "ai-models",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsrramim02jero0nte55cfgi"
       }
     },
     {
@@ -91,6 +163,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsqbnb8j01nrroosmwa5r6mj"
+      }
+    },
+    {
+      "id": "cmsrramim02jero0nte55cfgi",
+      "title": "MiniMax Music 3.0 发布：新一代开源权重、生产级全能音乐模型",
+      "title_en": "MiniMax Music 3.0： Next-Generation Open-Weights， Production-Ready & Versatile Music Model",
+      "url": "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model",
+      "permalink": "https://aihot.virxact.com/items/cmsrramim02jero0nte55cfgi",
+      "source": "MiniMax：Blog（网页）",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "discoveredAt": "2026-08-13T16:52:23.676Z",
+      "summary": "MiniMax 推出 Music 3.0，新一代音乐生成模型，可根据创意概念和可选歌词一次性完成整首歌的作曲、编曲、演奏与制作，最长支持五分钟。",
+      "category": "ai-models",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsrramim02jero0nte55cfgi"
       }
     },
     {
@@ -289,42 +379,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsmhbu4w0338ronxh92vej2u"
-      }
-    },
-    {
-      "id": "cmsixbbry1x0qronkhbbjukhr",
-      "title": "蚂蚁百灵开源 Ling-3.0-flash：124B 总参数 MoE 模型，支持 API、单机与高性能三种部署",
-      "title_en": "Ling-3.0-flash 开源：为真实世界而生的开放智能",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487457&idx=1&sn=24ad4a355d81291e53fbe680ca987112",
-      "permalink": "https://aihot.virxact.com/items/cmsixbbry1x0qronkhbbjukhr",
-      "source": "公众号：蚂蚁百灵（Ling）",
-      "publishedAt": "2026-08-07T12:02:16.000Z",
-      "discoveredAt": "2026-08-07T12:31:00.791Z",
-      "summary": "蚂蚁百灵正式开源新一代原生混合推理模型 Ling-3.0-flash，采用 124B 总参数、5.1B 激活参数的 MoE 架构，并提供 FP8、FP4、INT4 等多个版本。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsixbbry1x0qronkhbbjukhr"
-      }
-    },
-    {
-      "id": "cmsilvone1jf1ronk6fs8o4d4",
-      "title": "谷歌推出 WeatherNext 气旋模型，AI 高精度预报飓风平均提前 24 小时",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/986/951.htm",
-      "permalink": "https://aihot.virxact.com/items/cmsilvone1jf1ronk6fs8o4d4",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-07T06:11:01.000Z",
-      "discoveredAt": "2026-08-07T07:10:52.429Z",
-      "summary": "谷歌 DeepMind 联合多家机构推出 WeatherNext Cyclones 气旋预测模型，在路径、强度和风场结构预测精度上达到业界领先。该模型将有效预报时长从 2 天延长至 3 天，平均提前 24 小时，预测量级约相当于 10 年气象进展。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsilvone1jf1ronk6fs8o4d4"
       }
     }
   ]

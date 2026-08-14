@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 12,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -217,60 +217,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmso6wigb0d1rrofw4l6ifmm7"
-      }
-    },
-    {
-      "id": "cmsiys4dz1yqironkuitnfi7t",
-      "title": "斯坦福与 Arc Institute 用 AI 设计全新病毒基因组，16 种在实验室成功杀死细菌",
-      "title_en": "Stanford and Arc Institute scientists used AI to design new viruses that killed bacteria in the lab",
-      "url": "https://the-decoder.com/stanford-and-arc-institute-scientists-used-ai-to-design-new-viruses-that-killed-bacteria-in-the-lab",
-      "permalink": "https://aihot.virxact.com/items/cmsiys4dz1yqironkuitnfi7t",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-08-07T12:50:56.000Z",
-      "discoveredAt": "2026-08-07T13:12:02.670Z",
-      "summary": "斯坦福大学与 Arc Institute 团队用 AI 模型 Evo 从零设计完整病毒基因组，并在实验室构建出 16 种自然界不存在的功能性病毒。Evo 提出 70 万个候选基因组，团队仅筛选最有希望的 285 个序列合成并植入细菌，其中 16 个成功复制并杀死宿主。该研究已通过同行评审发表于《Science》，但 Evo 未接受人类病原体数据训练，且能否推广至其他病毒类群仍是未知数。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsiys4dz1yqironkuitnfi7t"
-      }
-    },
-    {
-      "id": "cmsiry2eo1r4tronkt9qv2twu",
-      "title": "小红书联合浙大、复旦提出 CULTURE-MT：首个面向社媒翻译的「文化有效性」评测基准，入选 ICML 2026",
-      "title_en": "AI 翻译看得懂字，却读不懂「梗」？小红书联合浙大、复旦提出首个「文化有效性」评测标准，入选 ICML 2026",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496008&idx=1&sn=08f2ce717483f63bc00a2181e59e3f40",
-      "permalink": "https://aihot.virxact.com/items/cmsiry2eo1r4tronkt9qv2twu",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-08-07T09:59:00.000Z",
-      "discoveredAt": "2026-08-07T10:00:44.054Z",
-      "summary": "小红书联合浙江大学、复旦大学提出 CULTURE-MT，这是首个面向中英社媒笔记翻译、兼顾文化符号传递与情感共鸣的评测基准，并首次提出「文化有效性」评估标准与自动评估模型 JUDGER（准确率 86.03%）。",
-      "category": "paper",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsiry2eo1r4tronkt9qv2twu"
-      }
-    },
-    {
-      "id": "cmsj4jrne24d5ronkvb40rucl",
-      "title": "扩展分类流映射（Categorical Flow Maps）规模",
-      "title_en": "Scaling Categorical Flow Maps",
-      "url": "https://machinelearning.apple.com/research/scaling-categorical-flow-maps",
-      "permalink": "https://aihot.virxact.com/items/cmsj4jrne24d5ronkvb40rucl",
-      "source": "Apple Machine Learning Research（RSS）",
-      "publishedAt": "2026-08-07T00:00:00.000Z",
-      "discoveredAt": "2026-08-07T15:53:31.766Z",
-      "summary": "连续扩散与流匹配模型有望成为语言建模中自回归方法的有力替代，可解锁加速采样与倾斜等连续模态优势。近期研究通过高斯分布与one-hot编码数据分布间的简单流匹配过程，实现离散数据的连续生成，并借助分类流映射（CFMs）验证了加速采样的可行性，样本质量具有竞争力。",
-      "category": "paper",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsj4jrne24d5ronkvb40rucl"
       }
     }
   ]

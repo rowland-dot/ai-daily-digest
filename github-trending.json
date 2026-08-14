@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T21:22:25.030Z",
+  "fetched_at": "2026-08-14T20:57:00.496Z",
   "repos": [
     {
       "owner": "cathrynlavery",
@@ -8,31 +8,9 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 14098,
-      "forks": 847,
-      "starsToday": 4504
-    },
-    {
-      "owner": "semantica-agi",
-      "name": "semantica",
-      "url": "https://github.com/semantica-agi/semantica",
-      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6534,
-      "forks": 689,
-      "starsToday": 727
-    },
-    {
-      "owner": "anthropics",
-      "name": "skills",
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 168955,
-      "forks": 20126,
-      "starsToday": 383
+      "stars": 17073,
+      "forks": 1012,
+      "starsToday": 3651
     },
     {
       "owner": "cactus-compute",
@@ -41,42 +19,9 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 4904,
-      "forks": 332,
-      "starsToday": 768
-    },
-    {
-      "owner": "altic-dev",
-      "name": "FluidVoice",
-      "url": "https://github.com/altic-dev/FluidVoice",
-      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 9819,
-      "forks": 661,
-      "starsToday": 187
-    },
-    {
-      "owner": "unslothai",
-      "name": "unsloth",
-      "url": "https://github.com/unslothai/unsloth",
-      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 71004,
-      "forks": 6404,
-      "starsToday": 354
-    },
-    {
-      "owner": "macro-inc",
-      "name": "macro",
-      "url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 2554,
-      "forks": 272,
-      "starsToday": 1180
+      "stars": 5534,
+      "forks": 367,
+      "starsToday": 661
     },
     {
       "owner": "megadose",
@@ -85,9 +30,20 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 12372,
-      "forks": 1667,
-      "starsToday": 166
+      "stars": 12800,
+      "forks": 1715,
+      "starsToday": 427
+    },
+    {
+      "owner": "macro-inc",
+      "name": "macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 2981,
+      "forks": 301,
+      "starsToday": 435
     },
     {
       "owner": "smicallef",
@@ -96,20 +52,20 @@
       "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 20636,
-      "forks": 3313,
-      "starsToday": 278
+      "stars": 20905,
+      "forks": 3339,
+      "starsToday": 292
     },
     {
-      "owner": "NVIDIA-NeMo",
-      "name": "Switchyard",
-      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 1172,
-      "forks": 104,
-      "starsToday": 408
+      "owner": "citrolabs",
+      "name": "ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 10306,
+      "forks": 526,
+      "starsToday": 153
     },
     {
       "owner": "holaboss-ai",
@@ -118,64 +74,31 @@
       "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 6512,
-      "forks": 597,
-      "starsToday": 380
+      "stars": 7221,
+      "forks": 634,
+      "starsToday": 769
     },
     {
-      "owner": "kepano",
-      "name": "obsidian-skills",
-      "url": "https://github.com/kepano/obsidian-skills",
-      "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
-      "language": "",
-      "languageColor": "",
-      "stars": 45650,
-      "forks": 3294,
-      "starsToday": 411
-    },
-    {
-      "owner": "3b1b",
-      "name": "manim",
-      "url": "https://github.com/3b1b/manim",
-      "description": "Animation engine for explanatory math videos",
+      "owner": "github",
+      "name": "spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 90818,
-      "forks": 7529,
-      "starsToday": 204
-    },
-    {
-      "owner": "msitarzewski",
-      "name": "agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 145148,
-      "forks": 23483,
-      "starsToday": 762
-    },
-    {
-      "owner": "Lightricks",
-      "name": "LTX-2",
-      "url": "https://github.com/Lightricks/LTX-2",
-      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 8889,
-      "forks": 1404,
-      "starsToday": 201
+      "stars": 128417,
+      "forks": 11471,
+      "starsToday": 1147
     },
     {
       "owner": "lightningpixel",
       "name": "modly",
       "url": "https://github.com/lightningpixel/modly",
-      "description": "Desktop app to generate 3D models from images using local AI — runs entirely on your GPU",
+      "description": "Desktop app to generate 3D models from images or prompt using local AI — runs entirely on your GPU",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 5348,
-      "forks": 574,
-      "starsToday": 221
+      "stars": 5880,
+      "forks": 598,
+      "starsToday": 580
     },
     {
       "owner": "infiniflow",
@@ -184,9 +107,86 @@
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 87974,
-      "forks": 10347,
-      "starsToday": 473
+      "stars": 88375,
+      "forks": 10379,
+      "starsToday": 474
+    },
+    {
+      "owner": "cursor",
+      "name": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 2790,
+      "forks": 226,
+      "starsToday": 69
+    },
+    {
+      "owner": "deepseek-ai",
+      "name": "awesome-deepseek-agent",
+      "url": "https://github.com/deepseek-ai/awesome-deepseek-agent",
+      "description": "",
+      "language": "",
+      "languageColor": "",
+      "stars": 5660,
+      "forks": 689,
+      "starsToday": 203
+    },
+    {
+      "owner": "semantica-agi",
+      "name": "semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 7476,
+      "forks": 775,
+      "starsToday": 1183
+    },
+    {
+      "owner": "rustdesk",
+      "name": "rustdesk",
+      "url": "https://github.com/rustdesk/rustdesk",
+      "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 120605,
+      "forks": 18463,
+      "starsToday": 182
+    },
+    {
+      "owner": "OpenCut-app",
+      "name": "OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 83084,
+      "forks": 8228,
+      "starsToday": 238
+    },
+    {
+      "owner": "unslothai",
+      "name": "unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 71449,
+      "forks": 6445,
+      "starsToday": 502
+    },
+    {
+      "owner": "ToolJet",
+      "name": "ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 39008,
+      "forks": 5258,
+      "starsToday": 302
     }
   ]
 }

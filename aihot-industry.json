@@ -1,8 +1,62 @@
 {
-  "count": 14,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmstc3u8j02xhro0xf5o1ouas",
+      "title": "Claude 文本水印机制如何运作",
+      "title_en": "How Claude's text watermark works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "permalink": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-08-14T19:22:48.546Z",
+      "discoveredAt": "2026-08-14T19:22:48.546Z",
+      "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
+      "category": "industry",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas"
+      }
+    },
+    {
+      "id": "cmst2gs6d02lmro06sb7as7av",
+      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+      "title_en": null,
+      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground",
+      "permalink": "https://aihot.virxact.com/items/cmst2gs6d02lmro06sb7as7av",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-08-14T14:27:14.000Z",
+      "discoveredAt": "2026-08-14T14:52:53.220Z",
+      "summary": null,
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmst2gs6d02lmro06sb7as7av"
+      }
+    },
+    {
+      "id": "cmst3joqo03pwro0658o4g1m3",
+      "title": "Cursor 正式被 SpaceX 收购",
+      "title_en": "Cursor is now a part of SpaceX",
+      "url": "https://cursor.com/blog/joining-spacex",
+      "permalink": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-08-14T12:00:00.000Z",
+      "discoveredAt": "2026-08-14T15:23:09.332Z",
+      "summary": "Cursor 已被 SpaceX 正式收购，完成自 4 月启动的收购流程。合并后 Cursor 将获得全球最大 GPU 集群，以构建更强且运行成本更低的模型，从而以更低价格向客户提供更强大的模型。本周三发布的 Grok 4.6 是双方合作成果的早期体现。",
+      "category": "industry",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3"
+      }
+    },
     {
       "id": "cmspo193n05q2rojeue8j2k5a",
       "title": "Research Gold 号称\"100%人类撰写、绝不使用AI\"，实则全程由AI驱动",
@@ -217,42 +271,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsjk6eiz0byoroo5cc4bcwg6"
-      }
-    },
-    {
-      "id": "cmsjbn0pq058vroo55qpgw1si",
-      "title": "OpenAI 将 Astra 列为首个\"关键\"网络安全模型",
-      "title_en": "After evaluating one of our upcoming models， Astra， we're treating it as our first \"critical\" model …",
-      "url": "https://x.com/OpenAI/status/2085801349866729975",
-      "permalink": "https://aihot.virxact.com/items/cmsjbn0pq058vroo55qpgw1si",
-      "source": "X：OpenAI (@OpenAI)",
-      "publishedAt": "2026-08-07T18:52:48.000Z",
-      "discoveredAt": "2026-08-07T19:12:01.086Z",
-      "summary": "OpenAI 在评估其即将推出的模型 Astra 后，依据\"准备框架\"将其列为首个\"关键\"网络安全模型。OpenAI 表示已为此情景做好规划，并将实施额外控制措施以确保 Astra 后续开发的安全。该公司正努力让 Astra 广泛可用，并将其先进网络能力交到防御者手中。",
-      "category": "industry",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsjbn0pq058vroo55qpgw1si"
-      }
-    },
-    {
-      "id": "cmsilvone1jezronk60ahdbgi",
-      "title": "OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/986/957.htm",
-      "permalink": "https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-07T06:28:51.000Z",
-      "discoveredAt": "2026-08-07T07:10:52.429Z",
-      "summary": "OpenAI 报告称全球超 10 亿用户使用 ChatGPT，使用方式从\"问答工具\"转向\"任务工具\"，工作场景中完成任务或创建内容的可能性是非工作场景的 2 倍以上。自 2026 年 4 月发布 ChatGPT Images 2.0 以来，多媒体相关消息占比升至 7.8%。35 岁及以上用户发送消息份额较 12 个月前增加 5 个百分点，法国和捷克增幅超 10 个百分点。",
-      "category": "industry",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi"
       }
     }
   ]
