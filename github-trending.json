@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-08-14T20:57:00.496Z",
+  "fetched_at": "2026-08-15T20:50:06.042Z",
   "repos": [
+    {
+      "owner": "cordiverse",
+      "name": "cordis",
+      "url": "https://github.com/cordiverse/cordis",
+      "description": "Meta-Framework of Spatiotemporal Composability",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 4000,
+      "forks": 197,
+      "starsToday": 616
+    },
     {
       "owner": "cathrynlavery",
       "name": "diagram-design",
@@ -8,108 +19,9 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "stars": 17073,
-      "forks": 1012,
-      "starsToday": 3651
-    },
-    {
-      "owner": "cactus-compute",
-      "name": "needle",
-      "url": "https://github.com/cactus-compute/needle",
-      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 5534,
-      "forks": 367,
-      "starsToday": 661
-    },
-    {
-      "owner": "megadose",
-      "name": "holehe",
-      "url": "https://github.com/megadose/holehe",
-      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 12800,
-      "forks": 1715,
-      "starsToday": 427
-    },
-    {
-      "owner": "macro-inc",
-      "name": "macro",
-      "url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 2981,
-      "forks": 301,
-      "starsToday": 435
-    },
-    {
-      "owner": "smicallef",
-      "name": "spiderfoot",
-      "url": "https://github.com/smicallef/spiderfoot",
-      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 20905,
-      "forks": 3339,
-      "starsToday": 292
-    },
-    {
-      "owner": "citrolabs",
-      "name": "ego-lite",
-      "url": "https://github.com/citrolabs/ego-lite",
-      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 10306,
-      "forks": 526,
-      "starsToday": 153
-    },
-    {
-      "owner": "holaboss-ai",
-      "name": "holaOS",
-      "url": "https://github.com/holaboss-ai/holaOS",
-      "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 7221,
-      "forks": 634,
-      "starsToday": 769
-    },
-    {
-      "owner": "github",
-      "name": "spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 128417,
-      "forks": 11471,
-      "starsToday": 1147
-    },
-    {
-      "owner": "lightningpixel",
-      "name": "modly",
-      "url": "https://github.com/lightningpixel/modly",
-      "description": "Desktop app to generate 3D models from images or prompt using local AI — runs entirely on your GPU",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 5880,
-      "forks": 598,
-      "starsToday": 580
-    },
-    {
-      "owner": "infiniflow",
-      "name": "ragflow",
-      "url": "https://github.com/infiniflow/ragflow",
-      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 88375,
-      "forks": 10379,
-      "starsToday": 474
+      "stars": 18495,
+      "forks": 1111,
+      "starsToday": 1619
     },
     {
       "owner": "cursor",
@@ -118,53 +30,20 @@
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 2790,
-      "forks": 226,
-      "starsToday": 69
+      "stars": 2930,
+      "forks": 231,
+      "starsToday": 152
     },
     {
-      "owner": "deepseek-ai",
-      "name": "awesome-deepseek-agent",
-      "url": "https://github.com/deepseek-ai/awesome-deepseek-agent",
-      "description": "",
-      "language": "",
-      "languageColor": "",
-      "stars": 5660,
-      "forks": 689,
-      "starsToday": 203
-    },
-    {
-      "owner": "semantica-agi",
-      "name": "semantica",
-      "url": "https://github.com/semantica-agi/semantica",
-      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "owner": "cactus-compute",
+      "name": "needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 7476,
-      "forks": 775,
-      "starsToday": 1183
-    },
-    {
-      "owner": "rustdesk",
-      "name": "rustdesk",
-      "url": "https://github.com/rustdesk/rustdesk",
-      "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 120605,
-      "forks": 18463,
-      "starsToday": 182
-    },
-    {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 83084,
-      "forks": 8228,
-      "starsToday": 238
+      "stars": 6017,
+      "forks": 402,
+      "starsToday": 551
     },
     {
       "owner": "unslothai",
@@ -173,9 +52,64 @@
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 71449,
-      "forks": 6445,
-      "starsToday": 502
+      "stars": 71986,
+      "forks": 6487,
+      "starsToday": 435
+    },
+    {
+      "owner": "public-apis",
+      "name": "public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 460027,
+      "forks": 50842,
+      "starsToday": 2476
+    },
+    {
+      "owner": "MakazhanAlpamys",
+      "name": "Soup",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 1597,
+      "forks": 259,
+      "starsToday": 303
+    },
+    {
+      "owner": "github",
+      "name": "spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 129115,
+      "forks": 11544,
+      "starsToday": 901
+    },
+    {
+      "owner": "megadose",
+      "name": "holehe",
+      "url": "https://github.com/megadose/holehe",
+      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 13081,
+      "forks": 1740,
+      "starsToday": 389
+    },
+    {
+      "owner": "altic-dev",
+      "name": "FluidVoice",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "stars": 10282,
+      "forks": 694,
+      "starsToday": 165
     },
     {
       "owner": "ToolJet",
@@ -184,9 +118,31 @@
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 39008,
-      "forks": 5258,
-      "starsToday": 302
+      "stars": 39466,
+      "forks": 5290,
+      "starsToday": 553
+    },
+    {
+      "owner": "HKUDS",
+      "name": "CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 47289,
+      "forks": 4388,
+      "starsToday": 100
+    },
+    {
+      "owner": "citrolabs",
+      "name": "ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 10876,
+      "forks": 552,
+      "starsToday": 546
     }
   ]
 }

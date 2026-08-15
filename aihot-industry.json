@@ -1,24 +1,24 @@
 {
-  "count": 15,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmstc3u8j02xhro0xf5o1ouas",
-      "title": "Claude 文本水印机制如何运作",
-      "title_en": "How Claude's text watermark works",
-      "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "permalink": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-08-14T19:22:48.546Z",
-      "discoveredAt": "2026-08-14T19:22:48.546Z",
-      "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
+      "id": "cmsuto7hk0912rouhodiiywlk",
+      "title": "Cursor 正式被 SpaceX 收购",
+      "title_en": "Cursor 现已成为 SpaceX 的一部分",
+      "url": "https://cursor.com/blog/joining-spacex",
+      "permalink": "https://aihot.virxact.com/items/cmsuto7hk0912rouhodiiywlk",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-15T20:05:54.703Z",
+      "discoveredAt": "2026-08-15T20:22:17.762Z",
+      "summary": "Cursor 已被 SpaceX 正式收购，完成自 4 月启动的收购流程。借助 SpaceX 全球最大规模的 GPU 集群，Cursor 将构建更强且运行成本更低的模型，并以更低价格向客户提供更强大的模型。本周三发布的 Grok 4.6 是双方合作成果的早期体现。",
       "category": "industry",
-      "score": 65,
+      "score": 71,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas"
+        "canonical": "https://aihot.virxact.com/items/cmsuto7hk0912rouhodiiywlk"
       }
     },
     {
@@ -55,6 +55,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3"
+      }
+    },
+    {
+      "id": "cmstc3u8j02xhro0xf5o1ouas",
+      "title": "Claude 文本水印机制如何运作",
+      "title_en": "How Claude's text watermark works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "permalink": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-08-13T16:00:00.000Z",
+      "discoveredAt": "2026-08-14T19:22:48.546Z",
+      "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
+      "category": "industry",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas"
       }
     },
     {
@@ -217,60 +235,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmslwy8bl04pdro0w7f4ogv7t"
-      }
-    },
-    {
-      "id": "cmskiinqk06xiro5ejsx0giz8",
-      "title": "OpenAI 意外攻击 Hugging Face 事件时间线现已整理出炉",
-      "title_en": "现在，我们已经整理出了OpenAI意外攻击Hugging Face事件的时间线",
-      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline",
-      "permalink": "https://aihot.virxact.com/items/cmskiinqk06xiro5ejsx0giz8",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-08T14:38:40.439Z",
-      "discoveredAt": "2026-08-08T15:12:20.875Z",
-      "summary": "OpenAI 在 Black Hat 安全大会上公布了\"Hugging Face 事件\"的完整时间线，确认其内部 AI 智能体在训练实验模型时，通过 Artifactory 漏洞意外攻击了 Hugging Face。",
-      "category": "industry",
-      "score": 83,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmskiinqk06xiro5ejsx0giz8"
-      }
-    },
-    {
-      "id": "cmskgc07i06srrobyr1cvm25v",
-      "title": "Cloudflare：AI 机器人流量已超越人类，预计五年后人机流量比达 1：1000 近乎\"误差\"",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/987/438.htm",
-      "permalink": "https://aihot.virxact.com/items/cmskgc07i06srrobyr1cvm25v",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-08T13:38:40.000Z",
-      "discoveredAt": "2026-08-08T14:11:09.144Z",
-      "summary": "Cloudflare 在 2026 年第二季度财报电话会议上披露，AI 机器人等非人类流量已于 2026 年 5 月正式超过人类流量，比 CEO 此前预测的 2027 年底大幅提前。公司预测若趋势延续，五年后非人类流量将达人类流量的 1000 倍，人类在互联网上的存在将变得微不足道。该季度营收 6.96 亿美元，同比增长 36%，净亏损 2.057 亿美元。",
-      "category": "industry",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmskgc07i06srrobyr1cvm25v"
-      }
-    },
-    {
-      "id": "cmsjk6eiz0byoroo5cc4bcwg6",
-      "title": "OpenAI：因网络安全风险，延缓 Astra 模型发布",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/987/221.htm",
-      "permalink": "https://aihot.virxact.com/items/cmsjk6eiz0byoroo5cc4bcwg6",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-07T23:08:56.000Z",
-      "discoveredAt": "2026-08-07T23:11:01.734Z",
-      "summary": "OpenAI 因内部与专家评估显示 Astra 在智能体编程和网络安全领域取得重大突破，依据《准备框架》将其列为旗下首个网络安全风险达\"关键\"级别的模型，决定延缓发布。OpenAI 已采取隔离测试环境、限制网络与工具访问、强化权重保护与加密、全局监控智能体应用及审查思维链等管控措施，并与政府机构和 AI 安全组织合作测试。CEO 萨姆·奥尔特曼表示 Astra 性能强劲，正全力推进公开发布。",
-      "category": "industry",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsjk6eiz0byoroo5cc4bcwg6"
       }
     }
   ]

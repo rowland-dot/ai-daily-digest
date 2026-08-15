@@ -1,139 +1,138 @@
 {
-  "fetched_at": "2026-08-14T20:57:01.779Z",
+  "fetched_at": "2026-08-15T20:50:07.638Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
-      "title": "A preliminary Qwen3.8-27B model card is live!",
-      "author": "-Cubie-",
-      "updated": "2026-08-14T09:30:11+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vo2iiz/a_preliminary_qwen3827b_model_card_is_live/",
+      "title": "Qwen 3.8 35BA3B spotted",
+      "author": "BazzyIm",
+      "updated": "2026-08-15T08:49:06+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1voxppd/qwen_38_35ba3b_spotted/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "If you scroll down from the countdown at https://huggingface. co/Qwen/Qwen3. 8-27B , you see a big model card with a bunch of sections: Highlights, Model Overview, Quickstart, Best Practices, Citation, etc!",
-      "body": "If you scroll down from the countdown at https://huggingface.co/Qwen/Qwen3.8-27B , you see a big model card with a bunch of sections: Highlights, Model Overview, Quickstart, Best Practices, Citation, etc!\n\nNo benchmarks on this yet as far as I can tell. We'll still need to wait another 5.5 hours for those I reckon.\n\nEdit: Ladies and gentlemen, the model is live. Let the testing begin!\n\nsubmitted by /-"
+      "summary": "https://preview.redd.it/xwbkbbj55ijh1.png?width=1554&format=png&auto=webp&s=abd354c8a6bef033d5fb8383c49e4a682ab22105",
+      "body": "https://preview.redd.it/xwbkbbj55ijh1.png?width=1554&format=png&auto=webp&s=abd354c8a6bef033d5fb8383c49e4a682ab22105\n\nJust wait and see\n\nhttps://github.com/modelscope/ms-swift/commit/ab726e9d445a6520a70df2c831177d46adb1f589\n\nsubmitted by /"
     },
     {
-      "title": "Qwen3.8-27B is identical to Qwen3.6-27B!",
-      "author": "Course_Latter",
-      "updated": "2026-08-14T16:12:35+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1voblcs/qwen3827b_is_identical_to_qwen3627b/",
+      "title": "Qwen 3.8 - 27B is a game changer",
+      "author": "Potential_Block4598",
+      "updated": "2026-08-15T00:09:13+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vonuu0/qwen_38_27b_is_a_game_changer/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Interestingly, the 3. 8 version has exactly the same architecture - meaning all the capability gains come from training improvements!",
-      "body": "Interestingly, the 3.8 version has exactly the same architecture - meaning all the capability gains come from training improvements!\n\nSee the diff (0 changes) here!\n\nhttps://hfviewer.com/compare/qwen3.6-27b-vs-qwen3.8-27b\n\nsubmitted by /"
+      "summary": "I had some time analyzing and remembering its custom implementation (it has custom RC4 decryption routine, that is tricky with string manipulation!",
+      "body": "So a bit of context, I am a cybersecurity senior analyst\n\nI am interested in LLMs for that field especially with MCPs to connect them to the tools or for writing scripts\n\nI started this field by doing assembly language reading for hacking games when I was a teenager then that became malware analysis then I started to analyze traffic and logs at work for a living\n\nBefore work I competed in cybersecurity competitions known as capture the flag to solve only one category of the challenges and that is malware analysis\n\nNow here is the scene in LLM x Cybersecurity\n\nEntry-level CTF challenges (I used to solve around 2017-2018, got first job in 2019) were solved and saturated by LLMs a long time ago (See intercode CTF benchmark)\n\nThen High level CTFs (NYU CTF Bench, CSAW challenges, and CyBench) these were solved a while ago\n\nToday we have\n\nCyberGym (vulnerability description (CVE report not real details) plus code base find vulnerability\n\nThat was solved\n\nThen ExploitGym (the one recent OpenAI model escaped and hacked hugging face to find solution, the 2 vulnerabilities themselves are trivial (JWT spoofing with no server side checks for Jfrog sandbox and JS + Python template in open source data viewer of Hugging face)\n\nStill impressive for a fully autonomous model\n\nExploitGym gives vulnerability details + exploit technique/details and codebase (I wonder how/why OpenAI model escaped it in the first place those details should manage it this is why I feel it is staged but whatever right)\n\nExploitBench\n\nMore realistic threat vector\n\n1-day not 0-day (0-day is a novel vulnerability no one else knows about it hence the name, 1-day is a known vulnerability patched, if in an open source project you can compare patches before and after and know it but not as valuable as 0-day since people will/should update their software, 0-days can and are used against high profile targets like in some 3rd world countries used for surveillance (and possibly non-3rd world countries ?!) but you usually can’t use a 1-day for that but still)\n\nSo ExploitBench is 1-days in V8 engine (used in chrome, electron vs code almost everything!!)\n\nGives the model a patch diff and codebase base that is it\n\nModels are going wild on ExploitBench and ExploitGym but haven’t gotten there yet at the moment and only recent frontier models improved massively instead of near zero across the board\n\nThis is a massive risk indicator\n\nImagine models capable of exploiting any and every piece of software written by less capable people or other weaker LLMs (complex vulnerabilities!)\n\nNot only that but global elite CTFs like DEF CON\n\nYou have an OpenSage harness (and ADK like Google adk or Anthropic adk, however this OpenSage ADK asks the model to design its own agent/s!, with whatever tools or sandbox environments it finds fitting for the Subagent to do the assigned subtask effectively, it can even design its own MCPs!, models don’t fully utilize that yet but some do and improved form like 39% to ~60% just by using that harness (same model!) )\n\nNow my own benchmarks are simple\n\nSome malware samples that I learned during my career and consider personal milestones\n\nAnd one SIEM analysis challenge (logs that contains an attack plus normal behavior)\n\nI tests on lots of models (Qwen3.6, heavily trimmed down Minimax 2.5 …etc, on my Strix halo and compared with opus at the time (the best opus at the time was 4.5!, it was better solved major stuff but didn’t implement the code required to decompose the malware and analyze its second stage)\n\nNow enter Qwen 3.8 27b\n\n3.\n\nWhat was SOTA like 6 months ago or around beginning of this year\n\nNow we have better local models at the same task\n\nQwen 3.8 devoured the malware that Opus couldn’t\n\nI had some time analyzing and remembering its custom implementation (it has custom RC4 decryption routine, that is tricky with string manipulation!\n\nAnd Strix halo isn’t the fastest LLM machine\n\nBy the time I remembered that malware and how it works\n\nQwen had already extracted and disassembled the decrypted payload!\n\nI am stunned\n\nThis is super dangerous\n\nI imagine how a single person / threat actor can now do what a state-sponsored intelligence service shacking team was required to do 1 year ago\n\nThese teams usually have\n\nUsual network scanning or mapping especially of their targets\n\nThis can be easily done by even weaker models or no models at all\n\nInitial access operations (phishing campaigns until some clicks or attempting to profile people like receptionist or sales people or HR, essentially any first line of communication at an organization or a company, to later make a targeted phishing against them)\n\nThis could be also better done with the aid of deep fakes and other stuff\n\nAdvanced and resourced teams would have zero-day or 1-day research teams\n\nEspecially against software used on the targets site from team 1\n\nThis third step can be fully automated with models now\n\nThis is the hardest step\n\nDefenders can use LLMs but it is much harder to integrate new tools than offensive teams\n\nAt this level the world will change\n\nTbh I always thought cybersecurity was harder to automate with LLMs than software engineering or IT\n\nBut with this, this is super unbelievable\n\nAnd not only a cloud model or an expensive to run locally model\n\nA local model! Can you believe it\n\nNo traces no API calls no nothing\n\nEmpowered with the right environment setup and tools and it can do what teams of attackers or malware analysts were needed to do\n\nBtw for malware analysis I give it Ghidra and a sandbox with python (it can use pefile or capstone or whatever it needs and it does use them!)\n\nAnd also recently I added a Vbox with Vbox MCP and a debugger inside that box with another MCP for the LLM to control both (snapshot restore functionality and debugger functionality)\n\nThese tasks were hard and not every security analyst was a malware analyst\n\nEven malware analysis positions are very rare and technical and don’t pay well because not much needed (I used to starts at assembly in assembly debuggers for nights at times!)\n\nThis is going above and beyond\n\nAnyone had similar moments in cybersecurity or anything else ?\n\nsubmitted by /"
     },
     {
-      "title": "It's actually crazy how good DSv4 Flash 0731 is",
-      "author": "Master-Meal-77",
-      "updated": "2026-08-14T05:37:05+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vnyiqa/its_actually_crazy_how_good_dsv4_flash_0731_is/",
+      "title": "[Megathread] Qwen 3.8 27B Release Day",
+      "author": "sammcj",
+      "updated": "2026-08-15T00:41:13+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1voojjz/megathread_qwen_38_27b_release_day/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "I didn't think we'd get here so quickly. I can run this shit on a computer I spent less than $2k for (back before prices exploded).",
-      "body": "I didn't think we'd get here so quickly. I can run this shit on a computer I spent less than $2k for (back before prices exploded). Crazy world\n\nSource: Artificial Analysis Intelligence Index v4.1.1\n\nsubmitted by /"
+      "summary": "Megathread to help with the influx of duplicate / similar posts around the release of the Qwen 3. 8 27B release. We'll try to clean up future duplicates around the release and point them here.",
+      "body": "Megathread to help with the influx of duplicate / similar posts around the release of the Qwen 3.8 27B release.\n\nQuants\n\nFine-Tunes & Abliterations\n\nChat Templates\n\nInference Server Support & Configuration\n\nExperiences, Benchmarks & Model Comparisons\n\nOfficial:\n\nhttps://huggingface.co/Qwen/Qwen3.8-27B\n\nhttps://huggingface.co/Qwen/Qwen3.8-27B-FP8\n\nPopular:\n\nhttps://huggingface.co/unsloth/Qwen3.8-27B-GGUF\n\nhttps://huggingface.co/bartowski/Qwen3.8-27B-GGUF\n\nhttps://huggingface.co/mlx-community/Qwen3.8-27B-MTP-bf16\n\nhttps://huggingface.co/mlx-community/Qwen3.8-27B-MTP-8bit\n\nhttps://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit\n\nWe'll try to clean up future duplicates around the release and point them here.\n\nsubmitted by /"
     },
     {
-      "title": "A modest community proposal for desloppification",
-      "author": "Dany0",
-      "updated": "2026-08-14T11:37:44+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vo4tim/a_modest_community_proposal_for_desloppification/",
+      "title": "If you would have told me half a year ago that a local model running in my office would be able to one-shot a Super Mario clone, I would have called you nuts. Qwen3.8-27B is a different beast.",
+      "author": "MikeNonect",
+      "updated": "2026-08-15T14:19:46+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vp438p/if_you_would_have_told_me_half_a_year_ago_that_a/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Over & over I see people post slop and excusing it as \"english is not my native language\". We can then translate it on our own.",
-      "body": "Over & over I see people post slop and excusing it as \"english is not my native language\". As if, if we could understand their language we'd see they wrote it all by hand\n\nFine then, new rule:\n\n> if you use an LLM to translate your post, you have to post the original native language version too (at least as a link) at the end or in a pinned comment\n\nWe can then translate it on our own. For example with traditional ML translation or desloppified models\n\nAll in favour vote yea\n\nsubmitted by /"
+      "summary": "Running the Q8 GGUF on my Framework Desktop is not fast, but it's extremely smart for overnight batches and background jobs. Can't wait to play around with MTP and other quants. Have any of you found ways to improve speed while keeping accuracy?",
+      "body": "Running the Q8 GGUF on my Framework Desktop is not fast, but it's extremely smart for overnight batches and background jobs. Can't wait to play around with MTP and other quants.\n\nHave any of you found ways to improve speed while keeping accuracy?\n\nhttps://mikeveerman.github.io/qwen38-27b-mario\n\nsubmitted by /"
     },
     {
-      "title": "Is waiting for Qwen 3.8 27B like waiting for Star War Episode one?",
-      "author": "Guilty-History-9249",
-      "updated": "2026-08-13T22:14:18+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vnp2ni/is_waiting_for_qwen_38_27b_like_waiting_for_star/",
+      "title": "Fable 5 refuses to touch Qwen deployments?",
+      "author": "NotumRobotics",
+      "updated": "2026-08-15T09:47:33+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1voynzn/fable_5_refuses_to_touch_qwen_deployments/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Is waiting for Qwen 3. 8 27B like waiting for Star War Episode one? I'm sweating waiting to get my hand on this to try it tomorrow morning. But it takes me back to Star Wars 1 and the disappointment after being so hyped to see it.",
-      "body": "Is waiting for Qwen 3.8 27B like waiting for Star War Episode one?\n\nI'm sweating waiting to get my hand on this to try it tomorrow morning. But it takes me back to Star Wars 1 and the disappointment after being so hyped to see it.\n\nOnly 16 hours and 46 minutes to go... 45, ...\n\nsubmitted by /"
+      "summary": "It could be just me and my setup, but I just tried to get fable to adjust my Qwen 3. 8 deployment script and (simple task, mostly knob turning).... and it outright refused. Censor box immediately kicks in.",
+      "body": "It could be just me and my setup, but I just tried to get fable to adjust my Qwen 3.8 deployment script and (simple task, mostly knob turning).... and it outright refused. Censor box immediately kicks in.\n\nNot reading too much into it, but it did make me giggle.\n\nsubmitted by /"
     },
     {
-      "title": "bitsandbytes creator teasing new quantization method: GLM 5.3 on a single DGX Spark at 7t/s",
-      "author": "rerri",
-      "updated": "2026-08-14T13:10:39+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6vvs/bitsandbytes_creator_teasing_new_quantization/",
+      "title": "A hunch: Qwen3.8-27B's general knowledge got pruned (good, if true)",
+      "author": "bonobomaster",
+      "updated": "2026-08-14T21:52:55+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vokpw6/a_hunch_qwen3827bs_general_knowledge_got_pruned/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Don't get too hyped + take with a grain of salt as there have been an endless amount of quantization schemes with big promises that never really became a thing. Tim Dettmers is a pretty well known researcher though, so maybe something will come of this. Time shall tell.",
-      "body": "Don't get too hyped + take with a grain of salt as there have been an endless amount of quantization schemes with big promises that never really became a thing.\n\nTim Dettmers is a pretty well known researcher though, so maybe something will come of this. Time shall tell.\n\nAnother tweet about the method, DS4 Pro on a single B300 (288 GB VRAM): https://xcancel.com/Tim_Dettmers/status/2087624491362820364\n\nsubmitted by /"
+      "summary": "I'm always testing an image prompt with a picture of a historic place in my hometown – a small but well known 250,000 people town in Germany. I'll just ask the model, in which City this photo has been taken.",
+      "body": "I'm always testing an image prompt with a picture of a historic place in my hometown – a small but well known 250,000 people town in Germany. I'll just ask the model, in which City this photo has been taken.\n\nWith the 3.6 generation of both the 27B and the 35B A3B variants, the models sometimes got the right answer and sometimes they didn't. So the signal for this particular knowledge was already weak.\n\nThe 35B variant got it right more often but at least, the models reasoning showed my City most of the times, even if it hallucinated the wrong final answer.\n\nBoth models could be easily nudged to the right answer with a few hints and then produced some little extra insight about the history or scene and its surroundings, that was mostly true.\n\nQwen3.8-27B on the other hand barely knows the city at all and has absolutely no clue about related popular, historic facts regarding the scenery or the surrounding buildings.\n\nNudging isn't very fruitful as well and if told the real name of the city, reasoning shows, that the model only agrees, because the user says so.\n\nI have the feeling, that Qwen labs maybe pruned useless general knowledge for more coding knowledge and agentic skill.\n\nAll models ud q4_k_xl variants, image-min-tokens 2048, with and without reasoning.\n\nAnyone else with this feeling?\n\nDisclaimer: My hunch could be very well absolute bullshit. Sample size way to low and methodically sloppy af.\n\nsubmitted by /"
     },
     {
-      "title": "Alright, We got Qwen3.8-27B. Now it's community's turn to make it more better & faster",
-      "author": "pmttyji",
-      "updated": "2026-08-14T16:28:14+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1voc15b/alright_we_got_qwen3827b_now_its_communitys_turn/",
+      "title": "Qwen3.8-27B is now up to ~3× faster on Apple Silicon with mlx-dspark",
+      "author": "A-Rahim",
+      "updated": "2026-08-14T21:54:36+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vokrcy/qwen3827b_is_now_up_to_3_faster_on_apple_silicon/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "How much memory takes for this model if you use full 256K context + unquantized KVCache + MTP? For Q4 & above quants. Particularly Q8 please, want to know it's possible to hold this in 32GB VRAM. Also share t/s stats.",
-      "body": "Facing any issues?\n\nChat Template is fine?\n\nLooping issue?\n\nToo much reasoning thing?\n\nHow's MTP with this one?\n\nAny other issues faced by Qwen3.6-27B & Qwen3.5-27B during release time?\n\nIf I missed any other items, please mention in your comments.\n\nAND\n\nShare comparison with Qwen3.6-27B. On Memory & t/s stats\n\nHow much memory takes for this model if you use full 256K context + unquantized KVCache + MTP? For Q4 & above quants. Particularly Q8 please, want to know it's possible to hold this in 32GB VRAM. Also share t/s stats.\n\nHow good is this model on Creative writing? Better than Qwen3.6-27B?\n\nsubmitted by /"
+      "summary": "mlx-dspark is an MLX port of DeepSeek's DSpark speculative-decoding drafters (the DeepSpec release), plus z-lab's DFlash, with one lossless verify loop. v0. 10. 0 adds Qwen3. 8-27B via RadixArk's drafter, the first SpecForge/SGLang-packaged head it loads.",
+      "body": "mlx-dspark is an MLX port of DeepSeek's DSpark speculative-decoding drafters (the DeepSpec release), plus z-lab's DFlash, with one lossless verify loop. v0.10.0 adds Qwen3.8-27B via RadixArk's drafter, the first SpecForge/SGLang-packaged head it loads.\n\nNumbers (M4 Pro 48 GB, medians of 3 , greedy, output ids identical to plain decoding):\n\n8-bit target: 2.45× mean at the auto-picked cap — 3.00× math / 2.38× code / 1.96× chat, 8.3 → 20.3 tok/s (code runs hit 3.18× ). Peak ~29 GB.\n\n4-bit target: 1.74× at 25.3 tok/s in ~18 GB (same drafter auto-resolves).\n\nFun property: 8-bit + drafter (20-27 tok/s) beats plain 4-bit (14.6 tok/s) — 8-bit quality at better-than-4-bit speed.\n\n\"Lossless\" is checked, not asserted: the target verifies every drafted token, and the Mac app's Race view runs speculative vs plain on the same prompt and diffs the token ids (video is that view).\n\nEverything is pip install mlx-dspark (OpenAI-compatible server + Anthropic Messages API, so it can back Claude Code with a local model), and there's a native Mac app (DMG/Homebrew).\n\nRepo: github.com/ARahim3/mlx-dspark\n\nI'd appreciate any feedback you might have after using it.\n\nsubmitted by /"
     },
     {
-      "title": "Mistral is now hosting GLM-5.2",
-      "author": "tengo_harambe",
-      "updated": "2026-08-14T02:36:20+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vnuymy/mistral_is_now_hosting_glm52/",
+      "title": "RetroCraft - Qwen 3.8 27B Q8, one shot with exact performance data on dual 3090s.",
+      "author": "No-Statement-0001",
+      "updated": "2026-08-14T20:50:38+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1voj571/retrocraft_qwen_38_27b_q8_one_shot_with_exact/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Not directly LOCALLlama related but I thought it was interesting since Mistral and Z. ai are competitors, and more surprisingly they are pricing it (GLM-5. 2) even cheaper than their current flagship model Mistral Medium 3. 5. Does this suggest a pivot in Mistral's strategy?",
-      "body": "Not directly LOCALLlama related but I thought it was interesting since Mistral and Z.ai are competitors, and more surprisingly they are pricing it (GLM-5.2) even cheaper than their current flagship model Mistral Medium 3.5. Does this suggest a pivot in Mistral's strategy? Are they going to abandon frontier model development and instead focus on selling compute while developing smaller specialized models like Shieldstral?\n\nhttps://docs.mistral.ai/models/zai-glm-5-2\n\nsubmitted by /"
+      "summary": "The demo video above was created with a single prompt using Qwen 3. 8 27B Q8KXL. create me a single page, html/js/css GeoCities, Laser Wave, 80's retro, minecraft clone named RetroCraft. Embed it in a single go binary that serves the HTML page.",
+      "body": "The demo video above was created with a single prompt using Qwen 3.8 27B Q8_K_XL.\n\nPrompt:\n\ncreate me a single page, html/js/css GeoCities, Laser Wave, 80's retro, minecraft clone named RetroCraft. Embed it in a single go binary that serves the HTML page.\n\nIt took Opencode only a few minutes to write the code and it worked without an adjustments. There's going to be lots of posts and demos today but I wanted to show the actual pp, tok/s, tokens in/out, numbers for of the whole run.\n\nllama-swap provides basic trajectory data and we can see that not every turn is has the same performance for prompt processing or generation:\n\nID Cached Prompt Generated Prompt Speed Gen Speed Duration Notes 251 43,473 95 90 142.46 t/s 48.76 t/s 2.76s final version 250 43,186 88 199 128.22 t/s 43.94 t/s 5.46s 249 42,757 255 173 311.94 t/s 40.11 t/s 5.37s prompt to improve cli flags 248 42,554 15 187 10.23 t/s 45.61 t/s 5.80s finished run 247 42,478 19 58 31.27 t/s 41.36 t/s 2.24s 246 41,330 194 953 91.89 t/s 45.97 t/s 23.07s 245 41,217 117 157 161.66 t/s 40.34 t/s 4.84s 244 41,007 19 190 32.43 t/s 65.54 t/s 3.71s 243 40,720 107 180 168.56 t/s 73.83 t/s 3.29s 242 40,032 521 168 464.05 t/s 77.38 t/s 3.50s 241 39,375 562 96 233.86 t/s 59.97 t/s 4.22s 240 39,194 185 510 256.77 t/s 39.97 t/s 13.69s 239 38,927 37 229 63.91 t/s 49.08 t/s 5.45s 238 38,719 28 179 49.58 t/s 44.10 t/s 4.82s 237 38,185 159 375 229.21 t/s 42.34 t/s 9.75s 236 37,818 55 311 89.87 t/s 52.56 t/s 6.72s 235 37,525 186 106 257.00 t/s 39.58 t/s 3.59s 234 37,317 20 187 33.91 t/s 62.15 t/s 3.79s 233 37,221 19 77 33.86 t/s 49.58 t/s 2.30s 232 36,801 19 400 33.45 t/s 55.57 t/s 7.94s 231 28,668 188 7,944 294.62 t/s 71.03 t/s 112.68s 230 28,342 118 209 198.16 t/s 51.91 t/s 4.77s start of agent implementation 229 8,931 51 19,361 70.58 t/s 40.89 t/s 475.21s initial prompt and reasoning. It did A LOT of thinking...\n\nHere are my llama-swap settings. The run was done using `Q3.8-27B-MTP:preserve-thinking-coding` in OpenCode. I found preserving the reasoning tokens greatly improves the results.\n\nmacros: \"server-latest\": | /path/to/llama-server/llama-server-latest --host 0.0.0.0 --port ${PORT} -ngl 999 -ngld 999 --no-mmap --no-warmup --log-verbosity 4 --fit off \"qwen-27B-server\": | ${server-latest} --temp 1.0 --min-p 0.0 --top-k 20 --top-p 0.95 --repeat_penalty 1.0 --presence_penalty 0.0 models: Q3.8-27B-MTP: sendLoadingState: false env: - \"CUDA_VISIBLE_DEVICES=GPU-6f0,GPU-f10\" filters: stripParams: \"temperature, top_k, top_p, repeat_penalty, min_p, presence_penalty\" setParamsByID: \"${MODEL_ID}:thinking-coding\": temperature: 0.6 presence_penalty: 0.0 \"${MODEL_ID}:preserve-thinking-coding\": temperature: 0.6 presence_penalty: 0.0 chat_template_kwargs: preserve_thinking: true enable_thinking: true \"${MODEL_ID}:instruct\": chat_template_kwargs: enable_thinking: false temperature: 0.7 top_p: 0.8 presence_penalty: 1.0 cmd: | ${qwen-27B-server} --model /path/to/models/Qwen3.8-27B-UD-Q8_K_XL.gguf # slightly too big for the full context --ctx-size 238000 --kv-unified --spec-type draft-mtp --spec-draft-n-max 3 --spec-draft-p-min 0.75 --tensor-split 50,50 -sm tensor -np 2 --batch-size 4096 --ubatch-size 512\n\nCode and high res video at https://github.com/mostlygeek/retrocraft\n\nsubmitted by /"
     },
     {
-      "title": "Are we getting Qwen 3.8 35-A3B?",
-      "author": "zyxciss",
-      "updated": "2026-08-14T12:36:25+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vo63d4/are_we_getting_qwen_38_35a3b/",
+      "title": "GPU prices haven't stopped climbing for 3 weeks straight across the EU, here's the data",
+      "author": "egudegi",
+      "updated": "2026-08-15T07:35:32+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vowi2d/gpu_prices_havent_stopped_climbing_for_3_weeks/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "So far, it seems like Qwen 3. 8 might drop today as a 27B dense model. If that’s the case, no MoE offloading this time , I used to run Qwen 3.",
-      "body": "So far, it seems like Qwen 3.8 might drop today as a 27B dense model. If that’s the case, no MoE offloading this time , I used to run Qwen 3.6 35B-A3B at around 70 tok/s on an RTX 3060, but offloading a dense model is a completely different story it can be 100× slower or Even slower\n\nsubmitted by /"
+      "summary": "hey again! I run a EU PC hardware price tracker PriceSquirrel , 25+ stores across 9 countries, and wanted to check: are GPU prices actually rising, or does it just feel that way? To make this defensible, I didn't just average \"whatever's in stock\" each day, that inflates the trend if cheap cards sell out and drop off the average.",
+      "body": "hey again! I run a EU PC hardware price tracker PriceSquirrel , 25+ stores across 9 countries, and wanted to check: are GPU prices actually rising, or does it just feel that way?\n\nTo make this defensible, I didn't just average \"whatever's in stock\" each day, that inflates the trend if cheap cards sell out and drop off the average. Instead I built a fixed basket: 176 GPU models tracked at 3+ different retailers, every single day for the last 30 days, no gaps, no swapping in or out.\n\nResult:\n\nJuly 15: €808.57 average\n\nAugust 14: €963.56 average\n\n+19.2% in one month, same 176 cards throughout\n\nThe rise wasn't sudden, it started climbing around July 24-25 and has been steady since, not one spike from a single event:\n\nJuly 15-23: flat, €805-815\n\nJuly 24-31: climbing, €826 → €906\n\nAug 1-14: continued rise, plateauing slightly in the last week, €910 → €964\n\nBy country, since it varies a bit:\n\nGermany: +19.6%\n\nFrance: +18.1%\n\nEU-wide: +19.2%\n\nPretty consistent across markets, not a single-country anomaly.\n\nMethodology, upfront: \"price\" here is each product's average price across whichever 3+ retailers carried it that day (not the single cheapest, not a blended market average across a shifting product list). Basket is fixed, same 176 SKUs day 1 and day 30, verified daily.\n\nHappy to break this down by tier (5080/5090) or AMD vs NVIDIA if there's interest, this is currently the aggregate number.\n\nSource: pricesquirrel.com , updated every 6 hours\n\nsubmitted by /"
     },
     {
-      "title": "dots3-note preview is the first open-weight model in the dots3 family",
-      "author": "jacek2023",
-      "updated": "2026-08-13T21:46:11+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vnod14/dotsstudiodots3noteprev_hugging_face/",
+      "title": "MiniMax Music 3 Infinite Radio",
+      "author": "Potential-Net-9375",
+      "updated": "2026-08-14T22:01:51+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vokxpk/minimax_music_3_infinite_radio/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs.",
-      "body": "dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs.\n\ndots3-note preview is optimized for a broad range of tasks, including:\n\nGeneral knowledge and instruction following;\n\nMathematical and logical reasoning;\n\nTool use and multi-step agent workflows;\n\nInteractive tasks that require exploration, memory updates, and adaptation;\n\nCode generation and code-based problem solving;\n\nImage, document, chart, audio, and video understanding;\n\nLong-context information processing.\n\nThe dots3 family is designed to include models with different trade-offs among capability, latency, and inference cost. dots3-note preview is the most lightweight member of the family.\n\nsubmitted by /",
-      "sourceLabel": "dots-studio/dots3-note-prev · Hugging Face"
+      "summary": "Give it one or more of your favorite music files, it'll analyze your tracks and generate music that sounds like it... forever! If you have an RTX 5080 or better (probably a 3090 too? ) you will likely be able to generate music over 1. 0x speed. Otherwise, there may be buffering and quality loss.",
+      "body": "Hot off the presses. ∞TAPEDECK\n\nGive it one or more of your favorite music files, it'll analyze your tracks and generate music that sounds like it...forever!\n\nIf you have an RTX 5080 or better (probably a 3090 too?) you will likely be able to generate music over 1.0x speed. Otherwise, there may be buffering and quality loss.\n\nsubmitted by /"
     },
     {
-      "title": "Qwen3.8 Benchmarks Converted to Charts",
-      "author": "Tccybo",
-      "updated": "2026-08-14T16:14:41+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vobndt/qwen38_benchmarks_converted_to_charts/",
+      "title": "Try out this \"high\" reasoning mode for 27B (tested on VLLM)",
+      "author": "TokenRingAI",
+      "updated": "2026-08-15T08:19:05+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vox89e/try_out_this_high_reasoning_mode_for_27b_tested/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Scores taken from their HF page. Hope it's easier to visualize for yall.",
-      "body": "https://preview.redd.it/uvdb7g4o7djh1.png?width=1600&format=png&auto=webp&s=1db6176144bcf8f40efb15cc04e8370ad52bfe2f\n\nhttps://preview.redd.it/rj4l66eq7djh1.png?width=1257&format=png&auto=webp&s=692b5f76c96e5910fff22ebf5765945af8ef7ec5\n\nhttps://preview.redd.it/80t99t5s7djh1.png?width=1600&format=png&auto=webp&s=f6b73672f1184a569fb0bd526c043215d3df55df\n\nhttps://preview.redd.it/6ba3u0mt7djh1.png?width=1600&format=png&auto=webp&s=db830ec1cce4baeb65aeca56a74b820b0a5b2fe1\n\nScores taken from their HF page. Hope it's easier to visualize for yall.\n\nsubmitted by /"
+      "summary": "After a lot of tweaking, I have come to the conclusion that 27B lacks a reasoning mode that is between low and xhigh. The \"medium\" mode isn't actually medium, it erases the explicit instructions to the model. When medium is enabled, the model acts very differently - to me it looks like it regresses to behaving more like 3. 6, and loses some of the 3. 8 gains.",
+      "body": "After a lot of tweaking, I have come to the conclusion that 27B lacks a reasoning mode that is between low and xhigh.\n\nThe \"medium\" mode isn't actually medium, it erases the explicit instructions to the model. When medium is enabled, the model acts very differently - to me it looks like it regresses to behaving more like 3.6, and loses some of the 3.8 gains.\n\nLow and high mode behavior in the model seem to be triggered almost exclusively by using certain keywords in the reasoning instructions, and act in a surprisingly binary manner. You can add all the additional instructions you want to the reasoning instructions, and tweak the prompt, but the model mostly ignores those changes. You can ask it for medium effort and it just won't do it.\n\nBecause of this weird behavior, I experimented with blending the words in the low and xhigh prompts together, until the model would output reasoning that was a more reasonable length.\n\nIt seemed to work pretty well, and the end result is a high reasoning mode, with a reasoning block that is typically around 1/5 the size of the xhigh reasoning.\n\nOutput quality seems good, more like xhigh than low or medium, and the reasoning is definitely much shorter, which makes the model much more enjoyable to use.\n\nPlay around with the chat template modification below, add \"high\" to your reasoning effort, and see if you can improve it further or if it makes the model worse\n\n-- add high to reasoning_effort -- {%- if resolved_reasoning_effort not in ('xhigh', 'high', 'medium', 'low') %} {{- raise_exception('Unexpected reasoning effort ' ~ reasoning_effort ~ '. Supported types are xhigh (default), high, medium, and low.') }} {%- endif %} -- add new blended prompt for high, which mixes the low & xhigh prompts -- {%- elif resolved_reasoning_effort == 'high' %} {%- set reasoning_instructions = 'Reasoning effort is set to halfway between low and xhigh. Please think careful but brief, validate key assumptions but keep it brief, and move quickly to the conclusion without unnecessary elaboration.' %}\n\nsubmitted by /"
     },
     {
-      "title": "Poll results 6 months later: When will we have Opus level with 30b model? Optimists win!",
-      "author": "Terminator857",
-      "updated": "2026-08-14T15:51:49+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vob107/poll_results_6_months_later_when_will_we_have/",
+      "title": "American LLMs have Chinese censorship too.",
+      "author": "fallingdowndizzyvr",
+      "updated": "2026-08-14T21:52:38+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1vokpnd/american_llms_have_chinese_censorship_too/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Should we conduct a new poll for fable level performance in a 30b model? I suspect we will get much more optimistic results.",
-      "body": "Poll at beginning of the year: https://www.reddit.com/r/LocalLLaMA/comments/1qj935h/poll_when_will_we_have_a_30b_open_weight_model_as/\n\nThe least voted option, 6 months, wins in my opinion, with 18 votes, based on: https://www.reddit.com/r/LocalLLaMA/comments/1vo9vi7/qwen_38_release/\n\nPoll summary:\n\n18 people voted for 6 months or less\n\n41 people voted for 1 year\n\n25 people voted for 18 months\n\n56 people voted for 2 years\n\n118 people voted for keep dreaming\n\n55 people voted for Doesn't matter because you'll be drooling over next model anyways\n\nShould we conduct a new poll for fable level performance in a 30b model? I suspect we will get much more optimistic results. :)\n\nsubmitted by /"
+      "summary": "A paper came out in Nature yesterday. It describes how Chinese censorship also makes it's way into American AI models.",
+      "body": "A paper came out in Nature yesterday. It describes how Chinese censorship also makes it's way into American AI models.\n\n\"We demonstrate that media scripted and curated by the Chinese state appears in LLM training datasets.\"\n\nhttps://www.nature.com/articles/s41586-026-10506-7\n\nMeta reported on this about a month ago.\n\n\"Key Finding: LLMs Tested are More Than Twice as Likely to Refuse to Criticize Repressive Leaders and Governments\"\n\nhttps://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/\n\nsubmitted by /"
     }
   ]
 }

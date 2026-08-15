@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -271,6 +271,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq"
+      }
+    },
+    {
+      "id": "cmsu7hwm403roroe0f1unbbsn",
+      "title": "Ling-3.0-tiny 正式开源：1.3B 激活参数如何进入真实任务",
+      "title_en": "Ling-3.0-tiny 正式开源：让 1.3B 激活参数，进入真实任务",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487496&idx=1&sn=6486908f50006a356d48168b0b2762f1",
+      "permalink": "https://aihot.virxact.com/items/cmsu7hwm403roroe0f1unbbsn",
+      "source": "公众号：蚂蚁百灵（Ling）",
+      "publishedAt": "2026-08-11T10:01:51.000Z",
+      "discoveredAt": "2026-08-11T10:01:51.000Z",
+      "summary": "蚂蚁百灵开源 Ling-3.0-tiny，一款总参数 7.9B、每 Token 仅激活 1.3B 参数的原生混合推理模型，同步提供 BF16、FP8 和 INT4 三个版本。",
+      "category": "ai-models",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsu7hwm403roroe0f1unbbsn"
       }
     },
     {

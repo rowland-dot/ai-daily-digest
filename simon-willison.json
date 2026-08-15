@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-08-14T20:57:01.204Z",
+  "fetched_at": "2026-08-15T20:50:07.040Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Northern Gannet",
+      "link": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
+      "updated": "2026-08-15T03:22:00+00:00",
+      "summary": ""
+    },
+    {
+      "title": "Don't classify. Hallucinate!",
+      "link": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+      "updated": "2026-08-14T21:54:35+00:00",
+      "summary": "Don't classify. Hallucinate!"
+    },
     {
       "title": "sqlite-utils 4.2.1",
       "link": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
       "updated": "2026-08-11T20:35:13+00:00",
       "summary": "This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance, at which point that database will start being served by that instance."
-    },
-    {
-      "title": "Introducing Muse Glimmer",
-      "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
-      "updated": "2026-08-10T23:56:03+00:00",
-      "summary": "Introducing Muse Glimmer"
-    },
-    {
-      "title": "Quoting OpenClaw (running Opus 4.6)",
-      "link": "https://simonwillison.net/2026/Aug/10/openclaw/",
-      "updated": "2026-08-10T02:05:16+00:00",
-      "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already."
     }
   ]
 }
