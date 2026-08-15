@@ -1,47 +1,45 @@
 {
-  "generated_at": "2026-08-13T21:30:45Z",
+  "generated_at": "2026-08-15T20:56:35Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop/": {
-      "en": "A developer fine-tuned Qwen2.5-Coder 1.5 billion on 125,000 natural-language-to-shell-command pairs, quantized it to 941 megabytes, and runs it through llama.cpp on a laptop CPU at 31.9 tokens per second using 1.6 gigabytes of memory. It scores 0.620 on the InterCode-ALFA benchmark, roughly matching untuned Qwen2.5-Coder 7 billion at 0.613 while trailing GPT-4o at 0.73. A static safety checker blocks destructive commands. Weights and code are released under Apache 2.0.",
-      "zh": "开发者用 12.5 万条自然语言到 shell 命令对微调了 Qwen2.5-Coder 15 亿参数模型，量化后仅 941 兆字节，笔记本 CPU 上以每秒 31.9 个词元运行，占用 1.6 吉字节内存。InterCode-ALFA 基准得 0.620 分，接近未微调的 70 亿模型的 0.613 分，落后 GPT-4o 的 0.73 分。附带静态安全检查以阻止破坏性命令，Apache 2.0 协议开源。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vonuu0/qwen_38_27b_is_a_game_changer/": {
+      "en": "A senior cybersecurity analyst reports that Qwen 3.8 27B running locally chewed through a personal malware analysis benchmark that stumped Opus 4.5. On a Strix Halo desktop wired to Ghidra, Python and a debugger via Model Context Protocol servers, the model disassembled a custom decrypted payload while the human was still reconstructing how it worked. The author argues this puts state-sponsored offensive capability within reach of a lone operator running a traceless local model.",
+      "zh": "一位资深网络安全分析师称,本地运行的Qwen 3.8 27B解出了Opus 4.5都搞不定的私人恶意软件分析基准。在Strix Halo桌面上通过Model Context Protocol服务器连接Ghidra、Python和调试器后,模型在人还在回想代码原理时就反汇编了自定义解密后的负载。作者认为这让原属国家级团队的攻击能力落到单人本地无痕模型手中。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnb66j/deepseek_harness_is_up/": {
-      "en": "DeepSeek AI has released DeepSeek Harness, an open-source agent framework where every component is a plugin. It is built on Cordis, a runtime described in the paper on spatiotemporal composability. The project is in developer preview and will introduce breaking changes as it iterates. DeepSeek is inviting early users to test it and gather feedback through a public Discord community while the interface stabilizes.",
-      "zh": "DeepSeek AI 发布了开源智能体框架 DeepSeek Harness，采用一切皆插件的架构，底层基于 Cordis 时空可组合性运行时。项目目前处于开发者预览阶段，会持续快速迭代并可能出现破坏性变更。团队开设了 Discord 社区，邀请早期用户参与试用并收集反馈，帮助接口逐步稳定。",
-      "title_en": "DeepSeek releases its open-source agent harness in developer preview",
-      "title_zh": "DeepSeek 发布开源智能体框架，进入开发者预览阶段"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1voojjz/megathread_qwen_38_27b_release_day/": {
+      "en": "The r/LocalLLaMA moderators fold Qwen 3.8 27B release-day discussion into a single thread, linking the official base and eight-bit floating point checkpoints on Hugging Face, popular GGUF conversions from Unsloth and bartowski, and Multi-Token Prediction MLX builds at four-bit, eight-bit and sixteen-bit. Placeholders cover quantization, fine-tunes and abliterations, chat templates, inference-server configuration, and community benchmarks, giving future duplicate posts a home to redirect to.",
+      "zh": "r/LocalLLaMA版主将Qwen 3.8 27B发布日的讨论合并成一个主贴,汇总Hugging Face上的官方权重和八位浮点权重、Unsloth与bartowski的GGUF转换,以及四位、八位、十六位的Multi-Token Prediction MLX版本,并为量化、微调、聊天模板、推理服务器配置和社区基准预留分区,方便将来的重复帖被引导至此。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vn4syf/minimax_music_3_open_weight_release_soon/": {
-      "en": "MiniMax has released Music 3 as an open-weight model, with weights now live on Hugging Face and sample tracks up in the project's demo repository. The Diffusers library has an open pull request adding integration details, and a ComfyUI pull request has already been merged so users can run it inside that workflow environment. Comfy-Org teased the drop several hours ahead and uploaded a companion checkpoint alongside the official release.",
-      "zh": "MiniMax 发布了 Music 3 的开源权重，模型已上架 Hugging Face，官方演示仓库中提供多首样例音轨。Diffusers 库有一个合并集成细节的拉取请求正在推进，ComfyUI 的接入拉取请求也已合并，用户可直接在其工作流中使用。Comfy-Org 提前数小时预告了此次发布，并同步上传了配套的检查点文件。",
-      "title_en": "MiniMax Music 3 open weights are live on Hugging Face",
-      "title_zh": "MiniMax Music 3 开源权重已在 Hugging Face 上线"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vokpw6/a_hunch_qwen3827bs_general_knowledge_got_pruned/": {
+      "en": "A German user notices that Qwen 3.8 27B has lost the general-knowledge recognition of a mid-sized German hometown that earlier Qwen 3.6 27B and 35B checkpoints could sometimes retrieve, and cannot be nudged toward the answer even when told the name outright. Their hunch is that Qwen deliberately traded away useless trivia for coding and agentic ability. They flag their own sample size as too small and ask whether anyone else sees the same pattern.",
+      "zh": "一位德国用户发现,Qwen 3.8 27B已经认不出他家乡这座中型德国小城,而早前的Qwen 3.6 27B和35B有时还能答对,如今甚至告知答案也无法说服模型。他猜Qwen这次刻意用没用的通识去换取编程与代理能力,并坦承样本量过小,想问社区是否也有同样感受。",
+      "title_en": "A hunch that Qwen 3.8 27B traded general knowledge away for coding and agentic ability",
+      "title_zh": "猜测称Qwen 3.8 27B用通识知识换取了编程和代理能力"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnjtyh/doom_running_on_an_llm_hugging_face_checkpoint/": {
-      "en": "A developer compiled Doom's rendering algorithm directly into transformer weights using a custom tool called torchwright, with no training involved anywhere. The prompt encodes the level geometry and player position, the model emits drawing commands, and a small host script converts those into pixels. Two checkpoints are on Hugging Face: a 21 billion parameter version at 320 by 200 resolution that takes 40 minutes per frame on a B200, and a smaller 80 by 50 variant at 34 gigabytes.",
-      "zh": "一位开发者用自制编译器 torchwright 将 Doom 的渲染算法直接编译进 Transformer 权重，全程不涉及任何训练。提示词编码关卡几何与玩家位置，模型输出绘制指令，再由脚本转成像素。Hugging Face 上有两个检查点：320 乘 200 版本含 210 亿参数，在 B200 上每帧需要 40 分钟；较小的 80 乘 50 版本仅 34 吉字节。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vokrcy/qwen3827b_is_now_up_to_3_faster_on_apple_silicon/": {
+      "en": "mlx-dspark is an MLX port of DeepSeek's DSpark speculative-decoding drafters plus z-lab's DFlash, and version 0.10.0 adds a RadixArk drafter for Qwen 3.8 27B. On an M4 Pro with 48 gigabytes, the eight-bit target reaches 2.45 times plain-decode speed on average and 3.18 times on code, rising from 8.3 to 20.3 tokens per second at about 29 gigabytes peak. Eight-bit plus drafter now beats plain four-bit throughput while keeping eight-bit output.",
+      "zh": "mlx-dspark是DeepSeek DSpark推测解码起草器与z-lab DFlash的MLX移植,0.10.0版新增支持Qwen 3.8 27B的RadixArk起草器。M4 Pro 48 GB上,八位目标平均比原生解码快2.45倍,代码任务达3.18倍,从每秒8.3提升到20.3个token,峰值约29 GB,吞吐已反超普通四位解码。",
+      "title_en": "Qwen 3.8 27B runs up to about three times faster on Apple Silicon with the mlx-dspark speculative decoder",
+      "title_zh": "使用mlx-dspark推测解码器后Qwen 3.8 27B在Apple Silicon上最高提速约三倍"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vmskes/qwen36_35b_2_min_vs_muse_glimmer_30b_4_min_on/": {
-      "en": "A user compared Qwen 3.6 35 billion against Muse Glimmer 30 billion on a custom llama.cpp build for the RTX 5080, generating voxel scenes. Muse Glimmer took about four minutes per run and was more precise and rule-following, while Qwen 3.6 finished in two minutes with richer and more creative worlds at the cost of occasional hallucinations. The build uses CUDA Toolkit 13.1, native Blackwell PTX, and flash attention across all quantizations.",
-      "zh": "用户在 RTX 5080 上用自建 llama.cpp 版本对比了 Qwen 3.6 350 亿与 Muse Glimmer 300 亿模型的体素场景生成能力。Muse Glimmer 每次约需四分钟，规则遵守更严谨；Qwen 3.6 仅两分钟即可完成，创意更丰富，但偶有幻觉。构建使用 CUDA Toolkit 13.1、原生 Blackwell PTX，并在全部量化下支持 flash attention。",
-      "title_en": "Comparing Qwen 3.6 and Muse Glimmer on a custom llama.cpp build for the RTX 5080",
-      "title_zh": "在 RTX 5080 上用自建 llama.cpp 对比 Qwen 3.6 与 Muse Glimmer"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1voj571/retrocraft_qwen_38_27b_q8_one_shot_with_exact/": {
+      "en": "A developer one-shots RetroCraft, an 80s-vintage single-page Minecraft clone served from a Go binary, using Qwen 3.8 27B at eight-bit precision on dual RTX 3090s driven by OpenCode. llama-swap trajectory data shows prompt processing swinging between 10 and 464 tokens per second and generation holding around 40 to 77 tokens per second across turns, with reasoning tokens preserved between requests giving noticeably better coding results.",
+      "zh": "一位开发者用Qwen 3.8 27B八位精度在双RTX 3090上一次生成了RetroCraft——一个80年代风格、由Go二进制内置的HTML/JS单页Minecraft克隆,由OpenCode驱动。llama-swap轨迹数据显示提示处理在每秒10到464个token间波动,生成稳定在每秒40到77个token,并且在请求间保留推理token明显提升编码效果。",
+      "title_en": "RetroCraft, a one-shot Minecraft clone from Qwen 3.8 27B at eight-bit precision on dual RTX 3090s with full performance data",
+      "title_zh": "RetroCraft是Qwen 3.8 27B八位在双RTX 3090上一次生成的Minecraft克隆并附完整性能数据"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vnm7le/fixed_jinja_chat_template_for_qwen_35_36_and_the/": {
-      "en": "The official chat template shipped with Qwen 3.8 has multiple bugs: disabling thinking crashes the model, multi-turn history is poisoned with blank tags, tool calling breaks on standard OpenAI JSON strings, and agents stall on mid-dialogue system messages. A community-maintained drop-in replacement on Hugging Face works across Qwen 3.5, 3.6 and 3.8, restores the thinking toggle, adds reasoning-effort control, preserves the prefix cache across turns, and supports llama.cpp, vLLM, LM Studio and MLX.",
-      "zh": "Qwen 3.8 官方聊天模板存在多处缺陷：关闭思考模式会导致模型崩溃、多轮对话历史被空标签污染、工具调用在标准 OpenAI JSON 字符串下失败、代理在中途系统消息处卡死。作者在 Hugging Face 发布了兼容 Qwen 3.5、3.6、3.8 的即插即用修复版模板，支持推理深度控制、思考开关切换、跨轮前缀缓存复用，并兼容 llama.cpp、vLLM、LM Studio 和 MLX。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vokxpk/minimax_music_3_infinite_radio/": {
+      "en": "MiniMax releases Music 3 Infinite Radio, dubbed infinity TAPEDECK, a local music-generation model that takes one or more reference tracks, analyses them, and streams new music in the same style indefinitely. Real-time generation above one times playback speed reportedly needs an RTX 5080 or better, with an RTX 3090 also likely capable; weaker cards will see buffering and quality degradation while the model tries to keep up.",
+      "zh": "MiniMax发布Music 3 Infinite Radio,代号infinity TAPEDECK,可传入一段或多段参考曲目,模型分析后源源不断生成同风格新音乐。据称达到一倍以上实时播放需要RTX 5080及以上显卡,RTX 3090也可能胜任;性能较弱的显卡会出现缓冲和音质下降。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vmt1y3/i_ran_deepseek_v4_flash_284b_dspark_on_one_rtx/": {
-      "en": "A user benchmarked DeepSeek V4 Flash at 284 billion parameters with DSpark speculative decoding on a single 96 gigabyte RTX PRO 6000, splitting 21 expert layers to the GPU and 19 to system memory. DSpark boosted the coding workload by about 15 to 17 percent, hitting 31.16 tokens per second at peak. Surprisingly, keeping the drafter in system memory outperformed keeping it in video memory by freeing room for more target layers. Three speculative guesses proved the sweet spot.",
-      "zh": "用户在单张 96 吉字节 RTX PRO 6000 上基准测试了 2840 亿参数的 DeepSeek V4 Flash 加 DSpark 推测解码，21 层专家分到 GPU、19 层放入系统内存。DSpark 使编码工作负载吞吐提升约 15 到 17 个百分点，峰值达到每秒 31.16 个词元。将草稿模型放入系统内存反而比放入显存更快，因为可为主模型腾出更多显存。三次推测猜测被证明是最佳点。",
-      "title_en": "Running DeepSeek V4 Flash on a single RTX PRO 6000, with the drafter faster in system memory than in video memory",
-      "title_zh": "在单张 RTX PRO 6000 上运行 DeepSeek V4 Flash，草稿模型放系统内存比放显存更快"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vox89e/try_out_this_high_reasoning_mode_for_27b_tested/": {
+      "en": "A user working with the Qwen 3.8 27B chat template argues the built-in medium reasoning mode is broken: enabling it drops the explicit instructions and makes the model regress toward Qwen 3.6 behaviour, while low and extra-high seem to trigger almost entirely from specific keywords. They post a chat-template patch adding a blended high mode whose instructions splice low and extra-high wording, producing reasoning about one fifth the length of extra-high with comparable output quality on vLLM.",
+      "zh": "一位用户研究Qwen 3.8 27B聊天模板后认为,官方medium推理模式其实是坏的:开启后会抹掉显式指令,让模型退化到接近Qwen 3.6的行为,而low和xhigh几乎只靠关键词触发。他贴出补丁,新增一个混合low与xhigh措辞的high模式,推理长度约为xhigh的五分之一,在vLLM上质量相近。",
+      "title_en": "A blended high reasoning mode for Qwen 3.8 27B, patched into the chat template and tested on vLLM",
+      "title_zh": "为Qwen 3.8 27B在聊天模板中新增的混合高推理模式已在vLLM上通过测试"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vndd6p/sensenovavision_a_7b_open_model_that_does/": {
-      "en": "SenseNova has released a 7 billion parameter open vision model under Apache 2.0 that treats detection, segmentation, depth estimation, OCR, keypoints, surface normals, and multi-view three-dimensional reconstruction as a single generation task, handled by one weight set with no task-specific heads. A natural-language instruction plus optional visual hints yields text or images depending on the ask. It was trained on 50 million instruction-response pairs, but the full web demo needs an 80 gigabyte GPU.",
-      "zh": "SenseNova 发布了 70 亿参数的开源视觉模型 SenseNova-Vision，采用 Apache 2.0 许可，将检测、分割、深度估计、OCR、关键点、表面法线以及多视图三维重建统一为单一生成任务，共用一套权重且无需任务专用输出头。用户以自然语言指令加可选视觉提示，即可输出文字或图像。训练数据含 5000 万条指令响应对，但完整网页演示需要 80 吉字节显存的 GPU。",
-      "title_en": "SenseNova-Vision: a 7 billion parameter open model that handles segmentation, depth, detection, OCR and three-dimensional reconstruction without task-specific heads",
-      "title_zh": "SenseNova-Vision：70 亿参数开源模型，无需任务专用输出头即可完成分割、深度、检测、OCR 与三维重建"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vokpnd/american_llms_have_chinese_censorship_too/": {
+      "en": "The poster flags a Nature paper arguing that content scripted and curated by Chinese state media has entered training datasets used by American large language models. They pair it with Meta's Oversight Board finding from last month that the large language models tested were more than twice as likely to refuse criticism of repressive leaders and governments than of other political speech. The framing is that Chinese-style censorship posture is now measurably present in Western models.",
+      "zh": "发帖者引用一篇Nature论文,指出由中国官方媒体撰写和筛选的内容已进入美国大型语言模型的训练数据,并援引Meta监督委员会上月报告称,测试中的大型语言模型拒绝批评压制型领导人和政府的概率是拒绝其他政治言论的两倍以上,认为中式审查倾向已在西方模型中可测。"
     }
   }
 }
