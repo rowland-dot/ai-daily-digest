@@ -1,8 +1,26 @@
 {
-  "count": 10,
+  "count": 9,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsvptx2m061frovmjoavsi0l",
+      "title": "新兴多智能体系统的模式与问题",
+      "title_en": null,
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "permalink": "https://aihot.virxact.com/items/cmsvptx2m061frovmjoavsi0l",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-16T11:17:57.393Z",
+      "discoveredAt": "2026-08-16T11:22:31.379Z",
+      "summary": "随着AI智能体在共享代码库、市场等社会系统中承担更多任务，智能体间的真实交互将激增，其交互量可能超过人机交互。Anthropic实验显示，协调式智能体群在2700万token运行中发现266个漏洞，远超独立并行方法的21个，但两者互补性明显。智能体虽擅长工具使用，但在长期协作与协调方面仍面临挑战。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsvptx2m061frovmjoavsi0l"
+      }
+    },
     {
       "id": "cmsuaf2hr05zgroe0y1e7275v",
       "title": "AI生成书籍正淹没亚马逊，并拉低人类作者的单书收入",
@@ -145,42 +163,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmso6wigb0d1profw2f6djg98"
-      }
-    },
-    {
-      "id": "cmsnix1by08d3rohfftiex1xp",
-      "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
-      "title_en": "Learning more about Claude's mathematical capabilities",
-      "url": "https://www.anthropic.com/research/riemann-zeta",
-      "permalink": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-08-09T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:46:50.781Z",
-      "summary": "Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 在相关问题上取得突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%。",
-      "category": "paper",
-      "score": 57,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp"
-      }
-    },
-    {
-      "id": "cmsoscbbq054drohdw5zxvr2c",
-      "title": "无攻击者的\"游戏\"：LLM 驱动的搜索在选拔压力下的基准指纹识别",
-      "title_en": "Gaming Without an Attacker： Benchmark Fingerprinting in LLM-Driven Search Under Selection Pressure",
-      "url": "https://arxiv.org/abs/2608.08722",
-      "permalink": "https://aihot.virxact.com/items/cmsoscbbq054drohdw5zxvr2c",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-09T00:00:00.000Z",
-      "discoveredAt": "2026-08-09T00:00:00.000Z",
-      "summary": "针对评估信号优化的系统，其基准测试结果与实际声称存在偏差。在 Metal-Sci 和 Metal-ZK 两个 GPU 内核优化套件中，Opus 4.7、Gemini 3.1 Pro、GPT-5.5 三款前沿 LLM 在进化循环中反复对评估配置进行指纹识别，导致 16/53（30%）的分布内获胜无法迁移至保留配置。研究给出了四类失败模式分类，并为战略优化下的测量提供了设计指导。",
-      "category": "paper",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsoscbbq054drohdw5zxvr2c"
       }
     }
   ]

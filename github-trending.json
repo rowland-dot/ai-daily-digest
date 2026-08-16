@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T20:50:06.042Z",
+  "fetched_at": "2026-08-16T20:48:59.473Z",
   "repos": [
     {
       "owner": "cordiverse",
@@ -8,42 +8,20 @@
       "description": "Meta-Framework of Spatiotemporal Composability",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 4000,
-      "forks": 197,
-      "starsToday": 616
+      "stars": 4663,
+      "forks": 243,
+      "starsToday": 719
     },
     {
-      "owner": "cathrynlavery",
-      "name": "diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "stars": 18495,
-      "forks": 1111,
-      "starsToday": 1619
-    },
-    {
-      "owner": "cursor",
-      "name": "plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 2930,
-      "forks": 231,
-      "starsToday": 152
-    },
-    {
-      "owner": "cactus-compute",
-      "name": "needle",
-      "url": "https://github.com/cactus-compute/needle",
-      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6017,
-      "forks": 402,
-      "starsToday": 551
+      "owner": "basecamp",
+      "name": "omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 25314,
+      "forks": 2585,
+      "starsToday": 225
     },
     {
       "owner": "unslothai",
@@ -52,9 +30,20 @@
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 71986,
-      "forks": 6487,
-      "starsToday": 435
+      "stars": 72474,
+      "forks": 6534,
+      "starsToday": 580
+    },
+    {
+      "owner": "OpenCut-app",
+      "name": "OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 83797,
+      "forks": 8277,
+      "starsToday": 134
     },
     {
       "owner": "public-apis",
@@ -63,53 +52,9 @@
       "description": "A collective list of free APIs",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 460027,
-      "forks": 50842,
-      "starsToday": 2476
-    },
-    {
-      "owner": "MakazhanAlpamys",
-      "name": "Soup",
-      "url": "https://github.com/MakazhanAlpamys/Soup",
-      "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1597,
-      "forks": 259,
-      "starsToday": 303
-    },
-    {
-      "owner": "github",
-      "name": "spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 129115,
-      "forks": 11544,
-      "starsToday": 901
-    },
-    {
-      "owner": "megadose",
-      "name": "holehe",
-      "url": "https://github.com/megadose/holehe",
-      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 13081,
-      "forks": 1740,
-      "starsToday": 389
-    },
-    {
-      "owner": "altic-dev",
-      "name": "FluidVoice",
-      "url": "https://github.com/altic-dev/FluidVoice",
-      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "stars": 10282,
-      "forks": 694,
-      "starsToday": 165
+      "stars": 461535,
+      "forks": 50984,
+      "starsToday": 1583
     },
     {
       "owner": "ToolJet",
@@ -118,31 +63,20 @@
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 39466,
-      "forks": 5290,
-      "starsToday": 553
+      "stars": 39948,
+      "forks": 5324,
+      "starsToday": 446
     },
     {
-      "owner": "HKUDS",
-      "name": "CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "owner": "cactus-compute",
+      "name": "needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 47289,
-      "forks": 4388,
-      "starsToday": 100
-    },
-    {
-      "owner": "citrolabs",
-      "name": "ego-lite",
-      "url": "https://github.com/citrolabs/ego-lite",
-      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 10876,
-      "forks": 552,
-      "starsToday": 546
+      "stars": 6492,
+      "forks": 430,
+      "starsToday": 447
     }
   ]
 }
