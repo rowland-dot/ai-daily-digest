@@ -1,6 +1,105 @@
 {
-  "fetched_at": "2026-08-16T20:48:59.473Z",
+  "fetched_at": "2026-08-17T20:55:14.930Z",
   "repos": [
+    {
+      "owner": "harry0703",
+      "name": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 105819,
+      "forks": 16088,
+      "starsToday": 1275
+    },
+    {
+      "owner": "usestrix",
+      "name": "strix",
+      "url": "https://github.com/usestrix/strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 54018,
+      "forks": 5784,
+      "starsToday": 656
+    },
+    {
+      "owner": "nautechsystems",
+      "name": "nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 25844,
+      "forks": 3369,
+      "starsToday": 115
+    },
+    {
+      "owner": "akitaonrails",
+      "name": "ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 1961,
+      "forks": 192,
+      "starsToday": 207
+    },
+    {
+      "owner": "mukul975",
+      "name": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 28333,
+      "forks": 3441,
+      "starsToday": 156
+    },
+    {
+      "owner": "AlexsJones",
+      "name": "llmfit",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 32192,
+      "forks": 1993,
+      "starsToday": 239
+    },
+    {
+      "owner": "santifer",
+      "name": "career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 64527,
+      "forks": 12647,
+      "starsToday": 147
+    },
+    {
+      "owner": "jundot",
+      "name": "omlx",
+      "url": "https://github.com/jundot/omlx",
+      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 18943,
+      "forks": 1644,
+      "starsToday": 96
+    },
+    {
+      "owner": "immich-app",
+      "name": "immich",
+      "url": "https://github.com/immich-app/immich",
+      "description": "High performance self-hosted photo and video management solution.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 111070,
+      "forks": 6572,
+      "starsToday": 140
+    },
     {
       "owner": "cordiverse",
       "name": "cordis",
@@ -8,75 +107,20 @@
       "description": "Meta-Framework of Spatiotemporal Composability",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 4663,
-      "forks": 243,
-      "starsToday": 719
+      "stars": 5529,
+      "forks": 294,
+      "starsToday": 959
     },
     {
-      "owner": "basecamp",
-      "name": "omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 25314,
-      "forks": 2585,
-      "starsToday": 225
-    },
-    {
-      "owner": "unslothai",
-      "name": "unsloth",
-      "url": "https://github.com/unslothai/unsloth",
-      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 72474,
-      "forks": 6534,
-      "starsToday": 580
-    },
-    {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
+      "owner": "agalwood",
+      "name": "Motrix",
+      "url": "https://github.com/agalwood/Motrix",
+      "description": "A full-featured download manager.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 83797,
-      "forks": 8277,
-      "starsToday": 134
-    },
-    {
-      "owner": "public-apis",
-      "name": "public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "description": "A collective list of free APIs",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 461535,
-      "forks": 50984,
-      "starsToday": 1583
-    },
-    {
-      "owner": "ToolJet",
-      "name": "ToolJet",
-      "url": "https://github.com/ToolJet/ToolJet",
-      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 39948,
-      "forks": 5324,
-      "starsToday": 446
-    },
-    {
-      "owner": "cactus-compute",
-      "name": "needle",
-      "url": "https://github.com/cactus-compute/needle",
-      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 6492,
-      "forks": 430,
-      "starsToday": 447
+      "stars": 53000,
+      "forks": 4924,
+      "starsToday": 295
     }
   ]
 }

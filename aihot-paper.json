@@ -1,5 +1,5 @@
 {
-  "count": 9,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -127,42 +127,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsopyoum028vrohd4dgeksz9"
-      }
-    },
-    {
-      "id": "cmsodc28j0n07rofw30v8pe9v",
-      "title": "窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱",
-      "title_en": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://arxiv.org/abs/2608.09867",
-      "permalink": "https://aihot.virxact.com/items/cmsodc28j0n07rofw30v8pe9v",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "discoveredAt": "2026-08-11T07:58:18.452Z",
-      "summary": "研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的加密推理轨迹块可跨会话、用户和模型互换，攻击者将其注入同提供商防护较弱的模型，即可强制其以明文输出推理内容。",
-      "category": "paper",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsodc28j0n07rofw30v8pe9v"
-      }
-    },
-    {
-      "id": "cmso6wigb0d1profw2f6djg98",
-      "title": "RynnValue：用时间距离扩展机器人价值基础模型",
-      "title_en": "RynnValue： Scaling Robotic Value Foundation Models with Temporal Distance",
-      "url": "https://arxiv.org/abs/2608.09853",
-      "permalink": "https://aihot.virxact.com/items/cmso6wigb0d1profw2f6djg98",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "discoveredAt": "2026-08-11T04:58:17.200Z",
-      "summary": "RynnValue 是一款开源的机器人操作价值基础模型，用时间距离替代偏好或进度等任务内锚点作为监督信号，可直接从时间戳生成标签，扩展至超 7，000 小时、约 300 万条指令条件片段。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmso6wigb0d1profw2f6djg98"
       }
     }
   ]

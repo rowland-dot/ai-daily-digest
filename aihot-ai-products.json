@@ -1,8 +1,26 @@
 {
-  "count": 19,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsx7ffrz049uromm6en3if02",
+      "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
+      "title_en": "Understand your AI usage： every agent， model， and request",
+      "url": "https://openrouter.ai/blog/announcements/activity-dashboard",
+      "permalink": "https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-08-17T00:00:00.000Z",
+      "discoveredAt": "2026-08-17T12:22:55.595Z",
+      "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02"
+      }
+    },
     {
       "id": "cmsrtfqyv04btro0nle3m5b20",
       "title": "Google Sheets 推出 Sheets canvas：用 Gemini 将表格数据变为交互式迷你应用",
@@ -235,114 +253,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw"
-      }
-    },
-    {
-      "id": "cmsnfpcwf05ecrohfuzbjwyar",
-      "title": "Claude Code 自动模式默认开启原理",
-      "title_en": "We recently made auto mode the default in Claude Code， which means you no longer have to approve eve…",
-      "url": "https://x.com/ClaudeDevs/status/2086844755770757531",
-      "permalink": "https://aihot.virxact.com/items/cmsnfpcwf05ecrohfuzbjwyar",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "publishedAt": "2026-08-10T15:58:56.000Z",
-      "discoveredAt": "2026-08-10T16:16:53.681Z",
-      "summary": "我们最近将自动模式设为 Claude Code 的默认选项，这意味着你不再需要批准每一个操作。\n\n但什么决定某个操作是否可以安全运行？看看它是如何工作的：",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsnfpcwf05ecrohfuzbjwyar"
-      }
-    },
-    {
-      "id": "cmsmpwjyh0b0drohfw1hpbbzh",
-      "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
-      "title_en": "👀 Seeing is just the beginning. With Qwen-MM-Plugins， turn your favorite agent harness multimodal-…",
-      "url": "https://x.com/Alibaba_Qwen/status/2086664887560970531",
-      "permalink": "https://aihot.virxact.com/items/cmsmpwjyh0b0drohfw1hpbbzh",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "publishedAt": "2026-08-10T04:04:12.000Z",
-      "discoveredAt": "2026-08-10T04:14:38.969Z",
-      "summary": "👀 看见只是开始。\n\n借助 Qwen-MM-Plugins，让你的智能体原生支持多模态--读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。\n\n从多模态模型 → 多模态智能体。🚀\n\n观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsmpwjyh0b0drohfw1hpbbzh"
-      }
-    },
-    {
-      "id": "cmsmlho8005dmrohfoz27j6em",
-      "title": "千问开放平台上线：租房、寄快递、查理财等十余领域服务可对话办理",
-      "title_en": "租房、寄快递、查理财……在千问都能办了！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247488345&idx=1&sn=ef4e57c9c9350f9238d90211eb2dd453",
-      "permalink": "https://aihot.virxact.com/items/cmsmlho8005dmrohfoz27j6em",
-      "source": "公众号：千问APP（阿里）",
-      "publishedAt": "2026-08-10T02:07:18.000Z",
-      "discoveredAt": "2026-08-10T02:11:05.907Z",
-      "summary": "千问开放平台今日上线，面向生态伙伴和开发者开放手机、PC和AI眼镜三类终端的服务接入，首批覆盖物流运输、房产居住、本地生活、理财、汽车等十多个领域。用户可在对话中@相关服务或点击\"圆点角标\"进入智能体，完成从咨询、推荐到下单的完整流程。平台支持标准化协议接入、一键授权与端到端调测，并提供账号、AI支付、订单接入等基础设施。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsmlho8005dmrohfoz27j6em"
-      }
-    },
-    {
-      "id": "cmsmizpgb02yerohf3bh8jesi",
-      "title": "我花了54个小时，做了一个可能更公平的AI大模型排行榜。",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685059&idx=1&sn=a329fe9999ac2419470c7eca9a97acd3",
-      "permalink": "https://aihot.virxact.com/items/cmsmizpgb02yerohf3bh8jesi",
-      "source": "公众号：数字生命卡兹克",
-      "publishedAt": "2026-08-10T00:52:19.000Z",
-      "discoveredAt": "2026-08-10T01:01:09.010Z",
-      "summary": "作者耗时54小时开发并免费开放了一个聚合多家可信榜单的AI大模型综合排行榜LatentRank。该榜单采用Bradley-Terry成对比较算法，并加入先验限制小样本结果，以解决不同榜单规模、领先幅度和模型缺失带来的评分偏差。目前榜单前五名中，Opus 5超过Fable 5位居前列。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsmizpgb02yerohf3bh8jesi"
-      }
-    },
-    {
-      "id": "cmsmjglqx034prohfslczvkpb",
-      "title": "OpenChamber：一个基于代理的开发环境",
-      "title_en": null,
-      "url": "https://openchamber.dev/",
-      "permalink": "https://aihot.virxact.com/items/cmsmjglqx034prohfslczvkpb",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-10T00:46:27.596Z",
-      "discoveredAt": "2026-08-10T01:14:17.226Z",
-      "summary": "OpenChamber 是一个基于代理的开发环境，可跨桌面、浏览器、手机和 VS Code 使用，支持会话目标、多模型并行运行与融合、变更走查、从 issue 到 PR 的完整流程及定时任务。该工具基于 OpenCode SDK，完全开源且免费，代码和会话内容均保存在本地，远程访问可通过 UI 密码和端到端加密的 Private Relay 保护。",
-      "category": "ai-products",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsmjglqx034prohfslczvkpb"
-      }
-    },
-    {
-      "id": "cmsnejv4i042qrohff64pz0jh",
-      "title": "OpenRouter 推出由市场智慧驱动的新版 Auto 路由器",
-      "title_en": "Model Routing Powered by Wisdom of the Market",
-      "url": "https://openrouter.ai/blog/announcements/introducing-the-new-auto-router",
-      "permalink": "https://aihot.virxact.com/items/cmsnejv4i042qrohff64pz0jh",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "discoveredAt": "2026-08-10T15:44:34.992Z",
-      "summary": "OpenRouter 基于每周超 55T token 的社区消费数据，推出新版 Auto 路由器（openrouter/auto），其模型选择在多数任务和成本档位上优于旧版。新路由器按约 30 种任务类型匹配近 7 天社区实际消费的模型，支持 cost_tier 参数（low 至 max）并遵循账户隐私设置。在 MMLU Pro 等基准上，新默认档位在多数领域以更低成本达到旧版同等性能。",
-      "category": "ai-products",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsnejv4i042qrohff64pz0jh"
       }
     }
   ]

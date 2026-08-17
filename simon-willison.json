@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-08-16T20:49:00.297Z",
+  "fetched_at": "2026-08-17T20:55:17.378Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "link": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+      "updated": "2026-08-17T15:21:29+00:00",
+      "summary": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility"
+    },
+    {
+      "title": "Markdown SVG upgrades",
+      "link": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "updated": "2026-08-16T23:59:37+00:00",
+      "summary": "I started building my markdown-svg-renderer tool in May , but I've since added enough features to it that it's worth talking about here again."
+    },
+    {
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "link": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "updated": "2026-08-16T22:00:39+00:00",
+      "summary": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was impressive."
+    },
     {
       "title": "Quoting Dario Amodei",
       "link": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
       "updated": "2026-08-12T23:59:23+00:00",
       "summary": "DeepSeek V4 Pro 0813 (on OpenRouter)"
-    },
-    {
-      "title": "alchemy-utils 0.1a0",
-      "link": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
-      "updated": "2026-08-12T19:51:30+00:00",
-      "summary": "I've long pondered what a database agnostic version of my sqlite-utils Python library and CLI utility might look like. This morning (literally a shower project) I tasked Codex and GPT-5.6 Sol Ultra with building a prototype:"
-    },
-    {
-      "title": "Quoting Florian Herrengt",
-      "link": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
-      "updated": "2026-08-12T15:08:47+00:00",
-      "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. \"So where does the data come from?\" \"Hmm... actually I don't know. Let me ask Claude.\" You sit next to each other watching an endless wall of text appear on the screen. Neither of you has any idea whether any of it is true but Claude seems very confident. [...] This project has become so convoluted, with so many layers and services, that no one on your team could possibly start to understand what's going on."
-    },
-    {
-      "title": "There are no lossless transformations of natural-language text",
-      "link": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/",
-      "updated": "2026-08-11T23:48:35+00:00",
-      "summary": "There are no lossless transformations of natural-language text"
     }
   ]
 }
