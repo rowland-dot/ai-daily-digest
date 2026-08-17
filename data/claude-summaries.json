@@ -1,45 +1,53 @@
 {
-  "generated_at": "2026-08-15T20:56:35Z",
+  "generated_at": "2026-08-17T21:05:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vonuu0/qwen_38_27b_is_a_game_changer/": {
-      "en": "A senior cybersecurity analyst reports that Qwen 3.8 27B running locally chewed through a personal malware analysis benchmark that stumped Opus 4.5. On a Strix Halo desktop wired to Ghidra, Python and a debugger via Model Context Protocol servers, the model disassembled a custom decrypted payload while the human was still reconstructing how it worked. The author argues this puts state-sponsored offensive capability within reach of a lone operator running a traceless local model.",
-      "zh": "一位资深网络安全分析师称,本地运行的Qwen 3.8 27B解出了Opus 4.5都搞不定的私人恶意软件分析基准。在Strix Halo桌面上通过Model Context Protocol服务器连接Ghidra、Python和调试器后,模型在人还在回想代码原理时就反汇编了自定义解密后的负载。作者认为这让原属国家级团队的攻击能力落到单人本地无痕模型手中。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqrt86/after_pushing_1m_tokens_through_qwen_38_27b_here/": {
+      "en": "The author details a llama.cpp inference config for running Qwen 3.8 27B on a 16 gigabyte RTX 5060 Ti with an Intel N100 host, reaching a 73 thousand token context via q4_1 KV cache quantization and native Multi Token Prediction speculative decoding. They ran an agentic coding pipeline that built a complete NestJS REST API and Model Context Protocol server for a legacy vBulletin forum in only three prompts, processing over one million tokens across roughly two hours with a single manual fix.",
+      "zh": "作者分享在RTX 5060 Ti 16GB加Intel N100上运行Qwen 3.8 27B的llama.cpp配置，通过q4_1 KV缓存量化和原生Multi Token Prediction推测解码，将上下文推到七万三千tokens。仅用三条提示词让OpenCode自主运行约两小时，处理逾一百万tokens，为老旧vBulletin论坛完整构建了NestJS REST API和Model Context Protocol服务器，仅需一次手动修复。",
+      "title_en": "A llama.cpp config runs Qwen 3.8 27B agentically on a 16 gigabyte RTX 5060 Ti with a 73 thousand token context",
+      "title_zh": "在16GB显存的RTX 5060 Ti上跑Qwen 3.8 27B智能体的llama.cpp配置与七万三千上下文实录"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1voojjz/megathread_qwen_38_27b_release_day/": {
-      "en": "The r/LocalLLaMA moderators fold Qwen 3.8 27B release-day discussion into a single thread, linking the official base and eight-bit floating point checkpoints on Hugging Face, popular GGUF conversions from Unsloth and bartowski, and Multi-Token Prediction MLX builds at four-bit, eight-bit and sixteen-bit. Placeholders cover quantization, fine-tunes and abliterations, chat templates, inference-server configuration, and community benchmarks, giving future duplicate posts a home to redirect to.",
-      "zh": "r/LocalLLaMA版主将Qwen 3.8 27B发布日的讨论合并成一个主贴,汇总Hugging Face上的官方权重和八位浮点权重、Unsloth与bartowski的GGUF转换,以及四位、八位、十六位的Multi-Token Prediction MLX版本,并为量化、微调、聊天模板、推理服务器配置和社区基准预留分区,方便将来的重复帖被引导至此。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqszw0/llamacpp_version_v010_has_been_released/": {
+      "en": "llama.cpp has switched from sequential build numbers like b10456 to semantic versioning, with v0.1.0 announced as the first tag under the new scheme. The change gives downstream projects and package managers a stable, predictable version surface for the widely used local inference runtime, without any accompanying claim of a stability milestone. The community post links to the release tag on GitHub and congratulates the project.",
+      "zh": "llama.cpp从b10456这类顺序构建号切换到语义化版本，v0.1.0成为新方案下的首个正式tag。这一变化为这个广泛使用的本地推理运行时提供了稳定、可预测的版本号，方便下游项目和包管理器跟踪，但并非稳定性里程碑的宣告。帖子附上了GitHub上的release链接并向项目道贺。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vokpw6/a_hunch_qwen3827bs_general_knowledge_got_pruned/": {
-      "en": "A German user notices that Qwen 3.8 27B has lost the general-knowledge recognition of a mid-sized German hometown that earlier Qwen 3.6 27B and 35B checkpoints could sometimes retrieve, and cannot be nudged toward the answer even when told the name outright. Their hunch is that Qwen deliberately traded away useless trivia for coding and agentic ability. They flag their own sample size as too small and ask whether anyone else sees the same pattern.",
-      "zh": "一位德国用户发现,Qwen 3.8 27B已经认不出他家乡这座中型德国小城,而早前的Qwen 3.6 27B和35B有时还能答对,如今甚至告知答案也无法说服模型。他猜Qwen这次刻意用没用的通识去换取编程与代理能力,并坦承样本量过小,想问社区是否也有同样感受。",
-      "title_en": "A hunch that Qwen 3.8 27B traded general knowledge away for coding and agentic ability",
-      "title_zh": "猜测称Qwen 3.8 27B用通识知识换取了编程和代理能力"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqm51f/long_review_qwen_38_27b_is_very_good_at_tapping/": {
+      "en": "A detailed hands-on review with Unsloth's UD-Q8_K_XL quant of Qwen 3.8 27B on a triple 3090 rig, using arcade game recreation as a probe. Compared to Qwen 3.6, the new model produces far richer Galaga clones with animated pixel sprites, sound effects, and even Namco's fighter capture mechanic, but spends fifteen minutes reasoning at the extra high effort setting. The author argues that with the right harness it approaches Claude Opus 5 quality on local hardware.",
+      "zh": "作者用三张3090搭配Unsloth的UD-Q8_K_XL量化测试Qwen 3.8 27B，以复刻Galaga街机为基准。相比Qwen 3.6，新模型能生成动画像素sprite、音效乃至捕获战机的经典机制，但在超高推理档下要思考十五分钟。他认为配合合适的harness，本地Qwen 3.8 27B已经能逼近Claude Opus 5的水准。",
+      "title_en": "A long review argues Qwen 3.8 27B taps deep real world knowledge and its heavy reasoning brings Sonnet level results with Opus potential",
+      "title_zh": "长篇评测：Qwen 3.8 27B能挖出丰富真实世界知识，重度推理带来Sonnet级结果并有望触及Opus"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vokrcy/qwen3827b_is_now_up_to_3_faster_on_apple_silicon/": {
-      "en": "mlx-dspark is an MLX port of DeepSeek's DSpark speculative-decoding drafters plus z-lab's DFlash, and version 0.10.0 adds a RadixArk drafter for Qwen 3.8 27B. On an M4 Pro with 48 gigabytes, the eight-bit target reaches 2.45 times plain-decode speed on average and 3.18 times on code, rising from 8.3 to 20.3 tokens per second at about 29 gigabytes peak. Eight-bit plus drafter now beats plain four-bit throughput while keeping eight-bit output.",
-      "zh": "mlx-dspark是DeepSeek DSpark推测解码起草器与z-lab DFlash的MLX移植,0.10.0版新增支持Qwen 3.8 27B的RadixArk起草器。M4 Pro 48 GB上,八位目标平均比原生解码快2.45倍,代码任务达3.18倍,从每秒8.3提升到20.3个token,峰值约29 GB,吞吐已反超普通四位解码。",
-      "title_en": "Qwen 3.8 27B runs up to about three times faster on Apple Silicon with the mlx-dspark speculative decoder",
-      "title_zh": "使用mlx-dspark推测解码器后Qwen 3.8 27B在Apple Silicon上最高提速约三倍"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqpc0f/100_worth_of_gpu_runs_qwen_38_27b_at_739_ts/": {
+      "en": "The poster shows that two second hand RX 580 8 gigabyte cards, roughly fifty dollars each in their country, plus an old DDR3 workstation board can run Qwen 3.8 27B at the Q3_K_M quant at about seven and a third tokens per second. Prompt processing tops out around fourteen tokens per second, so long inputs and Multi Token Prediction speculative decoding would suffer, but the setup makes the model reachable for anyone who cannot spend more.",
+      "zh": "作者用两张二手RX 580 8GB（当地约每张五十美元）加一块旧DDR3工作站主板，让Qwen 3.8 27B在Q3_K_M量化下跑出约每秒七点四tokens的速度。提示处理只有每秒十四tokens，长上下文和Multi Token Prediction推测解码都会吃力，但这套百元方案让预算有限的用户也能上手这款模型。",
+      "title_en": "About a hundred dollars of used GPUs runs Qwen 3.8 27B at roughly seven and a third tokens per second",
+      "title_zh": "百元级二手GPU方案让Qwen 3.8 27B跑出约每秒七点四tokens"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1voj571/retrocraft_qwen_38_27b_q8_one_shot_with_exact/": {
-      "en": "A developer one-shots RetroCraft, an 80s-vintage single-page Minecraft clone served from a Go binary, using Qwen 3.8 27B at eight-bit precision on dual RTX 3090s driven by OpenCode. llama-swap trajectory data shows prompt processing swinging between 10 and 464 tokens per second and generation holding around 40 to 77 tokens per second across turns, with reasoning tokens preserved between requests giving noticeably better coding results.",
-      "zh": "一位开发者用Qwen 3.8 27B八位精度在双RTX 3090上一次生成了RetroCraft——一个80年代风格、由Go二进制内置的HTML/JS单页Minecraft克隆,由OpenCode驱动。llama-swap轨迹数据显示提示处理在每秒10到464个token间波动,生成稳定在每秒40到77个token,并且在请求间保留推理token明显提升编码效果。",
-      "title_en": "RetroCraft, a one-shot Minecraft clone from Qwen 3.8 27B at eight-bit precision on dual RTX 3090s with full performance data",
-      "title_zh": "RetroCraft是Qwen 3.8 27B八位在双RTX 3090上一次生成的Minecraft克隆并附完整性能数据"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqme4y/qwen3827b_q8_0_on_strix_halo_is_seriously/": {
+      "en": "On a ROG Flow Z13 with the Ryzen AI Max Plus 395 and 128 gigabytes of unified memory, running Qwen 3.8 27B at eight bit weights with an eight bit KV cache via Lemonade Server and llama.cpp ROCm, the poster hits roughly nine to nineteen tokens per second and ninety seven to ninety nine percent acceptance from native Multi Token Prediction speculative decoding. An agent driven session built a full single page flight simulator in about twenty minutes that no smaller model in their tests managed.",
+      "zh": "作者在装有Ryzen AI Max Plus 395和128GB统一内存的ROG Flow Z13上，用Lemonade Server与llama.cpp ROCm跑Qwen 3.8 27B的八位权重与八位KV缓存，速度约每秒九到十九tokens，原生Multi Token Prediction推测解码接受率达到九成七到九成九。智能体流程约二十分钟就生成了一整个单页HTML飞行模拟器，而其他小模型都做不到。",
+      "title_en": "Qwen 3.8 27B at eight bit weights runs seriously well on a Strix Halo laptop",
+      "title_zh": "Qwen 3.8 27B八位权重在Strix Halo笔电上表现惊人"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vokxpk/minimax_music_3_infinite_radio/": {
-      "en": "MiniMax releases Music 3 Infinite Radio, dubbed infinity TAPEDECK, a local music-generation model that takes one or more reference tracks, analyses them, and streams new music in the same style indefinitely. Real-time generation above one times playback speed reportedly needs an RTX 5080 or better, with an RTX 3090 also likely capable; weaker cards will see buffering and quality degradation while the model tries to keep up.",
-      "zh": "MiniMax发布Music 3 Infinite Radio,代号infinity TAPEDECK,可传入一段或多段参考曲目,模型分析后源源不断生成同风格新音乐。据称达到一倍以上实时播放需要RTX 5080及以上显卡,RTX 3090也可能胜任;性能较弱的显卡会出现缓冲和音质下降。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqjeub/how_many_tokenssecond_output_are_you_getting_with/": {
+      "en": "A community benchmark thread invites owners to report Qwen 3.8 27B throughput. The starter, on a single RTX 3090 with a Ryzen 7950X and 64 gigabytes of DDR4, reports the Q5_K_M quant at about seventy five tokens per second at one thousand context, sliding to forty three tokens per second by ninety thousand. Enabling native Multi Token Prediction speculative decoding after moving weights to SSD roughly doubled fresh context throughput at the cost of some VRAM headroom.",
+      "zh": "一个社区基准帖征集大家跑Qwen 3.8 27B的实测速度。楼主用单张RTX 3090加Ryzen 7950X和64GB DDR4，在Q5_K_M量化下测得：一千上下文约每秒七十五tokens，九万上下文降到每秒四十三tokens。将权重移到SSD并启用原生Multi Token Prediction推测解码后，短上下文速度几乎翻倍，代价是显存吃紧、上下文缩到九万六千。",
+      "title_en": "How many tokens per second are you getting with Qwen 3.8 27B?",
+      "title_zh": "你用Qwen 3.8 27B跑出了多少tokens每秒？"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vox89e/try_out_this_high_reasoning_mode_for_27b_tested/": {
-      "en": "A user working with the Qwen 3.8 27B chat template argues the built-in medium reasoning mode is broken: enabling it drops the explicit instructions and makes the model regress toward Qwen 3.6 behaviour, while low and extra-high seem to trigger almost entirely from specific keywords. They post a chat-template patch adding a blended high mode whose instructions splice low and extra-high wording, producing reasoning about one fifth the length of extra-high with comparable output quality on vLLM.",
-      "zh": "一位用户研究Qwen 3.8 27B聊天模板后认为,官方medium推理模式其实是坏的:开启后会抹掉显式指令,让模型退化到接近Qwen 3.6的行为,而low和xhigh几乎只靠关键词触发。他贴出补丁,新增一个混合low与xhigh措辞的high模式,推理长度约为xhigh的五分之一,在vLLM上质量相近。",
-      "title_en": "A blended high reasoning mode for Qwen 3.8 27B, patched into the chat template and tested on vLLM",
-      "title_zh": "为Qwen 3.8 27B在聊天模板中新增的混合高推理模式已在vLLM上通过测试"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqx6nd/ling_30_tiny_is_the_strongest_fastest_and/": {
+      "en": "On a low end machine with only 4 gigabytes of VRAM the poster says Ling 3.0 Tiny, an 8 billion parameter Mixture of Experts model with 1.3 billion active parameters, runs at roughly thirty six tokens per second while matching the perceived intelligence of Qwen 3.5 9B or Gemma 12. Where Qwen 3.5 9B crawled at about five tokens per second on the same hardware, Ling's small active count finally hits a usable speed, and they hope more releases in this shape follow.",
+      "zh": "只有4GB显存的低端机主试用Ling 3.0 Tiny——八十亿参数、十三亿激活的Mixture of Experts模型——测得约每秒三十六tokens的速度，感觉智能水平接近Qwen 3.5 9B或Gemma 12。而同一台机器上Qwen 3.5 9B只有每秒五tokens左右。作者认为这种小激活参数模型终于把本地推理拉到可用速度，希望之后有更多此类发布。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vokpnd/american_llms_have_chinese_censorship_too/": {
-      "en": "The poster flags a Nature paper arguing that content scripted and curated by Chinese state media has entered training datasets used by American large language models. They pair it with Meta's Oversight Board finding from last month that the large language models tested were more than twice as likely to refuse criticism of repressive leaders and governments than of other political speech. The framing is that Chinese-style censorship posture is now measurably present in Western models.",
-      "zh": "发帖者引用一篇Nature论文,指出由中国官方媒体撰写和筛选的内容已进入美国大型语言模型的训练数据,并援引Meta监督委员会上月报告称,测试中的大型语言模型拒绝批评压制型领导人和政府的概率是拒绝其他政治言论的两倍以上,认为中式审查倾向已在西方模型中可测。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqaqgn/simon_willison_qwen_38_27b_is_excellent_but_it/": {
+      "en": "A community pointer to Simon Willison's write up of Qwen 3.8 27B, which he called the most fun he has had playing with a local model on his own machines in a long time. The poster agrees the model is excellent overall but flags that it defaults to wildly overthinking, an easily changed setting, and treats Simon's overview as a helpful survey of where local model tech stands right now.",
+      "zh": "一则社区转推指向Simon Willison对Qwen 3.8 27B的评测，他称这是很久以来在自家机器上玩得最开心的本地模型。楼主认同模型整体表现出色，但提醒说默认设定会疯狂过度推理，改一个开关就能缓解，并把Simon的综述当作了解本地模型现状的良好参考。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vqasuk/audiocpp_release_06_dotstts_minimaxh3_text2audio/": {
+      "en": "audio.cpp 0.6 adds five new model families including dots.tts, NeuTTS-2e, MuScriptor for music to MIDI conversion, MiniMax-H3 text to audio, and SenseVoice-Small, taking the framework to 49 families and over seventy variants. It also ships a native web UI, and follow up branches have added Irodori TTS v4, IndexTTS 2.5, ACE-Step 1.5 XL, and a preview of MiniMax-Music3. The MiniMax-H3 pipeline reaches up to three times realtime and can even emit paired video frames alongside audio.",
+      "zh": "audio.cpp 0.6版本新增五个模型家族，包括dots.tts、NeuTTS-2e、音乐转MIDI的MuScriptor、MiniMax-H3文本转音频以及SenseVoice-Small，令框架累计支持49个家族和七十余个变体。同时上线原生Web UI；后续分支加入Irodori TTS v4、IndexTTS 2.5、ACE-Step 1.5 XL和MiniMax-Music3预览。MiniMax-H3流水线最高可达实时三倍速，还能同时输出配套视频帧。",
+      "title_en": "audio.cpp release 0.6 adds dots.tts, MiniMax-H3 text to audio at up to three times realtime, and a preview of MiniMax-Music3",
+      "title_zh": "audio.cpp 0.6版本引入dots.tts、可达实时三倍速的MiniMax-H3文本转音频及MiniMax-Music3预览"
     }
   }
 }
