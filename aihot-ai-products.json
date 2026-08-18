@@ -1,8 +1,98 @@
 {
-  "count": 14,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsz49ptt022qrodp5mc1nt1x",
+      "title": "Claude 现已支持 Gmail 邮件与 Google Drive 文件管理",
+      "title_en": "Claude can now send emails in Gmail and manage files in Google Drive. Ask Claude to reply to a thre…",
+      "url": "https://x.com/claudeai/status/2089806039088517356",
+      "permalink": "https://aihot.virxact.com/items/cmsz49ptt022qrodp5mc1nt1x",
+      "source": "X：Claude (@claudeai)",
+      "publishedAt": "2026-08-18T20:06:01.000Z",
+      "discoveredAt": "2026-08-18T20:30:00.860Z",
+      "summary": "Claude 现在可以在 Gmail 中发送邮件，并管理 Google Drive 中的文件。\n\n让 Claude 回复某个邮件线程，它会起草并发送回复。你可以控制何时需要你的批准。\n\n从连接器菜单中选择连接 Gmail 或 Google Drive 即可试用。所有付费套餐均可用。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsz49ptt022qrodp5mc1nt1x"
+      }
+    },
+    {
+      "id": "cmsykcnkt0yh1roz0a9h404r5",
+      "title": "OpenAI 推出 ChatGPT for Teens：面向青少年的学习体验与更强安全保护",
+      "title_en": "Introducing ChatGPT for Teens： Built for learning， backed by protections",
+      "url": "https://openai.com/index/chatgpt-for-teens",
+      "permalink": "https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-08-18T11:00:00.000Z",
+      "discoveredAt": "2026-08-18T11:12:25.733Z",
+      "summary": "OpenAI 发布 ChatGPT for Teens，为 13-17 岁用户自动启用，内置更强安全保护与家长控制。新增 Study Mode、负责任作业提醒、测验与学习可视化，以及可设定默认开启时段的 Study Hours，引导青少年分步解题而非直接给答案。OpenAI 同时宣布与 CodeAI 合作，帮助青少年理解、质疑并创造性地使用 AI。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5"
+      }
+    },
+    {
+      "id": "cmsyqip4o14umroz0ch5iv0iv",
+      "title": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
+      "title_en": "Multi-Vector （Late Interaction） Embedding Models with Sentence Transformers",
+      "url": "https://huggingface.co/blog/multi-vector-encoder",
+      "permalink": "https://aihot.virxact.com/items/cmsyqip4o14umroz0ch5iv0iv",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-08-18T00:00:00.000Z",
+      "discoveredAt": "2026-08-18T14:05:05.620Z",
+      "summary": "Sentence Transformers v6.0 新增第四种模型类型 MultiVectorEncoder，可直接加载 PyLate、Stanford-NLP ColBERT 及 colpali-engine 检查点，用于 ColBERT 式晚期交互检索。",
+      "category": "ai-products",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsyqip4o14umroz0ch5iv0iv"
+      }
+    },
+    {
+      "id": "cmsxsvb5s0a4troz0z2q2nu3h",
+      "title": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
+      "title_en": "Cursor 推出 Origin，作为 GitHub 的替代方案",
+      "url": "https://cursor.com/changelog/origin-code-hosting",
+      "permalink": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-17T22:14:00.748Z",
+      "discoveredAt": "2026-08-17T22:23:07.832Z",
+      "summary": "Cursor 今日起向所有付费计划用户开放 Origin 代码托管的早期测试版，提供仓库、拉取请求、代码浏览及 GitHub 同步功能。用户可创建以 cursor.com/codebase/ 为前缀的仓库，或将 GitHub 仓库同步至 Origin，双向同步评论与审查。Vercel、Depot 和 Buildkite 集成已可用，智能体功能即将推出。",
+      "category": "ai-products",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h"
+      }
+    },
+    {
+      "id": "cmsy8afig0mvmroz0gb3hz0iq",
+      "title": "inclusionAI 开源 ConceptEdit：基于概念缩放与密集监督的图像编辑数据生成管线",
+      "title_en": "inclusionAI/ConceptEdit",
+      "url": "https://github.com/inclusionAI/ConceptEdit",
+      "permalink": "https://aihot.virxact.com/items/cmsy8afig0mvmroz0gb3hz0iq",
+      "source": "蚂蚁 inclusionAI：GitHub 新仓库",
+      "publishedAt": "2026-08-17T07:22:08.000Z",
+      "discoveredAt": "2026-08-18T05:34:47.114Z",
+      "summary": "蚂蚁集团 inclusionAI 开源 ConceptEdit，一个基于概念缩放与密集监督的图像编辑数据生成管线。该管线通过三阶段流程（VLM 生成指令、FLUX 执行编辑、VQA 评估筛选）构建大规模、基于分类法的图像编辑数据集，并提供单概念与多概念两种变体。项目采用 MIT 许可证，支持断点续跑，需 OpenAI 兼容 VLM 端点与本地 FLUX 检查点。",
+      "category": "ai-products",
+      "score": 64,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsy8afig0mvmroz0gb3hz0iq"
+      }
+    },
     {
       "id": "cmsx7ffrz049uromm6en3if02",
       "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
@@ -145,114 +235,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsq9h6gs01x5ronde8fdla7e"
-      }
-    },
-    {
-      "id": "cmsp3o23e04vnrortt7twvx4v",
-      "title": "Mojo 1.0 正式发布：为生态系统增长提供稳定基础",
-      "title_en": "Mojo 1.0",
-      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
-      "permalink": "https://aihot.virxact.com/items/cmsp3o23e04vnrortt7twvx4v",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-11T19:52:14.184Z",
-      "discoveredAt": "2026-08-11T20:15:29.618Z",
-      "summary": "Mojo 语言正式发布 1.0 版本，提供稳定、可用于生产环境的语言基础，自 2023 年首次发布以来已发展成通用语言。自开源标准库以来，近 200 名贡献者合入超 1，100 个拉取请求，改动超 200，000 行代码。",
-      "category": "ai-products",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsp3o23e04vnrortt7twvx4v"
-      }
-    },
-    {
-      "id": "cmsp1lufu03a9rortoc0ci36q",
-      "title": "Runway Seedance 2.5 上线，支持50角色参考",
-      "title_en": "A full cast， a full track， one generation at a time. Seedance 2.5 is live on Runway， with 50 unique…",
-      "url": "https://x.com/runwayml/status/2087251184658657346",
-      "permalink": "https://aihot.virxact.com/items/cmsp1lufu03a9rortoc0ci36q",
-      "source": "X：Runway (@runwayml)",
-      "publishedAt": "2026-08-11T18:53:56.000Z",
-      "discoveredAt": "2026-08-11T19:17:47.577Z",
-      "summary": "完整阵容，完整曲目，一次生成一个。\n\nSeedance 2.5 已在 Runway 上线，支持 50 个独特角色参考，以及最长 30 秒、与音乐同步的片段。点击下方链接即可开始使用。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsp1lufu03a9rortoc0ci36q"
-      }
-    },
-    {
-      "id": "cmsp0j1ph027prortm21absbh",
-      "title": "ChatGPT 桌面端支持导入其他智能体工作数据",
-      "title_en": "You can now keep your work from other agents in sync with ChatGPT Work and Codex. Import projects， …",
-      "url": "https://x.com/OpenAIDevs/status/2087242829076791392",
-      "permalink": "https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh",
-      "source": "X：OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-08-11T18:20:44.000Z",
-      "discoveredAt": "2026-08-11T18:47:37.597Z",
-      "summary": "你现在可以将其他智能体的工作内容与 ChatGPT Work 和 Codex 保持同步。\n\n可导入项目、聊天记录、技能和插件，查看导入历史，并可在设置中选择开启自动更新。\n\n现已在 ChatGPT 桌面应用中提供。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh"
-      }
-    },
-    {
-      "id": "cmsqj4ly004izroxvzl349s3r",
-      "title": "Claude in Chrome 侧边栏升级为 Claude Cowork 会话",
-      "title_en": "The Claude in Chrome side panel is now Claude Cowork",
-      "url": "https://claude.com/blog/cowork-chrome-side-panel",
-      "permalink": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-11T16:00:00.000Z",
-      "discoveredAt": "2026-08-12T20:15:51.977Z",
-      "summary": "Claude in Chrome 浏览器扩展的侧边栏现已升级为 Claude Cowork 会话，对话会保存至历史记录，技能和连接器可在浏览器中工作，且任务可在桌面、网页和移动端应用间无缝切换。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsqj4ly004izroxvzl349s3r"
-      }
-    },
-    {
-      "id": "cmsow47ob08oarohd6vhpqrwt",
-      "title": "Gemini 助力 Database Migration Service 加速 PostgreSQL 迁移",
-      "title_en": "Accelerate PostgreSQL migrations using Gemini in Database Migration Service",
-      "url": "https://cloud.google.com/blog/products/databases/accelerate-postgresql-migrations-with-gemini-in-dms",
-      "permalink": "https://aihot.virxact.com/items/cmsow47ob08oarohd6vhpqrwt",
-      "source": "Google Cloud：Databases（RSS）",
-      "publishedAt": "2026-08-11T16:00:00.000Z",
-      "discoveredAt": "2026-08-11T16:44:01.695Z",
-      "summary": "Google Cloud 在 Database Migration Service（DMS）中推出由 Gemini 驱动的 AI 辅助代码转换，可将 Oracle 或 SQL Server 的存储过程、触发器和自定义函数转换为 PostgreSQL PL/pgSQL 代码。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsow47ob08oarohd6vhpqrwt"
-      }
-    },
-    {
-      "id": "cmso95agg0ig3rofwaqvy9crw",
-      "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
-      "title_en": "ZCode全面升级，GLM最佳Harness，让复杂任务自主交付",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494052&idx=1&sn=ee3ab3d0f4550e9120927c53a27522c9",
-      "permalink": "https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw",
-      "source": "公众号：智谱（GLM）",
-      "publishedAt": "2026-08-11T05:52:25.000Z",
-      "discoveredAt": "2026-08-11T06:01:05.940Z",
-      "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。",
-      "category": "ai-products",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw"
       }
     }
   ]

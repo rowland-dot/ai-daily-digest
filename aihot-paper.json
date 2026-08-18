@@ -1,8 +1,26 @@
 {
-  "count": 7,
+  "count": 4,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsz1974l06hbro20gosn5d78",
+      "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
+      "title_en": "How Much Memory Does Your Agent Actually Need？",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "permalink": "https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-08-18T18:09:38.000Z",
+      "discoveredAt": "2026-08-18T19:05:39.262Z",
+      "summary": "智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。",
+      "category": "paper",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78"
+      }
+    },
     {
       "id": "cmsvptx2m061frovmjoavsi0l",
       "title": "新兴多智能体系统的模式与问题",
@@ -55,78 +73,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsqu0nr604oeroz2rh6b6mqt"
-      }
-    },
-    {
-      "id": "cmsoxbh180a00rohdooafsmzp",
-      "title": "AMIE 研究医疗 AI 系统首次展示实时临床视频问诊能力",
-      "title_en": "AMIE， our research medical AI system， demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
-      "permalink": "https://aihot.virxact.com/items/cmsoxbh180a00rohdooafsmzp",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-08-11T17:00:00.000Z",
-      "discoveredAt": "2026-08-11T17:17:44.810Z",
-      "summary": "Google Research 与 Google DeepMind 推进医疗 AI 系统 AMIE，实现实时临床视频问诊，首次在此场景展示专家级 AI 能力。该系统基于 Gemini 和 Project Astra 构建，可解读视觉与听觉线索、引导虚拟体格检查并实时诊断推理。随机研究中，临床评估者对 AMIE 的病史采集、诊断准确性等核心能力给予好评，患者演员也更偏好视频体验。",
-      "category": "paper",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsoxbh180a00rohdooafsmzp"
-      }
-    },
-    {
-      "id": "cmsox86zv09u6rohdqr80wg0x",
-      "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
-      "title_en": null,
-      "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
-      "permalink": "https://aihot.virxact.com/items/cmsox86zv09u6rohdqr80wg0x",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-11T16:41:17.281Z",
-      "discoveredAt": "2026-08-11T17:15:09.958Z",
-      "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsox86zv09u6rohdqr80wg0x"
-      }
-    },
-    {
-      "id": "cmsqe6mat01bsroli3hw71nz7",
-      "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
-      "title_en": "Empty shelves or lost keys？ Recall is the bottleneck for parametric factuality",
-      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality",
-      "permalink": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-08-11T16:00:00.000Z",
-      "discoveredAt": "2026-08-12T17:57:36.369Z",
-      "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于\"丢钥匙\"而非\"空货架\"。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2，150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。",
-      "category": "paper",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7"
-      }
-    },
-    {
-      "id": "cmsopyoum028vrohd4dgeksz9",
-      "title": "统一 Radix 缓存：为混合模型前缀缓存构建单一树结构",
-      "title_en": "Blog Unified Radix Cache： One Tree for Hybrid Model Prefix Caching Prefix caching reuses KV when requests share the same token prefix. Under full attention， once the KV for a shared prefix is computed， it remains valid as more tokens are appended. A later request wit… Zhangheng Huang， Ke Bao， Yi Zhang， Jialin Ouyang， Sicheng Pan",
-      "url": "https://www.lmsys.org/blog/2026-08-11-unified-radix-cache",
-      "permalink": "https://aihot.virxact.com/items/cmsopyoum028vrohd4dgeksz9",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-11T13:51:45.827Z",
-      "discoveredAt": "2026-08-11T13:51:45.827Z",
-      "summary": "LMSYS 团队提出 Unified Radix Cache，用单一 token 键控 radix 拓扑统一管理混合模型的 FULL、SWA 和 MAMBA 组件缓存，各组件独立执行路径、滑动窗口和检查点复用语义。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsopyoum028vrohd4dgeksz9"
       }
     }
   ]

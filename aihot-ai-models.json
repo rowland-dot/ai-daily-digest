@@ -1,8 +1,26 @@
 {
-  "count": 17,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmsyhyrd60wg3roz03o05ne6l",
+      "title": "MOSS-VL技术报告：将实时交互作为一等能力的开源视觉语言模型家族",
+      "title_en": "MOSS-VL Technical Report",
+      "url": "https://arxiv.org/abs/2608.15045",
+      "permalink": "https://aihot.virxact.com/items/cmsyhyrd60wg3roz03o05ne6l",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-15T00:00:00.000Z",
+      "discoveredAt": "2026-08-15T00:00:00.000Z",
+      "summary": "MOSS-VL是一个将实时交互（边感知边说话）作为一等能力的开源视觉语言模型家族，通过门控交叉注意力让语言解码器在生成时同步处理视觉输入。MOSS-VL-Realtime在四个流式基准中平均成绩居开源模型之首（三项第一、一项第二），在OmniMMI Proactive Alerting上以66.0分大幅领先最佳基线（37.5分）。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsyhyrd60wg3roz03o05ne6l"
+      }
+    },
     {
       "id": "cmst9yj3c05utrodz443l0odv",
       "title": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
@@ -235,78 +253,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsqabu0f001krouc6sfhic2d"
-      }
-    },
-    {
-      "id": "cmsopyoum028urohdhqzve6ba",
-      "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
-      "title_en": "Blog SGLang Adds Day-0 Support for NVIDIA Nemotron 3.5 Lightning SGLang is excited to announce Day-0 support for NVIDIA Nemotron 3.5 Lightning， a customizable open model built to power always-on agents across local systems， the edge， the datacenter， and the cloud. … NVIDIA Nemotron Team and SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-08-11-nemotron-3-5-lightning",
-      "permalink": "https://aihot.virxact.com/items/cmsopyoum028urohdhqzve6ba",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-11T13:51:45.827Z",
-      "discoveredAt": "2026-08-11T13:51:45.827Z",
-      "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsopyoum028urohdhqzve6ba"
-      }
-    },
-    {
-      "id": "cmsoolxde07isrop2eb5rrtvq",
-      "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
-      "title_en": "NVIDIA and Local AI Community Fuel Open Source Models and Intelligent Agents",
-      "url": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
-      "permalink": "https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq",
-      "source": "NVIDIA Blog（RSS）",
-      "publishedAt": "2026-08-11T13:00:25.000Z",
-      "discoveredAt": "2026-08-11T13:13:55.266Z",
-      "summary": "NVIDIA 发布 Nemotron 3.5 Lightning，一款可定制的开源 30B 混合专家（MoE）模型，专为常驻智能体设计。相比同类开源模型，其 token 生成速度最高提升 4 倍，任务完成时间缩短 30%。该模型采用开放权重，支持用户微调以匹配特定任务，并可在 RTX PC、DGX Spark 及 Jetson 等设备上运行。",
-      "category": "ai-models",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq"
-      }
-    },
-    {
-      "id": "cmsu7hwm403roroe0f1unbbsn",
-      "title": "Ling-3.0-tiny 正式开源：1.3B 激活参数如何进入真实任务",
-      "title_en": "Ling-3.0-tiny 正式开源：让 1.3B 激活参数，进入真实任务",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487496&idx=1&sn=6486908f50006a356d48168b0b2762f1",
-      "permalink": "https://aihot.virxact.com/items/cmsu7hwm403roroe0f1unbbsn",
-      "source": "公众号：蚂蚁百灵（Ling）",
-      "publishedAt": "2026-08-11T10:01:51.000Z",
-      "discoveredAt": "2026-08-11T10:01:51.000Z",
-      "summary": "蚂蚁百灵开源 Ling-3.0-tiny，一款总参数 7.9B、每 Token 仅激活 1.3B 参数的原生混合推理模型，同步提供 BF16、FP8 和 INT4 三个版本。",
-      "category": "ai-models",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsu7hwm403roroe0f1unbbsn"
-      }
-    },
-    {
-      "id": "cmsogatbh0qdgrofwzm7gdk0a",
-      "title": "Ling-3.0-tiny 正式开源：1.3B 激活参数如何进入真实任务",
-      "title_en": "Ling-3.0-tiny 正式开源：让 1.3B 激活参数，进入真实任务",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487491&idx=1&sn=fcb14aceb054f9a24e22525d3dae6fa0",
-      "permalink": "https://aihot.virxact.com/items/cmsogatbh0qdgrofwzm7gdk0a",
-      "source": "公众号：蚂蚁百灵（Ling）",
-      "publishedAt": "2026-08-11T09:20:00.000Z",
-      "discoveredAt": "2026-08-11T09:21:20.968Z",
-      "summary": "蚂蚁百灵开源 Ling-3.0-tiny，一款总参数 7.9B、推理时仅激活 1.3B 参数的原生混合推理模型，同步提供 BF16、FP8 和 INT4 三个版本。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsogatbh0qdgrofwzm7gdk0a"
       }
     }
   ]
