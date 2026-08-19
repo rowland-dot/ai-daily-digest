@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmt0d2tsl1961rodpnvzxo4cc",
+      "title": "OpenRouter 宣布加入 Stripe",
+      "title_en": "OpenRouter is Joining Stripe",
+      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+      "permalink": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc",
+      "source": "OpenRouter：Announcements（RSS）",
+      "publishedAt": "2026-08-19T00:00:00.000Z",
+      "discoveredAt": "2026-08-19T17:24:22.858Z",
+      "summary": "OpenRouter 宣布与 Stripe 合并，以加速推动全球经济增长。OpenRouter 目前每日处理来自 400 多个 AI 模型的 10+ 万亿 token，服务超 1000 万开发者与公司，自成立以来推理量每年至少增长 10 倍。合并后 OpenRouter 将继续以原名、原使命独立运营，产品与路线图不变，路由决策仍以用户利益为先，交易预计在未来数周内完成。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc"
+      }
+    },
+    {
       "id": "cmsxld6es03o8roz0jblf3ii9",
       "title": "404 Media 追踪珍本图书流向：亚马逊批量购书扫描用于 AI 训练后销毁",
       "title_en": "我们追踪了一批珍本图书的运输过程。最终，这些书被送到了亚马逊的一处人工智能训练中心",
@@ -145,24 +163,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas"
-      }
-    },
-    {
-      "id": "cmspo193n05q2rojeue8j2k5a",
-      "title": "Research Gold 号称\"100%人类撰写、绝不使用AI\"，实则全程由AI驱动",
-      "title_en": "一家声称提供\"100%由人类撰写、绝不使用AI\"的医学研究的公司，其实100%由AI驱动",
-      "url": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai",
-      "permalink": "https://aihot.virxact.com/items/cmspo193n05q2rojeue8j2k5a",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-12T05:41:30.137Z",
-      "discoveredAt": "2026-08-12T05:45:36.772Z",
-      "summary": "面向医学研究者的网站 Research Gold 宣称其服务\"100%由人类撰写、绝不使用AI\"，并列出多名博士审稿人。但调查发现，这些审稿人系AI生成、并不存在；部分真实方法学家的身份和照片未经许可被挪用。致电该公司时，自称\"Sarah\"的AI助手坚称自己是真人，邮件与聊天回复也均为AI生成。",
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmspo193n05q2rojeue8j2k5a"
       }
     }
   ]

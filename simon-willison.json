@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-08-18T20:51:33.488Z",
+  "fetched_at": "2026-08-19T20:55:21.128Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Mojo🔥 is now open source",
+      "link": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+      "updated": "2026-08-18T21:39:20+00:00",
+      "summary": "Mojo🔥 is now open source"
+    },
     {
       "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
       "link": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
       "updated": "2026-08-13T19:37:34+00:00",
       "summary": "It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 ."
-    },
-    {
-      "title": "alchemy-utils 0.1a1",
-      "link": "https://simonwillison.net/2026/Aug/13/alchemy-utils/",
-      "updated": "2026-08-13T03:03:17+00:00",
-      "summary": "Performance boost for DuckDB exports and CSV imports, see here ."
     }
   ]
 }

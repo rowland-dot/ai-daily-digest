@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T20:51:31.697Z",
+  "fetched_at": "2026-08-19T20:55:19.398Z",
   "repos": [
     {
       "owner": "harry0703",
@@ -8,31 +8,9 @@
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 108373,
-      "forks": 16452,
-      "starsToday": 2306
-    },
-    {
-      "owner": "chaitanyagiri",
-      "name": "munder-difflin",
-      "url": "https://github.com/chaitanyagiri/munder-difflin",
-      "description": "local multi-agent harness",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 1955,
-      "forks": 234,
-      "starsToday": 256
-    },
-    {
-      "owner": "akitaonrails",
-      "name": "ai-memory",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 2655,
-      "forks": 229,
-      "starsToday": 730
+      "stars": 110413,
+      "forks": 16752,
+      "starsToday": 2221
     },
     {
       "owner": "volcengine",
@@ -41,9 +19,20 @@
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 29285,
-      "forks": 2303,
-      "starsToday": 298
+      "stars": 30083,
+      "forks": 2331,
+      "starsToday": 803
+    },
+    {
+      "owner": "chaitanyagiri",
+      "name": "munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "description": "local multi-agent harness",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 2625,
+      "forks": 312,
+      "starsToday": 797
     },
     {
       "owner": "mukul975",
@@ -52,53 +41,53 @@
       "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 29086,
-      "forks": 3486,
-      "starsToday": 726
+      "stars": 29762,
+      "forks": 3528,
+      "starsToday": 767
     },
     {
-      "owner": "public-apis",
-      "name": "public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "description": "A collective list of free APIs",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 464384,
-      "forks": 51299,
-      "starsToday": 1139
+      "owner": "akitaonrails",
+      "name": "ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 3210,
+      "forks": 260,
+      "starsToday": 609
     },
     {
-      "owner": "basecamp",
-      "name": "omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
+      "owner": "nautechsystems",
+      "name": "nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 26401,
+      "forks": 3415,
+      "starsToday": 79
+    },
+    {
+      "owner": "mattpocock",
+      "name": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "languageColor": "#89e051",
-      "stars": 26366,
-      "forks": 2686,
-      "starsToday": 411
+      "stars": 223596,
+      "forks": 19242,
+      "starsToday": 1214
     },
     {
-      "owner": "agalwood",
-      "name": "Motrix",
-      "url": "https://github.com/agalwood/Motrix",
-      "description": "A full-featured download manager.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 53600,
-      "forks": 4946,
-      "starsToday": 607
-    },
-    {
-      "owner": "NawfalMotii79",
-      "name": "PLFM_RADAR",
-      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
-      "description": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
-      "language": "PLSQL",
-      "languageColor": "#dad8d8",
-      "stars": 24267,
-      "forks": 5582,
-      "starsToday": 204
+      "owner": "obra",
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 274199,
+      "forks": 24549,
+      "starsToday": 514
     },
     {
       "owner": "jundot",
@@ -107,20 +96,53 @@
       "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 19347,
-      "forks": 1666,
-      "starsToday": 366
+      "stars": 19788,
+      "forks": 1687,
+      "starsToday": 467
     },
     {
-      "owner": "bojieli",
-      "name": "ai-agent-book",
-      "url": "https://github.com/bojieli/ai-agent-book",
-      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "owner": "santifer",
+      "name": "career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 65682,
+      "forks": 12732,
+      "starsToday": 193
+    },
+    {
+      "owner": "immich-app",
+      "name": "immich",
+      "url": "https://github.com/immich-app/immich",
+      "description": "High performance self-hosted photo and video management solution.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 111784,
+      "forks": 6624,
+      "starsToday": 137
+    },
+    {
+      "owner": "amadeusprotocol",
+      "name": "node",
+      "url": "https://github.com/amadeusprotocol/node",
+      "description": "",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 4453,
+      "forks": 79,
+      "starsToday": 1415
+    },
+    {
+      "owner": "marceloprates",
+      "name": "prettymaps",
+      "url": "https://github.com/marceloprates/prettymaps",
+      "description": "Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 39049,
-      "forks": 4308,
-      "starsToday": 556
+      "stars": 13022,
+      "forks": 652,
+      "starsToday": 58
     },
     {
       "owner": "genlayerlabs",
@@ -129,20 +151,9 @@
       "description": "",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 15880,
-      "forks": 800,
-      "starsToday": 543
-    },
-    {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 84685,
-      "forks": 8348,
-      "starsToday": 288
+      "stars": 16213,
+      "forks": 808,
+      "starsToday": 421
     }
   ]
 }

@@ -1,9 +1,27 @@
 {
-  "fetched_at": "2026-08-18T20:51:32.105Z",
+  "fetched_at": "2026-08-19T20:55:19.900Z",
   "source": "OpenAI",
   "items": [
     {
-      "title": "Strengthening Democratic Oversight in National Security",
+      "title": "Offering Zero Data Retention for frontier models",
+      "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "pubDate": "Wed, 19 Aug 2026 19:00:00 GMT",
+      "description": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy."
+    },
+    {
+      "title": "Replit expands access to software creation with GPT-5.6 Luna",
+      "link": "https://openai.com/index/replit",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "description": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs."
+    },
+    {
+      "title": "ChatGPT Ads expands across Europe",
+      "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+      "pubDate": "Tue, 18 Aug 2026 22:00:00 GMT",
+      "description": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions."
+    },
+    {
+      "title": "Strengthening democratic oversight in national security",
       "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
       "pubDate": "Tue, 18 Aug 2026 19:00:00 GMT",
       "description": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise."
@@ -25,6 +43,12 @@
       "link": "https://openai.com/index/chatgpt-for-teens",
       "pubDate": "Tue, 18 Aug 2026 11:00:00 GMT",
       "description": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents."
+    },
+    {
+      "title": "How NVIDIA scales expertise with ChatGPT Work",
+      "link": "https://openai.com/index/nvidia/chatgpt-work",
+      "pubDate": "Tue, 18 Aug 2026 00:00:00 GMT",
+      "description": "NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally."
     },
     {
       "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
@@ -67,30 +91,6 @@
       "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
       "pubDate": "Thu, 13 Aug 2026 09:00:00 GMT",
       "description": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI."
-    },
-    {
-      "title": "From assistance to execution: How enterprises put AI to work",
-      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
-      "pubDate": "Wed, 12 Aug 2026 06:00:00 GMT",
-      "description": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption."
-    },
-    {
-      "title": "How RingCentral builds AI-native work from engineering to ops",
-      "link": "https://openai.com/index/ringcentral",
-      "pubDate": "Wed, 12 Aug 2026 00:00:00 GMT",
-      "description": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations."
-    },
-    {
-      "title": "Testing ads in ChatGPT",
-      "link": "https://openai.com/index/testing-ads-in-chatgpt",
-      "pubDate": "Tue, 11 Aug 2026 10:00:00 GMT",
-      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
-    },
-    {
-      "title": "Daybreak models are now available on AWS",
-      "link": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-      "pubDate": "Tue, 11 Aug 2026 10:00:00 GMT",
-      "description": "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows."
     }
   ]
 }

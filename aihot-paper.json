@@ -1,8 +1,26 @@
 {
-  "count": 4,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmt0e7sxo01eiro2o4l4y9jmh",
+      "title": "突破 DeepSeek-V4-Pro 服务极限：H20 上的多场景优化方法",
+      "title_en": "Blog Pushing the Limits of Serving DeepSeek-V4-Pro DeepSeek-V4-Pro is a 1.6-trillion-parameter Mixture-of-Experts （MoE） model released with both FP8 and FP4 weights. Models at this scale naturally benefit from accelerators such as NVIDIA Blackwell GPU… Tianyu Zhang， Yusong Gao， Yun Zhang",
+      "url": "https://www.lmsys.org/blog/2026-08-19-deepseek-v4-pro-engine-optimization-h20",
+      "permalink": "https://aihot.virxact.com/items/cmt0e7sxo01eiro2o4l4y9jmh",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-19T17:56:13.817Z",
+      "discoveredAt": "2026-08-19T17:56:13.817Z",
+      "summary": "LMSYS 团队针对 1.6 万亿参数的 MoE 模型 DeepSeek-V4-Pro，在 H20 GPU 上通过场景化服务配置逼近 B300 性能。单节点 H20-141GB 参考实现达 271 output tokens/s，与 B300 的 383.7 tokens/s 性能差距缩小至 1.42×。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt0e7sxo01eiro2o4l4y9jmh"
+      }
+    },
     {
       "id": "cmsz1974l06hbro20gosn5d78",
       "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
@@ -19,6 +37,42 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78"
+      }
+    },
+    {
+      "id": "cmszieman0euzrodptihyllom",
+      "title": "StartupBench：面向市场验证端到端工作流的通用智能体基准测试",
+      "title_en": "StartupBench： Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
+      "url": "https://arxiv.org/abs/2608.17800",
+      "permalink": "https://aihot.virxact.com/items/cmszieman0euzrodptihyllom",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-18T00:00:00.000Z",
+      "discoveredAt": "2026-08-19T03:05:46.360Z",
+      "summary": "StartupBench 是一个基于市场验证的 AI 初创公司产品构建的端到端智能体基准，从真实采用的产品工作流中提炼任务，而非研究者预设任务。在统一智能体框架下，最强模型也仅能完成约 30% 的任务，复杂指令遵循和领域专业知识是主要失败来源。该基准揭示了当前通用智能体在真实用户任务上的能力边界。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmszieman0euzrodptihyllom"
+      }
+    },
+    {
+      "id": "cmsz8gh3n06e4rodpl8l2syek",
+      "title": "Claude 如何加速蛋白质设计与分析化学研究",
+      "title_en": "How Claude is accelerating protein design and analytical chemistry",
+      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+      "permalink": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-08-17T16:00:00.000Z",
+      "discoveredAt": "2026-08-18T22:27:16.191Z",
+      "summary": "Anthropic 公布两项实验：Claude（Mythos Preview 和 Opus 4.8）针对 15 个靶点设计蛋白质结合剂，成功 14 个，命中率达 22.6%-35.1%。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek"
       }
     },
     {
