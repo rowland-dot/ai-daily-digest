@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-08-19T20:55:21.128Z",
+  "fetched_at": "2026-08-20T20:57:20.140Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+      "link": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+      "updated": "2026-08-19T23:16:00+00:00",
+      "summary": "I tasked Claude Fable 5 running in Claude Code for web with the following research task:"
+    },
+    {
+      "title": "Quoting Jeremy Morrell",
+      "link": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
+      "updated": "2026-08-19T22:56:31+00:00",
+      "summary": "My hypothesis is that there is a new opportunity for Extensible Software on the web . LLMs radically lower the cost of authoring extensions, and modern sandbox primitives lower the deployment cost and provide good security boundaries. We can build our app as a solid, accountable core, and allow users to safely extend it in many directions by having LLMs fill in the missing pieces. We can give our users super powers."
+    },
+    {
+      "title": "Conceptual integrity and counting lines of code",
+      "link": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+      "updated": "2026-08-19T22:46:07+00:00",
+      "summary": "Last week I recorded an episode of the Talking Postgres podcast with Claire Giordano on the subject of \"How AI is changing software development\". We had a really great conversation. Here are a couple of my highlights from a lightly edited transcript (prompt to Claude: \"very minor edits to remove disfluencies\")."
+    },
     {
       "title": "Mojo🔥 is now open source",
       "link": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
       "updated": "2026-08-14T21:54:35+00:00",
       "summary": "Don't classify. Hallucinate!"
-    },
-    {
-      "title": "sqlite-utils 4.2.1",
-      "link": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
-      "updated": "2026-08-13T23:53:47+00:00",
-      "summary": "Fixes a crashing bug in sqlite-utils 4.2 . I'd introduced code that looks like this:"
-    },
-    {
-      "title": "sqlite-utils 4.2",
-      "link": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
-      "updated": "2026-08-13T20:11:29+00:00",
-      "summary": "Lots of improvements in this one relating to the table.transform() feature , which adds support for complex alter table operations by creating a fresh table, copying across the data and then dropping and replacing the old one."
-    },
-    {
-      "title": "llm-gemini 0.33",
-      "link": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
-      "updated": "2026-08-13T19:37:34+00:00",
-      "summary": "It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 ."
     }
   ]
 }

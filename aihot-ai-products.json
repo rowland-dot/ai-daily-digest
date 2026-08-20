@@ -1,8 +1,98 @@
 {
-  "count": 13,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmt1z1q5n0c93roovlvh40tew",
+      "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
+      "title_en": "Build production agents with computer use， the Skills API， and the Files API",
+      "url": "https://claude.com/blog/computer-use-skills-api-files-api",
+      "permalink": "https://aihot.virxact.com/items/cmt1z1q5n0c93roovlvh40tew",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-20T20:27:01.660Z",
+      "discoveredAt": "2026-08-20T20:27:01.660Z",
+      "summary": "Anthropic 宣布 Computer Use、Skills API 与 Files API 在 Claude Platform 全面可用，并新增浏览器操作工具，让智能体可操作软件、调用团队技能并返回成品文件。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1z1q5n0c93roovlvh40tew"
+      }
+    },
+    {
+      "id": "cmt1tonwa07i9roovrze0ll65",
+      "title": "Anthropic 如何开展 AI 教学",
+      "title_en": "Anthropic's approach to teaching and learning AI",
+      "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+      "permalink": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-20T17:56:58.396Z",
+      "discoveredAt": "2026-08-20T17:56:58.396Z",
+      "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65"
+      }
+    },
+    {
+      "id": "cmt1pkwbj04bxroovzkfca5c7",
+      "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
+      "title_en": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
+      "url": "https://mistral.ai/news/agentic-search",
+      "permalink": "https://aihot.virxact.com/items/cmt1pkwbj04bxroovzkfca5c7",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-08-20T16:02:07.300Z",
+      "discoveredAt": "2026-08-20T16:02:07.300Z",
+      "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1pkwbj04bxroovzkfca5c7"
+      }
+    },
+    {
+      "id": "cmt1r7jjh05lgroovc4zwypj6",
+      "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量",
+      "title_en": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
+      "url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
+      "permalink": "https://aihot.virxact.com/items/cmt1r7jjh05lgroovc4zwypj6",
+      "source": "Google Cloud：Databases（RSS）",
+      "publishedAt": "2026-08-20T16:00:00.000Z",
+      "discoveredAt": "2026-08-20T16:47:41.109Z",
+      "summary": "AlloyDB 的 ScaNN 索引现已支持超过 100 亿向量的规模，通过全新的四层树架构（预览版）实现，将查询复杂度从 O（N^1/2） 降至 O（N^1/4）。内部测试中，该架构在 100 亿向量规模下可实现 p95 延迟不超过 51 毫秒、召回率达 95%。该功能可通过快速入门指南部署，新用户可享受 30 天免费试用。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1r7jjh05lgroovc4zwypj6"
+      }
+    },
+    {
+      "id": "cmt0kxcuu07f2ro2owuqpbjc8",
+      "title": "FastMetal 让 Mac 本地 30 秒生成视频",
+      "title_en": "A 5-second 480P video， generated entirely on a Mac， in 30 seconds. No CUDA， no cloud， 3.9 GiB of mem…",
+      "url": "https://x.com/haoailab/status/2090177721913770407",
+      "permalink": "https://aihot.virxact.com/items/cmt0kxcuu07f2ro2owuqpbjc8",
+      "source": "X：Sky Computing Lab (@haoailab)",
+      "publishedAt": "2026-08-19T20:42:57.000Z",
+      "discoveredAt": "2026-08-19T21:04:04.391Z",
+      "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。\n\nFastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。\n\n三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。\n\n📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/FastVideo/fastmetal",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt0kxcuu07f2ro2owuqpbjc8"
+      }
+    },
     {
       "id": "cmszeb2mx0b3srodpef1ub0j0",
       "title": "GLM-5.3上线：AA智能指数60分并列开源第一，成本更低",
@@ -19,6 +109,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmszeb2mx0b3srodpef1ub0j0"
+      }
+    },
+    {
+      "id": "cmt1xbu7q0b7troovffggr2jh",
+      "title": "Grok Build 全面上线网页与移动端，所有套餐可用",
+      "title_en": "Grok Build on web and mobile",
+      "url": "https://x.ai/news/grok-build-for-everyone",
+      "permalink": "https://aihot.virxact.com/items/cmt1xbu7q0b7troovffggr2jh",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-08-19T00:00:00.000Z",
+      "discoveredAt": "2026-08-20T19:38:45.834Z",
+      "summary": "Grok Build 现已面向所有套餐开放，支持网页、iOS 和 Android 端使用。用户描述应用、游戏或网站后，Grok 可在聊天中实时生成可运行版本。该功能自 7 月推出 Early Beta 以来，新增了发布分享、接入 X 及调用 Grok 自身模型等能力，发布的应用可获得 grok.me 链接并支持自定义域名、导出到 GitHub 等。",
+      "category": "ai-products",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1xbu7q0b7troovffggr2jh"
       }
     },
     {
@@ -145,96 +253,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02"
-      }
-    },
-    {
-      "id": "cmsrtfqyv04btro0nle3m5b20",
-      "title": "Google Sheets 推出 Sheets canvas：用 Gemini 将表格数据变为交互式迷你应用",
-      "title_en": "Bring your spreadsheet data to life with Sheets canvas",
-      "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets",
-      "permalink": "https://aihot.virxact.com/items/cmsrtfqyv04btro0nle3m5b20",
-      "source": "Google Blog：AI（RSS）",
-      "publishedAt": "2026-08-13T16:45:00.000Z",
-      "discoveredAt": "2026-08-13T17:52:24.043Z",
-      "summary": "Google Sheets 发布新功能 Sheets canvas，基于 Gemini 构建，用户只需用自然语言提示词即可将表格数据转化为交互式仪表盘、学习追踪器、座位表等\"迷你应用\"。",
-      "category": "ai-products",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsrtfqyv04btro0nle3m5b20"
-      }
-    },
-    {
-      "id": "cmsrlvwfp05gdro46mbfqtsgm",
-      "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
-      "title_en": "🚀 Day-0 Support！ @Alibaba_Qwen has open-sourced Qwen3.8-2.4T-A95B - and it's now live on SiliconFlo…",
-      "url": "https://x.com/SiliconFlowAI/status/2087903227224412222",
-      "permalink": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "publishedAt": "2026-08-13T14:04:55.000Z",
-      "discoveredAt": "2026-08-13T14:21:01.224Z",
-      "summary": "阿里开源 Qwen3.8-2.4T-A95B，硅基流动已提供 Day-0 支持。该模型拥有 2.4T 参数、95B 激活参数，主打自主编码、深度研究与端到端智能体执行。API 定价为输入 $2.00/百万 token，输出 $6.00/百万 token，缓存输入 $0.25/百万 token。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm"
-      }
-    },
-    {
-      "id": "cmsrjqqfg02z0ro469zple5jl",
-      "title": "DeepSeek Harness v0.1 开发者预览版发布",
-      "title_en": "🧩 DeepSeek Harness v0.1 is now available in Developer Preview！ 🔹 We're opening it up to developer…",
-      "url": "https://x.com/deepseek_ai/status/2087887408440164663",
-      "permalink": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
-      "source": "X：DeepSeek (@deepseek_ai)",
-      "publishedAt": "2026-08-13T13:02:03.000Z",
-      "discoveredAt": "2026-08-13T13:21:00.781Z",
-      "summary": "DeepSeek Harness v0.1 现已推出开发者预览版，并以 MIT 许可证开源。该智能体框架基于 Cordis 元框架构建，核心设计为\"一切皆插件\"，模型、工具、技能、会话、沙箱、文件系统、循环、编排及 UI 均可自由组合、替换和扩展。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl"
-      }
-    },
-    {
-      "id": "cmsruj6ik02dfrozeclkuve05",
-      "title": "Cursor 推出 builds：云智能体启动速度提升至 3 倍",
-      "title_en": "Cloud agents start 3x faster with builds",
-      "url": "https://cursor.com/blog/builds",
-      "permalink": "https://aihot.virxact.com/items/cmsruj6ik02dfrozeclkuve05",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-08-13T12:00:00.000Z",
-      "discoveredAt": "2026-08-13T18:23:04.579Z",
-      "summary": "Cursor 推出 builds 功能，在后台持续准备就绪的开发环境副本，让云智能体启动时无需从零搭建，响应速度最高提升 3 倍。内部环境启动快 10 倍，首个 token 生成快 3 倍；智能体始终从最近一次成功的 build 启动，依赖更新或安装脚本出错时不会影响运行。8 月 17 日起所有环境默认启用 builds，无需额外费用。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsruj6ik02dfrozeclkuve05"
-      }
-    },
-    {
-      "id": "cmsr160kg0dk0roz2mb20yxwk",
-      "title": "WorkBuddy上线远程控制，国内也有了最丝滑的Agent工作方式",
-      "title_en": "WorkBuddy上线远程控制，国内也有了最丝滑的Agent工作方式。",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685179&idx=1&sn=4cbee32b677b57a9dc6ec2a79d6f72c7",
-      "permalink": "https://aihot.virxact.com/items/cmsr160kg0dk0roz2mb20yxwk",
-      "source": "公众号：数字生命卡兹克",
-      "publishedAt": "2026-08-13T04:32:24.000Z",
-      "discoveredAt": "2026-08-13T04:41:00.631Z",
-      "summary": "WorkBuddy更新上线远程控制功能，将PC、App和小程序打通，手机端可实时同步电脑端的任务、对话、工作空间和产物，支持一台手机连接多台电脑并随时切换。App需升级至1.2.0及以上，电脑端需升级至5.3.8及以上，连接无需扫码。本次更新还新增资料库（我的文档与团队空间）、Markdown多人共同编辑、AI原生审阅模式，以及将资料库内容生成可发布链接的HTML网站。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsr160kg0dk0roz2mb20yxwk"
       }
     }
   ]

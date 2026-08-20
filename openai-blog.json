@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-08-19T20:55:19.900Z",
+  "fetched_at": "2026-08-20T20:57:18.566Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Introducing AI Futures",
+      "link": "https://openai.com/index/introducing-ai-futures",
+      "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "description": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
+    },
+    {
+      "title": "How ChatGPT Work helps Stampli move ideas to market",
+      "link": "https://openai.com/index/stampli",
+      "pubDate": "Thu, 20 Aug 2026 00:00:00 GMT",
+      "description": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days."
+    },
     {
       "title": "Offering Zero Data Retention for frontier models",
       "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
@@ -79,18 +91,6 @@
       "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
       "pubDate": "Thu, 13 Aug 2026 11:00:00 GMT",
       "description": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities."
-    },
-    {
-      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-      "link": "https://openai.com/index/previewing-ultrafast",
-      "pubDate": "Thu, 13 Aug 2026 10:00:00 GMT",
-      "description": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second."
-    },
-    {
-      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
-      "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
-      "pubDate": "Thu, 13 Aug 2026 09:00:00 GMT",
-      "description": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI."
     }
   ]
 }
