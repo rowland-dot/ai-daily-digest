@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-20T20:57:20.140Z",
+  "fetched_at": "2026-08-21T20:51:32.859Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Stop Making TUIs",
+      "link": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+      "updated": "2026-08-21T16:07:32+00:00",
+      "summary": "Stop Making TUIs"
+    },
+    {
+      "title": "Quoting Matt Webb",
+      "link": "https://simonwillison.net/2026/Aug/21/matt-webb/",
+      "updated": "2026-08-21T15:06:26+00:00",
+      "summary": "After I released version 1.0, I figured I would have to do the rotations myself. So I sat down with ChatGPT and I didn’t get it to write the code, but I got it to educate me. With a patient, interactive tutor, I was able to finally do what I hadn’t by reading books and asking mathematician friends – I learnt how to use quaternions just enough to make the app work. So learning doesn’t stop just because I outsource a bunch of thinking to AI. It pushes me to learn more. I like that as an outcome."
+    },
+    {
+      "title": "ChatGPT search now uses the site:operator at scale",
+      "link": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "updated": "2026-08-20T23:57:32+00:00",
+      "summary": "ChatGPT search now uses the site:operator at scale"
+    },
+    {
+      "title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
+      "link": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
+      "updated": "2026-08-20T15:37:00+00:00",
+      "summary": "Today saw the long awaited release of Bun 1.4 , the first stable version since the infamous Rust rewrite a few months ago ."
+    },
     {
       "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
       "link": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
       "updated": "2026-08-16T22:00:39+00:00",
       "summary": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was impressive."
-    },
-    {
-      "title": "Quoting Dario Amodei",
-      "link": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "updated": "2026-08-16T15:05:36+00:00",
-      "summary": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisis of trust. I think that ordinary people don’t trust companies, governments, or the tech industry and always suspect that we are cooking up some new way to screw them over. The causes of this go back decades and AI is just the latest iteration of it. I don’t think that a glitzy marketing campaign with a positive spin (which some have advocated that Anthropic do) is the way to win back that trust — at this point, saying that AI will cure cancer is more a cliche than it is inspiring, and most people think it is deceptive. The thing that will work is actually curing cancer . I think by far the most accurate criticism of AI companies including Anthropic is that we haven’t yet delivered on our big promises to benefit the world. That is totally on us, and I think it’s the criticism you should be making, instead of all this stuff about messaging and marketing."
-    },
-    {
-      "title": "CORS Chat",
-      "link": "https://simonwillison.net/2026/Aug/15/cors-chat/",
-      "updated": "2026-08-15T14:49:54+00:00",
-      "summary": "I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark."
-    },
-    {
-      "title": "Northern Gannet",
-      "link": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
-      "updated": "2026-08-15T03:22:00+00:00",
-      "summary": ""
-    },
-    {
-      "title": "Don't classify. Hallucinate!",
-      "link": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
-      "updated": "2026-08-14T21:54:35+00:00",
-      "summary": "Don't classify. Hallucinate!"
     }
   ]
 }

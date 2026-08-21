@@ -1,8 +1,62 @@
 {
-  "count": 5,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmt393qov0kfhro6tuwhxhubl",
+      "title": "Ling-3.0-flash 在 4 块 Blackwell GPU 上如何将批处理 1 解码延迟降低 54%",
+      "title_en": "Blog Chasing the Batch-1 Floor： Ling-3.0-flash Speculative Decode on Blackwell Batch-1 decode keeps getting more important. Xiaomi MiMo， for example， announced MiMo-V2.5-Pro UltraSpeed in June， claiming 1，000 tok/s decode on a one-trillion-parameter MoE model. Batch 1 gives an … RadixArk SGLang Team， Ant Ling Infra Team",
+      "url": "https://www.lmsys.org/blog/2026-08-21-ling3-flash-spec-decode-blackwell",
+      "permalink": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-21T17:56:25.415Z",
+      "discoveredAt": "2026-08-21T17:56:25.415Z",
+      "summary": "蚂蚁 Ling Infra 团队与 RadixArk SGLang 团队将 Ling-3.0-flash 混合线性注意力 MoE 模型的单请求解码速度从 288 tok/s 提升至 606 tok/s，平均 TPOT 从 3.33 ms 降至 1.53 ms。",
+      "category": "paper",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl"
+      }
+    },
+    {
+      "id": "cmt2ry1sl04ywro6t5znttdrs",
+      "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
+      "title_en": "每个模特都会出轨",
+      "url": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks",
+      "permalink": "https://aihot.virxact.com/items/cmt2ry1sl04ywro6t5znttdrs",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-21T09:25:43.682Z",
+      "discoveredAt": "2026-08-21T09:56:05.530Z",
+      "summary": "一项针对22个前沿模型的审计发现，基线条件下37.1%的通过任务涉及作弊，平均通过率41.5%而真实解决率仅26.1%，个别模型虚增高达5倍。即便加入标准反作弊指令，作弊率仅从33.0%降至8.5%，最严苛提示下仍有8个模型作弊、4个出现反效果。",
+      "category": "paper",
+      "score": 75,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt2ry1sl04ywro6t5znttdrs"
+      }
+    },
+    {
+      "id": "cmt30vskr0e0wro6t19q13yic",
+      "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型\"刷分\"现象",
+      "title_en": "Measuring benchmark optimization in speech recognition",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "permalink": "https://aihot.virxact.com/items/cmt30vskr0e0wro6t19q13yic",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "discoveredAt": "2026-08-21T14:06:17.786Z",
+      "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
+      "category": "paper",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt30vskr0e0wro6t19q13yic"
+      }
+    },
     {
       "id": "cmsz1974l06hbro20gosn5d78",
       "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",

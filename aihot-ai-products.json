@@ -1,60 +1,42 @@
 {
-  "count": 14,
+  "count": 17,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmt1z1q5n0c93roovlvh40tew",
-      "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
-      "title_en": "Build production agents with computer use， the Skills API， and the Files API",
-      "url": "https://claude.com/blog/computer-use-skills-api-files-api",
-      "permalink": "https://aihot.virxact.com/items/cmt1z1q5n0c93roovlvh40tew",
+      "id": "cmt396dpw0kj0ro6tdktqkp8s",
+      "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
+      "title_en": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
+      "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+      "permalink": "https://aihot.virxact.com/items/cmt396dpw0kj0ro6tdktqkp8s",
       "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-20T20:27:01.660Z",
-      "discoveredAt": "2026-08-20T20:27:01.660Z",
-      "summary": "Anthropic 宣布 Computer Use、Skills API 与 Files API 在 Claude Platform 全面可用，并新增浏览器操作工具，让智能体可操作软件、调用团队技能并返回成品文件。",
+      "publishedAt": "2026-08-21T17:58:29.461Z",
+      "discoveredAt": "2026-08-21T17:58:29.461Z",
+      "summary": "Anthropic 宣布 Claude Mythos 5 现已集成至 Claude Security，并即将登陆合作伙伴的网络安全防御工具。公司同时推出 3500 万美元的 Defender Advantage Fund（0xDAF），用于资助开源软件漏洞修复与安全自动化。",
       "category": "ai-products",
-      "score": 63,
+      "score": 61,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt1z1q5n0c93roovlvh40tew"
+        "canonical": "https://aihot.virxact.com/items/cmt396dpw0kj0ro6tdktqkp8s"
       }
     },
     {
-      "id": "cmt1tonwa07i9roovrze0ll65",
-      "title": "Anthropic 如何开展 AI 教学",
-      "title_en": "Anthropic's approach to teaching and learning AI",
-      "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
-      "permalink": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-20T17:56:58.396Z",
-      "discoveredAt": "2026-08-20T17:56:58.396Z",
-      "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65"
-      }
-    },
-    {
-      "id": "cmt1pkwbj04bxroovzkfca5c7",
-      "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
-      "title_en": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-      "url": "https://mistral.ai/news/agentic-search",
-      "permalink": "https://aihot.virxact.com/items/cmt1pkwbj04bxroovzkfca5c7",
-      "source": "Mistral AI：News（网页）",
-      "publishedAt": "2026-08-20T16:02:07.300Z",
-      "discoveredAt": "2026-08-20T16:02:07.300Z",
-      "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
+      "id": "cmt393qow0kfiro6tpe87m4nu",
+      "title": "SGLang 推出 Weight Cache Daemon，实现亚秒级引擎重启",
+      "title_en": "Blog Fast Engine Recovery： Sub-Second Engine Restart for SGLang via Weight Cache Daemon Nowadays， State-of-the-Art （SOTA） models are getting much bigger and reloading the model service after a crash is very expensive. Therefore， we are introducing the Weight Cache Daemon， a persistent GP… Ant Ling Infra Team （Ant Group）， Alibaba， SGLang Team",
+      "url": "https://www.lmsys.org/blog/2026-08-21-sglang-fast-recovery",
+      "permalink": "https://aihot.virxact.com/items/cmt393qow0kfiro6tpe87m4nu",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-21T17:56:25.415Z",
+      "discoveredAt": "2026-08-21T17:56:25.415Z",
+      "summary": "SGLang 团队推出 Weight Cache Daemon，通过 CUDA IPC 零拷贝映射将模型权重加载从约 495 秒降至约 0.63 秒（约 785 倍加速），端到端启动时间减少 93.9%。该守护进程在 GPU 内存中持久化后量化权重，支持多实例共享和亚秒级主备切换，是 Fast Engine Recovery Framework 的第一阶段。",
       "category": "ai-products",
       "score": 67,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt1pkwbj04bxroovzkfca5c7"
+        "canonical": "https://aihot.virxact.com/items/cmt393qow0kfiro6tpe87m4nu"
       }
     },
     {
@@ -76,6 +58,24 @@
       }
     },
     {
+      "id": "cmt3dpn230oxyro6t7ynmpyc2",
+      "title": "Claude Platform 发布 Python SDK v1.0，迁移至 httpx2",
+      "title_en": "Claude Platform release notes - August 20， 2026",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-20-2026",
+      "permalink": "https://aihot.virxact.com/items/cmt3dpn230oxyro6t7ynmpyc2",
+      "source": "Claude Platform：开发者版本说明（RSS）",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "discoveredAt": "2026-08-21T20:05:26.561Z",
+      "summary": "Anthropic 发布 Claude Python SDK v1.0，HTTP 层从 httpx 迁移至 API 兼容的 httpx2，并移除 Text Completions API 等长期弃用功能。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt3dpn230oxyro6t7ynmpyc2"
+      }
+    },
+    {
       "id": "cmt0kxcuu07f2ro2owuqpbjc8",
       "title": "FastMetal 让 Mac 本地 30 秒生成视频",
       "title_en": "A 5-second 480P video， generated entirely on a Mac， in 30 seconds. No CUDA， no cloud， 3.9 GiB of mem…",
@@ -91,6 +91,60 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt0kxcuu07f2ro2owuqpbjc8"
+      }
+    },
+    {
+      "id": "cmt1z1q5n0c93roovlvh40tew",
+      "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
+      "title_en": "Build production agents with computer use， the Skills API， and the Files API",
+      "url": "https://claude.com/blog/computer-use-skills-api-files-api",
+      "permalink": "https://aihot.virxact.com/items/cmt1z1q5n0c93roovlvh40tew",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-19T16:00:00.000Z",
+      "discoveredAt": "2026-08-20T20:27:01.660Z",
+      "summary": "Anthropic 宣布 Computer Use、Skills API 与 Files API 在 Claude Platform 全面可用，并新增浏览器操作工具，让智能体可操作软件、调用团队技能并返回成品文件。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1z1q5n0c93roovlvh40tew"
+      }
+    },
+    {
+      "id": "cmt1tonwa07i9roovrze0ll65",
+      "title": "Anthropic 如何开展 AI 教学",
+      "title_en": "Anthropic's approach to teaching and learning AI",
+      "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+      "permalink": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-19T16:00:00.000Z",
+      "discoveredAt": "2026-08-20T17:56:58.396Z",
+      "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1tonwa07i9roovrze0ll65"
+      }
+    },
+    {
+      "id": "cmt1pkwbj04bxroovzkfca5c7",
+      "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
+      "title_en": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
+      "url": "https://mistral.ai/news/agentic-search",
+      "permalink": "https://aihot.virxact.com/items/cmt1pkwbj04bxroovzkfca5c7",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-08-19T16:00:00.000Z",
+      "discoveredAt": "2026-08-20T16:02:07.300Z",
+      "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt1pkwbj04bxroovzkfca5c7"
       }
     },
     {

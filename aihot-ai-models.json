@@ -1,8 +1,44 @@
 {
-  "count": 9,
+  "count": 6,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmt2yscvm0ca8ro6t0u6vtfnt",
+      "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+      "title_en": "🧮 Introducing MathForm， an open-source framework， dataset， and model for mathematical autoformaliza…",
+      "url": "https://x.com/OpenBMB/status/2090786300194590816",
+      "permalink": "https://aihot.virxact.com/items/cmt2yscvm0ca8ro6t0u6vtfnt",
+      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-08-21T13:01:13.000Z",
+      "discoveredAt": "2026-08-21T13:07:37.079Z",
+      "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
+      "category": "ai-models",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt2yscvm0ca8ro6t0u6vtfnt"
+      }
+    },
+    {
+      "id": "cmt2qvfnj03zxro6tehwcikx4",
+      "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+      "title_en": null,
+      "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
+      "permalink": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4",
+      "source": "DeepSeek：API 更新日志",
+      "publishedAt": "2026-08-21T09:26:04.727Z",
+      "discoveredAt": "2026-08-21T09:26:04.727Z",
+      "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4"
+      }
+    },
     {
       "id": "cmt1rv5n8066iroovaxgoej1b",
       "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
@@ -73,96 +109,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsyhyrd60wg3roz03o05ne6l"
-      }
-    },
-    {
-      "id": "cmst9yj3c05utrodz443l0odv",
-      "title": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
-      "title_en": "Gemini 3.7 Flash is now available to all Pro and Ultra users in Gemini chat. This model update deli…",
-      "url": "https://x.com/GeminiApp/status/2088326407730692538",
-      "permalink": "https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv",
-      "source": "X：Gemini (@GeminiApp)",
-      "publishedAt": "2026-08-14T18:06:29.000Z",
-      "discoveredAt": "2026-08-14T18:22:41.004Z",
-      "summary": "Gemini 3.7 Flash 现已向 Gemini 聊天中的 Pro 和 Ultra 用户开放。该模型更新提升了多步骤任务的推理与准确性，如智能整合数十个文件和邮件为一份主文档。同时，Gemini Spark 也已运行于 3.7 Flash，通过改进对 Google Workspace 应用的工具调用，让个人 AI 智能体更精准。",
-      "category": "ai-models",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv"
-      }
-    },
-    {
-      "id": "cmst3j53e03ncro068tgsr4xn",
-      "title": "Qwen开源 Qwen3.8 系列模型",
-      "title_en": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-      "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
-      "permalink": "https://aihot.virxact.com/items/cmst3j53e03ncro068tgsr4xn",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "publishedAt": "2026-08-14T15:02:48.000Z",
-      "discoveredAt": "2026-08-14T15:22:45.052Z",
-      "summary": "Qwen兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
-      "category": "ai-models",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmst3j53e03ncro068tgsr4xn"
-      }
-    },
-    {
-      "id": "cmssv94cg0h4mroffsb9e7a88",
-      "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-      "title_en": "dots3-note Preview：迈向服务真实生活的长程智能体，坚定的第一步",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
-      "permalink": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88",
-      "source": "公众号：小红书技术（dots.llm）",
-      "publishedAt": "2026-08-14T11:25:29.000Z",
-      "discoveredAt": "2026-08-14T11:31:00.943Z",
-      "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。",
-      "category": "ai-models",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88"
-      }
-    },
-    {
-      "id": "cmswlcuwb0wcyrovmfccplna7",
-      "title": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
-      "title_en": "GLM-5.3：前沿编程能力与涌现的网络安全能力",
-      "url": "https://www.zhipuai.cn/zh/research/162",
-      "permalink": "https://aihot.virxact.com/items/cmswlcuwb0wcyrovmfccplna7",
-      "source": "智谱：研究（网页内嵌数据）",
-      "publishedAt": "2026-08-14T06:00:00.000Z",
-      "discoveredAt": "2026-08-14T06:00:00.000Z",
-      "summary": "Zhipu发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一。模型在白盒代码审查等安全任务中表现持平Mythos 5，并在CyberGym测试中得分84.5%。GLM-5.3即日起上线ZCode、AutoClaw等工具，API很快上线，完整模型权重将在两周内开源。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmswlcuwb0wcyrovmfccplna7"
-      }
-    },
-    {
-      "id": "cmssi38vn03o9rofffr0z8lyb",
-      "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
-      "title_en": "This time， it's official. DeepSeek V4 Pro just landed. 🚀 @deepseek_ai DeepSeek-V4-Pro-0813 is now l…",
-      "url": "https://x.com/SiliconFlowAI/status/2088127458558271885",
-      "permalink": "https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb",
-      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
-      "publishedAt": "2026-08-14T04:55:56.000Z",
-      "discoveredAt": "2026-08-14T05:22:30.653Z",
-      "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
-      "category": "ai-models",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb"
       }
     }
   ]

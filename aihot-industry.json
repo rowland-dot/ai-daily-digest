@@ -1,5 +1,5 @@
 {
-  "count": 8,
+  "count": 6,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -109,42 +109,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsx9jy2a05yerommy1e0jc6t"
-      }
-    },
-    {
-      "id": "cmst2gs6d02lmro06sb7as7av",
-      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-      "title_en": null,
-      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground",
-      "permalink": "https://aihot.virxact.com/items/cmst2gs6d02lmro06sb7as7av",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-08-14T14:27:14.000Z",
-      "discoveredAt": "2026-08-14T14:52:53.220Z",
-      "summary": null,
-      "category": "industry",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmst2gs6d02lmro06sb7as7av"
-      }
-    },
-    {
-      "id": "cmst3joqo03pwro0658o4g1m3",
-      "title": "Cursor 正式被 SpaceX 收购",
-      "title_en": "Cursor is now a part of SpaceX",
-      "url": "https://cursor.com/blog/joining-spacex",
-      "permalink": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-08-14T12:00:00.000Z",
-      "discoveredAt": "2026-08-14T15:23:09.332Z",
-      "summary": "Cursor 已被 SpaceX 正式收购，完成自 4 月启动的收购流程。合并后 Cursor 将获得全球最大 GPU 集群，以构建更强且运行成本更低的模型，从而以更低价格向客户提供更强大的模型。本周三发布的 Grok 4.6 是双方合作成果的早期体现。",
-      "category": "industry",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmst3joqo03pwro0658o4g1m3"
       }
     }
   ]
