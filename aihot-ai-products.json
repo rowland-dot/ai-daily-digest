@@ -4,13 +4,31 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmt3wt4qm13utro6t0hb6ga3y",
+      "title": "蚂蚁百灵为SGLang推出权重缓存守护进程",
+      "title_en": "Today， we're introducing the Weight Cache Daemon for SGLang. 🚀 On Ling-2.6-1T FP8， it reduced weigh…",
+      "url": "https://x.com/AntLingAGI/status/2091021795373855124",
+      "permalink": "https://aihot.virxact.com/items/cmt3wt4qm13utro6t0hb6ga3y",
+      "source": "X：蚂蚁百灵 (@AntLingAGI)",
+      "publishedAt": "2026-08-22T04:36:59.000Z",
+      "discoveredAt": "2026-08-22T05:00:00.912Z",
+      "summary": "今天，我们为 SGLang 推出 Weight Cache Daemon。🚀 在 Ling-2.6-1T FP8 上，它将权重加载时间缩短至约 0.63 秒，比磁盘加载快约 780 倍，并将引擎总启动时间从 8.8 分钟缩短至约 0.53 分钟。其工作原理如下。",
+      "category": "ai-products",
+      "score": 53,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt3wt4qm13utro6t0hb6ga3y"
+      }
+    },
+    {
       "id": "cmt396dpw0kj0ro6tdktqkp8s",
       "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
       "title_en": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
       "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
       "permalink": "https://aihot.virxact.com/items/cmt396dpw0kj0ro6tdktqkp8s",
       "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-21T17:58:29.461Z",
+      "publishedAt": "2026-08-20T16:00:00.000Z",
       "discoveredAt": "2026-08-21T17:58:29.461Z",
       "summary": "Anthropic 宣布 Claude Mythos 5 现已集成至 Claude Security，并即将登陆合作伙伴的网络安全防御工具。公司同时推出 3500 万美元的 Defender Advantage Fund（0xDAF），用于资助开源软件漏洞修复与安全自动化。",
       "category": "ai-products",
@@ -19,24 +37,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt396dpw0kj0ro6tdktqkp8s"
-      }
-    },
-    {
-      "id": "cmt393qow0kfiro6tpe87m4nu",
-      "title": "SGLang 推出 Weight Cache Daemon，实现亚秒级引擎重启",
-      "title_en": "Blog Fast Engine Recovery： Sub-Second Engine Restart for SGLang via Weight Cache Daemon Nowadays， State-of-the-Art （SOTA） models are getting much bigger and reloading the model service after a crash is very expensive. Therefore， we are introducing the Weight Cache Daemon， a persistent GP… Ant Ling Infra Team （Ant Group）， Alibaba， SGLang Team",
-      "url": "https://www.lmsys.org/blog/2026-08-21-sglang-fast-recovery",
-      "permalink": "https://aihot.virxact.com/items/cmt393qow0kfiro6tpe87m4nu",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-21T17:56:25.415Z",
-      "discoveredAt": "2026-08-21T17:56:25.415Z",
-      "summary": "SGLang 团队推出 Weight Cache Daemon，通过 CUDA IPC 零拷贝映射将模型权重加载从约 495 秒降至约 0.63 秒（约 785 倍加速），端到端启动时间减少 93.9%。该守护进程在 GPU 内存中持久化后量化权重，支持多实例共享和亚秒级主备切换，是 Fast Engine Recovery Framework 的第一阶段。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt393qow0kfiro6tpe87m4nu"
       }
     },
     {

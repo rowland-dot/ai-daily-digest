@@ -1,26 +1,8 @@
 {
-  "count": 8,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
-    {
-      "id": "cmt393qov0kfhro6tuwhxhubl",
-      "title": "Ling-3.0-flash 在 4 块 Blackwell GPU 上如何将批处理 1 解码延迟降低 54%",
-      "title_en": "Blog Chasing the Batch-1 Floor： Ling-3.0-flash Speculative Decode on Blackwell Batch-1 decode keeps getting more important. Xiaomi MiMo， for example， announced MiMo-V2.5-Pro UltraSpeed in June， claiming 1，000 tok/s decode on a one-trillion-parameter MoE model. Batch 1 gives an … RadixArk SGLang Team， Ant Ling Infra Team",
-      "url": "https://www.lmsys.org/blog/2026-08-21-ling3-flash-spec-decode-blackwell",
-      "permalink": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-21T17:56:25.415Z",
-      "discoveredAt": "2026-08-21T17:56:25.415Z",
-      "summary": "蚂蚁 Ling Infra 团队与 RadixArk SGLang 团队将 Ling-3.0-flash 混合线性注意力 MoE 模型的单请求解码速度从 288 tok/s 提升至 606 tok/s，平均 TPOT 从 3.33 ms 降至 1.53 ms。",
-      "category": "paper",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl"
-      }
-    },
     {
       "id": "cmt2ry1sl04ywro6t5znttdrs",
       "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
@@ -55,6 +37,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt30vskr0e0wro6t19q13yic"
+      }
+    },
+    {
+      "id": "cmt393qov0kfhro6tuwhxhubl",
+      "title": "Ling-3.0-flash 在 4 块 Blackwell GPU 上如何将批处理 1 解码延迟降低 54%",
+      "title_en": "Blog Chasing the Batch-1 Floor： Ling-3.0-flash Speculative Decode on Blackwell Batch-1 decode keeps getting more important. Xiaomi MiMo， for example， announced MiMo-V2.5-Pro UltraSpeed in June， claiming 1，000 tok/s decode on a one-trillion-parameter MoE model. Batch 1 gives an … RadixArk SGLang Team， Ant Ling Infra Team",
+      "url": "https://www.lmsys.org/blog/2026-08-21-ling3-flash-spec-decode-blackwell",
+      "permalink": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
+      "publishedAt": "2026-08-20T16:00:00.000Z",
+      "discoveredAt": "2026-08-21T17:56:25.415Z",
+      "summary": "蚂蚁 Ling Infra 团队与 RadixArk SGLang 团队将 Ling-3.0-flash 混合线性注意力 MoE 模型的单请求解码速度从 288 tok/s 提升至 606 tok/s，平均 TPOT 从 3.33 ms 降至 1.53 ms。",
+      "category": "paper",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl"
       }
     },
     {
@@ -127,24 +127,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek"
-      }
-    },
-    {
-      "id": "cmsuaf2hr05zgroe0y1e7275v",
-      "title": "AI生成书籍正淹没亚马逊，并拉低人类作者的单书收入",
-      "title_en": "AI-generated books are flooding Amazon and tanking sales for human authors",
-      "url": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
-      "permalink": "https://aihot.virxact.com/items/cmsuaf2hr05zgroe0y1e7275v",
-      "source": "The Decoder：AI News（RSS）",
-      "publishedAt": "2026-08-15T11:00:50.000Z",
-      "discoveredAt": "2026-08-15T11:23:17.740Z",
-      "summary": "一项对14，419本自出版电子书的分析显示，AI生成书籍正以数量而非质量挤占人类作者市场，即便未检测到AI文本的书籍，单书收入也在下滑。2023年Q1至2026年Q1，书目总量增长38.3倍，而季度收入仅增长8.9倍；在八个类型中，七个类型的无AI文本书籍单书收入下降。",
-      "category": "paper",
-      "score": 70,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsuaf2hr05zgroe0y1e7275v"
       }
     }
   ]

@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-21T20:51:32.859Z",
+  "fetched_at": "2026-08-22T20:50:30.034Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "llm 0.33",
+      "link": "https://simonwillison.net/2026/Aug/22/llm/",
+      "updated": "2026-08-22T17:01:16+00:00",
+      "summary": "My highlights from this release:"
+    },
+    {
+      "title": "More than just code review",
+      "link": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "updated": "2026-08-22T15:56:54+00:00",
+      "summary": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way."
+    },
+    {
+      "title": "llm 0.32.1",
+      "link": "https://simonwillison.net/2026/Aug/21/llm/",
+      "updated": "2026-08-21T17:16:13+00:00",
+      "summary": "Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx , and it turned out LLM depended on that library but only installed it via a transitive openai dependency."
+    },
+    {
+      "title": "llm-openrouter 0.7",
+      "link": "https://simonwillison.net/2026/Aug/21/llm-openrouter/",
+      "updated": "2026-08-21T16:58:19+00:00",
+      "summary": "Now that this plugin is compatible with LLM 0.32 it can display the reasoning traces for LLMs available through OpenRouter."
+    },
     {
       "title": "Stop Making TUIs",
       "link": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
@@ -49,30 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
       "updated": "2026-08-18T21:39:20+00:00",
       "summary": "Mojo🔥 is now open source"
-    },
-    {
-      "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
-      "link": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
-      "updated": "2026-08-17T23:58:14+00:00",
-      "summary": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index"
-    },
-    {
-      "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
-      "link": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
-      "updated": "2026-08-17T15:21:29+00:00",
-      "summary": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility"
-    },
-    {
-      "title": "Markdown SVG upgrades",
-      "link": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
-      "updated": "2026-08-16T23:59:37+00:00",
-      "summary": "I started building my markdown-svg-renderer tool in May , but I've since added enough features to it that it's worth talking about here again."
-    },
-    {
-      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
-      "link": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "updated": "2026-08-16T22:00:39+00:00",
-      "summary": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was impressive."
     }
   ]
 }
