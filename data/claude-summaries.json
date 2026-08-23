@@ -1,42 +1,51 @@
 {
-  "generated_at": "2026-08-22T20:55:00Z",
+  "generated_at": "2026-08-23T20:55:00Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vuwwww/qwen_38_27b_pi_agent_vs_opencode_another_smaple/": {
-      "en": "The author compares two agent frameworks — PI Agent and Opencode — both driving Qwen 3.8 27b through llama-server on an RTX 3090. PI Agent gives better output quality with fewer tokens, no 32k output cap, faster runs, less freezing, and delays context compression until roughly 90k versus 67k on Opencode. Full llama-server config is shared, with the vision module offloaded to system memory. The test task was a 3D flight simulator in a single HTML page.",
-      "zh": "作者在 RTX 3090 上以 llama-server 后端 Qwen 3.8 27b 对比 PI Agent 与 Opencode 两个编码代理框架。他表示 PI Agent 输出质量更好、令牌更省、无 3.2 万输出上限、运行更快更少卡顿，将上下文压缩推迟到约 9 万令牌，而 Opencode 在约 6.7 万即开始压缩。视觉模块被卸载到内存。测试任务是单个 HTML 页面的 3D 飞行模拟器。",
-      "title_en": "Comparing PI Agent and Opencode as coding front-ends for Qwen 3.8 27b on an RTX 3090",
-      "title_zh": "在 RTX 3090 上以 Qwen 3.8 27b 对比 PI Agent 与 Opencode 两个编码代理框架"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vvyacg/qwen_38_27b_is_a_game_changer/": {
+      "en": "The author's team wired Qwen 3.8 27B into Codex to compare against GPT Luna and also ran it through an OCR pipeline. Coding is comparable to Luna and OCR quality appears to beat Gemini 3.5 Flash Lite, which they say saves them serious money. They call it the first local model that feels more than a toy, roughly equal to year-old frontier models, with in-house hardware payback estimated under two months.",
+      "zh": "作者团队将 Qwen 3.8 27B 接入 Codex 与 GPT Luna 对比，并放到 OCR 流水线上测试。编码能力与 Luna 相当，OCR 质量看起来优于 Gemini 3.5 Flash Lite，这对他们意味着可观的成本节省。作者认为这是首个真正不像玩具的本地模型，能力约等于一年前的前沿模型，团队正认真讨论自购硬件，预计不到两个月即可回本。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vv4mei/llamacpp_version_020_is_out/": {
-      "en": "The post points to the release of llama.cpp version 0.2.0. Links go to the changelog and source on the ggml-org GitHub repository, plus an associated pre-built binary published under release tag b10566. No further detail about the release contents is given in the post itself; readers need to open the linked changelog to see what actually changed in this version.",
-      "zh": "帖子宣布 llama.cpp 版本 0.2.0 已经发布，附上了 ggml-org 仓库的更新日志和源码链接，以及对应的预编译版本 b10566 的下载页。作者本身没有列出更新内容，具体改动需要通过链接的更新日志查看。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vvv7iv/the_all_spark_cluster_upgrading_from_16_36_dgx/": {
+      "en": "The author is expanding a homelab DGX Spark cluster from sixteen to thirty six nodes, giving 4.6 terabytes of unified memory over 200 gigabit and 400 gigabit switching. Rather than one giant inference job, the cluster is split into inference modules stitched together by Hermes plus a custom memory sidecar, serving frontier models like Kimi K3 alongside rerank, embeddings, video, image and audio work at the same time. Two 6000 Pro systems replace prior H100 and GH200 boxes.",
+      "zh": "作者将家用 DGX Spark 集群从 16 台扩展到 36 台，总计 4.6 TB 统一内存，配合 200 Gbps 与 400 Gbps 交换机。集群不是一体化推理，而是拆成多个推理模块，由 Hermes 和自研记忆侧车组合成长期智能体，同时承担 Kimi K3 等前沿模型推理、重排、嵌入、视频、图像与音频生成。另有两台 6000 Pro 系统替换早前的 H100 与 GH200。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vuzz3j/16_gb_vram_purgatory_discussion_thread/": {
-      "en": "A discussion thread inviting Windows users cramming Qwen-family models into 16 GB cards to share their setups. The author posts an ik-llama-based configuration running Qwen 3.8 27B Uncensored at IQ4-XS with the multi-token-prediction head disabled, 4-bit key and value cache, the vision projector kept in system memory to save video memory, batch size 1024 with micro-batch 256, and roughly 100k context that stays fully on the graphics card.",
-      "zh": "讨论帖邀请 16 GB 显卡的 Windows 用户交流本地推理配置。楼主分享了一套基于 ik-llama 的方案：Qwen 3.8 27B Uncensored IQ4-XS，关闭多令牌预测头，键值缓存量化到 4 位，视觉投影模块常驻内存以省显存，批大小 1024、微批 256，约 10 万上下文全部留在显卡中。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vvtu9z/i_fine_tuned_gemma_4_12b_for_a_27x_improvement_on/": {
+      "en": "The author fine tuned Gemma 4 12B for tool calling and command line use after finding stock Gemma poor at agentic coding through GitHub Copilot. They report a 2.7 times improvement on tool call quality and a 15.7 percent increase in the number of tool calls the model emits, meaning less lost reasoning and more actual work. Weights are quantized from FP16 to Q4 K M and published for llama.cpp or ollama use.",
+      "zh": "作者微调 Gemma 4 12B 以改进工具调用与命令行使用能力，起因是原版模型在 GitHub Copilot 中表现不佳。微调后工具调用质量提升 2.7 倍，模型主动发起工具调用的次数增加 15.7%，减少思维内耗、更多实际动手完成任务。作者已将 FP16 权重量化到 Q4 K M，发布后可直接搭配 llama.cpp 或 ollama 使用，正好塞进 16 GB 显存。",
+      "title_en": "Fine tuning Gemma 4 12B for a 2.7 times gain on tool calling to fit inside 16 gigabytes of video memory",
+      "title_zh": "微调 Gemma 4 12B 使工具调用能力提升 2.7 倍，正好塞进 16 GB 显存"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vv80xa/artificial_analysis_intelligence_a_meaningless/": {
-      "en": "The author argues that Artificial Analysis's Intelligence Index is misleading and should stop being cited as a definitive ranking. Their evidence: the index now places Qwen 3.8 27B above DeepSeek v4 Flash and Pro, Kimi 2.7 Code, GPT-5.2, Opus 4.6, and Sonnet 5. They still like Qwen 27B as a strong single-GPU option, but say equating it with a laptop-hosted Opus is unserious pattern-matching to a single-number benchmark.",
-      "zh": "作者认为 Artificial Analysis 的 Intelligence Index 已经失去意义，不应继续被视作模型排名的权威。理由是该榜单让 Qwen 3.8 27B 分数高于 DeepSeek v4 Flash、Pro、Kimi 2.7 Code、GPT-5.2、Opus 4.6 以及 Sonnet 5。作者仍认可 Qwen 27B 是同规模里最强的单卡模型，但反对把它等同于几个月前的 Opus。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vw1j2p/i_hosted_kimi_k3_28t_parameters_using_8_b300s_92/": {
+      "en": "The author benchmarked hosting Kimi K3, a 2.8 trillion parameter model, on eight B300 GPUs via Modal with vLLM, tensor parallel eight and native MXFP4. Cold boot takes about 27 minutes; steady decode is 92 tokens per second, roughly 190 dollars per million output tokens. Unsloth's one bit UD IQ1 S quant fits on eight A100 80 gigabyte cards at 2.8 times cheaper per hour, but is 3.3 times more expensive per token because decode is only 9 tokens per second.",
+      "zh": "作者用 Modal 上的 8 张 B300 托管 2.8 万亿参数的 Kimi K3，采用 vLLM、张量并行 8 与原生 MXFP4。冷启动约 27 分钟，稳定解码每秒 92 个词元，每百万输出词元约 190 美元。改用 Unsloth 1 比特 UD IQ1 S 量化后可在 8 张 A100 80 GB 上运行，时租便宜 2.8 倍，但解码只有每秒 9 词元，每词元成本反而贵 3.3 倍，质量尚可。",
+      "title_en": "Hosting the 2.8 trillion parameter Kimi K3 on eight B300 GPUs at 92 tokens per second and 190 dollars per million tokens",
+      "title_zh": "用 8 张 B300 托管 2.8 万亿参数的 Kimi K3，稳定每秒 92 词元，每百万输出词元 190 美元"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vv6v00/freetokens_project_is_impressive/": {
-      "en": "A new inference project called FreeToken, with a paper on arXiv and code on GitHub, is drawing attention for running models that overflow available graphics memory. The author reports around 100 tokens per second on Qwen 3.6 35B A3B in NVFP4 format — a 20 GB model that does not fit in their 16 GB RTX 5080 — using DDR6 64 GB memory and an AMD Ryzen 9 9950X3D. A 1028-token prompt reached roughly 110 tokens per second.",
-      "zh": "一个名为 FreeToken 的新推理项目引发关注，包含 arXiv 论文和 GitHub 代码，可运行超出显存容量的模型。作者报告在 20 GB 大小的 Qwen 3.6 35B A3B、NVFP4 量化上取得约每秒 100 个令牌，硬件配置为 RTX 5080 16 GB、DDR6 64 GB 及 AMD Ryzen 9 9950X3D，1028 个令牌的输入下速度约每秒 110 个令牌。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vw10m3/deepseek_harness_is_insanely_good/": {
+      "en": "The author praises DeepSeek Harness as an unopinionated agent framework with progressive setup and a web interface that makes it easy to check in on runs. Their highlight: adding a SimpleX integration for end to end encrypted messaging over Tor required only asking the agent to do it, with no plugin wait or manual documentation reading. They contrast this against Hermes, saying DeepSeek Harness is smoother to configure and easier to mold into whatever behavior they want.",
+      "zh": "作者称赞 DeepSeek Harness 是一款无强制风格的智能体框架，渐进式安装体验极佳，网页界面便于随时检查任务。最令其印象深刻之处：只要向智能体口头下达指令，就完成了 SimpleX 集成以获得端到端加密与 Tor 消息传递，无需等待 PR 合并或翻阅文档。相比之下作者认为 Hermes 的配置流程繁琐得多，DeepSeek Harness 开箱可塑性强、更容易被塑造成任何期望的行为。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vvft7b/fixed_the_mtp_head_on_ornith15_35b_a3b_3_tps_33/": {
-      "en": "The author runs their HAM radio setup on Ornith 35B local models and found that the newer Ornith 1.5 release shipped with an untrained multi-token-prediction head. They spliced a trained head from a different quant onto an APEX requant of Ornith 1.5. Token throughput only rose from 60 to 64 per second, but end-to-end task time on their radio tests fell from 21 seconds to 14. The fixed model is on Ollama.",
-      "zh": "作者使用 Ornith 35B 本地模型驱动 HAM 电台，发现新发布的 Ornith 1.5 自带的多令牌预测头未经训练。他们从另一个量化版本里拆出已训练的预测头，嫁接到 Ornith 1.5 的 APEX 重量化模型上。虽然每秒生成的令牌只从 60 提升到 64，但电台任务的总耗时从 21 秒缩短到 14 秒。模型已上传到 Ollama。",
-      "title_en": "Splicing a trained multi-token-prediction head onto Ornith 1.5 35B A3B cuts task wall-clock by a third",
-      "title_zh": "为 Ornith 1.5 35B A3B 换上已训练的多令牌预测头，任务耗时缩短三分之一"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vw0mcd/nvidia_poolside_deal_to_compete_with_chinese_open/": {
+      "en": "Nvidia is investing one billion dollars in Poolside and paying six billion dollars to license Poolside's technology while hiring most of its engineers. Over one hundred Poolside staff will move to Nvidia to work on the Nemotron model line. The Reddit poster frames the acquisition as good news for open weights, positioning it as Nvidia's response to the wave of strong Chinese open source model releases pressuring proprietary offerings.",
+      "zh": "Nvidia 将向 Poolside 投资 10 亿美元，并额外支付 60 亿美元以授权其技术并招募大部分工程师，超过 100 名 Poolside 员工将加入 Nvidia 参与 Nemotron 系列模型的开发。发帖者认为这对开源权重生态是利好，将此举定位为 Nvidia 应对中国开源模型接连发布、给闭源产品带来压力的一次战略布局。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vv3b6o/sharp_template_to_ninfer_42_output_tokens_same/": {
-      "en": "Sharp is a system prompt overlay that makes Qwen answer more tersely without hurting correctness, built on top of froggeric's fixed Jinja chat templates. NInfer is a specialized inference engine for certain Qwen models on the RTX 5090 that does not support custom Jinja, so the author forked it as ninfer-sharp and reproduced Sharp's terseness block and its seven reasoning-effort levels in native code, pinning behavior to Sharp v22.1 semantics.",
-      "zh": "Sharp 是一套针对 Qwen 的系统提示叠层，可让模型在不损失正确率的前提下大幅精简回答，构建在 froggeric 修正版 Jinja 模板之上。NInfer 是仅在 RTX 5090 上跑特定 Qwen 模型的推理引擎，不支持自定义 Jinja。作者因此将其分叉为 ninfer-sharp，用原生代码复刻了 Sharp 的精简指令和七级推理强度，行为固定在 Sharp v22.1 语义。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vw2ayp/qwen3827b_klds/": {
+      "en": "The author benchmarked Qwen 3.8 27B quantization variants using Kullback Leibler divergence over code and STEM data, with 24 sequences of 8192 tokens plus 12 sequences of 32768 tokens. All variants were dequantized to BF16 through a common kernel path. The gap between 8 bit and 4 bit is large: best 4 bit is 0.00835 and worst 8 bit only 0.00071. Even at similar checkpoint sizes, 4 bit KLD varies substantially across quantizers.",
+      "zh": "作者用 Kullback Leibler 散度评测 Qwen 3.8 27B 各量化版本，语料涵盖代码与 STEM，共 24 条 8192 词元与 12 条 32768 词元序列，所有模型统一反量化为 BF16 走同一内核路径。结果显示 8 比特与 4 比特差距明显：最佳 4 比特为 0.00835，最差 8 比特仅 0.00071。即使检查点体积相近，各家 4 比特之间的散度也差异很大。",
+      "title_en": "Benchmarking Qwen 3.8 27B quantization variants by Kullback Leibler divergence over code and STEM data",
+      "title_zh": "用 Kullback Leibler 散度在代码与 STEM 语料上评测 Qwen 3.8 27B 各量化版本"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vv9oe2/anyone_else_tried_out_kv_cache_blending/": {
-      "en": "The author experiments with key-value cache blending: instead of prefilling the whole prompt at once, split it into parts, cache each in isolation, then concatenate before decoding. On Ling3-tiny's non-KDA layers with some inter-chunk overlap, needle-in-haystack retrieval still holds and cross-chunk synthesis works on simple tasks. Prefill runs about three times faster, reaching around 1300 tokens per second at 256k tokens on a 5090 — comparable to running Qwen 3.8-27b on the same card."
-      ,
-      "zh": "作者尝试键值缓存拼接：不再一次性预填整段提示，而是将其切成多段独立缓存，再拼接后送入解码。在 Ling3-tiny 的非 KDA 层上并保留段间重叠时，大海捞针式检索仍然正常，简单任务也能跨段综合。预填速度提升约三倍，在 5090 上 256k 令牌下达到每秒约 1300 个令牌，接近同硬件运行 Qwen 3.8-27b 的预填速度。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vvsokm/tested_in_coding_q8_k_xl_qwen38_27b_vs_bf16/": {
+      "en": "The author compared 8 bit quantized Qwen 3.8 27B against full precision Qwen 3.6 27B on an enterprise web application over six plus hours a day since release. Qwen 3.8 uses rope scaling 1.4 to reach 367001 tokens of context and faithfully recalls 20 pages of instruction improvements, often citing them in its thinking, whereas Qwen 3.6 frequently ignored them. Qwen 3.8 wins on nearly every axis except one critical failing, and Muse Glimmer is now obsolete for coding.",
+      "zh": "作者在企业级 Web 应用中长期对比 8 比特量化的 Qwen 3.8 27B 与全精度 BF16 的 Qwen 3.6 27B，自发布以来每天使用 6 小时以上。Qwen 3.8 借 rope 缩放 1.4 达到 367001 词元上下文，能忠实执行 20 页指令改进，甚至在思考中主动引用，而 Qwen 3.6 经常忽略。除一项关键缺陷外，Qwen 3.8 全面胜出，Muse Glimmer 作为编码模型已被完全淘汰。",
+      "title_en": "Coding comparison of 8 bit quantized Qwen 3.8 27B against full precision Qwen 3.6 27B on an enterprise web application",
+      "title_zh": "在企业级 Web 应用上对比 8 比特量化的 Qwen 3.8 27B 与全精度 BF16 的 Qwen 3.6 27B"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vw6nba/qwen359b_tripleloop/": {
+      "en": "The author experimented with adding a triple middle layer loop to Qwen 3.5 9B, inspired by Nanbeige's architecture paper, to see how much a small model can lift its own representation by iterating middle layers. A first attempt using DeltaNet in the loop hallucinated because the small hidden size kept forgetting essential details; switching to softmax attention worked as expected. Giving the loop a lower dedicated learning rate proved essential, turning it from a refiner into an active participant.",
+      "zh": "作者受 Nanbeige 架构论文启发，尝试为 Qwen 3.5 9B 中间层加入三重循环，观察小模型能否借此提升自身表征。首版用 DeltaNet 做循环因隐藏维度过小、遗忘关键细节而出现幻觉，改用 softmax 注意力后按预期工作。关键还在于为循环层单独设置更低的学习率调度：调整后循环才真正参与解题，而不是只做答案润色，简单问题甚至可完全跳过循环。",
+      "title_en": "Adding a triple middle layer loop to Qwen 3.5 9B inspired by the Nanbeige architecture paper",
+      "title_zh": "受 Nanbeige 架构启发，为 Qwen 3.5 9B 加入中间层三重循环的实验"
     }
   }
 }
