@@ -1,5 +1,5 @@
 {
-  "count": 9,
+  "count": 5,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -91,78 +91,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc"
-      }
-    },
-    {
-      "id": "cmsxld6es03o8roz0jblf3ii9",
-      "title": "404 Media 追踪珍本图书流向：亚马逊批量购书扫描用于 AI 训练后销毁",
-      "title_en": "我们追踪了一批珍本图书的运输过程。最终，这些书被送到了亚马逊的一处人工智能训练中心",
-      "url": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility",
-      "permalink": "https://aihot.virxact.com/items/cmsxld6es03o8roz0jblf3ii9",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-17T18:46:04.518Z",
-      "discoveredAt": "2026-08-17T18:53:04.323Z",
-      "summary": "404 Media 通过在一本珍本图书中放置追踪设备，首次揭露亚马逊未公开的购书行动：批量购入大量书籍，扫描用于 AI 训练数据，随后销毁。追踪显示这些书最终被送往亚马逊的一处人工智能训练中心。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsxld6es03o8roz0jblf3ii9"
-      }
-    },
-    {
-      "id": "cmsx8zij405t2rommm4gwgzjh",
-      "title": "黄仁勋宣布与SB Energy合作，为OpenAI建AI工厂",
-      "title_en": "https://x.com/i/article/2089330332369588224",
-      "url": "https://x.com/JensenHuang/status/2089331487342829862",
-      "permalink": "https://aihot.virxact.com/items/cmsx8zij405t2rommm4gwgzjh",
-      "source": "X：Jensen Huang (@JensenHuang)",
-      "publishedAt": "2026-08-17T12:40:19.000Z",
-      "discoveredAt": "2026-08-17T13:06:32.046Z",
-      "summary": "黄仁勋宣布NVIDIA与SB Energy合作，在俄亥俄州PORTS-Pike科技园区锁定LPS容量，专供NVIDIA AI工厂使用，OpenAI将作为租户。初始部署预计提供4.25吉瓦AI工厂容量，每代系统约150万块NVIDIA GPU，对应1500亿至2000亿美元收入。OpenAI已承诺至2030年部署约12吉瓦NVIDIA算力，可扩展至16吉瓦，总机会约6000亿美元。",
-      "category": "industry",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsx8zij405t2rommm4gwgzjh"
-      }
-    },
-    {
-      "id": "cmsx9jvre05y6romms3bo1umb",
-      "title": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
-      "title_en": "Securing the Infrastructure of Intelligence",
-      "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence",
-      "permalink": "https://aihot.virxact.com/items/cmsx9jvre05y6romms3bo1umb",
-      "source": "NVIDIA Blog（RSS）",
-      "publishedAt": "2026-08-17T12:34:51.000Z",
-      "discoveredAt": "2026-08-17T13:22:19.094Z",
-      "summary": "NVIDIA 宣布与 SB Energy 合作，锁定俄亥俄州 PORTS-Pike 科技园区的电力容量（LPS）以独家部署 NVIDIA 算力，OpenAI 将成为租户。",
-      "category": "industry",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsx9jvre05y6romms3bo1umb"
-      }
-    },
-    {
-      "id": "cmsx9jy2a05yerommy1e0jc6t",
-      "title": "A 股迎来\"人形机器人第一股\"，宇树科技官宣 8 月 19 日科创板上市",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/990/812.htm",
-      "permalink": "https://aihot.virxact.com/items/cmsx9jy2a05yerommy1e0jc6t",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-17T12:25:27.000Z",
-      "discoveredAt": "2026-08-17T13:22:19.094Z",
-      "summary": "宇树科技宣布股票将于 2026 年 8 月 19 日在科创板上市，发行价 150.80 元/股，对应市值约 609.93 亿元，预计募资约 60.99 亿元。该公司 2023 至 2025 年营收分别为 1.59 亿元、3.93 亿元和 16.99 亿元，净利润分别为-1114.51 万元、9547.47 万元和 2.78 亿元，是全球少数实现盈利的高性能通用机器人公司。",
-      "category": "industry",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsx9jy2a05yerommy1e0jc6t"
       }
     }
   ]

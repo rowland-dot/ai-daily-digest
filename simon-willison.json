@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-08-23T20:50:25.745Z",
+  "fetched_at": "2026-08-24T21:00:11.862Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "llm-anthropic 0.27",
+      "link": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
+      "updated": "2026-08-24T16:27:04+00:00",
+      "summary": "This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago."
+    },
+    {
+      "title": "Your executable is a SQLite database",
+      "link": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
+      "updated": "2026-08-24T11:38:15+00:00",
+      "summary": "Your executable is a SQLite database"
+    },
     {
       "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
       "link": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
       "updated": "2026-08-20T23:57:32+00:00",
       "summary": "ChatGPT search now uses the site:operator at scale"
-    },
-    {
-      "title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
-      "link": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
-      "updated": "2026-08-20T15:37:00+00:00",
-      "summary": "Today saw the long awaited release of Bun 1.4 , the first stable version since the infamous Rust rewrite a few months ago ."
-    },
-    {
-      "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
-      "link": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
-      "updated": "2026-08-19T23:16:00+00:00",
-      "summary": "I tasked Claude Fable 5 running in Claude Code for web with the following research task:"
     }
   ]
 }

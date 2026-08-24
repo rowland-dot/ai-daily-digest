@@ -1,5 +1,5 @@
 {
-  "count": 7,
+  "count": 6,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -109,24 +109,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmszieman0euzrodptihyllom"
-      }
-    },
-    {
-      "id": "cmsz8gh3n06e4rodpl8l2syek",
-      "title": "Claude 如何加速蛋白质设计与分析化学研究",
-      "title_en": "How Claude is accelerating protein design and analytical chemistry",
-      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-      "permalink": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-08-17T16:00:00.000Z",
-      "discoveredAt": "2026-08-18T22:27:16.191Z",
-      "summary": "Anthropic 公布两项实验：Claude（Mythos Preview 和 Opus 4.8）针对 15 个靶点设计蛋白质结合剂，成功 14 个，命中率达 22.6%-35.1%。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek"
       }
     }
   ]

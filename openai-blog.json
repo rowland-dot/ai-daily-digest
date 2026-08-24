@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-08-23T20:50:24.079Z",
+  "fetched_at": "2026-08-24T21:00:09.504Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+      "link": "https://openai.com/index/gpt-5-6-in-kiro",
+      "pubDate": "Mon, 24 Aug 2026 12:00:00 GMT",
+      "description": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance."
+    },
     {
       "title": "Introducing AI Futures",
       "link": "https://openai.com/index/introducing-ai-futures",
@@ -85,12 +91,6 @@
       "link": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
       "pubDate": "Mon, 17 Aug 2026 03:15:00 GMT",
       "description": "OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age."
-    },
-    {
-      "title": "The builder’s guide to GPT‑5.6",
-      "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
-      "pubDate": "Thu, 13 Aug 2026 11:00:00 GMT",
-      "description": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities."
     }
   ]
 }

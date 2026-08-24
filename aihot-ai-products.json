@@ -4,6 +4,42 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmt7nq1d02bs1ro7373u88po4",
+      "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
+      "title_en": "MetaRoCE： A New RDMA Transport Built for AI-Scale Ethernet",
+      "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet",
+      "permalink": "https://aihot.virxact.com/items/cmt7nq1d02bs1ro7373u88po4",
+      "source": "Meta Engineering Blog（RSS）",
+      "publishedAt": "2026-08-24T18:02:29.000Z",
+      "discoveredAt": "2026-08-24T19:56:45.475Z",
+      "summary": "Meta 设计并开源了 MetaRoCE，一个专为 AI 工作负载在通用以太网上打造的 RDMA 传输协议，已通过 Open Compute Project（OCP）发布规范、参考软件实现和合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC，可在百万 GPU 规模下提供高吞吐、低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可运行。",
+      "category": "ai-products",
+      "score": 62,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt7nq1d02bs1ro7373u88po4"
+      }
+    },
+    {
+      "id": "cmt7e0g7y232wro738qg82x67",
+      "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
+      "title_en": "Up to 30x More Work Per Watt： NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents",
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents",
+      "permalink": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67",
+      "source": "NVIDIA Blog（RSS）",
+      "publishedAt": "2026-08-24T15:00:19.000Z",
+      "discoveredAt": "2026-08-24T15:24:53.435Z",
+      "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67"
+      }
+    },
+    {
       "id": "cmt3wt4qm13utro6t0hb6ga3y",
       "title": "蚂蚁百灵为SGLang推出权重缓存守护进程",
       "title_en": "Today， we're introducing the Weight Cache Daemon for SGLang. 🚀 On Ling-2.6-1T FP8， it reduced weigh…",
@@ -271,42 +307,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h"
-      }
-    },
-    {
-      "id": "cmsy8afig0mvmroz0gb3hz0iq",
-      "title": "inclusionAI 开源 ConceptEdit：基于概念缩放与密集监督的图像编辑数据生成管线",
-      "title_en": "inclusionAI/ConceptEdit",
-      "url": "https://github.com/inclusionAI/ConceptEdit",
-      "permalink": "https://aihot.virxact.com/items/cmsy8afig0mvmroz0gb3hz0iq",
-      "source": "蚂蚁 inclusionAI：GitHub 新仓库",
-      "publishedAt": "2026-08-17T07:22:08.000Z",
-      "discoveredAt": "2026-08-18T05:34:47.114Z",
-      "summary": "蚂蚁集团 inclusionAI 开源 ConceptEdit，一个基于概念缩放与密集监督的图像编辑数据生成管线。该管线通过三阶段流程（VLM 生成指令、FLUX 执行编辑、VQA 评估筛选）构建大规模、基于分类法的图像编辑数据集，并提供单概念与多概念两种变体。项目采用 MIT 许可证，支持断点续跑，需 OpenAI 兼容 VLM 端点与本地 FLUX 检查点。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsy8afig0mvmroz0gb3hz0iq"
-      }
-    },
-    {
-      "id": "cmsx7ffrz049uromm6en3if02",
-      "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
-      "title_en": "Understand your AI usage： every agent， model， and request",
-      "url": "https://openrouter.ai/blog/announcements/activity-dashboard",
-      "permalink": "https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-08-17T00:00:00.000Z",
-      "discoveredAt": "2026-08-17T12:22:55.595Z",
-      "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02"
       }
     }
   ]
