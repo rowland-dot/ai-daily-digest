@@ -1,53 +1,51 @@
 {
-  "generated_at": "2026-08-24T21:05:15Z",
+  "generated_at": "2026-08-25T21:07:50Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vwvghi/xiaomi_ai_cube_announced_with_12tbs_memory/": {
-      "en": "Xiaomi previewed a prototype AI Cube built around three custom chips: the Xuanjie O3, O100, and D100. The D100, adapted from their electric vehicle work, supports up to 160 gigabytes of RAM, while the O100 reportedly delivers roughly 1.22 terabytes per second of memory bandwidth, possibly on SRAM. Details remain a bit unclear, but the specs suggest an ambitious local AI appliance from a major consumer electronics vendor.",
-      "zh": "小米公开了AI Cube原型机，采用玄戒O3、O100与D100三颗自研芯片。源自电动车的D100支持最高160 GB内存，而O100据称提供约每秒1.22 TB的内存带宽，可能对应片上SRAM。整体规格仍有含糊之处，但已能看出这家消费电子巨头在本地AI硬件上的野心。",
-      "title_en": "Xiaomi previews an AI Cube prototype built on three Xuanjie custom chips",
-      "title_zh": "小米公开AI Cube原型，搭载三颗玄戒自研芯片"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vy6smx/qwen38flashnext_this_architecture_could_be/": {
+      "en": "Qwen3.8-Flash-Next is estimated at roughly 125 billion parameters with 6 billion active, plus a 51 billion n-gram table. At 4-bit quantization the author expects about 82 gigabytes total (58 for main weights, 24 for n-gram tables), landing in the 80 to 90 gigabyte range. The sparsely-accessed n-gram table is a strong candidate for system RAM offload, making the architecture unexpectedly practical for local deployment once weights drop.",
+      "zh": "作者估算 Qwen3.8-Flash-Next 约 1250 亿参数、60 亿激活，加 510 亿参数的 n-gram 表。4 位量化下预计约 82 GB——主权重 58 GB、n-gram 表 24 GB，实际量化通常落在 80 到 90 GB 之间。由于 n-gram 表访问稀疏，非常适合卸载到系统内存，令这一架构在权重发布后有望意外地适合本地部署。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vwt6m7/i_developed_my_own_quantized_llm_from_scratch/": {
-      "en": "A hobbyist trained a 250 million parameter language model from scratch on 30 billion tokens of Fineweb, then quantized it to under two bits so the whole deployment fits in 60 megabytes and runs at around 400 tokens per second on a laptop CPU. The most recent 2048 tokens stay in 16 bit precision, older context is compressed to one bit per token and paged from disk, letting the model reach back through up to 100 million tokens.",
-      "zh": "一位开发者从零训练了2.5亿参数的语言模型，语料是300亿tokens的Fineweb，量化到低于2 bits后部署仅60 MB，在普通笔记本CPU上约每秒400 tokens。最近2048 tokens以16位精度保留，更早的上下文被压缩到每token 1 bit并落盘，可回溯最多1亿tokens。",
-      "title_en": "A 250 million parameter model quantized to 60 megabytes for laptop CPU inference",
-      "title_zh": "开发者从零打造2.5亿参数模型，量化后仅60 MB，可在笔记本CPU上运行"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vy2jz7/ibmgranitegranite4230b_hugging_face/": {
+      "en": "IBM published the Granite 4.2 family on Hugging Face: a flagship 30-billion-parameter dense reasoning model plus 8-billion and 3-billion variants. All three ship with built-in chain-of-thought and switchable thinking modes — full, non-thinking, and low-effort — trading depth for latency per query. Reasoning-augmented tool calling improves function selection, a 512,000-token context window handles long documents and agentic flows, and the Apache 2.0 license permits commercial and research use.",
+      "zh": "IBM 在 Hugging Face 发布 Granite 4.2 系列：旗舰 300 亿参数密集推理模型，以及 80 亿和 30 亿参数版本。全系内建思维链，支持完整思考、非思考、轻量思考三档模式，可按查询在深度与延迟间权衡。推理增强的工具调用提升函数选择准确率，51.2 万 token 上下文窗口适配长文档与智能体流程，Apache 2.0 许可允许商用与研究。",
+      "title_en": "IBM releases Granite 4.2 reasoning models in 30, 8 and 3 billion parameter sizes",
+      "title_zh": "IBM 发布 Granite 4.2 推理模型，包含 300 亿、80 亿、30 亿参数三档"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vx3img/paper_tomoe_converting_dense_large_language/": {
-      "en": "ToMoE is a paper on reducing active parameters in large language models without permanently deleting weights. Instead of static pruning, the authors introduce a differentiable dynamic pruning method that converts an MLP layer into a Mixture of Experts style architecture, keeping a fixed number of active parameters at inference. Even without fine tuning, the technique reportedly outperforms prior structural pruning approaches across Phi-2, LLaMA-2, LLaMA-3, and Qwen-2.5 model families.",
-      "zh": "论文ToMoE提出一种可微分的动态剪枝方法：不永久移除参数，而是把稠密模型的MLP层改造成Mixture of Experts结构，在推理时保持固定数量的激活参数。作者称即便不做微调，该方法在Phi-2、LLaMA-2、LLaMA-3、Qwen-2.5等模型系列上仍优于此前的结构化剪枝方案。",
-      "title_en": "ToMoE paper turns dense large language models into Mixture of Experts through dynamic structural pruning",
-      "title_zh": "ToMoE论文：通过动态结构化剪枝将稠密大模型改造为Mixture of Experts"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vxxa9x/new_llamacpp_adaptive_speculation_for_faster/": {
+      "en": "A Llama.cpp fork introduces adaptive speculative decoding: the engine automatically tunes how many draft tokens to propose within a user-set minimum and maximum, instead of using a fixed value. The author reports up to 50 percent higher generation speed over mainline, especially on Qwen3.8, with structured content on a Strix Halo climbing from 44 tokens per second to 65. Code and releases are on GitHub for anyone wanting to test the optimisation on dense models.",
+      "zh": "一款 Llama.cpp 分支引入自适应推测解码：引擎在用户设定的上下限之间自动调节草稿 token 数量，无需固定值。作者称在结构化内容上相比主线生成速度最高提升 50%，尤其对 Qwen3.8 效果显著；在 Strix Halo 平台上从每秒 44 token 提升到每秒 65 token。源码与发行版已在 GitHub 上公开，供密集模型用户测试。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vx33zj/tielcoders_22_gb_4bit_quant_matches_opus46_medium/": {
-      "en": "TielCoder is a 35 billion parameter Mixture of Experts coder model with three billion active parameters, released as a 22 gigabyte 4 bit quantization. Built on top of an Ornith 1.5 fine tune with a code weighted imatrix for dynamic quantization and a token efficient agentic chat template, the author reports it matches Opus 4.6 medium on recent real world coding issues while being the fastest of its size class in their benchmarks. GGUF and MLX weights are on Hugging Face.",
-      "zh": "TielCoder是350亿参数、激活30亿的Mixture of Experts代码模型，以22 GB的4位量化发布。它基于Ornith 1.5微调，加入面向代码的imatrix动态量化与更省token的agent对话模板。作者称其在真实代码任务上接近Opus 4.6 medium，是同级35B-A3B中最快的一款。权重已上传Hugging Face。",
-      "title_en": "TielCoder ships a 35 billion parameter Mixture of Experts coder as a 22 gigabyte 4 bit quantization",
-      "title_zh": "TielCoder发布350亿参数Mixture of Experts代码模型的22 GB 4位量化版"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vy09xv/apple_unveils_a_more_powerful_mac_mini_featuring/": {
+      "en": "Apple announced a refreshed Mac mini with new M6 and M5 Pro chips. The 12-core GPU gains two cores and, for the first time on Mac mini, embeds Neural Accelerators in every core, claiming up to four times faster AI performance and twice the graphics throughput of the M4 model. A new dual 16-core Neural Engine doubles the previous generation, unified memory reaches 32 gigabytes at up to 170 gigabytes per second bandwidth, positioning the box for compact local inference.",
+      "zh": "苹果发布搭载新款 M6 与 M5 Pro 芯片的 Mac mini。12 核 GPU 增加两核，并首次在 Mac mini 每个核心中加入神经加速器，人工智能性能相比 M4 提升四倍，图形性能翻倍；全新双 16 核神经引擎较上代提升一倍。统一内存最高 32 GB，带宽最高每秒 170 GB，使其成为紧凑型本地推理选项。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vwsjut/deepseekv4flash0731_surprisingly_usable/": {
-      "en": "A user set up a home inference rig with an Epyc 7663, 256 gigabytes of DDR4 3200 memory, and a single RTX 5090, then ran the UD-Q8 quantization of deepseek v4 flash 0731 with the Mixture of Experts layers on CPU. They report 23 to 25 tokens per second across 100 to 128 thousand token contexts. The takeaway is that a very capable modern model now fits on a modest basement build.",
-      "zh": "一位玩家搭了台家用推理机：Epyc 7663、256 GB DDR4-3200和一块RTX 5090，用它跑deepseek-v4-flash-0731的UD-Q8量化版本，把Mixture of Experts放在CPU上。在10万到12.8万tokens的上下文下，生成速度约每秒23到25 tokens。作者感叹这样一台不算昂贵的机器就能承载有能力的现代模型。",
-      "title_en": "Home inference rig runs deepseek v4 flash 0731 at 23 to 25 tokens per second on an Epyc CPU with an RTX 5090",
-      "title_zh": "家用推理机以Epyc CPU加RTX 5090运行deepseek-v4-flash-0731，速度每秒23到25 tokens"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vxg4vd/qwen3827b_nemotron35lightning30ba3b/": {
+      "en": "The author benchmarks four recent open-weight models on llm-bench: Qwen 3.8 as a 27-billion-parameter dense model, Nemotron 3.5 Lightning at 30 billion with 3 billion active, Ornith 1.5 at 35 billion with 3 billion active, and Muse Glimmer at 30 billion, all in the oQ8e configuration. Ornith stands out with the strongest overall showing across shared runs; TielCoder is flagged as possibly stronger for coding, with a follow-up comparison promised.",
+      "zh": "作者在 llm-bench 上对比四款近期开源模型：Qwen 3.8 的 270 亿参数密集版、Nemotron 3.5 Lightning 300 亿参数（30 亿激活）、Ornith 1.5 350 亿参数（30 亿激活），以及 Muse Glimmer 300 亿参数，均采用 oQ8e 配置。Ornith 综合表现最出色；作者提到 TielCoder 在编码任务上可能更强，将进一步比较。",
+      "title_en": "Benchmark comparison across four recent open-weight models near 30 billion parameters",
+      "title_zh": "近期约 300 亿参数级别开源模型基准对比"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vx2yg4/iphone_local_tts_epub_reading_audiobookify/": {
-      "en": "Audiobookify is an iPhone app that combines an EPUB reader with fully local text to speech narration. The developer emphasizes battery efficiency and thermal headroom, using hand tuned Core ML conversions of the Kokoro and Supertonic 3 voices. The app is under 20 megabytes before models are loaded and is free. PDFs are not yet supported and older iPhone models still need testing. A Kyutai model port is planned next as small mobile grade text to speech options are scarce.",
-      "zh": "Audiobookify是一款iPhone应用，把EPUB阅读器与完全离线的文本转语音结合。开发者强调续航和散热，选用Kokoro与Supertonic 3两款语音模型，并针对iPhone做了Core ML层面的手工优化。安装包不含模型时不到20 MB，完全免费。目前不支持PDF，仍在老款iPhone上测试，下一步计划移植Kyutai的模型。",
-      "title_en": "Audiobookify pairs an EPUB reader with fully local iPhone text to speech",
-      "title_zh": "Audiobookify将EPUB阅读器与iPhone本地语音合成结合"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vxjcsw/260816157_freetoken_efficient_edgenative_moe/": {
+      "en": "FreeToken is a system for running frontier Mixture of Experts models on consumer hardware without extreme quantization. The paper reports Qwen 3.6 at 35 billion parameters hitting 39 tokens per second on an 8-gigabyte RTX 4060 laptop, DeepSeek V4 Flash at 284 billion managing 22 to 25 tokens per second on an RTX 5090, and GLM 5.2 at 753 billion running 15 tokens per second on an RTX PRO 6000. Bandwidth-adaptive CPU-GPU execution plus semantic caching across agent turns yields roughly 3 to 4 times faster decode and 6 to 30 times faster prefill versus Ollama.",
+      "zh": "FreeToken 系统可在消费级硬件上运行前沿混合专家模型且无需极端量化。论文报告 Qwen 3.6 的 350 亿参数版在 8 GB RTX 4060 笔记本上达每秒 39 token；DeepSeek V4 Flash 2840 亿参数在 RTX 5090 上每秒 22 到 25 token；GLM 5.2 的 7530 亿参数在 RTX PRO 6000 上每秒 15 token。该设计结合带宽自适应的 CPU-GPU 执行和跨智能体轮次的语义缓存，宣称解码速度比 Ollama 快 3 到 4 倍，预填充快 6 到 30 倍。",
+      "title_en": "FreeToken paper reports frontier Mixture of Experts inference on consumer GPUs",
+      "title_zh": "FreeToken 论文报告消费级 GPU 上运行前沿混合专家模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vwrc6i/i_trained_a_157bparameter_dreamer_4_world_model/": {
-      "en": "An independent researcher trained a 1.57 billion parameter Dreamer 4 world model from scratch for about 150 US dollars. A first attempt on top of Genie's unsupervised action codes failed because keypresses had almost no effect, so they switched to Dreamer 4 with true action labels from Procgen simulated frames. The final tokenizer reaches 40.41 PSNR, better than Genie's paper, and end to end video distance is 32.19. Their takeaway: 150 dollars is enough, and true actions matter.",
-      "zh": "一位独立研究者用约150美元从零训练了15.7亿参数的Dreamer 4世界模型。沿用Genie无监督动作编码的初次尝试失败，因为按键几乎无效；改用Dreamer 4并配合Procgen生成的真实动作后成功。最终tokenizer的PSNR达40.41，超过Genie论文；端到端FVD为32.19。作者的心得：150美元已够用，真实动作标签是控制生效的关键。",
-      "title_en": "Independent researcher trains a 1.57 billion parameter Dreamer 4 world model for under 150 dollars",
-      "title_zh": "独立研究者用不到150美元从零训练了15.7亿参数的Dreamer 4世界模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vxg8be/the_journey_of_letting_qwen_3638_autonomously/": {
+      "en": "A hobbyist describes six months of using Qwen 3.6 then 3.8 at 27 billion parameters to autonomously build a C99 compiler targeting x64 ELFs. A custom harness with planner, coder, debugger, researcher and validator subagents ran on a Tesla P100 plus RTX 4070 at 13 to 14 tokens per second, with Gemma 4 as the validator on an Intel Arc B580. Context management and x86 opcode hallucination were the main pain points, but the model steered well enough to produce a working project, published as tc on GitHub.",
+      "zh": "一位爱好者讲述用 Qwen 3.6 后升级到 3.8 的 270 亿参数模型，历时六个月自主构建面向 x64 ELF 的 C99 编译器。自建框架包含规划、编码、调试、研究、验证等子智能体，硬件为 Tesla P100 加 RTX 4070，速度每秒约 13 到 14 token，另用 Intel Arc B580 上的 Gemma 4 做验证。上下文管理与 x86 操作码幻觉是主要难题，但模型最终产出可用项目，已作为 tc 发布在 GitHub。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vx7aci/bart_a_vintage_llm/": {
-      "en": "Unbounded Labs trained Bart, a 2.82 billion parameter language model, from scratch on 20.1 billion tokens of English text written before 1931. The team spent three months and about 800 US dollars building it to probe whether smaller models trained on pre modern corpora can rediscover ideas the way early scientists did. Their write up documents corpus cleaning, custom benchmarks built for the vintage setting, ablations, training runs, and mistakes along the way. A live chat demo is available.",
-      "zh": "Unbounded Labs花了三个月、约800美元，从零训练出Bart：一个28.2亿参数、语料仅取1931年前英文文本的语言模型，训练约201亿tokens。团队想探索：在前现代语料上训练的小模型，能否重现早期科学家的思路。文章覆盖语料清洗、专门基准、消融实验、训练与踩坑，并提供在线聊天演示。",
-      "title_en": "Bart is a 2.82 billion parameter language model trained only on English text written before 1931",
-      "title_zh": "Bart：一个仅使用1931年前英文文本训练的28.2亿参数语言模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vxv1iv/tencentwemmembedding_9b4b2b/": {
+      "en": "Tencent released WeMM-Embedding, a universal multimodal embedding family built on Qwen 3.5 and available in 9-billion, 4-billion and 2-billion parameter sizes. The models accept text, images, videos, visual documents and interleaved multimodal inputs, then emit a 4,096-dimensional L2-normalized embedding suitable for cross-modal retrieval. Audio input is not supported. Weights and a technical report are published on Hugging Face and GitHub for open evaluation and integration.",
+      "zh": "腾讯发布 WeMM-Embedding，一款基于 Qwen 3.5 构建的通用多模态嵌入模型系列，提供 90 亿、40 亿、20 亿参数三档。模型接受文本、图像、视频、视觉文档以及交错的多模态输入，输出 4096 维经 L2 归一化的嵌入，适用于跨模态检索；不支持音频。权重与技术报告已在 Hugging Face 与 GitHub 开源发布，供社区评估与集成。",
+      "title_en": "Tencent releases WeMM multimodal embedding family in 9, 4 and 2 billion parameter sizes",
+      "title_zh": "腾讯发布 WeMM 多模态嵌入模型系列，包含 90 亿、40 亿、20 亿参数三档"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vxk6k1/scaffold_cot_a_cot_dataset_built_around_the/": {
+      "en": "A researcher releases Scaffold CoT, a roughly 4-million-example, 3-billion-token chain-of-thought dataset aimed at helping sub-5-billion parameter models reason more concisely and reliably. Every example follows a three-section Inventory, Interaction, Execution scaffold with capped length, enabling regex validation of trained outputs. Coverage spans 18 domains and 798 subdomains, including 279,000 tool-use examples of which 87,000 were produced by actually running the tools. Published on Hugging Face under CC-BY-4.0 in 74 JSONL shards totaling roughly 15 gigabytes.",
+      "zh": "研究者发布 Scaffold CoT 数据集，约 400 万条示例、30 亿 token，专为帮助 50 亿参数以下小模型更简洁可靠地推理而设计。每个示例遵循 Inventory、Interaction、Execution 三段式脚手架且长度受限，可用正则表达式校验训练输出。覆盖 18 个领域、798 个子领域，含 27.9 万条工具调用示例，其中 8.7 万条由实际运行工具生成。已在 Hugging Face 以 CC-BY-4.0 许可发布，共 74 个 JSONL 分片、约 15 GB。",
+      "title_en": "Scaffold CoT dataset targets structured reasoning failures in small models",
+      "title_zh": "Scaffold CoT 数据集针对小模型结构化推理失效问题"
     }
   }
 }
