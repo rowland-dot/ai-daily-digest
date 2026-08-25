@@ -1,8 +1,26 @@
 {
-  "count": 6,
+  "count": 4,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmt8bo2db30oaro735zu90tig",
+      "title": "单个污染页面即可影响LLM推荐：FORGE基准揭示检索增强推荐系统的脆弱性",
+      "title_en": "One Polluted Page Is Enough： Evaluating Web Content Pollution in LLM Recommenders",
+      "url": "https://arxiv.org/abs/2606.13610",
+      "permalink": "https://aihot.virxact.com/items/cmt8bo2db30oaro735zu90tig",
+      "source": "HuggingFace Daily Papers（社区热门论文）",
+      "publishedAt": "2026-08-24T00:00:00.000Z",
+      "discoveredAt": "2026-08-25T07:07:04.194Z",
+      "summary": "检索增强型LLM在消费推荐中易受GEO内容污染影响，成为虚假产品的无意推广者。新基准FORGE在225个真实产品、15个类别和5个消费场景中测试12个商业及开源LLM，发现所有模型均易受攻击：单个污染页面即可造成最高27%的受骗率，替换全部前3个结果时升至73.8%。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt8bo2db30oaro735zu90tig"
+      }
+    },
     {
       "id": "cmt2ry1sl04ywro6t5znttdrs",
       "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
@@ -55,60 +73,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt393qov0kfhro6tuwhxhubl"
-      }
-    },
-    {
-      "id": "cmsz1974l06hbro20gosn5d78",
-      "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
-      "title_en": "How Much Memory Does Your Agent Actually Need？",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
-      "permalink": "https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-08-18T18:09:38.000Z",
-      "discoveredAt": "2026-08-18T19:05:39.262Z",
-      "summary": "智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。",
-      "category": "paper",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78"
-      }
-    },
-    {
-      "id": "cmt0e7sxo01eiro2o4l4y9jmh",
-      "title": "突破 DeepSeek-V4-Pro 服务极限：H20 上的多场景优化方法",
-      "title_en": "Blog Pushing the Limits of Serving DeepSeek-V4-Pro DeepSeek-V4-Pro is a 1.6-trillion-parameter Mixture-of-Experts （MoE） model released with both FP8 and FP4 weights. Models at this scale naturally benefit from accelerators such as NVIDIA Blackwell GPU… Tianyu Zhang， Yusong Gao， Yun Zhang",
-      "url": "https://www.lmsys.org/blog/2026-08-19-deepseek-v4-pro-engine-optimization-h20",
-      "permalink": "https://aihot.virxact.com/items/cmt0e7sxo01eiro2o4l4y9jmh",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-18T16:00:00.000Z",
-      "discoveredAt": "2026-08-19T17:56:13.817Z",
-      "summary": "LMSYS 团队针对 1.6 万亿参数的 MoE 模型 DeepSeek-V4-Pro，在 H20 GPU 上通过场景化服务配置逼近 B300 性能。单节点 H20-141GB 参考实现达 271 output tokens/s，与 B300 的 383.7 tokens/s 性能差距缩小至 1.42×。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt0e7sxo01eiro2o4l4y9jmh"
-      }
-    },
-    {
-      "id": "cmszieman0euzrodptihyllom",
-      "title": "StartupBench：面向市场验证端到端工作流的通用智能体基准测试",
-      "title_en": "StartupBench： Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
-      "url": "https://arxiv.org/abs/2608.17800",
-      "permalink": "https://aihot.virxact.com/items/cmszieman0euzrodptihyllom",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-18T00:00:00.000Z",
-      "discoveredAt": "2026-08-19T03:05:46.360Z",
-      "summary": "StartupBench 是一个基于市场验证的 AI 初创公司产品构建的端到端智能体基准，从真实采用的产品工作流中提炼任务，而非研究者预设任务。在统一智能体框架下，最强模型也仅能完成约 30% 的任务，复杂指令遵循和领域专业知识是主要失败来源。该基准揭示了当前通用智能体在真实用户任务上的能力边界。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmszieman0euzrodptihyllom"
       }
     }
   ]

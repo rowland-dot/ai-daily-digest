@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-24T21:00:09.504Z",
+  "fetched_at": "2026-08-25T21:00:54.866Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "The full stack behind abundant intelligence",
+      "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+      "pubDate": "Tue, 25 Aug 2026 07:05:00 GMT",
+      "description": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost."
+    },
+    {
+      "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+      "link": "https://openai.com/index/jalapeno-first-results",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "description": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models."
+    },
+    {
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "pubDate": "Tue, 25 Aug 2026 00:00:00 GMT",
+      "description": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West."
+    },
+    {
+      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+      "link": "https://openai.com/index/introducing-admin-plugin",
+      "pubDate": "Tue, 25 Aug 2026 00:00:00 GMT",
+      "description": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests."
+    },
     {
       "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
       "link": "https://openai.com/index/gpt-5-6-in-kiro",
@@ -67,30 +91,6 @@
       "link": "https://openai.com/index/nvidia/chatgpt-work",
       "pubDate": "Tue, 18 Aug 2026 00:00:00 GMT",
       "description": "NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally."
-    },
-    {
-      "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-      "link": "https://openai.com/index/asana",
-      "pubDate": "Tue, 18 Aug 2026 07:00:00 GMT",
-      "description": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K."
-    },
-    {
-      "title": "The Defender’s Window",
-      "link": "https://openai.com/index/the-defenders-window",
-      "pubDate": "Mon, 17 Aug 2026 05:30:00 GMT",
-      "description": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now."
-    },
-    {
-      "title": "OpenAI joins PORTS-Pike project",
-      "link": "https://openai.com/index/openai-joins-ports-pike-project",
-      "pubDate": "Mon, 17 Aug 2026 05:00:00 GMT",
-      "description": "OpenAI joins PORTS-Pike project, expanding community investment and supporting thousands of Southern Ohio jobs"
-    },
-    {
-      "title": "New policy ideas for the Intelligence Age",
-      "link": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
-      "pubDate": "Mon, 17 Aug 2026 03:15:00 GMT",
-      "description": "OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age."
     }
   ]
 }

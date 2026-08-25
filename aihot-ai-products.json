@@ -4,6 +4,78 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmt90wf1p06j9roly5e34fmu3",
+      "title": "OpenWorker 新版发布，内置网络安全智能体",
+      "title_en": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
+      "url": "https://x.com/AndrewYNg/status/2092315079576555806",
+      "permalink": "https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3",
+      "source": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
+      "publishedAt": "2026-08-25T18:16:02.000Z",
+      "discoveredAt": "2026-08-25T18:53:23.683Z",
+      "summary": "Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。其 harness 完全开源，安全团队可审计无后门。新版内置代码漏洞扫描、依赖供应链注入检测和云安全配置检查三类网络安全智能体，并支持本地运行开源权重模型以保护敏感代码。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3"
+      }
+    },
+    {
+      "id": "cmt8z2eko055crolytaitdxv8",
+      "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
+      "title_en": "Claude's memory works everywhere， and you decide what's in it",
+      "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+      "permalink": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8",
+      "source": "Claude：Blog（网页）",
+      "publishedAt": "2026-08-25T18:02:04.743Z",
+      "discoveredAt": "2026-08-25T18:02:04.743Z",
+      "summary": "Claude 即日起将聊天与 Claude Cowork 的记忆统一，用户在任一场景对话时都能调用此前积累的上下文，减少重复解释。记忆会在聊天过程中实时更新，用户可在 Memory 设置中按主题查看、编辑或删除每条记忆。健康、信仰等敏感话题默认不存储，但可在设置中开启，且敏感识别号、犯罪记录等始终不会被保存。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8"
+      }
+    },
+    {
+      "id": "cmt8qee503kvnro73qp7543yv",
+      "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
+      "title_en": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
+      "permalink": "https://aihot.virxact.com/items/cmt8qee503kvnro73qp7543yv",
+      "source": "Apple：Newsroom（RSS）",
+      "publishedAt": "2026-08-25T13:00:23.969Z",
+      "discoveredAt": "2026-08-25T13:59:27.807Z",
+      "summary": "Apple 发布搭载 M5 Max 与全新 M5 Ultra 的 Mac Studio，AI 性能最高提升 4.3 倍，图形性能提升 1.8 倍，存储速度提升 2 倍。M5 Ultra 版本支持最高 512GB 统一内存与 1.2TB/s 内存带宽，可完全在设备端运行大型 LLM；四台集群可带来最高 3 倍分布式 AI 推理速度提升。新品今日起接受预购，9 月 22 日开售。",
+      "category": "ai-products",
+      "score": 64,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt8qee503kvnro73qp7543yv"
+      }
+    },
+    {
+      "id": "cmt8qee503kvpro73kzthenuu",
+      "title": "Apple 发布 M6 与 M5 Ultra，性能与 AI 算力大幅跃升",
+      "title_en": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+      "permalink": "https://aihot.virxact.com/items/cmt8qee503kvpro73kzthenuu",
+      "source": "Apple：Newsroom（RSS）",
+      "publishedAt": "2026-08-25T12:58:13.056Z",
+      "discoveredAt": "2026-08-25T13:59:27.807Z",
+      "summary": "Apple 推出首款 2nm 芯片 M6，搭载 12 核 CPU、12 核 GPU 及双 16 核神经引擎，统一内存带宽最高 170GB/s，多线程性能较 M5 提升 1.2 倍。M5 Ultra 采用首款四芯片封装架构，最高 36 核 CPU、80 核 GPU，带宽达 1.2TB/s，较 M3 Ultra 提升 50%。两款芯片分别用于新款 Mac mini 与 Mac Studio。",
+      "category": "ai-products",
+      "score": 55,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmt8qee503kvpro73kzthenuu"
+      }
+    },
+    {
       "id": "cmt7nq1d02bs1ro7373u88po4",
       "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
       "title_en": "MetaRoCE： A New RDMA Transport Built for AI-Scale Ethernet",
@@ -235,78 +307,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmsz79zol04j8rodpvun6zobl"
-      }
-    },
-    {
-      "id": "cmsz49ptt022qrodp5mc1nt1x",
-      "title": "Claude 现已支持 Gmail 邮件与 Google Drive 文件管理",
-      "title_en": "Claude can now send emails in Gmail and manage files in Google Drive. Ask Claude to reply to a thre…",
-      "url": "https://x.com/claudeai/status/2089806039088517356",
-      "permalink": "https://aihot.virxact.com/items/cmsz49ptt022qrodp5mc1nt1x",
-      "source": "X：Claude (@claudeai)",
-      "publishedAt": "2026-08-18T20:06:01.000Z",
-      "discoveredAt": "2026-08-18T20:30:00.860Z",
-      "summary": "Claude 现在可以在 Gmail 中发送邮件，并管理 Google Drive 中的文件。\n\n让 Claude 回复某个邮件线程，它会起草并发送回复。你可以控制何时需要你的批准。\n\n从连接器菜单中选择连接 Gmail 或 Google Drive 即可试用。所有付费套餐均可用。",
-      "category": "ai-products",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsz49ptt022qrodp5mc1nt1x"
-      }
-    },
-    {
-      "id": "cmsykcnkt0yh1roz0a9h404r5",
-      "title": "OpenAI 推出 ChatGPT for Teens：面向青少年的学习体验与更强安全保护",
-      "title_en": "Introducing ChatGPT for Teens： Built for learning， backed by protections",
-      "url": "https://openai.com/index/chatgpt-for-teens",
-      "permalink": "https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-08-18T11:00:00.000Z",
-      "discoveredAt": "2026-08-18T11:12:25.733Z",
-      "summary": "OpenAI 发布 ChatGPT for Teens，为 13-17 岁用户自动启用，内置更强安全保护与家长控制。新增 Study Mode、负责任作业提醒、测验与学习可视化，以及可设定默认开启时段的 Study Hours，引导青少年分步解题而非直接给答案。OpenAI 同时宣布与 CodeAI 合作，帮助青少年理解、质疑并创造性地使用 AI。",
-      "category": "ai-products",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5"
-      }
-    },
-    {
-      "id": "cmsyqip4o14umroz0ch5iv0iv",
-      "title": "Sentence Transformers v6.0 新增 MultiVectorEncoder，支持 ColBERT 风格多向量模型",
-      "title_en": "Multi-Vector （Late Interaction） Embedding Models with Sentence Transformers",
-      "url": "https://huggingface.co/blog/multi-vector-encoder",
-      "permalink": "https://aihot.virxact.com/items/cmsyqip4o14umroz0ch5iv0iv",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-08-18T00:00:00.000Z",
-      "discoveredAt": "2026-08-18T14:05:05.620Z",
-      "summary": "Sentence Transformers v6.0 新增第四种模型类型 MultiVectorEncoder，可直接加载 PyLate、Stanford-NLP ColBERT 及 colpali-engine 检查点，用于 ColBERT 式晚期交互检索。",
-      "category": "ai-products",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsyqip4o14umroz0ch5iv0iv"
-      }
-    },
-    {
-      "id": "cmsxsvb5s0a4troz0z2q2nu3h",
-      "title": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
-      "title_en": "Cursor 推出 Origin，作为 GitHub 的替代方案",
-      "url": "https://cursor.com/changelog/origin-code-hosting",
-      "permalink": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-17T22:14:00.748Z",
-      "discoveredAt": "2026-08-17T22:23:07.832Z",
-      "summary": "Cursor 今日起向所有付费计划用户开放 Origin 代码托管的早期测试版，提供仓库、拉取请求、代码浏览及 GitHub 同步功能。用户可创建以 cursor.com/codebase/ 为前缀的仓库，或将 GitHub 仓库同步至 Origin，双向同步评论与审查。Vercel、Depot 和 Buildkite 集成已可用，智能体功能即将推出。",
-      "category": "ai-products",
-      "score": 81,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmsxsvb5s0a4troz0z2q2nu3h"
       }
     }
   ]

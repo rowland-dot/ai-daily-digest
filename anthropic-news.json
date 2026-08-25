@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-24T21:00:10.049Z",
+  "fetched_at": "2026-08-25T21:00:55.487Z",
   "source": "Anthropic news",
   "items": [
     {
@@ -28,6 +28,13 @@
       "link": "https://www.anthropic.com/news/claude-sonnet-5",
       "pubDate": "2026-06-30T00:00:00.000Z",
       "pubDateText": "Jun 30, 2026",
+      "description": ""
+    },
+    {
+      "title": "Wellbeing Research Grants",
+      "link": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "pubDate": "2026-08-25T00:00:00.000Z",
+      "pubDateText": "Aug 25, 2026",
       "description": ""
     },
     {
@@ -70,13 +77,6 @@
       "link": "https://www.anthropic.com/news/anthropic-economic-index-connector",
       "pubDate": "2026-07-22T00:00:00.000Z",
       "pubDateText": "Jul 22, 2026",
-      "description": ""
-    },
-    {
-      "title": "Donation Public First Action",
-      "link": "https://www.anthropic.com/news/donation-public-first-action",
-      "pubDate": "2026-07-21T00:00:00.000Z",
-      "pubDateText": "Jul 21, 2026",
       "description": ""
     }
   ]

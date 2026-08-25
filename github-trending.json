@@ -1,71 +1,16 @@
 {
-  "fetched_at": "2026-08-24T21:00:08.925Z",
+  "fetched_at": "2026-08-25T21:00:54.385Z",
   "repos": [
     {
-      "owner": "Alishahryar1",
-      "name": "free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 48843,
-      "forks": 7983,
-      "starsToday": 889
-    },
-    {
-      "owner": "openai",
-      "name": "codex",
-      "url": "https://github.com/openai/codex",
-      "description": "Lightweight coding agent that runs in your terminal",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 116961,
-      "forks": 17833,
-      "starsToday": 1990
-    },
-    {
-      "owner": "MadsLorentzen",
-      "name": "ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 33930,
-      "forks": 11860,
-      "starsToday": 378
-    },
-    {
-      "owner": "multica-ai",
-      "name": "andrej-karpathy-skills",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "",
-      "languageColor": "",
-      "stars": 206418,
-      "forks": 21080,
-      "starsToday": 491
-    },
-    {
-      "owner": "makeplane",
-      "name": "plane",
-      "url": "https://github.com/makeplane/plane",
-      "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 57857,
-      "forks": 5485,
-      "starsToday": 268
-    },
-    {
-      "owner": "NousResearch",
-      "name": "hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "description": "The agent that grows with you",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 235718,
-      "forks": 47553,
-      "starsToday": 899
+      "owner": "freestylefly",
+      "name": "awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 17489,
+      "forks": 1810,
+      "starsToday": 1698
     },
     {
       "owner": "anthropics",
@@ -74,20 +19,20 @@
       "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 1311,
-      "forks": 150,
-      "starsToday": 490
+      "stars": 1695,
+      "forks": 176,
+      "starsToday": 350
     },
     {
-      "owner": "AprilNEA",
-      "name": "OpenLogi",
-      "url": "https://github.com/AprilNEA/OpenLogi",
-      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 15773,
-      "forks": 428,
-      "starsToday": 1102
+      "owner": "MadsLorentzen",
+      "name": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 35178,
+      "forks": 12113,
+      "starsToday": 1266
     },
     {
       "owner": "apache",
@@ -96,31 +41,20 @@
       "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 2847,
-      "forks": 305,
-      "starsToday": 408
+      "stars": 3279,
+      "forks": 325,
+      "starsToday": 538
     },
     {
-      "owner": "PostHog",
-      "name": "posthog",
-      "url": "https://github.com/PostHog/posthog",
-      "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+      "owner": "TauricResearch",
+      "name": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 38948,
-      "forks": 3271,
-      "starsToday": 106
-    },
-    {
-      "owner": "openclaw",
-      "name": "openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 387401,
-      "forks": 81342,
-      "starsToday": 160
+      "stars": 100143,
+      "forks": 19344,
+      "starsToday": 191
     },
     {
       "owner": "AgriciDaniel",
@@ -129,9 +63,9 @@
       "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 11796,
-      "forks": 1324,
-      "starsToday": 272
+      "stars": 12624,
+      "forks": 1380,
+      "starsToday": 810
     },
     {
       "owner": "rohitg00",
@@ -140,64 +74,9 @@
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 48217,
-      "forks": 8494,
-      "starsToday": 330
-    },
-    {
-      "owner": "basecamp",
-      "name": "omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 30008,
-      "forks": 3046,
-      "starsToday": 1055
-    },
-    {
-      "owner": "tashfeenahmed",
-      "name": "freellmapi",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 19722,
-      "forks": 2871,
-      "starsToday": 153
-    },
-    {
-      "owner": "dani-garcia",
-      "name": "vaultwarden",
-      "url": "https://github.com/dani-garcia/vaultwarden",
-      "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 66111,
-      "forks": 3138,
-      "starsToday": 176
-    },
-    {
-      "owner": "freestylefly",
-      "name": "awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 15401,
-      "forks": 1632,
-      "starsToday": 2442
-    },
-    {
-      "owner": "VoltAgent",
-      "name": "awesome-agent-skills",
-      "url": "https://github.com/VoltAgent/awesome-agent-skills",
-      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
-      "language": "",
-      "languageColor": "",
-      "stars": 31805,
-      "forks": 3392,
-      "starsToday": 600
+      "stars": 48878,
+      "forks": 8557,
+      "starsToday": 572
     },
     {
       "owner": "tinyhumansai",
@@ -206,9 +85,97 @@
       "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
       "language": "Rust",
       "languageColor": "#dea584",
-      "stars": 37198,
-      "forks": 3696,
-      "starsToday": 515
+      "stars": 37715,
+      "forks": 3729,
+      "starsToday": 541
+    },
+    {
+      "owner": "basecamp",
+      "name": "omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 31129,
+      "forks": 3167,
+      "starsToday": 1080
+    },
+    {
+      "owner": "Shubhamsaboo",
+      "name": "awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 134172,
+      "forks": 19737,
+      "starsToday": 161
+    },
+    {
+      "owner": "multica-ai",
+      "name": "andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "languageColor": "",
+      "stars": 207125,
+      "forks": 21138,
+      "starsToday": 828
+    },
+    {
+      "owner": "openai",
+      "name": "codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 118042,
+      "forks": 17993,
+      "starsToday": 1183
+    },
+    {
+      "owner": "marin-community",
+      "name": "marin",
+      "url": "https://github.com/marin-community/marin",
+      "description": "Open-source framework for the research and development of foundation models.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 2066,
+      "forks": 190,
+      "starsToday": 277
+    },
+    {
+      "owner": "DietrichGebert",
+      "name": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 110841,
+      "forks": 6096,
+      "starsToday": 944
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 34045,
+      "forks": 3867,
+      "starsToday": 47
+    },
+    {
+      "owner": "asciimoo",
+      "name": "hister",
+      "url": "https://github.com/asciimoo/hister",
+      "description": "Your own search engine",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 2727,
+      "forks": 121,
+      "starsToday": 166
     }
   ]
 }
