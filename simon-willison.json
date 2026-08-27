@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-08-25T21:00:55.919Z",
+  "fetched_at": "2026-08-26T23:59:11.226Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Quoting Paul Dix",
+      "link": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+      "updated": "2026-08-26T08:07:55+00:00",
+      "summary": "The fact that AI wrote 1M LOC and then refined it over the course of the next couple of months to produce a reliable piece of software that is currently running on millions of developer machines is absolutely mind blowing. And you can say, “well it’s not that impressive because they had an oracle to compare against, so it was simple to go from one language to another”, but I think that’s selling this entire thing short. If you can build a verification system and give proper direction, AI can produce a highly complex, highly sophisticated piece of software and it can continue to refine it until it just works."
+    },
+    {
+      "title": "EVE Online: The Move to Python 3 Begins!",
+      "link": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+      "updated": "2026-08-25T22:59:30+00:00",
+      "summary": "EVE Online: The Move to Python 3 Begins!"
+    },
     {
       "title": "llm-anthropic 0.27",
       "link": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
       "updated": "2026-08-21T16:07:32+00:00",
       "summary": "Stop Making TUIs"
-    },
-    {
-      "title": "Quoting Matt Webb",
-      "link": "https://simonwillison.net/2026/Aug/21/matt-webb/",
-      "updated": "2026-08-21T15:06:26+00:00",
-      "summary": "After I released version 1.0, I figured I would have to do the rotations myself. So I sat down with ChatGPT and I didn’t get it to write the code, but I got it to educate me. With a patient, interactive tutor, I was able to finally do what I hadn’t by reading books and asking mathematician friends – I learnt how to use quaternions just enough to make the app work. So learning doesn’t stop just because I outsource a bunch of thinking to AI. It pushes me to learn more. I like that as an outcome."
-    },
-    {
-      "title": "ChatGPT search now uses the site:operator at scale",
-      "link": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
-      "updated": "2026-08-20T23:57:32+00:00",
-      "summary": "ChatGPT search now uses the site:operator at scale"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
-  "fetched_at": "2026-08-25T21:00:54.385Z",
+  "fetched_at": "2026-08-26T23:59:09.886Z",
   "repos": [
+    {
+      "owner": "tt-a1i",
+      "name": "archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 17864,
+      "forks": 1238,
+      "starsToday": 1002
+    },
     {
       "owner": "freestylefly",
       "name": "awesome-gpt-image-2",
@@ -8,152 +19,9 @@
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 17489,
-      "forks": 1810,
-      "starsToday": 1698
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-plugins-community",
-      "url": "https://github.com/anthropics/claude-plugins-community",
-      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 1695,
-      "forks": 176,
-      "starsToday": 350
-    },
-    {
-      "owner": "MadsLorentzen",
-      "name": "ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 35178,
-      "forks": 12113,
-      "starsToday": 1266
-    },
-    {
-      "owner": "apache",
-      "name": "maka",
-      "url": "https://github.com/apache/maka",
-      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "stars": 3279,
-      "forks": 325,
-      "starsToday": 538
-    },
-    {
-      "owner": "TauricResearch",
-      "name": "TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 100143,
-      "forks": 19344,
-      "starsToday": 191
-    },
-    {
-      "owner": "AgriciDaniel",
-      "name": "claude-obsidian",
-      "url": "https://github.com/AgriciDaniel/claude-obsidian",
-      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 12624,
-      "forks": 1380,
-      "starsToday": 810
-    },
-    {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 48878,
-      "forks": 8557,
-      "starsToday": 572
-    },
-    {
-      "owner": "tinyhumansai",
-      "name": "openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 37715,
-      "forks": 3729,
-      "starsToday": 541
-    },
-    {
-      "owner": "basecamp",
-      "name": "omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "stars": 31129,
-      "forks": 3167,
-      "starsToday": 1080
-    },
-    {
-      "owner": "Shubhamsaboo",
-      "name": "awesome-llm-apps",
-      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 134172,
-      "forks": 19737,
-      "starsToday": 161
-    },
-    {
-      "owner": "multica-ai",
-      "name": "andrej-karpathy-skills",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "language": "",
-      "languageColor": "",
-      "stars": 207125,
-      "forks": 21138,
-      "starsToday": 828
-    },
-    {
-      "owner": "openai",
-      "name": "codex",
-      "url": "https://github.com/openai/codex",
-      "description": "Lightweight coding agent that runs in your terminal",
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "stars": 118042,
-      "forks": 17993,
-      "starsToday": 1183
-    },
-    {
-      "owner": "marin-community",
-      "name": "marin",
-      "url": "https://github.com/marin-community/marin",
-      "description": "Open-source framework for the research and development of foundation models.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 2066,
-      "forks": 190,
-      "starsToday": 277
-    },
-    {
-      "owner": "DietrichGebert",
-      "name": "ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 110841,
-      "forks": 6096,
-      "starsToday": 944
+      "stars": 21256,
+      "forks": 2123,
+      "starsToday": 4044
     },
     {
       "owner": "anthropics",
@@ -162,20 +30,152 @@
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 34045,
-      "forks": 3867,
-      "starsToday": 47
+      "stars": 34355,
+      "forks": 3886,
+      "starsToday": 307
     },
     {
-      "owner": "asciimoo",
-      "name": "hister",
-      "url": "https://github.com/asciimoo/hister",
-      "description": "Your own search engine",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 2727,
-      "forks": 121,
-      "starsToday": 166
+      "owner": "Alishahryar1",
+      "name": "free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 50364,
+      "forks": 8160,
+      "starsToday": 566
+    },
+    {
+      "owner": "MadsLorentzen",
+      "name": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 36447,
+      "forks": 12409,
+      "starsToday": 1299
+    },
+    {
+      "owner": "AgriciDaniel",
+      "name": "claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 13407,
+      "forks": 1398,
+      "starsToday": 812
+    },
+    {
+      "owner": "basecamp",
+      "name": "omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "stars": 31986,
+      "forks": 3262,
+      "starsToday": 1021
+    },
+    {
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 49566,
+      "forks": 8628,
+      "starsToday": 837
+    },
+    {
+      "owner": "tinyhumansai",
+      "name": "openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "stars": 38199,
+      "forks": 3760,
+      "starsToday": 522
+    },
+    {
+      "owner": "DietrichGebert",
+      "name": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 112527,
+      "forks": 6162,
+      "starsToday": 1598
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 2183,
+      "forks": 191,
+      "starsToday": 537
+    },
+    {
+      "owner": "ConardLi",
+      "name": "garden-skills",
+      "url": "https://github.com/ConardLi/garden-skills",
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "language": "CSS",
+      "languageColor": "#663399",
+      "stars": 10909,
+      "forks": 1388,
+      "starsToday": 136
+    },
+    {
+      "owner": "browser-use",
+      "name": "browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 110956,
+      "forks": 12184,
+      "starsToday": 135
+    },
+    {
+      "owner": "K-Dense-AI",
+      "name": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 34717,
+      "forks": 3360,
+      "starsToday": 130
+    },
+    {
+      "owner": "marin-community",
+      "name": "marin",
+      "url": "https://github.com/marin-community/marin",
+      "description": "Open-source framework for the research and development of foundation models.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 2450,
+      "forks": 213,
+      "starsToday": 443
+    },
+    {
+      "owner": "VoltAgent",
+      "name": "awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "language": "",
+      "languageColor": "",
+      "stars": 32624,
+      "forks": 3458,
+      "starsToday": 305
     }
   ]
 }

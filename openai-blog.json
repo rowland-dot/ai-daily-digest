@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-08-25T21:00:54.866Z",
+  "fetched_at": "2026-08-26T23:59:10.116Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "pubDate": "Wed, 26 Aug 2026 10:00:00 GMT",
+      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff."
+    },
+    {
+      "title": "Learning never stops: How AI makes learning continuous",
+      "link": "https://openai.com/index/learning-never-stops",
+      "pubDate": "Wed, 26 Aug 2026 10:00:00 GMT",
+      "description": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom."
+    },
+    {
+      "title": "The Hugging Face incident and the road ahead",
+      "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "pubDate": "Wed, 26 Aug 2026 00:00:00 GMT",
+      "description": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment."
+    },
+    {
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "link": "https://openai.com/index/loveholidays",
+      "pubDate": "Wed, 26 Aug 2026 00:00:00 GMT",
+      "description": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster."
+    },
     {
       "title": "The full stack behind abundant intelligence",
       "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
@@ -33,10 +57,16 @@
       "description": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance."
     },
     {
-      "title": "Introducing AI Futures",
+      "title": "Introducing Intelligence Age",
       "link": "https://openai.com/index/introducing-ai-futures",
       "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
-      "description": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
+      "description": "Introducing Intelligence Age, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
+    },
+    {
+      "title": "Introducing Intelligence Age",
+      "link": "https://openai.com/index/introducing-intelligence-age",
+      "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "description": "Introducing Intelligence Age, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
     },
     {
       "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
@@ -61,36 +91,6 @@
       "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
       "pubDate": "Tue, 18 Aug 2026 22:00:00 GMT",
       "description": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions."
-    },
-    {
-      "title": "Strengthening democratic oversight in national security",
-      "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
-      "pubDate": "Tue, 18 Aug 2026 19:00:00 GMT",
-      "description": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise."
-    },
-    {
-      "title": "Partnering with CodeAI to prepare the first AI generation",
-      "link": "https://openai.com/index/partnering-with-codeai",
-      "pubDate": "Tue, 18 Aug 2026 11:00:00 GMT",
-      "description": "OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly."
-    },
-    {
-      "title": "Pacing model development in an era of cyber-critical capabilities",
-      "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-      "pubDate": "Tue, 18 Aug 2026 11:00:00 GMT",
-      "description": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development."
-    },
-    {
-      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
-      "link": "https://openai.com/index/chatgpt-for-teens",
-      "pubDate": "Tue, 18 Aug 2026 11:00:00 GMT",
-      "description": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents."
-    },
-    {
-      "title": "How NVIDIA scales expertise with ChatGPT Work",
-      "link": "https://openai.com/index/nvidia/chatgpt-work",
-      "pubDate": "Tue, 18 Aug 2026 00:00:00 GMT",
-      "description": "NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally."
     }
   ]
 }

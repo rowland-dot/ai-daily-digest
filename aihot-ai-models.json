@@ -1,8 +1,116 @@
 {
-  "count": 7,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtaj3732034urovudls0byfe",
+      "title": "GlucoFM：面向连续血糖监测的基础模型",
+      "title_en": "GlucoFM： Foundation model for continuous glucose monitoring",
+      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring",
+      "permalink": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-08-26T20:10:19.416Z",
+      "discoveredAt": "2026-08-26T20:10:19.416Z",
+      "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109，066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
+      "category": "ai-models",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe"
+      }
+    },
+    {
+      "id": "cmtacq8vz0aedroj24bcix9go",
+      "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+      "title_en": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+      "permalink": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-08-26T17:01:00.000Z",
+      "discoveredAt": "2026-08-26T17:12:15.529Z",
+      "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
+      "category": "ai-models",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go"
+      }
+    },
+    {
+      "id": "cmta9ciqt07c1roj219h5liie",
+      "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+      "title_en": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+      "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
+      "permalink": "https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-08-26T15:32:46.000Z",
+      "discoveredAt": "2026-08-26T15:37:37.754Z",
+      "summary": "Qwen发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+      "category": "ai-models",
+      "score": 84,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie"
+      }
+    },
+    {
+      "id": "cmta7bh1k04u6roj2e4pt7bob",
+      "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+      "title_en": "GLM-5.3-Flash：前沿智能进入普惠时代",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+      "permalink": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
+      "source": "公众号：智谱（GLM）",
+      "publishedAt": "2026-08-26T14:11:33.000Z",
+      "discoveredAt": "2026-08-26T14:40:51.055Z",
+      "summary": "Zhipu上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
+      "category": "ai-models",
+      "score": 83,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob"
+      }
+    },
+    {
+      "id": "cmta2veap03nmrolwxllvp4ay",
+      "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+      "title_en": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "permalink": "https://aihot.virxact.com/items/cmta2veap03nmrolwxllvp4ay",
+      "source": "Qwen：Blog Retrieval（API）",
+      "publishedAt": "2026-08-26T12:30:00.000Z",
+      "discoveredAt": "2026-08-26T12:36:17.782Z",
+      "summary": "Qwen开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+      "category": "ai-models",
+      "score": 83,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmta2veap03nmrolwxllvp4ay"
+      }
+    },
+    {
+      "id": "cmta7honk0553roj21gque0zw",
+      "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+      "title_en": "3.3GB 压到 440MB，混元极低 bit 翻译模型跑进直播弹幕",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+      "permalink": "https://aihot.virxact.com/items/cmta7honk0553roj21gque0zw",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-08-26T08:04:03.000Z",
+      "discoveredAt": "2026-08-26T08:04:03.000Z",
+      "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmta7honk0553roj21gque0zw"
+      }
+    },
     {
       "id": "cmt8uphwp3qmhro73czv8pbpv",
       "title": "WeatherNext 预测气旋：提前五天预警五级飓风",
@@ -76,6 +184,24 @@
       }
     },
     {
+      "id": "cmta7g6l70515roj25ljc0cqj",
+      "title": "DeepSeek 上线多模态视觉理解模型 V4-Flash-Vision-Exp",
+      "title_en": "V4-Flash-Vision-Exp 上线，开启多模态 API 服务",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26",
+      "permalink": "https://aihot.virxact.com/items/cmta7g6l70515roj25ljc0cqj",
+      "source": "公众号：DeepSeek（深度求索）",
+      "publishedAt": "2026-08-21T09:12:16.000Z",
+      "discoveredAt": "2026-08-21T09:12:16.000Z",
+      "summary": "DeepSeek 上线多模态视觉理解模型 V4-Flash-Vision-Exp，纯文本能力与 V4-Flash 正式版持平，多模态 Agent 能力接近 Opus-4.8。该模型通过 API 提供，图片按 token 计费，一张最多占 384 tokens，价格与 V4-Flash 一致。同期上线的 Files API 免费，支持图片上传后通过 file_id 复用。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmta7g6l70515roj25ljc0cqj"
+      }
+    },
+    {
       "id": "cmt1rv5n8066iroovaxgoej1b",
       "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
       "title_en": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
@@ -112,21 +238,21 @@
       }
     },
     {
-      "id": "cmt05zhyg139trodp6bxsy9e2",
-      "title": "Liquid AI 发布 LFM2.5 系列 QAD Q4_0 量化检查点，恢复 97% 精度损失",
-      "title_en": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
-      "url": "https://huggingface.co/blog/LiquidAI/qad",
-      "permalink": "https://aihot.virxact.com/items/cmt05zhyg139trodp6bxsy9e2",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-08-19T13:48:49.000Z",
-      "discoveredAt": "2026-08-19T14:05:48.972Z",
-      "summary": "Liquid AI 发布基于量化感知蒸馏（QAD）训练的 LFM2.5-230M、350M、1.2B-Instruct 和 2.6B 四款 Q4_0 GGUF 检查点，在保持原生 Q4_0 内存与速度的同时，恢复 BF16 平均精度损失的 97%。",
+      "id": "cmta7hu4g055groj2fuv1x60n",
+      "title": "Ling-3.0 tiny & flash Base Models 正式开源",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487554&idx=1&sn=269b771030c16cebeba57eac4d2a1184",
+      "permalink": "https://aihot.virxact.com/items/cmta7hu4g055groj2fuv1x60n",
+      "source": "公众号：蚂蚁百灵（Ling）",
+      "publishedAt": "2026-08-20T02:00:00.000Z",
+      "discoveredAt": "2026-08-20T02:00:00.000Z",
+      "summary": "蚂蚁百灵开源 Ling-3.0-tiny-base 与 Ling-3.0-flash-base，并同步开放预训练、中期训练及 WSM 合并等共 6 个 checkpoints。tiny-base 总参数 7.9B、激活参数 1.3B，flash-base 总参数 124B、激活参数 5.1B，均采用统一训练方案，适合持续预训练、监督微调、偏好优化及强化学习后训练等场景。",
       "category": "ai-models",
-      "score": 64,
+      "score": 68,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt05zhyg139trodp6bxsy9e2"
+        "canonical": "https://aihot.virxact.com/items/cmta7hu4g055groj2fuv1x60n"
       }
     }
   ]

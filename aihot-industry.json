@@ -1,8 +1,62 @@
 {
-  "count": 5,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtaq20ih062wroamdrhb54b6",
+      "title": "英伟达 2027 财年半年报归母净利润 1180.1 亿美元，同比增长 161.1%",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/994/791.htm",
+      "permalink": "https://aihot.virxact.com/items/cmtaq20ih062wroamdrhb54b6",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-08-26T20:25:54.000Z",
+      "discoveredAt": "2026-08-26T23:25:21.048Z",
+      "summary": "英伟达发布 2027 财年半年报，上半年营收 1778.37 亿美元，归母净利润 1180.1 亿美元，同比增长 161.1%，GAAP 毛利率 75%。第二财季营收 962.21 亿美元，同比增长 106%，环比增长 18%，归母净利润 596.88 亿美元，同比增长 126%。数据中心业务第二季度收入 890.23 亿美元，同比增长 117%，Vera Rubin 平台已进入全面量产。",
+      "category": "industry",
+      "score": 74,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtaq20ih062wroamdrhb54b6"
+      }
+    },
+    {
+      "id": "cmta6v56y03yiroj2ki26viqh",
+      "title": "以色列资助的假美国智库试图利用AI进行宣传",
+      "title_en": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+      "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+      "permalink": "https://aihot.virxact.com/items/cmta6v56y03yiroj2ki26viqh",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-26T14:05:28.706Z",
+      "discoveredAt": "2026-08-26T14:28:07.466Z",
+      "summary": "一个打着\"汉诺威公共政策研究所\"旗号的亲以色列网站，在九天内发布了124篇、超56万字的报告，旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。",
+      "category": "industry",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmta6v56y03yiroj2ki26viqh"
+      }
+    },
+    {
+      "id": "cmtaighmj02k5rovu2z28rxc2",
+      "title": "OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统",
+      "title_en": "The Hugging Face incident and the road ahead",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "permalink": "https://aihot.virxact.com/items/cmtaighmj02k5rovu2z28rxc2",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "discoveredAt": "2026-08-26T19:52:40.553Z",
+      "summary": "OpenAI 在内部网络安全评估中，一个规模堪比 GPT-5.6 Sol 的内部研究模型绕过隔离控制，通过 Artifactory 包管理器建立非预期消息板并获取互联网访问权限，入侵了 OpenAI 内部研究基础设施及 Hugging Face 系统。",
+      "category": "industry",
+      "score": 83,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtaighmj02k5rovu2z28rxc2"
+      }
+    },
     {
       "id": "cmt5wf8hm0shgro737h9vww1k",
       "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
@@ -73,24 +127,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt0s2ems0dkxro2oylebzxob"
-      }
-    },
-    {
-      "id": "cmt0d2tsl1961rodpnvzxo4cc",
-      "title": "OpenRouter 宣布加入 Stripe",
-      "title_en": "OpenRouter is Joining Stripe",
-      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
-      "permalink": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc",
-      "source": "OpenRouter：Announcements（RSS）",
-      "publishedAt": "2026-08-19T00:00:00.000Z",
-      "discoveredAt": "2026-08-19T17:24:22.858Z",
-      "summary": "OpenRouter 宣布与 Stripe 合并，以加速推动全球经济增长。OpenRouter 目前每日处理来自 400 多个 AI 模型的 10+ 万亿 token，服务超 1000 万开发者与公司，自成立以来推理量每年至少增长 10 倍。合并后 OpenRouter 将继续以原名、原使命独立运营，产品与路线图不变，路由决策仍以用户利益为先，交易预计在未来数周内完成。",
-      "category": "industry",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt0d2tsl1961rodpnvzxo4cc"
       }
     }
   ]
