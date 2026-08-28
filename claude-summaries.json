@@ -1,51 +1,50 @@
 {
-  "generated_at": "2026-08-25T21:07:50Z",
+  "generated_at": "2026-08-27T00:04:22Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vy6smx/qwen38flashnext_this_architecture_could_be/": {
-      "en": "Qwen3.8-Flash-Next is estimated at roughly 125 billion parameters with 6 billion active, plus a 51 billion n-gram table. At 4-bit quantization the author expects about 82 gigabytes total (58 for main weights, 24 for n-gram tables), landing in the 80 to 90 gigabyte range. The sparsely-accessed n-gram table is a strong candidate for system RAM offload, making the architecture unexpectedly practical for local deployment once weights drop.",
-      "zh": "作者估算 Qwen3.8-Flash-Next 约 1250 亿参数、60 亿激活，加 510 亿参数的 n-gram 表。4 位量化下预计约 82 GB——主权重 58 GB、n-gram 表 24 GB，实际量化通常落在 80 到 90 GB 之间。由于 n-gram 表访问稀疏，非常适合卸载到系统内存，令这一架构在权重发布后有望意外地适合本地部署。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vyq2v4/megathread_qwen38flashnext_release_day/": {
+      "en": "Qwen's first open-weight release of the new architecture pairs Gated DeltaNet with Qwen Sparse Attention, selecting micro-blocks rather than individual tokens to cut long-context latency for agentic workloads. Gated Residual streams and n-gram embeddings improve parameter scaling and let memory offload to system RAM instead of accelerators. The 125 billion parameter model activates about 6 billion parameters per token and ships with a vision encoder, promising cheaper long-context inference than Mixture of Experts alone.",
+      "zh": "Qwen3.8-Flash-Next是新架构的首个开源权重发布，将Gated DeltaNet与Qwen Sparse Attention配对，在微块粒度而非单token上选取，大幅降低长文本延迟，适合Agent工作流。配合Gated Residual残差和N-gram嵌入表提升参数扩展效率，权重可卸载到系统内存。总参数1250亿、激活约60亿，附带视觉编码器，比传统混合专家模型更省成本。",
+      "title_en": "Qwen 3.8 Flash Next release introduces Qwen Sparse Attention and n-gram embeddings",
+      "title_zh": "Qwen 3.8 Flash Next 发布，引入 Qwen Sparse Attention 和 N-gram 嵌入表"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vy2jz7/ibmgranitegranite4230b_hugging_face/": {
-      "en": "IBM published the Granite 4.2 family on Hugging Face: a flagship 30-billion-parameter dense reasoning model plus 8-billion and 3-billion variants. All three ship with built-in chain-of-thought and switchable thinking modes — full, non-thinking, and low-effort — trading depth for latency per query. Reasoning-augmented tool calling improves function selection, a 512,000-token context window handles long documents and agentic flows, and the Apache 2.0 license permits commercial and research use.",
-      "zh": "IBM 在 Hugging Face 发布 Granite 4.2 系列：旗舰 300 亿参数密集推理模型，以及 80 亿和 30 亿参数版本。全系内建思维链，支持完整思考、非思考、轻量思考三档模式，可按查询在深度与延迟间权衡。推理增强的工具调用提升函数选择准确率，51.2 万 token 上下文窗口适配长文档与智能体流程，Apache 2.0 许可允许商用与研究。",
-      "title_en": "IBM releases Granite 4.2 reasoning models in 30, 8 and 3 billion parameter sizes",
-      "title_zh": "IBM 发布 Granite 4.2 推理模型，包含 300 亿、80 亿、30 亿参数三档"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vyzzxu/megathread_glm53flash_former_oxalpha/": {
+      "en": "Z.ai released GLM 5.3 Flash, the first natively multimodal open-weight model in the GLM 5 series, aiming to match Claude Opus 4.8 on coding and agent benchmarks at one-tenth GLM 5.2's serving cost. It runs 45 layers of hybrid sparse and linear attention with manifold-constrained hyper-connections, Mixture of Experts routing over 320 billion parameters with 18 billion activated, and a 24-layer vision transformer trained on 30 trillion multimodal tokens. Weights ship in FP8 with a BF16 mirror.",
+      "zh": "Z.ai发布GLM-5.3-Flash，是GLM-5系列首个原生多模态开源模型，声称以GLM-5.2十分之一的服务成本逼近Claude Opus 4.8的编码和Agent水平。含45层混合稀疏与线性注意力，采用流形约束超连接和混合专家路由，总参数3200亿、激活180亿，配24层视觉Transformer，训练用30万亿多模态token。主权重为FP8，另有BF16版本。",
+      "title_en": "GLM 5.3 Flash launches as the first natively multimodal open-weight GLM 5 model",
+      "title_zh": "GLM 5.3 Flash 发布，成为 GLM 5 系列首个原生多模态开源模型"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vxxa9x/new_llamacpp_adaptive_speculation_for_faster/": {
-      "en": "A Llama.cpp fork introduces adaptive speculative decoding: the engine automatically tunes how many draft tokens to propose within a user-set minimum and maximum, instead of using a fixed value. The author reports up to 50 percent higher generation speed over mainline, especially on Qwen3.8, with structured content on a Strix Halo climbing from 44 tokens per second to 65. Code and releases are on GitHub for anyone wanting to test the optimisation on dense models.",
-      "zh": "一款 Llama.cpp 分支引入自适应推测解码：引擎在用户设定的上下限之间自动调节草稿 token 数量，无需固定值。作者称在结构化内容上相比主线生成速度最高提升 50%，尤其对 Qwen3.8 效果显著；在 Strix Halo 平台上从每秒 44 token 提升到每秒 65 token。源码与发行版已在 GitHub 上公开，供密集模型用户测试。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vyie86/fully_quantized_nvfp4_qwen3827b_with_quasar_qad/": {
+      "en": "The QUASAR team open-sourced a fully NVFP4-quantized Qwen 3.8 27B checkpoint trained with their new quantization-aware distillation algorithm, using the original BF16 model as teacher across 2,446 distillation steps. Every linear layer sits at 4-bit weights and 4-bit activations, unusually including attention and Gated DeltaNet layers that most quantization recipes keep at higher precision. Evaluations on GPQA-Diamond and AIME26 hold near BF16 quality while shrinking storage from about 55 to 20 gigabytes, beating existing NVFP4 releases.",
+      "zh": "QUASAR团队开源了完全NVFP4量化的Qwen3.8-27B检查点，采用其新的量化感知蒸馏算法，以原始BF16为教师蒸馏2446步。所有线性层，包括通常保持较高精度的注意力和Gated DeltaNet层，都采用4比特权重和4比特激活。在GPQA-Diamond和AIME26上接近BF16原始水平，体积从约55GB降至约20GB，优于现有NVFP4版本。",
+      "title_en": "QUASAR ships a fully NVFP4-quantized Qwen 3.8 27B with quantization-aware distillation",
+      "title_zh": "QUASAR 用量化感知蒸馏发布完全 NVFP4 量化的 Qwen 3.8 27B"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vy09xv/apple_unveils_a_more_powerful_mac_mini_featuring/": {
-      "en": "Apple announced a refreshed Mac mini with new M6 and M5 Pro chips. The 12-core GPU gains two cores and, for the first time on Mac mini, embeds Neural Accelerators in every core, claiming up to four times faster AI performance and twice the graphics throughput of the M4 model. A new dual 16-core Neural Engine doubles the previous generation, unified memory reaches 32 gigabytes at up to 170 gigabytes per second bandwidth, positioning the box for compact local inference.",
-      "zh": "苹果发布搭载新款 M6 与 M5 Pro 芯片的 Mac mini。12 核 GPU 增加两核，并首次在 Mac mini 每个核心中加入神经加速器，人工智能性能相比 M4 提升四倍，图形性能翻倍；全新双 16 核神经引擎较上代提升一倍。统一内存最高 32 GB，带宽最高每秒 170 GB，使其成为紧凑型本地推理选项。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vyw1wo/forget_the_pelican_its_weeviltime/": {
+      "en": "A user proposed a benchmark-resistant vision test for Qwen 3.8 27B: prompt the model to recreate an arbitrary photograph as scalable vector graphics. Redrawing unseen images resists targeted training more than the well-known pelican benchmark. Best output came at image-min-tokens 1024, extra-high reasoning, temperature 1.0, and BF16 key-value caches at Q3 and Q4 quants. Dropping the key-value cache to Q4_0 destroyed image quality with distorted anatomy, while Q8_0 caches still held up.",
+      "zh": "有用户为Qwen3.8-27B设计了一个抗刷分的视觉基准：让模型把任意照片重画为可缩放矢量图。比起已知的Pelican测试，任意照片更难被针对性训练。最佳设置为image-min-tokens 1024、xhigh推理、温度1.0，配BF16键值缓存的Q3和Q4量化。将KV缓存降到Q4_0会毁掉画面出现畸形肢体，Q8_0仍可用。",
+      "title_en": "A benchmark-resistant vision test asks Qwen 3.8 27B to redraw photos as scalable vector graphics",
+      "title_zh": "抗刷分视觉基准让 Qwen 3.8 27B 把照片重画为可缩放矢量图"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vxg4vd/qwen3827b_nemotron35lightning30ba3b/": {
-      "en": "The author benchmarks four recent open-weight models on llm-bench: Qwen 3.8 as a 27-billion-parameter dense model, Nemotron 3.5 Lightning at 30 billion with 3 billion active, Ornith 1.5 at 35 billion with 3 billion active, and Muse Glimmer at 30 billion, all in the oQ8e configuration. Ornith stands out with the strongest overall showing across shared runs; TielCoder is flagged as possibly stronger for coding, with a follow-up comparison promised.",
-      "zh": "作者在 llm-bench 上对比四款近期开源模型：Qwen 3.8 的 270 亿参数密集版、Nemotron 3.5 Lightning 300 亿参数（30 亿激活）、Ornith 1.5 350 亿参数（30 亿激活），以及 Muse Glimmer 300 亿参数，均采用 oQ8e 配置。Ornith 综合表现最出色；作者提到 TielCoder 在编码任务上可能更强，将进一步比较。",
-      "title_en": "Benchmark comparison across four recent open-weight models near 30 billion parameters",
-      "title_zh": "近期约 300 亿参数级别开源模型基准对比"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vyn07o/underrated_muse_glimmer/": {
+      "en": "A benchmark comparison found Muse Glimmer competitive with Qwen 3.8 on implicit-knowledge tasks despite finishing in three to four hours versus roughly thirty for Qwen 3.8's extra-high reasoning mode, which also failed sixteen cases due to a 32,000 output-token limit. Muse Glimmer's sliding-window attention makes its key-value cache far more efficient, buying larger effective context. The author calls the model underrated and expects retrieval augmentation to further close any remaining gap with frontier systems."
+      ,
+      "zh": "用户对比了Qwen 3.8的xhigh、medium模式与Muse Glimmer在隐性知识任务上的表现。Muse Glimmer仅用3到4小时完成，Qwen 3.8 xhigh耗时近30小时，还因32K输出上限失败16个用例。Muse Glimmer的滑动窗口注意力让键值缓存更高效，可获得更大有效上下文，作者认为它被低估，配合RAG有望比肩前沿模型。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vxjcsw/260816157_freetoken_efficient_edgenative_moe/": {
-      "en": "FreeToken is a system for running frontier Mixture of Experts models on consumer hardware without extreme quantization. The paper reports Qwen 3.6 at 35 billion parameters hitting 39 tokens per second on an 8-gigabyte RTX 4060 laptop, DeepSeek V4 Flash at 284 billion managing 22 to 25 tokens per second on an RTX 5090, and GLM 5.2 at 753 billion running 15 tokens per second on an RTX PRO 6000. Bandwidth-adaptive CPU-GPU execution plus semantic caching across agent turns yields roughly 3 to 4 times faster decode and 6 to 30 times faster prefill versus Ollama.",
-      "zh": "FreeToken 系统可在消费级硬件上运行前沿混合专家模型且无需极端量化。论文报告 Qwen 3.6 的 350 亿参数版在 8 GB RTX 4060 笔记本上达每秒 39 token；DeepSeek V4 Flash 2840 亿参数在 RTX 5090 上每秒 22 到 25 token；GLM 5.2 的 7530 亿参数在 RTX PRO 6000 上每秒 15 token。该设计结合带宽自适应的 CPU-GPU 执行和跨智能体轮次的语义缓存，宣称解码速度比 Ollama 快 3 到 4 倍，预填充快 6 到 30 倍。",
-      "title_en": "FreeToken paper reports frontier Mixture of Experts inference on consumer GPUs",
-      "title_zh": "FreeToken 论文报告消费级 GPU 上运行前沿混合专家模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vyz13i/hf_exploring_sale_impact_on_open_models/": {
+      "en": "A community discussion notes Hugging Face is exploring a sale of the business at a valuation around 13 billion dollars. The concern raised is that Hugging Face uniquely combines model weights, datasets, and Spaces at scale, with Kaggle and academic repos lacking the same reach and ease of use. Members ask whether new owners focused on profitability could shift platform policies in ways that constrain open weights or restrict how the community publishes and shares open models.",
+      "zh": "社区讨论Hugging Face正在探索出售业务，估值约130亿美元。担忧在于Hugging Face独家整合了模型权重、数据集和Spaces，Kaggle和学术库在覆盖度和易用性上都难以替代。成员疑虑第三方投资、追求盈利后是否会调整平台政策，影响开源权重发布或社区共享的方式。",
+      "title_en": "Hugging Face exploring a 13 billion dollar sale, community weighs impact on open models",
+      "title_zh": "Hugging Face 探索约 130 亿美元出售，社区权衡对开源模型的影响"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vxg8be/the_journey_of_letting_qwen_3638_autonomously/": {
-      "en": "A hobbyist describes six months of using Qwen 3.6 then 3.8 at 27 billion parameters to autonomously build a C99 compiler targeting x64 ELFs. A custom harness with planner, coder, debugger, researcher and validator subagents ran on a Tesla P100 plus RTX 4070 at 13 to 14 tokens per second, with Gemma 4 as the validator on an Intel Arc B580. Context management and x86 opcode hallucination were the main pain points, but the model steered well enough to produce a working project, published as tc on GitHub.",
-      "zh": "一位爱好者讲述用 Qwen 3.6 后升级到 3.8 的 270 亿参数模型，历时六个月自主构建面向 x64 ELF 的 C99 编译器。自建框架包含规划、编码、调试、研究、验证等子智能体，硬件为 Tesla P100 加 RTX 4070，速度每秒约 13 到 14 token，另用 Intel Arc B580 上的 Gemma 4 做验证。上下文管理与 x86 操作码幻觉是主要难题，但模型最终产出可用项目，已作为 tc 发布在 GitHub。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vz7095/lemonade_endofsummer_project_update_now_serving/": {
+      "en": "The Lemonade project shared a summer update on its open-source local-AI runtime, which installs across operating systems as a single service and manages many models and engines behind one base URL, with an embeddable SDK. This summer added CUDA, ARM64, Metal, and Vulkan backends plus experimental engines for music and 3D assets. The router now supports semantic and policy routing that picks a large language model on the fly. A new GUI, benchmarking tools, and a plugin interface are next.",
+      "zh": "Lemonade项目发布暑期更新：这套开源本地AI运行时可一次安装跨操作系统作为服务运行，用统一base URL管理多种模型和引擎，并提供可嵌入SDK。这个夏天新增CUDA、ARM64、Metal和Vulkan后端，以及音乐、3D资产等实验性引擎。路由器新增语义和策略路由，可依提示动态选大模型。下阶段将推出新GUI、基准测试工具和插件接口。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vxv1iv/tencentwemmembedding_9b4b2b/": {
-      "en": "Tencent released WeMM-Embedding, a universal multimodal embedding family built on Qwen 3.5 and available in 9-billion, 4-billion and 2-billion parameter sizes. The models accept text, images, videos, visual documents and interleaved multimodal inputs, then emit a 4,096-dimensional L2-normalized embedding suitable for cross-modal retrieval. Audio input is not supported. Weights and a technical report are published on Hugging Face and GitHub for open evaluation and integration.",
-      "zh": "腾讯发布 WeMM-Embedding，一款基于 Qwen 3.5 构建的通用多模态嵌入模型系列，提供 90 亿、40 亿、20 亿参数三档。模型接受文本、图像、视频、视觉文档以及交错的多模态输入，输出 4096 维经 L2 归一化的嵌入，适用于跨模态检索；不支持音频。权重与技术报告已在 Hugging Face 与 GitHub 开源发布，供社区评估与集成。",
-      "title_en": "Tencent releases WeMM multimodal embedding family in 9, 4 and 2 billion parameter sizes",
-      "title_zh": "腾讯发布 WeMM 多模态嵌入模型系列，包含 90 亿、40 亿、20 亿参数三档"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vxk6k1/scaffold_cot_a_cot_dataset_built_around_the/": {
-      "en": "A researcher releases Scaffold CoT, a roughly 4-million-example, 3-billion-token chain-of-thought dataset aimed at helping sub-5-billion parameter models reason more concisely and reliably. Every example follows a three-section Inventory, Interaction, Execution scaffold with capped length, enabling regex validation of trained outputs. Coverage spans 18 domains and 798 subdomains, including 279,000 tool-use examples of which 87,000 were produced by actually running the tools. Published on Hugging Face under CC-BY-4.0 in 74 JSONL shards totaling roughly 15 gigabytes.",
-      "zh": "研究者发布 Scaffold CoT 数据集，约 400 万条示例、30 亿 token，专为帮助 50 亿参数以下小模型更简洁可靠地推理而设计。每个示例遵循 Inventory、Interaction、Execution 三段式脚手架且长度受限，可用正则表达式校验训练输出。覆盖 18 个领域、798 个子领域，含 27.9 万条工具调用示例，其中 8.7 万条由实际运行工具生成。已在 Hugging Face 以 CC-BY-4.0 许可发布，共 74 个 JSONL 分片、约 15 GB。",
-      "title_en": "Scaffold CoT dataset targets structured reasoning failures in small models",
-      "title_zh": "Scaffold CoT 数据集针对小模型结构化推理失效问题"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vymha8/open_source_kernel_in_qwen3635ba3b_for_amd_mi350x/": {
+      "en": "Netra Runtime open-sourced kernels that push Qwen 3.6 35B A3B on eight AMD MI350X GPUs to roughly 78,499 output tokens per second average and 81,331 peak, about 2.16 times vLLM's throughput on the same hardware. A single MI350X hits about 11,161 output tokens per second. The team argues AMD's raw compute exceeds Nvidia B200 while ROCm software has lagged, so they optimized down to the kernel level. Remaining bottlenecks moved to scheduling, graph coverage, routing, and HTTP serialization.",
+      "zh": "Netra Runtime开源了在AMD MI350X上运行Qwen3.6-35B-A3B的推理kernel，单卡达每秒11161输出token，8卡峰值81331、平均约78499输出token每秒，比同硬件vLLM快约2.16倍。团队指出MI350X原始算力超越Nvidia B200，但ROCm软件栈滞后，因此下探到kernel层优化。剩余瓶颈已转移到调度、图覆盖、路由与HTTP序列化。",
+      "title_en": "Open-source kernels drive Qwen 3.6 35B on eight AMD MI350X GPUs to about 78 thousand output tokens per second",
+      "title_zh": "开源推理 kernel 让 Qwen 3.6 35B 在 8 张 AMD MI350X 上达到约每秒 78000 输出 token"
     }
   }
 }

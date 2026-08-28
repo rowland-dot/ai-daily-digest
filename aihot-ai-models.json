@@ -4,21 +4,57 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmtaj3732034urovudls0byfe",
-      "title": "GlucoFM：面向连续血糖监测的基础模型",
-      "title_en": "GlucoFM： Foundation model for continuous glucose monitoring",
-      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring",
-      "permalink": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-08-26T20:10:19.416Z",
-      "discoveredAt": "2026-08-26T20:10:19.416Z",
-      "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109，066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
+      "id": "cmtc61ej101lqrojqto587wu9",
+      "title": "Midjourney 开放 V8.2 图像编辑模型测试",
+      "title_en": "Edit Model for V8",
+      "url": "https://updates.midjourney.com/edit-model-for-v8",
+      "permalink": "https://aihot.virxact.com/items/cmtc61ej101lqrojqto587wu9",
+      "source": "Midjourney：Updates（RSS）",
+      "publishedAt": "2026-08-27T23:32:15.000Z",
+      "discoveredAt": "2026-08-27T23:40:33.688Z",
+      "summary": "Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用 4 张参考图）、局部重绘与扩画，并兼容个性化、moodboards 和 srefs 功能。用户可通过网页端或 Discord 的 `--edit` 命令使用，官方同步更新了 midjourney.com 与 alpha.midjourney.com 的界面。",
       "category": "ai-models",
-      "score": 63,
+      "score": 64,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe"
+        "canonical": "https://aihot.virxact.com/items/cmtc61ej101lqrojqto587wu9"
+      }
+    },
+    {
+      "id": "cmtbq1hfq156croamzzo9gno2",
+      "title": "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
+      "title_en": "Gemini Omni 1.1 Flash lets you build with more control",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+      "permalink": "https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-08-27T16:11:32.000Z",
+      "discoveredAt": "2026-08-27T16:12:39.710Z",
+      "summary": "Google 推出 Gemini Omni 1.1 Flash，为开发者提供更强的生成式视频控制能力。新模型支持场景扩展（可分析最多 10 秒先前上下文，以 10 秒为增量累计延长至 40 秒）、指定首尾帧生成平滑过渡，以及 4K 高清输出。",
+      "category": "ai-models",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2"
+      }
+    },
+    {
+      "id": "cmtb43lik0i9sroamwtuxb1bu",
+      "title": "唐杰宣布GLM-5.3 Flash AA登顶OpenRouter",
+      "title_en": "Ox Alpha = GLM-5.3 Flash AA = 57 ， 1/100 frontier price， Powered by pure Chinese chips. Delivered…",
+      "url": "https://x.com/jietang/status/2092850258573471936",
+      "permalink": "https://aihot.virxact.com/items/cmtb43lik0i9sroamwtuxb1bu",
+      "source": "X：唐杰（@jietang）",
+      "publishedAt": "2026-08-27T05:42:39.000Z",
+      "discoveredAt": "2026-08-27T05:58:28.764Z",
+      "summary": "Ox Alpha = GLM-5.3 Flash AA = 57，以1/100的前沿价格，\n\n由纯国产芯片驱动。在OpenRouter上实现了近20%的周token份额（第一）。\n\n感谢大家的支持。",
+      "category": "ai-models",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtb43lik0i9sroamwtuxb1bu"
       }
     },
     {
@@ -58,21 +94,21 @@
       }
     },
     {
-      "id": "cmta7bh1k04u6roj2e4pt7bob",
-      "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+      "id": "cmtb6o47l0mmaroamhnqtifvv",
+      "title": "GLM-5.3-Flash：前沿智能进入普惠时代",
       "title_en": "GLM-5.3-Flash：前沿智能进入普惠时代",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
-      "permalink": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
-      "source": "公众号：智谱（GLM）",
-      "publishedAt": "2026-08-26T14:11:33.000Z",
-      "discoveredAt": "2026-08-26T14:40:51.055Z",
-      "summary": "Zhipu上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
+      "url": "https://www.zhipuai.cn/zh/research/163",
+      "permalink": "https://aihot.virxact.com/items/cmtb6o47l0mmaroamhnqtifvv",
+      "source": "智谱：研究（网页内嵌数据）",
+      "publishedAt": "2026-08-26T14:00:00.000Z",
+      "discoveredAt": "2026-08-27T07:10:28.200Z",
+      "summary": "Zhipu上线并开源GLM-5.3-Flash（320B-A18B），这是GLM-5系列首个原生多模态模型，在AA综合智能指数取得57分，与Claude Opus 4.8持平。其定价为GLM-5.3的1/10（限时1/20），为Opus 4.8的1/40，并首次在大规模流量中由国产芯片集群提供算力支持。模型已接入ZCode等平台，同步开放API调用。",
       "category": "ai-models",
-      "score": 83,
+      "score": 74,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob"
+        "canonical": "https://aihot.virxact.com/items/cmtb6o47l0mmaroamhnqtifvv"
       }
     },
     {
@@ -109,6 +145,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmta7honk0553roj21gque0zw"
+      }
+    },
+    {
+      "id": "cmtaj3732034urovudls0byfe",
+      "title": "GlucoFM：面向连续血糖监测的基础模型",
+      "title_en": "GlucoFM： Foundation model for continuous glucose monitoring",
+      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring",
+      "permalink": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-08-25T16:00:00.000Z",
+      "discoveredAt": "2026-08-26T20:10:19.416Z",
+      "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109，066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
+      "category": "ai-models",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe"
       }
     },
     {
@@ -199,60 +253,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmta7g6l70515roj25ljc0cqj"
-      }
-    },
-    {
-      "id": "cmt1rv5n8066iroovaxgoej1b",
-      "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
-      "title_en": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "permalink": "https://aihot.virxact.com/items/cmt1rv5n8066iroovaxgoej1b",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-08-20T16:52:57.000Z",
-      "discoveredAt": "2026-08-20T17:06:06.252Z",
-      "summary": "Hugging Face 发布 LFM2.5 系列三款模型的 DSpark 草稿模型检查点，通过投机解码在不改变输出质量的前提下，GPU 吞吐最高提升 3.18 倍，端侧最高 2.87 倍。草稿模型约 300M 参数，LFM2.5-2.6B 函数调用延迟平均降低 57%，已开源支持 llama.cpp 和 SGLang。",
-      "category": "ai-models",
-      "score": 61,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt1rv5n8066iroovaxgoej1b"
-      }
-    },
-    {
-      "id": "cmt1di48c04vuro1q95i06dby",
-      "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/992/239.htm",
-      "permalink": "https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-20T09:45:51.000Z",
-      "discoveredAt": "2026-08-20T10:24:01.577Z",
-      "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby"
-      }
-    },
-    {
-      "id": "cmta7hu4g055groj2fuv1x60n",
-      "title": "Ling-3.0 tiny & flash Base Models 正式开源",
-      "title_en": null,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&mid=2247487554&idx=1&sn=269b771030c16cebeba57eac4d2a1184",
-      "permalink": "https://aihot.virxact.com/items/cmta7hu4g055groj2fuv1x60n",
-      "source": "公众号：蚂蚁百灵（Ling）",
-      "publishedAt": "2026-08-20T02:00:00.000Z",
-      "discoveredAt": "2026-08-20T02:00:00.000Z",
-      "summary": "蚂蚁百灵开源 Ling-3.0-tiny-base 与 Ling-3.0-flash-base，并同步开放预训练、中期训练及 WSM 合并等共 6 个 checkpoints。tiny-base 总参数 7.9B、激活参数 1.3B，flash-base 总参数 124B、激活参数 5.1B，均采用统一训练方案，适合持续预训练、监督微调、偏好优化及强化学习后训练等场景。",
-      "category": "ai-models",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta7hu4g055groj2fuv1x60n"
       }
     }
   ]

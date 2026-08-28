@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-08-26T23:59:11.226Z",
+  "fetched_at": "2026-08-28T04:26:00.403Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "link": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+      "updated": "2026-08-27T22:50:25+00:00",
+      "summary": "Breaking Claude Code Opus 5 Auto Mode"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next",
+      "link": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+      "updated": "2026-08-26T23:52:58+00:00",
+      "summary": "Qwen3.8-Flash-Next"
+    },
     {
       "title": "Quoting Paul Dix",
       "link": "https://simonwillison.net/2026/Aug/26/paul-dix/",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/21/llm/",
       "updated": "2026-08-21T17:16:13+00:00",
       "summary": "Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx , and it turned out LLM depended on that library but only installed it via a transitive openai dependency."
-    },
-    {
-      "title": "llm-openrouter 0.7",
-      "link": "https://simonwillison.net/2026/Aug/21/llm-openrouter/",
-      "updated": "2026-08-21T16:58:19+00:00",
-      "summary": "Now that this plugin is compatible with LLM 0.32 it can display the reasoning traces for LLMs available through OpenRouter."
-    },
-    {
-      "title": "Stop Making TUIs",
-      "link": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
-      "updated": "2026-08-21T16:07:32+00:00",
-      "summary": "Stop Making TUIs"
     }
   ]
 }
