@@ -1,50 +1,43 @@
 {
-  "generated_at": "2026-08-27T00:04:22Z",
+  "generated_at": "2026-08-28T04:36:37Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vyq2v4/megathread_qwen38flashnext_release_day/": {
-      "en": "Qwen's first open-weight release of the new architecture pairs Gated DeltaNet with Qwen Sparse Attention, selecting micro-blocks rather than individual tokens to cut long-context latency for agentic workloads. Gated Residual streams and n-gram embeddings improve parameter scaling and let memory offload to system RAM instead of accelerators. The 125 billion parameter model activates about 6 billion parameters per token and ships with a vision encoder, promising cheaper long-context inference than Mixture of Experts alone.",
-      "zh": "Qwen3.8-Flash-Next是新架构的首个开源权重发布，将Gated DeltaNet与Qwen Sparse Attention配对，在微块粒度而非单token上选取，大幅降低长文本延迟，适合Agent工作流。配合Gated Residual残差和N-gram嵌入表提升参数扩展效率，权重可卸载到系统内存。总参数1250亿、激活约60亿，附带视觉编码器，比传统混合专家模型更省成本。",
-      "title_en": "Qwen 3.8 Flash Next release introduces Qwen Sparse Attention and n-gram embeddings",
-      "title_zh": "Qwen 3.8 Flash Next 发布，引入 Qwen Sparse Attention 和 N-gram 嵌入表"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w01y1f/with_huggingface_nvidia_is_also_acquiring/": {
+      "en": "After Nvidia's HuggingFace acquisition, the community speculates it also effectively pulls llama.cpp and its maintainers under Nvidia. The llama.cpp team was hired by HuggingFace in February 2026 and includes Georgi Gerganov, Xuan-Son Nguyen, Aleksander Grygier, Victor Mustar, Lysandre, and Julien Chaumond. The author worries Nvidia's weak open-source track record could shift the project license or redirect the team, though the concerns remain speculative for now.",
+      "zh": "Nvidia 收购 HuggingFace 也间接把 llama.cpp 项目及其核心团队（Georgi Gerganov、Xuan-Son Nguyen 等六人，于 2026 年 2 月被 HF 聘用）纳入其麾下。作者担心 Nvidia 在开源上的记录不佳，可能导致项目许可证变更或团队被重新调配，但目前仍属推测。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vyzzxu/megathread_glm53flash_former_oxalpha/": {
-      "en": "Z.ai released GLM 5.3 Flash, the first natively multimodal open-weight model in the GLM 5 series, aiming to match Claude Opus 4.8 on coding and agent benchmarks at one-tenth GLM 5.2's serving cost. It runs 45 layers of hybrid sparse and linear attention with manifold-constrained hyper-connections, Mixture of Experts routing over 320 billion parameters with 18 billion activated, and a 24-layer vision transformer trained on 30 trillion multimodal tokens. Weights ship in FP8 with a BF16 mirror.",
-      "zh": "Z.ai发布GLM-5.3-Flash，是GLM-5系列首个原生多模态开源模型，声称以GLM-5.2十分之一的服务成本逼近Claude Opus 4.8的编码和Agent水平。含45层混合稀疏与线性注意力，采用流形约束超连接和混合专家路由，总参数3200亿、激活180亿，配24层视觉Transformer，训练用30万亿多模态token。主权重为FP8，另有BF16版本。",
-      "title_en": "GLM 5.3 Flash launches as the first natively multimodal open-weight GLM 5 model",
-      "title_zh": "GLM 5.3 Flash 发布，成为 GLM 5 系列首个原生多模态开源模型"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w0198r/no_engrams_wont_let_you_run_1t_models_locally_it/": {
+      "en": "The author debunks the claim that Engrams let a one trillion parameter model run locally by offloading 980 billion weights to solid state disk. Engrams are simply N-gram-keyed embedding tables: hash the last two or three tokens, fetch a memorised vector, no floating-point compute. The real payoff is replacing wasted early-layer work that reconstructs entity spellings, freeing active parameters for reasoning, so smaller local models can behave more like far larger ones.",
+      "zh": "作者澄清 Engrams 并不能让一万亿参数模型通过将 980B 参数卸载到固态硬盘在本地运行。Engram 本质是带更长键的嵌入表，用最后两到三个 token 的 N-gram 做哈希查询，直接取出预存向量输入网络，零浮点运算。真正的价值在于替代 transformer 早期层重构实体拼写等静态信息的浪费工作，释放活跃参数用于推理，让小型本地模型更接近大模型表现。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vyie86/fully_quantized_nvfp4_qwen3827b_with_quasar_qad/": {
-      "en": "The QUASAR team open-sourced a fully NVFP4-quantized Qwen 3.8 27B checkpoint trained with their new quantization-aware distillation algorithm, using the original BF16 model as teacher across 2,446 distillation steps. Every linear layer sits at 4-bit weights and 4-bit activations, unusually including attention and Gated DeltaNet layers that most quantization recipes keep at higher precision. Evaluations on GPQA-Diamond and AIME26 hold near BF16 quality while shrinking storage from about 55 to 20 gigabytes, beating existing NVFP4 releases.",
-      "zh": "QUASAR团队开源了完全NVFP4量化的Qwen3.8-27B检查点，采用其新的量化感知蒸馏算法，以原始BF16为教师蒸馏2446步。所有线性层，包括通常保持较高精度的注意力和Gated DeltaNet层，都采用4比特权重和4比特激活。在GPQA-Diamond和AIME26上接近BF16原始水平，体积从约55GB降至约20GB，优于现有NVFP4版本。",
-      "title_en": "QUASAR ships a fully NVFP4-quantized Qwen 3.8 27B with quantization-aware distillation",
-      "title_zh": "QUASAR 用量化感知蒸馏发布完全 NVFP4 量化的 Qwen 3.8 27B"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vzspz6/qwen38flashnext_time_to_update_those_benchmarks/": {
+      "en": "A hands-on benchmark of Qwen 3.8 Flash Next on an M4 Max 128 gigabyte Mac Studio using oMLX and llama.cpp. The four bit quant plus N-gram tables consume about 100 gigabytes, and K/V caching had to be disabled since the qwen4 experimental architecture is not yet supported. It is still the first model this year to break 94 percent on the author's cupel benchmark, topping Qwen 3.8 27B on coding while losing general knowledge to Gemma 31B.",
+      "zh": "作者在 M4 Max 128GB Mac Studio 上用 oMLX 与 llama.cpp 实测 Qwen 3.8 Flash Next。4bit 量化加 N-gram 表约占 100GB，因 qwen4 实验架构尚未支持，需关闭 K/V 缓存。尽管如此，这是今年第一个在其 cupel 基准上突破 94% 的模型，在编码任务上超过 Qwen 3.8 27B，但通用知识不及 Gemma 31B 与 Qwen 3.6。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vyw1wo/forget_the_pelican_its_weeviltime/": {
-      "en": "A user proposed a benchmark-resistant vision test for Qwen 3.8 27B: prompt the model to recreate an arbitrary photograph as scalable vector graphics. Redrawing unseen images resists targeted training more than the well-known pelican benchmark. Best output came at image-min-tokens 1024, extra-high reasoning, temperature 1.0, and BF16 key-value caches at Q3 and Q4 quants. Dropping the key-value cache to Q4_0 destroyed image quality with distorted anatomy, while Q8_0 caches still held up.",
-      "zh": "有用户为Qwen3.8-27B设计了一个抗刷分的视觉基准：让模型把任意照片重画为可缩放矢量图。比起已知的Pelican测试，任意照片更难被针对性训练。最佳设置为image-min-tokens 1024、xhigh推理、温度1.0，配BF16键值缓存的Q3和Q4量化。将KV缓存降到Q4_0会毁掉画面出现畸形肢体，Q8_0仍可用。",
-      "title_en": "A benchmark-resistant vision test asks Qwen 3.8 27B to redraw photos as scalable vector graphics",
-      "title_zh": "抗刷分视觉基准让 Qwen 3.8 27B 把照片重画为可缩放矢量图"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w0ao39/i_implemented_a_modern_llm_in_700_lines_of_c/": {
+      "en": "gemma4.c is a single 700-line C file that runs Google's Gemma 4 E2B open model on an ordinary CPU. The runtime handles the tokenizer, transformer, KV cache, sampling, and CPU kernels itself with no external inference framework. Using int8 weights, OpenMP, AVX2, and AVX-512 VNNI, it reaches about 639 tokens per second on a 512 token prefill and 25.9 tokens per second during generation on a Ryzen 7 7700, beating llama.cpp.",
+      "zh": "gemma4.c 是一个 700 行的 C 单文件项目，可在普通 CPU 上运行 Google 最新开源模型 Gemma 4 E2B。运行时自带分词器、transformer、KV 缓存、采样与 CPU 内核，不依赖任何推理框架。使用 int8 权重、OpenMP、AVX2 和 AVX-512 VNNI 后，在 Ryzen 7 7700 上 512 token 预填速度约每秒 639 token，生成速度约每秒 25.9 token，超过 llama.cpp。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vyn07o/underrated_muse_glimmer/": {
-      "en": "A benchmark comparison found Muse Glimmer competitive with Qwen 3.8 on implicit-knowledge tasks despite finishing in three to four hours versus roughly thirty for Qwen 3.8's extra-high reasoning mode, which also failed sixteen cases due to a 32,000 output-token limit. Muse Glimmer's sliding-window attention makes its key-value cache far more efficient, buying larger effective context. The author calls the model underrated and expects retrieval augmentation to further close any remaining gap with frontier systems."
-      ,
-      "zh": "用户对比了Qwen 3.8的xhigh、medium模式与Muse Glimmer在隐性知识任务上的表现。Muse Glimmer仅用3到4小时完成，Qwen 3.8 xhigh耗时近30小时，还因32K输出上限失败16个用例。Muse Glimmer的滑动窗口注意力让键值缓存更高效，可获得更大有效上下文，作者认为它被低估，配合RAG有望比肩前沿模型。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w04a5j/over_200k_context_on_16gb_vram_with_qwen_38_27b/": {
+      "en": "The author ran Qwen 3.8 27B with the Unsloth Dynamic IQ3 XXS quant on a 16 gigabyte external laptop GPU and cleared over 200,000 tokens of context. They previously used the larger Q3 K XL quant at 140,000 context with few bad tool calls; switching to IQ3 XXS dropped prompt processing from 700-800 to about 400 tokens per second. The K/V cache was quantized to q5_1 and llama.cpp was compiled with all quant flash attention enabled.",
+      "zh": "作者在 16GB 显存的笔记本外接 GPU 上用 Unsloth Dynamic IQ3 XXS 量化运行 Qwen 3.8 27B，突破 20 万 token 上下文。此前使用更大的 UD-Q3_K_XL 量化在 14 万上下文下工具调用错误较少。切换到 IQ3 XXS 后提示处理速度从每秒 700-800 token 降至约 400，K/V 缓存量化为 q5_1，llama.cpp 编译时启用了全量化 flash attention。",
+      "title_en": "Running Qwen 3.8 27B with over 200,000 tokens of context on 16 gigabyte VRAM using an Unsloth Dynamic IQ3 XXS quant",
+      "title_zh": "在 16GB 显存上用 Unsloth Dynamic IQ3 XXS 量化运行 Qwen 3.8 27B，达 20 万以上 token 上下文"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vyz13i/hf_exploring_sale_impact_on_open_models/": {
-      "en": "A community discussion notes Hugging Face is exploring a sale of the business at a valuation around 13 billion dollars. The concern raised is that Hugging Face uniquely combines model weights, datasets, and Spaces at scale, with Kaggle and academic repos lacking the same reach and ease of use. Members ask whether new owners focused on profitability could shift platform policies in ways that constrain open weights or restrict how the community publishes and shares open models.",
-      "zh": "社区讨论Hugging Face正在探索出售业务，估值约130亿美元。担忧在于Hugging Face独家整合了模型权重、数据集和Spaces，Kaggle和学术库在覆盖度和易用性上都难以替代。成员疑虑第三方投资、追求盈利后是否会调整平台政策，影响开源权重发布或社区共享的方式。",
-      "title_en": "Hugging Face exploring a 13 billion dollar sale, community weighs impact on open models",
-      "title_zh": "Hugging Face 探索约 130 亿美元出售，社区权衡对开源模型的影响"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vzw8td/microduck_by_pollen_robotics_hugging_face/": {
+      "en": "Pollen Robotics and Hugging Face announced Microduck, an open-source bipedal robot that ships with reinforcement learning software. The hardware includes a speaker, camera, LiDAR, near field communication, Wi-Fi, Bluetooth, and roller skates that let it waddle. The poster links the official announcement on the Pollen Robotics site and comments mostly on the design, calling out how adorable the robot looks as it moves.",
+      "zh": "Pollen Robotics 与 Hugging Face 联合发布 Microduck，一款开源双足机器人，配套强化学习软件。硬件包括扬声器、摄像头、LiDAR、NFC、Wi-Fi、蓝牙，以及能让它摇摇晃晃前进的滑轮。发帖者附上了 Pollen Robotics 官网的完整公告，主要从外观角度赞叹这款机器人萌态可掬。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vz7095/lemonade_endofsummer_project_update_now_serving/": {
-      "en": "The Lemonade project shared a summer update on its open-source local-AI runtime, which installs across operating systems as a single service and manages many models and engines behind one base URL, with an embeddable SDK. This summer added CUDA, ARM64, Metal, and Vulkan backends plus experimental engines for music and 3D assets. The router now supports semantic and policy routing that picks a large language model on the fly. A new GUI, benchmarking tools, and a plugin interface are next.",
-      "zh": "Lemonade项目发布暑期更新：这套开源本地AI运行时可一次安装跨操作系统作为服务运行，用统一base URL管理多种模型和引擎，并提供可嵌入SDK。这个夏天新增CUDA、ARM64、Metal和Vulkan后端，以及音乐、3D资产等实验性引擎。路由器新增语义和策略路由，可依提示动态选大模型。下阶段将推出新GUI、基准测试工具和插件接口。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1vzxv7u/i_used_local_qwen_27b_to_build_a_harness_and/": {
+      "en": "The author released warpdrv, an open-source coding harness for local large language models built with Qwen 3.x 27B for over 90 percent of the code under human supervision. It runs on Windows and Linux, is AGPL licensed, and carries no telemetry. Features include just-in-time guardrail review before tool calls, nested three-way sub-agent chats, voice dictation with text to speech, work modes for planning or building, and custom compilation of llama.cpp backends across CUDA, ROCm and Vulkan.",
+      "zh": "作者发布开源本地大模型编码 harness warpdrv，超 90% 代码由 Qwen 3.x 27B 在其监督下生成，支持 Windows 与 Linux，AGPL 协议，无遥测。功能包括工具调用前的即时护栏审查、用户与代理三方嵌套子代理对话、语音口述与语音合成、可切换的工作模式，以及针对 CUDA、ROCm 和 Vulkan 自定义编译 llama.cpp 后端。",
+      "title_en": "Building an open-source local large language model coding harness with Qwen 3.x 27B to replace OpenCode",
+      "title_zh": "用本地 Qwen 3.x 27B 打造开源编码 harness 以替代 OpenCode"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1vymha8/open_source_kernel_in_qwen3635ba3b_for_amd_mi350x/": {
-      "en": "Netra Runtime open-sourced kernels that push Qwen 3.6 35B A3B on eight AMD MI350X GPUs to roughly 78,499 output tokens per second average and 81,331 peak, about 2.16 times vLLM's throughput on the same hardware. A single MI350X hits about 11,161 output tokens per second. The team argues AMD's raw compute exceeds Nvidia B200 while ROCm software has lagged, so they optimized down to the kernel level. Remaining bottlenecks moved to scheduling, graph coverage, routing, and HTTP serialization.",
-      "zh": "Netra Runtime开源了在AMD MI350X上运行Qwen3.6-35B-A3B的推理kernel，单卡达每秒11161输出token，8卡峰值81331、平均约78499输出token每秒，比同硬件vLLM快约2.16倍。团队指出MI350X原始算力超越Nvidia B200，但ROCm软件栈滞后，因此下探到kernel层优化。剩余瓶颈已转移到调度、图覆盖、路由与HTTP序列化。",
-      "title_en": "Open-source kernels drive Qwen 3.6 35B on eight AMD MI350X GPUs to about 78 thousand output tokens per second",
-      "title_zh": "开源推理 kernel 让 Qwen 3.6 35B 在 8 张 AMD MI350X 上达到约每秒 78000 输出 token"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w013g8/audiocpp_release_07_62_audio_model_families_85/": {
+      "en": "audio.cpp 0.7 now covers 62 audio model families with over 85 variants and adds an Arena UI that queues multiple local models or GGUF variants on one shared input for side by side comparison. New additions span text to speech, speech understanding, voice conversion, and music generation, including FireRedTTS3, PersonaPlex, IBM Granite Speech 5.0, MiniMax Music 3, and ControlFoley. Prebuilts now cover Windows, Ubuntu, and macOS, and 40 of 40 model families run on Nvidia Jetson Orin NX 16 gigabyte.",
+      "zh": "audio.cpp 0.7 支持 62 个音频模型家族与 85 个以上变体，新增 Arena UI 可对同一输入并排比较多个本地模型输出。新增涵盖语音合成、语音理解与音乐生成，含 FireRedTTS3、IBM Granite Speech 5.0、MiniMax Music 3、ControlFoley 等。预编译覆盖 Windows、Ubuntu 与 macOS。",
+      "title_en": "audio.cpp 0.7 released with 62 audio model families, an Arena UI for local model comparison, and new models including MiniMax Music 3, FireRedTTS3 and ControlFoley",
+      "title_zh": "audio.cpp 0.7 发布，涵盖 62 个音频模型家族，新增 Arena UI 支持本地模型并排对比，加入 MiniMax Music 3、FireRedTTS3 等新模型"
     }
   }
 }
