@@ -1,8 +1,44 @@
 {
-  "count": 14,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtd32q060c3vroq546ccqp7r",
+      "title": "GLM-5.3 开源权重，智能体编码与网防最强",
+      "title_en": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
+      "url": "https://x.com/Zai_org/status/2093354097122455713",
+      "permalink": "https://aihot.virxact.com/items/cmtd32q060c3vroq546ccqp7r",
+      "source": "X：智谱 Z.ai (@Zai_org)",
+      "publishedAt": "2026-08-28T15:04:44.000Z",
+      "discoveredAt": "2026-08-28T15:05:19.390Z",
+      "summary": "GLM-5.3 现已开放权重。\n\n我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。\n\n权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
+      "category": "ai-models",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtd32q060c3vroq546ccqp7r"
+      }
+    },
+    {
+      "id": "cmtcjzlxy03f8rodbxqdotbhg",
+      "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
+      "title_en": "Hy4 preview 发布",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
+      "permalink": "https://aihot.virxact.com/items/cmtcjzlxy03f8rodbxqdotbhg",
+      "source": "公众号：腾讯混元",
+      "publishedAt": "2026-08-28T06:03:48.000Z",
+      "discoveredAt": "2026-08-28T06:11:04.903Z",
+      "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
+      "category": "ai-models",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtcjzlxy03f8rodbxqdotbhg"
+      }
+    },
     {
       "id": "cmtc61ej101lqrojqto587wu9",
       "title": "Midjourney 开放 V8.2 图像编辑模型测试",
@@ -199,60 +235,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44"
-      }
-    },
-    {
-      "id": "cmt2yscvm0ca8ro6t0u6vtfnt",
-      "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
-      "title_en": "🧮 Introducing MathForm， an open-source framework， dataset， and model for mathematical autoformaliza…",
-      "url": "https://x.com/OpenBMB/status/2090786300194590816",
-      "permalink": "https://aihot.virxact.com/items/cmt2yscvm0ca8ro6t0u6vtfnt",
-      "source": "X：面壁智能 OpenBMB (@OpenBMB)",
-      "publishedAt": "2026-08-21T13:01:13.000Z",
-      "discoveredAt": "2026-08-21T13:07:37.079Z",
-      "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
-      "category": "ai-models",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt2yscvm0ca8ro6t0u6vtfnt"
-      }
-    },
-    {
-      "id": "cmt2qvfnj03zxro6tehwcikx4",
-      "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
-      "title_en": null,
-      "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
-      "permalink": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4",
-      "source": "DeepSeek：API 更新日志",
-      "publishedAt": "2026-08-21T09:26:04.727Z",
-      "discoveredAt": "2026-08-21T09:26:04.727Z",
-      "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
-      "category": "ai-models",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4"
-      }
-    },
-    {
-      "id": "cmta7g6l70515roj25ljc0cqj",
-      "title": "DeepSeek 上线多模态视觉理解模型 V4-Flash-Vision-Exp",
-      "title_en": "V4-Flash-Vision-Exp 上线，开启多模态 API 服务",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485794&idx=1&sn=5332df30422e6637142321315b42ac26",
-      "permalink": "https://aihot.virxact.com/items/cmta7g6l70515roj25ljc0cqj",
-      "source": "公众号：DeepSeek（深度求索）",
-      "publishedAt": "2026-08-21T09:12:16.000Z",
-      "discoveredAt": "2026-08-21T09:12:16.000Z",
-      "summary": "DeepSeek 上线多模态视觉理解模型 V4-Flash-Vision-Exp，纯文本能力与 V4-Flash 正式版持平，多模态 Agent 能力接近 Opus-4.8。该模型通过 API 提供，图片按 token 计费，一张最多占 384 tokens，价格与 V4-Flash 一致。同期上线的 Files API 免费，支持图片上传后通过 file_id 复用。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta7g6l70515roj25ljc0cqj"
       }
     }
   ]

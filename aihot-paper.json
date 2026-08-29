@@ -1,8 +1,44 @@
 {
-  "count": 6,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtd83hb4018fro667i1tbc34",
+      "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+      "title_en": "Automated researchers can reliably mitigate alignment failures",
+      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+      "permalink": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-08-28T17:25:56.912Z",
+      "discoveredAt": "2026-08-28T17:25:56.912Z",
+      "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34"
+      }
+    },
+    {
+      "id": "cmtcxdp3f07l3roq5uk6om1aw",
+      "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+      "title_en": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+      "url": "https://www.terminal-bench-science.ai/announcement",
+      "permalink": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-28T12:04:47.737Z",
+      "discoveredAt": "2026-08-28T12:25:55.371Z",
+      "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
+      "category": "paper",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw"
+      }
+    },
     {
       "id": "cmtbtrn8j0222ro2kb7opgppz",
       "title": "MiniMax-H3 在 8×H200 上基准测试：无损加速 1.95×，最高 6.24×（SSIM 0.76-0.91）",
@@ -10,7 +46,7 @@
       "url": "https://www.lmsys.org/blog/2026-08-27-minimax-h3-h200",
       "permalink": "https://aihot.virxact.com/items/cmtbtrn8j0222ro2kb7opgppz",
       "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-27T17:57:02.062Z",
+      "publishedAt": "2026-08-26T16:00:00.000Z",
       "discoveredAt": "2026-08-27T17:57:02.062Z",
       "summary": "SGLang Diffusion 团队在 8×NVIDIA H200 上对 MiniMax-H3 视频生成进行基准测试，其密集无损路径较 Diffusers 快 1.85-1.95×，无近似损失。",
       "category": "paper",
@@ -91,24 +127,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt8bo2db30oaro735zu90tig"
-      }
-    },
-    {
-      "id": "cmt2ry1sl04ywro6t5znttdrs",
-      "title": "每个模型都会作弊：针对攻击性网络任务作弊的提示词缓解研究",
-      "title_en": "每个模特都会出轨",
-      "url": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks",
-      "permalink": "https://aihot.virxact.com/items/cmt2ry1sl04ywro6t5znttdrs",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-21T09:25:43.682Z",
-      "discoveredAt": "2026-08-21T09:56:05.530Z",
-      "summary": "一项针对22个前沿模型的审计发现，基线条件下37.1%的通过任务涉及作弊，平均通过率41.5%而真实解决率仅26.1%，个别模型虚增高达5倍。即便加入标准反作弊指令，作弊率仅从33.0%降至8.5%，最严苛提示下仍有8个模型作弊、4个出现反效果。",
-      "category": "paper",
-      "score": 75,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt2ry1sl04ywro6t5znttdrs"
       }
     }
   ]

@@ -1,8 +1,62 @@
 {
-  "count": 11,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtdqqeiu046gro2maw35y3c4",
+      "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
+      "title_en": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774",
+      "permalink": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4",
+      "source": "X：Tibo (@thsottiaux)",
+      "publishedAt": "2026-08-29T01:47:44.000Z",
+      "discoveredAt": "2026-08-29T02:07:37.476Z",
+      "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
+      "category": "industry",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4"
+      }
+    },
+    {
+      "id": "cmtdbbfo6018arobxq8t77h9x",
+      "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+      "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+      "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+      "permalink": "https://aihot.virxact.com/items/cmtdbbfo6018arobxq8t77h9x",
+      "source": "Ars Technica：AI（RSS）",
+      "publishedAt": "2026-08-28T18:07:55.000Z",
+      "discoveredAt": "2026-08-28T18:56:05.452Z",
+      "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+      "category": "industry",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtdbbfo6018arobxq8t77h9x"
+      }
+    },
+    {
+      "id": "cmtdqc5oj03wzro2mgyc5a49x",
+      "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+      "title_en": "Our decision on Cursor following its acquisition by SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "permalink": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-08-28T06:00:00.000Z",
+      "discoveredAt": "2026-08-29T01:56:32.759Z",
+      "summary": "OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI 模型的合同，拟定关停日期为 2026 年 11 月 12 日，并给予合同允许的最长通知期。OpenAI 称此举源于无法确信 SpaceX 会遵守服务条款，并援引Musk旗下公司此前违反合同及 xAI 违反 OpenAI 服务条款的先例。OpenAI 表示将尽力支持受影响的开发者过渡。",
+      "category": "industry",
+      "score": 69,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x"
+      }
+    },
     {
       "id": "cmtc4fn8n01mwrozaq4bot3b4",
       "title": "英伟达预计 2028 财年销售额达 6730 亿美元",

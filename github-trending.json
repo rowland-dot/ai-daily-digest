@@ -1,39 +1,6 @@
 {
-  "fetched_at": "2026-08-28T04:25:59.326Z",
+  "fetched_at": "2026-08-29T02:53:12.879Z",
   "repos": [
-    {
-      "owner": "bilawalsidhu",
-      "name": "gods-eye-view",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view",
-      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 8648,
-      "forks": 1889,
-      "starsToday": 1984
-    },
-    {
-      "owner": "zedeus",
-      "name": "nitter",
-      "url": "https://github.com/zedeus/nitter",
-      "description": "Alternative Twitter front-end",
-      "language": "Nim",
-      "languageColor": "#ffc200",
-      "stars": 13937,
-      "forks": 1148,
-      "starsToday": 71
-    },
-    {
-      "owner": "freestylefly",
-      "name": "awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "stars": 23338,
-      "forks": 2313,
-      "starsToday": 2096
-    },
     {
       "owner": "tt-a1i",
       "name": "archify",
@@ -41,31 +8,9 @@
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 24102,
-      "forks": 1549,
-      "starsToday": 4239
-    },
-    {
-      "owner": "JetBrains",
-      "name": "go-modern-guidelines",
-      "url": "https://github.com/JetBrains/go-modern-guidelines",
-      "description": "Help AI coding agents write modern Go",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "stars": 2229,
-      "forks": 69,
-      "starsToday": 300
-    },
-    {
-      "owner": "anthropics",
-      "name": "claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 34740,
-      "forks": 3915,
-      "starsToday": 292
+      "stars": 27753,
+      "forks": 1757,
+      "starsToday": 4562
     },
     {
       "owner": "K-Dense-AI",
@@ -74,20 +19,53 @@
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 35438,
-      "forks": 3408,
-      "starsToday": 498
+      "stars": 36715,
+      "forks": 3490,
+      "starsToday": 720
     },
     {
-      "owner": "DietrichGebert",
-      "name": "ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 35062,
+      "forks": 3937,
+      "starsToday": 457
+    },
+    {
+      "owner": "bilawalsidhu",
+      "name": "gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 114281,
-      "forks": 6245,
-      "starsToday": 1613
+      "stars": 11187,
+      "forks": 2268,
+      "starsToday": 3829
+    },
+    {
+      "owner": "abhigyanpatwari",
+      "name": "GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 46176,
+      "forks": 5103,
+      "starsToday": 202
+    },
+    {
+      "owner": "JetBrains",
+      "name": "go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "description": "Help AI coding agents write modern Go",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 2622,
+      "forks": 79,
+      "starsToday": 574
     },
     {
       "owner": "calesthio",
@@ -96,64 +74,75 @@
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 52554,
-      "forks": 6574,
-      "starsToday": 1292
+      "stars": 53374,
+      "forks": 6654,
+      "starsToday": 1144
     },
     {
-      "owner": "rohitg00",
-      "name": "ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
+      "owner": "abi",
+      "name": "screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 50263,
-      "forks": 8737,
-      "starsToday": 552
+      "stars": 75606,
+      "forks": 9223,
+      "starsToday": 326
     },
     {
-      "owner": "ConardLi",
-      "name": "garden-skills",
-      "url": "https://github.com/ConardLi/garden-skills",
-      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
-      "language": "CSS",
-      "languageColor": "#663399",
-      "stars": 11385,
-      "forks": 1416,
-      "starsToday": 415
+      "owner": "cursor",
+      "name": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 5977,
+      "forks": 478,
+      "starsToday": 246
     },
     {
-      "owner": "thedotmack",
-      "name": "claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "owner": "freestylefly",
+      "name": "awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 92339,
-      "forks": 8117,
-      "starsToday": 143
+      "stars": 24328,
+      "forks": 2403,
+      "starsToday": 1687
     },
     {
-      "owner": "google",
-      "name": "googletest",
-      "url": "https://github.com/google/googletest",
-      "description": "GoogleTest - Google Testing and Mocking Framework",
-      "language": "C++",
-      "languageColor": "#f34b7d",
-      "stars": 39068,
-      "forks": 10867,
-      "starsToday": 9
+      "owner": "tailscale",
+      "name": "tailcat",
+      "url": "https://github.com/tailscale/tailcat",
+      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 2779,
+      "forks": 75,
+      "starsToday": 965
     },
     {
-      "owner": "AgriciDaniel",
-      "name": "claude-obsidian",
-      "url": "https://github.com/AgriciDaniel/claude-obsidian",
-      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 14102,
-      "forks": 1427,
-      "starsToday": 634
+      "owner": "NationalSecurityAgency",
+      "name": "ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "languageColor": "#b07219",
+      "stars": 73359,
+      "forks": 8013,
+      "starsToday": 191
+    },
+    {
+      "owner": "swoole",
+      "name": "typephp",
+      "url": "https://github.com/swoole/typephp",
+      "description": "Compile PHP to Native Binaries",
+      "language": "PHP",
+      "languageColor": "#4F5D95",
+      "stars": 823,
+      "forks": 39,
+      "starsToday": 188
     },
     {
       "owner": "marin-community",
@@ -162,53 +151,75 @@
       "description": "Open-source framework for the research and development of foundation models.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 2722,
-      "forks": 230,
-      "starsToday": 255
+      "stars": 2908,
+      "forks": 240,
+      "starsToday": 236
     },
     {
-      "owner": "ComposioHQ",
-      "name": "awesome-claude-skills",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "stars": 73666,
-      "forks": 8441,
-      "starsToday": 130
-    },
-    {
-      "owner": "actions",
-      "name": "checkout",
-      "url": "https://github.com/actions/checkout",
-      "description": "Action for checking out a repo",
+      "owner": "tashfeenahmed",
+      "name": "freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 8742,
-      "forks": 2751,
-      "starsToday": 8
+      "stars": 21662,
+      "forks": 3067,
+      "starsToday": 433
     },
     {
-      "owner": "OpenCut-app",
-      "name": "OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
+      "owner": "ChromeDevTools",
+      "name": "chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 87512,
-      "forks": 8636,
-      "starsToday": 478
+      "stars": 49990,
+      "forks": 3503,
+      "starsToday": 67
     },
     {
-      "owner": "TauricResearch",
-      "name": "TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 101325,
-      "forks": 19483,
-      "starsToday": 229
+      "stars": 50646,
+      "forks": 8780,
+      "starsToday": 703
+    },
+    {
+      "owner": "DietrichGebert",
+      "name": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 115443,
+      "forks": 6315,
+      "starsToday": 1396
+    },
+    {
+      "owner": "google",
+      "name": "googletest",
+      "url": "https://github.com/google/googletest",
+      "description": "GoogleTest - Google Testing and Mocking Framework",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 39186,
+      "forks": 10873,
+      "starsToday": 156
+    },
+    {
+      "owner": "livekit",
+      "name": "agents",
+      "url": "https://github.com/livekit/agents",
+      "description": "A framework for building realtime voice AI agents 🤖🎙️📹",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 13351,
+      "forks": 3631,
+      "starsToday": 22
     }
   ]
 }

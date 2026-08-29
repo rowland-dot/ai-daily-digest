@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-08-28T04:26:00.403Z",
+  "fetched_at": "2026-08-29T02:53:13.754Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "link": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+      "updated": "2026-08-28T22:12:02+00:00",
+      "summary": "Just a rumour of a bug is enough to find a security exploit these days"
+    },
     {
       "title": "Breaking Claude Code Opus 5 Auto Mode",
       "link": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
       "updated": "2026-08-22T15:56:54+00:00",
       "summary": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way."
-    },
-    {
-      "title": "llm 0.32.1",
-      "link": "https://simonwillison.net/2026/Aug/21/llm/",
-      "updated": "2026-08-21T17:16:13+00:00",
-      "summary": "Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx , and it turned out LLM depended on that library but only installed it via a transitive openai dependency."
     }
   ]
 }

@@ -1,8 +1,26 @@
 {
-  "count": 10,
+  "count": 11,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtdgo8nh04rurobxlzwr101x",
+      "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
+      "title_en": "The Open ASR Leaderboard Adds Its First Global South Language",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "permalink": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "discoveredAt": "2026-08-28T21:26:01.121Z",
+      "summary": "Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN 和 Monsoon hi-IN 两个评测集，覆盖印地语与印度英语，其中印地语是该排行榜多语言板块首个非欧洲语言。数据集含公开与私有分割，共 4，888 位说话人，并记录 12 项说话人属性，旨在暴露按地区、年龄、性别等维度分布不均的语音识别误差。",
+      "category": "ai-products",
+      "score": 66,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x"
+      }
+    },
     {
       "id": "cmtc7nham01clrodmgnklmfp8",
       "title": "Claude Console 新增个人密钥与服务账号密钥",
