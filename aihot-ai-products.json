@@ -1,5 +1,5 @@
 {
-  "count": 11,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -181,24 +181,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67"
-      }
-    },
-    {
-      "id": "cmt3wt4qm13utro6t0hb6ga3y",
-      "title": "蚂蚁百灵为SGLang推出权重缓存守护进程",
-      "title_en": "Today， we're introducing the Weight Cache Daemon for SGLang. 🚀 On Ling-2.6-1T FP8， it reduced weigh…",
-      "url": "https://x.com/AntLingAGI/status/2091021795373855124",
-      "permalink": "https://aihot.virxact.com/items/cmt3wt4qm13utro6t0hb6ga3y",
-      "source": "X：蚂蚁百灵 (@AntLingAGI)",
-      "publishedAt": "2026-08-22T04:36:59.000Z",
-      "discoveredAt": "2026-08-22T05:00:00.912Z",
-      "summary": "今天，我们为 SGLang 推出 Weight Cache Daemon。🚀 在 Ling-2.6-1T FP8 上，它将权重加载时间缩短至约 0.63 秒，比磁盘加载快约 780 倍，并将引擎总启动时间从 8.8 分钟缩短至约 0.53 分钟。其工作原理如下。",
-      "category": "ai-products",
-      "score": 53,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt3wt4qm13utro6t0hb6ga3y"
       }
     }
   ]

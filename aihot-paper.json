@@ -4,21 +4,21 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmtd83hb4018fro667i1tbc34",
-      "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
-      "title_en": "Automated researchers can reliably mitigate alignment failures",
-      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "permalink": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-08-28T17:25:56.912Z",
-      "discoveredAt": "2026-08-28T17:25:56.912Z",
-      "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
+      "id": "cmte36nzj02isrog2hwxpthhn",
+      "title": "开放世界多智能体环境中的自主数学发现",
+      "title_en": null,
+      "url": "https://arxiv.org/abs/2608.23691",
+      "permalink": "https://aihot.virxact.com/items/cmte36nzj02isrog2hwxpthhn",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-08-29T07:32:16.981Z",
+      "discoveredAt": "2026-08-29T07:56:11.967Z",
+      "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
       "category": "paper",
-      "score": 78,
+      "score": 74,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34"
+        "canonical": "https://aihot.virxact.com/items/cmte36nzj02isrog2hwxpthhn"
       }
     },
     {
@@ -37,6 +37,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw"
+      }
+    },
+    {
+      "id": "cmtd83hb4018fro667i1tbc34",
+      "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+      "title_en": "Automated researchers can reliably mitigate alignment failures",
+      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+      "permalink": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-08-27T16:00:00.000Z",
+      "discoveredAt": "2026-08-28T17:25:56.912Z",
+      "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34"
       }
     },
     {
@@ -91,24 +109,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj"
-      }
-    },
-    {
-      "id": "cmtacjvfj0a9qroj2efx3z1xo",
-      "title": "开放世界多智能体环境中的自主数学发现",
-      "title_en": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-      "url": "https://arxiv.org/abs/2608.23691",
-      "permalink": "https://aihot.virxact.com/items/cmtacjvfj0a9qroj2efx3z1xo",
-      "source": "HuggingFace Daily Papers（社区热门论文）",
-      "publishedAt": "2026-08-24T00:00:00.000Z",
-      "discoveredAt": "2026-08-24T00:00:00.000Z",
-      "summary": "一项研究在开放世界多智能体环境Station中，让来自不同模型家族的AI智能体在无中央协调或脚本化流程下自主开展数学研究。在AlphaEvolve目录的12个构造问题及两个额外案例中，智能体在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了定理与分析使结果更具可解释性。所有原始智能体对话、证明和验证代码均已公开。",
-      "category": "paper",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtacjvfj0a9qroj2efx3z1xo"
       }
     },
     {
