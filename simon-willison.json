@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-08-29T22:45:09.461Z",
+  "fetched_at": "2026-08-30T22:53:48.929Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Introducing Hy4 Preview",
+      "link": "https://simonwillison.net/2026/Aug/29/hy4/",
+      "updated": "2026-08-29T23:53:13+00:00",
+      "summary": "Introducing Hy4 Preview"
+    },
     {
       "title": "Just a rumour of a bug is enough to find a security exploit these days",
       "link": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
@@ -67,12 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/22/llm/",
       "updated": "2026-08-22T17:01:16+00:00",
       "summary": "My highlights from this release:"
-    },
-    {
-      "title": "More than just code review",
-      "link": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
-      "updated": "2026-08-22T15:56:54+00:00",
-      "summary": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way."
     }
   ]
 }
