@@ -1,24 +1,60 @@
 {
-  "count": 15,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmthhmoi10e71rodmx6wngoz1",
-      "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面",
-      "title_en": "Introducing Solaris",
-      "url": "https://runwayml.com/news/research/introducing-solaris",
-      "permalink": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-08-31T17:03:47.031Z",
-      "discoveredAt": "2026-08-31T17:03:47.031Z",
-      "summary": "Runway 推出 Solaris，这是其全新界面世界模型（Interface World Models）系列的首个模型。Solaris 能实时逐帧生成应用和网站界面，无需中间代码表示，直接以图像作为交互层，支持视觉化、动态响应和开放式交互。它还可用于训练智能体，使其适应不断变化的界面布局，而非局限于特定训练环境。",
+      "id": "cmtj0fqfq001nroh9x8mg1s3z",
+      "title": "Claude Fable 5.1 上线 OpenRouter",
+      "title_en": "Claude Fable 5.1 from @AnthropicAI is live on OpenRouter. A direct upgrade for Fable 5 workloads， w…",
+      "url": "https://x.com/OpenRouter/status/2094855056936022304",
+      "permalink": "https://aihot.virxact.com/items/cmtj0fqfq001nroh9x8mg1s3z",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "publishedAt": "2026-09-01T18:29:00.000Z",
+      "discoveredAt": "2026-09-01T18:38:06.226Z",
+      "summary": "Anthropic 的 Claude Fable 5.1 已上线 OpenRouter，官方称其为 Fable 5 工作负载的直接升级版本，提升最大的方向包括 agentic coding、长时间运行的工作流、视觉代码生成、金融和分析。使用入口：https://openrouter.ai/anthropic/claude-fable-5.1",
       "category": "ai-models",
-      "score": 63,
+      "score": 55,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1"
+        "canonical": "https://aihot.virxact.com/items/cmtj0fqfq001nroh9x8mg1s3z"
+      }
+    },
+    {
+      "id": "cmtj42kz5057qroh9yw6fjh9h",
+      "title": "OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布",
+      "title_en": "Path to Astra： critical capabilities and frontier safeguards",
+      "url": "https://openai.com/index/path-to-astra",
+      "permalink": "https://aihot.virxact.com/items/cmtj42kz5057qroh9yw6fjh9h",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-09-01T13:00:00.000Z",
+      "discoveredAt": "2026-09-01T20:19:52.274Z",
+      "summary": "OpenAI 宣布 Astra 在其 Preparedness Framework 下达到 Critical 网络安全能力阈值，是首个被评定为该级别的模型，可在少人干预下发现未知漏洞并构建利用链。",
+      "category": "ai-models",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtj42kz5057qroh9yw6fjh9h"
+      }
+    },
+    {
+      "id": "cmtj04igz04xproel00pt2oju",
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+      "title_en": "Claude Platform release notes - September 1， 2026",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
+      "permalink": "https://aihot.virxact.com/items/cmtj04igz04xproel00pt2oju",
+      "source": "Claude Platform：开发者版本说明（RSS）",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "discoveredAt": "2026-09-01T18:29:22.881Z",
+      "summary": "Anthropic 发布 Claude Fable 5.1（claude-fable-5-1），面向长时间运行的智能体编码、知识工作与研究，Claude Mythos 5.1 面向 Project Glasswing 参与者。",
+      "category": "ai-models",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtj04igz04xproel00pt2oju"
       }
     },
     {
@@ -37,6 +73,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie"
+      }
+    },
+    {
+      "id": "cmthhmoi10e71rodmx6wngoz1",
+      "title": "Runway 发布 Interface World Models 首个模型 Solaris，实时逐帧生成可交互界面",
+      "title_en": "Introducing Solaris",
+      "url": "https://runwayml.com/news/research/introducing-solaris",
+      "permalink": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-08-30T16:00:00.000Z",
+      "discoveredAt": "2026-08-31T17:03:47.031Z",
+      "summary": "Runway 发布 Solaris，称其为新模型家族 Interface World Models 的第一个模型，由世界模型实时逐帧生成界面并对点击、拖拽等交互作出响应，无需代码等中间表示。",
+      "category": "ai-models",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1"
       }
     },
     {
@@ -235,42 +289,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmta7honk0553roj21gque0zw"
-      }
-    },
-    {
-      "id": "cmtaj3732034urovudls0byfe",
-      "title": "GlucoFM：面向连续血糖监测的基础模型",
-      "title_en": "GlucoFM： Foundation model for continuous glucose monitoring",
-      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring",
-      "permalink": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe",
-      "source": "Google Research：Blog（网页）",
-      "publishedAt": "2026-08-25T16:00:00.000Z",
-      "discoveredAt": "2026-08-26T20:10:19.416Z",
-      "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109，066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
-      "category": "ai-models",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtaj3732034urovudls0byfe"
-      }
-    },
-    {
-      "id": "cmt8uphwp3qmhro73czv8pbpv",
-      "title": "WeatherNext 预测气旋：提前五天预警五级飓风",
-      "title_en": "https://x.com/i/article/2092249927812337664",
-      "url": "https://x.com/GoogleAI/status/2092275116503707733",
-      "permalink": "https://aihot.virxact.com/items/cmt8uphwp3qmhro73czv8pbpv",
-      "source": "X：Google AI (@GoogleAI)",
-      "publishedAt": "2026-08-25T15:37:15.000Z",
-      "discoveredAt": "2026-08-25T16:00:00.902Z",
-      "summary": "Google AI 发布 WeatherNext 气旋预测模型，可同时预测风暴路径、强度和规模，比现有系统多提供一整天的预警时间。该模型在 2025 飓风季实战测试中，提前五天预测飓风 Melissa 在牙买加的五级登陆，系美国国家飓风中心首次实时使用 AI 模型。模型单场风暴可生成多达 1000 次模拟，代码与权重已开源。",
-      "category": "ai-models",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt8uphwp3qmhro73czv8pbpv"
       }
     }
   ]

@@ -1,7 +1,37 @@
 {
-  "fetched_at": "2026-09-01T00:01:26.473Z",
+  "fetched_at": "2026-09-01T22:44:48.638Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Codex bundles LibreOffice",
+      "link": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+      "updated": "2026-09-01T19:03:01+00:00",
+      "summary": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binaries for Poppler , git, and the LibreOffice open source office suite (which forked from OpenOffice.org in 2010):"
+    },
+    {
+      "title": "Quoting Tarn Adams",
+      "link": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
+      "updated": "2026-09-01T17:01:11+00:00",
+      "summary": "They took the letters from me! I have to talk about dwarf behavior now. I can't even talk about dwarf AI. It doesn't exist. It's dwarf behavior , and they misbehave sometimes"
+    },
+    {
+      "title": "Python 3.15.0 candidate 2 is here!",
+      "link": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
+      "updated": "2026-09-01T14:59:18+00:00",
+      "summary": "Python 3.15.0 candidate 2 is here!"
+    },
+    {
+      "title": "Introducing wrapture",
+      "link": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+      "updated": "2026-08-31T23:59:36+00:00",
+      "summary": "Introducing wrapture"
+    },
+    {
+      "title": "Quoting Andrew Digby",
+      "link": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
+      "updated": "2026-08-31T22:25:02+00:00",
+      "summary": "325 #kakapo! The chicks from this year's record breeding season are now juveniles and so have been added to the population. In 1995 there were just 51 kākāpō left. Recovery of critically endangered species is possible with sustained effort."
+    },
     {
       "title": "Understanding ChatGPT Work",
       "link": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
@@ -43,36 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
       "updated": "2026-08-25T22:59:30+00:00",
       "summary": "EVE Online: The Move to Python 3 Begins!"
-    },
-    {
-      "title": "llm-anthropic 0.27",
-      "link": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
-      "updated": "2026-08-24T16:27:04+00:00",
-      "summary": "This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago."
-    },
-    {
-      "title": "Your executable is a SQLite database",
-      "link": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
-      "updated": "2026-08-24T11:38:15+00:00",
-      "summary": "Your executable is a SQLite database"
-    },
-    {
-      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
-      "link": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
-      "updated": "2026-08-23T20:24:52+00:00",
-      "summary": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive"
-    },
-    {
-      "title": "Quoting Drew Breunig",
-      "link": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
-      "updated": "2026-08-23T19:55:30+00:00",
-      "summary": "Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems. But then Fable landed. It was (and still is!) incredible . But the cost was so high and Opus was good enough (as was 5.6, K3, and even GLM) for most of the code we needed. So we started to think about what work went where."
-    },
-    {
-      "title": "Quoting Linus Torvalds",
-      "link": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
-      "updated": "2026-08-22T21:04:26+00:00",
-      "summary": "And this was a debug session from hell, enormously helped by an AI doing much of the grunt-work. I'd like to call it my tireless helper, but the AI several times stated flat out that this was impossible and unsolvable and that we should just write a report about it. I suspect those things have been trained by people who may not be quite as stubborn as I am. But while the AI was ready to give up several times, it did keep adding debug code and analyzing it faithfully when I pushed. So credit where credit is due and I let the AI write the commit message above."
     }
   ]
 }

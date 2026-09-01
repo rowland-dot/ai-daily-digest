@@ -1,81 +1,81 @@
 {
-  "fetched_at": "2026-09-01T00:01:18.901Z",
+  "fetched_at": "2026-09-01T22:44:39.721Z",
   "date_utc": "2026-09-01",
   "sources": {
     "aihot_daily": {
       "status": "ok",
       "file": "aihot-daily.json",
-      "ms": 1495
+      "ms": 2949
     },
     "aihot_ai_models": {
       "status": "ok",
       "file": "aihot-ai-models.json",
-      "ms": 1293
+      "ms": 1289
     },
     "aihot_ai_products": {
       "status": "ok",
       "file": "aihot-ai-products.json",
-      "ms": 1273
+      "ms": 1317
     },
     "aihot_industry": {
       "status": "ok",
       "file": "aihot-industry.json",
-      "ms": 626
+      "ms": 611
     },
     "aihot_paper": {
       "status": "ok",
       "file": "aihot-paper.json",
-      "ms": 568
+      "ms": 647
     },
     "hf_popular": {
       "status": "ok",
       "file": "hf-popular.json",
-      "ms": 155
+      "ms": 62
     },
     "github_trending": {
       "status": "ok",
       "file": "github-trending.json",
-      "ms": 979
+      "ms": 1041
     },
     "openai_blog": {
       "status": "ok",
       "file": "openai-blog.json",
-      "ms": 319
+      "ms": 282
     },
     "anthropic_news": {
       "status": "ok",
       "file": "anthropic-news.json",
-      "ms": 330
+      "ms": 271
     },
     "anthropic_engineering": {
       "status": "ok",
       "file": "anthropic-engineering.json",
-      "ms": 175
+      "ms": 221
     },
     "simon_willison": {
       "status": "ok",
       "file": "simon-willison.json",
-      "ms": 358
+      "ms": 226
     },
     "follow_builders_x": {
       "status": "ok",
       "file": "follow-builders-x.json",
-      "ms": 26
+      "ms": 28
     },
     "follow_builders_podcasts": {
       "status": "ok",
       "file": "follow-builders-podcasts.json",
-      "ms": 11
+      "ms": 12
     },
     "follow_builders_blogs": {
       "status": "ok",
       "file": "follow-builders-blogs.json",
-      "ms": 18
+      "ms": 22
     },
     "localllama": {
       "status": "ok",
       "file": "localllama.json",
-      "ms": 689
+      "ms": 392
     },
     "article_bodies": {
       "status": "ok",

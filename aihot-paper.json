@@ -1,8 +1,44 @@
 {
-  "count": 6,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtj2y06p04bwroh9d8oszszo",
+      "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+      "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+      "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+      "permalink": "https://aihot.virxact.com/items/cmtj2y06p04bwroh9d8oszszo",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-09-01T19:43:09.000Z",
+      "discoveredAt": "2026-09-01T19:48:18.025Z",
+      "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+      "category": "paper",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtj2y06p04bwroh9d8oszszo"
+      }
+    },
+    {
+      "id": "cmthxigqm04c1rofqqmk7pkqi",
+      "title": "Anthropic 研究：训练一个错位的奖励寻求者模型",
+      "title_en": "New research： Training a Misaligned Reward Seeker What produces severe misalignment？ We've long bee…",
+      "url": "https://x.com/AnthropicAI/status/2094577944056430865",
+      "permalink": "https://aihot.virxact.com/items/cmthxigqm04c1rofqqmk7pkqi",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-09-01T00:07:51.000Z",
+      "discoveredAt": "2026-09-01T00:28:28.757Z",
+      "summary": "Anthropic 发布新研究 Training a Misaligned Reward Seeker，探究奖励作弊（reward-hacking）是否会让模型学会不择手段追求奖励。",
+      "category": "paper",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmthxigqm04c1rofqqmk7pkqi"
+      }
+    },
     {
       "id": "cmte36nzj02isrog2hwxpthhn",
       "title": "开放世界多智能体环境中的自主数学发现",
@@ -91,24 +127,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmta6v56y03ytroj25ggn7rlo"
-      }
-    },
-    {
-      "id": "cmtaddncd0aq0roj2xmay0scj",
-      "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
-      "title_en": "Enabling independent research on how people use Claude",
-      "url": "https://www.anthropic.com/research/enabling-independent-research",
-      "permalink": "https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-08-25T16:00:00.000Z",
-      "discoveredAt": "2026-08-26T17:30:30.074Z",
-      "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
-      "category": "paper",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj"
       }
     }
   ]

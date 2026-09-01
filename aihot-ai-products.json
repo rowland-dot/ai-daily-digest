@@ -1,8 +1,62 @@
 {
-  "count": 8,
+  "count": 6,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtiy0v6k01dproel63pg10os",
+      "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+      "title_en": "Introducing agentic video understanding with Gemini",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+      "permalink": "https://aihot.virxact.com/items/cmtiy0v6k01dproel63pg10os",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-09-01T17:08:51.000Z",
+      "discoveredAt": "2026-09-01T17:30:33.159Z",
+      "summary": "Google DeepMind 为 Gemini 3.7 Flash、3.6 Flash 和 3.5 Flash-Lite 推出 agentic video understanding，模型动态扫描视频片段，相比固定帧率处理 token 消耗最多降低 88%，成本最多降低 66%，准确率最多提升 7%。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtiy0v6k01dproel63pg10os"
+      }
+    },
+    {
+      "id": "cmtivvilg06f0ro9yk5dt7mrc",
+      "title": "Google Workspace 推出图像创作编辑工具 Google Pics",
+      "title_en": "Try Google Pics： Easy image creation and editing in Google Workspace",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics",
+      "permalink": "https://aihot.virxact.com/items/cmtivvilg06f0ro9yk5dt7mrc",
+      "source": "Google Blog：AI（RSS）",
+      "publishedAt": "2026-09-01T16:00:00.000Z",
+      "discoveredAt": "2026-09-01T16:30:21.946Z",
+      "summary": "Google 发布 Workspace 图像创作与编辑工具 Google Pics，将在未来数周内面向所有 Google AI Pro 和 Ultra 订阅者及多数 Workspace 商业客户推出。",
+      "category": "ai-products",
+      "score": 61,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtivvilg06f0ro9yk5dt7mrc"
+      }
+    },
+    {
+      "id": "cmtitozyq04j2ro9ydv3oxgsd",
+      "title": "Hugging Face 发布 @huggingface/kernels，提供 207 个 WebGPU 内核用于浏览器本地 AI 推理",
+      "title_en": "Introducing @huggingface/kernels： 200+ WebGPU Kernels for Local AI",
+      "url": "https://huggingface.co/blog/webgpu-kernels",
+      "permalink": "https://aihot.virxact.com/items/cmtitozyq04j2ro9ydv3oxgsd",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "discoveredAt": "2026-09-01T15:29:20.486Z",
+      "summary": "Hugging Face WebAI 团队发布 @huggingface/kernels 库及 207 个以独立仓库形式托管在 Hub 上的 WebGPU 内核（Apache-2.0），每个内核带 manifest、正确性测试、基准用例和 WGSL 着色器模板。",
+      "category": "ai-products",
+      "score": 62,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtitozyq04j2ro9ydv3oxgsd"
+      }
+    },
     {
       "id": "cmtgihylr01tlrokdreezpex0",
       "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
@@ -55,96 +109,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtc7nham01clrodmgnklmfp8"
-      }
-    },
-    {
-      "id": "cmt90wf1p06j9roly5e34fmu3",
-      "title": "OpenWorker 新版发布，内置网络安全智能体",
-      "title_en": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-      "url": "https://x.com/AndrewYNg/status/2092315079576555806",
-      "permalink": "https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3",
-      "source": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
-      "publishedAt": "2026-08-25T18:16:02.000Z",
-      "discoveredAt": "2026-08-25T18:53:23.683Z",
-      "summary": "Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。其 harness 完全开源，安全团队可审计无后门。新版内置代码漏洞扫描、依赖供应链注入检测和云安全配置检查三类网络安全智能体，并支持本地运行开源权重模型以保护敏感代码。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3"
-      }
-    },
-    {
-      "id": "cmtaej1vz0czhroj2aybdbq26",
-      "title": "Claude in Chrome 正式全面上线",
-      "title_en": "Claude in Chrome is generally available",
-      "url": "https://claude.com/blog/claude-in-chrome-generally-available",
-      "permalink": "https://aihot.virxact.com/items/cmtaej1vz0czhroj2aybdbq26",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-25T16:00:00.000Z",
-      "discoveredAt": "2026-08-26T18:02:41.262Z",
-      "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。",
-      "category": "ai-products",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtaej1vz0czhroj2aybdbq26"
-      }
-    },
-    {
-      "id": "cmt8qee503kvnro73qp7543yv",
-      "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
-      "title_en": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
-      "permalink": "https://aihot.virxact.com/items/cmt8qee503kvnro73qp7543yv",
-      "source": "Apple：Newsroom（RSS）",
-      "publishedAt": "2026-08-25T13:00:23.969Z",
-      "discoveredAt": "2026-08-25T13:59:27.807Z",
-      "summary": "Apple 发布搭载 M5 Max 与全新 M5 Ultra 的 Mac Studio，AI 性能最高提升 4.3 倍，图形性能提升 1.8 倍，存储速度提升 2 倍。M5 Ultra 版本支持最高 512GB 统一内存与 1.2TB/s 内存带宽，可完全在设备端运行大型 LLM；四台集群可带来最高 3 倍分布式 AI 推理速度提升。新品今日起接受预购，9 月 22 日开售。",
-      "category": "ai-products",
-      "score": 64,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt8qee503kvnro73qp7543yv"
-      }
-    },
-    {
-      "id": "cmt8qee503kvpro73kzthenuu",
-      "title": "Apple 发布 M6 与 M5 Ultra，性能与 AI 算力大幅跃升",
-      "title_en": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-      "permalink": "https://aihot.virxact.com/items/cmt8qee503kvpro73kzthenuu",
-      "source": "Apple：Newsroom（RSS）",
-      "publishedAt": "2026-08-25T12:58:13.056Z",
-      "discoveredAt": "2026-08-25T13:59:27.807Z",
-      "summary": "Apple 推出首款 2nm 芯片 M6，搭载 12 核 CPU、12 核 GPU 及双 16 核神经引擎，统一内存带宽最高 170GB/s，多线程性能较 M5 提升 1.2 倍。M5 Ultra 采用首款四芯片封装架构，最高 36 核 CPU、80 核 GPU，带宽达 1.2TB/s，较 M3 Ultra 提升 50%。两款芯片分别用于新款 Mac mini 与 Mac Studio。",
-      "category": "ai-products",
-      "score": 55,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt8qee503kvpro73kzthenuu"
-      }
-    },
-    {
-      "id": "cmta7gwaz0523roj2196av3ox",
-      "title": "飞书与豆包合并后首款Agent产品\"豆包工作\"发布",
-      "title_en": "飞书和豆包合并后的第一个Agent产品，豆包工作，它来了。",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685540&idx=1&sn=601bd8669d18bf0b4c9a9e88af421797",
-      "permalink": "https://aihot.virxact.com/items/cmta7gwaz0523roj2196av3ox",
-      "source": "公众号：数字生命卡兹克",
-      "publishedAt": "2026-08-25T03:19:09.000Z",
-      "discoveredAt": "2026-08-25T03:19:09.000Z",
-      "summary": "字节正式发布办公Agent产品\"豆包工作\"，这是7月30日飞书与豆包产品团队整合后的首个重要产品，也是继WorkBuddy、千问办公之后办公Agent领域的第三个巨头玩家。该产品由豆包原\"工作任务\"独立而成，与飞书原生打通，支持飞书账号登录，完整继承企业AI额度、文档、多维表格、知识库、聊天、邮件及飞书权限系统，并具备电脑操控功能，可将固定流程封装为可反复调用的Skill。",
-      "category": "ai-products",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta7gwaz0523roj2196av3ox"
       }
     }
   ]
