@@ -1,8 +1,44 @@
 {
-  "count": 14,
+  "count": 15,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmthhmoi10e71rodmx6wngoz1",
+      "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面",
+      "title_en": "Introducing Solaris",
+      "url": "https://runwayml.com/news/research/introducing-solaris",
+      "permalink": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1",
+      "source": "Runway：News（网页）",
+      "publishedAt": "2026-08-31T17:03:47.031Z",
+      "discoveredAt": "2026-08-31T17:03:47.031Z",
+      "summary": "Runway 推出 Solaris，这是其全新界面世界模型（Interface World Models）系列的首个模型。Solaris 能实时逐帧生成应用和网站界面，无需中间代码表示，直接以图像作为交互层，支持视觉化、动态响应和开放式交互。它还可用于训练智能体，使其适应不断变化的界面布局，而非局限于特定训练环境。",
+      "category": "ai-models",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1"
+      }
+    },
+    {
+      "id": "cmth7tmq2067orodmh6g0sxie",
+      "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+      "title_en": null,
+      "url": "https://www.ithome.com/0/996/637.htm",
+      "permalink": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-08-31T11:35:24.000Z",
+      "discoveredAt": "2026-08-31T12:29:19.834Z",
+      "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
+      "category": "ai-models",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie"
+      }
+    },
     {
       "id": "cmtdxtxi809gyro2m2zykqzli",
       "title": "Zhipu开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
@@ -235,24 +271,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmt8uphwp3qmhro73czv8pbpv"
-      }
-    },
-    {
-      "id": "cmt7nzq6i2c27ro73tqxagz44",
-      "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
-      "title_en": "Advancing price-performance for developers with GPT-5.6 in Kiro",
-      "url": "https://openai.com/index/gpt-5-6-in-kiro",
-      "permalink": "https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-08-24T12:00:00.000Z",
-      "discoveredAt": "2026-08-24T20:04:17.547Z",
-      "summary": "GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。",
-      "category": "ai-models",
-      "score": 59,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44"
       }
     }
   ]

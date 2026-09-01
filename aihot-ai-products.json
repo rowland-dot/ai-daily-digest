@@ -1,8 +1,26 @@
 {
-  "count": 10,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtgihylr01tlrokdreezpex0",
+      "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
+      "title_en": null,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ%3D%3D&mid=2247489121&idx=1&sn=f517f5cee108929b49d2b596ebf96a06",
+      "permalink": "https://aihot.virxact.com/items/cmtgihylr01tlrokdreezpex0",
+      "source": "公众号：MiniMax（稀宇科技）",
+      "publishedAt": "2026-08-31T00:36:00.000Z",
+      "discoveredAt": "2026-08-31T00:40:26.605Z",
+      "summary": "MiniMax 将 H3 Max 768P、480P 接入开放平台和 MiniMax Design，海外开发者已借此搭建出 Twitch 直播和 24 小时\"AI 电视台\"。",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtgihylr01tlrokdreezpex0"
+      }
+    },
     {
       "id": "cmtdgo8nh04rurobxlzwr101x",
       "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
@@ -127,60 +145,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmta7gwaz0523roj2196av3ox"
-      }
-    },
-    {
-      "id": "cmt7nq1d02bs1ro7373u88po4",
-      "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
-      "title_en": "MetaRoCE： A New RDMA Transport Built for AI-Scale Ethernet",
-      "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet",
-      "permalink": "https://aihot.virxact.com/items/cmt7nq1d02bs1ro7373u88po4",
-      "source": "Meta Engineering Blog（RSS）",
-      "publishedAt": "2026-08-24T18:02:29.000Z",
-      "discoveredAt": "2026-08-24T19:56:45.475Z",
-      "summary": "Meta 设计并开源了 MetaRoCE，一个专为 AI 工作负载在通用以太网上打造的 RDMA 传输协议，已通过 Open Compute Project（OCP）发布规范、参考软件实现和合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC，可在百万 GPU 规模下提供高吞吐、低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可运行。",
-      "category": "ai-products",
-      "score": 62,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt7nq1d02bs1ro7373u88po4"
-      }
-    },
-    {
-      "id": "cmt8z2eko055crolytaitdxv8",
-      "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
-      "title_en": "Claude's memory works everywhere， and you decide what's in it",
-      "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
-      "permalink": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8",
-      "source": "Claude：Blog（网页）",
-      "publishedAt": "2026-08-24T16:00:00.000Z",
-      "discoveredAt": "2026-08-25T18:02:04.743Z",
-      "summary": "Claude 即日起将聊天与 Claude Cowork 的记忆统一，用户在任一场景对话时都能调用此前积累的上下文，减少重复解释。记忆会在聊天过程中实时更新，用户可在 Memory 设置中按主题查看、编辑或删除每条记忆。健康、信仰等敏感话题默认不存储，但可在设置中开启，且敏感识别号、犯罪记录等始终不会被保存。",
-      "category": "ai-products",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt8z2eko055crolytaitdxv8"
-      }
-    },
-    {
-      "id": "cmt7e0g7y232wro738qg82x67",
-      "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
-      "title_en": "Up to 30x More Work Per Watt： NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents",
-      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents",
-      "permalink": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67",
-      "source": "NVIDIA Blog（RSS）",
-      "publishedAt": "2026-08-24T15:00:19.000Z",
-      "discoveredAt": "2026-08-24T15:24:53.435Z",
-      "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67"
       }
     }
   ]
