@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-01T22:44:47.920Z",
+  "fetched_at": "2026-09-02T22:47:03.415Z",
   "source": "OpenAI",
   "items": [
     {
@@ -19,6 +19,12 @@
       "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
       "pubDate": "Tue, 01 Sep 2026 12:00:00 GMT",
       "description": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more."
+    },
+    {
+      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+      "link": "https://openai.com/index/gilbert-tobin",
+      "pubDate": "Tue, 01 Sep 2026 01:00:00 GMT",
+      "description": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm."
     },
     {
       "title": "OpenAI supports California’s bill to advance youth AI safety",
@@ -63,16 +69,16 @@
       "description": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country."
     },
     {
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-      "pubDate": "Wed, 26 Aug 2026 10:00:00 GMT",
-      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff."
-    },
-    {
       "title": "Learning never stops: How AI makes learning continuous",
       "link": "https://openai.com/index/learning-never-stops",
       "pubDate": "Wed, 26 Aug 2026 10:00:00 GMT",
       "description": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom."
+    },
+    {
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "pubDate": "Wed, 26 Aug 2026 10:00:00 GMT",
+      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff."
     },
     {
       "title": "The Hugging Face incident and the road ahead",
@@ -85,12 +91,6 @@
       "link": "https://openai.com/index/loveholidays",
       "pubDate": "Wed, 26 Aug 2026 00:00:00 GMT",
       "description": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster."
-    },
-    {
-      "title": "The full stack behind abundant intelligence",
-      "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-      "pubDate": "Tue, 25 Aug 2026 07:05:00 GMT",
-      "description": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost."
     }
   ]
 }

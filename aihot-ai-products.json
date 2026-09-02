@@ -1,8 +1,80 @@
 {
-  "count": 6,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtkh71ky017vrolly7trswyx",
+      "title": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
+      "title_en": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+      "url": "https://x.com/claudeai/status/2095226833293685100",
+      "permalink": "https://aihot.virxact.com/items/cmtkh71ky017vrolly7trswyx",
+      "source": "X：Claude (@claudeai)",
+      "publishedAt": "2026-09-02T19:06:19.000Z",
+      "discoveredAt": "2026-09-02T19:15:00.970Z",
+      "summary": "Claude 官方宣布 Claude Cowork 和 Claude Code 新增后台使用电脑的能力。用户把任务交给 Claude 后，它会像人一样点击、输入和打开应用，用户可同时去做其他事。",
+      "category": "ai-products",
+      "score": 71,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtkh71ky017vrolly7trswyx"
+      }
+    },
+    {
+      "id": "cmtkffuf503cbrobqkwhimxmp",
+      "title": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行",
+      "title_en": "Run cloud agents on machines you manage",
+      "url": "https://cursor.com/blog/self-hosted-machines",
+      "permalink": "https://aihot.virxact.com/items/cmtkffuf503cbrobqkwhimxmp",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-09-02T12:00:00.000Z",
+      "discoveredAt": "2026-09-02T18:25:53.655Z",
+      "summary": "Cursor 发布 Self-Hosted Machines，让云智能体的工具执行迁移到企业自有网络内的机器，智能体循环、推理和规划仍留在 Cursor 云端，通过 worker 的出站 HTTPS 连接对接，Cursor 不会主动连入企业网络。",
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtkffuf503cbrobqkwhimxmp"
+      }
+    },
+    {
+      "id": "cmtjkp6dc02j5rori29u5h7kl",
+      "title": "美团 LongCat-2.0 上线 Cline 免费试用",
+      "title_en": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+      "url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
+      "permalink": "https://aihot.virxact.com/items/cmtjkp6dc02j5rori29u5h7kl",
+      "source": "X：美团 LongCat (@Meituan_LongCat)",
+      "publishedAt": "2026-09-02T03:50:37.000Z",
+      "discoveredAt": "2026-09-02T04:05:19.828Z",
+      "summary": null,
+      "category": "ai-products",
+      "score": 67,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtjkp6dc02j5rori29u5h7kl"
+      }
+    },
+    {
+      "id": "cmtjjt7360180roe43ggo0t09",
+      "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+      "title_en": "UU远程史诗级升级，这就是如今远程Vibe Coding的第一神器。",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+      "permalink": "https://aihot.virxact.com/items/cmtjjt7360180roe43ggo0t09",
+      "source": "公众号：数字生命卡兹克",
+      "publishedAt": "2026-09-02T03:32:20.000Z",
+      "discoveredAt": "2026-09-02T03:40:27.472Z",
+      "summary": "UU远程于9月2日上线新版本，重点优化终端功能，补齐 TUI 渲染交互与终端会话管理能力。主要更新包括：Mac 免密码登录、移动端输入优化并新增调用系统输入法的独立输入框、可同时创建和管理多个终端会话并支持手机与电脑间跨端同步接管（通过 uuyc-cli lterm 命令）。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtjjt7360180roe43ggo0t09"
+      }
+    },
     {
       "id": "cmtiy0v6k01dproel63pg10os",
       "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",

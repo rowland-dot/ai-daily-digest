@@ -1,7 +1,31 @@
 {
-  "fetched_at": "2026-09-01T22:44:48.638Z",
+  "fetched_at": "2026-09-02T22:47:03.998Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "llm-gemini 0.34",
+      "link": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
+      "updated": "2026-09-02T16:39:38+00:00",
+      "summary": "New model gemini-3.8-flash for Gemini 3.8 Flash , with low, medium and high thinking levels. #146 Fixed async responses failing to record the resolved model version. Thanks, Charlie Tonneslan . #137"
+    },
+    {
+      "title": "Claude's new system prompt really doesn't want to reproduce song lyrics",
+      "link": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+      "updated": "2026-09-02T14:16:42+00:00",
+      "summary": "Anthropic publish the system prompts for their Claude consumer applications ( Claude.ai and the Claude mobile apps - sadly not for Claude Cowork or Claude Code). I love that they do this, and that they share not just the current prompts but historic changes to their prompts as well."
+    },
+    {
+      "title": "Quoting Rick Brewster",
+      "link": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "updated": "2026-09-02T05:50:57+00:00",
+      "summary": "Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just \"disable\" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (triggered by using /wine ). It lives in PaintDotNet.Windows.Direct2D1.Managed.dll . This was written by our good friend Claude , without whom this would NOT have been possible and would NEVER have happened. [...] Most of this code is, as they say, \"vibe coded.\" By that I mean that it has not been thoroughly reviewed, it's more \"trust me bro\" style. I cannot possibly review 180,000 lines of code, it's just way way way too much. For reference, the rest of Paint.NET is about 700,000 lines of code and I've been working on it for over 20 years. [...] At times, Claude was working with the fury of 10 freshly unshackled Einstein genius-level 10x coders. And other times ... well, not so much. I had to babysit Claude quite a bit to make sure it did resource management correctly (for awhile it just wasn't doing the COM equivalent of AddRef() for reference counted objects, oops). I had to slap it a few times when I found some really bad design or architecture decisions. And I was also impressed at some rather clever and tireless reverse engineering work it did to figure out all the formulas needed for implementing Direct2D's built-in effects library."
+    },
+    {
+      "title": "Claude Fable 5.1 made me a really nice animated pelican",
+      "link": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+      "updated": "2026-09-01T23:57:28+00:00",
+      "summary": "Today is Claude Fable (and Mythos) 5.1 day . Anthropic say that Fable 5.1 \"sets a new standard for coding, knowledge work, and long-running problem-solving tasks\". Their announcement spends a notable amount of time on scientific research, boasting of a 52.6% score on the brand new Terminal-Bench-Science 0.1 benchmark (first announced on August 27th ), up from 24.7% for Fable 5, 29.0% for Opus 5 and 22.4% for GPT-5.6 Sol. Other benchmarks show slightly improved scores, but none as impressive as the Science one."
+    },
     {
       "title": "Codex bundles LibreOffice",
       "link": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
@@ -9,10 +33,22 @@
       "summary": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binaries for Poppler , git, and the LibreOffice open source office suite (which forked from OpenOffice.org in 2010):"
     },
     {
+      "title": "GeoJSON Map Viewer",
+      "link": "https://simonwillison.net/2026/Sep/1/geojson/",
+      "updated": "2026-09-01T18:05:45+00:00",
+      "summary": "I was helping Natalie gather some maps of local political boundaries (for the Granada Community Services District and the Midcoast Community Council ) and found a need to display some GeoJSON files on a map and export that as a PNG. I asked GPT-5.6-Sol for suggestions of tools and it proactively built one. After some iterations using Claude Code for web and Fable 5.1 we got to this finished tool."
+    },
+    {
       "title": "Quoting Tarn Adams",
       "link": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
       "updated": "2026-09-01T17:01:11+00:00",
       "summary": "They took the letters from me! I have to talk about dwarf behavior now. I can't even talk about dwarf AI. It doesn't exist. It's dwarf behavior , and they misbehave sometimes"
+    },
+    {
+      "title": "datasette-mcp 0.2",
+      "link": "https://simonwillison.net/2026/Sep/1/datasette-mcp/",
+      "updated": "2026-09-01T15:30:12+00:00",
+      "summary": "\"rows\" from execute_sql is now an array of objects. Previously it was an array of arrays. This should help weaker models avoid losing track of which positional array element maps to which column. #1 Now depends on mcp>=2.1.1 ."
     },
     {
       "title": "Python 3.15.0 candidate 2 is here!",
@@ -37,42 +73,6 @@
       "link": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
       "updated": "2026-08-30T23:59:47+00:00",
       "summary": "OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here's what I've figured out about it so far."
-    },
-    {
-      "title": "Introducing Hy4 Preview",
-      "link": "https://simonwillison.net/2026/Aug/29/hy4/",
-      "updated": "2026-08-29T23:53:13+00:00",
-      "summary": "Introducing Hy4 Preview"
-    },
-    {
-      "title": "Just a rumour of a bug is enough to find a security exploit these days",
-      "link": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
-      "updated": "2026-08-28T22:12:02+00:00",
-      "summary": "Just a rumour of a bug is enough to find a security exploit these days"
-    },
-    {
-      "title": "Breaking Claude Code Opus 5 Auto Mode",
-      "link": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
-      "updated": "2026-08-27T22:50:25+00:00",
-      "summary": "Breaking Claude Code Opus 5 Auto Mode"
-    },
-    {
-      "title": "Qwen3.8-Flash-Next",
-      "link": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
-      "updated": "2026-08-26T23:52:58+00:00",
-      "summary": "Qwen3.8-Flash-Next"
-    },
-    {
-      "title": "Quoting Paul Dix",
-      "link": "https://simonwillison.net/2026/Aug/26/paul-dix/",
-      "updated": "2026-08-26T08:07:55+00:00",
-      "summary": "The fact that AI wrote 1M LOC and then refined it over the course of the next couple of months to produce a reliable piece of software that is currently running on millions of developer machines is absolutely mind blowing. And you can say, “well it’s not that impressive because they had an oracle to compare against, so it was simple to go from one language to another”, but I think that’s selling this entire thing short. If you can build a verification system and give proper direction, AI can produce a highly complex, highly sophisticated piece of software and it can continue to refine it until it just works."
-    },
-    {
-      "title": "EVE Online: The Move to Python 3 Begins!",
-      "link": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
-      "updated": "2026-08-25T22:59:30+00:00",
-      "summary": "EVE Online: The Move to Python 3 Begins!"
     }
   ]
 }

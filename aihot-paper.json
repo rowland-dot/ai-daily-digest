@@ -1,5 +1,5 @@
 {
-  "count": 7,
+  "count": 5,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -91,42 +91,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34"
-      }
-    },
-    {
-      "id": "cmtbtrn8j0222ro2kb7opgppz",
-      "title": "MiniMax-H3 在 8×H200 上基准测试：无损加速 1.95×，最高 6.24×（SSIM 0.76-0.91）",
-      "title_en": "Blog MiniMax-H3 on 8×H200： 1.95× Lossless， Up to 6.24× at 0.76-0.91 SSIM We benchmarked MiniMax-H3 video generation on 8× NVIDIA H200 with SGLang Diffusion， holding prompts， seeds， resolution， frame rate， and denoising steps fixed across six workloads. - SGLang's dense， l… SGLang Diffusion Team， Cache-DiT Team， NVIDIA， Ant Group",
-      "url": "https://www.lmsys.org/blog/2026-08-27-minimax-h3-h200",
-      "permalink": "https://aihot.virxact.com/items/cmtbtrn8j0222ro2kb7opgppz",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "publishedAt": "2026-08-26T16:00:00.000Z",
-      "discoveredAt": "2026-08-27T17:57:02.062Z",
-      "summary": "SGLang Diffusion 团队在 8×NVIDIA H200 上对 MiniMax-H3 视频生成进行基准测试，其密集无损路径较 Diffusers 快 1.85-1.95×，无近似损失。",
-      "category": "paper",
-      "score": 65,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtbtrn8j0222ro2kb7opgppz"
-      }
-    },
-    {
-      "id": "cmta6v56y03ytroj25ggn7rlo",
-      "title": "C2PA相机经不起现实的考验：Android端可被root攻击伪造签名",
-      "title_en": "C2PA相机经不起现实的考验",
-      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
-      "permalink": "https://aihot.virxact.com/items/cmta6v56y03ytroj25ggn7rlo",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-26T14:05:27.506Z",
-      "discoveredAt": "2026-08-26T14:28:07.466Z",
-      "summary": "安全研究员David Buchanan指出，C2PA相机认证在Android平台上可被攻破。通过root权限提升漏洞（如CVE-2026-43499），攻击者可利用StrongBox硬件签名任意数据，伪造C2PA签名图像和视频，且无需硬件攻击。该问题无法通过常规补丁修复，已提前90天向相关方报告。",
-      "category": "paper",
-      "score": 77,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta6v56y03ytroj25ggn7rlo"
       }
     }
   ]

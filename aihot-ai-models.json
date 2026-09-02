@@ -4,21 +4,93 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmtj0fqfq001nroh9x8mg1s3z",
-      "title": "Claude Fable 5.1 上线 OpenRouter",
-      "title_en": "Claude Fable 5.1 from @AnthropicAI is live on OpenRouter. A direct upgrade for Fable 5 workloads， w…",
-      "url": "https://x.com/OpenRouter/status/2094855056936022304",
-      "permalink": "https://aihot.virxact.com/items/cmtj0fqfq001nroh9x8mg1s3z",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-09-01T18:29:00.000Z",
+      "id": "cmtkme19o02plro5q94jsf94x",
+      "title": "Meta 发布 Muse Spark 1.3，Intelligence Index 得 61-62 分逼近 Claude 与 GPT-5.6",
+      "title_en": "It's worth really grasping this： in a very short time， the race between OpenAI and Anthropic has tur…",
+      "url": "https://x.com/kimmonismus/status/2095265444999410146",
+      "permalink": "https://aihot.virxact.com/items/cmtkme19o02plro5q94jsf94x",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-09-02T21:39:44.000Z",
+      "discoveredAt": "2026-09-02T21:40:23.788Z",
+      "summary": "Meta 发布 Muse Spark 1.3，为五个月内第四个 Muse Spark 版本。max 变体（合作伙伴限时预览）在 Artificial Analysis Intelligence Index 得 62 分。",
+      "category": "ai-models",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtkme19o02plro5q94jsf94x"
+      }
+    },
+    {
+      "id": "cmtkkcguj04aurollf1lq9a9s",
+      "title": "Meta 发布 Muse Spark 1.3，智能体与科学推理能力提升",
+      "title_en": "i really hate to say it， but… gemini who？ 🏎️💨",
+      "url": "https://x.com/alexandr_wang/status/2095249704888197175",
+      "permalink": "https://aihot.virxact.com/items/cmtkkcguj04aurollf1lq9a9s",
+      "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+      "publishedAt": "2026-09-02T20:37:12.000Z",
+      "discoveredAt": "2026-09-02T20:43:13.329Z",
+      "summary": "Meta 发布 Muse Spark 1.3，是五个月内第四个 Muse Spark 版本。xhigh 版在 Artificial Analysis Intelligence Index 得 61 分。",
+      "category": "ai-models",
+      "score": 73,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtkkcguj04aurollf1lq9a9s"
+      }
+    },
+    {
+      "id": "cmtkbdbti01n8roz5k5kt1g98",
+      "title": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber 两款新模型",
+      "title_en": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+      "permalink": "https://aihot.virxact.com/items/cmtkbdbti01n8roz5k5kt1g98",
+      "source": "Google DeepMind：Blog（RSS）",
+      "publishedAt": "2026-09-02T16:18:31.000Z",
+      "discoveredAt": "2026-09-02T16:31:54.900Z",
+      "summary": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber。",
+      "category": "ai-models",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtkbdbti01n8roz5k5kt1g98"
+      }
+    },
+    {
+      "id": "cmtjimzgx083zrobvekm2zmje",
+      "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+      "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+      "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+      "permalink": "https://aihot.virxact.com/items/cmtjimzgx083zrobvekm2zmje",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-09-02T02:57:07.000Z",
+      "discoveredAt": "2026-09-02T03:07:37.845Z",
+      "summary": "Qwen发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+      "category": "ai-models",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtjimzgx083zrobvekm2zmje"
+      }
+    },
+    {
+      "id": "cmtj0fqet001lroh9hyk6rqu0",
+      "title": "Claude Fable 5.1 上线 Claude Code 与 Claude Platform，缓存读取降价 75%",
+      "title_en": "Fable 5.1 is now live in Claude Code and the Claude Platform. It's priced the same as Fable 5， with…",
+      "url": "https://x.com/ClaudeDevs/status/2094851229734277228",
+      "permalink": "https://aihot.virxact.com/items/cmtj0fqet001lroh9hyk6rqu0",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "publishedAt": "2026-09-01T18:13:48.000Z",
       "discoveredAt": "2026-09-01T18:38:06.226Z",
-      "summary": "Anthropic 的 Claude Fable 5.1 已上线 OpenRouter，官方称其为 Fable 5 工作负载的直接升级版本，提升最大的方向包括 agentic coding、长时间运行的工作流、视觉代码生成、金融和分析。使用入口：https://openrouter.ai/anthropic/claude-fable-5.1",
+      "summary": "Claude Fable 5.1 现已上线 Claude Code 和 Claude Platform，定价与 Fable 5 相同，API 缓存读取便宜 75%。模型在长任务中能更久自主推进、更善于提示用户它已卡住，写作风格也更自然。Anthropic 同时发布了 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码与知识工作领域最先进的模型。",
       "category": "ai-models",
       "score": 55,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtj0fqfq001nroh9x8mg1s3z"
+        "canonical": "https://aihot.virxact.com/items/cmtj0fqet001lroh9hyk6rqu0"
       }
     },
     {
@@ -55,6 +127,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtj04igz04xproel00pt2oju"
+      }
+    },
+    {
+      "id": "cmtjjkmd800r4roe4wpq221bc",
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+      "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "permalink": "https://aihot.virxact.com/items/cmtjjkmd800r4roe4wpq221bc",
+      "source": "Anthropic：Newsroom（网页）",
+      "publishedAt": "2026-08-31T16:00:00.000Z",
+      "discoveredAt": "2026-09-02T03:33:48.237Z",
+      "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
+      "category": "ai-models",
+      "score": 87,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtjjkmd800r4roe4wpq221bc"
       }
     },
     {
@@ -199,96 +289,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtb43lik0i9sroamwtuxb1bu"
-      }
-    },
-    {
-      "id": "cmtacq8vz0aedroj24bcix9go",
-      "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
-      "title_en": "Intelligent transcription with Gemini 3.5 Transcribe",
-      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
-      "permalink": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
-      "source": "Google DeepMind：Blog（RSS）",
-      "publishedAt": "2026-08-26T17:01:00.000Z",
-      "discoveredAt": "2026-08-26T17:12:15.529Z",
-      "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
-      "category": "ai-models",
-      "score": 68,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go"
-      }
-    },
-    {
-      "id": "cmta9ciqt07c1roj219h5liie",
-      "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
-      "title_en": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
-      "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
-      "permalink": "https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "publishedAt": "2026-08-26T15:32:46.000Z",
-      "discoveredAt": "2026-08-26T15:37:37.754Z",
-      "summary": "Qwen发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
-      "category": "ai-models",
-      "score": 84,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie"
-      }
-    },
-    {
-      "id": "cmtb6o47l0mmaroamhnqtifvv",
-      "title": "GLM-5.3-Flash：前沿智能进入普惠时代",
-      "title_en": "GLM-5.3-Flash：前沿智能进入普惠时代",
-      "url": "https://www.zhipuai.cn/zh/research/163",
-      "permalink": "https://aihot.virxact.com/items/cmtb6o47l0mmaroamhnqtifvv",
-      "source": "智谱：研究（网页内嵌数据）",
-      "publishedAt": "2026-08-26T14:00:00.000Z",
-      "discoveredAt": "2026-08-27T07:10:28.200Z",
-      "summary": "Zhipu上线并开源GLM-5.3-Flash（320B-A18B），这是GLM-5系列首个原生多模态模型，在AA综合智能指数取得57分，与Claude Opus 4.8持平。其定价为GLM-5.3的1/10（限时1/20），为Opus 4.8的1/40，并首次在大规模流量中由国产芯片集群提供算力支持。模型已接入ZCode等平台，同步开放API调用。",
-      "category": "ai-models",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtb6o47l0mmaroamhnqtifvv"
-      }
-    },
-    {
-      "id": "cmta2veap03nmrolwxllvp4ay",
-      "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
-      "title_en": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
-      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
-      "permalink": "https://aihot.virxact.com/items/cmta2veap03nmrolwxllvp4ay",
-      "source": "Qwen：Blog Retrieval（API）",
-      "publishedAt": "2026-08-26T12:30:00.000Z",
-      "discoveredAt": "2026-08-26T12:36:17.782Z",
-      "summary": "Qwen开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
-      "category": "ai-models",
-      "score": 83,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta2veap03nmrolwxllvp4ay"
-      }
-    },
-    {
-      "id": "cmta7honk0553roj21gque0zw",
-      "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
-      "title_en": "3.3GB 压到 440MB，混元极低 bit 翻译模型跑进直播弹幕",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
-      "permalink": "https://aihot.virxact.com/items/cmta7honk0553roj21gque0zw",
-      "source": "公众号：腾讯混元",
-      "publishedAt": "2026-08-26T08:04:03.000Z",
-      "discoveredAt": "2026-08-26T08:04:03.000Z",
-      "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
-      "category": "ai-models",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmta7honk0553roj21gque0zw"
       }
     }
   ]
