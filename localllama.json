@@ -1,138 +1,139 @@
 {
-  "fetched_at": "2026-09-02T22:47:04.408Z",
+  "fetched_at": "2026-09-03T22:44:48.851Z",
   "source": "r/LocalLLaMA",
   "posts": [
     {
-      "title": "LocalLLaMA is unironically one of the best places to go to get up to date AI news.",
-      "author": "Sadge404",
-      "updated": "2026-09-02T05:09:30+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w50ur8/localllama_is_unironically_one_of_the_best_places/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "One of the other posts today by user confirmed what I've been seeing from the other AI subreddits as well.",
-      "body": "One of the other posts today by user confirmed what I've been seeing from the other AI subreddits as well.\n\nMost of these other subs are 90% trend hopping crypto-bros equivalent people who are seemingly irrelevant most of the time when it comes to advancing AI as the vast majority is not just AI slop, but also human slop whether that be fearmongering or straight anti-ai arguments spat out by relatively uneducated people.\n\nOf course, you also have the main dedicated subs for the big closed/open models which are in of themselves fairly decent. Most of the time now, it is people complaining about one thing or the other about the latest and greatest of their respective lab.\n\nThen you get to the machine learning subs themselves where yes, they do have stuff in regard to AI every now and that can be gold (Don't get me wrong), but then it's mostly meh.\n\nThis sub however, has that interesting balance between the occasional interest in AI architecture breakthroughs that I find fascinating when some of the bigger brained people in here get together to discuss and which I don't really see anywhere else.\n\nsubmitted by /"
-    },
-    {
-      "title": "Qwen will be the king?",
-      "author": "LegacyRemaster",
-      "updated": "2026-09-02T07:53:02+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w53ti8/qwen_will_be_the_king/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "Extended reasoning and post-training appear to be the keys used by DeepSeek, Qwen, and GLM to boost performance (leveraging higher token counts). And Qwen 4 hasn't even been released yet. Of course, we don't know if that release will be open-sourced, but I am optimistic about future models, featuring \"engrams\", that could soon match or surpass 2.",
-      "body": "Extended reasoning and post-training appear to be the keys used by DeepSeek, Qwen, and GLM to boost performance (leveraging higher token counts). And Qwen 4 hasn't even been released yet. Of course, we don't know if that release will be open-sourced, but I am optimistic about future models, featuring \"engrams\", that could soon match or surpass 2.4T parameter models on specific tasks.\n\nsubmitted by /"
-    },
-    {
-      "title": "Everyone is t/s maxing.. 3.8.. but after a week of using it for work I'm tempted to switch back to 3.6",
-      "author": "Chuyito",
-      "updated": "2026-09-02T01:41:27+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w4wjxd/everyone_is_ts_maxing_38_but_after_a_week_of/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "It modifies SO many things in my scripts for what should be a 2 line PR, I get a 100 line linter style mess that looks like a high school freshmen got his hands on vs code and pushed code in. It can't maintain a common style, if I give it a script with a certain naming and layout, 3. 6 one shots small changes that fit into my structure. 3.",
-      "body": "> \"Qwen 3.8 is a damn good coder, but a terrible collaborator\"\n\nIt modifies SO many things in my scripts for what should be a 2 line PR, I get a 100 line linter style mess that looks like a high school freshmen got his hands on vs code and pushed code in.\n\nIt can't maintain a common style, if I give it a script with a certain naming and layout, 3.6 one shots small changes that fit into my structure. 3.8 will add code that looks much more advanced, handling, strict type checks . But if it's just my internal method that gets called in exactly one place, it is way overkill code\n\n3.8 produces DAMN GOOD code, but will get stubborn on wanting it's own parameters and return types. A simple return False works for my particular use case, but here goes Qwen formatting me the perfect return dict full of useful metadata\n\nAm I crazy?\n\nsubmitted by /"
-    },
-    {
-      "title": "GLM 5.3 Flash makes a black hole Minecraft mod running locally on 4x RTX PRO 6000 WS",
-      "author": "Top-Eye-8104",
-      "updated": "2026-09-02T17:13:42+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w5gk2b/glm_53_flash_makes_a_black_hole_minecraft_mod/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "saw the post the other day where people said Minecraft clones aren't impressive anymore, because at this point the whole thing might as well be in the training data. the model is GLM 5. 3 Flash (Q4 quant, running on a rented 4x RTX PRO 6000 box).",
-      "body": "saw the post the other day where people said Minecraft clones aren't impressive anymore, because at this point the whole thing might as well be in the training data. so i tried something slightly different, which is asking a local model to write a mod for the real game, using the Fabric API\n\nthe model is GLM 5.3 Flash (Q4 quant, running on a rented 4x RTX PRO 6000 box). this wasn't done in prompt or a loop, i would ask for changes, then review them and i kept going like that until i was happy with the result. the first iteration took around an hour or so, the result was sorta underwhelming, the black hole would spawn, but it was small and barely did structural damage. after that attempt i gave it some reference images(black holes in space, lightning and effects examples). the new result looked better, but i still wanted more impact from it(and also decided to make it a black hole gun, instead of just the black hole item). it took a lot of turns to get to the end result\n\nOutput tokens 7.6M Time spent ~9 hours Avg. decode speed ~96 tok/s\n\nthe mod adds a black hole riflle, which when shot spawns the black hole that starts sucking in blocks and has some pretty sick visuals (the light rings that shrink all the way into the black hole and obviously the black hole itself) after which it turns into a huge explosion crater, wiping out quite a few chunks\n\nyou can get the mod here on github\n\ni ran the local model in atomic.chat (i'm on the Atomic team any feedback is appreciated). curious what else people have gotten local models to mod into the game, make sure to share it in the comments\n\nsubmitted by /"
-    },
-    {
-      "title": "H3-World: Turning Language Understanding into World Control",
-      "author": "sachasayan",
-      "updated": "2026-09-02T13:35:44+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w5akpy/h3world_turning_language_understanding_into_world/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "Language-Native Control: Composes character and camera actions into textual instructions and injects them through MiniMax-H3’s pretrained text pathway. Temporally Grounded: Assigns one action prompt to each video latent interval, enabling precise control when actions change over time.",
-      "body": "Language-Native Control: Composes character and camera actions into textual instructions and injects them through MiniMax-H3’s pretrained text pathway.\n\nTemporally Grounded: Assigns one action prompt to each video latent interval, enabling precise control when actions change over time.\n\nEfficient & Generalizable: Uses only 8,000 gameplay samples, 10,000 LoRA steps, and 0.199% trainable parameters to achieve controllable character and camera motion, including unseen action compositions and visual scenarios.\n\n✏️ Paper: https://huggingface.co/papers/2609.01560\n\n📄 ArXiv: https://arxiv.org/abs/2609.01560\n\n💻 Code: https://github.com/Danzer1xxxxChan/H3-World\n\n🏠 Project: https://danzer1xxxxchan.github.io/H3-World/\n\n🤗 Model: https://huggingface.co/DANNY621/H3-World\n\nsubmitted by /"
-    },
-    {
-      "title": "The DGX Spark joins the 5090 in its price increase.",
-      "author": "Sadge404",
-      "updated": "2026-09-02T01:27:12+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w4w8kd/the_dgx_spark_joins_the_5090_in_its_price_increase/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "A comment really doesn't need to be made, does it? I looked away from the 5090 for a week to other options like the DGX Spark and the M5 Ultra. Both of which... these big corpos are buying to hell and back.",
-      "body": "A comment really doesn't need to be made, does it? I looked away from the 5090 for a week to other options like the DGX Spark and the M5 Ultra. Both of which... these big corpos are buying to hell and back.\n\nIs the future used hardware?\n\nsubmitted by /"
-    },
-    {
-      "title": "DGX Spark about to jump in price? Asus Ascent GX10 jumped from $3999 to $5999 today...",
-      "author": "mountainyoo",
-      "updated": "2026-09-01T23:06:50+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w4syn5/dgx_spark_about_to_jump_in_price_asus_ascent_gx10/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "Asus Ascent GX10 is now priced at $5999 (1TB), $6999 (2TB), and $7999 (4TB). I see no reason why they would do this unless they had some knowledge the DGX Spark was about to jump up in price. Unless there's some other reason that they would throw a 50% price hike at it that I'm not thinking of.",
-      "body": "Asus Ascent GX10 is now priced at $5999 (1TB), $6999 (2TB), and $7999 (4TB).\n\nBuy ASUS Ascent GX10 | Desktop-AI-supercomputer | Networking-IoT-Servers | ASUS eShop USA\n\nI see no reason why they would do this unless they had some knowledge the DGX Spark was about to jump up in price. Unless there's some other reason that they would throw a 50% price hike at it that I'm not thinking of.\n\nBonkers mode.\n\nsubmitted by /"
-    },
-    {
-      "title": "Do we forget about another Qwen model for a while now ?",
-      "author": "chocofoxy",
-      "updated": "2026-09-02T14:14:05+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w5bkrf/do_we_forget_about_another_qwen_model_for_a_while/",
-      "score": null,
-      "comments": null,
-      "flair": "",
-      "summary": "So when Qwen3.8 27b dropped they were hinting for another model which is Qwen3.8-next-flash , i was hoping for something more light like Qwen 3.6 35b and we got a large one but since the Qwen 3 and 3.5, they reduced the number of models they publish we used to get very small 0.8b 2b 9b to very large models but now we get only two at time although the time to publish a new model has been also reduc",
-      "body": "So when Qwen3.8 27b dropped they were hinting for another model which is Qwen3.8-next-flash , i was hoping for something more light like Qwen 3.6 35b and we got a large one but since the Qwen 3 and 3.5, they reduced the number of models they publish we used to get very small 0.8b 2b 9b to very large models but now we get only two at time although the time to publish a new model has been also reduced\n\nsubmitted by /"
-    },
-    {
-      "title": "Confirmed bolting Q8 NGram into IQ4 Qwen no speed degradation",
+      "title": "My RULE of Thumb of choosing a models",
       "author": "Altruistic_Heat_9531",
-      "updated": "2026-09-02T18:32:00+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w5isz3/confirmed_bolting_q8_ngram_into_iq4_qwen_no_speed/",
+      "updated": "2026-09-03T06:27:49+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w5zdx4/my_rule_of_thumb_of_choosing_a_models/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "This came from another thread or comment. I forgot exactly where, but the basic idea was to replace the 51B N-gram layer in Qwen 3. 8 Next with a much higher precision version. Someone running a 5090 replaced the N-gram portion of their Qwen 3. 8 UD Q4 model with BF16.",
-      "body": "This came from another thread or comment. I forgot exactly where, but the basic idea was to replace the 51B N-gram layer in Qwen 3.8 Next with a much higher precision version.\n\nSomeone running a 5090 replaced the N-gram portion of their Qwen 3.8 UD Q4 model with BF16.\n\nSince I'm already running IQ4_XS, I wanted to try something similar. I don't have enough storage for the BF16 N-gram weights right now, so I replaced the lower-precision N-gram portion with Q8 instead.\n\nI'm still testing whether it improves the actual model output, but in terms of inference speed, the difference appears to be very small.\n\nBefore bolting on the Q8 N-gram:\n\nn_gen = 2588, tg = 8.82 t/s, tg_3s = 8.81 t/s n_gen = 2616, tg = 8.82 t/s, tg_3s = 9.19 t/s n_gen = 2645, tg = 8.83 t/s, tg_3s = 9.37 t/s n_gen = 2675, tg = 8.84 t/s, tg_3s = 9.78 t/s n_gen = 2704, tg = 8.84 t/s, tg_3s = 9.50 t/s n_gen = 2732, tg = 8.85 t/s, tg_3s = 9.06 t/s n_gen = 2761, tg = 8.85 t/s, tg_3s = 9.32 t/s n_gen = 2790, tg = 8.86 t/s, tg_3s = 9.50 t/s n_gen = 2819, tg = 8.86 t/s, tg_3s = 9.39 t/s n_gen = 2847, tg = 8.87 t/s, tg_3s = 9.22 t/s n_gen = 2875, tg = 8.87 t/s, tg_3s = 9.15 t/s\n\nWith the Q8 N-gram bolted onto IQ4_XS:\n\nn_gen = 263, tg = 10.76 t/s, tg_3s = 11.04 t/s n_gen = 294, tg = 10.70 t/s, tg_3s = 10.18 t/s n_gen = 329, tg = 10.76 t/s, tg_3s = 11.32 t/s n_gen = 361, tg = 10.73 t/s, tg_3s = 10.46 t/s n_gen = 395, tg = 10.76 t/s, tg_3s = 11.11 t/s n_gen = 430, tg = 10.81 t/s, tg_3s = 11.37 t/s n_gen = 460, tg = 10.75 t/s, tg_3s = 9.91 t/s n_gen = 494, tg = 10.77 t/s, tg_3s = 11.16 t/s n_gen = 531, tg = 10.86 t/s, tg_3s = 12.15 t/s\n\nSo far, there doesn't seem to be any meaningful speed penalty from replacing the lower-precision N-gram layer with Q8. The actual output quality is still being tested. It looks like Q8 Ngram is faster, but at the end both are steady state at 10.1~ tok/s -ish.\n\nAnd without MTP since i am using earlier merge from unsloth,\n\nRAM 96GB DDR4 (32x3 Three channel active 2400MHZ)\n\nXeon e5 2690v4\n\nRTX 3090 capped at 250 W\n\nEdit: the state_dict grew from 90~ GB to 115GB\n\nEdit 2: Fck me i forgot to put the code, for stitching it, wait 8 hours from now i'll upload it since it is already very very late at night\n\nsubmitted by /"
+      "summary": "This is mostly for setting up for expectation, since personally without LLM i could take 3 days (15 hours of active programming) to debug or implement a feature, but with Qwen 27B (even before Qwen 3. 8) it take 4 hours.",
+      "body": "This is mostly for setting up for expectation, since personally without LLM i could take 3 days (15 hours of active programming) to debug or implement a feature, but with Qwen 27B (even before Qwen 3.8) it take 4 hours.\n\nAnd yes 0.5 tok/s is human, not accounting of deletion and pausing, that's also the reason i am fine leaving overnight code base wide analysis or fin tech and deep research.\n\nsubmitted by /"
     },
     {
-      "title": "Android Studios native Gemma 4 runs on llama.cpp",
-      "author": "DrBattletoad",
-      "updated": "2026-09-02T07:23:19+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w53b96/android_studios_native_gemma_4_runs_on_llamacpp/",
+      "title": "Qwen-3.8-Next-Flash Ngram Hot-Swappable Knowledge Injector for llama.cpp",
+      "author": "ortegaalfredo",
+      "updated": "2026-09-03T11:40:27+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w64y26/qwen38nextflash_ngram_hotswappable_knowledge/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "I'm not sure how many people care about Android Studio, but I think it's cool that Google uses llama. cpp. My guess is that it is Vulkan and the QAT versions of Gemma 4. It supports multi-GPU and 31B has a max. context length of 128k.",
-      "body": "https://preview.redd.it/6e9xb57a42nh1.png?width=787&format=png&auto=webp&s=ffae7996bbf8ab00498cc62c733e7597dc550f24\n\nI'm not sure how many people care about Android Studio, but I think it's cool that Google uses llama.cpp.\n\nMy guess is that it is Vulkan and the QAT versions of Gemma 4. It supports multi-GPU and 31B has a max. context length of 128k.\n\nIt uses 34 GB VRAM when fully loaded. I don't see an option to change the context length or show PP/TG speed.\n\nsubmitted by /"
+      "summary": "Looking into the new Qwen architecture, I was curious if you could modify the Ngram PLE Table to make it work like a long-term knowledge database. It turns out that, with some limitations, you can. I coded a small modification to llama. cpp to modify the table in-memory, allowing you to patch it with new data in real time.",
+      "body": "Looking into the new Qwen architecture, I was curious if you could modify the Ngram PLE Table to make it work like a long-term knowledge database. It turns out that, with some limitations, you can.\n\nI coded a small modification to llama.cpp to modify the table in-memory, allowing you to patch it with new data in real time. The PLE table is updated on every prompt, so now you can hot-swap parts of it without reloading the model.\n\nThe limitation is that it’s hard to control the output reliably, as the embeddings are injected early in the layers. However, with some techniques, you can influence the model’s output with simple modifications, as the example shows.\n\nI created two repos:\n\nThe modification of llama.cpp here: https://github.com/ortegaalfredo/llama.cpp-NLTM\n\nThe Ngram knowledge injector (a kind of compiler to create the table patches) here: https://github.com/ortegaalfredo/ngram-knowledge-injector\n\nThere are some limitations in the project, as the PLE table needs to be memory-mapped into memory (this is the default in llama.cpp), and I have only tested it with q8 quantization, so you need quite a bit of memory to test this.\n\nCan this be used as a new way of low-cost training? Perhaps. Its not easy at the current state but with simple modifications, I think you could easily create models with long-term instantaneously hot-swappable memory.\n\nsubmitted by /"
     },
     {
-      "title": "Your favorite fastest abliterated/safety removed 3.6 and 3.8 27b?",
-      "author": "ThomasAger",
-      "updated": "2026-09-02T08:29:39+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w54fqs/your_favorite_fastest_abliteratedsafety_removed/",
+      "title": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token",
+      "author": "jacek2023",
+      "updated": "2026-09-03T13:47:54+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w67wso/ifmk2horizonmova36ba4bgguf_hugging_face/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Not written by AI all mistakes mine. I saw people on the subreddit saying that 3. 6 works better without thinking . It made me want to know for certain about which is better, 3. 6 or 3. 8 for low thinking tasks. I only use abliterated models (safety removed) because it makes the model better at a lot of what I need. I want to compare abliterated Qwen 3.",
-      "body": "Not written by AI all mistakes mine. I saw people on the subreddit saying that 3.6 works better without thinking . It made me want to know for certain about which is better, 3.6 or 3.8 for low thinking tasks. I only use abliterated models (safety removed) because it makes the model better at a lot of what I need. I want to compare abliterated Qwen 3.6 27b and abliterated Qwen 3.8 27b on some instruction following benchmarks with thinking off.\n\nI was just curious about your personal favorite safety removed/fine-tuned variants for these 27bs , as I know that there can be some major variation and some junky quants out there.\n\nDoes anyone have some favorite and fast 3.6 and 3.8 models?\n\nMy specs: I have 24GB VRAM (NVIDIA Geforce RTX 5090 Laptop) and I do not want to offload, so some quant required.\n\nI have tried a few different models, but they are all a little slow. Some MTP variations for 3.6 for example ends up being around the same speed as non MTP for me for some reason. I am pretty sure my card is NVFP4 enabled also, but I'm not certain I've seen the results from that either...\n\nBased on some redditors comment, this is what I use for my abliterated 3.8 27b currently: Huihui-Qwen3.8-27B-abliterated-NVFP4-GGUF\n\nsubmitted by /"
+      "summary": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token. We have released the final checkpoint; intermediate checkpoints, along with the data and the training code, will be released.",
+      "body": "more sizes (probably still uploading):\n\nhttps://huggingface.co/IFM/K2-Horizon-32B-GGUF\n\nhttps://huggingface.co/IFM/K2-Horizon-7B-GGUF\n\nhttps://huggingface.co/IFM/K2-Horizon-3.7B-GGUF\n\nhttps://huggingface.co/IFM/K2-Horizon-0.9B-GGUF\n\nfrom IFM:\n\nK2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token. We have released the final checkpoint; intermediate checkpoints, along with the data and the training code, will be released.\n\nK2-Horizon-MoVA-36B-A4B Highlights\n\nFrontier-class results at 4B active parameters. On agentic and reasoning benchmarks it outscores open weight dense (approximately 30B model size) and MoE models up to 15× its size; and also performs competitively against closed frontier models (see Benchmark Results ).\n\n512K context. Native 524,288-token context from the midtraining stages onward.\n\nIntermediate checkpoints. Intermediate checkpoints will be released so capability changes can be studied across training rather than at a single checkpoint.\n\nFully open. Training data/recipe and the training code will be made public.\n\ncollection: https://huggingface.co/collections/IFM/k2-horizon\n\nsubmitted by /",
+      "sourceLabel": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face"
     },
     {
-      "title": "Gave a try to Exllamav3 and it's great!",
-      "author": "Leflakk",
-      "updated": "2026-09-01T23:24:47+00:00",
-      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w4tejh/gave_a_try_to_exllamav3_and_its_great/",
+      "title": "Bernie Sanders proposes to ban AI",
+      "author": "the320x200",
+      "updated": "2026-09-03T17:44:45+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w6egid/bernie_sanders_proposes_to_ban_ai/",
       "score": null,
       "comments": null,
       "flair": "",
-      "summary": "Following this post I decided to try GLM 5. 3 Flash on a 8x3090 setup and I can now run a Q4 with surprising speed; 700tk/s prefill & 42tk/s decoding! (lcp & vllm do not allow me to get that). Was afraid about quality but 30m tokens with DSH and no issue (did not test vision yet, but looks supported).",
-      "body": "Following this post I decided to try GLM 5.3 Flash on a 8x3090 setup and I can now run a Q4 with surprising speed; 700tk/s prefill & 42tk/s decoding! (lcp & vllm do not allow me to get that).\n\nWas afraid about quality but > 30m tokens with DSH and no issue (did not test vision yet, but looks supported).\n\nJust to say that I am really grateful to Turboderp and we should really support as much as possible others projects even if they do not comply with all our needs yet and not rely only on the big guys.\n\nsubmitted by /"
+      "summary": "Defined as AI exceeding human cognitive abilities. 20 years in prison. Plenty of local models already fall under that big of an umbrella in some capacities. This is why it's not enough to say that you could torrent open models so who cares what the politicians do. They want you to not have access to anything good and will put you in prison for it.",
+      "body": "Defined as AI exceeding human cognitive abilities. 20 years in prison. Plenty of local models already fall under that big of an umbrella in some capacities.\n\nThis is why it's not enough to say that you could torrent open models so who cares what the politicians do. They want you to not have access to anything good and will put you in prison for it.\n\nsubmitted by /"
+    },
+    {
+      "title": "\"ModelScope\" Is a Hugging Face Alternative now that Nvidias deal is a Go",
+      "author": "Hannibalj2ca",
+      "updated": "2026-09-03T16:02:32+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w6bkkh/modelscope_is_a_hugging_face_alternative_now_that/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "I liked the Nvidia that focused on just GPUs for gaming, not on the Nvidia of today which seem want power consolidation. Modelscope is another platform for those that simply want to know an alternative if things go south.",
+      "body": "I liked the Nvidia that focused on just GPUs for gaming, not on the Nvidia of today which seem want power consolidation.\n\nModelscope is another platform for those that simply want to know an alternative if things go south. However, time will tell what happens to huggingface after the deal is finalized\n\nLink: https://modelscope.cn/home\n\nsubmitted by /"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next MTP merged in ik_llama.cpp (integrated head or separate -md file)... 45 → 90 tok/s on a 5090 + 128GB, works down to a 12GB 4070",
+      "author": "Alternative_Will5974",
+      "updated": "2026-09-03T16:30:00+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w6ccgs/qwen38flashnext_mtp_merged_in_ik_llamacpp/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "ikllama. cpp merged qwen4exp MTP support yesterday (PR #2369, mine, reviewed and tested by four other people on their own hardware). It's on main now, no fork or patch needed. Posting since the last couple threads had people saying MTP for this model only exists as an unsloth fork PR... there's another path.",
+      "body": "ik_llama.cpp merged qwen4exp MTP support yesterday (PR #2369, mine, reviewed and tested by four other people on their own hardware). It's on main now, no fork or patch needed. Posting since the last couple threads had people saying MTP for this model only exists as an unsloth fork PR... there's another path.\n\nFlash-Next ships a 2.6B MTP head that the public converters were dropping. With it loaded the model drafts its own next tokens and then verifies them, so output is identical to running without it. On code I get 93-99% draft acceptance, prose more like 60-65%.\n\nNumbers, decode tok/s, no MTP → MTP. My 5090 + 128GB DDR5, experts on CPU: 45 → 90 on coding traffic with ngram-mod chained in front. treo on an RTX Pro 6000: 85 → 113 on code, but story went 83 → 59, so not a free win on prose yet. joelfarthing on a 12GB 4070: 9.5 → 12.5 on code at n_max=1. Caveats: single slot for now (-np 1), and --jinja lowers acceptance because the template turns thinking on by default and reasoning text drafts like prose.\n\nStock CUDA build, then:\n\nllama-server -m Qwen3.8-Flash-Next-MXFP4-ngramQ8-NextN.gguf -ngl 999 -ncmoe 38 -fa 1 -c 196608 -ub 512 -ctk q8_0 -ctv q8_0 -np 1 -t 24 -tb 32 --jinja --spec-type ngram-mod:n_min=4 --spec-type mtp:n_max=4 --spec-ckpt-mode gpu-fallback -rtr -muge\n\nAlready have an unsloth or other quant? The separate head route works on the same code, no re-pull: -md .gguf --spec-type mtp:n_max=4. dzannotti's and ji-farthing's heads were both tested during review. Haven't tried unsloth's \"shared\" shards yet, different layout.\n\nPR: https://github.com/ikawrakow/ik_llama.cpp/pull/2369\n\nMy integrated-head MXFP4 files: https://huggingface.co/jamesrogers/Qwen3.8-Flash-Next-MTP-MXFP4-GGUF\n\nji-farthing's ik_llama KT quants + head: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF\n\nCurious what you measure, especially anything AMD!!\n\nEDIT: Forgot to mention that multi-GPU has not been worked into this, just single GPU for now; getting multi setups addressed is on the to-do list and anyone with setups to help test would be great, so please DM me if that’s you!\n\nsubmitted by /"
+    },
+    {
+      "title": "Could the shortage be getting better?",
+      "author": "OvertaxedOne",
+      "updated": "2026-09-03T12:25:53+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w65xkj/could_the_shortage_be_getting_better/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "I had to swing down to my local Microcenter yesterday and while I was browsing around the store I noticed something odd... Inventory.",
+      "body": "I had to swing down to my local Microcenter yesterday and while I was browsing around the store I noticed something odd... Inventory. They must have had a few dozen 5090's on the shelf in various configurations/board partners (for comparison, the last time I was there a few months ago they had 1 available for purchase and it was a AIO liquid cooled model that was absolutely off the charts expensive). They also had a few prebuilts on the floor with 5090's in them. Granted, this is one market one store, but.. IDK, perhaps some hopium.... But for anyone who wants a 5090, Microcenter in Charlotte has a bunch of them in the mid 4K range for price. Yes, that price is ridiculous, I know.\n\nThey also had 2 Pro 6000's 96GB in the store, on \"sale\" for 14K a pop. In case anyone is looking to spend used car money on a card. ;) I'd never seen a 96GB 6000 at my local store before available for sale.\n\nsubmitted by /"
+    },
+    {
+      "title": "Frontier models sabotaging local AI implementations?",
+      "author": "ikilaie",
+      "updated": "2026-09-03T13:37:43+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w67nkz/frontier_models_sabotaging_local_ai/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "For a few days I've been working on creating a custom local-only harness for some work related research using Codex / GPT 5. 6 Sol and the model feels not only dumber than usual, but straight up counter productive.",
+      "body": "For a few days I've been working on creating a custom local-only harness for some work related research using Codex / GPT 5.6 Sol and the model feels not only dumber than usual, but straight up counter productive. It keeps adding unnecessary guardrails for the local agents, removes tools that I clearly specified I want them to have and always drifts from the original requirements. I need to ask it to change things multiple times, which ends up on some over-complicated final product.\n\nThis is not the first time either, for months I've been avoiding asking frontier llms for local AI advice as it always seems to be bad, obsolete, or clueless even with internet search. Sometimes it still recommends me Qwen3-Coder-Next for my set up when it's clearly an obsolete model. I'm pretty sure I'm not the only one either as I've heard from other people.\n\nWhat have you been your experiences on this?\n\nsubmitted by /"
+    },
+    {
+      "title": "I released sanoTTS: smallest complete TTS stack in 294k params (337 KB) that runs on $3 microcontroller and a 1.46m one that beats models 3x and 10x it's size",
+      "author": "Affectionate_Hat_585",
+      "updated": "2026-09-03T22:01:27+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w6lmmg/i_released_sanotts_smallest_complete_tts_stack_in/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "I have been trying to squeeze TTS stack down far enough to run in a $3 chip which has 512kb of SRAM without NPU. While trying to get to that milestone i built sanoTTS which has - 11 voices, 6 languages - params size ranging from 294k - 2. 2m. For comparison we are 1000x smaller than kokoro, 9000x smaller than voxtral TTS - 1. 5m model has a SCOREQ of 4. 13 and UTMOS of 4.",
+      "body": "I have been trying to squeeze TTS stack down far enough to run in a $3 chip which has 512kb of SRAM without NPU. While trying to get to that milestone i built sanoTTS which has - 11 voices, 6 languages - params size ranging from 294k - 2.2m. For comparison we are 1000x smaller than kokoro, 9000x smaller than voxtral TTS - 1.5m model has a SCOREQ of 4.13 and UTMOS of 4.10 - 337kb for 294k model when quantized into int8 - can be run in website with web assembly npm install sanotts-web - there is a recipe to follow so that you can extend to more languages, voice\n\nI can tell you with confidence that this family release contains the smallest neural TTS model ever with around 2% WER on whisper.\n\nPlease check it out on : https://github.com/ampixa/sanoTTS\n\nfor live demo: https://tts.ampixa.com/sanoTTS\n\nHF: https://huggingface.co/ampixa/sanoTTS\n\non SCOREQ sanoTTS-Amy(1.51m) is better than Inflect Nano(4.63m) and KittenTTS(15m) i.e 4.13 vs 3.81 vs 3.02\n\non esp32 microcontroller we are getting RTF of 0.225 which in plain terms means 4sec of audio is generated in 1sec\n\nHappy to answer your queries.\n\nsubmitted by /"
+    },
+    {
+      "title": "GLM5.3 Flash over DSV4 Flash?",
+      "author": "rm-rf-rm",
+      "updated": "2026-09-03T01:43:06+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w5ttgb/glm53_flash_over_dsv4_flash/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "I've been using Deepseek V4 Flash 0731 for a few weeks now and while I havent thrown it anything very hard, im quite happy with it. Using through antirez's great ds4 project. They've added support for GLM 5. 3 Flash and according to benchmarks, its a level above DSV4 Flash.",
+      "body": "I've been using Deepseek V4 Flash 0731 for a few weeks now and while I havent thrown it anything very hard, im quite happy with it. Using through antirez's great ds4 project. They've added support for GLM 5.3 Flash and according to benchmarks, its a level above DSV4 Flash.\n\nHowever, looking for real user feedback if anyone's made the switch and seen tangible improvements in GLM 5.3 over DSV4 Flash.\n\nRunning M3 Ultra 256GB Mac Studio\n\nsubmitted by /"
+    },
+    {
+      "title": "Google released TimesFM-3, a 330M-parameter time series foundation model with native multivariate forecasting (non-commercial license)",
+      "author": "Balance-",
+      "updated": "2026-09-03T19:34:06+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w6hlpt/google_released_timesfm3_a_330mparameter_time/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "TimesFM-3 is the third generation of Google Research's zero-shot forecasting model, and the main change from 2. 5 is that it handles multivariate inputs natively instead of being limited to a single series' own history.",
+      "body": "TimesFM-3 is the third generation of Google Research's zero-shot forecasting model, and the main change from 2.5 is that it handles multivariate inputs natively instead of being limited to a single series' own history. It supports multiple simultaneous targets, past-only covariates, and past-future covariates (things like holidays or planned promotions where future values are known), all without fine-tuning.\n\nArchitecturally it's a decoder-only transformer with 20 layers at model dim 1280 and 16 heads, patching 32 contiguous time steps per token, and alternating two attention types per layer: causal attention across time within a series, and full attention across series at a given time step. Forecasts are generated in one forward pass rather than autoregressively — the model appends masked placeholder tokens for the whole horizon and fills them in simultaneously, with past-future covariates left unmasked so their known values stay visible. It outputs 9 quantiles (10th–90th percentile) per target per horizon step.\n\nPretraining used GiftEvalPretrain (minus fev-bench overlaps), Wikipedia pageviews through Nov 2023, Google Trends queries through end of 2022, plus synthetic data, totaling over 1 trillion time points. Google reports best average rank on Gift-Eval, FEV-Bench, and Time against Chronos-2, Toto 2.0, and TimesFM-2.5, and claims the univariate-only mode already matches or beats those baselines before covariates are added.\n\nWorth flagging: the weights are under the TimesFM Non-Commercial License v1.0, so this isn't a drop-in for production use the way some other releases are. PyTorch weights are on Hugging Face and GitHub now; BigQuery integration is listed as coming later.\n\nResearch Blog: https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/\n\nCode: https://github.com/google-research/timesfm\n\nWeights: https://huggingface.co/google/timesfm-3.0-pytorch\n\nsubmitted by /-"
+    },
+    {
+      "title": "AntLing open sourced Ling-3.0-flash-Fin, a finance-enhanced model for real-world workflows",
+      "author": "niacolhealth",
+      "updated": "2026-09-03T15:53:17+00:00",
+      "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w6bb0b/antling_open_sourced_ling30flashfin_a/",
+      "score": null,
+      "comments": null,
+      "flair": "",
+      "summary": "Ling-3. 0-flash-Fin is the first finance-enhanced model in the Ant Ling family. Developed by Ant Group with leading financial institutions and domain experts, it extends Ling 3. 0 flash through continued training on high-quality financial data.",
+      "body": "Ling-3.0-flash-Fin is the first finance-enhanced model in the Ant Ling family. Developed by Ant Group with leading financial institutions and domain experts, it extends Ling 3.0 flash through continued training on high-quality financial data.\n\nWith 124B total parameters, 5.1B activated parameters, and a 256K context window, the model combines financial expertise with efficient inference for long-horizon agent workflows\n\nsubmitted by /"
     }
   ]
 }

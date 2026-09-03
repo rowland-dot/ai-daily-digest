@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmtl25m9c0e89roalh6qci0r5",
+      "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+      "title_en": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+      "permalink": "https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-09-03T04:49:35.840Z",
+      "discoveredAt": "2026-09-03T05:01:47.111Z",
+      "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
+      "category": "paper",
+      "score": 86,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5"
+      }
+    },
+    {
       "id": "cmtj2y06p04bwroh9d8oszszo",
       "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
       "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
@@ -73,24 +91,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw"
-      }
-    },
-    {
-      "id": "cmtd83hb4018fro667i1tbc34",
-      "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
-      "title_en": "Automated researchers can reliably mitigate alignment failures",
-      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "permalink": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-08-27T16:00:00.000Z",
-      "discoveredAt": "2026-08-28T17:25:56.912Z",
-      "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
-      "category": "paper",
-      "score": 78,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34"
       }
     }
   ]

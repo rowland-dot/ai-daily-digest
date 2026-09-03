@@ -1,8 +1,80 @@
 {
-  "count": 10,
+  "count": 13,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtm02uu60t29row5y74k0eai",
+      "title": "OpenAI 推出 Daybreak for Frontline Defenders，投入10亿美元支持一线网络防御",
+      "title_en": "Daybreak for Frontline Defenders： $1B to protect essential services",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "permalink": "https://aihot.virxact.com/items/cmtm02uu60t29row5y74k0eai",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-09-03T13:15:00.000Z",
+      "discoveredAt": "2026-09-03T20:51:25.010Z",
+      "summary": "OpenAI 发布 Daybreak for Frontline Defenders 全球计划，承诺提供10亿美元的 Daybreak 补贴访问、培训、技术支持与合作，计划在未来六个月内消耗，优先支持水处理、电网、州和地方政府、社区银行、非营利组织和开源维护者等资源有限的一线防御者。",
+      "category": "ai-products",
+      "score": 65,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtm02uu60t29row5y74k0eai"
+      }
+    },
+    {
+      "id": "cmtm1k75y0ue9row58wfax9nf",
+      "title": "xAI 发布 Grok Bot 企业版，Grok 与 Cursor Enterprise 客户两周免费",
+      "title_en": "Grok Bot for Enterprise",
+      "url": "https://x.ai/news/grok-bot-for-enterprise",
+      "permalink": "https://aihot.virxact.com/items/cmtm1k75y0ue9row58wfax9nf",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-03T21:32:36.611Z",
+      "summary": "xAI 宣布 Grok Bot 面向企业开放，Grok 和 Cursor Enterprise 客户未来两周可免费使用并邀请全组织成员，包括没有现有席位的员工。",
+      "category": "ai-products",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtm1k75y0ue9row58wfax9nf"
+      }
+    },
+    {
+      "id": "cmtlu23pp0ng4row5uxwtpazb",
+      "title": "xAI 设计 Grok Bot：为持久化智能体重构交互界面",
+      "title_en": "Designing Grok Bot for a world of persistent agents",
+      "url": "https://x.ai/news/designing-grok-bot",
+      "permalink": "https://aihot.virxact.com/items/cmtlu23pp0ng4row5uxwtpazb",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-03T18:02:33.253Z",
+      "summary": "xAI 发布设计文章，介绍 Grok Bot 如何为超越单次会话的持久化智能体设计界面。产品以 Bot 为主要对象而非会话，Bot 拥有身份、记忆、自己的计算机和工具；头像动效呈现空闲、工作、等待、阻塞、思考、完成等状态；工作区提供状态、预览、接管三级访问。",
+      "category": "ai-products",
+      "score": 70,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtlu23pp0ng4row5uxwtpazb"
+      }
+    },
+    {
+      "id": "cmtlg0ht406hlrow5clznd0ld",
+      "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
+      "title_en": "Give Your Coding Agents a Memory You Own",
+      "url": "https://huggingface.co/blog/funes",
+      "permalink": "https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld",
+      "source": "Hugging Face：Blog（RSS）",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-03T11:29:42.806Z",
+      "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。",
+      "category": "ai-products",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld"
+      }
+    },
     {
       "id": "cmtkh71ky017vrolly7trswyx",
       "title": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
@@ -163,24 +235,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x"
-      }
-    },
-    {
-      "id": "cmtc7nham01clrodmgnklmfp8",
-      "title": "Claude Console 新增个人密钥与服务账号密钥",
-      "title_en": "Claude Platform release notes - August 27， 2026",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2026",
-      "permalink": "https://aihot.virxact.com/items/cmtc7nham01clrodmgnklmfp8",
-      "source": "Claude Platform：开发者版本说明（RSS）",
-      "publishedAt": "2026-08-27T00:00:00.000Z",
-      "discoveredAt": "2026-08-28T00:25:42.932Z",
-      "summary": "Claude Console 现已支持创建个人密钥和服务账号密钥，它们以关联账户身份运行并继承相同权限，账户从组织移除后密钥即失效。组织管理员可借此更轻松追踪各账户用量并确保密钥使用合规。这些 API 密钥可限定到特定工作区，也可用于管理端点及账户可访问的任何工作区，工作区 API 密钥仍作为旧版选项保留支持。",
-      "category": "ai-products",
-      "score": 63,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtc7nham01clrodmgnklmfp8"
       }
     }
   ]
