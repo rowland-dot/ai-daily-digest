@@ -1,35 +1,43 @@
 {
-  "generated_at": "2026-09-03T22:50:00Z",
+  "generated_at": "2026-09-04T22:33:31Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w64y26/qwen38nextflash_ngram_hotswappable_knowledge/": {
-      "en": "Alfredo Ortega modified llama.cpp to hot-swap the Ngram Programmable Lookup Embedding table used by the new Qwen 3.8 Next architecture, letting users patch knowledge into the model in memory without reloading it. Because embeddings are injected early in the layers, output control is limited, but simple influence works. He released the llama.cpp fork and a companion knowledge injector that compiles table patches, framing it as a possible route to instantly hot-swappable long term memory for local models.",
-      "zh": "Alfredo Ortega 修改 llama.cpp，使 Qwen 3.8 Next 架构的 Ngram Programmable Lookup Embedding 表可在内存中热替换，无需重载模型即可注入新知识。由于嵌入在早期层注入，输出控制精度有限，但简单影响是可行的。他同时开源了修改版 llama.cpp 与配套的知识注入编译器，视为面向本地模型即时热切换长期记忆的低成本路径。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w78ztg/you_can_now_run_a_90m_conversational_llm_on_the/": {
+      "en": "A developer got a 90 million parameter conversational language model running on a Sony PSP from 2004, roughly the largest size the handheld can host without unusable latency. Speed lands around zero point five to zero point six tokens per second, meaning one to three minutes per reply. The model produces basic poems, short stories, and shaky trivia answers, sometimes hallucinating outright. The source code is published on GitHub under the name LLMPSP.",
+      "zh": "开发者把一个 9000 万参数的对话语言模型跑在了 2004 年的 Sony PSP 上,这基本是该掌机能承载而不至于慢到无法使用的上限。速度约为每秒零点五到零点六个词元,一次回复要一到三分钟。模型能写简单的诗、短篇故事和不太靠谱的常识回答,偶尔胡编。项目已在 GitHub 以 LLMPSP 之名开源。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w67wso/ifmk2horizonmova36ba4bgguf_hugging_face/": {
-      "en": "IFM released K2 Horizon, a sparse Mixture of Experts model that pairs Mixture of Values attention with 36 billion stored parameters and 4 billion activated per token. On agentic and reasoning benchmarks IFM claims it outscores open dense and Mixture of Experts models up to fifteen times its size, and performs competitively against closed frontier models. It supports a native 524288 token context. The final checkpoint is public, and training data, recipe, code, and intermediate checkpoints will all be released.",
-      "zh": "IFM 发布 K2 Horizon 稀疏模型：混合专家架构搭配全新的混合数值注意力，总参数 360 亿，每 token 仅激活 40 亿。在智能体与推理基准上，IFM 称其超越至多 15 倍规模的开源稠密与混合专家模型，并与前沿闭源模型持平。原生支持 524288 token 上下文。最终检查点已开放，训练数据、配方、代码与中间检查点也将陆续释出。",
-      "title_en": "IFM releases K2 Horizon, a sparse Mixture of Experts model with Mixture of Values attention that stores 36 billion parameters and activates 4 billion per token",
-      "title_zh": "IFM 发布 K2 Horizon 稀疏模型：混合专家搭配混合数值注意力，总参数 360 亿、每 token 激活 40 亿"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w7ee1c/i_benchmarked_21_qwen38_27b_variants_on_16gb_vram/": {
+      "en": "A user benchmarked twenty-one quantized variants of Qwen 3.8 27B on a sixteen gigabyte RTX 5080, running their own C code and sorting by mean Kullback Leibler divergence against the reference. Best overall was bartowski's Qwen3.8-27B-IQ4_XS at ninety-five point eight percent top token agreement, while huihui-ai's abliterated build led among uncensored options. Very low bit quants like Q2_0 performed noticeably worse. A full leaderboard is included.",
+      "zh": "一位用户在配备十六 GB 显存的 RTX 5080 上,用自己的 C 语言代码测试了 Qwen 3.8 27B 的二十一个量化版本,按对参考模型的平均 Kullback Leibler 散度排序。综合最佳为 bartowski 的 Qwen3.8-27B-IQ4_XS,首词一致率达九十五点八;去审查版本以 huihui-ai 的 abliterated 领先。Q2_0 等极低比特量化明显偏弱。文中附有完整榜单。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6ccgs/qwen38flashnext_mtp_merged_in_ik_llamacpp/": {
-      "en": "A pull request now on the ik llama.cpp main branch adds Multi Token Prediction support for Qwen 3.8 Flash Next, loading the 2.6 billion parameter draft head that public converters had been dropping. The model drafts and verifies its own next tokens, so output stays identical but throughput roughly doubles. The author measured decode going from 45 to 90 tokens per second on a 5090 with 128 gigabytes on coding traffic, with 93 to 99 percent draft acceptance; even a 12 gigabyte 4070 gained. Single GPU only for now.",
-      "zh": "ik llama.cpp 主分支已合入 Qwen 3.8 Flash Next 的多 token 预测支持，加载了公开转换器一直丢弃的 26 亿参数草稿头。模型自行起草并验证下一批 token，输出不变而吞吐大幅提升：作者实测代码任务在 5090 加 128GB 内存上从每秒 45 token 提升到 90，草稿接受率 93 到 99 percent；12GB 显存的 4070 也从 9.5 提升到 12.5。目前仅支持单 GPU 单 slot。",
-      "title_en": "Multi Token Prediction support for Qwen 3.8 Flash Next lands in ik llama.cpp, roughly doubling decode speed on a 5090 with 128 gigabytes and still working on a 12 gigabyte 4070",
-      "title_zh": "ik llama.cpp 合入 Qwen 3.8 Flash Next 的多 token 预测支持,5090 加 128GB 解码速度接近翻倍,12GB 4070 也可运行"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w77ath/drummers_artemis_31b_v1_and_v11_coming_back_with/": {
+      "en": "Finetuner TheDrummer released Artemis 31B in two flavors on Hugging Face: v1 excels at prose and creative writing but needs some handholding around quirks like stuttering, while v1.1 refines stability with comparable quality. The author recaps recent releases including Skyfall 31B v4.2, Rocinante 12B, and Anubis 70B v1.2. They also tease an upcoming HordeAI style platform to let power users share their local inference with the wider community.",
+      "zh": "微调作者 TheDrummer 在 Hugging Face 上发布了 Artemis 31B 的 v1 和 v1.1 两版:v1 擅长文风与创意写作但需要人工引导来解决卡顿等小毛病,v1.1 在保留质量的同时更加稳定。作者还回顾了 Skyfall 31B v4.2、Rocinante 12B 和 Anubis 70B v1.2 等近作,并预告将上线一个类似 HordeAI 的平台,让重度玩家把本地推理算力分享给社区。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6lmmg/i_released_sanotts_smallest_complete_tts_stack_in/": {
-      "en": "sanoTTS is a new text to speech family built to fit tiny hardware, spanning 294 thousand to 2.2 million parameters across eleven voices and six languages. The smallest model quantizes to 337 kilobytes and runs on a three dollar microcontroller with 512 kilobytes of static memory; on an ESP32 it generates four seconds of audio per second. The 1.5 million parameter version scores 4.13 on SCOREQ, beating Inflect Nano and KittenTTS which are roughly three and ten times larger. Weights are on Hugging Face with a web assembly build.",
-      "zh": "sanoTTS 是一套面向极小硬件的开源语音合成模型家族，参数量从 29.4 万到 220 万，覆盖 11 种声音与 6 种语言。最小模型量化后仅 337 千字节，可在带 512 千字节静态内存的 3 美元微控制器上运行，在 ESP32 上每秒合成 4 秒音频。150 万参数版本 SCOREQ 得分 4.13，超越体积 3 倍和 10 倍的 Inflect Nano 与 KittenTTS。权重已上 Hugging Face，另有 WebAssembly 版本。",
-      "title_en": "sanoTTS ships the smallest complete text to speech stack, with a 294 thousand parameter model that runs on a three dollar microcontroller and a 1.5 million parameter version that outperforms models three to ten times its size",
-      "title_zh": "sanoTTS 发布最小的完整语音合成栈：29.4 万参数模型可运行于 3 美元微控制器，150 万参数模型性能超越 3 到 10 倍规模对手"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w6ozbj/update_qwen38flashnext_on_2x3090_ddr4_part_2_2529/": {
+      "en": "A hardware tinkerer pushed Qwen 3.8 Flash Next decode speed on dual RTX 3090 plus DDR4 from twenty five to twenty nine, up to thirty seven to forty one tokens per second, by combining a smaller Q4 quantization, an expert cache, and Multi Token Prediction on a custom llama.cpp branch. Load time dropped from thirteen minutes to two. They also fixed an out of bounds bug in the cache kernel and traced sustained slowdowns to memory thermal throttling.",
+      "zh": "有玩家把 Qwen 3.8 Flash Next 在双 RTX 3090 加 DDR4 上的解码速度从每秒二十五到二十九提到了三十七到四十一词元,做法是换成更小的 Q4 量化、启用专家缓存并叠加多词元预测,基于自建的 llama.cpp 分支。加载时间从十三分钟缩短到两分钟。作者还修复了缓存内核的一处越界写入,并把持续掉速追溯到内存条过热降频。",
+      "title_en": "Pushing Qwen 3.8 Flash Next past forty tokens per second on dual RTX 3090 with an expert cache and Multi Token Prediction",
+      "title_zh": "在双 RTX 3090 上用专家缓存与多词元预测把 Qwen 3.8 Flash Next 解码速度推过每秒四十词元"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6hlpt/google_released_timesfm3_a_330mparameter_time/": {
-      "en": "Google Research released TimesFM 3, the third generation of its zero shot time series foundation model, adding native multivariate forecasting. The 330 million parameter decoder only transformer patches 32 time steps per token and alternates causal attention within a series with full attention across series. It handles multiple targets, past only covariates, and past future covariates in a single forward pass, and outputs nine quantiles. Google reports best average rank on Gift Eval, FEV Bench, and Time against Chronos 2, Toto 2.0, and TimesFM 2.5. Weights are non commercial.",
-      "zh": "Google Research 发布 TimesFM 3，其零样本时序基础模型的第三代，新增对多变量预测的原生支持。3.3 亿参数的解码器 Transformer 将 32 个时间步打包为一个 token，交替使用序列内因果注意力与跨序列全注意力。可一次前向处理多目标以及过去或未来协变量，输出九个分位数。Google 称其在 Gift Eval、FEV Bench 与 Time 上平均排名超越 Chronos 2、Toto 2.0 与 TimesFM 2.5。权重仅供非商业用途。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w6z9oh/we_opensourced_paddock_our_rustc_inference_engine/": {
+      "en": "The team behind Paddock open sourced their Rust and C++ inference engine under MIT or Apache 2.0, including in house CUDA kernels. It exposes OpenAI and Anthropic style APIs, loads GGUF and safetensors, and pushes about three hundred billion tokens per year internally. On Qwen 3.8 27B FP8 with an RTX PRO 6000 it beats vLLM and llama.cpp on every tested load and matches or beats SGLang on most. Blackwell and Ampere are validated; Mac, ROCm, and Vulkan are not yet supported.",
+      "zh": "开发团队将其 Rust 与 C++ 编写的推理引擎 Paddock 以 MIT 或 Apache 2.0 许可证开源,包含自研 CUDA 内核。单一可执行文件提供 OpenAI 与 Anthropic 风格 API,支持 GGUF 与 safetensors 加载,团队内部年吞吐约三千亿词元。在 RTX PRO 6000 上跑 Qwen 3.8 27B FP8 时,它在所有测试中都快于 vLLM 与 llama.cpp,多数情况下追平或超过 SGLang。已在 Blackwell 与 Ampere 上验证,尚不支持 Mac、ROCm 和 Vulkan。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6bb0b/antling_open_sourced_ling30flashfin_a/": {
-      "en": "Ant Group's Ling team open sourced Ling 3.0 flash Fin, the first finance tuned model in the Ant Ling family. Developed with major financial institutions and domain experts, it extends Ling 3.0 flash by continuing training on high quality financial data. The Mixture of Experts model carries 124 billion total parameters with 5.1 billion activated per token and a 256 thousand token context window, aimed at long horizon agent workflows in real world finance while keeping inference efficient.",
-      "zh": "蚂蚁集团 Ling 团队开源 Ling 3.0 flash Fin，为 Ant Ling 家族首个金融增强模型。该模型由蚂蚁与主要金融机构及领域专家联合打造，在 Ling 3.0 flash 基础上通过高质量金融数据继续训练。采用混合专家架构，总参数 1240 亿、每 token 激活 51 亿，上下文窗口 256K，面向真实金融场景的长周期智能体工作流，同时兼顾推理效率。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w6nywh/qwen_38_27b_vs_qwen_36_27b_on_omlx/": {
+      "en": "A benchmark on the oMLX runtime compares Qwen 3.8 27B against Qwen 3.6 27B on the same hardware. Quality climbs from eighty one point one to eighty seven point seven, an eight percent gain, but throughput drops from thirty five to twenty nine tokens per second, sixteen percent slower. Total runtime stretches roughly five times, from nine minutes to forty five, because output token counts balloon from eighteen thousand to seventy eight thousand. Full results are published on llm-bench.io.",
+      "zh": "一项在 oMLX 运行时上的基准测试对比了 Qwen 3.8 27B 与 Qwen 3.6 27B。质量从八十一点一提升到八十七点七,涨幅约百分之八;但吞吐从每秒三十五词元降到二十九,慢了百分之十六。总运行时间拉长约五倍,从九分钟到四十五分钟,原因是输出词元数从一万八千激增到七万八千。完整结果发布在 llm-bench.io 上。",
+      "title_en": "Qwen 3.8 27B versus Qwen 3.6 27B on the oMLX runtime: better quality but sixteen percent slower and five times longer runtime",
+      "title_zh": "Qwen 3.8 27B 对比 Qwen 3.6 27B 在 oMLX 运行时上的测试:质量更好但慢约百分之十六、总时长约为五倍"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w71vg1/even_qwen38_followed_the_instruction_inside_my/": {
+      "en": "A researcher retested Gemma 4 31B against three translation specialists, namely MiLMMT 12B, TranslateGemma 27B, and Hy-MT2 30B-A3B, plus Qwen 3.8 27B, translating three hundred forty English messages into six languages. Under a structure aware pipeline Gemma 4 still won; JSON schema constrained decoding actually hurt, often exhausting token budgets on unfinished strings. Both Gemma and Qwen kept executing instructions embedded inside the source text instead of translating them, suggesting the failure mode needs dedicated training.",
+      "zh": "研究者用 Gemma 4 31B、三款翻译专用模型 MiLMMT 12B、TranslateGemma 27B、Hy-MT2 30B-A3B 以及 Qwen 3.8 27B,把 340 段英文重新翻译成六种语言。在保留结构的流水线下 Gemma 4 依然胜出;JSON schema 约束解码反而伤害质量,常把词元额度耗在未闭合的字符串上。Gemma 与 Qwen 都会执行源文中嵌入的指令而非翻译它们,说明这一失败模式需要专门训练来解决。"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w7dlo5/22_less_weight_vram_lossless_base3_packing_for/": {
+      "en": "A developer built Q2_B3, a denser GGUF format for ternary models like BitNet 1.58 or Ternary-Bonsai, packing weight values directly in base three at one point seven five bits per weight. That trims a nine billion parameter model from about two point five gigabytes to two, and a twenty seven billion one from seven point six to five point nine. It only works on genuinely ternary weights, not standard sixteen bit floating point models. AMD ROCm is the main tuned path; CUDA and Metal compile but stay unverified.",
+      "zh": "开发者做出了 Q2_B3,一种更紧凑的 GGUF 格式,专为 BitNet 1.58 或 Ternary-Bonsai 这类三值模型设计,直接用三进制打包权重,平均每个权重仅一点七五位。90 亿参数模型体积从约 2.5 GB 缩到 2.0 GB,270 亿参数从 7.6 GB 缩到 5.9 GB。它只能作用于原生三值权重,不能套用于普通的十六位浮点模型。主路径是 AMD ROCm,CUDA 与 Metal 版本可编译但尚未验证。",
+      "title_en": "Base three packing shrinks ternary model weights on GPU by about twenty two percent without quality loss",
+      "title_zh": "三进制打包让三值模型权重在显存中缩小约百分之二十二且不损失精度"
     }
   }
 }
