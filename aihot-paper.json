@@ -1,8 +1,44 @@
 {
-  "count": 5,
+  "count": 7,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtnapudv01zbrog16o6dxgoi",
+      "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
+      "title_en": "Formalizing Fermat's Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "permalink": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-09-04T18:37:00.305Z",
+      "discoveredAt": "2026-09-04T18:37:00.305Z",
+      "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。",
+      "category": "paper",
+      "score": 81,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi"
+      }
+    },
+    {
+      "id": "cmtm7yl5s01d5robnsn25onbz",
+      "title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
+      "title_en": "OpenAI的GPT-6 Astra在ARC-AGI-3上的表现",
+      "url": "https://arcprize.org/blog/astra",
+      "permalink": "https://aihot.virxact.com/items/cmtm7yl5s01d5robnsn25onbz",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-09-04T00:07:48.532Z",
+      "discoveredAt": "2026-09-04T00:32:03.496Z",
+      "summary": "OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 Semi-Private 上，Standard harness 得分 62.7%（成本 $26K），Provider Adapter harness 得分 99.9%（成本 $19K），均为 SOTA。",
+      "category": "paper",
+      "score": 78,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtm7yl5s01d5robnsn25onbz"
+      }
+    },
     {
       "id": "cmtl25m9c0e89roalh6qci0r5",
       "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
@@ -19,6 +55,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5"
+      }
+    },
+    {
+      "id": "cmtlrvu1x0k8wrow53bshxa9k",
+      "title": "Google 与 HHMI Janelia 发布完整雄性果蝇大脑及中枢神经系统连接组",
+      "title_en": "A connectomics milestone： Mapping the complete male fruit fly brain",
+      "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain",
+      "permalink": "https://aihot.virxact.com/items/cmtlrvu1x0k8wrow53bshxa9k",
+      "source": "Google Research：Blog（网页）",
+      "publishedAt": "2026-09-02T16:00:00.000Z",
+      "discoveredAt": "2026-09-03T17:01:58.253Z",
+      "summary": "Google 与 HHMI Janelia 等合作者在 Cell 发表雄性果蝇大脑与中枢神经系统的完整连接组，包含超过 166，000 个神经元和 1.25 亿个突触连接，是目前按神经元数量计最大的大脑连接组图。",
+      "category": "paper",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtlrvu1x0k8wrow53bshxa9k"
       }
     },
     {
@@ -73,24 +127,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmte36nzj02isrog2hwxpthhn"
-      }
-    },
-    {
-      "id": "cmtcxdp3f07l3roq5uk6om1aw",
-      "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-      "title_en": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-      "url": "https://www.terminal-bench-science.ai/announcement",
-      "permalink": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-28T12:04:47.737Z",
-      "discoveredAt": "2026-08-28T12:25:55.371Z",
-      "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
-      "category": "paper",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw"
       }
     }
   ]

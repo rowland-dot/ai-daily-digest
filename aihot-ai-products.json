@@ -1,8 +1,44 @@
 {
-  "count": 13,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtn66b6s0o0eromy3rzdsvat",
+      "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
+      "title_en": "Project HydraFusion： Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+      "permalink": "https://aihot.virxact.com/items/cmtn66b6s0o0eromy3rzdsvat",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-09-04T16:04:14.000Z",
+      "discoveredAt": "2026-09-04T16:29:49.120Z",
+      "summary": "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为每个任务选择工作流，以平衡质量、成本和延迟。",
+      "category": "ai-products",
+      "score": 68,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtn66b6s0o0eromy3rzdsvat"
+      }
+    },
+    {
+      "id": "cmtnbnfwj02vhrog1dgtzoar8",
+      "title": "xAI 让 Grok Bot 承担采购工作，Haggle Bot 找出超 10 万美元直接节省",
+      "title_en": "Setting Grok Bot loose on procurement",
+      "url": "https://x.ai/news/grok-bot-procurement",
+      "permalink": "https://aihot.virxact.com/items/cmtnbnfwj02vhrog1dgtzoar8",
+      "source": "xAI：News（网页）",
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "discoveredAt": "2026-09-04T19:02:55.552Z",
+      "summary": "xAI 让 Grok Bot 访问供应商支出、合同和使用数据，创建的 Haggle Bot 已识别超过 10 万美元直接节省，包括在一个 SaaS 产品中找到 43 个 90 天无活动的付费席位（节省 $14，220），在另一个产品中找出每年 $85，662 的未用 SKU。",
+      "category": "ai-products",
+      "score": 63,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnbnfwj02vhrog1dgtzoar8"
+      }
+    },
     {
       "id": "cmtm02uu60t29row5y74k0eai",
       "title": "OpenAI 推出 Daybreak for Frontline Defenders，投入10亿美元支持一线网络防御",
@@ -217,24 +253,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtgihylr01tlrokdreezpex0"
-      }
-    },
-    {
-      "id": "cmtdgo8nh04rurobxlzwr101x",
-      "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
-      "title_en": "The Open ASR Leaderboard Adds Its First Global South Language",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
-      "permalink": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x",
-      "source": "Hugging Face：Blog（RSS）",
-      "publishedAt": "2026-08-28T00:00:00.000Z",
-      "discoveredAt": "2026-08-28T21:26:01.121Z",
-      "summary": "Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN 和 Monsoon hi-IN 两个评测集，覆盖印地语与印度英语，其中印地语是该排行榜多语言板块首个非欧洲语言。数据集含公开与私有分割，共 4，888 位说话人，并记录 12 项说话人属性，旨在暴露按地区、年龄、性别等维度分布不均的语音识别误差。",
-      "category": "ai-products",
-      "score": 66,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x"
       }
     }
   ]

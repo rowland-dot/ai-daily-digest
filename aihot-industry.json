@@ -1,42 +1,24 @@
 {
-  "count": 12,
+  "count": 10,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmtlwa4r50pj3row543ys30bl",
-      "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋与Nadella表态开放模型生态",
-      "title_en": "Looking forward to this ecosystem with open models continuing to flourish and grow with NVIDIA and H…",
-      "url": "https://x.com/satyanadella/status/2095587182039969861",
-      "permalink": "https://aihot.virxact.com/items/cmtlwa4r50pj3row543ys30bl",
-      "source": "X：Satya Nadella (@satyanadella)",
-      "publishedAt": "2026-09-03T18:58:12.000Z",
-      "discoveredAt": "2026-09-03T19:05:04.819Z",
-      "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能增强安全与网络安全、加速创新与扩散并支持主权，让开发者、初创公司、大学、行业和国家都能构建、定制并受益于 AI。",
+      "id": "cmtn41rbm0lw1romys1igl789",
+      "title": "英伟达两年从零建起近千亿美元股权投资组合",
+      "title_en": "仅用两年时间，英伟达从零建起近千亿美元股权投资组合",
+      "url": "https://www.ithome.com/0/998/620.htm",
+      "permalink": "https://aihot.virxact.com/items/cmtn41rbm0lw1romys1igl789",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-09-04T14:59:33.000Z",
+      "discoveredAt": "2026-09-04T15:30:15.859Z",
+      "summary": "据《商业内幕》9月4日报道，英伟达最新财报显示，截至7月26日公司持有价值990亿美元的股权投资，一年内增长14倍、两年增长45倍。其中约480亿美元为上市公司股票、约480亿美元为非上市公司股份，另披露250亿美元股权投资承诺；持仓包括价值300亿美元的英特尔股份和210亿美元的SpaceX股份。",
       "category": "industry",
-      "score": 84,
+      "score": 76,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtlwa4r50pj3row543ys30bl"
-      }
-    },
-    {
-      "id": "cmtltwglp0m4hrow5i3eckkhn",
-      "title": "NVIDIA 宣布收购 Hugging Face，Sundar Pichai 祝贺并称将强化开源模型生态",
-      "title_en": "Congrats @JensenHuang @ClementDelangue for this great outcome！ We were investors in Huggingface and …",
-      "url": "https://x.com/sundarpichai/status/2095569375373984139",
-      "permalink": "https://aihot.virxact.com/items/cmtltwglp0m4hrow5i3eckkhn",
-      "source": "X：Sundar Pichai (@sundarpichai)",
-      "publishedAt": "2026-09-03T17:47:27.000Z",
-      "discoveredAt": "2026-09-03T17:58:28.461Z",
-      "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开源模型能强化安全与网络安全、加速创新与扩散，并让开发者、初创公司、大学、行业和国家都能构建和定制 AI。",
-      "category": "industry",
-      "score": 87,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtltwglp0m4hrow5i3eckkhn"
+        "canonical": "https://aihot.virxact.com/items/cmtn41rbm0lw1romys1igl789"
       }
     },
     {
@@ -73,6 +55,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtksft9f0450roali4sl0z86"
+      }
+    },
+    {
+      "id": "cmtlptw7y0hz0row5jmextq6g",
+      "title": "NVIDIA 以 129.3 亿美元收购 Hugging Face",
+      "title_en": "NVIDIA to acquire Hugging Face for $12.93B",
+      "url": "https://www.artificialintelligence-news.com/news/nvidia-to-acquire-hugging-face-for-12-93b",
+      "permalink": "https://aihot.virxact.com/items/cmtlptw7y0hz0row5jmextq6g",
+      "source": "Artificial Intelligence News（网页）",
+      "publishedAt": "2026-09-02T16:00:00.000Z",
+      "discoveredAt": "2026-09-03T16:04:30.199Z",
+      "summary": "NVIDIA 已同意以 129.3 亿美元收购 Hugging Face，以扩展该开源模型仓库的平台与基础设施。交易目标是平台增长和基础设施投资，旨在为全球企业开发者、软件工程师和研究机构扩大 AI 访问机会。Hugging Face 由 Clem Delangue、Julien Chaumond、Thomas Wolf 等人在过去十年间打造。",
+      "category": "industry",
+      "score": 83,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtlptw7y0hz0row5jmextq6g"
       }
     },
     {
@@ -181,42 +181,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4"
-      }
-    },
-    {
-      "id": "cmtdbbfo6018arobxq8t77h9x",
-      "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
-      "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-      "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-      "permalink": "https://aihot.virxact.com/items/cmtdbbfo6018arobxq8t77h9x",
-      "source": "Ars Technica：AI（RSS）",
-      "publishedAt": "2026-08-28T18:07:55.000Z",
-      "discoveredAt": "2026-08-28T18:56:05.452Z",
-      "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
-      "category": "industry",
-      "score": 71,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtdbbfo6018arobxq8t77h9x"
-      }
-    },
-    {
-      "id": "cmtdqc5oj03wzro2mgyc5a49x",
-      "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
-      "title_en": "Our decision on Cursor following its acquisition by SpaceX",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "permalink": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-08-28T06:00:00.000Z",
-      "discoveredAt": "2026-08-29T01:56:32.759Z",
-      "summary": "OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI 模型的合同，拟定关停日期为 2026 年 11 月 12 日，并给予合同允许的最长通知期。OpenAI 称此举源于无法确信 SpaceX 会遵守服务条款，并援引Musk旗下公司此前违反合同及 xAI 违反 OpenAI 服务条款的先例。OpenAI 表示将尽力支持受影响的开发者过渡。",
-      "category": "industry",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x"
       }
     }
   ]

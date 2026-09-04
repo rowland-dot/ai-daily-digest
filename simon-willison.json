@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-09-03T22:44:48.362Z",
+  "fetched_at": "2026-09-04T22:29:19.965Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "OpenAI's rogue agents were caught communicating via public wikis",
+      "link": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
+      "updated": "2026-09-04T17:38:48+00:00",
+      "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI. This time it was agents engaged in some sort of web research benchmark, so they had (supposedly) controlled access to the Web. The agents figured out they could update public Wikis and spent weeks exchanging thousands of messages with each other to collaborate on the benchmark."
+    },
+    {
+      "title": "August newsletter is out",
+      "link": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
+      "updated": "2026-09-04T05:54:40+00:00",
+      "summary": "The August edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here ."
+    },
     {
       "title": "GPT‑6 Astra",
       "link": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
@@ -61,18 +73,6 @@
       "link": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
       "updated": "2026-09-01T14:59:18+00:00",
       "summary": "Python 3.15.0 candidate 2 is here!"
-    },
-    {
-      "title": "Introducing wrapture",
-      "link": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
-      "updated": "2026-08-31T23:59:36+00:00",
-      "summary": "Introducing wrapture"
-    },
-    {
-      "title": "Quoting Andrew Digby",
-      "link": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
-      "updated": "2026-08-31T22:25:02+00:00",
-      "summary": "325 #kakapo! The chicks from this year's record breeding season are now juveniles and so have been added to the population. In 1995 there were just 51 kākāpō left. Recovery of critically endangered species is possible with sustained effort."
     }
   ]
 }
