@@ -1,35 +1,33 @@
 {
-  "generated_at": "2026-09-03T22:50:00Z",
+  "generated_at": "2026-09-05T22:15:23Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w64y26/qwen38nextflash_ngram_hotswappable_knowledge/": {
-      "en": "Alfredo Ortega modified llama.cpp to hot-swap the Ngram Programmable Lookup Embedding table used by the new Qwen 3.8 Next architecture, letting users patch knowledge into the model in memory without reloading it. Because embeddings are injected early in the layers, output control is limited, but simple influence works. He released the llama.cpp fork and a companion knowledge injector that compiles table patches, framing it as a possible route to instantly hot-swappable long term memory for local models.",
-      "zh": "Alfredo Ortega 修改 llama.cpp，使 Qwen 3.8 Next 架构的 Ngram Programmable Lookup Embedding 表可在内存中热替换，无需重载模型即可注入新知识。由于嵌入在早期层注入，输出控制精度有限，但简单影响是可行的。他同时开源了修改版 llama.cpp 与配套的知识注入编译器，视为面向本地模型即时热切换长期记忆的低成本路径。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/": {
+      "en": "On a single RTX 5090 running Qwen 3.8 27B, the author benchmarks llama.cpp, vLLM, and the newer NInfer engine against real production evaluation tiers rather than vibes. Quality is statistically indistinguishable across engines, but NInfer with MTP3 speculative decoding delivers 1.4 to 2.8 times faster decode and up to 4.9 times faster time to first token, so it replaces llama.cpp in production despite lacking JSON mode.",
+      "zh": "作者在单张 RTX 5090 上以真实生产评测（而非感觉）比较 llama.cpp、vLLM 与新兴的 NInfer 引擎运行 Qwen 3.8 27B。三者质量在统计上无差异，但 NInfer 借助 MTP3 投机解码带来 1.4 到 2.8 倍的解码提速和最多 4.9 倍的首字延迟改善，因此取代 llama.cpp 上线，唯一缺憾是不支持 JSON 模式。",
+      "title_en": "Comparing llama.cpp, vLLM, and NInfer running Qwen 3.8 27B with FP4 quantization on a single RTX 5090",
+      "title_zh": "在单张 RTX 5090 上对比 llama.cpp、vLLM 和 NInfer 运行 FP4 量化的 Qwen 3.8 27B"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w67wso/ifmk2horizonmova36ba4bgguf_hugging_face/": {
-      "en": "IFM released K2 Horizon, a sparse Mixture of Experts model that pairs Mixture of Values attention with 36 billion stored parameters and 4 billion activated per token. On agentic and reasoning benchmarks IFM claims it outscores open dense and Mixture of Experts models up to fifteen times its size, and performs competitively against closed frontier models. It supports a native 524288 token context. The final checkpoint is public, and training data, recipe, code, and intermediate checkpoints will all be released.",
-      "zh": "IFM 发布 K2 Horizon 稀疏模型：混合专家架构搭配全新的混合数值注意力，总参数 360 亿，每 token 仅激活 40 亿。在智能体与推理基准上，IFM 称其超越至多 15 倍规模的开源稠密与混合专家模型，并与前沿闭源模型持平。原生支持 524288 token 上下文。最终检查点已开放，训练数据、配方、代码与中间检查点也将陆续释出。",
-      "title_en": "IFM releases K2 Horizon, a sparse Mixture of Experts model with Mixture of Values attention that stores 36 billion parameters and activates 4 billion per token",
-      "title_zh": "IFM 发布 K2 Horizon 稀疏模型：混合专家搭配混合数值注意力，总参数 360 亿、每 token 激活 40 亿"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w84mod/qwen38_flash_next_templates_comparison/": {
+      "en": "On SWE-bench Verified with mini-SWE-agent, the author compares three chat templates for Qwen 3.8 Flash Next, called Stock, Fixed, and Sharp, at medium and xhigh reasoning effort on an RTX PRO 6000. Sharp leads at medium with 94 percent resolution but Stock reaches 99 percent at xhigh. Sharp stays the most token-efficient per resolved task, making it the practical pick when speed matters more than the final points of accuracy.",
+      "zh": "作者在 RTX PRO 6000 上用 mini-SWE-agent 在 SWE-bench Verified 对比 Qwen 3.8 Flash Next 的三种聊天模板 Stock、Fixed、Sharp，分别以中等与 xhigh 推理强度运行。中等强度下 Sharp 以 94% 解决率领先，xhigh 时 Stock 追至 99%。Sharp 每题耗 token 最少，是追求速度时的务实选择。",
+      "title_en": "Comparing chat templates for Qwen 3.8 Flash Next on SWE-bench Verified",
+      "title_zh": "在 SWE-bench Verified 上对比 Qwen 3.8 Flash Next 的聊天模板"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6ccgs/qwen38flashnext_mtp_merged_in_ik_llamacpp/": {
-      "en": "A pull request now on the ik llama.cpp main branch adds Multi Token Prediction support for Qwen 3.8 Flash Next, loading the 2.6 billion parameter draft head that public converters had been dropping. The model drafts and verifies its own next tokens, so output stays identical but throughput roughly doubles. The author measured decode going from 45 to 90 tokens per second on a 5090 with 128 gigabytes on coding traffic, with 93 to 99 percent draft acceptance; even a 12 gigabyte 4070 gained. Single GPU only for now.",
-      "zh": "ik llama.cpp 主分支已合入 Qwen 3.8 Flash Next 的多 token 预测支持，加载了公开转换器一直丢弃的 26 亿参数草稿头。模型自行起草并验证下一批 token，输出不变而吞吐大幅提升：作者实测代码任务在 5090 加 128GB 内存上从每秒 45 token 提升到 90，草稿接受率 93 到 99 percent；12GB 显存的 4070 也从 9.5 提升到 12.5。目前仅支持单 GPU 单 slot。",
-      "title_en": "Multi Token Prediction support for Qwen 3.8 Flash Next lands in ik llama.cpp, roughly doubling decode speed on a 5090 with 128 gigabytes and still working on a 12 gigabyte 4070",
-      "title_zh": "ik llama.cpp 合入 Qwen 3.8 Flash Next 的多 token 预测支持,5090 加 128GB 解码速度接近翻倍,12GB 4070 也可运行"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/": {
+      "en": "Otaku is a new open-source frontend for large language models, designed primarily for roleplay as an alternative to SillyTavern but usable for general chat too. It ships web and terminal interfaces sharing the same functions, auto-detects Ollama, oMLX, LM Studio, llama.cpp, and KoboldCpp installations, and supports cloud providers like OpenRouter and NanoGPT. Install via uv on macOS, Linux, or Windows. The author asks for community feedback on this MIT-licensed side project.",
+      "zh": "Otaku 是一款新的开源大语言模型前端，主打角色扮演，也可作为 SillyTavern 的替代品用于日常对话。它同时提供 Web 界面与终端界面，两者共享功能，可自动识别 Ollama、oMLX、LM Studio、llama.cpp、KoboldCpp 等本地后端，并支持 OpenRouter、NanoGPT 云服务。基于 MIT 许可，通过 uv 可在 macOS、Linux、Windows 上安装，作者征集反馈。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6lmmg/i_released_sanotts_smallest_complete_tts_stack_in/": {
-      "en": "sanoTTS is a new text to speech family built to fit tiny hardware, spanning 294 thousand to 2.2 million parameters across eleven voices and six languages. The smallest model quantizes to 337 kilobytes and runs on a three dollar microcontroller with 512 kilobytes of static memory; on an ESP32 it generates four seconds of audio per second. The 1.5 million parameter version scores 4.13 on SCOREQ, beating Inflect Nano and KittenTTS which are roughly three and ten times larger. Weights are on Hugging Face with a web assembly build.",
-      "zh": "sanoTTS 是一套面向极小硬件的开源语音合成模型家族，参数量从 29.4 万到 220 万，覆盖 11 种声音与 6 种语言。最小模型量化后仅 337 千字节，可在带 512 千字节静态内存的 3 美元微控制器上运行，在 ESP32 上每秒合成 4 秒音频。150 万参数版本 SCOREQ 得分 4.13，超越体积 3 倍和 10 倍的 Inflect Nano 与 KittenTTS。权重已上 Hugging Face，另有 WebAssembly 版本。",
-      "title_en": "sanoTTS ships the smallest complete text to speech stack, with a 294 thousand parameter model that runs on a three dollar microcontroller and a 1.5 million parameter version that outperforms models three to ten times its size",
-      "title_zh": "sanoTTS 发布最小的完整语音合成栈：29.4 万参数模型可运行于 3 美元微控制器，150 万参数模型性能超越 3 到 10 倍规模对手"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w7wte4/qwen38_27b_on_strix_the_optimized_setup/": {
+      "en": "An in-depth optimization writeup for running Qwen 3.8 27B on AMD Strix Halo laptops via a patched llama.cpp branch. The author ships fixes for a ROCm unified-memory bug, a faster top-k kernel, and low-level PM4 dispatches on HIP graphs, then quantizes the model and its DFlash speculative-decoding draft to IQ4_XS. The result is packaged as a one-line installer on GitHub and pushes this bandwidth-bound APU close to its speed ceiling.",
+      "zh": "作者深度优化 llama.cpp，为 AMD Strix Halo 笔记本上运行 Qwen 3.8 27B 打造更快的本地方案。改动包括修补 ROCm 统一内存漏洞、加速 top-k 内核、在 HIP 图上引入底层 PM4 调度，并将模型与 DFlash 投机草稿量化为 IQ4_XS。该 APU 受内存带宽限制，方案已触及速度上限，作者已打包一键安装脚本发布至 GitHub。",
+      "title_en": "Optimizing llama.cpp for Qwen 3.8 27B on AMD Strix Halo laptops",
+      "title_zh": "在 AMD Strix Halo 笔记本上为 Qwen 3.8 27B 优化 llama.cpp"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6hlpt/google_released_timesfm3_a_330mparameter_time/": {
-      "en": "Google Research released TimesFM 3, the third generation of its zero shot time series foundation model, adding native multivariate forecasting. The 330 million parameter decoder only transformer patches 32 time steps per token and alternates causal attention within a series with full attention across series. It handles multiple targets, past only covariates, and past future covariates in a single forward pass, and outputs nine quantiles. Google reports best average rank on Gift Eval, FEV Bench, and Time against Chronos 2, Toto 2.0, and TimesFM 2.5. Weights are non commercial.",
-      "zh": "Google Research 发布 TimesFM 3，其零样本时序基础模型的第三代，新增对多变量预测的原生支持。3.3 亿参数的解码器 Transformer 将 32 个时间步打包为一个 token，交替使用序列内因果注意力与跨序列全注意力。可一次前向处理多目标以及过去或未来协变量，输出九个分位数。Google 称其在 Gift Eval、FEV Bench 与 Time 上平均排名超越 Chronos 2、Toto 2.0 与 TimesFM 2.5。权重仅供非商业用途。"
-    },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w6bb0b/antling_open_sourced_ling30flashfin_a/": {
-      "en": "Ant Group's Ling team open sourced Ling 3.0 flash Fin, the first finance tuned model in the Ant Ling family. Developed with major financial institutions and domain experts, it extends Ling 3.0 flash by continuing training on high quality financial data. The Mixture of Experts model carries 124 billion total parameters with 5.1 billion activated per token and a 256 thousand token context window, aimed at long horizon agent workflows in real world finance while keeping inference efficient.",
-      "zh": "蚂蚁集团 Ling 团队开源 Ling 3.0 flash Fin，为 Ant Ling 家族首个金融增强模型。该模型由蚂蚁与主要金融机构及领域专家联合打造，在 Ling 3.0 flash 基础上通过高质量金融数据继续训练。采用混合专家架构，总参数 1240 亿、每 token 激活 51 亿，上下文窗口 256K，面向真实金融场景的长周期智能体工作流，同时兼顾推理效率。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w82kpd/gfx906llamacpp_new_pptg_gains_for_mi50mi60radeon/": {
+      "en": "An update to the community gfx906 llama.cpp fork targeting older AMD data-center GPUs like the MI50, MI60, and Radeon VII. By pulling and adapting upstream pull requests, the fork now delivers 23 percent faster prefill at 16k context, 14 percent gains on 120k deep fills, and 11 percent higher token generation, with outputs remaining bit-identical to upstream. The README has been rewritten to explain what is in the fork.",
+      "zh": "针对 AMD 老款数据中心 GPU（MI50、MI60、Radeon VII 等 gfx906 架构）的 llama.cpp 社区分支再度更新。作者合并并改造上游 pull request，将 16k 上下文的预填充加速 23%、120k 深填加速 14%、token 生成加速 11%，输出与上游逐 token 一致。README 也重写以说明分支内容与来源。",
+      "title_en": "New prompt-processing and token-generation speedups in the gfx906 llama.cpp fork for AMD MI50, MI60, and Radeon VII",
+      "title_zh": "gfx906 版 llama.cpp 分支为 AMD MI50、MI60 与 Radeon VII 带来新的预填充与生成加速"
     }
   }
 }
