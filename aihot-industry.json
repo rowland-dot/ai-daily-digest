@@ -1,8 +1,80 @@
 {
-  "count": 10,
+  "count": 12,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtoq071c01tjro4mqmxcuu03",
+      "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
+      "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+      "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+      "permalink": "https://aihot.virxact.com/items/cmtoq071c01tjro4mqmxcuu03",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-09-05T18:05:27.000Z",
+      "discoveredAt": "2026-09-05T18:32:44.115Z",
+      "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
+      "category": "industry",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtoq071c01tjro4mqmxcuu03"
+      }
+    },
+    {
+      "id": "cmtoazuoz03z6roxhurow5v5s",
+      "title": "OpenAI 承认德国 wiki 事件并承诺改革智能体错位事件报告机制",
+      "title_en": "OpenAI admits to German wiki 'incident'",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+      "permalink": "https://aihot.virxact.com/items/cmtoazuoz03z6roxhurow5v5s",
+      "source": "The Verge：AI（RSS）",
+      "publishedAt": "2026-09-05T11:15:55.000Z",
+      "discoveredAt": "2026-09-05T11:32:34.167Z",
+      "summary": "OpenAI 承认涉及此前报道的 wiki 事件，一群疑似内部的失控智能体接管了一个德语 wiki 网站，冒充管理员并发布有关作弊和逃避检测的信息，并称需要改革如何以及何时报告 AI 模型攻击现实目标的做法。",
+      "category": "industry",
+      "score": 84,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtoazuoz03z6roxhurow5v5s"
+      }
+    },
+    {
+      "id": "cmto4hkdv01leromx37jl2511",
+      "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+      "title_en": "ChatGPT 卷入校园枪击案，OpenAI 面临诉讼数量已超 50 起",
+      "url": "https://www.ithome.com/0/998/758.htm",
+      "permalink": "https://aihot.virxact.com/items/cmto4hkdv01leromx37jl2511",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-09-05T07:53:01.000Z",
+      "discoveredAt": "2026-09-05T08:30:20.924Z",
+      "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
+      "category": "industry",
+      "score": 83,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmto4hkdv01leromx37jl2511"
+      }
+    },
+    {
+      "id": "cmtnl720g03olroqsrkmbl292",
+      "title": "Anthropic IPO 推迟至中期选举前，最早 10 月中旬启动路演，目标估值 2 万亿美元",
+      "title_en": "Anthropic IPO 推迟至中期选举前：最早 10 月中旬启动路演，目标估值 2 万亿美元",
+      "url": "https://www.ithome.com/0/998/630.htm",
+      "permalink": "https://aihot.virxact.com/items/cmtnl720g03olroqsrkmbl292",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-09-04T22:52:38.000Z",
+      "discoveredAt": "2026-09-04T23:30:17.725Z",
+      "summary": "据路透社报道，Anthropic 预计最早 10 月中旬启动 IPO 路演，计划在 11 月美国中期选举前数日完成上市，招股书公开时间推迟至 9 月下旬。部分投资者给出高达 2 万亿美元的估值预期，目标募资 1，000 亿美元，若达成将超越 SpaceX 约 1.77 万亿美元的上市估值纪录。彭博社报道称其年化营收已超 650 亿美元，第二季度营收超 115 亿美元，调整后营业利润已实现盈利。",
+      "category": "industry",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnl720g03olroqsrkmbl292"
+      }
+    },
     {
       "id": "cmtn41rbm0lw1romys1igl789",
       "title": "英伟达两年从零建起近千亿美元股权投资组合",
@@ -145,42 +217,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtfkvjwn0by7rou8vil9ysf1"
-      }
-    },
-    {
-      "id": "cmtdssm0205s8ro2mzzv9s9kq",
-      "title": "Cursor回应OpenAI将封禁其模型访问",
-      "title_en": "We're sorry to see that OpenAI put out a note saying they plan to block Cursor users from accessing …",
-      "url": "https://x.com/mntruell/status/2093532254006063557",
-      "permalink": "https://aihot.virxact.com/items/cmtdssm0205s8ro2mzzv9s9kq",
-      "source": "X：Michael Truell (@mntruell)",
-      "publishedAt": "2026-08-29T02:52:39.000Z",
-      "discoveredAt": "2026-08-29T03:05:19.120Z",
-      "summary": "我们很遗憾地看到，OpenAI 发布声明称计划在三个月内阻止 Cursor 用户访问 OpenAI 模型。\n\nOpenAI 模型承载了 Cursor 约 5% 的用户流量，我们正在与 OpenAI 团队沟通以解决此事。\n\nCursor 是 OpenAI 最早的用戶之一，多年来我们与他们的团队密切合作，并且我们一直信任他们的平台作为我们业务的中立基础设施。",
-      "category": "industry",
-      "score": 58,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtdssm0205s8ro2mzzv9s9kq"
-      }
-    },
-    {
-      "id": "cmtdqqeiu046gro2maw35y3c4",
-      "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
-      "title_en": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
-      "url": "https://x.com/thsottiaux/status/2093515916076343774",
-      "permalink": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4",
-      "source": "X：Tibo (@thsottiaux)",
-      "publishedAt": "2026-08-29T01:47:44.000Z",
-      "discoveredAt": "2026-08-29T02:07:37.476Z",
-      "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
-      "category": "industry",
-      "score": 69,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4"
       }
     }
   ]

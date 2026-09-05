@@ -1,24 +1,42 @@
 {
-  "count": 7,
+  "count": 8,
   "hasNext": false,
   "nextCursor": null,
   "items": [
     {
-      "id": "cmtnapudv01zbrog16o6dxgoi",
-      "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
-      "title_en": "Formalizing Fermat's Last Theorem",
-      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "permalink": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "publishedAt": "2026-09-04T18:37:00.305Z",
-      "discoveredAt": "2026-09-04T18:37:00.305Z",
-      "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。",
+      "id": "cmtnkhh70034droqs3fevneuh",
+      "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+      "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+      "url": "https://x.com/kimmonismus/status/2096007967749349844",
+      "permalink": "https://aihot.virxact.com/items/cmtnkhh70034droqs3fevneuh",
+      "source": "X：Kim (@kimmonismus)",
+      "publishedAt": "2026-09-04T22:50:16.000Z",
+      "discoveredAt": "2026-09-04T23:10:23.650Z",
+      "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
       "category": "paper",
-      "score": 81,
+      "score": 76,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi"
+        "canonical": "https://aihot.virxact.com/items/cmtnkhh70034droqs3fevneuh"
+      }
+    },
+    {
+      "id": "cmtnbhhu902perog1dmrla299",
+      "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
+      "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+      "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+      "permalink": "https://aihot.virxact.com/items/cmtnbhhu902perog1dmrla299",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-09-04T18:50:48.000Z",
+      "discoveredAt": "2026-09-04T18:58:28.869Z",
+      "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
+      "category": "paper",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnbhhu902perog1dmrla299"
       }
     },
     {
@@ -37,6 +55,24 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtm7yl5s01d5robnsn25onbz"
+      }
+    },
+    {
+      "id": "cmtnapudv01zbrog16o6dxgoi",
+      "title": "Claude 用 11 天完成费马大定理的首个完整机器验证证明",
+      "title_en": "Formalizing Fermat's Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "permalink": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "publishedAt": "2026-09-03T16:00:00.000Z",
+      "discoveredAt": "2026-09-04T18:37:00.305Z",
+      "summary": "Anthropic 发布首个完整机器验证的费马大定理证明，Claude 在 11 天内基本自主完成，写出 1300 万行 Lean 代码并证明 29，500 个中间定理。",
+      "category": "paper",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi"
       }
     },
     {
@@ -109,24 +145,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmthxigqm04c1rofqqmk7pkqi"
-      }
-    },
-    {
-      "id": "cmte36nzj02isrog2hwxpthhn",
-      "title": "开放世界多智能体环境中的自主数学发现",
-      "title_en": null,
-      "url": "https://arxiv.org/abs/2608.23691",
-      "permalink": "https://aihot.virxact.com/items/cmte36nzj02isrog2hwxpthhn",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "publishedAt": "2026-08-29T07:32:16.981Z",
-      "discoveredAt": "2026-08-29T07:56:11.967Z",
-      "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
-      "category": "paper",
-      "score": 74,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmte36nzj02isrog2hwxpthhn"
       }
     }
   ]

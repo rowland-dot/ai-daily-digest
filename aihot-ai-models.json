@@ -1,8 +1,80 @@
 {
-  "count": 19,
+  "count": 22,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmto3ih1m016groxt2ypyqos3",
+      "title": "OpenAI 向 Pro、Enterprise 和 Business Premium 用户推出 GPT-6 Astra，消息额度约为 GPT-5.6 Sol 的一半",
+      "title_en": "OpenAI rolls out GPT-6 Astra to top-tier ChatGPT plans at half the rate of GPT-5.6 Sol",
+      "url": "https://the-decoder.com/openai-rolls-out-gpt-6-astra-to-top-tier-chatgpt-plans-at-half-the-rate-of-gpt-5-6-sol",
+      "permalink": "https://aihot.virxact.com/items/cmto3ih1m016groxt2ypyqos3",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-09-05T07:41:03.000Z",
+      "discoveredAt": "2026-09-05T08:03:03.280Z",
+      "summary": "OpenAI 通过 ChatGPT Work 和 Codex 向 Pro、Enterprise、Business Premium 计划用户开放 GPT-6 Astra，并通过 API、Microsoft Azure 和 AWS Bedrock 提供。",
+      "category": "ai-models",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmto3ih1m016groxt2ypyqos3"
+      }
+    },
+    {
+      "id": "cmtnphe3t07vfroqsvrbd9enn",
+      "title": "奥尔特曼致歉 GPT-6 Astra 发布混乱，现已面向所有 Plus / Pro 等用户推出",
+      "title_en": "奥尔特曼致歉\"GPT-6 Astra AI 上线混乱\"，现已面向所有 Plus / Pro 等用户推出",
+      "url": "https://www.ithome.com/0/998/661.htm",
+      "permalink": "https://aihot.virxact.com/items/cmtnphe3t07vfroqsvrbd9enn",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-09-05T00:42:24.000Z",
+      "discoveredAt": "2026-09-05T01:30:18.743Z",
+      "summary": "OpenAI 于 9 月 3 日上线 GPT-6 Astra，称其在电脑使用、浏览、软件工程、科学和专业工作方面达到最先进性能。因企业安全客户先于 Pro 订阅者获得访问权限引发高价 Pro 用户不满，CEO 奥尔特曼 9 月 4 日在 X 平台致歉，并提出补偿机制：从 9 月 4 日起付费用户每缺少一天 Astra 访问即获得一次额度重置。",
+      "category": "ai-models",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnphe3t07vfroqsvrbd9enn"
+      }
+    },
+    {
+      "id": "cmtnl720f03ofroqsqcvoyl3o",
+      "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+      "title_en": "Anthropic：Claude 仅用 11 天完成费马大定理首个完整计算机验证证明",
+      "url": "https://www.ithome.com/0/998/638.htm",
+      "permalink": "https://aihot.virxact.com/items/cmtnl720f03ofroqsqcvoyl3o",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-09-04T23:20:46.000Z",
+      "discoveredAt": "2026-09-04T23:30:17.725Z",
+      "summary": "Anthropic 于 9 月 4 日宣布，Claude 在基本自主运行 11 天后，完成费马大定理首个端到端、经计算机检查的 Lean 形式化证明。",
+      "category": "ai-models",
+      "score": 82,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnl720f03ofroqsqcvoyl3o"
+      }
+    },
+    {
+      "id": "cmtnkdx8y031qroqs79optcp2",
+      "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
+      "title_en": "Now out to all Plus and Business users. Happy building！",
+      "url": "https://x.com/sama/status/2096008528834244741",
+      "permalink": "https://aihot.virxact.com/items/cmtnkdx8y031qroqs79optcp2",
+      "source": "X：Sam Altman (@sama)",
+      "publishedAt": "2026-09-04T22:52:29.000Z",
+      "discoveredAt": "2026-09-04T23:07:37.383Z",
+      "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
+      "category": "ai-models",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtnkdx8y031qroqs79optcp2"
+      }
+    },
     {
       "id": "cmtne97cd058urog1zpa39wm7",
       "title": "OpenAI 发布 GPT-6 Astra，面向 Pro、Enterprise 和 Business Premium 用户开放",
@@ -130,21 +202,21 @@
       }
     },
     {
-      "id": "cmtm02uu60t2arow5vd3nq4gi",
-      "title": "OpenAI 发布 GPT-6 Astra 并公布安全概览，称其网络安全能力达到 Preparedness Framework 的 Critical 级",
-      "title_en": "Safety overview： GPT-6 Astra",
-      "url": "https://openai.com/index/safety-overview-gpt-6-astra",
-      "permalink": "https://aihot.virxact.com/items/cmtm02uu60t2arow5vd3nq4gi",
+      "id": "cmtnt5cb50b8mroqs7x4pukfm",
+      "title": "OpenAI 发布 GPT-6 Astra：多项基准刷新纪录， cybersecurity 能力达 Critical 阈值",
+      "title_en": "GPT-6 Astra： A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "permalink": "https://aihot.virxact.com/items/cmtnt5cb50b8mroqs7x4pukfm",
       "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-03T20:51:25.010Z",
-      "summary": "OpenAI 发布 GPT-6 Astra，称这是其部署过的最强模型，也是首个在其 Preparedness Framework 下达到网络安全能力 Critical 级的模型，可在无人逐步引导的情况下发现未知安全漏洞并开发利用方式。",
+      "publishedAt": "2026-09-03T11:00:00.000Z",
+      "discoveredAt": "2026-09-05T03:12:56.001Z",
+      "summary": "OpenAI 发布新一代模型 GPT-6 Astra，称其在计算机使用、软件工程、科学和网络安全等方向达到 SOTA。",
       "category": "ai-models",
-      "score": 80,
+      "score": 88,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtm02uu60t2arow5vd3nq4gi"
+        "canonical": "https://aihot.virxact.com/items/cmtnt5cb50b8mroqs7x4pukfm"
       }
     },
     {
@@ -325,24 +397,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1"
-      }
-    },
-    {
-      "id": "cmtdxtxi809gyro2m2zykqzli",
-      "title": "Zhipu开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/995/896.htm",
-      "permalink": "https://aihot.virxact.com/items/cmtdxtxi809gyro2m2zykqzli",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-29T04:31:21.000Z",
-      "discoveredAt": "2026-08-29T05:26:18.490Z",
-      "summary": "Zhipu宣布开源 GLM-5.3 模型权重，支持本地运行与个性化定制，擅长复杂编码、防御性网络安全及长程任务。该模型在 AA 综合智能指数中取得 60 分，与 Claude Fable 5、GPT-5.6 Sol 等闭源旗舰同级，并与 Kimi K3 并列开源模型第一。仅年营业额超 100 亿美元的机构将其作为外部模型服务提供时才需安全审查。",
-      "category": "ai-models",
-      "score": 72,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtdxtxi809gyro2m2zykqzli"
       }
     }
   ]

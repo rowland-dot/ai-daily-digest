@@ -1,8 +1,44 @@
 {
-  "count": 14,
+  "count": 16,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtoxdsbb032sromz8bcrhsii",
+      "title": "OpenAI GPT-6 Astra 登顶 Code Arena WebDev 榜首，领先 Claude Fable 5.1 达 35 分",
+      "title_en": "GPT-6 Astra from OpenAI claimed a top spot on WebDev Arena， surpassing recently released Claude Fabl…",
+      "url": "https://x.com/testingcatalog/status/2096350628054176240",
+      "permalink": "https://aihot.virxact.com/items/cmtoxdsbb032sromz8bcrhsii",
+      "source": "X：Testing Catalog (@testingcatalog)",
+      "publishedAt": "2026-09-05T21:31:52.000Z",
+      "discoveredAt": "2026-09-05T21:59:13.167Z",
+      "summary": "GPT-6 Astra （Max） 以 1797 分登顶 Code Arena： WebDev，领先第 2 名 Claude Fable 5.1 （Max） 35 分、第 3 名 Claude Opus 5 （Max） 1688 分。",
+      "category": "ai-products",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtoxdsbb032sromz8bcrhsii"
+      }
+    },
+    {
+      "id": "cmto3hqh80160roxt5aweoxun",
+      "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+      "title_en": "《精益4》中的费马大定理",
+      "url": "https://github.com/anthropics/fermats-last-theorem",
+      "permalink": "https://aihot.virxact.com/items/cmto3hqh80160roxt5aweoxun",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "publishedAt": "2026-09-05T07:56:50.597Z",
+      "discoveredAt": "2026-09-05T08:02:29.483Z",
+      "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
+      "category": "ai-products",
+      "score": 79,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmto3hqh80160roxt5aweoxun"
+      }
+    },
     {
       "id": "cmtn66b6s0o0eromy3rzdsvat",
       "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
