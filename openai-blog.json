@@ -1,7 +1,19 @@
 {
-  "fetched_at": "2026-09-05T22:10:13.593Z",
+  "fetched_at": "2026-09-06T22:14:31.857Z",
   "source": "OpenAI",
   "items": [
+    {
+      "title": "An Alien Mind",
+      "link": "https://openai.com/index/an-alien-mind",
+      "pubDate": "Sun, 06 Sep 2026 09:00:00 GMT",
+      "description": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination."
+    },
+    {
+      "title": "Research acceleration: The view inside OpenAI",
+      "link": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "pubDate": "Sun, 06 Sep 2026 08:00:00 GMT",
+      "description": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration."
+    },
     {
       "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
       "link": "https://openai.com/index/daybreak-for-frontline-defenders",
@@ -9,16 +21,16 @@
       "description": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
     },
     {
-      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "pubDate": "Thu, 03 Sep 2026 12:00:00 GMT",
-      "description": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
-    },
-    {
       "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
       "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
       "pubDate": "Thu, 03 Sep 2026 12:00:00 GMT",
       "description": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow."
+    },
+    {
+      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "pubDate": "Thu, 03 Sep 2026 12:00:00 GMT",
+      "description": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
     },
     {
       "title": "GPT-6 Astra: A new generation of intelligence",
@@ -79,18 +91,6 @@
       "link": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
       "pubDate": "Mon, 31 Aug 2026 04:00:00 GMT",
       "description": "ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options."
-    },
-    {
-      "title": "Our decision on Cursor following its acquisition by SpaceX",
-      "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "pubDate": "Fri, 28 Aug 2026 06:00:00 GMT",
-      "description": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX."
-    },
-    {
-      "title": "Supporting Thailand’s next generation of AI startups",
-      "link": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-      "pubDate": "Fri, 28 Aug 2026 02:00:00 GMT",
-      "description": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products."
     }
   ]
 }

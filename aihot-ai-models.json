@@ -1,5 +1,5 @@
 {
-  "count": 22,
+  "count": 21,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -379,24 +379,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie"
-      }
-    },
-    {
-      "id": "cmthhmoi10e71rodmx6wngoz1",
-      "title": "Runway 发布 Interface World Models 首个模型 Solaris，实时逐帧生成可交互界面",
-      "title_en": "Introducing Solaris",
-      "url": "https://runwayml.com/news/research/introducing-solaris",
-      "permalink": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1",
-      "source": "Runway：News（网页）",
-      "publishedAt": "2026-08-30T16:00:00.000Z",
-      "discoveredAt": "2026-08-31T17:03:47.031Z",
-      "summary": "Runway 发布 Solaris，称其为新模型家族 Interface World Models 的第一个模型，由世界模型实时逐帧生成界面并对点击、拖拽等交互作出响应，无需代码等中间表示。",
-      "category": "ai-models",
-      "score": 67,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmthhmoi10e71rodmx6wngoz1"
       }
     }
   ]
