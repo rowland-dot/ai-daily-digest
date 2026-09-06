@@ -1,33 +1,59 @@
 {
-  "generated_at": "2026-09-05T22:15:23Z",
+  "generated_at": "2026-09-06T22:23:13Z",
   "summaries": {
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/": {
-      "en": "On a single RTX 5090 running Qwen 3.8 27B, the author benchmarks llama.cpp, vLLM, and the newer NInfer engine against real production evaluation tiers rather than vibes. Quality is statistically indistinguishable across engines, but NInfer with MTP3 speculative decoding delivers 1.4 to 2.8 times faster decode and up to 4.9 times faster time to first token, so it replaces llama.cpp in production despite lacking JSON mode.",
-      "zh": "作者在单张 RTX 5090 上以真实生产评测（而非感觉）比较 llama.cpp、vLLM 与新兴的 NInfer 引擎运行 Qwen 3.8 27B。三者质量在统计上无差异，但 NInfer 借助 MTP3 投机解码带来 1.4 到 2.8 倍的解码提速和最多 4.9 倍的首字延迟改善，因此取代 llama.cpp 上线，唯一缺憾是不支持 JSON 模式。",
-      "title_en": "Comparing llama.cpp, vLLM, and NInfer running Qwen 3.8 27B with FP4 quantization on a single RTX 5090",
-      "title_zh": "在单张 RTX 5090 上对比 llama.cpp、vLLM 和 NInfer 运行 FP4 量化的 Qwen 3.8 27B"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8vx6w/8_uncensored_qwen_38_27b_variants_one_base_167/": {
+      "en": "DreamFast spent 167 GPU hours comparing 8 abliterated Qwen 3.8 27B variants against the base across 13 benchmarks, Kullback Leibler divergence, and the HarmBench 400 refusal set. Orcarouter topped attack success at 82.2 percent with only 131 matrix edits, while the heaviest edit, obliteratus, placed second to last because 45 percent of its responses never closed their thinking block within the token budget.",
+      "zh": "DreamFast 花 167 GPU 小时，用 13 项基准、Kullback Leibler 散度与 HarmBench 400 拒答集对比 Qwen 3.8 27B 的 8 个去审查变体。Orcarouter 仅改动 131 个矩阵便以 82.2% 攻击成功率登顶；改动最重的 obliteratus 反倒排倒数第二，因其 45% 回答未在 token 预算内结束思考。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w84mod/qwen38_flash_next_templates_comparison/": {
-      "en": "On SWE-bench Verified with mini-SWE-agent, the author compares three chat templates for Qwen 3.8 Flash Next, called Stock, Fixed, and Sharp, at medium and xhigh reasoning effort on an RTX PRO 6000. Sharp leads at medium with 94 percent resolution but Stock reaches 99 percent at xhigh. Sharp stays the most token-efficient per resolved task, making it the practical pick when speed matters more than the final points of accuracy.",
-      "zh": "作者在 RTX PRO 6000 上用 mini-SWE-agent 在 SWE-bench Verified 对比 Qwen 3.8 Flash Next 的三种聊天模板 Stock、Fixed、Sharp，分别以中等与 xhigh 推理强度运行。中等强度下 Sharp 以 94% 解决率领先，xhigh 时 Stock 追至 99%。Sharp 每题耗 token 最少，是追求速度时的务实选择。",
-      "title_en": "Comparing chat templates for Qwen 3.8 Flash Next on SWE-bench Verified",
-      "title_zh": "在 SWE-bench Verified 上对比 Qwen 3.8 Flash Next 的聊天模板"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8jahs/qwen3827b_unhacked_my_pc/": {
+      "en": "A user recounts how session grabber malware from a fake movie site hacked their machine, banned them from Discord, and demanded ransom while Windows Defender found nothing. Cut off from the internet, they turned Qwen 3.8 27B loose on the payload; the local model decoded every wrapper layer, produced a ready-to-run PowerShell removal script, and began reverse engineering the command and control domain used by the malware.",
+      "zh": "作者被伪装成看电影链接的会话劫持恶意软件攻陷，Discord 被封号勒索，Windows Defender 一无所获。断网后他把载荷交给本地 Qwen 3.8 27B 处理，模型拆解每一层伪装，生成即用的 PowerShell 清除脚本，并开始逆向找出恶意软件所用的命令与控制域名。",
+      "title_en": "How a local Qwen 3.8 27B helped clean malware off a compromised PC",
+      "title_zh": "本地 Qwen 3.8 27B 如何帮助清理被攻陷电脑上的恶意软件"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/": {
-      "en": "Otaku is a new open-source frontend for large language models, designed primarily for roleplay as an alternative to SillyTavern but usable for general chat too. It ships web and terminal interfaces sharing the same functions, auto-detects Ollama, oMLX, LM Studio, llama.cpp, and KoboldCpp installations, and supports cloud providers like OpenRouter and NanoGPT. Install via uv on macOS, Linux, or Windows. The author asks for community feedback on this MIT-licensed side project.",
-      "zh": "Otaku 是一款新的开源大语言模型前端，主打角色扮演，也可作为 SillyTavern 的替代品用于日常对话。它同时提供 Web 界面与终端界面，两者共享功能，可自动识别 Ollama、oMLX、LM Studio、llama.cpp、KoboldCpp 等本地后端，并支持 OpenRouter、NanoGPT 云服务。基于 MIT 许可，通过 uv 可在 macOS、Linux、Windows 上安装，作者征集反馈。"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8f7bp/which_agent_harness_do_you_use_and_why/": {
+      "en": "A LocalLLaMA user compares agent harnesses on 14 cross-system tasks fronting 3 Model Context Protocol servers for a CRM, an issue tracker, and a doc store. Claude Managed Agents with Opus 4.8 and TrueForge with Opus 4.8 each solved 11 of 14, yet TrueForge used 63 percent fewer tokens at 30 percent lower cost. Swapping in GLM 5.2 cut cost roughly 75 percent while nudging solve rate slightly higher.",
+      "zh": "作者在 14 个跨系统任务上比较代理框架，后端为 CRM、工单与文档库共 3 台 Model Context Protocol 服务器。Claude Managed Agents 与 TrueForge 搭配 Opus 4.8 都解出 11 项，但 TrueForge 少用 63% token，每次运行便宜 30%。换 GLM 5.2 后成本再降约 75%，通过率略升。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w7wte4/qwen38_27b_on_strix_the_optimized_setup/": {
-      "en": "An in-depth optimization writeup for running Qwen 3.8 27B on AMD Strix Halo laptops via a patched llama.cpp branch. The author ships fixes for a ROCm unified-memory bug, a faster top-k kernel, and low-level PM4 dispatches on HIP graphs, then quantizes the model and its DFlash speculative-decoding draft to IQ4_XS. The result is packaged as a one-line installer on GitHub and pushes this bandwidth-bound APU close to its speed ceiling.",
-      "zh": "作者深度优化 llama.cpp，为 AMD Strix Halo 笔记本上运行 Qwen 3.8 27B 打造更快的本地方案。改动包括修补 ROCm 统一内存漏洞、加速 top-k 内核、在 HIP 图上引入底层 PM4 调度，并将模型与 DFlash 投机草稿量化为 IQ4_XS。该 APU 受内存带宽限制，方案已触及速度上限，作者已打包一键安装脚本发布至 GitHub。",
-      "title_en": "Optimizing llama.cpp for Qwen 3.8 27B on AMD Strix Halo laptops",
-      "title_zh": "在 AMD Strix Halo 笔记本上为 Qwen 3.8 27B 优化 llama.cpp"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8us6t/coding_benchmarks_that_are_quickly_showcasing/": {
+      "en": "The author highlights three coding benchmarks that still separate frontier models where DeepSWE, Terminal-Bench, LiveCodeBench, and Code-Arena ELO have all converged. Program-Bench asks agents to reconstruct a codebase from only a binary and its docs, where Fable 5.1 leads at 7 percent. SRE-Bench probes binary reverse engineering, with GPT-6 Astra hitting 88 percent while Claude Opus 5 reaches only 12.5. Code Migration lets GPT-6 Astra reach 67.7 percent.",
+      "zh": "作者推荐三项仍能拉开前沿模型差距的编程基准。Program-Bench 要求仅凭二进制与文档重建代码库，Fable 5.1 以 7% 领先。SRE-Bench 考验二进制逆向，GPT-6 Astra 达 88%，Claude Opus 5 仅 12.5%。Code Migration 上 GPT-6 Astra 达 67.7%。DeepSWE、Terminal-Bench 等主流分数已趋同。"
     },
-    "https://www.reddit.com/r/LocalLLaMA/comments/1w82kpd/gfx906llamacpp_new_pptg_gains_for_mi50mi60radeon/": {
-      "en": "An update to the community gfx906 llama.cpp fork targeting older AMD data-center GPUs like the MI50, MI60, and Radeon VII. By pulling and adapting upstream pull requests, the fork now delivers 23 percent faster prefill at 16k context, 14 percent gains on 120k deep fills, and 11 percent higher token generation, with outputs remaining bit-identical to upstream. The README has been rewritten to explain what is in the fork.",
-      "zh": "针对 AMD 老款数据中心 GPU（MI50、MI60、Radeon VII 等 gfx906 架构）的 llama.cpp 社区分支再度更新。作者合并并改造上游 pull request，将 16k 上下文的预填充加速 23%、120k 深填加速 14%、token 生成加速 11%，输出与上游逐 token 一致。README 也重写以说明分支内容与来源。",
-      "title_en": "New prompt-processing and token-generation speedups in the gfx906 llama.cpp fork for AMD MI50, MI60, and Radeon VII",
-      "title_zh": "gfx906 版 llama.cpp 分支为 AMD MI50、MI60 与 Radeon VII 带来新的预填充与生成加速"
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w92x3j/2x_r9700_64_gb_ddr5_is_an_absolute_beast_machine/": {
+      "en": "A hobbyist builds a roughly 4000 euro rig with 2 Radeon AI PRO R9700 32 gigabyte cards, a Ryzen 7500F, and 64 gigabytes of DDR5, then benchmarks Qwen 3.8 27B in eight bit floating point and MXFP4 against Qwen 3.8 Flash Next on vLLM Radiance and its R9V fork. Weighted decode hits 111 tokens per second on MXFP4, 88 on eight bit, and 35 on Flash Next, with prefill peaking near 4400 tokens per second.",
+      "zh": "作者以约 4000 欧元组装两张 Radeon AI PRO R9700 32GB、Ryzen 7500F 与 64GB DDR5 的机器，在 vLLM Radiance 及 R9V 分支上跑 Qwen 3.8 27B 的八位浮点与 MXFP4，以及 Qwen 3.8 Flash Next。MXFP4 解码约 111 token/秒，八位 88，Flash Next 35，预填约 4400 token/秒。",
+      "title_en": "Dual Radeon AI PRO R9700 benchmarks running Qwen 3.8 27B and Flash Next on vLLM Radiance",
+      "title_zh": "在双卡 Radeon AI PRO R9700 上用 vLLM Radiance 测试 Qwen 3.8 27B 与 Flash Next"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8r0t9/villager_simulation_game_poc_created_with/": {
+      "en": "A developer built a browser-based villager simulation, inspired by a popular indie game, using Qwen 3.8 27B at three bit Q3_K_XL quantization fully offloaded to a 16 gigabyte RTX 5070 Ti, reaching 75 tokens per second decode and 1700 tokens per second prefill on beellama.cpp. Lessons: three bit quants stay viable at this size, kvarn3 key value cache saves memory with little quality loss, and pi observational memory prevents context filling up.",
+      "zh": "开发者以流行独立游戏为灵感构建浏览器村民模拟原型，用 Qwen 3.8 27B 的三比特 Q3_K_XL 量化装进 16GB 显存的 RTX 5070 Ti，通过 beellama.cpp 达解码 75、预填 1700 token/秒。经验：三比特量化可用，kvarn3 键值缓存省显存质量损失小，pi 观察记忆扩展避免上下文塞满。",
+      "title_en": "Building a villager simulation game with Qwen 3.8 27B running on 16 gigabytes of video memory",
+      "title_zh": "在 16GB 显存上用 Qwen 3.8 27B 构建村民模拟游戏原型"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8rxwg/vibeblending_locally_with_qwen_38_27b/": {
+      "en": "The author drives Blender 5.x from a local Qwen 3.8 27B through Blender's Model Context Protocol extension and the pi harness. Asked to build a 3D llama, the model reasons about approaches, chooses procedural primitives — capsule body, cylindrical legs, elongated head, ears, and mane — then writes Python step by step to construct the scene, applying smooth shading, materials, a ground plane, lighting, and a final rendered image.",
+      "zh": "作者通过 Blender 的 Model Context Protocol 扩展和 pi 框架，用本地 Qwen 3.8 27B 驱动 Blender 5.x。收到做 3D 羊驼的任务后，模型选用胶囊身、圆柱腿、拉长头、耳朵与鬃毛等基本几何体程序化拼装，分步写 Python 建模，加着色、材质、地面与灯光渲染成图。",
+      "title_en": "Driving Blender locally with Qwen 3.8 27B through the Model Context Protocol",
+      "title_zh": "通过 Model Context Protocol 用本地 Qwen 3.8 27B 驱动 Blender"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w8jflp/block_kv_cache_streaming_bound_vram_at_long/": {
+      "en": "The author ports Raymond Huang's adaptive key value cache streaming into llama-cpp-turboquant, extending the original Qwen-only work to turboX and several other model families. The block scheme bounds video memory at long context by keeping only active phases in a shared CUDA arena rather than the full cache. The author benchmarked it thoroughly to confirm the port stays worthwhile, and credits Raymond for the underlying design.",
+      "zh": "作者把 Raymond Huang 的自适应键值缓存流式加载移植到 llama-cpp-turboquant，从原本只支持 Qwen 扩展到 turboX 等多种模型。该块状方案通过共享 CUDA 阶段区仅保留活跃部分，长上下文下显存不再膨胀。作者做了充分基准验证仍值得使用，原始设计功劳归于 Raymond。",
+      "title_en": "Porting block key value cache streaming to bound video memory at long context in llama cpp turboquant",
+      "title_zh": "将块状键值缓存流式加载移植到 llama cpp turboquant 以限定长上下文显存"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w96xoi/deepseekv4flashvision_q8_vs_qwen38flashnext_q8/": {
+      "en": "Running both at Q8_K_XL on 2 StrixHalo 128 gigabyte boxes linked over USB-C 4 with Llama remote procedure call, the author finds Qwen 3.8 Flash Next generates tokens 40 percent faster in isolation yet takes roughly twice as long to finish tasks, hallucinating more along the way. Qwen 3.8 Flash Next is unusable in xhigh mode, failing in 3 hours what it completes in 25 minutes on medium. DeepSeek V4 Flash Vision wins for professional code.",
+      "zh": "作者把两台 128GB StrixHalo 用 USB-C 4 通过 Llama 远程过程调用互联，两款模型都跑 Q8_K_XL 量化。Qwen 3.8 Flash Next 单纯生成快 40%，但完成任务耗时约两倍，且更爱幻觉。xhigh 模式下 3 小时也无法完成 medium 模式 25 分钟能做完的任务。专业代码首选 DeepSeek V4 Flash Vision。",
+      "title_en": "Comparing DeepSeek V4 Flash Vision and Qwen 3.8 Flash Next at eight bit quantization",
+      "title_zh": "在八位量化下对比 DeepSeek V4 Flash Vision 与 Qwen 3.8 Flash Next"
+    },
+    "https://www.reddit.com/r/LocalLLaMA/comments/1w90zdc/model_support_for_spark2_5forcausallm/": {
+      "en": "KnightYao opens a pull request adding Spark2_5ForCausalLM support to llama.cpp alongside XHToken's release of Spark X2.5 in 4 billion and 1.7 billion parameter GGUF form. The compact models use a hybrid attention architecture pairing one full attention layer with three sliding window layers, natively support 1 million token contexts and over 200 languages, and were trained on Huawei Ascend clusters. They target agent harnesses like Codex and Claude Code.",
+      "zh": "KnightYao 提交合并请求为 llama.cpp 增加 Spark2_5ForCausalLM 支持，配合 XHToken 发布 40 亿与 17 亿参数的 Spark X2.5 GGUF 权重。模型采用混合注意力架构，一层全注意力搭配三层滑动窗口，原生支持 100 万 token 上下文与 200 多种语言，在华为 Ascend 集群训练，面向 Codex、Claude Code 等代理框架。",
+      "title_en": "Adding Spark X2.5 model support to llama cpp",
+      "title_zh": "为 llama cpp 添加 Spark X2.5 模型支持"
     }
   }
 }
