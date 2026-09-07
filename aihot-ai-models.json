@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 19,
   "hasNext": false,
   "nextCursor": null,
   "items": [
@@ -343,42 +343,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtj04igz04xproel00pt2oju"
-      }
-    },
-    {
-      "id": "cmtjjkmd800r4roe4wpq221bc",
-      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-      "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "permalink": "https://aihot.virxact.com/items/cmtjjkmd800r4roe4wpq221bc",
-      "source": "Anthropic：Newsroom（网页）",
-      "publishedAt": "2026-08-31T16:00:00.000Z",
-      "discoveredAt": "2026-09-02T03:33:48.237Z",
-      "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-      "category": "ai-models",
-      "score": 87,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtjjkmd800r4roe4wpq221bc"
-      }
-    },
-    {
-      "id": "cmth7tmq2067orodmh6g0sxie",
-      "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
-      "title_en": null,
-      "url": "https://www.ithome.com/0/996/637.htm",
-      "permalink": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie",
-      "source": "IT之家（RSS）",
-      "publishedAt": "2026-08-31T11:35:24.000Z",
-      "discoveredAt": "2026-08-31T12:29:19.834Z",
-      "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
-      "category": "ai-models",
-      "score": 76,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie"
       }
     }
   ]

@@ -4,6 +4,24 @@
   "nextCursor": null,
   "items": [
     {
+      "id": "cmtrkorpo07jdrotnozlrlyx2",
+      "title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力",
+      "title_en": "Anthropic reportedly signs $517 billion in compute deals after Dario Amodei warned rivals about reckless risk",
+      "url": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk",
+      "permalink": "https://aihot.virxact.com/items/cmtrkorpo07jdrotnozlrlyx2",
+      "source": "The Decoder：AI News（RSS）",
+      "publishedAt": "2026-09-07T18:12:41.000Z",
+      "discoveredAt": "2026-09-07T18:27:10.491Z",
+      "summary": "据 The Information 报道，Anthropic 在十一个月内签署了价值高达 5170 亿美元的算力合同，自 2025 年 10 月以来锁定至少 14.8 GW 算力，并计划自建数据中心。",
+      "category": "industry",
+      "score": 76,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.virxact.com/items/cmtrkorpo07jdrotnozlrlyx2"
+      }
+    },
+    {
       "id": "cmtoq071c01tjro4mqmxcuu03",
       "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
       "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
@@ -181,24 +199,6 @@
       "attribution": {
         "source": "AIHOT",
         "canonical": "https://aihot.virxact.com/items/cmtjhy5ze07gorobv62fpf0wi"
-      }
-    },
-    {
-      "id": "cmthb75t6092frodmg7ic1fc0",
-      "title": "ChatGPT Ads 年化收入达 10 亿美元并全球扩展",
-      "title_en": "A milestone in expanding access to AI",
-      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
-      "permalink": "https://aihot.virxact.com/items/cmthb75t6092frodmg7ic1fc0",
-      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "publishedAt": "2026-08-31T04:00:00.000Z",
-      "discoveredAt": "2026-08-31T14:03:49.813Z",
-      "summary": "ChatGPT Ads 年化收入运行率突破 10 亿美元，并扩展至全球市场。该广告业务通过免费和低价选项，支持更多人使用 AI 服务。",
-      "category": "industry",
-      "score": 60,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmthb75t6092frodmg7ic1fc0"
       }
     }
   ]
