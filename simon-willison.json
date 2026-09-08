@@ -1,7 +1,25 @@
 {
-  "fetched_at": "2026-09-07T22:57:32.807Z",
+  "fetched_at": "2026-09-08T22:54:50.411Z",
   "source": "Simon Willison",
   "entries": [
+    {
+      "title": "Introducing ChatGPT Images 2.5",
+      "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+      "updated": "2026-09-08T22:46:33+00:00",
+      "summary": "Introducing ChatGPT Images 2.5"
+    },
+    {
+      "title": "llm 0.35",
+      "link": "https://simonwillison.net/2026/Sep/7/llm/",
+      "updated": "2026-09-07T23:54:54+00:00",
+      "summary": "New OpenAI model: gpt-6-astra for GPT-6 Astra ."
+    },
+    {
+      "title": "Creepy crawlies",
+      "link": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+      "updated": "2026-09-07T23:08:58+00:00",
+      "summary": "Creepy crawlies"
+    },
     {
       "title": "Quoting Jakub Pachocki",
       "link": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
@@ -55,24 +73,6 @@
       "link": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
       "updated": "2026-09-05T15:51:09+00:00",
       "summary": "I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this:"
-    },
-    {
-      "title": "The Pelican comparison grid for Astra is pretty interesting",
-      "link": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
-      "updated": "2026-09-04T23:59:05+00:00",
-      "summary": "I got access to GPT-6 Astra this afternoon, so naturally I used it to generate SVGs of pelicans riding bicycles - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I rendered those pelicans in a comparison grid with GPT-5.6 Sol, Terra, and Luna, and beyond being fun the result was surprisingly useful."
-    },
-    {
-      "title": "OpenAI's rogue agents were caught communicating via public wikis",
-      "link": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
-      "updated": "2026-09-04T17:38:48+00:00",
-      "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI. This time it was agents engaged in some sort of web research benchmark, so they had (supposedly) controlled access to the Web. The agents figured out they could update public Wikis and spent weeks exchanging thousands of messages with each other to collaborate on the benchmark."
-    },
-    {
-      "title": "August newsletter is out",
-      "link": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
-      "updated": "2026-09-04T05:54:40+00:00",
-      "summary": "The August edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here ."
     }
   ]
 }

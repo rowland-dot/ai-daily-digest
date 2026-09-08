@@ -4,21 +4,57 @@
   "nextCursor": null,
   "items": [
     {
-      "id": "cmtnkhh70034droqs3fevneuh",
-      "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
-      "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-      "url": "https://x.com/kimmonismus/status/2096007967749349844",
-      "permalink": "https://aihot.virxact.com/items/cmtnkhh70034droqs3fevneuh",
-      "source": "X：Kim (@kimmonismus)",
-      "publishedAt": "2026-09-04T22:50:16.000Z",
-      "discoveredAt": "2026-09-04T23:10:23.650Z",
-      "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+      "id": "cmtsynojw01xqro5wb8n7ysor",
+      "title": "OpenAI 智能体团队宣布求解 Navier-Stokes 千禧年大奖难题并向独立证明者致贺",
+      "title_en": "We congratulate Levent Alpöge and Tristan Buckmaster on their remarkable mathematical work. We （the…",
+      "url": "https://x.com/OpenAI/status/2097375276384567642",
+      "permalink": "https://aihot.news/items/cmtsynojw01xqro5wb8n7ysor",
+      "source": "X：OpenAI (@OpenAI)",
+      "publishedAt": "2026-09-08T17:23:27.000Z",
+      "discoveredAt": "2026-09-08T17:46:00.104Z",
+      "summary": "OpenAI 宣布由一组智能体使用一个能力显著超过 GPT-6 Astra 的下一代模型给出 Navier-Stokes 千禧年大奖难题的解，该问题关注三维光滑流体运动的描述是否会失效，已悬置约 90 年。",
       "category": "paper",
-      "score": 76,
+      "score": 73,
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtnkhh70034droqs3fevneuh"
+        "canonical": "https://aihot.news/items/cmtsynojw01xqro5wb8n7ysor"
+      }
+    },
+    {
+      "id": "cmtsx0wm4041jrob5liwjypsq",
+      "title": "Dwarkesh Patel 研究：预训练进步主要来自数据改进",
+      "title_en": "Pretraining progress is mostly coming from data",
+      "url": "https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data",
+      "permalink": "https://aihot.news/items/cmtsx0wm4041jrob5liwjypsq",
+      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+      "publishedAt": "2026-09-08T16:10:16.000Z",
+      "discoveredAt": "2026-09-08T17:00:12.629Z",
+      "summary": "Dwarkesh Patel 发布实验分析，在最高 1e19 FLOPs 的算力预算下训练 2019 至 2025 年各年度代表性模型配方与数据语料，发现数据改进带来 12.0x 算力效率提升，模型改进为 3.7x，数据贡献约为模型的 3.24 倍。",
+      "category": "paper",
+      "score": 60,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.news/items/cmtsx0wm4041jrob5liwjypsq"
+      }
+    },
+    {
+      "id": "cmtszna9e04isro5woti0ixg6",
+      "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答",
+      "title_en": "On the Navier-Stokes Millennium Prize Problem",
+      "url": "https://openai.com/index/navier-stokes-solution",
+      "permalink": "https://aihot.news/items/cmtszna9e04isro5woti0ixg6",
+      "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "publishedAt": "2026-09-08T10:00:00.000Z",
+      "discoveredAt": "2026-09-08T18:13:41.404Z",
+      "summary": "OpenAI 宣布其内部 AI 系统给出 Navier-Stokes 存在与光滑性问题的解答，证明初始光滑的流体可在有限时间内形成奇点，并附证明文稿与 Lean 形式化验证。",
+      "category": "paper",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.news/items/cmtszna9e04isro5woti0ixg6"
       }
     },
     {
@@ -26,7 +62,7 @@
       "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
       "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
       "url": "https://x.com/AnthropicAI/status/2095947707605266436",
-      "permalink": "https://aihot.virxact.com/items/cmtnbhhu902perog1dmrla299",
+      "permalink": "https://aihot.news/items/cmtnbhhu902perog1dmrla299",
       "source": "X：Anthropic (@AnthropicAI)",
       "publishedAt": "2026-09-04T18:50:48.000Z",
       "discoveredAt": "2026-09-04T18:58:28.869Z",
@@ -36,7 +72,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtnbhhu902perog1dmrla299"
+        "canonical": "https://aihot.news/items/cmtnbhhu902perog1dmrla299"
       }
     },
     {
@@ -44,7 +80,7 @@
       "title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
       "title_en": "OpenAI的GPT-6 Astra在ARC-AGI-3上的表现",
       "url": "https://arcprize.org/blog/astra",
-      "permalink": "https://aihot.virxact.com/items/cmtm7yl5s01d5robnsn25onbz",
+      "permalink": "https://aihot.news/items/cmtm7yl5s01d5robnsn25onbz",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-09-04T00:07:48.532Z",
       "discoveredAt": "2026-09-04T00:32:03.496Z",
@@ -54,7 +90,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtm7yl5s01d5robnsn25onbz"
+        "canonical": "https://aihot.news/items/cmtm7yl5s01d5robnsn25onbz"
       }
     },
     {
@@ -62,7 +98,7 @@
       "title": "Claude 用 11 天完成费马大定理的首个完整机器验证证明",
       "title_en": "Formalizing Fermat's Last Theorem",
       "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "permalink": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
+      "permalink": "https://aihot.news/items/cmtnapudv01zbrog16o6dxgoi",
       "source": "Anthropic：Research（发表成果 · 网页）",
       "publishedAt": "2026-09-03T16:00:00.000Z",
       "discoveredAt": "2026-09-04T18:37:00.305Z",
@@ -72,7 +108,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi"
+        "canonical": "https://aihot.news/items/cmtnapudv01zbrog16o6dxgoi"
       }
     },
     {
@@ -80,7 +116,7 @@
       "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
       "title_en": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
       "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-      "permalink": "https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5",
+      "permalink": "https://aihot.news/items/cmtl25m9c0e89roalh6qci0r5",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "publishedAt": "2026-09-03T04:49:35.840Z",
       "discoveredAt": "2026-09-03T05:01:47.111Z",
@@ -90,7 +126,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5"
+        "canonical": "https://aihot.news/items/cmtl25m9c0e89roalh6qci0r5"
       }
     },
     {
@@ -98,7 +134,7 @@
       "title": "Google 与 HHMI Janelia 发布完整雄性果蝇大脑及中枢神经系统连接组",
       "title_en": "A connectomics milestone： Mapping the complete male fruit fly brain",
       "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain",
-      "permalink": "https://aihot.virxact.com/items/cmtlrvu1x0k8wrow53bshxa9k",
+      "permalink": "https://aihot.news/items/cmtlrvu1x0k8wrow53bshxa9k",
       "source": "Google Research：Blog（网页）",
       "publishedAt": "2026-09-02T16:00:00.000Z",
       "discoveredAt": "2026-09-03T17:01:58.253Z",
@@ -108,43 +144,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtlrvu1x0k8wrow53bshxa9k"
-      }
-    },
-    {
-      "id": "cmtj2y06p04bwroh9d8oszszo",
-      "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-      "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-      "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-      "permalink": "https://aihot.virxact.com/items/cmtj2y06p04bwroh9d8oszszo",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-09-01T19:43:09.000Z",
-      "discoveredAt": "2026-09-01T19:48:18.025Z",
-      "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
-      "category": "paper",
-      "score": 79,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtj2y06p04bwroh9d8oszszo"
-      }
-    },
-    {
-      "id": "cmthxigqm04c1rofqqmk7pkqi",
-      "title": "Anthropic 研究：训练一个错位的奖励寻求者模型",
-      "title_en": "New research： Training a Misaligned Reward Seeker What produces severe misalignment？ We've long bee…",
-      "url": "https://x.com/AnthropicAI/status/2094577944056430865",
-      "permalink": "https://aihot.virxact.com/items/cmthxigqm04c1rofqqmk7pkqi",
-      "source": "X：Anthropic (@AnthropicAI)",
-      "publishedAt": "2026-09-01T00:07:51.000Z",
-      "discoveredAt": "2026-09-01T00:28:28.757Z",
-      "summary": "Anthropic 发布新研究 Training a Misaligned Reward Seeker，探究奖励作弊（reward-hacking）是否会让模型学会不择手段追求奖励。",
-      "category": "paper",
-      "score": 73,
-      "selected": true,
-      "attribution": {
-        "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmthxigqm04c1rofqqmk7pkqi"
+        "canonical": "https://aihot.news/items/cmtlrvu1x0k8wrow53bshxa9k"
       }
     }
   ]

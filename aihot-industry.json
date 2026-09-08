@@ -1,14 +1,50 @@
 {
-  "count": 11,
+  "count": 14,
   "hasNext": false,
   "nextCursor": null,
   "items": [
+    {
+      "id": "cmtsz2a0q02ciro5w7oz3a0ix",
+      "title": "NYU 数学家指控 OpenAI 在千禧年难题竞赛中不正当竞争，Bubeck 否认",
+      "title_en": "OpenAI fought dirty on career-making math problem， says NYU mathematician",
+      "url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician",
+      "permalink": "https://aihot.news/items/cmtsz2a0q02ciro5w7oz3a0ix",
+      "source": "TechCrunch：AI（RSS）",
+      "publishedAt": "2026-09-08T17:32:15.000Z",
+      "discoveredAt": "2026-09-08T17:57:22.807Z",
+      "summary": "NYU 数学教授 Tristan Buckmaster 与 Anthropic 数学家 Levent Alpöge 公布针对 Navier-Stokes 存在与光滑性这一千禧年难题的三项证明初步结果，并称其研究进展信息被泄露给 OpenAI，对方随后用大量算力沿其独特路线追赶证明。",
+      "category": "industry",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.news/items/cmtsz2a0q02ciro5w7oz3a0ix"
+      }
+    },
+    {
+      "id": "cmts9dr2m029hrobq86wrny37",
+      "title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+      "title_en": "Mistral raises €3B to make sovereign， open-weight AI the technology frontier Mistral today announced that it has raised €3 billion in a Series D funding round at a post-money valuation of more than €21 billion.",
+      "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+      "permalink": "https://aihot.news/items/cmts9dr2m029hrobq86wrny37",
+      "source": "Mistral AI：News（网页）",
+      "publishedAt": "2026-09-08T05:58:27.839Z",
+      "discoveredAt": "2026-09-08T05:58:27.839Z",
+      "summary": "Mistral 宣布完成 30 亿欧元 D 轮融资，投后估值超过 210 亿欧元，公司称这是欧洲科技公司有史以来最大的股权融资，距其成立三年。",
+      "category": "industry",
+      "score": 72,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.news/items/cmts9dr2m029hrobq86wrny37"
+      }
+    },
     {
       "id": "cmtrkorpo07jdrotnozlrlyx2",
       "title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力",
       "title_en": "Anthropic reportedly signs $517 billion in compute deals after Dario Amodei warned rivals about reckless risk",
       "url": "https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk",
-      "permalink": "https://aihot.virxact.com/items/cmtrkorpo07jdrotnozlrlyx2",
+      "permalink": "https://aihot.news/items/cmtrkorpo07jdrotnozlrlyx2",
       "source": "The Decoder：AI News（RSS）",
       "publishedAt": "2026-09-07T18:12:41.000Z",
       "discoveredAt": "2026-09-07T18:27:10.491Z",
@@ -18,7 +54,25 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtrkorpo07jdrotnozlrlyx2"
+        "canonical": "https://aihot.news/items/cmtrkorpo07jdrotnozlrlyx2"
+      }
+    },
+    {
+      "id": "cmtqy60930445ro7r5nodgoig",
+      "title": "最高法发布涉人工智能纠纷案件审理意见，明确 AI 换脸拟声等裁判规则",
+      "title_en": "最高法发文明确\"AI 换脸拟声\"等案件裁判规则",
+      "url": "https://www.ithome.com/0/999/313.htm",
+      "permalink": "https://aihot.news/items/cmtqy60930445ro7r5nodgoig",
+      "source": "IT之家（RSS）",
+      "publishedAt": "2026-09-07T07:46:08.000Z",
+      "discoveredAt": "2026-09-07T07:56:39.787Z",
+      "summary": "最高人民法院发布《关于依法审理涉人工智能纠纷案件的意见》，共 5 部分 24 条，明确 AI 换脸拟声、AI 复活逝者、大数据杀熟、仿冒名人带货、网络开盒及自动驾驶事故等情形的裁判规则。文件规定未经同意生成可识别的虚拟数字形象或合成人声构成侵害人格和声音权益，仿冒名人带货构成欺诈的消费者可主张惩罚性赔偿，车辆缺陷与驾驶人过错结合致损时可同时请求驾驶人及生产者、销售者担责。",
+      "category": "industry",
+      "score": 85,
+      "selected": true,
+      "attribution": {
+        "source": "AIHOT",
+        "canonical": "https://aihot.news/items/cmtqy60930445ro7r5nodgoig"
       }
     },
     {
@@ -26,7 +80,7 @@
       "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
       "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
       "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-      "permalink": "https://aihot.virxact.com/items/cmtoq071c01tjro4mqmxcuu03",
+      "permalink": "https://aihot.news/items/cmtoq071c01tjro4mqmxcuu03",
       "source": "TechCrunch：AI（RSS）",
       "publishedAt": "2026-09-05T18:05:27.000Z",
       "discoveredAt": "2026-09-05T18:32:44.115Z",
@@ -36,7 +90,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtoq071c01tjro4mqmxcuu03"
+        "canonical": "https://aihot.news/items/cmtoq071c01tjro4mqmxcuu03"
       }
     },
     {
@@ -44,7 +98,7 @@
       "title": "OpenAI 承认德国 wiki 事件并承诺改革智能体错位事件报告机制",
       "title_en": "OpenAI admits to German wiki 'incident'",
       "url": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
-      "permalink": "https://aihot.virxact.com/items/cmtoazuoz03z6roxhurow5v5s",
+      "permalink": "https://aihot.news/items/cmtoazuoz03z6roxhurow5v5s",
       "source": "The Verge：AI（RSS）",
       "publishedAt": "2026-09-05T11:15:55.000Z",
       "discoveredAt": "2026-09-05T11:32:34.167Z",
@@ -54,7 +108,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtoazuoz03z6roxhurow5v5s"
+        "canonical": "https://aihot.news/items/cmtoazuoz03z6roxhurow5v5s"
       }
     },
     {
@@ -62,7 +116,7 @@
       "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
       "title_en": "ChatGPT 卷入校园枪击案，OpenAI 面临诉讼数量已超 50 起",
       "url": "https://www.ithome.com/0/998/758.htm",
-      "permalink": "https://aihot.virxact.com/items/cmto4hkdv01leromx37jl2511",
+      "permalink": "https://aihot.news/items/cmto4hkdv01leromx37jl2511",
       "source": "IT之家（RSS）",
       "publishedAt": "2026-09-05T07:53:01.000Z",
       "discoveredAt": "2026-09-05T08:30:20.924Z",
@@ -72,7 +126,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmto4hkdv01leromx37jl2511"
+        "canonical": "https://aihot.news/items/cmto4hkdv01leromx37jl2511"
       }
     },
     {
@@ -80,7 +134,7 @@
       "title": "Anthropic IPO 推迟至中期选举前，最早 10 月中旬启动路演，目标估值 2 万亿美元",
       "title_en": "Anthropic IPO 推迟至中期选举前：最早 10 月中旬启动路演，目标估值 2 万亿美元",
       "url": "https://www.ithome.com/0/998/630.htm",
-      "permalink": "https://aihot.virxact.com/items/cmtnl720g03olroqsrkmbl292",
+      "permalink": "https://aihot.news/items/cmtnl720g03olroqsrkmbl292",
       "source": "IT之家（RSS）",
       "publishedAt": "2026-09-04T22:52:38.000Z",
       "discoveredAt": "2026-09-04T23:30:17.725Z",
@@ -90,7 +144,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtnl720g03olroqsrkmbl292"
+        "canonical": "https://aihot.news/items/cmtnl720g03olroqsrkmbl292"
       }
     },
     {
@@ -98,7 +152,7 @@
       "title": "英伟达两年从零建起近千亿美元股权投资组合",
       "title_en": "仅用两年时间，英伟达从零建起近千亿美元股权投资组合",
       "url": "https://www.ithome.com/0/998/620.htm",
-      "permalink": "https://aihot.virxact.com/items/cmtn41rbm0lw1romys1igl789",
+      "permalink": "https://aihot.news/items/cmtn41rbm0lw1romys1igl789",
       "source": "IT之家（RSS）",
       "publishedAt": "2026-09-04T14:59:33.000Z",
       "discoveredAt": "2026-09-04T15:30:15.859Z",
@@ -108,7 +162,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtn41rbm0lw1romys1igl789"
+        "canonical": "https://aihot.news/items/cmtn41rbm0lw1romys1igl789"
       }
     },
     {
@@ -116,7 +170,7 @@
       "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
       "title_en": "NVIDIA to Acquire Hugging Face",
       "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
-      "permalink": "https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4",
+      "permalink": "https://aihot.news/items/cmtli5yd109u4row52i1xg9j4",
       "source": "NVIDIA Blog（RSS）",
       "publishedAt": "2026-09-03T11:59:49.000Z",
       "discoveredAt": "2026-09-03T12:29:55.403Z",
@@ -126,7 +180,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4"
+        "canonical": "https://aihot.news/items/cmtli5yd109u4row52i1xg9j4"
       }
     },
     {
@@ -134,7 +188,7 @@
       "title": "美国司法部介入纽约时报诉 OpenAI 案，主张 AI 训练属合理使用",
       "title_en": "纽约时报诉 OpenAI 案升级：美国司法部首次就 AI 版权问题公开表态，主张 AI 训练属\"合理使用\"",
       "url": "https://www.ithome.com/0/997/732.htm",
-      "permalink": "https://aihot.virxact.com/items/cmtksft9f0450roali4sl0z86",
+      "permalink": "https://aihot.news/items/cmtksft9f0450roali4sl0z86",
       "source": "IT之家（RSS）",
       "publishedAt": "2026-09-02T23:50:05.000Z",
       "discoveredAt": "2026-09-03T00:29:45.977Z",
@@ -144,7 +198,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtksft9f0450roali4sl0z86"
+        "canonical": "https://aihot.news/items/cmtksft9f0450roali4sl0z86"
       }
     },
     {
@@ -152,7 +206,7 @@
       "title": "NVIDIA 以 129.3 亿美元收购 Hugging Face",
       "title_en": "NVIDIA to acquire Hugging Face for $12.93B",
       "url": "https://www.artificialintelligence-news.com/news/nvidia-to-acquire-hugging-face-for-12-93b",
-      "permalink": "https://aihot.virxact.com/items/cmtlptw7y0hz0row5jmextq6g",
+      "permalink": "https://aihot.news/items/cmtlptw7y0hz0row5jmextq6g",
       "source": "Artificial Intelligence News（网页）",
       "publishedAt": "2026-09-02T16:00:00.000Z",
       "discoveredAt": "2026-09-03T16:04:30.199Z",
@@ -162,7 +216,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtlptw7y0hz0row5jmextq6g"
+        "canonical": "https://aihot.news/items/cmtlptw7y0hz0row5jmextq6g"
       }
     },
     {
@@ -170,7 +224,7 @@
       "title": "OpenAI 因 Tumbler Ridge 枪击案面临 30 起新诉讼，被指协助教唆",
       "title_en": "OpenAI accused of 'aiding and abetting' Tumbler Ridge mass shooting in dozens of new lawsuits",
       "url": "https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting",
-      "permalink": "https://aihot.virxact.com/items/cmtkaa7gs01v5romp7lhz3mwj",
+      "permalink": "https://aihot.news/items/cmtkaa7gs01v5romp7lhz3mwj",
       "source": "The Verge：AI（RSS）",
       "publishedAt": "2026-09-02T14:35:03.000Z",
       "discoveredAt": "2026-09-02T16:01:31.790Z",
@@ -180,7 +234,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtkaa7gs01v5romp7lhz3mwj"
+        "canonical": "https://aihot.news/items/cmtkaa7gs01v5romp7lhz3mwj"
       }
     },
     {
@@ -188,7 +242,7 @@
       "title": "Nvidia 接近以 129 亿美元收购 Hugging Face",
       "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
       "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
-      "permalink": "https://aihot.virxact.com/items/cmtjhy5ze07gorobv62fpf0wi",
+      "permalink": "https://aihot.news/items/cmtjhy5ze07gorobv62fpf0wi",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "publishedAt": "2026-09-02T02:26:22.000Z",
       "discoveredAt": "2026-09-02T02:48:18.699Z",
@@ -198,7 +252,7 @@
       "selected": true,
       "attribution": {
         "source": "AIHOT",
-        "canonical": "https://aihot.virxact.com/items/cmtjhy5ze07gorobv62fpf0wi"
+        "canonical": "https://aihot.news/items/cmtjhy5ze07gorobv62fpf0wi"
       }
     }
   ]
